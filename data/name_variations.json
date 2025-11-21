@@ -1,0 +1,734 @@
+{
+    "name_groups": {
+        "john_group": {
+            "variants": [
+                "john",
+                "johnny",
+                "jon",
+                "jonny",
+                "jonathan"
+            ],
+            "canonical": "john"
+        },
+        "charles_group": {
+            "variants": [
+                "charles",
+                "charlie",
+                "chuck",
+                "charley"
+            ],
+            "canonical": "charles"
+        },
+        "william_group": {
+            "variants": [
+                "william",
+                "will",
+                "bill",
+                "billy",
+                "willie"
+            ],
+            "canonical": "william"
+        },
+        "ronald_group": {
+            "variants": [
+                "ronald",
+                "ron",
+                "ronnie",
+                "ronny"
+            ],
+            "canonical": "ronald"
+        },
+        "robert_group": {
+            "variants": [
+                "robert",
+                "rob",
+                "bob",
+                "bobby"
+            ],
+            "canonical": "robert"
+        },
+        "jacob_group": {
+            "variants": [
+                "jacob",
+                "jake"
+            ],
+            "canonical": "jacob"
+        },
+        "kenneth_group": {
+            "variants": [
+                "kenneth",
+                "ken",
+                "kenny"
+            ],
+            "canonical": "kenneth"
+        },
+        "michael_group": {
+            "variants": [
+                "michael",
+                "mike",
+                "mikey",
+                "mick"
+            ],
+            "canonical": "michael"
+        },
+        "james_group": {
+            "variants": [
+                "james",
+                "jim",
+                "jimmy",
+                "jamie"
+            ],
+            "canonical": "james"
+        },
+        "matthew_group": {
+            "variants": [
+                "matthew",
+                "matt",
+                "mathew",
+                "mat"
+            ],
+            "canonical": "matthew"
+        },
+        "daniel_group": {
+            "variants": [
+                "daniel",
+                "dan",
+                "danny",
+                "dannie"
+            ],
+            "canonical": "daniel"
+        },
+        "christopher_group": {
+            "variants": [
+                "christopher",
+                "chris",
+                "kris"
+            ],
+            "canonical": "christopher"
+        },
+        "joseph_group": {
+            "variants": [
+                "joseph",
+                "joe",
+                "joey"
+            ],
+            "canonical": "joseph"
+        },
+        "thomas_group": {
+            "variants": [
+                "thomas",
+                "tom",
+                "tommy"
+            ],
+            "canonical": "thomas"
+        },
+        "richard_group": {
+            "variants": [
+                "richard",
+                "rick",
+                "dick",
+                "richie",
+                "rich"
+            ],
+            "canonical": "richard"
+        },
+        "anthony_group": {
+            "variants": [
+                "anthony",
+                "tony"
+            ],
+            "canonical": "anthony"
+        },
+        "nicholas_group": {
+            "variants": [
+                "nicholas",
+                "nick",
+                "nicky"
+            ],
+            "canonical": "nicholas"
+        },
+        "benjamin_group": {
+            "variants": [
+                "benjamin",
+                "ben",
+                "benny"
+            ],
+            "canonical": "benjamin"
+        },
+        "andrew_group": {
+            "variants": [
+                "andrew",
+                "andy",
+                "drew"
+            ],
+            "canonical": "andrew"
+        },
+        "steven_group": {
+            "variants": [
+                "steven",
+                "steve",
+                "stephen"
+            ],
+            "canonical": "steven"
+        },
+        "edward_group": {
+            "variants": [
+                "edward",
+                "ed",
+                "eddie",
+                "ted",
+                "edmund"
+            ],
+            "canonical": "edward"
+        },
+        "zachary_group": {
+            "variants": [
+                "zachary",
+                "zach",
+                "zack"
+            ],
+            "canonical": "zachary"
+        },
+        "alexander_group": {
+            "variants": [
+                "alexander",
+                "alex",
+                "al"
+            ],
+            "canonical": "alexander"
+        },
+        "timothy_group": {
+            "variants": [
+                "timothy",
+                "tim",
+                "timmy"
+            ],
+            "canonical": "timothy"
+        },
+        "nathan_group": {
+            "variants": [
+                "nathan",
+                "nate"
+            ],
+            "canonical": "nathan"
+        },
+        "jeffrey_group": {
+            "variants": [
+                "jeffrey",
+                "jeff"
+            ],
+            "canonical": "jeffrey"
+        },
+        "gregory_group": {
+            "variants": [
+                "gregory",
+                "greg"
+            ],
+            "canonical": "gregory"
+        },
+        "liam_group_1": {
+            "variants": [
+                "lee",
+                "li",
+                "liam"
+            ],
+            "canonical": "liam"
+        },
+        "noah_group_2": {
+            "variants": [
+                "noah",
+                "noe"
+            ],
+            "canonical": "noah"
+        },
+        "oliver_group_3": {
+            "variants": [
+                "oli",
+                "oliver",
+                "ollie"
+            ],
+            "canonical": "oliver"
+        },
+        "elijah_group_4": {
+            "variants": [
+                "eli",
+                "elijah"
+            ],
+            "canonical": "elijah"
+        },
+        "lucas_group_5": {
+            "variants": [
+                "luc",
+                "lucas",
+                "luke"
+            ],
+            "canonical": "lucas"
+        },
+        "henry_group_6": {
+            "variants": [
+                "hank",
+                "hen",
+                "henry"
+            ],
+            "canonical": "henry"
+        },
+        "levi_group_7": {
+            "variants": [
+                "levi"
+            ],
+            "canonical": "levi"
+        },
+        "jack_group_8": {
+            "variants": [
+                "jack",
+                "jackie"
+            ],
+            "canonical": "jack"
+        },
+        "sebastian_group_9": {
+            "variants": [
+                "bastian",
+                "seb",
+                "sebastian"
+            ],
+            "canonical": "sebastian"
+        },
+        "aiden_group_10": {
+            "variants": [
+                "aid",
+                "aiden",
+                "den"
+            ],
+            "canonical": "aiden"
+        },
+        "samuel_group": {
+            "variants": [
+                "samuel",
+                "sam",
+                "sammy"
+            ],
+            "canonical": "samuel"
+        },
+        "david_group_12": {
+            "variants": [
+                "dave",
+                "david",
+                "davy"
+            ],
+            "canonical": "david"
+        },
+        "wyatt_group_13": {
+            "variants": [
+                "wyatt"
+            ],
+            "canonical": "wyatt"
+        },
+        "owen_group_14": {
+            "variants": [
+                "owen"
+            ],
+            "canonical": "owen"
+        },
+        "asher_group_15": {
+            "variants": [
+                "ash",
+                "asher"
+            ],
+            "canonical": "asher"
+        },
+        "carter_group_16": {
+            "variants": [
+                "carter"
+            ],
+            "canonical": "carter"
+        },
+        "julian_group_17": {
+            "variants": [
+                "jules",
+                "julian"
+            ],
+            "canonical": "julian"
+        },
+        "grayson_group_18": {
+            "variants": [
+                "grace",
+                "gray",
+                "grayson"
+            ],
+            "canonical": "grayson"
+        },
+        "leo_group_19": {
+            "variants": [
+                "leo"
+            ],
+            "canonical": "leo"
+        },
+        "jayden_group_20": {
+            "variants": [
+                "jay",
+                "jayden"
+            ],
+            "canonical": "jayden"
+        },
+        "gabriel_group_21": {
+            "variants": [
+                "gabe",
+                "gabriel"
+            ],
+            "canonical": "gabriel"
+        },
+        "isaac_group_22": {
+            "variants": [
+                "isaac",
+                "zac"
+            ],
+            "canonical": "isaac"
+        },
+        "lincoln_group_23": {
+            "variants": [
+                "linc",
+                "lincoln"
+            ],
+            "canonical": "lincoln"
+        },
+        "hudson_group_24": {
+            "variants": [
+                "hudson"
+            ],
+            "canonical": "hudson"
+        },
+        "dylan_group_25": {
+            "variants": [
+                "dyl",
+                "dylan"
+            ],
+            "canonical": "dylan"
+        },
+        "ezra_group_26": {
+            "variants": [
+                "ezra"
+            ],
+            "canonical": "ezra"
+        },
+        "caleb_group_27": {
+            "variants": [
+                "caleb"
+            ],
+            "canonical": "caleb"
+        },
+        "ryan_group_28": {
+            "variants": [
+                "ry",
+                "ryan"
+            ],
+            "canonical": "ryan"
+        },
+        "adrian_group_29": {
+            "variants": [
+                "ade",
+                "adrian"
+            ],
+            "canonical": "adrian"
+        },
+        "miles_group_30": {
+            "variants": [
+                "miles"
+            ],
+            "canonical": "miles"
+        },
+        "nolan_group_31": {
+            "variants": [
+                "nolan"
+            ],
+            "canonical": "nolan"
+        },
+        "aaron_group_32": {
+            "variants": [
+                "aaron"
+            ],
+            "canonical": "aaron"
+        },
+        "cameron_group_33": {
+            "variants": [
+                "cam",
+                "cameron"
+            ],
+            "canonical": "cameron"
+        },
+        "ezekiel_group_34": {
+            "variants": [
+                "ezekiel",
+                "zeke"
+            ],
+            "canonical": "ezekiel"
+        },
+        "colton_group_35": {
+            "variants": [
+                "colton"
+            ],
+            "canonical": "colton"
+        },
+        "luca_group_36": {
+            "variants": [
+                "luca"
+            ],
+            "canonical": "luca"
+        },
+        "landon_group_37": {
+            "variants": [
+                "landon"
+            ],
+            "canonical": "landon"
+        },
+        "santiago_group_38": {
+            "variants": [
+                "santiago"
+            ],
+            "canonical": "santiago"
+        },
+        "axel_group_39": {
+            "variants": [
+                "axel"
+            ],
+            "canonical": "axel"
+        },
+        "easton_group_40": {
+            "variants": [
+                "easton"
+            ],
+            "canonical": "easton"
+        },
+        "cooper_group_41": {
+            "variants": [
+                "cooper"
+            ],
+            "canonical": "cooper"
+        },
+        "josiah_group_42": {
+            "variants": [
+                "josiah"
+            ],
+            "canonical": "josiah"
+        },
+        "isaiah_group_43": {
+            "variants": [
+                "isaiah"
+            ],
+            "canonical": "isaiah"
+        },
+        "roman_group_44": {
+            "variants": [
+                "roman"
+            ],
+            "canonical": "roman"
+        },
+        "connor_group_45": {
+            "variants": [
+                "con",
+                "connie",
+                "connor"
+            ],
+            "canonical": "connor"
+        },
+        "jameson_group_46": {
+            "variants": [
+                "jameson",
+                "jamey"
+            ],
+            "canonical": "jameson"
+        },
+        "everett_group_47": {
+            "variants": [
+                "ev",
+                "everett",
+                "rett"
+            ],
+            "canonical": "everett"
+        },
+        "brayden_group_48": {
+            "variants": [
+                "bray",
+                "brayden"
+            ],
+            "canonical": "brayden"
+        },
+        "emmett_group_49": {
+            "variants": [
+                "emmett"
+            ],
+            "canonical": "emmett"
+        },
+        "ryder_group_50": {
+            "variants": [
+                "ryder"
+            ],
+            "canonical": "ryder"
+        },
+        "beau_group_51": {
+            "variants": [
+                "beau"
+            ],
+            "canonical": "beau"
+        },
+        "damian_group_52": {
+            "variants": [
+                "dam",
+                "damian"
+            ],
+            "canonical": "damian"
+        },
+        "wesley_group_53": {
+            "variants": [
+                "wes",
+                "wesley"
+            ],
+            "canonical": "wesley"
+        },
+        "kai_group_54": {
+            "variants": [
+                "kai"
+            ],
+            "canonical": "kai"
+        },
+        "jace_group_55": {
+            "variants": [
+                "jace"
+            ],
+            "canonical": "jace"
+        },
+        "silas_group_56": {
+            "variants": [
+                "silas"
+            ],
+            "canonical": "silas"
+        },
+        "brooks_group_57": {
+            "variants": [
+                "brooks"
+            ],
+            "canonical": "brooks"
+        },
+        "declan_group_58": {
+            "variants": [
+                "declan"
+            ],
+            "canonical": "declan"
+        },
+        "judd_group_59": {
+            "variants": [
+                "judd",
+                "judson"
+            ],
+            "canonical": "judd"
+        },
+        "george_group_60": {
+            "variants": [
+                "george"
+            ],
+            "canonical": "george"
+        },
+        "blake_group_61": {
+            "variants": [
+                "blake"
+            ],
+            "canonical": "blake"
+        },
+        "adam_group_62": {
+            "variants": [
+                "adam"
+            ],
+            "canonical": "adam"
+        },
+        "xavier_group_63": {
+            "variants": [
+                "xavier"
+            ],
+            "canonical": "xavier"
+        },
+        "everest_group_64": {
+            "variants": [
+                "everest"
+            ],
+            "canonical": "everest"
+        },
+        "harrison_group_65": {
+            "variants": [
+                "harrison",
+                "harry"
+            ],
+            "canonical": "harrison"
+        },
+        "kayden_group_66": {
+            "variants": [
+                "kayden"
+            ],
+            "canonical": "kayden"
+        },
+        "gael_group_67": {
+            "variants": [
+                "gael"
+            ],
+            "canonical": "gael"
+        },
+        "rowan_group_68": {
+            "variants": [
+                "rowan"
+            ],
+            "canonical": "rowan"
+        },
+        "emiliano_group_69": {
+            "variants": [
+                "emil",
+                "emiliano"
+            ],
+            "canonical": "emiliano"
+        },
+        "ivan_group_70": {
+            "variants": [
+                "ivan"
+            ],
+            "canonical": "ivan"
+        },
+        "theo_group_71": {
+            "variants": [
+                "theo",
+                "theodore",
+                "ted",
+                "teddy"
+            ],
+            "canonical": "theo"
+        },
+        "max": {
+            "variants": [
+                "max",
+                "maxwell",
+                "maxie",
+                "maxx"
+            ],
+            "canonical": "max"
+        },
+        "brad": {
+            "variants": [
+                "brad",
+                "bradley",
+                "bradly",
+                "bradford"
+            ],
+            "canonical": "brad"
+        },
+        "mitch": {
+            "variants": [
+                "mitch",
+                "mitchell"
+            ],
+            "canonical": "mitch"
+        },
+        "ray": {
+            "variants": [
+                "ray",
+                "raymond"
+            ],
+            "canonical": "ray"
+        }
+    }
+}

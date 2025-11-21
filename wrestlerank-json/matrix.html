@@ -1,0 +1,1960 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Head-to-Head Matrix: 125</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                }
+                table {
+                    border-collapse: collapse;
+                    font-size: 14px;
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: center;
+                }
+                th {
+                    background-color: #f2f2f2;
+                    position: sticky;
+                    top: 0;
+                    font-weight: normal;
+                    z-index: 5;
+                }
+                th.rotate {
+                    height: 140px;
+                    white-space: nowrap;
+                    padding: 0 !important;
+                }
+                th.rotate > div {
+                    transform: 
+                        /* Magic Numbers */
+                        translate(0px, 51px)
+                        /* 45 is really 360 - 45 */
+                        rotate(270deg);
+                    width: 30px;
+                }
+                th.rotate > div > span {
+                    padding: 5px 10px;
+                    display: inline-block;
+                    border-bottom: 1px solid #ccc;
+                }
+                .same-wrestler {
+                    background-color: #e0e0e0;  /* Grey background for same wrestler cells */
+                }
+                .sticky-col {
+                    position: sticky;
+                    left: 0;
+                    background-color: #f2f2f2;
+                    z-index: 20;
+                }
+                .rank-col {
+                    position: sticky;
+                    left: 0;
+                    background-color: #f2f2f2;
+                    z-index: 20;
+                }
+                .wrestler-col {
+                    position: sticky;
+                    left: 40px;  /* Width of the rank column */
+                    background-color: #f2f2f2;
+                    z-index: 20;
+                }
+                .wrestler-name {
+                    color: #0066cc;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .rank-arrows {
+                    display: inline-block;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                }
+                .rank-arrow {
+                    cursor: pointer;
+                    padding: 2px 5px;
+                    margin: 0 2px;
+                    border: 1px solid #ddd;
+                    border-radius: 3px;
+                    background: #f8f8f8;
+                }
+                .rank-arrow:hover {
+                    background: #e8e8e8;
+                }
+                .matrix-cell {
+                    width: 40px !important;
+                    height: 40px !important;
+                    text-align: center;
+                    font-weight: bold;
+                }
+                .direct_win {
+                    background-color: #b3ffb3;  /* Light green */
+                }
+                .direct_loss {
+                    background-color: #ffb3b3;  /* Light red */
+                }
+                .common_win {
+                    background-color: #ccffcc;  /* Lighter green */
+                }
+                .common_loss {
+                    background-color: #ffcccc;  /* Lighter red */
+                }
+                .tooltip {
+                    display: none;
+                    position: absolute;
+                    background-color: #333;
+                    color: white;
+                    padding: 10px;
+                    border-radius: 5px;
+                    z-index: 100;
+                    max-width: 300px;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                }
+                .info-cell:hover .tooltip {
+                    display: block;
+                }
+                #save-button {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    padding: 10px 20px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                }
+                #save-button:hover {
+                    background-color: #45a049;
+                }
+                #rank-modal {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0,0,0,0.5);
+                    z-index: 1000;
+                }
+                .modal-content {
+                    background-color: white;
+                    margin: 15% auto;
+                    padding: 20px;
+                    border-radius: 5px;
+                    width: 300px;
+                    text-align: center;
+                }
+                .close-button {
+                    color: #aaa;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                .close-button:hover {
+                    color: black;
+                }
+            
+
+        /* Make relationship cells square */
+        .matrix-table td.relationship-cell {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            min-height: 40px;
+            max-width: 40px;
+            max-height: 40px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        /* Fix header row to stay on top when scrolling */
+        .matrix-table {
+            position: relative;
+        }
+        
+        .matrix-table thead {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: white;
+        }
+        
+        .matrix-table th.wrestler-header, 
+        .matrix-table th.rank-header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background-color: white;
+        }
+        
+        /* Add some spacing and borders for better readability */
+        .matrix-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid #ddd;
+        }
+        
+        .matrix-table th, 
+        .matrix-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        /* Highlight diagonal cells */
+            .matrix-table td.diagonal-cell {
+            background-color: #f2f2f2;
+        }
+        </style>
+            <script>
+                // Define the save rankings function in the global scope
+                function saveRankings() {
+                    console.log("Save button clicked");
+                    
+                    try {
+                        // Get all wrestler rows
+                        const table = document.getElementById('matrix-table');
+                        const rows = table.querySelectorAll('tr');
+                        
+                        // Collect ranking data
+                        const rankingData = [];
+                        for (let i = 1; i < rows.length; i++) {
+                            const nameCell = rows[i].querySelector('.wrestler-name');
+                            if (nameCell) {
+                                rankingData.push({
+                                    wrestler_id: nameCell.dataset.id,
+                                    rank: i
+                                });
+                            }
+                        }
+                        
+                        console.log("Rankings data:", rankingData);
+                        
+                        // Create JSON data
+                        const jsonData = JSON.stringify({
+                            weight_class: '125',
+                            rankings: rankingData
+                        }, null, 2);
+                        
+                        // Create download
+                        const blob = new Blob([jsonData], {type: 'application/json'});
+                        const url = URL.createObjectURL(blob);
+                        
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = '125_rankings.json';
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        
+                        alert("Rankings saved to 125_rankings.json");
+                    } catch (error) {
+                        console.error("Error saving rankings:", error);
+                        alert("Error saving rankings: " + error.message);
+                    }
+                    
+                    return false; // Prevent default button behavior
+                }
+            </script>
+        </head>
+        <body>
+            <h1>Head-to-Head Matrix: 125</h1>
+            <table id="matrix-table">
+        <tr><th class='rank-col'></th><th class='wrestler-col'>Wrestler</th><th>Win%</th><th>RPI</th>
+            <th class="rotate wrestler-header" data-id="29672389132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29681846132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29687376132">
+                <div><span>Lorenzo</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29673859132">
+                <div><span>Lauridsen</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29675645132">
+                <div><span>Roark</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29684511132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29687606132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29678029132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29680355132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29680472132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29721361132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29684788132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29675832132">
+                <div><span>Daugherty</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29675630132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29673246132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29687825132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29681463132">
+                <div><span>Peterson</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29674075132">
+                <div><span>Gill</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29689052132">
+                <div><span>Moreno</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29681426132">
+                <div><span>Smith</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29734454132">
+                <div><span>Moreno</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29677975132">
+                <div><span>Smith</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29678438132">
+                <div><span>Spratley</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29681627132">
+                <div><span>Johannsen</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29678867132">
+                <div><span>Murray</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29674060132">
+                <div><span>Robinson</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29687859132">
+                <div><span>Wright</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29727265132">
+                <div><span>Wright</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29687887132">
+                <div><span>Wright</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29681773132">
+                <div><span>Wright</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29686317132">
+                <div><span>Wright</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29685094132">
+                <div><span>Wright</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29682560132">
+                <div><span>Jackson</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29685051132">
+                <div><span>Wright</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29673112132">
+                <div><span>Wright</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29680129132">
+                <div><span>Vazquez</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29673113132">
+                <div><span>Wright</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="name:Varsity - Davis Motyka">
+                <div><span>Motyka</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="31190123132">
+                <div><span>Ricks</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29674056132">
+                <div><span>Baglio</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29727167132">
+                <div><span>Luna</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29687422132">
+                <div><span>Jordan</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29735169132">
+                <div><span>Beissel</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29686800132">
+                <div><span>Tocci</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="name:Champ. Round 2 - Dale O`Bilia">
+                <div><span>O`Bilia</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29688409132">
+                <div><span>Tocci</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29679604132">
+                <div><span>Tocci</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29672605132">
+                <div><span>Tocci</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29673837132">
+                <div><span>Koehler</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29672930132">
+                <div><span>Tocci</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29688446132">
+                <div><span>Tocci</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29681177132">
+                <div><span>Ricks</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29722979132">
+                <div><span>Castro-Sandoval</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29734783132">
+                <div><span>Hulverson</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29721845132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29679161132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29679142132">
+                <div><span>Figueroa</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29721841132">
+                <div><span>Gonzalez</span></div>
+            </th>
+            
+            <th class="rotate wrestler-header" data-id="29721849132">
+                <div><span>Wright</span></div>
+            </th>
+            </tr>
+<tr><td class='rank-col'>1</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29672389132" data-rank="1">
+                        Varsity - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29672389132" data-current-rank="1">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29672389132" data-current-rank="1">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-09)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 6-1)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-09)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 6-1)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Dec 6-1</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>2</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29681846132" data-rank="2">
+                        Varsity - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29681846132" data-current-rank="2">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29681846132" data-current-rank="2">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-09)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Fall 3:55)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-09)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Fall 3:55)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Fall 3:55</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>3</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29687376132" data-rank="3">
+                        Antonio Lorenzo
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29687376132" data-current-rank="3">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29687376132" data-current-rank="3">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-17)<br>
+        Antonio Lorenzo def. Richard Figueroa (M. For.)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr>
+        
+        Richard Figueroa (2025-02-16)<br>
+        Antonio Lorenzo def. Richard Figueroa (Dec 5-2)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr>
+        
+        Richard Figueroa (2025-03-09)<br>
+        Antonio Lorenzo def. Richard Figueroa (Dec 8-3)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-17)<br>
+        Antonio Lorenzo def. Richard Figueroa (M. For.)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr>
+        
+        Richard Figueroa (2025-02-16)<br>
+        Antonio Lorenzo def. Richard Figueroa (Dec 5-2)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr>
+        
+        Richard Figueroa (2025-03-09)<br>
+        Antonio Lorenzo def. Richard Figueroa (Dec 8-3)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Dec 8-3</td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 6-1</td></tr>
+<tr><td class='rank-col'>4</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29673859132" data-rank="4">
+                        Kael Lauridsen
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29673859132" data-current-rank="4">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29673859132" data-current-rank="4">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-17)<br>
+        Kael Lauridsen def. Richard Figueroa (M. For.)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-17)<br>
+        Kael Lauridsen def. Richard Figueroa (M. For.)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">FF</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>5</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29675645132" data-rank="5">
+                        Brady Roark
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29675645132" data-current-rank="5">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29675645132" data-current-rank="5">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-17)<br>
+        Brady Roark def. Richard Figueroa (Inj. 0:00)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-17)<br>
+        Brady Roark def. Richard Figueroa (Inj. 0:00)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Inj. 0:00</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>6</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29684511132" data-rank="6">
+                        Varsity - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29684511132" data-current-rank="6">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29684511132" data-current-rank="6">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-01-12)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 7-1)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-01-12)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 7-1)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Dec 7-1</td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 4-2</td></tr>
+<tr><td class='rank-col'>7</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29687606132" data-rank="7">
+                        Varsity - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29687606132" data-current-rank="7">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29687606132" data-current-rank="7">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 8-1</td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-01-17)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 11-8)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr>
+        
+        Richard Figueroa (2025-03-22)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (MD 17-8)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">MD 17-8</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>8</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29678029132" data-rank="8">
+                        Varsity - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29678029132" data-current-rank="8">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29678029132" data-current-rank="8">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-01-22)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 5-4)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-01-22)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 5-4)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Dec 5-4</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>9</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29680355132" data-rank="9">
+                        Varsity - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29680355132" data-current-rank="9">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29680355132" data-current-rank="9">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-02-07)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Fall 1:55)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-02-07)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Fall 1:55)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Fall 1:55</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>10</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29680472132" data-rank="10">
+                        Varsity - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29680472132" data-current-rank="10">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29680472132" data-current-rank="10">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-02-15)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 10-7)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-02-15)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 10-7)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Dec 10-7</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>11</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29721361132" data-rank="11">
+                        Varsity - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29721361132" data-current-rank="11">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29721361132" data-current-rank="11">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-02-21)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 7-3)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-02-21)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (Dec 7-3)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Dec 7-3</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>12</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29684788132" data-rank="12">
+                        Varsity - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29684788132" data-current-rank="12">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29684788132" data-current-rank="12">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-02-23)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (MD 11-2)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-02-23)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (MD 11-2)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">MD 11-2</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>13</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29675832132" data-rank="13">
+                        Quarterfinals - Tristan Daugherty
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29675832132" data-current-rank="13">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29675832132" data-current-rank="13">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-09)<br>
+        Quarterfinals - Tristan Daugherty def. Richard Figueroa (Dec 4-2)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-09)<br>
+        Quarterfinals - Tristan Daugherty def. Richard Figueroa (Dec 4-2)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Dec 4-2</td><td class="matrix-cell"></td><td class="matrix-cell direct_win">SV-1 8-1</td></tr>
+<tr><td class='rank-col'>14</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29675630132" data-rank="14">
+                        Cons. Round 3 - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29675630132" data-current-rank="14">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29675630132" data-current-rank="14">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-09)<br>
+        Cons. Round 3 - Richard Figueroa def. Richard Figueroa (Fall 1:00)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-09)<br>
+        Cons. Round 3 - Richard Figueroa def. Richard Figueroa (Fall 1:00)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Fall 1:00</td><td class="matrix-cell"></td><td class="matrix-cell direct_win">MD 8-0</td></tr>
+<tr><td class='rank-col'>15</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29673246132" data-rank="15">
+                        Cons. Semis - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29673246132" data-current-rank="15">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29673246132" data-current-rank="15">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-09)<br>
+        Cons. Semis - Richard Figueroa def. Richard Figueroa (Fall 3:47)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-09)<br>
+        Cons. Semis - Richard Figueroa def. Richard Figueroa (Fall 3:47)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Fall 3:47</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>16</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29687825132" data-rank="16">
+                        Champ. Round 1 - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29687825132" data-current-rank="16">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29687825132" data-current-rank="16">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-22)<br>
+        Champ. Round 1 - Richard Figueroa def. Richard Figueroa (Dec 12-7)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-22)<br>
+        Champ. Round 1 - Richard Figueroa def. Richard Figueroa (Dec 12-7)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Dec 12-7</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>17</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29681463132" data-rank="17">
+                        Champ. Round 2 - Dean Peterson
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29681463132" data-current-rank="17">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29681463132" data-current-rank="17">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-22)<br>
+        Champ. Round 2 - Dean Peterson def. Richard Figueroa (Fall 5:42)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-22)<br>
+        Champ. Round 2 - Dean Peterson def. Richard Figueroa (Fall 5:42)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">Fall 5:42</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>18</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29674075132" data-rank="18">
+                        Varsity - Christian Gill
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29674075132" data-current-rank="18">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29674075132" data-current-rank="18">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">MD 11-0</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>19</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29689052132" data-rank="19">
+                        Varsity - Damian Moreno
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29689052132" data-current-rank="19">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29689052132" data-current-rank="19">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 5-1</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>20</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29681426132" data-rank="20">
+                        Varsity - Ayden Smith
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29681426132" data-current-rank="20">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29681426132" data-current-rank="20">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">MD 11-3</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>21</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29734454132" data-rank="21">
+                        Varsity - Damian Moreno
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29734454132" data-current-rank="21">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29734454132" data-current-rank="21">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">SV-1 7-4</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>22</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29677975132" data-rank="22">
+                        Varsity - Landon Smith
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29677975132" data-current-rank="22">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29677975132" data-current-rank="22">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>23</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29678438132" data-rank="23">
+                        Varsity - Troy Spratley
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29678438132" data-current-rank="23">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29678438132" data-current-rank="23">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">TF 20-3 5:25</td></tr>
+<tr><td class='rank-col'>24</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29681627132" data-rank="24">
+                        Champ. Round 1 - Sloan Johannsen
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29681627132" data-current-rank="24">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29681627132" data-current-rank="24">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">MD 17-4</td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>25</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29678867132" data-rank="25">
+                        Cons. Round 1 - Bishop Murray
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29678867132" data-current-rank="25">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29678867132" data-current-rank="25">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Fall 1:32</td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>26</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29674060132" data-rank="26">
+                        Varsity - Vincent Robinson
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29674060132" data-current-rank="26">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29674060132" data-current-rank="26">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">TF 19-2 5:52</td></tr>
+<tr><td class='rank-col'>27</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29687859132" data-rank="27">
+                        Varsity - Bubba Wright
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29687859132" data-current-rank="27">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29687859132" data-current-rank="27">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 9-3</td></tr>
+<tr><td class='rank-col'>28</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29727265132" data-rank="28">
+                        Varsity - Bubba Wright
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29727265132" data-current-rank="28">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29727265132" data-current-rank="28">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Fall 5:59</td></tr>
+<tr><td class='rank-col'>29</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29687887132" data-rank="29">
+                        Varsity - Bubba Wright
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29687887132" data-current-rank="29">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29687887132" data-current-rank="29">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">MD 13-3</td></tr>
+<tr><td class='rank-col'>30</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29681773132" data-rank="30">
+                        Varsity - Bubba Wright
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29681773132" data-current-rank="30">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29681773132" data-current-rank="30">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 5-1</td></tr>
+<tr><td class='rank-col'>31</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29686317132" data-rank="31">
+                        Varsity - Bubba Wright
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29686317132" data-current-rank="31">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29686317132" data-current-rank="31">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Fall 5:31</td></tr>
+<tr><td class='rank-col'>32</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29685094132" data-rank="32">
+                        Varsity - Bubba Wright
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29685094132" data-current-rank="32">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29685094132" data-current-rank="32">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Fall 4:16</td></tr>
+<tr><td class='rank-col'>33</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29682560132" data-rank="33">
+                        Varsity - Ashton Jackson
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29682560132" data-current-rank="33">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29682560132" data-current-rank="33">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 3-0</td></tr>
+<tr><td class='rank-col'>34</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29685051132" data-rank="34">
+                        Varsity - Bubba Wright
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29685051132" data-current-rank="34">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29685051132" data-current-rank="34">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 6-0</td></tr>
+<tr><td class='rank-col'>35</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29673112132" data-rank="35">
+                        Varsity - Bubba Wright
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29673112132" data-current-rank="35">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29673112132" data-current-rank="35">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Fall 1:26</td></tr>
+<tr><td class='rank-col'>36</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29680129132" data-rank="36">
+                        Varsity - Nain Vazquez
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29680129132" data-current-rank="36">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29680129132" data-current-rank="36">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 9-6</td></tr>
+<tr><td class='rank-col'>37</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29673113132" data-rank="37">
+                        Varsity - Bubba Wright
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29673113132" data-current-rank="37">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29673113132" data-current-rank="37">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 2-1</td></tr>
+<tr><td class='rank-col'>38</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="name:Varsity - Davis Motyka" data-rank="38">
+                        Varsity - Davis Motyka
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="name:Varsity - Davis Motyka" data-current-rank="38">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="name:Varsity - Davis Motyka" data-current-rank="38">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">Dec 7-0</td></tr>
+<tr><td class='rank-col'>39</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="31190123132" data-rank="39">
+                        Varsity - Garrett Ricks
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="31190123132" data-current-rank="39">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="31190123132" data-current-rank="39">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_win">SV-1 7-4</td></tr>
+<tr><td class='rank-col'>40</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29674056132" data-rank="40">
+                        Varsity - Jackson Baglio
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29674056132" data-current-rank="40">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29674056132" data-current-rank="40">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Nico Tocci (2024-11-03)<br>
+        Varsity - Jackson Baglio def. Nico Tocci (Dec 4-1)<br>
+        Nico Tocci def. Quincy Hulverson (Dec 7-2)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>41</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29727167132" data-rank="41">
+                        Varsity - Noah Luna
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29727167132" data-current-rank="41">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29727167132" data-current-rank="41">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Nico Tocci (2024-11-03)<br>
+        Varsity - Noah Luna def. Nico Tocci (Dec 5-3)<br>
+        Nico Tocci def. Quincy Hulverson (Dec 7-2)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>42</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29687422132" data-rank="42">
+                        Beric Jordan
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29687422132" data-current-rank="42">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29687422132" data-current-rank="42">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Nico Tocci (2024-11-17)<br>
+        Beric Jordan def. Nico Tocci (Fall 6:58)<br>
+        Nico Tocci def. Quincy Hulverson (Dec 7-2)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>43</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29735169132" data-rank="43">
+                        Blake Beissel
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29735169132" data-current-rank="43">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29735169132" data-current-rank="43">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>44</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29686800132" data-rank="44">
+                        Champ. Round 1 - Nico Tocci
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29686800132" data-current-rank="44">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29686800132" data-current-rank="44">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>45</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="name:Champ. Round 2 - Dale O`Bilia" data-rank="45">
+                        Champ. Round 2 - Dale O`Bilia
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="name:Champ. Round 2 - Dale O`Bilia" data-current-rank="45">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="name:Champ. Round 2 - Dale O`Bilia" data-current-rank="45">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>46</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29688409132" data-rank="46">
+                        Cons. Round 2 - Nico Tocci
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29688409132" data-current-rank="46">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29688409132" data-current-rank="46">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>47</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29679604132" data-rank="47">
+                        Cons. Round 3 - Nico Tocci
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29679604132" data-current-rank="47">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29679604132" data-current-rank="47">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>48</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29672605132" data-rank="48">
+                        Cons. Round 4 - Nico Tocci
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29672605132" data-current-rank="48">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29672605132" data-current-rank="48">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>49</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29673837132" data-rank="49">
+                        Cons. Round 5 - Alan Koehler
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29673837132" data-current-rank="49">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29673837132" data-current-rank="49">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>50</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29672930132" data-rank="50">
+                        Varsity - Nico Tocci
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29672930132" data-current-rank="50">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29672930132" data-current-rank="50">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>51</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29688446132" data-rank="51">
+                        Varsity - Nico Tocci
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29688446132" data-current-rank="51">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29688446132" data-current-rank="51">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>52</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29681177132" data-rank="52">
+                        Varsity - Bridger Ricks
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29681177132" data-current-rank="52">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29681177132" data-current-rank="52">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell direct_win">SV-1 7-4</td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>53</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29722979132" data-rank="53">
+                        Varsity - Richard Castro-Sandoval
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29722979132" data-current-rank="53">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29722979132" data-current-rank="53">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>100.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>54</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29734783132" data-rank="54">
+                        Quincy Hulverson
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29734783132" data-current-rank="54">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29734783132" data-current-rank="54">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>50.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-17)<br>
+        Quincy Hulverson def. Richard Figueroa (M. For.)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-17)<br>
+        Quincy Hulverson def. Richard Figueroa (M. For.)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell direct_win">FF</td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>55</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29721845132" data-rank="55">
+                        Cons. Round 2 - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29721845132" data-current-rank="55">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29721845132" data-current-rank="55">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>20.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_loss">Dec 8-1</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_loss">SV-1 7-4</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2025-03-09)<br>
+        Cons. Round 2 - Richard Figueroa def. Richard Figueroa (Fall 0:21)<br>
+        Richard Figueroa def. Varsity - Richard Figueroa (TF 21-4 6:52)<br>
+        <hr></span>
+                    </td>
+                    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>56</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29679161132" data-rank="56">
+                        Varsity - Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29679161132" data-current-rank="56">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29679161132" data-current-rank="56">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>12.5%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_loss">MD 11-0</td><td class="matrix-cell direct_loss">Dec 5-1</td><td class="matrix-cell direct_loss">MD 11-3</td><td class="matrix-cell direct_loss">SV-1 7-4</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_win info-cell">
+                        CO
+                        <span class="tooltip"><strong>Common Opponents:</strong><br>
+        Richard Figueroa (2024-11-01)<br>
+        Varsity - Richard Figueroa def. Richard Figueroa (TF 21-4 6:52)<br>
+        Richard Figueroa def. Cons. Round 2 - Richard Figueroa (Fall 0:21)<br>
+        <hr></span>
+                    </td>
+                    <td class='same-wrestler'>X</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>57</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29679142132" data-rank="57">
+                        Richard Figueroa
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29679142132" data-current-rank="57">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29679142132" data-current-rank="57">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>8.0%</td><td></td><td class="matrix-cell direct_loss">Dec 6-1</td><td class="matrix-cell direct_loss">Fall 3:55</td><td class="matrix-cell direct_loss">Dec 8-3</td><td class="matrix-cell direct_loss">FF</td><td class="matrix-cell direct_loss">Inj. 0:00</td><td class="matrix-cell direct_loss">Dec 7-1</td><td class="matrix-cell direct_loss">MD 17-8</td><td class="matrix-cell direct_loss">Dec 5-4</td><td class="matrix-cell direct_loss">Fall 1:55</td><td class="matrix-cell direct_loss">Dec 10-7</td><td class="matrix-cell direct_loss">Dec 7-3</td><td class="matrix-cell direct_loss">MD 11-2</td><td class="matrix-cell direct_loss">Dec 4-2</td><td class="matrix-cell direct_loss">Fall 1:00</td><td class="matrix-cell direct_loss">Fall 3:47</td><td class="matrix-cell direct_loss">Dec 12-7</td><td class="matrix-cell direct_loss">Fall 5:42</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_loss">FF</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_loss info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    </tr>
+<tr><td class='rank-col'>58</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29721841132" data-rank="58">
+                        Nick Gonzalez
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29721841132" data-current-rank="58">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29721841132" data-current-rank="58">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>0.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_loss">MD 17-4</td><td class="matrix-cell direct_loss">Fall 1:32</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class='same-wrestler'>X</td><td class="matrix-cell"></td></tr>
+<tr><td class='rank-col'>59</td><td class='wrestler-col'>
+                <div style="display: flex; align-items: center;">
+                    <span class="wrestler-name" data-id="29721849132" data-rank="59">
+                        Bubba Wright
+                    </span>
+                    <span class="rank-arrows">
+                        <span class="rank-arrow up-arrow" data-id="29721849132" data-current-rank="59">&uarr;</span>
+                        <span class="rank-arrow down-arrow" data-id="29721849132" data-current-rank="59">&darr;</span>
+                    </span>
+                </div>
+            </td>
+            <td>0.0%</td><td></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_loss">Dec 6-1</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_loss">Dec 4-2</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_loss">SV-1 8-1</td><td class="matrix-cell direct_loss">MD 8-0</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_loss">TF 20-3 5:25</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell direct_loss">TF 19-2 5:52</td><td class="matrix-cell direct_loss">Dec 9-3</td><td class="matrix-cell direct_loss">Fall 5:59</td><td class="matrix-cell direct_loss">MD 13-3</td><td class="matrix-cell direct_loss">Dec 5-1</td><td class="matrix-cell direct_loss">Fall 5:31</td><td class="matrix-cell direct_loss">Fall 4:16</td><td class="matrix-cell direct_loss">Dec 3-0</td><td class="matrix-cell direct_loss">Dec 6-0</td><td class="matrix-cell direct_loss">Fall 1:26</td><td class="matrix-cell direct_loss">Dec 9-6</td><td class="matrix-cell direct_loss">Dec 2-1</td><td class="matrix-cell direct_loss">Dec 7-0</td><td class="matrix-cell direct_loss">SV-1 7-4</td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td>
+                    <td class="matrix-cell common_loss info-cell">
+                        CO
+                        <span class="tooltip">No common opponent details available</span>
+                    </td>
+                    <td class="matrix-cell"></td><td class='same-wrestler'>X</td></tr>
+
+            </table>
+            
+            <!-- Check if save button exists -->
+            <div id="save-button-container" style="position: fixed; bottom: 20px; right: 20px;">
+                <button id="save-button" onclick="saveRankings()" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                    Save Rankings
+                </button>
+            </div>
+            
+            <!-- Modal for setting specific rank -->
+            <div id="rank-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Set Rank for <span id="selected-wrestler-name"></span></h2>
+                    <input type="number" id="new-rank" min="1" step="1">
+                    <button id="apply-rank">Apply</button>
+                </div>
+            </div>
+            
+            <script>
+            let rows; // Define rows at the global scope
+
+            document.addEventListener('DOMContentLoaded', function() {
+                // Define rows here
+                rows = document.querySelectorAll('#matrix-table tr');
+                
+                // Get the matrix table
+                const table = document.getElementById('matrix-table');
+                const saveButton = document.getElementById('save-button');
+                const modal = document.getElementById('rank-modal');
+                const closeButton = document.querySelector('.close-button');
+                const newRankInput = document.getElementById('new-rank');
+                const applyRankButton = document.getElementById('apply-rank');
+                const selectedWrestlerNameElement = document.getElementById('selected-wrestler-name');
+                
+                // Store original rankings and current rankings
+                const wrestlers = [];
+                
+                // Keep track of the original order when the page loaded
+                let initialOrder = [];
+                
+                // Start from index 1 to skip header row
+                for (let i = 1; i < rows.length; i++) {
+                    const nameCell = rows[i].querySelector('.wrestler-name');
+                    if (nameCell) {
+                        wrestlers.push({
+                            id: nameCell.dataset.id,
+                            name: nameCell.textContent,
+                            originalRank: parseInt(nameCell.dataset.rank),
+                            currentRank: parseInt(nameCell.dataset.rank)
+                        });
+                        initialOrder.push(nameCell.dataset.id);
+                    }
+                }
+                
+                // Sort wrestlers by current rank
+                wrestlers.sort((a, b) => a.currentRank - b.currentRank);
+                
+                // Handle up arrow click
+                table.addEventListener('click', function(e) {
+                    if (e.target.classList.contains('up-arrow')) {
+                        const wrestlerId = e.target.dataset.id;
+                        const currentRank = parseInt(e.target.dataset.currentRank);
+                        
+                        if (currentRank > 1) {
+                            moveWrestler(wrestlerId, currentRank, currentRank - 1);
+                        }
+                    }
+                });
+                
+                // Handle down arrow click
+                table.addEventListener('click', function(e) {
+                    if (e.target.classList.contains('down-arrow')) {
+                        const wrestlerId = e.target.dataset.id;
+                        const currentRank = parseInt(e.target.dataset.currentRank);
+                        
+                        if (currentRank < wrestlers.length) {
+                            moveWrestler(wrestlerId, currentRank, currentRank + 1);
+                        }
+                    }
+                });
+                
+                // Handle wrestler name click to open modal
+                table.addEventListener('click', function(e) {
+                    if (e.target.classList.contains('wrestler-name')) {
+                        const wrestlerId = e.target.dataset.id;
+                        const wrestler = wrestlers.find(w => w.id === wrestlerId);
+                        
+                        // Set up the modal
+                        selectedWrestlerNameElement.textContent = wrestler.name;
+                        newRankInput.value = wrestler.currentRank;
+                        newRankInput.max = wrestlers.length;
+                        
+                        // Store the wrestler ID for later use
+                        applyRankButton.dataset.wrestlerId = wrestlerId;
+                        
+                        // Show the modal
+                        modal.style.display = 'block';
+                    }
+                });
+                
+                // Close modal when close button is clicked
+                closeButton.addEventListener('click', function() {
+                    modal.style.display = 'none';
+                });
+                
+                // Close modal when clicking outside of it
+                window.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+                
+                // Apply new rank when button is clicked
+                applyRankButton.addEventListener('click', function() {
+                    const wrestlerId = this.dataset.wrestlerId;
+                    const newRank = parseInt(newRankInput.value);
+                    const wrestler = wrestlers.find(w => w.id === wrestlerId);
+                    
+                    if (newRank >= 1 && newRank <= wrestlers.length) {
+                        moveWrestler(wrestlerId, wrestler.currentRank, newRank);
+                        modal.style.display = 'none';
+                    } else {
+                        alert('Please enter a valid rank between 1 and ' + wrestlers.length);
+                    }
+                });
+                
+                // Function to move a wrestler to a new rank
+                function moveWrestler(wrestlerId, fromRank, toRank) {
+                    // Store the current order before making changes
+                    const currentOrder = wrestlers.map(w => w.id);
+                    
+                    // Update the data structure
+                    wrestlers.forEach(w => {
+                        if (w.id === wrestlerId) {
+                            w.currentRank = toRank;
+                        } else if (fromRank < toRank && w.currentRank > fromRank && w.currentRank <= toRank) {
+                            // Moving down, shift others up
+                            w.currentRank--;
+                        } else if (fromRank > toRank && w.currentRank < fromRank && w.currentRank >= toRank) {
+                            // Moving up, shift others down
+                            w.currentRank++;
+                        }
+                    });
+                    
+                    // Re-sort the wrestlers by current rank
+                    wrestlers.sort((a, b) => a.currentRank - b.currentRank);
+                    
+                    // Reorder the table
+                    reorderTable(currentOrder);
+                }
+                
+                // Function to reorder the table based on current rankings
+                function reorderTable(previousOrder) {
+                    // If no previous order provided, use the current order
+                    previousOrder = previousOrder || wrestlers.map(w => w.id);
+                    
+                    // Reorder the rows
+                    const tbody = table.querySelector('tbody') || table;
+                    
+                    // Create an array from the rows (skip header)
+                    const rowsArray = Array.from(rows).slice(1);
+                    
+                    // Sort rows based on wrestler ranks
+                    rowsArray.sort((rowA, rowB) => {
+                        const idA = rowA.querySelector('.wrestler-name').dataset.id;
+                        const idB = rowB.querySelector('.wrestler-name').dataset.id;
+                        
+                        const rankA = wrestlers.find(w => w.id === idA).currentRank;
+                        const rankB = wrestlers.find(w => w.id === idB).currentRank;
+                        
+                        return rankA - rankB;
+                    });
+                    
+                    // Get the new order after sorting
+                    const newOrder = rowsArray.map(row => {
+                        return row.querySelector('.wrestler-name').dataset.id;
+                    });
+                    
+                    // Update the rows with new ranks and reappend in correct order
+                    rowsArray.forEach((row, index) => {
+                        // Update rank number
+                        row.querySelector('.rank-col').textContent = index + 1;
+                        
+                        // Update rank in arrows
+                        const upArrow = row.querySelector('.up-arrow');
+                        const downArrow = row.querySelector('.down-arrow');
+                        const wrestlerName = row.querySelector('.wrestler-name');
+                        
+                        upArrow.dataset.currentRank = index + 1;
+                        downArrow.dataset.currentRank = index + 1;
+                        wrestlerName.dataset.rank = index + 1;
+                        
+                        // Re-append the row to maintain correct order
+                        tbody.appendChild(row);
+                    });
+                    
+                    // Reorder the header columns too
+                    const headerRow = rows[0];
+                    const headerCells = headerRow.querySelectorAll('.wrestler-header');
+                    const headerCellsArray = Array.from(headerCells);
+                    
+                    // Create a map of id to header cell
+                    const headerMap = {};
+                    headerCellsArray.forEach(cell => {
+                        headerMap[cell.dataset.id] = cell;
+                    });
+                    
+                    // Remove existing header cells
+                    headerCellsArray.forEach(cell => {
+                        headerRow.removeChild(cell);
+                    });
+                    
+                    // Append header cells in new order
+                    newOrder.forEach(id => {
+                        if (headerMap[id]) {
+                            headerRow.appendChild(headerMap[id]);
+                        }
+                    });
+                    
+                    // Now we need to rearrange the matrix cells
+                    if (previousOrder.toString() !== newOrder.toString()) {
+                        rearrangeMatrixCells(previousOrder, newOrder, rows);
+                    }
+                }
+                
+                // Function to rearrange matrix cells when order changes
+                function rearrangeMatrixCells(originalOrder, newOrder, rows) {
+                    console.log("Rearranging cells from", originalOrder, "to", newOrder);
+                    
+                    // Create a copy of all cells in the matrix
+                    const allCells = [];
+                    for (let rowIdx = 1; rowIdx < rows.length; rowIdx++) {
+                        const row = rows[rowIdx];
+                        const rowWrestlerId = row.querySelector('.wrestler-name').dataset.id;
+                        const cells = Array.from(row.cells).slice(4); // Skip rank, name, win%, RPI columns
+                        
+                        allCells.push({
+                            rowId: rowWrestlerId,
+                            cells: cells.map((cell, idx) => ({
+                                html: cell.innerHTML,
+                                className: cell.className,
+                                colId: originalOrder[idx] || null
+                            }))
+                        });
+                    }
+                    
+                    // Now rearrange the cells based on the new order
+                    for (let rowIdx = 1; rowIdx < rows.length; rowIdx++) {
+                        const row = rows[rowIdx];
+                        const rowWrestlerId = row.querySelector('.wrestler-name').dataset.id;
+                        const rowNewIdx = newOrder.indexOf(rowWrestlerId);
+                        const rowOldIdx = originalOrder.indexOf(rowWrestlerId);
+                        const cells = Array.from(row.cells).slice(4); // Skip rank, name, win%, RPI columns
+                        
+                        // For each cell in this row
+                        for (let colIdx = 0; colIdx < cells.length; colIdx++) {
+                            const colWrestlerId = newOrder[colIdx];
+                            const colOldIdx = originalOrder.indexOf(colWrestlerId);
+                            
+                            // If this is a diagonal cell (same wrestler)
+                            if (rowWrestlerId === colWrestlerId) {
+                                cells[colIdx].className = 'same-wrestler';
+                                cells[colIdx].innerHTML = 'X';
+                            } 
+                            // Otherwise, find the correct cell from the original matrix
+                            else if (rowOldIdx >= 0 && colOldIdx >= 0) {
+                                // Find the cell from the original matrix
+                                const originalRowData = allCells.find(r => r.rowId === rowWrestlerId);
+                                if (originalRowData) {
+                                    cells[colIdx].innerHTML = originalRowData.cells[colOldIdx].html;
+                                    cells[colIdx].className = originalRowData.cells[colOldIdx].className;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            </script>
+        </body>
+        </html>
+        

@@ -1,0 +1,73 @@
+:root {
+  --color-background: #1a1a1a;
+  --color-text: #f9f9f9;
+  --color-primary: #62dd92;
+  --color-secondary: #ffcc00;
+  --color-accent: #2b8bf8;
+  --color-gray: #666666;
+  --color-gray-light: #999999;
+  --font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, select, textarea {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background-color: var(--color-gray);
+  border: 1px solid var(--color-gray-light);
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+input::placeholder {
+  color: var(--color-gray-light);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.brand-text {
+  font-weight: 600;
+}
+
+.brand-brackets {
+  color: var(--color-primary);
+}
+
+.brand-text-data {
+  font-weight: 800;
+} 

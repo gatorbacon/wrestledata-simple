@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+*.DS_Store
+
+# Python environments
+.venv/
+venv/
+*/.venv/
+*/venv/
+
+# Python cache
+__pycache__/
+*/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node
+node_modules/
+
+# Build/output
+dist/
+build/
+*.log
+
+# DynamoDB Local
+dynamodb-local/
+.dynamodb/
+
+# Project-generated output (DO NOT STORE IN GIT)
+mt/rankings_html/
+mt/rankings_data/
+mt/data/
+mt/data_alias/
+mt/processed_data/
+mt/logs/
+
+# Wrestlerank subproject junk
+wrestlerank-json/.venv/
+wrestlerank-json/venv/
+wrestlerank-json/__pycache__/
+
+# Local backups & large files
+matches_backup.json
+
+# VSCode workspace
+.vscode/
+*.code-workspace
