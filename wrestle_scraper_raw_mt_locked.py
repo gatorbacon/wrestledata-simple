@@ -166,47 +166,18 @@ class WrestlingScraper:
         """Ensure the match table has loaded for the selected wrestler.
         Returns:
             'hydrated' if table rows contain wrestlerId=<wrestler_id>
-            'empty'    if confirmed twice: 'no matches' banner present, dropdown selected == wrestler_id,
-                        and table has no data rows or wrestler links
+            'empty'    if, for the whole timeout window, we only ever see the
+                       'no matches' banner for this wrestler and no data rows
             'timeout'  otherwise
         """
         import time
-        deadline = time.time() + timeout_sec
-        consecutive_empty = 0
-        while time.time() < deadline:
-            try:
-                body_text = self.driver.find_element(By.TAG_NAME, "body").text
-                if "There are no matches associated with this wrestler" in (body_text or ""):
-                    try:
-                        sel = self.driver.find_element(By.ID, "wrestler")
-                        if Select(sel).first_selected_option.get_attribute("value") == wrestler_id:
-                            # check table contains no actual match rows (exclude header rows) and no wrestler links
-                            try:
-                                table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
-                                all_rows = table.find_elements(By.TAG_NAME, "tr")
-                                # Exclude the first three header rows (layout/header for this table)
-                                row_candidates = all_rows[3:] if len(all_rows) > 3 else []
-                                match_rows = [
-                                    r for r in row_candidates
-                                    if (r.get_attribute("class") or "") == "dataGridRow"
-                                ]
-                                links = table.find_elements(By.CSS_SELECTOR, "a[href*='wrestlerId=']")
-                                if len(match_rows) == 0 and len(links) == 0:
-                                    consecutive_empty += 1
-                                    if consecutive_empty >= 2:
-                                        return "empty"
-                                else:
-                                    consecutive_empty = 0
-                            except Exception:
-                                # if we cannot inspect table, do not count as empty confirmation
-                                consecutive_empty = 0
-                    except Exception:
-                        pass
-            except Exception:
-                pass
 
+        deadline = time.time() + timeout_sec
+        saw_empty_banner = False
+
+        while time.time() < deadline:
+            # First, look for a positively hydrated table for this wrestler
             try:
-                # Re-find table each loop to avoid stale refs
                 table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
                 links = table.find_elements(By.CSS_SELECTOR, "a[href*='wrestlerId=']")
                 for a in links:
@@ -214,9 +185,43 @@ class WrestlingScraper:
                     if f"wrestlerId={wrestler_id}" in href:
                         return "hydrated"
             except Exception:
+                # If the table isn't ready yet, we'll fall back to the banner logic below
+                pass
+
+            # If we haven't confirmed hydration, check for a stable "no matches" banner
+            try:
+                body_text = self.driver.find_element(By.TAG_NAME, "body").text or ""
+                if "there are no matches associated with this wrestler" in body_text.lower():
+                    try:
+                        sel = self.driver.find_element(By.ID, "wrestler")
+                        if Select(sel).first_selected_option.get_attribute("value") == wrestler_id:
+                            try:
+                                table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
+                                all_rows = table.find_elements(By.TAG_NAME, "tr")
+                                row_candidates = all_rows[3:] if len(all_rows) > 3 else []
+                                match_rows = [
+                                    r for r in row_candidates
+                                    if (r.get_attribute("class") or "") == "dataGridRow"
+                                ]
+                                links = table.find_elements(By.CSS_SELECTOR, "a[href*='wrestlerId=']")
+                                if len(match_rows) == 0 and len(links) == 0:
+                                    # We've observed the empty state for this wrestler at least once.
+                                    # We won't immediately return "empty"; instead we'll remember this
+                                    # and only commit to "empty" if nothing ever hydrates before timeout.
+                                    saw_empty_banner = True
+                            except Exception:
+                                # If we cannot inspect table, don't treat this as a reliable empty signal.
+                                pass
+                    except Exception:
+                        pass
+            except Exception:
                 pass
 
             time.sleep(1.2)
+
+        # If we saw a consistent "no matches" state and never saw hydration, treat as empty
+        if saw_empty_banner:
+            return "empty"
         return "timeout"
 
     def _load_scrape_log(self) -> Dict:
@@ -1587,6 +1592,20 @@ class WrestlingScraper:
                     # Log error with team name
                     error_msg = f"Error processing wrestler {info['name']} for team {team_info['name']}: {e}"
                     self._log_error("wrestler_processing", error_msg)
+                    # If this looks like a stale element error, treat the entire team scrape as failed
+                    if "stale element reference" in str(e).lower():
+                        fatal_msg = (
+                            f"Fatal stale element error while processing wrestler {info['name']} "
+                            f"for team {team_info['name']}. Marking team scrape as failed."
+                        )
+                        print(f"❌ {fatal_msg}")
+                        self._log_error("team_scraping", fatal_msg)
+                        # Save log state before aborting this team
+                        try:
+                            self._save_scrape_log()
+                        except Exception:
+                            pass
+                        return None
                     continue
 
             return team_data
