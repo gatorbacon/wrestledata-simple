@@ -8,6 +8,7 @@ adjust wrestler rankings and save them to JSON files.
 
 import json
 import re
+from datetime import datetime, date, timedelta
 from pathlib import Path
 from typing import Dict, List
 
@@ -25,6 +26,27 @@ def abbreviate_name(full_name: str) -> str:
     first_initial = parts[0][0]
     last = parts[-1]
     return f"{first_initial}. {last}"
+
+
+def parse_match_date(date_str: str) -> date | None:
+    """Parse a match date in MM/DD/YYYY form to a date object."""
+    if not date_str:
+        return None
+    try:
+        return datetime.strptime(date_str, "%m/%d/%Y").date()
+    except Exception:
+        return None
+
+
+def is_recent_date(date_str: str, today: date, days: int = 7) -> bool:
+    """
+    Return True if date_str is within the last `days` days relative to `today`.
+    """
+    d = parse_match_date(date_str)
+    if not d:
+        return False
+    delta = today - d
+    return timedelta(0) <= delta <= timedelta(days=days)
 
 
 def classify_result_type(result: str) -> str:
@@ -207,6 +229,7 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
     
     # Build matrix
     matrix = {}
+    today = datetime.today().date()
     
     for i, (w1_id, w1_info) in enumerate(wrestler_list):
         for j, (w2_id, w2_info) in enumerate(wrestler_list):
@@ -239,6 +262,10 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
                         cell_data['tooltip'] = f"{w1_info['name']} leads head-to-head over {w2_info['name']} ({code})"
                         cell_data['severity'] = severity_for_result_code(code)
                         cell_data['matches'] = matches
+                        # Recent highlight: direct matches within the last week
+                        cell_data['recent'] = any(
+                            is_recent_date(m.get('date', ''), today) for m in matches
+                        )
                     elif wins_2 > wins_1:
                         # w2 has direct advantage
                         code = classify_best_win(matches, rel['wrestler2_id'])
@@ -247,6 +274,9 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
                         cell_data['tooltip'] = f"{w2_info['name']} leads head-to-head over {w1_info['name']} ({code})"
                         cell_data['severity'] = severity_for_result_code(code)
                         cell_data['matches'] = matches
+                        cell_data['recent'] = any(
+                            is_recent_date(m.get('date', ''), today) for m in matches
+                        )
                 else:
                     # w1 is rel['wrestler2_id']
                     if wins_2 > wins_1:
@@ -257,6 +287,9 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
                         cell_data['tooltip'] = f"{w1_info['name']} leads head-to-head over {w2_info['name']} ({code})"
                         cell_data['severity'] = severity_for_result_code(code)
                         cell_data['matches'] = matches
+                        cell_data['recent'] = any(
+                            is_recent_date(m.get('date', ''), today) for m in matches
+                        )
                     elif wins_1 > wins_2:
                         # w2 has direct advantage
                         code = classify_best_win(matches, rel['wrestler1_id'])
@@ -265,6 +298,9 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
                         cell_data['tooltip'] = f"{w2_info['name']} leads head-to-head over {w1_info['name']} ({code})"
                         cell_data['severity'] = severity_for_result_code(code)
                         cell_data['matches'] = matches
+                        cell_data['recent'] = any(
+                            is_recent_date(m.get('date', ''), today) for m in matches
+                        )
             
             # Check common opponent relationships (only if no direct relationship)
             elif pair_key_str in co_rels:
@@ -317,6 +353,19 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
                         cell_data['severity'] = 'co'
                         cell_data['tooltip'] = f"{w2_info['name']} has common opponent win(s) over {w1_info['name']}"
             
+            # For common-opponent cells, check if any underlying match is recent
+            if cell_data.get('co_details'):
+                recent_any = False
+                for detail in cell_data['co_details']:
+                    wm = detail.get('winner_match', {})
+                    lm = detail.get('loser_match', {})
+                    if is_recent_date(wm.get('date', ''), today) or is_recent_date(
+                        lm.get('date', ''), today
+                    ):
+                        recent_any = True
+                        break
+                cell_data['recent'] = recent_any
+
             matrix[f"{w1_id}_{w2_id}"] = cell_data
     
     return {
@@ -441,6 +490,19 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
         }}
         .wrestler-name {{
             font-weight: bold;
+        }}
+        /* Recent matches (within last 7 days when matrix generated) */
+        .matrix-cell.recent {{
+            border-width: 3px;
+            border-style: solid;
+        }}
+        .matrix-cell.direct_win.recent,
+        .matrix-cell.common_win.recent {{
+            border-color: #008000;
+        }}
+        .matrix-cell.direct_loss.recent,
+        .matrix-cell.common_loss.recent {{
+            border-color: #cc0000;
         }}
         /* Nudge first column header a bit right so it doesn't sit under 'Wrestler' */
         .header-name-row th.rotate:first-of-type > div {{
