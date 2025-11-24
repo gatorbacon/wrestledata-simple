@@ -8,6 +8,7 @@ adjust wrestler rankings and save them to JSON files.
 
 import json
 import re
+import shutil
 from datetime import datetime, date, timedelta
 from pathlib import Path
 from typing import Dict, List
@@ -365,7 +366,7 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
                         recent_any = True
                         break
                 cell_data['recent'] = recent_any
-
+            
             matrix[f"{w1_id}_{w2_id}"] = cell_data
     
     return {
@@ -491,6 +492,15 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
         .wrestler-name {{
             font-weight: bold;
         }}
+        .wrestler-main-line {{
+            display: block;
+        }}
+        .wrestler-controls-line {{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 2px;
+        }}
         /* Recent matches (within last 7 days when matrix generated) */
         .matrix-cell.recent {{
             border-width: 3px;
@@ -517,6 +527,9 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             align-items: center;
             gap: 4px;
             margin-left: 10px;
+        }}
+        .wrestler-controls-line .rank-arrows {{
+            margin-left: 0;
         }}
         .rank-arrow {{
             cursor: pointer;
@@ -730,7 +743,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
                         <th class="rank-col">Rank</th>
                         <th class="wrestler-col">Wrestler</th>
 """
-
+    
     # Second header row: rotated wrestler names (first initial + last name)
     for wrestler in wrestlers:
         short_name = abbreviate_name(wrestler['name'])
@@ -751,16 +764,20 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
         html_content += f"""                    <tr data-wrestler-id="{wrestler['id']}"{row_class}>
                         <td class="rank-col">{rank_label}</td>
                         <td class="wrestler-col">
+                            <div class="wrestler-main-line">
                             <span class="wrestler-name">{wrestler['name']}</span>
                             <span class="wrestler-team">({wrestler['team']})</span>
                             <span class="wrestler-record"> - {wrestler.get('wins', 0)}-{wrestler.get('losses', 0)}</span>
-                            <div class="rank-arrows">
-                                <span class="rank-arrow" onclick="moveUp(this)" title="Move up">↑</span>
-                                <span class="rank-arrow" onclick="moveDown(this)" title="Move down">↓</span>
                             </div>
-                            <div class="rank-setter">
-                                <input type="number" min="1" max="{total_wrestlers}" class="rank-set-input" placeholder="#" />
-                                <button class="rank-set-button" onclick="setRank(this)" title="Set rank">Go</button>
+                            <div class="wrestler-controls-line">
+                            <div class="rank-arrows">
+                                    <span class="rank-arrow" onclick="moveUp(this)" title="Move up">↑</span>
+                                    <span class="rank-arrow" onclick="moveDown(this)" title="Move down">↓</span>
+                                </div>
+                                <div class="rank-setter">
+                                    <input type="number" min="1" max="{total_wrestlers}" class="rank-set-input" placeholder="#" />
+                                    <button class="rank-set-button" onclick="setRank(this)" title="Set rank">Go</button>
+                                </div>
                             </div>
                         </td>
 """
@@ -817,15 +834,36 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
                     }
                     for m in cell_data['matches'][:10]:
                         winner_id = m.get('winner_id')
-                        result_str = format_result_for_tooltip(m.get('result', ''))
-                        if winner_id == wrestler['id']:
-                            line = f"{wrestler['name']} defeated {opponent['name']} by {result_str}"
-                        elif winner_id == opponent['id']:
-                            line = f"{opponent['name']} defeated {wrestler['name']} by {result_str}"
-                        else:
-                            continue
-                        tooltip_info['details'].append({'line': line})
+                        date_str = m.get('date', '')
+                        raw_result = m.get('result', '')
 
+                        # Determine winner/loser and their teams from current cell context
+                        if winner_id == wrestler['id']:
+                            winner_name = wrestler['name']
+                            winner_team = wrestler.get('team', '')
+                            loser_name = opponent['name']
+                            loser_team = opponent.get('team', '')
+                        elif winner_id == opponent['id']:
+                            winner_name = opponent['name']
+                            winner_team = opponent.get('team', '')
+                            loser_name = wrestler['name']
+                            loser_team = wrestler.get('team', '')
+                        else:
+                            # If winner_id doesn't match either wrestler (shouldn't happen), skip this match
+                            continue
+
+                        summary_line = (
+                            f"{winner_name} ({winner_team}) defeated "
+                            f"{loser_name} ({loser_team}) ({raw_result})"
+                        ).strip()
+
+                        if date_str:
+                            line = f"{date_str}<br>{summary_line}"
+                        else:
+                            line = summary_line
+
+                        tooltip_info['details'].append({'line': line})
+                    
                 if tooltip_id and tooltip_info:
                     tooltip_data_js[tooltip_id] = tooltip_info
                 
@@ -837,7 +875,8 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
                 severity_class = ''
                 if cell_data.get('severity'):
                     severity_class = f" severity-{cell_data['severity']}"
-                html_content += f"""                        <td class="matrix-cell {cell_data['type']}{severity_class}" title="{simple_tooltip}"{tooltip_data_attr}>
+                recent_class = ' recent' if cell_data.get('recent') else ''
+                html_content += f"""                        <td class="matrix-cell {cell_data['type']}{severity_class}{recent_class}" title="{simple_tooltip}"{tooltip_data_attr}>
                             {cell_data['value']}
                         </td>
 """
@@ -948,7 +987,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             
             if (index1 < index2) {
                 // Moving down: place row1 after row2
-                tbody.insertBefore(row1, row2.nextSibling);
+            tbody.insertBefore(row1, row2.nextSibling);
             } else {
                 // Moving up: place row1 before row2
                 tbody.insertBefore(row1, row2);
@@ -990,7 +1029,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
                     const parent = c1.parentNode;
                     if (index1 < index2) {
                         // Moving down: place c1 after c2
-                        parent.insertBefore(c1, c2.nextSibling);
+                    parent.insertBefore(c1, c2.nextSibling);
                     } else {
                         // Moving up: place c1 before c2
                         parent.insertBefore(c1, c2);
@@ -1220,6 +1259,38 @@ def generate_matrix_for_weight_class(
     return html_file
 
 
+def archive_rankings_snapshot(
+    season: int,
+    data_dir: str = "mt/rankings_data",
+) -> Path | None:
+    """
+    Archive current rankings_{weight}.json files for a season into a
+    timestamped folder so we can analyze movement over time later.
+    """
+    base_dir = Path(data_dir) / str(season)
+    if not base_dir.exists():
+        print(f"No rankings directory found to archive for season {season}: {base_dir}")
+        return None
+
+    rankings_files = list(base_dir.glob("rankings_*.json"))
+    if not rankings_files:
+        print(f"No rankings_*.json files found to archive for season {season} in {base_dir}")
+        return None
+
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    archive_root = base_dir / "rankings_archive"
+    archive_root.mkdir(parents=True, exist_ok=True)
+    snapshot_dir = archive_root / timestamp
+    snapshot_dir.mkdir(exist_ok=True)
+
+    for f in rankings_files:
+        dest = snapshot_dir / f.name
+        shutil.copy2(f, dest)
+
+    print(f"Archived {len(rankings_files)} rankings file(s) to {snapshot_dir}")
+    return snapshot_dir
+
+
 def generate_all_matrices(
     season: int,
     data_dir: str = "mt/rankings_data",
@@ -1269,6 +1340,9 @@ if __name__ == "__main__":
     parser.add_argument('-data-dir', default='mt/rankings_data', help='Directory containing relationship data')
     parser.add_argument('-output-dir', default='mt/rankings_html', help='Directory to save HTML files')
     args = parser.parse_args()
+    
+    # Archive current rankings JSON files before generating matrices
+    archive_rankings_snapshot(args.season, args.data_dir)
     
     if args.weight_class:
         # Generate single weight class
