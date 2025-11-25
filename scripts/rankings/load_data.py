@@ -139,6 +139,13 @@ def extract_wrestlers_and_matches(teams: List[Dict]) -> Dict[str, Dict]:
                 if not match_weight:
                     continue
                 
+                # Store match info for weight-class determination for BOTH wrestlers.
+                # Even if we cannot later determine the winner/loser reliably, these
+                # entries still help with weight assignment based on where they wrestled.
+                match_date = match.get('date', '')
+                wrestler_matches[wrestler_id].append((match, match_weight, match_date))
+                wrestler_matches[opponent_id].append((match, match_weight, match_date))
+                
                 # Determine if this wrestler won or lost (using ID-based matching)
                 winner_name = match.get('winner_name', '')
                 loser_name = match.get('loser_name', '')
@@ -150,19 +157,16 @@ def extract_wrestlers_and_matches(teams: List[Dict]) -> Dict[str, Dict]:
                 opponent_name = opponent_info['name']
                 opponent_team = opponent_info['team']
                 
-                # Determine winner using ID
+                # Determine winner using ID and, as a fallback, name+team.
                 is_winner = (wrestler_id == match.get('winner_id', '') or 
-                            (wrestler_name == winner_name and team_name == winner_team))
+                             (wrestler_name == winner_name and team_name == winner_team))
                 is_loser = (wrestler_id == match.get('loser_id', '') or
                            (wrestler_name == loser_name and team_name == loser_team))
                 
                 if not (is_winner or is_loser):
-                    # Can't determine result, skip
+                    # Can't determine result reliably: we've already recorded the match
+                    # for weight-assignment purposes above, but we skip stats/relationships.
                     continue
-                
-                # Store match info for weight class determination
-                match_date = match.get('date', '')
-                wrestler_matches[wrestler_id].append((match, match_weight, match_date))
                 
                 # Create match record (using IDs only)
                 # Normalize wrestler IDs (always use smaller ID first for consistency)
@@ -258,7 +262,7 @@ def extract_wrestlers_and_matches(teams: List[Dict]) -> Dict[str, Dict]:
     
     for wrestler_id, wrestler_info in all_wrestlers.items():
         matches = list(wrestler_matches[wrestler_id])
-
+        
         # Apply any weight overrides as virtual matches (no effect on stats).
         # Each override adds N synthetic matches at the given weight/date.
         for weight, date, count in overrides_by_wrestler.get(wrestler_id, []):
@@ -291,6 +295,11 @@ def extract_wrestlers_and_matches(teams: List[Dict]) -> Dict[str, Dict]:
             else:
                 assigned_weight = primary_weight
         
+        # Temporary debug for Evan Mougalian
+        if wrestler_info.get("name") == "Evan Mougalian":
+            debug_list = [(mw, d) for _, mw, d in matches]
+            print(f"[DEBUG] Evan Mougalian: primary={primary_weight}, assigned={assigned_weight}, matches={debug_list}")
+
         wrestler_weight_class[wrestler_id] = assigned_weight
     
     # Add wrestlers to their assigned weight classes

@@ -79,7 +79,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
 
 # Configuration
 BASE_URL = "https://www.trackwrestling.com"
@@ -163,65 +163,27 @@ class WrestlingScraper:
         return False
 
     def _verify_wrestler_table_hydrated(self, wrestler_id: str, timeout_sec: float = 8.0) -> str:
-        """Ensure the match table has loaded for the selected wrestler.
+        """Best-effort check that the match table has hydrated for this wrestler.
+        
+        This is intentionally lightweight: it does a single pass to see if the
+        table contains any links with wrestlerId=<wrestler_id>. It does NOT try
+        to infer 'no matches' empties; that is handled explicitly later using
+        page text and, when needed, a reset to the 'wrestler' placeholder.
+        
         Returns:
             'hydrated' if table rows contain wrestlerId=<wrestler_id>
-            'empty'    if, for the whole timeout window, we only ever see the
-                       'no matches' banner for this wrestler and no data rows
             'timeout'  otherwise
         """
-        import time
-
-        deadline = time.time() + timeout_sec
-        saw_empty_banner = False
-
-        while time.time() < deadline:
-            # First, look for a positively hydrated table for this wrestler
-            try:
-                table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
-                links = table.find_elements(By.CSS_SELECTOR, "a[href*='wrestlerId=']")
-                for a in links:
-                    href = a.get_attribute("href") or ""
-                    if f"wrestlerId={wrestler_id}" in href:
-                        return "hydrated"
-            except Exception:
-                # If the table isn't ready yet, we'll fall back to the banner logic below
-                pass
-
-            # If we haven't confirmed hydration, check for a stable "no matches" banner
-            try:
-                body_text = self.driver.find_element(By.TAG_NAME, "body").text or ""
-                if "there are no matches associated with this wrestler" in body_text.lower():
-                    try:
-                        sel = self.driver.find_element(By.ID, "wrestler")
-                        if Select(sel).first_selected_option.get_attribute("value") == wrestler_id:
-                            try:
-                                table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
-                                all_rows = table.find_elements(By.TAG_NAME, "tr")
-                                row_candidates = all_rows[3:] if len(all_rows) > 3 else []
-                                match_rows = [
-                                    r for r in row_candidates
-                                    if (r.get_attribute("class") or "") == "dataGridRow"
-                                ]
-                                links = table.find_elements(By.CSS_SELECTOR, "a[href*='wrestlerId=']")
-                                if len(match_rows) == 0 and len(links) == 0:
-                                    # We've observed the empty state for this wrestler at least once.
-                                    # We won't immediately return "empty"; instead we'll remember this
-                                    # and only commit to "empty" if nothing ever hydrates before timeout.
-                                    saw_empty_banner = True
-                            except Exception:
-                                # If we cannot inspect table, don't treat this as a reliable empty signal.
-                                pass
-                    except Exception:
-                        pass
-            except Exception:
-                pass
-
-            time.sleep(1.2)
-
-        # If we saw a consistent "no matches" state and never saw hydration, treat as empty
-        if saw_empty_banner:
-            return "empty"
+        try:
+            table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
+            links = table.find_elements(By.CSS_SELECTOR, "a[href*='wrestlerId=']")
+            for a in links:
+                href = a.get_attribute("href") or ""
+                if f"wrestlerId={wrestler_id}" in href:
+                    return "hydrated"
+        except Exception:
+            # If we cannot inspect the table, just signal that we couldn't confirm hydration.
+            pass
         return "timeout"
 
     def _load_scrape_log(self) -> Dict:
@@ -433,8 +395,11 @@ class WrestlingScraper:
             f"{start_year}-{short_end} College"
         ]
 
-    def navigate_to_season(self):
-        """Navigate to the wrestling season page."""
+    def navigate_to_season(self) -> bool:
+        """Navigate to the wrestling season page.
+        
+        Returns True on success, False on failure.
+        """
         try:
             print("Navigating to homepage...")
             self.driver.get(BASE_URL)
@@ -629,14 +594,28 @@ class WrestlingScraper:
             )
             login_btn.click()
             self._random_delay()
+            print("Finished navigate_to_season successfully")
+            return True
 
         except Exception as e:
             error_msg = f"Error navigating to season: {e}"
             self._log_error("navigation", error_msg)
             print(f"Navigation error: {error_msg}")
-            if self.driver:
-                print(f"Current URL when error occurred: {self.driver.current_url}")
-            raise
+            try:
+                if self.driver:
+                    print(f"Current URL when error occurred: {self.driver.current_url}")
+            except Exception:
+                pass
+
+            # Best-effort debug: capture a small slice of the current page text
+            try:
+                body_text = self.driver.find_element(By.TAG_NAME, "body").text
+                print("Body text (first 500 chars) at navigation failure:")
+                print((body_text or "")[:500])
+            except Exception:
+                print("Could not read body text at navigation failure.")
+
+            return False
 
     def get_teams(self):
         """Get list of teams from the D1 JSON file or fall back to scraping from the season page."""
@@ -987,6 +966,9 @@ class WrestlingScraper:
                     print(f"Error getting wrestler info: {e}")
                     continue
             
+            # Track whether the previous wrestler definitively had matches
+            prev_had_matches: Optional[bool] = None
+
             # Process each wrestler's matches
             for info in wrestler_info:
                 try:
@@ -1014,22 +996,19 @@ class WrestlingScraper:
                     except Exception:
                         pass
                     
-                    # Verify table is hydrated for this wrestler
+                    # Give the data grid a brief moment to refresh before inspecting rows.
+                    # This helps avoid reading an intermediate "empty" state before matches load.
+                    time.sleep(1.2)
+                    
+                    # Lightweight hydration check; empties are handled explicitly below
                     status = self._verify_wrestler_table_hydrated(info["id"], timeout_sec=8.0)
                     if status == "timeout":
-                        print("⚠️ Table did not hydrate in time — proceeding to fallbacks")
-                    elif status == "empty":
-                        print("No matches banner confirmed for this wrestler — recording as verified with 0 matches")
-                        wrestler_verified = True
-                        matches = []
-                        # Switch back to default content before continue path handled below
-                        # and skip into the same flow as the 'no match rows' branch
-                        # Continue to create wrestler_data with empty matches
-                        # Get the table reference to keep later code happy
-                        table = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid")))
+                        print("⚠️ Could not positively confirm table hydration for this wrestler — proceeding with explicit checks")
                     else:
-                        # hydrated; ensure table present
-                        table = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid")))
+                        print("Table appears hydrated for this wrestler")
+
+                    # Ensure we have a table element to work with
+                    table = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid")))
                     print("Found match table")
                     
                     # DIAGNOSTIC: Print raw HTML of the match table section
@@ -1075,12 +1054,94 @@ class WrestlingScraper:
                     
                     # Special handling for wrestlers with no matches
                     if len(match_rows) == 0:
-                        page_text = self.driver.find_element(By.TAG_NAME, "body").text
                         no_matches_message = "There are no matches associated with this wrestler"
-                        if no_matches_message in page_text and info['name'] in page_text:
-                            print(f"No matches found for {info['name']} - message: '{no_matches_message}' - recording as verified")
-                            wrestler_verified = True
-                            matches = []  # Empty matches list
+                        try:
+                            grid_text = table.text or ""
+                        except Exception:
+                            grid_text = ""
+                        has_no_matches_banner = no_matches_message.lower() in grid_text.lower()
+
+                        if has_no_matches_banner:
+                            # Case 1: previous wrestler had matches (or this is the first wrestler)
+                            if prev_had_matches is True or prev_had_matches is None:
+                                print(f"No matches found for {info['name']} - message: '{no_matches_message}' - recording as verified (previous wrestler had matches or none).")
+                                wrestler_verified = True
+                                matches = []  # Empty matches list
+                                prev_had_matches = False
+                            else:
+                                # Case 2: consecutive 'no matches' wrestlers — re-click Matches tab
+                                # to fully reset the page, then treat this wrestler like the first
+                                # one after a fresh load.
+                                print(f"Consecutive 'no matches' wrestlers detected (previous also had no matches). Re-clicking Matches tab and reloading {info['name']}...")
+                                try:
+                                    # Click the Matches tab again to reload WrestlerMatches.jsp
+                                    matches_link = self.wait.until(
+                                        EC.element_to_be_clickable(
+                                            (By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']")
+                                        )
+                                    )
+                                    matches_link.click()
+                                    print("Clicked Matches tab to reset matches page.")
+                                except Exception as e:
+                                    print(f"Error while clicking Matches tab to reset page: {e}")
+
+                                # Wait briefly for the base "You must select a wrestler..." state
+                                base_confirmed = False
+                                try:
+                                    deadline = time.time() + 10.0
+                                    while time.time() < deadline:
+                                        try:
+                                            base_table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
+                                            base_text = (base_table.text or "").lower()
+                                            if "you must select a wrestler to view matches for." in base_text:
+                                                base_confirmed = True
+                                                break
+                                        except Exception:
+                                            pass
+                                        time.sleep(0.5)
+                                except Exception:
+                                    pass
+
+                                if base_confirmed:
+                                    print("Confirmed base Matches state ('You must select a wrestler to view matches for.'). Treating this wrestler like the first after a fresh load.")
+                                else:
+                                    print("Warning: Did not see base 'You must select a wrestler to view matches for.' message after clicking Matches; proceeding cautiously.")
+
+                                # Re-select the current wrestler and re-evaluate rows/banner
+                                try:
+                                    wrestler_select_reload = self.wait.until(
+                                        EC.presence_of_element_located((By.ID, "wrestler"))
+                                    )
+                                    Select(wrestler_select_reload).select_by_value(info["id"])
+                                    print(f"Re-selected wrestler after Matches reset: {info['name']}")
+
+                                    table = self.wait.until(
+                                        EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid"))
+                                    )
+                                    rows = table.find_elements(By.TAG_NAME, "tr")
+                                    match_rows = [
+                                        row for row in rows[3:] if row.get_attribute("class") == "dataGridRow"
+                                    ]
+                                    print(f"After Matches reset, found {len(match_rows)} match rows")
+
+                                    try:
+                                        grid_text = table.text or ""
+                                    except Exception:
+                                        grid_text = ""
+                                    if len(match_rows) == 0 and no_matches_message.lower() in grid_text.lower():
+                                        # After a full Matches reload and re-selection, treat this like
+                                        # the first wrestler: trust the banner as accurate.
+                                        print(f"No matches found for {info['name']} after Matches reset - message: '{no_matches_message}' - recording as verified.")
+                                        wrestler_verified = True
+                                        matches = []  # Empty matches list
+                                        prev_had_matches = False
+                                    else:
+                                        # If we now see real matches, or the banner disappeared, update prev_had_matches accordingly
+                                        prev_had_matches = bool(match_rows)
+                                except Exception as e:
+                                    print(f"Error while re-selecting wrestler after Matches reset: {e}")
+                        # If there are no match rows and no banner, leave wrestler_verified as-is;
+                        # downstream verification / re-navigation logic will handle ambiguous states.
                     
                     # Hard-coded exception for specific wrestlers with known bad data
                     if self.season_year == 2014 and (
@@ -1146,6 +1207,8 @@ class WrestlingScraper:
 
                     
                     if match_rows:
+                        # We have concrete matches for this wrestler
+                        prev_had_matches = True
                         print("\nProcessing match rows...")
                         
                         for i, row in enumerate(match_rows):
@@ -1634,10 +1697,34 @@ class WrestlingScraper:
     def run(self):
         """Main scraping process."""
         try:
-            # Set up the browser once before processing any teams
-            self.setup_driver()
-            self.navigate_to_season()
-            
+            # Set up the browser and navigate to the desired season, with limited retries
+            max_nav_attempts = 3
+            attempt = 0
+            nav_ok = False
+
+            while attempt < max_nav_attempts and not nav_ok:
+                attempt += 1
+                print(f"=== Navigation attempt {attempt}/{max_nav_attempts} ===")
+                self.setup_driver()
+                nav_ok = self.navigate_to_season()
+
+                if not nav_ok:
+                    print("Navigation attempt failed; closing browser and retrying...")
+                    try:
+                        if self.driver:
+                            self.driver.quit()
+                    except Exception:
+                        pass
+                    self.driver = None
+                    self.wait = None
+                    time.sleep(5)
+
+            if not nav_ok:
+                msg = f"Failed to navigate to season {self.season_year} after {max_nav_attempts} attempts; aborting run."
+                print(msg)
+                self._log_error("navigation_fatal", msg)
+                return
+
             # Get list of teams
             teams = self.get_teams()
             
