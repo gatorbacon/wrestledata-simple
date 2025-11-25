@@ -1,21 +1,32 @@
 #!/usr/bin/env python3
 """
-Compute simple Hodge Trophy front-runner metrics for a season.
+Compute a simple "Freshman of the Year" report for a season.
 
-For each NCAA weight class, this script:
-  - Looks at wrestlers ranked in the TOP 10 of that weight
-    (based on `mt/rankings_data/{season}/rankings_{weight}.json`)
-  - Uses match data from `weight_class_{weight}.json` to compute:
+This mirrors the Hodge Trophy metrics, but filters to wrestlers
+who are listed as true freshmen or redshirt freshmen in the
+team/weight-class data (grade == 'Fr.' or 'RS Fr.').
+
+Behavior:
+  - For each NCAA weight class, look at wrestlers ranked in the TOP N
+    of that weight (default: 10) based on
+        mt/rankings_data/{season}/rankings_{weight}.json
+  - Restrict to those whose grade is 'Fr.' or 'RS Fr.' in
+        mt/rankings_data/{season}/weight_class_{weight}.json
+  - Use the same match data and metrics as hodge_candidates.py:
         * Win percentage
         * Bonus percentage (F/TF/MD/INJ/MFF wins)
         * Fall percentage (F wins)
-  - Collects all such wrestlers across weights and prints a
-    combined table sorted by:
-        1) Win percentage (descending)
-        2) Bonus percentage (descending)
-        3) Fall percentage (descending)
-
-This is intentionally read‑only and console‑only for now.
+        * Ranked wins (current top‑33 in same/adjacent weights)
+        * Top‑10 wins (current top‑10 in same/adjacent weights)
+        * Ranked bonus percentage
+  - Sort across all weights by:
+        1) Win percentage (desc)
+        2) Bonus percentage (desc)
+        3) Ranked bonus percentage (desc)
+        4) Fall percentage (desc)
+        5) Total matches (desc)
+  - Print a console table and emit an HTML report:
+        mt/rankings_html/{season}/freshman_{season}.html
 """
 
 from __future__ import annotations
@@ -30,6 +41,7 @@ from typing import Dict, List, Optional, Set
 
 BONUS_CODES = {"F", "TF", "MD", "INJ", "MFF"}
 FALL_CODES = {"F"}
+FRESHMAN_GRADES = {"Fr.", "RS Fr."}
 
 
 def classify_result_type(result: str) -> str:
@@ -75,12 +87,13 @@ def classify_result_type(result: str) -> str:
 
 
 @dataclass
-class HodgeStats:
+class FreshmanStats:
     wrestler_id: str
     name: str
     team: str
     weight_class: str
-    weight_rank: int = 999
+    grade: str
+    weight_rank: int
     wins: int = 0
     losses: int = 0
     bonus_wins: int = 0
@@ -124,6 +137,29 @@ def load_weight_classes(season: int, data_dir: str) -> Dict[str, Dict]:
     return result
 
 
+def load_grade_overrides(data_dir: str) -> Dict[str, str]:
+    """
+    Load grade overrides from mt/rankings_data/grade_overrides.json.
+    Returns mapping wrestler_id -> override_grade.
+    """
+    path = Path(data_dir) / "grade_overrides.json"
+    if not path.exists():
+        return {}
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return {}
+
+    overrides: Dict[str, str] = {}
+    for o in data.get("overrides", []):
+        wid = o.get("wrestler_id")
+        grade = o.get("grade")
+        if wid and grade:
+            overrides[wid] = grade
+    return overrides
+
+
 def load_rankings_for_weight(
     season: int, weight: str, data_dir: str
 ) -> Optional[List[Dict]]:
@@ -146,15 +182,15 @@ def compute_stats_for_weight(
     ranked_opponent_ids: Set[str],
     top10_opponent_ids: Set[str],
     top_n: int = 10,
-) -> List[HodgeStats]:
-    """Compute HodgeStats for top-N ranked wrestlers in a single weight."""
+) -> List[FreshmanStats]:
+    """Compute FreshmanStats for top-N ranked freshmen in a single weight."""
     wrestlers: Dict[str, Dict] = wc_data["wrestlers"]
     matches: List[Dict] = wc_data["matches"]
 
     if not rankings:
         return []
 
-    # Map wrestler_id -> overall rank
+    # Map wrestler_id -> overall rank from rankings file
     rank_by_id: Dict[str, int] = {}
     for entry in rankings:
         wid = entry.get("wrestler_id")
@@ -167,31 +203,46 @@ def compute_stats_for_weight(
             continue
         rank_by_id[wid] = r
 
-    # Collect top-N ranked wrestler IDs (respect their order)
+    # Collect wrestler IDs whose overall RANK is <= top_n, but only freshmen.
+    # This mirrors the Hodge script semantics: "top N by rank", then we filter.
     top_ranked_ids: List[str] = []
     for entry in rankings:
-        if len(top_ranked_ids) >= top_n:
-            break
         wid = entry.get("wrestler_id")
-        if wid and wid in wrestlers:
-            top_ranked_ids.append(wid)
+        rank = entry.get("rank")
+        if not wid or rank is None:
+            continue
+        if wid not in wrestlers:
+            continue
+        # Only consider wrestlers whose *overall* rank is within top_n
+        try:
+            r = int(rank)
+        except (TypeError, ValueError):
+            continue
+        if r > top_n:
+            continue
+
+        grade = wrestlers[wid].get("grade", "")
+        if grade not in FRESHMAN_GRADES:
+            continue
+        top_ranked_ids.append(wid)
 
     if not top_ranked_ids:
         return []
 
     # Initialize stats for those wrestlers
-    stats: Dict[str, HodgeStats] = {}
+    stats: Dict[str, FreshmanStats] = {}
     for wid in top_ranked_ids:
         info = wrestlers[wid]
-        stats[wid] = HodgeStats(
+        stats[wid] = FreshmanStats(
             wrestler_id=wid,
             name=info.get("name", f"ID:{wid}"),
             team=info.get("team", "Unknown"),
             weight_class=weight,
+            grade=info.get("grade", ""),
             weight_rank=rank_by_id.get(wid, 999),
         )
 
-    # Iterate matches once and update stats for involved top-10 wrestlers
+    # Iterate matches once and update stats for involved freshmen
     for m in matches:
         w1 = m.get("wrestler1_id")
         w2 = m.get("wrestler2_id")
@@ -199,7 +250,7 @@ def compute_stats_for_weight(
         result = m.get("result", "") or ""
         code = classify_result_type(result)
 
-        # Only process matches that involve at least one tracked wrestler
+        # Only process matches that involve at least one tracked freshman
         if w1 not in stats and w2 not in stats:
             continue
 
@@ -207,7 +258,6 @@ def compute_stats_for_weight(
         if code == "NC":
             continue
 
-        # Helper to update stats for one side of the match
         def update_for(wid: str, opp_id: Optional[str]) -> None:
             if wid not in stats:
                 return
@@ -238,8 +288,8 @@ def compute_stats_for_weight(
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
-            "Compute Hodge Trophy front-runner metrics for top-10 ranked wrestlers "
-            "in each weight class."
+            "Compute Freshman of the Year metrics for top-ranked freshmen "
+            "in each weight class (grades 'Fr.' and 'RS Fr.')."
         )
     )
     parser.add_argument("-season", type=int, required=True, help="Season year (e.g., 2026)")
@@ -251,31 +301,13 @@ def main() -> None:
     parser.add_argument(
         "-output-dir",
         default="mt/rankings_html",
-        help="Directory to save HTML Hodge report (subdir per season will be created)",
+        help="Directory to save HTML Freshman report (subdir per season will be created)",
     )
     parser.add_argument(
         "-top-n",
         type=int,
         default=10,
         help="Number of ranked wrestlers per weight class to consider (default: 10)",
-    )
-    parser.add_argument(
-        "-maxloss",
-        type=int,
-        default=0,
-        help=(
-            "Maximum number of losses allowed for inclusion in the report "
-            "(default: 0, i.e. only undefeated wrestlers)."
-        ),
-    )
-    parser.add_argument(
-        "-minmatch",
-        type=int,
-        default=1,
-        help=(
-            "Minimum number of total matches required for inclusion "
-            "(default: 1; set to 0 to include 0-0 wrestlers)."
-        ),
     )
     args = parser.parse_args()
 
@@ -284,6 +316,15 @@ def main() -> None:
     output_root = Path(args.output_dir)
 
     wc_by_weight = load_weight_classes(season, data_dir)
+
+    # Apply grade overrides, if any
+    grade_overrides = load_grade_overrides(data_dir)
+    if grade_overrides:
+        for wc_data in wc_by_weight.values():
+            wrestlers = wc_data.get("wrestlers", {})
+            for wid, info in wrestlers.items():
+                if wid in grade_overrides:
+                    info["grade"] = grade_overrides[wid]
 
     # Only consider numeric weight classes (e.g., '125', '133')
     numeric_weights = sorted(
@@ -318,7 +359,7 @@ def main() -> None:
         top10_ids_by_weight[weight] = top10
         top33_ids_by_weight[weight] = top33
 
-    all_candidates: List[HodgeStats] = []
+    all_candidates: List[FreshmanStats] = []
 
     # For each weight, build the set of ranked/top10 opponent IDs from
     # the current and adjacent weight classes only.
@@ -350,36 +391,21 @@ def main() -> None:
         )
         all_candidates.extend(stats)
 
-    # Apply loss and match-count filters
-    filtered_candidates: List[HodgeStats] = [
-        s
-        for s in all_candidates
-        if s.losses <= args.maxloss and s.total_matches >= args.minmatch
-    ]
-
     # Sort across all weights:
     # 1) overall weight ranking (ascending: rank 1 before 2)
-    # 2) win_pct desc
-    # 3) bonus_pct desc
-    # 4) ranked_bonus_pct desc
-    # 5) fall_pct desc
-    # 6) total_matches desc
-    filtered_candidates.sort(
+    # 2) bonus_pct desc
+    # 3) ranked_wins desc
+    all_candidates.sort(
         key=lambda s: (
             s.weight_rank,
-            -s.win_pct,
             -s.bonus_pct,
-            -s.ranked_bonus_pct,
-            -s.fall_pct,
-            -(s.total_matches),
+            -s.ranked_wins,
         )
     )
 
     print(
-        f"\nHodge Trophy candidate metrics for season {season} "
-        f"(top {args.top_n} per weight, max losses={args.maxloss}, "
-        f"min matches={args.minmatch}, "
-        f"sorted by rank, win%, bonus%, fall%):\n"
+        f"\nFreshman of the Year candidate metrics for season {season} "
+        f"(top {args.top_n} freshmen per weight, sorted by rank, bonus%, ranked wins):\n"
     )
     header = (
         f"{'#':>3}  {'Name':<25} {'Team':<20} {'Wt':>4}  "
@@ -389,7 +415,7 @@ def main() -> None:
     print(header)
     print("-" * len(header))
 
-    for idx, s in enumerate(filtered_candidates, start=1):
+    for idx, s in enumerate(all_candidates, start=1):
         wl = f"{s.wins}-{s.losses}"
         print(
             f"{idx:>3}  {s.name:<25.25} {s.team:<20.20} {s.weight_class:>4}  "
@@ -400,7 +426,7 @@ def main() -> None:
     # --- Generate HTML report ---
     season_dir = output_root / str(season)
     season_dir.mkdir(parents=True, exist_ok=True)
-    html_path = season_dir / f"hodge_{season}.html"
+    html_path = season_dir / f"freshman_{season}.html"
 
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -408,8 +434,8 @@ def main() -> None:
         "<!DOCTYPE html>",
         "<html>",
         "<head>",
-        f"<meta charset='utf-8'>",
-        f"<title>Hodge Trophy Candidates - Season {season}</title>",
+        "<meta charset='utf-8'>",
+        f"<title>Freshman of the Year Candidates - Season {season}</title>",
         "<style>",
         "body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }",
         "h1 { margin-top: 0; }",
@@ -425,9 +451,10 @@ def main() -> None:
         "</style>",
         "</head>",
         "<body>",
-        f"<h1>Hodge Trophy Candidates &mdash; Season {season}</h1>",
-        f"<div class='meta'>",
-        f"Top {args.top_n} per weight class; ranked wins and bonus stats computed against current top-33 in the same and adjacent weights. ",
+        f"<h1>Freshman of the Year Candidates &mdash; Season {season}</h1>",
+        "<div class='meta'>",
+        f"Top {args.top_n} ranked freshmen per weight class (grades 'Fr.' and 'RS Fr.'). "
+        "Ranked wins and bonus stats computed against current top-33 in the same and adjacent weights. "
         f"Generated at {generated_at}.",
         "</div>",
         "<table>",
@@ -449,7 +476,7 @@ def main() -> None:
         "<tbody>",
     ]
 
-    for idx, s in enumerate(filtered_candidates, start=1):
+    for idx, s in enumerate(all_candidates, start=1):
         wl = f"{s.wins}-{s.losses}"
         html.append(
             "<tr>"
@@ -479,7 +506,7 @@ def main() -> None:
     with html_path.open("w", encoding="utf-8") as f:
         f.write("\n".join(html))
 
-    print(f"\nHTML report written to {html_path}\n")
+    print(f"\nHTML Freshman report written to {html_path}\n")
 
 
 if __name__ == "__main__":

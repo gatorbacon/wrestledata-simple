@@ -514,6 +514,15 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
         .matrix-cell.common_loss.recent {{
             border-color: #cc0000;
         }}
+        /* Anchor win/loss highlighting */
+        .matrix-cell.anchor-win {{
+            font-weight: bold;
+            color: #005500;
+        }}
+        .matrix-cell.anchor-loss {{
+            font-weight: bold;
+            color: #990000;
+        }}
         /* Nudge first column header a bit right so it doesn't sit under 'Wrestler' */
         .header-name-row th.rotate:first-of-type > div {{
             margin-left: 20px;
@@ -650,6 +659,12 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
         .unranked-row .rank-col {{
             font-weight: bold;
         }}
+        /* Wrestlers with no matches (0-0 record) */
+        .no-matches-row .wrestler-name {{
+            background-color: lightskyblue;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }}
         #matrix-tooltip {{
             display: none;
             position: fixed;
@@ -759,25 +774,44 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
     
     # Add data rows
     for i, wrestler in enumerate(wrestlers):
-        row_class = " class=\"unranked-row\"" if wrestler.get('is_unranked') else ""
+        wins = wrestler.get('wins', 0) or 0
+        losses = wrestler.get('losses', 0) or 0
+        has_no_matches = (wins == 0 and losses == 0)
+
+        row_classes = []
+        if wrestler.get('is_unranked'):
+            row_classes.append("unranked-row")
+        if has_no_matches:
+            row_classes.append("no-matches-row")
+        row_class_attr = f' class="{" ".join(row_classes)}"' if row_classes else ""
+
         rank_label = "UNR" if wrestler.get('is_unranked') else str(i + 1)
-        html_content += f"""                    <tr data-wrestler-id="{wrestler['id']}"{row_class}>
+        html_content += f"""                    <tr data-wrestler-id="{wrestler['id']}"{row_class_attr}>
                         <td class="rank-col">{rank_label}</td>
                         <td class="wrestler-col">
                             <div class="wrestler-main-line">
                             <span class="wrestler-name">{wrestler['name']}</span>
                             <span class="wrestler-team">({wrestler['team']})</span>
-                            <span class="wrestler-record"> - {wrestler.get('wins', 0)}-{wrestler.get('losses', 0)}</span>
+                            <span class="wrestler-record"> - {wins}-{losses}</span>
                             </div>
                             <div class="wrestler-controls-line">
                             <div class="rank-arrows">
                                     <span class="rank-arrow" onclick="moveUp(this)" title="Move up">↑</span>
                                     <span class="rank-arrow" onclick="moveDown(this)" title="Move down">↓</span>
-                                </div>
+                                </div>"""
+        if has_no_matches:
+            html_content += f"""
+                                <div class="rank-setter">
+                                    <input type="number" min="1" max="{total_wrestlers}" class="rank-set-input" value="{total_wrestlers}" />
+                                    <button class="rank-set-button" onclick="setRank(this)" title="Set rank">Go</button>
+                                </div>"""
+        else:
+            html_content += f"""
                                 <div class="rank-setter">
                                     <input type="number" min="1" max="{total_wrestlers}" class="rank-set-input" placeholder="#" />
                                     <button class="rank-set-button" onclick="setRank(this)" title="Set rank">Go</button>
-                                </div>
+                                </div>"""
+        html_content += """
                             </div>
                         </td>
 """
@@ -861,7 +895,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
                             line = f"{date_str}<br>{summary_line}"
                         else:
                             line = summary_line
-
+                    
                         tooltip_info['details'].append({'line': line})
                     
                 if tooltip_id and tooltip_info:
@@ -941,8 +975,75 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             });
         }
         
-        // Initialize tooltip handlers
-        window.addEventListener("DOMContentLoaded", attachTooltipHandlers);
+        // Anchor win/loss computation
+        function recomputeAnchors() {
+            const table = document.getElementById('ranking-table');
+            if (!table) return;
+
+            // Clear previous anchors
+            table.querySelectorAll('.anchor-win, .anchor-loss').forEach(td => {
+                td.classList.remove('anchor-win', 'anchor-loss');
+            });
+
+            const tbody = table.querySelector('tbody');
+            if (!tbody) return;
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+
+            rows.forEach(row => {
+                const cells = Array.from(row.querySelectorAll('td'));
+                // Skip first two columns (rank + wrestler)
+                const dataCells = cells.slice(2);
+                if (!dataCells.length) return;
+
+                const lossIdxs = [];
+                const winIdxs = [];
+
+                dataCells.forEach((cell, idx) => {
+                    if (cell.classList.contains('direct_loss') || cell.classList.contains('common_loss')) {
+                        lossIdxs.push(idx);
+                    } else if (cell.classList.contains('direct_win') || cell.classList.contains('common_win')) {
+                        winIdxs.push(idx);
+                    }
+                });
+
+                if (!lossIdxs.length && !winIdxs.length) {
+                    return;
+                }
+
+                // Anchor win: use lowest-ranked (rightmost) loss as boundary,
+                // then find the first win to the right of that boundary.
+                if (lossIdxs.length) {
+                    const worstLossIdx = Math.max(...lossIdxs);
+                    for (let idx = worstLossIdx + 1; idx < dataCells.length; idx++) {
+                        const cell = dataCells[idx];
+                        if (cell.classList.contains('direct_win') || cell.classList.contains('common_win')) {
+                            cell.classList.add('anchor-win');
+                            break;
+                        }
+                    }
+                }
+
+                // Anchor loss: highest-ranked loss that has no win to its left.
+                if (lossIdxs.length) {
+                    const sortedLoss = lossIdxs.slice().sort((a, b) => a - b); // left to right
+                    for (const lossIdx of sortedLoss) {
+                        const hasHigherWin = winIdxs.some(wIdx => wIdx < lossIdx);
+                        if (!hasHigherWin) {
+                            dataCells[lossIdx].classList.add('anchor-loss');
+                            break;
+                        }
+                    }
+                }
+            });
+        }
+
+        function initializeMatrixInteractions() {
+            attachTooltipHandlers();
+            recomputeAnchors();
+        }
+
+        // Initialize tooltip handlers and anchors
+        window.addEventListener("DOMContentLoaded", initializeMatrixInteractions);
         
         function getRowIndexFromElement(elem) {
             const row = elem.closest('tr');
@@ -958,6 +1059,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             if (index <= 0) return;
             swapRows(index, index - 1);
             updateRanks();
+            recomputeAnchors();
         }
         
         function moveDown(elem) {
@@ -969,6 +1071,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             if (index < 0 || index >= rows.length - 1) return;
             swapRows(index, index + 1);
             updateRanks();
+            recomputeAnchors();
         }
 
         // Expose movement functions globally for inline onclick handlers
@@ -1095,6 +1198,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             }
             
             updateRanks();
+            recomputeAnchors();
         }
         
         function setRank(buttonElem) {

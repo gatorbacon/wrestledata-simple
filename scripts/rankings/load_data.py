@@ -130,8 +130,25 @@ def extract_wrestlers_and_matches(teams: List[Dict]) -> Dict[str, Dict]:
                 if not opponent_id or opponent_id == 'null' or opponent_id == '':
                     continue
                 
-                # Skip if opponent is not in our D1 wrestler list
+                # If opponent is not in our D1 wrestler list, we still want the
+                # record (wins/losses) for THIS wrestler to be accurate, but we
+                # cannot use the match for D1 relationships or opponent stats.
                 if opponent_id not in all_wrestlers:
+                    # Build a key so we don't double-count if this match appears
+                    # multiple times in the source data.
+                    match_date = match.get('date', '')
+                    local_key = ('nonD1', wrestler_id, opponent_id, match_date, result)
+                    if local_key not in processed_matches_for_stats:
+                        if (match.get('winner_name') == wrestler_name and
+                                match.get('winner_team') == team_name):
+                            wrestler_info['wins'] += 1
+                        elif (match.get('loser_name') == wrestler_name and
+                                match.get('loser_team') == team_name):
+                            wrestler_info['losses'] += 1
+                        wrestler_info['matches_count'] += 1
+                        processed_matches_for_stats.add(local_key)
+                    # Do not include this match in wrestler_matches or global
+                    # match lists used for relationships.
                     continue
                 
                 # Get the weight class for this match
