@@ -112,9 +112,18 @@ def build_common_opponent_relationships(
         if w1_id not in wrestlers or w2_id not in wrestlers:
             continue
         
-        # Skip "no contest" matches for common-opponent logic
+        # Skip "no contest" and injury/medical forfeit matches for CO logic
+        # (NC, MFF/MFFL/M. For./medical forfeit, INJ)
         result_str = str(match.get('result', '')).lower().strip()
-        if result_str == 'nc' or 'no contest' in result_str:
+        if (
+            result_str == 'nc'
+            or 'no contest' in result_str
+            or 'mffl' in result_str
+            or 'm. for.' in result_str
+            or 'medical forfeit' in result_str
+            or 'inj' in result_str
+            or 'injury' in result_str
+        ):
             continue
         
         # Track opponents

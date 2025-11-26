@@ -11,7 +11,7 @@ import re
 import shutil
 from datetime import datetime, date, timedelta
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 
 def abbreviate_name(full_name: str) -> str:
@@ -187,7 +187,9 @@ def format_result_for_tooltip(result: str) -> str:
     return result.strip()
 
 
-def build_matrix_data(relationships_data: Dict) -> Dict:
+def build_matrix_data(
+    relationships_data: Dict, placement_notes: Optional[Dict[str, str]] = None
+) -> Dict:
     """
     Build matrix data structure from relationships.
     
@@ -203,7 +205,8 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
     
     # Determine ordering for wrestlers
     ranking_order: List[str] = relationships_data.get('ranking_order', [])
-    
+    placement_notes = placement_notes or {}
+
     if ranking_order:
         # Use saved ranking order where available
         wrestler_list = []
@@ -212,6 +215,9 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
             if wid in wrestlers and wid not in seen:
                 info = dict(wrestlers[wid])
                 info['is_unranked'] = False
+                note = placement_notes.get(wid)
+                if note:
+                    info['placement_note'] = note
                 wrestler_list.append((wid, info))
                 seen.add(wid)
         # Append any wrestlers not present in the ranking file
@@ -219,6 +225,9 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
             if wid not in seen:
                 info = dict(winfo)
                 info['is_unranked'] = True
+                note = placement_notes.get(wid)
+                if note:
+                    info['placement_note'] = note
                 wrestler_list.append((wid, info))
     else:
         # Fallback: sort by ID for initial ordering
@@ -226,6 +235,9 @@ def build_matrix_data(relationships_data: Dict) -> Dict:
         for wid, winfo in sorted(wrestlers.items(), key=lambda x: x[0]):
             info = dict(winfo)
             info['is_unranked'] = True
+            note = placement_notes.get(wid)
+            if note:
+                info['placement_note'] = note
             wrestler_list.append((wid, info))
     
     # Build matrix
@@ -531,6 +543,12 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             font-size: 10px;
             color: #666;
         }}
+        .wrestler-note {{
+            font-size: 11px;
+            color: #0066ff;
+            font-weight: bold;
+            margin-left: 4px;
+        }}
         .rank-arrows {{
             display: inline-flex;
             align-items: center;
@@ -777,6 +795,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
         wins = wrestler.get('wins', 0) or 0
         losses = wrestler.get('losses', 0) or 0
         has_no_matches = (wins == 0 and losses == 0)
+        placement_note = wrestler.get('placement_note')
 
         row_classes = []
         if wrestler.get('is_unranked'):
@@ -786,13 +805,19 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
         row_class_attr = f' class="{" ".join(row_classes)}"' if row_classes else ""
 
         rank_label = "UNR" if wrestler.get('is_unranked') else str(i + 1)
+        note_html = (
+            f'<span class="wrestler-note">({placement_note})</span>'
+            if placement_note
+            else ""
+        )
+
         html_content += f"""                    <tr data-wrestler-id="{wrestler['id']}"{row_class_attr}>
                         <td class="rank-col">{rank_label}</td>
                         <td class="wrestler-col">
                             <div class="wrestler-main-line">
                             <span class="wrestler-name">{wrestler['name']}</span>
                             <span class="wrestler-team">({wrestler['team']})</span>
-                            <span class="wrestler-record"> - {wins}-{losses}</span>
+                            <span class="wrestler-record"> - {wins}-{losses}</span>{note_html}
                             </div>
                             <div class="wrestler-controls-line">
                             <div class="rank-arrows">
@@ -1345,9 +1370,24 @@ def generate_matrix_for_weight_class(
             relationships_data['ranking_order'] = ranking_ids
         except Exception as e:
             print(f"Warning: Failed to load rankings file {rankings_file}: {e}")
+
+    # Load placement notes (season-agnostic, keyed by wrestler_id)
+    placement_notes_path = Path(data_dir) / "placement_notes.json"
+    placement_notes_map: Dict[str, str] = {}
+    if placement_notes_path.exists():
+        try:
+            with open(placement_notes_path, "r", encoding="utf-8") as pf:
+                raw_notes = json.load(pf)
+            for entry in raw_notes.get("notes", []):
+                wid = entry.get("wrestler_id")
+                note = str(entry.get("note", "")).strip().upper()
+                if wid and note:
+                    placement_notes_map[wid] = note
+        except Exception as e:
+            print(f"Warning: Failed to load placement notes from {placement_notes_path}: {e}")
     
     # Build matrix data
-    matrix_data = build_matrix_data(relationships_data)
+    matrix_data = build_matrix_data(relationships_data, placement_notes=placement_notes_map)
     
     # Generate HTML
     html = generate_html_matrix(matrix_data, weight_class, season)
