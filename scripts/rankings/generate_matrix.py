@@ -138,12 +138,12 @@ def severity_for_result_code(code: str) -> str:
     - strong : Fall / Technical Fall
     - medium : Major Decision
     - light  : Decision / Other
-    - co     : Medical forfeit (MFF) / Injury (INJ), styled like common opponents
-    - nc     : No contest (NC), neutral grey for both wrestlers
+    - co     : Injury (INJ), styled like common opponents
+    - nc     : No contest (NC) / Medical Forfeit (MFF), neutral grey for both wrestlers
     """
-    if code == "NC":
+    if code in ("NC", "MFF"):
         return "nc"
-    if code in ("MFF", "INJ"):
+    if code == "INJ":
         return "co"
     if code in ("F", "TF"):
         return "strong"
