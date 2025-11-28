@@ -79,7 +79,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
-from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
+from selenium.common.exceptions import TimeoutException, StaleElementReferenceException, ElementClickInterceptedException
 
 # Configuration
 BASE_URL = "https://www.trackwrestling.com"
@@ -316,6 +316,98 @@ class WrestlingScraper:
         """Add random delay between requests."""
         time.sleep(random.uniform(0.5, 1.0))
 
+    def _dismiss_cookie_modal_if_present(self, timeout: float = 5.0):
+        """Best-effort dismissal of Trackwrestling cookie/consent modal overlay.
+        
+        This targets the rfmodal / rFastModalWrapper overlay that has been
+        intermittently blocking clicks on the main navigation.
+        """
+        try:
+            print(f"Checking for cookie/consent modal overlay (timeout={timeout}s)...")
+            overlay = None
+            # Try a few locator variants since TW may tweak classnames slightly.
+            overlay_locators = [
+                (By.CSS_SELECTOR, "div.rfmodal.rFastModalWrapper"),
+                (By.CSS_SELECTOR, "div[class*='rFastModalWrapper']"),
+                (By.CSS_SELECTOR, "div[class*='rfmodal'][class*='rFastModalWrapper']"),
+            ]
+            for by, selector in overlay_locators:
+                try:
+                    overlay = WebDriverWait(self.driver, timeout).until(
+                        EC.presence_of_element_located((by, selector))
+                    )
+                    if overlay:
+                        break
+                except TimeoutException:
+                    # Try next locator flavor
+                    continue
+
+            if not overlay:
+                print("No cookie/consent modal overlay found.")
+                return
+
+            if not overlay.is_displayed():
+                print("Cookie/consent modal element present but not displayed; skipping.")
+                return
+
+            print("Cookie/consent modal detected; attempting to dismiss it...")
+
+            # Look for likely action buttons/links inside the modal.
+            buttons = overlay.find_elements(
+                By.CSS_SELECTOR,
+                "button, a, input[type='button'], input[type='submit']",
+            )
+            preferred_keywords = [
+                "accept",
+                "agree",
+                "save",
+                "continue",
+                "ok",
+                "got it",
+                "close",
+            ]
+
+            clicked = False
+            for btn in buttons:
+                try:
+                    label = (btn.text or btn.get_attribute("value") or "").strip()
+                    label_lower = label.lower()
+                    if label:
+                        print(f"Found modal button: '{label}'")
+                    if any(k in label_lower for k in preferred_keywords):
+                        print(f"Clicking modal button '{label}' via normal click...")
+                        try:
+                            btn.click()
+                        except Exception as e:
+                            print(f"Normal click on modal button '{label}' failed: {e}; trying JS click...")
+                            self.driver.execute_script("arguments[0].click();", btn)
+                        clicked = True
+                        break
+                except Exception as e:
+                    print(f"Error inspecting modal button: {e}")
+                    continue
+
+            # If we didn't find a preferred button, click the first as a fallback.
+            if not clicked and buttons:
+                btn = buttons[0]
+                label = (btn.text or btn.get_attribute("value") or "").strip()
+                print(f"No preferred modal button found; clicking first modal button '{label}'")
+                try:
+                    btn.click()
+                except Exception as e:
+                    print(f"Normal click on first modal button failed: {e}; trying JS click...")
+                    self.driver.execute_script("arguments[0].click();", btn)
+
+            # Wait briefly for overlay to disappear.
+            try:
+                WebDriverWait(self.driver, 5).until(EC.invisibility_of_element(overlay))
+                print("Cookie/consent modal dismissed (overlay is now invisible).")
+            except TimeoutException:
+                print("Cookie/consent modal still visible after dismissal attempt; continuing anyway.")
+
+        except Exception as e:
+            print(f"Error while attempting to dismiss cookie/consent modal overlay: {e}")
+
     def _log_error(self, error_type: str, details: str):
         """Log an error with timestamp and save immediately."""
         error_entry = {
@@ -404,10 +496,14 @@ class WrestlingScraper:
             print("Navigating to homepage...")
             self.driver.get(BASE_URL)
             time.sleep(3)
+            print(f"Initial window size: {self.driver.get_window_size()}")
             
             # Print page title and URL for debugging
             print(f"Current URL: {self.driver.current_url}")
             print(f"Page title: {self.driver.title}")
+
+            # Best-effort: clear any cookie / consent modal that may be blocking the nav bar.
+            self._dismiss_cookie_modal_if_present(timeout=7.0)
             
             # Click Browse using the correct selector
             print("Attempting to click Browse...")
@@ -419,6 +515,8 @@ class WrestlingScraper:
             time.sleep(2)
 
             print("Clicking Seasons...")
+            # Re‑check for modal overlay before trying to hit the Seasons item.
+            self._dismiss_cookie_modal_if_present(timeout=3.0)
             seasons_btn = self.wait.until(
                 EC.element_to_be_clickable((By.LINK_TEXT, "Seasons"))
             )
@@ -429,9 +527,12 @@ class WrestlingScraper:
             time.sleep(3)
 
             print("Clicking More Seasons...")
-            # Wait for the More Seasons link to be present
+            # One more modal check here, as logs show the overlay sometimes appears by this point.
+            self._dismiss_cookie_modal_if_present(timeout=3.0)
+
+            # Wait for the More Seasons link to be present/clickable
             more_seasons_btn = self.wait.until(
-                EC.presence_of_element_located((By.LINK_TEXT, "More Seasons"))
+                EC.element_to_be_clickable((By.LINK_TEXT, "More Seasons"))
             )
 
             print("Clicking More Seasons...2")
@@ -442,10 +543,23 @@ class WrestlingScraper:
             # Try regular click first
             try:
                 more_seasons_btn.click()
+                print("Clicked 'More Seasons' via normal click.")
+            except ElementClickInterceptedException as e:
+                print(f"'More Seasons' click intercepted (likely by overlay): {e}")
+                # Attempt to clear modal/overlay and retry using JS click.
+                self._dismiss_cookie_modal_if_present(timeout=5.0)
+                try:
+                    print("Retrying 'More Seasons' click via JavaScript after dismissing overlay...")
+                    self.driver.execute_script("arguments[0].click();", more_seasons_btn)
+                    print("'More Seasons' clicked via JavaScript after overlay dismissal.")
+                except Exception as js_e:
+                    print(f"JavaScript click on 'More Seasons' failed after overlay dismissal: {js_e}")
+                    raise
             except Exception as e:
-                print(f"Regular click failed, trying JavaScript click: {e}")
+                print(f"Regular click on 'More Seasons' failed for non-intercept reason, trying JavaScript click: {e}")
                 # If regular click fails, try JavaScript click
                 self.driver.execute_script("arguments[0].click();", more_seasons_btn)
+                print("'More Seasons' clicked via JavaScript fallback.")
             
             self._random_delay()
             
@@ -576,23 +690,43 @@ class WrestlingScraper:
 
             # Handle the governing body selection popup
             print("Waiting for governing body selection popup...")
-            self.wait.until(
-                EC.presence_of_element_located((By.ID, "gbFrame"))
-            )
-            
+            try:
+                gb_frame_elem = self.wait.until(
+                    EC.presence_of_element_located((By.ID, "gbFrame"))
+                )
+                try:
+                    print(f"'gbFrame' popup located. tag={gb_frame_elem.tag_name}, displayed={gb_frame_elem.is_displayed()}")
+                except Exception:
+                    print("'gbFrame' popup located (could not read tag/displayed safely).")
+            except TimeoutException as te:
+                print(f"Timed out waiting for 'gbFrame' governing body popup: {te}")
+                raise
+
             # Select NCAA from the dropdown
             print("Selecting NCAA from dropdown...")
-            select = Select(self.wait.until(
-                EC.presence_of_element_located((By.ID, "gbId"))
-            ))
-            select.select_by_value("3")  # 3 is the value for NCAA
+            try:
+                gb_select_elem = self.wait.until(
+                    EC.presence_of_element_located((By.ID, "gbId"))
+                )
+                print("Governing body dropdown element located; attempting to select NCAA...")
+                select = Select(gb_select_elem)
+                select.select_by_value("3")  # 3 is the value for NCAA
+                print("NCAA governing body selected successfully.")
+            except Exception as e:
+                print(f"Error while selecting NCAA from governing body dropdown: {e}")
+                raise
             
             # Click the Login button to submit
             print("Clicking Login button...")
-            login_btn = self.wait.until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, "input[value='Login']"))
-            )
-            login_btn.click()
+            try:
+                login_btn = self.wait.until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, "input[value='Login']"))
+                )
+                login_btn.click()
+                print("Governing body Login button clicked successfully.")
+            except Exception as e:
+                print(f"Error while clicking Login button on governing body popup: {e}")
+                raise
             self._random_delay()
             print("Finished navigate_to_season successfully")
             return True
