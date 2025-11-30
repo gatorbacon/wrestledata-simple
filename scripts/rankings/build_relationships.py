@@ -223,6 +223,11 @@ def build_common_opponent_relationships(
                 else:
                     # No matches found (shouldn't happen if opponent is in set)
                     continue
+
+                # If either wrestler is exactly split (e.g. 1-1, 2-2) against this common
+                # opponent, treat that opponent as neutral and do not use it for CO.
+                if (w1_wins == w1_losses and w1_wins > 0) or (w2_wins == w2_losses and w2_wins > 0):
+                    continue
                 
                 # Compare results - only count when one has an advantage
                 # w1_wins means w1 beat the opponent, w1_losses means w1 lost to the opponent

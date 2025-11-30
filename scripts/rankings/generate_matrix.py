@@ -265,55 +265,83 @@ def build_matrix_data(
                 wins_1 = rel.get('direct_wins_1', 0)
                 wins_2 = rel.get('direct_wins_2', 0)
                 matches = rel.get('matches', [])
+                total_matches = wins_1 + wins_2
                 
-                if w1_id == rel['wrestler1_id']:
-                    if wins_1 > wins_2:
-                        # w1 has direct advantage
-                        code = classify_best_win(matches, w1_id)
-                        cell_data['type'] = 'direct_win'
-                        cell_data['value'] = code
-                        cell_data['tooltip'] = f"{w1_info['name']} leads head-to-head over {w2_info['name']} ({code})"
-                        cell_data['severity'] = severity_for_result_code(code)
-                        cell_data['matches'] = matches
-                        # Recent highlight: direct matches within the last week
-                        cell_data['recent'] = any(
-                            is_recent_date(m.get('date', ''), today) for m in matches
-                        )
-                    elif wins_2 > wins_1:
-                        # w2 has direct advantage
-                        code = classify_best_win(matches, rel['wrestler2_id'])
-                        cell_data['type'] = 'direct_loss'
-                        cell_data['value'] = code
-                        cell_data['tooltip'] = f"{w2_info['name']} leads head-to-head over {w1_info['name']} ({code})"
-                        cell_data['severity'] = severity_for_result_code(code)
-                        cell_data['matches'] = matches
-                        cell_data['recent'] = any(
-                            is_recent_date(m.get('date', ''), today) for m in matches
-                        )
+                # Even series (e.g. 1-1, 2-2): show neutral split "S" cell in both directions
+                if total_matches >= 2 and wins_1 == wins_2:
+                    cell_data['type'] = 'split_even'
+                    cell_data['value'] = 'S'
+                    cell_data['tooltip'] = (
+                        f"{w1_info['name']} and {w2_info['name']} are split head-to-head "
+                        f"({wins_1}-{wins_2})"
+                    )
+                    cell_data['matches'] = matches
+                    cell_data['recent'] = any(
+                        is_recent_date(m.get('date', ''), today) for m in matches
+                    )
                 else:
-                    # w1 is rel['wrestler2_id']
-                    if wins_2 > wins_1:
-                        # w1 has direct advantage (as wrestler2)
-                        code = classify_best_win(matches, w1_id)
-                        cell_data['type'] = 'direct_win'
-                        cell_data['value'] = code
-                        cell_data['tooltip'] = f"{w1_info['name']} leads head-to-head over {w2_info['name']} ({code})"
-                        cell_data['severity'] = severity_for_result_code(code)
-                        cell_data['matches'] = matches
-                        cell_data['recent'] = any(
-                            is_recent_date(m.get('date', ''), today) for m in matches
-                        )
-                    elif wins_1 > wins_2:
-                        # w2 has direct advantage
-                        code = classify_best_win(matches, rel['wrestler1_id'])
-                        cell_data['type'] = 'direct_loss'
-                        cell_data['value'] = code
-                        cell_data['tooltip'] = f"{w2_info['name']} leads head-to-head over {w1_info['name']} ({code})"
-                        cell_data['severity'] = severity_for_result_code(code)
-                        cell_data['matches'] = matches
-                        cell_data['recent'] = any(
-                            is_recent_date(m.get('date', ''), today) for m in matches
-                        )
+                    # Non-even series. For multi-match series (2-1, 3-1, etc.) show "S" in the
+                    # advantaged direction but keep green/red shading based on best win.
+                    if w1_id == rel['wrestler1_id']:
+                        if wins_1 > wins_2:
+                            # w1 has direct advantage
+                            code = classify_best_win(matches, w1_id)
+                            cell_data['type'] = 'direct_win'
+                            cell_data['value'] = 'S' if total_matches >= 2 else code
+                            cell_data['tooltip'] = (
+                                f"{w1_info['name']} leads head-to-head over "
+                                f"{w2_info['name']} ({wins_1}-{wins_2})"
+                            )
+                            cell_data['severity'] = severity_for_result_code(code)
+                            cell_data['matches'] = matches
+                            # Recent highlight: direct matches within the last week
+                            cell_data['recent'] = any(
+                                is_recent_date(m.get('date', ''), today) for m in matches
+                            )
+                        elif wins_2 > wins_1:
+                            # w2 has direct advantage
+                            code = classify_best_win(matches, rel['wrestler2_id'])
+                            cell_data['type'] = 'direct_loss'
+                            cell_data['value'] = 'S' if total_matches >= 2 else code
+                            cell_data['tooltip'] = (
+                                f"{w2_info['name']} leads head-to-head over "
+                                f"{w1_info['name']} ({wins_2}-{wins_1})"
+                            )
+                            cell_data['severity'] = severity_for_result_code(code)
+                            cell_data['matches'] = matches
+                            cell_data['recent'] = any(
+                                is_recent_date(m.get('date', ''), today) for m in matches
+                            )
+                    else:
+                        # w1 is rel['wrestler2_id']
+                        if wins_2 > wins_1:
+                            # w1 has direct advantage (as wrestler2)
+                            code = classify_best_win(matches, w1_id)
+                            cell_data['type'] = 'direct_win'
+                            cell_data['value'] = 'S' if total_matches >= 2 else code
+                            cell_data['tooltip'] = (
+                                f"{w1_info['name']} leads head-to-head over "
+                                f"{w2_info['name']} ({wins_2}-{wins_1})"
+                            )
+                            cell_data['severity'] = severity_for_result_code(code)
+                            cell_data['matches'] = matches
+                            cell_data['recent'] = any(
+                                is_recent_date(m.get('date', ''), today) for m in matches
+                            )
+                        elif wins_1 > wins_2:
+                            # w2 has direct advantage
+                            code = classify_best_win(matches, rel['wrestler1_id'])
+                            cell_data['type'] = 'direct_loss'
+                            cell_data['value'] = 'S' if total_matches >= 2 else code
+                            cell_data['tooltip'] = (
+                                f"{w2_info['name']} leads head-to-head over "
+                                f"{w1_info['name']} ({wins_1}-{wins_2})"
+                            )
+                            cell_data['severity'] = severity_for_result_code(code)
+                            cell_data['matches'] = matches
+                            cell_data['recent'] = any(
+                                is_recent_date(m.get('date', ''), today) for m in matches
+                            )
             
             # Check common opponent relationships (only if no direct relationship)
             elif pair_key_str in co_rels:
@@ -615,6 +643,10 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
         .same-wrestler {{
             background-color: #e0e0e0;
         }}
+        /* Split-even head-to-head (e.g., 1-1, 2-2) */
+        .split_even {{
+            background-color: #fffacd; /* light yellow */
+        }}
         .direct_win {{
             background-color: #b3ffb3;
         }}
@@ -883,8 +915,8 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
                     if len(cell_data['co_details']) > 5:
                         tooltip_info['more_count'] = len(cell_data['co_details']) - 5
 
-                # Direct head-to-head tooltip
-                elif cell_data.get('type') in ('direct_win', 'direct_loss') and cell_data.get('matches'):
+                # Direct head-to-head tooltip (including split-even series)
+                elif cell_data.get('type') in ('direct_win', 'direct_loss', 'split_even') and cell_data.get('matches'):
                     tooltip_id = f"{wrestler['id']}_{opponent['id']}"
                     tooltip_data_attr = f' data-tooltip-id="{tooltip_id}"'
                     tooltip_info = {
@@ -928,7 +960,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
                 
                 # Use simple title only for cells without rich tooltips
                 simple_tooltip = cell_data.get('tooltip', '').replace('\\n', ' ')
-                if cell_data['type'] in ('common_win', 'common_loss', 'direct_win', 'direct_loss'):
+                if cell_data['type'] in ('common_win', 'common_loss', 'direct_win', 'direct_loss', 'split_even'):
                     # Let the rich tooltip handle hover; suppress native title
                     simple_tooltip = ''
                 severity_class = ''

@@ -104,6 +104,10 @@ def color_for_cell(cell_type: str, severity: str | None) -> Tuple[int, int, int]
     if cell_type == "same-wrestler":
         return (224, 224, 224)
 
+    # Split-even head-to-head series (e.g., 1-1, 2-2)
+    if cell_type == "split_even":
+        return (255, 250, 205)  # light yellow, to match HTML matrix
+
     # Common opponent cells (very light)
     if cell_type in ("common_win", "common_loss"):
         # severity 'co' is the only one used here
