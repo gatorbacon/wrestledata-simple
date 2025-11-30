@@ -145,6 +145,23 @@ def draw_matrix_top33(
     wrestlers: List[Dict] = matrix_data["wrestlers"]
     matrix: Dict[str, Dict] = matrix_data["matrix"]
 
+    # Filter to starters only if that information is present. We treat the
+    # first-ranked wrestler per team as the starter, so the visual
+    # top-33 graphic reflects "one starter per team" at this weight.
+    starters: List[Dict] = []
+    seen_teams = set()
+    for w in wrestlers:
+        team = w.get("team")
+        if not team:
+            starters.append(w)
+            continue
+        if team in seen_teams:
+            # Backup/non-starter at this weight – skip for graphic
+            continue
+        seen_teams.add(team)
+        starters.append(w)
+
+    wrestlers = starters
     n = min(33, len(wrestlers))
     wrestlers = wrestlers[:n]
 

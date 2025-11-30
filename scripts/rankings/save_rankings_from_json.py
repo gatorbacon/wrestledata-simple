@@ -9,7 +9,7 @@ use this script to save it to the proper location.
 import json
 import shutil
 from pathlib import Path
-from typing import Dict
+from typing import Dict, List
 
 
 def save_rankings_file(json_file: Path, season: int, output_dir: str = "mt/rankings_data") -> Path:
@@ -27,13 +27,43 @@ def save_rankings_file(json_file: Path, season: int, output_dir: str = "mt/ranki
     # Load the JSON file
     with open(json_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
-    
+
     # Validate structure
     if 'weight_class' not in data or 'rankings' not in data:
         raise ValueError("Invalid rankings JSON structure. Expected 'weight_class' and 'rankings' keys.")
-    
+
     weight_class = data['weight_class']
-    
+
+    # Annotate starters: for each team at this weight, the best-ranked
+    # wrestler is marked is_starter=True; all other teammates are False.
+    rankings: List[Dict] = data.get("rankings", [])
+    team_best: Dict[str, int] = {}  # team -> best rank
+    team_best_index: Dict[str, int] = {}  # team -> index into rankings
+
+    for idx, entry in enumerate(rankings):
+        team = entry.get("team")
+        if not team:
+            continue
+        raw_rank = entry.get("rank")
+        try:
+            r_int = int(raw_rank)
+        except (TypeError, ValueError):
+            # Treat missing/invalid rank as very low priority
+            r_int = 10**9
+        prev_best = team_best.get(team)
+        if prev_best is None or r_int < prev_best:
+            team_best[team] = r_int
+            team_best_index[team] = idx
+
+    # Default everyone to non-starter
+    for entry in rankings:
+        entry["is_starter"] = False
+
+    # Mark the single best-ranked wrestler per team as the starter
+    for team, idx in team_best_index.items():
+        if 0 <= idx < len(rankings):
+            rankings[idx]["is_starter"] = True
+
     # Create output directory
     output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)

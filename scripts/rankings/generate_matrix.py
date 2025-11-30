@@ -205,6 +205,8 @@ def build_matrix_data(
     
     # Determine ordering for wrestlers
     ranking_order: List[str] = relationships_data.get('ranking_order', [])
+    # Starter map, if provided (wrestler_id -> bool)
+    starter_map: Dict[str, bool] = relationships_data.get("starter_map", {})
     placement_notes = placement_notes or {}
 
     if ranking_order:
@@ -239,6 +241,21 @@ def build_matrix_data(
             if note:
                 info['placement_note'] = note
             wrestler_list.append((wid, info))
+
+    # Recompute starter flag based on the current ordered list: for each
+    # team, the first occurrence is the starter and subsequent teammates
+    # at this weight are marked non-starters.
+    team_seen = set()
+    for idx, (wid, winfo) in enumerate(wrestler_list):
+        team = winfo.get("team")
+        if not team:
+            winfo["is_starter"] = True
+            continue
+        if team not in team_seen:
+            winfo["is_starter"] = True
+            team_seen.add(team)
+        else:
+            winfo["is_starter"] = False
     
     # Build matrix
     matrix = {}
@@ -531,6 +548,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
         }}
         .wrestler-name {{
             font-weight: bold;
+            color: #000000;
         }}
         .wrestler-main-line {{
             display: block;
@@ -715,6 +733,11 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             padding: 2px 4px;
             border-radius: 3px;
         }}
+        /* Non-starters: clearly muted compared to starters */
+        .non-starter-row .wrestler-name {{
+            color: #888888;
+            font-weight: normal;
+        }}
         #matrix-tooltip {{
             display: none;
             position: fixed;
@@ -834,6 +857,8 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             row_classes.append("unranked-row")
         if has_no_matches:
             row_classes.append("no-matches-row")
+        if not wrestler.get('is_starter', True):
+            row_classes.append("non-starter-row")
         row_class_attr = f' class="{" ".join(row_classes)}"' if row_classes else ""
 
         rank_label = "UNR" if wrestler.get('is_unranked') else str(i + 1)
@@ -1306,6 +1331,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             const rows = Array.from(tbody.querySelectorAll('tr'));
             const rankings = [];
             
+            // First, build the raw rankings list in current row order.
             rows.forEach((row, index) => {
                 const wrestlerId = row.getAttribute('data-wrestler-id');
                 const wrestler = wrestlers.find(w => w.id === wrestlerId);
@@ -1315,8 +1341,34 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
                         wrestler_id: wrestlerId,
                         name: wrestler.name,
                         team: wrestler.team,
-                        record: `${wrestler.wins || 0}-${wrestler.losses || 0}`
+                        record: `${wrestler.wins || 0}-${wrestler.losses || 0}`,
+                        // is_starter will be filled in below.
                     });
+                }
+            });
+
+            // Now compute starter status: for each team at this weight,
+            // the best-ranked wrestler is the starter.
+            const teamBest = {}; // team -> { rank, index }
+            rankings.forEach((entry, idx) => {
+                const team = entry.team;
+                if (!team) return;
+                const r = typeof entry.rank === 'number' ? entry.rank : Number(entry.rank) || 1e9;
+                const prev = teamBest[team];
+                if (!prev || r < prev.rank) {
+                    teamBest[team] = { rank: r, index: idx };
+                }
+            });
+
+            // Default everyone to non-starter
+            rankings.forEach(entry => {
+                entry.is_starter = false;
+            });
+            // Mark the best-ranked per team as starter
+            Object.values(teamBest).forEach(info => {
+                const idx = info.index;
+                if (idx >= 0 && idx < rankings.length) {
+                    rankings[idx].is_starter = true;
                 }
             });
             
@@ -1392,14 +1444,55 @@ def generate_matrix_for_weight_class(
     with open(rel_file, 'r', encoding='utf-8') as f:
         relationships_data = json.load(f)
     
-    # If a manual rankings file exists, load it and attach ordering
+    # If a manual rankings file exists, load it, attach ordering, and
+    # derive starter status per wrestler (best-ranked per team).
     rankings_file = Path(data_dir) / str(season) / f"rankings_{weight_class}.json"
     if rankings_file.exists():
         try:
             with open(rankings_file, 'r', encoding='utf-8') as rf:
                 rankings_data = json.load(rf)
-            ranking_ids = [r['wrestler_id'] for r in rankings_data.get('rankings', [])]
+            rankings_list = rankings_data.get("rankings", [])
+            ranking_ids = [r['wrestler_id'] for r in rankings_list]
             relationships_data['ranking_order'] = ranking_ids
+
+            # Build starter_map: wrestler_id -> bool.
+            # If the rankings JSON carries an explicit is_starter flag,
+            # trust it. Otherwise, compute starters as the best-ranked
+            # wrestler per team.
+            starter_map: Dict[str, bool] = {}
+            if rankings_list:
+                # First pass: record any explicit flags.
+                for entry in rankings_list:
+                    wid = entry.get("wrestler_id")
+                    if not wid:
+                        continue
+                    if isinstance(entry.get("is_starter"), bool):
+                        starter_map[wid] = entry["is_starter"]
+
+                # Second pass: for entries without explicit flag, compute
+                # team-best from numeric rank.
+                team_best: Dict[str, Tuple[int, str]] = {}
+                for entry in rankings_list:
+                    wid = entry.get("wrestler_id")
+                    team = entry.get("team")
+                    if not wid or not team:
+                        continue
+                    # Skip wrestlers that already have explicit starter info
+                    if wid in starter_map:
+                        continue
+                    raw_rank = entry.get("rank")
+                    try:
+                        r_int = int(raw_rank)
+                    except (TypeError, ValueError):
+                        r_int = 10**9
+                    prev = team_best.get(team)
+                    if prev is None or r_int < prev[0]:
+                        team_best[team] = (r_int, wid)
+
+                for _, wid in team_best.values():
+                    starter_map[wid] = True
+
+            relationships_data["starter_map"] = starter_map
         except Exception as e:
             print(f"Warning: Failed to load rankings file {rankings_file}: {e}")
 

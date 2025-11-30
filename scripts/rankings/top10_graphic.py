@@ -48,7 +48,14 @@ DEFAULT_OUTPUT_ROOT = Path("mt/graphics")
 
 
 def load_rankings(season: int, weight_class: str) -> List[Dict]:
-    """Load rankings_{weight}.json and return list sorted by 'rank'."""
+    """
+    Load rankings_{weight}.json and return list sorted by 'rank'.
+
+    For purposes of the Top-10 graphic we only want one starter per team
+    at this weight. If multiple wrestlers from the same team are ranked,
+    we keep the best-ranked one and drop the backups before taking the
+    top 10.
+    """
     rankings_path = RANKINGS_DIR / str(season) / f"rankings_{weight_class}.json"
     if not rankings_path.exists():
         raise FileNotFoundError(f"Rankings file not found: {rankings_path}")
@@ -59,7 +66,7 @@ def load_rankings(season: int, weight_class: str) -> List[Dict]:
     entries = data.get("rankings", [])
 
     # Filter to those that have a numeric rank and are actually ranked
-    cleaned: List[Dict] = []
+    preliminary: List[Dict] = []
     for e in entries:
         r = e.get("rank")
         wid = e.get("wrestler_id")
@@ -70,7 +77,7 @@ def load_rankings(season: int, weight_class: str) -> List[Dict]:
         except (TypeError, ValueError):
             # Skip UNR / non-numeric
             continue
-        cleaned.append(
+        preliminary.append(
             {
                 "rank": rank_int,
                 "wrestler_id": wid,
@@ -79,7 +86,19 @@ def load_rankings(season: int, weight_class: str) -> List[Dict]:
             }
         )
 
-    cleaned.sort(key=lambda x: x["rank"])
+    # Sort by rank so the first occurrence per team is the starter.
+    preliminary.sort(key=lambda x: x["rank"])
+
+    # Keep only the best-ranked wrestler per team (drop backups).
+    cleaned: List[Dict] = []
+    seen_teams = set()
+    for e in preliminary:
+        team = e.get("team")
+        if team in seen_teams:
+            continue
+        seen_teams.add(team)
+        cleaned.append(e)
+
     return cleaned
 
 
