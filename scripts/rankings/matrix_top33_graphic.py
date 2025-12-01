@@ -136,6 +136,7 @@ def draw_matrix_top33(
     weight_class: str,
     season: int,
     width: int = 2000,
+    starters_only: bool = True,
 ) -> Image.Image:
     """
     Render the top-33-by-top-33 sub-matrix as an image.
@@ -145,23 +146,24 @@ def draw_matrix_top33(
     wrestlers: List[Dict] = matrix_data["wrestlers"]
     matrix: Dict[str, Dict] = matrix_data["matrix"]
 
-    # Filter to starters only if that information is present. We treat the
-    # first-ranked wrestler per team as the starter, so the visual
-    # top-33 graphic reflects "one starter per team" at this weight.
-    starters: List[Dict] = []
-    seen_teams = set()
-    for w in wrestlers:
-        team = w.get("team")
-        if not team:
+    if starters_only:
+        # Filter to starters only if that information is present. We treat the
+        # first-ranked wrestler per team as the starter, so the visual
+        # top-33 graphic reflects "one starter per team" at this weight.
+        starters: List[Dict] = []
+        seen_teams = set()
+        for w in wrestlers:
+            team = w.get("team")
+            if not team:
+                starters.append(w)
+                continue
+            if team in seen_teams:
+                # Backup/non-starter at this weight – skip for graphic
+                continue
+            seen_teams.add(team)
             starters.append(w)
-            continue
-        if team in seen_teams:
-            # Backup/non-starter at this weight – skip for graphic
-            continue
-        seen_teams.add(team)
-        starters.append(w)
 
-    wrestlers = starters
+        wrestlers = starters
     n = min(33, len(wrestlers))
     wrestlers = wrestlers[:n]
 
@@ -352,18 +354,32 @@ def main() -> None:
     # Build matrix data (we don't need placement notes here)
     matrix_data = build_matrix_data(relationships_data)
 
-    img = draw_matrix_top33(matrix_data, weight_class, season, width=args.size)
-
+    # Determine base output path
     if args.output:
-        out_path = Path(args.output)
+        base_path = Path(args.output)
     else:
         out_dir = Path("mt/graphics") / str(season)
         out_dir.mkdir(parents=True, exist_ok=True)
-        out_path = out_dir / f"matrix_{weight_class}_top33.jpg"
+        base_path = out_dir / f"matrix_{weight_class}_top33.jpg"
 
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    img.save(out_path, format="JPEG", quality=95)
-    print(f"Matrix Top-33 graphic written to {out_path}")
+    base_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Starters-only version (current behavior)
+    img_starters = draw_matrix_top33(
+        matrix_data, weight_class, season, width=args.size, starters_only=True
+    )
+    img_starters.save(base_path, format="JPEG", quality=95)
+    print(f"Matrix Top-33 graphic (starters only) written to {base_path}")
+
+    # All-wrestlers version (no starter filter), saved with '_all' suffix
+    suffix = "_all"
+    all_name = f"{base_path.stem}{suffix}{base_path.suffix}"
+    all_path = base_path.with_name(all_name)
+    img_all = draw_matrix_top33(
+        matrix_data, weight_class, season, width=args.size, starters_only=False
+    )
+    img_all.save(all_path, format="JPEG", quality=95)
+    print(f"Matrix Top-33 graphic (all wrestlers) written to {all_path}")
 
 
 if __name__ == "__main__":

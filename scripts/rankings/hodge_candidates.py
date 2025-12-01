@@ -21,7 +21,10 @@ This is intentionally read‑only and console‑only for now.
 from __future__ import annotations
 
 import argparse
+import base64
+import io
 import json
+import webbrowser
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
@@ -354,6 +357,8 @@ def main() -> None:
         top33_ids_by_weight[weight] = top33
 
     all_candidates: List[HodgeStats] = []
+    # For histograms: stats for all ranked (top-33) starters across weights
+    all_ranked_for_hist: List[HodgeStats] = []
 
     # For each weight, build the set of ranked/top10 opponent IDs from
     # the current and adjacent weight classes only.
@@ -385,6 +390,35 @@ def main() -> None:
             top_n=args.top_n,
         )
         all_candidates.extend(stats)
+
+        # For histograms: collect stats for all starters ranked in the top-33
+        starter_rankings_33: List[Dict] = []
+        if rankings:
+            for entry in rankings:
+                if not entry.get("is_starter", False):
+                    continue
+                wid = entry.get("wrestler_id")
+                rank = entry.get("rank")
+                if not wid or rank is None:
+                    continue
+                try:
+                    r = int(rank)
+                except (TypeError, ValueError):
+                    continue
+                if r <= 33:
+                    starter_rankings_33.append(entry)
+
+        if starter_rankings_33:
+            hist_stats = compute_stats_for_weight(
+                weight,
+                wc_data,
+                starter_rankings_33,
+                ranked_ids,
+                top10_ids,
+                global_rank_lookup,
+                top_n=len(starter_rankings_33),
+            )
+            all_ranked_for_hist.extend(hist_stats)
 
     # Apply loss and match-count filters
     filtered_candidates: List[HodgeStats] = [
@@ -471,6 +505,58 @@ def main() -> None:
             + W_PINS * s.s_pins
         )
 
+    # Also compute S_* scores for all ranked starters (top-33) for histograms.
+    for s in all_ranked_for_hist:
+        s.s_wl = compute_s_wl(s.weight_rank)
+        s.s_rec = compute_s_rec(s.wins, s.losses)
+        s.s_qual = compute_s_qual(s.ranked_win_ranks)
+        s.s_dom = compute_s_dom(s.decisions, s.majors, s.techs, s.pins, s.total_matches)
+        s.s_pins = compute_s_pins(s.pins, s.wins)
+
+    # Build histograms for S_* scores across all ranked starters (top-33).
+    hist_images = {}
+    try:
+        import matplotlib.pyplot as plt  # type: ignore
+
+        def make_hist(values: List[float], label: str) -> None:
+            # Skip if there is no variation / all zeros.
+            if not values or all(v == 0.0 for v in values):
+                return
+            fig, ax = plt.subplots(figsize=(5, 3))
+            ax.hist(values, bins=20, color="orange", edgecolor="black")
+            ax.set_title(label)
+            ax.set_xlabel(label)
+            ax.set_ylabel("Wrestlers")
+            fig.tight_layout()
+            buf = io.BytesIO()
+            fig.savefig(buf, format="png", dpi=120)
+            plt.close(fig)
+            buf.seek(0)
+            b64 = base64.b64encode(buf.getvalue()).decode("ascii")
+            hist_images[label] = f"data:image/png;base64,{b64}"
+
+        make_hist([s.s_wl for s in all_ranked_for_hist], "S_WL")
+        make_hist([s.s_rec for s in all_ranked_for_hist], "S_REC")
+        make_hist([s.s_qual for s in all_ranked_for_hist], "S_QUAL")
+        make_hist([s.s_dom for s in all_ranked_for_hist], "S_DOM")
+        make_hist([s.s_pins for s in all_ranked_for_hist], "S_PINS")
+    except Exception:
+        hist_images = {}
+
+    def green_scale01(t: float) -> str:
+        """
+        Map t in [0,1] to a light-to-dark green hex color.
+        t=0 -> very light green, t=1 -> dark green.
+        """
+        t = max(0.0, min(1.0, t))
+        # Light and dark green RGB anchors
+        light = (230, 244, 234)  # #e6f4ea
+        dark = (21, 87, 36)      # #155724
+        r = int(light[0] + (dark[0] - light[0]) * t)
+        g = int(light[1] + (dark[1] - light[1]) * t)
+        b = int(light[2] + (dark[2] - light[2]) * t)
+        return f"#{r:02x}{g:02x}{b:02x}"
+
     # Sort candidates by overall Hodge formula score (primary) then by weight rank.
     scored_candidates = sorted(
         filtered_candidates, key=lambda s: (-s.hodge_score, s.weight_rank)
@@ -508,19 +594,20 @@ def main() -> None:
     )
     detail_header = (
         f"{'#':>3}  {'Name':<25} {'Team':<20} {'Wt':>4}  "
-        f"{'Rank':>4}  {'W-L':>7}  "
-        f"{'Score':>7}  {'S_WL':>7}  {'S_REC':>7}  {'S_QUAL':>7}  {'S_DOM':>7}  {'S_PINS':>7}"
+        f"{'W-L':>7}  "
+        f"{'Score':>7}  {'WtCl':>4}  {'Qual':>7}  {'Dom':>7}  {'Pin%':>7}"
     )
     print(detail_header)
     print("-" * len(detail_header))
 
     for idx, s in enumerate(scored_candidates, start=1):
         wl = f"{s.wins}-{s.losses}"
+        pin_pct_display = s.fall_pct * 100.0
         print(
             f"{idx:>3}  {s.name:<25.25} {s.team:<20.20} {s.weight_class:>4}  "
-            f"{s.weight_rank:4d}  {wl:>7}  "
-            f"{s.hodge_score:7.2f}  {s.s_wl:7.1f}  {s.s_rec:7.1f}  {s.s_qual:7.1f}  "
-            f"{s.s_dom:7.1f}  {s.s_pins:7.1f}"
+            f"{wl:>7}  "
+            f"{s.hodge_score:7.2f}  {s.weight_rank:4d}  {s.s_qual:7.1f}  "
+            f"{s.s_dom:7.1f}  {pin_pct_display:7.1f}"
         )
 
     # --- Generate HTML report (both tables) ---
@@ -558,25 +645,49 @@ def main() -> None:
         f"against current top-33 in the same and adjacent weights. ",
         f"Generated at {generated_at}.",
         "</div>",
-        "<h2>Summary (sorted by HodgeScore)</h2>",
-        "<table>",
-        "<thead>",
-        "<tr>",
-        "<th>#</th>",
-        "<th>Name</th>",
-        "<th>Team</th>",
-        "<th>Wt</th>",
-        "<th>W-L</th>",
-        "<th>Win%</th>",
-        "<th>Bonus%</th>",
-        "<th>Fall%</th>",
-        "<th>RkW</th>",
-        "<th>Top10W</th>",
-        "<th>RkBon%</th>",
-        "</tr>",
-        "</thead>",
-        "<tbody>",
     ]
+
+    # Insert histograms for S_* distributions (all ranked starters, top-33).
+    order = ["S_WL", "S_REC", "S_QUAL", "S_DOM", "S_PINS"]
+    if hist_images:
+        html.append("<h2>Score Distributions (all ranked starters, top-33)</h2>")
+        for key in order:
+            uri = hist_images.get(key)
+            if not uri:
+                continue
+            html.extend(
+                [
+                    f"<h3>{key}</h3>",
+                    "<div style='margin-bottom: 20px;'>",
+                    f"<img src='{uri}' alt='{key} histogram' "
+                    "style='max-width: 100%; height: auto; border: 1px solid #ccc; "
+                    "background: #fff;' />",
+                    "</div>",
+                ]
+            )
+
+    html.extend(
+        [
+            "<h2>Summary (sorted by HodgeScore)</h2>",
+            "<table>",
+            "<thead>",
+            "<tr>",
+            "<th>#</th>",
+            "<th>Name</th>",
+            "<th>Team</th>",
+            "<th>Wt</th>",
+            "<th>W-L</th>",
+            "<th>Win%</th>",
+            "<th>Bonus%</th>",
+            "<th>Fall%</th>",
+            "<th>RkW</th>",
+            "<th>Top10W</th>",
+            "<th>RkBon%</th>",
+            "</tr>",
+            "</thead>",
+            "<tbody>",
+        ]
+    )
 
     for idx, s in enumerate(scored_candidates, start=1):
         wl = f"{s.wins}-{s.losses}"
@@ -608,36 +719,54 @@ def main() -> None:
             "<th>Name</th>",
             "<th>Team</th>",
             "<th>Wt</th>",
-            "<th>Rank</th>",
             "<th>W-L</th>",
             "<th>Score</th>",
-            "<th>S_WL</th>",
-            "<th>S_REC</th>",
-            "<th>S_QUAL</th>",
-            "<th>S_DOM</th>",
-            "<th>S_PINS</th>",
+            "<th>WtCl Rank</th>",
+            "<th>Quality<br>of Competition</th>",
+            "<th>Dominance</th>",
+            "<th>Pin%</th>",
             "</tr>",
             "</thead>",
             "<tbody>",
         ]
     )
 
+    # Precompute rank range for WtCl coloring so best rank is darkest, worst is lightest.
+    rank_values = [s.weight_rank for s in scored_candidates if s.weight_rank < 999]
+    if rank_values:
+        min_rank = min(rank_values)
+        max_rank = max(rank_values)
+    else:
+        min_rank = 1
+        max_rank = 1
+
     for idx, s in enumerate(scored_candidates, start=1):
         wl = f"{s.wins}-{s.losses}"
+        # Color scales for rank, quality, dominance, and pin score
+        # Rank: map best ranks (lowest value) to dark green, worst (highest) to light.
+        if max_rank > min_rank:
+            rank_t = (max_rank - float(s.weight_rank)) / (max_rank - min_rank)
+            rank_t = max(0.0, min(1.0, rank_t))
+        else:
+            rank_t = 1.0
+        wtcl_color = green_scale01(rank_t)
+        qual_color = green_scale01(s.s_qual / 100.0)
+        dom_color = green_scale01(s.s_dom / 100.0)
+        pin_color = green_scale01(s.s_pins / 100.0)
+        pin_pct_display = s.fall_pct * 100.0
+
         html.append(
             "<tr>"
             f"<td>{idx}</td>"
             f"<td class='name-cell'>{s.name}</td>"
             f"<td class='team-cell'>{s.team}</td>"
             f"<td>{s.weight_class}</td>"
-            f"<td>{s.weight_rank}</td>"
             f"<td>{wl}</td>"
             f"<td>{s.hodge_score:.2f}</td>"
-            f"<td>{s.s_wl:.1f}</td>"
-            f"<td>{s.s_rec:.1f}</td>"
-            f"<td>{s.s_qual:.1f}</td>"
-            f"<td>{s.s_dom:.1f}</td>"
-            f"<td>{s.s_pins:.1f}</td>"
+            f"<td style='background-color:{wtcl_color};'>{s.weight_rank}</td>"
+            f"<td style='background-color:{qual_color};'>{s.s_qual:.1f}</td>"
+            f"<td style='background-color:{dom_color};'>{s.s_dom:.1f}</td>"
+            f"<td style='background-color:{pin_color};'>{pin_pct_display:.1f}</td>"
             "</tr>"
         )
 
@@ -654,6 +783,10 @@ def main() -> None:
         f.write("\n".join(html))
 
     print(f"\nHTML report written to {html_path}\n")
+    try:
+        webbrowser.open(html_path.as_uri())
+    except Exception:
+        pass
 
 
 if __name__ == "__main__":

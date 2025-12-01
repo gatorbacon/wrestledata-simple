@@ -13,7 +13,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 TEAMS_FILE = PROJECT_ROOT / "data" / "team_lists" / "2026" / "ncaa_d1_teams.json"
 RANKINGS_DIR = PROJECT_ROOT / "mt" / "rankings_data" / "2026"
 SCHEDULE_FILE = PROJECT_ROOT / "mt" / "rankings_data" / "2026" / "dual_schedule.json"
-REPORT_HTML = PROJECT_ROOT / "mt" / "graphics" / "upcoming_ranked_report.html"
+REPORT_HTML_STARTERS = PROJECT_ROOT / "mt" / "graphics" / "upcoming_ranked_report_starters.html"
+REPORT_HTML_ALL = PROJECT_ROOT / "mt" / "graphics" / "upcoming_ranked_report_all.html"
 
 
 @dataclass
@@ -34,7 +35,7 @@ class Dual:
 @dataclass
 class RankedWrestler:
     weight_class: int
-    rank: int  # starter-only rank after re-numbering
+    rank: int  # rank used in report (starter-only or original)
     name: str
     team: str
     wrestler_id: str
@@ -679,6 +680,60 @@ def load_rankings_starters(
     return result
 
 
+def load_rankings_all(
+    max_rank: int,
+) -> Dict[int, Dict[str, List[RankedWrestler]]]:
+    """
+    Load all rankings_*.json files and return rankings including all wrestlers.
+
+    {weight_class: {team_name: [RankedWrestler, ...]}}
+
+    Logic:
+    - Do not filter on is_starter.
+    - Use the original rank values from the JSON.
+    - Apply the max_rank cutoff directly to the original rank.
+    """
+    result: Dict[int, Dict[str, List[RankedWrestler]]] = {}
+
+    if not RANKINGS_DIR.exists():
+        print(f"Rankings directory not found: {RANKINGS_DIR}")
+        return result
+
+    for path in sorted(RANKINGS_DIR.glob("rankings_*.json")):
+        try:
+            with path.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception:
+            continue
+
+        try:
+            weight_class = int(data["weight_class"])
+            rankings = data["rankings"]
+        except Exception:
+            continue
+
+        by_team = result.setdefault(weight_class, {})
+        for r in rankings:
+            try:
+                rank = int(r["rank"])
+            except Exception:
+                continue
+            if rank > max_rank:
+                continue
+
+            team_name = r["team"]
+            wrestler = RankedWrestler(
+                weight_class=weight_class,
+                rank=rank,
+                name=r["name"],
+                team=team_name,
+                wrestler_id=str(r.get("wrestler_id", "")),
+            )
+            by_team.setdefault(team_name, []).append(wrestler)
+
+    return result
+
+
 def build_weekly_histogram_data(
     matchups: List[Tuple[Dual, RankedWrestler, RankedWrestler]]
 ) -> Tuple[List[date], List[int], List[str]]:
@@ -711,9 +766,11 @@ def build_weekly_histogram_data(
 
 
 def generate_html_report(
+    output_path: Path,
     today: date,
     end_date: date,
     max_rank: int,
+    label: str,
     upcoming_lines: List[str],
     all_matchups: List[Tuple[Dual, RankedWrestler, RankedWrestler]],
 ) -> None:
@@ -722,7 +779,7 @@ def generate_html_report(
       - Weekly histogram over the full season (based on current ranks)
       - Text list of upcoming matchups in the requested window
     """
-    REPORT_HTML.parent.mkdir(parents=True, exist_ok=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     # Try to build the histogram image using matplotlib, but fall back gracefully.
     img_data_uri = None
@@ -772,7 +829,7 @@ def generate_html_report(
     html_lines.append("<h1>Upcoming Ranked Matchups</h1>")
     html_lines.append(
         f"<div class='summary'>Window: {today.isoformat()} to {end_date.isoformat()} "
-        f"(starter-only, top {max_rank})</div>"
+        f"({label}, top {max_rank})</div>"
     )
 
     if img_data_uri:
@@ -797,7 +854,7 @@ def generate_html_report(
 
     html_lines.append("</body></html>")
 
-    REPORT_HTML.write_text("\n".join(html_lines), encoding="utf-8")
+    output_path.write_text("\n".join(html_lines), encoding="utf-8")
 
 
 def find_ranked_matchups_for_dual(
@@ -844,71 +901,103 @@ def list_upcoming_ranked_matchups(days_ahead: Optional[int] = None) -> None:
     else:
         max_rank = 33
 
-    print(
-        f"\n=== Upcoming Starter-Only Ranked Matchups (top {max_rank}) "
-        f"from {today.isoformat()} to {end_date.isoformat()} ===\n"
-    )
-
     duals = load_schedule()
     if not duals:
         print("No duals scheduled yet. Use the 'add duals' option first.")
         return
 
-    rankings_by_weight_team = load_rankings_starters(max_rank=max_rank)
-    if not rankings_by_weight_team:
-        print("No rankings data loaded. Check rankings JSON files.")
+    # Helper to build and sort matchups for a given rankings map.
+    def build_matchups(
+        rankings_by_weight_team: Dict[int, Dict[str, List[RankedWrestler]]]
+    ) -> Tuple[List[Tuple[Dual, RankedWrestler, RankedWrestler]], List[Tuple[Dual, RankedWrestler, RankedWrestler]]]:
+        window_matchups: List[Tuple[Dual, RankedWrestler, RankedWrestler]] = []
+        season_matchups: List[Tuple[Dual, RankedWrestler, RankedWrestler]] = []
+
+        for dual in duals:
+            m = find_ranked_matchups_for_dual(dual, rankings_by_weight_team)
+            season_matchups.extend(m)
+            if today <= dual.date <= end_date:
+                window_matchups.extend(m)
+
+        # Sort window matchups by average rank (best first), then date, then weight.
+        def sort_key(item: Tuple[Dual, RankedWrestler, RankedWrestler]):
+            dual, w1, w2 = item
+            avg_rank = (w1.rank + w2.rank) / 2.0
+            return (avg_rank, dual.date, w1.weight_class)
+
+        window_matchups.sort(key=sort_key)
+        return window_matchups, season_matchups
+
+    # --- Starters-only report (console + HTML) ---
+    print(
+        f"\n=== Upcoming Ranked Matchups (starters only, top {max_rank}) "
+        f"from {today.isoformat()} to {end_date.isoformat()} ===\n"
+    )
+
+    starter_rankings = load_rankings_starters(max_rank=max_rank)
+    if not starter_rankings:
+        print("No rankings data loaded for starters-only view. Check rankings JSON files.")
         return
 
-    upcoming: List[Tuple[Dual, RankedWrestler, RankedWrestler]] = []
-    for dual in duals:
-        if today <= dual.date <= end_date:
-            upcoming.extend(find_ranked_matchups_for_dual(dual, rankings_by_weight_team))
+    starter_window, starter_season = build_matchups(starter_rankings)
+    if not starter_window:
+        print("No potential ranked matchups in the selected window (starters only).")
+    else:
+        starter_lines: List[str] = []
+        for dual, w1, w2 in starter_window:
+            line = (
+                f"{dual.date.strftime('%m/%d')} - "
+                f"{w1.weight_class:>3} lbs: "
+                f"#{w1.rank} {w1.name} ({w1.team}) vs "
+                f"#{w2.rank} {w2.name} ({w2.team})"
+            )
+            print(line)
+            starter_lines.append(line)
 
-    if not upcoming:
-        print("No potential top-33 vs top-33 matchups in the selected window.")
+        print()
+
+        generate_html_report(
+            output_path=REPORT_HTML_STARTERS,
+            today=today,
+            end_date=end_date,
+            max_rank=max_rank,
+            label="starters only",
+            upcoming_lines=starter_lines,
+            all_matchups=starter_season,
+        )
+        print(f"Starters-only HTML report written to: {REPORT_HTML_STARTERS}")
+        try:
+            webbrowser.open(REPORT_HTML_STARTERS.as_uri())
+        except Exception:
+            pass
+
+    # --- All-wrestlers report (HTML only) ---
+    all_rankings = load_rankings_all(max_rank=max_rank)
+    if not all_rankings:
+        print("No rankings data loaded for all-wrestlers view. Check rankings JSON files.")
         return
 
-    # Sort by average rank (best first), then by date, then by weight.
-    def sort_key(item: Tuple[Dual, RankedWrestler, RankedWrestler]):
-        dual, w1, w2 = item
-        avg_rank = (w1.rank + w2.rank) / 2.0
-        return (avg_rank, dual.date, w1.weight_class)
-
-    upcoming.sort(key=sort_key)
-
-    # Build a full-season set of matchups for the histogram.
-    all_matchups: List[Tuple[Dual, RankedWrestler, RankedWrestler]] = []
-    for dual in duals:
-        all_matchups.extend(find_ranked_matchups_for_dual(dual, rankings_by_weight_team))
-
-    # Collect console lines and also use them in the HTML report.
-    upcoming_lines: List[str] = []
-
-    for dual, w1, w2 in upcoming:
+    all_window, all_season = build_matchups(all_rankings)
+    all_lines: List[str] = []
+    for dual, w1, w2 in all_window:
         line = (
             f"{dual.date.strftime('%m/%d')} - "
             f"{w1.weight_class:>3} lbs: "
             f"#{w1.rank} {w1.name} ({w1.team}) vs "
             f"#{w2.rank} {w2.name} ({w2.team})"
         )
-        print(line)
-        upcoming_lines.append(line)
+        all_lines.append(line)
 
-    print()
-
-    # Generate the HTML report with histogram + upcoming list.
     generate_html_report(
+        output_path=REPORT_HTML_ALL,
         today=today,
         end_date=end_date,
         max_rank=max_rank,
-        upcoming_lines=upcoming_lines,
-        all_matchups=all_matchups,
+        label="all wrestlers",
+        upcoming_lines=all_lines,
+        all_matchups=all_season,
     )
-    print(f"HTML report written to: {REPORT_HTML}")
-    try:
-        webbrowser.open(REPORT_HTML.as_uri())
-    except Exception:
-        pass
+    print(f"All-wrestlers HTML report written to: {REPORT_HTML_ALL}")
 
 
 def main() -> None:

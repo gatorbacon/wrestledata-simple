@@ -422,6 +422,43 @@ def load_season_data(season: int) -> Dict[str, Dict]:
     return data_by_weight
 
 
+def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
+    """
+    Remove duplicate matches that appear in multiple weight classes.
+
+    Deduplication key is based on:
+      - date
+      - event
+      - unordered pair of wrestler IDs
+      - winner_id
+      - result string
+
+    This keeps the first occurrence encountered and drops later duplicates,
+    so downstream tools that scan all weight_class_*.json files don't
+    double-count the same bout.
+    """
+    seen = set()
+    for wc, wc_data in data.items():
+        matches = wc_data.get("matches", [])
+        new_matches = []
+        for m in matches:
+            w1 = m.get("wrestler1_id")
+            w2 = m.get("wrestler2_id")
+            pair = tuple(sorted([w1, w2]))
+            key = (
+                m.get("date"),
+                m.get("event"),
+                pair,
+                m.get("winner_id"),
+                m.get("result"),
+            )
+            if key in seen:
+                continue
+            seen.add(key)
+            new_matches.append(m)
+        wc_data["matches"] = new_matches
+
+
 def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/rankings_data"):
     """
     Save the loaded data to JSON files for inspection.
@@ -433,6 +470,10 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
     """
     output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
+    
+    # First, de-duplicate matches across all weight classes so that any given
+    # bout only appears once in the weight_class_*.json files.
+    dedupe_matches_across_weights(data)
     
     # Save summary file
     summary = {
