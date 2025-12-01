@@ -1873,51 +1873,72 @@ class WrestlingScraper:
             self.scrape_log.setdefault("errors", [])
             self.scrape_log.setdefault("successes", [])
 
-            # Scrape each team
-            for team in teams:
-                # First refresh all log data to avoid duplication
+            # Loop over the team list multiple times if needed to pick up
+            # teams that failed on an earlier pass. Most teams will be
+            # skipped quickly once they are in teams_scraped.
+            max_passes = 10
+            for pass_idx in range(1, max_passes + 1):
+                print(f"\n=== Scrape pass {pass_idx}/{max_passes} over team list ===")
                 self._refresh_log_data()
-                
-                # Skip if already scraped (using get() for safety)
-                if team["name"] in self.scrape_log.get("teams_scraped", []) or team["name"] == "Season Team":
-                    print(f"Skipping team {team['name']} - already scraped or special team.")
-                    continue
-                
-                # Extract team ID from the URL
-                team_url = team["url"]
-                parsed_url = urlparse(team_url)
-                query_params = parse_qs(parsed_url.query)
-                team_id = query_params.get('teamId', ['unknown_team'])[0]
-                
-                if not acquire_lock(team_id):
-                    print(f"Skipping team {team['name']} (ID: {team_id}) — locked by another process.")
-                    continue
-                    
-                try:
-                    print(f"Scraping team: {team['name']} ({team['state']}) - {team['division']}")
-                    team_data = self.scrape_team(team["url"], team)
-                    
-                    if team_data:
-                        self.save_team_data(team_data)
-                        
-                        # Update the teams_scraped list and save the log with locking
-                        # Always use setdefault to ensure the list exists before appending
-                        if team["name"] not in self.scrape_log.get("teams_scraped", []):
-                            self.scrape_log.setdefault("teams_scraped", []).append(team["name"])
-                            
-                        success_msg = f"Successfully scraped team: {team['name']} with {len(team_data.get('roster', []))} wrestlers"
-                        self._log_success("team_completed", success_msg)
-                        print(f"✅ {success_msg}")
-                    else:
-                        print(f"❌ Failed to scrape team: {team['name']} - Will retry in next run")
-                    
-                    self._random_delay()
 
-                except Exception as e:
-                    self._log_error("general", f"General error processing team {team['name']}: {e}")
-                finally:
-                    # Only release the lock, don't quit the driver here
-                    release_lock(team_id)
+                any_pending = False
+                any_progress = False
+
+                for team in teams:
+                    # Refresh log data before each team to pick up updates
+                    self._refresh_log_data()
+
+                    # Skip special "Season Team" or already scraped teams
+                    if team["name"] == "Season Team":
+                        continue
+                    if team["name"] in self.scrape_log.get("teams_scraped", []):
+                        continue
+
+                    any_pending = True
+
+                    # Extract team ID from the URL
+                    team_url = team["url"]
+                    parsed_url = urlparse(team_url)
+                    query_params = parse_qs(parsed_url.query)
+                    team_id = query_params.get('teamId', ['unknown_team'])[0]
+                    
+                    if not acquire_lock(team_id):
+                        print(f"Skipping team {team['name']} (ID: {team_id}) — locked by another process.")
+                        continue
+                        
+                    try:
+                        print(f"Scraping team: {team['name']} ({team['state']}) - {team['division']}")
+                        team_data = self.scrape_team(team["url"], team)
+                        
+                        if team_data:
+                            self.save_team_data(team_data)
+                            
+                            # Update the teams_scraped list and save the log with locking
+                            if team["name"] not in self.scrape_log.get("teams_scraped", []):
+                                self.scrape_log.setdefault("teams_scraped", []).append(team["name"])
+                            
+                            success_msg = f"Successfully scraped team: {team['name']} with {len(team_data.get('roster', []))} wrestlers"
+                            self._log_success("team_completed", success_msg)
+                            print(f"✅ {success_msg}")
+                            any_progress = True
+                        else:
+                            print(f"❌ Failed to scrape team: {team['name']} - Will retry in a later pass if possible")
+                        
+                        self._random_delay()
+
+                    except Exception as e:
+                        self._log_error("general", f"General error processing team {team['name']}: {e}")
+                    finally:
+                        # Only release the lock, don't quit the driver here
+                        release_lock(team_id)
+
+                # After one full pass over all teams:
+                if not any_pending:
+                    print("All teams are marked as scraped; no teams remaining to process.")
+                    break
+                if not any_progress:
+                    print("No progress made on this pass (likely all remaining teams are locked or failing repeatedly); stopping early.")
+                    break
 
         except Exception as e:
             self._log_error("general", f"General error in run method: {e}")

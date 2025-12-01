@@ -56,6 +56,7 @@ def classify_result_type(result: str) -> str:
     
     Categories:
         - D   : Decision (incl. SV-1, SV-2)
+        - TB  : Tiebreaker decision (TB-1, TB-2, etc.)
         - MD  : Major Decision
         - TF  : Technical Fall
         - F   : Fall (pin)
@@ -92,6 +93,10 @@ def classify_result_type(result: str) -> str:
     if "md" in r or "major" in r:
         return "MD"
     
+    # Tiebreaker decision (e.g., "TB-1 9-8")
+    if "tb-" in r or "tiebreak" in r:
+        return "TB"
+    
     # Regular decision (including sudden victory)
     if "dec" in r or "sv-" in r:
         return "D"
@@ -111,9 +116,10 @@ def classify_best_win(matches: List[Dict], winner_id: str) -> str:
         "INJ": 2,
         "MFF": 3,
         "MD": 4,
-        "D": 5,
-        "NC": 6,
-        "O": 7
+        "TB": 5,
+        "D": 6,
+        "NC": 7,
+        "O": 8
     }
     
     best_code = "O"
@@ -149,6 +155,7 @@ def severity_for_result_code(code: str) -> str:
         return "strong"
     if code == "MD":
         return "medium"
+    # Regular decisions and TB tiebreakers share the same light decision shading
     return "light"
 
 
@@ -176,6 +183,9 @@ def format_result_for_tooltip(result: str) -> str:
         return "Technical Fall"
     if code == "MD":
         return f"Major Decision {score}" if score else "Major Decision"
+    if code == "TB":
+        # Treat TB as an overtime decision in phrasing
+        return f"Tiebreaker Decision {score}" if score else "Tiebreaker Decision"
     if code == "D":
         return f"Decision {score}" if score else "Decision"
     if code == "INJ":
@@ -242,15 +252,23 @@ def build_matrix_data(
                 info['placement_note'] = note
             wrestler_list.append((wid, info))
 
-    # Recompute starter flag based on the current ordered list: for each
-    # team, the first occurrence is the starter and subsequent teammates
-    # at this weight are marked non-starters.
+    # Recompute starter flag based on the current ordered list:
+    #  - If starter_map has an explicit value for this wrestler_id, use it.
+    #  - Otherwise, for each team, the first occurrence becomes the starter
+    #    and subsequent teammates at this weight are marked non-starters.
     team_seen = set()
     for idx, (wid, winfo) in enumerate(wrestler_list):
         team = winfo.get("team")
         if not team:
             winfo["is_starter"] = True
             continue
+
+        if wid in starter_map:
+            winfo["is_starter"] = bool(starter_map[wid])
+            if winfo["is_starter"]:
+                team_seen.add(team)
+            continue
+
         if team not in team_seen:
             winfo["is_starter"] = True
             team_seen.add(team)
@@ -283,9 +301,11 @@ def build_matrix_data(
                 wins_2 = rel.get('direct_wins_2', 0)
                 matches = rel.get('matches', [])
                 total_matches = wins_1 + wins_2
+                has_wins_both = wins_1 > 0 and wins_2 > 0
                 
-                # Even series (e.g. 1-1, 2-2): show neutral split "S" cell in both directions
-                if total_matches >= 2 and wins_1 == wins_2:
+                # Even series where both wrestlers have wins (e.g. 1-1, 2-2):
+                # show neutral split "S" cell in both directions (yellow).
+                if total_matches >= 2 and has_wins_both and wins_1 == wins_2:
                     cell_data['type'] = 'split_even'
                     cell_data['value'] = 'S'
                     cell_data['tooltip'] = (
@@ -297,14 +317,20 @@ def build_matrix_data(
                         is_recent_date(m.get('date', ''), today) for m in matches
                     )
                 else:
-                    # Non-even series. For multi-match series (2-1, 3-1, etc.) show "S" in the
-                    # advantaged direction but keep green/red shading based on best win.
+                    # Non-even series.
+                    #
+                    # - If only one wrestler has wins in the series (e.g., 2-0, 3-0), show the
+                    #   strongest individual result code (F/TF/MD/TB/D) instead of "S".
+                    # - If both wrestlers have wins and there are 3+ matches total (e.g., 2-1, 3-1),
+                    #   show an "S" in the advantaged direction, with green/red shading based on
+                    #   the best win.
+                    use_series_S = total_matches >= 3 and has_wins_both and wins_1 != wins_2
                     if w1_id == rel['wrestler1_id']:
                         if wins_1 > wins_2:
                             # w1 has direct advantage
                             code = classify_best_win(matches, w1_id)
                             cell_data['type'] = 'direct_win'
-                            cell_data['value'] = 'S' if total_matches >= 2 else code
+                            cell_data['value'] = 'S' if use_series_S else code
                             cell_data['tooltip'] = (
                                 f"{w1_info['name']} leads head-to-head over "
                                 f"{w2_info['name']} ({wins_1}-{wins_2})"
@@ -319,7 +345,7 @@ def build_matrix_data(
                             # w2 has direct advantage
                             code = classify_best_win(matches, rel['wrestler2_id'])
                             cell_data['type'] = 'direct_loss'
-                            cell_data['value'] = 'S' if total_matches >= 2 else code
+                            cell_data['value'] = 'S' if use_series_S else code
                             cell_data['tooltip'] = (
                                 f"{w2_info['name']} leads head-to-head over "
                                 f"{w1_info['name']} ({wins_2}-{wins_1})"
@@ -335,7 +361,7 @@ def build_matrix_data(
                             # w1 has direct advantage (as wrestler2)
                             code = classify_best_win(matches, w1_id)
                             cell_data['type'] = 'direct_win'
-                            cell_data['value'] = 'S' if total_matches >= 2 else code
+                            cell_data['value'] = 'S' if use_series_S else code
                             cell_data['tooltip'] = (
                                 f"{w1_info['name']} leads head-to-head over "
                                 f"{w2_info['name']} ({wins_2}-{wins_1})"
@@ -349,7 +375,7 @@ def build_matrix_data(
                             # w2 has direct advantage
                             code = classify_best_win(matches, rel['wrestler1_id'])
                             cell_data['type'] = 'direct_loss'
-                            cell_data['value'] = 'S' if total_matches >= 2 else code
+                            cell_data['value'] = 'S' if use_series_S else code
                             cell_data['tooltip'] = (
                                 f"{w2_info['name']} leads head-to-head over "
                                 f"{w1_info['name']} ({wins_1}-{wins_2})"
@@ -432,7 +458,12 @@ def build_matrix_data(
     }
 
 
-def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> str:
+def generate_html_matrix(
+    matrix_data: Dict,
+    weight_class: str,
+    season: int,
+    force_backup_ids: Optional[List[str]] = None,
+) -> str:
     """
     Generate HTML for editable ranking matrix.
     
@@ -1013,6 +1044,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
         const weightClass = """ + json.dumps(weight_class) + """;
         const season = """ + str(season) + """;
         const wrestlers = """ + json.dumps(wrestlers) + """;
+        const forceBackupIds = new Set(""" + json.dumps(force_backup_ids or []) + """);
         console.log('Variables initialized, wrestlers count:', wrestlers.length); // Debug
         
         // Store tooltip data in global object for tooltip system
@@ -1348,11 +1380,16 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             });
 
             // Now compute starter status: for each team at this weight,
-            // the best-ranked wrestler is the starter.
+            // the best-ranked wrestler is the starter, but never choose
+            // any wrestler whose ID is in forceBackupIds.
             const teamBest = {}; // team -> { rank, index }
             rankings.forEach((entry, idx) => {
                 const team = entry.team;
                 if (!team) return;
+                if (forceBackupIds.has(entry.wrestler_id)) {
+                    entry.is_starter = false;
+                    return;
+                }
                 const r = typeof entry.rank === 'number' ? entry.rank : Number(entry.rank) || 1e9;
                 const prev = teamBest[team];
                 if (!prev || r < prev.rank) {
@@ -1364,7 +1401,7 @@ def generate_html_matrix(matrix_data: Dict, weight_class: str, season: int) -> s
             rankings.forEach(entry => {
                 entry.is_starter = false;
             });
-            // Mark the best-ranked per team as starter
+            // Mark the best-ranked per team as starter (skipping forced backups)
             Object.values(teamBest).forEach(info => {
                 const idx = info.index;
                 if (idx >= 0 && idx < rankings.length) {
@@ -1445,7 +1482,8 @@ def generate_matrix_for_weight_class(
         relationships_data = json.load(f)
     
     # If a manual rankings file exists, load it, attach ordering, and
-    # derive starter status per wrestler (best-ranked per team).
+    # derive starter status per wrestler (best-ranked per team),
+    # honoring any season-wide starter overrides.
     rankings_file = Path(data_dir) / str(season) / f"rankings_{weight_class}.json"
     if rankings_file.exists():
         try:
@@ -1455,30 +1493,37 @@ def generate_matrix_for_weight_class(
             ranking_ids = [r['wrestler_id'] for r in rankings_list]
             relationships_data['ranking_order'] = ranking_ids
 
+            # Load global starter overrides for this season, if present.
+            overrides_path = Path(data_dir) / str(season) / "starter_overrides.json"
+            force_backup_ids = set()
+            if overrides_path.exists():
+                try:
+                    with open(overrides_path, 'r', encoding='utf-8') as of:
+                        overrides = json.load(of)
+                    force_backup_ids = set(overrides.get("force_backup_ids", []))
+                    if force_backup_ids:
+                        print(
+                            f"Loaded {len(force_backup_ids)} starter override(s) "
+                            f"from {overrides_path}"
+                        )
+                except Exception as oe:
+                    print(f"Warning: Failed to load starter overrides {overrides_path}: {oe}")
+
             # Build starter_map: wrestler_id -> bool.
-            # If the rankings JSON carries an explicit is_starter flag,
-            # trust it. Otherwise, compute starters as the best-ranked
-            # wrestler per team.
+            # Priority:
+            #   1) If wrestler_id is in force_backup_ids -> False.
+            #   2) Otherwise, choose best-ranked per team among non-forced backups.
             starter_map: Dict[str, bool] = {}
             if rankings_list:
-                # First pass: record any explicit flags.
-                for entry in rankings_list:
-                    wid = entry.get("wrestler_id")
-                    if not wid:
-                        continue
-                    if isinstance(entry.get("is_starter"), bool):
-                        starter_map[wid] = entry["is_starter"]
-
-                # Second pass: for entries without explicit flag, compute
-                # team-best from numeric rank.
                 team_best: Dict[str, Tuple[int, str]] = {}
                 for entry in rankings_list:
                     wid = entry.get("wrestler_id")
                     team = entry.get("team")
                     if not wid or not team:
                         continue
-                    # Skip wrestlers that already have explicit starter info
-                    if wid in starter_map:
+                    if wid in force_backup_ids:
+                        # Explicitly forced backup for this season.
+                        starter_map[wid] = False
                         continue
                     raw_rank = entry.get("rank")
                     try:
@@ -1514,8 +1559,14 @@ def generate_matrix_for_weight_class(
     # Build matrix data
     matrix_data = build_matrix_data(relationships_data, placement_notes=placement_notes_map)
     
-    # Generate HTML
-    html = generate_html_matrix(matrix_data, weight_class, season)
+    # Generate HTML, passing starter overrides so the JS "Save Rankings"
+    # button can honor them when computing is_starter flags.
+    html = generate_html_matrix(
+        matrix_data,
+        weight_class,
+        season,
+        force_backup_ids=list(force_backup_ids),
+    )
     
     # Save HTML file
     output_path = Path(output_dir) / str(season)

@@ -97,6 +97,11 @@ class HodgeStats:
     techs: int = 0
     pins: int = 0
     ranked_win_ranks: List[int] = field(default_factory=list)
+    # Dominance accumulators for S_DOM (Top-50 weighted team points)
+    dom_weighted_tp_num: float = 0.0
+    dom_weighted_tp_den: float = 0.0
+    dom_unranked_tp_sum: float = 0.0
+    dom_unranked_matches: int = 0
     # Scores from hodge_formula.md
     s_wl: float = 0.0
     s_rec: float = 0.0
@@ -163,8 +168,15 @@ def compute_stats_for_weight(
     top10_opponent_ids: Set[str],
     rank_lookup: Dict[str, int],
     top_n: int = 10,
+    starters_only: bool = False,
 ) -> List[HodgeStats]:
-    """Compute HodgeStats for top-N ranked wrestlers in a single weight."""
+    """
+    Compute HodgeStats for ranked wrestlers in a single weight.
+    
+    If starters_only is True, only wrestlers explicitly marked as starters
+    in the rankings JSON (entry['is_starter'] == True) are considered when
+    building the candidate list for that weight.
+    """
     wrestlers: Dict[str, Dict] = wc_data["wrestlers"]
     matches: List[Dict] = wc_data["matches"]
 
@@ -184,14 +196,18 @@ def compute_stats_for_weight(
             continue
         rank_by_id[wid] = r
 
-    # Collect top-N ranked wrestler IDs (respect their order)
+    # Collect ranked wrestler IDs (respect their order), optionally
+    # restricted to official starters only.
     top_ranked_ids: List[str] = []
     for entry in rankings:
+        wid = entry.get("wrestler_id")
+        if not wid or wid not in wrestlers:
+            continue
+        if starters_only and not entry.get("is_starter", False):
+            continue
+        top_ranked_ids.append(wid)
         if len(top_ranked_ids) >= top_n:
             break
-        wid = entry.get("wrestler_id")
-        if wid and wid in wrestlers:
-            top_ranked_ids.append(wid)
 
     if not top_ranked_ids:
         return []
@@ -245,6 +261,30 @@ def compute_stats_for_weight(
                     s.majors += 1
                 elif code == "D":
                     s.decisions += 1
+
+                # Dominance accumulators for S_DOM (team points weighted by opponent rank)
+                tp = 0
+                if code == "D":
+                    tp = 3
+                elif code == "MD":
+                    tp = 4
+                elif code == "TF":
+                    tp = 5
+                elif code == "F":
+                    tp = 6
+                if tp > 0:
+                    opp_rank = rank_lookup.get(opp_id) if opp_id else None
+                    if opp_rank is not None and 1 <= opp_rank <= 50:
+                        weight = 1.0 + (50.0 - float(opp_rank)) / 49.0
+                    else:
+                        weight = 0.50
+                    s.dom_weighted_tp_num += tp * weight
+                    s.dom_weighted_tp_den += weight
+
+                    # Track unranked dominance separately for optional penalty
+                    if opp_rank is None or opp_rank > 50:
+                        s.dom_unranked_tp_sum += tp
+                        s.dom_unranked_matches += 1
 
                 # Ranked opponent metrics (current top-33 in same/adjacent weights)
                 if opp_id and opp_id in ranked_opponent_ids:
@@ -380,7 +420,8 @@ def main() -> None:
             ranked_ids.update(top33_ids_by_weight.get(w, set()))
             top10_ids.update(top10_ids_by_weight.get(w, set()))
 
-        stats = compute_stats_for_weight(
+        # For primary Hodge candidate list, use only official starters.
+        stats_starters = compute_stats_for_weight(
             weight,
             wc_data,
             rankings,
@@ -388,8 +429,9 @@ def main() -> None:
             top10_ids,
             global_rank_lookup,
             top_n=args.top_n,
+            starters_only=True,
         )
-        all_candidates.extend(stats)
+        all_candidates.extend(stats_starters)
 
         # For histograms: collect stats for all starters ranked in the top-33
         starter_rankings_33: List[Dict] = []
@@ -417,6 +459,7 @@ def main() -> None:
                 top10_ids,
                 global_rank_lookup,
                 top_n=len(starter_rankings_33),
+                starters_only=True,
             )
             all_ranked_for_hist.extend(hist_stats)
 
@@ -466,14 +509,39 @@ def main() -> None:
         s = min(100.0, s + 2.0 * min(top10_wins_local, 5))
         return s
 
-    def compute_s_dom(dec: int, maj: int, tf: int, pins: int, total: int) -> float:
-        if total <= 0:
+    def compute_s_dom(
+        weighted_tp_num: float,
+        weighted_tp_den: float,
+        unranked_tp_sum: float,
+        unranked_matches: int,
+    ) -> float:
+        """
+        Compute S_DOM per s_dom_spec.txt.
+
+        - Use team-points per match (DEC=3, MD=4, TF=5, PIN=6)
+          weighted by opponent quality on a Top-50 scale.
+        - Map weighted average team points in [3.0, 6.0] to [0, 100].
+        - Optionally apply a small penalty for weak dominance vs unranked
+          opponents (avg team points < 3.2).
+        """
+        if weighted_tp_den <= 0.0:
             return 0.0
-        team_points = dec * 3 + maj * 4 + tf * 5 + pins * 6
-        avg_tp = team_points / total
-        if avg_tp <= 3.0:
+
+        # Weighted average dominance across all opponents.
+        avg_tp_weighted = weighted_tp_num / weighted_tp_den
+        if avg_tp_weighted <= 3.0:
             return 0.0
-        return min(100.0, (avg_tp - 3.0) / 3.0 * 100.0)
+
+        s_dom = min(100.0, (avg_tp_weighted - 3.0) / 3.0 * 100.0)
+
+        # Optional weak-opponent penalty based on unranked dominance only.
+        if unranked_matches > 0:
+            avg_tp_unranked = unranked_tp_sum / float(unranked_matches)
+            if avg_tp_unranked < 3.2:
+                penalty = min(10.0, (3.2 - avg_tp_unranked) * 10.0)
+                s_dom = max(0.0, s_dom - penalty)
+
+        return s_dom
 
     def compute_s_pins(pins: int, wins: int) -> float:
         if wins <= 0 or pins <= 0:
@@ -495,7 +563,12 @@ def main() -> None:
         s.s_wl = compute_s_wl(s.weight_rank)
         s.s_rec = compute_s_rec(s.wins, s.losses)
         s.s_qual = compute_s_qual(s.ranked_win_ranks)
-        s.s_dom = compute_s_dom(s.decisions, s.majors, s.techs, s.pins, s.total_matches)
+        s.s_dom = compute_s_dom(
+            s.dom_weighted_tp_num,
+            s.dom_weighted_tp_den,
+            s.dom_unranked_tp_sum,
+            s.dom_unranked_matches,
+        )
         s.s_pins = compute_s_pins(s.pins, s.wins)
         s.hodge_score = (
             W_WL * s.s_wl
@@ -504,44 +577,6 @@ def main() -> None:
             + W_DOM * s.s_dom
             + W_PINS * s.s_pins
         )
-
-    # Also compute S_* scores for all ranked starters (top-33) for histograms.
-    for s in all_ranked_for_hist:
-        s.s_wl = compute_s_wl(s.weight_rank)
-        s.s_rec = compute_s_rec(s.wins, s.losses)
-        s.s_qual = compute_s_qual(s.ranked_win_ranks)
-        s.s_dom = compute_s_dom(s.decisions, s.majors, s.techs, s.pins, s.total_matches)
-        s.s_pins = compute_s_pins(s.pins, s.wins)
-
-    # Build histograms for S_* scores across all ranked starters (top-33).
-    hist_images = {}
-    try:
-        import matplotlib.pyplot as plt  # type: ignore
-
-        def make_hist(values: List[float], label: str) -> None:
-            # Skip if there is no variation / all zeros.
-            if not values or all(v == 0.0 for v in values):
-                return
-            fig, ax = plt.subplots(figsize=(5, 3))
-            ax.hist(values, bins=20, color="orange", edgecolor="black")
-            ax.set_title(label)
-            ax.set_xlabel(label)
-            ax.set_ylabel("Wrestlers")
-            fig.tight_layout()
-            buf = io.BytesIO()
-            fig.savefig(buf, format="png", dpi=120)
-            plt.close(fig)
-            buf.seek(0)
-            b64 = base64.b64encode(buf.getvalue()).decode("ascii")
-            hist_images[label] = f"data:image/png;base64,{b64}"
-
-        make_hist([s.s_wl for s in all_ranked_for_hist], "S_WL")
-        make_hist([s.s_rec for s in all_ranked_for_hist], "S_REC")
-        make_hist([s.s_qual for s in all_ranked_for_hist], "S_QUAL")
-        make_hist([s.s_dom for s in all_ranked_for_hist], "S_DOM")
-        make_hist([s.s_pins for s in all_ranked_for_hist], "S_PINS")
-    except Exception:
-        hist_images = {}
 
     def green_scale01(t: float) -> str:
         """
@@ -647,25 +682,76 @@ def main() -> None:
         "</div>",
     ]
 
-    # Insert histograms for S_* distributions (all ranked starters, top-33).
-    order = ["S_WL", "S_REC", "S_QUAL", "S_DOM", "S_PINS"]
-    if hist_images:
-        html.append("<h2>Score Distributions (all ranked starters, top-33)</h2>")
-        for key in order:
-            uri = hist_images.get(key)
-            if not uri:
-                continue
-            html.extend(
-                [
-                    f"<h3>{key}</h3>",
-                    "<div style='margin-bottom: 20px;'>",
-                    f"<img src='{uri}' alt='{key} histogram' "
-                    "style='max-width: 100%; height: auto; border: 1px solid #ccc; "
-                    "background: #fff;' />",
-                    "</div>",
-                ]
-            )
+    # First: detailed Hodge formula scores table (the "formula" view).
+    html.extend(
+        [
+            "<h2>Hodge Formula Scores (sorted by HodgeScore)</h2>",
+            "<table>",
+            "<thead>",
+            "<tr>",
+            "<th>#</th>",
+            "<th>Name</th>",
+            "<th>Team</th>",
+            "<th>Wt</th>",
+            "<th>W-L</th>",
+            "<th>Score</th>",
+            "<th>WtCl Rank</th>",
+            "<th>Quality<br>of Competition</th>",
+            "<th>Dominance Score</th>",
+            "<th>Pin%</th>",
+            "</tr>",
+            "</thead>",
+            "<tbody>",
+        ]
+    )
 
+    # Precompute rank range for WtCl coloring so best rank is darkest, worst is lightest.
+    rank_values = [s.weight_rank for s in scored_candidates if s.weight_rank < 999]
+    if rank_values:
+        min_rank = min(rank_values)
+        max_rank = max(rank_values)
+    else:
+        min_rank = 1
+        max_rank = 1
+
+    for idx, s in enumerate(scored_candidates, start=1):
+        wl = f"{s.wins}-{s.losses}"
+        # Rank: map best ranks (lowest value) to dark green, worst (highest) to light.
+        if max_rank > min_rank:
+            rank_t = (max_rank - float(s.weight_rank)) / (max_rank - min_rank)
+            rank_t = max(0.0, min(1.0, rank_t))
+        else:
+            rank_t = 1.0
+        wtcl_color = green_scale01(rank_t)
+        # Quality, dominance, and pin scores get their own green shades based on 0–100 scale.
+        qual_color = green_scale01(s.s_qual / 100.0)
+        dom_color = green_scale01(s.s_dom / 100.0)
+        pin_color = green_scale01(s.s_pins / 100.0)
+        pin_pct_display = s.fall_pct * 100.0
+
+        html.append(
+            "<tr>"
+            f"<td>{idx}</td>"
+            f"<td class='name-cell'>{s.name}</td>"
+            f"<td class='team-cell'>{s.team}</td>"
+            f"<td>{s.weight_class}</td>"
+            f"<td>{wl}</td>"
+            f"<td>{s.hodge_score:.2f}</td>"
+            f"<td style='background-color:{wtcl_color};'>{s.weight_rank}</td>"
+            f"<td style='background-color:{qual_color};'>{s.s_qual:.1f}</td>"
+            f"<td style='background-color:{dom_color};'>{s.s_dom:.1f}</td>"
+            f"<td style='background-color:{pin_color};'>{pin_pct_display:.1f}</td>"
+            "</tr>"
+        )
+
+    html.extend(
+        [
+            "</tbody>",
+            "</table>",
+        ]
+    )
+
+    # Then: high-level summary table.
     html.extend(
         [
             "<h2>Summary (sorted by HodgeScore)</h2>",
@@ -704,69 +790,6 @@ def main() -> None:
             f"<td>{s.ranked_wins}</td>"
             f"<td>{s.top10_wins}</td>"
             f"<td>{s.ranked_bonus_pct:.3f}</td>"
-            "</tr>"
-        )
-
-    html.extend(
-        [
-            "</tbody>",
-            "</table>",
-            "<h2>Hodge Formula Scores (sorted by HodgeScore)</h2>",
-            "<table>",
-            "<thead>",
-            "<tr>",
-            "<th>#</th>",
-            "<th>Name</th>",
-            "<th>Team</th>",
-            "<th>Wt</th>",
-            "<th>W-L</th>",
-            "<th>Score</th>",
-            "<th>WtCl Rank</th>",
-            "<th>Quality<br>of Competition</th>",
-            "<th>Dominance</th>",
-            "<th>Pin%</th>",
-            "</tr>",
-            "</thead>",
-            "<tbody>",
-        ]
-    )
-
-    # Precompute rank range for WtCl coloring so best rank is darkest, worst is lightest.
-    rank_values = [s.weight_rank for s in scored_candidates if s.weight_rank < 999]
-    if rank_values:
-        min_rank = min(rank_values)
-        max_rank = max(rank_values)
-    else:
-        min_rank = 1
-        max_rank = 1
-
-    for idx, s in enumerate(scored_candidates, start=1):
-        wl = f"{s.wins}-{s.losses}"
-        # Color scales for rank, quality, dominance, and pin score
-        # Rank: map best ranks (lowest value) to dark green, worst (highest) to light.
-        if max_rank > min_rank:
-            rank_t = (max_rank - float(s.weight_rank)) / (max_rank - min_rank)
-            rank_t = max(0.0, min(1.0, rank_t))
-        else:
-            rank_t = 1.0
-        wtcl_color = green_scale01(rank_t)
-        qual_color = green_scale01(s.s_qual / 100.0)
-        dom_color = green_scale01(s.s_dom / 100.0)
-        pin_color = green_scale01(s.s_pins / 100.0)
-        pin_pct_display = s.fall_pct * 100.0
-
-        html.append(
-            "<tr>"
-            f"<td>{idx}</td>"
-            f"<td class='name-cell'>{s.name}</td>"
-            f"<td class='team-cell'>{s.team}</td>"
-            f"<td>{s.weight_class}</td>"
-            f"<td>{wl}</td>"
-            f"<td>{s.hodge_score:.2f}</td>"
-            f"<td style='background-color:{wtcl_color};'>{s.weight_rank}</td>"
-            f"<td style='background-color:{qual_color};'>{s.s_qual:.1f}</td>"
-            f"<td style='background-color:{dom_color};'>{s.s_dom:.1f}</td>"
-            f"<td style='background-color:{pin_color};'>{pin_pct_display:.1f}</td>"
             "</tr>"
         )
 

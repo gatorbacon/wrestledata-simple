@@ -33,16 +33,22 @@ def save_rankings_file(json_file: Path, season: int, output_dir: str = "mt/ranki
         raise ValueError("Invalid rankings JSON structure. Expected 'weight_class' and 'rankings' keys.")
 
     weight_class = data['weight_class']
-
+    
     # Annotate starters: for each team at this weight, the best-ranked
-    # wrestler is marked is_starter=True; all other teammates are False.
+    # wrestler is marked is_starter=True; all other teammates are False,
+    # honoring any season-wide starter overrides (force backups).
     rankings: List[Dict] = data.get("rankings", [])
+
     team_best: Dict[str, int] = {}  # team -> best rank
     team_best_index: Dict[str, int] = {}  # team -> index into rankings
 
     for idx, entry in enumerate(rankings):
         team = entry.get("team")
+        wid = entry.get("wrestler_id")
         if not team:
+            continue
+        # Never auto-mark a forced-backup wrestler as starter.
+        if wid and wid in force_backup_ids:
             continue
         raw_rank = entry.get("rank")
         try:
@@ -67,6 +73,17 @@ def save_rankings_file(json_file: Path, season: int, output_dir: str = "mt/ranki
     # Create output directory
     output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
+
+    # Load global starter overrides for this season, if present.
+    overrides_path = output_path / "starter_overrides.json"
+    force_backup_ids = set()
+    if overrides_path.exists():
+        try:
+            with overrides_path.open("r", encoding="utf-8") as of:
+                overrides = json.load(of)
+            force_backup_ids = set(overrides.get("force_backup_ids", []))
+        except Exception:
+            force_backup_ids = set()
     
     # Save to proper location
     rankings_file = output_path / f"rankings_{weight_class}.json"

@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import webbrowser
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -409,8 +410,8 @@ def main() -> None:
     )
     header = (
         f"{'#':>3}  {'Name':<25} {'Team':<20} {'Wt':>4}  "
-        f"{'W-L':>7}  {'Win%':>6}  {'Bonus%':>7}  {'Fall%':>6}  "
-        f"{'RkW':>4}  {'Top10W':>6}  {'RkBon%':>7}"
+        f"{'W-L':>7}  {'Win%':>6}  {'Bonus%':>7}  {'Pin%':>6}  "
+        f"{'# RankedWins':>12}  {'# Top10Wins':>11}  {'RankedBon%':>10}"
     )
     print(header)
     print("-" * len(header))
@@ -420,7 +421,7 @@ def main() -> None:
         print(
             f"{idx:>3}  {s.name:<25.25} {s.team:<20.20} {s.weight_class:>4}  "
             f"{wl:>7}  {s.win_pct:6.3f}  {s.bonus_pct:7.3f}  {s.fall_pct:6.3f}  "
-            f"{s.ranked_wins:4d}  {s.top10_wins:6d}  {s.ranked_bonus_pct:7.3f}"
+            f"{s.ranked_wins:12d}  {s.top10_wins:11d}  {s.ranked_bonus_pct:10.3f}"
         )
 
     # --- Generate HTML report ---
@@ -467,10 +468,10 @@ def main() -> None:
         "<th>W-L</th>",
         "<th>Win%</th>",
         "<th>Bonus%</th>",
-        "<th>Fall%</th>",
-        "<th>RkW</th>",
-        "<th>Top10W</th>",
-        "<th>RkBon%</th>",
+        "<th>Pin%</th>",
+        "<th># of Ranked Wins</th>",
+        "<th># of Top 10 Wins</th>",
+        "<th>Ranked Bonus%</th>",
         "</tr>",
         "</thead>",
         "<tbody>",
@@ -507,6 +508,12 @@ def main() -> None:
         f.write("\n".join(html))
 
     print(f"\nHTML Freshman report written to {html_path}\n")
+    try:
+        webbrowser.open(html_path.as_uri())
+    except Exception:
+        # If a browser can't be opened (e.g., in headless environments),
+        # just continue quietly.
+        pass
 
 
 if __name__ == "__main__":
