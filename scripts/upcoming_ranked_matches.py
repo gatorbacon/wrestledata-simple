@@ -858,11 +858,15 @@ def generate_html_report(
 
 
 def find_ranked_matchups_for_dual(
-    dual: Dual, rankings_by_weight_team: Dict[int, Dict[str, List[RankedWrestler]]]
+    dual: Dual,
+    rankings_by_weight_team: Dict[int, Dict[str, List[RankedWrestler]]],
+    weight_filter: Optional[int] = None,
 ) -> List[Tuple[Dual, RankedWrestler, RankedWrestler]]:
     matchups: List[Tuple[Dual, RankedWrestler, RankedWrestler]] = []
 
     for weight_class, by_team in rankings_by_weight_team.items():
+        if weight_filter is not None and weight_class != weight_filter:
+            continue
         team1_wrestlers = by_team.get(dual.team1, [])
         team2_wrestlers = by_team.get(dual.team2, [])
         if not team1_wrestlers or not team2_wrestlers:
@@ -901,6 +905,18 @@ def list_upcoming_ranked_matchups(days_ahead: Optional[int] = None) -> None:
     else:
         max_rank = 33
 
+    # Optional weight-class filter
+    weight_filter: Optional[int] = None
+    wc_str = input(
+        "Filter by weight class (e.g. 125), or press Enter for all weights: "
+    ).strip()
+    if wc_str:
+        try:
+            weight_filter = int(wc_str)
+        except ValueError:
+            print("Invalid weight; showing all weights.\n")
+            weight_filter = None
+
     duals = load_schedule()
     if not duals:
         print("No duals scheduled yet. Use the 'add duals' option first.")
@@ -909,12 +925,17 @@ def list_upcoming_ranked_matchups(days_ahead: Optional[int] = None) -> None:
     # Helper to build and sort matchups for a given rankings map.
     def build_matchups(
         rankings_by_weight_team: Dict[int, Dict[str, List[RankedWrestler]]]
-    ) -> Tuple[List[Tuple[Dual, RankedWrestler, RankedWrestler]], List[Tuple[Dual, RankedWrestler, RankedWrestler]]]:
+    ) -> Tuple[
+        List[Tuple[Dual, RankedWrestler, RankedWrestler]],
+        List[Tuple[Dual, RankedWrestler, RankedWrestler]],
+    ]:
         window_matchups: List[Tuple[Dual, RankedWrestler, RankedWrestler]] = []
         season_matchups: List[Tuple[Dual, RankedWrestler, RankedWrestler]] = []
 
         for dual in duals:
-            m = find_ranked_matchups_for_dual(dual, rankings_by_weight_team)
+            m = find_ranked_matchups_for_dual(
+                dual, rankings_by_weight_team, weight_filter=weight_filter
+            )
             season_matchups.extend(m)
             if today <= dual.date <= end_date:
                 window_matchups.extend(m)
@@ -944,16 +965,28 @@ def list_upcoming_ranked_matchups(days_ahead: Optional[int] = None) -> None:
         print("No potential ranked matchups in the selected window (starters only).")
     else:
         starter_lines: List[str] = []
+        starter_simple_lines: List[str] = []
         for dual, w1, w2 in starter_window:
-            line = (
+            detailed = (
                 f"{dual.date.strftime('%m/%d')} - "
                 f"{w1.weight_class:>3} lbs: "
                 f"#{w1.rank} {w1.name} ({w1.team}) vs "
                 f"#{w2.rank} {w2.name} ({w2.team})"
             )
-            print(line)
-            starter_lines.append(line)
+            simple = (
+                f"#{w1.rank} {w1.name} ({w1.team}) vs "
+                f"#{w2.rank} {w2.name} ({w2.team})"
+            )
+            print(detailed)
+            starter_lines.append(detailed)
+            starter_simple_lines.append(simple)
 
+        print()
+
+        # Re-print the same matchups in a simplified inline format (no date/weight).
+        print("Simplified matchup list:\n")
+        for line in starter_simple_lines:
+            print(line)
         print()
 
         generate_html_report(

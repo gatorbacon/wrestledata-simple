@@ -38,6 +38,7 @@ from __future__ import annotations
 import argparse
 import base64
 import json
+from datetime import datetime, timedelta
 from io import BytesIO
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -50,12 +51,8 @@ RANKINGS_DIR = Path("mt/rankings_data")
 TEMPLATE_PATH = Path("mt/graphics/templates/top10-template.svg")
 
 
-def load_rankings(season: int, weight_class: str) -> List[Dict]:
-    """Load rankings_{weight}.json and return list sorted by numeric rank."""
-    rankings_path = RANKINGS_DIR / str(season) / f"rankings_{weight_class}.json"
-    if not rankings_path.exists():
-        raise FileNotFoundError(f"Rankings file not found: {rankings_path}")
-
+def _load_rankings_from_file(rankings_path: Path) -> List[Dict]:
+    """Load a rankings_*.json file and return list sorted by numeric rank."""
     with rankings_path.open("r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -78,11 +75,25 @@ def load_rankings(season: int, weight_class: str) -> List[Dict]:
                 "wrestler_id": wid,
                 "name": e.get("name", "Unknown"),
                 "team": e.get("team", "Unknown"),
+                "record": e.get("record", ""),
+                "is_starter": bool(e.get("is_starter", True)),
             }
         )
 
     cleaned.sort(key=lambda x: x["rank"])
     return cleaned
+
+
+def load_rankings(season: int, weight_class: str) -> List[Dict]:
+    """
+    Load current rankings_{weight}.json for the given season/weight,
+    filtered to starters only.
+    """
+    rankings_path = RANKINGS_DIR / str(season) / f"rankings_{weight_class}.json"
+    if not rankings_path.exists():
+        raise FileNotFoundError(f"Rankings file not found: {rankings_path}")
+    all_entries = _load_rankings_from_file(rankings_path)
+    return [e for e in all_entries if e.get("is_starter", True)]
 
 
 def resolve_photo_path(images_dir: Path, season: int, wrestler_id: str) -> Optional[Path]:
@@ -140,9 +151,15 @@ def embed_photo_data_url(root: ET.Element, jpeg_bytes: bytes) -> None:
 
 
 def fill_text_labels(
-    root: ET.Element, rankings: List[Dict], weight_class_label: str
+    root: ET.Element,
+    rankings: List[Dict],
+    weight_class_label: str,
+    rank_deltas: Optional[List[Optional[int]]] = None,
 ) -> None:
-    """Fill name/school/weightclass text nodes in the SVG."""
+    """
+    Fill name/school/weightclass text nodes in the SVG and optionally
+    per-rank delta labels (delta1..delta10).
+    """
     ns = {
         "svg": "http://www.w3.org/2000/svg",
         "inkscape": "http://www.inkscape.org/namespaces/inkscape",
@@ -152,7 +169,20 @@ def fill_text_labels(
     for idx in range(1, 11):
         entry = rankings[idx - 1] if idx - 1 < len(rankings) else None
         name_text = entry["name"].upper() if entry else ""
-        school_text = entry["team"].upper() if entry else ""
+        if entry:
+            team_raw = entry.get("team", "Unknown")
+            record_raw = (entry.get("record") or "").strip()
+            # Keep school in ALL CAPS for consistency with the template,
+            # and append record in parentheses when available.
+            if record_raw:
+                school_text = f"{team_raw.upper()}   ({record_raw})"
+            else:
+                school_text = team_raw.upper()
+        else:
+            school_text = ""
+        delta_val = (
+            rank_deltas[idx - 1] if rank_deltas and idx - 1 < len(rank_deltas) else None
+        )
 
         # name{idx}
         name_el = root.find(
@@ -171,6 +201,57 @@ def fill_text_labels(
             tspan = school_el.find("svg:tspan", ns)
             target = tspan if tspan is not None else school_el
             target.text = school_text
+
+        # delta{idx} – change in rank (e.g., "+3" or "-2")
+        delta_el = root.find(
+            f".//svg:text[@inkscape:label='delta{idx}']", namespaces=ns
+        )
+        if delta_el is not None:
+            tspan = delta_el.find("svg:tspan", ns)
+            target = tspan if tspan is not None else delta_el
+
+            # Parse existing style from the actual rendered element (tspan if present)
+            # into a dict so we can tweak fill/display.
+            style_src = target
+            style_str = style_src.get("style", "")
+            style_parts = [
+                part.strip() for part in style_str.split(";") if part.strip()
+            ]
+            style_dict: Dict[str, str] = {}
+            for part in style_parts:
+                if ":" not in part:
+                    continue
+                k, v = part.split(":", 1)
+                style_dict[k.strip()] = v.strip()
+
+            if delta_val is None or delta_val == 0:
+                # No movement or no data: hide the label.
+                target.text = ""
+                style_dict["display"] = "none"
+            elif isinstance(delta_val, str) and delta_val == "N":
+                # New to the rankings at this weight: show green "N".
+                target.text = "N"
+                style_dict.pop("display", None)
+                style_dict["fill"] = "#17c517"
+            elif isinstance(delta_val, int):
+                # Show movement with color-coded +/- value.
+                text_val = f"+{delta_val}" if delta_val > 0 else str(delta_val)
+                target.text = text_val
+                style_dict.pop("display", None)
+                style_dict["fill"] = "#17c517" if delta_val > 0 else "#d40000"
+            else:
+                # Fallback: hide anything unexpected.
+                target.text = ""
+                style_dict["display"] = "none"
+
+            # Rebuild style string.
+            new_style = ";".join(f"{k}:{v}" for k, v in style_dict.items())
+            # Apply to both the container <text> and inner <tspan> so the
+            # fill/display definitely take effect regardless of where the
+            # template defined them.
+            delta_el.set("style", new_style)
+            if tspan is not None:
+                tspan.set("style", new_style)
 
     # Weight class label
     wc_el = root.find(
@@ -212,6 +293,96 @@ def render_jpg(svg_path: Path, jpg_path: Path) -> None:
     print(f"JPG graphic written to {jpg_path}")
 
 
+def _parse_archive_timestamp(name: str) -> Optional[datetime]:
+    """Parse rankings_archive directory names (YYYYMMDD-HHMMSS) into datetimes."""
+    try:
+        return datetime.strptime(name, "%Y%m%d-%H%M%S")
+    except ValueError:
+        return None
+
+
+def load_historical_rankings(
+    season: int,
+    weight_class: str,
+    days_ago: int,
+) -> List[Dict]:
+    """
+    Load rankings from the archive as of N days ago.
+
+    We use the snapshot whose timestamp is the latest one at or before
+    11:59pm on the target day. If none exist, returns an empty list.
+    """
+    archive_root = RANKINGS_DIR / str(season) / "rankings_archive"
+    if not archive_root.exists():
+        return []
+
+    today = datetime.now().date()
+    target_date = today - timedelta(days=days_ago)
+    target_dt = datetime(
+        target_date.year, target_date.month, target_date.day, 23, 59, 59
+    )
+
+    best_dir: Optional[Path] = None
+    best_ts: Optional[datetime] = None
+
+    for child in archive_root.iterdir():
+        if not child.is_dir():
+            continue
+        ts = _parse_archive_timestamp(child.name)
+        if ts is None or ts > target_dt:
+            continue
+        if best_ts is None or ts > best_ts:
+            best_ts = ts
+            best_dir = child
+
+    if best_dir is None:
+        return []
+
+    rankings_path = best_dir / f"rankings_{weight_class}.json"
+    if not rankings_path.exists():
+        return []
+
+    all_entries = _load_rankings_from_file(rankings_path)
+    return [e for e in all_entries if e.get("is_starter", True)]
+
+
+def compute_rank_deltas(
+    current_rankings: List[Dict], historical_rankings: List[Dict]
+) -> List[Optional[object]]:
+    """
+    Compute change in rank for the current top 10 vs historical snapshot.
+
+    A positive delta means the wrestler moved UP (e.g., from 8 -> 3 yields +5).
+    If a wrestler was not present in the historical rankings, the delta is None.
+    """
+    if not historical_rankings:
+        return [None] * 10
+
+    # Map wrestler_id -> position among starters in the historical snapshot
+    # (1-based index in the starters-only list).
+    prev_by_id: Dict[str, int] = {
+        e["wrestler_id"]: idx + 1 for idx, e in enumerate(historical_rankings)
+    }
+
+    deltas: List[Optional[object]] = []
+    for idx, entry in enumerate(current_rankings[:10]):
+        wid = entry["wrestler_id"]
+        # Position among current starters (1-based index in current list)
+        curr_pos = idx + 1
+        prev_rank = prev_by_id.get(wid)
+        if prev_rank is None:
+            # New to this weight/ranked set since the historical snapshot.
+            deltas.append("N")
+        else:
+            deltas.append(prev_rank - curr_pos)
+
+    # Pad to length 10 so fill_text_labels can index safely.
+    while len(deltas) < 10:
+        deltas.append(None)
+
+    return deltas
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
@@ -246,12 +417,22 @@ def main() -> None:
             "Defaults to mt/graphics/{season}/top10_{weight}."
         ),
     )
+    parser.add_argument(
+        "-delta-days",
+        type=int,
+        required=True,
+        help=(
+            "Number of days back to compare rankings for the delta labels "
+            "(compare vs rankings active at 11:59pm N days ago)."
+        ),
+    )
 
     args = parser.parse_args()
 
     season = args.season
     weight_class = str(args.weight_class)
     images_dir = Path(args.images_dir)
+    delta_days = int(args.delta_days)
 
     rankings = load_rankings(season, weight_class)
     if not rankings:
@@ -275,6 +456,10 @@ def main() -> None:
 
     jpeg_bytes = load_and_prepare_square_photo(photo_path)
 
+    # Historical rankings for delta calculation
+    historical = load_historical_rankings(season, weight_class, delta_days)
+    rank_deltas = compute_rank_deltas(rankings, historical)
+
     if not TEMPLATE_PATH.exists():
         raise SystemExit(f"SVG template not found: {TEMPLATE_PATH}")
 
@@ -282,7 +467,12 @@ def main() -> None:
     root = tree.getroot()
 
     # Fill texts and embed photo. Show weight as "<wt> lbs".
-    fill_text_labels(root, rankings, weight_class_label=f"{weight_class} lbs")
+    fill_text_labels(
+        root,
+        rankings,
+        weight_class_label=f"{weight_class} lbs",
+        rank_deltas=rank_deltas,
+    )
     embed_photo_data_url(root, jpeg_bytes)
 
     # Output paths

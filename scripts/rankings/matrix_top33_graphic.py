@@ -23,8 +23,9 @@ from __future__ import annotations
 
 import argparse
 import json
+from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -65,6 +66,142 @@ def try_load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
     return ImageFont.load_default()
 
 
+def _load_rankings_from_file(path: Path) -> List[Dict]:
+    """Load a rankings_*.json file and return list sorted by numeric rank."""
+    if not path.exists():
+        raise FileNotFoundError(f"Rankings file not found: {path}")
+
+    with path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    entries = data.get("rankings", [])
+    cleaned: List[Dict] = []
+    for e in entries:
+        r = e.get("rank")
+        wid = e.get("wrestler_id")
+        if wid is None or r is None:
+            continue
+        try:
+            rank_int = int(r)
+        except (TypeError, ValueError):
+            # Skip UNR / non-numeric
+            continue
+        cleaned.append(
+            {
+                "rank": rank_int,
+                "wrestler_id": wid,
+                "name": e.get("name", "Unknown"),
+                "team": e.get("team", "Unknown"),
+                # Preserve official starter flag if present; default to True.
+                "is_starter": bool(e.get("is_starter", True)),
+            }
+        )
+
+    cleaned.sort(key=lambda x: x["rank"])
+    return cleaned
+
+
+def load_current_rankings(
+    season: int, weight_class: str, data_dir: str
+) -> List[Dict]:
+    base = Path(data_dir) / str(season)
+    path = base / f"rankings_{weight_class}.json"
+    return _load_rankings_from_file(path)
+
+
+def _parse_archive_timestamp(name: str) -> Optional[datetime]:
+    """Parse rankings_archive directory names (YYYYMMDD-HHMMSS) into datetimes."""
+    try:
+        return datetime.strptime(name, "%Y%m%d-%H%M%S")
+    except ValueError:
+        return None
+
+
+def load_historical_rankings(
+    season: int,
+    weight_class: str,
+    data_dir: str,
+    days_ago: int,
+) -> List[Dict]:
+    """
+    Load rankings from the archive as of N days ago.
+
+    Use the snapshot whose timestamp is the latest one at or before
+    11:59pm on the target day. If none exist, returns an empty list.
+    """
+    archive_root = Path(data_dir) / str(season) / "rankings_archive"
+    if not archive_root.exists():
+        return []
+
+    today = datetime.now().date()
+    target_date = today - timedelta(days=days_ago)
+    target_dt = datetime(
+        target_date.year, target_date.month, target_date.day, 23, 59, 59
+    )
+
+    best_dir: Optional[Path] = None
+    best_ts: Optional[datetime] = None
+    for child in archive_root.iterdir():
+        if not child.is_dir():
+            continue
+        ts = _parse_archive_timestamp(child.name)
+        if ts is None or ts > target_dt:
+            continue
+        if best_ts is None or ts > best_ts:
+            best_ts = ts
+            best_dir = child
+
+    if best_dir is None:
+        return []
+
+    path = best_dir / f"rankings_{weight_class}.json"
+    if not path.exists():
+        return []
+
+    return _load_rankings_from_file(path)
+
+
+def starters_from_rankings(rankings: List[Dict]) -> List[Dict]:
+    """
+    Filter a rankings list down to official starters only, based on the
+    is_starter flag from the rankings JSON.
+    """
+    return [e for e in rankings if e.get("is_starter", True)]
+
+
+def build_delta_map_by_position(
+    current_rankings: List[Dict], historical_rankings: List[Dict]
+) -> Dict[str, object]:
+    """
+    Compute change in position for each wrestler_id present in both lists.
+
+    Positions are 1-based indices within the provided lists (after any
+    starter/all filtering). Positive deltas mean movement UP
+    (e.g., from position 8 to 3 yields +5).
+    """
+    if not historical_rankings:
+        return {}
+
+    prev_pos_by_id: Dict[str, int] = {
+        e["wrestler_id"]: idx + 1 for idx, e in enumerate(historical_rankings)
+    }
+
+    deltas: Dict[str, object] = {}
+    for idx, e in enumerate(current_rankings):
+        wid = e["wrestler_id"]
+        prev_pos = prev_pos_by_id.get(wid)
+        curr_pos = idx + 1
+        if prev_pos is None:
+            # New to the rankings at this weight: mark as "N".
+            deltas[wid] = "N"
+            continue
+        delta = prev_pos - curr_pos
+        if delta != 0:
+            deltas[wid] = delta
+
+    return deltas
+
+
 def load_relationships_and_rankings(
     season: int,
     weight_class: str,
@@ -87,8 +224,18 @@ def load_relationships_and_rankings(
         try:
             with rankings_file.open("r", encoding="utf-8") as rf:
                 rankings_data = json.load(rf)
-            ranking_ids = [r["wrestler_id"] for r in rankings_data.get("rankings", [])]
+            ranking_entries = rankings_data.get("rankings", [])
+            ranking_ids = [r["wrestler_id"] for r in ranking_entries if r.get("wrestler_id")]
             relationships_data["ranking_order"] = ranking_ids
+
+            # Also attach official starter map so build_matrix_data can mark
+            # is_starter correctly for each wrestler.
+            starter_map = {
+                r["wrestler_id"]: bool(r.get("is_starter", True))
+                for r in ranking_entries
+                if r.get("wrestler_id")
+            }
+            relationships_data["starter_map"] = starter_map
         except Exception as e:
             print(f"Warning: Failed to load rankings file {rankings_file}: {e}")
 
@@ -137,6 +284,8 @@ def draw_matrix_top33(
     season: int,
     width: int = 2000,
     starters_only: bool = True,
+    rank_deltas: Optional[Dict[str, int]] = None,
+    recent_days: Optional[int] = None,
 ) -> Image.Image:
     """
     Render the top-33-by-top-33 sub-matrix as an image.
@@ -147,23 +296,9 @@ def draw_matrix_top33(
     matrix: Dict[str, Dict] = matrix_data["matrix"]
 
     if starters_only:
-        # Filter to starters only if that information is present. We treat the
-        # first-ranked wrestler per team as the starter, so the visual
-        # top-33 graphic reflects "one starter per team" at this weight.
-        starters: List[Dict] = []
-        seen_teams = set()
-        for w in wrestlers:
-            team = w.get("team")
-            if not team:
-                starters.append(w)
-                continue
-            if team in seen_teams:
-                # Backup/non-starter at this weight – skip for graphic
-                continue
-            seen_teams.add(team)
-            starters.append(w)
-
-        wrestlers = starters
+        # Filter to official starters only, based on is_starter flag that
+        # build_matrix_data computed using the starter_map from rankings.
+        wrestlers = [w for w in wrestlers if w.get("is_starter", True)]
     n = min(33, len(wrestlers))
     wrestlers = wrestlers[:n]
 
@@ -188,6 +323,7 @@ def draw_matrix_top33(
     name_font = try_load_font(24, bold=True)
     team_font = try_load_font(18, bold=False)
     rank_font = try_load_font(24, bold=True)
+    delta_font = try_load_font(20, bold=True)
     col_font = try_load_font(18, bold=True)
 
     # Title: just the weight (e.g. "141 lbs.")
@@ -219,7 +355,28 @@ def draw_matrix_top33(
             fill=(100, 100, 100),
         )
 
-        text_x = 70
+        # Optional rank delta column between rank and name
+        delta_text = None
+        delta_fill = (0, 0, 0)
+        if rank_deltas is not None:
+            wid = w.get("id")
+            d = rank_deltas.get(wid)
+            if isinstance(d, int) and d != 0:
+                delta_text = f"+{d}" if d > 0 else str(d)
+                delta_fill = (23, 197, 23) if d > 0 else (212, 0, 0)  # #17c517 / #d40000
+            elif isinstance(d, str) and d == "N":
+                delta_text = "N"
+                delta_fill = (23, 197, 23)  # #17c517
+        delta_x = 70
+        if delta_text is not None:
+            draw.text(
+                (delta_x, y_center - 12),
+                delta_text,
+                font=delta_font,
+                fill=delta_fill,
+            )
+
+        text_x = 120
         name = w["name"]
         team = w.get("team", "")
         # Single-line: Name (Team)
@@ -264,6 +421,7 @@ def draw_matrix_top33(
         img.paste(rotated, (px, py), rotated)
 
     # Draw matrix cells
+    today = datetime.now().date()
     for i, w_row in enumerate(wrestlers):
         for j, w_col in enumerate(wrestlers):
             x0 = left_width + j * cell_size
@@ -282,7 +440,33 @@ def draw_matrix_top33(
             severity = cell.get("severity")
             color = color_for_cell(ctype, severity)
 
+            # Base cell rectangle
             draw.rectangle([x0, y0, x1, y1], fill=color, outline=(230, 230, 230))
+
+            # Optional recent-match highlight: if any underlying match is recent
+            # within the configured window (recent_days), draw a thicker border.
+            # We use a solid black border so it stands out clearly even on
+            # strong red/green cells (falls/tech falls).
+            if recent_days is not None and cell.get("matches"):
+                # Reuse the is_recent_date logic implicitly by checking days delta here.
+                recent = False
+                for m in cell["matches"]:
+                    d_str = m.get("date", "")
+                    try:
+                        d = datetime.strptime(d_str, "%m/%d/%Y").date()
+                    except Exception:
+                        continue
+                    delta = today - d
+                    if timedelta(0) <= delta <= timedelta(days=recent_days):
+                        recent = True
+                        break
+                if recent:
+                    border_color = (0, 0, 0)
+                    draw.rectangle(
+                        [x0 + 1, y0 + 1, x1 - 1, y1 - 1],
+                        outline=border_color,
+                        width=4,
+                    )
 
             val = cell.get("value", "")
             if val:
@@ -341,18 +525,51 @@ def main() -> None:
         default=2000,
         help="Size in pixels for the square image (default: 2000).",
     )
+    parser.add_argument(
+        "-delta-days",
+        type=int,
+        required=True,
+        help=(
+            "Number of days back to compare rankings for the delta column "
+            "(compare vs rankings active at 11:59pm N days ago)."
+        ),
+    )
 
     args = parser.parse_args()
 
     season = args.season
     weight_class = str(args.weight_class)
+    data_dir = args.data_dir
+    delta_days = int(args.delta_days)
 
     relationships_data = load_relationships_and_rankings(
-        season, weight_class, data_dir=args.data_dir
+        season, weight_class, data_dir=data_dir
     )
 
     # Build matrix data (we don't need placement notes here)
     matrix_data = build_matrix_data(relationships_data)
+
+    # Load current and historical rankings for delta calculations
+    current_rankings_all = load_current_rankings(season, weight_class, data_dir)
+    historical_rankings_all = load_historical_rankings(
+        season, weight_class, data_dir, delta_days
+    )
+
+    # Build starters-only lists (one per team, first occurrence)
+    current_rankings_starters = starters_from_rankings(current_rankings_all)
+    historical_rankings_starters = starters_from_rankings(historical_rankings_all)
+
+    # Restrict to top 33 for the displayed tables
+    current_rankings_all_33 = current_rankings_all[:33]
+    current_rankings_starters_33 = current_rankings_starters[:33]
+
+    # Delta maps for starters-only and all-wrestlers views
+    delta_map_starters = build_delta_map_by_position(
+        current_rankings_starters_33, historical_rankings_starters
+    )
+    delta_map_all = build_delta_map_by_position(
+        current_rankings_all_33, historical_rankings_all
+    )
 
     # Determine base output path
     if args.output:
@@ -364,9 +581,15 @@ def main() -> None:
 
     base_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Starters-only version (current behavior)
+    # Starters-only version (current behavior) with delta column
     img_starters = draw_matrix_top33(
-        matrix_data, weight_class, season, width=args.size, starters_only=True
+        matrix_data,
+        weight_class,
+        season,
+        width=args.size,
+        starters_only=True,
+        rank_deltas=delta_map_starters,
+        recent_days=delta_days,
     )
     img_starters.save(base_path, format="JPEG", quality=95)
     print(f"Matrix Top-33 graphic (starters only) written to {base_path}")
@@ -376,7 +599,13 @@ def main() -> None:
     all_name = f"{base_path.stem}{suffix}{base_path.suffix}"
     all_path = base_path.with_name(all_name)
     img_all = draw_matrix_top33(
-        matrix_data, weight_class, season, width=args.size, starters_only=False
+        matrix_data,
+        weight_class,
+        season,
+        width=args.size,
+        starters_only=False,
+        rank_deltas=delta_map_all,
+        recent_days=delta_days,
     )
     img_all.save(all_path, format="JPEG", quality=95)
     print(f"Matrix Top-33 graphic (all wrestlers) written to {all_path}")
