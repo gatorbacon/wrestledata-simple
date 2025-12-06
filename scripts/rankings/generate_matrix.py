@@ -242,9 +242,19 @@ def build_matrix_data(
                     info['placement_note'] = note
                 wrestler_list.append((wid, info))
     else:
-        # Fallback: sort by ID for initial ordering
+        # Fallback for first-time seasons (no rankings yet):
+        # sort by winning percentage (desc), then wins (desc), then id.
+        def _win_key(item):
+            wid, winfo = item
+            wins = winfo.get("wins", 0) or 0
+            losses = winfo.get("losses", 0) or 0
+            total = wins + losses
+            win_pct = wins / total if total > 0 else 0.0
+            # Negative for descending sort.
+            return (-win_pct, -wins, wid)
+
         wrestler_list = []
-        for wid, winfo in sorted(wrestlers.items(), key=lambda x: x[0]):
+        for wid, winfo in sorted(wrestlers.items(), key=_win_key):
             info = dict(winfo)
             info['is_unranked'] = True
             note = placement_notes.get(wid)
@@ -1485,6 +1495,8 @@ def generate_matrix_for_weight_class(
     # derive starter status per wrestler (best-ranked per team),
     # honoring any season-wide starter overrides.
     rankings_file = Path(data_dir) / str(season) / f"rankings_{weight_class}.json"
+    # Default: no forced backups unless overrides/rankings exist.
+    force_backup_ids = set()
     if rankings_file.exists():
         try:
             with open(rankings_file, 'r', encoding='utf-8') as rf:
@@ -1495,7 +1507,6 @@ def generate_matrix_for_weight_class(
 
             # Load global starter overrides for this season, if present.
             overrides_path = Path(data_dir) / str(season) / "starter_overrides.json"
-            force_backup_ids = set()
             if overrides_path.exists():
                 try:
                     with open(overrides_path, 'r', encoding='utf-8') as of:
