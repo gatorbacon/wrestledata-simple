@@ -67,6 +67,7 @@ from wrestler_stats import build_wrestler_index, prompt_for_wrestler
 DI_WEIGHT_SI = 0.40
 DI_WEIGHT_DF = 0.45
 DI_WEIGHT_PE = 0.15
+DI_WEIGHT_APD = 0.00  # APD+ weight (currently 0, available for future tuning)
 
 # v2 Specification Constants
 PF7_CAP = 25.0
@@ -855,15 +856,11 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
         # Opponent PF7 this match vs this wrestler.
         opp_matches = matches_by_wrestler.get(opp_id, [])
         opp_this = next(
-            (
-                e
-                for e in opp_matches
-                if e["key"] == key and e.get("opponent_id") == wid
-            ),
+            (e for e in opp_matches if e["key"] == key),
             None,
         )
-        if not opp_this:
-            continue
+        if opp_this is None:
+            raise RuntimeError(f"Missing reverse match entry for key: {key}")
         pa7_this = m["pa7"]  # Points allowed by this wrestler in this match
         pf7_this = opp_this["pd7_for"]  # Opponent's PF7 in this match
 
@@ -1204,7 +1201,8 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
     # APD7 (Adjusted Point Differential per 7 minutes)
     # ------------------------------------------------------------
     # Reuse the all-wrestler metrics helper to obtain APD7 for this wrestler.
-    all_metrics = _compute_plus_metrics_for_all(season, max_rank)
+    # Also get population stats for SI+/DF+/PE+ calculation.
+    all_metrics, population_stats = _compute_plus_metrics_for_all(season, max_rank)
     apd7_for_wrestler = all_metrics.get(wid, {}).get("APD7", 0.0)
     print("APD7 summary:")
     print(f"  APD7 (avg over matches): {apd7_for_wrestler:+6.2f}")
@@ -1213,148 +1211,50 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
     # ------------------------------------------------------------
     # SI+, DF+, PE+ — standardized indexes based on APS7/APG7/APR
     # ------------------------------------------------------------
-
-    from statistics import mean as _mean, pstdev as _pstdev
-
-    def _mean_std(values: List[float]) -> tuple[float, float]:
-        vals = [float(v) for v in values if v is not None]
-        if not vals:
-            return 0.0, 1.0
-        mu = _mean(vals)
-        sigma = _pstdev(vals)
-        if sigma <= 0.0:
-            sigma = 1.0
-        return mu, sigma
-
-    # APS7 / APG7 population moments across ALL wrestlers (not just starters).
-    aps_vals_pop: List[float] = []
-    apg_vals_pop: List[float] = []
-
-    for wid_pop, mlist_pop in matches_by_wrestler.items():
-        contribs_off: List[float] = []
-        contribs_def: List[float] = []
-        for m_pop in mlist_pop:
-            key_pop = m_pop["key"]
-            opp_id_pop = m_pop["opponent_id"]
-            weight_pop = m_pop.get("weight_class", "")
-            pd7_for_pop = m_pop["pd7_for"]
-
-            opp_matches_pop = matches_by_wrestler.get(opp_id_pop, [])
-            other_sides_pop = [e for e in opp_matches_pop if e["key"] != key_pop]
-
-            # APS7 side (offense).
-            if other_sides_pop:
-                pa_raw_pop = sum(e["pa7"] for e in other_sides_pop) / float(
-                    len(other_sides_pop)
-                )
-                n_pop = len(other_sides_pop)
-            else:
-                pa_raw_pop = league_pa7
-                n_pop = 0
-
-            pa_adj_pop = (
-                (pa_raw_pop * n_pop + league_pa7 * K) / float(n_pop + K)
-                if (n_pop + K) > 0
-                else league_pa7
-            )
-            contribs_off.append(pd7_for_pop - pa_adj_pop)
-
-            # APG7 side (defense) — need opponent PF7 this match.
-            # Use match key only; opponent_id orientation is not reliable.
-            opp_this_pop = next(
-                (e for e in opp_matches_pop if e["key"] == key_pop),
-                None,
-            )
-            if opp_this_pop is None:
-                raise RuntimeError(f"Missing reverse match entry for key: {key_pop}")
-            pf7_this_pop = opp_this_pop["pd7_for"]
-            other_off_pop = [e for e in opp_matches_pop if e["key"] != key_pop]
-            if other_off_pop:
-                pf_raw_pop = sum(e["pd7_for"] for e in other_off_pop) / float(
-                    len(other_off_pop)
-                )
-                n_off_pop = len(other_off_pop)
-            else:
-                pf_raw_pop = league_pf7
-                n_off_pop = 0
-
-            pf_adj_pop = (
-                (pf_raw_pop * n_off_pop + league_pf7 * K) / float(n_off_pop + K)
-                if (n_off_pop + K) > 0
-                else league_pf7
-            )
-            contribs_def.append(pf_adj_pop - pf7_this_pop)
-
-        if contribs_off:
-            aps_vals_pop.append(sum(contribs_off) / float(len(contribs_off)))
-        if contribs_def:
-            apg_vals_pop.append(sum(contribs_def) / float(len(contribs_def)))
-
-    mean_APS7, std_APS7 = _mean_std(aps_vals_pop)
-    mean_APG7, std_APG7 = _mean_std(apg_vals_pop)
-
-    # APR population moments from pin histories for all wrestlers.
-    apr_by_id: Dict[str, float] = {}
-    for wid_pop, plist in pin_matches_by_wrestler.items():
-        contribs_pop: List[float] = []
-        for m_pop in plist:
-            key_pop = m_pop["key"]
-            opp_id_pop = m_pop["opponent_id"]
-            pin_outcome_pop = 1.0 if m_pop.get("is_fall_win") else 0.0
-
-            opp_hist_pop = pin_matches_by_wrestler.get(opp_id_pop, [])
-            other_pop = [e for e in opp_hist_pop if e["key"] != key_pop]
-            if other_pop:
-                n_pop = len(other_pop)
-                pin_allow_raw_pop = sum(
-                    1.0 for e in other_pop if e.get("is_fall_loss")
-                ) / float(n_pop)
-            else:
-                n_pop = 0
-                pin_allow_raw_pop = LPR
-
-            pin_allow_adj_pop = (
-                (pin_allow_raw_pop * n_pop + LPR * k_pin) / float(n_pop + k_pin)
-                if (n_pop + k_pin) > 0
-                else LPR
-            )
-            contribs_pop.append(pin_outcome_pop - pin_allow_adj_pop)
-
-        if contribs_pop:
-            apr_by_id[wid_pop] = sum(contribs_pop) / float(len(contribs_pop))
-
-    apr_vals_pop = list(apr_by_id.values())
-    mean_APR, std_APR = _mean_std(apr_vals_pop)
+    # Use population stats from _compute_plus_metrics_for_all (v2-weighted population)
+    # instead of recomputing with different logic.
+    aps7_mean = population_stats["APS7_mean"]
+    aps7_std = population_stats["APS7_std"]
+    apg7_mean = population_stats["APG7_mean"]
+    apg7_std = population_stats["APG7_std"]
+    apr_mean = population_stats["APR_mean"]
+    apr_std = population_stats["APR_std"]
+    apd7_mean = population_stats["APD7_mean"]
+    apd7_std = population_stats["APD7_std"]
 
     # Guard: if wrestler not in population sets, treat their metrics as 0.
     aps7_for_plus = aps7_final
     apg7_for_plus = apg7_final
     apr_for_plus = apr_final
+    apd7_for_plus = apd7_for_wrestler
 
     # Z-scores
     # Scoring: higher APS7 is better.
-    z_SI = (aps7_for_plus - mean_APS7) / std_APS7 if std_APS7 > 0 else 0.0
+    z_SI = (aps7_for_plus - aps7_mean) / aps7_std if aps7_std > 0 else 0.0
     # Defense: higher APG7 (more positive normalized points prevented) is better.
     # Use wrestler - league so positive z_DF means better-than-average defense.
-    z_DF = (apg7_for_plus - mean_APG7) / std_APG7 if std_APG7 > 0 else 0.0
+    z_DF = (apg7_for_plus - apg7_mean) / apg7_std if apg7_std > 0 else 0.0
     # Pins: higher APR is better.
-    z_PE = (apr_for_plus - mean_APR) / std_APR if std_APR > 0 else 0.0
+    z_PE = (apr_for_plus - apr_mean) / apr_std if apr_std > 0 else 0.0
+    # Point Differential: higher APD7 is better.
+    z_APD = (apd7_for_plus - apd7_mean) / apd7_std if apd7_std > 0 else 0.0
 
     # + metrics
     SI_plus = 100.0 + 10.0 * z_SI
     DF_plus = 100.0 + 10.0 * z_DF
     PE_plus = 100.0 + 10.0 * z_PE
+    APD_plus = 100.0 + 10.0 * z_APD
 
     print("SI+/DF+/PE+ (standardized indexes):")
     print()
     print("  Scoring (SI+):")
     print(f"    APS7_wrestler = {aps7_for_plus:+6.2f}")
     print(
-        f"    APS7_league   = {mean_APS7:+6.2f}, std = {std_APS7:5.2f}"
+        f"    APS7_league   = {aps7_mean:+6.2f}, std = {aps7_std:5.2f}"
     )
     print(
         f"    z_SI = (APS7_wrestler - APS7_league) / std"
-        f" = ({aps7_for_plus:+6.2f} - {mean_APS7:+6.2f}) / {std_APS7:5.2f}"
+        f" = ({aps7_for_plus:+6.2f} - {aps7_mean:+6.2f}) / {aps7_std:5.2f}"
         f" = {z_SI:+5.2f}"
     )
     print(f"    SI+  = 100 + 10 * z_SI = {SI_plus:6.1f}")
@@ -1363,11 +1263,11 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
     print("  Defense (DF+):")
     print(f"    APG7_wrestler = {apg7_for_plus:+6.2f}")
     print(
-        f"    APG7_league   = {mean_APG7:+6.2f}, std = {std_APG7:5.2f}"
+        f"    APG7_league   = {apg7_mean:+6.2f}, std = {apg7_std:5.2f}"
     )
     print(
         f"    z_DF = (APG7_wrestler - APG7_league) / std"
-        f" = ({apg7_for_plus:+6.2f} - {mean_APG7:+6.2f}) / {std_APG7:5.2f}"
+        f" = ({apg7_for_plus:+6.2f} - {apg7_mean:+6.2f}) / {apg7_std:5.2f}"
         f" = {z_DF:+5.2f}"
     )
     print(f"    DF+  = 100 + 10 * z_DF = {DF_plus:6.1f}")
@@ -1376,14 +1276,27 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
     print("  Pin Efficiency (PE+):")
     print(f"    APR_wrestler  = {apr_for_plus:+6.3f}")
     print(
-        f"    APR_league    = {mean_APR:+6.3f}, std = {std_APR:5.3f}"
+        f"    APR_league    = {apr_mean:+6.3f}, std = {apr_std:5.3f}"
     )
     print(
         f"    z_PE = (APR_wrestler - APR_league) / std"
-        f" = ({apr_for_plus:+6.3f} - {mean_APR:+6.3f}) / {std_APR:5.3f}"
+        f" = ({apr_for_plus:+6.3f} - {apr_mean:+6.3f}) / {apr_std:5.3f}"
         f" = {z_PE:+5.2f}"
     )
     print(f"    PE+  = 100 + 10 * z_PE = {PE_plus:6.1f}")
+    print()
+
+    print("  Point Differential (APD+):")
+    print(f"    APD7_wrestler = {apd7_for_plus:+6.2f}")
+    print(
+        f"    APD7_league   = {apd7_mean:+6.2f}, std = {apd7_std:5.2f}"
+    )
+    print(
+        f"    z_APD = (APD7_wrestler - APD7_league) / std"
+        f" = ({apd7_for_plus:+6.2f} - {apd7_mean:+6.2f}) / {apd7_std:5.2f}"
+        f" = {z_APD:+5.2f}"
+    )
+    print(f"    APD+ = {APD_plus:6.1f}")
     print()
 
     # ------------------------------------------------------------
@@ -1393,20 +1306,23 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
         DI_WEIGHT_SI * SI_plus
         + DI_WEIGHT_DF * DF_plus
         + DI_WEIGHT_PE * PE_plus
+        + DI_WEIGHT_APD * APD_plus
     )
 
     print("  Dominance Index (DI_raw):")
     print(
         f"    Weights: w1(SI+)={DI_WEIGHT_SI:.2f}, "
-        f"w2(DF+)={DI_WEIGHT_DF:.2f}, w3(PE+)={DI_WEIGHT_PE:.2f}"
+        f"w2(DF+)={DI_WEIGHT_DF:.2f}, w3(PE+)={DI_WEIGHT_PE:.2f}, "
+        f"w4(APD+)={DI_WEIGHT_APD:.2f}"
     )
     print(
-        "    DI_raw = w1*SI+ + w2*DF+ + w3*PE+"
+        "    DI_raw = w1*SI+ + w2*DF+ + w3*PE+ + w4*APD+"
     )
     print(
         f"           = {DI_WEIGHT_SI:.2f}*{SI_plus:6.1f}"
         f" + {DI_WEIGHT_DF:.2f}*{DF_plus:6.1f}"
         f" + {DI_WEIGHT_PE:.2f}*{PE_plus:6.1f}"
+        f" + {DI_WEIGHT_APD:.2f}*{APD_plus:6.1f}"
         f" = {DI_raw:6.1f}"
     )
     print()
@@ -1414,13 +1330,19 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
 
 def _compute_plus_metrics_for_all(
     season: int, max_rank: int
-) -> Dict[str, Dict[str, float]]:
+) -> Tuple[Dict[str, Dict[str, float]], Dict[str, float]]:
     """
     Compute APS7/APG7/APR and corresponding SI+/DF+/PE+/DI_raw for ALL wrestlers.
 
     This mirrors the per-wrestler logic used in _run_wrestler_mode, but returns
     a dictionary keyed by wrestler_id for use in reports (e.g., weight-class
     top-10 tables).
+    
+    Returns:
+        Tuple of (metrics_by_id, population_stats) where:
+        - metrics_by_id: Dict mapping wrestler_id to metrics dict
+        - population_stats: Dict with keys "APS7_mean", "APS7_std", "APG7_mean", 
+          "APG7_std", "APR_mean", "APR_std"
     """
     # Build match structures for all wrestlers (no rank filter).
     (
@@ -1558,6 +1480,7 @@ def _compute_plus_metrics_for_all(
     apg7_match_count_by_id: Dict[str, int] = {}  # Count of matches contributing to APG7
     effective_matches_APS7_by_id: Dict[str, float] = {}  # Effective match weights for APS7
     effective_matches_APG7_by_id: Dict[str, float] = {}  # Effective match weights for APG7
+    effective_matches_APR_by_id: Dict[str, float] = {}  # Effective match weights for APR
 
     # v2: Compute APS7/APG7/APD7 using Weight-Q baselines, shrinkage, and match weights
     for wid_pop, mlist_pop in matches_by_wrestler.items():
@@ -1598,33 +1521,34 @@ def _compute_plus_metrics_for_all(
             opp_matches_pop = matches_by_wrestler.get(opp_id_pop, [])
             other_sides_pop = [e for e in opp_matches_pop if e["key"] != key_pop]
 
-            # Get opponent's rank within weight class
-            opp_rank_in_weight = None
-            total_ranked_opp = _get_total_ranked_in_weight(season, weight_pop)
-            if weight_pop:
-                rankings_path = Path("mt/rankings_data") / str(season) / f"rankings_{weight_pop}.json"
-                if rankings_path.exists():
-                    try:
-                        with rankings_path.open("r", encoding="utf-8") as f:
-                            data = json.load(f)
-                        rankings = data.get("rankings", [])
-                        for r in rankings:
-                            wid = str(r.get("wrestler_id") or "")
-                            if wid == opp_id_pop:
-                                opp_rank_in_weight = int(r.get("rank", 10**9))
-                                break
-                    except Exception:
-                        pass
-
-            # Get opponent quintile and Weight-Q baselines
-            opp_quintile, pf7_baseline_q, pa7_baseline_q, _ = _get_opponent_quintile_and_baselines(
-                season, max_rank, opp_id_pop, weight_pop, total_ranked_opp, weight_q_baselines, league_pf7, league_pa7
+            # Step 1: Get opponent quintile and Weight-Q baselines to determine opponent's TRUE ranked weight class
+            opp_quintile, pf7_baseline_q, pa7_baseline_q, opp_ranked_weight = _get_opponent_quintile_and_baselines(
+                season, max_rank, opp_id_pop, weight_pop, _get_total_ranked_in_weight(season, weight_pop), weight_q_baselines, league_pf7, league_pa7
             )
             
             # If baselines not found in cache, use league averages
             if pf7_baseline_q == 0.0 and pa7_baseline_q == 0.0:
                 pf7_baseline_q = league_pf7
                 pa7_baseline_q = league_pa7
+
+            # Step 2: Compute total ranked IN THE OPPONENT'S TRUE RANKED WEIGHT CLASS
+            total_ranked_in_ranked_weight = _get_total_ranked_in_weight(season, opp_ranked_weight)
+
+            # Step 3: Look up opponent's rank IN THE OPPONENT'S TRUE RANKED WEIGHT CLASS
+            opp_rank_in_weight = None
+            if opp_ranked_weight:
+                rankings_path = Path("mt/rankings_data") / str(season) / f"rankings_{opp_ranked_weight}.json"
+                if rankings_path.exists():
+                    try:
+                        with rankings_path.open("r", encoding="utf-8") as f:
+                            rankings_json = json.load(f)
+                        rankings = rankings_json.get("rankings", [])
+                        for r in rankings:
+                            if str(r.get("wrestler_id") or "") == opp_id_pop:
+                                opp_rank_in_weight = int(r.get("rank", 10**9))
+                                break
+                    except Exception:
+                        pass
 
             # v2: Shrinkage for opponent PA7 (for APS7)
             n_opp_pa = len(other_sides_pop)
@@ -1650,9 +1574,9 @@ def _compute_plus_metrics_for_all(
                 pf7_raw_opp = sum(e["pd7_for"] for e in other_sides_pop) / float(n_opp_pf)
                 pf7_adj_opp = (pf7_raw_opp * n_opp_pf + pf7_baseline_q * SHRINK_K) / float(n_opp_pf + SHRINK_K)
 
-            # v2: Calculate match weight
+            # Step 4: Calculate match weight using opponent's TRUE ranked weight class
             match_weight = _calculate_match_weight(
-                opp_quintile, opp_rank_in_weight, total_ranked_opp, n_opp_pa
+                opp_quintile, opp_rank_in_weight, total_ranked_in_ranked_weight, n_opp_pa
             )
 
             # v2: Per-match contributions
@@ -1810,27 +1734,29 @@ def _compute_plus_metrics_for_all(
             opp_hist_pop = pin_matches_all.get(opp_id_pop, [])
             other_pop = [e for e in opp_hist_pop if e["key"] != key_pop]
             
-            # Get opponent rank and quintile for match weight
+            # Step 1: Get opponent quintile and Weight-Q baselines to determine opponent's TRUE ranked weight class
+            opp_quintile, _, _, opp_ranked_weight = _get_opponent_quintile_and_baselines(
+                season, max_rank, opp_id_pop, weight_pop, _get_total_ranked_in_weight(season, weight_pop), weight_q_baselines, league_pf7, league_pa7
+            )
+            
+            # Step 2: Compute total ranked IN THE OPPONENT'S TRUE RANKED WEIGHT CLASS
+            total_ranked_in_ranked_weight = _get_total_ranked_in_weight(season, opp_ranked_weight)
+
+            # Step 3: Look up opponent's rank IN THE OPPONENT'S TRUE RANKED WEIGHT CLASS
             opp_rank_in_weight = None
-            total_ranked_opp = _get_total_ranked_in_weight(season, weight_pop)
-            if weight_pop:
-                rankings_path = Path("mt/rankings_data") / str(season) / f"rankings_{weight_pop}.json"
+            if opp_ranked_weight:
+                rankings_path = Path("mt/rankings_data") / str(season) / f"rankings_{opp_ranked_weight}.json"
                 if rankings_path.exists():
                     try:
                         with rankings_path.open("r", encoding="utf-8") as f:
-                            data = json.load(f)
-                        rankings = data.get("rankings", [])
+                            rankings_json = json.load(f)
+                        rankings = rankings_json.get("rankings", [])
                         for r in rankings:
-                            wid = str(r.get("wrestler_id") or "")
-                            if wid == opp_id_pop:
+                            if str(r.get("wrestler_id") or "") == opp_id_pop:
                                 opp_rank_in_weight = int(r.get("rank", 10**9))
                                 break
                     except Exception:
                         pass
-            
-            opp_quintile, _, _, _ = _get_opponent_quintile_and_baselines(
-                season, max_rank, opp_id_pop, weight_pop, total_ranked_opp, weight_q_baselines, league_pf7, league_pa7
-            )
             
             if other_pop:
                 n_pop = len(other_pop)
@@ -1847,9 +1773,9 @@ def _compute_plus_metrics_for_all(
                 else LPR_all
             )
             
-            # v2: Calculate match weight (same as for APS7/APG7)
+            # Step 4: Calculate match weight using opponent's TRUE ranked weight class
             match_weight = _calculate_match_weight(
-                opp_quintile, opp_rank_in_weight, total_ranked_opp, n_pop
+                opp_quintile, opp_rank_in_weight, total_ranked_in_ranked_weight, n_pop
             )
             
             apr_contrib = pin_outcome_pop - pin_allow_adj_pop
@@ -1861,6 +1787,7 @@ def _compute_plus_metrics_for_all(
             apr_val = apr_weighted_sum / apr_weight_sum
             apr_by_id[wid_pop] = apr_val
             apr_vals_pop.append(apr_val)
+            effective_matches_APR_by_id[wid_pop] = apr_weight_sum  # NEW
 
     from statistics import mean as _mean, pstdev as _pstdev
 
@@ -1879,6 +1806,18 @@ def _compute_plus_metrics_for_all(
     mean_APR, std_APR = _mean_std(apr_vals_pop)
     # APD7 league moments are available if needed in future:
     mean_APD7, std_APD7 = _mean_std(apd_vals_pop)
+
+    # Store population stats for reuse in _run_wrestler_mode
+    population_stats = {
+        "APS7_mean": mean_APS7,
+        "APS7_std": std_APS7,
+        "APG7_mean": mean_APG7,
+        "APG7_std": std_APG7,
+        "APR_mean": mean_APR,
+        "APR_std": std_APR,
+        "APD7_mean": mean_APD7,
+        "APD7_std": std_APD7,
+    }
 
     metrics_by_id: Dict[str, Dict[str, float]] = {}
     for wid in set(
@@ -1899,14 +1838,17 @@ def _compute_plus_metrics_for_all(
         z_SI = (aps - mean_APS7) / std_APS7 if std_APS7 > 0 else 0.0
         z_DF = (apg - mean_APG7) / std_APG7 if std_APG7 > 0 else 0.0
         z_PE = (apr - mean_APR) / std_APR if std_APR > 0 else 0.0
+        z_APD = (apd - mean_APD7) / std_APD7 if std_APD7 > 0 else 0.0
 
         SI_plus = 100.0 + 10.0 * z_SI
         DF_plus = 100.0 + 10.0 * z_DF
         PE_plus = 100.0 + 10.0 * z_PE
+        APD_plus = 100.0 + 10.0 * z_APD
         DI_raw = (
             DI_WEIGHT_SI * SI_plus
             + DI_WEIGHT_DF * DF_plus
             + DI_WEIGHT_PE * PE_plus
+            + DI_WEIGHT_APD * APD_plus
         )
 
         # Get match counts (use max of APS7/APG7 counts since they should be the same)
@@ -1915,6 +1857,7 @@ def _compute_plus_metrics_for_all(
         valid_matches = max(aps7_matches, apg7_matches)  # Should be same, but use max for safety
         effective_matches_APS7 = effective_matches_APS7_by_id.get(wid, 0.0)  # NEW
         effective_matches_APG7 = effective_matches_APG7_by_id.get(wid, 0.0)  # NEW
+        effective_matches_APR = effective_matches_APR_by_id.get(wid, 0.0)  # NEW
         
         metrics_by_id[wid] = {
             "APS7": aps,
@@ -1930,9 +1873,10 @@ def _compute_plus_metrics_for_all(
             "valid_matches": valid_matches,  # Number of matches that contributed to metrics
             "effective_matches_APS7": effective_matches_APS7,  # NEW
             "effective_matches_APG7": effective_matches_APG7,  # NEW
+            "effective_matches_APR": effective_matches_APR,  # NEW
         }
 
-    return metrics_by_id
+    return metrics_by_id, population_stats
 
 
 def get_quintile_metric_summary(
@@ -1976,7 +1920,7 @@ def get_quintile_metric_summary(
         raise ValueError("quintile must be in 1..5")
 
     if metrics_by_id is None:
-        metrics_by_id = _compute_plus_metrics_for_all(season, max_rank)
+        metrics_by_id, _ = _compute_plus_metrics_for_all(season, max_rank)
 
     rankings_path = Path("mt/rankings_data") / str(season) / f"rankings_{weight_class}.json"
     if not rankings_path.exists():
@@ -2396,7 +2340,7 @@ def compute_anppm(
     """
     # v2: Use _compute_plus_metrics_for_all to get v2 metrics for all wrestlers
     # Then filter to starter-only ranked wrestlers within max_rank
-    metrics_by_id = _compute_plus_metrics_for_all(season, max_rank)
+    metrics_by_id, _ = _compute_plus_metrics_for_all(season, max_rank)
     
     # Build starter-only rank map: wrestler_id -> starter-only rank (best across weights)
     rankings_dir = Path("mt/rankings_data") / str(season)
@@ -2518,6 +2462,7 @@ def compute_anppm(
     # v2: Build results from v2 metrics, filtered to starters with enough matches
     ranked_results: List[Dict] = []
     def_results: List[Dict] = []
+    apr_results: List[Dict] = []
     def_debug_by_wrestler: Dict[str, List[Dict]] = {}
     total_matches_used = sum(valid_match_counts.get(wid, 0) for wid in rank_by_id.keys())
     matches_using_weight_avg = 0  # v2 uses Weight-Q baselines, not weight-class averages
@@ -2539,6 +2484,7 @@ def compute_anppm(
         aps7 = m.get("APS7", 0.0)  # v2: APS7
         apg7 = m.get("APG7", 0.0)  # v2: APG7
         apd7 = m.get("APD7", 0.0)  # v2: APD7
+        apr = m.get("APR", 0.0)  # v2: APR
         effective_matches_APS7 = m.get("effective_matches_APS7", 0.0)  # NEW
         effective_matches_APG7 = m.get("effective_matches_APG7", 0.0)  # NEW
         
@@ -2573,6 +2519,38 @@ def compute_anppm(
 
     # Sort defensive APG7 (descending: higher = better defense vs baseline).
     def_results.sort(key=lambda r: (r["npa7"], r["matches"]), reverse=True)
+
+    # Build APR results list
+    for wid, rank in rank_by_id.items():
+        if wid not in metrics_by_id:
+            continue
+        
+        match_count = valid_match_counts.get(wid, 0)
+        if match_count < threshold:
+            continue
+        
+        w_info = wrestler_info.get(wid, {"name": f"ID:{wid}", "team": "Unknown", "weight_class": ""})
+        name = w_info["name"]
+        team = w_info["team"]
+        weight_class = w_info.get("weight_class", "")
+        
+        m = metrics_by_id[wid]
+        apr = m.get("APR", 0.0)  # v2: APR
+        effective_matches_APR = m.get("effective_matches_APR", 0.0)  # NEW
+        
+        apr_results.append({
+            "wrestler_id": wid,
+            "name": name,
+            "team": team,
+            "rank": rank,
+            "weight_class": weight_class,
+            "apr": apr,
+            "matches": match_count,
+            "effective_matches_APR": effective_matches_APR,  # NEW
+        })
+
+    # Sort APR (descending: higher = better pin efficiency).
+    apr_results.sort(key=lambda r: (r["apr"], r["matches"]), reverse=True)
 
     # Combined APD7 (adjusted point differential per 7 minutes) = APS7 + APG7 (v2).
     def_by_id = {r["wrestler_id"]: r for r in def_results}
@@ -2609,6 +2587,7 @@ def compute_anppm(
         ranked_results,
         def_results,
         npd_results,
+        apr_results,
         def_debug_by_wrestler,
         total_matches_used,
         excluded_invalid_matches,
@@ -2879,7 +2858,7 @@ def write_html_report(
     # We reuse the all-wrestler metrics helper and, when available, use
     # global rankings to assign quartiles for coloring. Unranked wrestlers
     # fall into the bottom quartile by default.
-    all_metrics = _compute_plus_metrics_for_all(season, max_rank)
+    all_metrics, _ = _compute_plus_metrics_for_all(season, max_rank)
     try:
         rank_by_id_all = _load_rank_map(season)
     except Exception:
@@ -3334,6 +3313,7 @@ def print_results(
     ranked_results: List[Dict],
     def_results: List[Dict],
     npd_results: List[Dict],
+    apr_results: List[Dict],
     def_debug_by_wrestler: Dict[str, List[Dict]],
     total_matches_used: int,
     excluded_invalid_matches: int,
@@ -3358,6 +3338,7 @@ def print_results(
     ranked_view = _filter_team(ranked_results)
     def_view = _filter_team(def_results)
     npd_view = _filter_team(npd_results)
+    apr_view = _filter_team(apr_results)
 
     if team_filter_normalized:
         label = team_filter
@@ -3580,6 +3561,43 @@ def print_results(
                 f"(APS7={npf7:+.2f}, APG7={npa7:+.2f}, off {m_off}, def {m_def} matches)"
             )
 
+        # Top 40 by APR (Adjusted Pin Rate)
+        print(
+            "\nTop 40 wrestlers by APR (adjusted pin rate) (higher = better pin efficiency):\n"
+        )
+        top_apr = apr_results[:40]
+        for idx, r in enumerate(top_apr, start=1):
+            name = r["name"]
+            team = r["team"]
+            rank = r["rank"]
+            weight_class = r.get("weight_class", "")
+            apr = r["apr"]
+            matches = r["matches"]
+            accumulated_wt = r.get("effective_matches_APR", 0.0)  # NEW
+            print(
+                f"{idx}. #{rank:2d} {name} ({team}) {weight_class} - APR {apr:+.3f} "
+                f"({matches} valid matches) / accumulated_wt: {accumulated_wt:.2f}"
+            )
+
+        # Bottom 10 by APR (worst pin efficiency)
+        print(
+            "\nBottom 10 wrestlers by APR (adjusted pin rate) (lower = weaker pin efficiency):\n"
+        )
+        bottom_apr = list(reversed(apr_results))[:10]
+        bottom_apr.reverse()  # show worst (most negative APR) first
+        for idx, r in enumerate(bottom_apr, start=1):
+            name = r["name"]
+            team = r["team"]
+            rank = r["rank"]
+            weight_class = r.get("weight_class", "")
+            apr = r["apr"]
+            matches = r["matches"]
+            accumulated_wt = r.get("effective_matches_APR", 0.0)  # NEW
+            print(
+                f"{idx}. #{rank:2d} {name} ({team}) {weight_class} - APR {apr:+.3f} "
+                f"({matches} valid matches) / accumulated_wt: {accumulated_wt:.2f}"
+            )
+
     # NOTE: Detailed APG7 defensive debug output has been disabled for now.
     # The implementation is preserved below for potential future use.
     #
@@ -3618,7 +3636,7 @@ def main() -> None:
 
     if args.quintiles:
         # Precompute metrics once for all wrestlers.
-        metrics_by_id = _compute_plus_metrics_for_all(season, max_rank)
+        metrics_by_id, _ = _compute_plus_metrics_for_all(season, max_rank)
         weight_classes = ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]
         print(
             f"{'Weight-Q':<10} {'Count':>6} "
@@ -3652,7 +3670,7 @@ def main() -> None:
     # If a weight filter is provided without -wrestler, print a DI+ top-10
     # table for that weight class instead of the global APS7/APG7/APD7 report.
     if weight_filter:
-        metrics_by_id = _compute_plus_metrics_for_all(season, max_rank)
+        metrics_by_id, _ = _compute_plus_metrics_for_all(season, max_rank)
         rankings_dir = Path("mt/rankings_data") / str(season)
         weight_str = str(weight_filter)
         rankings_path = rankings_dir / f"rankings_{weight_str}.json"
@@ -3717,6 +3735,7 @@ def main() -> None:
         ranked_results,
         def_results,
         npd_results,
+        apr_results,
         def_debug_by_wrestler,
         total_used,
         excluded_invalid,
@@ -3806,6 +3825,7 @@ def main() -> None:
         ranked_results,
         def_results,
         npd_results,
+        apr_results,
         def_debug_by_wrestler,
         total_used,
         excluded_invalid,
@@ -3839,6 +3859,129 @@ def main() -> None:
         team_filter,
     )
     print(f"HTML report written to: {html_output}")
+
+    # Export metrics to JSON file
+    _export_metrics_json(season, max_rank)
+
+
+def _export_metrics_json(season: int, max_rank: int) -> None:
+    """
+    Export metrics for top-ranked wrestlers to JSON file.
+    
+    Creates a JSON file with SI+, DF+, PE+, APD+, DI+, APS7, APG7, APR, APD7,
+    and accumulated match weights for wrestlers ranked <= max_rank in each weight class.
+    """
+    # Get all metrics and population stats (same as used in compute_anppm)
+    metrics_by_id, population_stats = _compute_plus_metrics_for_all(season, max_rank)
+    
+    # Extract population stats for APD+ calculation
+    apd7_mean = population_stats.get("APD7_mean", 0.0)
+    apd7_std = population_stats.get("APD7_std", 1.0)
+    
+    # Build export data structure
+    export_data = {
+        "season": season,
+        "max_rank": max_rank,
+        "weights": {}
+    }
+    
+    # Load rankings files for each weight class
+    rankings_dir = Path("mt/rankings_data") / str(season)
+    if not rankings_dir.exists():
+        print(f"[WARNING] Rankings directory not found: {rankings_dir}")
+        return
+    
+    weight_classes = ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]
+    
+    for weight in weight_classes:
+        export_data["weights"][weight] = []
+        rankings_path = rankings_dir / f"rankings_{weight}.json"
+        
+        if not rankings_path.exists():
+            continue
+        
+        try:
+            with rankings_path.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception as e:
+            print(f"[WARNING] Could not read {rankings_path}: {e}")
+            continue
+        
+        rankings = data.get("rankings", [])
+        
+        for r in rankings:
+            rank = r.get("rank")
+            if rank is None or rank > max_rank:
+                continue
+            
+            wid = str(r.get("wrestler_id") or "")
+            if not wid or wid == "null":
+                continue
+            
+            # Get metrics for this wrestler
+            if wid not in metrics_by_id:
+                continue
+            
+            m = metrics_by_id[wid]
+            
+            # Extract all metrics
+            si_plus = m.get("SI_plus", 0.0)
+            df_plus = m.get("DF_plus", 0.0)
+            pe_plus = m.get("PE_plus", 0.0)
+            di_raw = m.get("DI_raw", 0.0)
+            aps7 = m.get("APS7", 0.0)
+            apg7 = m.get("APG7", 0.0)
+            apr = m.get("APR", 0.0)
+            apd7 = m.get("APD7", 0.0)
+            sum_weight_APS7 = m.get("effective_matches_APS7", 0.0)
+            sum_weight_APG7 = m.get("effective_matches_APG7", 0.0)
+            valid_match_count = m.get("valid_matches", 0)
+            
+            # Calculate APD+ (same formula as in wrestler mode and _compute_plus_metrics_for_all)
+            z_APD = (apd7 - apd7_mean) / apd7_std if apd7_std > 0 else 0.0
+            apd_plus = 100.0 + 10.0 * z_APD
+            
+            # Build wrestler entry
+            wrestler_entry = {
+                "rank": int(rank),
+                "wrestler_id": wid,
+                "name": r.get("name", "Unknown"),
+                "team": r.get("team", "Unknown"),
+                "SI+": round(si_plus, 1),
+                "DF+": round(df_plus, 1),
+                "PE+": round(pe_plus, 1),
+                "APD+": round(apd_plus, 1),
+                "DI+": round(di_raw, 1),
+                "APS7": round(aps7, 2),
+                "APG7": round(apg7, 2),
+                "APR": round(apr, 3),
+                "APD7": round(apd7, 2),
+                "sum_weight_APS7": round(sum_weight_APS7, 2),
+                "sum_weight_APG7": round(sum_weight_APG7, 2),
+                "matches": valid_match_count
+            }
+            
+            export_data["weights"][weight].append(wrestler_entry)
+        
+        # Sort by rank within each weight class
+        export_data["weights"][weight].sort(key=lambda x: x["rank"])
+    
+    # Create output directory
+    output_dir = Path("mt/metrics_export") / f"season_{season}"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Write JSON file
+    output_path = output_dir / f"metrics_top{max_rank}.json"
+    try:
+        with output_path.open("w", encoding="utf-8") as f:
+            json.dump(export_data, f, indent=2)
+        print(f"[INFO] Metrics export written to: {output_path}")
+        
+        # Debug summary
+        total_wrestlers = sum(len(v) for v in export_data["weights"].values())
+        print(f"[DEBUG] Exported {total_wrestlers} wrestler records across {len([w for w in weight_classes if export_data['weights'].get(w)])} weight classes")
+    except Exception as e:
+        print(f"[ERROR] Failed to write metrics export: {e}")
 
 
 if __name__ == "__main__":
