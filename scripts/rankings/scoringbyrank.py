@@ -405,7 +405,7 @@ def plot_rank_tier_boxplots(
                         offsets = np.linspace(-0.6, 0.6, len(rows))
                         x_offset = -0.6
                         ha = "right"
-
+  
                     for idx, row in enumerate(rows):
                         y_val = row.avg_points
                         label = f"{row.name} ({y_val:.1f} ppm)"
