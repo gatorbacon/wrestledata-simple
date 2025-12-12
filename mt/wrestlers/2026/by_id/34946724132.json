@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34946724132",
+  "name": "Brian Finnerty",
+  "team": "West Virginia",
+  "team_slug": "west_virginia",
+  "team_rank": 13,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 132,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 3.67,
+    "pd7": -0.67,
+    "si_plus": 84.1,
+    "df_plus": 100.5,
+    "apr_plus": 97.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34944022132",
+      "opponent_rank": 176,
+      "opponent_name": "Chris Sanchez",
+      "method": "Dec 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34944009132",
+      "opponent_rank": 98,
+      "opponent_name": "Ethan Barr",
+      "method": "MD 8-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944009132",
+      "opponent_name": "Ethan Barr",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 174,
+      "opponent_rank": 98,
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Kent State Open 1"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944022132",
+      "opponent_name": "Chris Sanchez",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 174,
+      "opponent_rank": 176,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Kent State Open 1"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34946735132",
+      "opponent_name": "Eric Thompson",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 174,
+      "opponent_rank": 180,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Kent State Open 1"
+    }
+  ]
+}

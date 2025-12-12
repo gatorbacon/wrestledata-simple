@@ -1,0 +1,105 @@
+{
+  "wrestler_id": "34943464132",
+  "name": "Jack Desena",
+  "team": "Stanford",
+  "team_slug": "stanford",
+  "team_rank": 19,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 123,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.2,
+    "pa7": 3.81,
+    "pd7": 1.39,
+    "si_plus": 83.8,
+    "df_plus": 103.2,
+    "apr_plus": 95.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34936096132",
+      "opponent_rank": 187,
+      "opponent_name": "Gavin Fernandez",
+      "method": "SV-1 8-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34944176132",
+      "opponent_rank": 115,
+      "opponent_name": "Jake Doone",
+      "method": "Dec 6-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34944176132",
+      "opponent_name": "Jake Doone",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 157,
+      "opponent_rank": 115,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "Roadrunner Open"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943279132",
+      "opponent_name": "Alex Emmer",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 30,
+      "opponent_weight": 157,
+      "opponent_rank": 107,
+      "result": "L",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Roadrunner Open"
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34936096132",
+      "opponent_name": "Gavin Fernandez",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 32,
+      "opponent_weight": 157,
+      "opponent_rank": 187,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "8:15",
+      "event": "Menlo Open"
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34936101132",
+      "opponent_name": "Anthony Vargas",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 32,
+      "opponent_weight": 157,
+      "opponent_rank": 188,
+      "result": "W",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
+      "event": "Menlo Open"
+    }
+  ]
+}

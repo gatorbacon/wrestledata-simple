@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34955739132",
+  "name": "Vaughn Spencer",
+  "team": "Lehigh",
+  "team_slug": "lehigh",
+  "team_rank": 16,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 130,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.53,
+    "pa7": 10.8,
+    "pd7": -6.27,
+    "si_plus": 87.6,
+    "df_plus": 96.4,
+    "apr_plus": 97.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34957116132",
+      "opponent_rank": 174,
+      "opponent_name": "Liam Packer",
+      "method": "Dec 11-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34955744132",
+      "opponent_rank": 114,
+      "opponent_name": "Brady Collins",
+      "method": "TF 18-2 5:23"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34957116132",
+      "opponent_name": "Liam Packer",
+      "opponent_team": "American",
+      "opponent_team_rank": 48,
+      "opponent_weight": 174,
+      "opponent_rank": 174,
+      "result": "W",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "Lock Haven Open I"
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34955744132",
+      "opponent_name": "Brady Collins",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 174,
+      "opponent_rank": 114,
+      "result": "L",
+      "method": "PIN",
+      "score": "18-2",
+      "duration": "5:23",
+      "event": "Lock Haven Open I"
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34955719132",
+      "opponent_name": "Duncan Christensen",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 174,
+      "opponent_rank": 62,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "Lock Haven Open I"
+    }
+  ]
+}

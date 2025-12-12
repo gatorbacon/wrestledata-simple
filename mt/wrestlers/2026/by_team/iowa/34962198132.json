@@ -1,0 +1,72 @@
+{
+  "wrestler_id": "34962198132",
+  "name": "Harvey Ludington",
+  "team": "Iowa",
+  "team_slug": "iowa",
+  "team_rank": 3,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 129,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 13.5,
+    "pa7": 1.94,
+    "pd7": 11.56,
+    "si_plus": 109.1,
+    "df_plus": 107.3,
+    "apr_plus": 112.4,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34964084132",
+      "opponent_rank": 131,
+      "opponent_name": "Drew Fox",
+      "method": "TF 17-2 3:36"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34964084132",
+      "opponent_name": "Drew Fox",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 197,
+      "opponent_rank": 131,
+      "result": "W",
+      "method": "PIN",
+      "score": "17-2",
+      "duration": "3:36",
+      "event": "Jim Koch Wisconsin Open"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34964069132",
+      "opponent_name": "John Gunderson",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 197,
+      "opponent_rank": 145,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Jim Koch Wisconsin Open"
+    }
+  ]
+}

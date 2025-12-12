@@ -1,0 +1,72 @@
+{
+  "wrestler_id": "34936081132",
+  "name": "Leo Macias",
+  "team": "Cal Poly",
+  "team_slug": "cal_poly",
+  "team_rank": 32,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": 137,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 9.5,
+    "pa7": 2.0,
+    "pd7": 7.5,
+    "si_plus": 101.7,
+    "df_plus": 106.9,
+    "apr_plus": 97.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34962240132",
+      "opponent_rank": 149,
+      "opponent_name": "Caleb McElroy",
+      "method": "Dec 7-3"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34962147132",
+      "opponent_name": "Tristen Lorraine",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 133,
+      "opponent_rank": 172,
+      "result": "W",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "Menlo Open"
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34962240132",
+      "opponent_name": "Caleb McElroy",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 133,
+      "opponent_rank": 149,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Menlo Open"
+    }
+  ]
+}

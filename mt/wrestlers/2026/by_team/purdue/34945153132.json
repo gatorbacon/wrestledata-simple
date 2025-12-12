@@ -1,0 +1,72 @@
+{
+  "wrestler_id": "34945153132",
+  "name": "RJ Powers",
+  "team": "Purdue",
+  "team_slug": "purdue",
+  "team_rank": 20,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 173,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.5,
+    "pa7": 12.0,
+    "pd7": -5.5,
+    "si_plus": 91.7,
+    "df_plus": 90.2,
+    "apr_plus": 95.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34951071132",
+      "opponent_rank": 135,
+      "opponent_name": "tyson clear",
+      "method": "Dec 11-8"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951071132",
+      "opponent_name": "tyson clear",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 184,
+      "opponent_rank": 135,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-8",
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34941810132",
+      "opponent_name": "Carson Mize",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 184,
+      "opponent_rank": 105,
+      "result": "L",
+      "method": "MD",
+      "score": "13-5",
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    }
+  ]
+}

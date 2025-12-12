@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "34941572132",
+  "name": "Gage Murphy",
+  "team": "SIU Edwardsville",
+  "team_slug": "siu_edwardsville",
+  "team_rank": 24,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 180,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 17.0,
+    "pd7": -15.0,
+    "si_plus": 93.7,
+    "df_plus": 84.3,
+    "apr_plus": 116.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34943847132",
+      "opponent_rank": 218,
+      "opponent_name": "Cael Miller",
+      "method": "Fall 1:45"
+    },
+    "worst_loss": {
+      "opponent_id": "34964488132",
+      "opponent_rank": 62,
+      "opponent_name": "Louie Cerchio",
+      "method": "TF 17-2 7:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943847132",
+      "opponent_name": "Cael Miller",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 60,
+      "opponent_weight": 165,
+      "opponent_rank": 218,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Clarion Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34964488132",
+      "opponent_name": "Louie Cerchio",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 165,
+      "opponent_rank": 62,
+      "result": "L",
+      "method": "PIN",
+      "score": "17-2",
+      "duration": "7:00",
+      "event": "Clarion Open"
+    }
+  ]
+}

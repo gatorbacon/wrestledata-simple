@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34955069132",
+  "name": "Rocco Hayes",
+  "team": "Virginia",
+  "team_slug": "virginia",
+  "team_rank": 47,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 110,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.33,
+    "pa7": 11.33,
+    "pd7": -7.0,
+    "si_plus": 88.5,
+    "df_plus": 92.6,
+    "apr_plus": 100.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34949434132",
+      "opponent_rank": 129,
+      "opponent_name": "Caden Smith",
+      "method": "Dec 8-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34945477132",
+      "opponent_rank": 101,
+      "opponent_name": "Cooper Foster",
+      "method": "MD 16-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34945477132",
+      "opponent_name": "Cooper Foster",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 125,
+      "opponent_rank": 101,
+      "result": "L",
+      "method": "MD",
+      "score": "16-3",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934330132",
+      "opponent_name": "Noah Tonsor",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 125,
+      "opponent_rank": 80,
+      "result": "L",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34949434132",
+      "opponent_name": "Caden Smith",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 125,
+      "opponent_rank": 129,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    }
+  ]
+}

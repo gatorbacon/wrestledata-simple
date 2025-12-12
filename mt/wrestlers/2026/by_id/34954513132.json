@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34954513132",
+  "name": "Jacob Garrison",
+  "team": "Presbyterian",
+  "team_slug": "presbyterian",
+  "team_rank": 75,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 143,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.39,
+    "pa7": 17.0,
+    "pd7": -5.61,
+    "si_plus": 120.5,
+    "df_plus": 74.4,
+    "apr_plus": 98.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34944408132",
+      "opponent_rank": 163,
+      "opponent_name": "Rylan Paul",
+      "method": "Dec 11-9"
+    },
+    "worst_loss": {
+      "opponent_id": "34935703132",
+      "opponent_rank": 104,
+      "opponent_name": "Latrell Schafer",
+      "method": "TF 18-3 1:47"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34944408132",
+      "opponent_name": "Rylan Paul",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 43,
+      "opponent_weight": 157,
+      "opponent_rank": 163,
+      "result": "W",
+      "method": "DEC",
+      "score": "11-9",
+      "duration": "7:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935703132",
+      "opponent_name": "Latrell Schafer",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 157,
+      "opponent_rank": 104,
+      "result": "L",
+      "method": "PIN",
+      "score": "18-3",
+      "duration": "1:47",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946250132",
+      "opponent_name": "Brady Campbell",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 77,
+      "opponent_weight": 157,
+      "opponent_rank": 82,
+      "result": "L",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Southeast Open"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "wrestler_id": "34971908132",
+  "name": "Shane Whitney",
+  "team": "Drexel",
+  "team_slug": "drexel",
+  "team_rank": 44,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 169,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.77,
+    "pa7": 20.0,
+    "pd7": -18.23,
+    "si_plus": 90.0,
+    "df_plus": 73.8,
+    "apr_plus": 91.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34936029132",
+      "opponent_rank": 123,
+      "opponent_name": "James Lynch",
+      "method": "MD 15-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948131132",
+      "opponent_name": "Sebastian Garibaldi",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 285,
+      "opponent_rank": 72,
+      "result": "L",
+      "method": "PIN",
+      "score": "17-1",
+      "duration": "4:31",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34936029132",
+      "opponent_name": "James Lynch",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 285,
+      "opponent_rank": 123,
+      "result": "L",
+      "method": "MD",
+      "score": "15-2",
+      "duration": "7:00",
+      "event": "Princeton Open"
+    }
+  ]
+}

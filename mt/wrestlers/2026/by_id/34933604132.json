@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34933604132",
+  "name": "Cooper Hilton",
+  "team": "Michigan",
+  "team_slug": "michigan",
+  "team_rank": 14,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 104,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.5,
+    "pa7": 13.5,
+    "pd7": -7.0,
+    "si_plus": 100.9,
+    "df_plus": 95.7,
+    "apr_plus": 111.2,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934358132",
+      "opponent_rank": 105,
+      "opponent_name": "Evan Gosz",
+      "method": "Dec 12-11"
+    },
+    "worst_loss": {
+      "opponent_id": "34943748132",
+      "opponent_rank": 3,
+      "opponent_name": "Kaleb Larkin",
+      "method": "TF 16-1 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951073132",
+      "opponent_name": "Dominic ferraro",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 149,
+      "opponent_rank": 144,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934358132",
+      "opponent_name": "Evan Gosz",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 149,
+      "opponent_rank": 105,
+      "result": "W",
+      "method": "DEC",
+      "score": "12-11",
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943748132",
+      "opponent_name": "Kaleb Larkin",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 149,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "PIN",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "Michigan State Open"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "34952701132",
+  "name": "Jadon Skellenger",
+  "team": "Lehigh",
+  "team_slug": "lehigh",
+  "team_rank": 16,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 120,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 13.5,
+    "pa7": 3.81,
+    "pd7": 9.69,
+    "si_plus": 116.4,
+    "df_plus": 111.1,
+    "apr_plus": 95.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934317132",
+      "opponent_rank": 124,
+      "opponent_name": "Cole Stone",
+      "method": "TF 18-2 3:52"
+    },
+    "worst_loss": {
+      "opponent_id": "34935964132",
+      "opponent_rank": 38,
+      "opponent_name": "Lucas Kapusta",
+      "method": "Dec 4-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934317132",
+      "opponent_name": "Cole Stone",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 149,
+      "opponent_rank": 124,
+      "result": "W",
+      "method": "PIN",
+      "score": "18-2",
+      "duration": "3:52",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935964132",
+      "opponent_name": "Lucas Kapusta",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 149,
+      "opponent_rank": 38,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Princeton Open"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34955624132",
+  "name": "Logan Trenary",
+  "team": "Northern Illinois",
+  "team_slug": "northern_illinois",
+  "team_rank": 39,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 173,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 102.8,
+    "df_plus": 102.9,
+    "apr_plus": 110.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34933989132",
+      "opponent_rank": 215,
+      "opponent_name": "Sammy Agnello",
+      "method": "Fall 3:15"
+    },
+    "worst_loss": {
+      "opponent_id": "34951073132",
+      "opponent_rank": 144,
+      "opponent_name": "Dominic ferraro",
+      "method": "Fall 0:54"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951073132",
+      "opponent_name": "Dominic ferraro",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 149,
+      "opponent_rank": 144,
+      "result": "L",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933989132",
+      "opponent_name": "Sammy Agnello",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 149,
+      "opponent_rank": 215,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934358132",
+      "opponent_name": "Evan Gosz",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 149,
+      "opponent_rank": 105,
+      "result": "L",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    }
+  ]
+}

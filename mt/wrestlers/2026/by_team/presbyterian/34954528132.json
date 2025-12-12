@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34954528132",
+  "name": "Niko Valenzuela",
+  "team": "Presbyterian",
+  "team_slug": "presbyterian",
+  "team_rank": 75,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 141,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 13.0,
+    "pa7": 5.0,
+    "pd7": 8.0,
+    "si_plus": 91.9,
+    "df_plus": 96.1,
+    "apr_plus": 95.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34944408132",
+      "opponent_rank": 163,
+      "opponent_name": "Rylan Paul",
+      "method": "TF 15-0 2:26"
+    },
+    "worst_loss": {
+      "opponent_id": "34941686132",
+      "opponent_rank": 122,
+      "opponent_name": "Pablo Macias",
+      "method": "Fall 6:05"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34941686132",
+      "opponent_name": "Pablo Macias",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 43,
+      "opponent_weight": 157,
+      "opponent_rank": 122,
+      "result": "L",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Presbyterian"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34944408132",
+      "opponent_name": "Rylan Paul",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 43,
+      "opponent_weight": 157,
+      "opponent_rank": 163,
+      "result": "W",
+      "method": "PIN",
+      "score": "15-0",
+      "duration": "2:26",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34933369132",
+      "opponent_name": "Frank DiBella",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 18,
+      "opponent_weight": 157,
+      "opponent_rank": 103,
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Southeast Open"
+    }
+  ]
+}

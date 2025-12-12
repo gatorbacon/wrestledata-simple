@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wrestler Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="header">
+      <h1 id="wrestler-name"></h1>
+      <div class="header-subline" id="wrestler-tagline"></div>
+      <div class="header-meta" id="wrestler-meta"></div>
+    </header>
+
+    <section class="summary-cards">
+      <div class="card">
+        <h2>Record</h2>
+        <div class="card-body">
+          <div><span class="label">Overall:</span> <span id="record-overall"></span></div>
+          <div><span class="label">vs Ranked:</span> <span id="record-ranked"></span></div>
+          <div><span class="label">vs Top-10:</span> <span id="record-top10"></span></div>
+          <div><span class="label">vs Top-25:</span> <span id="record-top25"></span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Bonus & Falls</h2>
+        <div class="card-body">
+          <div><span class="label">Bonus Rate:</span> <span id="metric-bonus-rate"></span></div>
+          <div><span class="label">Pin Rate:</span> <span id="metric-pin-rate"></span></div>
+          <div><span class="label">Majors:</span> <span id="metric-majors"></span></div>
+          <div><span class="label">Tech Falls:</span> <span id="metric-techs"></span></div>
+          <div><span class="label">Pins:</span> <span id="metric-pins"></span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Efficiency</h2>
+        <div class="card-body">
+          <div><span class="label">PF7:</span> <span id="metric-pf7"></span></div>
+          <div><span class="label">PA7:</span> <span id="metric-pa7"></span></div>
+          <div><span class="label">PD7:</span> <span id="metric-pd7"></span></div>
+          <div><span class="label">SI+:</span> <span id="metric-si-plus"></span></div>
+          <div><span class="label">DF+:</span> <span id="metric-df-plus"></span></div>
+          <div><span class="label">APR+:</span> <span id="metric-apr-plus"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>High-Impact Results</h2>
+      <div id="impact-summary" class="impact-summary"></div>
+    </section>
+
+    <section class="section">
+      <h2>Full Metrics</h2>
+      <div id="metrics-table-container" class="metrics-table-container"></div>
+    </section>
+
+    <section class="section">
+      <h2>Match History</h2>
+      <div class="table-wrapper">
+        <table id="match-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Opponent</th>
+              <th>Opp Team</th>
+              <th>Opp Team Rank</th>
+              <th>Opp Weight</th>
+              <th>Opp Rank</th>
+              <th>Result</th>
+              <th>Method</th>
+              <th>Score</th>
+              <th>Duration</th>
+              <th>Event</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const wrestlerId = params.get("id");
+    
+      if (!wrestlerId) {
+        document.getElementById("wrestler-name").textContent = "No wrestler selected";
+        document.getElementById("wrestler-meta").textContent = "Use ?id=<wrestler_id>";
+        return;
+      }
+    
+      loadWrestlerProfile(wrestlerId);
+    });
+    </script>
+
+</body>
+</html>

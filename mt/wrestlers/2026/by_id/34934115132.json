@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34934115132",
+  "name": "Simon Lato",
+  "team": "Central Michigan",
+  "team_slug": "central_michigan",
+  "team_rank": 51,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 144,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 4.67,
+    "pa7": 6.67,
+    "pd7": -2.0,
+    "si_plus": 96.2,
+    "df_plus": 91.8,
+    "apr_plus": 98.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34933525132",
+      "opponent_rank": 179,
+      "opponent_name": "Lance Trost",
+      "method": "MD 9-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34944540132",
+      "opponent_rank": 122,
+      "opponent_name": "Ben Szuba",
+      "method": "Dec 5-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944540132",
+      "opponent_name": "Ben Szuba",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 285,
+      "opponent_rank": 122,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955410132",
+      "opponent_name": "Devon Dawson",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 285,
+      "opponent_rank": 21,
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933525132",
+      "opponent_name": "Lance Trost",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 14,
+      "opponent_weight": 285,
+      "opponent_rank": 179,
+      "result": "W",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    }
+  ]
+}

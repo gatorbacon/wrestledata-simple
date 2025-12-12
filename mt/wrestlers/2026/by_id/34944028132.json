@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34944028132",
+  "name": "Mason Tieffel",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 70,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 106,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 8.36,
+    "pa7": 14.5,
+    "pd7": -6.14,
+    "si_plus": 109.6,
+    "df_plus": 81.5,
+    "apr_plus": 121.2,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934348132",
+      "opponent_rank": 107,
+      "opponent_name": "Jace Morgan",
+      "method": "Fall 2:59"
+    },
+    "worst_loss": {
+      "opponent_id": "34943753132",
+      "opponent_rank": 15,
+      "opponent_name": "Pierson Manville",
+      "method": "TF 21-5 4:01"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943753132",
+      "opponent_name": "Pierson Manville",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 141,
+      "opponent_rank": 15,
+      "result": "L",
+      "method": "PIN",
+      "score": "21-5",
+      "duration": "4:01",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34935918132",
+      "opponent_name": "Marley Washington",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 141,
+      "opponent_rank": 162,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934348132",
+      "opponent_name": "Jace Morgan",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 141,
+      "opponent_rank": 107,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    }
+  ]
+}

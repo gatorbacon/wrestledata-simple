@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34955738132",
+  "name": "Rowan Holmes",
+  "team": "Lehigh",
+  "team_slug": "lehigh",
+  "team_rank": 16,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 96,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.13,
+    "pa7": 6.0,
+    "pd7": 2.13,
+    "si_plus": 102.6,
+    "df_plus": 102.8,
+    "apr_plus": 122.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935053132",
+      "opponent_rank": 97,
+      "opponent_name": "Tyler McCatharn",
+      "method": "Fall 6:02"
+    },
+    "worst_loss": {
+      "opponent_id": "34938491132",
+      "opponent_rank": 37,
+      "opponent_name": "James Blackman",
+      "method": "MD 12-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34935053132",
+      "opponent_name": "Tyler McCatharn",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 285,
+      "opponent_rank": 97,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Lock Haven Open I"
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34938491132",
+      "opponent_name": "James Blackman",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 45,
+      "opponent_weight": 285,
+      "opponent_rank": 37,
+      "result": "L",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "Lock Haven Open I"
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34940527132",
+      "opponent_name": "Dominic Iaquinto",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 285,
+      "opponent_rank": 142,
+      "result": "W",
+      "method": "PIN",
+      "score": "15-0",
+      "duration": "6:53",
+      "event": "Lock Haven Open I"
+    }
+  ]
+}

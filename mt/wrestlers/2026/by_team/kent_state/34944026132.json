@@ -1,0 +1,105 @@
+{
+  "wrestler_id": "34944026132",
+  "name": "Tyeler Hagensen",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 70,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 68,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.5,
+    "pa7": 6.0,
+    "pd7": 0.5,
+    "si_plus": 103.5,
+    "df_plus": 100.4,
+    "apr_plus": 102.3,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934360132",
+      "opponent_rank": 104,
+      "opponent_name": "Michael Esteban",
+      "method": "MD 14-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34943751132",
+      "opponent_rank": 40,
+      "opponent_name": "Damian Moreno",
+      "method": "Dec 9-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943751132",
+      "opponent_name": "Damian Moreno",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 125,
+      "opponent_rank": 40,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34945794132",
+      "opponent_name": "Ayden Bollinger",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 125,
+      "opponent_rank": 160,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955626132",
+      "opponent_name": "Josh Vazquez",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 125,
+      "opponent_rank": 122,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934360132",
+      "opponent_name": "Michael Esteban",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 125,
+      "opponent_rank": 104,
+      "result": "W",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    }
+  ]
+}

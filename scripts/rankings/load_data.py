@@ -42,7 +42,90 @@ def load_team_data(season: int) -> List[Dict]:
     return teams
 
 
-def extract_wrestlers_and_matches(teams: List[Dict]) -> Dict[str, Dict]:
+def load_match_overrides(season: int, data_dir: str = "mt/rankings_data") -> Dict[Tuple[str, str, str], Dict]:
+    """
+    Load match overrides for a season.
+    
+    Returns a dictionary mapping (w1_id, w2_id, date) -> override_dict
+    where IDs are normalized (smaller ID first).
+    """
+    overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
+    override_map = {}
+    
+    if overrides_path.exists():
+        try:
+            with overrides_path.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+            for ov in data.get("overrides", []):
+                w1 = ov.get("wrestler1_id")
+                w2 = ov.get("wrestler2_id")
+                date = ov.get("date")
+                if w1 and w2 and date:
+                    # Normalize IDs (smaller first)
+                    w1_norm, w2_norm = tuple(sorted([w1, w2]))
+                    key = (w1_norm, w2_norm, date)
+                    override_map[key] = ov
+        except Exception as e:
+            print(f"Warning: Could not load match overrides: {e}")
+    
+    return override_map
+
+
+def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "mt/rankings_data") -> None:
+    """
+    Apply match overrides to deduplicated match data.
+    
+    This should be called AFTER deduplication, so that overrides are applied
+    to the final deduplicated matches. Overrides are matched by (w1_id, w2_id, date)
+    where IDs are normalized (smaller ID first).
+    
+    Args:
+        data: Dictionary mapping weight_class -> {wrestlers: {}, matches: []}
+        season: Season year
+        data_dir: Directory containing match_overrides.json
+    """
+    match_overrides = load_match_overrides(season, data_dir)
+    
+    if not match_overrides:
+        return
+    
+    override_count = 0
+    
+    for wc, wc_data in data.items():
+        matches = wc_data.get("matches", [])
+        for match in matches:
+            w1 = match.get("wrestler1_id")
+            w2 = match.get("wrestler2_id")
+            date = match.get("date")
+            
+            if not w1 or not w2 or not date:
+                continue
+            
+            # Normalize IDs (smaller first) to match override key format
+            w1_norm, w2_norm = tuple(sorted([w1, w2]))
+            override_key = (w1_norm, w2_norm, date)
+            override = match_overrides.get(override_key)
+            
+            if override:
+                # Apply override: replace winner_id and result
+                match["winner_id"] = override.get("winner_id", match.get("winner_id"))
+                match["result"] = override.get("result", match.get("result"))
+                
+                # Override weight class if specified
+                if override.get("weight_class"):
+                    match["weight_class"] = override.get("weight_class")
+                
+                # Override event if specified
+                if override.get("event"):
+                    match["event"] = override.get("event")
+                
+                override_count += 1
+    
+    if override_count > 0:
+        print(f"Applied {override_count} match override(s)")
+
+
+def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_dir: str = "mt/rankings_data") -> Dict[str, Dict]:
     """
     Extract all wrestlers and their matches, organized by weight class.
     
@@ -51,6 +134,8 @@ def extract_wrestlers_and_matches(teams: List[Dict]) -> Dict[str, Dict]:
     
     Args:
         teams: List of team data dictionaries
+        season: Season year (optional, used for loading match overrides)
+        data_dir: Directory containing rankings data (for overrides)
         
     Returns:
         Dictionary mapping weight_class -> {
@@ -202,7 +287,9 @@ def extract_wrestlers_and_matches(teams: List[Dict]) -> Dict[str, Dict]:
                 }
                 
                 # Create unique match key for deduplication
-                match_key = (w1_id_normalized, w2_id_normalized, match_date, winner_id_normalized)
+                # Use (w1, w2, date) as the base key - this identifies the match uniquely
+                # regardless of which team's file it came from or what the original result was
+                match_identity_key = (w1_id_normalized, w2_id_normalized, match_date)
                 
                 # Store match by key to avoid duplicates
                 if match_weight not in weight_classes:
@@ -210,13 +297,17 @@ def extract_wrestlers_and_matches(teams: List[Dict]) -> Dict[str, Dict]:
                 elif 'match_keys' not in weight_classes[match_weight]:
                     weight_classes[match_weight]['match_keys'] = set()
                 
-                # Only add if we haven't seen this match before
-                if match_key not in weight_classes[match_weight]['match_keys']:
+                # Only add if we haven't seen this match before (by identity, not by result)
+                # This ensures that if a match appears in both team files, we only add it once
+                # The override is applied before this check, so both instances will have the
+                # same overridden result and will be deduplicated correctly
+                if match_identity_key not in weight_classes[match_weight]['match_keys']:
                     weight_classes[match_weight]['matches'].append(match_record)
-                    weight_classes[match_weight]['match_keys'].add(match_key)
+                    weight_classes[match_weight]['match_keys'].add(match_identity_key)
                 
                 # Update wrestler stats (only once per unique match)
-                if match_key not in processed_matches_for_stats:
+                # Use the same identity key for stats to ensure we don't double-count
+                if match_identity_key not in processed_matches_for_stats:
                     if is_winner:
                         wrestler_info['wins'] += 1
                         opponent_info['losses'] += 1
@@ -227,7 +318,7 @@ def extract_wrestlers_and_matches(teams: List[Dict]) -> Dict[str, Dict]:
                     wrestler_info['matches_count'] += 1
                     opponent_info['matches_count'] += 1
                     
-                    processed_matches_for_stats.add(match_key)
+                    processed_matches_for_stats.add(match_identity_key)
     
     # Third pass: determine weight class assignment for each wrestler
     wrestler_weight_class = {}  # wrestler_id -> assigned weight_class
@@ -416,8 +507,8 @@ def load_season_data(season: int) -> Dict[str, Dict]:
     if not teams:
         raise ValueError(f"No team data found for season {season}")
     
-    # Extract wrestlers and matches
-    data_by_weight = extract_wrestlers_and_matches(teams)
+    # Extract wrestlers and matches (pass season for match overrides)
+    data_by_weight = extract_wrestlers_and_matches(teams, season=season)
     
     return data_by_weight
 
@@ -428,10 +519,15 @@ def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
 
     Deduplication key is based on:
       - date
-      - event
       - unordered pair of wrestler IDs
-      - winner_id
-      - result string
+
+    Note: We use (date, pair) as the identity key, not including winner_id or result,
+    because the same match (same wrestlers, same date) should only appear once,
+    regardless of which weight class file it's in or what the result was.
+    
+    This ensures that if a match appears in multiple weight classes (which shouldn't
+    happen but could due to data issues), or if it appears in both team files with
+    different original results that get unified by an override, we only keep one copy.
 
     This keeps the first occurrence encountered and drops later duplicates,
     so downstream tools that scan all weight_class_*.json files don't
@@ -444,13 +540,14 @@ def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
         for m in matches:
             w1 = m.get("wrestler1_id")
             w2 = m.get("wrestler2_id")
+            if not w1 or not w2:
+                continue
             pair = tuple(sorted([w1, w2]))
+            # Use just (date, pair) as the identity key
+            # This matches the identity key used in extract_wrestlers_and_matches
             key = (
                 m.get("date"),
-                m.get("event"),
                 pair,
-                m.get("winner_id"),
-                m.get("result"),
             )
             if key in seen:
                 continue
@@ -474,6 +571,10 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
     # First, de-duplicate matches across all weight classes so that any given
     # bout only appears once in the weight_class_*.json files.
     dedupe_matches_across_weights(data)
+    
+    # Apply match overrides AFTER deduplication
+    # This ensures overrides are applied to the final deduplicated matches
+    apply_match_overrides(data, season, output_dir)
     
     # Save summary file
     summary = {

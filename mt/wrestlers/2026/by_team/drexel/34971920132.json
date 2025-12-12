@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "34971920132",
+  "name": "Chris Mance III",
+  "team": "Drexel",
+  "team_slug": "drexel",
+  "team_rank": 44,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 139,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.0,
+    "pa7": 4.0,
+    "pd7": 7.0,
+    "si_plus": 92.0,
+    "df_plus": 105.9,
+    "apr_plus": 94.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34940226132",
+      "opponent_rank": 178,
+      "opponent_name": "TJ Dorceus",
+      "method": "TF 18-3 7:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34933371132",
+      "opponent_rank": 73,
+      "opponent_name": "Gunnar Garelli",
+      "method": "Dec 5-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34940226132",
+      "opponent_name": "TJ Dorceus",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 184,
+      "opponent_rank": 178,
+      "result": "W",
+      "method": "PIN",
+      "score": "18-3",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open"
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34933371132",
+      "opponent_name": "Gunnar Garelli",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 18,
+      "opponent_weight": 184,
+      "opponent_rank": 73,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34939043132",
+  "name": "Dalton Perry",
+  "team": "Penn State",
+  "team_slug": "penn_state",
+  "team_rank": 1,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 84,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 24.78,
+    "pa7": 5.22,
+    "pd7": 19.57,
+    "si_plus": 158.0,
+    "df_plus": 111.1,
+    "apr_plus": 97.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935553132",
+      "opponent_rank": 85,
+      "opponent_name": "Billy Meiszner",
+      "method": "TF 19-4 5:22"
+    },
+    "worst_loss": {
+      "opponent_id": "34943406132",
+      "opponent_rank": 87,
+      "opponent_name": "Marco Frinzi",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935553132",
+      "opponent_name": "Billy Meiszner",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 52,
+      "opponent_weight": 149,
+      "opponent_rank": 85,
+      "result": "W",
+      "method": "PIN",
+      "score": "19-4",
+      "duration": "5:22",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943381132",
+      "opponent_name": "Richard Fedalen",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 149,
+      "opponent_rank": 68,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943406132",
+      "opponent_name": "Marco Frinzi",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 149,
+      "opponent_rank": 87,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    }
+  ]
+}

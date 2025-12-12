@@ -1,0 +1,119 @@
+{
+  "wrestler_id": "34936402132",
+  "name": "Cutter Sheets",
+  "team": "Oklahoma State",
+  "team_slug": "oklahoma_state",
+  "team_rank": 5,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 95,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "2-3",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 5.43,
+    "pa7": 9.6,
+    "pd7": -4.17,
+    "si_plus": 97.0,
+    "df_plus": 94.5,
+    "apr_plus": 99.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34944169132",
+      "opponent_rank": 107,
+      "opponent_name": "Bryce Shelton",
+      "method": "Dec 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34941569132",
+      "opponent_rank": 195,
+      "opponent_name": "Donavon Allen",
+      "method": "Dec 10-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34952074132",
+      "opponent_name": "Antonio Alvarado",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 9,
+      "opponent_weight": 149,
+      "opponent_rank": 258,
+      "result": "W",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Cougar Clash"
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34941549132",
+      "opponent_name": "Caleb Tyus",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 149,
+      "opponent_rank": 4,
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Cougar Clash"
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34941569132",
+      "opponent_name": "Donavon Allen",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 149,
+      "opponent_rank": 195,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
+      "event": "Cougar Clash"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943748132",
+      "opponent_name": "Kaleb Larkin",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 149,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "PIN",
+      "score": "20-4",
+      "duration": "5:25",
+      "event": "vs. Arizona State"
+    },
+    {
+      "date": "2025-11-21",
+      "opponent_id": "34944169132",
+      "opponent_name": "Bryce Shelton",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 149,
+      "opponent_rank": 107,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State"
+    }
+  ]
+}

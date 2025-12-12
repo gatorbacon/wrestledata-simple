@@ -242,6 +242,67 @@ def index_common_opponent_relationships(
     return index
 
 
+def is_mff_result(result: str) -> bool:
+    """
+    Check if a match result is a medical forfeit (MFF).
+    
+    Returns True if the result string indicates MFF/MFFL/M. For./medical forfeit.
+    """
+    if not result:
+        return False
+    result_str = str(result).lower().strip()
+    return (
+        'mffl' in result_str
+        or 'm. for.' in result_str
+        or 'medical forfeit' in result_str
+    )
+
+
+def calculate_wins_losses_excluding_mff(
+    rel: Dict[str, Any],
+    wid: str,
+) -> Tuple[int, int]:
+    """
+    Calculate wins and losses for a wrestler in a direct relationship,
+    excluding MFF matches.
+    
+    Args:
+        rel: Direct relationship dict with 'raw' key containing full relationship.
+             The 'wins' and 'losses' in rel are already from wid's perspective.
+        wid: Wrestler ID to calculate wins/losses for
+        
+    Returns:
+        Tuple of (wins, losses) excluding MFF matches
+    """
+    # The index already provides wins/losses from wid's perspective
+    base_wins = rel.get("wins", 0)
+    base_losses = rel.get("losses", 0)
+    
+    raw_rel = rel.get("raw", {})
+    matches = raw_rel.get("matches", [])
+    
+    # Count MFF matches for this wrestler
+    mff_wins = 0
+    mff_losses = 0
+    
+    for match in matches:
+        result = match.get("result", "")
+        if not is_mff_result(result):
+            continue
+        
+        winner_id = match.get("winner_id")
+        if winner_id == wid:
+            mff_wins += 1
+        else:
+            mff_losses += 1
+    
+    # Subtract MFF matches from totals
+    wins = base_wins - mff_wins
+    losses = base_losses - mff_losses
+    
+    return (max(0, wins), max(0, losses))
+
+
 def collect_wrestlers_with_any_matches(
     direct_index: Dict[str, List[Dict[str, Any]]],
     co_index: Dict[str, List[Dict[str, Any]]],
@@ -305,7 +366,10 @@ def compute_bands_for_weight(
         direct_wins_debug: List[Dict[str, Any]] = []
         direct_losses_debug: List[Dict[str, Any]] = []
 
-        # HARD BOUNDS from direct head-to-head
+        # Collect all wins and losses with ranks
+        win_ranks: List[int] = []
+        loss_ranks: List[int] = []
+
         for rel in direct_index.get(wid, []):
             opp_id = rel["opponent_id"]
             opp_rank = rank_lookup.get(opp_id)
@@ -313,14 +377,12 @@ def compute_bands_for_weight(
                 # opponent not currently ranked – ignore for guardrails
                 continue
 
-            wins = rel["wins"]
-            losses = rel["losses"]
+            # Calculate wins/losses excluding MFF matches
+            wins, losses = calculate_wins_losses_excluding_mff(rel, wid)
 
             if wins > losses:
-                # Net head-to-head advantage over a ranked opponent.
-                # Constrain UPPER bound towards that opponent's rank:
-                # You shouldn't be clearly worse than someone you beat.
-                hard_max = min(hard_max, opp_rank)
+                # Net head-to-head advantage over a ranked opponent
+                win_ranks.append(opp_rank)
                 direct_wins_debug.append(
                     {
                         "wrestler_id": opp_id,
@@ -329,10 +391,8 @@ def compute_bands_for_weight(
                     }
                 )
             elif losses > wins:
-                # Net head-to-head disadvantage.
-                # Constrain LOWER bound towards that opponent's rank:
-                # You shouldn't be clearly better than someone who beat you.
-                hard_min = max(hard_min, opp_rank)
+                # Net head-to-head disadvantage
+                loss_ranks.append(opp_rank)
                 direct_losses_debug.append(
                     {
                         "wrestler_id": opp_id,
@@ -342,11 +402,41 @@ def compute_bands_for_weight(
                 )
             # If wins == losses or both zero, ignore (neutral / weird case)
 
-        # Ensure band is consistent
-        if hard_min > hard_max:
-            # If inconsistencies happen, collapse to current rank as a fallback
-            hard_min = min(current_rank, n_ranked)
-            hard_max = max(current_rank, 1)
+        # HARD MIN: Find lowest rank win (best win), then highest rank loss below that
+        if win_ranks:
+            best_win = min(win_ranks)  # Lowest rank number = best win
+            # Find highest rank loss that is lower (better) than best_win
+            losses_below_best_win = [r for r in loss_ranks if r < best_win]
+            if losses_below_best_win:
+                hard_min = max(losses_below_best_win)
+            else:
+                # No losses below best win, so hard_min stays at 1
+                hard_min = 1
+        else:
+            # No wins, so use highest loss rank
+            if loss_ranks:
+                hard_min = max(loss_ranks)
+            else:
+                # No wins or losses, keep default
+                hard_min = 1
+
+        # HARD MAX: Find highest rank loss (worst loss), then lowest rank win above that
+        if loss_ranks:
+            worst_loss = max(loss_ranks)  # Highest rank number = worst loss
+            # Find lowest rank win that is higher (worse) than worst_loss
+            wins_above_worst_loss = [r for r in win_ranks if r > worst_loss]
+            if wins_above_worst_loss:
+                hard_max = min(wins_above_worst_loss)
+            else:
+                # No wins above worst loss, so hard_max is unbounded (keep n_ranked)
+                hard_max = n_ranked
+        else:
+            # No losses, so use lowest win rank
+            if win_ranks:
+                hard_max = min(win_ranks)
+            else:
+                # No wins or losses, keep default
+                hard_max = n_ranked
 
         # SOFT BOUNDS start from HARD, then CO nudges
         soft_min = hard_min

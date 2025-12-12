@@ -1,0 +1,72 @@
+{
+  "wrestler_id": "34943231132",
+  "name": "Ryan Dolezal",
+  "team": "South Dakota State",
+  "team_slug": "south_dakota_state",
+  "team_rank": 28,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 179,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.27,
+    "pa7": 15.5,
+    "pd7": -11.23,
+    "si_plus": 99.8,
+    "df_plus": 80.2,
+    "apr_plus": 97.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34943979132",
+      "opponent_rank": 137,
+      "opponent_name": "Jake Stoffel",
+      "method": "Dec 6-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943971132",
+      "opponent_name": "Cam Steed",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 174,
+      "opponent_rank": 28,
+      "result": "L",
+      "method": "PIN",
+      "score": "21-5",
+      "duration": "5:21",
+      "event": "Tiger Style Invite"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943979132",
+      "opponent_name": "Jake Stoffel",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 174,
+      "opponent_rank": 137,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Tiger Style Invite"
+    }
+  ]
+}

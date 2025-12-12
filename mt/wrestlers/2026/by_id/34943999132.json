@@ -1,0 +1,105 @@
+{
+  "wrestler_id": "34943999132",
+  "name": "Peyton Westpfahl",
+  "team": "Missouri",
+  "team_slug": "missouri",
+  "team_rank": 15,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 119,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 3.2,
+    "pa7": 6.92,
+    "pd7": -3.73,
+    "si_plus": 94.6,
+    "df_plus": 101.1,
+    "apr_plus": 104.8,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34943979132",
+      "opponent_rank": 137,
+      "opponent_name": "Jake Stoffel",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34943971132",
+      "opponent_rank": 28,
+      "opponent_name": "Cam Steed",
+      "method": "Fall 1:22"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943971132",
+      "opponent_name": "Cam Steed",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 174,
+      "opponent_rank": 28,
+      "result": "L",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Tiger Style Invite"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943979132",
+      "opponent_name": "Jake Stoffel",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 174,
+      "opponent_rank": 137,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Tiger Style Invite"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943240132",
+      "opponent_name": "Moses Espinoza-Owens",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 28,
+      "opponent_weight": 174,
+      "opponent_rank": 20,
+      "result": "L",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "Tiger Style Invite"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943227132",
+      "opponent_name": "Connor Gaynor",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 28,
+      "opponent_weight": 174,
+      "opponent_rank": 191,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Tiger Style Invite"
+    }
+  ]
+}

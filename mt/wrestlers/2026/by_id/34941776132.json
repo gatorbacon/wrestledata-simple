@@ -1,0 +1,119 @@
+{
+  "wrestler_id": "34941776132",
+  "name": "Carter Chase",
+  "team": "Ohio State",
+  "team_slug": "ohio_state",
+  "team_rank": 2,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 112,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 13.75,
+    "pa7": 4.64,
+    "pd7": 9.11,
+    "si_plus": 105.2,
+    "df_plus": 102.4,
+    "apr_plus": 95.8,
+    "pin_rate": 0.333,
+    "bonus_rate": 1.0,
+    "majors": 2,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34941552132",
+      "opponent_rank": 126,
+      "opponent_name": "Hayden Trezek",
+      "method": "MD 16-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34941575132",
+      "opponent_rank": 101,
+      "opponent_name": "Caleb Neal",
+      "method": "Inj. 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34951075132",
+      "opponent_name": "jackson Koppers",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 174,
+      "opponent_rank": 135,
+      "result": "W",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "Clarion Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934138132",
+      "opponent_name": "Mateo de la Pena",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 33,
+      "opponent_weight": 174,
+      "opponent_rank": 182,
+      "result": "W",
+      "method": "PIN",
+      "score": "17-1",
+      "duration": "4:28",
+      "event": "Clarion Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934163132",
+      "opponent_name": "Bode Marlow",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 33,
+      "opponent_weight": 174,
+      "opponent_rank": 90,
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Clarion Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941552132",
+      "opponent_name": "Hayden Trezek",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 174,
+      "opponent_rank": 126,
+      "result": "W",
+      "method": "MD",
+      "score": "16-7",
+      "duration": "7:00",
+      "event": "Clarion Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941575132",
+      "opponent_name": "Caleb Neal",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 174,
+      "opponent_rank": 101,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Clarion Open"
+    }
+  ]
+}

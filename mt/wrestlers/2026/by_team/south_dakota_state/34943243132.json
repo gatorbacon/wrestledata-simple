@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34943243132",
+  "name": "Thomas Dineen",
+  "team": "South Dakota State",
+  "team_slug": "south_dakota_state",
+  "team_rank": 28,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 18,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 9.5,
+    "pa7": 6.0,
+    "pd7": 3.5,
+    "si_plus": 112.3,
+    "df_plus": 108.6,
+    "apr_plus": 100.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34945139132",
+      "opponent_rank": 20,
+      "opponent_name": "Ben Vanadia",
+      "method": "Dec 9-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34963117132",
+      "opponent_rank": 6,
+      "opponent_name": "DJ Parker",
+      "method": "Inj. 1:22"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34963194132",
+      "opponent_name": "Anthony Harris",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 21,
+      "opponent_weight": 197,
+      "opponent_rank": 70,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-8",
+      "duration": "7:00",
+      "event": "Tiger Style Invite"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34963117132",
+      "opponent_name": "DJ Parker",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 21,
+      "opponent_weight": 197,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Tiger Style Invite"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34945139132",
+      "opponent_name": "Ben Vanadia",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 197,
+      "opponent_rank": 20,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "Tiger Style Invite"
+    }
+  ]
+}

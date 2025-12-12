@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34935922132",
+  "name": "Adam Thomson",
+  "team": "Penn",
+  "team_slug": "penn",
+  "team_rank": 27,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 150,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 6.0,
+    "pd7": -3.0,
+    "si_plus": 93.1,
+    "df_plus": 106.4,
+    "apr_plus": 99.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34937663132",
+      "opponent_rank": 167,
+      "opponent_name": "Eric Shindel",
+      "method": "TF 20-5 5:27"
+    },
+    "worst_loss": {
+      "opponent_id": "34935972132",
+      "opponent_rank": 82,
+      "opponent_name": "Ousamane Duncanson",
+      "method": "Fall 0:32"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34971896132",
+      "opponent_name": "Cody Walsh",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 44,
+      "opponent_weight": 165,
+      "opponent_rank": 40,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "Keystone Classic"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34937663132",
+      "opponent_name": "Eric Shindel",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 165,
+      "opponent_rank": 167,
+      "result": "W",
+      "method": "PIN",
+      "score": "20-5",
+      "duration": "5:27",
+      "event": "Keystone Classic"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935972132",
+      "opponent_name": "Ousamane Duncanson",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 165,
+      "opponent_rank": 82,
+      "result": "L",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Keystone Classic"
+    }
+  ]
+}

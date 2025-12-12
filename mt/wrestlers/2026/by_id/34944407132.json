@@ -1,0 +1,105 @@
+{
+  "wrestler_id": "34944407132",
+  "name": "Noah Doi",
+  "team": "Campbell",
+  "team_slug": "campbell",
+  "team_rank": 43,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 149,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.37,
+    "pa7": 5.47,
+    "pd7": 2.9,
+    "si_plus": 88.2,
+    "df_plus": 101.8,
+    "apr_plus": 95.7,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34939082132",
+      "opponent_rank": 188,
+      "opponent_name": "James Palmer",
+      "method": "TF 18-3 3:22"
+    },
+    "worst_loss": {
+      "opponent_id": "34936993132",
+      "opponent_rank": 124,
+      "opponent_name": "Austin Mckee",
+      "method": "MD 12-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34936993132",
+      "opponent_name": "Austin Mckee",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 141,
+      "opponent_rank": 124,
+      "result": "L",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34939072132",
+      "opponent_name": "Charleston Baglio",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 141,
+      "opponent_rank": 99,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "10:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34939082132",
+      "opponent_name": "James Palmer",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 141,
+      "opponent_rank": 188,
+      "result": "W",
+      "method": "PIN",
+      "score": "18-3",
+      "duration": "3:22",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934704132",
+      "opponent_name": "Brayden Hartranft",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 141,
+      "opponent_rank": 218,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Southeast Open"
+    }
+  ]
+}

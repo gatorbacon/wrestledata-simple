@@ -473,6 +473,7 @@ def generate_html_matrix(
     weight_class: str,
     season: int,
     force_backup_ids: Optional[List[str]] = None,
+    ranking_bands_map: Optional[Dict[str, Dict[str, int]]] = None,
 ) -> str:
     """
     Generate HTML for editable ranking matrix.
@@ -774,6 +775,12 @@ def generate_html_matrix(
             padding: 2px 4px;
             border-radius: 3px;
         }}
+        /* Wrestlers ranked outside their hard_min/hard_max range */
+        .rank-out-of-band-row .wrestler-name {{
+            background-color: #ffcccc;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }}
         /* Non-starters: clearly muted compared to starters */
         .non-starter-row .wrestler-name {{
             color: #888888;
@@ -844,6 +851,19 @@ def generate_html_matrix(
         .save-error {{
             color: #f44336;
         }}
+        /* Ranking band highlighting (very light orange for below min, very light blue for above max) */
+        .matrix-cell.rank-band-below-min {{
+            background-color: #fff9f0 !important;
+        }}
+        .matrix-cell.rank-band-above-max {{
+            background-color: #f5faff !important;
+        }}
+        .recommended-rank {{
+            font-size: 11px;
+            color: #666;
+            margin-left: 8px;
+            font-weight: normal;
+        }}
     </style>
 </head>
 <body>
@@ -893,11 +913,24 @@ def generate_html_matrix(
         has_no_matches = (wins == 0 and losses == 0)
         placement_note = wrestler.get('placement_note')
 
+        # Get ranking band info for this wrestler to check if rank is out of band
+        ranking_bands_map = ranking_bands_map or {}
+        band_info = ranking_bands_map.get(wrestler['id'], {})
+        hard_min = band_info.get("hard_min")
+        hard_max = band_info.get("hard_max")
+        current_rank = i + 1
+        is_out_of_band = False
+        if hard_min is not None and hard_max is not None:
+            if current_rank < hard_min or current_rank > hard_max:
+                is_out_of_band = True
+
         row_classes = []
         if wrestler.get('is_unranked'):
             row_classes.append("unranked-row")
         if has_no_matches:
             row_classes.append("no-matches-row")
+        if is_out_of_band:
+            row_classes.append("rank-out-of-band-row")
         if not wrestler.get('is_starter', True):
             row_classes.append("non-starter-row")
         row_class_attr = f' class="{" ".join(row_classes)}"' if row_classes else ""
@@ -934,10 +967,19 @@ def generate_html_matrix(
                                     <input type="number" min="1" max="{total_wrestlers}" class="rank-set-input" placeholder="#" />
                                     <button class="rank-set-button" onclick="setRank(this)" title="Set rank">Go</button>
                                 </div>"""
+        
+        # Get recommended rank (hard_min and hard_max already retrieved above)
+        recommended_rank = band_info.get("recommended_rank")
+        
+        # Add recommended rank if available
+        if recommended_rank is not None:
+            html_content += f'<span class="recommended-rank">rec: {recommended_rank}</span>'
+        
         html_content += """
                             </div>
                         </td>
 """
+        
         # Add matrix cells
         for j, opponent in enumerate(wrestlers):
             if i == j:
@@ -946,6 +988,24 @@ def generate_html_matrix(
             else:
                 cell_key = f"{wrestler['id']}_{opponent['id']}"
                 cell_data = matrix.get(cell_key, {'type': 'none', 'value': '', 'tooltip': ''})
+                
+                # Check if this cell should be highlighted based on hard_min/hard_max
+                # Cells below hard_min get light orange, cells above hard_max get light blue
+                # Only apply if cell is not already colored (no win/loss/same-wrestler/etc)
+                column_rank = j + 1
+                rank_band_class = ''
+                if hard_min is not None and hard_max is not None:
+                    # Check if cell is already colored (has a type that gives it background color)
+                    # Exclude: direct_win, direct_loss, common_win, common_loss, split_even, and cells with severity classes
+                    cell_type = cell_data.get('type', 'none')
+                    has_severity = cell_data.get('severity') is not None
+                    is_already_colored = cell_type in ('direct_win', 'direct_loss', 'common_win', 'common_loss', 'split_even') or has_severity
+                    
+                    if not is_already_colored:
+                        if column_rank < hard_min:
+                            rank_band_class = ' rank-band-below-min'
+                        elif column_rank > hard_max:
+                            rank_band_class = ' rank-band-above-max'
                 
                 # Build lightweight tooltip ID instead of inline JSON for performance
                 tooltip_data_attr = ''
@@ -1033,7 +1093,7 @@ def generate_html_matrix(
                 if cell_data.get('severity'):
                     severity_class = f" severity-{cell_data['severity']}"
                 recent_class = ' recent' if cell_data.get('recent') else ''
-                html_content += f"""                        <td class="matrix-cell {cell_data['type']}{severity_class}{recent_class}" title="{simple_tooltip}"{tooltip_data_attr}>
+                html_content += f"""                        <td class="matrix-cell {cell_data['type']}{severity_class}{recent_class}{rank_band_class}" title="{simple_tooltip}"{tooltip_data_attr}>
                             {cell_data['value']}
                         </td>
 """
@@ -1567,16 +1627,37 @@ def generate_matrix_for_weight_class(
         except Exception as e:
             print(f"Warning: Failed to load placement notes from {placement_notes_path}: {e}")
     
+    # Load ranking bands data (hard_min, hard_max, soft_min, soft_max, recommended_rank)
+    ranking_bands_path = Path(data_dir) / str(season) / f"ranking_bands_{weight_class}.json"
+    ranking_bands_map: Dict[str, Dict[str, int]] = {}
+    if ranking_bands_path.exists():
+        try:
+            with open(ranking_bands_path, "r", encoding="utf-8") as bf:
+                bands_data = json.load(bf)
+            for band_entry in bands_data.get("bands", []):
+                wid = str(band_entry.get("wrestler_id", ""))
+                if wid:
+                    ranking_bands_map[wid] = {
+                        "hard_min": band_entry.get("hard_min"),
+                        "hard_max": band_entry.get("hard_max"),
+                        "soft_min": band_entry.get("soft_min"),
+                        "soft_max": band_entry.get("soft_max"),
+                        "recommended_rank": band_entry.get("recommended_rank"),
+                    }
+        except Exception as e:
+            print(f"Warning: Failed to load ranking bands from {ranking_bands_path}: {e}")
+    
     # Build matrix data
     matrix_data = build_matrix_data(relationships_data, placement_notes=placement_notes_map)
     
-    # Generate HTML, passing starter overrides so the JS "Save Rankings"
+    # Generate HTML, passing starter overrides and ranking bands so the JS "Save Rankings"
     # button can honor them when computing is_starter flags.
     html = generate_html_matrix(
         matrix_data,
         weight_class,
         season,
         force_backup_ids=list(force_backup_ids),
+        ranking_bands_map=ranking_bands_map,
     )
     
     # Save HTML file

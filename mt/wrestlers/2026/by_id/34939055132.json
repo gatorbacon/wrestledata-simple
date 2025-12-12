@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34939055132",
+  "name": "Devon Deem",
+  "team": "Navy",
+  "team_slug": "navy",
+  "team_rank": 37,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 164,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.5,
+    "pa7": 8.0,
+    "pd7": -5.5,
+    "si_plus": 96.9,
+    "df_plus": 102.0,
+    "apr_plus": 98.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934135132",
+      "opponent_rank": 202,
+      "opponent_name": "Finn Solomon",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "34939066132",
+      "opponent_rank": 58,
+      "opponent_name": "Cooper Rathburn",
+      "method": "Dec 4-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938485132",
+      "opponent_name": "DJ Mcgee",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 45,
+      "opponent_weight": 157,
+      "opponent_rank": 30,
+      "result": "L",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "Navy Classic"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34939066132",
+      "opponent_name": "Cooper Rathburn",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 157,
+      "opponent_rank": 58,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Navy Classic"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934135132",
+      "opponent_name": "Finn Solomon",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 33,
+      "opponent_weight": 157,
+      "opponent_rank": 202,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Navy Classic"
+    }
+  ]
+}

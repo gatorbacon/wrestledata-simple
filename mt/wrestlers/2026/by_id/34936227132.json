@@ -1,0 +1,72 @@
+{
+  "wrestler_id": "34936227132",
+  "name": "Nathan Wood",
+  "team": "Ohio",
+  "team_slug": "ohio",
+  "team_rank": 41,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 226,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 102.8,
+    "df_plus": 102.9,
+    "apr_plus": 92.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34951044132",
+      "opponent_rank": 175,
+      "opponent_name": "Cheaney Schoeff",
+      "method": "Fall 2:25"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34951044132",
+      "opponent_name": "Cheaney Schoeff",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 149,
+      "opponent_rank": 175,
+      "result": "L",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Kent State Open 1"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34945846132",
+      "opponent_name": "Aidan Torres",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 149,
+      "opponent_rank": 157,
+      "result": "L",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Kent State Open 1"
+    }
+  ]
+}

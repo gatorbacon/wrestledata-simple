@@ -1,0 +1,105 @@
+{
+  "wrestler_id": "34934932132",
+  "name": "Adrien Reyes",
+  "team": "Oregon State",
+  "team_slug": "oregon_state",
+  "team_rank": 23,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 184,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.1,
+    "pa7": 3.38,
+    "pd7": 4.72,
+    "si_plus": 98.7,
+    "df_plus": 109.8,
+    "apr_plus": 99.4,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934749132",
+      "opponent_rank": 144,
+      "opponent_name": "Graham Gambrall",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34962145132",
+      "opponent_rank": 162,
+      "opponent_name": "Coen Quintana",
+      "method": "Dec 4-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34962235132",
+      "opponent_name": "Hunter Hancock",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 165,
+      "opponent_rank": 224,
+      "result": "W",
+      "method": "PIN",
+      "score": "18-3",
+      "duration": "4:29",
+      "event": "Roadrunner Open"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34962145132",
+      "opponent_name": "Coen Quintana",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 165,
+      "opponent_rank": 162,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Roadrunner Open"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943442132",
+      "opponent_name": "Grigor Cholakyan",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 19,
+      "opponent_weight": 165,
+      "opponent_rank": 114,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Roadrunner Open"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934749132",
+      "opponent_name": "Graham Gambrall",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 174,
+      "opponent_rank": 144,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Mike Clock Open Men"
+    }
+  ]
+}

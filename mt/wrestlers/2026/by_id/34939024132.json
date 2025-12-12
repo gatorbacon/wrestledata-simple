@@ -1,0 +1,72 @@
+{
+  "wrestler_id": "34939024132",
+  "name": "Hayden Cunningham",
+  "team": "Penn State",
+  "team_slug": "penn_state",
+  "team_rank": 1,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 73,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 4.0,
+    "pd7": 1.0,
+    "si_plus": 99.0,
+    "df_plus": 105.2,
+    "apr_plus": 117.5,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34948147132",
+      "opponent_rank": 87,
+      "opponent_name": "Sebastian Ortega",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34939050132",
+      "opponent_name": "Nicholas Vafiadis",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 141,
+      "opponent_rank": 136,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Shorty Hitchcock Memorial Open"
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34948147132",
+      "opponent_name": "Sebastian Ortega",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 141,
+      "opponent_rank": 87,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Shorty Hitchcock Memorial Open"
+    }
+  ]
+}

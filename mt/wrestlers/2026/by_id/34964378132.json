@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34964378132",
+  "name": "Evan Canoyer",
+  "team": "Cornell",
+  "team_slug": "cornell",
+  "team_rank": 10,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 122,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 9.0,
+    "pd7": -4.0,
+    "si_plus": 102.1,
+    "df_plus": 100.3,
+    "apr_plus": 115.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34947817132",
+      "opponent_rank": 146,
+      "opponent_name": "Deakon Bailey",
+      "method": "Fall 1:26"
+    },
+    "worst_loss": {
+      "opponent_id": "34949037132",
+      "opponent_rank": 121,
+      "opponent_name": "Aidan Zarrella",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34947817132",
+      "opponent_name": "Deakon Bailey",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 61,
+      "opponent_weight": 174,
+      "opponent_rank": 146,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Big Red Invitational"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935057132",
+      "opponent_name": "Eric Alderfer",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 174,
+      "opponent_rank": 84,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-5",
+      "duration": "7:00",
+      "event": "Big Red Invitational"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34949037132",
+      "opponent_name": "Aidan Zarrella",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 174,
+      "opponent_rank": 121,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Big Red Invitational"
+    }
+  ]
+}

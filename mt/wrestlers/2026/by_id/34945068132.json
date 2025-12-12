@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "34945068132",
+  "name": "PJ Casale",
+  "team": "Rutgers",
+  "team_slug": "rutgers",
+  "team_rank": 17,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 63,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.5,
+    "pa7": 2.0,
+    "pd7": 4.5,
+    "si_plus": 102.8,
+    "df_plus": 110.6,
+    "apr_plus": 96.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34937479132",
+      "opponent_rank": 64,
+      "opponent_name": "Josh McCutchen",
+      "method": "MD 10-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34935716132",
+      "opponent_rank": 62,
+      "opponent_name": "Cason Howle",
+      "method": "Dec 4-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34935716132",
+      "opponent_name": "Cason Howle",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 197,
+      "opponent_rank": 62,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "vs. Rutgers"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937479132",
+      "opponent_name": "Josh McCutchen",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 197,
+      "opponent_rank": 64,
+      "result": "W",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "vs. Rutgers"
+    }
+  ]
+}

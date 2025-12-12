@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "34936092132",
+  "name": "Alek Vanbebber",
+  "team": "Cal Poly",
+  "team_slug": "cal_poly",
+  "team_rank": 32,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 174,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 21.72,
+    "pa7": 2.41,
+    "pd7": 19.31,
+    "si_plus": 133.3,
+    "df_plus": 106.0,
+    "apr_plus": 97.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34962229132",
+      "opponent_rank": 212,
+      "opponent_name": "Kaileb Cadena",
+      "method": "TF 18-2 5:48"
+    },
+    "worst_loss": {
+      "opponent_id": "34962143132",
+      "opponent_rank": 175,
+      "opponent_name": "Mikey Folch",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34962143132",
+      "opponent_name": "Mikey Folch",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 141,
+      "opponent_rank": 175,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Menlo Open"
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34962229132",
+      "opponent_name": "Kaileb Cadena",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 149,
+      "opponent_rank": 212,
+      "result": "W",
+      "method": "PIN",
+      "score": "18-2",
+      "duration": "5:48",
+      "event": "Menlo Open"
+    }
+  ]
+}

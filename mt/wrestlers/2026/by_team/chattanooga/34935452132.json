@@ -1,0 +1,119 @@
+{
+  "wrestler_id": "34935452132",
+  "name": "Kade Rule",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 52,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 72,
+  "record": {
+    "overall": "4-1",
+    "vs_ranked": "4-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 10.91,
+    "pa7": 6.27,
+    "pd7": 4.64,
+    "si_plus": 117.5,
+    "df_plus": 103.9,
+    "apr_plus": 107.0,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.75,
+    "majors": 2,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 4,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34957649132",
+      "opponent_rank": 74,
+      "opponent_name": "Sepanta Ahanj-Elias",
+      "method": "SV-3 9-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34941778132",
+      "opponent_rank": 19,
+      "opponent_name": "Luke Geog",
+      "method": "Dec 16-12"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34941778132",
+      "opponent_name": "Luke Geog",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 197,
+      "opponent_rank": 19,
+      "result": "L",
+      "method": "DEC",
+      "score": "16-12",
+      "duration": "7:00",
+      "event": "vs. Ohio State"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941683132",
+      "opponent_name": "Sawyer VanRider",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 43,
+      "opponent_weight": 197,
+      "opponent_rank": 84,
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935909132",
+      "opponent_name": "Dylan Smith",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 197,
+      "opponent_rank": 152,
+      "result": "W",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946244132",
+      "opponent_name": "Gunnar DeGroat",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 77,
+      "opponent_weight": 197,
+      "opponent_rank": 128,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957649132",
+      "opponent_name": "Sepanta Ahanj-Elias",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 197,
+      "opponent_rank": 74,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "8:15",
+      "event": "Southeast Open"
+    }
+  ]
+}

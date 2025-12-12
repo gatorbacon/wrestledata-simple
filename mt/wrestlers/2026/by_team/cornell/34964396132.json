@@ -1,0 +1,72 @@
+{
+  "wrestler_id": "34964396132",
+  "name": "Simon Ruiz",
+  "team": "Cornell",
+  "team_slug": "cornell",
+  "team_rank": 10,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 4,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 10.0,
+    "pa7": 2.0,
+    "pd7": 8.0,
+    "si_plus": 116.9,
+    "df_plus": 117.7,
+    "apr_plus": 96.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34936414132",
+      "opponent_rank": 6,
+      "opponent_name": "Alex Facundo",
+      "method": "Dec 2-0"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34936414132",
+      "opponent_name": "Alex Facundo",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 174,
+      "opponent_rank": 6,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State"
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34964070132",
+      "opponent_name": "Jared Simma",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 174,
+      "opponent_rank": 16,
+      "result": "W",
+      "method": "MD",
+      "score": "18-4",
+      "duration": "7:00",
+      "event": "vs. Northern Iowa"
+    }
+  ]
+}

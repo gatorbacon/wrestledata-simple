@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34939036132",
+  "name": "Asher Cunningham",
+  "team": "Penn State",
+  "team_slug": "penn_state",
+  "team_rank": 1,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 15,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 9.33,
+    "pa7": 5.33,
+    "pd7": 4.0,
+    "si_plus": 111.5,
+    "df_plus": 109.0,
+    "apr_plus": 96.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 2,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34943379132",
+      "opponent_rank": 18,
+      "opponent_name": "Aaron Ayzerov",
+      "method": "MD 11-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34939044132",
+      "opponent_rank": 4,
+      "opponent_name": "Rocco Welsh",
+      "method": "MD 13-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934334132",
+      "opponent_name": "David Barrett",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 184,
+      "opponent_rank": 60,
+      "result": "W",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943379132",
+      "opponent_name": "Aaron Ayzerov",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 184,
+      "opponent_rank": 18,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34939044132",
+      "opponent_name": "Rocco Welsh",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
+      "opponent_weight": 184,
+      "opponent_rank": 4,
+      "result": "L",
+      "method": "MD",
+      "score": "13-5",
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    }
+  ]
+}

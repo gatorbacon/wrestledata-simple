@@ -1,0 +1,100 @@
+{
+  "wrestler_id": "34946736132",
+  "name": "Elijah Hunter",
+  "team": "West Virginia",
+  "team_slug": "west_virginia",
+  "team_rank": 13,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 183,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.06,
+    "pa7": 13.13,
+    "pd7": -11.07,
+    "si_plus": 92.1,
+    "df_plus": 90.4,
+    "apr_plus": 94.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944023132",
+      "opponent_rank": 141,
+      "opponent_name": "Abel Ngoh",
+      "method": "MD 11-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944023132",
+      "opponent_name": "Abel Ngoh",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 285,
+      "opponent_rank": 141,
+      "result": "L",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Kent State Open 1"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34955728132",
+      "opponent_name": "Dirk Morley",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 40,
+      "opponent_weight": 285,
+      "opponent_rank": 63,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Kent State Open 1"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938491132",
+      "opponent_name": "James Blackman",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 45,
+      "opponent_weight": 285,
+      "opponent_rank": 37,
+      "result": "L",
+      "method": "PIN",
+      "score": "18-1",
+      "duration": "3:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34933364132",
+      "opponent_name": "Jimmy Mullen",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 18,
+      "opponent_weight": 285,
+      "opponent_rank": 29,
+      "result": "L",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Southeast Open"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "wrestler_id": "34935437132",
+  "name": "Landon Jones",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 52,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 59,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 6.33,
+    "pa7": 9.25,
+    "pd7": -2.92,
+    "si_plus": 100.6,
+    "df_plus": 97.5,
+    "apr_plus": 96.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934334132",
+      "opponent_rank": 60,
+      "opponent_name": "David Barrett",
+      "method": "Dec 9-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34943379132",
+      "opponent_rank": 18,
+      "opponent_name": "Aaron Ayzerov",
+      "method": "MD 8-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934334132",
+      "opponent_name": "David Barrett",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 184,
+      "opponent_rank": 60,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34939074132",
+      "opponent_name": "Hadyn Danals",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 184,
+      "opponent_rank": 97,
+      "result": "W",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943379132",
+      "opponent_name": "Aaron Ayzerov",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 184,
+      "opponent_rank": 18,
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34941814132",
+      "opponent_name": "Dylan Fishback",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 184,
+      "opponent_rank": 5,
+      "result": "L",
+      "method": "PIN",
+      "score": "19-3",
+      "duration": "3:57",
+      "event": "vs. Ohio State"
+    }
+  ]
+}

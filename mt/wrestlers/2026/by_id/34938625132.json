@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "34938625132",
+  "name": "John Meyers",
+  "team": "Clarion",
+  "team_slug": "clarion",
+  "team_rank": 66,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 131,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.42,
+    "pa7": 2.2,
+    "pd7": 0.23,
+    "si_plus": 85.9,
+    "df_plus": 108.9,
+    "apr_plus": 97.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34974780132",
+      "opponent_rank": 173,
+      "opponent_name": "Magnus Bibla",
+      "method": "Dec 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34964520132",
+      "opponent_rank": 93,
+      "opponent_name": "Cash Henderson",
+      "method": "SV-3 4-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34974780132",
+      "opponent_name": "Magnus Bibla",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 285,
+      "opponent_rank": 173,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Clarion Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34964520132",
+      "opponent_name": "Cash Henderson",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 285,
+      "opponent_rank": 93,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Clarion Open"
+    }
+  ]
+}

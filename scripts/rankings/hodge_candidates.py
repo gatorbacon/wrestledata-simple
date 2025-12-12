@@ -775,8 +775,65 @@ def main() -> None:
         ]
     )
 
+    # Precompute ranges for color gradients in the second table
+    bonus_pcts = [s.bonus_pct for s in scored_candidates]
+    fall_pcts = [s.fall_pct for s in scored_candidates]
+    ranked_wins_list = [s.ranked_wins for s in scored_candidates]
+    top10_wins_list = [s.top10_wins for s in scored_candidates]
+    ranked_bonus_pcts = [s.ranked_bonus_pct for s in scored_candidates if s.ranked_wins > 0]
+    
+    min_bonus_pct = min(bonus_pcts) if bonus_pcts else 0.0
+    max_bonus_pct = max(bonus_pcts) if bonus_pcts else 1.0
+    min_fall_pct = min(fall_pcts) if fall_pcts else 0.0
+    max_fall_pct = max(fall_pcts) if fall_pcts else 1.0
+    min_ranked_wins = min(ranked_wins_list) if ranked_wins_list else 0
+    max_ranked_wins = max(ranked_wins_list) if ranked_wins_list else 1
+    min_top10_wins = min(top10_wins_list) if top10_wins_list else 0
+    max_top10_wins = max(top10_wins_list) if top10_wins_list else 1
+    min_ranked_bonus_pct = min(ranked_bonus_pcts) if ranked_bonus_pcts else 0.0
+    max_ranked_bonus_pct = max(ranked_bonus_pcts) if ranked_bonus_pcts else 1.0
+
     for idx, s in enumerate(scored_candidates, start=1):
         wl = f"{s.wins}-{s.losses}"
+        
+        # Compute colors for the 5 metric columns
+        # Bonus%: map from [min, max] to [0, 1] for green scale
+        if max_bonus_pct > min_bonus_pct:
+            bonus_t = (s.bonus_pct - min_bonus_pct) / (max_bonus_pct - min_bonus_pct)
+        else:
+            bonus_t = 1.0 if s.bonus_pct > 0 else 0.0
+        bonus_color = green_scale01(bonus_t)
+        
+        # Fall%: map from [min, max] to [0, 1] for green scale
+        if max_fall_pct > min_fall_pct:
+            fall_t = (s.fall_pct - min_fall_pct) / (max_fall_pct - min_fall_pct)
+        else:
+            fall_t = 1.0 if s.fall_pct > 0 else 0.0
+        fall_color = green_scale01(fall_t)
+        
+        # RkW: map from [min, max] to [0, 1] for green scale
+        if max_ranked_wins > min_ranked_wins:
+            rkw_t = (s.ranked_wins - min_ranked_wins) / (max_ranked_wins - min_ranked_wins)
+        else:
+            rkw_t = 1.0 if s.ranked_wins > 0 else 0.0
+        rkw_color = green_scale01(rkw_t)
+        
+        # Top10W: map from [min, max] to [0, 1] for green scale
+        if max_top10_wins > min_top10_wins:
+            top10w_t = (s.top10_wins - min_top10_wins) / (max_top10_wins - min_top10_wins)
+        else:
+            top10w_t = 1.0 if s.top10_wins > 0 else 0.0
+        top10w_color = green_scale01(top10w_t)
+        
+        # RkBon%: map from [min, max] to [0, 1] for green scale (only if ranked_wins > 0)
+        if s.ranked_wins > 0 and max_ranked_bonus_pct > min_ranked_bonus_pct:
+            rkbon_t = (s.ranked_bonus_pct - min_ranked_bonus_pct) / (max_ranked_bonus_pct - min_ranked_bonus_pct)
+        elif s.ranked_wins > 0:
+            rkbon_t = 1.0 if s.ranked_bonus_pct > 0 else 0.0
+        else:
+            rkbon_t = 0.0
+        rkbon_color = green_scale01(rkbon_t)
+        
         html.append(
             "<tr>"
             f"<td>{idx}</td>"
@@ -785,11 +842,11 @@ def main() -> None:
             f"<td>{s.weight_class}</td>"
             f"<td>{wl}</td>"
             f"<td>{s.win_pct:.3f}</td>"
-            f"<td>{s.bonus_pct:.3f}</td>"
-            f"<td>{s.fall_pct:.3f}</td>"
-            f"<td>{s.ranked_wins}</td>"
-            f"<td>{s.top10_wins}</td>"
-            f"<td>{s.ranked_bonus_pct:.3f}</td>"
+            f"<td style='background-color:{bonus_color};'>{s.bonus_pct:.3f}</td>"
+            f"<td style='background-color:{fall_color};'>{s.fall_pct:.3f}</td>"
+            f"<td style='background-color:{rkw_color};'>{s.ranked_wins}</td>"
+            f"<td style='background-color:{top10w_color};'>{s.top10_wins}</td>"
+            f"<td style='background-color:{rkbon_color};'>{s.ranked_bonus_pct:.3f}</td>"
             "</tr>"
         )
 

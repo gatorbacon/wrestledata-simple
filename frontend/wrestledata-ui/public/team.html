@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Team Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="header">
+      <h1 id="team-name"></h1>
+      <div class="header-subline" id="team-meta"></div>
+    </header>
+
+    <section class="summary-cards">
+      <div class="card">
+        <h2>Team Metrics</h2>
+        <div class="card-body">
+          <div><span class="label">Avg PF7:</span> <span id="tm-pf7"></span></div>
+          <div><span class="label">Avg PA7:</span> <span id="tm-pa7"></span></div>
+          <div><span class="label">Avg PD7:</span> <span id="tm-pd7"></span></div>
+          <div><span class="label">Bonus Rate:</span> <span id="tm-bonus"></span></div>
+          <div><span class="label">Pin Rate:</span> <span id="tm-pin"></span></div>
+          <div><span class="label">Tech Rate:</span> <span id="tm-tech"></span></div>
+          <div><span class="label">Ranked Win %:</span> <span id="tm-ranked-pct"></span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Highlights</h2>
+        <div class="card-body" id="team-highlights"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Roster</h2>
+      <div class="table-wrapper">
+        <table id="roster-table">
+          <thead>
+            <tr>
+              <th>Weight</th>
+              <th>Name</th>
+              <th>Rank</th>
+              <th>Record</th>
+              <th>vs Ranked</th>
+              <th>PD7</th>
+              <th>Bonus Rate</th>
+              <th>Best Win</th>
+              <th>Worst Loss</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/team.js"></script>
+</body>
+</html>

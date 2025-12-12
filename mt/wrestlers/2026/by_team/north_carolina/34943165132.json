@@ -1,0 +1,105 @@
+{
+  "wrestler_id": "34943165132",
+  "name": "Liam Hickey",
+  "team": "North Carolina",
+  "team_slug": "north_carolina",
+  "team_rank": 46,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": 102,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.52,
+    "pa7": 5.75,
+    "pd7": 0.77,
+    "si_plus": 103.3,
+    "df_plus": 102.1,
+    "apr_plus": 113.2,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34954514132",
+      "opponent_rank": 139,
+      "opponent_name": "Fernando Dominguez",
+      "method": "Fall 0:25"
+    },
+    "worst_loss": {
+      "opponent_id": "34944359132",
+      "opponent_rank": 46,
+      "opponent_name": "Jarvis Little",
+      "method": "SV-3 5-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34954508132",
+      "opponent_name": "Brayden Adams",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 125,
+      "opponent_rank": 152,
+      "result": "W",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Mountaineer Open"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34944359132",
+      "opponent_name": "Jarvis Little",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 133,
+      "opponent_rank": 46,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "8:15",
+      "event": "Mountaineer Open"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935691132",
+      "opponent_name": "Troy Hohman",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 133,
+      "opponent_rank": 42,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-6",
+      "duration": "7:00",
+      "event": "Mountaineer Open"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34954514132",
+      "opponent_name": "Fernando Dominguez",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 133,
+      "opponent_rank": 139,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Mountaineer Open"
+    }
+  ]
+}

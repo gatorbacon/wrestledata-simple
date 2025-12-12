@@ -1,0 +1,105 @@
+{
+  "wrestler_id": "34935970132",
+  "name": "Wyatt Dillon",
+  "team": "Lock Haven",
+  "team_slug": "lock_haven",
+  "team_rank": 56,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 156,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.67,
+    "pa7": 5.0,
+    "pd7": -2.33,
+    "si_plus": 87.9,
+    "df_plus": 100.3,
+    "apr_plus": 101.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34936200132",
+      "opponent_rank": 166,
+      "opponent_name": "Cael Raines",
+      "method": "Dec 6-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34955056132",
+      "opponent_rank": 125,
+      "opponent_name": "Nathan Rickards",
+      "method": "Dec 4-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34957108132",
+      "opponent_name": "Kaden Milheim",
+      "opponent_team": "American",
+      "opponent_team_rank": 48,
+      "opponent_weight": 157,
+      "opponent_rank": 67,
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Lock Haven Open I"
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34936200132",
+      "opponent_name": "Cael Raines",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 157,
+      "opponent_rank": 166,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Lock Haven Open I"
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34954165132",
+      "opponent_name": "Creed Thomas",
+      "opponent_team": "Bucknell",
+      "opponent_team_rank": 29,
+      "opponent_weight": 157,
+      "opponent_rank": 198,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Lock Haven Open I"
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34955056132",
+      "opponent_name": "Nathan Rickards",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 47,
+      "opponent_weight": 157,
+      "opponent_rank": 125,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Lock Haven Open I"
+    }
+  ]
+}

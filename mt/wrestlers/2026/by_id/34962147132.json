@@ -1,0 +1,100 @@
+{
+  "wrestler_id": "34962147132",
+  "name": "Tristen Lorraine",
+  "team": "CSU Bakersfield",
+  "team_slug": "csu_bakersfield",
+  "team_rank": 64,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": 172,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.25,
+    "pa7": 13.75,
+    "pd7": -11.5,
+    "si_plus": 91.8,
+    "df_plus": 89.2,
+    "apr_plus": 97.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34962240132",
+      "opponent_rank": 149,
+      "opponent_name": "Caleb McElroy",
+      "method": "TF 18-2 7:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934750132",
+      "opponent_name": "Chase DeBlaere",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 133,
+      "opponent_rank": 83,
+      "result": "L",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Roadrunner Open"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34962240132",
+      "opponent_name": "Caleb McElroy",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 133,
+      "opponent_rank": 149,
+      "result": "L",
+      "method": "PIN",
+      "score": "18-2",
+      "duration": "7:00",
+      "event": "Roadrunner Open"
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34936081132",
+      "opponent_name": "Leo Macias",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 32,
+      "opponent_weight": 133,
+      "opponent_rank": 137,
+      "result": "L",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "Menlo Open"
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34962241132",
+      "opponent_name": "Saxton Scott",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 133,
+      "opponent_rank": 136,
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "Menlo Open"
+    }
+  ]
+}

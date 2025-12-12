@@ -1,0 +1,133 @@
+{
+  "wrestler_id": "34941775132",
+  "name": "Nic Bouzakis",
+  "team": "Ohio State",
+  "team_slug": "ohio_state",
+  "team_rank": 2,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 3,
+  "record": {
+    "overall": "5-1",
+    "vs_ranked": "5-1",
+    "vs_top10": "2-1",
+    "vs_top25": "2-1"
+  },
+  "metrics": {
+    "pf7": 15.2,
+    "pa7": 8.56,
+    "pd7": 6.64,
+    "si_plus": 111.8,
+    "df_plus": 104.7,
+    "apr_plus": 133.5,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
+    "majors": 0,
+    "techs": 0,
+    "pins": 4
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 5,
+    "ranked_losses": 1,
+    "top10_wins": 2,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34955800132",
+      "opponent_rank": 5,
+      "opponent_name": "Jore Volk",
+      "method": "SV-1 8-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34941779132",
+      "opponent_rank": 1,
+      "opponent_name": "Brendan McCrone",
+      "method": "Dec 5-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-03",
+      "opponent_id": "34943831132",
+      "opponent_name": "Damion Ryan",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 60,
+      "opponent_weight": 125,
+      "opponent_rank": 131,
+      "result": "W",
+      "method": "PIN",
+      "score": "19-4",
+      "duration": "1:00",
+      "event": "vs. Ohio State"
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34962220132",
+      "opponent_name": "Dean Peterson",
+      "opponent_team": "Iowa",
+      "opponent_team_rank": 3,
+      "opponent_weight": 125,
+      "opponent_rank": 9,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Ohio State"
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34955800132",
+      "opponent_name": "Jore Volk",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 125,
+      "opponent_rank": 5,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "8:15",
+      "event": "vs. Ohio State"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34944168132",
+      "opponent_name": "Tucker Owens",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 125,
+      "opponent_rank": 30,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Clarion Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943854132",
+      "opponent_name": "Joe Calvin",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 60,
+      "opponent_weight": 125,
+      "opponent_rank": 158,
+      "result": "W",
+      "method": "PIN",
+      "score": "15-0",
+      "duration": "1:32",
+      "event": "Clarion Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941779132",
+      "opponent_name": "Brendan McCrone",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 125,
+      "opponent_rank": 1,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Clarion Open"
+    }
+  ]
+}

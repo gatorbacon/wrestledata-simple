@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34957135132",
+  "name": "Leo Maestas",
+  "team": "American",
+  "team_slug": "american",
+  "team_rank": 48,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 131,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 15.0,
+    "pa7": 2.5,
+    "pd7": 12.5,
+    "si_plus": 115.4,
+    "df_plus": 110.8,
+    "apr_plus": 101.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 2,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34955415132",
+      "opponent_rank": 140,
+      "opponent_name": "Lucan O`Brien",
+      "method": "MD 13-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34952959132",
+      "opponent_rank": 94,
+      "opponent_name": "Sam Ewing",
+      "method": "Inj. 5:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34955415132",
+      "opponent_name": "Lucan O`Brien",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 149,
+      "opponent_rank": 140,
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "vs. Northern Illinois"
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34952959132",
+      "opponent_name": "Sam Ewing",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 149,
+      "opponent_rank": 94,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Buffalo"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34936234132",
+      "opponent_name": "Jay Chase",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 149,
+      "opponent_rank": 156,
+      "result": "W",
+      "method": "MD",
+      "score": "17-3",
+      "duration": "7:00",
+      "event": "ESU Open"
+    }
+  ]
+}

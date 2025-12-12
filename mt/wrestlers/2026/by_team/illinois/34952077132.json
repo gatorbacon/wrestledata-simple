@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34952077132",
+  "name": "Peter Marinopoulos",
+  "team": "Illinois",
+  "team_slug": "illinois",
+  "team_rank": 9,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 124,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 8.33,
+    "pd7": -2.33,
+    "si_plus": 99.0,
+    "df_plus": 98.6,
+    "apr_plus": 97.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35025185132",
+      "opponent_rank": 137,
+      "opponent_name": "Cameron Guether",
+      "method": "Dec 8-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34945364132",
+      "opponent_rank": 109,
+      "opponent_name": "Kaden Darwin",
+      "method": "MD 18-9"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34941542132",
+      "opponent_name": "Bryson Buhk",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 285,
+      "opponent_rank": 41,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Cougar Clash"
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "35025185132",
+      "opponent_name": "Cameron Guether",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 285,
+      "opponent_rank": 137,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Cougar Clash"
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34945364132",
+      "opponent_name": "Kaden Darwin",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 12,
+      "opponent_weight": 285,
+      "opponent_rank": 109,
+      "result": "L",
+      "method": "MD",
+      "score": "18-9",
+      "duration": "7:00",
+      "event": "Cougar Clash"
+    }
+  ]
+}

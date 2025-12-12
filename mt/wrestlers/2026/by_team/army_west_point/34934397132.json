@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34934397132",
+  "name": "Draven McCall",
+  "team": "Army West Point",
+  "team_slug": "army_west_point",
+  "team_rank": 36,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 149,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.5,
+    "pa7": 14.5,
+    "pd7": -14.0,
+    "si_plus": 88.9,
+    "df_plus": 92.6,
+    "apr_plus": 116.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34948134132",
+      "opponent_rank": 150,
+      "opponent_name": "Cody Tavoso",
+      "method": "Fall 4:55"
+    },
+    "worst_loss": {
+      "opponent_id": "34935962132",
+      "opponent_rank": 139,
+      "opponent_name": "Chase Burke",
+      "method": "TF 16-0 3:54"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948149132",
+      "opponent_name": "Rocco Camillaci",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 157,
+      "opponent_rank": 87,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948134132",
+      "opponent_name": "Cody Tavoso",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 157,
+      "opponent_rank": 150,
+      "result": "W",
+      "method": "PIN",
+      "score": null,
+      "duration": "7:00",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935962132",
+      "opponent_name": "Chase Burke",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 157,
+      "opponent_rank": 139,
+      "result": "L",
+      "method": "PIN",
+      "score": "16-0",
+      "duration": "3:54",
+      "event": "Princeton Open"
+    }
+  ]
+}

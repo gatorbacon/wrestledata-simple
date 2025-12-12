@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "34941678132",
+  "name": "Logan Heil",
+  "team": "Campbell",
+  "team_slug": "campbell",
+  "team_rank": 43,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": 147,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 10.0,
+    "pa7": 0.0,
+    "pd7": 10.0,
+    "si_plus": 106.8,
+    "df_plus": 110.2,
+    "apr_plus": 97.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34954508132",
+      "opponent_rank": 152,
+      "opponent_name": "Brayden Adams",
+      "method": "MD 10-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34935857132",
+      "opponent_rank": 9,
+      "opponent_name": "Evan Mougalian",
+      "method": "TF 19-1 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34954508132",
+      "opponent_name": "Brayden Adams",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 125,
+      "opponent_rank": 152,
+      "result": "W",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "vs. Presbyterian"
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34935857132",
+      "opponent_name": "Evan Mougalian",
+      "opponent_team": "Penn",
+      "opponent_team_rank": 27,
+      "opponent_weight": 133,
+      "opponent_rank": 9,
+      "result": "L",
+      "method": "PIN",
+      "score": "19-1",
+      "duration": "0:00",
+      "event": "vs. Pennsylvania"
+    }
+  ]
+}

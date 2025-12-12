@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34955070132",
+  "name": "Aiden King",
+  "team": "Virginia",
+  "team_slug": "virginia",
+  "team_rank": 47,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 191,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.5,
+    "pa7": 7.0,
+    "pd7": 0.5,
+    "si_plus": 89.5,
+    "df_plus": 100.6,
+    "apr_plus": 90.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34949379132",
+      "opponent_rank": 243,
+      "opponent_name": "Logan Shugar",
+      "method": "TF 16-0 6:47"
+    },
+    "worst_loss": {
+      "opponent_id": "34958297132",
+      "opponent_rank": 141,
+      "opponent_name": "Thomas Von Eschenbach",
+      "method": "MD 9-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34958297132",
+      "opponent_name": "Thomas Von Eschenbach",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 149,
+      "opponent_rank": 141,
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34953910132",
+      "opponent_name": "Luke Nieto",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 71,
+      "opponent_weight": 149,
+      "opponent_rank": 103,
+      "result": "L",
+      "method": "DEC",
+      "score": "12-5",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34949379132",
+      "opponent_name": "Logan Shugar",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 149,
+      "opponent_rank": 243,
+      "result": "W",
+      "method": "PIN",
+      "score": "16-0",
+      "duration": "6:47",
+      "event": "2025 Journeymen Collegiate Classic"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34949779132",
+  "name": "Jadyn Johnson",
+  "team": "Little Rock",
+  "team_slug": "little_rock",
+  "team_rank": 12,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 172,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.33,
+    "pa7": 11.72,
+    "pd7": -3.39,
+    "si_plus": 89.2,
+    "df_plus": 88.6,
+    "apr_plus": 97.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34945152132",
+      "opponent_rank": 208,
+      "opponent_name": "Ethan Popp",
+      "method": "TF 19-3 6:39"
+    },
+    "worst_loss": {
+      "opponent_id": "34943965132",
+      "opponent_rank": 64,
+      "opponent_name": "Joel Mylin",
+      "method": "TF 16-0 6:13"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943965132",
+      "opponent_name": "Joel Mylin",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 165,
+      "opponent_rank": 64,
+      "result": "L",
+      "method": "PIN",
+      "score": "16-0",
+      "duration": "6:13",
+      "event": "Tiger Style Invite"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34945152132",
+      "opponent_name": "Ethan Popp",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 165,
+      "opponent_rank": 208,
+      "result": "W",
+      "method": "PIN",
+      "score": "19-3",
+      "duration": "6:39",
+      "event": "Tiger Style Invite"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34963105132",
+      "opponent_name": "Owen Eck",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 21,
+      "opponent_weight": 165,
+      "opponent_rank": 56,
+      "result": "L",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "Tiger Style Invite"
+    }
+  ]
+}
