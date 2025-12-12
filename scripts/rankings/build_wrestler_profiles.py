@@ -9,7 +9,11 @@ This script generates:
   - /wrestlers/<season>/index_teams.json
   - /wrestlers/<season>/index_search.json
 
+IMPORTANT: This script uses starter-only rankings (rankings_starters_*.json)
+for determining opponent ranks. Run build_starter_rankings.py first.
+
 Usage:
+    python scripts/rankings/build_starter_rankings.py -season 2026
     python scripts/rankings/build_wrestler_profiles.py -season 2026
 """
 
@@ -24,10 +28,46 @@ from typing import Dict, List, Optional, Set, Tuple
 # Import functions from existing scripts
 from normalized_scoring import (
     _compute_plus_metrics_for_all,
-    _load_rank_map,
 )
 from matches_and_diff_by_rank import estimate_match_duration_seconds
 from scoringbyrank import _parse_score_from_result
+
+
+def _load_starter_rank_map(season: int, data_dir: str = "mt/rankings_data") -> Dict[str, int]:
+    """
+    Load starter-only rankings and create a map from wrestler_id -> best (lowest) starter rank.
+    
+    Uses rankings_starters_*.json files which contain only starters with re-numbered ranks.
+    """
+    base = Path(data_dir) / str(season)
+    if not base.exists():
+        raise FileNotFoundError(f"Rankings directory not found: {base}")
+    
+    rank_by_id: Dict[str, int] = {}
+    
+    # Load from starter-only rankings files
+    for p in sorted(base.glob("rankings_starters_*.json")):
+        try:
+            with p.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception:
+            continue
+        
+        for r in data.get("rankings", []):
+            wid = str(r.get("wrestler_id") or "")
+            raw_rank = r.get("rank")
+            if not wid or raw_rank is None:
+                continue
+            try:
+                rk = int(raw_rank)
+            except Exception:
+                continue
+            
+            # Keep best (lowest) rank across all weights
+            if wid not in rank_by_id or rk < rank_by_id[wid]:
+                rank_by_id[wid] = rk
+    
+    return rank_by_id
 
 
 def parse_args() -> argparse.Namespace:
@@ -571,9 +611,9 @@ def main() -> None:
     all_wrestlers = load_all_wrestler_info(season, data_dir)
     print(f"Loaded {len(all_wrestlers)} wrestlers")
     
-    print("\nLoading rankings...")
-    rank_by_id = _load_rank_map(season)
-    print(f"Loaded rankings for {len(rank_by_id)} wrestlers")
+    print("\nLoading starter-only rankings...")
+    rank_by_id = _load_starter_rank_map(season, data_dir)
+    print(f"Loaded starter-only rankings for {len(rank_by_id)} wrestlers")
     
     print("\nCalculating team rankings...")
     team_rank_by_name, team_scores = calculate_team_rankings(season, data_dir)
