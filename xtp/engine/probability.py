@@ -1,10 +1,15 @@
 """
 Probability calculation utilities for bracket engine.
 
-Simple fixed probability model for Phase 3 validation.
+Phase 4B: Real win probability model based on rank and MV.
 """
 
-from typing import Dict, Tuple
+import math
+from typing import Dict, Optional, Tuple
+
+# Configuration constants (all tunable)
+WIN_PROB_ALPHA = 1.0   # rank influence
+WIN_PROB_BETA = 0.25   # MV influence
 
 
 def compute_match_probabilities(
