@@ -18,7 +18,15 @@ class BracketEngine:
     Moves wrestler_ids through slots based on bracket wiring.
     """
     
-    def __init__(self, slots: Dict[str, Slot], seeds: Dict[int, str], enable_probability: bool = True):
+    def __init__(
+        self,
+        slots: Dict[str, Slot],
+        seeds: Dict[int, str],
+        enable_probability: bool = True,
+        rank_by_id: Optional[Dict[str, int]] = None,
+        mv_by_id: Optional[Dict[str, float]] = None,
+        bonus_ev_by_id: Optional[Dict[str, float]] = None
+    ):
         """
         Initialize engine.
         
@@ -26,10 +34,18 @@ class BracketEngine:
             slots: All bracket slots (from bracket_schema.ALL_SLOTS)
             seeds: Mapping from seed number (1-33) to wrestler_id
             enable_probability: If True, track probability mass propagation
+            rank_by_id: Optional dict mapping wrestler_id to rank (for Phase 4B)
+            mv_by_id: Optional dict mapping wrestler_id to MV (for Phase 4B)
+            bonus_ev_by_id: Optional dict mapping wrestler_id to shrunk bonus EV (for Phase 4B)
         """
         self.slots = slots
         self.seeds = seeds
         self.enable_probability = enable_probability
+        
+        # Phase 4B: Rank, MV, and bonus data
+        self.rank_by_id = rank_by_id or {}
+        self.mv_by_id = mv_by_id or {}
+        self.bonus_ev_by_id = bonus_ev_by_id or {}
         
         # Track results for each slot
         # Format: {slot_id: {"winner": wrestler_id, "loser": wrestler_id}}
@@ -261,9 +277,15 @@ class BracketEngine:
                 winner_id, loser_id, prob_mass_a, prob_mass_b
             )
         else:
-            # Probability-based resolution
+            # Probability-based resolution (Phase 4B: use real model if data available)
+            rank_a = self.rank_by_id.get(wrestler_a)
+            rank_b = self.rank_by_id.get(wrestler_b)
+            mv_a = self.mv_by_id.get(wrestler_a, 0.0)
+            mv_b = self.mv_by_id.get(wrestler_b, 0.0)
+            
             winner_dist, loser_dist = compute_match_probabilities(
-                wrestler_a, wrestler_b, prob_mass_a, prob_mass_b
+                wrestler_a, wrestler_b, prob_mass_a, prob_mass_b,
+                rank_a=rank_a, rank_b=rank_b, mv_a=mv_a, mv_b=mv_b
             )
         
         # Store slot probability results
@@ -560,21 +582,43 @@ class BracketEngine:
                             self.expected_adv_points[wrestler_id] = \
                                 self.expected_adv_points.get(wrestler_id, 0.0) + (prob * adv_points)
             
-            # Compute bonus points (0.0 in Phase 4A)
-            if slot_id in self.slot_results:
-                winner_id = self.slot_results[slot_id].get("winner")
-                loser_id = self.slot_results[slot_id].get("loser")
+            # Compute bonus points (Phase 4B: real model)
+            if slot_id in self.slot_prob_results:
+                winner_dist = self.slot_prob_results[slot_id].get("winner", {})
+                total_prob = sum(winner_dist.values())
                 
-                if winner_id and loser_id:
-                    # Get probability of this outcome
-                    if slot_id in self.slot_prob_results:
-                        winner_dist = self.slot_prob_results[slot_id].get("winner", {})
-                        prob_winner = winner_dist.get(winner_id, 0.0)
+                if total_prob > 0.0:
+                    # For each potential winner, compute expected bonus
+                    for wrestler_id, mass in winner_dist.items():
+                        if mass <= 0.0:
+                            continue
                         
-                        # Bonus points (0.0 in Phase 4A)
-                        bonus = expected_bonus_for_slot(slot, winner_id, loser_id)
-                        self.expected_bonus_points[winner_id] = \
-                            self.expected_bonus_points.get(winner_id, 0.0) + (prob_winner * bonus)
+                        # Normalize to get probability
+                        p_win = mass / total_prob
+                        
+                        # Get opponent (the other wrestler in this slot)
+                        inputs = self.get_slot_inputs(slot_id)
+                        opponent_id = inputs[1] if inputs[0] == wrestler_id else inputs[0]
+                        
+                        if opponent_id:
+                            # Get wrestler's bonus EV
+                            bonus_ev = self.bonus_ev_by_id.get(wrestler_id, 0.0)
+                            
+                            # Get opponent rank
+                            opponent_rank = self.rank_by_id.get(opponent_id)
+                            
+                            # Compute expected bonus
+                            expected_bonus = expected_bonus_for_slot(
+                                slot,
+                                wrestler_id,
+                                opponent_id,
+                                p_win,
+                                bonus_ev,
+                                opponent_rank
+                            )
+                            
+                            self.expected_bonus_points[wrestler_id] = \
+                                self.expected_bonus_points.get(wrestler_id, 0.0) + expected_bonus
         
         # Compute placement points from final placements
         # For deterministic placements, probability is 1.0 for the placed wrestler
@@ -623,7 +667,7 @@ class BracketEngine:
         """
         Get xTP (expected Tournament Points) for all wrestlers.
         
-        xTP = expected_adv_points + expected_place_points + expected_bonus_points
+        xTP = xTP_A + xTP_P + xTP_B
         
         Returns:
             Dict mapping wrestler_id to xTP
@@ -643,6 +687,35 @@ class BracketEngine:
             xtp[wrestler_id] = adv + place + bonus
         
         return xtp
+    
+    def get_xtp_components(self) -> Dict[str, Dict[str, float]]:
+        """
+        Get xTP components separately for all wrestlers.
+        
+        Returns:
+            Dict mapping wrestler_id to {"xTP_A": float, "xTP_P": float, "xTP_B": float, "xTP": float}
+        """
+        # Compute points if not already computed
+        if not self._points_computed:
+            self.compute_expected_points()
+        
+        components = {}
+        all_wrestlers = set(self.seeds.values())
+        
+        for wrestler_id in all_wrestlers:
+            xTP_A = self.expected_adv_points.get(wrestler_id, 0.0)
+            xTP_P = self.expected_place_points.get(wrestler_id, 0.0)
+            xTP_B = self.expected_bonus_points.get(wrestler_id, 0.0)
+            xTP = xTP_A + xTP_P + xTP_B
+            
+            components[wrestler_id] = {
+                "xTP_A": xTP_A,
+                "xTP_P": xTP_P,
+                "xTP_B": xTP_B,
+                "xTP": xTP
+            }
+        
+        return components
     
     def _check_and_resolve_downstream_probabilities(self, resolved_slot_id: str):
         """
