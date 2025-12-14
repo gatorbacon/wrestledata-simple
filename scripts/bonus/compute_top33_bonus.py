@@ -438,6 +438,19 @@ def process_weight(
         print(f"  Warning: Wrestler directory not found: {wrestler_files}")
         return
     
+    # If debug mode, check if wrestler exists first
+    debug_wrestler_found = False
+    if debug_wrestler_id:
+        debug_wrestler_json = load_wrestler_json(debug_wrestler_id, season, wrestlers_dir)
+        if debug_wrestler_json:
+            debug_weight = debug_wrestler_json.get("weight_class")
+            if debug_weight == weight:
+                debug_wrestler_found = True
+            else:
+                print(f"  Debug: Wrestler {debug_wrestler_id} found but weight is {debug_weight} (expected {weight})")
+        else:
+            print(f"  Debug: Wrestler {debug_wrestler_id} JSON not found")
+    
     for wrestler_file in wrestler_files.glob("*.json"):
         wrestler_id = wrestler_file.stem
         
@@ -471,16 +484,47 @@ def process_weight(
     print(f"  Peer baselines: {peer_baselines}")
     
     # Debug output for specific wrestler if requested
-    if debug_wrestler_id and debug_wrestler_id in wrestler_data:
-        wrestler_json = wrestler_data[debug_wrestler_id]["wrestler_json"]
-        matches = wrestler_json.get("match_list", [])
-        compute_bonus_for_wrestler_debug(
-            debug_wrestler_id,
-            matches,
-            top33_ids,
-            rank_by_id,
-            peer_baselines
-        )
+    if debug_wrestler_id:
+        if debug_wrestler_id in wrestler_data:
+            # Wrestler was processed - show full debug
+            wrestler_json = wrestler_data[debug_wrestler_id]["wrestler_json"]
+            matches = wrestler_json.get("match_list", [])
+            compute_bonus_for_wrestler_debug(
+                debug_wrestler_id,
+                matches,
+                top33_ids,
+                rank_by_id,
+                peer_baselines
+            )
+        else:
+            # Try to load wrestler JSON directly for debug even if not in processed data
+            debug_wrestler_json = load_wrestler_json(debug_wrestler_id, season, wrestlers_dir)
+            if debug_wrestler_json:
+                debug_weight = debug_wrestler_json.get("weight_class")
+                if debug_weight == weight:
+                    # Wrestler exists at this weight but wasn't processed - show debug anyway
+                    matches = debug_wrestler_json.get("match_list", [])
+                    print(f"\n  Debug: Wrestler {debug_wrestler_id} found but not in processed data")
+                    print(f"  Showing debug output anyway...\n")
+                    compute_bonus_for_wrestler_debug(
+                        debug_wrestler_id,
+                        matches,
+                        top33_ids,
+                        rank_by_id,
+                        peer_baselines
+                    )
+                else:
+                    print(f"\n  Debug: Wrestler {debug_wrestler_id} found but weight is {debug_weight} (expected {weight})")
+                    print(f"  Cannot show debug for different weight class.")
+            else:
+                print(f"\n  Debug: Wrestler {debug_wrestler_id} not found")
+                print(f"  Check if wrestler ID is correct and wrestler JSON exists")
+                # Try to find similar wrestler IDs
+                if debug_wrestler_id in rank_by_id:
+                    rank = rank_by_id[debug_wrestler_id]
+                    print(f"  Wrestler found in rankings at rank {rank}")
+                else:
+                    print(f"  Wrestler not found in rankings either")
     
     # Step 5: Apply shrinkage and update wrestler JSONs
     leaderboard_entries = []

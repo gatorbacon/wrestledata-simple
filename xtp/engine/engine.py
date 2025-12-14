@@ -57,21 +57,33 @@ class BracketEngine:
         # Track which slots have been resolved
         self.resolved_slots: set = set()
         
-        # Probability mass tracking
-        # Format: {wrestler_id: probability_mass}
-        self.prob_mass: Dict[str, float] = {}
+        # Slot-centric probability model
+        # Each slot has two incoming distributions (A_dist and B_dist)
+        # Format: {slot_id: {"A": {wrestler_id: prob}, "B": {wrestler_id: prob}}}
+        self.slot_input_dists: Dict[str, Dict[str, Dict[str, float]]] = {}
         
-        # Slot-level probability distributions
+        # Slot-level probability distributions (outputs)
         # Format: {slot_id: {"winner": {wrestler_id: prob}, "loser": {wrestler_id: prob}}}
         self.slot_prob_results: Dict[str, Dict[str, Dict[str, float]]] = {}
         
         # Track which slots were resolved deterministically (via set_winner)
         self.deterministic_slots: set = set()
         
-        # Initialize probability mass for all seeded wrestlers
+        # Initialize slot input distributions for seeds
         if self.enable_probability:
-            for wrestler_id in self.seeds.values():
-                self.prob_mass[wrestler_id] = 1.0
+            # Initialize all slots with empty distributions
+            for slot_id in self.slots:
+                self.slot_input_dists[slot_id] = {"A": {}, "B": {}}
+            
+            # Initialize seeds as delta distributions
+            for seed_num, wrestler_id in self.seeds.items():
+                seed_ref = f"SEED_{seed_num}"
+                # Find slots that use this seed as input
+                for slot_id, slot in self.slots.items():
+                    for i, input_ref in enumerate(slot.inputs):
+                        if input_ref == seed_ref:
+                            dist_key = "A" if i == 0 else "B"
+                            self.slot_input_dists[slot_id][dist_key][wrestler_id] = 1.0
         
         # Expected points tracking
         # Format: {wrestler_id: expected_points}
@@ -169,10 +181,9 @@ class BracketEngine:
         loser_dist: Dict[str, float]
     ):
         """
-        Propagate probability mass to downstream slots.
+        Propagate probability distributions to downstream slots.
         
-        Mass flows to downstream slots based on distributions.
-        For deterministic resolutions, only the actual winner/loser get mass.
+        ADD distributions to downstream slot inputs (never subtract).
         
         Args:
             slot_id: Source slot
@@ -183,71 +194,89 @@ class BracketEngine:
             return
         
         slot = self.slots[slot_id]
-        is_deterministic = slot_id in self.deterministic_slots
         
-        # Propagate winner mass to winner_to
+        # Propagate winner distribution to winner_to slot
         if slot.winner_to:
-            if is_deterministic and slot_id in self.slot_results:
-                # Deterministic: only the actual winner gets mass
-                winner_id = self.slot_results[slot_id]["winner"]
-                winner_mass = sum(winner_dist.values())
-                # Create a distribution with only the winner
-                deterministic_winner_dist = {winner_id: winner_mass}
-                self._add_mass_to_slot(slot.winner_to, deterministic_winner_dist)
+            if slot.winner_to.startswith("PLACE_"):
+                # Terminal placement - handled in compute_expected_points
+                pass
             else:
-                # Probabilistic: distribute according to winner_dist
-                self._add_mass_to_slot(slot.winner_to, winner_dist)
+                # Find which input of the downstream slot this feeds
+                if slot.winner_to in self.slots:
+                    downstream_slot = self.slots[slot.winner_to]
+                    # Determine which input (A or B) this winner feeds
+                    # This depends on the bracket wiring
+                    self._add_dist_to_slot_input(slot.winner_to, winner_dist, slot_id, "winner")
         
-        # Propagate loser mass to loser_to
+        # Propagate loser distribution to loser_to slot
         if slot.loser_to:
-            if is_deterministic and slot_id in self.slot_results:
-                # Deterministic: loser gets 0 mass (already handled in compute_deterministic_match)
-                # But we still need to propagate (with 0 mass)
-                loser_id = self.slot_results[slot_id]["loser"]
-                deterministic_loser_dist = {loser_id: 0.0}
-                self._add_mass_to_slot(slot.loser_to, deterministic_loser_dist)
+            if slot.loser_to.startswith("PLACE_"):
+                # Terminal placement - handled in compute_expected_points
+                pass
             else:
-                # Probabilistic: distribute according to loser_dist
-                self._add_mass_to_slot(slot.loser_to, loser_dist)
+                # Find which input of the downstream slot this feeds
+                if slot.loser_to in self.slots:
+                    self._add_dist_to_slot_input(slot.loser_to, loser_dist, slot_id, "loser")
     
-    def _add_mass_to_slot(self, target_slot_id: str, mass_dist: Dict[str, float]):
+    def _add_dist_to_slot_input(
+        self,
+        target_slot_id: str,
+        dist: Dict[str, float],
+        source_slot_id: str,
+        source_type: str
+    ):
         """
-        Add probability mass to a target slot.
+        Add a probability distribution to a slot's input (A or B).
         
-        Distributes mass to wrestlers that can reach the target slot.
-        Mass is added immediately to wrestlers in the target slot's inputs.
+        Determines which input (A or B) the source feeds based on bracket wiring.
         
         Args:
-            target_slot_id: Target slot to add mass to
-            mass_dist: Distribution of mass to add (wrestler_id -> probability)
+            target_slot_id: Target slot to add distribution to
+            dist: Distribution to add (wrestler_id -> probability)
+            source_slot_id: Source slot ID
+            source_type: "winner" or "loser"
         """
-        if target_slot_id.startswith("PLACE_"):
-            # Terminal placement - mass is recorded but placements are deterministic
-            # For placements, we track mass in slot_prob_results
+        if target_slot_id not in self.slots:
             return
         
-        # Get target slot inputs (may include None if not ready)
-        target_inputs = self.get_slot_inputs(target_slot_id)
+        target_slot = self.slots[target_slot_id]
         
-        total_mass = sum(mass_dist.values())
+        # Determine which input (A or B) this source feeds
+        # Check if target slot's inputs reference the source
+        input_index = None
+        for i, input_ref in enumerate(target_slot.inputs):
+            # Check if this input references the source slot
+            if f"{source_slot_id}_WINNER" == input_ref and source_type == "winner":
+                input_index = i
+                break
+            elif f"{source_slot_id}_LOSER" == input_ref and source_type == "loser":
+                input_index = i
+                break
+            # Also check for PIG_WINNER special case
+            if source_slot_id == "C_PIG_0" and input_ref == "PIG_WINNER" and source_type == "winner":
+                input_index = i
+                break
         
-        if total_mass == 0.0:
-            return
+        if input_index is None:
+            # Try to infer from bracket structure
+            # For now, default to A if index 0, B if index 1
+            # This is a fallback - ideally all references should be explicit
+            pass
         
-        # Distribute mass to wrestlers in the target slot's inputs
-        # For deterministic resolution, only one wrestler in mass_dist has mass
-        # For probabilistic, both wrestlers have mass
+        # Add distribution to the appropriate input
+        dist_key = "A" if input_index == 0 else "B"
         
-        for wrestler_id, prob in mass_dist.items():
+        # ADD to existing distribution (never subtract)
+        for wrestler_id, prob in dist.items():
             if prob > 0.0:
-                # This wrestler has mass to distribute
-                # Always add it to the wrestler - they'll use it when target slot resolves
-                # Even if target slot inputs aren't ready yet, the wrestler needs the mass
-                self.prob_mass[wrestler_id] = self.prob_mass.get(wrestler_id, 0.0) + prob
+                self.slot_input_dists[target_slot_id][dist_key][wrestler_id] = \
+                    self.slot_input_dists[target_slot_id][dist_key].get(wrestler_id, 0.0) + prob
     
     def _resolve_slot_probabilities(self, slot_id: str, is_deterministic: bool = False):
         """
-        Resolve probability distributions for a slot when both inputs are known.
+        Resolve probability distributions for a slot using slot-centric model.
+        
+        Computes cross-product of A_dist and B_dist to get winner_dist and loser_dist.
         
         Args:
             slot_id: Slot to resolve
@@ -256,37 +285,54 @@ class BracketEngine:
         if not self.enable_probability:
             return
         
-        inputs = self.get_slot_inputs(slot_id)
+        slot = self.slots[slot_id]
+        A_dist = self.slot_input_dists[slot_id]["A"]
+        B_dist = self.slot_input_dists[slot_id]["B"]
         
-        # Skip if inputs not ready
-        if None in inputs or len(inputs) != 2:
+        # Skip if either distribution is empty
+        if not A_dist or not B_dist:
             return
-        
-        wrestler_a, wrestler_b = inputs[0], inputs[1]
-        
-        # Get current probability mass
-        prob_mass_a = self.prob_mass.get(wrestler_a, 0.0)
-        prob_mass_b = self.prob_mass.get(wrestler_b, 0.0)
         
         if is_deterministic and slot_id in self.slot_results:
             # Deterministic override: winner gets 100% of combined mass
             winner_id = self.slot_results[slot_id]["winner"]
             loser_id = self.slot_results[slot_id]["loser"]
             
-            winner_dist, loser_dist = compute_deterministic_match(
-                winner_id, loser_id, prob_mass_a, prob_mass_b
-            )
-        else:
-            # Probability-based resolution (Phase 4B: use real model if data available)
-            rank_a = self.rank_by_id.get(wrestler_a)
-            rank_b = self.rank_by_id.get(wrestler_b)
-            mv_a = self.mv_by_id.get(wrestler_a, 0.0)
-            mv_b = self.mv_by_id.get(wrestler_b, 0.0)
+            # Total mass from both distributions
+            total_mass = sum(A_dist.values()) + sum(B_dist.values())
             
-            winner_dist, loser_dist = compute_match_probabilities(
-                wrestler_a, wrestler_b, prob_mass_a, prob_mass_b,
-                rank_a=rank_a, rank_b=rank_b, mv_a=mv_a, mv_b=mv_b
-            )
+            winner_dist = {winner_id: total_mass}
+            loser_dist = {loser_id: 0.0}
+        else:
+            # Probabilistic resolution: cross-product computation
+            winner_dist: Dict[str, float] = {}
+            loser_dist: Dict[str, float] = {}
+            
+            # Cross-product: for each a in A_dist, for each b in B_dist
+            for wrestler_a, prob_a in A_dist.items():
+                for wrestler_b, prob_b in B_dist.items():
+                    Ppair = prob_a * prob_b
+                    
+                    if Ppair == 0.0:
+                        continue
+                    
+                    # Get win probability
+                    rank_a = self.rank_by_id.get(wrestler_a)
+                    rank_b = self.rank_by_id.get(wrestler_b)
+                    mv_a = self.mv_by_id.get(wrestler_a, 0.0)
+                    mv_b = self.mv_by_id.get(wrestler_b, 0.0)
+                    
+                    from xtp.engine.probability import compute_win_probability
+                    p_a_wins = compute_win_probability(rank_a, rank_b, mv_a, mv_b)
+                    p_b_wins = 1.0 - p_a_wins
+                    
+                    # Add to winner distribution
+                    winner_dist[wrestler_a] = winner_dist.get(wrestler_a, 0.0) + Ppair * p_a_wins
+                    winner_dist[wrestler_b] = winner_dist.get(wrestler_b, 0.0) + Ppair * p_b_wins
+                    
+                    # Add to loser distribution
+                    loser_dist[wrestler_a] = loser_dist.get(wrestler_a, 0.0) + Ppair * p_b_wins
+                    loser_dist[wrestler_b] = loser_dist.get(wrestler_b, 0.0) + Ppair * p_a_wins
         
         # Store slot probability results
         self.slot_prob_results[slot_id] = {
@@ -294,46 +340,7 @@ class BracketEngine:
             "loser": loser_dist
         }
         
-        # Remove mass from input wrestlers at this slot level
-        # Mass moves forward, doesn't duplicate
-        # But only remove mass that was actually used in this slot
-        # If wrestlers have mass from other sources, keep that
-        # For now, remove all mass from inputs (they've been "consumed" by this slot)
-        # Mass will be added back when it flows to downstream slots
-        if wrestler_a in self.prob_mass:
-            # Only remove the mass that was used (prob_mass_a)
-            # But since this is the slot where they meet, remove all their current mass
-            self.prob_mass[wrestler_a] = 0.0
-        if wrestler_b in self.prob_mass:
-            self.prob_mass[wrestler_b] = 0.0
-        
-        # Distribute mass to downstream slots
-        slot = self.slots[slot_id]
-        
-        # Winner mass goes to winner_to
-        winner_total = sum(winner_dist.values())
-        if slot.winner_to:
-            if slot.winner_to.startswith("PLACE_"):
-                # Terminal placement - track mass but placements are deterministic
-                # Mass is already accounted for in slot_prob_results
-                pass
-            else:
-                # Distribute mass to wrestlers that can reach winner_to
-                # For now, we track in slot_prob_results
-                # Actual mass distribution happens when downstream slots resolve
-                pass
-        
-        # Loser mass goes to loser_to
-        loser_total = sum(loser_dist.values())
-        if slot.loser_to:
-            if slot.loser_to.startswith("PLACE_"):
-                # Terminal placement
-                pass
-            else:
-                # Track in slot_prob_results
-                pass
-        
-        # Propagate probability mass to downstream slots
+        # Propagate to downstream slots by ADDING distributions
         self._propagate_probability_mass_to_downstream(slot_id, winner_dist, loser_dist)
     
     def set_winner(self, slot_id: str, winner_id: str):
@@ -583,42 +590,94 @@ class BracketEngine:
                                 self.expected_adv_points.get(wrestler_id, 0.0) + (prob * adv_points)
             
             # Compute bonus points (Phase 4B: real model)
-            if slot_id in self.slot_prob_results:
+            # In slot-centric model, we need to look at the input distributions to find all possible matchups
+            if slot_id in self.slot_prob_results and slot_id in self.slot_input_dists:
+                A_dist = self.slot_input_dists[slot_id]["A"]
+                B_dist = self.slot_input_dists[slot_id]["B"]
                 winner_dist = self.slot_prob_results[slot_id].get("winner", {})
+                loser_dist = self.slot_prob_results[slot_id].get("loser", {})
                 total_prob = sum(winner_dist.values())
                 
                 if total_prob > 0.0:
-                    # For each potential winner, compute expected bonus
-                    for wrestler_id, mass in winner_dist.items():
-                        if mass <= 0.0:
+                    # For each potential winner, compute expected bonus across all possible opponents
+                    for wrestler_id, winner_mass in winner_dist.items():
+                        if winner_mass <= 0.0:
                             continue
                         
-                        # Normalize to get probability
-                        p_win = mass / total_prob
+                        # Probability of winning this slot
+                        p_win_slot = winner_mass / total_prob
                         
-                        # Get opponent (the other wrestler in this slot)
-                        inputs = self.get_slot_inputs(slot_id)
-                        opponent_id = inputs[1] if inputs[0] == wrestler_id else inputs[0]
+                        # Get wrestler's bonus EV
+                        bonus_ev = self.bonus_ev_by_id.get(wrestler_id, 0.0)
                         
-                        if opponent_id:
-                            # Get wrestler's bonus EV
-                            bonus_ev = self.bonus_ev_by_id.get(wrestler_id, 0.0)
+                        if bonus_ev <= 0.0:
+                            continue
+                        
+                        # Find all possible opponents and compute weighted average bonus
+                        # Opponents come from the input distributions
+                        total_bonus = 0.0
+                        total_opponent_prob = 0.0
+                        
+                        # Check all possible opponents in A_dist and B_dist
+                        all_opponents = set()
+                        if wrestler_id in A_dist:
+                            all_opponents.update(B_dist.keys())
+                        if wrestler_id in B_dist:
+                            all_opponents.update(A_dist.keys())
+                        
+                        # Remove self
+                        all_opponents.discard(wrestler_id)
+                        
+                        # For each possible opponent, compute weighted bonus
+                        for opponent_id in all_opponents:
+                            # Get probability of this matchup occurring
+                            prob_a = A_dist.get(wrestler_id, 0.0) if wrestler_id in A_dist else 0.0
+                            prob_b = B_dist.get(opponent_id, 0.0) if opponent_id in B_dist else 0.0
                             
-                            # Get opponent rank
+                            if prob_a > 0.0 and prob_b > 0.0:
+                                matchup_prob = prob_a * prob_b
+                            else:
+                                prob_a = A_dist.get(opponent_id, 0.0) if opponent_id in A_dist else 0.0
+                                prob_b = B_dist.get(wrestler_id, 0.0) if wrestler_id in B_dist else 0.0
+                                matchup_prob = prob_a * prob_b
+                            
+                            if matchup_prob <= 0.0:
+                                continue
+                            
+                            # Get opponent rank for multiplier
                             opponent_rank = self.rank_by_id.get(opponent_id)
                             
-                            # Compute expected bonus
+                            # Compute probability of winning this specific matchup
+                            rank_a = self.rank_by_id.get(wrestler_id)
+                            rank_b = self.rank_by_id.get(opponent_id)
+                            mv_a = self.mv_by_id.get(wrestler_id, 0.0)
+                            mv_b = self.mv_by_id.get(opponent_id, 0.0)
+                            
+                            from xtp.engine.probability import compute_win_probability
+                            p_win_matchup = compute_win_probability(rank_a, rank_b, mv_a, mv_b)
+                            
+                            # Compute expected bonus for this matchup
+                            # Expected bonus = P(win matchup) * bonus_ev * opponent_multiplier
                             expected_bonus = expected_bonus_for_slot(
                                 slot,
                                 wrestler_id,
                                 opponent_id,
-                                p_win,
+                                p_win_matchup,
                                 bonus_ev,
                                 opponent_rank
                             )
                             
+                            # Weight by probability of this matchup occurring
+                            # The expected bonus is already weighted by p_win_matchup inside expected_bonus_for_slot
+                            # So we just need to weight by matchup probability
+                            total_bonus += matchup_prob * expected_bonus
+                            total_opponent_prob += matchup_prob
+                        
+                        # Add total bonus (already weighted by matchup probabilities)
+                        # This is the expected bonus for winning this slot, summed across all possible opponents
+                        if total_bonus > 0.0:
                             self.expected_bonus_points[wrestler_id] = \
-                                self.expected_bonus_points.get(wrestler_id, 0.0) + expected_bonus
+                                self.expected_bonus_points.get(wrestler_id, 0.0) + total_bonus
         
         # Compute placement points from final placements
         # For deterministic placements, probability is 1.0 for the placed wrestler
@@ -731,11 +790,201 @@ class BracketEngine:
         
         # Check winner_to slot
         if slot.winner_to and not slot.winner_to.startswith("PLACE_"):
-            self._try_resolve_slot_probabilities(slot.winner_to)
+            if slot.winner_to in self.slots:
+                downstream_slot_id = slot.winner_to
+                A_dist = self.slot_input_dists[downstream_slot_id]["A"]
+                B_dist = self.slot_input_dists[downstream_slot_id]["B"]
+                
+                # Check if both inputs are ready
+                if A_dist and B_dist:
+                    if downstream_slot_id not in self.resolved_slots:
+                        if downstream_slot_id not in self.deterministic_slots:
+                            try:
+                                self._resolve_slot_probabilities(downstream_slot_id, is_deterministic=False)
+                                if downstream_slot_id in self.slot_prob_results:
+                                    self.resolved_slots.add(downstream_slot_id)
+                                    # Recursively check downstream
+                                    self._check_and_resolve_downstream_probabilities(downstream_slot_id)
+                            except Exception:
+                                pass
         
         # Check loser_to slot
         if slot.loser_to and not slot.loser_to.startswith("PLACE_"):
-            self._try_resolve_slot_probabilities(slot.loser_to)
+            if slot.loser_to in self.slots:
+                downstream_slot_id = slot.loser_to
+                A_dist = self.slot_input_dists[downstream_slot_id]["A"]
+                B_dist = self.slot_input_dists[downstream_slot_id]["B"]
+                
+                # Check if both inputs are ready
+                if A_dist and B_dist:
+                    if downstream_slot_id not in self.resolved_slots:
+                        if downstream_slot_id not in self.deterministic_slots:
+                            try:
+                                self._resolve_slot_probabilities(downstream_slot_id, is_deterministic=False)
+                                if downstream_slot_id in self.slot_prob_results:
+                                    self.resolved_slots.add(downstream_slot_id)
+                                    # Recursively check downstream
+                                    self._check_and_resolve_downstream_probabilities(downstream_slot_id)
+                            except Exception:
+                                pass
+    
+    def resolve_all_probabilistically(self, max_iterations: int = 100, epsilon: float = 1e-9):
+        """
+        Resolve all slots probabilistically until convergence.
+        
+        Iterates until no slot probability distributions change beyond epsilon,
+        or max_iterations is reached.
+        
+        Args:
+            max_iterations: Maximum number of iterations (safety guard)
+            epsilon: Convergence threshold for probability changes
+        
+        Raises:
+            RuntimeError: If resolution doesn't converge within max_iterations
+        """
+        if not self.enable_probability:
+            return
+        
+        iteration = 0
+        last_resolved_count = 0
+        
+        while iteration < max_iterations:
+            iteration += 1
+            slots_resolved_this_iteration = 0
+            
+            # Try to resolve each unresolved slot
+            for slot_id, slot in self.slots.items():
+                # Skip if already resolved
+                if slot_id in self.resolved_slots:
+                    continue
+                if slot_id in self.slot_prob_results:
+                    # Already has probability results, mark as resolved
+                    self.resolved_slots.add(slot_id)
+                    continue
+                
+                # Skip if deterministically resolved
+                if slot_id in self.deterministic_slots:
+                    self.resolved_slots.add(slot_id)
+                    continue
+                
+                # Check if both input distributions are non-empty
+                A_dist = self.slot_input_dists[slot_id]["A"]
+                B_dist = self.slot_input_dists[slot_id]["B"]
+                
+                if not A_dist or not B_dist:
+                    continue
+                
+                # Both inputs have distributions - try to resolve
+                try:
+                    # Get snapshot before resolution to check for changes
+                    before_winner = self.slot_prob_results.get(slot_id, {}).get("winner", {})
+                    before_loser = self.slot_prob_results.get(slot_id, {}).get("loser", {})
+                    
+                    # Resolve the slot
+                    self._resolve_slot_probabilities(slot_id, is_deterministic=False)
+                    
+                    # Check if resolution succeeded
+                    if slot_id in self.slot_prob_results:
+                        after_winner = self.slot_prob_results[slot_id].get("winner", {})
+                        after_loser = self.slot_prob_results[slot_id].get("loser", {})
+                        
+                        # Check if distributions changed
+                        if self._distributions_changed(before_winner, after_winner, epsilon) or \
+                           self._distributions_changed(before_loser, after_loser, epsilon):
+                            changed = True
+                        
+                        # Mark as resolved
+                        self.resolved_slots.add(slot_id)
+                        slots_resolved_this_iteration += 1
+                        
+                        # Propagate to downstream slots
+                        self._check_and_resolve_downstream_probabilities(slot_id)
+                except Exception as e:
+                    # Slot might not be ready yet, continue
+                    continue
+            
+            # Check convergence: if no changes and no new slots resolved, we're done
+            if not changed and slots_resolved_this_iteration == 0:
+                # Check if there are any unresolved slots that could be resolved
+                can_resolve_more = False
+                for slot_id in self.slots:
+                    if slot_id in self.resolved_slots:
+                        continue
+                    if slot_id in self.deterministic_slots:
+                        continue
+                    
+                    A_dist = self.slot_input_dists[slot_id]["A"]
+                    B_dist = self.slot_input_dists[slot_id]["B"]
+                    
+                    if A_dist and B_dist:
+                        can_resolve_more = True
+                        break
+                
+                if not can_resolve_more:
+                    # No more slots can be resolved
+                    break
+            
+            last_resolved_count = len(self.resolved_slots)
+        
+        # Mark all slots with probability results as resolved
+        for slot_id in self.slot_prob_results:
+            self.resolved_slots.add(slot_id)
+        
+        # Filter out PLACE_* terminals (they're not actual slots, just references)
+        actual_unresolved = [
+            s for s in self.slots 
+            if s not in self.resolved_slots and not s.startswith("PLACE_")
+        ]
+        
+        if iteration >= max_iterations and actual_unresolved:
+            # Debug output
+            debug_info = []
+            for slot_id in actual_unresolved[:20]:  # Limit to first 20
+                A_dist = self.slot_input_dists.get(slot_id, {}).get("A", {})
+                B_dist = self.slot_input_dists.get(slot_id, {}).get("B", {})
+                slot = self.slots[slot_id]
+                debug_info.append(
+                    f"  {slot_id}: A_empty={not A_dist}, B_empty={not B_dist}, "
+                    f"inputs={slot.inputs}"
+                )
+            
+            raise RuntimeError(
+                f"Bracket resolution did not converge after {max_iterations} iterations. "
+                f"{len(actual_unresolved)} slots unresolved:\n" + "\n".join(debug_info)
+            )
+    
+    def _distributions_changed(
+        self,
+        before: Dict[str, float],
+        after: Dict[str, float],
+        epsilon: float
+    ) -> bool:
+        """
+        Check if two probability distributions differ beyond epsilon.
+        
+        Args:
+            before: Distribution before
+            after: Distribution after
+            epsilon: Threshold for change
+        
+        Returns:
+            True if distributions changed significantly
+        """
+        # If before is empty, any after is a change
+        if not before:
+            return bool(after)
+        
+        # Check if any wrestler's probability changed
+        all_wrestlers = set(before.keys()) | set(after.keys())
+        
+        for wrestler_id in all_wrestlers:
+            prob_before = before.get(wrestler_id, 0.0)
+            prob_after = after.get(wrestler_id, 0.0)
+            
+            if abs(prob_after - prob_before) > epsilon:
+                return True
+        
+        return False
     
     def _try_resolve_slot_probabilities(self, slot_id: str):
         """

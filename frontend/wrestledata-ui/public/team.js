@@ -93,8 +93,8 @@ async function loadTeam(teamId) {
     for (const [weight, wrestlerId] of Object.entries(starters)) {
       if (!wrestlerId) continue;
       try {
-        const w = await fetchJSON(`/wrestlers/2026/by_id/${wrestlerId}.json`);
-        starterProfiles.push({ weight: Number(weight), profile: w });
+      const w = await fetchJSON(`/wrestlers/2026/by_id/${wrestlerId}.json`);
+      starterProfiles.push({ weight: Number(weight), profile: w });
       } catch (err) {
         console.warn(`Could not load wrestler profile ${wrestlerId}:`, err);
       }
