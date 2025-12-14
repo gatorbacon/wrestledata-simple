@@ -8,6 +8,7 @@ Supports probability mass tracking for bracket analysis.
 from typing import Dict, List, Optional
 from xtp.engine.bracket_schema import Slot, get_all_slots
 from xtp.engine.probability import compute_match_probabilities, compute_deterministic_match
+from xtp.engine.scoring import advancement_points_for_slot, placement_points, expected_bonus_for_slot
 
 
 class BracketEngine:
@@ -55,6 +56,15 @@ class BracketEngine:
         if self.enable_probability:
             for wrestler_id in self.seeds.values():
                 self.prob_mass[wrestler_id] = 1.0
+        
+        # Expected points tracking
+        # Format: {wrestler_id: expected_points}
+        self.expected_adv_points: Dict[str, float] = {}
+        self.expected_place_points: Dict[str, float] = {}
+        self.expected_bonus_points: Dict[str, float] = {}
+        
+        # Track if expected points have been computed
+        self._points_computed = False
     
     def _resolve_symbolic_reference(self, ref: str) -> Optional[str]:
         """
@@ -492,6 +502,147 @@ class BracketEngine:
             return {"winner": {}, "loser": {}}
         
         return self.slot_prob_results[slot_id].copy()
+    
+    def compute_expected_points(self):
+        """
+        Compute expected advancement, placement, and bonus points for all wrestlers.
+        
+        Iterates through all resolved slots and computes:
+        - Expected advancement points from slot wins
+        - Expected placement points from final placements
+        - Expected bonus points (0.0 in Phase 4A)
+        """
+        # Reset expected points
+        all_wrestlers = set(self.seeds.values())
+        self.expected_adv_points = {w: 0.0 for w in all_wrestlers}
+        self.expected_place_points = {w: 0.0 for w in all_wrestlers}
+        self.expected_bonus_points = {w: 0.0 for w in all_wrestlers}
+        
+        if not self.enable_probability:
+            self._points_computed = True
+            return
+        
+        # Compute advancement points from resolved slots
+        for slot_id in self.resolved_slots:
+            slot = self.slots[slot_id]
+            
+            # Skip placement matches (they don't give advancement points)
+            if slot.round == "PLACE" and slot.id.startswith(("CONS_3RD", "CONS_5TH", "CONS_7TH")):
+                continue
+            
+            # Advancement points for winning this slot
+            adv_points = advancement_points_for_slot(slot)
+            
+            if adv_points == 0.0:
+                continue
+            
+            # Get probability of winning this slot
+            is_deterministic = slot_id in self.deterministic_slots
+            
+            if is_deterministic and slot_id in self.slot_results:
+                # Deterministic: winner has probability 1.0
+                winner_id = self.slot_results[slot_id].get("winner")
+                if winner_id:
+                    self.expected_adv_points[winner_id] = \
+                        self.expected_adv_points.get(winner_id, 0.0) + (1.0 * adv_points)
+            elif slot_id in self.slot_prob_results:
+                # Probabilistic: use probability distribution
+                winner_dist = self.slot_prob_results[slot_id].get("winner", {})
+                
+                # Normalize probabilities (they should sum to the total mass that entered this slot)
+                total_prob = sum(winner_dist.values())
+                
+                if total_prob > 0.0:
+                    # Normalize to get actual probabilities
+                    for wrestler_id, mass in winner_dist.items():
+                        if mass > 0.0:
+                            prob = mass / total_prob
+                            self.expected_adv_points[wrestler_id] = \
+                                self.expected_adv_points.get(wrestler_id, 0.0) + (prob * adv_points)
+            
+            # Compute bonus points (0.0 in Phase 4A)
+            if slot_id in self.slot_results:
+                winner_id = self.slot_results[slot_id].get("winner")
+                loser_id = self.slot_results[slot_id].get("loser")
+                
+                if winner_id and loser_id:
+                    # Get probability of this outcome
+                    if slot_id in self.slot_prob_results:
+                        winner_dist = self.slot_prob_results[slot_id].get("winner", {})
+                        prob_winner = winner_dist.get(winner_id, 0.0)
+                        
+                        # Bonus points (0.0 in Phase 4A)
+                        bonus = expected_bonus_for_slot(slot, winner_id, loser_id)
+                        self.expected_bonus_points[winner_id] = \
+                            self.expected_bonus_points.get(winner_id, 0.0) + (prob_winner * bonus)
+        
+        # Compute placement points from final placements
+        # For deterministic placements, probability is 1.0 for the placed wrestler
+        # For probabilistic placements, use probability distributions
+        
+        # Check placement matches (CONS_3RD, CONS_5TH, CONS_7TH) and final (C_F_0)
+        placement_slots = {
+            "C_F_0": [(1, "winner"), (2, "loser")],
+            "CONS_3RD": [(3, "winner"), (4, "loser")],
+            "CONS_5TH": [(5, "winner"), (6, "loser")],
+            "CONS_7TH": [(7, "winner"), (8, "loser")]
+        }
+        
+        for slot_id, placements_info in placement_slots.items():
+            if slot_id not in self.resolved_slots:
+                continue
+            
+            slot = self.slots[slot_id]
+            is_deterministic = slot_id in self.deterministic_slots
+            
+            for place, result_type in placements_info:
+                place_pts = placement_points(place)
+                
+                if is_deterministic and slot_id in self.slot_results:
+                    # Deterministic: wrestler has probability 1.0
+                    wrestler_id = self.slot_results[slot_id].get(result_type)
+                    if wrestler_id:
+                        self.expected_place_points[wrestler_id] = \
+                            self.expected_place_points.get(wrestler_id, 0.0) + (1.0 * place_pts)
+                elif slot_id in self.slot_prob_results:
+                    # Probabilistic: use probability distribution
+                    dist = self.slot_prob_results[slot_id].get(result_type, {})
+                    total_prob = sum(dist.values())
+                    
+                    if total_prob > 0.0:
+                        # Normalize to get actual probabilities
+                        for wrestler_id, mass in dist.items():
+                            if mass > 0.0:
+                                prob = mass / total_prob
+                                self.expected_place_points[wrestler_id] = \
+                                    self.expected_place_points.get(wrestler_id, 0.0) + (prob * place_pts)
+        
+        self._points_computed = True
+    
+    def get_xtp(self) -> Dict[str, float]:
+        """
+        Get xTP (expected Tournament Points) for all wrestlers.
+        
+        xTP = expected_adv_points + expected_place_points + expected_bonus_points
+        
+        Returns:
+            Dict mapping wrestler_id to xTP
+        """
+        # Compute points if not already computed
+        if not self._points_computed:
+            self.compute_expected_points()
+        
+        # Combine all expected points
+        xtp = {}
+        all_wrestlers = set(self.seeds.values())
+        
+        for wrestler_id in all_wrestlers:
+            adv = self.expected_adv_points.get(wrestler_id, 0.0)
+            place = self.expected_place_points.get(wrestler_id, 0.0)
+            bonus = self.expected_bonus_points.get(wrestler_id, 0.0)
+            xtp[wrestler_id] = adv + place + bonus
+        
+        return xtp
     
     def _check_and_resolve_downstream_probabilities(self, resolved_slot_id: str):
         """
