@@ -6,10 +6,10 @@
   "team_rank": 26,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 131,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,29 +20,26 @@
     "si_plus": 100.4,
     "df_plus": 90.5,
     "apr_plus": 96.6,
-    "pin_rate": 1.0,
+    "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.686,
+      "matches": 3,
+      "rank_weight": 158,
+      "rank_overall": 1837,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34962171132",
-      "opponent_rank": 148,
-      "opponent_name": "Jake Howell",
-      "method": "TF 15-0 3:52"
-    },
-    "worst_loss": {
-      "opponent_id": "34962173132",
-      "opponent_rank": 130,
-      "opponent_name": "Brody Sampson",
-      "method": "MD 10-0"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,9 +49,9 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 3,
       "opponent_weight": 197,
-      "opponent_rank": 148,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "3:52",
       "event": "Jim Koch Wisconsin Open"
@@ -66,9 +63,9 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 3,
       "opponent_weight": 197,
-      "opponent_rank": 129,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "3:36",
       "event": "Jim Koch Wisconsin Open"
@@ -80,7 +77,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 3,
       "opponent_weight": 197,
-      "opponent_rank": 130,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "10-0",

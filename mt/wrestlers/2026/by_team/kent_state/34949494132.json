@@ -6,10 +6,10 @@
   "team_rank": 70,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 38,
+  "current_rank": 33,
   "record": {
     "overall": "4-1",
-    "vs_ranked": "4-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,16 +24,23 @@
     "bonus_rate": 0.5,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.892,
+      "matches": 4,
+      "rank_weight": 35,
+      "rank_overall": 294,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34933994132",
-      "opponent_rank": 39,
+      "opponent_rank": 34,
       "opponent_name": "Darius Marines",
       "method": "Dec 5-3"
     },
@@ -52,7 +59,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": 165,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-0",
@@ -80,7 +87,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 157,
-      "opponent_rank": 159,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "9-1",
@@ -94,7 +101,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": 199,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -108,7 +115,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": 39,
+      "opponent_rank": 34,
       "result": "W",
       "method": "DEC",
       "score": "5-3",

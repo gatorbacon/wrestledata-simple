@@ -6,10 +6,10 @@
   "team_rank": 47,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 41,
+  "current_rank": 37,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "3-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,16 +24,23 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.918,
+      "matches": 3,
+      "rank_weight": 47,
+      "rank_overall": 479,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 2,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34944021132",
-      "opponent_rank": 45,
+      "opponent_rank": 41,
       "opponent_name": "Trent Thomas",
       "method": "Dec 4-2"
     },
@@ -52,7 +59,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": 75,
+      "opponent_rank": 60,
       "result": "W",
       "method": "DEC",
       "score": "10-6",
@@ -68,7 +75,7 @@
       "opponent_weight": 184,
       "opponent_rank": 8,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-6",
       "duration": "5:48",
       "event": "vs. Virginia"
@@ -80,7 +87,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 184,
-      "opponent_rank": 45,
+      "opponent_rank": 41,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -94,7 +101,7 @@
       "opponent_team": "Morgan State",
       "opponent_team_rank": 73,
       "opponent_weight": 184,
-      "opponent_rank": 170,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,

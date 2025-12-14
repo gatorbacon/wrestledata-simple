@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mat Value Leaderboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page-container">
+    <header class="header">
+      <h1>Mat Value Leaderboard</h1>
+      <div class="header-subline" id="season-info"></div>
+    </header>
+
+    <section class="section">
+      <div class="filters">
+        <div class="filter-group">
+          <label for="weight-filter">Weight:</label>
+          <select id="weight-filter">
+            <option value="all">All</option>
+            <option value="125">125</option>
+            <option value="133">133</option>
+            <option value="141">141</option>
+            <option value="149">149</option>
+            <option value="157">157</option>
+            <option value="165">165</option>
+            <option value="174">174</option>
+            <option value="184">184</option>
+            <option value="197">197</option>
+            <option value="285">285</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="min-matches-filter">Min Matches:</label>
+          <input type="number" id="min-matches-filter" value="5" min="1" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="table-wrapper">
+        <table id="leaderboard-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Team</th>
+              <th>Weight</th>
+              <th>MV</th>
+              <th>Matches</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/leaderboards/mat_value.js"></script>
+</body>
+</html>
+

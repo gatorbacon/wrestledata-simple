@@ -6,10 +6,10 @@
   "team_rank": 61,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 208,
+  "current_rank": null,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "1-5",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.975,
+      "matches": 5,
+      "rank_weight": 213,
+      "rank_overall": 1982,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34964384132",
-      "opponent_rank": 132,
-      "opponent_name": "Foster Cardinale",
-      "method": "M. For."
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34936181132",
-      "opponent_rank": 169,
-      "opponent_name": "Tristan Corbin",
-      "method": "Fall 1:47"
+      "opponent_id": "34948517132",
+      "opponent_rank": 31,
+      "opponent_name": "Khimari Manns",
+      "method": "TF 16-1 2:30"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 141,
-      "opponent_rank": 141,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "13-4",
@@ -66,11 +68,11 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 141,
-      "opponent_rank": 169,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:47",
       "event": "Big Red Invitational"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 141,
-      "opponent_rank": 132,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -94,7 +96,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 141,
-      "opponent_rank": 157,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -108,9 +110,9 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 141,
-      "opponent_rank": 77,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-0",
       "duration": "4:11",
       "event": "Army Open"
@@ -122,9 +124,9 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 141,
-      "opponent_rank": 32,
+      "opponent_rank": 31,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "2:30",
       "event": "Army Open"

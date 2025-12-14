@@ -6,10 +6,10 @@
   "team_rank": 32,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 199,
+  "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.884,
+      "matches": 1,
+      "rank_weight": 168,
+      "rank_overall": 1704,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34962151132",
-      "opponent_rank": 134,
-      "opponent_name": "Eathon Rider",
-      "method": "MD 8-0"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34962238132",
-      "opponent_rank": 87,
+      "opponent_rank": 57,
       "opponent_name": "Robert Jones",
       "method": "MD 11-0"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 64,
       "opponent_weight": 133,
-      "opponent_rank": 87,
+      "opponent_rank": 57,
       "result": "L",
       "method": "MD",
       "score": "11-0",
@@ -66,7 +68,7 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 64,
       "opponent_weight": 125,
-      "opponent_rank": 134,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "8-0",

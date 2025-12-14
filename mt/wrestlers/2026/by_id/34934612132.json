@@ -6,10 +6,10 @@
   "team_rank": 74,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 131,
+  "current_rank": 73,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "3-4",
+    "vs_ranked": "0-3",
     "vs_top10": "0-2",
     "vs_top25": "0-2"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.015,
+      "matches": 6,
+      "rank_weight": 141,
+      "rank_overall": 1293,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 2,
-    "win_over_highest_rank": {
-      "opponent_id": "34963168132",
-      "opponent_rank": 144,
-      "opponent_name": "Bryce Burkett",
-      "method": "TB-2 (RT) 3-2"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34943260132",
-      "opponent_rank": 115,
-      "opponent_name": "Jacob Herm",
-      "method": "MD 16-6"
+      "opponent_id": "34943239132",
+      "opponent_rank": 43,
+      "opponent_name": "Marcus Espinoza-Owens",
+      "method": "MD 18-7"
     }
   },
   "match_list": [
@@ -54,7 +56,7 @@
       "opponent_weight": 165,
       "opponent_rank": 6,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "7:00",
       "event": "vs. North Dakota State"
@@ -66,7 +68,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 165,
-      "opponent_rank": 219,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "11-7",
@@ -80,7 +82,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 165,
-      "opponent_rank": 115,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "16-6",
@@ -94,7 +96,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 165,
-      "opponent_rank": 49,
+      "opponent_rank": 43,
       "result": "L",
       "method": "MD",
       "score": "18-7",
@@ -110,7 +112,7 @@
       "opponent_weight": 165,
       "opponent_rank": 6,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-2",
       "duration": "5:25",
       "event": "Bison Open 2025"
@@ -122,7 +124,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 21,
       "opponent_weight": 165,
-      "opponent_rank": 144,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "3-2",
@@ -136,7 +138,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 165,
-      "opponent_rank": 179,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,

@@ -6,10 +6,10 @@
   "team_rank": 43,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 137,
+  "current_rank": null,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "2-1",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,29 +20,31 @@
     "si_plus": 92.1,
     "df_plus": 100.9,
     "apr_plus": 97.3,
-    "pin_rate": 0.5,
+    "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.242,
+      "matches": 2,
+      "rank_weight": 141,
+      "rank_overall": 1087,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34954560132",
-      "opponent_rank": 149,
+      "opponent_rank": 73,
       "opponent_name": "Joseph Morris",
       "method": "Dec 2-0"
     },
-    "worst_loss": {
-      "opponent_id": "34946304132",
-      "opponent_rank": 129,
-      "opponent_name": "Tommy Johnson",
-      "method": "MD 15-3"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,9 +54,9 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 141,
-      "opponent_rank": 226,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-1",
       "duration": "5:00",
       "event": "Southeast Open"
@@ -66,7 +68,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 77,
       "opponent_weight": 149,
-      "opponent_rank": 129,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "15-3",
@@ -80,7 +82,7 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 149,
-      "opponent_rank": 149,
+      "opponent_rank": 73,
       "result": "W",
       "method": "DEC",
       "score": "2-0",

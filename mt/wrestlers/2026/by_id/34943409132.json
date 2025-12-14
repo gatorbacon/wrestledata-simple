@@ -6,10 +6,10 @@
   "team_rank": 50,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 147,
+  "current_rank": null,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "1-5",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -5.381,
+      "matches": 6,
+      "rank_weight": 174,
+      "rank_overall": 1924,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34949058132",
-      "opponent_rank": 200,
-      "opponent_name": "Manny Psikararkis",
-      "method": "Fall 1:57"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34937474132",
-      "opponent_rank": 124,
-      "opponent_name": "Andrew Wilson",
-      "method": "Dec 6-2"
+      "opponent_id": "34937673132",
+      "opponent_rank": 74,
+      "opponent_name": "Matt Waddell",
+      "method": "Fall 5:26"
     }
   },
   "match_list": [
@@ -52,9 +54,9 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 174,
-      "opponent_rank": 70,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "3:57",
       "event": "Black Knight Invite"
@@ -66,7 +68,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": 124,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-2",
@@ -80,7 +82,7 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 55,
       "opponent_weight": 174,
-      "opponent_rank": 123,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "10-0",
@@ -94,11 +96,11 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 174,
-      "opponent_rank": 200,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:57",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -108,11 +110,11 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 184,
-      "opponent_rank": 122,
+      "opponent_rank": 74,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:26",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -122,7 +124,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 174,
-      "opponent_rank": 116,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "12-4",

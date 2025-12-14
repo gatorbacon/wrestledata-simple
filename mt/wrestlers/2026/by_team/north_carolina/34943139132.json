@@ -6,10 +6,10 @@
   "team_rank": 46,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 77,
+  "current_rank": null,
   "record": {
     "overall": "3-3",
-    "vs_ranked": "3-3",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,22 +24,29 @@
     "bonus_rate": 0.667,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.382,
+      "matches": 5,
+      "rank_weight": 97,
+      "rank_overall": 1130,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 3,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34943145132",
-      "opponent_rank": 40,
-      "opponent_name": "Sabino Portella",
-      "method": "M. For."
+      "opponent_id": "34935442132",
+      "opponent_rank": 75,
+      "opponent_name": "Brody Murray",
+      "method": "MD 14-3"
     },
     "worst_loss": {
       "opponent_id": "34945529132",
-      "opponent_rank": 75,
+      "opponent_rank": 54,
       "opponent_name": "Colt Campbell",
       "method": "Fall 6:57"
     }
@@ -52,7 +59,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 174,
-      "opponent_rank": 78,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "14-5",
@@ -66,11 +73,11 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 174,
-      "opponent_rank": 75,
+      "opponent_rank": 54,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:57",
       "event": "Mountaineer Open"
     },
     {
@@ -80,7 +87,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 52,
       "opponent_weight": 174,
-      "opponent_rank": 145,
+      "opponent_rank": 75,
       "result": "W",
       "method": "MD",
       "score": "14-3",
@@ -94,7 +101,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 174,
-      "opponent_rank": 40,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -108,7 +115,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 174,
-      "opponent_rank": 30,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -122,7 +129,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 174,
-      "opponent_rank": 40,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "7-3",

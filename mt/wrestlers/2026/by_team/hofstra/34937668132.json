@@ -6,10 +6,10 @@
   "team_rank": 69,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 138,
+  "current_rank": null,
   "record": {
     "overall": "2-7",
-    "vs_ranked": "2-7",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.755,
+      "matches": 9,
+      "rank_weight": 153,
+      "rank_overall": 1683,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 7,
+    "ranked_wins": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34948614132",
-      "opponent_rank": 139,
-      "opponent_name": "Riley McPherson",
-      "method": "Dec 4-2"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34934326132",
-      "opponent_rank": 140,
-      "opponent_name": "Tristen Hitchcock",
-      "method": "Dec 6-0"
+      "opponent_id": "34937323132",
+      "opponent_rank": 68,
+      "opponent_name": "Daniel Bittner",
+      "method": "Dec 5-2"
     }
   },
   "match_list": [
@@ -54,9 +56,9 @@
       "opponent_weight": 285,
       "opponent_rank": 13,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:28",
       "event": "vs. Wisconsin"
     },
     {
@@ -66,7 +68,7 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 55,
       "opponent_weight": 285,
-      "opponent_rank": 116,
+      "opponent_rank": 68,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -80,9 +82,9 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 285,
-      "opponent_rank": 38,
+      "opponent_rank": 32,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-3",
       "duration": "2:00",
       "event": "Keystone Classic"
@@ -94,11 +96,11 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": 49,
+      "opponent_rank": 39,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:51",
       "event": "vs. Hofstra"
     },
     {
@@ -108,11 +110,11 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 285,
-      "opponent_rank": 108,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:55",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -122,11 +124,11 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 285,
-      "opponent_rank": 184,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:41",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -136,7 +138,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 140,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-0",
@@ -150,7 +152,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 123,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -164,7 +166,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 285,
-      "opponent_rank": 139,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-2",

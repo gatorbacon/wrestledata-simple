@@ -6,10 +6,10 @@
   "team_rank": 67,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 168,
+  "current_rank": 74,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-5",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,17 +24,24 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.402,
+      "matches": 5,
+      "rank_weight": 161,
+      "rank_overall": 1790,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34949045132",
-      "opponent_rank": 115,
+      "opponent_rank": 67,
       "opponent_name": "Brendan Gilchrist",
       "method": "SV-1 4-1"
     }
@@ -47,7 +54,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 285,
-      "opponent_rank": 45,
+      "opponent_rank": 36,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -61,11 +68,11 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 285,
-      "opponent_rank": 55,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:52",
       "event": "vs. North Carolina"
     },
     {
@@ -75,11 +82,11 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 285,
-      "opponent_rank": 53,
+      "opponent_rank": 41,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:50",
       "event": "vs. Davidson"
     },
     {
@@ -89,7 +96,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 285,
-      "opponent_rank": 115,
+      "opponent_rank": 67,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -105,9 +112,9 @@
       "opponent_weight": 285,
       "opponent_rank": 12,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:29",
       "event": "Michigan State Open"
     }
   ]

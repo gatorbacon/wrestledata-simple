@@ -9,7 +9,7 @@
   "current_rank": 20,
   "record": {
     "overall": "4-3",
-    "vs_ranked": "4-3",
+    "vs_ranked": "2-2",
     "vs_top10": "0-1",
     "vs_top25": "1-2"
   },
@@ -24,11 +24,18 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.265,
+      "matches": 6,
+      "rank_weight": 27,
+      "rank_overall": 231,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 3,
+    "ranked_wins": 2,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -38,10 +45,10 @@
       "method": "SV-1 4-1"
     },
     "worst_loss": {
-      "opponent_id": "34943993132",
-      "opponent_rank": 54,
-      "opponent_name": "Seth Mendoza",
-      "method": "MD 11-3"
+      "opponent_id": "34945134132",
+      "opponent_rank": 14,
+      "opponent_name": "Stoney Buell",
+      "method": "Dec 9-7"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 35,
       "opponent_weight": 157,
-      "opponent_rank": 50,
+      "opponent_rank": 41,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -80,7 +87,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 149,
-      "opponent_rank": 54,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -122,7 +129,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 157,
-      "opponent_rank": 208,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "9-1",
@@ -136,11 +143,11 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 157,
-      "opponent_rank": 65,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:55",
       "event": "Tiger Style Invite"
     }
   ]

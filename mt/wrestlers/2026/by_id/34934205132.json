@@ -6,10 +6,10 @@
   "team_rank": 78,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 166,
+  "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,29 +20,26 @@
     "si_plus": 121.0,
     "df_plus": 87.9,
     "apr_plus": 90.8,
-    "pin_rate": 1.0,
+    "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.246,
+      "matches": 2,
+      "rank_weight": 148,
+      "rank_overall": 1354,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934257132",
-      "opponent_rank": 198,
-      "opponent_name": "Christian Leonard",
-      "method": "TF 17-2 5:47"
-    },
-    "worst_loss": {
-      "opponent_id": "34937496132",
-      "opponent_rank": 99,
-      "opponent_name": "Grant Kress",
-      "method": "TF 20-5 2:58"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,9 +49,9 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 165,
-      "opponent_rank": 99,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-5",
       "duration": "2:58",
       "event": "Southeast Open"
@@ -66,9 +63,9 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 165,
-      "opponent_rank": 198,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "5:47",
       "event": "Southeast Open"

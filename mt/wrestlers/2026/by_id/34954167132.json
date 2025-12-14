@@ -6,10 +6,10 @@
   "team_rank": 29,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 78,
+  "current_rank": 55,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "4-2",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.29,
+      "matches": 6,
+      "rank_weight": 65,
+      "rank_overall": 667,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 2,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34946737132",
-      "opponent_rank": 96,
-      "opponent_name": "Logan Alexander",
-      "method": "MD 10-0"
+      "opponent_id": "34939067132",
+      "opponent_rank": 65,
+      "opponent_name": "Hunter Heflin",
+      "method": "Dec 2-0"
     },
     "worst_loss": {
-      "opponent_id": "34957138132",
-      "opponent_rank": 153,
-      "opponent_name": "Ellis Kirsch",
-      "method": "MD 13-3"
+      "opponent_id": "34934144132",
+      "opponent_rank": 27,
+      "opponent_name": "Evan Tallmadge",
+      "method": "Dec 8-2"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 133,
-      "opponent_rank": 29,
+      "opponent_rank": 27,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -66,7 +73,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 133,
-      "opponent_rank": 153,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "13-3",
@@ -80,11 +87,11 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 133,
-      "opponent_rank": 108,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:46",
       "event": "Lock Haven Open I"
     },
     {
@@ -94,7 +101,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 133,
-      "opponent_rank": 109,
+      "opponent_rank": 65,
       "result": "W",
       "method": "DEC",
       "score": "7-0",
@@ -108,7 +115,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 133,
-      "opponent_rank": 96,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "10-0",
@@ -122,7 +129,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 133,
-      "opponent_rank": 109,
+      "opponent_rank": 65,
       "result": "W",
       "method": "DEC",
       "score": "2-0",

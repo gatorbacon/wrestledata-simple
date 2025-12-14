@@ -6,10 +6,10 @@
   "team_rank": 53,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 128,
+  "current_rank": null,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "2-6",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.448,
+      "matches": 8,
+      "rank_weight": 155,
+      "rank_overall": 1622,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 6,
+    "ranked_wins": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34935978132",
-      "opponent_rank": 136,
-      "opponent_name": "Alex Reed",
-      "method": "SV-3 8-5"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34934169132",
-      "opponent_rank": 127,
-      "opponent_name": "Jaxson Rosselli",
-      "method": "Dec 12-7"
+      "opponent_id": "34952955132",
+      "opponent_rank": 70,
+      "opponent_name": "Caden Barrientos",
+      "method": "Dec 5-1"
     }
   },
   "match_list": [
@@ -52,9 +54,9 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 125,
-      "opponent_rank": 52,
+      "opponent_rank": 48,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-2",
       "duration": "5:40",
       "event": "Keystone Classic"
@@ -66,7 +68,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 125,
-      "opponent_rank": 136,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -80,7 +82,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 125,
-      "opponent_rank": 20,
+      "opponent_rank": 18,
       "result": "L",
       "method": "MD",
       "score": "13-2",
@@ -94,7 +96,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 125,
-      "opponent_rank": 104,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "13-2",
@@ -108,11 +110,11 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 125,
-      "opponent_rank": 98,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:29",
       "event": "Michigan State Open"
     },
     {
@@ -122,7 +124,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 125,
-      "opponent_rank": 173,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "16-3",
@@ -136,7 +138,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 49,
       "opponent_weight": 125,
-      "opponent_rank": 126,
+      "opponent_rank": 70,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -150,7 +152,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 125,
-      "opponent_rank": 127,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "12-7",

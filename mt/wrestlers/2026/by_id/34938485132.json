@@ -6,10 +6,10 @@
   "team_rank": 45,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 30,
+  "current_rank": 29,
   "record": {
     "overall": "7-2",
-    "vs_ranked": "7-2",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,29 @@
     "bonus_rate": 0.429,
     "majors": 3,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.771,
+      "matches": 8,
+      "rank_weight": 37,
+      "rank_overall": 309,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 3,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34944785132",
-      "opponent_rank": 33,
+      "opponent_rank": 31,
       "opponent_name": "Conner Harer",
       "method": "Dec 8-6"
     },
     "worst_loss": {
       "opponent_id": "34934162132",
-      "opponent_rank": 59,
+      "opponent_rank": 47,
       "opponent_name": "Vince Bouzakis",
       "method": "M. For."
     }
@@ -52,7 +59,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": 33,
+      "opponent_rank": 31,
       "result": "W",
       "method": "DEC",
       "score": "8-6",
@@ -66,7 +73,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 157,
-      "opponent_rank": 55,
+      "opponent_rank": 44,
       "result": "W",
       "method": "DEC",
       "score": "8-3",
@@ -80,7 +87,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 157,
-      "opponent_rank": 117,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-4",
@@ -94,7 +101,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 157,
-      "opponent_rank": 129,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "13-3",
@@ -108,7 +115,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": 213,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "12-2",
@@ -122,7 +129,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 29,
       "opponent_weight": 157,
-      "opponent_rank": 61,
+      "opponent_rank": 48,
       "result": "W",
       "method": "DEC",
       "score": "8-6",
@@ -136,7 +143,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 157,
-      "opponent_rank": 164,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "12-4",
@@ -150,7 +157,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 157,
-      "opponent_rank": 59,
+      "opponent_rank": 47,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -166,9 +173,9 @@
       "opponent_weight": 157,
       "opponent_rank": 24,
       "result": "L",
-      "method": "DEC",
+      "method": "INJ",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:00",
       "event": "Navy Classic"
     }
   ]

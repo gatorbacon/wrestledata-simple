@@ -6,10 +6,10 @@
   "team_rank": 55,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 125,
+  "current_rank": null,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "2-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.37,
+      "matches": 3,
+      "rank_weight": 69,
+      "rank_overall": 637,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34950410132",
-      "opponent_rank": 133,
-      "opponent_name": "Noah Kochman",
-      "method": "Dec 7-0"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34935897132",
-      "opponent_rank": 59,
+      "opponent_rank": 47,
       "opponent_name": "Nate Taylor",
       "method": "Dec 5-4"
     }
@@ -52,11 +54,11 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 141,
-      "opponent_rank": 217,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:24",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -66,7 +68,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 141,
-      "opponent_rank": 133,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-0",
@@ -80,7 +82,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 141,
-      "opponent_rank": 59,
+      "opponent_rank": 47,
       "result": "L",
       "method": "DEC",
       "score": "5-4",

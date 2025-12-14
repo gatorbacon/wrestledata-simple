@@ -6,10 +6,10 @@
   "team_rank": 39,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 129,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.306,
+      "matches": 5,
+      "rank_weight": 136,
+      "rank_overall": 1372,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34944010132",
-      "opponent_rank": 130,
-      "opponent_name": "Nico Calello",
-      "method": "MD 16-4"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34933977132",
-      "opponent_rank": 79,
-      "opponent_name": "Nick Corday",
-      "method": "Dec 8-7"
+      "opponent_id": "34945148132",
+      "opponent_rank": 41,
+      "opponent_name": "Ashton Jackson",
+      "method": "MD 9-1"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 125,
-      "opponent_rank": 57,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "11-6",
@@ -66,7 +68,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 125,
-      "opponent_rank": 45,
+      "opponent_rank": 41,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -80,7 +82,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 125,
-      "opponent_rank": 130,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "16-4",
@@ -94,7 +96,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 125,
-      "opponent_rank": 79,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-7",
@@ -108,7 +110,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 40,
       "opponent_weight": 125,
-      "opponent_rank": 31,
+      "opponent_rank": 28,
       "result": "L",
       "method": "MD",
       "score": "11-0",

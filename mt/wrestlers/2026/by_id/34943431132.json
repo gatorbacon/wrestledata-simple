@@ -20,11 +20,18 @@
     "si_plus": 114.7,
     "df_plus": 108.2,
     "apr_plus": 98.5,
-    "pin_rate": 0.5,
+    "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.785,
+      "matches": 2,
+      "rank_weight": 18,
+      "rank_overall": 148,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -61,9 +68,9 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 174,
-      "opponent_rank": 148,
+      "opponent_rank": 76,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:37",
       "event": "vs. Presbyterian"

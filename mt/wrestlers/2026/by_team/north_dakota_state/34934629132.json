@@ -6,10 +6,10 @@
   "team_rank": 74,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 169,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.155,
+      "matches": 2,
+      "rank_weight": 170,
+      "rank_overall": 1748,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34935784132",
-      "opponent_rank": 73,
-      "opponent_name": "Abdi Unle",
-      "method": "Dec 17-10"
+      "opponent_id": "34955800132",
+      "opponent_rank": 3,
+      "opponent_name": "Jore Volk",
+      "method": "TF 22-5 3:49"
     }
   },
   "match_list": [
@@ -47,9 +54,9 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 125,
-      "opponent_rank": 5,
+      "opponent_rank": 3,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "22-5",
       "duration": "3:49",
       "event": "Bison Open 2025"
@@ -61,7 +68,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 125,
-      "opponent_rank": 73,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "17-10",

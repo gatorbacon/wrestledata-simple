@@ -6,10 +6,10 @@
   "team_rank": 72,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 174,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.146,
+      "matches": 2,
+      "rank_weight": 123,
+      "rank_overall": 1057,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34951041132",
-      "opponent_rank": 220,
-      "opponent_name": "Joe Clark",
-      "method": "Fall 2:22"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34955625132",
-      "opponent_rank": 144,
-      "opponent_name": "Tyler Turzinski",
-      "method": "Dec 10-3"
+      "opponent_id": "34947354132",
+      "opponent_rank": 54,
+      "opponent_name": "Silas Stits",
+      "method": "Fall 0:37"
     }
   },
   "match_list": [
@@ -52,11 +54,11 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 149,
-      "opponent_rank": 71,
+      "opponent_rank": 54,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:37",
       "event": "Michigan State Open"
     },
     {
@@ -66,11 +68,11 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 157,
-      "opponent_rank": 220,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:22",
       "event": "Michigan State Open"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 157,
-      "opponent_rank": 144,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "10-3",

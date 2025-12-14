@@ -6,10 +6,10 @@
   "team_rank": 54,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 106,
+  "current_rank": 65,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "2-4",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.394,
+      "matches": 6,
+      "rank_weight": 146,
+      "rank_overall": 1134,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34944169132",
-      "opponent_rank": 107,
+      "opponent_rank": 66,
       "opponent_name": "Bryce Shelton",
       "method": "Dec 5-0"
     },
     "worst_loss": {
-      "opponent_id": "34934358132",
-      "opponent_rank": 105,
-      "opponent_name": "Evan Gosz",
-      "method": "MD 11-3"
+      "opponent_id": "34950415132",
+      "opponent_rank": 52,
+      "opponent_name": "Dylan Ross",
+      "method": "Dec 4-0"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 149,
-      "opponent_rank": 105,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -66,7 +73,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 149,
-      "opponent_rank": 67,
+      "opponent_rank": 52,
       "result": "L",
       "method": "DEC",
       "score": "4-0",
@@ -80,7 +87,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 149,
-      "opponent_rank": 107,
+      "opponent_rank": 66,
       "result": "W",
       "method": "DEC",
       "score": "5-0",
@@ -94,7 +101,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 149,
-      "opponent_rank": 75,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -108,7 +115,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 149,
-      "opponent_rank": 163,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "12-9",
@@ -122,7 +129,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 149,
-      "opponent_rank": 37,
+      "opponent_rank": 32,
       "result": "L",
       "method": "MD",
       "score": "12-1",

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "iowa_state",
+  "team_name": "Iowa State",
+  "name": "Iowa State",
+  "abbreviation": "ISU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "Big 12",
+  "location": {
+    "state": "IA"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758831150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34940838132",
+      "133": "34940706132",
+      "141": "34940714132",
+      "149": "34940709132",
+      "157": "34940864132",
+      "165": "34940704132",
+      "174": "34940708132",
+      "184": "34940807132",
+      "197": "34940832132",
+      "285": "34940702132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-12T18:19:25.898465Z"
+}

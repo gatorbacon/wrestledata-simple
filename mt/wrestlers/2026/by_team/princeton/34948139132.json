@@ -6,10 +6,10 @@
   "team_rank": 38,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 49,
+  "current_rank": null,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "2-3",
+    "vs_ranked": "1-2",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.375,
+      "matches": 5,
+      "rank_weight": 62,
+      "rank_overall": 632,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34943404132",
-      "opponent_rank": 55,
+      "opponent_rank": 43,
       "opponent_name": "Evin Gursoy",
       "method": "SV-3 6-3"
     },
     "worst_loss": {
-      "opponent_id": "34939056132",
-      "opponent_rank": 113,
-      "opponent_name": "Brendan Ferretti",
-      "method": "MD 8-0"
+      "opponent_id": "34964380132",
+      "opponent_rank": 13,
+      "opponent_name": "Brett Ungar",
+      "method": "Dec 4-2"
     }
   },
   "match_list": [
@@ -66,7 +73,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 133,
-      "opponent_rank": 113,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -80,7 +87,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 133,
-      "opponent_rank": 55,
+      "opponent_rank": 43,
       "result": "W",
       "method": "DEC",
       "score": "6-3",
@@ -108,7 +115,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 133,
-      "opponent_rank": 77,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "12-3",

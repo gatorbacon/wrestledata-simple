@@ -6,10 +6,10 @@
   "team_rank": 48,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 198,
+  "current_rank": null,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-4",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.885,
+      "matches": 4,
+      "rank_weight": 196,
+      "rank_overall": 1868,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34954150132",
-      "opponent_rank": 158,
-      "opponent_name": "Ethan Lebin",
-      "method": "Dec 5-4"
+      "opponent_id": "34946719132",
+      "opponent_rank": 63,
+      "opponent_name": "Jordan Titus",
+      "method": "TF 20-3 4:03"
     }
   },
   "match_list": [
@@ -47,7 +54,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": 64,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-0",
@@ -61,7 +68,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 29,
       "opponent_weight": 141,
-      "opponent_rank": 158,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -75,7 +82,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 149,
-      "opponent_rank": 33,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -89,9 +96,9 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 141,
-      "opponent_rank": 94,
+      "opponent_rank": 63,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-3",
       "duration": "4:03",
       "event": "vs. West Virginia"

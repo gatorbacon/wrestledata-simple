@@ -6,7 +6,7 @@
   "team_rank": 49,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 184,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.772,
+      "matches": 1,
+      "rank_weight": 162,
+      "rank_overall": 1687,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34957117132",
-      "opponent_rank": 48,
+      "opponent_rank": 47,
       "opponent_name": "JJ Peace",
       "method": "MD 17-4"
     }
@@ -47,7 +54,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 125,
-      "opponent_rank": 48,
+      "opponent_rank": 47,
       "result": "L",
       "method": "MD",
       "score": "17-4",

@@ -6,10 +6,10 @@
   "team_rank": 63,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 117,
+  "current_rank": null,
   "record": {
     "overall": "5-9",
-    "vs_ranked": "5-9",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.6,
     "majors": 2,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.942,
+      "matches": 12,
+      "rank_weight": 144,
+      "rank_overall": 1713,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 9,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34938484132",
-      "opponent_rank": 94,
+      "opponent_rank": 68,
       "opponent_name": "Donovan Sprouse",
       "method": "Fall 5:49"
     },
     "worst_loss": {
-      "opponent_id": "34949053132",
-      "opponent_rank": 116,
-      "opponent_name": "Kevin Taylor",
-      "method": "Dec 5-2"
+      "opponent_id": "34948184132",
+      "opponent_rank": 69,
+      "opponent_name": "Conor McCloskey",
+      "method": "Fall 1:56"
     }
   },
   "match_list": [
@@ -52,11 +59,11 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 197,
-      "opponent_rank": 103,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:59",
       "event": "Cougar Clash"
     },
     {
@@ -66,7 +73,7 @@
       "opponent_team": "Little Rock",
       "opponent_team_rank": 12,
       "opponent_weight": 197,
-      "opponent_rank": 156,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "15-4",
@@ -80,9 +87,9 @@
       "opponent_team": "Little Rock",
       "opponent_team_rank": 12,
       "opponent_weight": 197,
-      "opponent_rank": 104,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "1:42",
       "event": "Cougar Clash"
@@ -94,11 +101,11 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 197,
-      "opponent_rank": 83,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:28",
       "event": "Cougar Clash"
     },
     {
@@ -108,11 +115,11 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 197,
-      "opponent_rank": 82,
+      "opponent_rank": 62,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:41",
       "event": "Big Red Invitational"
     },
     {
@@ -122,7 +129,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 197,
-      "opponent_rank": 139,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "8-0",
@@ -136,11 +143,11 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 197,
-      "opponent_rank": 94,
+      "opponent_rank": 68,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:49",
       "event": "Big Red Invitational"
     },
     {
@@ -150,7 +157,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 197,
-      "opponent_rank": 174,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -164,7 +171,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 197,
-      "opponent_rank": 116,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -178,9 +185,9 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 197,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "23-7",
       "duration": "6:19",
       "event": "Army Open"
@@ -192,7 +199,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 197,
-      "opponent_rank": 82,
+      "opponent_rank": 62,
       "result": "L",
       "method": "MD",
       "score": "12-1",
@@ -206,7 +213,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 197,
-      "opponent_rank": 166,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -220,9 +227,9 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 197,
-      "opponent_rank": 52,
+      "opponent_rank": 45,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "4:01",
       "event": "Princeton Open"
@@ -234,11 +241,11 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 197,
-      "opponent_rank": 100,
+      "opponent_rank": 69,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:56",
       "event": "Princeton Open"
     }
   ]

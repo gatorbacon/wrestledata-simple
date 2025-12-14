@@ -6,12 +6,12 @@
   "team_rank": 5,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 79,
+  "current_rank": null,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "1-5",
+    "vs_ranked": "1-2",
     "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 8.0,
@@ -24,24 +24,31 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.391,
+      "matches": 5,
+      "rank_weight": 84,
+      "rank_overall": 853,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34944171132",
-      "opponent_rank": 82,
+      "opponent_rank": 56,
       "opponent_name": "Gavin Caprella",
       "method": "Dec 8-6"
     },
     "worst_loss": {
-      "opponent_id": "34943988132",
-      "opponent_rank": 181,
-      "opponent_name": "Boogie Harris",
-      "method": "M. For."
+      "opponent_id": "34943451132",
+      "opponent_rank": 18,
+      "opponent_name": "Tyler Knox",
+      "method": "Dec 13-9"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 133,
-      "opponent_rank": 181,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -66,7 +73,7 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 26,
       "opponent_weight": 133,
-      "opponent_rank": 38,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "10-9",
@@ -94,7 +101,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 133,
-      "opponent_rank": 82,
+      "opponent_rank": 56,
       "result": "W",
       "method": "DEC",
       "score": "8-6",
@@ -108,7 +115,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 133,
-      "opponent_rank": 22,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "11-9",

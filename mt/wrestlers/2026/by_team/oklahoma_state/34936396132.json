@@ -9,7 +9,7 @@
   "current_rank": 9,
   "record": {
     "overall": "5-1",
-    "vs_ranked": "5-1",
+    "vs_ranked": "3-1",
     "vs_top10": "0-1",
     "vs_top25": "1-1"
   },
@@ -20,14 +20,21 @@
     "si_plus": 114.6,
     "df_plus": 110.5,
     "apr_plus": 98.6,
-    "pin_rate": 0.6,
+    "pin_rate": 0.0,
     "bonus_rate": 0.8,
     "majors": 1,
-    "techs": 0,
-    "pins": 3
+    "techs": 3,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.126,
+      "matches": 6,
+      "rank_weight": 14,
+      "rank_overall": 110,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 3,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
@@ -66,9 +73,9 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": 77,
+      "opponent_rank": 56,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "22-6",
       "duration": "6:23",
       "event": "vs. Oklahoma State"
@@ -94,7 +101,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": 67,
+      "opponent_rank": 50,
       "result": "W",
       "method": "MD",
       "score": "10-2",
@@ -108,9 +115,9 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 285,
-      "opponent_rank": 136,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-4",
       "duration": "4:34",
       "event": "vs. Oklahoma State"
@@ -122,9 +129,9 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 19,
       "opponent_weight": 285,
-      "opponent_rank": 188,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:41",
       "event": "vs. Stanford"

@@ -6,10 +6,10 @@
   "team_rank": 67,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 168,
+  "current_rank": null,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-5",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.055,
+      "matches": 5,
+      "rank_weight": 146,
+      "rank_overall": 1723,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34945492132",
-      "opponent_rank": 136,
-      "opponent_name": "Reid Hiltunen",
-      "method": "Dec 5-1"
+      "opponent_id": "34943154132",
+      "opponent_rank": 37,
+      "opponent_name": "Robert Platt",
+      "method": "TF 15-0 5:16"
     }
   },
   "match_list": [
@@ -47,9 +54,9 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 197,
-      "opponent_rank": 20,
+      "opponent_rank": 19,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "5:40",
       "event": "vs. Purdue"
@@ -61,9 +68,9 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 197,
-      "opponent_rank": 39,
+      "opponent_rank": 37,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "5:16",
       "event": "vs. North Carolina"
@@ -75,9 +82,9 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 197,
-      "opponent_rank": 28,
+      "opponent_rank": 26,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "6:10",
       "event": "vs. Davidson"
@@ -89,7 +96,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 197,
-      "opponent_rank": 136,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -103,7 +110,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 43,
       "opponent_weight": 197,
-      "opponent_rank": 84,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-1",

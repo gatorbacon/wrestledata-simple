@@ -6,10 +6,10 @@
   "team_rank": 17,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 44,
+  "current_rank": null,
   "record": {
     "overall": "4-0",
-    "vs_ranked": "4-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,16 +24,23 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.747,
+      "matches": 4,
+      "rank_weight": 39,
+      "rank_overall": 313,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34939066132",
-      "opponent_rank": 58,
+      "opponent_rank": 46,
       "opponent_name": "Cooper Rathburn",
       "method": "Dec 5-2"
     },
@@ -47,7 +54,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": 140,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -61,7 +68,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": 172,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -75,7 +82,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 157,
-      "opponent_rank": 58,
+      "opponent_rank": 46,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -89,7 +96,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 157,
-      "opponent_rank": 137,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "2-1",

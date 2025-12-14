@@ -9,7 +9,7 @@
   "current_rank": 2,
   "record": {
     "overall": "6-0",
-    "vs_ranked": "6-0",
+    "vs_ranked": "5-0",
     "vs_top10": "3-0",
     "vs_top25": "5-0"
   },
@@ -20,14 +20,21 @@
     "si_plus": 112.2,
     "df_plus": 117.5,
     "apr_plus": 99.0,
-    "pin_rate": 0.167,
+    "pin_rate": 0.0,
     "bonus_rate": 0.333,
     "majors": 1,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 4.405,
+      "matches": 6,
+      "rank_weight": 3,
+      "rank_overall": 26,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
+    "ranked_wins": 5,
     "ranked_losses": 0,
     "top10_wins": 3,
     "top10_losses": 0,
@@ -89,7 +96,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 149,
-      "opponent_rank": 153,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-0",
@@ -119,7 +126,7 @@
       "opponent_weight": 141,
       "opponent_rank": 17,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "6:21",
       "event": "vs. Stanford"

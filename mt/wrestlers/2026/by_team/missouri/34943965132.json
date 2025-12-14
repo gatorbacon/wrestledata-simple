@@ -6,10 +6,10 @@
   "team_rank": 15,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 64,
+  "current_rank": null,
   "record": {
     "overall": "3-7",
-    "vs_ranked": "3-7",
+    "vs_ranked": "0-6",
     "vs_top10": "0-2",
     "vs_top25": "0-3"
   },
@@ -20,26 +20,28 @@
     "si_plus": 96.6,
     "df_plus": 96.8,
     "apr_plus": 99.5,
-    "pin_rate": 0.333,
+    "pin_rate": 0.0,
     "bonus_rate": 0.333,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.388,
+      "matches": 10,
+      "rank_weight": 123,
+      "rank_overall": 1131,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 7,
+    "ranked_wins": 0,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 2,
-    "win_over_highest_rank": {
-      "opponent_id": "34963119132",
-      "opponent_rank": 65,
-      "opponent_name": "Clay Giddens",
-      "method": "Dec 5-1"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34937097132",
-      "opponent_rank": 63,
+      "opponent_rank": 50,
       "opponent_name": "Kilian Schultz",
       "method": "Dec 5-2"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 57,
       "opponent_weight": 165,
-      "opponent_rank": 63,
+      "opponent_rank": 50,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -66,7 +68,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 165,
-      "opponent_rank": 54,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "12-5",
@@ -82,7 +84,7 @@
       "opponent_weight": 165,
       "opponent_rank": 20,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-5",
       "duration": "5:44",
       "event": "vs. Missouri"
@@ -122,9 +124,9 @@
       "opponent_team": "Little Rock",
       "opponent_team_rank": 12,
       "opponent_weight": 165,
-      "opponent_rank": 172,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-0",
       "duration": "6:13",
       "event": "Tiger Style Invite"
@@ -136,7 +138,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 21,
       "opponent_weight": 165,
-      "opponent_rank": 65,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-1",
@@ -150,9 +152,9 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 165,
-      "opponent_rank": 49,
+      "opponent_rank": 43,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:34",
       "event": "Tiger Style Invite"
@@ -164,11 +166,11 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 21,
       "opponent_weight": 165,
-      "opponent_rank": 56,
+      "opponent_rank": 47,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:16",
       "event": "Tiger Style Invite"
     },
     {
@@ -178,7 +180,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 165,
-      "opponent_rank": 170,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-3",

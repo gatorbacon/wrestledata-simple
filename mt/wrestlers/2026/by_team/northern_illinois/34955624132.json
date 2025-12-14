@@ -6,10 +6,10 @@
   "team_rank": 39,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 173,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,22 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.783,
+      "matches": 3,
+      "rank_weight": 209,
+      "rank_overall": 1688,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34933989132",
-      "opponent_rank": 215,
-      "opponent_name": "Sammy Agnello",
-      "method": "Fall 3:15"
-    },
-    "worst_loss": {
-      "opponent_id": "34951073132",
-      "opponent_rank": 144,
-      "opponent_name": "Dominic ferraro",
-      "method": "Fall 0:54"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,11 +49,11 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": 144,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:54",
       "event": "Michigan State Open"
     },
     {
@@ -66,11 +63,11 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 149,
-      "opponent_rank": 215,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:15",
       "event": "Michigan State Open"
     },
     {
@@ -80,11 +77,11 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 149,
-      "opponent_rank": 105,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:44",
       "event": "Michigan State Open"
     }
   ]

@@ -6,10 +6,10 @@
   "team_rank": 60,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 36,
+  "current_rank": 35,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "3-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-2",
     "vs_top25": "0-2"
   },
@@ -20,22 +20,29 @@
     "si_plus": 113.4,
     "df_plus": 98.4,
     "apr_plus": 98.3,
-    "pin_rate": 0.333,
+    "pin_rate": 0.0,
     "bonus_rate": 0.667,
     "majors": 1,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.357,
+      "matches": 5,
+      "rank_weight": 40,
+      "rank_overall": 381,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "34934103132",
-      "opponent_rank": 43,
-      "opponent_name": "Nick Blackburn",
-      "method": "Dec 6-3"
+      "opponent_id": "34955409132",
+      "opponent_rank": 73,
+      "opponent_name": "Charles Curtis",
+      "method": "MD 18-6"
     },
     "worst_loss": {
       "opponent_id": "34962192132",
@@ -52,7 +59,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 141,
-      "opponent_rank": 43,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-3",
@@ -68,7 +75,7 @@
       "opponent_weight": 141,
       "opponent_rank": 1,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "24-7",
       "duration": "6:08",
       "event": "vs. Ohio State"
@@ -80,7 +87,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 141,
-      "opponent_rank": 138,
+      "opponent_rank": 73,
       "result": "W",
       "method": "MD",
       "score": "18-6",
@@ -108,9 +115,9 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 141,
-      "opponent_rank": 80,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-2",
       "duration": "5:23",
       "event": "Clarion Open"

@@ -6,10 +6,10 @@
   "team_rank": 51,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 177,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.7,
+      "matches": 3,
+      "rank_weight": 137,
+      "rank_overall": 1213,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34943848132",
-      "opponent_rank": 228,
-      "opponent_name": "Charlie Gessford",
-      "method": "Fall 2:40"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34944523132",
-      "opponent_rank": 145,
-      "opponent_name": "Jabari Hinson",
-      "method": "Dec 3-1"
+      "opponent_id": "34955736132",
+      "opponent_rank": 43,
+      "opponent_name": "Gunnar Myers",
+      "method": "Dec 6-5"
     }
   },
   "match_list": [
@@ -52,11 +54,11 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": 228,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:40",
       "event": "Findlay Open"
     },
     {
@@ -66,7 +68,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": 145,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "3-1",
@@ -80,7 +82,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 40,
       "opponent_weight": 157,
-      "opponent_rank": 54,
+      "opponent_rank": 43,
       "result": "L",
       "method": "DEC",
       "score": "6-5",

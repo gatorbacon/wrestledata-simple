@@ -6,10 +6,10 @@
   "team_rank": 54,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 172,
+  "current_rank": null,
   "record": {
     "overall": "0-8",
-    "vs_ranked": "0-8",
+    "vs_ranked": "0-7",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.032,
+      "matches": 8,
+      "rank_weight": 154,
+      "rank_overall": 1721,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 8,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34957596132",
-      "opponent_rank": 117,
-      "opponent_name": "Joey Schneck",
-      "method": "MD 11-3"
+      "opponent_id": "34935432132",
+      "opponent_rank": 65,
+      "opponent_name": "Ethan Vergara",
+      "method": "MD 9-1"
     }
   },
   "match_list": [
@@ -47,7 +54,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 285,
-      "opponent_rank": 31,
+      "opponent_rank": 26,
       "result": "L",
       "method": "MD",
       "score": "14-3",
@@ -61,11 +68,11 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 285,
-      "opponent_rank": 25,
+      "opponent_rank": 22,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:54",
       "event": "vs. Gardner-Webb"
     },
     {
@@ -75,7 +82,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 52,
       "opponent_weight": 285,
-      "opponent_rank": 107,
+      "opponent_rank": 65,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -91,9 +98,9 @@
       "opponent_weight": 285,
       "opponent_rank": 10,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:53",
       "event": "Black Knight Invite"
     },
     {
@@ -103,7 +110,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": 77,
+      "opponent_rank": 56,
       "result": "L",
       "method": "DEC",
       "score": "9-2",
@@ -117,7 +124,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 285,
-      "opponent_rank": 117,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -131,7 +138,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": 82,
+      "opponent_rank": 60,
       "result": "L",
       "method": "MD",
       "score": "12-1",
@@ -145,9 +152,9 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 285,
-      "opponent_rank": 38,
+      "opponent_rank": 32,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-3",
       "duration": "4:46",
       "event": "vs. Rutgers"

@@ -6,10 +6,10 @@
   "team_rank": 61,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 158,
+  "current_rank": null,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "2-3",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.525,
+      "matches": 5,
+      "rank_weight": 184,
+      "rank_overall": 1645,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34949042132",
-      "opponent_rank": 176,
-      "opponent_name": "Calvin Pineda",
-      "method": "Dec 10-4"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34948503132",
-      "opponent_rank": 149,
-      "opponent_name": "Nico Romero",
-      "method": "Dec 8-1"
+      "opponent_id": "34938626132",
+      "opponent_rank": 53,
+      "opponent_name": "Alejandro Herrera-Rondon",
+      "method": "TF 15-0 1:14"
     }
   },
   "match_list": [
@@ -52,9 +54,9 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 165,
-      "opponent_rank": 70,
+      "opponent_rank": 53,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "1:14",
       "event": "Big Red Invitational"
@@ -66,7 +68,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 165,
-      "opponent_rank": 149,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-1",
@@ -80,7 +82,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 165,
-      "opponent_rank": 176,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "10-4",
@@ -94,7 +96,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 165,
-      "opponent_rank": 216,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -108,11 +110,11 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 165,
-      "opponent_rank": 147,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:48",
       "event": "Army Open"
     }
   ]

@@ -6,10 +6,10 @@
   "team_rank": 61,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 107,
+  "current_rank": null,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "4-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -20,26 +20,28 @@
     "si_plus": 102.6,
     "df_plus": 95.4,
     "apr_plus": 115.7,
-    "pin_rate": 1.0,
+    "pin_rate": 0.75,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 4
+    "techs": 1,
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 0.953,
+      "matches": 6,
+      "rank_weight": 41,
+      "rank_overall": 466,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 0,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34953850132",
-      "opponent_rank": 110,
-      "opponent_name": "Chris Betancourt",
-      "method": "Fall 0:49"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34938621132",
-      "opponent_rank": 56,
+      "opponent_rank": 44,
       "opponent_name": "Joey Fischer",
       "method": "MD 9-0"
     }
@@ -52,11 +54,11 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 133,
-      "opponent_rank": 144,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:00",
       "event": "Big Red Invitational"
     },
     {
@@ -66,11 +68,11 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 133,
-      "opponent_rank": 194,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:48",
       "event": "Big Red Invitational"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 133,
-      "opponent_rank": 56,
+      "opponent_rank": 44,
       "result": "L",
       "method": "MD",
       "score": "9-0",
@@ -94,9 +96,9 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 133,
-      "opponent_rank": 163,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-3",
       "duration": "6:23",
       "event": "Big Red Invitational"
@@ -122,11 +124,11 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 133,
-      "opponent_rank": 110,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:49",
       "event": "Army Open"
     }
   ]

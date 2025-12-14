@@ -6,10 +6,10 @@
   "team_rank": 52,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 134,
+  "current_rank": null,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "2-4",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.236,
+      "matches": 6,
+      "rank_weight": 154,
+      "rank_overall": 1352,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34937007132",
-      "opponent_rank": 138,
-      "opponent_name": "Dominic Serio",
-      "method": "Fall 3:00"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34943143132",
-      "opponent_rank": 127,
-      "opponent_name": "Cullen Kane",
-      "method": "Fall 4:30"
+      "opponent_id": "34955794132",
+      "opponent_rank": 22,
+      "opponent_name": "Charlie Millard",
+      "method": "TF 20-4 7:00"
     }
   },
   "match_list": [
@@ -52,11 +54,11 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": 127,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:30",
       "event": "Mountaineer Open"
     },
     {
@@ -66,11 +68,11 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 157,
-      "opponent_rank": 138,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:00",
       "event": "Mountaineer Open"
     },
     {
@@ -82,9 +84,9 @@
       "opponent_weight": 157,
       "opponent_rank": 18,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:32",
       "event": "Mountaineer Open"
     },
     {
@@ -94,7 +96,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 157,
-      "opponent_rank": 91,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "3-2",
@@ -110,7 +112,7 @@
       "opponent_weight": 157,
       "opponent_rank": 22,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-4",
       "duration": "7:00",
       "event": "Southeast Open"
@@ -122,7 +124,7 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 157,
-      "opponent_rank": 203,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "2-0",

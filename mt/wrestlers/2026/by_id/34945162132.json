@@ -6,10 +6,10 @@
   "team_rank": 17,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 37,
+  "current_rank": null,
   "record": {
     "overall": "5-3",
-    "vs_ranked": "5-3",
+    "vs_ranked": "4-3",
     "vs_top10": "0-1",
     "vs_top25": "0-3"
   },
@@ -24,18 +24,25 @@
     "bonus_rate": 0.6,
     "majors": 3,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.425,
+      "matches": 8,
+      "rank_weight": 45,
+      "rank_overall": 365,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 4,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "34939061132",
-      "opponent_rank": 60,
-      "opponent_name": "Jonathan Ley",
-      "method": "MD 9-1"
+      "opponent_id": "34971891132",
+      "opponent_rank": 55,
+      "opponent_name": "Luke Nichter",
+      "method": "MD 14-3"
     },
     "worst_loss": {
       "opponent_id": "34934120132",
@@ -80,7 +87,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": 76,
+      "opponent_rank": 55,
       "result": "W",
       "method": "MD",
       "score": "14-3",
@@ -108,7 +115,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 18,
       "opponent_weight": 157,
-      "opponent_rank": 103,
+      "opponent_rank": 62,
       "result": "W",
       "method": "MD",
       "score": "8-0",
@@ -122,7 +129,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 157,
-      "opponent_rank": 60,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "9-1",
@@ -136,7 +143,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": 158,
+      "opponent_rank": 74,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -150,7 +157,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 157,
-      "opponent_rank": 114,
+      "opponent_rank": 67,
       "result": "W",
       "method": "DEC",
       "score": "6-4",

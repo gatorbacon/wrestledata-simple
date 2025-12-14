@@ -6,10 +6,10 @@
   "team_rank": 32,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 106,
+  "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,27 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.728,
+      "matches": 2,
+      "rank_weight": 60,
+      "rank_overall": 533,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34944176132",
-      "opponent_rank": 115,
+      "opponent_rank": 68,
       "opponent_name": "Jake Doone",
       "method": "MD 16-4"
     },
-    "worst_loss": {
-      "opponent_id": "34934934132",
-      "opponent_rank": 32,
-      "opponent_name": "Joel Adams",
-      "method": "Dec 8-7"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +54,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 157,
-      "opponent_rank": 115,
+      "opponent_rank": 68,
       "result": "W",
       "method": "MD",
       "score": "16-4",
@@ -66,7 +68,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 23,
       "opponent_weight": 157,
-      "opponent_rank": 32,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-7",

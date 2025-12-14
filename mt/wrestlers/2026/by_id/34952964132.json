@@ -6,10 +6,10 @@
   "team_rank": 49,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 76,
+  "current_rank": 60,
   "record": {
     "overall": "3-6",
-    "vs_ranked": "3-6",
+    "vs_ranked": "0-4",
     "vs_top10": "0-1",
     "vs_top25": "0-3"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.166,
+      "matches": 9,
+      "rank_weight": 93,
+      "rank_overall": 1061,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 6,
+    "ranked_wins": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34936199132",
-      "opponent_rank": 81,
-      "opponent_name": "Coy Raines",
-      "method": "Dec 2-0"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34944177132",
-      "opponent_rank": 67,
-      "opponent_name": "Owen Heiser",
-      "method": "Fall 1:17"
+      "opponent_id": "34934308132",
+      "opponent_rank": 28,
+      "opponent_name": "Wolfgang Frable",
+      "method": "Dec 8-4"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 197,
-      "opponent_rank": 81,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -66,7 +68,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 197,
-      "opponent_rank": 30,
+      "opponent_rank": 28,
       "result": "L",
       "method": "DEC",
       "score": "8-4",
@@ -80,7 +82,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 197,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -94,7 +96,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 49,
       "opponent_weight": 197,
-      "opponent_rank": 93,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-0",
@@ -108,11 +110,11 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 197,
-      "opponent_rank": 118,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:38",
       "event": "Black Knight Invite"
     },
     {
@@ -122,7 +124,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 197,
-      "opponent_rank": 20,
+      "opponent_rank": 19,
       "result": "L",
       "method": "MD",
       "score": "14-5",
@@ -138,7 +140,7 @@
       "opponent_weight": 197,
       "opponent_rank": 8,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-2",
       "duration": "2:41",
       "event": "vs. Pittsburgh"
@@ -150,11 +152,11 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 197,
-      "opponent_rank": 67,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:17",
       "event": "Clarion Open"
     },
     {
@@ -164,9 +166,9 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 197,
-      "opponent_rank": 19,
+      "opponent_rank": 18,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-4",
       "duration": "3:12",
       "event": "Clarion Open"

@@ -9,7 +9,7 @@
   "current_rank": 4,
   "record": {
     "overall": "8-0",
-    "vs_ranked": "8-0",
+    "vs_ranked": "4-0",
     "vs_top10": "1-0",
     "vs_top25": "2-0"
   },
@@ -20,14 +20,21 @@
     "si_plus": 142.4,
     "df_plus": 109.8,
     "apr_plus": 104.5,
-    "pin_rate": 0.5,
+    "pin_rate": 0.125,
     "bonus_rate": 0.875,
     "majors": 3,
-    "techs": 0,
-    "pins": 4
+    "techs": 3,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 4.519,
+      "matches": 7,
+      "rank_weight": 5,
+      "rank_overall": 24,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 1,
     "top10_losses": 0,
@@ -47,9 +54,9 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": 161,
+      "opponent_rank": 75,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-2",
       "duration": "4:10",
       "event": "vs. Ohio State"
@@ -61,9 +68,9 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 157,
-      "opponent_rank": 62,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-5",
       "duration": "6:14",
       "event": "vs. Ohio State"
@@ -75,7 +82,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 3,
       "opponent_weight": 157,
-      "opponent_rank": 36,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "14-2",
@@ -117,9 +124,9 @@
       "opponent_team": "Wyoming",
       "opponent_team_rank": 22,
       "opponent_weight": 157,
-      "opponent_rank": 239,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "4:27",
       "event": "vs. Wyoming"
@@ -131,11 +138,11 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": 71,
+      "opponent_rank": 54,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:26",
       "event": "Clarion Open"
     },
     {
@@ -145,7 +152,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 157,
-      "opponent_rank": 27,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,

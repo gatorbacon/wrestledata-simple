@@ -6,10 +6,10 @@
   "team_rank": 20,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 65,
+  "current_rank": null,
   "record": {
     "overall": "5-3",
-    "vs_ranked": "5-3",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "0-3"
   },
@@ -24,16 +24,23 @@
     "bonus_rate": 0.6,
     "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 1.023,
+      "matches": 7,
+      "rank_weight": 51,
+      "rank_overall": 452,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 2,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34957108132",
-      "opponent_rank": 67,
+      "opponent_rank": 51,
       "opponent_name": "Kaden Milheim",
       "method": "Dec 5-2"
     },
@@ -52,7 +59,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 31,
       "opponent_weight": 157,
-      "opponent_rank": 214,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-0",
@@ -66,7 +73,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 157,
-      "opponent_rank": 67,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -96,9 +103,9 @@
       "opponent_weight": 157,
       "opponent_rank": 20,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:55",
       "event": "Tiger Style Invite"
     },
     {
@@ -108,11 +115,11 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 157,
-      "opponent_rank": 72,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:39",
       "event": "Tiger Style Invite"
     },
     {
@@ -122,7 +129,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 21,
       "opponent_weight": 157,
-      "opponent_rank": 167,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -150,11 +157,11 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": 105,
+      "opponent_rank": 63,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:51",
       "event": "vs. Purdue"
     }
   ]

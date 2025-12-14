@@ -6,7 +6,7 @@
   "team_rank": 22,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 239,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.494,
+      "matches": 2,
+      "rank_weight": 161,
+      "rank_overall": 1407,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +40,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34935274132",
-      "opponent_rank": 18,
+      "opponent_rank": 17,
       "opponent_name": "Collin Gaj",
       "method": "SV-1 9-6"
     },
     "worst_loss": {
       "opponent_id": "34934020132",
-      "opponent_rank": 111,
+      "opponent_rank": 65,
       "opponent_name": "Drayden Morton",
       "method": "Dec 5-4"
     }
@@ -52,7 +59,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 65,
       "opponent_weight": 157,
-      "opponent_rank": 111,
+      "opponent_rank": 65,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -66,7 +73,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 18,
       "opponent_weight": 149,
-      "opponent_rank": 18,
+      "opponent_rank": 17,
       "result": "W",
       "method": "DEC",
       "score": "9-6",
@@ -82,7 +89,7 @@
       "opponent_weight": 157,
       "opponent_rank": 4,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "4:27",
       "event": "vs. Wyoming"

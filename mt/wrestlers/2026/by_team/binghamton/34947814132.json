@@ -6,10 +6,10 @@
   "team_rank": 61,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 217,
+  "current_rank": null,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-5",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.169,
+      "matches": 5,
+      "rank_weight": 203,
+      "rank_overall": 1904,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34950410132",
-      "opponent_rank": 133,
-      "opponent_name": "Noah Kochman",
-      "method": "Fall 4:25"
+      "opponent_id": "34954146132",
+      "opponent_rank": 46,
+      "opponent_name": "Dylan Chappell",
+      "method": "Dec 2-1"
     }
   },
   "match_list": [
@@ -47,11 +54,11 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": 64,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:48",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -61,11 +68,11 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 55,
       "opponent_weight": 141,
-      "opponent_rank": 125,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:24",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -75,11 +82,11 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 141,
-      "opponent_rank": 133,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:25",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -89,7 +96,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 29,
       "opponent_weight": 141,
-      "opponent_rank": 58,
+      "opponent_rank": 46,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -103,7 +110,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 141,
-      "opponent_rank": 50,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-0",

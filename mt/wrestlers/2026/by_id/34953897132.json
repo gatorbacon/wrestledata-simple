@@ -6,10 +6,10 @@
   "team_rank": 71,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 189,
+  "current_rank": null,
   "record": {
     "overall": "0-9",
-    "vs_ranked": "0-9",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.787,
+      "matches": 9,
+      "rank_weight": 155,
+      "rank_overall": 1691,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 9,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34934701132",
-      "opponent_rank": 116,
-      "opponent_name": "Brandon Carr",
-      "method": "Dec 8-5"
+      "opponent_id": "34952968132",
+      "opponent_rank": 61,
+      "opponent_name": "Rafael Knapp",
+      "method": "Dec 7-3"
     }
   },
   "match_list": [
@@ -47,7 +54,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 174,
-      "opponent_rank": 64,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-4",
@@ -61,7 +68,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 49,
       "opponent_weight": 174,
-      "opponent_rank": 87,
+      "opponent_rank": 61,
       "result": "L",
       "method": "DEC",
       "score": "7-3",
@@ -75,7 +82,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 174,
-      "opponent_rank": 116,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-5",
@@ -89,7 +96,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 174,
-      "opponent_rank": 82,
+      "opponent_rank": 57,
       "result": "L",
       "method": "DEC",
       "score": "11-7",
@@ -103,7 +110,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": 85,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-4",
@@ -117,7 +124,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 174,
-      "opponent_rank": 91,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "17-11",
@@ -131,7 +138,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": 51,
+      "opponent_rank": 42,
       "result": "L",
       "method": "MD",
       "score": "14-3",
@@ -159,11 +166,11 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 174,
-      "opponent_rank": 50,
+      "opponent_rank": 41,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:07",
       "event": "vs. Lock Haven"
     }
   ]

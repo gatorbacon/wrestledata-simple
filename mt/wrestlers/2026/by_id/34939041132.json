@@ -6,10 +6,10 @@
   "team_rank": 1,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 33,
+  "current_rank": null,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "3-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -20,20 +20,27 @@
     "si_plus": 112.9,
     "df_plus": 114.9,
     "apr_plus": 94.9,
-    "pin_rate": 0.667,
+    "pin_rate": 0.0,
     "bonus_rate": 0.667,
     "majors": 0,
-    "techs": 0,
-    "pins": 2
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.87,
+      "matches": 4,
+      "rank_weight": 19,
+      "rank_overall": 295,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34943395132",
-      "opponent_rank": 34,
+      "opponent_rank": 29,
       "opponent_name": "Nick Fine",
       "method": "Dec 7-3"
     },
@@ -52,9 +59,9 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 49,
       "opponent_weight": 174,
-      "opponent_rank": 150,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "4:52",
       "event": "Black Knight Invite"
@@ -66,7 +73,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 174,
-      "opponent_rank": 34,
+      "opponent_rank": 29,
       "result": "W",
       "method": "DEC",
       "score": "7-3",
@@ -80,9 +87,9 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": 124,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "3:53",
       "event": "Black Knight Invite"

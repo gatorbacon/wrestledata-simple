@@ -6,7 +6,7 @@
   "team_rank": 71,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 168,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.684,
+      "matches": 2,
+      "rank_weight": 193,
+      "rank_overall": 1959,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34936030132",
-      "opponent_rank": 61,
+      "opponent_rank": 54,
       "opponent_name": "Curtis Nelson",
       "method": "Fall 2:22"
     }
@@ -47,11 +54,11 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 47,
       "opponent_weight": 125,
-      "opponent_rank": 38,
+      "opponent_rank": 44,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:32",
       "event": "vs. Virginia"
     },
     {
@@ -61,11 +68,11 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 125,
-      "opponent_rank": 61,
+      "opponent_rank": 54,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:22",
       "event": "vs. Lock Haven"
     }
   ]

@@ -6,10 +6,10 @@
   "team_rank": 67,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 77,
+  "current_rank": 58,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "2-5",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.9,
+      "matches": 7,
+      "rank_weight": 128,
+      "rank_overall": 983,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34949032132",
-      "opponent_rank": 34,
+      "opponent_rank": 30,
       "opponent_name": "Dakota Asuncion",
       "method": "Dec 8-3"
     },
     "worst_loss": {
-      "opponent_id": "34944358132",
-      "opponent_rank": 128,
-      "opponent_name": "Brayden Fahrbach",
-      "method": "Dec 7-5"
+      "opponent_id": "34948504132",
+      "opponent_rank": 48,
+      "opponent_name": "Austin McBurney",
+      "method": "Dec 5-4"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 149,
-      "opponent_rank": 33,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-2",
@@ -66,7 +73,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 149,
-      "opponent_rank": 51,
+      "opponent_rank": 43,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -80,7 +87,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 149,
-      "opponent_rank": 58,
+      "opponent_rank": 48,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -94,7 +101,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 149,
-      "opponent_rank": 34,
+      "opponent_rank": 30,
       "result": "W",
       "method": "DEC",
       "score": "8-3",
@@ -108,7 +115,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 149,
-      "opponent_rank": 128,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "7-5",
@@ -122,7 +129,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 149,
-      "opponent_rank": 78,
+      "opponent_rank": 59,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -136,7 +143,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 149,
-      "opponent_rank": 52,
+      "opponent_rank": 44,
       "result": "L",
       "method": "DEC",
       "score": "8-5",

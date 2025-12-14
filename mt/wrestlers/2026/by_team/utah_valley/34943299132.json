@@ -6,10 +6,10 @@
   "team_rank": 30,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 126,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.571,
+      "matches": 5,
+      "rank_weight": 141,
+      "rank_overall": 1652,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34962231132",
-      "opponent_rank": 143,
+      "opponent_rank": 75,
       "opponent_name": "Angel Cervantes",
       "method": "Fall 2:45"
     },
     "worst_loss": {
-      "opponent_id": "34940712132",
-      "opponent_rank": 120,
-      "opponent_name": "Rowan Udell",
-      "method": "Dec 5-4"
+      "opponent_id": "34944231132",
+      "opponent_rank": 42,
+      "opponent_name": "Karson Tompkins",
+      "method": "TF 15-0 4:10"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 197,
-      "opponent_rank": 67,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "12-4",
@@ -66,9 +73,9 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 197,
-      "opponent_rank": 46,
+      "opponent_rank": 42,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "4:10",
       "event": "Roadrunner Open"
@@ -80,11 +87,11 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 64,
       "opponent_weight": 197,
-      "opponent_rank": 143,
+      "opponent_rank": 75,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:45",
       "event": "Roadrunner Open"
     },
     {
@@ -94,7 +101,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 4,
       "opponent_weight": 197,
-      "opponent_rank": 120,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -108,7 +115,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 197,
-      "opponent_rank": 113,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "12-0",

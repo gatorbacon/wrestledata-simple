@@ -6,10 +6,10 @@
   "team_rank": 47,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 37,
+  "current_rank": 35,
   "record": {
     "overall": "4-3",
-    "vs_ranked": "4-3",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,26 +20,33 @@
     "si_plus": 110.3,
     "df_plus": 99.9,
     "apr_plus": 121.6,
-    "pin_rate": 1.0,
+    "pin_rate": 0.75,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 4
+    "techs": 1,
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 1.362,
+      "matches": 7,
+      "rank_weight": 36,
+      "rank_overall": 380,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 3,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34971903132",
-      "opponent_rank": 45,
+      "opponent_rank": 41,
       "opponent_name": "Ibrahim Ameer",
       "method": "Fall 2:03"
     },
     "worst_loss": {
       "opponent_id": "34939062132",
-      "opponent_rank": 35,
+      "opponent_rank": 33,
       "opponent_name": "Zyan Hall",
       "method": "Dec 13-6"
     }
@@ -52,7 +59,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 197,
-      "opponent_rank": 33,
+      "opponent_rank": 31,
       "result": "L",
       "method": "DEC",
       "score": "9-6",
@@ -66,9 +73,9 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 197,
-      "opponent_rank": 97,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "3:50",
       "event": "vs. Virginia"
@@ -80,7 +87,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 197,
-      "opponent_rank": 34,
+      "opponent_rank": 32,
       "result": "L",
       "method": "MD",
       "score": "13-5",
@@ -94,11 +101,11 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 197,
-      "opponent_rank": 82,
+      "opponent_rank": 62,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:03",
       "event": "Navy Classic"
     },
     {
@@ -108,11 +115,11 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 197,
-      "opponent_rank": 45,
+      "opponent_rank": 41,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:03",
       "event": "Navy Classic"
     },
     {
@@ -122,11 +129,11 @@
       "opponent_team": "Morgan State",
       "opponent_team_rank": 73,
       "opponent_weight": 197,
-      "opponent_rank": 157,
+      "opponent_rank": 77,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:05",
       "event": "Navy Classic"
     },
     {
@@ -136,7 +143,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 197,
-      "opponent_rank": 35,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "13-6",

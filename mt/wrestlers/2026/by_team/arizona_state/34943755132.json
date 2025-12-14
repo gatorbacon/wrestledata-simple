@@ -6,10 +6,10 @@
   "team_rank": 11,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 141,
+  "current_rank": null,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "1-7",
+    "vs_ranked": "0-4",
     "vs_top10": "0-1",
     "vs_top25": "0-3"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.987,
+      "matches": 7,
+      "rank_weight": 165,
+      "rank_overall": 1880,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 7,
+    "ranked_wins": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34955732132",
-      "opponent_rank": 160,
-      "opponent_name": "Marcell Booth",
-      "method": "Dec 15-13"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34934119132",
-      "opponent_rank": 124,
-      "opponent_name": "Cole O`Boyle",
-      "method": "Fall 6:37"
+      "opponent_id": "34939062132",
+      "opponent_rank": 33,
+      "opponent_name": "Zyan Hall",
+      "method": "Fall 2:33"
     }
   },
   "match_list": [
@@ -52,11 +54,11 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 197,
-      "opponent_rank": 35,
+      "opponent_rank": 33,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:33",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
     },
     {
@@ -66,7 +68,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 197,
-      "opponent_rank": 23,
+      "opponent_rank": 21,
       "result": "L",
       "method": "DEC",
       "score": "6-0",
@@ -82,7 +84,7 @@
       "opponent_weight": 197,
       "opponent_rank": 9,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "23-6",
       "duration": "6:20",
       "event": "vs. Oklahoma State"
@@ -94,11 +96,11 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 197,
-      "opponent_rank": 51,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:27",
       "event": "vs. Lehigh"
     },
     {
@@ -108,7 +110,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 40,
       "opponent_weight": 184,
-      "opponent_rank": 160,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "15-13",
@@ -122,11 +124,11 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 197,
-      "opponent_rank": 124,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:37",
       "event": "Michigan State Open"
     },
     {
@@ -136,11 +138,11 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 197,
-      "opponent_rank": 119,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:36",
       "event": "Michigan State Open"
     },
     {

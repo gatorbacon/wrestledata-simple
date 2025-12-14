@@ -6,7 +6,7 @@
   "team_rank": 35,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 41,
+  "current_rank": null,
   "record": {
     "overall": "1-3",
     "vs_ranked": "1-3",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.473,
+      "matches": 4,
+      "rank_weight": 74,
+      "rank_overall": 876,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +40,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34957583132",
-      "opponent_rank": 44,
+      "opponent_rank": 37,
       "opponent_name": "Dominic Solis",
       "method": "Dec 4-1"
     },
     "worst_loss": {
       "opponent_id": "34945831132",
-      "opponent_rank": 36,
+      "opponent_rank": 31,
       "opponent_name": "Derek Gilcher",
       "method": "Dec 2-0"
     }
@@ -66,7 +73,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 174,
-      "opponent_rank": 34,
+      "opponent_rank": 29,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -80,7 +87,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 35,
       "opponent_weight": 174,
-      "opponent_rank": 36,
+      "opponent_rank": 31,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -94,7 +101,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 174,
-      "opponent_rank": 44,
+      "opponent_rank": 37,
       "result": "W",
       "method": "DEC",
       "score": "4-1",

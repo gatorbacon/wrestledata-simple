@@ -6,10 +6,10 @@
   "team_rank": 61,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 126,
+  "current_rank": null,
   "record": {
     "overall": "7-6",
-    "vs_ranked": "7-6",
+    "vs_ranked": "1-5",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.571,
     "majors": 1,
     "techs": 0,
-    "pins": 3
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": -0.716,
+      "matches": 13,
+      "rank_weight": 106,
+      "rank_overall": 934,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
-    "ranked_losses": 6,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "34938689132",
-      "opponent_rank": 128,
-      "opponent_name": "Cody Hamilton",
+      "opponent_id": "34935052132",
+      "opponent_rank": 74,
+      "opponent_name": "William Morrow",
       "method": "Dec 4-1"
     },
     "worst_loss": {
-      "opponent_id": "34934380132",
-      "opponent_rank": 113,
-      "opponent_name": "Casper Stewart",
-      "method": "Fall 0:43"
+      "opponent_id": "34954155132",
+      "opponent_rank": 48,
+      "opponent_name": "Cade Wirnsberger",
+      "method": "Dec 6-1"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": 128,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -66,7 +73,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": 158,
+      "opponent_rank": 74,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -80,11 +87,11 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": 178,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:00",
       "event": "Big Red Invitational"
     },
     {
@@ -94,11 +101,11 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 157,
-      "opponent_rank": 230,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:17",
       "event": "Big Red Invitational"
     },
     {
@@ -108,11 +115,11 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 157,
-      "opponent_rank": 113,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:43",
       "event": "Army Open"
     },
     {
@@ -122,11 +129,11 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 157,
-      "opponent_rank": 29,
+      "opponent_rank": 28,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:54",
       "event": "Army Open"
     },
     {
@@ -136,11 +143,11 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": 140,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:20",
       "event": "Army Open"
     },
     {
@@ -150,7 +157,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 157,
-      "opponent_rank": 41,
+      "opponent_rank": 36,
       "result": "L",
       "method": "DEC",
       "score": "6-3",
@@ -164,7 +171,7 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 157,
-      "opponent_rank": 40,
+      "opponent_rank": 35,
       "result": "L",
       "method": "DEC",
       "score": "4-0",
@@ -178,7 +185,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 157,
-      "opponent_rank": 226,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-1",
@@ -192,7 +199,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 29,
       "opponent_weight": 157,
-      "opponent_rank": 61,
+      "opponent_rank": 48,
       "result": "L",
       "method": "DEC",
       "score": "6-1",
@@ -206,7 +213,7 @@
       "opponent_team": "Morgan State",
       "opponent_team_rank": 73,
       "opponent_weight": 157,
-      "opponent_rank": 218,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-2",
@@ -222,9 +229,9 @@
       "opponent_weight": 157,
       "opponent_rank": 9,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:31",
       "event": "Navy Classic"
     }
   ]

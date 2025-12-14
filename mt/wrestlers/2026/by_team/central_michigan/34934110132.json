@@ -6,10 +6,10 @@
   "team_rank": 51,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 82,
+  "current_rank": null,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "3-4",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.944,
+      "matches": 6,
+      "rank_weight": 88,
+      "rank_overall": 997,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 4,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34943915132",
-      "opponent_rank": 83,
+      "opponent_rank": 65,
       "opponent_name": "Gavin Ricketts",
       "method": "Dec 4-1"
     },
     "worst_loss": {
-      "opponent_id": "34933975132",
-      "opponent_rank": 88,
-      "opponent_name": "Ryan Boucher",
-      "method": "M. For."
+      "opponent_id": "34955417132",
+      "opponent_rank": 64,
+      "opponent_name": "Damarion Ross",
+      "method": "SV-1 4-1"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 184,
-      "opponent_rank": 83,
+      "opponent_rank": 65,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -66,7 +73,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 18,
       "opponent_weight": 184,
-      "opponent_rank": 78,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -80,7 +87,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 184,
-      "opponent_rank": 186,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "16-3",
@@ -94,7 +101,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 184,
-      "opponent_rank": 21,
+      "opponent_rank": 20,
       "result": "L",
       "method": "MD",
       "score": "15-7",
@@ -108,7 +115,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 40,
       "opponent_weight": 184,
-      "opponent_rank": 137,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "10-9",
@@ -122,7 +129,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 184,
-      "opponent_rank": 81,
+      "opponent_rank": 64,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -136,7 +143,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 184,
-      "opponent_rank": 88,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": null,

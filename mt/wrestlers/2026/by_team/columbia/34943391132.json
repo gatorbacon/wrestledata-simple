@@ -6,10 +6,10 @@
   "team_rank": 50,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 49,
+  "current_rank": 39,
   "record": {
     "overall": "5-4",
-    "vs_ranked": "5-4",
+    "vs_ranked": "2-3",
     "vs_top10": "0-1",
     "vs_top25": "0-3"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.8,
     "majors": 1,
     "techs": 0,
-    "pins": 3
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 0.711,
+      "matches": 9,
+      "rank_weight": 56,
+      "rank_overall": 539,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 4,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "34934407132",
-      "opponent_rank": 65,
-      "opponent_name": "BJ Russell",
-      "method": "Fall 0:29"
+      "opponent_id": "34947804132",
+      "opponent_rank": 59,
+      "opponent_name": "Cayden Bevis",
+      "method": "Dec 10-3"
     },
     "worst_loss": {
-      "opponent_id": "34939014132",
-      "opponent_rank": 47,
-      "opponent_name": "Lucas Cochran",
-      "method": "MD 12-2"
+      "opponent_id": "34950398132",
+      "opponent_rank": 22,
+      "opponent_name": "Connor Barket",
+      "method": "Dec 14-7"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 23,
+      "opponent_rank": 20,
       "result": "L",
       "method": "DEC",
       "score": "8-4",
@@ -66,7 +73,7 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 285,
-      "opponent_rank": 152,
+      "opponent_rank": 73,
       "result": "W",
       "method": "MD",
       "score": "13-0",
@@ -80,7 +87,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 285,
-      "opponent_rank": 47,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "12-2",
@@ -96,7 +103,7 @@
       "opponent_weight": 285,
       "opponent_rank": 6,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-5",
       "duration": "5:43",
       "event": "vs. Michigan"
@@ -108,11 +115,11 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 285,
-      "opponent_rank": 138,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:51",
       "event": "vs. Hofstra"
     },
     {
@@ -122,11 +129,11 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 35,
       "opponent_weight": 285,
-      "opponent_rank": 111,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:37",
       "event": "vs. Indiana"
     },
     {
@@ -136,11 +143,11 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 65,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:29",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -150,7 +157,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 285,
-      "opponent_rank": 80,
+      "opponent_rank": 59,
       "result": "W",
       "method": "DEC",
       "score": "10-3",
@@ -164,7 +171,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 285,
-      "opponent_rank": 25,
+      "opponent_rank": 22,
       "result": "L",
       "method": "DEC",
       "score": "14-7",

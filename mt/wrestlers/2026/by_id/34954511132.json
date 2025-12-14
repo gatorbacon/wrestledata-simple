@@ -6,10 +6,10 @@
   "team_rank": 75,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 203,
+  "current_rank": null,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-4",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.656,
+      "matches": 4,
+      "rank_weight": 209,
+      "rank_overall": 1833,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34935436132",
-      "opponent_rank": 134,
-      "opponent_name": "Alex Hutchcraft",
-      "method": "Dec 2-0"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,7 +49,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": 127,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -61,9 +63,9 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": 47,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-3",
       "duration": "6:27",
       "event": "Mountaineer Open"
@@ -75,7 +77,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 52,
       "opponent_weight": 157,
-      "opponent_rank": 134,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -89,7 +91,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 174,
-      "opponent_rank": 88,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-4",

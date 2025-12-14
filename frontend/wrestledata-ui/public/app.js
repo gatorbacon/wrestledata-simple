@@ -15,6 +15,19 @@ function safe(value, formatter) {
     return "2026"; // Or make dynamic later
   }
   
+  function teamNameToSlug(teamName) {
+    if (!teamName) return "";
+    let slug = teamName.toLowerCase();
+    slug = slug.replace(/\s+/g, "_");
+    // Remove punctuation (keep only word characters and underscores)
+    slug = slug.replace(/[^\w_]/g, "");
+    // Collapse multiple underscores
+    slug = slug.replace(/_+/g, "_");
+    // Strip leading/trailing underscores
+    slug = slug.replace(/^_+|_+$/g, "");
+    return slug;
+  }
+  
   // ===============================
   // Fetch Wrestler JSON
   // ===============================
@@ -44,8 +57,21 @@ function safe(value, formatter) {
     document.getElementById("wrestler-tagline").textContent =
       `#${safe(data.current_rank)} at ${safe(data.weight_class)} lbs`;
   
-    document.getElementById("wrestler-meta").textContent =
-      `${safe(data.team)} · Season ${safe(data.year)}`;
+    // Render team name as link
+    const metaEl = document.getElementById("wrestler-meta");
+    const teamName = safe(data.team);
+    const season = safe(data.year);
+    if (teamName && teamName !== "—") {
+      const teamSlug = teamNameToSlug(teamName);
+      const teamLink = document.createElement("a");
+      teamLink.href = `/team.html?team=${teamSlug}`;
+      teamLink.textContent = teamName;
+      metaEl.innerHTML = "";
+      metaEl.appendChild(teamLink);
+      metaEl.appendChild(document.createTextNode(` · Season ${season}`));
+    } else {
+      metaEl.textContent = `Season ${season}`;
+    }
   
     // Record
     const r = data.record || {};
@@ -68,6 +94,39 @@ function safe(value, formatter) {
     document.getElementById("metric-si-plus").textContent = safe(m.si_plus);
     document.getElementById("metric-df-plus").textContent = safe(m.df_plus);
     document.getElementById("metric-apr-plus").textContent = safe(m.apr_plus);
+    
+    // Mat Value
+    const mv = m.mat_value || {};
+    if (!m.mat_value) {
+      console.log("Mat Value not found in profile. Available metrics keys:", Object.keys(m));
+    } else {
+      console.log("Mat Value found:", mv);
+    }
+    document.getElementById("metric-mv").textContent =
+      safe(mv.mv_avg !== undefined && mv.mv_avg !== null ? mv.mv_avg.toFixed(3) : null);
+    
+    // MV Ranks
+    const rankWeight = mv.rank_weight;
+    document.getElementById("metric-mv-rank-weight").textContent =
+      rankWeight !== null && rankWeight !== undefined ? `#${rankWeight}` : "—";
+    
+    const rankOverall = mv.rank_overall;
+    document.getElementById("metric-mv-rank-overall").textContent =
+      rankOverall !== null && rankOverall !== undefined ? `#${rankOverall}` : "—";
+    
+    // MV Leaderboard link
+    const leaderboardLinkEl = document.getElementById("mv-leaderboard-link");
+    const weightClass = data.weight_class;
+    let leaderboardUrl = "/leaderboards/mat_value.html";
+    if (weightClass) {
+      leaderboardUrl += `?weight=${weightClass}`;
+    }
+    const link = document.createElement("a");
+    link.href = leaderboardUrl;
+    link.textContent = "View MV Leaderboard";
+    link.style.fontSize = "0.9em";
+    link.style.color = "#4a90e2";
+    leaderboardLinkEl.appendChild(link);
   
     renderImpactSummary(data.opponent_breakdown || {});
     renderMatchTable(data.match_list || []);
@@ -123,7 +182,19 @@ function safe(value, formatter) {
       }
       tr.appendChild(oppTd);
   
-      add(match.opponent_team);
+      // Opponent team with link
+      const oppTeamTd = document.createElement("td");
+      const oppTeamName = safe(match.opponent_team);
+      if (oppTeamName && oppTeamName !== "—") {
+        const teamSlug = teamNameToSlug(oppTeamName);
+        const teamLink = document.createElement("a");
+        teamLink.href = `/team.html?team=${teamSlug}`;
+        teamLink.textContent = oppTeamName;
+        oppTeamTd.appendChild(teamLink);
+      } else {
+        oppTeamTd.textContent = oppTeamName;
+      }
+      tr.appendChild(oppTeamTd);
       add(match.opponent_team_rank ? "#" + match.opponent_team_rank : "—");
       add(match.opponent_weight);
       add(match.opponent_rank ? "#" + match.opponent_rank : "—");

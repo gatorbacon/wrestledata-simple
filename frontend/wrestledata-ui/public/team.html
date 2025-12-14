@@ -24,31 +24,53 @@
           <div><span class="label">Bonus Rate:</span> <span id="tm-bonus"></span></div>
           <div><span class="label">Pin Rate:</span> <span id="tm-pin"></span></div>
           <div><span class="label">Tech Rate:</span> <span id="tm-tech"></span></div>
-          <div><span class="label">Ranked Win %:</span> <span id="tm-ranked-pct"></span></div>
+          <div><span class="label">Top 10 Win %:</span> <span id="tm-top10-pct"></span></div>
+          <div><span class="label">Top 33 Win %:</span> <span id="tm-top33-pct"></span></div>
+          <div><span class="label">W/L Record:</span> <span id="tm-wl-record"></span></div>
         </div>
       </div>
 
       <div class="card">
-        <h2>Highlights</h2>
-        <div class="card-body" id="team-highlights"></div>
+        <h2>Advanced Metrics</h2>
+        <div class="card-body">
+          <div><span class="label">SI+:</span> <span id="tm-si-plus"></span></div>
+          <div><span class="label">DF+:</span> <span id="tm-df-plus"></span></div>
+          <div><span class="label">APR+:</span> <span id="tm-apr-plus"></span></div>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <h2>Roster</h2>
+      <h2>Starting Roster</h2>
       <div class="table-wrapper">
-        <table id="roster-table">
+        <table id="starting-roster-table">
           <thead>
             <tr>
               <th>Weight</th>
               <th>Name</th>
               <th>Rank</th>
               <th>Record</th>
-              <th>vs Ranked</th>
-              <th>PD7</th>
               <th>Bonus Rate</th>
-              <th>Best Win</th>
-              <th>Worst Loss</th>
+              <th>SI+</th>
+              <th>DF+</th>
+              <th>APR+</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Remaining Roster</h2>
+      <div class="table-wrapper">
+        <table id="remaining-roster-table">
+          <thead>
+            <tr>
+              <th>Weight</th>
+              <th>Name</th>
+              <th>Record</th>
+              <th>Bonus Rate</th>
             </tr>
           </thead>
           <tbody></tbody>

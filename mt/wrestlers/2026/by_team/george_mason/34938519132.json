@@ -6,10 +6,10 @@
   "team_rank": 45,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 195,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -6.714,
+      "matches": 2,
+      "rank_weight": 232,
+      "rank_overall": 2036,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934209132",
-      "opponent_rank": 246,
-      "opponent_name": "Alex Chirdo",
-      "method": "Fall 1:39"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34948134132",
-      "opponent_rank": 150,
-      "opponent_name": "Cody Tavoso",
-      "method": "MD 14-2"
+      "opponent_id": "34934196132",
+      "opponent_rank": 73,
+      "opponent_name": "Eric Doran",
+      "method": "Fall 2:47"
     }
   },
   "match_list": [
@@ -52,11 +54,11 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 149,
-      "opponent_rank": 246,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:39",
       "event": "Shorty Hitchcock Memorial Open"
     },
     {
@@ -66,7 +68,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 157,
-      "opponent_rank": 150,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-2",
@@ -80,11 +82,11 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 157,
-      "opponent_rank": 147,
+      "opponent_rank": 73,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:47",
       "event": "Shorty Hitchcock Memorial Open"
     }
   ]

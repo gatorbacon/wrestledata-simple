@@ -6,10 +6,10 @@
   "team_rank": 22,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 234,
+  "current_rank": 78,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-2",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.338,
+      "matches": 2,
+      "rank_weight": 157,
+      "rank_overall": 1379,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34943256132",
-      "opponent_rank": 167,
-      "opponent_name": "Conlan Carlson",
-      "method": "Dec 9-6"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34933442132",
-      "opponent_rank": 256,
-      "opponent_name": "Cole Brooks",
-      "method": "Dec 5-1"
+      "opponent_id": "34936210132",
+      "opponent_rank": 18,
+      "opponent_name": "Derek Raike",
+      "method": "MD 13-3"
     }
   },
   "match_list": [
@@ -68,7 +70,7 @@
       "opponent_weight": 157,
       "opponent_rank": 7,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "4:47",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -80,7 +82,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 149,
-      "opponent_rank": 167,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "9-6",
@@ -94,7 +96,7 @@
       "opponent_team": "Wyoming",
       "opponent_team_rank": 22,
       "opponent_weight": 149,
-      "opponent_rank": 256,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -108,7 +110,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 149,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "8-0",

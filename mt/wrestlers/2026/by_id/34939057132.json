@@ -6,10 +6,10 @@
   "team_rank": 37,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 74,
+  "current_rank": null,
   "record": {
     "overall": "5-2",
-    "vs_ranked": "5-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.8,
     "majors": 2,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 0.908,
+      "matches": 7,
+      "rank_weight": 56,
+      "rank_overall": 481,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 0,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34957594132",
-      "opponent_rank": 75,
-      "opponent_name": "Michael Pizzuto",
-      "method": "MD 8-0"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34971917132",
-      "opponent_rank": 79,
+      "opponent_rank": 60,
       "opponent_name": "Patrick Kelly",
       "method": "Dec 8-7"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 149,
-      "opponent_rank": 75,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "8-0",
@@ -66,7 +68,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 149,
-      "opponent_rank": 150,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "9-3",
@@ -80,7 +82,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 149,
-      "opponent_rank": 132,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "9-0",
@@ -94,11 +96,11 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 149,
-      "opponent_rank": 240,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:42",
       "event": "Shorty Hitchcock Memorial Open"
     },
     {
@@ -108,11 +110,11 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 149,
-      "opponent_rank": 216,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:01",
       "event": "Shorty Hitchcock Memorial Open"
     },
     {
@@ -122,7 +124,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 149,
-      "opponent_rank": 79,
+      "opponent_rank": 60,
       "result": "L",
       "method": "DEC",
       "score": "8-7",
@@ -138,7 +140,7 @@
       "opponent_weight": 149,
       "opponent_rank": 13,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "3:56",
       "event": "Navy Classic"

@@ -6,10 +6,10 @@
   "team_rank": 59,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 26,
+  "current_rank": 24,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "3-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 2.628,
+      "matches": 4,
+      "rank_weight": 15,
+      "rank_overall": 172,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34946731132",
-      "opponent_rank": 44,
-      "opponent_name": "Mason Kernan",
-      "method": "Fall 1:27"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34957585132",
-      "opponent_rank": 23,
+      "opponent_rank": 22,
       "opponent_name": "Braxton Brown",
       "method": "Dec 6-5"
     }
@@ -52,11 +54,11 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 133,
-      "opponent_rank": 44,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:27",
       "event": "Southeast Open"
     },
     {
@@ -66,11 +68,11 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 133,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:25",
       "event": "Southeast Open"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 67,
       "opponent_weight": 133,
-      "opponent_rank": 174,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "9-4",
@@ -94,7 +96,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 133,
-      "opponent_rank": 23,
+      "opponent_rank": 22,
       "result": "L",
       "method": "DEC",
       "score": "6-5",

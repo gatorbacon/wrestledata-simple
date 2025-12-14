@@ -6,7 +6,7 @@
   "team_rank": 74,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 189,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.647,
+      "matches": 2,
+      "rank_weight": 126,
+      "rank_overall": 1444,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34944662132",
-      "opponent_rank": 77,
+      "opponent_rank": 62,
       "opponent_name": "Cale Anderson",
       "method": "Dec 13-9"
     }
@@ -49,7 +56,7 @@
       "opponent_weight": 184,
       "opponent_rank": 3,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "22-6",
       "duration": "6:58",
       "event": "vs. North Dakota State"
@@ -61,7 +68,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 31,
       "opponent_weight": 184,
-      "opponent_rank": 77,
+      "opponent_rank": 62,
       "result": "L",
       "method": "DEC",
       "score": "13-9",

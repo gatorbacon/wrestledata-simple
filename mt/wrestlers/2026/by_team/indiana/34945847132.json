@@ -6,10 +6,10 @@
   "team_rank": 35,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 175,
+  "current_rank": null,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-4",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.714,
+      "matches": 2,
+      "rank_weight": 200,
+      "rank_overall": 2035,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34951031132",
-      "opponent_rank": 154,
-      "opponent_name": "Eamonn Jimenez",
-      "method": "M. For."
+      "opponent_id": "34955729132",
+      "opponent_rank": 28,
+      "opponent_name": "Dedrick Navarro",
+      "method": "TF 20-3 6:43"
     }
   },
   "match_list": [
@@ -47,7 +54,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 125,
-      "opponent_rank": 154,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -61,7 +68,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 125,
-      "opponent_rank": 130,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -75,11 +82,11 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 125,
-      "opponent_rank": 150,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:03",
       "event": "Michigan State Open"
     },
     {
@@ -89,9 +96,9 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 40,
       "opponent_weight": 125,
-      "opponent_rank": 31,
+      "opponent_rank": 28,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-3",
       "duration": "6:43",
       "event": "Michigan State Open"

@@ -185,16 +185,23 @@ def load_all_matches_from_weight_classes(
 
 
 def classify_result_type(result: str) -> str:
-    """Classify match result type: D, MD, TF, F, etc."""
+    """Classify match result type: D, MD, TF, F, INJ, etc."""
     if not result:
         return "O"
     
     s = result.upper()
     
-    if "PIN" in s or "FALL" in s or "F " in s:
-        return "F"
-    if "TF" in s or "TECH" in s:
+    # Check for injury FIRST (before other classifications)
+    if "INJ" in s or "INJURY" in s:
+        return "INJ"
+    
+    # Check for tech fall (before fall/pin) to avoid misclassification
+    # Tech falls have "TF" or "TECH" in the result string
+    if "TF" in s or "TECH" in s or "TECHNICAL" in s:
         return "TF"
+    # Then check for falls/pins (but exclude if "TF" appears anywhere)
+    if ("PIN" in s or "FALL" in s) and "TF" not in s:
+        return "F"
     if "MD" in s or "MAJOR" in s:
         return "MD"
     if "DEC" in s or "DECISION" in s:
@@ -203,8 +210,6 @@ def classify_result_type(result: str) -> str:
         return "DQ"
     if "MFF" in s or "MEDICAL" in s:
         return "MFF"
-    if "INJ" in s or "INJURY" in s:
-        return "INJ"
     if "FF" in s or "FORFEIT" in s:
         return "FF"
     
@@ -442,11 +447,13 @@ def build_match_list(
         
         result_type = classify_result_type(result)
         if result_type == "F":
-            method = "PIN"
+            method = "FALL"
         elif result_type == "TF":
             method = "TF"
         elif result_type == "MD":
             method = "MD"
+        elif result_type == "INJ":
+            method = "INJ"
         elif result_type == "D":
             method = "DEC"
         
@@ -454,8 +461,17 @@ def build_match_list(
         if score_pair:
             score = f"{score_pair[0]}-{score_pair[1]}"
         
-        # Calculate duration
+        # Calculate duration - extract time from result string if present
         duration_seconds = estimate_match_duration_seconds(result)
+        # For falls, injuries, and tech falls, try to extract the actual time from the result string
+        if result_type in ("F", "INJ", "TF"):
+            # Look for time pattern like "1:29" or "5:40" in the result
+            time_match = re.search(r"(\d+):(\d{2})", result)
+            if time_match:
+                minutes = int(time_match.group(1))
+                seconds = int(time_match.group(2))
+                duration_seconds = minutes * 60 + seconds
+        
         minutes = duration_seconds // 60
         seconds = duration_seconds % 60
         duration = f"{minutes}:{seconds:02d}"
@@ -499,6 +515,54 @@ def build_match_list(
     return match_list
 
 
+def load_mv_data(season: int) -> Dict[str, Dict]:
+    """
+    Load Mat Value data from season-wide file (includes rankings).
+    
+    Returns dict mapping wrestler_id -> MV data with ranks.
+    """
+    mv_file = Path(f"data/mat_value/{season}/mat_value_{season}.json")
+    if not mv_file.exists():
+        # Fallback to cache file if season-wide file doesn't exist
+        cache_file = Path(f"data/mat_value/{season}/mv_cache_{season}.json")
+        if cache_file.exists():
+            try:
+                with cache_file.open("r", encoding="utf-8") as f:
+                    cache_data = json.load(f)
+                # Convert cache format to include ranks (set to None if not available)
+                mv_data = {}
+                for wrestler_id, mv in cache_data.items():
+                    mv_data[wrestler_id] = {
+                        "mv_avg": mv["mv_avg"],
+                        "matches": mv["matches"],
+                        "rank_weight": None,
+                        "rank_overall": None,
+                    }
+                return mv_data
+            except Exception:
+                return {}
+        return {}
+    
+    try:
+        with mv_file.open("r", encoding="utf-8") as f:
+            entries = json.load(f)
+        
+        # Convert list format to dict format
+        mv_data = {}
+        for entry in entries:
+            wrestler_id = entry.get("wrestler_id")
+            if wrestler_id:
+                mv_data[wrestler_id] = {
+                    "mv_avg": entry.get("mv_avg"),
+                    "matches": entry.get("matches"),
+                    "rank_weight": entry.get("mv_rank_weight"),
+                    "rank_overall": entry.get("mv_rank_overall"),
+                }
+        return mv_data
+    except Exception:
+        return {}
+
+
 def build_wrestler_profile(
     wrestler_id: str,
     season: int,
@@ -507,6 +571,7 @@ def build_wrestler_profile(
     team_rank_by_name: Dict[str, int],
     metrics_by_id: Dict[str, Dict],
     matches: List[Dict],
+    mv_data: Optional[Dict[str, Dict]] = None,
 ) -> Dict:
     """Build complete wrestler profile JSON."""
     wrestler_info = all_wrestlers.get(wrestler_id, {})
@@ -553,6 +618,37 @@ def build_wrestler_profile(
         matches, wrestler_id, rank_by_id, all_wrestlers, team_rank_by_name
     )
     
+    # Get Mat Value data if available
+    mat_value_data = None
+    if mv_data and wrestler_id in mv_data:
+        mv = mv_data[wrestler_id]
+        mat_value_data = {
+            "mv_avg": mv["mv_avg"],
+            "matches": mv["matches"],
+            "rank_weight": mv.get("rank_weight"),
+            "rank_overall": mv.get("rank_overall"),
+            "version": "v1",
+        }
+    
+    # Build metrics object
+    metrics_obj = {
+        "pf7": round(pf7, 2),
+        "pa7": round(pa7, 2),
+        "pd7": round(pd7, 2),
+        "si_plus": round(si_plus, 1),
+        "df_plus": round(df_plus, 1),
+        "apr_plus": round(apr_plus, 1),
+        "pin_rate": round(pin_rate, 3),
+        "bonus_rate": round(bonus_rate, 3),
+        "majors": majors,
+        "techs": techs,
+        "pins": pins,
+    }
+    
+    # Add Mat Value if available
+    if mat_value_data:
+        metrics_obj["mat_value"] = mat_value_data
+    
     # Build profile
     profile = {
         "wrestler_id": wrestler_id,
@@ -569,19 +665,7 @@ def build_wrestler_profile(
             "vs_top10": records["vs_top10"],
             "vs_top25": records["vs_top25"],
         },
-        "metrics": {
-            "pf7": round(pf7, 2),
-            "pa7": round(pa7, 2),
-            "pd7": round(pd7, 2),
-            "si_plus": round(si_plus, 1),
-            "df_plus": round(df_plus, 1),
-            "apr_plus": round(apr_plus, 1),
-            "pin_rate": round(pin_rate, 3),
-            "bonus_rate": round(bonus_rate, 3),
-            "majors": majors,
-            "techs": techs,
-            "pins": pins,
-        },
+        "metrics": metrics_obj,
         "opponent_breakdown": {
             "ranked_wins": records["ranked_wins"],
             "ranked_losses": records["ranked_losses"],
@@ -627,6 +711,14 @@ def main() -> None:
     matches_by_wrestler = load_all_matches_from_weight_classes(season, data_dir)
     print(f"Loaded matches for {len(matches_by_wrestler)} wrestlers")
     
+    # Load Mat Value data if available
+    print("\nLoading Mat Value data...")
+    mv_data = load_mv_data(season)
+    if mv_data:
+        print(f"Loaded MV data for {len(mv_data)} wrestlers")
+    else:
+        print("No MV data found (run compute_all_mat_values.py first)")
+    
     # Create output directories
     season_dir = output_dir / str(season)
     by_id_dir = season_dir / "by_id"
@@ -665,6 +757,7 @@ def main() -> None:
             team_rank_by_name,
             metrics_by_id,
             matches,
+            mv_data,
         )
         
         # Write to by_id

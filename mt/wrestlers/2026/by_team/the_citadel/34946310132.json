@@ -6,7 +6,7 @@
   "team_rank": 77,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 159,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.521,
+      "matches": 1,
+      "rank_weight": 166,
+      "rank_overall": 1808,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34934259132",
-      "opponent_rank": 73,
+      "opponent_rank": 52,
       "opponent_name": "Beau Lewis",
       "method": "MD 11-1"
     }
@@ -47,7 +54,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 174,
-      "opponent_rank": 73,
+      "opponent_rank": 52,
       "result": "L",
       "method": "MD",
       "score": "11-1",

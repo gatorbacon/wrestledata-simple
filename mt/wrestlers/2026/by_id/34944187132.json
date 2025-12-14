@@ -6,10 +6,10 @@
   "team_rank": 58,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 116,
+  "current_rank": null,
   "record": {
     "overall": "3-3",
-    "vs_ranked": "3-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 0.005,
+      "matches": 6,
+      "rank_weight": 86,
+      "rank_overall": 747,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 0,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34938647132",
-      "opponent_rank": 122,
-      "opponent_name": "Oliver Fairchild",
-      "method": "Fall 2:40"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34944169132",
-      "opponent_rank": 107,
+      "opponent_rank": 66,
       "opponent_name": "Bryce Shelton",
       "method": "Dec 4-2"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 149,
-      "opponent_rank": 107,
+      "opponent_rank": 66,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -66,11 +68,11 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 64,
       "opponent_weight": 149,
-      "opponent_rank": 250,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:42",
       "event": "Roadrunner Open"
     },
     {
@@ -80,9 +82,9 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 149,
-      "opponent_rank": 30,
+      "opponent_rank": 27,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "5:13",
       "event": "Roadrunner Open"
@@ -94,11 +96,11 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 149,
-      "opponent_rank": 122,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:40",
       "event": "Clarion Open"
     },
     {
@@ -122,7 +124,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 149,
-      "opponent_rank": 164,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "10-4",

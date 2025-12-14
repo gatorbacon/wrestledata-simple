@@ -6,10 +6,10 @@
   "team_rank": 31,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 181,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-2",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.144,
+      "matches": 4,
+      "rank_weight": 197,
+      "rank_overall": 1559,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34934024132",
-      "opponent_rank": 225,
-      "opponent_name": "Dylan Guillermo",
-      "method": "Fall 0:49"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34964108132",
-      "opponent_rank": 161,
-      "opponent_name": "Logan Paradice",
-      "method": "MD 16-6"
+      "opponent_id": "34944675132",
+      "opponent_rank": 45,
+      "opponent_name": "Joseph Zargo",
+      "method": "NC"
     }
   },
   "match_list": [
@@ -52,9 +54,9 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 26,
       "opponent_weight": 149,
-      "opponent_rank": 161,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "22-5",
       "duration": "6:22",
       "event": "Jim Koch Wisconsin Open"
@@ -66,7 +68,7 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 26,
       "opponent_weight": 149,
-      "opponent_rank": 161,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "16-6",
@@ -80,11 +82,11 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 65,
       "opponent_weight": 149,
-      "opponent_rank": 225,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:49",
       "event": "Cyclone Invitational"
     },
     {
@@ -96,7 +98,7 @@
       "opponent_weight": 149,
       "opponent_rank": 7,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "22-7",
       "duration": "7:00",
       "event": "Cyclone Invitational"
@@ -108,7 +110,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 31,
       "opponent_weight": 149,
-      "opponent_rank": 53,
+      "opponent_rank": 45,
       "result": "L",
       "method": "DEC",
       "score": null,

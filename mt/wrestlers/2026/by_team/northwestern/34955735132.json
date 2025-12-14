@@ -6,10 +6,10 @@
   "team_rank": 40,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 111,
+  "current_rank": 70,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "3-4",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.28,
+      "matches": 7,
+      "rank_weight": 121,
+      "rank_overall": 1363,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34951063132",
-      "opponent_rank": 48,
-      "opponent_name": "easton Belfiore",
-      "method": "Dec 4-1"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34936223132",
-      "opponent_rank": 106,
-      "opponent_name": "Drew Linciome",
-      "method": "Dec 13-8"
+      "opponent_id": "34935929132",
+      "opponent_rank": 55,
+      "opponent_name": "cody kirk",
+      "method": "Fall 6:35"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 184,
-      "opponent_rank": 47,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "11-4",
@@ -66,7 +68,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 40,
       "opponent_weight": 184,
-      "opponent_rank": 160,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-2",
@@ -80,7 +82,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 184,
-      "opponent_rank": 106,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "13-8",
@@ -94,11 +96,11 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 67,
       "opponent_weight": 184,
-      "opponent_rank": 69,
+      "opponent_rank": 55,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:35",
       "event": "Michigan State Open"
     },
     {
@@ -108,11 +110,11 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 184,
-      "opponent_rank": 135,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:00",
       "event": "Michigan State Open"
     },
     {
@@ -122,7 +124,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 184,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -136,11 +138,11 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 184,
-      "opponent_rank": 105,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:56",
       "event": "Michigan State Open"
     }
   ]

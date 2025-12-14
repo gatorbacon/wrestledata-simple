@@ -6,10 +6,10 @@
   "team_rank": 58,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 194,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.712,
+      "matches": 1,
+      "rank_weight": 186,
+      "rank_overall": 2033,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34934749132",
-      "opponent_rank": 144,
-      "opponent_name": "Graham Gambrall",
-      "method": "MD 10-2"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,7 +49,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 23,
       "opponent_weight": 174,
-      "opponent_rank": 144,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "10-2",

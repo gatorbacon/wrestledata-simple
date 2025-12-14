@@ -6,10 +6,10 @@
   "team_rank": 44,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 169,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.047,
+      "matches": 2,
+      "rank_weight": 178,
+      "rank_overall": 1992,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34936029132",
-      "opponent_rank": 123,
-      "opponent_name": "James Lynch",
-      "method": "MD 15-2"
+      "opponent_id": "34948131132",
+      "opponent_rank": 55,
+      "opponent_name": "Sebastian Garibaldi",
+      "method": "TF 17-1 4:31"
     }
   },
   "match_list": [
@@ -47,9 +54,9 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 285,
-      "opponent_rank": 72,
+      "opponent_rank": 55,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-1",
       "duration": "4:31",
       "event": "Princeton Open"
@@ -61,7 +68,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 123,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "15-2",

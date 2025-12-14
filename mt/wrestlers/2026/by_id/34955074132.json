@@ -6,7 +6,7 @@
   "team_rank": 47,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 165,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.27,
+      "matches": 2,
+      "rank_weight": 119,
+      "rank_overall": 1359,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,9 +56,9 @@
       "opponent_weight": 174,
       "opponent_rank": 12,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:12",
       "event": "vs. Virginia"
     },
     {

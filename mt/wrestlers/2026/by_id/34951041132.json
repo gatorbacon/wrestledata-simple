@@ -6,10 +6,10 @@
   "team_rank": 53,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 220,
+  "current_rank": null,
   "record": {
     "overall": "0-7",
-    "vs_ranked": "0-7",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.689,
+      "matches": 7,
+      "rank_weight": 210,
+      "rank_overall": 1838,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 7,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34933995132",
-      "opponent_rank": 174,
-      "opponent_name": "Mason Stewart",
-      "method": "Fall 2:22"
+      "opponent_id": "34971891132",
+      "opponent_rank": 55,
+      "opponent_name": "Luke Nichter",
+      "method": "Fall 4:00"
     }
   },
   "match_list": [
@@ -47,9 +54,9 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 157,
-      "opponent_rank": 62,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-5",
       "duration": "5:52",
       "event": "Kent State Open 1"
@@ -61,11 +68,11 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": 76,
+      "opponent_rank": 55,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:00",
       "event": "Keystone Classic"
     },
     {
@@ -75,7 +82,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 157,
-      "opponent_rank": 137,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-1",
@@ -89,7 +96,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 40,
       "opponent_weight": 157,
-      "opponent_rank": 54,
+      "opponent_rank": 43,
       "result": "L",
       "method": "MD",
       "score": "15-3",
@@ -103,11 +110,11 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": 174,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:22",
       "event": "Michigan State Open"
     },
     {
@@ -117,7 +124,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 157,
-      "opponent_rank": 170,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "9-6",
@@ -131,7 +138,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 157,
-      "opponent_rank": 27,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "11-4",

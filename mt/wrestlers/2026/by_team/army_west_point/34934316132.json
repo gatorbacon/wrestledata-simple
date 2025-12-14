@@ -6,10 +6,10 @@
   "team_rank": 36,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 155,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,26 +20,28 @@
     "si_plus": 91.7,
     "df_plus": 103.2,
     "apr_plus": 99.3,
-    "pin_rate": 1.0,
+    "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.535,
+      "matches": 3,
+      "rank_weight": 114,
+      "rank_overall": 1169,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934827132",
-      "opponent_rank": 183,
-      "opponent_name": "Kyle Hill",
-      "method": "TF 17-2 2:40"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34935955132",
-      "opponent_rank": 57,
+      "opponent_rank": 45,
       "opponent_name": "Gable Strickland",
       "method": "MD 8-0"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 133,
-      "opponent_rank": 30,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "7-2",
@@ -66,7 +68,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 133,
-      "opponent_rank": 57,
+      "opponent_rank": 45,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -80,9 +82,9 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 133,
-      "opponent_rank": 183,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "2:40",
       "event": "Princeton Open"

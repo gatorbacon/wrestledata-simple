@@ -6,10 +6,10 @@
   "team_rank": 66,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 178,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -5.181,
+      "matches": 5,
+      "rank_weight": 220,
+      "rank_overall": 1906,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34949310132",
-      "opponent_rank": 230,
-      "opponent_name": "Antonio Jimenez",
-      "method": "Fall 1:42"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34943840132",
-      "opponent_rank": 161,
+      "opponent_rank": 75,
       "opponent_name": "Jeb Prechtel",
       "method": "Fall 3:34"
     }
@@ -52,11 +54,11 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 157,
-      "opponent_rank": 126,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:00",
       "event": "Big Red Invitational"
     },
     {
@@ -66,11 +68,11 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": 158,
+      "opponent_rank": 74,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:46",
       "event": "Big Red Invitational"
     },
     {
@@ -80,11 +82,11 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 157,
-      "opponent_rank": 230,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:42",
       "event": "Big Red Invitational"
     },
     {
@@ -94,11 +96,11 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": 161,
+      "opponent_rank": 75,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:34",
       "event": "Clarion Open"
     },
     {
@@ -108,9 +110,9 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": 130,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "5:33",
       "event": "Clarion Open"

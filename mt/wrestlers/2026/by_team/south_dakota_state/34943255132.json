@@ -6,10 +6,10 @@
   "team_rank": 28,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 120,
+  "current_rank": null,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "3-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.906,
+      "matches": 5,
+      "rank_weight": 114,
+      "rank_overall": 990,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34935628132",
-      "opponent_rank": 118,
-      "opponent_name": "Dez Garterell",
-      "method": "Dec 4-2"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34955795132",
-      "opponent_rank": 121,
-      "opponent_name": "Jack Nelson",
-      "method": "Inj. 4:52"
+      "opponent_id": "34955794132",
+      "opponent_rank": 22,
+      "opponent_name": "Charlie Millard",
+      "method": "Dec 10-3"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 157,
-      "opponent_rank": 121,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -66,7 +68,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 157,
-      "opponent_rank": 215,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "3-0",
@@ -94,11 +96,11 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 157,
-      "opponent_rank": 121,
+      "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "INJ",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:52",
       "event": "Bison Open 2025"
     },
     {
@@ -108,7 +110,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 157,
-      "opponent_rank": 118,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-2",

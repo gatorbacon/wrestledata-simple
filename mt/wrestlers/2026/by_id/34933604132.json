@@ -6,10 +6,10 @@
   "team_rank": 14,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 104,
+  "current_rank": null,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "2-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,19 +24,21 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.021,
+      "matches": 3,
+      "rank_weight": 31,
+      "rank_overall": 272,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34934358132",
-      "opponent_rank": 105,
-      "opponent_name": "Evan Gosz",
-      "method": "Dec 12-11"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34943748132",
       "opponent_rank": 3,
@@ -52,11 +54,11 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": 144,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:03",
       "event": "Michigan State Open"
     },
     {
@@ -66,7 +68,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 149,
-      "opponent_rank": 105,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "12-11",
@@ -82,7 +84,7 @@
       "opponent_weight": 149,
       "opponent_rank": 3,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "0:00",
       "event": "Michigan State Open"

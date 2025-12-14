@@ -6,7 +6,7 @@
   "team_rank": 18,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 227,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.99,
+      "matches": 1,
+      "rank_weight": 177,
+      "rank_overall": 1524,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,7 +56,7 @@
       "opponent_weight": 157,
       "opponent_rank": 22,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "6:11",
       "event": "vs. Virginia Tech"

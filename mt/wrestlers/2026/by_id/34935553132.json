@@ -6,10 +6,10 @@
   "team_rank": 52,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 85,
+  "current_rank": 62,
   "record": {
     "overall": "4-1",
-    "vs_ranked": "4-1",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,29 +20,26 @@
     "si_plus": 124.4,
     "df_plus": 110.6,
     "apr_plus": 94.4,
-    "pin_rate": 0.5,
+    "pin_rate": 0.0,
     "bonus_rate": 0.75,
     "majors": 1,
-    "techs": 0,
-    "pins": 2
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.197,
+      "matches": 5,
+      "rank_weight": 28,
+      "rank_overall": 241,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 1,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34943406132",
-      "opponent_rank": 87,
-      "opponent_name": "Marco Frinzi",
-      "method": "Dec 8-1"
-    },
-    "worst_loss": {
-      "opponent_id": "34939043132",
-      "opponent_rank": 84,
-      "opponent_name": "Dalton Perry",
-      "method": "TF 19-4 5:22"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,9 +49,9 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 49,
       "opponent_weight": 149,
-      "opponent_rank": 136,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "5:34",
       "event": "Black Knight Invite"
@@ -66,7 +63,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 149,
-      "opponent_rank": 87,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -80,9 +77,9 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 149,
-      "opponent_rank": 96,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "5:41",
       "event": "Black Knight Invite"
@@ -94,9 +91,9 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 149,
-      "opponent_rank": 84,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:22",
       "event": "Black Knight Invite"
@@ -108,7 +105,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 149,
-      "opponent_rank": 89,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "10-1",

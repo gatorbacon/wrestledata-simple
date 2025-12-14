@@ -6,10 +6,10 @@
   "team_rank": 10,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 81,
+  "current_rank": null,
   "record": {
     "overall": "4-1",
-    "vs_ranked": "4-1",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,27 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.049,
+      "matches": 5,
+      "rank_weight": 82,
+      "rank_overall": 735,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 1,
+    "ranked_wins": 2,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34952969132",
-      "opponent_rank": 83,
+      "opponent_rank": 57,
       "opponent_name": "Aaron Lanster",
       "method": "TB-2 (RT) 2-1"
     },
-    "worst_loss": {
-      "opponent_id": "34941546132",
-      "opponent_rank": 80,
-      "opponent_name": "Alec Peralta",
-      "method": "Fall 3:49"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +54,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 141,
-      "opponent_rank": 168,
+      "opponent_rank": 76,
       "result": "W",
       "method": "MD",
       "score": "14-3",
@@ -66,11 +68,11 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 141,
-      "opponent_rank": 213,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:11",
       "event": "Big Red Invitational"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 141,
-      "opponent_rank": 143,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-2",
@@ -94,7 +96,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 49,
       "opponent_weight": 141,
-      "opponent_rank": 83,
+      "opponent_rank": 57,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -108,11 +110,11 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 141,
-      "opponent_rank": 80,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:49",
       "event": "Clarion Open"
     }
   ]

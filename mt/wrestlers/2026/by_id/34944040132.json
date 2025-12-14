@@ -6,10 +6,10 @@
   "team_rank": 17,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 28,
+  "current_rank": null,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "3-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -24,16 +24,23 @@
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.066,
+      "matches": 5,
+      "rank_weight": 29,
+      "rank_overall": 260,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 2,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34951026132",
-      "opponent_rank": 38,
+      "opponent_rank": 34,
       "opponent_name": "Ryan Burgos",
       "method": "Fall 1:30"
     },
@@ -66,11 +73,11 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 165,
-      "opponent_rank": 38,
+      "opponent_rank": 34,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:30",
       "event": "Keystone Classic"
     },
     {
@@ -80,7 +87,7 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 55,
       "opponent_weight": 165,
-      "opponent_rank": 92,
+      "opponent_rank": 64,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -94,7 +101,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 165,
-      "opponent_rank": 73,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-5",

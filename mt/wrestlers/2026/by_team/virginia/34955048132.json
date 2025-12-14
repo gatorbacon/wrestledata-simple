@@ -6,7 +6,7 @@
   "team_rank": 47,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 81,
+  "current_rank": null,
   "record": {
     "overall": "1-0",
     "vs_ranked": "1-0",
@@ -24,7 +24,14 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 5.955,
+      "matches": 1,
+      "rank_weight": 1,
+      "rank_overall": 3,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,7 +40,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34935054132",
-      "opponent_rank": 82,
+      "opponent_rank": 60,
       "opponent_name": "Mason Rebuck",
       "method": "Fall 3:15"
     },
@@ -47,11 +54,11 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": 82,
+      "opponent_rank": 60,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:15",
       "event": "vs. Virginia"
     }
   ]

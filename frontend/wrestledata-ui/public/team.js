@@ -1,116 +1,265 @@
 function getQueryParam(key) {
-    const params = new URLSearchParams(window.location.search);
-    return params.get(key);
+  return new URLSearchParams(window.location.search).get(key);
+}
+
+function safe(v, fn) {
+  if (v === null || v === undefined || v === "") return "—";
+  return fn ? fn(v) : v;
+}
+
+function percent(v) {
+  if (v === null || v === undefined || isNaN(v)) return "—";
+  return (v * 100).toFixed(1) + "%";
+}
+
+function formatDecimal(v, decimals = 2) {
+  if (v === null || v === undefined || isNaN(v)) return "—";
+  return Number(v).toFixed(decimals);
+}
+
+function formatWithRank(value, rank, formatter = null) {
+  if (value === null || value === undefined || isNaN(value)) return "—";
+  let valStr;
+  if (formatter) {
+    valStr = formatter(value);
+  } else {
+    valStr = typeof value === "number" ? Number(value).toFixed(1) : String(value);
   }
-  
-  // Pretty URL: /team/virginia_tech
-  function getPrettyRouteTeam() {
-    const parts = window.location.pathname.split("/").filter(Boolean);
-    if (parts.length === 2 && parts[0] === "team") return parts[1];
-    return null;
-  }
-  
-  function loadTeam(teamSlug) {
-    const url = `/teams/${teamSlug}.json`;
-  
-    fetch(url)
-      .then((res) => {
-        if (!res.ok) throw new Error(`Team JSON not found: ${url}`);
-        return res.json();
-      })
-      .then((data) => renderTeamPage(data))
-      .catch((err) => {
-        document.getElementById("team-name").textContent = "Team Not Found";
-        document.getElementById("team-meta").textContent = err.message;
-      });
-  }
-  
-  function safe(v, fn) {
-    if (v === null || v === undefined || v === "") return "—";
-    return fn ? fn(v) : v;
-  }
-  
-  function percent(v) {
-    return (v * 100).toFixed(1) + "%";
-  }
-  
-  function renderTeamPage(data) {
-    document.getElementById("team-name").textContent = safe(data.team_name);
-    document.getElementById("team-meta").textContent = 
-      `#${safe(data.team_rank)} · ${safe(data.conference)} · ${safe(data.dual_record)} record`;
-  
-    const tm = data.team_metrics || {};
-  
-    document.getElementById("tm-pf7").textContent = safe(tm.avg_pf7);
-    document.getElementById("tm-pa7").textContent = safe(tm.avg_pa7);
-    document.getElementById("tm-pd7").textContent = safe(tm.avg_pd7);
-    document.getElementById("tm-bonus").textContent = safe(tm.bonus_rate, percent);
-    document.getElementById("tm-pin").textContent = safe(tm.pin_rate, percent);
-    document.getElementById("tm-tech").textContent = safe(tm.tech_rate, percent);
-    document.getElementById("tm-ranked-pct").textContent = safe(tm.ranked_win_pct, percent);
-  
-    // Highlights block
-    const h = data.team_highlights || {};
-    const highlightsDiv = document.getElementById("team-highlights");
-    highlightsDiv.innerHTML = `
-      <div><strong>Best Win:</strong> ${safe(h.best_win)}</div>
-      <div><strong>Best Upset:</strong> ${safe(h.best_upset)}</div>
-      <div><strong>Most Dominant Weight:</strong> ${safe(h.most_dominant_weight)}</div>
-      <div><strong>Weakest Weight:</strong> ${safe(h.weakest_weight)}</div>
-    `;
-  
-    renderRosterTable(data.roster || []);
-  }
-  
-  function renderRosterTable(roster) {
-    const tbody = document.querySelector("#roster-table tbody");
-    tbody.innerHTML = "";
-  
-    roster.sort((a, b) => a.weight_class - b.weight_class);
-  
-    roster.forEach((w) => {
-      const tr = document.createElement("tr");
-  
-      const add = (v) => {
-        const td = document.createElement("td");
-        td.textContent = safe(v);
-        tr.appendChild(td);
-      };
-  
-      add(w.weight_class);
-  
-      // Name with link
-      const nameTd = document.createElement("td");
-      const a = document.createElement("a");
-      //a.href = `/wrestler/${w.wrestler_id}`;
-      a.href = `/wrestler.html?id=${w.wrestler_id}`;
-      a.textContent = w.name;
-      nameTd.appendChild(a);
-      tr.appendChild(nameTd);
-  
-      add(w.current_rank ? `#${w.current_rank}` : "—");
-      add(w.record);
-      add(w.vs_ranked);
-      add(w.pd7);
-      add(percent(w.bonus_rate));
-      add(w.best_win);
-      add(w.worst_loss);
-  
-      tbody.appendChild(tr);
-    });
-  }
-  
-  // Initialize
-  document.addEventListener("DOMContentLoaded", () => {
-    const pretty = getPrettyRouteTeam();
-    const q = getQueryParam("team");
-  
-    const teamSlug = pretty || q;
-  
-    if (!teamSlug) {
-      document.getElementById("team-name").textContent = "No team selected.";
-      return;
+  if (rank === null || rank === undefined) return valStr;
+  return `${valStr} (#${rank})`;
+}
+
+async function fetchJSON(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to load ${url}`);
+  return res.json();
+}
+
+function teamNameToProcessedDataFilename(teamName) {
+  // Convert team name to processed_data filename format
+  // e.g., "Penn State" -> "Penn_State"
+  return teamName.replace(/\s+/g, "_");
+}
+
+async function loadTeam(teamId) {
+  try {
+    // 1) Load team profile (identity + starters)
+    const teamProfile = await fetchJSON(`/teams/${teamId}.json`);
+
+    // 2) Load team metrics (analytics)
+    const metricsData = await fetchJSON(`/team_metrics/2026/team_metrics.json`);
+    const teamMetrics = metricsData.teams.find(t => t.team_id === teamId);
+
+    if (!teamMetrics) {
+      throw new Error(`No metrics found for team ${teamId}`);
     }
+
+    // 3) Load processed_data to get all wrestler IDs
+    const teamName = teamProfile.team_name || teamProfile.name;
+    const processedDataFilename = teamNameToProcessedDataFilename(teamName);
+    let allWrestlerIds = new Set();
+    
+    try {
+      const processedData = await fetchJSON(`/processed_data/2026/${processedDataFilename}.json`);
+      if (processedData.roster && Array.isArray(processedData.roster)) {
+        processedData.roster.forEach(wrestler => {
+          if (wrestler.season_wrestler_id) {
+            allWrestlerIds.add(wrestler.season_wrestler_id);
+          }
+        });
+      }
+    } catch (err) {
+      console.warn(`Could not load processed_data for ${teamName}:`, err);
+      // Continue with just starters if processed_data is unavailable
+    }
+
+    // 4) Extract starter IDs
+    const starters = teamProfile.roster.starters;
+    const starterIds = new Set();
+    Object.values(starters).forEach(id => {
+      if (id) starterIds.add(id);
+    });
+
+    // 5) Compute remaining roster IDs
+    const remainingIds = new Set();
+    allWrestlerIds.forEach(id => {
+      if (!starterIds.has(id)) {
+        remainingIds.add(id);
+      }
+    });
+
+    // 6) Load starter wrestler profiles
+    const starterProfiles = [];
+    for (const [weight, wrestlerId] of Object.entries(starters)) {
+      if (!wrestlerId) continue;
+      try {
+        const w = await fetchJSON(`/wrestlers/2026/by_id/${wrestlerId}.json`);
+        starterProfiles.push({ weight: Number(weight), profile: w });
+      } catch (err) {
+        console.warn(`Could not load wrestler profile ${wrestlerId}:`, err);
+      }
+    }
+
+    // 7) Load remaining roster wrestler profiles
+    const remainingProfiles = [];
+    for (const wrestlerId of remainingIds) {
+      try {
+        const w = await fetchJSON(`/wrestlers/2026/by_id/${wrestlerId}.json`);
+        const weight = w.weight_class ? Number(w.weight_class) : null;
+        remainingProfiles.push({ weight, profile: w });
+      } catch (err) {
+        console.warn(`Could not load wrestler profile ${wrestlerId}:`, err);
+      }
+    }
+
+    renderTeamPage(teamProfile, teamMetrics, starterProfiles, remainingProfiles);
+  } catch (err) {
+    document.getElementById("team-name").textContent = "Team Not Found";
+    document.getElementById("team-meta").textContent = err.message;
+    console.error(err);
+  }
+}
+
+function formatWLRecord(wins, losses, winPct) {
+  if (wins === null || wins === undefined || losses === null || losses === undefined) {
+    return "—";
+  }
+  const pct = winPct !== null && winPct !== undefined ? (winPct * 100).toFixed(1) : "0.0";
+  return `${wins}–${losses} (${pct}%)`;
+}
+
+function renderTeamPage(team, metrics, starters, remaining) {
+  // Header
+  const teamName = team.team_name || team.name;
+  document.getElementById("team-name").textContent = teamName;
+  document.getElementById("team-meta").textContent =
+    `${team.conference} · ${team.division}`;
+
+  // Team metrics
+  const m = metrics.metrics;
+  document.getElementById("tm-pf7").textContent = formatWithRank(m.avg_pf7?.value, m.avg_pf7?.rank, formatDecimal);
+  document.getElementById("tm-pa7").textContent = formatWithRank(m.avg_pa7?.value, m.avg_pa7?.rank, formatDecimal);
+  document.getElementById("tm-pd7").textContent = formatWithRank(m.avg_pd7?.value, m.avg_pd7?.rank, formatDecimal);
+  document.getElementById("tm-bonus").textContent = formatWithRank(m.bonus_rate?.value, m.bonus_rate?.rank, percent);
+  document.getElementById("tm-pin").textContent = formatWithRank(m.pin_rate?.value, m.pin_rate?.rank, percent);
+  document.getElementById("tm-tech").textContent = formatWithRank(m.tech_rate?.value, m.tech_rate?.rank, percent);
+  document.getElementById("tm-top10-pct").textContent = formatWithRank(m.top10_win_pct?.value, m.top10_win_pct?.rank, percent);
+  document.getElementById("tm-top33-pct").textContent = formatWithRank(m.top33_win_pct?.value, m.top33_win_pct?.rank, percent);
   
-    loadTeam(teamSlug);
+  // W/L Record
+  const counts = metrics.counts || {};
+  document.getElementById("tm-wl-record").textContent = formatWLRecord(
+    counts.wins_included,
+    counts.losses_included,
+    counts.win_pct
+  );
+
+  // Advanced metrics
+  const am = metrics.advanced_metrics;
+  document.getElementById("tm-si-plus").textContent = formatWithRank(am.si_plus?.value, am.si_plus?.rank);
+  document.getElementById("tm-df-plus").textContent = formatWithRank(am.df_plus?.value, am.df_plus?.rank);
+  document.getElementById("tm-apr-plus").textContent = formatWithRank(am.apr_plus?.value, am.apr_plus?.rank);
+
+  renderStartersTable(starters);
+  renderRemainingRosterTable(remaining);
+}
+
+function renderStartersTable(starters) {
+  const tbody = document.querySelector("#starting-roster-table tbody");
+  tbody.innerHTML = "";
+
+  starters.sort((a, b) => a.weight - b.weight);
+
+  starters.forEach(({ weight, profile }) => {
+    const tr = document.createElement("tr");
+
+    const td = (v) => {
+      const c = document.createElement("td");
+      c.textContent = safe(v);
+      tr.appendChild(c);
+    };
+
+    td(weight);
+
+    const nameTd = document.createElement("td");
+    const a = document.createElement("a");
+    a.href = `/wrestler.html?id=${profile.wrestler_id}`;
+    a.textContent = profile.name;
+    nameTd.appendChild(a);
+    tr.appendChild(nameTd);
+
+    td(profile.current_rank ? `#${profile.current_rank}` : "—");
+    
+    // Record: use overall from record object
+    const record = profile.record?.overall || "—";
+    td(record);
+    
+    // Bonus Rate: read from profile.metrics.bonus_rate (already computed)
+    const bonusRate = profile.metrics?.bonus_rate;
+    td(bonusRate !== null && bonusRate !== undefined ? percent(bonusRate) : "—");
+    
+    // Advanced metrics (weight ranks not currently available in profiles)
+    const siPlus = profile.metrics?.si_plus;
+    td(siPlus !== null && siPlus !== undefined ? formatDecimal(siPlus, 1) : "—");
+    
+    const dfPlus = profile.metrics?.df_plus;
+    td(dfPlus !== null && dfPlus !== undefined ? formatDecimal(dfPlus, 1) : "—");
+    
+    const aprPlus = profile.metrics?.apr_plus;
+    td(aprPlus !== null && aprPlus !== undefined ? formatDecimal(aprPlus, 1) : "—");
+
+    tbody.appendChild(tr);
   });
+}
+
+function renderRemainingRosterTable(remaining) {
+  const tbody = document.querySelector("#remaining-roster-table tbody");
+  tbody.innerHTML = "";
+
+  // Sort by weight, then by name
+  remaining.sort((a, b) => {
+    const weightA = a.weight || 999;
+    const weightB = b.weight || 999;
+    if (weightA !== weightB) return weightA - weightB;
+    return (a.profile.name || "").localeCompare(b.profile.name || "");
+  });
+
+  remaining.forEach(({ weight, profile }) => {
+    const tr = document.createElement("tr");
+
+    const td = (v) => {
+      const c = document.createElement("td");
+      c.textContent = safe(v);
+      tr.appendChild(c);
+    };
+
+    td(weight || "—");
+
+    const nameTd = document.createElement("td");
+    const a = document.createElement("a");
+    a.href = `/wrestler.html?id=${profile.wrestler_id}`;
+    a.textContent = profile.name;
+    nameTd.appendChild(a);
+    tr.appendChild(nameTd);
+    
+    // Record: use overall from record object
+    const record = profile.record?.overall || "—";
+    td(record);
+    
+    // Bonus Rate: read from profile.metrics.bonus_rate (already computed)
+    const bonusRate = profile.metrics?.bonus_rate;
+    td(bonusRate !== null && bonusRate !== undefined ? percent(bonusRate) : "—");
+
+    tbody.appendChild(tr);
+  });
+}
+
+// Init
+document.addEventListener("DOMContentLoaded", () => {
+  const teamId = getQueryParam("team");
+  if (!teamId) {
+    document.getElementById("team-name").textContent = "No team selected";
+    return;
+  }
+  loadTeam(teamId);
+});

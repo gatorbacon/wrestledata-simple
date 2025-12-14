@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "columbia",
+  "team_name": "Columbia",
+  "name": "Columbia",
+  "abbreviation": "COL",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "Ivy League",
+  "location": {
+    "state": "NY"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758800150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34943386132",
+      "133": "34943404132",
+      "141": "34943387132",
+      "149": "34943381132",
+      "157": "34943415132",
+      "165": "34943394132",
+      "174": "34943395132",
+      "184": "34943379132",
+      "197": "34943388132",
+      "285": "34943391132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-12T18:19:25.864094Z"
+}

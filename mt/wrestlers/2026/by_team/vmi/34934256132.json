@@ -6,7 +6,7 @@
   "team_rank": 78,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 176,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.72,
+      "matches": 1,
+      "rank_weight": 130,
+      "rank_overall": 1463,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,7 +56,7 @@
       "opponent_weight": 184,
       "opponent_rank": 8,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "24-9",
       "duration": "6:51",
       "event": "vs. VMI"

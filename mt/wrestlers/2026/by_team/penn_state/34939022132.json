@@ -9,7 +9,7 @@
   "current_rank": 1,
   "record": {
     "overall": "7-0",
-    "vs_ranked": "7-0",
+    "vs_ranked": "6-0",
     "vs_top10": "1-0",
     "vs_top25": "2-0"
   },
@@ -20,14 +20,21 @@
     "si_plus": 148.6,
     "df_plus": 106.3,
     "apr_plus": 125.4,
-    "pin_rate": 0.857,
+    "pin_rate": 0.429,
     "bonus_rate": 1.0,
     "majors": 1,
-    "techs": 0,
-    "pins": 6
+    "techs": 3,
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 5.321,
+      "matches": 7,
+      "rank_weight": 1,
+      "rank_overall": 7,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 6,
     "ranked_losses": 0,
     "top10_wins": 1,
     "top10_losses": 0,
@@ -61,9 +68,9 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 165,
-      "opponent_rank": 40,
+      "opponent_rank": 35,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-4",
       "duration": "5:11",
       "event": "vs. Penn State"
@@ -77,9 +84,9 @@
       "opponent_weight": 165,
       "opponent_rank": 16,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:03",
       "event": "Black Knight Invite"
     },
     {
@@ -89,9 +96,9 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 52,
       "opponent_weight": 165,
-      "opponent_rank": 72,
+      "opponent_rank": 54,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-4",
       "duration": "5:19",
       "event": "Black Knight Invite"
@@ -103,11 +110,11 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 165,
-      "opponent_rank": 80,
+      "opponent_rank": 60,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:40",
       "event": "Black Knight Invite"
     },
     {
@@ -117,11 +124,11 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 174,
-      "opponent_rank": 198,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:41",
       "event": "Black Knight Invite"
     },
     {
@@ -131,9 +138,9 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 21,
       "opponent_weight": 165,
-      "opponent_rank": 56,
+      "opponent_rank": 47,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "2:45",
       "event": "vs. Penn State"

@@ -6,10 +6,10 @@
   "team_rank": 38,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 53,
+  "current_rank": 44,
   "record": {
     "overall": "4-6",
-    "vs_ranked": "4-6",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.25,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.188,
+      "matches": 10,
+      "rank_weight": 67,
+      "rank_overall": 802,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 6,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34935714132",
-      "opponent_rank": 59,
-      "opponent_name": "Brian Heard",
-      "method": "Dec 5-0"
+      "opponent_id": "34945529132",
+      "opponent_rank": 54,
+      "opponent_name": "Colt Campbell",
+      "method": "Dec 5-4"
     },
     "worst_loss": {
-      "opponent_id": "34944039132",
-      "opponent_rank": 91,
-      "opponent_name": "Nate Blanchette",
-      "method": "Dec 4-2"
+      "opponent_id": "34935673132",
+      "opponent_rank": 42,
+      "opponent_name": "Liam Carlin",
+      "method": "Dec 8-4"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": 51,
+      "opponent_rank": 42,
       "result": "L",
       "method": "DEC",
       "score": "8-4",
@@ -66,7 +73,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": 59,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-0",
@@ -80,7 +87,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": 76,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "18-6",
@@ -94,7 +101,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 174,
-      "opponent_rank": 91,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -108,7 +115,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 174,
-      "opponent_rank": 75,
+      "opponent_rank": 54,
       "result": "W",
       "method": "DEC",
       "score": "5-4",
@@ -124,7 +131,7 @@
       "opponent_weight": 174,
       "opponent_rank": 13,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-2",
       "duration": "5:46",
       "event": "vs. West Virginia"
@@ -136,7 +143,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 174,
-      "opponent_rank": 43,
+      "opponent_rank": 36,
       "result": "L",
       "method": "DEC",
       "score": "7-2",
@@ -150,7 +157,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 174,
-      "opponent_rank": 62,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -164,7 +171,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 174,
-      "opponent_rank": 50,
+      "opponent_rank": 41,
       "result": "L",
       "method": "DEC",
       "score": "5-3",

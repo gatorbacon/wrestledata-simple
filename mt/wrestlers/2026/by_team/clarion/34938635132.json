@@ -6,7 +6,7 @@
   "team_rank": 66,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 192,
+  "current_rank": null,
   "record": {
     "overall": "0-3",
     "vs_ranked": "0-3",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.177,
+      "matches": 3,
+      "rank_weight": 171,
+      "rank_overall": 1753,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34938480132",
-      "opponent_rank": 58,
+      "opponent_rank": 53,
       "opponent_name": "Ben Monn",
       "method": "MD 11-2"
     }
@@ -47,11 +54,11 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 125,
-      "opponent_rank": 31,
+      "opponent_rank": 34,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:42",
       "event": "Big Red Invitational"
     },
     {
@@ -61,7 +68,7 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 125,
-      "opponent_rank": 58,
+      "opponent_rank": 53,
       "result": "L",
       "method": "MD",
       "score": "11-2",
@@ -75,9 +82,9 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 125,
-      "opponent_rank": 29,
+      "opponent_rank": 32,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "6:34",
       "event": "Big Red Invitational"

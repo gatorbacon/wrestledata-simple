@@ -6,10 +6,10 @@
   "team_rank": 37,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 142,
+  "current_rank": null,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "2-6",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.891,
+      "matches": 8,
+      "rank_weight": 134,
+      "rank_overall": 1499,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 6,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34953916132",
-      "opponent_rank": 184,
-      "opponent_name": "Max Ohamuo",
-      "method": "Fall 2:43"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34936183132",
-      "opponent_rank": 129,
-      "opponent_name": "Kyle Draina",
-      "method": "Dec 8-2"
+      "opponent_id": "34938491132",
+      "opponent_rank": 31,
+      "opponent_name": "James Blackman",
+      "method": "Dec 7-0"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 285,
-      "opponent_rank": 37,
+      "opponent_rank": 31,
       "result": "L",
       "method": "DEC",
       "score": "7-0",
@@ -66,7 +68,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 285,
-      "opponent_rank": 102,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "10-4",
@@ -80,7 +82,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 285,
-      "opponent_rank": 197,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-6",
@@ -94,9 +96,9 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 285,
-      "opponent_rank": 96,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "6:53",
       "event": "Lock Haven Open I"
@@ -108,7 +110,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": 129,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -122,11 +124,11 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 285,
-      "opponent_rank": 184,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:43",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -136,7 +138,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 285,
-      "opponent_rank": 117,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "7-0",
@@ -150,7 +152,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 285,
-      "opponent_rank": 128,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "13-3",

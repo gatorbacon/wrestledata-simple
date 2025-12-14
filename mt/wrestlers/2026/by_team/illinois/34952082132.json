@@ -9,7 +9,7 @@
   "current_rank": 6,
   "record": {
     "overall": "11-0",
-    "vs_ranked": "11-0",
+    "vs_ranked": "8-0",
     "vs_top10": "1-0",
     "vs_top25": "4-0"
   },
@@ -20,14 +20,21 @@
     "si_plus": 127.2,
     "df_plus": 111.9,
     "apr_plus": 103.5,
-    "pin_rate": 0.455,
+    "pin_rate": 0.091,
     "bonus_rate": 0.636,
     "majors": 2,
-    "techs": 0,
-    "pins": 5
+    "techs": 4,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 4.802,
+      "matches": 9,
+      "rank_weight": 4,
+      "rank_overall": 19,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 11,
+    "ranked_wins": 8,
     "ranked_losses": 0,
     "top10_wins": 1,
     "top10_losses": 0,
@@ -47,9 +54,9 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 157,
-      "opponent_rank": 74,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "4:49",
       "event": "Cougar Clash"
@@ -61,9 +68,9 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 157,
-      "opponent_rank": 142,
+      "opponent_rank": 72,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "3:46",
       "event": "Cougar Clash"
@@ -75,11 +82,11 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 26,
       "opponent_weight": 157,
-      "opponent_rank": 68,
+      "opponent_rank": 52,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:28",
       "event": "Cougar Clash"
     },
     {
@@ -91,7 +98,7 @@
       "opponent_weight": 157,
       "opponent_rank": 26,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "4:52",
       "event": "Cougar Clash"
@@ -117,7 +124,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 149,
-      "opponent_rank": 54,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-3",
@@ -131,9 +138,9 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 18,
       "opponent_weight": 149,
-      "opponent_rank": 18,
+      "opponent_rank": 17,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:25",
       "event": "vs. Virginia Tech"
@@ -187,7 +194,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 157,
-      "opponent_rank": 98,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "9-1",

@@ -6,12 +6,12 @@
   "team_rank": 66,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 125,
+  "current_rank": null,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "3-2",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 10.25,
@@ -20,29 +20,26 @@
     "si_plus": 103.6,
     "df_plus": 110.0,
     "apr_plus": 97.0,
-    "pin_rate": 0.333,
+    "pin_rate": 0.0,
     "bonus_rate": 0.667,
     "majors": 1,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.533,
+      "matches": 5,
+      "rank_weight": 113,
+      "rank_overall": 1168,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34949241132",
-      "opponent_rank": 126,
-      "opponent_name": "Anthony Clem",
-      "method": "MD 11-0"
-    },
-    "worst_loss": {
-      "opponent_id": "34944189132",
-      "opponent_rank": 124,
-      "opponent_name": "Jacob Jones",
-      "method": "MD 14-1"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +49,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 133,
-      "opponent_rank": 164,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -66,7 +63,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 133,
-      "opponent_rank": 126,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-0",
@@ -80,9 +77,9 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 133,
-      "opponent_rank": 198,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "3:00",
       "event": "Big Red Invitational"
@@ -94,7 +91,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 133,
-      "opponent_rank": 124,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-1",
@@ -108,11 +105,11 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 133,
-      "opponent_rank": 22,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:32",
       "event": "Clarion Open"
     }
   ]

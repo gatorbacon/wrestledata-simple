@@ -6,10 +6,10 @@
   "team_rank": 30,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 177,
+  "current_rank": null,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-5",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.525,
+      "matches": 5,
+      "rank_weight": 160,
+      "rank_overall": 1646,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34934755132",
-      "opponent_rank": 150,
-      "opponent_name": "Gabe Whisenhunt",
-      "method": "MD 10-2"
+      "opponent_id": "34934022132",
+      "opponent_rank": 72,
+      "opponent_name": "Richard Murillo",
+      "method": "Dec 13-7"
     }
   },
   "match_list": [
@@ -47,7 +54,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 133,
-      "opponent_rank": 46,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "7-3",
@@ -61,7 +68,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": 150,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "10-2",
@@ -75,7 +82,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 65,
       "opponent_weight": 133,
-      "opponent_rank": 138,
+      "opponent_rank": 72,
       "result": "L",
       "method": "DEC",
       "score": "13-7",
@@ -89,7 +96,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": 54,
+      "opponent_rank": 42,
       "result": "L",
       "method": "DEC",
       "score": "6-4",

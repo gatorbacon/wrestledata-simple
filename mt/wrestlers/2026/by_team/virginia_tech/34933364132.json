@@ -6,12 +6,12 @@
   "team_rank": 18,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 29,
+  "current_rank": 24,
   "record": {
     "overall": "9-3",
-    "vs_ranked": "9-3",
+    "vs_ranked": "5-1",
     "vs_top10": "1-0",
-    "vs_top25": "1-2"
+    "vs_top25": "2-1"
   },
   "metrics": {
     "pf7": 10.25,
@@ -20,15 +20,22 @@
     "si_plus": 111.9,
     "df_plus": 108.1,
     "apr_plus": 108.9,
-    "pin_rate": 0.556,
+    "pin_rate": 0.333,
     "bonus_rate": 0.667,
     "majors": 1,
-    "techs": 0,
-    "pins": 5
+    "techs": 2,
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 3.056,
+      "matches": 12,
+      "rank_weight": 15,
+      "rank_overall": 120,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 9,
-    "ranked_losses": 3,
+    "ranked_wins": 5,
+    "ranked_losses": 1,
     "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -38,10 +45,10 @@
       "method": "Dec 5-4"
     },
     "worst_loss": {
-      "opponent_id": "34954175132",
-      "opponent_rank": 28,
-      "opponent_name": "Lucas Lawler",
-      "method": "SV-3 3-2"
+      "opponent_id": "34955792132",
+      "opponent_rank": 16,
+      "opponent_name": "Koy Hopke",
+      "method": "MD 12-1"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 285,
-      "opponent_rank": 32,
+      "opponent_rank": 27,
       "result": "W",
       "method": "DEC",
       "score": "8-7",
@@ -66,7 +73,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 285,
-      "opponent_rank": 56,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "14-2",
@@ -80,11 +87,11 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 285,
-      "opponent_rank": 31,
+      "opponent_rank": 26,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:44",
       "event": "Keystone Classic"
     },
     {
@@ -94,11 +101,11 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 285,
-      "opponent_rank": 99,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:29",
       "event": "Keystone Classic"
     },
     {
@@ -108,7 +115,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 285,
-      "opponent_rank": 30,
+      "opponent_rank": 25,
       "result": "W",
       "method": "DEC",
       "score": "6-2",
@@ -122,7 +129,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 17,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "3-2",
@@ -136,9 +143,9 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 285,
-      "opponent_rank": 136,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "22-5",
       "duration": "0:00",
       "event": "vs. Virginia Tech"
@@ -164,7 +171,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 29,
       "opponent_weight": 285,
-      "opponent_rank": 28,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "3-2",
@@ -192,9 +199,9 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 285,
-      "opponent_rank": 35,
+      "opponent_rank": 30,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "4:58",
       "event": "Southeast Open"
@@ -206,11 +213,11 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 285,
-      "opponent_rank": 183,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:40",
       "event": "Southeast Open"
     }
   ]

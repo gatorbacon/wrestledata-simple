@@ -6,7 +6,7 @@
   "team_rank": 73,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 205,
+  "current_rank": 78,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.824,
+      "matches": 2,
+      "rank_weight": 211,
+      "rank_overall": 1971,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34950399132",
-      "opponent_rank": 128,
+      "opponent_rank": 71,
       "opponent_name": "Raymond Adams",
       "method": "TF 19-4 0:00"
     }
@@ -47,9 +54,9 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 141,
-      "opponent_rank": 128,
+      "opponent_rank": 71,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "0:00",
       "event": "vs. Morgan State"
@@ -61,11 +68,11 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 141,
-      "opponent_rank": 49,
+      "opponent_rank": 43,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:13",
       "event": "vs. Morgan State"
     }
   ]

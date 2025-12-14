@@ -6,10 +6,10 @@
   "team_rank": 53,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 21,
+  "current_rank": 20,
   "record": {
     "overall": "4-1",
-    "vs_ranked": "4-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-1",
     "vs_top25": "1-1"
   },
@@ -20,20 +20,27 @@
     "si_plus": 112.2,
     "df_plus": 110.8,
     "apr_plus": 98.7,
-    "pin_rate": 0.5,
+    "pin_rate": 0.0,
     "bonus_rate": 0.75,
     "majors": 1,
-    "techs": 0,
-    "pins": 2
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.943,
+      "matches": 5,
+      "rank_weight": 15,
+      "rank_overall": 130,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 2,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34945057132",
-      "opponent_rank": 23,
+      "opponent_rank": 22,
       "opponent_name": "Shane Cartagena-Walsh",
       "method": "Dec 2-0"
     },
@@ -52,7 +59,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 184,
-      "opponent_rank": 82,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "15-7",
@@ -66,7 +73,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 184,
-      "opponent_rank": 23,
+      "opponent_rank": 22,
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -80,9 +87,9 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 184,
-      "opponent_rank": 88,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "7:00",
       "event": "Keystone Classic"
@@ -108,9 +115,9 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 184,
-      "opponent_rank": 116,
+      "opponent_rank": 73,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "6:36",
       "event": "vs. VMI"

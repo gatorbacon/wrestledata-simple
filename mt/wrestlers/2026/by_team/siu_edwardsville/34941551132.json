@@ -6,10 +6,10 @@
   "team_rank": 24,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 211,
+  "current_rank": null,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-4",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.161,
+      "matches": 4,
+      "rank_weight": 227,
+      "rank_overall": 2001,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34964064132",
-      "opponent_rank": 233,
-      "opponent_name": "Cael Rahnavardi",
-      "method": "Fall 6:33"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,7 +49,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 157,
-      "opponent_rank": 73,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-2",
@@ -61,11 +63,11 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 26,
       "opponent_weight": 157,
-      "opponent_rank": 233,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:33",
       "event": "Cougar Clash"
     },
     {
@@ -75,9 +77,9 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 30,
       "opponent_weight": 157,
-      "opponent_rank": 135,
+      "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "INJ",
       "score": null,
       "duration": "7:00",
       "event": "Cyclone Invitational"
@@ -89,9 +91,9 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 30,
       "opponent_weight": 157,
-      "opponent_rank": 110,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "7:00",
       "event": "Cyclone Invitational"

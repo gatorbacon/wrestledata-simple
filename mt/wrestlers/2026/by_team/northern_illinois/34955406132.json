@@ -6,12 +6,12 @@
   "team_rank": 39,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 20,
+  "current_rank": 18,
   "record": {
     "overall": "3-0",
-    "vs_ranked": "3-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 5.33,
@@ -24,18 +24,25 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.544,
+      "matches": 3,
+      "rank_weight": 9,
+      "rank_overall": 74,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34955410132",
-      "opponent_rank": 21,
-      "opponent_name": "Devon Dawson",
-      "method": "Dec 4-2"
+      "opponent_id": "34934105132",
+      "opponent_rank": 28,
+      "opponent_name": "Bryan Caves",
+      "method": "Dec 8-1"
     },
     "worst_loss": null
   },
@@ -47,7 +54,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 285,
-      "opponent_rank": 33,
+      "opponent_rank": 28,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -61,7 +68,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 285,
-      "opponent_rank": 92,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -75,7 +82,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 285,
-      "opponent_rank": 21,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-2",

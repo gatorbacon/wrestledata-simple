@@ -6,10 +6,10 @@
   "team_rank": 66,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 164,
+  "current_rank": null,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "1-5",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,28 +20,30 @@
     "si_plus": 92.2,
     "df_plus": 90.2,
     "apr_plus": 94.2,
-    "pin_rate": 1.0,
+    "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.136,
+      "matches": 6,
+      "rank_weight": 174,
+      "rank_overall": 1744,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34949061132",
-      "opponent_rank": 198,
-      "opponent_name": "Michael Baker",
-      "method": "TF 18-1 3:15"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34947384132",
-      "opponent_rank": 145,
-      "opponent_name": "Jaiden Sarabia",
-      "method": "MD 11-3"
+      "opponent_id": "34945829132",
+      "opponent_rank": 41,
+      "opponent_name": "Logan Frazier",
+      "method": "TF 18-0 5:30"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 133,
-      "opponent_rank": 145,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -66,9 +68,9 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 35,
       "opponent_weight": 133,
-      "opponent_rank": 53,
+      "opponent_rank": 41,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-0",
       "duration": "5:30",
       "event": "Kent State Open 1"
@@ -80,9 +82,9 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 133,
-      "opponent_rank": 198,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-1",
       "duration": "3:15",
       "event": "Big Red Invitational"
@@ -94,7 +96,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 133,
-      "opponent_rank": 125,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -108,7 +110,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 133,
-      "opponent_rank": 126,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "9-7",
@@ -122,7 +124,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 133,
-      "opponent_rank": 86,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-0",

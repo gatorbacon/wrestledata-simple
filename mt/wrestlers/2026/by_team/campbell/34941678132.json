@@ -6,10 +6,10 @@
   "team_rank": 43,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 147,
+  "current_rank": 73,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,19 +24,21 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.324,
+      "matches": 1,
+      "rank_weight": 134,
+      "rank_overall": 1377,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34954508132",
-      "opponent_rank": 152,
-      "opponent_name": "Brayden Adams",
-      "method": "MD 10-0"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34935857132",
       "opponent_rank": 9,
@@ -52,7 +54,7 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 125,
-      "opponent_rank": 152,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "10-0",
@@ -68,7 +70,7 @@
       "opponent_weight": 133,
       "opponent_rank": 9,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-1",
       "duration": "0:00",
       "event": "vs. Pennsylvania"

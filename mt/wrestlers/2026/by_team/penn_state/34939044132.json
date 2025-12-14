@@ -9,7 +9,7 @@
   "current_rank": 4,
   "record": {
     "overall": "6-0",
-    "vs_ranked": "6-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "1-0"
   },
@@ -20,22 +20,29 @@
     "si_plus": 125.1,
     "df_plus": 110.1,
     "apr_plus": 97.9,
-    "pin_rate": 0.333,
+    "pin_rate": 0.0,
     "bonus_rate": 0.833,
     "majors": 3,
-    "techs": 0,
-    "pins": 2
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.793,
+      "matches": 6,
+      "rank_weight": 7,
+      "rank_overall": 61,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34939036132",
-      "opponent_rank": 15,
-      "opponent_name": "Asher Cunningham",
-      "method": "MD 13-5"
+      "opponent_id": "34952693132",
+      "opponent_rank": 25,
+      "opponent_name": "Rylan Rogers",
+      "method": "Dec 4-2"
     },
     "worst_loss": null
   },
@@ -47,7 +54,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 184,
-      "opponent_rank": 26,
+      "opponent_rank": 25,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -61,7 +68,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 184,
-      "opponent_rank": 115,
+      "opponent_rank": 72,
       "result": "W",
       "method": "MD",
       "score": "13-3",
@@ -75,9 +82,9 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 184,
-      "opponent_rank": 99,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-4",
       "duration": "3:46",
       "event": "Black Knight Invite"
@@ -89,7 +96,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 184,
-      "opponent_rank": 50,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "19-7",
@@ -103,7 +110,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 184,
-      "opponent_rank": 15,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "13-5",
@@ -117,9 +124,9 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 21,
       "opponent_weight": 184,
-      "opponent_rank": 132,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:28",
       "event": "vs. Penn State"

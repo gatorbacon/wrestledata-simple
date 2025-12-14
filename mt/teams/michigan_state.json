@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "michigan_state",
+  "team_name": "Michigan State",
+  "name": "Michigan State",
+  "abbreviation": "MSU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "Big Ten",
+  "location": {
+    "state": "MI"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758858150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34933988132",
+      "133": "34934362132",
+      "141": "34933983132",
+      "149": "34933985132",
+      "157": "34933994132",
+      "165": "34934356132",
+      "174": "34963819132",
+      "184": "34933987132",
+      "197": "34933980132",
+      "285": "34933981132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-12T18:19:25.919627Z"
+}

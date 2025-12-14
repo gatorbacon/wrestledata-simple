@@ -6,10 +6,10 @@
   "team_rank": 43,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 192,
+  "current_rank": null,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "1-5",
+    "vs_ranked": "0-2",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.9,
+      "matches": 6,
+      "rank_weight": 188,
+      "rank_overall": 1504,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34934209132",
-      "opponent_rank": 246,
-      "opponent_name": "Alex Chirdo",
-      "method": "Fall 0:51"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34954563132",
-      "opponent_rank": 166,
-      "opponent_name": "Matt Rodriguez",
-      "method": "Dec 4-2"
+      "opponent_id": "34938481132",
+      "opponent_rank": 12,
+      "opponent_name": "Kaden Cassidy",
+      "method": "TF 15-0 3:19"
     }
   },
   "match_list": [
@@ -54,7 +56,7 @@
       "opponent_weight": 149,
       "opponent_rank": 8,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-0",
       "duration": "0:00",
       "event": "vs. Pennsylvania"
@@ -66,7 +68,7 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 149,
-      "opponent_rank": 166,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -80,7 +82,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 149,
-      "opponent_rank": 163,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-7",
@@ -96,7 +98,7 @@
       "opponent_weight": 149,
       "opponent_rank": 12,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "3:19",
       "event": "vs. George Mason"
@@ -108,7 +110,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 149,
-      "opponent_rank": 138,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "10-2",
@@ -122,11 +124,11 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 149,
-      "opponent_rank": 246,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:51",
       "event": "Southeast Open"
     }
   ]

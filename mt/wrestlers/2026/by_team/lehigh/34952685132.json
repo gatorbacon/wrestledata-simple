@@ -6,10 +6,10 @@
   "team_rank": 16,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 143,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.505,
+      "matches": 3,
+      "rank_weight": 125,
+      "rank_overall": 1410,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934838132",
-      "opponent_rank": 190,
-      "opponent_name": "Kevin McBride",
-      "method": "MD 16-4"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34934361132",
-      "opponent_rank": 64,
-      "opponent_name": "Gage Laplante",
-      "method": "Dec 8-2"
+      "opponent_id": "34934320132",
+      "opponent_rank": 43,
+      "opponent_name": "Andrew Christie",
+      "method": "MD 8-0"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 174,
-      "opponent_rank": 52,
+      "opponent_rank": 43,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -66,7 +68,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 174,
-      "opponent_rank": 64,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -80,7 +82,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 174,
-      "opponent_rank": 190,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "16-4",

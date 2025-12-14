@@ -9,7 +9,7 @@
   "current_rank": 15,
   "record": {
     "overall": "4-0",
-    "vs_ranked": "4-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "1-0"
   },
@@ -20,14 +20,21 @@
     "si_plus": 102.8,
     "df_plus": 102.9,
     "apr_plus": 121.1,
-    "pin_rate": 0.5,
+    "pin_rate": 0.0,
     "bonus_rate": 0.75,
     "majors": 1,
-    "techs": 0,
-    "pins": 2
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.773,
+      "matches": 4,
+      "rank_weight": 9,
+      "rank_overall": 64,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -61,9 +68,9 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 55,
       "opponent_weight": 157,
-      "opponent_rank": 217,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "3:55",
       "event": "Keystone Classic"
@@ -75,9 +82,9 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": 86,
+      "opponent_rank": 60,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "7:00",
       "event": "Keystone Classic"
@@ -89,7 +96,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": 56,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "15-2",

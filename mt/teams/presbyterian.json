@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "presbyterian",
+  "team_name": "Presbyterian",
+  "name": "Presbyterian",
+  "abbreviation": "PRES",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "SoCon",
+  "location": {
+    "state": "SC"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758975150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34954516132",
+      "133": "34954559132",
+      "141": "34954509132",
+      "149": "34954560132",
+      "157": "34954529132",
+      "165": "34954527132",
+      "174": "34954558132",
+      "184": "34954530132",
+      "197": "34954522132",
+      "285": "34954517132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-12T18:19:25.968271Z"
+}

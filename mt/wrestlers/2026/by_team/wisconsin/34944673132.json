@@ -6,10 +6,10 @@
   "team_rank": 31,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 40,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "1-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.159,
+      "matches": 3,
+      "rank_weight": 93,
+      "rank_overall": 1060,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34934029132",
-      "opponent_rank": 44,
+      "opponent_rank": 35,
       "opponent_name": "Tristan Kemp",
       "method": "Dec 7-3"
     },
     "worst_loss": {
-      "opponent_id": "34940716132",
-      "opponent_rank": 39,
-      "opponent_name": "McCrae Hagarty",
-      "method": "Fall 2:44"
+      "opponent_id": "34940702132",
+      "opponent_rank": 1,
+      "opponent_name": "Yonger Bastida",
+      "method": "TF 17-2 3:27"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 65,
       "opponent_weight": 285,
-      "opponent_rank": 44,
+      "opponent_rank": 35,
       "result": "W",
       "method": "DEC",
       "score": "7-3",
@@ -68,7 +75,7 @@
       "opponent_weight": 285,
       "opponent_rank": 1,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "3:27",
       "event": "Cyclone Invitational"
@@ -80,11 +87,11 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 4,
       "opponent_weight": 285,
-      "opponent_rank": 39,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:44",
       "event": "Cyclone Invitational"
     }
   ]

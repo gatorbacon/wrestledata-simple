@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "morgan_state",
+  "team_name": "Morgan State",
+  "name": "Morgan State",
+  "abbreviation": "MSC",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "EIWA",
+  "location": {
+    "state": "MD"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=759003150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34977454132",
+      "133": "34977458132",
+      "141": "34977446132",
+      "149": "34977466132",
+      "157": "34977455132",
+      "165": "34977444132",
+      "174": "34977441132",
+      "184": "34977442132",
+      "197": "34998420132",
+      "285": "35087949132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-12T18:19:25.926645Z"
+}

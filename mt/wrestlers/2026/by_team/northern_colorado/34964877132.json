@@ -6,10 +6,10 @@
   "team_rank": 57,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 257,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.597,
+      "matches": 2,
+      "rank_weight": 237,
+      "rank_overall": 1947,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34941569132",
-      "opponent_rank": 195,
-      "opponent_name": "Donavon Allen",
-      "method": "Dec 7-2"
+      "opponent_id": "34936418132",
+      "opponent_rank": 16,
+      "opponent_name": "Casey Swiderski",
+      "method": "Fall 6:43"
     }
   },
   "match_list": [
@@ -47,11 +54,11 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 149,
-      "opponent_rank": 17,
+      "opponent_rank": 16,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:43",
       "event": "Cougar Clash"
     },
     {
@@ -61,7 +68,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 149,
-      "opponent_rank": 195,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "7-2",

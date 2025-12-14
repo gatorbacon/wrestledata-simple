@@ -6,10 +6,10 @@
   "team_rank": 16,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 96,
+  "current_rank": null,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "2-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,26 +20,28 @@
     "si_plus": 102.6,
     "df_plus": 102.8,
     "apr_plus": 122.5,
-    "pin_rate": 1.0,
+    "pin_rate": 0.5,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 2
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.324,
+      "matches": 3,
+      "rank_weight": 43,
+      "rank_overall": 389,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34935053132",
-      "opponent_rank": 97,
-      "opponent_name": "Tyler McCatharn",
-      "method": "Fall 6:02"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34938491132",
-      "opponent_rank": 37,
+      "opponent_rank": 31,
       "opponent_name": "James Blackman",
       "method": "MD 12-1"
     }
@@ -52,11 +54,11 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": 97,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:02",
       "event": "Lock Haven Open I"
     },
     {
@@ -66,7 +68,7 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 285,
-      "opponent_rank": 37,
+      "opponent_rank": 31,
       "result": "L",
       "method": "MD",
       "score": "12-1",
@@ -80,9 +82,9 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 285,
-      "opponent_rank": 142,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "6:53",
       "event": "Lock Haven Open I"

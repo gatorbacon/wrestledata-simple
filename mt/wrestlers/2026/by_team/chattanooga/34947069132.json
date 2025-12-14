@@ -6,10 +6,10 @@
   "team_rank": 52,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 43,
+  "current_rank": null,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "3-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,22 +24,29 @@
     "bonus_rate": 1.0,
     "majors": 3,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.043,
+      "matches": 3,
+      "rank_weight": 13,
+      "rank_overall": 123,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34946230132",
-      "opponent_rank": 46,
+      "opponent_rank": 39,
       "opponent_name": "Jacob Silka",
       "method": "MD 17-9"
     },
     "worst_loss": {
       "opponent_id": "34957589132",
-      "opponent_rank": 34,
+      "opponent_rank": 32,
       "opponent_name": "Kal Miller",
       "method": "M. For."
     }
@@ -52,7 +59,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 157,
-      "opponent_rank": 34,
+      "opponent_rank": 32,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -66,7 +73,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": 46,
+      "opponent_rank": 39,
       "result": "W",
       "method": "MD",
       "score": "17-9",
@@ -80,7 +87,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 157,
-      "opponent_rank": 212,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "9-0",
@@ -94,7 +101,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 157,
-      "opponent_rank": 91,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "15-6",

@@ -6,10 +6,10 @@
   "team_rank": 78,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 116,
+  "current_rank": null,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "1-5",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.183,
+      "matches": 6,
+      "rank_weight": 151,
+      "rank_overall": 1566,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34950418132",
-      "opponent_rank": 131,
+      "opponent_rank": 75,
       "opponent_name": "Riley Rowan",
       "method": "MD 14-2"
     },
     "worst_loss": {
-      "opponent_id": "34935445132",
-      "opponent_rank": 109,
-      "opponent_name": "Brody Gobbell",
-      "method": "MD 11-3"
+      "opponent_id": "34937009132",
+      "opponent_rank": 66,
+      "opponent_name": "Brayden Teunissen",
+      "method": "Dec 7-2"
     }
   },
   "match_list": [
@@ -52,11 +59,11 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 125,
-      "opponent_rank": 15,
+      "opponent_rank": 25,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:04",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
     },
     {
@@ -66,7 +73,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 30,
       "opponent_weight": 125,
-      "opponent_rank": 94,
+      "opponent_rank": 61,
       "result": "L",
       "method": "DEC",
       "score": "8-4",
@@ -80,7 +87,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 125,
-      "opponent_rank": 131,
+      "opponent_rank": 75,
       "result": "W",
       "method": "MD",
       "score": "14-2",
@@ -94,9 +101,9 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 125,
-      "opponent_rank": 27,
+      "opponent_rank": 26,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "2:34",
       "event": "vs. VMI"
@@ -108,7 +115,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 52,
       "opponent_weight": 125,
-      "opponent_rank": 109,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -122,7 +129,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 125,
-      "opponent_rank": 106,
+      "opponent_rank": 66,
       "result": "L",
       "method": "DEC",
       "score": "7-2",

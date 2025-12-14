@@ -6,10 +6,10 @@
   "team_rank": 49,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 189,
+  "current_rank": null,
   "record": {
     "overall": "0-6",
-    "vs_ranked": "0-6",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.547,
+      "matches": 6,
+      "rank_weight": 163,
+      "rank_overall": 1813,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 6,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34934141132",
-      "opponent_rank": 147,
-      "opponent_name": "Juliano Marion",
-      "method": "Dec 7-2"
+      "opponent_id": "34935054132",
+      "opponent_rank": 60,
+      "opponent_name": "Mason Rebuck",
+      "method": "TF 17-2 7:00"
     }
   },
   "match_list": [
@@ -47,9 +54,9 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": 82,
+      "opponent_rank": 60,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "7:00",
       "event": "vs. Buffalo"
@@ -61,7 +68,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 285,
-      "opponent_rank": 46,
+      "opponent_rank": 37,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -75,7 +82,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 285,
-      "opponent_rank": 45,
+      "opponent_rank": 36,
       "result": "L",
       "method": "DEC",
       "score": "8-1",
@@ -89,9 +96,9 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 285,
-      "opponent_rank": 19,
+      "opponent_rank": 17,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "0:00",
       "event": "vs. Pittsburgh"
@@ -103,7 +110,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": 134,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-1",
@@ -117,7 +124,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 285,
-      "opponent_rank": 147,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "7-2",

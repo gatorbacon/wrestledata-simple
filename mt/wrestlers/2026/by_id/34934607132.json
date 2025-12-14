@@ -6,10 +6,10 @@
   "team_rank": 74,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 202,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -7.858,
+      "matches": 1,
+      "rank_weight": 192,
+      "rank_overall": 2076,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34943253132",
-      "opponent_rank": 138,
-      "opponent_name": "Jacob Fistler",
-      "method": "TF 17-1 4:16"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,9 +49,9 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 174,
-      "opponent_rank": 138,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-1",
       "duration": "4:16",
       "event": "MSU Moorhead Dragon Open"

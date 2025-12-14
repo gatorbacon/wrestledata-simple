@@ -6,10 +6,10 @@
   "team_rank": 67,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 80,
+  "current_rank": null,
   "record": {
     "overall": "1-6",
-    "vs_ranked": "1-6",
+    "vs_ranked": "1-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,29 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.026,
+      "matches": 6,
+      "rank_weight": 135,
+      "rank_overall": 1533,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34934461132",
-      "opponent_rank": 81,
+      "opponent_rank": 56,
       "opponent_name": "Dominic Wheatley",
       "method": "Dec 4-3"
     },
     "worst_loss": {
       "opponent_id": "34949038132",
-      "opponent_rank": 87,
+      "opponent_rank": 64,
       "opponent_name": "Chris DeLena",
       "method": "Dec 3-2"
     }
@@ -54,7 +61,7 @@
       "opponent_weight": 174,
       "opponent_rank": 18,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-4",
       "duration": "3:00",
       "event": "vs. Purdue"
@@ -66,7 +73,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 197,
-      "opponent_rank": 87,
+      "opponent_rank": 64,
       "result": "L",
       "method": "DEC",
       "score": "3-2",
@@ -80,7 +87,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 174,
-      "opponent_rank": 46,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "12-2",
@@ -94,7 +101,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 174,
-      "opponent_rank": 55,
+      "opponent_rank": 46,
       "result": "L",
       "method": "DEC",
       "score": "11-8",
@@ -108,9 +115,9 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 165,
-      "opponent_rank": 45,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "6:03",
       "event": "Southeast Open"
@@ -122,7 +129,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 174,
-      "opponent_rank": 32,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "17-4",
@@ -136,7 +143,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 174,
-      "opponent_rank": 81,
+      "opponent_rank": 56,
       "result": "W",
       "method": "DEC",
       "score": "4-3",

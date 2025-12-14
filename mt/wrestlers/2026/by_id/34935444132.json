@@ -6,10 +6,10 @@
   "team_rank": 52,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 95,
+  "current_rank": null,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "4-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -20,26 +20,28 @@
     "si_plus": 104.8,
     "df_plus": 106.1,
     "apr_plus": 115.0,
-    "pin_rate": 0.5,
+    "pin_rate": 0.25,
     "bonus_rate": 0.75,
     "majors": 1,
-    "techs": 0,
-    "pins": 2
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.378,
+      "matches": 6,
+      "rank_weight": 38,
+      "rank_overall": 374,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 0,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34939072132",
-      "opponent_rank": 99,
-      "opponent_name": "Charleston Baglio",
-      "method": "MD 13-0"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34952969132",
-      "opponent_rank": 83,
+      "opponent_rank": 57,
       "opponent_name": "Aaron Lanster",
       "method": "Dec 8-6"
     }
@@ -66,7 +68,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 49,
       "opponent_weight": 141,
-      "opponent_rank": 83,
+      "opponent_rank": 57,
       "result": "L",
       "method": "DEC",
       "score": "8-6",
@@ -80,9 +82,9 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 141,
-      "opponent_rank": 221,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-1",
       "duration": "2:14",
       "event": "Black Knight Invite"
@@ -94,11 +96,11 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 43,
       "opponent_weight": 141,
-      "opponent_rank": 102,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:01",
       "event": "Southeast Open"
     },
     {
@@ -108,7 +110,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 141,
-      "opponent_rank": 99,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "13-0",
@@ -122,7 +124,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 77,
       "opponent_weight": 141,
-      "opponent_rank": 111,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-0",

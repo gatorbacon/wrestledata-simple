@@ -6,10 +6,10 @@
   "team_rank": 67,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 162,
+  "current_rank": 75,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "1-7",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -5.034,
+      "matches": 7,
+      "rank_weight": 200,
+      "rank_overall": 1886,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 7,
+    "ranked_wins": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34937486132",
-      "opponent_rank": 204,
-      "opponent_name": "Ty Porter",
-      "method": "Fall 1:01"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34933991132",
-      "opponent_rank": 126,
-      "opponent_name": "Sean Larkin",
-      "method": "Fall 1:14"
+      "opponent_id": "34944028132",
+      "opponent_rank": 67,
+      "opponent_name": "Mason Tieffel",
+      "method": "Dec 8-4"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 133,
-      "opponent_rank": 94,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -68,9 +70,9 @@
       "opponent_weight": 141,
       "opponent_rank": 20,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:20",
       "event": "vs. North Carolina"
     },
     {
@@ -80,9 +82,9 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 157,
-      "opponent_rank": 74,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-0",
       "duration": "3:08",
       "event": "vs. Davidson"
@@ -94,9 +96,9 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 157,
-      "opponent_rank": 52,
+      "opponent_rank": 42,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "5:42",
       "event": "vs. Sacred Heart"
@@ -108,7 +110,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": 106,
+      "opponent_rank": 67,
       "result": "L",
       "method": "DEC",
       "score": "8-4",
@@ -122,11 +124,11 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 141,
-      "opponent_rank": 126,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:14",
       "event": "Michigan State Open"
     },
     {
@@ -136,11 +138,11 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 141,
-      "opponent_rank": 204,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:01",
       "event": "Southeast Open"
     },
     {
@@ -150,7 +152,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 77,
       "opponent_weight": 141,
-      "opponent_rank": 111,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-1",

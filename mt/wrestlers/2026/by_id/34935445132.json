@@ -6,10 +6,10 @@
   "team_rank": 52,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 109,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.579,
+      "matches": 3,
+      "rank_weight": 117,
+      "rank_overall": 1181,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934207132",
-      "opponent_rank": 116,
-      "opponent_name": "Waylon Rogers",
-      "method": "MD 11-3"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34957599132",
-      "opponent_rank": 94,
-      "opponent_name": "Tyler Garvin",
-      "method": "MD 8-0"
+      "opponent_id": "34957603132",
+      "opponent_rank": 52,
+      "opponent_name": "Abram Cline",
+      "method": "Dec 7-4"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 125,
-      "opponent_rank": 94,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -66,7 +68,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 125,
-      "opponent_rank": 116,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-3",
@@ -80,7 +82,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 125,
-      "opponent_rank": 67,
+      "opponent_rank": 52,
       "result": "L",
       "method": "DEC",
       "score": "7-4",

@@ -6,10 +6,10 @@
   "team_rank": 6,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 193,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.366,
+      "matches": 3,
+      "rank_weight": 150,
+      "rank_overall": 1386,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934203132",
-      "opponent_rank": 194,
-      "opponent_name": "Eli Cramer",
-      "method": "Dec 10-4"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34939050132",
-      "opponent_rank": 136,
-      "opponent_name": "Nicholas Vafiadis",
-      "method": "Dec 3-0"
+      "opponent_id": "34957650132",
+      "opponent_rank": 32,
+      "opponent_name": "Ryan Kennedy",
+      "method": "Dec 1-0"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 141,
-      "opponent_rank": 33,
+      "opponent_rank": 32,
       "result": "L",
       "method": "DEC",
       "score": "1-0",
@@ -66,7 +68,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 141,
-      "opponent_rank": 136,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "3-0",
@@ -80,7 +82,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 141,
-      "opponent_rank": 194,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "10-4",

@@ -6,10 +6,10 @@
   "team_rank": 6,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 144,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.534,
+      "matches": 5,
+      "rank_weight": 141,
+      "rank_overall": 1648,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34935690132",
-      "opponent_rank": 110,
-      "opponent_name": "Andrew Macchiavello",
-      "method": "Dec 4-3"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34944406132",
-      "opponent_rank": 119,
-      "opponent_name": "Brady Conlin",
-      "method": "Dec 6-4"
+      "opponent_id": "34954530132",
+      "opponent_rank": 57,
+      "opponent_name": "Reed Douglass",
+      "method": "MD 11-3"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 197,
-      "opponent_rank": 110,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-3",
@@ -66,9 +68,9 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 184,
-      "opponent_rank": 94,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-6",
       "duration": "4:31",
       "event": "Mountaineer Open"
@@ -80,7 +82,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 184,
-      "opponent_rank": 103,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -94,7 +96,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 43,
       "opponent_weight": 184,
-      "opponent_rank": 119,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-4",
@@ -108,7 +110,7 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 184,
-      "opponent_rank": 71,
+      "opponent_rank": 57,
       "result": "L",
       "method": "MD",
       "score": "11-3",

@@ -6,10 +6,10 @@
   "team_rank": 63,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 114,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.224,
+      "matches": 3,
+      "rank_weight": 118,
+      "rank_overall": 1076,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934333132",
-      "opponent_rank": 148,
-      "opponent_name": "Colt Schrader",
-      "method": "MD 12-2"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34935974132",
-      "opponent_rank": 64,
-      "opponent_name": "Hunter Gould",
-      "method": "Dec 5-0"
+      "opponent_id": "34948153132",
+      "opponent_rank": 33,
+      "opponent_name": "Matthew Martino",
+      "method": "Dec 3-1"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 141,
-      "opponent_rank": 148,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "12-2",
@@ -66,7 +68,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": 64,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-0",
@@ -80,7 +82,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 141,
-      "opponent_rank": 34,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "3-1",

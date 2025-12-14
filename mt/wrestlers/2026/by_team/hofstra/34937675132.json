@@ -6,10 +6,10 @@
   "team_rank": 69,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 172,
+  "current_rank": null,
   "record": {
     "overall": "1-6",
-    "vs_ranked": "1-6",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.319,
+      "matches": 7,
+      "rank_weight": 180,
+      "rank_overall": 1593,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934344132",
-      "opponent_rank": 180,
-      "opponent_name": "Owen O`Connor",
-      "method": "Dec 4-3"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34971916132",
-      "opponent_rank": 146,
-      "opponent_name": "Gavin Carroll",
-      "method": "Dec 6-0"
+      "opponent_id": "34939066132",
+      "opponent_rank": 46,
+      "opponent_name": "Cooper Rathburn",
+      "method": "Dec 5-0"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 157,
-      "opponent_rank": 180,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-3",
@@ -66,11 +68,11 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 157,
-      "opponent_rank": 29,
+      "opponent_rank": 28,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:59",
       "event": "Army Open"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": 140,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "7-2",
@@ -94,7 +96,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": 44,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-1",
@@ -108,7 +110,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 157,
-      "opponent_rank": 58,
+      "opponent_rank": 46,
       "result": "L",
       "method": "DEC",
       "score": "5-0",
@@ -122,7 +124,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 157,
-      "opponent_rank": 137,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "12-2",
@@ -136,7 +138,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": 146,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-0",

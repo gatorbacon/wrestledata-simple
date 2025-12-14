@@ -6,10 +6,10 @@
   "team_rank": 74,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 118,
+  "current_rank": 72,
   "record": {
     "overall": "3-6",
-    "vs_ranked": "3-6",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-4"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.757,
+      "matches": 9,
+      "rank_weight": 108,
+      "rank_overall": 1230,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 6,
+    "ranked_wins": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34943253132",
-      "opponent_rank": 138,
-      "opponent_name": "Jacob Fistler",
-      "method": "MD 13-1"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34944664132",
-      "opponent_rank": 48,
+      "opponent_rank": 40,
       "opponent_name": "Luke Condon",
       "method": "MD 13-4"
     }
@@ -94,7 +96,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 174,
-      "opponent_rank": 191,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-5",
@@ -108,7 +110,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 174,
-      "opponent_rank": 138,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-1",
@@ -136,7 +138,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 174,
-      "opponent_rank": 138,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "13-1",
@@ -150,9 +152,9 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 174,
-      "opponent_rank": 31,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-1",
       "duration": "3:57",
       "event": "Bison Open 2025"
@@ -164,7 +166,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 31,
       "opponent_weight": 174,
-      "opponent_rank": 48,
+      "opponent_rank": 40,
       "result": "L",
       "method": "MD",
       "score": "13-4",

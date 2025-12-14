@@ -6,10 +6,10 @@
   "team_rank": 8,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 188,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,22 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.113,
+      "matches": 5,
+      "rank_weight": 194,
+      "rank_overall": 1549,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934637132",
-      "opponent_rank": 239,
-      "opponent_name": "Brayden Canoyer",
-      "method": "Fall 0:58"
-    },
-    "worst_loss": {
-      "opponent_id": "34943256132",
-      "opponent_rank": 167,
-      "opponent_name": "Conlan Carlson",
-      "method": "MD 16-6"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +49,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 149,
-      "opponent_rank": 130,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "17-5",
@@ -66,7 +63,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 149,
-      "opponent_rank": 165,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -80,7 +77,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 149,
-      "opponent_rank": 167,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "16-6",
@@ -94,7 +91,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 149,
-      "opponent_rank": 91,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -108,11 +105,11 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 149,
-      "opponent_rank": 239,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:58",
       "event": "Bison Open 2025"
     }
   ]

@@ -6,7 +6,7 @@
   "team_rank": 12,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 170,
+  "current_rank": null,
   "record": {
     "overall": "0-4",
     "vs_ranked": "0-4",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.168,
+      "matches": 4,
+      "rank_weight": 137,
+      "rank_overall": 1562,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34945831132",
-      "opponent_rank": 36,
+      "opponent_rank": 31,
       "opponent_name": "Derek Gilcher",
       "method": "TF 19-4 5:54"
     }
@@ -47,9 +54,9 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 35,
       "opponent_weight": 174,
-      "opponent_rank": 36,
+      "opponent_rank": 31,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:54",
       "event": "vs. Little Rock"
@@ -89,11 +96,11 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 174,
-      "opponent_rank": 28,
+      "opponent_rank": 27,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:16",
       "event": "vs. Missouri"
     }
   ]

@@ -6,10 +6,10 @@
   "team_rank": 39,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 81,
+  "current_rank": 64,
   "record": {
     "overall": "1-3",
-    "vs_ranked": "1-3",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.358,
+      "matches": 4,
+      "rank_weight": 123,
+      "rank_overall": 1383,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934110132",
-      "opponent_rank": 82,
-      "opponent_name": "Wyatt Ferguson",
-      "method": "SV-1 4-1"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34944018132",
-      "opponent_rank": 80,
-      "opponent_name": "Holden Martin",
-      "method": "TB-1 2-1"
+      "opponent_id": "34944021132",
+      "opponent_rank": 41,
+      "opponent_name": "Trent Thomas",
+      "method": "Dec 8-1"
     }
   },
   "match_list": [
@@ -52,11 +54,11 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 184,
-      "opponent_rank": 56,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:13",
       "event": "Kaufman Brand Bayly UCM Open"
     },
     {
@@ -66,7 +68,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 184,
-      "opponent_rank": 82,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -80,7 +82,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 184,
-      "opponent_rank": 80,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -94,7 +96,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 184,
-      "opponent_rank": 45,
+      "opponent_rank": 41,
       "result": "L",
       "method": "DEC",
       "score": "8-1",

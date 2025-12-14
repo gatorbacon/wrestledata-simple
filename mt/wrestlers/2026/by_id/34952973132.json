@@ -6,10 +6,10 @@
   "team_rank": 49,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 61,
+  "current_rank": 50,
   "record": {
     "overall": "4-4",
-    "vs_ranked": "4-4",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,29 @@
     "bonus_rate": 0.25,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.15,
+      "matches": 8,
+      "rank_weight": 74,
+      "rank_overall": 793,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 3,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34945144132",
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "opponent_name": "James Rowley",
       "method": "Dec 9-3"
     },
     "worst_loss": {
       "opponent_id": "34934139132",
-      "opponent_rank": 42,
+      "opponent_rank": 38,
       "opponent_name": "Chase Kranitz",
       "method": "Dec 7-2"
     }
@@ -52,7 +59,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": 75,
+      "opponent_rank": 60,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -66,11 +73,11 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 184,
-      "opponent_rank": 27,
+      "opponent_rank": 26,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:54",
       "event": "vs. Buffalo"
     },
     {
@@ -80,7 +87,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 184,
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "result": "W",
       "method": "DEC",
       "score": "9-3",
@@ -94,7 +101,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 184,
-      "opponent_rank": 42,
+      "opponent_rank": 38,
       "result": "L",
       "method": "DEC",
       "score": "7-2",
@@ -108,7 +115,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 184,
-      "opponent_rank": 39,
+      "opponent_rank": 36,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -122,11 +129,11 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 184,
-      "opponent_rank": 158,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:56",
       "event": "Clarion Open"
     },
     {
@@ -136,7 +143,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 184,
-      "opponent_rank": 79,
+      "opponent_rank": 63,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -150,7 +157,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 184,
-      "opponent_rank": 19,
+      "opponent_rank": 18,
       "result": "L",
       "method": "DEC",
       "score": "7-3",

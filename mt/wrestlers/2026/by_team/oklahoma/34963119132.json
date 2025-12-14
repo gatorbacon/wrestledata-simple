@@ -6,10 +6,10 @@
   "team_rank": 21,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 65,
+  "current_rank": null,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "2-4",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.444,
+      "matches": 6,
+      "rank_weight": 125,
+      "rank_overall": 1148,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34950689132",
-      "opponent_rank": 66,
+      "opponent_rank": 51,
       "opponent_name": "Gabriel Schumm",
       "method": "Dec 9-5"
     },
     "worst_loss": {
-      "opponent_id": "34943990132",
-      "opponent_rank": 106,
-      "opponent_name": "Danny Heiser",
-      "method": "Dec 6-3"
+      "opponent_id": "34951026132",
+      "opponent_rank": 34,
+      "opponent_name": "Ryan Burgos",
+      "method": "Dec 12-11"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 65,
       "opponent_weight": 165,
-      "opponent_rank": 66,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "9-5",
@@ -66,7 +73,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 165,
-      "opponent_rank": 38,
+      "opponent_rank": 34,
       "result": "L",
       "method": "DEC",
       "score": "12-11",
@@ -82,7 +89,7 @@
       "opponent_weight": 165,
       "opponent_rank": 17,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-1",
       "duration": "2:36",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -94,11 +101,11 @@
       "opponent_team": "Little Rock",
       "opponent_team_rank": 12,
       "opponent_weight": 174,
-      "opponent_rank": 107,
+      "opponent_rank": 67,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:05",
       "event": "Tiger Style Invite"
     },
     {
@@ -108,7 +115,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 165,
-      "opponent_rank": 64,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -122,7 +129,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 174,
-      "opponent_rank": 106,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-3",

@@ -6,10 +6,10 @@
   "team_rank": 60,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 161,
+  "current_rank": 75,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "1-5",
+    "vs_ranked": "0-3",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.645,
+      "matches": 6,
+      "rank_weight": 165,
+      "rank_overall": 1443,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_wins": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34938633132",
-      "opponent_rank": 178,
-      "opponent_name": "Reece Bechakas",
-      "method": "Fall 3:34"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34955625132",
-      "opponent_rank": 144,
-      "opponent_name": "Tyler Turzinski",
-      "method": "Dec 7-2"
+      "opponent_id": "34941564132",
+      "opponent_rank": 72,
+      "opponent_name": "PJ Murphy",
+      "method": "Dec 5-3"
     }
   },
   "match_list": [
@@ -54,7 +56,7 @@
       "opponent_weight": 157,
       "opponent_rank": 4,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-2",
       "duration": "4:10",
       "event": "vs. Ohio State"
@@ -66,7 +68,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 157,
-      "opponent_rank": 144,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "7-2",
@@ -82,9 +84,9 @@
       "opponent_weight": 157,
       "opponent_rank": 11,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:44",
       "event": "vs. Iowa"
     },
     {
@@ -94,7 +96,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": 69,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "18-4",
@@ -108,11 +110,11 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": 178,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:34",
       "event": "Clarion Open"
     },
     {
@@ -122,7 +124,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 157,
-      "opponent_rank": 142,
+      "opponent_rank": 72,
       "result": "L",
       "method": "DEC",
       "score": "5-3",

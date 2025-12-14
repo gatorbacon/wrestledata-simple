@@ -6,10 +6,10 @@
   "team_rank": 76,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 217,
+  "current_rank": null,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-4",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.997,
+      "matches": 4,
+      "rank_weight": 223,
+      "rank_overall": 2053,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34953928132",
-      "opponent_rank": 198,
-      "opponent_name": "Jack Valentin",
-      "method": "Fall 0:51"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,9 +49,9 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 165,
-      "opponent_rank": 124,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "2:53",
       "event": "2025 Journeymen Collegiate Classic"
@@ -61,9 +63,9 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": 155,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "3:44",
       "event": "2025 Journeymen Collegiate Classic"
@@ -75,11 +77,11 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 174,
-      "opponent_rank": 198,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:51",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -89,9 +91,9 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 165,
-      "opponent_rank": 146,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "3:34",
       "event": "2025 Journeymen Collegiate Classic"

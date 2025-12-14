@@ -6,10 +6,10 @@
   "team_rank": 52,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 28,
+  "current_rank": 27,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "3-2",
+    "vs_ranked": "1-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -20,28 +20,35 @@
     "si_plus": 131.5,
     "df_plus": 110.8,
     "apr_plus": 117.5,
-    "pin_rate": 0.667,
+    "pin_rate": 0.333,
     "bonus_rate": 1.0,
     "majors": 1,
-    "techs": 0,
-    "pins": 2
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.457,
+      "matches": 5,
+      "rank_weight": 44,
+      "rank_overall": 360,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34934410132",
-      "opponent_rank": 29,
+      "opponent_rank": 28,
       "opponent_name": "Joe Antonio",
       "method": "Fall 0:55"
     },
     "worst_loss": {
-      "opponent_id": "34941791132",
-      "opponent_rank": 27,
-      "opponent_name": "Landon Desselle",
-      "method": "Fall 3:40"
+      "opponent_id": "34939039132",
+      "opponent_rank": 5,
+      "opponent_name": "PJ Duke",
+      "method": "Fall 2:37"
     }
   },
   "match_list": [
@@ -52,9 +59,9 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 157,
-      "opponent_rank": 180,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "5:20",
       "event": "Black Knight Invite"
@@ -66,7 +73,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 157,
-      "opponent_rank": 85,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "17-3",
@@ -80,11 +87,11 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 157,
-      "opponent_rank": 29,
+      "opponent_rank": 28,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:55",
       "event": "Black Knight Invite"
     },
     {
@@ -96,9 +103,9 @@
       "opponent_weight": 157,
       "opponent_rank": 5,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:37",
       "event": "Black Knight Invite"
     },
     {
@@ -108,11 +115,11 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 157,
-      "opponent_rank": 27,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:40",
       "event": "vs. Ohio State"
     }
   ]

@@ -6,12 +6,12 @@
   "team_rank": 25,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 23,
+  "current_rank": 22,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "4-2",
+    "vs_ranked": "3-2",
     "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 5.17,
@@ -24,16 +24,23 @@
     "bonus_rate": 0.25,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.971,
+      "matches": 6,
+      "rank_weight": 25,
+      "rank_overall": 278,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 3,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34945521132",
-      "opponent_rank": 26,
+      "opponent_rank": 24,
       "opponent_name": "Musa Tamaradze",
       "method": "Dec 6-5"
     },
@@ -66,7 +73,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 77,
       "opponent_weight": 133,
-      "opponent_rank": 90,
+      "opponent_rank": 60,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -80,7 +87,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 133,
-      "opponent_rank": 26,
+      "opponent_rank": 24,
       "result": "W",
       "method": "DEC",
       "score": "6-5",
@@ -94,7 +101,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 133,
-      "opponent_rank": 50,
+      "opponent_rank": 38,
       "result": "W",
       "method": "MD",
       "score": "13-0",
@@ -122,7 +129,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 133,
-      "opponent_rank": 44,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-1",

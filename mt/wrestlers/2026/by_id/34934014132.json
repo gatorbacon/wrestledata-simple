@@ -6,7 +6,7 @@
   "team_rank": 65,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 193,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.942,
+      "matches": 1,
+      "rank_weight": 157,
+      "rank_overall": 1714,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,9 +56,9 @@
       "opponent_weight": 174,
       "opponent_rank": 19,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:55",
       "event": "Roadrunner Open"
     }
   ]

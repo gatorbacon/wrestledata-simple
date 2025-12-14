@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "central_michigan",
+  "team_name": "Central Michigan",
+  "name": "Central Michigan",
+  "abbreviation": "CMU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "MAC",
+  "location": {
+    "state": "MI"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758786150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34964221132",
+      "133": "34934102132",
+      "141": "34934101132",
+      "149": "34934118132",
+      "157": "34934120132",
+      "165": "34934100132",
+      "174": "34934116132",
+      "184": "34934109132",
+      "197": "34934108132",
+      "285": "34934105132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-12T18:19:25.857314Z"
+}

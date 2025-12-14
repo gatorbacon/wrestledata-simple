@@ -9,7 +9,7 @@
   "current_rank": 15,
   "record": {
     "overall": "6-2",
-    "vs_ranked": "6-2",
+    "vs_ranked": "5-2",
     "vs_top10": "1-0",
     "vs_top25": "1-1"
   },
@@ -20,14 +20,21 @@
     "si_plus": 118.8,
     "df_plus": 107.0,
     "apr_plus": 113.6,
-    "pin_rate": 0.5,
+    "pin_rate": 0.333,
     "bonus_rate": 0.833,
     "majors": 2,
-    "techs": 0,
-    "pins": 3
+    "techs": 1,
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 3.06,
+      "matches": 8,
+      "rank_weight": 10,
+      "rank_overall": 119,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
+    "ranked_wins": 5,
     "ranked_losses": 2,
     "top10_wins": 1,
     "top10_losses": 0,
@@ -39,7 +46,7 @@
     },
     "worst_loss": {
       "opponent_id": "34962141132",
-      "opponent_rank": 57,
+      "opponent_rank": 47,
       "opponent_name": "Guillermo Escobedo",
       "method": "Dec 9-2"
     }
@@ -52,7 +59,7 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 64,
       "opponent_weight": 174,
-      "opponent_rank": 57,
+      "opponent_rank": 47,
       "result": "L",
       "method": "DEC",
       "score": "9-2",
@@ -66,9 +73,9 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 65,
       "opponent_weight": 174,
-      "opponent_rank": 54,
+      "opponent_rank": 45,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "2:22",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -80,11 +87,11 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 174,
-      "opponent_rank": 34,
+      "opponent_rank": 29,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:45",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
     },
     {
@@ -96,9 +103,9 @@
       "opponent_weight": 174,
       "opponent_rank": 12,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:50",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
     },
     {
@@ -122,7 +129,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 65,
       "opponent_weight": 174,
-      "opponent_rank": 54,
+      "opponent_rank": 45,
       "result": "W",
       "method": "MD",
       "score": "13-5",
@@ -136,11 +143,11 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 174,
-      "opponent_rank": 101,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:55",
       "event": "Cyclone Invitational"
     },
     {
@@ -150,7 +157,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 31,
       "opponent_weight": 174,
-      "opponent_rank": 48,
+      "opponent_rank": 40,
       "result": "W",
       "method": "MD",
       "score": "11-3",

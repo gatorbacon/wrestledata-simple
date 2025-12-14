@@ -6,12 +6,12 @@
   "team_rank": 74,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 132,
+  "current_rank": null,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "1-5",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 1.85,
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.481,
+      "matches": 6,
+      "rank_weight": 155,
+      "rank_overall": 1803,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34943246132",
-      "opponent_rank": 165,
-      "opponent_name": "Shane McConville",
-      "method": "SV-3 4-1"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34934619132",
-      "opponent_rank": 145,
-      "opponent_name": "Shilo Jones",
-      "method": "Dec 4-2"
+      "opponent_id": "34955792132",
+      "opponent_rank": 16,
+      "opponent_name": "Koy Hopke",
+      "method": "Fall 1:27"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 197,
-      "opponent_rank": 122,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-2",
@@ -66,7 +68,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 197,
-      "opponent_rank": 165,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -80,9 +82,9 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 197,
-      "opponent_rank": 102,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "3:32",
       "event": "Warren Williamson Daktronics Invitational"
@@ -96,9 +98,9 @@
       "opponent_weight": 285,
       "opponent_rank": 16,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:27",
       "event": "Bison Open 2025"
     },
     {
@@ -108,11 +110,11 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 17,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:39",
       "event": "Bison Open 2025"
     },
     {
@@ -122,7 +124,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 285,
-      "opponent_rank": 145,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-2",

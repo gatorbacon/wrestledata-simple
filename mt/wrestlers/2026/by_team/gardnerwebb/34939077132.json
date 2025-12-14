@@ -6,10 +6,10 @@
   "team_rank": 54,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 222,
+  "current_rank": null,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-3",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.191,
+      "matches": 2,
+      "rank_weight": 215,
+      "rank_overall": 2003,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34934202132",
-      "opponent_rank": 191,
-      "opponent_name": "Cody Tanner",
-      "method": "MD 15-1"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,9 +49,9 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 141,
-      "opponent_rank": 163,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "6:47",
       "event": "Mountaineer Open"
@@ -61,11 +63,11 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 141,
-      "opponent_rank": 53,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:54",
       "event": "Mountaineer Open"
     },
     {
@@ -75,7 +77,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 133,
-      "opponent_rank": 191,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "15-1",

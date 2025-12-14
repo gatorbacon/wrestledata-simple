@@ -6,10 +6,10 @@
   "team_rank": 42,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 163,
+  "current_rank": null,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-4",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.005,
+      "matches": 4,
+      "rank_weight": 194,
+      "rank_overall": 1985,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34954508132",
-      "opponent_rank": 152,
-      "opponent_name": "Brayden Adams",
-      "method": "Dec 5-2"
+      "opponent_id": "34937682132",
+      "opponent_rank": 65,
+      "opponent_name": "Teague Strobel",
+      "method": "Fall 3:43"
     }
   },
   "match_list": [
@@ -47,11 +54,11 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 125,
-      "opponent_rank": 134,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:34",
       "event": "A Better Way Athletics Patriot Open"
     },
     {
@@ -61,7 +68,7 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 125,
-      "opponent_rank": 152,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -75,11 +82,11 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 125,
-      "opponent_rank": 102,
+      "opponent_rank": 65,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:43",
       "event": "Princeton Open"
     },
     {
@@ -89,11 +96,11 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 23,
       "opponent_weight": 125,
-      "opponent_rank": 14,
+      "opponent_rank": 12,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:25",
       "event": "Princeton Open"
     }
   ]

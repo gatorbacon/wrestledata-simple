@@ -6,10 +6,10 @@
   "team_rank": 26,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 137,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.529,
+      "matches": 5,
+      "rank_weight": 149,
+      "rank_overall": 1647,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34937105132",
-      "opponent_rank": 175,
+      "opponent_rank": 77,
       "opponent_name": "Enzo Cappabianca",
       "method": "MD 11-1"
     },
     "worst_loss": {
-      "opponent_id": "34952077132",
-      "opponent_rank": 124,
-      "opponent_name": "Peter Marinopoulos",
-      "method": "Dec 8-2"
+      "opponent_id": "34943973132",
+      "opponent_rank": 38,
+      "opponent_name": "Jarrett Stoner",
+      "method": "TF 17-2 3:18"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 285,
-      "opponent_rank": 124,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -66,9 +73,9 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 285,
-      "opponent_rank": 48,
+      "opponent_rank": 38,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "3:18",
       "event": "Cougar Clash"
@@ -80,7 +87,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 57,
       "opponent_weight": 285,
-      "opponent_rank": 175,
+      "opponent_rank": 77,
       "result": "W",
       "method": "MD",
       "score": "11-1",
@@ -94,7 +101,7 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 26,
       "opponent_weight": 285,
-      "opponent_rank": 101,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -108,7 +115,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 4,
       "opponent_weight": 285,
-      "opponent_rank": 112,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-3",

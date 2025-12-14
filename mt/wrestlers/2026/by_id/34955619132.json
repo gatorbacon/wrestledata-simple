@@ -6,7 +6,7 @@
   "team_rank": 39,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 175,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.377,
+      "matches": 1,
+      "rank_weight": 168,
+      "rank_overall": 1923,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34955745132",
-      "opponent_rank": 38,
+      "opponent_rank": 36,
       "opponent_name": "alex smith",
       "method": "Fall 4:15"
     }
@@ -47,11 +54,11 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 40,
       "opponent_weight": 197,
-      "opponent_rank": 38,
+      "opponent_rank": 36,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:15",
       "event": "Michigan State Open"
     }
   ]

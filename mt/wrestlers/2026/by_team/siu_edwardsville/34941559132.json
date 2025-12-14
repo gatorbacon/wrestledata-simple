@@ -6,12 +6,12 @@
   "team_rank": 24,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 84,
+  "current_rank": null,
   "record": {
     "overall": "4-3",
-    "vs_ranked": "4-3",
-    "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.0,
@@ -24,24 +24,26 @@
     "bonus_rate": 0.25,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.288,
+      "matches": 4,
+      "rank_weight": 153,
+      "rank_overall": 1585,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 3,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34938687132",
-      "opponent_rank": 88,
-      "opponent_name": "Easton Mull",
-      "method": "MD 9-0"
-    },
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34949788132",
-      "opponent_rank": 167,
-      "opponent_name": "Jackson Tucker",
-      "method": "Dec 6-1"
+      "opponent_id": "34964062132",
+      "opponent_rank": 21,
+      "opponent_name": "Julian Farber",
+      "method": "Fall 4:42"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Little Rock",
       "opponent_team_rank": 12,
       "opponent_weight": 133,
-      "opponent_rank": 167,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-1",
@@ -66,7 +68,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 133,
-      "opponent_rank": 181,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "1-0",
@@ -82,9 +84,9 @@
       "opponent_weight": 133,
       "opponent_rank": 21,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:42",
       "event": "Cougar Clash"
     },
     {
@@ -94,7 +96,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 133,
-      "opponent_rank": 208,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-4",
@@ -108,7 +110,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 125,
-      "opponent_rank": 158,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-3",
@@ -122,7 +124,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 125,
-      "opponent_rank": 88,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "9-0",
@@ -136,9 +138,9 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 125,
-      "opponent_rank": 1,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "2:49",
       "event": "Clarion Open"

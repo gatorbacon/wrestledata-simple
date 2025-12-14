@@ -6,10 +6,10 @@
   "team_rank": 56,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 151,
+  "current_rank": null,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "2-3",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,27 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.072,
+      "matches": 4,
+      "rank_weight": 136,
+      "rank_overall": 1034,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_wins": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34936234132",
-      "opponent_rank": 156,
+      "opponent_rank": 74,
       "opponent_name": "Jay Chase",
       "method": "MD 15-7"
     },
-    "worst_loss": {
-      "opponent_id": "34940494132",
-      "opponent_rank": 150,
-      "opponent_name": "Julian Everitt",
-      "method": "Dec 2-0"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +54,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 149,
-      "opponent_rank": 147,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -66,11 +68,11 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 149,
-      "opponent_rank": 207,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:09",
       "event": "Lock Haven Open I"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 149,
-      "opponent_rank": 156,
+      "opponent_rank": 74,
       "result": "W",
       "method": "MD",
       "score": "15-7",
@@ -94,7 +96,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 149,
-      "opponent_rank": 150,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -108,7 +110,7 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 141,
-      "opponent_rank": 147,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "11-8",

@@ -6,12 +6,12 @@
   "team_rank": 3,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 157,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.429,
+      "matches": 2,
+      "rank_weight": 146,
+      "rank_overall": 1618,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34943973132",
-      "opponent_rank": 48,
+      "opponent_rank": 38,
       "opponent_name": "Jarrett Stoner",
       "method": "Dec 2-0"
     }
@@ -47,11 +54,11 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 285,
-      "opponent_rank": 30,
+      "opponent_rank": 25,
       "result": "L",
-      "method": "DEC",
+      "method": "INJ",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:22",
       "event": "vs. Iowa"
     },
     {
@@ -61,7 +68,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 285,
-      "opponent_rank": 48,
+      "opponent_rank": 38,
       "result": "L",
       "method": "DEC",
       "score": "2-0",

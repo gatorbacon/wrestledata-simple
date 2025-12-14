@@ -6,10 +6,10 @@
   "team_rank": 1,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 73,
+  "current_rank": null,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "2-0",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,19 +24,21 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 3.85,
+      "matches": 2,
+      "rank_weight": 4,
+      "rank_overall": 55,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 0,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34948147132",
-      "opponent_rank": 87,
-      "opponent_name": "Sebastian Ortega",
-      "method": "Dec 5-4"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": null
   },
   "match_list": [
@@ -47,11 +49,11 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 141,
-      "opponent_rank": 136,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:21",
       "event": "Shorty Hitchcock Memorial Open"
     },
     {
@@ -61,7 +63,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 141,
-      "opponent_rank": 87,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-4",

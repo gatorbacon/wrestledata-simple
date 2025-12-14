@@ -6,10 +6,10 @@
   "team_rank": 58,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 86,
+  "current_rank": null,
   "record": {
     "overall": "5-5",
-    "vs_ranked": "5-5",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.8,
     "majors": 2,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": -0.484,
+      "matches": 10,
+      "rank_weight": 87,
+      "rank_overall": 880,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 5,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34962238132",
-      "opponent_rank": 87,
+      "opponent_rank": 57,
       "opponent_name": "Robert Jones",
       "method": "MD 15-4"
     },
     "worst_loss": {
-      "opponent_id": "34934750132",
-      "opponent_rank": 83,
-      "opponent_name": "Chase DeBlaere",
-      "method": "Fall 2:02"
+      "opponent_id": "34944171132",
+      "opponent_rank": 56,
+      "opponent_name": "Gavin Caprella",
+      "method": "Dec 6-0"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 133,
-      "opponent_rank": 82,
+      "opponent_rank": 56,
       "result": "L",
       "method": "DEC",
       "score": "6-0",
@@ -66,7 +73,7 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 64,
       "opponent_weight": 133,
-      "opponent_rank": 87,
+      "opponent_rank": 57,
       "result": "W",
       "method": "MD",
       "score": "15-4",
@@ -80,7 +87,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": 54,
+      "opponent_rank": 42,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -94,11 +101,11 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": 83,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:02",
       "event": "Roadrunner Open"
     },
     {
@@ -108,11 +115,11 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 133,
-      "opponent_rank": 124,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:29",
       "event": "Clarion Open"
     },
     {
@@ -122,7 +129,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 133,
-      "opponent_rank": 39,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "5-0",
@@ -136,7 +143,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 133,
-      "opponent_rank": 119,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -150,7 +157,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 133,
-      "opponent_rank": 56,
+      "opponent_rank": 44,
       "result": "L",
       "method": "DEC",
       "score": "6-0",
@@ -164,11 +171,11 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 133,
-      "opponent_rank": 182,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:39",
       "event": "Clarion Open"
     },
     {
@@ -178,7 +185,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 133,
-      "opponent_rank": 164,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "14-0",

@@ -6,10 +6,10 @@
   "team_rank": 9,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 244,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.454,
+      "matches": 2,
+      "rank_weight": 173,
+      "rank_overall": 1401,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34962174132",
-      "opponent_rank": 86,
-      "opponent_name": "Kael Voinovich",
-      "method": "Dec 2-1"
+      "opponent_id": "34955721132",
+      "opponent_rank": 49,
+      "opponent_name": "Anthony Evanitsky",
+      "method": "SV-1 4-1"
     }
   },
   "match_list": [
@@ -47,7 +54,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 3,
       "opponent_weight": 149,
-      "opponent_rank": 86,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -61,7 +68,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 149,
-      "opponent_rank": 63,
+      "opponent_rank": 49,
       "result": "L",
       "method": "DEC",
       "score": "4-1",

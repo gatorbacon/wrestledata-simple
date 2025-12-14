@@ -6,10 +6,10 @@
   "team_rank": 13,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 138,
+  "current_rank": null,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "2-1",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,22 @@
     "bonus_rate": 1.0,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.43,
+      "matches": 3,
+      "rank_weight": 107,
+      "rank_overall": 865,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 1,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34944357132",
-      "opponent_rank": 178,
-      "opponent_name": "Grant Reece",
-      "method": "MD 20-6"
-    },
-    "worst_loss": {
-      "opponent_id": "34946304132",
-      "opponent_rank": 129,
-      "opponent_name": "Tommy Johnson",
-      "method": "SV-3 4-3"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +49,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 149,
-      "opponent_rank": 178,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "20-6",
@@ -66,7 +63,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 43,
       "opponent_weight": 149,
-      "opponent_rank": 192,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "10-2",
@@ -80,7 +77,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 77,
       "opponent_weight": 149,
-      "opponent_rank": 129,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-3",

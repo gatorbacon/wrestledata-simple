@@ -6,10 +6,10 @@
   "team_rank": 71,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 47,
+  "current_rank": 41,
   "record": {
     "overall": "2-7",
-    "vs_ranked": "2-7",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
     "vs_top25": "0-3"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.746,
+      "matches": 9,
+      "rank_weight": 129,
+      "rank_overall": 1228,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 7,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34934447132",
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "opponent_name": "Bryce Kresho",
       "method": "Dec 10-5"
     },
     "worst_loss": {
-      "opponent_id": "34943405132",
-      "opponent_rank": 46,
-      "opponent_name": "Roman Lermer",
-      "method": "Dec 6-0"
+      "opponent_id": "34933983132",
+      "opponent_rank": 39,
+      "opponent_name": "Jaden Crumpler",
+      "method": "Dec 6-5"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 141,
-      "opponent_rank": 32,
+      "opponent_rank": 31,
       "result": "L",
       "method": "MD",
       "score": "16-6",
@@ -80,7 +87,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 141,
-      "opponent_rank": 77,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "12-7",
@@ -96,9 +103,9 @@
       "opponent_weight": 141,
       "opponent_rank": 21,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:38",
       "event": "Black Knight Invite"
     },
     {
@@ -108,7 +115,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 141,
-      "opponent_rank": 46,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-0",
@@ -122,7 +129,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 141,
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "result": "W",
       "method": "DEC",
       "score": "10-5",
@@ -136,7 +143,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 141,
-      "opponent_rank": 44,
+      "opponent_rank": 39,
       "result": "L",
       "method": "DEC",
       "score": "6-5",
@@ -150,7 +157,7 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 47,
       "opponent_weight": 141,
-      "opponent_rank": 38,
+      "opponent_rank": 36,
       "result": "L",
       "method": "MD",
       "score": "12-3",
@@ -166,7 +173,7 @@
       "opponent_weight": 141,
       "opponent_rank": 24,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-3",
       "duration": "0:00",
       "event": "vs. Lock Haven"

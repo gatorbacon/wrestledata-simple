@@ -6,10 +6,10 @@
   "team_rank": 26,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 233,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.838,
+      "matches": 3,
+      "rank_weight": 142,
+      "rank_overall": 1244,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 0,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934635132",
-      "opponent_rank": 187,
-      "opponent_name": "Gabriel Gallardo",
-      "method": "Dec 10-6"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34941564132",
-      "opponent_rank": 142,
+      "opponent_rank": 72,
       "opponent_name": "PJ Murphy",
       "method": "Dec 5-4"
     }
@@ -66,11 +68,11 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 157,
-      "opponent_rank": 211,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:33",
       "event": "Cougar Clash"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 157,
-      "opponent_rank": 142,
+      "opponent_rank": 72,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -94,7 +96,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 149,
-      "opponent_rank": 187,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "10-6",

@@ -6,10 +6,10 @@
   "team_rank": 53,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 144,
+  "current_rank": null,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "2-5",
+    "vs_ranked": "0-2",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": -1.521,
+      "matches": 6,
+      "rank_weight": 152,
+      "rank_overall": 1166,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34964407132",
-      "opponent_rank": 145,
-      "opponent_name": "Carter Tate",
-      "method": "Fall 6:27"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34938631132",
-      "opponent_rank": 209,
-      "opponent_name": "David McClelland",
-      "method": "M. For."
+      "opponent_id": "34951043132",
+      "opponent_rank": 35,
+      "opponent_name": "Ryan Michaels",
+      "method": "Fall 4:12"
     }
   },
   "match_list": [
@@ -52,11 +54,11 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": 42,
+      "opponent_rank": 35,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:12",
       "event": "Keystone Classic"
     },
     {
@@ -68,7 +70,7 @@
       "opponent_weight": 149,
       "opponent_rank": 8,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-2",
       "duration": "4:26",
       "event": "Keystone Classic"
@@ -80,11 +82,11 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 14,
       "opponent_weight": 149,
-      "opponent_rank": 104,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:03",
       "event": "Michigan State Open"
     },
     {
@@ -94,11 +96,11 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 149,
-      "opponent_rank": 173,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:54",
       "event": "Michigan State Open"
     },
     {
@@ -108,7 +110,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 35,
       "opponent_weight": 149,
-      "opponent_rank": 133,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -122,7 +124,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 149,
-      "opponent_rank": 209,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -136,11 +138,11 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 149,
-      "opponent_rank": 145,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:27",
       "event": "Clarion Open"
     }
   ]

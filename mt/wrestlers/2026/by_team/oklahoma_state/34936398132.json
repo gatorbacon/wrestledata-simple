@@ -6,10 +6,10 @@
   "team_rank": 5,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 83,
+  "current_rank": null,
   "record": {
     "overall": "5-1",
-    "vs_ranked": "5-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,26 +20,33 @@
     "si_plus": 97.8,
     "df_plus": 112.7,
     "apr_plus": 106.8,
-    "pin_rate": 0.4,
+    "pin_rate": 0.2,
     "bonus_rate": 0.4,
     "majors": 0,
-    "techs": 0,
-    "pins": 2
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.694,
+      "matches": 6,
+      "rank_weight": 28,
+      "rank_overall": 322,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34937094132",
-      "opponent_rank": 90,
+      "opponent_rank": 66,
       "opponent_name": "Andrew Donahue",
       "method": "SV-1 8-5"
     },
     "worst_loss": {
       "opponent_id": "34948512132",
-      "opponent_rank": 28,
+      "opponent_rank": 26,
       "opponent_name": "Andrew Reall",
       "method": "Dec 2-0"
     }
@@ -52,7 +59,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 197,
-      "opponent_rank": 28,
+      "opponent_rank": 26,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -66,9 +73,9 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 197,
-      "opponent_rank": 103,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "22-6",
       "duration": "6:10",
       "event": "Cougar Clash"
@@ -80,7 +87,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 57,
       "opponent_weight": 197,
-      "opponent_rank": 90,
+      "opponent_rank": 66,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -94,7 +101,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 57,
       "opponent_weight": 197,
-      "opponent_rank": 96,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-3",
@@ -108,7 +115,7 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": 181,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -122,11 +129,11 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 197,
-      "opponent_rank": 117,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:28",
       "event": "Cougar Clash"
     }
   ]

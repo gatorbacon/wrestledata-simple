@@ -6,7 +6,7 @@
   "team_rank": 54,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 229,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.019,
+      "matches": 1,
+      "rank_weight": 218,
+      "rank_overall": 1883,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34944355132",
-      "opponent_rank": 41,
+      "opponent_rank": 36,
       "opponent_name": "Jeremiah Price",
       "method": "Fall 1:37"
     }
@@ -47,11 +54,11 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 157,
-      "opponent_rank": 41,
+      "opponent_rank": 36,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:37",
       "event": "Mountaineer Open"
     }
   ]

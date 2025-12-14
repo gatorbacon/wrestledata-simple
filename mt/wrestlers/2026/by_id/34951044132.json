@@ -6,10 +6,10 @@
   "team_rank": 53,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 175,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,22 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.002,
+      "matches": 4,
+      "rank_weight": 192,
+      "rank_overall": 1528,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34933989132",
-      "opponent_rank": 215,
-      "opponent_name": "Sammy Agnello",
-      "method": "MD 11-1"
-    },
-    "worst_loss": {
-      "opponent_id": "34934114132",
-      "opponent_rank": 159,
-      "opponent_name": "Colin Kacena",
-      "method": "Fall 6:34"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,11 +49,11 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 149,
-      "opponent_rank": 159,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:34",
       "event": "Kent State Open 1"
     },
     {
@@ -66,7 +63,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 149,
-      "opponent_rank": 215,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-1",
@@ -80,11 +77,11 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 149,
-      "opponent_rank": 226,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:25",
       "event": "Kent State Open 1"
     },
     {
@@ -94,11 +91,11 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 149,
-      "opponent_rank": 70,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:57",
       "event": "Kent State Open 1"
     }
   ]

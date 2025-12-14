@@ -305,8 +305,10 @@ def main() -> None:
         # Build team data
         team_data = {
             "schema_version": "1.0",
+            "season": args.season,
             "team_id": team_id,
-            "name": team_name,
+            "team_name": team_name,
+            "name": team_name,  # Keep for backward compatibility
             "abbreviation": abbreviation,
             "governing_body": governing_body,
             "division": division,
@@ -319,8 +321,6 @@ def main() -> None:
                 "school": None,
             },
             "roster": {
-                "season": args.season,
-                "source": "ranking_files_with_overrides",
                 "weights": [125, 133, 141, 149, 157, 165, 174, 184, 197, 285],
                 "starters": {
                     "125": starters.get("125"),
@@ -334,6 +334,7 @@ def main() -> None:
                     "197": starters.get("197"),
                     "285": starters.get("285"),
                 },
+                "starters_source": "ranking_files_with_overrides",
             },
             "derived_from": {
                 "rankings_dir": args.rankings_dir,

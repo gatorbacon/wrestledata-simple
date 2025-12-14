@@ -6,12 +6,12 @@
   "team_rank": 50,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 47,
+  "current_rank": 43,
   "record": {
     "overall": "8-5",
-    "vs_ranked": "8-5",
+    "vs_ranked": "3-5",
     "vs_top10": "1-1",
-    "vs_top25": "1-1"
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 8.0,
@@ -24,10 +24,17 @@
     "bonus_rate": 0.75,
     "majors": 4,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 0.179,
+      "matches": 12,
+      "rank_weight": 70,
+      "rank_overall": 708,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
+    "ranked_wins": 3,
     "ranked_losses": 5,
     "top10_wins": 1,
     "top10_losses": 1,
@@ -39,7 +46,7 @@
     },
     "worst_loss": {
       "opponent_id": "34944231132",
-      "opponent_rank": 46,
+      "opponent_rank": 42,
       "opponent_name": "Karson Tompkins",
       "method": "TF 16-1 5:43"
     }
@@ -52,9 +59,9 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 197,
-      "opponent_rank": 46,
+      "opponent_rank": 42,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "5:43",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -80,9 +87,9 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 40,
       "opponent_weight": 197,
-      "opponent_rank": 38,
+      "opponent_rank": 36,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-1",
       "duration": "2:32",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -94,7 +101,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 197,
-      "opponent_rank": 57,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "13-3",
@@ -108,7 +115,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 197,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-2",
@@ -122,11 +129,11 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 197,
-      "opponent_rank": 75,
+      "opponent_rank": 59,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:46",
       "event": "Black Knight Invite"
     },
     {
@@ -138,9 +145,9 @@
       "opponent_weight": 197,
       "opponent_rank": 3,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:18",
       "event": "Black Knight Invite"
     },
     {
@@ -150,7 +157,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 14,
       "opponent_weight": 197,
-      "opponent_rank": 31,
+      "opponent_rank": 29,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -164,7 +171,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 197,
-      "opponent_rank": 86,
+      "opponent_rank": 63,
       "result": "W",
       "method": "DEC",
       "score": "10-5",
@@ -178,9 +185,9 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 35,
       "opponent_weight": 197,
-      "opponent_rank": 27,
+      "opponent_rank": 25,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "5:34",
       "event": "vs. Indiana"
@@ -192,11 +199,11 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 197,
-      "opponent_rank": 135,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:39",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -206,7 +213,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 197,
-      "opponent_rank": 167,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "17-4",
@@ -220,7 +227,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 197,
-      "opponent_rank": 137,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "15-7",

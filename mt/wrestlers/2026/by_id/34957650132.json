@@ -6,10 +6,10 @@
   "team_rank": 25,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 33,
+  "current_rank": 32,
   "record": {
     "overall": "5-1",
-    "vs_ranked": "5-1",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,27 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.353,
+      "matches": 6,
+      "rank_weight": 71,
+      "rank_overall": 644,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34948153132",
-      "opponent_rank": 34,
+      "opponent_rank": 33,
       "opponent_name": "Matthew Martino",
       "method": "Dec 7-2"
     },
-    "worst_loss": {
-      "opponent_id": "34934130132",
-      "opponent_rank": 50,
-      "opponent_name": "Anthony Santaniello",
-      "method": "Fall 6:33"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +54,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 141,
-      "opponent_rank": 170,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -66,7 +68,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 141,
-      "opponent_rank": 136,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-4",
@@ -80,7 +82,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 141,
-      "opponent_rank": 34,
+      "opponent_rank": 33,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -94,7 +96,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 141,
-      "opponent_rank": 86,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -108,7 +110,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 141,
-      "opponent_rank": 193,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "1-0",
@@ -122,11 +124,11 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 141,
-      "opponent_rank": 50,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:33",
       "event": "Shorty Hitchcock Memorial Open"
     }
   ]

@@ -1,0 +1,6122 @@
+{
+  "schema_version": "1.1",
+  "season": 2026,
+  "generated_at_utc": "2025-12-12T18:19:26.132622Z",
+  "breaking_changes": [
+    "Removed teams[].roster and teams[].highlights; use mt/teams/<team_id>.json for team identity and starters."
+  ],
+  "depends_on": {
+    "wrestler_profiles_dir": "mt/wrestlers/2026/by_id",
+    "wrestler_profiles_built_at_utc": null
+  },
+  "source": {
+    "teams_list_file": "data/team_lists/2026/ncaa_d1_teams.json",
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json",
+    "wrestler_profiles_dir": "mt/wrestlers/2026/by_id"
+  },
+  "league": {
+    "governing_body": "NCAA",
+    "division": "D1",
+    "team_count": 78
+  },
+  "metric_definitions": {
+    "avg_pf7": "Match-weighted mean of wrestler PF7 across included wrestlers.",
+    "avg_pa7": "Match-weighted mean of wrestler PA7 across included wrestlers.",
+    "avg_pd7": "avg_pf7 - avg_pa7 (derived).",
+    "bonus_rate": "Team bonus_wins / team_wins (wins denom).",
+    "pin_rate": "Team pin_wins / team_wins (wins denom).",
+    "tech_rate": "Team tech_wins / team_wins (wins denom).",
+    "top10_win_pct": "Wins vs Top-10 opponents / matches vs Top-10 opponents.",
+    "top33_win_pct": "Wins vs Top-33 opponents / matches vs Top-33 opponents.",
+    "si_plus": "Match-weighted mean SI+ across included wrestlers.",
+    "df_plus": "Match-weighted mean DF+ across included wrestlers.",
+    "apr_plus": "Match-weighted mean APR+ across included wrestlers."
+  },
+  "teams": [
+    {
+      "team_id": "air_force",
+      "team_name": "Air Force",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.6,
+          "rank": 57,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 7.86,
+          "rank": 71,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -1.26,
+          "rank": 67,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.429,
+          "rank": 44,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.184,
+          "rank": 6,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.122,
+          "rank": 49,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 43,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.074,
+          "rank": 65,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 102.0,
+          "rank": 55,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 98.7,
+          "rank": 73,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 103.7,
+          "rank": 12,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 90,
+        "wins_included": 49,
+        "losses_included": 41,
+        "win_pct": 0.544,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "american",
+      "team_name": "American",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.78,
+          "rank": 55,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.92,
+          "rank": 45,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 0.85,
+          "rank": 48,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.452,
+          "rank": 38,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.143,
+          "rank": 17,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.048,
+          "rank": 70,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 53,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.15,
+          "rank": 52,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 103.8,
+          "rank": 46,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 103.9,
+          "rank": 52,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 103.2,
+          "rank": 15,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 80,
+        "wins_included": 42,
+        "losses_included": 38,
+        "win_pct": 0.525,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "appalachian_state",
+      "team_name": "Appalachian State",
+      "conference": "SoCon",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.24,
+          "rank": 29,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.46,
+          "rank": 39,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.78,
+          "rank": 31,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.545,
+          "rank": 17,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.162,
+          "rank": 12,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.131,
+          "rank": 45,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 33,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.073,
+          "rank": 66,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 104.6,
+          "rank": 39,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 104.8,
+          "rank": 45,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 103.2,
+          "rank": 14,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 163,
+        "wins_included": 99,
+        "losses_included": 64,
+        "win_pct": 0.607,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "arizona_state",
+      "team_name": "Arizona State",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 9.74,
+          "rank": 9,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.16,
+          "rank": 49,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 3.57,
+          "rank": 23,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.535,
+          "rank": 19,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.099,
+          "rank": 43,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.254,
+          "rank": 9,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.067,
+          "rank": 32,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.381,
+          "rank": 27,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 110.2,
+          "rank": 8,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.2,
+          "rank": 34,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.5,
+          "rank": 20,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 104,
+        "wins_included": 71,
+        "losses_included": 33,
+        "win_pct": 0.683,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "army_west_point",
+      "team_name": "Army West Point",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.41,
+          "rank": 39,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.74,
+          "rank": 42,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 1.68,
+          "rank": 41,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.395,
+          "rank": 52,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.099,
+          "rank": 42,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.123,
+          "rank": 48,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 35,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.275,
+          "rank": 38,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 104.3,
+          "rank": 43,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 105.8,
+          "rank": 36,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.2,
+          "rank": 57,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 121,
+        "wins_included": 81,
+        "losses_included": 40,
+        "win_pct": 0.669,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "bellarmine",
+      "team_name": "Bellarmine",
+      "conference": "SoCon",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.32,
+          "rank": 61,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 8.45,
+          "rank": 73,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -2.13,
+          "rank": 73,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.44,
+          "rank": 42,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.12,
+          "rank": 28,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.16,
+          "rank": 31,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 67,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.083,
+          "rank": 64,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 102.5,
+          "rank": 54,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 98.4,
+          "rank": 74,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.5,
+          "rank": 51,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 62,
+        "wins_included": 25,
+        "losses_included": 37,
+        "win_pct": 0.403,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "binghamton",
+      "team_name": "Binghamton",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.31,
+          "rank": 41,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.41,
+          "rank": 35,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 1.9,
+          "rank": 40,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.403,
+          "rank": 49,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.113,
+          "rank": 35,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.145,
+          "rank": 40,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 40,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.25,
+          "rank": 43,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 100.3,
+          "rank": 62,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 103.9,
+          "rank": 50,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.6,
+          "rank": 32,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 99,
+        "wins_included": 62,
+        "losses_included": 37,
+        "win_pct": 0.626,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "bloomsburg",
+      "team_name": "Bloomsburg",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.17,
+          "rank": 44,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.96,
+          "rank": 60,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 0.21,
+          "rank": 55,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.512,
+          "rank": 25,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.163,
+          "rank": 10,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.186,
+          "rank": 22,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": null,
+          "rank": null,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.0,
+          "rank": 73,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 99.9,
+          "rank": 67,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 101.3,
+          "rank": 66,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.3,
+          "rank": 25,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 84,
+        "wins_included": 43,
+        "losses_included": 41,
+        "win_pct": 0.512,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "brown",
+      "team_name": "Brown",
+      "conference": "Ivy League",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.53,
+          "rank": 22,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.12,
+          "rank": 29,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 3.41,
+          "rank": 24,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.581,
+          "rank": 9,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.221,
+          "rank": 4,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.221,
+          "rank": 14,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 34,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.154,
+          "rank": 51,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 104.5,
+          "rank": 40,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 105.4,
+          "rank": 40,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 104.8,
+          "rank": 6,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 136,
+        "wins_included": 86,
+        "losses_included": 50,
+        "win_pct": 0.632,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "bucknell",
+      "team_name": "Bucknell",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.01,
+          "rank": 65,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.45,
+          "rank": 38,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 0.56,
+          "rank": 52,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.289,
+          "rank": 72,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.105,
+          "rank": 39,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.026,
+          "rank": 73,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.286,
+          "rank": 11,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.286,
+          "rank": 37,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 102.5,
+          "rank": 53,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.4,
+          "rank": 31,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.6,
+          "rank": 34,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 64,
+        "wins_included": 38,
+        "losses_included": 26,
+        "win_pct": 0.594,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "buffalo",
+      "team_name": "Buffalo",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 5.48,
+          "rank": 69,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 7.09,
+          "rank": 64,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -1.61,
+          "rank": 69,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.325,
+          "rank": 69,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.15,
+          "rank": 16,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.05,
+          "rank": 69,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 49,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.1,
+          "rank": 59,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 100.2,
+          "rank": 65,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 101.5,
+          "rank": 65,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.6,
+          "rank": 45,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 85,
+        "wins_included": 40,
+        "losses_included": 45,
+        "win_pct": 0.471,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "cal_poly",
+      "team_name": "Cal Poly",
+      "conference": "Pac 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.99,
+          "rank": 48,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.4,
+          "rank": 52,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 0.59,
+          "rank": 51,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.378,
+          "rank": 56,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.081,
+          "rank": 54,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.054,
+          "rank": 68,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 66,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.387,
+          "rank": 25,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 104.5,
+          "rank": 41,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 105.3,
+          "rank": 42,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.3,
+          "rank": 56,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 63,
+        "wins_included": 37,
+        "losses_included": 26,
+        "win_pct": 0.587,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "california_baptist",
+      "team_name": "California Baptist",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.55,
+          "rank": 58,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 7.64,
+          "rank": 68,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -1.08,
+          "rank": 66,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.25,
+          "rank": 76,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.083,
+          "rank": 50,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.111,
+          "rank": 53,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 54,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.069,
+          "rank": 68,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 100.5,
+          "rank": 60,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 98.9,
+          "rank": 71,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.5,
+          "rank": 50,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 79,
+        "wins_included": 36,
+        "losses_included": 43,
+        "win_pct": 0.456,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "campbell",
+      "team_name": "Campbell",
+      "conference": "SoCon",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.26,
+          "rank": 62,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 7.05,
+          "rank": 62,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -0.79,
+          "rank": 65,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.32,
+          "rank": 70,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.08,
+          "rank": 56,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.12,
+          "rank": 50,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 73,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.167,
+          "rank": 50,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 100.5,
+          "rank": 61,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 102.2,
+          "rank": 61,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.4,
+          "rank": 55,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 48,
+        "wins_included": 25,
+        "losses_included": 23,
+        "win_pct": 0.521,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "central_michigan",
+      "team_name": "Central Michigan",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.16,
+          "rank": 45,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.04,
+          "rank": 26,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.13,
+          "rank": 39,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.357,
+          "rank": 60,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.071,
+          "rank": 61,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.071,
+          "rank": 64,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 44,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.111,
+          "rank": 55,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 104.4,
+          "rank": 42,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 105.7,
+          "rank": 38,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.4,
+          "rank": 53,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 89,
+        "wins_included": 56,
+        "losses_included": 33,
+        "win_pct": 0.629,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "chattanooga",
+      "team_name": "Chattanooga",
+      "conference": "SoCon",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 9.35,
+          "rank": 14,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 7.69,
+          "rank": 70,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 1.66,
+          "rank": 42,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.667,
+          "rank": 3,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.125,
+          "rank": 24,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.167,
+          "rank": 30,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 74,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.091,
+          "rank": 63,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 109.1,
+          "rank": 15,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 100.5,
+          "rank": 67,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.8,
+          "rank": 30,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 42,
+        "wins_included": 24,
+        "losses_included": 18,
+        "win_pct": 0.571,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "clarion",
+      "team_name": "Clarion",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 10.31,
+          "rank": 5,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.45,
+          "rank": 37,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 4.86,
+          "rank": 10,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.654,
+          "rank": 4,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.135,
+          "rank": 19,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.269,
+          "rank": 6,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 55,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.111,
+          "rank": 56,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 107.3,
+          "rank": 24,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 102.3,
+          "rank": 58,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.5,
+          "rank": 35,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 79,
+        "wins_included": 52,
+        "losses_included": 27,
+        "win_pct": 0.658,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "columbia",
+      "team_name": "Columbia",
+      "conference": "Ivy League",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.46,
+          "rank": 38,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.85,
+          "rank": 58,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 0.61,
+          "rank": 50,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.532,
+          "rank": 21,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.139,
+          "rank": 18,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.114,
+          "rank": 52,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.2,
+          "rank": 18,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.256,
+          "rank": 41,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 105.7,
+          "rank": 34,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 103.9,
+          "rank": 49,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.4,
+          "rank": 22,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 132,
+        "wins_included": 79,
+        "losses_included": 53,
+        "win_pct": 0.598,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "cornell",
+      "team_name": "Cornell",
+      "conference": "Ivy League",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.27,
+          "rank": 28,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.41,
+          "rank": 14,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 3.86,
+          "rank": 20,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.508,
+          "rank": 27,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.095,
+          "rank": 44,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.19,
+          "rank": 20,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.308,
+          "rank": 10,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.342,
+          "rank": 29,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 105.9,
+          "rank": 32,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 108.9,
+          "rank": 11,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.7,
+          "rank": 18,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 94,
+        "wins_included": 63,
+        "losses_included": 31,
+        "win_pct": 0.67,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "csu_bakersfield",
+      "team_name": "CSU Bakersfield",
+      "conference": "Pac 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 4.76,
+          "rank": 76,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 8.79,
+          "rank": 76,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -4.03,
+          "rank": 76,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.35,
+          "rank": 62,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.2,
+          "rank": 5,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.0,
+          "rank": 77,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 70,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.059,
+          "rank": 71,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 99.1,
+          "rank": 71,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 98.9,
+          "rank": 72,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.6,
+          "rank": 46,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 60,
+        "wins_included": 20,
+        "losses_included": 40,
+        "win_pct": 0.333,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "davidson",
+      "team_name": "Davidson",
+      "conference": "SoCon",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 3.52,
+          "rank": 78,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 7.35,
+          "rank": 67,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -3.84,
+          "rank": 75,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.429,
+          "rank": 45,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.286,
+          "rank": 1,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.0,
+          "rank": 76,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 68,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.091,
+          "rank": 62,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 95.2,
+          "rank": 78,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 99.7,
+          "rank": 69,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.4,
+          "rank": 24,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 62,
+        "wins_included": 21,
+        "losses_included": 41,
+        "win_pct": 0.339,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "drexel",
+      "team_name": "Drexel",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.36,
+          "rank": 26,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.71,
+          "rank": 55,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 1.65,
+          "rank": 43,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.491,
+          "rank": 30,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.094,
+          "rank": 45,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.208,
+          "rank": 16,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 45,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.167,
+          "rank": 49,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 106.2,
+          "rank": 31,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 103.3,
+          "rank": 54,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.3,
+          "rank": 68,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 89,
+        "wins_included": 53,
+        "losses_included": 36,
+        "win_pct": 0.596,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "duke",
+      "team_name": "Duke",
+      "conference": "ACC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.96,
+          "rank": 49,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 7.19,
+          "rank": 65,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -0.23,
+          "rank": 59,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.432,
+          "rank": 43,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.091,
+          "rank": 46,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.182,
+          "rank": 26,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 51,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.143,
+          "rank": 53,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 99.2,
+          "rank": 70,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 99.4,
+          "rank": 70,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 98.0,
+          "rank": 76,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 81,
+        "wins_included": 44,
+        "losses_included": 37,
+        "win_pct": 0.543,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "edinboro",
+      "team_name": "Edinboro",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.58,
+          "rank": 21,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.14,
+          "rank": 48,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.44,
+          "rank": 37,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.533,
+          "rank": 20,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.183,
+          "rank": 7,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.217,
+          "rank": 15,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 39,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.091,
+          "rank": 61,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 104.9,
+          "rank": 37,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 103.0,
+          "rank": 55,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 105.5,
+          "rank": 2,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 104,
+        "wins_included": 60,
+        "losses_included": 44,
+        "win_pct": 0.577,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "franklin_&_marshall",
+      "team_name": "Franklin & Marshall",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.9,
+          "rank": 52,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.87,
+          "rank": 59,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 0.04,
+          "rank": 57,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.415,
+          "rank": 47,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.123,
+          "rank": 25,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.154,
+          "rank": 38,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.143,
+          "rank": 22,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.259,
+          "rank": 40,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 102.5,
+          "rank": 52,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 102.0,
+          "rank": 62,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.2,
+          "rank": 69,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 127,
+        "wins_included": 65,
+        "losses_included": 62,
+        "win_pct": 0.512,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "gardner-webb",
+      "team_name": "Gardner-Webb",
+      "conference": "SoCon",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.52,
+          "rank": 60,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 7.07,
+          "rank": 63,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -0.55,
+          "rank": 62,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.531,
+          "rank": 22,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.125,
+          "rank": 22,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.156,
+          "rank": 35,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 56,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.067,
+          "rank": 69,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 101.6,
+          "rank": 56,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 102.2,
+          "rank": 60,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.9,
+          "rank": 63,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 76,
+        "wins_included": 32,
+        "losses_included": 44,
+        "win_pct": 0.421,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "george_mason",
+      "team_name": "George Mason",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 10.29,
+          "rank": 6,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.67,
+          "rank": 18,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 5.62,
+          "rank": 7,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.617,
+          "rank": 6,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.173,
+          "rank": 9,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.173,
+          "rank": 28,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 38,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.389,
+          "rank": 22,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 109.8,
+          "rank": 10,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 105.8,
+          "rank": 37,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 104.7,
+          "rank": 7,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 107,
+        "wins_included": 81,
+        "losses_included": 26,
+        "win_pct": 0.757,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "harvard",
+      "team_name": "Harvard",
+      "conference": "Ivy League",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.53,
+          "rank": 59,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 7.23,
+          "rank": 66,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -0.71,
+          "rank": 64,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.333,
+          "rank": 64,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.061,
+          "rank": 67,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.03,
+          "rank": 72,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 58,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.059,
+          "rank": 70,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 102.6,
+          "rank": 51,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 101.8,
+          "rank": 64,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.6,
+          "rank": 65,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 70,
+        "wins_included": 33,
+        "losses_included": 37,
+        "win_pct": 0.471,
+        "wrestlers_included": 9,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "hofstra",
+      "team_name": "Hofstra",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 5.04,
+          "rank": 74,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.98,
+          "rank": 61,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -1.94,
+          "rank": 71,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.36,
+          "rank": 59,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.16,
+          "rank": 13,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.1,
+          "rank": 57,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 36,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.091,
+          "rank": 60,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 96.1,
+          "rank": 76,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 102.0,
+          "rank": 63,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.1,
+          "rank": 60,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 113,
+        "wins_included": 50,
+        "losses_included": 63,
+        "win_pct": 0.442,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "illinois",
+      "team_name": "Illinois",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.7,
+          "rank": 20,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.02,
+          "rank": 5,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 4.68,
+          "rank": 13,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.417,
+          "rank": 46,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.05,
+          "rank": 71,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.183,
+          "rank": 24,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.214,
+          "rank": 17,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.514,
+          "rank": 9,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 109.1,
+          "rank": 14,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 109.0,
+          "rank": 10,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.0,
+          "rank": 62,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 84,
+        "wins_included": 60,
+        "losses_included": 24,
+        "win_pct": 0.714,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "indiana",
+      "team_name": "Indiana",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.49,
+          "rank": 24,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.42,
+          "rank": 15,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 4.07,
+          "rank": 18,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.467,
+          "rank": 35,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.067,
+          "rank": 64,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.156,
+          "rank": 36,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 63,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.4,
+          "rank": 19,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 108.1,
+          "rank": 18,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 108.0,
+          "rank": 15,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.0,
+          "rank": 39,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 66,
+        "wins_included": 45,
+        "losses_included": 21,
+        "win_pct": 0.682,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "iowa",
+      "team_name": "Iowa",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.16,
+          "rank": 46,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.38,
+          "rank": 13,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.78,
+          "rank": 32,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.333,
+          "rank": 68,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.067,
+          "rank": 66,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.156,
+          "rank": 37,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.409,
+          "rank": 7,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.674,
+          "rank": 4,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 105.9,
+          "rank": 33,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 112.0,
+          "rank": 1,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.0,
+          "rank": 41,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 59,
+        "wins_included": 45,
+        "losses_included": 14,
+        "win_pct": 0.763,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "iowa_state",
+      "team_name": "Iowa State",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 12.69,
+          "rank": 3,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.22,
+          "rank": 10,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 8.47,
+          "rank": 3,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.623,
+          "rank": 5,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.115,
+          "rank": 33,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.311,
+          "rank": 3,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.667,
+          "rank": 2,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.778,
+          "rank": 2,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 119.9,
+          "rank": 3,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 110.0,
+          "rank": 6,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 105.4,
+          "rank": 3,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 72,
+        "wins_included": 61,
+        "losses_included": 11,
+        "win_pct": 0.847,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "kent_state",
+      "team_name": "Kent State",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.62,
+          "rank": 56,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.95,
+          "rank": 47,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 0.67,
+          "rank": 49,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.333,
+          "rank": 65,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.119,
+          "rank": 29,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.024,
+          "rank": 74,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 59,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.111,
+          "rank": 57,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 103.7,
+          "rank": 47,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 102.9,
+          "rank": 56,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.3,
+          "rank": 26,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 67,
+        "wins_included": 42,
+        "losses_included": 25,
+        "win_pct": 0.627,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "lehigh",
+      "team_name": "Lehigh",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.83,
+          "rank": 17,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 3.97,
+          "rank": 4,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 4.86,
+          "rank": 11,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.469,
+          "rank": 34,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.082,
+          "rank": 53,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.224,
+          "rank": 13,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.273,
+          "rank": 12,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.385,
+          "rank": 26,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 107.4,
+          "rank": 22,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 110.5,
+          "rank": 5,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.8,
+          "rank": 29,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 68,
+        "wins_included": 49,
+        "losses_included": 19,
+        "win_pct": 0.721,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "little_rock",
+      "team_name": "Little Rock",
+      "conference": "Pac 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.12,
+          "rank": 64,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.6,
+          "rank": 54,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -0.48,
+          "rank": 61,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.304,
+          "rank": 71,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.087,
+          "rank": 47,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.0,
+          "rank": 78,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 72,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.389,
+          "rank": 24,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 100.3,
+          "rank": 63,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 104.4,
+          "rank": 47,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.4,
+          "rank": 37,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 50,
+        "wins_included": 23,
+        "losses_included": 27,
+        "win_pct": 0.46,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "liu",
+      "team_name": "LIU",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 4.72,
+          "rank": 77,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 9.69,
+          "rank": 77,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -4.97,
+          "rank": 78,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.409,
+          "rank": 48,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.227,
+          "rank": 3,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.045,
+          "rank": 71,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 64,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.0,
+          "rank": 74,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 98.3,
+          "rank": 74,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 96.3,
+          "rank": 76,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 104.0,
+          "rank": 11,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 66,
+        "wins_included": 22,
+        "losses_included": 44,
+        "win_pct": 0.333,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "lock_haven",
+      "team_name": "Lock Haven",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 9.29,
+          "rank": 15,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.88,
+          "rank": 25,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 4.41,
+          "rank": 14,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.568,
+          "rank": 13,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.108,
+          "rank": 38,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.189,
+          "rank": 21,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 37,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.1,
+          "rank": 58,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 108.4,
+          "rank": 16,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.2,
+          "rank": 33,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.4,
+          "rank": 36,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 113,
+        "wins_included": 74,
+        "losses_included": 39,
+        "win_pct": 0.655,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "maryland",
+      "team_name": "Maryland",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.22,
+          "rank": 43,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 3.5,
+          "rank": 2,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 3.72,
+          "rank": 22,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.394,
+          "rank": 54,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.076,
+          "rank": 57,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.076,
+          "rank": 63,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.5,
+          "rank": 5,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.462,
+          "rank": 14,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 104.0,
+          "rank": 45,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 108.6,
+          "rank": 13,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.0,
+          "rank": 61,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 87,
+        "wins_included": 66,
+        "losses_included": 21,
+        "win_pct": 0.759,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "michigan",
+      "team_name": "Michigan",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 9.87,
+          "rank": 8,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.55,
+          "rank": 40,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 4.32,
+          "rank": 15,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.557,
+          "rank": 15,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.129,
+          "rank": 20,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.243,
+          "rank": 10,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.182,
+          "rank": 19,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.488,
+          "rank": 11,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 109.5,
+          "rank": 13,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.3,
+          "rank": 32,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 104.4,
+          "rank": 9,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 101,
+        "wins_included": 70,
+        "losses_included": 31,
+        "win_pct": 0.693,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "michigan_state",
+      "team_name": "Michigan State",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.15,
+          "rank": 31,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.16,
+          "rank": 30,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.99,
+          "rank": 26,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.394,
+          "rank": 53,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.152,
+          "rank": 15,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.106,
+          "rank": 56,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 42,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.25,
+          "rank": 44,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 104.3,
+          "rank": 44,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 105.3,
+          "rank": 41,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 104.9,
+          "rank": 5,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 94,
+        "wins_included": 66,
+        "losses_included": 28,
+        "win_pct": 0.702,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "minnesota",
+      "team_name": "Minnesota",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 9.4,
+          "rank": 13,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.67,
+          "rank": 17,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 4.73,
+          "rank": 12,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.494,
+          "rank": 28,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.046,
+          "rank": 73,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.23,
+          "rank": 12,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.214,
+          "rank": 16,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.457,
+          "rank": 15,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 109.6,
+          "rank": 11,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 108.7,
+          "rank": 12,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.2,
+          "rank": 58,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 120,
+        "wins_included": 87,
+        "losses_included": 33,
+        "win_pct": 0.725,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "missouri",
+      "team_name": "Missouri",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.97,
+          "rank": 33,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.77,
+          "rank": 22,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 3.2,
+          "rank": 25,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.387,
+          "rank": 55,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.12,
+          "rank": 27,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.133,
+          "rank": 43,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.143,
+          "rank": 24,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.319,
+          "rank": 34,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 105.3,
+          "rank": 35,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 107.9,
+          "rank": 16,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.8,
+          "rank": 16,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 113,
+        "wins_included": 75,
+        "losses_included": 38,
+        "win_pct": 0.664,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "morgan_state",
+      "team_name": "Morgan State",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.17,
+          "rank": 63,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 8.13,
+          "rank": 72,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -1.95,
+          "rank": 72,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.444,
+          "rank": 41,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.056,
+          "rank": 70,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.111,
+          "rank": 54,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 75,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.0,
+          "rank": 78,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 100.3,
+          "rank": 64,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 99.9,
+          "rank": 68,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.6,
+          "rank": 66,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 36,
+        "wins_included": 18,
+        "losses_included": 18,
+        "win_pct": 0.5,
+        "wrestlers_included": 9,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "navy",
+      "team_name": "Navy",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.1,
+          "rank": 47,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.81,
+          "rank": 23,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.29,
+          "rank": 38,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.37,
+          "rank": 58,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.068,
+          "rank": 62,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.11,
+          "rank": 55,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.111,
+          "rank": 29,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.289,
+          "rank": 36,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 105.2,
+          "rank": 36,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 107.3,
+          "rank": 21,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.6,
+          "rank": 44,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 119,
+        "wins_included": 73,
+        "losses_included": 46,
+        "win_pct": 0.613,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "nc_state",
+      "team_name": "NC State",
+      "conference": "ACC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.95,
+          "rank": 50,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.09,
+          "rank": 7,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.86,
+          "rank": 29,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.34,
+          "rank": 63,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.08,
+          "rank": 55,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.06,
+          "rank": 67,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.273,
+          "rank": 13,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.552,
+          "rank": 6,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 103.5,
+          "rank": 49,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 109.7,
+          "rank": 8,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.4,
+          "rank": 23,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 67,
+        "wins_included": 50,
+        "losses_included": 17,
+        "win_pct": 0.746,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "nebraska",
+      "team_name": "Nebraska",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 9.73,
+          "rank": 10,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.09,
+          "rank": 6,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 5.64,
+          "rank": 6,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.589,
+          "rank": 7,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.123,
+          "rank": 26,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.205,
+          "rank": 17,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.235,
+          "rank": 15,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.667,
+          "rank": 5,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 112.9,
+          "rank": 5,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 111.2,
+          "rank": 3,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 104.4,
+          "rank": 10,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 92,
+        "wins_included": 73,
+        "losses_included": 19,
+        "win_pct": 0.793,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "north_carolina",
+      "team_name": "North Carolina",
+      "conference": "ACC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.48,
+          "rank": 25,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.36,
+          "rank": 12,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 4.12,
+          "rank": 16,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.49,
+          "rank": 31,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.118,
+          "rank": 31,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.176,
+          "rank": 27,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": null,
+          "rank": null,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.333,
+          "rank": 32,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 106.4,
+          "rank": 30,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 107.9,
+          "rank": 17,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.5,
+          "rank": 21,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 68,
+        "wins_included": 51,
+        "losses_included": 17,
+        "win_pct": 0.75,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "north_dakota_state",
+      "team_name": "North Dakota State",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 5.33,
+          "rank": 70,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.78,
+          "rank": 57,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -1.45,
+          "rank": 68,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.25,
+          "rank": 77,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.083,
+          "rank": 52,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.083,
+          "rank": 62,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 60,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.043,
+          "rank": 72,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 99.9,
+          "rank": 68,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 102.7,
+          "rank": 57,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.4,
+          "rank": 54,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 67,
+        "wins_included": 36,
+        "losses_included": 31,
+        "win_pct": 0.537,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "northern_colorado",
+      "team_name": "Northern Colorado",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 5.05,
+          "rank": 73,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.75,
+          "rank": 56,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -1.7,
+          "rank": 70,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.263,
+          "rank": 75,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.0,
+          "rank": 78,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.158,
+          "rank": 33,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 71,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.133,
+          "rank": 54,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 97.0,
+          "rank": 75,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 102.3,
+          "rank": 59,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 97.0,
+          "rank": 78,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 60,
+        "wins_included": 19,
+        "losses_included": 41,
+        "win_pct": 0.317,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "northern_illinois",
+      "team_name": "Northern Illinois",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 5.14,
+          "rank": 72,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.83,
+          "rank": 44,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -0.7,
+          "rank": 63,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.222,
+          "rank": 78,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.083,
+          "rank": 51,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.0,
+          "rank": 75,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 57,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.235,
+          "rank": 46,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 99.6,
+          "rank": 69,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 104.1,
+          "rank": 48,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 98.9,
+          "rank": 74,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 71,
+        "wins_included": 36,
+        "losses_included": 35,
+        "win_pct": 0.507,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "northern_iowa",
+      "team_name": "Northern Iowa",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.32,
+          "rank": 40,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.73,
+          "rank": 21,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.59,
+          "rank": 36,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.356,
+          "rank": 61,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.044,
+          "rank": 74,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.067,
+          "rank": 66,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 61,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.292,
+          "rank": 35,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 107.5,
+          "rank": 21,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 107.2,
+          "rank": 22,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.8,
+          "rank": 42,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 67,
+        "wins_included": 45,
+        "losses_included": 22,
+        "win_pct": 0.672,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "northwestern",
+      "team_name": "Northwestern",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.56,
+          "rank": 37,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.85,
+          "rank": 24,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.71,
+          "rank": 35,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.46,
+          "rank": 37,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.06,
+          "rank": 68,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.1,
+          "rank": 58,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 47,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.333,
+          "rank": 30,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 106.9,
+          "rank": 27,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.7,
+          "rank": 29,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.0,
+          "rank": 71,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 87,
+        "wins_included": 50,
+        "losses_included": 37,
+        "win_pct": 0.575,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "ohio",
+      "team_name": "Ohio",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.82,
+          "rank": 54,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.39,
+          "rank": 51,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 0.43,
+          "rank": 53,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.478,
+          "rank": 32,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.109,
+          "rank": 36,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.13,
+          "rank": 46,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 50,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.25,
+          "rank": 45,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 100.8,
+          "rank": 58,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 103.9,
+          "rank": 51,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.8,
+          "rank": 28,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 83,
+        "wins_included": 46,
+        "losses_included": 37,
+        "win_pct": 0.554,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "ohio_state",
+      "team_name": "Ohio State",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 15.83,
+          "rank": 1,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.39,
+          "rank": 34,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 10.45,
+          "rank": 2,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.7,
+          "rank": 2,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.086,
+          "rank": 48,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.486,
+          "rank": 1,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.632,
+          "rank": 3,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.733,
+          "rank": 3,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 123.9,
+          "rank": 2,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 109.1,
+          "rank": 9,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 103.6,
+          "rank": 13,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 79,
+        "wins_included": 70,
+        "losses_included": 9,
+        "win_pct": 0.886,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "oklahoma",
+      "team_name": "Oklahoma",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.87,
+          "rank": 53,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.26,
+          "rank": 31,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 1.61,
+          "rank": 44,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.373,
+          "rank": 57,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.102,
+          "rank": 40,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.136,
+          "rank": 42,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.167,
+          "rank": 20,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.325,
+          "rank": 33,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 103.6,
+          "rank": 48,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.9,
+          "rank": 24,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.6,
+          "rank": 19,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 95,
+        "wins_included": 59,
+        "losses_included": 36,
+        "win_pct": 0.621,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "oklahoma_state",
+      "team_name": "Oklahoma State",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 9.44,
+          "rank": 12,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 3.43,
+          "rank": 1,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 6.01,
+          "rank": 5,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.527,
+          "rank": 23,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.109,
+          "rank": 37,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.255,
+          "rank": 8,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.381,
+          "rank": 8,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.529,
+          "rank": 7,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 110.1,
+          "rank": 9,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 111.8,
+          "rank": 2,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.3,
+          "rank": 38,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 71,
+        "wins_included": 55,
+        "losses_included": 16,
+        "win_pct": 0.775,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "oregon_state",
+      "team_name": "Oregon State",
+      "conference": "Pac 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 9.58,
+          "rank": 11,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.71,
+          "rank": 20,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 4.87,
+          "rank": 9,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.579,
+          "rank": 11,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.118,
+          "rank": 30,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.158,
+          "rank": 32,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.25,
+          "rank": 14,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.515,
+          "rank": 8,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 109.5,
+          "rank": 12,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 107.7,
+          "rank": 20,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.7,
+          "rank": 17,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 104,
+        "wins_included": 76,
+        "losses_included": 28,
+        "win_pct": 0.731,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "penn",
+      "team_name": "Penn",
+      "conference": "Ivy League",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 5.6,
+          "rank": 68,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.27,
+          "rank": 11,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 1.33,
+          "rank": 46,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.556,
+          "rank": 16,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.074,
+          "rank": 60,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.278,
+          "rank": 5,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.333,
+          "rank": 9,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.4,
+          "rank": 17,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 100.9,
+          "rank": 57,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.2,
+          "rank": 35,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 102.1,
+          "rank": 27,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 70,
+        "wins_included": 54,
+        "losses_included": 16,
+        "win_pct": 0.771,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "penn_state",
+      "team_name": "Penn State",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 15.81,
+          "rank": 2,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.11,
+          "rank": 8,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 11.7,
+          "rank": 1,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.82,
+          "rank": 1,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.279,
+          "rank": 2,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.361,
+          "rank": 2,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.8,
+          "rank": 1,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.889,
+          "rank": 1,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 127.0,
+          "rank": 1,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 110.6,
+          "rank": 4,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 116.7,
+          "rank": 1,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 64,
+        "wins_included": 61,
+        "losses_included": 3,
+        "win_pct": 0.953,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "pittsburgh",
+      "team_name": "Pittsburgh",
+      "conference": "ACC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.15,
+          "rank": 32,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.27,
+          "rank": 32,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.88,
+          "rank": 28,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.463,
+          "rank": 36,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.074,
+          "rank": 59,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.259,
+          "rank": 7,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 46,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.206,
+          "rank": 47,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 107.3,
+          "rank": 23,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.9,
+          "rank": 25,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.5,
+          "rank": 49,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 89,
+        "wins_included": 54,
+        "losses_included": 35,
+        "win_pct": 0.607,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "presbyterian",
+      "team_name": "Presbyterian",
+      "conference": "SoCon",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.76,
+          "rank": 18,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 8.77,
+          "rank": 74,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -0.01,
+          "rank": 58,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.577,
+          "rank": 12,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.038,
+          "rank": 75,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.231,
+          "rank": 11,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": null,
+          "rank": null,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.0,
+          "rank": 77,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 98.7,
+          "rank": 72,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 95.2,
+          "rank": 77,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 97.5,
+          "rank": 77,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 55,
+        "wins_included": 26,
+        "losses_included": 29,
+        "win_pct": 0.473,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "princeton",
+      "team_name": "Princeton",
+      "conference": "Ivy League",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.26,
+          "rank": 42,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.77,
+          "rank": 43,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 1.49,
+          "rank": 45,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.538,
+          "rank": 18,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.115,
+          "rank": 32,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.192,
+          "rank": 19,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 41,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.256,
+          "rank": 42,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 104.9,
+          "rank": 38,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.7,
+          "rank": 28,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.5,
+          "rank": 47,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 98,
+        "wins_included": 52,
+        "losses_included": 46,
+        "win_pct": 0.531,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "purdue",
+      "team_name": "Purdue",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.93,
+          "rank": 16,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.05,
+          "rank": 27,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 3.88,
+          "rank": 19,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.448,
+          "rank": 39,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.075,
+          "rank": 58,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.194,
+          "rank": 18,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.143,
+          "rank": 26,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.389,
+          "rank": 23,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 107.5,
+          "rank": 20,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.8,
+          "rank": 26,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.5,
+          "rank": 48,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 96,
+        "wins_included": 67,
+        "losses_included": 29,
+        "win_pct": 0.698,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "rider",
+      "team_name": "Rider",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.62,
+          "rank": 36,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.45,
+          "rank": 53,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 1.17,
+          "rank": 47,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.396,
+          "rank": 51,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.057,
+          "rank": 69,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.132,
+          "rank": 44,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 48,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.333,
+          "rank": 31,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 106.4,
+          "rank": 29,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 104.9,
+          "rank": 44,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.4,
+          "rank": 67,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 87,
+        "wins_included": 53,
+        "losses_included": 34,
+        "win_pct": 0.609,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "rutgers",
+      "team_name": "Rutgers",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 10.74,
+          "rank": 4,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.63,
+          "rank": 16,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 6.11,
+          "rank": 4,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.509,
+          "rank": 26,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.036,
+          "rank": 76,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.309,
+          "rank": 4,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.143,
+          "rank": 27,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.4,
+          "rank": 18,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 112.7,
+          "rank": 6,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 107.8,
+          "rank": 18,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.0,
+          "rank": 73,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 70,
+        "wins_included": 55,
+        "losses_included": 15,
+        "win_pct": 0.786,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "sacred_heart",
+      "team_name": "Sacred Heart",
+      "conference": "EIWA",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 5.03,
+          "rank": 75,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 8.79,
+          "rank": 75,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -3.76,
+          "rank": 74,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.333,
+          "rank": 66,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.125,
+          "rank": 23,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.125,
+          "rank": 47,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 69,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.0,
+          "rank": 76,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 95.8,
+          "rank": 77,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 96.7,
+          "rank": 75,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 98.8,
+          "rank": 75,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 62,
+        "wins_included": 24,
+        "losses_included": 38,
+        "win_pct": 0.387,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "siu_edwardsville",
+      "team_name": "SIU Edwardsville",
+      "conference": "MAC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 6.93,
+          "rank": 51,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.16,
+          "rank": 9,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.77,
+          "rank": 33,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.267,
+          "rank": 74,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.067,
+          "rank": 63,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.067,
+          "rank": 65,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.5,
+          "rank": 4,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.4,
+          "rank": 16,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 103.1,
+          "rank": 50,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 107.0,
+          "rank": 23,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.4,
+          "rank": 52,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 92,
+        "wins_included": 60,
+        "losses_included": 32,
+        "win_pct": 0.652,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "south_dakota_state",
+      "team_name": "South Dakota State",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.5,
+          "rank": 23,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 4.68,
+          "rank": 19,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 3.82,
+          "rank": 21,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.492,
+          "rank": 29,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.034,
+          "rank": 77,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.169,
+          "rank": 29,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.125,
+          "rank": 28,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.486,
+          "rank": 12,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 107.2,
+          "rank": 25,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 108.5,
+          "rank": 14,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.6,
+          "rank": 64,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 87,
+        "wins_included": 59,
+        "losses_included": 28,
+        "win_pct": 0.678,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "stanford",
+      "team_name": "Stanford",
+      "conference": "ACC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.71,
+          "rank": 19,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.92,
+          "rank": 46,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.79,
+          "rank": 30,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.581,
+          "rank": 10,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.163,
+          "rank": 11,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.186,
+          "rank": 23,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.071,
+          "rank": 31,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.476,
+          "rank": 13,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 110.9,
+          "rank": 7,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.8,
+          "rank": 27,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 104.7,
+          "rank": 8,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 70,
+        "wins_included": 43,
+        "losses_included": 27,
+        "win_pct": 0.614,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "the_citadel",
+      "team_name": "The Citadel",
+      "conference": "SoCon",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 5.9,
+          "rank": 67,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 6.33,
+          "rank": 50,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -0.43,
+          "rank": 60,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.333,
+          "rank": 67,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.067,
+          "rank": 65,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.1,
+          "rank": 59,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.5,
+          "rank": 6,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.2,
+          "rank": 48,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 100.2,
+          "rank": 66,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 104.4,
+          "rank": 46,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.2,
+          "rank": 70,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 61,
+        "wins_included": 30,
+        "losses_included": 31,
+        "win_pct": 0.492,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "utah_valley",
+      "team_name": "Utah Valley",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 5.93,
+          "rank": 66,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.6,
+          "rank": 41,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 0.32,
+          "rank": 54,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.279,
+          "rank": 73,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.047,
+          "rank": 72,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.116,
+          "rank": 51,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.167,
+          "rank": 21,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.343,
+          "rank": 28,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 100.6,
+          "rank": 59,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 105.6,
+          "rank": 39,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 99.0,
+          "rank": 72,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 79,
+        "wins_included": 43,
+        "losses_included": 36,
+        "win_pct": 0.544,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "virginia",
+      "team_name": "Virginia",
+      "conference": "ACC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.32,
+          "rank": 27,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.41,
+          "rank": 36,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.91,
+          "rank": 27,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.447,
+          "rank": 40,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.128,
+          "rank": 21,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.085,
+          "rank": 61,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 62,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.071,
+          "rank": 67,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 106.8,
+          "rank": 28,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 105.1,
+          "rank": 43,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.6,
+          "rank": 33,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 67,
+        "wins_included": 47,
+        "losses_included": 20,
+        "win_pct": 0.701,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "virginia_tech",
+      "team_name": "Virginia Tech",
+      "conference": "ACC",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 8.15,
+          "rank": 30,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.39,
+          "rank": 33,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 2.75,
+          "rank": 34,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.557,
+          "rank": 14,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.114,
+          "rank": 34,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.157,
+          "rank": 34,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.143,
+          "rank": 25,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.396,
+          "rank": 21,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 108.3,
+          "rank": 17,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 107.7,
+          "rank": 19,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.6,
+          "rank": 31,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 109,
+        "wins_included": 70,
+        "losses_included": 39,
+        "win_pct": 0.642,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "vmi",
+      "team_name": "VMI",
+      "conference": "SoCon",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 5.16,
+          "rank": 71,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 9.95,
+          "rank": 78,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -4.79,
+          "rank": 77,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.478,
+          "rank": 33,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.174,
+          "rank": 8,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.087,
+          "rank": 60,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 65,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.0,
+          "rank": 75,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 98.5,
+          "rank": 73,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 94.4,
+          "rank": 78,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.2,
+          "rank": 59,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 66,
+        "wins_included": 23,
+        "losses_included": 43,
+        "win_pct": 0.348,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "west_virginia",
+      "team_name": "West Virginia",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.94,
+          "rank": 34,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 3.87,
+          "rank": 3,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 4.07,
+          "rank": 17,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.512,
+          "rank": 24,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.159,
+          "rank": 14,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.146,
+          "rank": 39,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.143,
+          "rank": 23,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.5,
+          "rank": 10,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 106.9,
+          "rank": 26,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 109.7,
+          "rank": 7,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 105.3,
+          "rank": 4,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 119,
+        "wins_included": 82,
+        "losses_included": 37,
+        "win_pct": 0.689,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "wisconsin",
+      "team_name": "Wisconsin",
+      "conference": "Big Ten",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 10.28,
+          "rank": 7,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 5.11,
+          "rank": 28,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 5.17,
+          "rank": 8,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.583,
+          "rank": 8,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.1,
+          "rank": 41,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.183,
+          "rank": 25,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.0,
+          "rank": 52,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.261,
+          "rank": 39,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 113.1,
+          "rank": 4,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 106.5,
+          "rank": 30,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 100.7,
+          "rank": 43,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 81,
+        "wins_included": 60,
+        "losses_included": 21,
+        "win_pct": 0.741,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "wyoming",
+      "team_name": "Wyoming",
+      "conference": "Big 12",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 7.8,
+          "rank": 35,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 7.66,
+          "rank": 69,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": 0.13,
+          "rank": 56,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.4,
+          "rank": 50,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.086,
+          "rank": 49,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.143,
+          "rank": 41,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": 0.091,
+          "rank": 30,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": 0.4,
+          "rank": 20,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 107.7,
+          "rank": 19,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 103.8,
+          "rank": 53,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 101.0,
+          "rank": 40,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 64,
+        "wins_included": 35,
+        "losses_included": 29,
+        "win_pct": 0.547,
+        "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    }
+  ]
+}

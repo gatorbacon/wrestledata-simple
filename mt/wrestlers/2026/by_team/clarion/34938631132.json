@@ -6,10 +6,10 @@
   "team_rank": 66,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 209,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.298,
+      "matches": 2,
+      "rank_weight": 231,
+      "rank_overall": 1913,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34951073132",
-      "opponent_rank": 144,
-      "opponent_name": "Dominic ferraro",
-      "method": "M. For."
-    },
-    "worst_loss": {
-      "opponent_id": "34934136132",
-      "opponent_rank": 164,
-      "opponent_name": "Jack Marlow",
-      "method": "MD 14-4"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +49,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 149,
-      "opponent_rank": 164,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-4",
@@ -66,7 +63,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": 144,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -80,11 +77,11 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 149,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:22",
       "event": "Clarion Open"
     }
   ]

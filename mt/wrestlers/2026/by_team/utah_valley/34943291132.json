@@ -6,10 +6,10 @@
   "team_rank": 30,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 224,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -7.559,
+      "matches": 1,
+      "rank_weight": 220,
+      "rank_overall": 2071,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34962146132",
-      "opponent_rank": 210,
-      "opponent_name": "Hayden Zinkin",
-      "method": "MD 10-0"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,7 +49,7 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 64,
       "opponent_weight": 149,
-      "opponent_rank": 210,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "10-0",

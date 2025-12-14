@@ -6,10 +6,10 @@
   "team_rank": 72,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 43,
+  "current_rank": 36,
   "record": {
     "overall": "7-4",
-    "vs_ranked": "7-4",
+    "vs_ranked": "3-4",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,29 @@
     "bonus_rate": 0.429,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 1.168,
+      "matches": 11,
+      "rank_weight": 45,
+      "rank_overall": 424,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 3,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34937681132",
-      "opponent_rank": 44,
+      "opponent_rank": 37,
       "opponent_name": "Zach Reilley",
       "method": "Fall 4:09"
     },
     "worst_loss": {
       "opponent_id": "34951043132",
-      "opponent_rank": 42,
+      "opponent_rank": 35,
       "opponent_name": "Ryan Michaels",
       "method": "Fall 6:52"
     }
@@ -52,11 +59,11 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 149,
-      "opponent_rank": 41,
+      "opponent_rank": 34,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:14",
       "event": "Keystone Classic"
     },
     {
@@ -66,11 +73,11 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 149,
-      "opponent_rank": 143,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:59",
       "event": "Keystone Classic"
     },
     {
@@ -80,11 +87,11 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 149,
-      "opponent_rank": 44,
+      "opponent_rank": 37,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:09",
       "event": "Keystone Classic"
     },
     {
@@ -96,7 +103,7 @@
       "opponent_weight": 149,
       "opponent_rank": 8,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "7:00",
       "event": "Keystone Classic"
@@ -108,11 +115,11 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 149,
-      "opponent_rank": 46,
+      "opponent_rank": 39,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:38",
       "event": "vs. Rider"
     },
     {
@@ -122,7 +129,7 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 149,
-      "opponent_rank": 99,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-3",
@@ -136,7 +143,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 149,
-      "opponent_rank": 41,
+      "opponent_rank": 34,
       "result": "L",
       "method": "DEC",
       "score": "8-7",
@@ -150,11 +157,11 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": 42,
+      "opponent_rank": 35,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:52",
       "event": "Michigan State Open"
     },
     {
@@ -164,7 +171,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 149,
-      "opponent_rank": 125,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "12-9",
@@ -178,7 +185,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 40,
       "opponent_weight": 149,
-      "opponent_rank": 127,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -192,7 +199,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 149,
-      "opponent_rank": 114,
+      "opponent_rank": 68,
       "result": "W",
       "method": "DEC",
       "score": "10-9",

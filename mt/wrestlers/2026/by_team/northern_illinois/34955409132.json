@@ -6,10 +6,10 @@
   "team_rank": 39,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 138,
+  "current_rank": 73,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "2-6",
+    "vs_ranked": "0-4",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.947,
+      "matches": 7,
+      "rank_weight": 164,
+      "rank_overall": 1513,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 6,
+    "ranked_wins": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34957134132",
-      "opponent_rank": 100,
-      "opponent_name": "Colin Martin",
-      "method": "SV-1 2-1"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34944663132",
-      "opponent_rank": 119,
-      "opponent_name": "Brock Bobzien",
-      "method": "Dec 7-1"
+      "opponent_id": "34951034132",
+      "opponent_rank": 38,
+      "opponent_name": "Jacob Brenneman",
+      "method": "MD 14-3"
     }
   },
   "match_list": [
@@ -52,11 +54,11 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 55,
       "opponent_weight": 141,
-      "opponent_rank": 70,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:27",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
     },
     {
@@ -68,7 +70,7 @@
       "opponent_weight": 141,
       "opponent_rank": 5,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-2",
       "duration": "3:24",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -80,7 +82,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 141,
-      "opponent_rank": 36,
+      "opponent_rank": 35,
       "result": "L",
       "method": "MD",
       "score": "18-6",
@@ -94,7 +96,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 133,
-      "opponent_rank": 100,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -110,7 +112,7 @@
       "opponent_weight": 141,
       "opponent_rank": 29,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "3:24",
       "event": "vs. Purdue"
@@ -122,7 +124,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": 42,
+      "opponent_rank": 38,
       "result": "L",
       "method": "MD",
       "score": "14-3",
@@ -136,7 +138,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": 146,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "18-9",
@@ -150,7 +152,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 31,
       "opponent_weight": 141,
-      "opponent_rank": 119,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "7-1",

@@ -6,10 +6,10 @@
   "team_rank": 4,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 15,
+  "current_rank": null,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "3-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "1-1"
   },
@@ -20,20 +20,27 @@
     "si_plus": 109.3,
     "df_plus": 110.5,
     "apr_plus": 96.9,
-    "pin_rate": 0.333,
+    "pin_rate": 0.0,
     "bonus_rate": 0.667,
     "majors": 1,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.876,
+      "matches": 4,
+      "rank_weight": 19,
+      "rank_overall": 138,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 2,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34943458132",
-      "opponent_rank": 16,
+      "opponent_rank": 15,
       "opponent_name": "Aden Valencia",
       "method": "Dec 4-3"
     },
@@ -66,7 +73,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 19,
       "opponent_weight": 149,
-      "opponent_rank": 16,
+      "opponent_rank": 15,
       "result": "W",
       "method": "DEC",
       "score": "4-3",
@@ -80,7 +87,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 149,
-      "opponent_rank": 45,
+      "opponent_rank": 38,
       "result": "W",
       "method": "MD",
       "score": "9-1",
@@ -94,9 +101,9 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 149,
-      "opponent_rank": 142,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "1:51",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"

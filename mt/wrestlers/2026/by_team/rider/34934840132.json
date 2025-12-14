@@ -6,10 +6,10 @@
   "team_rank": 42,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 63,
+  "current_rank": 48,
   "record": {
     "overall": "4-6",
-    "vs_ranked": "4-6",
+    "vs_ranked": "4-5",
     "vs_top10": "0-0",
     "vs_top25": "0-4"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.25,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.774,
+      "matches": 10,
+      "rank_weight": 80,
+      "rank_overall": 946,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 6,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34951056132",
-      "opponent_rank": 47,
+      "opponent_rank": 39,
       "opponent_name": "Tate Geiser",
       "method": "Dec 8-5"
     },
     "worst_loss": {
-      "opponent_id": "34955719132",
-      "opponent_rank": 62,
-      "opponent_name": "Duncan Christensen",
-      "method": "Dec 11-5"
+      "opponent_id": "34944545132",
+      "opponent_rank": 35,
+      "opponent_name": "Leo Tukhlynovych",
+      "method": "Fall 3:28"
     }
   },
   "match_list": [
@@ -52,11 +59,11 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 174,
-      "opponent_rank": 42,
+      "opponent_rank": 35,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:28",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
     },
     {
@@ -66,7 +73,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 174,
-      "opponent_rank": 47,
+      "opponent_rank": 39,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -96,9 +103,9 @@
       "opponent_weight": 174,
       "opponent_rank": 13,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:44",
       "event": "vs. West Virginia"
     },
     {
@@ -108,7 +115,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 174,
-      "opponent_rank": 82,
+      "opponent_rank": 57,
       "result": "W",
       "method": "MD",
       "score": "10-1",
@@ -136,7 +143,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 174,
-      "opponent_rank": 74,
+      "opponent_rank": 53,
       "result": "W",
       "method": "DEC",
       "score": "8-3",
@@ -150,7 +157,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 184,
-      "opponent_rank": 122,
+      "opponent_rank": 74,
       "result": "W",
       "method": "DEC",
       "score": "10-4",
@@ -164,7 +171,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 174,
-      "opponent_rank": 62,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "11-5",
@@ -180,7 +187,7 @@
       "opponent_weight": 174,
       "opponent_rank": 19,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-0",
       "duration": "4:10",
       "event": "Princeton Open"

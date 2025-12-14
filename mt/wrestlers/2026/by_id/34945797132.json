@@ -6,10 +6,10 @@
   "team_rank": 35,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 60,
+  "current_rank": null,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "3-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -20,26 +20,33 @@
     "si_plus": 110.1,
     "df_plus": 107.7,
     "apr_plus": 96.1,
-    "pin_rate": 0.333,
+    "pin_rate": 0.0,
     "bonus_rate": 0.667,
     "majors": 1,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.373,
+      "matches": 5,
+      "rank_weight": 32,
+      "rank_overall": 377,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 2,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34951029132",
-      "opponent_rank": 61,
+      "opponent_rank": 46,
       "opponent_name": "Amonn Ohl",
       "method": "TF 21-3 6:15"
     },
     "worst_loss": {
       "opponent_id": "34943404132",
-      "opponent_rank": 55,
+      "opponent_rank": 43,
       "opponent_name": "Evin Gursoy",
       "method": "MD 8-0"
     }
@@ -52,7 +59,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 133,
-      "opponent_rank": 55,
+      "opponent_rank": 43,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -66,11 +73,11 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 133,
-      "opponent_rank": 62,
+      "opponent_rank": 47,
       "result": "W",
-      "method": "DEC",
+      "method": "INJ",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:53",
       "event": "Michigan State Open"
     },
     {
@@ -80,9 +87,9 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 133,
-      "opponent_rank": 61,
+      "opponent_rank": 46,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-3",
       "duration": "6:15",
       "event": "Michigan State Open"
@@ -94,7 +101,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 14,
       "opponent_weight": 133,
-      "opponent_rank": 186,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-2",

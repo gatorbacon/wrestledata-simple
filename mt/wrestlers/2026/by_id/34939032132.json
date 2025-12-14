@@ -6,10 +6,10 @@
   "team_rank": 1,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 128,
+  "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,22 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.95,
+      "matches": 2,
+      "rank_weight": 113,
+      "rank_overall": 1269,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34940527132",
-      "opponent_rank": 142,
-      "opponent_name": "Dominic Iaquinto",
-      "method": "MD 13-3"
-    },
-    "worst_loss": {
-      "opponent_id": "34957596132",
-      "opponent_rank": 117,
-      "opponent_name": "Joey Schneck",
-      "method": "Dec 5-1"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +49,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 285,
-      "opponent_rank": 117,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -66,7 +63,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 285,
-      "opponent_rank": 142,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "13-3",

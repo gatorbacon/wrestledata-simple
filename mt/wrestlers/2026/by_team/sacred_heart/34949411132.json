@@ -6,10 +6,10 @@
   "team_rank": 76,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 177,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.947,
+      "matches": 2,
+      "rank_weight": 226,
+      "rank_overall": 1873,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34948507132",
-      "opponent_rank": 123,
-      "opponent_name": "Kai Tengco",
-      "method": "MD 14-5"
+      "opponent_id": "34938656132",
+      "opponent_rank": 70,
+      "opponent_name": "Matt Smith",
+      "method": "TF 17-1 5:32"
     }
   },
   "match_list": [
@@ -47,7 +54,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 149,
-      "opponent_rank": 123,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-5",
@@ -61,9 +68,9 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 149,
-      "opponent_rank": 119,
+      "opponent_rank": 70,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-1",
       "duration": "5:32",
       "event": "Big Red Invitational"

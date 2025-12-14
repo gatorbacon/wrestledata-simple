@@ -6,10 +6,10 @@
   "team_rank": 65,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 54,
+  "current_rank": 45,
   "record": {
     "overall": "5-4",
-    "vs_ranked": "5-4",
+    "vs_ranked": "4-4",
     "vs_top10": "0-1",
     "vs_top25": "0-4"
   },
@@ -24,16 +24,23 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.339,
+      "matches": 9,
+      "rank_weight": 70,
+      "rank_overall": 842,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 4,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34955400132",
-      "opponent_rank": 55,
+      "opponent_rank": 46,
       "opponent_name": "Tommy Bennett",
       "method": "Dec 8-6"
     },
@@ -54,7 +61,7 @@
       "opponent_weight": 174,
       "opponent_rank": 15,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "2:22",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -68,9 +75,9 @@
       "opponent_weight": 174,
       "opponent_rank": 9,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:21",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
     },
     {
@@ -80,7 +87,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 174,
-      "opponent_rank": 55,
+      "opponent_rank": 46,
       "result": "W",
       "method": "DEC",
       "score": "8-6",
@@ -108,7 +115,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 30,
       "opponent_weight": 174,
-      "opponent_rank": 108,
+      "opponent_rank": 68,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -122,7 +129,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 19,
       "opponent_weight": 174,
-      "opponent_rank": 72,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "3-1",
@@ -136,7 +143,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 30,
       "opponent_weight": 174,
-      "opponent_rank": 173,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -164,7 +171,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 174,
-      "opponent_rank": 94,
+      "opponent_rank": 64,
       "result": "W",
       "method": "DEC",
       "score": "4-1",

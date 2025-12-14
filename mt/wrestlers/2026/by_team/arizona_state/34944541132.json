@@ -9,9 +9,9 @@
   "current_rank": 12,
   "record": {
     "overall": "9-5",
-    "vs_ranked": "9-5",
+    "vs_ranked": "4-5",
     "vs_top10": "0-4",
-    "vs_top25": "3-4"
+    "vs_top25": "2-4"
   },
   "metrics": {
     "pf7": 7.76,
@@ -24,10 +24,17 @@
     "bonus_rate": 0.556,
     "majors": 2,
     "techs": 0,
-    "pins": 3
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 2.314,
+      "matches": 12,
+      "rank_weight": 25,
+      "rank_overall": 220,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 9,
+    "ranked_wins": 4,
     "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 4,
@@ -39,7 +46,7 @@
     },
     "worst_loss": {
       "opponent_id": "34933981132",
-      "opponent_rank": 31,
+      "opponent_rank": 26,
       "opponent_name": "Max Vanadia",
       "method": "SV-1 11-8"
     }
@@ -68,9 +75,9 @@
       "opponent_weight": 285,
       "opponent_rank": 15,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:08",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
     },
     {
@@ -94,7 +101,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": 67,
+      "opponent_rank": 50,
       "result": "W",
       "method": "DEC",
       "score": "8-3",
@@ -110,7 +117,7 @@
       "opponent_weight": 285,
       "opponent_rank": 1,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-5",
       "duration": "6:04",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -122,7 +129,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 285,
-      "opponent_rank": 21,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "13-7",
@@ -150,7 +157,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 285,
-      "opponent_rank": 94,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "14-5",
@@ -166,7 +173,7 @@
       "opponent_weight": 285,
       "opponent_rank": 6,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "7:00",
       "event": "vs. Michigan"
@@ -178,11 +185,11 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 67,
       "opponent_weight": 285,
-      "opponent_rank": 168,
+      "opponent_rank": 74,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:29",
       "event": "Michigan State Open"
     },
     {
@@ -192,11 +199,11 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 285,
-      "opponent_rank": 57,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:40",
       "event": "Michigan State Open"
     },
     {
@@ -206,7 +213,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 285,
-      "opponent_rank": 31,
+      "opponent_rank": 26,
       "result": "L",
       "method": "DEC",
       "score": "11-8",
@@ -220,7 +227,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 285,
-      "opponent_rank": 56,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -234,7 +241,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 197,
-      "opponent_rank": 141,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "12-7",

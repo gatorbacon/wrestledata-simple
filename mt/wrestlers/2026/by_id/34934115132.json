@@ -6,12 +6,12 @@
   "team_rank": 51,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 144,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 4.67,
@@ -24,25 +24,22 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.059,
+      "matches": 3,
+      "rank_weight": 118,
+      "rank_overall": 1309,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34933525132",
-      "opponent_rank": 179,
-      "opponent_name": "Lance Trost",
-      "method": "MD 9-1"
-    },
-    "worst_loss": {
-      "opponent_id": "34944540132",
-      "opponent_rank": 122,
-      "opponent_name": "Ben Szuba",
-      "method": "Dec 5-2"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +49,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 285,
-      "opponent_rank": 122,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -66,7 +63,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 285,
-      "opponent_rank": 21,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-3",
@@ -80,7 +77,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 14,
       "opponent_weight": 285,
-      "opponent_rank": 179,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "9-1",

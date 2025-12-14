@@ -6,7 +6,7 @@
   "team_rank": 3,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 36,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.666,
+      "matches": 3,
+      "rank_weight": 62,
+      "rank_overall": 550,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,7 +40,7 @@
     "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "34934162132",
-      "opponent_rank": 59,
+      "opponent_rank": 47,
       "opponent_name": "Vince Bouzakis",
       "method": "Dec 11-6"
     },
@@ -52,7 +59,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 157,
-      "opponent_rank": 59,
+      "opponent_rank": 47,
       "result": "W",
       "method": "DEC",
       "score": "11-6",

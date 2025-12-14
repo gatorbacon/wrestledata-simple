@@ -6,10 +6,10 @@
   "team_rank": 60,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 110,
+  "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,22 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.138,
+      "matches": 2,
+      "rank_weight": 167,
+      "rank_overall": 1336,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34938647132",
-      "opponent_rank": 122,
-      "opponent_name": "Oliver Fairchild",
-      "method": "Fall 3:48"
-    },
-    "worst_loss": {
-      "opponent_id": "34938646132",
-      "opponent_rank": 88,
-      "opponent_name": "Connor Eck",
-      "method": "Fall 4:00"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,11 +49,11 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": 88,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:00",
       "event": "Clarion Open"
     },
     {
@@ -66,11 +63,11 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 149,
-      "opponent_rank": 122,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:48",
       "event": "Clarion Open"
     }
   ]

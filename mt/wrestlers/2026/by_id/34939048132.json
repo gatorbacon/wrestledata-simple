@@ -6,7 +6,7 @@
   "team_rank": 37,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 190,
+  "current_rank": null,
   "record": {
     "overall": "0-3",
     "vs_ranked": "0-3",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.669,
+      "matches": 2,
+      "rank_weight": 128,
+      "rank_overall": 1450,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34940493132",
-      "opponent_rank": 58,
+      "opponent_rank": 47,
       "opponent_name": "Gage Yackee",
       "method": "M. For."
     }
@@ -47,7 +54,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 184,
-      "opponent_rank": 27,
+      "opponent_rank": 26,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -61,7 +68,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 184,
-      "opponent_rank": 58,
+      "opponent_rank": 47,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -75,7 +82,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 184,
-      "opponent_rank": 42,
+      "opponent_rank": 38,
       "result": "L",
       "method": "DEC",
       "score": "4-2",

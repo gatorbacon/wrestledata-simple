@@ -6,10 +6,10 @@
   "team_rank": 35,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 160,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.021,
+      "matches": 2,
+      "rank_weight": 195,
+      "rank_overall": 1986,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34955626132",
-      "opponent_rank": 122,
-      "opponent_name": "Josh Vazquez",
-      "method": "Dec 6-4"
+      "opponent_id": "34944026132",
+      "opponent_rank": 62,
+      "opponent_name": "Tyeler Hagensen",
+      "method": "Fall 2:40"
     }
   },
   "match_list": [
@@ -47,7 +54,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 125,
-      "opponent_rank": 122,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-4",
@@ -61,11 +68,11 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 125,
-      "opponent_rank": 68,
+      "opponent_rank": 62,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:40",
       "event": "Michigan State Open"
     }
   ]

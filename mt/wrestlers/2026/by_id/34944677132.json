@@ -9,7 +9,7 @@
   "current_rank": 13,
   "record": {
     "overall": "8-1",
-    "vs_ranked": "8-1",
+    "vs_ranked": "3-1",
     "vs_top10": "0-1",
     "vs_top25": "1-1"
   },
@@ -24,16 +24,23 @@
     "bonus_rate": 0.875,
     "majors": 3,
     "techs": 0,
-    "pins": 4
+    "pins": 4,
+    "mat_value": {
+      "mv_avg": 3.684,
+      "matches": 9,
+      "rank_weight": 8,
+      "rank_overall": 68,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
+    "ranked_wins": 3,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34934336132",
-      "opponent_rank": 23,
+      "opponent_rank": 20,
       "opponent_name": "Brady Colbert",
       "method": "MD 13-0"
     },
@@ -52,11 +59,11 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 285,
-      "opponent_rank": 138,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:28",
       "event": "vs. Wisconsin"
     },
     {
@@ -66,7 +73,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 23,
+      "opponent_rank": 20,
       "result": "W",
       "method": "MD",
       "score": "13-0",
@@ -80,7 +87,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 29,
       "opponent_weight": 285,
-      "opponent_rank": 28,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-2",
@@ -94,11 +101,11 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 285,
-      "opponent_rank": 79,
+      "opponent_rank": 58,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:47",
       "event": "vs. Wisconsin"
     },
     {
@@ -108,11 +115,11 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 65,
       "opponent_weight": 285,
-      "opponent_rank": 73,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:42",
       "event": "Cyclone Invitational"
     },
     {
@@ -136,7 +143,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 4,
       "opponent_weight": 285,
-      "opponent_rank": 39,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-0",
@@ -150,7 +157,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": 190,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-1",
@@ -164,11 +171,11 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 285,
-      "opponent_rank": 120,
+      "opponent_rank": 69,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:20",
       "event": "vs. Wisconsin"
     }
   ]

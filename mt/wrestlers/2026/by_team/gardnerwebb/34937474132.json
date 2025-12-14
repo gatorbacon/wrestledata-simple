@@ -6,10 +6,10 @@
   "team_rank": 54,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 124,
+  "current_rank": null,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "2-5",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -20,26 +20,28 @@
     "si_plus": 86.5,
     "df_plus": 88.0,
     "apr_plus": 98.0,
-    "pin_rate": 0.5,
+    "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.471,
+      "matches": 7,
+      "rank_weight": 149,
+      "rank_overall": 1628,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_wins": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34943409132",
-      "opponent_rank": 147,
-      "opponent_name": "Lindson Turner",
-      "method": "Dec 6-2"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34941688132",
-      "opponent_rank": 117,
+      "opponent_rank": 71,
       "opponent_name": "Ryan Bolletino",
       "method": "MD 9-0"
     }
@@ -52,11 +54,11 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 174,
-      "opponent_rank": 45,
+      "opponent_rank": 38,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:50",
       "event": "vs. Gardner-Webb"
     },
     {
@@ -66,11 +68,11 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 174,
-      "opponent_rank": 52,
+      "opponent_rank": 43,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:13",
       "event": "Black Knight Invite"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 174,
-      "opponent_rank": 147,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-2",
@@ -94,9 +96,9 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 174,
-      "opponent_rank": 33,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "3:53",
       "event": "Black Knight Invite"
@@ -108,7 +110,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 43,
       "opponent_weight": 174,
-      "opponent_rank": 117,
+      "opponent_rank": 71,
       "result": "L",
       "method": "MD",
       "score": "9-0",
@@ -122,9 +124,9 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 174,
-      "opponent_rank": 180,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-3",
       "duration": "6:30",
       "event": "Southeast Open"
@@ -138,9 +140,9 @@
       "opponent_weight": 174,
       "opponent_rank": 13,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:18",
       "event": "Southeast Open"
     }
   ]

@@ -9,9 +9,9 @@
   "current_rank": 6,
   "record": {
     "overall": "11-2",
-    "vs_ranked": "11-2",
+    "vs_ranked": "9-2",
     "vs_top10": "0-2",
-    "vs_top25": "4-2"
+    "vs_top25": "3-2"
   },
   "metrics": {
     "pf7": 13.95,
@@ -20,14 +20,21 @@
     "si_plus": 121.3,
     "df_plus": 109.0,
     "apr_plus": 102.3,
-    "pin_rate": 0.545,
+    "pin_rate": 0.091,
     "bonus_rate": 0.818,
     "majors": 3,
-    "techs": 0,
-    "pins": 6
+    "techs": 5,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 4.031,
+      "matches": 13,
+      "rank_weight": 7,
+      "rank_overall": 45,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 11,
+    "ranked_wins": 9,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 2,
@@ -52,7 +59,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": 77,
+      "opponent_rank": 56,
       "result": "W",
       "method": "MD",
       "score": "11-1",
@@ -80,9 +87,9 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 64,
       "opponent_weight": 285,
-      "opponent_rank": 106,
+      "opponent_rank": 64,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-1",
       "duration": "4:34",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -108,9 +115,9 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 285,
-      "opponent_rank": 21,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "5:43",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -122,7 +129,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 18,
       "opponent_weight": 285,
-      "opponent_rank": 36,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-1",
@@ -150,11 +157,11 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 47,
       "opponent_weight": 285,
-      "opponent_rank": 61,
+      "opponent_rank": 46,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:04",
       "event": "vs. Virginia"
     },
     {
@@ -164,9 +171,9 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": 49,
+      "opponent_rank": 39,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-5",
       "duration": "5:43",
       "event": "vs. Michigan"
@@ -180,7 +187,7 @@
       "opponent_weight": 285,
       "opponent_rank": 12,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "7:00",
       "event": "vs. Michigan"
@@ -192,7 +199,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 285,
-      "opponent_rank": 48,
+      "opponent_rank": 38,
       "result": "W",
       "method": "MD",
       "score": "17-7",
@@ -220,9 +227,9 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 78,
       "opponent_weight": 285,
-      "opponent_rank": 84,
+      "opponent_rank": 62,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "22-6",
       "duration": "4:51",
       "event": "vs. VMI"

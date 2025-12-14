@@ -6,10 +6,10 @@
   "team_rank": 75,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 171,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.843,
+      "matches": 1,
+      "rank_weight": 179,
+      "rank_overall": 1973,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34935916132",
-      "opponent_rank": 129,
-      "opponent_name": "Josh Lange",
-      "method": "Dec 6-3"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,7 +49,7 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 67,
       "opponent_weight": 174,
-      "opponent_rank": 129,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-3",

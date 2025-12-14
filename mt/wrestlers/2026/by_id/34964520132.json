@@ -6,10 +6,10 @@
   "team_rank": 10,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 93,
+  "current_rank": null,
   "record": {
     "overall": "4-4",
-    "vs_ranked": "4-4",
+    "vs_ranked": "2-3",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -20,28 +20,35 @@
     "si_plus": 97.6,
     "df_plus": 99.9,
     "apr_plus": 96.6,
-    "pin_rate": 0.25,
+    "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 1,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.394,
+      "matches": 8,
+      "rank_weight": 77,
+      "rank_overall": 854,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 4,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "34936188132",
-      "opponent_rank": 105,
-      "opponent_name": "Gavin Hannah",
-      "method": "TF 20-5 6:37"
+      "opponent_id": "34949045132",
+      "opponent_rank": 67,
+      "opponent_name": "Brendan Gilchrist",
+      "method": "Dec 4-2"
     },
     "worst_loss": {
-      "opponent_id": "34947802132",
-      "opponent_rank": 90,
-      "opponent_name": "Charlie Tibbitts",
-      "method": "Dec 4-2"
+      "opponent_id": "34964386132",
+      "opponent_rank": 50,
+      "opponent_name": "Ashton Davis",
+      "method": "Dec 8-2"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 285,
-      "opponent_rank": 90,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -66,9 +73,9 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": 105,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-5",
       "duration": "6:37",
       "event": "Big Red Invitational"
@@ -80,7 +87,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 285,
-      "opponent_rank": 53,
+      "opponent_rank": 41,
       "result": "L",
       "method": "DEC",
       "score": "6-3",
@@ -94,7 +101,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 285,
-      "opponent_rank": 115,
+      "opponent_rank": 67,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -108,7 +115,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 285,
-      "opponent_rank": 131,
+      "opponent_rank": 71,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -122,7 +129,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": 67,
+      "opponent_rank": 50,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -136,7 +143,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": 190,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "15-7",
@@ -152,7 +159,7 @@
       "opponent_weight": 285,
       "opponent_rank": 2,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-6",
       "duration": "7:00",
       "event": "Clarion Open"

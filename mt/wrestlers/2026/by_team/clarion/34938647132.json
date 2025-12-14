@@ -6,10 +6,10 @@
   "team_rank": 66,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 122,
+  "current_rank": null,
   "record": {
     "overall": "5-5",
-    "vs_ranked": "5-5",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.4,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.443,
+      "matches": 9,
+      "rank_weight": 148,
+      "rank_overall": 1146,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 5,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34947840132",
-      "opponent_rank": 93,
-      "opponent_name": "Luke Geleta",
-      "method": "Dec 7-5"
+      "opponent_id": "34936234132",
+      "opponent_rank": 74,
+      "opponent_name": "Jay Chase",
+      "method": "Fall 6:54"
     },
     "worst_loss": {
-      "opponent_id": "34934379132",
-      "opponent_rank": 117,
-      "opponent_name": "Shane Reilly",
-      "method": "Dec 5-2"
+      "opponent_id": "34977466132",
+      "opponent_rank": 28,
+      "opponent_name": "Eugene Harney",
+      "method": "TB-2 3-2"
     }
   },
   "match_list": [
@@ -52,11 +59,11 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 149,
-      "opponent_rank": 156,
+      "opponent_rank": 74,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:54",
       "event": "Big Red Invitational"
     },
     {
@@ -66,7 +73,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 149,
-      "opponent_rank": 111,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-3",
@@ -80,7 +87,7 @@
       "opponent_team": "Morgan State",
       "opponent_team_rank": 73,
       "opponent_weight": 149,
-      "opponent_rank": 31,
+      "opponent_rank": 28,
       "result": "L",
       "method": "DEC",
       "score": "3-2",
@@ -94,7 +101,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 149,
-      "opponent_rank": 228,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -108,7 +115,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 149,
-      "opponent_rank": 117,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -122,7 +129,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 149,
-      "opponent_rank": 93,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-5",
@@ -136,7 +143,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 149,
-      "opponent_rank": 176,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "12-1",
@@ -150,11 +157,11 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 58,
       "opponent_weight": 149,
-      "opponent_rank": 116,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:40",
       "event": "Clarion Open"
     },
     {
@@ -164,11 +171,11 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 149,
-      "opponent_rank": 110,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:48",
       "event": "Clarion Open"
     },
     {
@@ -178,7 +185,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 149,
-      "opponent_rank": 228,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-3",

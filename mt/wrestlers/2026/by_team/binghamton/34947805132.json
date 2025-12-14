@@ -6,10 +6,10 @@
   "team_rank": 61,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 102,
+  "current_rank": null,
   "record": {
     "overall": "3-6",
-    "vs_ranked": "3-6",
+    "vs_ranked": "1-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -4.076,
+      "matches": 8,
+      "rank_weight": 151,
+      "rank_overall": 1730,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 6,
+    "ranked_wins": 1,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34936190132",
-      "opponent_rank": 124,
-      "opponent_name": "Connor Hudak",
-      "method": "Dec 2-0"
+      "opponent_id": "34949302132",
+      "opponent_rank": 77,
+      "opponent_name": "Dominick Kraemer",
+      "method": "Dec 8-5"
     },
     "worst_loss": {
-      "opponent_id": "34938513132",
-      "opponent_rank": 101,
-      "opponent_name": "Jack Kelly",
-      "method": "Fall 1:11"
+      "opponent_id": "34948513132",
+      "opponent_rank": 54,
+      "opponent_name": "Thomas Sandoval",
+      "method": "MD 14-5"
     }
   },
   "match_list": [
@@ -52,11 +59,11 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 174,
-      "opponent_rank": 200,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:34",
       "event": "Big Red Invitational"
     },
     {
@@ -66,11 +73,11 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 184,
-      "opponent_rank": 101,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:11",
       "event": "Big Red Invitational"
     },
     {
@@ -80,7 +87,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": 124,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -94,7 +101,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 184,
-      "opponent_rank": 140,
+      "opponent_rank": 77,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -108,11 +115,11 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 184,
-      "opponent_rank": 100,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:07",
       "event": "Big Red Invitational"
     },
     {
@@ -122,11 +129,11 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 184,
-      "opponent_rank": 60,
+      "opponent_rank": 49,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:18",
       "event": "Army Open"
     },
     {
@@ -136,11 +143,11 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 184,
-      "opponent_rank": 25,
+      "opponent_rank": 24,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:39",
       "event": "Army Open"
     },
     {
@@ -150,7 +157,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 184,
-      "opponent_rank": 68,
+      "opponent_rank": 54,
       "result": "L",
       "method": "MD",
       "score": "14-5",
@@ -164,7 +171,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 184,
-      "opponent_rank": 64,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "15-4",

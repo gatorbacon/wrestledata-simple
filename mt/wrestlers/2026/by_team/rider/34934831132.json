@@ -6,12 +6,12 @@
   "team_rank": 42,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 35,
+  "current_rank": 31,
   "record": {
     "overall": "6-5",
-    "vs_ranked": "6-5",
+    "vs_ranked": "3-4",
     "vs_top10": "0-1",
-    "vs_top25": "0-4"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 3.44,
@@ -24,22 +24,29 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.601,
+      "matches": 11,
+      "rank_weight": 52,
+      "rank_overall": 566,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 5,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34948148132",
-      "opponent_rank": 36,
+      "opponent_rank": 32,
       "opponent_name": "Ethan Rivera",
       "method": "Dec 7-2"
     },
     "worst_loss": {
       "opponent_id": "34948546132",
-      "opponent_rank": 31,
+      "opponent_rank": 28,
       "opponent_name": "Gunner Andrick",
       "method": "Dec 6-3"
     }
@@ -52,7 +59,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 133,
-      "opponent_rank": 22,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -66,7 +73,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 133,
-      "opponent_rank": 61,
+      "opponent_rank": 46,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -80,7 +87,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": 150,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -94,7 +101,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 133,
-      "opponent_rank": 36,
+      "opponent_rank": 32,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -122,7 +129,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 133,
-      "opponent_rank": 31,
+      "opponent_rank": 28,
       "result": "L",
       "method": "DEC",
       "score": "6-3",
@@ -136,7 +143,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 133,
-      "opponent_rank": 133,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "9-4",
@@ -178,7 +185,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 133,
-      "opponent_rank": 68,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "3-2",
@@ -192,7 +199,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": 85,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",

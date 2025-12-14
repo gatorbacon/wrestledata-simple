@@ -6,10 +6,10 @@
   "team_rank": 27,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 58,
+  "current_rank": 43,
   "record": {
     "overall": "5-2",
-    "vs_ranked": "5-2",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,28 +20,35 @@
     "si_plus": 101.6,
     "df_plus": 95.5,
     "apr_plus": 102.8,
-    "pin_rate": 0.4,
+    "pin_rate": 0.2,
     "bonus_rate": 0.6,
     "majors": 1,
-    "techs": 0,
-    "pins": 2
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.937,
+      "matches": 7,
+      "rank_weight": 51,
+      "rank_overall": 475,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 2,
+    "ranked_wins": 3,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34985676132",
-      "opponent_rank": 59,
+      "opponent_rank": 44,
       "opponent_name": "Kade Sottolano",
       "method": "Dec 8-2"
     },
     "worst_loss": {
-      "opponent_id": "34933979132",
-      "opponent_rank": 56,
-      "opponent_name": "Josh Terrill",
-      "method": "TF 15-0 5:41"
+      "opponent_id": "34933981132",
+      "opponent_rank": 26,
+      "opponent_name": "Max Vanadia",
+      "method": "MD 11-3"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 285,
-      "opponent_rank": 59,
+      "opponent_rank": 44,
       "result": "W",
       "method": "DEC",
       "score": "8-2",
@@ -66,9 +73,9 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 285,
-      "opponent_rank": 56,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "5:41",
       "event": "Keystone Classic"
@@ -80,7 +87,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 285,
-      "opponent_rank": 31,
+      "opponent_rank": 26,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -94,9 +101,9 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 285,
-      "opponent_rank": 125,
+      "opponent_rank": 70,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "0:00",
       "event": "vs. Penn"
@@ -108,11 +115,11 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 43,
       "opponent_weight": 285,
-      "opponent_rank": 171,
+      "opponent_rank": 75,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:00",
       "event": "vs. Pennsylvania"
     },
     {
@@ -122,7 +129,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 114,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-2",
@@ -136,7 +143,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 285,
-      "opponent_rank": 89,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-2",

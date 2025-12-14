@@ -6,7 +6,7 @@
   "team_rank": 7,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 26,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
     "vs_ranked": "2-2",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.653,
+      "matches": 4,
+      "rank_weight": 29,
+      "rank_overall": 328,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,7 +40,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34947800132",
-      "opponent_rank": 27,
+      "opponent_rank": 26,
       "opponent_name": "Carter Baer",
       "method": "Dec 8-5"
     },
@@ -52,7 +59,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 174,
-      "opponent_rank": 27,
+      "opponent_rank": 26,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -80,7 +87,7 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 174,
-      "opponent_rank": 29,
+      "opponent_rank": 28,
       "result": "W",
       "method": "DEC",
       "score": "11-10",

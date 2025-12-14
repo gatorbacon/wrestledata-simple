@@ -6,10 +6,10 @@
   "team_rank": 54,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 201,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.424,
+      "matches": 2,
+      "rank_weight": 222,
+      "rank_overall": 1929,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34935696132",
-      "opponent_rank": 162,
-      "opponent_name": "Trevor Kantor",
-      "method": "Dec 11-5"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,7 +49,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 157,
-      "opponent_rank": 162,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "11-5",
@@ -61,11 +63,11 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:30",
       "event": "Southeast Open"
     }
   ]

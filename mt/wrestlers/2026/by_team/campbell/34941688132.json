@@ -6,10 +6,10 @@
   "team_rank": 43,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 117,
+  "current_rank": 71,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "2-5",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.133,
+      "matches": 5,
+      "rank_weight": 114,
+      "rank_overall": 1333,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34954527132",
-      "opponent_rank": 93,
+      "opponent_rank": 65,
       "opponent_name": "Yanik Simon",
       "method": "Dec 15-11"
     },
     "worst_loss": {
-      "opponent_id": "34935670132",
-      "opponent_rank": 85,
-      "opponent_name": "Caden Bellis",
-      "method": "Dec 6-1"
+      "opponent_id": "34935057132",
+      "opponent_rank": 59,
+      "opponent_name": "Eric Alderfer",
+      "method": "MD 9-0"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 165,
-      "opponent_rank": 93,
+      "opponent_rank": 65,
       "result": "W",
       "method": "DEC",
       "score": "15-11",
@@ -66,7 +73,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": 85,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-1",
@@ -80,7 +87,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 174,
-      "opponent_rank": 84,
+      "opponent_rank": 59,
       "result": "L",
       "method": "MD",
       "score": "9-0",
@@ -94,7 +101,7 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 174,
-      "opponent_rank": 29,
+      "opponent_rank": 28,
       "result": "L",
       "method": "MD",
       "score": "19-6",
@@ -108,9 +115,9 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 165,
-      "opponent_rank": 45,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-0",
       "duration": "5:12",
       "event": "Southeast Open"
@@ -122,7 +129,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": 124,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "9-0",
@@ -136,7 +143,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 174,
-      "opponent_rank": 32,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "13-1",

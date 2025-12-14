@@ -6,10 +6,10 @@
   "team_rank": 62,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 238,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,19 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.681,
+      "matches": 2,
+      "rank_weight": 225,
+      "rank_overall": 1958,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34971893132",
-      "opponent_rank": 151,
-      "opponent_name": "Aboubakare Diaby",
-      "method": "MD 18-6"
+      "opponent_id": "34948152132",
+      "opponent_rank": 44,
+      "opponent_name": "Gavin Hawk",
+      "method": "Fall 2:45"
     }
   },
   "match_list": [
@@ -47,7 +54,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": 151,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "18-6",
@@ -61,11 +68,11 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 157,
-      "opponent_rank": 55,
+      "opponent_rank": 44,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:45",
       "event": "A Better Way Athletics Patriot Open"
     }
   ]

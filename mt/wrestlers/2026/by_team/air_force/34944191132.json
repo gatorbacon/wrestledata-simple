@@ -6,10 +6,10 @@
   "team_rank": 58,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 79,
+  "current_rank": 56,
   "record": {
     "overall": "7-3",
-    "vs_ranked": "7-3",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
     "vs_top25": "1-2"
   },
@@ -20,14 +20,21 @@
     "si_plus": 105.5,
     "df_plus": 101.6,
     "apr_plus": 116.6,
-    "pin_rate": 0.571,
+    "pin_rate": 0.429,
     "bonus_rate": 0.571,
     "majors": 0,
-    "techs": 0,
-    "pins": 4
+    "techs": 1,
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 1.452,
+      "matches": 10,
+      "rank_weight": 36,
+      "rank_overall": 361,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 3,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -39,7 +46,7 @@
     },
     "worst_loss": {
       "opponent_id": "34937473132",
-      "opponent_rank": 78,
+      "opponent_rank": 55,
       "opponent_name": "Dominic DiTullio",
       "method": "Dec 9-2"
     }
@@ -54,9 +61,9 @@
       "opponent_weight": 141,
       "opponent_rank": 18,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:20",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
     },
     {
@@ -108,7 +115,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 141,
-      "opponent_rank": 195,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-4",
@@ -122,11 +129,11 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 77,
       "opponent_weight": 141,
-      "opponent_rank": 103,
+      "opponent_rank": 65,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:00",
       "event": "vs. The Citadel"
     },
     {
@@ -136,7 +143,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 141,
-      "opponent_rank": 78,
+      "opponent_rank": 55,
       "result": "L",
       "method": "DEC",
       "score": "9-2",
@@ -150,9 +157,9 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 141,
-      "opponent_rank": 80,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "6:41",
       "event": "Clarion Open"
@@ -164,7 +171,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 141,
-      "opponent_rank": 183,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-1",
@@ -178,11 +185,11 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 141,
-      "opponent_rank": 187,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:56",
       "event": "Clarion Open"
     }
   ]

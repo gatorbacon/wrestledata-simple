@@ -6,10 +6,10 @@
   "team_rank": 26,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 120,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,29 +20,31 @@
     "si_plus": 104.5,
     "df_plus": 106.0,
     "apr_plus": 97.5,
-    "pin_rate": 0.5,
+    "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.806,
+      "matches": 4,
+      "rank_weight": 130,
+      "rank_overall": 1240,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34957805132",
-      "opponent_rank": 123,
+      "opponent_rank": 69,
       "opponent_name": "KJ Evans",
       "method": "Dec 8-4"
     },
-    "worst_loss": {
-      "opponent_id": "34944663132",
-      "opponent_rank": 119,
-      "opponent_name": "Brock Bobzien",
-      "method": "Inj. 0:29"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +54,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 3,
       "opponent_weight": 141,
-      "opponent_rank": 110,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "9-6",
@@ -66,11 +68,11 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 31,
       "opponent_weight": 141,
-      "opponent_rank": 119,
+      "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "INJ",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:29",
       "event": "Jim Koch Wisconsin Open"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 57,
       "opponent_weight": 141,
-      "opponent_rank": 123,
+      "opponent_rank": 69,
       "result": "W",
       "method": "DEC",
       "score": "8-4",
@@ -94,9 +96,9 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 31,
       "opponent_weight": 141,
-      "opponent_rank": 212,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "25-8",
       "duration": "5:50",
       "event": "Grand View Open"

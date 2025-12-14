@@ -9,7 +9,7 @@
   "current_rank": 24,
   "record": {
     "overall": "7-2",
-    "vs_ranked": "7-2",
+    "vs_ranked": "4-2",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
@@ -24,16 +24,23 @@
     "bonus_rate": 0.286,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.221,
+      "matches": 8,
+      "rank_weight": 29,
+      "rank_overall": 238,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 4,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34938485132",
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "opponent_name": "DJ Mcgee",
       "method": "Inj. 3:00"
     },
@@ -52,7 +59,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": 158,
+      "opponent_rank": 74,
       "result": "W",
       "method": "DEC",
       "score": "8-2",
@@ -68,9 +75,9 @@
       "opponent_weight": 157,
       "opponent_rank": 12,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:20",
       "event": "vs. Virginia"
     },
     {
@@ -80,7 +87,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 149,
-      "opponent_rank": 71,
+      "opponent_rank": 54,
       "result": "W",
       "method": "MD",
       "score": "11-2",
@@ -94,7 +101,7 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 157,
-      "opponent_rank": 40,
+      "opponent_rank": 35,
       "result": "W",
       "method": "DEC",
       "score": "6-4",
@@ -108,7 +115,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 157,
-      "opponent_rank": 97,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-3",
@@ -122,7 +129,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": 151,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-3",
@@ -136,11 +143,11 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 157,
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "result": "W",
-      "method": "DEC",
+      "method": "INJ",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:00",
       "event": "Navy Classic"
     },
     {
@@ -150,7 +157,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 157,
-      "opponent_rank": 60,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",

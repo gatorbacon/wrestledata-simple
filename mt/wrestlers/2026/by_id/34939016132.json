@@ -9,7 +9,7 @@
   "current_rank": 1,
   "record": {
     "overall": "7-0",
-    "vs_ranked": "7-0",
+    "vs_ranked": "4-0",
     "vs_top10": "1-0",
     "vs_top25": "2-0"
   },
@@ -20,14 +20,21 @@
     "si_plus": 133.1,
     "df_plus": 112.8,
     "apr_plus": 120.7,
-    "pin_rate": 0.714,
+    "pin_rate": 0.286,
     "bonus_rate": 0.857,
     "majors": 1,
-    "techs": 0,
-    "pins": 5
+    "techs": 3,
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 5.045,
+      "matches": 7,
+      "rank_weight": 2,
+      "rank_overall": 13,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 1,
     "top10_losses": 0,
@@ -47,11 +54,11 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 174,
-      "opponent_rank": 104,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:15",
       "event": "vs. Penn State"
     },
     {
@@ -75,9 +82,9 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 174,
-      "opponent_rank": 52,
+      "opponent_rank": 43,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-2",
       "duration": "5:21",
       "event": "Black Knight Invite"
@@ -89,9 +96,9 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 174,
-      "opponent_rank": 70,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:45",
       "event": "Black Knight Invite"
@@ -103,9 +110,9 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": 110,
+      "opponent_rank": 70,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-4",
       "duration": "4:08",
       "event": "Black Knight Invite"
@@ -117,7 +124,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 174,
-      "opponent_rank": 33,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-0",
@@ -133,9 +140,9 @@
       "opponent_weight": 174,
       "opponent_rank": 8,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:15",
       "event": "vs. Oklahoma"
     }
   ]

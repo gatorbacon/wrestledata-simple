@@ -9,7 +9,7 @@
   "current_rank": 2,
   "record": {
     "overall": "9-0",
-    "vs_ranked": "9-0",
+    "vs_ranked": "7-0",
     "vs_top10": "2-0",
     "vs_top25": "3-0"
   },
@@ -20,14 +20,21 @@
     "si_plus": 125.7,
     "df_plus": 108.8,
     "apr_plus": 97.6,
-    "pin_rate": 0.556,
+    "pin_rate": 0.0,
     "bonus_rate": 0.556,
     "majors": 0,
-    "techs": 0,
-    "pins": 5
+    "techs": 5,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 4.38,
+      "matches": 9,
+      "rank_weight": 5,
+      "rank_overall": 28,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 9,
+    "ranked_wins": 7,
     "ranked_losses": 0,
     "top10_wins": 2,
     "top10_losses": 0,
@@ -47,9 +54,9 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 285,
-      "opponent_rank": 34,
+      "opponent_rank": 29,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-1",
       "duration": "3:36",
       "event": "vs. Ohio State"
@@ -61,9 +68,9 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 285,
-      "opponent_rank": 64,
+      "opponent_rank": 48,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-4",
       "duration": "4:34",
       "event": "vs. Ohio State"
@@ -117,9 +124,9 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 52,
       "opponent_weight": 285,
-      "opponent_rank": 107,
+      "opponent_rank": 65,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "22-5",
       "duration": "2:33",
       "event": "vs. Ohio State"
@@ -131,9 +138,9 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 285,
-      "opponent_rank": 130,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "1:28",
       "event": "Clarion Open"
@@ -145,7 +152,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 285,
-      "opponent_rank": 34,
+      "opponent_rank": 29,
       "result": "W",
       "method": "DEC",
       "score": "8-3",
@@ -159,9 +166,9 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": 93,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-6",
       "duration": "7:00",
       "event": "Clarion Open"

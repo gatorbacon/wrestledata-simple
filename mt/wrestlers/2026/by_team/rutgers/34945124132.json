@@ -6,10 +6,10 @@
   "team_rank": 17,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 102,
+  "current_rank": null,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "2-5",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.543,
+      "matches": 7,
+      "rank_weight": 126,
+      "rank_overall": 1422,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934342132",
-      "opponent_rank": 114,
-      "opponent_name": "Sam Sorenson",
-      "method": "SV-3 4-1"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34934825132",
-      "opponent_rank": 100,
-      "opponent_name": "Steyn De Lange",
-      "method": "MD 11-1"
+      "opponent_id": "34957601132",
+      "opponent_rank": 52,
+      "opponent_name": "Oscar Williams",
+      "method": "Dec 6-1"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 285,
-      "opponent_rank": 69,
+      "opponent_rank": 52,
       "result": "L",
       "method": "DEC",
       "score": "6-1",
@@ -66,7 +68,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 285,
-      "opponent_rank": 142,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "10-4",
@@ -80,7 +82,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 100,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-1",
@@ -94,7 +96,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 285,
-      "opponent_rank": 98,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "3-0",
@@ -108,7 +110,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 285,
-      "opponent_rank": 99,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -122,7 +124,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 50,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -136,7 +138,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 114,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",

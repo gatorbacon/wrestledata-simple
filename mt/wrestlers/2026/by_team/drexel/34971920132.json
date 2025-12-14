@@ -6,10 +6,10 @@
   "team_rank": 44,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 139,
+  "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,29 +20,26 @@
     "si_plus": 92.0,
     "df_plus": 105.9,
     "apr_plus": 94.5,
-    "pin_rate": 1.0,
+    "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.437,
+      "matches": 2,
+      "rank_weight": 77,
+      "rank_overall": 867,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34940226132",
-      "opponent_rank": 178,
-      "opponent_name": "TJ Dorceus",
-      "method": "TF 18-3 7:00"
-    },
-    "worst_loss": {
-      "opponent_id": "34933371132",
-      "opponent_rank": 73,
-      "opponent_name": "Gunnar Garelli",
-      "method": "Dec 5-4"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,9 +49,9 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 184,
-      "opponent_rank": 178,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "7:00",
       "event": "A Better Way Athletics Patriot Open"
@@ -66,7 +63,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 18,
       "opponent_weight": 184,
-      "opponent_rank": 73,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-4",

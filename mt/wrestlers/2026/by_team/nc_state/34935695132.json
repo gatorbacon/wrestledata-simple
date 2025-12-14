@@ -6,10 +6,10 @@
   "team_rank": 6,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 95,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,29 +20,26 @@
     "si_plus": 154.5,
     "df_plus": 104.5,
     "apr_plus": 96.7,
-    "pin_rate": 1.0,
+    "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 4.452,
+      "matches": 1,
+      "rank_weight": 6,
+      "rank_overall": 25,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34936216132",
-      "opponent_rank": 102,
-      "opponent_name": "Logan Cravatas",
-      "method": "TF 19-4 5:00"
-    },
-    "worst_loss": {
-      "opponent_id": "34934460132",
-      "opponent_rank": 224,
-      "opponent_name": "Billy Templeton",
-      "method": "M. For."
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +49,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 157,
-      "opponent_rank": 176,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -66,7 +63,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 157,
-      "opponent_rank": 224,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -80,9 +77,9 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 157,
-      "opponent_rank": 102,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:00",
       "event": "Southeast Open"

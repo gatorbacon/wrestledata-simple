@@ -6,7 +6,7 @@
   "team_rank": 12,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 52,
+  "current_rank": 40,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -24,7 +24,14 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.548,
+      "matches": 3,
+      "rank_weight": 54,
+      "rank_overall": 581,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +40,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34945829132",
-      "opponent_rank": 53,
+      "opponent_rank": 41,
       "opponent_name": "Logan Frazier",
       "method": "Fall 1:36"
     },
     "worst_loss": {
       "opponent_id": "34955799132",
-      "opponent_rank": 51,
+      "opponent_rank": 39,
       "opponent_name": "Chris Cannon",
       "method": "Dec 6-5"
     }
@@ -52,11 +59,11 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 35,
       "opponent_weight": 133,
-      "opponent_rank": 53,
+      "opponent_rank": 41,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:36",
       "event": "vs. Little Rock"
     },
     {
@@ -66,7 +73,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 133,
-      "opponent_rank": 51,
+      "opponent_rank": 39,
       "result": "L",
       "method": "DEC",
       "score": "6-5",
@@ -82,7 +89,7 @@
       "opponent_weight": 133,
       "opponent_rank": 1,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-3",
       "duration": "4:35",
       "event": "vs. Little Rock"

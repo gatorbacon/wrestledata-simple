@@ -6,10 +6,10 @@
   "team_rank": 57,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 96,
+  "current_rank": null,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "2-3",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.051,
+      "matches": 5,
+      "rank_weight": 111,
+      "rank_overall": 1307,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34952076132",
-      "opponent_rank": 103,
-      "opponent_name": "Charlie Heydorn",
-      "method": "Dec 7-3"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34941557132",
-      "opponent_rank": 113,
-      "opponent_name": "Nick Nosler",
-      "method": "Dec 6-3"
+      "opponent_id": "34937094132",
+      "opponent_rank": 66,
+      "opponent_name": "Andrew Donahue",
+      "method": "Dec 5-1"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 197,
-      "opponent_rank": 103,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-3",
@@ -66,7 +68,7 @@
       "opponent_team": "Little Rock",
       "opponent_team_rank": 12,
       "opponent_weight": 197,
-      "opponent_rank": 104,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "14-8",
@@ -80,7 +82,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 197,
-      "opponent_rank": 113,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-3",
@@ -94,7 +96,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 197,
-      "opponent_rank": 83,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-3",
@@ -108,7 +110,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 57,
       "opponent_weight": 197,
-      "opponent_rank": 90,
+      "opponent_rank": 66,
       "result": "L",
       "method": "DEC",
       "score": "5-1",

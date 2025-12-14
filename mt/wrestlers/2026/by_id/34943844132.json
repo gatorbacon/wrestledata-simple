@@ -6,10 +6,10 @@
   "team_rank": 60,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 130,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.204,
+      "matches": 4,
+      "rank_weight": 64,
+      "rank_overall": 700,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 0,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34938632132",
-      "opponent_rank": 166,
-      "opponent_name": "Lucas Thomas",
-      "method": "Fall 2:13"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34941542132",
-      "opponent_rank": 41,
+      "opponent_rank": 33,
       "opponent_name": "Bryson Buhk",
       "method": "Dec 14-10"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": 41,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "14-10",
@@ -66,11 +68,11 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 285,
-      "opponent_rank": 166,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:13",
       "event": "Clarion Open"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 285,
-      "opponent_rank": 191,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -96,7 +98,7 @@
       "opponent_weight": 285,
       "opponent_rank": 2,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "1:28",
       "event": "Clarion Open"

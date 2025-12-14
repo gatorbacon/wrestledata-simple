@@ -6,10 +6,10 @@
   "team_rank": 34,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 160,
+  "current_rank": null,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "1-7",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -4.373,
+      "matches": 7,
+      "rank_weight": 219,
+      "rank_overall": 1786,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 7,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34949049132",
-      "opponent_rank": 176,
-      "opponent_name": "Danny Delusant",
-      "method": "Fall 1:28"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34938496132",
-      "opponent_rank": 147,
-      "opponent_name": "Anthony Basile",
-      "method": "Fall 6:14"
+      "opponent_id": "34971917132",
+      "opponent_rank": 60,
+      "opponent_name": "Patrick Kelly",
+      "method": "Fall 2:28"
     }
   },
   "match_list": [
@@ -52,11 +54,11 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 149,
-      "opponent_rank": 79,
+      "opponent_rank": 60,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:28",
       "event": "Keystone Classic"
     },
     {
@@ -66,9 +68,9 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": 42,
+      "opponent_rank": 35,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-0",
       "duration": "6:44",
       "event": "Keystone Classic"
@@ -80,11 +82,11 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 45,
       "opponent_weight": 141,
-      "opponent_rank": 147,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:14",
       "event": "Shorty Hitchcock Memorial Open"
     },
     {
@@ -94,9 +96,9 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 149,
-      "opponent_rank": 117,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-2",
       "duration": "5:31",
       "event": "2025 Journeymen Collegiate Classic"
@@ -108,11 +110,11 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 149,
-      "opponent_rank": 96,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:45",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -122,11 +124,11 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 149,
-      "opponent_rank": 176,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:28",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -136,11 +138,11 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 149,
-      "opponent_rank": 91,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:57",
       "event": "Southeast Open"
     },
     {
@@ -150,11 +152,11 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 149,
-      "opponent_rank": 75,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:58",
       "event": "Southeast Open"
     }
   ]

@@ -6,10 +6,10 @@
   "team_rank": 75,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 149,
+  "current_rank": 73,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "2-4",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.123,
+      "matches": 6,
+      "rank_weight": 196,
+      "rank_overall": 1553,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34944357132",
-      "opponent_rank": 178,
-      "opponent_name": "Grant Reece",
-      "method": "MD 21-7"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34935699132",
-      "opponent_rank": 148,
-      "opponent_name": "Luca Felix",
-      "method": "Dec 1-0"
+      "opponent_id": "34937012132",
+      "opponent_rank": 72,
+      "opponent_name": "Carson Weber",
+      "method": "MD 12-3"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 149,
-      "opponent_rank": 148,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "1-0",
@@ -66,9 +68,9 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 149,
-      "opponent_rank": 134,
+      "opponent_rank": 72,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "7:00",
       "event": "Mountaineer Open"
@@ -80,7 +82,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 149,
-      "opponent_rank": 178,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "21-7",
@@ -94,7 +96,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 43,
       "opponent_weight": 149,
-      "opponent_rank": 137,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -108,7 +110,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 149,
-      "opponent_rank": 240,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "9-3",
@@ -122,7 +124,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 149,
-      "opponent_rank": 134,
+      "opponent_rank": 72,
       "result": "L",
       "method": "MD",
       "score": "12-3",

@@ -6,10 +6,10 @@
   "team_rank": 46,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 53,
+  "current_rank": null,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "4-2",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,27 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": -0.01,
+      "matches": 6,
+      "rank_weight": 86,
+      "rank_overall": 755,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 2,
+    "ranked_wins": 2,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34954509132",
-      "opponent_rank": 61,
+      "opponent_rank": 49,
       "opponent_name": "Ryan Luna",
       "method": "Fall 0:31"
     },
-    "worst_loss": {
-      "opponent_id": "34935699132",
-      "opponent_rank": 148,
-      "opponent_name": "Luca Felix",
-      "method": "Dec 4-2"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +54,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 141,
-      "opponent_rank": 98,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "9-5",
@@ -66,7 +68,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 141,
-      "opponent_rank": 92,
+      "opponent_rank": 61,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -80,11 +82,11 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 141,
-      "opponent_rank": 222,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:54",
       "event": "Mountaineer Open"
     },
     {
@@ -94,11 +96,11 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 141,
-      "opponent_rank": 61,
+      "opponent_rank": 49,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:31",
       "event": "Mountaineer Open"
     },
     {
@@ -108,7 +110,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 149,
-      "opponent_rank": 148,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -122,7 +124,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 149,
-      "opponent_rank": 90,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-3",

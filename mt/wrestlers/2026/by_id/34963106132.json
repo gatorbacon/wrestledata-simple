@@ -6,10 +6,10 @@
   "team_rank": 21,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 121,
+  "current_rank": null,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "2-4",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.483,
+      "matches": 6,
+      "rank_weight": 124,
+      "rank_overall": 1151,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34943969132",
-      "opponent_rank": 122,
-      "opponent_name": "Owen Uhls",
-      "method": "Fall 1:01"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34954145132",
-      "opponent_rank": 72,
+      "opponent_rank": 55,
       "opponent_name": "Riley Bower",
       "method": "Dec 8-3"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 29,
       "opponent_weight": 149,
-      "opponent_rank": 72,
+      "opponent_rank": 55,
       "result": "L",
       "method": "DEC",
       "score": "8-3",
@@ -80,7 +82,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 141,
-      "opponent_rank": 31,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "13-0",
@@ -94,11 +96,11 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 141,
-      "opponent_rank": 122,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:01",
       "event": "Tiger Style Invite"
     },
     {
@@ -122,7 +124,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 141,
-      "opponent_rank": 214,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "10-1",

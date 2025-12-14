@@ -9,7 +9,7 @@
   "current_rank": 5,
   "record": {
     "overall": "6-0",
-    "vs_ranked": "6-0",
+    "vs_ranked": "4-0",
     "vs_top10": "1-0",
     "vs_top25": "2-0"
   },
@@ -24,10 +24,17 @@
     "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 4,
+    "mat_value": {
+      "mv_avg": 6.598,
+      "matches": 6,
+      "rank_weight": 1,
+      "rank_overall": 2,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 1,
     "top10_losses": 0,
@@ -49,9 +56,9 @@
       "opponent_weight": 157,
       "opponent_rank": 8,
       "result": "W",
-      "method": "DEC",
+      "method": "INJ",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:40",
       "event": "vs. Penn State"
     },
     {
@@ -61,11 +68,11 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": 76,
+      "opponent_rank": 55,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:15",
       "event": "vs. Penn State"
     },
     {
@@ -75,11 +82,11 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 157,
-      "opponent_rank": 94,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:38",
       "event": "Black Knight Invite"
     },
     {
@@ -91,9 +98,9 @@
       "opponent_weight": 157,
       "opponent_rank": 16,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:29",
       "event": "Black Knight Invite"
     },
     {
@@ -103,11 +110,11 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 52,
       "opponent_weight": 157,
-      "opponent_rank": 28,
+      "opponent_rank": 27,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:37",
       "event": "Black Knight Invite"
     },
     {
@@ -117,7 +124,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 157,
-      "opponent_rank": 35,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "2-1",

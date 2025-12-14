@@ -6,7 +6,7 @@
   "team_rank": 60,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 158,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.289,
+      "matches": 1,
+      "rank_weight": 177,
+      "rank_overall": 2012,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34952973132",
-      "opponent_rank": 61,
+      "opponent_rank": 50,
       "opponent_name": "Marcus Petite",
       "method": "Fall 6:56"
     }
@@ -47,11 +54,11 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 49,
       "opponent_weight": 184,
-      "opponent_rank": 61,
+      "opponent_rank": 50,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:56",
       "event": "Clarion Open"
     }
   ]

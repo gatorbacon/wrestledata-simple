@@ -6,10 +6,10 @@
   "team_rank": 69,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 167,
+  "current_rank": null,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "2-6",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -4.212,
+      "matches": 5,
+      "rank_weight": 195,
+      "rank_overall": 1761,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 6,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34949312132",
-      "opponent_rank": 188,
-      "opponent_name": "Lucas Gutierrez",
-      "method": "Fall 2:49"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34935922132",
-      "opponent_rank": 150,
-      "opponent_name": "Adam Thomson",
-      "method": "TF 20-5 5:27"
+      "opponent_id": "34944785132",
+      "opponent_rank": 31,
+      "opponent_name": "Conner Harer",
+      "method": "TF 19-4 4:14"
     }
   },
   "match_list": [
@@ -52,9 +54,9 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 165,
-      "opponent_rank": 73,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:52",
       "event": "Keystone Classic"
@@ -66,9 +68,9 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 165,
-      "opponent_rank": 150,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-5",
       "duration": "5:27",
       "event": "Keystone Classic"
@@ -80,9 +82,9 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": 135,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "6:55",
       "event": "2025 Journeymen Collegiate Classic"
@@ -94,9 +96,9 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 165,
-      "opponent_rank": 125,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "5:55",
       "event": "2025 Journeymen Collegiate Classic"
@@ -108,11 +110,11 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 165,
-      "opponent_rank": 188,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:49",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -122,7 +124,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": 190,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "11-4",
@@ -136,7 +138,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 157,
-      "opponent_rank": 98,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-1",
@@ -150,9 +152,9 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": 33,
+      "opponent_rank": 31,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "4:14",
       "event": "Princeton Open"

@@ -6,10 +6,10 @@
   "team_rank": 8,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 45,
+  "current_rank": null,
   "record": {
     "overall": "6-2",
-    "vs_ranked": "6-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
@@ -20,22 +20,29 @@
     "si_plus": 111.5,
     "df_plus": 108.9,
     "apr_plus": 103.9,
-    "pin_rate": 0.667,
+    "pin_rate": 0.167,
     "bonus_rate": 0.667,
     "majors": 0,
-    "techs": 0,
-    "pins": 4
+    "techs": 3,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.862,
+      "matches": 8,
+      "rank_weight": 54,
+      "rank_overall": 493,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "34941788132",
-      "opponent_rank": 68,
-      "opponent_name": "e`Than Birden",
-      "method": "Dec 5-1"
+      "opponent_id": "34941688132",
+      "opponent_rank": 71,
+      "opponent_name": "Ryan Bolletino",
+      "method": "TF 16-0 5:12"
     },
     "worst_loss": {
       "opponent_id": "34935279132",
@@ -52,9 +59,9 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 165,
-      "opponent_rank": 110,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "7:00",
       "event": "Kent State Open 1"
@@ -66,7 +73,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 165,
-      "opponent_rank": 105,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-0",
@@ -80,7 +87,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 165,
-      "opponent_rank": 68,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-1",
@@ -108,9 +115,9 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 43,
       "opponent_weight": 174,
-      "opponent_rank": 117,
+      "opponent_rank": 71,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-0",
       "duration": "5:12",
       "event": "Southeast Open"
@@ -122,9 +129,9 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 67,
       "opponent_weight": 174,
-      "opponent_rank": 80,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "6:03",
       "event": "Southeast Open"
@@ -136,11 +143,11 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 174,
-      "opponent_rank": 116,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:46",
       "event": "Southeast Open"
     },
     {

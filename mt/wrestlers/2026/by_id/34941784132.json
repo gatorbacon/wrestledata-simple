@@ -6,10 +6,10 @@
   "team_rank": 2,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 177,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.649,
+      "matches": 5,
+      "rank_weight": 186,
+      "rank_overall": 1668,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34943847132",
-      "opponent_rank": 218,
-      "opponent_name": "Cael Miller",
-      "method": "Dec 8-6"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34934100132",
-      "opponent_rank": 108,
+      "opponent_rank": 67,
       "opponent_name": "Chandler Amaker",
       "method": "Dec 8-1"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 165,
-      "opponent_rank": 108,
+      "opponent_rank": 67,
       "result": "L",
       "method": "DEC",
       "score": "8-1",
@@ -66,7 +68,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 165,
-      "opponent_rank": 50,
+      "opponent_rank": 44,
       "result": "L",
       "method": "MD",
       "score": "12-2",
@@ -80,7 +82,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 165,
-      "opponent_rank": 218,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-6",
@@ -94,9 +96,9 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 165,
-      "opponent_rank": 62,
+      "opponent_rank": 49,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-3",
       "duration": "5:26",
       "event": "Clarion Open"
@@ -108,11 +110,11 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 165,
-      "opponent_rank": 68,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:22",
       "event": "Clarion Open"
     }
   ]

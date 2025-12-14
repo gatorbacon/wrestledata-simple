@@ -6,10 +6,10 @@
   "team_rank": 46,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 45,
+  "current_rank": 38,
   "record": {
     "overall": "7-2",
-    "vs_ranked": "7-2",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,29 +20,31 @@
     "si_plus": 120.5,
     "df_plus": 110.0,
     "apr_plus": 97.5,
-    "pin_rate": 0.429,
+    "pin_rate": 0.0,
     "bonus_rate": 0.857,
     "majors": 3,
-    "techs": 0,
-    "pins": 3
+    "techs": 3,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.409,
+      "matches": 8,
+      "rank_weight": 21,
+      "rank_overall": 203,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
-    "ranked_losses": 2,
+    "ranked_wins": 2,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34946230132",
-      "opponent_rank": 46,
+      "opponent_rank": 39,
       "opponent_name": "Jacob Silka",
       "method": "Dec 7-2"
     },
-    "worst_loss": {
-      "opponent_id": "34946238132",
-      "opponent_rank": 48,
-      "opponent_name": "Kyrel Leavell",
-      "method": "Dec 13-8"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +54,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 157,
-      "opponent_rank": 129,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "12-3",
@@ -66,7 +68,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 57,
       "opponent_weight": 157,
-      "opponent_rank": 173,
+      "opponent_rank": 77,
       "result": "W",
       "method": "MD",
       "score": "14-4",
@@ -80,9 +82,9 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 157,
-      "opponent_rank": 101,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "7:00",
       "event": "Southeast Open"
@@ -94,9 +96,9 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 157,
-      "opponent_rank": 157,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-5",
       "duration": "6:15",
       "event": "Southeast Open"
@@ -108,9 +110,9 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 157,
-      "opponent_rank": 162,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-3",
       "duration": "5:20",
       "event": "Southeast Open"
@@ -122,7 +124,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": 46,
+      "opponent_rank": 39,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -136,7 +138,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 157,
-      "opponent_rank": 102,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "12-2",
@@ -150,7 +152,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": 47,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -164,7 +166,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "13-8",

@@ -9,7 +9,7 @@
   "current_rank": 23,
   "record": {
     "overall": "7-4",
-    "vs_ranked": "7-4",
+    "vs_ranked": "4-4",
     "vs_top10": "0-2",
     "vs_top25": "0-4"
   },
@@ -24,10 +24,17 @@
     "bonus_rate": 0.143,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.476,
+      "matches": 11,
+      "rank_weight": 64,
+      "rank_overall": 600,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 4,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 2,
@@ -52,7 +59,7 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 141,
-      "opponent_rank": 47,
+      "opponent_rank": 41,
       "result": "W",
       "method": "MD",
       "score": "11-3",
@@ -68,7 +75,7 @@
       "opponent_weight": 141,
       "opponent_rank": 3,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:40",
       "event": "vs. Nebraska"
@@ -94,7 +101,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 141,
-      "opponent_rank": 186,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-1",
@@ -122,7 +129,7 @@
       "opponent_team": "Little Rock",
       "opponent_team_rank": 12,
       "opponent_weight": 141,
-      "opponent_rank": 130,
+      "opponent_rank": 72,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -136,7 +143,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 14,
       "opponent_weight": 141,
-      "opponent_rank": 174,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-1",
@@ -164,7 +171,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 141,
-      "opponent_rank": 214,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "13-6",

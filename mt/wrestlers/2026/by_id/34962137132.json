@@ -6,10 +6,10 @@
   "team_rank": 64,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": 40,
+  "current_rank": 42,
   "record": {
     "overall": "1-3",
-    "vs_ranked": "1-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-3"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.283,
+      "matches": 4,
+      "rank_weight": 80,
+      "rank_overall": 822,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 0,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34945150132",
-      "opponent_rank": 46,
-      "opponent_name": "Isaiah Quintero",
-      "method": "Dec 2-0"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34936034132",
-      "opponent_rank": 17,
-      "opponent_name": "Koda Holeman",
-      "method": "MD 11-3"
+      "opponent_id": "34955398132",
+      "opponent_rank": 25,
+      "opponent_name": "Blake West",
+      "method": "Dec 6-2"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 23,
       "opponent_weight": 125,
-      "opponent_rank": 14,
+      "opponent_rank": 12,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -66,7 +68,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 125,
-      "opponent_rank": 15,
+      "opponent_rank": 25,
       "result": "L",
       "method": "DEC",
       "score": "6-2",
@@ -80,7 +82,7 @@
       "opponent_team": "Cal Poly",
       "opponent_team_rank": 32,
       "opponent_weight": 125,
-      "opponent_rank": 17,
+      "opponent_rank": 15,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -94,7 +96,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 125,
-      "opponent_rank": 46,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "2-0",

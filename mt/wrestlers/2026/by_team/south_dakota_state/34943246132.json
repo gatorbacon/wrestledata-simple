@@ -6,10 +6,10 @@
   "team_rank": 28,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 165,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.293,
+      "matches": 3,
+      "rank_weight": 167,
+      "rank_overall": 1912,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34935631132",
-      "opponent_rank": 155,
-      "opponent_name": "Marco Christiansen",
-      "method": "MD 11-1"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34934632132",
-      "opponent_rank": 150,
-      "opponent_name": "Ben Schultz",
-      "method": "Fall 2:24"
+      "opponent_id": "34934626132",
+      "opponent_rank": 39,
+      "opponent_name": "Devin Wasley",
+      "method": "Fall 3:47"
     }
   },
   "match_list": [
@@ -52,9 +54,9 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 197,
-      "opponent_rank": 43,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "3:48",
       "event": "Warren Williamson Daktronics Invitational"
@@ -66,11 +68,11 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 197,
-      "opponent_rank": 42,
+      "opponent_rank": 39,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:47",
       "event": "Warren Williamson Daktronics Invitational"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 197,
-      "opponent_rank": 132,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -94,7 +96,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 184,
-      "opponent_rank": 155,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-1",
@@ -108,11 +110,11 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 184,
-      "opponent_rank": 150,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:24",
       "event": "Bison Open 2025"
     }
   ]

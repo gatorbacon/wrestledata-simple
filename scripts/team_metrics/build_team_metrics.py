@@ -393,6 +393,9 @@ def compute_team_metrics(
     top10_win_pct = (total_top10_wins / total_top10_matches) if total_top10_matches > 0 else None
     top33_win_pct = (total_top33_wins / total_top33_matches) if total_top33_matches > 0 else None
     
+    total_losses = total_matches - total_wins
+    win_pct = (total_wins / total_matches) if total_matches > 0 else None
+    
     return {
         "avg_pf7": round(avg_pf7, 2),
         "avg_pa7": round(avg_pa7, 2),
@@ -407,6 +410,8 @@ def compute_team_metrics(
         "apr_plus": round(apr_plus, 1),
         "total_matches": total_matches,
         "total_wins": total_wins,
+        "total_losses": total_losses,
+        "win_pct": round(win_pct, 3) if win_pct is not None else None,
         "wrestlers_included": len(wrestler_metrics),
     }
 
@@ -551,6 +556,8 @@ def main() -> None:
             "counts": {
                 "matches_included": team_metrics["total_matches"],
                 "wins_included": team_metrics["total_wins"],
+                "losses_included": team_metrics["total_losses"],
+                "win_pct": team_metrics["win_pct"],
                 "wrestlers_included": team_metrics["wrestlers_included"],
                 "starters_mode": "ranking_files_with_overrides",
             },

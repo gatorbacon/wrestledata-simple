@@ -6,10 +6,10 @@
   "team_rank": 16,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 104,
+  "current_rank": null,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "3-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,29 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.112,
+      "matches": 4,
+      "rank_weight": 92,
+      "rank_overall": 1046,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "34952690132",
-      "opponent_rank": 61,
-      "opponent_name": "Richie Grungo",
-      "method": "M. For."
+      "opponent_id": "34957115132",
+      "opponent_rank": 66,
+      "opponent_name": "Hunter Hohman",
+      "method": "Dec 7-3"
     },
     "worst_loss": {
       "opponent_id": "34934123132",
-      "opponent_rank": 43,
+      "opponent_rank": 36,
       "opponent_name": "Luca Augustine",
       "method": "TF 20-5 7:00"
     }
@@ -54,9 +61,9 @@
       "opponent_weight": 174,
       "opponent_rank": 1,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:15",
       "event": "vs. Penn State"
     },
     {
@@ -66,9 +73,9 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 174,
-      "opponent_rank": 43,
+      "opponent_rank": 36,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-5",
       "duration": "7:00",
       "event": "vs. Lehigh"
@@ -80,7 +87,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 174,
-      "opponent_rank": 105,
+      "opponent_rank": 66,
       "result": "W",
       "method": "DEC",
       "score": "7-3",
@@ -94,7 +101,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 174,
-      "opponent_rank": 61,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -108,7 +115,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 174,
-      "opponent_rank": 114,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "10-6",

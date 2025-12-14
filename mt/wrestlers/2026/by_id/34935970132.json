@@ -6,10 +6,10 @@
   "team_rank": 56,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 156,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.378,
+      "matches": 4,
+      "rank_weight": 130,
+      "rank_overall": 1129,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34936200132",
-      "opponent_rank": 166,
-      "opponent_name": "Cael Raines",
-      "method": "Dec 6-2"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34955056132",
-      "opponent_rank": 125,
-      "opponent_name": "Nathan Rickards",
-      "method": "Dec 4-1"
+      "opponent_id": "34957108132",
+      "opponent_rank": 51,
+      "opponent_name": "Kaden Milheim",
+      "method": "MD 9-1"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 48,
       "opponent_weight": 157,
-      "opponent_rank": 67,
+      "opponent_rank": 51,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -66,7 +68,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": 166,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-2",
@@ -80,11 +82,11 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 29,
       "opponent_weight": 157,
-      "opponent_rank": 198,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:32",
       "event": "Lock Haven Open I"
     },
     {
@@ -94,7 +96,7 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 47,
       "opponent_weight": 157,
-      "opponent_rank": 125,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-1",

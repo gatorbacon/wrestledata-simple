@@ -6,10 +6,10 @@
   "team_rank": 76,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": 121,
+  "current_rank": null,
   "record": {
     "overall": "3-6",
-    "vs_ranked": "3-6",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.616,
+      "matches": 8,
+      "rank_weight": 128,
+      "rank_overall": 1437,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 0,
     "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34964378132",
-      "opponent_rank": 122,
-      "opponent_name": "Evan Canoyer",
-      "method": "M. For."
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34935057132",
-      "opponent_rank": 84,
+      "opponent_rank": 59,
       "opponent_name": "Eric Alderfer",
       "method": "Fall 6:30"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 174,
-      "opponent_rank": 42,
+      "opponent_rank": 35,
       "result": "L",
       "method": "DEC",
       "score": "7-2",
@@ -68,7 +70,7 @@
       "opponent_weight": 174,
       "opponent_rank": 12,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-5",
       "duration": "5:18",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -80,7 +82,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 174,
-      "opponent_rank": 146,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-0",
@@ -94,11 +96,11 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 174,
-      "opponent_rank": 84,
+      "opponent_rank": 59,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:30",
       "event": "Big Red Invitational"
     },
     {
@@ -108,7 +110,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 174,
-      "opponent_rank": 122,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -122,7 +124,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 174,
-      "opponent_rank": 199,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "13-0",
@@ -136,7 +138,7 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 67,
       "opponent_weight": 174,
-      "opponent_rank": 66,
+      "opponent_rank": 49,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -150,7 +152,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 174,
-      "opponent_rank": 74,
+      "opponent_rank": 53,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -164,7 +166,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 174,
-      "opponent_rank": 45,
+      "opponent_rank": 38,
       "result": "L",
       "method": "DEC",
       "score": "5-4",

@@ -6,10 +6,10 @@
   "team_rank": 77,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 48,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.893,
+      "matches": 4,
+      "rank_weight": 58,
+      "rank_overall": 487,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34943155132",
-      "opponent_rank": 45,
+      "opponent_rank": 38,
       "opponent_name": "Laird Root",
       "method": "Dec 13-8"
     },
     "worst_loss": {
-      "opponent_id": "34943157132",
-      "opponent_rank": 47,
-      "opponent_name": "Joey Showalter",
-      "method": "Dec 8-2"
+      "opponent_id": "34957589132",
+      "opponent_rank": 32,
+      "opponent_name": "Kal Miller",
+      "method": "Dec 4-2"
     }
   },
   "match_list": [
@@ -52,11 +59,11 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 157,
-      "opponent_rank": 201,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:30",
       "event": "Southeast Open"
     },
     {
@@ -66,7 +73,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 157,
-      "opponent_rank": 34,
+      "opponent_rank": 32,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -80,7 +87,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": 45,
+      "opponent_rank": 38,
       "result": "W",
       "method": "DEC",
       "score": "13-8",
@@ -94,7 +101,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": 47,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-2",

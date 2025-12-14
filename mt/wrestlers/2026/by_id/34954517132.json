@@ -6,10 +6,10 @@
   "team_rank": 75,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 68,
+  "current_rank": 51,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "3-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,22 +24,29 @@
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.902,
+      "matches": 4,
+      "rank_weight": 53,
+      "rank_overall": 484,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34950400132",
-      "opponent_rank": 74,
-      "opponent_name": "Kwasi Bonsu",
-      "method": "Dec 12-5"
+      "opponent_id": "34948090132",
+      "opponent_rank": 75,
+      "opponent_name": "Brycen Arthur",
+      "method": "Dec 8-1"
     },
     "worst_loss": {
       "opponent_id": "34944360132",
-      "opponent_rank": 54,
+      "opponent_rank": 42,
       "opponent_name": "Stephan Monchery",
       "method": "Dec 9-2"
     }
@@ -52,11 +59,11 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 285,
-      "opponent_rank": 170,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:08",
       "event": "Mountaineer Open"
     },
     {
@@ -66,7 +73,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 285,
-      "opponent_rank": 54,
+      "opponent_rank": 42,
       "result": "L",
       "method": "DEC",
       "score": "9-2",
@@ -80,7 +87,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 285,
-      "opponent_rank": 74,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "12-5",
@@ -94,7 +101,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 43,
       "opponent_weight": 285,
-      "opponent_rank": 171,
+      "opponent_rank": 75,
       "result": "W",
       "method": "DEC",
       "score": "8-1",

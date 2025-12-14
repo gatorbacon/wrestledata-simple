@@ -6,10 +6,10 @@
   "team_rank": 14,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 31,
+  "current_rank": null,
   "record": {
     "overall": "4-0",
-    "vs_ranked": "4-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,16 +24,23 @@
     "bonus_rate": 0.25,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.068,
+      "matches": 4,
+      "rank_weight": 14,
+      "rank_overall": 117,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34943742132",
-      "opponent_rank": 33,
+      "opponent_rank": 31,
       "opponent_name": "Shay Addison",
       "method": "Dec 8-5"
     },
@@ -47,7 +54,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 184,
-      "opponent_rank": 33,
+      "opponent_rank": 31,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -61,7 +68,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 184,
-      "opponent_rank": 87,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-3",
@@ -75,7 +82,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 184,
-      "opponent_rank": 93,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "17-4",
@@ -89,7 +96,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 184,
-      "opponent_rank": 43,
+      "opponent_rank": 39,
       "result": "W",
       "method": "DEC",
       "score": "4-2",

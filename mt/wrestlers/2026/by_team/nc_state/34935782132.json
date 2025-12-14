@@ -6,10 +6,10 @@
   "team_rank": 6,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 81,
+  "current_rank": null,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "2-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,16 +24,23 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.26,
+      "matches": 2,
+      "rank_weight": 11,
+      "rank_overall": 93,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34933369132",
-      "opponent_rank": 103,
+      "opponent_rank": 62,
       "opponent_name": "Frank DiBella",
       "method": "MD 11-2"
     },
@@ -47,7 +54,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 157,
-      "opponent_rank": 104,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-4",
@@ -61,7 +68,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 18,
       "opponent_weight": 157,
-      "opponent_rank": 103,
+      "opponent_rank": 62,
       "result": "W",
       "method": "MD",
       "score": "11-2",

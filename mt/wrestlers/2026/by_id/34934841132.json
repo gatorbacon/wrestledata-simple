@@ -6,10 +6,10 @@
   "team_rank": 42,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 66,
+  "current_rank": 52,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "2-6",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.935,
+      "matches": 8,
+      "rank_weight": 133,
+      "rank_overall": 1510,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 6,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34948513132",
-      "opponent_rank": 68,
+      "opponent_rank": 54,
       "opponent_name": "Thomas Sandoval",
       "method": "TB-2 (RT) 2-1"
     },
     "worst_loss": {
-      "opponent_id": "34935698132",
-      "opponent_rank": 130,
-      "opponent_name": "Rylan Breen",
-      "method": "Inj. 5:00"
+      "opponent_id": "34935968132",
+      "opponent_rank": 51,
+      "opponent_name": "Cole Bartram",
+      "method": "Dec 8-2"
     }
   },
   "match_list": [
@@ -52,11 +59,11 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 184,
-      "opponent_rank": 130,
+      "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "INJ",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:00",
       "event": "A Better Way Athletics Patriot Open"
     },
     {
@@ -66,9 +73,9 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 184,
-      "opponent_rank": 24,
+      "opponent_rank": 23,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-0",
       "duration": "3:38",
       "event": "vs. West Virginia"
@@ -80,7 +87,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 184,
-      "opponent_rank": 43,
+      "opponent_rank": 39,
       "result": "L",
       "method": "MD",
       "score": "16-3",
@@ -94,7 +101,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 184,
-      "opponent_rank": 22,
+      "opponent_rank": 21,
       "result": "L",
       "method": "DEC",
       "score": "10-3",
@@ -108,7 +115,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 184,
-      "opponent_rank": 68,
+      "opponent_rank": 54,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -122,11 +129,11 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 16,
       "opponent_weight": 184,
-      "opponent_rank": 64,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:11",
       "event": "Princeton Open"
     },
     {
@@ -136,7 +143,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 184,
-      "opponent_rank": 63,
+      "opponent_rank": 51,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -150,7 +157,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 184,
-      "opponent_rank": 177,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-2",

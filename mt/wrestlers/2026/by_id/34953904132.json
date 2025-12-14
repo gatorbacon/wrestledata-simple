@@ -6,12 +6,12 @@
   "team_rank": 71,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 75,
+  "current_rank": 59,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "2-5",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 6.72,
@@ -24,24 +24,31 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.985,
+      "matches": 7,
+      "rank_weight": 107,
+      "rank_overall": 1278,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34934314132",
-      "opponent_rank": 85,
-      "opponent_name": "Eli Pack",
-      "method": "Dec 6-0"
+      "opponent_id": "34934449132",
+      "opponent_rank": 72,
+      "opponent_name": "RJ Moore",
+      "method": "MD 12-1"
     },
     "worst_loss": {
-      "opponent_id": "34934339132",
-      "opponent_rank": 48,
-      "opponent_name": "Reid Schroeder",
-      "method": "Dec 9-7"
+      "opponent_id": "34943388132",
+      "opponent_rank": 43,
+      "opponent_name": "Adam Haselius",
+      "method": "Fall 4:46"
     }
   },
   "match_list": [
@@ -52,9 +59,9 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 197,
-      "opponent_rank": 28,
+      "opponent_rank": 26,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "6:22",
       "event": "vs. LIU"
@@ -68,9 +75,9 @@
       "opponent_weight": 197,
       "opponent_rank": 12,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:18",
       "event": "vs. Missouri"
     },
     {
@@ -80,7 +87,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 197,
-      "opponent_rank": 85,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-0",
@@ -94,7 +101,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 197,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "9-7",
@@ -108,11 +115,11 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 197,
-      "opponent_rank": 47,
+      "opponent_rank": 43,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:46",
       "event": "Black Knight Invite"
     },
     {
@@ -122,7 +129,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 197,
-      "opponent_rank": 114,
+      "opponent_rank": 72,
       "result": "W",
       "method": "MD",
       "score": "12-1",
@@ -136,9 +143,9 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 72,
       "opponent_weight": 197,
-      "opponent_rank": 26,
+      "opponent_rank": 24,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-3",
       "duration": "5:00",
       "event": "vs. Michigan State"

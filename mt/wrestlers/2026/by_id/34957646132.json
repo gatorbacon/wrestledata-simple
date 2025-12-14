@@ -6,10 +6,10 @@
   "team_rank": 25,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 221,
+  "current_rank": null,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-5",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.851,
+      "matches": 5,
+      "rank_weight": 192,
+      "rank_overall": 1702,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34934126132",
-      "opponent_rank": 175,
-      "opponent_name": "Jack Pletcher",
-      "method": "SV-3 8-5"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,7 +49,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 157,
-      "opponent_rank": 101,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-4",
@@ -61,7 +63,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 157,
-      "opponent_rank": 87,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-4",
@@ -75,7 +77,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 157,
-      "opponent_rank": 175,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "8-5",
@@ -89,7 +91,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 37,
       "opponent_weight": 157,
-      "opponent_rank": 60,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "12-3",
@@ -103,7 +105,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 157,
-      "opponent_rank": 104,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "17-3",

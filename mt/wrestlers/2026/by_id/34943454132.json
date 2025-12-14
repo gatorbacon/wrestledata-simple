@@ -6,10 +6,10 @@
   "team_rank": 19,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 133,
+  "current_rank": null,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "3-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.667,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.956,
+      "matches": 4,
+      "rank_weight": 45,
+      "rank_overall": 464,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34943306132",
-      "opponent_rank": 172,
-      "opponent_name": "Christian Smoot",
-      "method": "MD 16-4"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34936105132",
-      "opponent_rank": 17,
+      "opponent_rank": 16,
       "opponent_name": "Ceasar Garza",
       "method": "Dec 11-6"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "Cal Poly",
       "opponent_team_rank": 32,
       "opponent_weight": 184,
-      "opponent_rank": 183,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-2",
@@ -66,7 +68,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 65,
       "opponent_weight": 184,
-      "opponent_rank": 184,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "14-2",
@@ -80,7 +82,7 @@
       "opponent_team": "Cal Poly",
       "opponent_team_rank": 32,
       "opponent_weight": 184,
-      "opponent_rank": 17,
+      "opponent_rank": 16,
       "result": "L",
       "method": "DEC",
       "score": "11-6",
@@ -94,7 +96,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 30,
       "opponent_weight": 184,
-      "opponent_rank": 172,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "16-4",

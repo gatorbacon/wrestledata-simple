@@ -6,10 +6,10 @@
   "team_rank": 9,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": 113,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "1-1"
   },
@@ -24,11 +24,18 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.312,
+      "matches": 3,
+      "rank_weight": 99,
+      "rank_overall": 1106,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -38,10 +45,10 @@
       "method": "M. For."
     },
     "worst_loss": {
-      "opponent_id": "34943974132",
-      "opponent_rank": 56,
-      "opponent_name": "Logan Cole",
-      "method": "MD 16-6"
+      "opponent_id": "34936416132",
+      "opponent_rank": 19,
+      "opponent_name": "Zack Ryder",
+      "method": "TF 16-0 1:58"
     }
   },
   "match_list": [
@@ -52,11 +59,11 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 57,
       "opponent_weight": 184,
-      "opponent_rank": 128,
+      "opponent_rank": 75,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "3:31",
       "event": "Cougar Clash"
     },
     {
@@ -66,9 +73,9 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 184,
-      "opponent_rank": 20,
+      "opponent_rank": 19,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-0",
       "duration": "1:58",
       "event": "Cougar Clash"
@@ -80,7 +87,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 184,
-      "opponent_rank": 56,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "16-6",

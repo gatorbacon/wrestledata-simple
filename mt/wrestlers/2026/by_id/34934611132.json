@@ -6,10 +6,10 @@
   "team_rank": 74,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 122,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.497,
+      "matches": 5,
+      "rank_weight": 139,
+      "rank_overall": 1637,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934627132",
-      "opponent_rank": 132,
-      "opponent_name": "Bradley Whitright",
-      "method": "Dec 6-2"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34943248132",
-      "opponent_rank": 102,
-      "opponent_name": "Quin Morgan",
-      "method": "Fall 4:49"
+      "opponent_id": "34934626132",
+      "opponent_rank": 39,
+      "opponent_name": "Devin Wasley",
+      "method": "MD 14-4"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 197,
-      "opponent_rank": 43,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "12-7",
@@ -66,11 +68,11 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 28,
       "opponent_weight": 197,
-      "opponent_rank": 102,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:49",
       "event": "Warren Williamson Daktronics Invitational"
     },
     {
@@ -80,7 +82,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 197,
-      "opponent_rank": 132,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-2",
@@ -94,9 +96,9 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 197,
-      "opponent_rank": 32,
+      "opponent_rank": 30,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:33",
       "event": "Bison Open 2025"
@@ -108,7 +110,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 197,
-      "opponent_rank": 42,
+      "opponent_rank": 39,
       "result": "L",
       "method": "MD",
       "score": "14-4",

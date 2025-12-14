@@ -6,10 +6,10 @@
   "team_rank": 15,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 225,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,22 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.696,
+      "matches": 2,
+      "rank_weight": 208,
+      "rank_overall": 1961,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34936411132",
-      "opponent_rank": 195,
-      "opponent_name": "JJ McComas",
-      "method": "Dec 13-10"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -47,7 +49,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 57,
       "opponent_weight": 141,
-      "opponent_rank": 150,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "6-0",
@@ -61,7 +63,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 141,
-      "opponent_rank": 195,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "13-10",

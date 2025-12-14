@@ -6,7 +6,7 @@
   "team_rank": 17,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 146,
+  "current_rank": null,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.493,
+      "matches": 2,
+      "rank_weight": 138,
+      "rank_overall": 1635,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +41,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34935678132",
-      "opponent_rank": 106,
+      "opponent_rank": 71,
       "opponent_name": "Martin Cosgrove",
       "method": "Dec 5-3"
     }
@@ -47,7 +54,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 56,
       "opponent_weight": 197,
-      "opponent_rank": 52,
+      "opponent_rank": 45,
       "result": "L",
       "method": "DEC",
       "score": "6-0",
@@ -61,7 +68,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 197,
-      "opponent_rank": 106,
+      "opponent_rank": 71,
       "result": "L",
       "method": "DEC",
       "score": "5-3",

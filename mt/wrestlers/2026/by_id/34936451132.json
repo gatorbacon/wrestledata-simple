@@ -6,7 +6,7 @@
   "team_rank": 5,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 235,
+  "current_rank": null,
   "record": {
     "overall": "2-1",
     "vs_ranked": "2-1",
@@ -24,7 +24,14 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 4.317,
+      "matches": 3,
+      "rank_weight": 3,
+      "rank_overall": 33,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,7 +40,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34948516132",
-      "opponent_rank": 31,
+      "opponent_rank": 27,
       "opponent_name": "Max Norman",
       "method": "Fall 2:21"
     },
@@ -52,11 +59,11 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 165,
-      "opponent_rank": 31,
+      "opponent_rank": 27,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "2:21",
       "event": "Cougar Clash"
     },
     {
@@ -80,11 +87,11 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 165,
-      "opponent_rank": 34,
+      "opponent_rank": 30,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:33",
       "event": "Cougar Clash"
     }
   ]

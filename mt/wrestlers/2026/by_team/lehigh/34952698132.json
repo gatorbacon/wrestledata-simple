@@ -6,10 +6,10 @@
   "team_rank": 16,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 65,
+  "current_rank": null,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "1-5",
+    "vs_ranked": "1-4",
     "vs_top10": "0-3",
     "vs_top25": "0-3"
   },
@@ -24,24 +24,31 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.185,
+      "matches": 6,
+      "rank_weight": 102,
+      "rank_overall": 1069,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35050773132",
-      "opponent_rank": 71,
+      "opponent_rank": 52,
       "opponent_name": "Aiden Allen",
       "method": "MD 13-4"
     },
     "worst_loss": {
-      "opponent_id": "34935630132",
-      "opponent_rank": 59,
-      "opponent_name": "Omar Ayoub",
-      "method": "MD 11-2"
+      "opponent_id": "34934144132",
+      "opponent_rank": 27,
+      "opponent_name": "Evan Tallmadge",
+      "method": "Dec 9-5"
     }
   },
   "match_list": [
@@ -54,7 +61,7 @@
       "opponent_weight": 133,
       "opponent_rank": 5,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:37",
       "event": "vs. Penn State"
@@ -66,7 +73,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 133,
-      "opponent_rank": 29,
+      "opponent_rank": 27,
       "result": "L",
       "method": "DEC",
       "score": "9-5",
@@ -82,7 +89,7 @@
       "opponent_weight": 133,
       "opponent_rank": 6,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-6",
       "duration": "5:00",
       "event": "vs. Lehigh"
@@ -96,7 +103,7 @@
       "opponent_weight": 133,
       "opponent_rank": 1,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-4",
       "duration": "6:31",
       "event": "vs. Lehigh"
@@ -108,7 +115,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 133,
-      "opponent_rank": 59,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-2",
@@ -122,7 +129,7 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 47,
       "opponent_weight": 133,
-      "opponent_rank": 71,
+      "opponent_rank": 52,
       "result": "W",
       "method": "MD",
       "score": "13-4",

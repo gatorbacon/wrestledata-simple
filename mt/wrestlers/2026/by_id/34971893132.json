@@ -6,10 +6,10 @@
   "team_rank": 44,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 151,
+  "current_rank": null,
   "record": {
     "overall": "3-6",
-    "vs_ranked": "3-6",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.086,
+      "matches": 9,
+      "rank_weight": 150,
+      "rank_overall": 1315,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 6,
+    "ranked_wins": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34954156132",
-      "opponent_rank": 171,
-      "opponent_name": "Brian Shindel",
-      "method": "Dec 8-7"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34944345132",
-      "opponent_rank": 101,
-      "opponent_name": "Kai O`Dell",
-      "method": "Dec 5-3"
+      "opponent_id": "34947803132",
+      "opponent_rank": 50,
+      "opponent_name": "Fin Nadeau",
+      "method": "Dec 9-5"
     }
   },
   "match_list": [
@@ -52,7 +54,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 157,
-      "opponent_rank": 101,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-3",
@@ -66,7 +68,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": 238,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "18-6",
@@ -80,7 +82,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 157,
-      "opponent_rank": 87,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "13-3",
@@ -94,7 +96,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 29,
       "opponent_weight": 157,
-      "opponent_rank": 171,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-7",
@@ -108,9 +110,9 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": 88,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "22-6",
       "duration": "6:27",
       "event": "Shorty Hitchcock Memorial Open"
@@ -122,7 +124,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 157,
-      "opponent_rank": 216,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "9-5",
@@ -136,7 +138,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 157,
-      "opponent_rank": 34,
+      "opponent_rank": 32,
       "result": "L",
       "method": "MD",
       "score": "9-0",
@@ -150,7 +152,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 157,
-      "opponent_rank": 66,
+      "opponent_rank": 50,
       "result": "L",
       "method": "DEC",
       "score": "9-5",

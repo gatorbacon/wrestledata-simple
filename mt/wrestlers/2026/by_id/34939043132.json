@@ -6,10 +6,10 @@
   "team_rank": 1,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": 84,
+  "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,27 +20,34 @@
     "si_plus": 158.0,
     "df_plus": 111.1,
     "apr_plus": 97.0,
-    "pin_rate": 1.0,
+    "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 5.428,
+      "matches": 1,
+      "rank_weight": 2,
+      "rank_overall": 4,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34935553132",
-      "opponent_rank": 85,
+      "opponent_rank": 62,
       "opponent_name": "Billy Meiszner",
       "method": "TF 19-4 5:22"
     },
     "worst_loss": {
-      "opponent_id": "34943406132",
-      "opponent_rank": 87,
-      "opponent_name": "Marco Frinzi",
+      "opponent_id": "34943381132",
+      "opponent_rank": 53,
+      "opponent_name": "Richard Fedalen",
       "method": "M. For."
     }
   },
@@ -52,9 +59,9 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 52,
       "opponent_weight": 149,
-      "opponent_rank": 85,
+      "opponent_rank": 62,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "5:22",
       "event": "Black Knight Invite"
@@ -66,7 +73,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 149,
-      "opponent_rank": 68,
+      "opponent_rank": 53,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -80,7 +87,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 50,
       "opponent_weight": 149,
-      "opponent_rank": 87,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": null,

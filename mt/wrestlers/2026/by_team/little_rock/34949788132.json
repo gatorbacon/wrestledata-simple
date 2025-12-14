@@ -6,12 +6,12 @@
   "team_rank": 12,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 167,
+  "current_rank": null,
   "record": {
     "overall": "1-6",
-    "vs_ranked": "1-6",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 3.07,
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.391,
+      "matches": 7,
+      "rank_weight": 157,
+      "rank_overall": 1608,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_wins": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34941559132",
-      "opponent_rank": 84,
-      "opponent_name": "Porter Matecki",
-      "method": "Dec 6-1"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34936406132",
-      "opponent_rank": 166,
-      "opponent_name": "Sam Smith",
-      "method": "Dec 11-6"
+      "opponent_id": "34941545132",
+      "opponent_rank": 33,
+      "opponent_name": "Marcel Lopez",
+      "method": "Dec 4-1"
     }
   },
   "match_list": [
@@ -54,9 +56,9 @@
       "opponent_weight": 133,
       "opponent_rank": 11,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:51",
       "event": "Cougar Clash"
     },
     {
@@ -66,7 +68,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 133,
-      "opponent_rank": 84,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-1",
@@ -80,7 +82,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 133,
-      "opponent_rank": 39,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -94,7 +96,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 133,
-      "opponent_rank": 166,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "11-6",
@@ -108,9 +110,9 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 133,
-      "opponent_rank": 28,
+      "opponent_rank": 26,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-1",
       "duration": "2:54",
       "event": "vs. Missouri"
@@ -122,7 +124,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 20,
       "opponent_weight": 133,
-      "opponent_rank": 27,
+      "opponent_rank": 25,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -136,7 +138,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 21,
       "opponent_weight": 133,
-      "opponent_rank": 157,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-1",

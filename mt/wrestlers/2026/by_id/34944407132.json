@@ -6,10 +6,10 @@
   "team_rank": 43,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 149,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,29 +20,26 @@
     "si_plus": 88.2,
     "df_plus": 101.8,
     "apr_plus": 95.7,
-    "pin_rate": 0.5,
+    "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.094,
+      "matches": 4,
+      "rank_weight": 141,
+      "rank_overall": 1320,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34939082132",
-      "opponent_rank": 188,
-      "opponent_name": "James Palmer",
-      "method": "TF 18-3 3:22"
-    },
-    "worst_loss": {
-      "opponent_id": "34936993132",
-      "opponent_rank": 124,
-      "opponent_name": "Austin Mckee",
-      "method": "MD 12-3"
-    }
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +49,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 41,
       "opponent_weight": 141,
-      "opponent_rank": 124,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "12-3",
@@ -66,7 +63,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 141,
-      "opponent_rank": 99,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-3",
@@ -80,9 +77,9 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 141,
-      "opponent_rank": 188,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "18-3",
       "duration": "3:22",
       "event": "Southeast Open"
@@ -94,7 +91,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 34,
       "opponent_weight": 141,
-      "opponent_rank": 218,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",

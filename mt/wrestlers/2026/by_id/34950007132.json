@@ -6,10 +6,10 @@
   "team_rank": 76,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 163,
+  "current_rank": null,
   "record": {
     "overall": "1-3",
-    "vs_ranked": "1-3",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,24 +24,26 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.751,
+      "matches": 4,
+      "rank_weight": 185,
+      "rank_overall": 1846,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_wins": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34949060132",
-      "opponent_rank": 194,
-      "opponent_name": "Anthony Samuels",
-      "method": "Dec 7-3"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34949343132",
-      "opponent_rank": 144,
-      "opponent_name": "John Sheehy",
-      "method": "TF 16-0 4:43"
+      "opponent_id": "34938621132",
+      "opponent_rank": 44,
+      "opponent_name": "Joey Fischer",
+      "method": "TF 17-1 4:54"
     }
   },
   "match_list": [
@@ -52,9 +54,9 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 133,
-      "opponent_rank": 107,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-3",
       "duration": "6:23",
       "event": "Big Red Invitational"
@@ -66,9 +68,9 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 133,
-      "opponent_rank": 56,
+      "opponent_rank": 44,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-1",
       "duration": "4:54",
       "event": "Big Red Invitational"
@@ -80,7 +82,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 133,
-      "opponent_rank": 194,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-3",
@@ -94,9 +96,9 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 133,
-      "opponent_rank": 144,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-0",
       "duration": "4:43",
       "event": "Big Red Invitational"

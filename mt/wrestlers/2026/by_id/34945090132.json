@@ -9,7 +9,7 @@
   "current_rank": 4,
   "record": {
     "overall": "8-0",
-    "vs_ranked": "8-0",
+    "vs_ranked": "4-0",
     "vs_top10": "1-0",
     "vs_top25": "3-0"
   },
@@ -20,14 +20,21 @@
     "si_plus": 107.9,
     "df_plus": 113.8,
     "apr_plus": 112.0,
-    "pin_rate": 0.5,
+    "pin_rate": 0.25,
     "bonus_rate": 0.5,
     "majors": 0,
-    "techs": 0,
-    "pins": 4
+    "techs": 2,
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 3.825,
+      "matches": 8,
+      "rank_weight": 5,
+      "rank_overall": 57,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 1,
     "top10_losses": 0,
@@ -61,7 +68,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 51,
       "opponent_weight": 141,
-      "opponent_rank": 43,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -75,9 +82,9 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 69,
       "opponent_weight": 141,
-      "opponent_rank": 100,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "7:00",
       "event": "Keystone Classic"
@@ -103,9 +110,9 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 18,
       "opponent_weight": 141,
-      "opponent_rank": 220,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-5",
       "duration": "6:32",
       "event": "Keystone Classic"
@@ -131,11 +138,11 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 141,
-      "opponent_rank": 169,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "1:52",
       "event": "vs. Rutgers"
     },
     {
@@ -145,11 +152,11 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 54,
       "opponent_weight": 141,
-      "opponent_rank": 78,
+      "opponent_rank": 55,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "4:35",
       "event": "vs. Rutgers"
     }
   ]

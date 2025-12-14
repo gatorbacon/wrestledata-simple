@@ -6,10 +6,10 @@
   "team_rank": 69,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 125,
+  "current_rank": 70,
   "record": {
     "overall": "1-8",
-    "vs_ranked": "1-8",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.657,
+      "matches": 9,
+      "rank_weight": 165,
+      "rank_overall": 1834,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 8,
+    "ranked_wins": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934326132",
-      "opponent_rank": 140,
-      "opponent_name": "Tristen Hitchcock",
-      "method": "Dec 6-4"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34937323132",
-      "opponent_rank": 116,
+      "opponent_rank": 68,
       "opponent_name": "Daniel Bittner",
       "method": "Dec 6-1"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 55,
       "opponent_weight": 285,
-      "opponent_rank": 116,
+      "opponent_rank": 68,
       "result": "L",
       "method": "DEC",
       "score": "6-1",
@@ -66,11 +68,11 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 285,
-      "opponent_rank": 99,
+      "opponent_rank": null,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:53",
       "event": "Keystone Classic"
     },
     {
@@ -80,9 +82,9 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 27,
       "opponent_weight": 285,
-      "opponent_rank": 58,
+      "opponent_rank": 43,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "0:00",
       "event": "vs. Penn"
@@ -94,11 +96,11 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 76,
       "opponent_weight": 285,
-      "opponent_rank": 115,
+      "opponent_rank": 67,
       "result": "L",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "6:55",
       "event": "vs. Sacred Heart"
     },
     {
@@ -108,9 +110,9 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 285,
-      "opponent_rank": 54,
+      "opponent_rank": 42,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "4:27",
       "event": "vs. Hofstra"
@@ -122,9 +124,9 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 285,
-      "opponent_rank": 25,
+      "opponent_rank": 22,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "3:00",
       "event": "vs. Hofstra"
@@ -136,7 +138,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 140,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-4",
@@ -150,7 +152,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 114,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "4-0",
@@ -164,7 +166,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 100,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "10-4",

@@ -9,7 +9,7 @@
   "current_rank": 12,
   "record": {
     "overall": "3-3",
-    "vs_ranked": "3-3",
+    "vs_ranked": "2-2",
     "vs_top10": "0-1",
     "vs_top25": "1-1"
   },
@@ -24,22 +24,29 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.444,
+      "matches": 4,
+      "rank_weight": 21,
+      "rank_overall": 200,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 3,
+    "ranked_wins": 2,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34964374132",
-      "opponent_rank": 19,
+      "opponent_rank": 18,
       "opponent_name": "Christian Hansen",
       "method": "Dec 8-3"
     },
     "worst_loss": {
       "opponent_id": "34945363132",
-      "opponent_rank": 114,
+      "opponent_rank": 71,
       "opponent_name": "Jake Stacey",
       "method": "M. For."
     }
@@ -52,7 +59,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 9,
       "opponent_weight": 184,
-      "opponent_rank": 113,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -66,7 +73,7 @@
       "opponent_team": "Little Rock",
       "opponent_team_rank": 12,
       "opponent_weight": 184,
-      "opponent_rank": 114,
+      "opponent_rank": 71,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -80,7 +87,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 15,
       "opponent_weight": 184,
-      "opponent_rank": 56,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -94,7 +101,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 184,
-      "opponent_rank": 36,
+      "opponent_rank": 34,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -108,7 +115,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 184,
-      "opponent_rank": 19,
+      "opponent_rank": 18,
       "result": "W",
       "method": "DEC",
       "score": "8-3",
@@ -124,7 +131,7 @@
       "opponent_weight": 184,
       "opponent_rank": 3,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "21-6",
       "duration": "5:13",
       "event": "vs. Northern Iowa"

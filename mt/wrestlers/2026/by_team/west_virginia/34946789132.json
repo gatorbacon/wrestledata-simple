@@ -6,10 +6,10 @@
   "team_rank": 13,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 101,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,25 +24,27 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.454,
+      "matches": 4,
+      "rank_weight": 91,
+      "rank_overall": 870,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34954527132",
-      "opponent_rank": 93,
+      "opponent_rank": 65,
       "opponent_name": "Yanik Simon",
       "method": "Inj. 5:00"
     },
-    "worst_loss": {
-      "opponent_id": "34943167132",
-      "opponent_rank": 97,
-      "opponent_name": "Luke Sipes",
-      "method": "MD 11-2"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -52,7 +54,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 59,
       "opponent_weight": 165,
-      "opponent_rank": 104,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "8-7",
@@ -66,7 +68,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 165,
-      "opponent_rank": 97,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "11-2",
@@ -80,11 +82,11 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 75,
       "opponent_weight": 165,
-      "opponent_rank": 93,
+      "opponent_rank": 65,
       "result": "W",
-      "method": "DEC",
+      "method": "INJ",
       "score": null,
-      "duration": "7:00",
+      "duration": "5:00",
       "event": "Southeast Open"
     },
     {
@@ -94,7 +96,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 18,
       "opponent_weight": 174,
-      "opponent_rank": 56,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "5-3",

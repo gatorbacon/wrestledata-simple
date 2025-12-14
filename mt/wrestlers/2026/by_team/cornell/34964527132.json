@@ -6,10 +6,10 @@
   "team_rank": 10,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 88,
+  "current_rank": null,
   "record": {
     "overall": "6-2",
-    "vs_ranked": "6-2",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,28 +20,35 @@
     "si_plus": 117.3,
     "df_plus": 109.5,
     "apr_plus": 109.0,
-    "pin_rate": 0.667,
+    "pin_rate": 0.167,
     "bonus_rate": 0.667,
     "majors": 0,
-    "techs": 0,
-    "pins": 4
+    "techs": 3,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.94,
+      "matches": 8,
+      "rank_weight": 49,
+      "rank_overall": 472,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34947806132",
-      "opponent_rank": 89,
-      "opponent_name": "Trent Sibble",
-      "method": "TF 15-0 1:54"
+      "opponent_id": "34974780132",
+      "opponent_rank": 76,
+      "opponent_name": "Magnus Bibla",
+      "method": "Dec 5-3"
     },
     "worst_loss": {
-      "opponent_id": "34964399132",
-      "opponent_rank": 87,
-      "opponent_name": "Aiden Compton",
-      "method": "Dec 3-1"
+      "opponent_id": "34941542132",
+      "opponent_rank": 33,
+      "opponent_name": "Bryson Buhk",
+      "method": "Dec 4-0"
     }
   },
   "match_list": [
@@ -52,9 +59,9 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 285,
-      "opponent_rank": 89,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "1:54",
       "event": "Big Red Invitational"
@@ -66,9 +73,9 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": 129,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "15-0",
       "duration": "1:54",
       "event": "Big Red Invitational"
@@ -80,11 +87,11 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": 118,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
+      "duration": "0:57",
       "event": "Big Red Invitational"
     },
     {
@@ -94,7 +101,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": 87,
+      "opponent_rank": null,
       "result": "L",
       "method": "DEC",
       "score": "3-1",
@@ -108,7 +115,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 49,
       "opponent_weight": 285,
-      "opponent_rank": 173,
+      "opponent_rank": 76,
       "result": "W",
       "method": "DEC",
       "score": "5-3",
@@ -122,7 +129,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": 41,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "4-0",
@@ -136,7 +143,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 33,
       "opponent_weight": 285,
-      "opponent_rank": 147,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-1",
@@ -150,9 +157,9 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": 190,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-1",
       "duration": "3:42",
       "event": "Clarion Open"

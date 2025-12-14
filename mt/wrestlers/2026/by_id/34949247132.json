@@ -6,10 +6,10 @@
   "team_rank": 76,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": 115,
+  "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,22 +24,24 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.578,
+      "matches": 4,
+      "rank_weight": 157,
+      "rank_overall": 1429,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 0,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34938623132",
-      "opponent_rank": 139,
-      "opponent_name": "Jack Martinec",
-      "method": "Dec 5-2"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34950418132",
-      "opponent_rank": 131,
+      "opponent_rank": 75,
       "opponent_name": "Riley Rowan",
       "method": "Dec 2-0"
     }
@@ -52,7 +54,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 61,
       "opponent_weight": 141,
-      "opponent_rank": 109,
+      "opponent_rank": 68,
       "result": "L",
       "method": "DEC",
       "score": "7-3",
@@ -66,9 +68,9 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 63,
       "opponent_weight": 141,
-      "opponent_rank": 32,
+      "opponent_rank": 31,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "16-1",
       "duration": "4:06",
       "event": "Big Red Invitational"
@@ -80,7 +82,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 66,
       "opponent_weight": 141,
-      "opponent_rank": 139,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -96,7 +98,7 @@
       "opponent_weight": 141,
       "opponent_rank": 28,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-4",
       "duration": "2:49",
       "event": "Big Red Invitational"
@@ -108,7 +110,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 68,
       "opponent_weight": 125,
-      "opponent_rank": 131,
+      "opponent_rank": 75,
       "result": "L",
       "method": "DEC",
       "score": "2-0",

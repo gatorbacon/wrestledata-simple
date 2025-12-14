@@ -6,12 +6,12 @@
   "team_rank": 74,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 145,
+  "current_rank": null,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "2-4",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.93,
@@ -24,22 +24,24 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.928,
+      "matches": 5,
+      "rank_weight": 135,
+      "rank_overall": 1508,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_wins": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34934627132",
-      "opponent_rank": 132,
-      "opponent_name": "Bradley Whitright",
-      "method": "Dec 4-2"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34934615132",
-      "opponent_rank": 120,
+      "opponent_rank": 69,
       "opponent_name": "Drew Blackburn-Forst",
       "method": "Dec 2-2"
     }
@@ -52,9 +54,9 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 26,
       "opponent_weight": 285,
-      "opponent_rank": 24,
+      "opponent_rank": 21,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-5",
       "duration": "6:44",
       "event": "vs. Northern Iowa"
@@ -66,7 +68,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 285,
-      "opponent_rank": 120,
+      "opponent_rank": 69,
       "result": "L",
       "method": "DEC",
       "score": "2-2",
@@ -80,7 +82,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 197,
-      "opponent_rank": 132,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -94,7 +96,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 285,
-      "opponent_rank": 18,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "14-4",
@@ -108,7 +110,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 285,
-      "opponent_rank": 120,
+      "opponent_rank": 69,
       "result": "L",
       "method": "DEC",
       "score": "2-2",
@@ -122,7 +124,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 74,
       "opponent_weight": 285,
-      "opponent_rank": 180,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "13-1",

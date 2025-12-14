@@ -6,10 +6,10 @@
   "team_rank": 11,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 58,
+  "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -24,19 +24,21 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.25,
+      "matches": 4,
+      "rank_weight": 86,
+      "rank_overall": 811,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 0,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34944035132",
-      "opponent_rank": 59,
-      "opponent_name": "Reese Stephen",
-      "method": "Dec 6-2"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34943752132",
       "opponent_rank": 18,
@@ -54,7 +56,7 @@
       "opponent_weight": 165,
       "opponent_rank": 18,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "19-3",
       "duration": "6:45",
       "event": "Michigan State Open"
@@ -66,7 +68,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 53,
       "opponent_weight": 165,
-      "opponent_rank": 130,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "12-4",
@@ -80,7 +82,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 70,
       "opponent_weight": 165,
-      "opponent_rank": 59,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "6-2",
@@ -96,7 +98,7 @@
       "opponent_weight": 165,
       "opponent_rank": 18,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "20-1",
       "duration": "5:56",
       "event": "vs. Arizona State"

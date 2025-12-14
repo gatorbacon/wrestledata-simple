@@ -6,7 +6,7 @@
   "team_rank": 33,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": 169,
+  "current_rank": null,
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.32,
+      "matches": 1,
+      "rank_weight": 106,
+      "rank_overall": 1108,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,7 +56,7 @@
       "opponent_weight": 133,
       "opponent_rank": 2,
       "result": "L",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-2",
       "duration": "3:20",
       "event": "Clarion Open"

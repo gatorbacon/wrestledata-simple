@@ -6,10 +6,10 @@
   "team_rank": 78,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": 44,
+  "current_rank": 40,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "4-2",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -20,28 +20,35 @@
     "si_plus": 107.5,
     "df_plus": 105.4,
     "apr_plus": 97.3,
-    "pin_rate": 0.25,
+    "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 1,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.764,
+      "matches": 6,
+      "rank_weight": 50,
+      "rank_overall": 526,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34943154132",
-      "opponent_rank": 39,
+      "opponent_rank": 37,
       "opponent_name": "Robert Platt",
       "method": "Dec 7-4"
     },
     "worst_loss": {
-      "opponent_id": "34955790132",
-      "opponent_rank": 43,
-      "opponent_name": "Silas Dailey",
-      "method": "MD 9-0"
+      "opponent_id": "34957597132",
+      "opponent_rank": 11,
+      "opponent_name": "Branson John",
+      "method": "MD 13-3"
     }
   },
   "match_list": [
@@ -52,7 +59,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 10,
       "opponent_weight": 197,
-      "opponent_rank": 112,
+      "opponent_rank": null,
       "result": "W",
       "method": "MD",
       "score": "11-0",
@@ -66,9 +73,9 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 197,
-      "opponent_rank": 110,
+      "opponent_rank": null,
       "result": "W",
-      "method": "PIN",
+      "method": "TF",
       "score": "17-0",
       "duration": "3:48",
       "event": "A Better Way Athletics Patriot Open"
@@ -94,7 +101,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 197,
-      "opponent_rank": 43,
+      "opponent_rank": null,
       "result": "L",
       "method": "MD",
       "score": "9-0",
@@ -108,7 +115,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 46,
       "opponent_weight": 197,
-      "opponent_rank": 39,
+      "opponent_rank": 37,
       "result": "W",
       "method": "DEC",
       "score": "7-4",
@@ -122,7 +129,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 13,
       "opponent_weight": 197,
-      "opponent_rank": 108,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "5-0",
