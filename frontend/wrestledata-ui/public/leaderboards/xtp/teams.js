@@ -239,6 +239,7 @@ function renderLeaderboard() {
       
       const breakdownTd = document.createElement("td");
       breakdownTd.colSpan = 7;
+      breakdownTd.style.paddingLeft = "0"; // Remove extra padding from nested table
       
       // Create nested table
       const breakdownTable = document.createElement("table");
@@ -260,9 +261,18 @@ function renderLeaderboard() {
       // Sort weights ascending
       const sortedWeights = WEIGHTS.map(w => String(w));
       
+      // Calculate max xTP for expanded rows in THIS team (for bar scaling)
+      const teamXTPValues = sortedWeights
+        .map(w => team.weights?.[w]?.xTP)
+        .filter(v => v !== null && v !== undefined);
+      const expandedMaxXTP = teamXTPValues.length > 0
+        ? Math.max(...teamXTPValues)
+        : (maxXTP > 0 ? maxXTP : 100.0);
+      
       sortedWeights.forEach(weight => {
         const weightData = team.weights?.[weight];
         const row = document.createElement("tr");
+        row.className = "xtp-expanded-row";
         
         // Weight
         const weightTd = document.createElement("td");
@@ -278,32 +288,42 @@ function renderLeaderboard() {
           wrestlerTd.appendChild(wrestlerLink);
           row.appendChild(wrestlerTd);
           
-          // Rank
+          // Rank - medal badge (expanded rows only)
           const rankTd = document.createElement("td");
-          rankTd.textContent = safe(weightData.rank, v => `#${v}`);
+          if (weightData.rank !== null && weightData.rank !== undefined) {
+            rankTd.appendChild(createMVRankBadge(weightData.rank));
+          } else {
+            rankTd.textContent = "—";
+          }
           row.appendChild(rankTd);
           
-          // xTP (total) - primary metric
+          // xTP (total) - primary metric with bar (expanded rows, same as collapsed)
           const xtpTd = document.createElement("td");
-          xtpTd.className = "num metric-primary";
-          xtpTd.textContent = safe(weightData.xTP, v => v.toFixed(1));
+          xtpTd.className = "num metric-primary expanded-xtp-cell";
+          
+          if (weightData.xTP !== null && weightData.xTP !== undefined) {
+            // Scale bars relative to max xTP in THIS team's expanded rows
+            xtpTd.appendChild(createMetricBar(weightData.xTP, expandedMaxXTP));
+          } else {
+            xtpTd.textContent = "—";
+          }
           row.appendChild(xtpTd);
           
-          // xTP_P - subcomponent
+          // xTP_P - subcomponent (shrunk, muted in expanded rows)
           const xtpPTd = document.createElement("td");
-          xtpPTd.className = "num metric-sub";
+          xtpPTd.className = "num metric-sub expanded-component-col xtp-sub";
           xtpPTd.textContent = safe(weightData.xTP_P, v => v.toFixed(1));
           row.appendChild(xtpPTd);
           
-          // xTP_A - subcomponent
+          // xTP_A - subcomponent (shrunk, muted in expanded rows)
           const xtpATd = document.createElement("td");
-          xtpATd.className = "num metric-sub";
+          xtpATd.className = "num metric-sub expanded-component-col xtp-sub";
           xtpATd.textContent = safe(weightData.xTP_A, v => v.toFixed(1));
           row.appendChild(xtpATd);
           
-          // xTP_B - subcomponent
+          // xTP_B - subcomponent (shrunk, muted in expanded rows)
           const xtpBTd = document.createElement("td");
-          xtpBTd.className = "num metric-sub";
+          xtpBTd.className = "num metric-sub expanded-component-col xtp-sub";
           xtpBTd.textContent = safe(weightData.xTP_B, v => v.toFixed(1));
           row.appendChild(xtpBTd);
         } else {

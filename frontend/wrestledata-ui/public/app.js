@@ -30,6 +30,30 @@ function safe(value, formatter) {
     return badge;
   }
   
+  function createMetricBar(value, maxValue) {
+    if (value === null || value === undefined || maxValue === 0) {
+      return document.createTextNode("—");
+    }
+    
+    // Cap width at 96%
+    const width = Math.min((value / maxValue) * 100, 96);
+    
+    const bar = document.createElement("div");
+    bar.className = "metric-bar";
+    
+    const fill = document.createElement("div");
+    fill.className = "metric-bar-fill";
+    fill.style.width = `${width}%`;
+    
+    const valueSpan = document.createElement("span");
+    valueSpan.className = "metric-bar-value";
+    valueSpan.textContent = value.toFixed(1);
+    
+    bar.appendChild(fill);
+    bar.appendChild(valueSpan);
+    return bar;
+  }
+  
   function resolveSeason() {
     return "2026"; // Or make dynamic later
   }
