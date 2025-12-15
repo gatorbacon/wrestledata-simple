@@ -8,45 +8,92 @@
   "year": 2026,
   "current_rank": 65,
   "record": {
-    "overall": "5-3",
-    "vs_ranked": "0-2",
+    "overall": "6-5",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 5.57,
-    "pa7": 4.86,
-    "pd7": 0.71,
-    "si_plus": 104.0,
-    "df_plus": 103.7,
-    "apr_plus": 106.8,
-    "pin_rate": 0.2,
-    "bonus_rate": 0.4,
+    "pf7": 5.0,
+    "pa7": 5.8,
+    "pd7": -0.8,
+    "si_plus": 101.3,
+    "df_plus": 102.6,
+    "apr_plus": 103.4,
+    "pin_rate": 0.167,
+    "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": -0.008,
-      "matches": 8,
-      "rank_weight": 63,
-      "rank_overall": 754,
+      "mv_avg": -0.368,
+      "matches": 11,
+      "rank_weight": 73,
+      "rank_overall": 847,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34952968132",
+      "opponent_rank": 61,
+      "opponent_name": "Rafael Knapp",
+      "method": "Dec 5-1"
+    },
     "worst_loss": {
-      "opponent_id": "34951056132",
-      "opponent_rank": 39,
-      "opponent_name": "Tate Geiser",
-      "method": "Dec 14-13"
+      "opponent_id": "34943829132",
+      "opponent_rank": 60,
+      "opponent_name": "Grant O`Dell",
+      "method": "Dec 6-3"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34952968132",
+      "opponent_name": "Rafael Knapp",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 174,
+      "opponent_rank": 61,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "vs. Kent State"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34943829132",
+      "opponent_name": "Grant O`Dell",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 60,
+      "opponent_weight": 174,
+      "opponent_rank": 60,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "vs. Kent State"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34951056132",
+      "opponent_name": "Tate Geiser",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 174,
+      "opponent_rank": 39,
+      "result": "L",
+      "method": "MD",
+      "score": "17-3",
+      "duration": "7:00",
+      "event": "vs. Kent State"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34945834132",

@@ -8,37 +8,42 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-5",
-    "vs_ranked": "0-2",
+    "overall": "5-5",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 2.4,
-    "pa7": 8.6,
-    "pd7": -6.2,
-    "si_plus": 91.6,
-    "df_plus": 101.6,
-    "apr_plus": 98.4,
+    "pf7": 5.67,
+    "pa7": 5.98,
+    "pd7": -0.31,
+    "si_plus": 94.7,
+    "df_plus": 103.5,
+    "apr_plus": 98.1,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
-    "techs": 0,
+    "bonus_rate": 0.4,
+    "majors": 1,
+    "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -3.047,
-      "matches": 6,
-      "rank_weight": 149,
-      "rank_overall": 1536,
+      "mv_avg": -1.499,
+      "matches": 9,
+      "rank_weight": 115,
+      "rank_overall": 1164,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34952955132",
+      "opponent_rank": 70,
+      "opponent_name": "Caden Barrientos",
+      "method": "MD 11-0"
+    },
     "worst_loss": {
       "opponent_id": "34933988132",
       "opponent_rank": 55,
@@ -47,6 +52,48 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34952955132",
+      "opponent_name": "Caden Barrientos",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 125,
+      "opponent_rank": 70,
+      "result": "W",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "vs. Kent State"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34943831132",
+      "opponent_name": "Damion Ryan",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 60,
+      "opponent_weight": 125,
+      "opponent_rank": 71,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "vs. Kent State"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34951049132",
+      "opponent_name": "Austin Zimmerman",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "7:00",
+      "event": "vs. Kent State"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34945847132",

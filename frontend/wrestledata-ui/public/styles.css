@@ -1,75 +1,802 @@
+/* ========================================
+   WrestleData Global Theme System
+   DataGolf-inspired dark mode (default)
+   ======================================== */
+
+/* Inter font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ========================================
+   CSS VARIABLES / DESIGN TOKENS
+   ======================================== */
+
+/* Light mode (placeholder) */
+:root {
+  --bg: #ffffff;
+  --panel: #f9fafb;
+  --panel-2: #f3f4f6;
+  --border: #e5e7eb;
+
+  --text: #111827;
+  --muted: #6b7280;
+  --muted-2: #9ca3af;
+
+  --accent: #00c2a8;
+  --accent-2: #1fe3c6;
+  --link: var(--accent);
+
+  --good: #22c55e;
+  --bad: #ef4444;
+  --warn: #f59e0b;
+
+  --pill-1: #fbbf24;
+  --pill-2: #34d399;
+  --pill-3: #60a5fa;
+  --pill-4: #a78bfa;
+
+  --bar-neutral: #e5e7eb;
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --pad-sm: 8px;
+  --pad-md: 12px;
+  --pad-lg: 16px;
+}
+
+/* Dark mode (default) */
+[data-theme="dark"] {
+  --bg: #0b0f14;
+  --panel: #0f1620;
+  --panel-2: #111b26;
+  --border: #1f2a37;
+
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --muted-2: #6b7280;
+
+  --accent: #00c2a8;
+  --accent-2: #1fe3c6;
+  --link: var(--accent);
+
+  --good: #22c55e;
+  --bad: #ef4444;
+  --warn: #f59e0b;
+
+  --pill-1: #fbbf24;
+  --pill-2: #34d399;
+  --pill-3: #60a5fa;
+  --pill-4: #a78bfa;
+
+  --bar-neutral: #233041;
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --pad-sm: 8px;
+  --pad-md: 12px;
+  --pad-lg: 16px;
+}
+
+/* ========================================
+   GLOBAL BASE STYLES
+   ======================================== */
+
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    background: white;
-    color: #333;
-  }
-  
-  .page-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 16px;
-  }
-  
-  .header {
-    margin-bottom: 24px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  
-  .header h1 {
-    margin: 0;
-    font-size: 2rem;
-  }
-  
-  .summary-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin-bottom: 24px;
-  }
-  
-  .card {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 12px;
-    background: #fff;
-  }
-  
-  .card h2 {
-    margin: 0 0 8px 0;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .section {
-    margin-top: 24px;
-  }
-  
-  .table-wrapper {
-    overflow-x: auto;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    border: 1px solid #e0e0e0;
-    padding: 6px 8px;
-  }
-  
-  th {
-    background: #f7f7f7;
-  }
-  
-  tbody tr:nth-child(even) {
-    background: #fafafa;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+/* Tooltips explain. Links navigate. Nothing should look interactive unless it actually is. */
+a {
+  color: var(--link);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-2);
+  text-decoration: underline;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: var(--pad-md);
+}
+
+.panel-header {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--pad-sm);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.metric {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.metric-lg {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.pill {
+  display: inline-block;
+  padding: 2px var(--pad-sm);
+  border-radius: var(--r-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.pill.rank-1 {
+  background: var(--pill-1);
+  color: var(--bg);
+}
+
+.pill.rank-2 {
+  background: var(--pill-2);
+  color: var(--bg);
+}
+
+.pill.rank-3 {
+  background: var(--pill-3);
+  color: var(--bg);
+}
+
+.pill.rank-4 {
+  background: var(--pill-4);
+  color: var(--bg);
+}
+
+/* ========================================
+   LAYOUT COMPONENTS
+   ======================================== */
+
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--pad-lg);
+  overflow-x: visible;
+}
+
+.header {
+  margin-bottom: 0.75em;
+  padding-bottom: var(--pad-md);
+  border-bottom: 1px solid var(--border);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.header-subline {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+.header-explainer {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  line-height: 1.5;
+  /* No background box */
+  background: none;
+  padding: 0;
+}
+
+.section {
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+
+/* ========================================
+   WEIGHT TABS (REUSABLE)
+   ======================================== */
+
+.weight-tabs-container {
+  display: flex;
+  gap: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0;
+}
+
+.weight-tab {
+  background: none;
+  border: none;
+  padding: 0.75em 1.25em;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  position: relative;
+  top: 1px; /* Align with border */
+  font-family: inherit;
+}
+
+.weight-tab:hover {
+  color: var(--text);
+}
+
+.weight-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.weight-tab:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  border-radius: 2px;
+}
+
+/* Threshold explainer */
+.threshold-explainer {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+/* ========================================
+   VALUE BAR (DataGolf-style, centered zero)
+   ======================================== */
+
+.value-bar-wrapper {
+  position: relative;
+  width: 100%;
+  height: 16px;
+}
+
+.zero-line {
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  bottom: -6px;
+  width: 3px;
+  z-index: 2;
+  opacity: 0.85;
+}
+
+.zero-line.positive {
+  background: rgba(60, 190, 150, 0.9);
+}
+
+.zero-line.negative {
+  background: rgba(220, 90, 90, 0.9);
+}
+
+
+.value-bar {
+  position: absolute;
+  top: 70%;
+  height: 16px;
+  transform: translateY(-70%);
+  opacity: 0.85;
+  border-radius: 1px;
+  z-index: 1;
+}
+
+.value-bar.positive {
+  left: 50%;
+  background: rgba(210, 245, 235, 1);
+  border-left: 0px solid rgba(60, 190, 150, 1);
+}
+
+.value-bar.negative {
+  right: 50%;
+  background: rgba(255, 215, 215, 1);
+  border-right: 0px solid rgba(220, 90, 90, 1);
+}
+
+.value-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.value-label.positive {
+  color: #e6faf4;
+}
+
+.value-label.negative {
+  color: #ffdede;
+}
+
+/* POSITIVE VALUE → label LEFT of zero */
+.value-bar-wrapper[data-sign="positive"] .value-label {
+  right: calc(50% + 8px);
+}
+
+/* NEGATIVE VALUE → label RIGHT of zero */
+.value-bar-wrapper[data-sign="negative"] .value-label {
+  left: calc(50% + 8px);
+}
+
+.value-cell {
+  padding: 8px 10px;
+}
+
+/* Widen MV column for DataGolf-style bars */
+#leaderboard-table th:nth-child(6),
+#leaderboard-table td:nth-child(6) {
+  min-width: 220px;
+  width: 220px;
+}
+
+/* Metric cell structure for improved spacing */
+.metric-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.metric-value {
+  min-width: 42px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+/* Section headers - larger, bolder for hierarchy */
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+  color: var(--text);
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--pad-md);
+  margin-bottom: 2.5em;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: var(--pad-lg);
+}
+
+.card h2,
+.card h3 {
+  margin: 0 0 var(--pad-sm) 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pad-sm);
+}
+
+.card-body > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+/* Secondary labels in cards - smaller, muted */
+.card-body .label {
+  font-size: 0.875rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* ========================================
+   TABLE STYLING
+   ======================================== */
+
+.table-wrapper {
+  overflow: visible;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--bg);
+  /* Flatter tables - less heavy borders */
+  box-shadow: none;
+}
+
+/* Ensure no horizontal scrolling on tables */
+.table-wrapper table {
+  min-width: 100%;
+  table-layout: auto;
+  /* Table background matches page background */
+  background: var(--bg);
+}
+
+/* Ensure tooltips can escape table wrapper */
+.table-wrapper table {
+  overflow: visible;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+thead {
+  overflow: visible;
+}
+
+/* Sticky table header */
+table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--panel-2);
+}
+
+th {
+  background: var(--panel-2);
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: visible;
+}
+
+/* Numeric column headers should be right-aligned to match data */
+th.num {
+  text-align: right;
+}
+
+/* Right-align headers that contain numeric data (MV, xTP columns) */
+/* Using :has() for modern browsers */
+th:has(.tooltip-icon[data-tooltip="mv"]),
+th:has(.tooltip-icon[data-tooltip="xtp"]),
+th:has(.tooltip-icon[data-tooltip="xtp-p"]),
+th:has(.tooltip-icon[data-tooltip="xtp-a"]),
+th:has(.tooltip-icon[data-tooltip="xtp-b"]) {
+  text-align: right;
+}
+
+/* Fallback for browsers without :has() support - legacy data-tooltip */
+th[data-tooltip="mv"],
+th[data-tooltip="xtp"],
+th[data-tooltip="xtp-p"],
+th[data-tooltip="xtp-a"],
+th[data-tooltip="xtp-b"] {
+  text-align: right;
+}
+
+td {
+  padding: 8px 10px;
+  /* Subtle horizontal dividers only */
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  position: relative;
+  /* No boxed rows */
+  border-left: none;
+  border-right: none;
+}
+
+/* Ensure metric bars in table cells don't break layout */
+td .metric-bar {
+  width: 100%;
+}
+
+/* ========================================
+   RANK BADGES
+   ======================================== */
+
+.rank-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  /* No underline, no hover underline */
+  text-decoration: none;
+  cursor: default;
+  /* Pill-style badges with fixed width for consistency */
+  min-width: 40px;
+}
+
+.rank-badge.top {
+  background: var(--accent);
+  color: var(--bg);
+  opacity: 0.9;
+}
+
+.rank-badge.standard {
+  background: var(--panel-2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+/* Ensure badges don't affect table row height */
+td .rank-badge {
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* MV Rank medal badges - pill-style with fixed width */
+.rank-badge.medal-gold {
+  background: #fbbf24; /* gold */
+  color: var(--bg);
+  opacity: 0.9;
+}
+
+.rank-badge.medal-silver {
+  background: #94a3b8; /* silver */
+  color: var(--bg);
+  opacity: 0.9;
+}
+
+.rank-badge.medal-bronze {
+  background: #cd7f32; /* bronze */
+  color: var(--bg);
+  opacity: 0.9;
+}
+
+/* Rank #6+ uses neutral slate badge */
+.rank-badge.standard {
+  background: var(--panel-2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+/* UNR badge for non-starters */
+.rank-badge.unr-badge {
+  background: var(--panel-2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  /* Same styling as standard badge */
+}
+
+/* Matches column - de-emphasized */
+.matches-column {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  text-align: right;
+}
+
+tbody tr {
+  transition: background-color 0.15s ease;
+  /* Table background matches page background - no zebra striping */
+  background: var(--bg);
+}
+
+tbody tr:hover {
+  /* Same hover background for ALL rows - uniform behavior */
+  background: var(--panel-2);
+}
+
+/* REMOVE all alternating row logic - no nth-child selectors for hover */
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Table utility classes */
+.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.name {
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Primary metric columns (xTP, MV) */
+.metric-primary {
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+/* Subcomponent columns (xTP_P, xTP_A, xTP_B) */
+.metric-sub {
+  font-size: 0.9em;
+  color: var(--muted);
+}
+
+/* Secondary/de-emphasized columns */
+.metric-secondary {
+  color: var(--muted);
+  font-size: 0.875em;
+}
+
+/* Horizontal bar visualization for numeric values */
+/* Bars are subtle, behind numbers, using accent color at low opacity */
+.metric-bar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 3px 0;
+  min-height: 1.6em;
+}
+
+.metric-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--accent);
+  opacity: 0.15;
+  border-radius: 2px;
+  z-index: 0;
+  /* Cap at 96% to stop slightly short */
+  max-width: 96%;
+}
+
+.metric-bar-value {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  /* Ensure text is readable on top of bar */
+  color: var(--text);
+}
+
+/* Table explainer text - removed, using .header-explainer instead */
+
+/* ========================================
+   LEGACY COMPATIBILITY
+   (Maintain existing styles that may be referenced)
+   ======================================== */
+
+/* REMOVED: nth-child selectors that interfere with uniform hover */
+
+/* ========================================
+   TOOLTIP SYSTEM
+   ======================================== */
+
+/* Tooltip triggers - NO underlines, use icons only */
+.tooltip-trigger {
+  position: relative;
+  cursor: help;
+  /* NO border-bottom - tooltips explain, links navigate */
+}
+
+.tooltip-trigger:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Table header tooltips use JavaScript positioning, don't use CSS transform */
+th.tooltip-trigger:hover .tooltip,
+th .tooltip-icon.tooltip-trigger:hover .tooltip {
+  transform: none;
+}
+
+/* Tooltip card - DataGolf-style hover card */
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-4px);
+  background: var(--panel-2);
+  color: var(--muted);
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+  pointer-events: none;
+  z-index: 10000;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  max-width: 280px;
+  white-space: normal;
+  text-align: left;
+  /* Native feel, not browser default */
+  font-weight: 400;
+}
+
+/* Removed duplicate - already defined above */
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: var(--panel-2);
+}
+
+/* Tooltip icon - DataGolf-style subtle info icon */
+.tooltip-icon {
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: middle;
+  opacity: 0.6;
+  cursor: help;
+  font-size: 0.875rem;
+  color: var(--muted);
+  transition: opacity 0.15s ease, color 0.15s ease;
+  line-height: 1;
+  user-select: none;
+  /* NO underline, NO border */
+  text-decoration: none;
+  border: none;
+}
+
+.tooltip-icon:hover,
+.tooltip-icon:focus {
+  opacity: 1;
+  color: var(--accent);
+  outline: none;
+}
+
+.tooltip-icon:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Tooltip positioning for table headers - ensure they appear above */
+th.tooltip-trigger {
+  overflow: visible;
+}
+
+th.tooltip-trigger .tooltip {
+  z-index: 10001;
+  white-space: normal;
+  position: fixed;
+}

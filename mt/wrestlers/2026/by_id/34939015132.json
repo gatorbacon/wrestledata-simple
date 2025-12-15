@@ -9,44 +9,58 @@
   "current_rank": 1,
   "record": {
     "overall": "7-0",
-    "vs_ranked": "3-0",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 19.17,
-    "pa7": 3.68,
-    "pd7": 15.49,
-    "si_plus": 137.0,
-    "df_plus": 109.6,
-    "apr_plus": 116.2,
-    "pin_rate": 0.286,
-    "bonus_rate": 0.857,
+    "pf7": 20.46,
+    "pa7": 2.85,
+    "pd7": 17.61,
+    "si_plus": 139.9,
+    "df_plus": 108.3,
+    "apr_plus": 127.8,
+    "pin_rate": 0.429,
+    "bonus_rate": 1.0,
     "majors": 1,
     "techs": 3,
-    "pins": 2,
+    "pins": 3,
     "mat_value": {
-      "mv_avg": 4.235,
+      "mv_avg": 4.546,
       "matches": 7,
       "rank_weight": 6,
-      "rank_overall": 36,
+      "rank_overall": 23,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34971917132",
-      "opponent_rank": 60,
-      "opponent_name": "Patrick Kelly",
-      "method": "TF 21-4 6:52"
+      "opponent_id": "34933449132",
+      "opponent_rank": 26,
+      "opponent_name": "Gabe Willochell",
+      "method": "Fall 2:54"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34933449132",
+      "opponent_name": "Gabe Willochell",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 22,
+      "opponent_weight": 149,
+      "opponent_rank": 26,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:54",
+      "event": "vs. Wyoming"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34952678132",
@@ -91,34 +105,6 @@
     },
     {
       "date": "2025-11-23",
-      "opponent_id": "34943406132",
-      "opponent_name": "Marco Frinzi",
-      "opponent_team": "Columbia",
-      "opponent_team_rank": 50,
-      "opponent_weight": 149,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:12",
-      "event": "Black Knight Invite"
-    },
-    {
-      "date": "2025-11-23",
-      "opponent_id": "34939017132",
-      "opponent_name": "Connor Pierce",
-      "opponent_team": "Penn State",
-      "opponent_team_rank": 1,
-      "opponent_weight": 149,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "DEC",
-      "score": "14-7",
-      "duration": "7:00",
-      "event": "Black Knight Invite"
-    },
-    {
-      "date": "2025-11-23",
       "opponent_id": "34952963132",
       "opponent_name": "Justin Holly",
       "opponent_team": "Buffalo",
@@ -129,6 +115,20 @@
       "method": "FALL",
       "score": null,
       "duration": "1:31",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943406132",
+      "opponent_name": "Marco Frinzi",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
       "event": "Black Knight Invite"
     },
     {
@@ -148,7 +148,7 @@
   ],
   "bonus": {
     "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.27314814814814814
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 0.7175925925925926
   }
 }

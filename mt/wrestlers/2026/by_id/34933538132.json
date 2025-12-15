@@ -17,8 +17,8 @@
     "pf7": 13.16,
     "pa7": 8.31,
     "pd7": 4.85,
-    "si_plus": 116.7,
-    "df_plus": 105.4,
+    "si_plus": 116.6,
+    "df_plus": 105.8,
     "apr_plus": 98.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.556,
@@ -26,10 +26,10 @@
     "techs": 2,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 3.197,
+      "mv_avg": 3.196,
       "matches": 11,
-      "rank_weight": 12,
-      "rank_overall": 104,
+      "rank_weight": 13,
+      "rank_overall": 105,
       "version": "v1"
     }
   },
@@ -68,6 +68,20 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "34936105132",
+      "opponent_name": "Ceasar Garza",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 32,
+      "opponent_weight": 184,
+      "opponent_rank": 16,
+      "result": "W",
+      "method": "MD",
+      "score": "17-7",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "34934699132",
       "opponent_name": "James Conway",
       "opponent_team": "Franklin & Marshall",
@@ -91,20 +105,6 @@
       "result": "W",
       "method": "MD",
       "score": "18-5",
-      "duration": "7:00",
-      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "34936105132",
-      "opponent_name": "Ceasar Garza",
-      "opponent_team": "Cal Poly",
-      "opponent_team_rank": 32,
-      "opponent_weight": 184,
-      "opponent_rank": 16,
-      "result": "W",
-      "method": "MD",
-      "score": "17-7",
       "duration": "7:00",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
     },
@@ -210,6 +210,6 @@
   "bonus": {
     "top33_wins": 4,
     "top33_bonus_ev_raw": 0.5,
-    "top33_bonus_ev_shrunk": 0.3875
+    "top33_bonus_ev_shrunk": 0.35694444444444445
   }
 }

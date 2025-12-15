@@ -18,18 +18,18 @@
     "pa7": 20.6,
     "pd7": -17.17,
     "si_plus": 96.8,
-    "df_plus": 74.9,
-    "apr_plus": 96.8,
+    "df_plus": 75.2,
+    "apr_plus": 97.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -5.311,
+      "mv_avg": -5.294,
       "matches": 2,
-      "rank_weight": 232,
-      "rank_overall": 1916,
+      "rank_weight": 233,
+      "rank_overall": 1920,
       "version": "v1"
     }
   },
@@ -49,20 +49,6 @@
   "match_list": [
     {
       "date": "2025-11-02",
-      "opponent_id": "34941789132",
-      "opponent_name": "Daxton Chase",
-      "opponent_team": "Ohio State",
-      "opponent_team_rank": 2,
-      "opponent_weight": 149,
-      "opponent_rank": null,
-      "result": "L",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "6:07",
-      "event": "Clarion Open"
-    },
-    {
-      "date": "2025-11-02",
       "opponent_id": "34952959132",
       "opponent_name": "Sam Ewing",
       "opponent_team": "Buffalo",
@@ -74,11 +60,25 @@
       "score": null,
       "duration": "0:41",
       "event": "Clarion Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941789132",
+      "opponent_name": "Daxton Chase",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "6:07",
+      "event": "Clarion Open"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.5
   }
 }

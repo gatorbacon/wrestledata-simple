@@ -8,45 +8,64 @@
   "year": 2026,
   "current_rank": 38,
   "record": {
-    "overall": "7-2",
-    "vs_ranked": "2-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "7-3",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 14.8,
-    "pa7": 4.57,
-    "pd7": 10.23,
-    "si_plus": 120.5,
-    "df_plus": 110.0,
-    "apr_plus": 97.5,
+    "pf7": 13.49,
+    "pa7": 4.73,
+    "pd7": 8.76,
+    "si_plus": 115.1,
+    "df_plus": 110.9,
+    "apr_plus": 97.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.857,
     "majors": 3,
     "techs": 3,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 2.409,
-      "matches": 8,
-      "rank_weight": 21,
-      "rank_overall": 203,
+      "mv_avg": 2.242,
+      "matches": 9,
+      "rank_weight": 27,
+      "rank_overall": 229,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34946230132",
       "opponent_rank": 39,
       "opponent_name": "Jacob Silka",
       "method": "Dec 7-2"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34946729132",
+      "opponent_rank": 1,
+      "opponent_name": "Ty Watters",
+      "method": "Dec 6-3"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34946729132",
+      "opponent_name": "Ty Watters",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 157,
+      "opponent_rank": 1,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "vs. West Virginia"
+    },
     {
       "date": "2025-11-15",
       "opponent_id": "34939051132",

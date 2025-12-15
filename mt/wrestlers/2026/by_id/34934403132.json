@@ -8,33 +8,33 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "10-6",
-    "vs_ranked": "6-6",
+    "overall": "11-6",
+    "vs_ranked": "7-6",
     "vs_top10": "0-3",
     "vs_top25": "0-5"
   },
   "metrics": {
-    "pf7": 8.56,
-    "pa7": 8.27,
-    "pd7": 0.29,
-    "si_plus": 111.4,
-    "df_plus": 99.2,
-    "apr_plus": 105.7,
-    "pin_rate": 0.2,
-    "bonus_rate": 0.6,
+    "pf7": 8.44,
+    "pa7": 7.79,
+    "pd7": 0.66,
+    "si_plus": 111.2,
+    "df_plus": 100.6,
+    "apr_plus": 104.2,
+    "pin_rate": 0.182,
+    "bonus_rate": 0.545,
     "majors": 3,
     "techs": 1,
     "pins": 2,
     "mat_value": {
-      "mv_avg": 1.741,
-      "matches": 15,
+      "mv_avg": 1.851,
+      "matches": 16,
       "rank_weight": 29,
-      "rank_overall": 314,
+      "rank_overall": 298,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
+    "ranked_wins": 7,
     "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 3,
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34945829132",
+      "opponent_name": "Logan Frazier",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 133,
+      "opponent_rank": 41,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "vs. Indiana"
+    },
     {
       "date": "2025-11-23",
       "opponent_id": "34939035132",
@@ -180,6 +194,20 @@
     },
     {
       "date": "2025-11-02",
+      "opponent_id": "34935955132",
+      "opponent_name": "Gable Strickland",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 133,
+      "opponent_rank": 45,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
       "opponent_id": "34948148132",
       "opponent_name": "Ethan Rivera",
       "opponent_team": "Princeton",
@@ -203,20 +231,6 @@
       "result": "W",
       "method": "DEC",
       "score": "4-0",
-      "duration": "7:00",
-      "event": "Princeton Open"
-    },
-    {
-      "date": "2025-11-02",
-      "opponent_id": "34935955132",
-      "opponent_name": "Gable Strickland",
-      "opponent_team": "Lock Haven",
-      "opponent_team_rank": 56,
-      "opponent_weight": 133,
-      "opponent_rank": 45,
-      "result": "L",
-      "method": "DEC",
-      "score": null,
       "duration": "7:00",
       "event": "Princeton Open"
     },

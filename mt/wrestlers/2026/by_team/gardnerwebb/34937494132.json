@@ -8,17 +8,17 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-8",
-    "vs_ranked": "0-7",
+    "overall": "0-9",
+    "vs_ranked": "0-8",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 2.4,
-    "pa7": 13.33,
-    "pd7": -10.93,
-    "si_plus": 91.7,
-    "df_plus": 91.8,
+    "pf7": 2.34,
+    "pa7": 12.0,
+    "pd7": -9.66,
+    "si_plus": 91.2,
+    "df_plus": 92.5,
     "apr_plus": 97.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
@@ -26,27 +26,41 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -4.032,
-      "matches": 8,
-      "rank_weight": 154,
-      "rank_overall": 1721,
+      "mv_avg": -4.115,
+      "matches": 9,
+      "rank_weight": 161,
+      "rank_overall": 1750,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 7,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34935432132",
-      "opponent_rank": 65,
-      "opponent_name": "Ethan Vergara",
-      "method": "MD 9-1"
+      "opponent_id": "34974780132",
+      "opponent_rank": 76,
+      "opponent_name": "Magnus Bibla",
+      "method": "Dec 4-2"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34974780132",
+      "opponent_name": "Magnus Bibla",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 285,
+      "opponent_rank": 76,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Gardner-Webb"
+    },
     {
       "date": "2025-12-05",
       "opponent_id": "34933981132",

@@ -8,28 +8,28 @@
   "year": 2026,
   "current_rank": 52,
   "record": {
-    "overall": "4-2",
+    "overall": "5-2",
     "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 7.5,
-    "pa7": 4.17,
-    "pd7": 3.33,
-    "si_plus": 96.2,
+    "pf7": 9.11,
+    "pa7": 3.73,
+    "pd7": 5.38,
+    "si_plus": 97.2,
     "df_plus": 104.4,
-    "apr_plus": 96.2,
+    "apr_plus": 96.5,
     "pin_rate": 0.0,
-    "bonus_rate": 0.25,
+    "bonus_rate": 0.4,
     "majors": 0,
-    "techs": 1,
+    "techs": 2,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.58,
-      "matches": 6,
+      "mv_avg": 0.642,
+      "matches": 7,
       "rank_weight": 68,
-      "rank_overall": 575,
+      "rank_overall": 562,
       "version": "v1"
     }
   },
@@ -65,6 +65,20 @@
       "score": "4-0",
       "duration": "7:00",
       "event": "vs. Gardner-Webb"
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34963808132",
+      "opponent_name": "Colin Scherer",
+      "opponent_team": "Mercyherst",
+      "opponent_team_rank": null,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "6:21",
+      "event": "vs. Mercyhurst"
     },
     {
       "date": "2025-11-22",
@@ -140,6 +154,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.5
   }
 }

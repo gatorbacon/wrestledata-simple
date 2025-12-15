@@ -8,34 +8,34 @@
   "year": 2026,
   "current_rank": 56,
   "record": {
-    "overall": "2-5",
-    "vs_ranked": "0-4",
+    "overall": "2-6",
+    "vs_ranked": "0-5",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 5.23,
-    "pa7": 4.6,
-    "pd7": 0.64,
-    "si_plus": 98.0,
-    "df_plus": 108.6,
-    "apr_plus": 95.0,
+    "pf7": 4.58,
+    "pa7": 4.4,
+    "pd7": 0.18,
+    "si_plus": 96.6,
+    "df_plus": 109.5,
+    "apr_plus": 94.6,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 2,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -1.019,
-      "matches": 7,
-      "rank_weight": 89,
-      "rank_overall": 1014,
+      "mv_avg": -1.161,
+      "matches": 8,
+      "rank_weight": 92,
+      "rank_overall": 1068,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
@@ -47,6 +47,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34944012132",
+      "opponent_name": "Blake Schaffer",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 197,
+      "opponent_rank": 31,
+      "result": "L",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "vs. Kent State"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34934108132",
@@ -149,6 +163,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
+    "top33_bonus_ev_shrunk": 0.4
   }
 }

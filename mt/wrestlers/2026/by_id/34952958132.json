@@ -8,34 +8,34 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "5-4",
-    "vs_ranked": "1-2",
+    "overall": "5-6",
+    "vs_ranked": "1-4",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 4.23,
-    "pa7": 5.63,
-    "pd7": -1.4,
-    "si_plus": 89.0,
-    "df_plus": 103.3,
-    "apr_plus": 95.7,
+    "pf7": 3.48,
+    "pa7": 6.6,
+    "pd7": -3.12,
+    "si_plus": 88.6,
+    "df_plus": 102.1,
+    "apr_plus": 96.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -2.122,
-      "matches": 5,
-      "rank_weight": 129,
-      "rank_overall": 1327,
+      "mv_avg": -2.331,
+      "matches": 7,
+      "rank_weight": 134,
+      "rank_overall": 1386,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -45,13 +45,41 @@
       "method": "Dec 8-2"
     },
     "worst_loss": {
-      "opponent_id": "34944168132",
-      "opponent_rank": 33,
-      "opponent_name": "Tucker Owens",
-      "method": "SV-3 4-1"
+      "opponent_id": "34944029132",
+      "opponent_rank": 54,
+      "opponent_name": "Nick Molchak",
+      "method": "Dec 2-0"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34937481132",
+      "opponent_name": "T.K. Davis",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 133,
+      "opponent_rank": 20,
+      "result": "L",
+      "method": "TF",
+      "score": "19-1",
+      "duration": "0:00",
+      "event": "vs. Gardner-Webb"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34944029132",
+      "opponent_name": "Nick Molchak",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 133,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "vs. Kent State"
+    },
     {
       "date": "2025-12-05",
       "opponent_id": "34935055132",

@@ -8,37 +8,42 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "3-3",
-    "vs_ranked": "0-1",
+    "overall": "4-3",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 4.28,
-    "pa7": 8.6,
-    "pd7": -4.32,
-    "si_plus": 91.3,
-    "df_plus": 98.8,
-    "apr_plus": 96.9,
+    "pf7": 4.4,
+    "pa7": 7.17,
+    "pd7": -2.76,
+    "si_plus": 92.4,
+    "df_plus": 100.6,
+    "apr_plus": 97.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -2.156,
-      "matches": 6,
-      "rank_weight": 130,
-      "rank_overall": 1341,
+      "mv_avg": -2.035,
+      "matches": 7,
+      "rank_weight": 127,
+      "rank_overall": 1310,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34935052132",
+      "opponent_rank": 74,
+      "opponent_name": "William Morrow",
+      "method": "Dec 5-0"
+    },
     "worst_loss": {
       "opponent_id": "34939067132",
       "opponent_rank": 65,
@@ -47,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-09",
+      "opponent_id": "34935052132",
+      "opponent_name": "William Morrow",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 157,
+      "opponent_rank": 74,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "vs. Bloomsburg"
+    },
     {
       "date": "2025-11-16",
       "opponent_id": "34934403132",

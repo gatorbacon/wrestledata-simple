@@ -8,41 +8,41 @@
   "year": 2026,
   "current_rank": 5,
   "record": {
-    "overall": "6-1",
-    "vs_ranked": "3-1",
-    "vs_top10": "1-1",
-    "vs_top25": "3-1"
+    "overall": "7-1",
+    "vs_ranked": "4-1",
+    "vs_top10": "2-1",
+    "vs_top25": "4-1"
   },
   "metrics": {
-    "pf7": 16.9,
-    "pa7": 5.05,
-    "pd7": 11.86,
-    "si_plus": 121.7,
-    "df_plus": 110.9,
-    "apr_plus": 98.8,
+    "pf7": 15.79,
+    "pa7": 4.92,
+    "pd7": 10.87,
+    "si_plus": 119.2,
+    "df_plus": 111.4,
+    "apr_plus": 98.5,
     "pin_rate": 0.0,
-    "bonus_rate": 0.833,
+    "bonus_rate": 0.714,
     "majors": 1,
     "techs": 4,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 3.119,
-      "matches": 6,
-      "rank_weight": 9,
-      "rank_overall": 113,
+      "mv_avg": 3.467,
+      "matches": 7,
+      "rank_weight": 6,
+      "rank_overall": 81,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 1,
-    "top10_wins": 1,
+    "top10_wins": 2,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "34935623132",
-      "opponent_rank": 7,
-      "opponent_name": "Christopher Minto",
-      "method": "Dec 5-1"
+      "opponent_id": "34935689132",
+      "opponent_rank": 2,
+      "opponent_name": "Matty Singleton",
+      "method": "Dec 8-4"
     },
     "worst_loss": {
       "opponent_id": "34962152132",
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34935689132",
+      "opponent_name": "Matty Singleton",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 174,
+      "opponent_rank": 2,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "vs. Ohio State"
+    },
     {
       "date": "2025-12-03",
       "opponent_id": "34943847132",
@@ -82,20 +96,6 @@
     },
     {
       "date": "2025-11-15",
-      "opponent_id": "34962152132",
-      "opponent_name": "Patrick Kennedy",
-      "opponent_team": "Iowa",
-      "opponent_team_rank": 3,
-      "opponent_weight": 174,
-      "opponent_rank": 3,
-      "result": "L",
-      "method": "DEC",
-      "score": "4-1",
-      "duration": "8:15",
-      "event": "vs. Ohio State"
-    },
-    {
-      "date": "2025-11-15",
       "opponent_id": "34955787132",
       "opponent_name": "Ethan Riddle",
       "opponent_team": "Minnesota",
@@ -121,6 +121,20 @@
       "score": "5-1",
       "duration": "7:00",
       "event": "vs. Ohio State"
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34962152132",
+      "opponent_name": "Patrick Kennedy",
+      "opponent_team": "Iowa",
+      "opponent_team_rank": 3,
+      "opponent_weight": 174,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "vs. Iowa"
     },
     {
       "date": "2025-11-15",

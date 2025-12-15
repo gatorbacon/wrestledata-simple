@@ -17,19 +17,19 @@
     "pf7": 14.09,
     "pa7": 4.3,
     "pd7": 9.79,
-    "si_plus": 121.4,
-    "df_plus": 111.3,
-    "apr_plus": 98.1,
+    "si_plus": 121.2,
+    "df_plus": 111.4,
+    "apr_plus": 97.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.833,
     "majors": 1,
     "techs": 4,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 2.231,
+      "mv_avg": 2.203,
       "matches": 9,
-      "rank_weight": 13,
-      "rank_overall": 236,
+      "rank_weight": 14,
+      "rank_overall": 235,
       "version": "v1"
     }
   },
@@ -110,20 +110,6 @@
     },
     {
       "date": "2025-11-16",
-      "opponent_id": "34962152132",
-      "opponent_name": "Patrick Kennedy",
-      "opponent_team": "Iowa",
-      "opponent_team_rank": 3,
-      "opponent_weight": 174,
-      "opponent_rank": 3,
-      "result": "L",
-      "method": "DEC",
-      "score": "4-1",
-      "duration": "8:15",
-      "event": "vs. Oklahoma State"
-    },
-    {
-      "date": "2025-11-16",
       "opponent_id": "34935623132",
       "opponent_name": "Christopher Minto",
       "opponent_team": "Nebraska",
@@ -135,6 +121,20 @@
       "score": "2-1",
       "duration": "7:00",
       "event": "vs. Oklahoma State"
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34962152132",
+      "opponent_name": "Patrick Kennedy",
+      "opponent_team": "Iowa",
+      "opponent_team_rank": 3,
+      "opponent_weight": 174,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "vs. Iowa"
     },
     {
       "date": "2025-11-15",
@@ -182,6 +182,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.4398148148148148
+    "top33_bonus_ev_shrunk": 0.4722222222222222
   }
 }

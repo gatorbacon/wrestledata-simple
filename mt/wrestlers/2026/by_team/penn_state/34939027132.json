@@ -8,34 +8,34 @@
   "year": 2026,
   "current_rank": 3,
   "record": {
-    "overall": "6-0",
-    "vs_ranked": "3-0",
+    "overall": "6-1",
+    "vs_ranked": "3-1",
     "vs_top10": "1-0",
-    "vs_top25": "1-0"
+    "vs_top25": "1-1"
   },
   "metrics": {
-    "pf7": 15.75,
-    "pa7": 3.35,
-    "pd7": 12.4,
-    "si_plus": 126.0,
-    "df_plus": 112.4,
-    "apr_plus": 123.4,
+    "pf7": 13.0,
+    "pa7": 4.68,
+    "pd7": 8.32,
+    "si_plus": 118.8,
+    "df_plus": 110.0,
+    "apr_plus": 116.4,
     "pin_rate": 0.333,
     "bonus_rate": 0.833,
     "majors": 1,
     "techs": 2,
     "pins": 2,
     "mat_value": {
-      "mv_avg": 4.758,
-      "matches": 6,
-      "rank_weight": 1,
-      "rank_overall": 21,
+      "mv_avg": 3.824,
+      "matches": 7,
+      "rank_weight": 7,
+      "rank_overall": 62,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -44,9 +44,28 @@
       "opponent_name": "DJ Parker",
       "method": "MD 13-3"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34933446132",
+      "opponent_rank": 15,
+      "opponent_name": "Joey Novak",
+      "method": "MD 10-2"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34933446132",
+      "opponent_name": "Joey Novak",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 22,
+      "opponent_weight": 197,
+      "opponent_rank": 15,
+      "result": "L",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. Wyoming"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34952674132",

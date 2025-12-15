@@ -8,37 +8,42 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-4",
-    "vs_ranked": "0-2",
+    "overall": "3-4",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 3.17,
-    "pa7": 5.5,
-    "pd7": -2.33,
-    "si_plus": 95.1,
-    "df_plus": 103.3,
-    "apr_plus": 97.1,
+    "pf7": 3.14,
+    "pa7": 4.86,
+    "pd7": -1.71,
+    "si_plus": 94.0,
+    "df_plus": 104.6,
+    "apr_plus": 97.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -2.094,
-      "matches": 6,
-      "rank_weight": 140,
-      "rank_overall": 1319,
+      "mv_avg": -1.462,
+      "matches": 7,
+      "rank_weight": 123,
+      "rank_overall": 1151,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34952969132",
+      "opponent_rank": 57,
+      "opponent_name": "Aaron Lanster",
+      "method": "Dec 3-1"
+    },
     "worst_loss": {
       "opponent_id": "34951034132",
       "opponent_rank": 38,
@@ -47,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34952969132",
+      "opponent_name": "Aaron Lanster",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 141,
+      "opponent_rank": 57,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "vs. Kent State"
+    },
     {
       "date": "2025-11-15",
       "opponent_id": "34955051132",

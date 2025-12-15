@@ -8,37 +8,42 @@
   "year": 2026,
   "current_rank": 73,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-4",
+    "overall": "1-4",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 1.0,
-    "pa7": 6.25,
-    "pd7": -5.25,
-    "si_plus": 86.5,
-    "df_plus": 104.2,
-    "apr_plus": 99.8,
+    "pf7": 1.2,
+    "pa7": 5.2,
+    "pd7": -4.0,
+    "si_plus": 87.2,
+    "df_plus": 106.3,
+    "apr_plus": 98.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -2.985,
-      "matches": 4,
-      "rank_weight": 137,
-      "rank_overall": 1522,
+      "mv_avg": -1.794,
+      "matches": 5,
+      "rank_weight": 116,
+      "rank_overall": 1246,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34935054132",
+      "opponent_rank": 60,
+      "opponent_name": "Mason Rebuck",
+      "method": "Dec 2-1"
+    },
     "worst_loss": {
       "opponent_id": "34935432132",
       "opponent_rank": 65,
@@ -47,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-09",
+      "opponent_id": "34935054132",
+      "opponent_name": "Mason Rebuck",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 285,
+      "opponent_rank": 60,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "vs. LIU"
+    },
     {
       "date": "2025-12-05",
       "opponent_id": "34948502132",

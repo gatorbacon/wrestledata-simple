@@ -8,48 +8,43 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "1-1",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "3-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 14.25,
-    "pa7": 3.19,
-    "pd7": 11.06,
-    "si_plus": 112.9,
-    "df_plus": 114.9,
-    "apr_plus": 94.9,
+    "pf7": 19.0,
+    "pa7": 2.92,
+    "pd7": 16.08,
+    "si_plus": 127.5,
+    "df_plus": 112.5,
+    "apr_plus": 93.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.667,
     "majors": 0,
     "techs": 2,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 1.87,
-      "matches": 4,
-      "rank_weight": 19,
-      "rank_overall": 295,
+      "mv_avg": 2.456,
+      "matches": 3,
+      "rank_weight": 12,
+      "rank_overall": 195,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34943395132",
       "opponent_rank": 29,
       "opponent_name": "Nick Fine",
       "method": "Dec 7-3"
     },
-    "worst_loss": {
-      "opponent_id": "34939016132",
-      "opponent_rank": 1,
-      "opponent_name": "Levi Haines",
-      "method": "Dec 4-0"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -92,20 +87,6 @@
       "method": "TF",
       "score": "15-0",
       "duration": "3:53",
-      "event": "Black Knight Invite"
-    },
-    {
-      "date": "2025-11-23",
-      "opponent_id": "34939016132",
-      "opponent_name": "Levi Haines",
-      "opponent_team": "Penn State",
-      "opponent_team_rank": 1,
-      "opponent_weight": 174,
-      "opponent_rank": 1,
-      "result": "L",
-      "method": "DEC",
-      "score": "4-0",
-      "duration": "7:00",
       "event": "Black Knight Invite"
     }
   ]

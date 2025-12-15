@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "7-5",
+    "overall": "8-5",
     "vs_ranked": "2-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,19 +17,19 @@
     "pf7": 6.12,
     "pa7": 5.0,
     "pd7": 1.13,
-    "si_plus": 97.5,
+    "si_plus": 97.3,
     "df_plus": 103.9,
-    "apr_plus": 107.4,
-    "pin_rate": 0.286,
-    "bonus_rate": 0.429,
+    "apr_plus": 107.2,
+    "pin_rate": 0.375,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
-    "pins": 2,
+    "pins": 3,
     "mat_value": {
-      "mv_avg": 0.587,
-      "matches": 12,
-      "rank_weight": 67,
-      "rank_overall": 570,
+      "mv_avg": 0.707,
+      "matches": 13,
+      "rank_weight": 65,
+      "rank_overall": 544,
       "version": "v1"
     }
   },
@@ -92,6 +92,20 @@
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
+      "event": "Kent State Open 1"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34963800132",
+      "opponent_name": "Noah Adamson",
+      "opponent_team": "Mercyherst",
+      "opponent_team_rank": null,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:43",
       "event": "Kent State Open 1"
     },
     {
@@ -224,6 +238,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.5
   }
 }

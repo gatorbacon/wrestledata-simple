@@ -8,35 +8,35 @@
   "year": 2026,
   "current_rank": 4,
   "record": {
-    "overall": "8-0",
-    "vs_ranked": "4-0",
-    "vs_top10": "1-0",
-    "vs_top25": "2-0"
+    "overall": "9-0",
+    "vs_ranked": "5-0",
+    "vs_top10": "2-0",
+    "vs_top25": "3-0"
   },
   "metrics": {
-    "pf7": 20.26,
-    "pa7": 4.62,
-    "pd7": 15.65,
-    "si_plus": 142.4,
-    "df_plus": 109.8,
-    "apr_plus": 104.5,
-    "pin_rate": 0.125,
-    "bonus_rate": 0.875,
-    "majors": 3,
+    "pf7": 18.65,
+    "pa7": 4.1,
+    "pd7": 14.56,
+    "si_plus": 136.0,
+    "df_plus": 111.3,
+    "apr_plus": 102.9,
+    "pin_rate": 0.111,
+    "bonus_rate": 0.889,
+    "majors": 4,
     "techs": 3,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 4.519,
-      "matches": 7,
+      "mv_avg": 4.676,
+      "matches": 8,
       "rank_weight": 5,
-      "rank_overall": 24,
+      "rank_overall": 21,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 5,
     "ranked_losses": 0,
-    "top10_wins": 1,
+    "top10_wins": 2,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34935617132",
@@ -47,6 +47,20 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34935693132",
+      "opponent_name": "Jackson Arrington",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 157,
+      "opponent_rank": 10,
+      "result": "W",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "vs. Ohio State"
+    },
     {
       "date": "2025-12-03",
       "opponent_id": "34943840132",
@@ -161,8 +175,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 0.6666666666666666,
-    "top33_bonus_ev_shrunk": 0.8068181818181818
+    "top33_wins": 4,
+    "top33_bonus_ev_raw": 0.75,
+    "top33_bonus_ev_shrunk": 0.829861111111111
   }
 }

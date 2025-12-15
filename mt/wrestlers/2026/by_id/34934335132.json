@@ -8,17 +8,17 @@
   "year": 2026,
   "current_rank": 61,
   "record": {
-    "overall": "9-8",
-    "vs_ranked": "0-7",
+    "overall": "9-9",
+    "vs_ranked": "0-8",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 5.51,
-    "pa7": 5.79,
-    "pd7": -0.28,
-    "si_plus": 97.1,
-    "df_plus": 105.2,
+    "pf7": 5.24,
+    "pa7": 6.1,
+    "pd7": -0.85,
+    "si_plus": 96.7,
+    "df_plus": 104.5,
     "apr_plus": 96.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.333,
@@ -26,16 +26,16 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.08,
-      "matches": 16,
-      "rank_weight": 89,
-      "rank_overall": 770,
+      "mv_avg": -0.244,
+      "matches": 17,
+      "rank_weight": 99,
+      "rank_overall": 818,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 7,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
@@ -47,6 +47,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34945804132",
+      "opponent_name": "Joey Buttler",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 149,
+      "opponent_rank": 50,
+      "result": "L",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "vs. Indiana"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34944675132",
@@ -63,16 +77,16 @@
     },
     {
       "date": "2025-11-23",
-      "opponent_id": "34943381132",
-      "opponent_name": "Richard Fedalen",
-      "opponent_team": "Columbia",
-      "opponent_team_rank": 50,
+      "opponent_id": "34939015132",
+      "opponent_name": "Shayne Van Ness",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
       "opponent_weight": 149,
-      "opponent_rank": 53,
+      "opponent_rank": 1,
       "result": "L",
-      "method": "DEC",
-      "score": "5-0",
-      "duration": "7:00",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "6:49",
       "event": "Black Knight Invite"
     },
     {
@@ -91,30 +105,30 @@
     },
     {
       "date": "2025-11-23",
-      "opponent_id": "34939015132",
-      "opponent_name": "Shayne Van Ness",
-      "opponent_team": "Penn State",
-      "opponent_team_rank": 1,
+      "opponent_id": "34943381132",
+      "opponent_name": "Richard Fedalen",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
       "opponent_weight": 149,
-      "opponent_rank": 1,
+      "opponent_rank": 53,
       "result": "L",
-      "method": "TF",
-      "score": "16-1",
-      "duration": "6:49",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
       "event": "Black Knight Invite"
     },
     {
       "date": "2025-11-16",
-      "opponent_id": "34945132132",
-      "opponent_name": "Nick Villani",
-      "opponent_team": "Rutgers",
-      "opponent_team_rank": 17,
+      "opponent_id": "34953842132",
+      "opponent_name": "Jackson Herman",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 71,
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
-      "score": "8-4",
-      "duration": "7:00",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "5:41",
       "event": "Army Open"
     },
     {
@@ -133,6 +147,20 @@
     },
     {
       "date": "2025-11-16",
+      "opponent_id": "34945132132",
+      "opponent_name": "Nick Villani",
+      "opponent_team": "Rutgers",
+      "opponent_team_rank": 17,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "Army Open"
+    },
+    {
+      "date": "2025-11-16",
       "opponent_id": "34947840132",
       "opponent_name": "Luke Geleta",
       "opponent_team": "Binghamton",
@@ -146,18 +174,18 @@
       "event": "Army Open"
     },
     {
-      "date": "2025-11-16",
-      "opponent_id": "34953842132",
-      "opponent_name": "Jackson Herman",
+      "date": "2025-11-09",
+      "opponent_id": "34953927132",
+      "opponent_name": "Noah Tocaben",
       "opponent_team": "LIU",
       "opponent_team_rank": 71,
       "opponent_weight": 149,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "5:41",
-      "event": "Army Open"
+      "opponent_rank": 57,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "2025 Journeymen Collegiate Classic"
     },
     {
       "date": "2025-11-09",
@@ -185,20 +213,6 @@
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "2025 Journeymen Collegiate Classic"
-    },
-    {
-      "date": "2025-11-09",
-      "opponent_id": "34953927132",
-      "opponent_name": "Noah Tocaben",
-      "opponent_team": "LIU",
-      "opponent_team_rank": 71,
-      "opponent_weight": 149,
-      "opponent_rank": 57,
-      "result": "L",
-      "method": "DEC",
-      "score": "4-1",
-      "duration": "8:15",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -231,6 +245,20 @@
     },
     {
       "date": "2025-11-02",
+      "opponent_id": "34948515132",
+      "opponent_name": "Eli Carr",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 63,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
       "opponent_id": "34937667132",
       "opponent_name": "Alex Turley",
       "opponent_team": "Hofstra",
@@ -240,20 +268,6 @@
       "result": "W",
       "method": "DEC",
       "score": "5-2",
-      "duration": "7:00",
-      "event": "Princeton Open"
-    },
-    {
-      "date": "2025-11-02",
-      "opponent_id": "34952676132",
-      "opponent_name": "Kelvin Griffin",
-      "opponent_team": "Lehigh",
-      "opponent_team_rank": 16,
-      "opponent_weight": 149,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "DEC",
-      "score": null,
       "duration": "7:00",
       "event": "Princeton Open"
     },
@@ -273,15 +287,15 @@
     },
     {
       "date": "2025-11-02",
-      "opponent_id": "34948515132",
-      "opponent_name": "Eli Carr",
-      "opponent_team": "Brown",
-      "opponent_team_rank": 63,
+      "opponent_id": "34952676132",
+      "opponent_name": "Kelvin Griffin",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "W",
       "method": "DEC",
-      "score": "5-3",
+      "score": null,
       "duration": "7:00",
       "event": "Princeton Open"
     }
@@ -289,6 +303,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.5
   }
 }

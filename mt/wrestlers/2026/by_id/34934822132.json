@@ -8,33 +8,33 @@
   "year": 2026,
   "current_rank": 19,
   "record": {
-    "overall": "7-3",
-    "vs_ranked": "5-3",
+    "overall": "8-3",
+    "vs_ranked": "6-3",
     "vs_top10": "0-0",
-    "vs_top25": "2-2"
+    "vs_top25": "3-2"
   },
   "metrics": {
-    "pf7": 10.89,
-    "pa7": 7.19,
-    "pd7": 3.7,
-    "si_plus": 116.2,
-    "df_plus": 104.8,
-    "apr_plus": 103.7,
-    "pin_rate": 0.143,
-    "bonus_rate": 0.571,
+    "pf7": 10.2,
+    "pa7": 6.57,
+    "pd7": 3.63,
+    "si_plus": 114.2,
+    "df_plus": 105.3,
+    "apr_plus": 102.8,
+    "pin_rate": 0.125,
+    "bonus_rate": 0.5,
     "majors": 2,
     "techs": 1,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 2.719,
-      "matches": 10,
-      "rank_weight": 17,
-      "rank_overall": 156,
+      "mv_avg": 2.784,
+      "matches": 11,
+      "rank_weight": 18,
+      "rank_overall": 154,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 6,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "34963114132",
+      "opponent_name": "Conrad Hendriksen",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 21,
+      "opponent_weight": 125,
+      "opponent_rank": 24,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "vs. Rider"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34951047132",
@@ -194,8 +208,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 0.3333333333333333,
-    "top33_bonus_ev_shrunk": 0.31986531986531985
+    "top33_wins": 4,
+    "top33_bonus_ev_raw": 0.25,
+    "top33_bonus_ev_shrunk": 0.28703703703703703
   }
 }

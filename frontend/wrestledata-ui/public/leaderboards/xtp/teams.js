@@ -3,6 +3,49 @@ function safe(v, fn) {
   return fn ? fn(v) : v;
 }
 
+function createRankBadge(rank) {
+  if (rank === null || rank === undefined || rank === "") {
+    return document.createTextNode("—");
+  }
+  
+  const badge = document.createElement("span");
+  badge.className = "rank-badge";
+  
+  // Top 5 get accent color, others get muted
+  if (rank <= 5) {
+    badge.classList.add("top");
+  } else {
+    badge.classList.add("standard");
+  }
+  
+  badge.textContent = `#${rank}`;
+  return badge;
+}
+
+function createMetricBar(value, maxValue) {
+  if (value === null || value === undefined || maxValue === 0) {
+    return document.createTextNode("—");
+  }
+  
+  // Cap width at 96%
+  const width = Math.min((value / maxValue) * 100, 96);
+  
+  const bar = document.createElement("div");
+  bar.className = "metric-bar";
+  
+  const fill = document.createElement("div");
+  fill.className = "metric-bar-fill";
+  fill.style.width = `${width}%`;
+  
+  const valueSpan = document.createElement("span");
+  valueSpan.className = "metric-bar-value";
+  valueSpan.textContent = value.toFixed(1);
+  
+  bar.appendChild(fill);
+  bar.appendChild(valueSpan);
+  return bar;
+}
+
 function resolveSeason() {
   return "2026"; // Or make dynamic later
 }
@@ -50,6 +93,11 @@ function renderLeaderboard() {
     return a.team.localeCompare(b.team);
   });
   
+  // Calculate max xTP for bars
+  const maxXTP = sorted.length > 0 
+    ? Math.max(...sorted.map(t => t.team_xTP || 0))
+    : 0;
+  
   const tbody = document.querySelector("#leaderboard-table tbody");
   tbody.innerHTML = "";
   
@@ -69,9 +117,9 @@ function renderLeaderboard() {
     expandTd.appendChild(expandIcon);
     tr.appendChild(expandTd);
     
-    // Rank
+    // Rank with badge
     const rankTd = document.createElement("td");
-    rankTd.textContent = rank;
+    rankTd.appendChild(createRankBadge(rank));
     tr.appendChild(rankTd);
     
     // Team name (clickable)
@@ -83,27 +131,31 @@ function renderLeaderboard() {
     teamTd.appendChild(teamLink);
     tr.appendChild(teamTd);
     
-    // xTP (total, bold)
+    // xTP (total, bold) - primary metric with bar
     const xtpTd = document.createElement("td");
-    xtpTd.className = "xtp-total";
-    xtpTd.textContent = safe(team.team_xTP, v => v.toFixed(1));
+    xtpTd.className = "num metric-primary";
+    if (team.team_xTP !== null && team.team_xTP !== undefined && maxXTP > 0) {
+      xtpTd.appendChild(createMetricBar(team.team_xTP, maxXTP));
+    } else {
+      xtpTd.textContent = "—";
+    }
     tr.appendChild(xtpTd);
     
-    // xTP_P
+    // xTP_P - subcomponent
     const xtpPTd = document.createElement("td");
-    xtpPTd.className = "xtp-component";
+    xtpPTd.className = "num metric-sub";
     xtpPTd.textContent = safe(team.team_xTP_P, v => v.toFixed(1));
     tr.appendChild(xtpPTd);
     
-    // xTP_A
+    // xTP_A - subcomponent
     const xtpATd = document.createElement("td");
-    xtpATd.className = "xtp-component";
+    xtpATd.className = "num metric-sub";
     xtpATd.textContent = safe(team.team_xTP_A, v => v.toFixed(1));
     tr.appendChild(xtpATd);
     
-    // xTP_B
+    // xTP_B - subcomponent
     const xtpBTd = document.createElement("td");
-    xtpBTd.className = "xtp-component";
+    xtpBTd.className = "num metric-sub";
     xtpBTd.textContent = safe(team.team_xTP_B, v => v.toFixed(1));
     tr.appendChild(xtpBTd);
     
@@ -187,23 +239,27 @@ function renderLeaderboard() {
           rankTd.textContent = safe(weightData.rank, v => `#${v}`);
           row.appendChild(rankTd);
           
-          // xTP (total)
+          // xTP (total) - primary metric
           const xtpTd = document.createElement("td");
+          xtpTd.className = "num metric-primary";
           xtpTd.textContent = safe(weightData.xTP, v => v.toFixed(1));
           row.appendChild(xtpTd);
           
-          // xTP_P
+          // xTP_P - subcomponent
           const xtpPTd = document.createElement("td");
+          xtpPTd.className = "num metric-sub";
           xtpPTd.textContent = safe(weightData.xTP_P, v => v.toFixed(1));
           row.appendChild(xtpPTd);
           
-          // xTP_A
+          // xTP_A - subcomponent
           const xtpATd = document.createElement("td");
+          xtpATd.className = "num metric-sub";
           xtpATd.textContent = safe(weightData.xTP_A, v => v.toFixed(1));
           row.appendChild(xtpATd);
           
-          // xTP_B
+          // xTP_B - subcomponent
           const xtpBTd = document.createElement("td");
+          xtpBTd.className = "num metric-sub";
           xtpBTd.textContent = safe(weightData.xTP_B, v => v.toFixed(1));
           row.appendChild(xtpBTd);
         } else {

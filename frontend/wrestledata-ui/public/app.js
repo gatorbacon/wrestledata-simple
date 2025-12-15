@@ -11,6 +11,25 @@ function safe(value, formatter) {
     return (v * 100).toFixed(1) + "%";
   }
   
+  function createRankBadge(rank) {
+    if (rank === null || rank === undefined || rank === "") {
+      return document.createTextNode("—");
+    }
+    
+    const badge = document.createElement("span");
+    badge.className = "rank-badge";
+    
+    // Top 5 get accent color, others get muted
+    if (rank <= 5) {
+      badge.classList.add("top");
+    } else {
+      badge.classList.add("standard");
+    }
+    
+    badge.textContent = `#${rank}`;
+    return badge;
+  }
+  
   function resolveSeason() {
     return "2026"; // Or make dynamic later
   }
@@ -54,8 +73,16 @@ function safe(value, formatter) {
   
   function renderWrestlerProfile(data) {
     document.getElementById("wrestler-name").textContent = safe(data.name);
-    document.getElementById("wrestler-tagline").textContent =
-      `#${safe(data.current_rank)} at ${safe(data.weight_class)} lbs`;
+    
+    // Wrestler tagline with rank badge
+    const taglineEl = document.getElementById("wrestler-tagline");
+    taglineEl.innerHTML = "";
+    if (data.current_rank) {
+      taglineEl.appendChild(createRankBadge(data.current_rank));
+      taglineEl.appendChild(document.createTextNode(` at ${safe(data.weight_class)} lbs`));
+    } else {
+      taglineEl.textContent = `${safe(data.weight_class)} lbs`;
+    }
   
     // Render team name as link
     const metaEl = document.getElementById("wrestler-meta");
@@ -102,17 +129,30 @@ function safe(value, formatter) {
     } else {
       console.log("Mat Value found:", mv);
     }
-    document.getElementById("metric-mv").textContent =
-      safe(mv.mv_avg !== undefined && mv.mv_avg !== null ? mv.mv_avg.toFixed(3) : null);
+    // MV with bar visualization
+    const mvEl = document.getElementById("metric-mv");
+    if (mv.mv_avg !== null && mv.mv_avg !== undefined) {
+      // For wrestler profile, we need a reference max - use a reasonable default
+      // or compute from all wrestlers if available. For now, use a fixed scale.
+      // A typical MV range is -5 to +8, so we'll use 10 as a reasonable max
+      const maxMV = 10;
+      const mvBar = createMetricBar(mv.mv_avg, maxMV);
+      mvEl.innerHTML = "";
+      mvEl.appendChild(mvBar);
+    } else {
+      mvEl.textContent = "—";
+    }
     
-    // MV Ranks
+    // MV Ranks with badges
     const rankWeight = mv.rank_weight;
-    document.getElementById("metric-mv-rank-weight").textContent =
-      rankWeight !== null && rankWeight !== undefined ? `#${rankWeight}` : "—";
+    const rankWeightEl = document.getElementById("metric-mv-rank-weight");
+    rankWeightEl.innerHTML = "";
+    rankWeightEl.appendChild(createRankBadge(rankWeight));
     
     const rankOverall = mv.rank_overall;
-    document.getElementById("metric-mv-rank-overall").textContent =
-      rankOverall !== null && rankOverall !== undefined ? `#${rankOverall}` : "—";
+    const rankOverallEl = document.getElementById("metric-mv-rank-overall");
+    rankOverallEl.innerHTML = "";
+    rankOverallEl.appendChild(createRankBadge(rankOverall));
     
     // MV Leaderboard link
     const leaderboardLinkEl = document.getElementById("mv-leaderboard-link");

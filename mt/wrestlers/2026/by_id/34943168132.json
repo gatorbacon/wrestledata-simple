@@ -8,28 +8,28 @@
   "year": 2026,
   "current_rank": 21,
   "record": {
-    "overall": "3-0",
+    "overall": "4-0",
     "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 6.67,
-    "pa7": 1.0,
-    "pd7": 5.67,
-    "si_plus": 107.7,
-    "df_plus": 112.7,
-    "apr_plus": 100.8,
+    "pf7": 6.5,
+    "pa7": 1.5,
+    "pd7": 5.0,
+    "si_plus": 106.7,
+    "df_plus": 112.6,
+    "apr_plus": 99.2,
     "pin_rate": 0.0,
-    "bonus_rate": 0.333,
+    "bonus_rate": 0.25,
     "majors": 1,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 2.604,
-      "matches": 3,
-      "rank_weight": 20,
-      "rank_overall": 176,
+      "mv_avg": 2.958,
+      "matches": 4,
+      "rank_weight": 13,
+      "rank_overall": 130,
       "version": "v1"
     }
   },
@@ -47,6 +47,20 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34946798132",
+      "opponent_name": "Louie Gill",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "vs. West Virginia"
+    },
     {
       "date": "2025-11-21",
       "opponent_id": "34935905132",
@@ -93,6 +107,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.3148148148148148
+    "top33_bonus_ev_shrunk": 0.3055555555555556
   }
 }

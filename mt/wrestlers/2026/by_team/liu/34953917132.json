@@ -8,17 +8,17 @@
   "year": 2026,
   "current_rank": 68,
   "record": {
-    "overall": "4-5",
-    "vs_ranked": "1-4",
+    "overall": "4-6",
+    "vs_ranked": "1-5",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 5.75,
-    "pa7": 15.7,
-    "pd7": -9.95,
-    "si_plus": 99.1,
-    "df_plus": 83.8,
+    "pf7": 5.03,
+    "pa7": 16.86,
+    "pd7": -11.83,
+    "si_plus": 97.6,
+    "df_plus": 83.0,
     "apr_plus": 99.9,
     "pin_rate": 0.25,
     "bonus_rate": 0.5,
@@ -26,16 +26,16 @@
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": -1.06,
-      "matches": 9,
-      "rank_weight": 102,
-      "rank_overall": 1030,
+      "mv_avg": -1.307,
+      "matches": 10,
+      "rank_weight": 110,
+      "rank_overall": 1109,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -45,13 +45,27 @@
       "method": "Inj. 0:15"
     },
     "worst_loss": {
-      "opponent_id": "34943975132",
-      "opponent_rank": 43,
-      "opponent_name": "Mack Mauger",
-      "method": "MD 14-3"
+      "opponent_id": "34936230132",
+      "opponent_rank": 50,
+      "opponent_name": "Jace Schafer",
+      "method": "TF 17-0 4:16"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-09",
+      "opponent_id": "34936230132",
+      "opponent_name": "Jace Schafer",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 125,
+      "opponent_rank": 50,
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "4:16",
+      "event": "vs. LIU"
+    },
     {
       "date": "2025-12-05",
       "opponent_id": "34948497132",

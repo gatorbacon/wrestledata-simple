@@ -19,16 +19,16 @@
     "pd7": 4.74,
     "si_plus": 97.8,
     "df_plus": 112.7,
-    "apr_plus": 106.8,
+    "apr_plus": 110.8,
     "pin_rate": 0.2,
     "bonus_rate": 0.4,
     "majors": 0,
     "techs": 1,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 1.694,
+      "mv_avg": 1.696,
       "matches": 6,
-      "rank_weight": 28,
+      "rank_weight": 27,
       "rank_overall": 322,
       "version": "v1"
     }
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34948506132",
+      "opponent_name": "Alex Hamrick",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 63,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:28",
+      "event": "Cougar Clash"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34948512132",
@@ -121,25 +135,11 @@
       "score": "5-2",
       "duration": "7:00",
       "event": "Cougar Clash"
-    },
-    {
-      "date": "2025-12-07",
-      "opponent_id": "34948506132",
-      "opponent_name": "Alex Hamrick",
-      "opponent_team": "Brown",
-      "opponent_team_rank": 63,
-      "opponent_weight": 197,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:28",
-      "event": "Cougar Clash"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
+    "top33_bonus_ev_shrunk": 0.4
   }
 }

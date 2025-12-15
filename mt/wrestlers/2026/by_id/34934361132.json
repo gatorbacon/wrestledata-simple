@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "7-5",
+    "overall": "8-5",
     "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,18 +18,18 @@
     "pa7": 6.4,
     "pd7": 0.91,
     "si_plus": 103.9,
-    "df_plus": 102.2,
-    "apr_plus": 99.4,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.429,
+    "df_plus": 102.5,
+    "apr_plus": 100.8,
+    "pin_rate": 0.125,
+    "bonus_rate": 0.5,
     "majors": 3,
     "techs": 0,
-    "pins": 0,
+    "pins": 1,
     "mat_value": {
-      "mv_avg": -0.284,
-      "matches": 12,
+      "mv_avg": -0.198,
+      "matches": 13,
       "rank_weight": 68,
-      "rank_overall": 823,
+      "rank_overall": 807,
       "version": "v1"
     }
   },
@@ -137,18 +137,18 @@
       "event": "Army Open"
     },
     {
-      "date": "2025-11-09",
-      "opponent_id": "34950405132",
-      "opponent_name": "Aidan Wallace",
-      "opponent_team": "Duke",
-      "opponent_team_rank": 68,
+      "date": "2025-11-16",
+      "opponent_id": "34963809132",
+      "opponent_name": "Maxx Fesinger",
+      "opponent_team": "Mercyherst",
+      "opponent_team_rank": null,
       "opponent_weight": 174,
-      "opponent_rank": 38,
-      "result": "L",
-      "method": "DEC",
-      "score": "8-1",
-      "duration": "7:00",
-      "event": "2025 Journeymen Collegiate Classic"
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "Army Open"
     },
     {
       "date": "2025-11-09",
@@ -161,6 +161,20 @@
       "result": "W",
       "method": "DEC",
       "score": "4-3",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34950405132",
+      "opponent_name": "Aidan Wallace",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 68,
+      "opponent_weight": 174,
+      "opponent_rank": 38,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-1",
       "duration": "7:00",
       "event": "2025 Journeymen Collegiate Classic"
     },
@@ -194,20 +208,6 @@
     },
     {
       "date": "2025-11-02",
-      "opponent_id": "34937673132",
-      "opponent_name": "Matt Waddell",
-      "opponent_team": "Hofstra",
-      "opponent_team_rank": 69,
-      "opponent_weight": 184,
-      "opponent_rank": 74,
-      "result": "W",
-      "method": "DEC",
-      "score": "8-1",
-      "duration": "8:15",
-      "event": "Princeton Open"
-    },
-    {
-      "date": "2025-11-02",
       "opponent_id": "34955719132",
       "opponent_name": "Duncan Christensen",
       "opponent_team": "Lehigh",
@@ -218,6 +218,20 @@
       "method": "DEC",
       "score": "12-8",
       "duration": "7:00",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937673132",
+      "opponent_name": "Matt Waddell",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 184,
+      "opponent_rank": 74,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "8:15",
       "event": "Princeton Open"
     }
   ],

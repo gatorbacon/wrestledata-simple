@@ -8,28 +8,28 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "4-4",
+    "overall": "5-4",
     "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 9.28,
-    "pa7": 6.83,
-    "pd7": 2.45,
-    "si_plus": 99.7,
-    "df_plus": 98.7,
+    "pf7": 11.53,
+    "pa7": 6.81,
+    "pd7": 4.72,
+    "si_plus": 101.9,
+    "df_plus": 99.6,
     "apr_plus": 99.0,
-    "pin_rate": 0.25,
-    "bonus_rate": 0.75,
+    "pin_rate": 0.2,
+    "bonus_rate": 0.8,
     "majors": 1,
-    "techs": 1,
+    "techs": 2,
     "pins": 1,
     "mat_value": {
-      "mv_avg": -1.04,
-      "matches": 8,
-      "rank_weight": 135,
-      "rank_overall": 1024,
+      "mv_avg": -0.717,
+      "matches": 9,
+      "rank_weight": 121,
+      "rank_overall": 939,
       "version": "v1"
     }
   },
@@ -73,6 +73,20 @@
       "method": "FALL",
       "score": null,
       "duration": "4:02",
+      "event": "Kent State Open 1"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34963808132",
+      "opponent_name": "Colin Scherer",
+      "opponent_team": "Mercyherst",
+      "opponent_team_rank": null,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:11",
       "event": "Kent State Open 1"
     },
     {
@@ -163,6 +177,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.5
   }
 }

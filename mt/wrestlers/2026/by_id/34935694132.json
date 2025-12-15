@@ -8,45 +8,64 @@
   "year": 2026,
   "current_rank": 11,
   "record": {
-    "overall": "10-0",
-    "vs_ranked": "7-0",
-    "vs_top10": "0-0",
-    "vs_top25": "4-0"
+    "overall": "10-1",
+    "vs_ranked": "7-1",
+    "vs_top10": "0-1",
+    "vs_top25": "4-1"
   },
   "metrics": {
-    "pf7": 7.35,
-    "pa7": 2.49,
-    "pd7": 4.85,
-    "si_plus": 106.6,
-    "df_plus": 111.9,
-    "apr_plus": 98.9,
+    "pf7": 6.95,
+    "pa7": 2.63,
+    "pd7": 4.32,
+    "si_plus": 105.3,
+    "df_plus": 112.0,
+    "apr_plus": 98.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.2,
     "majors": 2,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 3.062,
-      "matches": 10,
-      "rank_weight": 15,
-      "rank_overall": 118,
+      "mv_avg": 2.726,
+      "matches": 11,
+      "rank_weight": 21,
+      "rank_overall": 163,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 7,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34936418132",
       "opponent_rank": 16,
       "opponent_name": "Casey Swiderski",
       "method": "Dec 2-1"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34941806132",
+      "opponent_rank": 5,
+      "opponent_name": "Ethan Stiles",
+      "method": "Dec 4-3"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34941806132",
+      "opponent_name": "Ethan Stiles",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 149,
+      "opponent_rank": 5,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "vs. Ohio State"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34945070132",

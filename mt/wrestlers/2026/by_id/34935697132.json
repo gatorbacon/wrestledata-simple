@@ -8,28 +8,28 @@
   "year": 2026,
   "current_rank": 5,
   "record": {
-    "overall": "6-1",
+    "overall": "7-1",
     "vs_ranked": "5-1",
     "vs_top10": "1-1",
     "vs_top25": "2-1"
   },
   "metrics": {
-    "pf7": 8.38,
-    "pa7": 2.5,
-    "pd7": 5.88,
-    "si_plus": 102.9,
-    "df_plus": 110.1,
-    "apr_plus": 97.8,
+    "pf7": 8.78,
+    "pa7": 2.56,
+    "pd7": 6.22,
+    "si_plus": 106.8,
+    "df_plus": 110.4,
+    "apr_plus": 97.9,
     "pin_rate": 0.0,
-    "bonus_rate": 0.5,
-    "majors": 2,
+    "bonus_rate": 0.571,
+    "majors": 3,
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 2.634,
-      "matches": 7,
-      "rank_weight": 18,
-      "rank_overall": 170,
+      "mv_avg": 3.168,
+      "matches": 8,
+      "rank_weight": 10,
+      "rank_overall": 110,
       "version": "v1"
     }
   },
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34941779132",
+      "opponent_name": "Brendan McCrone",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "vs. Ohio State"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34977451132",
@@ -152,8 +166,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.25
+    "top33_wins": 3,
+    "top33_bonus_ev_raw": 0.3333333333333333,
+    "top33_bonus_ev_shrunk": 0.3484848484848485
   }
 }

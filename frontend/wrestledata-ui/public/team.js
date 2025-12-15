@@ -206,7 +206,10 @@ function renderStartersTable(starters) {
     nameTd.appendChild(a);
     tr.appendChild(nameTd);
 
-    td(profile.current_rank ? `#${profile.current_rank}` : "—");
+    // Rank with badge
+    const rankTd = document.createElement("td");
+    rankTd.appendChild(createRankBadge(profile.current_rank));
+    tr.appendChild(rankTd);
     
     // Record: use overall from record object
     const record = profile.record?.overall || "—";
@@ -272,6 +275,49 @@ function renderRemainingRosterTable(remaining) {
   });
 }
 
+function createRankBadge(rank) {
+  if (rank === null || rank === undefined || rank === "") {
+    return document.createTextNode("—");
+  }
+  
+  const badge = document.createElement("span");
+  badge.className = "rank-badge";
+  
+  // Top 5 get accent color, others get muted
+  if (rank <= 5) {
+    badge.classList.add("top");
+  } else {
+    badge.classList.add("standard");
+  }
+  
+  badge.textContent = `#${rank}`;
+  return badge;
+}
+
+function createMetricBar(value, maxValue) {
+  if (value === null || value === undefined || maxValue === 0) {
+    return document.createTextNode("—");
+  }
+  
+  // Cap width at 96%
+  const width = Math.min((value / maxValue) * 100, 96);
+  
+  const bar = document.createElement("div");
+  bar.className = "metric-bar";
+  
+  const fill = document.createElement("div");
+  fill.className = "metric-bar-fill";
+  fill.style.width = `${width}%`;
+  
+  const valueSpan = document.createElement("span");
+  valueSpan.className = "metric-bar-value";
+  valueSpan.textContent = value.toFixed(1);
+  
+  bar.appendChild(fill);
+  bar.appendChild(valueSpan);
+  return bar;
+}
+
 function renderXTPSection(xtpData, starters) {
   // Show section
   document.getElementById("xtp-section").style.display = "block";
@@ -289,6 +335,30 @@ function renderXTPSection(xtpData, starters) {
   // Sort weights ascending
   const weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285];
   
+  // Calculate max values for bars
+  let maxXTP = 0;
+  let maxXTP_P = 0;
+  let maxXTP_A = 0;
+  let maxXTP_B = 0;
+  let maxMV = 0;
+  
+  weights.forEach(weight => {
+    const weightStr = String(weight);
+    const weightData = xtpData.weights?.[weightStr];
+    if (weightData) {
+      if (weightData.xTP > maxXTP) maxXTP = weightData.xTP;
+      if (weightData.xTP_P > maxXTP_P) maxXTP_P = weightData.xTP_P;
+      if (weightData.xTP_A > maxXTP_A) maxXTP_A = weightData.xTP_A;
+      if (weightData.xTP_B > maxXTP_B) maxXTP_B = weightData.xTP_B;
+      
+      const starterProfile = starters.find(s => s.weight === weight);
+      if (starterProfile && starterProfile.profile.metrics?.mat_value?.mv_avg !== undefined) {
+        const mv = starterProfile.profile.metrics.mat_value.mv_avg;
+        if (mv > maxMV) maxMV = mv;
+      }
+    }
+  });
+  
   weights.forEach(weight => {
     const weightStr = String(weight);
     const weightData = xtpData.weights?.[weightStr];
@@ -302,45 +372,52 @@ function renderXTPSection(xtpData, starters) {
     if (weightData && weightData.wrestler_id) {
       // Wrestler name (link)
       const wrestlerTd = document.createElement("td");
+      wrestlerTd.className = "name";
       const wrestlerLink = document.createElement("a");
       wrestlerLink.href = `/wrestler.html?id=${weightData.wrestler_id}`;
       wrestlerLink.textContent = weightData.name || "Unknown";
       wrestlerTd.appendChild(wrestlerLink);
       tr.appendChild(wrestlerTd);
 
-      // Rank
+      // Rank with badge
       const rankTd = document.createElement("td");
-      rankTd.textContent = safe(weightData.rank, v => `#${v}`);
+      rankTd.appendChild(createRankBadge(weightData.rank));
       tr.appendChild(rankTd);
 
       // MV (from wrestler profile if available)
       const mvTd = document.createElement("td");
+      mvTd.className = "num metric-primary";
       const starterProfile = starters.find(s => s.weight === weight);
       if (starterProfile && starterProfile.profile.metrics?.mat_value?.mv_avg !== undefined) {
-        mvTd.textContent = formatDecimal(starterProfile.profile.metrics.mat_value.mv_avg, 3);
+        const mv = starterProfile.profile.metrics.mat_value.mv_avg;
+        mvTd.appendChild(createMetricBar(mv, maxMV));
       } else {
         mvTd.textContent = "—";
       }
       tr.appendChild(mvTd);
 
-      // xTP (total)
+      // xTP (total) - primary metric
       const xtpTd = document.createElement("td");
-      xtpTd.textContent = safe(weightData.xTP, v => v.toFixed(1));
+      xtpTd.className = "num metric-primary";
+      xtpTd.appendChild(createMetricBar(weightData.xTP, maxXTP));
       tr.appendChild(xtpTd);
 
-      // xTP_P
+      // xTP_P - subcomponent
       const xtpPTd = document.createElement("td");
-      xtpPTd.textContent = safe(weightData.xTP_P, v => v.toFixed(1));
+      xtpPTd.className = "num metric-sub";
+      xtpPTd.appendChild(createMetricBar(weightData.xTP_P, maxXTP_P));
       tr.appendChild(xtpPTd);
 
-      // xTP_A
+      // xTP_A - subcomponent
       const xtpATd = document.createElement("td");
-      xtpATd.textContent = safe(weightData.xTP_A, v => v.toFixed(1));
+      xtpATd.className = "num metric-sub";
+      xtpATd.appendChild(createMetricBar(weightData.xTP_A, maxXTP_A));
       tr.appendChild(xtpATd);
 
-      // xTP_B
+      // xTP_B - subcomponent
       const xtpBTd = document.createElement("td");
-      xtpBTd.textContent = safe(weightData.xTP_B, v => v.toFixed(1));
+      xtpBTd.className = "num metric-sub";
+      xtpBTd.appendChild(createMetricBar(weightData.xTP_B, maxXTP_B));
       tr.appendChild(xtpBTd);
     } else {
       // No qualifier

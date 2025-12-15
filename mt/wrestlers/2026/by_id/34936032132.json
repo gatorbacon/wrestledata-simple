@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": 14,
   "record": {
-    "overall": "10-3",
-    "vs_ranked": "5-3",
+    "overall": "11-3",
+    "vs_ranked": "6-3",
     "vs_top10": "0-1",
     "vs_top25": "3-2"
   },
@@ -18,23 +18,23 @@
     "pa7": 3.64,
     "pd7": 5.28,
     "si_plus": 108.0,
-    "df_plus": 111.5,
-    "apr_plus": 98.6,
+    "df_plus": 111.3,
+    "apr_plus": 98.5,
     "pin_rate": 0.0,
-    "bonus_rate": 0.5,
+    "bonus_rate": 0.455,
     "majors": 4,
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 2.056,
-      "matches": 13,
-      "rank_weight": 27,
-      "rank_overall": 266,
+      "mv_avg": 2.382,
+      "matches": 14,
+      "rank_weight": 17,
+      "rank_overall": 208,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 6,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "34963811132",
+      "opponent_name": "Tyler Wells",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 21,
+      "opponent_weight": 141,
+      "opponent_rank": 27,
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "1:07",
+      "event": "vs. Rider"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34943753132",
@@ -236,8 +250,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.0606060606060606
+    "top33_wins": 4,
+    "top33_bonus_ev_raw": 0.5,
+    "top33_bonus_ev_shrunk": 0.2638888888888889
   }
 }

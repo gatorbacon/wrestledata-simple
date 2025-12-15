@@ -9,44 +9,58 @@
   "current_rank": null,
   "record": {
     "overall": "4-0",
-    "vs_ranked": "3-0",
-    "vs_top10": "1-0",
-    "vs_top25": "2-0"
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
   },
   "metrics": {
-    "pf7": 13.5,
-    "pa7": 1.75,
-    "pd7": 11.75,
-    "si_plus": 117.8,
-    "df_plus": 114.5,
-    "apr_plus": 97.1,
+    "pf7": 15.0,
+    "pa7": 2.0,
+    "pd7": 13.0,
+    "si_plus": 124.9,
+    "df_plus": 109.8,
+    "apr_plus": 96.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 4.532,
+      "mv_avg": 2.81,
       "matches": 4,
-      "rank_weight": 1,
-      "rank_overall": 23,
+      "rank_weight": 16,
+      "rank_overall": 147,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 2,
     "ranked_losses": 0,
-    "top10_wins": 1,
+    "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34939025132",
-      "opponent_rank": 2,
-      "opponent_name": "Luke Lilledahl",
-      "method": "Dec 5-3"
+      "opponent_id": "34935485132",
+      "opponent_rank": 20,
+      "opponent_name": "Cooper Flynn",
+      "method": "Dec 7-0"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34933453132",
+      "opponent_name": "John Alden",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 22,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "vs. Wyoming"
+    },
     {
       "date": "2025-11-23",
       "opponent_id": "34934307132",
@@ -87,20 +101,6 @@
       "method": "TF",
       "score": "15-0",
       "duration": "4:02",
-      "event": "Black Knight Invite"
-    },
-    {
-      "date": "2025-11-23",
-      "opponent_id": "34939025132",
-      "opponent_name": "Luke Lilledahl",
-      "opponent_team": "Penn State",
-      "opponent_team_rank": 1,
-      "opponent_weight": 125,
-      "opponent_rank": 2,
-      "result": "W",
-      "method": "DEC",
-      "score": "5-3",
-      "duration": "7:00",
       "event": "Black Knight Invite"
     }
   ]

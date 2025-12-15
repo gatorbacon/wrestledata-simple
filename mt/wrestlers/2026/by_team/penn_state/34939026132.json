@@ -8,36 +8,36 @@
   "year": 2026,
   "current_rank": 10,
   "record": {
-    "overall": "6-1",
-    "vs_ranked": "3-1",
-    "vs_top10": "0-1",
-    "vs_top25": "2-1"
+    "overall": "5-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "0-2",
+    "vs_top25": "2-2"
   },
   "metrics": {
-    "pf7": 6.0,
-    "pa7": 3.6,
-    "pd7": 2.4,
-    "si_plus": 110.6,
-    "df_plus": 111.6,
-    "apr_plus": 109.4,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.5,
+    "pf7": 6.2,
+    "pa7": 5.4,
+    "pd7": 0.8,
+    "si_plus": 106.9,
+    "df_plus": 110.2,
+    "apr_plus": 107.8,
+    "pin_rate": 0.4,
+    "bonus_rate": 0.6,
     "majors": 1,
     "techs": 0,
     "pins": 2,
     "mat_value": {
-      "mv_avg": 3.243,
+      "mv_avg": 2.707,
       "matches": 7,
-      "rank_weight": 12,
-      "rank_overall": 96,
+      "rank_weight": 21,
+      "rank_overall": 166,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "34963115132",
       "opponent_rank": 19,
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34934175132",
+      "opponent_name": "Christian Carroll",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 22,
+      "opponent_weight": 285,
+      "opponent_rank": 5,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-4",
+      "duration": "7:00",
+      "event": "vs. Wyoming"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34952672132",
@@ -120,20 +134,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:53",
-      "event": "Black Knight Invite"
-    },
-    {
-      "date": "2025-11-23",
-      "opponent_id": "34939014132",
-      "opponent_name": "Lucas Cochran",
-      "opponent_team": "Penn State",
-      "opponent_team_rank": 1,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "DEC",
-      "score": "3-1",
-      "duration": "7:00",
       "event": "Black Knight Invite"
     },
     {

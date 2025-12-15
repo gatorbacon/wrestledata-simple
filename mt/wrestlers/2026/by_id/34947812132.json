@@ -8,34 +8,34 @@
   "year": 2026,
   "current_rank": 72,
   "record": {
-    "overall": "8-5",
-    "vs_ranked": "2-2",
+    "overall": "8-6",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "1-1"
   },
   "metrics": {
-    "pf7": 4.34,
-    "pa7": 5.58,
-    "pd7": -1.25,
-    "si_plus": 96.8,
-    "df_plus": 103.5,
-    "apr_plus": 102.9,
+    "pf7": 4.31,
+    "pa7": 5.62,
+    "pd7": -1.31,
+    "si_plus": 97.0,
+    "df_plus": 103.9,
+    "apr_plus": 102.1,
     "pin_rate": 0.25,
     "bonus_rate": 0.5,
     "majors": 2,
     "techs": 0,
     "pins": 2,
     "mat_value": {
-      "mv_avg": -0.117,
-      "matches": 13,
-      "rank_weight": 82,
-      "rank_overall": 780,
+      "mv_avg": -0.31,
+      "matches": 14,
+      "rank_weight": 88,
+      "rank_overall": 836,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -45,13 +45,27 @@
       "method": "Dec 6-5"
     },
     "worst_loss": {
-      "opponent_id": "34938626132",
-      "opponent_rank": 53,
-      "opponent_name": "Alejandro Herrera-Rondon",
-      "method": "TF 16-0 5:36"
+      "opponent_id": "34936203132",
+      "opponent_rank": 61,
+      "opponent_name": "Braidon Woodward",
+      "method": "Dec 6-4"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34936203132",
+      "opponent_name": "Braidon Woodward",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 165,
+      "opponent_rank": 61,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Bloomsburg"
+    },
     {
       "date": "2025-11-23",
       "opponent_id": "34949312132",
@@ -152,20 +166,6 @@
     },
     {
       "date": "2025-11-09",
-      "opponent_id": "34938626132",
-      "opponent_name": "Alejandro Herrera-Rondon",
-      "opponent_team": "Clarion",
-      "opponent_team_rank": 66,
-      "opponent_weight": 165,
-      "opponent_rank": 53,
-      "result": "L",
-      "method": "TF",
-      "score": "16-0",
-      "duration": "5:36",
-      "event": "2025 Journeymen Collegiate Classic"
-    },
-    {
-      "date": "2025-11-09",
       "opponent_id": "34939053132",
       "opponent_name": "Davis Park",
       "opponent_team": "Navy",
@@ -176,6 +176,20 @@
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34938626132",
+      "opponent_name": "Alejandro Herrera-Rondon",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 165,
+      "opponent_rank": 53,
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "5:36",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {

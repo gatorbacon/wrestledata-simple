@@ -8,50 +8,78 @@
   "year": 2026,
   "current_rank": 63,
   "record": {
-    "overall": "7-4",
-    "vs_ranked": "1-1",
+    "overall": "8-5",
+    "vs_ranked": "2-2",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 8.5,
-    "pa7": 6.08,
-    "pd7": 2.42,
-    "si_plus": 109.6,
-    "df_plus": 105.5,
-    "apr_plus": 109.7,
-    "pin_rate": 0.429,
-    "bonus_rate": 0.571,
-    "majors": 0,
+    "pf7": 7.88,
+    "pa7": 5.31,
+    "pd7": 2.57,
+    "si_plus": 107.3,
+    "df_plus": 105.9,
+    "apr_plus": 106.2,
+    "pin_rate": 0.375,
+    "bonus_rate": 0.625,
+    "majors": 1,
     "techs": 1,
     "pins": 3,
     "mat_value": {
-      "mv_avg": 1.248,
-      "matches": 10,
-      "rank_weight": 42,
-      "rank_overall": 403,
+      "mv_avg": 1.129,
+      "matches": 12,
+      "rank_weight": 47,
+      "rank_overall": 430,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 2,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "34957135132",
-      "opponent_rank": 71,
-      "opponent_name": "Leo Maestas",
-      "method": "Inj. 5:00"
+      "opponent_id": "34937488132",
+      "opponent_rank": 65,
+      "opponent_name": "Drew Pepin",
+      "method": "MD 11-1"
     },
     "worst_loss": {
-      "opponent_id": "34964522132",
-      "opponent_rank": 2,
-      "opponent_name": "Jaxon Joy",
-      "method": "Dec 7-0"
+      "opponent_id": "34947354132",
+      "opponent_rank": 54,
+      "opponent_name": "Silas Stits",
+      "method": "Dec 5-1"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34937488132",
+      "opponent_name": "Drew Pepin",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 149,
+      "opponent_rank": 65,
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "vs. Gardner-Webb"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34947354132",
+      "opponent_name": "Silas Stits",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 149,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "vs. Kent State"
+    },
     {
       "date": "2025-12-05",
       "opponent_id": "34936184132",
@@ -65,6 +93,34 @@
       "score": null,
       "duration": "1:55",
       "event": "vs. Buffalo"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34939017132",
+      "opponent_name": "Connor Pierce",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34953910132",
+      "opponent_name": "Luke Nieto",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 71,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:35",
+      "event": "Black Knight Invite"
     },
     {
       "date": "2025-11-23",
@@ -95,34 +151,6 @@
       "event": "Black Knight Invite"
     },
     {
-      "date": "2025-11-23",
-      "opponent_id": "34953910132",
-      "opponent_name": "Luke Nieto",
-      "opponent_team": "LIU",
-      "opponent_team_rank": 71,
-      "opponent_weight": 149,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:35",
-      "event": "Black Knight Invite"
-    },
-    {
-      "date": "2025-11-23",
-      "opponent_id": "34939017132",
-      "opponent_name": "Connor Pierce",
-      "opponent_team": "Penn State",
-      "opponent_team_rank": 1,
-      "opponent_weight": 149,
-      "opponent_rank": null,
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:00",
-      "event": "Black Knight Invite"
-    },
-    {
       "date": "2025-11-15",
       "opponent_id": "34957135132",
       "opponent_name": "Leo Maestas",
@@ -148,7 +176,7 @@
       "method": "DEC",
       "score": "12-5",
       "duration": "7:00",
-      "event": "vs. Buffalo"
+      "event": "vs. Purdue"
     },
     {
       "date": "2025-11-08",
@@ -162,20 +190,20 @@
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
-      "event": "vs. Buffalo"
+      "event": "vs. Pittsburgh"
     },
     {
       "date": "2025-11-02",
-      "opponent_id": "34938646132",
-      "opponent_name": "Connor Eck",
-      "opponent_team": "Clarion",
-      "opponent_team_rank": 66,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "TF",
-      "score": "18-1",
-      "duration": "4:45",
+      "opponent_id": "34964522132",
+      "opponent_name": "Jaxon Joy",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 149,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-0",
+      "duration": "7:00",
       "event": "Clarion Open"
     },
     {
@@ -194,16 +222,16 @@
     },
     {
       "date": "2025-11-02",
-      "opponent_id": "34964522132",
-      "opponent_name": "Jaxon Joy",
-      "opponent_team": "Cornell",
-      "opponent_team_rank": 10,
-      "opponent_weight": 149,
-      "opponent_rank": 2,
-      "result": "L",
-      "method": "DEC",
-      "score": "7-0",
-      "duration": "7:00",
+      "opponent_id": "34938646132",
+      "opponent_name": "Connor Eck",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "4:45",
       "event": "Clarion Open"
     }
   ]

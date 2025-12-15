@@ -8,28 +8,28 @@
   "year": 2026,
   "current_rank": 12,
   "record": {
-    "overall": "9-3",
+    "overall": "10-3",
     "vs_ranked": "6-2",
     "vs_top10": "0-2",
     "vs_top25": "2-2"
   },
   "metrics": {
-    "pf7": 10.33,
-    "pa7": 3.44,
-    "pd7": 6.89,
-    "si_plus": 110.9,
-    "df_plus": 111.2,
-    "apr_plus": 104.2,
-    "pin_rate": 0.222,
-    "bonus_rate": 0.556,
+    "pf7": 9.8,
+    "pa7": 3.3,
+    "pd7": 6.5,
+    "si_plus": 110.5,
+    "df_plus": 111.1,
+    "apr_plus": 103.6,
+    "pin_rate": 0.2,
+    "bonus_rate": 0.5,
     "majors": 2,
     "techs": 1,
     "pins": 2,
     "mat_value": {
-      "mv_avg": 2.093,
-      "matches": 12,
+      "mv_avg": 1.841,
+      "matches": 13,
       "rank_weight": 25,
-      "rank_overall": 255,
+      "rank_overall": 301,
       "version": "v1"
     }
   },
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "34964069132",
+      "opponent_name": "John Gunderson",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "vs. Northern Iowa"
+    },
     {
       "date": "2025-12-05",
       "opponent_id": "34953904132",
@@ -224,6 +238,6 @@
   "bonus": {
     "top33_wins": 4,
     "top33_bonus_ev_raw": 0.25,
-    "top33_bonus_ev_shrunk": 0.2847222222222222
+    "top33_bonus_ev_shrunk": 0.29305555555555557
   }
 }

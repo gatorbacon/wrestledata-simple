@@ -8,33 +8,33 @@
   "year": 2026,
   "current_rank": 35,
   "record": {
-    "overall": "6-6",
-    "vs_ranked": "3-5",
+    "overall": "8-6",
+    "vs_ranked": "5-5",
     "vs_top10": "0-0",
     "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 8.16,
-    "pa7": 6.8,
-    "pd7": 1.37,
-    "si_plus": 106.0,
-    "df_plus": 102.9,
-    "apr_plus": 113.9,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.667,
-    "majors": 0,
-    "techs": 2,
+    "pf7": 9.9,
+    "pa7": 6.42,
+    "pd7": 3.48,
+    "si_plus": 111.1,
+    "df_plus": 103.5,
+    "apr_plus": 110.0,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.75,
+    "majors": 1,
+    "techs": 3,
     "pins": 2,
     "mat_value": {
-      "mv_avg": 0.719,
-      "matches": 12,
-      "rank_weight": 64,
-      "rank_overall": 536,
+      "mv_avg": 1.262,
+      "matches": 14,
+      "rank_weight": 43,
+      "rank_overall": 399,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 5,
     "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -52,6 +52,34 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34943821132",
+      "opponent_name": "Zac Cowan",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 60,
+      "opponent_weight": 149,
+      "opponent_rank": 67,
+      "result": "W",
+      "method": "MD",
+      "score": "16-3",
+      "duration": "7:00",
+      "event": "vs. Edinboro"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34947354132",
+      "opponent_name": "Silas Stits",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 149,
+      "opponent_rank": 54,
+      "result": "W",
+      "method": "TF",
+      "score": "21-6",
+      "duration": "6:57",
+      "event": "vs. Kent State"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34944347132",
@@ -110,20 +138,6 @@
     },
     {
       "date": "2025-11-23",
-      "opponent_id": "34951073132",
-      "opponent_name": "Dominic ferraro",
-      "opponent_team": "Edinboro",
-      "opponent_team_rank": 53,
-      "opponent_weight": 149,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:12",
-      "event": "Keystone Classic"
-    },
-    {
-      "date": "2025-11-23",
       "opponent_id": "34935964132",
       "opponent_name": "Lucas Kapusta",
       "opponent_team": "Lock Haven",
@@ -134,6 +148,20 @@
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
+      "event": "Keystone Classic"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34951073132",
+      "opponent_name": "Dominic ferraro",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:12",
       "event": "Keystone Classic"
     },
     {
@@ -224,6 +252,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.5
   }
 }

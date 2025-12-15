@@ -8,41 +8,41 @@
   "year": 2026,
   "current_rank": 21,
   "record": {
-    "overall": "5-3",
-    "vs_ranked": "2-2",
+    "overall": "6-3",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 7.2,
-    "pa7": 3.39,
-    "pd7": 3.81,
-    "si_plus": 109.6,
-    "df_plus": 109.0,
-    "apr_plus": 109.9,
-    "pin_rate": 0.2,
-    "bonus_rate": 0.6,
+    "pf7": 7.42,
+    "pa7": 3.97,
+    "pd7": 3.46,
+    "si_plus": 109.9,
+    "df_plus": 108.3,
+    "apr_plus": 107.1,
+    "pin_rate": 0.167,
+    "bonus_rate": 0.5,
     "majors": 2,
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 1.317,
-      "matches": 8,
-      "rank_weight": 33,
-      "rank_overall": 390,
+      "mv_avg": 1.562,
+      "matches": 9,
+      "rank_weight": 30,
+      "rank_overall": 344,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34934616132",
-      "opponent_rank": 34,
-      "opponent_name": "Tristan Daugherty",
-      "method": "MD 12-1"
+      "opponent_id": "34943968132",
+      "opponent_rank": 26,
+      "opponent_name": "Kade Moore",
+      "method": "Dec 9-8"
     },
     "worst_loss": {
       "opponent_id": "34941545132",
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "34943968132",
+      "opponent_name": "Kade Moore",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 133,
+      "opponent_rank": 26,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-8",
+      "duration": "7:00",
+      "event": "vs. Northern Iowa"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34941559132",
@@ -166,8 +180,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 1,
+    "top33_wins": 2,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.1646090534979424
+    "top33_bonus_ev_shrunk": 0.14814814814814814
   }
 }

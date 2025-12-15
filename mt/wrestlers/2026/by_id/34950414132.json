@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 65,
   "record": {
-    "overall": "4-7",
+    "overall": "5-7",
     "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,19 +17,19 @@
     "pf7": 5.9,
     "pa7": 9.4,
     "pd7": -3.5,
-    "si_plus": 96.7,
-    "df_plus": 95.9,
-    "apr_plus": 96.8,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.25,
+    "si_plus": 96.8,
+    "df_plus": 96.0,
+    "apr_plus": 98.5,
+    "pin_rate": 0.2,
+    "bonus_rate": 0.4,
     "majors": 0,
     "techs": 1,
-    "pins": 0,
+    "pins": 1,
     "mat_value": {
-      "mv_avg": -2.514,
-      "matches": 11,
-      "rank_weight": 120,
-      "rank_overall": 1414,
+      "mv_avg": -1.827,
+      "matches": 12,
+      "rank_weight": 103,
+      "rank_overall": 1253,
       "version": "v1"
     }
   },
@@ -65,6 +65,20 @@
       "score": "9-1",
       "duration": "7:00",
       "event": "vs. Gardner-Webb"
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34963806132",
+      "opponent_name": "Josh Johnson-Cantrell",
+      "opponent_team": "Mercyherst",
+      "opponent_team_rank": null,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "vs. Mercyhurst"
     },
     {
       "date": "2025-11-22",
@@ -210,6 +224,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
+    "top33_bonus_ev_shrunk": 0.4
   }
 }

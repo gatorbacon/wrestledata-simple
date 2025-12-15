@@ -8,33 +8,33 @@
   "year": 2026,
   "current_rank": 2,
   "record": {
-    "overall": "5-1",
-    "vs_ranked": "4-0",
+    "overall": "6-0",
+    "vs_ranked": "5-0",
     "vs_top10": "0-0",
     "vs_top25": "1-0"
   },
   "metrics": {
-    "pf7": 17.33,
-    "pa7": 4.53,
-    "pd7": 12.8,
-    "si_plus": 124.3,
-    "df_plus": 109.0,
-    "apr_plus": 97.9,
+    "pf7": 21.0,
+    "pa7": 4.48,
+    "pd7": 16.52,
+    "si_plus": 135.9,
+    "df_plus": 107.7,
+    "apr_plus": 98.2,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 2,
-    "techs": 3,
+    "techs": 4,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 3.381,
+      "mv_avg": 4.177,
       "matches": 6,
-      "rank_weight": 8,
-      "rank_overall": 83,
+      "rank_weight": 1,
+      "rank_overall": 38,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 5,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -47,6 +47,20 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34934178132",
+      "opponent_name": "Sefton Douglass",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 22,
+      "opponent_weight": 125,
+      "opponent_rank": 35,
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "4:27",
+      "event": "vs. Wyoming"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34952688132",
@@ -104,20 +118,6 @@
       "event": "Black Knight Invite"
     },
     {
-      "date": "2025-11-23",
-      "opponent_id": "34939038132",
-      "opponent_name": "Nate Desmond",
-      "opponent_team": "Penn State",
-      "opponent_team_rank": 1,
-      "opponent_weight": 125,
-      "opponent_rank": null,
-      "result": "L",
-      "method": "DEC",
-      "score": "5-3",
-      "duration": "7:00",
-      "event": "Black Knight Invite"
-    },
-    {
       "date": "2025-11-14",
       "opponent_id": "34963114132",
       "opponent_name": "Conrad Hendriksen",
@@ -135,6 +135,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 0.3888888888888889
+    "top33_bonus_ev_shrunk": 0.42592592592592593
   }
 }

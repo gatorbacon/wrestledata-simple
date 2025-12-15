@@ -8,40 +8,59 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-0",
+    "overall": "0-3",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 102.8,
-    "df_plus": 102.9,
-    "apr_plus": 97.7,
+    "pf7": 3.0,
+    "pa7": 9.0,
+    "pd7": -6.0,
+    "si_plus": 84.8,
+    "df_plus": 91.8,
+    "apr_plus": 97.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -4.541,
-      "matches": 2,
-      "rank_weight": 156,
-      "rank_overall": 1812,
+      "mv_avg": -3.982,
+      "matches": 3,
+      "rank_weight": 146,
+      "rank_overall": 1722,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34974780132",
+      "opponent_rank": 76,
+      "opponent_name": "Magnus Bibla",
+      "method": "Dec 9-3"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34974780132",
+      "opponent_name": "Magnus Bibla",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 285,
+      "opponent_rank": 76,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "vs. Kent State"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34934352132",

@@ -17,18 +17,18 @@
     "pf7": 13.71,
     "pa7": 2.91,
     "pd7": 10.8,
-    "si_plus": 122.7,
-    "df_plus": 111.7,
-    "apr_plus": 108.5,
+    "si_plus": 122.5,
+    "df_plus": 111.5,
+    "apr_plus": 107.0,
     "pin_rate": 0.2,
     "bonus_rate": 0.8,
     "majors": 2,
     "techs": 1,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 4.33,
+      "mv_avg": 4.317,
       "matches": 5,
-      "rank_weight": 2,
+      "rank_weight": 3,
       "rank_overall": 30,
       "version": "v1"
     }
@@ -91,20 +91,6 @@
     },
     {
       "date": "2025-11-09",
-      "opponent_id": "34952691132",
-      "opponent_name": "Jared Schoppe",
-      "opponent_team": "Lehigh",
-      "opponent_team_rank": 16,
-      "opponent_weight": 184,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "MD",
-      "score": "8-0",
-      "duration": "7:00",
-      "event": "2025 Journeymen Collegiate Classic"
-    },
-    {
-      "date": "2025-11-09",
       "opponent_id": "34937337132",
       "opponent_name": "Matthew Walsh",
       "opponent_team": "Harvard",
@@ -116,11 +102,25 @@
       "score": "18-3",
       "duration": "5:46",
       "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34952691132",
+      "opponent_name": "Jared Schoppe",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
     }
   ],
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.29444444444444445
+    "top33_bonus_ev_shrunk": 0.2537037037037037
   }
 }

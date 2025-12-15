@@ -8,17 +8,17 @@
   "year": 2026,
   "current_rank": 24,
   "record": {
-    "overall": "7-5",
-    "vs_ranked": "4-4",
+    "overall": "7-6",
+    "vs_ranked": "4-5",
     "vs_top10": "0-2",
-    "vs_top25": "1-4"
+    "vs_top25": "1-5"
   },
   "metrics": {
-    "pf7": 3.48,
-    "pa7": 4.11,
-    "pd7": -0.63,
-    "si_plus": 94.6,
-    "df_plus": 108.0,
+    "pf7": 3.29,
+    "pa7": 4.1,
+    "pd7": -0.81,
+    "si_plus": 93.7,
+    "df_plus": 108.9,
     "apr_plus": 98.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
@@ -26,16 +26,16 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 1.063,
-      "matches": 12,
-      "rank_weight": 44,
-      "rank_overall": 444,
+      "mv_avg": 0.902,
+      "matches": 13,
+      "rank_weight": 47,
+      "rank_overall": 488,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
@@ -45,13 +45,27 @@
       "method": "Dec 3-0"
     },
     "worst_loss": {
-      "opponent_id": "34936034132",
-      "opponent_rank": 15,
-      "opponent_name": "Koda Holeman",
-      "method": "Dec 7-3"
+      "opponent_id": "34934822132",
+      "opponent_rank": 19,
+      "opponent_name": "Tyler Klinsky",
+      "method": "Dec 4-1"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "34934822132",
+      "opponent_name": "Tyler Klinsky",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 125,
+      "opponent_rank": 19,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "vs. Rider"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34936034132",
@@ -224,6 +238,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.27983539094650206
+    "top33_bonus_ev_shrunk": 0.271604938271605
   }
 }

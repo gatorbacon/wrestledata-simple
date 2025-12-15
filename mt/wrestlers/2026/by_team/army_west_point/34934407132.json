@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "4-5",
+    "overall": "5-5",
     "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,19 +17,19 @@
     "pf7": 2.12,
     "pa7": 25.0,
     "pd7": -22.88,
-    "si_plus": 98.7,
-    "df_plus": 71.6,
-    "apr_plus": 130.6,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "si_plus": 98.6,
+    "df_plus": 72.0,
+    "apr_plus": 127.4,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
-    "pins": 3,
+    "pins": 4,
     "mat_value": {
-      "mv_avg": -1.211,
-      "matches": 8,
-      "rank_weight": 96,
-      "rank_overall": 1074,
+      "mv_avg": -0.484,
+      "matches": 9,
+      "rank_weight": 81,
+      "rank_overall": 874,
       "version": "v1"
     }
   },
@@ -68,6 +68,20 @@
     },
     {
       "date": "2025-11-16",
+      "opponent_id": "34963801132",
+      "opponent_name": "Joey Baronick",
+      "opponent_team": "Mercyherst",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:11",
+      "event": "Army Open"
+    },
+    {
+      "date": "2025-11-16",
       "opponent_id": "34948502132",
       "opponent_name": "Alex Semenenko",
       "opponent_team": "Brown",
@@ -96,20 +110,6 @@
     },
     {
       "date": "2025-11-09",
-      "opponent_id": "34947804132",
-      "opponent_name": "Cayden Bevis",
-      "opponent_team": "Binghamton",
-      "opponent_team_rank": 61,
-      "opponent_weight": 285,
-      "opponent_rank": 59,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:58",
-      "event": "2025 Journeymen Collegiate Classic"
-    },
-    {
-      "date": "2025-11-09",
       "opponent_id": "34945840132",
       "opponent_name": "Nick Pavlechko",
       "opponent_team": "Indiana",
@@ -120,6 +120,20 @@
       "method": "DEC",
       "score": null,
       "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34947804132",
+      "opponent_name": "Cayden Bevis",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 61,
+      "opponent_weight": 285,
+      "opponent_rank": 59,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:58",
       "event": "2025 Journeymen Collegiate Classic"
     },
     {
@@ -152,20 +166,6 @@
     },
     {
       "date": "2025-11-02",
-      "opponent_id": "34934748132",
-      "opponent_name": "Charley Hastriter",
-      "opponent_team": "Oregon State",
-      "opponent_team_rank": 23,
-      "opponent_weight": 285,
-      "opponent_rank": 40,
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:05",
-      "event": "Princeton Open"
-    },
-    {
-      "date": "2025-11-02",
       "opponent_id": "34948131132",
       "opponent_name": "Sebastian Garibaldi",
       "opponent_team": "Princeton",
@@ -176,6 +176,20 @@
       "method": "FALL",
       "score": null,
       "duration": "1:28",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934748132",
+      "opponent_name": "Charley Hastriter",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 285,
+      "opponent_rank": 40,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
       "event": "Princeton Open"
     }
   ]

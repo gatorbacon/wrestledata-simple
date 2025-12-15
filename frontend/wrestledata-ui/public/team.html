@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <title>Team Profile</title>
@@ -15,18 +15,20 @@
     </header>
 
     <section id="xtp-section" class="section" style="display: none;">
-      <h2>xTP Projection</h2>
+      <h2>
+        Projected Team Points (xTP)
+        <span class="tooltip-icon" data-tooltip="xtp">ⓘ</span>
+      </h2>
       
       <div class="summary-cards">
         <div class="card">
-          <h3>xTP Summary</h3>
           <div class="card-body">
-            <div style="font-size: 2em; font-weight: bold; margin-bottom: 0.5em;">
+            <div style="font-size: 2.5em; font-weight: bold; margin-bottom: 0.5em; color: var(--text);">
               <span id="xtp-total">—</span>
             </div>
-            <div><span class="label">xTP_P (Placement):</span> <span id="xtp-p"></span></div>
-            <div><span class="label">xTP_A (Advancement):</span> <span id="xtp-a"></span></div>
-            <div><span class="label">xTP_B (Bonus):</span> <span id="xtp-b"></span></div>
+            <div><span class="label">xTP_P (Placement) <span class="tooltip-icon" data-tooltip="xtp-p">ⓘ</span>:</span> <span id="xtp-p" class="metric-sub"></span></div>
+            <div><span class="label">xTP_A (Advancement) <span class="tooltip-icon" data-tooltip="xtp-a">ⓘ</span>:</span> <span id="xtp-a" class="metric-sub"></span></div>
+            <div><span class="label">xTP_B (Bonus) <span class="tooltip-icon" data-tooltip="xtp-b">ⓘ</span>:</span> <span id="xtp-b" class="metric-sub"></span></div>
           </div>
         </div>
       </div>
@@ -38,11 +40,11 @@
               <th>Weight</th>
               <th>Wrestler</th>
               <th>Rank</th>
-              <th>MV</th>
-              <th>xTP</th>
-              <th>xTP_P</th>
-              <th>xTP_A</th>
-              <th>xTP_B</th>
+              <th>MV <span class="tooltip-icon" data-tooltip="mv">ⓘ</span></th>
+              <th>xTP <span class="tooltip-icon" data-tooltip="xtp">ⓘ</span></th>
+              <th>xTP_P <span class="tooltip-icon" data-tooltip="xtp-p">ⓘ</span></th>
+              <th>xTP_A <span class="tooltip-icon" data-tooltip="xtp-a">ⓘ</span></th>
+              <th>xTP_B <span class="tooltip-icon" data-tooltip="xtp-b">ⓘ</span></th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -123,6 +125,7 @@
     </section>
   </div>
 
+  <script src="/tooltips.js"></script>
   <script src="/team.js"></script>
 </body>
 </html>

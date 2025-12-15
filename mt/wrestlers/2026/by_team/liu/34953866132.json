@@ -8,28 +8,28 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "3-8",
+    "overall": "3-9",
     "vs_ranked": "1-7",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.01,
-    "pa7": 7.2,
-    "pd7": -4.19,
-    "si_plus": 96.0,
-    "df_plus": 102.6,
-    "apr_plus": 100.6,
+    "pa7": 7.4,
+    "pd7": -4.39,
+    "si_plus": 95.7,
+    "df_plus": 102.3,
+    "apr_plus": 100.4,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": -1.549,
-      "matches": 11,
-      "rank_weight": 153,
-      "rank_overall": 1172,
+      "mv_avg": -1.795,
+      "matches": 12,
+      "rank_weight": 158,
+      "rank_overall": 1247,
       "version": "v1"
     }
   },
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-09",
+      "opponent_id": "34936184132",
+      "opponent_name": "Dustin Elliott",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "vs. LIU"
+    },
     {
       "date": "2025-12-05",
       "opponent_id": "34948504132",
@@ -82,20 +96,6 @@
     },
     {
       "date": "2025-11-23",
-      "opponent_id": "34943390132",
-      "opponent_name": "KJ Monaco",
-      "opponent_team": "Columbia",
-      "opponent_team_rank": 50,
-      "opponent_weight": 149,
-      "opponent_rank": null,
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:00",
-      "event": "Black Knight Invite"
-    },
-    {
-      "date": "2025-11-23",
       "opponent_id": "34952959132",
       "opponent_name": "Sam Ewing",
       "opponent_team": "Buffalo",
@@ -106,6 +106,20 @@
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943390132",
+      "opponent_name": "KJ Monaco",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
       "event": "Black Knight Invite"
     },
     {

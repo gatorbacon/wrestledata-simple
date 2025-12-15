@@ -8,34 +8,34 @@
   "year": 2026,
   "current_rank": 23,
   "record": {
-    "overall": "7-4",
-    "vs_ranked": "4-4",
+    "overall": "7-5",
+    "vs_ranked": "4-5",
     "vs_top10": "0-2",
-    "vs_top25": "0-4"
+    "vs_top25": "0-5"
   },
   "metrics": {
-    "pf7": 5.62,
-    "pa7": 5.86,
-    "pd7": -0.24,
-    "si_plus": 101.2,
-    "df_plus": 103.1,
-    "apr_plus": 98.7,
+    "pf7": 5.23,
+    "pa7": 5.78,
+    "pd7": -0.55,
+    "si_plus": 100.3,
+    "df_plus": 103.9,
+    "apr_plus": 98.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.143,
     "majors": 1,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.476,
-      "matches": 11,
-      "rank_weight": 64,
-      "rank_overall": 600,
+      "mv_avg": 0.342,
+      "matches": 12,
+      "rank_weight": 71,
+      "rank_overall": 655,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "34964073132",
+      "opponent_name": "Cory Land",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 141,
+      "opponent_rank": 11,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "vs. Northern Iowa"
+    },
     {
       "date": "2025-12-05",
       "opponent_id": "34953843132",
@@ -210,6 +224,6 @@
   "bonus": {
     "top33_wins": 2,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.15384615384615385
+    "top33_bonus_ev_shrunk": 0.1487179487179487
   }
 }

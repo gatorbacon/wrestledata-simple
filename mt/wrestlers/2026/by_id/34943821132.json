@@ -8,34 +8,34 @@
   "year": 2026,
   "current_rank": 67,
   "record": {
-    "overall": "4-4",
-    "vs_ranked": "1-3",
+    "overall": "4-6",
+    "vs_ranked": "1-5",
     "vs_top10": "0-2",
     "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 7.0,
-    "pa7": 7.57,
-    "pd7": -0.57,
-    "si_plus": 103.9,
-    "df_plus": 103.2,
-    "apr_plus": 97.7,
+    "pf7": 6.34,
+    "pa7": 8.52,
+    "pd7": -2.17,
+    "si_plus": 102.0,
+    "df_plus": 100.7,
+    "apr_plus": 98.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.269,
-      "matches": 7,
-      "rank_weight": 99,
-      "rank_overall": 818,
+      "mv_avg": -0.825,
+      "matches": 9,
+      "rank_weight": 125,
+      "rank_overall": 970,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
@@ -45,13 +45,41 @@
       "method": "Dec 5-0"
     },
     "worst_loss": {
-      "opponent_id": "34934118132",
-      "opponent_rank": 34,
-      "opponent_name": "Jimmy Nugent",
-      "method": "Dec 10-7"
+      "opponent_id": "34947354132",
+      "opponent_rank": 54,
+      "opponent_name": "Silas Stits",
+      "method": "SV-1 9-6"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34951043132",
+      "opponent_name": "Ryan Michaels",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 149,
+      "opponent_rank": 35,
+      "result": "L",
+      "method": "MD",
+      "score": "16-3",
+      "duration": "7:00",
+      "event": "vs. Edinboro"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34947354132",
+      "opponent_name": "Silas Stits",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 149,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "8:15",
+      "event": "vs. Kent State"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34934118132",
@@ -168,6 +196,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.5
   }
 }
