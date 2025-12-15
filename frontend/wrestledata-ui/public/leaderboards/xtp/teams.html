@@ -9,14 +9,12 @@
     .expandable-row {
       cursor: pointer;
     }
-    .expandable-row:hover {
-      background-color: #f5f5f5;
-    }
     .expand-icon {
       display: inline-block;
       width: 12px;
       text-align: center;
       margin-right: 8px;
+      color: var(--muted);
     }
     .expanded .expand-icon::before {
       content: "▼";
@@ -32,7 +30,7 @@
     }
     .weight-breakdown td {
       padding: 12px;
-      background-color: #fafafa;
+      background-color: var(--panel);
     }
     .weight-breakdown table {
       width: 100%;
@@ -43,19 +41,19 @@
     .weight-breakdown td {
       padding: 8px 12px;
       text-align: left;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid var(--border);
     }
     .weight-breakdown th {
       font-weight: 600;
-      color: #666;
+      color: var(--muted);
       font-size: 0.9em;
-      background-color: #f0f0f0;
+      background-color: var(--panel-2);
     }
     .weight-breakdown tbody tr:last-child td {
       border-bottom: none;
     }
     .no-qualifier {
-      color: #999;
+      color: var(--muted);
       font-style: italic;
     }
   </style>
@@ -72,16 +70,16 @@
 
     <section class="section">
       <div class="table-wrapper">
-        <table id="leaderboard-table">
+        <table id="xtp-team-leaderboard-table">
           <thead>
             <tr>
               <th style="width: 40px;"></th>
               <th>Rank</th>
               <th>Team</th>
-              <th>xTP <span class="tooltip-icon" data-tooltip="xtp">ⓘ</span></th>
-              <th>xTP_P <span class="tooltip-icon" data-tooltip="xtp-p">ⓘ</span></th>
-              <th>xTP_A <span class="tooltip-icon" data-tooltip="xtp-a">ⓘ</span></th>
-              <th>xTP_B <span class="tooltip-icon" data-tooltip="xtp-b">ⓘ</span></th>
+              <th class="col-xtp">xTP <span class="tooltip-icon" data-tooltip="xtp">ⓘ</span></th>
+              <th class="xtp-component-col">xTP_P <span class="tooltip-icon" data-tooltip="xtp-p">ⓘ</span></th>
+              <th class="xtp-component-col">xTP_A <span class="tooltip-icon" data-tooltip="xtp-a">ⓘ</span></th>
+              <th class="xtp-component-col">xTP_B <span class="tooltip-icon" data-tooltip="xtp-b">ⓘ</span></th>
             </tr>
           </thead>
           <tbody></tbody>

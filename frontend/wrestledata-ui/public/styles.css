@@ -352,11 +352,30 @@ a:hover {
   padding: 8px 10px;
 }
 
-/* Widen MV column for DataGolf-style bars */
-#leaderboard-table th:nth-child(6),
-#leaderboard-table td:nth-child(6) {
+/* MV leaderboard — widen MV column only */
+#mv-leaderboard-table .col-mv {
   min-width: 220px;
   width: 220px;
+}
+
+/* xTP team leaderboard — widen xTP column only */
+#xtp-team-leaderboard-table .col-xtp {
+  min-width: 220px;
+  width: 220px;
+}
+
+/* xTP component columns (xTP_P, xTP_A, xTP_B) - fixed width for visual rhythm */
+.xtp-component-col {
+  width: 96px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* xTP primary value - increased emphasis */
+.value-cell .value-label.positive {
+  font-size: 13.2px; /* +10% from 12px */
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 /* Metric cell structure for improved spacing */

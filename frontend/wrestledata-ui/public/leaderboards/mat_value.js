@@ -212,7 +212,7 @@ async function loadLeaderboard() {
   } catch (err) {
     console.error("Error loading leaderboard:", err);
     document.getElementById("season-info").textContent = "Error loading data";
-    const tbody = document.querySelector("#leaderboard-table tbody");
+    const tbody = document.querySelector("#mv-leaderboard-table tbody");
     if (tbody) tbody.innerHTML = "";
   }
 }
@@ -345,7 +345,7 @@ function renderLeaderboard(data) {
   // No need to pre-calculate percentages
   
   // Render table
-  const tbody = document.querySelector("#leaderboard-table tbody");
+  const tbody = document.querySelector("#mv-leaderboard-table tbody");
   tbody.innerHTML = "";
   
   filtered.forEach((entry, index) => {
@@ -390,7 +390,7 @@ function renderLeaderboard(data) {
     
     // MV with DataGolf-style centered bar
     const mvTd = document.createElement("td");
-    mvTd.className = "value-cell";
+    mvTd.className = "value-cell col-mv";
     
     if (entry.mv_avg !== null && entry.mv_avg !== undefined) {
       const mvValue = entry.mv_avg;
