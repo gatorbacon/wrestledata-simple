@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>xTP Team Projections</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .expandable-row {
+      cursor: pointer;
+    }
+    .expandable-row:hover {
+      background-color: #f5f5f5;
+    }
+    .expand-icon {
+      display: inline-block;
+      width: 12px;
+      text-align: center;
+      margin-right: 8px;
+    }
+    .expanded .expand-icon::before {
+      content: "▼";
+    }
+    .collapsed .expand-icon::before {
+      content: "▶";
+    }
+    .weight-breakdown {
+      display: none;
+    }
+    .weight-breakdown.expanded {
+      display: table-row;
+    }
+    .weight-breakdown td {
+      padding: 12px;
+      background-color: #fafafa;
+    }
+    .weight-breakdown table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+    }
+    .weight-breakdown th,
+    .weight-breakdown td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .weight-breakdown th {
+      font-weight: 600;
+      color: #666;
+      font-size: 0.9em;
+      background-color: #f0f0f0;
+    }
+    .weight-breakdown tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .xtp-total {
+      font-weight: bold;
+    }
+    .xtp-component {
+      color: #666;
+      font-weight: normal;
+    }
+    .no-qualifier {
+      color: #999;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <header class="header">
+      <h1>xTP Team Projections</h1>
+      <div class="header-subline">Projected NCAA Team Points (xTP)</div>
+      <div class="header-subline" id="season-info"></div>
+    </header>
+
+    <section class="section">
+      <div class="table-wrapper">
+        <table id="leaderboard-table">
+          <thead>
+            <tr>
+              <th style="width: 40px;"></th>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>xTP</th>
+              <th class="xtp-component">xTP_P</th>
+              <th class="xtp-component">xTP_A</th>
+              <th class="xtp-component">xTP_B</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/leaderboards/xtp/teams.js"></script>
+</body>
+</html>
+

@@ -112,7 +112,18 @@ async function loadTeam(teamId) {
       }
     }
 
-    renderTeamPage(teamProfile, teamMetrics, starterProfiles, remainingProfiles);
+    // 8) Load xTP data (optional, fail silently if missing)
+    let xtpData = null;
+    try {
+      const xtpFile = await fetchJSON(`/xtp/2026/xtp_teams_2026.json`);
+      const teamName = teamProfile.team_name || teamProfile.name;
+      xtpData = xtpFile.teams.find(t => t.team === teamName);
+    } catch (err) {
+      console.warn(`Could not load xTP data:`, err);
+      // Continue without xTP data
+    }
+
+    renderTeamPage(teamProfile, teamMetrics, starterProfiles, remainingProfiles, xtpData);
   } catch (err) {
     document.getElementById("team-name").textContent = "Team Not Found";
     document.getElementById("team-meta").textContent = err.message;
@@ -128,12 +139,19 @@ function formatWLRecord(wins, losses, winPct) {
   return `${wins}–${losses} (${pct}%)`;
 }
 
-function renderTeamPage(team, metrics, starters, remaining) {
+function renderTeamPage(team, metrics, starters, remaining, xtpData) {
   // Header
   const teamName = team.team_name || team.name;
   document.getElementById("team-name").textContent = teamName;
   document.getElementById("team-meta").textContent =
     `${team.conference} · ${team.division}`;
+
+  // xTP section (show only if data exists)
+  if (xtpData) {
+    renderXTPSection(xtpData, starters);
+  } else {
+    document.getElementById("xtp-section").style.display = "none";
+  }
 
   // Team metrics
   const m = metrics.metrics;
@@ -249,6 +267,89 @@ function renderRemainingRosterTable(remaining) {
     // Bonus Rate: read from profile.metrics.bonus_rate (already computed)
     const bonusRate = profile.metrics?.bonus_rate;
     td(bonusRate !== null && bonusRate !== undefined ? percent(bonusRate) : "—");
+
+    tbody.appendChild(tr);
+  });
+}
+
+function renderXTPSection(xtpData, starters) {
+  // Show section
+  document.getElementById("xtp-section").style.display = "block";
+
+  // Summary block
+  document.getElementById("xtp-total").textContent = safe(xtpData.team_xTP, v => v.toFixed(1));
+  document.getElementById("xtp-p").textContent = safe(xtpData.team_xTP_P, v => v.toFixed(1));
+  document.getElementById("xtp-a").textContent = safe(xtpData.team_xTP_A, v => v.toFixed(1));
+  document.getElementById("xtp-b").textContent = safe(xtpData.team_xTP_B, v => v.toFixed(1));
+
+  // Per-weight breakdown table
+  const tbody = document.querySelector("#xtp-breakdown-table tbody");
+  tbody.innerHTML = "";
+
+  // Sort weights ascending
+  const weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285];
+  
+  weights.forEach(weight => {
+    const weightStr = String(weight);
+    const weightData = xtpData.weights?.[weightStr];
+    const tr = document.createElement("tr");
+
+    // Weight
+    const weightTd = document.createElement("td");
+    weightTd.textContent = weight;
+    tr.appendChild(weightTd);
+
+    if (weightData && weightData.wrestler_id) {
+      // Wrestler name (link)
+      const wrestlerTd = document.createElement("td");
+      const wrestlerLink = document.createElement("a");
+      wrestlerLink.href = `/wrestler.html?id=${weightData.wrestler_id}`;
+      wrestlerLink.textContent = weightData.name || "Unknown";
+      wrestlerTd.appendChild(wrestlerLink);
+      tr.appendChild(wrestlerTd);
+
+      // Rank
+      const rankTd = document.createElement("td");
+      rankTd.textContent = safe(weightData.rank, v => `#${v}`);
+      tr.appendChild(rankTd);
+
+      // MV (from wrestler profile if available)
+      const mvTd = document.createElement("td");
+      const starterProfile = starters.find(s => s.weight === weight);
+      if (starterProfile && starterProfile.profile.metrics?.mat_value?.mv_avg !== undefined) {
+        mvTd.textContent = formatDecimal(starterProfile.profile.metrics.mat_value.mv_avg, 3);
+      } else {
+        mvTd.textContent = "—";
+      }
+      tr.appendChild(mvTd);
+
+      // xTP (total)
+      const xtpTd = document.createElement("td");
+      xtpTd.textContent = safe(weightData.xTP, v => v.toFixed(1));
+      tr.appendChild(xtpTd);
+
+      // xTP_P
+      const xtpPTd = document.createElement("td");
+      xtpPTd.textContent = safe(weightData.xTP_P, v => v.toFixed(1));
+      tr.appendChild(xtpPTd);
+
+      // xTP_A
+      const xtpATd = document.createElement("td");
+      xtpATd.textContent = safe(weightData.xTP_A, v => v.toFixed(1));
+      tr.appendChild(xtpATd);
+
+      // xTP_B
+      const xtpBTd = document.createElement("td");
+      xtpBTd.textContent = safe(weightData.xTP_B, v => v.toFixed(1));
+      tr.appendChild(xtpBTd);
+    } else {
+      // No qualifier
+      const noQualTd = document.createElement("td");
+      noQualTd.colSpan = 7;
+      noQualTd.className = "no-qualifier";
+      noQualTd.textContent = "No qualifier";
+      tr.appendChild(noQualTd);
+    }
 
     tbody.appendChild(tr);
   });

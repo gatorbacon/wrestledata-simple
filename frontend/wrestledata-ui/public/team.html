@@ -14,6 +14,50 @@
       <div class="header-subline" id="team-meta"></div>
     </header>
 
+    <section id="xtp-section" class="section" style="display: none;">
+      <h2>xTP Projection</h2>
+      
+      <div class="summary-cards">
+        <div class="card">
+          <h3>xTP Summary</h3>
+          <div class="card-body">
+            <div style="font-size: 2em; font-weight: bold; margin-bottom: 0.5em;">
+              <span id="xtp-total">—</span>
+            </div>
+            <div><span class="label">xTP_P (Placement):</span> <span id="xtp-p"></span></div>
+            <div><span class="label">xTP_A (Advancement):</span> <span id="xtp-a"></span></div>
+            <div><span class="label">xTP_B (Bonus):</span> <span id="xtp-b"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrapper" style="margin-top: 1.5em;">
+        <table id="xtp-breakdown-table">
+          <thead>
+            <tr>
+              <th>Weight</th>
+              <th>Wrestler</th>
+              <th>Rank</th>
+              <th>MV</th>
+              <th>xTP</th>
+              <th>xTP_P</th>
+              <th>xTP_A</th>
+              <th>xTP_B</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <style>
+      .no-qualifier {
+        color: #999;
+        font-style: italic;
+        text-align: center;
+      }
+    </style>
+
     <section class="summary-cards">
       <div class="card">
         <h2>Team Metrics</h2>
