@@ -48,17 +48,20 @@ def compute_mv_for_wrestler(
     tier_avgs: Dict[Tuple[int, int], float],
     max_rank: int,
     all_matches: List[Dict],
-) -> Optional[Dict]:
+) -> Tuple[Optional[Dict], List[Dict]]:
     """
-    Compute MV for a single wrestler.
+    Compute MV for a single wrestler and per-match MV impact.
     
-    Returns dict with mv_avg and matches, or None if no valid matches.
+    Returns:
+        - Tuple of (mv_data_dict, matches_with_impact)
+        - mv_data_dict: dict with mv_avg and matches, or None if no valid matches
+        - matches_with_impact: list of match dicts with mv_impact field added
     """
     # Load wrestler's matches
     wrestler_matches = load_wrestler_matches(season, weight, wrestler_id, data_dir)
     
     if not wrestler_matches:
-        return None
+        return None, []
     
     # Collect opponent IDs
     opponent_ids = set()
@@ -68,7 +71,7 @@ def compute_mv_for_wrestler(
             opponent_ids.add(opp_id)
     
     if not opponent_ids:
-        return None
+        return None, []
     
     # Load all matches for opponents
     opponent_matches = load_all_matches_for_opponents(season, weight, opponent_ids, data_dir)
@@ -78,10 +81,12 @@ def compute_mv_for_wrestler(
     
     # Process each match
     mv_values = []
+    matches_with_impact = []
     
     for match in wrestler_matches:
         winner_id = match.get("winner_id")
         result = match.get("result", "")
+        date = match.get("date", "")
         
         # Skip forfeits
         if "MFF" in result.upper() or "FORFEIT" in result.upper():
@@ -119,26 +124,42 @@ def compute_mv_for_wrestler(
         # MV for this match
         mv_match = result_signed - expected_signed
         mv_values.append(mv_match)
+        
+        # Create match entry with MV impact for cache
+        match_with_impact = {
+            "wrestler_id": wrestler_id,
+            "opponent_id": opp_id,
+            "date": date,
+            "result": result,
+            "mv_impact": round(mv_match, 2),
+        }
+        matches_with_impact.append(match_with_impact)
     
     if not mv_values:
-        return None
+        return None, []
     
     mv_avg = sum(mv_values) / len(mv_values)
     
-    return {
+    mv_data = {
         "mv_avg": round(mv_avg, 3),
         "matches": len(mv_values),
     }
-
-
-def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = None) -> Dict[str, Dict]:
-    """
-    Compute MV for all wrestlers across all weights.
     
-    Returns dict mapping wrestler_id -> MV data.
+    return mv_data, matches_with_impact
+
+
+def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = None) -> Tuple[Dict[str, Dict], Dict[str, List[Dict]]]:
+    """
+    Compute MV for all wrestlers across all weights and per-match MV impact.
+    
+    Returns:
+        - Tuple of (all_mv_data, match_impact_cache)
+        - all_mv_data: dict mapping wrestler_id -> MV data
+        - match_impact_cache: dict mapping wrestler_id -> list of matches with mv_impact
     """
     data_path = Path(data_dir) / str(season)
     all_mv_data = {}
+    match_impact_cache = {}
     
     weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
     
@@ -180,7 +201,7 @@ def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = Non
         
         processed = 0
         for wrestler_id in wrestler_ids:
-            mv_data = compute_mv_for_wrestler(
+            mv_data, matches_with_impact = compute_mv_for_wrestler(
                 wrestler_id,
                 season,
                 weight,
@@ -193,19 +214,22 @@ def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = Non
             
             if mv_data:
                 all_mv_data[wrestler_id] = mv_data
+                if matches_with_impact:
+                    match_impact_cache[wrestler_id] = matches_with_impact
                 processed += 1
         
         print(f"  Computed MV for {processed} wrestlers at weight {weight}")
     
     print("\n" + "=" * 80)
     print(f"Total: Computed MV for {len(all_mv_data)} wrestlers")
+    print(f"Total: Computed per-match MV impact for {len(match_impact_cache)} wrestlers")
     print("=" * 80)
     
     # Write season-wide dataset if output file specified
     if output_file:
         write_season_dataset(season, all_mv_data, data_dir, output_file)
     
-    return all_mv_data
+    return all_mv_data, match_impact_cache
 
 
 def compute_mv_rankings(leaderboard_entries: List[Dict]) -> List[Dict]:
@@ -334,9 +358,9 @@ def main() -> None:
         # Default output location
         output_file = Path(f"data/mat_value/{args.season}/mat_value_{args.season}.json")
     
-    mv_data = compute_all_mv(args.season, args.data_dir, output_file)
+    mv_data, match_impact_cache = compute_all_mv(args.season, args.data_dir, output_file)
     
-    # Also write a JSON file that can be loaded by build_wrestler_profiles.py
+    # Write MV cache file that can be loaded by build_wrestler_profiles.py
     cache_file = Path(f"data/mat_value/{args.season}/mv_cache_{args.season}.json")
     cache_file.parent.mkdir(parents=True, exist_ok=True)
     with cache_file.open("w", encoding="utf-8") as f:
@@ -344,6 +368,15 @@ def main() -> None:
     
     print(f"\nWrote MV cache: {cache_file}")
     print(f"  {len(mv_data)} wrestlers")
+    
+    # Write match-level MV impact cache
+    match_impact_file = Path(f"data/mat_value/{args.season}/match_mv_impact_{args.season}.json")
+    match_impact_file.parent.mkdir(parents=True, exist_ok=True)
+    with match_impact_file.open("w", encoding="utf-8") as f:
+        json.dump(match_impact_cache, f, indent=2)
+    
+    print(f"\nWrote match MV impact cache: {match_impact_file}")
+    print(f"  {len(match_impact_cache)} wrestlers with match-level data")
 
 
 if __name__ == "__main__":

@@ -391,12 +391,45 @@ def find_best_win_and_worst_loss(
     return best_win, worst_loss
 
 
+def load_match_mv_impact(season: int) -> Dict[str, Dict]:
+    """
+    Load per-match MV impact cache.
+    
+    Returns dict mapping (wrestler_id, opponent_id, date, result) -> mv_impact
+    """
+    match_impact_file = Path(f"data/mat_value/{season}/match_mv_impact_{season}.json")
+    if not match_impact_file.exists():
+        return {}
+    
+    try:
+        with match_impact_file.open("r", encoding="utf-8") as f:
+            cache_data = json.load(f)
+        
+        # Convert to lookup dict: (wrestler_id, opponent_id, date, result) -> mv_impact
+        lookup = {}
+        for wrestler_id, matches in cache_data.items():
+            for match_entry in matches:
+                key = (
+                    match_entry.get("wrestler_id"),
+                    match_entry.get("opponent_id"),
+                    match_entry.get("date", ""),
+                    match_entry.get("result", ""),
+                )
+                lookup[key] = match_entry.get("mv_impact")
+        
+        return lookup
+    except Exception as e:
+        print(f"Warning: Could not load match MV impact cache: {e}")
+        return {}
+
+
 def build_match_list(
     matches: List[Dict],
     wrestler_id: str,
     rank_by_id: Dict[str, int],
     all_wrestlers: Dict[str, Dict],
     team_rank_by_name: Dict[str, int],
+    match_mv_impact_lookup: Optional[Dict] = None,
 ) -> List[Dict]:
     """Build formatted match list for JSON output."""
     match_list = []
@@ -507,6 +540,19 @@ def build_match_list(
             "event": event,
         }
         
+        # Add MV impact if available from cache
+        # Try both original date format and formatted date for matching
+        if match_mv_impact_lookup:
+            # Try with formatted date first (YYYY-MM-DD)
+            lookup_key = (wrestler_id, opp_id, date_formatted, result)
+            mv_impact = match_mv_impact_lookup.get(lookup_key)
+            # If not found, try with original date format
+            if mv_impact is None:
+                lookup_key = (wrestler_id, opp_id, date, result)
+                mv_impact = match_mv_impact_lookup.get(lookup_key)
+            if mv_impact is not None:
+                match_entry["mv_impact"] = mv_impact
+        
         match_list.append(match_entry)
     
     # Sort by date (newest first)
@@ -572,6 +618,7 @@ def build_wrestler_profile(
     metrics_by_id: Dict[str, Dict],
     matches: List[Dict],
     mv_data: Optional[Dict[str, Dict]] = None,
+    match_mv_impact_lookup: Optional[Dict] = None,
 ) -> Dict:
     """Build complete wrestler profile JSON."""
     wrestler_info = all_wrestlers.get(wrestler_id, {})
@@ -615,7 +662,7 @@ def build_wrestler_profile(
     
     # Build match list
     match_list = build_match_list(
-        matches, wrestler_id, rank_by_id, all_wrestlers, team_rank_by_name
+        matches, wrestler_id, rank_by_id, all_wrestlers, team_rank_by_name, match_mv_impact_lookup
     )
     
     # Get Mat Value data if available
@@ -719,6 +766,15 @@ def main() -> None:
     else:
         print("No MV data found (run compute_all_mat_values.py first)")
     
+    # Load per-match MV impact cache if available
+    print("\nLoading per-match MV impact data...")
+    match_mv_impact_lookup = load_match_mv_impact(season)
+    if match_mv_impact_lookup:
+        print(f"Loaded MV impact data for {len(match_mv_impact_lookup)} match entries")
+    else:
+        print("No per-match MV impact data found (run compute_all_mat_values.py first)")
+        match_mv_impact_lookup = {}
+    
     # Create output directories
     season_dir = output_dir / str(season)
     by_id_dir = season_dir / "by_id"
@@ -758,6 +814,7 @@ def main() -> None:
             metrics_by_id,
             matches,
             mv_data,
+            match_mv_impact_lookup,
         )
         
         # Write to by_id

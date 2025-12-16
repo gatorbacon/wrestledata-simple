@@ -15,64 +15,69 @@
       <div class="header-meta" id="wrestler-meta"></div>
     </header>
 
-    <section class="summary-cards">
-      <div class="card">
-        <h2>Record</h2>
-        <div class="card-body">
-          <div><span class="label">Overall:</span> <span id="record-overall"></span></div>
-          <div><span class="label">vs Ranked:</span> <span id="record-ranked"></span></div>
-          <div><span class="label">vs Top-10:</span> <span id="record-top10"></span></div>
-          <div><span class="label">vs Top-25:</span> <span id="record-top25"></span></div>
-        </div>
+    <!-- PROFILE TOP GRID: MV + Skill Profile -->
+    <section class="profile-top-grid">
+      <div class="profile-panel profile-panel--mv" id="mv-panel">
+        <!-- MV content will be rendered here by JS -->
       </div>
-
-      <div class="card">
-        <h2>Bonus & Falls</h2>
-        <div class="card-body">
-          <div><span class="label">Bonus Rate:</span> <span id="metric-bonus-rate"></span></div>
-          <div><span class="label">Pin Rate:</span> <span id="metric-pin-rate"></span></div>
-          <div><span class="label">Majors:</span> <span id="metric-majors"></span></div>
-          <div><span class="label">Tech Falls:</span> <span id="metric-techs"></span></div>
-          <div><span class="label">Pins:</span> <span id="metric-pins"></span></div>
-        </div>
+      <div class="profile-panel profile-panel--skill" id="skill-panel">
+        <!-- Skill Profile content will be rendered here by JS -->
       </div>
+    </section>
 
-      <div class="card">
-        <h2>Efficiency</h2>
-        <div class="card-body">
-          <div><span class="label">PF7:</span> <span id="metric-pf7"></span></div>
-          <div><span class="label">PA7:</span> <span id="metric-pa7"></span></div>
-          <div><span class="label">PD7:</span> <span id="metric-pd7"></span></div>
-          <div><span class="label">SI+:</span> <span id="metric-si-plus"></span></div>
-          <div><span class="label">DF+:</span> <span id="metric-df-plus"></span></div>
-          <div><span class="label">APR+:</span> <span id="metric-apr-plus"></span></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2>
-          Mat Value
-          <span class="tooltip-icon" data-tooltip="mv">ⓘ</span>
-        </h2>
-        <div class="card-body">
-          <div><span class="label">MV <span class="tooltip-icon" data-tooltip="mv">ⓘ</span>:</span> <span id="metric-mv"></span></div>
-          <div><span class="label">MV Rank (Weight):</span> <span id="metric-mv-rank-weight"></span></div>
-          <div><span class="label">MV Rank (Overall):</span> <span id="metric-mv-rank-overall"></span></div>
-          <div id="mv-leaderboard-link" style="margin-top: 8px;"></div>
+    <!-- MV CONTEXT BLOCK -->
+    <section class="section" id="mv-context-section">
+      <div class="mv-context-card">
+        <h2>Mat Value Context</h2>
+        <p class="mv-context-explainer">
+          These indicators provide context for how and against whom a wrestler generates Mat Value.
+        </p>
+        <div class="mv-context-rows" id="mv-context-rows">
+          <!-- Context rows will be rendered here -->
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Largest xTP Swing</h2>
-      <div id="impact-summary" class="impact-summary"></div>
+    <!-- EXPECTED NCAA IMPACT (xTP) -->
+    <section class="section" id="xtp-section" style="display: none;">
+      <h2>
+        Expected NCAA Impact (xTP)
+        <span class="tooltip-icon" data-tooltip="xtp">ⓘ</span>
+      </h2>
+      <p style="color: var(--muted); font-size: 0.875rem; margin-bottom: 1em;">
+        Expected Team Points (xTP) estimate how many NCAA tournament points a wrestler is likely to contribute based on advancement, placement, and bonus probabilities.
+      </p>
+      <div class="summary-cards">
+        <div class="card">
+          <div class="card-body">
+            <div style="font-size: 2.5em; font-weight: bold; margin-bottom: 0.5em; color: var(--text);">
+              <span id="xtp-total">—</span>
+            </div>
+            <div><span class="label">xTP_P (Placement) <span class="tooltip-icon" data-tooltip="xtp-p">ⓘ</span>:</span> <span id="xtp-p" class="metric-sub"></span></div>
+            <div><span class="label">xTP_A (Advancement) <span class="tooltip-icon" data-tooltip="xtp-a">ⓘ</span>:</span> <span id="xtp-a" class="metric-sub"></span></div>
+            <div><span class="label">xTP_B (Bonus) <span class="tooltip-icon" data-tooltip="xtp-b">ⓘ</span>:</span> <span id="xtp-b" class="metric-sub"></span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>Full Metrics</h2>
-      <div id="metrics-table-container" class="metrics-table-container"></div>
+    <!-- MATCH IMPACT TIMELINE -->
+    <section class="section" id="match-impact-section">
+      <h2>Match Impact Timeline</h2>
+      <p class="match-impact-explainer">
+        Each bar represents a wrestler's per-match contribution to Mat Value (or xTP), relative to opponent expectation.
+      </p>
+      <div class="match-impact-toggle" id="match-impact-toggle">
+        <a href="#" class="impact-toggle-link active" data-mode="mv">MV Impact</a>
+        <span style="color: var(--muted); margin: 0 0.5em;">|</span>
+        <a href="#" class="impact-toggle-link" data-mode="xtp">xTP Impact</a>
+      </div>
+      <div class="match-impact-chart-container" id="match-impact-chart-container">
+        <!-- Chart will be rendered here -->
+      </div>
     </section>
 
+    <!-- MATCH HISTORY -->
     <section class="section">
       <h2>Match History</h2>
       <div class="table-wrapper">
@@ -87,6 +92,7 @@
               <th>Opp Rank</th>
               <th>Result</th>
               <th>Method</th>
+              <th>Impact</th>
               <th>Score</th>
               <th>Duration</th>
               <th>Event</th>
@@ -99,7 +105,8 @@
   </div>
 
   <script src="/app.js"></script>
-
+  <script src="/tooltips.js"></script>
+  
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const params = new URLSearchParams(window.location.search);
@@ -113,8 +120,6 @@
     
       loadWrestlerProfile(wrestlerId);
     });
-    </script>
-  <script src="/tooltips.js"></script>
-  <script src="/app.js"></script>
+  </script>
 </body>
 </html>

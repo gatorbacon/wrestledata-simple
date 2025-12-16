@@ -59,7 +59,8 @@
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 0.68
     },
     {
       "date": "2025-11-23",
@@ -73,7 +74,8 @@
       "method": "DEC",
       "score": "12-5",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -0.68
     },
     {
       "date": "2025-11-23",
@@ -87,12 +89,8 @@
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -3.72
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.3333333333333333
-  }
+  ]
 }

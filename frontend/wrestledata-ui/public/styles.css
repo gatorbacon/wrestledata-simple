@@ -819,3 +819,674 @@ th.tooltip-trigger .tooltip {
   white-space: normal;
   position: fixed;
 }
+
+/* ========================================
+   WRESTLER PROFILE - PRIMARY METRIC BLOCK
+   ======================================== */
+
+.primary-metric-block {
+  max-width: 700px;
+  padding: 2em 0;
+  /* Remove heavy card chrome */
+  background: transparent;
+  border: none;
+}
+
+.primary-metric-value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+
+.primary-mv-value {
+  font-size: 3.5rem; /* 2.5-3× body text */
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.primary-mv-ranks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  flex: 1;
+}
+
+.primary-mv-rank-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.primary-mv-rank-label {
+  font-size: 0.875rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.primary-mv-link {
+  margin-top: 1em;
+}
+
+.primary-mv-link a {
+  font-size: 0.9em;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.primary-mv-link a:hover {
+  text-decoration: underline;
+}
+
+.primary-mv-explainer {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+/* ========================================
+   WRESTLER PROFILE - SKILL PROFILE
+   ======================================== */
+
+.section-explainer {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+.skill-profile-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em 0;
+}
+
+.skill-metric-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  min-height: 32px;
+}
+
+.skill-metric-label {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text);
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.skill-metric-value {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+
+.skill-metric-bar-container {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  margin: 4px 0;
+}
+
+.skill-metric-zero-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.skill-metric-bar {
+  position: absolute;
+  top: 50%;
+  height: 12px;
+  transform: translateY(-50%);
+  background: var(--accent);
+  opacity: 0.25;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.skill-metric-bar.positive {
+  background: rgba(0, 194, 168, 0.3);
+}
+
+.skill-metric-bar.negative {
+  background: rgba(220, 90, 90, 0.3);
+}
+
+.skill-metric-value-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  z-index: 3;
+  white-space: nowrap;
+}
+
+.skill-metric-value-label.positive {
+  right: 0;
+  color: var(--text);
+}
+
+.skill-metric-value-label.negative {
+  left: 0;
+  color: var(--text);
+}
+
+/* ========================================
+   WRESTLER PROFILE - RECORD (De-emphasized)
+   ======================================== */
+
+.record-block {
+  display: flex;
+  gap: 2em;
+  padding: 1em 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+  justify-content: flex-start; /* Changed from flex-end for left alignment in Skill Profile */
+}
+
+/* Record block when inside Skill Profile */
+#skill-profile-section .record-block {
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid var(--border);
+}
+
+.record-item {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.record-item .label {
+  font-weight: 500;
+  color: var(--muted);
+}
+
+/* ========================================
+   WRESTLER PROFILE - MATCH HISTORY (Quiet)
+   ======================================== */
+
+#match-table {
+  font-size: 0.875rem;
+}
+
+#match-table thead th {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+#match-table tbody td {
+  padding: 6px 10px;
+  color: var(--text);
+}
+
+#match-table tbody tr:hover {
+  background: var(--panel-2);
+}
+
+/* ========================================
+   WRESTLER PROFILE - MV NAVIGATION LINKS
+   ======================================== */
+
+.mv-navigation-links {
+  font-size: 0.875rem;
+}
+
+.mv-nav-link {
+  color: var(--accent);
+  text-decoration: none;
+  transition: text-decoration 0.15s ease;
+}
+
+.mv-nav-link:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   WRESTLER PROFILE - MV TREND INDICATOR
+   ======================================== */
+
+.mv-trend-indicator {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: help;
+  user-select: none;
+}
+
+.mv-trend-indicator.mv-trend-rising {
+  color: var(--good);
+}
+
+.mv-trend-indicator.mv-trend-stable {
+  color: var(--muted);
+}
+
+.mv-trend-indicator.mv-trend-declining {
+  color: #dc5a5a; /* muted red */
+}
+
+/* ========================================
+   WRESTLER PROFILE - MV CONTEXT BLOCK
+   ======================================== */
+
+.mv-context-card {
+  background: var(--panel);
+  padding: 1.5em;
+  border-radius: var(--r-md);
+  max-width: 700px;
+}
+
+.mv-context-explainer {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+.mv-context-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.mv-context-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+  padding: 0.5em 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mv-context-row:last-child {
+  border-bottom: none;
+}
+
+.mv-context-label {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.mv-context-value {
+  font-size: 0.9375rem;
+  color: var(--text);
+  text-align: right;
+  flex: 1;
+}
+
+/* Match History enhancements */
+.result-with-tooltip {
+  cursor: help;
+}
+
+/* ========================================
+   WRESTLER PROFILE - MATCH IMPACT TIMELINE
+   ======================================== */
+
+.match-impact-explainer {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+.match-impact-toggle {
+  margin-bottom: 1.5em;
+  font-size: 0.875rem;
+}
+
+.impact-toggle-link {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.impact-toggle-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.impact-toggle-link.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.match-impact-chart-container {
+  width: 100%;
+  margin: 1.5em 0;
+  padding: 1em 0;
+}
+
+.match-impact-chart {
+  width: 100%;
+  height: 200px;
+  max-width: 100%;
+}
+
+.match-impact-bar {
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.match-impact-bar:hover {
+  opacity: 0.8;
+}
+
+.chart-tooltip {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 8px 12px;
+  font-size: 0.8125rem;
+  color: var(--text);
+  white-space: pre-line;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 250px;
+}
+
+/* Match History - Impact column */
+.match-impact-cell {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  text-align: right;
+}
+
+.match-impact-cell.impact-positive {
+  color: rgba(0, 194, 168, 0.9);
+}
+
+.match-impact-cell.impact-negative {
+  color: rgba(220, 90, 90, 0.9);
+}
+
+/* ========================================
+   WRESTLER PROFILE - TOP GRID LAYOUT
+   ======================================== */
+
+.profile-top-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  margin-top: 20px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .profile-top-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Remove boxed card backgrounds - use plain background with dividers */
+.profile-panel {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.profile-panel:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.profile-panel h2,
+.profile-panel h3 {
+  margin-top: 0;
+}
+
+/* MV Panel Structure */
+.profile-panel--mv .mv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.profile-panel--mv .mv-header h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.profile-panel--mv .mv-header-link {
+  font-size: 0.8125rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.profile-panel--mv .mv-header-link:hover {
+  text-decoration: underline;
+}
+
+.profile-panel--mv .mv-primary-row {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.profile-panel--mv .mv-value-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-panel--mv .mv-value {
+  font-size: 2.875em; /* Increased by ~15% from 2.5em */
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: -0.02em; /* Tighter spacing for large numbers */
+}
+
+/* Subtle MV bar under the number */
+.profile-panel--mv .mv-value-bar-wrapper {
+  width: 100%;
+  max-width: 200px;
+  height: 4px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-panel--mv .mv-value-bar {
+  height: 100%;
+  background: rgba(60,190,150,0.45);
+  border-left: 3px solid rgba(60,190,150,1);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.profile-panel--mv .mv-badges {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-panel--mv .mv-rank-label {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.7);
+  font-weight: 500;
+}
+
+.profile-panel--mv .mv-sublabel {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.6);
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.profile-panel--mv .mv-description {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.5); /* Reduced opacity from 0.65 */
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.profile-action {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(60,190,150,0.3);
+  background: rgba(0,0,0,0.2);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0 rgba(60,190,150,0);
+}
+
+.profile-action:hover {
+  background: rgba(60,190,150,0.1);
+  border-color: rgba(60,190,150,0.5);
+  box-shadow: 0 0 8px rgba(60,190,150,0.2);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+/* Skill Profile Panel Structure */
+.profile-panel--skill h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.profile-panel--skill .skill-helper {
+  font-size: 0.8125rem;
+  color: var(--accent);
+  margin: 0 0 16px 0;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 56px; /* Wider label for dual-format */
+  gap: 12px;
+  align-items: center;
+  padding: 4px 0; /* Reduced vertical spacing by ~20% */
+}
+
+.skill-label {
+  font-size: 0.8125rem; /* Match leaderboard label size */
+  letter-spacing: 0;
+  text-transform: none; /* No uppercase for dual-format */
+  color: rgba(255,255,255,0.7); /* Slightly lighter */
+  font-weight: 500;
+}
+
+.skill-value {
+  text-align: right;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.skill-bar {
+  height: 10px; /* Same as leaderboard value bars */
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  width: calc(var(--pct) * 1%);
+  background: rgba(60,190,150,0.45); /* Same as leaderboard value bars */
+  border-left: 3px solid rgba(60,190,150,1); /* Same accent */
+  border-radius: 999px; /* Same corner radius */
+  opacity: 1; /* Match leaderboard opacity */
+}
+
+.quick-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 18px; /* Further reduced vertical gap */
+  margin-top: 12px;
+}
+
+.quick-stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem; /* Smaller font - reduced visual weight */
+  color: rgba(255,255,255,0.5); /* More muted - reduced visual weight */
+  padding: 2px 0;
+}
+
+.quick-stat-value {
+  font-weight: 500; /* Reduced from 600 */
+  color: rgba(255,255,255,0.7); /* More muted */
+  font-variant-numeric: tabular-nums;
+}
+
+.record-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.mini-badge {
+  padding: 4px 8px; /* Slightly smaller - reduced visual weight */
+  border-radius: 6px;
+  font-size: 0.75rem; /* Smaller font - reduced visual weight */
+  background: rgba(0,0,0,0.15); /* More subtle */
+  border: 1px solid rgba(255,255,255,0.05); /* More subtle */
+  color: rgba(255,255,255,0.6); /* More muted */
+}
+
+/* Ensure MV panel visually outweighs Skill Profile */
+.profile-panel--mv {
+  flex: 1.2;
+}
+
+.profile-panel--skill {
+  flex: 0.8;
+}
