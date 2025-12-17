@@ -9,42 +9,45 @@
 
 <body>
   <div class="page-container">
+    <!-- 1) TEAM HEADER -->
     <header class="header">
       <h1 id="team-name"></h1>
       <div class="header-subline" id="team-meta"></div>
+      <div class="section-divider"></div>
     </header>
 
-    <section id="xtp-section" class="section" style="display: none;">
-      <h2>
-        Projected Team Points (xTP)
-        <span class="tooltip-icon" data-tooltip="xtp">ⓘ</span>
-      </h2>
-      
-      <div class="summary-cards">
-        <div class="card">
-          <div class="card-body">
-            <div style="font-size: 2.5em; font-weight: bold; margin-bottom: 0.5em; color: var(--text);">
-              <span id="xtp-total">—</span>
-            </div>
-            <div><span class="label">xTP_P (Placement) <span class="tooltip-icon" data-tooltip="xtp-p">ⓘ</span>:</span> <span id="xtp-p" class="metric-sub"></span></div>
-            <div><span class="label">xTP_A (Advancement) <span class="tooltip-icon" data-tooltip="xtp-a">ⓘ</span>:</span> <span id="xtp-a" class="metric-sub"></span></div>
-            <div><span class="label">xTP_B (Bonus) <span class="tooltip-icon" data-tooltip="xtp-b">ⓘ</span>:</span> <span id="xtp-b" class="metric-sub"></span></div>
-          </div>
+    <!-- 2) xTP HEADLINE (PRIMARY METRIC) -->
+    <section id="xtp-headline-section" class="xtp-headline-section" style="display: none;">
+      <div class="xtp-headline">
+        <div class="xtp-headline-main">
+          <span class="xtp-value" id="xtp-total">—</span>
+          <span class="xtp-rank-badge" id="xtp-rank-badge"></span>
+        </div>
+        <div class="xtp-headline-label">Projected NCAA Team Points</div>
+        <div class="xtp-headline-breakdown">
+          <span>Placement: <span id="xtp-p">—</span></span>
+          <span>Advancement: <span id="xtp-a">—</span></span>
+          <span>Bonus: <span id="xtp-b">—</span></span>
         </div>
       </div>
+      <div class="section-divider"></div>
+    </section>
 
-      <div class="table-wrapper" style="margin-top: 1.5em;">
-        <table id="xtp-breakdown-table">
+    <!-- 3) STARTING ROSTER TABLE (CORE CONTENT) -->
+    <section id="starting-roster-section" class="section">
+      <h2>Starting Roster</h2>
+      <div class="table-wrapper">
+        <table id="starting-roster-table">
           <thead>
             <tr>
               <th>Weight</th>
               <th>Wrestler</th>
               <th>Rank</th>
-              <th>MV <span class="tooltip-icon" data-tooltip="mv">ⓘ</span></th>
-              <th>xTP <span class="tooltip-icon" data-tooltip="xtp">ⓘ</span></th>
-              <th>xTP_P <span class="tooltip-icon" data-tooltip="xtp-p">ⓘ</span></th>
-              <th>xTP_A <span class="tooltip-icon" data-tooltip="xtp-a">ⓘ</span></th>
-              <th>xTP_B <span class="tooltip-icon" data-tooltip="xtp-b">ⓘ</span></th>
+              <th data-tooltip="mv">MV</th>
+              <th data-tooltip="xtp">xTP</th>
+              <th data-tooltip="xtp-p">xTP_P</th>
+              <th data-tooltip="xtp-a">xTP_A</th>
+              <th data-tooltip="xtp-b">xTP_B</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -53,70 +56,358 @@
     </section>
 
     <style>
+      /* Reuse exact styles from xTP leaderboard expanded rows */
       .no-qualifier {
-        color: #999;
+        color: var(--muted);
         font-style: italic;
-        text-align: center;
+      }
+      
+      /* Expanded row visual hierarchy - match leaderboard exactly */
+      .xtp-expanded-row {
+        font-size: 0.88em;
+        line-height: 1.15;
+      }
+      
+      .xtp-expanded-row td {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        color: var(--muted);
+      }
+      
+      .xtp-expanded-row td a {
+        color: var(--accent);
+      }
+      
+      .xtp-expanded-row td a:hover {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+      
+      .xtp-expanded-row td.xtp-sub {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 0.9em;
+        color: var(--muted);
+      }
+      
+      .xtp-expanded-row:hover {
+        background: var(--panel-2);
+      }
+      
+      /* Component column widths - match leaderboard */
+      .expanded-component-col {
+        width: 60px;
+        font-size: 0.8125rem;
+        color: var(--muted);
+      }
+      
+      /* xTP column width - match leaderboard, left-aligned */
+      .expanded-xtp-cell {
+        min-width: 180px;
+        width: 180px;
+        text-align: left;
+      }
+      
+      /* xTP column header - left-aligned */
+      #starting-roster-table th:nth-child(5) {
+        text-align: left;
+      }
+      
+      /* MV column - compact, numeric only, left-aligned */
+      .mv-value-cell {
+        width: 70px;
+        text-align: left;
+        font-variant-numeric: tabular-nums;
+      }
+      
+      /* MV column header - left-aligned */
+      #starting-roster-table th:nth-child(4) {
+        text-align: left;
+      }
+      
+      /* MV typographic thresholds */
+      .mv-numeric {
+        font-size: inherit;
+        font-variant-numeric: tabular-nums;
+      }
+      
+      .mv-numeric.mv-high {
+        font-weight: 600;
+        color: var(--text);
+      }
+      
+      .mv-numeric.mv-mid {
+        font-weight: 400;
+        color: var(--text);
+      }
+      
+      .mv-numeric.mv-low {
+        font-weight: 400;
+        color: var(--muted);
+        opacity: 0.65;
+      }
+      
+      .mv-numeric.mv-negative {
+        font-weight: 400;
+        color: #dc5a5a; /* muted red */
+        opacity: 0.75; /* slightly reduced opacity */
+      }
+      
+      .mv-numeric.tooltip-trigger {
+        cursor: help;
+      }
+      
+      /* Table header tooltips - entire cell is hoverable */
+      #starting-roster-table th[data-tooltip] {
+        cursor: help;
+      }
+      
+      /* xTP Headline Section - Primary Metric */
+      .xtp-headline-section {
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+      
+      .xtp-headline {
+        text-align: left;
+      }
+      
+      .xtp-headline-main {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 8px;
+      }
+      
+      .xtp-value {
+        font-size: 3.5em;
+        font-weight: 700;
+        color: var(--text);
+        line-height: 1;
+        font-variant-numeric: tabular-nums;
+      }
+      
+      .xtp-rank-badge {
+        display: inline-block;
+      }
+      
+      .xtp-headline-label {
+        font-size: 0.95rem;
+        color: var(--muted);
+        margin-bottom: 12px;
+      }
+      
+      .xtp-headline-breakdown {
+        font-size: 0.875rem;
+        color: var(--muted);
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      
+      .xtp-headline-breakdown span {
+        white-space: nowrap;
+      }
+      
+      /* Metrics Sections - Supporting Information */
+      .metrics-section-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 12px;
+        margin-top: 0;
+      }
+      
+      .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px 32px;
+        margin-bottom: 2em;
+      }
+      
+      .metrics-grid--three-columns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px 24px;
+        margin-bottom: 2em;
+      }
+      
+      @media (max-width: 900px) {
+        .metrics-grid--three-columns {
+          grid-template-columns: 1fr;
+        }
+      }
+      
+      .metrics-column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      
+      /* Divider lines between columns */
+      .metrics-grid--three-columns .metrics-column:not(:last-child) {
+        border-right: 1px solid rgba(255, 255, 255, 0.06);
+        padding-right: 24px;
+      }
+      
+      @media (max-width: 900px) {
+        .metrics-grid--three-columns .metrics-column:not(:last-child) {
+          border-right: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+          padding-right: 0;
+          padding-bottom: 1em;
+          margin-bottom: 1em;
+        }
+      }
+      
+      .metric-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 0.875rem;
+      }
+      
+      .metric-label {
+        color: var(--muted);
+        font-weight: 400;
+      }
+      
+      .metric-value {
+        color: var(--text);
+        font-variant-numeric: tabular-nums;
+        font-weight: 500;
+      }
+      
+      /* Section Dividers */
+      .section-divider {
+        height: 1px;
+        background: var(--border);
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+      }
+      
+      /* Remaining Roster - Visually Secondary */
+      .section--remaining-roster {
+        margin-top: 3em;
+      }
+      
+      .remaining-roster-table thead th {
+        color: var(--muted);
+        font-weight: 500;
+        font-size: 0.875rem;
+      }
+      
+      .remaining-roster-table tbody td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      }
+      
+      .remaining-roster-table tbody tr:hover {
+        background: var(--panel-2);
+      }
+      
+      /* Matches column - muted */
+      .remaining-roster-table td:nth-child(5) {
+        color: var(--muted);
+        font-size: 0.875rem;
       }
     </style>
 
-    <section class="summary-cards">
-      <div class="card">
-        <h2>Team Metrics</h2>
-        <div class="card-body">
-          <div><span class="label">Avg PF7:</span> <span id="tm-pf7"></span></div>
-          <div><span class="label">Avg PA7:</span> <span id="tm-pa7"></span></div>
-          <div><span class="label">Avg PD7:</span> <span id="tm-pd7"></span></div>
-          <div><span class="label">Bonus Rate:</span> <span id="tm-bonus"></span></div>
-          <div><span class="label">Pin Rate:</span> <span id="tm-pin"></span></div>
-          <div><span class="label">Tech Rate:</span> <span id="tm-tech"></span></div>
-          <div><span class="label">Top 10 Win %:</span> <span id="tm-top10-pct"></span></div>
-          <div><span class="label">Top 33 Win %:</span> <span id="tm-top33-pct"></span></div>
-          <div><span class="label">W/L Record:</span> <span id="tm-wl-record"></span></div>
+    <!-- 4) TEAM PROFILE METRICS (SUPPORTING) -->
+    <section id="team-profile-metrics-section" class="section">
+      <h3 class="metrics-section-title">Team Profile</h3>
+      <div class="metrics-grid metrics-grid--three-columns">
+        <!-- COLUMN 1 — PERFORMANCE (Scoring) -->
+        <div class="metrics-column">
+          <div class="metric-item">
+            <span class="metric-label">Points Scored (per 7 min)</span>
+            <span class="metric-value" id="tm-pf7">—</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Points Allowed (per 7 min)</span>
+            <span class="metric-value" id="tm-pa7">—</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Point Differential (per 7 min)</span>
+            <span class="metric-value" id="tm-pd7">—</span>
+          </div>
         </div>
-      </div>
-
-      <div class="card">
-        <h2>Advanced Metrics</h2>
-        <div class="card-body">
-          <div><span class="label">SI+:</span> <span id="tm-si-plus"></span></div>
-          <div><span class="label">DF+:</span> <span id="tm-df-plus"></span></div>
-          <div><span class="label">APR+:</span> <span id="tm-apr-plus"></span></div>
+        
+        <!-- COLUMN 2 — RESULTS -->
+        <div class="metrics-column">
+          <div class="metric-item">
+            <span class="metric-label">W–L Record</span>
+            <span class="metric-value" id="tm-wl-record">—</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Top-33 Record</span>
+            <span class="metric-value" id="tm-top33-record">—</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Top-10 Record</span>
+            <span class="metric-value" id="tm-top10-record">—</span>
+          </div>
+        </div>
+        
+        <!-- COLUMN 3 — STYLE / BONUS -->
+        <div class="metrics-column">
+          <div class="metric-item">
+            <span class="metric-label">Bonus Rate</span>
+            <span class="metric-value" id="tm-bonus">—</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Pin Rate</span>
+            <span class="metric-value" id="tm-pin">—</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Tech Fall Rate</span>
+            <span class="metric-value" id="tm-tech">—</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Starting Roster</h2>
-      <div class="table-wrapper">
-        <table id="starting-roster-table">
-          <thead>
-            <tr>
-              <th>Weight</th>
-              <th>Name</th>
-              <th>Rank</th>
-              <th>Record</th>
-              <th>Bonus Rate</th>
-              <th>SI+</th>
-              <th>DF+</th>
-              <th>APR+</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+    <!-- 5) ADVANCED METRICS (SUPPORTING) -->
+    <section id="advanced-metrics-section" class="section">
+      <h3 class="metrics-section-title">Advanced Metrics</h3>
+      <div class="metrics-grid--three-columns">
+        <!-- COLUMN 1 — SI+ -->
+        <div class="metrics-column">
+          <div class="metric-item">
+            <span class="metric-label">SI+</span>
+            <span class="metric-value" id="tm-si-plus">—</span>
+          </div>
+        </div>
+        
+        <!-- COLUMN 2 — DF+ -->
+        <div class="metrics-column">
+          <div class="metric-item">
+            <span class="metric-label">DF+</span>
+            <span class="metric-value" id="tm-df-plus">—</span>
+          </div>
+        </div>
+        
+        <!-- COLUMN 3 — APR+ -->
+        <div class="metrics-column">
+          <div class="metric-item">
+            <span class="metric-label">APR+</span>
+            <span class="metric-value" id="tm-apr-plus">—</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--remaining-roster">
       <h2>Remaining Roster</h2>
       <div class="table-wrapper">
-        <table id="remaining-roster-table">
+        <table id="remaining-roster-table" class="remaining-roster-table">
           <thead>
             <tr>
               <th>Weight</th>
-              <th>Name</th>
+              <th>Wrestler</th>
               <th>Record</th>
+              <th data-tooltip="mv">MV</th>
               <th>Bonus Rate</th>
+              <th>Matches</th>
             </tr>
           </thead>
           <tbody></tbody>

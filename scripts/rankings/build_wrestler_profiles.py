@@ -817,8 +817,20 @@ def main() -> None:
             match_mv_impact_lookup,
         )
         
-        # Write to by_id
+        # Preserve existing bonus data if it exists
         output_file = by_id_dir / f"{wrestler_id}.json"
+        if output_file.exists():
+            try:
+                with output_file.open("r", encoding="utf-8") as f:
+                    existing_profile = json.load(f)
+                    existing_bonus = existing_profile.get("bonus")
+                    if existing_bonus:
+                        profile["bonus"] = existing_bonus
+            except Exception:
+                # If we can't read existing file, continue without preserving bonus
+                pass
+        
+        # Write to by_id
         with output_file.open("w", encoding="utf-8") as f:
             json.dump(profile, f, indent=2, ensure_ascii=False)
         

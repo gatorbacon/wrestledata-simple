@@ -918,8 +918,64 @@ function safe(value, formatter) {
       badge.classList.add("result-loss");
     }
     
-    // Display only method (DEC, MD, TF, FALL, etc.)
-    const methodText = safe(method || "—").toUpperCase();
+    // Classify result type by checking result string first, then method field
+    // This ensures correct classification even if Python code sets wrong method
+    const resultStr = (result || "").toUpperCase();
+    const methodStr = (method || "").toUpperCase();
+    const combinedStr = `${resultStr} ${methodStr}`;
+    
+    let methodText;
+    
+    // Check result string first (most reliable)
+    // Priority order matters - check most specific first
+    
+    // 1. Medical Forfeit (check for MFF indicators first)
+    if (combinedStr.includes("M. FOR.") || combinedStr.includes("MFF") || 
+        (combinedStr.includes("MEDICAL") && combinedStr.includes("FORFEIT"))) {
+      methodText = "MFF";
+    }
+    // 2. Disqualification
+    else if (combinedStr.includes("DQ") || combinedStr.includes("DISQUAL")) {
+      methodText = "DQ";
+    }
+    // 3. Injury Default
+    else if (combinedStr.includes("INJ") || combinedStr.includes("INJURY")) {
+      methodText = "INJ";
+    }
+    // 4. Regular Forfeit (only if not already caught as medical forfeit)
+    else if (combinedStr.includes("FORFEIT") || 
+             (combinedStr.includes(" FF") && !combinedStr.includes("MFF"))) {
+      methodText = "FF";
+    }
+    // 5. Technical Fall (check before regular fall/pin)
+    else if (combinedStr.includes("TF") || combinedStr.includes("TECH") || 
+             combinedStr.includes("TECHNICAL")) {
+      methodText = "TF";
+    }
+    // 6. Fall/Pin (but not tech fall)
+    else if ((combinedStr.includes("FALL") || combinedStr.includes(" PIN")) && 
+             !combinedStr.includes("TF") && !combinedStr.includes("TECH")) {
+      methodText = "FALL";
+    }
+    // 7. Major Decision
+    else if (combinedStr.includes("MD") || combinedStr.includes("MAJOR")) {
+      methodText = "MD";
+    }
+    // 8. Decision (including SV and TB - these are still decisions)
+    else if (combinedStr.includes("DEC") || combinedStr.includes("DECISION") ||
+             combinedStr.includes("SV-") || combinedStr.includes("TB-") ||
+             combinedStr.includes("SUDDEN VICTORY") || combinedStr.includes("TIEBREAK")) {
+      methodText = "DEC";
+    }
+    // 9. Fall back to method field if it exists and is valid
+    else if (methodStr && methodStr !== "—" && methodStr !== "" && methodStr !== "DEF.") {
+      methodText = safe(methodStr);
+    }
+    // 10. Unknown/Other (default)
+    else {
+      methodText = "O";
+    }
+    
     badge.textContent = methodText;
     
     // Tooltip: "Win by Technical Fall" or "Loss by Decision"
@@ -930,6 +986,9 @@ function safe(value, formatter) {
                       methodText === "FALL" || methodText === "PIN" ? "Fall" :
                       methodText === "INJ" ? "Injury Default" :
                       methodText === "DQ" ? "Disqualification" :
+                      methodText === "MFF" ? "Medical Forfeit" :
+                      methodText === "FF" ? "Forfeit" :
+                      methodText === "O" ? "Other" :
                       methodText;
     badge.setAttribute("title", `${outcome} by ${methodName}`);
     
