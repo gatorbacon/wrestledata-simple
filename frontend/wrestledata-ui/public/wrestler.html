@@ -15,26 +15,38 @@
       <div class="header-meta" id="wrestler-meta"></div>
     </header>
 
-    <!-- PROFILE TOP GRID: MV + Skill Profile -->
-    <section class="profile-top-grid">
-      <div class="profile-section profile-section--mv" id="mv-section">
-        <!-- MV content will be rendered here by JS -->
+    <!-- PROFILE SUMMARY GRID: MV (left) • Timeline (center) • Skill (right) -->
+    <section class="profile-summary-grid">
+      <!-- Left: Mat Value Summary -->
+      <div class="profile-summary-col profile-summary-col--mv">
+        <div class="profile-section profile-section--mv" id="mv-section">
+          <!-- MV content will be rendered here by JS -->
+        </div>
       </div>
-      <div class="profile-section profile-section--skill" id="skill-section">
-        <!-- Skill Profile content will be rendered here by JS -->
-      </div>
-    </section>
 
-    <!-- MATCH IMPACT TIMELINE (PROMOTED) -->
-    <section class="section" id="match-impact-section">
-      <h2>Match Impact Timeline</h2>
-      <!-- xTP toggle removed - chart is MV-only -->
-      <div class="match-impact-chart-container" id="match-impact-chart-container">
-        <!-- Chart will be rendered here -->
+      <!-- Center: Match Impact Timeline (visual anchor) -->
+      <div class="profile-summary-col profile-summary-col--timeline">
+        <section class="section section--timeline" id="match-impact-section">
+          <div class="section-header">
+            <h2>Match Impact Timeline</h2>
+          </div>
+          <div class="section-divider"></div>
+          <!-- xTP toggle removed - chart is MV-only -->
+          <div class="match-impact-chart-container" id="match-impact-chart-container">
+            <!-- Chart will be rendered here -->
+          </div>
+          <div class="match-impact-labels">
+            <span class="match-impact-label">Bars: Per-match MV impact</span>
+            <span class="match-impact-label">Line: Season average MV</span>
+          </div>
+        </section>
       </div>
-      <div class="match-impact-labels">
-        <span class="match-impact-label">Bars: Per-match MV impact</span>
-        <span class="match-impact-label">Line: Season average MV</span>
+
+      <!-- Right: Skill Profile -->
+      <div class="profile-summary-col profile-summary-col--skill">
+        <div class="profile-section profile-section--skill" id="skill-section">
+          <!-- Skill Profile content will be rendered here by JS -->
+        </div>
       </div>
     </section>
 
@@ -69,7 +81,7 @@
     </section>
 
     <!-- MATCH HISTORY -->
-    <section class="section">
+    <section class="section section--match-history">
       <h2>Match History</h2>
       <div class="table-wrapper">
         <table id="match-table">

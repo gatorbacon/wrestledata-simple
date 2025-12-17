@@ -218,6 +218,16 @@ a:hover {
   margin-bottom: 3em;
 }
 
+/* MV Context section - keep visible for divider, but content is empty */
+#mv-context-section {
+  margin-bottom: 0.5em;
+}
+
+/* Match History section - reduced top margin to bring closer to divider */
+.section--match-history {
+  margin-top: 0;
+}
+
 /* ========================================
    WEIGHT TABS (REUSABLE)
    ======================================== */
@@ -1238,7 +1248,7 @@ th.tooltip-trigger .tooltip {
 }
 
 /* ========================================
-   WRESTLER PROFILE - TOP GRID LAYOUT
+   WRESTLER PROFILE - TOP GRID LAYOUT (LEGACY)
    ======================================== */
 
 .profile-top-grid {
@@ -1252,6 +1262,46 @@ th.tooltip-trigger .tooltip {
 @media (max-width: 900px) {
   .profile-top-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   PROFILE SUMMARY GRID (MV • Timeline • Skill)
+   ======================================== */
+
+.profile-summary-grid {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr) 260px;
+  gap: 24px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.profile-summary-col--timeline {
+  border-left: 1px solid rgba(255,255,255,0.06);
+  border-right: 1px solid rgba(255,255,255,0.06);
+  padding: 0 20px;
+}
+
+.profile-summary-col--mv,
+.profile-summary-col--skill {
+  padding: 0 4px;
+}
+
+@media (max-width: 900px) {
+  .profile-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-summary-col--timeline {
+    border-left: none;
+    border-right: none;
+    padding: 0;
+  }
+
+  .profile-summary-col--mv,
+  .profile-summary-col--skill {
+    padding: 0;
   }
 }
 
@@ -1305,16 +1355,13 @@ th.tooltip-trigger .tooltip {
 
 .profile-panel--mv .mv-primary-row {
   display: flex;
-  align-items: baseline;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 16px;
+  flex-wrap: nowrap;
 }
 
-.profile-panel--mv .mv-value-container {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+
 
 .profile-panel--mv .mv-value {
   font-size: 2.875em; /* Increased by ~15% from 2.5em */
@@ -1415,11 +1462,17 @@ th.tooltip-trigger .tooltip {
 }
 
 .skill-row {
-  display: grid;
-  grid-template-columns: 140px 1fr 56px; /* Wider label for dual-format */
-  gap: 12px;
-  align-items: center;
-  padding: 4px 0; /* Reduced vertical spacing by ~20% */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 6px 0;
+}
+
+.skill-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
 }
 
 .skill-label {
@@ -1434,7 +1487,7 @@ th.tooltip-trigger .tooltip {
   text-align: right;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: var(--text);
 }
 
@@ -1577,24 +1630,25 @@ th.tooltip-trigger .tooltip {
   margin-bottom: 8px;
 }
 
-.mv-tier-elite {
-  color: var(--good); /* green */
+.mv-number-inline {
+  font-size: 1.75em;
+  margin: 0;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
 }
 
-.mv-tier-strong {
-  color: var(--accent); /* teal */
+.profile-panel--mv .mv-number-inline {
+  margin-left: 10px !important;
 }
 
-.mv-tier-average {
-  color: var(--text); /* neutral gray */
-}
-
-.mv-tier-below {
-  color: var(--warn); /* orange */
-}
-
+/* Tier classes kept neutral to avoid over-coloring MV value */
+.mv-tier-elite,
+.mv-tier-strong,
+.mv-tier-average,
+.mv-tier-below,
 .mv-tier-weak {
-  color: var(--bad); /* red */
+  color: var(--text);
 }
 
 /* Percentile bar container */
@@ -1603,6 +1657,7 @@ th.tooltip-trigger .tooltip {
   align-items: center;
   gap: 10px;
   margin-bottom: 8px;
+  margin-top: 8px !important;
 }
 
 /* Percentile bar */
@@ -1622,24 +1677,8 @@ th.tooltip-trigger .tooltip {
   transition: width 0.3s ease;
 }
 
-.mv-percentile-fill.mv-tier-elite {
-  background: var(--good);
-}
-
-.mv-percentile-fill.mv-tier-strong {
+.mv-percentile-fill {
   background: var(--accent);
-}
-
-.mv-percentile-fill.mv-tier-average {
-  background: rgba(255,255,255,0.4);
-}
-
-.mv-percentile-fill.mv-tier-below {
-  background: var(--warn);
-}
-
-.mv-percentile-fill.mv-tier-weak {
-  background: var(--bad);
 }
 
 /* Percentile text */
@@ -1660,22 +1699,83 @@ th.tooltip-trigger .tooltip {
   font-weight: 500;
 }
 
+/* Rank badge link (large, primary) */
+.mv-rank-badge-link {
+  display: inline-flex;
+  margin: 0;
+  margin-right: 10px !important;
+  text-decoration: none;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.mv-rank-badge-link .rank-badge {
+  font-size: 0.95rem;
+  padding: 6px 10px;
+}
+
+.mv-season-heading {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.mv-season-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.8125rem;
+}
+
+.mv-season-stat-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+}
+
+.mv-season-stat-label {
+  margin-right: 8px;
+}
+
+.mv-season-stat-value {
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
 /* Skill Profile Section (no card) */
 .profile-section--skill .skill-rows-container {
   margin-bottom: 16px;
 }
 
 .skill-row {
-  display: grid;
-  grid-template-columns: 140px 1fr 56px;
-  gap: 12px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 8px 0;
+}
+
+.skill-label-row {
+  display: flex;
+  align-items: center;
+}
+
+.skill-value-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-value-bar-row .skill-value {
+  flex-shrink: 0;
 }
 
 .skill-bar-wrapper {
   position: relative;
-  width: 100%;
+  flex: 1;
   height: 10px;
   background: rgba(255,255,255,0.06);
   border-radius: 6px;
@@ -1713,9 +1813,10 @@ th.tooltip-trigger .tooltip {
   top: -2px;
   bottom: -2px;
   width: 2px;
-  background: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,.85);
   pointer-events: none;
   z-index: 2;
+  
 }
 
 .skill-value-low {

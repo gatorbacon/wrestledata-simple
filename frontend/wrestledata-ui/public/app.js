@@ -255,15 +255,11 @@ function safe(value, formatter) {
     title.appendChild(tooltipIcon);
     headerRow.appendChild(title);
     
-    const headerLink = document.createElement("a");
-    headerLink.className = "section-header-link";
+    // MV leaderboard URL (used by rank badge link only)
     let leaderboardUrl = "/leaderboards/mat_value.html";
     if (weightClass) {
       leaderboardUrl += `?weight=${weightClass}`;
     }
-    headerLink.href = leaderboardUrl;
-    headerLink.textContent = "View MV Leaderboard";
-    headerRow.appendChild(headerLink);
     mvSection.appendChild(headerRow);
     
     // Divider
@@ -275,56 +271,46 @@ function safe(value, formatter) {
     const primaryRow = document.createElement("div");
     primaryRow.className = "mv-primary-row";
     
-    const mvValueContainer = document.createElement("div");
-    mvValueContainer.className = "mv-value-container";
+    // RANK BADGE (primary visual) - wraps badge in link to MV leaderboard
+    const rankBadgeLink = document.createElement("a");
+    rankBadgeLink.href = leaderboardUrl;
+    rankBadgeLink.className = "mv-rank-badge-link";
+    if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
+      rankBadgeLink.appendChild(createMVRankBadge(mv.rank_weight));
+    }
+    // Add tooltip to rank badge
+    addTooltip(rankBadgeLink, "Per-match value above opponent expectation.");
+    primaryRow.appendChild(rankBadgeLink);
     
-    // MV Number with sign and tier color
+    // MV Number with explicit sign (smaller font, same row as badge)
     const mvValue = document.createElement("div");
-    mvValue.className = "mv-number";
+    mvValue.className = "mv-number mv-number-inline";
     if (mv.mv_avg !== null && mv.mv_avg !== undefined) {
       const sign = mv.mv_avg >= 0 ? "+" : "";
       mvValue.textContent = `${sign}${mv.mv_avg.toFixed(3)}`;
     } else {
       mvValue.textContent = "—";
     }
-    mvValueContainer.appendChild(mvValue);
+    primaryRow.appendChild(mvValue);
     
-    // Percentile bar container (will be populated after percentile is computed)
+    // Percentile bar container (below the row, will be populated after percentile is computed)
     const percentileBarContainer = document.createElement("div");
     percentileBarContainer.className = "mv-percentile-bar-container";
-    mvValueContainer.appendChild(percentileBarContainer);
-    
-    // Weight class rank (below percentile bar, muted)
-    const rankContainer = document.createElement("div");
-    rankContainer.className = "mv-rank-container";
-    if (weightClass) {
-      rankContainer.textContent = `${weightClass} lbs · Rank `;
-      const rankSpan = document.createElement("span");
-      rankSpan.className = "mv-rank-value";
-      rankSpan.textContent = "#—";
-      rankContainer.appendChild(rankSpan);
-    }
-    mvValueContainer.appendChild(rankContainer);
-    
-    primaryRow.appendChild(mvValueContainer);
     mvSection.appendChild(primaryRow);
+    mvSection.appendChild(percentileBarContainer);
     
     // Compute percentile and update display asynchronously
     if (mv.mv_avg !== null && mv.mv_avg !== undefined && weightClass && data.wrestler_id) {
       computeFilteredMVRankAndPercentile(data.wrestler_id, weightClass, season).then(result => {
         if (result) {
           const { rank, percentile, total } = result;
-          const tier = getMVTier(percentile);
-          
-          // Apply tier color to MV number
-          mvValue.className = `mv-number ${tier.colorClass}`;
           
           // Create percentile bar
           percentileBarContainer.innerHTML = "";
           const barWrapper = document.createElement("div");
           barWrapper.className = "mv-percentile-bar";
           const barFill = document.createElement("div");
-          barFill.className = `mv-percentile-fill ${tier.colorClass}`;
+          barFill.className = "mv-percentile-fill";
           barFill.style.width = `${percentile}%`;
           barWrapper.appendChild(barFill);
           percentileBarContainer.appendChild(barWrapper);
@@ -337,18 +323,16 @@ function safe(value, formatter) {
           percentileText.textContent = `Top ${topPercent}%`;
           percentileBarContainer.appendChild(percentileText);
           
-          // Update rank
-          const rankSpan = rankContainer.querySelector(".mv-rank-value");
-          if (rankSpan) {
-            rankSpan.textContent = `#${rank}`;
+          // Update rank badge
+          if (rankBadgeLink) {
+            rankBadgeLink.innerHTML = "";
+            rankBadgeLink.appendChild(createMVRankBadge(rank));
+            // Re-add tooltip after updating badge
+            addTooltip(rankBadgeLink, "Per-match value above opponent expectation.");
           }
         } else {
           // Fallback: use raw rank and estimate percentile
           if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
-            const rankSpan = rankContainer.querySelector(".mv-rank-value");
-            if (rankSpan) {
-              rankSpan.textContent = `#${mv.rank_weight}`;
-            }
             // Estimate percentile from rank (rough approximation)
             let estimatedPercentile = 50;
             if (mv.rank_weight <= 3) {
@@ -362,15 +346,12 @@ function safe(value, formatter) {
             } else {
               estimatedPercentile = 30;
             }
-            const tier = getMVTier(estimatedPercentile);
-            mvValue.className = `mv-number ${tier.colorClass}`;
-            
             // Create basic percentile bar
             percentileBarContainer.innerHTML = "";
             const barWrapper = document.createElement("div");
             barWrapper.className = "mv-percentile-bar";
             const barFill = document.createElement("div");
-            barFill.className = `mv-percentile-fill ${tier.colorClass}`;
+            barFill.className = "mv-percentile-fill";
             barFill.style.width = `${estimatedPercentile}%`;
             barWrapper.appendChild(barFill);
             percentileBarContainer.appendChild(barWrapper);
@@ -392,16 +373,48 @@ function safe(value, formatter) {
         }
       });
     } else if (mv.mv_avg !== null && mv.mv_avg !== undefined) {
-      // No wrestler_id, but we have MV - show basic display
-      // Use neutral tier
-      mvValue.className = "mv-number mv-tier-average";
+      // No wrestler_id, but we have MV - show basic display (neutral)
+      mvValue.className = "mv-number";
     }
     
-    // Description text (reduced opacity, subtle)
-    const description = document.createElement("p");
-    description.className = "mv-description";
-    description.textContent = "Per-match value above opponent expectation.";
-    mvSection.appendChild(description);
+    // Season stats (compact text list)
+    const statsHeading = document.createElement("div");
+    statsHeading.className = "mv-season-heading";
+    statsHeading.textContent = "Season stats";
+    mvSection.appendChild(statsHeading);
+    
+    const statsContainer = document.createElement("div");
+    statsContainer.className = "mv-season-stats";
+    
+    const record = data.record || {};
+    const mAll = data.metrics || {};
+    
+    const addStat = (label, value) => {
+      if (value === null || value === undefined || value === "") return;
+      const row = document.createElement("div");
+      row.className = "mv-season-stat-row";
+      const labelEl = document.createElement("span");
+      labelEl.className = "mv-season-stat-label";
+      labelEl.textContent = `${label}:`;
+      const valueEl = document.createElement("span");
+      valueEl.className = "mv-season-stat-value";
+      valueEl.textContent = value;
+      row.appendChild(labelEl);
+      row.appendChild(valueEl);
+      statsContainer.appendChild(row);
+    };
+    
+    addStat("Record", safe(record.overall));
+    if (mAll.bonus_rate !== null && mAll.bonus_rate !== undefined) {
+      addStat("Bonus Rate", percentFormatter(mAll.bonus_rate));
+    }
+    addStat("Pins", safe(mAll.pins));
+    addStat("Tech Falls", safe(mAll.techs));
+    addStat("Majors", safe(mAll.majors));
+    addStat("vs Ranked", safe(record.vs_ranked));
+    addStat("vs Top 10", safe(record.vs_top10));
+    
+    mvSection.appendChild(statsContainer);
     
     // ========================================
     // SKILL PROFILE SECTION (DataGolf-style, no card)
@@ -456,48 +469,6 @@ function safe(value, formatter) {
       skillSection.appendChild(descEl);
     }
     
-    // Quick Stats (compressed, secondary)
-    const quickStatsContainer = document.createElement("div");
-    quickStatsContainer.className = "quick-stats-compressed";
-    
-    if (m.bonus_rate !== null && m.bonus_rate !== undefined) {
-      quickStatsContainer.appendChild(createQuickStat("Bonus Rate", percentFormatter(m.bonus_rate)));
-    }
-    if (m.pin_rate !== null && m.pin_rate !== undefined) {
-      quickStatsContainer.appendChild(createQuickStat("Pin Rate", percentFormatter(m.pin_rate)));
-    }
-    if (m.majors !== null && m.majors !== undefined) {
-      quickStatsContainer.appendChild(createQuickStat("Majors", safe(m.majors)));
-    }
-    if (m.techs !== null && m.techs !== undefined) {
-      quickStatsContainer.appendChild(createQuickStat("Tech Falls", safe(m.techs)));
-    }
-    if (m.pins !== null && m.pins !== undefined) {
-      quickStatsContainer.appendChild(createQuickStat("Pins", safe(m.pins)));
-    }
-    
-    skillSection.appendChild(quickStatsContainer);
-    
-    // Record badges (compressed)
-    const r = data.record || {};
-    const recordBadges = document.createElement("div");
-    recordBadges.className = "record-badges-compressed";
-    
-    if (r.overall) {
-      recordBadges.appendChild(createMiniBadge(`Overall ${safe(r.overall)}`));
-    }
-    if (r.vs_ranked) {
-      recordBadges.appendChild(createMiniBadge(`vs Ranked ${safe(r.vs_ranked)}`));
-    }
-    if (r.vs_top10) {
-      recordBadges.appendChild(createMiniBadge(`vs Top-10 ${safe(r.vs_top10)}`));
-    }
-    if (r.vs_top25) {
-      recordBadges.appendChild(createMiniBadge(`vs Top-25 ${safe(r.vs_top25)}`));
-    }
-    
-    skillSection.appendChild(recordBadges);
-    
     // ========================================
     // MATCH IMPACT TIMELINE (PROMOTED - BEFORE CONTEXT)
     // ========================================
@@ -506,6 +477,7 @@ function safe(value, formatter) {
     // ========================================
     // MV CONTEXT (COMPRESSED, BELOW TIMELINE)
     // ========================================
+    // MV Composition removed - keep section visible for divider, but render nothing
     renderMVContextCompressed(data, mv.mv_avg);
     
     // ========================================
@@ -642,10 +614,31 @@ function safe(value, formatter) {
     const row = document.createElement("div");
     row.className = "skill-row";
     
+    // Row 1: Label only
+    const labelRow = document.createElement("div");
+    labelRow.className = "skill-label-row";
     const labelEl = document.createElement("div");
     labelEl.className = "skill-label";
     labelEl.textContent = label;
-    row.appendChild(labelEl);
+    labelRow.appendChild(labelEl);
+    row.appendChild(labelRow);
+    
+    // Row 2: Value and bar together
+    const valueBarRow = document.createElement("div");
+    valueBarRow.className = "skill-value-bar-row";
+    
+    // Value with color coding
+    const valueEl = document.createElement("div");
+    valueEl.className = "skill-value";
+    if (value < 95) {
+      valueEl.classList.add("skill-value-low");
+    } else if (value > 105) {
+      valueEl.classList.add("skill-value-high");
+    } else {
+      valueEl.classList.add("skill-value-neutral");
+    }
+    valueEl.textContent = value.toFixed(1);
+    valueBarRow.appendChild(valueEl);
     
     // Bar wrapper (container for bar and baseline)
     const barWrapper = document.createElement("div");
@@ -675,20 +668,9 @@ function safe(value, formatter) {
     }
     
     barWrapper.appendChild(bar);
-    row.appendChild(barWrapper);
+    valueBarRow.appendChild(barWrapper);
     
-    // Value with color coding
-    const valueEl = document.createElement("div");
-    valueEl.className = "skill-value";
-    if (value < 95) {
-      valueEl.classList.add("skill-value-low");
-    } else if (value > 105) {
-      valueEl.classList.add("skill-value-high");
-    } else {
-      valueEl.classList.add("skill-value-neutral");
-    }
-    valueEl.textContent = value.toFixed(1);
-    row.appendChild(valueEl);
+    row.appendChild(valueBarRow);
     
     return row;
   }
@@ -838,80 +820,16 @@ function safe(value, formatter) {
   }
   
   function renderMVContextCompressed(data, seasonMV) {
+    // MV Composition removed - no longer displayed
+    // Keep section visible for divider above Match History
     const container = document.getElementById("mv-context-compressed");
     if (!container) return;
     container.innerHTML = "";
     
-    const ob = data.opponent_breakdown || {};
-    const matches = data.match_list || [];
-    const m = data.metrics || {};
-    
-    // 2-column layout
-    const contextGrid = document.createElement("div");
-    contextGrid.className = "mv-context-grid";
-    
-    // Column 1: Best Win
-    const col1 = document.createElement("div");
-    col1.className = "mv-context-col";
-    const bestWinLabel = document.createElement("div");
-    bestWinLabel.className = "mv-context-label-compressed";
-    bestWinLabel.textContent = "Best Win (by MV impact)";
-    col1.appendChild(bestWinLabel);
-    const bestWinValue = document.createElement("div");
-    bestWinValue.className = "mv-context-value-compressed";
-    if (ob.win_over_highest_rank) {
-      const w = ob.win_over_highest_rank;
-      const rankText = w.opponent_rank ? `#${w.opponent_rank} ` : "";
-      bestWinValue.textContent = `${rankText}${safe(w.opponent_name)} (${safe(w.method)})`;
-    } else {
-      bestWinValue.textContent = "—";
-    }
-    col1.appendChild(bestWinValue);
-    contextGrid.appendChild(col1);
-    
-    // Column 2: Worst Loss
-    const col2 = document.createElement("div");
-    col2.className = "mv-context-col";
-    const worstLossLabel = document.createElement("div");
-    worstLossLabel.className = "mv-context-label-compressed";
-    worstLossLabel.textContent = "Worst Loss";
-    col2.appendChild(worstLossLabel);
-    const worstLossValue = document.createElement("div");
-    worstLossValue.className = "mv-context-value-compressed";
-    if (ob.worst_loss) {
-      const l = ob.worst_loss;
-      const rankText = l.opponent_rank ? `#${l.opponent_rank} ` : "";
-      worstLossValue.textContent = `${rankText}${safe(l.opponent_name)} (${safe(l.method)})`;
-    } else {
-      const hasLoss = matches.some(m => m.result === "L");
-      worstLossValue.textContent = hasLoss ? "—" : "None (undefeated)";
-    }
-    col2.appendChild(worstLossValue);
-    contextGrid.appendChild(col2);
-    
-    container.appendChild(contextGrid);
-    
-    // MV Composition (below grid)
-    const compositionRow = document.createElement("div");
-    compositionRow.className = "mv-context-composition";
-    const compositionLabel = document.createElement("span");
-    compositionLabel.className = "mv-context-label-compressed";
-    compositionLabel.textContent = "MV Composition:";
-    compositionRow.appendChild(compositionLabel);
-    const compositionValue = document.createElement("span");
-    compositionValue.className = "mv-context-value-compressed";
-    
-    // Calculate composition
-    const bonusRate = m.bonus_rate;
-    if (bonusRate !== null && bonusRate !== undefined) {
-      const bonusPct = Math.round(bonusRate * 100);
-      const decisionPct = 100 - bonusPct;
-      compositionValue.textContent = `Bonus-driven (${bonusPct}%) | Decisions (${decisionPct}%)`;
-    } else {
-      compositionValue.textContent = "—";
-    }
-    compositionRow.appendChild(compositionValue);
-    container.appendChild(compositionRow);
+    // Add divider at bottom of MV context section (above Match History)
+    const divider = document.createElement("div");
+    divider.className = "section-divider";
+    container.appendChild(divider);
   }
   
   // Match Impact Timeline toggle handler (set up after page loads)
@@ -1132,7 +1050,9 @@ function safe(value, formatter) {
     
     // Create SVG chart (increased height for prominence)
     const chartHeight = 250;
-    const chartWidth = Math.max(600, matchData.length * 20);
+    // Make chart width responsive to available container width to avoid clipping
+    const containerWidth = container.clientWidth || 600;
+    const chartWidth = containerWidth;
     const padding = { top: 30, right: 20, bottom: 30, left: 20 };
     const plotWidth = chartWidth - padding.left - padding.right;
     const plotHeight = chartHeight - padding.top - padding.bottom;
