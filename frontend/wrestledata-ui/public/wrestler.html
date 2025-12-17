@@ -17,24 +17,31 @@
 
     <!-- PROFILE TOP GRID: MV + Skill Profile -->
     <section class="profile-top-grid">
-      <div class="profile-panel profile-panel--mv" id="mv-panel">
+      <div class="profile-section profile-section--mv" id="mv-section">
         <!-- MV content will be rendered here by JS -->
       </div>
-      <div class="profile-panel profile-panel--skill" id="skill-panel">
+      <div class="profile-section profile-section--skill" id="skill-section">
         <!-- Skill Profile content will be rendered here by JS -->
       </div>
     </section>
 
-    <!-- MV CONTEXT BLOCK -->
+    <!-- MATCH IMPACT TIMELINE (PROMOTED) -->
+    <section class="section" id="match-impact-section">
+      <h2>Match Impact Timeline</h2>
+      <!-- xTP toggle removed - chart is MV-only -->
+      <div class="match-impact-chart-container" id="match-impact-chart-container">
+        <!-- Chart will be rendered here -->
+      </div>
+      <div class="match-impact-labels">
+        <span class="match-impact-label">Bars: Per-match MV impact</span>
+        <span class="match-impact-label">Line: Season average MV</span>
+      </div>
+    </section>
+
+    <!-- MV CONTEXT (COMPRESSED, BELOW TIMELINE) -->
     <section class="section" id="mv-context-section">
-      <div class="mv-context-card">
-        <h2>Mat Value Context</h2>
-        <p class="mv-context-explainer">
-          These indicators provide context for how and against whom a wrestler generates Mat Value.
-        </p>
-        <div class="mv-context-rows" id="mv-context-rows">
-          <!-- Context rows will be rendered here -->
-        </div>
+      <div class="mv-context-compressed" id="mv-context-compressed">
+        <!-- Context will be rendered here by JS -->
       </div>
     </section>
 
@@ -61,22 +68,6 @@
       </div>
     </section>
 
-    <!-- MATCH IMPACT TIMELINE -->
-    <section class="section" id="match-impact-section">
-      <h2>Match Impact Timeline</h2>
-      <p class="match-impact-explainer">
-        Each bar represents a wrestler's per-match contribution to Mat Value (or xTP), relative to opponent expectation.
-      </p>
-      <div class="match-impact-toggle" id="match-impact-toggle">
-        <a href="#" class="impact-toggle-link active" data-mode="mv">MV Impact</a>
-        <span style="color: var(--muted); margin: 0 0.5em;">|</span>
-        <a href="#" class="impact-toggle-link" data-mode="xtp">xTP Impact</a>
-      </div>
-      <div class="match-impact-chart-container" id="match-impact-chart-container">
-        <!-- Chart will be rendered here -->
-      </div>
-    </section>
-
     <!-- MATCH HISTORY -->
     <section class="section">
       <h2>Match History</h2>
@@ -86,16 +77,11 @@
             <tr>
               <th>Date</th>
               <th>Opponent</th>
-              <th>Opp Team</th>
-              <th>Opp Team Rank</th>
-              <th>Opp Weight</th>
-              <th>Opp Rank</th>
+              <th>Opponent Team</th>
+              <th>Opponent Rank</th>
               <th>Result</th>
-              <th>Method</th>
-              <th>Impact</th>
+              <th>MV Impact</th>
               <th>Score</th>
-              <th>Duration</th>
-              <th>Event</th>
             </tr>
           </thead>
           <tbody></tbody>

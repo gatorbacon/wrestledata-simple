@@ -1188,12 +1188,15 @@ th.tooltip-trigger .tooltip {
 }
 
 .match-impact-bar {
-  cursor: pointer;
-  transition: opacity 0.15s ease;
+  cursor: crosshair;
+  transition: opacity 0.2s ease;
+  pointer-events: all;
+  /* Ensure bars don't cover the white line */
 }
 
-.match-impact-bar:hover {
-  opacity: 0.8;
+/* No hover color changes - opacity only */
+.match-impact-chart {
+  cursor: crosshair;
 }
 
 .chart-tooltip {
@@ -1203,11 +1206,20 @@ th.tooltip-trigger .tooltip {
   padding: 8px 12px;
   font-size: 0.8125rem;
   color: var(--text);
-  white-space: pre-line;
   z-index: 1000;
   pointer-events: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   max-width: 250px;
+  line-height: 1.5;
+}
+
+.chart-tooltip div {
+  margin: 0;
+  padding: 0;
+}
+
+.chart-tooltip div:not(:last-child) {
+  margin-bottom: 2px;
 }
 
 /* Match History - Impact column */
@@ -1489,4 +1501,425 @@ th.tooltip-trigger .tooltip {
 
 .profile-panel--skill {
   flex: 0.8;
+}
+
+/* ========================================
+   DATAGOLF-STYLE WRESTLER PROFILE REFACTOR
+   ======================================== */
+
+/* Section headers and dividers (no card styling) */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.section-header-link {
+  font-size: 0.8125rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.section-header-link:hover {
+  text-decoration: underline;
+}
+
+.section-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.06);
+  margin-bottom: 20px;
+}
+
+/* MV Section (no card) */
+.profile-section--mv .mv-value {
+  font-size: 3.125em; /* Large, bold, focal */
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.profile-section--mv .mv-sublabel {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.6);
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+.profile-section--mv .mv-description {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+/* ========================================
+   MV DataGolf-Style Display
+   ======================================== */
+
+/* MV Number with tier colors */
+.mv-number {
+  font-size: 3.125em;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.mv-tier-elite {
+  color: var(--good); /* green */
+}
+
+.mv-tier-strong {
+  color: var(--accent); /* teal */
+}
+
+.mv-tier-average {
+  color: var(--text); /* neutral gray */
+}
+
+.mv-tier-below {
+  color: var(--warn); /* orange */
+}
+
+.mv-tier-weak {
+  color: var(--bad); /* red */
+}
+
+/* Percentile bar container */
+.mv-percentile-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+/* Percentile bar */
+.mv-percentile-bar {
+  width: 160px;
+  height: 6px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Percentile fill */
+.mv-percentile-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.mv-percentile-fill.mv-tier-elite {
+  background: var(--good);
+}
+
+.mv-percentile-fill.mv-tier-strong {
+  background: var(--accent);
+}
+
+.mv-percentile-fill.mv-tier-average {
+  background: rgba(255,255,255,0.4);
+}
+
+.mv-percentile-fill.mv-tier-below {
+  background: var(--warn);
+}
+
+.mv-percentile-fill.mv-tier-weak {
+  background: var(--bad);
+}
+
+/* Percentile text */
+.mv-percentile-text {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* Rank container (muted, below percentile bar) */
+.mv-rank-container {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.mv-rank-value {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Skill Profile Section (no card) */
+.profile-section--skill .skill-rows-container {
+  margin-bottom: 16px;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 56px;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.skill-bar-wrapper {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: var(--bar-pct);
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.skill-bar.low {
+  background: rgba(220,90,90,0.6);
+  border-left: 2px solid rgba(220,90,90,1);
+}
+
+.skill-bar.neutral {
+  background: rgba(255,255,255,0.3);
+  border-left: 2px solid rgba(255,255,255,0.5);
+}
+
+.skill-bar.high {
+  background: rgba(60,190,150,0.6);
+  border-left: 2px solid rgba(60,190,150,1);
+}
+
+.skill-baseline {
+  position: absolute;
+  left: calc(100 / 160 * 100%);
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+  background: rgba(255,255,255,0.35);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.skill-value-low {
+  color: rgba(220,90,90,0.9);
+}
+
+.skill-value-neutral {
+  color: rgba(255,255,255,0.7);
+}
+
+.skill-value-high {
+  color: rgba(60,190,150,0.9);
+}
+
+.skill-profile-description {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.7);
+  font-style: italic;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.quick-stats-compressed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 18px;
+  margin-top: 12px;
+  font-size: 0.8125rem;
+}
+
+.record-badges-compressed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Match Impact Timeline (promoted) */
+.match-impact-labels {
+  display: flex;
+  gap: 24px;
+  margin-top: 12px;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.match-impact-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.match-impact-label::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: rgba(0,194,168,0.5);
+}
+
+.match-impact-label:last-child::before {
+  width: 2px;
+  height: 16px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0;
+}
+
+.chart-zero-line {
+  stroke: rgba(255,255,255,0.3) !important;
+  stroke-width: 2 !important;
+}
+
+/* MV Context (compressed) */
+.mv-context-compressed {
+  margin-top: 24px;
+}
+
+.mv-context-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.mv-context-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mv-context-label-compressed {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.mv-context-value-compressed {
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.mv-context-composition {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 0.875rem;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ========================================
+   MATCH HISTORY TABLE - LEADERBOARD STYLE
+   ======================================== */
+
+/* Match table density - match leaderboard padding */
+#match-table td {
+  padding: 6px 10px;
+  font-size: 0.875rem;
+}
+
+/* Name cell styling (reuse from leaderboards) */
+#match-table td.name-cell {
+  font-weight: 500;
+}
+
+#match-table td.name-cell a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+#match-table td.name-cell a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Metric secondary (muted) */
+#match-table td.metric-secondary {
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+#match-table td.metric-secondary a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+#match-table td.metric-secondary a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Result badge (pill-style, color-coded) */
+.result-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 50px;
+}
+
+.result-badge.result-win {
+  background: rgba(0, 194, 168, 0.9);
+  color: var(--bg);
+  opacity: 1;
+}
+
+.result-badge.result-loss {
+  background: rgba(220, 90, 90, 0.9);
+  color: var(--bg);
+  opacity: 1;
+}
+
+/* MV Impact styling */
+#match-table td.impact-positive {
+  color: rgba(0, 194, 168, 0.9);
+}
+
+#match-table td.impact-negative {
+  color: rgba(220, 90, 90, 0.9);
+}
+
+/* Ensure rank badges in match table have consistent sizing */
+#match-table td .rank-badge {
+  min-width: 50px;
+}
+
+/* Chart gridlines (subtle, behind bars) */
+.chart-gridline {
+  pointer-events: none;
+}
+
+/* Rolling average line (constant opacity, no hover changes) */
+.rolling-avg-line {
+  pointer-events: none;
+}
+
+/* Rolling average line dot (sparkline behavior) */
+.rolling-avg-dot {
+  pointer-events: none;
+  transition: opacity 0.15s ease;
 }

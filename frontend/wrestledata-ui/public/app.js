@@ -2,6 +2,93 @@
 // Helpers
 // ===============================
 
+// Date-aware minimum match threshold (same logic as leaderboard)
+function getMinMatchThreshold() {
+  const now = new Date();
+  const month = now.getMonth() + 1; // 1-12
+  const day = now.getDate();
+  
+  // Before Dec 1
+  if (month < 12) {
+    return 3;
+  }
+  
+  // Dec 1 through Dec 14
+  if (month === 12 && day < 15) {
+    return 4;
+  }
+  
+  // Dec 15 or later
+  return 5;
+}
+
+// Compute filtered MV rank and percentile using same logic as leaderboard
+async function computeFilteredMVRankAndPercentile(wrestlerId, weight, season) {
+  try {
+    // Load the full MV dataset
+    const url = `/mat_value/${season}/mat_value_${season}.json`;
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    
+    const allData = await res.json();
+    const minMatches = getMinMatchThreshold();
+    
+    // Filter by weight and minimum matches (same logic as leaderboard)
+    const filtered = allData.filter(entry => {
+      return entry.weight === weight && entry.matches >= minMatches;
+    });
+    
+    // Sort by MV (descending), then matches (descending), then current_rank (ascending)
+    filtered.sort((a, b) => {
+      if (b.mv_avg !== a.mv_avg) return b.mv_avg - a.mv_avg;
+      if (b.matches !== a.matches) return b.matches - a.matches;
+      const rankA = a.current_rank || 9999;
+      const rankB = b.current_rank || 9999;
+      return rankA - rankB;
+    });
+    
+    // Find the wrestler's position in the filtered list
+    const wrestlerIdStr = String(wrestlerId);
+    const index = filtered.findIndex(entry => String(entry.wrestler_id) === wrestlerIdStr);
+    
+    if (index === -1) return null; // Wrestler not in filtered list
+    
+    const rank = index + 1; // Rank is 1-based
+    const total = filtered.length;
+    // Compute percentile: 100 - ((rank - 1) / total * 100)
+    // Top rank (1) = 100th percentile, last rank = 1st percentile
+    const percentile = Math.round(100 - ((rank - 1) / total * 100));
+    // Ensure percentile is at least 1
+    const finalPercentile = Math.max(1, percentile);
+    
+    return { rank, percentile: finalPercentile, total };
+  } catch (err) {
+    console.error("Error computing filtered MV rank and percentile:", err);
+    return null;
+  }
+}
+
+// Legacy function for backward compatibility
+async function computeFilteredMVRank(wrestlerId, weight, season) {
+  const result = await computeFilteredMVRankAndPercentile(wrestlerId, weight, season);
+  return result ? result.rank : null;
+}
+
+// Define MV tier based on percentile
+function getMVTier(percentile) {
+  if (percentile >= 90) {
+    return { tier: "elite", label: "Elite", colorClass: "mv-tier-elite" };
+  } else if (percentile >= 70) {
+    return { tier: "strong", label: "Strong", colorClass: "mv-tier-strong" };
+  } else if (percentile >= 40) {
+    return { tier: "average", label: "Average", colorClass: "mv-tier-average" };
+  } else if (percentile >= 20) {
+    return { tier: "below", label: "Below Avg", colorClass: "mv-tier-below" };
+  } else {
+    return { tier: "weak", label: "Weak", colorClass: "mv-tier-weak" };
+  }
+}
+
 function safe(value, formatter) {
     if (value === null || value === undefined || value === "") return "—";
     return formatter ? formatter(value) : value;
@@ -148,16 +235,16 @@ function safe(value, formatter) {
     }
   
     // ========================================
-    // MV PANEL (DataGolf-style)
+    // MV SECTION (DataGolf-style, no card)
     // ========================================
     const mv = (data.metrics || {}).mat_value || {};
     const weightClass = data.weight_class;
-    const mvPanel = document.getElementById("mv-panel");
-    mvPanel.innerHTML = "";
+    const mvSection = document.getElementById("mv-section");
+    mvSection.innerHTML = "";
     
-    // A) Header row
+    // Section header
     const headerRow = document.createElement("div");
-    headerRow.className = "mv-header";
+    headerRow.className = "section-header";
     
     const title = document.createElement("h2");
     title.textContent = "Mat Value (MV)";
@@ -169,7 +256,7 @@ function safe(value, formatter) {
     headerRow.appendChild(title);
     
     const headerLink = document.createElement("a");
-    headerLink.className = "mv-header-link";
+    headerLink.className = "section-header-link";
     let leaderboardUrl = "/leaderboards/mat_value.html";
     if (weightClass) {
       leaderboardUrl += `?weight=${weightClass}`;
@@ -177,7 +264,12 @@ function safe(value, formatter) {
     headerLink.href = leaderboardUrl;
     headerLink.textContent = "View MV Leaderboard";
     headerRow.appendChild(headerLink);
-    mvPanel.appendChild(headerRow);
+    mvSection.appendChild(headerRow);
+    
+    // Divider
+    const divider = document.createElement("div");
+    divider.className = "section-divider";
+    mvSection.appendChild(divider);
     
     // B) Primary metric row
     const primaryRow = document.createElement("div");
@@ -186,161 +278,187 @@ function safe(value, formatter) {
     const mvValueContainer = document.createElement("div");
     mvValueContainer.className = "mv-value-container";
     
+    // MV Number with sign and tier color
     const mvValue = document.createElement("div");
-    mvValue.className = "mv-value";
+    mvValue.className = "mv-number";
     if (mv.mv_avg !== null && mv.mv_avg !== undefined) {
-      mvValue.textContent = mv.mv_avg.toFixed(3);
+      const sign = mv.mv_avg >= 0 ? "+" : "";
+      mvValue.textContent = `${sign}${mv.mv_avg.toFixed(3)}`;
     } else {
       mvValue.textContent = "—";
     }
     mvValueContainer.appendChild(mvValue);
     
-    // Subtle MV bar under the number (contextual, scales with MV value)
-    if (mv.mv_avg !== null && mv.mv_avg !== undefined) {
-      const mvBarWrapper = document.createElement("div");
-      mvBarWrapper.className = "mv-value-bar-wrapper";
-      const mvBar = document.createElement("div");
-      mvBar.className = "mv-value-bar";
-      // Scale bar based on MV value (max ~6.0 for context)
-      const MAX_MV_FOR_BAR = 6.0;
-      const barWidth = Math.min(Math.abs(mv.mv_avg) / MAX_MV_FOR_BAR, 1) * 100;
-      mvBar.style.width = `${barWidth}%`;
-      mvBarWrapper.appendChild(mvBar);
-      mvValueContainer.appendChild(mvBarWrapper);
+    // Percentile bar container (will be populated after percentile is computed)
+    const percentileBarContainer = document.createElement("div");
+    percentileBarContainer.className = "mv-percentile-bar-container";
+    mvValueContainer.appendChild(percentileBarContainer);
+    
+    // Weight class rank (below percentile bar, muted)
+    const rankContainer = document.createElement("div");
+    rankContainer.className = "mv-rank-container";
+    if (weightClass) {
+      rankContainer.textContent = `${weightClass} lbs · Rank `;
+      const rankSpan = document.createElement("span");
+      rankSpan.className = "mv-rank-value";
+      rankSpan.textContent = "#—";
+      rankContainer.appendChild(rankSpan);
     }
+    mvValueContainer.appendChild(rankContainer);
     
     primaryRow.appendChild(mvValueContainer);
+    mvSection.appendChild(primaryRow);
     
-    // MV Rank (Weight) - prominent badge with explicit label
-    const badgesContainer = document.createElement("div");
-    badgesContainer.className = "mv-badges";
-    
-    if (mv.rank_weight !== null && mv.rank_weight !== undefined && weightClass) {
-      const rankLabel = document.createElement("span");
-      rankLabel.className = "mv-rank-label";
-      rankLabel.textContent = `MV Rank (${weightClass} lbs): `;
-      badgesContainer.appendChild(rankLabel);
-      badgesContainer.appendChild(createMVRankBadge(mv.rank_weight));
+    // Compute percentile and update display asynchronously
+    if (mv.mv_avg !== null && mv.mv_avg !== undefined && weightClass && data.wrestler_id) {
+      computeFilteredMVRankAndPercentile(data.wrestler_id, weightClass, season).then(result => {
+        if (result) {
+          const { rank, percentile, total } = result;
+          const tier = getMVTier(percentile);
+          
+          // Apply tier color to MV number
+          mvValue.className = `mv-number ${tier.colorClass}`;
+          
+          // Create percentile bar
+          percentileBarContainer.innerHTML = "";
+          const barWrapper = document.createElement("div");
+          barWrapper.className = "mv-percentile-bar";
+          const barFill = document.createElement("div");
+          barFill.className = `mv-percentile-fill ${tier.colorClass}`;
+          barFill.style.width = `${percentile}%`;
+          barWrapper.appendChild(barFill);
+          percentileBarContainer.appendChild(barWrapper);
+          
+          // Add percentile text
+          const percentileText = document.createElement("span");
+          percentileText.className = "mv-percentile-text";
+          // Top X% = (rank / total) * 100, rounded up
+          const topPercent = Math.ceil((rank / total) * 100);
+          percentileText.textContent = `Top ${topPercent}%`;
+          percentileBarContainer.appendChild(percentileText);
+          
+          // Update rank
+          const rankSpan = rankContainer.querySelector(".mv-rank-value");
+          if (rankSpan) {
+            rankSpan.textContent = `#${rank}`;
+          }
+        } else {
+          // Fallback: use raw rank and estimate percentile
+          if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
+            const rankSpan = rankContainer.querySelector(".mv-rank-value");
+            if (rankSpan) {
+              rankSpan.textContent = `#${mv.rank_weight}`;
+            }
+            // Estimate percentile from rank (rough approximation)
+            let estimatedPercentile = 50;
+            if (mv.rank_weight <= 3) {
+              estimatedPercentile = 95;
+            } else if (mv.rank_weight <= 10) {
+              estimatedPercentile = 85;
+            } else if (mv.rank_weight <= 20) {
+              estimatedPercentile = 70;
+            } else if (mv.rank_weight <= 33) {
+              estimatedPercentile = 50;
+            } else {
+              estimatedPercentile = 30;
+            }
+            const tier = getMVTier(estimatedPercentile);
+            mvValue.className = `mv-number ${tier.colorClass}`;
+            
+            // Create basic percentile bar
+            percentileBarContainer.innerHTML = "";
+            const barWrapper = document.createElement("div");
+            barWrapper.className = "mv-percentile-bar";
+            const barFill = document.createElement("div");
+            barFill.className = `mv-percentile-fill ${tier.colorClass}`;
+            barFill.style.width = `${estimatedPercentile}%`;
+            barWrapper.appendChild(barFill);
+            percentileBarContainer.appendChild(barWrapper);
+            
+            const percentileText = document.createElement("span");
+            percentileText.className = "mv-percentile-text";
+            percentileText.textContent = `Top ${100 - estimatedPercentile + 1}%`;
+            percentileBarContainer.appendChild(percentileText);
+          }
+        }
+      }).catch(err => {
+        console.error("Error computing MV percentile:", err);
+        // Keep basic display on error
+        if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
+          const rankSpan = rankContainer.querySelector(".mv-rank-value");
+          if (rankSpan) {
+            rankSpan.textContent = `#${mv.rank_weight}`;
+          }
+        }
+      });
+    } else if (mv.mv_avg !== null && mv.mv_avg !== undefined) {
+      // No wrestler_id, but we have MV - show basic display
+      // Use neutral tier
+      mvValue.className = "mv-number mv-tier-average";
     }
     
-    primaryRow.appendChild(badgesContainer);
-    mvPanel.appendChild(primaryRow);
-    
-    // Contextual sublabel (e.g., "Top 10% at 149 lbs") - directly beneath MV
-    if (mv.rank_weight !== null && mv.rank_weight !== undefined && weightClass) {
-      // Calculate percentile (simplified - would need total wrestlers in weight class)
-      // For now, estimate based on rank ranges
-      let percentileText = "";
-      if (mv.rank_weight <= 3) {
-        percentileText = "Top 5%";
-      } else if (mv.rank_weight <= 10) {
-        percentileText = "Top 10%";
-      } else if (mv.rank_weight <= 20) {
-        percentileText = "Top 20%";
-      } else if (mv.rank_weight <= 33) {
-        percentileText = "Top 33%";
-      } else {
-        percentileText = "Top 50%";
-      }
-      
-      const sublabel = document.createElement("div");
-      sublabel.className = "mv-sublabel";
-      sublabel.textContent = `${percentileText} at ${weightClass} lbs`;
-      mvValueContainer.appendChild(sublabel);
-    }
-    
-    // C) Description text (reduced opacity)
+    // Description text (reduced opacity, subtle)
     const description = document.createElement("p");
     description.className = "mv-description";
-    description.textContent = "Mat Value (MV) estimates a wrestler's per-match impact relative to opponent expectation.";
-    mvPanel.appendChild(description);
-    
-    // D) Action links (chips)
-    const actionsContainer = document.createElement("div");
-    actionsContainer.className = "profile-actions";
-    
-    // View MV Leaderboard (this weight)
-    if (weightClass) {
-      const action1 = document.createElement("a");
-      action1.className = "profile-action";
-      action1.href = `/leaderboards/mat_value.html?weight=${weightClass}`;
-      action1.textContent = "View MV Leaderboard (this weight)";
-      actionsContainer.appendChild(action1);
-    }
-    
-    // View xTP Team Impact
-    const teamNameForAction = data.team;
-    if (teamNameForAction) {
-      const teamSlug = teamNameToSlug(teamNameForAction);
-      const action2 = document.createElement("a");
-      action2.className = "profile-action";
-      action2.href = `/team.html?team=${teamSlug}#xtp-section`;
-      action2.textContent = "View xTP Team Impact";
-      actionsContainer.appendChild(action2);
-    }
-    
-    // Compare vs Ranked Opponents
-    const action3 = document.createElement("a");
-    action3.className = "profile-action";
-    action3.href = `/leaderboards/mat_value.html${weightClass ? `?weight=${weightClass}` : ''}`;
-    action3.textContent = "Compare vs Ranked Opponents";
-    actionsContainer.appendChild(action3);
-    
-    mvPanel.appendChild(actionsContainer);
+    description.textContent = "Per-match value above opponent expectation.";
+    mvSection.appendChild(description);
     
     // ========================================
-    // SKILL PROFILE PANEL (DataGolf-style)
+    // SKILL PROFILE SECTION (DataGolf-style, no card)
     // ========================================
     const m = data.metrics || {};
-    const skillPanel = document.getElementById("skill-panel");
-    skillPanel.innerHTML = "";
+    const skillSection = document.getElementById("skill-section");
+    skillSection.innerHTML = "";
     
-    // Title
+    // Section header
+    const skillHeader = document.createElement("div");
+    skillHeader.className = "section-header";
     const skillTitle = document.createElement("h2");
     skillTitle.textContent = "Skill Profile";
-    skillPanel.appendChild(skillTitle);
+    skillHeader.appendChild(skillTitle);
+    skillSection.appendChild(skillHeader);
     
-    // Helper text (ties to MV)
-    const skillHelper = document.createElement("p");
-    skillHelper.className = "skill-helper";
-    skillHelper.textContent = "These metrics explain how the wrestler generates Mat Value.";
-    skillPanel.appendChild(skillHelper);
+    // Divider
+    const skillDivider = document.createElement("div");
+    skillDivider.className = "section-divider";
+    skillSection.appendChild(skillDivider);
     
-    // Skill rows with bars (SI+, DF+, APR+)
+    // Skill rows with bars (SI+, DF+, APR+) - baseline at 100
     const skillRowsContainer = document.createElement("div");
+    skillRowsContainer.className = "skill-rows-container";
     
-    // Helper function to calculate bar percentage
-    const calculateBarPct = (value) => {
-      if (value === null || value === undefined) return 0;
-      // Clamp range: 80 to 150
-      // pct = clamp((value - 80) / 70, 0, 1) * 100
-      const clamped = Math.max(0, Math.min(1, (value - 80) / 70));
-      return clamped * 100;
-    };
-    
-    // SI+
+    // SI+ (Scoring)
     if (m.si_plus !== null && m.si_plus !== undefined) {
-      const row = createSkillRow("SI+", m.si_plus, calculateBarPct(m.si_plus));
+      const row = createSkillRowWithBaseline("SI+ (Scoring)", m.si_plus);
       skillRowsContainer.appendChild(row);
     }
     
-    // DF+
+    // DF+ (Defense)
     if (m.df_plus !== null && m.df_plus !== undefined) {
-      const row = createSkillRow("DF+", m.df_plus, calculateBarPct(m.df_plus));
+      const row = createSkillRowWithBaseline("DF+ (Defense)", m.df_plus);
       skillRowsContainer.appendChild(row);
     }
     
-    // APR+
+    // APR+ (Pin Rate)
     if (m.apr_plus !== null && m.apr_plus !== undefined) {
-      const row = createSkillRow("APR+", m.apr_plus, calculateBarPct(m.apr_plus));
+      const row = createSkillRowWithBaseline("APR+ (Pin Rate)", m.apr_plus);
       skillRowsContainer.appendChild(row);
     }
     
-    skillPanel.appendChild(skillRowsContainer);
+    skillSection.appendChild(skillRowsContainer);
     
-    // Quick Stats (no bars)
+    // Synthesized profile description
+    const profileDesc = generateSkillProfileDescription(m);
+    if (profileDesc) {
+      const descEl = document.createElement("p");
+      descEl.className = "skill-profile-description";
+      descEl.textContent = profileDesc;
+      skillSection.appendChild(descEl);
+    }
+    
+    // Quick Stats (compressed, secondary)
     const quickStatsContainer = document.createElement("div");
-    quickStatsContainer.className = "quick-stats";
+    quickStatsContainer.className = "quick-stats-compressed";
     
     if (m.bonus_rate !== null && m.bonus_rate !== undefined) {
       quickStatsContainer.appendChild(createQuickStat("Bonus Rate", percentFormatter(m.bonus_rate)));
@@ -358,12 +476,12 @@ function safe(value, formatter) {
       quickStatsContainer.appendChild(createQuickStat("Pins", safe(m.pins)));
     }
     
-    skillPanel.appendChild(quickStatsContainer);
+    skillSection.appendChild(quickStatsContainer);
     
-    // Record badges
+    // Record badges (compressed)
     const r = data.record || {};
     const recordBadges = document.createElement("div");
-    recordBadges.className = "record-badges";
+    recordBadges.className = "record-badges-compressed";
     
     if (r.overall) {
       recordBadges.appendChild(createMiniBadge(`Overall ${safe(r.overall)}`));
@@ -378,12 +496,17 @@ function safe(value, formatter) {
       recordBadges.appendChild(createMiniBadge(`vs Top-25 ${safe(r.vs_top25)}`));
     }
     
-    skillPanel.appendChild(recordBadges);
+    skillSection.appendChild(recordBadges);
     
     // ========================================
-    // MV CONTEXT BLOCK
+    // MATCH IMPACT TIMELINE (PROMOTED - BEFORE CONTEXT)
     // ========================================
-    renderMVContext(data, mv.mv_avg);
+    renderMatchImpactTimeline(data, mv.mv_avg);
+    
+    // ========================================
+    // MV CONTEXT (COMPRESSED, BELOW TIMELINE)
+    // ========================================
+    renderMVContextCompressed(data, mv.mv_avg);
     
     // ========================================
     // EXPECTED NCAA IMPACT (xTP)
@@ -394,11 +517,6 @@ function safe(value, formatter) {
     const xtpSection = document.getElementById("xtp-section");
     // Hide xTP section for now - will be populated when xTP data is available
     xtpSection.style.display = "none";
-    
-    // ========================================
-    // MATCH IMPACT TIMELINE
-    // ========================================
-    renderMatchImpactTimeline(data, mv.mv_avg);
     
     // ========================================
     // MATCH HISTORY
@@ -520,6 +638,105 @@ function safe(value, formatter) {
     return row;
   }
   
+  function createSkillRowWithBaseline(label, value) {
+    const row = document.createElement("div");
+    row.className = "skill-row";
+    
+    const labelEl = document.createElement("div");
+    labelEl.className = "skill-label";
+    labelEl.textContent = label;
+    row.appendChild(labelEl);
+    
+    // Bar wrapper (container for bar and baseline)
+    const barWrapper = document.createElement("div");
+    barWrapper.className = "skill-bar-wrapper";
+    
+    // Baseline reference line at 100 (static visual marker)
+    const baseline = document.createElement("div");
+    baseline.className = "skill-baseline";
+    barWrapper.appendChild(baseline);
+    
+    // Bar (always starts at 0, extends to value)
+    const SKILL_MAX = 160;
+    const barPct = Math.min((value / SKILL_MAX) * 100, 100);
+    
+    const bar = document.createElement("div");
+    bar.className = "skill-bar";
+    bar.style.setProperty("--bar-pct", `${barPct}%`);
+    bar.style.width = `${barPct}%`;
+    
+    // Color class based on value (not direction)
+    if (value < 95) {
+      bar.classList.add("low");
+    } else if (value <= 105) {
+      bar.classList.add("neutral");
+    } else {
+      bar.classList.add("high");
+    }
+    
+    barWrapper.appendChild(bar);
+    row.appendChild(barWrapper);
+    
+    // Value with color coding
+    const valueEl = document.createElement("div");
+    valueEl.className = "skill-value";
+    if (value < 95) {
+      valueEl.classList.add("skill-value-low");
+    } else if (value > 105) {
+      valueEl.classList.add("skill-value-high");
+    } else {
+      valueEl.classList.add("skill-value-neutral");
+    }
+    valueEl.textContent = value.toFixed(1);
+    row.appendChild(valueEl);
+    
+    return row;
+  }
+  
+  function generateSkillProfileDescription(metrics) {
+    const parts = [];
+    
+    // Bonus-driven vs decision-driven
+    const bonusRate = metrics.bonus_rate;
+    if (bonusRate !== null && bonusRate !== undefined) {
+      if (bonusRate > 0.5) {
+        parts.push("bonus-driven");
+      } else {
+        parts.push("decision-focused");
+      }
+    }
+    
+    // Scoring ability
+    const siPlus = metrics.si_plus;
+    if (siPlus !== null && siPlus !== undefined) {
+      if (siPlus > 110) {
+        parts.push("high-volume scorer");
+      } else if (siPlus < 95) {
+        parts.push("low-volume scorer");
+      } else {
+        parts.push("average scorer");
+      }
+    }
+    
+    // Defense
+    const dfPlus = metrics.df_plus;
+    if (dfPlus !== null && dfPlus !== undefined) {
+      if (dfPlus > 110) {
+        parts.push("strong defense");
+      } else if (dfPlus < 95) {
+        parts.push("weak defense");
+      } else {
+        parts.push("average defense");
+      }
+    }
+    
+    if (parts.length === 0) {
+      return null;
+    }
+    
+    return `Profile: ${parts.join(" with ")}.`;
+  }
+  
   function createQuickStat(label, value) {
     const stat = document.createElement("div");
     stat.className = "quick-stat";
@@ -620,24 +837,28 @@ function safe(value, formatter) {
     container.appendChild(indicator);
   }
   
-  function renderMVContext(data, seasonMV) {
-    const container = document.getElementById("mv-context-rows");
+  function renderMVContextCompressed(data, seasonMV) {
+    const container = document.getElementById("mv-context-compressed");
+    if (!container) return;
     container.innerHTML = "";
     
     const ob = data.opponent_breakdown || {};
     const matches = data.match_list || [];
     const m = data.metrics || {};
     
-    // 1. Best Win (by MV impact)
-    const bestWinRow = document.createElement("div");
-    bestWinRow.className = "mv-context-row";
-    const bestWinLabel = document.createElement("span");
-    bestWinLabel.className = "mv-context-label";
-    bestWinLabel.textContent = "Best Win (by MV impact):";
-    bestWinRow.appendChild(bestWinLabel);
+    // 2-column layout
+    const contextGrid = document.createElement("div");
+    contextGrid.className = "mv-context-grid";
     
-    const bestWinValue = document.createElement("span");
-    bestWinValue.className = "mv-context-value";
+    // Column 1: Best Win
+    const col1 = document.createElement("div");
+    col1.className = "mv-context-col";
+    const bestWinLabel = document.createElement("div");
+    bestWinLabel.className = "mv-context-label-compressed";
+    bestWinLabel.textContent = "Best Win (by MV impact)";
+    col1.appendChild(bestWinLabel);
+    const bestWinValue = document.createElement("div");
+    bestWinValue.className = "mv-context-value-compressed";
     if (ob.win_over_highest_rank) {
       const w = ob.win_over_highest_rank;
       const rankText = w.opponent_rank ? `#${w.opponent_rank} ` : "";
@@ -645,87 +866,45 @@ function safe(value, formatter) {
     } else {
       bestWinValue.textContent = "—";
     }
-    bestWinRow.appendChild(bestWinValue);
-    container.appendChild(bestWinRow);
+    col1.appendChild(bestWinValue);
+    contextGrid.appendChild(col1);
     
-    // 2. Worst Loss
-    const worstLossRow = document.createElement("div");
-    worstLossRow.className = "mv-context-row";
-    const worstLossLabel = document.createElement("span");
-    worstLossLabel.className = "mv-context-label";
-    worstLossLabel.textContent = "Worst Loss:";
-    worstLossRow.appendChild(worstLossLabel);
-    
-    const worstLossValue = document.createElement("span");
-    worstLossValue.className = "mv-context-value";
+    // Column 2: Worst Loss
+    const col2 = document.createElement("div");
+    col2.className = "mv-context-col";
+    const worstLossLabel = document.createElement("div");
+    worstLossLabel.className = "mv-context-label-compressed";
+    worstLossLabel.textContent = "Worst Loss";
+    col2.appendChild(worstLossLabel);
+    const worstLossValue = document.createElement("div");
+    worstLossValue.className = "mv-context-value-compressed";
     if (ob.worst_loss) {
       const l = ob.worst_loss;
       const rankText = l.opponent_rank ? `#${l.opponent_rank} ` : "";
       worstLossValue.textContent = `${rankText}${safe(l.opponent_name)} (${safe(l.method)})`;
     } else {
-      // Check if undefeated
       const hasLoss = matches.some(m => m.result === "L");
       worstLossValue.textContent = hasLoss ? "—" : "None (undefeated)";
     }
-    worstLossRow.appendChild(worstLossValue);
-    container.appendChild(worstLossRow);
+    col2.appendChild(worstLossValue);
+    contextGrid.appendChild(col2);
     
-    // 3. Median Opponent Rank
-    const medianRankRow = document.createElement("div");
-    medianRankRow.className = "mv-context-row";
-    const medianRankLabel = document.createElement("span");
-    medianRankLabel.className = "mv-context-label";
-    medianRankLabel.textContent = "Median Opponent Rank:";
-    medianRankRow.appendChild(medianRankLabel);
+    container.appendChild(contextGrid);
     
-    const medianRankValue = document.createElement("span");
-    medianRankValue.className = "mv-context-value";
-    const rankedOpponents = matches
-      .map(m => m.opponent_rank)
-      .filter(r => r !== null && r !== undefined && r !== "");
-    
-    if (rankedOpponents.length > 0) {
-      rankedOpponents.sort((a, b) => a - b);
-      const mid = Math.floor(rankedOpponents.length / 2);
-      const median = rankedOpponents.length % 2 === 0
-        ? (rankedOpponents[mid - 1] + rankedOpponents[mid]) / 2
-        : rankedOpponents[mid];
-      medianRankValue.textContent = `#${Math.round(median)}`;
-    } else {
-      medianRankValue.textContent = "N/A";
-    }
-    medianRankRow.appendChild(medianRankValue);
-    container.appendChild(medianRankRow);
-    
-    // 4. MV Composition
+    // MV Composition (below grid)
     const compositionRow = document.createElement("div");
-    compositionRow.className = "mv-context-row";
+    compositionRow.className = "mv-context-composition";
     const compositionLabel = document.createElement("span");
-    compositionLabel.className = "mv-context-label";
+    compositionLabel.className = "mv-context-label-compressed";
     compositionLabel.textContent = "MV Composition:";
-    compositionLabel.setAttribute("title", "Percentage of MV contributed by bonus wins (pins, techs, majors) vs decisions");
     compositionRow.appendChild(compositionLabel);
-    
     const compositionValue = document.createElement("span");
-    compositionValue.className = "mv-context-value";
+    compositionValue.className = "mv-context-value-compressed";
     
-    // Calculate composition from match data
-    let bonusWins = 0;
-    let decisions = 0;
-    matches.forEach(match => {
-      if (match.result === "W") {
-        const method = (match.method || "").toUpperCase();
-        if (method === "PIN" || method === "FALL" || method === "TF" || method === "MD" || method === "INJ") {
-          bonusWins++;
-        } else {
-          decisions++;
-        }
-      }
-    });
-    
-    const totalWins = bonusWins + decisions;
-    if (totalWins > 0) {
-      const bonusPct = Math.round((bonusWins / totalWins) * 100);
+    // Calculate composition
+    const bonusRate = m.bonus_rate;
+    if (bonusRate !== null && bonusRate !== undefined) {
+      const bonusPct = Math.round(bonusRate * 100);
       const decisionPct = 100 - bonusPct;
       compositionValue.textContent = `Bonus-driven (${bonusPct}%) | Decisions (${decisionPct}%)`;
     } else {
@@ -768,6 +947,77 @@ function safe(value, formatter) {
     setupMatchImpactToggle();
   }
   
+  function formatDateMMDDYY(dateStr) {
+    if (!dateStr) return "—";
+    try {
+      const date = new Date(dateStr);
+      if (isNaN(date.getTime())) return dateStr; // Return original if invalid
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      const year = String(date.getFullYear()).slice(-2);
+      return `${month}-${day}-${year}`;
+    } catch (e) {
+      return dateStr;
+    }
+  }
+  
+  function createOpponentRankBadge(rank) {
+    if (rank === null || rank === undefined || rank === "") {
+      const badge = document.createElement("span");
+      badge.className = "rank-badge unr-badge";
+      badge.textContent = "UNR";
+      return badge;
+    }
+    
+    const badge = document.createElement("span");
+    badge.className = "rank-badge";
+    
+    // Medal badge rules: #1 gold, #2 silver, #3-5 bronze, #6-10 top (green), #11+ standard
+    if (rank === 1) {
+      badge.classList.add("medal-gold");
+    } else if (rank === 2) {
+      badge.classList.add("medal-silver");
+    } else if (rank >= 3 && rank <= 5) {
+      badge.classList.add("medal-bronze");
+    } else if (rank >= 6 && rank <= 10) {
+      badge.classList.add("top");
+    } else {
+      badge.classList.add("standard");
+    }
+    
+    badge.textContent = `#${rank}`;
+    return badge;
+  }
+  
+  function createResultBadge(result, method) {
+    const badge = document.createElement("span");
+    badge.className = "result-badge";
+    
+    const isWin = result === "W";
+    if (isWin) {
+      badge.classList.add("result-win");
+    } else {
+      badge.classList.add("result-loss");
+    }
+    
+    // Display only method (DEC, MD, TF, FALL, etc.)
+    const methodText = safe(method || "—").toUpperCase();
+    badge.textContent = methodText;
+    
+    // Tooltip: "Win by Technical Fall" or "Loss by Decision"
+    const outcome = isWin ? "Win" : "Loss";
+    const methodName = methodText === "DEC" ? "Decision" :
+                      methodText === "MD" ? "Major Decision" :
+                      methodText === "TF" ? "Technical Fall" :
+                      methodText === "FALL" || methodText === "PIN" ? "Fall" :
+                      methodText === "INJ" ? "Injury Default" :
+                      methodText === "DQ" ? "Disqualification" :
+                      methodText;
+    badge.setAttribute("title", `${outcome} by ${methodName}`);
+    
+    return badge;
+  }
+  
   function renderMatchTable(matches, seasonMV) {
     const tbody = document.querySelector("#match-table tbody");
     tbody.innerHTML = "";
@@ -778,16 +1028,14 @@ function safe(value, formatter) {
     sortedMatches.forEach((match) => {
       const tr = document.createElement("tr");
   
-      const add = (v) => {
-        const td = document.createElement("td");
-        td.textContent = safe(v);
-        tr.appendChild(td);
-      };
+      // 1. Date (MM-DD-YY format)
+      const dateTd = document.createElement("td");
+      dateTd.textContent = formatDateMMDDYY(match.date);
+      tr.appendChild(dateTd);
   
-      add(match.date);
-  
-      // Opponent with link
+      // 2. Opponent (with link, .name styling)
       const oppTd = document.createElement("td");
+      oppTd.className = "name-cell";
       if (match.opponent_id) {
         const a = document.createElement("a");
         a.href = `/wrestler.html?id=${match.opponent_id}`;
@@ -798,8 +1046,9 @@ function safe(value, formatter) {
       }
       tr.appendChild(oppTd);
   
-      // Opponent team with link
+      // 3. Opponent Team (muted secondary)
       const oppTeamTd = document.createElement("td");
+      oppTeamTd.className = "metric-secondary";
       const oppTeamName = safe(match.opponent_team);
       if (oppTeamName && oppTeamName !== "—") {
         const teamSlug = teamNameToSlug(oppTeamName);
@@ -811,42 +1060,35 @@ function safe(value, formatter) {
         oppTeamTd.textContent = oppTeamName;
       }
       tr.appendChild(oppTeamTd);
-      add(match.opponent_team_rank ? "#" + match.opponent_team_rank : "—");
-      add(match.opponent_weight);
       
-      // Opponent rank with badge if ranked
+      // 4. Opponent Rank (badge with medal rules)
       const oppRankTd = document.createElement("td");
-      if (match.opponent_rank) {
-        oppRankTd.appendChild(createRankBadge(match.opponent_rank));
-      } else {
-        oppRankTd.textContent = "—";
-      }
+      oppRankTd.appendChild(createOpponentRankBadge(match.opponent_rank));
       tr.appendChild(oppRankTd);
       
-      // Result
+      // 5. Result (combined Result + Method as badge)
       const resultTd = document.createElement("td");
-      resultTd.textContent = safe(match.result);
+      resultTd.appendChild(createResultBadge(match.result, match.method));
       tr.appendChild(resultTd);
       
-      add(match.method);
-      
-      // Impact column (MV delta) - use stored value from JSON
+      // 6. MV Impact (right-aligned, tabular, color-coded)
       const impactTd = document.createElement("td");
-      impactTd.className = "num match-impact-cell";
+      impactTd.className = "num";
       const mvImpact = match.mv_impact;
       if (mvImpact !== null && mvImpact !== undefined) {
         const impactText = mvImpact > 0 ? `+${mvImpact.toFixed(1)}` : mvImpact.toFixed(1);
         impactTd.textContent = impactText;
-        impactTd.className += mvImpact > 0 ? " impact-positive" : mvImpact < 0 ? " impact-negative" : "";
-        impactTd.setAttribute("title", "Contribution to season Mat Value from this match");
+        impactTd.classList.add(mvImpact > 0 ? "impact-positive" : "impact-negative");
       } else {
         impactTd.textContent = "—";
       }
       tr.appendChild(impactTd);
       
-      add(match.score);
-      add(match.duration);
-      add(match.event);
+      // 7. Score (muted secondary)
+      const scoreTd = document.createElement("td");
+      scoreTd.className = "metric-secondary num";
+      scoreTd.textContent = safe(match.score);
+      tr.appendChild(scoreTd);
   
       tbody.appendChild(tr);
     });
@@ -888,10 +1130,10 @@ function safe(value, formatter) {
       return;
     }
     
-    // Create SVG chart
-    const chartHeight = 200;
+    // Create SVG chart (increased height for prominence)
+    const chartHeight = 250;
     const chartWidth = Math.max(600, matchData.length * 20);
-    const padding = { top: 20, right: 20, bottom: 20, left: 20 };
+    const padding = { top: 30, right: 20, bottom: 30, left: 20 };
     const plotWidth = chartWidth - padding.left - padding.right;
     const plotHeight = chartHeight - padding.top - padding.bottom;
     
@@ -903,19 +1145,39 @@ function safe(value, formatter) {
     
     // Find max absolute value for scaling
     const maxAbsValue = Math.max(...matchData.map(m => Math.abs(m.mvImpact || 0)), 1);
+    const chartMaxValue = Math.max(6, maxAbsValue); // Use at least 6 for fixed gridlines
     const zeroY = padding.top + plotHeight / 2;
     
-    // Draw zero line
-    const zeroLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    zeroLine.setAttribute("x1", padding.left);
-    zeroLine.setAttribute("y1", zeroY);
-    zeroLine.setAttribute("x2", padding.left + plotWidth);
-    zeroLine.setAttribute("y2", zeroY);
-    zeroLine.setAttribute("stroke", "var(--border)");
-    zeroLine.setAttribute("stroke-width", "1");
-    svg.appendChild(zeroLine);
+    // Draw horizontal gridlines at fixed MV values: +6, +4, +2, 0, -2, -4, -6
+    const gridValues = [6, 4, 2, 0, -2, -4, -6];
     
-    // Calculate rolling average (last 5 matches)
+    gridValues.forEach(gridValue => {
+      const gridY = zeroY - (gridValue / chartMaxValue) * (plotHeight / 2);
+      
+      // Only draw if within chart bounds
+      if (gridY >= padding.top && gridY <= padding.top + plotHeight) {
+        const gridline = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        gridline.setAttribute("x1", padding.left);
+        gridline.setAttribute("y1", gridY);
+        gridline.setAttribute("x2", padding.left + plotWidth);
+        gridline.setAttribute("y2", gridY);
+        
+        if (gridValue === 0) {
+          // Zero line slightly more prominent
+          gridline.setAttribute("stroke", "rgba(255,255,255,0.12)");
+          gridline.setAttribute("stroke-width", "1");
+        } else {
+          // Other gridlines subtle
+          gridline.setAttribute("stroke", "rgba(255,255,255,0.06)");
+          gridline.setAttribute("stroke-width", "1");
+        }
+        
+        gridline.setAttribute("class", "chart-gridline");
+        svg.appendChild(gridline);
+      }
+    });
+    
+    // Calculate rolling average (last 5 matches) - season average MV line
     const rollingAverages = [];
     for (let i = 0; i < matchData.length; i++) {
       const startIdx = Math.max(0, i - 4);
@@ -924,31 +1186,12 @@ function safe(value, formatter) {
       rollingAverages.push(avg);
     }
     
-    // Draw rolling average line
-    if (rollingAverages.length > 1) {
-      const avgPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      let pathData = "";
-      rollingAverages.forEach((avg, idx) => {
-        const x = padding.left + (idx / (matchData.length - 1)) * plotWidth;
-        const y = zeroY - (avg / maxAbsValue) * (plotHeight / 2);
-        if (idx === 0) {
-          pathData = `M ${x} ${y}`;
-        } else {
-          pathData += ` L ${x} ${y}`;
-        }
-      });
-      avgPath.setAttribute("d", pathData);
-      avgPath.setAttribute("stroke", "var(--muted)");
-      avgPath.setAttribute("stroke-width", "1.5");
-      avgPath.setAttribute("fill", "none");
-      svg.appendChild(avgPath);
-    }
-    
-    // Draw bars
+    // Draw bars with default opacity (drawn first so white line appears on top)
+    const bars = [];
     matchData.forEach((match, idx) => {
       const x = padding.left + (idx / (matchData.length - 1)) * plotWidth;
-      const barWidth = Math.max(2, plotWidth / matchData.length - 2);
-      const barHeight = Math.abs(match.mvImpact) / maxAbsValue * (plotHeight / 2);
+      const barWidth = Math.max(3, plotWidth / matchData.length - 2);
+      const barHeight = Math.abs(match.mvImpact) / chartMaxValue * (plotHeight / 2);
       const isPositive = match.mvImpact >= 0;
       
       const bar = document.createElementNS("http://www.w3.org/2000/svg", "rect");
@@ -956,42 +1199,192 @@ function safe(value, formatter) {
       bar.setAttribute("y", isPositive ? zeroY - barHeight : zeroY);
       bar.setAttribute("width", barWidth);
       bar.setAttribute("height", barHeight);
-      bar.setAttribute("fill", isPositive ? "rgba(0, 194, 168, 0.4)" : "rgba(220, 90, 90, 0.4)");
+      bar.setAttribute("fill", isPositive ? "rgba(0, 194, 168, 1)" : "rgba(220, 90, 90, 1)");
+      bar.setAttribute("opacity", "0.55"); // Default opacity (DataGolf-style)
       bar.setAttribute("class", "match-impact-bar");
+      bar.setAttribute("data-index", idx);
+      bar.setAttribute("data-x", x);
+      bar.setAttribute("data-is-positive", isPositive);
+      bar.setAttribute("data-bar-height", barHeight);
       
-      // Tooltip data
-      const rankText = match.opponentRank ? `#${match.opponentRank} ` : "";
-      const tooltipText = `${match.date}\n${rankText}${match.opponent}\n${match.result} (${match.method || "N/A"})\nMV: ${match.mvImpact > 0 ? '+' : ''}${match.mvImpact.toFixed(1)}`;
-      bar.setAttribute("data-tooltip", tooltipText);
-      
-      // Add hover event
-      bar.addEventListener("mouseenter", (e) => {
-        showChartTooltip(e, tooltipText, x, isPositive ? zeroY - barHeight : zeroY + barHeight);
-      });
-      bar.addEventListener("mouseleave", () => {
-        hideChartTooltip();
+      bars.push({
+        element: bar,
+        index: idx,
+        x: x,
+        match: match,
+        isPositive: isPositive,
+        barHeight: barHeight
       });
       
       svg.appendChild(bar);
     });
     
+    // Draw rolling average line AFTER bars (so it appears in front)
+    if (rollingAverages.length > 1) {
+      const avgPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      let pathData = "";
+      rollingAverages.forEach((avg, idx) => {
+        const x = padding.left + (idx / (matchData.length - 1)) * plotWidth;
+        const y = zeroY - (avg / chartMaxValue) * (plotHeight / 2);
+        if (idx === 0) {
+          pathData = `M ${x} ${y}`;
+        } else {
+          pathData += ` L ${x} ${y}`;
+        }
+      });
+      avgPath.setAttribute("d", pathData);
+      avgPath.setAttribute("stroke", "rgba(255,255,255,0.6)");
+      avgPath.setAttribute("stroke-width", "1.5");
+      avgPath.setAttribute("fill", "none");
+      avgPath.setAttribute("class", "rolling-avg-line");
+      svg.appendChild(avgPath);
+    }
+    
+    // Create dot element for white line (will be positioned on hover)
+    const lineDot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    lineDot.setAttribute("r", "3");
+    lineDot.setAttribute("fill", "rgba(255,255,255,0.9)");
+    lineDot.setAttribute("class", "rolling-avg-dot");
+    lineDot.setAttribute("opacity", "0");
+    svg.appendChild(lineDot);
+    
     container.appendChild(svg);
     
-    // Store match data for toggle functionality
+    // Store match data and bars for hover interaction
     container.dataset.matchData = JSON.stringify(matchData);
+    container.dataset.bars = JSON.stringify(bars.map(b => ({
+      index: b.index,
+      x: b.x,
+      match: b.match
+    })));
+    
+    // DataGolf-style hover snap: single mousemove listener on SVG
+    let activeIndex = -1;
+    
+    svg.addEventListener("mousemove", (e) => {
+      const svgRect = svg.getBoundingClientRect();
+      const mouseX = e.clientX - svgRect.left;
+      
+      // Convert mouse X to nearest match index (global hover zone)
+      const relativeX = mouseX - padding.left;
+      const normalizedX = Math.max(0, Math.min(1, relativeX / plotWidth));
+      let index = Math.round(normalizedX * (matchData.length - 1));
+      index = Math.max(0, Math.min(matchData.length - 1, index));
+      
+      // Only update if index changed
+      if (index !== activeIndex) {
+        activeIndex = index;
+        
+        // Update bar opacities (no color change, only opacity)
+        bars.forEach((bar, idx) => {
+          if (idx === activeIndex) {
+            bar.element.setAttribute("opacity", "1.0");
+          } else {
+            bar.element.setAttribute("opacity", "0.55");
+          }
+        });
+      }
+      
+      // Always update tooltip and dot position
+      const activeMatch = matchData[activeIndex];
+      const activeBar = bars[activeIndex];
+      if (activeMatch && activeBar) {
+        // Get season average MV at this index
+        const seasonAvgMV = rollingAverages[activeIndex];
+        
+        // Format date as YYYY-MM-DD
+        const dateStr = activeMatch.date || "";
+        
+        // Build tooltip with 4 lines
+        const impactValue = activeMatch.mvImpact.toFixed(1);
+        const impactSign = activeMatch.mvImpact > 0 ? '+' : '';
+        const seasonAvgStr = seasonAvgMV !== undefined ? seasonAvgMV.toFixed(1) : '—';
+        
+        const tooltipLines = [
+          dateStr,
+          activeMatch.opponent,
+          `MV Impact: ${impactSign}${impactValue}`,
+          `Season Avg MV: ${seasonAvgStr}`
+        ];
+        const tooltipText = tooltipLines.join('\n');
+        
+        // Tooltip positioning: above for positive, below for negative
+        const tooltipY = activeBar.isPositive 
+          ? zeroY - activeBar.barHeight - 12  // Above bar
+          : zeroY + activeBar.barHeight + 12;  // Below bar
+        
+        showChartTooltip(e, tooltipText, svg, activeBar.x, tooltipY, activeMatch.mvImpact);
+        
+        // Update white line dot position
+        if (rollingAverages.length > activeIndex) {
+          const dotX = activeBar.x;
+          const dotY = zeroY - (seasonAvgMV / chartMaxValue) * (plotHeight / 2);
+          lineDot.setAttribute("cx", dotX);
+          lineDot.setAttribute("cy", dotY);
+          lineDot.setAttribute("opacity", "1");
+        }
+      }
+    });
+    
+    svg.addEventListener("mouseleave", () => {
+      // Reset all bars to default opacity
+      bars.forEach(bar => {
+        bar.element.setAttribute("opacity", "0.55");
+      });
+      // Hide dot
+      lineDot.setAttribute("opacity", "0");
+      activeIndex = -1;
+      hideChartTooltip();
+    });
   }
   
-  function showChartTooltip(event, text, x, y) {
+  function showChartTooltip(event, text, svgElement, svgX, svgY, mvImpact) {
     // Remove existing tooltip
     hideChartTooltip();
     
+    // Convert SVG coordinates to page coordinates
+    const svgRect = svgElement.getBoundingClientRect();
+    const pageX = svgRect.left + svgX;
+    const pageY = svgRect.top + svgY;
+    
     const tooltip = document.createElement("div");
     tooltip.className = "chart-tooltip";
-    tooltip.textContent = text;
-    tooltip.style.position = "absolute";
-    tooltip.style.left = `${x}px`;
-    tooltip.style.top = `${y - 10}px`;
-    tooltip.style.transform = "translate(-50%, -100%)";
+    
+    // Parse tooltip text into lines and format with color
+    const lines = text.split('\n');
+    lines.forEach((line, idx) => {
+      const lineEl = document.createElement("div");
+      
+      // Color MV Impact line based on sign
+      if (line.startsWith("MV Impact:")) {
+        lineEl.innerHTML = line.replace(
+          /MV Impact: ([\+\-]?[\d\.]+)/,
+          (match, value) => {
+            const isPositive = mvImpact >= 0;
+            const color = isPositive ? "rgba(0, 194, 168, 0.9)" : "rgba(220, 90, 90, 0.9)";
+            return `MV Impact: <span style="color: ${color}">${value}</span>`;
+          }
+        );
+      } else {
+        lineEl.textContent = line;
+      }
+      
+      tooltip.appendChild(lineEl);
+    });
+    
+    tooltip.style.position = "fixed";
+    tooltip.style.left = `${pageX}px`;
+    
+    // Position above or below based on MV impact sign
+    if (mvImpact >= 0) {
+      // Above bar
+      tooltip.style.top = `${pageY}px`;
+      tooltip.style.transform = "translate(-50%, -100%)";
+    } else {
+      // Below bar
+      tooltip.style.top = `${pageY}px`;
+      tooltip.style.transform = "translate(-50%, 0)";
+    }
     
     document.body.appendChild(tooltip);
     
@@ -999,10 +1392,19 @@ function safe(value, formatter) {
     const rect = tooltip.getBoundingClientRect();
     if (rect.left < 10) {
       tooltip.style.left = "10px";
-      tooltip.style.transform = "translate(0, -100%)";
+      tooltip.style.transform = tooltip.style.transform.replace("translate(-50%", "translate(0");
     } else if (rect.right > window.innerWidth - 10) {
-      tooltip.style.left = `${window.innerWidth - x - 10}px`;
-      tooltip.style.transform = "translate(-100%, -100%)";
+      tooltip.style.left = `${window.innerWidth - 10}px`;
+      tooltip.style.transform = tooltip.style.transform.replace("translate(-50%", "translate(-100%");
+    }
+    
+    // Adjust vertical position if tooltip goes off screen
+    if (rect.top < 10) {
+      tooltip.style.top = `${pageY + 20}px`;
+      tooltip.style.transform = tooltip.style.transform.replace("-100%", "0");
+    } else if (rect.bottom > window.innerHeight - 10) {
+      tooltip.style.top = `${pageY - 20}px`;
+      tooltip.style.transform = tooltip.style.transform.replace("0", "-100%");
     }
   }
   
