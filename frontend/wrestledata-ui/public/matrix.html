@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rankings Matrix — WrestleData</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+</head>
+
+<body>
+  <script src="/header.js"></script>
+  <main class="matrix-page">
+    <!-- HEADER / CONTEXT -->
+    <section class="matrix-header">
+      <h1 id="matrix-title">Rankings Matrix</h1>
+      <div class="matrix-meta">
+        <span id="matrix-season">Season: —</span>
+        <span id="matrix-wrestler-count">Wrestlers: —</span>
+      </div>
+      <div class="matrix-legend">
+        <span class="legend-item win">D / MD / TF / F</span>
+        <span class="legend-item co">CO</span>
+        <span class="legend-item split">Split</span>
+      </div>
+    </section>
+
+    <!-- MATRIX CONTAINER -->
+    <section class="matrix-container">
+      <!-- GRID WRAPPER (handles horizontal scroll) -->
+      <div class="matrix-scroll" id="matrix-scroll">
+        <!-- CSS GRID -->
+        <div class="matrix-grid" id="matrix-grid">
+          <!-- Grid will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Single global tooltip for matrix -->
+  <div id="matrix-tooltip" class="matrix-tooltip hidden"></div>
+
+  <script src="/tooltips.js"></script>
+  <script src="/matrix.js"></script>
+</body>
+</html>
+

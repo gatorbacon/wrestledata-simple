@@ -81,11 +81,11 @@
    ======================================== */
 
 * {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -703,6 +703,337 @@ a:hover {
 }
 
 /* ========================================
+   RANKINGS MATRIX
+   ======================================== */
+
+/* Matrix color system (opacity-based) */
+:root {
+  --matrix-win: rgb(46, 125, 50);      /* green */
+  --matrix-loss: rgb(183, 28, 28);     /* red */
+  --matrix-split: rgb(161, 136, 22);   /* muted yellow */
+  --matrix-co-multiplier: 0.55;
+}
+
+.matrix-page {
+  max-width: 100%;
+  padding: var(--pad-lg);
+}
+
+.matrix-header {
+  margin-bottom: var(--pad-lg);
+}
+
+.matrix-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 var(--pad-md) 0;
+}
+
+.matrix-meta {
+  display: flex;
+  gap: var(--pad-md);
+  margin-bottom: var(--pad-md);
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.matrix-legend {
+  display: flex;
+  gap: var(--pad-md);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.legend-item::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.legend-item.win::before {
+  background: rgba(34, 197, 94, 0.35);
+}
+
+.legend-item.co::before {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.legend-item.split::before {
+  background: rgba(234, 179, 8, 0.35);
+}
+
+.matrix-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.matrix-scroll {
+  overflow-x: auto;
+  overflow-y: visible;
+  position: relative;
+  max-width: 100%;
+  /* Optional: fade gradient on right edge */
+  mask-image: linear-gradient(to right, black calc(100% - 60px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black calc(100% - 60px), transparent 100%);
+}
+
+.matrix-grid {
+  display: grid;
+  grid-auto-flow: row;
+  background: var(--bg);
+  gap: 0;
+  min-width: fit-content;
+}
+
+.matrix-corner {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: var(--bg);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  width: 240px;
+  height: 32px;
+}
+
+.matrix-row-header {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  gap: var(--pad-sm);
+  padding: 0 var(--pad-sm);
+  width: 240px;
+  height: 32px;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.matrix-row-header:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.matrix-row-header .rank {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  min-width: 20px;
+  text-align: right;
+}
+
+.matrix-row-header .name {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text);
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.matrix-col-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 32px;
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background 0.12s ease;
+}
+
+.matrix-col-header.highlighted {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.matrix-cell {
+  width: 40px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  transition: opacity 0.12s ease;
+  cursor: pointer;
+  border-right: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.matrix-cell {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.matrix-cell.empty {
+  background: transparent;
+}
+
+.matrix-cell.cell-self {
+  background: rgba(255, 255, 255, 0.02);
+  pointer-events: none;
+  cursor: default;
+  position: relative;
+  opacity: 0.6;
+}
+
+.matrix-cell.cell-self::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    135deg,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.08) 2px,
+    rgba(255, 255, 255, 0.08) 4px
+  );
+  pointer-events: none;
+}
+
+/* Cell hover outline (ONLY affects the hovered cell itself - no descendant selectors) */
+.matrix-cell:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.6);
+  outline-offset: -1px;
+}
+
+/* Diagonal (self-match) cells */
+.matrix-cell.self {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.08) 4px,
+    rgba(255, 255, 255, 0.02) 4px,
+    rgba(255, 255, 255, 0.02) 8px
+  );
+  pointer-events: none;
+}
+
+.matrix-cell.self:hover {
+  outline: none;
+}
+
+/* Color strategy (opacity-based) */
+.matrix-cell.cell-win {
+  background-color: rgba(76, 175, 80, var(--alpha, 0.45));
+}
+
+.matrix-cell.cell-loss {
+  background-color: rgba(244, 67, 54, var(--alpha, 0.45));
+}
+
+.matrix-cell.cell-co {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.matrix-cell.cell-split {
+  background-color: rgba(200, 170, 60, 0.4);
+}
+
+/* Single shared tooltip (JS-only, no CSS hover) */
+.matrix-tooltip {
+  position: fixed;
+  pointer-events: none;
+  max-width: 280px;
+  padding: 8px 10px;
+  background: rgba(20, 24, 30, 0.95);
+  color: #e6e6e6;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.35;
+  white-space: normal;
+  z-index: 10000;
+}
+
+.matrix-tooltip.hidden {
+  display: none;
+}
+
+
+/* Legacy tooltip-html class (for compatibility) */
+.tooltip-html {
+  position: fixed;
+  background: rgba(20, 24, 28, 0.96);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--text);
+  max-width: 280px;
+  white-space: normal;
+  word-break: break-word;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  display: inline-block;
+}
+
+.tooltip-html.visible {
+  opacity: 1;
+}
+
+/* Disable CSS hover tooltips for matrix cells */
+.matrix-cell.tooltip-trigger:hover .tooltip:not(.tooltip-html) {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.tooltip-html strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .matrix-page {
+    padding: var(--pad-md);
+  }
+  
+  .matrix-scroll {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  
+  .matrix-row-header {
+    width: 180px;
+  }
+  
+  .matrix-corner {
+    width: 180px;
+  }
+  
+  .matrix-grid {
+    grid-template-columns: 180px repeat(var(--col-count), 40px) !important;
+  }
+}
+
+/* ========================================
    UTILITY CLASSES
    ======================================== */
 
@@ -770,22 +1101,22 @@ a:hover {
    LAYOUT COMPONENTS
    ======================================== */
 
-.page-container {
-  max-width: 1100px;
-  margin: 0 auto;
+  .page-container {
+    max-width: 1100px;
+    margin: 0 auto;
   padding: var(--pad-lg);
   overflow-x: visible;
-}
-
-.header {
+  }
+  
+  .header {
   margin-bottom: 0.75em;
   padding-bottom: var(--pad-md);
   border-bottom: 1px solid var(--border);
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 2rem;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2rem;
   font-weight: 700;
   color: var(--text);
 }
@@ -1008,16 +1339,16 @@ a:hover {
   font-weight: 700;
   margin-bottom: 1em;
   color: var(--text);
-}
-
-.summary-cards {
-  display: grid;
+  }
+  
+  .summary-cards {
+    display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--pad-md);
   margin-bottom: 2.5em;
-}
-
-.card {
+  }
+  
+  .card {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--r-md);
@@ -1042,9 +1373,9 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.label {
+  }
+  
+  .label {
   font-weight: 500;
   color: var(--muted);
   font-size: 0.875rem;
@@ -1061,7 +1392,7 @@ a:hover {
    TABLE STYLING
    ======================================== */
 
-.table-wrapper {
+  .table-wrapper {
   overflow: visible;
   border: 1px solid var(--border);
   border-radius: var(--r-md);
@@ -1081,11 +1412,11 @@ a:hover {
 /* Ensure tooltips can escape table wrapper */
 .table-wrapper table {
   overflow: visible;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
   font-variant-numeric: tabular-nums;
 }
 
