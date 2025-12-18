@@ -114,12 +114,34 @@ def result_to_signed(result_type: str, is_winner: bool) -> Optional[int]:
     return base if is_winner else -base
 
 
-def load_rankings(season: int, weight: int, data_dir: str) -> Dict[str, int]:
-    """Load rankings and return dict mapping wrestler_id -> rank."""
-    rankings_file = Path(data_dir) / str(season) / f"rankings_{weight}.json"
+# Cache for rankings and tier averages
+_rankings_cache: Dict[Tuple[int, int], Dict[str, int]] = {}
+_tier_averages_cache: Dict[Tuple[int, int], Dict[Tuple[int, int], float]] = {}
+
+def load_rankings(season: int, weight: int, data_dir: str, use_cache: bool = True) -> Dict[str, int]:
+    """
+    Load rankings and return dict mapping wrestler_id -> rank. Uses cache for performance.
+    
+    IMPORTANT: Always uses rankings_<weight>.json (full rankings with all wrestlers),
+    NEVER rankings_starters_<weight>.json. This ensures:
+    - Opponent ranks are found in the full list
+    - Tier averages are calculated from the full list
+    """
+    cache_key = (season, weight)
+    
+    if use_cache and cache_key in _rankings_cache:
+        return _rankings_cache[cache_key]
+    
+    data_path = Path(data_dir) / str(season)
+    
+    # ALWAYS use full rankings file (contains all wrestlers)
+    rankings_file = data_path / f"rankings_{weight}.json"
     
     if not rankings_file.exists():
-        raise FileNotFoundError(f"Rankings file not found: {rankings_file}")
+        raise FileNotFoundError(
+            f"Full rankings file not found for weight {weight}: {rankings_file}\n"
+            f"Must use rankings_{weight}.json (full list), not rankings_starters_{weight}.json"
+        )
     
     with rankings_file.open("r", encoding="utf-8") as f:
         data = json.load(f)
@@ -137,40 +159,122 @@ def load_rankings(season: int, weight: int, data_dir: str) -> Dict[str, int]:
     # Store max_rank for missing opponents
     rank_map["__max_rank__"] = max_rank
     
+    if use_cache:
+        _rankings_cache[cache_key] = rank_map
+    
     return rank_map
 
 
-def load_wrestler_matches(season: int, weight: int, wrestler_id: str, data_dir: str) -> List[Dict]:
-    """Load all matches for a wrestler from weight class files."""
-    data_path = Path(data_dir) / str(season)
-    matches = []
+def find_opponent_weight_and_rank(
+    opponent_id: str,
+    season: int,
+    primary_weight: int,
+    data_dir: str
+) -> Tuple[int, int]:
+    """
+    Find opponent's weight class and rank using flexible search.
     
-    # Check both weight_class_<weight>.json and weight_class_<weight>A.json
-    for pattern in [f"weight_class_{weight}.json", f"weight_class_{weight}A.json"]:
-        wc_file = data_path / pattern
-        if not wc_file.exists():
+    Search order:
+    1. Primary weight (wrestler's weight class)
+    2. Adjacent weights (primary_weight ± 1)
+    3. All other weights
+    
+    IMPORTANT: Always uses rankings_<weight>.json (full rankings), never starters file.
+    
+    Returns: (opponent_weight, opponent_rank)
+    Raises: ValueError if opponent not found in any weight class
+    """
+    weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+    data_path = Path(data_dir) / str(season)
+    
+    # Build search order: primary, adjacent, then rest
+    search_order = [primary_weight]
+    
+    # Add adjacent weights if they exist
+    if primary_weight - 1 in weights:
+        search_order.append(primary_weight - 1)
+    if primary_weight + 1 in weights:
+        search_order.append(primary_weight + 1)
+    
+    # Add remaining weights
+    for w in weights:
+        if w not in search_order:
+            search_order.append(w)
+    
+    # Search in order - ALWAYS use full rankings file
+    for weight in search_order:
+        rankings_file = data_path / f"rankings_{weight}.json"
+        if not rankings_file.exists():
             continue
         
         try:
-            with wc_file.open("r", encoding="utf-8") as f:
-                wc_data = json.load(f)
-        except Exception as e:
-            print(f"Warning: Could not load {wc_file}: {e}")
-            continue
-        
-        for match in wc_data.get("matches", []):
-            w1_id = match.get("wrestler1_id")
-            w2_id = match.get("wrestler2_id")
+            with rankings_file.open("r", encoding="utf-8") as f:
+                data = json.load(f)
             
-            # Include match if wrestler is either participant
-            if w1_id == wrestler_id or w2_id == wrestler_id:
-                matches.append(match)
+            # Check if opponent is in this file
+            for entry in data.get("rankings", []):
+                if entry.get("wrestler_id") == opponent_id:
+                    rank = entry.get("rank")
+                    if rank is not None:
+                        return weight, rank
+        except Exception:
+            continue
+    
+    # Opponent not found in any weight class
+    raise ValueError(
+        f"Opponent {opponent_id} not found in any weight class rankings for season {season}. "
+        f"Searched weights: {search_order} (using full rankings files only)"
+    )
+
+
+def load_wrestler_matches(season: int, weight: int, wrestler_id: str, data_dir: str) -> List[Dict]:
+    """
+    Load all matches for a wrestler from ALL weight class files.
+    
+    This includes matches at any weight class, not just the wrestler's primary weight.
+    """
+    data_path = Path(data_dir) / str(season)
+    matches = []
+    weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+    
+    # Search all weight classes
+    for w in weights:
+        # Check both weight_class_<weight>.json and weight_class_<weight>A.json
+        for pattern in [f"weight_class_{w}.json", f"weight_class_{w}A.json"]:
+            wc_file = data_path / pattern
+            if not wc_file.exists():
+                continue
+            
+            try:
+                with wc_file.open("r", encoding="utf-8") as f:
+                    wc_data = json.load(f)
+            except Exception as e:
+                continue  # Silently skip files that can't be loaded
+            
+            for match in wc_data.get("matches", []):
+                w1_id = match.get("wrestler1_id")
+                w2_id = match.get("wrestler2_id")
+                
+                # Include match if wrestler is either participant
+                if w1_id == wrestler_id or w2_id == wrestler_id:
+                    matches.append(match)
     
     return matches
 
 
-def get_opponent_info(match: Dict, wrestler_id: str, rank_map: Dict[str, int]) -> Tuple[Optional[str], Optional[int]]:
-    """Get opponent ID and rank from a match."""
+def get_opponent_info(
+    match: Dict,
+    wrestler_id: str,
+    season: int,
+    primary_weight: int,
+    data_dir: str
+) -> Tuple[Optional[str], int, int]:
+    """
+    Get opponent ID, weight class, and rank from a match using flexible search.
+    
+    Returns: (opponent_id, opponent_weight, opponent_rank)
+    Raises: ValueError if opponent not found in any weight class
+    """
     w1_id = match.get("wrestler1_id")
     w2_id = match.get("wrestler2_id")
     
@@ -179,46 +283,69 @@ def get_opponent_info(match: Dict, wrestler_id: str, rank_map: Dict[str, int]) -
     elif w2_id == wrestler_id:
         opp_id = w1_id
     else:
-        return None, None
+        return None, None, None
     
-    # Get rank (use max_rank if missing)
-    opp_rank = rank_map.get(opp_id, rank_map.get("__max_rank__", 200))
+    if not opp_id:
+        return None, None, None
     
-    return opp_id, opp_rank
+    # Find opponent's weight class and rank using flexible search
+    opp_weight, opp_rank = find_opponent_weight_and_rank(opp_id, season, primary_weight, data_dir)
+    
+    return opp_id, opp_weight, opp_rank
 
 
-def load_all_matches_for_opponents(season: int, weight: int, opponent_ids: set, data_dir: str) -> Dict[str, List[Dict]]:
-    """Load all matches for a set of opponents."""
+def load_all_matches_for_opponents(
+    season: int,
+    opponent_weight_map: Dict[str, int],
+    data_dir: str
+) -> Dict[str, List[Dict]]:
+    """
+    Load all matches for a set of opponents from their respective weight classes.
+    
+    Args:
+        season: Season year
+        opponent_weight_map: Dict mapping opponent_id -> weight_class
+        data_dir: Data directory path
+    
+    Returns:
+        Dict mapping opponent_id -> list of matches
+    """
     data_path = Path(data_dir) / str(season)
     matches_by_opponent = defaultdict(list)
     
-    # Check both weight_class_<weight>.json and weight_class_<weight>A.json
-    for pattern in [f"weight_class_{weight}.json", f"weight_class_{weight}A.json"]:
-        wc_file = data_path / pattern
-        if not wc_file.exists():
-            continue
-        
-        try:
-            with wc_file.open("r", encoding="utf-8") as f:
-                wc_data = json.load(f)
-        except Exception:
-            continue
-        
-        for match in wc_data.get("matches", []):
-            w1_id = match.get("wrestler1_id")
-            w2_id = match.get("wrestler2_id")
-            winner_id = match.get("winner_id")
-            result = match.get("result", "")
-            
-            # Skip forfeits
-            if "MFF" in result.upper() or "FORFEIT" in result.upper():
+    # Group opponents by weight class for efficient loading
+    opponents_by_weight = defaultdict(set)
+    for opp_id, weight in opponent_weight_map.items():
+        opponents_by_weight[weight].add(opp_id)
+    
+    # Load matches for each weight class
+    for weight, opp_ids in opponents_by_weight.items():
+        # Check both weight_class_<weight>.json and weight_class_<weight>A.json
+        for pattern in [f"weight_class_{weight}.json", f"weight_class_{weight}A.json"]:
+            wc_file = data_path / pattern
+            if not wc_file.exists():
                 continue
             
-            # Include if either wrestler is in our opponent set
-            if w1_id in opponent_ids:
-                matches_by_opponent[w1_id].append(match)
-            if w2_id in opponent_ids:
-                matches_by_opponent[w2_id].append(match)
+            try:
+                with wc_file.open("r", encoding="utf-8") as f:
+                    wc_data = json.load(f)
+            except Exception:
+                continue
+            
+            for match in wc_data.get("matches", []):
+                w1_id = match.get("wrestler1_id")
+                w2_id = match.get("wrestler2_id")
+                result = match.get("result", "")
+                
+                # Skip forfeits
+                if "MFF" in result.upper() or "FORFEIT" in result.upper():
+                    continue
+                
+                # Include if either wrestler is in our opponent set for this weight
+                if w1_id in opp_ids:
+                    matches_by_opponent[w1_id].append(match)
+                if w2_id in opp_ids:
+                    matches_by_opponent[w2_id].append(match)
     
     return dict(matches_by_opponent)
 
@@ -263,15 +390,22 @@ def compute_tier_averages(
     weight: int,
     rank_map: Dict[str, int],
     data_dir: str,
-    debug: bool = False
+    debug: bool = False,
+    use_cache: bool = True
 ) -> Dict[Tuple[int, int], float]:
     """
-    Compute tier averages for rank anchor bands.
+    Compute tier averages for rank anchor bands for a specific weight class.
     
     For each tier (e.g., 1-10), includes ALL matches by ALL wrestlers in that rank range.
+    Uses cache for performance.
     
     Returns dict mapping (start_rank, end_rank) -> average
     """
+    cache_key = (season, weight)
+    
+    if use_cache and cache_key in _tier_averages_cache:
+        return _tier_averages_cache[cache_key]
+    
     anchors = [1, 10, 30, 50, 100, 150, 200]
     max_rank = rank_map.get("__max_rank__", 200)
     anchors = [a for a in anchors if a <= max_rank]
@@ -355,7 +489,7 @@ def compute_tier_averages(
     
     if debug:
         print("\n" + "=" * 80)
-        print("TIER AVERAGES (μ at anchor nodes)")
+        print(f"TIER AVERAGES (μ at anchor nodes) - Weight {weight}")
         print("=" * 80)
         print("Computed from ALL matches by ALL wrestlers in each rank tier")
         print(f"{'Rank Range':<15} {'Wrestlers':<12} {'Matches':<12} {'μ (avg)':<12} {'Description'}")
@@ -372,6 +506,9 @@ def compute_tier_averages(
                 desc = f"Rank {start}"
             print(f"{desc:<15} {wrestler_count:<12} {match_count:<12} {mu_val:>11.3f}")
         print("=" * 80)
+    
+    if use_cache:
+        _tier_averages_cache[cache_key] = tier_avgs
     
     return tier_avgs
 
@@ -436,12 +573,13 @@ def shrink_opponent_avg(raw_avg: float, mu_r: float, n: int, k: int = 20) -> flo
 
 
 def load_all_wrestlers_all_weights(season: int, data_dir: str) -> List[Dict]:
-    """Load all wrestlers from all weight class rankings files."""
+    """Load all wrestlers from all weight class full rankings files."""
     data_path = Path(data_dir) / str(season)
     all_wrestlers = []
     
     for weight in [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]:
         rankings_file = data_path / f"rankings_{weight}.json"
+        
         if not rankings_file.exists():
             continue
         
@@ -458,27 +596,30 @@ def load_all_wrestlers_all_weights(season: int, data_dir: str) -> List[Dict]:
 
 
 def load_all_wrestlers(season: int, weight: int, data_dir: str) -> List[Dict]:
-    """Load all wrestlers from rankings file for a specific weight."""
-    rankings_file = Path(data_dir) / str(season) / f"rankings_{weight}.json"
+    """Load all wrestlers from full rankings file for a specific weight."""
+    data_path = Path(data_dir) / str(season)
+    rankings_file = data_path / f"rankings_{weight}.json"
     
-    if not rankings_file.exists():
-        return []
+    if rankings_file.exists():
+        with rankings_file.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("rankings", [])
     
-    with rankings_file.open("r", encoding="utf-8") as f:
-        data = json.load(f)
-    
-    return data.get("rankings", [])
+    return []
 
 
 def get_wrestler_name(wrestler_id: str, rank_map: Dict[str, int], data_dir: str, season: int, weight: int) -> str:
-    """Get wrestler name from rankings."""
-    rankings_file = Path(data_dir) / str(season) / f"rankings_{weight}.json"
+    """Get wrestler name from full rankings file."""
+    data_path = Path(data_dir) / str(season)
+    rankings_file = data_path / f"rankings_{weight}.json"
+    
     if rankings_file.exists():
         with rankings_file.open("r", encoding="utf-8") as f:
             data = json.load(f)
         for entry in data.get("rankings", []):
             if entry.get("wrestler_id") == wrestler_id:
                 return entry.get("name", "Unknown")
+    
     return "Unknown"
 
 
@@ -547,18 +688,14 @@ def prompt_for_wrestler_selection(matches: List[Dict]) -> Optional[Dict]:
 
 
 def get_wrestler_weight(wrestler_id: str, season: int, data_dir: str) -> Optional[int]:
-    """Get wrestler's weight class by searching all weight files."""
+    """Get wrestler's weight class by searching all weight files. Checks both starters and full rankings files."""
     for weight in [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]:
-        rankings_file = Path(data_dir) / str(season) / f"rankings_{weight}.json"
-        if not rankings_file.exists():
-            continue
-        
         try:
-            with rankings_file.open("r", encoding="utf-8") as f:
-                data = json.load(f)
-            for entry in data.get("rankings", []):
-                if entry.get("wrestler_id") == wrestler_id:
-                    return weight
+            rank_map = load_rankings(season, weight, data_dir, use_cache=True)
+            if wrestler_id in rank_map:
+                return weight
+        except FileNotFoundError:
+            continue
         except Exception:
             continue
     
@@ -616,9 +753,9 @@ def main() -> None:
     
     # Load rankings
     print("\nLoading rankings...")
-    rank_map = load_rankings(args.season, weight, args.data_dir)
+    rank_map = load_rankings(args.season, weight, args.data_dir, use_cache=True)
     max_rank = rank_map.get("__max_rank__", 200)
-    print(f"Loaded {len(rank_map) - 1} ranked wrestlers (max rank: {max_rank})")
+    print(f"Loaded {len(rank_map) - 1} ranked wrestlers at weight {weight} (max rank: {max_rank})")
     
     # Get wrestler name
     wrestler_name = get_wrestler_name(wrestler_id, rank_map, args.data_dir, args.season, weight)
@@ -633,40 +770,111 @@ def main() -> None:
         print("No matches found for this wrestler.")
         return
     
-    # Collect opponent IDs
-    opponent_ids = set()
+    # Collect opponent IDs and their weight classes using flexible search
+    print("\nFinding opponent weight classes and ranks...")
+    opponent_weight_map = {}  # opponent_id -> weight_class
+    opponent_rank_map = {}     # opponent_id -> rank
+    opponent_errors = []
+    
     for match in wrestler_matches:
-        opp_id, _ = get_opponent_info(match, wrestler_id, rank_map)
-        if opp_id:
-            opponent_ids.add(opp_id)
+        try:
+            opp_id, opp_weight, opp_rank = get_opponent_info(
+                match, wrestler_id, args.season, weight, args.data_dir
+            )
+            if opp_id:
+                opponent_weight_map[opp_id] = opp_weight
+                opponent_rank_map[opp_id] = opp_rank
+        except ValueError as e:
+            opponent_errors.append(str(e))
+            continue
     
-    print(f"Found {len(opponent_ids)} unique opponents")
+    if opponent_errors:
+        print("\nERROR: Failed to find opponents:")
+        for error in opponent_errors:
+            print(f"  {error}")
+        raise ValueError("One or more opponents not found in rankings. Cannot compute MV.")
     
-    # Load all matches for opponents
+    print(f"Found {len(opponent_weight_map)} unique opponents")
+    
+    # Load all matches for opponents from their respective weight classes
     print("\nLoading opponent matches...")
-    opponent_matches = load_all_matches_for_opponents(args.season, weight, opponent_ids, args.data_dir)
+    opponent_matches = load_all_matches_for_opponents(
+        args.season, opponent_weight_map, args.data_dir
+    )
     print(f"Loaded matches for {len(opponent_matches)} opponents")
     
-    # Compute raw opponent averages
+    # Compute raw opponent averages (using opponent's own weight class rankings)
     print("\nComputing opponent raw averages...")
-    opponent_raw_avgs = compute_opponent_raw_averages(opponent_matches, rank_map)
+    # Build rank maps for each weight class that appears
+    weight_rank_maps = {}
+    for opp_id, opp_weight in opponent_weight_map.items():
+        if opp_weight not in weight_rank_maps:
+            weight_rank_maps[opp_weight] = load_rankings(
+                args.season, opp_weight, args.data_dir, use_cache=True
+            )
     
-    # Compute tier averages (from ALL matches by ALL wrestlers in each tier)
+    # Compute raw averages using correct rank map for each opponent
+    opponent_raw_avgs = {}
+    for opp_id, opp_weight in opponent_weight_map.items():
+        opp_rank_map = weight_rank_maps[opp_weight]
+        opp_match_list = opponent_matches.get(opp_id, [])
+        if not opp_match_list:
+            opponent_raw_avgs[opp_id] = 0.0
+            continue
+        
+        total_signed = 0.0
+        count = 0
+        for match in opp_match_list:
+            w1_id = match.get("wrestler1_id")
+            w2_id = match.get("wrestler2_id")
+            winner_id = match.get("winner_id")
+            result = match.get("result", "")
+            
+            if "MFF" in result.upper() or "FORFEIT" in result.upper():
+                continue
+            
+            if w1_id == opp_id:
+                is_winner = (winner_id == opp_id)
+            elif w2_id == opp_id:
+                is_winner = (winner_id == opp_id)
+            else:
+                continue
+            
+            result_type = classify_result_type(result)
+            signed = result_to_signed(result_type, is_winner)
+            if signed is not None:
+                total_signed += signed
+                count += 1
+        
+        if count > 0:
+            opponent_raw_avgs[opp_id] = total_signed / count
+        else:
+            opponent_raw_avgs[opp_id] = 0.0
+    
+    # Compute tier averages for each weight class that appears (cached)
     print("\nComputing tier averages...")
-    tier_avgs = compute_tier_averages(args.season, weight, rank_map, args.data_dir, debug=True)
+    tier_avgs_by_weight = {}
+    for opp_weight in set(opponent_weight_map.values()):
+        opp_rank_map = weight_rank_maps[opp_weight]
+        tier_avgs_by_weight[opp_weight] = compute_tier_averages(
+            args.season, opp_weight, opp_rank_map, args.data_dir, debug=(opp_weight == weight)
+        )
     
-    # Show expected values at each anchor point
+    # Show expected values at each anchor point (for primary weight class)
+    primary_tier_avgs = tier_avgs_by_weight.get(weight, {})
+    primary_max_rank = weight_rank_maps[weight].get("__max_rank__", 200)
+    
     print("\n" + "=" * 80)
-    print("EXPECTED VALUES AT ANCHOR NODES")
+    print(f"EXPECTED VALUES AT ANCHOR NODES (Weight {weight})")
     print("=" * 80)
     print("These are the μ(r) values at each major rank anchor point.")
     print("Values represent the average observed performance for wrestlers in each tier.")
     print("(Values are interpolated between anchors for intermediate ranks)")
     print("-" * 80)
     anchors = [1, 10, 30, 50, 100, 150, 200]
-    anchors = [a for a in anchors if a <= max_rank]
-    if anchors[-1] < max_rank:
-        anchors.append(max_rank)
+    anchors = [a for a in anchors if a <= primary_max_rank]
+    if anchors[-1] < primary_max_rank:
+        anchors.append(primary_max_rank)
     
     print(f"{'Anchor Rank':<15} {'μ(r)':<12} {'Tier Range':<15} {'Description'}")
     print("-" * 80)
@@ -676,19 +884,19 @@ def main() -> None:
         if i == 0:
             # First anchor uses first tier
             tier_key = (anchors[0], anchors[1])
-            mu_val = tier_avgs.get(tier_key, 0.0)
+            mu_val = primary_tier_avgs.get(tier_key, 0.0)
             print(f"Rank {anchor:>3}        {mu_val:>11.3f}  {anchors[0]}-{anchors[1]:<10}  Start of curve")
         elif i == len(anchors) - 1:
             # Last anchor uses last tier
             tier_key = (anchors[i-1], anchors[i])
-            mu_val = tier_avgs.get(tier_key, 0.0)
+            mu_val = primary_tier_avgs.get(tier_key, 0.0)
             print(f"Rank {anchor:>3}        {mu_val:>11.3f}  {anchors[i-1]}-{anchors[i]:<10}  End of curve")
         else:
             # Middle anchors: show both adjacent tiers and interpolate
             prev_tier = (anchors[i-1], anchors[i])
             next_tier = (anchors[i], anchors[i+1])
-            mu_prev = tier_avgs.get(prev_tier, 0.0)
-            mu_next = tier_avgs.get(next_tier, 0.0)
+            mu_prev = primary_tier_avgs.get(prev_tier, 0.0)
+            mu_next = primary_tier_avgs.get(next_tier, 0.0)
             # At the anchor point, use the value from the tier it starts
             mu_val = mu_next
             print(f"Rank {anchor:>3}        {mu_val:>11.3f}  {anchors[i]}-{anchors[i+1]:<10}  Transition point")
@@ -698,7 +906,7 @@ def main() -> None:
     print("\n" + "=" * 80)
     print("PER-MATCH ANALYSIS")
     print("=" * 80)
-    print(f"{'Match':<6} {'Opponent':<25} {'Rank':<6} {'n':<4} {'RawAvg':<8} {'μ(r)':<8} {'Shrunk':<8} {'ExpVal':<8} {'Result':<8} {'MV':<8} {'Running Avg':<12}")
+    print(f"{'Match':<6} {'Opponent':<25} {'Wt':<4} {'Rank':<6} {'n':<4} {'RawAvg':<8} {'μ(r)':<8} {'Shrunk':<8} {'ExpVal':<8} {'Result':<8} {'MV':<8} {'Running Avg':<12}")
     print("-" * 80)
     
     mv_values = []
@@ -713,14 +921,22 @@ def main() -> None:
             print(f"{idx:<6} {'FORFEIT (skipped)':<25}")
             continue
         
-        # Get opponent info
-        opp_id, opp_rank = get_opponent_info(match, wrestler_id, rank_map)
+        # Get opponent info (with weight class)
+        try:
+            opp_id, opp_weight, opp_rank = get_opponent_info(
+                match, wrestler_id, args.season, weight, args.data_dir
+            )
+        except ValueError as e:
+            print(f"{idx:<6} {'ERROR: ' + str(e):<25}")
+            raise
+        
         if not opp_id:
-            print(f"{idx:<6} {'UNKNOWN OPPONENT':<25}")
+            print(f"{idx:<6} {'NO OPPONENT ID':<25}")
             continue
         
-        # Get opponent name
-        opp_name = get_wrestler_name(opp_id, rank_map, args.data_dir, args.season, weight)
+        # Get opponent name (from their weight class)
+        opp_rank_map = weight_rank_maps[opp_weight]
+        opp_name = get_wrestler_name(opp_id, opp_rank_map, args.data_dir, args.season, opp_weight)
         opp_name = opp_name[:24]  # Truncate for display
         
         # Get opponent match count
@@ -730,12 +946,16 @@ def main() -> None:
         # Get raw average
         opp_raw_avg = opponent_raw_avgs.get(opp_id, 0.0)
         
-        # Interpolate μ(r)
-        mu_r, mu_debug = interpolate_mu(opp_rank, tier_avgs, max_rank, debug=(idx <= 3))
+        # Get tier averages for opponent's weight class
+        opp_tier_avgs = tier_avgs_by_weight[opp_weight]
+        opp_max_rank = opp_rank_map.get("__max_rank__", 200)
+        
+        # Interpolate μ(r) using opponent's weight class tier averages
+        mu_r, mu_debug = interpolate_mu(opp_rank, opp_tier_avgs, opp_max_rank, debug=(idx <= 3))
         
         # Debug output for first few matches
         if idx <= 3 and mu_debug:
-            print(f"\n[DEBUG Match {idx}] μ(r) calculation for rank {opp_rank}:")
+            print(f"\n[DEBUG Match {idx}] μ(r) calculation for rank {opp_rank} (weight {opp_weight}):")
             if mu_debug["interpolated"]:
                 band = mu_debug["band"]
                 print(f"  Rank {opp_rank} is between anchors {band[0]} and {band[1]}")
@@ -758,7 +978,7 @@ def main() -> None:
         result_signed = result_to_signed(result_type, is_winner)
         
         if result_signed is None:
-            print(f"{idx:<6} {opp_name:<25} {opp_rank:<6} {opp_n:<4} {'UNKNOWN':<8}")
+            print(f"{idx:<6} {opp_name:<25} {opp_weight:<4} {opp_rank:<6} {opp_n:<4} {'UNKNOWN':<8}")
             continue
         
         # MV for this match
@@ -768,7 +988,7 @@ def main() -> None:
         running_avg = running_sum / len(mv_values)
         
         # Print row
-        print(f"{idx:<6} {opp_name:<25} {opp_rank:<6} {opp_n:<4} "
+        print(f"{idx:<6} {opp_name:<25} {opp_weight:<4} {opp_rank:<6} {opp_n:<4} "
               f"{opp_raw_avg:>7.2f} {mu_r:>7.2f} {opp_shrunk:>7.2f} {expected_signed:>7.2f} "
               f"{result_signed:>7.1f} {mv_match:>7.2f} {running_avg:>11.2f}")
     

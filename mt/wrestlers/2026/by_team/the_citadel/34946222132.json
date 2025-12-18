@@ -24,7 +24,14 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.407,
+      "matches": 1,
+      "rank_weight": 28,
+      "rank_overall": 206,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -47,7 +54,8 @@
       "method": "TF",
       "score": "16-0",
       "duration": "5:00",
-      "event": "vs. The Citadel"
+      "event": "vs. The Citadel",
+      "mv_impact": 2.41
     }
   ]
 }

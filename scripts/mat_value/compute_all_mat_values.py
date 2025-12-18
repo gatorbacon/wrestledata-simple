@@ -32,6 +32,7 @@ try:
         interpolate_mu,
         shrink_opponent_avg,
         get_wrestler_name,
+        find_opponent_weight_and_rank,
     )
 except ImportError as e:
     print(f"Error importing from compute_mat_value.py: {e}")
@@ -52,32 +53,98 @@ def compute_mv_for_wrestler(
     """
     Compute MV for a single wrestler and per-match MV impact.
     
+    Uses flexible opponent search across all weight classes.
+    
     Returns:
         - Tuple of (mv_data_dict, matches_with_impact)
         - mv_data_dict: dict with mv_avg and matches, or None if no valid matches
         - matches_with_impact: list of match dicts with mv_impact field added
     """
-    # Load wrestler's matches
+    # Load wrestler's matches from ALL weight classes
     wrestler_matches = load_wrestler_matches(season, weight, wrestler_id, data_dir)
     
     if not wrestler_matches:
         return None, []
     
-    # Collect opponent IDs
-    opponent_ids = set()
-    for match in wrestler_matches:
-        opp_id, _ = get_opponent_info(match, wrestler_id, rank_map)
-        if opp_id:
-            opponent_ids.add(opp_id)
+    # Collect opponent IDs and their weight classes using flexible search
+    opponent_weight_map = {}  # opponent_id -> weight_class
+    opponent_rank_map = {}     # opponent_id -> rank
     
-    if not opponent_ids:
+    for match in wrestler_matches:
+        try:
+            opp_id, opp_weight, opp_rank = get_opponent_info(
+                match, wrestler_id, season, weight, data_dir
+            )
+            if opp_id:
+                opponent_weight_map[opp_id] = opp_weight
+                opponent_rank_map[opp_id] = opp_rank
+        except ValueError as e:
+            # Opponent not found - halt with error
+            raise ValueError(
+                f"Failed to find opponent for wrestler {wrestler_id} (weight {weight}): {e}"
+            )
+    
+    if not opponent_weight_map:
         return None, []
     
-    # Load all matches for opponents
-    opponent_matches = load_all_matches_for_opponents(season, weight, opponent_ids, data_dir)
+    # Load all matches for opponents from their respective weight classes
+    opponent_matches = load_all_matches_for_opponents(
+        season, opponent_weight_map, data_dir
+    )
     
-    # Compute raw opponent averages
-    opponent_raw_avgs = compute_opponent_raw_averages(opponent_matches, rank_map)
+    # Build rank maps for each weight class that appears
+    weight_rank_maps = {}
+    for opp_id, opp_weight in opponent_weight_map.items():
+        if opp_weight not in weight_rank_maps:
+            weight_rank_maps[opp_weight] = load_rankings(
+                season, opp_weight, data_dir, use_cache=True
+            )
+    
+    # Compute raw opponent averages using correct rank map for each opponent
+    opponent_raw_avgs = {}
+    for opp_id, opp_weight in opponent_weight_map.items():
+        opp_rank_map = weight_rank_maps[opp_weight]
+        opp_match_list = opponent_matches.get(opp_id, [])
+        if not opp_match_list:
+            opponent_raw_avgs[opp_id] = 0.0
+            continue
+        
+        total_signed = 0.0
+        count = 0
+        for match in opp_match_list:
+            w1_id = match.get("wrestler1_id")
+            w2_id = match.get("wrestler2_id")
+            winner_id = match.get("winner_id")
+            result = match.get("result", "")
+            
+            if "MFF" in result.upper() or "FORFEIT" in result.upper():
+                continue
+            
+            if w1_id == opp_id:
+                is_winner = (winner_id == opp_id)
+            elif w2_id == opp_id:
+                is_winner = (winner_id == opp_id)
+            else:
+                continue
+            
+            result_type = classify_result_type(result)
+            signed = result_to_signed(result_type, is_winner)
+            if signed is not None:
+                total_signed += signed
+                count += 1
+        
+        if count > 0:
+            opponent_raw_avgs[opp_id] = total_signed / count
+        else:
+            opponent_raw_avgs[opp_id] = 0.0
+    
+    # Compute tier averages for each weight class that appears (cached)
+    tier_avgs_by_weight = {}
+    for opp_weight in set(opponent_weight_map.values()):
+        opp_rank_map = weight_rank_maps[opp_weight]
+        tier_avgs_by_weight[opp_weight] = compute_tier_averages(
+            season, opp_weight, opp_rank_map, data_dir, debug=False, use_cache=True
+        )
     
     # Process each match
     mv_values = []
@@ -92,8 +159,16 @@ def compute_mv_for_wrestler(
         if "MFF" in result.upper() or "FORFEIT" in result.upper():
             continue
         
-        # Get opponent info
-        opp_id, opp_rank = get_opponent_info(match, wrestler_id, rank_map)
+        # Get opponent info (with weight class)
+        try:
+            opp_id, opp_weight, opp_rank = get_opponent_info(
+                match, wrestler_id, season, weight, data_dir
+            )
+        except ValueError as e:
+            raise ValueError(
+                f"Failed to find opponent for wrestler {wrestler_id} (weight {weight}): {e}"
+            )
+        
         if not opp_id:
             continue
         
@@ -104,8 +179,12 @@ def compute_mv_for_wrestler(
         opp_match_list = opponent_matches.get(opp_id, [])
         opp_n = len([m for m in opp_match_list if "MFF" not in m.get("result", "").upper()])
         
-        # Interpolate μ(r)
-        mu_r, _ = interpolate_mu(opp_rank, tier_avgs, max_rank, debug=False)
+        # Get tier averages for opponent's weight class
+        opp_tier_avgs = tier_avgs_by_weight[opp_weight]
+        opp_max_rank = weight_rank_maps[opp_weight].get("__max_rank__", 200)
+        
+        # Interpolate μ(r) using opponent's weight class tier averages
+        mu_r, _ = interpolate_mu(opp_rank, opp_tier_avgs, opp_max_rank, debug=False)
         
         # Shrink
         opp_shrunk = shrink_opponent_avg(opp_raw_avg, mu_r, opp_n)
@@ -169,30 +248,13 @@ def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = Non
     for weight in weights:
         print(f"\nProcessing weight {weight}...")
         
-        # Load rankings
+        # Load rankings for this weight (for getting wrestler list)
         try:
-            rank_map = load_rankings(season, weight, data_dir)
+            rank_map = load_rankings(season, weight, data_dir, use_cache=True)
             max_rank = rank_map.get("__max_rank__", 200)
         except FileNotFoundError:
             print(f"  Skipping weight {weight} (rankings file not found)")
             continue
-        
-        # Compute tier averages (once per weight)
-        print(f"  Computing tier averages for weight {weight}...")
-        tier_avgs = compute_tier_averages(season, weight, rank_map, data_dir, debug=False)
-        
-        # Load all matches for this weight
-        all_matches = []
-        for pattern in [f"weight_class_{weight}.json", f"weight_class_{weight}A.json"]:
-            wc_file = data_path / pattern
-            if not wc_file.exists():
-                continue
-            try:
-                with wc_file.open("r", encoding="utf-8") as f:
-                    wc_data = json.load(f)
-                all_matches.extend(wc_data.get("matches", []))
-            except Exception:
-                continue
         
         # Get all wrestler IDs from rankings
         wrestler_ids = [wid for wid in rank_map.keys() if wid != "__max_rank__"]
@@ -200,25 +262,33 @@ def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = Non
         print(f"  Processing {len(wrestler_ids)} wrestlers...")
         
         processed = 0
+        errors = 0
         for wrestler_id in wrestler_ids:
-            mv_data, matches_with_impact = compute_mv_for_wrestler(
-                wrestler_id,
-                season,
-                weight,
-                data_dir,
-                rank_map,
-                tier_avgs,
-                max_rank,
-                all_matches,
-            )
-            
-            if mv_data:
-                all_mv_data[wrestler_id] = mv_data
-                if matches_with_impact:
-                    match_impact_cache[wrestler_id] = matches_with_impact
-                processed += 1
+            try:
+                mv_data, matches_with_impact = compute_mv_for_wrestler(
+                    wrestler_id,
+                    season,
+                    weight,
+                    data_dir,
+                    rank_map,
+                    {},  # tier_avgs no longer used (computed per opponent weight)
+                    max_rank,
+                    [],  # all_matches no longer used (loaded per opponent weight)
+                )
+                
+                if mv_data:
+                    all_mv_data[wrestler_id] = mv_data
+                    if matches_with_impact:
+                        match_impact_cache[wrestler_id] = matches_with_impact
+                    processed += 1
+            except ValueError as e:
+                print(f"  ERROR for wrestler {wrestler_id}: {e}")
+                errors += 1
+                continue
         
         print(f"  Computed MV for {processed} wrestlers at weight {weight}")
+        if errors > 0:
+            print(f"  Errors encountered: {errors}")
     
     print("\n" + "=" * 80)
     print(f"Total: Computed MV for {len(all_mv_data)} wrestlers")

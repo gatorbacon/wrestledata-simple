@@ -31,6 +31,12 @@
                     Individual <span class="submenu-arrow">▸</span>
                   </button>
                   <div class="dropdown-submenu-content">
+                    <a href="/rankings.html" class="dropdown-item">
+                      <span class="dropdown-item-label">Rankings (Traditional)</span>
+                    </a>
+                    <a href="/matrix.html" class="dropdown-item">
+                      <span class="dropdown-item-label">Rankings Matrix</span>
+                    </a>
                     <a href="/leaderboards/mat_value.html" class="dropdown-item">
                       <span class="dropdown-item-label">Mat Value (MV)</span>
                       <span class="dropdown-item-subtext">Individual performance vs expectation</span>

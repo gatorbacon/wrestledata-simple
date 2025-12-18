@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.393,
+      "matches": 7,
+      "rank_weight": 120,
+      "rank_overall": 1134,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -57,7 +64,8 @@
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "vs. Kent State"
+      "event": "vs. Kent State",
+      "mv_impact": -0.53
     },
     {
       "date": "2025-12-11",
@@ -71,7 +79,8 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Kent State"
+      "event": "vs. Kent State",
+      "mv_impact": -0.49
     },
     {
       "date": "2025-12-11",
@@ -85,7 +94,8 @@
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "vs. Kent State"
+      "event": "vs. Kent State",
+      "mv_impact": -5.32
     },
     {
       "date": "2025-11-20",
@@ -99,7 +109,8 @@
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "vs. Ohio State"
+      "event": "vs. Ohio State",
+      "mv_impact": -0.74
     },
     {
       "date": "2025-11-08",
@@ -113,7 +124,8 @@
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "Michigan State Open"
+      "event": "Michigan State Open",
+      "mv_impact": -3.09
     },
     {
       "date": "2025-11-08",
@@ -127,7 +139,8 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Michigan State Open"
+      "event": "Michigan State Open",
+      "mv_impact": 3.1
     },
     {
       "date": "2025-11-08",
@@ -141,7 +154,8 @@
       "method": "DEC",
       "score": "3-2",
       "duration": "10:00",
-      "event": "Michigan State Open"
+      "event": "Michigan State Open",
+      "mv_impact": -2.67
     }
   ]
 }

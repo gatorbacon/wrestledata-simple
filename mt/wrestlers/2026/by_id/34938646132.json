@@ -26,10 +26,10 @@
     "techs": 3,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 0.422,
-      "matches": 9,
-      "rank_weight": 70,
-      "rank_overall": 617,
+      "mv_avg": 0.135,
+      "matches": 12,
+      "rank_weight": 82,
+      "rank_overall": 720,
       "version": "v1"
     }
   },
@@ -194,7 +194,8 @@
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -3.24
     },
     {
       "date": "2025-11-02",
@@ -208,7 +209,8 @@
       "method": "FALL",
       "score": null,
       "duration": "4:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 5.61
     },
     {
       "date": "2025-11-02",
@@ -222,7 +224,8 @@
       "method": "TF",
       "score": "18-1",
       "duration": "4:45",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -4.55
     }
   ],
   "bonus": {

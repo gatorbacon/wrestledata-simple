@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.638,
+      "matches": 1,
+      "rank_weight": 22,
+      "rank_overall": 177,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -47,7 +54,8 @@
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "vs. Bloomsburg"
+      "event": "vs. Bloomsburg",
+      "mv_impact": 2.64
     }
   ]
 }
