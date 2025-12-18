@@ -73,6 +73,27 @@
               </div>
             </div>
 
+            <!-- Leaderboards Dropdown -->
+            <div class="nav-item nav-item--dropdown" id="nav-leaderboards">
+              <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
+                Leaderboards <span class="dropdown-arrow">▾</span>
+              </button>
+              <div class="dropdown-menu" id="leaderboards-menu">
+                <a href="/leaderboards/leaderboard_pins.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Pins</span>
+                </a>
+                <a href="/leaderboards/leaderboard_techs.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Tech Falls</span>
+                </a>
+                <a href="/leaderboards/leaderboard_majors.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Major Decisions</span>
+                </a>
+                <a href="/leaderboards/leaderboard_wins.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Wins</span>
+                </a>
+              </div>
+            </div>
+
             <!-- Tournaments (Disabled/Placeholder) -->
             <div class="nav-item nav-item--disabled">
               <span class="nav-link nav-link--disabled">Tournaments</span>
