@@ -498,10 +498,10 @@ function renderRemainingRosterTable(remaining) {
     // Wrestler name (linked)
     const nameTd = document.createElement("td");
     if (profile && profile.wrestler_id) {
-      const a = document.createElement("a");
-      a.href = `/wrestler.html?id=${profile.wrestler_id}`;
+    const a = document.createElement("a");
+    a.href = `/wrestler.html?id=${profile.wrestler_id}`;
       a.textContent = profile.name || "Unknown";
-      nameTd.appendChild(a);
+    nameTd.appendChild(a);
     } else {
       nameTd.textContent = "—";
     }

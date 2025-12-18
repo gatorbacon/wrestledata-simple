@@ -115,9 +115,8 @@ a:hover {
 .site-header {
   background: var(--panel-2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: static;
+  top: auto;
   width: 100%;
 }
 
@@ -719,15 +718,42 @@ a:hover {
   padding: var(--pad-lg);
 }
 
-.matrix-header {
-  margin-bottom: var(--pad-lg);
+/* Weight class tabs */
+.weight-tabs {
+  display: flex;
+  gap: 14px;
+  padding: 10px 0 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 12px;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-.matrix-header h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text);
-  margin: 0 0 var(--pad-md) 0;
+.weight-tab {
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  padding: 4px 6px;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.weight-tab:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.weight-tab.active {
+  color: #ffffff;
+  border-bottom: 2px solid #3fd3a4;
+}
+
+/* Mobile safety */
+@media (max-width: 800px) {
+  .weight-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .matrix-meta {
@@ -776,9 +802,9 @@ a:hover {
 }
 
 .matrix-scroll {
-  overflow-x: auto;
-  overflow-y: visible;
   position: relative;
+  overflow: auto; /* both X and Y */
+  max-height: calc(100vh - 80px); /* optional, keeps page usable */
   max-width: 100%;
   /* Optional: fade gradient on right edge */
   mask-image: linear-gradient(to right, black calc(100% - 60px), transparent 100%);
@@ -797,8 +823,9 @@ a:hover {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 4;
-  background: var(--bg);
+  z-index: 11;
+  background: rgba(10, 14, 18, 0.95);
+  backdrop-filter: blur(6px);
   border-right: 1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   width: 240px;
@@ -846,8 +873,10 @@ a:hover {
 .matrix-col-header {
   position: sticky;
   top: 0;
-  z-index: 2;
-  background: var(--bg);
+  z-index: 10;
+  background: rgba(10, 14, 18, 0.95);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -857,7 +886,6 @@ a:hover {
   font-weight: 600;
   color: var(--muted);
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   transition: background 0.12s ease;
 }
 
@@ -1424,12 +1452,13 @@ thead {
   overflow: visible;
 }
 
-/* Sticky table header */
+/* Sticky table header (only within scroll container) */
 table thead th {
   position: sticky;
   top: 0;
-  z-index: 20;
-  background: var(--panel-2);
+  z-index: 5;
+  background: rgba(10, 14, 18, 0.95);
+  backdrop-filter: blur(6px);
 }
 
 th {
@@ -1442,7 +1471,6 @@ th {
   padding: 8px 10px;
   text-align: left;
   border-bottom: 1px solid var(--border);
-  position: relative;
   overflow: visible;
 }
 

@@ -241,7 +241,7 @@ function safe(value, formatter) {
     const weightClass = data.weight_class;
     const mvSection = document.getElementById("mv-section");
     mvSection.innerHTML = "";
-    
+  
     // Section header
     const headerRow = document.createElement("div");
     headerRow.className = "section-header";

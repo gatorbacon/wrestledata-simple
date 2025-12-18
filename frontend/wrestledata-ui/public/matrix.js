@@ -65,7 +65,7 @@ function getCellStyleInfo(cellData, rowWrestlerId, colWrestlerId) {
     return {
       direction: direction,
       resultType: "CO",
-      alpha: 0.25,
+      alpha: 0.09,
       isCO: true
     };
   } else if (results.length > 0) {
@@ -185,16 +185,11 @@ function createTooltipContent(cellData, rowWrestler, colWrestler) {
   return null;
 }
 
-// Format wrestler name for display (short)
+// Format wrestler name for display (full name)
 function formatWrestlerName(name) {
   if (!name) return "—";
-  
-  // Use last name if available
-  const parts = name.trim().split(/\s+/);
-  if (parts.length > 1) {
-    return parts[parts.length - 1];
-  }
-  return name;
+  // Return full name as-is
+  return name.trim();
 }
 
 // Format wrestler name for column header (initials or short)
@@ -225,12 +220,19 @@ function renderMatrix(matrixData) {
   const wrestlers = matrixData.wrestlers || [];
   const matrix = matrixData.matrix || {};
   const season = matrixData.season || "—";
-  const weight = matrixData.weight || "—";
+  const weight = matrixData.weight || "125";
   
-  // Update header
-  document.getElementById("matrix-title").textContent = `Rankings Matrix – ${weight} lbs`;
-  document.getElementById("matrix-season").textContent = `Season: ${season}`;
-  document.getElementById("matrix-wrestler-count").textContent = `Wrestlers: ${wrestlers.length}`;
+  // Update active tab based on current weight
+  const tabs = document.querySelectorAll('.weight-tab');
+  tabs.forEach(tab => {
+    const href = tab.getAttribute('href');
+    const tabWeight = href.match(/weight=(\d+)/)?.[1];
+    if (tabWeight === weight.toString()) {
+      tab.classList.add('active');
+    } else {
+      tab.classList.remove('active');
+    }
+  });
   
   const grid = document.getElementById("matrix-grid");
   grid.innerHTML = "";

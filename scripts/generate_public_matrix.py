@@ -263,9 +263,10 @@ def load_relationships(season: int, weight: int, data_dir: str = "mt/rankings_da
         return json.load(f)
 
 
-def load_rankings(season: int, weight: int, data_dir: str = "mt/rankings_data") -> Dict:
+def load_rankings(season: int, weight: int, data_dir: str = "mt/rankings_data", starters_only: bool = False) -> Dict:
     """Load rankings JSON file."""
-    rankings_file = Path(data_dir) / str(season) / f"rankings_{weight}.json"
+    filename = f"rankings_starters_{weight}.json" if starters_only else f"rankings_{weight}.json"
+    rankings_file = Path(data_dir) / str(season) / filename
     
     if not rankings_file.exists():
         raise FileNotFoundError(f"Rankings file not found: {rankings_file}")
@@ -274,11 +275,12 @@ def load_rankings(season: int, weight: int, data_dir: str = "mt/rankings_data") 
         return json.load(f)
 
 
-def build_wrestler_list(rankings_data: Dict, wrestlers_data: Dict) -> List[Dict]:
+def build_wrestler_list(rankings_data: Dict, wrestlers_data: Dict, starters_only: bool = False) -> List[Dict]:
     """
     Build ordered list of wrestlers from rankings.
     
     Ranked wrestlers first (by rank), then unranked wrestlers.
+    If starters_only is True, exclude all non-starters (including unranked).
     """
     rankings = rankings_data.get('rankings', [])
     wrestlers_dict = wrestlers_data.get('wrestlers', {})
@@ -293,6 +295,10 @@ def build_wrestler_list(rankings_data: Dict, wrestlers_data: Dict) -> List[Dict]
         if not wrestler_id:
             continue
         
+        # If starters_only, skip non-starters
+        if starters_only and not entry.get('is_starter', False):
+            continue
+        
         wrestler_info = wrestlers_dict.get(wrestler_id, {})
         
         ranked.append({
@@ -304,20 +310,22 @@ def build_wrestler_list(rankings_data: Dict, wrestlers_data: Dict) -> List[Dict]
         })
     
     # Build unranked list (wrestlers in relationships but not in rankings)
-    ranked_ids = {w['id'] for w in ranked}
-    
-    for wrestler_id, wrestler_info in wrestlers_dict.items():
-        if wrestler_id not in ranked_ids:
-            unranked.append({
-                "id": wrestler_id,
-                "name": wrestler_info.get('name', 'Unknown'),
-                "team": wrestler_info.get('team', 'Unknown'),
-                "rank": None,
-                "starter": False
-            })
-    
-    # Sort unranked by name for consistency
-    unranked.sort(key=lambda x: x['name'])
+    # Skip this entirely if starters_only is True
+    if not starters_only:
+        ranked_ids = {w['id'] for w in ranked}
+        
+        for wrestler_id, wrestler_info in wrestlers_dict.items():
+            if wrestler_id not in ranked_ids:
+                unranked.append({
+                    "id": wrestler_id,
+                    "name": wrestler_info.get('name', 'Unknown'),
+                    "team": wrestler_info.get('team', 'Unknown'),
+                    "rank": None,
+                    "starter": False
+                })
+        
+        # Sort unranked by name for consistency
+        unranked.sort(key=lambda x: x['name'])
     
     return ranked + unranked
 
@@ -396,19 +404,28 @@ def generate_public_matrix(
     season: int,
     weight: int,
     data_dir: str = "mt/rankings_data",
-    output_dir: str = "frontend/wrestledata-ui/public/matrix"
+    output_dir: str = "frontend/wrestledata-ui/public/matrix",
+    starters_only: bool = False
 ) -> Dict:
     """
     Generate public matrix JSON for a single weight class.
+    
+    Args:
+        season: Season year
+        weight: Weight class
+        data_dir: Directory containing relationships and rankings files
+        output_dir: Directory to save output files
+        starters_only: If True, use rankings_starters files instead of rankings files
     
     Returns: The matrix data dictionary
     """
     # Load data
     relationships_data = load_relationships(season, weight, data_dir)
-    rankings_data = load_rankings(season, weight, data_dir)
+    rankings_data = load_rankings(season, weight, data_dir, starters_only)
     
     # Build wrestler list (ordered by rank)
-    wrestler_list = build_wrestler_list(rankings_data, relationships_data)
+    # If starters_only, exclude all non-starters
+    wrestler_list = build_wrestler_list(rankings_data, relationships_data, starters_only)
     
     # Build matrix
     matrix = build_matrix(relationships_data, wrestler_list)
@@ -429,13 +446,16 @@ def save_public_matrix(
     matrix_data: Dict,
     season: int,
     weight: int,
-    output_dir: str = "frontend/wrestledata-ui/public/matrix"
+    output_dir: str = "frontend/wrestledata-ui/public/matrix",
+    starters_only: bool = False
 ) -> Path:
     """Save public matrix JSON to file."""
     output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
-    output_file = output_path / f"public_matrix_{season}_{weight}.json"
+    # Always use same filename format (no suffix)
+    filename = f"public_matrix_{season}_{weight}.json"
+    output_file = output_path / filename
     
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(matrix_data, f, indent=2, ensure_ascii=False)
@@ -468,6 +488,11 @@ def main():
         default='frontend/wrestledata-ui/public/matrix',
         help='Directory to save output files'
     )
+    parser.add_argument(
+        '--starters-only',
+        action='store_true',
+        help='Use rankings_starters files instead of rankings files (generates starters-only matrix)'
+    )
     
     args = parser.parse_args()
     
@@ -476,7 +501,8 @@ def main():
     if args.weight:
         weights = [args.weight]
     
-    print(f"Generating public matrices for season {args.season}...")
+    mode_str = "starters-only" if args.starters_only else "all wrestlers"
+    print(f"Generating public matrices for season {args.season} ({mode_str})...")
     
     for weight in weights:
         try:
@@ -485,14 +511,16 @@ def main():
                 args.season,
                 weight,
                 args.data_dir,
-                args.output_dir
+                args.output_dir,
+                args.starters_only
             )
             
             output_file = save_public_matrix(
                 matrix_data,
                 args.season,
                 weight,
-                args.output_dir
+                args.output_dir,
+                args.starters_only
             )
             
             wrestler_count = len(matrix_data['wrestlers'])
