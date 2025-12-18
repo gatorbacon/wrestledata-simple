@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>WrestleData — Wrestling Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+</head>
+
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <div class="dashboard-grid">
+      <!-- LEFT COLUMN -->
+      <div class="dashboard-col dashboard-col--left">
+        <!-- Rankings Preview -->
+        <section class="dashboard-section">
+          <div class="section-header">
+            <h2 class="section-title">Rankings</h2>
+            <div class="section-divider-line"></div>
+          </div>
+          
+          <!-- Individual Rankings -->
+          <div class="preview-subsection">
+            <div class="preview-subsection-header">
+              <h3 class="preview-subsection-title">Mat Value (Individual)</h3>
+              <a href="/leaderboards/mat_value.html" class="preview-link">Full Rankings →</a>
+            </div>
+            <div class="preview-table-wrapper">
+              <table class="preview-table" id="mv-preview-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Wrestler</th>
+                    <th>Team</th>
+                    <th class="num">MV</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+          
+          <!-- Team Rankings -->
+          <div class="preview-subsection">
+            <div class="preview-subsection-header">
+              <h3 class="preview-subsection-title">Team Value (xTP)</h3>
+              <a href="/leaderboards/xtp/teams.html" class="preview-link">Full Rankings →</a>
+            </div>
+            <div class="preview-table-wrapper">
+              <table class="preview-table" id="xtp-preview-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th class="num">xTP</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Trending Wrestlers -->
+        <section class="dashboard-section">
+          <div class="section-header">
+            <h2 class="section-title">Trending Wrestlers</h2>
+            <div class="section-divider-line"></div>
+          </div>
+          <div class="preview-table-wrapper">
+            <table class="preview-table" id="trending-table">
+              <thead>
+                <tr>
+                  <th>Wrestler</th>
+                  <th>Team</th>
+                  <th class="num">MV</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+      
+      <!-- CENTER COLUMN -->
+      <div class="dashboard-col dashboard-col--center">
+        <!-- Featured Metric -->
+        <section class="dashboard-section">
+          <div class="section-header">
+            <h2 class="section-title">Mat Value Leaders</h2>
+            <div class="section-divider-line"></div>
+          </div>
+          <div class="preview-table-wrapper">
+            <table class="preview-table preview-table--featured" id="featured-mv-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Wrestler</th>
+                  <th>Team</th>
+                  <th class="num">MV</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+        
+        <!-- Ranking Matrix Preview -->
+        <section class="dashboard-section">
+          <div class="section-header">
+            <h2 class="section-title">Ranking Matrix</h2>
+            <div class="section-divider-line"></div>
+          </div>
+          <div class="preview-subsection-header">
+            <span class="preview-subsection-title">149 lbs</span>
+            <a href="#" class="preview-link">View Full Matrix →</a>
+          </div>
+          <div class="preview-table-wrapper">
+            <table class="preview-table" id="matrix-preview-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Wrestler</th>
+                  <th class="num">MV</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+      
+      <!-- RIGHT COLUMN -->
+      <div class="dashboard-col dashboard-col--right">
+        <!-- Quick Links -->
+        <section class="dashboard-section">
+          <div class="section-header">
+            <h2 class="section-title">Explore</h2>
+            <div class="section-divider-line"></div>
+          </div>
+          <nav class="quick-links">
+            <a href="/leaderboards/mat_value.html" class="quick-link">Mat Value Rankings</a>
+            <a href="/leaderboards/xtp/teams.html" class="quick-link">xTP Team Projections</a>
+            <a href="/wrestlers" class="quick-link">Wrestler Profiles</a>
+            <a href="/teams" class="quick-link">Team Profiles</a>
+            <a href="#" class="quick-link">Ranking Matrix</a>
+          </nav>
+        </section>
+        
+        <!-- About -->
+        <section class="dashboard-section">
+          <div class="section-header">
+            <h2 class="section-title">About</h2>
+            <div class="section-divider-line"></div>
+          </div>
+          <p class="about-text">
+            Analytics-first college wrestling rankings built from match-level data.
+          </p>
+          <a href="/about.html" class="about-link">About WrestleData →</a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="/tooltips.js"></script>
+  <script src="/index.js"></script>
+</body>
+</html>
+
