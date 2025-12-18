@@ -1321,6 +1321,12 @@ a:hover {
   width: 220px;
 }
 
+/* Rankings table — widen MV column */
+#rankings-table .col-mv {
+  min-width: 220px;
+  width: 220px;
+}
+
 /* xTP team leaderboard — widen xTP column only */
 #xtp-team-leaderboard-table .col-xtp {
   min-width: 220px;

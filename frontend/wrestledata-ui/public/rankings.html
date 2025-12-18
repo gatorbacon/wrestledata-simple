@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rankings — WrestleData</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1 id="rankings-title">Rankings</h1>
+      <div class="header-subline" id="season-info">Season 2026</div>
+    </header>
+
+    <section class="section">
+      <!-- Weight tabs -->
+      <div class="weight-tabs" id="weight-tabs">
+        <a class="weight-tab" href="rankings.html?weight=125">125</a>
+        <a class="weight-tab" href="rankings.html?weight=133">133</a>
+        <a class="weight-tab" href="rankings.html?weight=141">141</a>
+        <a class="weight-tab" href="rankings.html?weight=149">149</a>
+        <a class="weight-tab" href="rankings.html?weight=157">157</a>
+        <a class="weight-tab" href="rankings.html?weight=165">165</a>
+        <a class="weight-tab" href="rankings.html?weight=174">174</a>
+        <a class="weight-tab" href="rankings.html?weight=184">184</a>
+        <a class="weight-tab" href="rankings.html?weight=197">197</a>
+        <a class="weight-tab" href="rankings.html?weight=285">285</a>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="rankings-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Team</th>
+              <th>W–L</th>
+              <th>Bonus %</th>
+              <th class="col-mv">MV</th>
+              <th>MV Rank</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/tooltips.js"></script>
+  <script src="/rankings.js"></script>
+</body>
+</html>
+
