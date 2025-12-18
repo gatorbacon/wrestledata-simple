@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "7-4",
-    "vs_ranked": "1-4",
+    "overall": "6-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
-    "vs_top25": "1-2"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 7.29,
@@ -19,9 +19,9 @@
     "pd7": 3.44,
     "si_plus": 102.5,
     "df_plus": 110.2,
-    "apr_plus": 97.7,
+    "apr_plus": 97.4,
     "pin_rate": 0.0,
-    "bonus_rate": 0.429,
+    "bonus_rate": 0.5,
     "majors": 3,
     "techs": 0,
     "pins": 0,
@@ -34,16 +34,11 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 0,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34955787132",
-      "opponent_rank": 21,
-      "opponent_name": "Ethan Riddle",
-      "method": "NC"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34944009132",
       "opponent_rank": 65,
@@ -111,20 +106,6 @@
       "duration": "10:00",
       "event": "vs. Missouri",
       "mv_impact": -1.99
-    },
-    {
-      "date": "2025-11-09",
-      "opponent_id": "34955787132",
-      "opponent_name": "Ethan Riddle",
-      "opponent_team": "Minnesota",
-      "opponent_team_rank": 8,
-      "opponent_weight": 174,
-      "opponent_rank": 21,
-      "result": "W",
-      "method": "DEC",
-      "score": null,
-      "duration": "7:00",
-      "event": "Bison Open 2025"
     },
     {
       "date": "2025-11-09",
@@ -218,8 +199,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 0.3333333333333333,
-    "top33_bonus_ev_shrunk": 0.3131313131313131
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 0.5,
+    "top33_bonus_ev_shrunk": 0.35333333333333333
   }
 }

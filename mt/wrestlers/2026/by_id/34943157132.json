@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "9-2",
-    "vs_ranked": "4-1",
+    "overall": "8-2",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,30 +19,30 @@
     "pd7": 7.26,
     "si_plus": 106.4,
     "df_plus": 111.0,
-    "apr_plus": 102.6,
-    "pin_rate": 0.111,
-    "bonus_rate": 0.444,
+    "apr_plus": 103.4,
+    "pin_rate": 0.125,
+    "bonus_rate": 0.5,
     "majors": 1,
     "techs": 2,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 1.986,
-      "matches": 9,
-      "rank_weight": 32,
-      "rank_overall": 276,
+      "mv_avg": 1.219,
+      "matches": 10,
+      "rank_weight": 47,
+      "rank_overall": 410,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 3,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34943155132",
-      "opponent_rank": 38,
-      "opponent_name": "Laird Root",
-      "method": "NC"
+      "opponent_id": "34935908132",
+      "opponent_rank": 57,
+      "opponent_name": "Tyler-Xavier McKnight",
+      "method": "Dec 4-2"
     },
     "worst_loss": {
       "opponent_id": "34946230132",
@@ -61,10 +61,11 @@
       "opponent_weight": 157,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "Mountaineer Open"
+      "duration": "6:57",
+      "event": "Mountaineer Open",
+      "mv_impact": -5.71
     },
     {
       "date": "2025-11-23",
@@ -94,7 +95,7 @@
       "score": "8-5",
       "duration": "8:15",
       "event": "Mountaineer Open",
-      "mv_impact": 2.97
+      "mv_impact": 2.99
     },
     {
       "date": "2025-11-23",
@@ -139,7 +140,7 @@
       "score": "4-2",
       "duration": "7:00",
       "event": "Southeast Open",
-      "mv_impact": 3.1
+      "mv_impact": 3.11
     },
     {
       "date": "2025-11-02",
@@ -154,21 +155,7 @@
       "score": "5-0",
       "duration": "7:00",
       "event": "Southeast Open",
-      "mv_impact": 3.05
-    },
-    {
-      "date": "2025-11-02",
-      "opponent_id": "34943155132",
-      "opponent_name": "Laird Root",
-      "opponent_team": "North Carolina",
-      "opponent_team_rank": 46,
-      "opponent_weight": 157,
-      "opponent_rank": 38,
-      "result": "W",
-      "method": "DEC",
-      "score": null,
-      "duration": "7:00",
-      "event": "Southeast Open"
+      "mv_impact": 3.06
     },
     {
       "date": "2025-11-02",
@@ -213,7 +200,7 @@
       "score": "5-3",
       "duration": "7:00",
       "event": "Southeast Open",
-      "mv_impact": -2.18
+      "mv_impact": -2.19
     }
   ],
   "bonus": {

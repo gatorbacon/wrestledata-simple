@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 45,
   "record": {
-    "overall": "7-4",
+    "overall": "6-4",
     "vs_ranked": "3-4",
     "vs_top10": "0-2",
     "vs_top25": "0-2"
@@ -19,9 +19,9 @@
     "pd7": 4.22,
     "si_plus": 100.4,
     "df_plus": 112.2,
-    "apr_plus": 96.7,
+    "apr_plus": 96.2,
     "pin_rate": 0.0,
-    "bonus_rate": 0.571,
+    "bonus_rate": 0.667,
     "majors": 4,
     "techs": 0,
     "pins": 0,
@@ -29,7 +29,7 @@
       "mv_avg": 1.121,
       "matches": 10,
       "rank_weight": 38,
-      "rank_overall": 433,
+      "rank_overall": 432,
       "version": "v1"
     }
   },
@@ -144,20 +144,6 @@
     },
     {
       "date": "2025-11-02",
-      "opponent_id": "34934403132",
-      "opponent_name": "Jake Crapps",
-      "opponent_team": "Army West Point",
-      "opponent_team_rank": 36,
-      "opponent_weight": 133,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "DEC",
-      "score": null,
-      "duration": "7:00",
-      "event": "Princeton Open"
-    },
-    {
-      "date": "2025-11-02",
       "opponent_id": "34934316132",
       "opponent_name": "Nain Vazquez",
       "opponent_team": "Army West Point",
@@ -218,8 +204,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
     "top33_bonus_ev_shrunk": 0.0
   }
 }

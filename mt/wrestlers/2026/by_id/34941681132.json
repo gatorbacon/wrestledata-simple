@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "6-3",
+    "overall": "5-3",
     "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -19,9 +19,9 @@
     "pd7": -1.2,
     "si_plus": 96.7,
     "df_plus": 99.8,
-    "apr_plus": 107.2,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.333,
+    "apr_plus": 108.4,
+    "pin_rate": 0.4,
+    "bonus_rate": 0.4,
     "majors": 0,
     "techs": 0,
     "pins": 2,
@@ -29,7 +29,7 @@
       "mv_avg": -0.52,
       "matches": 8,
       "rank_weight": 98,
-      "rank_overall": 883,
+      "rank_overall": 884,
       "version": "v1"
     }
   },
@@ -96,20 +96,6 @@
       "duration": "7:00",
       "event": "vs. George Mason",
       "mv_impact": -2.43
-    },
-    {
-      "date": "2025-11-02",
-      "opponent_id": "34946802132",
-      "opponent_name": "Ramil Islamov",
-      "opponent_team": "West Virginia",
-      "opponent_team_rank": 13,
-      "opponent_weight": 141,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "DEC",
-      "score": null,
-      "duration": "7:00",
-      "event": "Southeast Open"
     },
     {
       "date": "2025-11-02",
@@ -190,6 +176,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.3333333333333333
+    "top33_bonus_ev_shrunk": 0.375
   }
 }

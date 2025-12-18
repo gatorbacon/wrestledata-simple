@@ -198,7 +198,8 @@ def process_file(input_path, output_path, season):
         if name in name_variants:
             current_variants.extend(name_variants[name])
         
-        # Process matches
+        # Process matches and filter out NC results
+        processed_matches = []
         for match in wrestler.get("matches", []):
             total_matches += 1
             # Pass team_name and season to process_match
@@ -208,6 +209,13 @@ def process_file(input_path, output_path, season):
             elif parsed.get("result") == "PARSE_ERROR":
                 parse_errors += 1
             match.update(parsed)
+            
+            # Filter out matches with NC (No Contest) result
+            if parsed.get("result") != "NC":
+                processed_matches.append(match)
+        
+        # Replace matches list with filtered matches
+        wrestler["matches"] = processed_matches
 
     # Print a summary of errors for the file
     file_name = os.path.basename(input_path)
