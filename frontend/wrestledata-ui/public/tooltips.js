@@ -6,7 +6,20 @@
 function createTooltip(text) {
   const tooltip = document.createElement('span');
   tooltip.className = 'tooltip';
-  tooltip.textContent = text;
+  
+  // Handle multi-line text (replace \n with <br>)
+  if (text.includes('\n')) {
+    const lines = text.split('\n');
+    lines.forEach((line, index) => {
+      if (index > 0) {
+        tooltip.appendChild(document.createElement('br'));
+      }
+      tooltip.appendChild(document.createTextNode(line));
+    });
+  } else {
+    tooltip.textContent = text;
+  }
+  
   tooltip.setAttribute('role', 'tooltip');
   return tooltip;
 }
@@ -23,6 +36,14 @@ function showTooltip(element, tooltipEl) {
     tooltipEl.style.top = (targetRect.top - 8) + 'px';
     tooltipEl.style.transform = 'translate(-50%, -100%)';
     tooltipEl.style.bottom = 'auto';
+  } else {
+    // For bar segments, position above the segment
+    const rect = element.getBoundingClientRect();
+    tooltipEl.style.position = 'fixed';
+    tooltipEl.style.left = (rect.left + rect.width / 2) + 'px';
+    tooltipEl.style.top = (rect.top - 8) + 'px';
+    tooltipEl.style.transform = 'translate(-50%, -100%)';
+    tooltipEl.style.zIndex = '10000';
   }
   
   tooltipEl.style.opacity = '1';

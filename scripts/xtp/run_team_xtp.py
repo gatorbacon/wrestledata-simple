@@ -142,6 +142,10 @@ def aggregate_team_xtp(season: int, data_dir: str) -> Dict[str, Dict]:
                 "xTP_P": entry.get("xTP_P", 0.0),
                 "xTP_B": entry.get("xTP_B", 0.0),
                 "xTP": entry.get("xTP", 0.0),
+                # Include placement probabilities if available
+                "aa_prob": entry.get("aa_prob", None),
+                "champ_prob": entry.get("champ_prob", None),
+                "final_prob": entry.get("final_prob", None),
             }
     
     return teams

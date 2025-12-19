@@ -26,7 +26,7 @@ from xtp.engine.bracket_schema import get_all_slots
 
 def load_rankings(season: int, weight: int, rankings_dir: str) -> List[Dict]:
     """
-    Load rankings for a weight class.
+    Load starter-only rankings for a weight class.
     
     Args:
         season: Season year
@@ -34,12 +34,12 @@ def load_rankings(season: int, weight: int, rankings_dir: str) -> List[Dict]:
         rankings_dir: Directory containing rankings files
     
     Returns:
-        List of ranking entries with wrestler_id, name, team, rank
+        List of starter ranking entries with wrestler_id, name, team, rank
     """
-    rankings_path = Path(rankings_dir) / str(season) / f"rankings_{weight}.json"
+    rankings_path = Path(rankings_dir) / str(season) / f"rankings_starters_{weight}.json"
     
     if not rankings_path.exists():
-        raise FileNotFoundError(f"Rankings file not found: {rankings_path}")
+        raise FileNotFoundError(f"Starter rankings file not found: {rankings_path}")
     
     with rankings_path.open("r", encoding="utf-8") as f:
         data = json.load(f)
@@ -192,20 +192,13 @@ def compute_xtp_for_weight(
     Returns:
         List of xTP entries with wrestler_id, name, team, rank, xTP_A, xTP_P, xTP_B, xTP
     """
-    # Step 1: Load rankings
-    print(f"Loading rankings for {weight} lbs...")
-    all_rankings = load_rankings(season, weight, rankings_dir)
-    print(f"  Found {len(all_rankings)} ranked wrestlers")
-    
-    if len(all_rankings) == 0:
-        raise ValueError(f"No rankings found for weight {weight}")
-    
-    # Step 1.5: Filter to starters only
-    starter_rankings = [r for r in all_rankings if r.get("is_starter", False)]
+    # Step 1: Load starter-only rankings
+    print(f"Loading starter rankings for {weight} lbs...")
+    starter_rankings = load_rankings(season, weight, rankings_dir)
     print(f"  Found {len(starter_rankings)} starters")
     
     if len(starter_rankings) == 0:
-        raise ValueError(f"No starters found for weight {weight}")
+        raise ValueError(f"No starter rankings found for weight {weight}")
     
     # Sort starters by rank
     starter_rankings = sorted(starter_rankings, key=lambda x: x.get("rank", 9999))
@@ -309,6 +302,11 @@ def compute_xtp_for_weight(
         xTP_B = round(comps["xTP_B"], 2)
         xTP = round(xTP_A + xTP_P + xTP_B, 2)  # Sum rounded components
         
+        # Round placement probabilities to 3 decimal places
+        aa_prob = round(comps.get("aa_probability", 0.0), 3)
+        champ_prob = round(comps.get("champion_probability", 0.0), 3)
+        final_prob = round(comps.get("finalist_probability", 0.0), 3)
+        
         results.append({
             "wrestler_id": wrestler_id,
             "name": data["name"],
@@ -321,6 +319,9 @@ def compute_xtp_for_weight(
             "xTP_P": xTP_P,
             "xTP_B": xTP_B,
             "xTP": xTP,
+            "aa_prob": aa_prob,
+            "champ_prob": champ_prob,
+            "final_prob": final_prob,
         })
     
     return results

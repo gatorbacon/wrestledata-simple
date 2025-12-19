@@ -2,7 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <title>Mat Value Leaderboard</title>
+  <title>All-American & Title Odds (Stacked View)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
@@ -12,10 +12,10 @@
   <script src="/header.js"></script>
   <div class="page-container">
     <header class="header">
-      <h1>Mat Value Leaderboard</h1>
+      <h1>All-American & Title Odds (Stacked View)</h1>
       <div class="header-subline" id="season-info"></div>
       <p class="header-explainer">
-        Mat Value estimates a wrestler's per-match impact relative to opponent expectation.
+        Probability of finishing Top 8 (All-American), reaching the finals, or winning the NCAA title.
       </p>
     </header>
 
@@ -23,20 +23,21 @@
       <div id="weight-tabs-container" class="weight-tabs-container" role="tablist" aria-label="Weight class filter">
         <!-- Tabs will be inserted here by JS -->
       </div>
-      <p class="threshold-explainer" id="threshold-explainer">
-        <!-- Dynamic text will be inserted here -->
-      </p>
+      <div class="stacked-odds-legend" id="stacked-odds-legend">
+        <!-- Legend will be inserted here by JS -->
+      </div>
       <div class="table-wrapper">
-        <table id="mv-leaderboard-table">
+        <table id="odds-stacked-table">
           <thead>
             <tr>
-              <th>MV Rank</th>
+              <th>Rank</th>
               <th>Name</th>
               <th>Team</th>
-              <th>Weight</th>
-              <th>Wt Class Rank</th>
-              <th class="col-mv">MV <span class="tooltip-icon" data-tooltip="mv">→</span></th>
-              <th>Matches</th>
+              <th class="sortable" data-sort="champ_prob" id="odds-breakdown-header">
+                Odds Breakdown (Cumulative Path to AA)
+                <span class="tooltip-icon" data-tooltip="cumulative-path">→</span>
+                <span class="sort-indicator">▲</span>
+              </th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -46,7 +47,7 @@
   </div>
 
   <script src="/tooltips.js"></script>
-  <script src="/leaderboards/mat_value.js"></script>
+  <script src="/leaderboards/odds-stacked.js"></script>
 </body>
 </html>
 

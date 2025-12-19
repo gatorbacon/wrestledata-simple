@@ -747,16 +747,141 @@ class BracketEngine:
         
         return xtp
     
+    def get_placement_probabilities(self) -> Dict[str, Dict[str, float]]:
+        """
+        Extract placement probabilities (AA, Champion, Finalist) from terminal placement slots.
+        
+        Uses probability mass already computed in slot_prob_results for placement matches.
+        This is a pure aggregation step - no new probabilities are computed.
+        
+        Returns:
+            Dict mapping wrestler_id to {
+                "aa_probability": float,        # Top 8 (placements 1-8)
+                "champion_probability": float,   # Placement 1
+                "finalist_probability": float    # Placements 1-2
+            }
+        """
+        if not self.enable_probability:
+            return {}
+        
+        # Mapping of placement slots to their placement numbers
+        # Format: {slot_id: [(placement_num, result_type), ...]}
+        placement_slots = {
+            "C_F_0": [(1, "winner"), (2, "loser")],
+            "CONS_3RD": [(3, "winner"), (4, "loser")],
+            "CONS_5TH": [(5, "winner"), (6, "loser")],
+            "CONS_7TH": [(7, "winner"), (8, "loser")]
+        }
+        
+        # Initialize probability dictionaries for all wrestlers
+        all_wrestlers = set(self.seeds.values())
+        placement_probs = {wrestler_id: {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.0, 6: 0.0, 7: 0.0, 8: 0.0}
+                           for wrestler_id in all_wrestlers}
+        
+        # Extract probability mass from each placement slot
+        for slot_id, placements_info in placement_slots.items():
+            if slot_id not in self.resolved_slots:
+                continue
+            
+            slot = self.slots[slot_id]
+            is_deterministic = slot_id in self.deterministic_slots
+            
+            for place, result_type in placements_info:
+                if is_deterministic and slot_id in self.slot_results:
+                    # Deterministic: wrestler has probability 1.0
+                    wrestler_id = self.slot_results[slot_id].get(result_type)
+                    if wrestler_id and wrestler_id in all_wrestlers:
+                        placement_probs[wrestler_id][place] = 1.0
+                elif slot_id in self.slot_prob_results:
+                    # Probabilistic: use probability distribution
+                    dist = self.slot_prob_results[slot_id].get(result_type, {})
+                    total_mass = sum(dist.values())
+                    
+                    if total_mass > 0.0:
+                        # Normalize to get actual probabilities
+                        for wrestler_id, mass in dist.items():
+                            if wrestler_id in all_wrestlers and mass > 0.0:
+                                prob = mass / total_mass
+                                placement_probs[wrestler_id][place] = prob
+        
+        # Aggregate into AA, Champion, and Finalist probabilities
+        result = {}
+        for wrestler_id in all_wrestlers:
+            probs = placement_probs[wrestler_id]
+            
+            # Champion probability = placement 1
+            champ_prob = probs[1]
+            
+            # Finalist probability = placements 1 + 2
+            final_prob = probs[1] + probs[2]
+            
+            # All-American probability = placements 1-8
+            aa_prob = sum(probs[i] for i in range(1, 9))
+            
+            result[wrestler_id] = {
+                "aa_probability": aa_prob,
+                "champion_probability": champ_prob,
+                "finalist_probability": final_prob
+            }
+        
+        # Validation checks
+        total_champ_prob = sum(r["champion_probability"] for r in result.values())
+        total_aa_prob = sum(r["aa_probability"] for r in result.values())
+        
+        # Champion probabilities should sum to ~1.0 (one champion)
+        if abs(total_champ_prob - 1.0) > 0.01:
+            raise ValueError(
+                f"Champion probability mass conservation violated: "
+                f"sum={total_champ_prob:.6f}, expected ~1.0"
+            )
+        
+        # AA probabilities should sum to ~8.0 (8 All-Americans)
+        if abs(total_aa_prob - 8.0) > 0.1:
+            raise ValueError(
+                f"All-American probability mass conservation violated: "
+                f"sum={total_aa_prob:.6f}, expected ~8.0"
+            )
+        
+        # Validate ordering: champ_prob <= finalist_prob <= aa_prob
+        for wrestler_id, probs in result.items():
+            champ = probs["champion_probability"]
+            final = probs["finalist_probability"]
+            aa = probs["aa_probability"]
+            
+            if champ > final + 1e-6:
+                raise ValueError(
+                    f"Invalid probability ordering for {wrestler_id}: "
+                    f"champ_prob ({champ:.6f}) > finalist_prob ({final:.6f})"
+                )
+            if final > aa + 1e-6:
+                raise ValueError(
+                    f"Invalid probability ordering for {wrestler_id}: "
+                    f"finalist_prob ({final:.6f}) > aa_prob ({aa:.6f})"
+                )
+        
+        return result
+    
     def get_xtp_components(self) -> Dict[str, Dict[str, float]]:
         """
         Get xTP components separately for all wrestlers.
         
         Returns:
-            Dict mapping wrestler_id to {"xTP_A": float, "xTP_P": float, "xTP_B": float, "xTP": float}
+            Dict mapping wrestler_id to {
+                "xTP_A": float,
+                "xTP_P": float,
+                "xTP_B": float,
+                "xTP": float,
+                "aa_probability": float,
+                "champion_probability": float,
+                "finalist_probability": float
+            }
         """
         # Compute points if not already computed
         if not self._points_computed:
             self.compute_expected_points()
+        
+        # Get placement probabilities
+        placement_probs = self.get_placement_probabilities()
         
         components = {}
         all_wrestlers = set(self.seeds.values())
@@ -767,11 +892,21 @@ class BracketEngine:
             xTP_B = self.expected_bonus_points.get(wrestler_id, 0.0)
             xTP = xTP_A + xTP_P + xTP_B
             
+            # Get placement probabilities (default to 0.0 if not found)
+            probs = placement_probs.get(wrestler_id, {
+                "aa_probability": 0.0,
+                "champion_probability": 0.0,
+                "finalist_probability": 0.0
+            })
+            
             components[wrestler_id] = {
                 "xTP_A": xTP_A,
                 "xTP_P": xTP_P,
                 "xTP_B": xTP_B,
-                "xTP": xTP
+                "xTP": xTP,
+                "aa_probability": probs["aa_probability"],
+                "champion_probability": probs["champion_probability"],
+                "finalist_probability": probs["finalist_probability"]
             }
         
         return components

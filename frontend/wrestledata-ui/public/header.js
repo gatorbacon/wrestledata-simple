@@ -41,6 +41,10 @@
                       <span class="dropdown-item-label">Mat Value (MV)</span>
                       <span class="dropdown-item-subtext">Individual performance vs expectation</span>
                     </a>
+                    <a href="/aa_odds.html" class="dropdown-item">
+                      <span class="dropdown-item-label">Tournament Odds</span>
+                      <span class="dropdown-item-subtext">All-American & title probabilities</span>
+                    </a>
                   </div>
                 </div>
                 <!-- Team Submenu -->

@@ -251,7 +251,7 @@ function safe(value, formatter) {
     const tooltipIcon = document.createElement("span");
     tooltipIcon.className = "tooltip-icon";
     tooltipIcon.setAttribute("data-tooltip", "mv");
-    tooltipIcon.textContent = "ⓘ";
+    tooltipIcon.textContent = "→";
     title.appendChild(tooltipIcon);
     headerRow.appendChild(title);
     

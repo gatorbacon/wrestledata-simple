@@ -106,7 +106,7 @@ function updateThresholdExplainer(explainerId) {
   if (!explainer) return;
   
   const threshold = getMinMatchThreshold();
-  explainer.innerHTML = `Includes wrestlers with ≥${threshold} matches this season. <span class="tooltip-icon" data-tooltip="threshold">ⓘ</span>`;
+  explainer.innerHTML = `Includes wrestlers with ≥${threshold} matches this season. <span class="tooltip-icon" data-tooltip="threshold">→</span>`;
   
   // Initialize tooltip (tooltips.js will handle it via DOMContentLoaded listener)
   // If tooltips.js hasn't loaded yet, trigger initialization manually
