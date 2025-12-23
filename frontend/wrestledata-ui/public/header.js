@@ -12,8 +12,8 @@
         <div class="header-container">
           <!-- Logo (Leftmost) -->
           <div class="header-logo">
-            <a href="/" class="logo-link" title="WrestleData — Wrestling analytics inspired by DataGolf">
-              <span class="logo-text">WrestleData</span>
+            <a href="/" class="logo-link" title="MatSavant — Wrestling analytics inspired by DataGolf">
+              <span class="logo-text">MatSavant</span>
             </a>
           </div>
 
