@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "campbell",
+  "team_name": "Campbell",
+  "name": "Campbell",
+  "abbreviation": "CAMP",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "SoCon",
+  "location": {
+    "state": "NC"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758782150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34941685132",
+      "133": "34941678132",
+      "141": "34941679132",
+      "149": "34941684132",
+      "157": "34941686132",
+      "165": "34943431132",
+      "174": "34941688132",
+      "184": "34941677132",
+      "197": "34941676132",
+      "285": "34948090132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-23T02:17:40.244251Z"
+}

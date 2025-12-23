@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "ohio_state",
+  "team_name": "Ohio State",
+  "name": "Ohio State",
+  "abbreviation": "OHST",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "Big Ten",
+  "location": {
+    "state": "OH"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758890150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34941775132",
+      "133": "34941790132",
+      "141": "34941780132",
+      "149": "34941806132",
+      "157": "34941785132",
+      "165": "34941773132",
+      "174": "34941772132",
+      "184": "34941814132",
+      "197": "34941778132",
+      "285": "34941777132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-23T02:17:40.339920Z"
+}

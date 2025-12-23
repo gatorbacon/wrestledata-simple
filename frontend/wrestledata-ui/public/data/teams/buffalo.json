@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "buffalo",
+  "team_name": "Buffalo",
+  "name": "Buffalo",
+  "abbreviation": "BUFF",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "MAC",
+  "location": {
+    "state": "NY"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758779150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34952955132",
+      "133": "34952962132",
+      "141": "34952969132",
+      "149": "34952959132",
+      "157": "34952954132",
+      "165": "34952813132",
+      "174": "34952968132",
+      "184": "34952973132",
+      "197": "34952964132",
+      "285": "34974780132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-23T02:17:40.237371Z"
+}

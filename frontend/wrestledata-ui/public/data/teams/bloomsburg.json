@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "bloomsburg",
+  "team_name": "Bloomsburg",
+  "name": "Bloomsburg",
+  "abbreviation": "BLOO",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "MAC",
+  "location": {
+    "state": "PA"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758773150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34936230132",
+      "133": "34935055132",
+      "141": "34936202132",
+      "149": "34936234132",
+      "157": "34935052132",
+      "165": "34936203132",
+      "174": "34935057132",
+      "184": "34936204132",
+      "197": "34936180132",
+      "285": "34935054132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-23T02:17:40.230516Z"
+}

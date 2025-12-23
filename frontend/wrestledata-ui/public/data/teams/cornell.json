@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "cornell",
+  "team_name": "Cornell",
+  "name": "Cornell",
+  "abbreviation": "COR",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "Ivy League",
+  "location": {
+    "state": "NY"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758803150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34964389132",
+      "133": "34964380132",
+      "141": "34964487132",
+      "149": "34964522132",
+      "157": "34964390132",
+      "165": "34964488132",
+      "174": "34964396132",
+      "184": "34964374132",
+      "197": "34964388132",
+      "285": "34964386132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-23T02:17:40.255452Z"
+}

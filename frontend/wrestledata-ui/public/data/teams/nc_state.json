@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "nc_state",
+  "team_name": "NC State",
+  "name": "NC State",
+  "abbreviation": "NCST",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "ACC",
+  "location": {
+    "state": "NC"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758878150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34935697132",
+      "133": "34935691132",
+      "141": "34935687132",
+      "149": "34935694132",
+      "157": "34935693132",
+      "165": "34935712132",
+      "174": "34935689132",
+      "184": "34945126132",
+      "197": "34935716132",
+      "285": "34935688132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-23T02:17:40.319538Z"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "chattanooga",
+  "team_name": "Chattanooga",
+  "name": "Chattanooga",
+  "abbreviation": "CHAT",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "SoCon",
+  "location": {
+    "state": "TN"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758790150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34935485132",
+      "133": "34935440132",
+      "141": "34935430132",
+      "149": "34935553132",
+      "157": "34935438132",
+      "165": "34935552132",
+      "174": "34935442132",
+      "184": "34935437132",
+      "197": "34935452132",
+      "285": "34935432132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-23T02:17:40.248738Z"
+}

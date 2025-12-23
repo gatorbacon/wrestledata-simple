@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "lock_haven",
+  "team_name": "Lock Haven",
+  "name": "Lock Haven",
+  "abbreviation": "LH",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "MAC",
+  "location": {
+    "state": "PA"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758844150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34936030132",
+      "133": "34935955132",
+      "141": "34935967132",
+      "149": "34935964132",
+      "157": "34935979132",
+      "165": "34935976132",
+      "174": "34935958132",
+      "184": "34935968132",
+      "197": "34935975132",
+      "285": "34985676132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-23T02:17:40.298892Z"
+}

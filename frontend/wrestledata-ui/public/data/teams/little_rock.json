@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "little_rock",
+  "team_name": "Little Rock",
+  "name": "Little Rock",
+  "abbreviation": "LR",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "Pac 12",
+  "location": {
+    "state": "AR"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758756150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34945348132",
+      "133": "34945360132",
+      "141": "34945349132",
+      "149": "34949755132",
+      "157": "34945367132",
+      "165": "34945347132",
+      "174": "34949781132",
+      "184": "34945363132",
+      "197": "34945352132",
+      "285": "34945364132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-23T02:17:40.294348Z"
+}

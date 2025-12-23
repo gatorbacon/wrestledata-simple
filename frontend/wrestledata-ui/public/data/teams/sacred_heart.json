@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "sacred_heart",
+  "team_name": "Sacred Heart",
+  "name": "Sacred Heart",
+  "abbreviation": "SH",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "EIWA",
+  "location": {
+    "state": "CT"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758910150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34949297132",
+      "133": "34949055132",
+      "141": "34949295132",
+      "149": "34949032132",
+      "157": "34949048132",
+      "165": "34974292132",
+      "174": "34949272132",
+      "184": "34949302132",
+      "197": "34949038132",
+      "285": "34949045132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-23T02:17:40.366812Z"
+}
