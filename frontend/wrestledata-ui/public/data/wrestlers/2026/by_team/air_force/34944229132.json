@@ -1,0 +1,66 @@
+{
+  "wrestler_id": "34944229132",
+  "name": "Aiden Robertson",
+  "team": "Air Force",
+  "team_slug": "air_force",
+  "team_rank": 58,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.7,
+    "pa7": 7.64,
+    "pd7": -5.94,
+    "si_plus": 84.3,
+    "df_plus": 100.1,
+    "apr_plus": 98.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.427,
+      "matches": 1,
+      "rank_weight": 173,
+      "rank_overall": 1905,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944205132",
+      "opponent_rank": 73,
+      "opponent_name": "Cy Fowler",
+      "method": "SV-1 9-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34944205132",
+      "opponent_name": "Cy Fowler",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 174,
+      "opponent_rank": 73,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "8:15",
+      "event": "Mines Rookie Open",
+      "mv_impact": -5.43
+    }
+  ]
+}

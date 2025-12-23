@@ -1,0 +1,145 @@
+{
+  "wrestler_id": "34936417132",
+  "name": "Richard Figueroa",
+  "team": "Oklahoma State",
+  "team_slug": "oklahoma_state",
+  "team_rank": 5,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-5",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 8.0,
+    "pa7": 10.0,
+    "pd7": -2.0,
+    "si_plus": 111.9,
+    "df_plus": 100.7,
+    "apr_plus": 99.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.403,
+      "matches": 5,
+      "rank_weight": 85,
+      "rank_overall": 860,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34944171132",
+      "opponent_rank": 56,
+      "opponent_name": "Gavin Caprella",
+      "method": "Dec 8-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34943451132",
+      "opponent_rank": 18,
+      "opponent_name": "Tyler Knox",
+      "method": "Dec 13-9"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34943988132",
+      "opponent_name": "Boogie Harris",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Cougar Clash"
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34964081132",
+      "opponent_name": "garret Rinken",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-9",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -2.33
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34944528132",
+      "opponent_name": "Kyler Larkin",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 133,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-5",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": 0.33
+    },
+    {
+      "date": "2025-11-21",
+      "opponent_id": "34944171132",
+      "opponent_name": "Gavin Caprella",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 133,
+      "opponent_rank": 56,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": 2.44
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34964402132",
+      "opponent_name": "Tyler Ferrara",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-9",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": -1.11
+    },
+    {
+      "date": "2025-11-07",
+      "opponent_id": "34943451132",
+      "opponent_name": "Tyler Knox",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 19,
+      "opponent_weight": 133,
+      "opponent_rank": 18,
+      "result": "L",
+      "method": "DEC",
+      "score": "13-9",
+      "duration": "7:00",
+      "event": "vs. Stanford",
+      "mv_impact": -1.35
+    }
+  ]
+}

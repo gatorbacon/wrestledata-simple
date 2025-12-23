@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34948138132",
+  "name": "Joe Davi",
+  "team": "Princeton",
+  "team_slug": "princeton",
+  "team_rank": 38,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 9.0,
+    "pd7": -7.0,
+    "si_plus": 93.6,
+    "df_plus": 99.9,
+    "apr_plus": 97.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.147,
+      "matches": 4,
+      "rank_weight": 224,
+      "rank_overall": 1879,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34957645132",
+      "opponent_rank": 46,
+      "opponent_name": "Jackson Young",
+      "method": "Dec 9-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34957645132",
+      "opponent_name": "Jackson Young",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 149,
+      "opponent_rank": 46,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -2.13
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34940494132",
+      "opponent_name": "Julian Everitt",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:10",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -6.48
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934309132",
+      "opponent_name": "Ryan Franco",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:34",
+      "event": "Princeton Open",
+      "mv_impact": -6.13
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948508132",
+      "opponent_name": "Joey Iamunno",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 63,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:50",
+      "event": "Princeton Open",
+      "mv_impact": -5.85
+    }
+  ]
+}

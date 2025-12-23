@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34950420132",
+  "name": "Spencer Von Savoye",
+  "team": "Duke",
+  "team_slug": "duke",
+  "team_rank": 68,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.86,
+    "pa7": 23.65,
+    "pd7": -21.79,
+    "si_plus": 90.2,
+    "df_plus": 72.8,
+    "apr_plus": 95.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.578,
+      "matches": 3,
+      "rank_weight": 196,
+      "rank_overall": 1998,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34947816132",
+      "opponent_rank": 61,
+      "opponent_name": "Dillon Arrick",
+      "method": "TF 15-0 3:48"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934408132",
+      "opponent_name": "Damian Resendez",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "5:39",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -6.61
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34947816132",
+      "opponent_name": "Dillon Arrick",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 61,
+      "opponent_weight": 133,
+      "opponent_rank": 61,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:48",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.54
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34937787132",
+      "opponent_name": "gino manta",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:24",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -8.59
+    }
+  ]
+}

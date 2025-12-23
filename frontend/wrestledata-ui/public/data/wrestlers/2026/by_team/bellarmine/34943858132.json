@@ -1,0 +1,141 @@
+{
+  "wrestler_id": "34943858132",
+  "name": "Noah Hall",
+  "team": "Bellarmine",
+  "team_slug": "bellarmine",
+  "team_rank": 60,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 69,
+  "record": {
+    "overall": "1-5",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.54,
+    "pa7": 12.2,
+    "pd7": -6.66,
+    "si_plus": 106.8,
+    "df_plus": 92.5,
+    "apr_plus": 104.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.681,
+      "matches": 6,
+      "rank_weight": 128,
+      "rank_overall": 1211,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934100132",
+      "opponent_rank": 67,
+      "opponent_name": "Chandler Amaker",
+      "method": "Dec 4-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34951026132",
+      "opponent_name": "Ryan Burgos",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 165,
+      "opponent_rank": 34,
+      "result": "L",
+      "method": "MD",
+      "score": "18-10",
+      "duration": "7:00",
+      "event": "vs. Edinboro",
+      "mv_impact": -2.22
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34944027132",
+      "opponent_name": "Carson Miller",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 165,
+      "opponent_rank": 44,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "vs. Kent State",
+      "mv_impact": -2.5
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34934100132",
+      "opponent_name": "Chandler Amaker",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 51,
+      "opponent_weight": 165,
+      "opponent_rank": 67,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Central Michigan",
+      "mv_impact": -3.61
+    },
+    {
+      "date": "2025-12-03",
+      "opponent_id": "34941773132",
+      "opponent_name": "Paddy Gallagher",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 165,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:11",
+      "event": "vs. Ohio State",
+      "mv_impact": -2.74
+    },
+    {
+      "date": "2025-11-21",
+      "opponent_id": "34955609132",
+      "opponent_name": "Colin Young",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:13",
+      "event": "vs. Northern Illinois",
+      "mv_impact": 5.21
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34951050132",
+      "opponent_name": "Alaa Aly",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -4.22
+    }
+  ]
+}

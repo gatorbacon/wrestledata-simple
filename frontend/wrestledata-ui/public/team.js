@@ -44,10 +44,10 @@ function teamNameToProcessedDataFilename(teamName) {
 async function loadTeam(teamId) {
   try {
     // 1) Load team profile (identity + starters)
-    const teamProfile = await fetchJSON(`/teams/${teamId}.json`);
+    const teamProfile = await fetchJSON(`/data/teams/${teamId}.json`);
 
     // 2) Load team metrics (analytics)
-    const metricsData = await fetchJSON(`/team_metrics/2026/team_metrics.json`);
+    const metricsData = await fetchJSON(`/data/team_metrics/2026/team_metrics.json`);
     const teamMetrics = metricsData.teams.find(t => t.team_id === teamId);
 
     if (!teamMetrics) {
@@ -60,7 +60,7 @@ async function loadTeam(teamId) {
     let allWrestlerIds = new Set();
     
     try {
-      const processedData = await fetchJSON(`/processed_data/2026/${processedDataFilename}.json`);
+      const processedData = await fetchJSON(`/data/processed_data/2026/${processedDataFilename}.json`);
       if (processedData.roster && Array.isArray(processedData.roster)) {
         processedData.roster.forEach(wrestler => {
           if (wrestler.season_wrestler_id) {
@@ -93,7 +93,7 @@ async function loadTeam(teamId) {
     for (const [weight, wrestlerId] of Object.entries(starters)) {
       if (!wrestlerId) continue;
       try {
-      const w = await fetchJSON(`/wrestlers/2026/by_id/${wrestlerId}.json`);
+      const w = await fetchJSON(`/data/wrestlers/2026/by_id/${wrestlerId}.json`);
       starterProfiles.push({ weight: Number(weight), profile: w });
       } catch (err) {
         console.warn(`Could not load wrestler profile ${wrestlerId}:`, err);
@@ -104,7 +104,7 @@ async function loadTeam(teamId) {
     const remainingProfiles = [];
     for (const wrestlerId of remainingIds) {
       try {
-        const w = await fetchJSON(`/wrestlers/2026/by_id/${wrestlerId}.json`);
+        const w = await fetchJSON(`/data/wrestlers/2026/by_id/${wrestlerId}.json`);
         const weight = w.weight_class ? Number(w.weight_class) : null;
         remainingProfiles.push({ weight, profile: w });
       } catch (err) {
@@ -115,7 +115,7 @@ async function loadTeam(teamId) {
     // 8) Load xTP data (optional, fail silently if missing)
     let xtpData = null;
     try {
-      const xtpFile = await fetchJSON(`/xtp/2026/xtp_teams_2026.json`);
+      const xtpFile = await fetchJSON(`/data/xtp/2026/xtp_teams_2026.json`);
       const teamName = teamProfile.team_name || teamProfile.name;
       // Handle both array and object with 'teams' property
       const teamsArray = Array.isArray(xtpFile) ? xtpFile : (xtpFile.teams || []);
@@ -180,7 +180,7 @@ function formatTopRecord(record) {
 
 async function computeTeamRank(teamName, season) {
   try {
-    const url = `/xtp/${season}/xtp_teams_${season}.json`;
+    const url = `/data/xtp/${season}/xtp_teams_${season}.json`;
     const data = await fetchJSON(url);
     
     // Handle both array and object with 'teams' property

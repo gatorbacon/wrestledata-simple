@@ -1,0 +1,161 @@
+{
+  "wrestler_id": "34951046132",
+  "name": "Gaven Suica",
+  "team": "Edinboro",
+  "team_slug": "edinboro",
+  "team_rank": 53,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-6",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.43,
+    "pa7": 7.71,
+    "pd7": -3.29,
+    "si_plus": 92.0,
+    "df_plus": 101.0,
+    "apr_plus": 96.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.354,
+      "matches": 7,
+      "rank_weight": 194,
+      "rank_overall": 1594,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34947354132",
+      "opponent_rank": 54,
+      "opponent_name": "Silas Stits",
+      "method": "Dec 6-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34945846132",
+      "opponent_name": "Aidan Torres",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "17-5",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -4.8
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944025132",
+      "opponent_name": "Aidan Rush",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": 0.05
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34947354132",
+      "opponent_name": "Silas Stits",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 149,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -2.62
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934348132",
+      "opponent_name": "Jace Morgan",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-1",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -3.56
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34937665132",
+      "opponent_name": "Chase Liardi",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -3.93
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34945843132",
+      "opponent_name": "Cole Rhemrev",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Findlay Open",
+      "mv_impact": -4.81
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34945846132",
+      "opponent_name": "Aidan Torres",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-0",
+      "duration": "7:00",
+      "event": "Findlay Open",
+      "mv_impact": -3.8
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34977442132",
+  "name": "Kingsley Menifee",
+  "team": "Morgan State",
+  "team_slug": "morgan_state",
+  "team_rank": 73,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 58,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 10.9,
+    "pa7": 7.38,
+    "pd7": 3.52,
+    "si_plus": 98.9,
+    "df_plus": 99.5,
+    "apr_plus": 97.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.316,
+      "matches": 3,
+      "rank_weight": 61,
+      "rank_overall": 670,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34940493132",
+      "opponent_rank": 47,
+      "opponent_name": "Gage Yackee",
+      "method": "MD 11-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34940493132",
+      "opponent_name": "Gage Yackee",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 184,
+      "opponent_rank": 47,
+      "result": "L",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -4.2
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34934826132",
+      "opponent_name": "Angelo Esposito",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "6:46",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 2.77
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34933371132",
+      "opponent_name": "Gunnar Garelli",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 18,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-7",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 2.38
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

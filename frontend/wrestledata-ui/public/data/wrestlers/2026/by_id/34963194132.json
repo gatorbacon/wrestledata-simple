@@ -1,0 +1,116 @@
+{
+  "wrestler_id": "34963194132",
+  "name": "Anthony Harris",
+  "team": "Oklahoma",
+  "team_slug": "oklahoma",
+  "team_rank": 21,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 7.5,
+    "pa7": 10.0,
+    "pd7": -2.5,
+    "si_plus": 108.8,
+    "df_plus": 100.0,
+    "apr_plus": 105.8,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.292,
+      "matches": 4,
+      "rank_weight": 23,
+      "rank_overall": 227,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34943982132",
+      "opponent_rank": 12,
+      "opponent_name": "Evan Bates",
+      "method": "Dec 9-6"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34949820132",
+      "opponent_name": "Landon Jobber-Spence",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 12,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:17",
+      "event": "Tiger Style Invite",
+      "mv_impact": 3.88
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943982132",
+      "opponent_name": "Evan Bates",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 197,
+      "opponent_rank": 12,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "7:00",
+      "event": "Tiger Style Invite",
+      "mv_impact": 5.15
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943243132",
+      "opponent_name": "Thomas Dineen",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 28,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-8",
+      "duration": "7:00",
+      "event": "Tiger Style Invite",
+      "mv_impact": -1.54
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943248132",
+      "opponent_name": "Quin Morgan",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 28,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-7",
+      "duration": "7:00",
+      "event": "Tiger Style Invite",
+      "mv_impact": 1.67
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 0.35555555555555557
+  }
+}

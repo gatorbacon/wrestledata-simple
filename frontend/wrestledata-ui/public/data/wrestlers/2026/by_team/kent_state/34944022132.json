@@ -1,0 +1,106 @@
+{
+  "wrestler_id": "34944022132",
+  "name": "Chris Sanchez",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 70,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-3",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.33,
+    "pa7": 5.67,
+    "pd7": -4.33,
+    "si_plus": 82.0,
+    "df_plus": 101.9,
+    "apr_plus": 113.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.2,
+      "matches": 4,
+      "rank_weight": 136,
+      "rank_overall": 1559,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34947381132",
+      "opponent_name": "Braxton Quaintance",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:15",
+      "event": "Kent State Open 1",
+      "mv_impact": 4.32
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944008132",
+      "opponent_name": "Aaron Ferguson",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -6.84
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34946724132",
+      "opponent_name": "Brian Finnerty",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -5.6
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34947381132",
+      "opponent_name": "Braxton Quaintance",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -4.68
+    }
+  ]
+}

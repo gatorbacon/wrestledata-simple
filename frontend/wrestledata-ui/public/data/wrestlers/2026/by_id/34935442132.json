@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34935442132",
+  "name": "Brody Murray",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 52,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 75,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 9.0,
+    "pd7": -4.0,
+    "si_plus": 95.9,
+    "df_plus": 94.3,
+    "apr_plus": 98.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.285,
+      "matches": 3,
+      "rank_weight": 141,
+      "rank_overall": 1574,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34954565132",
+      "opponent_name": "Kyser Kostoff",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Mountaineer Open",
+      "mv_impact": -1.5
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943141132",
+      "opponent_name": "Omaury Alvarez",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 46,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-8",
+      "duration": "7:00",
+      "event": "Mountaineer Open",
+      "mv_impact": -3.73
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943139132",
+      "opponent_name": "Cade Tenold",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 46,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "Mountaineer Open",
+      "mv_impact": -4.63
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

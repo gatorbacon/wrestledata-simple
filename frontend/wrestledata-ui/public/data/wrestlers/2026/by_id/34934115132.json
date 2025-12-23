@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34934115132",
+  "name": "Simon Lato",
+  "team": "Central Michigan",
+  "team_slug": "central_michigan",
+  "team_rank": 51,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.67,
+    "pa7": 6.67,
+    "pd7": -2.0,
+    "si_plus": 96.3,
+    "df_plus": 92.1,
+    "apr_plus": 98.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.939,
+      "matches": 3,
+      "rank_weight": 118,
+      "rank_overall": 1280,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944540132",
+      "opponent_name": "Ben Szuba",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -5.41
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955410132",
+      "opponent_name": "Devon Dawson",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -2.44
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933525132",
+      "opponent_name": "Lance Trost",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 14,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 2.03
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

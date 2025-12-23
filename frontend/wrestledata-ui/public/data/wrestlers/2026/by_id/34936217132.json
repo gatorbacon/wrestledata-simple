@@ -1,0 +1,135 @@
+{
+  "wrestler_id": "34936217132",
+  "name": "Max Ray",
+  "team": "Ohio",
+  "team_slug": "ohio",
+  "team_rank": 41,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 4.75,
+    "pd7": -1.75,
+    "si_plus": 89.1,
+    "df_plus": 101.9,
+    "apr_plus": 97.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.169,
+      "matches": 4,
+      "rank_weight": 106,
+      "rank_overall": 1066,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34977444132",
+      "opponent_rank": 76,
+      "opponent_name": "Eric Tecson",
+      "method": "Dec 5-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34936214132",
+      "opponent_rank": 56,
+      "opponent_name": "Jack Lledo",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935705132",
+      "opponent_name": "Pete Winterstein",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "Mountaineer Open",
+      "mv_impact": -3.5
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936225132",
+      "opponent_name": "Charles Spinning",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-0",
+      "duration": "7:00",
+      "event": "Mountaineer Open",
+      "mv_impact": 1.71
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936214132",
+      "opponent_name": "Jack Lledo",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 165,
+      "opponent_rank": 56,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Mountaineer Open"
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34944668132",
+      "opponent_name": "Cody Goebel",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 31,
+      "opponent_weight": 165,
+      "opponent_rank": 15,
+      "result": "L",
+      "method": "MD",
+      "score": "16-2",
+      "duration": "7:00",
+      "event": "vs. Wisconsin",
+      "mv_impact": -2.41
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34977444132",
+      "opponent_name": "Eric Tecson",
+      "opponent_team": "Morgan State",
+      "opponent_team_rank": 73,
+      "opponent_weight": 165,
+      "opponent_rank": 76,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "vs. Ohio",
+      "mv_impact": -0.47
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.3333333333333333
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34943857132",
+  "name": "Nate Higley",
+  "team": "Bellarmine",
+  "team_slug": "bellarmine",
+  "team_rank": 60,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 102.8,
+    "df_plus": 103.0,
+    "apr_plus": 130.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.105,
+      "matches": 2,
+      "rank_weight": 93,
+      "rank_overall": 786,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938646132",
+      "opponent_name": "Connor Eck",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:00",
+      "event": "Clarion Open",
+      "mv_impact": -5.6
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938647132",
+      "opponent_name": "Oliver Fairchild",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:48",
+      "event": "Clarion Open",
+      "mv_impact": 5.39
+    }
+  ]
+}

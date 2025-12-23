@@ -1,0 +1,161 @@
+{
+  "wrestler_id": "34944036132",
+  "name": "Ty Deericks",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 70,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-4",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.43,
+    "pa7": 4.0,
+    "pd7": -1.57,
+    "si_plus": 90.7,
+    "df_plus": 108.3,
+    "apr_plus": 97.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.126,
+      "matches": 7,
+      "rank_weight": 104,
+      "rank_overall": 1054,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34952813132",
+      "opponent_rank": 58,
+      "opponent_name": "Kelin Laffey",
+      "method": "MD 8-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34952813132",
+      "opponent_name": "Kelin Laffey",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 165,
+      "opponent_rank": 58,
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "vs. Kent State",
+      "mv_impact": -3.75
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934113132",
+      "opponent_name": "Cole Hopkins",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 51,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": 1.2
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34946726132",
+      "opponent_name": "Sasha Gavronsky",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": 2.23
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34955775132",
+      "opponent_name": "Blaine Brenner",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -1.73
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34935933132",
+      "opponent_name": "anwar alli",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -3.6
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34945835132",
+      "opponent_name": "Chase Leech",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 0.67
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934356132",
+      "opponent_name": "Owen Segorski",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 165,
+      "opponent_rank": 48,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -2.9
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.3333333333333333
+  }
+}

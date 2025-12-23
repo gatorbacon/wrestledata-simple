@@ -1,0 +1,161 @@
+{
+  "wrestler_id": "34934763132",
+  "name": "Gage Singleton",
+  "team": "Oregon State",
+  "team_slug": "oregon_state",
+  "team_rank": 23,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-4",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.83,
+    "pa7": 6.5,
+    "pd7": 0.33,
+    "si_plus": 101.0,
+    "df_plus": 102.3,
+    "apr_plus": 97.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.667,
+    "majors": 2,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.85,
+      "matches": 7,
+      "rank_weight": 99,
+      "rank_overall": 976,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34936030132",
+      "opponent_rank": 54,
+      "opponent_name": "Curtis Nelson",
+      "method": "MD 14-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34944168132",
+      "opponent_rank": 33,
+      "opponent_name": "Tucker Owens",
+      "method": "Dec 14-7"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34944168132",
+      "opponent_name": "Tucker Owens",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 125,
+      "opponent_rank": 33,
+      "result": "L",
+      "method": "DEC",
+      "score": "14-7",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": -2.35
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934762132",
+      "opponent_name": "Hunter Taylor",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Mike Clock Open Men",
+      "mv_impact": -2.49
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937682132",
+      "opponent_name": "Teague Strobel",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 125,
+      "opponent_rank": 65,
+      "result": "W",
+      "method": "MD",
+      "score": "14-6",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 3.18
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34936030132",
+      "opponent_name": "Curtis Nelson",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 125,
+      "opponent_rank": 54,
+      "result": "W",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 3.66
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934822132",
+      "opponent_name": "Tyler Klinsky",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 125,
+      "opponent_rank": 19,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:18",
+      "event": "Princeton Open",
+      "mv_impact": -4.44
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934762132",
+      "opponent_name": "Hunter Taylor",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -3.49
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934843132",
+      "opponent_name": "Alex Esposito",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -0.02
+    }
+  ]
+}

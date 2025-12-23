@@ -1,0 +1,121 @@
+{
+  "wrestler_id": "34945179132",
+  "name": "Vincent Paino",
+  "team": "Purdue",
+  "team_slug": "purdue",
+  "team_rank": 20,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 8.0,
+    "pa7": 1.0,
+    "pd7": 7.0,
+    "si_plus": 88.4,
+    "df_plus": 107.5,
+    "apr_plus": 98.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.333,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.433,
+      "matches": 4,
+      "rank_weight": 59,
+      "rank_overall": 623,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934362132",
+      "opponent_rank": 66,
+      "opponent_name": "Ricardo Saenz",
+      "method": "MD 11-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34944528132",
+      "opponent_rank": 6,
+      "opponent_name": "Kyler Larkin",
+      "method": "Fall 4:52"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935918132",
+      "opponent_name": "Marley Washington",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 141,
+      "opponent_rank": 75,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "vs. Purdue",
+      "mv_impact": 0.32
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944528132",
+      "opponent_name": "Kyler Larkin",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 133,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:52",
+      "event": "Michigan State Open",
+      "mv_impact": -2.67
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951040132",
+      "opponent_name": "Landon Bainey",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "0:22",
+      "event": "Michigan State Open",
+      "mv_impact": 1.81
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934362132",
+      "opponent_name": "Ricardo Saenz",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 133,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 2.27
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

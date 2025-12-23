@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34964377132",
+  "name": "Joe Sciarrone",
+  "team": "Cornell",
+  "team_slug": "cornell",
+  "team_rank": 10,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.67,
+    "pa7": 4.33,
+    "pd7": 3.33,
+    "si_plus": 100.4,
+    "df_plus": 108.6,
+    "apr_plus": 96.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.303,
+      "matches": 3,
+      "rank_weight": 82,
+      "rank_overall": 834,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936195132",
+      "opponent_name": "Gavin Martin",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-5",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": 1.71
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34949434132",
+      "opponent_name": "Caden Smith",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "15-6",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": 1.0
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34938521132",
+      "opponent_name": "Malachi Stratton",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 45,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -3.61
+    }
+  ]
+}

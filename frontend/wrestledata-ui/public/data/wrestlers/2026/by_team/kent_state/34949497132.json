@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34949497132",
+  "name": "Ismael Ayoub",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 70,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-3",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.62,
+    "pa7": 7.46,
+    "pd7": -1.85,
+    "si_plus": 93.3,
+    "df_plus": 98.5,
+    "apr_plus": 97.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.988,
+      "matches": 4,
+      "rank_weight": 163,
+      "rank_overall": 1520,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34955409132",
+      "opponent_rank": 73,
+      "opponent_name": "Charles Curtis",
+      "method": "MD 18-9"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-20",
+      "opponent_id": "34941780132",
+      "opponent_name": "Jesse Mendez",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 141,
+      "opponent_rank": 1,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
+      "event": "vs. Ohio State",
+      "mv_impact": -2.6
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34945841132",
+      "opponent_name": "Lucas Peters",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Michigan State Open",
+      "mv_impact": -4.13
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955420132",
+      "opponent_name": "Tee Ward",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 0.78
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955409132",
+      "opponent_name": "Charles Curtis",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 141,
+      "opponent_rank": 73,
+      "result": "L",
+      "method": "MD",
+      "score": "18-9",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -6.01
+    }
+  ]
+}

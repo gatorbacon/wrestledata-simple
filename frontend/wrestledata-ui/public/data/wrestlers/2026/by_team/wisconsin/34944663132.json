@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34944663132",
+  "name": "Brock Bobzien",
+  "team": "Wisconsin",
+  "team_slug": "wisconsin",
+  "team_rank": 31,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.25,
+    "pa7": 4.0,
+    "pd7": 2.25,
+    "si_plus": 101.0,
+    "df_plus": 105.4,
+    "apr_plus": 99.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.333,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.318,
+      "matches": 5,
+      "rank_weight": 76,
+      "rank_overall": 669,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34955409132",
+      "opponent_rank": 73,
+      "opponent_name": "Charles Curtis",
+      "method": "Dec 7-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34933983132",
+      "opponent_rank": 39,
+      "opponent_name": "Jaden Crumpler",
+      "method": "Dec 8-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34962157132",
+      "opponent_name": "Jace Rhodes",
+      "opponent_team": "Iowa",
+      "opponent_team_rank": 3,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Jim Koch Wisconsin Open",
+      "mv_impact": -3.87
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34955420132",
+      "opponent_name": "Tee Ward",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "Jim Koch Wisconsin Open",
+      "mv_impact": 1.78
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34964937132",
+      "opponent_name": "Max Brady",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "0:29",
+      "event": "Jim Koch Wisconsin Open",
+      "mv_impact": 5.11
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933983132",
+      "opponent_name": "Jaden Crumpler",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 141,
+      "opponent_rank": 39,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -2.42
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955409132",
+      "opponent_name": "Charles Curtis",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 141,
+      "opponent_rank": 73,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 0.99
+    }
+  ]
+}

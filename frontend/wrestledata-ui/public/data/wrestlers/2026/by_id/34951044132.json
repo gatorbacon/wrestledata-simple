@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34951044132",
+  "name": "Cheaney Schoeff",
+  "team": "Edinboro",
+  "team_slug": "edinboro",
+  "team_rank": 53,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.0,
+    "pa7": 1.0,
+    "pd7": 10.0,
+    "si_plus": 103.3,
+    "df_plus": 108.7,
+    "apr_plus": 93.7,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.875,
+      "matches": 4,
+      "rank_weight": 182,
+      "rank_overall": 1492,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934114132",
+      "opponent_name": "Colin Kacena",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 51,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:34",
+      "event": "Kent State Open 1",
+      "mv_impact": -7.74
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34933989132",
+      "opponent_name": "Sammy Agnello",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -0.21
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34936227132",
+      "opponent_name": "Nathan Wood",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:25",
+      "event": "Kent State Open 1",
+      "mv_impact": 2.14
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34955776132",
+      "opponent_name": "Jager Eisch",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:57",
+      "event": "Kent State Open 1",
+      "mv_impact": -5.69
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5
+  }
+}

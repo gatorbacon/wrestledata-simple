@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34952695132",
+  "name": "Logan Rozynski",
+  "team": "Lehigh",
+  "team_slug": "lehigh",
+  "team_rank": 16,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 8,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "1-2",
+    "vs_top25": "2-2"
+  },
+  "metrics": {
+    "pf7": 9.75,
+    "pa7": 3.72,
+    "pd7": 6.03,
+    "si_plus": 112.0,
+    "df_plus": 114.8,
+    "apr_plus": 99.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.667,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.724,
+      "matches": 5,
+      "rank_weight": 15,
+      "rank_overall": 167,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 2,
+    "top10_wins": 1,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34935617132",
+      "opponent_rank": 9,
+      "opponent_name": "Antrell Taylor",
+      "method": "MD 10-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34952082132",
+      "opponent_rank": 6,
+      "opponent_name": "Kannon Webster",
+      "method": "Dec 8-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34939039132",
+      "opponent_name": "PJ Duke",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
+      "opponent_weight": 157,
+      "opponent_rank": 5,
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "5:40",
+      "event": "vs. Penn State",
+      "mv_impact": -2.46
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34943749132",
+      "opponent_name": "Chance McLane",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 157,
+      "opponent_rank": 13,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "vs. Lehigh",
+      "mv_impact": 4.35
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34952082132",
+      "opponent_name": "Kannon Webster",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 9,
+      "opponent_weight": 157,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "vs. Lehigh",
+      "mv_impact": 0.12
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34935617132",
+      "opponent_name": "Antrell Taylor",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 157,
+      "opponent_rank": 9,
+      "result": "W",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "vs. Nebraska",
+      "mv_impact": 6.25
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34950439132",
+      "opponent_name": "Mikey Boulanger",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 68,
+      "opponent_weight": 157,
+      "opponent_rank": 58,
+      "result": "W",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "4:19",
+      "event": "vs. Lehigh",
+      "mv_impact": 5.37
+    }
+  ]
+}

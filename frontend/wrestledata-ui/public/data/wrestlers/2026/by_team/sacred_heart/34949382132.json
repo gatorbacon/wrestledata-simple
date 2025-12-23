@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34949382132",
+  "name": "Anthony Totta",
+  "team": "Sacred Heart",
+  "team_slug": "sacred_heart",
+  "team_rank": 76,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 11.0,
+    "pd7": -11.0,
+    "si_plus": 82.5,
+    "df_plus": 93.8,
+    "apr_plus": 105.2,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -4.57,
+      "matches": 4,
+      "rank_weight": 195,
+      "rank_overall": 1806,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34947812132",
+      "opponent_rank": 72,
+      "opponent_name": "Marco Albanese",
+      "method": "Fall 2:02"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34947812132",
+      "opponent_name": "Marco Albanese",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 61,
+      "opponent_weight": 165,
+      "opponent_rank": 72,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:02",
+      "event": "Big Red Invitational",
+      "mv_impact": -6.44
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34948511132",
+      "opponent_name": "Connor O`Donnell",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 63,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -6.23
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34938691132",
+      "opponent_name": "Coy Bryson",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -7.51
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34949312132",
+      "opponent_name": "Lucas Gutierrez",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:33",
+      "event": "Big Red Invitational",
+      "mv_impact": 1.9
+    }
+  ]
+}

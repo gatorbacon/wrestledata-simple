@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34933995132",
+  "name": "Mason Stewart",
+  "team": "Michigan State",
+  "team_slug": "michigan_state",
+  "team_rank": 72,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 10.0,
+    "pd7": -7.0,
+    "si_plus": 93.3,
+    "df_plus": 95.2,
+    "apr_plus": 106.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.626,
+      "matches": 3,
+      "rank_weight": 164,
+      "rank_overall": 1436,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34947354132",
+      "opponent_rank": 54,
+      "opponent_name": "Silas Stits",
+      "method": "Fall 0:37"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34947354132",
+      "opponent_name": "Silas Stits",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 149,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "Michigan State Open",
+      "mv_impact": -5.62
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951041132",
+      "opponent_name": "Joe Clark",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:22",
+      "event": "Michigan State Open",
+      "mv_impact": 2.0
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955625132",
+      "opponent_name": "Tyler Turzinski",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -4.25
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

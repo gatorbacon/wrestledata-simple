@@ -1,0 +1,141 @@
+{
+  "wrestler_id": "34933453132",
+  "name": "John Alden",
+  "team": "Wyoming",
+  "team_slug": "wyoming",
+  "team_rank": 22,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-6",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
+  },
+  "metrics": {
+    "pf7": 4.02,
+    "pa7": 14.0,
+    "pd7": -9.98,
+    "si_plus": 102.5,
+    "df_plus": 90.2,
+    "apr_plus": 98.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.564,
+      "matches": 6,
+      "rank_weight": 156,
+      "rank_overall": 1422,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34933358132",
+      "opponent_rank": 26,
+      "opponent_name": "Tom Crook",
+      "method": "TF 20-5 4:19"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34939038132",
+      "opponent_name": "Nate Desmond",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "vs. Wyoming",
+      "mv_impact": -0.02
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34955746132",
+      "opponent_name": "billy dekraker",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 40,
+      "opponent_weight": 141,
+      "opponent_rank": 16,
+      "result": "L",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -2.61
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34936032132",
+      "opponent_name": "Elijah Griffin",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 141,
+      "opponent_rank": 14,
+      "result": "L",
+      "method": "MD",
+      "score": "17-4",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -2.11
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34950658132",
+      "opponent_name": "Jesse Vasquez",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 65,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "vs. Wyoming",
+      "mv_impact": -4.43
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34941780132",
+      "opponent_name": "Jesse Mendez",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 141,
+      "opponent_rank": 1,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "vs. Wyoming",
+      "mv_impact": -2.6
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34933358132",
+      "opponent_name": "Tom Crook",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 18,
+      "opponent_weight": 141,
+      "opponent_rank": 26,
+      "result": "L",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "4:19",
+      "event": "vs. Wyoming",
+      "mv_impact": -3.63
+    }
+  ]
+}

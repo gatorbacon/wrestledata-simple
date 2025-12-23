@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34964937132",
+  "name": "Max Brady",
+  "team": "Northern Iowa",
+  "team_slug": "northern_iowa",
+  "team_rank": 26,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 13.0,
+    "pa7": 7.53,
+    "pd7": 5.47,
+    "si_plus": 104.5,
+    "df_plus": 106.2,
+    "apr_plus": 97.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.78,
+      "matches": 4,
+      "rank_weight": 131,
+      "rank_overall": 1240,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34957805132",
+      "opponent_rank": 69,
+      "opponent_name": "KJ Evans",
+      "method": "Dec 8-4"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34962163132",
+      "opponent_name": "Kale Petersen",
+      "opponent_team": "Iowa",
+      "opponent_team_rank": 3,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "7:00",
+      "event": "Jim Koch Wisconsin Open",
+      "mv_impact": -3.14
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944663132",
+      "opponent_name": "Brock Bobzien",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 31,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "0:29",
+      "event": "Jim Koch Wisconsin Open",
+      "mv_impact": -6.51
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34957805132",
+      "opponent_name": "KJ Evans",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 57,
+      "opponent_weight": 141,
+      "opponent_rank": 69,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "Younes Hospitality Open",
+      "mv_impact": 1.89
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34944691132",
+      "opponent_name": "Peter Tomazevic",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 31,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "25-8",
+      "duration": "5:50",
+      "event": "Grand View Open",
+      "mv_impact": 0.63
+    }
+  ]
+}

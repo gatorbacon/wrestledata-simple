@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34953916132",
+  "name": "Max Ohamuo",
+  "team": "LIU",
+  "team_slug": "liu",
+  "team_rank": 71,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-5",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 9.77,
+    "pa7": 25.0,
+    "pd7": -15.23,
+    "si_plus": 113.7,
+    "df_plus": 70.1,
+    "apr_plus": 95.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -7.013,
+      "matches": 5,
+      "rank_weight": 180,
+      "rank_overall": 2020,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34955053132",
+      "opponent_rank": 46,
+      "opponent_name": "Brenan Morgan",
+      "method": "TF 17-2 1:26"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34937668132",
+      "opponent_name": "Adrian Sans",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:41",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -9.11
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34940527132",
+      "opponent_name": "Dominic Iaquinto",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:43",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -8.98
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34935961132",
+      "opponent_name": "Ethan Miller",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:53",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -7.21
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955053132",
+      "opponent_name": "Brenan Morgan",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 47,
+      "opponent_weight": 285,
+      "opponent_rank": 46,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "1:26",
+      "event": "vs. Virginia",
+      "mv_impact": -4.79
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34985676132",
+      "opponent_name": "Kade Sottolano",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 285,
+      "opponent_rank": 44,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "vs. Lock Haven",
+      "mv_impact": -4.98
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

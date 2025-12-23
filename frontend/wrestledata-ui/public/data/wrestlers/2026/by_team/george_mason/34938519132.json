@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34938519132",
+  "name": "Tyson Rakers",
+  "team": "George Mason",
+  "team_slug": "george_mason",
+  "team_rank": 45,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 14.0,
+    "pd7": -12.0,
+    "si_plus": 89.5,
+    "df_plus": 88.5,
+    "apr_plus": 104.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.908,
+      "matches": 3,
+      "rank_weight": 191,
+      "rank_overall": 1695,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934196132",
+      "opponent_rank": 73,
+      "opponent_name": "Eric Doran",
+      "method": "Fall 2:47"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34934209132",
+      "opponent_name": "Alex Chirdo",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:39",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 1.7
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34948134132",
+      "opponent_name": "Cody Tavoso",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -5.81
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34934196132",
+      "opponent_name": "Eric Doran",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 157,
+      "opponent_rank": 73,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:47",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -7.62
+    }
+  ]
+}

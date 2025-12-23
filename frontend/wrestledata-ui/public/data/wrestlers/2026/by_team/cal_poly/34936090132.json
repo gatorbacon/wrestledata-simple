@@ -1,0 +1,130 @@
+{
+  "wrestler_id": "34936090132",
+  "name": "Zeth Romney",
+  "team": "Cal Poly",
+  "team_slug": "cal_poly",
+  "team_rank": 32,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 9,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 6.07,
+    "pa7": 5.5,
+    "pd7": 0.57,
+    "si_plus": 106.4,
+    "df_plus": 107.1,
+    "apr_plus": 108.9,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.898,
+      "matches": 4,
+      "rank_weight": 8,
+      "rank_overall": 141,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34955746132",
+      "opponent_rank": 16,
+      "opponent_name": "billy dekraker",
+      "method": "Dec 5-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34934756132",
+      "opponent_rank": 52,
+      "opponent_name": "Nash Singleton",
+      "method": "Dec 10-9"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34943278132",
+      "opponent_name": "Haiden Drury",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 30,
+      "opponent_weight": 141,
+      "opponent_rank": 8,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34955746132",
+      "opponent_name": "billy dekraker",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 40,
+      "opponent_weight": 141,
+      "opponent_rank": 16,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 4.39
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934756132",
+      "opponent_name": "Nash Singleton",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 141,
+      "opponent_rank": 52,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-9",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -2.63
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34949295132",
+      "opponent_name": "John Hildebrandt",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 141,
+      "opponent_rank": 59,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:24",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 6.02
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34945147132",
+      "opponent_name": "Greyson Clark",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 141,
+      "opponent_rank": 29,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "10:00",
+      "event": "vs. Purdue",
+      "mv_impact": 3.81
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34944577132",
+  "name": "Ane`e Vigil",
+  "team": "Arizona State",
+  "team_slug": "arizona_state",
+  "team_rank": 11,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 2.46,
+    "pa7": 8.42,
+    "pd7": -5.96,
+    "si_plus": 91.0,
+    "df_plus": 95.6,
+    "apr_plus": 102.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.257,
+      "matches": 5,
+      "rank_weight": 138,
+      "rank_overall": 1354,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34933988132",
+      "opponent_rank": 55,
+      "opponent_name": "Caleb Weiand",
+      "method": "TF 15-0 2:49"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34952668132",
+      "opponent_name": "Sheldon Seymour",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 125,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:16",
+      "event": "vs. Lehigh",
+      "mv_impact": -3.35
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933988132",
+      "opponent_name": "Caleb Weiand",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 125,
+      "opponent_rank": 55,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:49",
+      "event": "Michigan State Open",
+      "mv_impact": -4.42
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34945847132",
+      "opponent_name": "Anthony Isek",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:03",
+      "event": "Michigan State Open",
+      "mv_impact": 2.04
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933977132",
+      "opponent_name": "Nick Corday",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "8:15",
+      "event": "Michigan State Open",
+      "mv_impact": -2.97
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34943751132",
+      "opponent_name": "Damian Moreno",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 125,
+      "opponent_rank": 36,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "vs. Arizona State",
+      "mv_impact": -2.57
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.14285714285714285
+  }
+}

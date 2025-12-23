@@ -1,0 +1,136 @@
+{
+  "wrestler_id": "34946248132",
+  "name": "Teegan Vasquez",
+  "team": "The Citadel",
+  "team_slug": "the_citadel",
+  "team_rank": 77,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": 60,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 12.88,
+    "pa7": 6.45,
+    "pd7": 6.43,
+    "si_plus": 113.0,
+    "df_plus": 103.7,
+    "apr_plus": 97.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.266,
+      "matches": 5,
+      "rank_weight": 70,
+      "rank_overall": 683,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34938514132",
+      "opponent_rank": 62,
+      "opponent_name": "Anthony Lucchiani",
+      "method": "Dec 12-9"
+    },
+    "worst_loss": {
+      "opponent_id": "34944171132",
+      "opponent_rank": 56,
+      "opponent_name": "Gavin Caprella",
+      "method": "MD 11-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34933973132",
+      "opponent_name": "Andy Hampton",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "20-2",
+      "duration": "6:15",
+      "event": "vs. The Citadel",
+      "mv_impact": 2.8
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34944171132",
+      "opponent_name": "Gavin Caprella",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 133,
+      "opponent_rank": 56,
+      "result": "L",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "vs. The Citadel",
+      "mv_impact": -4.56
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34957585132",
+      "opponent_name": "Braxton Brown",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 133,
+      "opponent_rank": 22,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. The Citadel",
+      "mv_impact": -1.85
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34936197132",
+      "opponent_name": "Gavin Mundy",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:39",
+      "event": "vs. The Citadel",
+      "mv_impact": 2.98
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34938514132",
+      "opponent_name": "Anthony Lucchiani",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 45,
+      "opponent_weight": 133,
+      "opponent_rank": 62,
+      "result": "W",
+      "method": "DEC",
+      "score": "12-9",
+      "duration": "7:00",
+      "event": "vs. The Citadel",
+      "mv_impact": 1.96
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

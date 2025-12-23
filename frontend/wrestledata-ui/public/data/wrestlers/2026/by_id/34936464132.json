@@ -1,0 +1,106 @@
+{
+  "wrestler_id": "34936464132",
+  "name": "Austin Johnson",
+  "team": "Oklahoma State",
+  "team_slug": "oklahoma_state",
+  "team_rank": 5,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.67,
+    "pa7": 2.67,
+    "pd7": 0.0,
+    "si_plus": 94.0,
+    "df_plus": 112.8,
+    "apr_plus": 99.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.135,
+      "matches": 3,
+      "rank_weight": 42,
+      "rank_overall": 438,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34952104132",
+      "opponent_rank": 44,
+      "opponent_name": "Cade Lautt",
+      "method": "Dec 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34948512132",
+      "opponent_rank": 26,
+      "opponent_name": "Andrew Reall",
+      "method": "Dec 5-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34948512132",
+      "opponent_name": "Andrew Reall",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 63,
+      "opponent_weight": 197,
+      "opponent_rank": 26,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -0.81
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34952104132",
+      "opponent_name": "Cade Lautt",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 9,
+      "opponent_weight": 197,
+      "opponent_rank": 44,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": 2.59
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34937094132",
+      "opponent_name": "Andrew Donahue",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 57,
+      "opponent_weight": 197,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": 1.62
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.4
+  }
+}

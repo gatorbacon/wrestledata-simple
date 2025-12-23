@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34945365132",
+  "name": "Gunner Holland",
+  "team": "Little Rock",
+  "team_slug": "little_rock",
+  "team_rank": 12,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 3.25,
+    "pa7": 15.18,
+    "pd7": -11.93,
+    "si_plus": 97.0,
+    "df_plus": 91.7,
+    "apr_plus": 99.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.146,
+      "matches": 4,
+      "rank_weight": 135,
+      "rank_overall": 1552,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34945831132",
+      "opponent_rank": 31,
+      "opponent_name": "Derek Gilcher",
+      "method": "TF 19-4 5:54"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34945831132",
+      "opponent_name": "Derek Gilcher",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 174,
+      "opponent_rank": 31,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "5:54",
+      "event": "vs. Little Rock",
+      "mv_impact": -3.91
+    },
+    {
+      "date": "2025-12-04",
+      "opponent_id": "34955787132",
+      "opponent_name": "Ethan Riddle",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 174,
+      "opponent_rank": 21,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "vs. Minnesota",
+      "mv_impact": -1.48
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34952085132",
+      "opponent_name": "Colin Kelly",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 9,
+      "opponent_weight": 174,
+      "opponent_rank": 17,
+      "result": "L",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "vs. Little Rock",
+      "mv_impact": -2.2
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34943971132",
+      "opponent_name": "Cam Steed",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 174,
+      "opponent_rank": 27,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:16",
+      "event": "vs. Missouri",
+      "mv_impact": -4.99
+    }
+  ]
+}

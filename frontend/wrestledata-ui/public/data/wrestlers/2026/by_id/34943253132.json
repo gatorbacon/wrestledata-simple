@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34943253132",
+  "name": "Jacob Fistler",
+  "team": "South Dakota State",
+  "team_slug": "south_dakota_state",
+  "team_rank": 28,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.86,
+    "pa7": 5.23,
+    "pd7": 2.62,
+    "si_plus": 89.2,
+    "df_plus": 104.3,
+    "apr_plus": 98.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.088,
+      "matches": 5,
+      "rank_weight": 134,
+      "rank_overall": 1537,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934620132",
+      "opponent_rank": 72,
+      "opponent_name": "Max Magayna",
+      "method": "MD 13-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34934607132",
+      "opponent_name": "Alex Kowalchyk",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "4:16",
+      "event": "MSU Moorhead Dragon Open",
+      "mv_impact": -0.56
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34935620132",
+      "opponent_name": "Ethan DeLeon",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -1.94
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34934620132",
+      "opponent_name": "Max Magayna",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 174,
+      "opponent_rank": 72,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -5.04
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955796132",
+      "opponent_name": "Jed Wester",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -1.86
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934620132",
+      "opponent_name": "Max Magayna",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 174,
+      "opponent_rank": 72,
+      "result": "L",
+      "method": "MD",
+      "score": "13-1",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -6.04
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

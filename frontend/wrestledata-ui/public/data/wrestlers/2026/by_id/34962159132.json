@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34962159132",
+  "name": "Gabe Arnold",
+  "team": "Iowa",
+  "team_slug": "iowa",
+  "team_rank": 3,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 20.0,
+    "pa7": 4.83,
+    "pd7": 15.17,
+    "si_plus": 131.4,
+    "df_plus": 109.2,
+    "apr_plus": 107.5,
+    "pin_rate": 0.333,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.84,
+      "matches": 3,
+      "rank_weight": 16,
+      "rank_overall": 147,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934139132",
+      "opponent_rank": 38,
+      "opponent_name": "Chase Kranitz",
+      "method": "MD 15-5"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944682132",
+      "opponent_name": "David Malin",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 31,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "3:00",
+      "event": "Jim Koch Wisconsin Open",
+      "mv_impact": 1.75
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34955611132",
+      "opponent_name": "Ali Adel",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:01",
+      "event": "Jim Koch Wisconsin Open",
+      "mv_impact": 2.63
+    },
+    {
+      "date": "2025-11-21",
+      "opponent_id": "34934139132",
+      "opponent_name": "Chase Kranitz",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 33,
+      "opponent_weight": 184,
+      "opponent_rank": 38,
+      "result": "W",
+      "method": "MD",
+      "score": "15-5",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh",
+      "mv_impact": 4.14
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

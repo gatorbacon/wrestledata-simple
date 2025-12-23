@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34964067132",
+  "name": "Carson Babcock",
+  "team": "Northern Iowa",
+  "team_slug": "northern_iowa",
+  "team_rank": 26,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.0,
+    "pa7": 3.5,
+    "pd7": -2.5,
+    "si_plus": 86.7,
+    "df_plus": 109.2,
+    "apr_plus": 97.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.342,
+      "matches": 2,
+      "rank_weight": 132,
+      "rank_overall": 1588,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34952104132",
+      "opponent_rank": 44,
+      "opponent_name": "Cade Lautt",
+      "method": "Dec 2-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34952104132",
+      "opponent_name": "Cade Lautt",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 9,
+      "opponent_weight": 197,
+      "opponent_rank": 44,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -3.41
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34936398132",
+      "opponent_name": "Trevor Dopps",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -3.27
+    }
+  ]
+}

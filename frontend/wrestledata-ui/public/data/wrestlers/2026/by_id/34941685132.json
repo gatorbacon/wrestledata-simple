@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34941685132",
+  "name": "Colby Crouch",
+  "team": "Campbell",
+  "team_slug": "campbell",
+  "team_rank": 43,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 51,
+  "record": {
+    "overall": "5-1",
+    "vs_ranked": "4-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 10.83,
+    "pa7": 3.83,
+    "pd7": 7.0,
+    "si_plus": 116.4,
+    "df_plus": 108.3,
+    "apr_plus": 98.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.4,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.375,
+      "matches": 6,
+      "rank_weight": 28,
+      "rank_overall": 214,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 4,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34957603132",
+      "opponent_rank": 52,
+      "opponent_name": "Abram Cline",
+      "method": "Dec 3-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34936230132",
+      "opponent_rank": 50,
+      "opponent_name": "Jace Schafer",
+      "method": "Dec 9-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34936230132",
+      "opponent_name": "Jace Schafer",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 125,
+      "opponent_rank": 50,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "vs. Campbell",
+      "mv_impact": -1.87
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34938480132",
+      "opponent_name": "Ben Monn",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 45,
+      "opponent_weight": 125,
+      "opponent_rank": 53,
+      "result": "W",
+      "method": "MD",
+      "score": "16-6",
+      "duration": "7:00",
+      "event": "vs. George Mason",
+      "mv_impact": 4.22
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937009132",
+      "opponent_name": "Brayden Teunissen",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 125,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 2.82
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957603132",
+      "opponent_name": "Abram Cline",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 125,
+      "opponent_rank": 52,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 3.8
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957599132",
+      "opponent_name": "Tyler Garvin",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 2.72
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34954516132",
+      "opponent_name": "Dallas Canoyer",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 125,
+      "opponent_rank": 73,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:34",
+      "event": "Southeast Open",
+      "mv_impact": 2.57
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.14285714285714285
+  }
+}

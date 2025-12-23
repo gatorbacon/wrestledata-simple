@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34945837132",
+  "name": "Bryce Lowery",
+  "team": "Indiana",
+  "team_slug": "indiana",
+  "team_rank": 35,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 41,
+  "record": {
+    "overall": "3-3",
+    "vs_ranked": "2-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 5.12,
+    "pa7": 3.9,
+    "pd7": 1.22,
+    "si_plus": 98.6,
+    "df_plus": 109.5,
+    "apr_plus": 98.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.667,
+    "majors": 2,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.619,
+      "matches": 6,
+      "rank_weight": 65,
+      "rank_overall": 573,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935979132",
+      "opponent_rank": 45,
+      "opponent_name": "Nick Stampoulos",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34934410132",
+      "opponent_rank": 28,
+      "opponent_name": "Joe Antonio",
+      "method": "Dec 6-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34934410132",
+      "opponent_name": "Joe Antonio",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 157,
+      "opponent_rank": 28,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "vs. Indiana",
+      "mv_impact": -1.04
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34945367132",
+      "opponent_name": "jaivon jones",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 12,
+      "opponent_weight": 157,
+      "opponent_rank": 20,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "10:00",
+      "event": "vs. Little Rock",
+      "mv_impact": -1.25
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34934120132",
+      "opponent_name": "Mason Shrader",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 51,
+      "opponent_weight": 157,
+      "opponent_rank": 23,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-5",
+      "duration": "7:00",
+      "event": "vs. Indiana",
+      "mv_impact": -0.97
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34963129132",
+      "opponent_name": "Layton Schneider",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 21,
+      "opponent_weight": 157,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. Oklahoma",
+      "mv_impact": 3.32
+    },
+    {
+      "date": "2025-11-14",
+      "opponent_id": "34943407132",
+      "opponent_name": "Charlie Scanlan",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "vs. Indiana",
+      "mv_impact": 0.15
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34935979132",
+      "opponent_name": "Nick Stampoulos",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 157,
+      "opponent_rank": 45,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Lock Haven",
+      "mv_impact": 3.5
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

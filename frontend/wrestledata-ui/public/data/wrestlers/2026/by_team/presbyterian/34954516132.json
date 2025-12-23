@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34954516132",
+  "name": "Dallas Canoyer",
+  "team": "Presbyterian",
+  "team_slug": "presbyterian",
+  "team_rank": 75,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 73,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 12.5,
+    "pa7": 16.09,
+    "pd7": -3.59,
+    "si_plus": 90.2,
+    "df_plus": 73.4,
+    "apr_plus": 97.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.722,
+      "matches": 5,
+      "rank_weight": 143,
+      "rank_overall": 1459,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34937009132",
+      "opponent_rank": 66,
+      "opponent_name": "Brayden Teunissen",
+      "method": "Fall 6:26"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34945477132",
+      "opponent_name": "Cooper Foster",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 125,
+      "opponent_rank": 64,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:33",
+      "event": "Mountaineer Open",
+      "mv_impact": -6.01
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34950408132",
+      "opponent_name": "Evan Coles",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 68,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "22-6",
+      "duration": "3:17",
+      "event": "Mountaineer Open",
+      "mv_impact": 1.52
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34937009132",
+      "opponent_name": "Brayden Teunissen",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 125,
+      "opponent_rank": 66,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:26",
+      "event": "Mountaineer Open",
+      "mv_impact": -6.18
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34954510132",
+      "opponent_name": "Ethan York",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "4:28",
+      "event": "Mountaineer Open",
+      "mv_impact": 1.41
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941685132",
+      "opponent_name": "Colby Crouch",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 43,
+      "opponent_weight": 125,
+      "opponent_rank": 51,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:34",
+      "event": "Southeast Open",
+      "mv_impact": -4.36
+    }
+  ]
+}

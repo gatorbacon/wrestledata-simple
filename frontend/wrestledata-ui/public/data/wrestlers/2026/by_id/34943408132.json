@@ -1,0 +1,106 @@
+{
+  "wrestler_id": "34943408132",
+  "name": "Mark Gray",
+  "team": "Columbia",
+  "team_slug": "columbia",
+  "team_rank": 50,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 13.0,
+    "pd7": -9.0,
+    "si_plus": 93.0,
+    "df_plus": 91.6,
+    "apr_plus": 112.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.507,
+      "matches": 3,
+      "rank_weight": 124,
+      "rank_overall": 1408,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34949302132",
+      "opponent_rank": 77,
+      "opponent_name": "Dominick Kraemer",
+      "method": "Fall 1:40"
+    },
+    "worst_loss": {
+      "opponent_id": "34935722132",
+      "opponent_rank": 56,
+      "opponent_name": "Greyson Meak",
+      "method": "TF 15-0 1:54"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34939047132",
+      "opponent_name": "Jonathan Sanchez",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.76
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34935722132",
+      "opponent_name": "Greyson Meak",
+      "opponent_team": "Penn",
+      "opponent_team_rank": 27,
+      "opponent_weight": 184,
+      "opponent_rank": 56,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:54",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.94
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34949302132",
+      "opponent_name": "Dominick Kraemer",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 184,
+      "opponent_rank": 77,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:40",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 2.18
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

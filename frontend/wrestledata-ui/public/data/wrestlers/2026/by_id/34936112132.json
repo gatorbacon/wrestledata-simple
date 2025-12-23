@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34936112132",
+  "name": "Trevor Tinker",
+  "team": "Cal Poly",
+  "team_slug": "cal_poly",
+  "team_rank": 32,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 11,
+  "record": {
+    "overall": "4-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "0-2",
+    "vs_top25": "1-2"
+  },
+  "metrics": {
+    "pf7": 6.01,
+    "pa7": 7.8,
+    "pd7": -1.79,
+    "si_plus": 105.5,
+    "df_plus": 105.3,
+    "apr_plus": 104.9,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.446,
+      "matches": 6,
+      "rank_weight": 27,
+      "rank_overall": 200,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34943234132",
+      "opponent_rank": 14,
+      "opponent_name": "Luke Rasmussen",
+      "method": "Dec 6-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34933568132",
+      "opponent_rank": 6,
+      "opponent_name": "Taye Ghadiali",
+      "method": "MD 9-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34943234132",
+      "opponent_name": "Luke Rasmussen",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 28,
+      "opponent_weight": 285,
+      "opponent_rank": 14,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 4.8
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34933370132",
+      "opponent_name": "Parker Ferrell",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 18,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 5.21
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34933568132",
+      "opponent_name": "Taye Ghadiali",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 14,
+      "opponent_weight": 285,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -1.24
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34940702132",
+      "opponent_name": "Yonger Bastida",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 4,
+      "opponent_weight": 285,
+      "opponent_rank": 1,
+      "result": "L",
+      "method": "TF",
+      "score": "23-4",
+      "duration": "4:38",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -1.59
+    },
+    {
+      "date": "2025-11-14",
+      "opponent_id": "34962194132",
+      "opponent_name": "Mason Cover",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 285,
+      "opponent_rank": 64,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:09",
+      "event": "vs. Cal Poly",
+      "mv_impact": 4.14
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34945135132",
+      "opponent_name": "Hayden Filipovich",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 285,
+      "opponent_rank": 36,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "vs. Purdue",
+      "mv_impact": 3.35
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 0.2962962962962963
+  }
+}

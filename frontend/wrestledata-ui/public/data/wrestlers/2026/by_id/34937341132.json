@@ -1,0 +1,146 @@
+{
+  "wrestler_id": "34937341132",
+  "name": "Mason Pellegri",
+  "team": "Harvard",
+  "team_slug": "harvard",
+  "team_rank": 55,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-6",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.09,
+    "pa7": 21.5,
+    "pd7": -18.41,
+    "si_plus": 92.4,
+    "df_plus": 75.8,
+    "apr_plus": 94.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.597,
+      "matches": 6,
+      "rank_weight": 169,
+      "rank_overall": 1923,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934449132",
+      "opponent_rank": 72,
+      "opponent_name": "RJ Moore",
+      "method": "MD 18-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934449132",
+      "opponent_name": "RJ Moore",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 197,
+      "opponent_rank": 72,
+      "result": "L",
+      "method": "MD",
+      "score": "18-6",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -6.25
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935975132",
+      "opponent_name": "Tucker Hogan",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 197,
+      "opponent_rank": 45,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:59",
+      "event": "Keystone Classic",
+      "mv_impact": -4.47
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34944354132",
+      "opponent_name": "Gunnar Pool",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -5.64
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934343132",
+      "opponent_name": "Jackson Van Kley",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:39",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -6.63
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34947813132",
+      "opponent_name": "Quinn Funk",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 61,
+      "opponent_weight": 197,
+      "opponent_rank": 62,
+      "result": "L",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "3:30",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -5.23
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34936199132",
+      "opponent_name": "Coy Raines",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:18",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -5.36
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.4
+  }
+}

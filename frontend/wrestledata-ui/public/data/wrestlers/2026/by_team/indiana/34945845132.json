@@ -1,0 +1,146 @@
+{
+  "wrestler_id": "34945845132",
+  "name": "Gabe Sollars",
+  "team": "Indiana",
+  "team_slug": "indiana",
+  "team_rank": 35,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 25,
+  "record": {
+    "overall": "4-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 7.77,
+    "pa7": 5.6,
+    "pd7": 2.17,
+    "si_plus": 107.7,
+    "df_plus": 107.7,
+    "apr_plus": 108.3,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.75,
+    "majors": 1,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.929,
+      "matches": 6,
+      "rank_weight": 14,
+      "rank_overall": 136,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34943388132",
+      "opponent_rank": 43,
+      "opponent_name": "Adam Haselius",
+      "method": "TF 15-0 5:34"
+    },
+    "worst_loss": {
+      "opponent_id": "34963117132",
+      "opponent_rank": 6,
+      "opponent_name": "DJ Parker",
+      "method": "MD 14-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34934339132",
+      "opponent_name": "Reid Schroeder",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "vs. Indiana",
+      "mv_impact": 4.84
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34945352132",
+      "opponent_name": "Stephen Little",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 12,
+      "opponent_weight": 197,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "vs. Little Rock",
+      "mv_impact": -0.94
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34934108132",
+      "opponent_name": "Luke Cochran",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 51,
+      "opponent_weight": 197,
+      "opponent_rank": 47,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:00",
+      "event": "vs. Indiana",
+      "mv_impact": 6.12
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34963117132",
+      "opponent_name": "DJ Parker",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 21,
+      "opponent_weight": 197,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "MD",
+      "score": "14-4",
+      "duration": "7:00",
+      "event": "vs. Oklahoma",
+      "mv_impact": -1.26
+    },
+    {
+      "date": "2025-11-14",
+      "opponent_id": "34943388132",
+      "opponent_name": "Adam Haselius",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 197,
+      "opponent_rank": 43,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "5:34",
+      "event": "vs. Indiana",
+      "mv_impact": 5.28
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34935975132",
+      "opponent_name": "Tucker Hogan",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 197,
+      "opponent_rank": 45,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "vs. Lock Haven",
+      "mv_impact": 3.53
+    }
+  ]
+}

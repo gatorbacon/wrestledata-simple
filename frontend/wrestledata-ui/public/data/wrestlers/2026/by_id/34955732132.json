@@ -1,0 +1,116 @@
+{
+  "wrestler_id": "34955732132",
+  "name": "Marcell Booth",
+  "team": "Northwestern",
+  "team_slug": "northwestern",
+  "team_rank": 40,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.75,
+    "pa7": 6.75,
+    "pd7": -3.0,
+    "si_plus": 86.4,
+    "df_plus": 102.3,
+    "apr_plus": 91.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.083,
+      "matches": 4,
+      "rank_weight": 164,
+      "rank_overall": 1871,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34955735132",
+      "opponent_rank": 70,
+      "opponent_name": "Matt Kubas",
+      "method": "Dec 6-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934104132",
+      "opponent_name": "Cody Brenner",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 51,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -3.56
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34955735132",
+      "opponent_name": "Matt Kubas",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 40,
+      "opponent_weight": 184,
+      "opponent_rank": 70,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -4.65
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943755132",
+      "opponent_name": "Max Acciardi",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "15-13",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -7.21
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34947379132",
+      "opponent_name": "Mason Higley",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -4.91
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

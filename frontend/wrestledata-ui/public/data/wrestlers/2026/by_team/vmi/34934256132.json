@@ -1,0 +1,66 @@
+{
+  "wrestler_id": "34934256132",
+  "name": "Gideon Gerber",
+  "team": "VMI",
+  "team_slug": "vmi",
+  "team_rank": 78,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 9.2,
+    "pa7": 24.53,
+    "pd7": -15.33,
+    "si_plus": 109.2,
+    "df_plus": 79.1,
+    "apr_plus": 103.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.73,
+      "matches": 1,
+      "rank_weight": 129,
+      "rank_overall": 1460,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34933538132",
+      "opponent_rank": 8,
+      "opponent_name": "Brock Mantanona",
+      "method": "TF 24-9 6:51"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34933538132",
+      "opponent_name": "Brock Mantanona",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 14,
+      "opponent_weight": 184,
+      "opponent_rank": 8,
+      "result": "L",
+      "method": "TF",
+      "score": "24-9",
+      "duration": "6:51",
+      "event": "vs. VMI",
+      "mv_impact": -2.73
+    }
+  ]
+}

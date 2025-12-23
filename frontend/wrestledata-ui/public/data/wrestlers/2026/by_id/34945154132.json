@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "34945154132",
+  "name": "Quinn Herbert",
+  "team": "Purdue",
+  "team_slug": "purdue",
+  "team_rank": 20,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.65,
+    "pa7": 16.0,
+    "pd7": -9.35,
+    "si_plus": 107.8,
+    "df_plus": 90.2,
+    "apr_plus": 97.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.257,
+      "matches": 2,
+      "rank_weight": 119,
+      "rank_overall": 1355,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34943978132",
+      "opponent_rank": 2,
+      "opponent_name": "Aeoden Sinclair",
+      "method": "TF 21-6 3:25"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943978132",
+      "opponent_name": "Aeoden Sinclair",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 184,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "TF",
+      "score": "21-6",
+      "duration": "3:25",
+      "event": "Tiger Style Invite",
+      "mv_impact": -1.53
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943244132",
+      "opponent_name": "Jared Thiry",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 28,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-1",
+      "duration": "7:00",
+      "event": "Tiger Style Invite",
+      "mv_impact": -2.99
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

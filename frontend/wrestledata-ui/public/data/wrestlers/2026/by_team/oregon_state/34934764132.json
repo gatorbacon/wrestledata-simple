@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34934764132",
+  "name": "Moses Mirabal",
+  "team": "Oregon State",
+  "team_slug": "oregon_state",
+  "team_rank": 23,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 3.48,
+    "pa7": 11.0,
+    "pd7": -7.52,
+    "si_plus": 95.8,
+    "df_plus": 89.1,
+    "apr_plus": 99.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.664,
+      "matches": 3,
+      "rank_weight": 151,
+      "rank_overall": 1202,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944169132",
+      "opponent_rank": 66,
+      "opponent_name": "Bryce Shelton",
+      "method": "Dec 4-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34944169132",
+      "opponent_name": "Bryce Shelton",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 149,
+      "opponent_rank": 66,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": -3.24
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34950687132",
+      "opponent_name": "Braden Priest",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 65,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": 0.99
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935760132",
+      "opponent_name": "Chance Lamer",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 149,
+      "opponent_rank": 9,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "4:05",
+      "event": "Roadrunner Open",
+      "mv_impact": -2.74
+    }
+  ]
+}

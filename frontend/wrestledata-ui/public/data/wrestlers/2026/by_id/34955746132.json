@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34955746132",
+  "name": "billy dekraker",
+  "team": "Northwestern",
+  "team_slug": "northwestern",
+  "team_rank": 40,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 16,
+  "record": {
+    "overall": "4-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-1",
+    "vs_top25": "1-2"
+  },
+  "metrics": {
+    "pf7": 4.4,
+    "pa7": 2.73,
+    "pd7": 1.67,
+    "si_plus": 98.0,
+    "df_plus": 113.9,
+    "apr_plus": 97.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.25,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.494,
+      "matches": 6,
+      "rank_weight": 34,
+      "rank_overall": 350,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34940503132",
+      "opponent_rank": 18,
+      "opponent_name": "Caedyn Ricciardi",
+      "method": "TB-1 2-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34943753132",
+      "opponent_rank": 15,
+      "opponent_name": "Pierson Manville",
+      "method": "Dec 2-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34943753132",
+      "opponent_name": "Pierson Manville",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 141,
+      "opponent_rank": 15,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -1.25
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34936090132",
+      "opponent_name": "Zeth Romney",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 32,
+      "opponent_weight": 141,
+      "opponent_rank": 9,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -1.03
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34940503132",
+      "opponent_name": "Caedyn Ricciardi",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 141,
+      "opponent_rank": 18,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-2",
+      "duration": "10:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 4.13
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34945147132",
+      "opponent_name": "Greyson Clark",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 141,
+      "opponent_rank": 29,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 3.81
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34933453132",
+      "opponent_name": "John Alden",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 22,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 0.25
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34948140132",
+      "opponent_name": "Jacob Mann",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "vs. Princeton",
+      "mv_impact": 3.06
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 0.11666666666666665
+  }
+}

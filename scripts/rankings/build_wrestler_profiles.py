@@ -89,8 +89,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "-output_dir",
         type=str,
-        default="mt/wrestlers",
-        help="Output directory for wrestler profiles (default: mt/wrestlers)",
+        default="frontend/wrestledata-ui/public/data/wrestlers",
+        help="Output directory for wrestler profiles (default: frontend/wrestledata-ui/public/data/wrestlers)",
     )
     return parser.parse_args()
 

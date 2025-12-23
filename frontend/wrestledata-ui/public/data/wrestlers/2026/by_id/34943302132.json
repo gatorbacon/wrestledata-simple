@@ -1,0 +1,136 @@
+{
+  "wrestler_id": "34943302132",
+  "name": "Ian Fritz",
+  "team": "Utah Valley",
+  "team_slug": "utah_valley",
+  "team_rank": 30,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 4.67,
+    "pa7": 6.33,
+    "pd7": -1.67,
+    "si_plus": 100.3,
+    "df_plus": 105.5,
+    "apr_plus": 103.1,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.531,
+      "matches": 5,
+      "rank_weight": 67,
+      "rank_overall": 593,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34941564132",
+      "opponent_rank": 72,
+      "opponent_name": "PJ Murphy",
+      "method": "Dec 8-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34940864132",
+      "opponent_rank": 3,
+      "opponent_name": "Vinny Zerban",
+      "method": "Dec 11-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934015132",
+      "opponent_name": "Koa Ruiz",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 65,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:19",
+      "event": "Cyclone Invitational",
+      "mv_impact": 2.09
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34940725132",
+      "opponent_name": "Kane Naaktgeboren",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 4,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-1",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -3.08
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34940864132",
+      "opponent_name": "Vinny Zerban",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 4,
+      "opponent_weight": 157,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-5",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": 0.36
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34941551132",
+      "opponent_name": "Eric Almarinez",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": 1.91
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34941564132",
+      "opponent_name": "PJ Murphy",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 157,
+      "opponent_rank": 72,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": 1.37
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

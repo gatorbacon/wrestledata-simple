@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34962137132",
+  "name": "Richard Castro-Sandoval",
+  "team": "CSU Bakersfield",
+  "team_slug": "csu_bakersfield",
+  "team_rank": 64,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 42,
+  "record": {
+    "overall": "1-3",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-3"
+  },
+  "metrics": {
+    "pf7": 2.25,
+    "pa7": 5.5,
+    "pd7": -3.25,
+    "si_plus": 93.6,
+    "df_plus": 106.2,
+    "apr_plus": 99.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.294,
+      "matches": 4,
+      "rank_weight": 81,
+      "rank_overall": 830,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34955398132",
+      "opponent_rank": 25,
+      "opponent_name": "Blake West",
+      "method": "Dec 6-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934761132",
+      "opponent_name": "Maximo Renteria",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 125,
+      "opponent_rank": 12,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -0.57
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34955398132",
+      "opponent_name": "Blake West",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 125,
+      "opponent_rank": 25,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -1.54
+    },
+    {
+      "date": "2025-11-14",
+      "opponent_id": "34936034132",
+      "opponent_name": "Koda Holeman",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 32,
+      "opponent_weight": 125,
+      "opponent_rank": 15,
+      "result": "L",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "vs. Cal Poly",
+      "mv_impact": -2.36
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34945150132",
+      "opponent_name": "Isaiah Quintero",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "vs. Purdue",
+      "mv_impact": 3.29
+    }
+  ]
+}

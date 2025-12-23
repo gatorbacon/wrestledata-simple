@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34949038132",
+  "name": "Chris DeLena",
+  "team": "Sacred Heart",
+  "team_slug": "sacred_heart",
+  "team_rank": 76,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 64,
+  "record": {
+    "overall": "3-3",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 3.94,
+    "pa7": 3.28,
+    "pd7": 0.66,
+    "si_plus": 90.4,
+    "df_plus": 108.6,
+    "apr_plus": 95.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.427,
+      "matches": 6,
+      "rank_weight": 96,
+      "rank_overall": 1141,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34950414132",
+      "opponent_rank": 65,
+      "opponent_name": "Owen McGrory",
+      "method": "Dec 10-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34937679132",
+      "opponent_rank": 63,
+      "opponent_name": "Will Conlon",
+      "method": "TB-2 2-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34962231132",
+      "opponent_name": "Angel Cervantes",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 197,
+      "opponent_rank": 75,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -1.26
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34936109132",
+      "opponent_name": "Cole Jackson",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 32,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -4.03
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34963117132",
+      "opponent_name": "DJ Parker",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 21,
+      "opponent_weight": 197,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:48",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -3.26
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34935900132",
+      "opponent_name": "Marc Koch",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "vs. Sacred Heart",
+      "mv_impact": 1.87
+    },
+    {
+      "date": "2025-11-13",
+      "opponent_id": "34937679132",
+      "opponent_name": "Will Conlon",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 197,
+      "opponent_rank": 63,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "10:00",
+      "event": "vs. Sacred Heart",
+      "mv_impact": -3.67
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34950414132",
+      "opponent_name": "Owen McGrory",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 68,
+      "opponent_weight": 197,
+      "opponent_rank": 65,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
+      "event": "vs. Sacred Heart",
+      "mv_impact": 1.8
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.4
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "wrestler_id": "34940707132",
+  "name": "Jacob Frost",
+  "team": "Iowa State",
+  "team_slug": "iowa_state",
+  "team_rank": 4,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 10.5,
+    "pa7": 3.75,
+    "pd7": 6.75,
+    "si_plus": 109.3,
+    "df_plus": 110.5,
+    "apr_plus": 96.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.667,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.861,
+      "matches": 4,
+      "rank_weight": 20,
+      "rank_overall": 143,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34943458132",
+      "opponent_rank": 15,
+      "opponent_name": "Aden Valencia",
+      "method": "Dec 4-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34948136132",
+      "opponent_rank": 14,
+      "opponent_name": "Eligh Rivera",
+      "method": "Dec 11-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34948136132",
+      "opponent_name": "Eligh Rivera",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 149,
+      "opponent_rank": 14,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -1.74
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34943458132",
+      "opponent_name": "Aden Valencia",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 19,
+      "opponent_weight": 149,
+      "opponent_rank": 15,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 4.51
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34939059132",
+      "opponent_name": "Kaemen Smith",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 149,
+      "opponent_rank": 38,
+      "result": "W",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 4.26
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34949057132",
+      "opponent_name": "Jake Samuels",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:51",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 4.41
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 0.18783068783068782
+  }
+}

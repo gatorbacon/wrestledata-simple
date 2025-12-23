@@ -1,0 +1,141 @@
+{
+  "wrestler_id": "34935436132",
+  "name": "Alex Hutchcraft",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 52,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-4",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 2.67,
+    "pa7": 7.67,
+    "pd7": -5.0,
+    "si_plus": 95.0,
+    "df_plus": 96.8,
+    "apr_plus": 106.1,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.232,
+      "matches": 6,
+      "rank_weight": 155,
+      "rank_overall": 1347,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34955794132",
+      "opponent_rank": 22,
+      "opponent_name": "Charlie Millard",
+      "method": "TF 20-4 7:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943143132",
+      "opponent_name": "Cullen Kane",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 46,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:30",
+      "event": "Mountaineer Open",
+      "mv_impact": -6.9
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34937007132",
+      "opponent_name": "Dominic Serio",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "Mountaineer Open",
+      "mv_impact": 4.47
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936210132",
+      "opponent_name": "Derek Raike",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 157,
+      "opponent_rank": 18,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:32",
+      "event": "Mountaineer Open",
+      "mv_impact": -4.16
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934446132",
+      "opponent_name": "Josh Hillard",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -2.93
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34955794132",
+      "opponent_name": "Charlie Millard",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 157,
+      "opponent_rank": 22,
+      "result": "L",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -3.03
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34954511132",
+      "opponent_name": "Jamisen Colongione",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -0.84
+    }
+  ]
+}

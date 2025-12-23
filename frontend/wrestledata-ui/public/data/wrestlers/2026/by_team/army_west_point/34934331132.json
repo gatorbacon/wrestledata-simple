@@ -1,0 +1,115 @@
+{
+  "wrestler_id": "34934331132",
+  "name": "Caleb Uhorchuk",
+  "team": "Army West Point",
+  "team_slug": "army_west_point",
+  "team_rank": 36,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 16.14,
+    "pa7": 0.0,
+    "pd7": 16.14,
+    "si_plus": 118.7,
+    "df_plus": 112.4,
+    "apr_plus": 97.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.559,
+      "matches": 3,
+      "rank_weight": 100,
+      "rank_overall": 891,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34937666132",
+      "opponent_rank": 62,
+      "opponent_name": "Joe Sparacio",
+      "method": "MD 11-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34948517132",
+      "opponent_rank": 31,
+      "opponent_name": "Khimari Manns",
+      "method": "Def."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948517132",
+      "opponent_name": "Khimari Manns",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 63,
+      "opponent_weight": 141,
+      "opponent_rank": 31,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937666132",
+      "opponent_name": "Joe Sparacio",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 141,
+      "opponent_rank": 62,
+      "result": "W",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 3.6
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34936022132",
+      "opponent_name": "Chris Cropanese",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "4:56",
+      "event": "Princeton Open",
+      "mv_impact": 0.63
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34952699132",
+      "opponent_name": "Seamus Mack",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:23",
+      "event": "Princeton Open",
+      "mv_impact": -5.91
+    }
+  ]
+}

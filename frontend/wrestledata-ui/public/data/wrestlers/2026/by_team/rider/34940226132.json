@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34940226132",
+  "name": "TJ Dorceus",
+  "team": "Rider",
+  "team_slug": "rider",
+  "team_rank": 42,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 3.77,
+    "pa7": 19.33,
+    "pd7": -15.56,
+    "si_plus": 100.0,
+    "df_plus": 79.8,
+    "apr_plus": 97.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.928,
+      "matches": 3,
+      "rank_weight": 173,
+      "rank_overall": 1953,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34952693132",
+      "opponent_rank": 25,
+      "opponent_name": "Rylan Rogers",
+      "method": "TF 19-4 3:22"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34971920132",
+      "opponent_name": "Chris Mance III",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 44,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -8.12
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934318132",
+      "opponent_name": "Cole Karpinski",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -5.89
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34952693132",
+      "opponent_name": "Rylan Rogers",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 184,
+      "opponent_rank": 25,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "3:22",
+      "event": "Princeton Open",
+      "mv_impact": -3.78
+    }
+  ]
+}

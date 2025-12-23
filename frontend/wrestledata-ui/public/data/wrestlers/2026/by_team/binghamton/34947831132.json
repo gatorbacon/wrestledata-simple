@@ -1,0 +1,146 @@
+{
+  "wrestler_id": "34947831132",
+  "name": "Trey Smith",
+  "team": "Binghamton",
+  "team_slug": "binghamton",
+  "team_rank": 61,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-5",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.61,
+    "pa7": 16.63,
+    "pd7": -11.02,
+    "si_plus": 98.7,
+    "df_plus": 80.9,
+    "apr_plus": 97.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.748,
+      "matches": 6,
+      "rank_weight": 163,
+      "rank_overall": 1664,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34949297132",
+      "opponent_rank": 74,
+      "opponent_name": "Corey Iannucci",
+      "method": "MD 11-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34938480132",
+      "opponent_rank": 53,
+      "opponent_name": "Ben Monn",
+      "method": "TF 17-2 6:33"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34938687132",
+      "opponent_name": "Easton Mull",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "5:30",
+      "event": "Big Red Invitational",
+      "mv_impact": -5.14
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34938487132",
+      "opponent_name": "JB Dragovich",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 45,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "23-10",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -4.94
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34949297132",
+      "opponent_name": "Corey Iannucci",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 125,
+      "opponent_rank": 74,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": 0.85
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936230132",
+      "opponent_name": "Jace Schafer",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 125,
+      "opponent_rank": 50,
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "3:16",
+      "event": "Big Red Invitational",
+      "mv_impact": -3.87
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34934341132",
+      "opponent_name": "Luke Sirianni",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-8",
+      "duration": "7:00",
+      "event": "Army Open",
+      "mv_impact": -4.61
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34938480132",
+      "opponent_name": "Ben Monn",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 45,
+      "opponent_weight": 125,
+      "opponent_rank": 53,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "6:33",
+      "event": "Army Open",
+      "mv_impact": -4.78
+    }
+  ]
+}

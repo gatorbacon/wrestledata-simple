@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34952074132",
+  "name": "Antonio Alvarado",
+  "team": "Illinois",
+  "team_slug": "illinois",
+  "team_rank": 9,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.32,
+    "pa7": 10.09,
+    "pd7": -5.77,
+    "si_plus": 83.4,
+    "df_plus": 95.3,
+    "apr_plus": 95.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.472,
+      "matches": 2,
+      "rank_weight": 230,
+      "rank_overall": 1909,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34936402132",
+      "opponent_name": "Cutter Sheets",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -4.35
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34937090132",
+      "opponent_name": "Brady Hankin",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 57,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "12-9",
+      "duration": "8:15",
+      "event": "Cougar Clash",
+      "mv_impact": -6.59
+    }
+  ]
+}

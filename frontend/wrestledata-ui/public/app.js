@@ -26,7 +26,7 @@ function getMinMatchThreshold() {
 async function computeFilteredMVRankAndPercentile(wrestlerId, weight, season) {
   try {
     // Load the full MV dataset
-    const url = `/mat_value/${season}/mat_value_${season}.json`;
+    const url = `/data/mat_value/${season}/mat_value_${season}.json`;
     const res = await fetch(url);
     if (!res.ok) return null;
     
@@ -186,7 +186,7 @@ function safe(value, formatter) {
   // ===============================
   
   function loadWrestlerProfile(id) {
-    const url = `/wrestlers/2026/by_id/${id}.json`;
+    const url = `/data/wrestlers/2026/by_id/${id}.json`;
   
     fetch(url)
       .then(res => {

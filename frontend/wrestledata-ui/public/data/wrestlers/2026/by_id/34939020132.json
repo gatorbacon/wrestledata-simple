@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34939020132",
+  "name": "Kyison Garcia",
+  "team": "Penn State",
+  "team_slug": "penn_state",
+  "team_rank": 1,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "4-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 8.15,
+    "pa7": 4.17,
+    "pd7": 3.99,
+    "si_plus": 106.1,
+    "df_plus": 109.0,
+    "apr_plus": 96.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.75,
+    "majors": 2,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.063,
+      "matches": 6,
+      "rank_weight": 39,
+      "rank_overall": 451,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935440132",
+      "opponent_rank": 53,
+      "opponent_name": "Bryce Luna",
+      "method": "MD 11-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34943404132",
+      "opponent_rank": 43,
+      "opponent_name": "Evin Gursoy",
+      "method": "Dec 6-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34952962132",
+      "opponent_name": "Troy Guerra",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 133,
+      "opponent_rank": 59,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "5:33",
+      "event": "Black Knight Invite",
+      "mv_impact": 3.76
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935443132",
+      "opponent_name": "Ethan Lipsey",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 52,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": 0.78
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935440132",
+      "opponent_name": "Bryce Luna",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 52,
+      "opponent_weight": 133,
+      "opponent_rank": 53,
+      "result": "W",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": 3.65
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935454132",
+      "opponent_name": "Ethan Uhorchuk",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 52,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": 2.51
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943404132",
+      "opponent_name": "Evin Gursoy",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 133,
+      "opponent_rank": 43,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -2.47
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34937481132",
+      "opponent_name": "T.K. Davis",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 133,
+      "opponent_rank": 20,
+      "result": "L",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -1.85
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

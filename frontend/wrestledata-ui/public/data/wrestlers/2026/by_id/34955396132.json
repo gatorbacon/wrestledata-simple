@@ -1,0 +1,120 @@
+{
+  "wrestler_id": "34955396132",
+  "name": "Lucian Brink",
+  "team": "Northern Illinois",
+  "team_slug": "northern_illinois",
+  "team_rank": 39,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.34,
+    "pa7": 17.0,
+    "pd7": -11.66,
+    "si_plus": 87.9,
+    "df_plus": 75.9,
+    "apr_plus": 95.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.251,
+      "matches": 3,
+      "rank_weight": 159,
+      "rank_overall": 1565,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934102132",
+      "opponent_rank": 47,
+      "opponent_name": "Andrew Austin",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "34944029132",
+      "opponent_rank": 54,
+      "opponent_name": "Nick Molchak",
+      "method": "TF 17-2 4:38"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934102132",
+      "opponent_name": "Andrew Austin",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 51,
+      "opponent_weight": 133,
+      "opponent_rank": 47,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Michigan State Open"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34935901132",
+      "opponent_name": "Luke Passarelli",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 133,
+      "opponent_rank": 75,
+      "result": "W",
+      "method": "MD",
+      "score": "13-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 0.73
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951029132",
+      "opponent_name": "Amonn Ohl",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 133,
+      "opponent_rank": 46,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:27",
+      "event": "Michigan State Open",
+      "mv_impact": -5.49
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944029132",
+      "opponent_name": "Nick Molchak",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 133,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "4:38",
+      "event": "Michigan State Open",
+      "mv_impact": -5.0
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

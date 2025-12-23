@@ -1,0 +1,146 @@
+{
+  "wrestler_id": "34934935132",
+  "name": "Daschle Lamer",
+  "team": "Oregon State",
+  "team_slug": "oregon_state",
+  "team_rank": 23,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 19,
+  "record": {
+    "overall": "6-0",
+    "vs_ranked": "5-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.8,
+    "pa7": 0.2,
+    "pd7": 11.6,
+    "si_plus": 118.9,
+    "df_plus": 115.2,
+    "apr_plus": 99.9,
+    "pin_rate": 0.167,
+    "bonus_rate": 0.667,
+    "majors": 2,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 3.341,
+      "matches": 6,
+      "rank_weight": 8,
+      "rank_overall": 96,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 5,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34952682132",
+      "opponent_rank": 30,
+      "opponent_name": "Zeke Dubler",
+      "method": "MD 14-1"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934014132",
+      "opponent_name": "Timothy Cowan",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 65,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:55",
+      "event": "Roadrunner Open",
+      "mv_impact": 0.59
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943459132",
+      "opponent_name": "Collin Guffey",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 19,
+      "opponent_weight": 174,
+      "opponent_rank": 51,
+      "result": "W",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": 3.38
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934747132",
+      "opponent_name": "Matthew Olguin",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 165,
+      "opponent_rank": 46,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-0",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 4.08
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34952682132",
+      "opponent_name": "Zeke Dubler",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 174,
+      "opponent_rank": 30,
+      "result": "W",
+      "method": "MD",
+      "score": "14-1",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 4.8
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948143132",
+      "opponent_name": "Xavier Giles",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 174,
+      "opponent_rank": 44,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 2.89
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934840132",
+      "opponent_name": "Enrique Munguia",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 174,
+      "opponent_rank": 48,
+      "result": "W",
+      "method": "TF",
+      "score": "20-0",
+      "duration": "4:10",
+      "event": "Princeton Open",
+      "mv_impact": 4.3
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.31666666666666665
+  }
+}

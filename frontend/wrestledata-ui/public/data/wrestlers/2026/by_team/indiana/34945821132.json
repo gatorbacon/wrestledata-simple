@@ -1,0 +1,161 @@
+{
+  "wrestler_id": "34945821132",
+  "name": "Blaine Frazier",
+  "team": "Indiana",
+  "team_slug": "indiana",
+  "team_rank": 35,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "4-3",
+    "vs_ranked": "2-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 7.4,
+    "pa7": 5.6,
+    "pd7": 1.8,
+    "si_plus": 106.2,
+    "df_plus": 103.2,
+    "apr_plus": 96.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.25,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.811,
+      "matches": 7,
+      "rank_weight": 95,
+      "rank_overall": 962,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934102132",
+      "opponent_rank": 47,
+      "opponent_name": "Andrew Austin",
+      "method": "Dec 8-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34944029132",
+      "opponent_rank": 54,
+      "opponent_name": "Nick Molchak",
+      "method": "Fall 6:01"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34934102132",
+      "opponent_name": "Andrew Austin",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 51,
+      "opponent_weight": 133,
+      "opponent_rank": 47,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "vs. Indiana",
+      "mv_impact": 3.38
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951029132",
+      "opponent_name": "Amonn Ohl",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 133,
+      "opponent_rank": 46,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -6.49
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944015132",
+      "opponent_name": "Adan Benavidez",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 0.1
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933517132",
+      "opponent_name": "Nathan Jerore",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 14,
+      "opponent_weight": 141,
+      "opponent_rank": 54,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 2.37
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955408132",
+      "opponent_name": "Markel Baker",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 133,
+      "opponent_rank": 12,
+      "result": "L",
+      "method": "DEC",
+      "score": "15-8",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -0.84
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955421132",
+      "opponent_name": "Calvin Werden",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 1.8
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944029132",
+      "opponent_name": "Nick Molchak",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 133,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:01",
+      "event": "Michigan State Open",
+      "mv_impact": -6.0
+    }
+  ]
+}

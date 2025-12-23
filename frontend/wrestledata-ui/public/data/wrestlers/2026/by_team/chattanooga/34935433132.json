@@ -1,0 +1,116 @@
+{
+  "wrestler_id": "34935433132",
+  "name": "Tavian Camper",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 52,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 7.0,
+    "pa7": 6.0,
+    "pd7": 1.0,
+    "si_plus": 102.5,
+    "df_plus": 101.4,
+    "apr_plus": 96.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.619,
+      "matches": 4,
+      "rank_weight": 126,
+      "rank_overall": 1192,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34953846132",
+      "opponent_rank": 74,
+      "opponent_name": "Jordan Barry",
+      "method": "MD 13-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34934324132",
+      "opponent_rank": 16,
+      "opponent_name": "Gunner Filipowicz",
+      "method": "MD 12-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934325132",
+      "opponent_name": "Micah Hanau",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -3.53
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934324132",
+      "opponent_name": "Gunner Filipowicz",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 165,
+      "opponent_rank": 16,
+      "result": "L",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -2.42
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34953928132",
+      "opponent_name": "Jack Valentin",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 71,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -2.42
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34953846132",
+      "opponent_name": "Jordan Barry",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 71,
+      "opponent_weight": 165,
+      "opponent_rank": 74,
+      "result": "W",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": 1.88
+    }
+  ]
+}

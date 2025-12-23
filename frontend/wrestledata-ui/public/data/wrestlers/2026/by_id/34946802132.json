@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34946802132",
+  "name": "Ramil Islamov",
+  "team": "West Virginia",
+  "team_slug": "west_virginia",
+  "team_rank": 13,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "4-1",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 15.98,
+    "pa7": 4.87,
+    "pd7": 11.11,
+    "si_plus": 117.1,
+    "df_plus": 103.8,
+    "apr_plus": 119.6,
+    "pin_rate": 0.25,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 2,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.98,
+      "matches": 5,
+      "rank_weight": 28,
+      "rank_overall": 280,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934704132",
+      "opponent_name": "Brayden Hartranft",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "20-2",
+      "duration": "5:37",
+      "event": "Southeast Open",
+      "mv_impact": 0.58
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34939072132",
+      "opponent_name": "Charleston Baglio",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -2.85
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34936970132",
+      "opponent_name": "Abe Hermes",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "21-4",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 3.61
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946296132",
+      "opponent_name": "Presley Johnson",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 77,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "Southeast Open",
+      "mv_impact": 5.55
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946823132",
+      "opponent_name": "Luke Satriano",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "13-5",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 3.01
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.375
+  }
+}

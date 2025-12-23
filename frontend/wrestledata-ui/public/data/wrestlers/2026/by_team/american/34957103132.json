@@ -1,0 +1,116 @@
+{
+  "wrestler_id": "34957103132",
+  "name": "Maximilian Leete",
+  "team": "American",
+  "team_slug": "american",
+  "team_rank": 48,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 8.0,
+    "pa7": 3.5,
+    "pd7": 4.5,
+    "si_plus": 110.0,
+    "df_plus": 110.7,
+    "apr_plus": 112.4,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.981,
+      "matches": 4,
+      "rank_weight": 24,
+      "rank_overall": 279,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934144132",
+      "opponent_rank": 27,
+      "opponent_name": "Evan Tallmadge",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34957105132",
+      "opponent_rank": 14,
+      "opponent_name": "Raymond Lopez",
+      "method": "Inj. 5:55"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957105132",
+      "opponent_name": "Raymond Lopez",
+      "opponent_team": "American",
+      "opponent_team_rank": 48,
+      "opponent_weight": 133,
+      "opponent_rank": 14,
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "5:55",
+      "event": "Navy Classic",
+      "mv_impact": -3.99
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934144132",
+      "opponent_name": "Evan Tallmadge",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 33,
+      "opponent_weight": 133,
+      "opponent_rank": 27,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": 3.79
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34939067132",
+      "opponent_name": "Hunter Heflin",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 133,
+      "opponent_rank": 65,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
+      "event": "Navy Classic",
+      "mv_impact": 4.38
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935616132",
+      "opponent_name": "Hayden Mills",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": 3.75
+    }
+  ]
+}

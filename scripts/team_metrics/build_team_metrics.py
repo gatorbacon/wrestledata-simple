@@ -54,14 +54,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--wrestler-profiles-dir",
         type=str,
-        required=True,
-        help="Directory containing wrestler profile JSON files",
+        default="frontend/wrestledata-ui/public/data/wrestlers/2026/by_id",
+        help="Directory containing wrestler profile JSON files (default: frontend/wrestledata-ui/public/data/wrestlers/2026/by_id)",
     )
     parser.add_argument(
         "--out-file",
         type=str,
-        required=True,
-        help="Output JSON file path",
+        default="frontend/wrestledata-ui/public/data/team_metrics/2026/team_metrics.json",
+        help="Output JSON file path (default: frontend/wrestledata-ui/public/data/team_metrics/2026/team_metrics.json)",
     )
     parser.add_argument(
         "--debug-team",

@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34935683132",
+  "name": "Zach Delsanter",
+  "team": "Penn",
+  "team_slug": "penn",
+  "team_rank": 27,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.0,
+    "pa7": 5.0,
+    "pd7": -4.0,
+    "si_plus": 87.9,
+    "df_plus": 109.6,
+    "apr_plus": 97.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.048,
+      "matches": 3,
+      "rank_weight": 121,
+      "rank_overall": 1310,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934111132",
+      "opponent_name": "Aidan Fockler",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 51,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -2.51
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34933979132",
+      "opponent_name": "Josh Terrill",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "Keystone Classic",
+      "mv_impact": -5.1
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34945124132",
+      "opponent_name": "Brandon Toranzo",
+      "opponent_team": "Rutgers",
+      "opponent_team_rank": 17,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": 1.47
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "34953876132",
+  "name": "Braden Brown",
+  "team": "LIU",
+  "team_slug": "liu",
+  "team_rank": 71,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 77,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.5,
+    "pa7": 9.0,
+    "pd7": -0.5,
+    "si_plus": 89.4,
+    "df_plus": 97.0,
+    "apr_plus": 94.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934320132",
+      "opponent_rank": 43,
+      "opponent_name": "Andrew Christie",
+      "method": "MD 9-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34934320132",
+      "opponent_name": "Andrew Christie",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 174,
+      "opponent_rank": 43,
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Army Open"
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34963809132",
+      "opponent_name": "Maxx Fesinger",
+      "opponent_team": "Mercyherst",
+      "opponent_team_rank": null,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "16-9",
+      "duration": "7:00",
+      "event": "Army Open"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

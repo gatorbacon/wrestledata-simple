@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34955741132",
+  "name": "Gabe Christenson",
+  "team": "Northwestern",
+  "team_slug": "northwestern",
+  "team_rank": 40,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.4,
+    "pa7": 5.0,
+    "pd7": 1.4,
+    "si_plus": 100.2,
+    "df_plus": 105.8,
+    "apr_plus": 96.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 2,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.608,
+      "matches": 5,
+      "rank_weight": 85,
+      "rank_overall": 908,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934269132",
+      "opponent_rank": 62,
+      "opponent_name": "Cole Will",
+      "method": "MD 12-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34944012132",
+      "opponent_rank": 31,
+      "opponent_name": "Blake Schaffer",
+      "method": "MD 12-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34940538132",
+      "opponent_name": "Spencer Lanosga",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 285,
+      "opponent_rank": 15,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -0.88
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34943280132",
+      "opponent_name": "Jack Forbes",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 30,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -2.47
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934269132",
+      "opponent_name": "Cole Will",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 285,
+      "opponent_rank": 62,
+      "result": "W",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 3.16
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34948151132",
+      "opponent_name": "Gabe Garibaldi",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "13-1",
+      "duration": "7:00",
+      "event": "vs. Princeton",
+      "mv_impact": 0.34
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944012132",
+      "opponent_name": "Blake Schaffer",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 197,
+      "opponent_rank": 31,
+      "result": "L",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -3.18
+    }
+  ]
+}

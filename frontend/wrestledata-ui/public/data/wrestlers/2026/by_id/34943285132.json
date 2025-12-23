@@ -1,0 +1,116 @@
+{
+  "wrestler_id": "34943285132",
+  "name": "Kayd Craig",
+  "team": "Utah Valley",
+  "team_slug": "utah_valley",
+  "team_rank": 30,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 10.15,
+    "pa7": 17.1,
+    "pd7": -6.95,
+    "si_plus": 97.1,
+    "df_plus": 75.6,
+    "apr_plus": 104.8,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.139,
+      "matches": 4,
+      "rank_weight": 136,
+      "rank_overall": 1059,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934025132",
+      "opponent_rank": 24,
+      "opponent_name": "Paul Kelly",
+      "method": "TF 17-0 5:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934024132",
+      "opponent_name": "Dylan Guillermo",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 65,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "5:38",
+      "event": "Cyclone Invitational",
+      "mv_impact": 0.75
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934025132",
+      "opponent_name": "Paul Kelly",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 65,
+      "opponent_weight": 149,
+      "opponent_rank": 24,
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "5:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -4.33
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34940709132",
+      "opponent_name": "Paniro Johnson",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 4,
+      "opponent_weight": 149,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "3:28",
+      "event": "Cyclone Invitational",
+      "mv_impact": -2.84
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34940718132",
+      "opponent_name": "Logan Stotts",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 4,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:36",
+      "event": "Cyclone Invitational",
+      "mv_impact": 1.87
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5
+  }
+}

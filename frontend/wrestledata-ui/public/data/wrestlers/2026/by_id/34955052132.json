@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34955052132",
+  "name": "Jack Lesher",
+  "team": "Virginia",
+  "team_slug": "virginia",
+  "team_rank": 47,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 6.5,
+    "pa7": 12.09,
+    "pd7": -5.59,
+    "si_plus": 103.1,
+    "df_plus": 95.7,
+    "apr_plus": 109.3,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.827,
+      "matches": 6,
+      "rank_weight": 86,
+      "rank_overall": 967,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34953899132",
+      "opponent_rank": 53,
+      "opponent_name": "Anthony D`alesio",
+      "method": "Fall 7:50"
+    },
+    "worst_loss": {
+      "opponent_id": "34940493132",
+      "opponent_rank": 47,
+      "opponent_name": "Gage Yackee",
+      "method": "MD 13-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34957107132",
+      "opponent_name": "Caleb Campos",
+      "opponent_team": "American",
+      "opponent_team_rank": 48,
+      "opponent_weight": 184,
+      "opponent_rank": 26,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": -1.37
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34953899132",
+      "opponent_name": "Anthony D`alesio",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 71,
+      "opponent_weight": 184,
+      "opponent_rank": 53,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "7:50",
+      "event": "vs. Virginia",
+      "mv_impact": 4.7
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34952693132",
+      "opponent_name": "Rylan Rogers",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 184,
+      "opponent_rank": 25,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "6:12",
+      "event": "vs. Virginia",
+      "mv_impact": -3.78
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34971906132",
+      "opponent_name": "George Rhodes",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 44,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "12-5",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": 0.23
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938482132",
+      "opponent_name": "Malachi DuVall",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 45,
+      "opponent_weight": 184,
+      "opponent_rank": 24,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-8",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": -0.55
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34940493132",
+      "opponent_name": "Gage Yackee",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 184,
+      "opponent_rank": 47,
+      "result": "L",
+      "method": "MD",
+      "score": "13-5",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": -4.2
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

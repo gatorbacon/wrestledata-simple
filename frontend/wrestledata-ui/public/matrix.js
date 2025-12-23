@@ -17,7 +17,7 @@ function resolveSeason() {
 
 // Load matrix data
 async function loadMatrixData(season, weight) {
-  const url = `/matrix/${season}/public_matrix_${season}_${weight}.json`;
+  const url = `/data/matrix/${season}/${weight}.json`;
   
   try {
     const res = await fetch(url);

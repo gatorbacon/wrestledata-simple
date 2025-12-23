@@ -245,7 +245,7 @@ let viewMode = "table"; // "table" or "stacked"
 // ========================================
 async function loadWeightData(weight) {
   const season = resolveSeason();
-  const url = `/xtp/${season}/xtp_weight_${season}_${weight}.json`;
+  const url = `/data/xtp/${season}/xtp_weight_${season}_${weight}.json`;
   
   try {
     const res = await fetch(url);

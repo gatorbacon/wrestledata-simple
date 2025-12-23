@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34935969132",
+  "name": "CJ Carr",
+  "team": "Lock Haven",
+  "team_slug": "lock_haven",
+  "team_rank": 56,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 12.25,
+    "pd7": -7.25,
+    "si_plus": 99.6,
+    "df_plus": 94.5,
+    "apr_plus": 97.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.114,
+      "matches": 4,
+      "rank_weight": 141,
+      "rank_overall": 1326,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34938629132",
+      "opponent_rank": 66,
+      "opponent_name": "Scott Johnson",
+      "method": "MD 14-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34955038132",
+      "opponent_name": "Kyren Butler",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 47,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "22-8",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": -3.21
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938629132",
+      "opponent_name": "Scott Johnson",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 141,
+      "opponent_rank": 66,
+      "result": "L",
+      "method": "MD",
+      "score": "14-1",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -3.64
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938623132",
+      "opponent_name": "Jack Martinec",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-8",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": 1.08
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941804132",
+      "opponent_name": "Brogan Fielding",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -2.69
+    }
+  ]
+}

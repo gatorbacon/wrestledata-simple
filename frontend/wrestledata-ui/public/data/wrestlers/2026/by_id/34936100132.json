@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "34936100132",
+  "name": "Anthony Berg",
+  "team": "Cal Poly",
+  "team_slug": "cal_poly",
+  "team_rank": 32,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.5,
+    "pa7": 6.0,
+    "pd7": 5.5,
+    "si_plus": 115.5,
+    "df_plus": 104.6,
+    "apr_plus": 96.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.718,
+      "matches": 2,
+      "rank_weight": 61,
+      "rank_overall": 549,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34944176132",
+      "opponent_rank": 68,
+      "opponent_name": "Jake Doone",
+      "method": "MD 16-4"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34944176132",
+      "opponent_name": "Jake Doone",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 157,
+      "opponent_rank": 68,
+      "result": "W",
+      "method": "MD",
+      "score": "16-4",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": 3.0
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934934132",
+      "opponent_name": "Joel Adams",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": -1.56
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

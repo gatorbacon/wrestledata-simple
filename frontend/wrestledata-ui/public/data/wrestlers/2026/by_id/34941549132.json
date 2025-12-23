@@ -1,0 +1,161 @@
+{
+  "wrestler_id": "34941549132",
+  "name": "Caleb Tyus",
+  "team": "SIU Edwardsville",
+  "team_slug": "siu_edwardsville",
+  "team_rank": 24,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 4,
+  "record": {
+    "overall": "7-0",
+    "vs_ranked": "5-0",
+    "vs_top10": "1-0",
+    "vs_top25": "3-0"
+  },
+  "metrics": {
+    "pf7": 9.6,
+    "pa7": 3.4,
+    "pd7": 6.2,
+    "si_plus": 112.5,
+    "df_plus": 111.2,
+    "apr_plus": 111.7,
+    "pin_rate": 0.286,
+    "bonus_rate": 0.429,
+    "majors": 1,
+    "techs": 0,
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 4.03,
+      "matches": 7,
+      "rank_weight": 8,
+      "rank_overall": 47,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 5,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34941806132",
+      "opponent_rank": 5,
+      "opponent_name": "Ethan Stiles",
+      "method": "Dec 10-4"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34937090132",
+      "opponent_name": "Brady Hankin",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 57,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:22",
+      "event": "Cougar Clash",
+      "mv_impact": 2.41
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34964063132",
+      "opponent_name": "Ethan Basile",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 149,
+      "opponent_rank": 47,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-8",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": 3.33
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34936402132",
+      "opponent_name": "Cutter Sheets",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": 3.65
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34936418132",
+      "opponent_name": "Casey Swiderski",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 149,
+      "opponent_rank": 16,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": 3.98
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34955726132",
+      "opponent_name": "Sam Cartella",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 40,
+      "opponent_weight": 149,
+      "opponent_rank": 20,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:30",
+      "event": "vs. SIU Edwardsville",
+      "mv_impact": 7.09
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943821132",
+      "opponent_name": "Zac Cowan",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 60,
+      "opponent_weight": 149,
+      "opponent_rank": 67,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": 2.38
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941806132",
+      "opponent_name": "Ethan Stiles",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 149,
+      "opponent_rank": 5,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-4",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": 5.37
+    }
+  ],
+  "bonus": {
+    "top33_wins": 3,
+    "top33_bonus_ev_raw": 0.6666666666666666,
+    "top33_bonus_ev_shrunk": 0.587121212121212
+  }
+}

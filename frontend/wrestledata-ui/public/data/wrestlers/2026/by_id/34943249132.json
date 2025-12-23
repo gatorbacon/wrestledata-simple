@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34943249132",
+  "name": "Cale Seaton",
+  "team": "South Dakota State",
+  "team_slug": "south_dakota_state",
+  "team_rank": 28,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": 23,
+  "record": {
+    "overall": "5-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 6.96,
+    "pa7": 2.45,
+    "pd7": 4.52,
+    "si_plus": 107.4,
+    "df_plus": 110.9,
+    "apr_plus": 96.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.4,
+    "majors": 2,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.507,
+      "matches": 6,
+      "rank_weight": 18,
+      "rank_overall": 194,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34945193132",
+      "opponent_rank": 25,
+      "opponent_name": "Isaiah Schaefer",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34955799132",
+      "opponent_rank": 39,
+      "opponent_name": "Chris Cannon",
+      "method": "Dec 8-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-25",
+      "opponent_id": "34955799132",
+      "opponent_name": "Chris Cannon",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 133,
+      "opponent_rank": 39,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "vs. South Dakota State",
+      "mv_impact": -3.18
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34935616132",
+      "opponent_name": "Hayden Mills",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 3.75
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34934616132",
+      "opponent_name": "Tristan Daugherty",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 133,
+      "opponent_rank": 34,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 3.54
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34963118132",
+      "opponent_name": "Carter Schmidt",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 21,
+      "opponent_weight": 133,
+      "opponent_rank": 37,
+      "result": "W",
+      "method": "MD",
+      "score": "16-4",
+      "duration": "7:00",
+      "event": "Tiger Style Invite",
+      "mv_impact": 4.21
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34945164132",
+      "opponent_name": "Blake Boarman",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Tiger Style Invite",
+      "mv_impact": 2.68
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34945193132",
+      "opponent_name": "Isaiah Schaefer",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 133,
+      "opponent_rank": 25,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Tiger Style Invite",
+      "mv_impact": 4.04
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 0.1646090534979424
+  }
+}

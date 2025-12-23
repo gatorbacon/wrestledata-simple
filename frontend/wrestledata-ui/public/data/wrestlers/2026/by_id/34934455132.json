@@ -1,0 +1,146 @@
+{
+  "wrestler_id": "34934455132",
+  "name": "Luke Bender",
+  "team": "Franklin & Marshall",
+  "team_slug": "franklin__marshall",
+  "team_rank": 34,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 59,
+  "record": {
+    "overall": "3-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.2,
+    "pa7": 4.2,
+    "pd7": 4.0,
+    "si_plus": 103.5,
+    "df_plus": 106.6,
+    "apr_plus": 97.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 3,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.412,
+      "matches": 6,
+      "rank_weight": 95,
+      "rank_overall": 861,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34935908132",
+      "opponent_rank": 57,
+      "opponent_name": "Tyler-Xavier McKnight",
+      "method": "Dec 10-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934368132",
+      "opponent_name": "Kellen Smith",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 4.15
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34935892132",
+      "opponent_name": "Jackson Polo",
+      "opponent_team": "Penn",
+      "opponent_team_rank": 27,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -2.76
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34949051132",
+      "opponent_name": "Anthony Mann",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 0.79
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935908132",
+      "opponent_name": "Tyler-Xavier McKnight",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 157,
+      "opponent_rank": 57,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -2.89
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943157132",
+      "opponent_name": "Joey Showalter",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 46,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -1.86
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934194132",
+      "opponent_name": "Tyler Berish",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 0.09
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

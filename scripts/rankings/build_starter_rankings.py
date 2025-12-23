@@ -36,6 +36,12 @@ def parse_args() -> argparse.Namespace:
         help="Directory containing rankings data (default: mt/rankings_data)",
     )
     parser.add_argument(
+        "-output_dir",
+        type=str,
+        default="frontend/wrestledata-ui/public/data/rankings",
+        help="Directory for output files (default: frontend/wrestledata-ui/public/data/rankings)",
+    )
+    parser.add_argument(
         "-starter_overrides",
         type=str,
         default=None,
@@ -123,6 +129,11 @@ def main() -> None:
     print(f"Building starter-only rankings for season {season}...")
     print(f"Data directory: {data_dir}")
     
+    # Set up output directory
+    output_dir = Path(args.output_dir) / str(season)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    print(f"Output directory: {output_dir}")
+    
     # Load starter overrides
     if args.starter_overrides:
         overrides_path = args.starter_overrides
@@ -158,8 +169,8 @@ def main() -> None:
         # Build starter-only rankings
         starter_rankings = build_starter_rankings_for_weight(rankings, force_backup_ids)
         
-        # Save starter-only rankings
-        output_file = data_dir / f"rankings_starters_{weight}.json"
+        # Save starter-only rankings to output directory
+        output_file = output_dir / f"rankings_starters_{weight}.json"
         output_data = {
             "weight_class": weight,
             "season": season,

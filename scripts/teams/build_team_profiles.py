@@ -62,8 +62,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--out-dir",
         type=str,
-        required=True,
-        help="Output directory for team profile JSON files",
+        default="frontend/wrestledata-ui/public/data/teams",
+        help="Output directory for team profile JSON files (default: frontend/wrestledata-ui/public/data/teams)",
     )
     return parser.parse_args()
 

@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34941686132",
+  "name": "Pablo Macias",
+  "team": "Campbell",
+  "team_slug": "campbell",
+  "team_rank": 43,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 69,
+  "record": {
+    "overall": "3-3",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.67,
+    "pa7": 2.33,
+    "pd7": 1.33,
+    "si_plus": 90.3,
+    "df_plus": 109.4,
+    "apr_plus": 106.8,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.057,
+      "matches": 6,
+      "rank_weight": 119,
+      "rank_overall": 1033,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34954529132",
+      "opponent_rank": 71,
+      "opponent_name": "Phil Cuttino",
+      "method": "Dec 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34933369132",
+      "opponent_rank": 62,
+      "opponent_name": "Frank DiBella",
+      "method": "Fall 4:10"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34935892132",
+      "opponent_name": "Jackson Polo",
+      "opponent_team": "Penn",
+      "opponent_team_rank": 27,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "vs. Pennsylvania",
+      "mv_impact": -2.76
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34954528132",
+      "opponent_name": "Niko Valenzuela",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:05",
+      "event": "vs. Presbyterian",
+      "mv_impact": 4.31
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34945484132",
+      "opponent_name": "Kenneth Pritz",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 0.55
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34933369132",
+      "opponent_name": "Frank DiBella",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 18,
+      "opponent_weight": 157,
+      "opponent_rank": 62,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:10",
+      "event": "Southeast Open",
+      "mv_impact": -6.42
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34954529132",
+      "opponent_name": "Phil Cuttino",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 157,
+      "opponent_rank": 71,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 1.52
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946796132",
+      "opponent_name": "Cole Evans",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -3.55
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

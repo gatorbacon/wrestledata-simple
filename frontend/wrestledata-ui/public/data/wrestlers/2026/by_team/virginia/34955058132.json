@@ -1,0 +1,161 @@
+{
+  "wrestler_id": "34955058132",
+  "name": "Max Shulaw",
+  "team": "Virginia",
+  "team_slug": "virginia",
+  "team_rank": 47,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 35,
+  "record": {
+    "overall": "4-3",
+    "vs_ranked": "3-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 10.5,
+    "pa7": 8.75,
+    "pd7": 1.75,
+    "si_plus": 110.6,
+    "df_plus": 99.6,
+    "apr_plus": 118.9,
+    "pin_rate": 0.75,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 1.407,
+      "matches": 7,
+      "rank_weight": 32,
+      "rank_overall": 369,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34971903132",
+      "opponent_rank": 41,
+      "opponent_name": "Ibrahim Ameer",
+      "method": "Fall 2:03"
+    },
+    "worst_loss": {
+      "opponent_id": "34939062132",
+      "opponent_rank": 33,
+      "opponent_name": "Zyan Hall",
+      "method": "Dec 13-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34944012132",
+      "opponent_name": "Blake Schaffer",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 197,
+      "opponent_rank": 31,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "7:00",
+      "event": "vs. Virginia",
+      "mv_impact": -2.18
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34953929132",
+      "opponent_name": "Kaleb Wright",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 71,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:50",
+      "event": "vs. Virginia",
+      "mv_impact": 2.79
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34952666132",
+      "opponent_name": "JT Davis",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 197,
+      "opponent_rank": 32,
+      "result": "L",
+      "method": "MD",
+      "score": "13-5",
+      "duration": "7:00",
+      "event": "vs. Virginia",
+      "mv_impact": -3.13
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34947813132",
+      "opponent_name": "Quinn Funk",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 61,
+      "opponent_weight": 197,
+      "opponent_rank": 62,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:03",
+      "event": "Navy Classic",
+      "mv_impact": 5.77
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34971903132",
+      "opponent_name": "Ibrahim Ameer",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 44,
+      "opponent_weight": 197,
+      "opponent_rank": 41,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:03",
+      "event": "Navy Classic",
+      "mv_impact": 6.7
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34998420132",
+      "opponent_name": "Bence Veress",
+      "opponent_team": "Morgan State",
+      "opponent_team_rank": 73,
+      "opponent_weight": 197,
+      "opponent_rank": 77,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
+      "event": "Navy Classic",
+      "mv_impact": 2.1
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34939062132",
+      "opponent_name": "Zyan Hall",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 197,
+      "opponent_rank": 33,
+      "result": "L",
+      "method": "DEC",
+      "score": "13-6",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": -2.21
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34948135132",
+  "name": "Zander Silva",
+  "team": "Princeton",
+  "team_slug": "princeton",
+  "team_rank": 38,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-4",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.57,
+    "pa7": 8.82,
+    "pd7": -6.24,
+    "si_plus": 91.4,
+    "df_plus": 95.5,
+    "apr_plus": 109.9,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.673,
+      "matches": 6,
+      "rank_weight": 127,
+      "rank_overall": 1205,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34957598132",
+      "opponent_rank": 62,
+      "opponent_name": "Alex Uryniak",
+      "method": "Fall 1:20"
+    },
+    "worst_loss": {
+      "opponent_id": "34937676132",
+      "opponent_rank": 37,
+      "opponent_name": "Jake Slotnick",
+      "method": "TF 20-5 6:46"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34944349132",
+      "opponent_name": "Anthony Conetta",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 165,
+      "opponent_rank": 36,
+      "result": "L",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -2.87
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34944346132",
+      "opponent_name": "Nick Grizales",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-0",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -3.14
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34957592132",
+      "opponent_name": "Ryan Money",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 0.2
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34957598132",
+      "opponent_name": "Alex Uryniak",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 165,
+      "opponent_rank": 62,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 5.78
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937676132",
+      "opponent_name": "Jake Slotnick",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 165,
+      "opponent_rank": 37,
+      "result": "L",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "6:46",
+      "event": "Princeton Open",
+      "mv_impact": -4.35
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934749132",
+      "opponent_name": "Graham Gambrall",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "10:00",
+      "event": "Princeton Open",
+      "mv_impact": -5.67
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.3333333333333333
+  }
+}

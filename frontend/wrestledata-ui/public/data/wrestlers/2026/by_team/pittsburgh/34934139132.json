@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34934139132",
+  "name": "Chase Kranitz",
+  "team": "Pittsburgh",
+  "team_slug": "pittsburgh",
+  "team_rank": 33,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 38,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 6.5,
+    "pd7": -0.5,
+    "si_plus": 106.4,
+    "df_plus": 103.6,
+    "apr_plus": 96.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.125,
+      "matches": 5,
+      "rank_weight": 73,
+      "rank_overall": 793,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34954160132",
+      "opponent_rank": 43,
+      "opponent_name": "Tyler Bienus",
+      "method": "Dec 8-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34948141132",
+      "opponent_rank": 28,
+      "opponent_name": "Kole Mulhauser",
+      "method": "Fall 2:37"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34954160132",
+      "opponent_name": "Tyler Bienus",
+      "opponent_team": "Bucknell",
+      "opponent_team_rank": 29,
+      "opponent_weight": 184,
+      "opponent_rank": 43,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh",
+      "mv_impact": 2.74
+    },
+    {
+      "date": "2025-11-21",
+      "opponent_id": "34962159132",
+      "opponent_name": "Gabe Arnold",
+      "opponent_team": "Iowa",
+      "opponent_team_rank": 3,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "15-5",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh",
+      "mv_impact": -3.07
+    },
+    {
+      "date": "2025-11-14",
+      "opponent_id": "34948141132",
+      "opponent_name": "Kole Mulhauser",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 184,
+      "opponent_rank": 28,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:37",
+      "event": "vs. Princeton",
+      "mv_impact": -5.15
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34952973132",
+      "opponent_name": "Marcus Petite",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 184,
+      "opponent_rank": 50,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh",
+      "mv_impact": 3.03
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34939048132",
+      "opponent_name": "Daniel Williams",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh",
+      "mv_impact": 1.82
+    }
+  ]
+}

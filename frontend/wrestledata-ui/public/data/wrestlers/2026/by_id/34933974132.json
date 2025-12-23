@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34933974132",
+  "name": "DJ Shannon",
+  "team": "Michigan State",
+  "team_slug": "michigan_state",
+  "team_rank": 72,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-4",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.5,
+    "pa7": 6.25,
+    "pd7": 1.25,
+    "si_plus": 102.2,
+    "df_plus": 107.5,
+    "apr_plus": 97.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.184,
+      "matches": 6,
+      "rank_weight": 143,
+      "rank_overall": 1339,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34953846132",
+      "opponent_rank": 74,
+      "opponent_name": "Jordan Barry",
+      "method": "Dec 8-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34951026132",
+      "opponent_rank": 34,
+      "opponent_name": "Ryan Burgos",
+      "method": "Fall 3:18"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34937492132",
+      "opponent_name": "Tucker Cell",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "vs. Michigan State",
+      "mv_impact": -4.44
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34951026132",
+      "opponent_name": "Ryan Burgos",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 165,
+      "opponent_rank": 34,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:18",
+      "event": "Keystone Classic",
+      "mv_impact": -4.22
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934703132",
+      "opponent_name": "Tyler Fromm",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "16-4",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": 2.26
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34933363132",
+      "opponent_name": "Mac Church",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 18,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -1.99
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34940227132",
+      "opponent_name": "Brendon Abdon",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "vs. Rider",
+      "mv_impact": -5.6
+    },
+    {
+      "date": "2025-11-14",
+      "opponent_id": "34953846132",
+      "opponent_name": "Jordan Barry",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 71,
+      "opponent_weight": 165,
+      "opponent_rank": 74,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "vs. Michigan State",
+      "mv_impact": 0.88
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.3333333333333333
+  }
+}

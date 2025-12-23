@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "34943279132",
+  "name": "Alex Emmer",
+  "team": "Utah Valley",
+  "team_slug": "utah_valley",
+  "team_rank": 30,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 64,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 8.0,
+    "pd7": -6.0,
+    "si_plus": 89.1,
+    "df_plus": 99.2,
+    "apr_plus": 96.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.204,
+      "matches": 2,
+      "rank_weight": 124,
+      "rank_overall": 1076,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34962138132",
+      "opponent_rank": 63,
+      "opponent_name": "Devyn Flores-Che",
+      "method": "MD 16-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34962138132",
+      "opponent_name": "Devyn Flores-Che",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 157,
+      "opponent_rank": 63,
+      "result": "L",
+      "method": "MD",
+      "score": "16-3",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": -4.55
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943464132",
+      "opponent_name": "Jack Desena",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 19,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": 2.15
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

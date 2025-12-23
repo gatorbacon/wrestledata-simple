@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34934617132",
+  "name": "Tayshaun Glover",
+  "team": "North Dakota State",
+  "team_slug": "north_dakota_state",
+  "team_rank": 74,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 2.5,
+    "pa7": 12.5,
+    "pd7": -10.0,
+    "si_plus": 98.1,
+    "df_plus": 93.2,
+    "apr_plus": 99.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.663,
+      "matches": 2,
+      "rank_weight": 163,
+      "rank_overall": 1819,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34955792132",
+      "opponent_rank": 16,
+      "opponent_name": "Koy Hopke",
+      "method": "MD 12-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955792132",
+      "opponent_name": "Koy Hopke",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 285,
+      "opponent_rank": 16,
+      "result": "L",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -1.91
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934619132",
+      "opponent_name": "Shilo Jones",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "13-1",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -7.41
+    }
+  ]
+}

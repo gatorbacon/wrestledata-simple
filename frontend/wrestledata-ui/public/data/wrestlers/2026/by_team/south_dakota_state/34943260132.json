@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34943260132",
+  "name": "Jacob Herm",
+  "team": "South Dakota State",
+  "team_slug": "south_dakota_state",
+  "team_rank": 28,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "4-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 14.0,
+    "pa7": 7.06,
+    "pd7": 6.94,
+    "si_plus": 114.2,
+    "df_plus": 100.5,
+    "apr_plus": 99.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.811,
+      "matches": 5,
+      "rank_weight": 59,
+      "rank_overall": 522,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934612132",
+      "opponent_rank": 73,
+      "opponent_name": "Boeden Greenley",
+      "method": "MD 16-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34955774132",
+      "opponent_rank": 6,
+      "opponent_name": "Andrew Sparks",
+      "method": "Dec 11-7"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34934631132",
+      "opponent_name": "Porter Craig",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "4:16",
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 1.04
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34934612132",
+      "opponent_name": "Boeden Greenley",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 165,
+      "opponent_rank": 73,
+      "result": "W",
+      "method": "MD",
+      "score": "16-6",
+      "duration": "7:00",
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 2.41
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955774132",
+      "opponent_name": "Andrew Sparks",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 165,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-7",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -0.31
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934624132",
+      "opponent_name": "Tyler Secoy",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-8",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": 0.15
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34963167132",
+      "opponent_name": "Peyten Kellar",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 21,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "13-7",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": 0.77
+    }
+  ]
+}

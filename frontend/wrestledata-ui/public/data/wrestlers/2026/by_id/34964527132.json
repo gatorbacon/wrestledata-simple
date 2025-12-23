@@ -1,0 +1,181 @@
+{
+  "wrestler_id": "34964527132",
+  "name": "Cy Kruse",
+  "team": "Cornell",
+  "team_slug": "cornell",
+  "team_rank": 10,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "6-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 12.43,
+    "pa7": 1.84,
+    "pd7": 10.59,
+    "si_plus": 115.4,
+    "df_plus": 109.2,
+    "apr_plus": 106.8,
+    "pin_rate": 0.167,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 3,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.095,
+      "matches": 8,
+      "rank_weight": 50,
+      "rank_overall": 445,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34974780132",
+      "opponent_rank": 76,
+      "opponent_name": "Magnus Bibla",
+      "method": "Dec 5-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34941542132",
+      "opponent_rank": 33,
+      "opponent_name": "Bryson Buhk",
+      "method": "Dec 4-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34947806132",
+      "opponent_name": "Trent Sibble",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 61,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:54",
+      "event": "Big Red Invitational",
+      "mv_impact": 4.4
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936183132",
+      "opponent_name": "Kyle Draina",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:54",
+      "event": "Big Red Invitational",
+      "mv_impact": 2.06
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936191132",
+      "opponent_name": "Eli Torres",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "Big Red Invitational",
+      "mv_impact": 3.65
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34964399132",
+      "opponent_name": "Aiden Compton",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -3.56
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34974780132",
+      "opponent_name": "Magnus Bibla",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 285,
+      "opponent_rank": 76,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": 1.01
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941542132",
+      "opponent_name": "Bryson Buhk",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 285,
+      "opponent_rank": 33,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-0",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -1.98
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934141132",
+      "opponent_name": "Juliano Marion",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 33,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -0.49
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941563132",
+      "opponent_name": "Jake Fernandez",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "3:42",
+      "event": "Clarion Open",
+      "mv_impact": 3.67
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

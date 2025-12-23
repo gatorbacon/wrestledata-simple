@@ -1,0 +1,71 @@
+{
+  "wrestler_id": "34934606132",
+  "name": "Conor Mc Alary",
+  "team": "Michigan State",
+  "team_slug": "michigan_state",
+  "team_rank": 72,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.6,
+    "pa7": 25.0,
+    "pd7": -18.4,
+    "si_plus": 107.1,
+    "df_plus": 79.9,
+    "apr_plus": 101.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.671,
+      "matches": 1,
+      "rank_weight": 120,
+      "rank_overall": 1204,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944528132",
+      "opponent_rank": 6,
+      "opponent_name": "Kyler Larkin",
+      "method": "TF 20-3 3:11"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944528132",
+      "opponent_name": "Kyler Larkin",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 133,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "3:11",
+      "event": "Michigan State Open",
+      "mv_impact": -1.67
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

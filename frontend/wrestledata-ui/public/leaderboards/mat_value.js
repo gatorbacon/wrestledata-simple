@@ -134,7 +134,7 @@ async function loadStarterRankings(season) {
   // Load starter-only rankings for each weight
   for (const weight of weights) {
     try {
-      const url = `/rankings_data/${season}/rankings_starters_${weight}.json`;
+      const url = `/data/rankings/${season}/rankings_starters_${weight}.json`;
       const res = await fetch(url);
       if (!res.ok) {
         console.warn(`Failed to fetch ${url}: ${res.status} ${res.statusText}`);
@@ -169,7 +169,7 @@ let leaderboardData = null;
 
 async function loadLeaderboard() {
   const season = resolveSeason();
-  const url = `/mat_value/${season}/mat_value_${season}.json`;
+  const url = `/data/mat_value/${season}/mat_value_${season}.json`;
   
   // Check for weight filter in URL
   const weightParam = getQueryParam("weight");

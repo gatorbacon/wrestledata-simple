@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34933536132",
+  "name": "Justin Gates",
+  "team": "Michigan",
+  "team_slug": "michigan",
+  "team_rank": 14,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.0,
+    "pa7": 4.67,
+    "pd7": 3.33,
+    "si_plus": 110.4,
+    "df_plus": 106.8,
+    "apr_plus": 96.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.241,
+      "matches": 3,
+      "rank_weight": 28,
+      "rank_overall": 231,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34955736132",
+      "opponent_rank": 43,
+      "opponent_name": "Gunnar Myers",
+      "method": "Dec 9-8"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944523132",
+      "opponent_name": "Jabari Hinson",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 1.53
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955736132",
+      "opponent_name": "Gunnar Myers",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 40,
+      "opponent_weight": 157,
+      "opponent_rank": 43,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-8",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 3.44
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955625132",
+      "opponent_name": "Tyler Turzinski",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 1.75
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

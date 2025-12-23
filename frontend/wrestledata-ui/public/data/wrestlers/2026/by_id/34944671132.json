@@ -1,0 +1,71 @@
+{
+  "wrestler_id": "34944671132",
+  "name": "Royce Nilo",
+  "team": "Wisconsin",
+  "team_slug": "wisconsin",
+  "team_rank": 31,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.0,
+    "pa7": 7.0,
+    "pd7": -6.0,
+    "si_plus": 86.1,
+    "df_plus": 105.4,
+    "apr_plus": 103.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.669,
+      "matches": 1,
+      "rank_weight": 176,
+      "rank_overall": 1448,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34964063132",
+      "opponent_rank": 47,
+      "opponent_name": "Ethan Basile",
+      "method": "Dec 7-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34964063132",
+      "opponent_name": "Ethan Basile",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 149,
+      "opponent_rank": 47,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-1",
+      "duration": "7:00",
+      "event": "Grand View Open",
+      "mv_impact": -2.67
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5
+  }
+}

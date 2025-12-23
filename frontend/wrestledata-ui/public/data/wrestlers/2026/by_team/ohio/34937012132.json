@@ -1,0 +1,161 @@
+{
+  "wrestler_id": "34937012132",
+  "name": "Carson Weber",
+  "team": "Ohio",
+  "team_slug": "ohio",
+  "team_rank": 41,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 72,
+  "record": {
+    "overall": "3-4",
+    "vs_ranked": "2-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.92,
+    "pa7": 8.3,
+    "pd7": -1.38,
+    "si_plus": 102.9,
+    "df_plus": 102.1,
+    "apr_plus": 99.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.667,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.747,
+      "matches": 7,
+      "rank_weight": 122,
+      "rank_overall": 945,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34954560132",
+      "opponent_rank": 73,
+      "opponent_name": "Joseph Morris",
+      "method": "MD 12-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34936095132",
+      "opponent_rank": 64,
+      "opponent_name": "Andre Gonzales",
+      "method": "TF 17-2 3:42"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34936095132",
+      "opponent_name": "Andre Gonzales",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 32,
+      "opponent_weight": 149,
+      "opponent_rank": 64,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "3:42",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -4.95
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934197132",
+      "opponent_name": "Patrick Jordon",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 149,
+      "opponent_rank": 44,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -5.89
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34944358132",
+      "opponent_name": "Brayden Fahrbach",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "8:15",
+      "event": "Mountaineer Open",
+      "mv_impact": 2.66
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34954560132",
+      "opponent_name": "Joseph Morris",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 149,
+      "opponent_rank": 73,
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "7:00",
+      "event": "Mountaineer Open",
+      "mv_impact": 3.86
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34944675132",
+      "opponent_name": "Joseph Zargo",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 31,
+      "opponent_weight": 149,
+      "opponent_rank": 45,
+      "result": "L",
+      "method": "MD",
+      "score": "17-5",
+      "duration": "7:00",
+      "event": "vs. Wisconsin",
+      "mv_impact": -2.71
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34977466132",
+      "opponent_name": "Eugene Harney",
+      "opponent_team": "Morgan State",
+      "opponent_team_rank": 73,
+      "opponent_weight": 149,
+      "opponent_rank": 28,
+      "result": "L",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "vs. Ohio",
+      "mv_impact": -1.06
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34954560132",
+      "opponent_name": "Joseph Morris",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 149,
+      "opponent_rank": 73,
+      "result": "W",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 2.86
+    }
+  ]
+}

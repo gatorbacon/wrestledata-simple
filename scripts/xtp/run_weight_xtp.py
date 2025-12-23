@@ -516,13 +516,13 @@ def main():
     parser.add_argument(
         "--wrestlers-dir",
         type=str,
-        default="frontend/wrestledata-ui/public/wrestlers",
-        help="Directory containing wrestler JSON files"
+        default="frontend/wrestledata-ui/public/data/wrestlers",
+        help="Directory containing wrestler JSON files (default: frontend/wrestledata-ui/public/data/wrestlers)"
     )
     parser.add_argument(
         "--output-dir",
         type=str,
-        default="data/xtp",
+        default="frontend/wrestledata-ui/public/data/xtp",
         help="Directory for JSON export (optional)"
     )
     parser.add_argument(

@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34944031132",
+  "name": "Ruben Pina-Lorenzana",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 70,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.62,
+    "pa7": 18.0,
+    "pd7": -16.38,
+    "si_plus": 91.0,
+    "df_plus": 79.2,
+    "apr_plus": 98.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.068,
+      "matches": 4,
+      "rank_weight": 185,
+      "rank_overall": 1865,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34951047132",
+      "opponent_rank": 26,
+      "opponent_name": "Chris Vargo",
+      "method": "TF 18-1 4:37"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34936221132",
+      "opponent_name": "Ryan Meek",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -5.51
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34941782132",
+      "opponent_name": "Vinny Kilkeary",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:37",
+      "event": "Kent State Open 1",
+      "mv_impact": -4.4
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951054132",
+      "opponent_name": "Brycen Arbogast",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "3:00",
+      "event": "Michigan State Open",
+      "mv_impact": -6.79
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951047132",
+      "opponent_name": "Chris Vargo",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 125,
+      "opponent_rank": 26,
+      "result": "L",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "4:37",
+      "event": "Michigan State Open",
+      "mv_impact": -3.58
+    }
+  ]
+}

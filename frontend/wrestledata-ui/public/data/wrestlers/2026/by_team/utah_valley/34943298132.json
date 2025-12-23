@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34943298132",
+  "name": "Hudson Rogers",
+  "team": "Utah Valley",
+  "team_slug": "utah_valley",
+  "team_rank": 30,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.5,
+    "pa7": 6.0,
+    "pd7": -3.5,
+    "si_plus": 90.4,
+    "df_plus": 103.5,
+    "apr_plus": 93.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.262,
+      "matches": 2,
+      "rank_weight": 137,
+      "rank_overall": 1568,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934021132",
+      "opponent_rank": 45,
+      "opponent_name": "Mason Espinoza",
+      "method": "Dec 5-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934021132",
+      "opponent_name": "Mason Espinoza",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 65,
+      "opponent_weight": 174,
+      "opponent_rank": 45,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -3.0
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34941575132",
+      "opponent_name": "Caleb Neal",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -3.52
+    }
+  ]
+}

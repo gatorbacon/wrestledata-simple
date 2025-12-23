@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34941680132",
+  "name": "Hudson Waldrop",
+  "team": "Campbell",
+  "team_slug": "campbell",
+  "team_rank": 43,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 13.0,
+    "pd7": -7.0,
+    "si_plus": 96.6,
+    "df_plus": 93.7,
+    "apr_plus": 95.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.354,
+      "matches": 2,
+      "rank_weight": 201,
+      "rank_overall": 1896,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34936970132",
+      "opponent_name": "Abe Hermes",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "13-6",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -4.39
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934705132",
+      "opponent_name": "Leo Mongiello",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:17",
+      "event": "Southeast Open",
+      "mv_impact": -6.32
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.375
+  }
+}

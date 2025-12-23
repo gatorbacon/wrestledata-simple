@@ -425,13 +425,13 @@ def main() -> None:
     if args.output:
         output_file = Path(args.output)
     else:
-        # Default output location
-        output_file = Path(f"data/mat_value/{args.season}/mat_value_{args.season}.json")
+        # Default output location - write directly to public data directory
+        output_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{args.season}/mat_value_{args.season}.json")
     
     mv_data, match_impact_cache = compute_all_mv(args.season, args.data_dir, output_file)
     
     # Write MV cache file that can be loaded by build_wrestler_profiles.py
-    cache_file = Path(f"data/mat_value/{args.season}/mv_cache_{args.season}.json")
+    cache_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{args.season}/mv_cache_{args.season}.json")
     cache_file.parent.mkdir(parents=True, exist_ok=True)
     with cache_file.open("w", encoding="utf-8") as f:
         json.dump(mv_data, f, indent=2)
@@ -440,7 +440,7 @@ def main() -> None:
     print(f"  {len(mv_data)} wrestlers")
     
     # Write match-level MV impact cache
-    match_impact_file = Path(f"data/mat_value/{args.season}/match_mv_impact_{args.season}.json")
+    match_impact_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{args.season}/match_mv_impact_{args.season}.json")
     match_impact_file.parent.mkdir(parents=True, exist_ok=True)
     with match_impact_file.open("w", encoding="utf-8") as f:
         json.dump(match_impact_cache, f, indent=2)

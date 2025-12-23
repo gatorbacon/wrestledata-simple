@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34964529132",
+  "name": "Luca Stefanelli",
+  "team": "Cornell",
+  "team_slug": "cornell",
+  "team_rank": 10,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.36,
+    "pa7": 19.2,
+    "pd7": -16.83,
+    "si_plus": 85.5,
+    "df_plus": 81.5,
+    "apr_plus": 97.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.321,
+      "matches": 3,
+      "rank_weight": 228,
+      "rank_overall": 1892,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34938656132",
+      "opponent_rank": 70,
+      "opponent_name": "Matt Smith",
+      "method": "TF 17-1 6:24"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34948507132",
+      "opponent_name": "Kai Tengco",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 63,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "14-6",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -4.57
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34938656132",
+      "opponent_name": "Matt Smith",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 149,
+      "opponent_rank": 70,
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "6:24",
+      "event": "Big Red Invitational",
+      "mv_impact": -5.28
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934168132",
+      "opponent_name": "Carson Walsh",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 33,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "3:34",
+      "event": "Clarion Open",
+      "mv_impact": -6.11
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5
+  }
+}

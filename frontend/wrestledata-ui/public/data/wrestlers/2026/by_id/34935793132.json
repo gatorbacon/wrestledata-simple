@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34935793132",
+  "name": "Cade Ziola",
+  "team": "Nebraska",
+  "team_slug": "nebraska",
+  "team_rank": 7,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "4-1",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 14.8,
+    "pa7": 6.43,
+    "pd7": 8.37,
+    "si_plus": 122.7,
+    "df_plus": 103.4,
+    "apr_plus": 99.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.75,
+    "majors": 1,
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.094,
+      "matches": 5,
+      "rank_weight": 16,
+      "rank_overall": 122,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34955792132",
+      "opponent_rank": 16,
+      "opponent_name": "Koy Hopke",
+      "method": "Dec 8-7"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34948502132",
+      "opponent_name": "Alex Semenenko",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 63,
+      "opponent_weight": 285,
+      "opponent_rank": 41,
+      "result": "W",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "4:44",
+      "event": "vs. Nebraska",
+      "mv_impact": 6.25
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34943991132",
+      "opponent_name": "Jacobi Jackson",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "4:31",
+      "event": "vs. Nebraska",
+      "mv_impact": 4.38
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955792132",
+      "opponent_name": "Koy Hopke",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 285,
+      "opponent_rank": 16,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": 5.09
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955779132",
+      "opponent_name": "Bennett Tabor",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -0.84
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934619132",
+      "opponent_name": "Shilo Jones",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "14-4",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": 0.59
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 0.12535612535612536
+  }
+}

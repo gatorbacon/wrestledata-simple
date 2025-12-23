@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34943237132",
+  "name": "Colin Dupill",
+  "team": "South Dakota State",
+  "team_slug": "south_dakota_state",
+  "team_rank": 28,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.5,
+    "pa7": 11.0,
+    "pd7": -10.5,
+    "si_plus": 86.3,
+    "df_plus": 95.2,
+    "apr_plus": 97.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.507,
+      "matches": 3,
+      "rank_weight": 231,
+      "rank_overall": 1913,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955776132",
+      "opponent_name": "Jager Eisch",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -3.69
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955802132",
+      "opponent_name": "Charles Vanier",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -3.94
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934635132",
+      "opponent_name": "Gabriel Gallardo",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:16",
+      "event": "Bison Open 2025",
+      "mv_impact": -8.9
+    }
+  ]
+}

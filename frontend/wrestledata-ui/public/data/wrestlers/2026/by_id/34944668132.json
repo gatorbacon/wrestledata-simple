@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34944668132",
+  "name": "Cody Goebel",
+  "team": "Wisconsin",
+  "team_slug": "wisconsin",
+  "team_rank": 31,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 15,
+  "record": {
+    "overall": "4-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "1-2"
+  },
+  "metrics": {
+    "pf7": 7.2,
+    "pa7": 7.0,
+    "pd7": 0.2,
+    "si_plus": 105.0,
+    "df_plus": 107.4,
+    "apr_plus": 97.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.25,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.073,
+      "matches": 6,
+      "rank_weight": 52,
+      "rank_overall": 450,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934324132",
+      "opponent_rank": 16,
+      "opponent_name": "Gunner Filipowicz",
+      "method": "Dec 6-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34954152132",
+      "opponent_rank": 14,
+      "opponent_name": "Noah Mulvaney",
+      "method": "Dec 9-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34937676132",
+      "opponent_name": "Jake Slotnick",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 165,
+      "opponent_rank": 37,
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "vs. Wisconsin",
+      "mv_impact": 3.65
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934324132",
+      "opponent_name": "Gunner Filipowicz",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 165,
+      "opponent_rank": 16,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Wisconsin",
+      "mv_impact": 4.58
+    },
+    {
+      "date": "2025-11-25",
+      "opponent_id": "34954152132",
+      "opponent_name": "Noah Mulvaney",
+      "opponent_team": "Bucknell",
+      "opponent_team_rank": 29,
+      "opponent_weight": 165,
+      "opponent_rank": 14,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-5",
+      "duration": "7:00",
+      "event": "vs. Wisconsin",
+      "mv_impact": -0.89
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34936217132",
+      "opponent_name": "Max Ray",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "16-2",
+      "duration": "7:00",
+      "event": "vs. Wisconsin",
+      "mv_impact": 2.86
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34940704132",
+      "opponent_name": "Connor Euton",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 4,
+      "opponent_weight": 165,
+      "opponent_rank": 11,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:31",
+      "event": "Cyclone Invitational",
+      "mv_impact": -2.9
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34941574132",
+      "opponent_name": "Landen Johnson",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -0.87
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 0.3333333333333333
+  }
+}

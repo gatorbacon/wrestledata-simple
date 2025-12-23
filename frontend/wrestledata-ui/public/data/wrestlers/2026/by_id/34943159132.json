@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34943159132",
+  "name": "Cameron Stinson",
+  "team": "North Carolina",
+  "team_slug": "north_carolina",
+  "team_rank": 46,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 13.0,
+    "pa7": 3.0,
+    "pd7": 10.0,
+    "si_plus": 115.4,
+    "df_plus": 108.7,
+    "apr_plus": 103.6,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.384,
+      "matches": 5,
+      "rank_weight": 62,
+      "rank_overall": 637,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34946239132",
+      "opponent_rank": 58,
+      "opponent_name": "Tyler Washburn",
+      "method": "Dec 9-3"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34955789132",
+      "opponent_name": "Blake Beissel",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -3.28
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946239132",
+      "opponent_name": "Tyler Washburn",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 77,
+      "opponent_weight": 125,
+      "opponent_rank": 58,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 2.33
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946725132",
+      "opponent_name": "Matthew Dolan",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "3:30",
+      "event": "Southeast Open",
+      "mv_impact": 4.38
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946798132",
+      "opponent_name": "Louie Gill",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:39",
+      "event": "Southeast Open",
+      "mv_impact": -5.0
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34936221132",
+      "opponent_name": "Ryan Meek",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Southeast Open",
+      "mv_impact": 3.49
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.14285714285714285
+  }
+}

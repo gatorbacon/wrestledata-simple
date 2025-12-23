@@ -404,7 +404,7 @@ def generate_public_matrix(
     season: int,
     weight: int,
     data_dir: str = "mt/rankings_data",
-    output_dir: str = "frontend/wrestledata-ui/public/matrix",
+    output_dir: str = "frontend/wrestledata-ui/public/data/matrix",
     starters_only: bool = False
 ) -> Dict:
     """
@@ -446,15 +446,15 @@ def save_public_matrix(
     matrix_data: Dict,
     season: int,
     weight: int,
-    output_dir: str = "frontend/wrestledata-ui/public/matrix",
+    output_dir: str = "frontend/wrestledata-ui/public/data/matrix",
     starters_only: bool = False
 ) -> Path:
     """Save public matrix JSON to file."""
     output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
-    # Always use same filename format (no suffix)
-    filename = f"public_matrix_{season}_{weight}.json"
+    # Use weight as filename: <weight>.json
+    filename = f"{weight}.json"
     output_file = output_path / filename
     
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -485,7 +485,7 @@ def main():
     )
     parser.add_argument(
         '-output-dir',
-        default='frontend/wrestledata-ui/public/matrix',
+        default='frontend/wrestledata-ui/public/data/matrix',
         help='Directory to save output files'
     )
     parser.add_argument(

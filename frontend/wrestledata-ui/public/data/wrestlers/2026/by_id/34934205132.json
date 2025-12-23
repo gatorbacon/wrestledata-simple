@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34934205132",
+  "name": "Tristan Hass",
+  "team": "VMI",
+  "team_slug": "vmi",
+  "team_rank": 78,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 16.19,
+    "pa7": 13.71,
+    "pd7": 2.48,
+    "si_plus": 121.0,
+    "df_plus": 88.1,
+    "apr_plus": 91.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.248,
+      "matches": 2,
+      "rank_weight": 145,
+      "rank_overall": 1353,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937496132",
+      "opponent_name": "Grant Kress",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "2:58",
+      "event": "Southeast Open",
+      "mv_impact": -5.48
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934257132",
+      "opponent_name": "Christian Leonard",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "5:47",
+      "event": "Southeast Open",
+      "mv_impact": 0.98
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.3333333333333333
+  }
+}

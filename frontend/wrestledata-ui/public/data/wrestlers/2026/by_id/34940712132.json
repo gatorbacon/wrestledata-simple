@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34940712132",
+  "name": "Rowan Udell",
+  "team": "Iowa State",
+  "team_slug": "iowa_state",
+  "team_rank": 4,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 6.12,
+    "pa7": 11.0,
+    "pd7": -4.88,
+    "si_plus": 94.1,
+    "df_plus": 89.0,
+    "apr_plus": 98.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.018,
+      "matches": 5,
+      "rank_weight": 107,
+      "rank_overall": 1304,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944680132",
+      "opponent_rank": 23,
+      "opponent_name": "Wyatt Ingham",
+      "method": "TF 18-2 3:54"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34940720132",
+      "opponent_name": "CJ Carter",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 4,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Grand View Open",
+      "mv_impact": -4.2
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34950680132",
+      "opponent_name": "Kayden Cartee",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 65,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "19-6",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": 0.54
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943284132",
+      "opponent_name": "Kael Bennie",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 30,
+      "opponent_weight": 197,
+      "opponent_rank": 22,
+      "result": "L",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -3.02
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943299132",
+      "opponent_name": "Christian Slack",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 30,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": 0.08
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944680132",
+      "opponent_name": "Wyatt Ingham",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 31,
+      "opponent_weight": 197,
+      "opponent_rank": 23,
+      "result": "L",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "3:54",
+      "event": "Cyclone Invitational",
+      "mv_impact": -3.49
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.4
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "wrestler_id": "34949310132",
+  "name": "Antonio Jimenez",
+  "team": "Sacred Heart",
+  "team_slug": "sacred_heart",
+  "team_rank": 76,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.39,
+    "pa7": 25.0,
+    "pd7": -20.61,
+    "si_plus": 97.9,
+    "df_plus": 67.0,
+    "apr_plus": 93.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -7.257,
+      "matches": 4,
+      "rank_weight": 230,
+      "rank_overall": 2026,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34935052132",
+      "opponent_rank": 74,
+      "opponent_name": "William Morrow",
+      "method": "TF 19-3 4:47"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34947810132",
+      "opponent_name": "Jordan Brown",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 61,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "Big Red Invitational",
+      "mv_impact": -6.59
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935052132",
+      "opponent_name": "William Morrow",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 157,
+      "opponent_rank": 74,
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "4:47",
+      "event": "Big Red Invitational",
+      "mv_impact": -6.6
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34938633132",
+      "opponent_name": "Reece Bechakas",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "Big Red Invitational",
+      "mv_impact": -9.14
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34938689132",
+      "opponent_name": "Cody Hamilton",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Big Red Invitational",
+      "mv_impact": -6.7
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

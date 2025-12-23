@@ -1,0 +1,166 @@
+{
+  "wrestler_id": "34945474132",
+  "name": "Lenny Pinto",
+  "team": "Rutgers",
+  "team_slug": "rutgers",
+  "team_rank": 17,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 10,
+  "record": {
+    "overall": "5-2",
+    "vs_ranked": "4-2",
+    "vs_top10": "0-2",
+    "vs_top25": "1-2"
+  },
+  "metrics": {
+    "pf7": 12.28,
+    "pa7": 5.86,
+    "pd7": 6.42,
+    "si_plus": 116.0,
+    "df_plus": 106.1,
+    "apr_plus": 98.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.6,
+    "majors": 1,
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.124,
+      "matches": 7,
+      "rank_weight": 16,
+      "rank_overall": 250,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 4,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34971902132",
+      "opponent_rank": 11,
+      "opponent_name": "Jasiah Queen",
+      "method": "TB-2 (RT) 2-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34939049132",
+      "opponent_rank": 9,
+      "opponent_name": "Danny Wask",
+      "method": "MD 14-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34935689132",
+      "opponent_name": "Matty Singleton",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 174,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:07",
+      "event": "vs. Rutgers",
+      "mv_impact": -3.27
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34971902132",
+      "opponent_name": "Jasiah Queen",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 44,
+      "opponent_weight": 174,
+      "opponent_rank": 11,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-2",
+      "duration": "10:00",
+      "event": "Keystone Classic",
+      "mv_impact": 4.68
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34951056132",
+      "opponent_name": "Tate Geiser",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 174,
+      "opponent_rank": 39,
+      "result": "W",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "6:54",
+      "event": "Keystone Classic",
+      "mv_impact": 5.57
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934461132",
+      "opponent_name": "Dominic Wheatley",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 174,
+      "opponent_rank": 56,
+      "result": "W",
+      "method": "MD",
+      "score": "17-7",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": 3.18
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936018132",
+      "opponent_name": "Sam Gautreau",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": 3.43
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34939049132",
+      "opponent_name": "Danny Wask",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 174,
+      "opponent_rank": 9,
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "vs. Rutgers",
+      "mv_impact": -1.75
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34939075132",
+      "opponent_name": "Isaiah Guerrero",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 174,
+      "opponent_rank": 70,
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "6:08",
+      "event": "vs. Rutgers",
+      "mv_impact": 3.03
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 0.2962962962962963
+  }
+}

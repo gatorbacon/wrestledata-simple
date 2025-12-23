@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34948139132",
+  "name": "Drew Heethuis",
+  "team": "Princeton",
+  "team_slug": "princeton",
+  "team_rank": 38,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 4.22,
+    "pa7": 5.31,
+    "pd7": -1.09,
+    "si_plus": 101.5,
+    "df_plus": 107.0,
+    "apr_plus": 97.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.376,
+      "matches": 5,
+      "rank_weight": 62,
+      "rank_overall": 642,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34943404132",
+      "opponent_rank": 43,
+      "opponent_name": "Evin Gursoy",
+      "method": "SV-3 6-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34964380132",
+      "opponent_rank": 13,
+      "opponent_name": "Brett Ungar",
+      "method": "Dec 4-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34964380132",
+      "opponent_name": "Brett Ungar",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 133,
+      "opponent_rank": 13,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -0.77
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34939056132",
+      "opponent_name": "Brendan Ferretti",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -4.56
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943404132",
+      "opponent_name": "Evin Gursoy",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 133,
+      "opponent_rank": 43,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "8:15",
+      "event": "Princeton Open",
+      "mv_impact": 3.53
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34952700132",
+      "opponent_name": "Matty Lopes",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 133,
+      "opponent_rank": 8,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -0.33
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934852132",
+      "opponent_name": "Noah Michaels",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 4.01
+    }
+  ]
+}

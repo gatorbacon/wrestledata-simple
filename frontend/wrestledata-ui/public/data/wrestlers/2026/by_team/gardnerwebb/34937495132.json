@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34937495132",
+  "name": "Gunther Gerstenacker",
+  "team": "Gardner-Webb",
+  "team_slug": "gardnerwebb",
+  "team_rank": 54,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.18,
+    "pa7": 24.51,
+    "pd7": -20.34,
+    "si_plus": 95.8,
+    "df_plus": 70.6,
+    "apr_plus": 97.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.647,
+      "matches": 2,
+      "rank_weight": 205,
+      "rank_overall": 1927,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34956137132",
+      "opponent_name": "Caleb Cady",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "23-8",
+      "duration": "6:42",
+      "event": "Mountaineer Open",
+      "mv_impact": -5.0
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936225132",
+      "opponent_name": "Charles Spinning",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "19-0",
+      "duration": "3:45",
+      "event": "Mountaineer Open",
+      "mv_impact": -6.29
+    }
+  ]
+}

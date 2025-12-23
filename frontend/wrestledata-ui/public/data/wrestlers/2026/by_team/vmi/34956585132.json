@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34956585132",
+  "name": "Hayato Otero",
+  "team": "VMI",
+  "team_slug": "vmi",
+  "team_rank": 78,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 6.0,
+    "pd7": -4.0,
+    "si_plus": 81.7,
+    "df_plus": 100.2,
+    "apr_plus": 95.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -7.076,
+      "matches": 2,
+      "rank_weight": 198,
+      "rank_overall": 2022,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934468132",
+      "opponent_name": "Charlie Colantonio",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "Southeast Open",
+      "mv_impact": -8.76
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946234132",
+      "opponent_name": "Marcus Wright",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 77,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -5.39
+    }
+  ]
+}

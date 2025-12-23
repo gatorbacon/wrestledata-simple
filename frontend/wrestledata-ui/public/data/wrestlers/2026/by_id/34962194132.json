@@ -1,0 +1,136 @@
+{
+  "wrestler_id": "34962194132",
+  "name": "Mason Cover",
+  "team": "CSU Bakersfield",
+  "team_slug": "csu_bakersfield",
+  "team_rank": 64,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 64,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 0.84,
+    "pa7": 11.33,
+    "pd7": -10.49,
+    "si_plus": 90.7,
+    "df_plus": 96.1,
+    "apr_plus": 105.2,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.634,
+      "matches": 5,
+      "rank_weight": 109,
+      "rank_overall": 1196,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34949045132",
+      "opponent_rank": 67,
+      "opponent_name": "Brendan Gilchrist",
+      "method": "Fall 1:08"
+    },
+    "worst_loss": {
+      "opponent_id": "34945135132",
+      "opponent_rank": 36,
+      "opponent_name": "Hayden Filipovich",
+      "method": "Dec 6-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934029132",
+      "opponent_name": "Tristan Kemp",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 65,
+      "opponent_weight": 285,
+      "opponent_rank": 35,
+      "result": "L",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -2.95
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34933568132",
+      "opponent_name": "Taye Ghadiali",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 14,
+      "opponent_weight": 285,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "4:34",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -2.24
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34949045132",
+      "opponent_name": "Brendan Gilchrist",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 285,
+      "opponent_rank": 67,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:08",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 3.78
+    },
+    {
+      "date": "2025-11-14",
+      "opponent_id": "34936112132",
+      "opponent_name": "Trevor Tinker",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 32,
+      "opponent_weight": 285,
+      "opponent_rank": 11,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:09",
+      "event": "vs. Cal Poly",
+      "mv_impact": -4.11
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34945135132",
+      "opponent_name": "Hayden Filipovich",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 285,
+      "opponent_rank": 36,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "vs. Purdue",
+      "mv_impact": -2.65
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

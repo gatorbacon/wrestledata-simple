@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34943400132",
+  "name": "Oliver Howard",
+  "team": "Columbia",
+  "team_slug": "columbia",
+  "team_rank": 50,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.6,
+    "pa7": 9.6,
+    "pd7": -5.0,
+    "si_plus": 92.1,
+    "df_plus": 95.5,
+    "apr_plus": 96.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.281,
+      "matches": 5,
+      "rank_weight": 140,
+      "rank_overall": 1572,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34939075132",
+      "opponent_rank": 70,
+      "opponent_name": "Isaiah Guerrero",
+      "method": "MD 8-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934320132",
+      "opponent_name": "Andrew Christie",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 174,
+      "opponent_rank": 43,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -2.37
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34939075132",
+      "opponent_name": "Isaiah Guerrero",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 174,
+      "opponent_rank": 70,
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -5.97
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34945529132",
+      "opponent_name": "Colt Campbell",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 174,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-7",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -3.57
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34936018132",
+      "opponent_name": "Sam Gautreau",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "17-3",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -3.57
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934467132",
+      "opponent_name": "Michael Fuccilli",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -0.91
+    }
+  ]
+}

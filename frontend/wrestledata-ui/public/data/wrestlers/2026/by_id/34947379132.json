@@ -1,0 +1,141 @@
+{
+  "wrestler_id": "34947379132",
+  "name": "Mason Higley",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 70,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "4-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.49,
+    "pa7": 8.56,
+    "pd7": -1.06,
+    "si_plus": 95.9,
+    "df_plus": 89.6,
+    "apr_plus": 109.4,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.75,
+    "majors": 0,
+    "techs": 1,
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": -0.342,
+      "matches": 6,
+      "rank_weight": 77,
+      "rank_overall": 841,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34941781132",
+      "opponent_name": "Seth Shumate",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -3.13
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34946730132",
+      "opponent_name": "Cole Tolley",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:03",
+      "event": "Kent State Open 1",
+      "mv_impact": 3.33
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955732132",
+      "opponent_name": "Marcell Booth",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 40,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -0.27
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943755132",
+      "opponent_name": "Max Acciardi",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "Michigan State Open",
+      "mv_impact": 1.79
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944591132",
+      "opponent_name": "Aidan Ysaguirre",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -6.05
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934119132",
+      "opponent_name": "Cole O`Boyle",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 51,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "5:44",
+      "event": "Michigan State Open",
+      "mv_impact": 2.28
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.4
+  }
+}

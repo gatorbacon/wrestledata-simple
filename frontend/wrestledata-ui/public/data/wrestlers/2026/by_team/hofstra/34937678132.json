@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34937678132",
+  "name": "Cam Ice",
+  "team": "Hofstra",
+  "team_slug": "hofstra",
+  "team_rank": 69,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.98,
+    "pa7": 9.14,
+    "pd7": -6.16,
+    "si_plus": 91.3,
+    "df_plus": 97.0,
+    "apr_plus": 97.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.783,
+      "matches": 3,
+      "rank_weight": 153,
+      "rank_overall": 1241,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34953927132",
+      "opponent_rank": 57,
+      "opponent_name": "Noah Tocaben",
+      "method": "SV-3 4-1"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934317132",
+      "opponent_name": "Cole Stone",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.01
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34953927132",
+      "opponent_name": "Noah Tocaben",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 71,
+      "opponent_weight": 149,
+      "opponent_rank": 57,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 3.15
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34939054132",
+      "opponent_name": "Frank Antonelli",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "5:31",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.49
+    }
+  ]
+}

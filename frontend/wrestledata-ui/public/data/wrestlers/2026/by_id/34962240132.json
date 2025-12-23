@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34962240132",
+  "name": "Caleb McElroy",
+  "team": "CSU Bakersfield",
+  "team_slug": "csu_bakersfield",
+  "team_rank": 64,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.8,
+    "pa7": 6.52,
+    "pd7": -1.72,
+    "si_plus": 95.0,
+    "df_plus": 98.9,
+    "apr_plus": 97.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.424,
+      "matches": 5,
+      "rank_weight": 165,
+      "rank_overall": 1607,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34936081132",
+      "opponent_rank": 71,
+      "opponent_name": "Leo Macias",
+      "method": "Dec 7-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34962147132",
+      "opponent_name": "Tristen Lorraine",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": 1.28
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934928132",
+      "opponent_name": "Jeff Lopez",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "6:44",
+      "event": "Roadrunner Open",
+      "mv_impact": -5.46
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934750132",
+      "opponent_name": "Chase DeBlaere",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": -2.75
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34936081132",
+      "opponent_name": "Leo Macias",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 32,
+      "opponent_weight": 133,
+      "opponent_rank": 71,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Menlo Open",
+      "mv_impact": -4.96
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34962241132",
+      "opponent_name": "Saxton Scott",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Menlo Open",
+      "mv_impact": -5.22
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

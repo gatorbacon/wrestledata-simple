@@ -1,0 +1,166 @@
+{
+  "wrestler_id": "34941791132",
+  "name": "Landon Desselle",
+  "team": "Ohio State",
+  "team_slug": "ohio_state",
+  "team_rank": 2,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "6-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.0,
+    "pa7": 4.0,
+    "pd7": 7.0,
+    "si_plus": 102.6,
+    "df_plus": 108.7,
+    "apr_plus": 135.3,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.833,
+    "majors": 2,
+    "techs": 0,
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 2.162,
+      "matches": 7,
+      "rank_weight": 29,
+      "rank_overall": 245,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935438132",
+      "opponent_rank": 27,
+      "opponent_name": "Cavarius Liddie",
+      "method": "Fall 3:40"
+    },
+    "worst_loss": {
+      "opponent_id": "34964390132",
+      "opponent_rank": 37,
+      "opponent_name": "Benny Rogers",
+      "method": "Dec 6-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944011132",
+      "opponent_name": "Keegan Knapp",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:59",
+      "event": "Kent State Open 1",
+      "mv_impact": 6.08
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34937007132",
+      "opponent_name": "Dominic Serio",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "14-4",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": 2.47
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934145132",
+      "opponent_name": "Jack Tongel",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 33,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": 0.09
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34935438132",
+      "opponent_name": "Cavarius Liddie",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 52,
+      "opponent_weight": 157,
+      "opponent_rank": 27,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:40",
+      "event": "vs. Ohio State",
+      "mv_impact": 7.47
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34964390132",
+      "opponent_name": "Benny Rogers",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 157,
+      "opponent_rank": 37,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -2.04
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34951041132",
+      "opponent_name": "Joe Clark",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -1.0
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934134132",
+      "opponent_name": "Connor Swaim",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 33,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:26",
+      "event": "Clarion Open",
+      "mv_impact": 2.08
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 0.6324786324786325
+  }
+}

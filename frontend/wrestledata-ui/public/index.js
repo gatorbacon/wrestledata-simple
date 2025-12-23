@@ -46,7 +46,7 @@ function createMVRankBadge(rank) {
 // Load MV leaderboard data
 async function loadMVData() {
   const season = resolveSeason();
-  const url = `/mat_value/${season}/mat_value_${season}.json`;
+  const url = `/data/mat_value/${season}/mat_value_${season}.json`;
   
   try {
     const res = await fetch(url);
@@ -62,7 +62,7 @@ async function loadMVData() {
 // Load xTP team data
 async function loadXTPData() {
   const season = resolveSeason();
-  const url = `/xtp/${season}/xtp_teams_${season}.json`;
+  const url = `/data/xtp/${season}/xtp_teams_${season}.json`;
   
   try {
     const res = await fetch(url);

@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34933534132",
+  "name": "Chris Kiser",
+  "team": "Michigan",
+  "team_slug": "michigan",
+  "team_rank": 14,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 3.0,
+    "pd7": 1.0,
+    "si_plus": 93.5,
+    "df_plus": 109.0,
+    "apr_plus": 98.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.862,
+      "matches": 3,
+      "rank_weight": 126,
+      "rank_overall": 1265,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951054132",
+      "opponent_name": "Brycen Arbogast",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 2.21
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934360132",
+      "opponent_name": "Michael Esteban",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -4.22
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34945176132",
+      "opponent_name": "Ty Henderson",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -3.58
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.14285714285714285
+  }
+}

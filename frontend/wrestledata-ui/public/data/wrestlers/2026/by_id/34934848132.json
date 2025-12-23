@@ -1,0 +1,116 @@
+{
+  "wrestler_id": "34934848132",
+  "name": "Michael Campanaro",
+  "team": "Rider",
+  "team_slug": "rider",
+  "team_rank": 42,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 9.67,
+    "pa7": 5.0,
+    "pd7": 4.67,
+    "si_plus": 95.3,
+    "df_plus": 100.6,
+    "apr_plus": 96.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.592,
+      "matches": 4,
+      "rank_weight": 117,
+      "rank_overall": 1187,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34935955132",
+      "opponent_rank": 45,
+      "opponent_name": "Gable Strickland",
+      "method": "MD 12-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34934852132",
+      "opponent_name": "Noah Michaels",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -5.99
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34934827132",
+      "opponent_name": "Kyle Hill",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "2:54",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 0.88
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34946737132",
+      "opponent_name": "Logan Alexander",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 2.36
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935955132",
+      "opponent_name": "Gable Strickland",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 133,
+      "opponent_rank": 45,
+      "result": "L",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -3.62
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34971915132",
+  "name": "Jason Foutz",
+  "team": "Drexel",
+  "team_slug": "drexel",
+  "team_rank": 44,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 21.0,
+    "pd7": -16.0,
+    "si_plus": 93.9,
+    "df_plus": 75.9,
+    "apr_plus": 98.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.867,
+      "matches": 2,
+      "rank_weight": 200,
+      "rank_overall": 2016,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934307132",
+      "opponent_rank": 39,
+      "opponent_name": "Charlie Farmer",
+      "method": "Fall 0:51"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934307132",
+      "opponent_name": "Charlie Farmer",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 125,
+      "opponent_rank": 39,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "Princeton Open",
+      "mv_impact": -5.72
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934843132",
+      "opponent_name": "Alex Esposito",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 42,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -8.02
+    }
+  ]
+}

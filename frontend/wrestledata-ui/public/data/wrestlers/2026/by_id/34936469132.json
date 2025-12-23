@@ -1,0 +1,146 @@
+{
+  "wrestler_id": "34936469132",
+  "name": "Sergio Vega",
+  "team": "Oklahoma State",
+  "team_slug": "oklahoma_state",
+  "team_rank": 5,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 2,
+  "record": {
+    "overall": "6-0",
+    "vs_ranked": "5-0",
+    "vs_top10": "3-0",
+    "vs_top25": "5-0"
+  },
+  "metrics": {
+    "pf7": 8.03,
+    "pa7": 1.02,
+    "pd7": 7.01,
+    "si_plus": 111.3,
+    "df_plus": 117.5,
+    "apr_plus": 98.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.333,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 4.968,
+      "matches": 6,
+      "rank_weight": 2,
+      "rank_overall": 18,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 5,
+    "ranked_losses": 0,
+    "top10_wins": 3,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935612132",
+      "opponent_rank": 3,
+      "opponent_name": "Brock Hardy",
+      "method": "MD 13-2"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943753132",
+      "opponent_name": "Pierson Manville",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 141,
+      "opponent_rank": 15,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": 4.75
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34962192132",
+      "opponent_name": "Nasir Bailey",
+      "opponent_team": "Iowa",
+      "opponent_team_rank": 3,
+      "opponent_weight": 141,
+      "opponent_rank": 7,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "8:15",
+      "event": "vs. Oklahoma State",
+      "mv_impact": 4.52
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34935612132",
+      "opponent_name": "Brock Hardy",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 141,
+      "opponent_rank": 3,
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": 6.8
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34964395132",
+      "opponent_name": "Josh Saunders",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": 2.5
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34935687132",
+      "opponent_name": "Ryan Jack",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 141,
+      "opponent_rank": 6,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": 4.92
+    },
+    {
+      "date": "2025-11-07",
+      "opponent_id": "34943443132",
+      "opponent_name": "Jack Consiglio",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 19,
+      "opponent_weight": 141,
+      "opponent_rank": 17,
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "6:21",
+      "event": "vs. Stanford",
+      "mv_impact": 6.32
+    }
+  ],
+  "bonus": {
+    "top33_wins": 5,
+    "top33_bonus_ev_raw": 0.5,
+    "top33_bonus_ev_shrunk": 0.46153846153846156
+  }
+}

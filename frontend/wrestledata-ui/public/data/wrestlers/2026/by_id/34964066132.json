@@ -1,0 +1,136 @@
+{
+  "wrestler_id": "34964066132",
+  "name": "Adam Ahrendsen",
+  "team": "Northern Iowa",
+  "team_slug": "northern_iowa",
+  "team_rank": 26,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 5.6,
+    "pd7": -0.6,
+    "si_plus": 100.4,
+    "df_plus": 99.7,
+    "apr_plus": 99.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.333,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.369,
+      "matches": 5,
+      "rank_weight": 77,
+      "rank_overall": 849,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34945364132",
+      "opponent_rank": 66,
+      "opponent_name": "Kaden Darwin",
+      "method": "MD 10-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34943973132",
+      "opponent_rank": 38,
+      "opponent_name": "Jarrett Stoner",
+      "method": "Dec 13-8"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34952069132",
+      "opponent_name": "Luke Luffman",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 9,
+      "opponent_weight": 285,
+      "opponent_rank": 25,
+      "result": "L",
+      "method": "MD",
+      "score": "15-4",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -2.46
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34945364132",
+      "opponent_name": "Kaden Darwin",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 12,
+      "opponent_weight": 285,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": 2.54
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34943973132",
+      "opponent_name": "Jarrett Stoner",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 285,
+      "opponent_rank": 38,
+      "result": "L",
+      "method": "DEC",
+      "score": "13-8",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -2.53
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34937105132",
+      "opponent_name": "Enzo Cappabianca",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 57,
+      "opponent_weight": 285,
+      "opponent_rank": 77,
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": 0.67
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "35025185132",
+      "opponent_name": "Cameron Guether",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Younes Hospitality Open",
+      "mv_impact": -0.05
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34940717132",
+  "name": "Tate Naaktgeboren",
+  "team": "Iowa State",
+  "team_slug": "iowa_state",
+  "team_rank": 4,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.5,
+    "pa7": 3.5,
+    "pd7": 0.0,
+    "si_plus": 97.2,
+    "df_plus": 111.7,
+    "apr_plus": 99.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.905,
+      "matches": 2,
+      "rank_weight": 159,
+      "rank_overall": 1849,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34943283132",
+      "opponent_rank": 32,
+      "opponent_name": "Caleb Uhlenhopp",
+      "method": "TB-1 5-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943283132",
+      "opponent_name": "Caleb Uhlenhopp",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 30,
+      "opponent_weight": 184,
+      "opponent_rank": 32,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-5",
+      "duration": "10:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -2.23
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944688132",
+      "opponent_name": "Caleb Dennee",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 31,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "1:47",
+      "event": "Cyclone Invitational",
+      "mv_impact": -7.58
+    }
+  ]
+}

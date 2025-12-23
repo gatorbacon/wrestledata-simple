@@ -1,0 +1,166 @@
+{
+  "wrestler_id": "34935864132",
+  "name": "John Pardo",
+  "team": "Penn",
+  "team_slug": "penn",
+  "team_rank": 27,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 43,
+  "record": {
+    "overall": "5-2",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.33,
+    "pa7": 10.83,
+    "pd7": -3.49,
+    "si_plus": 101.5,
+    "df_plus": 95.7,
+    "apr_plus": 102.0,
+    "pin_rate": 0.2,
+    "bonus_rate": 0.6,
+    "majors": 1,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.039,
+      "matches": 7,
+      "rank_weight": 53,
+      "rank_overall": 458,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34985676132",
+      "opponent_rank": 44,
+      "opponent_name": "Kade Sottolano",
+      "method": "Dec 8-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34933981132",
+      "opponent_rank": 26,
+      "opponent_name": "Max Vanadia",
+      "method": "MD 11-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34985676132",
+      "opponent_name": "Kade Sottolano",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 285,
+      "opponent_rank": 44,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": 4.02
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34933979132",
+      "opponent_name": "Josh Terrill",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "5:41",
+      "event": "Keystone Classic",
+      "mv_impact": -4.1
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34933981132",
+      "opponent_name": "Max Vanadia",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 72,
+      "opponent_weight": 285,
+      "opponent_rank": 26,
+      "result": "L",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -2.49
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34937677132",
+      "opponent_name": "Danny Church",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 285,
+      "opponent_rank": 70,
+      "result": "W",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "0:00",
+      "event": "vs. Penn",
+      "mv_impact": 1.99
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34948090132",
+      "opponent_name": "Brycen Arthur",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 43,
+      "opponent_weight": 285,
+      "opponent_rank": 75,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Pennsylvania",
+      "mv_impact": 3.35
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934342132",
+      "opponent_name": "Sam Sorenson",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 2.1
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34947806132",
+      "opponent_name": "Trent Sibble",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 61,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 2.4
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "wrestler_id": "34949346132",
+  "name": "Jack DiBenedetto",
+  "team": "Sacred Heart",
+  "team_slug": "sacred_heart",
+  "team_rank": 76,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-6",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.0,
+    "pa7": 15.0,
+    "pd7": -14.0,
+    "si_plus": 87.8,
+    "df_plus": 85.9,
+    "apr_plus": 97.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.15,
+      "matches": 6,
+      "rank_weight": 238,
+      "rank_overall": 1974,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34950415132",
+      "opponent_rank": 52,
+      "opponent_name": "Dylan Ross",
+      "method": "TF 15-0 1:45"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936184132",
+      "opponent_name": "Dustin Elliott",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:20",
+      "event": "Big Red Invitational",
+      "mv_impact": -7.59
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34964395132",
+      "opponent_name": "Josh Saunders",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:51",
+      "event": "Big Red Invitational",
+      "mv_impact": -6.5
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34949039132",
+      "opponent_name": "Connor MacDonald",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "Big Red Invitational",
+      "mv_impact": -9.04
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943406132",
+      "opponent_name": "Marco Frinzi",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:50",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -6.31
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34950403132",
+      "opponent_name": "SP O`Donnell",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 68,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -3.07
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34950415132",
+      "opponent_name": "Dylan Ross",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 68,
+      "opponent_weight": 149,
+      "opponent_rank": 52,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:45",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.38
+    }
+  ]
+}

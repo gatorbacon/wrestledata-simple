@@ -1,0 +1,145 @@
+{
+  "wrestler_id": "34935454132",
+  "name": "Ethan Uhorchuk",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 52,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-3",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 13.4,
+    "pa7": 2.6,
+    "pd7": 10.8,
+    "si_plus": 107.7,
+    "df_plus": 108.0,
+    "apr_plus": 97.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.374,
+      "matches": 5,
+      "rank_weight": 63,
+      "rank_overall": 644,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34943404132",
+      "opponent_rank": 43,
+      "opponent_name": "Evin Gursoy",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34952958132",
+      "opponent_name": "Max Elton",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "13-1",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": 2.51
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34953893132",
+      "opponent_name": "Jared Chuquilin",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 71,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:02",
+      "event": "Black Knight Invite",
+      "mv_impact": 2.62
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34939020132",
+      "opponent_name": "Kyison Garcia",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -2.84
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943404132",
+      "opponent_name": "Evin Gursoy",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 133,
+      "opponent_rank": 43,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943162132",
+      "opponent_name": "Matthew Botello",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 46,
+      "opponent_weight": 133,
+      "opponent_rank": 35,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -1.53
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934202132",
+      "opponent_name": "Cody Tanner",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:35",
+      "event": "Southeast Open",
+      "mv_impact": 1.12
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

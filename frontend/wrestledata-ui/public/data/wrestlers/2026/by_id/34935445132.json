@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34935445132",
+  "name": "Brody Gobbell",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 52,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 6.0,
+    "pd7": -1.0,
+    "si_plus": 99.2,
+    "df_plus": 103.6,
+    "apr_plus": 97.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.487,
+      "matches": 3,
+      "rank_weight": 114,
+      "rank_overall": 1152,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34957603132",
+      "opponent_rank": 52,
+      "opponent_name": "Abram Cline",
+      "method": "Dec 7-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957599132",
+      "opponent_name": "Tyler Garvin",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -4.28
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934207132",
+      "opponent_name": "Waylon Rogers",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 2.02
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957603132",
+      "opponent_name": "Abram Cline",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 125,
+      "opponent_rank": 52,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -2.2
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.14285714285714285
+  }
+}

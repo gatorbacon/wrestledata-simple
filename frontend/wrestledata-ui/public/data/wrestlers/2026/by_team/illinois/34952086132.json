@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34952086132",
+  "name": "Danny Nini",
+  "team": "Illinois",
+  "team_slug": "illinois",
+  "team_rank": 9,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.92,
+    "pa7": 2.7,
+    "pd7": -1.77,
+    "si_plus": 88.0,
+    "df_plus": 112.1,
+    "apr_plus": 96.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.431,
+      "matches": 2,
+      "rank_weight": 171,
+      "rank_overall": 1389,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34955721132",
+      "opponent_rank": 49,
+      "opponent_name": "Anthony Evanitsky",
+      "method": "SV-1 4-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34962174132",
+      "opponent_name": "Kael Voinovich",
+      "opponent_team": "Iowa",
+      "opponent_team_rank": 3,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "vs. Iowa",
+      "mv_impact": -2.78
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34955721132",
+      "opponent_name": "Anthony Evanitsky",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 16,
+      "opponent_weight": 149,
+      "opponent_rank": 49,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "vs. Lehigh",
+      "mv_impact": -2.08
+    }
+  ]
+}

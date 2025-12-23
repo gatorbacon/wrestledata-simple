@@ -1,0 +1,130 @@
+{
+  "wrestler_id": "34936196132",
+  "name": "Hassin Maynes",
+  "team": "Bloomsburg",
+  "team_slug": "bloomsburg",
+  "team_rank": 62,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.21,
+    "pa7": 6.9,
+    "pd7": 1.31,
+    "si_plus": 104.4,
+    "df_plus": 100.4,
+    "apr_plus": 101.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.955,
+      "matches": 4,
+      "rank_weight": 167,
+      "rank_overall": 1514,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34974292132",
+      "opponent_rank": 63,
+      "opponent_name": "Jaxon Torres",
+      "method": "TF 19-4 3:53"
+    },
+    "worst_loss": {
+      "opponent_id": "34957115132",
+      "opponent_rank": 66,
+      "opponent_name": "Hunter Hohman",
+      "method": "Dec 12-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34938654132",
+      "opponent_name": "Jaden Wehler",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -3.65
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34974292132",
+      "opponent_name": "Jaxon Torres",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 165,
+      "opponent_rank": 63,
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "3:53",
+      "event": "Big Red Invitational",
+      "mv_impact": 4.03
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936203132",
+      "opponent_name": "Braidon Woodward",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 62,
+      "opponent_weight": 165,
+      "opponent_rank": 61,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Big Red Invitational"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957115132",
+      "opponent_name": "Hunter Hohman",
+      "opponent_team": "American",
+      "opponent_team_rank": 48,
+      "opponent_weight": 174,
+      "opponent_rank": 66,
+      "result": "L",
+      "method": "DEC",
+      "score": "12-5",
+      "duration": "7:00",
+      "event": "ESU Open",
+      "mv_impact": -4.54
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957116132",
+      "opponent_name": "Liam Packer",
+      "opponent_team": "American",
+      "opponent_team_rank": 48,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "ESU Open",
+      "mv_impact": -7.66
+    }
+  ]
+}

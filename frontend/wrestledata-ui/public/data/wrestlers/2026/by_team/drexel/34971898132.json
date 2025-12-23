@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34971898132",
+  "name": "Gabe Giampietro",
+  "team": "Drexel",
+  "team_slug": "drexel",
+  "team_rank": 44,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 13.0,
+    "pd7": -13.0,
+    "si_plus": 81.0,
+    "df_plus": 92.2,
+    "apr_plus": 91.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.463,
+      "matches": 2,
+      "rank_weight": 189,
+      "rank_overall": 1908,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34937680132",
+      "opponent_rank": 51,
+      "opponent_name": "Gauge Shipp",
+      "method": "Fall 4:20"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34951029132",
+      "opponent_name": "Amonn Ohl",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 53,
+      "opponent_weight": 133,
+      "opponent_rank": 46,
+      "result": "L",
+      "method": "MD",
+      "score": "13-0",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -4.49
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34937680132",
+      "opponent_name": "Gauge Shipp",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 69,
+      "opponent_weight": 133,
+      "opponent_rank": 51,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:20",
+      "event": "Keystone Classic",
+      "mv_impact": -6.44
+    }
+  ]
+}

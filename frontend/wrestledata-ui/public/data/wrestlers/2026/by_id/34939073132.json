@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34939073132",
+  "name": "Jackson Baglio",
+  "team": "Gardner-Webb",
+  "team_slug": "gardnerwebb",
+  "team_rank": 54,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 4.67,
+    "pa7": 11.4,
+    "pd7": -6.73,
+    "si_plus": 93.6,
+    "df_plus": 94.5,
+    "apr_plus": 97.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.289,
+      "matches": 5,
+      "rank_weight": 136,
+      "rank_overall": 1363,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34946728132",
+      "opponent_rank": 11,
+      "opponent_name": "Jett Strickenberger",
+      "method": "Dec 9-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935443132",
+      "opponent_name": "Ethan Lipsey",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 52,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-4",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -6.22
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34939035132",
+      "opponent_name": "Marcus Blaze",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
+      "opponent_weight": 133,
+      "opponent_rank": 5,
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "3:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -1.42
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934464132",
+      "opponent_name": "Ejiro Montoya",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 0.24
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946798132",
+      "opponent_name": "Louie Gill",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -3.0
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946728132",
+      "opponent_name": "Jett Strickenberger",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 125,
+      "opponent_rank": 11,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -1.04
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

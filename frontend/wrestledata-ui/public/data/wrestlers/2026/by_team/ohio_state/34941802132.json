@@ -1,0 +1,161 @@
+{
+  "wrestler_id": "34941802132",
+  "name": "Maddox Shaw",
+  "team": "Ohio State",
+  "team_slug": "ohio_state",
+  "team_rank": 2,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "6-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 7.13,
+    "pa7": 3.69,
+    "pd7": 3.44,
+    "si_plus": 102.8,
+    "df_plus": 107.6,
+    "apr_plus": 100.4,
+    "pin_rate": 0.167,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.049,
+      "matches": 7,
+      "rank_weight": 31,
+      "rank_overall": 267,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34944169132",
+      "opponent_rank": 66,
+      "opponent_name": "Bryce Shelton",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34964522132",
+      "opponent_rank": 2,
+      "opponent_name": "Jaxon Joy",
+      "method": "MD 11-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-20",
+      "opponent_id": "34944019132",
+      "opponent_name": "Nate Roth",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 70,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "vs. Ohio State",
+      "mv_impact": 2.49
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34933456132",
+      "opponent_name": "Antonio Avila",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 22,
+      "opponent_weight": 157,
+      "opponent_rank": 78,
+      "result": "W",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "vs. Wyoming",
+      "mv_impact": 0.04
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34944169132",
+      "opponent_name": "Bryce Shelton",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 149,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": 2.76
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938656132",
+      "opponent_name": "Matt Smith",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 149,
+      "opponent_rank": 70,
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "3:41",
+      "event": "Clarion Open",
+      "mv_impact": 4.72
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938631132",
+      "opponent_name": "David McClelland",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "Clarion Open",
+      "mv_impact": 1.83
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34964522132",
+      "opponent_name": "Jaxon Joy",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 149,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -0.46
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941789132",
+      "opponent_name": "Daxton Chase",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "10:00",
+      "event": "Clarion Open",
+      "mv_impact": 2.96
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34935435132",
+  "name": "Hayden Hughes",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 52,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.0,
+    "pa7": 17.0,
+    "pd7": -16.0,
+    "si_plus": 87.9,
+    "df_plus": 81.2,
+    "apr_plus": 99.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.766,
+      "matches": 2,
+      "rank_weight": 220,
+      "rank_overall": 1831,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34944358132",
+      "opponent_name": "Brayden Fahrbach",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "4:24",
+      "event": "Mountaineer Open",
+      "mv_impact": -5.34
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936213132",
+      "opponent_name": "Paul Woo",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 41,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "Mountaineer Open",
+      "mv_impact": -4.19
+    }
+  ]
+}

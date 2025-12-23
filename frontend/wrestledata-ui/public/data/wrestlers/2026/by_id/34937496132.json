@@ -1,0 +1,121 @@
+{
+  "wrestler_id": "34937496132",
+  "name": "Grant Kress",
+  "team": "Gardner-Webb",
+  "team_slug": "gardnerwebb",
+  "team_rank": 54,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.5,
+    "pa7": 10.53,
+    "pd7": 0.97,
+    "si_plus": 92.6,
+    "df_plus": 105.2,
+    "apr_plus": 96.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.373,
+      "matches": 4,
+      "rank_weight": 118,
+      "rank_overall": 1129,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934223132",
+      "opponent_rank": 66,
+      "opponent_name": "JT Bowers",
+      "method": "TB-2 (RT) 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34954527132",
+      "opponent_rank": 65,
+      "opponent_name": "Yanik Simon",
+      "method": "MD 17-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34956137132",
+      "opponent_name": "Caleb Cady",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 59,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Southeast Open",
+      "mv_impact": -6.0
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934223132",
+      "opponent_name": "JT Bowers",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 165,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "10:00",
+      "event": "Southeast Open",
+      "mv_impact": 2.24
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34954527132",
+      "opponent_name": "Yanik Simon",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 75,
+      "opponent_weight": 165,
+      "opponent_rank": 65,
+      "result": "L",
+      "method": "MD",
+      "score": "17-6",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -4.3
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934205132",
+      "opponent_name": "Tristan Hass",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "2:58",
+      "event": "Southeast Open",
+      "mv_impact": 2.57
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.3333333333333333
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "wrestler_id": "34944667132",
+  "name": "Julian George",
+  "team": "Wisconsin",
+  "team_slug": "wisconsin",
+  "team_rank": 31,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.0,
+    "pa7": 2.0,
+    "pd7": 6.0,
+    "si_plus": 92.2,
+    "df_plus": 107.7,
+    "apr_plus": 99.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.32,
+      "matches": 2,
+      "rank_weight": 147,
+      "rank_overall": 1367,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34941556132",
+      "opponent_rank": 30,
+      "opponent_name": "Brock Woodcock",
+      "method": "Inj. 5:42"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34970820132",
+      "opponent_name": "Tavius Hosley",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Cyclone Invitational"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34941556132",
+      "opponent_name": "Brock Woodcock",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 165,
+      "opponent_rank": 30,
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "5:42",
+      "event": "Cyclone Invitational",
+      "mv_impact": -4.79
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34934624132",
+      "opponent_name": "Tyler Secoy",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "vs. Wisconsin",
+      "mv_impact": 0.15
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.3333333333333333
+  }
+}

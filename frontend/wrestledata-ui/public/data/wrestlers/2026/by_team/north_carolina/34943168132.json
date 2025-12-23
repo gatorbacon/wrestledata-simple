@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34943168132",
+  "name": "Kysen Terukina",
+  "team": "North Carolina",
+  "team_slug": "north_carolina",
+  "team_rank": 46,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 21,
+  "record": {
+    "overall": "4-0",
+    "vs_ranked": "3-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.5,
+    "pa7": 1.5,
+    "pd7": 5.0,
+    "si_plus": 106.7,
+    "df_plus": 112.6,
+    "apr_plus": 99.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.25,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.958,
+      "matches": 4,
+      "rank_weight": 13,
+      "rank_overall": 134,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34940490132",
+      "opponent_rank": 45,
+      "opponent_name": "Andrew Binni",
+      "method": "MD 11-1"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34946798132",
+      "opponent_name": "Louie Gill",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "vs. West Virginia",
+      "mv_impact": 4.0
+    },
+    {
+      "date": "2025-11-21",
+      "opponent_id": "34935905132",
+      "opponent_name": "Brady Joling",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 125,
+      "opponent_rank": 59,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "vs. North Carolina",
+      "mv_impact": 2.58
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34940490132",
+      "opponent_name": "Andrew Binni",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 37,
+      "opponent_weight": 125,
+      "opponent_rank": 45,
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "vs. North Carolina",
+      "mv_impact": 4.52
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34964880132",
+      "opponent_name": "Aydan Thomas",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 57,
+      "opponent_weight": 125,
+      "opponent_rank": 76,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "vs. Northern Colorado",
+      "mv_impact": 0.73
+    }
+  ]
+}

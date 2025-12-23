@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34944015132",
+  "name": "Adan Benavidez",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 70,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.47,
+    "pa7": 11.67,
+    "pd7": -8.2,
+    "si_plus": 88.7,
+    "df_plus": 87.2,
+    "apr_plus": 92.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.316,
+      "matches": 3,
+      "rank_weight": 161,
+      "rank_overall": 1583,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34933517132",
+      "opponent_rank": 54,
+      "opponent_name": "Nathan Jerore",
+      "method": "TF 18-1 5:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943743132",
+      "opponent_name": "Carter Dibert",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -0.93
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34945821132",
+      "opponent_name": "Blaine Frazier",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 35,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -3.39
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933517132",
+      "opponent_name": "Nathan Jerore",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 14,
+      "opponent_weight": 141,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "5:00",
+      "event": "Michigan State Open",
+      "mv_impact": -5.63
+    }
+  ]
+}

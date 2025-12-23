@@ -71,7 +71,7 @@ let expandedTeam = null;
 
 async function loadLeaderboard() {
   const season = resolveSeason();
-  const url = `/xtp/${season}/xtp_teams_${season}.json`;
+  const url = `/data/xtp/${season}/xtp_teams_${season}.json`;
   
   try {
     const res = await fetch(url);

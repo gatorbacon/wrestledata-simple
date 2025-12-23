@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34941552132",
+  "name": "Hayden Trezek",
+  "team": "SIU Edwardsville",
+  "team_slug": "siu_edwardsville",
+  "team_rank": 24,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.4,
+    "pa7": 11.6,
+    "pd7": -9.2,
+    "si_plus": 87.6,
+    "df_plus": 92.7,
+    "apr_plus": 98.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.148,
+      "matches": 5,
+      "rank_weight": 158,
+      "rank_overall": 1737,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34941558132",
+      "opponent_rank": 64,
+      "opponent_name": "Dominic Lopez",
+      "method": "MD 9-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34943990132",
+      "opponent_name": "Danny Heiser",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 15,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "3:12",
+      "event": "Cougar Clash",
+      "mv_impact": -6.26
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34941558132",
+      "opponent_name": "Dominic Lopez",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 174,
+      "opponent_rank": 64,
+      "result": "L",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -4.48
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34952979132",
+      "opponent_name": "Eric Tigue",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 49,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -1.02
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941776132",
+      "opponent_name": "Carter Chase",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "16-7",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -5.46
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941575132",
+      "opponent_name": "Caleb Neal",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -3.52
+    }
+  ]
+}

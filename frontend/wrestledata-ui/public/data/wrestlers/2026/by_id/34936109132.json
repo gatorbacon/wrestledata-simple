@@ -1,0 +1,166 @@
+{
+  "wrestler_id": "34936109132",
+  "name": "Cole Jackson",
+  "team": "Cal Poly",
+  "team_slug": "cal_poly",
+  "team_rank": 32,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-4",
+    "vs_ranked": "3-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 9.28,
+    "pa7": 11.33,
+    "pd7": -2.05,
+    "si_plus": 104.5,
+    "df_plus": 93.9,
+    "apr_plus": 98.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.667,
+    "majors": 2,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.531,
+      "matches": 7,
+      "rank_weight": 99,
+      "rank_overall": 1169,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34949038132",
+      "opponent_rank": 64,
+      "opponent_name": "Chris DeLena",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34943447132",
+      "opponent_rank": 53,
+      "opponent_name": "Luke Duthie",
+      "method": "TF 23-8 4:25"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944231132",
+      "opponent_name": "Karson Tompkins",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 197,
+      "opponent_rank": 42,
+      "result": "L",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -3.39
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34949038132",
+      "opponent_name": "Chris DeLena",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 76,
+      "opponent_weight": 197,
+      "opponent_rank": 64,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 1.69
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934449132",
+      "opponent_name": "RJ Moore",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 34,
+      "opponent_weight": 197,
+      "opponent_rank": 72,
+      "result": "W",
+      "method": "MD",
+      "score": "20-12",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 1.75
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34943475132",
+      "opponent_name": "Angelo Posada",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 19,
+      "opponent_weight": 197,
+      "opponent_rank": 13,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:21",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -3.94
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943447132",
+      "opponent_name": "Luke Duthie",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 19,
+      "opponent_weight": 285,
+      "opponent_rank": 53,
+      "result": "L",
+      "method": "TF",
+      "score": "23-8",
+      "duration": "4:25",
+      "event": "Roadrunner Open",
+      "mv_impact": -5.32
+    },
+    {
+      "date": "2025-11-14",
+      "opponent_id": "34962231132",
+      "opponent_name": "Angel Cervantes",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 64,
+      "opponent_weight": 197,
+      "opponent_rank": 75,
+      "result": "W",
+      "method": "MD",
+      "score": "15-7",
+      "duration": "7:00",
+      "event": "vs. Cal Poly",
+      "mv_impact": -0.26
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34945139132",
+      "opponent_name": "Ben Vanadia",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 20,
+      "opponent_weight": 197,
+      "opponent_rank": 19,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "vs. Purdue",
+      "mv_impact": -1.24
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.4
+  }
+}

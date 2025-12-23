@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34940716132",
+  "name": "McCrae Hagarty",
+  "team": "Iowa State",
+  "team_slug": "iowa_state",
+  "team_rank": 4,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 2.5,
+    "pa7": 4.5,
+    "pd7": -2.0,
+    "si_plus": 96.8,
+    "df_plus": 109.3,
+    "apr_plus": 118.8,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 3.154,
+      "matches": 3,
+      "rank_weight": 14,
+      "rank_overall": 114,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944677132",
+      "opponent_rank": 13,
+      "opponent_name": "Braxton Amos",
+      "method": "Dec 5-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943280132",
+      "opponent_name": "Jack Forbes",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 30,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": 3.53
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944677132",
+      "opponent_name": "Braxton Amos",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 31,
+      "opponent_weight": 285,
+      "opponent_rank": 13,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -0.38
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944673132",
+      "opponent_name": "Gannon Rosenfeld",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 31,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:44",
+      "event": "Cyclone Invitational",
+      "mv_impact": 6.32
+    }
+  ]
+}

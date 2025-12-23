@@ -85,7 +85,7 @@ let config = null;
 
 async function loadLeaderboard(config) {
   const season = resolveSeason();
-  const url = `/leaderboards/${config.statType}.json`;
+  const url = `/data/leaderboards/${config.statType}.json`;
   
   // Check for weight filter in URL
   const weightParam = getQueryParam("weight");

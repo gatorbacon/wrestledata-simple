@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34939014132",
+  "name": "Lucas Cochran",
+  "team": "Penn State",
+  "team_slug": "penn_state",
+  "team_rank": 1,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 18.5,
+    "pa7": 1.73,
+    "pd7": 16.77,
+    "si_plus": 131.3,
+    "df_plus": 111.3,
+    "apr_plus": 122.5,
+    "pin_rate": 0.333,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 3.859,
+      "matches": 3,
+      "rank_weight": 8,
+      "rank_overall": 58,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34943391132",
+      "opponent_rank": 39,
+      "opponent_name": "Vincent Mueller",
+      "method": "MD 12-2"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934342132",
+      "opponent_name": "Sam Sorenson",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "19-1",
+      "duration": "4:46",
+      "event": "Black Knight Invite",
+      "mv_impact": 3.1
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943391132",
+      "opponent_name": "Vincent Mueller",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 285,
+      "opponent_rank": 39,
+      "result": "W",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": 4.66
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34954174132",
+      "opponent_name": "Will Greenberg",
+      "opponent_team": "Bucknell",
+      "opponent_team_rank": 29,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:35",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 3.82
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

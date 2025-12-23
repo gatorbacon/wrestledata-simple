@@ -335,7 +335,7 @@ def main():
     parser.add_argument(
         "--output-dir",
         type=str,
-        default="frontend/wrestledata-ui/public/leaderboards",
+        default="frontend/wrestledata-ui/public/data/leaderboards",
         help="Output directory for JSON files",
     )
     parser.add_argument(

@@ -1,0 +1,166 @@
+{
+  "wrestler_id": "34943455132",
+  "name": "Abraham Wojcikiewicz",
+  "team": "Stanford",
+  "team_slug": "stanford",
+  "team_rank": 19,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 27,
+  "record": {
+    "overall": "3-4",
+    "vs_ranked": "3-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-3"
+  },
+  "metrics": {
+    "pf7": 4.6,
+    "pa7": 7.0,
+    "pd7": -2.4,
+    "si_plus": 101.9,
+    "df_plus": 105.6,
+    "apr_plus": 108.1,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 0.792,
+      "matches": 7,
+      "rank_weight": 48,
+      "rank_overall": 527,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34948141132",
+      "opponent_rank": 28,
+      "opponent_name": "Kole Mulhauser",
+      "method": "Fall 2:59"
+    },
+    "worst_loss": {
+      "opponent_id": "34943283132",
+      "opponent_rank": 32,
+      "opponent_name": "Caleb Uhlenhopp",
+      "method": "Dec 12-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34943379132",
+      "opponent_name": "Aaron Ayzerov",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 184,
+      "opponent_rank": 17,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-8",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -1.9
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34940807132",
+      "opponent_name": "Isaac Dean",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 4,
+      "opponent_weight": 184,
+      "opponent_rank": 13,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -1.52
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34948141132",
+      "opponent_name": "Kole Mulhauser",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 184,
+      "opponent_rank": 28,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:59",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 6.85
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34943232132",
+      "opponent_name": "Brock Fettig",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 28,
+      "opponent_weight": 184,
+      "opponent_rank": 35,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 3.23
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34950678132",
+      "opponent_name": "Adonis Bonar",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 65,
+      "opponent_weight": 184,
+      "opponent_rank": 76,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "vs. Stanford",
+      "mv_impact": 2.62
+    },
+    {
+      "date": "2025-11-07",
+      "opponent_id": "34936416132",
+      "opponent_name": "Zack Ryder",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 184,
+      "opponent_rank": 19,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Stanford",
+      "mv_impact": -1.5
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34943283132",
+      "opponent_name": "Caleb Uhlenhopp",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 30,
+      "opponent_weight": 184,
+      "opponent_rank": 32,
+      "result": "L",
+      "method": "DEC",
+      "score": "12-6",
+      "duration": "7:00",
+      "event": "vs. Utah Valley",
+      "mv_impact": -2.23
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 0.5714285714285714
+  }
+}

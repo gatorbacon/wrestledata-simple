@@ -1,0 +1,71 @@
+{
+  "wrestler_id": "34936039132",
+  "name": "Talan Hogan",
+  "team": "Lock Haven",
+  "team_slug": "lock_haven",
+  "team_rank": 56,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 102.8,
+    "df_plus": 103.0,
+    "apr_plus": 99.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.478,
+      "matches": 1,
+      "rank_weight": 169,
+      "rank_overall": 1910,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34957110132",
+      "opponent_rank": 37,
+      "opponent_name": "Emmanuel Ulrich",
+      "method": "Fall 3:39"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34957110132",
+      "opponent_name": "Emmanuel Ulrich",
+      "opponent_team": "American",
+      "opponent_team_rank": 48,
+      "opponent_weight": 285,
+      "opponent_rank": 37,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:39",
+      "event": "Lock Haven Open I",
+      "mv_impact": -5.48
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

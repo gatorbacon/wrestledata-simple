@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34933455132",
+  "name": "Christian Herrera",
+  "team": "Wyoming",
+  "team_slug": "wyoming",
+  "team_rank": 22,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 74,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.19,
+    "pa7": 3.68,
+    "pd7": 4.52,
+    "si_plus": 95.2,
+    "df_plus": 103.6,
+    "apr_plus": 96.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.333,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.091,
+      "matches": 4,
+      "rank_weight": 113,
+      "rank_overall": 1044,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34937108132",
+      "opponent_name": "Tobey Ravida",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 57,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "20-4",
+      "duration": "8:15",
+      "event": "Younes Hospitality Open",
+      "mv_impact": -1.31
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34964068132",
+      "opponent_name": "Connor Thorpe",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 26,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Younes Hospitality Open",
+      "mv_impact": -3.57
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34943236132",
+      "opponent_name": "Parker Janssen",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 28,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "Younes Hospitality Open",
+      "mv_impact": 0.31
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34937099132",
+      "opponent_name": "Joel Aguilar-Guerrero",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 57,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "Mines Rookie Open",
+      "mv_impact": 0.2
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.375
+  }
+}

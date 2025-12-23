@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34954165132",
+  "name": "Creed Thomas",
+  "team": "Bucknell",
+  "team_slug": "bucknell",
+  "team_rank": 29,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 11.0,
+    "pd7": -9.0,
+    "si_plus": 88.6,
+    "df_plus": 92.1,
+    "apr_plus": 97.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.44,
+      "matches": 2,
+      "rank_weight": 227,
+      "rank_overall": 1992,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34957140132",
+      "opponent_name": "Gavin Cohen",
+      "opponent_team": "American",
+      "opponent_team_rank": 48,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": -5.1
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34935970132",
+      "opponent_name": "Wyatt Dillon",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 56,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:32",
+      "event": "Lock Haven Open I",
+      "mv_impact": -7.78
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

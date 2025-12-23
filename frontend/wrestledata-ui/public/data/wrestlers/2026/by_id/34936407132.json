@@ -1,0 +1,151 @@
+{
+  "wrestler_id": "34936407132",
+  "name": "Troy Spratley",
+  "team": "Oklahoma State",
+  "team_slug": "oklahoma_state",
+  "team_rank": 5,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 8,
+  "record": {
+    "overall": "4-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 9.8,
+    "pa7": 4.11,
+    "pd7": 5.69,
+    "si_plus": 105.7,
+    "df_plus": 108.3,
+    "apr_plus": 112.7,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.75,
+    "majors": 1,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.385,
+      "matches": 6,
+      "rank_weight": 27,
+      "rank_overall": 212,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34964389132",
+      "opponent_rank": 32,
+      "opponent_name": "Marcello Milani",
+      "method": "MD 14-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34962220132",
+      "opponent_rank": 7,
+      "opponent_name": "Dean Peterson",
+      "method": "Dec 5-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943751132",
+      "opponent_name": "Damian Moreno",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 125,
+      "opponent_rank": 36,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": 3.43
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34962220132",
+      "opponent_name": "Dean Peterson",
+      "opponent_team": "Iowa",
+      "opponent_team_rank": 3,
+      "opponent_weight": 125,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": -0.99
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34935621132",
+      "opponent_name": "Alan Koehler",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:59",
+      "event": "vs. Oklahoma State",
+      "mv_impact": 6.22
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34964389132",
+      "opponent_name": "Marcello Milani",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 10,
+      "opponent_weight": 125,
+      "opponent_rank": 32,
+      "result": "W",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": 4.7
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34935697132",
+      "opponent_name": "Vincent Robinson",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 125,
+      "opponent_rank": 5,
+      "result": "L",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State",
+      "mv_impact": -0.5
+    },
+    {
+      "date": "2025-11-07",
+      "opponent_id": "34943471132",
+      "opponent_name": "Adam Mattin",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 19,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "5:21",
+      "event": "vs. Stanford",
+      "mv_impact": 1.44
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.42857142857142855
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34952087132",
+  "name": "Joey Ruzic",
+  "team": "Illinois",
+  "team_slug": "illinois",
+  "team_rank": 9,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 2.65,
+    "pa7": 16.0,
+    "pd7": -13.35,
+    "si_plus": 94.2,
+    "df_plus": 75.0,
+    "apr_plus": 98.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.259,
+      "matches": 3,
+      "rank_weight": 180,
+      "rank_overall": 1765,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34936466132",
+      "opponent_rank": 11,
+      "opponent_name": "Ronnie Ramirez",
+      "method": "Fall 5:33"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34936466132",
+      "opponent_name": "Ronnie Ramirez",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 133,
+      "opponent_rank": 11,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:33",
+      "event": "Cougar Clash",
+      "mv_impact": -3.7
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34936406132",
+      "opponent_name": "Sam Smith",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -5.59
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34962192132",
+      "opponent_name": "Nasir Bailey",
+      "opponent_team": "Iowa",
+      "opponent_team_rank": 3,
+      "opponent_weight": 141,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "4:14",
+      "event": "vs. Iowa",
+      "mv_impact": -3.48
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  }
+}

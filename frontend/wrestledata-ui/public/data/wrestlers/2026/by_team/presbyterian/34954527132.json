@@ -1,0 +1,125 @@
+{
+  "wrestler_id": "34954527132",
+  "name": "Yanik Simon",
+  "team": "Presbyterian",
+  "team_slug": "presbyterian",
+  "team_rank": 75,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 65,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 17.25,
+    "pa7": 8.25,
+    "pd7": 9.0,
+    "si_plus": 110.8,
+    "df_plus": 88.7,
+    "apr_plus": 92.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.772,
+      "matches": 4,
+      "rank_weight": 131,
+      "rank_overall": 1234,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34941688132",
+      "opponent_rank": 71,
+      "opponent_name": "Ryan Bolletino",
+      "method": "Dec 15-11"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34941688132",
+      "opponent_name": "Ryan Bolletino",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 43,
+      "opponent_weight": 174,
+      "opponent_rank": 71,
+      "result": "L",
+      "method": "DEC",
+      "score": "15-11",
+      "duration": "7:00",
+      "event": "vs. Presbyterian",
+      "mv_impact": -5.24
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937496132",
+      "opponent_name": "Grant Kress",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "17-6",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 3.52
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957598132",
+      "opponent_name": "Alex Uryniak",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 165,
+      "opponent_rank": 62,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934257132",
+      "opponent_name": "Christian Leonard",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "5:36",
+      "event": "Southeast Open",
+      "mv_impact": 0.98
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946789132",
+      "opponent_name": "Michael Baldwin",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 13,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "5:00",
+      "event": "Southeast Open",
+      "mv_impact": -6.35
+    }
+  ]
+}

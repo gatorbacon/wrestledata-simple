@@ -1,0 +1,66 @@
+{
+  "wrestler_id": "34934014132",
+  "name": "Timothy Cowan",
+  "team": "California Baptist",
+  "team_slug": "california_baptist",
+  "team_rank": 65,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 102.8,
+    "df_plus": 103.0,
+    "apr_plus": 98.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.95,
+      "matches": 1,
+      "rank_weight": 156,
+      "rank_overall": 1696,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934935132",
+      "opponent_rank": 19,
+      "opponent_name": "Daschle Lamer",
+      "method": "Fall 5:55"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934935132",
+      "opponent_name": "Daschle Lamer",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 23,
+      "opponent_weight": 174,
+      "opponent_rank": 19,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:55",
+      "event": "Roadrunner Open",
+      "mv_impact": -3.95
+    }
+  ]
+}

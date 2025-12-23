@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34934136132",
+  "name": "Jack Marlow",
+  "team": "Pittsburgh",
+  "team_slug": "pittsburgh",
+  "team_rank": 33,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.67,
+    "pa7": 7.33,
+    "pd7": 0.33,
+    "si_plus": 92.4,
+    "df_plus": 98.3,
+    "apr_plus": 97.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.524,
+      "matches": 3,
+      "rank_weight": 174,
+      "rank_overall": 1415,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34944187132",
+      "opponent_name": "Lincoln Gregersen",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 58,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-4",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -3.3
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938631132",
+      "opponent_name": "David McClelland",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 66,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "14-4",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -0.17
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934168132",
+      "opponent_name": "Carson Walsh",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 33,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -4.11
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5
+  }
+}
