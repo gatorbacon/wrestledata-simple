@@ -247,7 +247,7 @@ function safe(value, formatter) {
     headerRow.className = "section-header";
     
     const title = document.createElement("h2");
-    title.textContent = "Mat Value (MV)";
+    title.textContent = "Match Index (MI)";
     const tooltipIcon = document.createElement("span");
     tooltipIcon.className = "tooltip-icon";
     tooltipIcon.setAttribute("data-tooltip", "mv");
@@ -279,7 +279,7 @@ function safe(value, formatter) {
       rankBadgeLink.appendChild(createMVRankBadge(mv.rank_weight));
     }
     // Add tooltip to rank badge
-    addTooltip(rankBadgeLink, "Per-match value above opponent expectation.");
+    addTooltip(rankBadgeLink, "MI: Per-match impact above replacement.");
     primaryRow.appendChild(rankBadgeLink);
     
     // MV Number with explicit sign (smaller font, same row as badge)
@@ -815,7 +815,7 @@ function safe(value, formatter) {
     const indicator = document.createElement("div");
     indicator.className = `mv-trend-indicator ${trendClass}`;
     indicator.textContent = trendText;
-    indicator.setAttribute("title", "Based on last 5 matches vs season average Mat Value");
+    indicator.setAttribute("title", "Based on last 5 matches vs season average Match Index");
     container.appendChild(indicator);
   }
   
@@ -1282,8 +1282,8 @@ function safe(value, formatter) {
         const tooltipLines = [
           dateStr,
           activeMatch.opponent,
-          `MV Impact: ${impactSign}${impactValue}`,
-          `Season Avg MV: ${seasonAvgStr}`
+          `MI Impact: ${impactSign}${impactValue}`,
+          `Season Avg MI: ${seasonAvgStr}`
         ];
         const tooltipText = tooltipLines.join('\n');
         
@@ -1334,14 +1334,14 @@ function safe(value, formatter) {
     lines.forEach((line, idx) => {
       const lineEl = document.createElement("div");
       
-      // Color MV Impact line based on sign
-      if (line.startsWith("MV Impact:")) {
+      // Color MI Impact line based on sign
+      if (line.startsWith("MI Impact:")) {
         lineEl.innerHTML = line.replace(
-          /MV Impact: ([\+\-]?[\d\.]+)/,
+          /MI Impact: ([\+\-]?[\d\.]+)/,
           (match, value) => {
             const isPositive = mvImpact >= 0;
             const color = isPositive ? "rgba(0, 194, 168, 0.9)" : "rgba(220, 90, 90, 0.9)";
-            return `MV Impact: <span style="color: ${color}">${value}</span>`;
+            return `MI Impact: <span style="color: ${color}">${value}</span>`;
           }
         );
       } else {

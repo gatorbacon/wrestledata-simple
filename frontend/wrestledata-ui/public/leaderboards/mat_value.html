@@ -2,7 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <title>Mat Value Leaderboard</title>
+  <title>Match Index Leaderboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
@@ -12,10 +12,10 @@
   <script src="/header.js"></script>
   <div class="page-container">
     <header class="header">
-      <h1>Mat Value Leaderboard</h1>
+      <h1>Match Index Leaderboard</h1>
       <div class="header-subline" id="season-info"></div>
       <p class="header-explainer">
-        Mat Value estimates a wrestler's per-match impact relative to opponent expectation.
+        Match Index (MI) measures how much value a wrestler adds per match relative to a replacement-level Division I starter, adjusted for opponent quality.
       </p>
     </header>
 
@@ -30,12 +30,12 @@
         <table id="mv-leaderboard-table">
           <thead>
             <tr>
-              <th>MV Rank</th>
+              <th>MI Rank</th>
               <th>Name</th>
               <th>Team</th>
               <th>Weight</th>
               <th>Wt Class Rank</th>
-              <th class="col-mv">MV <span class="tooltip-icon" data-tooltip="mv">→</span></th>
+              <th class="col-mv">MI <span class="tooltip-icon" data-tooltip="mv">→</span></th>
               <th>Matches</th>
             </tr>
           </thead>

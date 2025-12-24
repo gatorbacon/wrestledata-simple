@@ -112,20 +112,29 @@ async function renderHodgeTable(data) {
   const teamNames = [...new Set(data.rows.map(row => row.team).filter(Boolean))];
   await Promise.all(teamNames.map(teamName => getTeamAbbreviation(teamName)));
 
+  // Calculate max values for gradient normalization (scaled to 75% max)
+  const allRows = [...eligibleRows, ...ineligibleRows];
+  const maxValues = {
+    record: Math.max(...allRows.map(r => r.components?.record?.score || 0)),
+    quality: Math.max(...allRows.map(r => r.components?.quality?.score || 0)),
+    dominance: Math.max(...allRows.map(r => r.components?.dominance?.score || 0)),
+    pins: Math.max(...allRows.map(r => r.components?.pins?.score || 0))
+  };
+
   // Render eligible rows
   eligibleRows.forEach((row) => {
-    const tr = createHodgeRow(row, false);
+    const tr = createHodgeRow(row, false, maxValues);
     eligibleTbody.appendChild(tr);
   });
 
   // Render ineligible rows
   ineligibleRows.forEach((row) => {
-    const tr = createHodgeRow(row, true);
+    const tr = createHodgeRow(row, true, maxValues);
     ineligibleTbody.appendChild(tr);
   });
 }
 
-function createHodgeRow(row, isIneligible) {
+function createHodgeRow(row, isIneligible, maxValues) {
   const tr = document.createElement("tr");
   if (isIneligible) {
     tr.classList.add("ineligible-row");
@@ -233,8 +242,9 @@ function createHodgeRow(row, isIneligible) {
   recordRawDiv.textContent = `${comp.record.raw.wins}–${comp.record.raw.losses}`;
   const recordScoreDiv = document.createElement("div");
   recordScoreDiv.className = "cell normalized";
-  recordScoreDiv.textContent = safe(comp.record.score, (v) => v.toFixed(1));
-  recordScoreDiv.style.backgroundColor = getScoreColor(comp.record.score);
+    recordScoreDiv.textContent = safe(comp.record.score, (v) => v.toFixed(1));
+    const recordScorePercent = maxValues.record > 0 ? (comp.record.score / maxValues.record) * 75 : 0;
+    recordScoreDiv.style.backgroundColor = getScoreColor(recordScorePercent);
   recordScoreDiv.setAttribute("title", `Normalized score: ${comp.record.score.toFixed(1)} × ${comp.record.weight} = ${comp.record.contribution.toFixed(2)}`);
   recordPairWrapper.appendChild(recordRawDiv);
   recordPairWrapper.appendChild(recordScoreDiv);
@@ -252,8 +262,9 @@ function createHodgeRow(row, isIneligible) {
   qualityRawDiv.textContent = safe(comp.quality.raw.ranked_wins);
   const qualityScoreDiv = document.createElement("div");
   qualityScoreDiv.className = "cell normalized";
-  qualityScoreDiv.textContent = safe(comp.quality.score, (v) => v.toFixed(1));
-  qualityScoreDiv.style.backgroundColor = getScoreColor(comp.quality.score);
+    qualityScoreDiv.textContent = safe(comp.quality.score, (v) => v.toFixed(1));
+    const qualityScorePercent = maxValues.quality > 0 ? (comp.quality.score / maxValues.quality) * 75 : 0;
+    qualityScoreDiv.style.backgroundColor = getScoreColor(qualityScorePercent);
   qualityScoreDiv.setAttribute("title", `Normalized score: ${comp.quality.score.toFixed(1)} × ${comp.quality.weight} = ${comp.quality.contribution.toFixed(2)}`);
   qualityPairWrapper.appendChild(qualityRawDiv);
   qualityPairWrapper.appendChild(qualityScoreDiv);
@@ -271,8 +282,9 @@ function createHodgeRow(row, isIneligible) {
   domRawDiv.textContent = safe(comp.dominance.raw.avg_team_points, (v) => v.toFixed(2));
   const domScoreDiv = document.createElement("div");
   domScoreDiv.className = "cell normalized";
-  domScoreDiv.textContent = safe(comp.dominance.score, (v) => v.toFixed(1));
-  domScoreDiv.style.backgroundColor = getScoreColor(comp.dominance.score);
+    domScoreDiv.textContent = safe(comp.dominance.score, (v) => v.toFixed(1));
+    const domScorePercent = maxValues.dominance > 0 ? (comp.dominance.score / maxValues.dominance) * 75 : 0;
+    domScoreDiv.style.backgroundColor = getScoreColor(domScorePercent);
   domScoreDiv.setAttribute("title", `Normalized score: ${comp.dominance.score.toFixed(1)} × ${comp.dominance.weight} = ${comp.dominance.contribution.toFixed(2)}`);
   domPairWrapper.appendChild(domRawDiv);
   domPairWrapper.appendChild(domScoreDiv);
@@ -291,7 +303,8 @@ function createHodgeRow(row, isIneligible) {
   const pinsScoreDiv = document.createElement("div");
   pinsScoreDiv.className = "cell normalized";
   pinsScoreDiv.textContent = safe(comp.pins.score, (v) => v.toFixed(1));
-  pinsScoreDiv.style.backgroundColor = getScoreColor(comp.pins.score);
+  const pinsScorePercent = maxValues.pins > 0 ? (comp.pins.score / maxValues.pins) * 75 : 0;
+  pinsScoreDiv.style.backgroundColor = getScoreColor(pinsScorePercent);
   pinsScoreDiv.setAttribute("title", `Normalized score: ${comp.pins.score.toFixed(1)} × ${comp.pins.weight} = ${comp.pins.contribution.toFixed(2)}`);
   pinsPairWrapper.appendChild(pinsRawDiv);
   pinsPairWrapper.appendChild(pinsScoreDiv);

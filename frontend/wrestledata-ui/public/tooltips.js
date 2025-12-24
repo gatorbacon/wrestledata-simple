@@ -83,7 +83,7 @@ function addTooltip(element, text) {
 // Tooltip definitions
 const TOOLTIPS = {
   'xtp': 'Expected NCAA team points based on advancement, placement, and bonus probabilities.',
-  'mv': 'Per-match value relative to opponent expectation.',
+  'mv': 'Match Index (MI) shows per-match performance above replacement, normalized for opponent quality and match outcome. It is a rate metric, not a ranking.',
   'xtp-p': 'Expected placement points.',
   'xtp-a': 'Expected advancement points.',
   'xtp-b': 'Expected bonus points.',

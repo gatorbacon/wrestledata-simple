@@ -38,8 +38,8 @@
                       <span class="dropdown-item-label">Rankings Matrix</span>
                     </a>
                     <a href="/leaderboards/mat_value.html" class="dropdown-item">
-                      <span class="dropdown-item-label">Mat Value (MV)</span>
-                      <span class="dropdown-item-subtext">Individual performance vs expectation</span>
+                      <span class="dropdown-item-label">Match Index (MI)</span>
+                      <span class="dropdown-item-subtext">Per-match performance above replacement</span>
                     </a>
                     <a href="/aa_odds.html" class="dropdown-item">
                       <span class="dropdown-item-label">Tournament Odds</span>
