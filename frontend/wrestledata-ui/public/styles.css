@@ -1574,6 +1574,22 @@ td {
   border-right: none;
 }
 
+/* Add vertical dividers between all columns */
+td::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+td:last-child::after {
+  display: none;
+}
+
 /* Ensure metric bars in table cells don't break layout */
 td .metric-bar {
   width: 100%;
@@ -3325,5 +3341,174 @@ tbody tr:hover .stacked-bar-segment {
   font-variant-numeric: tabular-nums;
   font-feature-settings: "tnum";
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ========================================
+   HODGE TROPHY PAGE - INELIGIBLE ROWS
+   ======================================== */
+
+.ineligible-row {
+  opacity: 0.5;
+}
+
+.ineligible-row td {
+  color: var(--muted);
+}
+
+.ineligible-row:hover {
+  opacity: 0.7;
+}
+
+/* Score columns with gradients - only apply to normalized score columns */
+td[style*="background-color"] {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ========================================
+   DATAGOLF-STYLE METRIC TABLE POLISH
+   ======================================== */
+
+/* Table layout for proper row stretching */
+.table-wrapper table {
+  border-collapse: collapse;
+}
+
+tbody tr {
+  height: auto;
+}
+
+/* Force all cells to stretch to full row height */
+td {
+  height: 100%;
+  vertical-align: top;
+}
+
+/* Pair cell styling - fill full row height */
+.pair-cell {
+  padding: 0;
+  position: relative;
+  height: 100%;
+  vertical-align: stretch;
+}
+
+/* Wrapper that controls hover - fill full td height */
+.pair-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  align-items: stretch;
+  background: none !important;
+}
+
+/* Base cell - fill full wrapper height */
+.cell {
+  flex: 1;
+  padding: 14px 12px;
+  text-align: center;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+  align-self: stretch;
+  height: 100%;
+  min-height: 100%;
+}
+
+/* Internal divider between the two cells */
+.pair-wrapper .cell:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Ensure normalized cell background fills entire height */
+.pair-cell:has(.cell.normalized) .cell.normalized {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  min-height: 100%;
+}
+
+/* SINGLE hover outline — applies ONLY to this pair */
+.pair-wrapper:hover {
+  outline: 2px solid rgba(255, 255, 255, 0.95);
+  outline-offset: -2px;
+  z-index: 5;
+}
+
+/* Remove internal divider on hover */
+.pair-wrapper:hover .cell:first-child {
+  border-right-color: transparent;
+}
+
+/* Ensure NOTHING else reacts */
+.pair-wrapper {
+  pointer-events: auto;
+}
+
+.pair-wrapper * {
+  pointer-events: none;
+}
+
+/* ========================================
+   FRESHMAN TABLE SCORING COLUMNS
+   ======================================== */
+
+/* Set table to auto layout so Name column can size naturally */
+#freshman-table {
+  table-layout: auto;
+  width: 100%;
+}
+
+/* Rank column - narrow */
+#freshman-table th:first-child,
+#freshman-table td:first-child {
+  width: 1%;
+  min-width: 50px;
+  max-width: 60px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Name column - auto-size to fit content without wrapping */
+#freshman-table th:nth-child(2),
+#freshman-table td:nth-child(2) {
+  width: auto;
+  white-space: nowrap;
+  text-align: left;
+}
+
+/* Weight column - minimum width without wrapping */
+#freshman-table th:nth-child(3),
+#freshman-table td:nth-child(3) {
+  width: 1%;
+  min-width: 50px;
+  max-width: 60px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* W-L column - minimum width without wrapping */
+#freshman-table th:nth-child(4),
+#freshman-table td:nth-child(4) {
+  width: 1%;
+  min-width: 60px;
+  max-width: 70px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Make all scoring columns equal width and center-aligned */
+/* Each of the 7 scoring columns gets equal width */
+#freshman-table th.score-col,
+#freshman-table td.score-col {
+  width: 1%;
+  min-width: 90px;
+  white-space: nowrap;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
 }
 

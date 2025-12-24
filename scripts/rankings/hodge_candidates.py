@@ -21,12 +21,9 @@ This is intentionally read‑only and console‑only for now.
 from __future__ import annotations
 
 import argparse
-import base64
-import io
 import json
-import webbrowser
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set
 
@@ -109,6 +106,9 @@ class HodgeStats:
     s_dom: float = 0.0
     s_pins: float = 0.0
     hodge_score: float = 0.0
+    eligible: bool = True
+    eligibility_reason: Optional[str] = None
+    component_data: Dict = field(default_factory=dict)
 
     @property
     def total_matches(self) -> int:
@@ -323,8 +323,8 @@ def main() -> None:
     )
     parser.add_argument(
         "-output-dir",
-        default="mt/rankings_html",
-        help="Directory to save HTML Hodge report (subdir per season will be created)",
+        default="frontend/wrestledata-ui/public/data/awards/hodge",
+        help="Directory to save JSON Hodge report (subdir per season will be created)",
     )
     parser.add_argument(
         "-top-n",
@@ -463,25 +463,27 @@ def main() -> None:
             )
             all_ranked_for_hist.extend(hist_stats)
 
-    # Apply loss and match-count filters
+    # Apply loss and match-count filters (pre-filtering before eligibility check)
+    # Note: Eligibility gate is checked AFTER scoring, so we don't filter here
+    # based on losses == 0. The eligibility function will handle that.
     filtered_candidates: List[HodgeStats] = [
         s
         for s in all_candidates
-        if s.losses <= args.maxloss and s.total_matches >= args.minmatch
+        if s.total_matches >= args.minmatch
     ]
 
-    # --- Compute numeric Hodge scores (per hodge_formula.md) ---
+    # --- Compute numeric Hodge scores (NEW SPEC: no weight-class rank in score) ---
 
-    def compute_s_wl(rank_val: int) -> float:
-        if rank_val == 1:
-            return 100.0
-        # S_WL = max(0, 80 - 10 * (wc_rank - 2))
-        return max(0.0, 80.0 - 10.0 * (rank_val - 2))
-
-    def compute_s_rec(wins: int, losses: int) -> float:
+    def compute_s_rec(wins: int, losses: int) -> tuple[float, dict]:
+        """Compute record score and return (score, raw_data)."""
         total = wins + losses
+        raw = {
+            "wins": wins,
+            "losses": losses,
+            "win_pct": wins / total if total > 0 else 0.0
+        }
         if total <= 0:
-            return 0.0
+            return (0.0, raw)
         win_pct = wins / total
         if win_pct < 0.85:
             s = 0.0
@@ -489,7 +491,7 @@ def main() -> None:
             s = min(100.0, (win_pct - 0.85) / 0.15 * 100.0)
         if losses == 0:
             s = min(100.0, s + 5.0)
-        return s
+        return (s, raw)
 
     def value_for_rank(r: Optional[int]) -> float:
         if r is None:
@@ -500,23 +502,30 @@ def main() -> None:
             return 5.0 + (26 - r) / 3.0
         return 0.0
 
-    def compute_s_qual(ranks: List[int]) -> float:
+    def compute_s_qual(ranks: List[int], ranked_wins: int, top10_wins: int) -> tuple[float, dict]:
+        """Compute quality score and return (score, raw_data)."""
+        raw = {
+            "ranked_wins": ranked_wins,
+            "top10_wins": top10_wins,
+            "raw_quality": 0.0
+        }
         if not ranks:
-            return 0.0
+            return (0.0, raw)
         raw_quality = sum(value_for_rank(r) for r in ranks)
+        raw["raw_quality"] = raw_quality
         top10_wins_local = sum(1 for r in ranks if r <= 10)
         s = min(100.0, (raw_quality / 120.0) * 100.0)
         s = min(100.0, s + 2.0 * min(top10_wins_local, 5))
-        return s
+        return (s, raw)
 
     def compute_s_dom(
         weighted_tp_num: float,
         weighted_tp_den: float,
         unranked_tp_sum: float,
         unranked_matches: int,
-    ) -> float:
+    ) -> tuple[float, dict]:
         """
-        Compute S_DOM per s_dom_spec.txt.
+        Compute S_DOM and return (score, raw_data).
 
         - Use team-points per match (DEC=3, MD=4, TF=5, PIN=6)
           weighted by opponent quality on a Top-50 scale.
@@ -524,13 +533,16 @@ def main() -> None:
         - Optionally apply a small penalty for weak dominance vs unranked
           opponents (avg team points < 3.2).
         """
+        raw = {"avg_team_points": 0.0}
         if weighted_tp_den <= 0.0:
-            return 0.0
+            return (0.0, raw)
 
         # Weighted average dominance across all opponents.
         avg_tp_weighted = weighted_tp_num / weighted_tp_den
+        raw["avg_team_points"] = avg_tp_weighted
+        
         if avg_tp_weighted <= 3.0:
-            return 0.0
+            return (0.0, raw)
 
         s_dom = min(100.0, (avg_tp_weighted - 3.0) / 3.0 * 100.0)
 
@@ -541,42 +553,81 @@ def main() -> None:
                 penalty = min(10.0, (3.2 - avg_tp_unranked) * 10.0)
                 s_dom = max(0.0, s_dom - penalty)
 
-        return s_dom
+        return (s_dom, raw)
 
-    def compute_s_pins(pins: int, wins: int) -> float:
+    def compute_s_pins(pins: int, wins: int) -> tuple[float, dict]:
+        """Compute pin score and return (score, raw_data)."""
+        raw = {"pin_pct": 0.0}
         if wins <= 0 or pins <= 0:
-            return 0.0
+            return (0.0, raw)
         pin_pct = pins / wins
+        raw["pin_pct"] = pin_pct
         if pin_pct <= 0.10:
-            return 0.0
+            return (0.0, raw)
         if pin_pct >= 0.60:
-            return 100.0
-        return (pin_pct - 0.10) / 0.50 * 100.0
+            return (100.0, raw)
+        return ((pin_pct - 0.10) / 0.50 * 100.0, raw)
 
-    W_WL = 0.25
-    W_REC = 0.20
-    W_QUAL = 0.25
-    W_DOM = 0.20
-    W_PINS = 0.10
+    def check_eligibility(s: HodgeStats, s_qual: float) -> tuple[bool, Optional[str]]:
+        """Check eligibility gate and return (eligible, reason)."""
+        if s.weight_rank > 3:
+            return (False, f"Weight class rank {s.weight_rank} > 3")
+        if s.total_matches < 5:
+            return (False, f"Matches {s.total_matches} < 5")
+        # Allow 1 loss OR ≥90% win rate
+        win_pct = s.win_pct if s.total_matches > 0 else 0.0
+        if s.losses > 1 and win_pct < 0.90:
+            return (False, f"Has {s.losses} loss(es) and win% {win_pct:.1%} < 90%")
+        if s.ranked_wins < 1 and s_qual < 20.0:
+            return (False, f"Ranked wins {s.ranked_wins} < 1 and quality score {s_qual:.1f} < 20")
+        return (True, None)
+
+    # NEW WEIGHTS (no weight-class rank)
+    W_REC = 0.30
+    W_QUAL = 0.30
+    W_DOM = 0.25
+    W_PINS = 0.15
 
     for s in filtered_candidates:
-        s.s_wl = compute_s_wl(s.weight_rank)
-        s.s_rec = compute_s_rec(s.wins, s.losses)
-        s.s_qual = compute_s_qual(s.ranked_win_ranks)
-        s.s_dom = compute_s_dom(
+        # Compute component scores with raw data
+        s_rec_score, rec_raw = compute_s_rec(s.wins, s.losses)
+        s_qual_score, qual_raw = compute_s_qual(s.ranked_win_ranks, s.ranked_wins, s.top10_wins)
+        s_dom_score, dom_raw = compute_s_dom(
             s.dom_weighted_tp_num,
             s.dom_weighted_tp_den,
             s.dom_unranked_tp_sum,
             s.dom_unranked_matches,
         )
-        s.s_pins = compute_s_pins(s.pins, s.wins)
+        s_pins_score, pins_raw = compute_s_pins(s.pins, s.wins)
+        
+        # Store component data
+        s.component_data = {
+            "record": {"raw": rec_raw, "score": s_rec_score},
+            "quality": {"raw": qual_raw, "score": s_qual_score},
+            "dominance": {"raw": dom_raw, "score": s_dom_score},
+            "pins": {"raw": pins_raw, "score": s_pins_score},
+        }
+        
+        # Compute weighted contributions
+        s.component_data["record"]["weight"] = W_REC
+        s.component_data["record"]["contribution"] = W_REC * s_rec_score
+        s.component_data["quality"]["weight"] = W_QUAL
+        s.component_data["quality"]["contribution"] = W_QUAL * s_qual_score
+        s.component_data["dominance"]["weight"] = W_DOM
+        s.component_data["dominance"]["contribution"] = W_DOM * s_dom_score
+        s.component_data["pins"]["weight"] = W_PINS
+        s.component_data["pins"]["contribution"] = W_PINS * s_pins_score
+        
+        # Compute Hodge Score (no weight-class rank)
         s.hodge_score = (
-            W_WL * s.s_wl
-            + W_REC * s.s_rec
-            + W_QUAL * s.s_qual
-            + W_DOM * s.s_dom
-            + W_PINS * s.s_pins
+            W_REC * s_rec_score
+            + W_QUAL * s_qual_score
+            + W_DOM * s_dom_score
+            + W_PINS * s_pins_score
         )
+        
+        # Check eligibility
+        s.eligible, s.eligibility_reason = check_eligibility(s, s_qual_score)
 
     def green_scale01(t: float) -> str:
         """
@@ -592,9 +643,9 @@ def main() -> None:
         b = int(light[2] + (dark[2] - light[2]) * t)
         return f"#{r:02x}{g:02x}{b:02x}"
 
-    # Sort candidates by overall Hodge formula score (primary) then by weight rank.
+    # Sort candidates: eligible first, then by Hodge score descending
     scored_candidates = sorted(
-        filtered_candidates, key=lambda s: (-s.hodge_score, s.weight_rank)
+        filtered_candidates, key=lambda s: (-s.eligible, -s.hodge_score)
     )
 
     # --- Report 1: summary view (sorted by HodgeScore) ---
@@ -645,228 +696,82 @@ def main() -> None:
             f"{s.s_dom:7.1f}  {pin_pct_display:7.1f}"
         )
 
-    # --- Generate HTML report (both tables) ---
+    # --- Generate JSON report ---
     season_dir = output_root / str(season)
     season_dir.mkdir(parents=True, exist_ok=True)
-    html_path = season_dir / f"hodge_{season}.html"
+    json_path = season_dir / f"hodge_{season}.json"
 
-    generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    generated_at = datetime.now(timezone.utc).isoformat()
 
-    html = [
-        "<!DOCTYPE html>",
-        "<html>",
-        "<head>",
-        f"<meta charset='utf-8'>",
-        f"<title>Hodge Trophy Candidates - Season {season}</title>",
-        "<style>",
-        "body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }",
-        "h1 { margin-top: 0; }",
-        ".meta { margin-bottom: 16px; color: #555; }",
-        "table { border-collapse: collapse; width: 100%; font-size: 12px; background-color: #fff; }",
-        "th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: center; }",
-        "th { background-color: #f0f0f0; position: sticky; top: 0; z-index: 2; }",
-        "thead th { white-space: nowrap; }",
-        "tbody tr:nth-child(even) { background-color: #fafafa; }",
-        "tbody tr:hover { background-color: #f1f7ff; }",
-        ".name-cell { text-align: left; }",
-        ".team-cell { text-align: left; }",
-        "</style>",
-        "</head>",
-        "<body>",
-        f"<h1>Hodge Trophy Candidates &mdash; Season {season}</h1>",
-        f"<div class='meta'>",
-        f"Top {args.top_n} per weight class; max losses={args.maxloss}, "
-        f"min matches={args.minmatch}. Ranked wins and bonus stats computed "
-        f"against current top-33 in the same and adjacent weights. ",
-        f"Generated at {generated_at}.",
-        "</div>",
-    ]
-
-    # First: detailed Hodge formula scores table (the "formula" view).
-    html.extend(
-        [
-            "<h2>Hodge Formula Scores (sorted by HodgeScore)</h2>",
-            "<table>",
-            "<thead>",
-            "<tr>",
-            "<th>#</th>",
-            "<th>Name</th>",
-            "<th>Team</th>",
-            "<th>Wt</th>",
-            "<th>W-L</th>",
-            "<th>Score</th>",
-            "<th>WtCl Rank</th>",
-            "<th>Quality<br>of Competition</th>",
-            "<th>Dominance Score</th>",
-            "<th>Pin%</th>",
-            "</tr>",
-            "</thead>",
-            "<tbody>",
-        ]
-    )
-
-    # Precompute rank range for WtCl coloring so best rank is darkest, worst is lightest.
-    rank_values = [s.weight_rank for s in scored_candidates if s.weight_rank < 999]
-    if rank_values:
-        min_rank = min(rank_values)
-        max_rank = max(rank_values)
-    else:
-        min_rank = 1
-        max_rank = 1
-
+    # Build JSON structure with new format
+    rows = []
     for idx, s in enumerate(scored_candidates, start=1):
-        wl = f"{s.wins}-{s.losses}"
-        # Rank: map best ranks (lowest value) to dark green, worst (highest) to light.
-        if max_rank > min_rank:
-            rank_t = (max_rank - float(s.weight_rank)) / (max_rank - min_rank)
-            rank_t = max(0.0, min(1.0, rank_t))
-        else:
-            rank_t = 1.0
-        wtcl_color = green_scale01(rank_t)
-        # Quality, dominance, and pin scores get their own green shades based on 0–100 scale.
-        qual_color = green_scale01(s.s_qual / 100.0)
-        dom_color = green_scale01(s.s_dom / 100.0)
-        pin_color = green_scale01(s.s_pins / 100.0)
-        pin_pct_display = s.fall_pct * 100.0
+        row = {
+            "rank": idx,
+            "wrestler_id": s.wrestler_id,
+            "name": s.name,
+            "team": s.team,
+            "weight": int(s.weight_class) if s.weight_class.isdigit() else s.weight_class,
+            "weight_rank": s.weight_rank,
+            "eligible": s.eligible,
+            "eligibility_reason": s.eligibility_reason,
+            "hodge_score": round(s.hodge_score, 2),
+            "components": {
+                "record": {
+                    "raw": {
+                        "wins": s.component_data["record"]["raw"]["wins"],
+                        "losses": s.component_data["record"]["raw"]["losses"],
+                        "win_pct": round(s.component_data["record"]["raw"]["win_pct"], 3),
+                    },
+                    "score": round(s.component_data["record"]["score"], 1),
+                    "weight": s.component_data["record"]["weight"],
+                    "contribution": round(s.component_data["record"]["contribution"], 2),
+                },
+                "quality": {
+                    "raw": {
+                        "ranked_wins": s.component_data["quality"]["raw"]["ranked_wins"],
+                        "top10_wins": s.component_data["quality"]["raw"]["top10_wins"],
+                        "raw_quality": round(s.component_data["quality"]["raw"]["raw_quality"], 1),
+                    },
+                    "score": round(s.component_data["quality"]["score"], 1),
+                    "weight": s.component_data["quality"]["weight"],
+                    "contribution": round(s.component_data["quality"]["contribution"], 2),
+                },
+                "dominance": {
+                    "raw": {
+                        "avg_team_points": round(s.component_data["dominance"]["raw"]["avg_team_points"], 2),
+                    },
+                    "score": round(s.component_data["dominance"]["score"], 1),
+                    "weight": s.component_data["dominance"]["weight"],
+                    "contribution": round(s.component_data["dominance"]["contribution"], 2),
+                },
+                "pins": {
+                    "raw": {
+                        "pin_pct": round(s.component_data["pins"]["raw"]["pin_pct"], 3),
+                    },
+                    "score": round(s.component_data["pins"]["score"], 1),
+                    "weight": s.component_data["pins"]["weight"],
+                    "contribution": round(s.component_data["pins"]["contribution"], 2),
+                },
+            }
+        }
+        rows.append(row)
 
-        html.append(
-            "<tr>"
-            f"<td>{idx}</td>"
-            f"<td class='name-cell'>{s.name}</td>"
-            f"<td class='team-cell'>{s.team}</td>"
-            f"<td>{s.weight_class}</td>"
-            f"<td>{wl}</td>"
-            f"<td>{s.hodge_score:.2f}</td>"
-            f"<td style='background-color:{wtcl_color};'>{s.weight_rank}</td>"
-            f"<td style='background-color:{qual_color};'>{s.s_qual:.1f}</td>"
-            f"<td style='background-color:{dom_color};'>{s.s_dom:.1f}</td>"
-            f"<td style='background-color:{pin_color};'>{pin_pct_display:.1f}</td>"
-            "</tr>"
-        )
+    json_data = {
+        "season": season,
+        "generated_at": generated_at,
+        "description": (
+            "Hodge Score evaluates performance only. "
+            "Eligibility determines who appears on the Hodge Watch. "
+            "Weight-class rank influences eligibility — not scoring."
+        ),
+        "rows": rows
+    }
 
-    html.extend(
-        [
-            "</tbody>",
-            "</table>",
-        ]
-    )
+    with json_path.open("w", encoding="utf-8") as f:
+        json.dump(json_data, f, indent=2, ensure_ascii=False)
 
-    # Then: high-level summary table.
-    html.extend(
-        [
-            "<h2>Summary (sorted by HodgeScore)</h2>",
-            "<table>",
-            "<thead>",
-            "<tr>",
-            "<th>#</th>",
-            "<th>Name</th>",
-            "<th>Team</th>",
-            "<th>Wt</th>",
-            "<th>W-L</th>",
-            "<th>Win%</th>",
-            "<th>Bonus%</th>",
-            "<th>Fall%</th>",
-            "<th>RkW</th>",
-            "<th>Top10W</th>",
-            "<th>RkBon%</th>",
-            "</tr>",
-            "</thead>",
-            "<tbody>",
-        ]
-    )
-
-    # Precompute ranges for color gradients in the second table
-    bonus_pcts = [s.bonus_pct for s in scored_candidates]
-    fall_pcts = [s.fall_pct for s in scored_candidates]
-    ranked_wins_list = [s.ranked_wins for s in scored_candidates]
-    top10_wins_list = [s.top10_wins for s in scored_candidates]
-    ranked_bonus_pcts = [s.ranked_bonus_pct for s in scored_candidates if s.ranked_wins > 0]
-    
-    min_bonus_pct = min(bonus_pcts) if bonus_pcts else 0.0
-    max_bonus_pct = max(bonus_pcts) if bonus_pcts else 1.0
-    min_fall_pct = min(fall_pcts) if fall_pcts else 0.0
-    max_fall_pct = max(fall_pcts) if fall_pcts else 1.0
-    min_ranked_wins = min(ranked_wins_list) if ranked_wins_list else 0
-    max_ranked_wins = max(ranked_wins_list) if ranked_wins_list else 1
-    min_top10_wins = min(top10_wins_list) if top10_wins_list else 0
-    max_top10_wins = max(top10_wins_list) if top10_wins_list else 1
-    min_ranked_bonus_pct = min(ranked_bonus_pcts) if ranked_bonus_pcts else 0.0
-    max_ranked_bonus_pct = max(ranked_bonus_pcts) if ranked_bonus_pcts else 1.0
-
-    for idx, s in enumerate(scored_candidates, start=1):
-        wl = f"{s.wins}-{s.losses}"
-        
-        # Compute colors for the 5 metric columns
-        # Bonus%: map from [min, max] to [0, 1] for green scale
-        if max_bonus_pct > min_bonus_pct:
-            bonus_t = (s.bonus_pct - min_bonus_pct) / (max_bonus_pct - min_bonus_pct)
-        else:
-            bonus_t = 1.0 if s.bonus_pct > 0 else 0.0
-        bonus_color = green_scale01(bonus_t)
-        
-        # Fall%: map from [min, max] to [0, 1] for green scale
-        if max_fall_pct > min_fall_pct:
-            fall_t = (s.fall_pct - min_fall_pct) / (max_fall_pct - min_fall_pct)
-        else:
-            fall_t = 1.0 if s.fall_pct > 0 else 0.0
-        fall_color = green_scale01(fall_t)
-        
-        # RkW: map from [min, max] to [0, 1] for green scale
-        if max_ranked_wins > min_ranked_wins:
-            rkw_t = (s.ranked_wins - min_ranked_wins) / (max_ranked_wins - min_ranked_wins)
-        else:
-            rkw_t = 1.0 if s.ranked_wins > 0 else 0.0
-        rkw_color = green_scale01(rkw_t)
-        
-        # Top10W: map from [min, max] to [0, 1] for green scale
-        if max_top10_wins > min_top10_wins:
-            top10w_t = (s.top10_wins - min_top10_wins) / (max_top10_wins - min_top10_wins)
-        else:
-            top10w_t = 1.0 if s.top10_wins > 0 else 0.0
-        top10w_color = green_scale01(top10w_t)
-        
-        # RkBon%: map from [min, max] to [0, 1] for green scale (only if ranked_wins > 0)
-        if s.ranked_wins > 0 and max_ranked_bonus_pct > min_ranked_bonus_pct:
-            rkbon_t = (s.ranked_bonus_pct - min_ranked_bonus_pct) / (max_ranked_bonus_pct - min_ranked_bonus_pct)
-        elif s.ranked_wins > 0:
-            rkbon_t = 1.0 if s.ranked_bonus_pct > 0 else 0.0
-        else:
-            rkbon_t = 0.0
-        rkbon_color = green_scale01(rkbon_t)
-        
-        html.append(
-            "<tr>"
-            f"<td>{idx}</td>"
-            f"<td class='name-cell'>{s.name}</td>"
-            f"<td class='team-cell'>{s.team}</td>"
-            f"<td>{s.weight_class}</td>"
-            f"<td>{wl}</td>"
-            f"<td>{s.win_pct:.3f}</td>"
-            f"<td style='background-color:{bonus_color};'>{s.bonus_pct:.3f}</td>"
-            f"<td style='background-color:{fall_color};'>{s.fall_pct:.3f}</td>"
-            f"<td style='background-color:{rkw_color};'>{s.ranked_wins}</td>"
-            f"<td style='background-color:{top10w_color};'>{s.top10_wins}</td>"
-            f"<td style='background-color:{rkbon_color};'>{s.ranked_bonus_pct:.3f}</td>"
-            "</tr>"
-        )
-
-    html.extend(
-        [
-            "</tbody>",
-            "</table>",
-            "</body>",
-            "</html>",
-        ]
-    )
-
-    with html_path.open("w", encoding="utf-8") as f:
-        f.write("\n".join(html))
-
-    print(f"\nHTML report written to {html_path}\n")
-    try:
-        webbrowser.open(html_path.as_uri())
-    except Exception:
-        pass
+    print(f"\nJSON report written to {json_path}\n")
 
 
 if __name__ == "__main__":

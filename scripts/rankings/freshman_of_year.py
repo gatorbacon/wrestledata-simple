@@ -33,9 +33,8 @@ from __future__ import annotations
 
 import argparse
 import json
-import webbrowser
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set
 
@@ -301,8 +300,8 @@ def main() -> None:
     )
     parser.add_argument(
         "-output-dir",
-        default="mt/rankings_html",
-        help="Directory to save HTML Freshman report (subdir per season will be created)",
+        default="frontend/wrestledata-ui/public/data/awards/freshman",
+        help="Directory to save JSON Freshman report (subdir per season will be created)",
     )
     parser.add_argument(
         "-top-n",
@@ -392,26 +391,50 @@ def main() -> None:
         )
         all_candidates.extend(stats)
 
-    # Sort across all weights:
-    # 1) overall weight ranking (ascending: rank 1 before 2)
-    # 2) bonus_pct desc
-    # 3) ranked_wins desc
-    all_candidates.sort(
-        key=lambda s: (
-            s.weight_rank,
-            -s.bonus_pct,
-            -s.ranked_wins,
+    # Calculate FreshScore for each candidate
+    # Find max values for normalization
+    if all_candidates:
+        max_ranked_wins = max(s.ranked_wins for s in all_candidates) if all_candidates else 1
+        max_top10_wins = max(s.top10_wins for s in all_candidates) if all_candidates else 1
+    else:
+        max_ranked_wins = 1
+        max_top10_wins = 1
+
+    # Calculate FreshScore: weighted sum of normalized components
+    # Weights: Win% 20%, Bonus% 20%, Pin% 20%, RankedBonus% 20%, RankedWins 10%, Top10Wins 10%
+    for s in all_candidates:
+        # Percentage components (already 0-1 scale, convert to 0-100)
+        win_pct_score = s.win_pct * 100
+        bonus_pct_score = s.bonus_pct * 100
+        pin_pct_score = s.fall_pct * 100
+        ranked_bonus_pct_score = s.ranked_bonus_pct * 100
+
+        # Count components (normalize by max, then convert to 0-100)
+        ranked_wins_score = (s.ranked_wins / max_ranked_wins * 100) if max_ranked_wins > 0 else 0
+        top10_wins_score = (s.top10_wins / max_top10_wins * 100) if max_top10_wins > 0 else 0
+
+        # Weighted sum
+        fresh_score = (
+            win_pct_score * 0.20 +
+            bonus_pct_score * 0.20 +
+            pin_pct_score * 0.20 +
+            ranked_bonus_pct_score * 0.20 +
+            ranked_wins_score * 0.10 +
+            top10_wins_score * 0.10
         )
-    )
+        s.fresh_score = fresh_score
+
+    # Sort by FreshScore descending
+    all_candidates.sort(key=lambda s: -s.fresh_score)
 
     print(
         f"\nFreshman of the Year candidate metrics for season {season} "
-        f"(top {args.top_n} freshmen per weight, sorted by rank, bonus%, ranked wins):\n"
+        f"(top {args.top_n} freshmen per weight, sorted by FreshScore):\n"
     )
     header = (
         f"{'#':>3}  {'Name':<25} {'Team':<20} {'Wt':>4}  "
         f"{'W-L':>7}  {'Win%':>6}  {'Bonus%':>7}  {'Pin%':>6}  "
-        f"{'# RankedWins':>12}  {'# Top10Wins':>11}  {'RankedBon%':>10}"
+        f"{'# RankedWins':>12}  {'# Top10Wins':>11}  {'RankedBon%':>10}  {'FreshScore':>10}"
     )
     print(header)
     print("-" * len(header))
@@ -421,99 +444,55 @@ def main() -> None:
         print(
             f"{idx:>3}  {s.name:<25.25} {s.team:<20.20} {s.weight_class:>4}  "
             f"{wl:>7}  {s.win_pct:6.3f}  {s.bonus_pct:7.3f}  {s.fall_pct:6.3f}  "
-            f"{s.ranked_wins:12d}  {s.top10_wins:11d}  {s.ranked_bonus_pct:10.3f}"
+            f"{s.ranked_wins:12d}  {s.top10_wins:11d}  {s.ranked_bonus_pct:10.3f}  {s.fresh_score:10.2f}"
         )
 
-    # --- Generate HTML report ---
+    # --- Generate JSON report ---
     season_dir = output_root / str(season)
     season_dir.mkdir(parents=True, exist_ok=True)
-    html_path = season_dir / f"freshman_{season}.html"
+    json_path = season_dir / f"freshman_{season}.json"
 
-    generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    generated_at = datetime.now(timezone.utc).isoformat()
 
-    html = [
-        "<!DOCTYPE html>",
-        "<html>",
-        "<head>",
-        "<meta charset='utf-8'>",
-        f"<title>Freshman of the Year Candidates - Season {season}</title>",
-        "<style>",
-        "body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }",
-        "h1 { margin-top: 0; }",
-        ".meta { margin-bottom: 16px; color: #555; }",
-        "table { border-collapse: collapse; width: 100%; font-size: 12px; background-color: #fff; }",
-        "th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: center; }",
-        "th { background-color: #f0f0f0; position: sticky; top: 0; z-index: 2; }",
-        "thead th { white-space: nowrap; }",
-        "tbody tr:nth-child(even) { background-color: #fafafa; }",
-        "tbody tr:hover { background-color: #f1f7ff; }",
-        ".name-cell { text-align: left; }",
-        ".team-cell { text-align: left; }",
-        "</style>",
-        "</head>",
-        "<body>",
-        f"<h1>Freshman of the Year Candidates &mdash; Season {season}</h1>",
-        "<div class='meta'>",
-        f"Top {args.top_n} ranked freshmen per weight class (grades 'Fr.' and 'RS Fr.'). "
-        "Ranked wins and bonus stats computed against current top-33 in the same and adjacent weights. "
-        f"Generated at {generated_at}.",
-        "</div>",
-        "<table>",
-        "<thead>",
-        "<tr>",
-        "<th>#</th>",
-        "<th>Name</th>",
-        "<th>Team</th>",
-        "<th>Wt</th>",
-        "<th>W-L</th>",
-        "<th>Win%</th>",
-        "<th>Bonus%</th>",
-        "<th>Pin%</th>",
-        "<th># of Ranked Wins</th>",
-        "<th># of Top 10 Wins</th>",
-        "<th>Ranked Bonus%</th>",
-        "</tr>",
-        "</thead>",
-        "<tbody>",
-    ]
-
+    # Build JSON structure
+    rows = []
     for idx, s in enumerate(all_candidates, start=1):
-        wl = f"{s.wins}-{s.losses}"
-        html.append(
-            "<tr>"
-            f"<td>{idx}</td>"
-            f"<td class='name-cell'>{s.name}</td>"
-            f"<td class='team-cell'>{s.team}</td>"
-            f"<td>{s.weight_class}</td>"
-            f"<td>{wl}</td>"
-            f"<td>{s.win_pct:.3f}</td>"
-            f"<td>{s.bonus_pct:.3f}</td>"
-            f"<td>{s.fall_pct:.3f}</td>"
-            f"<td>{s.ranked_wins}</td>"
-            f"<td>{s.top10_wins}</td>"
-            f"<td>{s.ranked_bonus_pct:.3f}</td>"
-            "</tr>"
-        )
+        rows.append({
+            "rank": idx,
+            "wrestler_id": s.wrestler_id,
+            "name": s.name,
+            "team": s.team,
+            "weight": int(s.weight_class) if s.weight_class.isdigit() else s.weight_class,
+            "weight_rank": s.weight_rank,
+            "grade": s.grade,
+            "wins": s.wins,
+            "losses": s.losses,
+            "record": f"{s.wins}-{s.losses}",
+            "metrics": {
+                "win_pct": round(s.win_pct, 3),
+                "bonus_pct": round(s.bonus_pct, 3),
+                "fall_pct": round(s.fall_pct, 3),
+                "ranked_wins": s.ranked_wins,
+                "top10_wins": s.top10_wins,
+                "ranked_bonus_pct": round(s.ranked_bonus_pct, 3),
+            },
+            "fresh_score": round(s.fresh_score, 2)
+        })
 
-    html.extend(
-        [
-            "</tbody>",
-            "</table>",
-            "</body>",
-            "</html>",
-        ]
-    )
+    json_data = {
+        "season": season,
+        "generated_at": generated_at,
+        "description": (
+            f"Top {args.top_n} ranked freshmen per weight class (grades 'Fr.' and 'RS Fr.'). "
+            "Ranked wins and bonus stats computed against current top-33 in the same and adjacent weights."
+        ),
+        "rows": rows
+    }
 
-    with html_path.open("w", encoding="utf-8") as f:
-        f.write("\n".join(html))
+    with json_path.open("w", encoding="utf-8") as f:
+        json.dump(json_data, f, indent=2, ensure_ascii=False)
 
-    print(f"\nHTML Freshman report written to {html_path}\n")
-    try:
-        webbrowser.open(html_path.as_uri())
-    except Exception:
-        # If a browser can't be opened (e.g., in headless environments),
-        # just continue quietly.
-        pass
+    print(f"\nJSON report written to {json_path}\n")
 
 
 if __name__ == "__main__":

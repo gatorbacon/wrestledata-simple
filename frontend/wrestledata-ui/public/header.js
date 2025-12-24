@@ -95,6 +95,12 @@
                 <a href="/leaderboards/leaderboard_wins.html" class="dropdown-item">
                   <span class="dropdown-item-label">Wins</span>
                 </a>
+                <a href="/hodge.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Hodge Trophy Watch</span>
+                </a>
+                <a href="/freshman.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Freshman of the Year Watch</span>
+                </a>
               </div>
             </div>
 
