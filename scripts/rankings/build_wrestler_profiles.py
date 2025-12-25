@@ -400,8 +400,12 @@ def load_match_mv_impact(season: int) -> Dict[str, Dict]:
     Load per-match MV impact cache.
     
     Returns dict mapping (wrestler_id, opponent_id, date, result) -> mv_impact
+    
+    NOTE: Always reads from the public data location (frontend/wrestledata-ui/public/data/mat_value)
+    regardless of other parameters, since match_mv_impact files are stored there.
     """
-    match_impact_file = Path(f"data/mat_value/{season}/match_mv_impact_{season}.json")
+    # Always read from public location - match_mv_impact files are stored there
+    match_impact_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{season}/match_mv_impact_{season}.json")
     if not match_impact_file.exists():
         return {}
     
