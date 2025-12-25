@@ -1,11 +1,26 @@
 {
   "season": 2026,
   "weight": 197,
-  "generated_at": "2025-12-25T01:05:16.308590+00:00Z",
+  "generated_at": "2025-12-25T12:23:09.520704+00:00Z",
   "source": "rankings_starters_197.json",
   "wrestlers": [
     {
       "rank": 1,
+      "wrestler_id": "34939018132",
+      "name": "Josh Barr",
+      "team": "Penn State",
+      "team_short": "PSU",
+      "record": {
+        "wins": 0,
+        "losses": 0,
+        "pct": 0.0
+      },
+      "record_str": "0-0 (—)",
+      "bonus_pct": 0.0,
+      "mv": null
+    },
+    {
+      "rank": 2,
       "wrestler_id": "34940832132",
       "name": "Rocky Elam",
       "team": "Iowa State",
@@ -23,7 +38,7 @@
       }
     },
     {
-      "rank": 2,
+      "rank": 3,
       "wrestler_id": "34945352132",
       "name": "Stephen Little",
       "team": "Little Rock",
@@ -41,43 +56,7 @@
       }
     },
     {
-      "rank": 3,
-      "wrestler_id": "34939027132",
-      "name": "Connor Mirasola",
-      "team": "Penn State",
-      "team_short": "PSU",
-      "record": {
-        "wins": 6,
-        "losses": 1,
-        "pct": 0.8571428571428571
-      },
-      "record_str": "6-1 (86%)",
-      "bonus_pct": 0.833,
-      "mv": {
-        "value": 3.824,
-        "weight_rank": 7
-      }
-    },
-    {
       "rank": 4,
-      "wrestler_id": "34962196132",
-      "name": "Massoma Endene",
-      "team": "Iowa",
-      "team_short": "IOWA",
-      "record": {
-        "wins": 6,
-        "losses": 1,
-        "pct": 0.8571428571428571
-      },
-      "record_str": "6-1 (86%)",
-      "bonus_pct": 0.333,
-      "mv": {
-        "value": 4.252,
-        "weight_rank": 3
-      }
-    },
-    {
-      "rank": 5,
       "wrestler_id": "34934760132",
       "name": "Justin Rademacher",
       "team": "Oregon State",
@@ -95,7 +74,43 @@
       }
     },
     {
+      "rank": 5,
+      "wrestler_id": "34962196132",
+      "name": "Massoma Endene",
+      "team": "Iowa",
+      "team_short": "IOWA",
+      "record": {
+        "wins": 6,
+        "losses": 1,
+        "pct": 0.8571428571428571
+      },
+      "record_str": "6-1 (86%)",
+      "bonus_pct": 0.333,
+      "mv": {
+        "value": 4.252,
+        "weight_rank": 3
+      }
+    },
+    {
       "rank": 6,
+      "wrestler_id": "34933446132",
+      "name": "Joey Novak",
+      "team": "Wyoming",
+      "team_short": "WYO",
+      "record": {
+        "wins": 7,
+        "losses": 2,
+        "pct": 0.7777777777777778
+      },
+      "record_str": "7-2 (78%)",
+      "bonus_pct": 0.714,
+      "mv": {
+        "value": 3.963,
+        "weight_rank": 6
+      }
+    },
+    {
+      "rank": 7,
       "wrestler_id": "34963117132",
       "name": "DJ Parker",
       "team": "Oklahoma",
@@ -113,7 +128,7 @@
       }
     },
     {
-      "rank": 7,
+      "rank": 8,
       "wrestler_id": "34954159132",
       "name": "Dillon Bechtold",
       "team": "Bucknell",
@@ -131,7 +146,7 @@
       }
     },
     {
-      "rank": 8,
+      "rank": 9,
       "wrestler_id": "34934128132",
       "name": "Mac Stout",
       "team": "Pittsburgh",
@@ -149,7 +164,7 @@
       }
     },
     {
-      "rank": 9,
+      "rank": 10,
       "wrestler_id": "34936412132",
       "name": "Cody Merrill",
       "team": "Oklahoma State",
@@ -167,7 +182,7 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 11,
       "wrestler_id": "34943230132",
       "name": "Bennett Berge",
       "team": "South Dakota State",
@@ -185,7 +200,7 @@
       }
     },
     {
-      "rank": 11,
+      "rank": 12,
       "wrestler_id": "34957597132",
       "name": "Branson John",
       "team": "Maryland",
@@ -200,24 +215,6 @@
       "mv": {
         "value": 3.132,
         "weight_rank": 13
-      }
-    },
-    {
-      "rank": 12,
-      "wrestler_id": "34943982132",
-      "name": "Evan Bates",
-      "team": "Missouri",
-      "team_short": "MIZZ",
-      "record": {
-        "wins": 10,
-        "losses": 3,
-        "pct": 0.7692307692307693
-      },
-      "record_str": "10-3 (77%)",
-      "bonus_pct": 0.5,
-      "mv": {
-        "value": 1.841,
-        "weight_rank": 25
       }
     },
     {
@@ -240,6 +237,24 @@
     },
     {
       "rank": 14,
+      "wrestler_id": "34946733132",
+      "name": "Rune Lawrence",
+      "team": "West Virginia",
+      "team_short": "WVU",
+      "record": {
+        "wins": 10,
+        "losses": 5,
+        "pct": 0.6666666666666666
+      },
+      "record_str": "10-5 (67%)",
+      "bonus_pct": 0.5,
+      "mv": {
+        "value": 1.978,
+        "weight_rank": 24
+      }
+    },
+    {
+      "rank": 15,
       "wrestler_id": "34933366132",
       "name": "Sonny Sasso",
       "team": "Virginia Tech",
@@ -257,39 +272,21 @@
       }
     },
     {
-      "rank": 15,
-      "wrestler_id": "34933446132",
-      "name": "Joey Novak",
-      "team": "Wyoming",
-      "team_short": "WYO",
-      "record": {
-        "wins": 7,
-        "losses": 2,
-        "pct": 0.7777777777777778
-      },
-      "record_str": "7-2 (78%)",
-      "bonus_pct": 0.714,
-      "mv": {
-        "value": 3.963,
-        "weight_rank": 6
-      }
-    },
-    {
       "rank": 16,
-      "wrestler_id": "34946733132",
-      "name": "Rune Lawrence",
-      "team": "West Virginia",
-      "team_short": "WVU",
+      "wrestler_id": "34943982132",
+      "name": "Evan Bates",
+      "team": "Missouri",
+      "team_short": "MIZZ",
       "record": {
         "wins": 10,
-        "losses": 5,
-        "pct": 0.6666666666666666
+        "losses": 3,
+        "pct": 0.7692307692307693
       },
-      "record_str": "10-5 (67%)",
+      "record_str": "10-3 (77%)",
       "bonus_pct": 0.5,
       "mv": {
-        "value": 1.978,
-        "weight_rank": 24
+        "value": 1.841,
+        "weight_rank": 25
       }
     },
     {
@@ -636,60 +633,6 @@
     },
     {
       "rank": 36,
-      "wrestler_id": "34955745132",
-      "name": "alex smith",
-      "team": "Northwestern",
-      "team_short": "NW",
-      "record": {
-        "wins": 4,
-        "losses": 3,
-        "pct": 0.5714285714285714
-      },
-      "record_str": "4-3 (57%)",
-      "bonus_pct": 0.75,
-      "mv": {
-        "value": 0.377,
-        "weight_rank": 64
-      }
-    },
-    {
-      "rank": 37,
-      "wrestler_id": "34943154132",
-      "name": "Robert Platt",
-      "team": "North Carolina",
-      "team_short": "UNC",
-      "record": {
-        "wins": 5,
-        "losses": 3,
-        "pct": 0.625
-      },
-      "record_str": "5-3 (62%)",
-      "bonus_pct": 0.4,
-      "mv": {
-        "value": 1.254,
-        "weight_rank": 38
-      }
-    },
-    {
-      "rank": 38,
-      "wrestler_id": "34941676132",
-      "name": "Conor Maslanek",
-      "team": "Campbell",
-      "team_short": "CAMP",
-      "record": {
-        "wins": 6,
-        "losses": 3,
-        "pct": 0.6666666666666666
-      },
-      "record_str": "6-3 (67%)",
-      "bonus_pct": 0.333,
-      "mv": {
-        "value": 0.693,
-        "weight_rank": 53
-      }
-    },
-    {
-      "rank": 39,
       "wrestler_id": "34934626132",
       "name": "Devin Wasley",
       "team": "North Dakota State",
@@ -707,7 +650,25 @@
       }
     },
     {
-      "rank": 40,
+      "rank": 37,
+      "wrestler_id": "34941676132",
+      "name": "Conor Maslanek",
+      "team": "Campbell",
+      "team_short": "CAMP",
+      "record": {
+        "wins": 6,
+        "losses": 3,
+        "pct": 0.6666666666666666
+      },
+      "record_str": "6-3 (67%)",
+      "bonus_pct": 0.333,
+      "mv": {
+        "value": 0.693,
+        "weight_rank": 53
+      }
+    },
+    {
+      "rank": 38,
       "wrestler_id": "34934190132",
       "name": "Braxton Lewis",
       "team": "VMI",
@@ -725,7 +686,25 @@
       }
     },
     {
-      "rank": 41,
+      "rank": 39,
+      "wrestler_id": "34943154132",
+      "name": "Robert Platt",
+      "team": "North Carolina",
+      "team_short": "UNC",
+      "record": {
+        "wins": 5,
+        "losses": 3,
+        "pct": 0.625
+      },
+      "record_str": "5-3 (62%)",
+      "bonus_pct": 0.4,
+      "mv": {
+        "value": 1.254,
+        "weight_rank": 38
+      }
+    },
+    {
+      "rank": 40,
       "wrestler_id": "34971903132",
       "name": "Ibrahim Ameer",
       "team": "Drexel",
@@ -743,7 +722,7 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 41,
       "wrestler_id": "34944231132",
       "name": "Karson Tompkins",
       "team": "Air Force",
@@ -761,7 +740,43 @@
       }
     },
     {
+      "rank": 42,
+      "wrestler_id": "34935975132",
+      "name": "Tucker Hogan",
+      "team": "Lock Haven",
+      "team_short": "LH",
+      "record": {
+        "wins": 8,
+        "losses": 4,
+        "pct": 0.6666666666666666
+      },
+      "record_str": "8-4 (67%)",
+      "bonus_pct": 0.75,
+      "mv": {
+        "value": 0.407,
+        "weight_rank": 62
+      }
+    },
+    {
       "rank": 43,
+      "wrestler_id": "34955745132",
+      "name": "alex smith",
+      "team": "Northwestern",
+      "team_short": "NW",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "pct": 0.5714285714285714
+      },
+      "record_str": "4-3 (57%)",
+      "bonus_pct": 0.75,
+      "mv": {
+        "value": 0.377,
+        "weight_rank": 64
+      }
+    },
+    {
+      "rank": 44,
       "wrestler_id": "34943388132",
       "name": "Adam Haselius",
       "team": "Columbia",
@@ -779,7 +794,7 @@
       }
     },
     {
-      "rank": 44,
+      "rank": 45,
       "wrestler_id": "34952104132",
       "name": "Cade Lautt",
       "team": "Illinois",
@@ -794,24 +809,6 @@
       "mv": {
         "value": -0.395,
         "weight_rank": 79
-      }
-    },
-    {
-      "rank": 45,
-      "wrestler_id": "34935975132",
-      "name": "Tucker Hogan",
-      "team": "Lock Haven",
-      "team_short": "LH",
-      "record": {
-        "wins": 8,
-        "losses": 4,
-        "pct": 0.6666666666666666
-      },
-      "record_str": "8-4 (67%)",
-      "bonus_pct": 0.75,
-      "mv": {
-        "value": 0.407,
-        "weight_rank": 62
       }
     },
     {
@@ -870,6 +867,24 @@
     },
     {
       "rank": 49,
+      "wrestler_id": "34936111132",
+      "name": "Levi Bussey",
+      "team": "Cal Poly",
+      "team_short": "POLY",
+      "record": {
+        "wins": 3,
+        "losses": 1,
+        "pct": 0.75
+      },
+      "record_str": "3-1 (75%)",
+      "bonus_pct": 0.333,
+      "mv": {
+        "value": 0.481,
+        "weight_rank": 61
+      }
+    },
+    {
+      "rank": 50,
       "wrestler_id": "34934018132",
       "name": "Eli Sheeren",
       "team": "California Baptist",
@@ -887,7 +902,7 @@
       }
     },
     {
-      "rank": 50,
+      "rank": 51,
       "wrestler_id": "34964071132",
       "name": "Kalob Runyon",
       "team": "Northern Iowa",
@@ -905,7 +920,7 @@
       }
     },
     {
-      "rank": 51,
+      "rank": 52,
       "wrestler_id": "34937343132",
       "name": "Hudson Skove",
       "team": "Harvard",
@@ -923,7 +938,7 @@
       }
     },
     {
-      "rank": 52,
+      "rank": 53,
       "wrestler_id": "34935716132",
       "name": "Cason Howle",
       "team": "NC State",
@@ -941,7 +956,7 @@
       }
     },
     {
-      "rank": 53,
+      "rank": 54,
       "wrestler_id": "34937479132",
       "name": "Josh McCutchen",
       "team": "Gardner-Webb",
@@ -956,24 +971,6 @@
       "mv": {
         "value": -0.738,
         "weight_rank": 86
-      }
-    },
-    {
-      "rank": 54,
-      "wrestler_id": "34936111132",
-      "name": "Levi Bussey",
-      "team": "Cal Poly",
-      "team_short": "POLY",
-      "record": {
-        "wins": 3,
-        "losses": 1,
-        "pct": 0.75
-      },
-      "record_str": "3-1 (75%)",
-      "bonus_pct": 0.333,
-      "mv": {
-        "value": 0.481,
-        "weight_rank": 61
       }
     },
     {
@@ -996,20 +993,20 @@
     },
     {
       "rank": 56,
-      "wrestler_id": "34943843132",
-      "name": "Andrew Liber",
-      "team": "Bellarmine",
-      "team_short": "BU",
+      "wrestler_id": "34957141132",
+      "name": "Caleb Close",
+      "team": "American",
+      "team_short": "AMER",
       "record": {
-        "wins": 2,
-        "losses": 6,
-        "pct": 0.25
+        "wins": 1,
+        "losses": 4,
+        "pct": 0.2
       },
-      "record_str": "2-6 (25%)",
-      "bonus_pct": 1.0,
+      "record_str": "1-4 (20%)",
+      "bonus_pct": 0.0,
       "mv": {
-        "value": -1.161,
-        "weight_rank": 93
+        "value": -2.052,
+        "weight_rank": 110
       }
     },
     {
@@ -1050,20 +1047,20 @@
     },
     {
       "rank": 59,
-      "wrestler_id": "34953904132",
-      "name": "John Dusza",
-      "team": "LIU",
-      "team_short": "LIU",
+      "wrestler_id": "34947834132",
+      "name": "Mikey Squires",
+      "team": "Binghamton",
+      "team_short": "BING",
       "record": {
-        "wins": 2,
-        "losses": 6,
-        "pct": 0.25
+        "wins": 1,
+        "losses": 0,
+        "pct": 1.0
       },
-      "record_str": "2-6 (25%)",
-      "bonus_pct": 0.5,
+      "record_str": "1-0 (100%)",
+      "bonus_pct": 0.0,
       "mv": {
-        "value": -2.173,
-        "weight_rank": 113
+        "value": 2.638,
+        "weight_rank": 22
       }
     },
     {
@@ -1104,24 +1101,42 @@
     },
     {
       "rank": 62,
-      "wrestler_id": "34947813132",
-      "name": "Quinn Funk",
-      "team": "Binghamton",
-      "team_short": "BING",
+      "wrestler_id": "34953904132",
+      "name": "John Dusza",
+      "team": "LIU",
+      "team_short": "LIU",
       "record": {
-        "wins": 8,
-        "losses": 5,
-        "pct": 0.6153846153846154
+        "wins": 2,
+        "losses": 6,
+        "pct": 0.25
       },
-      "record_str": "8-5 (62%)",
-      "bonus_pct": 0.75,
+      "record_str": "2-6 (25%)",
+      "bonus_pct": 0.5,
       "mv": {
-        "value": -0.159,
-        "weight_rank": 74
+        "value": -2.173,
+        "weight_rank": 113
       }
     },
     {
       "rank": 63,
+      "wrestler_id": "34943843132",
+      "name": "Andrew Liber",
+      "team": "Bellarmine",
+      "team_short": "BU",
+      "record": {
+        "wins": 2,
+        "losses": 6,
+        "pct": 0.25
+      },
+      "record_str": "2-6 (25%)",
+      "bonus_pct": 1.0,
+      "mv": {
+        "value": -1.161,
+        "weight_rank": 93
+      }
+    },
+    {
+      "rank": 64,
       "wrestler_id": "34937679132",
       "name": "Will Conlon",
       "team": "Hofstra",
@@ -1139,7 +1154,7 @@
       }
     },
     {
-      "rank": 64,
+      "rank": 65,
       "wrestler_id": "34949038132",
       "name": "Chris DeLena",
       "team": "Sacred Heart",
@@ -1157,7 +1172,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 66,
       "wrestler_id": "34950414132",
       "name": "Owen McGrory",
       "team": "Duke",
@@ -1172,7 +1187,7 @@
       "mv": null
     },
     {
-      "rank": 66,
+      "rank": 67,
       "wrestler_id": "34937094132",
       "name": "Andrew Donahue",
       "team": "Northern Colorado",
@@ -1187,24 +1202,6 @@
       "mv": {
         "value": -1.743,
         "weight_rank": 102
-      }
-    },
-    {
-      "rank": 67,
-      "wrestler_id": "34957141132",
-      "name": "Caleb Close",
-      "team": "American",
-      "team_short": "AMER",
-      "record": {
-        "wins": 1,
-        "losses": 4,
-        "pct": 0.2
-      },
-      "record_str": "1-4 (20%)",
-      "bonus_pct": 0.0,
-      "mv": {
-        "value": -2.052,
-        "weight_rank": 110
       }
     },
     {
@@ -1281,6 +1278,24 @@
     },
     {
       "rank": 72,
+      "wrestler_id": "34935909132",
+      "name": "Dylan Smith",
+      "team": "Davidson",
+      "team_short": "DAV",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "pct": 0.0
+      },
+      "record_str": "0-1 (0%)",
+      "bonus_pct": 0.0,
+      "mv": {
+        "value": -4.107,
+        "weight_rank": 148
+      }
+    },
+    {
+      "rank": 73,
       "wrestler_id": "34934449132",
       "name": "RJ Moore",
       "team": "Franklin & Marshall",
@@ -1297,7 +1312,7 @@
       }
     },
     {
-      "rank": 73,
+      "rank": 74,
       "wrestler_id": "34946244132",
       "name": "Gunnar DeGroat",
       "team": "The Citadel",
@@ -1315,7 +1330,7 @@
       }
     },
     {
-      "rank": 74,
+      "rank": 75,
       "wrestler_id": "34954522132",
       "name": "Toler Hornick",
       "team": "Presbyterian",
@@ -1333,7 +1348,7 @@
       }
     },
     {
-      "rank": 75,
+      "rank": 76,
       "wrestler_id": "34962231132",
       "name": "Angel Cervantes",
       "team": "CSU Bakersfield",
@@ -1348,24 +1363,6 @@
       "mv": {
         "value": -5.947,
         "weight_rank": 173
-      }
-    },
-    {
-      "rank": 76,
-      "wrestler_id": "34935909132",
-      "name": "Dylan Smith",
-      "team": "Davidson",
-      "team_short": "DAV",
-      "record": {
-        "wins": 0,
-        "losses": 1,
-        "pct": 0.0
-      },
-      "record_str": "0-1 (0%)",
-      "bonus_pct": 0.0,
-      "mv": {
-        "value": -4.107,
-        "weight_rank": 148
       }
     },
     {
@@ -1403,6 +1400,21 @@
         "value": -4.165,
         "weight_rank": 150
       }
+    },
+    {
+      "rank": 79,
+      "wrestler_id": "34963806132",
+      "name": "Josh Johnson-Cantrell",
+      "team": "Mercyherst",
+      "team_short": "MD",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "pct": 0.0
+      },
+      "record_str": "0-1 (0%)",
+      "bonus_pct": 0.0,
+      "mv": null
     }
   ]
 }

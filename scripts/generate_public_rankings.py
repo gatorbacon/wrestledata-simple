@@ -328,8 +328,8 @@ def main() -> None:
     parser.add_argument(
         "--rankings-dir",
         type=str,
-        default="mt/rankings_data",
-        help="Base directory for rankings data (default: mt/rankings_data)"
+        default="frontend/wrestledata-ui/public/data/rankings",
+        help="Base directory for rankings data (default: frontend/wrestledata-ui/public/data/rankings)"
     )
     parser.add_argument(
         "--wrestlers-dir",

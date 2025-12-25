@@ -252,9 +252,9 @@ def determine_relationship_type(
     return None
 
 
-def load_relationships(season: int, weight: int, data_dir: str = "mt/rankings_data") -> Dict:
+def load_relationships(season: int, weight: int, relationships_dir: str = "mt/rankings_data") -> Dict:
     """Load relationships JSON file."""
-    rel_file = Path(data_dir) / str(season) / f"relationships_{weight}.json"
+    rel_file = Path(relationships_dir) / str(season) / f"relationships_{weight}.json"
     
     if not rel_file.exists():
         raise FileNotFoundError(f"Relationships file not found: {rel_file}")
@@ -403,7 +403,8 @@ def build_matrix(
 def generate_public_matrix(
     season: int,
     weight: int,
-    data_dir: str = "mt/rankings_data",
+    rankings_dir: str = "frontend/wrestledata-ui/public/data/rankings",
+    relationships_dir: str = "mt/rankings_data",
     output_dir: str = "frontend/wrestledata-ui/public/data/matrix",
     starters_only: bool = False
 ) -> Dict:
@@ -413,15 +414,16 @@ def generate_public_matrix(
     Args:
         season: Season year
         weight: Weight class
-        data_dir: Directory containing relationships and rankings files
+        rankings_dir: Directory containing rankings files
+        relationships_dir: Directory containing relationships files
         output_dir: Directory to save output files
         starters_only: If True, use rankings_starters files instead of rankings files
     
     Returns: The matrix data dictionary
     """
     # Load data
-    relationships_data = load_relationships(season, weight, data_dir)
-    rankings_data = load_rankings(season, weight, data_dir, starters_only)
+    relationships_data = load_relationships(season, weight, relationships_dir)
+    rankings_data = load_rankings(season, weight, rankings_dir, starters_only)
     
     # Build wrestler list (ordered by rank)
     # If starters_only, exclude all non-starters
@@ -479,9 +481,14 @@ def main():
         help='Weight class (e.g., 125). If not provided, processes all weight classes.'
     )
     parser.add_argument(
-        '-data-dir',
+        '-rankings-dir',
+        default='frontend/wrestledata-ui/public/data/rankings',
+        help='Directory containing rankings files (default: frontend/wrestledata-ui/public/data/rankings)'
+    )
+    parser.add_argument(
+        '-relationships-dir',
         default='mt/rankings_data',
-        help='Directory containing relationships and rankings files'
+        help='Directory containing relationships files (default: mt/rankings_data)'
     )
     parser.add_argument(
         '-output-dir',
@@ -510,7 +517,8 @@ def main():
             matrix_data = generate_public_matrix(
                 args.season,
                 weight,
-                args.data_dir,
+                args.rankings_dir,
+                args.relationships_dir,
                 args.output_dir,
                 args.starters_only
             )
