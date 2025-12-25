@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "1-2",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 7.33,
@@ -34,22 +34,12 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
-    "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34957115132",
-      "opponent_rank": 66,
-      "opponent_name": "Hunter Hohman",
-      "method": "Dec 7-3"
-    },
-    "worst_loss": {
-      "opponent_id": "34934123132",
-      "opponent_rank": 36,
-      "opponent_name": "Luca Augustine",
-      "method": "TF 20-5 0:00"
-    }
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -59,7 +49,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 174,
-      "opponent_rank": 1,
+      "opponent_rank": null,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -74,7 +64,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 174,
-      "opponent_rank": 36,
+      "opponent_rank": null,
       "result": "L",
       "method": "TF",
       "score": "20-5",
@@ -88,7 +78,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 47,
       "opponent_weight": 174,
-      "opponent_rank": 66,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-3",

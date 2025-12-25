@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-1",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 5.53,
@@ -34,22 +34,12 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 0,
+    "ranked_losses": 0,
     "top10_wins": 0,
-    "top10_losses": 1,
-    "win_over_highest_rank": {
-      "opponent_id": "34934029132",
-      "opponent_rank": 35,
-      "opponent_name": "Tristan Kemp",
-      "method": "Dec 7-3"
-    },
-    "worst_loss": {
-      "opponent_id": "34940702132",
-      "opponent_rank": 1,
-      "opponent_name": "Yonger Bastida",
-      "method": "TF 17-2 3:27"
-    }
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -59,7 +49,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 3,
       "opponent_weight": 285,
-      "opponent_rank": 1,
+      "opponent_rank": null,
       "result": "L",
       "method": "TF",
       "score": "17-2",
@@ -89,7 +79,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 285,
-      "opponent_rank": 35,
+      "opponent_rank": null,
       "result": "W",
       "method": "DEC",
       "score": "7-3",

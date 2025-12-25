@@ -663,7 +663,9 @@ def build_existing_match_keys(in_dir: str, season: str) -> Set[Tuple[str, str, s
 def main(season):
     in_dir = os.path.join("mt", "data_alias", season)
     out_dir = os.path.join("mt", "processed_data", season)
+    public_out_dir = os.path.join("frontend", "wrestledata-ui", "public", "data", "processed_data", season)
     os.makedirs(out_dir, exist_ok=True)
+    os.makedirs(public_out_dir, exist_ok=True)
 
     # Step 1: Build existing match keys from TrackWrestling files
     print("\n========== BUILDING DUPLICATE DETECTION INDEX ==========")
@@ -712,9 +714,19 @@ def main(season):
             total_files += 1
             input_path = os.path.join(in_dir, filename)
             output_path = os.path.join(out_dir, filename)
+            public_output_path = os.path.join(public_out_dir, filename)
             matches, scraper_errors, parse_errors, ws_added, ws_duplicates = process_file(
                 input_path, output_path, season, wrestlestat_matches_by_wrestler, existing_match_keys, added_wrestlestat_keys
             )
+            
+            # Also copy to public location for frontend access
+            try:
+                with open(output_path, "r") as f:
+                    data = json.load(f)
+                with open(public_output_path, "w") as f:
+                    json.dump(data, f, indent=2)
+            except Exception as e:
+                print(f"⚠️ Warning: Could not copy to public location {public_output_path}: {e}")
             
             total_matches += matches
             total_scraper_errors += scraper_errors
