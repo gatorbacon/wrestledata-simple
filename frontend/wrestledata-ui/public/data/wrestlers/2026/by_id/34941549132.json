@@ -8,21 +8,21 @@
   "year": 2026,
   "current_rank": 4,
   "record": {
-    "overall": "7-0",
-    "vs_ranked": "5-0",
+    "overall": "9-0",
+    "vs_ranked": "7-0",
     "vs_top10": "1-0",
     "vs_top25": "3-0"
   },
   "metrics": {
-    "pf7": 9.6,
-    "pa7": 3.4,
-    "pd7": 6.2,
-    "si_plus": 112.5,
-    "df_plus": 111.2,
-    "apr_plus": 111.7,
-    "pin_rate": 0.286,
-    "bonus_rate": 0.429,
-    "majors": 1,
+    "pf7": 10.14,
+    "pa7": 2.71,
+    "pd7": 7.43,
+    "si_plus": 115.1,
+    "df_plus": 111.9,
+    "apr_plus": 109.4,
+    "pin_rate": 0.222,
+    "bonus_rate": 0.556,
+    "majors": 3,
     "techs": 0,
     "pins": 2,
     "mat_value": {
@@ -34,7 +34,7 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 7,
     "ranked_losses": 0,
     "top10_wins": 1,
     "top10_losses": 0,
@@ -48,11 +48,39 @@
   },
   "match_list": [
     {
+      "date": "2025-12-21",
+      "opponent_id": "34950415132",
+      "opponent_name": "Dylan Ross",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 69,
+      "opponent_weight": 149,
+      "opponent_rank": 52,
+      "result": "W",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "vs. SIU Edwardsville"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34963121132",
+      "opponent_name": "Hunter Hollingsworth",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 23,
+      "opponent_weight": 149,
+      "opponent_rank": 29,
+      "result": "W",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "vs. SIU Edwardsville"
+    },
+    {
       "date": "2025-12-07",
       "opponent_id": "34937090132",
       "opponent_name": "Brady Hankin",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 56,
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "W",
@@ -67,7 +95,7 @@
       "opponent_id": "34964063132",
       "opponent_name": "Ethan Basile",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 30,
       "opponent_weight": 149,
       "opponent_rank": 47,
       "result": "W",
@@ -112,7 +140,7 @@
       "opponent_id": "34955726132",
       "opponent_name": "Sam Cartella",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 45,
       "opponent_weight": 149,
       "opponent_rank": 20,
       "result": "W",
@@ -127,7 +155,7 @@
       "opponent_id": "34943821132",
       "opponent_name": "Zac Cowan",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 59,
       "opponent_weight": 149,
       "opponent_rank": 67,
       "result": "W",
@@ -156,6 +184,6 @@
   "bonus": {
     "top33_wins": 3,
     "top33_bonus_ev_raw": 0.6666666666666666,
-    "top33_bonus_ev_shrunk": 0.587121212121212
+    "top33_bonus_ev_shrunk": 0.49621212121212116
   }
 }

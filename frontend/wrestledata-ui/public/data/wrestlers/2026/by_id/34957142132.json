@@ -3,23 +3,23 @@
   "name": "Teage Calvin",
   "team": "American",
   "team_slug": "american",
-  "team_rank": 48,
+  "team_rank": 47,
   "weight_class": 197,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "0-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 18.1,
-    "pd7": -18.1,
-    "si_plus": 87.9,
-    "df_plus": 88.2,
-    "apr_plus": 99.0,
+    "pf7": 4.23,
+    "pa7": 21.03,
+    "pd7": -16.81,
+    "si_plus": 102.9,
+    "df_plus": 82.6,
+    "apr_plus": 99.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -35,7 +35,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
@@ -48,11 +48,39 @@
   },
   "match_list": [
     {
+      "date": "2025-12-18",
+      "opponent_id": "34933980132",
+      "opponent_name": "Kael Wisler",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 55,
+      "opponent_weight": 197,
+      "opponent_rank": 24,
+      "result": "L",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "0:00",
+      "event": "vs. Michigan State"
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34957597132",
+      "opponent_name": "Branson John",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 197,
+      "opponent_rank": 11,
+      "result": "L",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "4:02",
+      "event": "vs. Maryland"
+    },
+    {
       "date": "2025-11-30",
       "opponent_id": "34935975132",
       "opponent_name": "Tucker Hogan",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 54,
       "opponent_weight": 197,
       "opponent_rank": 45,
       "result": "L",
@@ -66,6 +94,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.4
+    "top33_bonus_ev_shrunk": 0.0
   }
 }

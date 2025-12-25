@@ -3,26 +3,26 @@
   "name": "Cory Land",
   "team": "Northern Iowa",
   "team_slug": "northern_iowa",
-  "team_rank": 26,
+  "team_rank": 30,
   "weight_class": 141,
   "year": 2026,
   "current_rank": 11,
   "record": {
-    "overall": "8-1",
-    "vs_ranked": "4-1",
+    "overall": "9-1",
+    "vs_ranked": "5-1",
     "vs_top10": "0-1",
-    "vs_top25": "2-1"
+    "vs_top25": "3-1"
   },
   "metrics": {
-    "pf7": 8.44,
-    "pa7": 3.89,
-    "pd7": 4.56,
-    "si_plus": 111.3,
-    "df_plus": 106.9,
+    "pf7": 8.7,
+    "pa7": 3.5,
+    "pd7": 5.2,
+    "si_plus": 112.3,
+    "df_plus": 108.5,
     "apr_plus": 98.8,
     "pin_rate": 0.0,
-    "bonus_rate": 0.375,
-    "majors": 3,
+    "bonus_rate": 0.444,
+    "majors": 4,
     "techs": 0,
     "pins": 0,
     "mat_value": {
@@ -34,7 +34,7 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 5,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
@@ -53,11 +53,25 @@
   },
   "match_list": [
     {
+      "date": "2025-12-21",
+      "opponent_id": "34943158132",
+      "opponent_name": "Luke Simcox",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 44,
+      "opponent_weight": 141,
+      "opponent_rank": 20,
+      "result": "W",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "vs. Northern Iowa"
+    },
+    {
       "date": "2025-12-14",
       "opponent_id": "34943967132",
       "opponent_name": "Zeke Seltzer",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 18,
       "opponent_weight": 141,
       "opponent_rank": 23,
       "result": "W",
@@ -72,7 +86,7 @@
       "opponent_id": "34943970132",
       "opponent_name": "Easton Hilton",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 18,
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "W",
@@ -87,7 +101,7 @@
       "opponent_id": "34943969132",
       "opponent_name": "Owen Uhls",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 18,
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "W",
@@ -102,7 +116,7 @@
       "opponent_id": "34957805132",
       "opponent_name": "KJ Evans",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 56,
       "opponent_weight": 141,
       "opponent_rank": 69,
       "result": "W",
@@ -132,7 +146,7 @@
       "opponent_id": "34934623132",
       "opponent_name": "Michael Olson",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 75,
       "opponent_weight": 141,
       "opponent_rank": 48,
       "result": "W",
@@ -147,7 +161,7 @@
       "opponent_id": "34964395132",
       "opponent_name": "Josh Saunders",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 9,
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "W",
@@ -189,8 +203,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.10606060606060605
+    "top33_wins": 4,
+    "top33_bonus_ev_raw": 0.25,
+    "top33_bonus_ev_shrunk": 0.2222222222222222
   }
 }

@@ -3,13 +3,13 @@
   "name": "Matty Bianchi",
   "team": "Little Rock",
   "team_slug": "little_rock",
-  "team_rank": 12,
+  "team_rank": 14,
   "weight_class": 165,
   "year": 2026,
   "current_rank": 5,
   "record": {
-    "overall": "4-0",
-    "vs_ranked": "2-0",
+    "overall": "5-0",
+    "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "2-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 4.75,
     "pa7": 1.0,
     "pd7": 3.75,
-    "si_plus": 101.5,
+    "si_plus": 101.8,
     "df_plus": 117.0,
-    "apr_plus": 97.9,
+    "apr_plus": 98.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -48,11 +48,25 @@
   },
   "match_list": [
     {
+      "date": "2025-12-21",
+      "opponent_id": "34964390132",
+      "opponent_name": "Benny Rogers",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 9,
+      "opponent_weight": 157,
+      "opponent_rank": 37,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Dual Meet (WS-95989)"
+    },
+    {
       "date": "2025-12-07",
       "opponent_id": "34945836132",
       "opponent_name": "Tyler Lillard",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 33,
       "opponent_weight": 165,
       "opponent_rank": 13,
       "result": "W",
@@ -82,7 +96,7 @@
       "opponent_id": "34952080132",
       "opponent_name": "Braeden Scoles",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 10,
       "opponent_weight": 165,
       "opponent_rank": 20,
       "result": "W",
@@ -97,7 +111,7 @@
       "opponent_id": "34943965132",
       "opponent_name": "Joel Mylin",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 18,
       "opponent_weight": 165,
       "opponent_rank": null,
       "result": "W",
@@ -111,6 +125,6 @@
   "bonus": {
     "top33_wins": 2,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.40952380952380957
+    "top33_bonus_ev_shrunk": 0.45
   }
 }

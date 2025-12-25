@@ -3,23 +3,23 @@
   "name": "Joshua Medina",
   "team": "Bellarmine",
   "team_slug": "bellarmine",
-  "team_rank": 60,
-  "weight_class": 149,
+  "team_rank": 59,
+  "weight_class": 133,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 102.8,
-    "df_plus": 103.0,
-    "apr_plus": 113.8,
+    "pf7": 3.0,
+    "pa7": 13.0,
+    "pd7": -10.0,
+    "si_plus": 86.0,
+    "df_plus": 93.5,
+    "apr_plus": 103.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,16 +28,50 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34944029132",
+      "opponent_rank": 54,
+      "opponent_name": "Nick Molchak",
+      "method": "MD 11-2"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34938685132",
+      "opponent_name": "Aiden Beimel",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 67,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "15-4",
+      "duration": "7:00",
+      "event": "Kent State Open 2"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34944029132",
+      "opponent_name": "Nick Molchak",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 133,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Kent State Open 2"
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
+    "top33_bonus_ev_shrunk": 0.25
   }
 }

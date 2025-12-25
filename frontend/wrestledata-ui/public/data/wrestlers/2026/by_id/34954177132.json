@@ -3,23 +3,23 @@
   "name": "Bryce manera",
   "team": "Bucknell",
   "team_slug": "bucknell",
-  "team_rank": 29,
+  "team_rank": 37,
   "weight_class": 133,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "3-3",
-    "vs_ranked": "1-0",
+    "overall": "3-4",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 6.8,
-    "pa7": 8.2,
-    "pd7": -1.4,
-    "si_plus": 102.1,
-    "df_plus": 99.5,
-    "apr_plus": 110.9,
+    "pf7": 5.67,
+    "pa7": 8.67,
+    "pd7": -3.0,
+    "si_plus": 97.1,
+    "df_plus": 98.8,
+    "apr_plus": 104.8,
     "pin_rate": 0.333,
     "bonus_rate": 0.667,
     "majors": 1,
@@ -35,7 +35,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -44,15 +44,34 @@
       "opponent_name": "Hunter Heflin",
       "method": "Dec 12-5"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34937680132",
+      "opponent_rank": 51,
+      "opponent_name": "Gauge Shipp",
+      "method": "MD 11-0"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34937680132",
+      "opponent_name": "Gauge Shipp",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 70,
+      "opponent_weight": 133,
+      "opponent_rank": 51,
+      "result": "L",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "vs. Hofstra"
+    },
     {
       "date": "2025-11-30",
       "opponent_id": "34957138132",
       "opponent_name": "Ellis Kirsch",
       "opponent_team": "American",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 47,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "L",
@@ -67,7 +86,7 @@
       "opponent_id": "34935957132",
       "opponent_name": "Sean Logue",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 54,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -82,7 +101,7 @@
       "opponent_id": "34957138132",
       "opponent_name": "Ellis Kirsch",
       "opponent_team": "American",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 47,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -97,7 +116,7 @@
       "opponent_id": "34946737132",
       "opponent_name": "Logan Alexander",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 12,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "L",
@@ -112,7 +131,7 @@
       "opponent_id": "34939067132",
       "opponent_name": "Hunter Heflin",
       "opponent_team": "Navy",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 34,
       "opponent_weight": 133,
       "opponent_rank": 65,
       "result": "W",
@@ -127,7 +146,7 @@
       "opponent_id": "34934824132",
       "opponent_name": "D`Amani Almodovar",
       "opponent_team": "Rider",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 40,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "L",
@@ -141,6 +160,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
+    "top33_bonus_ev_shrunk": 0.25
   }
 }

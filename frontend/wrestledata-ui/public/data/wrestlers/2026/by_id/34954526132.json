@@ -3,23 +3,23 @@
   "name": "Alex Schweitzer",
   "team": "Presbyterian",
   "team_slug": "presbyterian",
-  "team_rank": 75,
+  "team_rank": 76,
   "weight_class": 141,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-2",
+    "overall": "0-3",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 1.4,
+    "pf7": 5.09,
     "pa7": 25.0,
-    "pd7": -23.6,
-    "si_plus": 84.7,
-    "df_plus": 70.8,
-    "apr_plus": 97.0,
+    "pd7": -19.91,
+    "si_plus": 87.6,
+    "df_plus": 67.1,
+    "apr_plus": 95.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -43,11 +43,25 @@
   },
   "match_list": [
     {
+      "date": "2025-12-18",
+      "opponent_id": "34934464132",
+      "opponent_name": "Ejiro Montoya",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 32,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "22-6",
+      "duration": "4:47",
+      "event": "vs. Presbyterian"
+    },
+    {
       "date": "2025-11-23",
       "opponent_id": "34939072132",
       "opponent_name": "Charleston Baglio",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 52,
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "L",
@@ -62,7 +76,7 @@
       "opponent_id": "34943436132",
       "opponent_name": "Talon Maple",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 41,
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "L",
@@ -76,6 +90,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.375
+    "top33_bonus_ev_shrunk": 0.0
   }
 }

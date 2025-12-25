@@ -3,26 +3,26 @@
   "name": "Bryce Phillips",
   "team": "Morgan State",
   "team_slug": "morgan_state",
-  "team_rank": 73,
+  "team_rank": 74,
   "weight_class": 184,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-3",
+    "overall": "1-4",
     "vs_ranked": "0-3",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 16.0,
-    "pd7": -16.0,
-    "si_plus": 78.1,
-    "df_plus": 86.5,
-    "apr_plus": 98.6,
+    "pf7": 5.5,
+    "pa7": 9.5,
+    "pd7": -4.0,
+    "si_plus": 89.5,
+    "df_plus": 95.8,
+    "apr_plus": 98.4,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "bonus_rate": 1.0,
+    "majors": 1,
     "techs": 0,
     "pins": 0,
     "mat_value": {
@@ -49,6 +49,20 @@
   "match_list": [
     {
       "date": "2025-12-07",
+      "opponent_id": "34935900132",
+      "opponent_name": "Marc Koch",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 68,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Morgan State"
+    },
+    {
+      "date": "2025-12-07",
       "opponent_id": "34945126132",
       "opponent_name": "Don Cates",
       "opponent_team": "NC State",
@@ -63,11 +77,25 @@
       "mv_impact": -7.45
     },
     {
+      "date": "2025-11-21",
+      "opponent_id": "34957647132",
+      "opponent_name": "Seth Digby",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "vs. Morgan State"
+    },
+    {
       "date": "2025-11-15",
       "opponent_id": "34971901132",
       "opponent_name": "Ethan Wilson",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 42,
       "opponent_weight": 184,
       "opponent_rank": 72,
       "result": "L",
@@ -95,6 +123,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
+    "top33_bonus_ev_shrunk": 0.2222222222222222
   }
 }

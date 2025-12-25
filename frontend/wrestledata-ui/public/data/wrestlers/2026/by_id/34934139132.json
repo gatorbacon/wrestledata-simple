@@ -3,27 +3,27 @@
   "name": "Chase Kranitz",
   "team": "Pittsburgh",
   "team_slug": "pittsburgh",
-  "team_rank": 33,
+  "team_rank": 35,
   "weight_class": 184,
   "year": 2026,
   "current_rank": 38,
   "record": {
-    "overall": "3-2",
-    "vs_ranked": "2-1",
+    "overall": "4-4",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 6.0,
-    "pa7": 6.5,
-    "pd7": -0.5,
-    "si_plus": 106.4,
-    "df_plus": 103.6,
-    "apr_plus": 96.0,
+    "pa7": 5.29,
+    "pd7": 0.71,
+    "si_plus": 101.7,
+    "df_plus": 107.6,
+    "apr_plus": 97.3,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "bonus_rate": 0.25,
     "majors": 0,
-    "techs": 0,
+    "techs": 1,
     "pins": 0,
     "mat_value": {
       "mv_avg": -0.125,
@@ -35,7 +35,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 1,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -53,11 +53,39 @@
   },
   "match_list": [
     {
+      "date": "2025-12-20",
+      "opponent_id": "34951033132",
+      "opponent_name": "Jared McGill",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 184,
+      "opponent_rank": 20,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34957647132",
+      "opponent_name": "Seth Digby",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh"
+    },
+    {
       "date": "2025-12-07",
       "opponent_id": "34954160132",
       "opponent_name": "Tyler Bienus",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 37,
       "opponent_weight": 184,
       "opponent_rank": 43,
       "result": "W",
@@ -68,12 +96,26 @@
       "mv_impact": 2.74
     },
     {
+      "date": "2025-12-05",
+      "opponent_id": "34952693132",
+      "opponent_name": "Rylan Rogers",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 13,
+      "opponent_weight": 184,
+      "opponent_rank": 25,
+      "result": "L",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh"
+    },
+    {
       "date": "2025-11-21",
       "opponent_id": "34962159132",
       "opponent_name": "Gabe Arnold",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 3,
-      "opponent_weight": 184,
+      "opponent_team_rank": 4,
+      "opponent_weight": 197,
       "opponent_rank": null,
       "result": "L",
       "method": "MD",
@@ -102,7 +144,7 @@
       "opponent_id": "34952973132",
       "opponent_name": "Marcus Petite",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 48,
       "opponent_weight": 184,
       "opponent_rank": 50,
       "result": "W",
@@ -117,7 +159,7 @@
       "opponent_id": "34939048132",
       "opponent_name": "Daniel Williams",
       "opponent_team": "Navy",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 34,
       "opponent_weight": 184,
       "opponent_rank": null,
       "result": "W",
@@ -131,6 +173,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
+    "top33_bonus_ev_shrunk": 0.2222222222222222
   }
 }

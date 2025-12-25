@@ -3,7 +3,7 @@
   "name": "gino manta",
   "team": "Hofstra",
   "team_slug": "hofstra",
-  "team_rank": 69,
+  "team_rank": 70,
   "weight_class": 133,
   "year": 2026,
   "current_rank": null,
@@ -17,9 +17,9 @@
     "pf7": 3.0,
     "pa7": 15.0,
     "pd7": -12.0,
-    "si_plus": 88.7,
+    "si_plus": 88.3,
     "df_plus": 90.7,
-    "apr_plus": 123.7,
+    "apr_plus": 124.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -44,6 +44,21 @@
   "match_list": [
     {
       "date": "2025-11-09",
+      "opponent_id": "34950420132",
+      "opponent_name": "Spencer Von Savoye",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 69,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:24",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 1.71
+    },
+    {
+      "date": "2025-11-09",
       "opponent_id": "34934396132",
       "opponent_name": "Devin Ryan",
       "opponent_team": "Army West Point",
@@ -59,25 +74,10 @@
     },
     {
       "date": "2025-11-09",
-      "opponent_id": "34950420132",
-      "opponent_name": "Spencer Von Savoye",
-      "opponent_team": "Duke",
-      "opponent_team_rank": 68,
-      "opponent_weight": 133,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:24",
-      "event": "2025 Journeymen Collegiate Classic",
-      "mv_impact": 1.71
-    },
-    {
-      "date": "2025-11-09",
       "opponent_id": "34949060132",
       "opponent_name": "Anthony Samuels",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 77,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -92,7 +92,7 @@
       "opponent_id": "34953893132",
       "opponent_name": "Jared Chuquilin",
       "opponent_team": "LIU",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 72,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "L",
@@ -106,6 +106,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
+    "top33_bonus_ev_shrunk": 0.25
   }
 }

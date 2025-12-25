@@ -8,21 +8,21 @@
   "year": 2026,
   "current_rank": 27,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "3-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 7.5,
-    "pa7": 3.5,
-    "pd7": 4.0,
-    "si_plus": 109.8,
-    "df_plus": 109.2,
-    "apr_plus": 99.4,
+    "pf7": 8.25,
+    "pa7": 7.5,
+    "pd7": 0.75,
+    "si_plus": 111.3,
+    "df_plus": 103.7,
+    "apr_plus": 98.7,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "bonus_rate": 0.333,
+    "majors": 1,
     "techs": 0,
     "pins": 0,
     "mat_value": {
@@ -34,25 +34,58 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34939062132",
       "opponent_rank": 33,
       "opponent_name": "Zyan Hall",
       "method": "Dec 8-6"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34963117132",
+      "opponent_rank": 6,
+      "opponent_name": "DJ Parker",
+      "method": "MD 16-3"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "34971903132",
+      "opponent_name": "Ibrahim Ameer",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 42,
+      "opponent_weight": 197,
+      "opponent_rank": 41,
+      "result": "W",
+      "method": "MD",
+      "score": "15-7",
+      "duration": "7:00",
+      "event": "vs. Rutgers"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34963117132",
+      "opponent_name": "DJ Parker",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 23,
+      "opponent_weight": 197,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "MD",
+      "score": "16-3",
+      "duration": "7:00",
+      "event": "vs. Rutgers"
+    },
     {
       "date": "2025-11-08",
       "opponent_id": "34939062132",
       "opponent_name": "Zyan Hall",
       "opponent_team": "Navy",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 34,
       "opponent_weight": 197,
       "opponent_rank": 33,
       "result": "W",
@@ -67,7 +100,7 @@
       "opponent_id": "34936199132",
       "opponent_name": "Coy Raines",
       "opponent_team": "Bloomsburg",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 61,
       "opponent_weight": 197,
       "opponent_rank": null,
       "result": "W",
@@ -81,6 +114,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.42592592592592593
+    "top33_bonus_ev_shrunk": 0.275
   }
 }

@@ -3,27 +3,27 @@
   "name": "Evan Tallmadge",
   "team": "Pittsburgh",
   "team_slug": "pittsburgh",
-  "team_rank": 33,
+  "team_rank": 35,
   "weight_class": 133,
   "year": 2026,
   "current_rank": 27,
   "record": {
-    "overall": "6-3",
-    "vs_ranked": "3-2",
+    "overall": "8-4",
+    "vs_ranked": "3-3",
     "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 8.98,
-    "pa7": 4.39,
-    "pd7": 4.59,
-    "si_plus": 109.0,
-    "df_plus": 106.3,
-    "apr_plus": 96.9,
+    "pf7": 9.51,
+    "pa7": 4.45,
+    "pd7": 5.05,
+    "si_plus": 107.4,
+    "df_plus": 106.6,
+    "apr_plus": 96.4,
     "pin_rate": 0.0,
-    "bonus_rate": 0.333,
+    "bonus_rate": 0.375,
     "majors": 0,
-    "techs": 2,
+    "techs": 3,
     "pins": 0,
     "mat_value": {
       "mv_avg": 1.461,
@@ -35,7 +35,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -45,19 +45,47 @@
       "method": "Dec 7-2"
     },
     "worst_loss": {
-      "opponent_id": "34935618132",
-      "opponent_rank": 15,
-      "opponent_name": "Jacob Van Dee",
-      "method": "Dec 10-3"
+      "opponent_id": "34957585132",
+      "opponent_rank": 22,
+      "opponent_name": "Braxton Brown",
+      "method": "Dec 4-1"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34951040132",
+      "opponent_name": "Landon Bainey",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "5:43",
+      "event": "vs. Pittsburgh"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34957585132",
+      "opponent_name": "Braxton Brown",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 133,
+      "opponent_rank": 22,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34954167132",
       "opponent_name": "Blue Stiffler",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 37,
       "opponent_weight": 133,
       "opponent_rank": 55,
       "result": "W",
@@ -68,11 +96,25 @@
       "mv_impact": 2.95
     },
     {
+      "date": "2025-12-05",
+      "opponent_id": "34952698132",
+      "opponent_name": "Mason Ziegler",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 13,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-5",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh"
+    },
+    {
       "date": "2025-11-21",
       "opponent_id": "34962153132",
       "opponent_name": "Drake Ayala",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 4,
       "opponent_weight": 133,
       "opponent_rank": 4,
       "result": "L",
@@ -102,7 +144,7 @@
       "opponent_id": "34952955132",
       "opponent_name": "Caden Barrientos",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 48,
       "opponent_weight": 125,
       "opponent_rank": 70,
       "result": "W",
@@ -117,7 +159,7 @@
       "opponent_id": "34957103132",
       "opponent_name": "Maximilian Leete",
       "opponent_team": "American",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 47,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "L",
@@ -132,7 +174,7 @@
       "opponent_id": "34947835132",
       "opponent_name": "Gavin Sheridan",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 60,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -162,7 +204,7 @@
       "opponent_id": "34955042132",
       "opponent_name": "Kyle Montaperto",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 50,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -177,7 +219,7 @@
       "opponent_id": "34939056132",
       "opponent_name": "Brendan Ferretti",
       "opponent_team": "Navy",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 34,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -191,6 +233,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.18518518518518517
+    "top33_bonus_ev_shrunk": 0.2962962962962963
   }
 }

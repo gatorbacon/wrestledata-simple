@@ -4,22 +4,22 @@
   "team": "Arizona State",
   "team_slug": "arizona_state",
   "team_rank": 11,
-  "weight_class": 157,
+  "weight_class": 149,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "pf7": 8.71,
+    "pa7": 25.0,
+    "pd7": -16.29,
+    "si_plus": 110.1,
+    "df_plus": 84.3,
+    "apr_plus": 98.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,16 +28,36 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34944675132",
+      "opponent_rank": 45,
+      "opponent_name": "Joseph Zargo",
+      "method": "TF 21-5 4:01"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34944675132",
+      "opponent_name": "Joseph Zargo",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 27,
+      "opponent_weight": 149,
+      "opponent_rank": 45,
+      "result": "L",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "4:01",
+      "event": "vs. Wisconsin"
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
+    "top33_bonus_ev_shrunk": 0.5
   }
 }

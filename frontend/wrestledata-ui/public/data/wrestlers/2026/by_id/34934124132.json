@@ -3,25 +3,25 @@
   "name": "Jared Keslar",
   "team": "Pittsburgh",
   "team_slug": "pittsburgh",
-  "team_rank": 33,
+  "team_rank": 35,
   "weight_class": 165,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "6-2",
-    "vs_ranked": "2-2",
-    "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "overall": "7-4",
+    "vs_ranked": "3-4",
+    "vs_top10": "0-2",
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 6.09,
-    "pa7": 4.61,
-    "pd7": 1.48,
-    "si_plus": 99.6,
+    "pf7": 5.97,
+    "pa7": 5.17,
+    "pd7": 0.8,
+    "si_plus": 100.7,
     "df_plus": 107.3,
-    "apr_plus": 97.1,
+    "apr_plus": 96.3,
     "pin_rate": 0.0,
-    "bonus_rate": 0.333,
+    "bonus_rate": 0.286,
     "majors": 2,
     "techs": 0,
     "pins": 0,
@@ -34,10 +34,10 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "34939063132",
       "opponent_rank": 32,
@@ -45,19 +45,47 @@
       "method": "SV-3 2-1"
     },
     "worst_loss": {
-      "opponent_id": "34954152132",
-      "opponent_rank": 14,
-      "opponent_name": "Noah Mulvaney",
-      "method": "MD 10-1"
+      "opponent_id": "34951026132",
+      "opponent_rank": 34,
+      "opponent_name": "Ryan Burgos",
+      "method": "Dec 6-5"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34951026132",
+      "opponent_name": "Ryan Burgos",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 165,
+      "opponent_rank": 34,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34957598132",
+      "opponent_name": "Alex Uryniak",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 165,
+      "opponent_rank": 62,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-7",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34954152132",
       "opponent_name": "Noah Mulvaney",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 37,
       "opponent_weight": 165,
       "opponent_rank": 14,
       "result": "L",
@@ -68,11 +96,25 @@
       "mv_impact": -1.89
     },
     {
+      "date": "2025-12-05",
+      "opponent_id": "34952670132",
+      "opponent_name": "Max Brignola",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 13,
+      "opponent_weight": 165,
+      "opponent_rank": 10,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh"
+    },
+    {
       "date": "2025-11-15",
       "opponent_id": "34954180132",
       "opponent_name": "shane McFillin",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 37,
       "opponent_weight": 165,
       "opponent_rank": null,
       "result": "W",
@@ -87,7 +129,7 @@
       "opponent_id": "34971910132",
       "opponent_name": "Ty Borkowski",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 42,
       "opponent_weight": 165,
       "opponent_rank": null,
       "result": "W",
@@ -102,7 +144,7 @@
       "opponent_id": "34935960132",
       "opponent_name": "J.T. Hogan",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 54,
       "opponent_weight": 165,
       "opponent_rank": null,
       "result": "W",
@@ -117,7 +159,7 @@
       "opponent_id": "34947812132",
       "opponent_name": "Marco Albanese",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 60,
       "opponent_weight": 165,
       "opponent_rank": 72,
       "result": "W",
@@ -132,7 +174,7 @@
       "opponent_id": "34971897132",
       "opponent_name": "Dom Findora",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 42,
       "opponent_weight": 165,
       "opponent_rank": null,
       "result": "W",
@@ -147,7 +189,7 @@
       "opponent_id": "34939063132",
       "opponent_name": "Dylan Elmore",
       "opponent_team": "Navy",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 34,
       "opponent_weight": 165,
       "opponent_rank": 32,
       "result": "W",
@@ -176,6 +218,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.28787878787878785
+    "top33_bonus_ev_shrunk": 0.0
   }
 }

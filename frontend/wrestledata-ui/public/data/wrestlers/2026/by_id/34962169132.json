@@ -3,27 +3,27 @@
   "name": "Angelo Ferrari",
   "team": "Iowa",
   "team_slug": "iowa",
-  "team_rank": 3,
+  "team_rank": 4,
   "weight_class": 184,
   "year": 2026,
   "current_rank": 1,
   "record": {
-    "overall": "6-0",
-    "vs_ranked": "6-0",
+    "overall": "8-0",
+    "vs_ranked": "8-0",
     "vs_top10": "2-0",
     "vs_top25": "5-0"
   },
   "metrics": {
-    "pf7": 6.42,
-    "pa7": 2.21,
-    "pd7": 4.21,
-    "si_plus": 104.9,
-    "df_plus": 116.7,
-    "apr_plus": 98.7,
+    "pf7": 8.44,
+    "pa7": 2.52,
+    "pd7": 5.92,
+    "si_plus": 110.2,
+    "df_plus": 114.9,
+    "apr_plus": 99.1,
     "pin_rate": 0.0,
-    "bonus_rate": 0.167,
+    "bonus_rate": 0.25,
     "majors": 0,
-    "techs": 1,
+    "techs": 2,
     "pins": 0,
     "mat_value": {
       "mv_avg": 4.908,
@@ -34,7 +34,7 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
+    "ranked_wins": 8,
     "ranked_losses": 0,
     "top10_wins": 2,
     "top10_losses": 0,
@@ -48,11 +48,39 @@
   },
   "match_list": [
     {
+      "date": "2025-12-12",
+      "opponent_id": "34935437132",
+      "opponent_name": "Landon Jones",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 66,
+      "opponent_weight": 184,
+      "opponent_rank": 48,
+      "result": "W",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "4:45",
+      "event": "vs. Iowa"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34943283132",
+      "opponent_name": "Caleb Uhlenhopp",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 31,
+      "opponent_weight": 184,
+      "opponent_rank": 32,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "vs. Utah Valley"
+    },
+    {
       "date": "2025-11-30",
       "opponent_id": "34940807132",
       "opponent_name": "Isaac Dean",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 3,
       "opponent_weight": 184,
       "opponent_rank": 13,
       "result": "W",
@@ -82,7 +110,7 @@
       "opponent_id": "34952078132",
       "opponent_name": "Chris Moore",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 10,
       "opponent_weight": 184,
       "opponent_rank": 21,
       "result": "W",
@@ -97,7 +125,7 @@
       "opponent_id": "34943978132",
       "opponent_name": "Aeoden Sinclair",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 18,
       "opponent_weight": 184,
       "opponent_rank": 2,
       "result": "W",
@@ -127,7 +155,7 @@
       "opponent_id": "34943915132",
       "opponent_name": "Gavin Ricketts",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 59,
       "opponent_weight": 184,
       "opponent_rank": 65,
       "result": "W",
@@ -139,8 +167,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 5,
+    "top33_wins": 6,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.17564102564102563
+    "top33_bonus_ev_shrunk": 0.1630952380952381
   }
 }

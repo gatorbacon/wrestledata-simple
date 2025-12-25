@@ -3,23 +3,23 @@
   "name": "Bekhruz Sadriddinov",
   "team": "Lehigh",
   "team_slug": "lehigh",
-  "team_rank": 16,
+  "team_rank": 13,
   "weight_class": 174,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "1-1",
+    "overall": "3-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 8.5,
-    "pa7": 4.5,
-    "pd7": 4.0,
-    "si_plus": 105.6,
-    "df_plus": 108.4,
-    "apr_plus": 97.4,
+    "pf7": 7.33,
+    "pa7": 9.67,
+    "pd7": -2.33,
+    "si_plus": 104.6,
+    "df_plus": 96.1,
+    "apr_plus": 97.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -35,7 +35,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -45,10 +45,10 @@
       "method": "Dec 7-3"
     },
     "worst_loss": {
-      "opponent_id": "34939016132",
-      "opponent_rank": 1,
-      "opponent_name": "Levi Haines",
-      "method": "Fall 2:15"
+      "opponent_id": "34934123132",
+      "opponent_rank": 36,
+      "opponent_name": "Luca Augustine",
+      "method": "TF 20-5 0:00"
     }
   },
   "match_list": [
@@ -68,11 +68,25 @@
       "mv_impact": -2.73
     },
     {
+      "date": "2025-12-05",
+      "opponent_id": "34934123132",
+      "opponent_name": "Luca Augustine",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 35,
+      "opponent_weight": 174,
+      "opponent_rank": 36,
+      "result": "L",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "0:00",
+      "event": "vs. Pittsburgh"
+    },
+    {
       "date": "2025-11-30",
       "opponent_id": "34957115132",
       "opponent_name": "Hunter Hohman",
       "opponent_team": "American",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 47,
       "opponent_weight": 174,
       "opponent_rank": 66,
       "result": "W",
@@ -87,7 +101,7 @@
       "opponent_id": "34952690132",
       "opponent_name": "Richie Grungo",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 13,
       "opponent_weight": 174,
       "opponent_rank": null,
       "result": "W",
@@ -101,7 +115,7 @@
       "opponent_id": "34955744132",
       "opponent_name": "Brady Collins",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 13,
       "opponent_weight": 174,
       "opponent_rank": null,
       "result": "W",

@@ -3,25 +3,25 @@
   "name": "Sheldon Seymour",
   "team": "Lehigh",
   "team_slug": "lehigh",
-  "team_rank": 16,
+  "team_rank": 13,
   "weight_class": 125,
   "year": 2026,
   "current_rank": 6,
   "record": {
-    "overall": "5-0",
-    "vs_ranked": "3-0",
+    "overall": "8-0",
+    "vs_ranked": "6-0",
     "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "vs_top25": "3-0"
   },
   "metrics": {
-    "pf7": 6.67,
-    "pa7": 2.33,
-    "pd7": 4.33,
-    "si_plus": 107.0,
-    "df_plus": 113.3,
-    "apr_plus": 109.5,
-    "pin_rate": 0.4,
-    "bonus_rate": 0.4,
+    "pf7": 7.33,
+    "pa7": 3.33,
+    "pd7": 4.0,
+    "si_plus": 111.2,
+    "df_plus": 111.3,
+    "apr_plus": 104.2,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.25,
     "majors": 0,
     "techs": 0,
     "pins": 2,
@@ -34,19 +34,61 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 6,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34952107132",
-      "opponent_rank": 22,
-      "opponent_name": "Spencer Moore",
-      "method": "Dec 7-2"
+      "opponent_id": "34940838132",
+      "opponent_rank": 16,
+      "opponent_name": "Stevo Poulin",
+      "method": "Dec 9-6"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34952107132",
+      "opponent_name": "Spencer Moore",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 10,
+      "opponent_weight": 125,
+      "opponent_rank": 22,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Lehigh"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34940838132",
+      "opponent_name": "Stevo Poulin",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 3,
+      "opponent_weight": 125,
+      "opponent_rank": 16,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "7:00",
+      "event": "vs. Lehigh"
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34934133132",
+      "opponent_name": "Tyler Chappell",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 35,
+      "opponent_weight": 125,
+      "opponent_rank": 46,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "vs. Pittsburgh"
+    },
     {
       "date": "2025-11-15",
       "opponent_id": "34944577132",
@@ -67,7 +109,7 @@
       "opponent_id": "34952107132",
       "opponent_name": "Spencer Moore",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 10,
       "opponent_weight": 125,
       "opponent_rank": 22,
       "result": "W",
@@ -97,8 +139,8 @@
       "opponent_id": "34950418132",
       "opponent_name": "Riley Rowan",
       "opponent_team": "Duke",
-      "opponent_team_rank": 68,
-      "opponent_weight": 125,
+      "opponent_team_rank": 69,
+      "opponent_weight": 133,
       "opponent_rank": 75,
       "result": "W",
       "method": "FALL",
@@ -112,7 +154,7 @@
       "opponent_id": "34955043132",
       "opponent_name": "Keyveon Roller",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 50,
       "opponent_weight": 125,
       "opponent_rank": 44,
       "result": "W",
@@ -124,8 +166,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 1,
+    "top33_wins": 3,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.3148148148148148
+    "top33_bonus_ev_shrunk": 0.19393939393939394
   }
 }

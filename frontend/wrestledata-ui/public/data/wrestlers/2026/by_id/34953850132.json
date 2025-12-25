@@ -3,23 +3,23 @@
   "name": "Chris Betancourt",
   "team": "LIU",
   "team_slug": "liu",
-  "team_rank": 71,
+  "team_rank": 72,
   "weight_class": 133,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "4-3",
-    "vs_ranked": "1-1",
+    "overall": "3-3",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 4.4,
-    "pa7": 7.17,
-    "pd7": -2.76,
-    "si_plus": 92.4,
-    "df_plus": 100.6,
-    "apr_plus": 97.6,
+    "pf7": 4.28,
+    "pa7": 8.6,
+    "pd7": -4.32,
+    "si_plus": 90.7,
+    "df_plus": 99.0,
+    "apr_plus": 97.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,16 +34,11 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "34935052132",
-      "opponent_rank": 74,
-      "opponent_name": "William Morrow",
-      "method": "Dec 5-0"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34939067132",
       "opponent_rank": 65,
@@ -52,21 +47,6 @@
     }
   },
   "match_list": [
-    {
-      "date": "2025-12-09",
-      "opponent_id": "34935052132",
-      "opponent_name": "William Morrow",
-      "opponent_team": "Bloomsburg",
-      "opponent_team_rank": 62,
-      "opponent_weight": 157,
-      "opponent_rank": 74,
-      "result": "W",
-      "method": "DEC",
-      "score": "5-0",
-      "duration": "7:00",
-      "event": "vs. Bloomsburg",
-      "mv_impact": 1.4
-    },
     {
       "date": "2025-11-16",
       "opponent_id": "34934403132",
@@ -102,7 +82,7 @@
       "opponent_id": "34947838132",
       "opponent_name": "Jacob Hanlon",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 60,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "L",
@@ -117,7 +97,7 @@
       "opponent_id": "34947835132",
       "opponent_name": "Gavin Sheridan",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 60,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -132,7 +112,7 @@
       "opponent_id": "34938651132",
       "opponent_name": "Dylan Kadish",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 67,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -147,7 +127,7 @@
       "opponent_id": "34939067132",
       "opponent_name": "Hunter Heflin",
       "opponent_team": "Navy",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 34,
       "opponent_weight": 133,
       "opponent_rank": 65,
       "result": "L",
@@ -161,6 +141,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
+    "top33_bonus_ev_shrunk": 0.25
   }
 }

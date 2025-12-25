@@ -3,23 +3,23 @@
   "name": "Anthony Echemendia",
   "team": "Iowa State",
   "team_slug": "iowa_state",
-  "team_rank": 4,
+  "team_rank": 3,
   "weight_class": 141,
   "year": 2026,
   "current_rank": 5,
   "record": {
-    "overall": "8-0",
-    "vs_ranked": "7-0",
-    "vs_top10": "2-0",
-    "vs_top25": "4-0"
+    "overall": "8-1",
+    "vs_ranked": "7-1",
+    "vs_top10": "2-1",
+    "vs_top25": "4-1"
   },
   "metrics": {
-    "pf7": 15.0,
-    "pa7": 3.16,
-    "pd7": 11.84,
-    "si_plus": 126.2,
-    "df_plus": 110.7,
-    "apr_plus": 109.1,
+    "pf7": 13.25,
+    "pa7": 3.39,
+    "pd7": 9.86,
+    "si_plus": 120.6,
+    "df_plus": 111.9,
+    "apr_plus": 107.5,
     "pin_rate": 0.125,
     "bonus_rate": 0.75,
     "majors": 3,
@@ -35,24 +35,43 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 7,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 2,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34962192132",
       "opponent_rank": 7,
       "opponent_name": "Nasir Bailey",
       "method": "MD 15-2"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34941780132",
+      "opponent_rank": 1,
+      "opponent_name": "Jesse Mendez",
+      "method": "Dec 5-1"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34941780132",
+      "opponent_name": "Jesse Mendez",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 141,
+      "opponent_rank": 1,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Dual Meet (WS-96377)"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34962139132",
       "opponent_name": "Santino Sanchez",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 63,
       "opponent_weight": 141,
       "opponent_rank": 53,
       "result": "W",
@@ -67,7 +86,7 @@
       "opponent_id": "34936032132",
       "opponent_name": "Elijah Griffin",
       "opponent_team": "Rider",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 40,
       "opponent_weight": 141,
       "opponent_rank": 14,
       "result": "W",
@@ -82,7 +101,7 @@
       "opponent_id": "34943443132",
       "opponent_name": "Jack Consiglio",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 22,
       "opponent_weight": 141,
       "opponent_rank": 17,
       "result": "W",
@@ -97,7 +116,7 @@
       "opponent_id": "34943278132",
       "opponent_name": "Haiden Drury",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 31,
       "opponent_weight": 141,
       "opponent_rank": 8,
       "result": "W",
@@ -127,7 +146,7 @@
       "opponent_id": "34962192132",
       "opponent_name": "Nasir Bailey",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 4,
       "opponent_weight": 141,
       "opponent_rank": 7,
       "result": "W",
@@ -142,7 +161,7 @@
       "opponent_id": "34950683132",
       "opponent_name": "Richie Clementi",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 64,
       "opponent_weight": 141,
       "opponent_rank": 51,
       "result": "W",
@@ -171,6 +190,6 @@
   "bonus": {
     "top33_wins": 4,
     "top33_bonus_ev_raw": 0.5,
-    "top33_bonus_ev_shrunk": 0.4583333333333333
+    "top33_bonus_ev_shrunk": 0.46249999999999997
   }
 }

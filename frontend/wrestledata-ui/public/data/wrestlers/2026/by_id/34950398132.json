@@ -3,26 +3,26 @@
   "name": "Connor Barket",
   "team": "Duke",
   "team_slug": "duke",
-  "team_rank": 68,
+  "team_rank": 69,
   "weight_class": 285,
   "year": 2026,
   "current_rank": 22,
   "record": {
-    "overall": "7-0",
-    "vs_ranked": "5-0",
+    "overall": "9-1",
+    "vs_ranked": "6-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 19.46,
-    "pa7": 4.72,
-    "pd7": 14.73,
-    "si_plus": 132.3,
-    "df_plus": 105.5,
-    "apr_plus": 100.7,
-    "pin_rate": 0.143,
-    "bonus_rate": 0.857,
-    "majors": 2,
+    "pf7": 15.19,
+    "pa7": 4.26,
+    "pd7": 10.93,
+    "si_plus": 125.5,
+    "df_plus": 107.4,
+    "apr_plus": 102.3,
+    "pin_rate": 0.111,
+    "bonus_rate": 0.778,
+    "majors": 3,
     "techs": 3,
     "pins": 1,
     "mat_value": {
@@ -34,8 +34,8 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -44,15 +44,62 @@
       "opponent_name": "Nate Schon",
       "method": "MD 11-2"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34944360132",
+      "opponent_rank": 42,
+      "opponent_name": "Stephan Monchery",
+      "method": "Dec 6-4"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34941542132",
+      "opponent_name": "Bryson Buhk",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 285,
+      "opponent_rank": 33,
+      "result": "W",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "vs. SIU Edwardsville"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34963120132",
+      "opponent_name": "Bradley Hill",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 23,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "vs. Oklahoma"
+    },
+    {
+      "date": "2025-12-17",
+      "opponent_id": "34944360132",
+      "opponent_name": "Stephan Monchery",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 58,
+      "opponent_weight": 285,
+      "opponent_rank": 42,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Duke"
+    },
     {
       "date": "2025-12-03",
       "opponent_id": "34937494132",
       "opponent_name": "Rocky Files",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 52,
       "opponent_weight": 285,
       "opponent_rank": null,
       "result": "W",
@@ -67,7 +114,7 @@
       "opponent_id": "34971914132",
       "opponent_name": "Nate Schon",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 42,
       "opponent_weight": 285,
       "opponent_rank": 27,
       "result": "W",
@@ -82,7 +129,7 @@
       "opponent_id": "34943391132",
       "opponent_name": "Vincent Mueller",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 49,
       "opponent_weight": 285,
       "opponent_rank": 39,
       "result": "W",
@@ -97,7 +144,7 @@
       "opponent_id": "34937323132",
       "opponent_name": "Daniel Bittner",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 53,
       "opponent_weight": 285,
       "opponent_rank": 68,
       "result": "W",
@@ -112,7 +159,7 @@
       "opponent_id": "34937677132",
       "opponent_name": "Danny Church",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 70,
       "opponent_weight": 285,
       "opponent_rank": 70,
       "result": "W",
@@ -127,7 +174,7 @@
       "opponent_id": "34952697132",
       "opponent_name": "Calvin Lachman",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 13,
       "opponent_weight": 285,
       "opponent_rank": null,
       "result": "W",
@@ -142,7 +189,7 @@
       "opponent_id": "34949045132",
       "opponent_name": "Brendan Gilchrist",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 77,
       "opponent_weight": 285,
       "opponent_rank": 67,
       "result": "W",
@@ -156,6 +203,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 0.23646723646723647
+    "top33_bonus_ev_shrunk": 0.2275132275132275
   }
 }

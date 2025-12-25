@@ -3,26 +3,26 @@
   "name": "DJ Mcgee",
   "team": "George Mason",
   "team_slug": "george_mason",
-  "team_rank": 45,
+  "team_rank": 43,
   "weight_class": 157,
   "year": 2026,
   "current_rank": 29,
   "record": {
-    "overall": "7-2",
+    "overall": "8-2",
     "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 9.57,
-    "pa7": 4.0,
-    "pd7": 5.57,
-    "si_plus": 111.4,
-    "df_plus": 107.3,
-    "apr_plus": 98.4,
+    "pf7": 9.88,
+    "pa7": 3.62,
+    "pd7": 6.25,
+    "si_plus": 112.3,
+    "df_plus": 108.3,
+    "apr_plus": 101.2,
     "pin_rate": 0.0,
-    "bonus_rate": 0.429,
-    "majors": 3,
+    "bonus_rate": 0.5,
+    "majors": 4,
     "techs": 0,
     "pins": 0,
     "mat_value": {
@@ -52,6 +52,20 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34935703132",
+      "opponent_name": "Latrell Schafer",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "vs. NC State"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34944785132",
@@ -102,7 +116,7 @@
       "opponent_id": "34939051132",
       "opponent_name": "Charlie Evans",
       "opponent_team": "Navy",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 34,
       "opponent_weight": 157,
       "opponent_rank": null,
       "result": "W",
@@ -132,7 +146,7 @@
       "opponent_id": "34954155132",
       "opponent_name": "Cade Wirnsberger",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 37,
       "opponent_weight": 157,
       "opponent_rank": 48,
       "result": "W",
@@ -147,7 +161,7 @@
       "opponent_id": "34939055132",
       "opponent_name": "Devon Deem",
       "opponent_team": "Navy",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 34,
       "opponent_weight": 157,
       "opponent_rank": null,
       "result": "W",
@@ -162,7 +176,7 @@
       "opponent_id": "34934162132",
       "opponent_name": "Vince Bouzakis",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 35,
       "opponent_weight": 157,
       "opponent_rank": 47,
       "result": "L",
@@ -176,7 +190,7 @@
       "opponent_id": "34955078132",
       "opponent_name": "Colton Washleski",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 50,
       "opponent_weight": 157,
       "opponent_rank": 24,
       "result": "L",
@@ -188,8 +202,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.4102564102564103
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
   }
 }

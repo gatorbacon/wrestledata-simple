@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": 11,
   "record": {
-    "overall": "6-1",
-    "vs_ranked": "2-1",
+    "overall": "6-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-1",
-    "vs_top25": "1-1"
+    "vs_top25": "1-2"
   },
   "metrics": {
-    "pf7": 5.58,
-    "pa7": 2.73,
-    "pd7": 2.85,
-    "si_plus": 103.8,
-    "df_plus": 111.8,
-    "apr_plus": 101.5,
+    "pf7": 4.82,
+    "pa7": 2.94,
+    "pd7": 1.88,
+    "si_plus": 103.0,
+    "df_plus": 112.2,
+    "apr_plus": 100.9,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
@@ -35,7 +35,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -45,19 +45,33 @@
       "method": "TB-1 5-1"
     },
     "worst_loss": {
-      "opponent_id": "34962153132",
-      "opponent_rank": 4,
-      "opponent_name": "Drake Ayala",
-      "method": "SV-1 7-4"
+      "opponent_id": "34935618132",
+      "opponent_rank": 15,
+      "opponent_name": "Jacob Van Dee",
+      "method": "Dec 4-1"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34935618132",
+      "opponent_name": "Jacob Van Dee",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 133,
+      "opponent_rank": 15,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34952087132",
       "opponent_name": "Joey Ruzic",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 10,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -72,7 +86,7 @@
       "opponent_id": "34949788132",
       "opponent_name": "Jackson Tucker",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 14,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -87,7 +101,7 @@
       "opponent_id": "34964062132",
       "opponent_name": "Julian Farber",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 30,
       "opponent_weight": 133,
       "opponent_rank": 21,
       "result": "W",
@@ -102,7 +116,7 @@
       "opponent_id": "34964081132",
       "opponent_name": "garret Rinken",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 30,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -132,7 +146,7 @@
       "opponent_id": "34962153132",
       "opponent_name": "Drake Ayala",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 4,
       "opponent_weight": 133,
       "opponent_rank": 4,
       "result": "L",
@@ -161,6 +175,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.328042328042328
+    "top33_bonus_ev_shrunk": 0.2716049382716049
   }
 }

@@ -3,23 +3,23 @@
   "name": "Trey Myers",
   "team": "Central Michigan",
   "team_slug": "central_michigan",
-  "team_rank": 51,
+  "team_rank": 65,
   "weight_class": 184,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-3",
-    "vs_ranked": "0-0",
+    "overall": "1-4",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 1.0,
-    "pa7": 14.3,
-    "pd7": -13.3,
-    "si_plus": 84.9,
-    "df_plus": 87.3,
-    "apr_plus": 99.7,
+    "pf7": 2.33,
+    "pa7": 9.54,
+    "pd7": -7.2,
+    "si_plus": 84.4,
+    "df_plus": 89.9,
+    "apr_plus": 100.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -35,19 +35,52 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34944021132",
+      "opponent_rank": 41,
+      "opponent_name": "Trent Thomas",
+      "method": "Fall 5:46"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35893825132",
+      "opponent_name": "John Wright",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 54,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "Kent State Open 2"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34944021132",
+      "opponent_name": "Trent Thomas",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 184,
+      "opponent_rank": 41,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:46",
+      "event": "Kent State Open 2"
+    },
     {
       "date": "2025-11-15",
       "opponent_id": "34934104132",
       "opponent_name": "Cody Brenner",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 65,
       "opponent_weight": 184,
       "opponent_rank": null,
       "result": "L",
@@ -62,7 +95,7 @@
       "opponent_id": "34945844132",
       "opponent_name": "Roman Rogotzke",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 33,
       "opponent_weight": 184,
       "opponent_rank": null,
       "result": "L",
@@ -91,6 +124,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
+    "top33_bonus_ev_shrunk": 0.2222222222222222
   }
 }

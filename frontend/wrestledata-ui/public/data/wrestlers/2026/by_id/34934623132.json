@@ -3,23 +3,23 @@
   "name": "Michael Olson",
   "team": "North Dakota State",
   "team_slug": "north_dakota_state",
-  "team_rank": 74,
+  "team_rank": 75,
   "weight_class": 141,
   "year": 2026,
   "current_rank": 48,
   "record": {
-    "overall": "4-3",
-    "vs_ranked": "1-3",
+    "overall": "4-4",
+    "vs_ranked": "1-4",
     "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "vs_top25": "0-4"
   },
   "metrics": {
-    "pf7": 2.43,
-    "pa7": 4.14,
-    "pd7": -1.71,
-    "si_plus": 94.4,
-    "df_plus": 106.6,
-    "apr_plus": 98.2,
+    "pf7": 2.5,
+    "pa7": 4.62,
+    "pd7": -2.12,
+    "si_plus": 93.9,
+    "df_plus": 106.4,
+    "apr_plus": 98.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -35,7 +35,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -45,13 +45,27 @@
       "method": "Dec 3-0"
     },
     "worst_loss": {
-      "opponent_id": "34955780132",
-      "opponent_rank": 12,
-      "opponent_name": "Vance Vombaur",
-      "method": "MD 9-1"
+      "opponent_id": "34943443132",
+      "opponent_rank": 17,
+      "opponent_name": "Jack Consiglio",
+      "method": "Dec 8-3"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34943443132",
+      "opponent_name": "Jack Consiglio",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 22,
+      "opponent_weight": 141,
+      "opponent_rank": 17,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Dual Meet (WS-97411)"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34955780132",
@@ -72,7 +86,7 @@
       "opponent_id": "34964073132",
       "opponent_name": "Cory Land",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 30,
       "opponent_weight": 141,
       "opponent_rank": 11,
       "result": "L",
@@ -87,7 +101,7 @@
       "opponent_id": "34943251132",
       "opponent_name": "Tyson Peach",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 26,
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "W",
@@ -102,7 +116,7 @@
       "opponent_id": "34943245132",
       "opponent_name": "Julian Tagg",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 26,
       "opponent_weight": 141,
       "opponent_rank": 10,
       "result": "L",
@@ -132,7 +146,7 @@
       "opponent_id": "34943261132",
       "opponent_name": "Liam Neitzel",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 26,
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "W",
@@ -147,7 +161,7 @@
       "opponent_id": "34944679132",
       "opponent_name": "Carson Exferd",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 27,
       "opponent_weight": 141,
       "opponent_rank": 50,
       "result": "W",
@@ -161,6 +175,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.375
+    "top33_bonus_ev_shrunk": 0.0
   }
 }

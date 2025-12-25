@@ -3,28 +3,28 @@
   "name": "John Jurkovic",
   "team": "Air Force",
   "team_slug": "air_force",
-  "team_rank": 58,
-  "weight_class": 174,
+  "team_rank": 57,
+  "weight_class": 157,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
+    "overall": "2-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 102.8,
-    "df_plus": 103.0,
-    "apr_plus": 102.4,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pf7": 10.0,
+    "pa7": 4.0,
+    "pd7": 6.0,
+    "si_plus": 109.1,
+    "df_plus": 105.0,
+    "apr_plus": 116.5,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +34,36 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-18",
+      "opponent_id": "34934451132",
+      "opponent_name": "Aidan O`Shea",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 32,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-4",
+      "duration": "7:00",
+      "event": "vs. Franklin & Marshall"
+    },
+    {
+      "date": "2025-12-18",
+      "opponent_id": "34954528132",
+      "opponent_name": "Niko Valenzuela",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 76,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "vs. Presbyterian"
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,

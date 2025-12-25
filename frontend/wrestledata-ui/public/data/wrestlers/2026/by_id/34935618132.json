@@ -8,20 +8,20 @@
   "year": 2026,
   "current_rank": 15,
   "record": {
-    "overall": "7-1",
-    "vs_ranked": "7-1",
+    "overall": "9-1",
+    "vs_ranked": "8-1",
     "vs_top10": "0-0",
-    "vs_top25": "1-1"
+    "vs_top25": "2-1"
   },
   "metrics": {
-    "pf7": 11.03,
-    "pa7": 2.04,
-    "pd7": 8.99,
-    "si_plus": 118.1,
-    "df_plus": 114.4,
-    "apr_plus": 105.1,
-    "pin_rate": 0.286,
-    "bonus_rate": 0.571,
+    "pf7": 9.16,
+    "pa7": 1.74,
+    "pd7": 7.42,
+    "si_plus": 114.3,
+    "df_plus": 114.5,
+    "apr_plus": 102.8,
+    "pin_rate": 0.222,
+    "bonus_rate": 0.444,
     "majors": 1,
     "techs": 1,
     "pins": 2,
@@ -34,15 +34,15 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 8,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34934305132",
-      "opponent_rank": 16,
-      "opponent_name": "Ethan Berginc",
-      "method": "Dec 8-1"
+      "opponent_id": "34936466132",
+      "opponent_rank": 11,
+      "opponent_name": "Ronnie Ramirez",
+      "method": "Dec 4-1"
     },
     "worst_loss": {
       "opponent_id": "34957105132",
@@ -53,11 +53,39 @@
   },
   "match_list": [
     {
+      "date": "2025-12-21",
+      "opponent_id": "34936466132",
+      "opponent_name": "Ronnie Ramirez",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 133,
+      "opponent_rank": 11,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "vs. Oklahoma State"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "34943151132",
+      "opponent_name": "Ethan Oakley",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 44,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "vs. North Carolina"
+    },
+    {
       "date": "2025-12-05",
       "opponent_id": "35078504132",
       "opponent_name": "Carter Shipers",
       "opponent_team": "Brown",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 62,
       "opponent_weight": 133,
       "opponent_rank": 77,
       "result": "W",
@@ -72,7 +100,7 @@
       "opponent_id": "34943968132",
       "opponent_name": "Kade Moore",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 18,
       "opponent_weight": 133,
       "opponent_rank": 26,
       "result": "W",
@@ -87,7 +115,7 @@
       "opponent_id": "34933601132",
       "opponent_name": "Gauge Botero",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 16,
       "opponent_weight": 133,
       "opponent_rank": 50,
       "result": "W",
@@ -117,7 +145,7 @@
       "opponent_id": "34957105132",
       "opponent_name": "Raymond Lopez",
       "opponent_team": "American",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 47,
       "opponent_weight": 133,
       "opponent_rank": 14,
       "result": "L",
@@ -132,7 +160,7 @@
       "opponent_id": "34938514132",
       "opponent_name": "Anthony Lucchiani",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 43,
       "opponent_weight": 133,
       "opponent_rank": 62,
       "result": "W",
@@ -147,7 +175,7 @@
       "opponent_id": "34977458132",
       "opponent_name": "Javaan Yarbrough",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 74,
       "opponent_weight": 133,
       "opponent_rank": 58,
       "result": "W",
@@ -162,7 +190,7 @@
       "opponent_id": "34934144132",
       "opponent_name": "Evan Tallmadge",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 35,
       "opponent_weight": 133,
       "opponent_rank": 27,
       "result": "W",
@@ -174,8 +202,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 3,
+    "top33_wins": 4,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.26839826839826836
+    "top33_bonus_ev_shrunk": 0.2037037037037037
   }
 }

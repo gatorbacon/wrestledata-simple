@@ -3,26 +3,26 @@
   "name": "Victor Voinovich",
   "team": "Iowa",
   "team_slug": "iowa",
-  "team_rank": 3,
+  "team_rank": 4,
   "weight_class": 157,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "1-2",
+    "overall": "3-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-2",
     "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 6.0,
-    "pa7": 12.0,
-    "pd7": -6.0,
-    "si_plus": 104.5,
-    "df_plus": 100.2,
-    "apr_plus": 98.4,
+    "pf7": 7.8,
+    "pa7": 8.4,
+    "pd7": -0.6,
+    "si_plus": 109.4,
+    "df_plus": 104.3,
+    "apr_plus": 97.5,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "bonus_rate": 0.333,
+    "majors": 1,
     "techs": 0,
     "pins": 0,
     "mat_value": {
@@ -34,15 +34,15 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "34934162132",
-      "opponent_rank": 47,
-      "opponent_name": "Vince Bouzakis",
-      "method": "Dec 11-6"
+      "opponent_id": "34935438132",
+      "opponent_rank": 27,
+      "opponent_name": "Cavarius Liddie",
+      "method": "MD 11-3"
     },
     "worst_loss": {
       "opponent_id": "34941785132",
@@ -53,11 +53,39 @@
   },
   "match_list": [
     {
+      "date": "2025-12-12",
+      "opponent_id": "34935438132",
+      "opponent_name": "Cavarius Liddie",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 66,
+      "opponent_weight": 157,
+      "opponent_rank": 27,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "vs. Iowa"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34943282132",
+      "opponent_name": "Mark Takara",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 31,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "vs. Utah Valley"
+    },
+    {
       "date": "2025-11-21",
       "opponent_id": "34934162132",
       "opponent_name": "Vince Bouzakis",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 35,
       "opponent_weight": 157,
       "opponent_rank": 47,
       "result": "W",
@@ -99,8 +127,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 1.0,
+    "top33_bonus_ev_shrunk": 0.5959595959595959
   }
 }

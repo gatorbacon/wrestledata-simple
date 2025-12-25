@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "season": 2026,
-  "generated_at_utc": "2025-12-23T02:17:46.642089Z",
+  "generated_at_utc": "2025-12-25T01:05:01.157856Z",
   "breaking_changes": [
     "Removed teams[].roster and teams[].highlights; use mt/teams/<team_id>.json for team identity and starters."
   ],
@@ -18,7 +18,7 @@
   "league": {
     "governing_body": "NCAA",
     "division": "D1",
-    "team_count": 78
+    "team_count": 79
   },
   "metric_definitions": {
     "avg_pf7": "Match-weighted mean of wrestler PF7 across included wrestlers.",
@@ -46,68 +46,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 6.6,
-          "rank": 57,
+          "value": 6.47,
+          "rank": 58,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 7.86,
-          "rank": 71,
+          "value": 7.98,
+          "rank": 69,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": -1.26,
+          "value": -1.5,
           "rank": 68,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.429,
+          "value": 0.44,
           "rank": 43,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.184,
+          "value": 0.18,
           "rank": 7,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.122,
-          "rank": 49,
+          "value": 0.12,
+          "rank": 50,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 45,
+          "rank": 41,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.074,
-          "rank": 65,
+          "value": 0.071,
+          "rank": 66,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 102.0,
+          "value": 101.9,
           "rank": 54,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 98.8,
-          "rank": 74,
+          "value": 98.4,
+          "rank": 73,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 103.0,
-          "rank": 11,
+          "value": 102.4,
+          "rank": 13,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 90,
-        "wins_included": 49,
-        "losses_included": 41,
-        "win_pct": 0.544,
+        "matches_included": 98,
+        "wins_included": 50,
+        "losses_included": 48,
+        "win_pct": 0.51,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -125,12 +125,12 @@
       "metrics": {
         "avg_pf7": {
           "value": 6.78,
-          "rank": 55,
+          "rank": 53,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 5.92,
-          "rank": 44,
+          "rank": 45,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -140,7 +140,7 @@
         },
         "bonus_rate": {
           "value": 0.452,
-          "rank": 38,
+          "rank": 40,
           "rank_scope": "league"
         },
         "pin_rate": {
@@ -155,12 +155,12 @@
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 53,
+          "rank": 54,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.15,
-          "rank": 52,
+          "rank": 53,
           "rank_scope": "league"
         }
       },
@@ -203,7 +203,7 @@
       "metrics": {
         "avg_pf7": {
           "value": 8.24,
-          "rank": 29,
+          "rank": 27,
           "rank_scope": "league"
         },
         "avg_pa7": {
@@ -228,17 +228,17 @@
         },
         "tech_rate": {
           "value": 0.131,
-          "rank": 44,
+          "rank": 43,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 33,
+          "rank": 32,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.073,
-          "rank": 66,
+          "rank": 65,
           "rank_scope": "league"
         }
       },
@@ -255,7 +255,7 @@
         },
         "apr_plus": {
           "value": 102.6,
-          "rank": 13,
+          "rank": 12,
           "rank_scope": "league"
         }
       },
@@ -280,67 +280,67 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 9.75,
-          "rank": 9,
+          "value": 10.28,
+          "rank": 8,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 6.14,
-          "rank": 48,
+          "rank": 50,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 3.62,
-          "rank": 23,
+          "value": 4.13,
+          "rank": 16,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.543,
-          "rank": 20,
+          "value": 0.574,
+          "rank": 13,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.1,
-          "rank": 40,
+          "value": 0.074,
+          "rank": 58,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.257,
-          "rank": 9,
+          "value": 0.265,
+          "rank": 7,
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.067,
-          "rank": 32,
+          "value": 0.062,
+          "rank": 31,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.381,
-          "rank": 25,
+          "rank": 22,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 110.5,
+          "value": 111.7,
           "rank": 8,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 106.2,
-          "rank": 35,
+          "value": 106.0,
+          "rank": 34,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 101.9,
-          "rank": 22,
+          "value": 101.2,
+          "rank": 29,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 103,
-        "wins_included": 70,
-        "losses_included": 33,
+        "matches_included": 100,
+        "wins_included": 68,
+        "losses_included": 32,
         "win_pct": 0.68,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
@@ -359,17 +359,17 @@
       "metrics": {
         "avg_pf7": {
           "value": 7.4,
-          "rank": 41,
+          "rank": 40,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 5.97,
-          "rank": 46,
+          "rank": 47,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 1.43,
-          "rank": 45,
+          "rank": 46,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -379,17 +379,17 @@
         },
         "pin_rate": {
           "value": 0.095,
-          "rank": 42,
+          "rank": 38,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.131,
-          "rank": 45,
+          "rank": 44,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 35,
+          "rank": 34,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -401,7 +401,7 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 104.2,
-          "rank": 45,
+          "rank": 44,
           "rank_scope": "league"
         },
         "df_plus": {
@@ -411,7 +411,7 @@
         },
         "apr_plus": {
           "value": 99.7,
-          "rank": 58,
+          "rank": 55,
           "rank_scope": "league"
         }
       },
@@ -437,37 +437,37 @@
       "metrics": {
         "avg_pf7": {
           "value": 6.5,
-          "rank": 59,
+          "rank": 57,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 7.75,
-          "rank": 70,
+          "rank": 68,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": -1.24,
-          "rank": 67,
+          "rank": 64,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.424,
-          "rank": 45,
+          "rank": 44,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.091,
-          "rank": 46,
+          "rank": 42,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.152,
-          "rank": 39,
+          "rank": 38,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 58,
+          "rank": 57,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -484,12 +484,12 @@
         },
         "df_plus": {
           "value": 100.0,
-          "rank": 70,
+          "rank": 68,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.5,
-          "rank": 63,
+          "rank": 59,
           "rank_scope": "league"
         }
       },
@@ -514,68 +514,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 7.35,
-          "rank": 43,
+          "value": 6.95,
+          "rank": 51,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 5.34,
-          "rank": 34,
+          "value": 5.3,
+          "rank": 33,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 2.01,
-          "rank": 40,
+          "value": 1.65,
+          "rank": 43,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.412,
-          "rank": 48,
+          "value": 0.361,
+          "rank": 58,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.118,
-          "rank": 28,
+          "value": 0.082,
+          "rank": 50,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.147,
-          "rank": 40,
+          "value": 0.131,
+          "rank": 45,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 39,
+          "rank": 43,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.25,
-          "rank": 43,
+          "value": 0.263,
+          "rank": 40,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 100.3,
-          "rank": 63,
+          "value": 100.5,
+          "rank": 60,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 104.1,
-          "rank": 47,
+          "value": 104.5,
+          "rank": 46,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 101.0,
-          "rank": 34,
+          "value": 99.7,
+          "rank": 56,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 108,
-        "wins_included": 68,
-        "losses_included": 40,
-        "win_pct": 0.63,
+        "matches_included": 96,
+        "wins_included": 61,
+        "losses_included": 35,
+        "win_pct": 0.635,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -598,12 +598,12 @@
         },
         "avg_pa7": {
           "value": 6.38,
-          "rank": 51,
+          "rank": 53,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 0.58,
-          "rank": 50,
+          "rank": 51,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -618,7 +618,7 @@
         },
         "tech_rate": {
           "value": 0.184,
-          "rank": 26,
+          "rank": 25,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -640,12 +640,12 @@
         },
         "df_plus": {
           "value": 102.4,
-          "rank": 59,
+          "rank": 58,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 102.3,
-          "rank": 17,
+          "rank": 18,
           "rank_scope": "league"
         }
       },
@@ -681,7 +681,7 @@
         },
         "avg_pd7": {
           "value": 3.54,
-          "rank": 24,
+          "rank": 25,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -696,17 +696,17 @@
         },
         "tech_rate": {
           "value": 0.23,
-          "rank": 15,
+          "rank": 14,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 34,
+          "rank": 33,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.154,
-          "rank": 51,
+          "rank": 52,
           "rank_scope": "league"
         }
       },
@@ -718,7 +718,7 @@
         },
         "df_plus": {
           "value": 105.6,
-          "rank": 39,
+          "rank": 37,
           "rank_scope": "league"
         },
         "apr_plus": {
@@ -749,7 +749,7 @@
       "metrics": {
         "avg_pf7": {
           "value": 6.01,
-          "rank": 65,
+          "rank": 63,
           "rank_scope": "league"
         },
         "avg_pa7": {
@@ -759,22 +759,22 @@
         },
         "avg_pd7": {
           "value": 0.56,
-          "rank": 52,
+          "rank": 53,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.289,
-          "rank": 72,
+          "rank": 71,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.105,
-          "rank": 38,
+          "rank": 35,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.026,
-          "rank": 73,
+          "rank": 75,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -791,17 +791,17 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 102.6,
-          "rank": 51,
+          "rank": 50,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 106.6,
-          "rank": 29,
+          "rank": 30,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 101.0,
-          "rank": 37,
+          "rank": 35,
           "rank_scope": "league"
         }
       },
@@ -827,42 +827,42 @@
       "metrics": {
         "avg_pf7": {
           "value": 5.28,
-          "rank": 71,
+          "rank": 72,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 6.56,
-          "rank": 54,
+          "rank": 55,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": -1.28,
-          "rank": 69,
+          "rank": 65,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.333,
-          "rank": 65,
+          "rank": 64,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.146,
-          "rank": 16,
+          "rank": 15,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.042,
-          "rank": 70,
+          "rank": 71,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 41,
+          "rank": 40,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.095,
-          "rank": 58,
+          "rank": 59,
           "rank_scope": "league"
         }
       },
@@ -874,12 +874,12 @@
         },
         "df_plus": {
           "value": 102.2,
-          "rank": 64,
+          "rank": 63,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.1,
-          "rank": 49,
+          "rank": 47,
           "rank_scope": "league"
         }
       },
@@ -910,12 +910,12 @@
         },
         "avg_pa7": {
           "value": 6.4,
-          "rank": 53,
+          "rank": 54,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 0.59,
-          "rank": 49,
+          "rank": 50,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -925,7 +925,7 @@
         },
         "pin_rate": {
           "value": 0.081,
-          "rank": 53,
+          "rank": 51,
           "rank_scope": "league"
         },
         "tech_rate": {
@@ -940,7 +940,7 @@
         },
         "top33_win_pct": {
           "value": 0.387,
-          "rank": 24,
+          "rank": 21,
           "rank_scope": "league"
         }
       },
@@ -957,7 +957,7 @@
         },
         "apr_plus": {
           "value": 99.9,
-          "rank": 55,
+          "rank": 53,
           "rank_scope": "league"
         }
       },
@@ -982,68 +982,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 6.55,
-          "rank": 58,
-          "rank_scope": "league"
-        },
-        "avg_pa7": {
-          "value": 7.64,
-          "rank": 68,
-          "rank_scope": "league"
-        },
-        "avg_pd7": {
-          "value": -1.08,
+          "value": 5.82,
           "rank": 66,
           "rank_scope": "league"
         },
+        "avg_pa7": {
+          "value": 8.0,
+          "rank": 70,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -2.18,
+          "rank": 72,
+          "rank_scope": "league"
+        },
         "bonus_rate": {
-          "value": 0.25,
-          "rank": 76,
+          "value": 0.182,
+          "rank": 78,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.083,
-          "rank": 49,
+          "value": 0.061,
+          "rank": 65,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.111,
-          "rank": 54,
+          "value": 0.061,
+          "rank": 66,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 56,
+          "rank": 58,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.069,
+          "value": 0.067,
           "rank": 68,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 100.5,
-          "rank": 59,
+          "value": 100.3,
+          "rank": 63,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 99.0,
+          "value": 98.6,
           "rank": 72,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 100.0,
-          "rank": 51,
+          "value": 98.8,
+          "rank": 73,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 79,
-        "wins_included": 36,
+        "matches_included": 76,
+        "wins_included": 33,
         "losses_included": 43,
-        "win_pct": 0.456,
+        "win_pct": 0.434,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -1060,68 +1060,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 6.26,
-          "rank": 61,
+          "value": 6.43,
+          "rank": 60,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 7.05,
-          "rank": 64,
+          "value": 6.93,
+          "rank": 62,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": -0.79,
-          "rank": 64,
+          "value": -0.5,
+          "rank": 61,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.32,
-          "rank": 69,
+          "value": 0.286,
+          "rank": 72,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.08,
-          "rank": 54,
+          "value": 0.071,
+          "rank": 61,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.12,
-          "rank": 50,
+          "value": 0.107,
+          "rank": 54,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 74,
+          "rank": 73,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.167,
-          "rank": 50,
+          "rank": 51,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 100.5,
-          "rank": 61,
-          "rank_scope": "league"
-        },
-        "df_plus": {
-          "value": 102.4,
           "rank": 62,
           "rank_scope": "league"
         },
+        "df_plus": {
+          "value": 102.3,
+          "rank": 61,
+          "rank_scope": "league"
+        },
         "apr_plus": {
-          "value": 99.9,
-          "rank": 56,
+          "value": 99.4,
+          "rank": 61,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 48,
-        "wins_included": 25,
-        "losses_included": 23,
-        "win_pct": 0.521,
+        "matches_included": 50,
+        "wins_included": 28,
+        "losses_included": 22,
+        "win_pct": 0.56,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -1139,7 +1139,7 @@
       "metrics": {
         "avg_pf7": {
           "value": 7.16,
-          "rank": 46,
+          "rank": 47,
           "rank_scope": "league"
         },
         "avg_pa7": {
@@ -1149,32 +1149,32 @@
         },
         "avg_pd7": {
           "value": 2.13,
-          "rank": 39,
+          "rank": 40,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.357,
-          "rank": 61,
+          "rank": 60,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.071,
-          "rank": 61,
+          "rank": 60,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.071,
-          "rank": 65,
+          "rank": 63,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 46,
+          "rank": 47,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.111,
-          "rank": 55,
+          "rank": 56,
           "rank_scope": "league"
         }
       },
@@ -1186,12 +1186,12 @@
         },
         "df_plus": {
           "value": 105.8,
-          "rank": 37,
+          "rank": 36,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.2,
-          "rank": 47,
+          "rank": 45,
           "rank_scope": "league"
         }
       },
@@ -1216,18 +1216,18 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 9.35,
-          "rank": 14,
+          "value": 10.37,
+          "rank": 6,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 7.69,
-          "rank": 69,
+          "value": 7.01,
+          "rank": 65,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 1.66,
-          "rank": 42,
+          "value": 3.35,
+          "rank": 26,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -1236,13 +1236,13 @@
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.125,
-          "rank": 24,
+          "value": 0.111,
+          "rank": 30,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.167,
-          "rank": 30,
+          "value": 0.148,
+          "rank": 39,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -1258,26 +1258,26 @@
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 109.1,
-          "rank": 15,
+          "value": 112.5,
+          "rank": 7,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 100.8,
-          "rank": 67,
+          "value": 101.9,
+          "rank": 66,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 101.3,
-          "rank": 30,
+          "rank": 28,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 42,
-        "wins_included": 24,
-        "losses_included": 18,
-        "win_pct": 0.571,
+        "matches_included": 43,
+        "wins_included": 27,
+        "losses_included": 16,
+        "win_pct": 0.628,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -1294,68 +1294,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 10.31,
+          "value": 10.48,
           "rank": 5,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 5.45,
-          "rank": 37,
+          "value": 6.07,
+          "rank": 48,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 4.86,
-          "rank": 11,
+          "value": 4.41,
+          "rank": 15,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.654,
+          "value": 0.643,
           "rank": 4,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.135,
-          "rank": 20,
+          "value": 0.143,
+          "rank": 16,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.269,
-          "rank": 6,
+          "value": 0.304,
+          "rank": 4,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 57,
+          "rank": 52,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.111,
-          "rank": 56,
+          "value": 0.143,
+          "rank": 54,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 107.3,
-          "rank": 23,
+          "value": 107.7,
+          "rank": 20,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 102.4,
-          "rank": 60,
+          "value": 101.1,
+          "rank": 67,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 101.0,
-          "rank": 35,
+          "value": 100.9,
+          "rank": 37,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 79,
-        "wins_included": 52,
-        "losses_included": 27,
-        "win_pct": 0.658,
+        "matches_included": 84,
+        "wins_included": 56,
+        "losses_included": 28,
+        "win_pct": 0.667,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -1373,7 +1373,7 @@
       "metrics": {
         "avg_pf7": {
           "value": 7.44,
-          "rank": 38,
+          "rank": 37,
           "rank_scope": "league"
         },
         "avg_pa7": {
@@ -1383,12 +1383,12 @@
         },
         "avg_pd7": {
           "value": 0.57,
-          "rank": 51,
+          "rank": 52,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.532,
-          "rank": 23,
+          "rank": 22,
           "rank_scope": "league"
         },
         "pin_rate": {
@@ -1398,7 +1398,7 @@
         },
         "tech_rate": {
           "value": 0.114,
-          "rank": 52,
+          "rank": 51,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -1408,7 +1408,7 @@
         },
         "top33_win_pct": {
           "value": 0.256,
-          "rank": 41,
+          "rank": 43,
           "rank_scope": "league"
         }
       },
@@ -1450,69 +1450,69 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 8.27,
-          "rank": 28,
+          "value": 7.89,
+          "rank": 34,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 4.41,
-          "rank": 14,
+          "value": 3.95,
+          "rank": 5,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 3.86,
-          "rank": 18,
+          "value": 3.93,
+          "rank": 19,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.508,
-          "rank": 31,
+          "value": 0.509,
+          "rank": 29,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.095,
-          "rank": 43,
+          "value": 0.113,
+          "rank": 28,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.19,
-          "rank": 22,
+          "value": 0.17,
+          "rank": 28,
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.308,
-          "rank": 10,
+          "value": 0.4,
+          "rank": 8,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.342,
-          "rank": 31,
+          "value": 0.353,
+          "rank": 27,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 105.9,
-          "rank": 32,
+          "value": 104.8,
+          "rank": 38,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 108.8,
-          "rank": 11,
+          "value": 109.7,
+          "rank": 7,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 102.3,
-          "rank": 18,
+          "value": 103.0,
+          "rank": 10,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 94,
-        "wins_included": 63,
-        "losses_included": 31,
-        "win_pct": 0.67,
-        "wrestlers_included": 10,
+        "matches_included": 79,
+        "wins_included": 53,
+        "losses_included": 26,
+        "win_pct": 0.671,
+        "wrestlers_included": 8,
         "starters_mode": "ranking_files_with_overrides"
       }
     },
@@ -1528,68 +1528,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 4.73,
+          "value": 4.69,
           "rank": 76,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 8.84,
-          "rank": 76,
+          "value": 9.0,
+          "rank": 75,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": -4.11,
-          "rank": 77,
+          "value": -4.32,
+          "rank": 76,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.368,
-          "rank": 59,
+          "value": 0.4,
+          "rank": 50,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.211,
+          "value": 0.2,
           "rank": 5,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.0,
-          "rank": 77,
+          "rank": 78,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 72,
+          "rank": 70,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.059,
-          "rank": 70,
+          "value": 0.053,
+          "rank": 71,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 99.0,
-          "rank": 71,
+          "value": 98.6,
+          "rank": 72,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 99.0,
-          "rank": 73,
+          "value": 97.9,
+          "rank": 74,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 100.2,
-          "rank": 48,
+          "value": 100.4,
+          "rank": 41,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 59,
-        "wins_included": 19,
-        "losses_included": 40,
-        "win_pct": 0.322,
+        "matches_included": 61,
+        "wins_included": 20,
+        "losses_included": 41,
+        "win_pct": 0.328,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -1606,33 +1606,33 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 3.52,
-          "rank": 78,
+          "value": 3.56,
+          "rank": 79,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 7.35,
-          "rank": 67,
+          "value": 8.14,
+          "rank": 71,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": -3.84,
-          "rank": 75,
+          "value": -4.58,
+          "rank": 77,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.429,
-          "rank": 44,
+          "value": 0.474,
+          "rank": 36,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.286,
+          "value": 0.316,
           "rank": 2,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.0,
-          "rank": 76,
+          "rank": 77,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -1648,26 +1648,26 @@
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 95.2,
+          "value": 95.7,
           "rank": 78,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 100.3,
-          "rank": 68,
+          "value": 98.8,
+          "rank": 71,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 101.7,
-          "rank": 25,
+          "rank": 24,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 62,
-        "wins_included": 21,
-        "losses_included": 41,
-        "win_pct": 0.339,
+        "matches_included": 63,
+        "wins_included": 19,
+        "losses_included": 44,
+        "win_pct": 0.302,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -1695,7 +1695,7 @@
         },
         "avg_pd7": {
           "value": 1.65,
-          "rank": 43,
+          "rank": 44,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -1705,17 +1705,17 @@
         },
         "pin_rate": {
           "value": 0.094,
-          "rank": 44,
+          "rank": 40,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.208,
-          "rank": 17,
+          "rank": 16,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 47,
+          "rank": 48,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1727,17 +1727,17 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 106.0,
-          "rank": 29,
+          "rank": 31,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 103.6,
-          "rank": 53,
+          "rank": 54,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.1,
-          "rank": 69,
+          "rank": 68,
           "rank_scope": "league"
         }
       },
@@ -1762,68 +1762,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 8.2,
-          "rank": 30,
+          "value": 8.87,
+          "rank": 18,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 7.09,
-          "rank": 65,
+          "value": 7.01,
+          "rank": 64,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 1.12,
-          "rank": 46,
+          "value": 1.87,
+          "rank": 42,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.51,
-          "rank": 28,
+          "value": 0.521,
+          "rank": 25,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.098,
-          "rank": 41,
+          "value": 0.083,
+          "rank": 47,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.275,
-          "rank": 5,
+          "value": 0.292,
+          "rank": 6,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 48,
+          "rank": 53,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.143,
-          "rank": 53,
+          "value": 0.167,
+          "rank": 50,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 99.7,
-          "rank": 68,
+          "value": 101.2,
+          "rank": 56,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 99.7,
-          "rank": 71,
+          "rank": 69,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 98.0,
-          "rank": 76,
+          "value": 97.5,
+          "rank": 77,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 88,
-        "wins_included": 51,
-        "losses_included": 37,
-        "win_pct": 0.58,
+        "matches_included": 81,
+        "wins_included": 48,
+        "losses_included": 33,
+        "win_pct": 0.593,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -1841,17 +1841,17 @@
       "metrics": {
         "avg_pf7": {
           "value": 8.83,
-          "rank": 18,
+          "rank": 19,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 6.27,
-          "rank": 49,
+          "rank": 51,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 2.56,
-          "rank": 35,
+          "rank": 36,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -1866,12 +1866,12 @@
         },
         "tech_rate": {
           "value": 0.211,
-          "rank": 16,
+          "rank": 15,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 36,
+          "rank": 35,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1888,12 +1888,12 @@
         },
         "df_plus": {
           "value": 102.7,
-          "rank": 57,
+          "rank": 56,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 103.3,
-          "rank": 9,
+          "rank": 8,
           "rank_scope": "league"
         }
       },
@@ -1919,7 +1919,7 @@
       "metrics": {
         "avg_pf7": {
           "value": 6.9,
-          "rank": 53,
+          "rank": 52,
           "rank_scope": "league"
         },
         "avg_pa7": {
@@ -1934,17 +1934,17 @@
         },
         "bonus_rate": {
           "value": 0.415,
-          "rank": 47,
+          "rank": 46,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.123,
-          "rank": 25,
+          "rank": 21,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.154,
-          "rank": 38,
+          "rank": 37,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -1954,24 +1954,24 @@
         },
         "top33_win_pct": {
           "value": 0.259,
-          "rank": 40,
+          "rank": 42,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 102.5,
-          "rank": 52,
+          "rank": 51,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 102.1,
-          "rank": 65,
+          "rank": 64,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.1,
-          "rank": 68,
+          "rank": 67,
           "rank_scope": "league"
         }
       },
@@ -1996,68 +1996,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 6.92,
-          "rank": 51,
+          "value": 6.65,
+          "rank": 55,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 7.04,
-          "rank": 63,
+          "value": 7.12,
+          "rank": 66,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": -0.12,
-          "rank": 59,
+          "value": -0.46,
+          "rank": 60,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.568,
-          "rank": 14,
+          "value": 0.556,
+          "rank": 16,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.135,
-          "rank": 19,
+          "value": 0.111,
+          "rank": 29,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.162,
-          "rank": 31,
+          "value": 0.167,
+          "rank": 30,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 51,
+          "rank": 49,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.067,
-          "rank": 69,
+          "value": 0.053,
+          "rank": 70,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 102.0,
+          "value": 101.2,
           "rank": 55,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 102.5,
-          "rank": 58,
+          "value": 102.4,
+          "rank": 59,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 99.7,
+          "value": 99.4,
           "rank": 60,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 84,
-        "wins_included": 37,
-        "losses_included": 47,
-        "win_pct": 0.44,
+        "matches_included": 89,
+        "wins_included": 36,
+        "losses_included": 53,
+        "win_pct": 0.404,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -2075,12 +2075,12 @@
       "metrics": {
         "avg_pf7": {
           "value": 10.29,
-          "rank": 6,
+          "rank": 7,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 4.67,
-          "rank": 17,
+          "rank": 18,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -2100,34 +2100,34 @@
         },
         "tech_rate": {
           "value": 0.173,
-          "rank": 28,
+          "rank": 27,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 40,
+          "rank": 39,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.389,
-          "rank": 21,
+          "rank": 19,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 109.7,
-          "rank": 10,
+          "rank": 12,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 105.8,
-          "rank": 36,
+          "rank": 35,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 103.8,
-          "rank": 7,
+          "rank": 6,
           "rank_scope": "league"
         }
       },
@@ -2153,32 +2153,32 @@
       "metrics": {
         "avg_pf7": {
           "value": 6.46,
-          "rank": 60,
+          "rank": 59,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 7.26,
-          "rank": 66,
+          "rank": 67,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": -0.8,
-          "rank": 65,
+          "rank": 63,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.353,
-          "rank": 62,
+          "rank": 61,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.059,
-          "rank": 68,
+          "rank": 66,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.029,
-          "rank": 72,
+          "rank": 74,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -2188,7 +2188,7 @@
         },
         "top33_win_pct": {
           "value": 0.056,
-          "rank": 71,
+          "rank": 69,
           "rank_scope": "league"
         }
       },
@@ -2200,12 +2200,12 @@
         },
         "df_plus": {
           "value": 102.0,
-          "rank": 66,
+          "rank": 65,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.2,
-          "rank": 67,
+          "rank": 66,
           "rank_scope": "league"
         }
       },
@@ -2231,22 +2231,22 @@
       "metrics": {
         "avg_pf7": {
           "value": 5.04,
-          "rank": 74,
+          "rank": 75,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 6.98,
-          "rank": 62,
+          "rank": 63,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": -1.94,
-          "rank": 72,
+          "rank": 71,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.36,
-          "rank": 60,
+          "rank": 59,
           "rank_scope": "league"
         },
         "pin_rate": {
@@ -2256,7 +2256,7 @@
         },
         "tech_rate": {
           "value": 0.1,
-          "rank": 58,
+          "rank": 57,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -2266,24 +2266,24 @@
         },
         "top33_win_pct": {
           "value": 0.091,
-          "rank": 59,
+          "rank": 60,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 96.1,
-          "rank": 76,
+          "rank": 77,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 102.2,
-          "rank": 63,
+          "rank": 62,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.8,
-          "rank": 57,
+          "rank": 54,
           "rank_scope": "league"
         }
       },
@@ -2314,7 +2314,7 @@
         },
         "avg_pa7": {
           "value": 4.02,
-          "rank": 4,
+          "rank": 6,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -2324,17 +2324,17 @@
         },
         "bonus_rate": {
           "value": 0.417,
-          "rank": 46,
+          "rank": 45,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.05,
-          "rank": 71,
+          "rank": 69,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.183,
-          "rank": 27,
+          "rank": 26,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -2351,17 +2351,17 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 109.1,
-          "rank": 14,
+          "rank": 15,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 109.1,
-          "rank": 7,
+          "rank": 9,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.7,
-          "rank": 61,
+          "rank": 58,
           "rank_scope": "league"
         }
       },
@@ -2392,54 +2392,54 @@
         },
         "avg_pa7": {
           "value": 4.32,
-          "rank": 10,
+          "rank": 11,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 4.09,
-          "rank": 16,
+          "rank": 17,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.51,
-          "rank": 29,
+          "rank": 28,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.078,
-          "rank": 56,
+          "rank": 53,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.157,
-          "rank": 35,
+          "rank": 36,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 61,
+          "rank": 60,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.364,
-          "rank": 27,
+          "rank": 25,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 107.9,
-          "rank": 19,
+          "rank": 18,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 108.3,
-          "rank": 14,
+          "rank": 15,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 101.2,
-          "rank": 31,
+          "rank": 30,
           "rank_scope": "league"
         }
       },
@@ -2464,33 +2464,33 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 7.16,
-          "rank": 47,
+          "value": 7.3,
+          "rank": 42,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 4.38,
-          "rank": 13,
+          "value": 4.55,
+          "rank": 14,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 2.78,
-          "rank": 32,
+          "value": 2.75,
+          "rank": 33,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.333,
-          "rank": 68,
+          "value": 0.318,
+          "rank": 67,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.067,
-          "rank": 65,
+          "value": 0.045,
+          "rank": 71,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.156,
-          "rank": 36,
+          "value": 0.159,
+          "rank": 32,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -2506,26 +2506,26 @@
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 106.0,
-          "rank": 30,
+          "value": 106.2,
+          "rank": 29,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 112.0,
-          "rank": 1,
+          "value": 111.6,
+          "rank": 2,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 100.7,
-          "rank": 40,
+          "value": 100.2,
+          "rank": 46,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 59,
-        "wins_included": 45,
+        "matches_included": 58,
+        "wins_included": 44,
         "losses_included": 14,
-        "win_pct": 0.763,
+        "win_pct": 0.759,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -2542,17 +2542,17 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 12.62,
+          "value": 12.45,
           "rank": 3,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 4.22,
-          "rank": 8,
+          "value": 4.17,
+          "rank": 9,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 8.4,
+          "value": 8.27,
           "rank": 3,
           "rank_scope": "league"
         },
@@ -2563,16 +2563,16 @@
         },
         "pin_rate": {
           "value": 0.115,
-          "rank": 32,
+          "rank": 25,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.311,
-          "rank": 3,
+          "value": 0.295,
+          "rank": 5,
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.688,
+          "value": 0.714,
           "rank": 1,
           "rank_scope": "league"
         },
@@ -2584,17 +2584,17 @@
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 119.5,
+          "value": 119.8,
           "rank": 3,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 109.9,
-          "rank": 5,
+          "value": 109.7,
+          "rank": 8,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 104.5,
+          "value": 104.4,
           "rank": 2,
           "rank_scope": "league"
         }
@@ -2620,68 +2620,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 6.02,
-          "rank": 64,
+          "value": 5.48,
+          "rank": 68,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 6.11,
-          "rank": 47,
+          "value": 5.74,
+          "rank": 40,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": -0.09,
+          "value": -0.26,
           "rank": 58,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.294,
-          "rank": 71,
+          "value": 0.226,
+          "rank": 76,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.118,
-          "rank": 30,
+          "value": 0.075,
+          "rank": 55,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.02,
-          "rank": 74,
+          "value": 0.038,
+          "rank": 72,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 50,
+          "rank": 44,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.091,
-          "rank": 60,
+          "value": 0.1,
+          "rank": 57,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 101.6,
-          "rank": 56,
+          "value": 99.1,
+          "rank": 71,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 103.0,
-          "rank": 55,
+          "value": 103.8,
+          "rank": 52,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 101.5,
-          "rank": 26,
+          "value": 100.2,
+          "rank": 43,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 86,
-        "wins_included": 51,
-        "losses_included": 35,
-        "win_pct": 0.593,
+        "matches_included": 96,
+        "wins_included": 53,
+        "losses_included": 43,
+        "win_pct": 0.552,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -2704,7 +2704,7 @@
         },
         "avg_pa7": {
           "value": 4.1,
-          "rank": 6,
+          "rank": 8,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -2714,17 +2714,17 @@
         },
         "bonus_rate": {
           "value": 0.523,
-          "rank": 25,
+          "rank": 24,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.091,
-          "rank": 47,
+          "rank": 43,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.25,
-          "rank": 11,
+          "rank": 10,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -2734,14 +2734,14 @@
         },
         "top33_win_pct": {
           "value": 0.36,
-          "rank": 28,
+          "rank": 26,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 107.9,
-          "rank": 20,
+          "rank": 19,
           "rank_scope": "league"
         },
         "df_plus": {
@@ -2751,7 +2751,7 @@
         },
         "apr_plus": {
           "value": 101.8,
-          "rank": 23,
+          "rank": 22,
           "rank_scope": "league"
         }
       },
@@ -2776,68 +2776,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 6.12,
-          "rank": 63,
+          "value": 5.94,
+          "rank": 64,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 6.6,
-          "rank": 55,
+          "value": 6.12,
+          "rank": 49,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": -0.48,
-          "rank": 62,
+          "value": -0.19,
+          "rank": 57,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.304,
-          "rank": 70,
+          "value": 0.286,
+          "rank": 73,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.087,
-          "rank": 48,
+          "value": 0.095,
+          "rank": 39,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.0,
-          "rank": 78,
+          "value": 0.048,
+          "rank": 70,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 73,
+          "rank": 74,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.389,
-          "rank": 23,
+          "value": 0.368,
+          "rank": 24,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 100.3,
+          "value": 100.1,
           "rank": 65,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 104.5,
-          "rank": 45,
+          "value": 105.6,
+          "rank": 39,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 101.0,
-          "rank": 38,
+          "rank": 36,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 50,
-        "wins_included": 23,
+        "matches_included": 48,
+        "wins_included": 21,
         "losses_included": 27,
-        "win_pct": 0.46,
+        "win_pct": 0.438,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -2860,7 +2860,7 @@
         },
         "avg_pa7": {
           "value": 9.15,
-          "rank": 77,
+          "rank": 76,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -2870,7 +2870,7 @@
         },
         "bonus_rate": {
           "value": 0.346,
-          "rank": 63,
+          "rank": 62,
           "rank_scope": "league"
         },
         "pin_rate": {
@@ -2880,7 +2880,7 @@
         },
         "tech_rate": {
           "value": 0.038,
-          "rank": 71,
+          "rank": 73,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -2897,7 +2897,7 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 97.2,
-          "rank": 74,
+          "rank": 75,
           "rank_scope": "league"
         },
         "df_plus": {
@@ -2907,7 +2907,7 @@
         },
         "apr_plus": {
           "value": 102.9,
-          "rank": 12,
+          "rank": 11,
           "rank_scope": "league"
         }
       },
@@ -2938,7 +2938,7 @@
         },
         "avg_pa7": {
           "value": 4.89,
-          "rank": 23,
+          "rank": 22,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -2948,12 +2948,12 @@
         },
         "bonus_rate": {
           "value": 0.575,
-          "rank": 13,
+          "rank": 12,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.11,
-          "rank": 35,
+          "rank": 31,
           "rank_scope": "league"
         },
         "tech_rate": {
@@ -2968,7 +2968,7 @@
         },
         "top33_win_pct": {
           "value": 0.095,
-          "rank": 57,
+          "rank": 58,
           "rank_scope": "league"
         }
       },
@@ -2980,7 +2980,7 @@
         },
         "df_plus": {
           "value": 106.3,
-          "rank": 34,
+          "rank": 33,
           "rank_scope": "league"
         },
         "apr_plus": {
@@ -3011,17 +3011,17 @@
       "metrics": {
         "avg_pf7": {
           "value": 7.22,
-          "rank": 45,
+          "rank": 46,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 3.5,
-          "rank": 2,
+          "rank": 3,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 3.72,
-          "rank": 20,
+          "rank": 22,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -3031,12 +3031,12 @@
         },
         "pin_rate": {
           "value": 0.076,
-          "rank": 57,
+          "rank": 54,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.076,
-          "rank": 64,
+          "rank": 62,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -3058,12 +3058,12 @@
         },
         "df_plus": {
           "value": 108.6,
-          "rank": 12,
+          "rank": 13,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.7,
-          "rank": 59,
+          "rank": 57,
           "rank_scope": "league"
         }
       },
@@ -3073,6 +3073,84 @@
         "losses_included": 21,
         "win_pct": 0.759,
         "wrestlers_included": 10,
+        "starters_mode": "ranking_files_with_overrides"
+      }
+    },
+    {
+      "team_id": "mercyherst",
+      "team_name": "Mercyherst",
+      "conference": "Independent",
+      "division": "D1",
+      "team_rank": {
+        "value": null,
+        "rank": null,
+        "rank_scope": "league"
+      },
+      "metrics": {
+        "avg_pf7": {
+          "value": 3.57,
+          "rank": 78,
+          "rank_scope": "league"
+        },
+        "avg_pa7": {
+          "value": 16.52,
+          "rank": 79,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -12.95,
+          "rank": 79,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.0,
+          "rank": 79,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.0,
+          "rank": 79,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.0,
+          "rank": 79,
+          "rank_scope": "league"
+        },
+        "top10_win_pct": {
+          "value": null,
+          "rank": null,
+          "rank_scope": "league"
+        },
+        "top33_win_pct": {
+          "value": null,
+          "rank": null,
+          "rank_scope": "league"
+        }
+      },
+      "advanced_metrics": {
+        "si_plus": {
+          "value": 91.2,
+          "rank": 79,
+          "rank_scope": "league"
+        },
+        "df_plus": {
+          "value": 81.7,
+          "rank": 79,
+          "rank_scope": "league"
+        },
+        "apr_plus": {
+          "value": 97.5,
+          "rank": 78,
+          "rank_scope": "league"
+        }
+      },
+      "counts": {
+        "matches_included": 26,
+        "wins_included": 1,
+        "losses_included": 25,
+        "win_pct": 0.038,
+        "wrestlers_included": 9,
         "starters_mode": "ranking_files_with_overrides"
       }
     },
@@ -3088,32 +3166,32 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 9.87,
-          "rank": 8,
+          "value": 10.07,
+          "rank": 10,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 5.55,
-          "rank": 40,
+          "value": 5.18,
+          "rank": 31,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 4.32,
-          "rank": 15,
+          "value": 4.9,
+          "rank": 10,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.557,
-          "rank": 16,
+          "value": 0.567,
+          "rank": 14,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.129,
-          "rank": 22,
+          "value": 0.134,
+          "rank": 19,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.243,
+          "value": 0.239,
           "rank": 12,
           "rank_scope": "league"
         },
@@ -3123,34 +3201,34 @@
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.488,
+          "value": 0.512,
           "rank": 9,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 109.5,
-          "rank": 12,
+          "value": 110.4,
+          "rank": 10,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 106.4,
-          "rank": 32,
+          "value": 107.5,
+          "rank": 23,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 103.9,
-          "rank": 6,
+          "value": 104.3,
+          "rank": 5,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 101,
-        "wins_included": 70,
-        "losses_included": 31,
-        "win_pct": 0.693,
-        "wrestlers_included": 10,
+        "matches_included": 94,
+        "wins_included": 67,
+        "losses_included": 27,
+        "win_pct": 0.713,
+        "wrestlers_included": 9,
         "starters_mode": "ranking_files_with_overrides"
       }
     },
@@ -3166,68 +3244,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 8.15,
-          "rank": 32,
+          "value": 7.63,
+          "rank": 36,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 5.16,
-          "rank": 31,
+          "value": 5.44,
+          "rank": 37,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 2.99,
-          "rank": 26,
+          "value": 2.19,
+          "rank": 39,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.394,
-          "rank": 51,
+          "value": 0.318,
+          "rank": 66,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.152,
-          "rank": 15,
+          "value": 0.106,
+          "rank": 34,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.106,
-          "rank": 57,
+          "value": 0.061,
+          "rank": 65,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 44,
+          "rank": 46,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.25,
-          "rank": 44,
+          "value": 0.308,
+          "rank": 33,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 104.3,
-          "rank": 44,
+          "value": 104.1,
+          "rank": 45,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 105.4,
-          "rank": 41,
+          "value": 104.5,
+          "rank": 47,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 104.1,
-          "rank": 4,
+          "value": 102.4,
+          "rank": 14,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 94,
+        "matches_included": 92,
         "wins_included": 66,
-        "losses_included": 28,
-        "win_pct": 0.702,
+        "losses_included": 26,
+        "win_pct": 0.717,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -3245,12 +3323,12 @@
       "metrics": {
         "avg_pf7": {
           "value": 9.4,
-          "rank": 13,
+          "rank": 14,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 4.65,
-          "rank": 16,
+          "rank": 17,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -3260,12 +3338,12 @@
         },
         "bonus_rate": {
           "value": 0.506,
-          "rank": 32,
+          "rank": 31,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.047,
-          "rank": 72,
+          "rank": 70,
           "rank_scope": "league"
         },
         "tech_rate": {
@@ -3287,17 +3365,17 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 109.5,
-          "rank": 11,
+          "rank": 13,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 108.8,
-          "rank": 10,
+          "rank": 12,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.9,
-          "rank": 54,
+          "rank": 52,
           "rank_scope": "league"
         }
       },
@@ -3323,12 +3401,12 @@
       "metrics": {
         "avg_pf7": {
           "value": 7.85,
-          "rank": 34,
+          "rank": 35,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 4.92,
-          "rank": 24,
+          "rank": 23,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -3343,7 +3421,7 @@
         },
         "pin_rate": {
           "value": 0.114,
-          "rank": 33,
+          "rank": 26,
           "rank_scope": "league"
         },
         "tech_rate": {
@@ -3353,7 +3431,7 @@
         },
         "top10_win_pct": {
           "value": 0.143,
-          "rank": 25,
+          "rank": 24,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -3365,12 +3443,12 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 105.6,
-          "rank": 36,
+          "rank": 35,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 107.5,
-          "rank": 20,
+          "rank": 22,
           "rank_scope": "league"
         },
         "apr_plus": {
@@ -3400,17 +3478,17 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 6.17,
-          "rank": 62,
+          "value": 6.3,
+          "rank": 61,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 8.13,
-          "rank": 73,
+          "value": 8.51,
+          "rank": 72,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": -1.95,
+          "value": -2.21,
           "rank": 73,
           "rank_scope": "league"
         },
@@ -3421,12 +3499,12 @@
         },
         "pin_rate": {
           "value": 0.056,
-          "rank": 69,
+          "rank": 67,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.111,
-          "rank": 55,
+          "rank": 52,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -3442,26 +3520,26 @@
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 100.4,
-          "rank": 62,
+          "value": 100.8,
+          "rank": 59,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 100.2,
-          "rank": 69,
+          "value": 99.7,
+          "rank": 70,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.3,
-          "rank": 65,
+          "rank": 64,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 36,
+        "matches_included": 35,
         "wins_included": 18,
-        "losses_included": 18,
-        "win_pct": 0.5,
+        "losses_included": 17,
+        "win_pct": 0.514,
         "wrestlers_included": 9,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -3478,68 +3556,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 7.11,
-          "rank": 48,
+          "value": 7.22,
+          "rank": 45,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 4.81,
-          "rank": 22,
+          "value": 4.59,
+          "rank": 15,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 2.3,
-          "rank": 37,
+          "value": 2.62,
+          "rank": 34,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.375,
-          "rank": 56,
+          "value": 0.397,
+          "rank": 51,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.069,
-          "rank": 62,
+          "value": 0.09,
+          "rank": 44,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.111,
-          "rank": 53,
+          "value": 0.103,
+          "rank": 55,
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.111,
-          "rank": 30,
+          "value": 0.1,
+          "rank": 29,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.289,
-          "rank": 36,
+          "value": 0.268,
+          "rank": 39,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 105.1,
-          "rank": 37,
+          "value": 105.5,
+          "rank": 36,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 107.3,
-          "rank": 21,
+          "value": 107.8,
+          "rank": 18,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 100.2,
-          "rank": 44,
+          "value": 101.0,
+          "rank": 32,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 118,
-        "wins_included": 72,
-        "losses_included": 46,
-        "win_pct": 0.61,
+        "matches_included": 123,
+        "wins_included": 78,
+        "losses_included": 45,
+        "win_pct": 0.634,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -3557,12 +3635,12 @@
       "metrics": {
         "avg_pf7": {
           "value": 6.71,
-          "rank": 56,
+          "rank": 54,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 4.78,
-          "rank": 20,
+          "rank": 21,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -3572,12 +3650,12 @@
         },
         "bonus_rate": {
           "value": 0.34,
-          "rank": 64,
+          "rank": 63,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.075,
-          "rank": 59,
+          "rank": 57,
           "rank_scope": "league"
         },
         "tech_rate": {
@@ -3592,7 +3670,7 @@
         },
         "top33_win_pct": {
           "value": 0.486,
-          "rank": 11,
+          "rank": 12,
           "rank_scope": "league"
         }
       },
@@ -3604,12 +3682,12 @@
         },
         "df_plus": {
           "value": 109.0,
-          "rank": 9,
+          "rank": 11,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 101.0,
-          "rank": 36,
+          "rank": 34,
           "rank_scope": "league"
         }
       },
@@ -3635,12 +3713,12 @@
       "metrics": {
         "avg_pf7": {
           "value": 9.73,
-          "rank": 10,
+          "rank": 11,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 4.09,
-          "rank": 5,
+          "rank": 7,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -3655,7 +3733,7 @@
         },
         "pin_rate": {
           "value": 0.123,
-          "rank": 26,
+          "rank": 22,
           "rank_scope": "league"
         },
         "tech_rate": {
@@ -3687,7 +3765,7 @@
         },
         "apr_plus": {
           "value": 103.0,
-          "rank": 10,
+          "rank": 9,
           "rank_scope": "league"
         }
       },
@@ -3712,68 +3790,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 8.04,
-          "rank": 33,
+          "value": 8.12,
+          "rank": 29,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 4.37,
-          "rank": 12,
+          "value": 4.5,
+          "rank": 13,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 3.67,
-          "rank": 21,
+          "value": 3.62,
+          "rank": 24,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.448,
-          "rank": 41,
+          "value": 0.473,
+          "rank": 37,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.121,
-          "rank": 27,
+          "value": 0.109,
+          "rank": 32,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.155,
-          "rank": 37,
+          "value": 0.164,
+          "rank": 31,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 59,
+          "rank": 61,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.438,
-          "rank": 16,
+          "value": 0.353,
+          "rank": 28,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 105.7,
-          "rank": 35,
+          "value": 106.1,
+          "rank": 30,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 108.0,
-          "rank": 16,
+          "value": 107.8,
+          "rank": 19,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 102.6,
-          "rank": 14,
+          "value": 102.4,
+          "rank": 17,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 76,
-        "wins_included": 58,
-        "losses_included": 18,
-        "win_pct": 0.763,
+        "matches_included": 75,
+        "wins_included": 55,
+        "losses_included": 20,
+        "win_pct": 0.733,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -3791,7 +3869,7 @@
       "metrics": {
         "avg_pf7": {
           "value": 5.33,
-          "rank": 70,
+          "rank": 71,
           "rank_scope": "league"
         },
         "avg_pa7": {
@@ -3801,22 +3879,22 @@
         },
         "avg_pd7": {
           "value": -1.45,
-          "rank": 70,
+          "rank": 66,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.25,
-          "rank": 77,
+          "rank": 75,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.083,
-          "rank": 51,
+          "rank": 49,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.083,
-          "rank": 62,
+          "rank": 60,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -3838,12 +3916,12 @@
         },
         "df_plus": {
           "value": 102.8,
-          "rank": 56,
+          "rank": 55,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.0,
-          "rank": 53,
+          "rank": 51,
           "rank_scope": "league"
         }
       },
@@ -3869,7 +3947,7 @@
       "metrics": {
         "avg_pf7": {
           "value": 5.05,
-          "rank": 73,
+          "rank": 74,
           "rank_scope": "league"
         },
         "avg_pa7": {
@@ -3879,12 +3957,12 @@
         },
         "avg_pd7": {
           "value": -1.7,
-          "rank": 71,
+          "rank": 69,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.263,
-          "rank": 75,
+          "rank": 74,
           "rank_scope": "league"
         },
         "pin_rate": {
@@ -3894,7 +3972,7 @@
         },
         "tech_rate": {
           "value": 0.158,
-          "rank": 33,
+          "rank": 34,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -3904,24 +3982,24 @@
         },
         "top33_win_pct": {
           "value": 0.133,
-          "rank": 54,
+          "rank": 55,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 96.9,
-          "rank": 75,
+          "rank": 76,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 102.4,
-          "rank": 61,
+          "rank": 60,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 97.2,
-          "rank": 78,
+          "rank": 79,
           "rank_scope": "league"
         }
       },
@@ -3947,32 +4025,32 @@
       "metrics": {
         "avg_pf7": {
           "value": 5.14,
-          "rank": 72,
+          "rank": 73,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 5.83,
-          "rank": 43,
+          "rank": 42,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": -0.7,
-          "rank": 63,
+          "rank": 62,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.222,
-          "rank": 78,
+          "rank": 77,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.083,
-          "rank": 50,
+          "rank": 48,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.0,
-          "rank": 75,
+          "rank": 76,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -3982,7 +4060,7 @@
         },
         "top33_win_pct": {
           "value": 0.235,
-          "rank": 46,
+          "rank": 47,
           "rank_scope": "league"
         }
       },
@@ -3994,7 +4072,7 @@
         },
         "df_plus": {
           "value": 104.1,
-          "rank": 48,
+          "rank": 49,
           "rank_scope": "league"
         },
         "apr_plus": {
@@ -4025,54 +4103,54 @@
       "metrics": {
         "avg_pf7": {
           "value": 7.4,
-          "rank": 42,
+          "rank": 41,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 4.92,
-          "rank": 25,
+          "rank": 24,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 2.48,
-          "rank": 36,
+          "rank": 37,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.373,
-          "rank": 57,
+          "rank": 56,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.039,
-          "rank": 74,
+          "rank": 75,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.078,
-          "rank": 63,
+          "rank": 61,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 60,
+          "rank": 59,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.31,
-          "rank": 34,
+          "rank": 32,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 107.4,
-          "rank": 22,
+          "rank": 24,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 107.1,
-          "rank": 23,
+          "rank": 25,
           "rank_scope": "league"
         },
         "apr_plus": {
@@ -4102,68 +4180,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 7.62,
-          "rank": 36,
+          "value": 7.98,
+          "rank": 31,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 4.8,
-          "rank": 21,
-          "rank_scope": "league"
-        },
-        "avg_pd7": {
-          "value": 2.81,
-          "rank": 29,
-          "rank_scope": "league"
-        },
-        "bonus_rate": {
-          "value": 0.471,
+          "value": 5.39,
           "rank": 36,
           "rank_scope": "league"
         },
+        "avg_pd7": {
+          "value": 2.58,
+          "rank": 35,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.49,
+          "rank": 35,
+          "rank_scope": "league"
+        },
         "pin_rate": {
-          "value": 0.059,
-          "rank": 67,
+          "value": 0.041,
+          "rank": 73,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.098,
-          "rank": 60,
+          "value": 0.102,
+          "rank": 56,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 49,
+          "rank": 51,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.333,
-          "rank": 32,
+          "value": 0.3,
+          "rank": 36,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 106.7,
-          "rank": 27,
+          "value": 107.6,
+          "rank": 21,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 106.7,
-          "rank": 28,
+          "value": 105.5,
+          "rank": 41,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 98.8,
-          "rank": 72,
+          "value": 98.4,
+          "rank": 75,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 88,
-        "wins_included": 51,
-        "losses_included": 37,
-        "win_pct": 0.58,
+        "matches_included": 87,
+        "wins_included": 49,
+        "losses_included": 38,
+        "win_pct": 0.563,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -4180,68 +4258,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 6.82,
-          "rank": 54,
+          "value": 6.5,
+          "rank": 56,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 6.39,
-          "rank": 52,
+          "value": 5.9,
+          "rank": 44,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 0.43,
-          "rank": 54,
+          "value": 0.59,
+          "rank": 49,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.478,
-          "rank": 35,
+          "value": 0.458,
+          "rank": 38,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.109,
+          "value": 0.104,
           "rank": 36,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.13,
-          "rank": 46,
+          "value": 0.125,
+          "rank": 48,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 52,
+          "rank": 50,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.25,
-          "rank": 45,
+          "value": 0.24,
+          "rank": 46,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 100.9,
-          "rank": 57,
+          "rank": 58,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 104.0,
-          "rank": 49,
+          "value": 104.6,
+          "rank": 45,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 101.3,
-          "rank": 28,
+          "value": 101.5,
+          "rank": 25,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 83,
-        "wins_included": 46,
-        "losses_included": 37,
-        "win_pct": 0.554,
+        "matches_included": 88,
+        "wins_included": 48,
+        "losses_included": 40,
+        "win_pct": 0.545,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -4279,7 +4357,7 @@
         },
         "pin_rate": {
           "value": 0.079,
-          "rank": 55,
+          "rank": 52,
           "rank_scope": "league"
         },
         "tech_rate": {
@@ -4289,7 +4367,7 @@
         },
         "top10_win_pct": {
           "value": 0.652,
-          "rank": 3,
+          "rank": 2,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4306,7 +4384,7 @@
         },
         "df_plus": {
           "value": 109.0,
-          "rank": 8,
+          "rank": 10,
           "rank_scope": "league"
         },
         "apr_plus": {
@@ -4337,7 +4415,7 @@
       "metrics": {
         "avg_pf7": {
           "value": 7.42,
-          "rank": 40,
+          "rank": 39,
           "rank_scope": "league"
         },
         "avg_pa7": {
@@ -4352,17 +4430,17 @@
         },
         "bonus_rate": {
           "value": 0.4,
-          "rank": 50,
+          "rank": 48,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.092,
-          "rank": 45,
+          "rank": 41,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.185,
-          "rank": 25,
+          "rank": 24,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -4372,7 +4450,7 @@
         },
         "top33_win_pct": {
           "value": 0.318,
-          "rank": 33,
+          "rank": 31,
           "rank_scope": "league"
         }
       },
@@ -4384,12 +4462,12 @@
         },
         "df_plus": {
           "value": 107.2,
-          "rank": 22,
+          "rank": 24,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 101.7,
-          "rank": 24,
+          "rank": 23,
           "rank_scope": "league"
         }
       },
@@ -4415,12 +4493,12 @@
       "metrics": {
         "avg_pf7": {
           "value": 9.44,
-          "rank": 12,
+          "rank": 13,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 3.43,
-          "rank": 1,
+          "rank": 2,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -4430,22 +4508,22 @@
         },
         "bonus_rate": {
           "value": 0.527,
-          "rank": 24,
+          "rank": 23,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.109,
-          "rank": 37,
+          "rank": 33,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.255,
-          "rank": 10,
+          "rank": 9,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.381,
-          "rank": 8,
+          "rank": 9,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4457,17 +4535,17 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 109.9,
-          "rank": 9,
+          "rank": 11,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 111.7,
-          "rank": 2,
+          "rank": 1,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.8,
-          "rank": 39,
+          "rank": 38,
           "rank_scope": "league"
         }
       },
@@ -4493,17 +4571,17 @@
       "metrics": {
         "avg_pf7": {
           "value": 9.58,
-          "rank": 11,
+          "rank": 12,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 4.71,
-          "rank": 19,
+          "rank": 20,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 4.87,
-          "rank": 10,
+          "rank": 11,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -4513,12 +4591,12 @@
         },
         "pin_rate": {
           "value": 0.118,
-          "rank": 29,
+          "rank": 23,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.158,
-          "rank": 32,
+          "rank": 33,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -4535,12 +4613,12 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 109.2,
-          "rank": 13,
+          "rank": 14,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 107.7,
-          "rank": 19,
+          "rank": 21,
           "rank_scope": "league"
         },
         "apr_plus": {
@@ -4571,12 +4649,12 @@
       "metrics": {
         "avg_pf7": {
           "value": 5.34,
-          "rank": 69,
+          "rank": 70,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 4.33,
-          "rank": 11,
+          "rank": 12,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -4591,7 +4669,7 @@
         },
         "pin_rate": {
           "value": 0.074,
-          "rank": 60,
+          "rank": 59,
           "rank_scope": "league"
         },
         "tech_rate": {
@@ -4601,29 +4679,29 @@
         },
         "top10_win_pct": {
           "value": 0.333,
-          "rank": 9,
+          "rank": 10,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.4,
-          "rank": 18,
+          "rank": 16,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 100.5,
-          "rank": 60,
+          "rank": 61,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 106.4,
-          "rank": 33,
+          "rank": 32,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 101.5,
-          "rank": 27,
+          "rank": 26,
           "rank_scope": "league"
         }
       },
@@ -4648,22 +4726,22 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 16.33,
+          "value": 16.72,
           "rank": 1,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 4.26,
-          "rank": 9,
+          "value": 4.21,
+          "rank": 10,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 12.07,
+          "value": 12.51,
           "rank": 1,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.873,
+          "value": 0.877,
           "rank": 1,
           "rank_scope": "league"
         },
@@ -4673,44 +4751,44 @@
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.381,
+          "value": 0.386,
           "rank": 2,
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.667,
-          "rank": 2,
+          "value": 0.6,
+          "rank": 3,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.833,
+          "value": 0.857,
           "rank": 1,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 128.9,
+          "value": 130.1,
           "rank": 1,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 108.2,
-          "rank": 15,
+          "value": 108.0,
+          "rank": 16,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 118.7,
+          "value": 119.0,
           "rank": 1,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 67,
-        "wins_included": 63,
-        "losses_included": 4,
-        "win_pct": 0.94,
-        "wrestlers_included": 10,
+        "matches_included": 60,
+        "wins_included": 57,
+        "losses_included": 3,
+        "win_pct": 0.95,
+        "wrestlers_included": 9,
         "starters_mode": "ranking_files_with_overrides"
       }
     },
@@ -4726,68 +4804,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 8.28,
-          "rank": 27,
+          "value": 7.91,
+          "rank": 32,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 5.34,
-          "rank": 35,
+          "value": 5.03,
+          "rank": 25,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 2.94,
-          "rank": 27,
+          "value": 2.88,
+          "rank": 29,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.449,
-          "rank": 39,
+          "value": 0.4,
+          "rank": 49,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.061,
-          "rank": 66,
+          "value": 0.04,
+          "rank": 74,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.265,
-          "rank": 7,
+          "value": 0.24,
+          "rank": 11,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 54,
+          "rank": 55,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.233,
-          "rank": 47,
+          "value": 0.241,
+          "rank": 45,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 108.1,
-          "rank": 18,
+          "value": 106.9,
+          "rank": 27,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 106.5,
-          "rank": 30,
+          "value": 106.9,
+          "rank": 26,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 99.6,
-          "rank": 62,
+          "value": 98.8,
+          "rank": 72,
           "rank_scope": "league"
         }
       },
       "counts": {
         "matches_included": 80,
-        "wins_included": 49,
-        "losses_included": 31,
-        "win_pct": 0.613,
+        "wins_included": 50,
+        "losses_included": 30,
+        "win_pct": 0.625,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -4804,33 +4882,33 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 8.76,
-          "rank": 19,
+          "value": 8.09,
+          "rank": 30,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 8.77,
-          "rank": 74,
+          "value": 9.92,
+          "rank": 78,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": -0.01,
-          "rank": 57,
+          "value": -1.83,
+          "rank": 70,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.577,
-          "rank": 12,
+          "value": 0.5,
+          "rank": 32,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.038,
-          "rank": 75,
+          "value": 0.042,
+          "rank": 72,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.231,
-          "rank": 14,
+          "value": 0.208,
+          "rank": 17,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -4846,26 +4924,26 @@
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 98.7,
-          "rank": 72,
+          "value": 99.8,
+          "rank": 68,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 95.4,
-          "rank": 77,
+          "value": 94.8,
+          "rank": 78,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 97.5,
-          "rank": 77,
+          "value": 97.9,
+          "rank": 76,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 55,
-        "wins_included": 26,
-        "losses_included": 29,
-        "win_pct": 0.473,
+        "matches_included": 50,
+        "wins_included": 24,
+        "losses_included": 26,
+        "win_pct": 0.48,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -4888,22 +4966,22 @@
         },
         "avg_pa7": {
           "value": 5.77,
-          "rank": 42,
+          "rank": 41,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 1.49,
-          "rank": 44,
+          "rank": 45,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.538,
-          "rank": 21,
+          "rank": 20,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.115,
-          "rank": 31,
+          "rank": 24,
           "rank_scope": "league"
         },
         "tech_rate": {
@@ -4918,24 +4996,24 @@
         },
         "top33_win_pct": {
           "value": 0.256,
-          "rank": 42,
+          "rank": 44,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 104.8,
-          "rank": 38,
+          "rank": 37,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 106.7,
-          "rank": 27,
+          "rank": 29,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.0,
-          "rank": 50,
+          "rank": 49,
           "rank_scope": "league"
         }
       },
@@ -4971,17 +5049,17 @@
         },
         "avg_pd7": {
           "value": 3.88,
-          "rank": 17,
+          "rank": 20,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.448,
-          "rank": 40,
+          "rank": 41,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.075,
-          "rank": 58,
+          "rank": 56,
           "rank_scope": "league"
         },
         "tech_rate": {
@@ -4991,29 +5069,29 @@
         },
         "top10_win_pct": {
           "value": 0.143,
-          "rank": 27,
+          "rank": 26,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.389,
-          "rank": 22,
+          "rank": 20,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 107.5,
-          "rank": 21,
+          "rank": 22,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 106.8,
-          "rank": 25,
+          "rank": 27,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.2,
-          "rank": 45,
+          "rank": 44,
           "rank_scope": "league"
         }
       },
@@ -5039,7 +5117,7 @@
       "metrics": {
         "avg_pf7": {
           "value": 7.43,
-          "rank": 39,
+          "rank": 38,
           "rank_scope": "league"
         },
         "avg_pa7": {
@@ -5049,27 +5127,27 @@
         },
         "avg_pd7": {
           "value": 0.52,
-          "rank": 53,
+          "rank": 54,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.368,
-          "rank": 58,
+          "rank": 57,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.053,
-          "rank": 70,
+          "rank": 68,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.123,
-          "rank": 48,
+          "rank": 49,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 43,
+          "rank": 45,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -5081,17 +5159,17 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 105.9,
-          "rank": 31,
+          "rank": 32,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 103.8,
-          "rank": 52,
+          "rank": 53,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.2,
-          "rank": 66,
+          "rank": 65,
           "rank_scope": "league"
         }
       },
@@ -5122,7 +5200,7 @@
         },
         "avg_pa7": {
           "value": 4.63,
-          "rank": 15,
+          "rank": 16,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -5142,17 +5220,17 @@
         },
         "tech_rate": {
           "value": 0.309,
-          "rank": 4,
+          "rank": 3,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.143,
-          "rank": 28,
+          "rank": 27,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.4,
-          "rank": 19,
+          "rank": 17,
           "rank_scope": "league"
         }
       },
@@ -5169,7 +5247,7 @@
         },
         "apr_plus": {
           "value": 99.0,
-          "rank": 70,
+          "rank": 69,
           "rank_scope": "league"
         }
       },
@@ -5194,38 +5272,38 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 5.03,
-          "rank": 75,
+          "value": 5.36,
+          "rank": 69,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 8.79,
-          "rank": 75,
+          "value": 8.89,
+          "rank": 74,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": -3.76,
+          "value": -3.54,
           "rank": 74,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.333,
-          "rank": 66,
+          "value": 0.304,
+          "rank": 69,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.125,
-          "rank": 23,
+          "value": 0.087,
+          "rank": 46,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.125,
-          "rank": 47,
+          "value": 0.13,
+          "rank": 46,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 70,
+          "rank": 72,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -5236,8 +5314,8 @@
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 96.0,
-          "rank": 77,
+          "value": 97.4,
+          "rank": 74,
           "rank_scope": "league"
         },
         "df_plus": {
@@ -5246,16 +5324,16 @@
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 98.6,
-          "rank": 75,
+          "value": 98.9,
+          "rank": 71,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 62,
-        "wins_included": 24,
-        "losses_included": 38,
-        "win_pct": 0.387,
+        "matches_included": 58,
+        "wins_included": 23,
+        "losses_included": 35,
+        "win_pct": 0.397,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -5272,33 +5350,33 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 6.91,
-          "rank": 52,
+          "value": 7.03,
+          "rank": 48,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 4.17,
-          "rank": 7,
+          "value": 3.32,
+          "rank": 1,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 2.74,
-          "rank": 34,
+          "value": 3.71,
+          "rank": 23,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.271,
-          "rank": 74,
+          "value": 0.305,
+          "rank": 68,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.068,
-          "rank": 63,
+          "rank": 62,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.068,
-          "rank": 66,
+          "rank": 64,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -5307,25 +5385,25 @@
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.4,
-          "rank": 17,
+          "value": 0.375,
+          "rank": 23,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 103.0,
-          "rank": 50,
+          "value": 102.5,
+          "rank": 52,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 107.0,
-          "rank": 24,
+          "value": 109.7,
+          "rank": 6,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 100.2,
-          "rank": 46,
+          "value": 100.1,
+          "rank": 48,
           "rank_scope": "league"
         }
       },
@@ -5356,12 +5434,12 @@
         },
         "avg_pa7": {
           "value": 4.68,
-          "rank": 18,
+          "rank": 19,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 3.82,
-          "rank": 19,
+          "rank": 21,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -5381,12 +5459,12 @@
         },
         "top10_win_pct": {
           "value": 0.125,
-          "rank": 29,
+          "rank": 28,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.486,
-          "rank": 10,
+          "rank": 11,
           "rank_scope": "league"
         }
       },
@@ -5398,12 +5476,12 @@
         },
         "df_plus": {
           "value": 108.5,
-          "rank": 13,
+          "rank": 14,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.3,
-          "rank": 64,
+          "rank": 63,
           "rank_scope": "league"
         }
       },
@@ -5434,7 +5512,7 @@
         },
         "avg_pa7": {
           "value": 5.92,
-          "rank": 45,
+          "rank": 46,
           "rank_scope": "league"
         },
         "avg_pd7": {
@@ -5454,34 +5532,34 @@
         },
         "tech_rate": {
           "value": 0.186,
-          "rank": 24,
+          "rank": 23,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.071,
-          "rank": 31,
+          "rank": 30,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.476,
-          "rank": 12,
+          "rank": 13,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
           "value": 110.8,
-          "rank": 7,
+          "rank": 9,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 106.8,
-          "rank": 26,
+          "rank": 28,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 103.8,
-          "rank": 8,
+          "rank": 7,
           "rank_scope": "league"
         }
       },
@@ -5507,32 +5585,32 @@
       "metrics": {
         "avg_pf7": {
           "value": 5.9,
-          "rank": 67,
+          "rank": 65,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 6.33,
-          "rank": 50,
+          "rank": 52,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": -0.43,
-          "rank": 61,
+          "rank": 59,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.333,
-          "rank": 67,
+          "rank": 65,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.067,
-          "rank": 64,
+          "rank": 63,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.1,
-          "rank": 59,
+          "rank": 58,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -5554,12 +5632,12 @@
         },
         "df_plus": {
           "value": 104.4,
-          "rank": 46,
+          "rank": 48,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 99.0,
-          "rank": 71,
+          "rank": 70,
           "rank_scope": "league"
         }
       },
@@ -5584,33 +5662,33 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 5.93,
-          "rank": 66,
+          "value": 6.14,
+          "rank": 62,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 5.6,
-          "rank": 41,
+          "value": 5.84,
+          "rank": 43,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 0.32,
+          "value": 0.29,
           "rank": 55,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.279,
-          "rank": 73,
+          "value": 0.298,
+          "rank": 70,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.047,
-          "rank": 73,
+          "value": 0.064,
+          "rank": 64,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.116,
-          "rank": 51,
+          "value": 0.128,
+          "rank": 47,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -5619,33 +5697,33 @@
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.343,
-          "rank": 30,
+          "value": 0.308,
+          "rank": 34,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 100.7,
-          "rank": 58,
+          "value": 100.9,
+          "rank": 57,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 105.7,
+          "value": 105.6,
           "rank": 38,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 98.8,
-          "rank": 73,
+          "value": 99.3,
+          "rank": 62,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 79,
-        "wins_included": 43,
-        "losses_included": 36,
-        "win_pct": 0.544,
+        "matches_included": 89,
+        "wins_included": 47,
+        "losses_included": 42,
+        "win_pct": 0.528,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -5668,27 +5746,27 @@
         },
         "avg_pa7": {
           "value": 5.33,
-          "rank": 33,
+          "rank": 34,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 3.02,
-          "rank": 25,
+          "rank": 27,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.457,
-          "rank": 37,
+          "rank": 39,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 0.13,
-          "rank": 21,
+          "rank": 20,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.087,
-          "rank": 61,
+          "rank": 59,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -5715,7 +5793,7 @@
         },
         "apr_plus": {
           "value": 101.3,
-          "rank": 29,
+          "rank": 27,
           "rank_scope": "league"
         }
       },
@@ -5741,17 +5819,17 @@
       "metrics": {
         "avg_pf7": {
           "value": 8.15,
-          "rank": 31,
+          "rank": 28,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 5.39,
-          "rank": 36,
+          "rank": 35,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 2.75,
-          "rank": 33,
+          "rank": 32,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -5761,22 +5839,22 @@
         },
         "pin_rate": {
           "value": 0.114,
-          "rank": 34,
+          "rank": 27,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.157,
-          "rank": 34,
+          "rank": 35,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.143,
-          "rank": 26,
+          "rank": 25,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.396,
-          "rank": 20,
+          "rank": 18,
           "rank_scope": "league"
         }
       },
@@ -5788,12 +5866,12 @@
         },
         "df_plus": {
           "value": 107.7,
-          "rank": 18,
+          "rank": 20,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 101.1,
-          "rank": 32,
+          "rank": 31,
           "rank_scope": "league"
         }
       },
@@ -5819,22 +5897,22 @@
       "metrics": {
         "avg_pf7": {
           "value": 5.51,
-          "rank": 68,
+          "rank": 67,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 9.58,
-          "rank": 78,
+          "rank": 77,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": -4.07,
-          "rank": 76,
+          "rank": 75,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 0.536,
-          "rank": 22,
+          "rank": 21,
           "rank_scope": "league"
         },
         "pin_rate": {
@@ -5844,7 +5922,7 @@
         },
         "tech_rate": {
           "value": 0.107,
-          "rank": 56,
+          "rank": 53,
           "rank_scope": "league"
         },
         "top10_win_pct": {
@@ -5866,12 +5944,12 @@
         },
         "df_plus": {
           "value": 94.8,
-          "rank": 78,
+          "rank": 77,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.0,
-          "rank": 52,
+          "rank": 50,
           "rank_scope": "league"
         }
       },
@@ -5896,68 +5974,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 7.65,
-          "rank": 35,
+          "value": 7.9,
+          "rank": 33,
           "rank_scope": "league"
         },
         "avg_pa7": {
-          "value": 4.0,
-          "rank": 3,
+          "value": 3.88,
+          "rank": 4,
           "rank_scope": "league"
         },
         "avg_pd7": {
-          "value": 3.65,
-          "rank": 22,
+          "value": 4.02,
+          "rank": 18,
           "rank_scope": "league"
         },
         "bonus_rate": {
-          "value": 0.512,
+          "value": 0.519,
           "rank": 26,
           "rank_scope": "league"
         },
         "pin_rate": {
-          "value": 0.159,
+          "value": 0.156,
           "rank": 13,
           "rank_scope": "league"
         },
         "tech_rate": {
-          "value": 0.146,
+          "value": 0.143,
           "rank": 41,
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.143,
-          "rank": 24,
+          "value": 0.0,
+          "rank": 36,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.469,
-          "rank": 13,
+          "value": 0.488,
+          "rank": 10,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 106.2,
+          "value": 106.7,
           "rank": 28,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 109.7,
-          "rank": 6,
+          "value": 109.8,
+          "rank": 5,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 104.0,
-          "rank": 5,
+          "value": 104.3,
+          "rank": 4,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 126,
-        "wins_included": 82,
-        "losses_included": 44,
-        "win_pct": 0.651,
+        "matches_included": 115,
+        "wins_included": 77,
+        "losses_included": 38,
+        "win_pct": 0.67,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -5975,7 +6053,7 @@
       "metrics": {
         "avg_pf7": {
           "value": 10.16,
-          "rank": 7,
+          "rank": 9,
           "rank_scope": "league"
         },
         "avg_pa7": {
@@ -5995,22 +6073,22 @@
         },
         "pin_rate": {
           "value": 0.102,
-          "rank": 39,
+          "rank": 37,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.186,
-          "rank": 23,
+          "rank": 22,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 55,
+          "rank": 56,
           "rank_scope": "league"
         },
         "top33_win_pct": {
           "value": 0.261,
-          "rank": 39,
+          "rank": 41,
           "rank_scope": "league"
         }
       },
@@ -6027,7 +6105,7 @@
         },
         "apr_plus": {
           "value": 100.4,
-          "rank": 41,
+          "rank": 39,
           "rank_scope": "league"
         }
       },
@@ -6052,68 +6130,68 @@
       },
       "metrics": {
         "avg_pf7": {
-          "value": 7.61,
-          "rank": 37,
-          "rank_scope": "league"
-        },
-        "avg_pa7": {
-          "value": 8.04,
-          "rank": 72,
-          "rank_scope": "league"
-        },
-        "avg_pd7": {
-          "value": -0.43,
-          "rank": 60,
-          "rank_scope": "league"
-        },
-        "bonus_rate": {
-          "value": 0.405,
-          "rank": 49,
-          "rank_scope": "league"
-        },
-        "pin_rate": {
-          "value": 0.081,
-          "rank": 52,
-          "rank_scope": "league"
-        },
-        "tech_rate": {
-          "value": 0.135,
+          "value": 7.29,
           "rank": 43,
           "rank_scope": "league"
         },
+        "avg_pa7": {
+          "value": 8.76,
+          "rank": 73,
+          "rank_scope": "league"
+        },
+        "avg_pd7": {
+          "value": -1.47,
+          "rank": 67,
+          "rank_scope": "league"
+        },
+        "bonus_rate": {
+          "value": 0.412,
+          "rank": 47,
+          "rank_scope": "league"
+        },
+        "pin_rate": {
+          "value": 0.088,
+          "rank": 45,
+          "rank_scope": "league"
+        },
+        "tech_rate": {
+          "value": 0.147,
+          "rank": 40,
+          "rank_scope": "league"
+        },
         "top10_win_pct": {
-          "value": 0.158,
+          "value": 0.15,
           "rank": 22,
           "rank_scope": "league"
         },
         "top33_win_pct": {
-          "value": 0.372,
-          "rank": 26,
+          "value": 0.34,
+          "rank": 30,
           "rank_scope": "league"
         }
       },
       "advanced_metrics": {
         "si_plus": {
-          "value": 107.2,
-          "rank": 24,
+          "value": 107.5,
+          "rank": 23,
           "rank_scope": "league"
         },
         "df_plus": {
-          "value": 103.6,
-          "rank": 54,
+          "value": 102.5,
+          "rank": 57,
           "rank_scope": "league"
         },
         "apr_plus": {
-          "value": 100.3,
-          "rank": 43,
+          "value": 100.4,
+          "rank": 40,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 72,
-        "wins_included": 37,
-        "losses_included": 35,
-        "win_pct": 0.514,
+        "matches_included": 74,
+        "wins_included": 34,
+        "losses_included": 40,
+        "win_pct": 0.459,
         "wrestlers_included": 10,
         "starters_mode": "ranking_files_with_overrides"
       }

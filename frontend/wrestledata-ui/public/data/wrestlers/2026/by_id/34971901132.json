@@ -3,26 +3,26 @@
   "name": "Ethan Wilson",
   "team": "Drexel",
   "team_slug": "drexel",
-  "team_rank": 44,
+  "team_rank": 42,
   "weight_class": 184,
   "year": 2026,
   "current_rank": 72,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "0-1",
+    "overall": "3-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 12.33,
-    "pa7": 5.0,
-    "pd7": 7.33,
-    "si_plus": 106.7,
-    "df_plus": 104.3,
-    "apr_plus": 96.8,
+    "pf7": 9.67,
+    "pa7": 6.5,
+    "pd7": 3.17,
+    "si_plus": 101.3,
+    "df_plus": 104.6,
+    "apr_plus": 97.1,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
-    "majors": 0,
+    "majors": 1,
     "techs": 2,
     "pins": 0,
     "mat_value": {
@@ -35,18 +35,60 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34939044132",
-      "opponent_rank": 4,
-      "opponent_name": "Rocco Welsh",
-      "method": "MD 13-3"
+      "opponent_id": "34945057132",
+      "opponent_rank": 22,
+      "opponent_name": "Shane Cartagena-Walsh",
+      "method": "MD 14-4"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34936105132",
+      "opponent_name": "Ceasar Garza",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 28,
+      "opponent_weight": 184,
+      "opponent_rank": 16,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "vs. Drexel"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34934026132",
+      "opponent_name": "David Alonso",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 64,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "vs. Drexel"
+    },
+    {
+      "date": "2025-12-14",
+      "opponent_id": "34945057132",
+      "opponent_name": "Shane Cartagena-Walsh",
+      "opponent_team": "Rutgers",
+      "opponent_team_rank": 17,
+      "opponent_weight": 184,
+      "opponent_rank": 22,
+      "result": "L",
+      "method": "MD",
+      "score": "14-4",
+      "duration": "7:00",
+      "event": "vs. Rutgers"
+    },
     {
       "date": "2025-12-05",
       "opponent_id": "34939044132",
@@ -67,7 +109,7 @@
       "opponent_id": "34950406132",
       "opponent_name": "David Hussey",
       "opponent_team": "Duke",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 69,
       "opponent_weight": 184,
       "opponent_rank": null,
       "result": "W",
@@ -82,7 +124,7 @@
       "opponent_id": "34977461132",
       "opponent_name": "Bryce Phillips",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 74,
       "opponent_weight": 184,
       "opponent_rank": null,
       "result": "W",
@@ -96,6 +138,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
+    "top33_bonus_ev_shrunk": 0.2222222222222222
   }
 }

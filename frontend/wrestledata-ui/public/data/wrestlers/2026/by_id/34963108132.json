@@ -3,26 +3,26 @@
   "name": "Eli Cordy",
   "team": "Oklahoma",
   "team_slug": "oklahoma",
-  "team_rank": 21,
-  "weight_class": 197,
+  "team_rank": 23,
+  "weight_class": 184,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
+    "overall": "1-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 102.8,
-    "df_plus": 103.0,
-    "apr_plus": 92.1,
+    "pf7": 18.0,
+    "pa7": 4.0,
+    "pd7": 14.0,
+    "si_plus": 129.0,
+    "df_plus": 107.3,
+    "apr_plus": 96.8,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "bonus_rate": 1.0,
+    "majors": 1,
     "techs": 0,
     "pins": 0
   },
@@ -34,10 +34,25 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34950406132",
+      "opponent_name": "David Hussey",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 69,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "18-4",
+      "duration": "7:00",
+      "event": "vs. Oklahoma"
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.4
+    "top33_bonus_ev_shrunk": 0.2222222222222222
   }
 }

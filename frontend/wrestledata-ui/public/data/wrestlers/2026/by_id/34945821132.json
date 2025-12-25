@@ -3,13 +3,13 @@
   "name": "Blaine Frazier",
   "team": "Indiana",
   "team_slug": "indiana",
-  "team_rank": 35,
+  "team_rank": 33,
   "weight_class": 133,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "4-3",
-    "vs_ranked": "2-3",
+    "overall": "4-4",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 7.4,
     "pa7": 5.6,
     "pd7": 1.8,
-    "si_plus": 106.2,
-    "df_plus": 103.2,
-    "apr_plus": 96.6,
+    "si_plus": 104.7,
+    "df_plus": 103.1,
+    "apr_plus": 96.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.25,
     "majors": 1,
@@ -35,7 +35,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -53,11 +53,25 @@
   },
   "match_list": [
     {
+      "date": "2025-12-07",
+      "opponent_id": "34945360132",
+      "opponent_name": "Dillon Cooper",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 14,
+      "opponent_weight": 133,
+      "opponent_rank": 40,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
+      "event": "vs. Little Rock"
+    },
+    {
       "date": "2025-12-05",
       "opponent_id": "34934102132",
       "opponent_name": "Andrew Austin",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 65,
       "opponent_weight": 133,
       "opponent_rank": 47,
       "result": "W",
@@ -72,7 +86,7 @@
       "opponent_id": "34951029132",
       "opponent_name": "Amonn Ohl",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 51,
       "opponent_weight": 133,
       "opponent_rank": 46,
       "result": "L",
@@ -87,7 +101,7 @@
       "opponent_id": "34944015132",
       "opponent_name": "Adan Benavidez",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 71,
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
@@ -102,7 +116,7 @@
       "opponent_id": "34933517132",
       "opponent_name": "Nathan Jerore",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 16,
       "opponent_weight": 141,
       "opponent_rank": 54,
       "result": "W",
@@ -147,7 +161,7 @@
       "opponent_id": "34944029132",
       "opponent_name": "Nick Molchak",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 71,
       "opponent_weight": 133,
       "opponent_rank": 54,
       "result": "L",
@@ -161,6 +175,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
+    "top33_bonus_ev_shrunk": 0.25
   }
 }

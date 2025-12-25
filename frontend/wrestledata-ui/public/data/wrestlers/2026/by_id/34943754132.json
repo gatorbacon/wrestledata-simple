@@ -4,27 +4,27 @@
   "team": "Arizona State",
   "team_slug": "arizona_state",
   "team_rank": 11,
-  "weight_class": 184,
+  "weight_class": 165,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
+    "overall": "3-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "pf7": 8.7,
+    "pa7": 0.92,
+    "pd7": 7.77,
+    "si_plus": 92.3,
+    "df_plus": 111.0,
+    "apr_plus": 108.0,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
+    "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +34,50 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34943286132",
+      "opponent_name": "Q`veli Quintanilla",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 31,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "2025 Dollamur Reno Tournament of Champions"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34950686132",
+      "opponent_name": "Luke James",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 64,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "2025 Dollamur Reno Tournament of Champions"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34933450132",
+      "opponent_name": "Seamus Casey",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 15,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "14-1",
+      "duration": "7:00",
+      "event": "2025 Dollamur Reno Tournament of Champions"
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,

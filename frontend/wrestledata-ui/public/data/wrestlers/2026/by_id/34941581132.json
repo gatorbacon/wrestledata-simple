@@ -8,23 +8,23 @@
   "year": 2026,
   "current_rank": 18,
   "record": {
-    "overall": "7-1",
-    "vs_ranked": "6-1",
+    "overall": "9-2",
+    "vs_ranked": "8-2",
     "vs_top10": "0-1",
-    "vs_top25": "1-1"
+    "vs_top25": "1-2"
   },
   "metrics": {
-    "pf7": 6.62,
-    "pa7": 2.75,
-    "pd7": 3.88,
-    "si_plus": 103.9,
-    "df_plus": 110.7,
-    "apr_plus": 97.9,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.286,
+    "pf7": 7.0,
+    "pa7": 3.6,
+    "pd7": 3.4,
+    "si_plus": 106.6,
+    "df_plus": 110.6,
+    "apr_plus": 103.6,
+    "pin_rate": 0.111,
+    "bonus_rate": 0.333,
     "majors": 2,
     "techs": 0,
-    "pins": 0,
+    "pins": 1,
     "mat_value": {
       "mv_avg": 2.808,
       "matches": 8,
@@ -34,8 +34,8 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 1,
+    "ranked_wins": 8,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -45,13 +45,55 @@
       "method": "Dec 4-2"
     },
     "worst_loss": {
-      "opponent_id": "34935697132",
-      "opponent_rank": 5,
-      "opponent_name": "Vincent Robinson",
-      "method": "Dec 8-3"
+      "opponent_id": "34963114132",
+      "opponent_rank": 24,
+      "opponent_name": "Conrad Hendriksen",
+      "method": "Dec 3-1"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "34971895132",
+      "opponent_name": "Desmond Pleasant",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 42,
+      "opponent_weight": 125,
+      "opponent_rank": 48,
+      "result": "W",
+      "method": "DEC",
+      "score": "16-11",
+      "duration": "7:00",
+      "event": "vs. Rutgers"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34963114132",
+      "opponent_name": "Conrad Hendriksen",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 23,
+      "opponent_weight": 125,
+      "opponent_rank": 24,
+      "result": "L",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "vs. Rutgers"
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34935905132",
+      "opponent_name": "Brady Joling",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 68,
+      "opponent_weight": 125,
+      "opponent_rank": 59,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:58",
+      "event": "vs. Rutgers"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34935697132",
@@ -72,7 +114,7 @@
       "opponent_id": "34951049132",
       "opponent_name": "Austin Zimmerman",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 51,
       "opponent_weight": 125,
       "opponent_rank": null,
       "result": "W",
@@ -87,7 +129,7 @@
       "opponent_id": "34934463132",
       "opponent_name": "James Garcia",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 32,
       "opponent_weight": 125,
       "opponent_rank": 38,
       "result": "W",
@@ -102,7 +144,7 @@
       "opponent_id": "34937682132",
       "opponent_name": "Teague Strobel",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 70,
       "opponent_weight": 125,
       "opponent_rank": 65,
       "result": "W",
@@ -117,7 +159,7 @@
       "opponent_id": "34935855132",
       "opponent_name": "Davis Motyka",
       "opponent_team": "Penn",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 29,
       "opponent_weight": 125,
       "opponent_rank": 23,
       "result": "W",
@@ -132,7 +174,7 @@
       "opponent_id": "34940490132",
       "opponent_name": "Andrew Binni",
       "opponent_team": "Navy",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 34,
       "opponent_weight": 125,
       "opponent_rank": 45,
       "result": "W",
@@ -147,7 +189,7 @@
       "opponent_id": "34936230132",
       "opponent_name": "Jace Schafer",
       "opponent_team": "Bloomsburg",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 61,
       "opponent_weight": 125,
       "opponent_rank": 50,
       "result": "W",
@@ -162,7 +204,7 @@
       "opponent_id": "34937478132",
       "opponent_name": "Tyson Lane",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 52,
       "opponent_weight": 125,
       "opponent_rank": 60,
       "result": "W",
@@ -176,6 +218,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.271604938271605
+    "top33_bonus_ev_shrunk": 0.3333333333333333
   }
 }

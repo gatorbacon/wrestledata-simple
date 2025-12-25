@@ -8,20 +8,20 @@
   "year": 2026,
   "current_rank": 2,
   "record": {
-    "overall": "5-0",
-    "vs_ranked": "5-0",
-    "vs_top10": "2-0",
-    "vs_top25": "3-0"
+    "overall": "6-0",
+    "vs_ranked": "6-0",
+    "vs_top10": "3-0",
+    "vs_top25": "4-0"
   },
   "metrics": {
-    "pf7": 5.5,
-    "pa7": 2.25,
-    "pd7": 3.25,
-    "si_plus": 106.8,
-    "df_plus": 115.0,
-    "apr_plus": 108.2,
-    "pin_rate": 0.2,
-    "bonus_rate": 0.2,
+    "pf7": 5.08,
+    "pa7": 1.97,
+    "pd7": 3.11,
+    "si_plus": 105.4,
+    "df_plus": 115.5,
+    "apr_plus": 107.3,
+    "pin_rate": 0.167,
+    "bonus_rate": 0.167,
     "majors": 0,
     "techs": 0,
     "pins": 1,
@@ -34,9 +34,9 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 6,
     "ranked_losses": 0,
-    "top10_wins": 2,
+    "top10_wins": 3,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34962161132",
@@ -48,11 +48,25 @@
   },
   "match_list": [
     {
+      "date": "2025-12-21",
+      "opponent_id": "34935629132",
+      "opponent_name": "LJ Araujo",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 165,
+      "opponent_rank": 9,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "vs. Oklahoma State"
+    },
+    {
       "date": "2025-11-21",
       "opponent_id": "34944225132",
       "opponent_name": "Sebastian Martinez",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 57,
       "opponent_weight": 165,
       "opponent_rank": 59,
       "result": "W",
@@ -67,7 +81,7 @@
       "opponent_id": "34962161132",
       "opponent_name": "Mikey Caliendo",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 4,
       "opponent_weight": 165,
       "opponent_rank": 3,
       "result": "W",
@@ -82,7 +96,7 @@
       "opponent_id": "34964488132",
       "opponent_name": "Louie Cerchio",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 9,
       "opponent_weight": 165,
       "opponent_rank": 49,
       "result": "W",
@@ -112,7 +126,7 @@
       "opponent_id": "34943445132",
       "opponent_name": "Hunter Garvin",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 22,
       "opponent_weight": 165,
       "opponent_rank": 8,
       "result": "W",
@@ -124,8 +138,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 3,
+    "top33_wins": 4,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.37229437229437234
+    "top33_bonus_ev_shrunk": 0.375
   }
 }

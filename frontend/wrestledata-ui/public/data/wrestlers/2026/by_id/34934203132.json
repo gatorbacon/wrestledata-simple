@@ -3,23 +3,23 @@
   "name": "Eli Cramer",
   "team": "VMI",
   "team_slug": "vmi",
-  "team_rank": 78,
+  "team_rank": 79,
   "weight_class": 141,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-0",
+    "overall": "0-5",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 3.75,
-    "pa7": 8.25,
-    "pd7": -4.5,
-    "si_plus": 93.1,
-    "df_plus": 99.7,
-    "apr_plus": 95.7,
+    "pf7": 3.0,
+    "pa7": 7.0,
+    "pd7": -4.0,
+    "si_plus": 89.8,
+    "df_plus": 99.8,
+    "apr_plus": 96.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -35,13 +35,32 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34936202132",
+      "opponent_rank": 76,
+      "opponent_name": "Richie Woods",
+      "method": "Dec 2-0"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34936202132",
+      "opponent_name": "Richie Woods",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 61,
+      "opponent_weight": 141,
+      "opponent_rank": 76,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "vs. VMI"
+    },
     {
       "date": "2025-12-07",
       "opponent_id": "34935702132",
@@ -62,7 +81,7 @@
       "opponent_id": "34939064132",
       "opponent_name": "Adam Heckman",
       "opponent_team": "Navy",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 34,
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "L",
@@ -77,7 +96,7 @@
       "opponent_id": "34941681132",
       "opponent_name": "Ryan Phillips",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 41,
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "L",
@@ -92,7 +111,7 @@
       "opponent_id": "34936993132",
       "opponent_name": "Austin Mckee",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 46,
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "L",
@@ -106,6 +125,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.375
+    "top33_bonus_ev_shrunk": 0.0
   }
 }

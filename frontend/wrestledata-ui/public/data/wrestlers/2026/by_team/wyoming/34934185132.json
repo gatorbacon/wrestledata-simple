@@ -3,26 +3,26 @@
   "name": "Isaiah Harrison",
   "team": "Wyoming",
   "team_slug": "wyoming",
-  "team_rank": 22,
-  "weight_class": 133,
+  "team_rank": 15,
+  "weight_class": 125,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
+    "overall": "2-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 102.8,
-    "df_plus": 103.0,
-    "apr_plus": 108.8,
+    "pf7": 8.5,
+    "pa7": 1.0,
+    "pd7": 7.5,
+    "si_plus": 94.2,
+    "df_plus": 108.8,
+    "apr_plus": 101.9,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "bonus_rate": 0.5,
+    "majors": 1,
     "techs": 0,
     "pins": 0
   },
@@ -34,5 +34,34 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34962151132",
+      "opponent_name": "Eathon Rider",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 63,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "2025 Dollamur Reno Tournament of Champions"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34936036132",
+      "opponent_name": "Christian Garcia",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 28,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "2025 Dollamur Reno Tournament of Champions"
+    }
+  ]
 }

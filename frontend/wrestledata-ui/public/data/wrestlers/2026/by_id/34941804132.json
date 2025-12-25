@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-2",
-    "vs_ranked": "1-1",
+    "overall": "2-4",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 6.25,
-    "pa7": 3.0,
-    "pd7": 3.25,
-    "si_plus": 100.3,
-    "df_plus": 111.3,
-    "apr_plus": 98.5,
+    "pf7": 4.45,
+    "pa7": 3.04,
+    "pd7": 1.41,
+    "si_plus": 97.5,
+    "df_plus": 111.9,
+    "apr_plus": 98.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 1,
@@ -35,7 +35,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -45,13 +45,41 @@
       "method": "MD 18-5"
     },
     "worst_loss": {
-      "opponent_id": "34943753132",
-      "opponent_rank": 15,
-      "opponent_name": "Pierson Manville",
-      "method": "Dec 2-0"
+      "opponent_id": "34934101132",
+      "opponent_rank": 37,
+      "opponent_name": "Kellan Aure",
+      "method": "SV-3 5-2"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34934101132",
+      "opponent_name": "Kellan Aure",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 65,
+      "opponent_weight": 141,
+      "opponent_rank": 37,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "8:15",
+      "event": "Kent State Open 2"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34946823132",
+      "opponent_name": "Luke Satriano",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 12,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Kent State Open 2"
+    },
     {
       "date": "2025-11-08",
       "opponent_id": "34943753132",
@@ -72,7 +100,7 @@
       "opponent_id": "34955734132",
       "opponent_name": "Giosue Hickman",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 45,
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "L",
@@ -87,7 +115,7 @@
       "opponent_id": "34952969132",
       "opponent_name": "Aaron Lanster",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 48,
       "opponent_weight": 141,
       "opponent_rank": 57,
       "result": "W",
@@ -102,7 +130,7 @@
       "opponent_id": "34935969132",
       "opponent_name": "CJ Carr",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 54,
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "W",
@@ -116,6 +144,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.375
+    "top33_bonus_ev_shrunk": 0.0
   }
 }
