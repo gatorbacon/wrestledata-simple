@@ -6,12 +6,12 @@
   "team_rank": 45,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 22,
   "record": {
     "overall": "10-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "2-2"
   },
   "metrics": {
     "pf7": 10.99,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34946723132",
+      "opponent_rank": 13,
+      "opponent_name": "Brody Conley",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "34941558132",
+      "opponent_rank": 62,
+      "opponent_name": "Dominic Lopez",
+      "method": "SV-1 8-7"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "W",
       "method": "DEC",
       "score": "8-3",
@@ -78,7 +88,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 16,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "L",
       "method": "DEC",
       "score": "12-10",
@@ -93,7 +103,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -107,7 +117,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 26,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -122,7 +132,7 @@
       "opponent_team": "Wyoming",
       "opponent_team_rank": 15,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "W",
       "method": "TF",
       "score": "19-4",
@@ -137,7 +147,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 22,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "W",
       "method": "DEC",
       "score": "9-7",
@@ -152,7 +162,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 46,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "W",
       "method": "MD",
       "score": "12-3",
@@ -182,7 +192,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 62,
       "result": "L",
       "method": "DEC",
       "score": "8-7",

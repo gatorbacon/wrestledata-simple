@@ -38,15 +38,19 @@ def _load_starter_rank_map(season: int, data_dir: str = "mt/rankings_data") -> D
     Load starter-only rankings and create a map from wrestler_id -> best (lowest) starter rank.
     
     Uses rankings_starters_*.json files which contain only starters with re-numbered ranks.
+    
+    NOTE: Always reads from the public data location (frontend/wrestledata-ui/public/data/rankings)
+    regardless of data_dir parameter, since rankings_starters files are stored there.
     """
-    base = Path(data_dir) / str(season)
-    if not base.exists():
-        raise FileNotFoundError(f"Rankings directory not found: {base}")
+    # Always read from public location - rankings_starters files are stored there
+    rankings_dir = Path("frontend/wrestledata-ui/public/data/rankings") / str(season)
+    if not rankings_dir.exists():
+        raise FileNotFoundError(f"Rankings directory not found: {rankings_dir}")
     
     rank_by_id: Dict[str, int] = {}
     
     # Load from starter-only rankings files
-    for p in sorted(base.glob("rankings_starters_*.json")):
+    for p in sorted(rankings_dir.glob("rankings_starters_*.json")):
         try:
             with p.open("r", encoding="utf-8") as f:
                 data = json.load(f)

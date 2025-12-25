@@ -6,12 +6,12 @@
   "team_rank": 5,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 15,
   "record": {
     "overall": "5-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-5",
+    "vs_top10": "0-4",
+    "vs_top25": "1-5"
   },
   "metrics": {
     "pf7": 6.33,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 4,
+    "win_over_highest_rank": {
+      "opponent_id": "34935760132",
+      "opponent_rank": 16,
+      "opponent_name": "Chance Lamer",
+      "method": "Dec 7-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34943458132",
+      "opponent_rank": 14,
+      "opponent_name": "Aden Valencia",
+      "method": "MD 13-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -108,7 +118,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "result": "L",
       "method": "DEC",
       "score": "8-1",
@@ -123,7 +133,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "DEC",
       "score": "5-3",
@@ -153,7 +163,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 9,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "result": "L",
       "method": "DEC",
       "score": "4-3",
@@ -168,7 +178,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -183,7 +193,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 22,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 14,
       "result": "L",
       "method": "MD",
       "score": "13-3",

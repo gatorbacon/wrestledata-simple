@@ -6,10 +6,10 @@
   "team_rank": 76,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 59,
   "record": {
     "overall": "4-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34935910132",
+      "opponent_rank": 76,
+      "opponent_name": "DJ Spring II",
+      "method": "Dec 4-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34934466132",
+      "opponent_rank": 58,
+      "opponent_name": "Brody Kline",
+      "method": "Dec 7-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 57,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 57,
       "result": "L",
       "method": "MD",
       "score": "12-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 68,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 76,
       "result": "W",
       "method": "DEC",
       "score": "4-0",
@@ -77,7 +87,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 58,
       "result": "L",
       "method": "DEC",
       "score": "7-3",
@@ -91,7 +101,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -120,7 +130,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "L",
       "method": "DEC",
       "score": "9-2",

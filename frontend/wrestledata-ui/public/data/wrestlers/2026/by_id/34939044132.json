@@ -6,12 +6,12 @@
   "team_rank": 1,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 4,
   "record": {
     "overall": "7-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "2-0"
   },
   "metrics": {
     "pf7": 14.44,
@@ -34,11 +34,16 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34933454132",
+      "opponent_rank": 11,
+      "opponent_name": "Eddie Neitenbach",
+      "method": "Dec 4-1"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -49,7 +54,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 75,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "result": "W",
       "method": "TF",
       "score": "19-4",
@@ -63,7 +68,7 @@
       "opponent_team": "Wyoming",
       "opponent_team_rank": 15,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 11,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -78,7 +83,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 13,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -93,7 +98,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "result": "W",
       "method": "MD",
       "score": "13-3",

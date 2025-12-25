@@ -6,12 +6,12 @@
   "team_rank": 60,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 26,
   "record": {
     "overall": "7-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 9.52,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34938483132",
+      "opponent_rank": 27,
+      "opponent_name": "Logan Messer",
+      "method": "Dec 6-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34954154132",
+      "opponent_rank": 25,
+      "opponent_name": "Myles Takats",
+      "method": "Dec 5-4"
+    }
   },
   "match_list": [
     {
@@ -64,7 +74,7 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 43,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "result": "W",
       "method": "DEC",
       "score": "6-3",
@@ -94,7 +104,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -109,7 +119,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 33,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -139,7 +149,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "W",
       "method": "DEC",
       "score": "9-6",
@@ -169,7 +179,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 37,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "result": "L",
       "method": "DEC",
       "score": "5-4",

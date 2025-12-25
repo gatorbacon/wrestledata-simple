@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "3-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 5.32,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34935055132",
+      "opponent_rank": 67,
+      "opponent_name": "Kade Kluce",
+      "method": "MD 17-4"
+    }
   },
   "match_list": [
     {
@@ -64,7 +69,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -79,7 +84,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 61,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 67,
       "result": "L",
       "method": "MD",
       "score": "17-4",
@@ -124,7 +129,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 78,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "result": "L",
       "method": "TF",
       "score": "19-4",
@@ -154,7 +159,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -169,7 +174,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "result": "L",
       "method": "TF",
       "score": "22-6",

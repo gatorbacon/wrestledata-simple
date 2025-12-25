@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "5-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34937325132",
+      "opponent_rank": 63,
+      "opponent_name": "Joseph Cangro",
+      "method": "Fall 1:18"
+    }
   },
   "match_list": [
     {
@@ -109,7 +114,7 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 53,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -169,7 +174,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "4-2",

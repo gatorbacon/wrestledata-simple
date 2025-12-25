@@ -6,12 +6,12 @@
   "team_rank": 53,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 52,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 1.67,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34934018132",
+      "opponent_rank": 50,
+      "opponent_name": "Eli Sheeren",
+      "method": "Dec 6-4"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "L",
       "method": "DEC",
       "score": "6-4",
@@ -64,7 +69,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "L",
       "method": "DEC",
       "score": "7-0",
@@ -108,7 +113,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "L",
       "method": "MD",
       "score": "9-1",

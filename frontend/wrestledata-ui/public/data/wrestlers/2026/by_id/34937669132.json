@@ -6,10 +6,10 @@
   "team_rank": 70,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 52,
   "record": {
     "overall": "4-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34945529132",
+      "opponent_rank": 53,
+      "opponent_name": "Colt Campbell",
+      "method": "Dec 3-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34934840132",
+      "opponent_rank": 45,
+      "opponent_name": "Enrique Munguia",
+      "method": "Dec 8-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 41,
       "result": "L",
       "method": "DEC",
       "score": "8-1",
@@ -79,7 +89,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -124,7 +134,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 69,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 29,
       "result": "L",
       "method": "DEC",
       "score": "10-4",
@@ -154,7 +164,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "result": "W",
       "method": "DEC",
       "score": "3-2",
@@ -169,7 +179,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 69,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 29,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -184,7 +194,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "result": "L",
       "method": "DEC",
       "score": "8-3",

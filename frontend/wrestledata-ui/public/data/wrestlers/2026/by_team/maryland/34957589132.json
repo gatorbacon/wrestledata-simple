@@ -6,12 +6,12 @@
   "team_rank": 25,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 34,
   "record": {
     "overall": "8-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.79,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34947069132",
+      "opponent_rank": 40,
+      "opponent_name": "Cody Chittum",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "34944785132",
+      "opponent_rank": 33,
+      "opponent_name": "Conner Harer",
+      "method": "TB-2 (RT) 1-1"
+    }
   },
   "match_list": [
     {
@@ -64,7 +74,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "W",
       "method": "DEC",
       "score": "8-3",
@@ -79,7 +89,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "1-1",
@@ -124,7 +134,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 66,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -168,7 +178,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 79,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -183,7 +193,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "result": "L",
       "method": "DEC",
       "score": "5-2",

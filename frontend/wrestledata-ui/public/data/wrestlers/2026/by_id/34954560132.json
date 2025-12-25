@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.75,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34937012132",
+      "opponent_rank": 74,
+      "opponent_name": "Carson Weber",
+      "method": "MD 12-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 68,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -63,7 +68,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "result": "L",
       "method": "TF",
       "score": "17-2",
@@ -92,7 +97,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 46,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "result": "L",
       "method": "TF",
       "score": "17-2",
@@ -152,7 +157,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 46,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "result": "L",
       "method": "MD",
       "score": "12-3",

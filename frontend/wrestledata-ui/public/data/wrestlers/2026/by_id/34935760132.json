@@ -6,12 +6,12 @@
   "team_rank": 7,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 16,
   "record": {
     "overall": "7-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "2-1"
   },
   "metrics": {
     "pf7": 13.75,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34934754132",
+      "opponent_rank": 25,
+      "opponent_name": "Noah Tolentino",
+      "method": "MD 17-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34936418132",
+      "opponent_rank": 15,
+      "opponent_name": "Casey Swiderski",
+      "method": "Dec 7-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "DEC",
       "score": "7-2",
@@ -78,7 +88,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 21,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "result": "W",
       "method": "DEC",
       "score": "9-3",
@@ -123,7 +133,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "W",
       "method": "MD",
       "score": "12-4",
@@ -138,7 +148,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "W",
       "method": "MD",
       "score": "14-3",
@@ -153,7 +163,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 21,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "result": "W",
       "method": "MD",
       "score": "17-5",

@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 11.0,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34936105132",
+      "opponent_rank": 15,
+      "opponent_name": "Ceasar Garza",
+      "method": "Dec 11-6"
+    }
   },
   "match_list": [
     {
@@ -64,7 +69,7 @@
       "opponent_team": "Cal Poly",
       "opponent_team_rank": 28,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "DEC",
       "score": "11-6",

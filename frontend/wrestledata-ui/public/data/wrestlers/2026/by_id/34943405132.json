@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "7-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 5.72,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34953843132",
+      "opponent_rank": 49,
+      "opponent_name": "Amir Avazov",
+      "method": "Dec 6-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34952669132",
+      "opponent_rank": 48,
+      "opponent_name": "Carter Bailey",
+      "method": "MD 12-0"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "L",
       "method": "DEC",
       "score": "7-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "L",
       "method": "DEC",
       "score": "6-1",
@@ -93,7 +103,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "result": "L",
       "method": "MD",
       "score": "14-3",
@@ -123,7 +133,7 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 72,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "result": "W",
       "method": "DEC",
       "score": "6-0",
@@ -198,7 +208,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "result": "L",
       "method": "DEC",
       "score": "9-3",
@@ -228,7 +238,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 13,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "result": "L",
       "method": "MD",
       "score": "12-0",

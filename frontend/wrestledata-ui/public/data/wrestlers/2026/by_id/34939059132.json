@@ -6,12 +6,12 @@
   "team_rank": 34,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 31,
   "record": {
     "overall": "4-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 6.42,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34945070132",
+      "opponent_rank": 32,
+      "opponent_name": "Andrew Clark",
+      "method": "TF 21-5 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34951043132",
+      "opponent_rank": 37,
+      "opponent_name": "Ryan Michaels",
+      "method": "Dec 5-4"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -64,7 +74,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 3,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -94,7 +104,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 44,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "W",
       "method": "DEC",
       "score": "9-6",
@@ -109,7 +119,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -124,7 +134,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "W",
       "method": "TF",
       "score": "21-5",
@@ -154,7 +164,7 @@
       "opponent_team": "Morgan State",
       "opponent_team_rank": 74,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "L",
       "method": "DEC",
       "score": "8-5",
@@ -169,7 +179,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -184,7 +194,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "L",
       "method": "MD",
       "score": "17-3",

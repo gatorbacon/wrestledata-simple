@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "4-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 7.22,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34937473132",
+      "opponent_rank": 61,
+      "opponent_name": "Dominic DiTullio",
+      "method": "Dec 10-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34937346132",
+      "opponent_rank": 52,
+      "opponent_name": "Sidney Tildsley",
+      "method": "MD 11-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 66,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "L",
       "method": "DEC",
       "score": "9-4",
@@ -64,7 +74,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "result": "W",
       "method": "DEC",
       "score": "10-3",
@@ -79,7 +89,7 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 72,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "result": "L",
       "method": "DEC",
       "score": "12-7",
@@ -94,7 +104,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -139,7 +149,7 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "result": "L",
       "method": "MD",
       "score": "11-2",
@@ -184,7 +194,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "DEC",
       "score": "6-2",

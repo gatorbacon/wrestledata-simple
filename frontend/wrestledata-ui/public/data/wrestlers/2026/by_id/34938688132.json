@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 6.5,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34948510132",
+      "opponent_rank": 53,
+      "opponent_name": "Dominic Frontino",
+      "method": "Dec 2-0"
+    }
   },
   "match_list": [
     {
@@ -63,7 +68,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "L",
       "method": "DEC",
       "score": "4-0",
@@ -78,7 +83,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -123,7 +128,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 48,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -153,7 +158,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "result": "L",
       "method": "FALL",
       "score": null,

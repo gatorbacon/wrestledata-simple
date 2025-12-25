@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "0-11",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-8",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 3.01,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34938484132",
+      "opponent_rank": 68,
+      "opponent_name": "Donovan Sprouse",
+      "method": "Dec 6-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 70,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -77,7 +82,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 34,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "TF",
       "score": "18-2",
@@ -105,7 +110,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "result": "L",
       "method": "TF",
       "score": "22-5",
@@ -120,7 +125,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "L",
       "method": "TF",
       "score": "19-3",
@@ -134,7 +139,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 69,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "L",
       "method": "TF",
       "score": "17-1",
@@ -149,7 +154,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -164,7 +169,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 46,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -179,7 +184,7 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 43,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 68,
       "result": "L",
       "method": "DEC",
       "score": "6-3",

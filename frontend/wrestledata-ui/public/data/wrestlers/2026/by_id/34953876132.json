@@ -6,10 +6,10 @@
   "team_rank": 72,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 77,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,12 +27,22 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34963809132",
+      "opponent_rank": 79,
+      "opponent_name": "Maxx Fesinger",
+      "method": "Dec 16-9"
+    },
+    "worst_loss": {
+      "opponent_id": "34934320132",
+      "opponent_rank": 43,
+      "opponent_name": "Andrew Christie",
+      "method": "MD 9-1"
+    }
   },
   "match_list": [
     {
@@ -42,7 +52,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -56,7 +66,7 @@
       "opponent_team": "Mercyherst",
       "opponent_team_rank": 73,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "result": "W",
       "method": "DEC",
       "score": "16-9",

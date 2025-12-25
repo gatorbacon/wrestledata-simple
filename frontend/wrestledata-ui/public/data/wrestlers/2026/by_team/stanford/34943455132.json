@@ -6,12 +6,12 @@
   "team_rank": 22,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 31,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 4.03,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34948141132",
+      "opponent_rank": 32,
+      "opponent_name": "Kole Mulhauser",
+      "method": "Fall 2:59"
+    },
+    "worst_loss": {
+      "opponent_id": "34943283132",
+      "opponent_rank": 30,
+      "opponent_name": "Caleb Uhlenhopp",
+      "method": "Dec 12-6"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "L",
       "method": "DEC",
       "score": "9-8",
@@ -78,7 +88,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 3,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "L",
       "method": "DEC",
       "score": "8-3",
@@ -93,7 +103,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -108,7 +118,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 26,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -123,7 +133,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -138,7 +148,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -153,7 +163,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "L",
       "method": "DEC",
       "score": "12-6",

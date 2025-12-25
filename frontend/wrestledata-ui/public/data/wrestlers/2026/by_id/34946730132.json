@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34941676132",
+      "opponent_rank": 37,
+      "opponent_name": "Conor Maslanek",
+      "method": "TF 16-1 7:00"
+    }
   },
   "match_list": [
     {
@@ -92,7 +97,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 41,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "L",
       "method": "TF",
       "score": "16-1",

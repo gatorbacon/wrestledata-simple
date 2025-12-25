@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "4-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.75,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34952107132",
+      "opponent_rank": 23,
+      "opponent_name": "Spencer Moore",
+      "method": "TF 15-0 3:58"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "L",
       "method": "TF",
       "score": "15-0",

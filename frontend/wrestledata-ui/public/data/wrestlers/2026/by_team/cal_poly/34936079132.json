@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 1.67,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34971892132",
+      "opponent_rank": 70,
+      "opponent_name": "Kyle Waterman",
+      "method": "Def."
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 70,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -63,7 +68,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 38,
       "result": "L",
       "method": "DEC",
       "score": "7-3",
@@ -78,7 +83,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 3,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -93,7 +98,7 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 63,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 62,
       "result": "L",
       "method": "DEC",
       "score": "2-0",

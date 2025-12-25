@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "1-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.5,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34943749132",
+      "opponent_rank": 13,
+      "opponent_name": "Chance McLane",
+      "method": "Dec 8-1"
+    }
   },
   "match_list": [
     {
@@ -94,7 +99,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "L",
       "method": "DEC",
       "score": "8-1",

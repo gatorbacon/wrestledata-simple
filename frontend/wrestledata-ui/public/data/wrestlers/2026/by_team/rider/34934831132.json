@@ -6,12 +6,12 @@
   "team_rank": 40,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 33,
   "record": {
     "overall": "7-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-4",
+    "vs_top10": "0-2",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 3.65,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34948148132",
+      "opponent_rank": 34,
+      "opponent_name": "Ethan Rivera",
+      "method": "Dec 7-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34948546132",
+      "opponent_rank": 29,
+      "opponent_name": "Gunner Andrick",
+      "method": "Dec 6-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 38,
       "result": "W",
       "method": "DEC",
       "score": "6-2",
@@ -79,7 +89,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -109,7 +119,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -124,7 +134,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 22,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 9,
       "result": "L",
       "method": "DEC",
       "score": "5-0",
@@ -139,7 +149,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 29,
       "result": "L",
       "method": "DEC",
       "score": "6-3",
@@ -169,7 +179,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "result": "L",
       "method": "DEC",
       "score": "3-0",
@@ -184,7 +194,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -199,7 +209,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 70,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "3-2",

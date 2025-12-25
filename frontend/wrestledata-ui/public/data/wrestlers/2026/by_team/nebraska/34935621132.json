@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "7-7",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-6",
+    "vs_top10": "0-3",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 9.31,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 3,
+    "win_over_highest_rank": {
+      "opponent_id": "34934628132",
+      "opponent_rank": 30,
+      "opponent_name": "Ezekiel Witt",
+      "method": "Dec 13-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34947807132",
+      "opponent_rank": 53,
+      "opponent_name": "Carson Wagner",
+      "method": "Dec 9-8"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 44,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -63,7 +73,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "result": "W",
       "method": "TF",
       "score": "20-3",
@@ -108,7 +118,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -123,7 +133,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 13,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "DEC",
       "score": "4-3",
@@ -168,7 +178,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "result": "L",
       "method": "DEC",
       "score": "3-0",
@@ -183,7 +193,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 75,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "W",
       "method": "DEC",
       "score": "13-7",
@@ -213,7 +223,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "result": "L",
       "method": "DEC",
       "score": "9-8",
@@ -228,7 +238,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "L",
       "method": "DEC",
       "score": "11-10",

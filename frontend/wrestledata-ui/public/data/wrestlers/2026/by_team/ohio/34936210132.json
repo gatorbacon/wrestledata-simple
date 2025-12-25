@@ -6,12 +6,12 @@
   "team_rank": 46,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 17,
   "record": {
     "overall": "10-3",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "6-3",
+    "vs_top10": "0-1",
+    "vs_top25": "2-3"
   },
   "metrics": {
     "pf7": 8.64,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34943229132",
+      "opponent_rank": 20,
+      "opponent_name": "Cael Swensen",
+      "method": "Dec 3-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34944670132",
+      "opponent_rank": 16,
+      "opponent_name": "Luke Mechler",
+      "method": "Dec 11-7"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "result": "W",
       "method": "MD",
       "score": "12-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -78,7 +88,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "result": "W",
       "method": "DEC",
       "score": "13-9",
@@ -93,7 +103,7 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 53,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -107,7 +117,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 26,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "result": "W",
       "method": "DEC",
       "score": "3-2",
@@ -122,7 +132,7 @@
       "opponent_team": "Wyoming",
       "opponent_team_rank": 15,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 78,
       "result": "W",
       "method": "MD",
       "score": "13-3",
@@ -137,7 +147,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "result": "L",
       "method": "DEC",
       "score": "6-0",
@@ -167,7 +177,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "W",
       "method": "MD",
       "score": "17-6",
@@ -212,7 +222,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "L",
       "method": "DEC",
       "score": "11-7",

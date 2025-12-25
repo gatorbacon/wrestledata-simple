@@ -6,10 +6,10 @@
   "team_rank": 29,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 53,
   "record": {
     "overall": "5-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34941677132",
+      "opponent_rank": 61,
+      "opponent_name": "Brant Cracraft",
+      "method": "MD 16-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34937337132",
+      "opponent_rank": 46,
+      "opponent_name": "Matthew Walsh",
+      "method": "MD 11-3"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 53,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -93,7 +103,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 55,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "L",
       "method": "DEC",
       "score": "5-3",
@@ -108,7 +118,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 41,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "result": "W",
       "method": "MD",
       "score": "16-3",

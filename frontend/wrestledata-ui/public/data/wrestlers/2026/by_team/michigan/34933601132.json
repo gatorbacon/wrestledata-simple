@@ -6,12 +6,12 @@
   "team_rank": 16,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 50,
   "record": {
     "overall": "4-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 6.52,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35050773132",
+      "opponent_rank": 52,
+      "opponent_name": "Aiden Allen",
+      "method": "Dec 7-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34943404132",
+      "opponent_rank": 42,
+      "opponent_name": "Evin Gursoy",
+      "method": "Dec 3-0"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 57,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -64,7 +74,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "L",
       "method": "DEC",
       "score": "7-1",
@@ -79,7 +89,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 45,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "result": "L",
       "method": "DEC",
       "score": "6-0",
@@ -94,7 +104,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 79,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "MD",
       "score": "12-2",
@@ -109,7 +119,7 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 50,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "result": "W",
       "method": "DEC",
       "score": "7-1",
@@ -124,7 +134,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "L",
       "method": "DEC",
       "score": "3-0",
@@ -139,7 +149,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "DEC",
       "score": "13-9",
@@ -154,7 +164,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "result": "L",
       "method": "DEC",
       "score": "10-9",
@@ -169,7 +179,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 14,
       "result": "L",
       "method": "MD",
       "score": "9-0",

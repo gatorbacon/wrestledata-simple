@@ -6,12 +6,12 @@
   "team_rank": 64,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 52,
   "record": {
     "overall": "3-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.16,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34933531132",
+      "opponent_rank": 42,
+      "opponent_name": "Dylan Gilcher",
+      "method": "MD 11-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34943445132",
+      "opponent_rank": 13,
+      "opponent_name": "Hunter Garvin",
+      "method": "MD 11-3"
+    }
   },
   "match_list": [
     {
@@ -79,7 +89,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 16,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "W",
       "method": "MD",
       "score": "11-2",
@@ -94,7 +104,7 @@
       "opponent_team": "Wyoming",
       "opponent_team_rank": 15,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "result": "W",
       "method": "DEC",
       "score": "7-4",
@@ -109,7 +119,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "DEC",
       "score": "5-4",
@@ -124,7 +134,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 22,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "L",
       "method": "MD",
       "score": "11-3",

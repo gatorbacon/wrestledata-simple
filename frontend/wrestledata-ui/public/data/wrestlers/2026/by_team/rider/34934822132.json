@@ -6,12 +6,12 @@
   "team_rank": 40,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 18,
   "record": {
     "overall": "10-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "7-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "3-2"
   },
   "metrics": {
     "pf7": 10.09,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 7,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34946728132",
+      "opponent_rank": 11,
+      "opponent_name": "Jett Strickenberger",
+      "method": "MD 20-11"
+    },
+    "worst_loss": {
+      "opponent_id": "34934463132",
+      "opponent_rank": 39,
+      "opponent_name": "James Garcia",
+      "method": "Dec 15-13"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 67,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "W",
       "method": "DEC",
       "score": "9-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -77,7 +87,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -92,7 +102,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -107,7 +117,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "result": "L",
       "method": "DEC",
       "score": "15-13",
@@ -122,7 +132,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 16,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 17,
       "result": "L",
       "method": "DEC",
       "score": "8-5",
@@ -137,7 +147,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 11,
       "result": "W",
       "method": "MD",
       "score": "20-11",
@@ -167,7 +177,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "W",
       "method": "DEC",
       "score": "6-3",
@@ -182,7 +192,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "W",
       "method": "DEC",
       "score": "10-3",
@@ -227,7 +237,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 14,
       "result": "L",
       "method": "MD",
       "score": "14-2",

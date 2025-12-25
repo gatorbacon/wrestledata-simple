@@ -6,12 +6,12 @@
   "team_rank": 13,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 7,
   "record": {
     "overall": "7-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "5-0",
+    "vs_top10": "1-0",
+    "vs_top25": "2-0"
   },
   "metrics": {
     "pf7": 7.43,
@@ -34,11 +34,16 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 5,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34935857132",
+      "opponent_rank": 8,
+      "opponent_name": "Evan Mougalian",
+      "method": "Dec 3-2"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -49,7 +54,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "W",
       "method": "DEC",
       "score": "1-0",
@@ -64,7 +69,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -79,7 +84,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 29,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "result": "W",
       "method": "DEC",
       "score": "3-2",
@@ -109,7 +114,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "W",
       "method": "DEC",
       "score": "5-4",
@@ -124,7 +129,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "result": "W",
       "method": "DEC",
       "score": "2-0",

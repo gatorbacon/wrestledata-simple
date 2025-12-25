@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "0-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.42,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34945477132",
+      "opponent_rank": 66,
+      "opponent_name": "Cooper Foster",
+      "method": "TF 17-2 7:00"
+    }
   },
   "match_list": [
     {
@@ -63,7 +68,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "L",
       "method": "TF",
       "score": "19-4",
@@ -77,7 +82,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "L",
       "method": "TF",
       "score": "17-2",
@@ -106,7 +111,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "result": "L",
       "method": "TF",
       "score": "15-0",

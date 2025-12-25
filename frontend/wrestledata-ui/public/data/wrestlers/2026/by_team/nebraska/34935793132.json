@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 12.5,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34955792132",
+      "opponent_rank": 16,
+      "opponent_name": "Koy Hopke",
+      "method": "Dec 8-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34936396132",
+      "opponent_rank": 10,
+      "opponent_name": "Konner Doucet",
+      "method": "Dec 2-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -63,7 +73,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "W",
       "method": "TF",
       "score": "20-5",
@@ -93,7 +103,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "W",
       "method": "DEC",
       "score": "8-7",

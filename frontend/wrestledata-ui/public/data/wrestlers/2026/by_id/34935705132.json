@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "5-8",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34954562132",
+      "opponent_rank": 69,
+      "opponent_name": "Ryan Mann",
+      "method": "MD 12-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34946242132",
+      "opponent_rank": 70,
+      "opponent_name": "Braxton Russell",
+      "method": "Dec 8-5"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 48,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -63,7 +73,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 78,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 70,
       "result": "L",
       "method": "DEC",
       "score": "8-5",
@@ -77,7 +87,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -107,7 +117,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "result": "L",
       "method": "MD",
       "score": "20-9",
@@ -212,7 +222,7 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 76,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "result": "W",
       "method": "MD",
       "score": "12-4",

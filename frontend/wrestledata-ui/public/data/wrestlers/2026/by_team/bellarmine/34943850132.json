@@ -6,12 +6,12 @@
   "team_rank": 59,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 34,
   "record": {
     "overall": "5-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-4",
+    "vs_top10": "0-3",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 4.66,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 3,
+    "win_over_highest_rank": {
+      "opponent_id": "34941542132",
+      "opponent_rank": 35,
+      "opponent_name": "Bryson Buhk",
+      "method": "Fall 1:10"
+    },
+    "worst_loss": {
+      "opponent_id": "34934105132",
+      "opponent_rank": 29,
+      "opponent_name": "Bryan Caves",
+      "method": "Fall 0:50"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "W",
       "method": "MD",
       "score": "11-1",
@@ -78,7 +88,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 71,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "result": "W",
       "method": "INJ",
       "score": null,
@@ -93,7 +103,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 65,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 29,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -108,7 +118,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "result": "L",
       "method": "TF",
       "score": "17-1",
@@ -138,7 +148,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -153,7 +163,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 9,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "5-4",
@@ -168,7 +178,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -183,7 +193,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "result": "L",
       "method": "DEC",
       "score": "8-3",

@@ -6,12 +6,12 @@
   "team_rank": 54,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 44,
   "record": {
     "overall": "6-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 5.45,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934448132",
+      "opponent_rank": 40,
+      "opponent_name": "Mason Leiphart",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34938621132",
+      "opponent_rank": 43,
+      "opponent_name": "Joey Fischer",
+      "method": "Dec 8-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 45,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -63,7 +73,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 17,
       "result": "L",
       "method": "DEC",
       "score": "3-2",
@@ -77,7 +87,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 67,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "L",
       "method": "DEC",
       "score": "8-2",
@@ -92,7 +102,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -122,7 +132,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 33,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -137,7 +147,7 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 72,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "result": "W",
       "method": "MD",
       "score": "10-1",
@@ -167,7 +177,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 13,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -182,7 +192,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 21,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 41,
       "result": "W",
       "method": "DEC",
       "score": "10-3",

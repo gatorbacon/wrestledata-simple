@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "13-3",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "7-3",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 7.72,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 7,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34963121132",
+      "opponent_rank": 33,
+      "opponent_name": "Hunter Hollingsworth",
+      "method": "Dec 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34963121132",
+      "opponent_rank": 33,
+      "opponent_name": "Hunter Hollingsworth",
+      "method": "SV-1 4-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -64,7 +74,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "L",
       "method": "DEC",
       "score": "9-5",
@@ -79,7 +89,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 9,
       "result": "L",
       "method": "DEC",
       "score": "8-4",
@@ -94,7 +104,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -109,7 +119,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "W",
       "method": "TF",
       "score": "15-0",
@@ -124,7 +134,7 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 68,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "result": "W",
       "method": "MD",
       "score": "11-2",
@@ -154,7 +164,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 48,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "W",
       "method": "DEC",
       "score": "12-5",
@@ -198,7 +208,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -213,7 +223,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -273,7 +283,7 @@
       "opponent_team": "Cal Poly",
       "opponent_team_rank": 28,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 58,
       "result": "W",
       "method": "DEC",
       "score": "4-1",

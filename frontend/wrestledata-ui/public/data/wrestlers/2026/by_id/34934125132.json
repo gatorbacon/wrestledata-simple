@@ -6,12 +6,12 @@
   "team_rank": 35,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 17,
   "record": {
     "overall": "8-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-4",
+    "vs_top10": "0-2",
+    "vs_top25": "1-4"
   },
   "metrics": {
     "pf7": 7.2,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34954153132",
+      "opponent_rank": 22,
+      "opponent_name": "Logan Shephard",
+      "method": "MD 11-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34940538132",
+      "opponent_rank": 15,
+      "opponent_name": "Spencer Lanosga",
+      "method": "Dec 5-0"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "W",
       "method": "MD",
       "score": "11-0",
@@ -63,7 +73,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -92,7 +102,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 13,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -106,7 +116,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -121,7 +131,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -166,7 +176,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 37,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "W",
       "method": "MD",
       "score": "11-0",
@@ -196,7 +206,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 34,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "DEC",
       "score": "6-4",
@@ -211,7 +221,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 34,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "DEC",
       "score": "5-0",

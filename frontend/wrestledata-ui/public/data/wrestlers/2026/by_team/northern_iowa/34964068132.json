@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,11 +34,16 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34957805132",
+      "opponent_rank": 71,
+      "opponent_name": "KJ Evans",
+      "method": "Dec 14-8"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -49,7 +54,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "DEC",
       "score": "14-8",

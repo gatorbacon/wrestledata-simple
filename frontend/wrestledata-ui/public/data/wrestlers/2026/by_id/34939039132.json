@@ -6,12 +6,12 @@
   "team_rank": 1,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 4,
   "record": {
     "overall": "8-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "6-0",
+    "vs_top10": "2-0",
+    "vs_top25": "3-0"
   },
   "metrics": {
     "pf7": 10.5,
@@ -34,11 +34,16 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 6,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 2,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34952695132",
+      "opponent_rank": 7,
+      "opponent_name": "Logan Rozynski",
+      "method": "Inj 5:40"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -49,7 +54,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 75,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 41,
       "result": "W",
       "method": "MD",
       "score": "16-5",
@@ -63,7 +68,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 22,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -92,7 +97,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 13,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "W",
       "method": "INJ",
       "score": null,
@@ -107,7 +112,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -137,7 +142,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 48,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -152,7 +157,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 29,
       "result": "W",
       "method": "FALL",
       "score": null,

@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34944679132",
+      "opponent_rank": 55,
+      "opponent_name": "Carson Exferd",
+      "method": "Dec 5-0"
+    }
   },
   "match_list": [
     {
@@ -92,7 +97,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "result": "L",
       "method": "DEC",
       "score": "5-0",

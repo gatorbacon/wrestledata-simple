@@ -6,12 +6,12 @@
   "team_rank": 22,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 9,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 8.2,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34934831132",
+      "opponent_rank": 33,
+      "opponent_name": "Will Betancourt",
+      "method": "Dec 5-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34944528132",
+      "opponent_rank": 6,
+      "opponent_name": "Kyler Larkin",
+      "method": "Dec 8-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -63,7 +73,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "DEC",
       "score": "8-3",
@@ -78,7 +88,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 38,
       "result": "W",
       "method": "MD",
       "score": "12-0",
@@ -93,7 +103,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "W",
       "method": "DEC",
       "score": "5-0",
@@ -123,7 +133,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "result": "W",
       "method": "DEC",
       "score": "8-4",

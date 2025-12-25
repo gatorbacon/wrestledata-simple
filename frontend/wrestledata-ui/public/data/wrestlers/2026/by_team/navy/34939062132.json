@@ -6,12 +6,12 @@
   "team_rank": 34,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 33,
   "record": {
     "overall": "8-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 7.42,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34955058132",
+      "opponent_rank": 35,
+      "opponent_name": "Max Shulaw",
+      "method": "Dec 13-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34955414132",
+      "opponent_rank": 48,
+      "opponent_name": "Spencer Mooberry",
+      "method": "Dec 7-5"
+    }
   },
   "match_list": [
     {
@@ -78,7 +88,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "result": "L",
       "method": "DEC",
       "score": "7-5",
@@ -93,7 +103,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 19,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "L",
       "method": "DEC",
       "score": "5-0",
@@ -123,7 +133,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 44,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "result": "W",
       "method": "DEC",
       "score": "8-4",
@@ -153,7 +163,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "L",
       "method": "DEC",
       "score": "5-0",
@@ -183,7 +193,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "result": "L",
       "method": "DEC",
       "score": "8-6",
@@ -198,7 +208,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "W",
       "method": "DEC",
       "score": "8-3",
@@ -213,7 +223,7 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 50,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "W",
       "method": "DEC",
       "score": "13-6",
@@ -228,7 +238,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 9,
       "result": "L",
       "method": "DEC",
       "score": "5-1",

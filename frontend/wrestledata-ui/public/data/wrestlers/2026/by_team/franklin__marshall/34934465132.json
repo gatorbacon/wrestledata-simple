@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "6-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34934221132",
+      "opponent_rank": 76,
+      "opponent_name": "Andrew Barford",
+      "method": "MD 15-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34935968132",
+      "opponent_rank": 35,
+      "opponent_name": "Cole Bartram",
+      "method": "TF 17-2 6:04"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "L",
       "method": "TF",
       "score": "17-2",
@@ -199,7 +209,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 79,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 76,
       "result": "W",
       "method": "MD",
       "score": "15-4",

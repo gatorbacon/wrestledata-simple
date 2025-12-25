@@ -6,10 +6,10 @@
   "team_rank": 33,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 53,
   "record": {
     "overall": "6-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34934118132",
+      "opponent_rank": 36,
+      "opponent_name": "Jimmy Nugent",
+      "method": "Dec 6-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34955721132",
+      "opponent_rank": 52,
+      "opponent_name": "Anthony Evanitsky",
+      "method": "Fall 1:13"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "result": "W",
       "method": "MD",
       "score": "11-1",
@@ -79,7 +89,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 65,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "result": "W",
       "method": "DEC",
       "score": "6-1",
@@ -94,7 +104,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -109,7 +119,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "result": "W",
       "method": "MD",
       "score": "14-6",
@@ -154,7 +164,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 13,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -169,7 +179,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "L",
       "method": "DEC",
       "score": "4-2",

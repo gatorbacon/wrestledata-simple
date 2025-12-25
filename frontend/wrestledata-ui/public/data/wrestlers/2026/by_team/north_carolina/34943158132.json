@@ -6,12 +6,12 @@
   "team_rank": 44,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 20,
   "record": {
     "overall": "6-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 5.29,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34933358132",
+      "opponent_rank": 27,
+      "opponent_name": "Tom Crook",
+      "method": "Dec 5-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34940503132",
+      "opponent_rank": 18,
+      "opponent_name": "Caedyn Ricciardi",
+      "method": "Dec 3-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 30,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 11,
       "result": "L",
       "method": "MD",
       "score": "11-0",
@@ -63,7 +73,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "result": "L",
       "method": "DEC",
       "score": "5-0",
@@ -92,7 +102,7 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 68,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -107,7 +117,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 34,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "result": "L",
       "method": "DEC",
       "score": "3-2",
@@ -122,7 +132,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "TF",
       "score": "15-0",
@@ -167,7 +177,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "L",
       "method": "MD",
       "score": "12-3",
@@ -182,7 +192,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 20,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "result": "W",
       "method": "DEC",
       "score": "5-3",

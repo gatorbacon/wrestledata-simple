@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "5-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 15.25,
@@ -34,11 +34,16 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 3,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34943284132",
+      "opponent_rank": 22,
+      "opponent_name": "Kael Bennie",
+      "method": "Dec 4-2"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -49,7 +54,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 66,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 57,
       "result": "W",
       "method": "MD",
       "score": "17-4",
@@ -63,7 +68,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -107,7 +112,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "result": "W",
       "method": "MD",
       "score": "15-5",

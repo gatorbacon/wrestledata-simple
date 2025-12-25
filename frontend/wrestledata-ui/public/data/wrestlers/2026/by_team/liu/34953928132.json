@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "3-8",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.62,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34935057132",
+      "opponent_rank": 57,
+      "opponent_name": "Eric Alderfer",
+      "method": "Dec 11-8"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 61,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 57,
       "result": "L",
       "method": "DEC",
       "score": "11-8",
@@ -64,7 +69,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -109,7 +114,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -184,7 +189,7 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 50,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -199,7 +204,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "result": "L",
       "method": "MD",
       "score": "10-0",

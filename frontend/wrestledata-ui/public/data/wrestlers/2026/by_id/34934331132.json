@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34937666132",
+      "opponent_rank": 66,
+      "opponent_name": "Joe Sparacio",
+      "method": "MD 11-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34948517132",
+      "opponent_rank": 32,
+      "opponent_name": "Khimari Manns",
+      "method": "Def."
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -63,7 +73,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "W",
       "method": "MD",
       "score": "11-0",

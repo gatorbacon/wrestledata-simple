@@ -6,12 +6,12 @@
   "team_rank": 26,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 47,
   "record": {
     "overall": "7-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 12.09,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34951026132",
+      "opponent_rank": 32,
+      "opponent_name": "Ryan Burgos",
+      "method": "Dec 8-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34943992132",
+      "opponent_rank": 45,
+      "opponent_name": "Maxx Mayfield",
+      "method": "Dec 10-7"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "L",
       "method": "MD",
       "score": "13-3",
@@ -64,7 +74,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -79,7 +89,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "W",
       "method": "DEC",
       "score": "8-4",
@@ -124,7 +134,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -154,7 +164,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 75,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 70,
       "result": "W",
       "method": "MD",
       "score": "18-7",
@@ -214,7 +224,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "result": "L",
       "method": "DEC",
       "score": "10-7",

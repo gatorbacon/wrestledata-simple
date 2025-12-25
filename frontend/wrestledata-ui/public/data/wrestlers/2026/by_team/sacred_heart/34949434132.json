@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-9",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34950408132",
+      "opponent_rank": 76,
+      "opponent_name": "Evan Coles",
+      "method": "Dec 11-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34937682132",
+      "opponent_rank": 67,
+      "opponent_name": "Teague Strobel",
+      "method": "TF 17-1 5:51"
+    }
   },
   "match_list": [
     {
@@ -122,7 +132,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 70,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 67,
       "result": "L",
       "method": "TF",
       "score": "17-1",
@@ -182,7 +192,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 69,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 76,
       "result": "W",
       "method": "DEC",
       "score": "11-7",

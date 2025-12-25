@@ -6,12 +6,12 @@
   "team_rank": 54,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 40,
   "record": {
     "overall": "9-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 7.96,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34944664132",
+      "opponent_rank": 41,
+      "opponent_name": "Luke Condon",
+      "method": "SV-1 9-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34945831132",
+      "opponent_rank": 32,
+      "opponent_name": "Derek Gilcher",
+      "method": "Dec 11-4"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 45,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "L",
       "method": "DEC",
       "score": "8-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 41,
       "result": "W",
       "method": "DEC",
       "score": "9-6",
@@ -77,7 +87,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 67,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -92,7 +102,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "W",
       "method": "MD",
       "score": "15-2",
@@ -167,7 +177,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 33,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "L",
       "method": "DEC",
       "score": "11-4",
@@ -227,7 +237,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "result": "W",
       "method": "DEC",
       "score": "5-3",

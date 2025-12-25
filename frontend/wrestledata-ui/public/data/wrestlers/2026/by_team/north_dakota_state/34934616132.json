@@ -6,12 +6,12 @@
   "team_rank": 75,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 35,
   "record": {
     "overall": "5-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 3.69,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34955799132",
+      "opponent_rank": 45,
+      "opponent_name": "Chris Cannon",
+      "method": "Dec 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34943249132",
+      "opponent_rank": 24,
+      "opponent_name": "Cale Seaton",
+      "method": "Dec 6-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -78,7 +88,7 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 30,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "result": "L",
       "method": "MD",
       "score": "12-1",
@@ -108,7 +118,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 26,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "result": "L",
       "method": "DEC",
       "score": "6-1",
@@ -168,7 +178,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 17,
       "result": "L",
       "method": "DEC",
       "score": "4-3",

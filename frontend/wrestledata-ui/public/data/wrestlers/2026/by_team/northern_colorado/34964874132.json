@@ -6,12 +6,12 @@
   "team_rank": 56,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 72,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 10.75,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34941688132",
+      "opponent_rank": 74,
+      "opponent_name": "Ryan Bolletino",
+      "method": "MD 14-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34935689132",
+      "opponent_rank": 4,
+      "opponent_name": "Matty Singleton",
+      "method": "Dec 7-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 41,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "result": "W",
       "method": "MD",
       "score": "14-0",
@@ -78,7 +88,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "result": "L",
       "method": "DEC",
       "score": "7-3",

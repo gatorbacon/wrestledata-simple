@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,11 +27,16 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34963800132",
+      "opponent_rank": 79,
+      "opponent_name": "Noah Adamson",
+      "method": "MD 13-4"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -70,7 +75,7 @@
       "opponent_team": "Mercyherst",
       "opponent_team_rank": 73,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "result": "W",
       "method": "MD",
       "score": "13-4",

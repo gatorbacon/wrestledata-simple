@@ -6,12 +6,12 @@
   "team_rank": 72,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 70,
   "record": {
     "overall": "4-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.03,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34948497132",
+      "opponent_rank": 77,
+      "opponent_name": "Jared Brunner",
+      "method": "Inj. 0:15"
+    },
+    "worst_loss": {
+      "opponent_id": "34936230132",
+      "opponent_rank": 51,
+      "opponent_name": "Jace Schafer",
+      "method": "TF 17-0 4:16"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 61,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "L",
       "method": "TF",
       "score": "17-0",
@@ -64,7 +74,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "result": "W",
       "method": "INJ",
       "score": null,
@@ -79,7 +89,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "L",
       "method": "MD",
       "score": "14-3",
@@ -124,7 +134,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 66,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 29,
       "result": "L",
       "method": "TF",
       "score": "16-0",
@@ -154,7 +164,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "result": "L",
       "method": "TF",
       "score": "17-2",
@@ -169,7 +179,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "result": "L",
       "method": "TF",
       "score": "17-1",
@@ -184,7 +194,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 55,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "result": "L",
       "method": "MD",
       "score": "11-3",

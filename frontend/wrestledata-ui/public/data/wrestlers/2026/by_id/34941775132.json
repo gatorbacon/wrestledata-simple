@@ -6,12 +6,12 @@
   "team_rank": 2,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 1,
   "record": {
     "overall": "6-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "5-0",
+    "vs_top10": "2-0",
+    "vs_top25": "3-0"
   },
   "metrics": {
     "pf7": 13.96,
@@ -34,11 +34,16 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 5,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 2,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34955800132",
+      "opponent_rank": 3,
+      "opponent_name": "Jore Volk",
+      "method": "SV-1 8-5"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -49,7 +54,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 3,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "W",
       "method": "DEC",
       "score": "9-2",
@@ -63,7 +68,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 59,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "result": "W",
       "method": "TF",
       "score": "19-4",
@@ -78,7 +83,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -93,7 +98,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -108,7 +113,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 57,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "result": "W",
       "method": "FALL",
       "score": null,

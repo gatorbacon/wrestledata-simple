@@ -6,12 +6,12 @@
   "team_rank": 34,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 47,
   "record": {
     "overall": "10-3",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.59,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34947803132",
+      "opponent_rank": 51,
+      "opponent_name": "Fin Nadeau",
+      "method": "SV-3 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34935617132",
+      "opponent_rank": 8,
+      "opponent_name": "Antrell Taylor",
+      "method": "TF 19-3 5:43"
+    }
   },
   "match_list": [
     {
@@ -79,7 +89,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 67,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "result": "W",
       "method": "DEC",
       "score": "11-7",
@@ -184,7 +194,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -229,7 +239,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "result": "L",
       "method": "TF",
       "score": "19-3",

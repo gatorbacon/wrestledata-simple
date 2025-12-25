@@ -6,12 +6,12 @@
   "team_rank": 66,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 41,
   "record": {
     "overall": "6-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-4",
+    "vs_top10": "0-2",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 6.67,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34944021132",
+      "opponent_rank": 42,
+      "opponent_name": "Trent Thomas",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34943283132",
+      "opponent_rank": 30,
+      "opponent_name": "Caleb Uhlenhopp",
+      "method": "MD 9-1"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 71,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -91,7 +101,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 71,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -105,7 +115,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -119,7 +129,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "result": "L",
       "method": "TF",
       "score": "20-4",
@@ -133,7 +143,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "W",
       "method": "DEC",
       "score": "9-2",
@@ -148,7 +158,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "MD",
       "score": "11-2",
@@ -163,7 +173,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -178,7 +188,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "result": "L",
       "method": "TF",
       "score": "19-3",

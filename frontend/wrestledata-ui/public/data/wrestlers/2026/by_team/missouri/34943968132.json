@@ -6,12 +6,12 @@
   "team_rank": 18,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 27,
   "record": {
     "overall": "8-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-6",
+    "vs_top10": "0-3",
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 9.27,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 3,
+    "win_over_highest_rank": {
+      "opponent_id": "34963118132",
+      "opponent_rank": 38,
+      "opponent_name": "Carter Schmidt",
+      "method": "MD 16-8"
+    },
+    "worst_loss": {
+      "opponent_id": "34945193132",
+      "opponent_rank": 26,
+      "opponent_name": "Isaiah Schaefer",
+      "method": "MD 12-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 30,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "result": "L",
       "method": "DEC",
       "score": "9-8",
@@ -79,7 +89,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 14,
       "result": "L",
       "method": "DEC",
       "score": "9-5",
@@ -94,7 +104,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "result": "L",
       "method": "DEC",
       "score": "12-9",
@@ -109,7 +119,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -124,7 +134,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -154,7 +164,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 16,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "W",
       "method": "DEC",
       "score": "10-9",
@@ -199,7 +209,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 19,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "result": "L",
       "method": "MD",
       "score": "12-3",
@@ -214,7 +224,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 38,
       "result": "W",
       "method": "MD",
       "score": "16-8",

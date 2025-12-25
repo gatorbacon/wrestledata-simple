@@ -6,12 +6,12 @@
   "team_rank": 50,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 54,
   "record": {
     "overall": "8-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 9.4,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34971917132",
+      "opponent_rank": 63,
+      "opponent_name": "Patrick Kelly",
+      "method": "Dec 6-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34947799132",
+      "opponent_rank": 44,
+      "opponent_name": "Nate Lucier",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 29,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -106,7 +116,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 16,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -166,7 +176,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -181,7 +191,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "result": "W",
       "method": "DEC",
       "score": "6-1",
@@ -211,7 +221,7 @@
       "opponent_team": "Morgan State",
       "opponent_team_rank": 74,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "L",
       "method": "DEC",
       "score": "9-8",

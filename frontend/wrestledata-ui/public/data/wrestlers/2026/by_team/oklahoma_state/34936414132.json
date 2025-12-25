@@ -6,12 +6,12 @@
   "team_rank": 5,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 6,
   "record": {
     "overall": "6-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-4",
+    "vs_top10": "1-4",
+    "vs_top25": "1-4"
   },
   "metrics": {
     "pf7": 12.64,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
-    "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "ranked_wins": 4,
+    "ranked_losses": 4,
+    "top10_wins": 1,
+    "top10_losses": 4,
+    "win_over_highest_rank": {
+      "opponent_id": "34935623132",
+      "opponent_rank": 7,
+      "opponent_name": "Christopher Minto",
+      "method": "Dec 2-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34935623132",
+      "opponent_rank": 7,
+      "opponent_name": "Christopher Minto",
+      "method": "Dec 4-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -93,7 +103,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 38,
       "result": "W",
       "method": "MD",
       "score": "18-8",
@@ -108,7 +118,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 57,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "result": "W",
       "method": "TF",
       "score": "21-6",
@@ -123,7 +133,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -138,7 +148,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -153,7 +163,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 9,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -168,7 +178,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -183,7 +193,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 22,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "W",
       "method": "TF",
       "score": "19-3",

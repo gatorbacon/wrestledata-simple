@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.02,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34941545132",
+      "opponent_rank": 32,
+      "opponent_name": "Marcel Lopez",
+      "method": "Dec 6-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34936466132",
+      "opponent_rank": 15,
+      "opponent_name": "Ronnie Ramirez",
+      "method": "Dec 8-2"
+    }
   },
   "match_list": [
     {
@@ -79,7 +89,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "W",
       "method": "DEC",
       "score": "6-3",
@@ -94,7 +104,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "DEC",
       "score": "8-2",

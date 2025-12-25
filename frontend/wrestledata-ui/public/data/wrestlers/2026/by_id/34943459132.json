@@ -6,12 +6,12 @@
   "team_rank": 22,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 50,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 4.18,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934259132",
+      "opponent_rank": 51,
+      "opponent_name": "Beau Lewis",
+      "method": "MD 12-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34934021132",
+      "opponent_rank": 46,
+      "opponent_name": "Mason Espinoza",
+      "method": "Dec 3-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 45,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "L",
       "method": "DEC",
       "score": "9-7",
@@ -64,7 +74,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 19,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "MD",
       "score": "15-6",
@@ -79,7 +89,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 79,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "W",
       "method": "MD",
       "score": "12-2",
@@ -109,7 +119,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 21,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "result": "L",
       "method": "MD",
       "score": "11-0",
@@ -124,7 +134,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "L",
       "method": "DEC",
       "score": "3-1",
@@ -139,7 +149,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "TF",
       "score": "19-3",
@@ -154,7 +164,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "result": "W",
       "method": "DEC",
       "score": "2-0",

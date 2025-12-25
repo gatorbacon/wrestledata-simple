@@ -6,12 +6,12 @@
   "team_rank": 46,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 33,
   "record": {
     "overall": "6-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "6-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 6.57,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34943145132",
+      "opponent_rank": 35,
+      "opponent_name": "Sabino Portella",
+      "method": "Dec 10-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34955733132",
+      "opponent_rank": 22,
+      "opponent_name": "Eddie Enright",
+      "method": "MD 12-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -63,7 +73,7 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 68,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -77,7 +87,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "result": "W",
       "method": "DEC",
       "score": "11-5",
@@ -92,7 +102,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 45,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "L",
       "method": "MD",
       "score": "12-3",
@@ -107,7 +117,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -122,7 +132,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 41,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -137,7 +147,7 @@
       "opponent_team": "Morgan State",
       "opponent_team_rank": 74,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 78,
       "result": "W",
       "method": "INJ",
       "score": null,
@@ -152,7 +162,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -167,7 +177,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 44,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "W",
       "method": "DEC",
       "score": "10-5",

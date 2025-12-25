@@ -6,12 +6,12 @@
   "team_rank": 48,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 40,
   "record": {
     "overall": "6-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.11,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34945144132",
+      "opponent_rank": 27,
+      "opponent_name": "James Rowley",
+      "method": "Dec 9-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34946232132",
+      "opponent_rank": 63,
+      "opponent_name": "Brodie Porter",
+      "method": "SV-1 4-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "The Citadel",
       "opponent_team_rank": 78,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -63,7 +73,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -78,7 +88,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 71,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -93,7 +103,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 61,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 62,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -108,7 +118,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 47,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -123,7 +133,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 19,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "result": "W",
       "method": "DEC",
       "score": "9-3",
@@ -138,7 +148,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "result": "L",
       "method": "DEC",
       "score": "7-2",
@@ -153,7 +163,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 57,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -183,7 +193,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 67,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -198,7 +208,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 9,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "result": "L",
       "method": "DEC",
       "score": "7-3",

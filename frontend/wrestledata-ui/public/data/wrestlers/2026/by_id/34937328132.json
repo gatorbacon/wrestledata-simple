@@ -6,12 +6,12 @@
   "team_rank": 53,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 22,
   "record": {
     "overall": "10-3",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "5-3",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 8.83,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34936097132",
+      "opponent_rank": 26,
+      "opponent_name": "Jagger French",
+      "method": "Dec 2-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34935896132",
+      "opponent_rank": 19,
+      "opponent_name": "Jude Swisher",
+      "method": "Fall 1:59"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Cal Poly",
       "opponent_team_rank": 28,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -64,7 +74,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 17,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -78,7 +88,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 3,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "result": "L",
       "method": "TF",
       "score": "17-1",
@@ -93,7 +103,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 45,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "result": "W",
       "method": "DEC",
       "score": "9-5",
@@ -108,7 +118,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "result": "W",
       "method": "MD",
       "score": "10-2",
@@ -123,7 +133,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 29,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -152,7 +162,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 55,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "W",
       "method": "DEC",
       "score": "10-4",
@@ -212,7 +222,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "12-7",

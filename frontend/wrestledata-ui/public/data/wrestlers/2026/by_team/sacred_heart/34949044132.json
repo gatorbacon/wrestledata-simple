@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "0-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34938626132",
+      "opponent_rank": 54,
+      "opponent_name": "Alejandro Herrera-Rondon",
+      "method": "TF 18-0 4:02"
+    }
   },
   "match_list": [
     {
@@ -79,7 +84,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 67,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "result": "L",
       "method": "TF",
       "score": "18-0",

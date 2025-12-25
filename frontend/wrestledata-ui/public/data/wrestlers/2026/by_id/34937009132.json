@@ -6,12 +6,12 @@
   "team_rank": 46,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 68,
   "record": {
     "overall": "9-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 9.0,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34954516132",
+      "opponent_rank": 73,
+      "opponent_name": "Dallas Canoyer",
+      "method": "Fall 6:26"
+    },
+    "worst_loss": {
+      "opponent_id": "34941685132",
+      "opponent_rank": 54,
+      "opponent_name": "Colby Crouch",
+      "method": "Dec 9-3"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "Cal Poly",
       "opponent_team_rank": 28,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "DEC",
       "score": "3-2",
@@ -78,7 +88,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 77,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "result": "W",
       "method": "TF",
       "score": "18-2",
@@ -93,7 +103,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 22,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "L",
       "method": "TF",
       "score": "19-4",
@@ -138,7 +148,7 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 76,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -183,7 +193,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 41,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "result": "L",
       "method": "DEC",
       "score": "9-3",

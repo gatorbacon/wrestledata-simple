@@ -6,12 +6,12 @@
   "team_rank": 34,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 34,
   "record": {
     "overall": "10-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 5.79,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34971896132",
+      "opponent_rank": 36,
+      "opponent_name": "Cody Walsh",
+      "method": "Dec 13-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34934124132",
+      "opponent_rank": 33,
+      "opponent_name": "Jared Keslar",
+      "method": "SV-3 2-1"
+    }
   },
   "match_list": [
     {
@@ -78,7 +88,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "result": "W",
       "method": "DEC",
       "score": "7-4",
@@ -123,7 +133,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 44,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -138,7 +148,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -153,7 +163,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 33,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 14,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -183,7 +193,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -198,7 +208,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "result": "L",
       "method": "DEC",
       "score": "5-0",
@@ -228,7 +238,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "result": "W",
       "method": "DEC",
       "score": "13-7",
@@ -257,7 +267,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "2-1",

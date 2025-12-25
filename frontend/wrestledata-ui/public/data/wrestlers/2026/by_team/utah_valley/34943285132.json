@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-3",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 10.11,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34944675132",
+      "opponent_rank": 28,
+      "opponent_name": "Joseph Zargo",
+      "method": "Fall 3:11"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -77,7 +82,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -106,7 +111,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "result": "L",
       "method": "TF",
       "score": "17-0",

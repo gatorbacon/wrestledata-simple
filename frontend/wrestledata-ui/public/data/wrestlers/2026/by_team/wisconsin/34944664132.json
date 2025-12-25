@@ -6,12 +6,12 @@
   "team_rank": 27,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 41,
   "record": {
     "overall": "7-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 6.37,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34937669132",
+      "opponent_rank": 52,
+      "opponent_name": "Jurius Clark",
+      "method": "Dec 8-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34935958132",
+      "opponent_rank": 40,
+      "opponent_name": "Avery Bassett",
+      "method": "SV-1 9-6"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "L",
       "method": "DEC",
       "score": "9-6",
@@ -91,7 +101,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 70,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -121,7 +131,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 37,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "result": "L",
       "method": "MD",
       "score": "14-3",
@@ -136,7 +146,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 46,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "8-1",
@@ -151,7 +161,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 3,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 14,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -166,7 +176,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 62,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -181,7 +191,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "result": "W",
       "method": "DEC",
       "score": "13-6",
@@ -196,7 +206,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 75,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "result": "W",
       "method": "MD",
       "score": "13-4",

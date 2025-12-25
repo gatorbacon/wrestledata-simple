@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34949272132",
+      "opponent_rank": 63,
+      "opponent_name": "Henry Downing",
+      "method": "Dec 11-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34948498132",
+      "opponent_rank": 49,
+      "opponent_name": "Drew Clearie",
+      "method": "Fall 6:51"
+    }
   },
   "match_list": [
     {
@@ -79,7 +89,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 77,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "result": "W",
       "method": "DEC",
       "score": "11-5",
@@ -109,7 +119,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "result": "L",
       "method": "FALL",
       "score": null,

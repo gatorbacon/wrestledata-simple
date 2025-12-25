@@ -6,12 +6,12 @@
   "team_rank": 75,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 70,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-4",
+    "vs_top10": "0-3",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 4.62,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 3,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34943239132",
+      "opponent_rank": 47,
+      "opponent_name": "Marcus Espinoza-Owens",
+      "method": "MD 18-7"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "result": "L",
       "method": "TF",
       "score": "18-1",
@@ -63,7 +68,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "TF",
       "score": "18-3",
@@ -108,7 +113,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 26,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "result": "L",
       "method": "MD",
       "score": "18-7",
@@ -123,7 +128,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "TF",
       "score": "20-2",

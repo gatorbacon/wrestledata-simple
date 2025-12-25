@@ -6,12 +6,12 @@
   "team_rank": 2,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 3,
   "record": {
     "overall": "8-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-1",
+    "vs_top10": "2-1",
+    "vs_top25": "4-1"
   },
   "metrics": {
     "pf7": 14.81,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
-    "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "ranked_wins": 4,
+    "ranked_losses": 1,
+    "top10_wins": 2,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34935689132",
+      "opponent_rank": 4,
+      "opponent_name": "Matty Singleton",
+      "method": "Dec 8-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34962152132",
+      "opponent_rank": 2,
+      "opponent_name": "Patrick Kennedy",
+      "method": "SV-1 4-1"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "result": "W",
       "method": "DEC",
       "score": "8-4",
@@ -108,7 +118,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -123,7 +133,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "result": "W",
       "method": "TF",
       "score": "19-4",
@@ -138,7 +148,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "W",
       "method": "DEC",
       "score": "5-1",
@@ -153,7 +163,7 @@
       "opponent_team": "Wyoming",
       "opponent_team_rank": 15,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "W",
       "method": "MD",
       "score": "15-6",

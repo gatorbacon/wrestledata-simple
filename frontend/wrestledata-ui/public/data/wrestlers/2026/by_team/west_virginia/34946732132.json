@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "7-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.7,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34934477132",
+      "opponent_rank": 62,
+      "opponent_name": "Pat Phillips",
+      "method": "Dec 5-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34944347132",
+      "opponent_rank": 23,
+      "opponent_name": "Kaden Keiser",
+      "method": "Dec 8-5"
+    }
   },
   "match_list": [
     {
@@ -139,7 +149,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "L",
       "method": "DEC",
       "score": "8-5",
@@ -154,7 +164,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 62,
       "result": "W",
       "method": "DEC",
       "score": "5-3",

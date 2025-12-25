@@ -6,12 +6,12 @@
   "team_rank": 26,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 10,
   "record": {
     "overall": "6-2",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-1",
+    "vs_top10": "0-1",
+    "vs_top25": "2-1"
   },
   "metrics": {
     "pf7": 8.88,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34955780132",
+      "opponent_rank": 12,
+      "opponent_name": "Vance Vombaur",
+      "method": "Dec 5-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34943278132",
+      "opponent_rank": 8,
+      "opponent_name": "Haiden Drury",
+      "method": "Dec 5-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 41,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "result": "W",
       "method": "TF",
       "score": "20-5",
@@ -63,7 +73,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 17,
       "result": "W",
       "method": "DEC",
       "score": "10-7",
@@ -108,7 +118,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "result": "L",
       "method": "DEC",
       "score": "5-3",
@@ -138,7 +148,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "W",
       "method": "DEC",
       "score": "5-1",
@@ -153,7 +163,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 75,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "result": "W",
       "method": "DEC",
       "score": "5-1",

@@ -6,12 +6,12 @@
   "team_rank": 34,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 45,
   "record": {
     "overall": "8-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "5-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 7.91,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934133132",
+      "opponent_rank": 46,
+      "opponent_name": "Tyler Chappell",
+      "method": "Dec 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34935855132",
+      "opponent_rank": 24,
+      "opponent_name": "Davis Motyka",
+      "method": "MD 12-4"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Morgan State",
       "opponent_team_rank": 74,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 78,
       "result": "W",
       "method": "TF",
       "score": "23-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -78,7 +88,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -123,7 +133,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 44,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "L",
       "method": "MD",
       "score": "11-1",
@@ -138,7 +148,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 33,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "result": "L",
       "method": "MD",
       "score": "22-10",
@@ -168,7 +178,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 29,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "result": "L",
       "method": "MD",
       "score": "12-4",
@@ -183,7 +193,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -198,7 +208,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "result": "L",
       "method": "DEC",
       "score": "6-5",
@@ -213,7 +223,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "W",
       "method": "DEC",
       "score": "4-1",

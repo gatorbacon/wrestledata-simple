@@ -6,12 +6,12 @@
   "team_rank": 30,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 31,
   "record": {
     "overall": "5-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-5",
+    "vs_top10": "0-2",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 3.9,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34964389132",
+      "opponent_rank": 33,
+      "opponent_name": "Marcello Milani",
+      "method": "Dec 10-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34934628132",
+      "opponent_rank": 30,
+      "opponent_name": "Ezekiel Witt",
+      "method": "Dec 3-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 44,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "L",
       "method": "DEC",
       "score": "5-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "W",
       "method": "MD",
       "score": "12-0",
@@ -93,7 +103,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -108,7 +118,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 56,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -138,7 +148,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 75,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "L",
       "method": "DEC",
       "score": "3-1",
@@ -153,7 +163,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 9,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "W",
       "method": "DEC",
       "score": "10-5",
@@ -168,7 +178,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -183,7 +193,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "result": "L",
       "method": "DEC",
       "score": "4-2",

@@ -6,12 +6,12 @@
   "team_rank": 51,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 39,
   "record": {
     "overall": "8-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 8.96,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934259132",
+      "opponent_rank": 51,
+      "opponent_name": "Beau Lewis",
+      "method": "MD 17-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34943829132",
+      "opponent_rank": 58,
+      "opponent_name": "Grant O`Dell",
+      "method": "Dec 2-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "result": "L",
       "method": "MD",
       "score": "17-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 59,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 58,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -78,7 +88,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 71,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 59,
       "result": "W",
       "method": "MD",
       "score": "17-3",
@@ -93,7 +103,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 46,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "11-5",
@@ -108,7 +118,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "result": "L",
       "method": "DEC",
       "score": "8-5",
@@ -168,7 +178,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "result": "L",
       "method": "TF",
       "score": "20-3",
@@ -183,7 +193,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 79,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "W",
       "method": "MD",
       "score": "17-5",
@@ -228,7 +238,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 65,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -243,7 +253,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 71,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 59,
       "result": "W",
       "method": "DEC",
       "score": "14-13",

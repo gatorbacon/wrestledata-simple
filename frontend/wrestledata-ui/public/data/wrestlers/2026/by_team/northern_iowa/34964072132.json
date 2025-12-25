@@ -6,12 +6,12 @@
   "team_rank": 30,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 21,
   "record": {
     "overall": "7-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 11.6,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34952069132",
+      "opponent_rank": 25,
+      "opponent_name": "Luke Luffman",
+      "method": "Dec 8-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34955792132",
+      "opponent_rank": 16,
+      "opponent_name": "Koy Hopke",
+      "method": "Dec 9-5"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "W",
       "method": "TF",
       "score": "21-6",
@@ -64,7 +74,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -94,7 +104,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -124,7 +134,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 9,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "5-1",
@@ -139,7 +149,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "L",
       "method": "DEC",
       "score": "9-5",

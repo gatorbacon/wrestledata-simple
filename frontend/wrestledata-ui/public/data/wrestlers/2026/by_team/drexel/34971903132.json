@@ -6,12 +6,12 @@
   "team_rank": 42,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 40,
   "record": {
     "overall": "9-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 10.66,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34935975132",
+      "opponent_rank": 42,
+      "opponent_name": "Tucker Hogan",
+      "method": "MD 15-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34955058132",
+      "opponent_rank": 35,
+      "opponent_name": "Max Shulaw",
+      "method": "Fall 2:03"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "W",
       "method": "TF",
       "score": "17-1",
@@ -77,7 +87,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "result": "L",
       "method": "MD",
       "score": "15-7",
@@ -91,7 +101,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 55,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "result": "L",
       "method": "DEC",
       "score": "7-0",
@@ -106,7 +116,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "W",
       "method": "MD",
       "score": "15-7",
@@ -121,7 +131,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "W",
       "method": "DEC",
       "score": "6-1",
@@ -151,7 +161,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 69,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "W",
       "method": "TF",
       "score": "18-2",
@@ -181,7 +191,7 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 50,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -226,7 +236,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 34,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "8-3",

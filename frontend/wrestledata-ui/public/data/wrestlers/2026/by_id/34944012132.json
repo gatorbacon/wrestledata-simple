@@ -6,12 +6,12 @@
   "team_rank": 71,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 31,
   "record": {
     "overall": "9-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "6-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 8.27,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34955058132",
+      "opponent_rank": 35,
+      "opponent_name": "Max Shulaw",
+      "method": "Dec 9-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34933980132",
+      "opponent_rank": 24,
+      "opponent_name": "Kael Wisler",
+      "method": "Fall 3:57"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 48,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -78,7 +88,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -92,7 +102,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 59,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "result": "W",
       "method": "DEC",
       "score": "3-0",
@@ -107,7 +117,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "W",
       "method": "DEC",
       "score": "10-4",
@@ -167,7 +177,7 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 50,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "W",
       "method": "DEC",
       "score": "9-6",
@@ -182,7 +192,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 65,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -212,7 +222,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 55,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "result": "L",
       "method": "FALL",
       "score": null,

@@ -6,12 +6,12 @@
   "team_rank": 38,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 44,
   "record": {
     "overall": "4-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 4.94,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34945529132",
+      "opponent_rank": 53,
+      "opponent_name": "Colt Campbell",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34935673132",
+      "opponent_rank": 42,
+      "opponent_name": "Liam Carlin",
+      "method": "Dec 8-4"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 29,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "L",
       "method": "DEC",
       "score": "8-4",
@@ -109,7 +119,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "result": "W",
       "method": "DEC",
       "score": "5-4",
@@ -124,7 +134,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "L",
       "method": "TF",
       "score": "18-2",
@@ -139,7 +149,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "result": "L",
       "method": "DEC",
       "score": "7-2",
@@ -169,7 +179,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "L",
       "method": "DEC",
       "score": "5-3",
@@ -184,7 +194,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 21,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "result": "L",
       "method": "DEC",
       "score": "2-0",

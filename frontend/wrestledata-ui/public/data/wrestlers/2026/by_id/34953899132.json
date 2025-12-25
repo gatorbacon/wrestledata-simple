@@ -6,12 +6,12 @@
   "team_rank": 72,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 54,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-5",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 3.63,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34948513132",
+      "opponent_rank": 55,
+      "opponent_name": "Thomas Sandoval",
+      "method": "Dec 5-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34939074132",
+      "opponent_rank": 71,
+      "opponent_name": "Hadyn Danals",
+      "method": "M. For."
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 61,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 62,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -64,7 +74,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "result": "W",
       "method": "DEC",
       "score": "5-1",
@@ -79,7 +89,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "result": "L",
       "method": "TF",
       "score": "21-6",
@@ -108,7 +118,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -122,7 +132,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "TF",
       "score": "19-3",
@@ -137,7 +147,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 55,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "L",
       "method": "DEC",
       "score": "8-3",

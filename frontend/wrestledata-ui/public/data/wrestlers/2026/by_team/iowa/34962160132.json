@@ -6,12 +6,12 @@
   "team_rank": 4,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 7,
   "record": {
     "overall": "6-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-1",
+    "vs_top10": "0-1",
+    "vs_top25": "3-1"
   },
   "metrics": {
     "pf7": 7.8,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934137132",
+      "opponent_rank": 12,
+      "opponent_name": "Kade Brown",
+      "method": "MD 12-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34941806132",
+      "opponent_rank": 6,
+      "opponent_name": "Ethan Stiles",
+      "method": "Dec 3-2"
+    }
   },
   "match_list": [
     {
@@ -92,7 +102,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "W",
       "method": "MD",
       "score": "12-2",
@@ -107,7 +117,7 @@
       "opponent_team": "Oklahoma State",
       "opponent_team_rank": 5,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "W",
       "method": "DEC",
       "score": "5-3",
@@ -122,7 +132,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -137,7 +147,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "DEC",
       "score": "3-2",

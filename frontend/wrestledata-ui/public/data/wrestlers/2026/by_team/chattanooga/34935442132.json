@@ -6,10 +6,10 @@
   "team_rank": 66,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 64,
   "record": {
     "overall": "3-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,11 +34,16 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34938655132",
+      "opponent_rank": 65,
+      "opponent_name": "Gabe Lilly",
+      "method": "Dec 9-6"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -77,7 +82,7 @@
       "opponent_team": "Clarion",
       "opponent_team_rank": 67,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "result": "W",
       "method": "DEC",
       "score": "9-6",

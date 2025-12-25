@@ -6,12 +6,12 @@
   "team_rank": 26,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 11,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 2.5,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34943475132",
+      "opponent_rank": 13,
+      "opponent_name": "Angelo Posada",
+      "method": "Dec 3-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34943388132",
+      "opponent_rank": 44,
+      "opponent_name": "Adam Haselius",
+      "method": "M. For."
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -63,7 +73,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 22,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "W",
       "method": "DEC",
       "score": "3-1",
@@ -78,7 +88,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "W",
       "method": "DEC",
       "score": "2-1",

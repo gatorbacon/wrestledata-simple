@@ -6,10 +6,10 @@
   "team_rank": 37,
   "weight_class": 133,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 60,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34934144132",
+      "opponent_rank": 28,
+      "opponent_name": "Evan Tallmadge",
+      "method": "Dec 8-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 133,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "result": "L",
       "method": "DEC",
       "score": "8-2",

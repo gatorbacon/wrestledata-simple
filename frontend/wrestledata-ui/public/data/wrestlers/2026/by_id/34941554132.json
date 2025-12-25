@@ -6,10 +6,10 @@
   "team_rank": 24,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 31,
   "record": {
     "overall": "8-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34948517132",
+      "opponent_rank": 32,
+      "opponent_name": "Khimari Manns",
+      "method": "Dec 1-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34957805132",
+      "opponent_rank": 71,
+      "opponent_name": "KJ Evans",
+      "method": "Dec 11-10"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 69,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "result": "W",
       "method": "MD",
       "score": "11-0",
@@ -77,7 +87,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "W",
       "method": "DEC",
       "score": "1-0",
@@ -122,7 +132,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "L",
       "method": "DEC",
       "score": "11-10",

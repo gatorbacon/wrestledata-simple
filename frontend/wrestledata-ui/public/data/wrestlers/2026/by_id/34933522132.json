@@ -6,10 +6,10 @@
   "team_rank": 16,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 41,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,12 +27,22 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34935486132",
+      "opponent_rank": 42,
+      "opponent_name": "Hunter Mason",
+      "method": "SV-3 10-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34946823132",
+      "opponent_rank": 40,
+      "opponent_name": "Luke Satriano",
+      "method": "SV-3 7-4"
+    }
   },
   "match_list": [
     {
@@ -42,7 +52,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 66,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "W",
       "method": "DEC",
       "score": "10-7",
@@ -70,7 +80,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "L",
       "method": "DEC",
       "score": "7-4",

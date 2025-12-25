@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-3",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.46,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34933977132",
+      "opponent_rank": 47,
+      "opponent_name": "Nick Corday",
+      "method": "SV-1 2-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 13,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -94,7 +99,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 55,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -109,7 +114,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "L",
       "method": "DEC",
       "score": "5-4",

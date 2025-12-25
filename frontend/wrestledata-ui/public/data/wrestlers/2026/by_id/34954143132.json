@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.67,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34944662132",
+      "opponent_rank": 68,
+      "opponent_name": "Cale Anderson",
+      "method": "Dec 14-10"
+    },
+    "worst_loss": {
+      "opponent_id": "34937679132",
+      "opponent_rank": 64,
+      "opponent_name": "Will Conlon",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 70,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -63,7 +73,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 68,
       "result": "W",
       "method": "DEC",
       "score": "14-10",
@@ -93,7 +103,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 20,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "DEC",
       "score": "15-8",
@@ -108,7 +118,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 47,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "result": "L",
       "method": "MD",
       "score": "15-6",
@@ -123,7 +133,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 37,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "result": "L",
       "method": "MD",
       "score": "14-5",

@@ -6,12 +6,12 @@
   "team_rank": 39,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 47,
   "record": {
     "overall": "6-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 7.4,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34945140132",
+      "opponent_rank": 15,
+      "opponent_name": "Brody Baumann",
+      "method": "Dec 13-12"
+    },
+    "worst_loss": {
+      "opponent_id": "34934116132",
+      "opponent_rank": 61,
+      "opponent_name": "Nick Marienfeld",
+      "method": "SV-1 12-9"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 21,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "result": "L",
       "method": "MD",
       "score": "12-3",
@@ -63,7 +73,7 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 63,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -78,7 +88,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "L",
       "method": "DEC",
       "score": "8-6",
@@ -93,7 +103,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 19,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "DEC",
       "score": "16-13",
@@ -123,7 +133,7 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 59,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 58,
       "result": "W",
       "method": "DEC",
       "score": "8-6",
@@ -138,7 +148,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 19,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "W",
       "method": "DEC",
       "score": "13-12",
@@ -168,7 +178,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 65,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "result": "L",
       "method": "DEC",
       "score": "12-9",
@@ -198,7 +208,7 @@
       "opponent_team": "Davidson",
       "opponent_team_rank": 68,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "result": "W",
       "method": "DEC",
       "score": "11-8",

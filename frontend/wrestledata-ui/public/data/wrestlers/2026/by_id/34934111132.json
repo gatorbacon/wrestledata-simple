@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "10-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 10.41,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34951039132",
+      "opponent_rank": 46,
+      "opponent_name": "Aden Roe",
+      "method": "Dec 8-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34945332132",
+      "opponent_rank": 33,
+      "opponent_name": "Hunter Catka",
+      "method": "TF 21-5 4:41"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 66,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "result": "W",
       "method": "MD",
       "score": "11-1",
@@ -121,7 +131,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "TF",
       "score": "21-5",
@@ -136,7 +146,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "W",
       "method": "DEC",
       "score": "8-2",
@@ -151,7 +161,7 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 53,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 70,
       "result": "W",
       "method": "TF",
       "score": "19-3",
@@ -181,7 +191,7 @@
       "opponent_team": "Arizona State",
       "opponent_team_rank": 11,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -196,7 +206,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 71,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "result": "W",
       "method": "DEC",
       "score": "5-1",

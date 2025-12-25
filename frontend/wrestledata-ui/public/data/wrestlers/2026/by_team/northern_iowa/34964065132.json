@@ -6,12 +6,12 @@
   "team_rank": 30,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 38,
   "record": {
     "overall": "4-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 5.31,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34943155132",
+      "opponent_rank": 39,
+      "opponent_name": "Laird Root",
+      "method": "Dec 4-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34937103132",
+      "opponent_rank": 68,
+      "opponent_name": "Daishun Powe",
+      "method": "Dec 9-4"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "result": "W",
       "method": "DEC",
       "score": "4-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "result": "L",
       "method": "DEC",
       "score": "6-3",
@@ -78,7 +88,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "result": "W",
       "method": "DEC",
       "score": "11-4",
@@ -93,7 +103,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -123,7 +133,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 56,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 68,
       "result": "L",
       "method": "DEC",
       "score": "9-4",
@@ -153,7 +163,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "result": "L",
       "method": "TF",
       "score": "19-4",
@@ -168,7 +178,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 11,
       "result": "L",
       "method": "DEC",
       "score": "3-1",

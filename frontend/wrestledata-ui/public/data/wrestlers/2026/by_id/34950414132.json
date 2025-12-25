@@ -6,10 +6,10 @@
   "team_rank": 69,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 66,
   "record": {
     "overall": "5-8",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,12 +27,22 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34937679132",
+      "opponent_rank": 64,
+      "opponent_name": "Will Conlon",
+      "method": "Dec 6-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34949038132",
+      "opponent_rank": 65,
+      "opponent_name": "Chris DeLena",
+      "method": "Dec 10-6"
+    }
   },
   "match_list": [
     {
@@ -42,7 +52,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 58,
       "result": "L",
       "method": "DEC",
       "score": "13-8",
@@ -56,7 +66,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "result": "L",
       "method": "MD",
       "score": "9-1",
@@ -70,7 +80,7 @@
       "opponent_team": "Mercyherst",
       "opponent_team_rank": 73,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -98,7 +108,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "L",
       "method": "TF",
       "score": "18-2",
@@ -168,7 +178,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "result": "W",
       "method": "DEC",
       "score": "10-5",
@@ -182,7 +192,7 @@
       "opponent_team": "Hofstra",
       "opponent_team_rank": 70,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "result": "W",
       "method": "DEC",
       "score": "6-2",
@@ -196,7 +206,7 @@
       "opponent_team": "Lehigh",
       "opponent_team_rank": 13,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "L",
       "method": "MD",
       "score": "13-3",
@@ -210,7 +220,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 77,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "result": "L",
       "method": "DEC",
       "score": "10-6",

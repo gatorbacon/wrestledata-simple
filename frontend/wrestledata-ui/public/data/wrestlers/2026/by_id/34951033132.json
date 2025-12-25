@@ -6,12 +6,12 @@
   "team_rank": 51,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 20,
   "record": {
     "overall": "7-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 11.89,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34945057132",
+      "opponent_rank": 22,
+      "opponent_name": "Shane Cartagena-Walsh",
+      "method": "Dec 2-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34934699132",
+      "opponent_rank": 7,
+      "opponent_name": "James Conway",
+      "method": "Dec 10-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "result": "W",
       "method": "DEC",
       "score": "5-0",
@@ -78,7 +88,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 71,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "result": "W",
       "method": "MD",
       "score": "14-2",
@@ -108,7 +118,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -138,7 +148,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "DEC",
       "score": "10-3",
@@ -153,7 +163,7 @@
       "opponent_team": "VMI",
       "opponent_team_rank": 79,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 76,
       "result": "W",
       "method": "TF",
       "score": "18-3",

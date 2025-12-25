@@ -6,12 +6,12 @@
   "team_rank": 66,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 29,
   "record": {
     "overall": "7-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 10.43,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934410132",
+      "opponent_rank": 30,
+      "opponent_name": "Joe Antonio",
+      "method": "Fall 0:55"
+    },
+    "worst_loss": {
+      "opponent_id": "34943282132",
+      "opponent_rank": 55,
+      "opponent_name": "Mark Takara",
+      "method": "Dec 5-4"
+    }
   },
   "match_list": [
     {
@@ -119,7 +129,7 @@
       "opponent_team": "Kent State",
       "opponent_team_rank": 71,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "result": "L",
       "method": "DEC",
       "score": "6-4",
@@ -133,7 +143,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -147,7 +157,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "L",
       "method": "MD",
       "score": "11-3",
@@ -191,7 +201,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -206,7 +216,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "result": "L",
       "method": "FALL",
       "score": null,

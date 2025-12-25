@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "13-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.75,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34954155132",
+      "opponent_rank": 49,
+      "opponent_name": "Cade Wirnsberger",
+      "method": "SV-3 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34934162132",
+      "opponent_rank": 48,
+      "opponent_name": "Vince Bouzakis",
+      "method": "SV-2 8-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Morgan State",
       "opponent_team_rank": 74,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 57,
       "result": "W",
       "method": "DEC",
       "score": "7-5",
@@ -93,7 +103,7 @@
       "opponent_team": "Rutgers",
       "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "3-0",
@@ -183,7 +193,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -213,7 +223,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "4-3",
@@ -243,7 +253,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "L",
       "method": "DEC",
       "score": "3-2",
@@ -273,7 +283,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 47,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "result": "W",
       "method": "MD",
       "score": "11-2",
@@ -288,7 +298,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "W",
       "method": "DEC",
       "score": "11-4",
@@ -303,7 +313,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 37,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -318,7 +328,7 @@
       "opponent_team": "Virginia",
       "opponent_team_rank": 50,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -333,7 +343,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "result": "L",
       "method": "DEC",
       "score": "8-2",

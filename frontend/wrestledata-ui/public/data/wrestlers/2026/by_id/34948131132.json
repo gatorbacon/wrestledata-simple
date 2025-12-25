@@ -6,12 +6,12 @@
   "team_rank": 38,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 56,
   "record": {
     "overall": "4-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.12,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34957601132",
+      "opponent_rank": 52,
+      "opponent_name": "Oscar Williams",
+      "method": "SV-3 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34946806132",
+      "opponent_rank": 55,
+      "opponent_name": "Brock Kehler",
+      "method": "Dec 5-0"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 43,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -64,7 +74,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "result": "W",
       "method": "DEC",
       "score": "5-2",
@@ -79,7 +89,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "result": "L",
       "method": "DEC",
       "score": "11-4",
@@ -94,7 +104,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "L",
       "method": "DEC",
       "score": "5-2",
@@ -109,7 +119,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "result": "L",
       "method": "DEC",
       "score": "5-0",
@@ -124,7 +134,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 17,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -184,7 +194,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "result": "L",
       "method": "DEC",
       "score": "10-3",

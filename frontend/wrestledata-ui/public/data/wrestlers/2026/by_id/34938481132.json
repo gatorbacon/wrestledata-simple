@@ -6,12 +6,12 @@
   "team_rank": 43,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 11,
   "record": {
     "overall": "12-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 16.17,
@@ -34,11 +34,16 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 5,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34934137132",
+      "opponent_rank": 12,
+      "opponent_name": "Kade Brown",
+      "method": "Dec 15-9"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -49,7 +54,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 48,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "W",
       "method": "DEC",
       "score": "12-8",
@@ -78,7 +83,7 @@
       "opponent_team": "Maryland",
       "opponent_team_rank": 25,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 38,
       "result": "W",
       "method": "TF",
       "score": "15-0",
@@ -168,7 +173,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "result": "W",
       "method": "MD",
       "score": "14-4",
@@ -183,7 +188,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "W",
       "method": "DEC",
       "score": "15-9",
@@ -213,7 +218,7 @@
       "opponent_team": "Morgan State",
       "opponent_team_rank": 74,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "W",
       "method": "DEC",
       "score": "10-7",

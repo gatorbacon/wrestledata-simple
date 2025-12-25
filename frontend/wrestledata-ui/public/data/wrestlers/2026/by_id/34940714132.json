@@ -6,12 +6,12 @@
   "team_rank": 3,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 5,
   "record": {
     "overall": "8-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "6-1",
+    "vs_top10": "2-1",
+    "vs_top25": "4-1"
   },
   "metrics": {
     "pf7": 13.25,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
-    "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "ranked_wins": 6,
+    "ranked_losses": 1,
+    "top10_wins": 2,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34962192132",
+      "opponent_rank": 7,
+      "opponent_name": "Nasir Bailey",
+      "method": "MD 15-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34941780132",
+      "opponent_rank": 1,
+      "opponent_name": "Jesse Mendez",
+      "method": "Dec 5-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -63,7 +73,7 @@
       "opponent_team": "CSU Bakersfield",
       "opponent_team_rank": 63,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 58,
       "result": "W",
       "method": "TF",
       "score": "20-5",
@@ -78,7 +88,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "W",
       "method": "DEC",
       "score": "6-2",
@@ -93,7 +103,7 @@
       "opponent_team": "Stanford",
       "opponent_team_rank": 22,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "W",
       "method": "MD",
       "score": "12-2",
@@ -108,7 +118,7 @@
       "opponent_team": "Utah Valley",
       "opponent_team_rank": 31,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "result": "W",
       "method": "DEC",
       "score": "10-3",
@@ -123,7 +133,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "result": "W",
       "method": "TF",
       "score": "19-2",
@@ -138,7 +148,7 @@
       "opponent_team": "Iowa",
       "opponent_team_rank": 4,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "W",
       "method": "MD",
       "score": "15-2",

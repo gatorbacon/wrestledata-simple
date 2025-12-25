@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34935442132",
+      "opponent_rank": 64,
+      "opponent_name": "Brody Murray",
+      "method": "MD 14-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34945529132",
+      "opponent_rank": 53,
+      "opponent_name": "Colt Campbell",
+      "method": "Fall 6:57"
+    }
   },
   "match_list": [
     {
@@ -64,7 +74,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -79,7 +89,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 66,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "result": "W",
       "method": "MD",
       "score": "14-3",

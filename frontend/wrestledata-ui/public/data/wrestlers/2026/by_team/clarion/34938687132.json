@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "5-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34949297132",
+      "opponent_rank": 74,
+      "opponent_name": "Corey Iannucci",
+      "method": "TF 15-0 5:23"
+    },
+    "worst_loss": {
+      "opponent_id": "34936230132",
+      "opponent_rank": 51,
+      "opponent_name": "Jace Schafer",
+      "method": "MD 15-3"
+    }
   },
   "match_list": [
     {
@@ -64,7 +74,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 61,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "result": "L",
       "method": "MD",
       "score": "15-3",
@@ -94,7 +104,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 77,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "result": "W",
       "method": "TF",
       "score": "15-0",

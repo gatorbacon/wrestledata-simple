@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 11.5,
@@ -34,11 +34,16 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34943379132",
+      "opponent_rank": 16,
+      "opponent_name": "Aaron Ayzerov",
+      "method": "MD 11-3"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -49,7 +54,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "W",
       "method": "MD",
       "score": "12-0",
@@ -64,7 +69,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "W",
       "method": "MD",
       "score": "11-3",

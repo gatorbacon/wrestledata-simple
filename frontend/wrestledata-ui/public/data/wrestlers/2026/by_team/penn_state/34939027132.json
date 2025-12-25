@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "6-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-1",
+    "vs_top10": "1-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 13.0,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
-    "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 1,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34963117132",
+      "opponent_rank": 7,
+      "opponent_name": "DJ Parker",
+      "method": "MD 13-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34933446132",
+      "opponent_rank": 6,
+      "opponent_name": "Joey Novak",
+      "method": "MD 10-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Wyoming",
       "opponent_team_rank": 15,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "MD",
       "score": "10-2",
@@ -94,7 +104,7 @@
       "opponent_team": "Army West Point",
       "opponent_team_rank": 36,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "result": "W",
       "method": "TF",
       "score": "17-2",
@@ -124,7 +134,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -139,7 +149,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "W",
       "method": "MD",
       "score": "13-3",

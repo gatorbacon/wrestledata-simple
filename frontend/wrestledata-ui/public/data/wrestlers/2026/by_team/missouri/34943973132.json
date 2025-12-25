@@ -6,12 +6,12 @@
   "team_rank": 18,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 40,
   "record": {
     "overall": "8-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 7.0,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34948502132",
+      "opponent_rank": 43,
+      "opponent_name": "Alex Semenenko",
+      "method": "Dec 2-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34941542132",
+      "opponent_rank": 35,
+      "opponent_name": "Bryson Buhk",
+      "method": "Dec 7-5"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Northern Iowa",
       "opponent_team_rank": 30,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "result": "L",
       "method": "TF",
       "score": "21-6",
@@ -64,7 +74,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -94,7 +104,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "L",
       "method": "DEC",
       "score": "7-5",
@@ -124,7 +134,7 @@
       "opponent_team": "LIU",
       "opponent_team_rank": 72,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "result": "W",
       "method": "DEC",
       "score": "6-1",
@@ -139,7 +149,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "result": "L",
       "method": "MD",
       "score": "13-3",
@@ -184,7 +194,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 16,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "MD",
       "score": "17-7",
@@ -199,7 +209,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "result": "L",
       "method": "DEC",
       "score": "5-0",
@@ -244,7 +254,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "L",
       "method": "DEC",
       "score": "11-5",

@@ -6,12 +6,12 @@
   "team_rank": 43,
   "weight_class": 174,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 27,
   "record": {
     "overall": "14-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "6-3",
+    "vs_top10": "0-2",
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 10.4,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34935279132",
+      "opponent_rank": 24,
+      "opponent_name": "Sergio Desiante",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34947800132",
+      "opponent_rank": 26,
+      "opponent_name": "Carter Baer",
+      "method": "Dec 6-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "result": "L",
       "method": "MD",
       "score": "11-1",
@@ -63,7 +73,7 @@
       "opponent_team": "Buffalo",
       "opponent_team_rank": 48,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "result": "W",
       "method": "DEC",
       "score": "5-4",
@@ -77,7 +87,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -137,7 +147,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 20,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "result": "W",
       "method": "DEC",
       "score": "4-2",
@@ -152,7 +162,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "result": "L",
       "method": "DEC",
       "score": "6-3",
@@ -167,7 +177,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "result": "W",
       "method": "DEC",
       "score": "7-2",
@@ -197,7 +207,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 47,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 67,
       "result": "W",
       "method": "DEC",
       "score": "4-0",
@@ -257,7 +267,7 @@
       "opponent_team": "Campbell",
       "opponent_team_rank": 41,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "result": "W",
       "method": "MD",
       "score": "19-6",
@@ -287,7 +297,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "TF",
       "score": "17-2",

@@ -6,12 +6,12 @@
   "team_rank": 38,
   "weight_class": 149,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 13,
   "record": {
     "overall": "5-2",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-2",
+    "vs_top10": "1-1",
+    "vs_top25": "3-2"
   },
   "metrics": {
     "pf7": 7.07,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
-    "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "ranked_wins": 3,
+    "ranked_losses": 2,
+    "top10_wins": 1,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34940707132",
+      "opponent_rank": 5,
+      "opponent_name": "Jacob Frost",
+      "method": "Dec 11-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34934137132",
+      "opponent_rank": 12,
+      "opponent_name": "Kade Brown",
+      "method": "SV-1 7-4"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 9,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -64,7 +74,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 3,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "result": "W",
       "method": "DEC",
       "score": "11-4",
@@ -79,7 +89,7 @@
       "opponent_team": "Michigan",
       "opponent_team_rank": 16,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "result": "W",
       "method": "DEC",
       "score": "4-3",
@@ -124,7 +134,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "W",
       "method": "DEC",
       "score": "8-5",
@@ -139,7 +149,7 @@
       "opponent_team": "Pittsburgh",
       "opponent_team_rank": 35,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "L",
       "method": "DEC",
       "score": "7-4",

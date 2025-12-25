@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "7-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 7.08,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34971891132",
+      "opponent_rank": 56,
+      "opponent_name": "Luke Nichter",
+      "method": "MD 14-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34971891132",
+      "opponent_rank": 56,
+      "opponent_name": "Luke Nichter",
+      "method": "SV-1 4-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -63,7 +73,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "result": "W",
       "method": "MD",
       "score": "8-0",
@@ -91,7 +101,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 11,
       "result": "L",
       "method": "MD",
       "score": "12-3",
@@ -106,7 +116,7 @@
       "opponent_team": "Central Michigan",
       "opponent_team_rank": 65,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "result": "L",
       "method": "DEC",
       "score": "8-5",
@@ -121,7 +131,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "result": "W",
       "method": "MD",
       "score": "14-3",
@@ -136,7 +146,7 @@
       "opponent_team": "Harvard",
       "opponent_team_rank": 53,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "result": "L",
       "method": "MD",
       "score": "15-3",
@@ -151,7 +161,7 @@
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 20,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "W",
       "method": "MD",
       "score": "8-0",
@@ -181,7 +191,7 @@
       "opponent_team": "Bloomsburg",
       "opponent_team_rank": 61,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 76,
       "result": "W",
       "method": "DEC",
       "score": "8-1",
@@ -196,7 +206,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "result": "W",
       "method": "DEC",
       "score": "6-4",

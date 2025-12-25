@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 1.5,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34945367132",
+      "opponent_rank": 21,
+      "opponent_name": "jaivon jones",
+      "method": "MD 9-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "Little Rock",
       "opponent_team_rank": 14,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "result": "L",
       "method": "MD",
       "score": "9-1",

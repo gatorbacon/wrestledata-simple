@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.96,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34944352132",
+      "opponent_rank": 65,
+      "opponent_name": "Aldo Hernandez",
+      "method": "MD 8-0"
+    },
+    "worst_loss": {
+      "opponent_id": "34945147132",
+      "opponent_rank": 30,
+      "opponent_name": "Greyson Clark",
+      "method": "SV-3 4-1"
+    }
   },
   "match_list": [
     {
@@ -63,7 +73,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 19,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -78,7 +88,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 45,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "result": "L",
       "method": "DEC",
       "score": "5-4",
@@ -93,7 +103,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "result": "W",
       "method": "MD",
       "score": "8-0",

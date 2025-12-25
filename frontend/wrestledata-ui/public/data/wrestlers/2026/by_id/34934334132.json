@@ -6,12 +6,12 @@
   "team_rank": 36,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 50,
   "record": {
     "overall": "4-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 2.4,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34944662132",
+      "opponent_rank": 68,
+      "opponent_name": "Cale Anderson",
+      "method": "Dec 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34935437132",
+      "opponent_rank": 41,
+      "opponent_name": "Landon Jones",
+      "method": "Dec 9-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 33,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "result": "L",
       "method": "MD",
       "score": "10-1",
@@ -64,7 +74,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 68,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -79,7 +89,7 @@
       "opponent_team": "Chattanooga",
       "opponent_team_rank": 66,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 41,
       "result": "L",
       "method": "DEC",
       "score": "9-2",
@@ -124,7 +134,7 @@
       "opponent_team": "Gardner-Webb",
       "opponent_team_rank": 52,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -154,7 +164,7 @@
       "opponent_team": "Nebraska",
       "opponent_team_rank": 7,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 9,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -169,7 +179,7 @@
       "opponent_team": "Oregon State",
       "opponent_team_rank": 21,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "result": "L",
       "method": "MD",
       "score": "14-5",

@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "4-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 7.06,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34945355132",
+      "opponent_rank": 50,
+      "opponent_name": "Michael Gasper",
+      "method": "Dec 4-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34948502132",
+      "opponent_rank": 43,
+      "opponent_name": "Alex Semenenko",
+      "method": "Fall 2:13"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 2,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "result": "L",
       "method": "TF",
       "score": "17-2",
@@ -63,7 +73,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -138,7 +148,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "L",
       "method": "DEC",
       "score": "2-0",
@@ -153,7 +163,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "L",
       "method": "TF",
       "score": "21-6",
@@ -168,7 +178,7 @@
       "opponent_team": "Little Rock",
       "opponent_team_rank": 14,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "W",
       "method": "DEC",
       "score": "4-3",

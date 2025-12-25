@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "5-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34954558132",
+      "opponent_rank": 76,
+      "opponent_name": "Joshua Roe",
+      "method": "MD 10-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34936214132",
+      "opponent_rank": 56,
+      "opponent_name": "Jack Lledo",
+      "method": "Dec 8-4"
+    }
   },
   "match_list": [
     {
@@ -94,7 +104,7 @@
       "opponent_team": "Ohio",
       "opponent_team_rank": 46,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "result": "L",
       "method": "DEC",
       "score": "8-4",
@@ -139,7 +149,7 @@
       "opponent_team": "Presbyterian",
       "opponent_team_rank": 76,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 76,
       "result": "W",
       "method": "MD",
       "score": "10-2",

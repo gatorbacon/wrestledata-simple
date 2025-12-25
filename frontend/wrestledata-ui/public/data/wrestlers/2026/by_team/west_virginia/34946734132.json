@@ -6,12 +6,12 @@
   "team_rank": 12,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 31,
   "record": {
     "overall": "5-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 4.2,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34951026132",
+      "opponent_rank": 32,
+      "opponent_name": "Ryan Burgos",
+      "method": "Dec 8-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34944349132",
+      "opponent_rank": 37,
+      "opponent_name": "Anthony Conetta",
+      "method": "Dec 2-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 44,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -64,7 +74,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 9,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -79,7 +89,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "W",
       "method": "DEC",
       "score": "8-2",
@@ -109,7 +119,7 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 39,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "result": "W",
       "method": "DEC",
       "score": "5-3",
@@ -124,7 +134,7 @@
       "opponent_team": "Purdue",
       "opponent_team_rank": 19,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "result": "L",
       "method": "DEC",
       "score": "5-1",
@@ -169,7 +179,7 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 58,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "L",
       "method": "DEC",
       "score": "2-1",
@@ -184,7 +194,7 @@
       "opponent_team": "Princeton",
       "opponent_team_rank": 38,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "result": "L",
       "method": "DEC",
       "score": "8-5",
@@ -199,7 +209,7 @@
       "opponent_team": "American",
       "opponent_team_rank": 47,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "result": "W",
       "method": "DEC",
       "score": "8-5",

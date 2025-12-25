@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 6.19,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34945831132",
+      "opponent_rank": 32,
+      "opponent_name": "Derek Gilcher",
+      "method": "TF 19-4 5:54"
+    }
   },
   "match_list": [
     {
@@ -63,7 +68,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 33,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "L",
       "method": "TF",
       "score": "19-4",
@@ -78,7 +83,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "result": "L",
       "method": "DEC",
       "score": "9-3",
@@ -93,7 +98,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "result": "L",
       "method": "MD",
       "score": "14-2",
@@ -108,7 +113,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "result": "L",
       "method": "FALL",
       "score": null,

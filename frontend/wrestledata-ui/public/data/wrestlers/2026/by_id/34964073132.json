@@ -6,12 +6,12 @@
   "team_rank": 30,
   "weight_class": 141,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 11,
   "record": {
     "overall": "9-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "5-1",
+    "vs_top10": "0-1",
+    "vs_top25": "3-1"
   },
   "metrics": {
     "pf7": 8.7,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34955780132",
+      "opponent_rank": 12,
+      "opponent_name": "Vance Vombaur",
+      "method": "Dec 9-8"
+    },
+    "worst_loss": {
+      "opponent_id": "34935687132",
+      "opponent_rank": 6,
+      "opponent_name": "Ryan Jack",
+      "method": "Dec 4-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "North Carolina",
       "opponent_team_rank": 44,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "result": "W",
       "method": "MD",
       "score": "11-0",
@@ -63,7 +73,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "W",
       "method": "DEC",
       "score": "5-1",
@@ -108,7 +118,7 @@
       "opponent_team": "Northern Colorado",
       "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "MD",
       "score": "11-1",
@@ -138,7 +148,7 @@
       "opponent_team": "North Dakota State",
       "opponent_team_rank": 75,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "result": "W",
       "method": "MD",
       "score": "11-3",
@@ -168,7 +178,7 @@
       "opponent_team": "Minnesota",
       "opponent_team_rank": 8,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "result": "W",
       "method": "DEC",
       "score": "9-8",
@@ -183,7 +193,7 @@
       "opponent_team": "NC State",
       "opponent_team_rank": 6,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "result": "L",
       "method": "DEC",
       "score": "4-3",

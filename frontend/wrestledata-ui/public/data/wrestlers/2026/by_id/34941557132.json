@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "4-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-4",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 3.9,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "34955745132",
+      "opponent_rank": 43,
+      "opponent_name": "alex smith",
+      "method": "Dec 6-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34934018132",
+      "opponent_rank": 50,
+      "opponent_name": "Eli Sheeren",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "MD",
       "score": "17-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -108,7 +118,7 @@
       "opponent_team": "Northwestern",
       "opponent_team_rank": 45,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "result": "W",
       "method": "DEC",
       "score": "6-4",
@@ -123,7 +133,7 @@
       "opponent_team": "California Baptist",
       "opponent_team_rank": 64,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "result": "L",
       "method": "DEC",
       "score": "4-2",
@@ -138,7 +148,7 @@
       "opponent_team": "Iowa State",
       "opponent_team_rank": 3,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "result": "L",
       "method": "MD",
       "score": "8-0",

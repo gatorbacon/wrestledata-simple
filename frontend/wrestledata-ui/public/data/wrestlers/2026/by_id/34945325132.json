@@ -6,12 +6,12 @@
   "team_rank": 17,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 27,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 8.25,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34939062132",
+      "opponent_rank": 33,
+      "opponent_name": "Zyan Hall",
+      "method": "Dec 8-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34963117132",
+      "opponent_rank": 7,
+      "opponent_name": "DJ Parker",
+      "method": "MD 16-3"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Drexel",
       "opponent_team_rank": 42,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "result": "W",
       "method": "MD",
       "score": "15-7",
@@ -63,7 +73,7 @@
       "opponent_team": "Oklahoma",
       "opponent_team_rank": 23,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "result": "L",
       "method": "MD",
       "score": "16-3",
@@ -77,7 +87,7 @@
       "opponent_team": "Navy",
       "opponent_team_rank": 34,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "W",
       "method": "DEC",
       "score": "8-6",

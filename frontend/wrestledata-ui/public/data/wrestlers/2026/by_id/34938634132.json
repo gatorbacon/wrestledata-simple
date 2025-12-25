@@ -6,12 +6,12 @@
   "team_rank": 67,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 35,
   "record": {
     "overall": "10-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 10.46,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34943386132",
+      "opponent_rank": 32,
+      "opponent_name": "Sulayman Bah",
+      "method": "Fall 4:58"
+    },
+    "worst_loss": {
+      "opponent_id": "34944168132",
+      "opponent_rank": 34,
+      "opponent_name": "Tucker Owens",
+      "method": "Dec 17-16"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 40,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "result": "L",
       "method": "DEC",
       "score": "9-3",
@@ -63,7 +73,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "W",
       "method": "DEC",
       "score": "12-5",
@@ -77,7 +87,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 57,
       "result": "W",
       "method": "MD",
       "score": "17-6",
@@ -92,7 +102,7 @@
       "opponent_team": "Cornell",
       "opponent_team_rank": 9,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "result": "L",
       "method": "DEC",
       "score": "10-7",
@@ -122,7 +132,7 @@
       "opponent_team": "George Mason",
       "opponent_team_rank": 43,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "result": "W",
       "method": "DEC",
       "score": "6-3",
@@ -167,7 +177,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -182,7 +192,7 @@
       "opponent_team": "Air Force",
       "opponent_team_rank": 57,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "result": "L",
       "method": "DEC",
       "score": "17-16",

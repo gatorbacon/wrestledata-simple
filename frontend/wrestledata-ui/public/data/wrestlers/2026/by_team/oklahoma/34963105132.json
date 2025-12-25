@@ -6,12 +6,12 @@
   "team_rank": 23,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 49,
   "record": {
     "overall": "5-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 9.84,
@@ -35,11 +35,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34941558132",
+      "opponent_rank": 62,
+      "opponent_name": "Dominic Lopez",
+      "method": "Dec 4-1"
+    }
   },
   "match_list": [
     {
@@ -49,7 +54,7 @@
       "opponent_team": "SIU Edwardsville",
       "opponent_team_rank": 24,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 62,
       "result": "L",
       "method": "DEC",
       "score": "4-1",
@@ -78,7 +83,7 @@
       "opponent_team": "Bucknell",
       "opponent_team_rank": 37,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "result": "L",
       "method": "DEC",
       "score": "13-6",
@@ -93,7 +98,7 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "result": "L",
       "method": "TF",
       "score": "19-4",
@@ -183,7 +188,7 @@
       "opponent_team": "Missouri",
       "opponent_team_rank": 18,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "result": "L",
       "method": "DEC",
       "score": "8-2",

@@ -6,12 +6,12 @@
   "team_rank": 40,
   "weight_class": 184,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 51,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 2.23,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34948513132",
+      "opponent_rank": 55,
+      "opponent_name": "Thomas Sandoval",
+      "method": "TB-2 (RT) 2-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34933987132",
+      "opponent_rank": 37,
+      "opponent_name": "Luke Vanadia",
+      "method": "MD 16-3"
+    }
   },
   "match_list": [
     {
@@ -64,7 +74,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "L",
       "method": "TF",
       "score": "16-0",
@@ -79,7 +89,7 @@
       "opponent_team": "Michigan State",
       "opponent_team_rank": 55,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "result": "L",
       "method": "MD",
       "score": "16-3",
@@ -94,7 +104,7 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "result": "L",
       "method": "DEC",
       "score": "10-3",
@@ -109,7 +119,7 @@
       "opponent_team": "Brown",
       "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -139,7 +149,7 @@
       "opponent_team": "Lock Haven",
       "opponent_team_rank": 54,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "result": "L",
       "method": "DEC",
       "score": "8-2",

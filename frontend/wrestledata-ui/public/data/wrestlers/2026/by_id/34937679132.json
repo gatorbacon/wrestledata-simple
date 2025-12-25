@@ -6,12 +6,12 @@
   "team_rank": 70,
   "weight_class": 197,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 64,
   "record": {
     "overall": "8-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.37,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34951035132",
+      "opponent_rank": 46,
+      "opponent_name": "Brody Evans",
+      "method": "Dec 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34950414132",
+      "opponent_rank": 66,
+      "opponent_name": "Owen McGrory",
+      "method": "Dec 6-2"
+    }
   },
   "match_list": [
     {
@@ -91,7 +101,7 @@
       "opponent_team": "Wisconsin",
       "opponent_team_rank": 27,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "result": "L",
       "method": "MD",
       "score": "14-1",
@@ -106,7 +116,7 @@
       "opponent_team": "Edinboro",
       "opponent_team_rank": 51,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -136,7 +146,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -166,7 +176,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 29,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "DEC",
       "score": "4-1",
@@ -181,7 +191,7 @@
       "opponent_team": "Penn",
       "opponent_team_rank": 29,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "result": "W",
       "method": "DEC",
       "score": "6-1",
@@ -196,7 +206,7 @@
       "opponent_team": "Columbia",
       "opponent_team_rank": 49,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "result": "L",
       "method": "DEC",
       "score": "10-5",
@@ -211,7 +221,7 @@
       "opponent_team": "Sacred Heart",
       "opponent_team_rank": 77,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "result": "W",
       "method": "DEC",
       "score": "2-1",
@@ -226,7 +236,7 @@
       "opponent_team": "Duke",
       "opponent_team_rank": 69,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "result": "L",
       "method": "DEC",
       "score": "6-2",

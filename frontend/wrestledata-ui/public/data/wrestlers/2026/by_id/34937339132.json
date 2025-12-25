@@ -6,12 +6,12 @@
   "team_rank": 53,
   "weight_class": 125,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 52,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 7.0,
@@ -34,12 +34,22 @@
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34947807132",
+      "opponent_rank": 53,
+      "opponent_name": "Carson Wagner",
+      "method": "Dec 10-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34934463132",
+      "opponent_rank": 39,
+      "opponent_name": "James Garcia",
+      "method": "Dec 12-11"
+    }
   },
   "match_list": [
     {
@@ -49,7 +59,7 @@
       "opponent_team": "West Virginia",
       "opponent_team_rank": 12,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 11,
       "result": "L",
       "method": "MD",
       "score": "11-0",
@@ -64,7 +74,7 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 26,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 38,
       "result": "L",
       "method": "MD",
       "score": "8-0",
@@ -79,7 +89,7 @@
       "opponent_team": "Franklin & Marshall",
       "opponent_team_rank": 32,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "result": "L",
       "method": "DEC",
       "score": "12-11",
@@ -124,7 +134,7 @@
       "opponent_team": "Binghamton",
       "opponent_team_rank": 60,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "result": "W",
       "method": "DEC",
       "score": "10-3",
@@ -139,7 +149,7 @@
       "opponent_team": "Indiana",
       "opponent_team_rank": 33,
       "opponent_weight": 125,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "result": "L",
       "method": "DEC",
       "score": "9-2",
