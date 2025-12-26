@@ -11,162 +11,186 @@
 
 <body>
   <script src="/header.js"></script>
+  
   <div class="page-container">
-    <div class="dashboard-grid">
-      <!-- LEFT COLUMN -->
-      <div class="dashboard-col dashboard-col--left">
-        <!-- Rankings Preview -->
-        <section class="dashboard-section">
-          <div class="section-header">
-            <h2 class="section-title">Rankings</h2>
-            <div class="section-divider-line"></div>
-          </div>
-          
-          <!-- Individual Rankings -->
-          <div class="preview-subsection">
-            <div class="preview-subsection-header">
-              <h3 class="preview-subsection-title">Match Index (Individual)</h3>
-              <a href="/leaderboards/mat_value.html" class="preview-link">Full Rankings →</a>
-            </div>
-            <div class="preview-table-wrapper">
-              <table class="preview-table" id="mv-preview-table">
-                <thead>
-                  <tr>
-                    <th>Rank</th>
-                    <th>Wrestler</th>
-                    <th>Team</th>
-                    <th class="num">MI</th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-            </div>
-          </div>
-          
-          <!-- Team Rankings -->
-          <div class="preview-subsection">
-            <div class="preview-subsection-header">
-              <h3 class="preview-subsection-title">Team Value (xTP)</h3>
-              <a href="/leaderboards/xtp/teams.html" class="preview-link">Full Rankings →</a>
-            </div>
-            <div class="preview-table-wrapper">
-              <table class="preview-table" id="xtp-preview-table">
-                <thead>
-                  <tr>
-                    <th>Rank</th>
-                    <th>Team</th>
-                    <th class="num">xTP</th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-        
-        <!-- Trending Wrestlers -->
-        <section class="dashboard-section">
-          <div class="section-header">
-            <h2 class="section-title">Trending Wrestlers</h2>
-            <div class="section-divider-line"></div>
-          </div>
-          <div class="preview-table-wrapper">
-            <table class="preview-table" id="trending-table">
-              <thead>
-                <tr>
-                  <th>Wrestler</th>
-                  <th>Team</th>
-                  <th class="num">MV</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </section>
-      </div>
-      
-      <!-- CENTER COLUMN -->
-      <div class="dashboard-col dashboard-col--center">
-        <!-- Featured Metric -->
-        <section class="dashboard-section">
-          <div class="section-header">
-            <h2 class="section-title">Match Index Leaders</h2>
-            <div class="section-divider-line"></div>
-          </div>
-          <div class="preview-table-wrapper">
-            <table class="preview-table preview-table--featured" id="featured-mv-table">
-              <thead>
-                <tr>
-                  <th>Rank</th>
-                  <th>Wrestler</th>
-                  <th>Team</th>
-                  <th class="num">MV</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </section>
-        
-        <!-- Ranking Matrix Preview -->
-        <section class="dashboard-section">
-          <div class="section-header">
-            <h2 class="section-title">Ranking Matrix</h2>
-            <div class="section-divider-line"></div>
-          </div>
-          <div class="preview-subsection-header">
-            <span class="preview-subsection-title">149 lbs</span>
-            <a href="#" class="preview-link">View Full Matrix →</a>
-          </div>
-          <div class="preview-table-wrapper">
-            <table class="preview-table" id="matrix-preview-table">
-              <thead>
-                <tr>
-                  <th>Rank</th>
-                  <th>Wrestler</th>
-                  <th class="num">MV</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </section>
-      </div>
-      
-      <!-- RIGHT COLUMN -->
-      <div class="dashboard-col dashboard-col--right">
-        <!-- Quick Links -->
-        <section class="dashboard-section">
-          <div class="section-header">
-            <h2 class="section-title">Explore</h2>
-            <div class="section-divider-line"></div>
-          </div>
-          <nav class="quick-links">
-            <a href="/leaderboards/mat_value.html" class="quick-link">Match Index Rankings</a>
-            <a href="/leaderboards/xtp/teams.html" class="quick-link">xTP Team Projections</a>
-            <a href="/wrestlers" class="quick-link">Wrestler Profiles</a>
-            <a href="/teams" class="quick-link">Team Profiles</a>
-            <a href="#" class="quick-link">Ranking Matrix</a>
-          </nav>
-        </section>
-        
-        <!-- About -->
-        <section class="dashboard-section">
-          <div class="section-header">
-            <h2 class="section-title">About</h2>
-            <div class="section-divider-line"></div>
-          </div>
-          <p class="about-text">
-            Analytics-first college wrestling rankings built from match-level data.
-          </p>
-          <a href="/about.html" class="about-link">About MatSavant →</a>
-        </section>
-      </div>
+    <!-- POSITIONING STATEMENT -->
+    <div class="positioning-statement">
+      MatSavant analyzes college wrestling at the match level — not just wins and losses. We evaluate scoring rates, dominance, quality of opponents, consistency, and team point impact to identify real performance signals.
     </div>
+    
+    <!-- SECTION 1: HERO ROW - MATRIX + MI -->
+    <section class="homepage-hero">
+      <!-- SHARED WEIGHT SELECTOR -->
+      <div class="shared-weight-selector-container">
+        <div class="shared-weight-tabs" id="shared-weight-tabs">
+          <button class="weight-tab active" data-weight="125">125</button>
+          <button class="weight-tab" data-weight="133">133</button>
+          <button class="weight-tab" data-weight="141">141</button>
+          <button class="weight-tab" data-weight="149">149</button>
+          <button class="weight-tab active" data-weight="157">157</button>
+          <button class="weight-tab" data-weight="165">165</button>
+          <button class="weight-tab" data-weight="174">174</button>
+          <button class="weight-tab" data-weight="184">184</button>
+          <button class="weight-tab" data-weight="197">197</button>
+          <button class="weight-tab" data-weight="285">285</button>
+        </div>
+      </div>
+      
+      <div class="hero-grid">
+        <!-- LEFT: Ranking Matrix -->
+        <div class="hero-matrix-section">
+          <div class="hero-header">
+            <h1 class="hero-title"><a href="/matrix.html" class="hero-title-link">Rankings Matrix</a></h1>
+            <div class="hero-divider"></div>
+          </div>
+          <div class="hero-matrix-wrapper">
+            <a href="/matrix.html?weight=157" class="hero-matrix-link" id="hero-matrix-link">
+              <div class="matrix-grid-static" id="hero-matrix-grid">
+                <!-- Matrix will be populated by JavaScript -->
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Match Index Leaders -->
+        <div class="hero-mi-section">
+          <div class="hero-header">
+            <h1 class="hero-title"><a href="/leaderboards/mat_value.html" class="hero-title-link">Match Index Leaders</a></h1>
+            <div class="hero-divider"></div>
+          </div>
+          <div class="hero-mi-wrapper">
+            <div class="mi-list-container" id="hero-mi-list">
+              <!-- MI list will be populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SECOND ROW - THREE CARDS -->
+    <section class="homepage-second-row">
+      <!-- LEFT: NCAA Expected Scoring (xTP) -->
+      <div class="glance-block">
+        <div class="glance-header">
+          <h2 class="glance-title"><a href="/leaderboards/xtp/teams.html" class="glance-title-link">NCAA Expected Scoring (xTP)</a></h2>
+        </div>
+        <div class="glance-table-wrapper">
+          <table class="glance-table" id="xtp-glance-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Team</th>
+                <th class="num">xTP</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- MIDDLE: Stat Leaders (Tabbed) -->
+      <div class="glance-block">
+        <div class="glance-header">
+          <h2 class="glance-title"><a href="/leaderboards/leaderboard_pins.html" class="glance-title-link" id="stat-leaders-link">Stat Leaders</a></h2>
+          <div class="glance-divider"></div>
+          <div class="stats-tabs" id="stats-tabs">
+            <button class="stats-tab active" data-stat="pins">Pins</button>
+            <button class="stats-tab" data-stat="techs">Techs</button>
+            <button class="stats-tab" data-stat="majors">Majors</button>
+            <button class="stats-tab" data-stat="wins">Wins</button>
+          </div>
+        </div>
+        <div class="glance-table-wrapper">
+          <table class="glance-table" id="stats-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Wrestler</th>
+                <th>Team</th>
+                <th class="num">Stat</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- RIGHT: Hodge Trophy Watch -->
+      <div class="glance-block">
+        <div class="glance-header">
+          <h2 class="glance-title"><a href="/hodge.html" class="glance-title-link">Hodge Trophy Watch</a></h2>
+          <div class="glance-divider"></div>
+        </div>
+        <div class="glance-table-wrapper">
+          <table class="glance-table" id="hodge-glance-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Wrestler</th>
+                <th>Team</th>
+                <th class="num">Hodge Score</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: TRENDING / DISCOVERY -->
+    <section class="homepage-trending">
+      <div class="trending-header">
+        <h2 class="trending-title">Biggest MI Risers (Last 7 Days)</h2>
+      </div>
+      <div class="trending-content">
+        <table class="trending-table" id="trending-table">
+          <thead>
+            <tr>
+              <th>Wrestler</th>
+              <th>Team</th>
+              <th class="num">ΔMI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Placeholder rows -->
+            <tr>
+              <td colspan="3" style="text-align: center; padding: 2em; color: var(--muted);">
+                Coming soon — Recent movement tracking
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FEATURED CONTENT -->
+    <section class="homepage-featured">
+      <div class="featured-grid">
+        <a href="/freshman.html" class="featured-card">
+          <div class="featured-card-header">
+            <h3 class="featured-card-title">Freshman of the Year</h3>
+            <span class="featured-card-arrow">→</span>
+          </div>
+          <p class="featured-card-desc">Emerging first-year wrestlers making an impact</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FOOTER / TRUST SIGNAL -->
+    <section class="homepage-footer">
+      <div class="footer-content">
+        <p class="footer-text">
+          Analytics-first college wrestling rankings built from match-level data. 
+          Updated regularly with comprehensive dual meet and tournament results.
+        </p>
+        <p class="footer-text footer-text-muted">
+          Match Index (MI) measures per-match performance above replacement, normalized for opponent quality and match outcome.
+        </p>
+      </div>
+    </section>
   </div>
 
   <script src="/tooltips.js"></script>
-  <script src="/index.js"></script>
+  <script src="/homepage.js"></script>
 </body>
 </html>
-
