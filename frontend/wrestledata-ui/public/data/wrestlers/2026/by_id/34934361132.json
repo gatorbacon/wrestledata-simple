@@ -24,7 +24,14 @@
     "bonus_rate": 0.5,
     "majors": 3,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.206,
+      "matches": 13,
+      "rank_weight": 59,
+      "rank_overall": 704,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -234,16 +241,11 @@
       "opponent_weight": 184,
       "opponent_rank": 72,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "8-1",
       "duration": "8:15",
       "event": "Princeton Open",
       "mv_impact": 1.14
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

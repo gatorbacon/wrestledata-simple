@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.234,
+      "mv_avg": 0.281,
       "matches": 10,
-      "rank_weight": 77,
-      "rank_overall": 694,
+      "rank_weight": 84,
+      "rank_overall": 677,
       "version": "v1"
     }
   },
@@ -166,7 +166,7 @@
       "opponent_weight": 149,
       "opponent_rank": 30,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "8-5",
       "duration": "8:15",
       "event": "Navy Classic",
@@ -202,10 +202,5 @@
       "event": "vs. Pittsburgh",
       "mv_impact": -2.36
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
-  }
+  ]
 }

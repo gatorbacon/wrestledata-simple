@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.246,
+      "matches": 3,
+      "rank_weight": 44,
+      "rank_overall": 420,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -85,10 +92,5 @@
       "event": "vs. The Citadel",
       "mv_impact": -0.01
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

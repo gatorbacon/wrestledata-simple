@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 1.979,
+      "mv_avg": 2.549,
       "matches": 4,
-      "rank_weight": 30,
-      "rank_overall": 283,
+      "rank_weight": 19,
+      "rank_overall": 194,
       "version": "v1"
     }
   },
@@ -76,7 +76,7 @@
       "opponent_weight": 157,
       "opponent_rank": 13,
       "result": "L",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "Michigan State Open"
@@ -126,10 +126,5 @@
       "event": "Michigan State Open",
       "mv_impact": 4.36
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5454545454545454
-  }
+  ]
 }

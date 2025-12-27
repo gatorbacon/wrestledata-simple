@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 1.811,
-      "matches": 11,
-      "rank_weight": 21,
-      "rank_overall": 311,
+      "mv_avg": 2.195,
+      "matches": 12,
+      "rank_weight": 16,
+      "rank_overall": 248,
       "version": "v1"
     }
   },
@@ -106,7 +106,7 @@
       "opponent_weight": 174,
       "opponent_rank": 13,
       "result": "W",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -195,7 +195,7 @@
       "opponent_weight": 174,
       "opponent_rank": 62,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "8-7",
       "duration": "8:15",
       "event": "vs. SIU Edwardsville",
@@ -246,10 +246,5 @@
       "event": "Michigan State Open",
       "mv_impact": 0.27
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.75,
-    "top33_bonus_ev_shrunk": 0.4033333333333333
-  }
+  ]
 }

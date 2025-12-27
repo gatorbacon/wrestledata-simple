@@ -26,10 +26,10 @@
     "techs": 3,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 3.611,
-      "matches": 9,
-      "rank_weight": 9,
-      "rank_overall": 75,
+      "mv_avg": 3.861,
+      "matches": 10,
+      "rank_weight": 7,
+      "rank_overall": 60,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 184,
       "opponent_rank": 12,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Dual Meet (WS-96377)",
@@ -106,7 +106,7 @@
       "opponent_weight": 184,
       "opponent_rank": 1,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "vs. Ohio State",
@@ -121,7 +121,7 @@
       "opponent_weight": 184,
       "opponent_rank": 3,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "vs. Ohio State",
@@ -202,10 +202,5 @@
       "event": "Clarion Open",
       "mv_impact": 4.65
     }
-  ],
-  "bonus": {
-    "top33_wins": 4,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.19027777777777777
-  }
+  ]
 }

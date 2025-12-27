@@ -24,7 +24,14 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 2,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 2.941,
+      "matches": 6,
+      "rank_weight": 20,
+      "rank_overall": 147,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -130,10 +137,5 @@
       "event": "vs. Kent State",
       "mv_impact": 5.19
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

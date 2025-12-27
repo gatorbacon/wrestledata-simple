@@ -26,10 +26,10 @@
     "techs": 2,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.865,
+      "mv_avg": -0.99,
       "matches": 11,
-      "rank_weight": 106,
-      "rank_overall": 981,
+      "rank_weight": 117,
+      "rank_overall": 1063,
       "version": "v1"
     }
   },
@@ -166,7 +166,7 @@
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "7-4",
       "duration": "8:15",
       "event": "2025 Journeymen Collegiate Classic",
@@ -217,10 +217,5 @@
       "event": "Princeton Open",
       "mv_impact": -2.82
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

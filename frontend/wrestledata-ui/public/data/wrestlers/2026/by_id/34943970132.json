@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.463,
+      "mv_avg": 0.921,
       "matches": 10,
-      "rank_weight": 68,
-      "rank_overall": 616,
+      "rank_weight": 53,
+      "rank_overall": 502,
       "version": "v1"
     }
   },
@@ -76,7 +76,7 @@
       "opponent_weight": 141,
       "opponent_rank": 14,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Cougar Clash",
@@ -121,7 +121,7 @@
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "2-1",
       "duration": "10:00",
       "event": "Kaufman Brand Bayly UCM Open",
@@ -136,7 +136,7 @@
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "2-1",
       "duration": "10:00",
       "event": "vs. Missouri",
@@ -202,10 +202,5 @@
       "event": "Tiger Style Invite",
       "mv_impact": -2.09
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.5,
-    "top33_bonus_ev_shrunk": 0.3076190476190476
-  }
+  ]
 }

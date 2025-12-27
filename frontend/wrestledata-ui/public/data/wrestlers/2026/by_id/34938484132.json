@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": -1.279,
-      "matches": 10,
-      "rank_weight": 95,
-      "rank_overall": 1096,
+      "mv_avg": -1.633,
+      "matches": 11,
+      "rank_weight": 106,
+      "rank_overall": 1240,
       "version": "v1"
     }
   },
@@ -71,7 +71,7 @@
       "opponent_weight": 197,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Big Red Invitational",
@@ -131,7 +131,7 @@
       "opponent_weight": 197,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "Big Red Invitational"
@@ -226,10 +226,5 @@
       "event": "Navy Classic",
       "mv_impact": 0.0
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

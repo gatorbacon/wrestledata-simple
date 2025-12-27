@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": -0.017,
+      "mv_avg": 0.005,
       "matches": 9,
-      "rank_weight": 72,
-      "rank_overall": 760,
+      "rank_weight": 77,
+      "rank_overall": 769,
       "version": "v1"
     }
   },
@@ -121,7 +121,7 @@
       "opponent_weight": 197,
       "opponent_rank": 12,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "6-3",
       "duration": "8:15",
       "event": "2025 Journeymen Collegiate Classic",
@@ -187,10 +187,5 @@
       "event": "vs. Pittsburgh",
       "mv_impact": -0.59
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

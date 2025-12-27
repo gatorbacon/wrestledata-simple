@@ -24,7 +24,14 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.633,
+      "matches": 2,
+      "rank_weight": 87,
+      "rank_overall": 955,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -65,10 +72,5 @@
       "event": "2025 Dollamur Reno Tournament of Champions",
       "mv_impact": -0.37
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.14285714285714285
-  }
+  ]
 }

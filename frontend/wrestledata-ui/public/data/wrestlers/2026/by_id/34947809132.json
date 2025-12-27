@@ -24,7 +24,14 @@
     "bonus_rate": 0.4,
     "majors": 0,
     "techs": 3,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.092,
+      "matches": 15,
+      "rank_weight": 86,
+      "rank_overall": 796,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -270,10 +277,5 @@
       "event": "Navy Classic",
       "mv_impact": 0.17
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

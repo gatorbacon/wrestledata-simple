@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -1.075,
-      "matches": 9,
-      "rank_weight": 102,
-      "rank_overall": 1041,
+      "mv_avg": 0.119,
+      "matches": 14,
+      "rank_weight": 83,
+      "rank_overall": 731,
       "version": "v1"
     }
   },
@@ -101,7 +101,7 @@
       "opponent_weight": 165,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "8-5",
       "duration": "8:15",
       "event": "Kent State Open 2",
@@ -146,7 +146,7 @@
       "opponent_weight": 165,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
       "event": "Keystone Classic",
@@ -257,10 +257,5 @@
       "event": "Princeton Open",
       "mv_impact": 2.03
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

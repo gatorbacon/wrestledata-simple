@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -1.117,
+      "mv_avg": -1.383,
       "matches": 7,
-      "rank_weight": 92,
-      "rank_overall": 1052,
+      "rank_weight": 102,
+      "rank_overall": 1176,
       "version": "v1"
     }
   },
@@ -76,7 +76,7 @@
       "opponent_weight": 184,
       "opponent_rank": 12,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Cyclone Invitational",
@@ -157,10 +157,5 @@
       "event": "Clarion Open",
       "mv_impact": 1.43
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.2222222222222222
-  }
+  ]
 }

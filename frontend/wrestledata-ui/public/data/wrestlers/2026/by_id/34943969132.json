@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.887,
+      "mv_avg": -0.334,
       "matches": 9,
-      "rank_weight": 108,
-      "rank_overall": 987,
+      "rank_weight": 95,
+      "rank_overall": 859,
       "version": "v1"
     }
   },
@@ -136,7 +136,7 @@
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "2-1",
       "duration": "10:00",
       "event": "Kaufman Brand Bayly UCM Open",
@@ -187,10 +187,5 @@
       "event": "Tiger Style Invite",
       "mv_impact": -5.16
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

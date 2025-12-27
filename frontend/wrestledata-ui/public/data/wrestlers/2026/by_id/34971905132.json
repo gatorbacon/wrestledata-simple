@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -2.328,
+      "mv_avg": -2.212,
       "matches": 6,
-      "rank_weight": 115,
-      "rank_overall": 1370,
+      "rank_weight": 124,
+      "rank_overall": 1399,
       "version": "v1"
     }
   },
@@ -76,7 +76,7 @@
       "opponent_weight": 197,
       "opponent_rank": 24,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "6-3",
       "duration": "8:15",
       "event": "Keystone Classic",
@@ -142,10 +142,5 @@
       "event": "Navy Classic",
       "mv_impact": -3.34
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

@@ -24,7 +24,14 @@
     "bonus_rate": 0.4,
     "majors": 0,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.204,
+      "matches": 10,
+      "rank_weight": 103,
+      "rank_overall": 829,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -195,10 +202,5 @@
       "event": "2025 Journeymen Collegiate Classic",
       "mv_impact": 0.83
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
-  }
+  ]
 }

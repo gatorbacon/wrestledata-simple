@@ -26,10 +26,10 @@
     "techs": 2,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.516,
+      "mv_avg": -0.467,
       "matches": 11,
-      "rank_weight": 76,
-      "rank_overall": 880,
+      "rank_weight": 78,
+      "rank_overall": 895,
       "version": "v1"
     }
   },
@@ -106,7 +106,7 @@
       "opponent_weight": 174,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "Black Knight Invite"
@@ -225,16 +225,11 @@
       "opponent_weight": 174,
       "opponent_rank": 31,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
       "event": "Princeton Open",
       "mv_impact": -2.19
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

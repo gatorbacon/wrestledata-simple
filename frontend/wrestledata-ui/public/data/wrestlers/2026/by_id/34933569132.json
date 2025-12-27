@@ -26,10 +26,10 @@
     "techs": 2,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 1.979,
+      "mv_avg": 1.907,
       "matches": 11,
-      "rank_weight": 33,
-      "rank_overall": 282,
+      "rank_weight": 31,
+      "rank_overall": 302,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 125,
       "opponent_rank": 15,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
@@ -136,7 +136,7 @@
       "opponent_weight": 125,
       "opponent_rank": 25,
       "result": "W",
-      "method": "DEC",
+      "method": "DFLT",
       "score": null,
       "duration": "7:00",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -231,10 +231,5 @@
       "event": "vs. VMI",
       "mv_impact": 3.94
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.3
-  }
+  ]
 }

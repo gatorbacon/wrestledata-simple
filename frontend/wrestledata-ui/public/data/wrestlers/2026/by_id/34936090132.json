@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 2.898,
+      "mv_avg": 2.861,
       "matches": 4,
-      "rank_weight": 8,
-      "rank_overall": 141,
+      "rank_weight": 11,
+      "rank_overall": 155,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 141,
       "opponent_rank": 8,
       "result": "L",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -120,16 +120,11 @@
       "opponent_weight": 141,
       "opponent_rank": 30,
       "result": "W",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "6-5",
       "duration": "10:00",
       "event": "vs. Purdue",
       "mv_impact": 4.11
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.16666666666666666
-  }
+  ]
 }

@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.052,
-      "matches": 3,
-      "rank_weight": 59,
-      "rank_overall": 736,
+      "mv_avg": -1.012,
+      "matches": 4,
+      "rank_weight": 102,
+      "rank_overall": 1075,
       "version": "v1"
     }
   },
@@ -106,7 +106,7 @@
       "opponent_weight": 174,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "Lock Haven Open I"
@@ -126,10 +126,5 @@
       "event": "Lock Haven Open I",
       "mv_impact": 1.43
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

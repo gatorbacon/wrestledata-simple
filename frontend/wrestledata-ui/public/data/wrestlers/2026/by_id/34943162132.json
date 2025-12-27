@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 3,
     "mat_value": {
-      "mv_avg": 1.973,
+      "mv_avg": 2.109,
       "matches": 9,
-      "rank_weight": 26,
-      "rank_overall": 286,
+      "rank_weight": 23,
+      "rank_overall": 261,
       "version": "v1"
     }
   },
@@ -181,16 +181,11 @@
       "opponent_weight": 133,
       "opponent_rank": 29,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Southeast Open",
       "mv_impact": -1.96
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.25
-  }
+  ]
 }

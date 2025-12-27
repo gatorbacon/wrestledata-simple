@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 1.562,
-      "matches": 9,
-      "rank_weight": 30,
-      "rank_overall": 345,
+      "mv_avg": 1.839,
+      "matches": 10,
+      "rank_weight": 27,
+      "rank_overall": 315,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "11-10",
       "duration": "10:00",
       "event": "vs. Northern Iowa",
@@ -106,7 +106,7 @@
       "opponent_weight": 133,
       "opponent_rank": 15,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "5-1",
       "duration": "10:00",
       "event": "Cougar Clash",
@@ -196,16 +196,11 @@
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "5-2",
       "duration": "8:15",
       "event": "vs. Northern Iowa",
       "mv_impact": -2.69
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.23703703703703702
-  }
+  ]
 }

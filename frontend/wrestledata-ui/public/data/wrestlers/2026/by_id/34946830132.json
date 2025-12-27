@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.287,
-      "matches": 3,
-      "rank_weight": 66,
-      "rank_overall": 677,
+      "mv_avg": -1.265,
+      "matches": 6,
+      "rank_weight": 102,
+      "rank_overall": 1141,
       "version": "v1"
     }
   },
@@ -56,7 +56,7 @@
       "opponent_weight": 197,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-2",
       "score": "4-3",
       "duration": "10:00",
       "event": "Kent State Open 2",
@@ -101,7 +101,7 @@
       "opponent_weight": 197,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "5-2",
       "duration": "8:15",
       "event": "Kent State Open 1",
@@ -137,10 +137,5 @@
       "event": "Southeast Open",
       "mv_impact": -2.43
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

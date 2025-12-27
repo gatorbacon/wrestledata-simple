@@ -26,10 +26,10 @@
     "techs": 2,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 2.627,
-      "matches": 8,
-      "rank_weight": 21,
-      "rank_overall": 180,
+      "mv_avg": 2.268,
+      "matches": 9,
+      "rank_weight": 28,
+      "rank_overall": 236,
       "version": "v1"
     }
   },
@@ -196,15 +196,10 @@
       "opponent_weight": 165,
       "opponent_rank": 29,
       "result": "L",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "Cyclone Invitational"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.4107142857142857
-  }
+  ]
 }

@@ -24,7 +24,14 @@
     "bonus_rate": 0.5,
     "majors": 2,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.096,
+      "matches": 13,
+      "rank_weight": 82,
+      "rank_overall": 747,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
@@ -144,7 +151,7 @@
       "opponent_weight": 157,
       "opponent_rank": 57,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "13-10",
       "duration": "8:15",
       "event": "vs. Morgan State",

@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.465,
-      "matches": 10,
-      "rank_weight": 60,
-      "rank_overall": 614,
+      "mv_avg": 0.838,
+      "matches": 13,
+      "rank_weight": 45,
+      "rank_overall": 532,
       "version": "v1"
     }
   },
@@ -121,7 +121,7 @@
       "opponent_weight": 125,
       "opponent_rank": 7,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "vs. Pittsburgh",
@@ -226,7 +226,7 @@
       "opponent_weight": 125,
       "opponent_rank": 44,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "8-5",
       "duration": "8:15",
       "event": "Navy Classic",
@@ -247,10 +247,5 @@
       "event": "vs. Pittsburgh",
       "mv_impact": -2.35
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.14285714285714285
-  }
+  ]
 }

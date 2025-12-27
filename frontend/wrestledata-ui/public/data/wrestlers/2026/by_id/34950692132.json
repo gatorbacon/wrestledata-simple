@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.147,
+      "mv_avg": -0.06,
       "matches": 1,
       "rank_weight": 68,
-      "rank_overall": 719,
+      "rank_overall": 788,
       "version": "v1"
     }
   },
@@ -71,15 +71,10 @@
       "opponent_weight": 285,
       "opponent_rank": 42,
       "result": "W",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "Roadrunner Open"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

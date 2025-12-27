@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 3.186,
-      "matches": 8,
-      "rank_weight": 15,
-      "rank_overall": 109,
+      "mv_avg": 2.795,
+      "matches": 10,
+      "rank_weight": 22,
+      "rank_overall": 163,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 165,
       "opponent_rank": 38,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "vs. Hofstra",
@@ -136,7 +136,7 @@
       "opponent_weight": 165,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "12-9",
       "duration": "8:15",
       "event": "vs. Virginia Tech",
@@ -202,10 +202,5 @@
       "event": "Navy Classic",
       "mv_impact": 3.53
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 0.4171428571428571
-  }
+  ]
 }

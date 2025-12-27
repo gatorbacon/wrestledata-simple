@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.769,
+      "mv_avg": 0.9,
       "matches": 4,
-      "rank_weight": 49,
-      "rank_overall": 535,
+      "rank_weight": 50,
+      "rank_overall": 515,
       "version": "v1"
     }
   },
@@ -91,7 +91,7 @@
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Tiger Style Invite",
@@ -106,16 +106,11 @@
       "opponent_weight": 133,
       "opponent_rank": 24,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Tiger Style Invite",
       "mv_impact": -1.6
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 0.3744855967078189
-  }
+  ]
 }

@@ -26,10 +26,10 @@
     "techs": 4,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 3.631,
-      "matches": 8,
+      "mv_avg": 3.559,
+      "matches": 10,
       "rank_weight": 12,
-      "rank_overall": 74,
+      "rank_overall": 83,
       "version": "v1"
     }
   },
@@ -176,7 +176,7 @@
       "opponent_weight": 149,
       "opponent_rank": 44,
       "result": "W",
-      "method": "DEC",
+      "method": "DFLT",
       "score": null,
       "duration": "7:00",
       "event": "2025 Journeymen Collegiate Classic"
@@ -211,10 +211,5 @@
       "event": "2025 Journeymen Collegiate Classic",
       "mv_impact": 4.91
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.19404761904761905
-  }
+  ]
 }

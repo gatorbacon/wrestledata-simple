@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -3.09,
-      "matches": 3,
-      "rank_weight": 190,
-      "rank_overall": 1539,
+      "mv_avg": -3.002,
+      "matches": 4,
+      "rank_weight": 201,
+      "rank_overall": 1596,
       "version": "v1"
     }
   },
@@ -56,7 +56,7 @@
       "opponent_weight": 149,
       "opponent_rank": 46,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "vs. North Carolina",
@@ -86,7 +86,7 @@
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "10-7",
       "duration": "8:15",
       "event": "Navy Classic",
@@ -107,10 +107,5 @@
       "event": "Navy Classic",
       "mv_impact": -3.19
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
-  }
+  ]
 }

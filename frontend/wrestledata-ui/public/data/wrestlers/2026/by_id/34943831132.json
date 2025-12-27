@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -1.947,
-      "matches": 9,
-      "rank_weight": 129,
-      "rank_overall": 1281,
+      "mv_avg": -1.324,
+      "matches": 12,
+      "rank_weight": 108,
+      "rank_overall": 1161,
       "version": "v1"
     }
   },
@@ -56,7 +56,7 @@
       "opponent_weight": 125,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "2-1",
       "duration": "8:15",
       "event": "Kent State Open 2",
@@ -116,7 +116,7 @@
       "opponent_weight": 125,
       "opponent_rank": 62,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "vs. Kent State",
@@ -227,10 +227,5 @@
       "event": "Clarion Open",
       "mv_impact": -3.32
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.14285714285714285
-  }
+  ]
 }

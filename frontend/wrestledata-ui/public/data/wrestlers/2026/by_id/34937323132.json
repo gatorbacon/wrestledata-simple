@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -2.853,
+      "mv_avg": -2.935,
       "matches": 9,
-      "rank_weight": 136,
-      "rank_overall": 1485,
+      "rank_weight": 144,
+      "rank_overall": 1571,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 285,
       "opponent_rank": 32,
       "result": "W",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -201,10 +201,5 @@
       "event": "2025 Journeymen Collegiate Classic",
       "mv_impact": -4.74
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

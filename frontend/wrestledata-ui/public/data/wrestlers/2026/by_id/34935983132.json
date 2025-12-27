@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 2,
     "mat_value": {
-      "mv_avg": -1.621,
-      "matches": 5,
-      "rank_weight": 149,
-      "rank_overall": 1194,
+      "mv_avg": -0.761,
+      "matches": 6,
+      "rank_weight": 125,
+      "rank_overall": 999,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 149,
       "opponent_rank": 73,
       "result": "L",
-      "method": "DEC",
+      "method": "DFLT",
       "score": null,
       "duration": "7:00",
       "event": "Kent State Open 2"
@@ -156,10 +156,5 @@
       "event": "Shorty Hitchcock Memorial Open",
       "mv_impact": -4.24
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
-  }
+  ]
 }

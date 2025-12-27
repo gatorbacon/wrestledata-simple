@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -3.294,
+      "mv_avg": -2.582,
       "matches": 5,
-      "rank_weight": 143,
-      "rank_overall": 1579,
+      "rank_weight": 141,
+      "rank_overall": 1482,
       "version": "v1"
     }
   },
@@ -71,7 +71,7 @@
       "opponent_weight": 174,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "Kent State Open 1"
@@ -115,7 +115,7 @@
       "opponent_weight": 174,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "5-2",
       "duration": "8:15",
       "event": "Michigan State Open",
@@ -136,10 +136,5 @@
       "event": "Michigan State Open",
       "mv_impact": -4.72
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

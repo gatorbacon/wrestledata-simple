@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 1.381,
-      "matches": 11,
-      "rank_weight": 40,
-      "rank_overall": 376,
+      "mv_avg": 1.48,
+      "matches": 12,
+      "rank_weight": 36,
+      "rank_overall": 367,
       "version": "v1"
     }
   },
@@ -91,7 +91,7 @@
       "opponent_weight": 141,
       "opponent_rank": 25,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "2-2",
       "duration": "10:00",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
@@ -151,7 +151,7 @@
       "opponent_weight": 141,
       "opponent_rank": 4,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-2",
       "score": "5-4",
       "duration": "8:15",
       "event": "vs. Rutgers",
@@ -232,10 +232,5 @@
       "event": "vs. Pittsburgh",
       "mv_impact": 3.7
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.23068783068783072
-  }
+  ]
 }

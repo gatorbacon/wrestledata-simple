@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.893,
-      "matches": 6,
-      "rank_weight": 57,
-      "rank_overall": 497,
+      "mv_avg": 0.771,
+      "matches": 8,
+      "rank_weight": 60,
+      "rank_overall": 547,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 157,
       "opponent_rank": 76,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "vs. Sacred Heart",
@@ -151,7 +151,7 @@
       "opponent_weight": 157,
       "opponent_rank": 63,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "vs. Sacred Heart",
@@ -172,10 +172,5 @@
       "event": "vs. Sacred Heart",
       "mv_impact": 3.26
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

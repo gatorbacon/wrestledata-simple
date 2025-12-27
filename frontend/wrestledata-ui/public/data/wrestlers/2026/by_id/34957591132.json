@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 2.343,
-      "matches": 9,
-      "rank_weight": 18,
-      "rank_overall": 219,
+      "mv_avg": 1.456,
+      "matches": 12,
+      "rank_weight": 38,
+      "rank_overall": 373,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 141,
       "opponent_rank": 35,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "8-5",
       "duration": "8:15",
       "event": "vs. Pittsburgh",
@@ -211,7 +211,7 @@
       "opponent_weight": 141,
       "opponent_rank": 20,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-2",
       "score": "10-6",
       "duration": "10:00",
       "event": "Southeast Open",
@@ -232,10 +232,5 @@
       "event": "Southeast Open",
       "mv_impact": 2.83
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

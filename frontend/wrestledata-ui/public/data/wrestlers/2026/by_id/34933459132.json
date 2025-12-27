@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.862,
+      "mv_avg": -0.554,
       "matches": 4,
-      "rank_weight": 112,
-      "rank_overall": 980,
+      "rank_weight": 102,
+      "rank_overall": 928,
       "version": "v1"
     }
   },
@@ -91,7 +91,7 @@
       "opponent_weight": 149,
       "opponent_rank": 17,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "9-6",
       "duration": "8:15",
       "event": "vs. Wyoming",
@@ -112,10 +112,5 @@
       "event": "vs. Wyoming",
       "mv_impact": -1.24
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

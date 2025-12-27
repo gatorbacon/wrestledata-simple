@@ -24,7 +24,14 @@
     "bonus_rate": 0.667,
     "majors": 1,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.615,
+      "matches": 3,
+      "rank_weight": 36,
+      "rank_overall": 352,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -80,10 +87,5 @@
       "event": "Kent State Open 2",
       "mv_impact": 2.21
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.342,
+      "mv_avg": 0.459,
       "matches": 12,
-      "rank_weight": 75,
-      "rank_overall": 659,
+      "rank_weight": 67,
+      "rank_overall": 624,
       "version": "v1"
     }
   },
@@ -151,7 +151,7 @@
       "opponent_weight": 141,
       "opponent_rank": 73,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "vs. Missouri",
@@ -211,7 +211,7 @@
       "opponent_weight": 141,
       "opponent_rank": 28,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "6-5",
       "duration": "8:15",
       "event": "Tiger Style Invite",
@@ -226,16 +226,11 @@
       "opponent_weight": 141,
       "opponent_rank": 30,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Tiger Style Invite",
       "mv_impact": 4.11
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.20761904761904765
-  }
+  ]
 }

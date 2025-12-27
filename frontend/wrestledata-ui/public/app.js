@@ -247,7 +247,7 @@ function safe(value, formatter) {
     headerRow.className = "section-header";
     
     const title = document.createElement("h2");
-    title.textContent = "Match Index (MI)";
+    title.textContent = "TPAR";
     const tooltipIcon = document.createElement("span");
     tooltipIcon.className = "tooltip-icon";
     tooltipIcon.setAttribute("data-tooltip", "mv");
@@ -267,6 +267,13 @@ function safe(value, formatter) {
     divider.className = "section-divider";
     mvSection.appendChild(divider);
     
+    // Add helper text below divider (moved from header)
+    const helperText = document.createElement("div");
+    helperText.className = "mv-helper-text";
+    helperText.textContent = "Estimated team points contributed above a replacement-level starter";
+    helperText.style.cssText = "font-size: 0.875rem; color: var(--muted); font-weight: 400; margin: 0 0 12px 0; line-height: 1.4;";
+    mvSection.appendChild(helperText);
+    
     // B) Primary metric row
     const primaryRow = document.createElement("div");
     primaryRow.className = "mv-primary-row";
@@ -279,7 +286,7 @@ function safe(value, formatter) {
       rankBadgeLink.appendChild(createMVRankBadge(mv.rank_weight));
     }
     // Add tooltip to rank badge
-    addTooltip(rankBadgeLink, "MI: Per-match impact above replacement.");
+    addTooltip(rankBadgeLink, "TPAR: Per-match impact above replacement.");
     primaryRow.appendChild(rankBadgeLink);
     
     // MV Number with explicit sign (smaller font, same row as badge)
@@ -436,6 +443,16 @@ function safe(value, formatter) {
     skillDivider.className = "section-divider";
     skillSection.appendChild(skillDivider);
     
+    // Synthesized profile description (moved to immediately after divider)
+    const profileDesc = generateSkillProfileDescription(m);
+    if (profileDesc) {
+      const descEl = document.createElement("p");
+      descEl.className = "skill-profile-description";
+      descEl.textContent = profileDesc;
+      descEl.style.cssText = "font-size: 0.875rem; color: var(--muted); font-weight: 400; margin: 0 0 12px 0; line-height: 1.4;";
+      skillSection.appendChild(descEl);
+    }
+    
     // Skill rows with bars (SI+, DF+, APR+) - baseline at 100
     const skillRowsContainer = document.createElement("div");
     skillRowsContainer.className = "skill-rows-container";
@@ -459,15 +476,6 @@ function safe(value, formatter) {
     }
     
     skillSection.appendChild(skillRowsContainer);
-    
-    // Synthesized profile description
-    const profileDesc = generateSkillProfileDescription(m);
-    if (profileDesc) {
-      const descEl = document.createElement("p");
-      descEl.className = "skill-profile-description";
-      descEl.textContent = profileDesc;
-      skillSection.appendChild(descEl);
-    }
     
     // ========================================
     // MATCH IMPACT TIMELINE (PROMOTED - BEFORE CONTEXT)
@@ -815,7 +823,7 @@ function safe(value, formatter) {
     const indicator = document.createElement("div");
     indicator.className = `mv-trend-indicator ${trendClass}`;
     indicator.textContent = trendText;
-    indicator.setAttribute("title", "Based on last 5 matches vs season average Match Index");
+    indicator.setAttribute("title", "Based on last 5 matches vs season average TPAR");
     container.appendChild(indicator);
   }
   
@@ -1282,8 +1290,8 @@ function safe(value, formatter) {
         const tooltipLines = [
           dateStr,
           activeMatch.opponent,
-          `MI Impact: ${impactSign}${impactValue}`,
-          `Season Avg MI: ${seasonAvgStr}`
+          `TPAR Impact: ${impactSign}${impactValue}`,
+          `Season Avg TPAR: ${seasonAvgStr}`
         ];
         const tooltipText = tooltipLines.join('\n');
         
@@ -1334,14 +1342,14 @@ function safe(value, formatter) {
     lines.forEach((line, idx) => {
       const lineEl = document.createElement("div");
       
-      // Color MI Impact line based on sign
-      if (line.startsWith("MI Impact:")) {
+      // Color TPAR Impact line based on sign
+      if (line.startsWith("TPAR Impact:")) {
         lineEl.innerHTML = line.replace(
-          /MI Impact: ([\+\-]?[\d\.]+)/,
+          /TPAR Impact: ([\+\-]?[\d\.]+)/,
           (match, value) => {
             const isPositive = mvImpact >= 0;
             const color = isPositive ? "rgba(0, 194, 168, 0.9)" : "rgba(220, 90, 90, 0.9)";
-            return `MI Impact: <span style="color: ${color}">${value}</span>`;
+            return `TPAR Impact: <span style="color: ${color}">${value}</span>`;
           }
         );
       } else {

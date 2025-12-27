@@ -26,10 +26,10 @@
     "techs": 3,
     "pins": 2,
     "mat_value": {
-      "mv_avg": 0.554,
-      "matches": 16,
-      "rank_weight": 57,
-      "rank_overall": 587,
+      "mv_avg": 1.05,
+      "matches": 18,
+      "rank_weight": 49,
+      "rank_overall": 464,
       "version": "v1"
     }
   },
@@ -121,7 +121,7 @@
       "opponent_weight": 197,
       "opponent_rank": 14,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
@@ -322,10 +322,5 @@
       "event": "Clarion Open",
       "mv_impact": 0.99
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

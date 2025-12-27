@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 2.171,
+      "mv_avg": 2.244,
       "matches": 10,
-      "rank_weight": 29,
-      "rank_overall": 242,
+      "rank_weight": 30,
+      "rank_overall": 237,
       "version": "v1"
     }
   },
@@ -166,7 +166,7 @@
       "opponent_weight": 149,
       "opponent_rank": 19,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "7-4",
       "duration": "8:15",
       "event": "vs. Missouri",
@@ -202,10 +202,5 @@
       "event": "vs. VMI",
       "mv_impact": 3.33
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
-  }
+  ]
 }

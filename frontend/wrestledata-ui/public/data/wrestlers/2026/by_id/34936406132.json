@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -1.058,
+      "mv_avg": -0.87,
       "matches": 5,
-      "rank_weight": 103,
-      "rank_overall": 1034,
+      "rank_weight": 100,
+      "rank_overall": 1027,
       "version": "v1"
     }
   },
@@ -116,16 +116,11 @@
       "opponent_weight": 133,
       "opponent_rank": 32,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "8-5",
       "duration": "8:15",
       "event": "Cougar Clash",
       "mv_impact": -1.88
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.25
-  }
+  ]
 }

@@ -334,8 +334,8 @@ def main() -> None:
     parser.add_argument(
         "--wrestlers-dir",
         type=str,
-        default="mt/wrestlers",
-        help="Base directory for wrestler profiles (default: mt/wrestlers)"
+        default="frontend/wrestledata-ui/public/data/wrestlers",
+        help="Base directory for wrestler profiles (default: frontend/wrestledata-ui/public/data/wrestlers)"
     )
     parser.add_argument(
         "--teams-dir",

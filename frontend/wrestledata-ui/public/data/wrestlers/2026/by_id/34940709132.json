@@ -26,10 +26,10 @@
     "techs": 2,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 2.24,
+      "mv_avg": 2.042,
       "matches": 4,
-      "rank_weight": 27,
-      "rank_overall": 232,
+      "rank_weight": 33,
+      "rank_overall": 275,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 149,
       "opponent_rank": 7,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "2-1",
       "duration": "10:00",
       "event": "vs. Iowa State",
@@ -112,10 +112,5 @@
       "event": "Cyclone Invitational",
       "mv_impact": 4.85
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.38425925925925924
-  }
+  ]
 }

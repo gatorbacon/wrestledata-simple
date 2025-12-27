@@ -26,10 +26,10 @@
     "techs": 2,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 3.785,
-      "matches": 4,
-      "rank_weight": 9,
-      "rank_overall": 65,
+      "mv_avg": 3.5,
+      "matches": 6,
+      "rank_weight": 10,
+      "rank_overall": 90,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 157,
       "opponent_rank": 18,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "7-4",
       "duration": "8:15",
       "event": "Dual Meet (WS-96914)",
@@ -142,10 +142,5 @@
       "event": "Keystone Classic",
       "mv_impact": 4.21
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 0.6363636363636364
-  }
+  ]
 }

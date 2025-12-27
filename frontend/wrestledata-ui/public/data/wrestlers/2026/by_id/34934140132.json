@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.336,
+      "mv_avg": 0.391,
       "matches": 7,
-      "rank_weight": 66,
-      "rank_overall": 661,
+      "rank_weight": 59,
+      "rank_overall": 641,
       "version": "v1"
     }
   },
@@ -136,7 +136,7 @@
       "opponent_weight": 125,
       "opponent_rank": 49,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-2",
       "score": "7-5",
       "duration": "10:00",
       "event": "Navy Classic",
@@ -157,10 +157,5 @@
       "event": "Navy Classic",
       "mv_impact": -3.3
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.14285714285714285
-  }
+  ]
 }

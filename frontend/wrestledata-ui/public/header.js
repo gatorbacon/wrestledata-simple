@@ -32,7 +32,7 @@
                   <span class="dropdown-item-label">Rankings Matrix</span>
                 </a>
                 <a href="/leaderboards/mat_value.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Match Index (MI)</span>
+                  <span class="dropdown-item-label">TPAR Rankings</span>
                 </a>
                 <a href="/aa_odds.html" class="dropdown-item">
                   <span class="dropdown-item-label">Tournament Odds</span>
@@ -64,7 +64,7 @@
               </button>
               <div class="dropdown-menu" id="leaderboards-menu">
                 <a href="/leaderboards/mat_value.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Match Index Leaders</span>
+                  <span class="dropdown-item-label">TPAR Leaders</span>
                 </a>
                 <a href="/leaderboards/leaderboard_pins.html" class="dropdown-item">
                   <span class="dropdown-item-label">Pins</span>
@@ -157,7 +157,7 @@
               <div class="mobile-menu-section-content" data-content="individual-rankings">
                 <a href="/rankings.html" class="mobile-menu-item mobile-menu-item--child">Rankings (Traditional)</a>
                 <a href="/matrix.html" class="mobile-menu-item mobile-menu-item--child">Rankings Matrix</a>
-                <a href="/leaderboards/mat_value.html" class="mobile-menu-item mobile-menu-item--child">Match Index (MI)</a>
+                <a href="/leaderboards/mat_value.html" class="mobile-menu-item mobile-menu-item--child">TPAR Rankings</a>
                 <a href="/aa_odds.html" class="mobile-menu-item mobile-menu-item--child">Tournament Odds</a>
               </div>
             </div>
@@ -183,7 +183,7 @@
                 <span class="mobile-menu-chevron">▸</span>
               </button>
               <div class="mobile-menu-section-content" data-content="leaderboards">
-                <a href="/leaderboards/mat_value.html" class="mobile-menu-item mobile-menu-item--child">Match Index Leaders</a>
+                <a href="/leaderboards/mat_value.html" class="mobile-menu-item mobile-menu-item--child">TPAR Leaders</a>
                 <a href="/leaderboards/leaderboard_pins.html" class="mobile-menu-item mobile-menu-item--child">Pins</a>
                 <a href="/leaderboards/leaderboard_techs.html" class="mobile-menu-item mobile-menu-item--child">Tech Falls</a>
                 <a href="/leaderboards/leaderboard_majors.html" class="mobile-menu-item mobile-menu-item--child">Major Decisions</a>

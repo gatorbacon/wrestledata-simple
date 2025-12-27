@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.032,
+      "matches": 6,
+      "rank_weight": 200,
+      "rank_overall": 1798,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -94,7 +101,7 @@
       "opponent_weight": 165,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "8-1",
       "duration": "8:15",
       "event": "Big Red Invitational",
@@ -130,10 +137,5 @@
       "event": "Army Open",
       "mv_impact": -5.85
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

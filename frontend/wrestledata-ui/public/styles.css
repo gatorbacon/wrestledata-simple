@@ -2906,7 +2906,7 @@ th.tooltip-trigger .tooltip {
 
 .profile-action {
   padding: 8px 14px;
-  border-radius: 8px;
+    border-radius: 8px;
   border: 1px solid rgba(60,190,150,0.3);
   background: rgba(0,0,0,0.2);
   font-size: 0.8125rem;
@@ -2929,9 +2929,9 @@ th.tooltip-trigger .tooltip {
 .profile-panel--skill h2 {
   font-size: 1.1rem;
   font-weight: 600;
-  margin: 0 0 8px 0;
-}
-
+    margin: 0 0 8px 0;
+  }
+  
 .profile-panel--skill .skill-helper {
   font-size: 0.8125rem;
   color: var(--accent);
@@ -3372,9 +3372,9 @@ th.tooltip-trigger .tooltip {
 
 /* MV Context (compressed) */
 .mv-context-compressed {
-  margin-top: 24px;
-}
-
+    margin-top: 24px;
+  }
+  
 .mv-context-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -3966,7 +3966,7 @@ td {
   display: flex;
   gap: 0.25em;
   flex-wrap: nowrap; /* Never wrap */
-  overflow-x: auto;
+    overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding: 0.5em;
   /* Hide scrollbar but allow scrolling */
@@ -4374,8 +4374,8 @@ td {
 }
 
 .glance-table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
   font-size: 0.8125rem;
 }
 
@@ -4386,7 +4386,7 @@ td {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 6px 8px;
+    padding: 6px 8px;
   text-align: left;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }

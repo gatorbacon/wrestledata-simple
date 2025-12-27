@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 1.727,
-      "matches": 9,
-      "rank_weight": 28,
-      "rank_overall": 322,
+      "mv_avg": 1.484,
+      "matches": 10,
+      "rank_weight": 29,
+      "rank_overall": 365,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 184,
       "opponent_rank": 5,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Dual Meet (WS-96377)",
@@ -106,7 +106,7 @@
       "opponent_weight": 184,
       "opponent_rank": 14,
       "result": "W",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "2-2",
       "duration": "10:00",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
@@ -181,7 +181,7 @@
       "opponent_weight": 184,
       "opponent_rank": 70,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Cyclone Invitational",
@@ -202,10 +202,5 @@
       "event": "Cyclone Invitational",
       "mv_impact": 3.91
     }
-  ],
-  "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.3015151515151515
-  }
+  ]
 }

@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 1.008,
+      "mv_avg": 1.059,
       "matches": 11,
-      "rank_weight": 46,
-      "rank_overall": 469,
+      "rank_weight": 41,
+      "rank_overall": 460,
       "version": "v1"
     }
   },
@@ -211,16 +211,11 @@
       "opponent_weight": 125,
       "opponent_rank": 41,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "12-9",
       "duration": "8:15",
       "event": "Navy Classic",
       "mv_impact": 3.6
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.14285714285714285
-  }
+  ]
 }

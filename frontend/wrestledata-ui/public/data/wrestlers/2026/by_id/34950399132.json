@@ -24,7 +24,14 @@
     "bonus_rate": 0.75,
     "majors": 1,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.274,
+      "matches": 14,
+      "rank_weight": 157,
+      "rank_overall": 1410,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -255,10 +262,5 @@
       "event": "vs. Sacred Heart",
       "mv_impact": -3.03
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

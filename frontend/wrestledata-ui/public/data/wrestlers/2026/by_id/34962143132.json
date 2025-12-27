@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -2.37,
+      "mv_avg": -2.455,
       "matches": 3,
-      "rank_weight": 150,
-      "rank_overall": 1379,
+      "rank_weight": 162,
+      "rank_overall": 1453,
       "version": "v1"
     }
   },
@@ -96,15 +96,10 @@
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "Menlo Open"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 0.327,
-      "matches": 10,
-      "rank_weight": 60,
-      "rank_overall": 665,
+      "mv_avg": 0.913,
+      "matches": 13,
+      "rank_weight": 44,
+      "rank_overall": 508,
       "version": "v1"
     }
   },
@@ -211,7 +211,7 @@
       "opponent_weight": 184,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "5-5",
       "duration": "10:00",
       "event": "Cyclone Invitational",
@@ -247,10 +247,5 @@
       "event": "vs. Utah Valley",
       "mv_impact": 3.46
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.23703703703703705
-  }
+  ]
 }

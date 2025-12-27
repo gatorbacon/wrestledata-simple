@@ -24,7 +24,14 @@
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.177,
+      "matches": 9,
+      "rank_weight": 153,
+      "rank_overall": 1390,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -54,7 +61,7 @@
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "8-5",
       "duration": "8:15",
       "event": "Wilkes Open",
@@ -99,7 +106,7 @@
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "6-3",
       "duration": "8:15",
       "event": "Lock Haven Open I",
@@ -180,10 +187,5 @@
       "event": "Southeast Open",
       "mv_impact": -2.26
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

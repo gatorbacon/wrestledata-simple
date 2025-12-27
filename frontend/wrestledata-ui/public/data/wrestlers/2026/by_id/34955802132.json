@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.058,
+      "mv_avg": 0.316,
       "matches": 7,
-      "rank_weight": 84,
-      "rank_overall": 735,
+      "rank_weight": 83,
+      "rank_overall": 666,
       "version": "v1"
     }
   },
@@ -96,7 +96,7 @@
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Bison Open 2025",
@@ -147,10 +147,5 @@
       "event": "Bison Open 2025",
       "mv_impact": -0.93
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
-  }
+  ]
 }

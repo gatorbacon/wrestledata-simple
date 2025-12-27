@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 1,
     "mat_value": {
-      "mv_avg": -2.508,
-      "matches": 6,
-      "rank_weight": 160,
-      "rank_overall": 1410,
+      "mv_avg": -2.77,
+      "matches": 7,
+      "rank_weight": 175,
+      "rank_overall": 1533,
       "version": "v1"
     }
   },
@@ -56,7 +56,7 @@
       "opponent_weight": 157,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "11-8",
       "duration": "8:15",
       "event": "vs. Ohio",
@@ -152,10 +152,5 @@
       "event": "Mountaineer Open",
       "mv_impact": -4.48
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

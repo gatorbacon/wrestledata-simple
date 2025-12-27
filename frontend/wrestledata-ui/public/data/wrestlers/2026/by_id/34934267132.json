@@ -24,7 +24,14 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.766,
+      "matches": 4,
+      "rank_weight": 147,
+      "rank_overall": 1532,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -105,10 +112,5 @@
       "event": "Southeast Open",
       "mv_impact": -1.97
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.25
-  }
+  ]
 }

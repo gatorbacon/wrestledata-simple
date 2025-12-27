@@ -147,8 +147,9 @@ function teamNameToSlug(teamName) {
 async function loadRankingsData(season, weight) {
   try {
     // Load from public_rankings directory
-    const url = `/data/public_rankings/${season}/${weight}.json`;
-    const response = await fetch(url);
+    // Add cache-busting timestamp to prevent stale data
+    const url = `/data/public_rankings/${season}/${weight}.json?t=${Date.now()}`;
+    const response = await fetch(url, { cache: 'no-store' });
     
     if (!response.ok) {
       throw new Error(`Failed to load rankings: ${response.status}`);

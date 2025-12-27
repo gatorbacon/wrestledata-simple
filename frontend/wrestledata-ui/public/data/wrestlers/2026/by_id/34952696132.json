@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.916,
-      "matches": 6,
-      "rank_weight": 80,
-      "rank_overall": 994,
+      "mv_avg": -0.841,
+      "matches": 7,
+      "rank_weight": 95,
+      "rank_overall": 1024,
       "version": "v1"
     }
   },
@@ -86,7 +86,7 @@
       "opponent_weight": 174,
       "opponent_rank": 29,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "vs. Lehigh",
@@ -152,10 +152,5 @@
       "event": "Princeton Open",
       "mv_impact": -3.0
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

@@ -199,7 +199,16 @@ def classify_result_type(result: str) -> str:
     if "INJ" in s or "INJURY" in s:
         return "INJ"
     
-    # Check for tech fall (before fall/pin) to avoid misclassification
+    # Check for medical forfeit (check "M. FOR" or "M FOR" to catch "M. For.")
+    # This must come before checking for "MFF" to catch the "M. For." format
+    if "M. FOR" in s or (s.startswith("M") and "FOR" in s and "MFF" not in s):
+        return "MFF"
+    
+    # Check for default/forfeit (before decision to avoid misclassification)
+    if "DEF" in s or "DEFAULT" in s:
+        return "DEF"
+    
+    # Check for tech fall (before fall/pin) to avoid misclassification)
     # Tech falls have "TF" or "TECH" in the result string
     if "TF" in s or "TECH" in s or "TECHNICAL" in s:
         return "TF"
@@ -208,6 +217,9 @@ def classify_result_type(result: str) -> str:
         return "F"
     if "MD" in s or "MAJOR" in s:
         return "MD"
+    # SV-* and TB-* are decisions (treated as D for stats/MI), but we'll preserve the prefix for display
+    if s.startswith("SV-") or s.startswith("TB-"):
+        return "D"  # Treated as decision for stats/MI purposes
     if "DEC" in s or "DECISION" in s:
         return "D"
     if "DQ" in s or "DISQUAL" in s:
@@ -487,6 +499,8 @@ def build_match_list(
         score = None
         
         result_type = classify_result_type(result)
+        result_upper = result.upper()
+        
         if result_type == "F":
             method = "FALL"
         elif result_type == "TF":
@@ -495,8 +509,22 @@ def build_match_list(
             method = "MD"
         elif result_type == "INJ":
             method = "INJ"
+        elif result_type == "DEF":
+            method = "DFLT"
+        elif result_type == "MFF":
+            method = "MFF"
         elif result_type == "D":
-            method = "DEC"
+            # Check for SV-* or TB-* to preserve the prefix for display
+            if result_upper.startswith("SV-"):
+                # Extract SV-1, SV-3, etc. from original result
+                sv_part = result.split()[0] if result.split() else "SV-1"
+                method = sv_part.upper()
+            elif result_upper.startswith("TB-"):
+                # Extract TB-1, TB-2, etc. from original result
+                tb_part = result.split()[0] if result.split() else "TB-1"
+                method = tb_part.upper()
+            else:
+                method = "DEC"
         
         score_pair = _parse_score_from_result(result)
         if score_pair:
@@ -574,11 +602,15 @@ def load_mv_data(season: int) -> Dict[str, Dict]:
     Load Mat Value data from season-wide file (includes rankings).
     
     Returns dict mapping wrestler_id -> MV data with ranks.
+    
+    NOTE: Always reads from the public data location (frontend/wrestledata-ui/public/data/mat_value)
+    regardless of other parameters, since mat_value files are stored there.
     """
-    mv_file = Path(f"data/mat_value/{season}/mat_value_{season}.json")
+    # Always read from public location - mat_value files are stored there
+    mv_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{season}/mat_value_{season}.json")
     if not mv_file.exists():
         # Fallback to cache file if season-wide file doesn't exist
-        cache_file = Path(f"data/mat_value/{season}/mv_cache_{season}.json")
+        cache_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{season}/mv_cache_{season}.json")
         if cache_file.exists():
             try:
                 with cache_file.open("r", encoding="utf-8") as f:

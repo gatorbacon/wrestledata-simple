@@ -83,7 +83,7 @@ function addTooltip(element, text) {
 // Tooltip definitions
 const TOOLTIPS = {
   'xtp': 'Expected NCAA team points based on advancement, placement, and bonus probabilities.',
-  'mv': 'Match Index (MI) shows per-match performance above replacement, normalized for opponent quality and match outcome. It is a rate metric, not a ranking.',
+  'mv': 'TPAR — Team Points Above Replacement — estimates how many team points a wrestler contributes above a replacement-level starter, using match-level scoring and dominance signals.',
   'xtp-p': 'Expected placement points.',
   'xtp-a': 'Expected advancement points.',
   'xtp-b': 'Expected bonus points.',

@@ -26,10 +26,10 @@
     "techs": 2,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.987,
-      "matches": 7,
-      "rank_weight": 90,
-      "rank_overall": 1014,
+      "mv_avg": -1.03,
+      "matches": 8,
+      "rank_weight": 98,
+      "rank_overall": 1082,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 197,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "11-8",
       "duration": "8:15",
       "event": "Dual Meet (WS-96914)",
@@ -106,7 +106,7 @@
       "opponent_weight": 197,
       "opponent_rank": 64,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
       "event": "Keystone Classic",
@@ -172,10 +172,5 @@
       "event": "vs. Pennsylvania",
       "mv_impact": -2.32
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

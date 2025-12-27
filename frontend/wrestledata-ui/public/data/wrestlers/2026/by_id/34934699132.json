@@ -26,10 +26,10 @@
     "techs": 7,
     "pins": 3,
     "mat_value": {
-      "mv_avg": 3.958,
-      "matches": 17,
-      "rank_weight": 6,
-      "rank_overall": 52,
+      "mv_avg": 3.696,
+      "matches": 20,
+      "rank_weight": 8,
+      "rank_overall": 71,
       "version": "v1"
     }
   },
@@ -121,7 +121,7 @@
       "opponent_weight": 184,
       "opponent_rank": 16,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "12-9",
       "duration": "8:15",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
@@ -352,10 +352,5 @@
       "event": "Southeast Open",
       "mv_impact": 4.45
     }
-  ],
-  "bonus": {
-    "top33_wins": 5,
-    "top33_bonus_ev_raw": 0.2,
-    "top33_bonus_ev_shrunk": 0.25256410256410255
-  }
+  ]
 }

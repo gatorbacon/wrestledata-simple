@@ -24,7 +24,14 @@
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.11,
+      "matches": 7,
+      "rank_weight": 146,
+      "rank_overall": 1370,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -150,10 +157,5 @@
       "event": "vs. Mercyhurst",
       "mv_impact": 1.15
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

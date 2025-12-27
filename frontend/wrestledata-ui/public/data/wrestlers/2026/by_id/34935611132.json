@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 2,
     "mat_value": {
-      "mv_avg": 3.351,
-      "matches": 10,
-      "rank_weight": 10,
-      "rank_overall": 95,
+      "mv_avg": 3.408,
+      "matches": 11,
+      "rank_weight": 11,
+      "rank_overall": 97,
       "version": "v1"
     }
   },
@@ -106,7 +106,7 @@
       "opponent_weight": 184,
       "opponent_rank": 19,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "5-2",
       "duration": "8:15",
       "event": "vs. Oklahoma State",
@@ -196,7 +196,7 @@
       "opponent_weight": 184,
       "opponent_rank": 24,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "9-6",
       "duration": "8:15",
       "event": "Navy Classic",
@@ -211,7 +211,7 @@
       "opponent_weight": 184,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "DFLT",
       "score": null,
       "duration": "7:00",
       "event": "Navy Classic"
@@ -231,10 +231,5 @@
       "event": "Navy Classic",
       "mv_impact": 3.79
     }
-  ],
-  "bonus": {
-    "top33_wins": 4,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.27638888888888885
-  }
+  ]
 }

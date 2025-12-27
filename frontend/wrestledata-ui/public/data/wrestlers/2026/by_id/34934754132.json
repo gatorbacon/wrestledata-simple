@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 2,
     "mat_value": {
-      "mv_avg": 1.68,
-      "matches": 14,
-      "rank_weight": 36,
-      "rank_overall": 327,
+      "mv_avg": 1.655,
+      "matches": 15,
+      "rank_weight": 41,
+      "rank_overall": 342,
       "version": "v1"
     }
   },
@@ -91,7 +91,7 @@
       "opponent_weight": 149,
       "opponent_rank": 58,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "8-5",
       "duration": "8:15",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
@@ -277,10 +277,5 @@
       "event": "Princeton Open",
       "mv_impact": -2.07
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 0.8888888888888888
-  }
+  ]
 }

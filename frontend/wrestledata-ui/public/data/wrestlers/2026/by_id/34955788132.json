@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.995,
+      "mv_avg": 1.243,
       "matches": 10,
-      "rank_weight": 36,
-      "rank_overall": 474,
+      "rank_weight": 35,
+      "rank_overall": 421,
       "version": "v1"
     }
   },
@@ -101,7 +101,7 @@
       "opponent_weight": 174,
       "opponent_rank": 28,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "4-3",
       "duration": "10:00",
       "event": "vs. Missouri",
@@ -191,16 +191,11 @@
       "opponent_weight": 174,
       "opponent_rank": 13,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "8-1",
       "duration": "8:15",
       "event": "Southeast Open",
       "mv_impact": -0.69
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.5,
-    "top33_bonus_ev_shrunk": 0.35333333333333333
-  }
+  ]
 }

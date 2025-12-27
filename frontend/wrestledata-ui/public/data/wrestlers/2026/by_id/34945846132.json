@@ -24,7 +24,14 @@
     "bonus_rate": 0.857,
     "majors": 1,
     "techs": 3,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": -0.326,
+      "matches": 13,
+      "rank_weight": 108,
+      "rank_overall": 857,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -235,10 +242,5 @@
       "event": "Michigan State Open",
       "mv_impact": -6.51
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
-  }
+  ]
 }

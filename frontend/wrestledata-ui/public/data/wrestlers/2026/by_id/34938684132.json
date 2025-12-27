@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -5.109,
-      "matches": 2,
-      "rank_weight": 222,
-      "rank_overall": 1875,
+      "mv_avg": -6.877,
+      "matches": 3,
+      "rank_weight": 257,
+      "rank_overall": 2111,
       "version": "v1"
     }
   },
@@ -86,7 +86,7 @@
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "Big Red Invitational"
@@ -106,10 +106,5 @@
       "event": "Big Red Invitational",
       "mv_impact": -5.08
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
-  }
+  ]
 }

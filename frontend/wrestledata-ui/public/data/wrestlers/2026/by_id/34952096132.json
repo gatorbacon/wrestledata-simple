@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -1.139,
+      "mv_avg": -1.251,
       "matches": 6,
-      "rank_weight": 95,
-      "rank_overall": 1058,
+      "rank_weight": 101,
+      "rank_overall": 1139,
       "version": "v1"
     }
   },
@@ -76,7 +76,7 @@
       "opponent_weight": 285,
       "opponent_rank": 21,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "8-5",
       "duration": "8:15",
       "event": "Cougar Clash",
@@ -142,10 +142,5 @@
       "event": "Michigan State Open",
       "mv_impact": -3.84
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.0
-  }
+  ]
 }

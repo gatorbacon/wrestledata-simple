@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -1.98,
+      "mv_avg": -1.949,
       "matches": 5,
-      "rank_weight": 128,
-      "rank_overall": 1290,
+      "rank_weight": 125,
+      "rank_overall": 1328,
       "version": "v1"
     }
   },
@@ -71,7 +71,7 @@
       "opponent_weight": 133,
       "opponent_rank": 35,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
       "event": "Warren Williamson Daktronics Invitational",
@@ -116,16 +116,11 @@
       "opponent_weight": 133,
       "opponent_rank": 26,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
       "event": "Tiger Style Invite",
       "mv_impact": -1.88
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.25
-  }
+  ]
 }

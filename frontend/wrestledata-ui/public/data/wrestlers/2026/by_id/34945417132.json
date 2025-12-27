@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.784,
+      "mv_avg": -1.381,
       "matches": 9,
-      "rank_weight": 92,
-      "rank_overall": 951,
+      "rank_weight": 110,
+      "rank_overall": 1175,
       "version": "v1"
     }
   },
@@ -151,7 +151,7 @@
       "opponent_weight": 125,
       "opponent_rank": 32,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "7-3",
       "duration": "8:15",
       "event": "2025 Journeymen Collegiate Classic",
@@ -187,10 +187,5 @@
       "event": "vs. Rutgers",
       "mv_impact": -2.66
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.14285714285714285
-  }
+  ]
 }

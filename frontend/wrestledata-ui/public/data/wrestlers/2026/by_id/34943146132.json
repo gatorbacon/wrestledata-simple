@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.844,
+      "mv_avg": -0.768,
       "matches": 6,
-      "rank_weight": 96,
-      "rank_overall": 973,
+      "rank_weight": 98,
+      "rank_overall": 1002,
       "version": "v1"
     }
   },
@@ -86,7 +86,7 @@
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "12-9",
       "duration": "8:15",
       "event": "Mountaineer Open",
@@ -137,10 +137,5 @@
       "event": "Southeast Open",
       "mv_impact": -3.49
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.25
-  }
+  ]
 }

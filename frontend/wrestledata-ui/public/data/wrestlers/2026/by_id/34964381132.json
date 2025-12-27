@@ -24,7 +24,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.056,
+      "matches": 2,
+      "rank_weight": 9,
+      "rank_overall": 127,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -70,10 +77,5 @@
       "event": "vs. Illinois",
       "mv_impact": 4.52
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.18518518518518517
-  }
+  ]
 }

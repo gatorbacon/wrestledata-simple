@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.078,
-      "matches": 6,
-      "rank_weight": 91,
-      "rank_overall": 776,
+      "mv_avg": -0.488,
+      "matches": 7,
+      "rank_weight": 116,
+      "rank_overall": 906,
       "version": "v1"
     }
   },
@@ -86,7 +86,7 @@
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "6-3",
       "duration": "8:15",
       "event": "Kent State Open 1",
@@ -146,16 +146,11 @@
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-2",
       "score": "2-1",
       "duration": "10:00",
       "event": "Clarion Open",
       "mv_impact": -1.61
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
-  }
+  ]
 }

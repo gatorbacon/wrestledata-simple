@@ -26,10 +26,10 @@
     "techs": 1,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 2.334,
-      "matches": 8,
-      "rank_weight": 20,
-      "rank_overall": 221,
+      "mv_avg": 1.661,
+      "matches": 10,
+      "rank_weight": 33,
+      "rank_overall": 338,
       "version": "v1"
     }
   },
@@ -91,7 +91,7 @@
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-1",
       "score": "5-2",
       "duration": "8:15",
       "event": "vs. West Virginia",
@@ -151,7 +151,7 @@
       "opponent_weight": 141,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "TB-2",
       "score": "10-6",
       "duration": "10:00",
       "event": "Southeast Open",
@@ -202,10 +202,5 @@
       "event": "Southeast Open",
       "mv_impact": 4.51
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.23068783068783072
-  }
+  ]
 }

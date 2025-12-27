@@ -400,7 +400,7 @@ function renderStartersTable(starters, xtpData) {
       mvSpan.textContent = `${sign}${mv.toFixed(1)}`;
       
       // Add tooltip using tooltip system
-      const tooltipText = `Match Index: ${sign}${mv.toFixed(1)}. Per-match performance above replacement relative to a replacement-level Division I starter at ${weight} lbs.`;
+      const tooltipText = `TPAR: ${sign}${mv.toFixed(1)}. Team Points Above Replacement relative to a replacement-level Division I starter at ${weight} lbs.`;
       addTooltip(mvSpan, tooltipText);
       
       mvTd.appendChild(mvSpan);
@@ -563,7 +563,7 @@ function renderRemainingRosterTable(remaining) {
       mvSpan.textContent = `${sign}${mv.toFixed(1)}`;
       
       // Add tooltip using tooltip system
-      const tooltipText = `Match Index: ${sign}${mv.toFixed(1)}. Per-match performance above replacement relative to a replacement-level Division I starter at ${weight} lbs.`;
+      const tooltipText = `TPAR: ${sign}${mv.toFixed(1)}. Team Points Above Replacement relative to a replacement-level Division I starter at ${weight} lbs.`;
       addTooltip(mvSpan, tooltipText);
       
       mvTd.appendChild(mvSpan);

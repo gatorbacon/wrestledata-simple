@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 4.399,
+      "mv_avg": 4.326,
       "matches": 2,
-      "rank_weight": 1,
-      "rank_overall": 29,
+      "rank_weight": 4,
+      "rank_overall": 31,
       "version": "v1"
     }
   },
@@ -61,7 +61,7 @@
       "opponent_weight": 197,
       "opponent_rank": 44,
       "result": "L",
-      "method": "DEC",
+      "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -96,10 +96,5 @@
       "event": "vs. South Dakota State",
       "mv_impact": 3.82
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.3796296296296296
-  }
+  ]
 }

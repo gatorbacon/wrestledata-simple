@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 2,
     "mat_value": {
-      "mv_avg": -3.191,
-      "matches": 8,
-      "rank_weight": 158,
-      "rank_overall": 1557,
+      "mv_avg": -2.03,
+      "matches": 10,
+      "rank_weight": 128,
+      "rank_overall": 1349,
       "version": "v1"
     }
   },
@@ -196,16 +196,11 @@
       "opponent_weight": 133,
       "opponent_rank": null,
       "result": "L",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "9-6",
       "duration": "8:15",
       "event": "ESU Open",
       "mv_impact": -4.78
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.25
-  }
+  ]
 }

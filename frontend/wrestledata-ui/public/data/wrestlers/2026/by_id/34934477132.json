@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -0.538,
-      "matches": 14,
-      "rank_weight": 110,
-      "rank_overall": 885,
+      "mv_avg": -0.896,
+      "matches": 16,
+      "rank_weight": 131,
+      "rank_overall": 1042,
       "version": "v1"
     }
   },
@@ -76,7 +76,7 @@
       "opponent_weight": 149,
       "opponent_rank": 61,
       "result": "L",
-      "method": "DEC",
+      "method": "TB-1",
       "score": "2-1",
       "duration": "10:00",
       "event": "vs. Franklin & Marshall",
@@ -106,7 +106,7 @@
       "opponent_weight": 149,
       "opponent_rank": 20,
       "result": "L",
-      "method": "DEC",
+      "method": "DFLT",
       "score": null,
       "duration": "7:00",
       "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational"
@@ -255,7 +255,7 @@
       "opponent_weight": 149,
       "opponent_rank": null,
       "result": "W",
-      "method": "DEC",
+      "method": "SV-3",
       "score": "12-9",
       "duration": "8:15",
       "event": "2025 Journeymen Collegiate Classic",
@@ -306,10 +306,5 @@
       "event": "Southeast Open",
       "mv_impact": -2.83
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5
-  }
+  ]
 }
