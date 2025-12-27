@@ -48,16 +48,39 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Scrape wrestling team data.')
     parser.add_argument('-teams', type=int, help='Number of teams to scrape. If not provided, scrapes all teams.')
     parser.add_argument('-season', type=int, required=True, help='Season ending year (e.g. 2023 for 2022-23 season)')
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
     return parser.parse_args()
 
 class WrestlingScraper:
-    def __init__(self, max_teams=None, season_year=None):
+    def __init__(self, max_teams=None, season_year=None, league='ncaa', state=None, gender=None):
         self.ua = UserAgent()
         self.driver = None
         self.wait = None
         self.season_year = season_year
         self.scrape_log = self._load_scrape_log()
         self.max_teams = max_teams
+        self.league = league
+        self.state = state
+        self.gender = gender
+        
+        # Validate HS parameters
+        if self.league == 'hs':
+            if not self.state:
+                raise ValueError("--state is required when --league=hs")
+            # Normalize state to uppercase for comparison
+            state_upper = self.state.upper()
+            if state_upper != 'KY':
+                raise ValueError(f"Only KY is currently supported for HS. Got: {self.state}")
+            # Store normalized state
+            self.state = state_upper
+            if not self.gender:
+                raise ValueError("--gender is required when --league=hs")
+            if self.gender not in ['boys', 'girls']:
+                raise ValueError(f"--gender must be 'boys' or 'girls'. Got: {self.gender}")
         
         # Create season-specific data directory
         self.season_data_dir = DATA_DIR / str(season_year)
@@ -122,10 +145,23 @@ class WrestlingScraper:
         """Convert season year to possible season text formats."""
         start_year = self.season_year - 1
         short_end = str(self.season_year)[-2:]  # Get last 2 digits
-        return [
-            f"{start_year}-{short_end} College Men",
-            f"{start_year}-{short_end} College"
-        ]
+        
+        if self.league == 'hs':
+            if self.gender == 'boys':
+                return [
+                    f"{start_year}-{short_end} High School Boys",
+                    f"{start_year}-{short_end} HS Boys"
+                ]
+            else:  # girls
+                return [
+                    f"{start_year}-{short_end} High School Girls",
+                    f"{start_year}-{short_end} HS Girls"
+                ]
+        else:  # ncaa
+            return [
+                f"{start_year}-{short_end} College Men",
+                f"{start_year}-{short_end} College"
+            ]
 
     def navigate_to_season(self):
         """Navigate to the wrestling season page."""
@@ -253,8 +289,17 @@ class WrestlingScraper:
                 EC.presence_of_element_located((By.ID, "gbFrame"))
             )
             
-            # List of governing bodies to process - only NCAA for D1 schools
-            governing_bodies = ["NCAA"]
+            # Determine governing bodies based on league
+            if self.league == 'hs':
+                # For HS, TrackWrestling uses state association name
+                # For Kentucky, use "Kentucky High School Athletic Association"
+                if self.state == 'KY':
+                    governing_bodies = ["Kentucky High School Athletic Association"]
+                else:
+                    # For other states, try state name
+                    governing_bodies = [self.state]
+            else:  # ncaa
+                governing_bodies = ["NCAA"]
             processed_bodies = set()  # Track which governing bodies we've processed
             
             # Process each governing body
@@ -278,10 +323,32 @@ class WrestlingScraper:
                     select = Select(select)
                     
                     # Find and select the governing body
+                    # For HS, try multiple variations
+                    found = False
                     for option in select.options:
-                        if governing_body in option.text:
+                        option_text = option.text.strip()
+                        # For HS Kentucky, check for various forms
+                        if self.league == 'hs' and self.state == 'KY':
+                            if ("Kentucky" in option_text or 
+                                "KHSAA" in option_text.upper() or
+                                option_text == "Kentucky High School Athletic Association"):
+                                select.select_by_value(option.get_attribute("value"))
+                                found = True
+                                print(f"Selected governing body: {option_text}")
+                                break
+                        # For NCAA or other cases, use exact match
+                        elif governing_body in option_text:
                             select.select_by_value(option.get_attribute("value"))
+                            found = True
+                            print(f"Selected governing body: {option_text}")
                             break
+                    
+                    if not found:
+                        print(f"Warning: Could not find governing body '{governing_body}' in dropdown")
+                        print("Available options:")
+                        for option in select.options:
+                            print(f"  - {option.text}")
+                        raise Exception(f"Could not find governing body '{governing_body}'")
                     
                     # Click the Login button to submit
                     print("Clicking Login button...")
@@ -300,7 +367,12 @@ class WrestlingScraper:
                     # Mark this governing body as processed
                     processed_bodies.add(governing_body)
                     
-                    # Go back to governing body selection
+                    # For HS, we only process one governing body, so break after processing
+                    if self.league == 'hs':
+                        print(f"Completed processing {governing_body} for HS")
+                        break
+                    
+                    # For NCAA, go back to governing body selection to process other bodies
                     print("Returning to governing body selection...")
                     self.driver.get(BASE_URL)
                     time.sleep(3)  # Wait for page to load
@@ -439,45 +511,59 @@ class WrestlingScraper:
                         team_id = team_data[0]  # Team ID is the first element
                         division = team_data[5] if len(team_data) > 5 else "Unknown"  # Division
                         
-                        # Filter to only include NCAA D1 schools
-                        # Check if division contains "DI" (not "DII" or "DIII") or "Division I"
-                        # Split by comma to check each division part individually
-                        division_parts = [part.strip() for part in division.split(',')]
-                        is_d1 = False
-                        
-                        for part in division_parts:
-                            part_upper = part.upper()
-                            # Check for "DI " (with space), "DI-" (with dash), or exact "DI"
-                            # Also check for "DIVISION I" but make sure it's not "DIVISION II" or "DIVISION III"
-                            if (part_upper.startswith("DI ") or 
-                                part_upper.startswith("DI-") or 
-                                part_upper == "DI"):
-                                # Make sure it's not DII or DIII
-                                if not part_upper.startswith("DII") and not part_upper.startswith("DIII"):
+                        # Filter teams based on league type
+                        if self.league == 'hs':
+                            # For HS, include all teams (no division filtering)
+                            # Filter by state if needed (though governing body should handle this)
+                            team_state = team_data[2] if len(team_data) > 2 else ""
+                            if self.state and team_state != self.state:
+                                print(f"Skipping team from different state: {team_data[1]} - {team_state}")
+                                continue
+                            
+                            # Set division label based on gender
+                            division_label = f"KY HS {self.gender.capitalize()}"
+                        else:  # ncaa
+                            # Filter to only include NCAA D1 schools
+                            # Check if division contains "DI" (not "DII" or "DIII") or "Division I"
+                            # Split by comma to check each division part individually
+                            division_parts = [part.strip() for part in division.split(',')]
+                            is_d1 = False
+                            
+                            for part in division_parts:
+                                part_upper = part.upper()
+                                # Check for "DI " (with space), "DI-" (with dash), or exact "DI"
+                                # Also check for "DIVISION I" but make sure it's not "DIVISION II" or "DIVISION III"
+                                if (part_upper.startswith("DI ") or 
+                                    part_upper.startswith("DI-") or 
+                                    part_upper == "DI"):
+                                    # Make sure it's not DII or DIII
+                                    if not part_upper.startswith("DII") and not part_upper.startswith("DIII"):
+                                        is_d1 = True
+                                        break
+                                # Check for "DIVISION I" but not "DIVISION II" or "DIVISION III"
+                                elif ("DIVISION I" in part_upper and 
+                                      "DIVISION II" not in part_upper and 
+                                      "DIVISION III" not in part_upper):
                                     is_d1 = True
                                     break
-                            # Check for "DIVISION I" but not "DIVISION II" or "DIVISION III"
-                            elif ("DIVISION I" in part_upper and 
-                                  "DIVISION II" not in part_upper and 
-                                  "DIVISION III" not in part_upper):
-                                is_d1 = True
-                                break
-                        
-                        if not is_d1:
-                            print(f"Skipping non-D1 team: {team_data[1]} - {division}")
-                            continue
+                            
+                            if not is_d1:
+                                print(f"Skipping non-D1 team: {team_data[1]} - {division}")
+                                continue
+                            
+                            division_label = "NCAA D1"
                         
                         team = {
                             "name": team_data[1],  # Team Name
                             "state": team_data[2],  # State
                             "abbreviation": team_data[3],  # Abbr
                             "governing_body": governing_body,
-                            "division": division,
+                            "division": division_label,
                             "url": f"{BASE_URL}/seasons/TeamSchedule.jsp?twSessionId={session_id}&teamId={team_id}"  # Construct URL with both session ID and team ID
                         }
                         
                         teams.append(team)
-                        print(f"Processed D1 team: {team['name']} ({team['state']}) - {team['division']}")
+                        print(f"Processed {self.league.upper()} team: {team['name']} ({team['state']}) - {team['division']}")
                         
                     except Exception as e:
                         print(f"Error processing team data: {e}")
@@ -505,9 +591,13 @@ class WrestlingScraper:
     def save_teams_to_json(self, teams: List[Dict], governing_body: str):
         """Save team data to a JSON file."""
         try:
-            # Create filename based on governing body and season year
-            # Since we're only scraping D1 teams, use d1 in the filename
-            filename = f"data/team_lists/{self.season_year}/ncaa_d1_teams.json"
+            # Determine output path based on league type
+            if self.league == 'hs':
+                # HS output: data/team_lists/hs_ky_boys/teams.json or data/team_lists/hs_ky_girls/teams.json
+                filename = f"data/team_lists/hs_{self.state.lower()}_{self.gender}/teams.json"
+            else:  # ncaa
+                # NCAA output remains unchanged
+                filename = f"data/team_lists/{self.season_year}/ncaa_d1_teams.json"
             
             # Ensure directory exists
             os.makedirs(os.path.dirname(filename), exist_ok=True)
@@ -532,7 +622,8 @@ class WrestlingScraper:
             with open(filename, 'w') as f:
                 json.dump(unique_teams, f, indent=2)
             
-            print(f"Saved {len(unique_teams)} unique NCAA D1 teams to {filename}")
+            league_label = f"{self.league.upper()}" if self.league == 'ncaa' else f"{self.state} HS {self.gender.capitalize()}"
+            print(f"Saved {len(unique_teams)} unique {league_label} teams to {filename}")
             
         except Exception as e:
             print(f"Error saving teams to JSON: {e}")
@@ -556,18 +647,19 @@ class WrestlingScraper:
 
 def main():
     """Main function."""
-    # Get season year from user
-    while True:
-        try:
-            season_year = int(input("Enter the season year (e.g., 2014 for 2013-14 season): "))
-            if 1900 <= season_year <= 2100:
-                break
-            print("Please enter a valid year between 1900 and 2100")
-        except ValueError:
-            print("Please enter a valid year")
-
+    args = parse_args()
+    
+    # Use season from args (required parameter)
+    season_year = args.season
+    
     # Create scraper and run
-    scraper = WrestlingScraper(season_year=season_year)
+    scraper = WrestlingScraper(
+        max_teams=args.teams,
+        season_year=season_year,
+        league=args.league,
+        state=args.state,
+        gender=args.gender
+    )
     scraper.run()
 
 if __name__ == "__main__":

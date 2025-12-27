@@ -660,10 +660,20 @@ def build_existing_match_keys(in_dir: str, season: str) -> Set[Tuple[str, str, s
     return existing_keys
 
 
-def main(season):
-    in_dir = os.path.join("mt", "data_alias", season)
-    out_dir = os.path.join("mt", "processed_data", season)
-    public_out_dir = os.path.join("frontend", "wrestledata-ui", "public", "data", "processed_data", season)
+def main(season, league='ncaa', state=None, gender=None):
+    # Setup directories based on league type
+    if league == 'hs':
+        # HS data directories
+        state_lower = state.lower()  # Normalize to lowercase (e.g., KY -> ky)
+        in_dir = os.path.join("mt", "data_alias", f"hs_{state_lower}_{gender}")
+        out_dir = os.path.join("mt", "processed_data", f"hs_{state_lower}_{gender}")
+        public_out_dir = os.path.join("frontend", "wrestledata-ui", "public", "data", "processed_data", f"hs_{state_lower}_{gender}")
+    else:  # ncaa
+        # NCAA data directories (unchanged)
+        in_dir = os.path.join("mt", "data_alias", season)
+        out_dir = os.path.join("mt", "processed_data", season)
+        public_out_dir = os.path.join("frontend", "wrestledata-ui", "public", "data", "processed_data", season)
+    
     os.makedirs(out_dir, exist_ok=True)
     os.makedirs(public_out_dir, exist_ok=True)
 
@@ -753,5 +763,23 @@ def main(season):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-season", required=True, help="Season folder name (e.g., 2014)")
+    parser.add_argument("-league", type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument("-state", type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument("-gender", type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
     args = parser.parse_args()
-    main(args.season)
+    
+    # Validate HS parameters
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("-state is required when -league=hs")
+        state_upper = args.state.upper()
+        if state_upper != 'KY':
+            raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
+        if not args.gender:
+            raise ValueError("-gender is required when -league=hs")
+        if args.gender not in ['boys', 'girls']:
+            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
+    
+    main(args.season, league=args.league, state=args.state, gender=args.gender)

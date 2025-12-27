@@ -103,22 +103,52 @@ def parse_args():
     parser.add_argument('-teams', type=int, help='Number of teams to scrape. If not provided, scrapes all teams.')
     parser.add_argument('-season', type=int, required=True, help='Season ending year (e.g. 2023 for 2022-23 season)')
     parser.add_argument('-headless', action='store_true', help='Run browser in headless mode')
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
     return parser.parse_args()
 
 class WrestlingScraper:
-    def __init__(self, max_teams=None, season_year=None, headless=False):
+    def __init__(self, max_teams=None, season_year=None, headless=False, league='ncaa', state=None, gender=None):
         self.ua = UserAgent()
         self.driver = None
         self.wait = None
         self.season_year = season_year
-        self.scrape_log = self._load_scrape_log()
         self.max_teams = max_teams
         self.headless = headless
         self.name_aliases = self._load_name_aliases()
+        self.league = league
+        self.state = state
+        self.gender = gender
+        
+        # Validate HS parameters
+        if self.league == 'hs':
+            if not self.state:
+                raise ValueError("-state is required when -league=hs")
+            # Normalize state to uppercase for comparison
+            state_upper = self.state.upper()
+            if state_upper != 'KY':
+                raise ValueError(f"Only KY is currently supported for HS. Got: {self.state}")
+            # Store normalized state
+            self.state = state_upper
+            if not self.gender:
+                raise ValueError("-gender is required when -league=hs")
+            if self.gender not in ['boys', 'girls']:
+                raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {self.gender}")
         
         # Create season-specific data directory
-        self.season_data_dir = DATA_DIR / str(season_year)
-        self.season_data_dir.mkdir(exist_ok=True)
+        if self.league == 'hs':
+            # HS data goes to subdirectories: mt/data/hs_ky_boys/ or mt/data/hs_ky_girls/
+            self.season_data_dir = DATA_DIR / f"hs_{self.state.lower()}_{self.gender}"
+        else:  # ncaa
+            # NCAA data goes to season-specific directory: mt/data/{season_year}/
+            self.season_data_dir = DATA_DIR / str(season_year)
+        self.season_data_dir.mkdir(exist_ok=True, parents=True)
+        
+        # Load scrape log AFTER league/state/gender are set (needed for log file path)
+        self.scrape_log = self._load_scrape_log()
 
     def _load_name_aliases(self):
         """Load name aliases from mt/name_alias.json."""
@@ -186,6 +216,17 @@ class WrestlingScraper:
             pass
         return "timeout"
 
+    def _get_log_file_path(self) -> Path:
+        """Get the log file path based on league type."""
+        if self.league == 'hs':
+            # HS logs: mt/logs/hs_ky_boys/scrape_log_2026.json or mt/logs/hs_ky_girls/scrape_log_2026.json
+            log_dir = LOGS_DIR / f"hs_{self.state.lower()}_{self.gender}"
+            log_dir.mkdir(exist_ok=True, parents=True)
+            return log_dir / f"scrape_log_{self.season_year}.json"
+        else:  # ncaa
+            # NCAA logs: mt/logs/scrape_log_{season_year}.json (unchanged)
+            return SCRAPE_LOG_FILE(self.season_year)
+    
     def _load_scrape_log(self) -> Dict:
         """Load or create the scrape log file."""
         default_log = {
@@ -195,11 +236,12 @@ class WrestlingScraper:
             "successes": []
         }
         
-        if SCRAPE_LOG_FILE(self.season_year).exists():
+        log_file_path = self._get_log_file_path()
+        if log_file_path.exists():
             # Try to acquire the log lock
             if acquire_log_lock(self.season_year):
                 try:
-                    with open(SCRAPE_LOG_FILE(self.season_year), 'r') as f:
+                    with open(log_file_path, 'r') as f:
                         log_data = json.load(f)
                     release_log_lock(self.season_year)
                     return log_data
@@ -221,7 +263,7 @@ class WrestlingScraper:
             try:
                 # First read the current log file to merge with
                 current_log = {}
-                log_file_path = SCRAPE_LOG_FILE(self.season_year)
+                log_file_path = self._get_log_file_path()
                 
                 if log_file_path.exists():
                     with open(log_file_path, 'r') as f:
@@ -284,10 +326,11 @@ class WrestlingScraper:
         self.scrape_log.setdefault("errors", [])
         self.scrape_log.setdefault("successes", [])
         
-        if SCRAPE_LOG_FILE(self.season_year).exists():
+        log_file_path = self._get_log_file_path()
+        if log_file_path.exists():
             if acquire_log_lock(self.season_year):
                 try:
-                    with open(SCRAPE_LOG_FILE(self.season_year), 'r') as f:
+                    with open(log_file_path, 'r') as f:
                         log_data = json.load(f)
                     
                     # Update all log sections
@@ -433,10 +476,11 @@ class WrestlingScraper:
     def _refresh_teams_scraped(self):
         """Refresh the list of scraped teams from the log file."""
         # Load the latest version of the log file
-        if SCRAPE_LOG_FILE(self.season_year).exists():
+        log_file_path = self._get_log_file_path()
+        if log_file_path.exists():
             if acquire_log_lock(self.season_year):
                 try:
-                    with open(SCRAPE_LOG_FILE(self.season_year), 'r') as f:
+                    with open(log_file_path, 'r') as f:
                         log_data = json.load(f)
                     # Update only the teams_scraped list, preserving other log data
                     self.scrape_log["teams_scraped"] = log_data.get("teams_scraped", [])
@@ -482,10 +526,23 @@ class WrestlingScraper:
         """Convert season year to possible season text formats."""
         start_year = self.season_year - 1
         short_end = str(self.season_year)[-2:]  # Get last 2 digits
-        return [
-            f"{start_year}-{short_end} College Men",
-            f"{start_year}-{short_end} College"
-        ]
+        
+        if self.league == 'hs':
+            if self.gender == 'boys':
+                return [
+                    f"{start_year}-{short_end} High School Boys",
+                    f"{start_year}-{short_end} HS Boys"
+                ]
+            else:  # girls
+                return [
+                    f"{start_year}-{short_end} High School Girls",
+                    f"{start_year}-{short_end} HS Girls"
+                ]
+        else:  # ncaa
+            return [
+                f"{start_year}-{short_end} College Men",
+                f"{start_year}-{short_end} College"
+            ]
 
     def navigate_to_season(self) -> bool:
         """Navigate to the wrestling season page.
@@ -702,18 +759,50 @@ class WrestlingScraper:
                 print(f"Timed out waiting for 'gbFrame' governing body popup: {te}")
                 raise
 
-            # Select NCAA from the dropdown
-            print("Selecting NCAA from dropdown...")
+            # Select governing body from the dropdown
+            if self.league == 'hs':
+                print(f"Selecting {self.state} HS governing body from dropdown...")
+            else:
+                print("Selecting NCAA from dropdown...")
             try:
                 gb_select_elem = self.wait.until(
                     EC.presence_of_element_located((By.ID, "gbId"))
                 )
-                print("Governing body dropdown element located; attempting to select NCAA...")
+                print("Governing body dropdown element located...")
                 select = Select(gb_select_elem)
-                select.select_by_value("3")  # 3 is the value for NCAA
-                print("NCAA governing body selected successfully.")
+                
+                if self.league == 'hs':
+                    # For HS, search for the governing body by text
+                    found = False
+                    for option in select.options:
+                        option_text = option.text.strip()
+                        # For HS Kentucky, check for various forms
+                        if self.state == 'KY':
+                            if ("Kentucky" in option_text or 
+                                "KHSAA" in option_text.upper() or
+                                option_text == "Kentucky High School Athletic Association"):
+                                select.select_by_value(option.get_attribute("value"))
+                                found = True
+                                print(f"Selected governing body: {option_text}")
+                                break
+                        # For other states, use exact match
+                        elif self.state in option_text:
+                            select.select_by_value(option.get_attribute("value"))
+                            found = True
+                            print(f"Selected governing body: {option_text}")
+                            break
+                    
+                    if not found:
+                        print(f"Warning: Could not find governing body for {self.state} in dropdown")
+                        print("Available options:")
+                        for option in select.options:
+                            print(f"  - {option.text}")
+                        raise Exception(f"Could not find governing body for {self.state}")
+                else:  # ncaa
+                    select.select_by_value("3")  # 3 is the value for NCAA
+                    print("NCAA governing body selected successfully.")
             except Exception as e:
-                print(f"Error while selecting NCAA from governing body dropdown: {e}")
+                print(f"Error while selecting governing body from dropdown: {e}")
                 raise
             
             # Click the Login button to submit
@@ -752,13 +841,19 @@ class WrestlingScraper:
             return False
 
     def get_teams(self):
-        """Get list of teams from the D1 JSON file or fall back to scraping from the season page."""
+        """Get list of teams from the pre-scraped JSON file or fall back to scraping from the season page."""
         try:
-            # First, try to load teams from the pre-scraped D1 JSON file
-            team_list_file = Path(f"data/team_lists/{self.season_year}/ncaa_d1_teams.json")
+            # Determine team list file path based on league type
+            if self.league == 'hs':
+                # HS teams: data/team_lists/hs_ky_boys/teams.json or data/team_lists/hs_ky_girls/teams.json
+                team_list_file = Path(f"data/team_lists/hs_{self.state.lower()}_{self.gender}/teams.json")
+            else:  # ncaa
+                # NCAA teams: data/team_lists/{season_year}/ncaa_d1_teams.json
+                team_list_file = Path(f"data/team_lists/{self.season_year}/ncaa_d1_teams.json")
             
             if team_list_file.exists():
-                print(f"Loading teams from pre-scraped D1 list: {team_list_file}")
+                league_label = f"{self.league.upper()}" if self.league == 'ncaa' else f"{self.state} HS {self.gender.capitalize()}"
+                print(f"Loading teams from pre-scraped {league_label} list: {team_list_file}")
                 with open(team_list_file, 'r') as f:
                     teams = json.load(f)
                 
@@ -1998,8 +2093,15 @@ if __name__ == "__main__":
     # Parse command line arguments
     args = parse_args()
     
-    # Create scraper with specified max_teams and season
-    scraper = WrestlingScraper(max_teams=args.teams, season_year=args.season, headless=args.headless)
+    # Create scraper with specified parameters
+    scraper = WrestlingScraper(
+        max_teams=args.teams, 
+        season_year=args.season, 
+        headless=args.headless,
+        league=args.league,
+        state=args.state,
+        gender=args.gender
+    )
     
     # Run the test parser first
     scraper.test_parser()
