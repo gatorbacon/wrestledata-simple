@@ -192,6 +192,17 @@ function formatWrestlerName(name) {
   return name.trim();
 }
 
+// Format name as "F. Lastname" for mobile display
+function formatWrestlerNameAbbreviated(name) {
+  if (!name) return "—";
+  const trimmed = name.trim();
+  const parts = trimmed.split(/\s+/);
+  if (parts.length < 2) return trimmed; // Single name, return as-is
+  const firstInitial = parts[0][0] + ".";
+  const lastName = parts[parts.length - 1];
+  return `${firstInitial} ${lastName}`;
+}
+
 // Format wrestler name for column header (initials or short)
 function formatColumnHeader(name) {
   if (!name) return "—";
@@ -688,6 +699,8 @@ function renderMatrix(matrixData) {
   // Set grid template columns
   const colCount = wrestlers.length + 1; // +1 for row headers column
   grid.style.gridTemplateColumns = `240px repeat(${wrestlers.length}, 40px)`;
+  // Set CSS variable for mobile media query
+  grid.style.setProperty('--col-count', wrestlers.length.toString());
   
   // Create corner cell
   const corner = document.createElement("div");
@@ -721,6 +734,8 @@ function renderMatrix(matrixData) {
     const nameSpan = document.createElement("span");
     nameSpan.className = "name";
     nameSpan.textContent = formatWrestlerName(rowWrestler.name);
+    // Store abbreviated version for mobile CSS
+    nameSpan.setAttribute("data-name-abbreviated", formatWrestlerNameAbbreviated(rowWrestler.name));
     
     rowHeader.appendChild(rankSpan);
     rowHeader.appendChild(nameSpan);

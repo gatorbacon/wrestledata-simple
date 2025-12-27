@@ -120,6 +120,14 @@ a:hover {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+}
+
 .header-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -487,6 +495,292 @@ a:hover {
   .header-right {
     order: 1;
     margin-left: auto;
+  }
+}
+
+/* Mobile Header (≤768px) - Clean single row */
+@media (max-width: 768px) {
+  .header-container {
+    height: 56px;
+    padding: 0 var(--pad-md);
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  /* Hide desktop navigation elements */
+  .header-nav {
+    display: none !important;
+  }
+
+  .header-search {
+    display: none !important;
+  }
+
+  .header-right {
+    display: none !important;
+  }
+
+  /* Show mobile icons */
+  .header-mobile-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .mobile-icon-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    transition: opacity 0.15s ease;
+  }
+
+  .mobile-icon-btn:hover {
+    opacity: 0.7;
+  }
+
+  .mobile-icon-btn:active {
+    opacity: 0.5;
+  }
+
+  .mobile-icon {
+    display: block;
+    line-height: 1;
+  }
+
+  /* Mobile Search Overlay */
+  .mobile-search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .mobile-search-content {
+    padding: var(--pad-lg);
+    max-width: 100%;
+  }
+
+  .mobile-search-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: var(--pad-md);
+  }
+
+  .mobile-search-input {
+    flex: 1;
+    padding: 12px 16px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--r-sm);
+    color: var(--text);
+    font-size: 1rem;
+    font-family: inherit;
+  }
+
+  .mobile-search-input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .mobile-search-close {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 8px;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-search-dropdown {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--r-sm);
+    padding: 8px;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Mobile search dropdown uses same styles as desktop - no overrides needed */
+
+  /* Mobile Menu Overlay */
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .mobile-menu-content {
+    padding: var(--pad-lg);
+    max-width: 100%;
+  }
+
+  .mobile-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--pad-lg);
+    padding-bottom: var(--pad-md);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mobile-menu-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .mobile-menu-close {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 8px;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Mobile Menu Sections (Accordion) */
+  .mobile-menu-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .mobile-menu-section-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    min-height: 48px;
+    transition: color 0.15s ease;
+    font-family: inherit;
+  }
+
+  .mobile-menu-section-header:hover {
+    color: var(--accent);
+  }
+
+  .mobile-menu-section-header:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+  }
+
+  .mobile-menu-chevron {
+    font-size: 0.875rem;
+    color: var(--muted);
+    transition: transform 0.2s ease, color 0.15s ease;
+    flex-shrink: 0;
+    margin-left: 12px;
+  }
+
+  .mobile-menu-section-header[aria-expanded="true"] .mobile-menu-chevron {
+    color: var(--accent);
+  }
+
+  .mobile-menu-section-content {
+    display: none;
+    padding-left: 20px;
+    padding-bottom: 8px;
+  }
+
+  .mobile-menu-section-header[aria-expanded="true"] + .mobile-menu-section-content {
+    display: block;
+  }
+
+  /* Mobile Menu Items */
+  .mobile-menu-item {
+    display: block;
+    padding: 16px 0;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    transition: color 0.15s ease;
+  }
+
+  .mobile-menu-item:hover {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .mobile-menu-item--child {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    padding-left: 20px;
+    color: var(--muted);
+  }
+
+  .mobile-menu-item--child:hover {
+    color: var(--text);
+  }
+
+  .mobile-menu-item--disabled {
+    color: var(--muted);
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .mobile-menu-section:last-child,
+  .mobile-menu-item:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Desktop: Hide mobile icons */
+@media (min-width: 769px) {
+  .header-mobile-icons {
+    display: none !important;
+  }
+
+  .mobile-search-overlay,
+  .mobile-menu-overlay {
+    display: none !important;
   }
 }
 
@@ -870,6 +1164,20 @@ a:hover {
   white-space: nowrap;
 }
 
+/* Mobile: Show abbreviated name (first initial + last name) */
+@media (max-width: 768px) {
+  .matrix-row-header .name {
+    font-size: 0; /* Hide original text */
+  }
+  
+  .matrix-row-header .name::before {
+    content: attr(data-name-abbreviated);
+    font-size: 0.75rem; /* Restore font size for abbreviated version */
+    font-weight: 500;
+    color: var(--text);
+  }
+}
+
 .matrix-col-header {
   position: sticky;
   top: 0;
@@ -1058,6 +1366,121 @@ a:hover {
   
   .matrix-grid {
     grid-template-columns: 180px repeat(var(--col-count), 40px) !important;
+  }
+  
+  /* Homepage matrix: update grid template for mobile */
+  .matrix-grid-static {
+    grid-template-columns: 180px repeat(var(--col-count), 40px) !important;
+  }
+}
+
+/* Mobile-only front page matrix compression (≈480px max width) */
+@media (max-width: 500px) {
+  /* Force matrix container to viewport width, no horizontal scroll */
+  .hero-matrix-wrapper {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow-x: hidden;
+  }
+  
+  .hero-matrix-link {
+    overflow-x: hidden;
+  }
+  
+  /* Dynamic grid: column 0 (corner + row headers) + 7 matrix columns (mobile only) */
+  .matrix-grid-static {
+    width: 100vw;
+    max-width: 100vw;
+    overflow: visible;
+    /* Grid columns: column 0 (130px for row headers) + 7 matrix columns */
+    grid-template-columns: 130px repeat(7, minmax(30px, 1fr)) !important;
+  }
+  
+  /* Fixed row heights for all rows */
+  .matrix-grid-static .matrix-row-header,
+  .matrix-grid-static .matrix-col-header,
+  .matrix-grid-static .matrix-cell {
+    height: 28px;
+    min-height: 28px;
+    max-height: 28px;
+    line-height: 28px;
+  }
+  
+  /* Name column: fixed width, truncate with ellipsis */
+  .matrix-grid-static .matrix-row-header {
+    width: 130px;
+    max-width: 130px;
+    padding: 0 8px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .matrix-grid-static .matrix-row-header .rank {
+    font-size: 0.7rem;
+    min-width: 20px;
+    flex-shrink: 0;
+  }
+  
+  .matrix-grid-static .matrix-row-header .name {
+    font-size: 0.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+  }
+  
+  /* Ensure names are visible on mobile (override any hiding) */
+  .matrix-grid-static .matrix-row-header .name::before {
+    display: none !important;
+  }
+  
+  .matrix-grid-static .matrix-row-header .name {
+    font-size: 0.75rem !important;
+    color: var(--text) !important;
+  }
+  
+  /* Remove text content from matrix cells (color-only encoding) */
+  .matrix-grid-static .matrix-cell {
+    font-size: 0 !important;
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Column headers: smaller font, no wrapping */
+  .matrix-grid-static .matrix-col-header {
+    font-size: 0.65rem;
+    padding: 0 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+  
+  /* Corner cell is invisible but still in grid (0px width) */
+  .matrix-grid-static .matrix-corner {
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    visibility: hidden !important;
+    overflow: hidden !important;
+  }
+  
+  /* Row headers are in column 1 (after invisible corner in column 0) */
+  .matrix-grid-static .matrix-row-header {
+    grid-column: 1;
+  }
+  
+  /* Prevent any wrapping or reflow */
+  .matrix-grid-static * {
+    box-sizing: border-box;
   }
 }
 
@@ -3710,6 +4133,15 @@ td {
   padding: 4px 8px;
 }
 
+/* Hide corner cell on homepage matrix (needed for grid structure but not visible) */
+.matrix-grid-static .matrix-corner {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: none;
+}
+
 .hero-mi-section {
   display: flex;
   flex-direction: column;
@@ -3739,11 +4171,12 @@ td {
 
 .mi-list-container {
   flex: 1;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) 120px 70px; /* Rank | Name | Team | Value */
   padding: 4px 0;
   overflow: hidden; /* Hide overflow, visibility controlled by JS */
   position: relative; /* For fade positioning */
+  gap: 0;
 }
 
 /* Bottom fade for MI list only */
@@ -3759,37 +4192,47 @@ td {
   z-index: 1;
 }
 
-
 .mi-row {
-  display: flex;
-  align-items: center;
-  height: 34px;
-  min-height: 34px;
-  padding: 0 8px;
-  gap: 12px;
+  display: contents; /* Children become direct grid items */
 }
 
 .mi-row-rank {
+  grid-column: 1;
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--muted);
-  min-width: 20px;
-  text-align: right;
+  text-align: center;
+  padding: 0 8px;
+  height: 34px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .mi-row-name {
+  grid-column: 2;
   font-size: 0.75rem;
   font-weight: 400;
   color: var(--text);
-  flex: 1;
+  text-align: left;
+  padding: 0 8px;
+  height: 34px;
+  line-height: 34px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 
 .mi-row-name a {
   color: var(--text);
   text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .mi-row-name a:hover {
@@ -3798,22 +4241,75 @@ td {
 }
 
 .mi-row-team {
+  grid-column: 3;
   font-size: 0.75rem;
   font-weight: 400;
   color: var(--muted);
-  min-width: 80px;
+  text-align: left;
+  padding: 0 8px;
+  height: 34px;
+  line-height: 34px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 
 .mi-row-value {
+  grid-column: 4;
   font-size: 0.75rem;
   font-weight: 400;
   color: var(--text);
   font-variant-numeric: tabular-nums;
   text-align: right;
-  min-width: 50px;
+  padding: 0 8px;
+  height: 34px;
+  line-height: 34px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Container-level vertical dividers created via wrapper element */
+.mi-dividers {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mi-dividers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--divider-1, 32px);
+  width: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.mi-dividers::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--divider-2, 0px);
+  width: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.mi-divider-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
 }
 
 /* SECTION 2: SECOND ROW - THREE CARDS */

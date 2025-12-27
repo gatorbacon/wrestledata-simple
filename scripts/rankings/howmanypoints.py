@@ -138,62 +138,20 @@ def main() -> None:
         print("No scored matches with non-zero wins/losses were found.")
         return
 
-    # Detect a 100% tail: the smallest points value P such that
-    # win_pct(P) == 100 and for all Q > P in used_points, win_pct(Q) == 100.
-    # Only collapse if there is at least one point above P in that tail.
-    tail_start: Optional[int] = None
-    n_pts = len(used_points)
-    for idx, pts in enumerate(used_points):
-        if win_pct_by_pts[pts] < 100.0:
-            continue
-        # Check if all subsequent points are also 100%
-        all_tail_100 = True
-        for later in used_points[idx:]:
-            if win_pct_by_pts.get(later, 0.0) < 100.0:
-                all_tail_100 = False
-                break
-        if all_tail_100 and idx < n_pts - 1:
-            tail_start = pts
-            break
-
-    # Build list of report rows so we can both print and emit HTML.
+    # Build list of report rows - show every single number individually
     # Each row is (label, wins, losses, win_pct)
     rows: List[Tuple[str, int, int, float]] = []
 
-    if tail_start is None:
-        # No collapsible 100% tail; add each used point separately.
-        for pts in used_points:
-            rec = stats[pts]
-            wins = rec["wins"]
-            losses = rec["losses"]
-            total = wins + losses
-            if total == 0:
-                continue
-            win_pct = win_pct_by_pts[pts]
-            rows.append((str(pts), wins, losses, win_pct))
-    else:
-        tail_index = used_points.index(tail_start)
-        # Head (before tail)
-        for pts in used_points[:tail_index]:
-            rec = stats[pts]
-            wins = rec["wins"]
-            losses = rec["losses"]
-            total = wins + losses
-            if total == 0:
-                continue
-            win_pct = win_pct_by_pts[pts]
-            rows.append((str(pts), wins, losses, win_pct))
-
-        # Tail (collapsed)
-        tail_wins = 0
-        tail_losses = 0
-        for pts in used_points[tail_index:]:
-            rec = stats[pts]
-            tail_wins += rec["wins"]
-            tail_losses += rec["losses"]
-        tail_total = tail_wins + tail_losses
-        tail_win_pct = tail_wins / tail_total * 100.0 if tail_total > 0 else 0.0
-        rows.append((f"{tail_start}+", tail_wins, tail_losses, tail_win_pct))
+    # Add each used point separately - no grouping
+    for pts in used_points:
+        rec = stats[pts]
+        wins = rec["wins"]
+        losses = rec["losses"]
+        total = wins + losses
+        if total == 0:
+            continue
+        win_pct = win_pct_by_pts[pts]
+        rows.append((str(pts), wins, losses, win_pct))
 
     # Print to console
     print("Points\tWins\tLosses\tWin%")

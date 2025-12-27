@@ -35,6 +35,17 @@ function formatWrestlerName(name) {
   return name.trim();
 }
 
+// Format name as "F. Lastname" for mobile display
+function formatWrestlerNameAbbreviated(name) {
+  if (!name) return "—";
+  const trimmed = name.trim();
+  const parts = trimmed.split(/\s+/);
+  if (parts.length < 2) return trimmed; // Single name, return as-is
+  const firstInitial = parts[0][0] + ".";
+  const lastName = parts[parts.length - 1];
+  return `${firstInitial} ${lastName}`;
+}
+
 // ========================================
 // REUSABLE: Date-aware minimum match threshold (same as leaderboard)
 // ========================================
@@ -94,26 +105,93 @@ function getCellStyleInfo(cellData, rowWrestlerId, colWrestlerId) {
   return { direction: "neutral", resultType: null, alpha: 1.0, isCO: false };
 }
 
-// Render static matrix (10x10, no hover, clickable)
+// Render static matrix (10x10 desktop, 6x6 mobile, no hover, clickable)
 function renderStaticMatrix(matrixData, containerId, topN = 10) {
   const container = document.getElementById(containerId);
   if (!container || !matrixData) return;
   
-  const wrestlers = (matrixData.wrestlers || []).slice(0, topN);
+  // Check if mobile to determine how many columns to show
+  const isMobile = window.innerWidth <= 500;
+  const displayCount = isMobile ? 7 : topN; // 7 rows/columns on mobile, 10 on desktop
+  
+  const allWrestlers = matrixData.wrestlers || [];
+  const wrestlers = allWrestlers.slice(0, displayCount);
   const matrix = matrixData.matrix || {};
   
   container.innerHTML = "";
   
   // Set grid template columns
-  const colCount = wrestlers.length + 1;
-  container.style.gridTemplateColumns = `240px repeat(${wrestlers.length}, 40px)`;
+  // Grid structure: column 0 = corner + row headers, columns 1-N = column headers + matrix cells
+  if (isMobile) {
+    // Mobile: column 0 (corner 0px + row headers 130px) + 7 matrix columns
+    // Note: corner and row headers share column 0, so we need enough width for row headers
+    container.style.gridTemplateColumns = `130px repeat(7, minmax(0, 1fr))`;
+  } else {
+    // Desktop: column 0 (corner 240px + row headers 240px) + 10 matrix columns
+    container.style.gridTemplateColumns = `240px repeat(${wrestlers.length}, 40px)`;
+  }
+  // Set CSS variable for mobile media query
+  container.style.setProperty('--col-count', displayCount.toString());
   
-  // Create corner cell
+  // Mobile-only: Calculate dynamic column widths to fit viewport
+  function updateMobileMatrixLayout() {
+    if (window.innerWidth > 500) {
+      // Desktop: restore default grid
+      const container = document.getElementById(containerId);
+      if (container && allWrestlers.length >= topN) {
+        container.style.gridTemplateColumns = `240px repeat(${topN}, 40px)`;
+      }
+      return;
+    }
+    
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    // Measure available width (viewport width)
+    const viewportWidth = window.innerWidth;
+    
+    // Name column: 130px max
+    const nameColWidth = 130;
+    
+    // Calculate matrix cell width (remaining space divided by 7)
+    const matrixColWidth = Math.max(30, Math.floor((viewportWidth - nameColWidth) / 7));
+    
+    // Set dynamic grid template (column 0 contains both corner and row headers)
+    container.style.gridTemplateColumns = `${nameColWidth}px repeat(7, ${matrixColWidth}px)`;
+  }
+  
+  // Update on initial render and window resize (orientation change)
+  if (isMobile) {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        updateMobileMatrixLayout();
+      });
+    });
+    
+    // Handle orientation change
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(updateMobileMatrixLayout, 100);
+    });
+  }
+  
+  // Always create corner cell for proper grid structure
+  // On mobile it will be invisible but still occupies grid position (0,0)
   const corner = document.createElement("div");
   corner.className = "matrix-corner";
+  if (isMobile) {
+    // On mobile, make it invisible but keep it in grid flow
+    corner.style.width = "0";
+    corner.style.height = "0";
+    corner.style.padding = "0";
+    corner.style.margin = "0";
+    corner.style.visibility = "hidden";
+    corner.style.overflow = "hidden";
+  }
   container.appendChild(corner);
   
-  // Create column headers
+  // Create column headers (only for displayed wrestlers)
   wrestlers.forEach((wrestler) => {
     const colHeader = document.createElement("div");
     colHeader.className = "matrix-col-header";
@@ -134,6 +212,8 @@ function renderStaticMatrix(matrixData, containerId, topN = 10) {
     const nameSpan = document.createElement("span");
     nameSpan.className = "name";
     nameSpan.textContent = formatWrestlerName(rowWrestler.name);
+    // Store abbreviated version for mobile CSS
+    nameSpan.setAttribute("data-name-abbreviated", formatWrestlerNameAbbreviated(rowWrestler.name));
     
     rowHeader.appendChild(rankSpan);
     rowHeader.appendChild(nameSpan);
@@ -330,13 +410,23 @@ function renderMIGlance(data) {
   
   container.innerHTML = "";
   
+  // Remove any existing divider wrapper
+  const existingDividers = container.querySelector('.mi-dividers');
+  if (existingDividers) {
+    existingDividers.remove();
+  }
+  
   // Data is already filtered by weight and capped to 10 in loadMIData()
   if (data.length === 0) {
     const emptyRow = document.createElement("div");
     emptyRow.className = "mi-row";
-    emptyRow.style.justifyContent = "center";
-    emptyRow.style.color = "var(--muted)";
-    emptyRow.textContent = "No eligible wrestlers";
+    const emptyCell = document.createElement("div");
+    emptyCell.className = "mi-row-name";
+    emptyCell.style.gridColumn = "1 / -1";
+    emptyCell.style.justifyContent = "center";
+    emptyCell.style.color = "var(--muted)";
+    emptyCell.textContent = "No eligible wrestlers";
+    emptyRow.appendChild(emptyCell);
     container.appendChild(emptyRow);
     return;
   }
@@ -381,9 +471,41 @@ function renderMIGlance(data) {
     container.appendChild(row);
   });
   
-  // Calculate visibility after rendering
+  // Calculate visibility and create dividers after rendering
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
+      // Measure grid column boundaries
+      const firstRank = container.querySelector('.mi-row-rank');
+      const firstName = container.querySelector('.mi-row-name');
+      const firstTeam = container.querySelector('.mi-row-team');
+      
+      if (firstRank && firstName && firstTeam) {
+        const rankRect = firstRank.getBoundingClientRect();
+        const nameRect = firstName.getBoundingClientRect();
+        const teamRect = firstTeam.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        
+        // Calculate divider positions relative to container
+        const divider1 = rankRect.right - containerRect.left; // After rank
+        const divider2 = nameRect.right - containerRect.left; // After name
+        const divider3 = teamRect.right - containerRect.left; // After team
+        
+        // Create divider wrapper with three dividers
+        const dividersWrapper = document.createElement("div");
+        dividersWrapper.className = "mi-dividers";
+        dividersWrapper.style.setProperty('--divider-1', `${divider1}px`);
+        dividersWrapper.style.setProperty('--divider-2', `${divider2}px`);
+        dividersWrapper.style.setProperty('--divider-3', `${divider3}px`);
+        
+        // Third divider as child element
+        const divider3El = document.createElement("div");
+        divider3El.className = "mi-divider-3";
+        divider3El.style.left = `${divider3}px`;
+        dividersWrapper.appendChild(divider3El);
+        
+        container.appendChild(dividersWrapper);
+      }
+      
       calculateMIVisibility();
     });
   });
