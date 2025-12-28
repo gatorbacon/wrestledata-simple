@@ -9,21 +9,117 @@ wrestlers and matches by weight class for ranking purposes.
 import json
 import os
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Set, Tuple, Optional
 from collections import defaultdict
+import re
+import hashlib
 
 
-def load_team_data(season: int) -> List[Dict]:
+# Standard weight classes for KY HS Boys
+KY_HS_BOYS_WEIGHTS = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+
+
+def normalize_weight_class_hs_boys(weight_str: str) -> Optional[str]:
+    """
+    Normalize weight class for KY HS Boys to one of the 14 standard weights.
+    
+    Rules:
+    1. Strip prefixes (F, JV, M, etc.) and extract numeric weight
+    2. Map to nearest standard weight class
+    3. Standard weights: 106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285
+    
+    Args:
+        weight_str: Weight class string (e.g., "F145", "215 JV", "f100", "M190")
+        
+    Returns:
+        Normalized weight class string (e.g., "144", "215", "106", "190") or None if invalid
+    """
+    if not weight_str:
+        return None
+    
+    # Strip whitespace and convert to string
+    weight_str = str(weight_str).strip()
+    
+    # Remove common prefixes (F, JV, M, etc.) - case insensitive
+    # Pattern: optional letter(s) at start, then numbers, then optional " JV" or other suffix
+    weight_str = re.sub(r'^[A-Za-z]+', '', weight_str)  # Remove leading letters
+    weight_str = re.sub(r'\s+JV.*$', '', weight_str, flags=re.IGNORECASE)  # Remove " JV" suffix
+    weight_str = re.sub(r'\s+.*$', '', weight_str)  # Remove any remaining suffix
+    
+    # Extract numeric weight
+    try:
+        weight_num = int(weight_str)
+    except ValueError:
+        return None
+    
+    # Map to nearest standard weight
+    # Find the closest standard weight
+    closest_weight = min(KY_HS_BOYS_WEIGHTS, key=lambda x: abs(x - weight_num))
+    
+    return str(closest_weight)
+
+
+def create_synthetic_opponent_id(opponent_name: str, opponent_team: str) -> str:
+    """
+    Create a synthetic ID for an out-of-state opponent based on name and team.
+    This allows us to track out-of-state wrestlers for common opponent analysis.
+    
+    Args:
+        opponent_name: Opponent's name
+        opponent_team: Opponent's team/school
+        
+    Returns:
+        Synthetic ID string (e.g., "OUTSTATE_abc123...")
+    """
+    # Create a hash from name+team to ensure consistency
+    key = f"{opponent_name}|{opponent_team}".lower().strip()
+    hash_obj = hashlib.md5(key.encode('utf-8'))
+    hash_hex = hash_obj.hexdigest()[:12]  # Use first 12 chars of hash
+    return f"OUTSTATE_{hash_hex}"
+
+
+def normalize_weight_class(weight_str: str, league: str = 'ncaa', state: str = None, gender: str = None) -> Optional[str]:
+    """
+    Normalize weight class based on league type.
+    
+    For KY HS Boys, applies special normalization to map to 14 standard weights.
+    For other leagues, returns weight as-is (or with minimal normalization).
+    
+    Args:
+        weight_str: Weight class string
+        league: League type ('ncaa' or 'hs')
+        state: State code (for HS)
+        gender: Gender ('boys' or 'girls', for HS)
+        
+    Returns:
+        Normalized weight class string or None if invalid
+    """
+    if league == 'hs' and state and state.upper() == 'KY' and gender == 'boys':
+        return normalize_weight_class_hs_boys(weight_str)
+    else:
+        # For NCAA and other leagues, return as-is (or with basic normalization)
+        return str(weight_str).strip() if weight_str else None
+
+
+def load_team_data(season: int, league: str = 'ncaa', state: str = None, gender: str = None) -> List[Dict]:
     """
     Load all team data files for a season.
     
     Args:
         season: Season year (e.g., 2026)
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
         
     Returns:
         List of team data dictionaries
     """
-    data_dir = Path(f"mt/processed_data/{season}")
+    # Setup directory based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        data_dir = Path(f"mt/processed_data/hs_{state_lower}_{gender}")
+    else:  # ncaa
+        data_dir = Path(f"mt/processed_data/{season}")
     
     if not data_dir.exists():
         raise FileNotFoundError(f"Data directory not found: {data_dir}")
@@ -42,14 +138,19 @@ def load_team_data(season: int) -> List[Dict]:
     return teams
 
 
-def load_match_overrides(season: int, data_dir: str = "mt/rankings_data") -> Dict[Tuple[str, str, str], Dict]:
+def load_match_overrides(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[Tuple[str, str, str], Dict]:
     """
     Load match overrides for a season.
     
     Returns a dictionary mapping (w1_id, w2_id, date) -> override_dict
     where IDs are normalized (smaller ID first).
     """
-    overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
+    # Setup override path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / "match_overrides.json"
+    else:  # ncaa
+        overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
     override_map = {}
     
     if overrides_path.exists():
@@ -71,7 +172,7 @@ def load_match_overrides(season: int, data_dir: str = "mt/rankings_data") -> Dic
     return override_map
 
 
-def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "mt/rankings_data") -> None:
+def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> None:
     """
     Apply match overrides to deduplicated match data.
     
@@ -83,8 +184,11 @@ def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "m
         data: Dictionary mapping weight_class -> {wrestlers: {}, matches: []}
         season: Season year
         data_dir: Directory containing match_overrides.json
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
     """
-    match_overrides = load_match_overrides(season, data_dir)
+    match_overrides = load_match_overrides(season, data_dir, league=league, state=state, gender=gender)
     
     if not match_overrides:
         return
@@ -125,7 +229,7 @@ def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "m
         print(f"Applied {override_count} match override(s)")
 
 
-def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_dir: str = "mt/rankings_data") -> Dict[str, Dict]:
+def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[str, Dict]:
     """
     Extract all wrestlers and their matches, organized by weight class.
     
@@ -165,11 +269,15 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
             
             # Get or create wrestler info (use ID as key)
             if wrestler_id not in all_wrestlers:
+                # Normalize primary weight class
+                primary_wc = wrestler.get('weight_class', '')
+                normalized_primary_wc = normalize_weight_class(primary_wc, league, state, gender) if primary_wc else ''
+                
                 all_wrestlers[wrestler_id] = {
                     'id': wrestler_id,
                     'name': wrestler_name,
                     'team': team_name,
-                    'weight_class': wrestler.get('weight_class', ''),
+                    'weight_class': normalized_primary_wc or primary_wc,  # Use normalized if available, fallback to original
                     'grade': wrestler.get('grade', ''),
                     'wins': 0,
                     'losses': 0,
@@ -208,38 +316,79 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 if result in ('BYE', 'NoResult') or 'received a bye' in match.get('summary', '').lower():
                     continue
                 
-                # Get opponent ID - CRITICAL: must have valid ID
+                # Get opponent ID and identify opponent from match
                 opponent_id = match.get('opponent_id')
+                winner_name = match.get('winner_name', '')
+                loser_name = match.get('loser_name', '')
+                winner_team = match.get('winner_team', '')
+                loser_team = match.get('loser_team', '')
                 
-                # Skip if opponent doesn't have a valid ID
-                if not opponent_id or opponent_id == 'null' or opponent_id == '':
+                # Determine opponent name and team
+                if winner_name == wrestler_name and winner_team == team_name:
+                    # This wrestler won, opponent is the loser
+                    opponent_name = loser_name
+                    opponent_team = loser_team
+                elif loser_name == wrestler_name and loser_team == team_name:
+                    # This wrestler lost, opponent is the winner
+                    opponent_name = winner_name
+                    opponent_team = winner_team
+                else:
+                    # Can't determine opponent reliably, skip
                     continue
                 
-                # If opponent is not in our D1 wrestler list, we still want the
-                # record (wins/losses) for THIS wrestler to be accurate, but we
-                # cannot use the match for D1 relationships or opponent stats.
+                # For HS: Handle matches with null opponent_id by creating synthetic opponents
+                # For NCAA: Skip matches with null opponent_id (unchanged behavior)
+                if not opponent_id or opponent_id == 'null' or opponent_id == '':
+                    if league == 'hs':
+                        # Create synthetic opponent ID for out-of-state wrestlers
+                        if not opponent_name or not opponent_team:
+                            # Can't create synthetic opponent without name/team
+                            continue
+                        opponent_id = create_synthetic_opponent_id(opponent_name, opponent_team)
+                        
+                        # Add synthetic opponent to all_wrestlers if not already present
+                        if opponent_id not in all_wrestlers:
+                            all_wrestlers[opponent_id] = {
+                                'id': opponent_id,
+                                'name': opponent_name,
+                                'team': opponent_team,
+                                'weight_class': '',  # Will be determined from matches
+                                'grade': '',
+                                'wins': 0,
+                                'losses': 0,
+                                'matches_count': 0,
+                                'is_synthetic': True  # Mark as synthetic for reference
+                            }
+                    else:
+                        # NCAA: Skip matches with null opponent_id (unchanged behavior)
+                        continue
+                
+                # If opponent is not in our wrestler list (for NCAA with valid ID but not in dataset)
+                # For HS, synthetic opponents are already added to all_wrestlers above
                 if opponent_id not in all_wrestlers:
+                    # This only happens for NCAA when opponent has valid ID but isn't in dataset
                     # Build a key so we don't double-count if this match appears
                     # multiple times in the source data.
                     match_date = match.get('date', '')
                     local_key = ('nonD1', wrestler_id, opponent_id, match_date, result)
                     if local_key not in processed_matches_for_stats:
-                        if (match.get('winner_name') == wrestler_name and
-                                match.get('winner_team') == team_name):
+                        if (winner_name == wrestler_name and winner_team == team_name):
                             wrestler_info['wins'] += 1
-                        elif (match.get('loser_name') == wrestler_name and
-                                match.get('loser_team') == team_name):
+                        elif (loser_name == wrestler_name and loser_team == team_name):
                             wrestler_info['losses'] += 1
                         wrestler_info['matches_count'] += 1
                         processed_matches_for_stats.add(local_key)
                     # Do not include this match in wrestler_matches or global
-                    # match lists used for relationships.
+                    # match lists used for relationships (NCAA behavior unchanged).
                     continue
                 
                 # Get the weight class for this match
-                match_weight = match.get('weight', '') or primary_weight_class
-                if not match_weight:
+                match_weight_raw = match.get('weight', '') or primary_weight_class
+                if not match_weight_raw:
                     continue
+                
+                # Normalize weight class for HS Boys
+                match_weight = normalize_weight_class(match_weight_raw, league, state, gender) or match_weight_raw
                 
                 # Store match info for weight-class determination for BOTH wrestlers.
                 # Even if we cannot later determine the winner/loser reliably, these
@@ -248,16 +397,8 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 wrestler_matches[wrestler_id].append((match, match_weight, match_date))
                 wrestler_matches[opponent_id].append((match, match_weight, match_date))
                 
-                # Determine if this wrestler won or lost (using ID-based matching)
-                winner_name = match.get('winner_name', '')
-                loser_name = match.get('loser_name', '')
-                winner_team = match.get('winner_team', '')
-                loser_team = match.get('loser_team', '')
-                
-                # Match using ID, not name
+                # Get opponent info (may be synthetic for HS out-of-state opponents)
                 opponent_info = all_wrestlers[opponent_id]
-                opponent_name = opponent_info['name']
-                opponent_team = opponent_info['team']
                 
                 # Determine winner using ID and, as a fallback, name+team.
                 is_winner = (wrestler_id == match.get('winner_id', '') or 
@@ -324,7 +465,8 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     wrestler_weight_class = {}  # wrestler_id -> assigned weight_class
 
     # Load manual weight overrides (virtual match hints) if present.
-    # File format (mt/rankings_data/{season}/weight_overrides.json):
+    # File format (mt/rankings_data/{season}/weight_overrides.json for NCAA or
+    # mt/rankings_data/hs_{state}_{gender}/weight_overrides.json for HS):
     # {
     #   "overrides": [
     #     {
@@ -340,7 +482,12 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     # These overrides do NOT create real matches; they only influence the
     # weight-assignment algorithm by adding virtual entries to wrestler_matches.
     overrides_by_wrestler: Dict[str, List[Tuple[str, str, int]]] = defaultdict(list)
-    overrides_path = Path("mt/rankings_data") / "weight_overrides.json"
+    # Setup weight overrides path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / "weight_overrides.json"
+    else:  # ncaa
+        overrides_path = Path(data_dir) / str(season) / "weight_overrides.json"
     if overrides_path.exists():
         try:
             with open(overrides_path, "r", encoding="utf-8") as f:
@@ -352,7 +499,9 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 count = int(o.get("matches_equivalent", 5))
                 if not (wid and date and weight):
                     continue
-                overrides_by_wrestler[wid].append((weight, date, count))
+                # Normalize weight before storing
+                normalized_weight = normalize_weight_class(weight, league, state, gender) or weight
+                overrides_by_wrestler[wid].append((normalized_weight, date, count))
         except Exception as e:
             print(f"Warning: Failed to load weight_overrides.json: {e}")
     
@@ -373,13 +522,15 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
         
         # Apply any weight overrides as virtual matches (no effect on stats).
         # Each override adds N synthetic matches at the given weight/date.
+        # Normalize override weights before adding
         for weight, date, count in overrides_by_wrestler.get(wrestler_id, []):
+            normalized_weight = normalize_weight_class(weight, league, state, gender) or weight
             for _ in range(max(0, count)):
-                matches.append((None, weight, date))
+                matches.append((None, normalized_weight, date))
         primary_weight = wrestler_info['weight_class']
         
         if len(matches) == 0:
-            # No matches: use primary weight
+            # No matches: use primary weight (already normalized)
             assigned_weight = primary_weight
         elif len(matches) < 5:
             # Less than 5 matches: use most recent weight
@@ -403,6 +554,9 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
             else:
                 assigned_weight = primary_weight
         
+        # Normalize assigned weight one more time to ensure consistency
+        assigned_weight = normalize_weight_class(assigned_weight, league, state, gender) or assigned_weight
+        
         # Temporary debug for Evan Mougalian
         if wrestler_info.get("name") == "Evan Mougalian":
             debug_list = [(mw, d) for _, mw, d in matches]
@@ -411,6 +565,8 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
         wrestler_weight_class[wrestler_id] = assigned_weight
     
     # Add wrestlers to their assigned weight classes
+    # Note: Synthetic opponents are included here for relationship building (common opponent analysis)
+    # but will be filtered out when generating rankings matrices
     for wrestler_id, assigned_weight in wrestler_weight_class.items():
         if assigned_weight:
             if assigned_weight not in weight_classes:
@@ -467,31 +623,48 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     weight_classes = filtered_weight_classes
     
     # Convert defaultdict to regular dict and filter out empty weight classes
+    # For HS Boys, only keep the 14 standard weight classes
     result = {}
     for wc, data in weight_classes.items():
         if data['wrestlers']:  # Only include weight classes with wrestlers
+            # For KY HS Boys, filter to only standard weights
+            if league == 'hs' and state and state.upper() == 'KY' and gender == 'boys':
+                if wc not in [str(w) for w in KY_HS_BOYS_WEIGHTS]:
+                    # Skip non-standard weights for HS Boys
+                    continue
             result[wc] = {
                 'wrestlers': data['wrestlers'],
                 'matches': data['matches']
             }
     
     # Print summary
+    # Count only non-synthetic wrestlers for summary (these are the rankable wrestlers)
+    non_synthetic_count = sum(1 for w in all_wrestlers.values() if not w.get('is_synthetic', False))
+    synthetic_count = sum(1 for w in all_wrestlers.values() if w.get('is_synthetic', False))
     print(f"\nData Summary:")
-    print(f"Total wrestlers: {len(all_wrestlers)}")
+    print(f"Total wrestlers: {non_synthetic_count} (rankable)")
+    if synthetic_count > 0:
+        print(f"Out-of-state opponents: {synthetic_count} (included in relationships for common opponent analysis, excluded from rankings)")
+    
+    # Count rankable wrestlers per weight class (excluding synthetic)
     for wc in sorted(result.keys()):
-        wrestler_count = len(result[wc]['wrestlers'])
+        rankable_wrestlers = [w for w in result[wc]['wrestlers'].values() if not w.get('is_synthetic', False)]
+        wrestler_count = len(rankable_wrestlers)
         match_count = len(result[wc]['matches'])
         print(f"  {wc}: {wrestler_count} wrestlers, {match_count} matches")
     
     return result
 
 
-def load_season_data(season: int) -> Dict[str, Dict]:
+def load_season_data(season: int, league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[str, Dict]:
     """
     Main function to load all data for a season.
     
     Args:
         season: Season year (e.g., 2026)
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
         
     Returns:
         Dictionary mapping weight_class -> {
@@ -499,16 +672,17 @@ def load_season_data(season: int) -> Dict[str, Dict]:
             'matches': [match_info]
         }
     """
-    print(f"Loading data for season {season}...")
+    league_label = f"{league.upper()}" if league == 'ncaa' else f"{state} HS {gender.capitalize()}" if league == 'hs' else league
+    print(f"Loading data for season {season} ({league_label})...")
     
     # Load team data
-    teams = load_team_data(season)
+    teams = load_team_data(season, league=league, state=state, gender=gender)
     
     if not teams:
-        raise ValueError(f"No team data found for season {season}")
+        raise ValueError(f"No team data found for season {season} ({league_label})")
     
-    # Extract wrestlers and matches (pass season for match overrides)
-    data_by_weight = extract_wrestlers_and_matches(teams, season=season)
+    # Extract wrestlers and matches (pass season and league info for match overrides)
+    data_by_weight = extract_wrestlers_and_matches(teams, season=season, league=league, state=state, gender=gender)
     
     return data_by_weight
 
@@ -556,7 +730,7 @@ def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
         wc_data["matches"] = new_matches
 
 
-def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/rankings_data"):
+def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None):
     """
     Save the loaded data to JSON files for inspection.
     
@@ -564,8 +738,16 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
         data: Data dictionary from load_season_data
         season: Season year
         output_dir: Directory to save files
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
     """
-    output_path = Path(output_dir) / str(season)
+    # Setup output path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}"
+    else:  # ncaa
+        output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
     # First, de-duplicate matches across all weight classes so that any given
@@ -574,7 +756,7 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
     
     # Apply match overrides AFTER deduplication
     # This ensures overrides are applied to the final deduplicated matches
-    apply_match_overrides(data, season, output_dir)
+    apply_match_overrides(data, season, output_dir, league=league, state=state, gender=gender)
     
     # Save summary file
     summary = {
@@ -613,9 +795,26 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Load wrestling data from processed JSON files')
     parser.add_argument('-season', type=int, required=True, help='Season year (e.g., 2026)')
     parser.add_argument('-save', action='store_true', help='Save loaded data to JSON files for inspection')
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
     args = parser.parse_args()
     
-    data = load_season_data(args.season)
+    # Validate HS parameters
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("-state is required when -league=hs")
+        state_upper = args.state.upper()
+        if state_upper != 'KY':
+            raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
+        if not args.gender:
+            raise ValueError("-gender is required when -league=hs")
+        if args.gender not in ['boys', 'girls']:
+            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
+    
+    data = load_season_data(args.season, league=args.league, state=args.state, gender=args.gender)
     
     # Print a sample of the data structure
     if data:
@@ -648,5 +847,5 @@ if __name__ == "__main__":
     
     # Save data if requested
     if args.save:
-        save_loaded_data(data, args.season)
+        save_loaded_data(data, args.season, league=args.league, state=args.state, gender=args.gender)
 

@@ -360,18 +360,26 @@ def build_relationships_for_weight_class(weight_class_data: Dict) -> Dict:
     }
 
 
-def load_data_from_files(season: int, data_dir: str = "mt/rankings_data") -> Dict[str, Dict]:
+def load_data_from_files(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[str, Dict]:
     """
     Load previously saved data from JSON files.
     
     Args:
         season: Season year
         data_dir: Directory containing saved data
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
         
     Returns:
         Dictionary mapping weight_class -> weight_class_data
     """
-    data_path = Path(data_dir) / str(season)
+    # Setup data path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}"
+    else:  # ncaa
+        data_path = Path(data_dir) / str(season)
     
     if not data_path.exists():
         raise FileNotFoundError(f"Data directory not found: {data_path}")
@@ -386,24 +394,28 @@ def load_data_from_files(season: int, data_dir: str = "mt/rankings_data") -> Dic
     return data_by_weight
 
 
-def build_all_relationships(season: int, data_dir: str = "mt/rankings_data") -> Dict[str, Dict]:
+def build_all_relationships(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[str, Dict]:
     """
     Build relationships for all weight classes.
     
     Args:
         season: Season year
         data_dir: Directory containing saved data
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
         
     Returns:
         Dictionary mapping weight_class -> relationships_data
     """
-    print(f"Building relationships for season {season}...")
+    league_label = f"{league.upper()}" if league == 'ncaa' else f"{state} HS {gender.capitalize()}" if league == 'hs' else league
+    print(f"Building relationships for season {season} ({league_label})...")
     
     # Load data
-    data_by_weight = load_data_from_files(season, data_dir)
+    data_by_weight = load_data_from_files(season, data_dir, league=league, state=state, gender=gender)
     
     if not data_by_weight:
-        raise ValueError(f"No data found for season {season}")
+        raise ValueError(f"No data found for season {season} ({league_label})")
     
     # Build relationships for each weight class
     relationships_by_weight = {}
@@ -417,7 +429,7 @@ def build_all_relationships(season: int, data_dir: str = "mt/rankings_data") -> 
     return relationships_by_weight
 
 
-def save_relationships(relationships_by_weight: Dict[str, Dict], season: int, output_dir: str = "mt/rankings_data"):
+def save_relationships(relationships_by_weight: Dict[str, Dict], season: int, output_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None):
     """
     Save relationships to JSON files.
     
@@ -425,8 +437,16 @@ def save_relationships(relationships_by_weight: Dict[str, Dict], season: int, ou
         relationships_by_weight: Dictionary from build_all_relationships
         season: Season year
         output_dir: Directory to save files
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
     """
-    output_path = Path(output_dir) / str(season)
+    # Setup output path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}"
+    else:  # ncaa
+        output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
     # Convert tuple keys to strings for JSON serialization
@@ -461,12 +481,29 @@ if __name__ == "__main__":
     parser.add_argument('-season', type=int, required=True, help='Season year (e.g., 2026)')
     parser.add_argument('-data-dir', default='mt/rankings_data', help='Directory containing loaded data')
     parser.add_argument('-save', action='store_true', help='Save relationships to JSON files')
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
     args = parser.parse_args()
     
-    relationships = build_all_relationships(args.season, args.data_dir)
+    # Validate HS parameters
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("-state is required when -league=hs")
+        state_upper = args.state.upper()
+        if state_upper != 'KY':
+            raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
+        if not args.gender:
+            raise ValueError("-gender is required when -league=hs")
+        if args.gender not in ['boys', 'girls']:
+            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
+    
+    relationships = build_all_relationships(args.season, args.data_dir, league=args.league, state=args.state, gender=args.gender)
     
     if args.save:
-        save_relationships(relationships, args.season, args.data_dir)
+        save_relationships(relationships, args.season, args.data_dir, league=args.league, state=args.state, gender=args.gender)
     
     # Print summary
     print(f"\n=== Summary ===")

@@ -219,13 +219,21 @@ def build_matrix_data(
     starter_map: Dict[str, bool] = relationships_data.get("starter_map", {})
     placement_notes = placement_notes or {}
 
+    # Filter out synthetic opponents (out-of-state) - they exist only for common opponent analysis
+    # Synthetic opponents have IDs starting with "OUTSTATE_"
+    rankable_wrestlers = {
+        wid: winfo for wid, winfo in wrestlers.items()
+        if not winfo.get('is_synthetic', False) and not str(wid).startswith('OUTSTATE_')
+    }
+    
     if ranking_order:
         # Use saved ranking order where available
         wrestler_list = []
         seen = set()
         for wid in ranking_order:
-            if wid in wrestlers and wid not in seen:
-                info = dict(wrestlers[wid])
+            # Only include if wrestler exists and is rankable (not synthetic)
+            if wid in rankable_wrestlers and wid not in seen:
+                info = dict(rankable_wrestlers[wid])
                 info['is_unranked'] = False
                 note = placement_notes.get(wid)
                 if note:
@@ -233,7 +241,7 @@ def build_matrix_data(
                 wrestler_list.append((wid, info))
                 seen.add(wid)
         # Append any wrestlers not present in the ranking file
-        for wid, winfo in sorted(wrestlers.items(), key=lambda x: x[0]):
+        for wid, winfo in sorted(rankable_wrestlers.items(), key=lambda x: x[0]):
             if wid not in seen:
                 info = dict(winfo)
                 info['is_unranked'] = True
@@ -254,7 +262,7 @@ def build_matrix_data(
             return (-win_pct, -wins, wid)
 
         wrestler_list = []
-        for wid, winfo in sorted(wrestlers.items(), key=_win_key):
+        for wid, winfo in sorted(rankable_wrestlers.items(), key=_win_key):
             info = dict(winfo)
             info['is_unranked'] = True
             note = placement_notes.get(wid)
@@ -1528,7 +1536,10 @@ def generate_matrix_for_weight_class(
     weight_class: str,
     season: int,
     data_dir: str = "mt/rankings_data",
-    output_dir: str = "mt/rankings_html"
+    output_dir: str = "mt/rankings_html",
+    league: str = 'ncaa',
+    state: str = None,
+    gender: str = None,
 ) -> Path:
     """
     Generate HTML matrix for a single weight class.
@@ -1538,12 +1549,22 @@ def generate_matrix_for_weight_class(
         season: Season year
         data_dir: Directory containing relationship files
         output_dir: Directory to save HTML files
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
         
     Returns:
         Path to generated HTML file
     """
+    # Setup data path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}"
+    else:  # ncaa
+        data_path = Path(data_dir) / str(season)
+    
     # Load relationships
-    rel_file = Path(data_dir) / str(season) / f"relationships_{weight_class}.json"
+    rel_file = data_path / f"relationships_{weight_class}.json"
     
     if not rel_file.exists():
         raise FileNotFoundError(f"Relationship file not found: {rel_file}")
@@ -1554,7 +1575,7 @@ def generate_matrix_for_weight_class(
     # If a manual rankings file exists, load it, attach ordering, and
     # derive starter status per wrestler (best-ranked per team),
     # honoring any season-wide starter overrides.
-    rankings_file = Path(data_dir) / str(season) / f"rankings_{weight_class}.json"
+    rankings_file = data_path / f"rankings_{weight_class}.json"
     # Default: no forced backups unless overrides/rankings exist.
     force_backup_ids = set()
     if rankings_file.exists():
@@ -1566,7 +1587,7 @@ def generate_matrix_for_weight_class(
             relationships_data['ranking_order'] = ranking_ids
 
             # Load global starter overrides for this season, if present.
-            overrides_path = Path(data_dir) / str(season) / "starter_overrides.json"
+            overrides_path = data_path / "starter_overrides.json"
             if overrides_path.exists():
                 try:
                     with open(overrides_path, 'r', encoding='utf-8') as of:
@@ -1612,8 +1633,8 @@ def generate_matrix_for_weight_class(
         except Exception as e:
             print(f"Warning: Failed to load rankings file {rankings_file}: {e}")
 
-    # Load placement notes (season-agnostic, keyed by wrestler_id)
-    placement_notes_path = Path(data_dir) / "placement_notes.json"
+    # Load placement notes from league-specific directory
+    placement_notes_path = data_path / "placement_notes.json"
     placement_notes_map: Dict[str, str] = {}
     if placement_notes_path.exists():
         try:
@@ -1628,7 +1649,7 @@ def generate_matrix_for_weight_class(
             print(f"Warning: Failed to load placement notes from {placement_notes_path}: {e}")
     
     # Load ranking bands data (hard_min, hard_max, soft_min, soft_max, recommended_rank)
-    ranking_bands_path = Path(data_dir) / str(season) / f"ranking_bands_{weight_class}.json"
+    ranking_bands_path = data_path / f"ranking_bands_{weight_class}.json"
     ranking_bands_map: Dict[str, Dict[str, int]] = {}
     if ranking_bands_path.exists():
         try:
@@ -1660,8 +1681,12 @@ def generate_matrix_for_weight_class(
         ranking_bands_map=ranking_bands_map,
     )
     
-    # Save HTML file
-    output_path = Path(output_dir) / str(season)
+    # Setup output path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}"
+    else:  # ncaa
+        output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
     html_file = output_path / f"matrix_{weight_class}.html"
@@ -1674,12 +1699,20 @@ def generate_matrix_for_weight_class(
 def archive_rankings_snapshot(
     season: int,
     data_dir: str = "mt/rankings_data",
+    league: str = 'ncaa',
+    state: str = None,
+    gender: str = None,
 ) -> Path | None:
     """
     Archive current rankings_{weight}.json files for a season into a
     timestamped folder so we can analyze movement over time later.
     """
-    base_dir = Path(data_dir) / str(season)
+    # Setup base directory based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        base_dir = Path(data_dir) / f"hs_{state_lower}_{gender}"
+    else:  # ncaa
+        base_dir = Path(data_dir) / str(season)
     if not base_dir.exists():
         print(f"No rankings directory found to archive for season {season}: {base_dir}")
         return None
@@ -1706,7 +1739,10 @@ def archive_rankings_snapshot(
 def generate_all_matrices(
     season: int,
     data_dir: str = "mt/rankings_data",
-    output_dir: str = "mt/rankings_html"
+    output_dir: str = "mt/rankings_html",
+    league: str = 'ncaa',
+    state: str = None,
+    gender: str = None,
 ) -> List[Path]:
     """
     Generate HTML matrices for all weight classes.
@@ -1715,11 +1751,19 @@ def generate_all_matrices(
         season: Season year
         data_dir: Directory containing relationship files
         output_dir: Directory to save HTML files
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
         
     Returns:
         List of paths to generated HTML files
     """
-    data_path = Path(data_dir) / str(season)
+    # Setup data path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}"
+    else:  # ncaa
+        data_path = Path(data_dir) / str(season)
     
     if not data_path.exists():
         raise FileNotFoundError(f"Data directory not found: {data_path}")
@@ -1733,7 +1777,7 @@ def generate_all_matrices(
         
         try:
             html_file = generate_matrix_for_weight_class(
-                weight_class, season, data_dir, output_dir
+                weight_class, season, data_dir, output_dir, league=league, state=state, gender=gender
             )
             html_files.append(html_file)
             print(f"  Saved to {html_file}")
@@ -1751,19 +1795,40 @@ if __name__ == "__main__":
     parser.add_argument('-weight-class', help='Specific weight class to generate (default: all)')
     parser.add_argument('-data-dir', default='mt/rankings_data', help='Directory containing relationship data')
     parser.add_argument('-output-dir', default='mt/rankings_html', help='Directory to save HTML files')
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
     args = parser.parse_args()
     
+    # Validate HS parameters
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("-state is required when -league=hs")
+        state_upper = args.state.upper()
+        if state_upper != 'KY':
+            raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
+        if not args.gender:
+            raise ValueError("-gender is required when -league=hs")
+        if args.gender not in ['boys', 'girls']:
+            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
+    
     # Archive current rankings JSON files before generating matrices
-    archive_rankings_snapshot(args.season, args.data_dir)
+    archive_rankings_snapshot(args.season, args.data_dir, league=args.league, state=args.state, gender=args.gender)
     
     if args.weight_class:
         # Generate single weight class
         html_file = generate_matrix_for_weight_class(
-            args.weight_class, args.season, args.data_dir, args.output_dir
+            args.weight_class, args.season, args.data_dir, args.output_dir,
+            league=args.league, state=args.state, gender=args.gender
         )
         print(f"Generated matrix: {html_file}")
     else:
         # Generate all weight classes
-        html_files = generate_all_matrices(args.season, args.data_dir, args.output_dir)
+        html_files = generate_all_matrices(
+            args.season, args.data_dir, args.output_dir,
+            league=args.league, state=args.state, gender=args.gender
+        )
         print(f"\nGenerated {len(html_files)} matrix files")
 
