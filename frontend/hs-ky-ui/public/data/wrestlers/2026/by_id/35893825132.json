@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "35893825132",
+  "name": "John Wright",
+  "team": "Lock Haven",
+  "team_slug": "lock_haven",
+  "team_rank": 54,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 5.0,
+    "pd7": -5.0,
+    "si_plus": 67.1,
+    "df_plus": 101.4,
+    "apr_plus": 92.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -8.003,
+      "matches": 2,
+      "rank_weight": 184,
+      "rank_overall": 2142,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34934117132",
+      "opponent_name": "Trey Myers",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 65,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": -6.79
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34951071132",
+      "opponent_name": "tyson clear",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "Kent State Open 2",
+      "mv_impact": -9.22
+    }
+  ]
+}

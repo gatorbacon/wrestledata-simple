@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34936093132",
+  "name": "Aiden Simmons",
+  "team": "Cal Poly",
+  "team_slug": "cal_poly",
+  "team_rank": 28,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 2.0,
+    "pd7": 3.0,
+    "si_plus": 96.7,
+    "df_plus": 112.4,
+    "apr_plus": 93.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.056,
+      "matches": 3,
+      "rank_weight": 46,
+      "rank_overall": 461,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34962139132",
+      "opponent_rank": 58,
+      "opponent_name": "Santino Sanchez",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34950658132",
+      "opponent_rank": 39,
+      "opponent_name": "Jesse Vasquez",
+      "method": "Dec 2-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34950658132",
+      "opponent_name": "Jesse Vasquez",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 64,
+      "opponent_weight": 141,
+      "opponent_rank": 39,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "vs. California Baptist",
+      "mv_impact": -2.42
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934757132",
+      "opponent_name": "DJ Gillett",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 21,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": 3.18
+    },
+    {
+      "date": "2025-11-14",
+      "opponent_id": "34962139132",
+      "opponent_name": "Santino Sanchez",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 63,
+      "opponent_weight": 141,
+      "opponent_rank": 58,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Cal Poly",
+      "mv_impact": 2.41
+    }
+  ]
+}

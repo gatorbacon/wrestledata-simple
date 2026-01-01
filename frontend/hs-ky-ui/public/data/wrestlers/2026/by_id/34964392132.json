@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34964392132",
+  "name": "Meyer Shapiro",
+  "team": "Cornell",
+  "team_slug": "cornell",
+  "team_rank": 9,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 5,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 11.14,
+    "pa7": 2.02,
+    "pd7": 9.12,
+    "si_plus": 121.3,
+    "df_plus": 117.0,
+    "apr_plus": 99.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 6.158,
+      "matches": 2,
+      "rank_weight": 1,
+      "rank_overall": 3,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34952082132",
+      "opponent_rank": 6,
+      "opponent_name": "Kannon Webster",
+      "method": "Dec 2-1"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34945367132",
+      "opponent_name": "jaivon jones",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 14,
+      "opponent_weight": 157,
+      "opponent_rank": 21,
+      "result": "W",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "6:54",
+      "event": "Dual Meet (WS-95989)",
+      "mv_impact": 6.4
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34952082132",
+      "opponent_name": "Kannon Webster",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 10,
+      "opponent_weight": 157,
+      "opponent_rank": 6,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "vs. Illinois",
+      "mv_impact": 5.92
+    }
+  ]
+}

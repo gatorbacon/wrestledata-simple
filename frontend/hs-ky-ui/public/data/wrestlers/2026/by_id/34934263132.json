@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34934263132",
+  "name": "Malachi Ortiz",
+  "team": "VMI",
+  "team_slug": "vmi",
+  "team_rank": 79,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 65,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 9.08,
+    "pa7": 9.71,
+    "pd7": -0.63,
+    "si_plus": 103.3,
+    "df_plus": 92.1,
+    "apr_plus": 97.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.286,
+      "matches": 5,
+      "rank_weight": 106,
+      "rank_overall": 1146,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34945477132",
+      "opponent_rank": 66,
+      "opponent_name": "Cooper Foster",
+      "method": "Dec 7-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34957603132",
+      "opponent_rank": 55,
+      "opponent_name": "Abram Cline",
+      "method": "Dec 7-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34933569132",
+      "opponent_name": "Diego Sotelo",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 16,
+      "opponent_weight": 125,
+      "opponent_rank": 17,
+      "result": "L",
+      "method": "TF",
+      "score": "18-0",
+      "duration": "2:33",
+      "event": "vs. VMI",
+      "mv_impact": -3.62
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34945477132",
+      "opponent_name": "Cooper Foster",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 58,
+      "opponent_weight": 125,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 2.12
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957603132",
+      "opponent_name": "Abram Cline",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 125,
+      "opponent_rank": 55,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -2.42
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957599132",
+      "opponent_name": "Tyler Garvin",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-10",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -3.18
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34933374132",
+      "opponent_name": "Ryan Messick",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 20,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "19-2",
+      "duration": "5:27",
+      "event": "Southeast Open",
+      "mv_impact": 0.66
+    }
+  ]
+}

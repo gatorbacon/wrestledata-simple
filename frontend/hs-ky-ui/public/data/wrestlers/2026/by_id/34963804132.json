@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34963804132",
+  "name": "Brady Fitz",
+  "team": "Mercyherst",
+  "team_slug": "mercyherst",
+  "team_rank": 73,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.15,
+    "pa7": 25.0,
+    "pd7": -22.85,
+    "si_plus": 91.3,
+    "df_plus": 75.0,
+    "apr_plus": 96.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.943,
+      "matches": 2,
+      "rank_weight": 224,
+      "rank_overall": 2045,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34938654132",
+      "opponent_name": "Jaden Wehler",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 67,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:25",
+      "event": "Kent State Open 2",
+      "mv_impact": -7.52
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34949486132",
+      "opponent_name": "Chris Earnest",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "3:15",
+      "event": "Kent State Open 2",
+      "mv_impact": -4.36
+    }
+  ]
+}

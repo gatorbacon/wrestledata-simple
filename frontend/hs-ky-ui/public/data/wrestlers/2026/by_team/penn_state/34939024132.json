@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34939024132",
+  "name": "Hayden Cunningham",
+  "team": "Penn State",
+  "team_slug": "penn_state",
+  "team_rank": 1,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.5,
+    "pa7": 5.0,
+    "pd7": -2.5,
+    "si_plus": 97.7,
+    "df_plus": 105.3,
+    "apr_plus": 105.1,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.332,
+      "matches": 4,
+      "rank_weight": 94,
+      "rank_overall": 858,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34933522132",
+      "opponent_rank": 41,
+      "opponent_name": "Dylan Ragusin",
+      "method": "Dec 6-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34945841132",
+      "opponent_name": "Lucas Peters",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 33,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:02",
+      "event": "Kent State Open 2",
+      "mv_impact": -6.16
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34933522132",
+      "opponent_name": "Dylan Ragusin",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 16,
+      "opponent_weight": 141,
+      "opponent_rank": 41,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": -2.95
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34939050132",
+      "opponent_name": "Nicholas Vafiadis",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 34,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 5.11
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34948147132",
+      "opponent_name": "Sebastian Ortega",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 2.68
+    }
+  ]
+}

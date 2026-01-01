@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "rutgers",
+  "team_name": "Rutgers",
+  "name": "Rutgers",
+  "abbreviation": "RUT",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "Big Ten",
+  "location": {
+    "state": "NJ"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758909150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34941581132",
+      "133": "34945118132",
+      "141": "34945090132",
+      "149": "34945070132",
+      "157": "34944785132",
+      "165": "34945075132",
+      "174": "34945474132",
+      "184": "34945057132",
+      "197": "34945325132",
+      "285": "34945332132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-25T13:53:57.096673Z"
+}

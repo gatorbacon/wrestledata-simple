@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34945794132",
+  "name": "Ayden Bollinger",
+  "team": "Indiana",
+  "team_slug": "indiana",
+  "team_rank": 33,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 6.0,
+    "pd7": -2.0,
+    "si_plus": 87.0,
+    "df_plus": 101.7,
+    "apr_plus": 97.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.018,
+      "matches": 2,
+      "rank_weight": 189,
+      "rank_overall": 2050,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955626132",
+      "opponent_name": "Josh Vazquez",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -5.56
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944026132",
+      "opponent_name": "Tyeler Hagensen",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:40",
+      "event": "Michigan State Open",
+      "mv_impact": -6.47
+    }
+  ]
+}

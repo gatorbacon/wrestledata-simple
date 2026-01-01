@@ -1,0 +1,110 @@
+{
+  "wrestler_id": "34952076132",
+  "name": "Charlie Heydorn",
+  "team": "Illinois",
+  "team_slug": "illinois",
+  "team_rank": 10,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.91,
+    "pa7": 15.99,
+    "pd7": -11.08,
+    "si_plus": 100.3,
+    "df_plus": 84.4,
+    "apr_plus": 107.5,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.161,
+      "matches": 3,
+      "rank_weight": 122,
+      "rank_overall": 1386,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34952104132",
+      "opponent_rank": 45,
+      "opponent_name": "Cade Lautt",
+      "method": "M. For."
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34936398132",
+      "opponent_name": "Trevor Dopps",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "22-6",
+      "duration": "6:10",
+      "event": "Cougar Clash",
+      "mv_impact": -5.17
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34952104132",
+      "opponent_name": "Cade Lautt",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 10,
+      "opponent_weight": 197,
+      "opponent_rank": 45,
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Cougar Clash"
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34937092132",
+      "opponent_name": "Tyler Perry",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 56,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -4.46
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34948506132",
+      "opponent_name": "Alex Hamrick",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 62,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:59",
+      "event": "Cougar Clash",
+      "mv_impact": 3.15
+    }
+  ]
+}

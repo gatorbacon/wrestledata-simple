@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34954148132",
+  "name": "Aiden Davis",
+  "team": "Bucknell",
+  "team_slug": "bucknell",
+  "team_rank": 37,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.17,
+    "pa7": 4.67,
+    "pd7": 0.5,
+    "si_plus": 98.0,
+    "df_plus": 106.1,
+    "apr_plus": 98.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.333,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.129,
+      "matches": 5,
+      "rank_weight": 90,
+      "rank_overall": 812,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34955404132",
+      "opponent_rank": 50,
+      "opponent_name": "Collin Arch",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34934120132",
+      "opponent_rank": 25,
+      "opponent_name": "Mason Shrader",
+      "method": "MD 12-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34937790132",
+      "opponent_name": "Josh Jorgge",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 70,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "vs. Hofstra",
+      "mv_impact": 1.0
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943830132",
+      "opponent_name": "Gray Ortis",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 59,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 0.81
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34964233132",
+      "opponent_name": "Seth Larson",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 65,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -3.13
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955404132",
+      "opponent_name": "Collin Arch",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 39,
+      "opponent_weight": 157,
+      "opponent_rank": 50,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 2.68
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934120132",
+      "opponent_name": "Mason Shrader",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 65,
+      "opponent_weight": 157,
+      "opponent_rank": 25,
+      "result": "L",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -2.0
+    }
+  ]
+}

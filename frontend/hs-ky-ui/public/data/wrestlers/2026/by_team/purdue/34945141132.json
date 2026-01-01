@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34945141132",
+  "name": "Kade Law",
+  "team": "Purdue",
+  "team_slug": "purdue",
+  "team_rank": 19,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 1.5,
+    "pa7": 7.0,
+    "pd7": -5.5,
+    "si_plus": 88.1,
+    "df_plus": 98.8,
+    "apr_plus": 98.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.978,
+      "matches": 2,
+      "rank_weight": 198,
+      "rank_overall": 1789,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34945367132",
+      "opponent_rank": 21,
+      "opponent_name": "jaivon jones",
+      "method": "MD 9-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34945367132",
+      "opponent_name": "jaivon jones",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 14,
+      "opponent_weight": 157,
+      "opponent_rank": 21,
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Tiger Style Invite",
+      "mv_impact": -2.6
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34963166132",
+      "opponent_name": "Rafael Hipolito",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 23,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Tiger Style Invite",
+      "mv_impact": -5.36
+    }
+  ]
+}

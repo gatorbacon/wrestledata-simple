@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34940534132",
+  "name": "Tyler Hood",
+  "team": "Navy",
+  "team_slug": "navy",
+  "team_rank": 34,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.75,
+    "pa7": 6.25,
+    "pd7": -1.5,
+    "si_plus": 92.5,
+    "df_plus": 102.6,
+    "apr_plus": 104.5,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.435,
+      "matches": 5,
+      "rank_weight": 153,
+      "rank_overall": 1192,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34957645132",
+      "opponent_rank": 38,
+      "opponent_name": "Jackson Young",
+      "method": "Dec 4-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34957130132",
+      "opponent_name": "Max Rosen",
+      "opponent_team": "American",
+      "opponent_team_rank": 47,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:34",
+      "event": "Lock Haven Open I",
+      "mv_impact": 3.0
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34940494132",
+      "opponent_name": "Julian Everitt",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 34,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": -3.82
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34935956132",
+      "opponent_name": "Dashawn Farber",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 54,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.9
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34957645132",
+      "opponent_name": "Jackson Young",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 149,
+      "opponent_rank": 38,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -2.02
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34949039132",
+      "opponent_name": "Connor MacDonald",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 77,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 0.57
+    }
+  ]
+}

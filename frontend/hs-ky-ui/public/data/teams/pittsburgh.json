@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "pittsburgh",
+  "team_name": "Pittsburgh",
+  "name": "Pittsburgh",
+  "abbreviation": "PITT",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "ACC",
+  "location": {
+    "state": "PA"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758900150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34934133132",
+      "133": "34934144132",
+      "141": "34934127132",
+      "149": "34934137132",
+      "157": "34934162132",
+      "165": "34934124132",
+      "174": "34934123132",
+      "184": "34934139132",
+      "197": "34934128132",
+      "285": "34934125132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-25T13:53:57.084675Z"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "penn_state",
+  "team_name": "Penn State",
+  "name": "Penn State",
+  "abbreviation": "PSU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "Big Ten",
+  "location": {
+    "state": "PA"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758898150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34939025132",
+      "133": "34939035132",
+      "141": "34939023132",
+      "149": "34939015132",
+      "157": "34939039132",
+      "165": "34939022132",
+      "174": "34939016132",
+      "184": "34939044132",
+      "197": "34939018132",
+      "285": "34939026132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-25T13:53:57.082354Z"
+}

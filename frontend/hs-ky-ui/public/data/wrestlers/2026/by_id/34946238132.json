@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34946238132",
+  "name": "Kyrel Leavell",
+  "team": "The Citadel",
+  "team_slug": "the_citadel",
+  "team_rank": 78,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.75,
+    "pa7": 5.5,
+    "pd7": 3.25,
+    "si_plus": 109.6,
+    "df_plus": 106.9,
+    "apr_plus": 98.9,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.639,
+      "matches": 5,
+      "rank_weight": 63,
+      "rank_overall": 581,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34943155132",
+      "opponent_rank": 39,
+      "opponent_name": "Laird Root",
+      "method": "Dec 13-8"
+    },
+    "worst_loss": {
+      "opponent_id": "34957589132",
+      "opponent_rank": 34,
+      "opponent_name": "Kal Miller",
+      "method": "Dec 4-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34952971132",
+      "opponent_name": "Max Nevlin",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 48,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "7:00",
+      "event": "Dual Meet (WS-96511)",
+      "mv_impact": 1.07
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937475132",
+      "opponent_name": "Khamani Harrison",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 52,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:30",
+      "event": "Southeast Open",
+      "mv_impact": 1.78
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34957589132",
+      "opponent_name": "Kal Miller",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 157,
+      "opponent_rank": 34,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -1.67
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943155132",
+      "opponent_name": "Laird Root",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 44,
+      "opponent_weight": 157,
+      "opponent_rank": 39,
+      "result": "W",
+      "method": "DEC",
+      "score": "13-8",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 3.93
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943157132",
+      "opponent_name": "Joey Showalter",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 44,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -1.92
+    }
+  ]
+}

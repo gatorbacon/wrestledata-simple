@@ -1,0 +1,115 @@
+{
+  "wrestler_id": "34952091132",
+  "name": "Joey Braunagel",
+  "team": "Illinois",
+  "team_slug": "illinois",
+  "team_rank": 10,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 20.5,
+    "pd7": -17.5,
+    "si_plus": 95.7,
+    "df_plus": 76.7,
+    "apr_plus": 111.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.878,
+      "matches": 3,
+      "rank_weight": 88,
+      "rank_overall": 1033,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34964077132",
+      "opponent_rank": 17,
+      "opponent_name": "CJ Walrath",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "34936416132",
+      "opponent_rank": 19,
+      "opponent_name": "Zack Ryder",
+      "method": "TF 16-0 1:58"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34964911132",
+      "opponent_name": "Mahonri Rushton",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 56,
+      "opponent_weight": 184,
+      "opponent_rank": 60,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:31",
+      "event": "Cougar Clash",
+      "mv_impact": 4.89
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34936416132",
+      "opponent_name": "Zack Ryder",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 184,
+      "opponent_rank": 19,
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "1:58",
+      "event": "Cougar Clash",
+      "mv_impact": -3.61
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34943974132",
+      "opponent_name": "Logan Cole",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 18,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "16-6",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -3.91
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34964077132",
+      "opponent_name": "CJ Walrath",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 30,
+      "opponent_weight": 184,
+      "opponent_rank": 17,
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Cougar Clash"
+    }
+  ]
+}

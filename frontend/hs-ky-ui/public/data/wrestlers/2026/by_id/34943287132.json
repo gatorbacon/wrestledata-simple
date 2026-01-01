@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34943287132",
+  "name": "Trevor Frank",
+  "team": "Utah Valley",
+  "team_slug": "utah_valley",
+  "team_rank": 31,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.5,
+    "pa7": 3.0,
+    "pd7": 5.5,
+    "si_plus": 94.0,
+    "df_plus": 106.2,
+    "apr_plus": 97.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.808,
+      "matches": 2,
+      "rank_weight": 92,
+      "rank_overall": 1011,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944664132",
+      "opponent_rank": 41,
+      "opponent_name": "Luke Condon",
+      "method": "Dec 6-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-18",
+      "opponent_id": "34944664132",
+      "opponent_name": "Luke Condon",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 27,
+      "opponent_weight": 174,
+      "opponent_rank": 41,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "vs. Wisconsin",
+      "mv_impact": -2.55
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34935426132",
+      "opponent_name": "Kamdyn Munro",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 66,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "vs. Utah Valley",
+      "mv_impact": 0.93
+    }
+  ]
+}

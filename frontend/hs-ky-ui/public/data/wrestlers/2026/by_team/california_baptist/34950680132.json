@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34950680132",
+  "name": "Kayden Cartee",
+  "team": "California Baptist",
+  "team_slug": "california_baptist",
+  "team_rank": 64,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 3.63,
+    "pa7": 20.19,
+    "pd7": -16.56,
+    "si_plus": 95.7,
+    "df_plus": 81.2,
+    "apr_plus": 98.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.2,
+      "matches": 2,
+      "rank_weight": 162,
+      "rank_overall": 1831,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34940832132",
+      "opponent_rank": 2,
+      "opponent_name": "Rocky Elam",
+      "method": "TF 17-1 5:34"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34940832132",
+      "opponent_name": "Rocky Elam",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 3,
+      "opponent_weight": 197,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "5:34",
+      "event": "Cyclone Invitational",
+      "mv_impact": -1.73
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34940712132",
+      "opponent_name": "Rowan Udell",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 3,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "19-6",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -6.67
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34940718132",
+  "name": "Logan Stotts",
+  "team": "Iowa State",
+  "team_slug": "iowa_state",
+  "team_rank": 3,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 15.0,
+    "pd7": -12.0,
+    "si_plus": 76.4,
+    "df_plus": 84.8,
+    "apr_plus": 92.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -8.068,
+      "matches": 2,
+      "rank_weight": 259,
+      "rank_overall": 2144,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934016132",
+      "opponent_name": "Matthew Buck",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 64,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "15-3",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -7.37
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943285132",
+      "opponent_name": "Kayd Craig",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 31,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:36",
+      "event": "Cyclone Invitational",
+      "mv_impact": -8.76
+    }
+  ]
+}

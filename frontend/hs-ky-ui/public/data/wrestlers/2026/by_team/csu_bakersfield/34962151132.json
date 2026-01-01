@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34962151132",
+  "name": "Eathon Rider",
+  "team": "CSU Bakersfield",
+  "team_slug": "csu_bakersfield",
+  "team_rank": 63,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.33,
+    "pa7": 12.67,
+    "pd7": -10.33,
+    "si_plus": 97.9,
+    "df_plus": 87.8,
+    "apr_plus": 98.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.123,
+      "matches": 3,
+      "rank_weight": 192,
+      "rank_overall": 2063,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944168132",
+      "opponent_rank": 34,
+      "opponent_name": "Tucker Owens",
+      "method": "MD 18-7"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34934185132",
+      "opponent_name": "Isaiah Harrison",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 15,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "2025 Dollamur Reno Tournament of Champions",
+      "mv_impact": -6.97
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34944168132",
+      "opponent_name": "Tucker Owens",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 57,
+      "opponent_weight": 125,
+      "opponent_rank": 34,
+      "result": "L",
+      "method": "MD",
+      "score": "18-7",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": -3.11
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34936035132",
+      "opponent_name": "Caleb Rivas",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 28,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Menlo Open",
+      "mv_impact": -8.29
+    }
+  ]
+}

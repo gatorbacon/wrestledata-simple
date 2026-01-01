@@ -1,0 +1,116 @@
+{
+  "wrestler_id": "34963814132",
+  "name": "Sebastian Degennaro",
+  "team": "Oklahoma",
+  "team_slug": "oklahoma",
+  "team_rank": 23,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 14.25,
+    "pa7": 2.9,
+    "pd7": 11.35,
+    "si_plus": 114.6,
+    "df_plus": 109.4,
+    "apr_plus": 99.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.233,
+      "matches": 4,
+      "rank_weight": 26,
+      "rank_overall": 240,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934628132",
+      "opponent_rank": 30,
+      "opponent_name": "Ezekiel Witt",
+      "method": "Dec 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34955800132",
+      "opponent_rank": 3,
+      "opponent_name": "Jore Volk",
+      "method": "Dec 9-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955789132",
+      "opponent_name": "Blake Beissel",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "4:23",
+      "event": "Bison Open 2025",
+      "mv_impact": 4.68
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955800132",
+      "opponent_name": "Jore Volk",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 125,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -0.23
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934625132",
+      "opponent_name": "Kody Tanimoto",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 75,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:44",
+      "event": "Bison Open 2025",
+      "mv_impact": 0.71
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934628132",
+      "opponent_name": "Ezekiel Witt",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 75,
+      "opponent_weight": 125,
+      "opponent_rank": 30,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": 3.77
+    }
+  ]
+}

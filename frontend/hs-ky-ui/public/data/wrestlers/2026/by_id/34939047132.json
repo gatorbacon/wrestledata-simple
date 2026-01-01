@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34939047132",
+  "name": "Jonathan Sanchez",
+  "team": "Navy",
+  "team_slug": "navy",
+  "team_rank": 34,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.4,
+    "pa7": 7.2,
+    "pd7": 1.2,
+    "si_plus": 95.9,
+    "df_plus": 95.6,
+    "apr_plus": 96.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.667,
+    "majors": 2,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.282,
+      "matches": 5,
+      "rank_weight": 96,
+      "rank_overall": 1144,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34935722132",
+      "opponent_rank": 53,
+      "opponent_name": "Greyson Meak",
+      "method": "MD 10-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34935959132",
+      "opponent_name": "Cael Black",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 54,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": 1.8
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34955050132",
+      "opponent_name": "Dylan Newsome",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "15-2",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": -5.22
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943408132",
+      "opponent_name": "Mark Gray",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 49,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 1.24
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34949302132",
+      "opponent_name": "Dominick Kraemer",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 77,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "15-1",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -0.09
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34935722132",
+      "opponent_name": "Greyson Meak",
+      "opponent_team": "Penn",
+      "opponent_team_rank": 29,
+      "opponent_weight": 184,
+      "opponent_rank": 53,
+      "result": "L",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.14
+    }
+  ]
+}

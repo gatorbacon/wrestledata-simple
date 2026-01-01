@@ -1,0 +1,125 @@
+{
+  "wrestler_id": "34977461132",
+  "name": "Bryce Phillips",
+  "team": "Morgan State",
+  "team_slug": "morgan_state",
+  "team_rank": 74,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.5,
+    "pa7": 9.5,
+    "pd7": -4.0,
+    "si_plus": 89.5,
+    "df_plus": 95.8,
+    "apr_plus": 98.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.933,
+      "matches": 4,
+      "rank_weight": 164,
+      "rank_overall": 1938,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34971901132",
+      "opponent_rank": 75,
+      "opponent_name": "Ethan Wilson",
+      "method": "TF 16-0 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34935900132",
+      "opponent_name": "Marc Koch",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 68,
+      "opponent_weight": 174,
+      "opponent_rank": 54,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Morgan State",
+      "mv_impact": -6.77
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34945126132",
+      "opponent_name": "Don Cates",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 184,
+      "opponent_rank": 59,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:40",
+      "event": "vs. NC State",
+      "mv_impact": -6.7
+    },
+    {
+      "date": "2025-11-21",
+      "opponent_id": "34957647132",
+      "opponent_name": "Seth Digby",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "vs. Morgan State",
+      "mv_impact": 0.46
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34971901132",
+      "opponent_name": "Ethan Wilson",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 42,
+      "opponent_weight": 184,
+      "opponent_rank": 75,
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "vs. Morgan State",
+      "mv_impact": -6.72
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935611132",
+      "opponent_name": "Silas Allred",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 184,
+      "opponent_rank": 9,
+      "result": "L",
+      "method": "DFLT",
+      "score": null,
+      "duration": "7:00",
+      "event": "Navy Classic"
+    }
+  ]
+}

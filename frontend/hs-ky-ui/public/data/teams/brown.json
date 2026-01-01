@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "brown",
+  "team_name": "Brown",
+  "name": "Brown",
+  "abbreviation": "BRWN",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "Ivy League",
+  "location": {
+    "state": "RI"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758776150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34948497132",
+      "133": "35078504132",
+      "141": "34948517132",
+      "149": "34948504132",
+      "157": "34948510132",
+      "165": "34948516132",
+      "174": "34948498132",
+      "184": "34948513132",
+      "197": "34948512132",
+      "285": "34948502132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-25T13:53:56.955623Z"
+}

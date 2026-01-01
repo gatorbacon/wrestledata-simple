@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34950397132",
+  "name": "Gaetano Console",
+  "team": "Duke",
+  "team_slug": "duke",
+  "team_rank": 69,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 74,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 21.5,
+    "pa7": 5.32,
+    "pd7": 16.18,
+    "si_plus": 123.9,
+    "df_plus": 102.4,
+    "apr_plus": 96.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.014,
+      "matches": 2,
+      "rank_weight": 40,
+      "rank_overall": 476,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34937790132",
+      "opponent_name": "Josh Jorgge",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 70,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "18-4",
+      "duration": "7:00",
+      "event": "vs. Hofstra",
+      "mv_impact": 1.0
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34949374132",
+      "opponent_name": "Eric Wolf",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 77,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "5:16",
+      "event": "vs. Sacred Heart",
+      "mv_impact": 1.03
+    }
+  ]
+}

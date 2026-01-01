@@ -1,0 +1,141 @@
+{
+  "wrestler_id": "34945928132",
+  "name": "Gavin Jendreas",
+  "team": "Indiana",
+  "team_slug": "indiana",
+  "team_rank": 33,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "4-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.54,
+    "pa7": 8.09,
+    "pd7": -1.55,
+    "si_plus": 101.6,
+    "df_plus": 95.5,
+    "apr_plus": 102.0,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.25,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.081,
+      "matches": 6,
+      "rank_weight": 72,
+      "rank_overall": 793,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944528132",
+      "opponent_rank": 6,
+      "opponent_name": "Kyler Larkin",
+      "method": "TF 19-3 5:40"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34943836132",
+      "opponent_name": "Micah Medina",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 59,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:22",
+      "event": "Kent State Open 2",
+      "mv_impact": 1.85
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34935431132",
+      "opponent_name": "Ty Tice",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 66,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": -0.07
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34933534132",
+      "opponent_name": "Chris Kiser",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 16,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "13-7",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": 2.44
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944528132",
+      "opponent_name": "Kyler Larkin",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 133,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "5:40",
+      "event": "Michigan State Open",
+      "mv_impact": -1.75
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34941792132",
+      "opponent_name": "Dakota King",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -4.23
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934362132",
+      "opponent_name": "Ricardo Saenz",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 55,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "7-5",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 1.28
+    }
+  ]
+}

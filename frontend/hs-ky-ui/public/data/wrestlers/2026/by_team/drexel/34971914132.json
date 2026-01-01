@@ -1,0 +1,160 @@
+{
+  "wrestler_id": "34971914132",
+  "name": "Nate Schon",
+  "team": "Drexel",
+  "team_slug": "drexel",
+  "team_rank": 42,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 28,
+  "record": {
+    "overall": "4-3",
+    "vs_ranked": "3-3",
+    "vs_top10": "0-0",
+    "vs_top25": "1-2"
+  },
+  "metrics": {
+    "pf7": 4.36,
+    "pa7": 6.85,
+    "pd7": -2.49,
+    "si_plus": 100.6,
+    "df_plus": 107.4,
+    "apr_plus": 104.5,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.25,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.433,
+      "matches": 6,
+      "rank_weight": 43,
+      "rank_overall": 379,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34936112132",
+      "opponent_rank": 12,
+      "opponent_name": "Trevor Tinker",
+      "method": "SV-1 8-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34950398132",
+      "opponent_rank": 26,
+      "opponent_name": "Connor Barket",
+      "method": "MD 11-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34936112132",
+      "opponent_name": "Trevor Tinker",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 28,
+      "opponent_weight": 285,
+      "opponent_rank": 12,
+      "result": "W",
+      "method": "SV-1",
+      "score": "8-5",
+      "duration": "8:15",
+      "event": "vs. Drexel",
+      "mv_impact": 4.71
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34939026132",
+      "opponent_name": "Cole Mirasola",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
+      "opponent_weight": 285,
+      "opponent_rank": 11,
+      "result": "L",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. Penn State",
+      "mv_impact": -1.7
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934105132",
+      "opponent_name": "Bryan Caves",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 65,
+      "opponent_weight": 285,
+      "opponent_rank": 29,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": 4.28
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935961132",
+      "opponent_name": "Ethan Miller",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 54,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:51",
+      "event": "Keystone Classic",
+      "mv_impact": 4.58
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34933364132",
+      "opponent_name": "Jimmy Mullen",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 20,
+      "opponent_weight": 285,
+      "opponent_rank": 24,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -1.25
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34945332132",
+      "opponent_name": "Hunter Catka",
+      "opponent_team": "Rutgers",
+      "opponent_team_rank": 17,
+      "opponent_weight": 285,
+      "opponent_rank": 33,
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Keystone Classic"
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34950398132",
+      "opponent_name": "Connor Barket",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 69,
+      "opponent_weight": 285,
+      "opponent_rank": 26,
+      "result": "L",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "vs. Duke",
+      "mv_impact": -2.02
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "wrestler_id": "34943393132",
+  "name": "Joe Curtis",
+  "team": "Columbia",
+  "team_slug": "columbia",
+  "team_rank": 49,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "5-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 4.33,
+    "pa7": 9.33,
+    "pd7": -5.0,
+    "si_plus": 99.4,
+    "df_plus": 102.7,
+    "apr_plus": 107.3,
+    "pin_rate": 0.4,
+    "bonus_rate": 0.4,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 1.711,
+      "matches": 5,
+      "rank_weight": 26,
+      "rank_overall": 330,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34940493132",
+      "opponent_rank": 49,
+      "opponent_name": "Gage Yackee",
+      "method": "Dec 6-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34943379132",
+      "opponent_rank": 16,
+      "opponent_name": "Aaron Ayzerov",
+      "method": "Dec 4-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934337132",
+      "opponent_name": "Jakob Gilfoil",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:05",
+      "event": "Black Knight Invite",
+      "mv_impact": 3.68
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943379132",
+      "opponent_name": "Aaron Ayzerov",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 49,
+      "opponent_weight": 184,
+      "opponent_rank": 16,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-0",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -1.6
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34953899132",
+      "opponent_name": "Anthony D`alesio",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 72,
+      "opponent_weight": 184,
+      "opponent_rank": 54,
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34939044132",
+      "opponent_name": "Rocco Welsh",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
+      "opponent_weight": 184,
+      "opponent_rank": 4,
+      "result": "L",
+      "method": "MD",
+      "score": "19-7",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -0.78
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34938628132",
+      "opponent_name": "Adrian Gacek",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 67,
+      "opponent_weight": 184,
+      "opponent_rank": 69,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:18",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 4.55
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34945991132",
+      "opponent_name": "Carson Thomas",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 33,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DFLT",
+      "score": null,
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34940493132",
+      "opponent_name": "Gage Yackee",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 34,
+      "opponent_weight": 184,
+      "opponent_rank": 49,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 2.69
+    }
+  ]
+}

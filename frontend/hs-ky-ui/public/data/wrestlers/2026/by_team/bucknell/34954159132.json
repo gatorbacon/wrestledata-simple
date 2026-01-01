@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34954159132",
+  "name": "Dillon Bechtold",
+  "team": "Bucknell",
+  "team_slug": "bucknell",
+  "team_rank": 37,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 8,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "1-1",
+    "vs_top25": "2-1"
+  },
+  "metrics": {
+    "pf7": 4.46,
+    "pa7": 3.62,
+    "pd7": 0.85,
+    "si_plus": 101.1,
+    "df_plus": 117.0,
+    "apr_plus": 99.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.334,
+      "matches": 3,
+      "rank_weight": 12,
+      "rank_overall": 100,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 1,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934128132",
+      "opponent_rank": 9,
+      "opponent_name": "Mac Stout",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34963117132",
+      "opponent_rank": 7,
+      "opponent_name": "DJ Parker",
+      "method": "Dec 6-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34934128132",
+      "opponent_name": "Mac Stout",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 35,
+      "opponent_weight": 197,
+      "opponent_rank": 9,
+      "result": "W",
+      "method": "SV-1",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "vs. Pittsburgh",
+      "mv_impact": 5.41
+    },
+    {
+      "date": "2025-11-25",
+      "opponent_id": "34944680132",
+      "opponent_name": "Wyatt Ingham",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 27,
+      "opponent_weight": 197,
+      "opponent_rank": 23,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "vs. Wisconsin",
+      "mv_impact": 4.9
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34963117132",
+      "opponent_name": "DJ Parker",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 23,
+      "opponent_weight": 197,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "vs. Oklahoma",
+      "mv_impact": -0.3
+    }
+  ]
+}

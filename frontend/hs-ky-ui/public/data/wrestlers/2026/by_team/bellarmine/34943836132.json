@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34943836132",
+  "name": "Micah Medina",
+  "team": "Bellarmine",
+  "team_slug": "bellarmine",
+  "team_rank": 59,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 11.67,
+    "pd7": -7.67,
+    "si_plus": 93.2,
+    "df_plus": 90.9,
+    "apr_plus": 98.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.157,
+      "matches": 5,
+      "rank_weight": 169,
+      "rank_overall": 1824,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34938634132",
+      "opponent_rank": 35,
+      "opponent_name": "Travis Clawson",
+      "method": "Fall 6:55"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34935445132",
+      "opponent_name": "Brody Gobbell",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 66,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "18-7",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": -4.25
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34951049132",
+      "opponent_name": "Austin Zimmerman",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": 0.72
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34945928132",
+      "opponent_name": "Gavin Jendreas",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 33,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:22",
+      "event": "Kent State Open 2",
+      "mv_impact": -6.39
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34951049132",
+      "opponent_name": "Austin Zimmerman",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "16-3",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -6.28
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938634132",
+      "opponent_name": "Travis Clawson",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 67,
+      "opponent_weight": 125,
+      "opponent_rank": 35,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:55",
+      "event": "Clarion Open",
+      "mv_impact": -4.58
+    }
+  ]
+}

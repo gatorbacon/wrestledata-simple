@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34936036132",
+  "name": "Christian Garcia",
+  "team": "Cal Poly",
+  "team_slug": "cal_poly",
+  "team_rank": 28,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.33,
+    "pa7": 8.33,
+    "pd7": -2.0,
+    "si_plus": 104.1,
+    "df_plus": 91.6,
+    "apr_plus": 103.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.867,
+      "matches": 3,
+      "rank_weight": 141,
+      "rank_overall": 1553,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934761132",
+      "opponent_rank": 12,
+      "opponent_name": "Maximo Renteria",
+      "method": "MD 17-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34944530132",
+      "opponent_name": "Tristan Mascarenas",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "2025 Dollamur Reno Tournament of Champions",
+      "mv_impact": -1.05
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34934185132",
+      "opponent_name": "Isaiah Harrison",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 15,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "2025 Dollamur Reno Tournament of Champions",
+      "mv_impact": -5.97
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934761132",
+      "opponent_name": "Maximo Renteria",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 21,
+      "opponent_weight": 125,
+      "opponent_rank": 12,
+      "result": "L",
+      "method": "MD",
+      "score": "17-5",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": -1.58
+    }
+  ]
+}

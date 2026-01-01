@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34948497132",
+  "name": "Jared Brunner",
+  "team": "Brown",
+  "team_slug": "brown",
+  "team_rank": 62,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 77,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.94,
+    "pa7": 25.0,
+    "pd7": -21.06,
+    "si_plus": 99.5,
+    "df_plus": 72.2,
+    "apr_plus": 96.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.182,
+      "matches": 2,
+      "rank_weight": 194,
+      "rank_overall": 2068,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34953917132",
+      "opponent_rank": 70,
+      "opponent_name": "Sawyer Ostroff",
+      "method": "Inj. 0:15"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34953917132",
+      "opponent_name": "Sawyer Ostroff",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 72,
+      "opponent_weight": 125,
+      "opponent_rank": 70,
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "0:15",
+      "event": "vs. LIU",
+      "mv_impact": -7.45
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34935621132",
+      "opponent_name": "Alan Koehler",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "5:20",
+      "event": "vs. Nebraska",
+      "mv_impact": -4.91
+    }
+  ]
+}

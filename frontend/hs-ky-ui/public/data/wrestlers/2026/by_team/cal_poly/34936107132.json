@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34936107132",
+  "name": "Ryan Clink",
+  "team": "Cal Poly",
+  "team_slug": "cal_poly",
+  "team_rank": 28,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.5,
+    "pa7": 12.0,
+    "pd7": -6.5,
+    "si_plus": 95.4,
+    "df_plus": 90.2,
+    "apr_plus": 95.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.303,
+      "matches": 2,
+      "rank_weight": 195,
+      "rank_overall": 2078,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34943298132",
+      "opponent_name": "Hudson Rogers",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 31,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "13-7",
+      "duration": "7:00",
+      "event": "2025 Dollamur Reno Tournament of Champions",
+      "mv_impact": -6.41
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34943461132",
+      "opponent_name": "Cole Han-Lindemyer",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 22,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "Menlo Open",
+      "mv_impact": -6.2
+    }
+  ]
+}

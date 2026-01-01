@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "clarion",
+  "team_name": "Clarion",
+  "name": "Clarion",
+  "abbreviation": "CLAR",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "MAC",
+  "location": {
+    "state": "PA"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758792150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34938634132",
+      "133": "34938621132",
+      "141": "34938629132",
+      "149": "34938656132",
+      "157": "34938646132",
+      "165": "34938626132",
+      "174": "34938655132",
+      "184": "34938628132",
+      "197": "34938649132",
+      "285": "34938625132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-25T13:53:56.974526Z"
+}

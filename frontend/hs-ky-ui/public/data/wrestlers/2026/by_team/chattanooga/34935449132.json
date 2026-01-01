@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34935449132",
+  "name": "Pierce Pennington",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 66,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.0,
+    "pa7": 7.0,
+    "pd7": -6.0,
+    "si_plus": 86.2,
+    "df_plus": 101.0,
+    "apr_plus": 111.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.919,
+      "matches": 2,
+      "rank_weight": 165,
+      "rank_overall": 1315,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934209132",
+      "opponent_name": "Alex Chirdo",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 79,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "Southeast Open",
+      "mv_impact": 1.89
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934702132",
+      "opponent_name": "CJ Ferree",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 32,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-1",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -5.73
+    }
+  ]
+}

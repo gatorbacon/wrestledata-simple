@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "season": 2026,
+  "team_id": "army_west_point",
+  "team_name": "Army West Point",
+  "name": "Army West Point",
+  "abbreviation": "ARMY",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": "EIWA",
+  "location": {
+    "state": "NY"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=wqqpxttztd&teamId=758765150",
+    "school": null
+  },
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34934307132",
+      "133": "34934305132",
+      "141": "34934322132",
+      "149": "34934335132",
+      "157": "34934410132",
+      "165": "34934324132",
+      "174": "34934320132",
+      "184": "34934334132",
+      "197": "34934308132",
+      "285": "34934336132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2025-12-25T13:53:56.946189Z"
+}

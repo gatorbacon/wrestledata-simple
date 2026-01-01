@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34941579132",
+  "name": "Nico Ronchetti",
+  "team": "SIU Edwardsville",
+  "team_slug": "siu_edwardsville",
+  "team_rank": 24,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.67,
+    "pa7": 12.67,
+    "pd7": -8.0,
+    "si_plus": 94.1,
+    "df_plus": 86.3,
+    "apr_plus": 96.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.082,
+      "matches": 3,
+      "rank_weight": 169,
+      "rank_overall": 1962,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944662132",
+      "opponent_rank": 68,
+      "opponent_name": "Cale Anderson",
+      "method": "MD 15-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34955740132",
+      "opponent_name": "J.D. Perez",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 45,
+      "opponent_weight": 184,
+      "opponent_rank": 66,
+      "result": "L",
+      "method": "MD",
+      "score": "19-8",
+      "duration": "7:00",
+      "event": "vs. SIU Edwardsville",
+      "mv_impact": -5.26
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944662132",
+      "opponent_name": "Cale Anderson",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 27,
+      "opponent_weight": 184,
+      "opponent_rank": 68,
+      "result": "L",
+      "method": "MD",
+      "score": "15-4",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -5.07
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944688132",
+      "opponent_name": "Caleb Dennee",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 27,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Cyclone Invitational",
+      "mv_impact": -4.92
+    }
+  ]
+}

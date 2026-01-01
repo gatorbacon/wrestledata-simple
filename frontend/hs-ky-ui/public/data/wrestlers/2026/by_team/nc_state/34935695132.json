@@ -1,0 +1,89 @@
+{
+  "wrestler_id": "34935695132",
+  "name": "Tyler Tracy",
+  "team": "NC State",
+  "team_slug": "nc_state",
+  "team_rank": 6,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 25.0,
+    "pa7": 5.6,
+    "pd7": 19.4,
+    "si_plus": 154.4,
+    "df_plus": 104.5,
+    "apr_plus": 97.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 4.273,
+      "matches": 1,
+      "rank_weight": 8,
+      "rank_overall": 38,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934444132",
+      "opponent_name": "Nick Alvarez",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 32,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DFLT",
+      "score": null,
+      "duration": "7:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934460132",
+      "opponent_name": "Billy Templeton",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 32,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34936216132",
+      "opponent_name": "Logan Cravatas",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 46,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "5:00",
+      "event": "Southeast Open",
+      "mv_impact": 4.27
+    }
+  ]
+}

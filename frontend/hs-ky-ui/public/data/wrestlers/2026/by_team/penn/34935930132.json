@@ -1,0 +1,110 @@
+{
+  "wrestler_id": "34935930132",
+  "name": "Jackson Zimmerman",
+  "team": "Penn",
+  "team_slug": "penn",
+  "team_rank": 29,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.5,
+    "pa7": 7.0,
+    "pd7": -5.5,
+    "si_plus": 88.0,
+    "df_plus": 101.4,
+    "apr_plus": 95.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.557,
+      "matches": 3,
+      "rank_weight": 128,
+      "rank_overall": 1474,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34951035132",
+      "opponent_rank": 46,
+      "opponent_name": "Brody Evans",
+      "method": "Dec 8-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-19",
+      "opponent_id": "34938568132",
+      "opponent_name": "Jamil Morrow",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 43,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Wilkes Open"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34951035132",
+      "opponent_name": "Brody Evans",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 197,
+      "opponent_rank": 46,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -2.79
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34951028132",
+      "opponent_name": "Nick Lodato",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -5.14
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934454132",
+      "opponent_name": "Jake Allred",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 32,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "15-7",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": 0.27
+    }
+  ]
+}

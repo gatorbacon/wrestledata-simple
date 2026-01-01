@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wrestler Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+</head>
+
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1 id="wrestler-name"></h1>
+      <div class="header-subline" id="wrestler-tagline"></div>
+      <div class="header-meta" id="wrestler-meta"></div>
+    </header>
+
+    <!-- PROFILE SUMMARY GRID: MV (left) • Timeline (center) • Skill (right) -->
+    <section class="profile-summary-grid">
+      <!-- Left: Match Index Summary -->
+      <div class="profile-summary-col profile-summary-col--mv">
+        <div class="profile-section profile-section--mv" id="mv-section">
+          <!-- MV content will be rendered here by JS -->
+        </div>
+      </div>
+
+      <!-- Center: TPAR Impact Timeline (visual anchor) -->
+      <div class="profile-summary-col profile-summary-col--timeline">
+        <section class="section section--timeline" id="match-impact-section">
+          <div class="section-header">
+            <h2>TPAR Impact Timeline</h2>
+          </div>
+          <div class="section-divider"></div>
+          <!-- xTP toggle removed - chart is MV-only -->
+          <div class="match-impact-chart-container" id="match-impact-chart-container">
+            <!-- Chart will be rendered here -->
+          </div>
+          <div class="match-impact-labels">
+            <span class="match-impact-label">Bars: Per-match TPAR impact</span>
+            <span class="match-impact-label">Line: Season average TPAR</span>
+        </div>
+        </section>
+      </div>
+
+      <!-- Right: Skill Profile -->
+      <div class="profile-summary-col profile-summary-col--skill">
+        <div class="profile-section profile-section--skill" id="skill-section">
+          <!-- Skill Profile content will be rendered here by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MV CONTEXT (COMPRESSED, BELOW TIMELINE) -->
+    <section class="section" id="mv-context-section">
+      <div class="mv-context-compressed" id="mv-context-compressed">
+        <!-- Context will be rendered here by JS -->
+      </div>
+    </section>
+
+    <!-- EXPECTED NCAA IMPACT (xTP) -->
+    <section class="section" id="xtp-section" style="display: none;">
+      <h2>
+        Expected NCAA Impact (xTP)
+        <span class="tooltip-icon" data-tooltip="xtp">→</span>
+      </h2>
+      <p style="color: var(--muted); font-size: 0.875rem; margin-bottom: 1em;">
+        Expected Team Points (xTP) estimate how many NCAA tournament points a wrestler is likely to contribute based on advancement, placement, and bonus probabilities.
+      </p>
+      <div class="summary-cards">
+        <div class="card">
+          <div class="card-body">
+            <div style="font-size: 2.5em; font-weight: bold; margin-bottom: 0.5em; color: var(--text);">
+              <span id="xtp-total">—</span>
+            </div>
+            <div><span class="label">xTP_P (Placement) <span class="tooltip-icon" data-tooltip="xtp-p">→</span>:</span> <span id="xtp-p" class="metric-sub"></span></div>
+            <div><span class="label">xTP_A (Advancement) <span class="tooltip-icon" data-tooltip="xtp-a">→</span>:</span> <span id="xtp-a" class="metric-sub"></span></div>
+            <div><span class="label">xTP_B (Bonus) <span class="tooltip-icon" data-tooltip="xtp-b">→</span>:</span> <span id="xtp-b" class="metric-sub"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATCH HISTORY -->
+    <section class="section section--match-history">
+      <h2>Match History</h2>
+      <div class="table-wrapper">
+        <table id="match-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Opponent</th>
+              <th>Opponent Team</th>
+              <th>Opponent Rank</th>
+              <th>Result</th>
+              <th>MI Impact</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+  <script src="/tooltips.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const wrestlerId = params.get("id");
+    
+      if (!wrestlerId) {
+        document.getElementById("wrestler-name").textContent = "No wrestler selected";
+        document.getElementById("wrestler-meta").textContent = "Use ?id=<wrestler_id>";
+        return;
+      }
+    
+      loadWrestlerProfile(wrestlerId);
+    });
+    </script>
+</body>
+</html>

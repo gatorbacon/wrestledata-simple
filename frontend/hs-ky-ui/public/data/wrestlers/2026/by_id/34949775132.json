@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34949775132",
+  "name": "Carter McCallister",
+  "team": "Little Rock",
+  "team_slug": "little_rock",
+  "team_rank": 14,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 9.0,
+    "pd7": -4.0,
+    "si_plus": 105.7,
+    "df_plus": 101.1,
+    "apr_plus": 98.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.179,
+      "matches": 2,
+      "rank_weight": 52,
+      "rank_overall": 438,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34964522132",
+      "opponent_rank": 2,
+      "opponent_name": "Jaxon Joy",
+      "method": "MD 14-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34964522132",
+      "opponent_name": "Jaxon Joy",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 9,
+      "opponent_weight": 149,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "Dual Meet (WS-95989)",
+      "mv_impact": -0.43
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34941789132",
+      "opponent_name": "Daxton Chase",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Dual Meet (WS-95987)",
+      "mv_impact": 2.79
+    }
+  ]
+}

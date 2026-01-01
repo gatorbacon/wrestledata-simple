@@ -1,0 +1,121 @@
+{
+  "wrestler_id": "34937793132",
+  "name": "Tommy Aiello",
+  "team": "Hofstra",
+  "team_slug": "hofstra",
+  "team_rank": 70,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.61,
+    "pa7": 9.51,
+    "pd7": -2.9,
+    "si_plus": 91.2,
+    "df_plus": 95.2,
+    "apr_plus": 101.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.839,
+      "matches": 5,
+      "rank_weight": 140,
+      "rank_overall": 1549,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934458132",
+      "opponent_name": "Jack Parker",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 32,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "6:46",
+      "event": "Keystone Classic",
+      "mv_impact": -6.31
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935978132",
+      "opponent_name": "Alex Reed",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 54,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "15-12",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -5.01
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34949292132",
+      "opponent_name": "Tyler Hildebrandt",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 77,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -0.7
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34957599132",
+      "opponent_name": "Tyler Garvin",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -3.18
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34935978132",
+      "opponent_name": "Alex Reed",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 54,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 0.99
+    }
+  ]
+}

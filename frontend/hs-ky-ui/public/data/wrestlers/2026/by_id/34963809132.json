@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34963809132",
+  "name": "Maxx Fesinger",
+  "team": "Mercyherst",
+  "team_slug": "mercyherst",
+  "team_rank": 73,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 79,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.75,
+    "pa7": 20.5,
+    "pd7": -14.75,
+    "si_plus": 101.2,
+    "df_plus": 73.5,
+    "apr_plus": 100.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.364,
+      "matches": 4,
+      "rank_weight": 184,
+      "rank_overall": 1986,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34953876132",
+      "opponent_rank": 77,
+      "opponent_name": "Braden Brown",
+      "method": "Dec 16-9"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34950405132",
+      "opponent_name": "Aidan Wallace",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 69,
+      "opponent_weight": 174,
+      "opponent_rank": 29,
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "2:48",
+      "event": "vs. Mercyhurst",
+      "mv_impact": -3.19
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34934259132",
+      "opponent_name": "Beau Lewis",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 79,
+      "opponent_weight": 174,
+      "opponent_rank": 51,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:28",
+      "event": "vs. Mercyhurst",
+      "mv_impact": -6.17
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34934361132",
+      "opponent_name": "Gage Laplante",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "Army Open",
+      "mv_impact": -5.69
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34953876132",
+      "opponent_name": "Braden Brown",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 72,
+      "opponent_weight": 174,
+      "opponent_rank": 77,
+      "result": "L",
+      "method": "DEC",
+      "score": "16-9",
+      "duration": "7:00",
+      "event": "Army Open",
+      "mv_impact": -6.4
+    }
+  ]
+}

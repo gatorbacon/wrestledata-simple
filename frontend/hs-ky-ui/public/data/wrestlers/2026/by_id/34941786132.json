@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34941786132",
+  "name": "Ryder Rogotzke",
+  "team": "Ohio State",
+  "team_slug": "ohio_state",
+  "team_rank": 2,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 10.0,
+    "pd7": -6.0,
+    "si_plus": 98.1,
+    "df_plus": 105.2,
+    "apr_plus": 136.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 3.496,
+      "matches": 3,
+      "rank_weight": 11,
+      "rank_overall": 92,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34941583132",
+      "opponent_rank": 55,
+      "opponent_name": "Myron Mendez",
+      "method": "Fall 1:56"
+    },
+    "worst_loss": {
+      "opponent_id": "34941778132",
+      "opponent_rank": 18,
+      "opponent_name": "Luke Geog",
+      "method": "Dec 10-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34944177132",
+      "opponent_name": "Owen Heiser",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 57,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "Clarion Open",
+      "mv_impact": 6.33
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941778132",
+      "opponent_name": "Luke Geog",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 197,
+      "opponent_rank": 18,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-4",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -1.14
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941583132",
+      "opponent_name": "Myron Mendez",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 197,
+      "opponent_rank": 55,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "Clarion Open",
+      "mv_impact": 5.3
+    }
+  ]
+}

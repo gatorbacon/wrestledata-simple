@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>xTP Team Projections</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <style>
+    .expandable-row {
+      cursor: pointer;
+    }
+    .expand-icon {
+      display: inline-block;
+      width: 12px;
+      text-align: center;
+      margin-right: 8px;
+      color: var(--muted);
+    }
+    .expanded .expand-icon::before {
+      content: "▼";
+    }
+    .collapsed .expand-icon::before {
+      content: "▶";
+    }
+    .weight-breakdown {
+      display: none;
+    }
+    .weight-breakdown.expanded {
+      display: table-row;
+    }
+    .weight-breakdown td {
+      padding: 12px;
+      background-color: var(--panel);
+    }
+    .weight-breakdown table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+    }
+    .weight-breakdown th,
+    .weight-breakdown td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .weight-breakdown th {
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.9em;
+      background-color: var(--panel-2);
+    }
+    .weight-breakdown tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .no-qualifier {
+      color: var(--muted);
+      font-style: italic;
+    }
+    
+    /* Expanded row visual hierarchy - nested appearance */
+    .weight-breakdown.expanded td {
+      padding-left: 24px; /* Left indentation for nesting */
+      background-color: var(--panel);
+      border-left: 2px solid var(--border);
+    }
+    
+    /* Expanded row hover - subtle, lower contrast than team rows */
+    .weight-breakdown.expanded tbody tr:hover {
+      background-color: var(--panel-2);
+      transition: background-color 0.15s ease;
+    }
+    
+    /* Shrink component columns in expanded rows */
+    .weight-breakdown .expanded-component-col {
+      width: 60px; /* ~35% reduction from 96px */
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+    
+    /* Widen xTP column in expanded rows for proper bar space */
+    .weight-breakdown .expanded-xtp-cell {
+      min-width: 180px;
+      width: 180px;
+    }
+    
+    /* Expanded xTP bars use same metric-bar system as collapsed rows */
+    .weight-breakdown .expanded-xtp-cell .metric-bar {
+      /* Bars are left-aligned, number right-aligned (same as collapsed) */
+      /* No special styling needed - uses existing metric-bar styles */
+    }
+    
+    /* Make expanded rows subordinate to main team rows */
+    .xtp-expanded-row {
+      font-size: 0.88em;   /* ~12.5–13px if base is 14–15px */
+      line-height: 1.15;
+    }
+    
+    /* Tighten vertical density for expanded rows */
+    .xtp-expanded-row td {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      color: var(--muted);  /* Slightly reduce contrast */
+    }
+    
+    /* Preserve link colors for wrestler names */
+    .xtp-expanded-row td a {
+      color: var(--accent);
+    }
+    
+    .xtp-expanded-row td a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    
+    /* Indent expanded rows to create hierarchy */
+    .xtp-expanded-row td:first-child {
+      padding-left: 20px;
+    }
+    
+    /* Tighten subcomponent columns in expanded rows */
+    .xtp-expanded-row td.xtp-sub {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-size: 0.9em;
+      color: var(--muted);
+    }
+    
+    /* Preserve hover highlighting for expanded rows */
+    .xtp-expanded-row:hover {
+      background: var(--panel-2);
+    }
+  </style>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>
+        xTP Team Projections
+        <span class="tooltip-icon" data-tooltip="xtp">→</span>
+      </h1>
+      <div class="header-subline" id="season-info"></div>
+      <p class="header-explainer">
+        xTP (Expected Team Points) estimates a team's expected NCAA tournament points based on advancement, placement, and bonus probabilities.
+      </p>
+    </header>
+
+    <section class="section">
+      <div class="table-wrapper">
+        <table id="xtp-team-leaderboard-table">
+          <thead>
+            <tr>
+              <th style="width: 40px;"></th>
+              <th>Rank</th>
+              <th>Team</th>
+              <th class="col-xtp">xTP <span class="tooltip-icon" data-tooltip="xtp">→</span></th>
+              <th class="xtp-component-col">Placement <span class="tooltip-icon" data-tooltip="xtp-p">→</span></th>
+              <th class="xtp-component-col">Advancement <span class="tooltip-icon" data-tooltip="xtp-a">→</span></th>
+              <th class="xtp-component-col">Bonus <span class="tooltip-icon" data-tooltip="xtp-b">→</span></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/tooltips.js"></script>
+  <script src="/leaderboards/xtp/teams.js"></script>
+</body>
+</html>
+

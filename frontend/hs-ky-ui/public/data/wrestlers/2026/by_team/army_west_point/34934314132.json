@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34934314132",
+  "name": "Eli Pack",
+  "team": "Army West Point",
+  "team_slug": "army_west_point",
+  "team_rank": 36,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 4.0,
+    "pd7": -2.0,
+    "si_plus": 83.6,
+    "df_plus": 106.1,
+    "apr_plus": 109.5,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.746,
+      "matches": 4,
+      "rank_weight": 94,
+      "rank_overall": 995,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34953904132",
+      "opponent_rank": 62,
+      "opponent_name": "John Dusza",
+      "method": "Dec 6-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34937482132",
+      "opponent_name": "Edison Flores",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 52,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": 0.1
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34953904132",
+      "opponent_name": "John Dusza",
+      "opponent_team": "LIU",
+      "opponent_team_rank": 72,
+      "opponent_weight": 197,
+      "opponent_rank": 62,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -4.41
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34952975132",
+      "opponent_name": "Connor Scuilla",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 48,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:14",
+      "event": "Black Knight Invite",
+      "mv_impact": 4.59
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34939027132",
+      "opponent_name": "Connor Mirasola",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:38",
+      "event": "Black Knight Invite",
+      "mv_impact": -3.26
+    }
+  ]
+}

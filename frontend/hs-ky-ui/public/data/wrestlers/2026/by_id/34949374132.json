@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34949374132",
+  "name": "Eric Wolf",
+  "team": "Sacred Heart",
+  "team_slug": "sacred_heart",
+  "team_rank": 77,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.66,
+    "pa7": 19.5,
+    "pd7": -17.84,
+    "si_plus": 84.4,
+    "df_plus": 80.0,
+    "apr_plus": 95.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.415,
+      "matches": 4,
+      "rank_weight": 196,
+      "rank_overall": 2083,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34950397132",
+      "opponent_rank": 74,
+      "opponent_name": "Gaetano Console",
+      "method": "TF 21-5 5:16"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34947817132",
+      "opponent_name": "Deakon Bailey",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 60,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -8.3
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935057132",
+      "opponent_name": "Eric Alderfer",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 61,
+      "opponent_weight": 174,
+      "opponent_rank": 57,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:34",
+      "event": "Big Red Invitational",
+      "mv_impact": -4.28
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34949037132",
+      "opponent_name": "Aidan Zarrella",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 77,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "13-0",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -5.87
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34950397132",
+      "opponent_name": "Gaetano Console",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 69,
+      "opponent_weight": 184,
+      "opponent_rank": 74,
+      "result": "L",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "5:16",
+      "event": "vs. Sacred Heart",
+      "mv_impact": -7.21
+    }
+  ]
+}

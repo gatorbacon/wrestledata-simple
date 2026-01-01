@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34941565132",
+  "name": "Amare Overton",
+  "team": "SIU Edwardsville",
+  "team_slug": "siu_edwardsville",
+  "team_rank": 24,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 1.0,
+    "pd7": 2.0,
+    "si_plus": 84.3,
+    "df_plus": 113.0,
+    "apr_plus": 101.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.707,
+      "matches": 2,
+      "rank_weight": 108,
+      "rank_overall": 1259,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34963170132",
+      "opponent_rank": 10,
+      "opponent_name": "Brian Soldano",
+      "method": "Fall 0:57"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34950406132",
+      "opponent_name": "David Hussey",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 69,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "vs. SIU Edwardsville",
+      "mv_impact": 0.1
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34963170132",
+      "opponent_name": "Brian Soldano",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 23,
+      "opponent_weight": 184,
+      "opponent_rank": 10,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "vs. SIU Edwardsville",
+      "mv_impact": -3.52
+    }
+  ]
+}

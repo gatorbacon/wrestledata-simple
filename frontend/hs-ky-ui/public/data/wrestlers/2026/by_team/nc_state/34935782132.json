@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34935782132",
+  "name": "Brogan Tucker",
+  "team": "NC State",
+  "team_slug": "nc_state",
+  "team_rank": 6,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.0,
+    "pa7": 3.0,
+    "pd7": 5.0,
+    "si_plus": 108.1,
+    "df_plus": 110.3,
+    "apr_plus": 106.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.988,
+      "matches": 2,
+      "rank_weight": 11,
+      "rank_overall": 138,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34933369132",
+      "opponent_rank": 66,
+      "opponent_name": "Frank DiBella",
+      "method": "MD 11-2"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935703132",
+      "opponent_name": "Latrell Schafer",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 2.57
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34933369132",
+      "opponent_name": "Frank DiBella",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 20,
+      "opponent_weight": 157,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 3.4
+    }
+  ]
+}

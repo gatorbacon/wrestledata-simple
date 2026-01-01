@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34934606132",
+  "name": "Conor Mc Alary",
+  "team": "Michigan State",
+  "team_slug": "michigan_state",
+  "team_rank": 55,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": 21,
+  "record": {
+    "overall": "1-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 2.9,
+    "pa7": 14.56,
+    "pd7": -11.66,
+    "si_plus": 93.7,
+    "df_plus": 88.5,
+    "apr_plus": 99.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.994,
+      "matches": 4,
+      "rank_weight": 156,
+      "rank_overall": 1591,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944528132",
+      "opponent_rank": 6,
+      "opponent_name": "Kyler Larkin",
+      "method": "TF 20-3 3:11"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34935454132",
+      "opponent_name": "Ethan Uhorchuk",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 66,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "4:31",
+      "event": "Kent State Open 2",
+      "mv_impact": -5.13
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34951059132",
+      "opponent_name": "Benjamin Fuller",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": 0.68
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34935973132",
+      "opponent_name": "Lucas Fye",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 54,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": -5.78
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944528132",
+      "opponent_name": "Kyler Larkin",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 133,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "3:11",
+      "event": "Michigan State Open",
+      "mv_impact": -1.75
+    }
+  ]
+}

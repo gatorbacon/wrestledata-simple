@@ -1,0 +1,160 @@
+{
+  "wrestler_id": "34935983132",
+  "name": "Kelly Kakos",
+  "team": "Lock Haven",
+  "team_slug": "lock_haven",
+  "team_rank": 54,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-4",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 7.25,
+    "pd7": -1.25,
+    "si_plus": 94.5,
+    "df_plus": 101.8,
+    "apr_plus": 115.4,
+    "pin_rate": 0.667,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": -0.761,
+      "matches": 6,
+      "rank_weight": 125,
+      "rank_overall": 999,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34936234132",
+      "opponent_rank": 77,
+      "opponent_name": "Jay Chase",
+      "method": "MD 15-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34938656132",
+      "opponent_rank": 73,
+      "opponent_name": "Matt Smith",
+      "method": "Def."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34938656132",
+      "opponent_name": "Matt Smith",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 67,
+      "opponent_weight": 149,
+      "opponent_rank": 73,
+      "result": "L",
+      "method": "DFLT",
+      "score": null,
+      "duration": "7:00",
+      "event": "Kent State Open 2"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34951073132",
+      "opponent_name": "Dominic ferraro",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:47",
+      "event": "Kent State Open 2",
+      "mv_impact": 4.05
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34957111132",
+      "opponent_name": "Gage Owen",
+      "opponent_team": "American",
+      "opponent_team_rank": 47,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": -5.19
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34957130132",
+      "opponent_name": "Max Rosen",
+      "opponent_team": "American",
+      "opponent_team_rank": 47,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "Lock Haven Open I",
+      "mv_impact": 3.0
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34936234132",
+      "opponent_name": "Jay Chase",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 61,
+      "opponent_weight": 149,
+      "opponent_rank": 77,
+      "result": "W",
+      "method": "MD",
+      "score": "15-7",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": 1.64
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34940494132",
+      "opponent_name": "Julian Everitt",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 34,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": -3.82
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34938496132",
+      "opponent_name": "Anthony Basile",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 43,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "11-8",
+      "duration": "7:00",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -4.24
+    }
+  ]
+}

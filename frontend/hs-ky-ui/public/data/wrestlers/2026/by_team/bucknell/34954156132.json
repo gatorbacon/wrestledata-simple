@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "34954156132",
+  "name": "Brian Shindel",
+  "team": "Bucknell",
+  "team_slug": "bucknell",
+  "team_rank": 37,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.33,
+    "pa7": 6.33,
+    "pd7": 2.0,
+    "si_plus": 101.3,
+    "df_plus": 100.7,
+    "apr_plus": 98.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.2,
+      "matches": 3,
+      "rank_weight": 160,
+      "rank_overall": 1395,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34939066132",
+      "opponent_rank": 47,
+      "opponent_name": "Cooper Rathburn",
+      "method": "Dec 7-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34949051132",
+      "opponent_name": "Anthony Mann",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 77,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "14-4",
+      "duration": "7:00",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 0.57
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34971893132",
+      "opponent_name": "Aboubakare Diaby",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 42,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -4.94
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34939066132",
+      "opponent_name": "Cooper Rathburn",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 34,
+      "opponent_weight": 157,
+      "opponent_rank": 47,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -2.23
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "wrestler_id": "34934019132",
+  "name": "Mitchell Neiner",
+  "team": "California Baptist",
+  "team_slug": "california_baptist",
+  "team_rank": 64,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 102.8,
+    "df_plus": 103.1,
+    "apr_plus": 99.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.192,
+      "matches": 1,
+      "rank_weight": 171,
+      "rank_overall": 1828,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34936034132",
+      "opponent_rank": 15,
+      "opponent_name": "Koda Holeman",
+      "method": "Fall 4:20"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34936034132",
+      "opponent_name": "Koda Holeman",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 28,
+      "opponent_weight": 125,
+      "opponent_rank": 15,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:20",
+      "event": "vs. California Baptist",
+      "mv_impact": -4.19
+    }
+  ]
+}

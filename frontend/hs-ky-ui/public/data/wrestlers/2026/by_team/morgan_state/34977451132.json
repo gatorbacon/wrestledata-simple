@@ -1,0 +1,141 @@
+{
+  "wrestler_id": "34977451132",
+  "name": "Julian Dawson",
+  "team": "Morgan State",
+  "team_slug": "morgan_state",
+  "team_rank": 74,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 78,
+  "record": {
+    "overall": "0-6",
+    "vs_ranked": "0-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 2.42,
+    "pa7": 18.39,
+    "pd7": -15.97,
+    "si_plus": 95.0,
+    "df_plus": 83.7,
+    "apr_plus": 98.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.654,
+      "matches": 6,
+      "rank_weight": 180,
+      "rank_overall": 1905,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 5,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34937682132",
+      "opponent_rank": 67,
+      "opponent_name": "Teague Strobel",
+      "method": "TF 20-3 6:20"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34937682132",
+      "opponent_name": "Teague Strobel",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 70,
+      "opponent_weight": 125,
+      "opponent_rank": 67,
+      "result": "L",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "6:20",
+      "event": "vs. Morgan State",
+      "mv_impact": -5.89
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34955043132",
+      "opponent_name": "Keyveon Roller",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 125,
+      "opponent_rank": 44,
+      "result": "L",
+      "method": "MD",
+      "score": "19-5",
+      "duration": "7:00",
+      "event": "Dual Meet (WS-97391)",
+      "mv_impact": -2.77
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34940490132",
+      "opponent_name": "Andrew Binni",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 34,
+      "opponent_weight": 125,
+      "opponent_rank": 45,
+      "result": "L",
+      "method": "TF",
+      "score": "23-3",
+      "duration": "7:00",
+      "event": "Dual Meet (WS-96555)",
+      "mv_impact": -4.35
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34935905132",
+      "opponent_name": "Brady Joling",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 68,
+      "opponent_weight": 125,
+      "opponent_rank": 60,
+      "result": "L",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "vs. Morgan State",
+      "mv_impact": -4.16
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34935697132",
+      "opponent_name": "Vincent Robinson",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 6,
+      "opponent_weight": 125,
+      "opponent_rank": 5,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "0:00",
+      "event": "vs. NC State",
+      "mv_impact": -2.22
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34936992132",
+      "opponent_name": "Konner Lambers",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 46,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "5:53",
+      "event": "vs. Ohio",
+      "mv_impact": -8.54
+    }
+  ]
+}

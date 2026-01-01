@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34964064132",
+  "name": "Cael Rahnavardi",
+  "team": "Northern Iowa",
+  "team_slug": "northern_iowa",
+  "team_rank": 30,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.33,
+    "pa7": 8.33,
+    "pd7": -2.0,
+    "si_plus": 98.3,
+    "df_plus": 93.7,
+    "apr_plus": 110.3,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.547,
+      "matches": 4,
+      "rank_weight": 142,
+      "rank_overall": 1221,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34943963132",
+      "opponent_rank": 27,
+      "opponent_name": "J Conway",
+      "method": "MD 14-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34943963132",
+      "opponent_name": "J Conway",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 18,
+      "opponent_weight": 157,
+      "opponent_rank": 27,
+      "result": "L",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -2.8
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34941551132",
+      "opponent_name": "Eric Almarinez",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:33",
+      "event": "Cougar Clash",
+      "mv_impact": 1.67
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34941564132",
+      "opponent_name": "PJ Murphy",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -4.7
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934635132",
+      "opponent_name": "Gabriel Gallardo",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 75,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
+      "event": "vs. Northern Iowa",
+      "mv_impact": -0.35
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34953920132",
+  "name": "Chris Powell",
+  "team": "LIU",
+  "team_slug": "liu",
+  "team_rank": 72,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 63,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.2,
+    "pa7": 5.2,
+    "pd7": -4.0,
+    "si_plus": 88.5,
+    "df_plus": 106.6,
+    "apr_plus": 99.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.631,
+      "matches": 5,
+      "rank_weight": 113,
+      "rank_overall": 1239,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935054132",
+      "opponent_rank": 64,
+      "opponent_name": "Mason Rebuck",
+      "method": "Dec 2-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34935432132",
+      "opponent_rank": 60,
+      "opponent_name": "Ethan Vergara",
+      "method": "Dec 4-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-09",
+      "opponent_id": "34935054132",
+      "opponent_name": "Mason Rebuck",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 61,
+      "opponent_weight": 285,
+      "opponent_rank": 64,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "vs. LIU",
+      "mv_impact": 3.02
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34948502132",
+      "opponent_name": "Alex Semenenko",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 62,
+      "opponent_weight": 285,
+      "opponent_rank": 43,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "vs. LIU",
+      "mv_impact": -1.84
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34943973132",
+      "opponent_name": "Jarrett Stoner",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 18,
+      "opponent_weight": 285,
+      "opponent_rank": 40,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "vs. Missouri",
+      "mv_impact": -2.65
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935432132",
+      "opponent_name": "Ethan Vergara",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 66,
+      "opponent_weight": 285,
+      "opponent_rank": 60,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -3.46
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943391132",
+      "opponent_name": "Vincent Mueller",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 49,
+      "opponent_weight": 285,
+      "opponent_rank": 41,
+      "result": "L",
+      "method": "MD",
+      "score": "13-0",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -3.22
+    }
+  ]
+}

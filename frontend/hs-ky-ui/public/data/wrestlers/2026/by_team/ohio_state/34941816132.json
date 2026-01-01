@@ -1,0 +1,90 @@
+{
+  "wrestler_id": "34941816132",
+  "name": "Xander Myers",
+  "team": "Ohio State",
+  "team_slug": "ohio_state",
+  "team_rank": 2,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.5,
+    "pa7": 2.0,
+    "pd7": 3.5,
+    "si_plus": 100.1,
+    "df_plus": 109.8,
+    "apr_plus": 97.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.995,
+      "matches": 2,
+      "rank_weight": 31,
+      "rank_overall": 280,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34944030132",
+      "opponent_name": "Ronald Dimmerling",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": 2.4
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34952975132",
+      "opponent_name": "Connor Scuilla",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 48,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": 1.59
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941781132",
+      "opponent_name": "Seth Shumate",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Clarion Open"
+    }
+  ]
+}

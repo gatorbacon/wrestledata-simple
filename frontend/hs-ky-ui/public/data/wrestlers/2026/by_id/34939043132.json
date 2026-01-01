@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "34939043132",
+  "name": "Dalton Perry",
+  "team": "Penn State",
+  "team_slug": "penn_state",
+  "team_rank": 1,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 24.78,
+    "pa7": 5.22,
+    "pd7": 19.57,
+    "si_plus": 158.3,
+    "df_plus": 111.1,
+    "apr_plus": 96.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 5.401,
+      "matches": 1,
+      "rank_weight": 2,
+      "rank_overall": 10,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935553132",
+      "opponent_rank": 65,
+      "opponent_name": "Billy Meiszner",
+      "method": "TF 19-4 5:22"
+    },
+    "worst_loss": {
+      "opponent_id": "34943381132",
+      "opponent_rank": 55,
+      "opponent_name": "Richard Fedalen",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935553132",
+      "opponent_name": "Billy Meiszner",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 66,
+      "opponent_weight": 149,
+      "opponent_rank": 65,
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "5:22",
+      "event": "Black Knight Invite",
+      "mv_impact": 5.4
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943381132",
+      "opponent_name": "Richard Fedalen",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 49,
+      "opponent_weight": 149,
+      "opponent_rank": 55,
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34943406132",
+      "opponent_name": "Marco Frinzi",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 49,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Black Knight Invite"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "wrestler_id": "34934629132",
+  "name": "Javier Berg",
+  "team": "North Dakota State",
+  "team_slug": "north_dakota_state",
+  "team_rank": 75,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 9.59,
+    "pa7": 21.0,
+    "pd7": -11.41,
+    "si_plus": 116.4,
+    "df_plus": 73.5,
+    "apr_plus": 102.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.167,
+      "matches": 2,
+      "rank_weight": 170,
+      "rank_overall": 1826,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34955800132",
+      "opponent_rank": 3,
+      "opponent_name": "Jore Volk",
+      "method": "TF 22-5 3:49"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955800132",
+      "opponent_name": "Jore Volk",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 125,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "TF",
+      "score": "22-5",
+      "duration": "3:49",
+      "event": "Bison Open 2025",
+      "mv_impact": -2.23
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34935784132",
+      "opponent_name": "Abdi Unle",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 7,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "17-10",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -6.1
+    }
+  ]
+}

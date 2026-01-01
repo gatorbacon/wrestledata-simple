@@ -1,0 +1,101 @@
+{
+  "wrestler_id": "34936451132",
+  "name": "Ishmael Guerrero",
+  "team": "Oklahoma State",
+  "team_slug": "oklahoma_state",
+  "team_rank": 5,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 1.67,
+    "pa7": 12.33,
+    "pd7": -10.67,
+    "si_plus": 96.2,
+    "df_plus": 99.0,
+    "apr_plus": 127.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 4.408,
+      "matches": 3,
+      "rank_weight": 3,
+      "rank_overall": 27,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34948516132",
+      "opponent_rank": 26,
+      "opponent_name": "Max Norman",
+      "method": "Fall 2:21"
+    },
+    "worst_loss": {
+      "opponent_id": "34964074132",
+      "opponent_rank": 21,
+      "opponent_name": "Ryder Downey",
+      "method": "MD 14-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34948516132",
+      "opponent_name": "Max Norman",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 62,
+      "opponent_weight": 165,
+      "opponent_rank": 26,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:21",
+      "event": "Cougar Clash",
+      "mv_impact": 7.84
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34964074132",
+      "opponent_name": "Ryder Downey",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 30,
+      "opponent_weight": 165,
+      "opponent_rank": 21,
+      "result": "L",
+      "method": "MD",
+      "score": "14-4",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -2.11
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34941556132",
+      "opponent_name": "Brock Woodcock",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 165,
+      "opponent_rank": 29,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:33",
+      "event": "Cougar Clash",
+      "mv_impact": 7.49
+    }
+  ]
+}

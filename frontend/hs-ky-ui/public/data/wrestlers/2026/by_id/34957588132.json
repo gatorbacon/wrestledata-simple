@@ -1,0 +1,75 @@
+{
+  "wrestler_id": "34957588132",
+  "name": "Luke Jacobs",
+  "team": "Maryland",
+  "team_slug": "maryland",
+  "team_rank": 25,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 2.0,
+    "pd7": 2.0,
+    "si_plus": 84.1,
+    "df_plus": 106.1,
+    "apr_plus": 95.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.786,
+      "matches": 1,
+      "rank_weight": 126,
+      "rank_overall": 1006,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34977456132",
+      "opponent_name": "Myrin Nixon",
+      "opponent_team": "Morgan State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34933360132",
+      "opponent_name": "Chris Bacchioni",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 20,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -0.79
+    }
+  ]
+}

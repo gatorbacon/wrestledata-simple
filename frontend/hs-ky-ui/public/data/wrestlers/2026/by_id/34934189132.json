@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34934189132",
+  "name": "Dyson Dunham",
+  "team": "VMI",
+  "team_slug": "vmi",
+  "team_rank": 79,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.28,
+    "pa7": 6.8,
+    "pd7": -5.52,
+    "si_plus": 81.1,
+    "df_plus": 96.6,
+    "apr_plus": 96.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.057,
+      "matches": 3,
+      "rank_weight": 216,
+      "rank_overall": 2053,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34933608132",
+      "opponent_name": "Eren Sement",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 16,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "vs. VMI",
+      "mv_impact": -6.37
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935914132",
+      "opponent_name": "Blake Reihner",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 68,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "SV-3",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Southeast Open",
+      "mv_impact": -6.01
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943149132",
+      "opponent_name": "Elias Navida",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 44,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -5.79
+    }
+  ]
+}

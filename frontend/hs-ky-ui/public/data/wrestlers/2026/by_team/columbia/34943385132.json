@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34943385132",
+  "name": "Jack Wehmeyer",
+  "team": "Columbia",
+  "team_slug": "columbia",
+  "team_rank": 49,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 6.4,
+    "pd7": -1.4,
+    "si_plus": 94.8,
+    "df_plus": 105.4,
+    "apr_plus": 98.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.869,
+      "matches": 5,
+      "rank_weight": 114,
+      "rank_overall": 1299,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34939062132",
+      "opponent_rank": 33,
+      "opponent_name": "Zyan Hall",
+      "method": "Dec 7-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34938619132",
+      "opponent_name": "Ethan Wiant",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 67,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "vs. Columbia",
+      "mv_impact": 1.46
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34934833132",
+      "opponent_name": "Brock Zurawski",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 40,
+      "opponent_weight": 197,
+      "opponent_rank": 20,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "vs. Columbia",
+      "mv_impact": -1.41
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34939065132",
+      "opponent_name": "Payton Thomas",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 34,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.34
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955047132",
+      "opponent_name": "Steven Burrell Jr.",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-5",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -3.05
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34939062132",
+      "opponent_name": "Zyan Hall",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 34,
+      "opponent_weight": 197,
+      "opponent_rank": 33,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -2.01
+    }
+  ]
+}

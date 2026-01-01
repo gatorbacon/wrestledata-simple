@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34963126132",
+  "name": "Landyn Sommer",
+  "team": "Oklahoma",
+  "team_slug": "oklahoma",
+  "team_rank": 23,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.71,
+    "pa7": 10.73,
+    "pd7": -8.03,
+    "si_plus": 95.2,
+    "df_plus": 96.8,
+    "apr_plus": 97.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.656,
+      "matches": 4,
+      "rank_weight": 172,
+      "rank_overall": 1500,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34954155132",
+      "opponent_rank": 49,
+      "opponent_name": "Cade Wirnsberger",
+      "method": "Dec 6-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34954155132",
+      "opponent_name": "Cade Wirnsberger",
+      "opponent_team": "Bucknell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 157,
+      "opponent_rank": 49,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "vs. Oklahoma",
+      "mv_impact": -2.51
+    },
+    {
+      "date": "2025-11-14",
+      "opponent_id": "34939029132",
+      "opponent_name": "Joe Sealey",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 1,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "5:48",
+      "event": "vs. Penn State",
+      "mv_impact": -3.26
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943963132",
+      "opponent_name": "J Conway",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 18,
+      "opponent_weight": 157,
+      "opponent_rank": 27,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "Tiger Style Invite",
+      "mv_impact": -1.8
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943986132",
+      "opponent_name": "David Gleason",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 18,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Tiger Style Invite",
+      "mv_impact": -3.05
+    }
+  ]
+}

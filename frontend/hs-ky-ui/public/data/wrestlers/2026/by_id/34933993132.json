@@ -1,0 +1,80 @@
+{
+  "wrestler_id": "34933993132",
+  "name": "Brodie Dominique",
+  "team": "Michigan State",
+  "team_slug": "michigan_state",
+  "team_rank": 55,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.58,
+    "pa7": 25.0,
+    "pd7": -17.42,
+    "si_plus": 107.8,
+    "df_plus": 71.0,
+    "apr_plus": 95.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.151,
+      "matches": 1,
+      "rank_weight": 219,
+      "rank_overall": 1820,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34947354132",
+      "opponent_rank": 56,
+      "opponent_name": "Silas Stits",
+      "method": "TF 20-5 4:37"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34947354132",
+      "opponent_name": "Silas Stits",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 149,
+      "opponent_rank": 56,
+      "result": "L",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "4:37",
+      "event": "Kent State Open 2",
+      "mv_impact": -4.15
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34933989132",
+      "opponent_name": "Sammy Agnello",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 55,
+      "opponent_weight": 149,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Kent State Open 2"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "wrestler_id": "34963803132",
+  "name": "Marcus Colson",
+  "team": "Mercyherst",
+  "team_slug": "mercyherst",
+  "team_rank": 73,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 79,
+  "record": {
+    "overall": "0-6",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.68,
+    "pa7": 19.48,
+    "pd7": -16.8,
+    "si_plus": 91.6,
+    "df_plus": 74.0,
+    "apr_plus": 98.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.277,
+      "matches": 6,
+      "rank_weight": 220,
+      "rank_overall": 2076,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34950399132",
+      "opponent_rank": 74,
+      "opponent_name": "Raymond Adams",
+      "method": "TF 21-5 4:04"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34943881132",
+      "opponent_name": "Travis Long",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 59,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": -7.51
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34946823132",
+      "opponent_name": "Luke Satriano",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 12,
+      "opponent_weight": 141,
+      "opponent_rank": 40,
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "3:11",
+      "event": "Kent State Open 2",
+      "mv_impact": -4.26
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34950399132",
+      "opponent_name": "Raymond Adams",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 69,
+      "opponent_weight": 141,
+      "opponent_rank": 74,
+      "result": "L",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "4:04",
+      "event": "vs. Mercyhurst",
+      "mv_impact": -6.4
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34934193132",
+      "opponent_name": "Phoenix Alyea",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 79,
+      "opponent_weight": 141,
+      "opponent_rank": 72,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:07",
+      "event": "vs. Mercyhurst",
+      "mv_impact": -7.21
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34947809132",
+      "opponent_name": "Ryan Hartung",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 60,
+      "opponent_weight": 141,
+      "opponent_rank": 70,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:47",
+      "event": "Army Open",
+      "mv_impact": -5.89
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34938493132",
+      "opponent_name": "Geoffrey Whelan",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 43,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "6:15",
+      "event": "Army Open",
+      "mv_impact": -6.4
+    }
+  ]
+}

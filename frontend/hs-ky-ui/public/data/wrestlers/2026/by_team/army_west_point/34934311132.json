@@ -1,0 +1,141 @@
+{
+  "wrestler_id": "34934311132",
+  "name": "Kent McCombs",
+  "team": "Army West Point",
+  "team_slug": "army_west_point",
+  "team_rank": 36,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-5",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.56,
+    "pa7": 13.72,
+    "pd7": -6.16,
+    "si_plus": 95.7,
+    "df_plus": 84.6,
+    "apr_plus": 97.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.556,
+      "matches": 6,
+      "rank_weight": 160,
+      "rank_overall": 1702,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934461132",
+      "opponent_rank": 66,
+      "opponent_name": "Dominic Wheatley",
+      "method": "Dec 2-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34934320132",
+      "opponent_name": "Andrew Christie",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 174,
+      "opponent_rank": 43,
+      "result": "L",
+      "method": "MD",
+      "score": "14-1",
+      "duration": "7:00",
+      "event": "Army Open",
+      "mv_impact": -3.36
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34938483132",
+      "opponent_name": "Logan Messer",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 43,
+      "opponent_weight": 174,
+      "opponent_rank": 27,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "2:18",
+      "event": "Army Open",
+      "mv_impact": -3.25
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34944353132",
+      "opponent_name": "Alex Hopper",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 58,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:53",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -5.05
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34938655132",
+      "opponent_name": "Gabe Lilly",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 67,
+      "opponent_weight": 174,
+      "opponent_rank": 65,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:32",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -6.37
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943414132",
+      "opponent_name": "Jeremy Pitcock",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 49,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "2:41",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 0.93
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934461132",
+      "opponent_name": "Dominic Wheatley",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 32,
+      "opponent_weight": 174,
+      "opponent_rank": 66,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.24
+    }
+  ]
+}

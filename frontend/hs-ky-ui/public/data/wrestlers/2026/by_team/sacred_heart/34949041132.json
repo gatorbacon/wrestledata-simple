@@ -1,0 +1,146 @@
+{
+  "wrestler_id": "34949041132",
+  "name": "Hunter Perez",
+  "team": "Sacred Heart",
+  "team_slug": "sacred_heart",
+  "team_rank": 77,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 73,
+  "record": {
+    "overall": "1-5",
+    "vs_ranked": "1-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 7.2,
+    "pa7": 11.6,
+    "pd7": -4.4,
+    "si_plus": 98.2,
+    "df_plus": 94.6,
+    "apr_plus": 99.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.918,
+      "matches": 6,
+      "rank_weight": 132,
+      "rank_overall": 1567,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 5,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34934221132",
+      "opponent_rank": 76,
+      "opponent_name": "Andrew Barford",
+      "method": "MD 20-11"
+    },
+    "worst_loss": {
+      "opponent_id": "34937673132",
+      "opponent_rank": 72,
+      "opponent_name": "Matt Waddell",
+      "method": "MD 15-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34936204132",
+      "opponent_name": "Ethan Ducca",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 61,
+      "opponent_weight": 184,
+      "opponent_rank": 62,
+      "result": "L",
+      "method": "MD",
+      "score": "17-5",
+      "duration": "7:00",
+      "event": "vs. Sacred Heart",
+      "mv_impact": -4.66
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34934221132",
+      "opponent_name": "Andrew Barford",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 79,
+      "opponent_weight": 184,
+      "opponent_rank": 76,
+      "result": "W",
+      "method": "MD",
+      "score": "20-11",
+      "duration": "7:00",
+      "event": "vs. VMI",
+      "mv_impact": 1.55
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34934699132",
+      "opponent_name": "James Conway",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 32,
+      "opponent_weight": 184,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:28",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -2.9
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34943283132",
+      "opponent_name": "Caleb Uhlenhopp",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 31,
+      "opponent_weight": 184,
+      "opponent_rank": 30,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "43rd Annual Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -2.09
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34935929132",
+      "opponent_name": "cody kirk",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 68,
+      "opponent_weight": 184,
+      "opponent_rank": 57,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "vs. Sacred Heart",
+      "mv_impact": -3.55
+    },
+    {
+      "date": "2025-11-13",
+      "opponent_id": "34937673132",
+      "opponent_name": "Matt Waddell",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 70,
+      "opponent_weight": 184,
+      "opponent_rank": 72,
+      "result": "L",
+      "method": "MD",
+      "score": "15-6",
+      "duration": "7:00",
+      "event": "vs. Sacred Heart",
+      "mv_impact": -5.86
+    }
+  ]
+}

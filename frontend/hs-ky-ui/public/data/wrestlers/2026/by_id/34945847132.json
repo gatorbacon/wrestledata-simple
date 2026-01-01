@@ -1,0 +1,109 @@
+{
+  "wrestler_id": "34945847132",
+  "name": "Anthony Isek",
+  "team": "Indiana",
+  "team_slug": "indiana",
+  "team_rank": 33,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 2.56,
+    "pa7": 12.92,
+    "pd7": -10.36,
+    "si_plus": 94.7,
+    "df_plus": 84.6,
+    "apr_plus": 97.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.645,
+      "matches": 2,
+      "rank_weight": 198,
+      "rank_overall": 2096,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944010132",
+      "opponent_rank": 62,
+      "opponent_name": "Nico Calello",
+      "method": "Def."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34951031132",
+      "opponent_name": "Eamonn Jimenez",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Kent State Open 1"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944010132",
+      "opponent_name": "Nico Calello",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 125,
+      "opponent_rank": 62,
+      "result": "L",
+      "method": "DFLT",
+      "score": null,
+      "duration": "7:00",
+      "event": "Kent State Open 1"
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944577132",
+      "opponent_name": "Ane`e Vigil",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:03",
+      "event": "Michigan State Open",
+      "mv_impact": -9.25
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955729132",
+      "opponent_name": "Dedrick Navarro",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 45,
+      "opponent_weight": 125,
+      "opponent_rank": 21,
+      "result": "L",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "6:43",
+      "event": "Michigan State Open",
+      "mv_impact": -4.04
+    }
+  ]
+}

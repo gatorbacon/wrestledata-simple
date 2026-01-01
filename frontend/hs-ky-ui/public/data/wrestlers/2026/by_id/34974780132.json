@@ -1,0 +1,146 @@
+{
+  "wrestler_id": "34974780132",
+  "name": "Magnus Bibla",
+  "team": "Buffalo",
+  "team_slug": "buffalo",
+  "team_rank": 48,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 73,
+  "record": {
+    "overall": "3-3",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.2,
+    "pa7": 3.8,
+    "pd7": 0.4,
+    "si_plus": 96.8,
+    "df_plus": 106.2,
+    "apr_plus": 96.1,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.514,
+      "matches": 6,
+      "rank_weight": 109,
+      "rank_overall": 1205,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34937494132",
+      "opponent_rank": 74,
+      "opponent_name": "Rocky Files",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34938625132",
+      "opponent_rank": 72,
+      "opponent_name": "John Meyers",
+      "method": "Dec 4-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34946245132",
+      "opponent_name": "Christian Bell",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 78,
+      "opponent_weight": 285,
+      "opponent_rank": 65,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Dual Meet (WS-96511)",
+      "mv_impact": -3.97
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34938511132",
+      "opponent_name": "Herbert Billups",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 43,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:00",
+      "event": "Dual Meet (WS-96513)",
+      "mv_impact": 4.94
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34937494132",
+      "opponent_name": "Rocky Files",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 52,
+      "opponent_weight": 285,
+      "opponent_rank": 74,
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Gardner-Webb",
+      "mv_impact": -0.37
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34944016132",
+      "opponent_name": "Corey Boerio",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "vs. Kent State",
+      "mv_impact": -0.53
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34964527132",
+      "opponent_name": "Cy Kruse",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 9,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -3.13
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938625132",
+      "opponent_name": "John Meyers",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 67,
+      "opponent_weight": 285,
+      "opponent_rank": 72,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -6.02
+    }
+  ]
+}

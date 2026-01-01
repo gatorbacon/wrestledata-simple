@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34937480132",
+  "name": "Matthew Rowland",
+  "team": "Gardner-Webb",
+  "team_slug": "gardnerwebb",
+  "team_rank": 52,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.95,
+    "pa7": 13.1,
+    "pd7": -11.15,
+    "si_plus": 89.9,
+    "df_plus": 95.8,
+    "apr_plus": 98.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.082,
+      "matches": 4,
+      "rank_weight": 191,
+      "rank_overall": 2058,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34937009132",
+      "opponent_rank": 68,
+      "opponent_name": "Brayden Teunissen",
+      "method": "SV-1 4-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34937009132",
+      "opponent_name": "Brayden Teunissen",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 46,
+      "opponent_weight": 125,
+      "opponent_rank": 68,
+      "result": "L",
+      "method": "SV-1",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "vs. Ohio",
+      "mv_impact": -3.21
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "34933988132",
+      "opponent_name": "Caleb Weiand",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 55,
+      "opponent_weight": 133,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "4:41",
+      "event": "vs. Michigan State",
+      "mv_impact": -9.27
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934307132",
+      "opponent_name": "Charlie Farmer",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 36,
+      "opponent_weight": 125,
+      "opponent_rank": 40,
+      "result": "L",
+      "method": "DEC",
+      "score": "12-5",
+      "duration": "7:00",
+      "event": "Black Knight Invite",
+      "mv_impact": -2.77
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935431132",
+      "opponent_name": "Ty Tice",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 66,
+      "opponent_weight": 125,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:23",
+      "event": "Black Knight Invite",
+      "mv_impact": -9.07
+    }
+  ]
+}

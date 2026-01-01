@@ -1,0 +1,66 @@
+{
+  "wrestler_id": "34955048132",
+  "name": "Ryan Catka",
+  "team": "Virginia",
+  "team_slug": "virginia",
+  "team_rank": 50,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 102.8,
+    "df_plus": 103.1,
+    "apr_plus": 170.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 6.017,
+      "matches": 1,
+      "rank_weight": 1,
+      "rank_overall": 4,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935054132",
+      "opponent_rank": 64,
+      "opponent_name": "Mason Rebuck",
+      "method": "Fall 3:15"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34935054132",
+      "opponent_name": "Mason Rebuck",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 61,
+      "opponent_weight": 285,
+      "opponent_rank": 64,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:15",
+      "event": "vs. Virginia",
+      "mv_impact": 6.02
+    }
+  ]
+}

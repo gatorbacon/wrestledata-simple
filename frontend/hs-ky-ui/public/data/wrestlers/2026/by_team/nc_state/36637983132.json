@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "36637983132",
+  "name": "Patrick Brophy",
+  "team": "NC State",
+  "team_slug": "nc_state",
+  "team_rank": 6,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 9.67,
+    "pa7": 6.33,
+    "pd7": 3.33,
+    "si_plus": 105.1,
+    "df_plus": 106.0,
+    "apr_plus": 96.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.246,
+      "matches": 3,
+      "rank_weight": 44,
+      "rank_overall": 420,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34952964132",
+      "opponent_rank": 60,
+      "opponent_name": "Connor Jacobs",
+      "method": "Dec 6-3"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34938513132",
+      "opponent_name": "Jack Kelly",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 43,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "13-7",
+      "duration": "7:00",
+      "event": "vs. NC State",
+      "mv_impact": 1.71
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34952964132",
+      "opponent_name": "Connor Jacobs",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 48,
+      "opponent_weight": 197,
+      "opponent_rank": 60,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "vs. NC State",
+      "mv_impact": 2.04
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34946227132",
+      "opponent_name": "Adam Ortega",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 78,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-9",
+      "duration": "7:00",
+      "event": "vs. The Citadel",
+      "mv_impact": -0.01
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "wrestler_id": "34950658132",
+  "name": "Jesse Vasquez",
+  "team": "California Baptist",
+  "team_slug": "california_baptist",
+  "team_rank": 64,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 39,
+  "record": {
+    "overall": "4-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 8.38,
+    "pa7": 4.79,
+    "pd7": 3.59,
+    "si_plus": 111.4,
+    "df_plus": 104.6,
+    "apr_plus": 97.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.944,
+      "matches": 6,
+      "rank_weight": 27,
+      "rank_overall": 290,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34971900132",
+      "opponent_rank": 47,
+      "opponent_name": "Jordan Soriano",
+      "method": "MD 11-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34943443132",
+      "opponent_rank": 16,
+      "opponent_name": "Jack Consiglio",
+      "method": "MD 20-7"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34936093132",
+      "opponent_name": "Aiden Simmons",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 28,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "vs. California Baptist",
+      "mv_impact": 3.05
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34971900132",
+      "opponent_name": "Jordan Soriano",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 42,
+      "opponent_weight": 141,
+      "opponent_rank": 47,
+      "result": "W",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "vs. Drexel",
+      "mv_impact": 4.55
+    },
+    {
+      "date": "2025-12-15",
+      "opponent_id": "34954509132",
+      "opponent_name": "Ryan Luna",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 76,
+      "opponent_weight": 141,
+      "opponent_rank": 51,
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "5:07",
+      "event": "vs. Presbyterian",
+      "mv_impact": 5.42
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34933453132",
+      "opponent_name": "John Alden",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 15,
+      "opponent_weight": 141,
+      "opponent_rank": 56,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "vs. Wyoming",
+      "mv_impact": 2.1
+    },
+    {
+      "date": "2025-11-20",
+      "opponent_id": "34943278132",
+      "opponent_name": "Haiden Drury",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 31,
+      "opponent_weight": 141,
+      "opponent_rank": 8,
+      "result": "L",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "vs. Utah Valley",
+      "mv_impact": -0.96
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34943443132",
+      "opponent_name": "Jack Consiglio",
+      "opponent_team": "Stanford",
+      "opponent_team_rank": 22,
+      "opponent_weight": 141,
+      "opponent_rank": 16,
+      "result": "L",
+      "method": "MD",
+      "score": "20-7",
+      "duration": "7:00",
+      "event": "vs. Stanford",
+      "mv_impact": -2.49
+    }
+  ]
+}

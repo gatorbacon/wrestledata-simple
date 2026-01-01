@@ -1,0 +1,111 @@
+{
+  "wrestler_id": "34955417132",
+  "name": "Damarion Ross",
+  "team": "Northern Illinois",
+  "team_slug": "northern_illinois",
+  "team_rank": 39,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 65,
+  "record": {
+    "overall": "1-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.7,
+    "pa7": 3.42,
+    "pd7": -1.72,
+    "si_plus": 88.8,
+    "df_plus": 107.9,
+    "apr_plus": 100.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.432,
+      "matches": 4,
+      "rank_weight": 119,
+      "rank_overall": 1447,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944021132",
+      "opponent_rank": 42,
+      "opponent_name": "Trent Thomas",
+      "method": "Dec 8-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34943974132",
+      "opponent_name": "Logan Cole",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 18,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:13",
+      "event": "Kaufman Brand Bayly UCM Open",
+      "mv_impact": -5.91
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934110132",
+      "opponent_name": "Wyatt Ferguson",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 65,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "SV-1",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Michigan State Open",
+      "mv_impact": 2.52
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944018132",
+      "opponent_name": "Holden Martin",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 184,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TB-1",
+      "score": "2-1",
+      "duration": "10:00",
+      "event": "Michigan State Open",
+      "mv_impact": -3.62
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34944021132",
+      "opponent_name": "Trent Thomas",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 184,
+      "opponent_rank": 42,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -2.72
+    }
+  ]
+}

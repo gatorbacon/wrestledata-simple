@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34964524132",
+  "name": "Joseph Knackstedt",
+  "team": "Cornell",
+  "team_slug": "cornell",
+  "team_rank": 9,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "4-1",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.13,
+    "pa7": 1.9,
+    "pd7": 5.23,
+    "si_plus": 95.4,
+    "df_plus": 109.3,
+    "apr_plus": 103.4,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.029,
+      "matches": 5,
+      "rank_weight": 84,
+      "rank_overall": 776,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34952969132",
+      "opponent_rank": 62,
+      "opponent_name": "Aaron Lanster",
+      "method": "TB-2 (RT) 2-1"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936202132",
+      "opponent_name": "Richie Woods",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 61,
+      "opponent_weight": 141,
+      "opponent_rank": 76,
+      "result": "W",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": 1.57
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34949426132",
+      "opponent_name": "Josias Daniels",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 77,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
+      "event": "Big Red Invitational",
+      "mv_impact": 1.25
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34949033132",
+      "opponent_name": "Jake Ice",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 77,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": 1.37
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34952969132",
+      "opponent_name": "Aaron Lanster",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 48,
+      "opponent_weight": 141,
+      "opponent_rank": 62,
+      "result": "W",
+      "method": "TB-2",
+      "score": "2-1",
+      "duration": "10:00",
+      "event": "Clarion Open",
+      "mv_impact": 2.1
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941546132",
+      "opponent_name": "Alec Peralta",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 24,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:49",
+      "event": "Clarion Open",
+      "mv_impact": -6.44
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "35025185132",
+  "name": "Cameron Guether",
+  "team": "Northern Iowa",
+  "team_slug": "northern_iowa",
+  "team_rank": 30,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.05,
+    "pa7": 8.0,
+    "pd7": -3.95,
+    "si_plus": 94.7,
+    "df_plus": 90.5,
+    "apr_plus": 100.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.674,
+      "matches": 5,
+      "rank_weight": 159,
+      "rank_overall": 1725,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34937105132",
+      "opponent_rank": 77,
+      "opponent_name": "Enzo Cappabianca",
+      "method": "MD 11-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34943973132",
+      "opponent_rank": 40,
+      "opponent_name": "Jarrett Stoner",
+      "method": "TF 17-2 3:18"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34952077132",
+      "opponent_name": "Peter Marinopoulos",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 10,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -5.67
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34943973132",
+      "opponent_name": "Jarrett Stoner",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 18,
+      "opponent_weight": 285,
+      "opponent_rank": 40,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "3:18",
+      "event": "Cougar Clash",
+      "mv_impact": -4.65
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34937105132",
+      "opponent_name": "Enzo Cappabianca",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 56,
+      "opponent_weight": 285,
+      "opponent_rank": 77,
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Younes Hospitality Open",
+      "mv_impact": 1.32
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34964066132",
+      "opponent_name": "Adam Ahrendsen",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 30,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Younes Hospitality Open",
+      "mv_impact": -4.27
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34940723132",
+      "opponent_name": "Daniel Herrera",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 3,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Grand View Open",
+      "mv_impact": -5.1
+    }
+  ]
+}

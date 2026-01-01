@@ -1,0 +1,131 @@
+{
+  "wrestler_id": "34935675132",
+  "name": "Tyler Eise",
+  "team": "Nebraska",
+  "team_slug": "nebraska",
+  "team_rank": 7,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-3",
+    "vs_ranked": "2-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 5.4,
+    "pa7": 6.4,
+    "pd7": -1.0,
+    "si_plus": 104.1,
+    "df_plus": 108.3,
+    "apr_plus": 98.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.821,
+      "matches": 5,
+      "rank_weight": 45,
+      "rank_overall": 535,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34947800132",
+      "opponent_rank": 26,
+      "opponent_name": "Carter Baer",
+      "method": "Dec 8-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34943148132",
+      "opponent_rank": 47,
+      "opponent_name": "Jake Dailey",
+      "method": "Dec 8-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-19",
+      "opponent_id": "34943148132",
+      "opponent_name": "Jake Dailey",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 44,
+      "opponent_weight": 184,
+      "opponent_rank": 47,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "vs. North Carolina",
+      "mv_impact": -2.44
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34947800132",
+      "opponent_name": "Carter Baer",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 60,
+      "opponent_weight": 174,
+      "opponent_rank": 26,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": 4.46
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34971902132",
+      "opponent_name": "Jasiah Queen",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 42,
+      "opponent_weight": 174,
+      "opponent_rank": 11,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": -1.38
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34938483132",
+      "opponent_name": "Logan Messer",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 43,
+      "opponent_weight": 174,
+      "opponent_rank": 27,
+      "result": "W",
+      "method": "DEC",
+      "score": "11-10",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": 4.75
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34955041132",
+      "opponent_name": "Nick Hamilton",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 50,
+      "opponent_weight": 174,
+      "opponent_rank": 17,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": -1.29
+    }
+  ]
+}

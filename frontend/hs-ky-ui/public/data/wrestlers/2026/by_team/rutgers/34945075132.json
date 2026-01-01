@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34945075132",
+  "name": "Ryan Ford",
+  "team": "Rutgers",
+  "team_slug": "rutgers",
+  "team_rank": 17,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 25,
+  "record": {
+    "overall": "5-0",
+    "vs_ranked": "4-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 10.72,
+    "pa7": 2.47,
+    "pd7": 8.25,
+    "si_plus": 122.4,
+    "df_plus": 110.3,
+    "apr_plus": 96.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.4,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.64,
+      "matches": 5,
+      "rank_weight": 7,
+      "rank_overall": 76,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 4,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935899132",
+      "opponent_rank": 30,
+      "opponent_name": "Tanner Peake",
+      "method": "TF 17-2 5:37"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34963168132",
+      "opponent_name": "Bryce Burkett",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 23,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "SV-1",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "vs. Rutgers",
+      "mv_impact": 1.12
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34935899132",
+      "opponent_name": "Tanner Peake",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 68,
+      "opponent_weight": 165,
+      "opponent_rank": 30,
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "5:37",
+      "event": "vs. Rutgers",
+      "mv_impact": 6.1
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34939063132",
+      "opponent_name": "Dylan Elmore",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 34,
+      "opponent_weight": 165,
+      "opponent_rank": 34,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "vs. Rutgers",
+      "mv_impact": 4.24
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34936203132",
+      "opponent_name": "Braidon Woodward",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 61,
+      "opponent_weight": 165,
+      "opponent_rank": 60,
+      "result": "W",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
+      "event": "vs. Rutgers",
+      "mv_impact": 4.01
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34939079132",
+      "opponent_name": "Nathan McCartney",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 52,
+      "opponent_weight": 165,
+      "opponent_rank": 59,
+      "result": "W",
+      "method": "DEC",
+      "score": "11-5",
+      "duration": "7:00",
+      "event": "vs. Rutgers",
+      "mv_impact": 2.73
+    }
+  ]
+}

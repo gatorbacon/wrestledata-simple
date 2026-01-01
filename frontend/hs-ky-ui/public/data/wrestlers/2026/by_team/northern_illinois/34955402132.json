@@ -1,0 +1,76 @@
+{
+  "wrestler_id": "34955402132",
+  "name": "Brody Hallin",
+  "team": "Northern Illinois",
+  "team_slug": "northern_illinois",
+  "team_rank": 39,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.5,
+    "pa7": 7.0,
+    "pd7": -6.5,
+    "si_plus": 78.8,
+    "df_plus": 101.0,
+    "apr_plus": 97.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.091,
+      "matches": 2,
+      "rank_weight": 227,
+      "rank_overall": 1964,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34943744132",
+      "opponent_name": "Michael Kilic",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 11,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -6.84
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933978132",
+      "opponent_name": "Braden Stauffenberg",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 55,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -3.34
+    }
+  ]
+}

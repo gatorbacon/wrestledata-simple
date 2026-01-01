@@ -1,0 +1,146 @@
+{
+  "wrestler_id": "34934757132",
+  "name": "DJ Gillett",
+  "team": "Oregon State",
+  "team_slug": "oregon_state",
+  "team_rank": 21,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-4",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.5,
+    "pa7": 10.5,
+    "pd7": -5.0,
+    "si_plus": 97.4,
+    "df_plus": 89.8,
+    "apr_plus": 100.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.22,
+      "matches": 6,
+      "rank_weight": 181,
+      "rank_overall": 1641,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34937666132",
+      "opponent_rank": 66,
+      "opponent_name": "Joe Sparacio",
+      "method": "Dec 8-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34962146132",
+      "opponent_rank": 76,
+      "opponent_name": "Hayden Zinkin",
+      "method": "Fall 2:45"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34962146132",
+      "opponent_name": "Hayden Zinkin",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 63,
+      "opponent_weight": 149,
+      "opponent_rank": 76,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "Roadrunner Open",
+      "mv_impact": -7.51
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936093132",
+      "opponent_name": "Aiden Simmons",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 28,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": -3.95
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34971904132",
+      "opponent_name": "Trey Friedman",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 42,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 1.14
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937666132",
+      "opponent_name": "Joe Sparacio",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 70,
+      "opponent_weight": 141,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 2.31
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34952669132",
+      "opponent_name": "Carter Bailey",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 13,
+      "opponent_weight": 141,
+      "opponent_rank": 48,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "4:11",
+      "event": "Princeton Open",
+      "mv_impact": -4.99
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948147132",
+      "opponent_name": "Sebastian Ortega",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 38,
+      "opponent_weight": 141,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "7:58",
+      "event": "Princeton Open",
+      "mv_impact": -6.32
+    }
+  ]
+}

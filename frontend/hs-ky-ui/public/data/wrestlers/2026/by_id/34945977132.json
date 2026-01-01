@@ -1,0 +1,126 @@
+{
+  "wrestler_id": "34945977132",
+  "name": "Matt Kowalski",
+  "team": "Indiana",
+  "team_slug": "indiana",
+  "team_rank": 33,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "4-1",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 10.75,
+    "pa7": 6.25,
+    "pd7": 4.5,
+    "si_plus": 111.6,
+    "df_plus": 102.3,
+    "apr_plus": 99.5,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.416,
+      "matches": 5,
+      "rank_weight": 40,
+      "rank_overall": 381,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34945355132",
+      "opponent_rank": 50,
+      "opponent_name": "Michael Gasper",
+      "method": "Dec 8-4"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34945355132",
+      "opponent_name": "Michael Gasper",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 14,
+      "opponent_weight": 285,
+      "opponent_rank": 50,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "vs. Little Rock",
+      "mv_impact": 2.59
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34950414132",
+      "opponent_name": "Owen McGrory",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 69,
+      "opponent_weight": 197,
+      "opponent_rank": 66,
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 3.84
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34952674132",
+      "opponent_name": "Remy Brancato",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 13,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "14-9",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -3.07
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34949035132",
+      "opponent_name": "Michael Molina",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 77,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:16",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 3.27
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34957587132",
+      "opponent_name": "Anthony Bradley",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 25,
+      "opponent_weight": 197,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 0.46
+    }
+  ]
+}

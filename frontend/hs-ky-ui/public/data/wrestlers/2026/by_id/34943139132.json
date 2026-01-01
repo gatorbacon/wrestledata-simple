@@ -1,0 +1,116 @@
+{
+  "wrestler_id": "34943139132",
+  "name": "Cade Tenold",
+  "team": "North Carolina",
+  "team_slug": "north_carolina",
+  "team_rank": 44,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 10.0,
+    "pa7": 4.0,
+    "pd7": 6.0,
+    "si_plus": 111.7,
+    "df_plus": 109.5,
+    "apr_plus": 96.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 2,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.438,
+      "matches": 4,
+      "rank_weight": 76,
+      "rank_overall": 889,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935442132",
+      "opponent_rank": 64,
+      "opponent_name": "Brody Murray",
+      "method": "MD 14-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34945529132",
+      "opponent_rank": 53,
+      "opponent_name": "Colt Campbell",
+      "method": "Fall 6:57"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34944353132",
+      "opponent_name": "Alex Hopper",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 58,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "Mountaineer Open",
+      "mv_impact": 3.95
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34945529132",
+      "opponent_name": "Colt Campbell",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 58,
+      "opponent_weight": 174,
+      "opponent_rank": 53,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:57",
+      "event": "Mountaineer Open",
+      "mv_impact": -6.65
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935442132",
+      "opponent_name": "Brody Murray",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 66,
+      "opponent_weight": 174,
+      "opponent_rank": 64,
+      "result": "W",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "Mountaineer Open",
+      "mv_impact": 2.95
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34955788132",
+      "opponent_name": "Clayton Whiting",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 8,
+      "opponent_weight": 174,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -2.0
+    }
+  ]
+}

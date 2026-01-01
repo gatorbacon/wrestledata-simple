@@ -1,0 +1,121 @@
+{
+  "wrestler_id": "34943828132",
+  "name": "Luke Leclerc",
+  "team": "Bellarmine",
+  "team_slug": "bellarmine",
+  "team_rank": 59,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-5",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.5,
+    "pa7": 12.78,
+    "pd7": -9.28,
+    "si_plus": 92.5,
+    "df_plus": 90.0,
+    "apr_plus": 98.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.427,
+      "matches": 5,
+      "rank_weight": 218,
+      "rank_overall": 1991,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34933982132",
+      "opponent_name": "Jack Conley",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 55,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": -4.32
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34945835132",
+      "opponent_name": "Chase Leech",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 33,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-6",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": -5.49
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34941783132",
+      "opponent_name": "TJ Schierl",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "Findlay Open",
+      "mv_impact": -3.58
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933982132",
+      "opponent_name": "Jack Conley",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 55,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "4:41",
+      "event": "Michigan State Open",
+      "mv_impact": -6.32
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951032132",
+      "opponent_name": "Max Kirby",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 51,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -7.42
+    }
+  ]
+}
