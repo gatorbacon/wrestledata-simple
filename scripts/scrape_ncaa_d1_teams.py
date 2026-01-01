@@ -8,18 +8,19 @@ It follows the same scraping strategy as wrestle_scraper.py but focuses only on 
 without scraping individual team pages or match data.
 """
 
+import argparse
+import boto3
 import json
 import os
+import platform
 import random
+import re
 import time
+from boto3.dynamodb.conditions import Attr
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional
 from urllib.parse import parse_qs, urlparse
-import platform
-import argparse
-import boto3
-from boto3.dynamodb.conditions import Attr
 
 from fake_useragent import UserAgent
 from selenium import webdriver
@@ -511,6 +512,31 @@ class WrestlingScraper:
                         team_id = team_data[0]  # Team ID is the first element
                         division = team_data[5] if len(team_data) > 5 else "Unknown"  # Division
                         
+                        # Extract region from Leagues column (for HS only)
+                        region = None
+                        if self.league == 'hs':
+                            # Leagues column is typically at index 4 (after Global Team, Abbr, Gov. Body)
+                            # But need to check the actual structure - try multiple indices
+                            leagues_str = ""
+                            if len(team_data) > 4:
+                                leagues_str = str(team_data[4]) if team_data[4] else ""
+                            
+                            # Parse region from "Region X" format
+                            # Leagues can have multiple values like "Region 4, Region 4, Region 4, Region 4"
+                            # Extract the first region number found
+                            region_match = re.search(r'Region\s+(\d+)', leagues_str, re.IGNORECASE)
+                            if region_match:
+                                region = region_match.group(1)
+                            else:
+                                # Try other indices if index 4 doesn't have it
+                                for idx in range(len(team_data)):
+                                    if idx != 4 and idx < len(team_data):
+                                        test_str = str(team_data[idx]) if team_data[idx] else ""
+                                        region_match = re.search(r'Region\s+(\d+)', test_str, re.IGNORECASE)
+                                        if region_match:
+                                            region = region_match.group(1)
+                                            break
+                        
                         # Filter teams based on league type
                         if self.league == 'hs':
                             # For HS, include all teams (no division filtering)
@@ -562,8 +588,13 @@ class WrestlingScraper:
                             "url": f"{BASE_URL}/seasons/TeamSchedule.jsp?twSessionId={session_id}&teamId={team_id}"  # Construct URL with both session ID and team ID
                         }
                         
+                        # Add region for HS teams only
+                        if self.league == 'hs' and region:
+                            team["region"] = region
+                        
                         teams.append(team)
-                        print(f"Processed {self.league.upper()} team: {team['name']} ({team['state']}) - {team['division']}")
+                        region_str = f" (Region {region})" if region else ""
+                        print(f"Processed {self.league.upper()} team: {team['name']} ({team['state']}) - {team['division']}{region_str}")
                         
                     except Exception as e:
                         print(f"Error processing team data: {e}")
@@ -603,20 +634,30 @@ class WrestlingScraper:
             os.makedirs(os.path.dirname(filename), exist_ok=True)
             
             # Load existing teams if file exists
-            existing_teams = []
+            existing_teams_by_name = {}  # name -> team dict
             if os.path.exists(filename):
                 with open(filename, 'r') as f:
                     existing_teams = json.load(f)
+                    # Build lookup by name for easy updates
+                    for team in existing_teams:
+                        existing_teams_by_name[team['name']] = team
             
-            # Combine and remove duplicates
-            all_teams = existing_teams + teams
+            # Merge new teams with existing teams, updating region data
             unique_teams = []
             seen_names = set()
             
-            for team in all_teams:
-                if team['name'] not in seen_names:
-                    seen_names.add(team['name'])
+            # First, process new teams from scrape (prioritize these)
+            for team in teams:
+                team_name = team['name']
+                if team_name not in seen_names:
                     unique_teams.append(team)
+                    seen_names.add(team_name)
+            
+            # Then add existing teams that weren't in the new scrape
+            for team in existing_teams_by_name.values():
+                if team['name'] not in seen_names:
+                    unique_teams.append(team)
+                    seen_names.add(team['name'])
             
             # Save to file
             with open(filename, 'w') as f:

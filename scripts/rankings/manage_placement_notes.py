@@ -153,17 +153,22 @@ def build_note_lookup(data: Dict) -> Dict[str, str]:
     return lookup
 
 
-def parse_bloodround_line(line: str) -> Optional[Tuple[str, str]]:
+def parse_bloodround_line(line: str, round_number: int = 4) -> Optional[Tuple[str, str]]:
     """
     Parse a bloodround file line to extract loser name and team.
     
-    Format: "Cons. Round 4 - Winner Name (Winner Team) X-Y won by ... over Loser Name (Loser Team) X-Y (...)"
+    Format: "Cons. Round X - Winner Name (Winner Team) X-Y won by ... over Loser Name (Loser Team) X-Y (...)"
+    
+    Args:
+        line: Line from bloodround file
+        round_number: Round number to match (4 for boys, 2 for girls)
     
     Returns:
         Tuple of (loser_name, loser_team) or None if line doesn't match format
     """
     line = line.strip()
-    if not line.startswith("Cons. Round 4"):
+    expected_prefix = f"Cons. Round {round_number}"
+    if not line.startswith(expected_prefix):
         return None
     
     # Pattern: "over Loser Name (Loser Team)"
@@ -217,7 +222,8 @@ def import_bloodround_file(
     file_path: Path,
     teams: List[Dict],
     notes_path: Path,
-    note_lookup: Dict[str, str]
+    note_lookup: Dict[str, str],
+    round_number: int = 4
 ) -> List[Dict]:
     """
     Import bloodround file and apply "BR" placement notes to losers.
@@ -227,6 +233,7 @@ def import_bloodround_file(
         teams: List of team data dictionaries
         notes_path: Path to placement_notes.json file
         note_lookup: Existing note lookup dictionary
+        round_number: Round number to match (4 for boys, 2 for girls)
         
     Returns:
         List of wrestlers that got "BR" placement applied
@@ -257,7 +264,7 @@ def import_bloodround_file(
     # Parse bloodround file
     with open(file_path, 'r', encoding='utf-8') as f:
         for line_num, line in enumerate(f, start=1):
-            result = parse_bloodround_line(line)
+            result = parse_bloodround_line(line, round_number=round_number)
             if not result:
                 continue
             
@@ -453,12 +460,22 @@ def main() -> None:
             return
         
         # Determine bloodround file path
-        bloodround_file = Path(f"data/hs_{args.state.lower()}_{args.gender}/bloodround.txt")
+        # Handle case-insensitive directory name (hs_ky_girls vs hs_ky_GIRLS)
+        gender_lower = args.gender.lower()
+        bloodround_file = Path(f"data/hs_{args.state.lower()}_{gender_lower}/bloodround.txt")
+        # Try uppercase variant if lowercase doesn't exist
+        if not bloodround_file.exists():
+            bloodround_file_upper = Path(f"data/hs_{args.state.lower()}_{args.gender.upper()}/bloodround.txt")
+            if bloodround_file_upper.exists():
+                bloodround_file = bloodround_file_upper
+        
+        # Determine round number: 2 for girls, 4 for boys
+        round_number = 2 if args.gender.lower() == 'girls' else 4
         
         print(f"Importing bloodround file: {bloodround_file}")
-        print("Applying 'BR' placement notes to wrestlers who lost in Cons. Round 4...\n")
+        print(f"Applying 'BR' placement notes to wrestlers who lost in Cons. Round {round_number}...\n")
         
-        applied = import_bloodround_file(bloodround_file, teams, notes_path, note_lookup)
+        applied = import_bloodround_file(bloodround_file, teams, notes_path, note_lookup, round_number=round_number)
         
         if applied:
             print(f"\n✓ Applied 'BR' placement note to {len(applied)} wrestler(s):")

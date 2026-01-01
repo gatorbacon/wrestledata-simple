@@ -18,6 +18,9 @@ import hashlib
 # Standard weight classes for KY HS Boys
 KY_HS_BOYS_WEIGHTS = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
 
+# Standard weight classes for KY HS Girls
+KY_HS_GIRLS_WEIGHTS = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+
 
 def normalize_weight_class_hs_boys(weight_str: str) -> Optional[str]:
     """
@@ -78,11 +81,52 @@ def create_synthetic_opponent_id(opponent_name: str, opponent_team: str) -> str:
     return f"OUTSTATE_{hash_hex}"
 
 
+def normalize_weight_class_hs_girls(weight_str: str) -> Optional[str]:
+    """
+    Normalize weight class for KY HS Girls to one of the 12 standard weights.
+    
+    Rules:
+    1. Strip prefixes (F, JV, M, etc.) and extract numeric weight
+    2. Map to nearest standard weight class
+    3. Standard weights: 100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235
+    
+    Args:
+        weight_str: Weight class string (e.g., "F145", "185 JV", "f100", "M152")
+        
+    Returns:
+        Normalized weight class string (e.g., "145", "185", "100", "152") or None if invalid
+    """
+    if not weight_str:
+        return None
+    
+    # Strip whitespace and convert to string
+    weight_str = str(weight_str).strip()
+    
+    # Remove common prefixes (F, JV, M, etc.) - case insensitive
+    # Pattern: optional letter(s) at start, then numbers, then optional " JV" or other suffix
+    weight_str = re.sub(r'^[A-Za-z]+', '', weight_str)  # Remove leading letters
+    weight_str = re.sub(r'\s+JV.*$', '', weight_str, flags=re.IGNORECASE)  # Remove " JV" suffix
+    weight_str = re.sub(r'\s+.*$', '', weight_str)  # Remove any remaining suffix
+    
+    # Extract numeric weight
+    try:
+        weight_num = int(weight_str)
+    except ValueError:
+        return None
+    
+    # Map to nearest standard weight
+    # Find the closest standard weight
+    closest_weight = min(KY_HS_GIRLS_WEIGHTS, key=lambda x: abs(x - weight_num))
+    
+    return str(closest_weight)
+
+
 def normalize_weight_class(weight_str: str, league: str = 'ncaa', state: str = None, gender: str = None) -> Optional[str]:
     """
     Normalize weight class based on league type.
     
     For KY HS Boys, applies special normalization to map to 14 standard weights.
+    For KY HS Girls, applies special normalization to map to 12 standard weights.
     For other leagues, returns weight as-is (or with minimal normalization).
     
     Args:
@@ -96,6 +140,8 @@ def normalize_weight_class(weight_str: str, league: str = 'ncaa', state: str = N
     """
     if league == 'hs' and state and state.upper() == 'KY' and gender == 'boys':
         return normalize_weight_class_hs_boys(weight_str)
+    elif league == 'hs' and state and state.upper() == 'KY' and gender == 'girls':
+        return normalize_weight_class_hs_girls(weight_str)
     else:
         # For NCAA and other leagues, return as-is (or with basic normalization)
         return str(weight_str).strip() if weight_str else None
@@ -363,13 +409,26 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                         # NCAA: Skip matches with null opponent_id (unchanged behavior)
                         continue
                 
+                # Get the weight class for this match (before checking if opponent is in all_wrestlers)
+                # This ensures we can use match weight for weight assignment even for out-of-state opponents
+                match_weight_raw = match.get('weight', '') or primary_weight_class
+                if not match_weight_raw:
+                    continue
+                
+                # Normalize weight class for HS Boys
+                match_weight = normalize_weight_class(match_weight_raw, league, state, gender) or match_weight_raw
+                match_date = match.get('date', '')
+                
                 # If opponent is not in our wrestler list (for NCAA with valid ID but not in dataset)
-                # For HS, synthetic opponents are already added to all_wrestlers above
+                # For HS, synthetic opponents are already added to all_wrestlers above (for null opponent_id)
+                # But out-of-state opponents with valid IDs may not be in all_wrestlers
                 if opponent_id not in all_wrestlers:
-                    # This only happens for NCAA when opponent has valid ID but isn't in dataset
+                    # This happens for:
+                    # - NCAA: opponent has valid ID but isn't in dataset
+                    # - HS: out-of-state opponent with valid ID (not null, so no synthetic ID created)
+                    
                     # Build a key so we don't double-count if this match appears
                     # multiple times in the source data.
-                    match_date = match.get('date', '')
                     local_key = ('nonD1', wrestler_id, opponent_id, match_date, result)
                     if local_key not in processed_matches_for_stats:
                         if (winner_name == wrestler_name and winner_team == team_name):
@@ -378,22 +437,21 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                             wrestler_info['losses'] += 1
                         wrestler_info['matches_count'] += 1
                         processed_matches_for_stats.add(local_key)
-                    # Do not include this match in wrestler_matches or global
-                    # match lists used for relationships (NCAA behavior unchanged).
+                    
+                    # For HS: Still add match to wrestler_matches for weight assignment
+                    # For NCAA: Do not include this match in wrestler_matches (unchanged behavior)
+                    if league == 'hs':
+                        wrestler_matches[wrestler_id].append((match, match_weight, match_date))
+                        # Note: opponent_id not in all_wrestlers, so we don't add to opponent's matches
+                        # But the match weight is still recorded for the KY wrestler's weight assignment
+                    
+                    # Do not include this match in global match lists used for relationships
+                    # (NCAA behavior unchanged, HS: already handled via synthetic opponents for null IDs)
                     continue
-                
-                # Get the weight class for this match
-                match_weight_raw = match.get('weight', '') or primary_weight_class
-                if not match_weight_raw:
-                    continue
-                
-                # Normalize weight class for HS Boys
-                match_weight = normalize_weight_class(match_weight_raw, league, state, gender) or match_weight_raw
                 
                 # Store match info for weight-class determination for BOTH wrestlers.
                 # Even if we cannot later determine the winner/loser reliably, these
                 # entries still help with weight assignment based on where they wrestled.
-                match_date = match.get('date', '')
                 wrestler_matches[wrestler_id].append((match, match_weight, match_date))
                 wrestler_matches[opponent_id].append((match, match_weight, match_date))
                 
@@ -623,7 +681,7 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     weight_classes = filtered_weight_classes
     
     # Convert defaultdict to regular dict and filter out empty weight classes
-    # For HS Boys, only keep the 14 standard weight classes
+    # For HS Boys and Girls, only keep the standard weight classes
     result = {}
     for wc, data in weight_classes.items():
         if data['wrestlers']:  # Only include weight classes with wrestlers
@@ -631,6 +689,11 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
             if league == 'hs' and state and state.upper() == 'KY' and gender == 'boys':
                 if wc not in [str(w) for w in KY_HS_BOYS_WEIGHTS]:
                     # Skip non-standard weights for HS Boys
+                    continue
+            # For KY HS Girls, filter to only standard weights
+            elif league == 'hs' and state and state.upper() == 'KY' and gender == 'girls':
+                if wc not in [str(w) for w in KY_HS_GIRLS_WEIGHTS]:
+                    # Skip non-standard weights for HS Girls
                     continue
             result[wc] = {
                 'wrestlers': data['wrestlers'],

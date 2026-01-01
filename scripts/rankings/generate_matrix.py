@@ -812,6 +812,12 @@ def generate_html_matrix(
         .matrix-cell[data-tooltip-id] {{
             cursor: help;
         }}
+        .matrix-cell.cell-highlighted {{
+            outline: 3px solid #0066ff;
+            outline-offset: -3px;
+            background-color: rgba(0, 102, 255, 0.15) !important;
+            cursor: pointer;
+        }}
         .tooltip-header {{
             font-weight: bold;
             margin-bottom: 8px;
@@ -1101,7 +1107,10 @@ def generate_html_matrix(
                 if cell_data.get('severity'):
                     severity_class = f" severity-{cell_data['severity']}"
                 recent_class = ' recent' if cell_data.get('recent') else ''
-                html_content += f"""                        <td class="matrix-cell {cell_data['type']}{severity_class}{recent_class}{rank_band_class}" title="{simple_tooltip}"{tooltip_data_attr}>
+                # Add data attributes for row and column indices for click-to-move feature
+                row_index = i
+                col_index = j
+                html_content += f"""                        <td class="matrix-cell {cell_data['type']}{severity_class}{recent_class}{rank_band_class}" title="{simple_tooltip}"{tooltip_data_attr} data-row-index="{row_index}" data-col-index="{col_index}">
                             {cell_data['value']}
                         </td>
 """
@@ -1229,8 +1238,65 @@ def generate_html_matrix(
             });
         }
 
+        // Track last clicked cell for double-click-to-move feature
+        let lastClickedCell = null;
+        
+        function handleCellClick(event) {
+            const cell = event.target.closest('.matrix-cell');
+            if (!cell) return;
+            
+            // Skip if clicking on diagonal (same wrestler) cells
+            if (cell.classList.contains('same-wrestler')) return;
+            
+            // Get current row index from DOM (not data attribute, since rows can move)
+            const row = cell.closest('tr');
+            if (!row) return;
+            const table = document.getElementById('ranking-table');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const rowIndex = rows.indexOf(row);
+            
+            const colIndex = parseInt(cell.getAttribute('data-col-index'), 10);
+            
+            if (rowIndex < 0 || isNaN(colIndex)) return;
+            
+            // Check if this is the same cell as last click
+            if (lastClickedCell === cell) {
+                // Second click on same cell - move row to column rank
+                const targetRank = colIndex + 1; // Column index is 0-based, rank is 1-based
+                
+                if (rowIndex >= 0 && rowIndex < rows.length) {
+                    moveRowToRank(row, targetRank);
+                }
+                
+                // Clear highlight and reset
+                cell.classList.remove('cell-highlighted');
+                lastClickedCell = null;
+            } else {
+                // First click - highlight this cell
+                // Remove highlight from previous cell
+                if (lastClickedCell) {
+                    lastClickedCell.classList.remove('cell-highlighted');
+                }
+                
+                // Add highlight to current cell
+                cell.classList.add('cell-highlighted');
+                lastClickedCell = cell;
+            }
+        }
+        
+        function attachCellClickHandlers() {
+            document.querySelectorAll('.matrix-cell').forEach(cell => {
+                // Remove existing click handler if any (to avoid duplicates)
+                cell.removeEventListener('click', handleCellClick);
+                // Add click handler
+                cell.addEventListener('click', handleCellClick);
+            });
+        }
+        
         function initializeMatrixInteractions() {
             attachTooltipHandlers();
+            attachCellClickHandlers();
             recomputeAnchors();
         }
 
@@ -1377,6 +1443,12 @@ def generate_html_matrix(
             
             if (currentIndex === -1 || targetIndex < 0 || targetIndex >= rows.length) {
                 return;
+            }
+            
+            // Clear any highlighted cell when moving rows
+            if (lastClickedCell) {
+                lastClickedCell.classList.remove('cell-highlighted');
+                lastClickedCell = null;
             }
             
             // Move step-by-step using swapRows so headers and cells stay in sync
