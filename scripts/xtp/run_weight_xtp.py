@@ -24,19 +24,24 @@ from xtp.engine.engine import BracketEngine
 from xtp.engine.bracket_schema import get_all_slots
 
 
-def load_rankings(season: int, weight: int, rankings_dir: str) -> List[Dict]:
+def load_rankings(season: int, weight: int, rankings_dir: str, league: str = 'ncaa') -> List[Dict]:
     """
     Load starter-only rankings for a weight class.
     
     Args:
         season: Season year
         weight: Weight class
-        rankings_dir: Directory containing rankings files
+        rankings_dir: Directory containing rankings files (for HS, this already includes season)
+        league: League type ('ncaa' or 'hs')
     
     Returns:
         List of starter ranking entries with wrestler_id, name, team, rank
     """
-    rankings_path = Path(rankings_dir) / str(season) / f"rankings_starters_{weight}.json"
+    if league == 'hs':
+        # For HS, rankings_dir already includes the season
+        rankings_path = Path(rankings_dir) / f"rankings_starters_{weight}.json"
+    else:
+        rankings_path = Path(rankings_dir) / str(season) / f"rankings_starters_{weight}.json"
     
     if not rankings_path.exists():
         raise FileNotFoundError(f"Starter rankings file not found: {rankings_path}")
@@ -47,19 +52,24 @@ def load_rankings(season: int, weight: int, rankings_dir: str) -> List[Dict]:
     return data.get("rankings", [])
 
 
-def load_wrestler_profile(wrestler_id: str, season: int, wrestlers_dir: str) -> Optional[Dict]:
+def load_wrestler_profile(wrestler_id: str, season: int, wrestlers_dir: str, league: str = 'ncaa') -> Optional[Dict]:
     """
     Load wrestler profile JSON.
     
     Args:
         wrestler_id: Wrestler ID
         season: Season year
-        wrestlers_dir: Directory containing wrestler JSON files
+        wrestlers_dir: Directory containing wrestler JSON files (for HS, this already includes season)
+        league: League type ('ncaa' or 'hs')
     
     Returns:
         Wrestler profile dict or None if not found
     """
-    wrestler_path = Path(wrestlers_dir) / str(season) / "by_id" / f"{wrestler_id}.json"
+    if league == 'hs':
+        # For HS, wrestlers_dir already includes the season
+        wrestler_path = Path(wrestlers_dir) / "by_id" / f"{wrestler_id}.json"
+    else:
+        wrestler_path = Path(wrestlers_dir) / str(season) / "by_id" / f"{wrestler_id}.json"
     
     if not wrestler_path.exists():
         return None
@@ -127,7 +137,8 @@ def build_seeds_from_rankings(rankings: List[Dict], max_seeds: int = 33) -> Dict
 def load_wrestler_data(
     rankings: List[Dict],
     season: int,
-    wrestlers_dir: str
+    wrestlers_dir: str,
+    league: str = 'ncaa'
 ) -> Dict[str, Dict]:
     """
     Load all wrestler data (MV, bonus EV, metadata) for ranked wrestlers.
@@ -135,7 +146,8 @@ def load_wrestler_data(
     Args:
         rankings: List of ranking entries
         season: Season year
-        wrestlers_dir: Directory containing wrestler JSON files
+        wrestlers_dir: Directory containing wrestler JSON files (for HS, already includes season)
+        league: League type ('ncaa' or 'hs')
     
     Returns:
         Dict mapping wrestler_id to data dict with:
@@ -153,7 +165,7 @@ def load_wrestler_data(
             continue
         
         # Load profile
-        profile = load_wrestler_profile(wrestler_id, season, wrestlers_dir)
+        profile = load_wrestler_profile(wrestler_id, season, wrestlers_dir, league=league)
         
         if profile:
             mv = extract_mv_from_profile(profile)
@@ -178,7 +190,8 @@ def compute_xtp_for_weight(
     season: int,
     weight: int,
     rankings_dir: str,
-    wrestlers_dir: str
+    wrestlers_dir: str,
+    league: str = 'ncaa'
 ) -> List[Dict]:
     """
     Compute xTP for all wrestlers at a weight class.
@@ -186,15 +199,16 @@ def compute_xtp_for_weight(
     Args:
         season: Season year
         weight: Weight class
-        rankings_dir: Directory containing rankings files
-        wrestlers_dir: Directory containing wrestler JSON files
+        rankings_dir: Directory containing rankings files (for HS, already includes season)
+        wrestlers_dir: Directory containing wrestler JSON files (for HS, already includes season)
+        league: League type ('ncaa' or 'hs')
     
     Returns:
         List of xTP entries with wrestler_id, name, team, rank, xTP_A, xTP_P, xTP_B, xTP
     """
     # Step 1: Load starter-only rankings
     print(f"Loading starter rankings for {weight} lbs...")
-    starter_rankings = load_rankings(season, weight, rankings_dir)
+    starter_rankings = load_rankings(season, weight, rankings_dir, league=league)
     print(f"  Found {len(starter_rankings)} starters")
     
     if len(starter_rankings) == 0:
@@ -205,7 +219,7 @@ def compute_xtp_for_weight(
     
     # Step 2: Load wrestler data (MV, bonus EV) - only for starters
     print(f"Loading wrestler profiles...")
-    wrestler_data = load_wrestler_data(starter_rankings, season, wrestlers_dir)
+    wrestler_data = load_wrestler_data(starter_rankings, season, wrestlers_dir, league=league)
     print(f"  Loaded data for {len(wrestler_data)} starters")
     
     # Step 3: Build seeds (top 33 starters)
@@ -426,7 +440,7 @@ def print_xtp_leaderboard(entries: List[Dict], limit: Optional[int] = None) -> N
     print(f"\nTotal entries: {len(entries)}")
 
 
-def export_xtp_json(entries: List[Dict], season: int, weight: int, output_dir: str) -> Path:
+def export_xtp_json(entries: List[Dict], season: int, weight: int, output_dir: str, league: str = 'ncaa') -> Path:
     """
     Export xTP leaderboard to JSON file.
     
@@ -434,12 +448,17 @@ def export_xtp_json(entries: List[Dict], season: int, weight: int, output_dir: s
         entries: Sorted list of xTP entries
         season: Season year
         weight: Weight class
-        output_dir: Directory for output file
+        output_dir: Directory for output file (for HS, already includes season/gender)
+        league: League type ('ncaa' or 'hs')
     
     Returns:
         Path to written file
     """
-    output_path = Path(output_dir) / str(season)
+    if league == 'hs':
+        # For HS, output_dir already includes season/gender
+        output_path = Path(output_dir)
+    else:
+        output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
     output_file = output_path / f"xtp_weight_{season}_{weight}.json"
@@ -536,6 +555,8 @@ def main():
         action="store_true",
         help="Export results to JSON file"
     )
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
     
     args = parser.parse_args()
     
@@ -549,7 +570,8 @@ def main():
             args.season,
             args.weight,
             args.rankings_dir,
-            args.wrestlers_dir
+            args.wrestlers_dir,
+            league=args.league
         )
         
         if not results:
@@ -570,7 +592,7 @@ def main():
         
         # Export JSON if requested
         if args.export_json:
-            export_xtp_json(sorted_results, args.season, args.weight, args.output_dir)
+            export_xtp_json(sorted_results, args.season, args.weight, args.output_dir, league=args.league)
     
     except FileNotFoundError as e:
         print(f"Error: {e}")

@@ -1,6 +1,7 @@
 // ========================================
 // Rankings Matrix Renderer
 // ========================================
+// Note: hs_config.js must be loaded before this file
 
 function safe(v, fn) {
   if (v === null || v === undefined || v === "") return "—";
@@ -11,21 +12,19 @@ function getQueryParam(key) {
   return new URLSearchParams(window.location.search).get(key);
 }
 
-function resolveSeason() {
-  return "2026"; // Or make dynamic later
-}
-
 // Load matrix data
-async function loadMatrixData(season, weight) {
-  const url = `/data/matrix/${season}/${weight}.json`;
+async function loadMatrixData(gender, season, weight) {
+  const url = buildMatrixURL(gender, season, weight);
+  console.log(`[HS Matrix] Loading data from: ${url}`);
   
   try {
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`Failed to load ${url}`);
+    if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status} - ${res.statusText}`);
     const data = await res.json();
+    console.log(`[HS Matrix] Loaded matrix data for ${gender} ${weight} lbs (${data?.wrestlers?.length || 0} wrestlers)`);
     return data;
   } catch (err) {
-    console.error("Error loading matrix data:", err);
+    console.error(`[HS Matrix] Error loading data from ${url}:`, err);
     return null;
   }
 }
@@ -664,22 +663,62 @@ const matrixHoverController = (function() {
   };
 })();
 
+// Generate weight tabs
+function generateWeightTabs(gender, weights) {
+  const container = document.getElementById('weight-tabs');
+  if (!container) return;
+  
+  container.innerHTML = '';
+  
+  weights.forEach(weight => {
+    const tab = document.createElement('a');
+    tab.className = 'weight-tab';
+    tab.href = buildPageURL('matrix.html', gender, { weight });
+    tab.textContent = weight.toString();
+    container.appendChild(tab);
+  });
+}
+
+// Update active tab
+function updateActiveTab(gender, weight) {
+  const tabs = document.querySelectorAll('.weight-tab');
+  tabs.forEach(tab => {
+    const href = tab.getAttribute('href');
+    const tabWeight = href.match(/weight=(\d+)/)?.[1];
+    const tabGender = href.match(/gender=(\w+)/)?.[1];
+    
+    if (tabWeight === weight.toString() && tabGender === gender) {
+      tab.classList.add('active');
+    } else {
+      tab.classList.remove('active');
+    }
+  });
+}
+
 // Render matrix
-function renderMatrix(matrixData) {
+function renderMatrix(matrixData, gender, weight) {
+  const gridEl = document.getElementById("matrix-grid");
+  if (!gridEl) {
+    console.error('[HS Matrix] Matrix grid element not found');
+    return;
+  }
+  
   if (!matrixData) {
-    document.getElementById("matrix-grid").innerHTML = `
+    gridEl.innerHTML = `
       <div style="grid-column: 1 / -1; padding: 2em; text-align: center; color: var(--muted);">
-        Error loading matrix data.
+        HS data not found for ${gender} ${weight} lbs.<br>
+        <small style="color: var(--muted-2);">Check console for fetch details.</small>
       </div>
     `;
     matrixHoverController.setGrid(null);
+    console.warn(`[HS Matrix] No data returned for ${gender} ${weight} lbs`);
     return;
   }
   
   const wrestlers = matrixData.wrestlers || [];
   const matrix = matrixData.matrix || {};
   const season = matrixData.season || "—";
-  const weight = matrixData.weight || "125";
+  // Use weight parameter (already declared in function signature)
   
   // Update active tab based on current weight
   const tabs = document.querySelectorAll('.weight-tab');
@@ -815,11 +854,22 @@ async function initMatrix() {
     console.log('[initMatrix] Starting initialization');
   }
   
-  const season = resolveSeason();
-  const weight = getQueryParam("weight") || "125";
+  // Get context from URL
+  const gender = getGenderFromURL();
+  const season = getSeasonFromURL();
+  const weight = getWeightFromURL(gender);
+  const weights = getWeightsForGender(gender);
   
-  const matrixData = await loadMatrixData(season, weight);
-  renderMatrix(matrixData);
+  console.log(`[HS Matrix] Initializing: gender=${gender}, season=${season}, weight=${weight}`);
+  
+  // Generate weight tabs dynamically
+  generateWeightTabs(gender, weights);
+  
+  // Update active tab
+  updateActiveTab(gender, weight);
+  
+  const matrixData = await loadMatrixData(gender, season, weight);
+  renderMatrix(matrixData, gender, weight);
   
   // Reset focus after initial render to ensure hover works
   requestAnimationFrame(() => {

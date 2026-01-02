@@ -1,0 +1,119 @@
+{
+  "wrestler_id": "34997639132",
+  "name": "Jonathan Kingombe",
+  "team": "Western",
+  "team_slug": "western",
+  "team_rank": 35,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.83,
+    "pa7": 25.0,
+    "pd7": -18.17,
+    "si_plus": 97.7,
+    "df_plus": 82.4,
+    "apr_plus": 101.5,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35638876132",
+      "opponent_rank": 111,
+      "opponent_name": "Dylan Keown",
+      "method": "Fall 1:07"
+    },
+    "worst_loss": {
+      "opponent_id": "35321129132",
+      "opponent_rank": 41,
+      "opponent_name": "Jared Pierce",
+      "method": "Fall 1:56"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35321129132",
+      "opponent_name": "Jared Pierce",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 138,
+      "opponent_rank": 41,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "Screamin` Eagles Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35280966132",
+      "opponent_name": "Tye Chavez",
+      "opponent_team": "Southern",
+      "opponent_team_rank": 125,
+      "opponent_weight": 138,
+      "opponent_rank": 35,
+      "result": "L",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "2:03",
+      "event": "Screamin` Eagles Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "OUTSTATE_9ec56a5d0550",
+      "opponent_name": "Lucy Savon",
+      "opponent_team": "Butler",
+      "opponent_team_rank": 66,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Screamin` Eagles Classic"
+    },
+    {
+      "date": "2025-11-25",
+      "opponent_id": "35638876132",
+      "opponent_name": "Dylan Keown",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 123,
+      "opponent_weight": 132,
+      "opponent_rank": 111,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:07",
+      "event": "vs. Western"
+    },
+    {
+      "date": "2025-11-25",
+      "opponent_id": "35544130132",
+      "opponent_name": "Chance Dubose",
+      "opponent_team": "WEB DuBois",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:39",
+      "event": "vs. Western"
+    }
+  ]
+}

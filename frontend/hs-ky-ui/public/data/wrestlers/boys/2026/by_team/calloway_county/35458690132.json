@@ -1,0 +1,109 @@
+{
+  "wrestler_id": "35458690132",
+  "name": "Luis Lira",
+  "team": "Calloway County",
+  "team_slug": "calloway_county",
+  "team_rank": 68,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 46,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.5,
+    "pa7": 2.5,
+    "pd7": 9.0,
+    "si_plus": 84.8,
+    "df_plus": 107.6,
+    "apr_plus": 94.6,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35208003132",
+      "opponent_rank": 49,
+      "opponent_name": "Kayden Lambert",
+      "method": "TF 20-4 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35233686132",
+      "opponent_rank": 55,
+      "opponent_name": "Graydon Gant",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35208003132",
+      "opponent_name": "Kayden Lambert",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 90,
+      "opponent_weight": 285,
+      "opponent_rank": 49,
+      "result": "W",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "0:00",
+      "event": "vs. Calloway County",
+      "mv_impact": 4.81
+    },
+    {
+      "date": "2025-12-04",
+      "opponent_id": "35510421132",
+      "opponent_name": "Braydon Springfield",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 67,
+      "opponent_weight": 285,
+      "opponent_rank": 88,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "vs. Calloway County",
+      "mv_impact": -0.7
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35233686132",
+      "opponent_name": "Graydon Gant",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": 56,
+      "opponent_weight": 215,
+      "opponent_rank": 55,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Calloway County",
+      "mv_impact": -4.94
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35133610132",
+      "opponent_name": "Connor Harris",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 93,
+      "opponent_weight": 215,
+      "opponent_rank": 78,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Calloway County",
+      "mv_impact": 3.43
+    }
+  ]
+}

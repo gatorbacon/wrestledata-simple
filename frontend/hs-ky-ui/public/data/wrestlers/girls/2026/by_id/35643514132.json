@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "35643514132",
+  "name": "Rhyalynn Johnson",
+  "team": "Campbellsville",
+  "team_slug": "campbellsville",
+  "team_rank": 32,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": 52,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 94.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35333373132",
+      "opponent_rank": 2,
+      "opponent_name": "Lyla Smith",
+      "method": "Fall 1:34"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35333373132",
+      "opponent_name": "Lyla Smith",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 17,
+      "opponent_weight": 120,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:34",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": -2.6
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.75
+  }
+}

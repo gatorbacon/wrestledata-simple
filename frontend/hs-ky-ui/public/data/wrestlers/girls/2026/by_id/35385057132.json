@@ -1,0 +1,129 @@
+{
+  "wrestler_id": "35385057132",
+  "name": "Zariah Hampton",
+  "team": "Male",
+  "team_slug": "male",
+  "team_rank": 47,
+  "weight_class": 100,
+  "year": 2026,
+  "current_rank": 19,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "2-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 102.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 3
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35333397132",
+      "opponent_rank": 23,
+      "opponent_name": "Lenda Saleh",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35333368132",
+      "opponent_rank": 7,
+      "opponent_name": "Kaylee Mckown",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35333397132",
+      "opponent_name": "Lenda Saleh",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 50,
+      "opponent_weight": 100,
+      "opponent_rank": 23,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "Jeffersonville Classic",
+      "mv_impact": 1.98
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35333587132",
+      "opponent_name": "Luz Perez Cruz",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 50,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Jeffersonville Classic",
+      "mv_impact": -10.57
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35333368132",
+      "opponent_name": "Kaylee Mckown",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 27,
+      "opponent_weight": 100,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Girls",
+      "mv_impact": -4.91
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "35333587132",
+      "opponent_name": "Luz Perez Cruz",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 50,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Queen of the Hive",
+      "mv_impact": 1.43
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "35333397132",
+      "opponent_name": "Lenda Saleh",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 50,
+      "opponent_weight": 100,
+      "opponent_rank": 23,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Queen of the Hive",
+      "mv_impact": 1.98
+    }
+  ],
+  "bonus": {
+    "top33_wins": 3,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.6767676767676767
+  }
+}

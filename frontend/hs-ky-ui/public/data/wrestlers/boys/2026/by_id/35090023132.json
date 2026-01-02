@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35090023132",
+  "name": "Seth Frank",
+  "team": "Fern Creek",
+  "team_slug": "fern_creek",
+  "team_rank": 36,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 25.0,
+    "pa7": 0.0,
+    "pd7": 25.0,
+    "si_plus": 119.5,
+    "df_plus": 114.7,
+    "apr_plus": 89.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35226131132",
+      "opponent_rank": 25,
+      "opponent_name": "Cash Stone",
+      "method": "Fall 3:36"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35226131132",
+      "opponent_name": "Cash Stone",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 132,
+      "opponent_rank": 25,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:36",
+      "event": "King of the Bluegrass",
+      "mv_impact": -4.14
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35567161132",
+      "opponent_name": "Chase Finley",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": 56,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "2:38",
+      "event": "King of the Bluegrass",
+      "mv_impact": 0.34
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35562998132",
+      "opponent_name": "Paul Jones",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 17,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:18",
+      "event": "King of the Bluegrass",
+      "mv_impact": -5.46
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.2115384615384615
+  }
+}

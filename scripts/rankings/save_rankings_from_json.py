@@ -70,8 +70,12 @@ def save_rankings_file(json_file: Path, season: int, output_dir: str = "mt/ranki
         if 0 <= idx < len(rankings):
             rankings[idx]["is_starter"] = True
 
-    # Create output directory
-    output_path = Path(output_dir) / str(season)
+    # Setup output path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}" / str(season)
+    else:  # ncaa
+        output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
 
     # Load global starter overrides for this season, if present.
@@ -113,7 +117,7 @@ if __name__ == "__main__":
     if not season:
         raise ValueError("Season not found in JSON file and not provided via -season argument")
     
-    saved_file = save_rankings_file(args.json_file, season, args.output_dir)
+    saved_file = save_rankings_file(args.json_file, season, args.output_dir, league=args.league, state=args.state, gender=args.gender)
     print(f"Saved rankings to: {saved_file}")
     print(f"  Weight class: {data['weight_class']}")
     print(f"  Season: {season}")

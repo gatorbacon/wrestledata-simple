@@ -1,0 +1,109 @@
+{
+  "wrestler_id": "34988536132",
+  "name": "Trenton Gillespie",
+  "team": "Doss",
+  "team_slug": "doss",
+  "team_rank": 75,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 94.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35228529132",
+      "opponent_rank": 104,
+      "opponent_name": "Jayden Jones",
+      "method": "Fall 2:52"
+    },
+    "worst_loss": {
+      "opponent_id": "35618706132",
+      "opponent_rank": 25,
+      "opponent_name": "Jamari Green",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35618706132",
+      "opponent_name": "Jamari Green",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 130,
+      "opponent_weight": 190,
+      "opponent_rank": 25,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Valley",
+      "mv_impact": -3.76
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35228529132",
+      "opponent_name": "Jayden Jones",
+      "opponent_team": "Butler",
+      "opponent_team_rank": 66,
+      "opponent_weight": 215,
+      "opponent_rank": 104,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:52",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 1.14
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35434862132",
+      "opponent_name": "Maximo Urias",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 129,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:51",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": -7.9
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35635603132",
+      "opponent_name": "Cole Stevens",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:34",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 0.82
+    }
+  ]
+}

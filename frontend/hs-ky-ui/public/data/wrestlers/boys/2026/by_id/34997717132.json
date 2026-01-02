@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "34997717132",
+  "name": "Joseph Reed",
+  "team": "Franklin County",
+  "team_slug": "franklin_county",
+  "team_rank": 48,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": 76,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 16.0,
+    "pa7": 4.0,
+    "pd7": 12.0,
+    "si_plus": 112.1,
+    "df_plus": 112.6,
+    "apr_plus": 92.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "35040599132",
+      "opponent_rank": 45,
+      "opponent_name": "Antar Sher",
+      "method": "MD 16-4"
+    },
+    "worst_loss": {
+      "opponent_id": "35562984132",
+      "opponent_rank": 9,
+      "opponent_name": "Brock Fernandez",
+      "method": "Fall 2:54"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35040599132",
+      "opponent_name": "Antar Sher",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 127,
+      "opponent_weight": 144,
+      "opponent_rank": 45,
+      "result": "W",
+      "method": "MD",
+      "score": "16-4",
+      "duration": "7:00",
+      "event": "vs. Franklin County",
+      "mv_impact": 4.6
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35156188132",
+      "opponent_name": "Aiden Zuniga",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 34,
+      "opponent_weight": 150,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "vs. Franklin County",
+      "mv_impact": -2.14
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35562984132",
+      "opponent_name": "Brock Fernandez",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 17,
+      "opponent_weight": 138,
+      "opponent_rank": 9,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:54",
+      "event": "vs. Franklin County",
+      "mv_impact": -2.6
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.8333333333333334
+  }
+}

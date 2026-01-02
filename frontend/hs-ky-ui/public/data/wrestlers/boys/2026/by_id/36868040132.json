@@ -1,0 +1,98 @@
+{
+  "wrestler_id": "36868040132",
+  "name": "Cameron McCord",
+  "team": "Danville",
+  "team_slug": "danville",
+  "team_rank": 72,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 91.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35077749132",
+      "opponent_rank": 13,
+      "opponent_name": "Jake Lutgen",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "35700482132",
+      "opponent_rank": 96,
+      "opponent_name": "Braylen Hiner",
+      "method": "Fall 1:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35700482132",
+      "opponent_name": "Braylen Hiner",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 95,
+      "opponent_weight": 157,
+      "opponent_rank": 96,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -10.39
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35077749132",
+      "opponent_name": "Jake Lutgen",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 40,
+      "opponent_weight": 157,
+      "opponent_rank": 13,
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35599161132",
+      "opponent_name": "Nathan Kramer",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 107,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:28",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -6.45
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 0.5925925925925926
+  }
+}

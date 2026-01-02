@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "36096014132",
+  "name": "Geniya White",
+  "team": "Iroquois",
+  "team_slug": "iroquois",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": 13,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 112.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35333398132",
+      "opponent_rank": 21,
+      "opponent_name": "Danielle Hernandez",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35369136132",
+      "opponent_rank": 10,
+      "opponent_name": "Kaylee Lester",
+      "method": "Fall 1:54"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35369136132",
+      "opponent_name": "Kaylee Lester",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 132,
+      "opponent_rank": 10,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:54",
+      "event": "Seneca Girls Invitational",
+      "mv_impact": -2.12
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "35333398132",
+      "opponent_name": "Danielle Hernandez",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 50,
+      "opponent_weight": 132,
+      "opponent_rank": 21,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Queen of the Hive",
+      "mv_impact": 7.79
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.9259259259259263
+  }
+}

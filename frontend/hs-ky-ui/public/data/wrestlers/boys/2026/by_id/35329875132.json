@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "35329875132",
+  "name": "Jeremy Bonckowski",
+  "team": "Western",
+  "team_slug": "western",
+  "team_rank": 35,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 103.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35226459132",
+      "opponent_rank": 6,
+      "opponent_name": "Dominic Ramirez",
+      "method": "Fall 1:05"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35226459132",
+      "opponent_name": "Dominic Ramirez",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 215,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35321120132",
+      "opponent_name": "Luke Dalton",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:48",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_1feeca9f256b",
+      "opponent_name": "Josh Franklin",
+      "opponent_team": "Atherton",
+      "opponent_team_rank": 58,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "King of the Bluegrass"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.55
+  }
+}

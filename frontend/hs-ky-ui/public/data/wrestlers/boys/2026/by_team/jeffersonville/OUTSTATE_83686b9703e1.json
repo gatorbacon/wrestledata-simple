@@ -1,0 +1,72 @@
+{
+  "wrestler_id": "OUTSTATE_83686b9703e1",
+  "name": "Larry Sherman",
+  "team": "Jeffersonville",
+  "team_slug": "jeffersonville",
+  "team_rank": null,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35144515132",
+      "opponent_rank": 10,
+      "opponent_name": "Anthony Merino",
+      "method": "Dec 6-3"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35144515132",
+      "opponent_name": "Anthony Merino",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 28,
+      "opponent_weight": 285,
+      "opponent_rank": 10,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "vs. Jeffersonville"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35459045132",
+      "opponent_name": "Castle Whitaker",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 40,
+      "opponent_weight": 285,
+      "opponent_rank": 28,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Jeffersonville"
+    }
+  ]
+}

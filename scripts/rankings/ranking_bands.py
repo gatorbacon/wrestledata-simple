@@ -119,7 +119,7 @@ def load_rankings_for_season(season: int, data_dir: str, league: str = 'ncaa', s
     # Setup base path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        base = Path(data_dir) / f"hs_{state_lower}_{gender}"
+        base = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:  # ncaa
         base = Path(data_dir) / str(season)
     
@@ -156,7 +156,7 @@ def load_relationships_for_season(season: int, data_dir: str, league: str = 'nca
     # Setup base path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        base = Path(data_dir) / f"hs_{state_lower}_{gender}"
+        base = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:  # ncaa
         base = Path(data_dir) / str(season)
     
@@ -570,7 +570,7 @@ def save_bands_for_weight(
     # Setup base path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        base = Path(data_dir) / f"hs_{state_lower}_{gender}"
+        base = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:  # ncaa
         base = Path(data_dir) / str(season)
     

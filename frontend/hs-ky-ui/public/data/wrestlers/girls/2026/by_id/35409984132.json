@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "35409984132",
+  "name": "Addison Rowland",
+  "team": "Dupont Manual",
+  "team_slug": "dupont_manual",
+  "team_rank": 37,
+  "weight_class": 185,
+  "year": 2026,
+  "current_rank": 21,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 116.1,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35385660132",
+      "opponent_rank": 28,
+      "opponent_name": "Nailah Thornton",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-05",
+      "opponent_id": "35640272132",
+      "opponent_name": "Aubrey Baggett",
+      "opponent_team": "Bryan Station",
+      "opponent_team_rank": 30,
+      "opponent_weight": 185,
+      "opponent_rank": 33,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Queen of the Hive"
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "OUTSTATE_1efa514d8e73",
+      "opponent_name": "Jacyla Stafford",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 185,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Queen of the Hive"
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "35385660132",
+      "opponent_name": "Nailah Thornton",
+      "opponent_team": "Male",
+      "opponent_team_rank": 47,
+      "opponent_weight": 185,
+      "opponent_rank": 28,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Queen of the Hive"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.8518518518518516
+  }
+}

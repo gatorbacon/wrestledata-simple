@@ -1,0 +1,89 @@
+{
+  "wrestler_id": "35746102132",
+  "name": "John Fox",
+  "team": "Eastern",
+  "team_slug": "eastern",
+  "team_rank": 78,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 87.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35012795132",
+      "opponent_rank": 63,
+      "opponent_name": "Brayden Miller",
+      "method": "Fall 1:49"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35841000132",
+      "opponent_name": "Ethan Thompson",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 11,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:48",
+      "event": "The Beast of the East",
+      "mv_impact": -6.87
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35012795132",
+      "opponent_name": "Brayden Miller",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 123,
+      "opponent_weight": 215,
+      "opponent_rank": 63,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "The Beast of the East",
+      "mv_impact": -6.36
+    },
+    {
+      "date": "2025-12-03",
+      "opponent_id": "35122071132",
+      "opponent_name": "Noah Robertson",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Oldham County",
+      "mv_impact": -4.74
+    }
+  ]
+}

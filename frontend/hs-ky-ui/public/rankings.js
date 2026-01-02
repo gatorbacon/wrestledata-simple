@@ -1,6 +1,7 @@
 // ========================================
 // Rankings (Traditional) Page
 // ========================================
+// Note: hs_config.js must be loaded before this file
 
 function safe(v, fn) {
   if (v === null || v === undefined || v === "") return "—";
@@ -9,10 +10,6 @@ function safe(v, fn) {
 
 function getQueryParam(key) {
   return new URLSearchParams(window.location.search).get(key);
-}
-
-function resolveSeason() {
-  return "2026"; // Or make dynamic later
 }
 
 // ========================================
@@ -144,21 +141,22 @@ function teamNameToSlug(teamName) {
 // ========================================
 // Load Rankings Data
 // ========================================
-async function loadRankingsData(season, weight) {
+async function loadRankingsData(gender, season, weight) {
+  const url = buildRankingsURL(gender, season, weight);
+  console.log(`[HS Rankings] Loading data from: ${url}`);
+  
   try {
-    // Load from public_rankings directory
-    // Add cache-busting timestamp to prevent stale data
-    const url = `/data/public_rankings/${season}/${weight}.json?t=${Date.now()}`;
-    const response = await fetch(url, { cache: 'no-store' });
+    const response = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
     
     if (!response.ok) {
-      throw new Error(`Failed to load rankings: ${response.status}`);
+      throw new Error(`Failed to load rankings: ${response.status} - ${response.statusText}`);
     }
     
     const data = await response.json();
+    console.log(`[HS Rankings] Loaded ${data?.wrestlers?.length || 0} wrestlers for ${gender} ${weight} lbs`);
     return data;
   } catch (error) {
-    console.error("Error loading rankings data:", error);
+    console.error(`[HS Rankings] Error loading data from ${url}:`, error);
     return null;
   }
 }
@@ -189,16 +187,18 @@ function computeMVRank(wrestlers) {
 // ========================================
 // Render Rankings Table
 // ========================================
-function renderRankings(data) {
+function renderRankings(data, gender, weight) {
   if (!data || !data.wrestlers || data.wrestlers.length === 0) {
     const tbody = document.querySelector("#rankings-table tbody");
     tbody.innerHTML = `
       <tr>
         <td colspan="7" style="text-align: center; padding: 2em; color: var(--muted);">
-          No rankings data available for this weight class.
+          HS data not found for ${gender} ${weight} lbs.<br>
+          <small style="color: var(--muted-2);">Check console for fetch details.</small>
         </td>
       </tr>
     `;
+    console.warn(`[HS Rankings] No data returned for ${gender} ${weight} lbs`);
     return;
   }
   
@@ -279,14 +279,34 @@ function renderRankings(data) {
 }
 
 // ========================================
+// Generate Weight Tabs
+// ========================================
+function generateWeightTabs(gender, weights) {
+  const container = document.getElementById('weight-tabs');
+  if (!container) return;
+  
+  container.innerHTML = '';
+  
+  weights.forEach(weight => {
+    const tab = document.createElement('a');
+    tab.className = 'weight-tab';
+    tab.href = buildPageURL('rankings.html', gender, { weight });
+    tab.textContent = weight.toString();
+    container.appendChild(tab);
+  });
+}
+
+// ========================================
 // Update Active Tab
 // ========================================
-function updateActiveTab(weight) {
+function updateActiveTab(gender, weight) {
   const tabs = document.querySelectorAll('.weight-tab');
   tabs.forEach(tab => {
     const href = tab.getAttribute('href');
     const tabWeight = href.match(/weight=(\d+)/)?.[1];
-    if (tabWeight === weight.toString()) {
+    const tabGender = href.match(/gender=(\w+)/)?.[1];
+    
+    if (tabWeight === weight.toString() && tabGender === gender) {
       tab.classList.add('active');
     } else {
       tab.classList.remove('active');
@@ -298,20 +318,35 @@ function updateActiveTab(weight) {
 // Initialize Rankings Page
 // ========================================
 async function initRankings() {
-  const season = resolveSeason();
-  const weightParam = getQueryParam("weight");
-  const validWeights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285];
-  const weight = validWeights.includes(parseInt(weightParam)) ? parseInt(weightParam) : 125;
+  // Get context from URL
+  const gender = getGenderFromURL();
+  const season = getSeasonFromURL();
+  const weight = getWeightFromURL(gender);
+  const weights = getWeightsForGender(gender);
+  
+  console.log(`[HS Rankings] Initializing: gender=${gender}, season=${season}, weight=${weight}`);
+  
+  // Generate weight tabs dynamically
+  generateWeightTabs(gender, weights);
   
   // Update title
-  document.getElementById("rankings-title").textContent = `Rankings — ${weight} lbs`;
+  const titleEl = document.getElementById("rankings-title");
+  if (titleEl) {
+    titleEl.textContent = `Rankings — ${gender.charAt(0).toUpperCase() + gender.slice(1)} ${weight} lbs`;
+  }
+  
+  // Update season info
+  const seasonEl = document.getElementById("season-info");
+  if (seasonEl) {
+    seasonEl.textContent = `Season ${season}`;
+  }
   
   // Update active tab
-  updateActiveTab(weight);
+  updateActiveTab(gender, weight);
   
   // Load and render data
-  const data = await loadRankingsData(season, weight);
-  renderRankings(data);
+  const data = await loadRankingsData(gender, season, weight);
+  renderRankings(data, gender, weight);
 }
 
 // Initialize on DOM ready

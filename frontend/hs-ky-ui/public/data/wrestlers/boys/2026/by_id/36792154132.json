@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "36792154132",
+  "name": "Bryn Ford",
+  "team": "Pulaski County",
+  "team_slug": "pulaski_county",
+  "team_rank": 118,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": 43,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 113.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35207048132",
+      "opponent_rank": 60,
+      "opponent_name": "Alex Pedro",
+      "method": "Fall 1:04"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35144520132",
+      "opponent_name": "Dakota Dye",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 28,
+      "opponent_weight": 190,
+      "opponent_rank": 90,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:56",
+      "event": "vs. Pulaski County",
+      "mv_impact": 0.61
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35207048132",
+      "opponent_name": "Alex Pedro",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 215,
+      "opponent_rank": 60,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
+      "event": "vs. Pulaski County",
+      "mv_impact": 5.83
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.55
+  }
+}

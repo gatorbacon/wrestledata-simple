@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "35364732132",
+  "name": "Axel Ornelas",
+  "team": "John Hardin",
+  "team_slug": "john_hardin",
+  "team_rank": 95,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 88.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35222796132",
+      "opponent_rank": 63,
+      "opponent_name": "Vance Stokley",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. George Rogers Clark"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35267075132",
+      "opponent_name": "Wesley Wainscott",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": 135,
+      "opponent_weight": 132,
+      "opponent_rank": 59,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35222796132",
+      "opponent_name": "Vance Stokley",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 132,
+      "opponent_rank": 63,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.2115384615384615
+  }
+}

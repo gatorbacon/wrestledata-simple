@@ -1,0 +1,139 @@
+{
+  "wrestler_id": "35225666132",
+  "name": "Lincoln Smith",
+  "team": "Frederick Douglass",
+  "team_slug": "frederick_douglass",
+  "team_rank": 83,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": 75,
+  "record": {
+    "overall": "2-4",
+    "vs_ranked": "2-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 9.67,
+    "pa7": 8.0,
+    "pd7": 1.67,
+    "si_plus": 101.1,
+    "df_plus": 104.3,
+    "apr_plus": 90.3,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34992059132",
+      "opponent_rank": 57,
+      "opponent_name": "Taven Martin",
+      "method": "TF 22-6 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35188433132",
+      "opponent_rank": 65,
+      "opponent_name": "Caleb Bonham",
+      "method": "Dec 7-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-17",
+      "opponent_id": "34992059132",
+      "opponent_name": "Taven Martin",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 59,
+      "opponent_weight": 138,
+      "opponent_rank": 57,
+      "result": "W",
+      "method": "TF",
+      "score": "22-6",
+      "duration": "0:00",
+      "event": "vs. Frederick Douglass",
+      "mv_impact": 4.77
+    },
+    {
+      "date": "2025-12-17",
+      "opponent_id": "34988552132",
+      "opponent_name": "Roger Justice",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 26,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:44",
+      "event": "vs. Frederick Douglass",
+      "mv_impact": -8.08
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35226198132",
+      "opponent_name": "Bryce Alford",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 144,
+      "opponent_rank": 25,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "King of the Bluegrass",
+      "mv_impact": -5.33
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35188433132",
+      "opponent_name": "Caleb Bonham",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": 103,
+      "opponent_weight": 144,
+      "opponent_rank": 65,
+      "result": "L",
+      "method": "DEC",
+      "score": "7-6",
+      "duration": "7:00",
+      "event": "Joe Cochran State Farm HCIWT",
+      "mv_impact": -4.97
+    },
+    {
+      "date": "2025-12-03",
+      "opponent_id": "35281281132",
+      "opponent_name": "Justin Kidd",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 74,
+      "opponent_weight": 144,
+      "opponent_rank": 56,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Frederick Douglass",
+      "mv_impact": -5.7
+    },
+    {
+      "date": "2025-12-03",
+      "opponent_id": "35223401132",
+      "opponent_name": "Elijah Davidson",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 144,
+      "opponent_rank": 106,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mercer County",
+      "mv_impact": 0.92
+    }
+  ]
+}

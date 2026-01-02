@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35562994132",
+  "name": "Zachary Schwoeppe",
+  "team": "St. Xavier",
+  "team_slug": "st_xavier",
+  "team_rank": 17,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 16.0,
+    "pd7": -10.0,
+    "si_plus": 97.2,
+    "df_plus": 93.5,
+    "apr_plus": 97.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34997630132",
+      "opponent_rank": 101,
+      "opponent_name": "Jakhari Brown",
+      "method": "Fall 2:05"
+    },
+    "worst_loss": {
+      "opponent_id": "35284298132",
+      "opponent_rank": 32,
+      "opponent_name": "Jack Rawlings",
+      "method": "MD 16-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35284298132",
+      "opponent_name": "Jack Rawlings",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 78,
+      "opponent_weight": 126,
+      "opponent_rank": 32,
+      "result": "L",
+      "method": "MD",
+      "score": "16-6",
+      "duration": "7:00",
+      "event": "King of the Bluegrass",
+      "mv_impact": -3.03
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34997630132",
+      "opponent_name": "Jakhari Brown",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 126,
+      "opponent_rank": 101,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:05",
+      "event": "King of the Bluegrass",
+      "mv_impact": 0.11
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.7777777777777777
+  }
+}

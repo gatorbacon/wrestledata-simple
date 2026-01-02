@@ -1,6 +1,6 @@
 /* ========================================
-   WrestleData Global Theme System
-   DataGolf-inspired dark mode (default)
+   KY High School Wrestling - Light Mode Theme
+   Print-friendly, traditional, trustworthy
    ======================================== */
 
 /* Inter font import */
@@ -10,32 +10,47 @@
    CSS VARIABLES / DESIGN TOKENS
    ======================================== */
 
-/* Light mode (placeholder) */
+/* Light mode (HS site default) */
 :root {
-  --bg: #ffffff;
-  --panel: #f9fafb;
-  --panel-2: #f3f4f6;
-  --border: #e5e7eb;
+  /* Background colors */
+  --bg-main: #FAFAFA;
+  --bg-card: #FFFFFF;
+  --bg: var(--bg-main);
+  --panel: var(--bg-card);
+  --panel-2: var(--bg-card);
 
-  --text: #111827;
-  --muted: #6b7280;
-  --muted-2: #9ca3af;
+  /* Text colors */
+  --text-main: #111111;
+  --text-secondary: #555555;
+  --text-muted: #888888;
+  --text: var(--text-main);
+  --muted: var(--text-muted);
+  --muted-2: var(--text-secondary);
 
-  --accent: #00c2a8;
-  --accent-2: #1fe3c6;
-  --link: var(--accent);
+  /* Accent colors (blue) */
+  --accent-primary: #1F4ED8;
+  --accent-light: #DCE6FF;
+  --accent: var(--accent-primary);
+  --accent-2: var(--accent-primary);
+  --link: var(--accent-primary);
 
+  /* Status colors */
   --good: #22c55e;
   --bad: #ef4444;
   --warn: #f59e0b;
 
+  /* Badge colors (keep existing) */
   --pill-1: #fbbf24;
   --pill-2: #34d399;
   --pill-3: #60a5fa;
   --pill-4: #a78bfa;
 
-  --bar-neutral: #e5e7eb;
+  /* Borders */
+  --border-light: #E0E0E0;
+  --border: var(--border-light);
+  --bar-neutral: #EEEEEE;
 
+  /* Spacing */
   --r-sm: 6px;
   --r-md: 10px;
   --pad-sm: 8px;
@@ -43,37 +58,20 @@
   --pad-lg: 16px;
 }
 
-/* Dark mode (default) */
+/* Dark mode override - disabled for HS site */
 [data-theme="dark"] {
-  --bg: #0b0f14;
-  --panel: #0f1620;
-  --panel-2: #111b26;
-  --border: #1f2a37;
-
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --muted-2: #6b7280;
-
-  --accent: #00c2a8;
-  --accent-2: #1fe3c6;
-  --link: var(--accent);
-
-  --good: #22c55e;
-  --bad: #ef4444;
-  --warn: #f59e0b;
-
-  --pill-1: #fbbf24;
-  --pill-2: #34d399;
-  --pill-3: #60a5fa;
-  --pill-4: #a78bfa;
-
-  --bar-neutral: #233041;
-
-  --r-sm: 6px;
-  --r-md: 10px;
-  --pad-sm: 8px;
-  --pad-md: 12px;
-  --pad-lg: 16px;
+  /* Keep same light mode values for HS site */
+  --bg: var(--bg-main);
+  --panel: var(--bg-card);
+  --panel-2: var(--bg-card);
+  --border: var(--border-light);
+  --text: var(--text-main);
+  --muted: var(--text-muted);
+  --muted-2: var(--text-secondary);
+  --accent: var(--accent-primary);
+  --accent-2: var(--accent-primary);
+  --link: var(--accent-primary);
+  --bar-neutral: #EEEEEE;
 }
 
 /* ========================================
@@ -100,12 +98,13 @@ a {
   color: var(--link);
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.15s ease, text-decoration 0.15s ease;
+  /* No transitions for print-friendly theme */
 }
 
 a:hover {
-  color: var(--accent-2);
+  color: var(--accent-primary);
   text-decoration: underline;
+  /* No color change, just underline */
 }
 
 /* ========================================
@@ -113,11 +112,12 @@ a:hover {
    ======================================== */
 
 .site-header {
-  background: var(--panel-2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-light);
   position: static;
   top: auto;
   width: 100%;
+  /* No shadows, no gradients */
 }
 
 @media (max-width: 768px) {
@@ -150,12 +150,12 @@ a:hover {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.125rem;
-  transition: opacity 0.15s ease;
+  /* No transitions */
 }
 
 .logo-link:hover {
-  opacity: 0.8;
-  text-decoration: none;
+  text-decoration: underline;
+  /* No opacity change */
 }
 
 .logo-text {
@@ -179,7 +179,7 @@ a:hover {
   align-items: center;
   gap: 4px;
   padding: 6px 12px;
-  color: var(--muted);
+  color: var(--text-secondary);
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -188,14 +188,14 @@ a:hover {
   background: none;
   border: none;
   cursor: pointer;
-  transition: opacity 0.15s ease, color 0.15s ease;
+  /* No transitions */
   font-family: inherit;
 }
 
 .nav-link:hover {
-  opacity: 1;
-  color: var(--text);
-  text-decoration: none;
+  color: var(--text-main);
+  text-decoration: underline;
+  /* No opacity change */
 }
 
 .nav-link--disabled {
@@ -210,7 +210,9 @@ a:hover {
 
 .nav-item.is-open .nav-link,
 .nav-link.active {
-  color: var(--accent);
+  color: var(--accent-primary);
+  background: var(--accent-light);
+  /* Active state uses light blue background */
 }
 
 .dropdown-arrow {
@@ -224,13 +226,13 @@ a:hover {
   top: 100%;
   left: 0;
   margin-top: 4px;
-  background: var(--panel);
-  border: 1px solid var(--border);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
   border-radius: var(--r-sm);
   min-width: 220px;
   padding: 4px;
   display: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* No shadows */
   z-index: 200;
 }
 
@@ -241,20 +243,20 @@ a:hover {
 .dropdown-item {
   display: block;
   padding: 8px 12px;
-  color: var(--text);
+  color: var(--text-main);
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 400;
   text-transform: none;
   letter-spacing: normal;
   border-radius: 4px;
-  transition: background 0.15s ease;
+  /* No transitions */
 }
 
 .dropdown-item:hover {
-  background: var(--panel-2);
+  background: var(--accent-light);
   text-decoration: none;
-  color: var(--text);
+  color: var(--text-main);
 }
 
 .dropdown-item-label {
@@ -610,15 +612,15 @@ a:hover {
     justify-content: center;
   }
 
-  .mobile-search-dropdown {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: var(--r-sm);
-    padding: 8px;
-    max-height: calc(100vh - 200px);
-    overflow-y: auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
+.mobile-search-dropdown {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 0;
+  padding: 8px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  /* No shadows */
+}
 
   /* Mobile search dropdown uses same styles as desktop - no overrides needed */
 
@@ -732,19 +734,20 @@ a:hover {
   .mobile-menu-item {
     display: block;
     padding: 16px 0;
-    color: var(--text);
+    color: var(--text-main);
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid var(--border-light);
     min-height: 44px;
     display: flex;
     align-items: center;
-    transition: color 0.15s ease;
+    /* No transitions */
   }
 
   .mobile-menu-item:hover {
-    color: var(--accent);
+    color: var(--text-main);
+    background: var(--accent-light);
     text-decoration: none;
   }
 
@@ -839,7 +842,7 @@ a:hover {
   left: 0;
   right: 0;
   height: 1px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--border-light);
   z-index: 0;
 }
 
@@ -909,8 +912,8 @@ a:hover {
 
 .preview-table tbody td {
   padding: 6px 8px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-  color: var(--text);
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-main);
 }
 
 .preview-table tbody tr:last-child td {
@@ -1736,7 +1739,8 @@ a:hover {
 }
 
 .zero-line.positive {
-  background: rgba(60, 190, 150, 0.9);
+  background: var(--accent-primary);
+  opacity: 0.9;
 }
 
 .zero-line.negative {
@@ -1750,14 +1754,14 @@ a:hover {
   height: 16px;
   transform: translateY(-70%);
   opacity: 0.85;
-  border-radius: 1px;
+  border-radius: 0;
   z-index: 1;
 }
 
 .value-bar.positive {
   left: 50%;
-  background: rgba(210, 245, 235, 1);
-  border-left: 0px solid rgba(60, 190, 150, 1);
+  background: var(--accent-light);
+  border-left: 0px solid var(--accent-primary);
 }
 
 .value-bar.negative {
@@ -1773,22 +1777,39 @@ a:hover {
   font-size: 12px;
   font-weight: 600;
   white-space: nowrap;
+  color: #111;
+  /* Always readable black text, never on bar */
 }
 
 .value-label.positive {
-  color: #e6faf4;
+  color: #111;
 }
 
 .value-label.negative {
-  color: #ffdede;
+  color: #111;
 }
 
-/* POSITIVE VALUE → label LEFT of zero */
+/* xTP bar wrapper - value + bar layout */
+.xtp-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.xtp-value-text {
+  color: #111;
+  font-weight: 600;
+  min-width: 45px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Legacy value-bar-wrapper styles kept for backward compatibility but not used for xTP */
 .value-bar-wrapper[data-sign="positive"] .value-label {
   right: calc(50% + 8px);
 }
 
-/* NEGATIVE VALUE → label RIGHT of zero */
 .value-bar-wrapper[data-sign="negative"] .value-label {
   left: calc(50% + 8px);
 }
@@ -1987,29 +2008,18 @@ th[data-tooltip="xtp-b"] {
 }
 
 td {
-  padding: 8px 10px;
+  padding: 6px 12px;
   /* Subtle horizontal dividers only */
-  border-bottom: 1px solid var(--border);
-  color: var(--text);
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-main);
   position: relative;
   /* No boxed rows */
   border-left: none;
   border-right: none;
 }
 
-/* Add vertical dividers between all columns */
+/* No vertical dividers for print-friendly theme */
 td::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 1px;
-  background: rgba(255, 255, 255, 0.08);
-  pointer-events: none;
-}
-
-td:last-child::after {
   display: none;
 }
 
@@ -2025,7 +2035,7 @@ td .metric-bar {
 .rank-badge {
   display: inline-block;
   padding: 2px 8px;
-  border-radius: 4px;
+  border-radius: 0;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.4;
@@ -2035,20 +2045,20 @@ td .metric-bar {
   /* No underline, no hover underline */
   text-decoration: none;
   cursor: default;
-  /* Pill-style badges with fixed width for consistency */
+  /* Square badges for print-friendly theme */
   min-width: 40px;
 }
 
 .rank-badge.top {
-  background: var(--accent);
-  color: var(--bg);
-  opacity: 0.9;
+  background: var(--accent-primary);
+  color: var(--bg-card);
+  opacity: 1;
 }
 
 .rank-badge.standard {
-  background: var(--panel-2);
-  color: var(--muted);
-  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
 }
 
 /* Ensure badges don't affect table row height */
@@ -2078,16 +2088,16 @@ td .rank-badge {
 
 /* Rank #6+ uses neutral slate badge */
 .rank-badge.standard {
-  background: var(--panel-2);
-  color: var(--muted);
-  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
 }
 
 /* UNR badge for non-starters */
 .rank-badge.unr-badge {
-  background: var(--panel-2);
-  color: var(--muted);
-  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
   /* Same styling as standard badge */
 }
 
@@ -2099,14 +2109,14 @@ td .rank-badge {
 }
 
 tbody tr {
-  transition: background-color 0.15s ease;
+  /* No transitions */
   /* Table background matches page background - no zebra striping */
-  background: var(--bg);
+  background: var(--bg-main);
 }
 
 tbody tr:hover {
   /* Same hover background for ALL rows - uniform behavior */
-  background: var(--panel-2);
+  background: var(--accent-light);
 }
 
 /* REMOVE all alternating row logic - no nth-child selectors for hover */
@@ -2152,6 +2162,8 @@ tbody tr:last-child td {
   width: 100%;
   padding: 3px 0;
   min-height: 1.6em;
+  background: #e9e9e9;
+  border-radius: 0;
 }
 
 .metric-bar-fill {
@@ -2159,12 +2171,39 @@ tbody tr:last-child td {
   left: 0;
   top: 0;
   bottom: 0;
-  background: var(--accent);
-  opacity: 0.15;
-  border-radius: 2px;
+  background: var(--accent-primary);
+  opacity: 0.75;
+  border-radius: 0;
   z-index: 0;
   /* Cap at 96% to stop slightly short */
   max-width: 96%;
+}
+
+/* XTP bar wrapper - value outside bar (HS theme) */
+.xtp-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.xtp-value-text {
+  color: #111;
+  font-weight: 600;
+  min-width: 45px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Ensure metric-bar background is light gray for XTP bars */
+.xtp-bar-wrapper .metric-bar {
+  flex: 1;
+  position: relative;
+  height: 12px;
+  background: #e9e9e9;
+  border-radius: 0;
+  padding: 0;
+  min-height: auto;
 }
 
 .metric-bar-value {
@@ -2514,6 +2553,10 @@ th.tooltip-trigger .tooltip {
 
 #match-table {
   font-size: 0.875rem;
+}
+
+#match-table thead th.mi-impact-header {
+  display: none; /* Hidden for HS site */
 }
 
 #match-table thead th {
@@ -4722,5 +4765,402 @@ td {
 .footer-text-muted {
   color: var(--muted-2);
   font-size: 0.8125rem;
+}
+
+/* ========================================
+   KY HS HOMEPAGE STYLES
+   ======================================== */
+
+.homepage-hero-section {
+  text-align: center;
+  padding: 4em 2em 3em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.homepage-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5em;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.homepage-subtitle {
+  font-size: 1.125rem;
+  color: var(--muted);
+  margin: 0 0 2.5em;
+}
+
+.homepage-hero-buttons {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.homepage-hero-button {
+  display: inline-block;
+  padding: 1em 2.5em;
+  background: var(--panel);
+  border: 2px solid var(--border);
+  border-radius: var(--r-md);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  min-width: 180px;
+}
+
+.homepage-hero-button:hover {
+  background: var(--panel-2);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.homepage-gender-section {
+  max-width: 1100px;
+  margin: 4em auto;
+  padding: 0 2em;
+}
+
+.homepage-gender-heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 1.5em;
+  color: var(--text);
+}
+
+.homepage-gender-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+@media (max-width: 900px) {
+  .homepage-gender-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.homepage-gender-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 0;
+  padding: 2em;
+  text-decoration: none;
+  color: var(--text-main);
+  /* No transitions */
+}
+
+.homepage-gender-card:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-primary);
+  transform: none;
+  /* No translateY */
+}
+
+.homepage-gender-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5em;
+  color: var(--text);
+}
+
+.homepage-gender-card-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .homepage-hero-section {
+    padding: 3em 1.5em 2em;
+  }
+
+  .homepage-title {
+    font-size: 2rem;
+  }
+
+  .homepage-subtitle {
+    font-size: 1rem;
+  }
+
+  .homepage-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .homepage-hero-button {
+    width: 100%;
+  }
+
+  .homepage-gender-section {
+    margin: 3em auto;
+    padding: 0 1.5em;
+  }
+
+  .homepage-gender-heading {
+    font-size: 1.5rem;
+  }
+}
+
+/* ========================================
+   HS SITE LIGHT MODE OVERRIDES
+   Print-friendly, traditional theme
+   ======================================== */
+
+/* Remove all transitions and animations */
+* {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Remove all shadows */
+* {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* Remove all gradients */
+* {
+  background-image: none !important;
+}
+
+/* Update page container and sections */
+.page-container {
+  background: var(--bg-main);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--pad-lg);
+}
+
+.section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 0;
+  padding: var(--pad-lg);
+  margin-bottom: var(--pad-lg);
+  /* No shadows */
+}
+
+.section-divider {
+  border-bottom: 1px solid var(--border-light);
+  margin: var(--pad-md) 0;
+}
+
+.section-divider-line {
+  background: var(--border-light) !important;
+}
+
+/* Update tables */
+.table-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 0;
+  overflow-x: auto;
+  /* No shadows */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+}
+
+table thead th {
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 2px solid var(--border-light);
+  /* No background gradients */
+}
+
+table tbody td {
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-main);
+  /* No row striping */
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table tbody tr:hover {
+  background: var(--accent-light);
+  /* Subtle highlight on hover */
+}
+
+/* Update cards */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 0;
+  padding: var(--pad-lg);
+  /* No shadows */
+}
+
+/* Update bars (xTP, metric bars) */
+.metric-bar,
+.bar {
+  background: #e9e9e9;
+  border-radius: 0;
+  /* Square ends */
+}
+
+.metric-bar-fill,
+.bar-fill {
+  background: var(--accent-primary);
+  opacity: 0.75;
+  /* 70-80% opacity */
+  border-radius: 0;
+  /* No gradients */
+}
+
+/* Ensure metric-bar has proper background when used in table cells */
+td .metric-bar {
+  background: #e9e9e9;
+}
+
+/* Update badges */
+.rank-badge {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+  /* Keep medal colors but ensure they work on light background */
+}
+
+.rank-badge.medal-gold {
+  background: #FFD700;
+  color: #111111;
+  border-color: #FFD700;
+}
+
+.rank-badge.medal-silver {
+  background: #C0C0C0;
+  color: #111111;
+  border-color: #C0C0C0;
+}
+
+.rank-badge.medal-bronze {
+  background: #CD7F32;
+  color: #FFFFFF;
+  border-color: #CD7F32;
+}
+
+/* Update result pills/badges */
+.result-pill,
+.result-badge {
+  /* Keep colors but ensure contrast */
+  border-radius: 0;
+  /* Square ends */
+}
+
+/* Update search dropdown */
+.mobile-search-dropdown,
+.search-dropdown {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  /* No shadows */
+}
+
+/* Update mobile menu */
+.mobile-menu-overlay {
+  background: var(--bg-main);
+}
+
+.mobile-menu-item {
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-main);
+}
+
+.mobile-menu-item:hover {
+  background: var(--accent-light);
+  color: var(--text-main);
+}
+
+/* Update preview tables */
+.preview-table thead th {
+  color: var(--text-secondary);
+  background: var(--bg-card);
+}
+
+.preview-table tbody td {
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-main);
+}
+
+/* Update homepage cards */
+.homepage-gender-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  /* No transitions, no transforms */
+}
+
+.homepage-gender-card:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-primary);
+  transform: none;
+  /* No translateY */
+}
+
+/* Update section titles */
+.section-title {
+  color: var(--text-secondary);
+  background: var(--bg-main);
+}
+
+/* Update muted text */
+.zero-record {
+  color: var(--text-muted) !important;
+  opacity: 0.7;
+}
+
+/* Update header search */
+.header-search-input {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+}
+
+.header-search-input:focus {
+  border-color: var(--accent-primary);
+  outline: 1px solid var(--accent-primary);
+}
+
+/* Update xTP headline */
+.xtp-headline-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  padding: var(--pad-lg);
+}
+
+.xtp-value {
+  color: var(--accent-primary);
+}
+
+/* Ensure all text uses correct colors */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+}
+
+/* Update links in tables */
+table a {
+  color: var(--accent-primary);
+}
+
+table a:hover {
+  text-decoration: underline;
+  /* No color change */
 }
 

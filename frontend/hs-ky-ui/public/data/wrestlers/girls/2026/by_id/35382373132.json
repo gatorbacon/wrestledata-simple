@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35382373132",
+  "name": "Celia Veal",
+  "team": "Paducah Tilghman",
+  "team_slug": "paducah_tilghman",
+  "team_rank": 14,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": 32,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 13.0,
+    "pa7": 8.0,
+    "pd7": 5.0,
+    "si_plus": 101.3,
+    "df_plus": 94.9,
+    "apr_plus": 98.8,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35567185132",
+      "opponent_rank": 44,
+      "opponent_name": "Emma DeArmond",
+      "method": "Dec 13-8"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35347492132",
+      "opponent_name": "Hailey Nall",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 33,
+      "opponent_weight": 126,
+      "opponent_rank": 48,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "Henderson County Lady Colonel Wrestling Invitational",
+      "mv_impact": 4.69
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35567185132",
+      "opponent_name": "Emma DeArmond",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 43,
+      "opponent_weight": 126,
+      "opponent_rank": 44,
+      "result": "W",
+      "method": "DEC",
+      "score": "13-8",
+      "duration": "7:00",
+      "event": "Henderson County Lady Colonel Wrestling Invitational",
+      "mv_impact": 2.36
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.5454545454545454
+  }
+}

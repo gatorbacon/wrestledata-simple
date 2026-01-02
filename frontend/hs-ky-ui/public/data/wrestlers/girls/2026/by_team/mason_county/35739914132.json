@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35739914132",
+  "name": "Autumn Toller",
+  "team": "Mason County",
+  "team_slug": "mason_county",
+  "team_rank": null,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": 55,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 86.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35448841132",
+      "opponent_rank": 36,
+      "opponent_name": "Gabriela Valentin",
+      "method": "Fall 1:26"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35599270132",
+      "opponent_name": "Brooklyn Sammons",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 20,
+      "opponent_weight": 114,
+      "opponent_rank": 10,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "2025 Anchor Down Showdown (Ladies)",
+      "mv_impact": -5.16
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35448841132",
+      "opponent_name": "Gabriela Valentin",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 36,
+      "opponent_weight": 120,
+      "opponent_rank": 36,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:26",
+      "event": "2025 Anchor Down Showdown (Ladies)",
+      "mv_impact": -6.14
+    }
+  ]
+}

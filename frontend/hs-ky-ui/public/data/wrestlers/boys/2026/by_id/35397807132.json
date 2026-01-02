@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35397807132",
+  "name": "Rusi Hamisi",
+  "team": "Henry Clay",
+  "team_slug": "henry_clay",
+  "team_rank": 21,
+  "weight_class": 113,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 23.8,
+    "pa7": 1.4,
+    "pd7": 22.4,
+    "si_plus": 118.1,
+    "df_plus": 112.9,
+    "apr_plus": 95.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35768287132",
+      "opponent_rank": 83,
+      "opponent_name": "Alexa Ybarra",
+      "method": "Fall 4:41"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35228205132",
+      "opponent_name": "Neticia Hughes",
+      "opponent_team": "Butler",
+      "opponent_team_rank": 66,
+      "opponent_weight": 113,
+      "opponent_rank": 84,
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "5:00",
+      "event": "The Beast of the East",
+      "mv_impact": -0.44
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35768287132",
+      "opponent_name": "Alexa Ybarra",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": 81,
+      "opponent_weight": 113,
+      "opponent_rank": 83,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:41",
+      "event": "The Beast of the East",
+      "mv_impact": 0.36
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9090909090909091
+  }
+}

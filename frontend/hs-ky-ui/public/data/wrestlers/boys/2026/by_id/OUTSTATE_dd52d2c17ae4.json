@@ -1,0 +1,82 @@
+{
+  "wrestler_id": "OUTSTATE_dd52d2c17ae4",
+  "name": "Nolan Porter",
+  "team": "Pike Central",
+  "team_slug": "pike_central",
+  "team_rank": null,
+  "weight_class": 106,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35698533132",
+      "opponent_rank": 80,
+      "opponent_name": "Mason Clark",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35208007132",
+      "opponent_rank": 34,
+      "opponent_name": "Kaleb Elder",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35208007132",
+      "opponent_name": "Kaleb Elder",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 90,
+      "opponent_weight": 106,
+      "opponent_rank": 34,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Pike Central"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35698533132",
+      "opponent_name": "Mason Clark",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 110,
+      "opponent_weight": 106,
+      "opponent_rank": 80,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Pike Central"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.5833333333333333
+  }
+}

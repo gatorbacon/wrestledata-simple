@@ -1782,7 +1782,7 @@ def archive_rankings_snapshot(
     # Setup base directory based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        base_dir = Path(data_dir) / f"hs_{state_lower}_{gender}"
+        base_dir = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:  # ncaa
         base_dir = Path(data_dir) / str(season)
     if not base_dir.exists():

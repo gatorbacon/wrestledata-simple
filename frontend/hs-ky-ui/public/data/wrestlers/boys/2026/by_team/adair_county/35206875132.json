@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35206875132",
+  "name": "Tyler Darling",
+  "team": "Adair County",
+  "team_slug": "adair_county",
+  "team_rank": 55,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": 77,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 96.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35638124132",
+      "opponent_rank": 97,
+      "opponent_name": "Sawyer Hargrove",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35205293132",
+      "opponent_rank": 57,
+      "opponent_name": "Jaxon Leonard",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35030260132",
+      "opponent_name": "Tucker Langford",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 118,
+      "opponent_weight": 150,
+      "opponent_rank": 53,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "vs. Pulaski County",
+      "mv_impact": -5.22
+    },
+    {
+      "date": "2025-12-17",
+      "opponent_id": "35205293132",
+      "opponent_name": "Jaxon Leonard",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 87,
+      "opponent_weight": 150,
+      "opponent_rank": 57,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Greenwood",
+      "mv_impact": -5.87
+    },
+    {
+      "date": "2025-12-09",
+      "opponent_id": "35638124132",
+      "opponent_name": "Sawyer Hargrove",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 150,
+      "opponent_rank": 97,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County",
+      "mv_impact": 0.7
+    }
+  ]
+}

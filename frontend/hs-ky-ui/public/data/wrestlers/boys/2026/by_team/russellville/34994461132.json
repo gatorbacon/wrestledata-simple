@@ -1,0 +1,109 @@
+{
+  "wrestler_id": "34994461132",
+  "name": "Brytan Ashley",
+  "team": "Russellville",
+  "team_slug": "russellville",
+  "team_rank": 120,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": 57,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 25.0,
+    "pa7": 3.65,
+    "pd7": 21.35,
+    "si_plus": 131.2,
+    "df_plus": 115.6,
+    "apr_plus": 105.1,
+    "pin_rate": 0.667,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35520804132",
+      "opponent_rank": 76,
+      "opponent_name": "Isaiah Messer Cruz",
+      "method": "Fall 1:03"
+    },
+    "worst_loss": {
+      "opponent_id": "35207986132",
+      "opponent_rank": 22,
+      "opponent_name": "Ethan Peckenpaugh",
+      "method": "Fall 2:38"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35520804132",
+      "opponent_name": "Isaiah Messer Cruz",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 80,
+      "opponent_weight": 175,
+      "opponent_rank": 76,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "Christian County Invitational",
+      "mv_impact": 4.14
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35207986132",
+      "opponent_name": "Ethan Peckenpaugh",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 90,
+      "opponent_weight": 175,
+      "opponent_rank": 22,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:38",
+      "event": "Christian County Invitational",
+      "mv_impact": -1.77
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35674180132",
+      "opponent_name": "Brycen Mattingly",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 41,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:42",
+      "event": "Christian County Invitational",
+      "mv_impact": 1.44
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35192492132",
+      "opponent_name": "Eli Poore",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "3:50",
+      "event": "vs. Russellville",
+      "mv_impact": 2.0
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "35122235132",
+  "name": "Abram Springer",
+  "team": "Oldham County",
+  "team_slug": "oldham_county",
+  "team_rank": 24,
+  "weight_class": 106,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.48,
+    "pa7": 25.0,
+    "pd7": -18.52,
+    "si_plus": 98.7,
+    "df_plus": 82.1,
+    "apr_plus": 90.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35135153132",
+      "opponent_rank": 8,
+      "opponent_name": "Makarios Green",
+      "method": "TF 20-5 5:24"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35135153132",
+      "opponent_name": "Makarios Green",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 47,
+      "opponent_weight": 106,
+      "opponent_rank": 8,
+      "result": "L",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "5:24",
+      "event": "Phil Thrasher Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_d5db6d399cc2",
+      "opponent_name": "Mason Harmon",
+      "opponent_team": "New Albany",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:43",
+      "event": "Phil Thrasher Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_e62e7538691e",
+      "opponent_name": "Bentley Bridges",
+      "opponent_team": "Columbus North",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:24",
+      "event": "Phil Thrasher Tournament"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.5833333333333333
+  }
+}

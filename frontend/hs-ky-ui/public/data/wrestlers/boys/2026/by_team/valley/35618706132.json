@@ -1,0 +1,119 @@
+{
+  "wrestler_id": "35618706132",
+  "name": "Jamari Green",
+  "team": "Valley",
+  "team_slug": "valley",
+  "team_rank": 130,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": 25,
+  "record": {
+    "overall": "4-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 18.0,
+    "pa7": 3.0,
+    "pd7": 15.0,
+    "si_plus": 103.5,
+    "df_plus": 100.9,
+    "apr_plus": 102.8,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.75,
+    "majors": 0,
+    "techs": 1,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35522904132",
+      "opponent_rank": 27,
+      "opponent_name": "Meeko Heady",
+      "method": "TF 18-3 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34988533132",
+      "opponent_rank": 23,
+      "opponent_name": "Samont Thompson",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34988536132",
+      "opponent_name": "Trenton Gillespie",
+      "opponent_team": "Doss",
+      "opponent_team_rank": 75,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Valley"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35466978132",
+      "opponent_name": "Aiden Gonzalez",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": 76,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "vs. Valley"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Desales"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34988533132",
+      "opponent_name": "Samont Thompson",
+      "opponent_team": "Doss",
+      "opponent_team_rank": 75,
+      "opponent_weight": 190,
+      "opponent_rank": 23,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Valley"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35522904132",
+      "opponent_name": "Meeko Heady",
+      "opponent_team": "Seneca",
+      "opponent_team_rank": 53,
+      "opponent_weight": 190,
+      "opponent_rank": 27,
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "0:00",
+      "event": "vs. Valley"
+    }
+  ]
+}

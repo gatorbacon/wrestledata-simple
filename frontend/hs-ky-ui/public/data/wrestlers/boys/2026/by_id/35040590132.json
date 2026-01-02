@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35040590132",
+  "name": "Austin Newton",
+  "team": "Male",
+  "team_slug": "male",
+  "team_rank": 50,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 97.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35522909132",
+      "opponent_rank": 80,
+      "opponent_name": "Region Gurung",
+      "method": "Fall 0:40"
+    },
+    "worst_loss": {
+      "opponent_id": "35337455132",
+      "opponent_rank": 58,
+      "opponent_name": "Michael Diffey",
+      "method": "Fall 0:59"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35337455132",
+      "opponent_name": "Michael Diffey",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 129,
+      "opponent_weight": 190,
+      "opponent_rank": 58,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "King of the Bluegrass",
+      "mv_impact": -6.62
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35135148132",
+      "opponent_name": "johnny Tran",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 47,
+      "opponent_weight": 190,
+      "opponent_rank": 55,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:34",
+      "event": "King of the Bluegrass",
+      "mv_impact": -6.25
+    },
+    {
+      "date": "2025-12-10",
+      "opponent_id": "35522909132",
+      "opponent_name": "Region Gurung",
+      "opponent_team": "Seneca",
+      "opponent_team_rank": 53,
+      "opponent_weight": 175,
+      "opponent_rank": 80,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "vs. Seneca",
+      "mv_impact": 3.83
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3571428571428572
+  }
+}

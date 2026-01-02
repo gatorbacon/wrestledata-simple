@@ -26,7 +26,9 @@ def compute_all_bonus(
     wrestlers_dir: str,
     output_dir: str,
     debug_wrestler_id: Optional[str] = None,
-    debug_weight: Optional[int] = None
+    debug_weight: Optional[int] = None,
+    league: str = 'ncaa',
+    gender: str = None,
 ) -> Dict[str, Dict]:
     """
     Compute Top-33 bonus for all wrestlers across all weight classes.
@@ -36,11 +38,20 @@ def compute_all_bonus(
         rankings_dir: Directory containing rankings files
         wrestlers_dir: Directory containing wrestler JSON files
         output_dir: Directory for output files
+        league: League type ('ncaa' or 'hs')
+        gender: Gender ('boys' or 'girls', required for HS)
     
     Returns:
         Dict mapping wrestler_id to bonus data
     """
-    weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+    # Determine weight classes based on league and gender
+    if league == 'hs':
+        if gender == 'boys':
+            weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+        else:  # girls
+            weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+    else:  # ncaa
+        weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
     
     all_bonus_data = {}
     
@@ -109,22 +120,35 @@ def main():
         help="Season year"
     )
     parser.add_argument(
+        "-league",
+        type=str,
+        choices=["ncaa", "hs"],
+        default="ncaa",
+        help="League: 'ncaa' (default) or 'hs' for high school",
+    )
+    parser.add_argument(
+        "-state",
+        type=str,
+        default=None,
+        help="State code (required when league=hs, e.g., 'KY')",
+    )
+    parser.add_argument(
         "--rankings-dir",
         type=str,
-        default="mt/rankings_data",
-        help="Directory containing rankings files"
+        default=None,
+        help="Directory containing rankings files (auto-determined if not specified)",
     )
     parser.add_argument(
         "--wrestlers-dir",
         type=str,
-        default="frontend/wrestledata-ui/public/data/wrestlers",
-        help="Directory containing wrestler JSON files (default: frontend/wrestledata-ui/public/data/wrestlers)"
+        default=None,
+        help="Directory containing wrestler JSON files (auto-determined if not specified)",
     )
     parser.add_argument(
         "--output-dir",
         type=str,
-        default="frontend/wrestledata-ui/public/data/bonus",
-        help="Directory for output files (default: frontend/wrestledata-ui/public/data/bonus)"
+        default=None,
+        help="Directory for output files (auto-determined if not specified)",
     )
     parser.add_argument(
         "--debug-wrestler-id",
@@ -146,38 +170,131 @@ def main():
     )
     
     args = parser.parse_args()
+    league = args.league
+    state = args.state
     
-    debug_wrestler_id = args.debug_wrestler_id
-    debug_weight = args.debug_weight
+    # Validate HS parameters
+    if league == "hs":
+        if not state:
+            raise ValueError("State is required when league=hs (e.g., -state KY)")
+        if state != "KY":
+            raise ValueError(f"Only KY is currently supported for HS. Got: {state}")
     
-    # If name provided, search for wrestler
-    if args.debug_name and not debug_wrestler_id:
-        if not debug_weight:
-            print("Error: --debug-weight is required when using --debug-name")
-            return
-        debug_wrestler_id = find_wrestler_by_name(
-            args.debug_name,
+    # Process HS (both boys and girls) or NCAA
+    if league == "hs":
+        genders = ["boys", "girls"]
+        all_bonus_data_combined = {}
+        
+        for gender in genders:
+            print(f"\n{'=' * 80}")
+            print(f"Processing {gender}...")
+            print(f"{'=' * 80}")
+            
+            # Determine directories for this gender
+            if args.rankings_dir:
+                rankings_dir = args.rankings_dir
+            else:
+                rankings_dir = f"mt/rankings_data/hs_ky_{gender}"
+            
+            if args.wrestlers_dir:
+                wrestlers_dir = args.wrestlers_dir
+            else:
+                wrestlers_dir = f"frontend/hs-ky-ui/public/data/wrestlers/{gender}"
+            
+            if args.output_dir:
+                output_dir = args.output_dir
+            else:
+                output_dir = f"frontend/hs-ky-ui/public/data/bonus/{gender}"
+            
+            debug_wrestler_id = args.debug_wrestler_id
+            debug_weight = args.debug_weight
+            
+            # If name provided, search for wrestler
+            if args.debug_name and not debug_wrestler_id:
+                if not debug_weight:
+                    print("Error: --debug-weight is required when using --debug-name")
+                    continue
+                debug_wrestler_id = find_wrestler_by_name(
+                    args.debug_name,
+                    args.season,
+                    debug_weight,
+                    wrestlers_dir
+                )
+                if not debug_wrestler_id:
+                    print(f"Warning: No wrestler found matching '{args.debug_name}' at weight {debug_weight}")
+            
+            # Compute bonus for all wrestlers
+            bonus_data = compute_all_bonus(
+                args.season,
+                rankings_dir,
+                wrestlers_dir,
+                output_dir,
+                debug_wrestler_id=debug_wrestler_id,
+                debug_weight=debug_weight,
+                league=league,
+                gender=gender,
+            )
+            
+            # Write cache file
+            write_bonus_cache(bonus_data, args.season, output_dir)
+            
+            all_bonus_data_combined.update(bonus_data)
+        
+        print(f"\n{'=' * 80}")
+        print(f"Total across both genders:")
+        print(f"  {len(all_bonus_data_combined)} wrestlers with bonus data")
+        print(f"{'=' * 80}")
+        print("\n✓ Top-33 bonus computation complete for all weights")
+    
+    else:
+        # NCAA mode
+        if args.rankings_dir:
+            rankings_dir = args.rankings_dir
+        else:
+            rankings_dir = "mt/rankings_data"
+        
+        if args.wrestlers_dir:
+            wrestlers_dir = args.wrestlers_dir
+        else:
+            wrestlers_dir = "frontend/wrestledata-ui/public/data/wrestlers"
+        
+        if args.output_dir:
+            output_dir = args.output_dir
+        else:
+            output_dir = "frontend/wrestledata-ui/public/data/bonus"
+        
+        debug_wrestler_id = args.debug_wrestler_id
+        debug_weight = args.debug_weight
+        
+        # If name provided, search for wrestler
+        if args.debug_name and not debug_wrestler_id:
+            if not debug_weight:
+                print("Error: --debug-weight is required when using --debug-name")
+                return
+            debug_wrestler_id = find_wrestler_by_name(
+                args.debug_name,
+                args.season,
+                debug_weight,
+                wrestlers_dir
+            )
+            if not debug_wrestler_id:
+                print(f"Warning: No wrestler found matching '{args.debug_name}' at weight {debug_weight}")
+        
+        # Compute bonus for all wrestlers
+        bonus_data = compute_all_bonus(
             args.season,
-            debug_weight,
-            args.wrestlers_dir
+            rankings_dir,
+            wrestlers_dir,
+            output_dir,
+            debug_wrestler_id=debug_wrestler_id,
+            debug_weight=debug_weight,
+            league=league,
         )
-        if not debug_wrestler_id:
-            print(f"Warning: No wrestler found matching '{args.debug_name}' at weight {debug_weight}")
-    
-    # Compute bonus for all wrestlers
-    bonus_data = compute_all_bonus(
-        args.season,
-        args.rankings_dir,
-        args.wrestlers_dir,
-        args.output_dir,
-        debug_wrestler_id=debug_wrestler_id,
-        debug_weight=debug_weight
-    )
-    
-    # Write cache file
-    write_bonus_cache(bonus_data, args.season, args.output_dir)
-    
-    print("\n✓ Top-33 bonus computation complete for all weights")
+        
+        # Write cache file
+        write_bonus_cache(bonus_data, args.season, output_dir)
+        
+        print("\n✓ Top-33 bonus computation complete for all weights")
 
 
 if __name__ == "__main__":

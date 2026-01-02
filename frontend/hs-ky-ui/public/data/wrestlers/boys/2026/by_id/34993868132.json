@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "34993868132",
+  "name": "Tristin Davis",
+  "team": "Green County",
+  "team_slug": "green_county",
+  "team_rank": 85,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 49,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 109.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34997607132",
+      "opponent_rank": 81,
+      "opponent_name": "Jackson Patrick",
+      "method": "Fall 3:46"
+    },
+    "worst_loss": {
+      "opponent_id": "34989076132",
+      "opponent_rank": 46,
+      "opponent_name": "Cisco Torres",
+      "method": "Fall 5:48"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35084080132",
+      "opponent_name": "Yahya Addi",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 43,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:45",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": 2.38
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34997607132",
+      "opponent_name": "Jackson Patrick",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 45,
+      "opponent_weight": 157,
+      "opponent_rank": 81,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:46",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": 3.09
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34989076132",
+      "opponent_name": "Cisco Torres",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 22,
+      "opponent_weight": 157,
+      "opponent_rank": 46,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:48",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -5.62
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.6666666666666666
+  }
+}

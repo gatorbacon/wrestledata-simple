@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "36285051132",
+  "name": "Thomas Stills",
+  "team": "Meade County",
+  "team_slug": "meade_county",
+  "team_rank": 39,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 80,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 103.5,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34993870132",
+      "opponent_rank": 81,
+      "opponent_name": "Carver Berry",
+      "method": "Fall 1:36"
+    },
+    "worst_loss": {
+      "opponent_id": "35007900132",
+      "opponent_rank": 22,
+      "opponent_name": "Justus Smith",
+      "method": "Fall 1:36"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-23",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34993870132",
+      "opponent_name": "Carver Berry",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 85,
+      "opponent_weight": 285,
+      "opponent_rank": 81,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35007900132",
+      "opponent_name": "Justus Smith",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 54,
+      "opponent_weight": 285,
+      "opponent_rank": 22,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
+      "event": "vs. South Warren"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9666666666666666
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35007896132",
+  "name": "Brentley Hilton",
+  "team": "South Warren",
+  "team_slug": "south_warren",
+  "team_rank": 54,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 66,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 97.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35133607132",
+      "opponent_rank": 78,
+      "opponent_name": "Kannen Deaton",
+      "method": "Fall 1:52"
+    },
+    "worst_loss": {
+      "opponent_id": "34989003132",
+      "opponent_rank": 38,
+      "opponent_name": "Aydan Farris",
+      "method": "Fall 1:40"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35133607132",
+      "opponent_name": "Kannen Deaton",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 93,
+      "opponent_weight": 157,
+      "opponent_rank": 78,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:52",
+      "event": "Christian County Invitational",
+      "mv_impact": 4.03
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "34989003132",
+      "opponent_name": "Aydan Farris",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 23,
+      "opponent_weight": 157,
+      "opponent_rank": 38,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:40",
+      "event": "Christian County Invitational",
+      "mv_impact": -4.96
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.6666666666666666
+  }
+}

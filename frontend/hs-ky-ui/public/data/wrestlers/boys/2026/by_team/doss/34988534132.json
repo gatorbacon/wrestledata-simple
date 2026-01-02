@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "34988534132",
+  "name": "Rhett Minnick",
+  "team": "Doss",
+  "team_slug": "doss",
+  "team_rank": 75,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 106.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35021798132",
+      "opponent_rank": 61,
+      "opponent_name": "Ivan Wright",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34992067132",
+      "opponent_rank": 49,
+      "opponent_name": "Greg Curtsinger",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35012796132",
+      "opponent_name": "Devontay Cox",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 123,
+      "opponent_weight": 157,
+      "opponent_rank": 90,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Classic",
+      "mv_impact": 1.76
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34992067132",
+      "opponent_name": "Greg Curtsinger",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 59,
+      "opponent_weight": 165,
+      "opponent_rank": 49,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Classic",
+      "mv_impact": -4.85
+    },
+    {
+      "date": "2025-12-10",
+      "opponent_id": "35021798132",
+      "opponent_name": "Ivan Wright",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": 65,
+      "opponent_weight": 157,
+      "opponent_rank": 61,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Doss",
+      "mv_impact": 5.38
+    }
+  ]
+}

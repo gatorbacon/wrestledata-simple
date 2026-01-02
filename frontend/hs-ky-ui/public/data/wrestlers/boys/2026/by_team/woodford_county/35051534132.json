@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35051534132",
+  "name": "Ephraim Upton",
+  "team": "Woodford County",
+  "team_slug": "woodford_county",
+  "team_rank": 19,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 9.0,
+    "pd7": -6.0,
+    "si_plus": 94.5,
+    "df_plus": 107.9,
+    "apr_plus": 111.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35321405132",
+      "opponent_rank": 84,
+      "opponent_name": "Jackson Gray",
+      "method": "Fall 1:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35321121132",
+      "opponent_rank": 6,
+      "opponent_name": "Lane Griffin",
+      "method": "Dec 9-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35317883132",
+      "opponent_name": "Absire Suleiman",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": 94,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 3.02
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35321121132",
+      "opponent_name": "Lane Griffin",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 126,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 1.6
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35321405132",
+      "opponent_name": "Jackson Gray",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 132,
+      "opponent_rank": 84,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 2.2
+    }
+  ]
+}

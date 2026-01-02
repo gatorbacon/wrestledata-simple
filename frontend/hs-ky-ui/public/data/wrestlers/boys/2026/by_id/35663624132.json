@@ -1,0 +1,129 @@
+{
+  "wrestler_id": "35663624132",
+  "name": "Kaiden Prince",
+  "team": "Ryle",
+  "team_slug": "ryle",
+  "team_rank": 14,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 60,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 15.0,
+    "pa7": 0.5,
+    "pd7": 14.5,
+    "si_plus": 98.1,
+    "df_plus": 111.4,
+    "apr_plus": 97.7,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35529017132",
+      "opponent_rank": 78,
+      "opponent_name": "Dylan Looney",
+      "method": "Dec 5-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34988548132",
+      "opponent_rank": 16,
+      "opponent_name": "Nathan Seth",
+      "method": "Fall 3:45"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34992807132",
+      "opponent_name": "Judah Carey",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 157,
+      "opponent_rank": 5,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:47",
+      "event": "2025 Ryle Raider Rumble",
+      "mv_impact": -2.53
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34988548132",
+      "opponent_name": "Nathan Seth",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 26,
+      "opponent_weight": 157,
+      "opponent_rank": 16,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:45",
+      "event": "2025 Ryle Raider Rumble",
+      "mv_impact": -2.86
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34988560132",
+      "opponent_name": "Tegh Waraich",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 26,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "2025 JV Ryle Raider Rumble",
+      "mv_impact": 8.42
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35214883132",
+      "opponent_name": "Ejaz Ahmad",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 44,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "2:04",
+      "event": "2025 JV Ryle Raider Rumble",
+      "mv_impact": 1.02
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35529017132",
+      "opponent_name": "Dylan Looney",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": 131,
+      "opponent_weight": 165,
+      "opponent_rank": 78,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "2025 JV Ryle Raider Rumble",
+      "mv_impact": -0.59
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.6666666666666666
+  }
+}

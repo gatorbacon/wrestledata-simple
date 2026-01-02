@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35436843132",
+  "name": "Braylen Miller",
+  "team": "South Warren",
+  "team_slug": "south_warren",
+  "team_rank": 54,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 114.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35664280132",
+      "opponent_rank": 39,
+      "opponent_name": "Blake Gipson",
+      "method": "Fall 2:36"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35664280132",
+      "opponent_name": "Blake Gipson",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 285,
+      "opponent_rank": 39,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "vs. South Warren",
+      "mv_impact": 6.68
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35192342132",
+      "opponent_name": "Hunter Bush",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:36",
+      "event": "vs. South Warren",
+      "mv_impact": 0.69
+    }
+  ]
+}

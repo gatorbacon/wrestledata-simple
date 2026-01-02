@@ -1,0 +1,138 @@
+{
+  "wrestler_id": "35333576132",
+  "name": "Alice La Rosa",
+  "team": "Moore",
+  "team_slug": "moore",
+  "team_rank": 50,
+  "weight_class": 152,
+  "year": 2026,
+  "current_rank": 29,
+  "record": {
+    "overall": "2-4",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 6.0,
+    "pd7": -1.0,
+    "si_plus": 102.7,
+    "df_plus": 95.6,
+    "apr_plus": 84.9,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "36026268132",
+      "opponent_rank": 37,
+      "opponent_name": "Asha Ali",
+      "method": "Dec 3-0"
+    },
+    "worst_loss": {
+      "opponent_id": "35577012132",
+      "opponent_rank": 18,
+      "opponent_name": "Kylee Hargan",
+      "method": "Dec 12-7"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35577012132",
+      "opponent_name": "Kylee Hargan",
+      "opponent_team": "Green County",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 18,
+      "result": "L",
+      "method": "DEC",
+      "score": "12-7",
+      "duration": "7:00",
+      "event": "Fern Creek Gladiator Ladies"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_fd50b2e2f7d2",
+      "opponent_name": "Issabel Wakefield",
+      "opponent_team": "Columbus East",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "Jeffersonville Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_710d997f99a5",
+      "opponent_name": "Jacklyn Miller",
+      "opponent_team": "North Harrison",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "Jeffersonville Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_83d2ec672f72",
+      "opponent_name": "Katherine Brunner",
+      "opponent_team": "Jennings County",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:12",
+      "event": "Jeffersonville Classic"
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "36026268132",
+      "opponent_name": "Asha Ali",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 37,
+      "result": "W",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "Queen of the Hive"
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "35515038132",
+      "opponent_name": "Jayla Young",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 13,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Queen of the Hive"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 2.0
+  }
+}

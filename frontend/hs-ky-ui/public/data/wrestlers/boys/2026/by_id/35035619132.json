@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "35035619132",
+  "name": "Case Septer",
+  "team": "Union County",
+  "team_slug": "union_county",
+  "team_rank": 3,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 106.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35207986132",
+      "opponent_rank": 22,
+      "opponent_name": "Ethan Peckenpaugh",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35221008132",
+      "opponent_name": "Westin Carner",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 67,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union County"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35207986132",
+      "opponent_name": "Ethan Peckenpaugh",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 90,
+      "opponent_weight": 175,
+      "opponent_rank": 22,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union County"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. McCracken County"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.55
+  }
+}

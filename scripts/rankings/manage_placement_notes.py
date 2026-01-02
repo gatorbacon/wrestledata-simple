@@ -440,9 +440,9 @@ def main() -> None:
     # Setup notes path based on league type
     if args.league == 'hs':
         state_lower = args.state.lower()
-        notes_path = Path("mt/rankings_data") / f"hs_{state_lower}_{args.gender}" / "placement_notes.json"
+        notes_path = Path("mt/rankings_data") / f"hs_{state_lower}_{args.gender}" / str(args.season) / "placement_notes.json"
     else:  # ncaa
-        notes_path = Path("mt/rankings_data") / "placement_notes.json"
+        notes_path = Path("mt/rankings_data") / str(args.season) / "placement_notes.json"
 
     # Load all teams once for faster interactive searching
     teams = load_team_data(args.season, league=args.league, state=args.state, gender=args.gender)

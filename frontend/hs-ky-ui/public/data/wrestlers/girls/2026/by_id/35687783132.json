@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35687783132",
+  "name": "Jada Frazier",
+  "team": "Bryan Station",
+  "team_slug": "bryan_station",
+  "team_rank": 30,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": 20,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 117.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35333400132",
+      "opponent_rank": 23,
+      "opponent_name": "Jenna Riggs",
+      "method": "Fall 2:09"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35436570132",
+      "opponent_name": "Emma Bailey",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 126,
+      "opponent_rank": 30,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tommy Castle Classic",
+      "mv_impact": 7.09
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35333400132",
+      "opponent_name": "Jenna Riggs",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 23,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:09",
+      "event": "Tommy Castle Classic",
+      "mv_impact": 6.53
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.960493827160494
+  }
+}

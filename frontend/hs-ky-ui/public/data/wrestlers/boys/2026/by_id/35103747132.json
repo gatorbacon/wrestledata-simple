@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "35103747132",
+  "name": "Judah Baysinger",
+  "team": "Scott County",
+  "team_slug": "scott_county",
+  "team_rank": 122,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 124.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35225244132",
+      "opponent_rank": 34,
+      "opponent_name": "Bradley Hacker",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35225244132",
+      "opponent_name": "Bradley Hacker",
+      "opponent_team": "Scott",
+      "opponent_team_rank": 121,
+      "opponent_weight": 138,
+      "opponent_rank": 34,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "OUTSTATE_cd5d8c4fb78b",
+      "opponent_name": "Drew Gegogeine",
+      "opponent_team": "Jasper",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "OUTSTATE_daeb9a93db0a",
+      "opponent_name": "Jackson Stoner",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 44,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tommy Castle Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5555555555555556
+  }
+}

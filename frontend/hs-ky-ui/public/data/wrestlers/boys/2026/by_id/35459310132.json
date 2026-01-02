@@ -1,0 +1,109 @@
+{
+  "wrestler_id": "35459310132",
+  "name": "Evan Gregory",
+  "team": "Rowan County",
+  "team_slug": "rowan_county",
+  "team_rank": 30,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": 80,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 25.0,
+    "pa7": 8.48,
+    "pd7": 16.52,
+    "si_plus": 119.5,
+    "df_plus": 103.7,
+    "apr_plus": 96.7,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35599164132",
+      "opponent_rank": 33,
+      "opponent_name": "Julius Parriman",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35599164132",
+      "opponent_name": "Julius Parriman",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 107,
+      "opponent_weight": 144,
+      "opponent_rank": 33,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Rowan County",
+      "mv_impact": -4.92
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35421050132",
+      "opponent_name": "Brayden Stephens",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 42,
+      "opponent_weight": 138,
+      "opponent_rank": 27,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Whitley County",
+      "mv_impact": -4.3
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34997736132",
+      "opponent_name": "Gabriel Sleigh",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "20-2",
+      "duration": "1:39",
+      "event": "vs. Western",
+      "mv_impact": 0.69
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35237548132",
+      "opponent_name": "Maddie Massengill",
+      "opponent_team": "East Jessamine",
+      "opponent_team_rank": 27,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Rowan County",
+      "mv_impact": 0.86
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5555555555555556
+  }
+}

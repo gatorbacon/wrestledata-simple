@@ -146,7 +146,7 @@ def main() -> None:
     # Setup overrides path based on league type
     if args.league == 'hs':
         state_lower = args.state.lower()
-        overrides_path = Path("mt/rankings_data") / f"hs_{state_lower}_{args.gender}" / "weight_overrides.json"
+        overrides_path = Path("mt/rankings_data") / f"hs_{state_lower}_{args.gender}" / str(args.season) / "weight_overrides.json"
     else:  # ncaa
         overrides_path = Path("mt/rankings_data") / str(args.season) / "weight_overrides.json"
 

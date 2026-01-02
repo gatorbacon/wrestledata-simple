@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "36440796132",
+  "name": "Trigden Ralph",
+  "team": "Ohio County",
+  "team_slug": "ohio_county",
+  "team_rank": 23,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 92.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35643316132",
+      "opponent_rank": 42,
+      "opponent_name": "Joseph Scott",
+      "method": "Fall 3:38"
+    },
+    "worst_loss": {
+      "opponent_id": "35082294132",
+      "opponent_rank": 86,
+      "opponent_name": "David Payne",
+      "method": "Fall 2:44"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35082294132",
+      "opponent_name": "David Payne",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 62,
+      "opponent_weight": 144,
+      "opponent_rank": 86,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:44",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -9.67
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35643316132",
+      "opponent_name": "Joseph Scott",
+      "opponent_team": "Campbellsville",
+      "opponent_team_rank": 69,
+      "opponent_weight": 144,
+      "opponent_rank": 42,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:38",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": 5.62
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35576566132",
+      "opponent_name": "Joel Diaz",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 85,
+      "opponent_weight": 144,
+      "opponent_rank": 39,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -6.05
+    }
+  ]
+}

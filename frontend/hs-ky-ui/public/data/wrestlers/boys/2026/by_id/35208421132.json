@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "35208421132",
+  "name": "Quantrell St. John",
+  "team": "WEB DuBois",
+  "team_slug": "web_dubois",
+  "team_rank": null,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": 63,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 117.3,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35551276132",
+      "opponent_rank": 93,
+      "opponent_name": "Malachi Williams",
+      "method": "Fall 2:33"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-25",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Shawnee"
+    },
+    {
+      "date": "2025-11-25",
+      "opponent_id": "35551276132",
+      "opponent_name": "Malachi Williams",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 175,
+      "opponent_rank": 93,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:33",
+      "event": "vs. Western"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.55
+  }
+}

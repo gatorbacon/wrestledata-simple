@@ -1,0 +1,114 @@
+{
+  "wrestler_id": "35233671132",
+  "name": "Jaiden Carver",
+  "team": "Apollo",
+  "team_slug": "apollo",
+  "team_rank": 56,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": 23,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 16.39,
+    "pa7": 9.24,
+    "pd7": 7.15,
+    "si_plus": 105.2,
+    "df_plus": 100.5,
+    "apr_plus": 107.6,
+    "pin_rate": 0.667,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35746154132",
+      "opponent_rank": 25,
+      "opponent_name": "Isaiah Mitchell",
+      "method": "Fall 1:59"
+    },
+    "worst_loss": {
+      "opponent_id": "35090027132",
+      "opponent_rank": 21,
+      "opponent_name": "Aydin Kadriov",
+      "method": "SV-1 15-12"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35321129132",
+      "opponent_name": "Jared Pierce",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 138,
+      "opponent_rank": 41,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "King of the Bluegrass",
+      "mv_impact": 6.62
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35090027132",
+      "opponent_name": "Aydin Kadriov",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 36,
+      "opponent_weight": 138,
+      "opponent_rank": 21,
+      "result": "L",
+      "method": "SV-1",
+      "score": "15-12",
+      "duration": "8:15",
+      "event": "King of the Bluegrass",
+      "mv_impact": -0.73
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34989885132",
+      "opponent_name": "Ivan Castaneda",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 138,
+      "opponent_rank": 40,
+      "result": "W",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "3:24",
+      "event": "King of the Bluegrass",
+      "mv_impact": 4.63
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35746154132",
+      "opponent_name": "Isaiah Mitchell",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 78,
+      "opponent_weight": 138,
+      "opponent_rank": 25,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:59",
+      "event": "King of the Bluegrass",
+      "mv_impact": 7.6
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.6987654320987655
+  }
+}

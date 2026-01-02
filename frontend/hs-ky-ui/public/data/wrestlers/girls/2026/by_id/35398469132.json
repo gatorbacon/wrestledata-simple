@@ -1,0 +1,138 @@
+{
+  "wrestler_id": "35398469132",
+  "name": "Alexandra Cortez",
+  "team": "Henry Clay",
+  "team_slug": "henry_clay",
+  "team_rank": 2,
+  "weight_class": 235,
+  "year": 2026,
+  "current_rank": 7,
+  "record": {
+    "overall": "3-3",
+    "vs_ranked": "2-3",
+    "vs_top10": "0-3",
+    "vs_top25": "2-3"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 4.0,
+    "pd7": -4.0,
+    "si_plus": 87.4,
+    "df_plus": 109.7,
+    "apr_plus": 102.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 3
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 3,
+    "win_over_highest_rank": {
+      "opponent_id": "35668842132",
+      "opponent_rank": 24,
+      "opponent_name": "Kymani Ealom",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35404896132",
+      "opponent_rank": 2,
+      "opponent_name": "Elene Niyogoshima",
+      "method": "Dec 4-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35668842132",
+      "opponent_name": "Kymani Ealom",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 235,
+      "opponent_rank": 24,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:50",
+      "event": "Ladies 5 Star Classic"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35404896132",
+      "opponent_name": "Elene Niyogoshima",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:53",
+      "event": "Ladies 5 Star Classic"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35333477132",
+      "opponent_name": "ERYAH REESE",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 46,
+      "opponent_weight": 185,
+      "opponent_rank": 1,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Ladies 5 Star"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35668842132",
+      "opponent_name": "Kymani Ealom",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 235,
+      "opponent_rank": 24,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Girls"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_f361909ac286",
+      "opponent_name": "D. Tripp",
+      "opponent_team": "Jeffersonville",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Girls"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35404896132",
+      "opponent_name": "Elene Niyogoshima",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-0",
+      "duration": "7:00",
+      "event": "Derby City Girls"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.9166666666666665
+  }
+}

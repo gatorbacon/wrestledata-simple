@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35664472132",
+  "name": "Lyllian Sandefur",
+  "team": "Daviess County",
+  "team_slug": "daviess_county",
+  "team_rank": 3,
+  "weight_class": 145,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 18.0,
+    "pd7": -14.0,
+    "si_plus": 92.5,
+    "df_plus": 92.1,
+    "apr_plus": 100.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35352420132",
+      "opponent_rank": 36,
+      "opponent_name": "Jaelynn Holcomb",
+      "method": "Fall 2:17"
+    },
+    "worst_loss": {
+      "opponent_id": "35663925132",
+      "opponent_rank": 15,
+      "opponent_name": "Preslee Steiber",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35663925132",
+      "opponent_name": "Preslee Steiber",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 15,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tommy Castle Classic",
+      "mv_impact": -3.74
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35333531132",
+      "opponent_name": "NARAE COMPTON",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 46,
+      "opponent_weight": 138,
+      "opponent_rank": 4,
+      "result": "L",
+      "method": "MD",
+      "score": "18-4",
+      "duration": "7:00",
+      "event": "Tommy Castle Classic",
+      "mv_impact": -0.17
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35352420132",
+      "opponent_name": "Jaelynn Holcomb",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": 36,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:17",
+      "event": "Tommy Castle Classic",
+      "mv_impact": 1.6
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.45
+  }
+}

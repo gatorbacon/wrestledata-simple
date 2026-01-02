@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "OUTSTATE_ee5452c2f999",
+  "name": "Jesse Harper",
+  "team": "Jasper",
+  "team_slug": "jasper",
+  "team_rank": null,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35281172132",
+      "opponent_rank": 34,
+      "opponent_name": "Fernando Cruz",
+      "method": "Dec 2-0"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35522750132",
+      "opponent_name": "Saivon Johnson",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 72,
+      "opponent_weight": 215,
+      "opponent_rank": 69,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35103703132",
+      "opponent_name": "John Lucas",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 122,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35281172132",
+      "opponent_name": "Fernando Cruz",
+      "opponent_team": "Bryan Station",
+      "opponent_team_rank": 64,
+      "opponent_weight": 285,
+      "opponent_rank": 34,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Tommy Castle Classic"
+    }
+  ]
+}

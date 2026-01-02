@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35192492132",
+  "name": "Eli Poore",
+  "team": "Logan County",
+  "team_slug": "logan_county",
+  "team_rank": 102,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.65,
+    "pa7": 25.0,
+    "pd7": -21.35,
+    "si_plus": 105.5,
+    "df_plus": 88.0,
+    "apr_plus": 100.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34989009132",
+      "opponent_rank": 81,
+      "opponent_name": "Asher Mason",
+      "method": "Fall 1:05"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-19",
+      "opponent_id": "34994461132",
+      "opponent_name": "Brytan Ashley",
+      "opponent_team": "Russellville",
+      "opponent_team_rank": 120,
+      "opponent_weight": 175,
+      "opponent_rank": 57,
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "3:50",
+      "event": "vs. Russellville",
+      "mv_impact": -4.25
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35007897132",
+      "opponent_name": "Chuck Martin",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 54,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:58",
+      "event": "vs. South Warren",
+      "mv_impact": 4.94
+    },
+    {
+      "date": "2025-12-04",
+      "opponent_id": "34989009132",
+      "opponent_name": "Asher Mason",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 23,
+      "opponent_weight": 175,
+      "opponent_rank": 81,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
+      "event": "vs. Ohio County",
+      "mv_impact": -7.76
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.55
+  }
+}

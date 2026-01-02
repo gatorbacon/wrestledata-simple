@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35524549132",
+  "name": "Joplin Johnson",
+  "team": "Male",
+  "team_slug": "male",
+  "team_rank": 50,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 99.2,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35222775132",
+      "opponent_rank": 35,
+      "opponent_name": "Torian Bess",
+      "method": "Fall 0:42"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35027795132",
+      "opponent_name": "Brady Dunphy",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 22,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:41",
+      "event": "The Beast of the East",
+      "mv_impact": 1.03
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35222775132",
+      "opponent_name": "Torian Bess",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 165,
+      "opponent_rank": 35,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:42",
+      "event": "The Beast of the East",
+      "mv_impact": -3.86
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9833333333333333
+  }
+}

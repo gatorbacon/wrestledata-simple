@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35722142132",
+  "name": "Caden Ratliff",
+  "team": "Prestonsburg",
+  "team_slug": "prestonsburg",
+  "team_rank": 117,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": 18,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 105.2,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35732595132",
+      "opponent_rank": 31,
+      "opponent_name": "James Begley",
+      "method": "Fall 3:33"
+    },
+    "worst_loss": {
+      "opponent_id": "35017744132",
+      "opponent_rank": 12,
+      "opponent_name": "Nathaniel Williams",
+      "method": "Fall 1:27"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35017744132",
+      "opponent_name": "Nathaniel Williams",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 57,
+      "opponent_weight": 175,
+      "opponent_rank": 12,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:27",
+      "event": "Bobby Bates Wrestling Classic",
+      "mv_impact": -2.14
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35732595132",
+      "opponent_name": "James Begley",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 38,
+      "opponent_weight": 175,
+      "opponent_rank": 31,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:33",
+      "event": "Bobby Bates Wrestling Classic",
+      "mv_impact": 7.74
+    }
+  ]
+}

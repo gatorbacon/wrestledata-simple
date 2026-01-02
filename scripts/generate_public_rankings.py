@@ -59,7 +59,7 @@ def format_record_str(wins: int, losses: int) -> str:
     return f"{wins}-{losses} ({pct:.0f}%)"
 
 
-def load_rankings_starters(season: int, weight: int, rankings_dir: str) -> Optional[List[Dict]]:
+def load_rankings_starters(season: int, weight: int, rankings_dir: str, league: str = 'ncaa', state: str = None, gender: str = None) -> Optional[List[Dict]]:
     """
     Load starter-only rankings JSON.
     
@@ -67,11 +67,19 @@ def load_rankings_starters(season: int, weight: int, rankings_dir: str) -> Optio
         season: Season year
         weight: Weight class
         rankings_dir: Base directory for rankings data
+        league: League type ('ncaa' or 'hs')
+        state: State code (for HS)
+        gender: Gender ('boys' or 'girls' for HS)
     
     Returns:
         List of wrestler dicts from rankings file, or None if not found
     """
-    rankings_path = Path(rankings_dir) / str(season) / f"rankings_starters_{weight}.json"
+    if league == 'hs':
+        # For HS, rankings_dir already includes gender (e.g., frontend/hs-ky-ui/public/data/rankings/boys)
+        # Just add season and filename
+        rankings_path = Path(rankings_dir) / str(season) / f"rankings_starters_{weight}.json"
+    else:
+        rankings_path = Path(rankings_dir) / str(season) / f"rankings_starters_{weight}.json"
     
     if not rankings_path.exists():
         return None
@@ -85,7 +93,7 @@ def load_rankings_starters(season: int, weight: int, rankings_dir: str) -> Optio
         return None
 
 
-def load_wrestler_profile(wrestler_id: str, season: int, wrestlers_dir: str) -> Optional[Dict]:
+def load_wrestler_profile(wrestler_id: str, season: int, wrestlers_dir: str, league: str = 'ncaa', gender: str = None) -> Optional[Dict]:
     """
     Load wrestler profile JSON.
     
@@ -93,11 +101,18 @@ def load_wrestler_profile(wrestler_id: str, season: int, wrestlers_dir: str) -> 
         wrestler_id: Wrestler ID
         season: Season year
         wrestlers_dir: Base directory for wrestler profiles
+        league: League type ('ncaa' or 'hs')
+        gender: Gender ('boys' or 'girls' for HS)
     
     Returns:
         Wrestler profile dict or None if not found
     """
-    profile_path = Path(wrestlers_dir) / str(season) / "by_id" / f"{wrestler_id}.json"
+    if league == 'hs':
+        # For HS, wrestlers_dir already includes gender (e.g., frontend/hs-ky-ui/public/data/wrestlers/boys)
+        # Just add season and by_id
+        profile_path = Path(wrestlers_dir) / str(season) / "by_id" / f"{wrestler_id}.json"
+    else:
+        profile_path = Path(wrestlers_dir) / str(season) / "by_id" / f"{wrestler_id}.json"
     
     if not profile_path.exists():
         return None
@@ -239,7 +254,10 @@ def generate_public_rankings(
     rankings_dir: str,
     wrestlers_dir: str,
     teams_dir: str,
-    output_dir: str
+    output_dir: str,
+    league: str = 'ncaa',
+    state: str = None,
+    gender: str = None
 ) -> bool:
     """
     Generate public rankings JSON for a single weight class.
@@ -256,7 +274,7 @@ def generate_public_rankings(
         True if successful, False otherwise
     """
     # Load starter rankings (authoritative order)
-    rankings = load_rankings_starters(season, weight, rankings_dir)
+    rankings = load_rankings_starters(season, weight, rankings_dir, league=league, state=state, gender=gender)
     
     if not rankings:
         print(f"Warning: No rankings found for {season} {weight} lbs")
@@ -271,7 +289,7 @@ def generate_public_rankings(
             continue
         
         # Load wrestler profile
-        profile = load_wrestler_profile(wrestler_id, season, wrestlers_dir)
+        profile = load_wrestler_profile(wrestler_id, season, wrestlers_dir, league=league, gender=gender)
         
         # Get team slug from profile or ranking entry
         team_slug = None
@@ -301,7 +319,12 @@ def generate_public_rankings(
     }
     
     # Write output file
-    output_path = Path(output_dir) / str(season) / f"{weight}.json"
+    if league == 'hs':
+        # For HS, output_dir already includes gender (e.g., frontend/hs-ky-ui/public/data/public_rankings/boys)
+        # Just add season and filename
+        output_path = Path(output_dir) / str(season) / f"{weight}.json"
+    else:
+        output_path = Path(output_dir) / str(season) / f"{weight}.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
     try:
@@ -354,51 +377,150 @@ def main() -> None:
         type=int,
         help="Single weight class to process (if not provided, processes all weights)"
     )
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (optional when league=hs, defaults to processing both)')
     
     args = parser.parse_args()
     
-    # Determine weights to process
-    if args.weight:
-        weights = [args.weight]
-    else:
-        # Find all weights from rankings_starters files
-        rankings_path = Path(args.rankings_dir) / str(args.season)
-        weights = []
+    # For HS, process both genders if gender not specified
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("For HS league, --state is required.")
         
-        for file_path in rankings_path.glob("rankings_starters_*.json"):
-            weight_str = file_path.stem.replace("rankings_starters_", "")
-            try:
-                weight = int(weight_str)
-                weights.append(weight)
-            except ValueError:
+        genders_to_process = [args.gender] if args.gender else ['boys', 'girls']
+        
+        for gender in genders_to_process:
+            print(f"\n{'=' * 80}")
+            print(f"Generating public rankings for season {args.season} ({args.league.upper()} {args.state} {gender})...")
+            print(f"{'=' * 80}\n")
+            
+            if gender == 'boys':
+                default_weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+            else:
+                default_weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+            
+            # Setup HS-specific paths (use defaults unless explicitly overridden)
+            # Check if user explicitly provided these args by comparing to defaults
+            if args.rankings_dir != "frontend/wrestledata-ui/public/data/rankings":
+                rankings_dir = Path(args.rankings_dir)
+            else:
+                rankings_dir = Path("frontend/hs-ky-ui/public/data/rankings") / gender
+            
+            if args.wrestlers_dir != "frontend/wrestledata-ui/public/data/wrestlers":
+                wrestlers_dir = Path(args.wrestlers_dir)
+            else:
+                wrestlers_dir = Path("frontend/hs-ky-ui/public/data/wrestlers") / gender
+            
+            if args.teams_dir != "mt/teams":
+                teams_dir = Path(args.teams_dir)
+            else:
+                teams_dir = Path("frontend/hs-ky-ui/public/data/teams") / gender / str(args.season)
+            
+            if args.output_dir != "frontend/wrestledata-ui/public/data/public_rankings":
+                output_dir = Path(args.output_dir)
+            else:
+                output_dir = Path("frontend/hs-ky-ui/public/data/public_rankings") / gender
+            
+            # Determine weights to process
+            if args.weight:
+                weights = [args.weight]
+            else:
+                # Find all weights from rankings_starters files
+                rankings_path = rankings_dir / str(args.season)
+                weights = []
+                
+                if rankings_path.exists():
+                    for file_path in rankings_path.glob("rankings_starters_*.json"):
+                        weight_str = file_path.stem.replace("rankings_starters_", "")
+                        try:
+                            weight = int(weight_str)
+                            weights.append(weight)
+                        except ValueError:
+                            continue
+                
+                if not weights:
+                    weights = default_weights
+                
+                weights.sort()
+            
+            if not weights:
+                print(f"No weights found for season {args.season}")
                 continue
+            
+            print(f"Generating public rankings for season {args.season}")
+            print(f"Weights: {weights}")
+            print()
+            
+            # Process each weight
+            success_count = 0
+            for weight in weights:
+                success = generate_public_rankings(
+                    args.season,
+                    weight,
+                    str(rankings_dir),
+                    str(wrestlers_dir),
+                    str(teams_dir),
+                    str(output_dir),
+                    league=args.league,
+                    state=args.state,
+                    gender=gender
+                )
+                if success:
+                    success_count += 1
+            
+            print()
+            print(f"Generated {success_count}/{len(weights)} weight classes")
+    else:  # ncaa
+        # Determine weights to process
+        if args.weight:
+            weights = [args.weight]
+        else:
+            # Find all weights from rankings_starters files
+            rankings_path = Path(args.rankings_dir) / str(args.season)
+            weights = []
+            
+            if rankings_path.exists():
+                for file_path in rankings_path.glob("rankings_starters_*.json"):
+                    weight_str = file_path.stem.replace("rankings_starters_", "")
+                    try:
+                        weight = int(weight_str)
+                        weights.append(weight)
+                    except ValueError:
+                        continue
+            
+            if not weights:
+                weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+            
+            weights.sort()
         
-        weights.sort()
-    
-    if not weights:
-        print(f"No weights found for season {args.season}")
-        return
-    
-    print(f"Generating public rankings for season {args.season}")
-    print(f"Weights: {weights}")
-    print()
-    
-    # Process each weight
-    success_count = 0
-    for weight in weights:
-        success = generate_public_rankings(
-            args.season,
-            weight,
-            args.rankings_dir,
-            args.wrestlers_dir,
-            args.teams_dir,
-            args.output_dir
-        )
-        if success:
-            success_count += 1
-    
-    print()
-    print(f"Generated {success_count}/{len(weights)} weight classes")
+        if not weights:
+            print(f"No weights found for season {args.season}")
+            return
+        
+        print(f"Generating public rankings for season {args.season}")
+        print(f"Weights: {weights}")
+        print()
+        
+        # Process each weight
+        success_count = 0
+        for weight in weights:
+            success = generate_public_rankings(
+                args.season,
+                weight,
+                args.rankings_dir,
+                args.wrestlers_dir,
+                args.teams_dir,
+                args.output_dir,
+                league=args.league
+            )
+            if success:
+                success_count += 1
+        
+        print()
+        print(f"Generated {success_count}/{len(weights)} weight classes")
 
 
 if __name__ == "__main__":

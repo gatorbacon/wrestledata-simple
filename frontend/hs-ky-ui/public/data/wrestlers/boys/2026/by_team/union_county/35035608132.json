@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35035608132",
+  "name": "Cash Bender",
+  "team": "Union County",
+  "team_slug": "union_county",
+  "team_rank": 3,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 107.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35520804132",
+      "opponent_rank": 76,
+      "opponent_name": "Isaiah Messer Cruz",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35207986132",
+      "opponent_rank": 22,
+      "opponent_name": "Ethan Peckenpaugh",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35221008132",
+      "opponent_name": "Westin Carner",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 67,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "vs. Union County",
+      "mv_impact": 1.48
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35520804132",
+      "opponent_name": "Isaiah Messer Cruz",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 80,
+      "opponent_weight": 175,
+      "opponent_rank": 76,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union County",
+      "mv_impact": 4.14
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35207986132",
+      "opponent_name": "Ethan Peckenpaugh",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 90,
+      "opponent_weight": 175,
+      "opponent_rank": 22,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union County",
+      "mv_impact": -1.77
+    }
+  ]
+}

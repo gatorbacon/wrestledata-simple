@@ -42,16 +42,36 @@ def parse_args() -> argparse.Namespace:
         help="Season year (e.g., 2026)",
     )
     parser.add_argument(
+        "-league",
+        type=str,
+        choices=["ncaa", "hs"],
+        default="ncaa",
+        help="League: 'ncaa' (default) or 'hs' for high school",
+    )
+    parser.add_argument(
+        "-state",
+        type=str,
+        default=None,
+        help="State code (required when league=hs, e.g., 'KY')",
+    )
+    parser.add_argument(
+        "-gender",
+        type=str,
+        choices=["boys", "girls"],
+        default=None,
+        help="Gender: 'boys' or 'girls' (optional when league=hs, will process both if not specified)",
+    )
+    parser.add_argument(
         "--teams-list",
         type=str,
-        required=True,
-        help="Path to NCAA D1 teams JSON file",
+        default=None,
+        help="Path to teams JSON file (auto-determined if not specified)",
     )
     parser.add_argument(
         "--rankings-dir",
         type=str,
-        required=True,
-        help="Directory containing rankings_*.json files",
+        default=None,
+        help="Directory containing rankings_*.json files (auto-determined if not specified)",
     )
     parser.add_argument(
         "--starter-overrides",
@@ -62,8 +82,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--out-dir",
         type=str,
-        default="frontend/wrestledata-ui/public/data/teams",
-        help="Output directory for team profile JSON files (default: frontend/wrestledata-ui/public/data/teams)",
+        default=None,
+        help="Output directory for team profile JSON files (auto-determined if not specified)",
     )
     return parser.parse_args()
 
@@ -117,12 +137,19 @@ def load_starter_overrides(overrides_path: Optional[str]) -> Set[str]:
         return set()
 
 
-def load_rankings_by_weight(rankings_dir: str) -> Dict[str, List[Dict]]:
+def load_rankings_by_weight(rankings_dir: str, league: str = 'ncaa', gender: str = None) -> Dict[str, List[Dict]]:
     """Load all rankings_*.json files, organized by weight."""
     rankings_dir_path = Path(rankings_dir)
     rankings_by_weight = {}
     
-    weight_classes = ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]
+    # Determine weight classes based on league and gender
+    if league == 'hs':
+        if gender == 'boys':
+            weight_classes = ["106", "113", "120", "126", "132", "138", "144", "150", "157", "165", "175", "190", "215", "285"]
+        else:  # girls
+            weight_classes = ["100", "107", "114", "120", "126", "132", "138", "145", "152", "165", "185", "235"]
+    else:  # ncaa
+        weight_classes = ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]
     
     for weight in weight_classes:
         rankings_file = rankings_dir_path / f"rankings_{weight}.json"
@@ -166,6 +193,7 @@ def resolve_starters_for_team(
     team_id: str,
     rankings_by_weight: Dict[str, List[Dict]],
     force_backup_ids: Set[str],
+    weight_classes: List[str] = None,
 ) -> Dict[str, Optional[str]]:
     """
     Resolve starters for a team across all weights.
@@ -173,7 +201,8 @@ def resolve_starters_for_team(
     Returns: dict mapping weight -> wrestler_id (or None)
     """
     starters = {}
-    weight_classes = ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]
+    if weight_classes is None:
+        weight_classes = ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]
     
     for weight in weight_classes:
         rankings = rankings_by_weight.get(weight, [])
@@ -247,27 +276,48 @@ def validate_and_warn(teams_data: List[Dict], rankings_by_weight: Dict[str, List
             print(f"Warning: Wrestler {wrestler_id} is starter for multiple teams: {teams_str}")
 
 
-def main() -> None:
-    args = parse_args()
+def process_league(season: int, league: str, state: str, gender: str, args: argparse.Namespace) -> None:
+    """Process team profiles for a single league/gender combination."""
+    # Setup paths based on league type
+    if league == 'hs':
+        teams_list_path = Path(f"data/team_lists/hs_{state.lower()}_{gender}/teams.json")
+        rankings_dir = Path("mt/rankings_data") / f"hs_{state.lower()}_{gender}" / str(season)
+        starter_overrides_path = rankings_dir / "starter_overrides.json"
+        out_dir = Path("frontend/hs-ky-ui/public/data/teams") / gender / str(season)
+        if gender == 'boys':
+            weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+        else: # girls
+            weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+    else: # ncaa
+        teams_list_path = Path(f"data/team_lists/{season}/ncaa_d1_teams.json")
+        rankings_dir = Path("mt/rankings_data") / str(season)
+        starter_overrides_path = rankings_dir / "starter_overrides.json"
+        out_dir = Path("frontend/wrestledata-ui/public/data/teams") / str(season)
+        weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
     
-    print(f"Building team profiles for season {args.season}...")
-    print(f"Teams list: {args.teams_list}")
-    print(f"Rankings dir: {args.rankings_dir}")
-    print(f"Output dir: {args.out_dir}")
+    # Override with CLI args if provided
+    if args.teams_list:
+        teams_list_path = Path(args.teams_list)
+    if args.rankings_dir:
+        rankings_dir = Path(args.rankings_dir)
+    if args.starter_overrides:
+        starter_overrides_path = Path(args.starter_overrides)
+    if args.out_dir:
+        out_dir = Path(args.out_dir)
+    
+    print(f"Building team profiles for season {season} ({league.upper()} {state or ''} {gender or ''})...")
+    print(f"Teams list: {teams_list_path}")
+    print(f"Rankings dir: {rankings_dir}")
+    print(f"Output dir: {out_dir}")
     
     # Step 1: Load team list
     print("\nStep 1: Loading team list...")
-    teams_master = load_teams_list(args.teams_list)
+    teams_master = load_teams_list(str(teams_list_path))
     print(f"Loaded {len(teams_master)} teams")
     
     # Step 2: Load starter overrides
     print("\nStep 2: Loading starter overrides...")
-    if args.starter_overrides:
-        overrides_path = args.starter_overrides
-    else:
-        overrides_path = Path(args.rankings_dir) / "starter_overrides.json"
-    
-    force_backup_ids = load_starter_overrides(str(overrides_path))
+    force_backup_ids = load_starter_overrides(str(starter_overrides_path))
     if force_backup_ids:
         print(f"Loaded {len(force_backup_ids)} starter overrides")
     else:
@@ -275,37 +325,44 @@ def main() -> None:
     
     # Step 3: Load rankings per weight
     print("\nStep 3: Loading rankings...")
-    rankings_by_weight = load_rankings_by_weight(args.rankings_dir)
+    rankings_by_weight = load_rankings_by_weight(str(rankings_dir), league=league, gender=gender)
     print(f"Loaded rankings for {len(rankings_by_weight)} weight classes")
     
     # Step 4: Resolve starters for each team
     print("\nStep 4: Resolving starters...")
     teams_data = []
     
+    # Convert weights to strings for consistency
+    weight_strs = [str(w) for w in weights]
+    
     for team in teams_master:
         team_name = team.get("name", "")
         abbreviation = team.get("abbreviation", "")
-        state = team.get("state", "")
+        state_from_team = team.get("state", "")
         governing_body = team.get("governing_body", "NCAA")
         division_str = team.get("division", "")
         url = team.get("url")
+        region = team.get("region") # Get region for HS
         
         # Normalize division
-        division = "D1"
+        if league == 'hs':
+            division = f"HS {gender.capitalize()}"
+        else:
+            division = "D1"
         
-        # Extract conference
-        conference = extract_conference(division_str)
+        # Extract conference (only for NCAA)
+        conference = extract_conference(division_str) if league == 'ncaa' else None
         
         # Compute team_id
         team_id = slugify_team_name(team_name)
         
         # Resolve starters
-        starters = resolve_starters_for_team(team_id, rankings_by_weight, force_backup_ids)
+        starters = resolve_starters_for_team(team_id, rankings_by_weight, force_backup_ids, weight_classes=weight_strs)
         
         # Build team data
         team_data = {
             "schema_version": "1.0",
-            "season": args.season,
+            "season": season,
             "team_id": team_id,
             "team_name": team_name,
             "name": team_name,  # Keep for backward compatibility
@@ -314,31 +371,21 @@ def main() -> None:
             "division": division,
             "conference": conference,
             "location": {
-                "state": state,
+                "state": state_from_team,
+                "region": region # Add region for HS
             },
             "urls": {
                 "trackwrestling": url,
                 "school": None,
             },
             "roster": {
-                "weights": [125, 133, 141, 149, 157, 165, 174, 184, 197, 285],
-                "starters": {
-                    "125": starters.get("125"),
-                    "133": starters.get("133"),
-                    "141": starters.get("141"),
-                    "149": starters.get("149"),
-                    "157": starters.get("157"),
-                    "165": starters.get("165"),
-                    "174": starters.get("174"),
-                    "184": starters.get("184"),
-                    "197": starters.get("197"),
-                    "285": starters.get("285"),
-                },
+                "weights": weights,
+                "starters": {str(w): starters.get(str(w)) for w in weights},
                 "starters_source": "ranking_files_with_overrides",
             },
             "derived_from": {
-                "rankings_dir": args.rankings_dir,
-                "starter_overrides_file": str(overrides_path) if overrides_path else None,
+                "rankings_dir": str(rankings_dir),
+                "starter_overrides_file": str(starter_overrides_path) if starter_overrides_path else None,
             },
             "generated_at_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         }
@@ -349,7 +396,6 @@ def main() -> None:
     
     # Step 5: Write team profile JSON files
     print("\nStep 5: Writing team profile files...")
-    out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     
     for team_data in teams_data:
@@ -366,6 +412,28 @@ def main() -> None:
     validate_and_warn(teams_data, rankings_by_weight, force_backup_ids)
     
     print("\nDone!")
+
+
+def main() -> None:
+    args = parse_args()
+    season = args.season
+    league = args.league
+    state = args.state
+    gender = args.gender
+    
+    # Validate HS parameters
+    if league == 'hs':
+        if not state:
+            raise ValueError("For HS league, -state is required.")
+        # Process both genders automatically
+        genders = ['boys', 'girls']
+        for gender in genders:
+            print(f"\n{'=' * 80}")
+            print(f"Processing {gender}...")
+            print(f"{'=' * 80}")
+            process_league(season, league, state, gender, args)
+    else: # ncaa
+        process_league(season, league, state, None, args)
 
 
 if __name__ == "__main__":

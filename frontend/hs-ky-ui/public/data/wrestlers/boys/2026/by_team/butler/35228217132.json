@@ -1,0 +1,109 @@
+{
+  "wrestler_id": "35228217132",
+  "name": "Aria McFarland",
+  "team": "Butler",
+  "team_slug": "butler",
+  "team_rank": 66,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": 43,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 111.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 3
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35768251132",
+      "opponent_rank": 100,
+      "opponent_name": "Symphanie Sharrock",
+      "method": "Fall 0:37"
+    },
+    "worst_loss": {
+      "opponent_id": "35247926132",
+      "opponent_rank": 61,
+      "opponent_name": "Sunai Barney",
+      "method": "Fall 3:14"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35768251132",
+      "opponent_name": "Symphanie Sharrock",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": 81,
+      "opponent_weight": 190,
+      "opponent_rank": 100,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "The Beast of the East",
+      "mv_impact": 1.16
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35205989132",
+      "opponent_name": "Jaycee Foley",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:43",
+      "event": "The Beast of the East",
+      "mv_impact": 3.37
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35247926132",
+      "opponent_name": "Sunai Barney",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 215,
+      "opponent_rank": 61,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:14",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": -6.52
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34997633132",
+      "opponent_name": "Sandra Francis",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 4.41
+    }
+  ]
+}

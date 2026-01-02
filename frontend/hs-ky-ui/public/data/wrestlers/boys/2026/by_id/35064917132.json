@@ -1,0 +1,114 @@
+{
+  "wrestler_id": "35064917132",
+  "name": "Greyson Suttor",
+  "team": "John Hardin",
+  "team_slug": "john_hardin",
+  "team_rank": 95,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 25.0,
+    "pd7": -25.0,
+    "si_plus": 89.4,
+    "df_plus": 82.4,
+    "apr_plus": 100.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35082294132",
+      "opponent_rank": 86,
+      "opponent_name": "David Payne",
+      "method": "Fall 1:28"
+    },
+    "worst_loss": {
+      "opponent_id": "34997600132",
+      "opponent_rank": 5,
+      "opponent_name": "BJ Jackson",
+      "method": "Fall 1:55"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35082308132",
+      "opponent_name": "Jeffrey Hughes",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 62,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": 1.14
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35082294132",
+      "opponent_name": "David Payne",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 62,
+      "opponent_weight": 144,
+      "opponent_rank": 86,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": 2.33
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34997600132",
+      "opponent_name": "BJ Jackson",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 45,
+      "opponent_weight": 150,
+      "opponent_rank": 5,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:55",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -1.98
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34992815132",
+      "opponent_name": "Bain Kurtz",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "2:47",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -2.84
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.0
+  }
+}

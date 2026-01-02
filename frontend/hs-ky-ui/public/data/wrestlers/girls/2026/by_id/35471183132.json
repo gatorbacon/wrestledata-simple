@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35471183132",
+  "name": "Mackenzie Curry",
+  "team": "Adair County",
+  "team_slug": "adair_county",
+  "team_rank": 22,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 96.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 2,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35635663132",
+      "opponent_rank": 10,
+      "opponent_name": "June Napier",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35635663132",
+      "opponent_name": "June Napier",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 10,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. South Warren",
+      "mv_impact": -2.97
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35333556132",
+      "opponent_name": "Alexandra Rhinesmith",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 4,
+      "opponent_weight": 138,
+      "opponent_rank": 9,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin",
+      "mv_impact": -1.97
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.5
+  }
+}

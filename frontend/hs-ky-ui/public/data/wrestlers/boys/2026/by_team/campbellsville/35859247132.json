@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35859247132",
+  "name": "Davin Spurling",
+  "team": "Campbellsville",
+  "team_slug": "campbellsville",
+  "team_rank": 69,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 7.0,
+    "pa7": 15.0,
+    "pd7": -8.0,
+    "si_plus": 79.4,
+    "df_plus": 91.4,
+    "apr_plus": 90.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34993870132",
+      "opponent_rank": 81,
+      "opponent_name": "Carver Berry",
+      "method": "MD 15-7"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35568143132",
+      "opponent_name": "Jakob Elder",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 43,
+      "opponent_weight": 285,
+      "opponent_rank": 17,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:09",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -3.56
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34993870132",
+      "opponent_name": "Carver Berry",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 85,
+      "opponent_weight": 285,
+      "opponent_rank": 81,
+      "result": "L",
+      "method": "MD",
+      "score": "15-7",
+      "duration": "7:00",
+      "event": "vs. Green County",
+      "mv_impact": -7.69
+    }
+  ]
+}

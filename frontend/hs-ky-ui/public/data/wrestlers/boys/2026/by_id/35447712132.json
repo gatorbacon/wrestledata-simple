@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35447712132",
+  "name": "Jacob Olin",
+  "team": "West Carter",
+  "team_slug": "west_carter",
+  "team_rank": 133,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": 78,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 19.0,
+    "pd7": -15.0,
+    "si_plus": 97.6,
+    "df_plus": 94.7,
+    "apr_plus": 100.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-01",
+      "opponent_id": "35754212132",
+      "opponent_name": "aiden Runyon",
+      "opponent_team": "Lawrence County",
+      "opponent_team_rank": 99,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. West Carter",
+      "mv_impact": 1.23
+    },
+    {
+      "date": "2025-12-01",
+      "opponent_id": "35635496132",
+      "opponent_name": "David Craig",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "0:00",
+      "event": "vs. West Carter",
+      "mv_impact": -8.83
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.8333333333333334
+  }
+}

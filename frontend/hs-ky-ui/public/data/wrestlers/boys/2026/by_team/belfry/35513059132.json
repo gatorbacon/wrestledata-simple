@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35513059132",
+  "name": "James E. Jones",
+  "team": "Belfry",
+  "team_slug": "belfry",
+  "team_rank": 60,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 3.67,
+    "pa7": 6.0,
+    "pd7": -2.33,
+    "si_plus": 94.3,
+    "df_plus": 105.3,
+    "apr_plus": 95.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34995986132",
+      "opponent_rank": 23,
+      "opponent_name": "Alexander Goodin",
+      "method": "Dec 1-0"
+    },
+    "worst_loss": {
+      "opponent_id": "35420732132",
+      "opponent_rank": 35,
+      "opponent_name": "Zach Smith",
+      "method": "Dec 10-7"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34995986132",
+      "opponent_name": "Alexander Goodin",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 61,
+      "opponent_weight": 215,
+      "opponent_rank": 23,
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Anchor Down Showdown",
+      "mv_impact": 5.81
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35420732132",
+      "opponent_name": "Zach Smith",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 42,
+      "opponent_weight": 215,
+      "opponent_rank": 35,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-7",
+      "duration": "7:00",
+      "event": "Anchor Down Showdown",
+      "mv_impact": -2.19
+    }
+  ]
+}

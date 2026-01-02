@@ -1,0 +1,110 @@
+{
+  "wrestler_id": "35333596132",
+  "name": "Jayleigh Overbay",
+  "team": "Scott County",
+  "team_slug": "scott_county",
+  "team_rank": 15,
+  "weight_class": 235,
+  "year": 2026,
+  "current_rank": 22,
+  "record": {
+    "overall": "1-3",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 4.0,
+    "pd7": -1.0,
+    "si_plus": 91.6,
+    "df_plus": 109.7,
+    "apr_plus": 96.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35448970132",
+      "opponent_rank": 26,
+      "opponent_name": "Madison Cox",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35369129132",
+      "opponent_rank": 19,
+      "opponent_name": "Shirley Lewis",
+      "method": "Dec 4-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-29",
+      "opponent_id": "OUTSTATE_b64bddf0d75b",
+      "opponent_name": "Sevira Taito",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 39,
+      "opponent_weight": 235,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Ladies Woodford County Invitational"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35369129132",
+      "opponent_name": "Shirley Lewis",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 235,
+      "opponent_rank": 19,
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Lady Indians Tomahawk Classic"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35448970132",
+      "opponent_name": "Madison Cox",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 36,
+      "opponent_weight": 235,
+      "opponent_rank": 26,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lady Indians Tomahawk Classic"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35641262132",
+      "opponent_name": "Mackenzie McGeorge",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": 5,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lady Indians Tomahawk Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.9682539682539684
+  }
+}

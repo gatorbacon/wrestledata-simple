@@ -1,0 +1,110 @@
+{
+  "wrestler_id": "35007902132",
+  "name": "William Moss",
+  "team": "South Warren",
+  "team_slug": "south_warren",
+  "team_rank": 54,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 109.9,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35178234132",
+      "opponent_rank": 52,
+      "opponent_name": "Kailand Adams",
+      "method": "Fall 2:29"
+    },
+    "worst_loss": {
+      "opponent_id": "35233659132",
+      "opponent_rank": 36,
+      "opponent_name": "Colton Hardy",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35178234132",
+      "opponent_name": "Kailand Adams",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 175,
+      "opponent_rank": 52,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:29",
+      "event": "vs. South Warren"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35233659132",
+      "opponent_name": "Colton Hardy",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": 56,
+      "opponent_weight": 190,
+      "opponent_rank": 36,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. South Warren"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35437614132",
+      "opponent_name": "nicholas lacosta",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 93,
+      "opponent_weight": 190,
+      "opponent_rank": 93,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. South Warren"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bullitt Central"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3571428571428572
+  }
+}

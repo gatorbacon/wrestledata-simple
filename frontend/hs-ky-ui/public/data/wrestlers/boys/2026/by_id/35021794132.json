@@ -1,0 +1,114 @@
+{
+  "wrestler_id": "35021794132",
+  "name": "Brayden Alger",
+  "team": "Bullitt Central",
+  "team_slug": "bullitt_central",
+  "team_rank": 65,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 105.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35321127132",
+      "opponent_rank": 74,
+      "opponent_name": "Aiden Helm",
+      "method": "Fall 3:14"
+    },
+    "worst_loss": {
+      "opponent_id": "35599166132",
+      "opponent_rank": 43,
+      "opponent_name": "Darius Ridner",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-17",
+      "opponent_id": "35321127132",
+      "opponent_name": "Aiden Helm",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 175,
+      "opponent_rank": 74,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:14",
+      "event": "vs. Bullitt Central",
+      "mv_impact": 4.44
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35599166132",
+      "opponent_name": "Darius Ridner",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 107,
+      "opponent_weight": 175,
+      "opponent_rank": 43,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mccreary Central",
+      "mv_impact": -4.86
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35348090132",
+      "opponent_name": "Cheikh Sow",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 127,
+      "opponent_weight": 175,
+      "opponent_rank": 103,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek",
+      "mv_impact": 1.04
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34997606132",
+      "opponent_name": "Cyrus Greiwe",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 45,
+      "opponent_weight": 190,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Corbin",
+      "mv_impact": -2.23
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.55
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "wrestler_id": "35321340132",
+  "name": "Maykel Vazquez",
+  "team": "North Bullitt",
+  "team_slug": "north_bullitt",
+  "team_rank": 52,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 19,
+  "record": {
+    "overall": "4-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 4.33,
+    "pa7": 3.0,
+    "pd7": 1.33,
+    "si_plus": 101.6,
+    "df_plus": 113.5,
+    "apr_plus": 102.6,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.25,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35217816132",
+      "opponent_rank": 20,
+      "opponent_name": "Kaleb Walz",
+      "method": "Dec 2-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34997794132",
+      "opponent_rank": 18,
+      "opponent_name": "Vincent Willis",
+      "method": "Fall 1:42"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35217816132",
+      "opponent_name": "Kaleb Walz",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 36,
+      "opponent_weight": 165,
+      "opponent_rank": 20,
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "King of the Bluegrass",
+      "mv_impact": 5.47
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35640382132",
+      "opponent_name": "Jobany Rodriguez",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 49,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "King of the Bluegrass",
+      "mv_impact": -1.09
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35040572132",
+      "opponent_name": "Caellum Kinsel",
+      "opponent_team": "Male",
+      "opponent_team_rank": 50,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "King of the Bluegrass",
+      "mv_impact": -0.96
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34997794132",
+      "opponent_name": "Vincent Willis",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 165,
+      "opponent_rank": 18,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "King of the Bluegrass",
+      "mv_impact": -2.97
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35901457132",
+      "opponent_name": "Kaiden Mcwhorter",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 130,
+      "opponent_weight": 165,
+      "opponent_rank": 82,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "King of the Bluegrass",
+      "mv_impact": 2.88
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 1.2444444444444445
+  }
+}

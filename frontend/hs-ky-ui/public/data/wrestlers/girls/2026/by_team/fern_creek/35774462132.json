@@ -1,0 +1,89 @@
+{
+  "wrestler_id": "35774462132",
+  "name": "Divine Mujanukaire",
+  "team": "Fern Creek",
+  "team_slug": "fern_creek",
+  "team_rank": 38,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 23,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 9.0,
+    "pa7": 14.0,
+    "pd7": -5.0,
+    "si_plus": 99.9,
+    "df_plus": 96.2,
+    "apr_plus": 103.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35333661132",
+      "opponent_rank": 34,
+      "opponent_name": "Abigail Sacre",
+      "method": "Fall 2:15"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35336135132",
+      "opponent_name": "Amani Clark",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 5,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "14-9",
+      "duration": "7:00",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": -1.08
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333561132",
+      "opponent_name": "Alondra Cortes",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 27,
+      "opponent_weight": 165,
+      "opponent_rank": 42,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:04",
+      "event": "beast of the east",
+      "mv_impact": 5.0
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333661132",
+      "opponent_name": "Abigail Sacre",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 165,
+      "opponent_rank": 34,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:15",
+      "event": "The Beast of the East",
+      "mv_impact": 6.94
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "wrestler_id": "35205060132",
+  "name": "Brayden Norrick",
+  "team": "Bullitt East",
+  "team_slug": "bullitt_east",
+  "team_rank": 25,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 12,
+  "record": {
+    "overall": "4-3",
+    "vs_ranked": "4-3",
+    "vs_top10": "0-3",
+    "vs_top25": "0-3"
+  },
+  "metrics": {
+    "pf7": 6.33,
+    "pa7": 7.67,
+    "pd7": -1.33,
+    "si_plus": 92.5,
+    "df_plus": 99.3,
+    "apr_plus": 104.5,
+    "pin_rate": 0.75,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 3
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 4,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 3,
+    "win_over_highest_rank": {
+      "opponent_id": "34997713132",
+      "opponent_rank": 26,
+      "opponent_name": "Grayson Scott",
+      "method": "Fall 5:01"
+    },
+    "worst_loss": {
+      "opponent_id": "35040568132",
+      "opponent_rank": 4,
+      "opponent_name": "Andrew Pomeroy",
+      "method": "MD 10-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35040568132",
+      "opponent_name": "Andrew Pomeroy",
+      "opponent_team": "Male",
+      "opponent_team_rank": 50,
+      "opponent_weight": 150,
+      "opponent_rank": 4,
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "vs. Male",
+      "mv_impact": 0.34
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34988545132",
+      "opponent_name": "Heriberto Perez",
+      "opponent_team": "Doss",
+      "opponent_team_rank": 75,
+      "opponent_weight": 157,
+      "opponent_rank": 62,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Doss",
+      "mv_impact": 4.56
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35193753132",
+      "opponent_name": "Christian Ho",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": 76,
+      "opponent_weight": 157,
+      "opponent_rank": 103,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Dupont Manual",
+      "mv_impact": 1.12
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35618758132",
+      "opponent_name": "Christian Maldonado",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 130,
+      "opponent_weight": 157,
+      "opponent_rank": 94,
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "0:00",
+      "event": "vs. Valley",
+      "mv_impact": 0.62
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34992806132",
+      "opponent_name": "Kaygen Roberts",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 150,
+      "opponent_rank": 2,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bullitt East",
+      "mv_impact": -1.49
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34993731132",
+      "opponent_name": "George Dennis",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 157,
+      "opponent_rank": 1,
+      "result": "L",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "vs. Harrison County",
+      "mv_impact": 0.35
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34997713132",
+      "opponent_name": "Grayson Scott",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 157,
+      "opponent_rank": 26,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:01",
+      "event": "vs. Franklin County",
+      "mv_impact": 8.93
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.164021164021164
+  }
+}

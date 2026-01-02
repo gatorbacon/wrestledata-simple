@@ -1,0 +1,110 @@
+{
+  "wrestler_id": "35565724132",
+  "name": "Grant Coons",
+  "team": "St. Xavier",
+  "team_slug": "st_xavier",
+  "team_rank": 17,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 14.0,
+    "pa7": 10.0,
+    "pd7": 4.0,
+    "si_plus": 105.6,
+    "df_plus": 100.9,
+    "apr_plus": 90.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35618758132",
+      "opponent_rank": 94,
+      "opponent_name": "Christian Maldonado",
+      "method": "TF 19-2 3:30"
+    },
+    "worst_loss": {
+      "opponent_id": "35283812132",
+      "opponent_rank": 37,
+      "opponent_name": "Joseph Schack",
+      "method": "Fall 4:02"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35688409132",
+      "opponent_name": "Patrick Durbin",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 39,
+      "opponent_weight": 150,
+      "opponent_rank": 26,
+      "result": "L",
+      "method": "MD",
+      "score": "16-3",
+      "duration": "7:00",
+      "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35283812132",
+      "opponent_name": "Joseph Schack",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 78,
+      "opponent_weight": 157,
+      "opponent_rank": 37,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:02",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35618758132",
+      "opponent_name": "Christian Maldonado",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 130,
+      "opponent_weight": 157,
+      "opponent_rank": 94,
+      "result": "W",
+      "method": "TF",
+      "score": "19-2",
+      "duration": "3:30",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Franklin County"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.6666666666666666
+  }
+}

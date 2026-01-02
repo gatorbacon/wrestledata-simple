@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "34993284132",
+  "name": "Langston Tincher",
+  "team": "Daviess County",
+  "team_slug": "daviess_county",
+  "team_rank": 46,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": 65,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 101.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34999269132",
+      "opponent_rank": 91,
+      "opponent_name": "Jayden Simpson",
+      "method": "Fall 4:38"
+    },
+    "worst_loss": {
+      "opponent_id": "34997574132",
+      "opponent_rank": 48,
+      "opponent_name": "Isaiah Cook",
+      "method": "Fall 2:19"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34997574132",
+      "opponent_name": "Isaiah Cook",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 37,
+      "opponent_weight": 150,
+      "opponent_rank": 48,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:19",
+      "event": "Tommy Castle Classic",
+      "mv_impact": -6.36
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34999269132",
+      "opponent_name": "Jayden Simpson",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 37,
+      "opponent_weight": 157,
+      "opponent_rank": 91,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:38",
+      "event": "Tommy Castle Classic",
+      "mv_impact": 1.62
+    }
+  ]
+}

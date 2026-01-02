@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35724634132",
+  "name": "William Clark",
+  "team": "East Carter",
+  "team_slug": "east_carter",
+  "team_rank": 77,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 100.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35753803132",
+      "opponent_rank": 91,
+      "opponent_name": "elijah diamond",
+      "method": "Fall 1:41"
+    },
+    "worst_loss": {
+      "opponent_id": "35635561132",
+      "opponent_rank": 40,
+      "opponent_name": "Max Worthington",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35850444132",
+      "opponent_name": "Bentley Brown",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 132,
+      "opponent_rank": 10,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland Invitational Tournament",
+      "mv_impact": -2.57
+    },
+    {
+      "date": "2025-12-01",
+      "opponent_id": "35635561132",
+      "opponent_name": "Max Worthington",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 126,
+      "opponent_rank": 40,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Greenup County",
+      "mv_impact": -4.98
+    },
+    {
+      "date": "2025-12-01",
+      "opponent_id": "35753803132",
+      "opponent_name": "elijah diamond",
+      "opponent_team": "Lawrence County",
+      "opponent_team_rank": 99,
+      "opponent_weight": 126,
+      "opponent_rank": 91,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
+      "event": "vs. Lawrence County",
+      "mv_impact": 1.4
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.7777777777777777
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35521746132",
+  "name": "James Grubbs",
+  "team": "Meade County",
+  "team_slug": "meade_county",
+  "team_rank": 39,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 84.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35629387132",
+      "opponent_rank": 73,
+      "opponent_name": "Brian Cordoba",
+      "method": "Fall 1:34"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35629387132",
+      "opponent_name": "Brian Cordoba",
+      "opponent_team": "Male",
+      "opponent_team_rank": 50,
+      "opponent_weight": 285,
+      "opponent_rank": 73,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:34",
+      "event": "vs. Meade County",
+      "mv_impact": -8.16
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35525718132",
+      "opponent_name": "Dai-Leon Brooks",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": 135,
+      "opponent_weight": 285,
+      "opponent_rank": 71,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Western Hills",
+      "mv_impact": -7.44
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "35515611132",
+  "name": "Ja`Rhia Weaver",
+  "team": "Valley",
+  "team_slug": "valley",
+  "team_rank": null,
+  "weight_class": 107,
+  "year": 2026,
+  "current_rank": 32,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 11.0,
+    "pa7": 3.0,
+    "pd7": 8.0,
+    "si_plus": 102.7,
+    "df_plus": 111.0,
+    "apr_plus": 87.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 2,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35756103132",
+      "opponent_rank": 33,
+      "opponent_name": "San`Tori Brown",
+      "method": "MD 11-3"
+    },
+    "worst_loss": {
+      "opponent_id": "35333574132",
+      "opponent_rank": 17,
+      "opponent_name": "Bertina Karnwea",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-05",
+      "opponent_id": "35333574132",
+      "opponent_name": "Bertina Karnwea",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 50,
+      "opponent_weight": 107,
+      "opponent_rank": 17,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Queen of the Hive"
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "35756103132",
+      "opponent_name": "San`Tori Brown",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": 33,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Queen of the Hive"
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "35515461132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Queen of the Hive"
+    }
+  ]
+}

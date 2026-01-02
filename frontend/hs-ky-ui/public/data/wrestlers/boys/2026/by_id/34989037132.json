@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "34989037132",
+  "name": "Jaylin Bellamy",
+  "team": "Paducah Tilghman",
+  "team_slug": "paducah_tilghman",
+  "team_rank": 13,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 96.9,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35281689132",
+      "opponent_rank": 80,
+      "opponent_name": "Ethan Wilson",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35281689132",
+      "opponent_name": "Ethan Wilson",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 106,
+      "opponent_weight": 157,
+      "opponent_rank": 80,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paducah Tilghman"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "OUTSTATE_8b036088d995",
+      "opponent_name": "Braden McGee",
+      "opponent_team": "Johnston City",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Johnston City"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.6666666666666666
+  }
+}

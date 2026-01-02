@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35281180132",
+  "name": "Noah Middleton",
+  "team": "Bryan Station",
+  "team_slug": "bryan_station",
+  "team_rank": 64,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 11.0,
+    "pd7": -8.0,
+    "si_plus": 93.1,
+    "df_plus": 100.5,
+    "apr_plus": 87.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35225232132",
+      "opponent_rank": 80,
+      "opponent_name": "Landon Mahan",
+      "method": "MD 11-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35225232132",
+      "opponent_name": "Landon Mahan",
+      "opponent_team": "Scott",
+      "opponent_team_rank": 121,
+      "opponent_weight": 215,
+      "opponent_rank": 80,
+      "result": "L",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "Tommy Castle Classic",
+      "mv_impact": -6.89
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35238077132",
+      "opponent_name": "Jacob Simpson",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": 134,
+      "opponent_weight": 215,
+      "opponent_rank": 32,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tommy Castle Classic",
+      "mv_impact": -4.56
+    }
+  ]
+}

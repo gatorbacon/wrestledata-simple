@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35788819132",
+  "name": "Khloee Fisher",
+  "team": "Russell County",
+  "team_slug": "russell_county",
+  "team_rank": null,
+  "weight_class": 152,
+  "year": 2026,
+  "current_rank": 23,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 14.0,
+    "pa7": 23.0,
+    "pd7": -9.0,
+    "si_plus": 115.2,
+    "df_plus": 72.7,
+    "apr_plus": 99.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35333687132",
+      "opponent_rank": 27,
+      "opponent_name": "Analiah Parga Lujan",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35435207132",
+      "opponent_name": "Emily Milberger",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "23-14",
+      "duration": "7:00",
+      "event": "The Beast of the East",
+      "mv_impact": -7.76
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333687132",
+      "opponent_name": "Analiah Parga Lujan",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 27,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "The Beast of the East",
+      "mv_impact": 2.42
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.6632996632996633
+  }
+}

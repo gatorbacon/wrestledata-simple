@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35207004132",
+  "name": "Brayden Taylor",
+  "team": "Adair County",
+  "team_slug": "adair_county",
+  "team_rank": 55,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 9.0,
+    "pd7": -5.0,
+    "si_plus": 95.0,
+    "df_plus": 101.9,
+    "apr_plus": 90.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35181056132",
+      "opponent_rank": 69,
+      "opponent_name": "Cruz White",
+      "method": "Dec 9-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35181056132",
+      "opponent_name": "Cruz White",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 72,
+      "opponent_weight": 126,
+      "opponent_rank": 69,
+      "result": "L",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "vs. Danville",
+      "mv_impact": -5.23
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35007891132",
+      "opponent_name": "Garrett Johnson",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 54,
+      "opponent_weight": 126,
+      "opponent_rank": 41,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "vs. South Warren",
+      "mv_impact": -5.07
+    }
+  ]
+}

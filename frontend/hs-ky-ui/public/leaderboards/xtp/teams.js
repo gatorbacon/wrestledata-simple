@@ -31,28 +31,37 @@ function createMetricBar(value, maxValue) {
     return document.createTextNode("—");
   }
   
+  // Create wrapper container with two parts: value + bar (value on left, bar on right)
+  const wrapper = document.createElement("div");
+  wrapper.className = "xtp-bar-wrapper";
+  wrapper.style.cssText = "display: flex; align-items: center; gap: 8px; width: 100%;";
+  
+  // Numeric value (outside bar, right-aligned for consistency)
+  const valueSpan = document.createElement("span");
+  valueSpan.className = "xtp-value-text";
+  valueSpan.style.cssText = "color: #111; font-weight: 600; min-width: 45px; text-align: right; font-variant-numeric: tabular-nums;";
+  valueSpan.textContent = value.toFixed(1);
+  wrapper.appendChild(valueSpan);
+  
+  // Bar container (visual only, no text)
+  const bar = document.createElement("div");
+  bar.className = "metric-bar";
+  bar.style.cssText = "flex: 1; position: relative; height: 12px; background: #e9e9e9; border-radius: 0;";
+  
   // Cap width at 96%
   const width = Math.min((value / maxValue) * 100, 96);
   
-  const bar = document.createElement("div");
-  bar.className = "metric-bar";
-  
   const fill = document.createElement("div");
   fill.className = "metric-bar-fill";
-  fill.style.width = `${width}%`;
-  
-  const valueSpan = document.createElement("span");
-  valueSpan.className = "metric-bar-value";
-  valueSpan.textContent = value.toFixed(1);
+  fill.style.cssText = `position: absolute; left: 0; top: 0; bottom: 0; width: ${width}%; background: var(--accent-primary); opacity: 0.75; border-radius: 0;`;
   
   bar.appendChild(fill);
-  bar.appendChild(valueSpan);
-  return bar;
+  wrapper.appendChild(bar);
+  
+  return wrapper;
 }
 
-function resolveSeason() {
-  return "2026"; // Or make dynamic later
-}
+// Note: hs_config.js must be loaded before this file
 
 function teamNameToSlug(teamName) {
   if (!teamName) return "";
@@ -64,28 +73,51 @@ function teamNameToSlug(teamName) {
   return slug;
 }
 
-const WEIGHTS = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285];
-
 let teamData = [];
 let expandedTeam = null;
+let currentGender = 'boys';
+let currentWeights = [];
 
 async function loadLeaderboard() {
-  const season = resolveSeason();
-  const url = `/data/xtp/${season}/xtp_teams_${season}.json`;
+  // Get context from URL
+  currentGender = getGenderFromURL();
+  const season = getSeasonFromURL();
+  currentWeights = getWeightsForGender(currentGender);
+  
+  const url = buildXTPURL(currentGender, season);
+  console.log(`[HS xTP] Loading data from: ${url}`);
   
   try {
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`Failed to load ${url}`);
+    if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status} - ${res.statusText}`);
     const data = await res.json();
     
-    document.getElementById("season-info").textContent = `Season ${season}`;
+    console.log(`[HS xTP] Loaded ${data?.teams?.length || 0} teams for ${currentGender}`);
+    
+    const seasonEl = document.getElementById("season-info");
+    if (seasonEl) {
+      seasonEl.textContent = `Season ${season} — ${currentGender.charAt(0).toUpperCase() + currentGender.slice(1)}`;
+    }
+    
     teamData = data.teams || [];
     renderLeaderboard();
   } catch (err) {
-    console.error("Error loading leaderboard:", err);
-    document.getElementById("season-info").textContent = "Error loading data";
+    console.error(`[HS xTP] Error loading data from ${url}:`, err);
+    const seasonEl = document.getElementById("season-info");
+    if (seasonEl) {
+      seasonEl.textContent = `Error loading ${currentGender} data`;
+    }
     const tbody = document.querySelector("#xtp-team-leaderboard-table tbody");
-    if (tbody) tbody.innerHTML = "";
+    if (tbody) {
+      tbody.innerHTML = `
+        <tr>
+          <td colspan="7" style="text-align: center; padding: 2em; color: var(--muted);">
+            HS data not found for ${currentGender}.<br>
+            <small style="color: var(--muted-2);">Check console for fetch details.</small>
+          </td>
+        </tr>
+      `;
+    }
   }
 }
 
@@ -137,48 +169,39 @@ function renderLeaderboard() {
     teamTd.appendChild(teamLink);
     tr.appendChild(teamTd);
     
-    // xTP (total) - primary metric with DataGolf-style centered bar (always positive)
+    // xTP (total) - primary metric with bar (value outside bar)
     const xtpTd = document.createElement("td");
     xtpTd.className = "value-cell col-xtp";
     
     if (team.team_xTP !== null && team.team_xTP !== undefined) {
       const xtpValue = team.team_xTP;
       
-      // Create wrapper with data-value and data-sign attributes (always positive for xTP)
+      // Create wrapper with value + bar layout (value outside bar)
       const wrapper = document.createElement("div");
-      wrapper.className = "value-bar-wrapper";
-      wrapper.setAttribute("data-value", xtpValue.toString());
-      wrapper.setAttribute("data-sign", "positive");
+      wrapper.className = "xtp-bar-wrapper";
+      wrapper.style.cssText = "display: flex; align-items: center; gap: 8px; width: 100%;";
       
-      // Zero line (first in DOM) - always green for xTP (positive)
-      const zeroLine = document.createElement("div");
-      zeroLine.className = "zero-line positive";
-      wrapper.appendChild(zeroLine);
+      // Numeric value (outside bar, right-aligned)
+      const valueSpan = document.createElement("span");
+      valueSpan.className = "xtp-value-text";
+      valueSpan.style.cssText = "color: #111; font-weight: 600; min-width: 50px; text-align: right; font-variant-numeric: tabular-nums; font-size: 0.875rem;";
+      valueSpan.textContent = `+${xtpValue.toFixed(1)}`;
+      wrapper.appendChild(valueSpan);
       
-      // Value bar
-      const bar = document.createElement("div");
-      bar.className = "value-bar";
-      wrapper.appendChild(bar);
+      // Bar container (visual only, no text)
+      const barContainer = document.createElement("div");
+      barContainer.style.cssText = "flex: 1; position: relative; height: 14px; background: #e9e9e9; border-radius: 0;";
       
-      // Value label
-      const label = document.createElement("div");
-      label.className = "value-label";
-      wrapper.appendChild(label);
-      
-      // Calculate bar width and apply styles (scale relative to table max)
-      // For xTP, we scale relative to the maximum value in the current table
+      // Calculate bar width (scale relative to table max)
       const MAX_ABS_VALUE = maxXTP > 0 ? maxXTP : 100.0;
       const pct = Math.min(Math.abs(xtpValue) / MAX_ABS_VALUE, 1);
-      const widthPct = pct * 45; // 45% max each direction (same as MV)
+      const widthPct = Math.min(pct * 100, 96); // Cap at 96%
       
-      wrapper.style.setProperty('--bar-width', `${widthPct}%`);
-      bar.style.width = `${widthPct}%`;
+      const barFill = document.createElement("div");
+      barFill.style.cssText = `position: absolute; left: 0; top: 0; bottom: 0; width: ${widthPct}%; background: var(--accent-primary); opacity: 0.75; border-radius: 0;`;
+      barContainer.appendChild(barFill);
       
-      // xTP is always positive
-      bar.classList.add('positive');
-      label.classList.add('positive');
-      label.textContent = `+${xtpValue.toFixed(1)}`;
-      
+      wrapper.appendChild(barContainer);
       xtpTd.appendChild(wrapper);
     } else {
       xtpTd.textContent = "—";
@@ -247,7 +270,7 @@ function renderLeaderboard() {
       // Header
       const thead = document.createElement("thead");
       const headerRow = document.createElement("tr");
-      ["Weight", "Wrestler", "Rank", "xTP", "xTP_P", "xTP_A", "xTP_B"].forEach(header => {
+      ["Weight", "Wrestler", "Rank", "Expected Team Points", "xTP_P", "xTP_A", "xTP_B"].forEach(header => {
         const th = document.createElement("th");
         th.textContent = header;
         headerRow.appendChild(th);
@@ -258,8 +281,8 @@ function renderLeaderboard() {
       // Body
       const tbody2 = document.createElement("tbody");
       
-      // Sort weights ascending
-      const sortedWeights = WEIGHTS.map(w => String(w));
+      // Sort weights ascending (use current gender's weights)
+      const sortedWeights = currentWeights.map(w => String(w));
       
       // Calculate max xTP for expanded rows in THIS team (for bar scaling)
       const teamXTPValues = sortedWeights
@@ -274,22 +297,28 @@ function renderLeaderboard() {
         const row = document.createElement("tr");
         row.className = "xtp-expanded-row";
         
-        // Weight
+        // Weight column (wide enough for "Weight")
         const weightTd = document.createElement("td");
+        weightTd.className = "weight-col-expanded";
+        weightTd.style.cssText = "width: 70px; min-width: 70px; max-width: 70px;";
         weightTd.textContent = weight;
         row.appendChild(weightTd);
         
         if (weightData && weightData.wrestler_id) {
-          // Wrestler name (clickable)
+          // Wrestler name (clickable, 50% wider than before: 140px -> 210px)
           const wrestlerTd = document.createElement("td");
+          wrestlerTd.className = "wrestler-col-expanded";
+          wrestlerTd.style.cssText = "width: 210px; min-width: 210px; max-width: 210px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;";
           const wrestlerLink = document.createElement("a");
           wrestlerLink.href = `/wrestler.html?id=${weightData.wrestler_id}`;
           wrestlerLink.textContent = weightData.name || "Unknown";
           wrestlerTd.appendChild(wrestlerLink);
           row.appendChild(wrestlerTd);
           
-          // Rank - medal badge (expanded rows only)
+          // Rank - medal badge (just wide enough for "RANK" and badges)
           const rankTd = document.createElement("td");
+          rankTd.className = "rank-col-expanded";
+          rankTd.style.cssText = "width: 65px; min-width: 65px; max-width: 65px;";
           if (weightData.rank !== null && weightData.rank !== undefined) {
             rankTd.appendChild(createMVRankBadge(weightData.rank));
           } else {
@@ -297,15 +326,26 @@ function renderLeaderboard() {
           }
           row.appendChild(rankTd);
           
-          // xTP (total) - primary metric with bar (expanded rows, same as collapsed)
+          // xTP (total) - primary metric with bar (expanded rows, value left of bar)
+          // Uses remaining space (flexible width)
           const xtpTd = document.createElement("td");
           xtpTd.className = "num metric-primary expanded-xtp-cell";
+          xtpTd.style.cssText = "padding: 6px 12px;";
           
           if (weightData.xTP !== null && weightData.xTP !== undefined) {
             // Scale bars relative to max xTP in THIS team's expanded rows
             xtpTd.appendChild(createMetricBar(weightData.xTP, expandedMaxXTP));
           } else {
-            xtpTd.textContent = "—";
+            // No qualifier - show "—" with same layout
+            const zeroWrapper = document.createElement("div");
+            zeroWrapper.className = "xtp-bar-wrapper";
+            zeroWrapper.style.cssText = "display: flex; align-items: center; gap: 8px; width: 100%;";
+            const zeroValue = document.createElement("span");
+            zeroValue.className = "xtp-value-text";
+            zeroValue.style.cssText = "color: #111; font-weight: 600; min-width: 45px; text-align: right; font-variant-numeric: tabular-nums;";
+            zeroValue.textContent = "—";
+            zeroWrapper.appendChild(zeroValue);
+            xtpTd.appendChild(zeroWrapper);
           }
           row.appendChild(xtpTd);
           

@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35333668132",
+  "name": "Rowyn Eskridge",
+  "team": "Butler",
+  "team_slug": "butler",
+  "team_rank": 31,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": 26,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 103.2,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35542621132",
+      "opponent_rank": 27,
+      "opponent_name": "Isabella Warner",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35434984132",
+      "opponent_rank": 28,
+      "opponent_name": "Annisa Zulkarnaen",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35542621132",
+      "opponent_name": "Isabella Warner",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 120,
+      "opponent_rank": 27,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Girls",
+      "mv_impact": 6.7
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35434984132",
+      "opponent_name": "Annisa Zulkarnaen",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 28,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Girls",
+      "mv_impact": -5.16
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35385688132",
+      "opponent_name": "Journey Holley",
+      "opponent_team": "Male",
+      "opponent_team_rank": 47,
+      "opponent_weight": 120,
+      "opponent_rank": 43,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Girls",
+      "mv_impact": 5.28
+    }
+  ]
+}

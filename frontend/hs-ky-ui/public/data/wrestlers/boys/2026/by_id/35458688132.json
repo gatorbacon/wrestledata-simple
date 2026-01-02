@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35458688132",
+  "name": "Joshua Frost",
+  "team": "Calloway County",
+  "team_slug": "calloway_county",
+  "team_rank": 68,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": 40,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 104.2,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35437488132",
+      "opponent_rank": 95,
+      "opponent_name": "michael harper",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35221013132",
+      "opponent_rank": 21,
+      "opponent_name": "Dawson Harris",
+      "method": "Fall 3:50"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35207991132",
+      "opponent_name": "Javian Young",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 90,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Calloway County",
+      "mv_impact": 5.76
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35437488132",
+      "opponent_name": "michael harper",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 93,
+      "opponent_weight": 285,
+      "opponent_rank": 95,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Calloway County",
+      "mv_impact": 1.85
+    },
+    {
+      "date": "2025-12-04",
+      "opponent_id": "35221013132",
+      "opponent_name": "Dawson Harris",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 67,
+      "opponent_weight": 215,
+      "opponent_rank": 21,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:50",
+      "event": "vs. Calloway County",
+      "mv_impact": -2.96
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.55
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "36774406132",
+  "name": "Angel Gonzales",
+  "team": "Southwestern",
+  "team_slug": "southwestern",
+  "team_rank": 126,
+  "weight_class": 113,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 19.0,
+    "pa7": 4.0,
+    "pd7": 15.0,
+    "si_plus": 112.3,
+    "df_plus": 109.5,
+    "apr_plus": 91.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35654908132",
+      "opponent_rank": 85,
+      "opponent_name": "Kaleb Baumgartner",
+      "method": "TF 19-4 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35599176132",
+      "opponent_rank": 18,
+      "opponent_name": "Ricky Parriman",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35599176132",
+      "opponent_name": "Ricky Parriman",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 107,
+      "opponent_weight": 113,
+      "opponent_rank": 18,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Southwestern"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bell County"
+    },
+    {
+      "date": "2025-12-18",
+      "opponent_id": "35654908132",
+      "opponent_name": "Kaleb Baumgartner",
+      "opponent_team": "Pineville",
+      "opponent_team_rank": 116,
+      "opponent_weight": 113,
+      "opponent_rank": 85,
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "0:00",
+      "event": "vs. Southwestern"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9090909090909091
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "36285704132",
+  "name": "Grayson Cochran",
+  "team": "Johnson Central",
+  "team_slug": "johnson_central",
+  "team_rank": 10,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 100,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 97.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34993526132",
+      "opponent_rank": 47,
+      "opponent_name": "Tabin Prine",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34993526132",
+      "opponent_name": "Tabin Prine",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 122,
+      "opponent_weight": 157,
+      "opponent_rank": 47,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Fallen Heroes",
+      "mv_impact": -5.74
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.6666666666666666
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "OUTSTATE_9d62f2ab6617",
+  "name": "Luke Robinson",
+  "team": "Sycamore High School",
+  "team_slug": "sycamore_high_school",
+  "team_rank": null,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35640091132",
+      "opponent_rank": 19,
+      "opponent_name": "Cameron Green",
+      "method": "Fall 4:42"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "35640091132",
+      "opponent_name": "Cameron Green",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 49,
+      "opponent_weight": 175,
+      "opponent_rank": 19,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:42",
+      "event": "SWOWCA"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34988567132",
+      "opponent_name": "Grandin Blackburn",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 26,
+      "opponent_weight": 190,
+      "opponent_rank": 59,
+      "result": "W",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "vs. Sycamore High School"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34993555132",
+      "opponent_name": "Marcus Mahan",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 51,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:35",
+      "event": "vs. Sycamore High School"
+    }
+  ]
+}

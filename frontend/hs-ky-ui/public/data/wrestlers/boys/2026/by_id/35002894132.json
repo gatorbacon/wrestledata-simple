@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35002894132",
+  "name": "Jael Obando",
+  "team": "Fort Campbell",
+  "team_slug": "fort_campbell",
+  "team_rank": 80,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 73,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 104.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35133607132",
+      "opponent_rank": 78,
+      "opponent_name": "Kannen Deaton",
+      "method": "Fall 3:45"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-04",
+      "opponent_id": "35133607132",
+      "opponent_name": "Kannen Deaton",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 93,
+      "opponent_weight": 157,
+      "opponent_rank": 78,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:45",
+      "event": "vs. Hopkinsville",
+      "mv_impact": 4.03
+    },
+    {
+      "date": "2025-12-04",
+      "opponent_id": "35598055132",
+      "opponent_name": "Brody Fleming",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": 128,
+      "opponent_weight": 157,
+      "opponent_rank": 83,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:43",
+      "event": "vs. Trigg County",
+      "mv_impact": 3.17
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.6666666666666666
+  }
+}

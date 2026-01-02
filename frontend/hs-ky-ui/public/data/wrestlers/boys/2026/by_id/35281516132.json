@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35281516132",
+  "name": "Muaz Abdullahi",
+  "team": "Southern",
+  "team_slug": "southern",
+  "team_rank": 125,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 15.56,
+    "pa7": 25.0,
+    "pd7": -9.44,
+    "si_plus": 110.9,
+    "df_plus": 85.5,
+    "apr_plus": 103.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "36799236132",
+      "opponent_rank": 100,
+      "opponent_name": "Jordan York",
+      "method": "Fall 0:39"
+    },
+    "worst_loss": {
+      "opponent_id": "35321121132",
+      "opponent_rank": 6,
+      "opponent_name": "Lane Griffin",
+      "method": "TF 19-3 1:21"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "36799236132",
+      "opponent_name": "Jordan York",
+      "opponent_team": "Hart County",
+      "opponent_team_rank": 89,
+      "opponent_weight": 126,
+      "opponent_rank": 100,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": 0.16
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35321121132",
+      "opponent_name": "Lane Griffin",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 126,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "1:21",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -0.4
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.7777777777777777
+  }
+}

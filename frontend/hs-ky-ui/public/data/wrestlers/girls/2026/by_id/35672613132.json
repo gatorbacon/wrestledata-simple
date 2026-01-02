@@ -1,0 +1,129 @@
+{
+  "wrestler_id": "35672613132",
+  "name": "Emily Schroader",
+  "team": "Bullitt East",
+  "team_slug": "bullitt_east",
+  "team_rank": null,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": 5,
+  "record": {
+    "overall": "4-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "1-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 10.5,
+    "pa7": 11.0,
+    "pd7": -0.5,
+    "si_plus": 102.1,
+    "df_plus": 103.1,
+    "apr_plus": 102.5,
+    "pin_rate": 0.75,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 3
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 1,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35404899132",
+      "opponent_rank": 6,
+      "opponent_name": "Trinity Matthews",
+      "method": "MD 14-6"
+    },
+    "worst_loss": {
+      "opponent_id": "35383812132",
+      "opponent_rank": 3,
+      "opponent_name": "Aaliyah Svec",
+      "method": "MD 16-7"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35434953132",
+      "opponent_name": "Lydia Yared",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:27",
+      "event": "Ladies 5 Star Classic",
+      "mv_impact": 5.33
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35404899132",
+      "opponent_name": "Trinity Matthews",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 6,
+      "result": "W",
+      "method": "MD",
+      "score": "14-6",
+      "duration": "7:00",
+      "event": "Ladies 5 Star Classic",
+      "mv_impact": 7.02
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35383812132",
+      "opponent_name": "Aaliyah Svec",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 35,
+      "opponent_weight": 138,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "MD",
+      "score": "16-7",
+      "duration": "7:00",
+      "event": "Ladies 5 Star Classic",
+      "mv_impact": 0.44
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35333600132",
+      "opponent_name": "Cassidy Swanner",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 15,
+      "opponent_weight": 138,
+      "opponent_rank": 27,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lady Indians Tomahawk Classic",
+      "mv_impact": 6.35
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333659132",
+      "opponent_name": "Navaeh Woods",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 138,
+      "opponent_rank": 29,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:46",
+      "event": "The Beast of the East",
+      "mv_impact": 6.42
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 1.5,
+    "top33_bonus_ev_shrunk": 1.575
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35135159132",
+  "name": "mohamed Talasow",
+  "team": "Fairdale",
+  "team_slug": "fairdale",
+  "team_rank": 47,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": 65,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 1.0,
+    "pd7": -1.0,
+    "si_plus": 91.5,
+    "df_plus": 114.1,
+    "apr_plus": 103.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35901515132",
+      "opponent_rank": 103,
+      "opponent_name": "Daniel Foreman",
+      "method": "Fall 0:49"
+    },
+    "worst_loss": {
+      "opponent_id": "34988588132",
+      "opponent_rank": 4,
+      "opponent_name": "Cordion Abernathy",
+      "method": "Dec 1-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34988588132",
+      "opponent_name": "Cordion Abernathy",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 26,
+      "opponent_weight": 138,
+      "opponent_rank": 4,
+      "result": "L",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Phil Thrasher Tournament",
+      "mv_impact": 0.48
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35901515132",
+      "opponent_name": "Daniel Foreman",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 130,
+      "opponent_weight": 138,
+      "opponent_rank": 103,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "King of the Bluegrass",
+      "mv_impact": 0.79
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5555555555555556
+  }
+}

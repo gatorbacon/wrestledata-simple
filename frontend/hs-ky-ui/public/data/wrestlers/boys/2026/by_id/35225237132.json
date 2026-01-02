@@ -1,0 +1,138 @@
+{
+  "wrestler_id": "35225237132",
+  "name": "Tracker Blackburn",
+  "team": "Scott",
+  "team_slug": "scott",
+  "team_rank": 121,
+  "weight_class": 113,
+  "year": 2026,
+  "current_rank": 50,
+  "record": {
+    "overall": "5-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 12.0,
+    "pd7": -12.0,
+    "si_plus": 89.4,
+    "df_plus": 99.2,
+    "apr_plus": 106.7,
+    "pin_rate": 0.6,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 1,
+    "pins": 3
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35180957132",
+      "opponent_rank": 73,
+      "opponent_name": "Carter Cochran",
+      "method": "Fall 2:46"
+    },
+    "worst_loss": {
+      "opponent_id": "35405495132",
+      "opponent_rank": 24,
+      "opponent_name": "Nathan Dillingham",
+      "method": "MD 12-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_9f098eb6614a",
+      "opponent_name": "Henery Ungerbuehler",
+      "opponent_team": "Milford Sr. High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "2:00",
+      "event": "HS Boys Heart of Ohio Invite"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_2c1525d6c4a9",
+      "opponent_name": "Carson Cochran",
+      "opponent_team": "Kenton Ridge Middle/High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "HS Boys Heart of Ohio Invite"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_7925f2923ca3",
+      "opponent_name": "Wade Phillips",
+      "opponent_team": "Milford Sr. High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "HS Boys Heart of Ohio Invite"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35180957132",
+      "opponent_name": "Carter Cochran",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 72,
+      "opponent_weight": 113,
+      "opponent_rank": 73,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:46",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34999342132",
+      "opponent_name": "Benjamin Leslie",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 37,
+      "opponent_weight": 113,
+      "opponent_rank": 78,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35405495132",
+      "opponent_name": "Nathan Dillingham",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 84,
+      "opponent_weight": 113,
+      "opponent_rank": 24,
+      "result": "L",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "Tommy Castle Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9090909090909091
+  }
+}

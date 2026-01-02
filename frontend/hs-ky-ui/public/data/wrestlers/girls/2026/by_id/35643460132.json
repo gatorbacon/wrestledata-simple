@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35643460132",
+  "name": "Onyx Hunter",
+  "team": "Campbellsville",
+  "team_slug": "campbellsville",
+  "team_rank": 32,
+  "weight_class": 107,
+  "year": 2026,
+  "current_rank": 14,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 103.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35600313132",
+      "opponent_rank": 19,
+      "opponent_name": "mazy coffey",
+      "method": "Fall 4:07"
+    },
+    "worst_loss": {
+      "opponent_id": "35333374132",
+      "opponent_rank": 10,
+      "opponent_name": "Hayley Cappelli",
+      "method": "Fall 1:32"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35333374132",
+      "opponent_name": "Hayley Cappelli",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 17,
+      "opponent_weight": 107,
+      "opponent_rank": 10,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:32",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": -5.22
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35600313132",
+      "opponent_name": "mazy coffey",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 20,
+      "opponent_weight": 107,
+      "opponent_rank": 19,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:07",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": 4.8
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.8888888888888888
+  }
+}

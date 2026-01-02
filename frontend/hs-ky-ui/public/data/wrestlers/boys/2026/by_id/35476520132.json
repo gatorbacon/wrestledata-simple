@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35476520132",
+  "name": "kaison phillips",
+  "team": "Pulaski County",
+  "team_slug": "pulaski_county",
+  "team_rank": 118,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": 44,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 22.0,
+    "pd7": -17.0,
+    "si_plus": 95.5,
+    "df_plus": 86.2,
+    "apr_plus": 111.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35013061132",
+      "opponent_rank": 46,
+      "opponent_name": "Landon Baker",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35001144132",
+      "opponent_rank": 8,
+      "opponent_name": "Derrick Johnson",
+      "method": "TF 22-5 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-18",
+      "opponent_id": "35013061132",
+      "opponent_name": "Landon Baker",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 113,
+      "opponent_weight": 144,
+      "opponent_rank": 46,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Pulaski County",
+      "mv_impact": 6.27
+    },
+    {
+      "date": "2025-12-09",
+      "opponent_id": "35544130132",
+      "opponent_name": "Chance Dubose",
+      "opponent_team": "WEB DuBois",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. WEB DuBois",
+      "mv_impact": 1.0
+    },
+    {
+      "date": "2025-12-09",
+      "opponent_id": "35001144132",
+      "opponent_name": "Derrick Johnson",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 11,
+      "opponent_weight": 144,
+      "opponent_rank": 8,
+      "result": "L",
+      "method": "TF",
+      "score": "22-5",
+      "duration": "0:00",
+      "event": "vs. Pulaski County",
+      "mv_impact": -1.24
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.0
+  }
+}

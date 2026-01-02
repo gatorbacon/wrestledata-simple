@@ -194,7 +194,7 @@ def load_match_overrides(season: int, data_dir: str = "mt/rankings_data", league
     # Setup override path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / "match_overrides.json"
+        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "match_overrides.json"
     else:  # ncaa
         overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
     override_map = {}
@@ -808,7 +808,7 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
     # Setup output path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}"
+        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:  # ncaa
         output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)

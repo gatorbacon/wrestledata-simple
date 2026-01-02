@@ -25,10 +25,18 @@ function getMinMatchThreshold() {
 // Compute filtered MV rank and percentile using same logic as leaderboard
 async function computeFilteredMVRankAndPercentile(wrestlerId, weight, season) {
   try {
-    // Load the full MV dataset
-    const url = `/data/mat_value/${season}/mat_value_${season}.json`;
+    // Get gender from URL or default
+    const gender = getGenderFromURL();
+    
+    // Load the full MV dataset (HS path)
+    const url = `/data/mat_value/${gender}/${season}/mat_value_${season}.json`;
+    console.log(`[HS Wrestler] Loading MV data from ${url}...`);
+    
     const res = await fetch(url);
-    if (!res.ok) return null;
+    if (!res.ok) {
+      console.warn(`[HS Wrestler] Failed to load MV data: ${res.status}`);
+      return null;
+    }
     
     const allData = await res.json();
     const minMatches = getMinMatchThreshold();
@@ -63,7 +71,7 @@ async function computeFilteredMVRankAndPercentile(wrestlerId, weight, season) {
     
     return { rank, percentile: finalPercentile, total };
   } catch (err) {
-    console.error("Error computing filtered MV rank and percentile:", err);
+    console.error("[HS Wrestler] Error computing filtered MV rank and percentile:", err);
     return null;
   }
 }
@@ -182,30 +190,100 @@ function safe(value, formatter) {
   }
   
   // ===============================
-  // Fetch Wrestler JSON
+  // Fetch Wrestler JSON (HS KY)
   // ===============================
+  // Note: hs_config.js must be loaded before this file
   
-  function loadWrestlerProfile(id) {
-    const url = `/data/wrestlers/2026/by_id/${id}.json`;
-  
-    fetch(url)
-      .then(res => {
-        if (!res.ok) throw new Error("Could not load wrestler JSON");
-        return res.json();
-      })
-      .then(data => renderWrestlerProfile(data))
-      .catch(err => {
-        console.error("Error loading:", err);
-        document.getElementById("wrestler-name").textContent = "Not Found";
-        document.getElementById("wrestler-meta").textContent = err.message;
-      });
+  async function loadWrestlerProfile(id) {
+    // Get gender from URL or default to boys
+    const gender = getGenderFromURL();
+    const season = getSeasonFromURL();
+    const weights = getWeightsForGender(gender);
+    
+    console.log(`[HS Wrestler] Searching for wrestler ${id} in ${gender} ${season}...`);
+    
+    // Search across all weight files
+    let wrestlerData = null;
+    let foundWeight = null;
+    
+    for (const weight of weights) {
+      try {
+        const url = buildRankingsURL(gender, season, weight);
+        console.log(`[HS Wrestler] Checking ${url}...`);
+        
+        const response = await fetch(url);
+        if (!response.ok) {
+          console.warn(`[HS Wrestler] Failed to load ${url}: ${response.status}`);
+          continue;
+        }
+        
+        const data = await response.json();
+        const wrestlers = data?.wrestlers || [];
+        
+        // Search for wrestler by ID
+        const found = wrestlers.find(w => String(w.wrestler_id) === String(id));
+        if (found) {
+          wrestlerData = found;
+          foundWeight = weight;
+          console.log(`[HS Wrestler] Found wrestler ${id} at ${weight} lbs`);
+          break;
+        }
+      } catch (err) {
+        console.warn(`[HS Wrestler] Error checking weight ${weight}:`, err);
+        continue;
+      }
+    }
+    
+    // Load full wrestler profile from wrestlers directory
+    // Try to load from HS wrestler profiles even if not found in rankings
+    try {
+      const profileUrl = `/data/wrestlers/${gender}/${season}/by_id/${id}.json`;
+      console.log(`[HS Wrestler] Loading full profile from ${profileUrl}...`);
+      
+      const profileResponse = await fetch(profileUrl);
+      if (profileResponse.ok) {
+        const fullProfile = await profileResponse.json();
+        // Merge ranking data with full profile if found in rankings
+        // BUT preserve the full profile's record structure (which has overall, vs_top25, vs_top10)
+        if (wrestlerData) {
+          const originalRecord = fullProfile.record; // Preserve original record structure
+          Object.assign(fullProfile, wrestlerData);
+          if (originalRecord) {
+            fullProfile.record = originalRecord; // Restore original record structure
+          }
+        }
+        renderWrestlerProfile(fullProfile);
+        return;
+      }
+    } catch (err) {
+      console.warn(`[HS Wrestler] Could not load full profile:`, err);
+    }
+    
+    // If not found in rankings and profile file doesn't exist, show error
+    if (!wrestlerData) {
+      console.error(`[HS Wrestler] Wrestler ${id} not found in ${gender} ${season} rankings or profile files`);
+      document.getElementById("wrestler-name").textContent = "Wrestler Not Found";
+      document.getElementById("wrestler-meta").textContent = `Wrestler ID ${id} not found in HS ${gender} rankings for season ${season}`;
+      return;
+    }
+    
+    // Fallback: render with ranking data only
+    renderWrestlerProfile(wrestlerData);
   }
   
   // ===============================
   // Rendering
   // ===============================
   
+  // Helper function to check if we're on HS site
+  function isHSSite() {
+    // Check if hs_config.js is loaded (HS site indicator)
+    return typeof HS_CONFIG !== 'undefined';
+  }
+  
   function renderWrestlerProfile(data) {
+    const isHS = isHSSite();
+    
     document.getElementById("wrestler-name").textContent = safe(data.name);
     
     // Wrestler tagline with rank badge
@@ -221,11 +299,12 @@ function safe(value, formatter) {
     // Render team name as link
     const metaEl = document.getElementById("wrestler-meta");
     const teamName = safe(data.team);
-    const season = safe(data.year);
+    const season = safe(data.year) || getSeasonFromURL();
+    const gender = getGenderFromURL();
     if (teamName && teamName !== "—") {
       const teamSlug = teamNameToSlug(teamName);
       const teamLink = document.createElement("a");
-      teamLink.href = `/team.html?team=${teamSlug}`;
+      teamLink.href = buildPageURL('team.html', gender, { team: teamSlug });
       teamLink.textContent = teamName;
       metaEl.innerHTML = "";
       metaEl.appendChild(teamLink);
@@ -234,8 +313,23 @@ function safe(value, formatter) {
       metaEl.textContent = `Season ${season}`;
     }
   
+    // Hide advanced analytics sections for HS
+    if (isHS) {
+      // Hide the entire profile summary grid (TPAR, Timeline, Skill Profile)
+      const profileGrid = document.querySelector(".profile-summary-grid");
+      if (profileGrid) {
+        profileGrid.style.display = "none";
+      }
+      document.getElementById("mv-section").style.display = "none";
+      document.getElementById("match-impact-section").style.display = "none";
+      document.getElementById("skill-section").style.display = "none";
+      document.getElementById("mv-context-section").style.display = "none";
+      
+      // Render simplified Season Stats for HS
+      renderSimplifiedSeasonStats(data);
+    } else {
     // ========================================
-    // MV SECTION (DataGolf-style, no card)
+      // MV SECTION (DataGolf-style, no card) - NCAA only
     // ========================================
     const mv = (data.metrics || {}).mat_value || {};
     const weightClass = data.weight_class;
@@ -478,15 +572,16 @@ function safe(value, formatter) {
     skillSection.appendChild(skillRowsContainer);
     
     // ========================================
-    // MATCH IMPACT TIMELINE (PROMOTED - BEFORE CONTEXT)
+    // MATCH IMPACT TIMELINE (PROMOTED - BEFORE CONTEXT) - NCAA only
     // ========================================
     renderMatchImpactTimeline(data, mv.mv_avg);
     
     // ========================================
-    // MV CONTEXT (COMPRESSED, BELOW TIMELINE)
+    // MV CONTEXT (COMPRESSED, BELOW TIMELINE) - NCAA only
     // ========================================
     // MV Composition removed - keep section visible for divider, but render nothing
     renderMVContextCompressed(data, mv.mv_avg);
+    }
     
     // ========================================
     // EXPECTED NCAA IMPACT (xTP)
@@ -501,7 +596,149 @@ function safe(value, formatter) {
     // ========================================
     // MATCH HISTORY
     // ========================================
-    renderMatchTable(data.match_list || [], mv.mv_avg);
+    const seasonMV = isHS ? null : mv.mv_avg;
+    renderMatchTable(data.match_list || [], seasonMV, isHS);
+  }
+  
+  // Helper function to calculate winning percentage from record string
+  function calculateWinPercentage(recordStr) {
+    if (!recordStr || typeof recordStr !== 'string') return null;
+    const match = recordStr.match(/(\d+)-(\d+)/);
+    if (!match) return null;
+    const wins = parseInt(match[1], 10);
+    const losses = parseInt(match[2], 10);
+    const total = wins + losses;
+    if (total === 0) return null;
+    return (wins / total) * 100;
+  }
+
+  // Simplified Season Stats for HS (standalone section)
+  function renderSimplifiedSeasonStats(data) {
+    // Create a new section for Season Stats if it doesn't exist
+    let seasonStatsSection = document.getElementById("season-stats-section");
+    if (!seasonStatsSection) {
+      seasonStatsSection = document.createElement("section");
+      seasonStatsSection.id = "season-stats-section";
+      seasonStatsSection.className = "section";
+      
+      // Insert after header, before match history
+      const matchHistorySection = document.querySelector(".section--match-history");
+      matchHistorySection.parentNode.insertBefore(seasonStatsSection, matchHistorySection);
+    }
+    
+    seasonStatsSection.innerHTML = "";
+    
+    // Section header
+    const header = document.createElement("h2");
+    header.textContent = "Season Stats";
+    seasonStatsSection.appendChild(header);
+    
+    // Divider
+    const divider = document.createElement("div");
+    divider.className = "section-divider";
+    seasonStatsSection.appendChild(divider);
+    
+    // Stats grid (2 columns) - much denser spacing
+    const statsGrid = document.createElement("div");
+    statsGrid.style.cssText = "display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 20px; margin-top: 12px;";
+    
+    const record = data.record || {};
+    const m = data.metrics || {};
+    
+    // Debug: Log data to console
+    console.log("[HS Season Stats] Full data:", data);
+    console.log("[HS Season Stats] Record:", record);
+    console.log("[HS Season Stats] Metrics:", m);
+    
+    // Helper function to create a stat row
+    const createStatRow = (label, value) => {
+      if (value === null || value === undefined) return null;
+      // Convert to string and check if empty
+      const valueStr = String(value).trim();
+      if (valueStr === "" || valueStr === "—") return null;
+      
+      const statRow = document.createElement("div");
+      statRow.style.cssText = "display: flex; justify-content: space-between; align-items: baseline; padding: 4px 0;";
+      
+      const labelEl = document.createElement("span");
+      labelEl.style.cssText = "color: var(--muted); font-size: 0.875rem;";
+      labelEl.textContent = label;
+      
+      const valueEl = document.createElement("span");
+      valueEl.style.cssText = "font-weight: 600; font-size: 0.9375rem; color: var(--text);";
+      valueEl.textContent = valueStr;
+      
+      statRow.appendChild(labelEl);
+      statRow.appendChild(valueEl);
+      return statRow;
+    };
+    
+    // Column 1: Record, vs Top 25, vs Top 10, Winning Percentage
+    const col1 = document.createElement("div");
+    col1.style.cssText = "display: flex; flex-direction: column; gap: 0;";
+    
+    // Record
+    const recordValue = record.overall;
+    if (recordValue) {
+      const row = createStatRow("Record", recordValue);
+      if (row) col1.appendChild(row);
+    }
+    
+    // vs Top 25
+    const vsTop25 = record.vs_top25;
+    if (vsTop25) {
+      const row = createStatRow("vs Top 25", vsTop25);
+      if (row) col1.appendChild(row);
+    }
+    
+    // vs Top 10
+    const vsTop10 = record.vs_top10;
+    if (vsTop10) {
+      const row = createStatRow("vs Top 10", vsTop10);
+      if (row) col1.appendChild(row);
+    }
+    
+    // Winning Percentage
+    if (recordValue) {
+      const winPct = calculateWinPercentage(recordValue);
+      if (winPct !== null) {
+        const row = createStatRow("Win %", winPct.toFixed(1) + "%");
+        if (row) col1.appendChild(row);
+      }
+    }
+    
+    // Column 2: Bonus Rate, Falls (pins), Tech Falls, Pin Rate
+    const col2 = document.createElement("div");
+    col2.style.cssText = "display: flex; flex-direction: column; gap: 0;";
+    
+    // Bonus Rate
+    if (m.bonus_rate !== null && m.bonus_rate !== undefined) {
+      const row = createStatRow("Bonus Rate", percentFormatter(m.bonus_rate));
+      if (row) col2.appendChild(row);
+    }
+    
+    // Falls (pins)
+    if (m.pins !== null && m.pins !== undefined) {
+      const row = createStatRow("Falls", String(m.pins));
+      if (row) col2.appendChild(row);
+    }
+    
+    // Tech Falls
+    if (m.techs !== null && m.techs !== undefined) {
+      const row = createStatRow("Tech Falls", String(m.techs));
+      if (row) col2.appendChild(row);
+    }
+    
+    // Pin Rate
+    if (m.pin_rate !== null && m.pin_rate !== undefined) {
+      const row = createStatRow("Pin Rate", percentFormatter(m.pin_rate));
+      if (row) col2.appendChild(row);
+    }
+    
+    // Always append both columns, even if empty (for consistent layout)
+    statsGrid.appendChild(col1);
+    statsGrid.appendChild(col2);
+    seasonStatsSection.appendChild(statsGrid);
   }
   
   function renderSkillMetric(container, label, value, leagueAvg, formatter) {
@@ -887,11 +1124,49 @@ function safe(value, formatter) {
     }
   }
   
-  function createOpponentRankBadge(rank) {
+  // Helper function to detect forfeit matches
+  function isForfeitMatch(match) {
+    if (!match) return false;
+    const result = (match.result || "").toUpperCase();
+    const method = (match.method || "").toUpperCase();
+    const opponentName = (match.opponent_name || "").trim().toUpperCase();
+    const summary = (match.summary || "").toUpperCase();
+    
+    // Check if result starts with "For" (e.g., "For.", "For")
+    if (result.startsWith("FOR")) {
+      return true;
+    }
+    // Check if method starts with "For" (e.g., "For.", "For", "Forfeit", "FF")
+    if (method.startsWith("FOR") || method === "FF") {
+      return true;
+    }
+    // Check if summary contains "over Unknown"
+    if (summary.includes("OVER UNKNOWN")) {
+      return true;
+    }
+    // Check if opponent_name is "Unknown" (case-insensitive)
+    if (opponentName === "UNKNOWN") {
+      return true;
+    }
+    return false;
+  }
+
+  // Helper function to extract team name from event field
+  function getForfeitOpponentTeam(event) {
+    if (!event) return "Forfeit";
+    // Match pattern "vs. <TEAM_NAME>"
+    const match = event.match(/vs\.\s*(.+)/i);
+    if (match && match[1]) {
+      return match[1].trim();
+    }
+    return "Forfeit";
+  }
+
+  function createOpponentRankBadge(rank, isOutOfState = false) {
     if (rank === null || rank === undefined || rank === "") {
       const badge = document.createElement("span");
       badge.className = "rank-badge unr-badge";
-      badge.textContent = "UNR";
+      badge.textContent = isOutOfState ? "N/A" : "UNR";
       return badge;
     }
     
@@ -1003,15 +1278,53 @@ function safe(value, formatter) {
     return badge;
   }
   
-  function renderMatchTable(matches, seasonMV) {
+  function renderMatchTable(matches, seasonMV, isHS = false) {
     const tbody = document.querySelector("#match-table tbody");
     tbody.innerHTML = "";
+    
+    // Hide MI Impact column header for HS
+    if (isHS) {
+      const matchTable = document.querySelector("#match-table");
+      if (matchTable) {
+        const headerRow = matchTable.querySelector("thead tr");
+        if (headerRow) {
+          const headers = headerRow.querySelectorAll("th");
+          headers.forEach((th) => {
+            if (th.textContent.trim() === "MI Impact" || th.classList.contains("mi-impact-header")) {
+              th.style.display = "none";
+            }
+          });
+        }
+      }
+    }
   
     // Sort chronologically (oldest first) for timeline consistency
     const sortedMatches = [...matches].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
   
     sortedMatches.forEach((match) => {
       const tr = document.createElement("tr");
+
+      // Check if this is a forfeit match
+      const isForfeit = isForfeitMatch(match);
+      
+      // Determine display values for forfeits
+      let displayOpponent, displayOpponentTeam, displayOpponentRank, displayResult, displayMethod, displayMVImpact;
+      
+      if (isForfeit) {
+        displayOpponent = "Forfeit";
+        displayOpponentTeam = getForfeitOpponentTeam(match.event);
+        displayOpponentRank = null; // Will show "—"
+        displayResult = "W"; // Forfeits are wins
+        displayMethod = "FF";
+        displayMVImpact = null; // No MV impact for forfeits
+      } else {
+        displayOpponent = match.opponent_name;
+        displayOpponentTeam = match.opponent_team;
+        displayOpponentRank = match.opponent_rank;
+        displayResult = match.result;
+        displayMethod = match.method;
+        displayMVImpact = match.mv_impact;
+      }
   
       // 1. Date (MM-DD-YY format)
       const dateTd = document.createElement("td");
@@ -1021,25 +1334,35 @@ function safe(value, formatter) {
       // 2. Opponent (with link, .name styling)
       const oppTd = document.createElement("td");
       oppTd.className = "name-cell";
-      if (match.opponent_id) {
+      const gender = getGenderFromURL();
+      // Check if opponent is out-of-state (ID starts with "OUTSTATE_")
+      const isOutOfState = match.opponent_id && match.opponent_id.startsWith("OUTSTATE_");
+      // For forfeits and out-of-state opponents, don't create a link
+      if (!isForfeit && !isOutOfState && match.opponent_id) {
         const a = document.createElement("a");
-        a.href = `/wrestler.html?id=${match.opponent_id}`;
-        a.textContent = safe(match.opponent_name);
+        a.href = buildPageURL('wrestler.html', gender, { id: match.opponent_id });
+        a.textContent = safe(displayOpponent);
         oppTd.appendChild(a);
       } else {
-        oppTd.textContent = safe(match.opponent_name);
+        oppTd.textContent = safe(displayOpponent);
       }
       tr.appendChild(oppTd);
   
       // 3. Opponent Team (muted secondary)
       const oppTeamTd = document.createElement("td");
       oppTeamTd.className = "metric-secondary";
-      const oppTeamName = safe(match.opponent_team);
-      if (oppTeamName && oppTeamName !== "—") {
-        const teamSlug = teamNameToSlug(oppTeamName);
+      let oppTeamName = safe(displayOpponentTeam);
+      // Truncate team name to 25 characters max
+      const MAX_TEAM_NAME_LENGTH = 25;
+      if (oppTeamName && oppTeamName.length > MAX_TEAM_NAME_LENGTH) {
+        oppTeamName = oppTeamName.substring(0, MAX_TEAM_NAME_LENGTH) + "...";
+      }
+      if (oppTeamName && oppTeamName !== "—" && oppTeamName !== "Forfeit") {
+        const teamSlug = teamNameToSlug(displayOpponentTeam); // Use original name for slug, not truncated
         const teamLink = document.createElement("a");
-        teamLink.href = `/team.html?team=${teamSlug}`;
-        teamLink.textContent = oppTeamName;
+        teamLink.href = buildPageURL('team.html', gender, { team: teamSlug });
+        teamLink.textContent = oppTeamName; // Display truncated name
+        teamLink.setAttribute("title", displayOpponentTeam); // Show full name on hover
         oppTeamTd.appendChild(teamLink);
       } else {
         oppTeamTd.textContent = oppTeamName;
@@ -1047,27 +1370,48 @@ function safe(value, formatter) {
       tr.appendChild(oppTeamTd);
       
       // 4. Opponent Rank (badge with medal rules)
+      // For forfeits, show "—" instead of "UNR"
+      // For out-of-state opponents, show "N/A" instead of "UNR"
       const oppRankTd = document.createElement("td");
-      oppRankTd.appendChild(createOpponentRankBadge(match.opponent_rank));
+      if (isForfeit) {
+        oppRankTd.textContent = "—";
+      } else if (isOutOfState) {
+        oppRankTd.appendChild(createOpponentRankBadge(displayOpponentRank, true)); // Pass true to show "N/A"
+      } else {
+        oppRankTd.appendChild(createOpponentRankBadge(displayOpponentRank));
+      }
       tr.appendChild(oppRankTd);
       
       // 5. Result (combined Result + Method as badge)
+      // For forfeits, create a custom badge with "FF" and win styling
       const resultTd = document.createElement("td");
-      resultTd.appendChild(createResultBadge(match.result, match.method));
+      if (isForfeit) {
+        const forfeitBadge = document.createElement("span");
+        forfeitBadge.className = "result-badge result-win";
+        forfeitBadge.textContent = "FF";
+        forfeitBadge.setAttribute("title", "Win by Forfeit");
+        resultTd.appendChild(forfeitBadge);
+      } else {
+        resultTd.appendChild(createResultBadge(displayResult, displayMethod));
+      }
       tr.appendChild(resultTd);
       
-      // 6. MV Impact (right-aligned, tabular, color-coded)
+      // 6. MV Impact (right-aligned, tabular, color-coded) - NCAA only
+      // For HS, skip this column entirely
+      if (!isHS) {
       const impactTd = document.createElement("td");
       impactTd.className = "num";
-      const mvImpact = match.mv_impact;
-      if (mvImpact !== null && mvImpact !== undefined) {
-        const impactText = mvImpact > 0 ? `+${mvImpact.toFixed(1)}` : mvImpact.toFixed(1);
+        if (isForfeit) {
+          impactTd.textContent = "—";
+        } else if (displayMVImpact !== null && displayMVImpact !== undefined) {
+          const impactText = displayMVImpact > 0 ? `+${displayMVImpact.toFixed(1)}` : displayMVImpact.toFixed(1);
         impactTd.textContent = impactText;
-        impactTd.classList.add(mvImpact > 0 ? "impact-positive" : "impact-negative");
+          impactTd.classList.add(displayMVImpact > 0 ? "impact-positive" : "impact-negative");
       } else {
         impactTd.textContent = "—";
       }
       tr.appendChild(impactTd);
+      }
       
       // 7. Score (muted secondary)
       const scoreTd = document.createElement("td");

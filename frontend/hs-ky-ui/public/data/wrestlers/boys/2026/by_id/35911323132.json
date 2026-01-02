@@ -1,0 +1,109 @@
+{
+  "wrestler_id": "35911323132",
+  "name": "Ivan McDaniels",
+  "team": "Russell",
+  "team_slug": "russell",
+  "team_rank": 119,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 105.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "36011895132",
+      "opponent_rank": 50,
+      "opponent_name": "Lane Osborne",
+      "method": "Fall 0:37"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35914803132",
+      "opponent_name": "Gage Lemarque",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "AWC Invitational",
+      "mv_impact": 6.63
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35732592132",
+      "opponent_name": "Parker Maynard",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 38,
+      "opponent_weight": 157,
+      "opponent_rank": 15,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:06",
+      "event": "AWC Invitational",
+      "mv_impact": -2.32
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35910810132",
+      "opponent_name": "Gavin Skaggs",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 119,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "AWC Invitational",
+      "mv_impact": 1.79
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "36011895132",
+      "opponent_name": "Lane Osborne",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 119,
+      "opponent_weight": 157,
+      "opponent_rank": 50,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "AWC Invitational",
+      "mv_impact": -5.78
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.6666666666666666
+  }
+}

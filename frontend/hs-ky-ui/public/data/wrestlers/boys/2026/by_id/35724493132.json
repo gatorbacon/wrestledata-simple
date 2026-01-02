@@ -1,0 +1,114 @@
+{
+  "wrestler_id": "35724493132",
+  "name": "Jaxen Skaggs",
+  "team": "East Carter",
+  "team_slug": "east_carter",
+  "team_rank": 77,
+  "weight_class": 113,
+  "year": 2026,
+  "current_rank": 46,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 103.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35635480132",
+      "opponent_rank": 76,
+      "opponent_name": "Waylon Hall",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35754343132",
+      "opponent_rank": 34,
+      "opponent_name": "Bentley Fleming",
+      "method": "Fall 1:11"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-16",
+      "opponent_id": "35754343132",
+      "opponent_name": "Bentley Fleming",
+      "opponent_team": "Lawrence County",
+      "opponent_team_rank": 99,
+      "opponent_weight": 113,
+      "opponent_rank": 34,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
+      "event": "vs. Lawrence County",
+      "mv_impact": -4.91
+    },
+    {
+      "date": "2025-12-16",
+      "opponent_id": "35635480132",
+      "opponent_name": "Waylon Hall",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 113,
+      "opponent_rank": 76,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Greenup County",
+      "mv_impact": 1.11
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35896369132",
+      "opponent_name": "Gavin Payne",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland Invitational Tournament",
+      "mv_impact": 2.52
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35896629132",
+      "opponent_name": "Kaiden Diaz",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland Invitational Tournament",
+      "mv_impact": -6.75
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9090909090909091
+  }
+}

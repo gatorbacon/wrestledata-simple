@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "35506430132",
+  "name": "Trinity Perry",
+  "team": "Paducah Tilghman",
+  "team_slug": "paducah_tilghman",
+  "team_rank": 14,
+  "weight_class": 107,
+  "year": 2026,
+  "current_rank": 35,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 100.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35598143132",
+      "opponent_rank": 7,
+      "opponent_name": "Sophie Parrish",
+      "method": "Fall 3:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35598143132",
+      "opponent_name": "Sophie Parrish",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 107,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "Sister Slam",
+      "mv_impact": -4.02
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.1
+  }
+}

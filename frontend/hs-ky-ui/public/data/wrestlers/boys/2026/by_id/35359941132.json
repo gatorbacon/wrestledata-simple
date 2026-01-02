@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35359941132",
+  "name": "Locke Loftus",
+  "team": "Paul Laurence Dunbar",
+  "team_slug": "paul_laurence_dunbar",
+  "team_rank": 112,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": 29,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 121.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 3
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35599165132",
+      "opponent_rank": 31,
+      "opponent_name": "Triston Corder",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35599165132",
+      "opponent_name": "Triston Corder",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 107,
+      "opponent_weight": 215,
+      "opponent_rank": 31,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paul Laurence Dunbar",
+      "mv_impact": 7.37
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35420732132",
+      "opponent_name": "Zach Smith",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 42,
+      "opponent_weight": 215,
+      "opponent_rank": 35,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Whitley County",
+      "mv_impact": 6.81
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "34995977132",
+      "opponent_name": "Brayden Pace",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 61,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paul Laurence Dunbar",
+      "mv_impact": 4.08
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3
+  }
+}

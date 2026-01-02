@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35219309132",
+  "name": "Michael Gross",
+  "team": "Holmes",
+  "team_slug": "holmes",
+  "team_rank": 91,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 85,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 8.0,
+    "pa7": 6.0,
+    "pd7": 2.0,
+    "si_plus": 101.7,
+    "df_plus": 110.6,
+    "apr_plus": 90.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "35488553132",
+      "opponent_rank": 102,
+      "opponent_name": "Paxton Jones",
+      "method": "Dec 8-6"
+    },
+    "worst_loss": {
+      "opponent_id": "35488270132",
+      "opponent_rank": 6,
+      "opponent_name": "Aidan Maher",
+      "method": "Fall 0:43"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-26",
+      "opponent_id": "35488553132",
+      "opponent_name": "Paxton Jones",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 15,
+      "opponent_weight": 150,
+      "opponent_rank": 102,
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "Region 5 JV Wrestling Tournament",
+      "mv_impact": -2.52
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35488270132",
+      "opponent_name": "Aidan Maher",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 15,
+      "opponent_weight": 157,
+      "opponent_rank": 6,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Bearcat Brawl 2025",
+      "mv_impact": -2.31
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35045481132",
+      "opponent_name": "Emory Dix",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 4,
+      "opponent_weight": 157,
+      "opponent_rank": 4,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Bearcat Brawl 2025",
+      "mv_impact": -2.2
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "wrestler_id": "35528663132",
+  "name": "Boone Sawyer",
+  "team": "Walton-Verona",
+  "team_slug": "waltonverona",
+  "team_rank": 131,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": 55,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 117.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35488264132",
+      "opponent_rank": 76,
+      "opponent_name": "Braden Young",
+      "method": "Fall 0:45"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "OUTSTATE_df5e74b2ab3f",
+      "opponent_name": "Nikari Isaac",
+      "opponent_team": "La Salle High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "SWOWCA"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "OUTSTATE_c670afa668bf",
+      "opponent_name": "Kade Link",
+      "opponent_team": "Miamisburg High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "3:27",
+      "event": "SWOWCA"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35520779132",
+      "opponent_name": "Ashton Edwards",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 144,
+      "opponent_rank": 107,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bearcat Brawl 2025"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35488264132",
+      "opponent_name": "Braden Young",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 15,
+      "opponent_weight": 144,
+      "opponent_rank": 76,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "Bearcat Brawl 2025"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.0
+  }
+}

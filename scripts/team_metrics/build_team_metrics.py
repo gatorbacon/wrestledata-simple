@@ -36,33 +36,38 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--teams-list",
         type=str,
-        required=True,
-        help="Path to NCAA D1 teams JSON file",
+        default=None,
+        help="Path to NCAA D1 teams JSON file (auto-determined if not specified)",
     )
     parser.add_argument(
         "--rankings-dir",
         type=str,
-        required=True,
-        help="Directory containing rankings_*.json files",
+        default=None,
+        help="Directory containing rankings_*.json files (auto-determined if not specified)",
     )
     parser.add_argument(
         "--starter-overrides",
         type=str,
         default=None,
-        help="Path to starter_overrides.json (optional)",
+        help="Path to starter_overrides.json (optional, auto-determined if not specified)",
     )
     parser.add_argument(
         "--wrestler-profiles-dir",
         type=str,
-        default="frontend/wrestledata-ui/public/data/wrestlers/2026/by_id",
-        help="Directory containing wrestler profile JSON files (default: frontend/wrestledata-ui/public/data/wrestlers/2026/by_id)",
+        default=None,
+        help="Directory containing wrestler profile JSON files (auto-determined if not specified)",
     )
     parser.add_argument(
         "--out-file",
         type=str,
-        default="frontend/wrestledata-ui/public/data/team_metrics/2026/team_metrics.json",
-        help="Output JSON file path (default: frontend/wrestledata-ui/public/data/team_metrics/2026/team_metrics.json)",
+        default=None,
+        help="Output JSON file path (auto-determined if not specified)",
     )
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (optional when league=hs, defaults to processing both)')
     parser.add_argument(
         "--debug-team",
         type=str,
@@ -116,14 +121,22 @@ def load_starter_overrides(overrides_path: Optional[str]) -> Set[str]:
     return set(data.get("force_backup_ids", []))
 
 
-def load_rankings(rankings_dir: str) -> Dict[str, List[Dict]]:
+def load_rankings(rankings_dir: str, league: str = 'ncaa', gender: str = None) -> Dict[str, List[Dict]]:
     """Load all rankings_*.json files, organized by weight."""
     rankings_dir_path = Path(rankings_dir)
     rankings_by_weight = {}
     
-    weight_classes = ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]
+    if league == 'hs':
+        if gender == 'boys':
+            weight_classes = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+        else: # girls
+            weight_classes = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+    else: # ncaa
+        weight_classes = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
     
-    for weight in weight_classes:
+    weight_strs = [str(w) for w in weight_classes]
+    
+    for weight in weight_strs:
         rankings_file = rankings_dir_path / f"rankings_{weight}.json"
         if not rankings_file.exists():
             print(f"Warning: Rankings file not found: {rankings_file}")
@@ -165,6 +178,7 @@ def build_starters_by_team(
     rankings_by_weight: Dict[str, List[Dict]],
     teams_master: List[Dict],
     force_backup_ids: Set[str],
+    weights: List[int] = None,
 ) -> Dict[str, Dict[str, Optional[str]]]:
     """
     Build starters map: team_id -> weight -> wrestler_id.
@@ -476,51 +490,92 @@ def compute_league_ranks(
     return ranks
 
 
-def main() -> None:
-    args = parse_args()
+def process_league(season: int, league: str, state: Optional[str], gender: str, args: argparse.Namespace) -> None:
+    """Process team metrics for a single league/gender combination."""
+    # Setup paths based on league type
+    if league == 'hs':
+        if not state:
+            raise ValueError("For HS league, --state is required.")
+        teams_list_path = Path(f"data/team_lists/hs_{state.lower()}_{gender}/teams.json")
+        rankings_dir = Path("mt/rankings_data") / f"hs_{state.lower()}_{gender}" / str(season)
+        starter_overrides_path = rankings_dir / "starter_overrides.json"
+        wrestler_profiles_dir = Path("frontend/hs-ky-ui/public/data/wrestlers") / gender / str(season) / "by_id"
+        out_file = Path("frontend/hs-ky-ui/public/data/team_metrics") / gender / str(season) / "team_metrics.json"
+        if gender == 'boys':
+            weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+        else: # girls
+            weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+    else: # ncaa
+        teams_list_path = Path(f"data/team_lists/{season}/ncaa_d1_teams.json")
+        rankings_dir = Path("mt/rankings_data") / str(season)
+        starter_overrides_path = rankings_dir / "starter_overrides.json"
+        wrestler_profiles_dir = Path("frontend/wrestledata-ui/public/data/wrestlers") / str(season) / "by_id"
+        out_file = Path("frontend/wrestledata-ui/public/data/team_metrics") / str(season) / "team_metrics.json"
+        weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
     
-    print(f"Building team metrics for season {args.season}...")
-    print(f"Teams list: {args.teams_list}")
-    print(f"Rankings dir: {args.rankings_dir}")
-    print(f"Wrestler profiles dir: {args.wrestler_profiles_dir}")
-    print(f"Output file: {args.out_file}")
+    # Override with CLI args if provided
+    if args.teams_list:
+        teams_list_path = Path(args.teams_list)
+    if args.rankings_dir:
+        rankings_dir = Path(args.rankings_dir)
+    if args.starter_overrides:
+        starter_overrides_path = Path(args.starter_overrides)
+    if args.wrestler_profiles_dir:
+        wrestler_profiles_dir = Path(args.wrestler_profiles_dir)
+    if args.out_file:
+        out_file = Path(args.out_file)
+    
+    print(f"Building team metrics for season {season} ({league.upper()} {state or ''} {gender or ''})...")
+    print(f"Teams list: {teams_list_path}")
+    print(f"Rankings dir: {rankings_dir}")
+    print(f"Wrestler profiles dir: {wrestler_profiles_dir}")
+    print(f"Output file: {out_file}")
     
     # Step 0: Read and validate inputs
     print("\nStep 0: Loading inputs...")
-    teams_master = load_teams_list(args.teams_list)
+    teams_master = load_teams_list(str(teams_list_path))
     print(f"Loaded {len(teams_master)} teams from teams list")
     
-    force_backup_ids = load_starter_overrides(args.starter_overrides)
+    force_backup_ids = load_starter_overrides(str(starter_overrides_path))
     print(f"Loaded {len(force_backup_ids)} starter overrides")
     
-    rankings_by_weight = load_rankings(args.rankings_dir)
+    rankings_by_weight = load_rankings(str(rankings_dir), league=league, gender=gender)
     print(f"Loaded rankings for {len(rankings_by_weight)} weight classes")
     
-    profiles_dir_path = Path(args.wrestler_profiles_dir)
+    profiles_dir_path = wrestler_profiles_dir
     if not profiles_dir_path.exists():
         raise FileNotFoundError(f"Wrestler profiles directory not found: {profiles_dir_path}")
     
-    all_profiles = load_all_wrestler_profiles(args.wrestler_profiles_dir)
+    all_profiles = load_all_wrestler_profiles(str(wrestler_profiles_dir))
     print(f"Loaded {len(all_profiles)} wrestler profiles")
     
     # Step 1: Build starters by team
     print("\nStep 1: Building starters by team...")
-    starters_map = build_starters_by_team(rankings_by_weight, teams_master, force_backup_ids)
+    starters_map = build_starters_by_team(rankings_by_weight, teams_master, force_backup_ids, weights=weights)
     print(f"Built starters for {len(starters_map)} teams")
     
     # Step 2-4: Process each team
     print("\nStep 3-5: Computing team metrics...")
     teams_data = []
     
+    # Convert weights to strings for consistency
+    weight_strs = [str(w) for w in weights]
+    
     for team in teams_master:
         team_name = team.get("name", "")
         team_id = slugify_team_name(team_name)
         division = team.get("division", "")
-        conference = extract_conference(division)
+        conference = extract_conference(division) if league == 'ncaa' else None
+        
+        # Normalize division
+        if league == 'hs':
+            division = f"HS {gender.capitalize()}"
+        else:
+            division = "D1"
         
         # Get included wrestler IDs (starters only)
         included_wrestler_ids = []
-        for weight in ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]:
+        for weight in weight_strs:
             wrestler_id = starters_map.get(team_id, {}).get(weight)
             if wrestler_id:
                 included_wrestler_ids.append(wrestler_id)
@@ -536,7 +591,7 @@ def main() -> None:
             "team_id": team_id,
             "team_name": team_name,
             "conference": conference,
-            "division": "D1",
+            "division": division,
             "team_rank": {"value": None, "rank": None, "rank_scope": "league"},
             "metrics": {
                 "avg_pf7": {"value": team_metrics["avg_pf7"], "rank": None, "rank_scope": "league"},
@@ -569,7 +624,7 @@ def main() -> None:
         if args.debug_team and (team_name == args.debug_team or team_id == args.debug_team):
             print(f"\n=== DEBUG: {team_name} ({team_id}) ===")
             print(f"Starters by weight:")
-            for weight in ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]:
+            for weight in weight_strs:
                 wrestler_id = starters_map.get(team_id, {}).get(weight)
                 if wrestler_id:
                     profile = all_profiles.get(wrestler_id)
@@ -636,26 +691,34 @@ def main() -> None:
         except Exception:
             pass
     
+    # Determine governing body and division for output
+    if league == 'hs':
+        governing_body = "KHSAA"
+        division_label = f"HS {gender.capitalize()}"
+    else:
+        governing_body = "NCAA"
+        division_label = "D1"
+    
     output_data = {
         "schema_version": "1.1",
-        "season": args.season,
+        "season": season,
         "generated_at_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "breaking_changes": [
             "Removed teams[].roster and teams[].highlights; use mt/teams/<team_id>.json for team identity and starters."
         ],
         "depends_on": {
-            "wrestler_profiles_dir": args.wrestler_profiles_dir,
+            "wrestler_profiles_dir": str(wrestler_profiles_dir),
             "wrestler_profiles_built_at_utc": wrestler_profiles_built_at,
         },
         "source": {
-            "teams_list_file": args.teams_list,
-            "rankings_dir": args.rankings_dir,
-            "starter_overrides_file": args.starter_overrides or None,
-            "wrestler_profiles_dir": args.wrestler_profiles_dir,
+            "teams_list_file": str(teams_list_path),
+            "rankings_dir": str(rankings_dir),
+            "starter_overrides_file": str(starter_overrides_path) if starter_overrides_path.exists() else None,
+            "wrestler_profiles_dir": str(wrestler_profiles_dir),
         },
         "league": {
-            "governing_body": "NCAA",
-            "division": "D1",
+            "governing_body": governing_body,
+            "division": division_label,
             "team_count": len(teams_data),
         },
         "metric_definitions": {
@@ -675,7 +738,7 @@ def main() -> None:
     }
     
     # Write output file
-    output_path = Path(args.out_file)
+    output_path = out_file
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
     with output_path.open("w", encoding="utf-8") as f:
@@ -683,6 +746,29 @@ def main() -> None:
     
     print(f"\nDone! Wrote team metrics to {output_path}")
     print(f"Total teams: {len(teams_data)}")
+
+
+def main() -> None:
+    args = parse_args()
+    season = args.season
+    league = args.league
+    state = args.state
+    gender = args.gender
+    
+    # For HS, process both genders if gender not specified
+    if league == 'hs':
+        if not state:
+            raise ValueError("For HS league, --state is required.")
+        
+        genders_to_process = [gender] if gender else ['boys', 'girls']
+        
+        for g in genders_to_process:
+            print(f"\n{'=' * 80}")
+            print(f"Processing {g}...")
+            print(f"{'=' * 80}")
+            process_league(season, league, state, g, args)
+    else:  # ncaa
+        process_league(season, league, state, None, args)
 
 
 if __name__ == "__main__":

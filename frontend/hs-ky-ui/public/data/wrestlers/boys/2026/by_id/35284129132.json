@@ -1,0 +1,114 @@
+{
+  "wrestler_id": "35284129132",
+  "name": "Kingston Smith",
+  "team": "Trinity (Louisville)",
+  "team_slug": "trinity_louisville",
+  "team_rank": 129,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": 56,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 25.0,
+    "pa7": 25.0,
+    "pd7": 0.0,
+    "si_plus": 119.5,
+    "df_plus": 82.4,
+    "apr_plus": 101.1,
+    "pin_rate": 0.667,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35076691132",
+      "opponent_rank": 64,
+      "opponent_name": "Khareem Washington",
+      "method": "Fall 3:03"
+    },
+    "worst_loss": {
+      "opponent_id": "35051530132",
+      "opponent_rank": 8,
+      "opponent_name": "Brycen Gray",
+      "method": "Fall 0:30"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35637409132",
+      "opponent_name": "Dylan Withers",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 120,
+      "opponent_rank": 72,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
+      "event": "The Beast of the East",
+      "mv_impact": 2.39
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35076691132",
+      "opponent_name": "Khareem Washington",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 123,
+      "opponent_weight": 113,
+      "opponent_rank": 64,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:03",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 3.35
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35557505132",
+      "opponent_name": "Harlem Hogan",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "22-4",
+      "duration": "0:39",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": -0.06
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35051530132",
+      "opponent_name": "Brycen Gray",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 120,
+      "opponent_rank": 8,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": -2.99
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.19375
+  }
+}

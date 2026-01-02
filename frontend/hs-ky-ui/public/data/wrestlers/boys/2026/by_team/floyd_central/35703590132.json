@@ -1,0 +1,89 @@
+{
+  "wrestler_id": "35703590132",
+  "name": "Max Strong",
+  "team": "Floyd Central",
+  "team_slug": "floyd_central",
+  "team_rank": 79,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 72,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 105.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35913093132",
+      "opponent_rank": 84,
+      "opponent_name": "Berik Queen",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35913093132",
+      "opponent_name": "Berik Queen",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 60,
+      "opponent_weight": 175,
+      "opponent_rank": 84,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Floyd Central",
+      "mv_impact": 3.39
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34997620132",
+      "opponent_name": "Hunter Pitman",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 45,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:54",
+      "event": "Cougar Classic",
+      "mv_impact": -7.83
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35638847132",
+      "opponent_name": "Bentley Honeycutt",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 113,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "Cougar Classic",
+      "mv_impact": 1.5
+    }
+  ]
+}

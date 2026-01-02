@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "34994460132",
+  "name": "Gunner Harper",
+  "team": "Russellville",
+  "team_slug": "russellville",
+  "team_rank": 120,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 91.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35192413132",
+      "opponent_rank": 72,
+      "opponent_name": "Dakota Lee",
+      "method": "Fall 1:59"
+    },
+    "worst_loss": {
+      "opponent_id": "35192413132",
+      "opponent_rank": 72,
+      "opponent_name": "Dakota Lee",
+      "method": "Fall 1:30"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-23",
+      "opponent_id": "34988691132",
+      "opponent_name": "Cayden Hayden",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Christian County Invitational",
+      "mv_impact": -10.1
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35192413132",
+      "opponent_name": "Dakota Lee",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 215,
+      "opponent_rank": 72,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "vs. Russellville",
+      "mv_impact": -8.12
+    },
+    {
+      "date": "2025-12-09",
+      "opponent_id": "35192413132",
+      "opponent_name": "Dakota Lee",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 215,
+      "opponent_rank": 72,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:59",
+      "event": "vs. Russellville",
+      "mv_impact": 3.88
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.55
+  }
+}

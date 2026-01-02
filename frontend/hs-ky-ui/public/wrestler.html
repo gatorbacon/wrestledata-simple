@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Wrestler Profile</title>
@@ -95,7 +95,7 @@
               <th>Opponent Team</th>
               <th>Opponent Rank</th>
               <th>Result</th>
-              <th>MI Impact</th>
+              <th class="mi-impact-header">MI Impact</th>
               <th>Score</th>
             </tr>
           </thead>
@@ -105,6 +105,7 @@
     </section>
   </div>
 
+  <script src="/hs_config.js"></script>
   <script src="/app.js"></script>
   <script src="/tooltips.js"></script>
 
@@ -115,7 +116,7 @@
     
       if (!wrestlerId) {
         document.getElementById("wrestler-name").textContent = "No wrestler selected";
-        document.getElementById("wrestler-meta").textContent = "Use ?id=<wrestler_id>";
+        document.getElementById("wrestler-meta").textContent = "Use ?id=<wrestler_id>&gender=<boys|girls>";
         return;
       }
     

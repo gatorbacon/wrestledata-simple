@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35185742132",
+  "name": "ZaHir Covington",
+  "team": "WEB DuBois",
+  "team_slug": "web_dubois",
+  "team_rank": null,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": 67,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 13.0,
+    "pd7": -10.0,
+    "si_plus": 93.1,
+    "df_plus": 97.9,
+    "apr_plus": 104.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35076701132",
+      "opponent_rank": 62,
+      "opponent_name": "Malik Quarles",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34997640132",
+      "opponent_rank": 50,
+      "opponent_name": "Zarrie Matthews",
+      "method": "MD 13-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-25",
+      "opponent_id": "35076701132",
+      "opponent_name": "Malik Quarles",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 123,
+      "opponent_weight": 150,
+      "opponent_rank": 62,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. WEB DuBois",
+      "mv_impact": 4.63
+    },
+    {
+      "date": "2025-11-25",
+      "opponent_id": "34997640132",
+      "opponent_name": "Zarrie Matthews",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 144,
+      "opponent_rank": 50,
+      "result": "L",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "vs. Western",
+      "mv_impact": -4.2
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "34993275132",
+  "name": "Aiden Ranburger",
+  "team": "Daviess County",
+  "team_slug": "daviess_county",
+  "team_rank": 46,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 109.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35202489132",
+      "opponent_rank": 13,
+      "opponent_name": "Colton Motta",
+      "method": "Fall 1:25"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35138028132",
+      "opponent_name": "Nolan Distler",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 62,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "Tommy Castle Classic",
+      "mv_impact": 7.44
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35202489132",
+      "opponent_name": "Colton Motta",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": 124,
+      "opponent_weight": 144,
+      "opponent_rank": 13,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
+      "event": "Tommy Castle Classic",
+      "mv_impact": -3.83
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.0
+  }
+}

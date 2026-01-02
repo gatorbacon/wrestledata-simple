@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35281582132",
+  "name": "Leo Zieverink",
+  "team": "Dixie Heights",
+  "team_slug": "dixie_heights",
+  "team_rank": 74,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 87.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35746098132",
+      "opponent_rank": 78,
+      "opponent_name": "Cooper Redmon",
+      "method": "Fall 1:49"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35638018132",
+      "opponent_name": "Colton Norris",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:07",
+      "event": "The Beast of the East",
+      "mv_impact": -8.08
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35746098132",
+      "opponent_name": "Cooper Redmon",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 78,
+      "opponent_weight": 132,
+      "opponent_rank": 78,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "The Beast of the East",
+      "mv_impact": -8.74
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.2115384615384615
+  }
+}

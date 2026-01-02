@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "35773519132",
+  "name": "Zac Scott",
+  "team": "Johnson Central",
+  "team_slug": "johnson_central",
+  "team_rank": 10,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 3,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 111.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34993524132",
+      "opponent_rank": 38,
+      "opponent_name": "Belencio Camarena",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34993524132",
+      "opponent_name": "Belencio Camarena",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 122,
+      "opponent_weight": 165,
+      "opponent_rank": 38,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Fallen Heroes",
+      "mv_impact": 6.78
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.6428571428571428
+  }
+}

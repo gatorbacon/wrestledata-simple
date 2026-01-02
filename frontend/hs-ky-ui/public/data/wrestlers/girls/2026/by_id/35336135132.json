@@ -1,0 +1,114 @@
+{
+  "wrestler_id": "35336135132",
+  "name": "Amani Clark",
+  "team": "North Hardin",
+  "team_slug": "north_hardin",
+  "team_rank": 5,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 14.0,
+    "pa7": 9.0,
+    "pd7": 5.0,
+    "si_plus": 106.9,
+    "df_plus": 102.9,
+    "apr_plus": 96.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35774462132",
+      "opponent_rank": 23,
+      "opponent_name": "Divine Mujanukaire",
+      "method": "Dec 14-9"
+    },
+    "worst_loss": {
+      "opponent_id": "35345848132",
+      "opponent_rank": 12,
+      "opponent_name": "Hailey Scott",
+      "method": "Fall 0:39"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35774462132",
+      "opponent_name": "Divine Mujanukaire",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 38,
+      "opponent_weight": 165,
+      "opponent_rank": 23,
+      "result": "W",
+      "method": "DEC",
+      "score": "14-9",
+      "duration": "7:00",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": 5.33
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35345848132",
+      "opponent_name": "Hailey Scott",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 165,
+      "opponent_rank": 12,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "2025 Ohio County Girls` Invitational",
+      "mv_impact": -3.31
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35345847132",
+      "opponent_name": "Payten Simmons",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
+      "event": "2025 Ohio County Girls` Invitational",
+      "mv_impact": -4.55
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333412132",
+      "opponent_name": "Kyleigh Hampton",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 41,
+      "opponent_weight": 165,
+      "opponent_rank": 28,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "2025 Ohio County Girls` Invitational",
+      "mv_impact": 6.49
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 1.0,
+    "top33_bonus_ev_shrunk": 1.5066666666666666
+  }
+}

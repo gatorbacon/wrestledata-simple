@@ -1,0 +1,109 @@
+{
+  "wrestler_id": "35045517132",
+  "name": "Carter Taylor",
+  "team": "Madison Central",
+  "team_slug": "madison_central",
+  "team_rank": 4,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 10.0,
+    "pd7": -4.0,
+    "si_plus": 107.1,
+    "df_plus": 108.5,
+    "apr_plus": 109.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 3
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35638360132",
+      "opponent_rank": 88,
+      "opponent_name": "Gael Stearns",
+      "method": "Fall 2:50"
+    },
+    "worst_loss": {
+      "opponent_id": "35222658132",
+      "opponent_rank": 33,
+      "opponent_name": "Mijaia Dunn",
+      "method": "Dec 10-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35284604132",
+      "opponent_name": "Bryce Taylor",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 129,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "The Beast of the East",
+      "mv_impact": 0.25
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35074425132",
+      "opponent_name": "Emmanuel Cortes",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 59,
+      "opponent_weight": 175,
+      "opponent_rank": 117,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "The Beast of the East",
+      "mv_impact": 1.62
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35638360132",
+      "opponent_name": "Gael Stearns",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 175,
+      "opponent_rank": 88,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:50",
+      "event": "The Beast of the East",
+      "mv_impact": 2.24
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35222658132",
+      "opponent_name": "Mijaia Dunn",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 175,
+      "opponent_rank": 33,
+      "result": "L",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
+      "event": "The Beast of the East",
+      "mv_impact": -0.93
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>xTP Team Projections</title>
@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
+  <script src="/hs_config.js"></script>
   <style>
     .expandable-row {
       cursor: pointer;
@@ -47,6 +48,34 @@
     }
     .weight-breakdown th {
       font-weight: 600;
+    }
+    /* Column widths for expanded rows */
+    .weight-breakdown th:nth-child(1),
+    .weight-breakdown td.weight-col-expanded {
+      width: 70px;
+      min-width: 70px;
+      max-width: 70px;
+    }
+    .weight-breakdown th:nth-child(2),
+    .weight-breakdown td.wrestler-col-expanded {
+      width: 210px;
+      min-width: 210px;
+      max-width: 210px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .weight-breakdown th:nth-child(3),
+    .weight-breakdown td.rank-col-expanded {
+      width: 65px;
+      min-width: 65px;
+      max-width: 65px;
+    }
+    /* XTP column uses remaining space (flexible) */
+    .weight-breakdown th:nth-child(4),
+    .weight-breakdown td.expanded-xtp-cell {
+      /* No fixed width - uses remaining space */
+    }
       color: var(--muted);
       font-size: 0.9em;
       background-color: var(--panel-2);
@@ -138,12 +167,12 @@
   <div class="page-container">
     <header class="header">
       <h1>
-        xTP Team Projections
+        Team Tournament Scoring
         <span class="tooltip-icon" data-tooltip="xtp">→</span>
       </h1>
       <div class="header-subline" id="season-info"></div>
       <p class="header-explainer">
-        xTP (Expected Team Points) estimates a team's expected NCAA tournament points based on advancement, placement, and bonus probabilities.
+        Expected team points for Kentucky High School state tournament based on advancement, placement, and bonus probabilities.
       </p>
     </header>
 
@@ -155,7 +184,7 @@
               <th style="width: 40px;"></th>
               <th>Rank</th>
               <th>Team</th>
-              <th class="col-xtp">xTP <span class="tooltip-icon" data-tooltip="xtp">→</span></th>
+              <th class="col-xtp">Expected Team Points <span class="tooltip-icon" data-tooltip="xtp">→</span></th>
               <th class="xtp-component-col">Placement <span class="tooltip-icon" data-tooltip="xtp-p">→</span></th>
               <th class="xtp-component-col">Advancement <span class="tooltip-icon" data-tooltip="xtp-a">→</span></th>
               <th class="xtp-component-col">Bonus <span class="tooltip-icon" data-tooltip="xtp-b">→</span></th>

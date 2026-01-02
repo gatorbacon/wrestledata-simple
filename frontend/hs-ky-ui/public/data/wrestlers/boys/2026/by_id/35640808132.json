@@ -1,0 +1,129 @@
+{
+  "wrestler_id": "35640808132",
+  "name": "Kellon Jones",
+  "team": "Great Crossing",
+  "team_slug": "great_crossing",
+  "team_rank": 49,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 15.33,
+    "pa7": 6.75,
+    "pd7": 8.58,
+    "si_plus": 107.9,
+    "df_plus": 106.0,
+    "apr_plus": 94.3,
+    "pin_rate": 0.333,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35090020132",
+      "opponent_rank": 55,
+      "opponent_name": "Matthew Morgan",
+      "method": "MD 19-7"
+    },
+    "worst_loss": {
+      "opponent_id": "35135151132",
+      "opponent_rank": 26,
+      "opponent_name": "Daylon Sexton",
+      "method": "Fall 0:29"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35172417132",
+      "opponent_name": "Armani Kidd",
+      "opponent_team": "Desales",
+      "opponent_team_rank": 73,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "1:20",
+      "event": "King of the Bluegrass",
+      "mv_impact": 4.1
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35135151132",
+      "opponent_name": "Daylon Sexton",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 47,
+      "opponent_weight": 132,
+      "opponent_rank": 26,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "King of the Bluegrass",
+      "mv_impact": -3.37
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35090020132",
+      "opponent_name": "Matthew Morgan",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 36,
+      "opponent_weight": 132,
+      "opponent_rank": 55,
+      "result": "W",
+      "method": "MD",
+      "score": "19-7",
+      "duration": "7:00",
+      "event": "King of the Bluegrass",
+      "mv_impact": 3.13
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35226131132",
+      "opponent_name": "Cash Stone",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 132,
+      "opponent_rank": 25,
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "King of the Bluegrass",
+      "mv_impact": -1.14
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35337511132",
+      "opponent_name": "Gus Merman",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 129,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:55",
+      "event": "King of the Bluegrass",
+      "mv_impact": 4.35
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.2115384615384615
+  }
+}

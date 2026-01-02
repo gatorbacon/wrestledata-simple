@@ -1,0 +1,114 @@
+{
+  "wrestler_id": "35465673132",
+  "name": "Emmery Evans",
+  "team": "McCracken County",
+  "team_slug": "mccracken_county",
+  "team_rank": null,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 4.5,
+    "pa7": 22.5,
+    "pd7": -18.0,
+    "si_plus": 93.7,
+    "df_plus": 84.8,
+    "apr_plus": 105.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "35666995132",
+      "opponent_rank": 32,
+      "opponent_name": "Tristin Caldwell",
+      "method": "Fall 5:51"
+    },
+    "worst_loss": {
+      "opponent_id": "35465669132",
+      "opponent_rank": 3,
+      "opponent_name": "Eelynn Hayden",
+      "method": "MD 20-9"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35465669132",
+      "opponent_name": "Eelynn Hayden",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "TF",
+      "score": "18-0",
+      "duration": "2:23",
+      "event": "Cape Central Tiger Classic",
+      "mv_impact": -1.52
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35666995132",
+      "opponent_name": "Tristin Caldwell",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 39,
+      "opponent_weight": 120,
+      "opponent_rank": 32,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:51",
+      "event": "Sister Slam",
+      "mv_impact": 6.45
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35465669132",
+      "opponent_name": "Eelynn Hayden",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "MD",
+      "score": "20-9",
+      "duration": "7:00",
+      "event": "Sister Slam",
+      "mv_impact": -0.52
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "35333365132",
+      "opponent_name": "Taylor Evans",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:58",
+      "event": "vs. Ohio County",
+      "mv_impact": 6.08
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.25
+  }
+}

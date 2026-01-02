@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35643470132",
+  "name": "Avery Cox",
+  "team": "Campbellsville",
+  "team_slug": "campbellsville",
+  "team_rank": 32,
+  "weight_class": 185,
+  "year": 2026,
+  "current_rank": 18,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 99.9,
+    "df_plus": 103.0,
+    "apr_plus": 102.2,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35333583132",
+      "opponent_rank": 24,
+      "opponent_name": "Abigail Liberal",
+      "method": "Fall 1:18"
+    },
+    "worst_loss": {
+      "opponent_id": "35671662132",
+      "opponent_rank": 10,
+      "opponent_name": "Michelle Osoro",
+      "method": "Fall 1:40"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35333583132",
+      "opponent_name": "Abigail Liberal",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 26,
+      "opponent_weight": 185,
+      "opponent_rank": 24,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": 4.24
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35671662132",
+      "opponent_name": "Michelle Osoro",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 4,
+      "opponent_weight": 185,
+      "opponent_rank": 10,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:40",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": -5.4
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.8518518518518516
+  }
+}

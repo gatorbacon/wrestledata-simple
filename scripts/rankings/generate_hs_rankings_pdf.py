@@ -214,7 +214,7 @@ def get_weight_class_data(
         top_n = 24 if gender == 'girls' else 40
     
     # Setup paths
-    data_dir = Path(f"mt/rankings_data/hs_ky_{gender}")
+    data_dir = Path(f"mt/rankings_data/hs_ky_{gender}") / str(season)
     rankings_path = data_dir / f"rankings_{weight_class}.json"
     
     # Load data
@@ -632,7 +632,8 @@ def generate_svg_graphics(
     gender: str,
     all_weight_data: Dict[str, Tuple[List[Dict], Dict[str, str], Dict[str, str]]],
     region_mapping: Dict[str, str],
-    output_dir: Path
+    output_dir: Path,
+    data_dir: Path
 ) -> None:
     """
     Generate SVG/JPG graphics from template for all weight classes.
@@ -679,7 +680,7 @@ def generate_svg_graphics(
             continue
         
         wrestlers1, region_places1, team_best_wrestler1 = all_weight_data[weight1]
-        grade_info1 = load_grade_info(weight1, gender)
+        grade_info1 = load_grade_info(weight1, gender, season)
         
         # Check if there's a second weight class
         if i + 1 < len(weight_classes):
@@ -690,7 +691,7 @@ def generate_svg_graphics(
                 continue
             
             wrestlers2, region_places2, team_best_wrestler2 = all_weight_data[weight2]
-            grade_info2 = load_grade_info(weight2, gender)
+            grade_info2 = load_grade_info(weight2, gender, season)
             
             # Fill SVG template
             root = fill_svg_template(
@@ -1165,7 +1166,12 @@ def generate_pdf_report(
     # Generate SVG graphics before building PDF
     print(f"\nGenerating SVG graphics...")
     output_dir = output_path.parent
-    generate_svg_graphics(season, gender, all_weight_data, region_mapping, output_dir)
+    # Determine data directory for grade info
+    if gender == 'boys':
+        data_dir = Path("mt/rankings_data/hs_ky_boys") / str(season)
+    else:
+        data_dir = Path("mt/rankings_data/hs_ky_girls") / str(season)
+    generate_svg_graphics(season, gender, all_weight_data, region_mapping, output_dir, data_dir)
     
     # Build PDF
     print(f"\nGenerating PDF: {output_path}")

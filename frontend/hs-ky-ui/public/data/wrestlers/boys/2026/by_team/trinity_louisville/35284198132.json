@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35284198132",
+  "name": "Brandon Kenney",
+  "team": "Trinity (Louisville)",
+  "team_slug": "trinity_louisville",
+  "team_rank": 129,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": 30,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 1.0,
+    "pa7": 4.0,
+    "pd7": -3.0,
+    "si_plus": 100.8,
+    "df_plus": 110.8,
+    "apr_plus": 113.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35090033132",
+      "opponent_rank": 40,
+      "opponent_name": "Alan Rivera",
+      "method": "Fall 5:03"
+    },
+    "worst_loss": {
+      "opponent_id": "35035605132",
+      "opponent_rank": 11,
+      "opponent_name": "Daniel Thompson",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35283923132",
+      "opponent_name": "Mustafa Sehen",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 78,
+      "opponent_weight": 175,
+      "opponent_rank": 58,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:44",
+      "event": "King of the Bluegrass",
+      "mv_impact": 6.44
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35090033132",
+      "opponent_name": "Alan Rivera",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 36,
+      "opponent_weight": 175,
+      "opponent_rank": 40,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:03",
+      "event": "King of the Bluegrass",
+      "mv_impact": 7.1
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35035605132",
+      "opponent_name": "Daniel Thompson",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 175,
+      "opponent_rank": 11,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union County",
+      "mv_impact": -3.27
+    }
+  ]
+}

@@ -12,81 +12,47 @@
         <div class="header-container">
           <!-- Logo (Leftmost) -->
           <div class="header-logo">
-            <a href="/" class="logo-link" title="MatSavant — Wrestling analytics inspired by DataGolf">
-              <span class="logo-text">MatSavant</span>
+            <a href="/" class="logo-link" title="Kentucky High School Wrestling Rankings">
+              <span class="logo-text">kentuckymat</span>
             </a>
           </div>
 
           <!-- Primary Nav Items (Center-Left) -->
           <div class="header-nav">
-            <!-- Individual Rankings Dropdown -->
-            <div class="nav-item nav-item--dropdown" id="nav-individual-rankings">
+            <!-- Boys Dropdown -->
+            <div class="nav-item nav-item--dropdown" id="nav-boys">
               <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
-                Individual Rankings <span class="dropdown-arrow">▾</span>
+                Boys Rankings <span class="dropdown-arrow">▾</span>
               </button>
-              <div class="dropdown-menu" id="individual-rankings-menu">
-                <a href="/rankings.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Rankings (Traditional)</span>
+              <div class="dropdown-menu" id="boys-menu">
+                <a href="/rankings.html?gender=boys" class="dropdown-item">
+                  <span class="dropdown-item-label">Individual Rankings</span>
                 </a>
-                <a href="/matrix.html" class="dropdown-item">
+                <a href="/matrix.html?gender=boys" class="dropdown-item">
                   <span class="dropdown-item-label">Rankings Matrix</span>
                 </a>
-                <a href="/leaderboards/mat_value.html" class="dropdown-item">
-                  <span class="dropdown-item-label">TPAR Rankings</span>
-                </a>
-                <a href="/aa_odds.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Tournament Odds</span>
+                <a href="/leaderboards/xtp/teams.html?gender=boys" class="dropdown-item">
+                  <span class="dropdown-item-label">Team Tournament</span>
                 </a>
               </div>
             </div>
 
-            <!-- Team Rankings Dropdown -->
-            <div class="nav-item nav-item--dropdown" id="nav-team-rankings">
+            <!-- Girls Dropdown -->
+            <div class="nav-item nav-item--dropdown" id="nav-girls">
               <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
-                Team Rankings <span class="dropdown-arrow">▾</span>
+                Girls Rankings <span class="dropdown-arrow">▾</span>
               </button>
-              <div class="dropdown-menu" id="team-rankings-menu">
-                <a href="/leaderboards/xtp/teams.html" class="dropdown-item">
-                  <span class="dropdown-item-label">NCAA Expected Scoring (xTP)</span>
+              <div class="dropdown-menu" id="girls-menu">
+                <a href="/rankings.html?gender=girls" class="dropdown-item">
+                  <span class="dropdown-item-label">Individual Rankings</span>
+                </a>
+                <a href="/matrix.html?gender=girls" class="dropdown-item">
+                  <span class="dropdown-item-label">Rankings Matrix</span>
+                </a>
+                <a href="/leaderboards/xtp/teams.html?gender=girls" class="dropdown-item">
+                  <span class="dropdown-item-label">Team Tournament</span>
                 </a>
               </div>
-            </div>
-
-            <!-- Hodge Trophy Watch (Single Link) -->
-            <div class="nav-item">
-              <a href="/hodge.html" class="nav-link">Hodge Trophy Watch</a>
-            </div>
-
-            <!-- Leaderboards Dropdown -->
-            <div class="nav-item nav-item--dropdown" id="nav-leaderboards">
-              <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
-                Leaderboards <span class="dropdown-arrow">▾</span>
-              </button>
-              <div class="dropdown-menu" id="leaderboards-menu">
-                <a href="/leaderboards/mat_value.html" class="dropdown-item">
-                  <span class="dropdown-item-label">TPAR Leaders</span>
-                </a>
-                <a href="/leaderboards/leaderboard_pins.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Pins</span>
-                </a>
-                <a href="/leaderboards/leaderboard_techs.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Tech Falls</span>
-                </a>
-                <a href="/leaderboards/leaderboard_majors.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Major Decisions</span>
-                </a>
-                <a href="/leaderboards/leaderboard_wins.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Wins</span>
-                </a>
-                <a href="/freshman.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Freshman of the Year Watch</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Tournaments (Disabled/Placeholder) -->
-            <div class="nav-item nav-item--disabled">
-              <span class="nav-link nav-link--disabled">Tournaments</span>
             </div>
           </div>
 
@@ -107,7 +73,7 @@
 
           <!-- Right Side Items -->
           <div class="header-right">
-            <a href="/about.html" class="header-link">About</a>
+            <!-- No About link for HS site -->
           </div>
 
           <!-- Mobile Icons (hidden on desktop) -->
@@ -148,55 +114,31 @@
             <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">✕</button>
           </div>
           <nav class="mobile-menu-nav">
-            <!-- Individual Rankings Section (Expandable) -->
+            <!-- Boys Section (Expandable) -->
             <div class="mobile-menu-section">
-              <button class="mobile-menu-section-header" aria-expanded="false" data-section="individual-rankings">
-                <span>Individual Rankings</span>
+              <button class="mobile-menu-section-header" aria-expanded="false" data-section="boys">
+                <span>Boys Rankings</span>
                 <span class="mobile-menu-chevron">▸</span>
               </button>
-              <div class="mobile-menu-section-content" data-content="individual-rankings">
-                <a href="/rankings.html" class="mobile-menu-item mobile-menu-item--child">Rankings (Traditional)</a>
-                <a href="/matrix.html" class="mobile-menu-item mobile-menu-item--child">Rankings Matrix</a>
-                <a href="/leaderboards/mat_value.html" class="mobile-menu-item mobile-menu-item--child">TPAR Rankings</a>
-                <a href="/aa_odds.html" class="mobile-menu-item mobile-menu-item--child">Tournament Odds</a>
+              <div class="mobile-menu-section-content" data-content="boys">
+                <a href="/rankings.html?gender=boys" class="mobile-menu-item mobile-menu-item--child">Individual Rankings</a>
+                <a href="/matrix.html?gender=boys" class="mobile-menu-item mobile-menu-item--child">Rankings Matrix</a>
+                <a href="/leaderboards/xtp/teams.html?gender=boys" class="mobile-menu-item mobile-menu-item--child">Team Tournament</a>
               </div>
             </div>
 
-            <!-- Team Rankings Section (Expandable) -->
+            <!-- Girls Section (Expandable) -->
             <div class="mobile-menu-section">
-              <button class="mobile-menu-section-header" aria-expanded="false" data-section="team-rankings">
-                <span>Team Rankings</span>
+              <button class="mobile-menu-section-header" aria-expanded="false" data-section="girls">
+                <span>Girls Rankings</span>
                 <span class="mobile-menu-chevron">▸</span>
               </button>
-              <div class="mobile-menu-section-content" data-content="team-rankings">
-                <a href="/leaderboards/xtp/teams.html" class="mobile-menu-item mobile-menu-item--child">NCAA Expected Scoring (xTP)</a>
+              <div class="mobile-menu-section-content" data-content="girls">
+                <a href="/rankings.html?gender=girls" class="mobile-menu-item mobile-menu-item--child">Individual Rankings</a>
+                <a href="/matrix.html?gender=girls" class="mobile-menu-item mobile-menu-item--child">Rankings Matrix</a>
+                <a href="/leaderboards/xtp/teams.html?gender=girls" class="mobile-menu-item mobile-menu-item--child">Team Tournament</a>
               </div>
             </div>
-
-            <!-- Hodge Trophy Watch (Direct Link) -->
-            <a href="/hodge.html" class="mobile-menu-item">Hodge Trophy Watch</a>
-
-            <!-- Leaderboards Section (Expandable) -->
-            <div class="mobile-menu-section">
-              <button class="mobile-menu-section-header" aria-expanded="false" data-section="leaderboards">
-                <span>Leaderboards</span>
-                <span class="mobile-menu-chevron">▸</span>
-              </button>
-              <div class="mobile-menu-section-content" data-content="leaderboards">
-                <a href="/leaderboards/mat_value.html" class="mobile-menu-item mobile-menu-item--child">TPAR Leaders</a>
-                <a href="/leaderboards/leaderboard_pins.html" class="mobile-menu-item mobile-menu-item--child">Pins</a>
-                <a href="/leaderboards/leaderboard_techs.html" class="mobile-menu-item mobile-menu-item--child">Tech Falls</a>
-                <a href="/leaderboards/leaderboard_majors.html" class="mobile-menu-item mobile-menu-item--child">Major Decisions</a>
-                <a href="/leaderboards/leaderboard_wins.html" class="mobile-menu-item mobile-menu-item--child">Wins</a>
-                <a href="/freshman.html" class="mobile-menu-item mobile-menu-item--child">Freshman of the Year Watch</a>
-              </div>
-            </div>
-
-            <!-- Tournaments (Disabled) -->
-            <span class="mobile-menu-item mobile-menu-item--disabled">Tournaments</span>
-
-            <!-- About (Direct Link) -->
-            <a href="/about.html" class="mobile-menu-item">About</a>
           </nav>
         </div>
       </div>

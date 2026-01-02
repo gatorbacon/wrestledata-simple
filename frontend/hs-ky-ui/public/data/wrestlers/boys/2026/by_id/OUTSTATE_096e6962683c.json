@@ -1,0 +1,63 @@
+{
+  "wrestler_id": "OUTSTATE_096e6962683c",
+  "name": "William Cook",
+  "team": "Oak Hills High School",
+  "team_slug": "oak_hills_high_school",
+  "team_rank": null,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34989993132",
+      "opponent_rank": 60,
+      "opponent_name": "Lucas Topmiller",
+      "method": "Fall 0:39"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34989993132",
+      "opponent_name": "Lucas Topmiller",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 26,
+      "opponent_weight": 144,
+      "opponent_rank": 60,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "2025 JV Ryle Raider Rumble"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.8333333333333334
+  }
+}

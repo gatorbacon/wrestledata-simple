@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35338367132",
+  "name": "Declan Duncan",
+  "team": "Trinity (Louisville)",
+  "team_slug": "trinity_louisville",
+  "team_rank": 129,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": 29,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 12.5,
+    "pa7": 5.0,
+    "pd7": 7.5,
+    "si_plus": 104.5,
+    "df_plus": 108.2,
+    "apr_plus": 104.2,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35144080132",
+      "opponent_rank": 40,
+      "opponent_name": "Colin Yurt",
+      "method": "Fall 0:19"
+    },
+    "worst_loss": {
+      "opponent_id": "35031571132",
+      "opponent_rank": 3,
+      "opponent_name": "Brennen Clifford",
+      "method": "MD 10-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35144080132",
+      "opponent_name": "Colin Yurt",
+      "opponent_team": "Desales",
+      "opponent_team_rank": 73,
+      "opponent_weight": 132,
+      "opponent_rank": 40,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:19",
+      "event": "King of the Bluegrass",
+      "mv_impact": 6.26
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35090020132",
+      "opponent_name": "Matthew Morgan",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 36,
+      "opponent_weight": 132,
+      "opponent_rank": 55,
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:18",
+      "event": "King of the Bluegrass",
+      "mv_impact": 4.13
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35031571132",
+      "opponent_name": "Brennen Clifford",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 132,
+      "opponent_rank": 3,
+      "result": "L",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "vs. Union County",
+      "mv_impact": -0.11
+    }
+  ]
+}

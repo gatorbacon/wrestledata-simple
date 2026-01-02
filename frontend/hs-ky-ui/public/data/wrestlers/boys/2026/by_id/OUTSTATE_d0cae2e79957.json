@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "OUTSTATE_d0cae2e79957",
+  "name": "Owen Schummer",
+  "team": "East Central",
+  "team_slug": "east_central",
+  "team_rank": null,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34993547132",
+      "opponent_rank": 20,
+      "opponent_name": "Joseph Habimana",
+      "method": "Fall 3:34"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34993731132",
+      "opponent_name": "George Dennis",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 157,
+      "opponent_rank": 1,
+      "result": "L",
+      "method": "TF",
+      "score": "19-2",
+      "duration": "3:57",
+      "event": "2025 Ryle Raider Rumble"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34993547132",
+      "opponent_name": "Joseph Habimana",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 51,
+      "opponent_weight": 157,
+      "opponent_rank": 20,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:34",
+      "event": "2025 Ryle Raider Rumble"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.6666666666666666
+  }
+}

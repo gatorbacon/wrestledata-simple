@@ -444,7 +444,7 @@ def save_relationships(relationships_by_weight: Dict[str, Dict], season: int, ou
     # Setup output path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}"
+        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:  # ncaa
         output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)

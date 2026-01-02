@@ -1,0 +1,77 @@
+{
+  "wrestler_id": "OUTSTATE_18005eea402e",
+  "name": "Andrew Trapp",
+  "team": "Little Miami High School",
+  "team_slug": "little_miami_high_school",
+  "team_rank": null,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35640820132",
+      "opponent_rank": 13,
+      "opponent_name": "Ashton Hackney",
+      "method": "Fall 1:03"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "35640820132",
+      "opponent_name": "Ashton Hackney",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 49,
+      "opponent_weight": 190,
+      "opponent_rank": 13,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "SWOWCA"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "35663849132",
+      "opponent_name": "Isaac Ray",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 14,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "5:22",
+      "event": "SWOWCA"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.4285714285714286
+  }
+}

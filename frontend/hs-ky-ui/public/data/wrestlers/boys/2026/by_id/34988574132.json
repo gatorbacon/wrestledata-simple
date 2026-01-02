@@ -1,0 +1,114 @@
+{
+  "wrestler_id": "34988574132",
+  "name": "Aydin Marshall",
+  "team": "Thomas Nelson",
+  "team_slug": "thomas_nelson",
+  "team_rank": null,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": 44,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 115.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 3
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35886049132",
+      "opponent_rank": 42,
+      "opponent_name": "brenden little",
+      "method": "Fall 3:16"
+    },
+    "worst_loss": {
+      "opponent_id": "35640061132",
+      "opponent_rank": 8,
+      "opponent_name": "Blake Murdock",
+      "method": "Fall 0:29"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34997722132",
+      "opponent_name": "Kendrick Brown",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:58",
+      "event": "vs. Thomas Nelson",
+      "mv_impact": 6.39
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35640753132",
+      "opponent_name": "Sammy Cain",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 49,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "vs. Thomas Nelson",
+      "mv_impact": 1.05
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35640061132",
+      "opponent_name": "Blake Murdock",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 49,
+      "opponent_weight": 138,
+      "opponent_rank": 8,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "vs. Thomas Nelson",
+      "mv_impact": -2.44
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35886049132",
+      "opponent_name": "brenden little",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 18,
+      "opponent_weight": 132,
+      "opponent_rank": 42,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:16",
+      "event": "vs. Wayne County",
+      "mv_impact": 5.98
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5555555555555556
+  }
+}

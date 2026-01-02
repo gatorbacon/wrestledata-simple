@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "36284917132",
+  "name": "Holland Pike",
+  "team": "Trinity (Louisville)",
+  "team_slug": "trinity_louisville",
+  "team_rank": 129,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": 99,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.25,
+    "pa7": 25.0,
+    "pd7": -13.75,
+    "si_plus": 101.8,
+    "df_plus": 84.1,
+    "apr_plus": 92.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35618719132",
+      "opponent_rank": 33,
+      "opponent_name": "Jyden Jones",
+      "method": "TF 19-3 1:52"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35284298132",
+      "opponent_name": "Jack Rawlings",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 78,
+      "opponent_weight": 126,
+      "opponent_rank": 32,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "King of the Bluegrass",
+      "mv_impact": -5.03
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35618719132",
+      "opponent_name": "Jyden Jones",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 130,
+      "opponent_weight": 126,
+      "opponent_rank": 33,
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "1:52",
+      "event": "King of the Bluegrass",
+      "mv_impact": -4.49
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.7777777777777777
+  }
+}

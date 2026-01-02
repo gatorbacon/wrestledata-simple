@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "34993276132",
+  "name": "Kobe Nichols",
+  "team": "Daviess County",
+  "team_slug": "daviess_county",
+  "team_rank": 46,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": 17,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 19.0,
+    "pa7": 5.0,
+    "pd7": 14.0,
+    "si_plus": 114.1,
+    "df_plus": 108.5,
+    "apr_plus": 108.4,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34997715132",
+      "opponent_rank": 15,
+      "opponent_name": "Dominic Padilla",
+      "method": "MD 19-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34994866132",
+      "opponent_rank": 16,
+      "opponent_name": "steel chandler",
+      "method": "Fall 1:35"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35364755132",
+      "opponent_name": "Michael Corley",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 95,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": 2.65
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34997715132",
+      "opponent_name": "Dominic Padilla",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 215,
+      "opponent_rank": 15,
+      "result": "W",
+      "method": "MD",
+      "score": "19-5",
+      "duration": "7:00",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": 6.5
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34994866132",
+      "opponent_name": "steel chandler",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 33,
+      "opponent_weight": 215,
+      "opponent_rank": 16,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
+      "event": "Tommy Castle Classic",
+      "mv_impact": -3.19
+    }
+  ]
+}

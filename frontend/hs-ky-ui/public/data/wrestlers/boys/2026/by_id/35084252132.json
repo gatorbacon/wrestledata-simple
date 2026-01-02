@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35084252132",
+  "name": "Andrew Barger",
+  "team": "Ballard",
+  "team_slug": "ballard",
+  "team_rank": 43,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 94,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 89.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35012796132",
+      "opponent_rank": 90,
+      "opponent_name": "Devontay Cox",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-04",
+      "opponent_id": "35012796132",
+      "opponent_name": "Devontay Cox",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 123,
+      "opponent_weight": 157,
+      "opponent_rank": 90,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Shawnee",
+      "mv_impact": -10.24
+    },
+    {
+      "date": "2025-12-04",
+      "opponent_id": "35228539132",
+      "opponent_name": "Kamion Lockridge",
+      "opponent_team": "Butler",
+      "opponent_team_rank": 66,
+      "opponent_weight": 165,
+      "opponent_rank": 34,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Butler",
+      "mv_impact": -3.96
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9833333333333333
+  }
+}

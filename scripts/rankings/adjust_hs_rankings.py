@@ -217,7 +217,7 @@ def main():
     args = parser.parse_args()
     
     # Setup paths
-    data_dir = Path(f"mt/rankings_data/hs_ky_{args.gender}")
+    data_dir = Path(f"mt/rankings_data/hs_ky_{args.gender}") / str(args.season)
     notes_path = data_dir / "placement_notes.json"
     
     if not data_dir.exists():

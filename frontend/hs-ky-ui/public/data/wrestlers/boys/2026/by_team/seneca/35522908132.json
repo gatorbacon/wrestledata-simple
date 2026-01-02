@@ -1,0 +1,104 @@
+{
+  "wrestler_id": "35522908132",
+  "name": "Jonathan Pitt",
+  "team": "Seneca",
+  "team_slug": "seneca",
+  "team_rank": 53,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": 115,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 20.0,
+    "pd7": -20.0,
+    "si_plus": 92.3,
+    "df_plus": 91.9,
+    "apr_plus": 90.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35084287132",
+      "opponent_rank": 24,
+      "opponent_name": "Scott Jennings",
+      "method": "TF 15-0 2:19"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-10",
+      "opponent_id": "35040585132",
+      "opponent_name": "David Brown",
+      "opponent_team": "Male",
+      "opponent_team_rank": 50,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:46",
+      "event": "vs. Seneca",
+      "mv_impact": -9.03
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35084287132",
+      "opponent_name": "Scott Jennings",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 43,
+      "opponent_weight": 215,
+      "opponent_rank": 24,
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:19",
+      "event": "vs. Seneca",
+      "mv_impact": -2.74
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35090038132",
+      "opponent_name": "Shoron Briscoe",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 36,
+      "opponent_weight": 215,
+      "opponent_rank": 14,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Seneca",
+      "mv_impact": -3.36
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34989974132",
+      "opponent_name": "DonJai Karnickey",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
+      "event": "vs. Western",
+      "mv_impact": -9.95
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "wrestler_id": "35226402132",
+  "name": "Xavier Lawson",
+  "team": "Nelson County",
+  "team_slug": "nelson_county",
+  "team_rank": 29,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": 85,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 13.58,
+    "pa7": 11.03,
+    "pd7": 2.55,
+    "si_plus": 117.4,
+    "df_plus": 106.0,
+    "apr_plus": 97.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35321127132",
+      "opponent_rank": 74,
+      "opponent_name": "Aiden Helm",
+      "method": "SV-1 16-13"
+    },
+    "worst_loss": {
+      "opponent_id": "35364773132",
+      "opponent_rank": 46,
+      "opponent_name": "Carter Lawrence",
+      "method": "Fall 1:42"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-23",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35364773132",
+      "opponent_name": "Carter Lawrence",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 95,
+      "opponent_weight": 175,
+      "opponent_rank": 46,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35321127132",
+      "opponent_name": "Aiden Helm",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 175,
+      "opponent_rank": 74,
+      "result": "W",
+      "method": "SV-1",
+      "score": "16-13",
+      "duration": "8:15",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35635901132",
+      "opponent_name": "Sam Felix",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:39",
+      "event": "King of the Bluegrass"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.55
+  }
+}

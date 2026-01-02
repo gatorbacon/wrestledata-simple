@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35600436132",
+  "name": "Kahner Sexton",
+  "team": "Mccreary Central",
+  "team_slug": "mccreary_central",
+  "team_rank": 107,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": 59,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 14.0,
+    "pa7": 7.0,
+    "pd7": 7.0,
+    "si_plus": 108.9,
+    "df_plus": 109.3,
+    "apr_plus": 104.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35420411132",
+      "opponent_rank": 74,
+      "opponent_name": "Kevin Brown",
+      "method": "Dec 14-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34995976132",
+      "opponent_rank": 31,
+      "opponent_name": "Hunter Goodin",
+      "method": "Fall 2:48"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34995976132",
+      "opponent_name": "Hunter Goodin",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 61,
+      "opponent_weight": 150,
+      "opponent_rank": 31,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "Anchor Down Showdown",
+      "mv_impact": -3.41
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35420411132",
+      "opponent_name": "Kevin Brown",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 42,
+      "opponent_weight": 150,
+      "opponent_rank": 74,
+      "result": "W",
+      "method": "DEC",
+      "score": "14-7",
+      "duration": "7:00",
+      "event": "Anchor Down Showdown",
+      "mv_impact": 0.54
+    }
+  ]
+}

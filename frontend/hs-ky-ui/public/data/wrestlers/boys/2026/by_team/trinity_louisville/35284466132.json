@@ -1,0 +1,109 @@
+{
+  "wrestler_id": "35284466132",
+  "name": "Phillip Sullivan",
+  "team": "Trinity (Louisville)",
+  "team_slug": "trinity_louisville",
+  "team_rank": 129,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": 11,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 114.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 3
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35035623132",
+      "opponent_rank": 28,
+      "opponent_name": "Wylee Elders",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35040578132",
+      "opponent_rank": 7,
+      "opponent_name": "Galvin Stephens",
+      "method": "Fall 5:43"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35144079132",
+      "opponent_name": "Dominic Geraghty",
+      "opponent_team": "Desales",
+      "opponent_team_rank": 73,
+      "opponent_weight": 215,
+      "opponent_rank": 94,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "King of the Bluegrass",
+      "mv_impact": 2.02
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35040578132",
+      "opponent_name": "Galvin Stephens",
+      "opponent_team": "Male",
+      "opponent_team_rank": 50,
+      "opponent_weight": 215,
+      "opponent_rank": 7,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:43",
+      "event": "King of the Bluegrass",
+      "mv_impact": -2.62
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35226392132",
+      "opponent_name": "Aaron Thompson",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "King of the Bluegrass",
+      "mv_impact": 7.9
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35035623132",
+      "opponent_name": "Wylee Elders",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 215,
+      "opponent_rank": 28,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trinity (Louisville)",
+      "mv_impact": 7.94
+    }
+  ]
+}

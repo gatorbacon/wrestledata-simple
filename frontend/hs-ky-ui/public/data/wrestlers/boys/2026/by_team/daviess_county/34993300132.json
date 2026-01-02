@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "34993300132",
+  "name": "Aie Hong",
+  "team": "Daviess County",
+  "team_slug": "daviess_county",
+  "team_rank": 46,
+  "weight_class": 113,
+  "year": 2026,
+  "current_rank": 42,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 14.5,
+    "pa7": 3.0,
+    "pd7": 11.5,
+    "si_plus": 106.9,
+    "df_plus": 110.8,
+    "apr_plus": 86.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34999342132",
+      "opponent_rank": 78,
+      "opponent_name": "Benjamin Leslie",
+      "method": "MD 13-5"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34999342132",
+      "opponent_name": "Benjamin Leslie",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 37,
+      "opponent_weight": 113,
+      "opponent_rank": 78,
+      "result": "W",
+      "method": "MD",
+      "score": "13-5",
+      "duration": "7:00",
+      "event": "Tommy Castle Classic",
+      "mv_impact": -1.09
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35033125132",
+      "opponent_name": "Owen Young",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 127,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "Tommy Castle Classic",
+      "mv_impact": 2.4
+    }
+  ]
+}

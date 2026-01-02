@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35281285132",
+  "name": "Hunter Francis",
+  "team": "Dixie Heights",
+  "team_slug": "dixie_heights",
+  "team_rank": 74,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 25.0,
+    "pa7": 18.92,
+    "pd7": 6.08,
+    "si_plus": 119.5,
+    "df_plus": 90.2,
+    "apr_plus": 95.7,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35205996132",
+      "opponent_rank": 103,
+      "opponent_name": "William Lay",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35045478132",
+      "opponent_rank": 11,
+      "opponent_name": "Keenan Clevenger",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35488266132",
+      "opponent_name": "Garrett Fohl",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 15,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "TF",
+      "score": "22-5",
+      "duration": "1:51",
+      "event": "Bearcat Brawl 2025",
+      "mv_impact": 3.19
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35045478132",
+      "opponent_name": "Keenan Clevenger",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 4,
+      "opponent_weight": 126,
+      "opponent_rank": 11,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bearcat Brawl 2025",
+      "mv_impact": -3.01
+    },
+    {
+      "date": "2025-12-03",
+      "opponent_id": "35205996132",
+      "opponent_name": "William Lay",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 126,
+      "opponent_rank": 103,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mercer County",
+      "mv_impact": 0.33
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.7777777777777777
+  }
+}

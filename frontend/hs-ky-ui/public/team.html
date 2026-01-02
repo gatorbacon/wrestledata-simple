@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Team Profile</title>
@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
+  <script src="/hs_config.js"></script>
 </head>
 
 <body>
@@ -185,7 +186,7 @@
       .xtp-value {
         font-size: 3.5em;
         font-weight: 700;
-        color: var(--text);
+        color: #111;
         line-height: 1;
         font-variant-numeric: tabular-nums;
       }
@@ -235,8 +236,16 @@
         margin-bottom: 2em;
       }
       
+      .metrics-grid--two-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px 24px;
+        margin-bottom: 2em;
+      }
+      
       @media (max-width: 900px) {
-        .metrics-grid--three-columns {
+        .metrics-grid--three-columns,
+        .metrics-grid--two-columns {
           grid-template-columns: 1fr;
         }
       }
@@ -248,13 +257,15 @@
       }
       
       /* Divider lines between columns */
-      .metrics-grid--three-columns .metrics-column:not(:last-child) {
+      .metrics-grid--three-columns .metrics-column:not(:last-child),
+      .metrics-grid--two-columns .metrics-column:not(:last-child) {
         border-right: 1px solid rgba(255, 255, 255, 0.06);
         padding-right: 24px;
       }
       
       @media (max-width: 900px) {
-        .metrics-grid--three-columns .metrics-column:not(:last-child) {
+        .metrics-grid--three-columns .metrics-column:not(:last-child),
+        .metrics-grid--two-columns .metrics-column:not(:last-child) {
           border-right: none;
           border-bottom: 1px solid rgba(255, 255, 255, 0.06);
           padding-right: 0;
@@ -308,10 +319,10 @@
         background: var(--panel-2);
       }
       
-      /* Matches column - muted */
-      .remaining-roster-table td:nth-child(5) {
+      /* Grey out 0-0 records */
+      .remaining-roster-table tbody tr.zero-record {
         color: var(--muted);
-        font-size: 0.875rem;
+        opacity: 0.7;
       }
     </style>
 
@@ -408,9 +419,8 @@
               <th>Weight</th>
               <th>Wrestler</th>
               <th>Record</th>
-              <th data-tooltip="mv">TPAR</th>
+              <th>Top 25 Wins</th>
               <th>Bonus Rate</th>
-              <th>Matches</th>
             </tr>
           </thead>
           <tbody></tbody>

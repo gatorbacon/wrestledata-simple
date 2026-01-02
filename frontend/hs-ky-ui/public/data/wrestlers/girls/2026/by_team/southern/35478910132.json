@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35478910132",
+  "name": "Angel Queral",
+  "team": "Southern",
+  "team_slug": "southern",
+  "team_rank": 56,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": 24,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 6.0,
+    "pd7": -1.0,
+    "si_plus": 94.0,
+    "df_plus": 105.5,
+    "apr_plus": 108.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35333593132",
+      "opponent_rank": 43,
+      "opponent_name": "Lilith Trupp",
+      "method": "Fall 1:51"
+    },
+    "worst_loss": {
+      "opponent_id": "35333363132",
+      "opponent_rank": 29,
+      "opponent_name": "Tahirah Massie",
+      "method": "Dec 6-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35333593132",
+      "opponent_name": "Lilith Trupp",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 4,
+      "opponent_weight": 126,
+      "opponent_rank": 43,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:51",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": 5.29
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35333589132",
+      "opponent_name": "Khloe Yasin",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 4,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:56",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": 7.44
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35333363132",
+      "opponent_name": "Tahirah Massie",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 29,
+      "result": "L",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": -2.42
+    }
+  ]
+}

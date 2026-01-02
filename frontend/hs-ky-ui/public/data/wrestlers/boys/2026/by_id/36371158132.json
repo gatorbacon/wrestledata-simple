@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "36371158132",
+  "name": "Brendan Dobbs",
+  "team": "Western Hills",
+  "team_slug": "western_hills",
+  "team_rank": 135,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 89.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35214902132",
+      "opponent_rank": 45,
+      "opponent_name": "Ivan Cottingham",
+      "method": "Fall 1:06"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35214902132",
+      "opponent_name": "Ivan Cottingham",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 44,
+      "opponent_weight": 215,
+      "opponent_rank": 45,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:06",
+      "event": "Lafayette 5 Star Tournament",
+      "mv_impact": -5.26
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35144518132",
+      "opponent_name": "Jace Detre",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 28,
+      "opponent_weight": 215,
+      "opponent_rank": 18,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:34",
+      "event": "Lafayette 5 Star Tournament",
+      "mv_impact": -3.65
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35205987132",
+      "opponent_name": "Samuel Horn",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 285,
+      "opponent_rank": 29,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:27",
+      "event": "vs. Western Hills",
+      "mv_impact": -3.81
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.55
+  }
+}

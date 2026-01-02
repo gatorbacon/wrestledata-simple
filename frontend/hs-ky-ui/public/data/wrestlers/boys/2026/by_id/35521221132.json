@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35521221132",
+  "name": "Izayah Mason",
+  "team": "Bryan Station",
+  "team_slug": "bryan_station",
+  "team_rank": 64,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 106.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34995975132",
+      "opponent_rank": 37,
+      "opponent_name": "Johnathan Tapp",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35652052132",
+      "opponent_name": "Levi Muth",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Region 6 JV Region",
+      "mv_impact": 2.57
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34995975132",
+      "opponent_name": "Johnathan Tapp",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 61,
+      "opponent_weight": 285,
+      "opponent_rank": 37,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bryan Station",
+      "mv_impact": -4.99
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9666666666666666
+  }
+}

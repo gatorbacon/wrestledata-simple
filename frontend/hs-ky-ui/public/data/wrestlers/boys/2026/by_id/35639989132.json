@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35639989132",
+  "name": "Michael Peterson",
+  "team": "Harlan County",
+  "team_slug": "harlan_county",
+  "team_rank": 88,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": 98,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.1,
+    "df_plus": 102.2,
+    "apr_plus": 92.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35013055132",
+      "opponent_rank": 20,
+      "opponent_name": "Kasey Conley",
+      "method": "Fall 1:05"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "36019523132",
+      "opponent_name": "Hagen Samuel",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 57,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:55",
+      "event": "Bobby Bates Wrestling Classic",
+      "mv_impact": -3.03
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35420763132",
+      "opponent_name": "Elijiah Bryant",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 42,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Anchor Down Showdown",
+      "mv_impact": -8.55
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35013055132",
+      "opponent_name": "Kasey Conley",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 113,
+      "opponent_weight": 190,
+      "opponent_rank": 20,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
+      "event": "Anchor Down Showdown",
+      "mv_impact": -2.92
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3571428571428572
+  }
+}

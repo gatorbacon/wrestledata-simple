@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35205067132",
+  "name": "Jaylen Hernandez",
+  "team": "Bullitt East",
+  "team_slug": "bullitt_east",
+  "team_rank": 25,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.5,
+    "pa7": 10.5,
+    "pd7": -5.0,
+    "si_plus": 88.4,
+    "df_plus": 91.2,
+    "apr_plus": 86.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35206004132",
+      "opponent_rank": 34,
+      "opponent_name": "Kyler Bryant",
+      "method": "Dec 3-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35284222132",
+      "opponent_name": "Tyras Hall",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 78,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "L",
+      "method": "MD",
+      "score": "18-10",
+      "duration": "7:00",
+      "event": "The Beast of the East",
+      "mv_impact": -6.5
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35206004132",
+      "opponent_name": "Kyler Bryant",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 190,
+      "opponent_rank": 34,
+      "result": "L",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "The Beast of the East",
+      "mv_impact": -2.33
+    }
+  ]
+}

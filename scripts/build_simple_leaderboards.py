@@ -78,15 +78,19 @@ def is_win_result(result: str) -> bool:
     return True
 
 
-def load_d1_wrestler_ids(season: int, data_dir: str = "mt/rankings_data") -> Set[str]:
+def load_d1_wrestler_ids(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> Set[str]:
     """
-    Load all D1 wrestler IDs from rankings files.
+    Load all wrestler IDs from rankings files.
     
     Returns:
-        Set of wrestler IDs that are D1 wrestlers
+        Set of wrestler IDs
     """
     d1_ids = set()
-    data_path = Path(data_dir) / str(season)
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
+    else:
+        data_path = Path(data_dir) / str(season)
     
     if not data_path.exists():
         print(f"Warning: Rankings directory not found: {data_path}")
@@ -110,7 +114,7 @@ def load_d1_wrestler_ids(season: int, data_dir: str = "mt/rankings_data") -> Set
     return d1_ids
 
 
-def process_weight_class_files(season: int, data_dir: str, d1_wrestler_ids: Set[str]) -> Dict[str, Dict]:
+def process_weight_class_files(season: int, data_dir: str, d1_wrestler_ids: Set[str], league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[str, Dict]:
     """
     Process all weight_class_*.json files and return aggregated stats per wrestler.
     
@@ -125,7 +129,11 @@ def process_weight_class_files(season: int, data_dir: str, d1_wrestler_ids: Set[
             'wins': int
         }
     """
-    data_path = Path(data_dir) / str(season)
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
+    else:
+        data_path = Path(data_dir) / str(season)
     
     if not data_path.exists():
         raise FileNotFoundError(f"Data directory not found: {data_path}")
@@ -263,21 +271,21 @@ def process_weight_class_files(season: int, data_dir: str, d1_wrestler_ids: Set[
     return stats_by_wrestler
 
 
-def aggregate_all_weight_classes(season: int, data_dir: str, rankings_dir: str = "mt/rankings_data") -> Dict[str, Dict]:
+def aggregate_all_weight_classes(season: int, data_dir: str, rankings_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[str, Dict]:
     """
     Aggregate stats across all weight_class files.
     
     Returns:
         Dict mapping wrestler_id -> aggregated stats
     """
-    # Load D1 wrestler IDs
-    print(f"Loading D1 wrestler IDs from {rankings_dir}...")
-    d1_wrestler_ids = load_d1_wrestler_ids(season, rankings_dir)
-    print(f"Loaded {len(d1_wrestler_ids)} D1 wrestler IDs")
+    # Load wrestler IDs
+    print(f"Loading wrestler IDs from {rankings_dir}...")
+    d1_wrestler_ids = load_d1_wrestler_ids(season, rankings_dir, league=league, state=state, gender=gender)
+    print(f"Loaded {len(d1_wrestler_ids)} wrestler IDs")
     
     # Process all weight_class files
     print(f"Processing weight_class files from {data_dir}...")
-    all_stats = process_weight_class_files(season, data_dir, d1_wrestler_ids)
+    all_stats = process_weight_class_files(season, data_dir, d1_wrestler_ids, league=league, state=state, gender=gender)
     
     return all_stats
 
@@ -342,34 +350,87 @@ def main():
         "--rankings-dir",
         type=str,
         default="mt/rankings_data",
-        help="Directory containing rankings data (for D1 filtering)",
+        help="Directory containing rankings data (for filtering)",
     )
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (optional when league=hs, defaults to processing both)')
     
     args = parser.parse_args()
     
-    # Aggregate stats from all weight_class files
-    print(f"Aggregating stats for season {args.season}...")
-    all_stats = aggregate_all_weight_classes(args.season, args.data_dir, args.rankings_dir)
-    print(f"Found {len(all_stats)} unique wrestlers")
-    
-    # Generate JSON files
-    output_path = Path(args.output_dir)
-    output_path.mkdir(parents=True, exist_ok=True)
-    
-    stat_types = ["pins", "techs", "majors", "wins"]
-    
-    for stat_type in stat_types:
-        entries = generate_leaderboard_json(all_stats, stat_type)
-        output_file = output_path / f"{stat_type}.json"
+    # For HS, process both genders if gender not specified
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("For HS league, --state is required.")
         
-        with output_file.open("w", encoding="utf-8") as f:
-            json.dump(entries, f, indent=2, ensure_ascii=False)
+        genders_to_process = [args.gender] if args.gender else ['boys', 'girls']
         
-        print(f"Generated {output_file}: {len(entries)} entries")
-        if entries:
-            print(f"  Top entry: {entries[0]['name']} ({entries[0]['team']}) - {entries[0]['count']} {stat_type}")
-    
-    print("\nDone!")
+        for gender in genders_to_process:
+            print(f"\n{'=' * 80}")
+            print(f"Building leaderboards for season {args.season} ({args.league.upper()} {args.state} {gender})...")
+            print(f"{'=' * 80}\n")
+            
+            data_dir = Path("mt/rankings_data")
+            rankings_dir = Path("mt/rankings_data")
+            output_dir = Path("frontend/hs-ky-ui/public/data/leaderboards") / gender / str(args.season)
+            
+            # Override with CLI args if provided
+            if args.data_dir:
+                data_dir = Path(args.data_dir)
+            if args.rankings_dir:
+                rankings_dir = Path(args.rankings_dir)
+            if args.output_dir:
+                output_dir = Path(args.output_dir)
+            
+            # Aggregate stats from all weight_class files
+            print(f"Aggregating stats for season {args.season}...")
+            all_stats = aggregate_all_weight_classes(args.season, str(data_dir), str(rankings_dir), league=args.league, state=args.state, gender=gender)
+            print(f"Found {len(all_stats)} unique wrestlers")
+            
+            # Generate JSON files
+            output_path = output_dir
+            output_path.mkdir(parents=True, exist_ok=True)
+            
+            stat_types = ["pins", "techs", "majors", "wins"]
+            
+            for stat_type in stat_types:
+                entries = generate_leaderboard_json(all_stats, stat_type)
+                output_file = output_path / f"{stat_type}.json"
+                
+                with output_file.open("w", encoding="utf-8") as f:
+                    json.dump(entries, f, indent=2, ensure_ascii=False)
+                
+                print(f"Generated {output_file}: {len(entries)} entries")
+                if entries:
+                    print(f"  Top entry: {entries[0]['name']} ({entries[0]['team']}) - {entries[0]['count']} {stat_type}")
+            
+            print("\nDone!")
+    else:  # ncaa
+        # Aggregate stats from all weight_class files
+        print(f"Aggregating stats for season {args.season}...")
+        all_stats = aggregate_all_weight_classes(args.season, args.data_dir, args.rankings_dir, league=args.league)
+        print(f"Found {len(all_stats)} unique wrestlers")
+        
+        # Generate JSON files
+        output_path = Path(args.output_dir)
+        output_path.mkdir(parents=True, exist_ok=True)
+        
+        stat_types = ["pins", "techs", "majors", "wins"]
+        
+        for stat_type in stat_types:
+            entries = generate_leaderboard_json(all_stats, stat_type)
+            output_file = output_path / f"{stat_type}.json"
+            
+            with output_file.open("w", encoding="utf-8") as f:
+                json.dump(entries, f, indent=2, ensure_ascii=False)
+            
+            print(f"Generated {output_file}: {len(entries)} entries")
+            if entries:
+                print(f"  Top entry: {entries[0]['name']} ({entries[0]['team']}) - {entries[0]['count']} {stat_type}")
+        
+        print("\nDone!")
 
 
 if __name__ == "__main__":

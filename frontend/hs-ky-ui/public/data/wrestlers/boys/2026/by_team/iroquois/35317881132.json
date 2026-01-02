@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35317881132",
+  "name": "Brent browning",
+  "team": "Iroquois",
+  "team_slug": "iroquois",
+  "team_rank": 94,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": 47,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 16.0,
+    "pa7": 6.0,
+    "pd7": 10.0,
+    "si_plus": 108.7,
+    "df_plus": 106.9,
+    "apr_plus": 100.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35012795132",
+      "opponent_rank": 63,
+      "opponent_name": "Brayden Miller",
+      "method": "MD 16-6"
+    },
+    "worst_loss": {
+      "opponent_id": "35635839132",
+      "opponent_rank": 89,
+      "opponent_name": "David Voelker",
+      "method": "Fall 7:21"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-03",
+      "opponent_id": "35635839132",
+      "opponent_name": "David Voelker",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 52,
+      "opponent_weight": 215,
+      "opponent_rank": 89,
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "7:21",
+      "event": "vs. North Bullitt",
+      "mv_impact": -9.33
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34989974132",
+      "opponent_name": "DonJai Karnickey",
+      "opponent_team": "Western",
+      "opponent_team_rank": 35,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:33",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 2.05
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35012795132",
+      "opponent_name": "Brayden Miller",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 123,
+      "opponent_weight": 215,
+      "opponent_rank": 63,
+      "result": "W",
+      "method": "MD",
+      "score": "16-6",
+      "duration": "7:00",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 3.64
+    }
+  ]
+}
