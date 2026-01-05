@@ -39,13 +39,22 @@ def parse_match_date(date_str: str) -> date | None:
         return None
 
 
-def is_recent_date(date_str: str, today: date, days: int = 7) -> bool:
+def is_recent_date(date_str: str, today: date, days: int = 7, cutoff_date: Optional[date] = None) -> bool:
     """
-    Return True if date_str is within the last `days` days relative to `today`.
+    Return True if date_str is after cutoff_date (if provided), or within the last `days` days relative to `today`.
+    
+    For HS archive system: cutoff_date should be the last published_at date from archive index.
+    Matches after the last publication are highlighted for editorial review.
     """
     d = parse_match_date(date_str)
     if not d:
         return False
+    
+    # If cutoff_date is provided (archive system), check if match is after that date
+    if cutoff_date:
+        return d > cutoff_date
+    
+    # Otherwise, use the old "last 7 days" logic
     delta = today - d
     return timedelta(0) <= delta <= timedelta(days=days)
 
@@ -198,7 +207,9 @@ def format_result_for_tooltip(result: str) -> str:
 
 
 def build_matrix_data(
-    relationships_data: Dict, placement_notes: Optional[Dict[str, str]] = None
+    relationships_data: Dict, 
+    placement_notes: Optional[Dict[str, str]] = None,
+    cutoff_date: Optional[date] = None
 ) -> Dict:
     """
     Build matrix data structure from relationships.
@@ -332,7 +343,7 @@ def build_matrix_data(
                     )
                     cell_data['matches'] = matches
                     cell_data['recent'] = any(
-                        is_recent_date(m.get('date', ''), today) for m in matches
+                        is_recent_date(m.get('date', ''), today, cutoff_date=cutoff_date) for m in matches
                     )
                 else:
                     # Non-even series.
@@ -461,8 +472,8 @@ def build_matrix_data(
                 for detail in cell_data['co_details']:
                     wm = detail.get('winner_match', {})
                     lm = detail.get('loser_match', {})
-                    if is_recent_date(wm.get('date', ''), today) or is_recent_date(
-                        lm.get('date', ''), today
+                    if is_recent_date(wm.get('date', ''), today, cutoff_date=cutoff_date) or is_recent_date(
+                        lm.get('date', ''), today, cutoff_date=cutoff_date
                     ):
                         recent_any = True
                         break
@@ -1631,7 +1642,7 @@ def generate_matrix_for_weight_class(
     # Setup data path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}"
+        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:  # ncaa
         data_path = Path(data_dir) / str(season)
     
@@ -1740,8 +1751,34 @@ def generate_matrix_for_weight_class(
         except Exception as e:
             print(f"Warning: Failed to load ranking bands from {ranking_bands_path}: {e}")
     
+    # Load archive index to get latest published_at date (for HS only)
+    cutoff_date = None
+    if league == 'hs' and gender:
+        archive_index_path = Path("data/rankings") / gender / str(season) / "index.json"
+        if archive_index_path.exists():
+            try:
+                with open(archive_index_path, 'r', encoding='utf-8') as f:
+                    index_data = json.load(f)
+                latest_drop_id = index_data.get('latest')
+                if latest_drop_id:
+                    # Load meta.json to get published_at
+                    meta_path = Path("data/rankings") / gender / str(season) / latest_drop_id / "meta.json"
+                    if meta_path.exists():
+                        with open(meta_path, 'r', encoding='utf-8') as f:
+                            meta_data = json.load(f)
+                        published_at_str = meta_data.get('published_at', '')
+                        if published_at_str:
+                            # Parse ISO date (e.g., "2026-01-02T00:00:00Z")
+                            try:
+                                cutoff_date = datetime.fromisoformat(published_at_str.replace('Z', '+00:00')).date()
+                                print(f"Using archive cutoff date: {cutoff_date} (from drop {latest_drop_id})")
+                            except Exception as e:
+                                print(f"Warning: Failed to parse published_at '{published_at_str}': {e}")
+            except Exception as e:
+                print(f"Warning: Failed to load archive index: {e}")
+    
     # Build matrix data
-    matrix_data = build_matrix_data(relationships_data, placement_notes=placement_notes_map)
+    matrix_data = build_matrix_data(relationships_data, placement_notes=placement_notes_map, cutoff_date=cutoff_date)
     
     # Generate HTML, passing starter overrides and ranking bands so the JS "Save Rankings"
     # button can honor them when computing is_starter flags.
@@ -1756,7 +1793,7 @@ def generate_matrix_for_weight_class(
     # Setup output path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}"
+        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:  # ncaa
         output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
@@ -1833,7 +1870,7 @@ def generate_all_matrices(
     # Setup data path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}"
+        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:  # ncaa
         data_path = Path(data_dir) / str(season)
     

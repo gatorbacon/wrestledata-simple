@@ -69,14 +69,43 @@ async function loadTeam(teamSlug) {
     
     console.log(`[HS Team] Loading team "${teamSlug}" for ${gender} ${season}...`);
     
+    // 0) Load archive index to get latest drop
+    let dropId = null;
+    try {
+      const indexUrl = `${HS_CONFIG.dataPaths.rankingsArchive}/${gender}/${season}/index.json`;
+      const indexData = await fetchJSON(indexUrl);
+      dropId = indexData?.latest || null;
+      console.log(`[HS Team] Using archive drop: ${dropId}`);
+    } catch (err) {
+      console.warn(`[HS Team] Could not load archive index, trying legacy public_rankings:`, err);
+    }
+    
     // 1) Load all weight files and aggregate wrestlers by team
     const allWrestlers = [];
     const wrestlersByWeight = {};
     
     for (const weight of weights) {
       try {
-        const url = buildRankingsURL(gender, season, weight);
-        const data = await fetchJSON(url);
+        let url;
+        let data = null;
+        
+        if (dropId) {
+          // Try archive system first
+          url = `${HS_CONFIG.dataPaths.rankingsArchive}/${gender}/${season}/${dropId}/${weight}.json`;
+          try {
+            data = await fetchJSON(url);
+          } catch (err) {
+            console.warn(`[HS Team] Archive load failed for ${weight}, trying legacy path:`, err);
+            // Fall through to legacy path
+          }
+        }
+        
+        // Fallback to legacy public_rankings if archive failed or not available
+        if (!data) {
+          url = buildRankingsURL(gender, season, weight);
+          data = await fetchJSON(url);
+        }
+        
         const wrestlers = data?.wrestlers || [];
         
         wrestlersByWeight[weight] = wrestlers;
@@ -496,18 +525,39 @@ async function renderTopSummaryRow(metrics, starters, xtpData, teamName) {
   // Render metrics first to populate the values
   renderTeamProfileMetrics(metrics, starters, true);
   
-  // LEFT COLUMN: Team Profile Stats
+  // LEFT COLUMN: xTP Headline (Projected State Tournament Points)
   const leftCol = document.createElement("div");
-  leftCol.className = "team-profile-summary";
+  leftCol.className = "xtp-headline-summary";
   
-  const leftHeader = document.createElement("h3");
-  leftHeader.className = "metrics-section-title";
-  leftHeader.textContent = "Team Overview";
-  leftCol.appendChild(leftHeader);
+  if (xtpData) {
+    await renderXTPHeadline(xtpData, teamName);
+    const xtpSection = document.getElementById("xtp-headline-section");
+    if (xtpSection) {
+      // Clone the xTP content
+      const xtpClone = xtpSection.cloneNode(true);
+      xtpClone.style.display = "block";
+      leftCol.appendChild(xtpClone);
+    }
+  } else {
+    const noXTP = document.createElement("div");
+    noXTP.textContent = "xTP data not available";
+    noXTP.style.cssText = "color: var(--muted); padding: 2em; text-align: center;";
+    leftCol.appendChild(noXTP);
+  }
   
-  const leftGrid = document.createElement("div");
-  leftGrid.className = "metrics-grid metrics-grid--two-columns";
-  leftGrid.style.cssText = "display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 24px; margin-bottom: 0;";
+  // RIGHT COLUMN: Team Profile Stats (Team Overview) - in a box matching xTP styling
+  const rightCol = document.createElement("div");
+  rightCol.className = "team-profile-summary";
+  rightCol.style.cssText = "background: var(--bg-card); border: 1px solid var(--border-light); padding: var(--pad-lg);";
+  
+  const rightHeader = document.createElement("h3");
+  rightHeader.className = "metrics-section-title";
+  rightHeader.textContent = "Team Overview";
+  rightCol.appendChild(rightHeader);
+  
+  const rightGrid = document.createElement("div");
+  rightGrid.className = "metrics-grid metrics-grid--two-columns";
+  rightGrid.style.cssText = "display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 24px; margin-bottom: 0;";
   
   // Create metric items dynamically
   const createMetricItem = (label, valueId, value) => {
@@ -538,30 +588,11 @@ async function renderTopSummaryRow(metrics, starters, xtpData, teamName) {
   col2.appendChild(createMetricItem("Pin Rate", "tm-pin-top", document.getElementById("tm-pin")?.textContent || "—"));
   col2.appendChild(createMetricItem("Tech Fall Rate", "tm-tech-top", document.getElementById("tm-tech")?.textContent || "—"));
   
-  leftGrid.appendChild(col1);
-  leftGrid.appendChild(col2);
-  leftCol.appendChild(leftGrid);
+  rightGrid.appendChild(col1);
+  rightGrid.appendChild(col2);
+  rightCol.appendChild(rightGrid);
   
-  // RIGHT COLUMN: xTP Headline
-  const rightCol = document.createElement("div");
-  rightCol.className = "xtp-headline-summary";
-  
-  if (xtpData) {
-    await renderXTPHeadline(xtpData, teamName);
-    const xtpSection = document.getElementById("xtp-headline-section");
-    if (xtpSection) {
-      // Clone the xTP content
-      const xtpClone = xtpSection.cloneNode(true);
-      xtpClone.style.display = "block";
-      rightCol.appendChild(xtpClone);
-    }
-  } else {
-    const noXTP = document.createElement("div");
-    noXTP.textContent = "xTP data not available";
-    noXTP.style.cssText = "color: var(--muted); padding: 2em; text-align: center;";
-    rightCol.appendChild(noXTP);
-  }
-  
+  // Append in swapped order: xTP left, Team Overview right
   topSummaryContainer.appendChild(leftCol);
   topSummaryContainer.appendChild(rightCol);
 }

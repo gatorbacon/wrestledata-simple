@@ -19,7 +19,9 @@ const HS_CONFIG = {
   },
   
   dataPaths: {
-    rankings: '/data/public_rankings',
+    rankings: '/data/public_rankings', // Legacy path (deprecated)
+    rankingsArchive: '/data/rankings', // New archive structure (top 40/24 only)
+    rankingsFull: '/data/rankings_full', // Full rankings (ALL ranked wrestlers)
     matrix: '/data/matrix',
     xtp: '/data/xtp'
   }

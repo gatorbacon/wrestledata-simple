@@ -28,9 +28,6 @@
                 <a href="/rankings.html?gender=boys" class="dropdown-item">
                   <span class="dropdown-item-label">Individual Rankings</span>
                 </a>
-                <a href="/matrix.html?gender=boys" class="dropdown-item">
-                  <span class="dropdown-item-label">Rankings Matrix</span>
-                </a>
                 <a href="/leaderboards/xtp/teams.html?gender=boys" class="dropdown-item">
                   <span class="dropdown-item-label">Team Tournament</span>
                 </a>
@@ -46,13 +43,15 @@
                 <a href="/rankings.html?gender=girls" class="dropdown-item">
                   <span class="dropdown-item-label">Individual Rankings</span>
                 </a>
-                <a href="/matrix.html?gender=girls" class="dropdown-item">
-                  <span class="dropdown-item-label">Rankings Matrix</span>
-                </a>
                 <a href="/leaderboards/xtp/teams.html?gender=girls" class="dropdown-item">
                   <span class="dropdown-item-label">Team Tournament</span>
                 </a>
               </div>
+            </div>
+
+            <!-- Dual Predictor -->
+            <div class="nav-item">
+              <a href="/dual_predictor.html" class="nav-link">Dual Predictor</a>
             </div>
           </div>
 
@@ -122,7 +121,6 @@
               </button>
               <div class="mobile-menu-section-content" data-content="boys">
                 <a href="/rankings.html?gender=boys" class="mobile-menu-item mobile-menu-item--child">Individual Rankings</a>
-                <a href="/matrix.html?gender=boys" class="mobile-menu-item mobile-menu-item--child">Rankings Matrix</a>
                 <a href="/leaderboards/xtp/teams.html?gender=boys" class="mobile-menu-item mobile-menu-item--child">Team Tournament</a>
               </div>
             </div>
@@ -135,10 +133,12 @@
               </button>
               <div class="mobile-menu-section-content" data-content="girls">
                 <a href="/rankings.html?gender=girls" class="mobile-menu-item mobile-menu-item--child">Individual Rankings</a>
-                <a href="/matrix.html?gender=girls" class="mobile-menu-item mobile-menu-item--child">Rankings Matrix</a>
                 <a href="/leaderboards/xtp/teams.html?gender=girls" class="mobile-menu-item mobile-menu-item--child">Team Tournament</a>
               </div>
             </div>
+
+            <!-- Dual Predictor (Non-expandable link) -->
+            <a href="/dual_predictor.html" class="mobile-menu-item">Dual Predictor</a>
           </nav>
         </div>
       </div>

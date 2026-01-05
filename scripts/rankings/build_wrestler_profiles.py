@@ -33,6 +33,63 @@ from matches_and_diff_by_rank import estimate_match_duration_seconds
 from scoringbyrank import _parse_score_from_result
 
 
+def _load_full_rank_map(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', gender: str = None) -> Dict[str, int]:
+    """
+    Load FULL rankings (all ranked wrestlers, not just starters) and create a map from wrestler_id -> best (lowest) rank.
+    
+    Uses rankings_*.json files from mt/rankings_data which contain ALL ranked wrestlers.
+    This ensures non-starters also get their current_rank set correctly.
+    
+    For HS: Loads from mt/rankings_data/hs_ky_{gender}/{season}/rankings_*.json
+    For NCAA: Loads from mt/rankings_data/{season}/rankings_*.json
+    Falls back to starter-only rankings if full rankings are not available.
+    """
+    # Determine rankings directory based on league
+    if league == 'hs':
+        state_lower = 'ky'  # Assuming KY for HS
+        rankings_dir = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
+    else:
+        rankings_dir = Path(data_dir) / str(season)
+    
+    if not rankings_dir.exists():
+        raise FileNotFoundError(f"Rankings directory not found: {rankings_dir}")
+    
+    rank_by_id: Dict[str, int] = {}
+    
+    # Load from FULL rankings files (rankings_*.json, not rankings_starters_*.json)
+    full_rankings_files = [p for p in sorted(rankings_dir.glob("rankings_*.json")) 
+                          if "starters" not in p.name and "archive" not in str(p)]
+    
+    if not full_rankings_files:
+        # Fallback: If no full rankings files found, try starter-only files
+        # (This handles NCAA case where full rankings might not exist)
+        print(f"Warning: No full rankings files found in {rankings_dir}, falling back to starter-only rankings")
+        return _load_starter_rank_map(season, data_dir, league=league, gender=gender)
+    
+    for p in full_rankings_files:
+        try:
+            with p.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception:
+            continue
+        
+        for r in data.get("rankings", []):
+            wid = str(r.get("wrestler_id") or "")
+            raw_rank = r.get("rank")
+            if not wid or raw_rank is None:
+                continue
+            try:
+                rk = int(raw_rank)
+            except Exception:
+                continue
+            
+            # Keep best (lowest) rank across all weights
+            if wid not in rank_by_id or rk < rank_by_id[wid]:
+                rank_by_id[wid] = rk
+    
+    return rank_by_id
+
+
 def _load_starter_rank_map(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', gender: str = None) -> Dict[str, int]:
     """
     Load starter-only rankings and create a map from wrestler_id -> best (lowest) starter rank.
@@ -41,6 +98,8 @@ def _load_starter_rank_map(season: int, data_dir: str = "mt/rankings_data", leag
     
     NOTE: Always reads from the public data location (frontend/wrestledata-ui or frontend/hs-ky-ui)
     regardless of data_dir parameter, since rankings_starters files are stored there.
+    
+    DEPRECATED: Use _load_full_rank_map() instead to include all ranked wrestlers.
     """
     # Determine rankings directory based on league
     if league == 'hs':
@@ -843,9 +902,9 @@ def main() -> None:
             all_wrestlers = load_all_wrestler_info(season, data_dir)
             print(f"Loaded {len(all_wrestlers)} wrestlers")
             
-            print("\nLoading starter-only rankings...")
-            rank_by_id = _load_starter_rank_map(season, data_dir, league=league, gender=gender)
-            print(f"Loaded starter-only rankings for {len(rank_by_id)} wrestlers")
+            print("\nLoading full rankings (all ranked wrestlers)...")
+            rank_by_id = _load_full_rank_map(season, data_dir, league=league, gender=gender)
+            print(f"Loaded full rankings for {len(rank_by_id)} wrestlers")
             
             print("\nCalculating team rankings...")
             team_rank_by_name, team_scores = calculate_team_rankings(season, data_dir)
@@ -1019,8 +1078,8 @@ def main() -> None:
         print(f"Loaded {len(all_wrestlers)} wrestlers")
         
         print("\nLoading starter-only rankings...")
-        rank_by_id = _load_starter_rank_map(season, data_dir)
-        print(f"Loaded starter-only rankings for {len(rank_by_id)} wrestlers")
+        rank_by_id = _load_full_rank_map(season, data_dir, league=league)
+        print(f"Loaded full rankings for {len(rank_by_id)} wrestlers")
         
         print("\nCalculating team rankings...")
         team_rank_by_name, team_scores = calculate_team_rankings(season, data_dir)
@@ -1171,6 +1230,14 @@ def main() -> None:
         print(f"  - {len(index_wrestlers)} wrestler profiles")
         print(f"  - {len(index_teams_list)} team entries")
         print(f"  - Index files in {season_dir}")
+        
+        # Reminder to regenerate search index
+        if args.league == 'hs':
+            print(f"\n⚠️  REMINDER: Regenerate search index for HS:")
+            print(f"   .venv/bin/python scripts/generate_search_index.py -league hs -gender both -season {season}")
+        else:
+            print(f"\n⚠️  REMINDER: Regenerate search index for NCAA:")
+            print(f"   .venv/bin/python scripts/generate_search_index.py -league ncaa -season {season}")
 
 
 if __name__ == "__main__":

@@ -377,7 +377,7 @@ def load_data_from_files(season: int, data_dir: str = "mt/rankings_data", league
     # Setup data path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}"
+        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:  # ncaa
         data_path = Path(data_dir) / str(season)
     

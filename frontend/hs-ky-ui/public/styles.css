@@ -1140,13 +1140,13 @@ a:hover {
   padding: 0 var(--pad-sm);
   width: 240px;
   height: 32px;
-  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  border-right: 1px solid var(--border-light);
   cursor: pointer;
   transition: background 0.12s ease;
 }
 
 .matrix-row-header:hover {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--accent-light);
 }
 
 .matrix-row-header .rank {
@@ -1185,9 +1185,9 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(10, 14, 18, 0.95);
+  background: var(--bg-card);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid var(--border-light);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1195,13 +1195,13 @@ a:hover {
   height: 32px;
   font-size: 0.625rem;
   font-weight: 600;
-  color: var(--muted);
+  color: #999999;
   text-transform: uppercase;
   transition: background 0.12s ease;
 }
 
 .matrix-col-header.highlighted {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--accent-light);
 }
 
 .matrix-cell {
@@ -1212,16 +1212,12 @@ a:hover {
   justify-content: center;
   font-size: 11px;
   font-weight: 600;
-  color: #fff;
+  color: #111;
   background: transparent;
   transition: opacity 0.12s ease;
   cursor: pointer;
-  border-right: 1px solid rgba(255, 255, 255, 0.03);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-}
-
-.matrix-cell {
-  color: rgba(255, 255, 255, 0.9);
+  border-right: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
 }
 
 .matrix-cell.empty {
@@ -1229,11 +1225,11 @@ a:hover {
 }
 
 .matrix-cell.cell-self {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 0, 0, 0.12);
   pointer-events: none;
   cursor: default;
   position: relative;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .matrix-cell.cell-self::after {
@@ -1247,15 +1243,15 @@ a:hover {
     135deg,
     transparent,
     transparent 2px,
-    rgba(255, 255, 255, 0.08) 2px,
-    rgba(255, 255, 255, 0.08) 4px
+    rgba(0, 0, 0, 0.18) 2px,
+    rgba(0, 0, 0, 0.18) 4px
   );
   pointer-events: none;
 }
 
 /* Cell hover outline (ONLY affects the hovered cell itself - no descendant selectors) */
 .matrix-cell:hover {
-  outline: 1px solid rgba(255, 255, 255, 0.6);
+  outline: 1px solid var(--accent-primary);
   outline-offset: -1px;
 }
 
@@ -1263,12 +1259,20 @@ a:hover {
 .matrix-cell.self {
   background: repeating-linear-gradient(
     45deg,
-    rgba(255, 255, 255, 0.08),
-    rgba(255, 255, 255, 0.08) 4px,
-    rgba(255, 255, 255, 0.02) 4px,
-    rgba(255, 255, 255, 0.02) 8px
-  );
+    rgba(0, 0, 0, 0.0),
+    rgba(0, 0, 0, 0.2) 4px,
+    rgba(0, 0, 0, 0.2) 4px,
+    rgba(0, 0, 0, 0.0) 8px
+  ) !important;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.0),
+    rgba(0, 0, 0, 0.2) 4px,
+    rgba(0, 0, 0, 0.2) 4px,
+    rgba(0, 0, 0, 0.0) 8px
+  ) !important;
   pointer-events: none;
+  opacity: 0.8 !important;
 }
 
 .matrix-cell.self:hover {
@@ -1285,7 +1289,7 @@ a:hover {
 }
 
 .matrix-cell.cell-co {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .matrix-cell.cell-split {
@@ -2133,7 +2137,32 @@ tbody tr:last-child td {
 
 .name {
   text-align: left;
-  font-weight: 600;
+  font-weight: normal;
+}
+
+/* Previous Season Placement Micro-Pill - Subtle pill styling */
+.previous-placement-pill {
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: normal;
+  color: #777;
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  line-height: 1.2;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+/* Rankings table - remove bold from names and teams */
+#rankings-table td.name {
+  font-weight: normal;
+}
+
+#rankings-table td.name a {
+  font-weight: normal;
 }
 
 /* Primary metric columns (xTP, MV) */
@@ -4926,9 +4955,20 @@ td {
   text-shadow: none !important;
 }
 
-/* Remove all gradients */
+/* Remove all gradients (except matrix diagonal cells) */
 * {
   background-image: none !important;
+}
+
+/* Exception: Allow gradients for matrix diagonal cells */
+.matrix-cell.self {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.0),
+    rgba(0, 0, 0, 0.2) 4px,
+    rgba(0, 0, 0, 0.2) 4px,
+    rgba(0, 0, 0, 0.0) 8px
+  ) !important;
 }
 
 /* Update page container and sections */
@@ -4999,6 +5039,33 @@ table tbody tr:last-child td {
 table tbody tr:hover {
   background: var(--accent-light);
   /* Subtle highlight on hover */
+}
+
+/* Non-starter rows (greyed out) */
+table tbody tr.non-starter {
+  color: #BBBBBB;
+}
+
+table tbody tr.non-starter td.name,
+table tbody tr.non-starter td.region {
+  color: #BBBBBB;
+}
+
+table tbody tr.non-starter td.name a,
+table tbody tr.non-starter td.region {
+  color: #BBBBBB;
+}
+
+/* Previous placement pill inherits muted color for non-starters */
+table tbody tr.non-starter .previous-placement-pill {
+  color: #BBBBBB;
+  background: #f8f8f8;
+  border-color: #e0e0e0;
+}
+
+/* Rank column stays normal for non-starters */
+table tbody tr.non-starter td:first-child {
+  color: var(--text-main);
 }
 
 /* Update cards */
@@ -5162,5 +5229,206 @@ table a {
 table a:hover {
   text-decoration: underline;
   /* No color change */
+}
+
+/* ========================================
+   Dual Matchup Predictor Styles
+   ======================================== */
+
+/* Gender Toggle */
+.gender-toggle {
+  padding: 0.5em 1em;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text-main);
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.gender-toggle:hover {
+  background: var(--accent-light);
+}
+
+.gender-toggle.active {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+}
+
+/* Team Autocomplete */
+.team-autocomplete-input {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text-main);
+  font-size: 1em;
+  border-radius: 4px;
+}
+
+.team-autocomplete-input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(31, 78, 216, 0.1);
+}
+
+.autocomplete-dropdown {
+  position: absolute;
+  z-index: 1000;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: -1px;
+}
+
+.autocomplete-item {
+  padding: 0.75em;
+  cursor: pointer;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.autocomplete-item:hover {
+  background: var(--accent-light);
+}
+
+.autocomplete-item:last-child {
+  border-bottom: none;
+}
+
+/* Scoreboard */
+.dual-scoreboard {
+  background: var(--bg-card);
+  border: 2px solid var(--text-main);
+  padding: 2em;
+  margin: 2em 0;
+}
+
+.scoreboard-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  border-bottom: 2px solid var(--border-light);
+}
+
+.scoreboard-row:last-child {
+  border-bottom: none;
+}
+
+.scoreboard-team-name {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-main);
+  text-transform: uppercase;
+}
+
+.scoreboard-score {
+  font-size: 4em;
+  font-weight: 700;
+  color: var(--text-main);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Matchup Table */
+#matchup-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+}
+
+#matchup-table thead {
+  background: var(--bg-main);
+  border-bottom: 2px solid var(--border-light);
+}
+
+#matchup-table th {
+  padding: 0.75em;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+}
+
+#matchup-table td {
+  padding: 0.75em;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-main);
+}
+
+#matchup-table tbody tr:hover {
+  background: var(--accent-light);
+}
+
+.winner-cell,
+.result-cell {
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.result-cell {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.result-cell:hover {
+  background-color: var(--accent-light);
+}
+
+.winner-triangle {
+  font-size: 1.2em;
+  color: var(--text-main);
+  line-height: 1;
+}
+
+.winner-triangle-left {
+  order: -1;
+}
+
+.winner-triangle-right {
+  order: 1;
+}
+
+.points-cell {
+  text-align: center;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.wrestler-select {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text-main);
+  font-size: 0.9em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wrestler-select:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(31, 78, 216, 0.1);
+}
+
+.wrestler-select option {
+  padding: 0.5em;
 }
 

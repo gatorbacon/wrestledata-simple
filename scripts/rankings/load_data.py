@@ -543,7 +543,7 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     # Setup weight overrides path based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / "weight_overrides.json"
+        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "weight_overrides.json"
     else:  # ncaa
         overrides_path = Path(data_dir) / str(season) / "weight_overrides.json"
     if overrides_path.exists():

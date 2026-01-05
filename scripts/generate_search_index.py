@@ -4,8 +4,11 @@ Generate search_index.js for global site search.
 
 This script reads wrestler and team index files and creates a JavaScript
 file with searchable data for Fuse.js autocomplete.
+
+Supports both NCAA and HS modes.
 """
 
+import argparse
 import json
 import re
 from pathlib import Path
@@ -33,7 +36,7 @@ def generate_search_tokens(name, team=None, weight=None, team_slug=None):
     if weight:
         tokens.add(str(weight))
     
-    # Add common team abbreviations
+    # Add common team abbreviations (NCAA only)
     if team_slug:
         # PSU for Penn State
         if 'penn_state' in team_slug:
@@ -53,92 +56,228 @@ def generate_search_tokens(name, team=None, weight=None, team_slug=None):
     return sorted(list(tokens))
 
 
-def team_slug_to_url(team_slug):
+def team_slug_to_url(team_slug, gender=None):
     """Convert team slug to URL."""
+    if gender:
+        return f"/team.html?team={team_slug}&gender={gender}"
     return f"/team.html?team={team_slug}"
 
 
-def wrestler_id_to_url(wrestler_id):
+def wrestler_id_to_url(wrestler_id, gender=None):
     """Convert wrestler ID to URL."""
+    if gender:
+        return f"/wrestler.html?id={wrestler_id}&gender={gender}"
     return f"/wrestler.html?id={wrestler_id}"
 
 
+def load_gender_data(script_dir, gender, season):
+    """Load wrestlers and teams for a specific gender."""
+    wrestlers_index = script_dir / f"frontend/hs-ky-ui/public/data/wrestlers/{gender}/{season}/index_wrestlers.json"
+    teams_index = script_dir / f"frontend/hs-ky-ui/public/data/wrestlers/{gender}/{season}/index_teams.json"
+    
+    search_items = []
+    
+    # Load wrestlers
+    if wrestlers_index.exists():
+        with open(wrestlers_index, 'r', encoding='utf-8') as f:
+            wrestlers = json.load(f)
+        
+        for wrestler in wrestlers:
+            name = wrestler.get('name', 'Unknown')
+            team = wrestler.get('team', 'Unknown')
+            team_slug = wrestler.get('team_slug', '')
+            weight = wrestler.get('weight_class')
+            wrestler_id = wrestler.get('wrestler_id')
+            
+            if not wrestler_id:
+                continue
+            
+            # Generate secondary text
+            secondary_parts = []
+            if team:
+                secondary_parts.append(team)
+            if weight:
+                secondary_parts.append(str(weight))
+            secondary = " · ".join(secondary_parts) if secondary_parts else ""
+            
+            # Generate search tokens
+            search_tokens = generate_search_tokens(name, team, weight, team_slug)
+            
+            # Build URL with gender
+            url = wrestler_id_to_url(wrestler_id, gender)
+            
+            search_items.append({
+                "type": "wrestler",
+                "name": name,
+                "secondary": secondary,
+                "url": url,
+                "searchTokens": search_tokens
+            })
+    
+    # Load teams (only once, but include gender in URL)
+    teams_loaded = set()
+    if teams_index.exists():
+        with open(teams_index, 'r', encoding='utf-8') as f:
+            teams = json.load(f)
+        
+        for team_data in teams:
+            team_name = team_data.get('team', 'Unknown')
+            team_slug = team_data.get('team_slug', '')
+            
+            if not team_slug or team_slug in teams_loaded:
+                continue
+            
+            teams_loaded.add(team_slug)
+            
+            # Generate secondary text
+            secondary = f"KY HS"
+            
+            # Generate search tokens
+            search_tokens = generate_search_tokens(team_name, team_slug=team_slug)
+            
+            # Build URL with gender (default to boys if not specified)
+            url = team_slug_to_url(team_slug, gender)
+            
+            search_items.append({
+                "type": "team",
+                "name": team_name,
+                "secondary": secondary,
+                "url": url,
+                "searchTokens": search_tokens
+            })
+    
+    return search_items
+
+
 def main():
-    # Paths
+    parser = argparse.ArgumentParser(description="Generate search_index.js for site search")
+    parser.add_argument(
+        "-league",
+        choices=["ncaa", "hs"],
+        default="ncaa",
+        help="League type (default: ncaa)"
+    )
+    parser.add_argument(
+        "-gender",
+        choices=["boys", "girls", "both"],
+        help="Gender for HS (required if league=hs). Use 'both' to combine boys and girls."
+    )
+    parser.add_argument(
+        "-season",
+        type=int,
+        default=2026,
+        help="Season year (default: 2026)"
+    )
+    
+    args = parser.parse_args()
+    
+    if args.league == 'hs' and not args.gender:
+        parser.error("--gender is required when --league=hs")
+    
     script_dir = Path(__file__).parent.parent
-    wrestlers_index = script_dir / "frontend/wrestledata-ui/public/wrestlers/2026/index_wrestlers.json"
-    teams_index = script_dir / "frontend/wrestledata-ui/public/wrestlers/2026/index_teams.json"
-    output_file = script_dir / "frontend/wrestledata-ui/public/search_index.js"
     
     search_index = []
     
-    # Load wrestlers
-    print(f"Loading wrestlers from {wrestlers_index}...")
-    with open(wrestlers_index, 'r', encoding='utf-8') as f:
-        wrestlers = json.load(f)
+    if args.league == 'hs':
+        # For HS, load data for specified gender(s)
+        if args.gender == 'both':
+            print("Loading boys data...")
+            boys_items = load_gender_data(script_dir, 'boys', args.season)
+            search_index.extend(boys_items)
+            print(f"  Added {len([x for x in boys_items if x['type'] == 'wrestler'])} boys wrestlers")
+            print(f"  Added {len([x for x in boys_items if x['type'] == 'team'])} teams")
+            
+            print("\nLoading girls data...")
+            girls_items = load_gender_data(script_dir, 'girls', args.season)
+            search_index.extend(girls_items)
+            print(f"  Added {len([x for x in girls_items if x['type'] == 'wrestler'])} girls wrestlers")
+            print(f"  Added {len([x for x in girls_items if x['type'] == 'team'])} teams")
+        else:
+            items = load_gender_data(script_dir, args.gender, args.season)
+            search_index.extend(items)
+            print(f"  Added {len([x for x in items if x['type'] == 'wrestler'])} wrestlers")
+            print(f"  Added {len([x for x in items if x['type'] == 'team'])} teams")
+        
+        output_file = script_dir / "frontend/hs-ky-ui/public/search_index.js"
+    else:  # ncaa
+        wrestlers_index = script_dir / f"frontend/wrestledata-ui/public/wrestlers/{args.season}/index_wrestlers.json"
+        teams_index = script_dir / f"frontend/wrestledata-ui/public/wrestlers/{args.season}/index_teams.json"
+        output_file = script_dir / "frontend/wrestledata-ui/public/search_index.js"
+        
+        # Load wrestlers
+        print(f"Loading wrestlers from {wrestlers_index}...")
+        if not wrestlers_index.exists():
+            print(f"Error: Wrestlers index not found: {wrestlers_index}")
+            return
+        
+        with open(wrestlers_index, 'r', encoding='utf-8') as f:
+            wrestlers = json.load(f)
+        
+        for wrestler in wrestlers:
+            name = wrestler.get('name', 'Unknown')
+            team = wrestler.get('team', 'Unknown')
+            team_slug = wrestler.get('team_slug', '')
+            weight = wrestler.get('weight_class')
+            wrestler_id = wrestler.get('wrestler_id')
+            
+            if not wrestler_id:
+                continue
+            
+            # Generate secondary text
+            secondary_parts = []
+            if team:
+                secondary_parts.append(team)
+            if weight:
+                secondary_parts.append(str(weight))
+            secondary = " · ".join(secondary_parts) if secondary_parts else ""
+            
+            # Generate search tokens
+            search_tokens = generate_search_tokens(name, team, weight, team_slug)
+            
+            search_index.append({
+                "type": "wrestler",
+                "name": name,
+                "secondary": secondary,
+                "url": wrestler_id_to_url(wrestler_id),
+                "searchTokens": search_tokens
+            })
+        
+        print(f"  Added {len(search_index)} wrestlers")
+        
+        # Load teams
+        print(f"Loading teams from {teams_index}...")
+        if not teams_index.exists():
+            print(f"Error: Teams index not found: {teams_index}")
+            return
+        
+        with open(teams_index, 'r', encoding='utf-8') as f:
+            teams = json.load(f)
+        
+        for team_data in teams:
+            team_name = team_data.get('team', 'Unknown')
+            team_slug = team_data.get('team_slug', '')
+            
+            if not team_slug:
+                continue
+            
+            secondary = "D1"
+            search_tokens = generate_search_tokens(team_name, team_slug=team_slug)
+            
+            search_index.append({
+                "type": "team",
+                "name": team_name,
+                "secondary": secondary,
+                "url": team_slug_to_url(team_slug),
+                "searchTokens": search_tokens
+            })
+        
+        print(f"  Added {len([x for x in search_index if x['type'] == 'team'])} teams")
     
-    for wrestler in wrestlers:
-        name = wrestler.get('name', 'Unknown')
-        team = wrestler.get('team', 'Unknown')
-        team_slug = wrestler.get('team_slug', '')
-        weight = wrestler.get('weight_class')
-        wrestler_id = wrestler.get('wrestler_id')
-        
-        if not wrestler_id:
-            continue
-        
-        # Generate secondary text
-        secondary_parts = []
-        if team:
-            secondary_parts.append(team)
-        if weight:
-            secondary_parts.append(str(weight))
-        secondary = " · ".join(secondary_parts) if secondary_parts else ""
-        
-        # Generate search tokens
-        search_tokens = generate_search_tokens(name, team, weight, team_slug)
-        
-        search_index.append({
-            "type": "wrestler",
-            "name": name,
-            "secondary": secondary,
-            "url": wrestler_id_to_url(wrestler_id),
-            "searchTokens": search_tokens
-        })
-    
-    print(f"  Added {len(search_index)} wrestlers")
-    
-    # Load teams
-    print(f"Loading teams from {teams_index}...")
-    with open(teams_index, 'r', encoding='utf-8') as f:
-        teams = json.load(f)
-    
-    for team_data in teams:
-        team_name = team_data.get('team', 'Unknown')
-        team_slug = team_data.get('team_slug', '')
-        
-        if not team_slug:
-            continue
-        
-        # Generate secondary text (conference info would go here)
-        secondary = "D1"  # Placeholder - can be enhanced later
-        
-        # Generate search tokens
-        search_tokens = generate_search_tokens(team_name, team_slug=team_slug)
-        
-        search_index.append({
-            "type": "team",
-            "name": team_name,
-            "secondary": secondary,
-            "url": team_slug_to_url(team_slug),
-            "searchTokens": search_tokens
-        })
-    
-    print(f"  Added {len([x for x in search_index if x['type'] == 'team'])} teams")
-    print(f"Total items: {len(search_index)}")
+    print(f"\nTotal items: {len(search_index)}")
     
     # Write JavaScript file
     print(f"Writing search_index.js to {output_file}...")
+    output_file.parent.mkdir(parents=True, exist_ok=True)
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("// Search index for WrestleData global search\n")
         f.write("// Generated automatically - do not edit manually\n\n")
@@ -151,4 +290,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

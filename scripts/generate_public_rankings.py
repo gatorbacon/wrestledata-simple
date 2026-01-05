@@ -248,6 +248,87 @@ def extract_wrestler_data(
     return output
 
 
+def copy_full_rankings_to_public(
+    season: int,
+    league: str = 'ncaa',
+    state: str = None,
+    gender: str = None
+) -> None:
+    """
+    Copy full rankings files from mt/rankings_data to public location.
+    
+    This ensures the frontend has access to ALL ranked wrestlers (not just starters or top 40/24).
+    Source: mt/rankings_data/hs_ky_{gender}/{season}/rankings_{weight}.json
+    Destination: frontend/hs-ky-ui/public/data/rankings_full/{gender}/{season}/{weight}.json
+    """
+    if league != 'hs':
+        # Only needed for HS (NCAA can use existing public rankings)
+        return
+    
+    # Source directory
+    state_lower = state.lower() if state else 'ky'
+    source_dir = Path("mt/rankings_data") / f"hs_{state_lower}_{gender}" / str(season)
+    
+    if not source_dir.exists():
+        print(f"Warning: Source directory not found: {source_dir}")
+        print("Skipping full rankings copy.")
+        return
+    
+    # Destination directory
+    dest_dir = Path("frontend/hs-ky-ui/public/data/rankings_full") / gender / str(season)
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Determine weight classes
+    if gender == 'boys':
+        weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+    else:  # girls
+        weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+    
+    copied_count = 0
+    
+    for weight in weights:
+        source_file = source_dir / f"rankings_{weight}.json"
+        
+        if not source_file.exists():
+            continue
+        
+        try:
+            # Read and validate the file
+            with source_file.open('r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            # Ensure it has the expected structure
+            if 'rankings' not in data:
+                continue
+            
+            rankings = data.get('rankings', [])
+            
+            # Copy to destination (simplified format for frontend)
+            dest_file = dest_dir / f"{weight}.json"
+            
+            # Write simplified format (just rankings array, not full metadata)
+            output_data = {
+                "season": season,
+                "weight": weight,
+                "rankings": rankings
+            }
+            
+            with dest_file.open('w', encoding='utf-8') as f:
+                json.dump(output_data, f, indent=2, ensure_ascii=False)
+            
+            copied_count += 1
+            print(f"  ✓ Copied full rankings for {weight} lbs ({len(rankings)} wrestlers)")
+            
+        except Exception as e:
+            print(f"  ✗ Error copying {weight}.json: {e}")
+            continue
+    
+    if copied_count > 0:
+        print(f"\n✓ Copied {copied_count} full rankings file(s) to {dest_dir}")
+    else:
+        print(f"\n⚠ No full rankings files found to copy")
+
+
 def generate_public_rankings(
     season: int,
     weight: int,
@@ -452,6 +533,16 @@ def main() -> None:
             
             print(f"Generating public rankings for season {args.season}")
             print(f"Weights: {weights}")
+            print()
+            
+            # Copy full rankings files to public location FIRST
+            print("Copying full rankings files to public location...")
+            copy_full_rankings_to_public(
+                args.season,
+                league=args.league,
+                state=args.state,
+                gender=gender
+            )
             print()
             
             # Process each weight
