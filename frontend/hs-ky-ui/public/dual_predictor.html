@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dual Matchup Predictor — kentuckymat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <script src="/hs_config.js"></script>
+  
+  <div class="page-container">
+    <header class="header">
+      <h1>Dual Matchup Predictor</h1>
+      <div class="header-subline">Predict Kentucky HS dual results</div>
+    </header>
+
+    <section class="section">
+      <!-- Top Controls -->
+      <div id="dual-predictor-controls" style="margin-bottom: 2em;">
+        <!-- Gender Toggle -->
+        <div style="margin-bottom: 1.5em;">
+          <div style="display: flex; gap: 1em; align-items: center;">
+            <label style="font-weight: 600; color: var(--text-main);">Gender:</label>
+            <button id="gender-toggle-boys" class="gender-toggle active" data-gender="boys">Boys</button>
+            <button id="gender-toggle-girls" class="gender-toggle" data-gender="girls">Girls</button>
+          </div>
+        </div>
+
+        <!-- Team Selection -->
+        <div style="display: flex; align-items: center; gap: 1em; margin-bottom: 2em;">
+          <div style="flex: 1; position: relative;">
+            <label for="team-a-input" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">Team A</label>
+            <input 
+              type="text" 
+              id="team-a-input" 
+              class="team-autocomplete-input"
+              placeholder="Select team..."
+              autocomplete="off"
+            />
+            <div id="team-a-dropdown" class="autocomplete-dropdown" style="display: none;"></div>
+          </div>
+          
+          <div style="font-size: 1.5em; font-weight: 600; color: var(--text-secondary); margin-top: 1.5em;">vs</div>
+          
+          <div style="flex: 1; position: relative;">
+            <label for="team-b-input" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">Team B</label>
+            <input 
+              type="text" 
+              id="team-b-input" 
+              class="team-autocomplete-input"
+              placeholder="Select team..."
+              autocomplete="off"
+            />
+            <div id="team-b-dropdown" class="autocomplete-dropdown" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scoreboard -->
+      <div id="scoreboard-container" style="display: none; margin-bottom: 2em;">
+        <div id="scoreboard" class="dual-scoreboard">
+          <div class="scoreboard-row">
+            <div class="scoreboard-team-name" id="scoreboard-team-a-name">TEAM A</div>
+            <div class="scoreboard-score" id="scoreboard-team-a-score">0</div>
+          </div>
+          <div class="scoreboard-row">
+            <div class="scoreboard-team-name" id="scoreboard-team-b-name">TEAM B</div>
+            <div class="scoreboard-score" id="scoreboard-team-b-score">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Matchup Table -->
+      <div id="matchup-table-container" style="display: none;">
+        <div class="table-wrapper">
+          <table id="matchup-table">
+            <thead>
+              <tr>
+                <th>Weight</th>
+                <th id="team-a-header">Team A Wrestler</th>
+                <th>Result</th>
+                <th id="team-b-header">Team B Wrestler</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody id="matchup-table-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/dual_predictor.js"></script>
+</body>
+</html>
+

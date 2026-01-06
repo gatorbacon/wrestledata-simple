@@ -13,6 +13,7 @@ from typing import Dict, List, Set, Tuple, Optional
 from collections import defaultdict
 import re
 import hashlib
+from datetime import datetime
 
 
 # Standard weight classes for KY HS Boys
@@ -522,6 +523,330 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     # Third pass: determine weight class assignment for each wrestler
     wrestler_weight_class = {}  # wrestler_id -> assigned weight_class
 
+    # ========================================================================
+    # NEW HS WEIGHT CHANGE LOGIC (Threshold + Confirmation System)
+    # ========================================================================
+    
+    def evaluate_weight_threshold(matches: List[Tuple], current_weight: str, league: str, state: str, gender: str) -> Optional[str]:
+        """
+        Evaluate weight change threshold based on last 7 matches.
+        
+        Returns:
+            Proposed weight if threshold met, None otherwise
+        """
+        if not matches:
+            return None
+        
+        # Sort matches by date (most recent first)
+        sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
+        
+        # Take last 7 matches (or fewer if <7 exist)
+        recent_matches = sorted_matches[:7]
+        
+        if len(recent_matches) < 7:
+            # Simple majority if <7 matches
+            weight_counts = defaultdict(int)
+            for _, match_weight, _ in recent_matches:
+                normalized = normalize_weight_class(match_weight, league, state, gender) or match_weight
+                weight_counts[normalized] += 1
+            
+            if weight_counts:
+                most_common = max(weight_counts.items(), key=lambda x: x[1])[0]
+                if most_common != current_weight:
+                    return most_common
+            return None
+        
+        # Count weights in last 7 matches
+        weight_counts = defaultdict(int)
+        for _, match_weight, _ in recent_matches:
+            normalized = normalize_weight_class(match_weight, league, state, gender) or match_weight
+            weight_counts[normalized] += 1
+        
+        if not weight_counts:
+            return None
+        
+        # Get current weight as integer for comparison
+        try:
+            current_weight_int = int(current_weight) if current_weight else None
+        except (ValueError, TypeError):
+            current_weight_int = None
+        
+        # Get all weight classes for comparison
+        if league == 'hs' and state and state.upper() == 'KY':
+            if gender == 'boys':
+                valid_weights = KY_HS_BOYS_WEIGHTS
+            elif gender == 'girls':
+                valid_weights = KY_HS_GIRLS_WEIGHTS
+            else:
+                valid_weights = []
+        else:
+            valid_weights = []
+        
+        # Check for moving DOWN (to lower weight)
+        if current_weight_int and valid_weights:
+            current_idx = valid_weights.index(current_weight_int) if current_weight_int in valid_weights else -1
+            if current_idx > 0:
+                lower_weight = str(valid_weights[current_idx - 1])
+                count_at_lower = weight_counts.get(lower_weight, 0)
+                if count_at_lower >= 3:  # ≥3 of last 7 at lower weight
+                    return lower_weight
+        
+        # Check for moving UP (to higher weight)
+        if current_weight_int and valid_weights:
+            current_idx = valid_weights.index(current_weight_int) if current_weight_int in valid_weights else -1
+            if current_idx >= 0 and current_idx < len(valid_weights) - 1:
+                higher_weight = str(valid_weights[current_idx + 1])
+                count_at_higher = weight_counts.get(higher_weight, 0)
+                if count_at_higher >= 6:  # ≥6 of last 7 at higher weight
+                    return higher_weight
+        
+        # No threshold met
+        return None
+    
+    def is_wrestler_ranked(wrestler_id: str, weight: str, season: int, league: str, state: str, gender: str, data_dir: str) -> bool:
+        """
+        Check if wrestler is ranked in top 40 (boys) or top 24 (girls) at their current weight.
+        
+        Note: Rankings files may not exist on first run of load_data (before rankings are generated).
+        In that case, returns False (unranked), which means weight changes will be auto-applied.
+        On subsequent runs after rankings are generated, this will correctly identify ranked wrestlers.
+        
+        Returns:
+            True if ranked, False otherwise (including if rankings file doesn't exist)
+        """
+        if league != 'hs':
+            return False  # Only applies to HS
+        
+        # Determine top N based on gender
+        top_n = 24 if gender == 'girls' else 40
+        
+        # Load rankings for this weight
+        state_lower = state.lower() if state else 'ky'
+        rankings_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / f"rankings_{weight}.json"
+        
+        if not rankings_path.exists():
+            # Rankings don't exist yet (first run) - treat as unranked
+            return False
+        
+        try:
+            with open(rankings_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            rankings = data.get('rankings', [])
+            
+            # Check if wrestler is in top N
+            for entry in rankings[:top_n]:
+                if entry.get('wrestler_id') == wrestler_id:
+                    rank = entry.get('rank')
+                    if rank and isinstance(rank, int) and rank <= top_n:
+                        return True
+            
+            return False
+        except Exception:
+            # Error reading rankings - treat as unranked to be safe
+            return False
+    
+    def load_weight_confirmations(season: int, league: str, state: str, gender: str, data_dir: str) -> Dict[str, Dict]:
+        """
+        Load weight confirmation state from weight_confirmation.json.
+        
+        Returns:
+            Dict mapping wrestler_id -> {confirmed_weight, last_reviewed_match_date}
+        """
+        if league != 'hs':
+            return {}
+        
+        state_lower = state.lower() if state else 'ky'
+        confirmations_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "weight_confirmation.json"
+        
+        if not confirmations_path.exists():
+            return {}
+        
+        try:
+            with open(confirmations_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            return data.get('confirmations', {})
+        except Exception:
+            return {}
+    
+    def save_weight_confirmations(confirmations: Dict[str, Dict], season: int, league: str, state: str, gender: str, data_dir: str) -> None:
+        """Save weight confirmation state to weight_confirmation.json."""
+        if league != 'hs':
+            return
+        
+        state_lower = state.lower() if state else 'ky'
+        confirmations_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "weight_confirmation.json"
+        confirmations_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        data = {
+            'confirmations': confirmations,
+            'last_updated': datetime.now().isoformat()
+        }
+        
+        with open(confirmations_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
+    
+    def get_most_recent_match_date(matches: List[Tuple]) -> Optional[str]:
+        """Get the most recent match date from a list of matches."""
+        if not matches:
+            return None
+        
+        sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
+        return sorted_matches[0][2] if sorted_matches else None
+    
+    def compare_dates(date1: str, date2: str) -> int:
+        """
+        Compare two dates in MM/DD/YYYY format.
+        Returns: -1 if date1 < date2, 0 if equal, 1 if date1 > date2
+        """
+        d1_tuple = parse_date(date1)
+        d2_tuple = parse_date(date2)
+        if d1_tuple < d2_tuple:
+            return -1
+        elif d1_tuple > d2_tuple:
+            return 1
+        return 0
+    
+    def prompt_weight_confirmation(
+        wrestler_info: Dict,
+        current_weight: str,
+        proposed_weight: str,
+        matches: List[Tuple],
+        team_wrestlers: Dict[str, Dict],
+        league: str,
+        state: str,
+        gender: str,
+        season: int,
+        data_dir: str
+    ) -> Tuple[str, str]:
+        """
+        Interactive prompt for weight change confirmation.
+        
+        Returns:
+            Tuple of (confirmed_weight, last_reviewed_match_date)
+        """
+        wrestler_id = wrestler_info['id']
+        name = wrestler_info.get('name', 'Unknown')
+        team = wrestler_info.get('team', 'Unknown')
+        
+        print(f"\n{'='*80}")
+        print(f"WEIGHT CHANGE PROPOSAL - RANKED WRESTLER")
+        print(f"{'='*80}")
+        print(f"Wrestler: {name} ({team})")
+        print(f"Current confirmed weight: {current_weight}")
+        print(f"Proposed weight: {proposed_weight}")
+        
+        # Count matches at proposed weight
+        sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
+        recent_7 = sorted_matches[:7]
+        count_at_proposed = sum(1 for _, w, _ in recent_7 if normalize_weight_class(w, league, state, gender) == proposed_weight)
+        print(f"Threshold reason: {count_at_proposed} of last 7 matches at {proposed_weight}")
+        
+        # Show last 10 matches
+        print(f"\nLast 10 matches (most recent first):")
+        print(f"{'Date':<12} {'Weight':<8} {'Result':<20}")
+        print(f"{'-'*40}")
+        for _, match_weight, match_date in sorted_matches[:10]:
+            normalized_weight = normalize_weight_class(match_weight, league, state, gender) or match_weight
+            # Try to get result from match if available
+            result = "—"
+            print(f"{match_date:<12} {normalized_weight:<8} {result:<20}")
+        
+        # Show team context
+        print(f"\nTeam context:")
+        team_name = team
+        current_weight_int = int(current_weight) if current_weight.isdigit() else None
+        
+        if league == 'hs' and state and state.upper() == 'KY':
+            if gender == 'boys':
+                valid_weights = KY_HS_BOYS_WEIGHTS
+            elif gender == 'girls':
+                valid_weights = KY_HS_GIRLS_WEIGHTS
+            else:
+                valid_weights = []
+        else:
+            valid_weights = []
+        
+        weights_to_show = []
+        if current_weight_int and current_weight_int in valid_weights:
+            current_idx = valid_weights.index(current_weight_int)
+            if current_idx > 0:
+                weights_to_show.append(str(valid_weights[current_idx - 1]))
+            weights_to_show.append(str(current_weight_int))
+            if current_idx < len(valid_weights) - 1:
+                weights_to_show.append(str(valid_weights[current_idx + 1]))
+        
+        # Helper function to find wrestler's rank across all weight classes
+        def find_wrestler_rank(wid: str, all_weights: List[int]) -> Optional[Tuple[int, int]]:
+            """
+            Find wrestler's rank across all weight classes.
+            Returns: (weight, rank) if found, None otherwise
+            """
+            state_lower = state.lower() if state else 'ky'
+            top_n = 24 if gender == 'girls' else 40
+            
+            for weight in all_weights:
+                rankings_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / f"rankings_{weight}.json"
+                if not rankings_path.exists():
+                    continue
+                
+                try:
+                    with open(rankings_path, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                    rankings = data.get('rankings', [])
+                    
+                    # Check top N only
+                    for entry in rankings[:top_n]:
+                        if entry.get('wrestler_id') == wid:
+                            rank = entry.get('rank')
+                            if rank and isinstance(rank, int) and rank <= top_n:
+                                return (weight, rank)
+                except Exception:
+                    continue
+            
+            return None
+        
+        # Build map of wrestlers by their RANKED weight (not roster weight)
+        wrestlers_by_ranked_weight = defaultdict(list)  # weight -> [(wid, winfo, rank)]
+        
+        for wid, winfo in team_wrestlers.items():
+            rank_info = find_wrestler_rank(wid, valid_weights)
+            if rank_info:
+                rank_weight, rank = rank_info
+                wrestlers_by_ranked_weight[rank_weight].append((wid, winfo, rank))
+            else:
+                # Unranked wrestlers - check if they have a confirmed weight from weight_confirmations
+                # (This helps show unranked wrestlers at their confirmed weight)
+                # For now, we'll only show ranked wrestlers in team context
+                pass
+        
+        # Display wrestlers grouped by their RANKED weight
+        for w in weights_to_show:
+            w_int = int(w)
+            wrestlers_at_weight = wrestlers_by_ranked_weight.get(w_int, [])
+            
+            if wrestlers_at_weight:
+                print(f"\n  Weight {w}:")
+                # Sort by rank
+                wrestlers_at_weight.sort(key=lambda x: x[2])  # Sort by rank
+                for wid, winfo, rank in wrestlers_at_weight:
+                    print(f"    - {winfo.get('name', 'Unknown')} (#{rank})")
+        
+        # Prompt for decision
+        while True:
+            response = input(f"\nAccept weight change to {proposed_weight}? [a]ccept / [r]eject: ").strip().lower()
+            if response in ['a', 'accept']:
+                most_recent_date = get_most_recent_match_date(matches)
+                return proposed_weight, most_recent_date or ''
+            elif response in ['r', 'reject']:
+                most_recent_date = get_most_recent_match_date(matches)
+                return current_weight, most_recent_date or ''
+            else:
+                print("Invalid response. Please enter 'a' to accept or 'r' to reject.")
+    
+    # Load weight confirmations
+    weight_confirmations = load_weight_confirmations(season, league, state, gender, data_dir) if league == 'hs' else {}
+    
     # Load manual weight overrides (virtual match hints) if present.
     # File format (mt/rankings_data/{season}/weight_overrides.json for NCAA or
     # mt/rankings_data/hs_{state}_{gender}/weight_overrides.json for HS):
@@ -585,42 +910,126 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
             normalized_weight = normalize_weight_class(weight, league, state, gender) or weight
             for _ in range(max(0, count)):
                 matches.append((None, normalized_weight, date))
+        
         primary_weight = wrestler_info['weight_class']
         
-        if len(matches) == 0:
-            # No matches: use primary weight (already normalized)
-            assigned_weight = primary_weight
-        elif len(matches) < 5:
-            # Less than 5 matches: use most recent weight
-            # Sort by date (most recent first)
-            sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
-            assigned_weight = sorted_matches[0][1] if sorted_matches else primary_weight
-        else:
-            # 5 or more matches: use most common weight in last 5 matches
-            # Sort by date (most recent first) and take last 5
-            sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
-            last_5 = sorted_matches[:5]
+        # NEW HS WEIGHT CHANGE LOGIC
+        if league == 'hs' and state and state.upper() == 'KY':
+            # Get current confirmed weight from confirmations, or use primary weight
+            confirmation = weight_confirmations.get(wrestler_id, {})
+            current_confirmed_weight = confirmation.get('confirmed_weight', primary_weight)
+            last_reviewed_date = confirmation.get('last_reviewed_match_date', '')
             
-            # Count weights in last 5 matches
-            weight_counts = defaultdict(int)
-            for _, match_weight, _ in last_5:
-                weight_counts[match_weight] += 1
+            # Normalize current confirmed weight
+            current_confirmed_weight = normalize_weight_class(current_confirmed_weight, league, state, gender) or current_confirmed_weight
             
-            # Get most common weight
-            if weight_counts:
-                assigned_weight = max(weight_counts.items(), key=lambda x: x[1])[0]
+            # Evaluate weight threshold
+            proposed_weight = None
+            if matches:
+                proposed_weight = evaluate_weight_threshold(matches, current_confirmed_weight, league, state, gender)
+            
+            # Determine if weight change is needed
+            if proposed_weight and proposed_weight != current_confirmed_weight:
+                # Check if wrestler is ranked
+                is_ranked = is_wrestler_ranked(wrestler_id, current_confirmed_weight, season, league, state, gender, data_dir)
+                
+                if is_ranked:
+                    # Ranked wrestler: check if new match exists
+                    most_recent_match_date = get_most_recent_match_date(matches)
+                    
+                    # Check if we need to prompt (new match exists OR never reviewed)
+                    needs_prompt = False
+                    if not last_reviewed_date:
+                        needs_prompt = True
+                    elif most_recent_match_date:
+                        # Compare dates properly
+                        if compare_dates(most_recent_match_date, last_reviewed_date) > 0:
+                            needs_prompt = True
+                    
+                    if needs_prompt:
+                        # Prompt for confirmation
+                        # Get team wrestlers for context
+                        team_name = wrestler_info.get('team', '')
+                        team_wrestlers_dict = {
+                            wid: info for wid, info in all_wrestlers.items()
+                            if info.get('team') == team_name
+                        }
+                        
+                        confirmed_weight, reviewed_date = prompt_weight_confirmation(
+                            wrestler_info,
+                            current_confirmed_weight,
+                            proposed_weight,
+                            matches,
+                            team_wrestlers_dict,
+                            league,
+                            state,
+                            gender,
+                            season,
+                            data_dir
+                        )
+                        
+                        # Update confirmation state
+                        weight_confirmations[wrestler_id] = {
+                            'confirmed_weight': confirmed_weight,
+                            'last_reviewed_match_date': reviewed_date
+                        }
+                        
+                        # Save immediately after confirmation to preserve state if interrupted
+                        save_weight_confirmations(weight_confirmations, season, league, state, gender, data_dir)
+                        
+                        assigned_weight = confirmed_weight
+                    else:
+                        # No new match, keep current confirmed weight
+                        assigned_weight = current_confirmed_weight
+                else:
+                    # Unranked wrestler: auto-apply weight change
+                    assigned_weight = proposed_weight
+                    # Update confirmation state
+                    most_recent_match_date = get_most_recent_match_date(matches)
+                    weight_confirmations[wrestler_id] = {
+                        'confirmed_weight': proposed_weight,
+                        'last_reviewed_match_date': most_recent_match_date or ''
+                    }
+                    # Save immediately for unranked auto-applies too (in case of interruption)
+                    save_weight_confirmations(weight_confirmations, season, league, state, gender, data_dir)
             else:
+                # No threshold met or no change needed
+                assigned_weight = current_confirmed_weight
+        else:
+            # NCAA or non-HS: use original logic
+            if len(matches) == 0:
+                # No matches: use primary weight (already normalized)
                 assigned_weight = primary_weight
+            elif len(matches) < 5:
+                # Less than 5 matches: use most recent weight
+                # Sort by date (most recent first)
+                sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
+                assigned_weight = sorted_matches[0][1] if sorted_matches else primary_weight
+            else:
+                # 5 or more matches: use most common weight in last 5 matches
+                # Sort by date (most recent first) and take last 5
+                sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
+                last_5 = sorted_matches[:5]
+                
+                # Count weights in last 5 matches
+                weight_counts = defaultdict(int)
+                for _, match_weight, _ in last_5:
+                    weight_counts[match_weight] += 1
+                
+                # Get most common weight
+                if weight_counts:
+                    assigned_weight = max(weight_counts.items(), key=lambda x: x[1])[0]
+                else:
+                    assigned_weight = primary_weight
         
         # Normalize assigned weight one more time to ensure consistency
         assigned_weight = normalize_weight_class(assigned_weight, league, state, gender) or assigned_weight
-        
-        # Temporary debug for Evan Mougalian
-        if wrestler_info.get("name") == "Evan Mougalian":
-            debug_list = [(mw, d) for _, mw, d in matches]
-            print(f"[DEBUG] Evan Mougalian: primary={primary_weight}, assigned={assigned_weight}, matches={debug_list}")
 
         wrestler_weight_class[wrestler_id] = assigned_weight
+    
+    # Save weight confirmations (HS only)
+    if league == 'hs':
+        save_weight_confirmations(weight_confirmations, season, league, state, gender, data_dir)
     
     # Add wrestlers to their assigned weight classes
     # Note: Synthetic opponents are included here for relationship building (common opponent analysis)
