@@ -3,63 +3,111 @@
   "name": "Kayleigh Hall",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 14,
-  "weight_class": 145,
+  "team_rank": 15,
+  "weight_class": 138,
   "year": 2026,
-  "current_rank": 24,
+  "current_rank": 28,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "3-2",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 16.0,
     "pa7": 8.0,
     "pd7": 8.0,
-    "si_plus": 109.3,
-    "df_plus": 105.5,
-    "apr_plus": 94.7,
-    "pin_rate": 0.0,
+    "si_plus": 97.0,
+    "df_plus": 108.7,
+    "apr_plus": 103.7,
+    "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35598266132",
-      "opponent_rank": 31,
-      "opponent_name": "Loralai Stephens",
-      "method": "MD 16-8"
+      "opponent_id": "35521626132",
+      "opponent_rank": 29,
+      "opponent_name": "Starlet Hurst",
+      "method": "Fall 1:19"
     },
     "worst_loss": {
       "opponent_id": "35343286132",
-      "opponent_rank": 23,
+      "opponent_rank": 21,
       "opponent_name": "Charleigh Olmsted",
       "method": "Fall 0:21"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35345849132",
+      "opponent_name": "Keirli Herran",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 138,
+      "opponent_rank": 12,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:51",
+      "event": "Richey Rumble",
+      "mv_impact": -3.31
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35347737132",
+      "opponent_name": "Abigail Patterson",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 33,
+      "opponent_weight": 138,
+      "opponent_rank": 36,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:14",
+      "event": "Richey Rumble",
+      "mv_impact": 5.69
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35521626132",
+      "opponent_name": "Starlet Hurst",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 38,
+      "opponent_weight": 138,
+      "opponent_rank": 29,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "Richey Rumble",
+      "mv_impact": 6.86
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35343286132",
       "opponent_name": "Charleigh Olmsted",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 10,
-      "opponent_weight": 152,
-      "opponent_rank": 23,
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": 21,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:21",
       "event": "Henderson County Lady Colonel Wrestling Invitational",
-      "mv_impact": -7.48
+      "mv_impact": -5.33
     },
     {
       "date": "2025-12-12",
@@ -67,15 +115,15 @@
       "opponent_name": "Loralai Stephens",
       "opponent_team": "Trigg County",
       "opponent_team_rank": 16,
-      "opponent_weight": 145,
-      "opponent_rank": 31,
+      "opponent_weight": 138,
+      "opponent_rank": 39,
       "weight_class": "145",
       "result": "W",
       "method": "MD",
       "score": "16-8",
       "duration": "7:00",
       "event": "Sister Slam",
-      "mv_impact": 1.58
+      "mv_impact": 3.76
     }
   ]
 }

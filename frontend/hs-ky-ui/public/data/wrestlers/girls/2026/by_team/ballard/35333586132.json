@@ -3,12 +3,12 @@
   "name": "Elliana Mosby",
   "team": "Ballard",
   "team_slug": "ballard",
-  "team_rank": 26,
-  "weight_class": 145,
+  "team_rank": 25,
+  "weight_class": 132,
   "year": 2026,
-  "current_rank": 74,
+  "current_rank": 78,
   "record": {
-    "overall": "0-0",
+    "overall": "3-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,5 +34,81 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-27",
+      "opponent_id": "OUTSTATE_2fd338380f9f",
+      "opponent_name": "Madeleine Stockstill",
+      "opponent_team": "Corydon Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:08",
+      "event": "New Albany`s Holiday Invite"
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "OUTSTATE_08ca5c7c7ced",
+      "opponent_name": "Justice Matthews",
+      "opponent_team": "Southridge",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:39",
+      "event": "New Albany`s Holiday Invite"
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "OUTSTATE_3d7277ee1e25",
+      "opponent_name": "Isabella Lafevers",
+      "opponent_team": "South Dearborn",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:21",
+      "event": "New Albany`s Holiday Invite"
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "OUTSTATE_8b55ed87ffad",
+      "opponent_name": "Mya Menke",
+      "opponent_team": "Southridge",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "New Albany`s Holiday Invite"
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "OUTSTATE_33f945d34b3e",
+      "opponent_name": "Charlene Rodriguez",
+      "opponent_team": "Terre Haute North",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:38",
+      "event": "New Albany`s Holiday Invite"
+    }
+  ]
 }

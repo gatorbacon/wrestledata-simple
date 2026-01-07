@@ -6,7 +6,7 @@
   "team_rank": null,
   "weight_class": 145,
   "year": 2026,
-  "current_rank": 42,
+  "current_rank": 40,
   "record": {
     "overall": "2-6",
     "vs_ranked": "1-6",
@@ -17,9 +17,9 @@
     "pf7": 1.5,
     "pa7": 17.5,
     "pd7": -16.0,
-    "si_plus": 89.5,
-    "df_plus": 91.5,
-    "apr_plus": 93.4,
+    "si_plus": 73.5,
+    "df_plus": 96.8,
+    "apr_plus": 95.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35615644132",
-      "opponent_rank": 62,
+      "opponent_rank": 42,
       "opponent_name": "Abigail Edmondson",
       "method": "Fall 4:39"
     },
     "worst_loss": {
       "opponent_id": "35664472132",
-      "opponent_rank": 34,
+      "opponent_rank": 33,
       "opponent_name": "Lyllian Sandefur",
       "method": "Fall 2:17"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35615644132",
       "opponent_name": "Abigail Edmondson",
       "opponent_team": "Highlands",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 62,
+      "opponent_rank": 42,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -62,27 +62,12 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": 114,
-      "opponent_rank": null,
-      "weight_class": "145",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:28",
-      "event": "Bearcat Brawl"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35663925132",
       "opponent_name": "Preslee Steiber",
       "opponent_team": "Ryle",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 16,
+      "opponent_rank": 19,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
@@ -95,7 +80,7 @@
       "opponent_id": "35333378132",
       "opponent_name": "Chloe Gallahue",
       "opponent_team": "Boyle County",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 13,
       "opponent_weight": 145,
       "opponent_rank": 2,
       "weight_class": "145",
@@ -136,13 +121,28 @@
       "event": "Bearcat Brawl (Girls)"
     },
     {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:28",
+      "event": "Bearcat Brawl"
+    },
+    {
       "date": "2025-11-29",
       "opponent_id": "35664472132",
       "opponent_name": "Lyllian Sandefur",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 2,
       "opponent_weight": 145,
-      "opponent_rank": 34,
+      "opponent_rank": 33,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35333385132",
       "opponent_name": "Sydney Coon",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 145,
-      "opponent_rank": 22,
+      "opponent_rank": 23,
       "weight_class": "145",
       "result": "L",
       "method": "TF",
@@ -169,6 +169,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.45
+    "top33_bonus_ev_shrunk": 1.1428571428571428
   }
 }

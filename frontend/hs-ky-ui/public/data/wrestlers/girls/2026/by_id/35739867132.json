@@ -6,67 +6,115 @@
   "team_rank": null,
   "weight_class": 145,
   "year": 2026,
-  "current_rank": 37,
+  "current_rank": 7,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "1-2",
-    "vs_top10": "0-1",
-    "vs_top25": "1-1"
+    "overall": "4-2",
+    "vs_ranked": "4-2",
+    "vs_top10": "1-1",
+    "vs_top25": "2-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 99.0,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 109.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 4,
     "ranked_losses": 2,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35495580132",
-      "opponent_rank": 17,
-      "opponent_name": "Bailee Williams",
-      "method": "Fall 1:56"
+      "opponent_id": "35333413132",
+      "opponent_rank": 8,
+      "opponent_name": "Brianna Slone",
+      "method": "Fall 2:29"
     },
     "worst_loss": {
       "opponent_id": "35495584132",
-      "opponent_rank": 50,
+      "opponent_rank": 47,
       "opponent_name": "Jersey Davis",
       "method": "M. For."
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "36063451132",
+      "opponent_name": "Bailey Stephens",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 23,
+      "opponent_weight": 145,
+      "opponent_rank": 30,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:54",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": 4.58
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35369131132",
+      "opponent_name": "Madelyn Green",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 145,
+      "opponent_rank": 28,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
+      "event": "Girls Hatfield McCoy 32 2025",
+      "mv_impact": 4.08
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333413132",
+      "opponent_name": "Brianna Slone",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 48,
+      "opponent_weight": 145,
+      "opponent_rank": 8,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:29",
+      "event": "Girls Hatfield McCoy 32 2025",
+      "mv_impact": 8.47
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35495580132",
       "opponent_name": "Bailee Williams",
       "opponent_team": "Southwestern",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 19,
       "opponent_weight": 138,
-      "opponent_rank": 17,
+      "opponent_rank": 18,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:56",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 7.53
+      "mv_impact": 7.64
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35436561132",
       "opponent_name": "Jenny White",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 14,
       "opponent_weight": 145,
       "opponent_rank": 1,
       "weight_class": "145",
@@ -81,9 +129,9 @@
       "opponent_id": "35495584132",
       "opponent_name": "Jersey Davis",
       "opponent_team": "Southwestern",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 19,
       "opponent_weight": 145,
-      "opponent_rank": 50,
+      "opponent_rank": 47,
       "weight_class": "145",
       "result": "L",
       "method": "MFF",
@@ -93,8 +141,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.45
+    "top33_wins": 3,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.8454004329004328
   }
 }

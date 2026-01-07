@@ -3,10 +3,10 @@
   "name": "Hadleigh Johnson",
   "team": "Apollo",
   "team_slug": "apollo",
-  "team_rank": 23,
+  "team_rank": 22,
   "weight_class": 152,
   "year": 2026,
-  "current_rank": 49,
+  "current_rank": 46,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -17,9 +17,9 @@
     "pf7": 1.0,
     "pa7": 3.0,
     "pd7": -2.0,
-    "si_plus": 97.1,
-    "df_plus": 99.6,
-    "apr_plus": 92.2,
+    "si_plus": 92.9,
+    "df_plus": 108.8,
+    "apr_plus": 92.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35343286132",
-      "opponent_rank": 23,
+      "opponent_rank": 21,
       "opponent_name": "Charleigh Olmsted",
       "method": "Dec 3-1"
     }
@@ -42,35 +42,35 @@
   "match_list": [
     {
       "date": "2025-12-22",
-      "opponent_id": "35333558132",
-      "opponent_name": "Aubrey Haisma",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 4,
-      "opponent_weight": 152,
-      "opponent_rank": 2,
-      "weight_class": "152",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:32",
-      "event": "vs. John Hardin",
-      "mv_impact": -2.86
-    },
-    {
-      "date": "2025-12-22",
       "opponent_id": "35343286132",
       "opponent_name": "Charleigh Olmsted",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 10,
-      "opponent_weight": 152,
-      "opponent_rank": 23,
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": 21,
       "weight_class": "152",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
       "event": "vs. Henderson County",
-      "mv_impact": -4.48
+      "mv_impact": -2.33
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35333558132",
+      "opponent_name": "Aubrey Haisma",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 3,
+      "opponent_weight": 152,
+      "opponent_rank": 7,
+      "weight_class": "152",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:32",
+      "event": "vs. John Hardin",
+      "mv_impact": -4.2
     }
   ]
 }

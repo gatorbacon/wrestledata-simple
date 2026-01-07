@@ -3,48 +3,96 @@
   "name": "Navaeh Woods",
   "team": "Mercer County",
   "team_slug": "mercer_county",
-  "team_rank": 48,
-  "weight_class": 138,
+  "team_rank": 45,
+  "weight_class": 132,
   "year": 2026,
-  "current_rank": 35,
+  "current_rank": 66,
   "record": {
-    "overall": "1-3",
-    "vs_ranked": "1-3",
-    "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "overall": "2-5",
+    "vs_ranked": "2-5",
+    "vs_top10": "0-2",
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 1.0,
     "pa7": 10.0,
     "pd7": -9.0,
-    "si_plus": 88.8,
-    "df_plus": 101.6,
-    "apr_plus": 96.3,
+    "si_plus": 92.9,
+    "df_plus": 99.5,
+    "apr_plus": 95.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35434953132",
-      "opponent_rank": 48,
+      "opponent_rank": 50,
       "opponent_name": "Lydia Yared",
       "method": "Fall 1:02"
     },
     "worst_loss": {
       "opponent_id": "35435001132",
-      "opponent_rank": 17,
+      "opponent_rank": 12,
       "opponent_name": "Amina Masudi",
       "method": "Fall 3:31"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35850788132",
+      "opponent_name": "Lexie Dingess",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 28,
+      "opponent_weight": 132,
+      "opponent_rank": 11,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:34",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": -3.74
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "36285547132",
+      "opponent_name": "Raylee Hux",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 11,
+      "opponent_weight": 132,
+      "opponent_rank": 67,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": 5.74
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333401132",
+      "opponent_name": "Laney Doolin",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 6,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": -2.93
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35672613132",
@@ -52,30 +100,30 @@
       "opponent_team": "Bullitt East",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 5,
+      "opponent_rank": 7,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:46",
       "event": "The Beast of the East",
-      "mv_impact": -2.52
+      "mv_impact": -3.0
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35333674132",
       "opponent_name": "Saniyah Nana",
       "opponent_team": "Butler",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 30,
       "opponent_weight": 145,
-      "opponent_rank": 16,
+      "opponent_rank": 11,
       "weight_class": "138",
       "result": "L",
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
       "event": "The Beast of the East",
-      "mv_impact": -4.02
+      "mv_impact": -3.79
     },
     {
       "date": "2025-12-06",
@@ -84,14 +132,14 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 48,
+      "opponent_rank": 50,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:02",
       "event": "The Beast of the East",
-      "mv_impact": 5.34
+      "mv_impact": 5.45
     },
     {
       "date": "2025-12-06",
@@ -100,14 +148,14 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 17,
+      "opponent_rank": 12,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:31",
       "event": "The Beast of the East",
-      "mv_impact": -5.65
+      "mv_impact": -5.35
     }
   ]
 }

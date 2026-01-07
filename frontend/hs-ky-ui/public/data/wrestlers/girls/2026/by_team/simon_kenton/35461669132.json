@@ -3,23 +3,23 @@
   "name": "Sophie Haught",
   "team": "Simon Kenton",
   "team_slug": "simon_kenton",
-  "team_rank": 55,
+  "team_rank": 52,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 31,
+  "current_rank": 35,
   "record": {
-    "overall": "2-5",
-    "vs_ranked": "2-5",
-    "vs_top10": "0-2",
-    "vs_top25": "0-3"
+    "overall": "2-8",
+    "vs_ranked": "2-8",
+    "vs_top10": "0-3",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 14.0,
     "pa7": 6.0,
     "pd7": 8.0,
-    "si_plus": 107.6,
-    "df_plus": 105.5,
-    "apr_plus": 95.2,
+    "si_plus": 100.4,
+    "df_plus": 110.8,
+    "apr_plus": 94.1,
     "pin_rate": 0.5,
     "bonus_rate": 1.0,
     "majors": 1,
@@ -28,23 +28,71 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_losses": 8,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35333363132",
-      "opponent_rank": 32,
+      "opponent_rank": 36,
       "opponent_name": "Tahirah Massie",
       "method": "MD 14-6"
     },
     "worst_loss": {
       "opponent_id": "35333681132",
-      "opponent_rank": 30,
+      "opponent_rank": 34,
       "opponent_name": "Desirae Carpenter",
       "method": "Fall 0:57"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333362132",
+      "opponent_name": "Amelia Marcum",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 4,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": -2.6
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35670762132",
+      "opponent_name": "Lyla Pitzer",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 33,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": -5.94
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "36574735132",
+      "opponent_name": "Candan Allen",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 132,
+      "opponent_rank": 32,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ladies Woodford County Invitational",
+      "mv_impact": -4.41
+    },
     {
       "date": "2025-12-29",
       "opponent_id": "35670762132",
@@ -52,14 +100,14 @@
       "opponent_team": "Woodford County",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 29,
+      "opponent_rank": 33,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:21",
       "event": "Ladies Woodford County Invitational",
-      "mv_impact": -5.67
+      "mv_impact": -5.94
     },
     {
       "date": "2025-12-20",
@@ -68,14 +116,14 @@
       "opponent_team": "Corbin",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 21,
+      "opponent_rank": 20,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:41",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -4.19
+      "mv_impact": -4.04
     },
     {
       "date": "2025-12-20",
@@ -84,21 +132,21 @@
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 32,
+      "opponent_rank": 36,
       "weight_class": "132",
       "result": "W",
       "method": "MD",
       "score": "14-6",
       "duration": "7:00",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": 4.1
+      "mv_impact": 3.45
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35565001132",
       "opponent_name": "brailey jackson",
       "opponent_team": "Union County",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": null,
       "opponent_weight": 126,
       "opponent_rank": 1,
       "weight_class": "132",
@@ -107,7 +155,7 @@
       "score": null,
       "duration": "0:50",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -1.28
+      "mv_impact": -1.17
     },
     {
       "date": "2025-12-06",
@@ -116,46 +164,46 @@
       "opponent_team": "South Warren",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 40,
+      "opponent_rank": 45,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:00",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 5.71
+      "mv_impact": 5.49
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35333681132",
       "opponent_name": "Desirae Carpenter",
       "opponent_team": "Western",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 56,
       "opponent_weight": 132,
-      "opponent_rank": 30,
+      "opponent_rank": 34,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:57",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -5.48
+      "mv_impact": -5.66
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35333372132",
       "opponent_name": "Makyla Folwer",
       "opponent_team": "Boyle County",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 13,
       "opponent_weight": 132,
-      "opponent_rank": 1,
+      "opponent_rank": 2,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Simon Kenton",
-      "mv_impact": -1.62
+      "mv_impact": -1.65
     }
   ]
 }

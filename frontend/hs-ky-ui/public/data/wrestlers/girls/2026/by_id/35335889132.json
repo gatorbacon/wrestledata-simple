@@ -3,48 +3,128 @@
   "name": "Carissa Ross",
   "team": "North Hardin",
   "team_slug": "north_hardin",
-  "team_rank": 5,
+  "team_rank": 12,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 8,
+  "current_rank": 7,
   "record": {
-    "overall": "9-2",
-    "vs_ranked": "9-2",
-    "vs_top10": "2-2",
-    "vs_top25": "5-2"
+    "overall": "12-4",
+    "vs_ranked": "12-4",
+    "vs_top10": "2-4",
+    "vs_top25": "7-4"
   },
   "metrics": {
-    "pf7": 14.82,
-    "pa7": 25.0,
-    "pd7": -10.18,
-    "si_plus": 108.0,
-    "df_plus": 81.4,
-    "apr_plus": 108.0,
-    "pin_rate": 0.778,
-    "bonus_rate": 0.889,
+    "pf7": 14.13,
+    "pa7": 15.4,
+    "pd7": -1.27,
+    "si_plus": 113.1,
+    "df_plus": 94.1,
+    "apr_plus": 106.4,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.833,
     "majors": 0,
-    "techs": 1,
-    "pins": 7
+    "techs": 2,
+    "pins": 8
   },
   "opponent_breakdown": {
-    "ranked_wins": 9,
-    "ranked_losses": 2,
+    "ranked_wins": 12,
+    "ranked_losses": 4,
     "top10_wins": 2,
-    "top10_losses": 2,
+    "top10_losses": 4,
     "win_over_highest_rank": {
-      "opponent_id": "35333404132",
-      "opponent_rank": 5,
-      "opponent_name": "sera gutterman",
-      "method": "M. For."
+      "opponent_id": "35333389132",
+      "opponent_rank": 2,
+      "opponent_name": "Ava Castleman",
+      "method": "Dec 13-12"
     },
     "worst_loss": {
-      "opponent_id": "35333373132",
-      "opponent_rank": 2,
-      "opponent_name": "Lyla Smith",
-      "method": "TF 19-3 4:31"
+      "opponent_id": "35599267132",
+      "opponent_rank": 6,
+      "opponent_name": "Allissa Chinas-Rodriguez",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35454337132",
+      "opponent_name": "Shelby Bowersox",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 18,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "19-2",
+      "duration": "0:00",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": 6.94
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35599267132",
+      "opponent_name": "Allissa Chinas-Rodriguez",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 120,
+      "opponent_rank": 6,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-9",
+      "duration": "7:00",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": 0.57
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35333389132",
+      "opponent_name": "Ava Castleman",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 114,
+      "opponent_rank": 2,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "13-12",
+      "duration": "7:00",
+      "event": "Ladies Woodford County Invitational",
+      "mv_impact": 5.74
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35542615132",
+      "opponent_name": "NaRhiya Davis",
+      "opponent_team": "Central",
+      "opponent_team_rank": 17,
+      "opponent_weight": 120,
+      "opponent_rank": 62,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "Ladies Woodford County Invitational",
+      "mv_impact": 5.7
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35599267132",
+      "opponent_name": "Allissa Chinas-Rodriguez",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 120,
+      "opponent_rank": 6,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ladies Woodford County Invitational",
+      "mv_impact": -2.43
+    },
     {
       "date": "2025-12-29",
       "opponent_id": "35333549132",
@@ -59,14 +139,14 @@
       "score": null,
       "duration": "3:27",
       "event": "Ladies Woodford County Invitational",
-      "mv_impact": 8.42
+      "mv_impact": 8.44
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35333633132",
       "opponent_name": "Juliette Ruiz",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 25,
       "opponent_weight": 120,
       "opponent_rank": 1,
       "weight_class": "120",
@@ -75,14 +155,14 @@
       "score": null,
       "duration": "3:13",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -2.16
+      "mv_impact": -1.88
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35333373132",
       "opponent_name": "Lyla Smith",
       "opponent_team": "Boyle County",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 13,
       "opponent_weight": 120,
       "opponent_rank": 2,
       "weight_class": "120",
@@ -91,7 +171,7 @@
       "score": "19-3",
       "duration": "4:31",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -1.8
+      "mv_impact": -1.78
     },
     {
       "date": "2025-12-20",
@@ -100,7 +180,7 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 5,
+      "opponent_rank": 12,
       "weight_class": "120",
       "result": "W",
       "method": "MFF",
@@ -115,30 +195,30 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 33,
       "opponent_weight": 120,
-      "opponent_rank": 34,
+      "opponent_rank": 36,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. North Hardin",
-      "mv_impact": 6.27
+      "mv_impact": 5.83
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35436580132",
       "opponent_name": "Paisley Hicks",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 14,
       "opponent_weight": 120,
-      "opponent_rank": 16,
+      "opponent_rank": 20,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. North Hardin",
-      "mv_impact": 6.72
+      "mv_impact": 6.63
     },
     {
       "date": "2025-12-06",
@@ -147,14 +227,14 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 120,
-      "opponent_rank": 25,
+      "opponent_rank": 22,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 7.5
+      "mv_impact": 7.51
     },
     {
       "date": "2025-12-06",
@@ -163,14 +243,14 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 33,
       "opponent_weight": 120,
-      "opponent_rank": 28,
+      "opponent_rank": 27,
       "weight_class": "120",
       "result": "W",
       "method": "TF",
       "score": "20-3",
       "duration": "0:24",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 5.14
+      "mv_impact": 4.2
     },
     {
       "date": "2025-12-06",
@@ -179,14 +259,14 @@
       "opponent_team": "Frederick Douglass",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 13,
+      "opponent_rank": 15,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:09",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 7.12
+      "mv_impact": 6.98
     },
     {
       "date": "2025-12-06",
@@ -195,35 +275,35 @@
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 37,
+      "opponent_rank": 32,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:10",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 6.11
+      "mv_impact": 5.87
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35333377132",
       "opponent_name": "Brooklyn Cash",
       "opponent_team": "Boyle County",
-      "opponent_team_rank": 17,
-      "opponent_weight": 126,
-      "opponent_rank": 40,
+      "opponent_team_rank": 13,
+      "opponent_weight": 120,
+      "opponent_rank": 76,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. North Hardin",
-      "mv_impact": 6.52
+      "mv_impact": 5.71
     }
   ],
   "bonus": {
-    "top33_wins": 6,
-    "top33_bonus_ev_raw": 1.5833333333333333,
-    "top33_bonus_ev_shrunk": 1.6339285714285714
+    "top33_wins": 8,
+    "top33_bonus_ev_raw": 1.625,
+    "top33_bonus_ev_shrunk": 1.6320684523809523
   }
 }

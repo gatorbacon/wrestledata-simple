@@ -3,36 +3,74 @@
   "name": "Emma Hood",
   "team": "Highlands",
   "team_slug": "highlands",
-  "team_rank": 42,
-  "weight_class": 165,
+  "team_rank": null,
+  "weight_class": 152,
   "year": 2026,
-  "current_rank": 83,
+  "current_rank": 2,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "2-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 119.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35448802132",
+      "opponent_rank": 9,
+      "opponent_name": "Chelsea Pelayo",
+      "method": "Fall 1:14"
+    },
     "worst_loss": null
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35448802132",
+      "opponent_name": "Chelsea Pelayo",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 36,
+      "opponent_weight": 152,
+      "opponent_rank": 9,
+      "weight_class": "152",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:14",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": 7.23
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333576132",
+      "opponent_name": "Alice La Rosa",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 47,
+      "opponent_weight": 152,
+      "opponent_rank": 20,
+      "weight_class": "152",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": 5.04
+    }
+  ]
 }

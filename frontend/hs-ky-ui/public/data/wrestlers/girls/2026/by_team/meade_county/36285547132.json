@@ -3,13 +3,13 @@
   "name": "Raylee Hux",
   "team": "Meade County",
   "team_slug": "meade_county",
-  "team_rank": 7,
+  "team_rank": 11,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 74,
+  "current_rank": 67,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-2",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,22 +17,78 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 95.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35333624132",
+      "opponent_rank": 68,
+      "opponent_name": "Mykenna Pace",
+      "method": "Fall 0:59"
+    },
+    "worst_loss": {
+      "opponent_id": "35333659132",
+      "opponent_rank": 66,
+      "opponent_name": "Navaeh Woods",
+      "method": "Fall 0:23"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_ab763ac26c8c",
+      "opponent_name": "Brooklyn Hover",
+      "opponent_team": "Lakota West High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:11",
+      "event": "Ladies Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333624132",
+      "opponent_name": "Mykenna Pace",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 132,
+      "opponent_rank": 68,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "Ladies Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333659132",
+      "opponent_name": "Navaeh Woods",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 45,
+      "opponent_weight": 132,
+      "opponent_rank": 66,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "Ladies Warhawk Classic"
+    }
+  ]
 }

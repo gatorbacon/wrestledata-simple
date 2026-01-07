@@ -3,41 +3,92 @@
   "name": "Abby Lucas",
   "team": "LaRue County",
   "team_slug": "larue_county",
-  "team_rank": null,
-  "weight_class": 185,
+  "team_rank": 4,
+  "weight_class": 165,
   "year": 2026,
-  "current_rank": 61,
+  "current_rank": 4,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "3-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 121.4,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35369121132",
+      "opponent_rank": 5,
+      "opponent_name": "McKenzie Webb",
+      "method": "Fall 3:58"
+    },
     "worst_loss": null
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35369121132",
+      "opponent_name": "McKenzie Webb",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 165,
+      "opponent_rank": 5,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:58",
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_dff5db99b058",
+      "opponent_name": "Kylee Hall",
+      "opponent_team": "Eastside",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333604132",
+      "opponent_name": "Addison Fletcher",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 48,
+      "opponent_weight": 165,
+      "opponent_rank": 34,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:08",
+      "event": "Girls Hatfield McCoy 32 2025"
+    }
+  ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 2.0
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.9506172839506175
   }
 }

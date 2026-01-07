@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 114,
   "year": 2026,
-  "current_rank": 67,
+  "current_rank": 60,
   "record": {
-    "overall": "0-3",
-    "vs_ranked": "0-3",
+    "overall": "1-6",
+    "vs_ranked": "1-6",
     "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "vs_top25": "0-4"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 91.4,
+    "pf7": 4.67,
+    "pa7": 6.0,
+    "pd7": -1.33,
+    "si_plus": 93.9,
+    "df_plus": 104.7,
+    "apr_plus": 90.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -27,34 +27,103 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35345038132",
+      "opponent_rank": 61,
+      "opponent_name": "Layla Embry",
+      "method": "Dec 10-4"
+    },
     "worst_loss": {
-      "opponent_id": "36532312132",
-      "opponent_rank": 13,
-      "opponent_name": "Adalyn Perry",
-      "method": "Fall 0:00"
+      "opponent_id": "35427617132",
+      "opponent_rank": 42,
+      "opponent_name": "Ashlen Douglas",
+      "method": "Fall 4:09"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35457238132",
+      "opponent_name": "Lexi Susor",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 7,
+      "opponent_weight": 114,
+      "opponent_rank": 29,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": -5.94
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35427617132",
+      "opponent_name": "Ashlen Douglas",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 7,
+      "opponent_weight": 114,
+      "opponent_rank": 42,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:09",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": -7.8
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35345038132",
+      "opponent_name": "Layla Embry",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": 22,
+      "opponent_weight": 114,
+      "opponent_rank": 61,
+      "weight_class": "114",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-4",
+      "duration": "7:00",
+      "event": "Henderson County Lady Colonel Wrestling Invitational",
+      "mv_impact": -0.45
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35565920132",
       "opponent_name": "Isabell Walker",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 41,
       "opponent_weight": 114,
-      "opponent_rank": 11,
+      "opponent_rank": 15,
       "weight_class": "114",
       "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:37",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
       "event": "Henderson County Lady Colonel Wrestling Invitational",
-      "mv_impact": -5.39
+      "mv_impact": -2.63
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35635701132",
+      "opponent_name": "LaNeyah Crowder",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 25,
+      "weight_class": "114",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "Henderson County Lady Colonel Wrestling Invitational",
+      "mv_impact": -2.72
     },
     {
       "date": "2025-12-13",
@@ -62,7 +131,7 @@
       "opponent_name": "Adalyn Perry",
       "opponent_team": "Bethlehem",
       "opponent_team_rank": null,
-      "opponent_weight": 107,
+      "opponent_weight": 114,
       "opponent_rank": 13,
       "weight_class": "114",
       "result": "L",
@@ -70,28 +139,28 @@
       "score": null,
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic",
-      "mv_impact": -5.83
+      "mv_impact": -4.96
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35333383132",
       "opponent_name": "Samantha Oliver",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 15,
-      "opponent_weight": 114,
-      "opponent_rank": 9,
+      "opponent_team_rank": 8,
+      "opponent_weight": 107,
+      "opponent_rank": 8,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic",
-      "mv_impact": -4.44
+      "mv_impact": -4.81
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.125
+    "top33_bonus_ev_shrunk": 1.361111111111111
   }
 }

@@ -4,22 +4,22 @@
   "team": "Danville",
   "team_slug": "danville",
   "team_rank": 36,
-  "weight_class": 126,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 88,
+  "current_rank": 80,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-4",
-    "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "overall": "0-6",
+    "vs_ranked": "0-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 90.7,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 92.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,33 +28,65 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35369710132",
-      "opponent_rank": 53,
+      "opponent_rank": 50,
       "opponent_name": "Ella Presnell",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35333390132",
+      "opponent_name": "Jennifer Vargus",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 120,
+      "opponent_rank": 14,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": -4.8
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333399132",
+      "opponent_name": "Laura Rodriguez Arias",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 47,
+      "opponent_weight": 120,
+      "opponent_rank": 10,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": -4.34
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35495574132",
       "opponent_name": "Grace Shoopman",
       "opponent_team": "Southwestern",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 19,
       "opponent_weight": 126,
-      "opponent_rank": 20,
+      "opponent_rank": 19,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic",
-      "mv_impact": -3.28
+      "mv_impact": -3.06
     },
     {
       "date": "2025-12-13",
@@ -63,46 +95,46 @@
       "opponent_team": "Madison Southern",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 53,
+      "opponent_rank": 50,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic",
-      "mv_impact": -6.72
+      "mv_impact": -6.85
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35436570132",
       "opponent_name": "Emma Bailey",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 14,
       "opponent_weight": 126,
-      "opponent_rank": 36,
+      "opponent_rank": 30,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:45",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -4.8
+      "mv_impact": -4.57
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35599275132",
       "opponent_name": "Aleyah Sexton",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 18,
       "opponent_weight": 132,
-      "opponent_rank": 15,
+      "opponent_rank": 37,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:27",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -4.51
+      "mv_impact": -5.87
     }
   ]
 }

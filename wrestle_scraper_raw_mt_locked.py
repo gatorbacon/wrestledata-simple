@@ -119,6 +119,7 @@ class WrestlingScraper:
         self.max_teams = max_teams
         self.headless = headless
         self.name_aliases = self._load_name_aliases()
+        self.eligibility_overrides = self._load_eligibility_overrides()
         self.league = league
         self.state = state
         self.gender = gender
@@ -157,6 +158,18 @@ class WrestlingScraper:
                 alias_data = json.load(f)
                 return alias_data.get("aliases", [])
         except Exception:
+            return []
+    
+    def _load_eligibility_overrides(self):
+        """Load eligibility overrides from mt/eligibility_overrides.json."""
+        try:
+            with open("mt/eligibility_overrides.json", "r") as f:
+                override_data = json.load(f)
+                return override_data.get("overrides", [])
+        except FileNotFoundError:
+            return []
+        except Exception:
+            print("Warning: Could not load eligibility overrides file")
             return []
 
     def _get_name_variants(self, name: str, team: str, season: int):
@@ -1087,6 +1100,15 @@ class WrestlingScraper:
             ineligible_wrestlers = set()  # Track ineligible wrestlers by name
             eligible_wrestlers = set()  # Track eligible wrestlers by name
             
+            # Load eligibility overrides early to check during roster scan
+            season_str = str(self.season_year) if self.season_year else ""
+            override_wrestler_names = set()
+            for override in self.eligibility_overrides:
+                override_team = override.get("team", "")
+                override_season = override.get("season", "")
+                if (override_team == team_info.get("name", "") and override_season == season_str):
+                    override_wrestler_names.add(override.get("wrestler_name", ""))
+            
             # Wait for and get the roster table
             roster_table = self.wait.until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid"))
@@ -1118,7 +1140,13 @@ class WrestlingScraper:
                             print(f"Found eligible entry for: {name} ({weight}) - {grade}")
                         elif 'redIcon' in cell_html and name not in eligible_wrestlers:
                             ineligible_wrestlers.add(name)
-                            print(f"Found ineligible entry for: {name} ({weight}) - {grade}")
+                            # Store roster info for override wrestlers (even if ineligible)
+                            if name in override_wrestler_names and weight:  # Only store if weight is not empty
+                                key = f"{name}_{weight}"
+                                roster_info[key] = grade
+                                print(f"Found ineligible entry for override wrestler: {name} ({weight}) - {grade} [storing roster info]")
+                            else:
+                                print(f"Found ineligible entry for: {name} ({weight}) - {grade}")
                 except Exception as e:
                     print(f"Error processing roster row: {e}")
                     continue
@@ -1128,11 +1156,32 @@ class WrestlingScraper:
                 if name in eligible_wrestlers:
                     ineligible_wrestlers.remove(name)
                     print(f"Removed {name} from ineligible list due to having an eligible entry")
-
+            
+            # Third pass - apply eligibility overrides
+            season_str = str(self.season_year) if self.season_year else ""
+            overrides_applied = []
+            for override in self.eligibility_overrides:
+                override_team = override.get("team", "")
+                override_season = override.get("season", "")
+                override_name = override.get("wrestler_name", "")
+                override_reason = override.get("reason", "")
+                
+                # Check if this override applies to current team/season
+                if (override_team == team_info.get("name", "") and 
+                    override_season == season_str and 
+                    override_name in ineligible_wrestlers):
+                    # Remove from ineligible and add to eligible
+                    ineligible_wrestlers.remove(override_name)
+                    eligible_wrestlers.add(override_name)
+                    overrides_applied.append((override_name, override_reason))
+                    print(f"✓ Eligibility override applied: {override_name} (Reason: {override_reason})")
+            
             # Print final eligibility counts
             print(f"\nFinal eligibility status:")
             print(f"Total eligible wrestlers: {len(eligible_wrestlers)}")
             print(f"Total ineligible wrestlers: {len(ineligible_wrestlers)}")
+            if overrides_applied:
+                print(f"Eligibility overrides applied: {len(overrides_applied)}")
             if ineligible_wrestlers:
                 print("Ineligible wrestlers that will be skipped:")
                 for name in ineligible_wrestlers:
@@ -1161,28 +1210,63 @@ class WrestlingScraper:
             
             # Store wrestler info before processing
             wrestler_info = []
+            
+            # Build override lookup: name -> {weight_class, reason}
+            override_lookup = {}
+            season_str = str(self.season_year) if self.season_year else ""
+            for override in self.eligibility_overrides:
+                override_team = override.get("team", "")
+                override_season = override.get("season", "")
+                if (override_team == team_info.get("name", "") and override_season == season_str):
+                    override_name = override.get("wrestler_name", "")
+                    override_lookup[override_name] = {
+                        "weight_class": override.get("weight_class", ""),
+                        "reason": override.get("reason", "")
+                    }
+            
             for option in wrestler_options[1:]:  # Skip first option (placeholder)
                 try:
                     wrestler_id = option.get_attribute("value")
                     wrestler_name = option.text.strip()
                     
-                    # Skip entries without a weight class prefix
-                    if " - " not in wrestler_name:
-                        print(f"Skipping entry without weight class: {wrestler_name}")
-                        continue
+                    # Check if this wrestler has a weight class prefix
+                    has_weight_class = " - " in wrestler_name
                     
-                    # Extract weight class from name (e.g., "125 - Gerald Huff")
-                    weight_class, wrestler_name = wrestler_name.split(" -", 1)
-                    wrestler_name = wrestler_name.strip()
+                    if not has_weight_class:
+                        # No weight class prefix - check if this is an override wrestler
+                        if wrestler_name in override_lookup:
+                            # This is an override wrestler - get weight class from override file
+                            override_info = override_lookup[wrestler_name]
+                            weight_class = override_info.get("weight_class", "")
+                            grade = ""
+                            
+                            # Try to find grade from roster_info if available
+                            if weight_class:
+                                key = f"{wrestler_name}_{weight_class}"
+                                grade = roster_info.get(key, "")
+                                print(f"✓ Override wrestler {wrestler_name} using weight class {weight_class} from override file")
+                            else:
+                                # No weight class in override file - skip with warning
+                                print(f"⚠ Override wrestler {wrestler_name} has no weight_class in override file - skipping")
+                                continue
+                        else:
+                            # Not an override wrestler - skip normally
+                            print(f"Skipping entry without weight class: {wrestler_name}")
+                            continue
+                    else:
+                        # Extract weight class from name (e.g., "125 - Gerald Huff")
+                        weight_class, wrestler_name = wrestler_name.split(" -", 1)
+                        wrestler_name = wrestler_name.strip()
                     
-                    # Skip if wrestler was marked as ineligible
-                    if wrestler_name in ineligible_wrestlers:
+                    # Skip if wrestler was marked as ineligible (unless overridden)
+                    if wrestler_name in ineligible_wrestlers and wrestler_name not in override_lookup:
                         print(f"Skipping matches for ineligible wrestler: {wrestler_name}")
                         continue
                     
-                    # Look up grade from roster info
-                    key = f"{wrestler_name}_{weight_class}"
-                    grade = roster_info.get(key, "")
+                    # Look up grade from roster info (if not already found)
+                    if not grade:
+                        key = f"{wrestler_name}_{weight_class}"
+                        grade = roster_info.get(key, "")
                     
                     wrestler_info.append({
                         "id": wrestler_id,

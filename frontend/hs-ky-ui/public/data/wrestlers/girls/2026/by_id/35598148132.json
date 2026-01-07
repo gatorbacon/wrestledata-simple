@@ -6,60 +6,92 @@
   "team_rank": 16,
   "weight_class": 185,
   "year": 2026,
-  "current_rank": 6,
+  "current_rank": 4,
   "record": {
-    "overall": "7-1",
-    "vs_ranked": "7-1",
-    "vs_top10": "2-1",
-    "vs_top25": "2-1"
+    "overall": "9-1",
+    "vs_ranked": "9-1",
+    "vs_top10": "3-1",
+    "vs_top25": "5-1"
   },
   "metrics": {
-    "pf7": 8.0,
-    "pa7": 2.0,
-    "pd7": 6.0,
-    "si_plus": 101.3,
-    "df_plus": 105.7,
-    "apr_plus": 104.0,
-    "pin_rate": 0.714,
-    "bonus_rate": 0.857,
-    "majors": 1,
+    "pf7": 9.0,
+    "pa7": 1.67,
+    "pd7": 7.33,
+    "si_plus": 103.0,
+    "df_plus": 110.6,
+    "apr_plus": 104.4,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.889,
+    "majors": 2,
     "techs": 0,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 9,
     "ranked_losses": 1,
-    "top10_wins": 2,
+    "top10_wins": 3,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35345844132",
-      "opponent_rank": 7,
+      "opponent_rank": 6,
       "opponent_name": "Virginia Stewart",
       "method": "MD 10-0"
     },
     "worst_loss": {
       "opponent_id": "35565735132",
-      "opponent_rank": 5,
+      "opponent_rank": 6,
       "opponent_name": "Aaralynn Boblitt",
       "method": "Fall 1:51"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35345844132",
+      "opponent_name": "Virginia Stewart",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 185,
+      "opponent_rank": 6,
+      "weight_class": "185",
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Richey Rumble",
+      "mv_impact": 5.61
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35565922132",
+      "opponent_name": "Trinity Lopez",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 41,
+      "opponent_weight": 185,
+      "opponent_rank": 21,
+      "weight_class": "185",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:42",
+      "event": "Richey Rumble",
+      "mv_impact": 3.87
+    },
+    {
       "date": "2025-12-16",
       "opponent_id": "35565922132",
       "opponent_name": "Trinity Lopez",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 41,
       "opponent_weight": 185,
-      "opponent_rank": 26,
+      "opponent_rank": 21,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Trigg County",
-      "mv_impact": 4.04
+      "mv_impact": 3.87
     },
     {
       "date": "2025-12-12",
@@ -68,14 +100,14 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 185,
-      "opponent_rank": 7,
+      "opponent_rank": 6,
       "weight_class": "185",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
       "event": "Sister Slam",
-      "mv_impact": 4.66
+      "mv_impact": 4.61
     },
     {
       "date": "2025-12-12",
@@ -84,14 +116,14 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 185,
-      "opponent_rank": 50,
+      "opponent_rank": 46,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:24",
       "event": "Sister Slam",
-      "mv_impact": 0.0
+      "mv_impact": 1.72
     },
     {
       "date": "2025-12-06",
@@ -100,14 +132,14 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 185,
-      "opponent_rank": 7,
+      "opponent_rank": 6,
       "weight_class": "185",
       "result": "W",
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 5.66
+      "mv_impact": 5.61
     },
     {
       "date": "2025-12-06",
@@ -116,67 +148,67 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 185,
-      "opponent_rank": 50,
+      "opponent_rank": 46,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:15",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 0.0
+      "mv_impact": 1.72
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35565735132",
       "opponent_name": "Aaralynn Boblitt",
       "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 185,
-      "opponent_rank": 5,
+      "opponent_team_rank": 6,
+      "opponent_weight": 165,
+      "opponent_rank": 6,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:51",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -3.08
+      "mv_impact": -2.21
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35347803132",
       "opponent_name": "Kyree Herrera",
       "opponent_team": "North Hardin",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 12,
       "opponent_weight": 185,
-      "opponent_rank": 45,
+      "opponent_rank": 41,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:26",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 0.85
+      "mv_impact": 3.13
     },
     {
       "date": "2025-12-04",
       "opponent_id": "35666902132",
       "opponent_name": "Saireigne Dela Pena",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 38,
       "opponent_weight": 165,
-      "opponent_rank": 49,
+      "opponent_rank": 48,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:52",
       "event": "vs. Trigg County",
-      "mv_impact": 5.82
+      "mv_impact": 5.9
     }
   ],
   "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.5484848484848484
+    "top33_wins": 5,
+    "top33_bonus_ev_raw": 1.2,
+    "top33_bonus_ev_shrunk": 1.5714285714285716
   }
 }

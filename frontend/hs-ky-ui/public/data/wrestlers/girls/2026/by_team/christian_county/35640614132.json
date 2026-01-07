@@ -6,20 +6,20 @@
   "team_rank": 34,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 43,
+  "current_rank": 37,
   "record": {
-    "overall": "2-3",
-    "vs_ranked": "2-3",
+    "overall": "2-5",
+    "vs_ranked": "2-5",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 100.3,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 97.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,23 +28,55 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35337105132",
-      "opponent_rank": 47,
+      "opponent_rank": 44,
       "opponent_name": "Faith Pearson",
       "method": "Fall 5:44"
     },
     "worst_loss": {
-      "opponent_id": "35343289132",
-      "opponent_rank": 37,
-      "opponent_name": "Abagail Hefner",
-      "method": "Fall 1:59"
+      "opponent_id": "35666995132",
+      "opponent_rank": 32,
+      "opponent_name": "Tristin Caldwell",
+      "method": "Fall 1:21"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35343289132",
+      "opponent_name": "Abagail Hefner",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 31,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:13",
+      "event": "Richey Rumble",
+      "mv_impact": -4.97
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35666995132",
+      "opponent_name": "Tristin Caldwell",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 38,
+      "opponent_weight": 126,
+      "opponent_rank": 32,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Richey Rumble",
+      "mv_impact": -5.17
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35347492132",
@@ -52,46 +84,46 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 33,
       "opponent_weight": 126,
-      "opponent_rank": 61,
+      "opponent_rank": 54,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:58",
       "event": "Henderson County Lady Colonel Wrestling Invitational",
-      "mv_impact": 4.61
+      "mv_impact": 4.76
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35343289132",
       "opponent_name": "Abagail Hefner",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 37,
+      "opponent_rank": 31,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:59",
       "event": "Henderson County Lady Colonel Wrestling Invitational",
-      "mv_impact": -5.63
+      "mv_impact": -4.97
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35337105132",
       "opponent_name": "Faith Pearson",
       "opponent_team": "Russellville",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 51,
       "opponent_weight": 126,
-      "opponent_rank": 47,
+      "opponent_rank": 44,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:44",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": 5.13
+      "mv_impact": 5.56
     },
     {
       "date": "2025-11-29",
@@ -100,30 +132,30 @@
       "opponent_team": "McCracken County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 27,
+      "opponent_rank": 18,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:59",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": -5.16
+      "mv_impact": -4.8
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35510582132",
       "opponent_name": "April Haisma",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 3,
       "opponent_weight": 132,
-      "opponent_rank": 8,
+      "opponent_rank": 9,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:30",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": -2.64
+      "mv_impact": -2.69
     }
   ]
 }

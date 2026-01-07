@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 152,
   "year": 2026,
-  "current_rank": 48,
+  "current_rank": 45,
   "record": {
     "overall": "0-5",
     "vs_ranked": "0-5",
-    "vs_top10": "0-1",
+    "vs_top10": "0-0",
     "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 3.0,
     "pd7": -3.0,
-    "si_plus": 95.7,
-    "df_plus": 99.6,
-    "apr_plus": 88.2,
+    "si_plus": 91.7,
+    "df_plus": 108.8,
+    "apr_plus": 88.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -30,13 +30,13 @@
     "ranked_wins": 0,
     "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35333576132",
-      "opponent_rank": 34,
-      "opponent_name": "Alice La Rosa",
-      "method": "Dec 3-0"
+      "opponent_id": "35515038132",
+      "opponent_rank": 38,
+      "opponent_name": "Jayla Young",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
@@ -45,32 +45,32 @@
       "opponent_id": "35369154132",
       "opponent_name": "Grace Helton",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 152,
-      "opponent_rank": 4,
+      "opponent_rank": 22,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:26",
       "event": "Seneca Girls Invitational",
-      "mv_impact": -3.98
+      "mv_impact": -6.97
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35369155132",
       "opponent_name": "Alyssa Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 152,
-      "opponent_rank": 11,
+      "opponent_rank": 16,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:29",
       "event": "Seneca Girls Invitational",
-      "mv_impact": -5.21
+      "mv_impact": -5.9
     },
     {
       "date": "2025-12-20",
@@ -79,30 +79,14 @@
       "opponent_team": "Eastern",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:52",
       "event": "Seneca Girls Invitational",
-      "mv_impact": -9.58
-    },
-    {
-      "date": "2025-12-05",
-      "opponent_id": "35333576132",
-      "opponent_name": "Alice La Rosa",
-      "opponent_team": "Moore",
-      "opponent_team_rank": 50,
-      "opponent_weight": 152,
-      "opponent_rank": 34,
-      "weight_class": "152",
-      "result": "L",
-      "method": "DEC",
-      "score": "3-0",
-      "duration": "7:00",
-      "event": "Queen of the Hive",
-      "mv_impact": -6.54
+      "mv_impact": -8.12
     },
     {
       "date": "2025-12-05",
@@ -110,15 +94,31 @@
       "opponent_name": "Jayla Young",
       "opponent_team": "Valley",
       "opponent_team_rank": null,
-      "opponent_weight": 152,
-      "opponent_rank": 14,
+      "opponent_weight": 145,
+      "opponent_rank": 38,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Queen of the Hive",
-      "mv_impact": -5.26
+      "mv_impact": -7.63
+    },
+    {
+      "date": "2025-12-05",
+      "opponent_id": "35333576132",
+      "opponent_name": "Alice La Rosa",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 47,
+      "opponent_weight": 152,
+      "opponent_rank": 20,
+      "weight_class": "152",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "Queen of the Hive",
+      "mv_impact": -3.96
     }
   ]
 }

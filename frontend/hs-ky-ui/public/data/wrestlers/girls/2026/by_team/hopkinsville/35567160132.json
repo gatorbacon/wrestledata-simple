@@ -3,23 +3,23 @@
   "name": "Shamya Quarles",
   "team": "Hopkinsville",
   "team_slug": "hopkinsville",
-  "team_rank": 43,
+  "team_rank": 41,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 59,
+  "current_rank": 62,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-3",
+    "overall": "0-6",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-3"
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 88.2,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 88.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,32 +28,65 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35598237132",
-      "opponent_rank": 16,
-      "opponent_name": "Skyler Novosselov",
-      "method": "Fall 0:37"
+      "opponent_id": "35521574132",
+      "opponent_rank": 49,
+      "opponent_name": "Saydee Johnson",
+      "method": "Fall 0:23"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35520296132",
+      "opponent_name": "Anela Shea-Suanez",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 38,
+      "opponent_weight": 165,
+      "opponent_rank": 36,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:40",
+      "event": "Richey Rumble",
+      "mv_impact": -4.93
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35598237132",
+      "opponent_name": "Skyler Novosselov",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 165,
+      "opponent_rank": 14,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "Richey Rumble",
+      "mv_impact": -3.35
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35506636132",
       "opponent_name": "Jemeriah Hopkins",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 15,
       "opponent_weight": 165,
-      "opponent_rank": 15,
+      "opponent_rank": 13,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:56",
-      "event": "Henderson County Lady Colonel Wrestling Invitational"
+      "event": "Henderson County Lady Colonel Wrestling Invitational",
+      "mv_impact": -2.63
     },
     {
       "date": "2025-12-16",
@@ -62,28 +95,30 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 16,
       "opponent_weight": 165,
-      "opponent_rank": 16,
+      "opponent_rank": 14,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trigg County"
+      "event": "vs. Trigg County",
+      "mv_impact": -3.35
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35521574132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
+      "opponent_name": "Saydee Johnson",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 38,
+      "opponent_weight": 165,
+      "opponent_rank": 49,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
-      "event": "RVK Lady Panther Classic"
+      "event": "RVK Lady Panther Classic",
+      "mv_impact": -6.15
     },
     {
       "date": "2025-11-29",
@@ -92,13 +127,14 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 16,
       "opponent_weight": 165,
-      "opponent_rank": 16,
+      "opponent_rank": 14,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:37",
-      "event": "RVK Lady Panther Classic"
+      "event": "RVK Lady Panther Classic",
+      "mv_impact": -3.35
     }
   ]
 }

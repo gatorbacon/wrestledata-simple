@@ -3,23 +3,23 @@
   "name": "Trinity Lopez",
   "team": "Hopkinsville",
   "team_slug": "hopkinsville",
-  "team_rank": 43,
+  "team_rank": 41,
   "weight_class": 185,
   "year": 2026,
-  "current_rank": 26,
+  "current_rank": 21,
   "record": {
-    "overall": "2-3",
-    "vs_ranked": "2-3",
-    "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "overall": "2-5",
+    "vs_ranked": "2-5",
+    "vs_top10": "0-2",
+    "vs_top25": "1-4"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 100.2,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 98.5,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -28,23 +28,55 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35333555132",
-      "opponent_rank": 32,
+      "opponent_rank": 23,
       "opponent_name": "Kaylin Alfred",
       "method": "Fall 0:02"
     },
     "worst_loss": {
       "opponent_id": "35640598132",
-      "opponent_rank": 20,
+      "opponent_rank": 32,
       "opponent_name": "Avah Miller",
       "method": "Fall 0:07"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35598148132",
+      "opponent_name": "MaKenna Hedricks",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 185,
+      "opponent_rank": 4,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:42",
+      "event": "Richey Rumble",
+      "mv_impact": -3.14
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35598253132",
+      "opponent_name": "Bryonah Mayes",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 185,
+      "opponent_rank": 16,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:28",
+      "event": "Richey Rumble",
+      "mv_impact": -6.36
+    },
     {
       "date": "2025-12-16",
       "opponent_id": "35598148132",
@@ -52,14 +84,14 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 16,
       "opponent_weight": 185,
-      "opponent_rank": 6,
+      "opponent_rank": 4,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Trigg County",
-      "mv_impact": -3.59
+      "mv_impact": -3.14
     },
     {
       "date": "2025-11-29",
@@ -67,15 +99,15 @@
       "opponent_name": "Avah Miller",
       "opponent_team": "Christian County",
       "opponent_team_rank": 34,
-      "opponent_weight": 185,
-      "opponent_rank": 20,
+      "opponent_weight": 165,
+      "opponent_rank": 32,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:07",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": -5.97
+      "mv_impact": -4.15
     },
     {
       "date": "2025-11-29",
@@ -84,30 +116,30 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 16,
       "opponent_weight": 185,
-      "opponent_rank": 19,
+      "opponent_rank": 16,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:26",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": -6.53
+      "mv_impact": -6.36
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35333555132",
       "opponent_name": "Kaylin Alfred",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 3,
       "opponent_weight": 185,
-      "opponent_rank": 32,
+      "opponent_rank": 23,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:02",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": 3.89
+      "mv_impact": 4.2
     },
     {
       "date": "2025-11-29",
@@ -116,7 +148,7 @@
       "opponent_team": "Logan County",
       "opponent_team_rank": null,
       "opponent_weight": 185,
-      "opponent_rank": 34,
+      "opponent_rank": 30,
       "weight_class": "185",
       "result": "W",
       "method": "MFF",

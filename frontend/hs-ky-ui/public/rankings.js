@@ -402,15 +402,6 @@ function renderRankings(data, gender, weight, isBaseline, season) {
   const tbody = document.querySelector("#rankings-table tbody");
   tbody.innerHTML = "";
   
-  // Hide/show previous rank column based on baseline flag
-  const prevRankHeader = document.querySelector("#rankings-table thead th.previous-rank");
-  const prevRankCells = tbody.querySelectorAll("td.previous-rank");
-  if (isBaseline) {
-    if (prevRankHeader) prevRankHeader.style.display = 'none';
-  } else {
-    if (prevRankHeader) prevRankHeader.style.display = '';
-  }
-  
   wrestlers.forEach((wrestler) => {
     const tr = document.createElement("tr");
     
@@ -420,28 +411,60 @@ function renderRankings(data, gender, weight, isBaseline, season) {
       tr.classList.add("non-starter");
     }
     
-    // Rank
+    // Rank (just the number)
     const rankTd = document.createElement("td");
+    rankTd.className = "rank";
+    rankTd.style.width = "3em";
+    rankTd.style.paddingRight = "0.25em";
+    rankTd.style.textAlign = "center";
     rankTd.textContent = safe(wrestler.rank);
     tr.appendChild(rankTd);
     
-    // Previous Rank (only if not baseline and exists)
-    if (!isBaseline && wrestler.previous_rank !== undefined && wrestler.previous_rank !== null) {
-      const prevRankTd = document.createElement("td");
-      prevRankTd.className = "previous-rank";
-      const prevRank = wrestler.previous_rank;
-      const currentRank = wrestler.rank;
-      
-      if (prevRank && prevRank !== currentRank) {
-        const diff = prevRank - currentRank;
-        const arrow = diff > 0 ? '↑' : '↓';
-        const color = diff > 0 ? 'green' : 'red';
-        prevRankTd.innerHTML = `<span style="color: ${color}">${prevRank} ${arrow}</span>`;
-      } else {
-        prevRankTd.textContent = prevRank || "—";
+    // Movement indicator column (separate column for alignment)
+    const movementTd = document.createElement("td");
+    movementTd.className = "movement-col";
+    movementTd.style.textAlign = "center";
+    movementTd.style.width = "2em";
+    movementTd.style.paddingLeft = "0";
+    movementTd.style.paddingRight = "0.5em";
+    
+    if (!isBaseline) {
+      // Check if wrestler is new (wasn't in previous rankings)
+      if (wrestler.is_new === true) {
+        const newSpan = document.createElement("span");
+        newSpan.className = "rank-movement rank-new";
+        newSpan.style.fontSize = "0.85em";
+        newSpan.style.fontWeight = "700"; // Bold
+        newSpan.style.color = "#1F4ED8"; // Blue (using accent-primary)
+        newSpan.textContent = "N";
+        movementTd.appendChild(newSpan);
+      } 
+      // Otherwise, show movement if available and non-zero
+      else if (wrestler.movement !== undefined && wrestler.movement !== null) {
+        const movement = wrestler.movement;
+        
+        if (movement !== 0) {
+          const movementSpan = document.createElement("span");
+          movementSpan.className = "rank-movement";
+          movementSpan.style.fontSize = "0.85em";
+          movementSpan.style.fontWeight = "600";
+          
+          if (movement > 0) {
+            // Moved up (positive movement)
+            movementSpan.style.color = "#22c55e"; // green
+            movementSpan.textContent = `▲${Math.abs(movement)}`;
+          } else {
+            // Moved down (negative movement)
+            movementSpan.style.color = "#ef4444"; // red
+            movementSpan.textContent = `▼${Math.abs(movement)}`;
+          }
+          
+          movementTd.appendChild(movementSpan);
+        }
       }
-      tr.appendChild(prevRankTd);
     }
+    
+    tr.appendChild(movementTd);
     
     // Name (link to wrestler profile) with previous placement micro-pill
     const nameTd = document.createElement("td");
@@ -474,7 +497,7 @@ function renderRankings(data, gender, weight, isBaseline, season) {
     if (wrestler.team) {
       const teamLink = document.createElement("a");
       const teamSlug = teamNameToSlug(wrestler.team);
-      teamLink.href = `/team.html?team=${teamSlug}`;
+      teamLink.href = buildPageURL('team.html', gender, { team: teamSlug });
       teamLink.textContent = wrestler.team;
       teamTd.appendChild(teamLink);
     } else {

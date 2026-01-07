@@ -3,23 +3,23 @@
   "name": "Charisma Kunkel",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 22,
+  "team_rank": 21,
   "weight_class": 114,
   "year": 2026,
-  "current_rank": 47,
+  "current_rank": 58,
   "record": {
-    "overall": "3-2",
-    "vs_ranked": "2-2",
+    "overall": "3-3",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 11.0,
     "pa7": 4.0,
     "pd7": 7.0,
-    "si_plus": 102.7,
-    "df_plus": 109.7,
-    "apr_plus": 98.6,
+    "si_plus": 103.6,
+    "df_plus": 107.6,
+    "apr_plus": 97.0,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -27,38 +27,55 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_wins": 3,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35436776132",
-      "opponent_rank": 52,
-      "opponent_name": "Isabella Vidoni",
-      "method": "Fall 0:00"
+      "opponent_id": "35424934132",
+      "opponent_rank": 36,
+      "opponent_name": "Lizeth Hernandez-Ponce",
+      "method": "Dec 11-4"
     },
     "worst_loss": {
-      "opponent_id": "35510416132",
-      "opponent_rank": 20,
-      "opponent_name": "Cassidy Huey",
-      "method": "Fall 0:00"
+      "opponent_id": "35457238132",
+      "opponent_rank": 29,
+      "opponent_name": "Lexi Susor",
+      "method": "Fall 4:26"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35457238132",
+      "opponent_name": "Lexi Susor",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 7,
+      "opponent_weight": 114,
+      "opponent_rank": 29,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:26",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": -5.94
+    },
+    {
       "date": "2025-12-17",
       "opponent_id": "35424934132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Lizeth Hernandez-Ponce",
+      "opponent_team": "Greenwood",
       "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": 36,
       "weight_class": "114",
       "result": "W",
       "method": "DEC",
       "score": "11-4",
       "duration": "7:00",
-      "event": "vs. Greenwood"
+      "event": "vs. Greenwood",
+      "mv_impact": 0.31
     },
     {
       "date": "2025-12-13",
@@ -67,35 +84,37 @@
       "opponent_team": "South Warren",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 18,
+      "opponent_rank": 25,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren"
+      "event": "vs. South Warren",
+      "mv_impact": -5.72
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35510416132",
       "opponent_name": "Cassidy Huey",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 3,
       "opponent_weight": 114,
-      "opponent_rank": 20,
+      "opponent_rank": 27,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. John Hardin",
+      "mv_impact": -7.43
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35436776132",
       "opponent_name": "Isabella Vidoni",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 14,
       "opponent_weight": 107,
       "opponent_rank": 52,
       "weight_class": "114",
@@ -103,27 +122,29 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Harrison County"
+      "event": "vs. Harrison County",
+      "mv_impact": 0.7
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35563228132",
       "opponent_name": "Wynter Workman",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 7,
-      "opponent_weight": 126,
-      "opponent_rank": 69,
+      "opponent_team_rank": 11,
+      "opponent_weight": 120,
+      "opponent_rank": 78,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Meade County"
+      "event": "vs. Meade County",
+      "mv_impact": 5.0
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.125
+    "top33_bonus_ev_shrunk": 1.361111111111111
   }
 }

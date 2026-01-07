@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "2-1",
-    "vs_top10": "1-1",
-    "vs_top25": "1-1"
+    "overall": "3-0",
+    "vs_ranked": "3-0",
+    "vs_top10": "0-0",
+    "vs_top25": "2-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -27,22 +27,17 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 1,
-    "top10_wins": 1,
-    "top10_losses": 1,
+    "ranked_wins": 3,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35343288132",
-      "opponent_rank": 10,
+      "opponent_rank": 15,
       "opponent_name": "Kaizley Dunn",
       "method": "MD 10-0"
     },
-    "worst_loss": {
-      "opponent_id": "35566195132",
-      "opponent_rank": 8,
-      "opponent_name": "emma cheatham",
-      "method": "Fall 4:41"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -50,9 +45,9 @@
       "opponent_id": "35343288132",
       "opponent_name": "Kaizley Dunn",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 10,
-      "opponent_weight": 165,
-      "opponent_rank": 10,
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 15,
       "weight_class": "152",
       "result": "W",
       "method": "MD",
@@ -61,28 +56,13 @@
       "event": "`Win and Pin` Individual Girls Wrestling Tournament"
     },
     {
-      "date": "2025-12-13",
-      "opponent_id": "35566195132",
-      "opponent_name": "emma cheatham",
-      "opponent_team": "Union County",
-      "opponent_team_rank": 8,
-      "opponent_weight": 165,
-      "opponent_rank": 8,
-      "weight_class": "152",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:41",
-      "event": "`Win and Pin` Individual Girls Wrestling Tournament"
-    },
-    {
       "date": "2025-11-26",
-      "opponent_id": "35345846132",
-      "opponent_name": "Anna Urbanowski",
-      "opponent_team": "Caldwell County",
-      "opponent_team_rank": 9,
-      "opponent_weight": 152,
-      "opponent_rank": 30,
+      "opponent_id": "35424933132",
+      "opponent_name": "Cing Kiim",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 35,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
@@ -92,12 +72,12 @@
     },
     {
       "date": "2025-11-26",
-      "opponent_id": "35424933132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
+      "opponent_id": "35345846132",
+      "opponent_name": "Anna Urbanowski",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 145,
+      "opponent_rank": 24,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
@@ -108,7 +88,7 @@
   ],
   "bonus": {
     "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 2.0
+    "top33_bonus_ev_raw": 1.0,
+    "top33_bonus_ev_shrunk": 1.4814814814814816
   }
 }

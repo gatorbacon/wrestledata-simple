@@ -6,45 +6,93 @@
   "team_rank": null,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 7,
+  "current_rank": 8,
   "record": {
-    "overall": "9-1",
-    "vs_ranked": "9-1",
-    "vs_top10": "0-1",
-    "vs_top25": "2-1"
+    "overall": "11-2",
+    "vs_ranked": "11-2",
+    "vs_top10": "0-2",
+    "vs_top25": "3-2"
   },
   "metrics": {
-    "pf7": 11.0,
-    "pa7": 6.0,
-    "pd7": 5.0,
-    "si_plus": 102.7,
-    "df_plus": 107.0,
-    "apr_plus": 110.5,
-    "pin_rate": 0.889,
-    "bonus_rate": 0.889,
+    "pf7": 13.0,
+    "pa7": 3.0,
+    "pd7": 10.0,
+    "si_plus": 96.2,
+    "df_plus": 121.4,
+    "apr_plus": 108.6,
+    "pin_rate": 0.818,
+    "bonus_rate": 0.909,
     "majors": 0,
-    "techs": 0,
-    "pins": 8
+    "techs": 1,
+    "pins": 9
   },
   "opponent_breakdown": {
-    "ranked_wins": 9,
-    "ranked_losses": 1,
+    "ranked_wins": 11,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35436574132",
-      "opponent_rank": 14,
-      "opponent_name": "Brannan Ransom",
-      "method": "Fall 3:43"
+      "opponent_id": "35850788132",
+      "opponent_rank": 11,
+      "opponent_name": "Lexie Dingess",
+      "method": "TF 15-0 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35333372132",
-      "opponent_rank": 1,
-      "opponent_name": "Makyla Folwer",
-      "method": "Fall 0:00"
+      "opponent_id": "35333362132",
+      "opponent_rank": 4,
+      "opponent_name": "Amelia Marcum",
+      "method": "Fall 1:09"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35850788132",
+      "opponent_name": "Lexie Dingess",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 28,
+      "opponent_weight": 132,
+      "opponent_rank": 11,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": 7.26
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333571132",
+      "opponent_name": "Pahola Mexidor Napoles",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 47,
+      "opponent_weight": 132,
+      "opponent_rank": 56,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": 7.14
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333362132",
+      "opponent_name": "Amelia Marcum",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 4,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": -2.6
+    },
     {
       "date": "2025-12-19",
       "opponent_id": "35672635132",
@@ -52,30 +100,30 @@
       "opponent_team": "Bullitt East",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 27,
+      "opponent_rank": 28,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:07",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 6.42
+      "mv_impact": 6.37
     },
     {
       "date": "2025-12-19",
       "opponent_id": "35436574132",
       "opponent_name": "Brannan Ransom",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 14,
       "opponent_weight": 132,
-      "opponent_rank": 14,
+      "opponent_rank": 16,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:43",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 8.03
+      "mv_impact": 8.05
     },
     {
       "date": "2025-12-19",
@@ -84,14 +132,14 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 21,
+      "opponent_rank": 24,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:34",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 7.5
+      "mv_impact": 7.29
     },
     {
       "date": "2025-12-19",
@@ -100,7 +148,7 @@
       "opponent_team": "Paul Laurence Dunbar",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 65,
+      "opponent_rank": 74,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -116,23 +164,23 @@
       "opponent_team": "Woodford County",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 29,
+      "opponent_rank": 33,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:48",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 6.33
+      "mv_impact": 6.06
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35385141132",
       "opponent_name": "Gaby Gonzalez",
       "opponent_team": "Male",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 44,
       "opponent_weight": 132,
-      "opponent_rank": 61,
+      "opponent_rank": 71,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -146,16 +194,16 @@
       "opponent_id": "35333372132",
       "opponent_name": "Makyla Folwer",
       "opponent_team": "Boyle County",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 13,
       "opponent_weight": 132,
-      "opponent_rank": 1,
+      "opponent_rank": 2,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Bearcat Brawl (Girls)",
-      "mv_impact": -1.62
+      "mv_impact": -1.65
     },
     {
       "date": "2025-12-06",
@@ -164,14 +212,14 @@
       "opponent_team": "Holmes",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 33,
+      "opponent_rank": 38,
       "weight_class": "132",
       "result": "W",
       "method": "DEC",
       "score": "11-6",
       "duration": "7:00",
       "event": "Bearcat Brawl (Girls)",
-      "mv_impact": 3.57
+      "mv_impact": 3.42
     },
     {
       "date": "2025-12-06",
@@ -180,14 +228,14 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 37,
+      "opponent_rank": 42,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
       "event": "Bearcat Brawl (Girls)",
-      "mv_impact": 5.79
+      "mv_impact": 5.61
     },
     {
       "date": "2025-12-06",
@@ -196,7 +244,7 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 60,
+      "opponent_rank": 70,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -208,7 +256,7 @@
   ],
   "bonus": {
     "top33_wins": 5,
-    "top33_bonus_ev_raw": 1.6,
-    "top33_bonus_ev_shrunk": 1.8051282051282054
+    "top33_bonus_ev_raw": 1.9,
+    "top33_bonus_ev_shrunk": 1.7999999999999998
   }
 }

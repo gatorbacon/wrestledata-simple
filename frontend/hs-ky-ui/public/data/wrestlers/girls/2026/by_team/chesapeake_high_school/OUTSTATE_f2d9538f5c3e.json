@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "1-0",
-    "vs_top25": "1-0"
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "1-1",
+    "vs_top25": "2-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,28 +24,48 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 1,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35511208132",
       "opponent_rank": 7,
       "opponent_name": "Khloe Alfred",
       "method": "Fall 0:13"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35436558132",
+      "opponent_rank": 1,
+      "opponent_name": "Layla Davis",
+      "method": "Fall 0:37"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35436558132",
+      "opponent_name": "Layla Davis",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 14,
+      "opponent_weight": 235,
+      "opponent_rank": 1,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "Lady Cardinal Invitational"
+    },
     {
       "date": "2025-12-29",
       "opponent_id": "35511208132",
       "opponent_name": "Khloe Alfred",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 3,
       "opponent_weight": 235,
       "opponent_rank": 7,
       "weight_class": "235",
@@ -53,6 +73,21 @@
       "method": "FALL",
       "score": null,
       "duration": "0:13",
+      "event": "Lady Cardinal Invitational"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35457269132",
+      "opponent_name": "Makenna Sulfridge",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 7,
+      "opponent_weight": 185,
+      "opponent_rank": 11,
+      "weight_class": "235",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
       "event": "Lady Cardinal Invitational"
     }
   ]

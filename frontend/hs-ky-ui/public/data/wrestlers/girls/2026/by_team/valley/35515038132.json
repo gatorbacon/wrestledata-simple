@@ -4,94 +4,126 @@
   "team": "Valley",
   "team_slug": "valley",
   "team_rank": null,
-  "weight_class": 152,
+  "weight_class": 145,
   "year": 2026,
-  "current_rank": 14,
+  "current_rank": 38,
   "record": {
-    "overall": "6-3",
-    "vs_ranked": "6-3",
+    "overall": "7-4",
+    "vs_ranked": "7-4",
     "vs_top10": "0-2",
-    "vs_top25": "0-3"
+    "vs_top25": "1-4"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 106.4,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 106.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 6
+    "pins": 7
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 3,
+    "ranked_wins": 7,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35674506132",
-      "opponent_rank": 27,
-      "opponent_name": "Karma Grant",
-      "method": "Fall 0:43"
+      "opponent_id": "35333576132",
+      "opponent_rank": 20,
+      "opponent_name": "Alice La Rosa",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35369155132",
-      "opponent_rank": 11,
-      "opponent_name": "Alyssa Goodin",
-      "method": "Fall 1:55"
+      "opponent_id": "35369154132",
+      "opponent_rank": 22,
+      "opponent_name": "Grace Helton",
+      "method": "Fall 0:30"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333690132",
+      "opponent_name": "Sonia Tarley",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 4,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:36",
+      "event": "Fern Creek Gladiator Ladies",
+      "mv_impact": -2.67
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35468199132",
       "opponent_name": "Scout Brockman",
       "opponent_team": "Green County",
       "opponent_team_rank": null,
-      "opponent_weight": 145,
-      "opponent_rank": 6,
+      "opponent_weight": 152,
+      "opponent_rank": 4,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:16",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": -3.11
+      "mv_impact": -3.16
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333577132",
+      "opponent_name": "Karmen Mojica",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 47,
+      "opponent_weight": 145,
+      "opponent_rank": 43,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:25",
+      "event": "Fern Creek Gladiator Ladies",
+      "mv_impact": 1.22
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35369154132",
       "opponent_name": "Grace Helton",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 152,
-      "opponent_rank": 4,
+      "opponent_rank": 22,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
       "event": "Seneca Girls Invitational",
-      "mv_impact": -3.98
+      "mv_impact": -6.97
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35369155132",
       "opponent_name": "Alyssa Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 152,
-      "opponent_rank": 11,
+      "opponent_rank": 16,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:55",
       "event": "Seneca Girls Invitational",
-      "mv_impact": -5.21
+      "mv_impact": -5.9
     },
     {
       "date": "2025-12-20",
@@ -100,14 +132,14 @@
       "opponent_team": "Eastern",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:38",
       "event": "Seneca Girls Invitational",
-      "mv_impact": 2.42
+      "mv_impact": 3.88
     },
     {
       "date": "2025-12-13",
@@ -116,14 +148,14 @@
       "opponent_team": "Marion County",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 35,
+      "opponent_rank": 36,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:47",
       "event": "Girls Boro Brawl",
-      "mv_impact": 2.11
+      "mv_impact": 3.95
     },
     {
       "date": "2025-12-13",
@@ -132,14 +164,14 @@
       "opponent_team": "Owensboro",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 50,
+      "opponent_rank": 48,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:12",
       "event": "Girls Boro Brawl",
-      "mv_impact": 0.0
+      "mv_impact": 5.16
     },
     {
       "date": "2025-12-13",
@@ -148,14 +180,14 @@
       "opponent_team": "Owensboro",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 27,
+      "opponent_rank": 31,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:43",
       "event": "Girls Boro Brawl",
-      "mv_impact": 4.05
+      "mv_impact": 4.11
     },
     {
       "date": "2025-12-05",
@@ -164,30 +196,30 @@
       "opponent_team": "Iroquois",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 48,
+      "opponent_rank": 45,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Queen of the Hive",
-      "mv_impact": 0.31
+      "mv_impact": 4.45
     },
     {
       "date": "2025-12-05",
       "opponent_id": "35333576132",
       "opponent_name": "Alice La Rosa",
       "opponent_team": "Moore",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 47,
       "opponent_weight": 152,
-      "opponent_rank": 34,
+      "opponent_rank": 20,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Queen of the Hive",
-      "mv_impact": 2.46
+      "mv_impact": 5.04
     }
   ]
 }

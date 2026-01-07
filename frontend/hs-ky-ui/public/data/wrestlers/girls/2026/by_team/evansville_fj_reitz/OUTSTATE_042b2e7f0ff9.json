@@ -1,15 +1,15 @@
 {
   "wrestler_id": "OUTSTATE_042b2e7f0ff9",
   "name": "Amelia Elfreich",
-  "team": "Evansville F.J. Reitz",
+  "team": "Evansville F.j. Reitz",
   "team_slug": "evansville_fj_reitz",
   "team_rank": null,
-  "weight_class": 132,
+  "weight_class": 138,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,18 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35507395132",
-      "opponent_rank": 34,
+      "opponent_rank": 39,
       "opponent_name": "Chloe Lindsey",
       "method": "Fall 1:19"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35347737132",
+      "opponent_rank": 36,
+      "opponent_name": "Abigail Patterson",
+      "method": "Fall 3:12"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35347737132",
+      "opponent_name": "Abigail Patterson",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 33,
+      "opponent_weight": 138,
+      "opponent_rank": 36,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:12",
+      "event": "Fern Creek Gladiator Ladies"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35507395132",
@@ -47,7 +67,7 @@
       "opponent_team": "Marion County",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 34,
+      "opponent_rank": 39,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",

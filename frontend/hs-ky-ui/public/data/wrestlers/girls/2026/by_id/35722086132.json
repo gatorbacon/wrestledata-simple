@@ -3,37 +3,37 @@
   "name": "Bralyn Maynard",
   "team": "Prestonsburg",
   "team_slug": "prestonsburg",
-  "team_rank": 1,
-  "weight_class": 165,
+  "team_rank": 49,
+  "weight_class": 152,
   "year": 2026,
   "current_rank": 1,
   "record": {
-    "overall": "3-0",
-    "vs_ranked": "3-0",
-    "vs_top10": "1-0",
+    "overall": "6-0",
+    "vs_ranked": "5-0",
+    "vs_top10": "2-0",
     "vs_top25": "2-0"
   },
   "metrics": {
     "pf7": 17.0,
     "pa7": 5.8,
     "pd7": 11.2,
-    "si_plus": 111.1,
-    "df_plus": 107.2,
-    "apr_plus": 100.4,
-    "pin_rate": 0.333,
+    "si_plus": 113.2,
+    "df_plus": 105.1,
+    "apr_plus": 108.1,
+    "pin_rate": 0.5,
     "bonus_rate": 0.667,
     "majors": 0,
     "techs": 1,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 5,
     "ranked_losses": 0,
-    "top10_wins": 1,
+    "top10_wins": 2,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35369121132",
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "opponent_name": "McKenzie Webb",
       "method": "Dec 9-6"
     },
@@ -41,20 +41,64 @@
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35333442132",
+      "opponent_name": "Kennedi Burger",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 152,
+      "opponent_rank": 32,
+      "weight_class": "152",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "Girls Brawl in the Hall 2026"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_b78e35ed8eef",
+      "opponent_name": "Katie Moylan",
+      "opponent_team": "Jefferson Co. High School Girls",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": null,
+      "weight_class": "152",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Girls Brawl in the Hall 2026"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "36566969132",
+      "opponent_name": "Summer Gibson",
+      "opponent_team": "Pikeville",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 49,
+      "weight_class": "152",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35369121132",
       "opponent_name": "McKenzie Webb",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 165,
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 7.23
+      "event": "2025 Anchor Down Showdown (Ladies)"
     },
     {
       "date": "2025-12-06",
@@ -63,35 +107,33 @@
       "opponent_team": "Danville",
       "opponent_team_rank": 36,
       "opponent_weight": 165,
-      "opponent_rank": 45,
+      "opponent_rank": 47,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "2:30",
-      "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 3.97
+      "event": "2025 Anchor Down Showdown (Ladies)"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35457363132",
       "opponent_name": "Trinity Hopkins",
       "opponent_team": "Whitley County",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 7,
       "opponent_weight": 165,
-      "opponent_rank": 11,
+      "opponent_rank": 7,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:46",
-      "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 8.66
+      "event": "2025 Anchor Down Showdown (Ladies)"
     }
   ],
   "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.7
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 2.0
   }
 }

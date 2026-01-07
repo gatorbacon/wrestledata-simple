@@ -227,13 +227,56 @@ def calculate_region_places(
     return region_places
 
 
+def load_previous_drop_rankings(
+    archive_base: Path,
+    gender: str,
+    season: int,
+    weight: int,
+    previous_drop_id: str
+) -> Dict[str, int]:
+    """
+    Load previous drop's rankings and return mapping of wrestler_id -> previous_rank.
+    
+    Args:
+        archive_base: Base directory for archive structure
+        gender: 'boys' or 'girls'
+        season: Season year
+        weight: Weight class
+        previous_drop_id: Previous drop identifier
+    
+    Returns:
+        Dictionary mapping wrestler_id -> previous_rank (or empty dict if not found)
+    """
+    previous_file = archive_base / gender / str(season) / previous_drop_id / f"{weight}.json"
+    
+    if not previous_file.exists():
+        return {}
+    
+    try:
+        with previous_file.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        
+        previous_rankings = {}
+        for wrestler in data.get("wrestlers", []):
+            wid = wrestler.get("wrestler_id")
+            rank = wrestler.get("rank")
+            if wid and rank:
+                previous_rankings[wid] = rank
+        
+        return previous_rankings
+    except Exception as e:
+        print(f"Warning: Could not load previous drop rankings for {weight}: {e}")
+        return {}
+
+
 def enrich_rankings_with_region_data(
     rankings: List[Dict],
     region_mapping: Dict[str, str],
     gender: str,
     season: int,
     top_n: int,
-    placement_notes: Optional[Dict[str, str]] = None
+    placement_notes: Optional[Dict[str, str]] = None,
+    previous_rankings: Optional[Dict[str, int]] = None
 ) -> Tuple[List[Dict], Dict[str, str], Dict[str, str]]:
     """
     Enrich rankings with region data, region places, and is_highest_ranked flags.
@@ -350,6 +393,26 @@ def enrich_rankings_with_region_data(
             if placement_note:
                 enriched_entry["placement_note"] = placement_note
         
+        # Add previous rank and movement if previous rankings available
+        if previous_rankings:
+            previous_rank = previous_rankings.get(wid)
+            current_rank = enriched_entry.get("rank")
+            
+            if previous_rank is not None and current_rank is not None:
+                # Wrestler was in previous rankings - calculate movement
+                enriched_entry["previous_rank"] = previous_rank
+                movement = previous_rank - current_rank  # Positive = moved up, Negative = moved down
+                enriched_entry["movement"] = movement
+                enriched_entry["is_new"] = False
+            else:
+                # Wrestler not in previous rankings (new entry or moved from different weight)
+                enriched_entry["previous_rank"] = None
+                enriched_entry["movement"] = None
+                enriched_entry["is_new"] = True
+        else:
+            # No previous rankings available (baseline drop)
+            enriched_entry["is_new"] = False
+        
         # DO NOT include: mv, tpar, mat_value, or any TPAR-related fields
         # These are removed from the archive output
         
@@ -405,6 +468,32 @@ def create_baseline_archive(
     else:
         print("No placement notes found (this is okay)")
     
+    # Determine if this is a baseline drop and find previous drop
+    index_dir = archive_base / gender / str(season)
+    index_file = index_dir / "index.json"
+    is_baseline = True
+    previous_drop_id = None
+    
+    if index_file.exists():
+        try:
+            with index_file.open("r", encoding="utf-8") as f:
+                index_data = json.load(f)
+            
+            # Check if this drop already exists (updating existing)
+            existing_drops = [d for d in index_data.get("drops", []) if d.get("id") != drop_id]
+            
+            if existing_drops:
+                # Not baseline - find most recent previous drop
+                is_baseline = False
+                # Drops are sorted by published_at (newest first)
+                previous_drop_id = existing_drops[0].get("id")
+                print(f"Previous drop found: {previous_drop_id}")
+            else:
+                print("This is the first drop (baseline)")
+        except Exception as e:
+            print(f"Warning: Could not read index.json: {e}")
+            print("Treating as baseline drop")
+    
     # Setup source directory
     source_dir = Path(f"mt/rankings_data/hs_ky_{gender}") / str(season)
     if not source_dir.exists():
@@ -440,9 +529,19 @@ def create_baseline_archive(
                 print(f"Warning: No rankings found in {source_file}")
                 continue
             
-            # Enrich with region data
+            # Load previous drop rankings if not baseline
+            previous_rankings = {}
+            if not is_baseline and previous_drop_id:
+                previous_rankings = load_previous_drop_rankings(
+                    archive_base, gender, season, weight, previous_drop_id
+                )
+                if previous_rankings:
+                    print(f"  Loaded previous rankings for {len(previous_rankings)} wrestlers")
+            
+            # Enrich with region data (and movement if previous rankings available)
             enriched_rankings, region_places, team_best_wrestler = enrich_rankings_with_region_data(
-                rankings, region_mapping, gender, season, top_n, placement_notes
+                rankings, region_mapping, gender, season, top_n, placement_notes,
+                previous_rankings if previous_rankings else None
             )
             
             # Create output structure
@@ -485,7 +584,7 @@ def create_baseline_archive(
         "season": season,
         "gender": gender,
         "published_at": f"{drop_id}T00:00:00Z",
-        "baseline": True
+        "baseline": is_baseline
     }
     
     meta_file = archive_dir / "meta.json"

@@ -3,41 +3,100 @@
   "name": "Bree Kimberlin",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 14,
+  "team_rank": 15,
   "weight_class": 100,
   "year": 2026,
-  "current_rank": 47,
+  "current_rank": 26,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pf7": 25.0,
+    "pa7": 7.24,
+    "pd7": 17.76,
+    "si_plus": 123.3,
+    "df_plus": 103.2,
+    "apr_plus": 97.8,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 0
+    "techs": 1,
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35333461132",
+      "opponent_rank": 27,
+      "opponent_name": "Mackenna Hogan",
+      "method": "TF 20-3 2:54"
+    },
+    "worst_loss": {
+      "opponent_id": "35333448132",
+      "opponent_rank": 2,
+      "opponent_name": "Madison Leonard",
+      "method": "Fall 0:22"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333448132",
+      "opponent_name": "Madison Leonard",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 33,
+      "opponent_weight": 100,
+      "opponent_rank": 2,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "Richey Rumble",
+      "mv_impact": -2.32
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35348098132",
+      "opponent_name": "Samantha Kraft",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 33,
+      "opponent_weight": 100,
+      "opponent_rank": 37,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:21",
+      "event": "Richey Rumble",
+      "mv_impact": 2.79
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333461132",
+      "opponent_name": "Mackenna Hogan",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 33,
+      "opponent_weight": 100,
+      "opponent_rank": 27,
+      "weight_class": "100",
+      "result": "W",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "2:54",
+      "event": "Richey Rumble",
+      "mv_impact": 1.55
+    }
+  ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.6875
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 1.5,
+    "top33_bonus_ev_shrunk": 1.5370370370370372
   }
 }

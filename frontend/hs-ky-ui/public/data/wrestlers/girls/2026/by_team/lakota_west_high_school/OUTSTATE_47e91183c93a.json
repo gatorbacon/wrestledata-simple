@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "OUTSTATE_47e91183c93a",
+  "name": "Julie Shultz",
+  "team": "Lakota West High School",
+  "team_slug": "lakota_west_high_school",
+  "team_rank": null,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35448714132",
+      "opponent_rank": 16,
+      "opponent_name": "Brooklynn Robinson",
+      "method": "Fall 3:02"
+    },
+    "worst_loss": {
+      "opponent_id": "35333321132",
+      "opponent_rank": 2,
+      "opponent_name": "Talynn Clark",
+      "method": "Fall 3:13"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35448714132",
+      "opponent_name": "Brooklynn Robinson",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 36,
+      "opponent_weight": 126,
+      "opponent_rank": 16,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:02",
+      "event": "Ladies Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333321132",
+      "opponent_name": "Talynn Clark",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 2,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:13",
+      "event": "Ladies Warhawk Classic"
+    }
+  ]
+}

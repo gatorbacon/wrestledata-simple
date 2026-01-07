@@ -3,58 +3,111 @@
   "name": "Zoe Helms",
   "team": "Ashland Blazer",
   "team_slug": "ashland_blazer",
-  "team_rank": 24,
+  "team_rank": 23,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 32,
+  "current_rank": 26,
   "record": {
-    "overall": "3-0",
-    "vs_ranked": "3-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "5-1",
+    "vs_ranked": "5-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 114.6,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 111.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35850790132",
-      "opponent_rank": 49,
+      "opponent_rank": 27,
       "opponent_name": "Hailey Diamond",
       "method": "Fall 1:06"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35333414132",
+      "opponent_rank": 8,
+      "opponent_name": "Katie Smith",
+      "method": "Fall 0:17"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35635824132",
+      "opponent_name": "Violet Brown",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 59,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
+      "event": "Girls Hatfield McCoy 32 2025",
+      "mv_impact": 5.08
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35850790132",
+      "opponent_name": "Hailey Diamond",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 28,
+      "opponent_weight": 126,
+      "opponent_rank": 27,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:20",
+      "event": "Girls Hatfield McCoy 32 2025",
+      "mv_impact": 7.19
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333414132",
+      "opponent_name": "Katie Smith",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 48,
+      "opponent_weight": 126,
+      "opponent_rank": 8,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:17",
+      "event": "Girls Hatfield McCoy 32 2025",
+      "mv_impact": -1.49
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35333434132",
       "opponent_name": "Hayden Meeks",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 24,
-      "opponent_weight": 126,
-      "opponent_rank": 67,
+      "opponent_team_rank": 23,
+      "opponent_weight": 120,
+      "opponent_rank": 77,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": 4.9
+      "mv_impact": 5.22
     },
     {
       "date": "2025-12-13",
@@ -63,30 +116,30 @@
       "opponent_team": "Greenup County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 65,
+      "opponent_rank": 59,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:32",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": 5.25
+      "mv_impact": 5.08
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35850790132",
       "opponent_name": "Hailey Diamond",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 28,
       "opponent_weight": 126,
-      "opponent_rank": 49,
+      "opponent_rank": 27,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:06",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": 6.45
+      "mv_impact": 7.19
     }
   ]
 }

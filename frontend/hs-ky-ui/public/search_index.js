@@ -64313,6 +64313,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Aaliyah Hackney",
+    "secondary": "Belfry · 100",
+    "url": "/wrestler.html?id=35814907132&gender=girls",
+    "searchTokens": [
+      "100",
+      "aaliyah",
+      "belfry",
+      "hackney"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Mia Barnett",
     "secondary": "Bell County · 100",
     "url": "/wrestler.html?id=35369128132&gender=girls",
@@ -64365,6 +64377,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Teagan Hundley",
+    "secondary": "Boyle County · 100",
+    "url": "/wrestler.html?id=35333369132&gender=girls",
+    "searchTokens": [
+      "100",
+      "boyle",
+      "county",
+      "hundley",
+      "teagan"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Savannah Martin",
     "secondary": "Bullitt East · 100",
     "url": "/wrestler.html?id=35672624132&gender=girls",
@@ -64374,6 +64399,19 @@ window.SEARCH_INDEX = [
       "east",
       "martin",
       "savannah"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Madison Leonard",
+    "secondary": "Central Hardin · 100",
+    "url": "/wrestler.html?id=35333448132&gender=girls",
+    "searchTokens": [
+      "100",
+      "central",
+      "hardin",
+      "leonard",
+      "madison"
     ]
   },
   {
@@ -64391,15 +64429,29 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Madison Leonard",
+    "name": "Achilly Bardales Lopez",
     "secondary": "Central Hardin · 100",
-    "url": "/wrestler.html?id=35333448132&gender=girls",
+    "url": "/wrestler.html?id=36992467132&gender=girls",
+    "searchTokens": [
+      "100",
+      "achilly",
+      "bardales",
+      "central",
+      "hardin",
+      "lopez"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Mackenna Hogan",
+    "secondary": "Central Hardin · 100",
+    "url": "/wrestler.html?id=35333461132&gender=girls",
     "searchTokens": [
       "100",
       "central",
       "hardin",
-      "leonard",
-      "madison"
+      "hogan",
+      "mackenna"
     ]
   },
   {
@@ -64452,6 +64504,19 @@ window.SEARCH_INDEX = [
       "county",
       "grant",
       "olivia"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Trinity Coburn",
+    "secondary": "Great Crossing · 100",
+    "url": "/wrestler.html?id=35690826132&gender=girls",
+    "searchTokens": [
+      "100",
+      "coburn",
+      "crossing",
+      "great",
+      "trinity"
     ]
   },
   {
@@ -64670,6 +64735,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Rista Rai",
+    "secondary": "Moore · 100",
+    "url": "/wrestler.html?id=35333582132&gender=girls",
+    "searchTokens": [
+      "100",
+      "moore",
+      "rai",
+      "rista"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Madyson Votaw",
     "secondary": "Nelson County · 100",
     "url": "/wrestler.html?id=35565836132&gender=girls",
@@ -64840,6 +64917,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Lexi Proudfoot",
+    "secondary": "South Oldham · 100",
+    "url": "/wrestler.html?id=35481347132&gender=girls",
+    "searchTokens": [
+      "100",
+      "lexi",
+      "oldham",
+      "proudfoot",
+      "south"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Cristina Miralda",
     "secondary": "South Warren · 100",
     "url": "/wrestler.html?id=35635778132&gender=girls",
@@ -64984,6 +65074,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Paisley McIntire",
+    "secondary": "Evansville F.j. Reitz · 100",
+    "url": "/wrestler.html?id=OUTSTATE_c19574c087b4&gender=girls",
+    "searchTokens": [
+      "100",
+      "evansville",
+      "f.j.",
+      "mcintire",
+      "paisley",
+      "reitz"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Rihanna Driskell",
     "secondary": "Heritage Hills · 100",
     "url": "/wrestler.html?id=OUTSTATE_f86602a7ddff&gender=girls",
@@ -65057,6 +65161,21 @@ window.SEARCH_INDEX = [
       "mt.",
       "p",
       "vernon"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "elissa salcedo",
+    "secondary": "Lakota West High School · 100",
+    "url": "/wrestler.html?id=OUTSTATE_b5b494fa1c18&gender=girls",
+    "searchTokens": [
+      "100",
+      "elissa",
+      "high",
+      "lakota",
+      "salcedo",
+      "school",
+      "west"
     ]
   },
   {
@@ -65158,18 +65277,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Aaliyah Hackney",
-    "secondary": "Belfry · 107",
-    "url": "/wrestler.html?id=35814907132&gender=girls",
-    "searchTokens": [
-      "107",
-      "aaliyah",
-      "belfry",
-      "hackney"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Keira Good",
     "secondary": "Bell County · 107",
     "url": "/wrestler.html?id=35369123132&gender=girls",
@@ -65191,18 +65298,6 @@ window.SEARCH_INDEX = [
       "bethlehem",
       "chesser",
       "sydney"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Adalyn Perry",
-    "secondary": "Bethlehem · 107",
-    "url": "/wrestler.html?id=36532312132&gender=girls",
-    "searchTokens": [
-      "107",
-      "adalyn",
-      "bethlehem",
-      "perry"
     ]
   },
   {
@@ -65242,19 +65337,6 @@ window.SEARCH_INDEX = [
       "cappelli",
       "county",
       "hayley"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Teagan Hundley",
-    "secondary": "Boyle County · 107",
-    "url": "/wrestler.html?id=35333369132&gender=girls",
-    "searchTokens": [
-      "107",
-      "boyle",
-      "county",
-      "hundley",
-      "teagan"
     ]
   },
   {
@@ -65335,32 +65417,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kaylin Collins",
-    "secondary": "Central Hardin · 107",
-    "url": "/wrestler.html?id=35333462132&gender=girls",
-    "searchTokens": [
-      "107",
-      "central",
-      "collins",
-      "hardin",
-      "kaylin"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Mackenna Hogan",
-    "secondary": "Central Hardin · 107",
-    "url": "/wrestler.html?id=35333461132&gender=girls",
-    "searchTokens": [
-      "107",
-      "central",
-      "hardin",
-      "hogan",
-      "mackenna"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Hera Alojado",
     "secondary": "Central Hardin · 107",
     "url": "/wrestler.html?id=35333449132&gender=girls",
@@ -65370,6 +65426,19 @@ window.SEARCH_INDEX = [
       "central",
       "hardin",
       "hera"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kaylin Collins",
+    "secondary": "Central Hardin · 107",
+    "url": "/wrestler.html?id=35333462132&gender=girls",
+    "searchTokens": [
+      "107",
+      "central",
+      "collins",
+      "hardin",
+      "kaylin"
     ]
   },
   {
@@ -65409,6 +65478,18 @@ window.SEARCH_INDEX = [
       "carter",
       "east",
       "holcomb"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Desiree Devore",
+    "secondary": "Fairdale · 107",
+    "url": "/wrestler.html?id=35334384132&gender=girls",
+    "searchTokens": [
+      "107",
+      "desiree",
+      "devore",
+      "fairdale"
     ]
   },
   {
@@ -65473,6 +65554,18 @@ window.SEARCH_INDEX = [
       "douglass",
       "frederick",
       "jordyn"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Lizeth Hernandez-Ponce",
+    "secondary": "Greenwood · 107",
+    "url": "/wrestler.html?id=35424934132&gender=girls",
+    "searchTokens": [
+      "107",
+      "greenwood",
+      "hernandez-ponce",
+      "lizeth"
     ]
   },
   {
@@ -65550,6 +65643,19 @@ window.SEARCH_INDEX = [
       "holmes",
       "neriah",
       "trice"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Jaquelin Ruano Salazar",
+    "secondary": "Iroquois · 107",
+    "url": "/wrestler.html?id=35333692132&gender=girls",
+    "searchTokens": [
+      "107",
+      "iroquois",
+      "jaquelin",
+      "ruano",
+      "salazar"
     ]
   },
   {
@@ -65644,6 +65750,32 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Autumn Toller",
+    "secondary": "Mason County · 107",
+    "url": "/wrestler.html?id=35739914132&gender=girls",
+    "searchTokens": [
+      "107",
+      "autumn",
+      "county",
+      "mason",
+      "toller"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Jillian Conn",
+    "secondary": "McCracken County · 107",
+    "url": "/wrestler.html?id=35465668132&gender=girls",
+    "searchTokens": [
+      "107",
+      "conn",
+      "county",
+      "jillian",
+      "mccracken"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "mazy coffey",
     "secondary": "Mccreary Central · 107",
     "url": "/wrestler.html?id=35600313132&gender=girls",
@@ -65690,18 +65822,6 @@ window.SEARCH_INDEX = [
       "juanita",
       "lemon",
       "moore"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Rista Rai",
-    "secondary": "Moore · 107",
-    "url": "/wrestler.html?id=35333582132&gender=girls",
-    "searchTokens": [
-      "107",
-      "moore",
-      "rai",
-      "rista"
     ]
   },
   {
@@ -65766,6 +65886,19 @@ window.SEARCH_INDEX = [
       "north",
       "oldham",
       "wells"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Avah Fontana",
+    "secondary": "Oldham County · 107",
+    "url": "/wrestler.html?id=36550628132&gender=girls",
+    "searchTokens": [
+      "107",
+      "avah",
+      "county",
+      "fontana",
+      "oldham"
     ]
   },
   {
@@ -65886,6 +66019,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Samantha Oliver",
+    "secondary": "Scott County · 107",
+    "url": "/wrestler.html?id=35333383132&gender=girls",
+    "searchTokens": [
+      "107",
+      "county",
+      "oliver",
+      "samantha",
+      "scott"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "San`Tori Brown",
     "secondary": "Shawnee · 107",
     "url": "/wrestler.html?id=35756103132&gender=girls",
@@ -65911,19 +66057,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Lexi Proudfoot",
-    "secondary": "South Oldham · 107",
-    "url": "/wrestler.html?id=35481347132&gender=girls",
-    "searchTokens": [
-      "107",
-      "lexi",
-      "oldham",
-      "proudfoot",
-      "south"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Nadine Riggins",
     "secondary": "South Oldham · 107",
     "url": "/wrestler.html?id=35443111132&gender=girls",
@@ -65945,6 +66078,32 @@ window.SEARCH_INDEX = [
       "davis",
       "madison",
       "southwestern"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "symphony sharp",
+    "secondary": "Spencer County · 107",
+    "url": "/wrestler.html?id=35386164132&gender=girls",
+    "searchTokens": [
+      "107",
+      "county",
+      "sharp",
+      "spencer",
+      "symphony"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Hannah Matias",
+    "secondary": "Taylor County · 107",
+    "url": "/wrestler.html?id=35333630132&gender=girls",
+    "searchTokens": [
+      "107",
+      "county",
+      "hannah",
+      "matias",
+      "taylor"
     ]
   },
   {
@@ -65982,6 +66141,18 @@ window.SEARCH_INDEX = [
       "107",
       "mitchell",
       "natalie",
+      "valley"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Nayvia Moore",
+    "secondary": "Valley · 107",
+    "url": "/wrestler.html?id=35515461132&gender=girls",
+    "searchTokens": [
+      "107",
+      "moore",
+      "nayvia",
       "valley"
     ]
   },
@@ -66045,6 +66216,19 @@ window.SEARCH_INDEX = [
       "brothers",
       "county",
       "madyson",
+      "whitley"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kaylee Bunch",
+    "secondary": "Whitley County · 107",
+    "url": "/wrestler.html?id=35457212132&gender=girls",
+    "searchTokens": [
+      "107",
+      "bunch",
+      "county",
+      "kaylee",
       "whitley"
     ]
   },
@@ -66140,6 +66324,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Kendra Wormald",
+    "secondary": "North Posey · 107",
+    "url": "/wrestler.html?id=OUTSTATE_67471081f946&gender=girls",
+    "searchTokens": [
+      "107",
+      "kendra",
+      "north",
+      "posey",
+      "wormald"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Myah Recker",
     "secondary": "Pike Central · 107",
     "url": "/wrestler.html?id=OUTSTATE_8731480bfa6a&gender=girls",
@@ -66153,15 +66350,16 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kendra Wormald",
-    "secondary": "North Posey · 107",
-    "url": "/wrestler.html?id=OUTSTATE_67471081f946&gender=girls",
+    "name": "Lily Penner",
+    "secondary": "Evansville F.j. Reitz · 107",
+    "url": "/wrestler.html?id=OUTSTATE_42e8db2e04be&gender=girls",
     "searchTokens": [
       "107",
-      "kendra",
-      "north",
-      "posey",
-      "wormald"
+      "evansville",
+      "f.j.",
+      "lily",
+      "penner",
+      "reitz"
     ]
   },
   {
@@ -66259,27 +66457,14 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Ashton Conley",
-    "secondary": "Borden · 107",
-    "url": "/wrestler.html?id=OUTSTATE_c0176e1deffb&gender=girls",
+    "name": "Aneet Kaur",
+    "secondary": "Fishers · 107",
+    "url": "/wrestler.html?id=OUTSTATE_3f021e134a4d&gender=girls",
     "searchTokens": [
       "107",
-      "ashton",
-      "borden",
-      "conley"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Lia Tomlinson",
-    "secondary": "Columbus East · 107",
-    "url": "/wrestler.html?id=OUTSTATE_4ac14930b832&gender=girls",
-    "searchTokens": [
-      "107",
-      "columbus",
-      "east",
-      "lia",
-      "tomlinson"
+      "aneet",
+      "fishers",
+      "kaur"
     ]
   },
   {
@@ -66298,14 +66483,27 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Aneet Kaur",
-    "secondary": "Fishers · 107",
-    "url": "/wrestler.html?id=OUTSTATE_3f021e134a4d&gender=girls",
+    "name": "Lia Tomlinson",
+    "secondary": "Columbus East · 107",
+    "url": "/wrestler.html?id=OUTSTATE_4ac14930b832&gender=girls",
     "searchTokens": [
       "107",
-      "aneet",
-      "fishers",
-      "kaur"
+      "columbus",
+      "east",
+      "lia",
+      "tomlinson"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Ashton Conley",
+    "secondary": "Borden · 107",
+    "url": "/wrestler.html?id=OUTSTATE_c0176e1deffb&gender=girls",
+    "searchTokens": [
+      "107",
+      "ashton",
+      "borden",
+      "conley"
     ]
   },
   {
@@ -66550,6 +66748,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Selena White",
+    "secondary": "Ashland Blazer · 114",
+    "url": "/wrestler.html?id=37081901132&gender=girls",
+    "searchTokens": [
+      "114",
+      "ashland",
+      "blazer",
+      "selena",
+      "white"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Gray Osantowski",
     "secondary": "Atherton · 114",
     "url": "/wrestler.html?id=35622938132&gender=girls",
@@ -66574,14 +66785,27 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Ashlynn Cadwell",
-    "secondary": "Belfry · 114",
-    "url": "/wrestler.html?id=36507501132&gender=girls",
+    "name": "Michala Daniels",
+    "secondary": "Bell County · 114",
+    "url": "/wrestler.html?id=35369124132&gender=girls",
     "searchTokens": [
       "114",
-      "ashlynn",
-      "belfry",
-      "cadwell"
+      "bell",
+      "county",
+      "daniels",
+      "michala"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Adalyn Perry",
+    "secondary": "Bethlehem · 114",
+    "url": "/wrestler.html?id=36532312132&gender=girls",
+    "searchTokens": [
+      "114",
+      "adalyn",
+      "bethlehem",
+      "perry"
     ]
   },
   {
@@ -66634,6 +66858,19 @@ window.SEARCH_INDEX = [
       "mikeyla",
       "slone",
       "station"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Mlasi Tambwe",
+    "secondary": "Bryan Station · 114",
+    "url": "/wrestler.html?id=35640271132&gender=girls",
+    "searchTokens": [
+      "114",
+      "bryan",
+      "mlasi",
+      "station",
+      "tambwe"
     ]
   },
   {
@@ -66753,6 +66990,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Serenity Avalos",
+    "secondary": "Christian County · 114",
+    "url": "/wrestler.html?id=35640457132&gender=girls",
+    "searchTokens": [
+      "114",
+      "avalos",
+      "christian",
+      "county",
+      "serenity"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Faith Martin",
     "secondary": "Danville · 114",
     "url": "/wrestler.html?id=35448607132&gender=girls",
@@ -66761,6 +67011,19 @@ window.SEARCH_INDEX = [
       "danville",
       "faith",
       "martin"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Moo Hser",
+    "secondary": "Daviess County · 114",
+    "url": "/wrestler.html?id=35333379132&gender=girls",
+    "searchTokens": [
+      "114",
+      "county",
+      "daviess",
+      "hser",
+      "moo"
     ]
   },
   {
@@ -66799,18 +67062,6 @@ window.SEARCH_INDEX = [
       "hammer",
       "isabella",
       "manual"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Desiree Devore",
-    "secondary": "Fairdale · 114",
-    "url": "/wrestler.html?id=35334384132&gender=girls",
-    "searchTokens": [
-      "114",
-      "desiree",
-      "devore",
-      "fairdale"
     ]
   },
   {
@@ -66920,6 +67171,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Paityn Richardson",
+    "secondary": "Grant County · 114",
+    "url": "/wrestler.html?id=35407425132&gender=girls",
+    "searchTokens": [
+      "114",
+      "county",
+      "grant",
+      "paityn",
+      "richardson"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Kyleigh Harrison",
     "secondary": "Great Crossing · 114",
     "url": "/wrestler.html?id=35641250132&gender=girls",
@@ -66985,6 +67249,32 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Kennedy Sohne",
+    "secondary": "Henderson County · 114",
+    "url": "/wrestler.html?id=35343284132&gender=girls",
+    "searchTokens": [
+      "114",
+      "county",
+      "henderson",
+      "kennedy",
+      "sohne"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kaylee Wilson",
+    "secondary": "Henderson County · 114",
+    "url": "/wrestler.html?id=35343295132&gender=girls",
+    "searchTokens": [
+      "114",
+      "county",
+      "henderson",
+      "kaylee",
+      "wilson"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Rusi Hamisi",
     "secondary": "Henry Clay · 114",
     "url": "/wrestler.html?id=35398470132&gender=girls",
@@ -67031,19 +67321,6 @@ window.SEARCH_INDEX = [
       "hopkinsville",
       "isabell",
       "walker"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Jaquelin Ruano Salazar",
-    "secondary": "Iroquois · 114",
-    "url": "/wrestler.html?id=35333692132&gender=girls",
-    "searchTokens": [
-      "114",
-      "iroquois",
-      "jaquelin",
-      "ruano",
-      "salazar"
     ]
   },
   {
@@ -67123,19 +67400,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jillian Conn",
-    "secondary": "McCracken County · 114",
-    "url": "/wrestler.html?id=35465668132&gender=girls",
-    "searchTokens": [
-      "114",
-      "conn",
-      "county",
-      "jillian",
-      "mccracken"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Madison Coffey",
     "secondary": "Mccreary Central · 114",
     "url": "/wrestler.html?id=35630270132&gender=girls",
@@ -67188,6 +67452,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Summer Fuqua",
+    "secondary": "Meade County · 114",
+    "url": "/wrestler.html?id=36285756132&gender=girls",
+    "searchTokens": [
+      "114",
+      "county",
+      "fuqua",
+      "meade",
+      "summer"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Trinity Drew",
     "secondary": "Mercer County · 114",
     "url": "/wrestler.html?id=35333694132&gender=girls",
@@ -67201,6 +67478,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Isabella Broce",
+    "secondary": "Mercer County · 114",
+    "url": "/wrestler.html?id=35333660132&gender=girls",
+    "searchTokens": [
+      "114",
+      "broce",
+      "county",
+      "isabella",
+      "mercer"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "kenzie Lee",
     "secondary": "Montgomery County · 114",
     "url": "/wrestler.html?id=35447531132&gender=girls",
@@ -67210,6 +67500,19 @@ window.SEARCH_INDEX = [
       "kenzie",
       "lee",
       "montgomery"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Jaden Faulkner Jackson",
+    "secondary": "Moore · 114",
+    "url": "/wrestler.html?id=36852839132&gender=girls",
+    "searchTokens": [
+      "114",
+      "faulkner",
+      "jackson",
+      "jaden",
+      "moore"
     ]
   },
   {
@@ -67234,6 +67537,18 @@ window.SEARCH_INDEX = [
       "mojica",
       "moore",
       "nataly"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Romance Lateef",
+    "secondary": "Moore · 114",
+    "url": "/wrestler.html?id=35909987132&gender=girls",
+    "searchTokens": [
+      "114",
+      "lateef",
+      "moore",
+      "romance"
     ]
   },
   {
@@ -67317,6 +67632,33 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Anne Iranzi",
+    "secondary": "Pleasure Ridge Park · 114",
+    "url": "/wrestler.html?id=35778293132&gender=girls",
+    "searchTokens": [
+      "114",
+      "anne",
+      "iranzi",
+      "park",
+      "pleasure",
+      "ridge"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Eryn McCrary",
+    "secondary": "Russell County · 114",
+    "url": "/wrestler.html?id=37143749132&gender=girls",
+    "searchTokens": [
+      "114",
+      "county",
+      "eryn",
+      "mccrary",
+      "russell"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Juana Francisco",
     "secondary": "Russellville · 114",
     "url": "/wrestler.html?id=35459288132&gender=girls",
@@ -67354,15 +67696,27 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Samantha Oliver",
+    "name": "Ava Castleman",
     "secondary": "Scott County · 114",
-    "url": "/wrestler.html?id=35333383132&gender=girls",
+    "url": "/wrestler.html?id=35333389132&gender=girls",
     "searchTokens": [
       "114",
+      "ava",
+      "castleman",
       "county",
-      "oliver",
-      "samantha",
       "scott"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "De`onna Owens",
+    "secondary": "Shawnee · 114",
+    "url": "/wrestler.html?id=35756107132&gender=girls",
+    "searchTokens": [
+      "114",
+      "de`onna",
+      "owens",
+      "shawnee"
     ]
   },
   {
@@ -67402,19 +67756,6 @@ window.SEARCH_INDEX = [
       "south",
       "trinh",
       "warren"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "symphony sharp",
-    "secondary": "Spencer County · 114",
-    "url": "/wrestler.html?id=35386164132&gender=girls",
-    "searchTokens": [
-      "114",
-      "county",
-      "sharp",
-      "spencer",
-      "symphony"
     ]
   },
   {
@@ -67497,6 +67838,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Amayia Canela",
+    "secondary": "Trigg County · 114",
+    "url": "/wrestler.html?id=35598124132&gender=girls",
+    "searchTokens": [
+      "114",
+      "amayia",
+      "canela",
+      "county",
+      "trigg"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Hailey Cordell",
     "secondary": "Trigg County · 114",
     "url": "/wrestler.html?id=35598209132&gender=girls",
@@ -67536,6 +67890,30 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Lilly Torrance",
+    "secondary": "Valley · 114",
+    "url": "/wrestler.html?id=35514993132&gender=girls",
+    "searchTokens": [
+      "114",
+      "lilly",
+      "torrance",
+      "valley"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Charlotte Uwamahoro",
+    "secondary": "Valley · 114",
+    "url": "/wrestler.html?id=35515380132&gender=girls",
+    "searchTokens": [
+      "114",
+      "charlotte",
+      "uwamahoro",
+      "valley"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Emily Stephenson",
     "secondary": "Walton-Verona · 114",
     "url": "/wrestler.html?id=35352384132&gender=girls",
@@ -67544,19 +67922,6 @@ window.SEARCH_INDEX = [
       "emily",
       "stephenson",
       "walton-verona"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Kaylee Bunch",
-    "secondary": "Whitley County · 114",
-    "url": "/wrestler.html?id=35457212132&gender=girls",
-    "searchTokens": [
-      "114",
-      "bunch",
-      "county",
-      "kaylee",
-      "whitley"
     ]
   },
   {
@@ -67600,6 +67965,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Lexi Susor",
+    "secondary": "Whitley County · 114",
+    "url": "/wrestler.html?id=35457238132&gender=girls",
+    "searchTokens": [
+      "114",
+      "county",
+      "lexi",
+      "susor",
+      "whitley"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "AnaLeigh Tierney",
     "secondary": "Woodford County · 114",
     "url": "/wrestler.html?id=35333544132&gender=girls",
@@ -67613,12 +67991,27 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Unknown",
-    "secondary": "Unknown · 114",
-    "url": "/wrestler.html?id=OUTSTATE_18bdd1256c45&gender=girls",
+    "name": "Alana Brewer",
+    "secondary": "Henryville · 114",
+    "url": "/wrestler.html?id=OUTSTATE_6abe825bec52&gender=girls",
     "searchTokens": [
       "114",
-      "unknown"
+      "alana",
+      "brewer",
+      "henryville"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Lucy Robertson",
+    "secondary": "Evansville North · 114",
+    "url": "/wrestler.html?id=OUTSTATE_c02f2c216575&gender=girls",
+    "searchTokens": [
+      "114",
+      "evansville",
+      "lucy",
+      "north",
+      "robertson"
     ]
   },
   {
@@ -67631,6 +68024,46 @@ window.SEARCH_INDEX = [
       "gayso",
       "jasper",
       "laurian"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Ally Bolen",
+    "secondary": "North Harrison · 114",
+    "url": "/wrestler.html?id=OUTSTATE_bf10b460279c&gender=girls",
+    "searchTokens": [
+      "114",
+      "ally",
+      "bolen",
+      "harrison",
+      "north"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Serenity Cook",
+    "secondary": "Perry County Central · 114",
+    "url": "/wrestler.html?id=OUTSTATE_e5b38e2cacf4&gender=girls",
+    "searchTokens": [
+      "114",
+      "central",
+      "cook",
+      "county",
+      "perry",
+      "serenity"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Lexi Susor",
+    "secondary": "Whitley County · 114",
+    "url": "/wrestler.html?id=OUTSTATE_c54a33a7a1cc&gender=girls",
+    "searchTokens": [
+      "114",
+      "county",
+      "lexi",
+      "susor",
+      "whitley"
     ]
   },
   {
@@ -67843,6 +68276,21 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Rachel Wasson",
+    "secondary": "Lakota West High School · 114",
+    "url": "/wrestler.html?id=OUTSTATE_df7b3a4d8490&gender=girls",
+    "searchTokens": [
+      "114",
+      "high",
+      "lakota",
+      "rachel",
+      "school",
+      "wasson",
+      "west"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Sofia Lazano",
     "secondary": "Jennings County · 114",
     "url": "/wrestler.html?id=OUTSTATE_6f16ac7d33b9&gender=girls",
@@ -67856,14 +68304,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Alana Brewer",
-    "secondary": "Henryville · 114",
-    "url": "/wrestler.html?id=OUTSTATE_6abe825bec52&gender=girls",
+    "name": "Michala Daniels",
+    "secondary": "Bell County · 114",
+    "url": "/wrestler.html?id=OUTSTATE_297f0dee9077&gender=girls",
     "searchTokens": [
       "114",
-      "alana",
-      "brewer",
-      "henryville"
+      "bell",
+      "county",
+      "daniels",
+      "michala"
     ]
   },
   {
@@ -67985,6 +68434,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Adalyn Perry",
+    "secondary": "Bethlehem · 114",
+    "url": "/wrestler.html?id=OUTSTATE_7dca3aaa68ea&gender=girls",
+    "searchTokens": [
+      "114",
+      "adalyn",
+      "bethlehem",
+      "perry"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Winified Simon",
     "secondary": "Apollo · 120",
     "url": "/wrestler.html?id=35345019132&gender=girls",
@@ -67997,28 +68458,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Chyanne Maggard",
+    "name": "Hayden Meeks",
     "secondary": "Ashland Blazer · 120",
-    "url": "/wrestler.html?id=35333418132&gender=girls",
+    "url": "/wrestler.html?id=35333434132&gender=girls",
     "searchTokens": [
       "120",
       "ashland",
       "blazer",
-      "chyanne",
-      "maggard"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Selena White",
-    "secondary": "Ashland Blazer · 120",
-    "url": "/wrestler.html?id=37081901132&gender=girls",
-    "searchTokens": [
-      "120",
-      "ashland",
-      "blazer",
-      "selena",
-      "white"
+      "hayden",
+      "meeks"
     ]
   },
   {
@@ -68047,15 +68495,14 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Michala Daniels",
-    "secondary": "Bell County · 120",
-    "url": "/wrestler.html?id=35369124132&gender=girls",
+    "name": "Ashlynn Cadwell",
+    "secondary": "Belfry · 120",
+    "url": "/wrestler.html?id=36507501132&gender=girls",
     "searchTokens": [
       "120",
-      "bell",
-      "county",
-      "daniels",
-      "michala"
+      "ashlynn",
+      "belfry",
+      "cadwell"
     ]
   },
   {
@@ -68086,6 +68533,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Brooklyn Cash",
+    "secondary": "Boyle County · 120",
+    "url": "/wrestler.html?id=35333377132&gender=girls",
+    "searchTokens": [
+      "120",
+      "boyle",
+      "brooklyn",
+      "cash",
+      "county"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Alexia Garcia",
     "secondary": "Bryan Station · 120",
     "url": "/wrestler.html?id=35640274132&gender=girls",
@@ -68108,19 +68568,6 @@ window.SEARCH_INDEX = [
       "bryan",
       "station",
       "stepetak"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Mlasi Tambwe",
-    "secondary": "Bryan Station · 120",
-    "url": "/wrestler.html?id=35640271132&gender=girls",
-    "searchTokens": [
-      "120",
-      "bryan",
-      "mlasi",
-      "station",
-      "tambwe"
     ]
   },
   {
@@ -68213,6 +68660,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "NaRhiya Davis",
+    "secondary": "Central · 120",
+    "url": "/wrestler.html?id=35542615132&gender=girls",
+    "searchTokens": [
+      "120",
+      "central",
+      "davis",
+      "narhiya"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Madeline Holwager",
     "secondary": "Central Hardin · 120",
     "url": "/wrestler.html?id=35347717132&gender=girls",
@@ -68239,19 +68698,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Serenity Avalos",
-    "secondary": "Christian County · 120",
-    "url": "/wrestler.html?id=35640457132&gender=girls",
-    "searchTokens": [
-      "120",
-      "avalos",
-      "christian",
-      "county",
-      "serenity"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Gabriela Valentin",
     "secondary": "Danville · 120",
     "url": "/wrestler.html?id=35448841132&gender=girls",
@@ -68260,6 +68706,18 @@ window.SEARCH_INDEX = [
       "danville",
       "gabriela",
       "valentin"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kamila DeLaCruz",
+    "secondary": "Danville · 120",
+    "url": "/wrestler.html?id=35906685132&gender=girls",
+    "searchTokens": [
+      "120",
+      "danville",
+      "delacruz",
+      "kamila"
     ]
   },
   {
@@ -68316,6 +68774,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Emma Towles",
+    "secondary": "Fern Creek · 120",
+    "url": "/wrestler.html?id=35774460132&gender=girls",
+    "searchTokens": [
+      "120",
+      "creek",
+      "emma",
+      "fern",
+      "towles"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Braylee Drake",
     "secondary": "Fort Campbell · 120",
     "url": "/wrestler.html?id=35521663132&gender=girls",
@@ -68325,19 +68796,6 @@ window.SEARCH_INDEX = [
       "campbell",
       "drake",
       "fort"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Tristin Caldwell",
-    "secondary": "Fort Campbell · 120",
-    "url": "/wrestler.html?id=35666995132&gender=girls",
-    "searchTokens": [
-      "120",
-      "caldwell",
-      "campbell",
-      "fort",
-      "tristin"
     ]
   },
   {
@@ -68397,19 +68855,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Paityn Richardson",
-    "secondary": "Grant County · 120",
-    "url": "/wrestler.html?id=35407425132&gender=girls",
-    "searchTokens": [
-      "120",
-      "county",
-      "grant",
-      "paityn",
-      "richardson"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Dannie Fryman",
     "secondary": "Great Crossing · 120",
     "url": "/wrestler.html?id=35690209132&gender=girls",
@@ -68419,19 +68864,6 @@ window.SEARCH_INDEX = [
       "dannie",
       "fryman",
       "great"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Aubrey Ferguson",
-    "secondary": "Green County · 120",
-    "url": "/wrestler.html?id=35468198132&gender=girls",
-    "searchTokens": [
-      "120",
-      "aubrey",
-      "county",
-      "ferguson",
-      "green"
     ]
   },
   {
@@ -68513,28 +68945,40 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kennedy Sohne",
+    "name": "Laya Wilson",
     "secondary": "Henderson County · 120",
-    "url": "/wrestler.html?id=35343284132&gender=girls",
+    "url": "/wrestler.html?id=35343285132&gender=girls",
     "searchTokens": [
       "120",
       "county",
       "henderson",
-      "kennedy",
-      "sohne"
+      "laya",
+      "wilson"
     ]
   },
   {
     "type": "wrestler",
-    "name": "Kaylee Wilson",
+    "name": "Jade Robertson",
     "secondary": "Henderson County · 120",
-    "url": "/wrestler.html?id=35343295132&gender=girls",
+    "url": "/wrestler.html?id=35343293132&gender=girls",
     "searchTokens": [
       "120",
       "county",
       "henderson",
-      "kaylee",
-      "wilson"
+      "jade",
+      "robertson"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Lauren Battle",
+    "secondary": "Highlands · 120",
+    "url": "/wrestler.html?id=35613109132&gender=girls",
+    "searchTokens": [
+      "120",
+      "battle",
+      "highlands",
+      "lauren"
     ]
   },
   {
@@ -68638,6 +69082,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Aaliyah Davis",
+    "secondary": "Lafayette · 120",
+    "url": "/wrestler.html?id=35404892132&gender=girls",
+    "searchTokens": [
+      "120",
+      "aaliyah",
+      "davis",
+      "lafayette"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Jenna Schultz",
     "secondary": "Logan County · 120",
     "url": "/wrestler.html?id=35461015132&gender=girls",
@@ -68663,15 +69119,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Autumn Toller",
+    "name": "Jacey Muntz",
     "secondary": "Mason County · 120",
-    "url": "/wrestler.html?id=35739914132&gender=girls",
+    "url": "/wrestler.html?id=35739865132&gender=girls",
     "searchTokens": [
       "120",
-      "autumn",
       "county",
+      "jacey",
       "mason",
-      "toller"
+      "muntz"
     ]
   },
   {
@@ -68715,15 +69171,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Summer Fuqua",
-    "secondary": "Meade County · 120",
-    "url": "/wrestler.html?id=36285756132&gender=girls",
+    "name": "Allissa Chinas-Rodriguez",
+    "secondary": "Mccreary Central · 120",
+    "url": "/wrestler.html?id=35599267132&gender=girls",
     "searchTokens": [
       "120",
-      "county",
-      "fuqua",
-      "meade",
-      "summer"
+      "allissa",
+      "central",
+      "chinas-rodriguez",
+      "mccreary"
     ]
   },
   {
@@ -68741,15 +69197,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Isabella Broce",
-    "secondary": "Mercer County · 120",
-    "url": "/wrestler.html?id=35333660132&gender=girls",
+    "name": "Wynter Workman",
+    "secondary": "Meade County · 120",
+    "url": "/wrestler.html?id=35563228132&gender=girls",
     "searchTokens": [
       "120",
-      "broce",
       "county",
-      "isabella",
-      "mercer"
+      "meade",
+      "workman",
+      "wynter"
     ]
   },
   {
@@ -68767,27 +69223,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jaden Faulkner Jackson",
+    "name": "Laura Rodriguez Arias",
     "secondary": "Moore · 120",
-    "url": "/wrestler.html?id=36852839132&gender=girls",
+    "url": "/wrestler.html?id=35333399132&gender=girls",
     "searchTokens": [
       "120",
-      "faulkner",
-      "jackson",
-      "jaden",
-      "moore"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Romance Lateef",
-    "secondary": "Moore · 120",
-    "url": "/wrestler.html?id=35909987132&gender=girls",
-    "searchTokens": [
-      "120",
-      "lateef",
+      "arias",
+      "laura",
       "moore",
-      "romance"
+      "rodriguez"
     ]
   },
   {
@@ -68935,20 +69379,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Anne Iranzi",
-    "secondary": "Pleasure Ridge Park · 120",
-    "url": "/wrestler.html?id=35778293132&gender=girls",
-    "searchTokens": [
-      "120",
-      "anne",
-      "iranzi",
-      "park",
-      "pleasure",
-      "ridge"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Brooklyn Brown",
     "secondary": "Pulaski County · 120",
     "url": "/wrestler.html?id=35434370132&gender=girls",
@@ -68986,27 +69416,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Ava Castleman",
+    "name": "Jennifer Vargus",
     "secondary": "Scott County · 120",
-    "url": "/wrestler.html?id=35333389132&gender=girls",
+    "url": "/wrestler.html?id=35333390132&gender=girls",
     "searchTokens": [
       "120",
-      "ava",
-      "castleman",
       "county",
-      "scott"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "De`onna Owens",
-    "secondary": "Shawnee · 120",
-    "url": "/wrestler.html?id=35756107132&gender=girls",
-    "searchTokens": [
-      "120",
-      "de`onna",
-      "owens",
-      "shawnee"
+      "jennifer",
+      "scott",
+      "vargus"
     ]
   },
   {
@@ -69058,19 +69476,6 @@ window.SEARCH_INDEX = [
       "gutterman",
       "sera",
       "spencer"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Hannah Matias",
-    "secondary": "Taylor County · 120",
-    "url": "/wrestler.html?id=35333630132&gender=girls",
-    "searchTokens": [
-      "120",
-      "county",
-      "hannah",
-      "matias",
-      "taylor"
     ]
   },
   {
@@ -69127,19 +69532,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Amayia Canela",
-    "secondary": "Trigg County · 120",
-    "url": "/wrestler.html?id=35598124132&gender=girls",
-    "searchTokens": [
-      "120",
-      "amayia",
-      "canela",
-      "county",
-      "trigg"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Ashlynn Brooks",
     "secondary": "Valley · 120",
     "url": "/wrestler.html?id=35515405132&gender=girls",
@@ -69160,19 +69552,6 @@ window.SEARCH_INDEX = [
       "na`kiya",
       "redd",
       "valley"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Lexi Susor",
-    "secondary": "Whitley County · 120",
-    "url": "/wrestler.html?id=35457238132&gender=girls",
-    "searchTokens": [
-      "120",
-      "county",
-      "lexi",
-      "susor",
-      "whitley"
     ]
   },
   {
@@ -69203,6 +69582,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Angeles Ruiz",
+    "secondary": "Whitley County · 120",
+    "url": "/wrestler.html?id=35427544132&gender=girls",
+    "searchTokens": [
+      "120",
+      "angeles",
+      "county",
+      "ruiz",
+      "whitley"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Jacey Lyddane",
     "secondary": "Woodford County · 120",
     "url": "/wrestler.html?id=35333549132&gender=girls",
@@ -69212,6 +69604,56 @@ window.SEARCH_INDEX = [
       "jacey",
       "lyddane",
       "woodford"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Morgandy Esparza-Humbert",
+    "secondary": "Southridge · 120",
+    "url": "/wrestler.html?id=OUTSTATE_2649f1a068ac&gender=girls",
+    "searchTokens": [
+      "120",
+      "esparza-humbert",
+      "morgandy",
+      "southridge"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Ella Shaw",
+    "secondary": "Charlestown · 120",
+    "url": "/wrestler.html?id=OUTSTATE_7f5cf71d4fc1&gender=girls",
+    "searchTokens": [
+      "120",
+      "charlestown",
+      "ella",
+      "shaw"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "My`Shawanna Tinsley",
+    "secondary": "Finneytown · 120",
+    "url": "/wrestler.html?id=OUTSTATE_40a6afc8a45c&gender=girls",
+    "searchTokens": [
+      "120",
+      "finneytown",
+      "my`shawanna",
+      "tinsley"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Anniston Chessir",
+    "secondary": "Terre Haute North · 120",
+    "url": "/wrestler.html?id=OUTSTATE_4aae3628d05e&gender=girls",
+    "searchTokens": [
+      "120",
+      "anniston",
+      "chessir",
+      "haute",
+      "north",
+      "terre"
     ]
   },
   {
@@ -69236,6 +69678,32 @@ window.SEARCH_INDEX = [
       "carrillo",
       "fatima",
       "jeffersonville"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Ava Crews",
+    "secondary": "Pike Central · 120",
+    "url": "/wrestler.html?id=OUTSTATE_023a76df6fbb&gender=girls",
+    "searchTokens": [
+      "120",
+      "ava",
+      "central",
+      "crews",
+      "pike"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kaylie Will",
+    "secondary": "North Posey · 120",
+    "url": "/wrestler.html?id=OUTSTATE_75438d95f1c3&gender=girls",
+    "searchTokens": [
+      "120",
+      "kaylie",
+      "north",
+      "posey",
+      "will"
     ]
   },
   {
@@ -69267,28 +69735,16 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kaylie Will",
-    "secondary": "North Posey · 120",
-    "url": "/wrestler.html?id=OUTSTATE_75438d95f1c3&gender=girls",
+    "name": "Kimberly Mayenschein",
+    "secondary": "Chesapeake High School · 120",
+    "url": "/wrestler.html?id=OUTSTATE_1fb8d4a54d91&gender=girls",
     "searchTokens": [
       "120",
-      "kaylie",
-      "north",
-      "posey",
-      "will"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Ava Crews",
-    "secondary": "Pike Central · 120",
-    "url": "/wrestler.html?id=OUTSTATE_023a76df6fbb&gender=girls",
-    "searchTokens": [
-      "120",
-      "ava",
-      "central",
-      "crews",
-      "pike"
+      "chesapeake",
+      "high",
+      "kimberly",
+      "mayenschein",
+      "school"
     ]
   },
   {
@@ -69301,18 +69757,6 @@ window.SEARCH_INDEX = [
       "annalee",
       "southridge",
       "vinson"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Morgandy Esparza-Humbert",
-    "secondary": "Southridge · 120",
-    "url": "/wrestler.html?id=OUTSTATE_2649f1a068ac&gender=girls",
-    "searchTokens": [
-      "120",
-      "esparza-humbert",
-      "morgandy",
-      "southridge"
     ]
   },
   {
@@ -69350,18 +69794,6 @@ window.SEARCH_INDEX = [
       "cadence",
       "cass",
       "cupp"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Ella Shaw",
-    "secondary": "Charlestown · 120",
-    "url": "/wrestler.html?id=OUTSTATE_7f5cf71d4fc1&gender=girls",
-    "searchTokens": [
-      "120",
-      "charlestown",
-      "ella",
-      "shaw"
     ]
   },
   {
@@ -69501,15 +69933,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Hayden Meeks",
+    "name": "Chyanne Maggard",
     "secondary": "Ashland Blazer · 126",
-    "url": "/wrestler.html?id=35333434132&gender=girls",
+    "url": "/wrestler.html?id=35333418132&gender=girls",
     "searchTokens": [
       "126",
       "ashland",
       "blazer",
-      "hayden",
-      "meeks"
+      "chyanne",
+      "maggard"
     ]
   },
   {
@@ -69578,19 +70010,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Brooklyn Cash",
-    "secondary": "Boyle County · 126",
-    "url": "/wrestler.html?id=35333377132&gender=girls",
-    "searchTokens": [
-      "126",
-      "boyle",
-      "brooklyn",
-      "cash",
-      "county"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Sarayna Lopez",
     "secondary": "Boyle County · 126",
     "url": "/wrestler.html?id=35333440132&gender=girls",
@@ -69641,19 +70060,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Westinn Overbey",
-    "secondary": "Caldwell County · 126",
-    "url": "/wrestler.html?id=35345899132&gender=girls",
-    "searchTokens": [
-      "126",
-      "caldwell",
-      "county",
-      "overbey",
-      "westinn"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Isabelle Ellis",
     "secondary": "Campbell County · 126",
     "url": "/wrestler.html?id=35387088132&gender=girls",
@@ -69663,18 +70069,6 @@ window.SEARCH_INDEX = [
       "county",
       "ellis",
       "isabelle"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "NaRhiya Davis",
-    "secondary": "Central · 126",
-    "url": "/wrestler.html?id=35542615132&gender=girls",
-    "searchTokens": [
-      "126",
-      "central",
-      "davis",
-      "narhiya"
     ]
   },
   {
@@ -69766,24 +70160,12 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kamila DeLaCruz",
-    "secondary": "Danville · 126",
-    "url": "/wrestler.html?id=35906685132&gender=girls",
-    "searchTokens": [
-      "126",
-      "danville",
-      "delacruz",
-      "kamila"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Brooklyn Robinson",
+    "name": "Brooklynn Robinson",
     "secondary": "Danville · 126",
     "url": "/wrestler.html?id=35448714132&gender=girls",
     "searchTokens": [
       "126",
-      "brooklyn",
+      "brooklynn",
       "danville",
       "robinson"
     ]
@@ -69815,19 +70197,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Emma Towles",
-    "secondary": "Fern Creek · 126",
-    "url": "/wrestler.html?id=35774460132&gender=girls",
-    "searchTokens": [
-      "126",
-      "creek",
-      "emma",
-      "fern",
-      "towles"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Kaitlyn Hall",
     "secondary": "Floyd Central · 126",
     "url": "/wrestler.html?id=35703776132&gender=girls",
@@ -69837,6 +70206,19 @@ window.SEARCH_INDEX = [
       "floyd",
       "hall",
       "kaitlyn"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Tristin Caldwell",
+    "secondary": "Fort Campbell · 126",
+    "url": "/wrestler.html?id=35666995132&gender=girls",
+    "searchTokens": [
+      "126",
+      "caldwell",
+      "campbell",
+      "fort",
+      "tristin"
     ]
   },
   {
@@ -69959,6 +70341,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Aubrey Ferguson",
+    "secondary": "Green County · 126",
+    "url": "/wrestler.html?id=35468198132&gender=girls",
+    "searchTokens": [
+      "126",
+      "aubrey",
+      "county",
+      "ferguson",
+      "green"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Violet Brown",
     "secondary": "Greenup County · 126",
     "url": "/wrestler.html?id=35635824132&gender=girls",
@@ -70037,19 +70432,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Laya Wilson",
-    "secondary": "Henderson County · 126",
-    "url": "/wrestler.html?id=35343285132&gender=girls",
-    "searchTokens": [
-      "126",
-      "county",
-      "henderson",
-      "laya",
-      "wilson"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Abagail Hefner",
     "secondary": "Henderson County · 126",
     "url": "/wrestler.html?id=35343289132&gender=girls",
@@ -70063,19 +70445,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jade Robertson",
-    "secondary": "Henderson County · 126",
-    "url": "/wrestler.html?id=35343293132&gender=girls",
-    "searchTokens": [
-      "126",
-      "county",
-      "henderson",
-      "jade",
-      "robertson"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Serenity Rivera",
     "secondary": "Henderson County · 126",
     "url": "/wrestler.html?id=35343287132&gender=girls",
@@ -70085,18 +70454,6 @@ window.SEARCH_INDEX = [
       "henderson",
       "rivera",
       "serenity"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Lauren Battle",
-    "secondary": "Highlands · 126",
-    "url": "/wrestler.html?id=35613109132&gender=girls",
-    "searchTokens": [
-      "126",
-      "battle",
-      "highlands",
-      "lauren"
     ]
   },
   {
@@ -70200,18 +70557,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Aaliyah Davis",
-    "secondary": "Lafayette · 126",
-    "url": "/wrestler.html?id=35404892132&gender=girls",
-    "searchTokens": [
-      "126",
-      "aaliyah",
-      "davis",
-      "lafayette"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Abigail Appling",
     "secondary": "Logan County · 126",
     "url": "/wrestler.html?id=36638798132&gender=girls",
@@ -70290,19 +70635,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Allissa Chinas-Rodriguez",
-    "secondary": "Mccreary Central · 126",
-    "url": "/wrestler.html?id=35599267132&gender=girls",
-    "searchTokens": [
-      "126",
-      "allissa",
-      "central",
-      "chinas-rodriguez",
-      "mccreary"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Daveallen Chinas-Rodriguez",
     "secondary": "Mccreary Central · 126",
     "url": "/wrestler.html?id=36222521132&gender=girls",
@@ -70329,15 +70661,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Wynter Workman",
-    "secondary": "Meade County · 126",
-    "url": "/wrestler.html?id=35563228132&gender=girls",
+    "name": "Karissa Mesalam",
+    "secondary": "Mccreary Central · 126",
+    "url": "/wrestler.html?id=37325574132&gender=girls",
     "searchTokens": [
       "126",
-      "county",
-      "meade",
-      "workman",
-      "wynter"
+      "central",
+      "karissa",
+      "mccreary",
+      "mesalam"
     ]
   },
   {
@@ -70351,19 +70683,6 @@ window.SEARCH_INDEX = [
       "brooklyn",
       "county",
       "meade"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Laura Rodriguez Arias",
-    "secondary": "Moore · 126",
-    "url": "/wrestler.html?id=35333399132&gender=girls",
-    "searchTokens": [
-      "126",
-      "arias",
-      "laura",
-      "moore",
-      "rodriguez"
     ]
   },
   {
@@ -70414,6 +70733,19 @@ window.SEARCH_INDEX = [
       "ava",
       "grady",
       "hardin",
+      "north"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kenlei Hatfield",
+    "secondary": "North Hardin · 126",
+    "url": "/wrestler.html?id=35334942132&gender=girls",
+    "searchTokens": [
+      "126",
+      "hardin",
+      "hatfield",
+      "kenlei",
       "north"
     ]
   },
@@ -70471,6 +70803,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Isabell Martinez",
+    "secondary": "Perry County Central · 126",
+    "url": "/wrestler.html?id=35617107132&gender=girls",
+    "searchTokens": [
+      "126",
+      "central",
+      "county",
+      "isabell",
+      "martinez",
+      "perry"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Katie Smith",
     "secondary": "Perry County Central · 126",
     "url": "/wrestler.html?id=35333414132&gender=girls",
@@ -70492,6 +70838,20 @@ window.SEARCH_INDEX = [
       "126",
       "mason-taylor",
       "neveah",
+      "park",
+      "pleasure",
+      "ridge"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Gracelynn Honshell",
+    "secondary": "Pleasure Ridge Park · 126",
+    "url": "/wrestler.html?id=35900378132&gender=girls",
+    "searchTokens": [
+      "126",
+      "gracelynn",
+      "honshell",
       "park",
       "pleasure",
       "ridge"
@@ -70544,19 +70904,6 @@ window.SEARCH_INDEX = [
       "faith",
       "pearson",
       "russellville"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Jennifer Vargus",
-    "secondary": "Scott County · 126",
-    "url": "/wrestler.html?id=35333390132&gender=girls",
-    "searchTokens": [
-      "126",
-      "county",
-      "jennifer",
-      "scott",
-      "vargus"
     ]
   },
   {
@@ -70649,19 +70996,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Laney Doolin",
-    "secondary": "Spencer County · 126",
-    "url": "/wrestler.html?id=35333401132&gender=girls",
-    "searchTokens": [
-      "126",
-      "county",
-      "doolin",
-      "laney",
-      "spencer"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Zeliah Cooper",
     "secondary": "Taylor County · 126",
     "url": "/wrestler.html?id=35333616132&gender=girls",
@@ -70671,6 +71005,19 @@ window.SEARCH_INDEX = [
       "county",
       "taylor",
       "zeliah"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Sophia Wise",
+    "secondary": "Taylor County · 126",
+    "url": "/wrestler.html?id=35333627132&gender=girls",
+    "searchTokens": [
+      "126",
+      "county",
+      "sophia",
+      "taylor",
+      "wise"
     ]
   },
   {
@@ -70697,18 +71044,6 @@ window.SEARCH_INDEX = [
       "county",
       "jackson",
       "union"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Margartha Mbukani",
-    "secondary": "Valley · 126",
-    "url": "/wrestler.html?id=36783776132&gender=girls",
-    "searchTokens": [
-      "126",
-      "margartha",
-      "mbukani",
-      "valley"
     ]
   },
   {
@@ -70775,14 +71110,14 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Angeles Ruiz",
+    "name": "Morgan Phillips",
     "secondary": "Whitley County · 126",
-    "url": "/wrestler.html?id=35427544132&gender=girls",
+    "url": "/wrestler.html?id=35457283132&gender=girls",
     "searchTokens": [
       "126",
-      "angeles",
       "county",
-      "ruiz",
+      "morgan",
+      "phillips",
       "whitley"
     ]
   },
@@ -70809,6 +71144,21 @@ window.SEARCH_INDEX = [
       "clayton",
       "coryell",
       "doss"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Evelynn Fenech",
+    "secondary": "Lakota West High School · 126",
+    "url": "/wrestler.html?id=OUTSTATE_2ec73ac2d708&gender=girls",
+    "searchTokens": [
+      "126",
+      "evelynn",
+      "fenech",
+      "high",
+      "lakota",
+      "school",
+      "west"
     ]
   },
   {
@@ -70890,6 +71240,21 @@ window.SEARCH_INDEX = [
       "laila",
       "school",
       "wentz"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Julie Shultz",
+    "secondary": "Lakota West High School · 126",
+    "url": "/wrestler.html?id=OUTSTATE_47e91183c93a&gender=girls",
+    "searchTokens": [
+      "126",
+      "high",
+      "julie",
+      "lakota",
+      "school",
+      "shultz",
+      "west"
     ]
   },
   {
@@ -71071,6 +71436,21 @@ window.SEARCH_INDEX = [
       "andreason",
       "cass",
       "mads"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Nara Crouch",
+    "secondary": "Lakota West High School · 126",
+    "url": "/wrestler.html?id=OUTSTATE_8b6e566da891&gender=girls",
+    "searchTokens": [
+      "126",
+      "crouch",
+      "high",
+      "lakota",
+      "nara",
+      "school",
+      "west"
     ]
   },
   {
@@ -71317,6 +71697,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Keylin Bergin",
+    "secondary": "Adair County · 132",
+    "url": "/wrestler.html?id=35471184132&gender=girls",
+    "searchTokens": [
+      "132",
+      "adair",
+      "bergin",
+      "county",
+      "keylin"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Lanah Gelarden",
     "secondary": "Apollo · 132",
     "url": "/wrestler.html?id=35345021132&gender=girls",
@@ -71353,15 +71746,27 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Ryleigh Mahan",
+    "name": "Vivian Moyer",
     "secondary": "Ashland Blazer · 132",
-    "url": "/wrestler.html?id=35333466132&gender=girls",
+    "url": "/wrestler.html?id=35333419132&gender=girls",
     "searchTokens": [
       "132",
       "ashland",
       "blazer",
-      "mahan",
-      "ryleigh"
+      "moyer",
+      "vivian"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Elliana Mosby",
+    "secondary": "Ballard · 132",
+    "url": "/wrestler.html?id=35333586132&gender=girls",
+    "searchTokens": [
+      "132",
+      "ballard",
+      "elliana",
+      "mosby"
     ]
   },
   {
@@ -71387,6 +71792,19 @@ window.SEARCH_INDEX = [
       "county",
       "kaylee",
       "lester"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Baylee England",
+    "secondary": "Bell County · 132",
+    "url": "/wrestler.html?id=35369130132&gender=girls",
+    "searchTokens": [
+      "132",
+      "baylee",
+      "bell",
+      "county",
+      "england"
     ]
   },
   {
@@ -71469,6 +71887,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Westinn Overbey",
+    "secondary": "Caldwell County · 132",
+    "url": "/wrestler.html?id=35345899132&gender=girls",
+    "searchTokens": [
+      "132",
+      "caldwell",
+      "county",
+      "overbey",
+      "westinn"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Aniyaree Wilson",
     "secondary": "Caldwell County · 132",
     "url": "/wrestler.html?id=35345845132&gender=girls",
@@ -71507,6 +71938,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Samantha Ives",
+    "secondary": "Central Hardin · 132",
+    "url": "/wrestler.html?id=35347721132&gender=girls",
+    "searchTokens": [
+      "132",
+      "central",
+      "hardin",
+      "ives",
+      "samantha"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Raelee Trudelle",
     "secondary": "Corbin · 132",
     "url": "/wrestler.html?id=35856188132&gender=girls",
@@ -71540,6 +71984,20 @@ window.SEARCH_INDEX = [
       "fort",
       "wengard",
       "zoey"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Hannah `Liz` Porter",
+    "secondary": "Fort Campbell · 132",
+    "url": "/wrestler.html?id=35520301132&gender=girls",
+    "searchTokens": [
+      "132",
+      "`liz`",
+      "campbell",
+      "fort",
+      "hannah",
+      "porter"
     ]
   },
   {
@@ -71593,6 +72051,30 @@ window.SEARCH_INDEX = [
       "bonnie",
       "county",
       "greenup"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Michaela Harmon",
+    "secondary": "Greenwood · 132",
+    "url": "/wrestler.html?id=35424935132&gender=girls",
+    "searchTokens": [
+      "132",
+      "greenwood",
+      "harmon",
+      "michaela"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Niang Nuam",
+    "secondary": "Greenwood · 132",
+    "url": "/wrestler.html?id=35424936132&gender=girls",
+    "searchTokens": [
+      "132",
+      "greenwood",
+      "niang",
+      "nuam"
     ]
   },
   {
@@ -71735,19 +72217,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Addison Collins",
-    "secondary": "John Hardin · 132",
-    "url": "/wrestler.html?id=35510940132&gender=girls",
-    "searchTokens": [
-      "132",
-      "addison",
-      "collins",
-      "hardin",
-      "john"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Khloe Yasin",
     "secondary": "John Hardin · 132",
     "url": "/wrestler.html?id=35333589132&gender=girls",
@@ -71849,19 +72318,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jacey Muntz",
-    "secondary": "Mason County · 132",
-    "url": "/wrestler.html?id=35739865132&gender=girls",
-    "searchTokens": [
-      "132",
-      "county",
-      "jacey",
-      "mason",
-      "muntz"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Aleyah Sexton",
     "secondary": "Mccreary Central · 132",
     "url": "/wrestler.html?id=35599275132&gender=girls",
@@ -71901,6 +72357,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Navaeh Woods",
+    "secondary": "Mercer County · 132",
+    "url": "/wrestler.html?id=35333659132&gender=girls",
+    "searchTokens": [
+      "132",
+      "county",
+      "mercer",
+      "navaeh",
+      "woods"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Khloe Shanks",
     "secondary": "Montgomery County · 132",
     "url": "/wrestler.html?id=35334592132&gender=girls",
@@ -71922,6 +72391,33 @@ window.SEARCH_INDEX = [
       "danielle",
       "hernandez",
       "moore"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Knowledge El Goddess Kingdom-Allah",
+    "secondary": "Moore · 132",
+    "url": "/wrestler.html?id=35333575132&gender=girls",
+    "searchTokens": [
+      "132",
+      "el",
+      "goddess",
+      "kingdom-allah",
+      "knowledge",
+      "moore"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Pahola Mexidor Napoles",
+    "secondary": "Moore · 132",
+    "url": "/wrestler.html?id=35333571132&gender=girls",
+    "searchTokens": [
+      "132",
+      "mexidor",
+      "moore",
+      "napoles",
+      "pahola"
     ]
   },
   {
@@ -71948,6 +72444,32 @@ window.SEARCH_INDEX = [
       "massie",
       "ohio",
       "tahirah"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Amelia Marcum",
+    "secondary": "Ohio County · 132",
+    "url": "/wrestler.html?id=35333362132&gender=girls",
+    "searchTokens": [
+      "132",
+      "amelia",
+      "county",
+      "marcum",
+      "ohio"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Tatum Millet",
+    "secondary": "Oldham County · 132",
+    "url": "/wrestler.html?id=36550522132&gender=girls",
+    "searchTokens": [
+      "132",
+      "county",
+      "millet",
+      "oldham",
+      "tatum"
     ]
   },
   {
@@ -71979,15 +72501,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Isabell Martinez",
+    "name": "Myka Collins",
     "secondary": "Perry County Central · 132",
-    "url": "/wrestler.html?id=35617107132&gender=girls",
+    "url": "/wrestler.html?id=35639208132&gender=girls",
     "searchTokens": [
       "132",
       "central",
+      "collins",
       "county",
-      "isabell",
-      "martinez",
+      "myka",
       "perry"
     ]
   },
@@ -72130,6 +72652,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Laney Doolin",
+    "secondary": "Spencer County · 132",
+    "url": "/wrestler.html?id=35333401132&gender=girls",
+    "searchTokens": [
+      "132",
+      "county",
+      "doolin",
+      "laney",
+      "spencer"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Mykenna Pace",
     "secondary": "Taylor County · 132",
     "url": "/wrestler.html?id=35333624132&gender=girls",
@@ -72143,15 +72678,16 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Sophia Wise",
-    "secondary": "Taylor County · 132",
-    "url": "/wrestler.html?id=35333627132&gender=girls",
+    "name": "Hallie Ray Cannon",
+    "secondary": "Trigg County · 132",
+    "url": "/wrestler.html?id=35598279132&gender=girls",
     "searchTokens": [
       "132",
+      "cannon",
       "county",
-      "sophia",
-      "taylor",
-      "wise"
+      "hallie",
+      "ray",
+      "trigg"
     ]
   },
   {
@@ -72165,6 +72701,18 @@ window.SEARCH_INDEX = [
       "buchanan",
       "county",
       "union"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Margartha Mbukani",
+    "secondary": "Valley · 132",
+    "url": "/wrestler.html?id=36783776132&gender=girls",
+    "searchTokens": [
+      "132",
+      "margartha",
+      "mbukani",
+      "valley"
     ]
   },
   {
@@ -72230,19 +72778,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Morgan Phillips",
-    "secondary": "Whitley County · 132",
-    "url": "/wrestler.html?id=35457283132&gender=girls",
-    "searchTokens": [
-      "132",
-      "county",
-      "morgan",
-      "phillips",
-      "whitley"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Lyla Pitzer",
     "secondary": "Woodford County · 132",
     "url": "/wrestler.html?id=35670762132&gender=girls",
@@ -72252,6 +72787,20 @@ window.SEARCH_INDEX = [
       "lyla",
       "pitzer",
       "woodford"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Sophie Smith",
+    "secondary": "Evansville F.J. Reitz · 132",
+    "url": "/wrestler.html?id=OUTSTATE_cec59cce16e0&gender=girls",
+    "searchTokens": [
+      "132",
+      "evansville",
+      "f.j.",
+      "reitz",
+      "smith",
+      "sophie"
     ]
   },
   {
@@ -72280,6 +72829,82 @@ window.SEARCH_INDEX = [
       "f.j.",
       "gill",
       "reitz"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Braylee Racicot",
+    "secondary": "Jasper · 132",
+    "url": "/wrestler.html?id=OUTSTATE_8f3a08e8a60a&gender=girls",
+    "searchTokens": [
+      "132",
+      "braylee",
+      "jasper",
+      "racicot"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Madeleine Stockstill",
+    "secondary": "Corydon Central · 132",
+    "url": "/wrestler.html?id=OUTSTATE_2fd338380f9f&gender=girls",
+    "searchTokens": [
+      "132",
+      "central",
+      "corydon",
+      "madeleine",
+      "stockstill"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Justice Matthews",
+    "secondary": "Southridge · 132",
+    "url": "/wrestler.html?id=OUTSTATE_08ca5c7c7ced&gender=girls",
+    "searchTokens": [
+      "132",
+      "justice",
+      "matthews",
+      "southridge"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Isabella Lafevers",
+    "secondary": "South Dearborn · 132",
+    "url": "/wrestler.html?id=OUTSTATE_3d7277ee1e25&gender=girls",
+    "searchTokens": [
+      "132",
+      "dearborn",
+      "isabella",
+      "lafevers",
+      "south"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Mya Menke",
+    "secondary": "Southridge · 132",
+    "url": "/wrestler.html?id=OUTSTATE_8b55ed87ffad&gender=girls",
+    "searchTokens": [
+      "132",
+      "menke",
+      "mya",
+      "southridge"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Charlene Rodriguez",
+    "secondary": "Terre Haute North · 132",
+    "url": "/wrestler.html?id=OUTSTATE_33f945d34b3e&gender=girls",
+    "searchTokens": [
+      "132",
+      "charlene",
+      "haute",
+      "north",
+      "rodriguez",
+      "terre"
     ]
   },
   {
@@ -72444,18 +73069,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Braylee Racicot",
-    "secondary": "Jasper · 132",
-    "url": "/wrestler.html?id=OUTSTATE_8f3a08e8a60a&gender=girls",
-    "searchTokens": [
-      "132",
-      "braylee",
-      "jasper",
-      "racicot"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Bree Mauck",
     "secondary": "North Posey · 132",
     "url": "/wrestler.html?id=OUTSTATE_720bce6bfe35&gender=girls",
@@ -72520,16 +73133,17 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Amelia Elfreich",
-    "secondary": "Evansville F.J. Reitz · 132",
-    "url": "/wrestler.html?id=OUTSTATE_042b2e7f0ff9&gender=girls",
+    "name": "Brooklyn Hover",
+    "secondary": "Lakota West High School · 132",
+    "url": "/wrestler.html?id=OUTSTATE_ab763ac26c8c&gender=girls",
     "searchTokens": [
       "132",
-      "amelia",
-      "elfreich",
-      "evansville",
-      "f.j.",
-      "reitz"
+      "brooklyn",
+      "high",
+      "hover",
+      "lakota",
+      "school",
+      "west"
     ]
   },
   {
@@ -72568,6 +73182,20 @@ window.SEARCH_INDEX = [
       "jecker",
       "washington",
       "west"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Alexandria Gill",
+    "secondary": "Evansville F.j. Reitz · 132",
+    "url": "/wrestler.html?id=OUTSTATE_7aded78857f6&gender=girls",
+    "searchTokens": [
+      "132",
+      "alexandria",
+      "evansville",
+      "f.j.",
+      "gill",
+      "reitz"
     ]
   },
   {
@@ -72650,19 +73278,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Keylin Bergin",
-    "secondary": "Adair County · 138",
-    "url": "/wrestler.html?id=35471184132&gender=girls",
-    "searchTokens": [
-      "138",
-      "adair",
-      "bergin",
-      "county",
-      "keylin"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Mackenzie Curry",
     "secondary": "Adair County · 138",
     "url": "/wrestler.html?id=35471183132&gender=girls",
@@ -72672,6 +73287,32 @@ window.SEARCH_INDEX = [
       "county",
       "curry",
       "mackenzie"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Angela Mejia",
+    "secondary": "Adair County · 138",
+    "url": "/wrestler.html?id=35471179132&gender=girls",
+    "searchTokens": [
+      "138",
+      "adair",
+      "angela",
+      "county",
+      "mejia"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Ryleigh Mahan",
+    "secondary": "Ashland Blazer · 138",
+    "url": "/wrestler.html?id=35333466132&gender=girls",
+    "searchTokens": [
+      "138",
+      "ashland",
+      "blazer",
+      "mahan",
+      "ryleigh"
     ]
   },
   {
@@ -72689,19 +73330,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Vivian Moyer",
-    "secondary": "Ashland Blazer · 138",
-    "url": "/wrestler.html?id=35333419132&gender=girls",
-    "searchTokens": [
-      "138",
-      "ashland",
-      "blazer",
-      "moyer",
-      "vivian"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Jacee Norman",
     "secondary": "Belfry · 138",
     "url": "/wrestler.html?id=35676779132&gender=girls",
@@ -72710,19 +73338,6 @@ window.SEARCH_INDEX = [
       "belfry",
       "jacee",
       "norman"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Baylee England",
-    "secondary": "Bell County · 138",
-    "url": "/wrestler.html?id=35369130132&gender=girls",
-    "searchTokens": [
-      "138",
-      "baylee",
-      "bell",
-      "county",
-      "england"
     ]
   },
   {
@@ -72736,6 +73351,45 @@ window.SEARCH_INDEX = [
       "bell",
       "county",
       "howard"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Hannah Fetters",
+    "secondary": "Bell County · 138",
+    "url": "/wrestler.html?id=35399915132&gender=girls",
+    "searchTokens": [
+      "138",
+      "bell",
+      "county",
+      "fetters",
+      "hannah"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Ahbrea Hampton",
+    "secondary": "Bell County · 138",
+    "url": "/wrestler.html?id=35629652132&gender=girls",
+    "searchTokens": [
+      "138",
+      "ahbrea",
+      "bell",
+      "county",
+      "hampton"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Mia Young",
+    "secondary": "Bourbon County · 138",
+    "url": "/wrestler.html?id=35333543132&gender=girls",
+    "searchTokens": [
+      "138",
+      "bourbon",
+      "county",
+      "mia",
+      "young"
     ]
   },
   {
@@ -72792,6 +73446,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Keirli Herran",
+    "secondary": "Caldwell County · 138",
+    "url": "/wrestler.html?id=35345849132&gender=girls",
+    "searchTokens": [
+      "138",
+      "caldwell",
+      "county",
+      "herran",
+      "keirli"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Toby McNary",
     "secondary": "Central · 138",
     "url": "/wrestler.html?id=35775855132&gender=girls",
@@ -72800,19 +73467,6 @@ window.SEARCH_INDEX = [
       "central",
       "mcnary",
       "toby"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Abigail Patterson",
-    "secondary": "Central Hardin · 138",
-    "url": "/wrestler.html?id=35347737132&gender=girls",
-    "searchTokens": [
-      "138",
-      "abigail",
-      "central",
-      "hardin",
-      "patterson"
     ]
   },
   {
@@ -72830,15 +73484,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Samantha Ives",
+    "name": "Abigail Patterson",
     "secondary": "Central Hardin · 138",
-    "url": "/wrestler.html?id=35347721132&gender=girls",
+    "url": "/wrestler.html?id=35347737132&gender=girls",
     "searchTokens": [
       "138",
+      "abigail",
       "central",
       "hardin",
-      "ives",
-      "samantha"
+      "patterson"
     ]
   },
   {
@@ -72855,6 +73509,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Keiona Skaggs",
+    "secondary": "East Carter · 138",
+    "url": "/wrestler.html?id=35733855132&gender=girls",
+    "searchTokens": [
+      "138",
+      "carter",
+      "east",
+      "keiona",
+      "skaggs"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Maddie Massengill",
     "secondary": "East Jessamine · 138",
     "url": "/wrestler.html?id=35333678132&gender=girls",
@@ -72864,6 +73531,18 @@ window.SEARCH_INDEX = [
       "jessamine",
       "maddie",
       "massengill"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Sonia Tarley",
+    "secondary": "Eastern · 138",
+    "url": "/wrestler.html?id=35333690132&gender=girls",
+    "searchTokens": [
+      "138",
+      "eastern",
+      "sonia",
+      "tarley"
     ]
   },
   {
@@ -72907,6 +73586,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Ava Castro",
+    "secondary": "George Rogers Clark · 138",
+    "url": "/wrestler.html?id=35333411132&gender=girls",
+    "searchTokens": [
+      "138",
+      "ava",
+      "castro",
+      "clark",
+      "george",
+      "rogers"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Jolee Kayse",
     "secondary": "George Rogers Clark · 138",
     "url": "/wrestler.html?id=35333566132&gender=girls",
@@ -72917,6 +73610,31 @@ window.SEARCH_INDEX = [
       "jolee",
       "kayse",
       "rogers"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Cing Kiim",
+    "secondary": "Greenwood · 138",
+    "url": "/wrestler.html?id=35424933132&gender=girls",
+    "searchTokens": [
+      "138",
+      "cing",
+      "greenwood",
+      "kiim"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Masoka (Ashley) Kilozo",
+    "secondary": "Greenwood · 138",
+    "url": "/wrestler.html?id=35424932132&gender=girls",
+    "searchTokens": [
+      "(ashley)",
+      "138",
+      "greenwood",
+      "kilozo",
+      "masoka"
     ]
   },
   {
@@ -72981,6 +73699,19 @@ window.SEARCH_INDEX = [
       "harmony",
       "jeffersontown",
       "walker"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Addison Collins",
+    "secondary": "John Hardin · 138",
+    "url": "/wrestler.html?id=35510940132&gender=girls",
+    "searchTokens": [
+      "138",
+      "addison",
+      "collins",
+      "hardin",
+      "john"
     ]
   },
   {
@@ -73124,15 +73855,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Navaeh Woods",
-    "secondary": "Mercer County · 138",
-    "url": "/wrestler.html?id=35333659132&gender=girls",
+    "name": "Kylan Phillips",
+    "secondary": "Mccreary Central · 138",
+    "url": "/wrestler.html?id=35599271132&gender=girls",
     "searchTokens": [
       "138",
-      "county",
-      "mercer",
-      "navaeh",
-      "woods"
+      "central",
+      "kylan",
+      "mccreary",
+      "phillips"
     ]
   },
   {
@@ -73146,33 +73877,6 @@ window.SEARCH_INDEX = [
       "county",
       "kadyn",
       "montgomery"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Knowledge El Goddess Kingdom-Allah",
-    "secondary": "Moore · 138",
-    "url": "/wrestler.html?id=35333575132&gender=girls",
-    "searchTokens": [
-      "138",
-      "el",
-      "goddess",
-      "kingdom-allah",
-      "knowledge",
-      "moore"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Pahola Mexidor Napoles",
-    "secondary": "Moore · 138",
-    "url": "/wrestler.html?id=35333571132&gender=girls",
-    "searchTokens": [
-      "138",
-      "mexidor",
-      "moore",
-      "napoles",
-      "pahola"
     ]
   },
   {
@@ -73198,19 +73902,6 @@ window.SEARCH_INDEX = [
       "celia",
       "north",
       "sweatt"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Kenlei Hatfield",
-    "secondary": "North Hardin · 138",
-    "url": "/wrestler.html?id=35334942132&gender=girls",
-    "searchTokens": [
-      "138",
-      "hardin",
-      "hatfield",
-      "kenlei",
-      "north"
     ]
   },
   {
@@ -73254,29 +73945,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Amelia Marcum",
-    "secondary": "Ohio County · 138",
-    "url": "/wrestler.html?id=35333362132&gender=girls",
+    "name": "Kayleigh Hall",
+    "secondary": "Paducah Tilghman · 138",
+    "url": "/wrestler.html?id=35382371132&gender=girls",
     "searchTokens": [
       "138",
-      "amelia",
-      "county",
-      "marcum",
-      "ohio"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Myka Collins",
-    "secondary": "Perry County Central · 138",
-    "url": "/wrestler.html?id=35639208132&gender=girls",
-    "searchTokens": [
-      "138",
-      "central",
-      "collins",
-      "county",
-      "myka",
-      "perry"
+      "hall",
+      "kayleigh",
+      "paducah",
+      "tilghman"
     ]
   },
   {
@@ -73293,20 +73970,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Gracelynn Honshell",
-    "secondary": "Pleasure Ridge Park · 138",
-    "url": "/wrestler.html?id=35900378132&gender=girls",
-    "searchTokens": [
-      "138",
-      "gracelynn",
-      "honshell",
-      "park",
-      "pleasure",
-      "ridge"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Ka`Leah Stringer",
     "secondary": "Pleasure Ridge Park · 138",
     "url": "/wrestler.html?id=35899794132&gender=girls",
@@ -73317,6 +73980,19 @@ window.SEARCH_INDEX = [
       "pleasure",
       "ridge",
       "stringer"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Madison Price",
+    "secondary": "Russell County · 138",
+    "url": "/wrestler.html?id=35788826132&gender=girls",
+    "searchTokens": [
+      "138",
+      "county",
+      "madison",
+      "price",
+      "russell"
     ]
   },
   {
@@ -73447,15 +74123,14 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Hallie Ray Cannon",
+    "name": "Loralai Stephens",
     "secondary": "Trigg County · 138",
-    "url": "/wrestler.html?id=35598279132&gender=girls",
+    "url": "/wrestler.html?id=35598266132&gender=girls",
     "searchTokens": [
       "138",
-      "cannon",
       "county",
-      "hallie",
-      "ray",
+      "loralai",
+      "stephens",
       "trigg"
     ]
   },
@@ -73474,6 +74149,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "tailor waddell",
+    "secondary": "Union County · 138",
+    "url": "/wrestler.html?id=35566119132&gender=girls",
+    "searchTokens": [
+      "138",
+      "county",
+      "tailor",
+      "union",
+      "waddell"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Brooklynn Medley",
     "secondary": "Valley · 138",
     "url": "/wrestler.html?id=35505998132&gender=girls",
@@ -73482,6 +74170,31 @@ window.SEARCH_INDEX = [
       "brooklynn",
       "medley",
       "valley"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kristiana Padilla",
+    "secondary": "Valley · 138",
+    "url": "/wrestler.html?id=35902198132&gender=girls",
+    "searchTokens": [
+      "138",
+      "kristiana",
+      "padilla",
+      "valley"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Emily Jones",
+    "secondary": "Whitley County · 138",
+    "url": "/wrestler.html?id=35457081132&gender=girls",
+    "searchTokens": [
+      "138",
+      "county",
+      "emily",
+      "jones",
+      "whitley"
     ]
   },
   {
@@ -73508,6 +74221,34 @@ window.SEARCH_INDEX = [
       "magdalen",
       "pike",
       "thompson"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Amelia Elfreich",
+    "secondary": "Evansville F.j. Reitz · 138",
+    "url": "/wrestler.html?id=OUTSTATE_042b2e7f0ff9&gender=girls",
+    "searchTokens": [
+      "138",
+      "amelia",
+      "elfreich",
+      "evansville",
+      "f.j.",
+      "reitz"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Rowyn Weiss",
+    "secondary": "Evansville F.j. Reitz · 138",
+    "url": "/wrestler.html?id=OUTSTATE_00fc2ecf79b7&gender=girls",
+    "searchTokens": [
+      "138",
+      "evansville",
+      "f.j.",
+      "reitz",
+      "rowyn",
+      "weiss"
     ]
   },
   {
@@ -73705,15 +74446,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Angela Mejia",
-    "secondary": "Adair County · 145",
-    "url": "/wrestler.html?id=35471179132&gender=girls",
+    "name": "DJ Tucker-Lester",
+    "secondary": "Marion (H.S.) · 138",
+    "url": "/wrestler.html?id=OUTSTATE_aceb9abcd62a&gender=girls",
     "searchTokens": [
-      "145",
-      "adair",
-      "angela",
-      "county",
-      "mejia"
+      "(h.s.)",
+      "138",
+      "dj",
+      "marion",
+      "tucker-lester"
     ]
   },
   {
@@ -73756,18 +74497,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Elliana Mosby",
-    "secondary": "Ballard · 145",
-    "url": "/wrestler.html?id=35333586132&gender=girls",
-    "searchTokens": [
-      "145",
-      "ballard",
-      "elliana",
-      "mosby"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Sophia Redd",
     "secondary": "Bardstown · 145",
     "url": "/wrestler.html?id=35333560132&gender=girls",
@@ -73792,19 +74521,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Hannah Fetters",
-    "secondary": "Bell County · 145",
-    "url": "/wrestler.html?id=35399915132&gender=girls",
-    "searchTokens": [
-      "145",
-      "bell",
-      "county",
-      "fetters",
-      "hannah"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Madelyn Green",
     "secondary": "Bell County · 145",
     "url": "/wrestler.html?id=35369131132&gender=girls",
@@ -73818,19 +74534,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Ahbrea Hampton",
-    "secondary": "Bell County · 145",
-    "url": "/wrestler.html?id=35629652132&gender=girls",
-    "searchTokens": [
-      "145",
-      "ahbrea",
-      "bell",
-      "county",
-      "hampton"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Tayla Tobin",
     "secondary": "Bourbon County · 145",
     "url": "/wrestler.html?id=35333542132&gender=girls",
@@ -73840,19 +74543,6 @@ window.SEARCH_INDEX = [
       "county",
       "tayla",
       "tobin"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Mia Young",
-    "secondary": "Bourbon County · 145",
-    "url": "/wrestler.html?id=35333543132&gender=girls",
-    "searchTokens": [
-      "145",
-      "bourbon",
-      "county",
-      "mia",
-      "young"
     ]
   },
   {
@@ -73920,19 +74610,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Keirli Herran",
-    "secondary": "Caldwell County · 145",
-    "url": "/wrestler.html?id=35345849132&gender=girls",
-    "searchTokens": [
-      "145",
-      "caldwell",
-      "county",
-      "herran",
-      "keirli"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Serenity Oliver",
     "secondary": "Caldwell County · 145",
     "url": "/wrestler.html?id=35346013132&gender=girls",
@@ -73955,6 +74632,19 @@ window.SEARCH_INDEX = [
       "county",
       "kilgore",
       "sophia"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Anna Urbanowski",
+    "secondary": "Caldwell County · 145",
+    "url": "/wrestler.html?id=35345846132&gender=girls",
+    "searchTokens": [
+      "145",
+      "anna",
+      "caldwell",
+      "county",
+      "urbanowski"
     ]
   },
   {
@@ -74034,31 +74724,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Keiona Skaggs",
-    "secondary": "East Carter · 145",
-    "url": "/wrestler.html?id=35733855132&gender=girls",
-    "searchTokens": [
-      "145",
-      "carter",
-      "east",
-      "keiona",
-      "skaggs"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Sonia Tarley",
-    "secondary": "Eastern · 145",
-    "url": "/wrestler.html?id=35333690132&gender=girls",
-    "searchTokens": [
-      "145",
-      "eastern",
-      "sonia",
-      "tarley"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Jacklyn Lancho",
     "secondary": "Fairdale · 145",
     "url": "/wrestler.html?id=35334430132&gender=girls",
@@ -74123,16 +74788,16 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Ava Castro",
+    "name": "Sophia Altehua",
     "secondary": "George Rogers Clark · 145",
-    "url": "/wrestler.html?id=35333411132&gender=girls",
+    "url": "/wrestler.html?id=35333567132&gender=girls",
     "searchTokens": [
       "145",
-      "ava",
-      "castro",
+      "altehua",
       "clark",
       "george",
-      "rogers"
+      "rogers",
+      "sophia"
     ]
   },
   {
@@ -74163,32 +74828,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Scout Brockman",
-    "secondary": "Green County · 145",
-    "url": "/wrestler.html?id=35468199132&gender=girls",
-    "searchTokens": [
-      "145",
-      "brockman",
-      "county",
-      "green",
-      "scout"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Masoka (Ashley) Kilozo",
-    "secondary": "Greenwood · 145",
-    "url": "/wrestler.html?id=35424932132&gender=girls",
-    "searchTokens": [
-      "(ashley)",
-      "145",
-      "greenwood",
-      "kilozo",
-      "masoka"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Jenny White",
     "secondary": "Harrison County · 145",
     "url": "/wrestler.html?id=35436561132&gender=girls",
@@ -74198,6 +74837,19 @@ window.SEARCH_INDEX = [
       "harrison",
       "jenny",
       "white"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Charleigh Olmsted",
+    "secondary": "Henderson County · 145",
+    "url": "/wrestler.html?id=35343286132&gender=girls",
+    "searchTokens": [
+      "145",
+      "charleigh",
+      "county",
+      "henderson",
+      "olmsted"
     ]
   },
   {
@@ -74261,6 +74913,19 @@ window.SEARCH_INDEX = [
       "central",
       "knox",
       "kyra",
+      "newkirk"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kadence Newkirk",
+    "secondary": "Knox Central · 145",
+    "url": "/wrestler.html?id=35900959132&gender=girls",
+    "searchTokens": [
+      "145",
+      "central",
+      "kadence",
+      "knox",
       "newkirk"
     ]
   },
@@ -74341,6 +75006,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Mely Serrano",
+    "secondary": "Marion County · 145",
+    "url": "/wrestler.html?id=35507364132&gender=girls",
+    "searchTokens": [
+      "145",
+      "county",
+      "marion",
+      "mely",
+      "serrano"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Brianna Rosenberg",
     "secondary": "Mason County · 145",
     "url": "/wrestler.html?id=35739867132&gender=girls",
@@ -74367,15 +75045,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kylan Phillips",
+    "name": "natalie duncan",
     "secondary": "Mccreary Central · 145",
-    "url": "/wrestler.html?id=35599271132&gender=girls",
+    "url": "/wrestler.html?id=35600318132&gender=girls",
     "searchTokens": [
       "145",
       "central",
-      "kylan",
+      "duncan",
       "mccreary",
-      "phillips"
+      "natalie"
     ]
   },
   {
@@ -74431,19 +75109,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kayleigh Hall",
-    "secondary": "Paducah Tilghman · 145",
-    "url": "/wrestler.html?id=35382371132&gender=girls",
-    "searchTokens": [
-      "145",
-      "hall",
-      "kayleigh",
-      "paducah",
-      "tilghman"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Brianna Slone",
     "secondary": "Perry County Central · 145",
     "url": "/wrestler.html?id=35333413132&gender=girls",
@@ -74471,14 +75136,14 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Madison Price",
+    "name": "Khloee Fisher",
     "secondary": "Russell County · 145",
-    "url": "/wrestler.html?id=35788826132&gender=girls",
+    "url": "/wrestler.html?id=35788819132&gender=girls",
     "searchTokens": [
       "145",
       "county",
-      "madison",
-      "price",
+      "fisher",
+      "khloee",
       "russell"
     ]
   },
@@ -74529,6 +75194,19 @@ window.SEARCH_INDEX = [
       "dawmeisha",
       "shawnee",
       "smith"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Justice Ottesen-Price",
+    "secondary": "Simon Kenton · 145",
+    "url": "/wrestler.html?id=35461754132&gender=girls",
+    "searchTokens": [
+      "145",
+      "justice",
+      "kenton",
+      "ottesen-price",
+      "simon"
     ]
   },
   {
@@ -74608,52 +75286,27 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Loralai Stephens",
-    "secondary": "Trigg County · 145",
-    "url": "/wrestler.html?id=35598266132&gender=girls",
-    "searchTokens": [
-      "145",
-      "county",
-      "loralai",
-      "stephens",
-      "trigg"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "tailor waddell",
+    "name": "emma cheatham",
     "secondary": "Union County · 145",
-    "url": "/wrestler.html?id=35566119132&gender=girls",
+    "url": "/wrestler.html?id=35566195132&gender=girls",
     "searchTokens": [
       "145",
+      "cheatham",
       "county",
-      "tailor",
-      "union",
-      "waddell"
+      "emma",
+      "union"
     ]
   },
   {
     "type": "wrestler",
-    "name": "Isabella Brown",
+    "name": "Jayla Young",
     "secondary": "Valley · 145",
-    "url": "/wrestler.html?id=35515066132&gender=girls",
+    "url": "/wrestler.html?id=35515038132&gender=girls",
     "searchTokens": [
       "145",
-      "brown",
-      "isabella",
-      "valley"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Kristiana Padilla",
-    "secondary": "Valley · 145",
-    "url": "/wrestler.html?id=35902198132&gender=girls",
-    "searchTokens": [
-      "145",
-      "kristiana",
-      "padilla",
-      "valley"
+      "jayla",
+      "valley",
+      "young"
     ]
   },
   {
@@ -74666,19 +75319,6 @@ window.SEARCH_INDEX = [
       "holcomb",
       "jaelynn",
       "walton-verona"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Emily Jones",
-    "secondary": "Whitley County · 145",
-    "url": "/wrestler.html?id=35457081132&gender=girls",
-    "searchTokens": [
-      "145",
-      "county",
-      "emily",
-      "jones",
-      "whitley"
     ]
   },
   {
@@ -75120,19 +75760,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Anna Urbanowski",
-    "secondary": "Caldwell County · 152",
-    "url": "/wrestler.html?id=35345846132&gender=girls",
-    "searchTokens": [
-      "152",
-      "anna",
-      "caldwell",
-      "county",
-      "urbanowski"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Parker Werrmann",
     "secondary": "Campbell County · 152",
     "url": "/wrestler.html?id=35650210132&gender=girls",
@@ -75142,6 +75769,19 @@ window.SEARCH_INDEX = [
       "county",
       "parker",
       "werrmann"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Mariah Koch",
+    "secondary": "Campbell County · 152",
+    "url": "/wrestler.html?id=35387015132&gender=girls",
+    "searchTokens": [
+      "152",
+      "campbell",
+      "county",
+      "koch",
+      "mariah"
     ]
   },
   {
@@ -75207,6 +75847,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Sujana Acharya",
+    "secondary": "Dupont Manual · 152",
+    "url": "/wrestler.html?id=35409970132&gender=girls",
+    "searchTokens": [
+      "152",
+      "acharya",
+      "dupont",
+      "manual",
+      "sujana"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Analiah Parga Lujan",
     "secondary": "Eastern · 152",
     "url": "/wrestler.html?id=35333687132&gender=girls",
@@ -75246,33 +75899,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Sophia Altehua",
-    "secondary": "George Rogers Clark · 152",
-    "url": "/wrestler.html?id=35333567132&gender=girls",
-    "searchTokens": [
-      "152",
-      "altehua",
-      "clark",
-      "george",
-      "rogers",
-      "sophia"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Trinity Coburn",
-    "secondary": "Great Crossing · 152",
-    "url": "/wrestler.html?id=35690826132&gender=girls",
-    "searchTokens": [
-      "152",
-      "coburn",
-      "crossing",
-      "great",
-      "trinity"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Kristina Schmucker",
     "secondary": "Great Crossing · 152",
     "url": "/wrestler.html?id=35641220132&gender=girls",
@@ -75282,6 +75908,19 @@ window.SEARCH_INDEX = [
       "great",
       "kristina",
       "schmucker"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Scout Brockman",
+    "secondary": "Green County · 152",
+    "url": "/wrestler.html?id=35468199132&gender=girls",
+    "searchTokens": [
+      "152",
+      "brockman",
+      "county",
+      "green",
+      "scout"
     ]
   },
   {
@@ -75338,19 +75977,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Charleigh Olmsted",
-    "secondary": "Henderson County · 152",
-    "url": "/wrestler.html?id=35343286132&gender=girls",
-    "searchTokens": [
-      "152",
-      "charleigh",
-      "county",
-      "henderson",
-      "olmsted"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Lillianne Clark",
     "secondary": "Henderson County · 152",
     "url": "/wrestler.html?id=35343552132&gender=girls",
@@ -75360,6 +75986,31 @@ window.SEARCH_INDEX = [
       "county",
       "henderson",
       "lillianne"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kaizley Dunn",
+    "secondary": "Henderson County · 152",
+    "url": "/wrestler.html?id=35343288132&gender=girls",
+    "searchTokens": [
+      "152",
+      "county",
+      "dunn",
+      "henderson",
+      "kaizley"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Emma Hood",
+    "secondary": "Highlands · 152",
+    "url": "/wrestler.html?id=35613108132&gender=girls",
+    "searchTokens": [
+      "152",
+      "emma",
+      "highlands",
+      "hood"
     ]
   },
   {
@@ -75505,19 +76156,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "natalie duncan",
-    "secondary": "Mccreary Central · 152",
-    "url": "/wrestler.html?id=35600318132&gender=girls",
-    "searchTokens": [
-      "152",
-      "central",
-      "duncan",
-      "mccreary",
-      "natalie"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Cali Dople",
     "secondary": "Mccreary Central · 152",
     "url": "/wrestler.html?id=35600347132&gender=girls",
@@ -75527,6 +76165,18 @@ window.SEARCH_INDEX = [
       "central",
       "dople",
       "mccreary"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Allie Childers",
+    "secondary": "Moore · 152",
+    "url": "/wrestler.html?id=37157299132&gender=girls",
+    "searchTokens": [
+      "152",
+      "allie",
+      "childers",
+      "moore"
     ]
   },
   {
@@ -75606,6 +76256,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Bralyn Maynard",
+    "secondary": "Prestonsburg · 152",
+    "url": "/wrestler.html?id=35722086132&gender=girls",
+    "searchTokens": [
+      "152",
+      "bralyn",
+      "maynard",
+      "prestonsburg"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Nevaeh Ruelas",
     "secondary": "Pulaski County · 152",
     "url": "/wrestler.html?id=35373618132&gender=girls",
@@ -75615,32 +76277,6 @@ window.SEARCH_INDEX = [
       "nevaeh",
       "pulaski",
       "ruelas"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Khloee Fisher",
-    "secondary": "Russell County · 152",
-    "url": "/wrestler.html?id=35788819132&gender=girls",
-    "searchTokens": [
-      "152",
-      "county",
-      "fisher",
-      "khloee",
-      "russell"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Justice Ottesen-Price",
-    "secondary": "Simon Kenton · 152",
-    "url": "/wrestler.html?id=35461754132&gender=girls",
-    "searchTokens": [
-      "152",
-      "justice",
-      "kenton",
-      "ottesen-price",
-      "simon"
     ]
   },
   {
@@ -75735,14 +76371,14 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jayla Young",
+    "name": "Isabella Brown",
     "secondary": "Valley · 152",
-    "url": "/wrestler.html?id=35515038132&gender=girls",
+    "url": "/wrestler.html?id=35515066132&gender=girls",
     "searchTokens": [
       "152",
-      "jayla",
-      "valley",
-      "young"
+      "brown",
+      "isabella",
+      "valley"
     ]
   },
   {
@@ -75834,6 +76470,21 @@ window.SEARCH_INDEX = [
       "county",
       "green",
       "scout"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Madison Davis",
+    "secondary": "Lakota West High School · 152",
+    "url": "/wrestler.html?id=OUTSTATE_d5dafb134267&gender=girls",
+    "searchTokens": [
+      "152",
+      "davis",
+      "high",
+      "lakota",
+      "madison",
+      "school",
+      "west"
     ]
   },
   {
@@ -75998,15 +76649,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Slyvanas DeCaire",
-    "secondary": "Evansville Harrison · 152",
-    "url": "/wrestler.html?id=OUTSTATE_5e8835777a46&gender=girls",
+    "name": "Katie Moylan",
+    "secondary": "Jefferson Co. High School Girls · 152",
+    "url": "/wrestler.html?id=OUTSTATE_b78e35ed8eef&gender=girls",
     "searchTokens": [
       "152",
-      "decaire",
-      "evansville",
-      "harrison",
-      "slyvanas"
+      "co.",
+      "girls",
+      "high",
+      "jefferson",
+      "katie",
+      "moylan",
+      "school"
     ]
   },
   {
@@ -76188,6 +76842,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Aubrey Baggett",
+    "secondary": "Bryan Station · 165",
+    "url": "/wrestler.html?id=35640272132&gender=girls",
+    "searchTokens": [
+      "165",
+      "aubrey",
+      "baggett",
+      "bryan",
+      "station"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Journee White",
     "secondary": "Butler · 165",
     "url": "/wrestler.html?id=35333677132&gender=girls",
@@ -76239,19 +76906,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Mariah Koch",
-    "secondary": "Campbell County · 165",
-    "url": "/wrestler.html?id=35387015132&gender=girls",
-    "searchTokens": [
-      "165",
-      "campbell",
-      "county",
-      "koch",
-      "mariah"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "McAyla Steffen",
     "secondary": "Campbell County · 165",
     "url": "/wrestler.html?id=35387124132&gender=girls",
@@ -76273,6 +76927,18 @@ window.SEARCH_INDEX = [
       "campbellsville",
       "carchio",
       "mataya"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Avery Cox",
+    "secondary": "Campbellsville · 165",
+    "url": "/wrestler.html?id=35643470132&gender=girls",
+    "searchTokens": [
+      "165",
+      "avery",
+      "campbellsville",
+      "cox"
     ]
   },
   {
@@ -76340,6 +77006,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Avah Miller",
+    "secondary": "Christian County · 165",
+    "url": "/wrestler.html?id=35640598132&gender=girls",
+    "searchTokens": [
+      "165",
+      "avah",
+      "christian",
+      "county",
+      "miller"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Josslyn Heringer",
     "secondary": "Cooper · 165",
     "url": "/wrestler.html?id=35383800132&gender=girls",
@@ -76389,19 +77068,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Sujana Acharya",
-    "secondary": "Dupont Manual · 165",
-    "url": "/wrestler.html?id=35409970132&gender=girls",
-    "searchTokens": [
-      "165",
-      "acharya",
-      "dupont",
-      "manual",
-      "sujana"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Divine Mujanukaire",
     "secondary": "Fern Creek · 165",
     "url": "/wrestler.html?id=35774462132&gender=girls",
@@ -76424,6 +77090,19 @@ window.SEARCH_INDEX = [
       "campbell",
       "fort",
       "saleigh"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Saydee Johnson",
+    "secondary": "Fort Campbell · 165",
+    "url": "/wrestler.html?id=35521574132&gender=girls",
+    "searchTokens": [
+      "165",
+      "campbell",
+      "fort",
+      "johnson",
+      "saydee"
     ]
   },
   {
@@ -76524,19 +77203,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kaizley Dunn",
-    "secondary": "Henderson County · 165",
-    "url": "/wrestler.html?id=35343288132&gender=girls",
-    "searchTokens": [
-      "165",
-      "county",
-      "dunn",
-      "henderson",
-      "kaizley"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Sianni Appolon",
     "secondary": "Henry Clay · 165",
     "url": "/wrestler.html?id=35398468132&gender=girls",
@@ -76546,18 +77212,6 @@ window.SEARCH_INDEX = [
       "clay",
       "henry",
       "sianni"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Emma Hood",
-    "secondary": "Highlands · 165",
-    "url": "/wrestler.html?id=35613108132&gender=girls",
-    "searchTokens": [
-      "165",
-      "emma",
-      "highlands",
-      "hood"
     ]
   },
   {
@@ -76599,6 +77253,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Abby Powers",
+    "secondary": "John Hardin · 165",
+    "url": "/wrestler.html?id=35333552132&gender=girls",
+    "searchTokens": [
+      "165",
+      "abby",
+      "hardin",
+      "john",
+      "powers"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Miley Brown",
     "secondary": "Knox Central · 165",
     "url": "/wrestler.html?id=35900724132&gender=girls",
@@ -76612,15 +77279,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kadence Newkirk",
-    "secondary": "Knox Central · 165",
-    "url": "/wrestler.html?id=35900959132&gender=girls",
+    "name": "Abby Lucas",
+    "secondary": "LaRue County · 165",
+    "url": "/wrestler.html?id=36398065132&gender=girls",
     "searchTokens": [
       "165",
-      "central",
-      "kadence",
-      "knox",
-      "newkirk"
+      "abby",
+      "county",
+      "larue",
+      "lucas"
     ]
   },
   {
@@ -76660,6 +77327,19 @@ window.SEARCH_INDEX = [
       "central",
       "crutcher",
       "madison"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "SOPHIE BUTTS",
+    "secondary": "Madison Central · 165",
+    "url": "/wrestler.html?id=35333467132&gender=girls",
+    "searchTokens": [
+      "165",
+      "butts",
+      "central",
+      "madison",
+      "sophie"
     ]
   },
   {
@@ -76766,6 +77446,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Madison Cannon",
+    "secondary": "Meade County · 165",
+    "url": "/wrestler.html?id=35689043132&gender=girls",
+    "searchTokens": [
+      "165",
+      "cannon",
+      "county",
+      "madison",
+      "meade"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Mackenzie Carrier",
     "secondary": "Mercer County · 165",
     "url": "/wrestler.html?id=35333647132&gender=girls",
@@ -76813,6 +77506,19 @@ window.SEARCH_INDEX = [
       "calzadilla",
       "carolina",
       "moore"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Aaralynn Boblitt",
+    "secondary": "Nelson County · 165",
+    "url": "/wrestler.html?id=35565735132&gender=girls",
+    "searchTokens": [
+      "165",
+      "aaralynn",
+      "boblitt",
+      "county",
+      "nelson"
     ]
   },
   {
@@ -76879,30 +77585,6 @@ window.SEARCH_INDEX = [
       "county",
       "fletcher",
       "perry"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Kinslee Kells",
-    "secondary": "Pineville · 165",
-    "url": "/wrestler.html?id=35660358132&gender=girls",
-    "searchTokens": [
-      "165",
-      "kells",
-      "kinslee",
-      "pineville"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Bralyn Maynard",
-    "secondary": "Prestonsburg · 165",
-    "url": "/wrestler.html?id=35722086132&gender=girls",
-    "searchTokens": [
-      "165",
-      "bralyn",
-      "maynard",
-      "prestonsburg"
     ]
   },
   {
@@ -77032,6 +77714,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Addisyn Hall",
+    "secondary": "Southwestern · 165",
+    "url": "/wrestler.html?id=35495575132&gender=girls",
+    "searchTokens": [
+      "165",
+      "addisyn",
+      "hall",
+      "southwestern"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Nathalia Newell",
     "secondary": "Southwestern · 165",
     "url": "/wrestler.html?id=35495573132&gender=girls",
@@ -77096,19 +77790,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "emma cheatham",
-    "secondary": "Union County · 165",
-    "url": "/wrestler.html?id=35566195132&gender=girls",
-    "searchTokens": [
-      "165",
-      "cheatham",
-      "county",
-      "emma",
-      "union"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Natalie Tardy",
     "secondary": "Warren Central · 165",
     "url": "/wrestler.html?id=35333642132&gender=girls",
@@ -77143,6 +77824,84 @@ window.SEARCH_INDEX = [
       "hopkins",
       "trinity",
       "whitley"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Jaycee Smith",
+    "secondary": "Whitley County · 165",
+    "url": "/wrestler.html?id=35457167132&gender=girls",
+    "searchTokens": [
+      "165",
+      "county",
+      "jaycee",
+      "smith",
+      "whitley"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Karmann Smith",
+    "secondary": "Crawford County · 165",
+    "url": "/wrestler.html?id=OUTSTATE_357501586e8d&gender=girls",
+    "searchTokens": [
+      "165",
+      "county",
+      "crawford",
+      "karmann",
+      "smith"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Dani Ashby",
+    "secondary": "Floyd Central · 165",
+    "url": "/wrestler.html?id=OUTSTATE_d52c80ddbe04&gender=girls",
+    "searchTokens": [
+      "165",
+      "ashby",
+      "central",
+      "dani",
+      "floyd"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Katelyn Brown",
+    "secondary": "Charlestown · 165",
+    "url": "/wrestler.html?id=OUTSTATE_ffb24046cd91&gender=girls",
+    "searchTokens": [
+      "165",
+      "brown",
+      "charlestown",
+      "katelyn"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Abigail Hawkins",
+    "secondary": "Southridge · 165",
+    "url": "/wrestler.html?id=OUTSTATE_545a4233d55e&gender=girls",
+    "searchTokens": [
+      "165",
+      "abigail",
+      "hawkins",
+      "southridge"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Fieruz Kahsay",
+    "secondary": "Lakota West High School · 165",
+    "url": "/wrestler.html?id=OUTSTATE_fd6fc0804ff9&gender=girls",
+    "searchTokens": [
+      "165",
+      "fieruz",
+      "high",
+      "kahsay",
+      "lakota",
+      "school",
+      "west"
     ]
   },
   {
@@ -77208,6 +77967,18 @@ window.SEARCH_INDEX = [
       "grace",
       "high",
       "school"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kylee Hall",
+    "secondary": "Eastside · 165",
+    "url": "/wrestler.html?id=OUTSTATE_dff5db99b058&gender=girls",
+    "searchTokens": [
+      "165",
+      "eastside",
+      "hall",
+      "kylee"
     ]
   },
   {
@@ -77303,6 +78074,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Ni Sung",
+    "secondary": "Apollo · 185",
+    "url": "/wrestler.html?id=35345358132&gender=girls",
+    "searchTokens": [
+      "185",
+      "apollo",
+      "ni",
+      "sung"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Nevaeh Lopez",
     "secondary": "Ashland Blazer · 185",
     "url": "/wrestler.html?id=35333427132&gender=girls",
@@ -77353,6 +78136,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Nyah Helton",
+    "secondary": "Bell County · 185",
+    "url": "/wrestler.html?id=35380229132&gender=girls",
+    "searchTokens": [
+      "185",
+      "bell",
+      "county",
+      "helton",
+      "nyah"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Jozelyn Inman",
     "secondary": "Bell County · 185",
     "url": "/wrestler.html?id=35369122132&gender=girls",
@@ -77366,15 +78162,28 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Aubrey Baggett",
-    "secondary": "Bryan Station · 185",
-    "url": "/wrestler.html?id=35640272132&gender=girls",
+    "name": "Faith Sapp",
+    "secondary": "Bourbon County · 185",
+    "url": "/wrestler.html?id=35333613132&gender=girls",
     "searchTokens": [
       "185",
-      "aubrey",
-      "baggett",
-      "bryan",
-      "station"
+      "bourbon",
+      "county",
+      "faith",
+      "sapp"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Nyomy Bussey",
+    "secondary": "Boyd County · 185",
+    "url": "/wrestler.html?id=37160607132&gender=girls",
+    "searchTokens": [
+      "185",
+      "boyd",
+      "bussey",
+      "county",
+      "nyomy"
     ]
   },
   {
@@ -77413,18 +78222,6 @@ window.SEARCH_INDEX = [
       "county",
       "davine",
       "oliver"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Avery Cox",
-    "secondary": "Campbellsville · 185",
-    "url": "/wrestler.html?id=35643470132&gender=girls",
-    "searchTokens": [
-      "185",
-      "avery",
-      "campbellsville",
-      "cox"
     ]
   },
   {
@@ -77499,19 +78296,6 @@ window.SEARCH_INDEX = [
       "christian",
       "county",
       "kira"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Avah Miller",
-    "secondary": "Christian County · 185",
-    "url": "/wrestler.html?id=35640598132&gender=girls",
-    "searchTokens": [
-      "185",
-      "avah",
-      "christian",
-      "county",
-      "miller"
     ]
   },
   {
@@ -77659,6 +78443,19 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Jhoana Pulquero",
+    "secondary": "Henry Clay · 185",
+    "url": "/wrestler.html?id=36274190132&gender=girls",
+    "searchTokens": [
+      "185",
+      "clay",
+      "henry",
+      "jhoana",
+      "pulquero"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Kiana Morris",
     "secondary": "Holmes · 185",
     "url": "/wrestler.html?id=35510583132&gender=girls",
@@ -77708,19 +78505,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Abby Powers",
-    "secondary": "John Hardin · 185",
-    "url": "/wrestler.html?id=35333552132&gender=girls",
-    "searchTokens": [
-      "185",
-      "abby",
-      "hardin",
-      "john",
-      "powers"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Michelle Osoro",
     "secondary": "John Hardin · 185",
     "url": "/wrestler.html?id=35671662132&gender=girls",
@@ -77730,19 +78514,6 @@ window.SEARCH_INDEX = [
       "john",
       "michelle",
       "osoro"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Abby Lucas",
-    "secondary": "LaRue County · 185",
-    "url": "/wrestler.html?id=36398065132&gender=girls",
-    "searchTokens": [
-      "185",
-      "abby",
-      "county",
-      "larue",
-      "lucas"
     ]
   },
   {
@@ -77812,19 +78583,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "SOPHIE BUTTS",
-    "secondary": "Madison Central · 185",
-    "url": "/wrestler.html?id=35333467132&gender=girls",
-    "searchTokens": [
-      "185",
-      "butts",
-      "central",
-      "madison",
-      "sophie"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "EMMA MITCHELL",
     "secondary": "Madison Central · 185",
     "url": "/wrestler.html?id=35445256132&gender=girls",
@@ -77889,19 +78647,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Madison Cannon",
-    "secondary": "Meade County · 185",
-    "url": "/wrestler.html?id=35689043132&gender=girls",
-    "searchTokens": [
-      "185",
-      "cannon",
-      "county",
-      "madison",
-      "meade"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Jaycee Foley",
     "secondary": "Mercer County · 185",
     "url": "/wrestler.html?id=35333649132&gender=girls",
@@ -77915,6 +78660,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Diane Alice",
+    "secondary": "Moore · 185",
+    "url": "/wrestler.html?id=37156797132&gender=girls",
+    "searchTokens": [
+      "185",
+      "alice",
+      "diane",
+      "moore"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Jayla Jones",
     "secondary": "Moore · 185",
     "url": "/wrestler.html?id=35333393132&gender=girls",
@@ -77923,19 +78680,6 @@ window.SEARCH_INDEX = [
       "jayla",
       "jones",
       "moore"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Aaralynn Boblitt",
-    "secondary": "Nelson County · 185",
-    "url": "/wrestler.html?id=35565735132&gender=girls",
-    "searchTokens": [
-      "185",
-      "aaralynn",
-      "boblitt",
-      "county",
-      "nelson"
     ]
   },
   {
@@ -77979,6 +78723,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Raelynn Pendergrass",
+    "secondary": "Owensboro · 185",
+    "url": "/wrestler.html?id=35674535132&gender=girls",
+    "searchTokens": [
+      "185",
+      "owensboro",
+      "pendergrass",
+      "raelynn"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Graycen Roberts",
     "secondary": "Owensboro · 185",
     "url": "/wrestler.html?id=35383883132&gender=girls",
@@ -77987,6 +78743,31 @@ window.SEARCH_INDEX = [
       "graycen",
       "owensboro",
       "roberts"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Flavia Sales Perez",
+    "secondary": "Owensboro · 185",
+    "url": "/wrestler.html?id=35674521132&gender=girls",
+    "searchTokens": [
+      "185",
+      "flavia",
+      "owensboro",
+      "perez",
+      "sales"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kinslee Kells",
+    "secondary": "Pineville · 185",
+    "url": "/wrestler.html?id=35660358132&gender=girls",
+    "searchTokens": [
+      "185",
+      "kells",
+      "kinslee",
+      "pineville"
     ]
   },
   {
@@ -78092,18 +78873,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Addisyn Hall",
-    "secondary": "Southwestern · 185",
-    "url": "/wrestler.html?id=35495575132&gender=girls",
-    "searchTokens": [
-      "185",
-      "addisyn",
-      "hall",
-      "southwestern"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Lyric Stanfield",
     "secondary": "Taylor County · 185",
     "url": "/wrestler.html?id=35333618132&gender=girls",
@@ -78112,6 +78881,19 @@ window.SEARCH_INDEX = [
       "county",
       "lyric",
       "stanfield",
+      "taylor"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Addysen Dotson",
+    "secondary": "Taylor County · 185",
+    "url": "/wrestler.html?id=35333620132&gender=girls",
+    "searchTokens": [
+      "185",
+      "addysen",
+      "county",
+      "dotson",
       "taylor"
     ]
   },
@@ -78168,14 +78950,14 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jaycee Smith",
+    "name": "Makenna Sulfridge",
     "secondary": "Whitley County · 185",
-    "url": "/wrestler.html?id=35457167132&gender=girls",
+    "url": "/wrestler.html?id=35457269132&gender=girls",
     "searchTokens": [
       "185",
       "county",
-      "jaycee",
-      "smith",
+      "makenna",
+      "sulfridge",
       "whitley"
     ]
   },
@@ -78190,6 +78972,70 @@ window.SEARCH_INDEX = [
       "huddleston",
       "nellie",
       "whitley"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Ava Wills",
+    "secondary": "Terre Haute North · 185",
+    "url": "/wrestler.html?id=OUTSTATE_c05b21cf6787&gender=girls",
+    "searchTokens": [
+      "185",
+      "ava",
+      "haute",
+      "north",
+      "terre",
+      "wills"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Larissa Ahmodu",
+    "secondary": "Greenwood · 185",
+    "url": "/wrestler.html?id=OUTSTATE_f64cd061465c&gender=girls",
+    "searchTokens": [
+      "185",
+      "ahmodu",
+      "greenwood",
+      "larissa"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Keegan LaRoche",
+    "secondary": "Southridge · 185",
+    "url": "/wrestler.html?id=OUTSTATE_3b5e7156b46d&gender=girls",
+    "searchTokens": [
+      "185",
+      "keegan",
+      "laroche",
+      "southridge"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Abrianna Hilaire",
+    "secondary": "Evansville Bosse · 185",
+    "url": "/wrestler.html?id=OUTSTATE_ec4fa740d20a&gender=girls",
+    "searchTokens": [
+      "185",
+      "abrianna",
+      "bosse",
+      "evansville",
+      "hilaire"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "Kailin Longwell",
+    "secondary": "Hammond Clark · 185",
+    "url": "/wrestler.html?id=OUTSTATE_be336d6338a5&gender=girls",
+    "searchTokens": [
+      "185",
+      "clark",
+      "hammond",
+      "kailin",
+      "longwell"
     ]
   },
   {
@@ -78316,18 +79162,6 @@ window.SEARCH_INDEX = [
       "terre",
       "tristaly",
       "vigo"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Keegan LaRoche",
-    "secondary": "Southridge · 185",
-    "url": "/wrestler.html?id=OUTSTATE_3b5e7156b46d&gender=girls",
-    "searchTokens": [
-      "185",
-      "keegan",
-      "laroche",
-      "southridge"
     ]
   },
   {
@@ -78526,19 +79360,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Nyah Helton",
-    "secondary": "Bell County · 235",
-    "url": "/wrestler.html?id=35380229132&gender=girls",
-    "searchTokens": [
-      "235",
-      "bell",
-      "county",
-      "helton",
-      "nyah"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Kaylee Hopkins",
     "secondary": "Bell County · 235",
     "url": "/wrestler.html?id=35369134132&gender=girls",
@@ -78561,19 +79382,6 @@ window.SEARCH_INDEX = [
       "county",
       "lewis",
       "shirley"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Faith Sapp",
-    "secondary": "Bourbon County · 235",
-    "url": "/wrestler.html?id=35333613132&gender=girls",
-    "searchTokens": [
-      "235",
-      "bourbon",
-      "county",
-      "faith",
-      "sapp"
     ]
   },
   {
@@ -78933,6 +79741,18 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "A`Niyah Groves",
+    "secondary": "Hopkinsville · 235",
+    "url": "/wrestler.html?id=35567218132&gender=girls",
+    "searchTokens": [
+      "235",
+      "a`niyah",
+      "groves",
+      "hopkinsville"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Khloe Alfred",
     "secondary": "John Hardin · 235",
     "url": "/wrestler.html?id=35511208132&gender=girls",
@@ -79239,19 +80059,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Addysen Dotson",
-    "secondary": "Taylor County · 235",
-    "url": "/wrestler.html?id=35333620132&gender=girls",
-    "searchTokens": [
-      "235",
-      "addysen",
-      "county",
-      "dotson",
-      "taylor"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Gabby Polston",
     "secondary": "Taylor County · 235",
     "url": "/wrestler.html?id=35333628132&gender=girls",
@@ -79392,19 +80199,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Makenna Sulfridge",
-    "secondary": "Whitley County · 235",
-    "url": "/wrestler.html?id=35457269132&gender=girls",
-    "searchTokens": [
-      "235",
-      "county",
-      "makenna",
-      "sulfridge",
-      "whitley"
-    ]
-  },
-  {
-    "type": "wrestler",
     "name": "Mariya Reed",
     "secondary": "Woodford County · 235",
     "url": "/wrestler.html?id=35333551132&gender=girls",
@@ -79489,6 +80283,20 @@ window.SEARCH_INDEX = [
       "235",
       "conley",
       "ella",
+      "evansville",
+      "f.j.",
+      "reitz"
+    ]
+  },
+  {
+    "type": "wrestler",
+    "name": "EllaAnn Conley",
+    "secondary": "Evansville F.j. Reitz · 235",
+    "url": "/wrestler.html?id=OUTSTATE_31f2c31b4663&gender=girls",
+    "searchTokens": [
+      "235",
+      "conley",
+      "ellaann",
       "evansville",
       "f.j.",
       "reitz"
@@ -79593,6 +80401,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Nadia Johnson",
+    "secondary": "Chesapeake High School · 235",
+    "url": "/wrestler.html?id=OUTSTATE_f2d9538f5c3e&gender=girls",
+    "searchTokens": [
+      "235",
+      "chesapeake",
+      "high",
+      "johnson",
+      "nadia",
+      "school"
+    ]
+  },
+  {
+    "type": "wrestler",
     "name": "Paxtyn Gibbs",
     "secondary": "North Posey · 235",
     "url": "/wrestler.html?id=OUTSTATE_47531587b540&gender=girls",
@@ -79614,20 +80436,6 @@ window.SEARCH_INDEX = [
       "d.",
       "jeffersonville",
       "tripp"
-    ]
-  },
-  {
-    "type": "wrestler",
-    "name": "Nadia Johnson",
-    "secondary": "Chesapeake High School · 235",
-    "url": "/wrestler.html?id=OUTSTATE_f2d9538f5c3e&gender=girls",
-    "searchTokens": [
-      "235",
-      "chesapeake",
-      "high",
-      "johnson",
-      "nadia",
-      "school"
     ]
   },
   {
@@ -80201,6 +81009,26 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "team",
+    "name": "Corydon Central",
+    "secondary": "KY HS",
+    "url": "/team.html?team=corydon_central&gender=girls",
+    "searchTokens": [
+      "central",
+      "corydon"
+    ]
+  },
+  {
+    "type": "team",
+    "name": "Crawford County",
+    "secondary": "KY HS",
+    "url": "/team.html?team=crawford_county&gender=girls",
+    "searchTokens": [
+      "county",
+      "crawford"
+    ]
+  },
+  {
+    "type": "team",
     "name": "Daniel Boone Girls",
     "secondary": "KY HS",
     "url": "/team.html?team=daniel_boone_girls&gender=girls",
@@ -80320,6 +81148,15 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "team",
+    "name": "Eastside",
+    "secondary": "KY HS",
+    "url": "/team.html?team=eastside&gender=girls",
+    "searchTokens": [
+      "eastside"
+    ]
+  },
+  {
+    "type": "team",
     "name": "Eaton",
     "secondary": "KY HS",
     "url": "/team.html?team=eaton&gender=girls",
@@ -80356,16 +81193,6 @@ window.SEARCH_INDEX = [
       "evansville",
       "f.j.",
       "reitz"
-    ]
-  },
-  {
-    "type": "team",
-    "name": "Evansville Harrison",
-    "secondary": "KY HS",
-    "url": "/team.html?team=evansville_harrison&gender=girls",
-    "searchTokens": [
-      "evansville",
-      "harrison"
     ]
   },
   {
@@ -80415,6 +81242,15 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "creek",
       "fern"
+    ]
+  },
+  {
+    "type": "team",
+    "name": "Finneytown",
+    "secondary": "KY HS",
+    "url": "/team.html?team=finneytown&gender=girls",
+    "searchTokens": [
+      "finneytown"
     ]
   },
   {
@@ -80591,6 +81427,16 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "team",
+    "name": "Hammond Clark",
+    "secondary": "KY HS",
+    "url": "/team.html?team=hammond_clark&gender=girls",
+    "searchTokens": [
+      "clark",
+      "hammond"
+    ]
+  },
+  {
+    "type": "team",
     "name": "Harlan County",
     "secondary": "KY HS",
     "url": "/team.html?team=harlan_county&gender=girls",
@@ -80751,6 +81597,19 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "in",
       "jasper,"
+    ]
+  },
+  {
+    "type": "team",
+    "name": "Jefferson Co. High School Girls",
+    "secondary": "KY HS",
+    "url": "/team.html?team=jefferson_co_high_school_girls&gender=girls",
+    "searchTokens": [
+      "co.",
+      "girls",
+      "high",
+      "jefferson",
+      "school"
     ]
   },
   {
@@ -80937,6 +81796,16 @@ window.SEARCH_INDEX = [
     "url": "/team.html?team=male&gender=girls",
     "searchTokens": [
       "male"
+    ]
+  },
+  {
+    "type": "team",
+    "name": "Marion (H.S.)",
+    "secondary": "KY HS",
+    "url": "/team.html?team=marion_hs&gender=girls",
+    "searchTokens": [
+      "(h.s.)",
+      "marion"
     ]
   },
   {
@@ -81225,6 +82094,16 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "county",
       "ohio"
+    ]
+  },
+  {
+    "type": "team",
+    "name": "Oldham County",
+    "secondary": "KY HS",
+    "url": "/team.html?team=oldham_county&gender=girls",
+    "searchTokens": [
+      "county",
+      "oldham"
     ]
   },
   {
@@ -81535,6 +82414,16 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "team",
+    "name": "South Dearborn",
+    "secondary": "KY HS",
+    "url": "/team.html?team=south_dearborn&gender=girls",
+    "searchTokens": [
+      "dearborn",
+      "south"
+    ]
+  },
+  {
+    "type": "team",
     "name": "South Oldham",
     "secondary": "KY HS",
     "url": "/team.html?team=south_oldham&gender=girls",
@@ -81637,6 +82526,17 @@ window.SEARCH_INDEX = [
     "url": "/team.html?team=tecumseh&gender=girls",
     "searchTokens": [
       "tecumseh"
+    ]
+  },
+  {
+    "type": "team",
+    "name": "Terre Haute North",
+    "secondary": "KY HS",
+    "url": "/team.html?team=terre_haute_north&gender=girls",
+    "searchTokens": [
+      "haute",
+      "north",
+      "terre"
     ]
   },
   {

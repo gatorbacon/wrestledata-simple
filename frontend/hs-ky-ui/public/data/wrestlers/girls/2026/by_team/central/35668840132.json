@@ -3,13 +3,13 @@
   "name": "Alaina May",
   "team": "Central",
   "team_slug": "central",
-  "team_rank": 18,
+  "team_rank": 17,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 44,
+  "current_rank": 46,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "1-4",
+    "overall": "1-6",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 92.6,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 88.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,38 +28,70 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35383800132",
-      "opponent_rank": 52,
+      "opponent_rank": 55,
       "opponent_name": "Josslyn Heringer",
       "method": "Fall 0:26"
     },
     "worst_loss": {
       "opponent_id": "35668838132",
-      "opponent_rank": 43,
+      "opponent_rank": 45,
       "opponent_name": "Rachel Saint Louis",
       "method": "Fall 1:38"
     }
   },
   "match_list": [
     {
+      "date": "2025-12-29",
+      "opponent_id": "35640275132",
+      "opponent_name": "Bre`Aijah Harris",
+      "opponent_team": "Bryan Station",
+      "opponent_team_rank": 29,
+      "opponent_weight": 165,
+      "opponent_rank": 39,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:39",
+      "event": "Ladies Woodford County Invitational",
+      "mv_impact": -5.16
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35334593132",
+      "opponent_name": "Maddisyn Miles",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": 46,
+      "opponent_weight": 165,
+      "opponent_rank": 27,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ladies Woodford County Invitational",
+      "mv_impact": -4.29
+    },
+    {
       "date": "2025-12-19",
       "opponent_id": "35668838132",
       "opponent_name": "Rachel Saint Louis",
       "opponent_team": "Central",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 17,
       "opponent_weight": 165,
-      "opponent_rank": 43,
+      "opponent_rank": 45,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:38",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": -6.29
+      "mv_impact": -6.58
     },
     {
       "date": "2025-12-19",
@@ -68,53 +100,53 @@
       "opponent_team": "Cooper",
       "opponent_team_rank": 35,
       "opponent_weight": 165,
-      "opponent_rank": 52,
+      "opponent_rank": 55,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:26",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 5.04
+      "mv_impact": 4.85
     },
     {
       "date": "2025-12-19",
       "opponent_id": "35436579132",
       "opponent_name": "Kynleigh Ward",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 14,
       "opponent_weight": 165,
-      "opponent_rank": 17,
+      "opponent_rank": 15,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:19",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": -4.88
+      "mv_impact": -4.17
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35385056132",
       "opponent_name": "Aniya Bryant",
       "opponent_team": "Male",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 44,
       "opponent_weight": 165,
-      "opponent_rank": 29,
+      "opponent_rank": 28,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -4.43
+      "mv_impact": -4.38
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35385649132",
       "opponent_name": "Lyric Knox",
       "opponent_team": "Male",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 44,
       "opponent_weight": 165,
       "opponent_rank": 33,
       "weight_class": "165",
@@ -123,7 +155,7 @@
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -5.12
+      "mv_impact": -4.83
     }
   ]
 }

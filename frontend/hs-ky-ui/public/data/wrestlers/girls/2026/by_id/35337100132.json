@@ -3,37 +3,37 @@
   "name": "Christine Taylor",
   "team": "Russellville",
   "team_slug": "russellville",
-  "team_rank": 54,
+  "team_rank": 51,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 17,
+  "current_rank": 14,
   "record": {
-    "overall": "7-4",
-    "vs_ranked": "7-4",
-    "vs_top10": "0-4",
-    "vs_top25": "1-4"
+    "overall": "10-6",
+    "vs_ranked": "9-6",
+    "vs_top10": "0-6",
+    "vs_top25": "0-6"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 108.8,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 107.9,
+    "pin_rate": 0.9,
+    "bonus_rate": 0.9,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 9
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
-    "ranked_losses": 4,
+    "ranked_wins": 9,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 4,
+    "top10_losses": 6,
     "win_over_highest_rank": {
       "opponent_id": "35345845132",
-      "opponent_rank": 24,
+      "opponent_rank": 26,
       "opponent_name": "Aniyaree Wilson",
       "method": "Fall 0:58"
     },
@@ -46,11 +46,11 @@
   },
   "match_list": [
     {
-      "date": "2025-12-22",
+      "date": "2026-01-06",
       "opponent_id": "35343525132",
       "opponent_name": "Kailyn Franks",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": null,
       "opponent_weight": 132,
       "opponent_rank": 3,
       "weight_class": "132",
@@ -58,31 +58,104 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Russellville",
-      "mv_impact": -1.88
+      "event": "vs. Russellville"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35565001132",
+      "opponent_name": "brailey jackson",
+      "opponent_team": "Union County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 1,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union County"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35345021132",
+      "opponent_name": "Lanah Gelarden",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": 22,
+      "opponent_weight": 132,
+      "opponent_rank": 62,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russellville"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35343525132",
+      "opponent_name": "Kailyn Franks",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 3,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russellville"
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35510918132",
       "opponent_name": "Maxine Rhinesmith",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 3,
       "opponent_weight": 132,
-      "opponent_rank": 28,
+      "opponent_rank": 31,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:27",
-      "event": "vs. Russellville",
-      "mv_impact": 7.15
+      "event": "vs. Russellville"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Union County"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35635583132",
+      "opponent_name": "Ezri Brown",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 55,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. South Warren"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35565001132",
       "opponent_name": "brailey jackson",
       "opponent_team": "Union County",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": null,
       "opponent_weight": 126,
       "opponent_rank": 1,
       "weight_class": "132",
@@ -90,8 +163,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:42",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -1.28
+      "event": "2025 Ohio County Girls` Invitational"
     },
     {
       "date": "2025-12-06",
@@ -100,21 +172,20 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 132,
-      "opponent_rank": 24,
+      "opponent_rank": 26,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 6.7
+      "event": "2025 Ohio County Girls` Invitational"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35343525132",
       "opponent_name": "Kailyn Franks",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": null,
       "opponent_weight": 132,
       "opponent_rank": 3,
       "weight_class": "132",
@@ -122,24 +193,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -1.88
+      "event": "2025 Ohio County Girls` Invitational"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35563309132",
       "opponent_name": "Evelyn Rugama",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 11,
       "opponent_weight": 132,
-      "opponent_rank": 44,
+      "opponent_rank": 51,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:21",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 6.22
+      "event": "2025 Ohio County Girls` Invitational"
     },
     {
       "date": "2025-12-06",
@@ -148,14 +217,13 @@
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 32,
+      "opponent_rank": 36,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:27",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 6.1
+      "event": "2025 Ohio County Girls` Invitational"
     },
     {
       "date": "2025-12-06",
@@ -164,21 +232,20 @@
       "opponent_team": "South Warren",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 40,
+      "opponent_rank": 45,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:24",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 5.71
+      "event": "2025 Ohio County Girls` Invitational"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35343525132",
       "opponent_name": "Kailyn Franks",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": null,
       "opponent_weight": 132,
       "opponent_rank": 3,
       "weight_class": "132",
@@ -186,24 +253,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "RVK Lady Panther Classic",
-      "mv_impact": -1.88
+      "event": "RVK Lady Panther Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35567250132",
       "opponent_name": "Juliette Aguero",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 41,
       "opponent_weight": 132,
-      "opponent_rank": 57,
+      "opponent_rank": 64,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:13",
-      "event": "RVK Lady Panther Classic",
-      "mv_impact": 5.16
+      "event": "RVK Lady Panther Classic"
     },
     {
       "date": "2025-11-29",
@@ -212,19 +277,18 @@
       "opponent_team": "South Warren",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 40,
+      "opponent_rank": 45,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:28",
-      "event": "RVK Lady Panther Classic",
-      "mv_impact": 5.71
+      "event": "RVK Lady Panther Classic"
     }
   ],
   "bonus": {
-    "top33_wins": 3,
+    "top33_wins": 2,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.8181818181818181
+    "top33_bonus_ev_shrunk": 1.9714285714285715
   }
 }

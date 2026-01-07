@@ -164,7 +164,8 @@ function renderLeaderboard() {
     teamTd.className = "name";
     const teamLink = document.createElement("a");
     const teamSlug = teamNameToSlug(team.team);
-    teamLink.href = `/team.html?team=${teamSlug}`;
+    const teamURL = buildPageURL('team.html', currentGender, { team: teamSlug });
+    teamLink.href = teamURL.startsWith('/') ? teamURL : `/${teamURL}`;
     teamLink.textContent = team.team;
     teamTd.appendChild(teamLink);
     tr.appendChild(teamTd);
@@ -310,7 +311,8 @@ function renderLeaderboard() {
           wrestlerTd.className = "wrestler-col-expanded";
           wrestlerTd.style.cssText = "width: 210px; min-width: 210px; max-width: 210px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;";
           const wrestlerLink = document.createElement("a");
-          wrestlerLink.href = `/wrestler.html?id=${weightData.wrestler_id}`;
+          const wrestlerURL = buildPageURL('wrestler.html', currentGender, { id: weightData.wrestler_id });
+          wrestlerLink.href = wrestlerURL.startsWith('/') ? wrestlerURL : `/${wrestlerURL}`;
           wrestlerLink.textContent = weightData.name || "Unknown";
           wrestlerTd.appendChild(wrestlerLink);
           row.appendChild(wrestlerTd);

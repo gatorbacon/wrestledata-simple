@@ -3,23 +3,23 @@
   "name": "Aaliyah Stephen",
   "team": "Boyd County",
   "team_slug": "boyd_county",
-  "team_rank": 29,
+  "team_rank": 28,
   "weight_class": 100,
   "year": 2026,
-  "current_rank": 42,
+  "current_rank": 45,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 83.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,16 +28,70 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35897898132",
+      "opponent_rank": 36,
+      "opponent_name": "Madison Daughtery",
+      "method": "Fall 2:36"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35369128132",
+      "opponent_name": "Mia Barnett",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 100,
+      "opponent_rank": 35,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Girls Hatfield McCoy 32 2025",
+      "mv_impact": -9.58
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35369132132",
+      "opponent_name": "Novalee Goins",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 100,
+      "opponent_rank": 16,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "Girls Hatfield McCoy 32 2025",
+      "mv_impact": -6.44
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35897898132",
+      "opponent_name": "Madison Daughtery",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 28,
+      "opponent_weight": 100,
+      "opponent_rank": 36,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "Girls Hatfield McCoy 32 2025",
+      "mv_impact": -8.9
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.6875
+    "top33_bonus_ev_shrunk": 1.9285714285714286
   }
 }

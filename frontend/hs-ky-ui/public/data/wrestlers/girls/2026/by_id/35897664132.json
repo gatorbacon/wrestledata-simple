@@ -3,23 +3,23 @@
   "name": "Tylynn Gilliam",
   "team": "Boyd County",
   "team_slug": "boyd_county",
-  "team_rank": 29,
+  "team_rank": 28,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 76,
+  "current_rank": 72,
   "record": {
     "overall": "0-5",
     "vs_ranked": "0-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-4"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 91.0,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 90.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -33,29 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35635841132",
-      "opponent_rank": 50,
-      "opponent_name": "Abbie Howard",
-      "method": "Fall 0:00"
+      "opponent_id": "35333418132",
+      "opponent_rank": 39,
+      "opponent_name": "Chyanne Maggard",
+      "method": "Fall 0:39"
     }
   },
   "match_list": [
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35333418132",
-      "opponent_name": "Chyanne Maggard",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 24,
-      "opponent_weight": 120,
-      "opponent_rank": 14,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:39",
-      "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -4.29
-    },
     {
       "date": "2025-12-13",
       "opponent_id": "35635841132",
@@ -63,30 +47,30 @@
       "opponent_team": "Greenup County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 50,
+      "opponent_rank": 38,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -6.0
+      "mv_impact": -4.82
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35334594132",
       "opponent_name": "Kaitlyn Baker",
       "opponent_team": "Montgomery County",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 46,
       "opponent_weight": 120,
-      "opponent_rank": 15,
+      "opponent_rank": 16,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -4.68
+      "mv_impact": -4.79
     },
     {
       "date": "2025-12-13",
@@ -95,14 +79,30 @@
       "opponent_team": "East Carter",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 12,
+      "opponent_rank": 34,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -3.92
+      "mv_impact": -4.49
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35333418132",
+      "opponent_name": "Chyanne Maggard",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 23,
+      "opponent_weight": 126,
+      "opponent_rank": 39,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "Ashland Invitational Ladies Tournament",
+      "mv_impact": -5.29
     },
     {
       "date": "2025-12-06",
@@ -111,19 +111,19 @@
       "opponent_team": "East Carter",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 12,
+      "opponent_rank": 34,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "AWC Invitational",
-      "mv_impact": -3.92
+      "mv_impact": -4.49
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.75
+    "top33_bonus_ev_shrunk": 1.625
   }
 }

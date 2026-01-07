@@ -3,33 +3,33 @@
   "name": "Mia Green",
   "team": "North Hardin",
   "team_slug": "north_hardin",
-  "team_rank": 5,
+  "team_rank": 12,
   "weight_class": 107,
   "year": 2026,
   "current_rank": 5,
   "record": {
-    "overall": "9-2",
-    "vs_ranked": "9-2",
-    "vs_top10": "2-2",
-    "vs_top25": "6-2"
+    "overall": "14-2",
+    "vs_ranked": "14-2",
+    "vs_top10": "4-2",
+    "vs_top25": "10-2"
   },
   "metrics": {
-    "pf7": 6.0,
-    "pa7": 3.67,
-    "pd7": 2.33,
-    "si_plus": 96.3,
-    "df_plus": 109.2,
-    "apr_plus": 108.7,
-    "pin_rate": 0.778,
-    "bonus_rate": 0.889,
+    "pf7": 5.25,
+    "pa7": 3.25,
+    "pd7": 2.0,
+    "si_plus": 101.1,
+    "df_plus": 109.6,
+    "apr_plus": 111.3,
+    "pin_rate": 0.786,
+    "bonus_rate": 0.857,
     "majors": 1,
     "techs": 0,
-    "pins": 7
+    "pins": 11
   },
   "opponent_breakdown": {
-    "ranked_wins": 9,
+    "ranked_wins": 14,
     "ranked_losses": 2,
-    "top10_wins": 2,
+    "top10_wins": 4,
     "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35333448132",
@@ -46,6 +46,86 @@
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35739869132",
+      "opponent_name": "Paige Collins",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": 44,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": 2.7
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35600310132",
+      "opponent_name": "keyonna mitchell",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 107,
+      "opponent_rank": 26,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:12",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": 4.72
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35457159132",
+      "opponent_name": "Izabella Herndon",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 7,
+      "opponent_weight": 107,
+      "opponent_rank": 17,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:21",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": 5.79
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35386164132",
+      "opponent_name": "symphony sharp",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": 18,
+      "weight_class": "114",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:49",
+      "event": "Ladies Woodford County Invitational",
+      "mv_impact": 6.03
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35461604132",
+      "opponent_name": "McKenzie Ratliff",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 52,
+      "opponent_weight": 107,
+      "opponent_rank": 20,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:44",
+      "event": "Ladies Woodford County Invitational",
+      "mv_impact": 4.27
+    },
+    {
       "date": "2025-12-29",
       "opponent_id": "35333548132",
       "opponent_name": "Genevieve Cox",
@@ -59,23 +139,23 @@
       "score": "10-0",
       "duration": "7:00",
       "event": "Ladies Woodford County Invitational",
-      "mv_impact": 7.15
+      "mv_impact": 7.49
     },
     {
-      "date": "2025-12-29",
-      "opponent_id": "35386164132",
-      "opponent_name": "symphony sharp",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": null,
-      "opponent_weight": 114,
-      "opponent_rank": 48,
-      "weight_class": "114",
+      "date": "2025-12-20",
+      "opponent_id": "35333614132",
+      "opponent_name": "Rialee Boyd",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 107,
+      "opponent_rank": 3,
+      "weight_class": "107",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:49",
-      "event": "Ladies Woodford County Invitational",
-      "mv_impact": 3.76
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "5th Annual Cardinal Clash Ladies Tourn",
+      "mv_impact": 5.62
     },
     {
       "date": "2025-12-20",
@@ -91,7 +171,7 @@
       "score": "9-3",
       "duration": "7:00",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": 0.32
+      "mv_impact": 0.44
     },
     {
       "date": "2025-12-13",
@@ -107,23 +187,23 @@
       "score": "5-2",
       "duration": "7:00",
       "event": "vs. North Hardin",
-      "mv_impact": 5.99
+      "mv_impact": 6.68
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35436576132",
       "opponent_name": "Macayla Pike",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 14,
       "opponent_weight": 107,
-      "opponent_rank": 16,
+      "opponent_rank": 14,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. North Hardin",
-      "mv_impact": 5.64
+      "mv_impact": 6.84
     },
     {
       "date": "2025-12-13",
@@ -132,14 +212,14 @@
       "opponent_team": "Logan County",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 28,
+      "opponent_rank": 30,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:14",
       "event": "vs. North Hardin",
-      "mv_impact": 4.37
+      "mv_impact": 4.64
     },
     {
       "date": "2025-12-06",
@@ -155,30 +235,30 @@
       "score": null,
       "duration": "1:48",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 5.59
+      "mv_impact": 5.61
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35461604132",
       "opponent_name": "McKenzie Ratliff",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 52,
       "opponent_weight": 107,
-      "opponent_rank": 21,
+      "opponent_rank": 20,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:06",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 4.23
+      "mv_impact": 4.27
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35333614132",
       "opponent_name": "Rialee Boyd",
       "opponent_team": "Taylor County",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 55,
       "opponent_weight": 107,
       "opponent_rank": 3,
       "weight_class": "107",
@@ -187,44 +267,44 @@
       "score": null,
       "duration": "3:37",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -3.62
+      "mv_impact": -3.38
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35337103132",
       "opponent_name": "Chloey Burden",
       "opponent_team": "Russellville",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 51,
       "opponent_weight": 107,
-      "opponent_rank": 37,
+      "opponent_rank": 31,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:16",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 2.61
+      "mv_impact": 3.61
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35333369132",
       "opponent_name": "Teagan Hundley",
       "opponent_team": "Boyle County",
-      "opponent_team_rank": 17,
-      "opponent_weight": 107,
-      "opponent_rank": 18,
+      "opponent_team_rank": 13,
+      "opponent_weight": 100,
+      "opponent_rank": 9,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. North Hardin",
-      "mv_impact": 5.21
+      "mv_impact": 6.25
     }
   ],
   "bonus": {
-    "top33_wins": 6,
-    "top33_bonus_ev_raw": 1.8333333333333333,
-    "top33_bonus_ev_shrunk": 1.7941391941391942
+    "top33_wins": 11,
+    "top33_bonus_ev_raw": 1.7272727272727273,
+    "top33_bonus_ev_shrunk": 1.7313779100156808
   }
 }

@@ -680,7 +680,7 @@ def generate_svg_graphics(
             continue
         
         wrestlers1, region_places1, team_best_wrestler1 = all_weight_data[weight1]
-        grade_info1 = load_grade_info(weight1, gender, season)
+        grade_info1 = load_grade_info(weight1, gender)
         
         # Check if there's a second weight class
         if i + 1 < len(weight_classes):
@@ -691,7 +691,7 @@ def generate_svg_graphics(
                 continue
             
             wrestlers2, region_places2, team_best_wrestler2 = all_weight_data[weight2]
-            grade_info2 = load_grade_info(weight2, gender, season)
+            grade_info2 = load_grade_info(weight2, gender)
             
             # Fill SVG template
             root = fill_svg_template(

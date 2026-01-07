@@ -4,47 +4,95 @@
   "team": "Russell County",
   "team_slug": "russell_county",
   "team_rank": null,
-  "weight_class": 152,
+  "weight_class": 145,
   "year": 2026,
-  "current_rank": 28,
+  "current_rank": 39,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "2-3",
+    "vs_ranked": "2-3",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 14.0,
     "pa7": 23.0,
     "pd7": -9.0,
-    "si_plus": 115.2,
-    "df_plus": 72.7,
-    "apr_plus": 99.7,
+    "si_plus": 109.4,
+    "df_plus": 82.1,
+    "apr_plus": 96.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35333687132",
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "opponent_name": "Analiah Parga Lujan",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35435207132",
-      "opponent_rank": 40,
+      "opponent_rank": 37,
       "opponent_name": "Emily Milberger",
       "method": "MD 23-14"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "36063451132",
+      "opponent_name": "Bailey Stephens",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 23,
+      "opponent_weight": 145,
+      "opponent_rank": 30,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:29",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": -7.42
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35900702132",
+      "opponent_name": "Kyra Newkirk",
+      "opponent_team": "Knox Central",
+      "opponent_team_rank": 43,
+      "opponent_weight": 145,
+      "opponent_rank": 9,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": -5.13
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35495584132",
+      "opponent_name": "Jersey Davis",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 19,
+      "opponent_weight": 145,
+      "opponent_rank": 47,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:19",
+      "event": "Maroon`s New Year Ladies Brawl",
+      "mv_impact": 0.64
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35435207132",
@@ -52,14 +100,14 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 40,
+      "opponent_rank": 37,
       "weight_class": "152",
       "result": "L",
       "method": "MD",
       "score": "23-14",
       "duration": "7:00",
       "event": "The Beast of the East",
-      "mv_impact": -7.76
+      "mv_impact": -7.05
     },
     {
       "date": "2025-12-06",
@@ -68,14 +116,14 @@
       "opponent_team": "Eastern",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "The Beast of the East",
-      "mv_impact": 2.42
+      "mv_impact": 3.88
     }
   ]
 }

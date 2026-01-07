@@ -3,38 +3,123 @@
   "name": "Jaden Faulkner Jackson",
   "team": "Moore",
   "team_slug": "moore",
-  "team_rank": 50,
-  "weight_class": 120,
+  "team_rank": 47,
+  "weight_class": 114,
   "year": 2026,
-  "current_rank": 77,
+  "current_rank": 46,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-0",
+    "overall": "3-3",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 89.9,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 98.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35333579132",
+      "opponent_rank": 48,
+      "opponent_name": "Nataly Mojica",
+      "method": "Fall 2:35"
+    },
+    "worst_loss": {
+      "opponent_id": "35409963132",
+      "opponent_rank": 23,
+      "opponent_name": "Isabella Hammer",
+      "method": "Fall 3:12"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35409963132",
+      "opponent_name": "Isabella Hammer",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 23,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:12",
+      "event": "Fern Creek Gladiator Ladies"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35756107132",
+      "opponent_name": "De`onna Owens",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 55,
+      "weight_class": "114",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:20",
+      "event": "Fern Creek Gladiator Ladies"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333579132",
+      "opponent_name": "Nataly Mojica",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 47,
+      "opponent_weight": 114,
+      "opponent_rank": 48,
+      "weight_class": "114",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:35",
+      "event": "Fern Creek Gladiator Ladies"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333396132",
+      "opponent_name": "Taniah Hixenbaugh",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 47,
+      "opponent_weight": 114,
+      "opponent_rank": 21,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "Fern Creek Gladiator Ladies"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35778293132",
+      "opponent_name": "Anne Iranzi",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 80,
+      "weight_class": "114",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
+      "event": "Fern Creek Gladiator Ladies"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_7f5cf71d4fc1",
@@ -54,6 +139,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.75
+    "top33_bonus_ev_shrunk": 1.361111111111111
   }
 }

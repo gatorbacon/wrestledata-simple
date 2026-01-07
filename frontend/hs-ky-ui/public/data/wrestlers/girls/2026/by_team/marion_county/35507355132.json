@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 152,
   "year": 2026,
-  "current_rank": 35,
+  "current_rank": 36,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 99.9,
-    "df_plus": 103.0,
-    "apr_plus": 95.5,
+    "si_plus": 103.2,
+    "df_plus": 100.7,
+    "apr_plus": 95.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,18 +33,34 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "36394706132",
-      "opponent_rank": 50,
+      "opponent_rank": 48,
       "opponent_name": "Dahlyla Leslie",
       "method": "Fall 1:26"
     },
     "worst_loss": {
-      "opponent_id": "35674506132",
-      "opponent_rank": 27,
-      "opponent_name": "Karma Grant",
-      "method": "Fall 1:54"
+      "opponent_id": "35515038132",
+      "opponent_rank": 38,
+      "opponent_name": "Jayla Young",
+      "method": "Fall 0:47"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35515038132",
+      "opponent_name": "Jayla Young",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": 38,
+      "weight_class": "152",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "Girls Boro Brawl",
+      "mv_impact": -7.63
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35674506132",
@@ -52,30 +68,14 @@
       "opponent_team": "Owensboro",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 27,
+      "opponent_rank": 31,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:54",
       "event": "Girls Boro Brawl",
-      "mv_impact": -7.95
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35515038132",
-      "opponent_name": "Jayla Young",
-      "opponent_team": "Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": 152,
-      "opponent_rank": 14,
-      "weight_class": "152",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:47",
-      "event": "Girls Boro Brawl",
-      "mv_impact": -5.26
+      "mv_impact": -7.89
     },
     {
       "date": "2025-12-13",
@@ -84,14 +84,14 @@
       "opponent_team": "Owensboro",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 50,
+      "opponent_rank": 48,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:26",
       "event": "Girls Boro Brawl",
-      "mv_impact": 0.0
+      "mv_impact": 5.16
     }
   ]
 }
