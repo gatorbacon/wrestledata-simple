@@ -38,24 +38,40 @@ function setupGenderToggle() {
   const boysBtn = document.getElementById('gender-toggle-boys');
   const girlsBtn = document.getElementById('gender-toggle-girls');
   
-  boysBtn.addEventListener('click', () => {
+  boysBtn.addEventListener('click', async () => {
+    console.log(`[Dual Predictor] Switching to boys...`);
     currentGender = 'boys';
     boysBtn.classList.add('active');
     girlsBtn.classList.remove('active');
     resetTeams();
-    loadTeamList();
-    loadRankingsData();
-    loadTeamRosters();
+    
+    // Clear existing data
+    rankingsByWeight = {};
+    teamRosters = {};
+    
+    // Reload all data
+    await loadTeamList();
+    await loadRankingsData();
+    await loadTeamRosters();
+    console.log(`[Dual Predictor] Finished loading boys data`);
   });
   
-  girlsBtn.addEventListener('click', () => {
+  girlsBtn.addEventListener('click', async () => {
+    console.log(`[Dual Predictor] Switching to girls...`);
     currentGender = 'girls';
     girlsBtn.classList.add('active');
     boysBtn.classList.remove('active');
     resetTeams();
-    loadTeamList();
-    loadRankingsData();
-    loadTeamRosters();
+    
+    // Clear existing data
+    rankingsByWeight = {};
+    teamRosters = {};
+    
+    // Reload all data
+    await loadTeamList();
+    await loadRankingsData();
+    await loadTeamRosters();
+    console.log(`[Dual Predictor] Finished loading girls data`);
   });
   
   // Set initial state
@@ -209,12 +225,14 @@ async function loadRankingsData() {
   
   // Load FULL rankings by aggregating from wrestler profiles
   // Each wrestler profile contains their current_rank, so we can build complete rankings
-  console.log(`[Dual Predictor] Loading full rankings from wrestler profiles...`);
+  console.log(`[Dual Predictor] Loading full rankings for ${currentGender} ${currentSeason}...`);
+  console.log(`[Dual Predictor] Using path: ${HS_CONFIG.dataPaths.rankingsFull}/${currentGender}/${currentSeason}/`);
   
   // Load FULL rankings from public location (copied by generate_public_rankings.py)
   for (const weight of weights) {
     try {
       const url = `${HS_CONFIG.dataPaths.rankingsFull}/${currentGender}/${currentSeason}/${weight}.json`;
+      console.log(`[Dual Predictor] Attempting to load: ${url}`);
       const data = await fetchJSON(url);
       
       if (data && data.rankings) {
@@ -227,36 +245,46 @@ async function loadRankingsData() {
           is_highest_ranked: r.is_highest_ranked !== false
         }));
         
-        console.log(`[Dual Predictor] Loaded ${data.rankings.length} ranked wrestlers for ${weight} lbs from full rankings`);
+        console.log(`[Dual Predictor] ✓ Loaded ${data.rankings.length} ranked wrestlers for ${weight} lbs from full rankings`);
+      } else {
+        console.warn(`[Dual Predictor] ⚠ Data loaded but no rankings array found for ${weight}:`, data);
       }
     } catch (err) {
-      console.warn(`[Dual Predictor] Could not load full rankings for ${weight}, trying fallback...`, err);
+      console.warn(`[Dual Predictor] ✗ Could not load full rankings for ${weight}:`, err.message || err);
+      console.warn(`[Dual Predictor]   Attempted URL: ${HS_CONFIG.dataPaths.rankingsFull}/${currentGender}/${currentSeason}/${weight}.json`);
       
       // Fallback: Try archive system (limited to top 40/24)
       try {
         let dropId = null;
         try {
           const indexUrl = `${HS_CONFIG.dataPaths.rankingsArchive}/${currentGender}/${currentSeason}/index.json`;
+          console.log(`[Dual Predictor] Trying archive index: ${indexUrl}`);
           const indexData = await fetchJSON(indexUrl);
           dropId = indexData?.latest || null;
+          console.log(`[Dual Predictor] Archive drop ID: ${dropId}`);
         } catch (err) {
-          // Archive not available
+          console.warn(`[Dual Predictor] Archive index not available:`, err.message || err);
         }
         
         if (dropId) {
           try {
             const url = `${HS_CONFIG.dataPaths.rankingsArchive}/${currentGender}/${currentSeason}/${dropId}/${weight}.json`;
+            console.log(`[Dual Predictor] Trying archive data: ${url}`);
             const data = await fetchJSON(url);
             if (data && data.wrestlers) {
               rankingsByWeight[weight] = data.wrestlers;
-              console.warn(`[Dual Predictor] Using archive data for ${weight} (limited to top ${currentGender === 'boys' ? '40' : '24'})`);
+              console.log(`[Dual Predictor] ✓ Using archive data for ${weight} (limited to top ${currentGender === 'boys' ? '40' : '24'})`);
+            } else {
+              console.warn(`[Dual Predictor] ⚠ Archive data loaded but no wrestlers array for ${weight}`);
             }
           } catch (err) {
-            // Skip this weight
+            console.warn(`[Dual Predictor] ✗ Archive data load failed for ${weight}:`, err.message || err);
           }
+        } else {
+          console.warn(`[Dual Predictor] ⚠ No archive drop ID available for fallback`);
         }
       } catch (err) {
-        console.warn(`[Dual Predictor] Could not load rankings for ${weight}:`, err);
+        console.warn(`[Dual Predictor] ✗ Archive fallback failed for ${weight}:`, err.message || err);
       }
     }
   }
@@ -266,20 +294,40 @@ async function loadRankingsData() {
   // Log total wrestlers loaded
   const totalWrestlers = Object.values(rankingsByWeight).reduce((sum, wrestlers) => sum + wrestlers.length, 0);
   console.log(`[Dual Predictor] Total wrestlers loaded: ${totalWrestlers}`);
+  
+  if (totalWrestlers === 0) {
+    console.error(`[Dual Predictor] ⚠⚠⚠ WARNING: No wrestlers loaded! This will cause empty rosters.`);
+    console.error(`[Dual Predictor] Check that data files exist at: ${HS_CONFIG.dataPaths.rankingsFull}/${currentGender}/${currentSeason}/`);
+  }
 }
 
 async function loadTeamRosters() {
   teamRosters = {};
   const weights = getWeightsForGender(currentGender);
   
+  console.log(`[Dual Predictor] Building rosters from rankings for ${currentGender}...`);
+  console.log(`[Dual Predictor] RankingsByWeight keys:`, Object.keys(rankingsByWeight));
+  
   // Build roster from rankings data (ranked wrestlers only)
+  let wrestlersAddedFromRankings = 0;
+  let teamsCreatedFromRankings = 0;
+  
   for (const [weight, wrestlers] of Object.entries(rankingsByWeight)) {
+    if (!wrestlers || wrestlers.length === 0) {
+      console.warn(`[Dual Predictor] No wrestlers for weight ${weight}`);
+      continue;
+    }
+    
     for (const wrestler of wrestlers) {
       const teamName = wrestler.team;
-      if (!teamName) continue;
+      if (!teamName) {
+        console.debug(`[Dual Predictor] Wrestler ${wrestler.name} (${wrestler.wrestler_id}) has no team`);
+        continue;
+      }
       
       if (!teamRosters[teamName]) {
         teamRosters[teamName] = { weights: {} };
+        teamsCreatedFromRankings++;
       }
       
       if (!teamRosters[teamName].weights[weight]) {
@@ -292,13 +340,28 @@ async function loadTeamRosters() {
         rank: wrestler.rank,
         is_highest_ranked: wrestler.is_highest_ranked !== false
       });
+      wrestlersAddedFromRankings++;
     }
   }
+  
+  console.log(`[Dual Predictor] Added ${wrestlersAddedFromRankings} wrestlers to ${teamsCreatedFromRankings} teams from rankings`);
+  
+  // Debug: Show sample team names and their wrestler counts
+  const sampleTeamsFromRankings = Object.keys(teamRosters).slice(0, 10);
+  sampleTeamsFromRankings.forEach(teamName => {
+    const totalWrestlers = Object.values(teamRosters[teamName].weights).reduce(
+      (sum, wrestlers) => sum + wrestlers.length, 0
+    );
+    const weights = Object.keys(teamRosters[teamName].weights);
+    console.log(`[Dual Predictor] Team "${teamName}": ${totalWrestlers} wrestlers at weights [${weights.join(', ')}]`);
+  });
   
   // Load ALL wrestlers from index_teams.json (includes unranked wrestlers)
   try {
     const indexUrl = `/data/wrestlers/${currentGender}/${currentSeason}/index_teams.json`;
+    console.log(`[Dual Predictor] Loading team rosters from: ${indexUrl}`);
     const indexData = await fetchJSON(indexUrl);
+    console.log(`[Dual Predictor] ✓ Loaded index_teams.json: ${indexData.length} teams`);
     
     // Helper function to normalize team names for matching
     function normalizeTeamName(name) {
@@ -343,8 +406,19 @@ async function loadTeamRosters() {
       }
       
       // Load wrestler profiles to get their weight classes
+      // Only load profiles for wrestlers not already in rankings (to reduce 404s)
       for (const wrestlerId of teamEntry.roster) {
         if (!wrestlerId || wrestlerId.startsWith('OUTSTATE_')) continue;
+        
+        // Check if this wrestler is already in rankings (skip if so)
+        const alreadyInRankings = Object.values(rankingsByWeight).some(
+          wrestlers => wrestlers.some(w => String(w.wrestler_id) === String(wrestlerId))
+        );
+        
+        if (alreadyInRankings) {
+          // Already have this wrestler from rankings, skip profile load
+          continue;
+        }
         
         try {
           const profileUrl = `/data/wrestlers/${currentGender}/${currentSeason}/by_id/${wrestlerId}.json`;
@@ -371,7 +445,11 @@ async function loadTeamRosters() {
             });
           }
         } catch (err) {
-          // Skip if profile doesn't exist
+          // Silently skip if profile doesn't exist (expected for some wrestlers)
+          // Only log if it's not a 404 (which is expected)
+          if (err.message && !err.message.includes('404') && !err.message.includes('status: 404')) {
+            console.debug(`[Dual Predictor] Could not load profile for ${wrestlerId}:`, err.message);
+          }
           continue;
         }
       }
@@ -403,6 +481,15 @@ async function loadTeamRosters() {
   }
   
   console.log(`[Dual Predictor] Loaded rosters for ${Object.keys(teamRosters).length} teams`);
+  
+  // Debug: Log sample teams and their wrestler counts
+  const sampleTeams = Object.keys(teamRosters).slice(0, 5);
+  sampleTeams.forEach(teamName => {
+    const totalWrestlers = Object.values(teamRosters[teamName].weights).reduce(
+      (sum, wrestlers) => sum + wrestlers.length, 0
+    );
+    console.log(`[Dual Predictor] Team "${teamName}": ${totalWrestlers} total wrestlers across ${Object.keys(teamRosters[teamName].weights).length} weights`);
+  });
 }
 
 // Store result overrides: row -> { winner: 'A'|'B', resultType: 'Decision'|'Major Decision'|'Fall' }
@@ -439,8 +526,44 @@ function renderMatchupTable() {
   tbody.innerHTML = '';
   
   const weights = getWeightsForGender(currentGender);
-  const rosterA = teamRosters[teamA] || { weights: {} };
-  const rosterB = teamRosters[teamB] || { weights: {} };
+  
+  // Debug: Check team name matching
+  console.log(`[Dual Predictor] Rendering matchup table for: "${teamA}" vs "${teamB}"`);
+  console.log(`[Dual Predictor] Available teams in rosters:`, Object.keys(teamRosters).slice(0, 10));
+  
+  // Try to find exact match first
+  let rosterA = teamRosters[teamA];
+  let rosterB = teamRosters[teamB];
+  
+  // If not found, try case-insensitive match
+  if (!rosterA) {
+    const teamAKey = Object.keys(teamRosters).find(
+      key => key.toLowerCase() === teamA.toLowerCase()
+    );
+    if (teamAKey) {
+      console.log(`[Dual Predictor] Found case-insensitive match for "${teamA}": "${teamAKey}"`);
+      rosterA = teamRosters[teamAKey];
+      teamA = teamAKey; // Update to exact key for consistency
+    }
+  }
+  
+  if (!rosterB) {
+    const teamBKey = Object.keys(teamRosters).find(
+      key => key.toLowerCase() === teamB.toLowerCase()
+    );
+    if (teamBKey) {
+      console.log(`[Dual Predictor] Found case-insensitive match for "${teamB}": "${teamBKey}"`);
+      rosterB = teamRosters[teamBKey];
+      teamB = teamBKey; // Update to exact key for consistency
+    }
+  }
+  
+  // Default to empty if still not found
+  rosterA = rosterA || { weights: {} };
+  rosterB = rosterB || { weights: {} };
+  
+  console.log(`[Dual Predictor] Roster A weights:`, Object.keys(rosterA.weights));
+  console.log(`[Dual Predictor] Roster B weights:`, Object.keys(rosterB.weights));
   
   weights.forEach((weight, index) => {
     const row = document.createElement('tr');
@@ -1149,6 +1272,12 @@ function updateScores() {
 async function fetchJSON(url) {
   const response = await fetch(url);
   if (!response.ok) {
+    // Don't log 404s as errors - they're expected for missing profiles
+    if (response.status === 404) {
+      const error = new Error(`HTTP error! status: ${response.status}`);
+      error.status = 404;
+      throw error;
+    }
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   return response.json();

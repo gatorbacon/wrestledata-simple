@@ -120,6 +120,10 @@ a:hover {
   /* No shadows, no gradients */
 }
 
+.site-header.header--girls {
+  background: #fff0f5; /* Light pink background for girls pages */
+}
+
 @media (max-width: 768px) {
   .site-header {
     position: sticky;

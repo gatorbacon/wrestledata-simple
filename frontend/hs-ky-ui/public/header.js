@@ -152,6 +152,9 @@
     if (body && !document.getElementById('site-header')) {
       body.insertAdjacentHTML('afterbegin', createHeaderHTML());
       
+      // Check if we're on a girls page and apply pink background
+      applyGenderStyling();
+      
       // Initialize dropdowns
       initDropdowns();
       
@@ -163,6 +166,20 @@
       
       // Initialize mobile search
       initMobileSearch();
+    }
+  }
+
+  // Apply gender-specific styling to header
+  function applyGenderStyling() {
+    const header = document.getElementById('site-header');
+    if (!header) return;
+    
+    // Check URL parameters for gender=girls
+    const urlParams = new URLSearchParams(window.location.search);
+    const gender = urlParams.get('gender');
+    
+    if (gender === 'girls') {
+      header.classList.add('header--girls');
     }
   }
 
