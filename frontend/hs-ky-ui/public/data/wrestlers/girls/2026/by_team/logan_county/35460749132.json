@@ -6,10 +6,10 @@
   "team_rank": null,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 42,
+  "current_rank": 46,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "1-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,17 +27,22 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35567250132",
-      "opponent_rank": 47,
-      "opponent_name": "Juliette Aguero",
-      "method": "Fall 1:06"
+      "opponent_id": "35635583132",
+      "opponent_rank": 49,
+      "opponent_name": "Ezri Brown",
+      "method": "Fall 0:53"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35510918132",
+      "opponent_rank": 28,
+      "opponent_name": "Maxine Rhinesmith",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
     {
@@ -47,7 +52,8 @@
       "opponent_team": "Hopkinsville",
       "opponent_team_rank": 43,
       "opponent_weight": 132,
-      "opponent_rank": 47,
+      "opponent_rank": 57,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -62,13 +68,14 @@
       "opponent_team": "John Hardin",
       "opponent_team_rank": 4,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 28,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": -4.41
+      "mv_impact": -4.85
     },
     {
       "date": "2025-11-29",
@@ -77,13 +84,14 @@
       "opponent_team": "South Warren",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 49,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:53",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": 4.96
+      "mv_impact": 4.92
     }
   ]
 }

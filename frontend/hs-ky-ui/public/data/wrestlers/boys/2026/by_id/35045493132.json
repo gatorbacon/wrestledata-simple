@@ -3,12 +3,12 @@
   "name": "CARSON HERBST",
   "team": "Madison Central",
   "team_slug": "madison_central",
-  "team_rank": 4,
+  "team_rank": 11,
   "weight_class": 190,
   "year": 2026,
   "current_rank": 2,
   "record": {
-    "overall": "4-0",
+    "overall": "5-0",
     "vs_ranked": "4-0",
     "vs_top10": "1-0",
     "vs_top25": "4-0"
@@ -17,11 +17,11 @@
     "pf7": 17.9,
     "pa7": 1.77,
     "pd7": 16.12,
-    "si_plus": 103.4,
-    "df_plus": 102.5,
-    "apr_plus": 110.5,
-    "pin_rate": 0.5,
-    "bonus_rate": 1.0,
+    "si_plus": 113.9,
+    "df_plus": 113.4,
+    "apr_plus": 110.3,
+    "pin_rate": 0.4,
+    "bonus_rate": 0.8,
     "majors": 1,
     "techs": 1,
     "pins": 2
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35202492132",
-      "opponent_rank": 6,
+      "opponent_rank": 7,
       "opponent_name": "Beau Gordon",
       "method": "MD 11-2"
     },
@@ -41,69 +41,84 @@
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_c7e06722ad4b",
+      "opponent_name": "Andrew Crace",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 37,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35205061132",
       "opponent_name": "Raiden Rios",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 26,
       "opponent_weight": 190,
-      "opponent_rank": 21,
+      "opponent_rank": 23,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:42",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": 8.31
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34988698132",
       "opponent_name": "DeAsian Harris",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 190,
-      "opponent_rank": 15,
+      "opponent_rank": 18,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:48",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": 8.27
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35081208132",
       "opponent_name": "Frank Niyonyishu",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 18,
       "opponent_weight": 190,
-      "opponent_rank": 14,
+      "opponent_rank": 15,
+      "weight_class": "190",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "4:31",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": 7.56
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35202492132",
       "opponent_name": "Beau Gordon",
       "opponent_team": "South Oldham",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 125,
       "opponent_weight": 190,
-      "opponent_rank": 6,
+      "opponent_rank": 7,
+      "weight_class": "190",
       "result": "W",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": 7.59
+      "event": "Lafayette 5 Star Tournament"
     }
   ],
   "bonus": {
     "top33_wins": 4,
     "top33_bonus_ev_raw": 1.625,
-    "top33_bonus_ev_shrunk": 1.4464285714285714
+    "top33_bonus_ev_shrunk": 1.222222222222222
   }
 }

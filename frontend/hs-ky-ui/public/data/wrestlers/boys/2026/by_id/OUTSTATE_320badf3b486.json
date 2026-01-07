@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-2",
-    "vs_ranked": "0-2",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -27,14 +27,19 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35181259132",
+      "opponent_rank": 87,
+      "opponent_name": "Jomal Harris",
+      "method": "Fall 2:18"
+    },
     "worst_loss": {
       "opponent_id": "34993525132",
-      "opponent_rank": 31,
+      "opponent_rank": 39,
       "opponent_name": "Gustavo Camarena",
       "method": "For."
     }
@@ -45,9 +50,10 @@
       "opponent_id": "35181259132",
       "opponent_name": "Jomal Harris",
       "opponent_team": "Danville",
-      "opponent_team_rank": 72,
-      "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_team_rank": 67,
+      "opponent_weight": 175,
+      "opponent_rank": 87,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -56,26 +62,13 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "34989004132",
-      "opponent_name": "Garrison Messer",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": 23,
-      "opponent_weight": 190,
-      "opponent_rank": 5,
-      "result": "L",
-      "method": "TF",
-      "score": "17-0",
-      "duration": "4:00",
-      "event": "Tommy Castle Classic"
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "34993525132",
       "opponent_name": "Gustavo Camarena",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 123,
       "opponent_weight": 190,
-      "opponent_rank": 31,
+      "opponent_rank": 39,
+      "weight_class": "190",
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -87,9 +80,10 @@
       "opponent_id": "35040617132",
       "opponent_name": "Beepin Neupaney",
       "opponent_team": "Tates Creek",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 129,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 125,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -100,6 +94,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.0454545454545454
   }
 }

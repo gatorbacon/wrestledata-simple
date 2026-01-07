@@ -3,112 +3,148 @@
   "name": "Oliver Wells",
   "team": "North Oldham",
   "team_slug": "north_oldham",
-  "team_rank": 40,
+  "team_rank": 37,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 58,
   "record": {
-    "overall": "2-2",
-    "vs_ranked": "2-2",
+    "overall": "3-3",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 102.1,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 101.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_wins": 3,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35321134132",
-      "opponent_rank": 54,
+      "opponent_rank": 67,
       "opponent_name": "Hunter Hammons",
       "method": "Fall 3:00"
     },
     "worst_loss": {
       "opponent_id": "35233660132",
-      "opponent_rank": 45,
+      "opponent_rank": 54,
       "opponent_name": "Clayton Pendley",
       "method": "Fall 2:34"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35397665132",
+      "opponent_name": "Colt Klinksiek",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 18,
+      "opponent_weight": 157,
+      "opponent_rank": 73,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "Warhawk Classic",
+      "mv_impact": 4.92
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34993547132",
+      "opponent_name": "Joseph Habimana",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 46,
+      "opponent_weight": 157,
+      "opponent_rank": 18,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:16",
+      "event": "Warhawk Classic",
+      "mv_impact": -4.0
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35233660132",
       "opponent_name": "Clayton Pendley",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 51,
       "opponent_weight": 157,
-      "opponent_rank": 45,
+      "opponent_rank": 54,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:34",
       "event": "King of the Bluegrass",
-      "mv_impact": -5.15
+      "mv_impact": -5.94
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35321134132",
       "opponent_name": "Hunter Hammons",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 157,
-      "opponent_rank": 54,
+      "opponent_rank": 67,
+      "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:00",
       "event": "King of the Bluegrass",
-      "mv_impact": 4.78
+      "mv_impact": 4.2
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35281006132",
       "opponent_name": "Talik Washington",
       "opponent_team": "Southern",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 157,
       "opponent_rank": 27,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:42",
       "event": "King of the Bluegrass",
-      "mv_impact": -3.44
+      "mv_impact": -3.56
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34989299132",
       "opponent_name": "Maxwell Johnson",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 15,
       "opponent_weight": 165,
-      "opponent_rank": 93,
+      "opponent_rank": 146,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. North Oldham",
-      "mv_impact": 0.6
+      "mv_impact": 1.53
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.9
   }
 }

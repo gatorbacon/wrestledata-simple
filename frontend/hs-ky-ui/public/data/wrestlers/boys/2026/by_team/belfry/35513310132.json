@@ -3,23 +3,23 @@
   "name": "Brayden Tackett",
   "team": "Belfry",
   "team_slug": "belfry",
-  "team_rank": 60,
+  "team_rank": 55,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 72,
+  "current_rank": 99,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-1",
+    "vs_ranked": "1-2",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 107.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 108.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,20 +28,20 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35434035132",
-      "opponent_rank": 79,
+      "opponent_rank": 109,
       "opponent_name": "Levi Jones",
       "method": "Fall 1:36"
     },
     "worst_loss": {
-      "opponent_id": "35017742132",
-      "opponent_rank": 10,
-      "opponent_name": "Branden McGee",
-      "method": "Fall 1:34"
+      "opponent_id": "36019523132",
+      "opponent_rank": 13,
+      "opponent_name": "Hagen Samuel",
+      "method": "Fall 2:09"
     }
   },
   "match_list": [
@@ -50,45 +50,48 @@
       "opponent_id": "36019523132",
       "opponent_name": "Hagen Samuel",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 52,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 13,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:09",
       "event": "Anchor Down Showdown",
-      "mv_impact": -3.03
+      "mv_impact": -2.79
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35017742132",
       "opponent_name": "Branden McGee",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 52,
       "opponent_weight": 190,
       "opponent_rank": 10,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:34",
       "event": "Anchor Down Showdown",
-      "mv_impact": -2.55
+      "mv_impact": -2.33
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35434035132",
       "opponent_name": "Levi Jones",
       "opponent_team": "Southwestern",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 128,
       "opponent_weight": 190,
-      "opponent_rank": 79,
+      "opponent_rank": 109,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:36",
       "event": "Anchor Down Showdown",
-      "mv_impact": 3.32
+      "mv_impact": 3.53
     }
   ]
 }

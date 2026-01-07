@@ -3,36 +3,127 @@
   "name": "Peyton Weaver",
   "team": "Central Hardin",
   "team_slug": "central_hardin",
-  "team_rank": 11,
+  "team_rank": 14,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 32,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "4-1",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 85.6,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 113.2,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34997601132",
+      "opponent_rank": 34,
+      "opponent_name": "Trent Jenkins",
+      "method": "Fall 3:34"
+    },
+    "worst_loss": {
+      "opponent_id": "35221007132",
+      "opponent_rank": 14,
+      "opponent_name": "Donovan Rogers",
+      "method": "Inj. [time]"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35221007132",
+      "opponent_name": "Donovan Rogers",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 62,
+      "opponent_weight": 150,
+      "opponent_rank": 14,
+      "weight_class": "150",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "Tates Creek Invitational",
+      "mv_impact": -2.7
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35420411132",
+      "opponent_name": "Kevin Brown",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 150,
+      "opponent_rank": 72,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:33",
+      "event": "Tates Creek Invitational",
+      "mv_impact": 4.44
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35040648132",
+      "opponent_name": "Yousef Al-Rifaie",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 129,
+      "opponent_weight": 150,
+      "opponent_rank": 183,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Tates Creek Invitational",
+      "mv_impact": 4.1
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35129264132",
+      "opponent_name": "Judson Miller",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 113,
+      "opponent_weight": 150,
+      "opponent_rank": 105,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Tates Creek Invitational",
+      "mv_impact": 3.99
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34997601132",
+      "opponent_name": "Trent Jenkins",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 41,
+      "opponent_weight": 150,
+      "opponent_rank": 34,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:34",
+      "event": "Tates Creek Invitational",
+      "mv_impact": 6.4
+    }
+  ]
 }

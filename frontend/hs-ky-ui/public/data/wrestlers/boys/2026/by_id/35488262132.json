@@ -3,13 +3,13 @@
   "name": "Kingston Dailey",
   "team": "Covington Catholic",
   "team_slug": "covington_catholic",
-  "team_rank": 15,
+  "team_rank": 16,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 103,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 1.0,
     "pa7": 12.0,
     "pd7": -11.0,
-    "si_plus": 83.0,
-    "df_plus": 89.3,
-    "apr_plus": 96.6,
+    "si_plus": 87.4,
+    "df_plus": 99.1,
+    "apr_plus": 100.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,19 +27,19 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35520472132",
-      "opponent_rank": 96,
-      "opponent_name": "Wyatt Chilton",
-      "method": "Fall 0:34"
+      "opponent_id": "35404982132",
+      "opponent_rank": 99,
+      "opponent_name": "Joseph Collucci",
+      "method": "Fall 3:24"
     },
     "worst_loss": {
       "opponent_id": "35488268132",
-      "opponent_rank": 65,
+      "opponent_rank": 86,
       "opponent_name": "Tyler Heck",
       "method": "Fall 4:46"
     }
@@ -50,30 +50,32 @@
       "opponent_id": "34988567132",
       "opponent_name": "Grandin Blackburn",
       "opponent_team": "Conner",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 10,
       "opponent_weight": 190,
-      "opponent_rank": 59,
+      "opponent_rank": 71,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:43",
       "event": "2025 Ryle Raider Rumble",
-      "mv_impact": -7.34
+      "mv_impact": -7.56
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35663262132",
       "opponent_name": "Dakota Lonkard",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 190,
-      "opponent_rank": 29,
+      "opponent_rank": 56,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:37",
       "event": "2025 Ryle Raider Rumble",
-      "mv_impact": -4.0
+      "mv_impact": -5.84
     },
     {
       "date": "2025-12-06",
@@ -81,64 +83,68 @@
       "opponent_name": "Wyatt Chilton",
       "opponent_team": "Anderson County",
       "opponent_team_rank": 8,
-      "opponent_weight": 190,
-      "opponent_rank": 96,
+      "opponent_weight": 175,
+      "opponent_rank": 202,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:34",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": 0.59
+      "mv_impact": 0.33
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35404982132",
       "opponent_name": "Joseph Collucci",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 98,
-      "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_team_rank": 96,
+      "opponent_weight": 175,
+      "opponent_rank": 99,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:24",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": 3.09
+      "mv_impact": 4.1
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35281292132",
       "opponent_name": "Henry Morales",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 70,
       "opponent_weight": 190,
-      "opponent_rank": 32,
+      "opponent_rank": 36,
+      "weight_class": "190",
       "result": "L",
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -1.98
+      "mv_impact": -1.33
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35488268132",
       "opponent_name": "Tyler Heck",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 190,
-      "opponent_rank": 65,
+      "opponent_rank": 86,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:46",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -6.26
+      "mv_impact": -6.56
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.0454545454545454
   }
 }

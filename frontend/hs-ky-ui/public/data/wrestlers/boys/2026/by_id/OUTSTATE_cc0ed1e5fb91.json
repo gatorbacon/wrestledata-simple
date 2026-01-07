@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-1",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -20,34 +20,55 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35587657132",
+      "opponent_rank": 176,
+      "opponent_name": "Calvin Schnitzler",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
-      "opponent_id": "35640820132",
-      "opponent_rank": 13,
-      "opponent_name": "Ashton Hackney",
-      "method": "Fall 2:13"
+      "opponent_id": "35663849132",
+      "opponent_rank": 37,
+      "opponent_name": "Isaac Ray",
+      "method": "Fall 1:50"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35587657132",
+      "opponent_name": "Calvin Schnitzler",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 16,
+      "opponent_weight": 165,
+      "opponent_rank": 176,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "New Richmond JV Invitational"
+    },
     {
       "date": "2025-12-21",
       "opponent_id": "35640820132",
       "opponent_name": "Ashton Hackney",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 44,
       "opponent_weight": 190,
-      "opponent_rank": 13,
+      "opponent_rank": 11,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -59,9 +80,10 @@
       "opponent_id": "35663849132",
       "opponent_name": "Isaac Ray",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
-      "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_team_rank": 13,
+      "opponent_weight": 215,
+      "opponent_rank": 37,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -72,6 +94,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.0454545454545454
   }
 }

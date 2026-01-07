@@ -6,10 +6,10 @@
   "team_rank": 117,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 116,
+  "current_rank": 106,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-3",
+    "overall": "1-6",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,73 +17,129 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 91.6,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 94.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35724532132",
+      "opponent_rank": 108,
+      "opponent_name": "Seth Boggs",
+      "method": "Fall 0:25"
+    },
     "worst_loss": {
-      "opponent_id": "35013067132",
-      "opponent_rank": 64,
-      "opponent_name": "Jace Lipfird",
-      "method": "Fall 2:16"
+      "opponent_id": "35640172132",
+      "opponent_rank": 99,
+      "opponent_name": "Tyler Foster",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35724532132",
+      "opponent_name": "Seth Boggs",
+      "opponent_team": "East Carter",
+      "opponent_team_rank": 42,
+      "opponent_weight": 215,
+      "opponent_rank": 108,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:25",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": 2.98
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35144518132",
+      "opponent_name": "Jace Detre",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 215,
+      "opponent_rank": 13,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -3.74
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34995986132",
       "opponent_name": "Alexander Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 56,
       "opponent_weight": 215,
-      "opponent_rank": 23,
+      "opponent_rank": 26,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:24",
       "event": "Anchor Down Showdown",
-      "mv_impact": -3.19
+      "mv_impact": -3.27
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35420732132",
       "opponent_name": "Zach Smith",
       "opponent_team": "Whitley County",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 138,
       "opponent_weight": 215,
-      "opponent_rank": 35,
+      "opponent_rank": 65,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:21",
       "event": "Anchor Down Showdown",
-      "mv_impact": -5.19
+      "mv_impact": -7.3
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35640172132",
       "opponent_name": "Tyler Foster",
       "opponent_team": "Harlan County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 85,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 99,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Cougar Classic",
-      "mv_impact": -7.46
+      "mv_impact": -8.27
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35559540132",
+      "opponent_name": "Ethan Collins",
+      "opponent_team": "Knott County Central",
+      "opponent_team_rank": 94,
+      "opponent_weight": 215,
+      "opponent_rank": 27,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Cougar Classic",
+      "mv_impact": -3.83
     },
     {
       "date": "2025-11-29",
@@ -92,18 +148,19 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 113,
       "opponent_weight": 215,
-      "opponent_rank": 64,
+      "opponent_rank": 92,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:16",
       "event": "Cougar Classic",
-      "mv_impact": -6.83
+      "mv_impact": -7.55
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.55
+    "top33_bonus_ev_shrunk": 0.6923076923076923
   }
 }

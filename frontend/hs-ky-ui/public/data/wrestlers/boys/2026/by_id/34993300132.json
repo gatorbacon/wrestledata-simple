@@ -3,13 +3,13 @@
   "name": "Aie Hong",
   "team": "Daviess County",
   "team_slug": "daviess_county",
-  "team_rank": 46,
+  "team_rank": 68,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 42,
+  "current_rank": 52,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "1-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 14.5,
     "pa7": 3.0,
     "pd7": 11.5,
-    "si_plus": 106.9,
-    "df_plus": 110.8,
-    "apr_plus": 86.1,
+    "si_plus": 104.7,
+    "df_plus": 108.6,
+    "apr_plus": 88.9,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
@@ -27,15 +27,15 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34999342132",
-      "opponent_rank": 78,
-      "opponent_name": "Benjamin Leslie",
-      "method": "MD 13-5"
+      "opponent_id": "35033125132",
+      "opponent_rank": 77,
+      "opponent_name": "Owen Young",
+      "method": "TF 16-1 0:00"
     },
     "worst_loss": null
   },
@@ -45,35 +45,37 @@
       "opponent_id": "34999342132",
       "opponent_name": "Benjamin Leslie",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 43,
       "opponent_weight": 113,
-      "opponent_rank": 78,
+      "opponent_rank": 90,
+      "weight_class": "113",
       "result": "W",
       "method": "MD",
       "score": "13-5",
       "duration": "7:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": -1.09
+      "mv_impact": -0.29
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35033125132",
       "opponent_name": "Owen Young",
       "opponent_team": "Tates Creek",
-      "opponent_team_rank": 127,
-      "opponent_weight": 113,
-      "opponent_rank": null,
+      "opponent_team_rank": 129,
+      "opponent_weight": 106,
+      "opponent_rank": 77,
+      "weight_class": "113",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": 2.4
+      "mv_impact": 3.87
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9090909090909091
+    "top33_bonus_ev_shrunk": 1.4285714285714286
   }
 }

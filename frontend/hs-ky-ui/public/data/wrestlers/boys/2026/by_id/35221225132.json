@@ -3,23 +3,23 @@
   "name": "Seth Trusty",
   "team": "Caldwell County",
   "team_slug": "caldwell_county",
-  "team_rank": 67,
+  "team_rank": 62,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 92,
+  "current_rank": 139,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 95.2,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 95.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35489028132",
-      "opponent_rank": 82,
+      "opponent_rank": 76,
       "opponent_name": "Wyatt Dunn",
       "method": "Fall 0:00"
     }
@@ -45,35 +45,37 @@
       "opponent_id": "35207986132",
       "opponent_name": "Ethan Peckenpaugh",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 175,
-      "opponent_rank": 22,
+      "opponent_rank": 33,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Henderson County",
-      "mv_impact": -1.77
+      "mv_impact": -2.19
     },
     {
       "date": "2025-12-04",
       "opponent_id": "35489028132",
       "opponent_name": "Wyatt Dunn",
       "opponent_team": "Calloway County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 63,
       "opponent_weight": 175,
-      "opponent_rank": 82,
+      "opponent_rank": 76,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Calloway County",
-      "mv_impact": -7.96
+      "mv_impact": -5.94
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.55
+    "top33_bonus_ev_shrunk": 1.09375
   }
 }

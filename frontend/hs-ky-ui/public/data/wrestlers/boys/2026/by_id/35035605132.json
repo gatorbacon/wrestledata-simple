@@ -3,10 +3,10 @@
   "name": "Daniel Thompson",
   "team": "Union County",
   "team_slug": "union_county",
-  "team_rank": 3,
+  "team_rank": 2,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 11,
+  "current_rank": 14,
   "record": {
     "overall": "3-2",
     "vs_ranked": "1-0",
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 122.8,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 124.0,
     "pin_rate": 0.333,
     "bonus_rate": 0.667,
     "majors": 1,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35284198132",
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "opponent_name": "Brandon Kenney",
       "method": "Fall 0:00"
     },
@@ -45,9 +45,10 @@
       "opponent_id": "35284198132",
       "opponent_name": "Brandon Kenney",
       "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": 129,
+      "opponent_team_rank": 131,
       "opponent_weight": 175,
-      "opponent_rank": 30,
+      "opponent_rank": 29,
+      "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -62,6 +63,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 175,
       "opponent_rank": null,
+      "weight_class": "175",
       "result": "W",
       "method": "DEC",
       "score": "13-9",
@@ -76,6 +78,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 175,
       "opponent_rank": null,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -90,6 +93,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 175,
       "opponent_rank": null,
+      "weight_class": "175",
       "result": "W",
       "method": "MD",
       "score": "11-0",
@@ -104,6 +108,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 175,
       "opponent_rank": null,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -114,6 +119,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 2.0
+    "top33_bonus_ev_shrunk": 1.806878306878307
   }
 }

@@ -3,23 +3,23 @@
   "name": "Grayson West",
   "team": "Apollo",
   "team_slug": "apollo",
-  "team_rank": 56,
+  "team_rank": 51,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 176,
   "record": {
     "overall": "0-7",
     "vs_ranked": "0-7",
     "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 93.2,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 93.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -33,10 +33,10 @@
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35208008132",
-      "opponent_rank": 88,
-      "opponent_name": "Jimmie Ballard",
-      "method": "Fall 0:00"
+      "opponent_id": "35321133132",
+      "opponent_rank": 115,
+      "opponent_name": "Austin Young",
+      "method": "Fall 0:39"
     }
   },
   "match_list": [
@@ -45,45 +45,48 @@
       "opponent_id": "34988677132",
       "opponent_name": "Dane Miller",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 144,
-      "opponent_rank": 5,
+      "opponent_rank": 6,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:27",
       "event": "Christian County Invitational",
-      "mv_impact": -2.16
+      "mv_impact": -2.08
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35383668132",
       "opponent_name": "Isrell Roberts",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 38,
       "opponent_weight": 138,
-      "opponent_rank": 15,
+      "opponent_rank": 21,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Owensboro",
-      "mv_impact": -2.87
+      "mv_impact": -3.29
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35208008132",
       "opponent_name": "Jimmie Ballard",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 138,
-      "opponent_rank": 88,
+      "opponent_rank": 107,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Henderson County",
-      "mv_impact": -8.17
+      "mv_impact": -7.78
     },
     {
       "date": "2025-12-22",
@@ -92,63 +95,67 @@
       "opponent_team": "Trinity (Whitesville)",
       "opponent_team_rank": null,
       "opponent_weight": 144,
-      "opponent_rank": 64,
+      "opponent_rank": 88,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Trinity (Whitesville)",
-      "mv_impact": -6.78
+      "mv_impact": -6.99
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35064900132",
       "opponent_name": "Evan Wilson",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 95,
+      "opponent_team_rank": 93,
       "opponent_weight": 144,
-      "opponent_rank": 16,
+      "opponent_rank": 39,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. John Hardin",
-      "mv_impact": -3.12
+      "mv_impact": -4.62
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35077765132",
       "opponent_name": "Caleb Cox",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 37,
       "opponent_weight": 144,
-      "opponent_rank": 27,
+      "opponent_rank": 42,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:57",
       "event": "King of the Bluegrass",
-      "mv_impact": -5.29
+      "mv_impact": -5.6
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35321133132",
       "opponent_name": "Austin Young",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 144,
-      "opponent_rank": 71,
+      "opponent_rank": 115,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:39",
       "event": "King of the Bluegrass",
-      "mv_impact": -8.14
+      "mv_impact": -8.33
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

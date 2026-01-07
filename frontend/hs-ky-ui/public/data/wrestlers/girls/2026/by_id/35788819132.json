@@ -6,10 +6,10 @@
   "team_rank": null,
   "weight_class": 152,
   "year": 2026,
-  "current_rank": 23,
+  "current_rank": 28,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35333687132",
-      "opponent_rank": 27,
+      "opponent_rank": 32,
       "opponent_name": "Analiah Parga Lujan",
       "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35435207132",
+      "opponent_rank": 40,
+      "opponent_name": "Emily Milberger",
+      "method": "MD 23-14"
+    }
   },
   "match_list": [
     {
@@ -47,7 +52,8 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": null,
+      "opponent_rank": 40,
+      "weight_class": "152",
       "result": "L",
       "method": "MD",
       "score": "23-14",
@@ -62,7 +68,8 @@
       "opponent_team": "Eastern",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 27,
+      "opponent_rank": 32,
+      "weight_class": "152",
       "result": "W",
       "method": "FALL",
       "score": null,

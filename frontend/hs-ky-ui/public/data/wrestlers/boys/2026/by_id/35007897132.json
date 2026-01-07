@@ -3,13 +3,13 @@
   "name": "Chuck Martin",
   "team": "South Warren",
   "team_slug": "south_warren",
-  "team_rank": 54,
+  "team_rank": 126,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 183,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 88.2,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 87.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,97 +28,102 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35207048132",
-      "opponent_rank": 60,
-      "opponent_name": "Alex Pedro",
-      "method": "Fall 2:52"
+      "opponent_id": "35192492132",
+      "opponent_rank": 131,
+      "opponent_name": "Eli Poore",
+      "method": "Fall 1:58"
     }
   },
   "match_list": [
     {
       "date": "2025-12-13",
-      "opponent_id": "35207048132",
-      "opponent_name": "Alex Pedro",
-      "opponent_team": "Adair County",
-      "opponent_team_rank": 55,
-      "opponent_weight": 215,
-      "opponent_rank": 60,
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:52",
-      "event": "vs. South Warren",
-      "mv_impact": -6.17
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35181301132",
       "opponent_name": "James Smith",
       "opponent_team": "Danville",
-      "opponent_team_rank": 72,
-      "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_team_rank": 67,
+      "opponent_weight": 190,
+      "opponent_rank": 96,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:41",
       "event": "vs. South Warren",
-      "mv_impact": -9.99
+      "mv_impact": -9.16
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35207048132",
+      "opponent_name": "Alex Pedro",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 50,
+      "opponent_weight": 215,
+      "opponent_rank": 86,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:52",
+      "event": "vs. South Warren",
+      "mv_impact": -6.9
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35383665132",
       "opponent_name": "Isaac Mattingly",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 38,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 104,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:41",
       "event": "vs. South Warren",
-      "mv_impact": -8.65
+      "mv_impact": -8.53
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35205294132",
       "opponent_name": "Maddox Tabor",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 87,
+      "opponent_team_rank": 84,
       "opponent_weight": 175,
-      "opponent_rank": 27,
+      "opponent_rank": 26,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. South Warren",
-      "mv_impact": -2.93
+      "mv_impact": -2.81
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35192492132",
       "opponent_name": "Eli Poore",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 102,
+      "opponent_team_rank": 100,
       "opponent_weight": 175,
-      "opponent_rank": null,
+      "opponent_rank": 131,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:58",
       "event": "vs. South Warren",
-      "mv_impact": -9.0
+      "mv_impact": -9.55
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.55
+    "top33_bonus_ev_shrunk": 0.6923076923076923
   }
 }

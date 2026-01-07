@@ -3,13 +3,13 @@
   "name": "Eli Iqbal",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 55,
-  "weight_class": 157,
+  "team_rank": 50,
+  "weight_class": 150,
   "year": 2026,
-  "current_rank": 109,
+  "current_rank": 181,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "0-0",
+    "overall": "1-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 84.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,21 +28,57 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35638124132",
+      "opponent_rank": 186,
+      "opponent_name": "Sawyer Hargrove",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35030261132",
+      "opponent_name": "Bradlee Mounce",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 118,
+      "opponent_weight": 150,
+      "opponent_rank": 113,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:16",
+      "event": "Maroon`s New Year Brawl"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35638124132",
+      "opponent_name": "Sawyer Hargrove",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 144,
+      "opponent_rank": 186,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County"
+    },
     {
       "date": "2025-12-17",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -53,6 +89,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.5833333333333334
   }
 }

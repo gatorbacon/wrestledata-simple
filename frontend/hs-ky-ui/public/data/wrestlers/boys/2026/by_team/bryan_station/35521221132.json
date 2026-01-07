@@ -3,23 +3,23 @@
   "name": "Izayah Mason",
   "team": "Bryan Station",
   "team_slug": "bryan_station",
-  "team_rank": 64,
+  "team_rank": 59,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 103,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "0-1",
+    "overall": "1-4",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 106.6,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 97.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,48 +27,103 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": {
-      "opponent_id": "34995975132",
-      "opponent_rank": 37,
-      "opponent_name": "Johnathan Tapp",
+    "win_over_highest_rank": {
+      "opponent_id": "35652052132",
+      "opponent_rank": 136,
+      "opponent_name": "Levi Muth",
       "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35520358132",
+      "opponent_rank": 90,
+      "opponent_name": "Ezekiel Pacheco",
+      "method": "Fall 2:03"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35520358132",
+      "opponent_name": "Ezekiel Pacheco",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 285,
+      "opponent_rank": 90,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:03",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -6.95
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35205190132",
+      "opponent_name": "Benjamin Cauley",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 26,
+      "opponent_weight": 285,
+      "opponent_rank": 14,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -2.61
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "34995377132",
+      "opponent_name": "Jamison Dunn",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 99,
+      "opponent_weight": 285,
+      "opponent_rank": 72,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Region 6 JV Region",
+      "mv_impact": -6.16
+    },
     {
       "date": "2025-12-23",
       "opponent_id": "35652052132",
       "opponent_name": "Levi Muth",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 4,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 136,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": 2.57
+      "mv_impact": 2.33
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34995975132",
       "opponent_name": "Johnathan Tapp",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 56,
       "opponent_weight": 285,
-      "opponent_rank": 37,
+      "opponent_rank": 58,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Bryan Station",
-      "mv_impact": -4.99
+      "mv_impact": -5.46
     }
   ]
 }

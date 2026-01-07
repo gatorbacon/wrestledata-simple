@@ -9,9 +9,9 @@
   "current_rank": 13,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -27,11 +27,16 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35333440132",
+      "opponent_rank": 14,
+      "opponent_name": "Sarayna Lopez",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "35404892132",
       "opponent_rank": 3,
@@ -47,7 +52,8 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 17,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 14,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -63,12 +69,13 @@
       "opponent_team_rank": null,
       "opponent_weight": 126,
       "opponent_rank": 3,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:10",
       "event": "Bearcat Brawl (Girls)",
-      "mv_impact": -1.29
+      "mv_impact": -1.39
     },
     {
       "date": "2025-12-06",
@@ -77,13 +84,14 @@
       "opponent_team": "Holmes",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 80,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:10",
       "event": "Bearcat Brawl",
-      "mv_impact": 4.71
+      "mv_impact": 4.66
     }
   ],
   "bonus": {

@@ -3,13 +3,13 @@
   "name": "Caedyn Word",
   "team": "Union County",
   "team_slug": "union_county",
-  "team_rank": 3,
+  "team_rank": 2,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 87,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 9.0,
     "pa7": 1.0,
     "pd7": 8.0,
-    "si_plus": 85.5,
-    "df_plus": 107.5,
-    "apr_plus": 105.5,
+    "si_plus": 98.3,
+    "df_plus": 111.1,
+    "apr_plus": 104.7,
     "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 1,
@@ -27,19 +27,19 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35281675132",
-      "opponent_rank": 56,
+      "opponent_rank": 88,
       "opponent_name": "Christopher Lucas",
       "method": "MD 9-1"
     },
     "worst_loss": {
       "opponent_id": "35208003132",
-      "opponent_rank": 49,
+      "opponent_rank": 75,
       "opponent_name": "Kayden Lambert",
       "method": "Fall 0:00"
     }
@@ -50,60 +50,64 @@
       "opponent_id": "35281693132",
       "opponent_name": "Landon Lopez",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 89,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:49",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 4.32
+      "mv_impact": 4.3
     },
     {
       "date": "2025-12-20",
       "opponent_id": "36254704132",
       "opponent_name": "Bryson Brown",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 148,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Union County",
-      "mv_impact": 0.88
+      "mv_impact": 0.91
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35208003132",
       "opponent_name": "Kayden Lambert",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 285,
-      "opponent_rank": 49,
+      "opponent_rank": 75,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Union County",
-      "mv_impact": -6.19
+      "mv_impact": -6.26
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35281675132",
       "opponent_name": "Christopher Lucas",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 285,
-      "opponent_rank": 56,
+      "opponent_rank": 88,
+      "weight_class": "285",
       "result": "W",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
       "event": "vs. Union County",
-      "mv_impact": 2.91
+      "mv_impact": 2.52
     }
   ]
 }

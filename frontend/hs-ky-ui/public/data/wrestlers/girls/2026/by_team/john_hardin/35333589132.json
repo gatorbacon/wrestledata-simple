@@ -6,10 +6,10 @@
   "team_rank": 4,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 26,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35510918132",
+      "opponent_rank": 28,
+      "opponent_name": "Maxine Rhinesmith",
+      "method": "Fall 0:39"
+    },
     "worst_loss": {
       "opponent_id": "35478910132",
-      "opponent_rank": 24,
+      "opponent_rank": 25,
       "opponent_name": "Angel Queral",
       "method": "Fall 2:56"
     }
@@ -47,13 +52,14 @@
       "opponent_team": "John Hardin",
       "opponent_team_rank": 4,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 28,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:39",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": 7.59
+      "mv_impact": 7.15
     },
     {
       "date": "2025-12-20",
@@ -63,12 +69,13 @@
       "opponent_team_rank": 8,
       "opponent_weight": 132,
       "opponent_rank": 18,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:33",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -4.34
+      "mv_impact": -4.56
     },
     {
       "date": "2025-12-20",
@@ -77,13 +84,14 @@
       "opponent_team": "Southern",
       "opponent_team_rank": 56,
       "opponent_weight": 132,
-      "opponent_rank": 24,
+      "opponent_rank": 25,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:56",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -4.05
+      "mv_impact": -4.63
     }
   ]
 }

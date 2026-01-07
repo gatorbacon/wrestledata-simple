@@ -3,13 +3,13 @@
   "name": "Jett Rudolph",
   "team": "Male",
   "team_slug": "male",
-  "team_rank": 50,
+  "team_rank": 45,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 149,
   "record": {
     "overall": "0-6",
-    "vs_ranked": "0-4",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 6.5,
     "pa7": 20.0,
     "pd7": -13.5,
-    "si_plus": 97.3,
-    "df_plus": 88.8,
-    "apr_plus": 96.2,
+    "si_plus": 96.0,
+    "df_plus": 87.8,
+    "apr_plus": 95.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,15 +28,15 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35522912132",
-      "opponent_rank": 73,
-      "opponent_name": "Caleb Jackson",
-      "method": "TF 31-13 0:00"
+      "opponent_id": "35404981132",
+      "opponent_rank": 144,
+      "opponent_name": "Gunnar Wickstrom",
+      "method": "TF 15-0 0:00"
     }
   },
   "match_list": [
@@ -45,24 +45,26 @@
       "opponent_id": "35110070132",
       "opponent_name": "Manuel Nivar",
       "opponent_team": "Moore",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 46,
       "opponent_weight": 138,
-      "opponent_rank": 51,
+      "opponent_rank": 69,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:13",
       "event": "vs. Moore",
-      "mv_impact": -4.75
+      "mv_impact": -5.74
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35519922132",
       "opponent_name": "Payton Conner",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 106,
       "opponent_weight": 144,
-      "opponent_rank": 22,
+      "opponent_rank": 19,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -75,65 +77,69 @@
       "opponent_id": "35404981132",
       "opponent_name": "Gunnar Wickstrom",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 98,
+      "opponent_team_rank": 96,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 144,
+      "weight_class": "144",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
       "event": "Derby City Classic",
-      "mv_impact": -9.55
+      "mv_impact": -9.18
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35076701132",
       "opponent_name": "Malik Quarles",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 123,
-      "opponent_weight": 150,
-      "opponent_rank": 62,
+      "opponent_team_rank": 124,
+      "opponent_weight": 144,
+      "opponent_rank": 129,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Classic",
-      "mv_impact": -7.37
+      "mv_impact": -8.6
     },
     {
       "date": "2025-12-10",
       "opponent_id": "35522912132",
       "opponent_name": "Caleb Jackson",
       "opponent_team": "Seneca",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 48,
       "opponent_weight": 144,
-      "opponent_rank": 73,
+      "opponent_rank": 116,
+      "weight_class": "144",
       "result": "L",
       "method": "TF",
       "score": "31-13",
       "duration": "0:00",
       "event": "vs. Seneca",
-      "mv_impact": -8.04
+      "mv_impact": -8.16
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35281400132",
       "opponent_name": "Axel Rubio Vasquez",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 70,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 123,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:18",
       "event": "The Beast of the East",
-      "mv_impact": -9.12
+      "mv_impact": -9.2
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

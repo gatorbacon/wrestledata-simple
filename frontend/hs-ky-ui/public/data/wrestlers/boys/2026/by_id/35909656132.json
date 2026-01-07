@@ -3,13 +3,13 @@
   "name": "Sawyer Merrill",
   "team": "Russell",
   "team_slug": "russell",
-  "team_rank": 119,
+  "team_rank": 120,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 60,
+  "current_rank": 74,
   "record": {
-    "overall": "3-4",
-    "vs_ranked": "2-3",
+    "overall": "3-5",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
     "vs_top25": "0-3"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 105.7,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 103.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,133 +27,156 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35635453132",
-      "opponent_rank": 73,
+      "opponent_rank": 85,
       "opponent_name": "Derrick Taylor",
       "method": "Fall 3:11"
     },
     "worst_loss": {
-      "opponent_id": "34993511132",
-      "opponent_rank": 20,
-      "opponent_name": "AJ Falk",
-      "method": "Fall 0:00"
+      "opponent_id": "35752242132",
+      "opponent_rank": 84,
+      "opponent_name": "gabriel hayes",
+      "method": "Fall 1:20"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35752242132",
+      "opponent_name": "gabriel hayes",
+      "opponent_team": "Lawrence County",
+      "opponent_team_rank": 97,
+      "opponent_weight": 132,
+      "opponent_rank": 84,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "vs. Russell",
+      "mv_impact": -6.81
+    },
     {
       "date": "2025-12-16",
       "opponent_id": "35850446132",
       "opponent_name": "Kaiden Nottingham",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 138,
       "opponent_rank": 13,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Russell",
-      "mv_impact": -2.54
+      "mv_impact": -3.49
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35752654132",
       "opponent_name": "Eli Fitch",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 99,
+      "opponent_team_rank": 97,
       "opponent_weight": 138,
-      "opponent_rank": 102,
+      "opponent_rank": 134,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:47",
       "event": "Ashland blazer invitational",
-      "mv_impact": 1.24
+      "mv_impact": 1.92
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34993511132",
       "opponent_name": "AJ Falk",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 123,
       "opponent_weight": 138,
-      "opponent_rank": 20,
+      "opponent_rank": 18,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland blazer invitational",
-      "mv_impact": -3.49
+      "mv_impact": -3.62
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35850446132",
       "opponent_name": "Kaiden Nottingham",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 138,
       "opponent_rank": 13,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
       "event": "AWC Invitational",
-      "mv_impact": -2.54
+      "mv_impact": -3.49
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35635496132",
       "opponent_name": "David Craig",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 86,
-      "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_team_rank": 83,
+      "opponent_weight": 138,
+      "opponent_rank": 34,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:40",
       "event": "AWC Invitational",
-      "mv_impact": -9.83
+      "mv_impact": -3.41
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35635453132",
       "opponent_name": "Derrick Taylor",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 86,
+      "opponent_team_rank": 83,
       "opponent_weight": 138,
-      "opponent_rank": 73,
+      "opponent_rank": 85,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:11",
       "event": "AWC Invitational",
-      "mv_impact": 5.88
+      "mv_impact": 5.9
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35909457132",
       "opponent_name": "Tyler Clay",
       "opponent_team": "Russell",
-      "opponent_team_rank": 119,
+      "opponent_team_rank": 120,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 185,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:57",
       "event": "AWC Invitational",
-      "mv_impact": 2.03
+      "mv_impact": 0.6
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5555555555555556
+    "top33_bonus_ev_shrunk": 0.8571428571428571
   }
 }

@@ -3,13 +3,13 @@
   "name": "Jacob Engle",
   "team": "Pike County Central",
   "team_slug": "pike_county_central",
-  "team_rank": 114,
-  "weight_class": 190,
+  "team_rank": 39,
+  "weight_class": 175,
   "year": 2026,
-  "current_rank": 97,
+  "current_rank": 200,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-0",
+    "overall": "0-3",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 85.2,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 83.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,27 +28,62 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35734922132",
+      "opponent_rank": 107,
+      "opponent_name": "Isaiah May",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_a8887eac4d00",
+      "opponent_name": "Kenton Neeley",
+      "opponent_team": "PikeView",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_9069a4846ccb",
+      "opponent_name": "Ethan Richardson",
+      "opponent_team": "Pikeville",
+      "opponent_team_rank": 114,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
     {
       "date": "2025-12-16",
       "opponent_id": "35734922132",
       "opponent_name": "Isaiah May",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 55,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 107,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pike County Central",
-      "mv_impact": -8.8
+      "event": "vs. Pike County Central"
     }
   ]
 }

@@ -3,51 +3,102 @@
   "name": "Dawson Harris",
   "team": "Caldwell County",
   "team_slug": "caldwell_county",
-  "team_rank": 67,
+  "team_rank": 62,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 21,
+  "current_rank": 24,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "2-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "5-2",
+    "vs_ranked": "5-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 112.6,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 110.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35458688132",
-      "opponent_rank": 40,
-      "opponent_name": "Joshua Frost",
-      "method": "Fall 3:50"
+      "opponent_id": "35559540132",
+      "opponent_rank": 27,
+      "opponent_name": "Ethan Collins",
+      "method": "Fall 5:34"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34997602132",
+      "opponent_rank": 8,
+      "opponent_name": "Seth Jones",
+      "method": "Fall 0:42"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35082315132",
+      "opponent_name": "Thomas Strange",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 57,
+      "opponent_weight": 215,
+      "opponent_rank": 93,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:30",
+      "event": "Tates Creek Invitational"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35559540132",
+      "opponent_name": "Ethan Collins",
+      "opponent_team": "Knott County Central",
+      "opponent_team_rank": 94,
+      "opponent_weight": 215,
+      "opponent_rank": 27,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:34",
+      "event": "Tates Creek Invitational"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34997602132",
+      "opponent_name": "Seth Jones",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 41,
+      "opponent_weight": 215,
+      "opponent_rank": 8,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:42",
+      "event": "Tates Creek Invitational"
+    },
     {
       "date": "2025-12-09",
       "opponent_id": "35207991132",
       "opponent_name": "Javian Young",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 91,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -59,9 +110,10 @@
       "opponent_id": "35521021132",
       "opponent_name": "Jaeden Carolina",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 76,
       "opponent_weight": 215,
-      "opponent_rank": 58,
+      "opponent_rank": 53,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -76,6 +128,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 215,
       "opponent_rank": null,
+      "weight_class": "215",
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -87,9 +140,10 @@
       "opponent_id": "35458688132",
       "opponent_name": "Joshua Frost",
       "opponent_team": "Calloway County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 63,
       "opponent_weight": 215,
-      "opponent_rank": 40,
+      "opponent_rank": 39,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -98,8 +152,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.3783068783068784
   }
 }

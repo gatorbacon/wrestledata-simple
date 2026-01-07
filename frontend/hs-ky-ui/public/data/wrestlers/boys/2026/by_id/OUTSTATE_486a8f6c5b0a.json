@@ -4,12 +4,12 @@
   "team": "Evansville F.j. Reitz",
   "team_slug": "evansville_fj_reitz",
   "team_rank": null,
-  "weight_class": 120,
+  "weight_class": 126,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "2-1",
+    "overall": "4-1",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,39 +20,70 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
+    "pin_rate": 0.75,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 4,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35208179132",
-      "opponent_rank": 45,
-      "opponent_name": "Caleb Clary",
-      "method": "TF 20-2 0:00"
+      "opponent_id": "35049033132",
+      "opponent_rank": 29,
+      "opponent_name": "Carter Bratcher",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35049797132",
-      "opponent_rank": 36,
+      "opponent_rank": 44,
       "opponent_name": "Logan Mongold",
       "method": "Dec 9-3"
     }
   },
   "match_list": [
     {
+      "date": "2025-12-30",
+      "opponent_id": "35618719132",
+      "opponent_name": "Jyden Jones",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 132,
+      "opponent_weight": 126,
+      "opponent_rank": 39,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:01",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35049033132",
+      "opponent_name": "Carter Bratcher",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 126,
+      "opponent_rank": 29,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Evansville F.j. Reitz"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35281688132",
       "opponent_name": "James Walker",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 113,
-      "opponent_rank": 58,
+      "opponent_rank": 65,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -64,9 +95,10 @@
       "opponent_id": "35208179132",
       "opponent_name": "Caleb Clary",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 120,
-      "opponent_rank": 45,
+      "opponent_rank": 48,
+      "weight_class": "120",
       "result": "W",
       "method": "TF",
       "score": "20-2",
@@ -78,9 +110,10 @@
       "opponent_id": "35049797132",
       "opponent_name": "Logan Mongold",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 110,
-      "opponent_weight": 132,
-      "opponent_rank": 36,
+      "opponent_team_rank": 30,
+      "opponent_weight": 126,
+      "opponent_rank": 44,
+      "weight_class": "126",
       "result": "L",
       "method": "DEC",
       "score": "9-3",
@@ -89,8 +122,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.19375
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.8518518518518516
   }
 }

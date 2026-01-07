@@ -3,13 +3,13 @@
   "name": "Bryan Mooser",
   "team": "Logan County",
   "team_slug": "logan_county",
-  "team_rank": 102,
+  "team_rank": 100,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 87,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 99.9,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 98.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,19 +27,19 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34989195132",
-      "opponent_rank": 94,
+      "opponent_rank": 131,
       "opponent_name": "Chase Mason",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35127113132",
-      "opponent_rank": 55,
+      "opponent_rank": 71,
       "opponent_name": "Jake Jeziorski",
       "method": "Fall 3:33"
     }
@@ -50,60 +50,64 @@
       "opponent_id": "35127113132",
       "opponent_name": "Jake Jeziorski",
       "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 72,
       "opponent_weight": 138,
-      "opponent_rank": 55,
+      "opponent_rank": 71,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:33",
       "event": "vs. Logan County",
-      "mv_impact": -4.69
+      "mv_impact": -5.2
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35144091132",
       "opponent_name": "Jace Main",
       "opponent_team": "North Hardin",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 25,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 165,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:31",
       "event": "vs. North Hardin",
-      "mv_impact": 1.04
+      "mv_impact": 0.91
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35024700132",
       "opponent_name": "Ethan Coyt",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 126,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 133,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:54",
       "event": "vs. South Warren",
-      "mv_impact": 1.27
+      "mv_impact": 1.91
     },
     {
       "date": "2025-12-04",
       "opponent_id": "34989195132",
       "opponent_name": "Chase Mason",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 47,
       "opponent_weight": 132,
-      "opponent_rank": 94,
+      "opponent_rank": 131,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Ohio County",
-      "mv_impact": 1.36
+      "mv_impact": 1.79
     }
   ]
 }

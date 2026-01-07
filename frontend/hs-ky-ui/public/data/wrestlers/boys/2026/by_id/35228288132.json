@@ -3,13 +3,13 @@
   "name": "Saniyah Nana",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 66,
-  "weight_class": 150,
+  "team_rank": 61,
+  "weight_class": 138,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 141,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 5.37,
     "pa7": 11.0,
     "pd7": -5.63,
-    "si_plus": 95.9,
+    "si_plus": 94.3,
     "df_plus": 100.5,
-    "apr_plus": 93.9,
+    "apr_plus": 93.2,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
@@ -27,12 +27,22 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35222439132",
+      "opponent_rank": 153,
+      "opponent_name": "Navaeh Woods",
+      "method": "MD 10-1"
+    },
+    "worst_loss": {
+      "opponent_id": "35284469132",
+      "opponent_rank": 180,
+      "opponent_name": "Sonia Tarley",
+      "method": "Fall 1:05"
+    }
   },
   "match_list": [
     {
@@ -42,78 +52,83 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": 33,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 108,
+      "weight_class": "144",
       "result": "L",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
       "event": "vs. Spencer County",
-      "mv_impact": -5.18
+      "mv_impact": -5.72
     },
     {
       "date": "2025-12-16",
       "opponent_id": "35284469132",
       "opponent_name": "Sonia Tarley",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 73,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 180,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:05",
       "event": "vs. Eastern",
-      "mv_impact": -8.1
+      "mv_impact": -11.47
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35222439132",
       "opponent_name": "Navaeh Woods",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 108,
+      "opponent_team_rank": 107,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 153,
+      "weight_class": "138",
       "result": "W",
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
       "event": "The Beast of the East",
-      "mv_impact": -1.56
+      "mv_impact": -0.85
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35433673132",
       "opponent_name": "Amri Masudi",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 98,
+      "opponent_team_rank": 96,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 127,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:41",
       "event": "The Beast of the East",
-      "mv_impact": -10.51
+      "mv_impact": -10.33
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35321135132",
       "opponent_name": "Celia Sweatt",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 77,
+      "weight_class": "138",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "3:19",
       "event": "Screaming Eagles Classic",
-      "mv_impact": -4.99
+      "mv_impact": -5.34
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8333333333333334
+    "top33_bonus_ev_shrunk": 0.8571428571428571
   }
 }

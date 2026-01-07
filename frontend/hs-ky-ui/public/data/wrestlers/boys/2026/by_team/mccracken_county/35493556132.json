@@ -3,13 +3,13 @@
   "name": "Jace Hicks",
   "team": "McCracken County",
   "team_slug": "mccracken_county",
-  "team_rank": 106,
+  "team_rank": 104,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 97,
+  "current_rank": 146,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 8.0,
     "pa7": 14.0,
     "pd7": -6.0,
-    "si_plus": 99.1,
-    "df_plus": 96.6,
-    "apr_plus": 87.2,
+    "si_plus": 98.4,
+    "df_plus": 96.3,
+    "apr_plus": 86.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,11 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34989012132",
+      "opponent_rank": 60,
+      "opponent_name": "Duncan Helm",
+      "method": "Dec 14-8"
+    }
   },
   "match_list": [
     {
@@ -40,15 +45,16 @@
       "opponent_id": "34989012132",
       "opponent_name": "Duncan Helm",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 47,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 60,
+      "weight_class": "126",
       "result": "L",
       "method": "DEC",
       "score": "14-8",
       "duration": "7:00",
       "event": "vs. Ohio County",
-      "mv_impact": -2.48
+      "mv_impact": -3.26
     }
   ]
 }

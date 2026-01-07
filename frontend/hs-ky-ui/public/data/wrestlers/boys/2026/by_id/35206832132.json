@@ -3,23 +3,23 @@
   "name": "Leo Garsee",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 55,
+  "team_rank": 50,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 161,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-1",
+    "overall": "0-5",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 92.4,
+    "pf7": 5.0,
+    "pa7": 21.0,
+    "pd7": -16.0,
+    "si_plus": 93.7,
+    "df_plus": 86.4,
+    "apr_plus": 90.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,50 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35049119132",
-      "opponent_rank": 69,
-      "opponent_name": "Colton Hendrick",
-      "method": "Fall 2:00"
+      "opponent_id": "35637993132",
+      "opponent_rank": 140,
+      "opponent_name": "Keegan Roeder",
+      "method": "TF 21-5 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35030263132",
+      "opponent_name": "evan Blackburn",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 118,
+      "opponent_weight": 144,
+      "opponent_rank": 79,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:24",
+      "event": "Maroon`s New Year Brawl",
+      "mv_impact": -6.64
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35476520132",
+      "opponent_name": "kaison phillips",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 118,
+      "opponent_weight": 144,
+      "opponent_rank": 59,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "Maroon`s New Year Brawl",
+      "mv_impact": -5.28
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35030263132",
@@ -47,33 +79,51 @@
       "opponent_team": "Pulaski County",
       "opponent_team_rank": 118,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 79,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:17",
       "event": "vs. Pulaski County",
-      "mv_impact": -7.02
+      "mv_impact": -6.64
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35637993132",
+      "opponent_name": "Keegan Roeder",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 144,
+      "opponent_rank": 140,
+      "weight_class": "144",
+      "result": "L",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "0:00",
+      "event": "vs. Russell County",
+      "mv_impact": -9.08
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35049119132",
       "opponent_name": "Colton Hendrick",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 87,
+      "opponent_team_rank": 84,
       "opponent_weight": 138,
-      "opponent_rank": 69,
+      "opponent_rank": 57,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
       "event": "vs. Greenwood",
-      "mv_impact": -6.47
+      "mv_impact": -5.22
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

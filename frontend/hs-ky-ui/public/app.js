@@ -1348,7 +1348,14 @@ function safe(value, formatter) {
       }
       tr.appendChild(oppTd);
   
-      // 3. Opponent Team (muted secondary)
+      // 3. Weight Class
+      const weightTd = document.createElement("td");
+      weightTd.className = "metric-secondary num";
+      const matchWeight = match.weight_class;
+      weightTd.textContent = matchWeight ? safe(matchWeight) : "—";
+      tr.appendChild(weightTd);
+  
+      // 4. Opponent Team (muted secondary)
       const oppTeamTd = document.createElement("td");
       oppTeamTd.className = "metric-secondary";
       let oppTeamName = safe(displayOpponentTeam);
@@ -1369,7 +1376,7 @@ function safe(value, formatter) {
       }
       tr.appendChild(oppTeamTd);
       
-      // 4. Opponent Rank (badge with medal rules)
+      // 5. Opponent Rank (badge with medal rules)
       // For forfeits, show "—" instead of "UNR"
       // For out-of-state opponents, show "N/A" instead of "UNR"
       const oppRankTd = document.createElement("td");
@@ -1382,7 +1389,7 @@ function safe(value, formatter) {
       }
       tr.appendChild(oppRankTd);
       
-      // 5. Result (combined Result + Method as badge)
+      // 6. Result (combined Result + Method as badge)
       // For forfeits, create a custom badge with "FF" and win styling
       const resultTd = document.createElement("td");
       if (isForfeit) {
@@ -1396,7 +1403,7 @@ function safe(value, formatter) {
       }
       tr.appendChild(resultTd);
       
-      // 6. MV Impact (right-aligned, tabular, color-coded) - NCAA only
+      // 7. MV Impact (right-aligned, tabular, color-coded) - NCAA only
       // For HS, skip this column entirely
       if (!isHS) {
       const impactTd = document.createElement("td");
@@ -1413,7 +1420,7 @@ function safe(value, formatter) {
       tr.appendChild(impactTd);
       }
       
-      // 7. Score (muted secondary)
+      // 8. Score (muted secondary)
       const scoreTd = document.createElement("td");
       scoreTd.className = "metric-secondary num";
       scoreTd.textContent = safe(match.score);

@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "0-1",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,17 +24,22 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35226396132",
+      "opponent_rank": 137,
+      "opponent_name": "Kayden Brown",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "35051529132",
-      "opponent_rank": 16,
+      "opponent_rank": 17,
       "opponent_name": "Braylen Livingston",
       "method": "Fall 2:39"
     }
@@ -42,26 +47,13 @@
   "match_list": [
     {
       "date": "2025-12-06",
-      "opponent_id": "35520889132",
-      "opponent_name": "Hayden Bennett",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": 39,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:21",
-      "event": "vs. Charlestown"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35226396132",
       "opponent_name": "Kayden Brown",
       "opponent_team": "Nelson County",
       "opponent_team_rank": 29,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 137,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -73,9 +65,10 @@
       "opponent_id": "35051529132",
       "opponent_name": "Braylen Livingston",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 40,
       "opponent_weight": 190,
-      "opponent_rank": 16,
+      "opponent_rank": 17,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,

@@ -3,13 +3,13 @@
   "name": "Kendel Lunsford",
   "team": "West Carter",
   "team_slug": "west_carter",
-  "team_rank": 133,
-  "weight_class": 165,
+  "team_rank": 135,
+  "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 76,
   "record": {
-    "overall": "2-2",
-    "vs_ranked": "2-2",
+    "overall": "3-2",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,31 +17,31 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 101.5,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 103.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35635317132",
-      "opponent_rank": 59,
+      "opponent_rank": 80,
       "opponent_name": "Cooper Jobe",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35420195132",
-      "opponent_rank": 47,
-      "opponent_name": "Justin Hill",
-      "method": "Fall 1:18"
+      "opponent_id": "35513061132",
+      "opponent_rank": 66,
+      "opponent_name": "Jaxson Baldwin",
+      "method": "Fall 1:36"
     }
   },
   "match_list": [
@@ -50,65 +50,85 @@
       "opponent_id": "35513061132",
       "opponent_name": "Jaxson Baldwin",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 55,
       "opponent_weight": 157,
-      "opponent_rank": 34,
+      "opponent_rank": 66,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:36",
       "event": "Anchor Down Showdown",
-      "mv_impact": -4.22
+      "mv_impact": -6.75
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35420195132",
       "opponent_name": "Justin Hill",
       "opponent_team": "Whitley County",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 138,
       "opponent_weight": 165,
-      "opponent_rank": 47,
+      "opponent_rank": 50,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:18",
       "event": "Anchor Down Showdown",
-      "mv_impact": -5.76
+      "mv_impact": -6.12
     },
     {
       "date": "2025-12-01",
       "opponent_id": "35752575132",
       "opponent_name": "Jordan Baker",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 99,
+      "opponent_team_rank": 97,
       "opponent_weight": 150,
-      "opponent_rank": 105,
+      "opponent_rank": 161,
+      "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:17",
       "event": "vs. West Carter",
-      "mv_impact": 0.61
+      "mv_impact": 1.91
+    },
+    {
+      "date": "2025-12-01",
+      "opponent_id": "35724490132",
+      "opponent_name": "Kasey Clark",
+      "opponent_team": "East Carter",
+      "opponent_team_rank": 42,
+      "opponent_weight": 157,
+      "opponent_rank": 134,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. West Carter",
+      "mv_impact": 1.67
     },
     {
       "date": "2025-12-01",
       "opponent_id": "35635317132",
       "opponent_name": "Cooper Jobe",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 86,
+      "opponent_team_rank": 83,
       "opponent_weight": 157,
-      "opponent_rank": 59,
+      "opponent_rank": 80,
+      "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. West Carter",
-      "mv_impact": 4.71
+      "mv_impact": 4.34
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9833333333333333
+    "top33_bonus_ev_shrunk": 0.9
   }
 }

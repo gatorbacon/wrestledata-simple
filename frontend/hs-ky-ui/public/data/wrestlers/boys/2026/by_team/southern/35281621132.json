@@ -3,13 +3,13 @@
   "name": "Selena Avila",
   "team": "Southern",
   "team_slug": "southern",
-  "team_rank": 125,
+  "team_rank": 127,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 160,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 84.4,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 83.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,11 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34997633132",
+      "opponent_rank": 109,
+      "opponent_name": "Sandra Francis",
+      "method": "Fall 0:32"
+    }
   },
   "match_list": [
     {
@@ -40,15 +45,16 @@
       "opponent_id": "34997633132",
       "opponent_name": "Sandra Francis",
       "opponent_team": "Western",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 109,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:32",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": -7.59
+      "mv_impact": -8.37
     }
   ]
 }

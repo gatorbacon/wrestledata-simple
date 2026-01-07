@@ -6,10 +6,10 @@
   "team_rank": null,
   "weight_class": 185,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 43,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35333555132",
+      "opponent_rank": 32,
+      "opponent_name": "Kaylin Alfred",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
     {
@@ -43,6 +48,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 114,
       "opponent_rank": null,
+      "weight_class": "185",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -57,6 +63,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 114,
       "opponent_rank": null,
+      "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -70,7 +77,8 @@
       "opponent_team": "John Hardin",
       "opponent_team_rank": 4,
       "opponent_weight": 185,
-      "opponent_rank": null,
+      "opponent_rank": 32,
+      "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -85,6 +93,7 @@
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,

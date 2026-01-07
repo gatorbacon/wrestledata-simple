@@ -3,23 +3,23 @@
   "name": "Jathan Brydie",
   "team": "North Hardin",
   "team_slug": "north_hardin",
-  "team_rank": 22,
+  "team_rank": 25,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 33,
+  "current_rank": 45,
   "record": {
     "overall": "4-1",
-    "vs_ranked": "2-1",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 15.5,
     "pa7": 12.92,
     "pd7": 2.58,
-    "si_plus": 100.5,
-    "df_plus": 88.1,
-    "apr_plus": 104.9,
+    "si_plus": 110.1,
+    "df_plus": 97.8,
+    "apr_plus": 104.0,
     "pin_rate": 0.75,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,19 +27,19 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 4,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35206004132",
-      "opponent_rank": 34,
+      "opponent_rank": 57,
       "opponent_name": "Kyler Bryant",
       "method": "Fall 2:24"
     },
     "worst_loss": {
       "opponent_id": "35001147132",
-      "opponent_rank": 11,
+      "opponent_rank": 27,
       "opponent_name": "Apelu Hazelwood",
       "method": "MD 20-6"
     }
@@ -50,75 +50,80 @@
       "opponent_id": "35001147132",
       "opponent_name": "Apelu Hazelwood",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 14,
       "opponent_weight": 190,
-      "opponent_rank": 11,
+      "opponent_rank": 27,
+      "weight_class": "190",
       "result": "L",
       "method": "MD",
       "score": "20-6",
       "duration": "7:00",
       "event": "The Beast of the East",
-      "mv_impact": -0.25
+      "mv_impact": -0.76
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35746100132",
       "opponent_name": "Ayden Sorrels",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 73,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 123,
+      "weight_class": "190",
       "result": "W",
       "method": "TF",
       "score": "19-3",
       "duration": "3:36",
       "event": "The Beast of the East",
-      "mv_impact": 1.27
+      "mv_impact": 1.48
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34995372132",
       "opponent_name": "Eli Grigsby",
       "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 101,
-      "opponent_weight": 190,
-      "opponent_rank": 83,
+      "opponent_team_rank": 99,
+      "opponent_weight": 175,
+      "opponent_rank": 130,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:48",
       "event": "The Beast of the East",
-      "mv_impact": 2.41
+      "mv_impact": 2.5
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35206004132",
       "opponent_name": "Kyler Bryant",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 108,
+      "opponent_team_rank": 107,
       "opponent_weight": 190,
-      "opponent_rank": 34,
+      "opponent_rank": 57,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:24",
       "event": "The Beast of the East",
-      "mv_impact": 6.67
+      "mv_impact": 4.72
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35222508132",
       "opponent_name": "Kellen Bryant",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 108,
+      "opponent_team_rank": 107,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 113,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:24",
       "event": "The Beast of the East",
-      "mv_impact": 2.39
+      "mv_impact": 2.88
     }
   ]
 }

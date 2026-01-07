@@ -9,8 +9,8 @@
   "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-1",
-    "vs_top10": "0-1",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -27,16 +27,21 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "36088812132",
+      "opponent_rank": 162,
+      "opponent_name": "Cody Otto",
+      "method": "Fall 0:57"
+    },
     "worst_loss": {
-      "opponent_id": "35051541132",
-      "opponent_rank": 7,
-      "opponent_name": "Maxx Escaloni",
-      "method": "Fall 0:23"
+      "opponent_id": "35226530132",
+      "opponent_rank": 171,
+      "opponent_name": "Brayden Edelen",
+      "method": "Dec 8-1"
     }
   },
   "match_list": [
@@ -45,9 +50,10 @@
       "opponent_id": "36088812132",
       "opponent_name": "Cody Otto",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 106,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 162,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -61,7 +67,8 @@
       "opponent_team": "Nelson County",
       "opponent_team_rank": 29,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 171,
+      "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
@@ -73,9 +80,10 @@
       "opponent_id": "35051541132",
       "opponent_name": "Maxx Escaloni",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 40,
       "opponent_weight": 285,
-      "opponent_rank": 7,
+      "opponent_rank": 15,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -86,6 +94,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9666666666666666
+    "top33_bonus_ev_shrunk": 1.3333333333333333
   }
 }

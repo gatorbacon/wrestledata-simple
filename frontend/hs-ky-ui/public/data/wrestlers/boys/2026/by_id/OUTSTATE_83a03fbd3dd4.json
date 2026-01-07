@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "OUTSTATE_83a03fbd3dd4",
+  "name": "Ben Peckenpaugh",
+  "team": "Evansville F.j. Reitz",
+  "team_slug": "evansville_fj_reitz",
+  "team_rank": null,
+  "weight_class": 106,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "36210376132",
+      "opponent_rank": 91,
+      "opponent_name": "Jaiven Hunley",
+      "method": "MD 22-12"
+    },
+    "worst_loss": {
+      "opponent_id": "35049123132",
+      "opponent_rank": 47,
+      "opponent_name": "Ryan LaMotte",
+      "method": "Dec 4-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "36210376132",
+      "opponent_name": "Jaiven Hunley",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 82,
+      "opponent_weight": 106,
+      "opponent_rank": 91,
+      "weight_class": "106",
+      "result": "W",
+      "method": "MD",
+      "score": "22-12",
+      "duration": "7:00",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35049123132",
+      "opponent_name": "Ryan LaMotte",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 106,
+      "opponent_rank": 47,
+      "weight_class": "106",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Fern Creek Gladiator"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.0
+  }
+}

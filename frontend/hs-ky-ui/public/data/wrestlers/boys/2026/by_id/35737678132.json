@@ -3,7 +3,7 @@
   "name": "Jacob Pyles",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 13,
+  "team_rank": 27,
   "weight_class": 190,
   "year": 2026,
   "current_rank": 8,
@@ -17,9 +17,9 @@
     "pf7": 9.75,
     "pa7": 19.0,
     "pd7": -9.25,
-    "si_plus": 94.0,
-    "df_plus": 81.9,
-    "apr_plus": 97.2,
+    "si_plus": 99.3,
+    "df_plus": 87.4,
+    "apr_plus": 96.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34988698132",
-      "opponent_rank": 15,
+      "opponent_rank": 18,
       "opponent_name": "DeAsian Harris",
       "method": "Dec 16-13"
     },
     "worst_loss": {
       "opponent_id": "34989004132",
-      "opponent_rank": 5,
+      "opponent_rank": 6,
       "opponent_name": "Garrison Messer",
       "method": "TF 16-1 2:00"
     }
@@ -50,9 +50,10 @@
       "opponent_id": "34988698132",
       "opponent_name": "DeAsian Harris",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 190,
-      "opponent_rank": 15,
+      "opponent_rank": 18,
+      "weight_class": "190",
       "result": "W",
       "method": "DEC",
       "score": "16-13",
@@ -64,9 +65,10 @@
       "opponent_id": "34989004132",
       "opponent_name": "Garrison Messer",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 47,
       "opponent_weight": 190,
-      "opponent_rank": 5,
+      "opponent_rank": 6,
+      "weight_class": "190",
       "result": "L",
       "method": "TF",
       "score": "16-1",
@@ -79,8 +81,9 @@
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "190",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -91,6 +94,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 1.2063492063492065
+    "top33_bonus_ev_shrunk": 0.9074074074074073
   }
 }

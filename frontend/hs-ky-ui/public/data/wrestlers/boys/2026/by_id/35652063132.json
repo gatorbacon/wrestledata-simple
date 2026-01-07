@@ -3,13 +3,13 @@
   "name": "Lucas Carr",
   "team": "Harrison County",
   "team_slug": "harrison_county",
-  "team_rank": 2,
+  "team_rank": 4,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 158,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-2",
+    "overall": "1-7",
+    "vs_ranked": "1-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,29 +17,98 @@
     "pf7": 4.0,
     "pa7": 11.0,
     "pd7": -7.0,
-    "si_plus": 90.2,
-    "df_plus": 95.1,
-    "apr_plus": 83.7,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 96.6,
+    "df_plus": 92.3,
+    "apr_plus": 90.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35651954132",
+      "opponent_rank": 175,
+      "opponent_name": "John Arnold",
+      "method": "Fall 3:58"
+    },
     "worst_loss": {
-      "opponent_id": "35048606132",
-      "opponent_rank": 74,
-      "opponent_name": "Daniel Adams",
+      "opponent_id": "35359602132",
+      "opponent_rank": 135,
+      "opponent_name": "Arian Leyva",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35281290132",
+      "opponent_name": "Thomas Tilley",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 70,
+      "opponent_weight": 157,
+      "opponent_rank": 52,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:25",
+      "event": "Cardinal Invitational",
+      "mv_impact": -6.41
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34997713132",
+      "opponent_name": "Grayson Scott",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 79,
+      "opponent_weight": 157,
+      "opponent_rank": 26,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:57",
+      "event": "Cardinal Invitational",
+      "mv_impact": -3.01
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34993734132",
+      "opponent_name": "Quentin Hardin",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 4,
+      "opponent_weight": 157,
+      "opponent_rank": 125,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:11",
+      "event": "Cardinal Invitational",
+      "mv_impact": -9.53
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35651954132",
+      "opponent_name": "John Arnold",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 4,
+      "opponent_weight": 157,
+      "opponent_rank": 175,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:58",
+      "event": "Cardinal Invitational",
+      "mv_impact": 0.5
+    },
     {
       "date": "2025-12-23",
       "opponent_id": "35359602132",
@@ -47,13 +116,14 @@
       "opponent_team": "Paul Laurence Dunbar",
       "opponent_team_rank": 112,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 135,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": -10.71
+      "mv_impact": -10.19
     },
     {
       "date": "2025-12-23",
@@ -62,48 +132,51 @@
       "opponent_team": "Paul Laurence Dunbar",
       "opponent_team_rank": 112,
       "opponent_weight": 157,
-      "opponent_rank": 63,
+      "opponent_rank": 84,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": -7.48
+      "mv_impact": -7.7
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35048606132",
       "opponent_name": "Daniel Adams",
       "opponent_team": "Bourbon County",
-      "opponent_team_rank": 63,
-      "opponent_weight": 157,
-      "opponent_rank": 74,
+      "opponent_team_rank": 58,
+      "opponent_weight": 150,
+      "opponent_rank": 52,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -8.54
+      "mv_impact": -6.04
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35405497132",
       "opponent_name": "Jacob Isaacs",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 81,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 126,
+      "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "11-4",
       "duration": "7:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -7.31
+      "mv_impact": -7.14
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.9
   }
 }

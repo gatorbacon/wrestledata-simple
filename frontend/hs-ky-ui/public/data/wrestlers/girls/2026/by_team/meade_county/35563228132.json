@@ -6,10 +6,10 @@
   "team_rank": 7,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 69,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-4",
+    "vs_ranked": "1-7",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35347233132",
+      "opponent_rank": 74,
+      "opponent_name": "Makinna Lucia",
+      "method": "Fall 3:57"
+    },
     "worst_loss": {
       "opponent_id": "35471185132",
-      "opponent_rank": 39,
+      "opponent_rank": 47,
       "opponent_name": "Charisma Kunkel",
       "method": "Fall 0:00"
     }
@@ -47,13 +52,14 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 6,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 35,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:46",
       "event": "Seneca Girls Invitational",
-      "mv_impact": -5.27
+      "mv_impact": -5.11
     },
     {
       "date": "2025-12-13",
@@ -62,7 +68,8 @@
       "opponent_team": "Adair County",
       "opponent_team_rank": 22,
       "opponent_weight": 114,
-      "opponent_rank": 39,
+      "opponent_rank": 47,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -78,12 +85,13 @@
       "opponent_team_rank": 4,
       "opponent_weight": 132,
       "opponent_rank": 8,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. John Hardin",
-      "mv_impact": -2.62
+      "mv_impact": -2.64
     },
     {
       "date": "2025-12-13",
@@ -92,13 +100,14 @@
       "opponent_team": "Harrison County",
       "opponent_team_rank": 19,
       "opponent_weight": 126,
-      "opponent_rank": 30,
+      "opponent_rank": 36,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Meade County",
-      "mv_impact": -4.91
+      "mv_impact": -4.8
     },
     {
       "date": "2025-12-13",
@@ -107,13 +116,14 @@
       "opponent_team": "John Hardin",
       "opponent_team_rank": 4,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 28,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Meade County",
-      "mv_impact": -4.41
+      "mv_impact": -4.85
     },
     {
       "date": "2025-12-06",
@@ -122,13 +132,14 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 33,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 74,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:57",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 4.29
+      "mv_impact": 4.23
     },
     {
       "date": "2025-12-06",
@@ -137,13 +148,14 @@
       "opponent_team": "George Rogers Clark",
       "opponent_team_rank": 41,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 26,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:45",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -5.21
+      "mv_impact": -5.17
     },
     {
       "date": "2025-12-06",
@@ -152,13 +164,14 @@
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 30,
+      "opponent_rank": 35,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:29",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -6.36
+      "mv_impact": -6.33
     }
   ]
 }

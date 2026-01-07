@@ -3,36 +3,111 @@
   "name": "Keshawn Dixon",
   "team": "Fort Campbell",
   "team_slug": "fort_campbell",
-  "team_rank": 80,
+  "team_rank": 76,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 48,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "3-1",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 113.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35566865132",
+      "opponent_rank": 66,
+      "opponent_name": "Dalton Willis",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35051529132",
+      "opponent_rank": 17,
+      "opponent_name": "Braylen Livingston",
+      "method": "Fall 4:35"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35402611132",
+      "opponent_name": "Daniel Martinez",
+      "opponent_team": "Bryan Station",
+      "opponent_team_rank": 59,
+      "opponent_weight": 190,
+      "opponent_rank": 69,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": 4.8
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35226396132",
+      "opponent_name": "Kayden Brown",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 190,
+      "opponent_rank": 137,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": 1.57
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35051529132",
+      "opponent_name": "Braylen Livingston",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 40,
+      "opponent_weight": 190,
+      "opponent_rank": 17,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:35",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -2.58
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35566865132",
+      "opponent_name": "Dalton Willis",
+      "opponent_team": "Thomas Nelson",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": 66,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": 5.29
+    }
+  ]
 }

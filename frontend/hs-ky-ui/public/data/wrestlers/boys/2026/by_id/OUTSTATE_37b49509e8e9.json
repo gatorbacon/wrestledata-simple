@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35640432132",
-      "opponent_rank": 6,
+      "opponent_rank": 10,
       "opponent_name": "Joe Carr",
       "method": "Fall 0:22"
     },
     "worst_loss": {
       "opponent_id": "35271324132",
-      "opponent_rank": 4,
+      "opponent_rank": 7,
       "opponent_name": "Connor Warner",
       "method": "Fall 0:00"
     }
@@ -50,9 +50,10 @@
       "opponent_id": "35640432132",
       "opponent_name": "Joe Carr",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 44,
       "opponent_weight": 120,
-      "opponent_rank": 6,
+      "opponent_rank": 10,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -66,7 +67,8 @@
       "opponent_team": "Simon Kenton",
       "opponent_team_rank": 31,
       "opponent_weight": 120,
-      "opponent_rank": 4,
+      "opponent_rank": 7,
+      "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -77,6 +79,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.2833333333333334
+    "top33_bonus_ev_shrunk": 1.380952380952381
   }
 }

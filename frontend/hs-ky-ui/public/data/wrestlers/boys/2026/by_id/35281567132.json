@@ -3,23 +3,23 @@
   "name": "Sam Stauffer",
   "team": "Dixie Heights",
   "team_slug": "dixie_heights",
-  "team_rank": 74,
+  "team_rank": 70,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 117,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "1-4",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 87.7,
+    "pf7": 2.0,
+    "pa7": 9.0,
+    "pd7": -7.0,
+    "si_plus": 89.0,
+    "df_plus": 103.3,
+    "apr_plus": 89.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -27,38 +27,107 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35364719132",
+      "opponent_rank": 94,
+      "opponent_name": "Eli Barno",
+      "method": "M. For."
+    },
     "worst_loss": {
-      "opponent_id": "34988572132",
-      "opponent_rank": 40,
-      "opponent_name": "Mason Masteller",
-      "method": "Fall 0:40"
+      "opponent_id": "35454854132",
+      "opponent_rank": 89,
+      "opponent_name": "akaidian Lawler",
+      "method": "Dec 9-2"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34997730132",
+      "opponent_name": "Samuel Powell",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 79,
+      "opponent_weight": 106,
+      "opponent_rank": 62,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "Cardinal Invitational",
+      "mv_impact": -7.46
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35364719132",
+      "opponent_name": "Eli Barno",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 93,
+      "opponent_weight": 106,
+      "opponent_rank": 94,
+      "weight_class": "106",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Cardinal Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35281302132",
+      "opponent_name": "Cameron Michel",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 70,
+      "opponent_weight": 106,
+      "opponent_rank": 40,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "Cardinal Invitational",
+      "mv_impact": -5.25
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35454854132",
+      "opponent_name": "akaidian Lawler",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 128,
+      "opponent_weight": 106,
+      "opponent_rank": 89,
+      "weight_class": "106",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "Cardinal Invitational",
+      "mv_impact": -4.83
+    },
     {
       "date": "2025-12-26",
       "opponent_id": "34988572132",
       "opponent_name": "Mason Masteller",
       "opponent_team": "Conner",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 10,
       "opponent_weight": 106,
-      "opponent_rank": 40,
+      "opponent_rank": 61,
+      "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:40",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -6.48
+      "mv_impact": -6.47
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.5833333333333333
+    "top33_bonus_ev_shrunk": 1.0
   }
 }

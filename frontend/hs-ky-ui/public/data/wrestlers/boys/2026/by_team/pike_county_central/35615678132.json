@@ -3,13 +3,13 @@
   "name": "Caiden Hamilton",
   "team": "Pike County Central",
   "team_slug": "pike_county_central",
-  "team_rank": 114,
-  "weight_class": 132,
+  "team_rank": 39,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 107,
+  "current_rank": 163,
   "record": {
-    "overall": "0-3",
-    "vs_ranked": "0-3",
+    "overall": "0-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 6.0,
     "pa7": 8.0,
     "pd7": -2.0,
-    "si_plus": 96.7,
-    "df_plus": 104.3,
-    "apr_plus": 88.1,
+    "si_plus": 95.3,
+    "df_plus": 104.7,
+    "apr_plus": 87.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,32 +28,49 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35420336132",
-      "opponent_rank": 79,
+      "opponent_rank": 114,
       "opponent_name": "Landon Creech",
       "method": "Dec 8-6"
     }
   },
   "match_list": [
     {
+      "date": "2025-12-30",
+      "opponent_id": "36939130132",
+      "opponent_name": "Zachary Ammon",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 120,
+      "opponent_rank": 54,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:02",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -6.54
+    },
+    {
       "date": "2025-12-16",
       "opponent_id": "35513069132",
       "opponent_name": "Kane Caudill",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 55,
       "opponent_weight": 132,
-      "opponent_rank": 41,
+      "opponent_rank": 52,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Pike County Central",
-      "mv_impact": -5.54
+      "mv_impact": -6.04
     },
     {
       "date": "2025-12-16",
@@ -62,28 +79,30 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 113,
       "opponent_weight": 132,
-      "opponent_rank": 31,
+      "opponent_rank": 43,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Pike County Central",
-      "mv_impact": -3.48
+      "mv_impact": -4.04
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35420336132",
       "opponent_name": "Landon Creech",
       "opponent_team": "Whitley County",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 138,
       "opponent_weight": 126,
-      "opponent_rank": 79,
+      "opponent_rank": 114,
+      "weight_class": "126",
       "result": "L",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
       "event": "Anchor Down Showdown",
-      "mv_impact": -6.51
+      "mv_impact": -7.14
     }
   ]
 }

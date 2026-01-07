@@ -3,13 +3,13 @@
   "name": "Christian Carmona",
   "team": "Jeffersontown",
   "team_slug": "jeffersontown",
-  "team_rank": 12,
+  "team_rank": 17,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 55,
+  "current_rank": 58,
   "record": {
     "overall": "1-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 115.4,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 115.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,11 +27,16 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35321130132",
+      "opponent_rank": 178,
+      "opponent_name": "Damien Mutter",
+      "method": "Fall 3:27"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -40,15 +45,16 @@
       "opponent_id": "35321130132",
       "opponent_name": "Damien Mutter",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
-      "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_team_rank": 109,
+      "opponent_weight": 150,
+      "opponent_rank": 178,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:27",
       "event": "vs. North Bullitt",
-      "mv_impact": 2.31
+      "mv_impact": 3.89
     }
   ]
 }

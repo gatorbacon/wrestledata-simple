@@ -3,13 +3,13 @@
   "name": "Cody Tamez",
   "team": "Campbellsville",
   "team_slug": "campbellsville",
-  "team_rank": 69,
+  "team_rank": 64,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 93,
+  "current_rank": 109,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "1-2",
+    "overall": "2-4",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,78 +17,97 @@
     "pf7": 7.64,
     "pa7": 10.18,
     "pd7": -2.55,
-    "si_plus": 80.2,
-    "df_plus": 97.7,
-    "apr_plus": 93.7,
+    "si_plus": 97.8,
+    "df_plus": 101.6,
+    "apr_plus": 96.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35360056132",
-      "opponent_rank": 108,
-      "opponent_name": "Omar Santos",
+      "opponent_id": "34995977132",
+      "opponent_rank": 110,
+      "opponent_name": "Brayden Pace",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "34993513132",
-      "opponent_rank": 84,
-      "opponent_name": "Zac Miracle",
-      "method": "Fall 0:00"
+      "opponent_id": "35640456132",
+      "opponent_rank": 108,
+      "opponent_name": "Lonnie Braunm",
+      "method": "SV-1 12-9"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34995977132",
+      "opponent_name": "Brayden Pace",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 285,
+      "opponent_rank": 110,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "JV Regional 7",
+      "mv_impact": 3.77
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35640456132",
       "opponent_name": "Lonnie Braunm",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 44,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 108,
+      "weight_class": "285",
       "result": "L",
       "method": "SV-1",
       "score": "12-9",
       "duration": "8:15",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -5.16
+      "mv_impact": -5.91
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35223098132",
       "opponent_name": "Dalyn Wheeler",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 86,
       "opponent_weight": 285,
-      "opponent_rank": 35,
+      "opponent_rank": 51,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Hart County",
-      "mv_impact": -4.97
+      "mv_impact": -5.58
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34993737132",
       "opponent_name": "Landon Combs",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 4,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 93,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -6.83
+      "mv_impact": -7.37
     },
     {
       "date": "2025-12-06",
@@ -97,33 +116,35 @@
       "opponent_team": "Paul Laurence Dunbar",
       "opponent_team_rank": 112,
       "opponent_weight": 285,
-      "opponent_rank": 108,
+      "opponent_rank": 189,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 0.73
+      "mv_impact": 0.2
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34993513132",
       "opponent_name": "Zac Miracle",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 123,
       "opponent_weight": 285,
-      "opponent_rank": 84,
+      "opponent_rank": 91,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -9.39
+      "mv_impact": -7.43
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9666666666666666
+    "top33_bonus_ev_shrunk": 1.3333333333333333
   }
 }

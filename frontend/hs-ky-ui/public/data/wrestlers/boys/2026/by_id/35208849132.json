@@ -3,23 +3,23 @@
   "name": "Colin Christofoli",
   "team": "Woodford County",
   "team_slug": "woodford_county",
-  "team_rank": 19,
+  "team_rank": 40,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 169,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "pa7": 25.0,
+    "pd7": -25.0,
+    "si_plus": 90.6,
+    "df_plus": 78.2,
+    "apr_plus": 93.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,16 +28,54 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35226235132",
+      "opponent_rank": 87,
+      "opponent_name": "Nick Livers",
+      "method": "Fall 0:15"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35226235132",
+      "opponent_name": "Nick Livers",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 157,
+      "opponent_rank": 87,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:15",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -7.07
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35249433132",
+      "opponent_name": "Darrion Stringer",
+      "opponent_team": "Western",
+      "opponent_team_rank": 34,
+      "opponent_weight": 157,
+      "opponent_rank": 21,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:40",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -2.82
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.9
   }
 }

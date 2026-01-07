@@ -3,13 +3,13 @@
   "name": "Jaxson Simpson",
   "team": "North Oldham",
   "team_slug": "north_oldham",
-  "team_rank": 40,
+  "team_rank": 37,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 42,
+  "current_rank": 54,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "1-0",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 109.4,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 109.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,19 +27,56 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34997723132",
-      "opponent_rank": 91,
-      "opponent_name": "Colton Good",
-      "method": "Fall 1:50"
+      "opponent_id": "34992811132",
+      "opponent_rank": 38,
+      "opponent_name": "Caden Wren",
+      "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35271153132",
+      "opponent_rank": 39,
+      "opponent_name": "Parker Smith",
+      "method": "Fall 1:35"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34992811132",
+      "opponent_name": "Caden Wren",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 157,
+      "opponent_rank": 38,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. North Oldham",
+      "mv_impact": 6.09
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35182278132",
+      "opponent_name": "Nathan Demarsico",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 25,
+      "opponent_weight": 157,
+      "opponent_rank": 162,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:06",
+      "event": "vs. North Oldham",
+      "mv_impact": 0.46
+    },
     {
       "date": "2025-11-29",
       "opponent_id": "35271153132",
@@ -47,63 +84,35 @@
       "opponent_team": "Simon Kenton",
       "opponent_team_rank": 31,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 39,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:35",
       "event": "vs. Simon Kenton",
-      "mv_impact": -4.83
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35182278132",
-      "opponent_name": "Nathan Demarsico",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": 22,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:06",
-      "event": "vs. North Hardin",
-      "mv_impact": 1.86
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "34992811132",
-      "opponent_name": "Caden Wren",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": 1,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. North Oldham",
-      "mv_impact": 5.7
+      "mv_impact": -4.85
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34997723132",
       "opponent_name": "Colton Good",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 79,
       "opponent_weight": 165,
-      "opponent_rank": 91,
+      "opponent_rank": 90,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:50",
       "event": "vs. North Oldham",
-      "mv_impact": 0.61
+      "mv_impact": 3.21
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9833333333333333
+    "top33_bonus_ev_shrunk": 1.15
   }
 }

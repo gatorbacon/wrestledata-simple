@@ -3,13 +3,13 @@
   "name": "Ryan Bell",
   "team": "Madison Central",
   "team_slug": "madison_central",
-  "team_rank": 4,
+  "team_rank": 11,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 95,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "0-1",
+    "overall": "2-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 2.8,
     "pa7": 1.4,
     "pd7": 1.4,
-    "si_plus": 104.4,
-    "df_plus": 118.5,
-    "apr_plus": 99.1,
+    "si_plus": 90.3,
+    "df_plus": 113.9,
+    "apr_plus": 99.6,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 2,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35397883132",
+      "opponent_rank": 143,
+      "opponent_name": "Rex Dixon",
+      "method": "TB-1 4-2"
+    },
     "worst_loss": {
       "opponent_id": "35920579132",
-      "opponent_rank": 53,
+      "opponent_rank": 60,
       "opponent_name": "Karson Helminick",
       "method": "Fall 3:17"
     }
@@ -42,48 +47,67 @@
   "match_list": [
     {
       "date": "2025-12-06",
+      "opponent_id": "35212702132",
+      "opponent_name": "Xavier Nolan",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": 116,
+      "opponent_weight": 165,
+      "opponent_rank": 30,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:38",
+      "event": "The Beast of the East",
+      "mv_impact": -3.37
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35284604132",
       "opponent_name": "Bryce Taylor",
       "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": 129,
+      "opponent_team_rank": 131,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 159,
+      "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:19",
       "event": "The Beast of the East",
-      "mv_impact": 0.25
+      "mv_impact": 0.92
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35920579132",
       "opponent_name": "Karson Helminick",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 14,
       "opponent_weight": 175,
-      "opponent_rank": 53,
+      "opponent_rank": 60,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:17",
       "event": "The Beast of the East",
-      "mv_impact": -5.53
+      "mv_impact": -5.99
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35397883132",
       "opponent_name": "Rex Dixon",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 18,
       "opponent_weight": 175,
-      "opponent_rank": null,
+      "opponent_rank": 143,
+      "weight_class": "175",
       "result": "W",
       "method": "TB-1",
       "score": "4-2",
       "duration": "10:00",
       "event": "The Beast of the East",
-      "mv_impact": -0.87
+      "mv_impact": -1.09
     }
   ]
 }

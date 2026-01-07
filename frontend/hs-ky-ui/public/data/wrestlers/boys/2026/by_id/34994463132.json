@@ -3,13 +3,13 @@
   "name": "Antonio Ramirez",
   "team": "Russellville",
   "team_slug": "russellville",
-  "team_rank": 120,
+  "team_rank": 121,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 72,
+  "current_rank": 103,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-4",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 96.1,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 95.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35684113132",
+      "opponent_rank": 163,
+      "opponent_name": "Max Clark",
+      "method": "Fall 0:50"
+    },
     "worst_loss": {
       "opponent_id": "35177983132",
-      "opponent_rank": 52,
+      "opponent_rank": 72,
       "opponent_name": "Isaiah Daruk",
       "method": "Fall 3:46"
     }
@@ -45,80 +50,85 @@
       "opponent_id": "35233660132",
       "opponent_name": "Clayton Pendley",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 51,
       "opponent_weight": 157,
-      "opponent_rank": 45,
+      "opponent_rank": 54,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:16",
       "event": "Christian County Invitational",
-      "mv_impact": -5.15
+      "mv_impact": -5.94
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35684113132",
       "opponent_name": "Max Clark",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 163,
+      "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:50",
       "event": "Christian County Invitational",
-      "mv_impact": 1.77
+      "mv_impact": 0.41
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34989041132",
       "opponent_name": "Evan Pyles",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 27,
       "opponent_weight": 157,
-      "opponent_rank": 32,
+      "opponent_rank": 42,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:13",
       "event": "Christian County Invitational",
-      "mv_impact": -4.22
+      "mv_impact": -5.3
     },
     {
       "date": "2025-12-19",
       "opponent_id": "35177983132",
       "opponent_name": "Isaiah Daruk",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 102,
+      "opponent_team_rank": 100,
       "opponent_weight": 157,
-      "opponent_rank": 52,
+      "opponent_rank": 72,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:40",
       "event": "vs. Russellville",
-      "mv_impact": -6.4
+      "mv_impact": -7.05
     },
     {
       "date": "2025-12-09",
       "opponent_id": "35177983132",
       "opponent_name": "Isaiah Daruk",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 102,
+      "opponent_team_rank": 100,
       "opponent_weight": 157,
-      "opponent_rank": 52,
+      "opponent_rank": 72,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:46",
       "event": "vs. Russellville",
-      "mv_impact": -6.4
+      "mv_impact": -7.05
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.9
   }
 }

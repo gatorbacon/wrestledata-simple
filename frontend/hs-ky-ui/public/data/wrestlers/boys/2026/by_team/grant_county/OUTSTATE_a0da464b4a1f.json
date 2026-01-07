@@ -3,13 +3,13 @@
   "name": "Gunner Patrick",
   "team": "Grant County",
   "team_slug": "grant_county",
-  "team_rank": 84,
+  "team_rank": 81,
   "weight_class": 190,
   "year": 2026,
   "current_rank": null,
   "record": {
     "overall": "1-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,11 +27,16 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35663717132",
+      "opponent_rank": 166,
+      "opponent_name": "Bryan Flores",
+      "method": "For."
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -40,9 +45,10 @@
       "opponent_id": "35663717132",
       "opponent_name": "Bryan Flores",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 166,
+      "weight_class": "190",
       "result": "W",
       "method": "DEC",
       "score": null,

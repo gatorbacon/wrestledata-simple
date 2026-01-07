@@ -6,89 +6,145 @@
   "team_rank": 112,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 29,
+  "current_rank": 4,
   "record": {
-    "overall": "3-0",
-    "vs_ranked": "2-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "5-1",
+    "vs_ranked": "5-1",
+    "vs_top10": "1-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 121.0,
-    "pin_rate": 1.0,
+    "pf7": 5.5,
+    "pa7": 4.0,
+    "pd7": 1.5,
+    "si_plus": 94.6,
+    "df_plus": 112.5,
+    "apr_plus": 114.9,
+    "pin_rate": 0.8,
     "bonus_rate": 1.0,
-    "majors": 0,
+    "majors": 1,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 0,
-    "top10_wins": 0,
-    "top10_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 1,
+    "top10_wins": 1,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35599165132",
-      "opponent_rank": 31,
-      "opponent_name": "Triston Corder",
-      "method": "Fall 0:00"
+      "opponent_id": "34995374132",
+      "opponent_rank": 5,
+      "opponent_name": "Mac Darland",
+      "method": "MD 9-1"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34993728132",
+      "opponent_rank": 3,
+      "opponent_name": "Brock Sexton",
+      "method": "Dec 7-2"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34993728132",
+      "opponent_name": "Brock Sexton",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 4,
+      "opponent_weight": 215,
+      "opponent_rank": 3,
+      "weight_class": "215",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "Cardinal Invitational",
+      "mv_impact": 1.47
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34995374132",
+      "opponent_name": "Mac Darland",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 99,
+      "opponent_weight": 215,
+      "opponent_rank": 5,
+      "weight_class": "215",
+      "result": "W",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Cardinal Invitational",
+      "mv_impact": 7.42
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "36792154132",
+      "opponent_name": "Bryn Ford",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 118,
+      "opponent_weight": 215,
+      "opponent_rank": 85,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
+      "event": "Cardinal Invitational",
+      "mv_impact": 3.87
+    },
     {
       "date": "2025-12-22",
       "opponent_id": "35599165132",
       "opponent_name": "Triston Corder",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 105,
       "opponent_weight": 215,
-      "opponent_rank": 31,
+      "opponent_rank": 32,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Paul Laurence Dunbar",
-      "mv_impact": 7.37
+      "mv_impact": 7.13
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35420732132",
       "opponent_name": "Zach Smith",
       "opponent_team": "Whitley County",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 138,
       "opponent_weight": 215,
-      "opponent_rank": 35,
+      "opponent_rank": 65,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Whitley County",
-      "mv_impact": 6.81
+      "mv_impact": 4.7
     },
     {
       "date": "2025-12-22",
       "opponent_id": "34995977132",
       "opponent_name": "Brayden Pace",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 56,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 110,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Paul Laurence Dunbar",
-      "mv_impact": 4.08
+      "mv_impact": 3.77
     }
   ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 1.5,
+    "top33_bonus_ev_shrunk": 1.661904761904762
   }
 }

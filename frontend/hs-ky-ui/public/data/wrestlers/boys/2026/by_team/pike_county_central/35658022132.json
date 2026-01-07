@@ -3,13 +3,13 @@
   "name": "Colby Morrison",
   "team": "Pike County Central",
   "team_slug": "pike_county_central",
-  "team_rank": 114,
+  "team_rank": 39,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 93,
+  "current_rank": 91,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "0-2",
+    "overall": "2-6",
+    "vs_ranked": "2-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,43 +17,97 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 93.2,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 96.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35013063132",
+      "opponent_rank": 92,
+      "opponent_name": "Zane Fugate",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "35700064132",
-      "opponent_rank": 76,
+      "opponent_rank": 106,
       "opponent_name": "jace hunter",
       "method": "Fall 1:47"
     }
   },
   "match_list": [
     {
+      "date": "2025-12-30",
+      "opponent_id": "35247365132",
+      "opponent_name": "Bryson Carrington",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": 103,
+      "opponent_weight": 150,
+      "opponent_rank": 51,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -5.93
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "36447716132",
+      "opponent_name": "Cah`Ron Jessie",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 120,
+      "opponent_weight": 150,
+      "opponent_rank": 138,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": 2.15
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35420411132",
+      "opponent_name": "Kevin Brown",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 150,
+      "opponent_rank": 72,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:53",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -7.56
+    },
+    {
       "date": "2025-12-16",
       "opponent_id": "35513070132",
       "opponent_name": "Trenton Williamson",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 60,
-      "opponent_weight": 150,
-      "opponent_rank": 60,
+      "opponent_team_rank": 55,
+      "opponent_weight": 144,
+      "opponent_rank": 83,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Pike County Central",
-      "mv_impact": -6.38
+      "mv_impact": -7.3
     },
     {
       "date": "2025-12-16",
@@ -62,13 +116,14 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 113,
       "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_rank": 92,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Pike County Central",
-      "mv_impact": 3.52
+      "mv_impact": 3.65
     },
     {
       "date": "2025-12-16",
@@ -77,13 +132,14 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 113,
       "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_rank": 90,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Pike County Central",
-      "mv_impact": -9.17
+      "mv_impact": -8.41
     },
     {
       "date": "2025-12-06",
@@ -92,28 +148,30 @@
       "opponent_team": "Paintsville",
       "opponent_team_rank": 111,
       "opponent_weight": 157,
-      "opponent_rank": 76,
+      "opponent_rank": 106,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:47",
       "event": "Anchor Down Showdown",
-      "mv_impact": -9.34
+      "mv_impact": -8.72
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35420605132",
       "opponent_name": "Isac Perez",
       "opponent_team": "Whitley County",
-      "opponent_team_rank": 42,
-      "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_team_rank": 138,
+      "opponent_weight": 157,
+      "opponent_rank": 36,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Anchor Down Showdown",
-      "mv_impact": -7.43
+      "mv_impact": -4.99
     }
   ]
 }

@@ -6,20 +6,20 @@
   "team_rank": 1,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 86,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "1-0",
+    "overall": "2-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 115.9,
+    "pf7": 1.95,
+    "pa7": 25.0,
+    "pd7": -23.05,
+    "si_plus": 88.9,
+    "df_plus": 81.4,
+    "apr_plus": 99.3,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -28,26 +28,47 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35672350132",
-      "opponent_rank": 71,
+      "opponent_rank": 88,
       "opponent_name": "grant wolff",
       "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34992812132",
+      "opponent_rank": 21,
+      "opponent_name": "Jax Reynolds",
+      "method": "TF 16-1 3:35"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34992812132",
+      "opponent_name": "Jax Reynolds",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 106,
+      "opponent_rank": 21,
+      "weight_class": "106",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "3:35",
+      "event": "Bill Brimer Brawl in the Hall 2026"
+    },
     {
       "date": "2025-11-29",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "106",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -59,9 +80,10 @@
       "opponent_id": "35672350132",
       "opponent_name": "grant wolff",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 26,
       "opponent_weight": 106,
-      "opponent_rank": 71,
+      "opponent_rank": 88,
+      "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -72,6 +94,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.5833333333333333
+    "top33_bonus_ev_shrunk": 1.0
   }
 }

@@ -3,13 +3,13 @@
   "name": "Divine Mujanukaire",
   "team": "Fern Creek",
   "team_slug": "fern_creek",
-  "team_rank": 36,
+  "team_rank": 74,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 96,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 114.7,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 114.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,11 +27,16 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35222465132",
+      "opponent_rank": 114,
+      "opponent_name": "Abigail Sacre",
+      "method": "Fall 2:15"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -40,35 +45,37 @@
       "opponent_id": "35074477132",
       "opponent_name": "Alondra Cortes",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 53,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 150,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:34",
       "event": "The Beast of the East",
-      "mv_impact": 0.46
+      "mv_impact": 1.21
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35222465132",
       "opponent_name": "Abigail Sacre",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 108,
+      "opponent_team_rank": 107,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 114,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:15",
       "event": "The Beast of the East",
-      "mv_impact": 2.99
+      "mv_impact": 3.56
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9833333333333333
+    "top33_bonus_ev_shrunk": 1.15
   }
 }

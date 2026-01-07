@@ -3,23 +3,23 @@
   "name": "Noel Perez",
   "team": "Logan County",
   "team_slug": "logan_county",
-  "team_rank": 102,
+  "team_rank": 100,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 70,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-1",
-    "vs_top10": "0-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 100.6,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 101.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34989700132",
+      "opponent_rank": 130,
+      "opponent_name": "Toby Batson",
+      "method": "Fall 0:07"
+    },
     "worst_loss": {
       "opponent_id": "35205295132",
-      "opponent_rank": 9,
+      "opponent_rank": 20,
       "opponent_name": "Thomas Sang",
       "method": "Fall 0:00"
     }
@@ -45,30 +50,32 @@
       "opponent_id": "34989700132",
       "opponent_name": "Toby Batson",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 47,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 130,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:07",
       "event": "vs. Ohio County",
-      "mv_impact": 2.13
+      "mv_impact": 2.22
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35205295132",
       "opponent_name": "Thomas Sang",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 87,
-      "opponent_weight": 120,
-      "opponent_rank": 9,
+      "opponent_team_rank": 84,
+      "opponent_weight": 113,
+      "opponent_rank": 20,
+      "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Logan County",
-      "mv_impact": -3.18
+      "mv_impact": -2.73
     }
   ]
 }

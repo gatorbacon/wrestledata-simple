@@ -3,23 +3,23 @@
   "name": "Kajuan Giles",
   "team": "Mason County",
   "team_slug": "mason_county",
-  "team_rank": 105,
+  "team_rank": 103,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 191,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "pf7": 16.31,
+    "pa7": 25.0,
+    "pd7": -8.69,
+    "si_plus": 113.7,
+    "df_plus": 84.0,
+    "apr_plus": 89.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,16 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35401491132",
+      "opponent_rank": 43,
+      "opponent_name": "Jon Falter",
+      "method": "TF 19-4 1:43"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35401491132",
+      "opponent_name": "Jon Falter",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": 98,
+      "opponent_weight": 165,
+      "opponent_rank": 43,
+      "weight_class": "165",
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "1:43",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -4.45
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9833333333333333
+    "top33_bonus_ev_shrunk": 1.15
   }
 }

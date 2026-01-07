@@ -10,7 +10,7 @@
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -30,11 +30,11 @@
     "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35225290132",
-      "opponent_rank": 13,
+      "opponent_rank": 10,
       "opponent_name": "Peyton Zinser",
       "method": "Fall 1:55"
     }
@@ -45,9 +45,10 @@
       "opponent_id": "35225290132",
       "opponent_name": "Peyton Zinser",
       "opponent_team": "Scott",
-      "opponent_team_rank": 121,
+      "opponent_team_rank": 122,
       "opponent_weight": 175,
-      "opponent_rank": 13,
+      "opponent_rank": 10,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -58,6 +59,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.55
+    "top33_bonus_ev_shrunk": 1.09375
   }
 }

@@ -3,57 +3,79 @@
   "name": "David Barabas",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 13,
+  "team_rank": 27,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 54,
+  "current_rank": 56,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "0-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
+    "pf7": 15.0,
     "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 110.6,
-    "pin_rate": 1.0,
+    "pd7": 15.0,
+    "si_plus": 106.7,
+    "df_plus": 113.5,
+    "apr_plus": 99.4,
+    "pin_rate": 0.5,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
+    "techs": 1,
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35103664132",
+      "opponent_rank": 108,
+      "opponent_name": "Patrick Oliver",
+      "method": "TF 15-0 0:00"
+    },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35103664132",
+      "opponent_name": "Patrick Oliver",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 123,
+      "opponent_weight": 150,
+      "opponent_rank": 108,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Warhawk Classic",
+      "mv_impact": 1.27
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35493541132",
       "opponent_name": "Blaise Wilson",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 151,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Paducah Tilghman",
-      "mv_impact": 0.55
+      "mv_impact": 0.69
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8333333333333334
+    "top33_bonus_ev_shrunk": 0.5833333333333334
   }
 }

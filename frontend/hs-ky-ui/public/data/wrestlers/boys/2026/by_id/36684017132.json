@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 121,
+  "current_rank": 174,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "pf7": 11.0,
+    "pa7": 18.0,
+    "pd7": -7.0,
+    "si_plus": 106.6,
+    "df_plus": 93.0,
+    "apr_plus": 90.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,16 +28,70 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35103765132",
+      "opponent_rank": 42,
+      "opponent_name": "Alex Gonzalez",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35458879132",
+      "opponent_name": "Kaleb Lewellen",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 37,
+      "opponent_weight": 132,
+      "opponent_rank": 22,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "Warhawk Classic",
+      "mv_impact": -4.61
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35103765132",
+      "opponent_name": "Alex Gonzalez",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 123,
+      "opponent_weight": 132,
+      "opponent_rank": 42,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "18-11",
+      "duration": "7:00",
+      "event": "Warhawk Classic",
+      "mv_impact": -2.38
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35103765132",
+      "opponent_name": "Alex Gonzalez",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 123,
+      "opponent_weight": 132,
+      "opponent_rank": 42,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -5.38
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2115384615384615
+    "top33_bonus_ev_shrunk": 1.4615384615384615
   }
 }

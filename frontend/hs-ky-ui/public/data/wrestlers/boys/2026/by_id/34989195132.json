@@ -3,13 +3,13 @@
   "name": "Chase Mason",
   "team": "Ohio County",
   "team_slug": "ohio_county",
-  "team_rank": 23,
+  "team_rank": 47,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 94,
+  "current_rank": 131,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 86.6,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 85.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,11 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35192416132",
+      "opponent_rank": 87,
+      "opponent_name": "Bryan Mooser",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
     {
@@ -40,20 +45,21 @@
       "opponent_id": "35192416132",
       "opponent_name": "Bryan Mooser",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 102,
+      "opponent_team_rank": 100,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 87,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Ohio County",
-      "mv_impact": -6.86
+      "mv_impact": -6.77
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2115384615384615
+    "top33_bonus_ev_shrunk": 1.4615384615384615
   }
 }

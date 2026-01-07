@@ -6,20 +6,20 @@
   "team_rank": 33,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 10,
+  "current_rank": 9,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
     "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 114.1,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 115.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,13 +27,13 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35225290132",
-      "opponent_rank": 13,
+      "opponent_rank": 10,
       "opponent_name": "Peyton Zinser",
       "method": "Fall 0:48"
     },
@@ -45,35 +45,37 @@
       "opponent_id": "35398393132",
       "opponent_name": "Xander Bailey",
       "opponent_team": "Highlands",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 175,
-      "opponent_rank": null,
+      "opponent_rank": 169,
+      "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:17",
       "event": "Tommy Castle Classic",
-      "mv_impact": 0.64
+      "mv_impact": 0.72
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35225290132",
       "opponent_name": "Peyton Zinser",
       "opponent_team": "Scott",
-      "opponent_team_rank": 121,
+      "opponent_team_rank": 122,
       "opponent_weight": 175,
-      "opponent_rank": 13,
+      "opponent_rank": 10,
+      "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:48",
       "event": "Tommy Castle Classic",
-      "mv_impact": 9.37
+      "mv_impact": 8.75
     }
   ],
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 2.0
+    "top33_bonus_ev_shrunk": 1.806878306878307
   }
 }

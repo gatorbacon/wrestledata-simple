@@ -3,13 +3,13 @@
   "name": "Axel Rubio Vasquez",
   "team": "Dixie Heights",
   "team_slug": "dixie_heights",
-  "team_rank": 74,
+  "team_rank": 70,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 123,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 97.5,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 95.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,12 +27,22 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35384107132",
+      "opponent_rank": 149,
+      "opponent_name": "Jett Rudolph",
+      "method": "Fall 1:18"
+    },
+    "worst_loss": {
+      "opponent_id": "35001142132",
+      "opponent_rank": 98,
+      "opponent_name": "CJ Hogan",
+      "method": "Fall 1:35"
+    }
   },
   "match_list": [
     {
@@ -40,50 +50,53 @@
       "opponent_id": "35001142132",
       "opponent_name": "CJ Hogan",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 14,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 98,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:35",
       "event": "The Beast of the East",
-      "mv_impact": -7.54
+      "mv_impact": -7.08
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35045507132",
       "opponent_name": "Jerry Fields",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 83,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:53",
       "event": "The Beast of the East",
-      "mv_impact": -7.84
+      "mv_impact": -8.33
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35384107132",
       "opponent_name": "Jett Rudolph",
       "opponent_team": "Male",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 45,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 149,
+      "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:18",
       "event": "The Beast of the East",
-      "mv_impact": 0.86
+      "mv_impact": 0.94
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

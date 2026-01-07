@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,11 +27,16 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35565693132",
+      "opponent_rank": 50,
+      "opponent_name": "maci rorer",
+      "method": "Fall 1:20"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -42,7 +47,8 @@
       "opponent_team": "Union County",
       "opponent_team_rank": 8,
       "opponent_weight": 235,
-      "opponent_rank": null,
+      "opponent_rank": 50,
+      "weight_class": "235",
       "result": "W",
       "method": "FALL",
       "score": null,

@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "OUTSTATE_95f97cfeef97",
+  "name": "Zander Schaefer",
+  "team": "South Dearborn",
+  "team_slug": "south_dearborn",
+  "team_rank": null,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35281290132",
+      "opponent_rank": 52,
+      "opponent_name": "Thomas Tilley",
+      "method": "Fall 3:30"
+    },
+    "worst_loss": {
+      "opponent_id": "34997713132",
+      "opponent_rank": 26,
+      "opponent_name": "Grayson Scott",
+      "method": "Fall 1:59"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35281290132",
+      "opponent_name": "Thomas Tilley",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 70,
+      "opponent_weight": 157,
+      "opponent_rank": 52,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:30",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34997713132",
+      "opponent_name": "Grayson Scott",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 79,
+      "opponent_weight": 157,
+      "opponent_rank": 26,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:59",
+      "event": "2026 CIWT"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9
+  }
+}

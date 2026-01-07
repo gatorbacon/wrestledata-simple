@@ -3,13 +3,13 @@
   "name": "Kingston Smith",
   "team": "Trinity (Louisville)",
   "team_slug": "trinity_louisville",
-  "team_rank": 129,
+  "team_rank": 131,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 56,
+  "current_rank": 67,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "2-1",
+    "overall": "3-2",
+    "vs_ranked": "3-2",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 25.0,
     "pa7": 25.0,
     "pd7": 0.0,
-    "si_plus": 119.5,
-    "df_plus": 82.4,
-    "apr_plus": 101.1,
+    "si_plus": 125.0,
+    "df_plus": 80.8,
+    "apr_plus": 99.0,
     "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,83 +27,103 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 1,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35076691132",
-      "opponent_rank": 64,
+      "opponent_rank": 67,
       "opponent_name": "Khareem Washington",
       "method": "Fall 3:03"
     },
     "worst_loss": {
-      "opponent_id": "35051530132",
-      "opponent_rank": 8,
-      "opponent_name": "Brycen Gray",
-      "method": "Fall 0:30"
+      "opponent_id": "35212706132",
+      "opponent_rank": 38,
+      "opponent_name": "Trevor Wilson",
+      "method": "Fall 0:35"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35212706132",
+      "opponent_name": "Trevor Wilson",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": 116,
+      "opponent_weight": 120,
+      "opponent_rank": 38,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "vs. Trinity (Louisville)",
+      "mv_impact": -5.18
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35637409132",
       "opponent_name": "Dylan Withers",
       "opponent_team": "Russell County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 19,
       "opponent_weight": 120,
-      "opponent_rank": 72,
+      "opponent_rank": 89,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:35",
       "event": "The Beast of the East",
-      "mv_impact": 2.39
+      "mv_impact": 2.61
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35076691132",
       "opponent_name": "Khareem Washington",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 124,
       "opponent_weight": 113,
-      "opponent_rank": 64,
+      "opponent_rank": 67,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:03",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 3.35
+      "mv_impact": 3.53
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35557505132",
       "opponent_name": "Harlem Hogan",
       "opponent_team": "Western",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 112,
+      "weight_class": "120",
       "result": "W",
       "method": "TF",
       "score": "22-4",
       "duration": "0:39",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": -0.06
+      "mv_impact": 1.15
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35051530132",
       "opponent_name": "Brycen Gray",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 40,
       "opponent_weight": 120,
-      "opponent_rank": 8,
+      "opponent_rank": 9,
+      "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": -2.99
+      "mv_impact": -2.64
     }
   ]
 }

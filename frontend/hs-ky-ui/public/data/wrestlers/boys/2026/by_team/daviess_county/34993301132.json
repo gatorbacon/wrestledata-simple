@@ -3,52 +3,122 @@
   "name": "Pierce Sorley",
   "team": "Daviess County",
   "team_slug": "daviess_county",
-  "team_rank": 46,
+  "team_rank": 68,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 77,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "0-0",
+    "overall": "3-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 114.2,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pf7": 10.0,
+    "pa7": 25.0,
+    "pd7": -15.0,
+    "si_plus": 101.5,
+    "df_plus": 80.8,
+    "apr_plus": 101.0,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35402141132",
+      "opponent_rank": 130,
+      "opponent_name": "Stephen Bryant",
+      "method": "Fall 0:32"
+    },
+    "worst_loss": {
+      "opponent_id": "34993282132",
+      "opponent_rank": 71,
+      "opponent_name": "Parker Lowery",
+      "method": "Fall 0:39"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34993303132",
+      "opponent_name": "Noah Bonnell",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 68,
+      "opponent_weight": 144,
+      "opponent_rank": 68,
+      "weight_class": "150-157",
+      "result": "L",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "3:30",
+      "event": "2nd Annual Dickie Walls Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35567109132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150-157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:03",
+      "event": "2nd Annual Dickie Walls Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_74fe68a87fc9",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150-157",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "2nd Annual Dickie Walls Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34993282132",
+      "opponent_name": "Parker Lowery",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 68,
+      "opponent_weight": 157,
+      "opponent_rank": 71,
+      "weight_class": "150-157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "2nd Annual Dickie Walls Invitational"
+    },
     {
       "date": "2025-11-29",
       "opponent_id": "35402141132",
       "opponent_name": "Stephen Bryant",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 59,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 130,
+      "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:32",
-      "event": "Tommy Castle Classic",
-      "mv_impact": 1.7
+      "event": "Tommy Castle Classic"
     }
   ]
 }

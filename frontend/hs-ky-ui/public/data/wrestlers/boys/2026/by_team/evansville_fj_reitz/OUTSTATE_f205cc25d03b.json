@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "3-0",
+    "vs_ranked": "3-0",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,34 +20,65 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 1.0,
+    "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35208007132",
-      "opponent_rank": 34,
-      "opponent_name": "Kaleb Elder",
-      "method": "Fall 0:00"
+      "opponent_id": "35144073132",
+      "opponent_rank": 8,
+      "opponent_name": "Derek Tran",
+      "method": "TF 17-2 5:21"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2025-12-30",
+      "opponent_id": "35144073132",
+      "opponent_name": "Derek Tran",
+      "opponent_team": "Desales",
+      "opponent_team_rank": 69,
+      "opponent_weight": 106,
+      "opponent_rank": 8,
+      "weight_class": "106",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "5:21",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35049123132",
+      "opponent_name": "Ryan LaMotte",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 106,
+      "opponent_rank": 47,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Evansville F.j. Reitz"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35208007132",
       "opponent_name": "Kaleb Elder",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 106,
-      "opponent_rank": 34,
+      "opponent_rank": 49,
+      "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,

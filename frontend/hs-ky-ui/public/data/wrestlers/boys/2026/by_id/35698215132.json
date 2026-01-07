@@ -3,23 +3,23 @@
   "name": "Collin Burk",
   "team": "Pleasure Ridge Park",
   "team_slug": "pleasure_ridge_park",
-  "team_rank": null,
+  "team_rank": 116,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 85,
+  "current_rank": 119,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "1-5",
+    "vs_ranked": "2-5",
     "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 94.1,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 94.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,19 +27,19 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35222796132",
-      "opponent_rank": 63,
+      "opponent_rank": 122,
       "opponent_name": "Vance Stokley",
       "method": "Fall 1:47"
     },
     "worst_loss": {
       "opponent_id": "35223094132",
-      "opponent_rank": 82,
+      "opponent_rank": 110,
       "opponent_name": "William Skaggs",
       "method": "Fall 2:49"
     }
@@ -50,110 +50,117 @@
       "opponent_id": "35223094132",
       "opponent_name": "William Skaggs",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 86,
       "opponent_weight": 132,
-      "opponent_rank": 82,
+      "opponent_rank": 110,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:49",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -9.55
+      "mv_impact": -9.26
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34989158132",
       "opponent_name": "John Santiago",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 47,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 165,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:38",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": 0.18
+      "mv_impact": 2.1
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35023924132",
       "opponent_name": "Jerald Ferrel",
       "opponent_team": "Fort Knox",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 77,
       "opponent_weight": 132,
-      "opponent_rank": 53,
+      "opponent_rank": 77,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:00",
       "event": "The Beast of the East",
-      "mv_impact": -6.4
+      "mv_impact": -6.62
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35222796132",
       "opponent_name": "Vance Stokley",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 108,
+      "opponent_team_rank": 107,
       "opponent_weight": 132,
-      "opponent_rank": 63,
+      "opponent_rank": 122,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:47",
       "event": "The Beast of the East",
-      "mv_impact": 4.36
+      "mv_impact": 2.56
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34989075132",
       "opponent_name": "Johann Springer",
       "opponent_team": "North Hardin",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 25,
       "opponent_weight": 132,
-      "opponent_rank": 24,
+      "opponent_rank": 27,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:33",
       "event": "The Beast of the East",
-      "mv_impact": -4.55
+      "mv_impact": -4.97
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35746154132",
       "opponent_name": "Isaiah Mitchell",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 78,
-      "opponent_weight": 138,
-      "opponent_rank": 25,
+      "opponent_team_rank": 73,
+      "opponent_weight": 132,
+      "opponent_rank": 86,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:15",
       "event": "vs. Pleasure Ridge Park",
-      "mv_impact": -4.4
+      "mv_impact": -5.81
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35122062132",
       "opponent_name": "Hayden Drexler",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 110,
       "opponent_weight": 138,
-      "opponent_rank": 6,
+      "opponent_rank": 9,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Pleasure Ridge Park",
-      "mv_impact": -1.66
+      "mv_impact": -2.33
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2115384615384615
+    "top33_bonus_ev_shrunk": 1.4615384615384615
   }
 }

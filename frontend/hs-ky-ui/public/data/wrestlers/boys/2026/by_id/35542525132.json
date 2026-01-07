@@ -3,13 +3,13 @@
   "name": "Evan Roe",
   "team": "Central",
   "team_slug": "central",
-  "team_rank": 70,
+  "team_rank": 65,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 53,
+  "current_rank": 64,
   "record": {
     "overall": "3-0",
-    "vs_ranked": "2-0",
+    "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 114.7,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 113.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,13 +27,13 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35021793132",
-      "opponent_rank": 63,
+      "opponent_rank": 75,
       "opponent_name": "Tucker Moore",
       "method": "Fall 0:00"
     },
@@ -45,50 +45,53 @@
       "opponent_id": "35021793132",
       "opponent_name": "Tucker Moore",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 60,
       "opponent_weight": 165,
-      "opponent_rank": 63,
+      "opponent_rank": 75,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Central",
-      "mv_impact": 4.18
+      "mv_impact": 3.79
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35040594132",
       "opponent_name": "Donovan Johnson",
       "opponent_team": "Male",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 45,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 119,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:46",
       "event": "vs. Male",
-      "mv_impact": 2.9
+      "mv_impact": 3.4
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35562301132",
       "opponent_name": "Nikolas Elsey",
       "opponent_team": "Seneca",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 48,
       "opponent_weight": 165,
-      "opponent_rank": 102,
+      "opponent_rank": 171,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Seneca",
-      "mv_impact": 0.96
+      "mv_impact": 0.7
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9833333333333333
+    "top33_bonus_ev_shrunk": 1.15
   }
 }

@@ -3,13 +3,13 @@
   "name": "Nathan Riggs",
   "team": "Bullitt East",
   "team_slug": "bullitt_east",
-  "team_rank": 25,
+  "team_rank": 26,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 148,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "1-4",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 15.0,
     "pd7": -15.0,
-    "si_plus": 89.4,
-    "df_plus": 95.3,
-    "apr_plus": 92.9,
+    "si_plus": 85.2,
+    "df_plus": 94.7,
+    "apr_plus": 93.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,20 +28,20 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35901515132",
-      "opponent_rank": 103,
+      "opponent_rank": 135,
       "opponent_name": "Daniel Foreman",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35321133132",
-      "opponent_rank": 71,
-      "opponent_name": "Austin Young",
-      "method": "Fall 0:38"
+      "opponent_id": "35271748132",
+      "opponent_rank": 126,
+      "opponent_name": "Jordan Rutherford",
+      "method": "TF 15-0 0:00"
     }
   },
   "match_list": [
@@ -50,75 +50,80 @@
       "opponent_id": "35321133132",
       "opponent_name": "Austin Young",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 144,
-      "opponent_rank": 71,
+      "opponent_rank": 115,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:38",
       "event": "vs. North Bullitt",
-      "mv_impact": -8.14
+      "mv_impact": -8.33
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35127113132",
       "opponent_name": "Jake Jeziorski",
       "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 72,
       "opponent_weight": 138,
-      "opponent_rank": 55,
+      "opponent_rank": 71,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Dupont Manual",
-      "mv_impact": -4.69
+      "mv_impact": -5.2
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35901515132",
       "opponent_name": "Daniel Foreman",
       "opponent_team": "Valley",
-      "opponent_team_rank": 130,
+      "opponent_team_rank": 132,
       "opponent_weight": 138,
-      "opponent_rank": 103,
+      "opponent_rank": 135,
+      "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Valley",
-      "mv_impact": 0.79
+      "mv_impact": 1.5
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35040584132",
       "opponent_name": "Mohammed Almotoware",
       "opponent_team": "Male",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 45,
       "opponent_weight": 138,
-      "opponent_rank": 37,
+      "opponent_rank": 48,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Male",
-      "mv_impact": -4.84
+      "mv_impact": -5.37
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34988532132",
       "opponent_name": "Keviaun Craighead",
       "opponent_team": "Doss",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 71,
       "opponent_weight": 144,
-      "opponent_rank": 57,
+      "opponent_rank": 70,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Doss",
-      "mv_impact": -5.5
+      "mv_impact": -4.92
     },
     {
       "date": "2025-11-29",
@@ -127,18 +132,19 @@
       "opponent_team": "Simon Kenton",
       "opponent_team_rank": 31,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 126,
+      "weight_class": "138",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
       "event": "vs. Simon Kenton",
-      "mv_impact": -7.48
+      "mv_impact": -6.2
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "0-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,12 +27,22 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35488266132",
+      "opponent_rank": 50,
+      "opponent_name": "Garrett Fohl",
+      "method": "TF 17-0 2:25"
+    },
+    "worst_loss": {
+      "opponent_id": "35404970132",
+      "opponent_rank": 27,
+      "opponent_name": "Axel Camacho",
+      "method": "Fall 1:04"
+    }
   },
   "match_list": [
     {
@@ -40,19 +50,35 @@
       "opponent_id": "35488266132",
       "opponent_name": "Garrett Fohl",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 50,
+      "weight_class": "126",
       "result": "W",
       "method": "TF",
       "score": "17-0",
       "duration": "2:25",
+      "event": "Bearcat Brawl 2025"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35404970132",
+      "opponent_name": "Axel Camacho",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 96,
+      "opponent_weight": 126,
+      "opponent_rank": 27,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
       "event": "Bearcat Brawl 2025"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.7777777777777777
+    "top33_bonus_ev_shrunk": 1.8333333333333333
   }
 }

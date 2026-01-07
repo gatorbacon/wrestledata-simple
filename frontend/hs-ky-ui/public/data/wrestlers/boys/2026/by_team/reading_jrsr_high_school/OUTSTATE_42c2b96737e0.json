@@ -4,14 +4,14 @@
   "team": "Reading Jr./Sr. High School",
   "team_slug": "reading_jrsr_high_school",
   "team_rank": null,
-  "weight_class": 120,
+  "weight_class": 113,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "1-0",
-    "vs_top25": "1-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "1-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,47 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 1,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35640432132",
-      "opponent_rank": 6,
+      "opponent_rank": 10,
       "opponent_name": "Joe Carr",
       "method": "Dec 10-7"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34992808132",
+      "opponent_rank": 1,
+      "opponent_name": "Talon Sanderlyn",
+      "method": "MD 14-5"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34992808132",
+      "opponent_name": "Talon Sanderlyn",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 106,
+      "opponent_rank": 1,
+      "weight_class": "113",
+      "result": "L",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "GMVWA Invitational"
+    },
     {
       "date": "2025-12-21",
       "opponent_id": "35640432132",
       "opponent_name": "Joe Carr",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 44,
       "opponent_weight": 120,
-      "opponent_rank": 6,
+      "opponent_rank": 10,
+      "weight_class": "120",
       "result": "W",
       "method": "DEC",
       "score": "10-7",

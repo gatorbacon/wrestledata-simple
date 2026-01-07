@@ -6,10 +6,10 @@
   "team_rank": null,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 80,
+  "current_rank": 104,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "1-3",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 8.62,
     "pa7": 25.0,
     "pd7": -16.38,
-    "si_plus": 99.8,
-    "df_plus": 89.2,
-    "apr_plus": 100.5,
+    "si_plus": 98.2,
+    "df_plus": 87.7,
+    "apr_plus": 101.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,19 +27,19 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35030261132",
-      "opponent_rank": 93,
+      "opponent_rank": 113,
       "opponent_name": "Bradlee Mounce",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35030260132",
-      "opponent_rank": 53,
+      "opponent_rank": 55,
       "opponent_name": "Tucker Langford",
       "method": "Fall 0:00"
     }
@@ -50,30 +50,32 @@
       "opponent_id": "35669887132",
       "opponent_name": "Shane Stikes",
       "opponent_team": "Central",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 65,
       "opponent_weight": 150,
-      "opponent_rank": 37,
+      "opponent_rank": 40,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Classic",
-      "mv_impact": -5.21
+      "mv_impact": -6.59
     },
     {
       "date": "2025-12-09",
       "opponent_id": "35001148132",
       "opponent_name": "Neiko Villegas",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 14,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 48,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. WEB DuBois",
-      "mv_impact": -4.46
+      "mv_impact": -4.77
     },
     {
       "date": "2025-12-09",
@@ -82,13 +84,14 @@
       "opponent_team": "Pulaski County",
       "opponent_team_rank": 118,
       "opponent_weight": 150,
-      "opponent_rank": 53,
+      "opponent_rank": 55,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. WEB DuBois",
-      "mv_impact": -5.22
+      "mv_impact": -5.34
     },
     {
       "date": "2025-12-09",
@@ -96,44 +99,47 @@
       "opponent_name": "Bradlee Mounce",
       "opponent_team": "Pulaski County",
       "opponent_team_rank": 118,
-      "opponent_weight": 157,
-      "opponent_rank": 93,
+      "opponent_weight": 150,
+      "opponent_rank": 113,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. WEB DuBois",
-      "mv_impact": 1.27
+      "mv_impact": 3.22
     },
     {
       "date": "2025-11-25",
       "opponent_id": "35639358132",
       "opponent_name": "Derrick Simms",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 124,
       "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_rank": 160,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. WEB DuBois",
-      "mv_impact": 0.65
+      "mv_impact": 1.87
     },
     {
       "date": "2025-11-25",
       "opponent_id": "34988527132",
       "opponent_name": "Hussein Ali",
       "opponent_team": "Western",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 150,
       "opponent_rank": 36,
+      "weight_class": "150",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "3:15",
       "event": "vs. Western",
-      "mv_impact": -3.59
+      "mv_impact": -4.46
     }
   ]
 }

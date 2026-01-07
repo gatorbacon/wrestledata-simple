@@ -3,36 +3,58 @@
   "name": "Nolan OBryan",
   "team": "Highlands",
   "team_slug": "highlands",
-  "team_rank": 7,
-  "weight_class": 113,
+  "team_rank": 3,
+  "weight_class": 106,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 46,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "pf7": 25.0,
+    "pa7": 6.3,
+    "pd7": 18.7,
+    "si_plus": 120.6,
+    "df_plus": 105.1,
+    "apr_plus": 89.7,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
+    "techs": 1,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35108872132",
+      "opponent_rank": 55,
+      "opponent_name": "Jeikol Holleran",
+      "method": "TF 19-3 3:20"
+    },
     "worst_loss": null
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35108872132",
+      "opponent_name": "Jeikol Holleran",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 53,
+      "opponent_weight": 106,
+      "opponent_rank": 55,
+      "weight_class": "106",
+      "result": "W",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "3:20",
+      "event": "Phil Thrasher Tournament",
+      "mv_impact": 3.78
+    }
+  ]
 }

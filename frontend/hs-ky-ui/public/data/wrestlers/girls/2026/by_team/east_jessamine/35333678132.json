@@ -6,10 +6,10 @@
   "team_rank": null,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 25,
+  "current_rank": 28,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -27,11 +27,16 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35347737132",
+      "opponent_rank": 31,
+      "opponent_name": "Abigail Patterson",
+      "method": "Fall 1:55"
+    },
     "worst_loss": {
       "opponent_id": "35333556132",
       "opponent_rank": 9,
@@ -47,13 +52,14 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 33,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 31,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:55",
       "event": "Lady Cardinal Invitational",
-      "mv_impact": 5.83
+      "mv_impact": 5.86
     },
     {
       "date": "2025-12-29",
@@ -63,12 +69,13 @@
       "opponent_team_rank": 4,
       "opponent_weight": 138,
       "opponent_rank": 9,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:05",
       "event": "Lady Cardinal Invitational",
-      "mv_impact": -1.97
+      "mv_impact": -2.34
     }
   ]
 }

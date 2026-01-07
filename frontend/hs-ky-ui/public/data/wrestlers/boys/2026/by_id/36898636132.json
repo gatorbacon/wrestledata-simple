@@ -3,13 +3,13 @@
   "name": "Mason Young",
   "team": "Lawrence County",
   "team_slug": "lawrence_county",
-  "team_rank": 99,
+  "team_rank": 97,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 114,
+  "current_rank": 172,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-5",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 84.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,16 +28,102 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35908853132",
+      "opponent_rank": 168,
+      "opponent_name": "Jack Madden",
+      "method": "Fall 0:23"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35724490132",
+      "opponent_name": "Kasey Clark",
+      "opponent_team": "East Carter",
+      "opponent_team_rank": 42,
+      "opponent_weight": 157,
+      "opponent_rank": 134,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:50",
+      "event": "vs. Lawrence County",
+      "mv_impact": -10.33
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35247369132",
+      "opponent_name": "Rylan Noel",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": 103,
+      "opponent_weight": 157,
+      "opponent_rank": 166,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "vs. Mason County",
+      "mv_impact": -10.64
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35908853132",
+      "opponent_name": "Jack Madden",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 120,
+      "opponent_weight": 157,
+      "opponent_rank": 168,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "vs. Russell",
+      "mv_impact": -10.88
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35724487132",
+      "opponent_name": "David Wade",
+      "opponent_team": "East Carter",
+      "opponent_team_rank": 42,
+      "opponent_weight": 144,
+      "opponent_rank": 86,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:25",
+      "event": "Les Delong Memorial Tournament",
+      "mv_impact": -6.03
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35911323132",
+      "opponent_name": "Ivan McDaniels",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 120,
+      "opponent_weight": 157,
+      "opponent_rank": 89,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "Les Delong Memorial Tournament",
+      "mv_impact": -7.69
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.9
   }
 }

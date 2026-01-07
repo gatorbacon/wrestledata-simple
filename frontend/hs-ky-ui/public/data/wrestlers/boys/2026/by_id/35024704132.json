@@ -3,23 +3,23 @@
   "name": "Levi Howell",
   "team": "South Warren",
   "team_slug": "south_warren",
-  "team_rank": 54,
+  "team_rank": 126,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 159,
   "record": {
     "overall": "0-7",
-    "vs_ranked": "0-6",
+    "vs_ranked": "0-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 91.8,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 92.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,15 +28,15 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 6,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35181017132",
-      "opponent_rank": 71,
-      "opponent_name": "Nick Thomas",
-      "method": "Fall 1:14"
+      "opponent_id": "35206786132",
+      "opponent_rank": 188,
+      "opponent_name": "Jared Antle",
+      "method": "Fall 4:38"
     }
   },
   "match_list": [
@@ -45,110 +45,117 @@
       "opponent_id": "35206786132",
       "opponent_name": "Jared Antle",
       "opponent_team": "Adair County",
-      "opponent_team_rank": 55,
-      "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_team_rank": 50,
+      "opponent_weight": 144,
+      "opponent_rank": 188,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:38",
       "event": "vs. South Warren",
-      "mv_impact": -9.61
+      "mv_impact": -11.2
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35181017132",
       "opponent_name": "Nick Thomas",
       "opponent_team": "Danville",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 67,
       "opponent_weight": 150,
-      "opponent_rank": 71,
+      "opponent_rank": 93,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
       "event": "vs. South Warren",
-      "mv_impact": -8.46
+      "mv_impact": -8.6
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35205293132",
       "opponent_name": "Jaxon Leonard",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 87,
+      "opponent_team_rank": 84,
       "opponent_weight": 150,
-      "opponent_rank": 57,
+      "opponent_rank": 62,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:27",
       "event": "vs. South Warren",
-      "mv_impact": -5.87
+      "mv_impact": -5.81
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35688409132",
       "opponent_name": "Patrick Durbin",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 106,
       "opponent_weight": 150,
-      "opponent_rank": 26,
+      "opponent_rank": 23,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
       "event": "vs. South Warren",
-      "mv_impact": -2.77
+      "mv_impact": -3.28
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35383664132",
       "opponent_name": "Tristan Stapleton",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 38,
       "opponent_weight": 150,
-      "opponent_rank": 63,
+      "opponent_rank": 69,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:45",
       "event": "vs. South Warren",
-      "mv_impact": -7.05
+      "mv_impact": -7.29
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35205293132",
       "opponent_name": "Jaxon Leonard",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 87,
+      "opponent_team_rank": 84,
       "opponent_weight": 150,
-      "opponent_rank": 57,
+      "opponent_rank": 62,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. South Warren",
-      "mv_impact": -5.87
+      "mv_impact": -5.81
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35192414132",
       "opponent_name": "Mazime Many",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 102,
+      "opponent_team_rank": 100,
       "opponent_weight": 150,
-      "opponent_rank": 68,
+      "opponent_rank": 82,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:43",
       "event": "vs. South Warren",
-      "mv_impact": -7.89
+      "mv_impact": -7.82
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8333333333333334
+    "top33_bonus_ev_shrunk": 0.5833333333333334
   }
 }

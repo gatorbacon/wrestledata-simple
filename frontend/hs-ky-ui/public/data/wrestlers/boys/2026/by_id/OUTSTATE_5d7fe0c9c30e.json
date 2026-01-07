@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "1-0",
+    "overall": "3-0",
+    "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,30 +24,46 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35405623132",
-      "opponent_rank": 83,
-      "opponent_name": "Cole Brown",
-      "method": "Fall 2:01"
+      "opponent_id": "35281276132",
+      "opponent_rank": 49,
+      "opponent_name": "Drew Blackburn",
+      "method": "Fall 1:34"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35281276132",
+      "opponent_name": "Drew Blackburn",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 70,
+      "opponent_weight": 120,
+      "opponent_rank": 49,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:34",
+      "event": "2026 CIWT"
+    },
+    {
       "date": "2025-12-12",
       "opponent_id": "35488266132",
       "opponent_name": "Garrett Fohl",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 50,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -59,9 +75,10 @@
       "opponent_id": "35405623132",
       "opponent_name": "Cole Brown",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 81,
       "opponent_weight": 120,
-      "opponent_rank": 83,
+      "opponent_rank": 87,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -72,6 +89,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.19375
+    "top33_bonus_ev_shrunk": 1.3035714285714286
   }
 }

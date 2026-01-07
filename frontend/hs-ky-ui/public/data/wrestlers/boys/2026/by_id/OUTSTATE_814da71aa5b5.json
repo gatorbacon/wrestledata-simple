@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "1-0",
+    "overall": "4-0",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,30 +24,61 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35049795132",
-      "opponent_rank": 49,
-      "opponent_name": "Eli Wilson",
+      "opponent_id": "35205293132",
+      "opponent_rank": 62,
+      "opponent_name": "Jaxon Leonard",
       "method": "Fall 0:00"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2025-12-30",
+      "opponent_id": "35104950132",
+      "opponent_name": "marcus anthony",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 46,
+      "opponent_weight": 150,
+      "opponent_rank": 76,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:54",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35205293132",
+      "opponent_name": "Jaxon Leonard",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 150,
+      "opponent_rank": 62,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Evansville F.j. Reitz"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35493607132",
       "opponent_name": "Noah McDowell",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 181,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -59,9 +90,10 @@
       "opponent_id": "35049795132",
       "opponent_name": "Eli Wilson",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 30,
       "opponent_weight": 150,
-      "opponent_rank": 49,
+      "opponent_rank": 66,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -72,6 +104,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8333333333333334
+    "top33_bonus_ev_shrunk": 0.5833333333333334
   }
 }

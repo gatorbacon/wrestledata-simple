@@ -3,13 +3,13 @@
   "name": "CJ Thacker",
   "team": "Christian County",
   "team_slug": "christian_county",
-  "team_rank": 20,
+  "team_rank": 35,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 114,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-2",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 14.0,
     "pa7": 2.0,
     "pd7": 12.0,
-    "si_plus": 102.3,
-    "df_plus": 106.7,
-    "apr_plus": 87.6,
+    "si_plus": 112.2,
+    "df_plus": 104.9,
+    "apr_plus": 87.1,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
@@ -28,20 +28,20 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35281689132",
-      "opponent_rank": 80,
+      "opponent_rank": 115,
       "opponent_name": "Ethan Wilson",
       "method": "MD 14-2"
     },
     "worst_loss": {
-      "opponent_id": "35598055132",
-      "opponent_rank": 83,
-      "opponent_name": "Brody Fleming",
-      "method": "Fall 5:21"
+      "opponent_id": "35002902132",
+      "opponent_rank": 113,
+      "opponent_name": "Dylan Murphy",
+      "method": "Fall 1:13"
     }
   },
   "match_list": [
@@ -50,75 +50,80 @@
       "opponent_id": "35598055132",
       "opponent_name": "Brody Fleming",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 128,
+      "opponent_team_rank": 130,
       "opponent_weight": 157,
-      "opponent_rank": 83,
+      "opponent_rank": 110,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:21",
       "event": "Christian County Invitational",
-      "mv_impact": -8.83
+      "mv_impact": -8.44
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34993282132",
       "opponent_name": "Parker Lowery",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 68,
       "opponent_weight": 157,
-      "opponent_rank": 51,
+      "opponent_rank": 71,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:22",
       "event": "Christian County Invitational",
-      "mv_impact": -6.29
+      "mv_impact": -6.68
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35281689132",
       "opponent_name": "Ethan Wilson",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 157,
-      "opponent_rank": 80,
+      "opponent_rank": 115,
+      "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "14-2",
       "duration": "7:00",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 0.64
+      "mv_impact": 0.76
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35002902132",
       "opponent_name": "Dylan Murphy",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 76,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 113,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:13",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": -9.78
+      "mv_impact": -9.44
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35035532132",
       "opponent_name": "Elias Blakney",
       "opponent_team": "Union County",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 2,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 68,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:40",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": -5.75
+      "mv_impact": -6.06
     }
   ]
 }

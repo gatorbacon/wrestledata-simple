@@ -3,13 +3,13 @@
   "name": "Abdullah Mandou",
   "team": "Tates Creek",
   "team_slug": "tates_creek",
-  "team_rank": 127,
+  "team_rank": 129,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 129,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-4",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 87.2,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 86.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,13 +28,13 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35138063132",
-      "opponent_rank": 98,
+      "opponent_rank": 146,
       "opponent_name": "Brady Simpson",
       "method": "Fall 0:00"
     }
@@ -45,80 +45,85 @@
       "opponent_id": "35156201132",
       "opponent_name": "James Williams",
       "opponent_team": "Taylor County",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 49,
       "opponent_weight": 157,
-      "opponent_rank": 42,
+      "opponent_rank": 34,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Taylor County",
-      "mv_impact": -4.93
+      "mv_impact": -4.69
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35138063132",
       "opponent_name": "Brady Simpson",
       "opponent_team": "Bethlehem",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 57,
       "opponent_weight": 175,
-      "opponent_rank": 98,
+      "opponent_rank": 146,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek",
-      "mv_impact": -10.18
+      "mv_impact": -10.38
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34995416132",
       "opponent_name": "Zachary Embry",
       "opponent_team": "Moore",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 46,
       "opponent_weight": 190,
-      "opponent_rank": 84,
+      "opponent_rank": 116,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek",
-      "mv_impact": -9.84
+      "mv_impact": -9.66
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35405500132",
       "opponent_name": "Gunner Patrick",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 81,
       "opponent_weight": 190,
-      "opponent_rank": 56,
+      "opponent_rank": 42,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": -6.29
+      "mv_impact": -5.29
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35202509132",
       "opponent_name": "Brandon Riggins",
       "opponent_team": "South Oldham",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 125,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 112,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:55",
       "event": "Tommy Castle Classic",
-      "mv_impact": -9.49
+      "mv_impact": -9.05
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.0454545454545454
   }
 }

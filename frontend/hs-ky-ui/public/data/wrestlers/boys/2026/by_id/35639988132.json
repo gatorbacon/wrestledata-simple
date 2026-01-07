@@ -3,10 +3,10 @@
   "name": "Jason Maggard",
   "team": "Harlan County",
   "team_slug": "harlan_county",
-  "team_rank": 88,
+  "team_rank": 85,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 10,
+  "current_rank": 26,
   "record": {
     "overall": "3-0",
     "vs_ranked": "3-0",
@@ -17,9 +17,9 @@
     "pf7": 16.5,
     "pa7": 0.5,
     "pd7": 16.0,
-    "si_plus": 109.3,
-    "df_plus": 114.0,
-    "apr_plus": 95.2,
+    "si_plus": 111.7,
+    "df_plus": 115.2,
+    "apr_plus": 96.0,
     "pin_rate": 0.333,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -45,15 +45,16 @@
       "opponent_id": "35703467132",
       "opponent_name": "Kai Munoz",
       "opponent_team": "Floyd Central",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 75,
       "opponent_weight": 113,
-      "opponent_rank": 82,
+      "opponent_rank": 99,
+      "weight_class": "113",
       "result": "W",
       "method": "TF",
       "score": "16-0",
       "duration": "0:00",
       "event": "Cougar Classic",
-      "mv_impact": -0.51
+      "mv_impact": -0.06
     },
     {
       "date": "2025-11-29",
@@ -62,13 +63,14 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 113,
       "opponent_weight": 113,
-      "opponent_rank": 31,
+      "opponent_rank": 38,
+      "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:54",
       "event": "Cougar Classic",
-      "mv_impact": 5.47
+      "mv_impact": 5.32
     },
     {
       "date": "2025-11-29",
@@ -78,17 +80,18 @@
       "opponent_team_rank": 118,
       "opponent_weight": 113,
       "opponent_rank": 30,
+      "weight_class": "113",
       "result": "W",
       "method": "TF",
       "score": "17-1",
       "duration": "0:00",
       "event": "Cougar Classic",
-      "mv_impact": 5.86
+      "mv_impact": 6.22
     }
   ],
   "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 1.75,
-    "top33_bonus_ev_shrunk": 1.5916666666666666
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 1.5,
+    "top33_bonus_ev_shrunk": 1.5968660968660968
   }
 }

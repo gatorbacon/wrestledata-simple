@@ -3,13 +3,13 @@
   "name": "Ayden Warren",
   "team": "Martin County",
   "team_slug": "martin_county",
-  "team_rank": 38,
+  "team_rank": 6,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 92,
+  "current_rank": 127,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "0-0",
+    "overall": "3-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,32 +17,88 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 84.7,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 94.5,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35421520132",
+      "opponent_rank": 140,
+      "opponent_name": "Conner Crabtree",
+      "method": "Fall 1:29"
+    },
+    "worst_loss": {
+      "opponent_id": "35247372132",
+      "opponent_rank": 81,
+      "opponent_name": "Adam Miller",
+      "method": "Fall 1:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35421288132",
+      "opponent_name": "Logan Mason",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 132,
+      "opponent_rank": 187,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35421520132",
+      "opponent_name": "Conner Crabtree",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 132,
+      "opponent_rank": 140,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:29",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35247372132",
+      "opponent_name": "Adam Miller",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": 103,
+      "opponent_weight": 132,
+      "opponent_rank": 81,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
     {
       "date": "2025-12-12",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "132",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -53,6 +109,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2115384615384615
+    "top33_bonus_ev_shrunk": 1.4615384615384615
   }
 }

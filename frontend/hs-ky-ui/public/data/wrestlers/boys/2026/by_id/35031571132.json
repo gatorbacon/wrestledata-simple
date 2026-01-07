@@ -3,10 +3,10 @@
   "name": "Brennen Clifford",
   "team": "Union County",
   "team_slug": "union_county",
-  "team_rank": 3,
+  "team_rank": 2,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 3,
+  "current_rank": 2,
   "record": {
     "overall": "5-0",
     "vs_ranked": "1-0",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 10.0,
     "si_plus": 101.5,
-    "df_plus": 114.7,
-    "apr_plus": 88.3,
+    "df_plus": 115.9,
+    "apr_plus": 88.9,
     "pin_rate": 0.6,
     "bonus_rate": 0.8,
     "majors": 1,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35338367132",
-      "opponent_rank": 29,
+      "opponent_rank": 44,
       "opponent_name": "Declan Duncan",
       "method": "MD 10-0"
     },
@@ -45,9 +45,10 @@
       "opponent_id": "35338367132",
       "opponent_name": "Declan Duncan",
       "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": 129,
+      "opponent_team_rank": 131,
       "opponent_weight": 132,
-      "opponent_rank": 29,
+      "opponent_rank": 44,
+      "weight_class": "132",
       "result": "W",
       "method": "MD",
       "score": "10-0",
@@ -62,6 +63,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 132,
       "opponent_rank": null,
+      "weight_class": "132",
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -76,6 +78,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 132,
       "opponent_rank": null,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -90,6 +93,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 132,
       "opponent_rank": null,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -104,6 +108,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 138,
       "opponent_rank": null,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -112,8 +117,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.5092592592592593
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.45
   }
 }

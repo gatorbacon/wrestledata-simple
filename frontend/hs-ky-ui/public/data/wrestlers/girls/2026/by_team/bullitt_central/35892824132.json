@@ -6,10 +6,10 @@
   "team_rank": null,
   "weight_class": 107,
   "year": 2026,
-  "current_rank": 45,
+  "current_rank": 57,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35333462132",
+      "opponent_rank": 45,
+      "opponent_name": "Kaylin Collins",
+      "method": "Dec 19-13"
+    }
   },
   "match_list": [
     {
@@ -42,7 +47,8 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 33,
       "opponent_weight": 107,
-      "opponent_rank": null,
+      "opponent_rank": 45,
+      "weight_class": "107",
       "result": "L",
       "method": "DEC",
       "score": "19-13",

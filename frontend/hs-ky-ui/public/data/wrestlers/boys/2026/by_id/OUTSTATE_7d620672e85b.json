@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "2-1",
-    "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "overall": "5-2",
+    "vs_ranked": "5-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,22 +20,22 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 1,
+    "ranked_wins": 5,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35049801132",
-      "opponent_rank": 38,
-      "opponent_name": "Nolan Clark",
-      "method": "Fall 0:00"
+      "opponent_id": "34988533132",
+      "opponent_rank": 44,
+      "opponent_name": "Samont Thompson",
+      "method": "Fall 3:28"
     },
     "worst_loss": {
       "opponent_id": "35207985132",
@@ -46,13 +46,74 @@
   },
   "match_list": [
     {
+      "date": "2025-12-30",
+      "opponent_id": "34988533132",
+      "opponent_name": "Samont Thompson",
+      "opponent_team": "Doss",
+      "opponent_team_rank": 71,
+      "opponent_weight": 190,
+      "opponent_rank": 44,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:28",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35217308132",
+      "opponent_name": "Riley Burton",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 74,
+      "opponent_weight": 190,
+      "opponent_rank": 3,
+      "weight_class": "190",
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35006461132",
+      "opponent_name": "Xavier Holbrook",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 190,
+      "opponent_rank": 90,
+      "weight_class": "190",
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35049071132",
+      "opponent_name": "Preston Davis",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 190,
+      "opponent_rank": 151,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Evansville F.j. Reitz"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35207985132",
       "opponent_name": "Brock Crook",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 190,
       "opponent_rank": 12,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -64,9 +125,10 @@
       "opponent_id": "35490391132",
       "opponent_name": "Cohen Griffin",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 190,
-      "opponent_rank": 95,
+      "opponent_rank": 156,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -78,9 +140,10 @@
       "opponent_id": "35049801132",
       "opponent_name": "Nolan Clark",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 30,
       "opponent_weight": 190,
-      "opponent_rank": 38,
+      "opponent_rank": 58,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -91,6 +154,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.0454545454545454
   }
 }

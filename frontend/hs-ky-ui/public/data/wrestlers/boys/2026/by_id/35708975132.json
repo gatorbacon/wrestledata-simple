@@ -3,23 +3,23 @@
   "name": "Bentley DeSoto",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 13,
+  "team_rank": 27,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 47,
   "record": {
-    "overall": "4-0",
-    "vs_ranked": "1-0",
+    "overall": "4-1",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 113.4,
+    "pa7": 25.0,
+    "pd7": -25.0,
+    "si_plus": 87.0,
+    "df_plus": 84.0,
+    "apr_plus": 109.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,17 +27,22 @@
     "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35133605132",
-      "opponent_rank": 51,
+      "opponent_rank": 75,
       "opponent_name": "Kyrien Cannon",
       "method": "Fall 1:15"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34993277132",
+      "opponent_rank": 11,
+      "opponent_name": "Jackson Stoner",
+      "method": "TF 15-0 2:07"
+    }
   },
   "match_list": [
     {
@@ -45,54 +50,74 @@
       "opponent_id": "34988693132",
       "opponent_name": "Kian Bradley",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 79,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:52",
       "event": "Christian County Invitational",
-      "mv_impact": 5.42
+      "mv_impact": 5.23
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "34993277132",
+      "opponent_name": "Jackson Stoner",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 68,
+      "opponent_weight": 132,
+      "opponent_rank": 11,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:07",
+      "event": "Christian County Invitational",
+      "mv_impact": -1.52
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35133605132",
       "opponent_name": "Kyrien Cannon",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 93,
+      "opponent_team_rank": 91,
       "opponent_weight": 132,
-      "opponent_rank": 51,
+      "opponent_rank": 75,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:15",
       "event": "Christian County Invitational",
-      "mv_impact": 6.03
+      "mv_impact": 5.77
     },
     {
       "date": "2025-12-22",
       "opponent_id": "34988693132",
       "opponent_name": "Kian Bradley",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 79,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:01",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 5.42
+      "mv_impact": 5.23
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35493617132",
       "opponent_name": "William Petersen",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 118,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -104,6 +129,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2115384615384615
+    "top33_bonus_ev_shrunk": 1.4615384615384615
   }
 }

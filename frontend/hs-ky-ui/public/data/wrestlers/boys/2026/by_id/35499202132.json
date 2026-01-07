@@ -6,10 +6,10 @@
   "team_rank": 31,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 122,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,8 +17,8 @@
     "pf7": 0.0,
     "pa7": 25.0,
     "pd7": -25.0,
-    "si_plus": 89.4,
-    "df_plus": 82.4,
+    "si_plus": 85.9,
+    "df_plus": 80.8,
     "apr_plus": 98.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35521187132",
+      "opponent_rank": 124,
+      "opponent_name": "Bennet Bowsher",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "34988554132",
-      "opponent_rank": 52,
+      "opponent_rank": 62,
       "opponent_name": "Tucker Elliott",
       "method": "TF 15-0 3:23"
     }
@@ -45,50 +50,53 @@
       "opponent_id": "34988554132",
       "opponent_name": "Tucker Elliott",
       "opponent_team": "Conner",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 10,
       "opponent_weight": 215,
-      "opponent_rank": 52,
+      "opponent_rank": 62,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -4.8
+      "mv_impact": -5.02
     },
     {
       "date": "2025-12-26",
       "opponent_id": "35521187132",
       "opponent_name": "Bennet Bowsher",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 124,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": 2.17
+      "mv_impact": 2.5
     },
     {
       "date": "2025-12-12",
       "opponent_id": "34988554132",
       "opponent_name": "Tucker Elliott",
       "opponent_team": "Conner",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 10,
       "opponent_weight": 215,
-      "opponent_rank": 52,
+      "opponent_rank": 62,
+      "weight_class": "215",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:23",
       "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": -3.8
+      "mv_impact": -4.02
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.55
+    "top33_bonus_ev_shrunk": 0.6923076923076923
   }
 }

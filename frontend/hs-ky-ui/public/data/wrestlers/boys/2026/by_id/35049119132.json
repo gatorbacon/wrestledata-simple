@@ -3,72 +3,157 @@
   "name": "Colton Hendrick",
   "team": "Greenwood",
   "team_slug": "greenwood",
-  "team_rank": 87,
+  "team_rank": 84,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 69,
+  "current_rank": 57,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "0-0",
+    "overall": "5-2",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 103.6,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
-    "majors": 0,
+    "pf7": 6.0,
+    "pa7": 9.0,
+    "pd7": -3.0,
+    "si_plus": 94.5,
+    "df_plus": 102.5,
+    "apr_plus": 107.6,
+    "pin_rate": 0.6,
+    "bonus_rate": 0.8,
+    "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35090030132",
+      "opponent_rank": 58,
+      "opponent_name": "Justin Torres",
+      "method": "MD 9-0"
+    },
+    "worst_loss": {
+      "opponent_id": "35090027132",
+      "opponent_rank": 11,
+      "opponent_name": "Aydin Kadriov",
+      "method": "TF 18-3 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Warren Central"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35023913132",
+      "opponent_name": "Emanuel Pamblanco",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 126,
+      "opponent_weight": 138,
+      "opponent_rank": 121,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:48",
+      "event": "vs. South Warren"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35090030132",
+      "opponent_name": "Justin Torres",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 74,
+      "opponent_weight": 138,
+      "opponent_rank": 58,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "vs. Greenwood"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35090027132",
+      "opponent_name": "Aydin Kadriov",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 74,
+      "opponent_weight": 138,
+      "opponent_rank": 11,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "0:00",
+      "event": "vs. Greenwood"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "OUTSTATE_6037fa3cd8d6",
+      "opponent_name": "Kylan Davis",
+      "opponent_team": "Evansville F.j. Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "vs. Evansville F.j. Reitz"
+    },
     {
       "date": "2025-12-17",
       "opponent_id": "35206832132",
       "opponent_name": "Leo Garsee",
       "opponent_team": "Adair County",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 50,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 161,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
-      "event": "vs. Greenwood",
-      "mv_impact": 0.56
+      "event": "vs. Greenwood"
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35007899132",
       "opponent_name": "Daniel Carpenter",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 126,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 183,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren",
-      "mv_impact": 1.94
+      "event": "vs. South Warren"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5555555555555556
+    "top33_bonus_ev_shrunk": 0.8571428571428571
   }
 }

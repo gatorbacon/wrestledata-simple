@@ -3,13 +3,13 @@
   "name": "Aaliyah Bronger",
   "team": "Fern Creek",
   "team_slug": "fern_creek",
-  "team_rank": 36,
+  "team_rank": 74,
   "weight_class": 106,
   "year": 2026,
   "current_rank": null,
   "record": {
     "overall": "1-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,11 +27,16 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35076693132",
+      "opponent_rank": 147,
+      "opponent_name": "San`Tori Brown",
+      "method": "For."
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -40,9 +45,10 @@
       "opponent_id": "35076693132",
       "opponent_name": "San`Tori Brown",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 124,
       "opponent_weight": 106,
-      "opponent_rank": null,
+      "opponent_rank": 147,
+      "weight_class": "106",
       "result": "W",
       "method": "DEC",
       "score": null,

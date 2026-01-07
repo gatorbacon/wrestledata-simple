@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-1",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,16 +27,21 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35909390132",
+      "opponent_rank": 46,
+      "opponent_name": "Cooper Broderick",
+      "method": "Dec 5-3"
+    },
     "worst_loss": {
-      "opponent_id": "35663388132",
-      "opponent_rank": 40,
-      "opponent_name": "Grant Goodpaster",
-      "method": "Fall 1:16"
+      "opponent_id": "35663525132",
+      "opponent_rank": 38,
+      "opponent_name": "Wyatt Crisp",
+      "method": "Fall 0:29"
     }
   },
   "match_list": [
@@ -45,9 +50,10 @@
       "opponent_id": "35663388132",
       "opponent_name": "Grant Goodpaster",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 150,
-      "opponent_rank": 40,
+      "opponent_rank": 37,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -59,9 +65,10 @@
       "opponent_id": "35909390132",
       "opponent_name": "Cooper Broderick",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_rank": 46,
+      "weight_class": "150",
       "result": "W",
       "method": "DEC",
       "score": "5-3",
@@ -73,9 +80,10 @@
       "opponent_id": "35663525132",
       "opponent_name": "Wyatt Crisp",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_rank": 38,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -86,6 +94,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8333333333333334
+    "top33_bonus_ev_shrunk": 0.5833333333333334
   }
 }

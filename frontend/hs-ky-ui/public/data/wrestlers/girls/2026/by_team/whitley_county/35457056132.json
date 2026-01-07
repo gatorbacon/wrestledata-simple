@@ -6,10 +6,10 @@
   "team_rank": 12,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 66,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-2",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -27,16 +27,21 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35664709132",
+      "opponent_rank": 85,
+      "opponent_name": "Ferris Torres",
+      "method": "Fall 0:54"
+    },
     "worst_loss": {
-      "opponent_id": "35369126132",
-      "opponent_rank": 26,
-      "opponent_name": "Kennedy Slusher",
-      "method": "Fall 0:00"
+      "opponent_id": "35427458132",
+      "opponent_rank": 43,
+      "opponent_name": "Adalee Gilreath",
+      "method": "Fall 2:03"
     }
   },
   "match_list": [
@@ -47,13 +52,14 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 6,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 35,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:19",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -5.27
+      "mv_impact": -5.11
     },
     {
       "date": "2025-12-06",
@@ -62,13 +68,14 @@
       "opponent_team": "Harrison County",
       "opponent_team_rank": 19,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 85,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:54",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 5.15
+      "mv_impact": 5.1
     },
     {
       "date": "2025-12-06",
@@ -77,13 +84,14 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 12,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 43,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:03",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -5.77
+      "mv_impact": -5.76
     },
     {
       "date": "2025-11-29",
@@ -92,13 +100,14 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 6,
       "opponent_weight": 126,
-      "opponent_rank": 26,
+      "opponent_rank": 30,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Whitley County",
-      "mv_impact": -6.12
+      "mv_impact": -5.89
     },
     {
       "date": "2025-11-29",
@@ -108,12 +117,13 @@
       "opponent_team_rank": 51,
       "opponent_weight": 126,
       "opponent_rank": 11,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Whitley County",
-      "mv_impact": -1.95
+      "mv_impact": -1.99
     }
   ]
 }

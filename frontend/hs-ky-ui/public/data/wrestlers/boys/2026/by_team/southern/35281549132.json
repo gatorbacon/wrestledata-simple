@@ -3,23 +3,23 @@
   "name": "Kaden Johnson",
   "team": "Southern",
   "team_slug": "southern",
-  "team_rank": 125,
+  "team_rank": 127,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 99,
+  "current_rank": 134,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "0-1",
+    "overall": "1-5",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 12.0,
     "pa7": 9.0,
     "pd7": 3.0,
-    "si_plus": 103.9,
-    "df_plus": 103.1,
-    "apr_plus": 86.7,
+    "si_plus": 104.7,
+    "df_plus": 103.3,
+    "apr_plus": 90.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -27,93 +27,119 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35321120132",
+      "opponent_rank": 135,
+      "opponent_name": "Luke Dalton",
+      "method": "Dec 14-7"
+    },
     "worst_loss": {
-      "opponent_id": "35090038132",
-      "opponent_rank": 14,
-      "opponent_name": "Shoron Briscoe",
-      "method": "Fall 0:00"
+      "opponent_id": "34989974132",
+      "opponent_rank": 129,
+      "opponent_name": "DonJai Karnickey",
+      "method": "Fall 3:02"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35090038132",
+      "opponent_name": "Shoron Briscoe",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 74,
+      "opponent_weight": 215,
+      "opponent_rank": 51,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "vs. Southern",
+      "mv_impact": -4.84
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35181301132",
       "opponent_name": "James Smith",
       "opponent_team": "Danville",
-      "opponent_team_rank": 72,
-      "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_team_rank": 67,
+      "opponent_weight": 190,
+      "opponent_rank": 96,
+      "weight_class": "215",
       "result": "L",
       "method": "DEC",
       "score": "11-10",
       "duration": "7:00",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -6.99
+      "mv_impact": -6.16
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35090038132",
       "opponent_name": "Shoron Briscoe",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 74,
       "opponent_weight": 215,
-      "opponent_rank": 14,
+      "opponent_rank": 51,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Southern",
-      "mv_impact": -3.36
+      "mv_impact": -4.84
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35090029132",
       "opponent_name": "Ammed Madzhitov",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 74,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 111,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:25",
       "event": "King of the Bluegrass",
-      "mv_impact": -8.06
+      "mv_impact": -8.73
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35321120132",
       "opponent_name": "Luke Dalton",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 135,
+      "weight_class": "215",
       "result": "W",
       "method": "DEC",
       "score": "14-7",
       "duration": "7:00",
       "event": "vs. Southern",
-      "mv_impact": -1.06
+      "mv_impact": -0.74
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34989974132",
       "opponent_name": "DonJai Karnickey",
       "opponent_team": "Western",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 129,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:02",
       "event": "vs. Western",
-      "mv_impact": -9.95
+      "mv_impact": -9.34
     }
   ]
 }

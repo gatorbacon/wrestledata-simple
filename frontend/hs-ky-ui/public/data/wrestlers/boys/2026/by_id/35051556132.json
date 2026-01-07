@@ -3,13 +3,13 @@
   "name": "Mariya Reed",
   "team": "Woodford County",
   "team_slug": "woodford_county",
-  "team_rank": 19,
+  "team_rank": 40,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 138,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 93.9,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 93.8,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35457073132",
+      "opponent_rank": 158,
+      "opponent_name": "Odishio Peters",
+      "method": "Fall 2:24"
+    },
     "worst_loss": {
       "opponent_id": "35281420132",
-      "opponent_rank": 65,
+      "opponent_rank": 111,
       "opponent_name": "Carter Vance",
       "method": "Fall 0:39"
     }
@@ -46,8 +51,9 @@
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -56,12 +62,28 @@
     },
     {
       "date": "2025-11-29",
+      "opponent_id": "35457073132",
+      "opponent_name": "Odishio Peters",
+      "opponent_team": "Butler",
+      "opponent_team_rank": 61,
+      "opponent_weight": 285,
+      "opponent_rank": 158,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:24",
+      "event": "Screamin` Eagles Classic"
+    },
+    {
+      "date": "2025-11-29",
       "opponent_id": "34988541132",
       "opponent_name": "Shane Willock",
       "opponent_team": "Doss",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 71,
       "opponent_weight": 285,
-      "opponent_rank": 32,
+      "opponent_rank": 68,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -73,33 +95,20 @@
       "opponent_id": "35281420132",
       "opponent_name": "Carter Vance",
       "opponent_team": "Southern",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 285,
-      "opponent_rank": 65,
+      "opponent_rank": 111,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:39",
-      "event": "Screamin` Eagles Classic"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35457073132",
-      "opponent_name": "Odishio Peters",
-      "opponent_team": "Butler",
-      "opponent_team_rank": 66,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:24",
       "event": "Screamin` Eagles Classic"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9666666666666666
+    "top33_bonus_ev_shrunk": 1.3333333333333333
   }
 }

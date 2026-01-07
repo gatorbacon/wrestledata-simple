@@ -3,23 +3,23 @@
   "name": "Tristan Campbell",
   "team": "Conner",
   "team_slug": "conner",
-  "team_rank": 26,
+  "team_rank": 10,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 81,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 9.0,
     "pa7": 7.0,
     "pd7": 2.0,
-    "si_plus": 100.3,
-    "df_plus": 105.6,
-    "apr_plus": 89.9,
+    "si_plus": 100.0,
+    "df_plus": 106.1,
+    "apr_plus": 88.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -27,14 +27,19 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35489036132",
+      "opponent_rank": 139,
+      "opponent_name": "Brayden Koenig",
+      "method": "Dec 9-7"
+    },
     "worst_loss": {
       "opponent_id": "35405736132",
-      "opponent_rank": 36,
+      "opponent_rank": 21,
       "opponent_name": "Ethan Fannin",
       "method": "Fall 2:20"
     }
@@ -45,9 +50,10 @@
       "opponent_id": "35489036132",
       "opponent_name": "Brayden Koenig",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 139,
+      "weight_class": "144",
       "result": "W",
       "method": "DEC",
       "score": "9-7",
@@ -59,9 +65,10 @@
       "opponent_id": "OUTSTATE_f24c609f7670",
       "opponent_name": "Carter Casson",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 144,
       "opponent_rank": null,
+      "weight_class": "144",
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -73,9 +80,10 @@
       "opponent_id": "OUTSTATE_173c6e852601",
       "opponent_name": "Liam Surber",
       "opponent_team": "Cooper",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 9,
       "opponent_weight": 144,
       "opponent_rank": null,
+      "weight_class": "144",
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -87,9 +95,10 @@
       "opponent_id": "35405736132",
       "opponent_name": "Ethan Fannin",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 81,
       "opponent_weight": 144,
-      "opponent_rank": 36,
+      "opponent_rank": 21,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -104,6 +113,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 144,
       "opponent_rank": null,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -114,6 +124,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35270991132",
-      "opponent_rank": 5,
+      "opponent_rank": 2,
       "opponent_name": "Braydan Blevins",
       "method": "Dec 3-2"
     },
@@ -42,36 +42,38 @@
   "match_list": [
     {
       "date": "2025-12-21",
-      "opponent_id": "35640248132",
-      "opponent_name": "Deacon Cano",
-      "opponent_team": "Great Crossing",
-      "opponent_team_rank": 49,
-      "opponent_weight": 132,
-      "opponent_rank": 8,
-      "result": "W",
-      "method": "TF",
-      "score": "16-0",
-      "duration": "3:41",
-      "event": "SWOWCA"
-    },
-    {
-      "date": "2025-12-21",
       "opponent_id": "35270991132",
       "opponent_name": "Braydan Blevins",
       "opponent_team": "Simon Kenton",
       "opponent_team_rank": 31,
-      "opponent_weight": 132,
-      "opponent_rank": 5,
+      "opponent_weight": 126,
+      "opponent_rank": 2,
+      "weight_class": "132",
       "result": "W",
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
       "event": "SWOWCA"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "35640248132",
+      "opponent_name": "Deacon Cano",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 44,
+      "opponent_weight": 132,
+      "opponent_rank": 7,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "3:41",
+      "event": "SWOWCA"
     }
   ],
   "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.75,
-    "top33_bonus_ev_shrunk": 1.1192307692307693
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 1.5,
+    "top33_bonus_ev_shrunk": 1.4658119658119657
   }
 }

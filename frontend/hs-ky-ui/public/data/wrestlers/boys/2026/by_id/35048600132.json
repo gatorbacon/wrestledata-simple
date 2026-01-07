@@ -3,92 +3,127 @@
   "name": "Chris Muratalla",
   "team": "Bourbon County",
   "team_slug": "bourbon_county",
-  "team_rank": 63,
+  "team_rank": 58,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 47,
+  "current_rank": 45,
   "record": {
-    "overall": "3-3",
-    "vs_ranked": "3-3",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "4-4",
+    "vs_ranked": "4-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 11.5,
     "pa7": 11.5,
     "pd7": 0.0,
-    "si_plus": 95.7,
-    "df_plus": 87.3,
-    "apr_plus": 100.3,
-    "pin_rate": 0.667,
+    "si_plus": 98.2,
+    "df_plus": 102.4,
+    "apr_plus": 103.8,
+    "pin_rate": 0.75,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 3,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34993520132",
-      "opponent_rank": 63,
+      "opponent_rank": 46,
       "opponent_name": "Jacob Abadi",
       "method": "TF 23-8 0:00"
     },
     "worst_loss": {
       "opponent_id": "35651895132",
-      "opponent_rank": 73,
+      "opponent_rank": 93,
       "opponent_name": "Landon Townsend",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2025-12-30",
+      "opponent_id": "35051530132",
+      "opponent_name": "Brycen Gray",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 40,
+      "opponent_weight": 120,
+      "opponent_rank": 9,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -2.64
+    },
+    {
       "date": "2025-12-23",
       "opponent_id": "35651895132",
       "opponent_name": "Landon Townsend",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 4,
       "opponent_weight": 120,
-      "opponent_rank": 73,
+      "opponent_rank": 93,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": 2.46
+      "mv_impact": 2.66
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35033119132",
+      "opponent_name": "Anish Biswa",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 129,
+      "opponent_weight": 120,
+      "opponent_rank": 137,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Region 6 JV Region",
+      "mv_impact": 3.53
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35651895132",
       "opponent_name": "Landon Townsend",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 4,
       "opponent_weight": 120,
-      "opponent_rank": 73,
+      "opponent_rank": 93,
+      "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Harrison County",
-      "mv_impact": -9.54
+      "mv_impact": -9.34
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34997571132",
       "opponent_name": "Gavin Clem",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 37,
-      "opponent_weight": 126,
-      "opponent_rank": 45,
+      "opponent_team_rank": 43,
+      "opponent_weight": 120,
+      "opponent_rank": 27,
+      "weight_class": "120",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -4.81
+      "mv_impact": -3.38
     },
     {
       "date": "2025-12-06",
@@ -96,49 +131,52 @@
       "opponent_name": "Blake Gragg",
       "opponent_team": "Somerset",
       "opponent_team_rank": 32,
-      "opponent_weight": 126,
-      "opponent_rank": 80,
+      "opponent_weight": 120,
+      "opponent_rank": 91,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 2.64
+      "mv_impact": 2.82
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34993520132",
       "opponent_name": "Jacob Abadi",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 123,
       "opponent_weight": 120,
-      "opponent_rank": 63,
+      "opponent_rank": 46,
+      "weight_class": "120",
       "result": "W",
       "method": "TF",
       "score": "23-8",
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 2.31
+      "mv_impact": 3.91
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35225528132",
       "opponent_name": "Joshua Klose",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 80,
       "opponent_weight": 120,
-      "opponent_rank": 29,
+      "opponent_rank": 28,
+      "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -5.23
+      "mv_impact": -5.55
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.19375
+    "top33_bonus_ev_shrunk": 1.3035714285714286
   }
 }

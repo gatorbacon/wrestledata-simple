@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "1-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -27,13 +27,13 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35688409132",
-      "opponent_rank": 26,
+      "opponent_rank": 23,
       "opponent_name": "Patrick Durbin",
       "method": "MD 11-1"
     },
@@ -45,9 +45,10 @@
       "opponent_id": "35688409132",
       "opponent_name": "Patrick Durbin",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 106,
       "opponent_weight": 150,
-      "opponent_rank": 26,
+      "opponent_rank": 23,
+      "weight_class": "150",
       "result": "W",
       "method": "MD",
       "score": "11-1",
@@ -61,7 +62,8 @@
       "opponent_team": "Nelson County",
       "opponent_team_rank": 29,
       "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_rank": 168,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -72,6 +74,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 0.8518518518518519
+    "top33_bonus_ev_shrunk": 0.6296296296296297
   }
 }

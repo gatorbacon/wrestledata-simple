@@ -1,0 +1,65 @@
+{
+  "wrestler_id": "37175988132",
+  "name": "Jamie Delph",
+  "team": "Harlan County",
+  "team_slug": "harlan_county",
+  "team_rank": 85,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": 174,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 12.0,
+    "pa7": 19.0,
+    "pd7": -7.0,
+    "si_plus": 104.7,
+    "df_plus": 89.2,
+    "apr_plus": 83.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34993874132",
+      "opponent_rank": 171,
+      "opponent_name": "Brendan Martin",
+      "method": "Dec 19-12"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34993874132",
+      "opponent_name": "Brendan Martin",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 82,
+      "opponent_weight": 150,
+      "opponent_rank": 171,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "19-12",
+      "duration": "7:00",
+      "event": "Maroon`s New Year Brawl",
+      "mv_impact": -6.03
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.5833333333333334
+  }
+}

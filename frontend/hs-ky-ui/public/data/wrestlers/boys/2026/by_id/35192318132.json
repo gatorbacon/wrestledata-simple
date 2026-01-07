@@ -3,13 +3,13 @@
   "name": "Eric Blount",
   "team": "Logan County",
   "team_slug": "logan_county",
-  "team_rank": 102,
+  "team_rank": 100,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 65,
+  "current_rank": 94,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 8.0,
     "pa7": 19.0,
     "pd7": -11.0,
-    "si_plus": 91.4,
-    "df_plus": 77.6,
-    "apr_plus": 94.1,
+    "si_plus": 87.2,
+    "df_plus": 90.9,
+    "apr_plus": 93.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35458778132",
-      "opponent_rank": 95,
+      "opponent_rank": 135,
       "opponent_name": "Kash Foutch",
       "method": "Fall 0:33"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34989012132",
+      "opponent_rank": 60,
+      "opponent_name": "Duncan Helm",
+      "method": "MD 19-8"
+    }
   },
   "match_list": [
     {
@@ -45,35 +50,37 @@
       "opponent_id": "35458778132",
       "opponent_name": "Kash Foutch",
       "opponent_team": "Russellville",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 121,
       "opponent_weight": 126,
-      "opponent_rank": 95,
+      "opponent_rank": 135,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:33",
       "event": "vs. Russellville",
-      "mv_impact": 1.02
+      "mv_impact": 1.75
     },
     {
       "date": "2025-12-04",
       "opponent_id": "34989012132",
       "opponent_name": "Duncan Helm",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 47,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 60,
+      "weight_class": "120",
       "result": "L",
       "method": "MD",
       "score": "19-8",
       "duration": "7:00",
       "event": "vs. Ohio County",
-      "mv_impact": -3.48
+      "mv_impact": -4.26
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.7777777777777777
+    "top33_bonus_ev_shrunk": 1.8333333333333333
   }
 }

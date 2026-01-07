@@ -3,13 +3,13 @@
   "name": "Grayson Wade",
   "team": "Bullitt East",
   "team_slug": "bullitt_east",
-  "team_rank": 25,
+  "team_rank": 26,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 106,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 103.9,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 102.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35321127132",
-      "opponent_rank": 74,
+      "opponent_rank": 116,
       "opponent_name": "Aiden Helm",
       "method": "Fall 1:01"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35271153132",
+      "opponent_rank": 39,
+      "opponent_name": "Parker Smith",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
     {
@@ -45,15 +50,16 @@
       "opponent_id": "35321127132",
       "opponent_name": "Aiden Helm",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 175,
-      "opponent_rank": 74,
+      "opponent_rank": 116,
+      "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:01",
       "event": "vs. North Bullitt",
-      "mv_impact": 4.44
+      "mv_impact": 4.46
     },
     {
       "date": "2025-11-29",
@@ -62,18 +68,19 @@
       "opponent_team": "Simon Kenton",
       "opponent_team_rank": 31,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 39,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Simon Kenton",
-      "mv_impact": -4.83
+      "mv_impact": -4.85
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.55
+    "top33_bonus_ev_shrunk": 1.09375
   }
 }

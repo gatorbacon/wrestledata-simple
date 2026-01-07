@@ -9,8 +9,8 @@
   "current_rank": null,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "1-1",
-    "vs_top10": "1-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
     "vs_top25": "1-1"
   },
   "metrics": {
@@ -27,19 +27,19 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 1,
-    "top10_wins": 1,
+    "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35051541132",
-      "opponent_rank": 7,
+      "opponent_rank": 15,
       "opponent_name": "Maxx Escaloni",
       "method": "Fall 1:50"
     },
     "worst_loss": {
       "opponent_id": "34989137132",
-      "opponent_rank": 3,
+      "opponent_rank": 5,
       "opponent_name": "Brayden Allender",
       "method": "MD 10-0"
     }
@@ -50,9 +50,10 @@
       "opponent_id": "35663747132",
       "opponent_name": "Jamison Rogers",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 177,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -64,9 +65,10 @@
       "opponent_id": "34989137132",
       "opponent_name": "Brayden Allender",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 15,
       "opponent_weight": 285,
-      "opponent_rank": 3,
+      "opponent_rank": 5,
+      "weight_class": "285",
       "result": "L",
       "method": "MD",
       "score": "10-0",
@@ -78,9 +80,10 @@
       "opponent_id": "35051541132",
       "opponent_name": "Maxx Escaloni",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 40,
       "opponent_weight": 285,
-      "opponent_rank": 7,
+      "opponent_rank": 15,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -91,6 +94,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.0814814814814815
+    "top33_bonus_ev_shrunk": 1.4074074074074074
   }
 }

@@ -6,12 +6,12 @@
   "team_rank": 36,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 36,
+  "current_rank": 45,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-5",
+    "vs_ranked": "1-7",
     "vs_top10": "0-2",
-    "vs_top25": "0-4"
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 6.87,
@@ -27,16 +27,21 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 2,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35333597132",
+      "opponent_rank": 50,
+      "opponent_name": "Kilel Periera",
+      "method": "Dec 12-6"
+    },
     "worst_loss": {
-      "opponent_id": "35640275132",
-      "opponent_rank": 33,
-      "opponent_name": "Bre`Aijah Harris",
-      "method": "Fall 1:27"
+      "opponent_id": "35333569132",
+      "opponent_rank": 42,
+      "opponent_name": "Leyla Cruz Sanchez",
+      "method": "Fall 1:04"
     }
   },
   "match_list": [
@@ -48,12 +53,13 @@
       "opponent_team_rank": 8,
       "opponent_weight": 165,
       "opponent_rank": 8,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:10",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -2.26
+      "mv_impact": -2.3
     },
     {
       "date": "2025-12-13",
@@ -62,13 +68,14 @@
       "opponent_team": "Scott County",
       "opponent_team_rank": 15,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 21,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic",
-      "mv_impact": -3.43
+      "mv_impact": -3.55
     },
     {
       "date": "2025-12-13",
@@ -78,12 +85,13 @@
       "opponent_team_rank": 15,
       "opponent_weight": 165,
       "opponent_rank": 13,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic",
-      "mv_impact": -3.49
+      "mv_impact": -3.57
     },
     {
       "date": "2025-12-06",
@@ -93,12 +101,13 @@
       "opponent_team_rank": 1,
       "opponent_weight": 165,
       "opponent_rank": 1,
+      "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "2:30",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -0.71
+      "mv_impact": -0.48
     },
     {
       "date": "2025-12-06",
@@ -108,12 +117,13 @@
       "opponent_team_rank": 15,
       "opponent_weight": 165,
       "opponent_rank": 13,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:26",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -3.49
+      "mv_impact": -3.57
     },
     {
       "date": "2025-11-29",
@@ -122,13 +132,14 @@
       "opponent_team": "Bryan Station",
       "opponent_team_rank": 30,
       "opponent_weight": 165,
-      "opponent_rank": 33,
+      "opponent_rank": 39,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:27",
       "event": "Tommy Castle Classic",
-      "mv_impact": -4.97
+      "mv_impact": -5.09
     },
     {
       "date": "2025-11-29",
@@ -137,7 +148,8 @@
       "opponent_team": "Scott County",
       "opponent_team_rank": 15,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 50,
+      "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "12-6",
@@ -152,13 +164,14 @@
       "opponent_team": "George Rogers Clark",
       "opponent_team_rank": 41,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 42,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:04",
       "event": "Tommy Castle Classic",
-      "mv_impact": -6.61
+      "mv_impact": -6.67
     }
   ]
 }

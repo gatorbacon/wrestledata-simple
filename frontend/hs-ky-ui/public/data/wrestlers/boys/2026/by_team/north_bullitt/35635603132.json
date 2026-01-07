@@ -3,13 +3,13 @@
   "name": "Cole Stevens",
   "team": "North Bullitt",
   "team_slug": "north_bullitt",
-  "team_rank": 52,
+  "team_rank": 109,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 159,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-4",
+    "vs_ranked": "0-5",
     "vs_top10": "0-1",
     "vs_top25": "0-3"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 92.6,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 93.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,15 +28,15 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35337455132",
-      "opponent_rank": 58,
-      "opponent_name": "Michael Diffey",
-      "method": "Fall 1:03"
+      "opponent_id": "34988536132",
+      "opponent_rank": 93,
+      "opponent_name": "Trenton Gillespie",
+      "method": "Fall 2:34"
     }
   },
   "match_list": [
@@ -45,75 +45,80 @@
       "opponent_id": "35205072132",
       "opponent_name": "Max Baxter",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 26,
       "opponent_weight": 175,
       "opponent_rank": 7,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:47",
       "event": "vs. North Bullitt",
-      "mv_impact": -1.67
+      "mv_impact": -2.17
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35205061132",
       "opponent_name": "Raiden Rios",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 26,
       "opponent_weight": 190,
-      "opponent_rank": 21,
+      "opponent_rank": 23,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:47",
       "event": "King of the Bluegrass",
-      "mv_impact": -3.69
+      "mv_impact": -3.72
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35337455132",
       "opponent_name": "Michael Diffey",
       "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": 129,
+      "opponent_team_rank": 131,
       "opponent_weight": 190,
-      "opponent_rank": 58,
+      "opponent_rank": 70,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:03",
       "event": "King of the Bluegrass",
-      "mv_impact": -6.62
+      "mv_impact": -6.72
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34988536132",
       "opponent_name": "Trenton Gillespie",
       "opponent_team": "Doss",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 71,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 93,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:34",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": -8.03
+      "mv_impact": -8.58
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35051529132",
       "opponent_name": "Braylen Livingston",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 40,
       "opponent_weight": 190,
-      "opponent_rank": 16,
+      "opponent_rank": 17,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:34",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": -2.79
+      "mv_impact": -2.58
     }
   ]
 }

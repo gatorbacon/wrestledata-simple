@@ -6,20 +6,20 @@
   "team_rank": 33,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 75,
+  "current_rank": 105,
   "record": {
     "overall": "3-2",
     "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 99.8,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 101.4,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35228196132",
-      "opponent_rank": 107,
+      "opponent_rank": 82,
       "opponent_name": "Rowyn Eskridge",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35051533132",
-      "opponent_rank": 19,
+      "opponent_rank": 37,
       "opponent_name": "Eli Watts",
       "method": "Fall 2:09"
     }
@@ -50,9 +50,10 @@
       "opponent_id": "35228196132",
       "opponent_name": "Rowyn Eskridge",
       "opponent_team": "Butler",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 61,
       "opponent_weight": 120,
-      "opponent_rank": 107,
+      "opponent_rank": 82,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -65,8 +66,9 @@
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "126",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -78,9 +80,10 @@
       "opponent_id": "35051533132",
       "opponent_name": "Eli Watts",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 40,
       "opponent_weight": 126,
-      "opponent_rank": 19,
+      "opponent_rank": 37,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -92,9 +95,10 @@
       "opponent_id": "34992062132",
       "opponent_name": "Braylon Hayes",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 53,
       "opponent_weight": 126,
-      "opponent_rank": 14,
+      "opponent_rank": 30,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -107,8 +111,9 @@
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "126",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -119,6 +124,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.7777777777777777
+    "top33_bonus_ev_shrunk": 1.8333333333333333
   }
 }

@@ -6,12 +6,12 @@
   "team_rank": 38,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 23,
+  "current_rank": 27,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "2-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 9.0,
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35333661132",
-      "opponent_rank": 34,
+      "opponent_rank": 40,
       "opponent_name": "Abigail Sacre",
       "method": "Fall 2:15"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35336135132",
+      "opponent_rank": 23,
+      "opponent_name": "Amani Clark",
+      "method": "Dec 14-9"
+    }
   },
   "match_list": [
     {
@@ -47,13 +52,14 @@
       "opponent_team": "North Hardin",
       "opponent_team_rank": 5,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 23,
+      "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "14-9",
       "duration": "7:00",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -1.08
+      "mv_impact": -1.25
     },
     {
       "date": "2025-12-06",
@@ -62,7 +68,8 @@
       "opponent_team": "Bardstown",
       "opponent_team_rank": 27,
       "opponent_weight": 165,
-      "opponent_rank": 42,
+      "opponent_rank": 54,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -77,13 +84,14 @@
       "opponent_team": "Mercer County",
       "opponent_team_rank": 48,
       "opponent_weight": 165,
-      "opponent_rank": 34,
+      "opponent_rank": 40,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:15",
       "event": "The Beast of the East",
-      "mv_impact": 6.94
+      "mv_impact": 6.83
     }
   ]
 }

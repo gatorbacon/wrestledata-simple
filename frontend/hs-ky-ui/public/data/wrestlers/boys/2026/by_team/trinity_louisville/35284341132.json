@@ -3,12 +3,12 @@
   "name": "Dillon Skyles",
   "team": "Trinity (Louisville)",
   "team_slug": "trinity_louisville",
-  "team_rank": 129,
+  "team_rank": 131,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 158,
   "record": {
-    "overall": "0-1",
+    "overall": "1-1",
     "vs_ranked": "0-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 91.8,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 90.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -41,19 +41,34 @@
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Pleasure Ridge Park"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35035263132",
       "opponent_name": "Jayden Raney",
       "opponent_team": "Union County",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 2,
       "opponent_weight": 138,
       "opponent_rank": 1,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Union County",
-      "mv_impact": -1.36
+      "event": "vs. Union County"
     }
   ]
 }

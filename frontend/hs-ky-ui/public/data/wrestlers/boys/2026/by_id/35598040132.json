@@ -3,13 +3,13 @@
   "name": "Michael Blevins",
   "team": "Trigg County",
   "team_slug": "trigg_county",
-  "team_rank": 128,
+  "team_rank": 130,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 77,
+  "current_rank": 117,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 102.8,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 101.6,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -27,11 +27,16 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35521775132",
+      "opponent_rank": 167,
+      "opponent_name": "Enrique Messer Cruz",
+      "method": "Fall 2:28"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -40,9 +45,10 @@
       "opponent_id": "35521775132",
       "opponent_name": "Enrique Messer Cruz",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 76,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 167,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -55,8 +61,9 @@
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -67,6 +74,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9833333333333333
+    "top33_bonus_ev_shrunk": 1.15
   }
 }

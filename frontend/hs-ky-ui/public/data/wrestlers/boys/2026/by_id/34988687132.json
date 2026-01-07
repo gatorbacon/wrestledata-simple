@@ -3,13 +3,13 @@
   "name": "Evan Graham",
   "team": "Christian County",
   "team_slug": "christian_county",
-  "team_rank": 20,
+  "team_rank": 35,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 53,
   "record": {
     "overall": "3-3",
-    "vs_ranked": "1-2",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 107.7,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 107.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,21 +27,21 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 3,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35490391132",
-      "opponent_rank": 95,
-      "opponent_name": "Cohen Griffin",
-      "method": "Fall 0:27"
+      "opponent_id": "35035616132",
+      "opponent_rank": 72,
+      "opponent_name": "Noah Greenwell",
+      "method": "Fall 2:23"
     },
     "worst_loss": {
-      "opponent_id": "34988698132",
-      "opponent_rank": 15,
-      "opponent_name": "DeAsian Harris",
-      "method": "Fall 0:11"
+      "opponent_id": "35208378132",
+      "opponent_rank": 46,
+      "opponent_name": "Braylen Neblett",
+      "method": "Fall 3:54"
     }
   },
   "match_list": [
@@ -50,95 +50,101 @@
       "opponent_id": "35566872132",
       "opponent_name": "Noah Bennett",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 51,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 158,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:25",
       "event": "Christian County Invitational",
-      "mv_impact": 0.82
+      "mv_impact": 2.08
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34988698132",
       "opponent_name": "DeAsian Harris",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 190,
-      "opponent_rank": 15,
+      "opponent_rank": 18,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:11",
       "event": "Christian County Invitational",
-      "mv_impact": -3.73
+      "mv_impact": -3.53
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35207985132",
       "opponent_name": "Brock Crook",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 190,
       "opponent_rank": 12,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
       "event": "Christian County Invitational",
-      "mv_impact": -1.87
+      "mv_impact": -1.76
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35208378132",
       "opponent_name": "Braylen Neblett",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 46,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:54",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": -3.51
+      "mv_impact": -5.14
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35490391132",
       "opponent_name": "Cohen Griffin",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 190,
-      "opponent_rank": 95,
+      "opponent_rank": 156,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:27",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 0.44
+      "mv_impact": 1.32
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35035616132",
       "opponent_name": "Noah Greenwell",
       "opponent_team": "Union County",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 2,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 72,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:23",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 4.99
+      "mv_impact": 4.71
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.0454545454545454
   }
 }

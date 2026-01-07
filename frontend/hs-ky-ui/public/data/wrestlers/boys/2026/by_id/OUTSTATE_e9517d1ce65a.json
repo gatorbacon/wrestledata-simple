@@ -3,13 +3,13 @@
   "name": "Kolten Crutcher",
   "team": "Henry Clay",
   "team_slug": "henry_clay",
-  "team_rank": 21,
+  "team_rank": 18,
   "weight_class": 132,
   "year": 2026,
   "current_rank": null,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35652144132",
+      "opponent_rank": 115,
+      "opponent_name": "Rylen Marks",
+      "method": "For."
+    }
   },
   "match_list": [
     {
@@ -40,9 +45,10 @@
       "opponent_id": "35652144132",
       "opponent_name": "Rylen Marks",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 4,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 115,
+      "weight_class": "132",
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -53,6 +59,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2115384615384615
+    "top33_bonus_ev_shrunk": 1.4615384615384615
   }
 }

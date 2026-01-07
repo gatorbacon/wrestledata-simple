@@ -3,23 +3,23 @@
   "name": "Jonathan Pitt",
   "team": "Seneca",
   "team_slug": "seneca",
-  "team_rank": 53,
+  "team_rank": 48,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 115,
+  "current_rank": 178,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-2",
+    "overall": "0-5",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 20.0,
     "pd7": -20.0,
-    "si_plus": 92.3,
-    "df_plus": 91.9,
-    "apr_plus": 90.0,
+    "si_plus": 90.6,
+    "df_plus": 90.8,
+    "apr_plus": 91.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,77 +28,97 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35084287132",
-      "opponent_rank": 24,
-      "opponent_name": "Scott Jennings",
-      "method": "TF 15-0 2:19"
+      "opponent_id": "34989974132",
+      "opponent_rank": 129,
+      "opponent_name": "DonJai Karnickey",
+      "method": "Fall 1:36"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35090038132",
+      "opponent_name": "Shoron Briscoe",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 74,
+      "opponent_weight": 215,
+      "opponent_rank": 51,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "vs. Seneca",
+      "mv_impact": -4.84
+    },
     {
       "date": "2025-12-10",
       "opponent_id": "35040585132",
       "opponent_name": "David Brown",
       "opponent_team": "Male",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 45,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 128,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:46",
       "event": "vs. Seneca",
-      "mv_impact": -9.03
+      "mv_impact": -9.52
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35084287132",
       "opponent_name": "Scott Jennings",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 28,
       "opponent_weight": 215,
-      "opponent_rank": 24,
+      "opponent_rank": 29,
+      "weight_class": "215",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "2:19",
       "event": "vs. Seneca",
-      "mv_impact": -2.74
+      "mv_impact": -2.75
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35090038132",
       "opponent_name": "Shoron Briscoe",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 74,
       "opponent_weight": 215,
-      "opponent_rank": 14,
+      "opponent_rank": 51,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Seneca",
-      "mv_impact": -3.36
+      "mv_impact": -4.84
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34989974132",
       "opponent_name": "DonJai Karnickey",
       "opponent_team": "Western",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 129,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:36",
       "event": "vs. Western",
-      "mv_impact": -9.95
+      "mv_impact": -9.34
     }
   ]
 }

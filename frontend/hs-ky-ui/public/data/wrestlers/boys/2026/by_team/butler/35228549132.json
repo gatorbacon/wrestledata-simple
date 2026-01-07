@@ -3,13 +3,13 @@
   "name": "Orion Phillips",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 66,
+  "team_rank": 61,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 58,
+  "current_rank": 63,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 111.6,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 110.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,15 +27,15 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35084067132",
-      "opponent_rank": 85,
-      "opponent_name": "Carmello Shirley",
-      "method": "Fall 0:00"
+      "opponent_id": "35321128132",
+      "opponent_rank": 121,
+      "opponent_name": "Luca Montefusco",
+      "method": "Fall 5:19"
     },
     "worst_loss": {
       "opponent_id": "35040568132",
@@ -50,45 +50,48 @@
       "opponent_id": "35084067132",
       "opponent_name": "Carmello Shirley",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 28,
       "opponent_weight": 150,
-      "opponent_rank": 85,
+      "opponent_rank": 122,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Butler",
-      "mv_impact": 2.22
+      "mv_impact": 2.38
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35321128132",
       "opponent_name": "Luca Montefusco",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_rank": 121,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:19",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 1.55
+      "mv_impact": 2.51
     },
     {
       "date": "2025-11-25",
       "opponent_id": "35040568132",
       "opponent_name": "Andrew Pomeroy",
       "opponent_team": "Male",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 45,
       "opponent_weight": 150,
       "opponent_rank": 4,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:29",
       "event": "vs. Male",
-      "mv_impact": -1.66
+      "mv_impact": -1.69
     }
   ]
 }

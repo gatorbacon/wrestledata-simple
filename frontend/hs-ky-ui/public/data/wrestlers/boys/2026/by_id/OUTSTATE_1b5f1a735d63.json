@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "4-1",
-    "vs_ranked": "2-0",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
     "vs_top25": "1-0"
   },
@@ -27,17 +27,22 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35144518132",
-      "opponent_rank": 18,
+      "opponent_rank": 13,
       "opponent_name": "Jace Detre",
       "method": "Dec 6-5"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35051528132",
+      "opponent_rank": 40,
+      "opponent_name": "Brandon Wiley",
+      "method": "MD 12-1"
+    }
   },
   "match_list": [
     {
@@ -45,9 +50,10 @@
       "opponent_id": "35119533132",
       "opponent_name": "Landon Wuellner",
       "opponent_team": "Conner",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 10,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 72,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -59,9 +65,10 @@
       "opponent_id": "35587762132",
       "opponent_name": "Dylan Brown",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 215,
-      "opponent_rank": 44,
+      "opponent_rank": 38,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -73,9 +80,10 @@
       "opponent_id": "35144518132",
       "opponent_name": "Jace Detre",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 36,
       "opponent_weight": 215,
-      "opponent_rank": 18,
+      "opponent_rank": 13,
+      "weight_class": "215",
       "result": "W",
       "method": "DEC",
       "score": "6-5",
@@ -87,9 +95,10 @@
       "opponent_id": "35521187132",
       "opponent_name": "Bennet Bowsher",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 124,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -101,9 +110,10 @@
       "opponent_id": "35051528132",
       "opponent_name": "Brandon Wiley",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 40,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 40,
+      "weight_class": "215",
       "result": "L",
       "method": "MD",
       "score": "12-1",
@@ -114,6 +124,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.48888888888888893
+    "top33_bonus_ev_shrunk": 0.6153846153846154
   }
 }

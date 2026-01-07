@@ -3,10 +3,10 @@
   "name": "Joshua Young",
   "team": "Desales",
   "team_slug": "desales",
-  "team_rank": 73,
+  "team_rank": 69,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 62,
+  "current_rank": 77,
   "record": {
     "overall": "2-1",
     "vs_ranked": "2-1",
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 112.7,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 112.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35321133132",
-      "opponent_rank": 71,
+      "opponent_rank": 115,
       "opponent_name": "Austin Young",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35135147132",
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "opponent_name": "Blake Luttrell",
       "method": "Fall 0:00"
     }
@@ -50,50 +50,53 @@
       "opponent_id": "35057129132",
       "opponent_name": "Donnie McCubbins",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 60,
       "opponent_weight": 144,
-      "opponent_rank": 88,
+      "opponent_rank": 135,
+      "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Desales",
-      "mv_impact": 2.03
+      "mv_impact": 1.52
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35135147132",
       "opponent_name": "Blake Luttrell",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 21,
       "opponent_weight": 144,
-      "opponent_rank": 6,
+      "opponent_rank": 5,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Fairdale",
-      "mv_impact": -1.82
+      "mv_impact": -1.71
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35321133132",
       "opponent_name": "Austin Young",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 144,
-      "opponent_rank": 71,
+      "opponent_rank": 115,
+      "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. North Bullitt",
-      "mv_impact": 3.86
+      "mv_impact": 3.67
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

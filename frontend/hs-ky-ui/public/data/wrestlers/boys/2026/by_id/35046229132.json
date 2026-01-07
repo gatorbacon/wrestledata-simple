@@ -3,10 +3,10 @@
   "name": "Deontre Marable",
   "team": "Jeffersontown",
   "team_slug": "jeffersontown",
-  "team_rank": 12,
+  "team_rank": 17,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 146,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 93.8,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 93.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35321132132",
-      "opponent_rank": 51,
+      "opponent_rank": 54,
       "opponent_name": "Nate Scott",
       "method": "Fall 2:17"
     }
@@ -45,35 +45,37 @@
       "opponent_id": "35237535132",
       "opponent_name": "Miles Smith",
       "opponent_team": "East Jessamine",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 24,
       "opponent_weight": 157,
-      "opponent_rank": 9,
+      "opponent_rank": 8,
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Jeffersontown",
-      "mv_impact": -1.96
+      "mv_impact": -2.09
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35321132132",
       "opponent_name": "Nate Scott",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 150,
-      "opponent_rank": 51,
+      "opponent_rank": 54,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:17",
       "event": "vs. North Bullitt",
-      "mv_impact": -6.38
+      "mv_impact": -6.35
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.9
   }
 }

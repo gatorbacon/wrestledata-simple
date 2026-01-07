@@ -3,13 +3,13 @@
   "name": "Brandon Riggins",
   "team": "South Oldham",
   "team_slug": "south_oldham",
-  "team_rank": 124,
+  "team_rank": 125,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 112,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 97.5,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 96.4,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35040561132",
+      "opponent_rank": 129,
+      "opponent_name": "Abdullah Mandou",
+      "method": "Fall 0:55"
+    },
     "worst_loss": {
       "opponent_id": "35033121132",
-      "opponent_rank": 45,
+      "opponent_rank": 80,
       "opponent_name": "Mohammad Al-Hassen",
       "method": "Fall 2:57"
     }
@@ -45,9 +50,10 @@
       "opponent_id": "34993525132",
       "opponent_name": "Gustavo Camarena",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 123,
       "opponent_weight": 190,
-      "opponent_rank": 31,
+      "opponent_rank": 39,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -59,9 +65,10 @@
       "opponent_id": "35033121132",
       "opponent_name": "Mohammad Al-Hassen",
       "opponent_team": "Tates Creek",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 129,
       "opponent_weight": 190,
-      "opponent_rank": 45,
+      "opponent_rank": 80,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -73,9 +80,10 @@
       "opponent_id": "35040561132",
       "opponent_name": "Abdullah Mandou",
       "opponent_team": "Tates Creek",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 129,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 129,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -87,9 +95,10 @@
       "opponent_id": "OUTSTATE_327b14aef0f7",
       "opponent_name": "Jackson Turner",
       "opponent_team": "Cooper",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 9,
       "opponent_weight": 190,
       "opponent_rank": null,
+      "weight_class": "190",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -100,6 +109,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.0454545454545454
   }
 }

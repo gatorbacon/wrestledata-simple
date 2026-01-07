@@ -3,23 +3,23 @@
   "name": "Kenny Lira",
   "team": "Calloway County",
   "team_slug": "calloway_county",
-  "team_rank": 68,
+  "team_rank": 63,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 71,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 115.2,
+    "pf7": 3.5,
+    "pa7": 25.0,
+    "pd7": -21.5,
+    "si_plus": 91.4,
+    "df_plus": 80.8,
+    "apr_plus": 98.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,32 +28,54 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35700434132",
-      "opponent_rank": 85,
+      "opponent_rank": 181,
       "opponent_name": "Lucas Shaheen",
       "method": "Fall 1:04"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34993276132",
+      "opponent_rank": 20,
+      "opponent_name": "Kobe Nichols",
+      "method": "TF 16-1 2:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34993276132",
+      "opponent_name": "Kobe Nichols",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 68,
+      "opponent_weight": 215,
+      "opponent_rank": 20,
+      "weight_class": "215",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "2:00",
+      "event": "2nd Annual Dickie Walls Invitational",
+      "mv_impact": -3.32
+    },
     {
       "date": "2025-11-29",
       "opponent_id": "35700434132",
       "opponent_name": "Lucas Shaheen",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 95,
-      "opponent_weight": 215,
-      "opponent_rank": 85,
+      "opponent_team_rank": 93,
+      "opponent_weight": 190,
+      "opponent_rank": 181,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:04",
       "event": "vs. John Hardin",
-      "mv_impact": 2.83
+      "mv_impact": 3.41
     }
   ]
 }

@@ -6,12 +6,12 @@
   "team_rank": null,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 16,
+  "current_rank": 17,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "4-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "2-2"
   },
   "metrics": {
     "pf7": 14.25,
@@ -27,14 +27,19 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 4,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35600316132",
+      "opponent_rank": 18,
+      "opponent_name": "karma taylor",
+      "method": "Fall 2:00"
+    },
     "worst_loss": {
       "opponent_id": "35448714132",
-      "opponent_rank": 17,
+      "opponent_rank": 19,
       "opponent_name": "Brooklyn Robinson",
       "method": "Fall 0:38"
     }
@@ -47,13 +52,14 @@
       "opponent_team": "Greenup County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 83,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Mason County",
-      "mv_impact": 5.63
+      "mv_impact": 5.57
     },
     {
       "date": "2025-12-06",
@@ -62,13 +68,14 @@
       "opponent_team": "Ashland Blazer",
       "opponent_team_rank": 24,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 67,
+      "weight_class": "126",
       "result": "W",
       "method": "TF",
       "score": "18-0",
       "duration": "2:55",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 3.98
+      "mv_impact": 3.9
     },
     {
       "date": "2025-12-06",
@@ -77,13 +84,14 @@
       "opponent_team": "Danville",
       "opponent_team_rank": 36,
       "opponent_weight": 126,
-      "opponent_rank": 17,
+      "opponent_rank": 19,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:38",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -4.52
+      "mv_impact": -4.45
     },
     {
       "date": "2025-12-06",
@@ -92,13 +100,14 @@
       "opponent_team": "Harrison County",
       "opponent_team_rank": 19,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 20,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:47",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 6.59
+      "mv_impact": 6.63
     },
     {
       "date": "2025-12-06",
@@ -108,12 +117,13 @@
       "opponent_team_rank": 49,
       "opponent_weight": 120,
       "opponent_rank": 15,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:07",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -4.71
+      "mv_impact": -4.68
     },
     {
       "date": "2025-12-06",
@@ -122,13 +132,14 @@
       "opponent_team": "Mccreary Central",
       "opponent_team_rank": 20,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 18,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 8.29
+      "mv_impact": 8.36
     }
   ],
   "bonus": {

@@ -3,23 +3,23 @@
   "name": "Tyler Beam",
   "team": "Male",
   "team_slug": "male",
-  "team_rank": 50,
+  "team_rank": 45,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 168,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-2",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 89.3,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 91.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,13 +28,13 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35407717132",
-      "opponent_rank": 77,
+      "opponent_rank": 125,
       "opponent_name": "Shane Espinoza",
       "method": "Fall 1:50"
     }
@@ -45,45 +45,48 @@
       "opponent_id": "35746154132",
       "opponent_name": "Isaiah Mitchell",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 78,
-      "opponent_weight": 138,
-      "opponent_rank": 25,
+      "opponent_team_rank": 73,
+      "opponent_weight": 132,
+      "opponent_rank": 86,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:23",
       "event": "The Beast of the East",
-      "mv_impact": -4.4
+      "mv_impact": -5.81
     },
     {
       "date": "2025-12-03",
       "opponent_id": "34997642132",
       "opponent_name": "Zashawn Matthews",
       "opponent_team": "Western",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 87,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:41",
       "event": "vs. Western",
-      "mv_impact": -7.19
+      "mv_impact": -7.12
     },
     {
       "date": "2025-11-25",
       "opponent_id": "35407717132",
       "opponent_name": "Shane Espinoza",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 17,
       "opponent_weight": 144,
-      "opponent_rank": 77,
+      "opponent_rank": 125,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:50",
       "event": "vs. Male",
-      "mv_impact": -9.33
+      "mv_impact": -9.42
     }
   ]
 }

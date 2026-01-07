@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,40 +27,52 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35567161132",
+      "opponent_rank": 156,
+      "opponent_name": "Chase Finley",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35674145132",
+      "opponent_rank": 193,
+      "opponent_name": "Caleb Hayden",
+      "method": "Dec 11-4"
+    }
   },
   "match_list": [
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35674145132",
-      "opponent_name": "Caleb Hayden",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": 41,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "result": "L",
-      "method": "DEC",
-      "score": "11-4",
-      "duration": "7:00",
-      "event": "vs. Tournament Allstars"
-    },
     {
       "date": "2025-11-29",
       "opponent_id": "35567161132",
       "opponent_name": "Chase Finley",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 56,
-      "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_team_rank": 51,
+      "opponent_weight": 132,
+      "opponent_rank": 156,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "vs. Tournament Allstars"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35674145132",
+      "opponent_name": "Caleb Hayden",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 38,
+      "opponent_weight": 132,
+      "opponent_rank": 193,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
       "event": "vs. Tournament Allstars"
     }
   ]

@@ -3,46 +3,82 @@
   "name": "Rage Henderson",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 13,
+  "team_rank": 27,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 7,
   "record": {
-    "overall": "3-0",
-    "vs_ranked": "0-0",
+    "overall": "6-0",
+    "vs_ranked": "5-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "3-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 110.9,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 115.2,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 5,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35051535132",
+      "opponent_rank": 14,
+      "opponent_name": "Elijah Huff",
+      "method": "Fall 0:39"
+    },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35081203132",
+      "opponent_name": "Jackson Kincer",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 18,
+      "opponent_weight": 215,
+      "opponent_rank": 23,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35051535132",
+      "opponent_name": "Elijah Huff",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 40,
+      "opponent_weight": 215,
+      "opponent_rank": 14,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "Warhawk Classic"
+    },
     {
       "date": "2025-12-23",
       "opponent_id": "34988691132",
       "opponent_name": "Cayden Hayden",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 125,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -50,13 +86,29 @@
       "event": "Christian County Invitational"
     },
     {
+      "date": "2025-12-23",
+      "opponent_id": "34993276132",
+      "opponent_name": "Kobe Nichols",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 68,
+      "opponent_weight": 215,
+      "opponent_rank": 20,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
+      "event": "Christian County Invitational"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35281687132",
       "opponent_name": "Joseph Schaefer",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 142,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -69,8 +121,9 @@
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "215",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -79,8 +132,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.55
+    "top33_wins": 3,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.7835497835497838
   }
 }

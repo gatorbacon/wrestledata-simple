@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,16 +24,16 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35663772132",
-      "opponent_rank": 92,
+      "opponent_rank": 43,
       "opponent_name": "Anthony Kemper",
       "method": "Fall 5:39"
     },
@@ -41,13 +41,29 @@
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35035547132",
+      "opponent_name": "Marcus McCormick",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 7,
+      "opponent_weight": 215,
+      "opponent_rank": 199,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:11",
+      "event": "Bob Kearns Invitational"
+    },
+    {
       "date": "2025-12-21",
       "opponent_id": "35663772132",
       "opponent_name": "Anthony Kemper",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
-      "opponent_weight": 215,
-      "opponent_rank": 92,
+      "opponent_team_rank": 13,
+      "opponent_weight": 175,
+      "opponent_rank": 43,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -58,6 +74,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.55
+    "top33_bonus_ev_shrunk": 0.6923076923076923
   }
 }

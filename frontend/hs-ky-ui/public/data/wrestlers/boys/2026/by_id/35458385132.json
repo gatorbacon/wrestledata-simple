@@ -3,46 +3,117 @@
   "name": "Andrew Meade",
   "team": "Letcher County Central",
   "team_slug": "letcher_county_central",
-  "team_rank": 100,
-  "weight_class": 150,
+  "team_rank": 98,
+  "weight_class": 144,
   "year": 2026,
-  "current_rank": 52,
+  "current_rank": 82,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "0-0",
+    "overall": "3-3",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 119.4,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pa7": 13.0,
+    "pd7": -13.0,
+    "si_plus": 87.9,
+    "df_plus": 95.7,
+    "apr_plus": 103.8,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35513070132",
+      "opponent_rank": 83,
+      "opponent_name": "Trenton Williamson",
+      "method": "Fall 3:31"
+    },
+    "worst_loss": {
+      "opponent_id": "36019587132",
+      "opponent_rank": 33,
+      "opponent_name": "Carter Stewart",
+      "method": "MD 13-0"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "36019587132",
+      "opponent_name": "Carter Stewart",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 52,
+      "opponent_weight": 144,
+      "opponent_rank": 33,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "13-0",
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35513070132",
+      "opponent_name": "Trenton Williamson",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 55,
+      "opponent_weight": 144,
+      "opponent_rank": 83,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:31",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35732594132",
+      "opponent_name": "Jeremy Begley",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 144,
+      "opponent_rank": 18,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35122068132",
+      "opponent_name": "Paxton Slayton",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 144,
+      "opponent_rank": 29,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:15",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "150",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -56,7 +127,8 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 113,
       "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_rank": 92,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -67,6 +139,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8333333333333334
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

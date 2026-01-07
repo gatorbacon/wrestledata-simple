@@ -3,13 +3,13 @@
   "name": "Elias Blakney",
   "team": "Union County",
   "team_slug": "union_county",
-  "team_rank": 3,
+  "team_rank": 2,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 68,
   "record": {
     "overall": "5-0",
-    "vs_ranked": "3-0",
+    "vs_ranked": "5-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 8.0,
     "pa7": 5.0,
     "pd7": 3.0,
-    "si_plus": 95.1,
-    "df_plus": 102.8,
-    "apr_plus": 109.4,
+    "si_plus": 102.8,
+    "df_plus": 100.7,
+    "apr_plus": 108.7,
     "pin_rate": 0.6,
     "bonus_rate": 0.6,
     "majors": 0,
@@ -27,15 +27,15 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 5,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35678113132",
-      "opponent_rank": 69,
-      "opponent_name": "Brayden Ratliff",
-      "method": "Dec 6-3"
+      "opponent_id": "35221010132",
+      "opponent_rank": 82,
+      "opponent_name": "Jared Basco",
+      "method": "Dec 10-7"
     },
     "worst_loss": null
   },
@@ -45,80 +45,85 @@
       "opponent_id": "34988682132",
       "opponent_name": "CJ Thacker",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 114,
+      "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:40",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 1.89
+      "mv_impact": 2.45
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35281689132",
       "opponent_name": "Ethan Wilson",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 157,
-      "opponent_rank": 80,
+      "opponent_rank": 115,
+      "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:25",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 2.64
+      "mv_impact": 2.76
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35221010132",
       "opponent_name": "Jared Basco",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 82,
+      "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "10-7",
       "duration": "7:00",
       "event": "vs. Union County",
-      "mv_impact": 1.21
+      "mv_impact": 1.07
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35678113132",
       "opponent_name": "Brayden Ratliff",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 157,
-      "opponent_rank": 69,
+      "opponent_rank": 93,
+      "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
       "event": "vs. Union County",
-      "mv_impact": 1.76
+      "mv_impact": 1.8
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35281689132",
       "opponent_name": "Ethan Wilson",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 157,
-      "opponent_rank": 80,
+      "opponent_rank": 115,
+      "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Union County",
-      "mv_impact": 2.64
+      "mv_impact": 2.76
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.9
   }
 }

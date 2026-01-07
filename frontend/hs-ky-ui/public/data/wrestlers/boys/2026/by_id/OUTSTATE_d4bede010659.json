@@ -11,7 +11,7 @@
     "overall": "1-1",
     "vs_ranked": "1-1",
     "vs_top10": "0-1",
-    "vs_top25": "1-1"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -33,7 +33,7 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34993735132",
-      "opponent_rank": 16,
+      "opponent_rank": 35,
       "opponent_name": "CJ White",
       "method": "Fall 4:43"
     },
@@ -50,9 +50,10 @@
       "opponent_id": "34993735132",
       "opponent_name": "CJ White",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 4,
       "opponent_weight": 285,
-      "opponent_rank": 16,
+      "opponent_rank": 35,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -64,9 +65,10 @@
       "opponent_id": "35562979132",
       "opponent_name": "Ethan Harris",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 22,
       "opponent_weight": 285,
       "opponent_rank": 9,
+      "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": null,
@@ -75,8 +77,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.0814814814814815
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3333333333333333
   }
 }

@@ -3,23 +3,23 @@
   "name": "Luhkman Hassan",
   "team": "Jeffersontown",
   "team_slug": "jeffersontown",
-  "team_rank": 12,
+  "team_rank": 17,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 100,
+  "current_rank": 149,
   "record": {
     "overall": "1-6",
-    "vs_ranked": "0-5",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 95.3,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 94.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35248946132",
+      "opponent_rank": 138,
+      "opponent_name": "Elliot Hood",
+      "method": "Fall 1:39"
+    },
     "worst_loss": {
       "opponent_id": "35325215132",
-      "opponent_rank": 102,
+      "opponent_rank": 141,
       "opponent_name": "Brayden Armfield",
       "method": "Fall 0:00"
     }
@@ -45,105 +50,112 @@
       "opponent_id": "34995989132",
       "opponent_name": "Grayson Malicoat",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 56,
       "opponent_weight": 175,
-      "opponent_rank": 42,
+      "opponent_rank": 52,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Jeffersontown",
-      "mv_impact": -4.85
+      "mv_impact": -5.67
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35281176132",
       "opponent_name": "Aiden Farley",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 59,
       "opponent_weight": 175,
-      "opponent_rank": null,
+      "opponent_rank": 110,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Jeffersontown",
-      "mv_impact": -7.47
+      "mv_impact": -7.81
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35237537132",
       "opponent_name": "CJ Coffey",
       "opponent_team": "East Jessamine",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 24,
       "opponent_weight": 175,
-      "opponent_rank": 54,
+      "opponent_rank": 62,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Jeffersontown",
-      "mv_impact": -4.77
+      "mv_impact": -5.16
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35325215132",
       "opponent_name": "Brayden Armfield",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 101,
       "opponent_weight": 175,
-      "opponent_rank": 102,
+      "opponent_rank": 141,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Madison Southern",
-      "mv_impact": -10.88
+      "mv_impact": -10.33
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35321119132",
       "opponent_name": "Trent Pierce",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 190,
-      "opponent_rank": 22,
+      "opponent_rank": 28,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:34",
       "event": "vs. North Bullitt",
-      "mv_impact": -3.82
+      "mv_impact": -3.88
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35248946132",
       "opponent_name": "Elliot Hood",
       "opponent_team": "Western",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 138,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:39",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 0.24
+      "mv_impact": 1.5
     },
     {
       "date": "2025-11-25",
       "opponent_id": "35383877132",
       "opponent_name": "Donovan Covington",
       "opponent_team": "Male",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 45,
       "opponent_weight": 190,
-      "opponent_rank": 77,
+      "opponent_rank": 104,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:28",
       "event": "vs. Male",
-      "mv_impact": -8.09
+      "mv_impact": -8.05
     }
   ]
 }

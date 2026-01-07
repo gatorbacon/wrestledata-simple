@@ -3,13 +3,13 @@
   "name": "Nolan Glass",
   "team": "Male",
   "team_slug": "male",
-  "team_rank": 50,
+  "team_rank": 45,
   "weight_class": 285,
   "year": 2026,
   "current_rank": null,
   "record": {
     "overall": "1-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,11 +27,16 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35746245132",
+      "opponent_rank": 196,
+      "opponent_name": "Xavier Jordan",
+      "method": "For."
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -40,9 +45,10 @@
       "opponent_id": "35746245132",
       "opponent_name": "Xavier Jordan",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 73,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 196,
+      "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": null,

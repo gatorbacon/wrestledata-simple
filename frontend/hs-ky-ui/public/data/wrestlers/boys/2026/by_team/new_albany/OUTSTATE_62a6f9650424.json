@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-2",
-    "vs_ranked": "2-2",
+    "overall": "3-2",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
-    "vs_top25": "1-2"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,35 +24,51 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35226198132",
-      "opponent_rank": 25,
+      "opponent_rank": 40,
       "opponent_name": "Bryce Alford",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35519922132",
-      "opponent_rank": 22,
+      "opponent_rank": 19,
       "opponent_name": "Payton Conner",
       "method": "Fall 0:09"
     }
   },
   "match_list": [
     {
+      "date": "2025-12-20",
+      "opponent_id": "35907871132",
+      "opponent_name": "Luke Turley",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": 112,
+      "opponent_weight": 144,
+      "opponent_rank": 142,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
+      "event": "Phil Thrasher Tournament"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35267060132",
       "opponent_name": "Finn Aranilla",
       "opponent_team": "Western Hills",
-      "opponent_team_rank": 135,
+      "opponent_team_rank": 137,
       "opponent_weight": 138,
-      "opponent_rank": 76,
+      "opponent_rank": 88,
+      "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -64,9 +80,10 @@
       "opponent_id": "35144512132",
       "opponent_name": "Joseph Kresel",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 36,
       "opponent_weight": 144,
-      "opponent_rank": 21,
+      "opponent_rank": 17,
+      "weight_class": "144",
       "result": "L",
       "method": "MD",
       "score": "16-4",
@@ -78,9 +95,10 @@
       "opponent_id": "35519922132",
       "opponent_name": "Payton Conner",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 106,
       "opponent_weight": 144,
-      "opponent_rank": 22,
+      "opponent_rank": 19,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -94,7 +112,8 @@
       "opponent_team": "Nelson County",
       "opponent_team_rank": 29,
       "opponent_weight": 144,
-      "opponent_rank": 25,
+      "opponent_rank": 40,
+      "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,

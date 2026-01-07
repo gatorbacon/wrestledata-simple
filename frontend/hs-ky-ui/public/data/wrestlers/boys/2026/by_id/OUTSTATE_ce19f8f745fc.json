@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35049797132",
-      "opponent_rank": 36,
+      "opponent_rank": 44,
       "opponent_name": "Logan Mongold",
       "method": "Dec 14-8"
     },
     "worst_loss": {
       "opponent_id": "35281671132",
-      "opponent_rank": 12,
+      "opponent_rank": 16,
       "opponent_name": "Benjamin Kale",
       "method": "Fall 0:42"
     }
@@ -50,9 +50,10 @@
       "opponent_id": "35208147132",
       "opponent_name": "Aldon Hammers",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 126,
-      "opponent_rank": 83,
+      "opponent_rank": 115,
+      "weight_class": "132",
       "result": "W",
       "method": "DEC",
       "score": "10-3",
@@ -61,36 +62,38 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35281671132",
-      "opponent_name": "Benjamin Kale",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
-      "opponent_weight": 132,
-      "opponent_rank": 12,
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:42",
-      "event": "vs. Riverton Parke"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35049797132",
       "opponent_name": "Logan Mongold",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 110,
-      "opponent_weight": 132,
-      "opponent_rank": 36,
+      "opponent_team_rank": 30,
+      "opponent_weight": 126,
+      "opponent_rank": 44,
+      "weight_class": "132",
       "result": "W",
       "method": "DEC",
       "score": "14-8",
       "duration": "7:00",
+      "event": "vs. Riverton Parke"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35281671132",
+      "opponent_name": "Benjamin Kale",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 132,
+      "opponent_rank": 16,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:42",
       "event": "vs. Riverton Parke"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2115384615384615
+    "top33_bonus_ev_shrunk": 1.4615384615384615
   }
 }

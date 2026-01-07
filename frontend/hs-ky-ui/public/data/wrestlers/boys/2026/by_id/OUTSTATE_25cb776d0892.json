@@ -3,13 +3,13 @@
   "name": "Ayden Sorrels",
   "team": "Eastern",
   "team_slug": "eastern",
-  "team_rank": 78,
+  "team_rank": 73,
   "weight_class": 190,
   "year": 2026,
   "current_rank": null,
   "record": {
     "overall": "1-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,11 +27,16 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35040587132",
+      "opponent_rank": 170,
+      "opponent_name": "Camden Chee",
+      "method": "For."
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -40,9 +45,10 @@
       "opponent_id": "35040587132",
       "opponent_name": "Camden Chee",
       "opponent_team": "Male",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 45,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 170,
+      "weight_class": "190",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -53,6 +59,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.0454545454545454
   }
 }

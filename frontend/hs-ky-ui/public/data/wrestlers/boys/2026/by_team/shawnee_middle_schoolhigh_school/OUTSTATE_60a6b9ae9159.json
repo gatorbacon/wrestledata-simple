@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35225209132",
+      "opponent_rank": 97,
+      "opponent_name": "Micheal Berry",
+      "method": "Fall 4:54"
+    }
   },
   "match_list": [
     {
@@ -40,9 +45,10 @@
       "opponent_id": "35225209132",
       "opponent_name": "Micheal Berry",
       "opponent_team": "Scott",
-      "opponent_team_rank": 121,
+      "opponent_team_rank": 122,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 97,
+      "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,

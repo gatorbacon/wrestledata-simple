@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,40 +28,32 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35520916132",
-      "opponent_rank": 65,
+      "opponent_rank": 82,
       "opponent_name": "Isaac Mangin",
       "method": "Fall 0:43"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35051528132",
+      "opponent_rank": 40,
+      "opponent_name": "Brandon Wiley",
+      "method": "Fall 0:30"
+    }
   },
   "match_list": [
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35520916132",
-      "opponent_name": "Isaac Mangin",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": 39,
-      "opponent_weight": 215,
-      "opponent_rank": 65,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:43",
-      "event": "vs. Charlestown"
-    },
     {
       "date": "2025-12-06",
       "opponent_id": "35226392132",
       "opponent_name": "Aaron Thompson",
       "opponent_team": "Nelson County",
       "opponent_team_rank": 29,
-      "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": 33,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -70,12 +62,28 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35520916132",
+      "opponent_name": "Isaac Mangin",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 106,
+      "opponent_weight": 215,
+      "opponent_rank": 82,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "vs. Charlestown"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35051528132",
       "opponent_name": "Brandon Wiley",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 40,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 40,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -86,6 +94,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.55
+    "top33_bonus_ev_shrunk": 0.6923076923076923
   }
 }

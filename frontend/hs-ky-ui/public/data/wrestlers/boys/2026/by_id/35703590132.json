@@ -3,13 +3,13 @@
   "name": "Max Strong",
   "team": "Floyd Central",
   "team_slug": "floyd_central",
-  "team_rank": 79,
+  "team_rank": 75,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 72,
+  "current_rank": 104,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "1-0",
+    "overall": "3-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,27 +17,32 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 105.5,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 105.4,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35913093132",
-      "opponent_rank": 84,
+      "opponent_rank": 160,
       "opponent_name": "Berik Queen",
       "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34997620132",
+      "opponent_rank": 97,
+      "opponent_name": "Hunter Pitman",
+      "method": "Fall 3:54"
+    }
   },
   "match_list": [
     {
@@ -45,30 +50,45 @@
       "opponent_id": "35913093132",
       "opponent_name": "Berik Queen",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 55,
       "opponent_weight": 175,
-      "opponent_rank": 84,
+      "opponent_rank": 160,
+      "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Floyd Central",
-      "mv_impact": 3.39
+      "event": "vs. Floyd Central"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Knott County Central"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34997620132",
       "opponent_name": "Hunter Pitman",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 45,
-      "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_team_rank": 41,
+      "opponent_weight": 157,
+      "opponent_rank": 97,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:54",
-      "event": "Cougar Classic",
-      "mv_impact": -7.83
+      "event": "Cougar Classic"
     },
     {
       "date": "2025-11-29",
@@ -77,18 +97,18 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 113,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 178,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:59",
-      "event": "Cougar Classic",
-      "mv_impact": 1.5
+      "event": "Cougar Classic"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9833333333333333
+    "top33_bonus_ev_shrunk": 1.15
   }
 }

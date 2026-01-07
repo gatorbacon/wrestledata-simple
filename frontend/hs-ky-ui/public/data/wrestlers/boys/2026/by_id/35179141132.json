@@ -3,10 +3,10 @@
   "name": "Jacob Sandidge",
   "team": "Campbellsville",
   "team_slug": "campbellsville",
-  "team_rank": 69,
+  "team_rank": 64,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 82,
+  "current_rank": 100,
   "record": {
     "overall": "1-1",
     "vs_ranked": "1-1",
@@ -17,9 +17,9 @@
     "pf7": 1.0,
     "pa7": 16.0,
     "pd7": -15.0,
-    "si_plus": 90.6,
-    "df_plus": 94.0,
-    "apr_plus": 92.0,
+    "si_plus": 87.4,
+    "df_plus": 93.4,
+    "apr_plus": 91.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35575542132",
-      "opponent_rank": 112,
+      "opponent_rank": 169,
       "opponent_name": "Samuel Sigurbjartsson",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35223094132",
-      "opponent_rank": 82,
+      "opponent_rank": 110,
       "opponent_name": "William Skaggs",
       "method": "TF 16-1 0:00"
     }
@@ -50,35 +50,37 @@
       "opponent_id": "35575542132",
       "opponent_name": "Samuel Sigurbjartsson",
       "opponent_team": "Green County",
-      "opponent_team_rank": 85,
+      "opponent_team_rank": 82,
       "opponent_weight": 138,
-      "opponent_rank": 112,
+      "opponent_rank": 169,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Green County",
-      "mv_impact": 1.4
+      "mv_impact": 0.88
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35223094132",
       "opponent_name": "William Skaggs",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 86,
       "opponent_weight": 132,
-      "opponent_rank": 82,
+      "opponent_rank": 110,
+      "weight_class": "132",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "0:00",
       "event": "vs. Hart County",
-      "mv_impact": -8.55
+      "mv_impact": -8.26
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5555555555555556
+    "top33_bonus_ev_shrunk": 0.8571428571428571
   }
 }

@@ -3,23 +3,23 @@
   "name": "Mason Baldwin",
   "team": "Belfry",
   "team_slug": "belfry",
-  "team_rank": 60,
-  "weight_class": 113,
+  "team_rank": 55,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 63,
+  "current_rank": 115,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "1-2",
+    "overall": "1-6",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 20.0,
-    "pd7": -20.0,
-    "si_plus": 90.7,
-    "df_plus": 93.7,
-    "apr_plus": 92.0,
+    "pf7": 2.16,
+    "pa7": 21.25,
+    "pd7": -19.09,
+    "si_plus": 86.7,
+    "df_plus": 89.7,
+    "apr_plus": 91.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,23 +28,87 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35013059132",
-      "opponent_rank": 85,
+      "opponent_rank": 116,
       "opponent_name": "Makenzie Collins",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35030252132",
-      "opponent_rank": 30,
-      "opponent_name": "Quentin Troxell",
-      "method": "Fall 1:33"
+      "opponent_id": "35909041132",
+      "opponent_rank": 114,
+      "opponent_name": "Waylon Hudson",
+      "method": "TF 17-2 3:50"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35133611132",
+      "opponent_name": "Christon Johnson",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 91,
+      "opponent_weight": 120,
+      "opponent_rank": 74,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Hopkinsville",
+      "mv_impact": -6.54
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35144516132",
+      "opponent_name": "Liam Ditto",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 120,
+      "opponent_rank": 15,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "20-5",
+      "duration": "0:00",
+      "event": "vs. LaRue County",
+      "mv_impact": -3.86
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35909041132",
+      "opponent_name": "Waylon Hudson",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 120,
+      "opponent_weight": 120,
+      "opponent_rank": 114,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "3:50",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -8.37
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35144516132",
+      "opponent_name": "Liam Ditto",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 120,
+      "opponent_rank": 15,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -4.86
+    },
     {
       "date": "2025-12-16",
       "opponent_id": "35013059132",
@@ -52,13 +116,14 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 113,
       "opponent_weight": 120,
-      "opponent_rank": 85,
+      "opponent_rank": 116,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Perry County Central",
-      "mv_impact": 0.83
+      "mv_impact": 2.23
     },
     {
       "date": "2025-12-06",
@@ -68,32 +133,34 @@
       "opponent_team_rank": 118,
       "opponent_weight": 113,
       "opponent_rank": 30,
+      "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:33",
       "event": "Anchor Down Showdown",
-      "mv_impact": -5.14
+      "mv_impact": -4.78
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35420468132",
       "opponent_name": "Nicolas Dotson",
       "opponent_team": "Whitley County",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 138,
       "opponent_weight": 113,
       "opponent_rank": 29,
+      "weight_class": "113",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:16",
       "event": "Anchor Down Showdown",
-      "mv_impact": -4.64
+      "mv_impact": -4.53
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9090909090909091
+    "top33_bonus_ev_shrunk": 1.3035714285714286
   }
 }

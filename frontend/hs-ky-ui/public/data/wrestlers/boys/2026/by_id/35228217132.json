@@ -3,13 +3,13 @@
   "name": "Aria McFarland",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 66,
-  "weight_class": 190,
+  "team_rank": 61,
+  "weight_class": 175,
   "year": 2026,
-  "current_rank": 43,
+  "current_rank": 203,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 111.4,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 110.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,19 +27,19 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35768251132",
-      "opponent_rank": 100,
-      "opponent_name": "Symphanie Sharrock",
-      "method": "Fall 0:37"
+      "opponent_id": "35205989132",
+      "opponent_rank": 101,
+      "opponent_name": "Jaycee Foley",
+      "method": "Fall 2:43"
     },
     "worst_loss": {
       "opponent_id": "35247926132",
-      "opponent_rank": 61,
+      "opponent_rank": 87,
       "opponent_name": "Sunai Barney",
       "method": "Fall 3:14"
     }
@@ -50,65 +50,69 @@
       "opponent_id": "35768251132",
       "opponent_name": "Symphanie Sharrock",
       "opponent_team": "Fort Knox",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 77,
       "opponent_weight": 190,
-      "opponent_rank": 100,
+      "opponent_rank": 162,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:37",
       "event": "The Beast of the East",
-      "mv_impact": 1.16
+      "mv_impact": 2.4
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35205989132",
       "opponent_name": "Jaycee Foley",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 108,
+      "opponent_team_rank": 107,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 101,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:43",
       "event": "The Beast of the East",
-      "mv_impact": 3.37
+      "mv_impact": 3.34
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35247926132",
       "opponent_name": "Sunai Barney",
       "opponent_team": "Western",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 215,
-      "opponent_rank": 61,
+      "opponent_rank": 87,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:14",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": -6.52
+      "mv_impact": -7.74
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34997633132",
       "opponent_name": "Sandra Francis",
       "opponent_team": "Western",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 109,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:34",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 4.41
+      "mv_impact": 3.63
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.09375
   }
 }

@@ -583,22 +583,54 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
             valid_weights = []
         
         # Check for moving DOWN (to lower weight)
+        # Check ALL lower weights, not just adjacent
         if current_weight_int and valid_weights:
             current_idx = valid_weights.index(current_weight_int) if current_weight_int in valid_weights else -1
             if current_idx > 0:
-                lower_weight = str(valid_weights[current_idx - 1])
-                count_at_lower = weight_counts.get(lower_weight, 0)
-                if count_at_lower >= 3:  # ≥3 of last 7 at lower weight
-                    return lower_weight
+                # Check all weights below current weight
+                best_lower_weight = None
+                best_lower_count = 0
+                
+                for i in range(current_idx - 1, -1, -1):  # Check from adjacent down to lowest
+                    lower_weight = str(valid_weights[i])
+                    count_at_lower = weight_counts.get(lower_weight, 0)
+                    if count_at_lower >= 3:  # Threshold met
+                        # Prefer the weight with highest count, or closest if tied
+                        if count_at_lower > best_lower_count:
+                            best_lower_weight = lower_weight
+                            best_lower_count = count_at_lower
+                        elif count_at_lower == best_lower_count and best_lower_weight:
+                            # If tied, prefer the one closer to current weight (higher weight)
+                            if int(lower_weight) > int(best_lower_weight):
+                                best_lower_weight = lower_weight
+                
+                if best_lower_weight:
+                    return best_lower_weight
         
         # Check for moving UP (to higher weight)
+        # Check ALL higher weights, not just adjacent
         if current_weight_int and valid_weights:
             current_idx = valid_weights.index(current_weight_int) if current_weight_int in valid_weights else -1
             if current_idx >= 0 and current_idx < len(valid_weights) - 1:
-                higher_weight = str(valid_weights[current_idx + 1])
-                count_at_higher = weight_counts.get(higher_weight, 0)
-                if count_at_higher >= 6:  # ≥6 of last 7 at higher weight
-                    return higher_weight
+                # Check all weights above current weight
+                best_higher_weight = None
+                best_higher_count = 0
+                
+                for i in range(current_idx + 1, len(valid_weights)):  # Check from adjacent up to highest
+                    higher_weight = str(valid_weights[i])
+                    count_at_higher = weight_counts.get(higher_weight, 0)
+                    if count_at_higher >= 6:  # Threshold met
+                        # Prefer the weight with highest count, or closest if tied
+                        if count_at_higher > best_higher_count:
+                            best_higher_weight = higher_weight
+                            best_higher_count = count_at_higher
+                        elif count_at_higher == best_higher_count and best_higher_weight:
+                            # If tied, prefer the one closer to current weight (lower weight)
+                            if int(higher_weight) < int(best_higher_weight):
+                                best_higher_weight = higher_weight
+                
+                if best_higher_weight:
+                    return best_higher_weight
         
         # No threshold met
         return None

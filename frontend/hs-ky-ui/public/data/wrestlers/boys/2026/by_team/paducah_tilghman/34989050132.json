@@ -3,13 +3,13 @@
   "name": "Christopher Moore",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 13,
+  "team_rank": 27,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 53,
+  "current_rank": 65,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "1-3",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 101.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 97.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,19 +27,19 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34988694132",
-      "opponent_rank": 62,
+      "opponent_rank": 76,
       "opponent_name": "Hunter Jorgenson",
       "method": "Fall 0:43"
     },
     "worst_loss": {
       "opponent_id": "35002891132",
-      "opponent_rank": 40,
+      "opponent_rank": 43,
       "opponent_name": "Andy Cintron",
       "method": "Fall 0:40"
     }
@@ -50,75 +50,80 @@
       "opponent_id": "34988694132",
       "opponent_name": "Hunter Jorgenson",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 120,
-      "opponent_rank": 62,
+      "opponent_rank": 76,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:43",
       "event": "Christian County Invitational",
-      "mv_impact": 3.12
+      "mv_impact": 4.15
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35002891132",
       "opponent_name": "Andy Cintron",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 76,
       "opponent_weight": 120,
-      "opponent_rank": 40,
+      "opponent_rank": 43,
+      "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:40",
       "event": "Christian County Invitational",
-      "mv_impact": -6.03
+      "mv_impact": -5.48
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35208209132",
       "opponent_name": "KaShaun Taylor",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 88,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 85,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:19",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 2.51
+      "mv_impact": 3.28
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35281677132",
       "opponent_name": "Taylor Stroud",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 120,
       "opponent_rank": 33,
+      "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:42",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": -3.91
+      "mv_impact": -3.5
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35281677132",
       "opponent_name": "Taylor Stroud",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 120,
       "opponent_rank": 33,
+      "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Paducah Tilghman",
-      "mv_impact": -3.91
+      "mv_impact": -3.5
     }
   ]
 }

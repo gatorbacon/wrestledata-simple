@@ -6,10 +6,10 @@
   "team_rank": 23,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 47,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -27,11 +27,16 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35510940132",
+      "opponent_rank": 56,
+      "opponent_name": "Addison Collins",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "35343525132",
       "opponent_rank": 3,
@@ -47,7 +52,8 @@
       "opponent_team": "John Hardin",
       "opponent_team_rank": 4,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 56,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -63,12 +69,13 @@
       "opponent_team_rank": 10,
       "opponent_weight": 132,
       "opponent_rank": 3,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Henderson County",
-      "mv_impact": -1.75
+      "mv_impact": -1.88
     }
   ],
   "bonus": {

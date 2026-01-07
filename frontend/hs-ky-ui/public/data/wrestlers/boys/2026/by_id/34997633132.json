@@ -3,13 +3,13 @@
   "name": "Sandra Francis",
   "team": "Western",
   "team_slug": "western",
-  "team_rank": 35,
+  "team_rank": 34,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 109,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 95.7,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 95.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,14 +27,19 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35281621132",
+      "opponent_rank": 160,
+      "opponent_name": "Selena Avila",
+      "method": "Fall 0:32"
+    },
     "worst_loss": {
       "opponent_id": "35228217132",
-      "opponent_rank": 43,
+      "opponent_rank": 203,
       "opponent_name": "Aria McFarland",
       "method": "Fall 0:34"
     }
@@ -45,50 +50,53 @@
       "opponent_id": "35228217132",
       "opponent_name": "Aria McFarland",
       "opponent_team": "Butler",
-      "opponent_team_rank": 66,
-      "opponent_weight": 190,
-      "opponent_rank": 43,
+      "opponent_team_rank": 61,
+      "opponent_weight": 175,
+      "opponent_rank": 203,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:34",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": -5.51
+      "mv_impact": -11.08
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35281615132",
       "opponent_name": "Lillth Poole",
       "opponent_team": "Southern",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 167,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:50",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 3.4
+      "mv_impact": 1.23
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35281621132",
       "opponent_name": "Selena Avila",
       "opponent_team": "Southern",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 160,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:32",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 2.84
+      "mv_impact": 1.3
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.55
+    "top33_bonus_ev_shrunk": 0.6923076923076923
   }
 }

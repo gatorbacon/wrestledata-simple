@@ -3,13 +3,13 @@
   "name": "Charisma Kunkel",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 55,
+  "team_rank": 50,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 49,
+  "current_rank": 58,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "1-0",
+    "overall": "3-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,23 +17,23 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 116.4,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 115.4,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35637316132",
-      "opponent_rank": 70,
+      "opponent_rank": 76,
       "opponent_name": "Mason Hargrove",
       "method": "Fall 0:00"
     },
@@ -46,8 +46,9 @@
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "113",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -55,13 +56,29 @@
       "event": "vs. Pulaski County"
     },
     {
+      "date": "2025-12-20",
+      "opponent_id": "35637316132",
+      "opponent_name": "Mason Hargrove",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 113,
+      "opponent_rank": 76,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County"
+    },
+    {
       "date": "2025-12-09",
       "opponent_id": "35637316132",
       "opponent_name": "Mason Hargrove",
       "opponent_team": "Russell County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 19,
       "opponent_weight": 113,
-      "opponent_rank": 70,
+      "opponent_rank": 76,
+      "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -72,6 +89,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9090909090909091
+    "top33_bonus_ev_shrunk": 1.4285714285714286
   }
 }

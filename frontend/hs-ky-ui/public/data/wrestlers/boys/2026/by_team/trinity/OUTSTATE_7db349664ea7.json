@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-0",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,19 +20,29 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34997614132",
+      "opponent_rank": 108,
+      "opponent_name": "Eli Troglen",
+      "method": "Fall 0:29"
+    },
+    "worst_loss": {
+      "opponent_id": "35084075132",
+      "opponent_rank": 93,
+      "opponent_name": "Mohammad Addi",
+      "method": "Fall 2:03"
+    }
   },
   "match_list": [
     {
@@ -40,9 +50,10 @@
       "opponent_id": "35084075132",
       "opponent_name": "Mohammad Addi",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 43,
-      "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_team_rank": 28,
+      "opponent_weight": 132,
+      "opponent_rank": 93,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -56,11 +67,27 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 56,
+      "weight_class": "138",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34997614132",
+      "opponent_name": "Eli Troglen",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 41,
+      "opponent_weight": 138,
+      "opponent_rank": 108,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
       "event": "5th Annual Cardinal Clash"
     }
   ]

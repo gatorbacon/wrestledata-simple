@@ -6,10 +6,10 @@
   "team_rank": 51,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 34,
+  "current_rank": 41,
   "record": {
     "overall": "5-1",
-    "vs_ranked": "4-0",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35639208132",
-      "opponent_rank": 31,
+      "opponent_rank": 37,
       "opponent_name": "Myka Collins",
       "method": "Fall 1:43"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35369125132",
+      "opponent_rank": 35,
+      "opponent_name": "Sidney Young",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
     {
@@ -47,7 +52,8 @@
       "opponent_team": "Belfry",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 41,
+      "opponent_rank": 50,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -62,6 +68,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 114,
       "opponent_rank": null,
+      "weight_class": "120",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -75,7 +82,8 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 12,
       "opponent_weight": 132,
-      "opponent_rank": 39,
+      "opponent_rank": 42,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -89,7 +97,8 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 51,
       "opponent_weight": 138,
-      "opponent_rank": 31,
+      "opponent_rank": 37,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -103,7 +112,8 @@
       "opponent_team": "Pulaski County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 45,
+      "opponent_rank": 60,
+      "weight_class": "145",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -117,7 +127,8 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 6,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 35,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,

@@ -3,13 +3,13 @@
   "name": "Aidan Sharp",
   "team": "Knox Central",
   "team_slug": "knox_central",
-  "team_rank": 97,
+  "team_rank": 95,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 97,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,8 +17,8 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
     "apr_plus": 104.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
@@ -27,12 +27,22 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35093538132",
+      "opponent_rank": 129,
+      "opponent_name": "Gabe Sowders",
+      "method": "Fall 1:01"
+    },
+    "worst_loss": {
+      "opponent_id": "34997611132",
+      "opponent_rank": 186,
+      "opponent_name": "Mason Dean",
+      "method": "Fall 2:53"
+    }
   },
   "match_list": [
     {
@@ -40,30 +50,32 @@
       "opponent_id": "34997611132",
       "opponent_name": "Mason Dean",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 45,
-      "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_team_rank": 41,
+      "opponent_weight": 132,
+      "opponent_rank": 186,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:53",
-      "event": "vs. Corbin",
-      "mv_impact": -5.36
+      "event": "vs. Knox Central",
+      "mv_impact": -8.54
     },
     {
       "date": "2025-12-16",
       "opponent_id": "35093538132",
       "opponent_name": "Gabe Sowders",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 56,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 129,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:01",
       "event": "vs. Knox Central",
-      "mv_impact": 1.77
+      "mv_impact": 2.93
     }
   ]
 }

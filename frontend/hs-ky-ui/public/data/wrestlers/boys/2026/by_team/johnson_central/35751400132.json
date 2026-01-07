@@ -3,36 +3,95 @@
   "name": "Noah Clouse",
   "team": "Johnson Central",
   "team_slug": "johnson_central",
-  "team_rank": 10,
-  "weight_class": 120,
+  "team_rank": 12,
+  "weight_class": 113,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 10,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "pf7": 7.5,
+    "pa7": 1.5,
+    "pd7": 6.0,
+    "si_plus": 98.1,
+    "df_plus": 115.4,
+    "apr_plus": 94.6,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "bonus_rate": 0.5,
+    "majors": 1,
     "techs": 0,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35144534132",
+      "opponent_rank": 13,
+      "opponent_name": "Jude Fortier",
+      "method": "MD 14-3"
+    },
+    "worst_loss": {
+      "opponent_id": "35732598132",
+      "opponent_rank": 2,
+      "opponent_name": "Jeremy Mollett",
+      "method": "Fall 0:43"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35732598132",
+      "opponent_name": "Jeremy Mollett",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 113,
+      "opponent_rank": 2,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -1.86
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35420468132",
+      "opponent_name": "Nicolas Dotson",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 113,
+      "opponent_rank": 29,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": 3.47
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35144534132",
+      "opponent_name": "Jude Fortier",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 113,
+      "opponent_rank": 13,
+      "weight_class": "113",
+      "result": "W",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": 5.12
+    }
+  ]
 }

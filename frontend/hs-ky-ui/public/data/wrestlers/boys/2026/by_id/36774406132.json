@@ -3,10 +3,10 @@
   "name": "Angel Gonzales",
   "team": "Southwestern",
   "team_slug": "southwestern",
-  "team_rank": 126,
+  "team_rank": 128,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 80,
   "record": {
     "overall": "2-1",
     "vs_ranked": "1-1",
@@ -17,9 +17,9 @@
     "pf7": 19.0,
     "pa7": 4.0,
     "pd7": 15.0,
-    "si_plus": 112.3,
-    "df_plus": 109.5,
-    "apr_plus": 91.7,
+    "si_plus": 115.6,
+    "df_plus": 110.3,
+    "apr_plus": 94.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35654908132",
-      "opponent_rank": 85,
+      "opponent_rank": 161,
       "opponent_name": "Kaleb Baumgartner",
       "method": "TF 19-4 0:00"
     },
     "worst_loss": {
       "opponent_id": "35599176132",
-      "opponent_rank": 18,
+      "opponent_rank": 16,
       "opponent_name": "Ricky Parriman",
       "method": "Fall 0:00"
     }
@@ -50,9 +50,10 @@
       "opponent_id": "35599176132",
       "opponent_name": "Ricky Parriman",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 105,
       "opponent_weight": 113,
-      "opponent_rank": 18,
+      "opponent_rank": 16,
+      "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -65,8 +66,9 @@
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "113",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -78,9 +80,10 @@
       "opponent_id": "35654908132",
       "opponent_name": "Kaleb Baumgartner",
       "opponent_team": "Pineville",
-      "opponent_team_rank": 116,
-      "opponent_weight": 113,
-      "opponent_rank": 85,
+      "opponent_team_rank": 115,
+      "opponent_weight": 106,
+      "opponent_rank": 161,
+      "weight_class": "113",
       "result": "W",
       "method": "TF",
       "score": "19-4",
@@ -91,6 +94,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9090909090909091
+    "top33_bonus_ev_shrunk": 1.4285714285714286
   }
 }

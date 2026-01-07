@@ -643,6 +643,9 @@ def build_match_list(
         except Exception:
             pass
         
+        # Get weight class from match data
+        match_weight = match.get("weight_class")
+        
         match_entry = {
             "date": date_formatted,
             "opponent_id": opp_id if opp_id else None,
@@ -651,6 +654,7 @@ def build_match_list(
             "opponent_team_rank": opp_team_rank,
             "opponent_weight": opp_weight,
             "opponent_rank": opp_rank,
+            "weight_class": match_weight,  # Weight class the match was wrestled at
             "result": result_code,
             "method": method,
             "score": score,
@@ -903,7 +907,7 @@ def main() -> None:
             print(f"Loaded {len(all_wrestlers)} wrestlers")
             
             print("\nLoading full rankings (all ranked wrestlers)...")
-            rank_by_id = _load_full_rank_map(season, data_dir, league=league, gender=gender)
+            rank_by_id = _load_full_rank_map(season, base_data_dir, league=league, gender=gender)
             print(f"Loaded full rankings for {len(rank_by_id)} wrestlers")
             
             print("\nCalculating team rankings...")

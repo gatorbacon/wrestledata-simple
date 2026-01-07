@@ -3,12 +3,12 @@
   "name": "Ben Bentzel",
   "team": "Christian County",
   "team_slug": "christian_county",
-  "team_rank": 20,
+  "team_rank": 35,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 48,
   "record": {
-    "overall": "2-1",
+    "overall": "3-1",
     "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -17,11 +17,11 @@
     "pf7": 25.0,
     "pa7": 0.0,
     "pd7": 25.0,
-    "si_plus": 119.5,
-    "df_plus": 114.7,
-    "apr_plus": 106.6,
-    "pin_rate": 0.5,
-    "bonus_rate": 1.0,
+    "si_plus": 124.5,
+    "df_plus": 113.9,
+    "apr_plus": 107.8,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 1,
     "pins": 1
@@ -32,63 +32,78 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34989026132",
-      "opponent_rank": 43,
-      "opponent_name": "Josh Athey",
-      "method": "Fall 1:47"
+      "opponent_id": "35620722132",
+      "opponent_rank": 54,
+      "opponent_name": "Kameron Karbasi",
+      "method": "TF 17-0 3:11"
     },
     "worst_loss": {
       "opponent_id": "34988697132",
-      "opponent_rank": 20,
+      "opponent_rank": 19,
       "opponent_name": "Malachi James",
       "method": "Fall 0:30"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. LaRue County"
+    },
+    {
       "date": "2025-12-23",
       "opponent_id": "34989026132",
       "opponent_name": "Josh Athey",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 47,
       "opponent_weight": 106,
-      "opponent_rank": 43,
+      "opponent_rank": 71,
+      "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:47",
-      "event": "Christian County Invitational",
-      "mv_impact": 4.91
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35620722132",
       "opponent_name": "Kameron Karbasi",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 126,
       "opponent_weight": 106,
-      "opponent_rank": 45,
+      "opponent_rank": 54,
+      "weight_class": "106",
       "result": "W",
       "method": "TF",
       "score": "17-0",
       "duration": "3:11",
-      "event": "Christian County Invitational",
-      "mv_impact": 3.99
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34988697132",
       "opponent_name": "Malachi James",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 106,
-      "opponent_rank": 20,
+      "opponent_rank": 19,
+      "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "Christian County Invitational",
-      "mv_impact": -4.27
+      "event": "Christian County Invitational"
     }
   ]
 }

@@ -6,10 +6,10 @@
   "team_rank": null,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 41,
+  "current_rank": 45,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35352432132",
+      "opponent_rank": 60,
+      "opponent_name": "Dezeray Morris",
+      "method": "Fall 1:54"
+    },
     "worst_loss": {
       "opponent_id": "35510579132",
-      "opponent_rank": 30,
+      "opponent_rank": 33,
       "opponent_name": "Kenyana Johnson",
       "method": "TF 23-8 6:00"
     }
@@ -47,7 +52,8 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 60,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -63,12 +69,13 @@
       "opponent_team_rank": 42,
       "opponent_weight": 132,
       "opponent_rank": 19,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:59",
       "event": "NKAC",
-      "mv_impact": -3.57
+      "mv_impact": -3.84
     },
     {
       "date": "2025-12-27",
@@ -77,13 +84,14 @@
       "opponent_team": "Holmes",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 30,
+      "opponent_rank": 33,
+      "weight_class": "132",
       "result": "L",
       "method": "TF",
       "score": "23-8",
       "duration": "6:00",
       "event": "NKAC",
-      "mv_impact": -3.97
+      "mv_impact": -4.43
     }
   ]
 }

@@ -9,8 +9,8 @@
   "current_rank": null,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-1",
-    "vs_top10": "0-0",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -27,14 +27,19 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35724710132",
+      "opponent_rank": 73,
+      "opponent_name": "Jason Wade",
+      "method": "Fall 1:21"
+    },
     "worst_loss": {
       "opponent_id": "35732644132",
-      "opponent_rank": 20,
+      "opponent_rank": 9,
       "opponent_name": "Brayden Fannin",
       "method": "Fall 1:23"
     }
@@ -45,9 +50,10 @@
       "opponent_id": "35897121132",
       "opponent_name": "Gage Clay",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 181,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -59,9 +65,10 @@
       "opponent_id": "35724710132",
       "opponent_name": "Jason Wade",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 42,
       "opponent_weight": 215,
-      "opponent_rank": null,
+      "opponent_rank": 73,
+      "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -73,9 +80,10 @@
       "opponent_id": "35732644132",
       "opponent_name": "Brayden Fannin",
       "opponent_team": "Martin County",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 6,
       "opponent_weight": 215,
-      "opponent_rank": 20,
+      "opponent_rank": 9,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -86,6 +94,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.55
+    "top33_bonus_ev_shrunk": 0.6923076923076923
   }
 }

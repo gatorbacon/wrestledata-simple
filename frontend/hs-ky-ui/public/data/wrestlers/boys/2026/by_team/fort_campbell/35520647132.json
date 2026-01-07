@@ -3,23 +3,23 @@
   "name": "Anderson Aliven",
   "team": "Fort Campbell",
   "team_slug": "fort_campbell",
-  "team_rank": 80,
+  "team_rank": 76,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 96,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 102.7,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 99.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35221181132",
-      "opponent_rank": 94,
+      "opponent_rank": 120,
       "opponent_name": "Bayden Herran",
       "method": "Fall 1:26"
     },
     "worst_loss": {
       "opponent_id": "34988685132",
-      "opponent_rank": 71,
+      "opponent_rank": 24,
       "opponent_name": "Marquis Hart",
       "method": "Fall 5:46"
     }
@@ -50,45 +50,48 @@
       "opponent_id": "35221181132",
       "opponent_name": "Bayden Herran",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 62,
       "opponent_weight": 138,
-      "opponent_rank": 94,
+      "opponent_rank": 120,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:26",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 2.5
+      "mv_impact": 3.01
     },
     {
       "date": "2025-12-22",
       "opponent_id": "34988685132",
       "opponent_name": "Marquis Hart",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 138,
-      "opponent_rank": 71,
+      "opponent_rank": 24,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:46",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": -6.21
+      "mv_impact": -3.87
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35221006132",
       "opponent_name": "Justin Klidzejs",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 67,
-      "opponent_weight": 144,
-      "opponent_rank": 61,
+      "opponent_team_rank": 62,
+      "opponent_weight": 138,
+      "opponent_rank": 15,
+      "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Fort Campbell",
-      "mv_impact": -7.9
+      "mv_impact": -4.76
     }
   ]
 }

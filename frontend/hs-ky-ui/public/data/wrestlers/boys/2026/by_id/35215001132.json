@@ -3,13 +3,13 @@
   "name": "Jake Bell",
   "team": "Cooper",
   "team_slug": "cooper",
-  "team_rank": 44,
+  "team_rank": 9,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 40,
+  "current_rank": 60,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 2.0,
     "pa7": 0.0,
     "pd7": 2.0,
-    "si_plus": 84.2,
-    "df_plus": 104.8,
-    "apr_plus": 81.5,
+    "si_plus": 89.0,
+    "df_plus": 115.9,
+    "apr_plus": 80.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -27,11 +27,16 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34988593132",
+      "opponent_rank": 122,
+      "opponent_name": "Thomas Starns",
+      "method": "Dec 2-0"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -40,9 +45,10 @@
       "opponent_id": "34988593132",
       "opponent_name": "Thomas Starns",
       "opponent_team": "Conner",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 10,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 122,
+      "weight_class": "190",
       "result": "W",
       "method": "DEC",
       "score": "2-0",
@@ -57,6 +63,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 190,
       "opponent_rank": null,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -71,6 +78,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 190,
       "opponent_rank": null,
+      "weight_class": "190",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -85,6 +93,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 190,
       "opponent_rank": null,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -99,6 +108,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 190,
       "opponent_rank": null,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -109,6 +119,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.0454545454545454
   }
 }

@@ -3,40 +3,45 @@
   "name": "Holden Lucas",
   "team": "Meade County",
   "team_slug": "meade_county",
-  "team_rank": 39,
+  "team_rank": 106,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 122,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "3-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 9.0,
     "pd7": -9.0,
-    "si_plus": 89.4,
-    "df_plus": 103.1,
-    "apr_plus": 96.3,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 85.9,
+    "df_plus": 103.3,
+    "apr_plus": 109.0,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 2,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35182060132",
+      "opponent_rank": 123,
+      "opponent_name": "Nehemiah Dawsey",
+      "method": "Fall 2:20"
+    },
     "worst_loss": {
-      "opponent_id": "35064912132",
-      "opponent_rank": 12,
-      "opponent_name": "Tre Wilson",
-      "method": "MD 9-0"
+      "opponent_id": "35226139132",
+      "opponent_rank": 24,
+      "opponent_name": "Zachary Beecham",
+      "method": "Fall 4:24"
     }
   },
   "match_list": [
@@ -45,20 +50,80 @@
       "opponent_id": "35064912132",
       "opponent_name": "Tre Wilson",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 95,
+      "opponent_team_rank": 93,
       "opponent_weight": 126,
-      "opponent_rank": 12,
+      "opponent_rank": 15,
+      "weight_class": "126",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "vs. Meade County",
-      "mv_impact": -0.03
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35226139132",
+      "opponent_name": "Zachary Beecham",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 126,
+      "opponent_rank": 24,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:24",
+      "event": "vs. Nelson County"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35182060132",
+      "opponent_name": "Nehemiah Dawsey",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 25,
+      "opponent_weight": 126,
+      "opponent_rank": 123,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:20",
+      "event": "vs. North Hardin"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35076692132",
+      "opponent_name": "Miguel Torres",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 124,
+      "opponent_weight": 126,
+      "opponent_rank": 178,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:39",
+      "event": "vs. Shawnee"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Thomas Nelson"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.7777777777777777
+    "top33_bonus_ev_shrunk": 1.8333333333333333
   }
 }

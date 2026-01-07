@@ -3,13 +3,13 @@
   "name": "Kaden Thibodeau",
   "team": "Ryle",
   "team_slug": "ryle",
-  "team_rank": 14,
+  "team_rank": 13,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 44,
+  "current_rank": 59,
   "record": {
     "overall": "5-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 111.2,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 110.7,
     "pin_rate": 0.6,
     "bonus_rate": 0.6,
     "majors": 0,
@@ -27,12 +27,22 @@
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35652499132",
+      "opponent_rank": 118,
+      "opponent_name": "William Kimberlin",
+      "method": "Fall 2:14"
+    },
+    "worst_loss": {
+      "opponent_id": "34988564132",
+      "opponent_rank": 50,
+      "opponent_name": "Kasen Henley",
+      "method": "Fall 3:18"
+    }
   },
   "match_list": [
     {
@@ -40,9 +50,10 @@
       "opponent_id": "35156565132",
       "opponent_name": "Antonio Arreaga",
       "opponent_team": "Conner",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 10,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 145,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -54,9 +65,10 @@
       "opponent_id": "34988564132",
       "opponent_name": "Kasen Henley",
       "opponent_team": "Conner",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 10,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 50,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -70,7 +82,8 @@
       "opponent_team": "Simon Kenton",
       "opponent_team_rank": 31,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 144,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -82,9 +95,10 @@
       "opponent_id": "35652499132",
       "opponent_name": "William Kimberlin",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 118,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -99,6 +113,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 126,
       "opponent_rank": null,
+      "weight_class": "126",
       "result": "W",
       "method": "DEC",
       "score": "3-0",
@@ -113,6 +128,7 @@
       "opponent_team_rank": null,
       "opponent_weight": 126,
       "opponent_rank": null,
+      "weight_class": "126",
       "result": "W",
       "method": "SV-1",
       "score": "4-1",
@@ -123,6 +139,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.7777777777777777
+    "top33_bonus_ev_shrunk": 1.8333333333333333
   }
 }

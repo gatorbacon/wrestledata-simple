@@ -3,23 +3,23 @@
   "name": "Miguel Cummins",
   "team": "Desales",
   "team_slug": "desales",
-  "team_rank": 73,
+  "team_rank": 69,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 162,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-1",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 90.5,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 90.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,15 +28,15 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35135157132",
-      "opponent_rank": 14,
-      "opponent_name": "Yousif Al Shuweily",
-      "method": "Fall 1:05"
+      "opponent_id": "35040571132",
+      "opponent_rank": 122,
+      "opponent_name": "Tyson Kinsel",
+      "method": "Fall 0:46"
     }
   },
   "match_list": [
@@ -45,30 +45,32 @@
       "opponent_id": "35135157132",
       "opponent_name": "Yousif Al Shuweily",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 21,
       "opponent_weight": 175,
-      "opponent_rank": 14,
+      "opponent_rank": 28,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:05",
       "event": "King of the Bluegrass",
-      "mv_impact": -2.35
+      "mv_impact": -3.41
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35040571132",
       "opponent_name": "Tyson Kinsel",
       "opponent_team": "Male",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 45,
       "opponent_weight": 175,
-      "opponent_rank": null,
+      "opponent_rank": 122,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:46",
       "event": "King of the Bluegrass",
-      "mv_impact": -8.16
+      "mv_impact": -8.9
     }
   ]
 }

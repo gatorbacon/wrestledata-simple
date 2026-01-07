@@ -3,36 +3,127 @@
   "name": "Dylan Peck",
   "team": "Johnson Central",
   "team_slug": "johnson_central",
-  "team_rank": 10,
+  "team_rank": 12,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 12,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "4-1",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "3-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 99.2,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "pf7": 13.0,
+    "pa7": 3.0,
+    "pd7": 10.0,
+    "si_plus": 108.7,
+    "df_plus": 109.6,
+    "apr_plus": 101.8,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35144518132",
+      "opponent_rank": 13,
+      "opponent_name": "Jace Detre",
+      "method": "MD 15-5"
+    },
+    "worst_loss": {
+      "opponent_id": "35122091132",
+      "opponent_rank": 15,
+      "opponent_name": "Adam Behling",
+      "method": "Fall 1:10"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35017745132",
+      "opponent_name": "Cameron Burnside",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 52,
+      "opponent_weight": 215,
+      "opponent_rank": 22,
+      "weight_class": "215",
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": 6.61
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35724532132",
+      "opponent_name": "Seth Boggs",
+      "opponent_team": "East Carter",
+      "opponent_team_rank": 42,
+      "opponent_weight": 215,
+      "opponent_rank": 108,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": 2.98
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35144518132",
+      "opponent_name": "Jace Detre",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 215,
+      "opponent_rank": 13,
+      "weight_class": "215",
+      "result": "W",
+      "method": "MD",
+      "score": "15-5",
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": 6.26
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35122078132",
+      "opponent_name": "Wilbert Rios-Lara",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 215,
+      "opponent_rank": 16,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:04",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": 8.1
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35122091132",
+      "opponent_name": "Adam Behling",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 215,
+      "opponent_rank": 15,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -3.63
+    }
+  ]
 }

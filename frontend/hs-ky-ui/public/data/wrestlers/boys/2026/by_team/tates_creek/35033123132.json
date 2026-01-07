@@ -3,23 +3,23 @@
   "name": "Camren Walls",
   "team": "Tates Creek",
   "team_slug": "tates_creek",
-  "team_rank": 127,
+  "team_rank": 129,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 102,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "1-1",
+    "overall": "1-4",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 91.1,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 93.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,67 +28,102 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34989330132",
-      "opponent_rank": 109,
+      "opponent_rank": 37,
       "opponent_name": "Garrett Rust",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35124870132",
-      "opponent_rank": 84,
+      "opponent_rank": 101,
       "opponent_name": "Hunter Oakley",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35221006132",
+      "opponent_name": "Justin Klidzejs",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 62,
+      "opponent_weight": 138,
+      "opponent_rank": 15,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:16",
+      "event": "Tates Creek Invitational",
+      "mv_impact": -4.76
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35001142132",
+      "opponent_name": "CJ Hogan",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 14,
+      "opponent_weight": 138,
+      "opponent_rank": 98,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:18",
+      "event": "Tates Creek Invitational",
+      "mv_impact": -7.08
+    },
+    {
       "date": "2025-11-29",
       "opponent_id": "34989330132",
       "opponent_name": "Garrett Rust",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 9,
-      "opponent_weight": 138,
-      "opponent_rank": 109,
+      "opponent_team_rank": 15,
+      "opponent_weight": 132,
+      "opponent_rank": 37,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": 0.86
+      "mv_impact": 6.25
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35124870132",
       "opponent_name": "Hunter Oakley",
       "opponent_team": "Montgomery County",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 108,
       "opponent_weight": 138,
-      "opponent_rank": 84,
+      "opponent_rank": 101,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": -8.26
+      "mv_impact": -7.92
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34989027132",
       "opponent_name": "Mason Taylor",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 47,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 40,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": -4.99
+      "mv_impact": -5.63
     }
   ]
 }

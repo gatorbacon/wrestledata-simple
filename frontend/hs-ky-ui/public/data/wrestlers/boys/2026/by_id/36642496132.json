@@ -3,13 +3,13 @@
   "name": "Max Hunt",
   "team": "Pikeville",
   "team_slug": "pikeville",
-  "team_rank": 115,
+  "team_rank": 114,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 110,
+  "current_rank": 165,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "2-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,27 +17,85 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 99.2,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35513071132",
+      "opponent_rank": 62,
+      "opponent_name": "Benjamin Crabtree",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "35459311132",
+      "opponent_rank": 33,
+      "opponent_name": "Issac Clark",
+      "method": "Fall 1:45"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35513071132",
+      "opponent_name": "Benjamin Crabtree",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 55,
+      "opponent_weight": 165,
+      "opponent_rank": 62,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35615680132",
+      "opponent_name": "Greenie Thacker",
+      "opponent_team": "Pike County Central",
+      "opponent_team_rank": 39,
+      "opponent_weight": 165,
+      "opponent_rank": 177,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:08",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": 0.54
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35459311132",
+      "opponent_name": "Issac Clark",
+      "opponent_team": "Rowan County",
+      "opponent_team_rank": 119,
+      "opponent_weight": 165,
+      "opponent_rank": 33,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -3.85
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9833333333333333
+    "top33_bonus_ev_shrunk": 1.15
   }
 }

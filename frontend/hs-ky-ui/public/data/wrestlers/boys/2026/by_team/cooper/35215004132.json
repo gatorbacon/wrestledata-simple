@@ -3,13 +3,13 @@
   "name": "Keegan Bowling",
   "team": "Cooper",
   "team_slug": "cooper",
-  "team_rank": 44,
+  "team_rank": 9,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 93,
+  "current_rank": 132,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 88.6,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 88.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,11 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35118528132",
+      "opponent_rank": 113,
+      "opponent_name": "Jayden Bautista Valdez",
+      "method": "Fall 2:24"
+    }
   },
   "match_list": [
     {
@@ -41,8 +46,9 @@
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
+      "weight_class": "126",
       "result": "W",
       "method": "DEC",
       "score": null,
@@ -54,9 +60,10 @@
       "opponent_id": "35118528132",
       "opponent_name": "Jayden Bautista Valdez",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 7,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 113,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,

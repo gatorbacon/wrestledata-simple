@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -27,14 +27,19 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35728992132",
+      "opponent_rank": 34,
+      "opponent_name": "Max Murdock",
+      "method": "MD 13-1"
+    },
     "worst_loss": {
       "opponent_id": "35398390132",
-      "opponent_rank": 2,
+      "opponent_rank": 4,
       "opponent_name": "Parker Wilkens",
       "method": "MD 18-8"
     }
@@ -45,9 +50,10 @@
       "opponent_id": "35728992132",
       "opponent_name": "Max Murdock",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 44,
       "opponent_weight": 106,
-      "opponent_rank": null,
+      "opponent_rank": 34,
+      "weight_class": "106",
       "result": "W",
       "method": "MD",
       "score": "13-1",
@@ -59,9 +65,10 @@
       "opponent_id": "35398390132",
       "opponent_name": "Parker Wilkens",
       "opponent_team": "Highlands",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 106,
-      "opponent_rank": 2,
+      "opponent_rank": 4,
+      "weight_class": "106",
       "result": "L",
       "method": "MD",
       "score": "18-8",
@@ -70,8 +77,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.5185185185185184
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.0
   }
 }

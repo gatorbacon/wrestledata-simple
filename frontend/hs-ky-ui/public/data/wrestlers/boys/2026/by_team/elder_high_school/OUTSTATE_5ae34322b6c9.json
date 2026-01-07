@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35104950132",
+      "opponent_rank": 76,
+      "opponent_name": "marcus anthony",
+      "method": "Fall 1:01"
+    },
     "worst_loss": {
       "opponent_id": "34988587132",
-      "opponent_rank": 33,
+      "opponent_rank": 34,
       "opponent_name": "Luke Peace",
       "method": "TF 16-0 2:15"
     }
@@ -45,9 +50,10 @@
       "opponent_id": "34988587132",
       "opponent_name": "Luke Peace",
       "opponent_team": "Conner",
-      "opponent_team_rank": 26,
-      "opponent_weight": 150,
-      "opponent_rank": 33,
+      "opponent_team_rank": 10,
+      "opponent_weight": 144,
+      "opponent_rank": 34,
+      "weight_class": "150",
       "result": "L",
       "method": "TF",
       "score": "16-0",
@@ -59,9 +65,10 @@
       "opponent_id": "35104950132",
       "opponent_name": "marcus anthony",
       "opponent_team": "Moore",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 46,
       "opponent_weight": 150,
-      "opponent_rank": null,
+      "opponent_rank": 76,
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,

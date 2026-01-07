@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,12 +27,22 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35281005132",
+      "opponent_rank": 156,
+      "opponent_name": "Liam Reed",
+      "method": "Fall 2:55"
+    },
+    "worst_loss": {
+      "opponent_id": "35321122132",
+      "opponent_rank": 70,
+      "opponent_name": "Liam Sharpe",
+      "method": "Fall 0:09"
+    }
   },
   "match_list": [
     {
@@ -40,9 +50,10 @@
       "opponent_id": "35321122132",
       "opponent_name": "Liam Sharpe",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 109,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 70,
+      "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -54,9 +65,10 @@
       "opponent_id": "35281005132",
       "opponent_name": "Liam Reed",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 28,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 156,
+      "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,

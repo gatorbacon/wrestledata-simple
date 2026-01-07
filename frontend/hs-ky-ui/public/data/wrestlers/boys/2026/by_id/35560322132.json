@@ -3,10 +3,10 @@
   "name": "Sebastian Popp",
   "team": "Knott County Central",
   "team_slug": "knott_county_central",
-  "team_rank": 96,
+  "team_rank": 94,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 72,
+  "current_rank": 119,
   "record": {
     "overall": "2-0",
     "vs_ranked": "2-0",
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 119.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 119.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35639990132",
-      "opponent_rank": 46,
+      "opponent_rank": 61,
       "opponent_name": "Blake Short",
       "method": "Fall 0:00"
     },
@@ -42,38 +42,40 @@
   "match_list": [
     {
       "date": "2025-11-29",
-      "opponent_id": "35639990132",
-      "opponent_name": "Blake Short",
-      "opponent_team": "Harlan County",
-      "opponent_team_rank": 88,
-      "opponent_weight": 215,
-      "opponent_rank": 46,
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Cougar Classic",
-      "mv_impact": 6.23
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "35640247132",
       "opponent_name": "Bo Eldridge",
       "opponent_team": "Harlan County",
-      "opponent_team_rank": 88,
-      "opponent_weight": 285,
-      "opponent_rank": 76,
+      "opponent_team_rank": 85,
+      "opponent_weight": 215,
+      "opponent_rank": 78,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Cougar Classic",
-      "mv_impact": 3.7
+      "mv_impact": 5.4
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35639990132",
+      "opponent_name": "Blake Short",
+      "opponent_team": "Harlan County",
+      "opponent_team_rank": 85,
+      "opponent_weight": 215,
+      "opponent_rank": 61,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Cougar Classic",
+      "mv_impact": 5.61
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9666666666666666
+    "top33_bonus_ev_shrunk": 1.3333333333333333
   }
 }

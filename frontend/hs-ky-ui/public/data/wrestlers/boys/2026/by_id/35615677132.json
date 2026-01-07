@@ -3,41 +3,107 @@
   "name": "Skiler Ray",
   "team": "Pike County Central",
   "team_slug": "pike_county_central",
-  "team_rank": 114,
+  "team_rank": 39,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 119,
+  "current_rank": 16,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "3-1",
+    "vs_ranked": "3-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "2-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 114.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 3,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35724491132",
+      "opponent_rank": 22,
+      "opponent_name": "Zander Smith",
+      "method": "Fall 2:38"
+    },
     "worst_loss": null
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35724491132",
+      "opponent_name": "Zander Smith",
+      "opponent_team": "East Carter",
+      "opponent_team_rank": 42,
+      "opponent_weight": 285,
+      "opponent_rank": 22,
+      "weight_class": "Hwt",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:38",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35144515132",
+      "opponent_name": "Anthony Merino",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 285,
+      "opponent_rank": 23,
+      "weight_class": "Hwt",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:37",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35680622132",
+      "opponent_name": "Wesley Partin",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 285,
+      "opponent_rank": 178,
+      "weight_class": "Hwt",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:44",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_f0e25648f8f9",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "Hwt",
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    }
+  ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9666666666666666
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.5666666666666667
   }
 }

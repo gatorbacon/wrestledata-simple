@@ -6,12 +6,12 @@
   "team_rank": 38,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 37,
+  "current_rank": 48,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "2-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35333670132",
-      "opponent_rank": 49,
+      "opponent_rank": 63,
       "opponent_name": "Briella Levy",
       "method": "Fall 5:15"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35404902132",
+      "opponent_rank": 21,
+      "opponent_name": "Furaha Keza",
+      "method": "Fall 3:50"
+    }
   },
   "match_list": [
     {
@@ -47,13 +52,14 @@
       "opponent_team": "Bardstown",
       "opponent_team_rank": 27,
       "opponent_weight": 126,
-      "opponent_rank": 52,
+      "opponent_rank": 70,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:27",
       "event": "beast of the east",
-      "mv_impact": 4.26
+      "mv_impact": 4.19
     },
     {
       "date": "2025-12-06",
@@ -62,13 +68,14 @@
       "opponent_team": "Butler",
       "opponent_team_rank": 31,
       "opponent_weight": 126,
-      "opponent_rank": 49,
+      "opponent_rank": 63,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:15",
       "event": "The Beast of the East",
-      "mv_impact": 5.33
+      "mv_impact": 5.23
     },
     {
       "date": "2025-12-06",
@@ -77,13 +84,14 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 21,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:50",
       "event": "The Beast of the East",
-      "mv_impact": -4.14
+      "mv_impact": -4.5
     }
   ],
   "bonus": {

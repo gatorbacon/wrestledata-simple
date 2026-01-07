@@ -9,9 +9,9 @@
   "current_rank": null,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -27,12 +27,22 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35035542132",
+      "opponent_rank": 153,
+      "opponent_name": "Gary D `Trey Watkins III",
+      "method": "Fall 1:19"
+    },
+    "worst_loss": {
+      "opponent_id": "35045484132",
+      "opponent_rank": 21,
+      "opponent_name": "AUSTIN HURST",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
     {
@@ -40,9 +50,10 @@
       "opponent_id": "35035542132",
       "opponent_name": "Gary D `Trey Watkins III",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 7,
       "opponent_weight": 175,
-      "opponent_rank": null,
+      "opponent_rank": 153,
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -54,9 +65,10 @@
       "opponent_id": "35045484132",
       "opponent_name": "AUSTIN HURST",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 190,
-      "opponent_rank": null,
+      "opponent_rank": 21,
+      "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -67,6 +79,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3571428571428572
+    "top33_bonus_ev_shrunk": 1.0454545454545454
   }
 }

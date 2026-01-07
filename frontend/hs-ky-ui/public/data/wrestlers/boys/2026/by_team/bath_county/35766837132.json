@@ -3,13 +3,13 @@
   "name": "Branson Bartlett",
   "team": "Bath County",
   "team_slug": "bath_county",
-  "team_rank": null,
+  "team_rank": 54,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 89,
+  "current_rank": 136,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-1",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 97.6,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 96.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,16 +27,21 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35540230132",
+      "opponent_rank": 173,
+      "opponent_name": "Cain Maynard",
+      "method": "Fall 0:31"
+    },
     "worst_loss": {
-      "opponent_id": "35850458132",
-      "opponent_rank": 49,
-      "opponent_name": "Amos Blankenship",
-      "method": "Fall 0:42"
+      "opponent_id": "35896382132",
+      "opponent_rank": 128,
+      "opponent_name": "Gavin Selby",
+      "method": "Fall 3:50"
     }
   },
   "match_list": [
@@ -45,45 +50,48 @@
       "opponent_id": "35896382132",
       "opponent_name": "Gavin Selby",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 175,
-      "opponent_rank": null,
+      "opponent_rank": 128,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:50",
       "event": "AWC Invitational",
-      "mv_impact": -7.6
+      "mv_impact": -8.92
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35540230132",
       "opponent_name": "Cain Maynard",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 99,
+      "opponent_team_rank": 97,
       "opponent_weight": 175,
-      "opponent_rank": null,
+      "opponent_rank": 173,
+      "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:31",
       "event": "AWC Invitational",
-      "mv_impact": 0.83
+      "mv_impact": 0.62
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35850458132",
       "opponent_name": "Amos Blankenship",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 175,
-      "opponent_rank": 49,
+      "opponent_rank": 50,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:42",
       "event": "AWC Invitational",
-      "mv_impact": -4.27
+      "mv_impact": -5.39
     }
   ]
 }

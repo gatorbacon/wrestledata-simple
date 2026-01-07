@@ -3,10 +3,10 @@
   "name": "Jayce Benford",
   "team": "Male",
   "team_slug": "male",
-  "team_rank": 50,
+  "team_rank": 45,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 137,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 96.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 95.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35138532132",
-      "opponent_rank": 94,
+      "opponent_rank": 146,
       "opponent_name": "Gabriel Salas",
       "method": "Fall 0:39"
     },
     "worst_loss": {
       "opponent_id": "35281420132",
-      "opponent_rank": 65,
+      "opponent_rank": 111,
       "opponent_name": "Carter Vance",
       "method": "Fall 3:18"
     }
@@ -50,50 +50,53 @@
       "opponent_id": "35138532132",
       "opponent_name": "Gabriel Salas",
       "opponent_team": "Moore",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 46,
       "opponent_weight": 285,
-      "opponent_rank": 94,
+      "opponent_rank": 146,
+      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:39",
       "event": "vs. Moore",
-      "mv_impact": 0.94
+      "mv_impact": 0.95
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35618295132",
       "opponent_name": "Kole Holmes",
       "opponent_team": "Valley",
-      "opponent_team_rank": 130,
+      "opponent_team_rank": 132,
       "opponent_weight": 285,
-      "opponent_rank": 27,
+      "opponent_rank": 43,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:35",
       "event": "King of the Bluegrass",
-      "mv_impact": -4.26
+      "mv_impact": -4.48
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35281420132",
       "opponent_name": "Carter Vance",
       "opponent_team": "Southern",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 285,
-      "opponent_rank": 65,
+      "opponent_rank": 111,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:18",
       "event": "King of the Bluegrass",
-      "mv_impact": -7.03
+      "mv_impact": -7.93
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9666666666666666
+    "top33_bonus_ev_shrunk": 1.3333333333333333
   }
 }

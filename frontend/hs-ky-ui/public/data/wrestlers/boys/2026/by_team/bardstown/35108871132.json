@@ -3,23 +3,23 @@
   "name": "Braydon Phelps",
   "team": "Bardstown",
   "team_slug": "bardstown",
-  "team_rank": 59,
+  "team_rank": 53,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 109,
   "record": {
     "overall": "1-4",
     "vs_ranked": "1-4",
     "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 98.9,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 100.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35461195132",
-      "opponent_rank": 95,
+      "opponent_rank": 144,
       "opponent_name": "Jafar Price",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35433560132",
-      "opponent_rank": 31,
+      "opponent_rank": 57,
       "opponent_name": "Ben Bradford Maiden",
       "method": "Fall 4:47"
     }
@@ -52,13 +52,14 @@
       "opponent_team": "WEB DuBois",
       "opponent_team_rank": null,
       "opponent_weight": 106,
-      "opponent_rank": 95,
+      "opponent_rank": 144,
+      "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Classic",
-      "mv_impact": 2.77
+      "mv_impact": 0.8
     },
     {
       "date": "2025-12-13",
@@ -67,58 +68,62 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": 33,
       "opponent_weight": 106,
-      "opponent_rank": 7,
+      "opponent_rank": 10,
+      "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Classic",
-      "mv_impact": -2.01
+      "mv_impact": -1.92
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35433560132",
       "opponent_name": "Ben Bradford Maiden",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 98,
+      "opponent_team_rank": 96,
       "opponent_weight": 106,
-      "opponent_rank": 31,
+      "opponent_rank": 57,
+      "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Classic",
-      "mv_impact": -5.45
+      "mv_impact": -6.87
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35433560132",
       "opponent_name": "Ben Bradford Maiden",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 98,
+      "opponent_team_rank": 96,
       "opponent_weight": 106,
-      "opponent_rank": 31,
+      "opponent_rank": 57,
+      "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:47",
       "event": "The Beast of the East",
-      "mv_impact": -5.45
+      "mv_impact": -6.87
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35001158132",
       "opponent_name": "River Leonard",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 14,
       "opponent_weight": 106,
-      "opponent_rank": 22,
+      "opponent_rank": 44,
+      "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:50",
       "event": "The Beast of the East",
-      "mv_impact": -3.68
+      "mv_impact": -5.31
     }
   ]
 }

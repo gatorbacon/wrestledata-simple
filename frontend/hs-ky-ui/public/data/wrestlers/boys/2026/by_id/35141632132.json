@@ -3,13 +3,13 @@
   "name": "Logan True",
   "team": "Bourbon County",
   "team_slug": "bourbon_county",
-  "team_rank": 63,
+  "team_rank": 58,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 149,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 87.7,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 86.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,11 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35652142132",
+      "opponent_rank": 116,
+      "opponent_name": "Ryan Morgan",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
     {
@@ -40,20 +45,21 @@
       "opponent_id": "35652142132",
       "opponent_name": "Ryan Morgan",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 4,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 116,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Harrison County",
-      "mv_impact": -8.82
+      "mv_impact": -8.6
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5555555555555556
+    "top33_bonus_ev_shrunk": 0.8571428571428571
   }
 }

@@ -3,23 +3,23 @@
   "name": "Kellon Jones",
   "team": "Great Crossing",
   "team_slug": "great_crossing",
-  "team_rank": 49,
+  "team_rank": 44,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 45,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "1-2",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 15.33,
     "pa7": 6.75,
     "pd7": 8.58,
-    "si_plus": 107.9,
-    "df_plus": 106.0,
-    "apr_plus": 94.3,
+    "si_plus": 109.9,
+    "df_plus": 106.4,
+    "apr_plus": 97.9,
     "pin_rate": 0.333,
     "bonus_rate": 1.0,
     "majors": 1,
@@ -27,19 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35090020132",
-      "opponent_rank": 55,
+      "opponent_rank": 66,
       "opponent_name": "Matthew Morgan",
       "method": "MD 19-7"
     },
     "worst_loss": {
       "opponent_id": "35135151132",
-      "opponent_rank": 26,
+      "opponent_rank": 32,
       "opponent_name": "Daylon Sexton",
       "method": "Fall 0:29"
     }
@@ -50,45 +50,48 @@
       "opponent_id": "35172417132",
       "opponent_name": "Armani Kidd",
       "opponent_team": "Desales",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 69,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 78,
+      "weight_class": "132",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "1:20",
       "event": "King of the Bluegrass",
-      "mv_impact": 4.1
+      "mv_impact": 4.06
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35135151132",
       "opponent_name": "Daylon Sexton",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 21,
       "opponent_weight": 132,
-      "opponent_rank": 26,
+      "opponent_rank": 32,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:29",
       "event": "King of the Bluegrass",
-      "mv_impact": -3.37
+      "mv_impact": -4.1
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35090020132",
       "opponent_name": "Matthew Morgan",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 74,
       "opponent_weight": 132,
-      "opponent_rank": 55,
+      "opponent_rank": 66,
+      "weight_class": "132",
       "result": "W",
       "method": "MD",
       "score": "19-7",
       "duration": "7:00",
       "event": "King of the Bluegrass",
-      "mv_impact": 3.13
+      "mv_impact": 2.79
     },
     {
       "date": "2025-12-13",
@@ -97,28 +100,30 @@
       "opponent_team": "Nelson County",
       "opponent_team_rank": 29,
       "opponent_weight": 132,
-      "opponent_rank": 25,
+      "opponent_rank": 31,
+      "weight_class": "132",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
       "event": "King of the Bluegrass",
-      "mv_impact": -1.14
+      "mv_impact": -0.82
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35337511132",
       "opponent_name": "Gus Merman",
       "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": 129,
+      "opponent_team_rank": 131,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 89,
+      "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:55",
       "event": "King of the Bluegrass",
-      "mv_impact": 4.35
+      "mv_impact": 3.81
     }
   ]
 }

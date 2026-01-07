@@ -3,23 +3,23 @@
   "name": "John Santiago",
   "team": "Ohio County",
   "team_slug": "ohio_county",
-  "team_rank": 23,
+  "team_rank": 47,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 165,
   "record": {
     "overall": "0-6",
-    "vs_ranked": "0-3",
-    "vs_top10": "0-1",
+    "vs_ranked": "0-6",
+    "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 89.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 90.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,15 +28,15 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35698215132",
-      "opponent_rank": 85,
-      "opponent_name": "Collin Burk",
-      "method": "Fall 2:38"
+      "opponent_id": "35493541132",
+      "opponent_rank": 151,
+      "opponent_name": "Blaise Wilson",
+      "method": "Fall 1:14"
     }
   },
   "match_list": [
@@ -45,95 +45,101 @@
       "opponent_id": "34988693132",
       "opponent_name": "Kian Bradley",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 35,
       "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_rank": 79,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:22",
       "event": "Christian County Invitational",
-      "mv_impact": -6.58
+      "mv_impact": -6.77
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34993277132",
       "opponent_name": "Jackson Stoner",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 68,
       "opponent_weight": 132,
-      "opponent_rank": 9,
+      "opponent_rank": 11,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:31",
       "event": "Christian County Invitational",
-      "mv_impact": -3.02
+      "mv_impact": -2.52
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35281532132",
       "opponent_name": "Sudeys Hussein",
       "opponent_team": "Southern",
-      "opponent_team_rank": 125,
-      "opponent_weight": 132,
-      "opponent_rank": null,
+      "opponent_team_rank": 127,
+      "opponent_weight": 126,
+      "opponent_rank": 52,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:47",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -6.07
+      "mv_impact": -6.69
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35698215132",
       "opponent_name": "Collin Burk",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": null,
+      "opponent_team_rank": 116,
       "opponent_weight": 132,
-      "opponent_rank": 85,
+      "opponent_rank": 119,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:38",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -9.41
+      "mv_impact": -9.33
     },
     {
       "date": "2025-12-04",
       "opponent_id": "35192354132",
       "opponent_name": "Jason Harris",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 102,
+      "opponent_team_rank": 100,
       "opponent_weight": 138,
-      "opponent_rank": 72,
+      "opponent_rank": 82,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:34",
       "event": "vs. Ohio County",
-      "mv_impact": -6.41
+      "mv_impact": -6.28
     },
     {
       "date": "2025-11-26",
       "opponent_id": "35493541132",
       "opponent_name": "Blaise Wilson",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 104,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 151,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
       "event": "vs. Ohio County",
-      "mv_impact": -11.45
+      "mv_impact": -11.31
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2115384615384615
+    "top33_bonus_ev_shrunk": 1.4615384615384615
   }
 }

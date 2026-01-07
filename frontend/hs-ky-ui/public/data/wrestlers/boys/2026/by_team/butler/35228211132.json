@@ -3,13 +3,13 @@
   "name": "Briella Levy",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 66,
-  "weight_class": 126,
+  "team_rank": 61,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 63,
+  "current_rank": 117,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 97.8,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 97.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,14 +27,19 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35077460132",
+      "opponent_rank": 118,
+      "opponent_name": "madelyn spraggins",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "35090044132",
-      "opponent_rank": 42,
+      "opponent_rank": 58,
       "opponent_name": "Maliyah Caloca",
       "method": "Fall 5:15"
     }
@@ -47,43 +52,46 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": 33,
       "opponent_weight": 120,
-      "opponent_rank": null,
+      "opponent_rank": 118,
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Spencer County",
-      "mv_impact": 0.85
+      "mv_impact": 2.14
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35074511132",
       "opponent_name": "Mollie O`daniel",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 53,
       "opponent_weight": 126,
-      "opponent_rank": null,
+      "opponent_rank": 152,
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:30",
       "event": "The Beast of the East",
-      "mv_impact": 0.19
+      "mv_impact": 1.24
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35090044132",
       "opponent_name": "Maliyah Caloca",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 74,
       "opponent_weight": 126,
-      "opponent_rank": 42,
+      "opponent_rank": 58,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:15",
       "event": "The Beast of the East",
-      "mv_impact": -5.57
+      "mv_impact": -6.52
     }
   ]
 }

@@ -9,7 +9,7 @@
   "current_rank": null,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,11 +27,16 @@
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34988553132",
+      "opponent_rank": 52,
+      "opponent_name": "Aiden Masteller",
+      "method": "Fall 2:00"
+    },
     "worst_loss": null
   },
   "match_list": [
@@ -40,9 +45,10 @@
       "opponent_id": "34993546132",
       "opponent_name": "Javen Dover",
       "opponent_team": "Moore",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 46,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 76,
+      "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -54,9 +60,10 @@
       "opponent_id": "34988553132",
       "opponent_name": "Aiden Masteller",
       "opponent_team": "Conner",
-      "opponent_team_rank": 26,
-      "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_team_rank": 10,
+      "opponent_weight": 138,
+      "opponent_rank": 52,
+      "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -67,6 +74,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

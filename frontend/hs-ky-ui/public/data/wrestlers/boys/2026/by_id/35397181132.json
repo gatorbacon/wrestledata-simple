@@ -3,39 +3,39 @@
   "name": "Jeremiah Thurman",
   "team": "LaRue County",
   "team_slug": "larue_county",
-  "team_rank": 28,
+  "team_rank": 36,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 57,
+  "current_rank": 79,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 115.1,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pf7": 11.0,
+    "pa7": 10.0,
+    "pd7": 1.0,
+    "si_plus": 107.5,
+    "df_plus": 93.7,
+    "apr_plus": 108.4,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35030261132",
-      "opponent_rank": 93,
-      "opponent_name": "Bradlee Mounce",
-      "method": "Fall 3:19"
+      "opponent_id": "35638223132",
+      "opponent_rank": 111,
+      "opponent_name": "Cameron Edison",
+      "method": "Dec 11-10"
     },
     "worst_loss": null
   },
@@ -46,19 +46,36 @@
       "opponent_name": "Bradlee Mounce",
       "opponent_team": "Pulaski County",
       "opponent_team_rank": 118,
-      "opponent_weight": 157,
-      "opponent_rank": 93,
+      "opponent_weight": 150,
+      "opponent_rank": 113,
+      "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:19",
       "event": "vs. Pulaski County",
-      "mv_impact": 1.27
+      "mv_impact": 3.22
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35638223132",
+      "opponent_name": "Cameron Edison",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 150,
+      "opponent_rank": 111,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-10",
+      "duration": "7:00",
+      "event": "vs. Russell County",
+      "mv_impact": 0.35
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6666666666666666
+    "top33_bonus_ev_shrunk": 0.9
   }
 }

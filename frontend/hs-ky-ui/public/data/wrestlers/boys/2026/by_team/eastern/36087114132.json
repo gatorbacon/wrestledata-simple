@@ -3,25 +3,25 @@
   "name": "Alyxander Goatley",
   "team": "Eastern",
   "team_slug": "eastern",
-  "team_rank": 78,
+  "team_rank": 73,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 59,
+  "current_rank": 73,
   "record": {
-    "overall": "3-1",
+    "overall": "4-1",
     "vs_ranked": "3-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 20.0,
     "pa7": 3.0,
     "pd7": 17.0,
-    "si_plus": 113.5,
-    "df_plus": 110.8,
+    "si_plus": 117.2,
+    "df_plus": 111.7,
     "apr_plus": 104.6,
-    "pin_rate": 0.667,
-    "bonus_rate": 1.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 1,
     "pins": 2
@@ -32,14 +32,14 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34996004132",
-      "opponent_rank": 79,
-      "opponent_name": "Bryson Barnett",
-      "method": "TF 20-3 0:00"
+      "opponent_id": "35618246132",
+      "opponent_rank": 105,
+      "opponent_name": "Justyce Gullion",
+      "method": "Fall 1:30"
     },
     "worst_loss": {
       "opponent_id": "34994785132",
-      "opponent_rank": 23,
+      "opponent_rank": 26,
       "opponent_name": "Timothy Montgomery",
       "method": "Fall 1:51"
     }
@@ -50,45 +50,60 @@
       "opponent_id": "34996004132",
       "opponent_name": "Bryson Barnett",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 56,
       "opponent_weight": 144,
-      "opponent_rank": 79,
+      "opponent_rank": 130,
+      "weight_class": "144",
       "result": "W",
       "method": "TF",
       "score": "20-3",
       "duration": "0:00",
-      "event": "vs. Eastern",
-      "mv_impact": 1.77
+      "event": "vs. Eastern"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Atherton"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35618246132",
       "opponent_name": "Justyce Gullion",
       "opponent_team": "Valley",
-      "opponent_team_rank": 130,
-      "opponent_weight": 150,
-      "opponent_rank": 88,
+      "opponent_team_rank": 132,
+      "opponent_weight": 144,
+      "opponent_rank": 105,
+      "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "vs. Valley",
-      "mv_impact": 2.06
+      "event": "vs. Valley"
     },
     {
       "date": "2025-12-16",
       "opponent_id": "35228420132",
       "opponent_name": "James Banks",
       "opponent_team": "Butler",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 61,
       "opponent_weight": 144,
-      "opponent_rank": 84,
+      "opponent_rank": 133,
+      "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:22",
-      "event": "vs. Eastern",
-      "mv_impact": 2.28
+      "event": "vs. Eastern"
     },
     {
       "date": "2025-12-16",
@@ -97,13 +112,13 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": 33,
       "opponent_weight": 144,
-      "opponent_rank": 23,
+      "opponent_rank": 26,
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:51",
-      "event": "vs. Spencer County",
-      "mv_impact": -3.61
+      "event": "vs. Spencer County"
     }
   ]
 }

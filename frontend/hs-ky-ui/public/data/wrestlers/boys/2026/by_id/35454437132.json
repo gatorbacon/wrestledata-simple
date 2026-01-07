@@ -3,13 +3,13 @@
   "name": "Ryland Gibson",
   "team": "Knox Central",
   "team_slug": "knox_central",
-  "team_rank": 97,
+  "team_rank": 95,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 99,
+  "current_rank": 147,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-3",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,8 +17,8 @@
     "pf7": 4.5,
     "pa7": 9.5,
     "pd7": -5.0,
-    "si_plus": 106.5,
-    "df_plus": 108.0,
+    "si_plus": 92.5,
+    "df_plus": 103.4,
     "apr_plus": 96.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
@@ -27,14 +27,19 @@
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35518109132",
+      "opponent_rank": 115,
+      "opponent_name": "Levi Gibbons",
+      "method": "Fall 1:01"
+    },
     "worst_loss": {
       "opponent_id": "35658491132",
-      "opponent_rank": 64,
+      "opponent_rank": 85,
       "opponent_name": "Gaige Love",
       "method": "Dec 8-4"
     }
@@ -45,80 +50,85 @@
       "opponent_id": "35658491132",
       "opponent_name": "Gaige Love",
       "opponent_team": "Pineville",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 115,
       "opponent_weight": 175,
-      "opponent_rank": 64,
+      "opponent_rank": 85,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:39",
       "event": "vs. Pineville",
-      "mv_impact": -5.3
+      "mv_impact": -7.0
     },
     {
       "date": "2025-12-16",
       "opponent_id": "35518109132",
       "opponent_name": "Levi Gibbons",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 61,
-      "opponent_weight": 175,
-      "opponent_rank": null,
+      "opponent_team_rank": 56,
+      "opponent_weight": 165,
+      "opponent_rank": 115,
+      "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:01",
       "event": "vs. Knox Central",
-      "mv_impact": 2.8
+      "mv_impact": 3.38
     },
     {
       "date": "2025-12-16",
       "opponent_id": "34995989132",
       "opponent_name": "Grayson Malicoat",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 56,
       "opponent_weight": 175,
-      "opponent_rank": 42,
+      "opponent_rank": 52,
+      "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:39",
       "event": "vs. Knox Central",
-      "mv_impact": -4.85
+      "mv_impact": -5.67
     },
     {
       "date": "2025-12-04",
       "opponent_id": "35420542132",
       "opponent_name": "Issac Brown",
       "opponent_team": "Whitley County",
-      "opponent_team_rank": 42,
-      "opponent_weight": 175,
-      "opponent_rank": null,
+      "opponent_team_rank": 138,
+      "opponent_weight": 165,
+      "opponent_rank": 51,
+      "weight_class": "175",
       "result": "L",
       "method": "DEC",
       "score": "11-5",
       "duration": "7:00",
       "event": "vs. Whitley County",
-      "mv_impact": -1.84
+      "mv_impact": -1.96
     },
     {
       "date": "2025-12-04",
       "opponent_id": "35658491132",
       "opponent_name": "Gaige Love",
       "opponent_team": "Pineville",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 115,
       "opponent_weight": 175,
-      "opponent_rank": 64,
+      "opponent_rank": 85,
+      "weight_class": "175",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
       "event": "vs. Pineville",
-      "mv_impact": -2.3
+      "mv_impact": -4.0
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.55
+    "top33_bonus_ev_shrunk": 1.09375
   }
 }

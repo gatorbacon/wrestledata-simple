@@ -3,13 +3,13 @@
   "name": "Chris Vissiere",
   "team": "LaRue County",
   "team_slug": "larue_county",
-  "team_rank": 28,
+  "team_rank": 36,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 69,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "0-0",
+    "overall": "2-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,22 +17,32 @@
     "pf7": 25.0,
     "pa7": 13.0,
     "pd7": 12.0,
-    "si_plus": 115.3,
-    "df_plus": 97.5,
-    "apr_plus": 90.8,
-    "pin_rate": 0.0,
+    "si_plus": 116.7,
+    "df_plus": 96.2,
+    "apr_plus": 96.3,
+    "pin_rate": 0.5,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35030263132",
+      "opponent_rank": 79,
+      "opponent_name": "evan Blackburn",
+      "method": "MD 26-13"
+    },
+    "worst_loss": {
+      "opponent_id": "35703098132",
+      "opponent_rank": 67,
+      "opponent_name": "Tyler Arnett",
+      "method": "Fall 0:30"
+    }
   },
   "match_list": [
     {
@@ -41,14 +51,15 @@
       "opponent_name": "Tyler Arnett",
       "opponent_team": "Pulaski County",
       "opponent_team_rank": 118,
-      "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 67,
+      "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
       "event": "vs. Pulaski County",
-      "mv_impact": -8.38
+      "mv_impact": -7.05
     },
     {
       "date": "2025-12-20",
@@ -57,18 +68,35 @@
       "opponent_team": "Pulaski County",
       "opponent_team_rank": 118,
       "opponent_weight": 144,
-      "opponent_rank": null,
+      "opponent_rank": 79,
+      "weight_class": "144",
       "result": "W",
       "method": "MD",
       "score": "26-13",
       "duration": "7:00",
       "event": "vs. Pulaski County",
-      "mv_impact": 2.98
+      "mv_impact": 3.36
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35638062132",
+      "opponent_name": "Madison Price",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 144,
+      "opponent_rank": 126,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County",
+      "mv_impact": 2.53
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

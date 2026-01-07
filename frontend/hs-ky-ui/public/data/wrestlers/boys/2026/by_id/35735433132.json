@@ -3,23 +3,23 @@
   "name": "Jayden Collins",
   "team": "Belfry",
   "team_slug": "belfry",
-  "team_rank": 60,
-  "weight_class": 215,
+  "team_rank": 55,
+  "weight_class": 285,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 202,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-1",
+    "overall": "1-6",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 88.1,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 90.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,93 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35013067132",
-      "opponent_rank": 64,
-      "opponent_name": "Jace Lipfird",
-      "method": "Fall 0:00"
+      "opponent_id": "35897121132",
+      "opponent_rank": 181,
+      "opponent_name": "Gage Clay",
+      "method": "Fall 4:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Hopkinsville"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34988678132",
+      "opponent_name": "Treshawn Crenshaw",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 35,
+      "opponent_weight": 285,
+      "opponent_rank": 21,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Christian County"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35144515132",
+      "opponent_name": "Anthony Merino",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 285,
+      "opponent_rank": 23,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. LaRue County"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35559540132",
+      "opponent_name": "Ethan Collins",
+      "opponent_team": "Knott County Central",
+      "opponent_team_rank": 94,
+      "opponent_weight": 215,
+      "opponent_rank": 27,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:28",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35897121132",
+      "opponent_name": "Gage Clay",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 215,
+      "opponent_rank": 181,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
     {
       "date": "2025-12-16",
       "opponent_id": "35013067132",
@@ -47,13 +122,13 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 113,
       "opponent_weight": 215,
-      "opponent_rank": 64,
+      "opponent_rank": 92,
+      "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Perry County Central",
-      "mv_impact": -6.83
+      "event": "vs. Perry County Central"
     },
     {
       "date": "2025-12-06",
@@ -62,18 +137,18 @@
       "opponent_team": "Pulaski County",
       "opponent_team_rank": 118,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 124,
+      "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
-      "event": "Anchor Down Showdown",
-      "mv_impact": -8.54
+      "event": "Anchor Down Showdown"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.55
+    "top33_bonus_ev_shrunk": 1.3333333333333333
   }
 }

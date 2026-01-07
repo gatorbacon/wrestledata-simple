@@ -3,13 +3,13 @@
   "name": "Narhiya Davis",
   "team": "Central",
   "team_slug": "central",
-  "team_rank": 70,
-  "weight_class": 132,
+  "team_rank": 65,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 99,
+  "current_rank": 160,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "0-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.1,
-    "df_plus": 102.2,
-    "apr_plus": 86.1,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 86.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,32 +28,49 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35900782132",
-      "opponent_rank": 79,
+      "opponent_rank": 95,
       "opponent_name": "Tyjuan Moody",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2025-12-23",
+      "opponent_id": "35076694132",
+      "opponent_name": "Lynndae Wales",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 124,
+      "opponent_weight": 120,
+      "opponent_rank": 83,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Shawnee",
+      "mv_impact": -6.97
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35900782132",
       "opponent_name": "Tyjuan Moody",
       "opponent_team": "Valley",
-      "opponent_team_rank": 130,
+      "opponent_team_rank": 132,
       "opponent_weight": 132,
-      "opponent_rank": 79,
+      "opponent_rank": 95,
+      "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Valley",
-      "mv_impact": -8.3
+      "mv_impact": -8.24
     }
   ]
 }
