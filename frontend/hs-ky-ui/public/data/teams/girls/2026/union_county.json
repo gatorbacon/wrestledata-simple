@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "union_county",
   "team_name": "Union County",
   "name": "Union County",
@@ -16,40 +17,201 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981244150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": null,
-      "114": "35564873132",
-      "120": null,
-      "126": "35565001132",
-      "132": "35565757132",
-      "138": "35566119132",
-      "145": "35566195132",
-      "152": "35565964132",
-      "165": null,
-      "185": "35566044132",
-      "235": "35565465132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.901331Z"
+  "generated_at_utc": "2026-01-08T12:52:16.268296Z",
+  "starters": {
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35564873132",
+      "name": "Tanya Bacon",
+      "current_rank": 3,
+      "xtp": 16.85,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 5.71,
+      "top10_record": {
+        "wins": 6,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 8,
+        "losses": 1
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35565001132",
+      "name": "brailey jackson",
+      "current_rank": 1,
+      "xtp": 21.83,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 5.27,
+      "top10_record": {
+        "wins": 6,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 13,
+        "losses": 1
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35565757132",
+      "name": "bailey buchanan",
+      "current_rank": 21,
+      "xtp": 3.29,
+      "xtp_p": 0.41,
+      "xtp_a": 0.85,
+      "xtp_b": 2.03,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 4
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35566119132",
+      "name": "tailor waddell",
+      "current_rank": 58,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 7
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35566195132",
+      "name": "emma cheatham",
+      "current_rank": 14,
+      "xtp": 5.18,
+      "xtp_p": 1.16,
+      "xtp_a": 1.37,
+      "xtp_b": 2.65,
+      "top10_record": {
+        "wins": 1,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 7,
+        "losses": 1
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35565964132",
+      "name": "jacelyn smith",
+      "current_rank": 8,
+      "xtp": 8.62,
+      "xtp_p": 2.43,
+      "xtp_a": 1.91,
+      "xtp_b": 4.28,
+      "top10_record": {
+        "wins": 2,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 10,
+        "losses": 2
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35566044132",
+      "name": "audrey wilson",
+      "current_rank": 7,
+      "xtp": 9.84,
+      "xtp_p": 3.31,
+      "xtp_a": 2.12,
+      "xtp_b": 4.41,
+      "top10_record": {
+        "wins": 1,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35565465132",
+      "name": "kenli lamb",
+      "current_rank": 35,
+      "xtp": 1.88,
+      "xtp_p": 0.11,
+      "xtp_a": 0.51,
+      "xtp_b": 1.26,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 138,
+      "wrestler_id": "35564944132",
+      "name": "sutton fuller",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35565693132",
+      "name": "maci rorer",
+      "wins": 0,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 41,
+      "losses": 25
+    },
+    "top10": {
+      "wins": 16,
+      "losses": 13
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

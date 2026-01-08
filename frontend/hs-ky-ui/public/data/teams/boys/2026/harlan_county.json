@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "harlan_county",
   "team_name": "Harlan County",
   "name": "Harlan County",
@@ -16,44 +17,282 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818327150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35640343132",
-      "113": "35639988132",
-      "120": null,
-      "126": "35640358132",
-      "132": null,
-      "138": "35640192132",
-      "144": "35640092132",
-      "150": "37175988132",
-      "157": null,
-      "165": "35639987132",
-      "175": "35639986132",
-      "190": "35639989132",
-      "215": "35639990132",
-      "285": "35640109132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.443500Z"
+  "generated_at_utc": "2026-01-08T12:52:14.870278Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35640343132",
+      "name": "Kristina Boggs",
+      "current_rank": 156,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35639988132",
+      "name": "Jason Maggard",
+      "current_rank": 26,
+      "xtp": 2.39,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.45,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35640358132",
+      "name": "Faith Saylor",
+      "current_rank": 167,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35640192132",
+      "name": "Cameron Fortune",
+      "current_rank": 118,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35640092132",
+      "name": "Connor Crider",
+      "current_rank": 166,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "37175988132",
+      "name": "Jamie Delph",
+      "current_rank": 174,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35639987132",
+      "name": "Josh Stewart",
+      "current_rank": 37,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35639986132",
+      "name": "Dylan Clem",
+      "current_rank": 44,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35639989132",
+      "name": "Michael Peterson",
+      "current_rank": 160,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35639990132",
+      "name": "Blake Short",
+      "current_rank": 61,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35640109132",
+      "name": "Izak Powers",
+      "current_rank": 190,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 113,
+      "wrestler_id": "35640281132",
+      "name": "Paiton Simpson",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35640209132",
+      "name": "Alex Hubbard",
+      "wins": 1,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35640247132",
+      "name": "Bo Eldridge",
+      "wins": 7,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.857
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35640172132",
+      "name": "Tyler Foster",
+      "wins": 4,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.75
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "37175968132",
+      "name": "Camden Middleton",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 1,
+      "losses": 3
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 0
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "christian_academylouisville",
   "team_name": "Christian Academy-Louisville",
   "name": "Christian Academy-Louisville",
@@ -16,44 +17,218 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818349150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": null,
-      "113": null,
-      "120": "37020541132",
-      "126": "37154838132",
-      "132": null,
-      "138": "35893459132",
-      "144": "35893636132",
-      "150": "35894125132",
-      "157": "35894290132",
-      "165": "37020537132",
-      "175": "35894193132",
-      "190": "35893897132",
-      "215": null,
-      "285": "35893832132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.345475Z"
+  "generated_at_utc": "2026-01-08T12:52:14.601084Z",
+  "starters": {
+    "120": {
+      "weight": 120,
+      "wrestler_id": "37020541132",
+      "name": "Matthew Ruiz",
+      "current_rank": 164,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "37154838132",
+      "name": "Isaac Bassett",
+      "current_rank": 181,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35893459132",
+      "name": "Nicholas Thacker",
+      "current_rank": 161,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35893636132",
+      "name": "Reagan Myers",
+      "current_rank": 167,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35894125132",
+      "name": "William Gimmel",
+      "current_rank": 135,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35894290132",
+      "name": "Ethan Curtis",
+      "current_rank": 75,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "37020537132",
+      "name": "Grayson Stine",
+      "current_rank": 184,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35894193132",
+      "name": "Mason Thomas",
+      "current_rank": 269,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35893897132",
+      "name": "Elijah Hare",
+      "current_rank": 150,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35893832132",
+      "name": "Mason Baker",
+      "current_rank": 33,
+      "xtp": 1.22,
+      "xtp_p": 0.15,
+      "xtp_a": 0.44,
+      "xtp_b": 0.63,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 0,
+      "losses": 4
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 0
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

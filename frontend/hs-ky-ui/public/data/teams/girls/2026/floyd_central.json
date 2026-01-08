@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "floyd_central",
   "team_name": "Floyd Central",
   "name": "Floyd Central",
@@ -16,40 +17,48 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981282150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": null,
-      "114": "35703772132",
-      "120": null,
-      "126": "35703776132",
-      "132": null,
-      "138": null,
-      "145": null,
-      "152": null,
-      "165": null,
-      "185": null,
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.818158Z"
+  "generated_at_utc": "2026-01-08T12:52:15.949144Z",
+  "starters": {
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35703772132",
+      "name": "Kaydence Branham",
+      "current_rank": 94,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35703776132",
+      "name": "Kaitlyn Hall",
+      "current_rank": 94,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": []
 }

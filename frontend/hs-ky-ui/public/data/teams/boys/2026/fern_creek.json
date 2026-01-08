@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "fern_creek",
   "team_name": "Fern Creek",
   "name": "Fern Creek",
@@ -16,44 +17,561 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818237150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35217315132",
-      "113": "35217640132",
-      "120": "35090039132",
-      "126": "35659501132",
-      "132": "35090020132",
-      "138": "35090027132",
-      "144": "35217511132",
-      "150": "35090032132",
-      "157": "35090026132",
-      "165": "35217816132",
-      "175": "35090033132",
-      "190": "35217308132",
-      "215": "35090038132",
-      "285": "35090028132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.399133Z"
+  "generated_at_utc": "2026-01-08T12:52:14.752187Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35217315132",
+      "name": "Aaliyah Bronger",
+      "current_rank": 72,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35217640132",
+      "name": "Reash Neupane",
+      "current_rank": 51,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35090039132",
+      "name": "Aydin Safarov",
+      "current_rank": 99,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35659501132",
+      "name": "Ridvan Rustamov",
+      "current_rank": 53,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35090020132",
+      "name": "Matthew Morgan",
+      "current_rank": 66,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35090027132",
+      "name": "Aydin Kadriov",
+      "current_rank": 11,
+      "xtp": 4.86,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 1.59,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 2
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35217511132",
+      "name": "Mason List",
+      "current_rank": 93,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35090032132",
+      "name": "Robbie Ellis",
+      "current_rank": 60,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 10
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35090026132",
+      "name": "Jorge Ramos",
+      "current_rank": 59,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35217816132",
+      "name": "Kaleb Walz",
+      "current_rank": 28,
+      "xtp": 1.38,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 0.64,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 3
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35090033132",
+      "name": "Alan Rivera",
+      "current_rank": 37,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35217308132",
+      "name": "Riley Burton",
+      "current_rank": 3,
+      "xtp": 14.76,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 3.62,
+      "top10_record": {
+        "wins": 2,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 6,
+        "losses": 1
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35090038132",
+      "name": "Shoron Briscoe",
+      "current_rank": 51,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 5
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35090028132",
+      "name": "Trenton Woodford",
+      "current_rank": 36,
+      "xtp": 1.16,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.81,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 8
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 113,
+      "wrestler_id": "35342360132",
+      "name": "Antonio Montana",
+      "wins": 3,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35217375132",
+      "name": "Aramis Cortez Ramos",
+      "wins": 3,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35217820132",
+      "name": "Leilani Velasquez",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35090024132",
+      "name": "Connor Holmes",
+      "wins": 7,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.429
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35090043132",
+      "name": "Emma Towles",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35090044132",
+      "name": "Maliyah Caloca",
+      "wins": 2,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35217211132",
+      "name": "Polat Akmedov",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35090023132",
+      "name": "Seth Frank",
+      "wins": 8,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.75
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35090030132",
+      "name": "Justin Torres",
+      "wins": 2,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35217574132",
+      "name": "Gavin Meiller",
+      "wins": 5,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.6
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35217398132",
+      "name": "Jackson Gaines",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35090025132",
+      "name": "Kamal Kotolov",
+      "wins": 5,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.6
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35217526132",
+      "name": "Ruslan Madzhitov",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35217197132",
+      "name": "Brylynn Adcox",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35090031132",
+      "name": "Mohammed Abomaash",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "36272855132",
+      "name": "Nathaniel Sevilleno",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35217456132",
+      "name": "Yeshua Gutierrez",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35253543132",
+      "name": "Malachi Bethel",
+      "wins": 3,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35090022132",
+      "name": "Shakir Beridze",
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35217382132",
+      "name": "Yasuan Fonte",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35090045132",
+      "name": "Divine Mujanukaire",
+      "wins": 2,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35090034132",
+      "name": "Ebrima Saine",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35217572132",
+      "name": "Gabriel Meiller",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35436461132",
+      "name": "Jaxson Mcfarland",
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35217367132",
+      "name": "Peyton Carr",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35090029132",
+      "name": "Ammed Madzhitov",
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35253530132",
+      "name": "Andre Carroll",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35436512132",
+      "name": "Khaleel Mcfarland",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35253568132",
+      "name": "George Ernst",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35090021132",
+      "name": "Nathan Tally",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 15,
+      "losses": 48
+    },
+    "top10": {
+      "wins": 2,
+      "losses": 10
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

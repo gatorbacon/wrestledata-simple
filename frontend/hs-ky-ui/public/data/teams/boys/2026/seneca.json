@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "seneca",
   "team_name": "Seneca",
   "name": "Seneca",
@@ -16,44 +17,327 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818284150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": null,
-      "113": null,
-      "120": "35522910132",
-      "126": "35562423132",
-      "132": "35522911132",
-      "138": "35562521132",
-      "144": "35522912132",
-      "150": "35562668132",
-      "157": "35522906132",
-      "165": "35562301132",
-      "175": "35522909132",
-      "190": "35522904132",
-      "215": "35522908132",
-      "285": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.657853Z"
+  "generated_at_utc": "2026-01-08T12:52:15.442025Z",
+  "starters": {
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35522910132",
+      "name": "Daveon Colbert",
+      "current_rank": 66,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35562423132",
+      "name": "Joshua Avila",
+      "current_rank": 103,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35522911132",
+      "name": "Koltyn Eichberger",
+      "current_rank": 96,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35562521132",
+      "name": "Erick Martinez",
+      "current_rank": 114,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35522912132",
+      "name": "Caleb Jackson",
+      "current_rank": 116,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35562668132",
+      "name": "Kayden Cox",
+      "current_rank": 132,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35522906132",
+      "name": "Treyvon Truss",
+      "current_rank": 22,
+      "xtp": 2.83,
+      "xtp_p": 0.37,
+      "xtp_a": 0.81,
+      "xtp_b": 1.65,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 1
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35562301132",
+      "name": "Nikolas Elsey",
+      "current_rank": 171,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35522909132",
+      "name": "Region Gurung",
+      "current_rank": 126,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35522904132",
+      "name": "Meeko Heady",
+      "current_rank": 100,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35522908132",
+      "name": "Jonathan Pitt",
+      "current_rank": 178,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 120,
+      "wrestler_id": "35562120132",
+      "name": "Omar Lopez",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35904128132",
+      "name": "Attiqullah Zadran",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35562201132",
+      "name": "De Mayiah Stephenson",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35522907132",
+      "name": "Ash Patton",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "36793536132",
+      "name": "Joseph Nix",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35562778132",
+      "name": "Gabe Gray",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35562349132",
+      "name": "Leroy Garcia",
+      "wins": 1,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35562249132",
+      "name": "Yasmine Legendre",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35562560132",
+      "name": "Jayden Erhahon",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35562707132",
+      "name": "McAlvin Liberal",
+      "wins": 1,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 2,
+      "losses": 7
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 2
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

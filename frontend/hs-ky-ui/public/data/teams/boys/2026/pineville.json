@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "pineville",
   "team_name": "Pineville",
   "name": "Pineville",
@@ -16,44 +17,354 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818347150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35658131132",
-      "113": "35659153132",
-      "120": "35658594132",
-      "126": "35658558132",
-      "132": "36434132132",
-      "138": "35659174132",
-      "144": "36434072132",
-      "150": "35996369132",
-      "157": "35658023132",
-      "165": null,
-      "175": "35658491132",
-      "190": "35655107132",
-      "215": "35658077132",
-      "285": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.613693Z"
+  "generated_at_utc": "2026-01-08T12:52:15.328500Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35658131132",
+      "name": "Camron Lawson",
+      "current_rank": 123,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35659153132",
+      "name": "Addyson Parkey",
+      "current_rank": 105,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35658594132",
+      "name": "Christian Mills",
+      "current_rank": 110,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35658558132",
+      "name": "Elijah McDermott",
+      "current_rank": 23,
+      "xtp": 2.67,
+      "xtp_p": 0.37,
+      "xtp_a": 0.81,
+      "xtp_b": 1.49,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 1
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "36434132132",
+      "name": "Dalton Johnson",
+      "current_rank": 256,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35659174132",
+      "name": "Hunter Tolliver",
+      "current_rank": 184,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "36434072132",
+      "name": "Emma Cupp",
+      "current_rank": 179,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35996369132",
+      "name": "Braxton Baker",
+      "current_rank": 164,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35658023132",
+      "name": "Gabriel Kells",
+      "current_rank": 136,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35658491132",
+      "name": "Gaige Love",
+      "current_rank": 85,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35655107132",
+      "name": "Justin Cupp",
+      "current_rank": 178,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35658077132",
+      "name": "Savannah Kells",
+      "current_rank": 267,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 106,
+      "wrestler_id": "35658472132",
+      "name": "Ben Lingar",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 106,
+      "wrestler_id": "35654908132",
+      "name": "Kaleb Baumgartner",
+      "wins": 2,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 113,
+      "wrestler_id": "35658748132",
+      "name": "Jeremiah Mills",
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 113,
+      "wrestler_id": "35654998132",
+      "name": "Kadience Blackburn",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35657993132",
+      "name": "Natalee Cupp",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35659226132",
+      "name": "Monica Whitehead",
+      "wins": 2,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35655045132",
+      "name": "Braxton Buttery",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35658009132",
+      "name": "William Hendrickson",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35654867132",
+      "name": "Derrick Bargo",
+      "wins": 2,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35659200132",
+      "name": "Chloe Whitehead",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35658621132",
+      "name": "Jade Mills",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 3,
+      "losses": 11
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 2
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

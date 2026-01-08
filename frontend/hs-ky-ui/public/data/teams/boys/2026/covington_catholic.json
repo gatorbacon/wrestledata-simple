@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "covington_catholic",
   "team_name": "Covington Catholic",
   "name": "Covington Catholic",
@@ -16,44 +17,381 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818228150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35488537132",
-      "113": "35587665132",
-      "120": "35488260132",
-      "126": null,
-      "132": "35488119132",
-      "138": "35488263132",
-      "144": "35488264132",
-      "150": "35488553132",
-      "157": "35488270132",
-      "165": "35488269132",
-      "175": "35488163132",
-      "190": "35488261132",
-      "215": "35587762132",
-      "285": "35488267132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.361237Z"
+  "generated_at_utc": "2026-01-08T12:52:14.649774Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35488537132",
+      "name": "Branson Dailey",
+      "current_rank": 217,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35587665132",
+      "name": "Cohen Fedders",
+      "current_rank": 97,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35488260132",
+      "name": "Emilio Rodriguez",
+      "current_rank": 19,
+      "xtp": 3.37,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 1.94,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 4
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35488119132",
+      "name": "Jake Adams",
+      "current_rank": 36,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35488263132",
+      "name": "Landon Windeler",
+      "current_rank": 36,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 1,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35488264132",
+      "name": "Braden Young",
+      "current_rank": 121,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35488553132",
+      "name": "Paxton Jones",
+      "current_rank": 148,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35488270132",
+      "name": "Aidan Maher",
+      "current_rank": 6,
+      "xtp": 8.83,
+      "xtp_p": 4.26,
+      "xtp_a": 2.33,
+      "xtp_b": 2.24,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35488269132",
+      "name": "Craig Briggs",
+      "current_rank": 22,
+      "xtp": 2.67,
+      "xtp_p": 0.41,
+      "xtp_a": 0.85,
+      "xtp_b": 1.41,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35488163132",
+      "name": "Keegan Bishop",
+      "current_rank": 5,
+      "xtp": 12.47,
+      "xtp_p": 5.13,
+      "xtp_a": 2.53,
+      "xtp_b": 4.81,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35488261132",
+      "name": "Antonio Rodriguez",
+      "current_rank": 22,
+      "xtp": 2.61,
+      "xtp_p": 0.45,
+      "xtp_a": 0.91,
+      "xtp_b": 1.25,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 1
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35587762132",
+      "name": "Dylan Brown",
+      "current_rank": 38,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35488267132",
+      "name": "Wyatt Merk",
+      "current_rank": 175,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 120,
+      "wrestler_id": "35587700132",
+      "name": "Connor Fohl",
+      "wins": 2,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35488266132",
+      "name": "Garrett Fohl",
+      "wins": 8,
+      "losses": 11,
+      "top25_wins": 0,
+      "bonus_rate": 0.625
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35488625132",
+      "name": "Levi Plummer",
+      "wins": 3,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.333
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35489036132",
+      "name": "Brayden Koenig",
+      "wins": 3,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35488494132",
+      "name": "Troy Chamblee",
+      "wins": 0,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35488589132",
+      "name": "Wade Koester",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35488273132",
+      "name": "Karson Collins",
+      "wins": 11,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.909
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35587657132",
+      "name": "Calvin Schnitzler",
+      "wins": 0,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35488272132",
+      "name": "Teddy Tapke",
+      "wins": 5,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.4
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35488755132",
+      "name": "Mark Schmitt",
+      "wins": 8,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.875
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35488262132",
+      "name": "Kingston Dailey",
+      "wins": 2,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35488268132",
+      "name": "Tyler Heck",
+      "wins": 9,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.889
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 8,
+      "losses": 21
+    },
+    "top10": {
+      "wins": 1,
+      "losses": 12
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

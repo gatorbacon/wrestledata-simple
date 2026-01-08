@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "shawnee",
   "team_name": "Shawnee",
   "name": "Shawnee",
@@ -16,44 +17,336 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818285150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35012794132",
-      "113": "35076691132",
-      "120": "35076694132",
-      "126": "35076690132",
-      "132": "35066867132",
-      "138": "35639351132",
-      "144": "35076701132",
-      "150": "36951568132",
-      "157": "35012796132",
-      "165": "35639332132",
-      "175": null,
-      "190": "35639353132",
-      "215": "35012795132",
-      "285": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.660996Z"
+  "generated_at_utc": "2026-01-08T12:52:15.450312Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35012794132",
+      "name": "Chuck Bentancourt",
+      "current_rank": 23,
+      "xtp": 2.48,
+      "xtp_p": 0.37,
+      "xtp_a": 0.81,
+      "xtp_b": 1.3,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 1
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35076691132",
+      "name": "Khareem Washington",
+      "current_rank": 67,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35076694132",
+      "name": "Lynndae Wales",
+      "current_rank": 83,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35076690132",
+      "name": "Jayden Miranda",
+      "current_rank": 153,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35066867132",
+      "name": "Kaden Warren",
+      "current_rank": 40,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35639351132",
+      "name": "Abdi Mohamud",
+      "current_rank": 84,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35076701132",
+      "name": "Malik Quarles",
+      "current_rank": 129,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "36951568132",
+      "name": "Keyshaun Warren",
+      "current_rank": 134,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35012796132",
+      "name": "Devontay Cox",
+      "current_rank": 112,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35639332132",
+      "name": "George Orradams",
+      "current_rank": 223,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35639353132",
+      "name": "Dylan Braun",
+      "current_rank": 241,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35012795132",
+      "name": "Brayden Miller",
+      "current_rank": 90,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 106,
+      "wrestler_id": "35076693132",
+      "name": "San`Tori Brown",
+      "wins": 2,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35638848132",
+      "name": "De`onna Owens",
+      "wins": 1,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35076692132",
+      "name": "Miguel Torres",
+      "wins": 7,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.429
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35638876132",
+      "name": "Dylan Keown",
+      "wins": 1,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "36951239132",
+      "name": "Luis Tirado",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35076700132",
+      "name": "Dawmeisha Smith",
+      "wins": 2,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35639358132",
+      "name": "Derrick Simms",
+      "wins": 1,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35639342132",
+      "name": "Jeremiah Johnson",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35638841132",
+      "name": "Larhyia Thomas",
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 3,
+      "losses": 13
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 5
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

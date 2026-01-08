@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "anderson_county",
   "team_name": "Anderson County",
   "name": "Anderson County",
@@ -16,44 +17,264 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818208150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": null,
-      "113": "37161637132",
-      "120": null,
-      "126": null,
-      "132": "35520541132",
-      "138": "35519992132",
-      "144": "35520779132",
-      "150": "35519650132",
-      "157": "35527112132",
-      "165": "35527478132",
-      "175": "35519852132",
-      "190": "35520143132",
-      "215": "35634658132",
-      "285": "35520358132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.262063Z"
+  "generated_at_utc": "2026-01-08T12:52:14.366599Z",
+  "starters": {
+    "113": {
+      "weight": 113,
+      "wrestler_id": "37161637132",
+      "name": "AnnaLee McKewen",
+      "current_rank": 171,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35520541132",
+      "name": "Corban Nance",
+      "current_rank": 1,
+      "xtp": 21.29,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 4.73,
+      "top10_record": {
+        "wins": 2,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 6,
+        "losses": 0
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35519992132",
+      "name": "Brice Burford",
+      "current_rank": 65,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 5
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35520779132",
+      "name": "Ashton Edwards",
+      "current_rank": 171,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35519650132",
+      "name": "Jaylen Crutcher",
+      "current_rank": 41,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35527112132",
+      "name": "Carson Nance",
+      "current_rank": 3,
+      "xtp": 13.52,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 2.38,
+      "top10_record": {
+        "wins": 5,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 7,
+        "losses": 0
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35527478132",
+      "name": "Ahlijah Bolling",
+      "current_rank": 168,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35519852132",
+      "name": "Braxton Mackey",
+      "current_rank": 11,
+      "xtp": 6.68,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 3.41,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 4
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35520143132",
+      "name": "Edwin Neighbert",
+      "current_rank": 233,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35634658132",
+      "name": "Eli McCann",
+      "current_rank": 143,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35520358132",
+      "name": "Ezekiel Pacheco",
+      "current_rank": 90,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 175,
+      "wrestler_id": "35520472132",
+      "name": "Wyatt Chilton",
+      "wins": 0,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35520696132",
+      "name": "Ethan Hawkins",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "36015944132",
+      "name": "Weston Stovall",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 18,
+      "losses": 16
+    },
+    "top10": {
+      "wins": 7,
+      "losses": 5
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

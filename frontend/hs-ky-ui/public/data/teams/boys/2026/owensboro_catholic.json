@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "owensboro_catholic",
   "team_name": "Owensboro Catholic",
   "name": "Owensboro Catholic",
@@ -16,44 +17,237 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818316150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35698533132",
-      "113": null,
-      "120": null,
-      "126": "35049797132",
-      "132": null,
-      "138": "35049803132",
-      "144": "35049802132",
-      "150": "35049795132",
-      "157": null,
-      "165": "35049796132",
-      "175": "35698529132",
-      "190": "35049801132",
-      "215": null,
-      "285": "35049806132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.588515Z"
+  "generated_at_utc": "2026-01-08T12:52:15.271315Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35698533132",
+      "name": "Mason Clark",
+      "current_rank": 125,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35049797132",
+      "name": "Logan Mongold",
+      "current_rank": 44,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35049803132",
+      "name": "Simon Thompson",
+      "current_rank": 49,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35049802132",
+      "name": "Sam Brauer",
+      "current_rank": 56,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35049795132",
+      "name": "Eli Wilson",
+      "current_rank": 66,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35049796132",
+      "name": "Thomas Brauer",
+      "current_rank": 12,
+      "xtp": 5.57,
+      "xtp_p": 1.4,
+      "xtp_a": 1.47,
+      "xtp_b": 2.7,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 0
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35698529132",
+      "name": "Jackson Osbourne",
+      "current_rank": 199,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35049801132",
+      "name": "Nolan Clark",
+      "current_rank": 58,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35049806132",
+      "name": "Tristen French",
+      "current_rank": 56,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 126,
+      "wrestler_id": "35049814132",
+      "name": "Felipe Guadarrama",
+      "wins": 3,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.333
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35049794132",
+      "name": "Tyler Clatterbuck",
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35049798132",
+      "name": "Landon Mongold",
+      "wins": 6,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.833
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35049804132",
+      "name": "Eric McCarthy",
+      "wins": 2,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 4,
+      "losses": 7
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 1
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

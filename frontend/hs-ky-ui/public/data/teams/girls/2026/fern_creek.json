@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "fern_creek",
   "team_name": "Fern Creek",
   "name": "Fern Creek",
@@ -16,40 +17,120 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981182150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": "35774463132",
-      "114": null,
-      "120": "35774460132",
-      "126": "35774461132",
-      "132": null,
-      "138": null,
-      "145": null,
-      "152": null,
-      "165": "35774462132",
-      "185": null,
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.817301Z"
+  "generated_at_utc": "2026-01-08T12:52:15.945963Z",
+  "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35774463132",
+      "name": "Aaliyah Bronger",
+      "current_rank": 13,
+      "xtp": 5.67,
+      "xtp_p": 1.16,
+      "xtp_a": 1.37,
+      "xtp_b": 3.14,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 3
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35774460132",
+      "name": "Emma Towles",
+      "current_rank": 79,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35774461132",
+      "name": "Maliyah Caloca",
+      "current_rank": 45,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35774462132",
+      "name": "Divine Mujanukaire",
+      "current_rank": 26,
+      "xtp": 2.83,
+      "xtp_p": 0.37,
+      "xtp_a": 0.81,
+      "xtp_b": 1.65,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 120,
+      "wrestler_id": "35774464132",
+      "name": "Leilani Velasquez",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 4,
+      "losses": 7
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 4
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

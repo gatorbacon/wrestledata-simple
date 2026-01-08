@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "montgomery_county",
   "team_name": "Montgomery County",
   "name": "Montgomery County",
@@ -16,44 +17,182 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818264150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35124897132",
-      "113": null,
-      "120": null,
-      "126": null,
-      "132": "35124883132",
-      "138": "35124870132",
-      "144": "35124967132",
-      "150": "35273350132",
-      "157": "35124935132",
-      "165": "35124878132",
-      "175": null,
-      "190": null,
-      "215": "36745416132",
-      "285": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.557011Z"
+  "generated_at_utc": "2026-01-08T12:52:15.173234Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35124897132",
+      "name": "Preston Jackson",
+      "current_rank": 56,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35124883132",
+      "name": "Daxton Baker",
+      "current_rank": 15,
+      "xtp": 3.56,
+      "xtp_p": 0.7,
+      "xtp_a": 1.18,
+      "xtp_b": 1.68,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 3
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35124870132",
+      "name": "Hunter Oakley",
+      "current_rank": 101,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 5
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35124967132",
+      "name": "Gage Williams",
+      "current_rank": 143,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35273350132",
+      "name": "Wilson Patrick",
+      "current_rank": 141,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35124935132",
+      "name": "Noah Weissbach",
+      "current_rank": 32,
+      "xtp": 1.24,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.89,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35124878132",
+      "name": "Ethan Brandhorst",
+      "current_rank": 39,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "36745416132",
+      "name": "Alex McCoy",
+      "current_rank": 163,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    }
+  },
+  "remaining": [],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 2,
+      "losses": 21
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 8
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

@@ -198,77 +198,34 @@ function safe(value, formatter) {
     // Get gender from URL or default to boys
     const gender = getGenderFromURL();
     const season = getSeasonFromURL();
-    const weights = getWeightsForGender(gender);
     
-    console.log(`[HS Wrestler] Searching for wrestler ${id} in ${gender} ${season}...`);
+    console.log(`[HS Wrestler] Loading wrestler profile ${id} for ${gender} ${season}...`);
     
-    // Search across all weight files
-    let wrestlerData = null;
-    let foundWeight = null;
-    
-    for (const weight of weights) {
-      try {
-        const url = buildRankingsURL(gender, season, weight);
-        console.log(`[HS Wrestler] Checking ${url}...`);
-        
-        const response = await fetch(url);
-        if (!response.ok) {
-          console.warn(`[HS Wrestler] Failed to load ${url}: ${response.status}`);
-          continue;
-        }
-        
-        const data = await response.json();
-        const wrestlers = data?.wrestlers || [];
-        
-        // Search for wrestler by ID
-        const found = wrestlers.find(w => String(w.wrestler_id) === String(id));
-        if (found) {
-          wrestlerData = found;
-          foundWeight = weight;
-          console.log(`[HS Wrestler] Found wrestler ${id} at ${weight} lbs`);
-          break;
-        }
-      } catch (err) {
-        console.warn(`[HS Wrestler] Error checking weight ${weight}:`, err);
-        continue;
-      }
-    }
-    
-    // Load full wrestler profile from wrestlers directory
-    // Try to load from HS wrestler profiles even if not found in rankings
+    // Load wrestler profile directly - it contains all required data
+    // No need to search ranking files - profile already has current_rank, weight_class, etc.
     try {
       const profileUrl = `/data/wrestlers/${gender}/${season}/by_id/${id}.json`;
-      console.log(`[HS Wrestler] Loading full profile from ${profileUrl}...`);
+      console.log(`[HS Wrestler] Loading profile from ${profileUrl}...`);
       
       const profileResponse = await fetch(profileUrl);
-      if (profileResponse.ok) {
-        const fullProfile = await profileResponse.json();
-        // Merge ranking data with full profile if found in rankings
-        // BUT preserve the full profile's record structure (which has overall, vs_top25, vs_top10)
-        if (wrestlerData) {
-          const originalRecord = fullProfile.record; // Preserve original record structure
-          Object.assign(fullProfile, wrestlerData);
-          if (originalRecord) {
-            fullProfile.record = originalRecord; // Restore original record structure
-          }
+      if (!profileResponse.ok) {
+        if (profileResponse.status === 404) {
+          console.error(`[HS Wrestler] Wrestler ${id} not found in ${gender} ${season} profile files`);
+          document.getElementById("wrestler-name").textContent = "Wrestler Not Found";
+          document.getElementById("wrestler-meta").textContent = `Wrestler ID ${id} not found in HS ${gender} profiles for season ${season}`;
+          return;
         }
-        renderWrestlerProfile(fullProfile);
-        return;
+        throw new Error(`Failed to load profile: ${profileResponse.status} ${profileResponse.statusText}`);
       }
+      
+      const profile = await profileResponse.json();
+      console.log(`[HS Wrestler] Profile loaded successfully`);
+      renderWrestlerProfile(profile);
     } catch (err) {
-      console.warn(`[HS Wrestler] Could not load full profile:`, err);
+      console.error(`[HS Wrestler] Error loading profile:`, err);
+      document.getElementById("wrestler-name").textContent = "Error Loading Profile";
+      document.getElementById("wrestler-meta").textContent = err.message || "Failed to load wrestler profile";
     }
-    
-    // If not found in rankings and profile file doesn't exist, show error
-    if (!wrestlerData) {
-      console.error(`[HS Wrestler] Wrestler ${id} not found in ${gender} ${season} rankings or profile files`);
-      document.getElementById("wrestler-name").textContent = "Wrestler Not Found";
-      document.getElementById("wrestler-meta").textContent = `Wrestler ID ${id} not found in HS ${gender} rankings for season ${season}`;
-      return;
-    }
-    
-    // Fallback: render with ranking data only
-    renderWrestlerProfile(wrestlerData);
   }
   
   // ===============================

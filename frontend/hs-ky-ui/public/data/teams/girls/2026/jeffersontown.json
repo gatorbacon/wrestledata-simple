@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "jeffersontown",
   "team_name": "Jeffersontown",
   "name": "Jeffersontown",
@@ -16,40 +17,128 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981194150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": "36652522132",
-      "107": null,
-      "114": "36652519132",
-      "120": null,
-      "126": null,
-      "132": "36881479132",
-      "138": "35333640132",
-      "145": null,
-      "152": null,
-      "165": "36652531132",
-      "185": null,
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.839522Z"
+  "generated_at_utc": "2026-01-08T12:52:16.034461Z",
+  "starters": {
+    "100": {
+      "weight": 100,
+      "wrestler_id": "36652522132",
+      "name": "Karen Garcia",
+      "current_rank": 56,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "36652519132",
+      "name": "Vilma Vaquiz",
+      "current_rank": 76,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "36881479132",
+      "name": "Jasmine Taylor",
+      "current_rank": 77,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35333640132",
+      "name": "Harmony Walker",
+      "current_rank": 72,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "36652531132",
+      "name": "Daisy Sanchez",
+      "current_rank": 72,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 0,
+      "losses": 1
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 0
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

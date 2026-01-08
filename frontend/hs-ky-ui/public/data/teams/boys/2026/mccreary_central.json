@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "mccreary_central",
   "team_name": "Mccreary Central",
   "name": "Mccreary Central",
@@ -16,44 +17,372 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818262150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35599181132",
-      "113": "35599176132",
-      "120": "35599163132",
-      "126": "35679488132",
-      "132": "35600410132",
-      "138": "35599164132",
-      "144": "35599171132",
-      "150": "35599161132",
-      "157": "35599169132",
-      "165": "35599162132",
-      "175": "35599166132",
-      "190": "35600443132",
-      "215": "35599165132",
-      "285": "35600445132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.547587Z"
+  "generated_at_utc": "2026-01-08T12:52:15.141666Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35599181132",
+      "name": "Alex Upchurch",
+      "current_rank": 12,
+      "xtp": 5.45,
+      "xtp_p": 1.4,
+      "xtp_a": 1.47,
+      "xtp_b": 2.58,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35599176132",
+      "name": "Ricky Parriman",
+      "current_rank": 16,
+      "xtp": 4.12,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 2.57,
+      "top10_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 6,
+        "losses": 6
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35599163132",
+      "name": "Lucas Parriman",
+      "current_rank": 35,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 7
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35679488132",
+      "name": "Liam Greene",
+      "current_rank": 79,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35600410132",
+      "name": "Maddox King",
+      "current_rank": 58,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35599164132",
+      "name": "Julius Parriman",
+      "current_rank": 17,
+      "xtp": 3.58,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 2.03,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 5
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35599171132",
+      "name": "Noah Metz",
+      "current_rank": 53,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35599161132",
+      "name": "Nathan Kramer",
+      "current_rank": 42,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 5
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35599169132",
+      "name": "Bryson Williams",
+      "current_rank": 41,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35599162132",
+      "name": "Nate Stephens",
+      "current_rank": 35,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35599166132",
+      "name": "Darius Ridner",
+      "current_rank": 53,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 5
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35600443132",
+      "name": "Talon West",
+      "current_rank": 108,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35599165132",
+      "name": "Triston Corder",
+      "current_rank": 32,
+      "xtp": 1.35,
+      "xtp_p": 0.15,
+      "xtp_a": 0.44,
+      "xtp_b": 0.76,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 9
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35600445132",
+      "name": "Rylan Kidd",
+      "current_rank": 84,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 113,
+      "wrestler_id": "35599160132",
+      "name": "Max Gilreath",
+      "wins": 6,
+      "losses": 3,
+      "top25_wins": 1,
+      "bonus_rate": 0.833
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35599167132",
+      "name": "Nathan Tucker",
+      "wins": 6,
+      "losses": 13,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35600402132",
+      "name": "Brandon Perry",
+      "wins": 5,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.6
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35600420132",
+      "name": "Nathan Chadwell",
+      "wins": 6,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35599168132",
+      "name": "Keegan Perry",
+      "wins": 5,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.6
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35600436132",
+      "name": "Kahner Sexton",
+      "wins": 1,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35634581132",
+      "name": "Weston Tucker",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35634614132",
+      "name": "Simeon Garland",
+      "wins": 1,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35600448132",
+      "name": "Jayden Foster",
+      "wins": 4,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 13,
+      "losses": 63
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 16
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

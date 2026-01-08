@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "greenup_county",
   "team_name": "Greenup County",
   "name": "Greenup County",
@@ -16,44 +17,381 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818326150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35635480132",
-      "113": null,
-      "120": "35635389132",
-      "126": "35635561132",
-      "132": "35635473132",
-      "138": "35635496132",
-      "144": "35635414132",
-      "150": "35914803132",
-      "157": "35635317132",
-      "165": "35635399132",
-      "175": "35635536132",
-      "190": "35635303132",
-      "215": "35635527132",
-      "285": "35635464132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.437152Z"
+  "generated_at_utc": "2026-01-08T12:52:14.852540Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35635480132",
+      "name": "Waylon Hall",
+      "current_rank": 127,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35635389132",
+      "name": "Hunter Crabtree",
+      "current_rank": 37,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35635561132",
+      "name": "Max Worthington",
+      "current_rank": 57,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35635473132",
+      "name": "Liam Thomas",
+      "current_rank": 145,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35635496132",
+      "name": "David Craig",
+      "current_rank": 34,
+      "xtp": 0.79,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.44,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 1
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35635414132",
+      "name": "Jaydan Barry",
+      "current_rank": 118,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35914803132",
+      "name": "Gage Lemarque",
+      "current_rank": 137,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35635317132",
+      "name": "Cooper Jobe",
+      "current_rank": 80,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35635399132",
+      "name": "Aiden Baker",
+      "current_rank": 73,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35635536132",
+      "name": "Damien Parsons",
+      "current_rank": 148,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35635303132",
+      "name": "Gunner Salsbury",
+      "current_rank": 62,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35635527132",
+      "name": "Wade Perkins",
+      "current_rank": 98,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35635464132",
+      "name": "Carter Timberlake",
+      "current_rank": 194,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 126,
+      "wrestler_id": "35635756132",
+      "name": "Abbie Howard",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35635767132",
+      "name": "Mattie Westfall",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35635692132",
+      "name": "Violet Brown",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35635683132",
+      "name": "Bonnie Baldridge",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35635453132",
+      "name": "Derrick Taylor",
+      "wins": 10,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.8
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35635380132",
+      "name": "Trenton Francis",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "36531969132",
+      "name": "Uriah Carver",
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35635512132",
+      "name": "Tristan Parrish",
+      "wins": 5,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.8
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35635505132",
+      "name": "Brandon Craig",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35635546132",
+      "name": "Jaxon Shackelford",
+      "wins": 3,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35635487132",
+      "name": "Cooper Iery",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35698085132",
+      "name": "Sawyer Murphy",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 1,
+      "losses": 11
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 4
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

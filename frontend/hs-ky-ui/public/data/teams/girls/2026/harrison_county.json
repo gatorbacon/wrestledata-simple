@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "harrison_county",
   "team_name": "Harrison County",
   "name": "Harrison County",
@@ -16,40 +17,363 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981187150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": "35436571132",
-      "107": "35436576132",
-      "114": "35436565132",
-      "120": "35436580132",
-      "126": "35436570132",
-      "132": "35436574132",
-      "138": "35436728132",
-      "145": "35436561132",
-      "152": "35436582132",
-      "165": "35436579132",
-      "185": "35436563132",
-      "235": "35436558132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.830130Z"
+  "generated_at_utc": "2026-01-08T12:52:15.997030Z",
+  "starters": {
+    "100": {
+      "weight": 100,
+      "wrestler_id": "35436571132",
+      "name": "loralei Nelson",
+      "current_rank": 17,
+      "xtp": 3.37,
+      "xtp_p": 0.41,
+      "xtp_a": 1.02,
+      "xtp_b": 1.94,
+      "top10_record": {
+        "wins": 1,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 4
+      }
+    },
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35436576132",
+      "name": "Macayla Pike",
+      "current_rank": 14,
+      "xtp": 5.21,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 3.01,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 5
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35436565132",
+      "name": "Lily Nelson",
+      "current_rank": 4,
+      "xtp": 14.43,
+      "xtp_p": 6.31,
+      "xtp_a": 2.77,
+      "xtp_b": 5.35,
+      "top10_record": {
+        "wins": 3,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 9,
+        "losses": 4
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35436580132",
+      "name": "Paisley Hicks",
+      "current_rank": 20,
+      "xtp": 3.55,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 2.12,
+      "top10_record": {
+        "wins": 1,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 8
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35436570132",
+      "name": "Emma Bailey",
+      "current_rank": 30,
+      "xtp": 1.92,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 1.18,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 9
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35436574132",
+      "name": "Brannan Ransom",
+      "current_rank": 16,
+      "xtp": 4.45,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 2.9,
+      "top10_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 4
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35436728132",
+      "name": "Aryn Marie Sumpter",
+      "current_rank": 51,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35436561132",
+      "name": "Jenny White",
+      "current_rank": 1,
+      "xtp": 21.92,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 5.36,
+      "top10_record": {
+        "wins": 5,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 11,
+        "losses": 0
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35436582132",
+      "name": "Mary Jane Rogers",
+      "current_rank": 27,
+      "xtp": 2.81,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
+      "xtp_b": 1.75,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 9
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35436579132",
+      "name": "Kynleigh Ward",
+      "current_rank": 15,
+      "xtp": 4.29,
+      "xtp_p": 0.7,
+      "xtp_a": 1.18,
+      "xtp_b": 2.41,
+      "top10_record": {
+        "wins": 0,
+        "losses": 7
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 8
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35436563132",
+      "name": "Ryleigh Maybrier",
+      "current_rank": 2,
+      "xtp": 19.34,
+      "xtp_p": 10.07,
+      "xtp_a": 3.42,
+      "xtp_b": 5.85,
+      "top10_record": {
+        "wins": 4,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 10,
+        "losses": 2
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35436558132",
+      "name": "Layla Davis",
+      "current_rank": 1,
+      "xtp": 22.67,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 6.11,
+      "top10_record": {
+        "wins": 5,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 10,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 107,
+      "wrestler_id": "35436776132",
+      "name": "Isabella Vidoni",
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "35436585132",
+      "name": "Payton Martin",
+      "wins": 1,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "35436564132",
+      "name": "Sophia Moore",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35436573132",
+      "name": "Aleigha Newby",
+      "wins": 1,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35436569132",
+      "name": "Alianna Charles",
+      "wins": 2,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35436560132",
+      "name": "Brooklin Clark",
+      "wins": 7,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.714
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35664709132",
+      "name": "Ferris Torres",
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35436583132",
+      "name": "Olivia Aguilar",
+      "wins": 3,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35436896132",
+      "name": "Lola Morales",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 152,
+      "wrestler_id": "35436647132",
+      "name": "Addison Puckett",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35436566132",
+      "name": "Makayla Zumwalt",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35437055132",
+      "name": "Spencer Laughner",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 68,
+      "losses": 53
+    },
+    "top10": {
+      "wins": 19,
+      "losses": 33
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

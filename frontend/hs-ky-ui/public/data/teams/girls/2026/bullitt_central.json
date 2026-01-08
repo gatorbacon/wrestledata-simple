@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "bullitt_central",
   "team_name": "Bullitt Central",
   "name": "Bullitt Central",
@@ -16,40 +17,102 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981163150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": "35892824132",
-      "114": "35893130132",
-      "120": "35454337132",
-      "126": null,
-      "132": null,
-      "138": null,
-      "145": null,
-      "152": null,
-      "165": null,
-      "185": null,
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.793849Z"
+  "generated_at_utc": "2026-01-08T12:52:15.830811Z",
+  "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35892824132",
+      "name": "Adia Clark",
+      "current_rank": 57,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35893130132",
+      "name": "Rylee Jeffrey",
+      "current_rank": 60,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 5
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35454337132",
+      "name": "Shelby Bowersox",
+      "current_rank": 18,
+      "xtp": 3.73,
+      "xtp_p": 0.46,
+      "xtp_a": 1.0,
+      "xtp_b": 2.27,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 7,
+        "losses": 4
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 114,
+      "wrestler_id": "36282101132",
+      "name": "Shayla Caldwell",
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 7,
+      "losses": 9
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 4
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

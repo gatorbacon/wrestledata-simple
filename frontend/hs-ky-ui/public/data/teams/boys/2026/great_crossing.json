@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "great_crossing",
   "team_name": "Great Crossing",
   "name": "Great Crossing",
@@ -16,44 +17,381 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818308150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35640802132",
-      "113": "35640279132",
-      "120": "35640432132",
-      "126": "35640549132",
-      "132": "35640248132",
-      "138": "35640061132",
-      "144": "35640766132",
-      "150": "35640757132",
-      "157": "35640813132",
-      "165": "35640359132",
-      "175": "35640091132",
-      "190": "35640820132",
-      "215": "35640054132",
-      "285": "35640480132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.430785Z"
+  "generated_at_utc": "2026-01-08T12:52:14.835594Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35640802132",
+      "name": "Clay Atchison",
+      "current_rank": 24,
+      "xtp": 2.17,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
+      "xtp_b": 1.11,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35640279132",
+      "name": "Jacob Durst",
+      "current_rank": 81,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35640432132",
+      "name": "Joe Carr",
+      "current_rank": 10,
+      "xtp": 6.34,
+      "xtp_p": 1.9,
+      "xtp_a": 1.69,
+      "xtp_b": 2.75,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 1
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35640549132",
+      "name": "Miguel Fransisco",
+      "current_rank": 20,
+      "xtp": 3.41,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 1.98,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 1
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35640248132",
+      "name": "Deacon Cano",
+      "current_rank": 7,
+      "xtp": 8.64,
+      "xtp_p": 3.31,
+      "xtp_a": 2.12,
+      "xtp_b": 3.21,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 1
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35640061132",
+      "name": "Blake Murdock",
+      "current_rank": 6,
+      "xtp": 10.01,
+      "xtp_p": 4.26,
+      "xtp_a": 2.33,
+      "xtp_b": 3.42,
+      "top10_record": {
+        "wins": 1,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 1
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35640766132",
+      "name": "Deacon Joseph",
+      "current_rank": 146,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35640757132",
+      "name": "Trevor Weinberg",
+      "current_rank": 67,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35640813132",
+      "name": "Jacob Fryman",
+      "current_rank": 157,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35640359132",
+      "name": "Jeremy Marks",
+      "current_rank": 20,
+      "xtp": 2.73,
+      "xtp_p": 0.45,
+      "xtp_a": 0.91,
+      "xtp_b": 1.37,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35640091132",
+      "name": "Cameron Green",
+      "current_rank": 32,
+      "xtp": 1.31,
+      "xtp_p": 0.09,
+      "xtp_a": 0.34,
+      "xtp_b": 0.88,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35640820132",
+      "name": "Ashton Hackney",
+      "current_rank": 11,
+      "xtp": 5.42,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 2.15,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35640054132",
+      "name": "Aiden Anderson",
+      "current_rank": 97,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35640480132",
+      "name": "Michael Braunm",
+      "current_rank": 45,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 106,
+      "wrestler_id": "35728992132",
+      "name": "Max Murdock",
+      "wins": 8,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35640100132",
+      "name": "Cayden Pauley",
+      "wins": 6,
+      "losses": 2,
+      "top25_wins": 1,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35640345132",
+      "name": "Jayden Mueller",
+      "wins": 2,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35640191132",
+      "name": "Clayton Roberts",
+      "wins": 4,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35640808132",
+      "name": "Kellon Jones",
+      "wins": 3,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35640753132",
+      "name": "Sammy Cain",
+      "wins": 1,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35729036132",
+      "name": "Paxton McGeorge",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35640382132",
+      "name": "Jobany Rodriguez",
+      "wins": 4,
+      "losses": 11,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35729024132",
+      "name": "Aiden White",
+      "wins": 5,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35640456132",
+      "name": "Lonnie Braunm",
+      "wins": 4,
+      "losses": 10,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 12,
+      "losses": 20
+    },
+    "top10": {
+      "wins": 1,
+      "losses": 7
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "southern",
   "team_name": "Southern",
   "name": "Southern",
@@ -16,44 +17,408 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818288150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": null,
-      "113": null,
-      "120": "35281630132",
-      "126": "35281532132",
-      "132": "35281378132",
-      "138": "35280966132",
-      "144": "35280922132",
-      "150": "35281483132",
-      "157": "35281006132",
-      "165": "35280914132",
-      "175": null,
-      "190": "35281051132",
-      "215": "35281549132",
-      "285": "35281420132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.676743Z"
+  "generated_at_utc": "2026-01-08T12:52:15.494423Z",
+  "starters": {
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35281630132",
+      "name": "Amia Lane",
+      "current_rank": 121,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35281532132",
+      "name": "Sudeys Hussein",
+      "current_rank": 52,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35281378132",
+      "name": "Romedan Abdu",
+      "current_rank": 64,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35280966132",
+      "name": "Tye Chavez",
+      "current_rank": 39,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35280922132",
+      "name": "Sean Moreno",
+      "current_rank": 54,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35281483132",
+      "name": "Tyler Gibson",
+      "current_rank": 26,
+      "xtp": 2.07,
+      "xtp_p": 0.22,
+      "xtp_a": 0.59,
+      "xtp_b": 1.26,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35281006132",
+      "name": "Talik Washington",
+      "current_rank": 27,
+      "xtp": 1.78,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 1.04,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35280914132",
+      "name": "Dominic Brock",
+      "current_rank": 66,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35281051132",
+      "name": "Amanuel Ukbay",
+      "current_rank": 73,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 7
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35281549132",
+      "name": "Kaden Johnson",
+      "current_rank": 134,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35281420132",
+      "name": "Carter Vance",
+      "current_rank": 111,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 120,
+      "wrestler_id": "35281265132",
+      "name": "Avery Gibbs",
+      "wins": 2,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35280392132",
+      "name": "Tonny Bouataveth",
+      "wins": 1,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35281252132",
+      "name": "Agustin Lievano",
+      "wins": 1,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35281516132",
+      "name": "Muaz Abdullahi",
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35281636132",
+      "name": "Samira Mbaye-Diallo",
+      "wins": 1,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35344550132",
+      "name": "Angel Queral",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35281529132",
+      "name": "Salman Hussein",
+      "wins": 5,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.6
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35281607132",
+      "name": "Jakira Sanchez",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35281318132",
+      "name": "Jesus Lopez Meza",
+      "wins": 2,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35281226132",
+      "name": "Ali Solom",
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35281261132",
+      "name": "Benjamin Holt",
+      "wins": 3,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35281086132",
+      "name": "Colson Cravens",
+      "wins": 8,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "36231855132",
+      "name": "Esther Gadi",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35344565132",
+      "name": "Junior Kalantanda",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35281230132",
+      "name": "Landon Bader",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35281615132",
+      "name": "Lillth Poole",
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35281621132",
+      "name": "Selena Avila",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35281205132",
+      "name": "Edwin Lozoria",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35344597132",
+      "name": "ostane saint - pha",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 1,
+      "losses": 20
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 5
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

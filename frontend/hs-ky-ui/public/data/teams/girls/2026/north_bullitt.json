@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "north_bullitt",
   "team_name": "North Bullitt",
   "name": "North Bullitt",
@@ -16,40 +17,56 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981213150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": null,
-      "114": null,
-      "120": null,
-      "126": null,
-      "132": null,
-      "138": "35681459132",
-      "145": null,
-      "152": null,
-      "165": null,
-      "185": null,
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.863353Z"
+  "generated_at_utc": "2026-01-08T12:52:16.126519Z",
+  "starters": {
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35681459132",
+      "name": "Celia Sweatt",
+      "current_rank": 25,
+      "xtp": 2.75,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
+      "xtp_b": 1.69,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      }
+    }
+  },
+  "remaining": [],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 1,
+      "losses": 2
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 2
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "greenwood",
   "team_name": "Greenwood",
   "name": "Greenwood",
@@ -16,40 +17,147 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981265150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": "35424934132",
-      "114": null,
-      "120": "35424937132",
-      "126": null,
-      "132": "35424936132",
-      "138": "35424932132",
-      "145": null,
-      "152": "35424969132",
-      "165": null,
-      "185": null,
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.828422Z"
+  "generated_at_utc": "2026-01-08T12:52:15.990360Z",
+  "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35424934132",
+      "name": "Lizeth Hernandez-Ponce",
+      "current_rank": 36,
+      "xtp": 0.99,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.64,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35424937132",
+      "name": "Mary Varupa",
+      "current_rank": 84,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35424936132",
+      "name": "Niang Nuam",
+      "current_rank": 57,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35424932132",
+      "name": "Masoka (Ashley) Kilozo",
+      "current_rank": 10,
+      "xtp": 6.87,
+      "xtp_p": 1.9,
+      "xtp_a": 1.69,
+      "xtp_b": 3.28,
+      "top10_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 4
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35424969132",
+      "name": "Scarlet Stiltner",
+      "current_rank": 54,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 132,
+      "wrestler_id": "35424935132",
+      "name": "Michaela Harmon",
+      "wins": 1,
+      "losses": 10,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35424933132",
+      "name": "Cing Kiim",
+      "wins": 5,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.6
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 2,
+      "losses": 10
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 4
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

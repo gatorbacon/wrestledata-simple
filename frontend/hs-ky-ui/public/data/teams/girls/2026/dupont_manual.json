@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "dupont_manual",
   "team_name": "Dupont Manual",
   "name": "Dupont Manual",
@@ -16,40 +17,110 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981179150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": null,
-      "114": "35409963132",
-      "120": "35409980132",
-      "126": null,
-      "132": null,
-      "138": null,
-      "145": null,
-      "152": "35409970132",
-      "165": null,
-      "185": "35409984132",
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.812091Z"
+  "generated_at_utc": "2026-01-08T12:52:15.929586Z",
+  "starters": {
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35409963132",
+      "name": "Isabella Hammer",
+      "current_rank": 23,
+      "xtp": 3.08,
+      "xtp_p": 0.37,
+      "xtp_a": 0.81,
+      "xtp_b": 1.9,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 3
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35409980132",
+      "name": "Elle Reynolds",
+      "current_rank": 61,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35409970132",
+      "name": "Sujana Acharya",
+      "current_rank": 47,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35409984132",
+      "name": "Addison Rowland",
+      "current_rank": 18,
+      "xtp": 3.77,
+      "xtp_p": 0.41,
+      "xtp_a": 1.02,
+      "xtp_b": 2.34,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 4,
+      "losses": 7
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 0
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "mason_county",
   "team_name": "Mason County",
   "name": "Mason County",
@@ -16,40 +17,192 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981276150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": "35739869132",
-      "114": "35739876132",
-      "120": "35739865132",
-      "126": "35739866132",
-      "132": null,
-      "138": "36292374132",
-      "145": "35739867132",
-      "152": null,
-      "165": null,
-      "185": null,
-      "235": "35778037132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.855698Z"
+  "generated_at_utc": "2026-01-08T12:52:16.090219Z",
+  "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35739869132",
+      "name": "Paige Collins",
+      "current_rank": 44,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35739876132",
+      "name": "Kyla Overby",
+      "current_rank": 64,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35739865132",
+      "name": "Jacey Muntz",
+      "current_rank": 58,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35739866132",
+      "name": "Haven Marshall",
+      "current_rank": 14,
+      "xtp": 5.49,
+      "xtp_p": 1.16,
+      "xtp_a": 1.37,
+      "xtp_b": 2.96,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 3
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "36292374132",
+      "name": "Taylon Stewart",
+      "current_rank": 66,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35739867132",
+      "name": "Brianna Rosenberg",
+      "current_rank": 7,
+      "xtp": 9.86,
+      "xtp_p": 3.31,
+      "xtp_a": 2.12,
+      "xtp_b": 4.43,
+      "top10_record": {
+        "wins": 1,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 1
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35778037132",
+      "name": "Madison Hobbs",
+      "current_rank": 21,
+      "xtp": 3.72,
+      "xtp_p": 0.41,
+      "xtp_a": 1.02,
+      "xtp_b": 2.29,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 4
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 107,
+      "wrestler_id": "35739914132",
+      "name": "Autumn Toller",
+      "wins": 0,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35739916132",
+      "name": "Danielle Concepcion",
+      "wins": 2,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35739868132",
+      "name": "Autumn Jackson",
+      "wins": 5,
+      "losses": 4,
+      "top25_wins": 2,
+      "bonus_rate": 1.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 12,
+      "losses": 18
+    },
+    "top10": {
+      "wins": 1,
+      "losses": 6
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

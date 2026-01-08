@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "whitley_county",
   "team_name": "Whitley County",
   "name": "Whitley County",
@@ -16,44 +17,534 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818302150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35420709132",
-      "113": "35420468132",
-      "120": "35420495132",
-      "126": "35420336132",
-      "132": "35420581132",
-      "138": "35421050132",
-      "144": "35420642132",
-      "150": "35420411132",
-      "157": "35420605132",
-      "165": "35420195132",
-      "175": "35420690132",
-      "190": "35420763132",
-      "215": "35420732132",
-      "285": "35420700132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.752213Z"
+  "generated_at_utc": "2026-01-08T12:52:15.685419Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35420709132",
+      "name": "Xzander Holt",
+      "current_rank": 36,
+      "xtp": 0.93,
+      "xtp_p": 0.09,
+      "xtp_a": 0.34,
+      "xtp_b": 0.5,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 5
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35420468132",
+      "name": "Nicolas Dotson",
+      "current_rank": 29,
+      "xtp": 1.82,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 1.08,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 4
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35420495132",
+      "name": "Larriuce Felipe",
+      "current_rank": 53,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35420336132",
+      "name": "Landon Creech",
+      "current_rank": 114,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35420581132",
+      "name": "Colton Richardson",
+      "current_rank": 57,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35421050132",
+      "name": "Brayden Stephens",
+      "current_rank": 32,
+      "xtp": 1.85,
+      "xtp_p": 0.11,
+      "xtp_a": 0.51,
+      "xtp_b": 1.23,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 7
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35420642132",
+      "name": "Channing Carte",
+      "current_rank": 46,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 6
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35420411132",
+      "name": "Kevin Brown",
+      "current_rank": 72,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35420605132",
+      "name": "Isac Perez",
+      "current_rank": 36,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35420195132",
+      "name": "Justin Hill",
+      "current_rank": 50,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35420690132",
+      "name": "Wyatt Probus",
+      "current_rank": 21,
+      "xtp": 3.2,
+      "xtp_p": 0.41,
+      "xtp_a": 0.85,
+      "xtp_b": 1.94,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 7
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35420763132",
+      "name": "Elijiah Bryant",
+      "current_rank": 84,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35420732132",
+      "name": "Zach Smith",
+      "current_rank": 65,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 8
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35420700132",
+      "name": "Landon Bryant",
+      "current_rank": 30,
+      "xtp": 1.72,
+      "xtp_p": 0.22,
+      "xtp_a": 0.59,
+      "xtp_b": 0.91,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 4
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 113,
+      "wrestler_id": "35421361132",
+      "name": "Grant Davis",
+      "wins": 4,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35421431132",
+      "name": "Adian Bennett",
+      "wins": 1,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35421403132",
+      "name": "Blake Bowlin",
+      "wins": 4,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "37065081132",
+      "name": "Douglas Bargo",
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35420479132",
+      "name": "Gabe Woods",
+      "wins": 5,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.6
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35421520132",
+      "name": "Conner Crabtree",
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35420456132",
+      "name": "Kaden Davis",
+      "wins": 3,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35421288132",
+      "name": "Logan Mason",
+      "wins": 1,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35420915132",
+      "name": "Blake Smith",
+      "wins": 8,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.875
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35680323132",
+      "name": "Dalton Turner",
+      "wins": 3,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35420672132",
+      "name": "Trent Askins",
+      "wins": 5,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.2
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35421309132",
+      "name": "Oliver Spurlock",
+      "wins": 1,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35420954132",
+      "name": "Ryder Yount",
+      "wins": 4,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35420798132",
+      "name": "Caden Collett",
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35420428132",
+      "name": "Clyde Johnson",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35421538132",
+      "name": "Eli Robidoux",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35420542132",
+      "name": "Issac Brown",
+      "wins": 9,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.778
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35421145132",
+      "name": "Brenden Hopkins",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35421442132",
+      "name": "Chase Croley",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35421161132",
+      "name": "Justin Brown",
+      "wins": 10,
+      "losses": 6,
+      "top25_wins": 1,
+      "bonus_rate": 0.8
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35420257132",
+      "name": "Charlie Pace",
+      "wins": 1,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35420784132",
+      "name": "Daniel Brown",
+      "wins": 1,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35421186132",
+      "name": "Nathan Baysinger",
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35421242132",
+      "name": "Darion Smith",
+      "wins": 2,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35420847132",
+      "name": "Landon Colyer",
+      "wins": 2,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35681077132",
+      "name": "Keagan Jones",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35680622132",
+      "name": "Wesley Partin",
+      "wins": 1,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 10,
+      "losses": 63
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 15
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

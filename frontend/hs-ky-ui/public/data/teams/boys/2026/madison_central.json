@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "madison_central",
   "team_name": "Madison Central",
   "name": "Madison Central",
@@ -16,44 +17,570 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818258150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35045470132",
-      "113": "35045479132",
-      "120": "35045490132",
-      "126": "35045478132",
-      "132": "35045488132",
-      "138": "35045489132",
-      "144": "35045486132",
-      "150": "35045492132",
-      "157": "35045481132",
-      "165": "35045487132",
-      "175": "35045510132",
-      "190": "35045493132",
-      "215": "35045509132",
-      "285": "35045564132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.525444Z"
+  "generated_at_utc": "2026-01-08T12:52:15.077495Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35045470132",
+      "name": "SYDNEY BLACK",
+      "current_rank": 179,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35045479132",
+      "name": "Camryn Coffey",
+      "current_rank": 12,
+      "xtp": 5.97,
+      "xtp_p": 1.4,
+      "xtp_a": 1.47,
+      "xtp_b": 3.1,
+      "top10_record": {
+        "wins": 1,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 7,
+        "losses": 3
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35045490132",
+      "name": "RENZO WATTS",
+      "current_rank": 80,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35045478132",
+      "name": "Keenan Clevenger",
+      "current_rank": 7,
+      "xtp": 8.48,
+      "xtp_p": 3.31,
+      "xtp_a": 2.12,
+      "xtp_b": 3.05,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 2
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35045488132",
+      "name": "GRAYSON SMITH",
+      "current_rank": 13,
+      "xtp": 4.59,
+      "xtp_p": 1.16,
+      "xtp_a": 1.37,
+      "xtp_b": 2.06,
+      "top10_record": {
+        "wins": 0,
+        "losses": 5
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 5
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35045489132",
+      "name": "MATT HARDING",
+      "current_rank": 44,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35045486132",
+      "name": "CHANCE MILLS",
+      "current_rank": 12,
+      "xtp": 5.02,
+      "xtp_p": 1.4,
+      "xtp_a": 1.47,
+      "xtp_b": 2.15,
+      "top10_record": {
+        "wins": 1,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 3
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35045492132",
+      "name": "GAVYN KINLEY",
+      "current_rank": 11,
+      "xtp": 5.85,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 2.58,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 2
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35045481132",
+      "name": "Emory Dix",
+      "current_rank": 4,
+      "xtp": 11.33,
+      "xtp_p": 6.31,
+      "xtp_a": 2.77,
+      "xtp_b": 2.25,
+      "top10_record": {
+        "wins": 1,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 1
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35045487132",
+      "name": "CHRIS HOLLINGSWORTH",
+      "current_rank": 14,
+      "xtp": 4.36,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 2.16,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 4
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35045510132",
+      "name": "Cameron Hunt",
+      "current_rank": 25,
+      "xtp": 2.52,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.58,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35045493132",
+      "name": "CARSON HERBST",
+      "current_rank": 2,
+      "xtp": 17.43,
+      "xtp_p": 10.07,
+      "xtp_a": 3.42,
+      "xtp_b": 3.94,
+      "top10_record": {
+        "wins": 1,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 0
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35045509132",
+      "name": "Colton Fyffe",
+      "current_rank": 76,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35045564132",
+      "name": "Jonathan Atherton",
+      "current_rank": 61,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 106,
+      "wrestler_id": "35045541132",
+      "name": "Brielle Richardson",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 106,
+      "wrestler_id": "35045532132",
+      "name": "Esther Wernersbach",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 106,
+      "wrestler_id": "35045538132",
+      "name": "Sophia Wehby",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 113,
+      "wrestler_id": "35153627132",
+      "name": "ETHAN MILLER",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 113,
+      "wrestler_id": "35045567132",
+      "name": "Kayden Bailey",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35140845132",
+      "name": "Jarek Winstead",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35153611132",
+      "name": "MASON SMITH",
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35045581132",
+      "name": "Ryan Cremeens",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35045485132",
+      "name": "AIDEN GREER",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35153619132",
+      "name": "BERKLEY OVERBEY",
+      "wins": 5,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.8
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35045469132",
+      "name": "NARAE COMPTON",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35045480132",
+      "name": "Zach Cummings",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35045554132",
+      "name": "Makenzie Greer",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35140774132",
+      "name": "PARKER GREENWELL",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35045471132",
+      "name": "GRACE HOPKINS",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35045472132",
+      "name": "ADRIANNA CRUTCHER",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35045507132",
+      "name": "Jerry Fields",
+      "wins": 4,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.75
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35045504132",
+      "name": "Kirby Tudor",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35116363132",
+      "name": "Madyson Simms",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35045499132",
+      "name": "Cade Schallner",
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35045466132",
+      "name": "JAKAYLA REED",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35322003132",
+      "name": "Burnette Thamarkus",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35140849132",
+      "name": "Carson Hawkins",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35045517132",
+      "name": "Carter Taylor",
+      "wins": 6,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.833
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35140816132",
+      "name": "Charles Miserendino",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35045468132",
+      "name": "ERYAH REESE",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35045511132",
+      "name": "Ryan Bell",
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35045484132",
+      "name": "AUSTIN HURST",
+      "wins": 7,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35045465132",
+      "name": "SOPHIE BUTTS",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35045559132",
+      "name": "Serenity Allen",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35045483132",
+      "name": "Dalton George",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 31,
+      "losses": 33
+    },
+    "top10": {
+      "wins": 4,
+      "losses": 23
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

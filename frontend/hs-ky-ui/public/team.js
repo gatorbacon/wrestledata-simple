@@ -65,297 +65,165 @@ async function loadTeam(teamSlug) {
     // Get gender from URL or default to boys
     const gender = getGenderFromURL();
     const season = getSeasonFromURL();
-    const weights = getWeightsForGender(gender);
     
     console.log(`[HS Team] Loading team "${teamSlug}" for ${gender} ${season}...`);
     
-    // 0) Load archive index to get latest drop
-    let dropId = null;
-    try {
-      const indexUrl = `${HS_CONFIG.dataPaths.rankingsArchive}/${gender}/${season}/index.json`;
-      const indexData = await fetchJSON(indexUrl);
-      dropId = indexData?.latest || null;
-      console.log(`[HS Team] Using archive drop: ${dropId}`);
-    } catch (err) {
-      console.warn(`[HS Team] Could not load archive index, trying legacy public_rankings:`, err);
-    }
+    // Load team profile JSON (contains all required data)
+    const teamProfileUrl = `/data/teams/${gender}/${season}/${teamSlug}.json`;
+    const teamProfileData = await fetchJSON(teamProfileUrl);
+    console.log(`[HS Team] Team profile loaded`);
     
-    // 1) Load all weight files and aggregate wrestlers by team
-    const allWrestlers = [];
-    const wrestlersByWeight = {};
+    const teamName = teamProfileData.team_name || teamProfileData.name;
     
-    for (const weight of weights) {
-      try {
-        let url;
-        let data = null;
-        
-        if (dropId) {
-          // Try archive system first
-          url = `${HS_CONFIG.dataPaths.rankingsArchive}/${gender}/${season}/${dropId}/${weight}.json`;
-          try {
-            data = await fetchJSON(url);
-          } catch (err) {
-            console.warn(`[HS Team] Archive load failed for ${weight}, trying legacy path:`, err);
-            // Fall through to legacy path
-          }
-        }
-        
-        // Fallback to legacy public_rankings if archive failed or not available
-        if (!data) {
-          url = buildRankingsURL(gender, season, weight);
-          data = await fetchJSON(url);
-        }
-        
-        const wrestlers = data?.wrestlers || [];
-        
-        wrestlersByWeight[weight] = wrestlers;
-        allWrestlers.push(...wrestlers.map(w => ({ ...w, weight })));
-      } catch (err) {
-        console.warn(`[HS Team] Could not load weight ${weight}:`, err);
-        continue;
-      }
-    }
-    
-    if (allWrestlers.length === 0) {
-      throw new Error(`No wrestlers found for ${gender} ${season}`);
-    }
-    
-    // 2) Find team by matching slug (normalize team names)
-    const normalizedSlug = normalizeTeamName(teamSlug);
-    console.log(`[HS Team] Searching for team with normalized slug: "${normalizedSlug}"`);
-    console.log(`[HS Team] Total wrestlers loaded: ${allWrestlers.length}`);
-    
-    // Get unique team names for debugging
-    const uniqueTeams = [...new Set(allWrestlers.map(w => w.team))];
-    console.log(`[HS Team] Found ${uniqueTeams.length} unique teams. Sample teams:`, uniqueTeams.slice(0, 10));
-    
-    const teamWrestlers = allWrestlers.filter(w => {
-      const normalizedTeamName = normalizeTeamName(w.team);
-      const matches = normalizedTeamName === normalizedSlug;
+    // Check if team profile has new minimal structure (schema_version 2.0+ with starters/remaining)
+    if (teamProfileData.starters && teamProfileData.remaining !== undefined) {
+      // New structure: Extract starters and remaining from team profile
+      console.log(`[HS Team] Using new minimal team profile structure`);
       
-      if (matches) {
-        console.log(`[HS Team] Match found: "${w.team}" (normalized: "${normalizedTeamName}") matches slug "${normalizedSlug}"`);
-      }
+      const starterProfiles = [];
+      const startersByWeight = {};
       
-      return matches;
-    });
-    
-    if (teamWrestlers.length === 0) {
-      // Try to find similar team names for better error message
-      const similarTeams = uniqueTeams.filter(t => {
-        const normalized = normalizeTeamName(t);
-        return normalized.includes(normalizedSlug) || normalizedSlug.includes(normalized);
-      });
-      
-      const errorMsg = similarTeams.length > 0
-        ? `Team "${teamSlug}" not found. Did you mean: ${similarTeams.slice(0, 5).join(', ')}?`
-        : `Team "${teamSlug}" not found in HS ${gender} rankings for season ${season}`;
-      
-      throw new Error(errorMsg);
-    }
-    
-    // Get team name from first wrestler (most common name)
-    const teamName = teamWrestlers[0].team;
-    console.log(`[HS Team] Found ${teamWrestlers.length} ranked wrestlers for team "${teamName}"`);
-    
-    // 2.5) Load ALL wrestlers from index_teams.json (includes unranked wrestlers)
-    let allWrestlerIds = new Set(teamWrestlers.map(w => String(w.wrestler_id)));
-    let teamProfileData = null;
-    
-    try {
-      // Load team profile for starters info
-      const teamProfileUrl = `/data/teams/${gender}/${season}/${teamSlug}.json`;
-      teamProfileData = await fetchJSON(teamProfileUrl);
-      console.log(`[HS Team] Team profile loaded`);
-    } catch (err) {
-      console.warn(`[HS Team] Could not load team profile:`, err);
-    }
-    
-    // Load full roster from index_teams.json
-    try {
-      const indexUrl = `/data/wrestlers/${gender}/${season}/index_teams.json`;
-      const indexData = await fetchJSON(indexUrl);
-      const teamEntry = indexData.find(t => normalizeTeamName(t.team_slug) === normalizedSlug);
-      
-      if (teamEntry && teamEntry.roster) {
-        console.log(`[HS Team] Found roster in index: ${teamEntry.roster.length} wrestlers`);
-        // Add all wrestler IDs from roster
-        teamEntry.roster.forEach(id => {
-          if (id && !id.startsWith('OUTSTATE_')) {
-            allWrestlerIds.add(String(id));
-          }
-        });
-      } else {
-        console.warn(`[HS Team] Team not found in index_teams.json`);
-      }
-    } catch (err) {
-      console.warn(`[HS Team] Could not load index_teams.json:`, err);
-    }
-    
-    console.log(`[HS Team] Total unique wrestler IDs: ${allWrestlerIds.size}`);
-    
-    // Load all wrestler profiles
-    const allTeamWrestlerProfiles = [];
-    for (const wrestlerId of allWrestlerIds) {
-      try {
-        const profileUrl = `/data/wrestlers/${gender}/${season}/by_id/${wrestlerId}.json`;
-        const profile = await fetchJSON(profileUrl);
-        // Get weight from profile
-        const weight = profile.weight_class;
-        if (weight) {
-          allTeamWrestlerProfiles.push({ weight, profile, wrestler_id: wrestlerId });
-        }
-      } catch (err) {
-        // Skip if profile doesn't exist
-        continue;
-      }
-    }
-    
-    console.log(`[HS Team] Total team wrestler profiles loaded: ${allTeamWrestlerProfiles.length}`);
-    
-    // 3) Build starting roster (best-ranked wrestler per weight)
-    const startersByWeight = {};
-    const starterProfiles = [];
-    
-    // Use team profile starters if available, otherwise use rankings
-    if (teamProfileData?.roster?.starters) {
-      // Use starters from team profile
-      for (const [weightStr, wrestlerId] of Object.entries(teamProfileData.roster.starters)) {
-        if (wrestlerId) {
+      // Build starter profiles from minimal data
+      for (const [weightStr, starterData] of Object.entries(teamProfileData.starters)) {
+        if (starterData) {
           const weight = Number(weightStr);
-          startersByWeight[weight] = String(wrestlerId);
+          startersByWeight[weight] = starterData.wrestler_id;
           
-          // Find profile
-          const profileData = allTeamWrestlerProfiles.find(p => p.wrestler_id === String(wrestlerId));
-          if (profileData) {
-            starterProfiles.push({ weight, profile: profileData.profile });
-          } else {
-            // Try to load profile
-            try {
-              const profileUrl = `/data/wrestlers/${gender}/${season}/by_id/${wrestlerId}.json`;
-              const profile = await fetchJSON(profileUrl);
-              starterProfiles.push({ weight, profile });
-            } catch (err) {
-              console.warn(`[HS Team] Could not load starter profile for ${wrestlerId}`);
+          // Convert minimal starter data to profile-like object for compatibility
+          starterProfiles.push({
+            weight,
+            profile: {
+              wrestler_id: starterData.wrestler_id,
+              name: starterData.name,
+              weight_class: starterData.weight,
+              current_rank: starterData.current_rank,
+              // Add precomputed records for calculateTopRecord compatibility
+              match_list: [], // Empty - records are precomputed
+              record: {
+                overall: `${starterData.top33_record?.wins || 0}-${starterData.top33_record?.losses || 0}`,
+              },
+              // Add top10/top33 records as metadata
+              _top10_record: starterData.top10_record,
+              _top33_record: starterData.top33_record,
+              // Add embedded xTP data for renderStartersTable
+              _xtp_data: {
+                xTP: starterData.xtp,
+                xTP_P: starterData.xtp_p,
+                xTP_A: starterData.xtp_a,
+                xTP_B: starterData.xtp_b,
+                rank: starterData.current_rank,
+              },
             }
-          }
+          });
         }
       }
-    } else {
-      // Fallback: Group by weight and find best-ranked wrestler per weight
-      const wrestlersByWeightGroup = {};
-      teamWrestlers.forEach(w => {
-        if (!wrestlersByWeightGroup[w.weight]) {
-          wrestlersByWeightGroup[w.weight] = [];
-        }
-        wrestlersByWeightGroup[w.weight].push(w);
-      });
       
-      for (const [weightStr, weightWrestlers] of Object.entries(wrestlersByWeightGroup)) {
-        const weight = Number(weightStr);
-        // Sort by rank (lower is better)
-        weightWrestlers.sort((a, b) => {
-          const rankA = a.rank || 9999;
-          const rankB = b.rank || 9999;
-          return rankA - rankB;
-        });
-        
-        const starter = weightWrestlers[0];
-        startersByWeight[weight] = starter.wrestler_id;
-        
-        // Try to load full profile
-        try {
-          const profileUrl = `/data/wrestlers/${gender}/${season}/by_id/${starter.wrestler_id}.json`;
-          const profile = await fetchJSON(profileUrl);
-          starterProfiles.push({ weight, profile });
-        } catch (err) {
-          // Fallback: use ranking data as profile
-          console.warn(`[HS Team] Could not load full profile for ${starter.wrestler_id}, using ranking data`);
-          starterProfiles.push({ weight, profile: starter });
+      // Build remaining roster from minimal data
+      const remainingProfiles = teamProfileData.remaining.map(rosterData => ({
+        weight: rosterData.weight,
+        profile: {
+          wrestler_id: rosterData.wrestler_id,
+          name: rosterData.name,
+          weight_class: rosterData.weight,
+          record: {
+            overall: `${rosterData.wins}-${rosterData.losses}`,
+          },
+          metrics: {
+            bonus_rate: rosterData.bonus_rate,
+          },
+          // Add precomputed top25_wins for countTop25Wins compatibility
+          _top25_wins: rosterData.top25_wins,
+          match_list: [], // Empty - top25_wins is precomputed
         }
-      }
-    }
-    
-    // 4) Build remaining roster (all other wrestlers)
-    const starterIds = new Set(Object.values(startersByWeight).map(id => String(id)));
-    
-    // Debug logging
-    console.log(`[HS Team] Total team wrestler profiles: ${allTeamWrestlerProfiles.length}`);
-    console.log(`[HS Team] Starter IDs:`, Array.from(starterIds));
-    console.log(`[HS Team] Starter IDs count: ${starterIds.size}`);
-    
-    const remainingProfiles = allTeamWrestlerProfiles.filter(({ wrestler_id }) => {
-      const isStarter = starterIds.has(String(wrestler_id));
-      if (!isStarter) {
-        console.log(`[HS Team] Remaining wrestler: ${wrestler_id}`);
-      }
-      return !isStarter;
-    });
-    
-    console.log(`[HS Team] Remaining profiles count: ${remainingProfiles.length}`);
-    
-    console.log(`[HS Team] Remaining profiles built: ${remainingProfiles.length}`);
-    
-    // 5) Load team metrics (HS path)
-    let teamMetrics = null;
-    try {
-      const metricsUrl = `/data/team_metrics/${gender}/${season}/team_metrics.json`;
-      const metricsData = await fetchJSON(metricsUrl);
-      const teams = metricsData?.teams || [];
+      }));
       
-      // Match by team_id (slug format like "grant_county")
-      teamMetrics = teams.find(t => {
-        if (t.team_id) {
-          const normalizedTeamId = normalizeTeamName(t.team_id);
-          if (normalizedTeamId === normalizedSlug) {
-            return true;
-          }
-        }
-        // Fallback: match by team_name
-        const normalizedTeamName = normalizeTeamName(t.team_name || t.team);
-        return normalizedTeamName === normalizedSlug;
-      });
-      
-      if (!teamMetrics) {
-        console.warn(`[HS Team] No metrics found for team "${teamName}" (slug: "${normalizedSlug}")`);
-        console.log(`[HS Team] Available team_ids (sample):`, teams.slice(0, 5).map(t => t.team_id));
-      } else {
-        console.log(`[HS Team] Found metrics for team "${teamMetrics.team_name || teamMetrics.team}"`);
-      }
-    } catch (err) {
-      console.warn(`[HS Team] Could not load team metrics:`, err);
-    }
-    
-    // 6) Load xTP data (HS path)
-    let xtpData = null;
-    try {
-      const xtpUrl = buildXTPURL(gender, season);
-      const xtpFile = await fetchJSON(xtpUrl);
-      const teamsArray = Array.isArray(xtpFile) ? xtpFile : (xtpFile.teams || []);
-      // Match by team name (xTP uses team name, not team_id)
-      xtpData = teamsArray.find(t => normalizeTeamName(t.team) === normalizedSlug || normalizeTeamName(t.team) === normalizeTeamName(teamName));
+      // Load xTP data if not embedded
+      let xtpData = teamProfileData.xtp_summary || null;
+      let xtpRank = null;
+      let fullXtpData = null; // Cache full xTP data for rank computation
       
       if (!xtpData) {
-        console.warn(`[HS Team] No xTP data found for team "${teamName}" (slug: "${normalizedSlug}")`);
+        try {
+          const xtpUrl = `/data/xtp/${gender}/${season}/xtp_teams_${season}.json`;
+          fullXtpData = await fetchJSON(xtpUrl);
+          // Find this team's data
+          const teamsArray = Array.isArray(fullXtpData) ? fullXtpData : fullXtpData.teams || [];
+          xtpData = teamsArray.find(t => normalizeTeamName(t.team) === normalizeTeamName(teamName)) || null;
+          
+          // Compute rank from the full xTP data we just loaded
+          if (fullXtpData && xtpData) {
+            xtpRank = computeTeamRankFromData(teamName, teamsArray);
+          }
+        } catch (err) {
+          console.warn(`[HS Team] Could not load xTP data:`, err);
+        }
       } else {
-        console.log(`[HS Team] Found xTP data for team "${xtpData.team}"`);
+        // If xTP data is embedded, we still need to load full data for rank computation
+        try {
+          const xtpUrl = `/data/xtp/${gender}/${season}/xtp_teams_${season}.json`;
+          fullXtpData = await fetchJSON(xtpUrl);
+          const teamsArray = Array.isArray(fullXtpData) ? fullXtpData : fullXtpData.teams || [];
+          xtpRank = computeTeamRankFromData(teamName, teamsArray);
+        } catch (err) {
+          console.warn(`[HS Team] Could not load xTP data for rank computation:`, err);
+        }
       }
-    } catch (err) {
-      console.warn(`[HS Team] Could not load xTP data:`, err);
+      
+      // Load team metrics if not embedded
+      let teamMetrics = teamProfileData.team_metrics || null;
+      if (!teamMetrics) {
+        try {
+          const metricsUrl = `/data/team_metrics/${gender}/${season}/team_metrics.json`;
+          const metricsData = await fetchJSON(metricsUrl);
+          const teamsArray = metricsData.teams || [];
+          teamMetrics = teamsArray.find(t => 
+            normalizeTeamName(t.team_name || t.team) === normalizeTeamName(teamName)
+          ) || null;
+        } catch (err) {
+          console.warn(`[HS Team] Could not load team metrics:`, err);
+        }
+      }
+      
+      // Create synthetic team profile object for renderTeamPage
+      const teamProfile = {
+        team_name: teamName,
+        name: teamName,
+        conference: teamProfileData.location?.region ? `Region ${teamProfileData.location.region}` : 'Kentucky High School',
+        division: gender === 'boys' ? 'KY HS Boys' : 'KY HS Girls',
+        roster: {
+          starters: startersByWeight
+        }
+      };
+      
+      // Wrap teamMetrics in expected format for renderTeamProfileMetrics
+      // It expects metrics.metrics structure, but we have flat team_metrics
+      let wrappedMetrics = null;
+      if (teamMetrics) {
+        // If teamMetrics already has the expected structure, use it
+        if (teamMetrics.metrics) {
+          wrappedMetrics = teamMetrics;
+        } else {
+          // Wrap flat structure
+          wrappedMetrics = {
+            metrics: teamMetrics,
+            counts: {
+              wins_included: teamMetrics.overall?.wins || 0,
+              losses_included: teamMetrics.overall?.losses || 0,
+              win_pct: teamMetrics.overall?.wins && teamMetrics.overall?.losses 
+                ? teamMetrics.overall.wins / (teamMetrics.overall.wins + teamMetrics.overall.losses)
+                : null
+            }
+          };
+        }
+      }
+      
+      // Render the page with loaded data (pass rank to avoid re-fetching)
+      await renderTeamPage(teamProfile, wrappedMetrics, starterProfiles, remainingProfiles, xtpData, xtpRank);
+    } else {
+      // Old structure: Fallback to old loading logic (for backward compatibility)
+      console.log(`[HS Team] Using legacy team profile structure, falling back to old loading`);
+      throw new Error("Legacy team profile structure not supported. Please regenerate team profiles.");
     }
-    
-    // 7) Create synthetic team profile object
-    const teamProfile = {
-      team_name: teamName,
-      name: teamName,
-      conference: 'Kentucky High School',
-      division: gender === 'boys' ? 'KY HS Boys' : 'KY HS Girls',
-      roster: {
-        starters: startersByWeight
-      }
-    };
-    
-    await renderTeamPage(teamProfile, teamMetrics, starterProfiles, remainingProfiles, xtpData);
   } catch (err) {
     console.error(`[HS Team] Error loading team:`, err);
     document.getElementById("team-name").textContent = "Team Not Found";
@@ -372,6 +240,32 @@ function formatWLRecord(wins, losses, winPct) {
 }
 
 function calculateTopRecord(starters, maxRank) {
+  // Check if using precomputed records from team profile
+  if (maxRank === 10 && starters.length > 0 && starters[0].profile._top10_record) {
+    // Use precomputed top10 records
+    let wins = 0;
+    let losses = 0;
+    starters.forEach(({ profile }) => {
+      if (profile._top10_record) {
+        wins += profile._top10_record.wins || 0;
+        losses += profile._top10_record.losses || 0;
+      }
+    });
+    return { wins, losses };
+  } else if (maxRank === 33 && starters.length > 0 && starters[0].profile._top33_record) {
+    // Use precomputed top33 records
+    let wins = 0;
+    let losses = 0;
+    starters.forEach(({ profile }) => {
+      if (profile._top33_record) {
+        wins += profile._top33_record.wins || 0;
+        losses += profile._top33_record.losses || 0;
+      }
+    });
+    return { wins, losses };
+  }
+  
+  // Fallback: Calculate from match_list (legacy behavior)
   let wins = 0;
   let losses = 0;
   
@@ -408,7 +302,28 @@ function formatTopRecord(record) {
   return `${wins}–${losses} (${winPct}%)`;
 }
 
-async function computeTeamRank(teamName, season) {
+function computeTeamRankFromData(teamName, teamsData) {
+  // Sort teams: xTP desc, xTP_P desc, team name asc (same as leaderboard)
+  const sorted = [...teamsData].sort((a, b) => {
+    if (b.team_xTP !== a.team_xTP) return b.team_xTP - a.team_xTP;
+    if (b.team_xTP_P !== a.team_xTP_P) return b.team_xTP_P - a.team_xTP_P;
+    return a.team.localeCompare(b.team);
+  });
+  
+  // Find team's rank (normalize team names for comparison)
+  const normalizedTeamName = normalizeTeamName(teamName);
+  const rank = sorted.findIndex(t => normalizeTeamName(t.team) === normalizedTeamName) + 1;
+  return rank > 0 ? rank : null;
+}
+
+async function computeTeamRank(teamName, season, cachedData = null) {
+  // If cached data is provided, use it instead of fetching
+  if (cachedData) {
+    const teamsData = Array.isArray(cachedData) ? cachedData : (cachedData.teams || []);
+    return computeTeamRankFromData(teamName, teamsData);
+  }
+  
+  // Otherwise, fetch the data (fallback for backward compatibility)
   try {
     const gender = getGenderFromURL();
     const url = buildXTPURL(gender, season);
@@ -416,18 +331,7 @@ async function computeTeamRank(teamName, season) {
     
     // Handle both array and object with 'teams' property
     const teamsData = Array.isArray(data) ? data : (data.teams || []);
-    
-    // Sort teams: xTP desc, xTP_P desc, team name asc (same as leaderboard)
-    const sorted = [...teamsData].sort((a, b) => {
-      if (b.team_xTP !== a.team_xTP) return b.team_xTP - a.team_xTP;
-      if (b.team_xTP_P !== a.team_xTP_P) return b.team_xTP_P - a.team_xTP_P;
-      return a.team.localeCompare(b.team);
-    });
-    
-    // Find team's rank (normalize team names for comparison)
-    const normalizedTeamName = normalizeTeamName(teamName);
-    const rank = sorted.findIndex(t => normalizeTeamName(t.team) === normalizedTeamName) + 1;
-    return rank > 0 ? rank : null;
+    return computeTeamRankFromData(teamName, teamsData);
   } catch (e) {
     console.warn("[HS Team] Could not compute team rank:", e);
     return null;
@@ -505,7 +409,7 @@ function renderTeamProfileMetrics(metrics, starters, isHS) {
 }
 
 // Render top summary row (Team Profile + xTP) for HS
-async function renderTopSummaryRow(metrics, starters, xtpData, teamName) {
+async function renderTopSummaryRow(metrics, starters, xtpData, teamName, xtpRank = null) {
   // Create or get the top summary container
   let topSummaryContainer = document.getElementById("top-summary-row");
   if (!topSummaryContainer) {
@@ -530,7 +434,7 @@ async function renderTopSummaryRow(metrics, starters, xtpData, teamName) {
   leftCol.className = "xtp-headline-summary";
   
   if (xtpData) {
-    await renderXTPHeadline(xtpData, teamName);
+    await renderXTPHeadline(xtpData, teamName, xtpRank);
     const xtpSection = document.getElementById("xtp-headline-section");
     if (xtpSection) {
       // Clone the xTP content
@@ -597,7 +501,7 @@ async function renderTopSummaryRow(metrics, starters, xtpData, teamName) {
   topSummaryContainer.appendChild(rightCol);
 }
 
-async function renderTeamPage(team, metrics, starters, remaining, xtpData) {
+async function renderTeamPage(team, metrics, starters, remaining, xtpData, xtpRank = null) {
   const isHS = isHSSite();
   
   // Header
@@ -619,7 +523,7 @@ async function renderTeamPage(team, metrics, starters, remaining, xtpData) {
 
   // Create top summary row (Team Profile stats + xTP) for HS
   if (isHS) {
-    await renderTopSummaryRow(metrics, starters, xtpData, teamName);
+    await renderTopSummaryRow(metrics, starters, xtpData, teamName, xtpRank);
     // Hide old Team Profile section for HS (we moved it to top)
     const oldTeamProfileSection = document.getElementById("team-profile-metrics-section");
     if (oldTeamProfileSection) {
@@ -664,7 +568,7 @@ async function renderTeamPage(team, metrics, starters, remaining, xtpData) {
   renderRemainingRosterTable(remaining);
 }
 
-async function renderXTPHeadline(xtpData, teamName) {
+async function renderXTPHeadline(xtpData, teamName, xtpRank = null) {
   const section = document.getElementById("xtp-headline-section");
   section.style.display = "block";
   
@@ -706,13 +610,19 @@ async function renderXTPHeadline(xtpData, teamName) {
   const sign = xtpData.team_xTP >= 0 ? "+" : "";
   document.getElementById("xtp-total").textContent = `${sign}${total}`;
   
-  // Rank badge (computed from leaderboard)
-  const season = resolveSeason();
-  const rank = await computeTeamRank(teamName, season);
+  // Rank badge (use provided rank or compute from leaderboard)
   const rankBadgeContainer = document.getElementById("xtp-rank-badge");
   rankBadgeContainer.innerHTML = "";
-  if (rank) {
-    rankBadgeContainer.appendChild(createMVRankBadge(rank));
+  if (xtpRank !== null) {
+    // Use provided rank (already computed)
+    rankBadgeContainer.appendChild(createMVRankBadge(xtpRank));
+  } else {
+    // Fallback: compute rank (shouldn't happen in normal flow)
+    const season = resolveSeason();
+    const rank = await computeTeamRank(teamName, season);
+    if (rank) {
+      rankBadgeContainer.appendChild(createMVRankBadge(rank));
+    }
   }
   
   // Breakdown text
@@ -797,7 +707,8 @@ function renderStartersTable(starters, xtpData) {
 
   starters.forEach(({ weight, profile }) => {
     const weightStr = String(weight);
-    const weightData = xtpData?.weights?.[weightStr];
+    // Use embedded xTP data from profile if available (new structure), otherwise fall back to xtpData
+    const weightData = profile._xtp_data || xtpData?.weights?.[weightStr];
     const row = document.createElement("tr");
     row.className = "xtp-expanded-row";
 
@@ -976,6 +887,12 @@ function renderRemainingRosterTable(remaining) {
 
   // Helper function to count Top 25 wins
   const countTop25Wins = (profile) => {
+    // Check if using precomputed value from team profile
+    if (profile._top25_wins !== undefined && profile._top25_wins !== null) {
+      return profile._top25_wins;
+    }
+    
+    // Fallback: Calculate from match_list (legacy behavior)
     const matchList = profile?.match_list || [];
     let top25Wins = 0;
     matchList.forEach(match => {

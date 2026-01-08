@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "woodford_county",
   "team_name": "Woodford County",
   "name": "Woodford County",
@@ -16,40 +17,174 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981250150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": "35333546132",
-      "107": "35333548132",
-      "114": "35333544132",
-      "120": "35333549132",
-      "126": "35333550132",
-      "132": "35670762132",
-      "138": null,
-      "145": null,
-      "152": null,
-      "165": null,
-      "185": null,
-      "235": "35333551132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.912861Z"
+  "generated_at_utc": "2026-01-08T12:52:16.305814Z",
+  "starters": {
+    "100": {
+      "weight": 100,
+      "wrestler_id": "35333546132",
+      "name": "Bijou Brown",
+      "current_rank": 12,
+      "xtp": 6.31,
+      "xtp_p": 1.4,
+      "xtp_a": 1.47,
+      "xtp_b": 3.44,
+      "top10_record": {
+        "wins": 0,
+        "losses": 6
+      },
+      "top33_record": {
+        "wins": 6,
+        "losses": 6
+      }
+    },
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35333548132",
+      "name": "Genevieve Cox",
+      "current_rank": 6,
+      "xtp": 11.22,
+      "xtp_p": 4.26,
+      "xtp_a": 2.33,
+      "xtp_b": 4.63,
+      "top10_record": {
+        "wins": 6,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 19,
+        "losses": 2
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35333544132",
+      "name": "AnaLeigh Tierney",
+      "current_rank": 1,
+      "xtp": 22.49,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 5.93,
+      "top10_record": {
+        "wins": 8,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 15,
+        "losses": 0
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35333549132",
+      "name": "Jacey Lyddane",
+      "current_rank": 9,
+      "xtp": 7.01,
+      "xtp_p": 2.03,
+      "xtp_a": 1.78,
+      "xtp_b": 3.2,
+      "top10_record": {
+        "wins": 2,
+        "losses": 6
+      },
+      "top33_record": {
+        "wins": 15,
+        "losses": 6
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35333550132",
+      "name": "London Mosley",
+      "current_rank": 23,
+      "xtp": 2.99,
+      "xtp_p": 0.37,
+      "xtp_a": 0.81,
+      "xtp_b": 1.81,
+      "top10_record": {
+        "wins": 0,
+        "losses": 5
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 10
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35670762132",
+      "name": "Lyla Pitzer",
+      "current_rank": 33,
+      "xtp": 1.73,
+      "xtp_p": 0.15,
+      "xtp_a": 0.44,
+      "xtp_b": 1.14,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 10
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35333551132",
+      "name": "Mariya Reed",
+      "current_rank": 13,
+      "xtp": 6.26,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 2.99,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 100,
+      "wrestler_id": "35333545132",
+      "name": "Aubrey King",
+      "wins": 2,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 62,
+      "losses": 34
+    },
+    "top10": {
+      "wins": 16,
+      "losses": 22
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

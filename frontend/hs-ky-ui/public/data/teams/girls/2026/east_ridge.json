@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "east_ridge",
   "team_name": "East Ridge",
   "name": "East Ridge",
@@ -16,6 +17,11 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981320150",
     "school": null
   },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
+    "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-01-08T12:52:15.938116Z",
   "roster": {
     "weights": [
       100,
@@ -46,10 +52,5 @@
       "235": null
     },
     "starters_source": "ranking_files_with_overrides"
-  },
-  "derived_from": {
-    "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
-    "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
-  },
-  "generated_at_utc": "2026-01-07T15:33:51.814708Z"
+  }
 }

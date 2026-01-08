@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "ashland_blazer",
   "team_name": "Ashland Blazer",
   "name": "Ashland Blazer",
@@ -16,40 +17,327 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981154150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": "35333431132",
-      "107": null,
-      "114": "37081901132",
-      "120": "35333434132",
-      "126": "35333423132",
-      "132": "35333419132",
-      "138": "35333466132",
-      "145": "36063451132",
-      "152": "35333420132",
-      "165": "35333436132",
-      "185": "35333427132",
-      "235": "35333424132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.781087Z"
+  "generated_at_utc": "2026-01-08T12:52:15.774886Z",
+  "starters": {
+    "100": {
+      "weight": 100,
+      "wrestler_id": "35333431132",
+      "name": "Emma McDavid",
+      "current_rank": 14,
+      "xtp": 5.36,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 3.16,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 3
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "37081901132",
+      "name": "Selena White",
+      "current_rank": 83,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35333434132",
+      "name": "Hayden Meeks",
+      "current_rank": 77,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35333423132",
+      "name": "Zoe Helms",
+      "current_rank": 26,
+      "xtp": 2.24,
+      "xtp_p": 0.22,
+      "xtp_a": 0.64,
+      "xtp_b": 1.38,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 1
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35333419132",
+      "name": "Vivian Moyer",
+      "current_rank": 5,
+      "xtp": 12.21,
+      "xtp_p": 5.13,
+      "xtp_a": 2.53,
+      "xtp_b": 4.55,
+      "top10_record": {
+        "wins": 1,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 1
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35333466132",
+      "name": "Ryleigh Mahan",
+      "current_rank": 14,
+      "xtp": 4.95,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 2.75,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 2
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "36063451132",
+      "name": "Bailey Stephens",
+      "current_rank": 30,
+      "xtp": 2.17,
+      "xtp_p": 0.22,
+      "xtp_a": 0.59,
+      "xtp_b": 1.36,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35333420132",
+      "name": "Avah Mauk",
+      "current_rank": 28,
+      "xtp": 2.57,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.63,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 4
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35333436132",
+      "name": "Kira Robinson",
+      "current_rank": 78,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35333427132",
+      "name": "Nevaeh Lopez",
+      "current_rank": 61,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35333424132",
+      "name": "Amoni Hutchinson",
+      "current_rank": 27,
+      "xtp": 3.06,
+      "xtp_p": 0.37,
+      "xtp_a": 0.81,
+      "xtp_b": 1.88,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 126,
+      "wrestler_id": "35333418132",
+      "name": "Chyanne Maggard",
+      "wins": 8,
+      "losses": 7,
+      "top25_wins": 1,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "37081911132",
+      "name": "Skylin Watts",
+      "wins": 2,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 145,
+      "wrestler_id": "35333438132",
+      "name": "Leeah Yates",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35333437132",
+      "name": "Adelita Vanover",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35333422132",
+      "name": "Claudia Clarke",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35333421132",
+      "name": "Jayden Blatz",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35333428132",
+      "name": "Laylah Markel",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35333435132",
+      "name": "Macie Messer",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35333429132",
+      "name": "Mary McGill",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35333439132",
+      "name": "Owen Fugett",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 14,
+      "losses": 26
+    },
+    "top10": {
+      "wins": 1,
+      "losses": 9
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

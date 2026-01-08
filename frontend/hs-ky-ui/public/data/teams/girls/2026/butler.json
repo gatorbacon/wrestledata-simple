@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "butler",
   "team_name": "Butler",
   "name": "Butler",
@@ -16,40 +17,165 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981280150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": null,
-      "114": "35333669132",
-      "120": "35333668132",
-      "126": "35333670132",
-      "132": null,
-      "138": null,
-      "145": "35333674132",
-      "152": null,
-      "165": "35333677132",
-      "185": "35333672132",
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.795608Z"
+  "generated_at_utc": "2026-01-08T12:52:15.838905Z",
+  "starters": {
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35333669132",
+      "name": "Neticia Hughes",
+      "current_rank": 68,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35333668132",
+      "name": "Rowyn Eskridge",
+      "current_rank": 28,
+      "xtp": 2.45,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.51,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 1
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35333670132",
+      "name": "Briella Levy",
+      "current_rank": 55,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35333674132",
+      "name": "Saniyah Nana",
+      "current_rank": 11,
+      "xtp": 6.15,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 2.88,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 2
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35333677132",
+      "name": "Journee White",
+      "current_rank": 82,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35333672132",
+      "name": "Aria McFarland",
+      "current_rank": 8,
+      "xtp": 8.41,
+      "xtp_p": 2.43,
+      "xtp_a": 1.91,
+      "xtp_b": 4.07,
+      "top10_record": {
+        "wins": 1,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 126,
+      "wrestler_id": "35333675132",
+      "name": "Micaela Owens",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 145,
+      "wrestler_id": "35333676132",
+      "name": "Lucy Savon",
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 4,
+      "losses": 5
+    },
+    "top10": {
+      "wins": 1,
+      "losses": 2
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

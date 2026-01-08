@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "central_hardin",
   "team_name": "Central Hardin",
   "name": "Central Hardin",
@@ -16,44 +17,417 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818224150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35001158132",
-      "113": "35341879132",
-      "120": "35025382132",
-      "126": "35001151132",
-      "132": "35001146132",
-      "138": "35840980132",
-      "144": "35001144132",
-      "150": "35001150132",
-      "157": "35001149132",
-      "165": "35441085132",
-      "175": "35920579132",
-      "190": "35001147132",
-      "215": "35001152132",
-      "285": "35001156132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.342314Z"
+  "generated_at_utc": "2026-01-08T12:52:14.591649Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35001158132",
+      "name": "River Leonard",
+      "current_rank": 44,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35341879132",
+      "name": "Kawan McCrae",
+      "current_rank": 43,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35025382132",
+      "name": "Hera Alojado",
+      "current_rank": 212,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35001151132",
+      "name": "Chase Mort",
+      "current_rank": 14,
+      "xtp": 4.75,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 2.55,
+      "top10_record": {
+        "wins": 1,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 1
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35001146132",
+      "name": "Estevan Delgadillo",
+      "current_rank": 19,
+      "xtp": 3.61,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 2.18,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 1
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35840980132",
+      "name": "Jayden Chang",
+      "current_rank": 75,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35001144132",
+      "name": "Derrick Johnson",
+      "current_rank": 7,
+      "xtp": 8.56,
+      "xtp_p": 3.31,
+      "xtp_a": 2.12,
+      "xtp_b": 3.13,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 0
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35001150132",
+      "name": "Giazzi Segarra",
+      "current_rank": 25,
+      "xtp": 2.2,
+      "xtp_p": 0.22,
+      "xtp_a": 0.64,
+      "xtp_b": 1.34,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35001149132",
+      "name": "Jackson Holly",
+      "current_rank": 24,
+      "xtp": 2.39,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.45,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 1
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35441085132",
+      "name": "Samuelu Hazelwood",
+      "current_rank": 5,
+      "xtp": 11.35,
+      "xtp_p": 5.13,
+      "xtp_a": 2.53,
+      "xtp_b": 3.69,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 0
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35920579132",
+      "name": "Karson Helminick",
+      "current_rank": 60,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35001147132",
+      "name": "Apelu Hazelwood",
+      "current_rank": 27,
+      "xtp": 1.68,
+      "xtp_p": 0.22,
+      "xtp_a": 0.64,
+      "xtp_b": 0.82,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35001152132",
+      "name": "Brandon Krauss",
+      "current_rank": 41,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35001156132",
+      "name": "Zakkary Barzee",
+      "current_rank": 78,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 106,
+      "wrestler_id": "35025464132",
+      "name": "Kaylin Collins",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 106,
+      "wrestler_id": "35025383132",
+      "name": "Mackenna Hogan",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 106,
+      "wrestler_id": "35025380132",
+      "name": "Madison Leonard",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35025379132",
+      "name": "Scarlett Burlison",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35001142132",
+      "name": "CJ Hogan",
+      "wins": 8,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.625
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35001148132",
+      "name": "Neiko Villegas",
+      "wins": 9,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.889
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35001155132",
+      "name": "Kendall Bennett",
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35001145132",
+      "name": "Peyton Weaver",
+      "wins": 4,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35271981132",
+      "name": "Carter Jolley",
+      "wins": 1,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35390420132",
+      "name": "Ethan Killion",
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35390426132",
+      "name": "Ethan Braun",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35840971132",
+      "name": "Everett Neal",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35271967132",
+      "name": "Jayden Fray",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35841000132",
+      "name": "Ethan Thompson",
+      "wins": 3,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 12,
+      "losses": 14
+    },
+    "top10": {
+      "wins": 1,
+      "losses": 4
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

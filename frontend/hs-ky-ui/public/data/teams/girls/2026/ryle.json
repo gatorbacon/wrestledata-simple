@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "ryle",
   "team_name": "Ryle",
   "name": "Ryle",
@@ -16,40 +17,120 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981227150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": "35542412132",
-      "114": "35663945132",
-      "120": "35663911132",
-      "126": null,
-      "132": null,
-      "138": "35663925132",
-      "145": null,
-      "152": null,
-      "165": null,
-      "185": null,
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.883803Z"
+  "generated_at_utc": "2026-01-08T12:52:16.201660Z",
+  "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35542412132",
+      "name": "Peyton Brinkman",
+      "current_rank": 4,
+      "xtp": 13.61,
+      "xtp_p": 6.31,
+      "xtp_a": 2.77,
+      "xtp_b": 4.53,
+      "top10_record": {
+        "wins": 5,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 9,
+        "losses": 1
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35663945132",
+      "name": "Peggy Anderson",
+      "current_rank": 72,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35663911132",
+      "name": "Amani Reddick",
+      "current_rank": 8,
+      "xtp": 8.09,
+      "xtp_p": 2.43,
+      "xtp_a": 1.91,
+      "xtp_b": 3.75,
+      "top10_record": {
+        "wins": 1,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 4
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35663925132",
+      "name": "Preslee Steiber",
+      "current_rank": 19,
+      "xtp": 3.42,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 1.99,
+      "top10_record": {
+        "wins": 0,
+        "losses": 7
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 7
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 107,
+      "wrestler_id": "35911741132",
+      "name": "Macie Clark",
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 16,
+      "losses": 16
+    },
+    "top10": {
+      "wins": 6,
+      "losses": 13
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

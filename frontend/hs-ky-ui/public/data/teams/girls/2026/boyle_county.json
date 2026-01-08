@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "boyle_county",
   "team_name": "Boyle County",
   "name": "Boyle County",
@@ -16,40 +17,228 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981161150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": "35333369132",
-      "107": "35333374132",
-      "114": null,
-      "120": "35333373132",
-      "126": "35333371132",
-      "132": "35333372132",
-      "138": null,
-      "145": "35333378132",
-      "152": "35333442132",
-      "165": "35333376132",
-      "185": null,
-      "235": "35333375132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.792093Z"
+  "generated_at_utc": "2026-01-08T12:52:15.816658Z",
+  "starters": {
+    "100": {
+      "weight": 100,
+      "wrestler_id": "35333369132",
+      "name": "Teagan Hundley",
+      "current_rank": 9,
+      "xtp": 7.72,
+      "xtp_p": 2.03,
+      "xtp_a": 1.78,
+      "xtp_b": 3.91,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 3
+      }
+    },
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35333374132",
+      "name": "Hayley Cappelli",
+      "current_rank": 9,
+      "xtp": 7.48,
+      "xtp_p": 2.03,
+      "xtp_a": 1.78,
+      "xtp_b": 3.67,
+      "top10_record": {
+        "wins": 2,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 6,
+        "losses": 4
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35333373132",
+      "name": "Lyla Smith",
+      "current_rank": 2,
+      "xtp": 18.73,
+      "xtp_p": 10.07,
+      "xtp_a": 3.42,
+      "xtp_b": 5.24,
+      "top10_record": {
+        "wins": 1,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 1
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35333371132",
+      "name": "Aubrey White",
+      "current_rank": 3,
+      "xtp": 16.28,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 5.14,
+      "top10_record": {
+        "wins": 4,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 2
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35333372132",
+      "name": "Makyla Folwer",
+      "current_rank": 2,
+      "xtp": 19.24,
+      "xtp_p": 10.07,
+      "xtp_a": 3.42,
+      "xtp_b": 5.75,
+      "top10_record": {
+        "wins": 1,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 0
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35333378132",
+      "name": "Chloe Gallahue",
+      "current_rank": 2,
+      "xtp": 19.02,
+      "xtp_p": 10.07,
+      "xtp_a": 3.42,
+      "xtp_b": 5.53,
+      "top10_record": {
+        "wins": 6,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 7,
+        "losses": 1
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35333442132",
+      "name": "Kennedi Burger",
+      "current_rank": 32,
+      "xtp": 2.12,
+      "xtp_p": 0.22,
+      "xtp_a": 0.59,
+      "xtp_b": 1.31,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 5
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35333376132",
+      "name": "Lyla Porter",
+      "current_rank": 16,
+      "xtp": 4.25,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 2.7,
+      "top10_record": {
+        "wins": 1,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 4
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35333375132",
+      "name": "Porter Tagarook",
+      "current_rank": 3,
+      "xtp": 16.75,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 5.61,
+      "top10_record": {
+        "wins": 1,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 120,
+      "wrestler_id": "35333377132",
+      "name": "Brooklyn Cash",
+      "wins": 1,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35333440132",
+      "name": "Sarayna Lopez",
+      "wins": 9,
+      "losses": 7,
+      "top25_wins": 2,
+      "bonus_rate": 0.778
+    },
+    {
+      "weight": 145,
+      "wrestler_id": "35333370132",
+      "name": "Phoebe Smith",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 34,
+      "losses": 20
+    },
+    "top10": {
+      "wins": 16,
+      "losses": 16
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "whitley_county",
   "team_name": "Whitley County",
   "name": "Whitley County",
@@ -16,40 +17,336 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981249150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": "35523193132",
-      "107": "35457159132",
-      "114": "35457238132",
-      "120": "35456734132",
-      "126": "35457283132",
-      "132": "35427604132",
-      "138": "35457081132",
-      "145": "35457322132",
-      "152": "35457315132",
-      "165": "35457363132",
-      "185": "35457269132",
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.912037Z"
+  "generated_at_utc": "2026-01-08T12:52:16.299671Z",
+  "starters": {
+    "100": {
+      "weight": 100,
+      "wrestler_id": "35523193132",
+      "name": "Addyleigh Monhollen",
+      "current_rank": 59,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35457159132",
+      "name": "Izabella Herndon",
+      "current_rank": 17,
+      "xtp": 3.85,
+      "xtp_p": 0.41,
+      "xtp_a": 1.02,
+      "xtp_b": 2.42,
+      "top10_record": {
+        "wins": 1,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 9
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35457238132",
+      "name": "Lexi Susor",
+      "current_rank": 29,
+      "xtp": 1.86,
+      "xtp_p": 0.18,
+      "xtp_a": 0.49,
+      "xtp_b": 1.19,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 5
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35456734132",
+      "name": "Baylee Simpson",
+      "current_rank": 40,
+      "xtp": 1.29,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.94,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35457283132",
+      "name": "Morgan Phillips",
+      "current_rank": 35,
+      "xtp": 1.48,
+      "xtp_p": 0.18,
+      "xtp_a": 0.49,
+      "xtp_b": 0.81,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 9
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35427604132",
+      "name": "Ariel Dietlin",
+      "current_rank": 49,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35457081132",
+      "name": "Emily Jones",
+      "current_rank": 43,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 12
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35457322132",
+      "name": "Sarah Mosley",
+      "current_rank": 65,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35457315132",
+      "name": "Olivia Fuson",
+      "current_rank": 3,
+      "xtp": 17.0,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 5.86,
+      "top10_record": {
+        "wins": 4,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 15,
+        "losses": 1
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35457363132",
+      "name": "Trinity Hopkins",
+      "current_rank": 7,
+      "xtp": 10.03,
+      "xtp_p": 3.31,
+      "xtp_a": 2.12,
+      "xtp_b": 4.6,
+      "top10_record": {
+        "wins": 3,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 8,
+        "losses": 5
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35457269132",
+      "name": "Makenna Sulfridge",
+      "current_rank": 11,
+      "xtp": 6.52,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 3.25,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 9
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 107,
+      "wrestler_id": "35457212132",
+      "name": "Kaylee Bunch",
+      "wins": 2,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 107,
+      "wrestler_id": "35457244132",
+      "name": "Madyson Brothers",
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "35427617132",
+      "name": "Ashlen Douglas",
+      "wins": 7,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.714
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "35456263132",
+      "name": "Aubree Birchfield",
+      "wins": 16,
+      "losses": 12,
+      "top25_wins": 0,
+      "bonus_rate": 0.75
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "35457070132",
+      "name": "Deina Nelson",
+      "wins": 8,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.625
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35427458132",
+      "name": "Adalee Gilreath",
+      "wins": 5,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.4
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35427544132",
+      "name": "Angeles Ruiz",
+      "wins": 9,
+      "losses": 14,
+      "top25_wins": 1,
+      "bonus_rate": 0.556
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35457056132",
+      "name": "Chloe Mansberry",
+      "wins": 1,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35457105132",
+      "name": "Harley Lawson",
+      "wins": 1,
+      "losses": 15,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35457167132",
+      "name": "Jaycee Smith",
+      "wins": 5,
+      "losses": 10,
+      "top25_wins": 0,
+      "bonus_rate": 0.6
+    },
+    {
+      "weight": 185,
+      "wrestler_id": "35457293132",
+      "name": "Nellie Huddleston",
+      "wins": 2,
+      "losses": 13,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 33,
+      "losses": 57
+    },
+    "top10": {
+      "wins": 8,
+      "losses": 21
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

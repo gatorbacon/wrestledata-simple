@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "fort_campbell",
   "team_name": "Fort Campbell",
   "name": "Fort Campbell",
@@ -16,40 +17,363 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981183150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": "35522855132",
-      "107": "35521324132",
-      "114": "35520298132",
-      "120": "35521663132",
-      "126": "35520299132",
-      "132": "35520301132",
-      "138": "35521626132",
-      "145": "35520295132",
-      "152": "35521273132",
-      "165": "35520296132",
-      "185": "35520297132",
-      "235": "35520302132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.819021Z"
+  "generated_at_utc": "2026-01-08T12:52:15.951820Z",
+  "starters": {
+    "100": {
+      "weight": 100,
+      "wrestler_id": "35522855132",
+      "name": "Emily Herrera",
+      "current_rank": 19,
+      "xtp": 3.39,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 1.96,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 5
+      }
+    },
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35521324132",
+      "name": "Mya Carolina",
+      "current_rank": 45,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35520298132",
+      "name": "Delaney Perry",
+      "current_rank": 20,
+      "xtp": 3.65,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 2.22,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35521663132",
+      "name": "Braylee Drake",
+      "current_rank": 56,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35520299132",
+      "name": "Kayla Maslonka",
+      "current_rank": 4,
+      "xtp": 14.07,
+      "xtp_p": 6.31,
+      "xtp_a": 2.77,
+      "xtp_b": 4.99,
+      "top10_record": {
+        "wins": 1,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 0
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35520301132",
+      "name": "Hannah `Liz` Porter",
+      "current_rank": 18,
+      "xtp": 3.89,
+      "xtp_p": 0.46,
+      "xtp_a": 1.0,
+      "xtp_b": 2.43,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 2
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35521626132",
+      "name": "Starlet Hurst",
+      "current_rank": 29,
+      "xtp": 1.89,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 1.15,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 5
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35520295132",
+      "name": "Avaley Moore",
+      "current_rank": 31,
+      "xtp": 2.02,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 1.28,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 7
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35521273132",
+      "name": "Anna Clark",
+      "current_rank": 14,
+      "xtp": 5.2,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 3.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 7,
+        "losses": 3
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35520296132",
+      "name": "Anela Shea-Suanez",
+      "current_rank": 36,
+      "xtp": 2.23,
+      "xtp_p": 0.11,
+      "xtp_a": 0.51,
+      "xtp_b": 1.61,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35520297132",
+      "name": "Corey (Onna) Dalmida",
+      "current_rank": 19,
+      "xtp": 3.72,
+      "xtp_p": 0.46,
+      "xtp_a": 1.0,
+      "xtp_b": 2.26,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 1
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35520302132",
+      "name": "Sevira Taito",
+      "current_rank": 26,
+      "xtp": 3.26,
+      "xtp_p": 0.41,
+      "xtp_a": 0.85,
+      "xtp_b": 2.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 9
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 100,
+      "wrestler_id": "35521033132",
+      "name": "Grace Cassell",
+      "wins": 1,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 100,
+      "wrestler_id": "35521545132",
+      "name": "Jaycee Bolen",
+      "wins": 4,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "36085229132",
+      "name": "Jacobee Neilko",
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "35520300132",
+      "name": "Zemirah Witt",
+      "wins": 3,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "35666437132",
+      "name": "Zoey Morrison",
+      "wins": 8,
+      "losses": 5,
+      "top25_wins": 1,
+      "bonus_rate": 0.875
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35666995132",
+      "name": "Tristin Caldwell",
+      "wins": 6,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.833
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35884736132",
+      "name": "Zoey Wengard",
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 145,
+      "wrestler_id": "35666975132",
+      "name": "Makayla Finn",
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 152,
+      "wrestler_id": "35520899132",
+      "name": "Chloe Sajdl",
+      "wins": 0,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35666902132",
+      "name": "Saireigne Dela Pena",
+      "wins": 1,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35521481132",
+      "name": "Saleigh Barbee",
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35521574132",
+      "name": "Saydee Johnson",
+      "wins": 3,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 21,
+      "losses": 43
+    },
+    "top10": {
+      "wins": 1,
+      "losses": 10
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

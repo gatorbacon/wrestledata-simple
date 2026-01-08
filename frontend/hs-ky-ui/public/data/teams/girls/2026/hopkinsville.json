@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "hopkinsville",
   "team_name": "Hopkinsville",
   "name": "Hopkinsville",
@@ -16,40 +17,174 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981192150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": null,
-      "114": "35565920132",
-      "120": "35565921132",
-      "126": "35567185132",
-      "132": "35567250132",
-      "138": null,
-      "145": null,
-      "152": null,
-      "165": "35567160132",
-      "185": "35565922132",
-      "235": "35567218132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.837826Z"
+  "generated_at_utc": "2026-01-08T12:52:16.026738Z",
+  "starters": {
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35565920132",
+      "name": "Isabell Walker",
+      "current_rank": 15,
+      "xtp": 5.2,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 3.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 4
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35565921132",
+      "name": "Rheanna Walker",
+      "current_rank": 11,
+      "xtp": 6.34,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 3.07,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 1
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35567185132",
+      "name": "Emma DeArmond",
+      "current_rank": 61,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35567250132",
+      "name": "Juliette Aguero",
+      "current_rank": 64,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35567160132",
+      "name": "Shamya Quarles",
+      "current_rank": 62,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35565922132",
+      "name": "Trinity Lopez",
+      "current_rank": 21,
+      "xtp": 3.18,
+      "xtp_p": 0.45,
+      "xtp_a": 0.91,
+      "xtp_b": 1.82,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 5
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35567218132",
+      "name": "A`Niyah Groves",
+      "current_rank": 14,
+      "xtp": 6.06,
+      "xtp_p": 1.4,
+      "xtp_a": 1.47,
+      "xtp_b": 3.19,
+      "top10_record": {
+        "wins": 1,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 2
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 126,
+      "wrestler_id": "35567286132",
+      "name": "Raylan Shelton Vincent",
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 12,
+      "losses": 19
+    },
+    "top10": {
+      "wins": 1,
+      "losses": 5
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

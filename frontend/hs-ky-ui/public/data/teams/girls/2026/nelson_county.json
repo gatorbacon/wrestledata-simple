@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "nelson_county",
   "team_name": "Nelson County",
   "name": "Nelson County",
@@ -16,40 +17,146 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981211150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": "35565836132",
-      "107": "35566035132",
-      "114": null,
-      "120": null,
-      "126": "35565883132",
-      "132": null,
-      "138": null,
-      "145": "35565933132",
-      "152": null,
-      "165": "35565735132",
-      "185": null,
-      "235": "35565765132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.861653Z"
+  "generated_at_utc": "2026-01-08T12:52:16.121862Z",
+  "starters": {
+    "100": {
+      "weight": 100,
+      "wrestler_id": "35565836132",
+      "name": "Madyson Votaw",
+      "current_rank": 3,
+      "xtp": 16.42,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 5.28,
+      "top10_record": {
+        "wins": 2,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 2
+      }
+    },
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35566035132",
+      "name": "Niyahmi Pruitt",
+      "current_rank": 74,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35565883132",
+      "name": "Trinity Mattingly",
+      "current_rank": 12,
+      "xtp": 6.01,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 2.74,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 4
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35565933132",
+      "name": "Allison Jones",
+      "current_rank": 57,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35565735132",
+      "name": "Aaralynn Boblitt",
+      "current_rank": 6,
+      "xtp": 11.36,
+      "xtp_p": 4.26,
+      "xtp_a": 2.33,
+      "xtp_b": 4.77,
+      "top10_record": {
+        "wins": 3,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 8,
+        "losses": 0
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35565765132",
+      "name": "Portia Taylor",
+      "current_rank": 60,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 18,
+      "losses": 9
+    },
+    "top10": {
+      "wins": 5,
+      "losses": 5
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

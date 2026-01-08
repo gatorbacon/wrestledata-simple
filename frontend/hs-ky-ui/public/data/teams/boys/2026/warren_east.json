@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "warren_east",
   "team_name": "Warren East",
   "name": "Warren East",
@@ -16,6 +17,11 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818321150",
     "school": null
   },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
+    "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-01-08T12:52:15.631664Z",
   "roster": {
     "weights": [
       106,
@@ -50,10 +56,5 @@
       "285": null
     },
     "starters_source": "ranking_files_with_overrides"
-  },
-  "derived_from": {
-    "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
-    "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
-  },
-  "generated_at_utc": "2026-01-07T15:33:51.730151Z"
+  }
 }

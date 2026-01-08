@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "waltonverona",
   "team_name": "Walton-Verona",
   "name": "Walton-Verona",
@@ -16,44 +17,156 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818299150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": null,
-      "113": "35528546132",
-      "120": null,
-      "126": null,
-      "132": "35528996132",
-      "138": "35528825132",
-      "144": "35528663132",
-      "150": null,
-      "157": null,
-      "165": "35529017132",
-      "175": null,
-      "190": null,
-      "215": null,
-      "285": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.723853Z"
+  "generated_at_utc": "2026-01-08T12:52:15.617891Z",
+  "starters": {
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35528546132",
+      "name": "Braylon Ryan",
+      "current_rank": 11,
+      "xtp": 6.14,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 2.87,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 4
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35528996132",
+      "name": "Colin Brock",
+      "current_rank": 126,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35528825132",
+      "name": "Zane Schwanenberger",
+      "current_rank": 168,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35528663132",
+      "name": "Boone Sawyer",
+      "current_rank": 35,
+      "xtp": 1.11,
+      "xtp_p": 0.03,
+      "xtp_a": 0.3,
+      "xtp_b": 0.78,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35529017132",
+      "name": "Dylan Looney",
+      "current_rank": 118,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 6
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 132,
+      "wrestler_id": "35528619132",
+      "name": "Braydon Donato",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35528711132",
+      "name": "Levi Tilley",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35528780132",
+      "name": "Mason Krebs",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 6,
+      "losses": 17
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 10
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

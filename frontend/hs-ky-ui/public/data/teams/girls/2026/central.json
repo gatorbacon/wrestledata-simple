@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "central",
   "team_name": "Central",
   "name": "Central",
@@ -16,40 +17,273 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981168150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": "35668837132",
-      "114": "35668845132",
-      "120": "35542621132",
-      "126": null,
-      "132": null,
-      "138": "35775855132",
-      "145": "35542619132",
-      "152": "35775856132",
-      "165": "35542616132",
-      "185": "35668841132",
-      "235": "35668842132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.800858Z"
+  "generated_at_utc": "2026-01-08T12:52:15.881368Z",
+  "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35668837132",
+      "name": "Min Lee",
+      "current_rank": 51,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35668845132",
+      "name": "Jalayna Richardson",
+      "current_rank": 73,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35542621132",
+      "name": "Isabella Warner",
+      "current_rank": 29,
+      "xtp": 1.96,
+      "xtp_p": 0.22,
+      "xtp_a": 0.64,
+      "xtp_b": 1.1,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 4
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35775855132",
+      "name": "Toby McNary",
+      "current_rank": 65,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35542619132",
+      "name": "Alyiah Mason",
+      "current_rank": 19,
+      "xtp": 3.92,
+      "xtp_p": 0.41,
+      "xtp_a": 1.02,
+      "xtp_b": 2.49,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 6
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35775856132",
+      "name": "Riyan Abdirshid",
+      "current_rank": 43,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35542616132",
+      "name": "Maliyah Oates",
+      "current_rank": 18,
+      "xtp": 3.44,
+      "xtp_p": 0.46,
+      "xtp_a": 1.0,
+      "xtp_b": 1.98,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 3
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35668841132",
+      "name": "Kaniece Edwards",
+      "current_rank": 20,
+      "xtp": 3.57,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 2.14,
+      "top10_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 5
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35668842132",
+      "name": "Kymani Ealom",
+      "current_rank": 33,
+      "xtp": 1.84,
+      "xtp_p": 0.18,
+      "xtp_a": 0.49,
+      "xtp_b": 1.17,
+      "top10_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 7
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 120,
+      "wrestler_id": "35542615132",
+      "name": "NaRhiya Davis",
+      "wins": 5,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35542617132",
+      "name": "Shera (KAZ) Niyoyakunze",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35668840132",
+      "name": "Alaina May",
+      "wins": 1,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35668838132",
+      "name": "Rachel Saint Louis",
+      "wins": 3,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 185,
+      "wrestler_id": "35668843132",
+      "name": "Jacyla Stafford",
+      "wins": 1,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 185,
+      "wrestler_id": "35542620132",
+      "name": "Marita Jones",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35668839132",
+      "name": "Fatou Gueye",
+      "wins": 1,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35668844132",
+      "name": "Tahirah Stephens",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 8,
+      "losses": 34
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 13
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

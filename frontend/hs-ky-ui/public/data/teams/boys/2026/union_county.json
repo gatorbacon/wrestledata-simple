@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "boys",
   "team_id": "union_county",
   "team_name": "Union County",
   "name": "Union County",
@@ -16,44 +17,471 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818297150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      106,
-      113,
-      120,
-      126,
-      132,
-      138,
-      144,
-      150,
-      157,
-      165,
-      175,
-      190,
-      215,
-      285
-    ],
-    "starters": {
-      "106": "35031129132",
-      "113": "35031547132",
-      "120": "35031551132",
-      "126": "35031565132",
-      "132": "35031571132",
-      "138": "35035263132",
-      "144": "35035268132",
-      "150": "35035275132",
-      "157": "35035507132",
-      "165": "35035530132",
-      "175": "35035605132",
-      "190": "35035621132",
-      "215": "35035623132",
-      "285": "35035634132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.711302Z"
+  "generated_at_utc": "2026-01-08T12:52:15.590834Z",
+  "starters": {
+    "106": {
+      "weight": 106,
+      "wrestler_id": "35031129132",
+      "name": "Jackson Taylor",
+      "current_rank": 6,
+      "xtp": 9.92,
+      "xtp_p": 4.26,
+      "xtp_a": 2.33,
+      "xtp_b": 3.33,
+      "top10_record": {
+        "wins": 1,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "113": {
+      "weight": 113,
+      "wrestler_id": "35031547132",
+      "name": "Peyton Fowler",
+      "current_rank": 4,
+      "xtp": 12.84,
+      "xtp_p": 6.31,
+      "xtp_a": 2.77,
+      "xtp_b": 3.76,
+      "top10_record": {
+        "wins": 1,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35031551132",
+      "name": "Jaxson Mayberry",
+      "current_rank": 1,
+      "xtp": 19.54,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 2.98,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35031565132",
+      "name": "Jacob Ramsey",
+      "current_rank": 5,
+      "xtp": 11.39,
+      "xtp_p": 5.13,
+      "xtp_a": 2.53,
+      "xtp_b": 3.73,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35031571132",
+      "name": "Brennen Clifford",
+      "current_rank": 2,
+      "xtp": 18.17,
+      "xtp_p": 10.07,
+      "xtp_a": 3.42,
+      "xtp_b": 4.68,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35035263132",
+      "name": "Jayden Raney",
+      "current_rank": 1,
+      "xtp": 21.25,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 4.69,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35035268132",
+      "name": "Utah Heady",
+      "current_rank": 9,
+      "xtp": 6.33,
+      "xtp_p": 2.03,
+      "xtp_a": 1.78,
+      "xtp_b": 2.52,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 0
+      }
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35035275132",
+      "name": "Jordyn Raney",
+      "current_rank": 1,
+      "xtp": 20.65,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 4.09,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35035507132",
+      "name": "Wendel Shackelford",
+      "current_rank": 25,
+      "xtp": 2.08,
+      "xtp_p": 0.22,
+      "xtp_a": 0.64,
+      "xtp_b": 1.22,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35035530132",
+      "name": "Carter Thomas",
+      "current_rank": 10,
+      "xtp": 6.31,
+      "xtp_p": 1.9,
+      "xtp_a": 1.69,
+      "xtp_b": 2.72,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35035605132",
+      "name": "Daniel Thompson",
+      "current_rank": 14,
+      "xtp": 5.15,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 2.95,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35035621132",
+      "name": "Lucas Ricketts",
+      "current_rank": 1,
+      "xtp": 19.94,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 3.38,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35035623132",
+      "name": "Wylee Elders",
+      "current_rank": 35,
+      "xtp": 0.78,
+      "xtp_p": 0.09,
+      "xtp_a": 0.34,
+      "xtp_b": 0.35,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35035634132",
+      "name": "Austin Cummings",
+      "current_rank": 1,
+      "xtp": 20.69,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 4.13,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 106,
+      "wrestler_id": "35081513132",
+      "name": "Austin Henson",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 106,
+      "wrestler_id": "35031556132",
+      "name": "Brady Elder",
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 106,
+      "wrestler_id": "35031542132",
+      "name": "Kaidyn Malloy",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 106,
+      "wrestler_id": "35381422132",
+      "name": "Noah Gray",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 113,
+      "wrestler_id": "35031115132",
+      "name": "Ross Johnson",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "35767618132",
+      "name": "Markell Wilson",
+      "wins": 1,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35081379132",
+      "name": "MaKaedin Elam",
+      "wins": 4,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.75
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35035638132",
+      "name": "Major Bacon",
+      "wins": 3,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35381407132",
+      "name": "Breylen Clifford",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35035260132",
+      "name": "Chris Grissom",
+      "wins": 5,
+      "losses": 0,
+      "top25_wins": 2,
+      "bonus_rate": 0.8
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35035271132",
+      "name": "Garrison Thomas",
+      "wins": 4,
+      "losses": 0,
+      "top25_wins": 1,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 150,
+      "wrestler_id": "35767628132",
+      "name": "Samuel Winders",
+      "wins": 4,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.75
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35035532132",
+      "name": "Elias Blakney",
+      "wins": 5,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.6
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35035592132",
+      "name": "Conner Morgan",
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35035619132",
+      "name": "Case Septer",
+      "wins": 2,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "35035608132",
+      "name": "Cash Bender",
+      "wins": 2,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "35035616132",
+      "name": "Noah Greenwell",
+      "wins": 3,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35081541132",
+      "name": "Rishaun DeJarnett",
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35768036132",
+      "name": "Caedyn Word",
+      "wins": 3,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 285,
+      "wrestler_id": "35081386132",
+      "name": "Jaxon Hohimer",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 8,
+      "losses": 1
+    },
+    "top10": {
+      "wins": 2,
+      "losses": 0
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "spencer_county",
   "team_name": "Spencer County",
   "name": "Spencer County",
@@ -16,40 +17,147 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981236150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": "35386164132",
-      "114": "35333572132",
-      "120": "35333404132",
-      "126": null,
-      "132": "35333401132",
-      "138": "35333400132",
-      "145": null,
-      "152": null,
-      "165": null,
-      "185": null,
-      "235": null
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.893968Z"
+  "generated_at_utc": "2026-01-08T12:52:16.240856Z",
+  "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35386164132",
+      "name": "symphony sharp",
+      "current_rank": 18,
+      "xtp": 3.76,
+      "xtp_p": 0.46,
+      "xtp_a": 1.0,
+      "xtp_b": 2.3,
+      "top10_record": {
+        "wins": 0,
+        "losses": 6
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 8
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35333572132",
+      "name": "madelyn spraggins",
+      "current_rank": 50,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 5
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35333404132",
+      "name": "sera gutterman",
+      "current_rank": 12,
+      "xtp": 5.81,
+      "xtp_p": 1.4,
+      "xtp_a": 1.47,
+      "xtp_b": 2.94,
+      "top10_record": {
+        "wins": 1,
+        "losses": 6
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 6
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35333401132",
+      "name": "Laney Doolin",
+      "current_rank": 6,
+      "xtp": 11.1,
+      "xtp_p": 4.26,
+      "xtp_a": 2.33,
+      "xtp_b": 4.51,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 4
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35333400132",
+      "name": "Jenna Riggs",
+      "current_rank": 27,
+      "xtp": 2.19,
+      "xtp_p": 0.22,
+      "xtp_a": 0.64,
+      "xtp_b": 1.33,
+      "top10_record": {
+        "wins": 0,
+        "losses": 6
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 11
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 114,
+      "wrestler_id": "35333403132",
+      "name": "Lacy Goodlett",
+      "wins": 2,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "35386156132",
+      "name": "hadley haggard",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 13,
+      "losses": 34
+    },
+    "top10": {
+      "wins": 1,
+      "losses": 22
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

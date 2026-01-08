@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "campbellsville",
   "team_name": "Campbellsville",
   "name": "Campbellsville",
@@ -16,40 +17,201 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981288150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": null,
-      "107": "35643460132",
-      "114": "35643505132",
-      "120": "35643514132",
-      "126": null,
-      "132": "35643454132",
-      "138": null,
-      "145": null,
-      "152": "35643462132",
-      "165": "35643470132",
-      "185": "35643508132",
-      "235": "35643528132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.799992Z"
+  "generated_at_utc": "2026-01-08T12:52:15.874971Z",
+  "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35643460132",
+      "name": "Onyx Hunter",
+      "current_rank": 28,
+      "xtp": 2.21,
+      "xtp_p": 0.22,
+      "xtp_a": 0.64,
+      "xtp_b": 1.35,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35643505132",
+      "name": "Ava Hunter",
+      "current_rank": 71,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35643514132",
+      "name": "Rhyalynn Johnson",
+      "current_rank": 65,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35643454132",
+      "name": "Kayleanna Claudio",
+      "current_rank": 23,
+      "xtp": 2.86,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
+      "xtp_b": 1.8,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35643462132",
+      "name": "Miley Lorborson",
+      "current_rank": 52,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35643470132",
+      "name": "Avery Cox",
+      "current_rank": 68,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35643508132",
+      "name": "Mariah Travis",
+      "current_rank": 26,
+      "xtp": 2.75,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
+      "xtp_b": 1.69,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 1
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35643528132",
+      "name": "Tatum Hoskins",
+      "current_rank": 56,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 165,
+      "wrestler_id": "36669158132",
+      "name": "Mataya Carchio",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35643472132",
+      "name": "Seriena Bradley",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 3,
+      "losses": 11
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 3
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }

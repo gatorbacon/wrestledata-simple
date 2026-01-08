@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "season": 2026,
+  "gender": "girls",
   "team_id": "trigg_county",
   "team_name": "Trigg County",
   "name": "Trigg County",
@@ -16,40 +17,282 @@
     "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981241150",
     "school": null
   },
-  "roster": {
-    "weights": [
-      100,
-      107,
-      114,
-      120,
-      126,
-      132,
-      138,
-      145,
-      152,
-      165,
-      185,
-      235
-    ],
-    "starters": {
-      "100": "35598128132",
-      "107": "35598143132",
-      "114": "35598124132",
-      "120": null,
-      "126": null,
-      "132": "35598279132",
-      "138": "35598266132",
-      "145": "35598151132",
-      "152": "35598139132",
-      "165": "35598237132",
-      "185": "35598148132",
-      "235": "35598132132"
-    },
-    "starters_source": "ranking_files_with_overrides"
-  },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-07T15:33:51.898886Z"
+  "generated_at_utc": "2026-01-08T12:52:16.259030Z",
+  "starters": {
+    "100": {
+      "weight": 100,
+      "wrestler_id": "35598128132",
+      "name": "Teresa Helm",
+      "current_rank": 15,
+      "xtp": 4.95,
+      "xtp_p": 0.7,
+      "xtp_a": 1.18,
+      "xtp_b": 3.07,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 1
+      }
+    },
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35598143132",
+      "name": "Sophie Parrish",
+      "current_rank": 7,
+      "xtp": 9.79,
+      "xtp_p": 3.31,
+      "xtp_a": 2.12,
+      "xtp_b": 4.36,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 1
+      }
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35598124132",
+      "name": "Amayia Canela",
+      "current_rank": 45,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35598279132",
+      "name": "Hallie Ray Cannon",
+      "current_rank": 79,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35598266132",
+      "name": "Loralai Stephens",
+      "current_rank": 39,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 8
+      }
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35598151132",
+      "name": "Alani Mayes",
+      "current_rank": 22,
+      "xtp": 3.71,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 2.28,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 7,
+        "losses": 7
+      }
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35598139132",
+      "name": "Aniah Wharton",
+      "current_rank": 37,
+      "xtp": 1.25,
+      "xtp_p": 0.09,
+      "xtp_a": 0.34,
+      "xtp_b": 0.82,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 3
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35598237132",
+      "name": "Skyler Novosselov",
+      "current_rank": 14,
+      "xtp": 4.95,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 2.75,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 3
+      }
+    },
+    "185": {
+      "weight": 185,
+      "wrestler_id": "35598148132",
+      "name": "MaKenna Hedricks",
+      "current_rank": 4,
+      "xtp": 13.63,
+      "xtp_p": 6.31,
+      "xtp_a": 2.77,
+      "xtp_b": 4.55,
+      "top10_record": {
+        "wins": 3,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 1
+      }
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35598132132",
+      "name": "Gracee Lingenfelter",
+      "current_rank": 10,
+      "xtp": 7.45,
+      "xtp_p": 2.03,
+      "xtp_a": 1.78,
+      "xtp_b": 3.64,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 0
+      }
+    }
+  },
+  "remaining": [
+    {
+      "weight": 114,
+      "wrestler_id": "35598209132",
+      "name": "Hailey Cordell",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "35598123132",
+      "name": "McKenzie Cross",
+      "wins": 1,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 114,
+      "wrestler_id": "35598215132",
+      "name": "Tilyn Bressi",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 185,
+      "wrestler_id": "35598253132",
+      "name": "Bryonah Mayes",
+      "wins": 4,
+      "losses": 5,
+      "top25_wins": 3,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35598127132",
+      "name": "Areonna Quarles",
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 2,
+      "bonus_rate": 0.5
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35598131132",
+      "name": "Avagayle Lingenfelter",
+      "wins": 8,
+      "losses": 3,
+      "top25_wins": 5,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 235,
+      "wrestler_id": "35598126132",
+      "name": "Brianna Rice",
+      "wins": 2,
+      "losses": 4,
+      "top25_wins": 1,
+      "bonus_rate": 1.0
+    }
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": null
+    },
+    "top33": {
+      "wins": 28,
+      "losses": 36
+    },
+    "top10": {
+      "wins": 3,
+      "losses": 8
+    },
+    "bonus_rate": null,
+    "pin_rate": null,
+    "tech_rate": null
+  }
 }
