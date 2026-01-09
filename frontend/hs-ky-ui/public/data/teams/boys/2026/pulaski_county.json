@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.352629Z",
+  "generated_at_utc": "2026-01-08T19:21:14.294582Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -264,7 +264,7 @@
       "wrestler_id": "35476621132",
       "name": "Graham Hamilton",
       "wins": 1,
-      "losses": 11,
+      "losses": 12,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -406,8 +406,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 46,
+      "losses": 34
     },
     "top33": {
       "wins": 2,
@@ -417,8 +417,20 @@
       "wins": 0,
       "losses": 3
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.913,
+      "rank": 9,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.848,
+      "rank": 3,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.043,
+      "rank": 99,
+      "rank_scope": "league"
+    }
   }
 }

@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 71,
   "record": {
-    "overall": "5-10",
+    "overall": "6-13",
     "vs_ranked": "3-10",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
@@ -20,11 +20,11 @@
     "si_plus": 98.3,
     "df_plus": 91.8,
     "apr_plus": 98.9,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -167,6 +167,36 @@
     },
     {
       "date": "2025-12-12",
+      "opponent_id": "35679528132",
+      "opponent_name": "Braxton Collins",
+      "opponent_team": "Cabell Midland",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:46",
+      "event": "vs. Cabell Midland"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34990981132",
+      "opponent_name": "Logan Hicks",
+      "opponent_team": "Cass",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "2:24",
+      "event": "vs. Cass"
+    },
+    {
+      "date": "2025-12-12",
       "opponent_id": "OUTSTATE_85c523210e48",
       "opponent_name": "Elijah Ketron",
       "opponent_team": "Pigeon Forge High School",
@@ -178,6 +208,21 @@
       "method": "DEC",
       "score": null,
       "duration": "7:00",
+      "event": "vs. Pigeon Forge High School"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35319710132",
+      "opponent_name": "Maddox Reed",
+      "opponent_team": "Pigeon Forge High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:56",
       "event": "vs. Pigeon Forge High School"
     },
     {
@@ -194,6 +239,21 @@
       "score": null,
       "duration": "0:48",
       "event": "vs. Reedsville, WI"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35479770132",
+      "opponent_name": "Easton Fennell",
+      "opponent_team": "St. John Neumann",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:57",
+      "event": "vs. St. John Neumann"
     },
     {
       "date": "2025-12-06",
@@ -274,6 +334,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.5833333333333334
+    "top33_bonus_ev_shrunk": 0.7631578947368421
   }
 }

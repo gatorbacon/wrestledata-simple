@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 108,
   "record": {
-    "overall": "2-6",
+    "overall": "4-6",
     "vs_ranked": "1-5",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
@@ -20,11 +20,11 @@
     "si_plus": 99.7,
     "df_plus": 85.0,
     "apr_plus": 98.5,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -47,6 +47,21 @@
   "match_list": [
     {
       "date": "2025-12-22",
+      "opponent_id": "36676024132",
+      "opponent_name": "Demitrius Wells",
+      "opponent_team": "Alcoa High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "vs. Alcoa High School"
+    },
+    {
+      "date": "2025-12-22",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
@@ -59,6 +74,21 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Knox Central"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34976271132",
+      "opponent_name": "Gavin Marlowe",
+      "opponent_team": "White House Heritage High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:51",
+      "event": "5th Annual Cardinal Clash"
     },
     {
       "date": "2025-12-20",
@@ -169,6 +199,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8571428571428571
+    "top33_bonus_ev_shrunk": 1.0603448275862069
   }
 }

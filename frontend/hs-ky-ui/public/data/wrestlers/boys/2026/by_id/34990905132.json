@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "34990905132",
+  "name": "Dane Cornelius",
+  "team": "Gallatin High School",
+  "team_slug": "gallatin_high_school",
+  "team_rank": null,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 102.1,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35064917132",
+      "opponent_rank": 89,
+      "opponent_name": "Greyson Suttor",
+      "method": "Dec 9-5"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35221181132",
+      "opponent_name": "Bayden Herran",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 62,
+      "opponent_weight": 138,
+      "opponent_rank": 120,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:38",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35064917132",
+      "opponent_name": "Greyson Suttor",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 93,
+      "opponent_weight": 144,
+      "opponent_rank": 89,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-5",
+      "duration": "7:00",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.0603448275862069
+  }
+}

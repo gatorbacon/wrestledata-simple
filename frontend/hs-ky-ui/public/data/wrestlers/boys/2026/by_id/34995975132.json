@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 58,
   "record": {
-    "overall": "17-8",
+    "overall": "21-10",
     "vs_ranked": "12-8",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 105.4,
-    "pin_rate": 0.706,
-    "bonus_rate": 0.706,
+    "pin_rate": 0.714,
+    "bonus_rate": 0.714,
     "majors": 0,
     "techs": 0,
-    "pins": 12
+    "pins": 15
   },
   "opponent_breakdown": {
     "ranked_wins": 12,
@@ -45,6 +45,51 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34997165132",
+      "opponent_name": "Eian Caldwell",
+      "opponent_team": "Cocke Co. High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "vs. Cocke Co. High School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35497426132",
+      "opponent_name": "wyatt meyers",
+      "opponent_team": "Union Co. High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union Co. High School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35380438132",
+      "opponent_name": "Douglas Blake",
+      "opponent_team": "Greeneville High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Greeneville High School"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -88,6 +133,21 @@
       "method": "FALL",
       "score": null,
       "duration": "0:53",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35692767132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "Hwt",
+      "result": "L",
+      "method": "SV-1",
+      "score": "14-10",
+      "duration": "8:15",
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
@@ -209,6 +269,21 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Claiborne High School"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35114719132",
+      "opponent_name": "Dontae Jones",
+      "opponent_team": "Alcoa High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Alcoa High School"
     },
     {
       "date": "2025-12-22",
@@ -362,6 +437,21 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35013620132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35420700132",
       "opponent_name": "Landon Bryant",
       "opponent_team": "Whitley County",
@@ -424,6 +514,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3333333333333333
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

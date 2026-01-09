@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 141,
   "record": {
-    "overall": "3-4",
+    "overall": "6-5",
     "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -24,7 +24,7 @@
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -45,6 +45,51 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35184814132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "Hwt",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35692767132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "Hwt",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35389717132",
+      "opponent_name": "Gabriel Warburton",
+      "opponent_team": "Ridgeview",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "Hwt",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35700002132",
@@ -121,6 +166,21 @@
       "event": "vs. Floyd Central"
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "35389717132",
+      "opponent_name": "Gabriel Warburton",
+      "opponent_team": "Ridgeview",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Ridgeview"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35600445132",
       "opponent_name": "Rylan Kidd",
@@ -154,6 +214,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3333333333333333
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

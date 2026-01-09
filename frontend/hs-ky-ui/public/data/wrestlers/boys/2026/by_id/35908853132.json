@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 168,
   "record": {
-    "overall": "5-6",
+    "overall": "6-6",
     "vs_ranked": "5-6",
     "vs_top10": "0-0",
     "vs_top25": "0-3"
@@ -20,11 +20,11 @@
     "si_plus": 125.0,
     "df_plus": 110.4,
     "apr_plus": 99.6,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 1,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
@@ -107,6 +107,21 @@
       "duration": "1:10",
       "event": "Boys Hatfield McCoy 32 2025",
       "mv_impact": -2.14
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35184817132",
+      "opponent_name": "Aidan Whited",
+      "opponent_team": "Grundy",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:07",
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-16",
@@ -224,6 +239,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9
+    "top33_bonus_ev_shrunk": 1.065217391304348
   }
 }

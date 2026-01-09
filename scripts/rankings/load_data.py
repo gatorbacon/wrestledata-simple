@@ -428,27 +428,41 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                     # - NCAA: opponent has valid ID but isn't in dataset
                     # - HS: out-of-state opponent with valid ID (not null, so no synthetic ID created)
                     
-                    # Build a key so we don't double-count if this match appears
-                    # multiple times in the source data.
-                    local_key = ('nonD1', wrestler_id, opponent_id, match_date, result)
-                    if local_key not in processed_matches_for_stats:
-                        if (winner_name == wrestler_name and winner_team == team_name):
-                            wrestler_info['wins'] += 1
-                        elif (loser_name == wrestler_name and loser_team == team_name):
-                            wrestler_info['losses'] += 1
-                        wrestler_info['matches_count'] += 1
-                        processed_matches_for_stats.add(local_key)
-                    
-                    # For HS: Still add match to wrestler_matches for weight assignment
-                    # For NCAA: Do not include this match in wrestler_matches (unchanged behavior)
                     if league == 'hs':
-                        wrestler_matches[wrestler_id].append((match, match_weight, match_date))
-                        # Note: opponent_id not in all_wrestlers, so we don't add to opponent's matches
-                        # But the match weight is still recorded for the KY wrestler's weight assignment
-                    
-                    # Do not include this match in global match lists used for relationships
-                    # (NCAA behavior unchanged, HS: already handled via synthetic opponents for null IDs)
-                    continue
+                        # For HS: Add out-of-state opponent to all_wrestlers as synthetic opponent
+                        # This allows the match to be included in weight class files and profiles
+                        if not opponent_name or not opponent_team:
+                            # Can't create synthetic opponent without name/team
+                            continue
+                        
+                        # Add synthetic opponent to all_wrestlers if not already present
+                        all_wrestlers[opponent_id] = {
+                            'id': opponent_id,
+                            'name': opponent_name,
+                            'team': opponent_team,
+                            'weight_class': '',  # Will be determined from matches
+                            'grade': '',
+                            'wins': 0,
+                            'losses': 0,
+                            'matches_count': 0,
+                            'is_synthetic': True  # Mark as synthetic for reference
+                        }
+                        # Now opponent is in all_wrestlers, so continue with normal processing below
+                    else:
+                        # NCAA: Update stats but don't add match to weight class files
+                        # Build a key so we don't double-count if this match appears
+                        # multiple times in the source data.
+                        local_key = ('nonD1', wrestler_id, opponent_id, match_date, result)
+                        if local_key not in processed_matches_for_stats:
+                            if (winner_name == wrestler_name and winner_team == team_name):
+                                wrestler_info['wins'] += 1
+                            elif (loser_name == wrestler_name and loser_team == team_name):
+                                wrestler_info['losses'] += 1
+                            wrestler_info['matches_count'] += 1
+                            processed_matches_for_stats.add(local_key)
+                        
+                        # Do not include this match in global match lists used for relationships
+                        continue
                 
                 # Store match info for weight-class determination for BOTH wrestlers.
                 # Even if we cannot later determine the winner/loser reliably, these

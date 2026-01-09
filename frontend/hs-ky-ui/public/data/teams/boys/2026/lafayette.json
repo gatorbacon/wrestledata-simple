@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.014338Z",
+  "generated_at_utc": "2026-01-08T19:21:14.048862Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -345,7 +345,7 @@
       "wrestler_id": "35433673132",
       "name": "Amri Masudi",
       "wins": 1,
-      "losses": 5,
+      "losses": 7,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -397,8 +397,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 58,
+      "losses": 60
     },
     "top33": {
       "wins": 15,
@@ -408,8 +408,20 @@
       "wins": 1,
       "losses": 9
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.879,
+      "rank": 14,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.724,
+      "rank": 25,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.121,
+      "rank": 31,
+      "rank_scope": "league"
+    }
   }
 }

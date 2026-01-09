@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "34991685132",
+  "name": "Jordan Brannen",
+  "team": "Toombs County",
+  "team_slug": "toombs_county",
+  "team_rank": null,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 110.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35001145132",
+      "opponent_rank": 32,
+      "opponent_name": "Peyton Weaver",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35144510132",
+      "opponent_rank": 15,
+      "opponent_name": "Jaiden Cooper",
+      "method": "Dec 1-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35001145132",
+      "opponent_name": "Peyton Weaver",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 14,
+      "opponent_weight": 150,
+      "opponent_rank": 32,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Toombs County"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35144510132",
+      "opponent_name": "Jaiden Cooper",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 150,
+      "opponent_rank": 15,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "vs. Toombs County"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 0.9005847953216374
+  }
+}

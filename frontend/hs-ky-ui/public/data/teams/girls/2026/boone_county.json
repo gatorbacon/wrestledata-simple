@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.806562Z",
+  "generated_at_utc": "2026-01-08T19:21:14.635928Z",
   "starters": {
     "107": {
       "weight": 107,
@@ -100,8 +100,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 5,
+      "losses": 14
     },
     "top33": {
       "wins": 0,
@@ -111,8 +111,20 @@
       "wins": 0,
       "losses": 7
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 1.0,
+      "rank": 5,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 1.0,
+      "rank": 4,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.0,
+      "rank": 78,
+      "rank_scope": "league"
+    }
   }
 }

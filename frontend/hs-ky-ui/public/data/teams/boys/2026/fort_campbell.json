@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:14.771088Z",
+  "generated_at_utc": "2026-01-08T19:21:13.867274Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -281,10 +281,10 @@
       "weight": 113,
       "wrestler_id": "35521739132",
       "name": "Brayden Stein",
-      "wins": 1,
-      "losses": 0,
+      "wins": 2,
+      "losses": 2,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 0.5
     },
     {
       "weight": 113,
@@ -326,17 +326,17 @@
       "weight": 126,
       "wrestler_id": "35002898132",
       "name": "Ethan Gilmore",
-      "wins": 10,
-      "losses": 4,
+      "wins": 13,
+      "losses": 9,
       "top25_wins": 1,
-      "bonus_rate": 0.6
+      "bonus_rate": 0.692
     },
     {
       "weight": 132,
       "wrestler_id": "35002897132",
       "name": "Andren Moore",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -345,7 +345,7 @@
       "wrestler_id": "35523855132",
       "name": "Jubal Everett",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -354,7 +354,7 @@
       "wrestler_id": "35666463132",
       "name": "Logan Swinford",
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -362,19 +362,19 @@
       "weight": 132,
       "wrestler_id": "35002899132",
       "name": "Xavi Nava",
-      "wins": 0,
-      "losses": 0,
+      "wins": 1,
+      "losses": 1,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 1.0
     },
     {
       "weight": 138,
       "wrestler_id": "35520647132",
       "name": "Anderson Aliven",
-      "wins": 1,
+      "wins": 2,
       "losses": 2,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.5
     },
     {
       "weight": 138,
@@ -398,7 +398,7 @@
       "weight": 144,
       "wrestler_id": "35002888132",
       "name": "Robert Warmouth",
-      "wins": 2,
+      "wins": 3,
       "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 1.0
@@ -408,7 +408,7 @@
       "wrestler_id": "35521941132",
       "name": "Anthony Baggett",
       "wins": 1,
-      "losses": 4,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -434,17 +434,17 @@
       "weight": 157,
       "wrestler_id": "35002902132",
       "name": "Dylan Murphy",
-      "wins": 2,
-      "losses": 5,
+      "wins": 4,
+      "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.5
+      "bonus_rate": 0.75
     },
     {
       "weight": 165,
       "wrestler_id": "35521775132",
       "name": "Enrique Messer Cruz",
-      "wins": 3,
-      "losses": 7,
+      "wins": 4,
+      "losses": 17,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -452,10 +452,10 @@
       "weight": 190,
       "wrestler_id": "35002900132",
       "name": "Karson McClellan",
-      "wins": 4,
-      "losses": 5,
+      "wins": 9,
+      "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.5
+      "bonus_rate": 0.556
     },
     {
       "weight": 190,
@@ -471,7 +471,7 @@
       "wrestler_id": "35002901132",
       "name": "Jaxson Dernocoeur",
       "wins": 0,
-      "losses": 2,
+      "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -487,8 +487,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 85,
+      "losses": 48
     },
     "top33": {
       "wins": 10,
@@ -498,8 +498,20 @@
       "wins": 2,
       "losses": 12
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.635,
+      "rank": 129,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.494,
+      "rank": 134,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.118,
+      "rank": 34,
+      "rank_scope": "league"
+    }
   }
 }

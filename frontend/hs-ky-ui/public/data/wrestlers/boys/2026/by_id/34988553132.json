@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 52,
   "record": {
-    "overall": "7-8",
+    "overall": "8-8",
     "vs_ranked": "3-4",
     "vs_top10": "0-2",
     "vs_top25": "0-2"
@@ -20,11 +20,11 @@
     "si_plus": 88.3,
     "df_plus": 80.8,
     "apr_plus": 103.5,
-    "pin_rate": 0.571,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.625,
+    "bonus_rate": 0.75,
     "majors": 1,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -152,6 +152,21 @@
     },
     {
       "date": "2025-12-20",
+      "opponent_id": "35661846132",
+      "opponent_name": "Logan Clowers",
+      "opponent_team": "Mt. Vernon",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:44",
+      "event": "Phil Thrasher Tournament"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "OUTSTATE_7d5dec7317d1",
       "opponent_name": "Gavin McNulty",
       "opponent_team": "Corydon Central",
@@ -274,6 +289,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8571428571428571
+    "top33_bonus_ev_shrunk": 1.0603448275862069
   }
 }

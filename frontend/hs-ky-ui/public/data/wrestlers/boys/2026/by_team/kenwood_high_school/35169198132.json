@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35169198132",
+  "name": "Desmond Anderson",
+  "team": "Kenwood High School",
+  "team_slug": "kenwood_high_school",
+  "team_rank": null,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 93.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35002891132",
+      "opponent_rank": 43,
+      "opponent_name": "Andy Cintron",
+      "method": "MD 11-0"
+    },
+    "worst_loss": {
+      "opponent_id": "35133611132",
+      "opponent_rank": 74,
+      "opponent_name": "Christon Johnson",
+      "method": "Fall 1:24"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-04",
+      "opponent_id": "35002891132",
+      "opponent_name": "Andy Cintron",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 120,
+      "opponent_rank": 43,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "vs. Kenwood High School"
+    },
+    {
+      "date": "2025-12-04",
+      "opponent_id": "35133611132",
+      "opponent_name": "Christon Johnson",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 91,
+      "opponent_weight": 120,
+      "opponent_rank": 74,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "vs. Kenwood High School"
+    }
+  ]
+}

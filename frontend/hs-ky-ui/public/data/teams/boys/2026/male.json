@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.097221Z",
+  "generated_at_utc": "2026-01-08T19:21:14.108564Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -335,10 +335,10 @@
       "weight": 144,
       "wrestler_id": "35384107132",
       "name": "Jett Rudolph",
-      "wins": 0,
+      "wins": 1,
       "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 1.0
     },
     {
       "weight": 144,
@@ -353,10 +353,10 @@
       "weight": 150,
       "wrestler_id": "35040595132",
       "name": "Landon Newton",
-      "wins": 6,
+      "wins": 7,
       "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 0.667
+      "bonus_rate": 0.714
     },
     {
       "weight": 157,
@@ -372,7 +372,7 @@
       "wrestler_id": "35384052132",
       "name": "Dominic Hall",
       "wins": 2,
-      "losses": 2,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.5
     },
@@ -381,7 +381,7 @@
       "wrestler_id": "35040594132",
       "name": "Donovan Johnson",
       "wins": 3,
-      "losses": 3,
+      "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -453,7 +453,7 @@
       "wrestler_id": "35040576132",
       "name": "Theodore Robinson",
       "wins": 0,
-      "losses": 2,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -525,7 +525,7 @@
       "wrestler_id": "35384046132",
       "name": "Nolan Glass",
       "wins": 2,
-      "losses": 4,
+      "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -550,8 +550,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 94,
+      "losses": 33
     },
     "top33": {
       "wins": 17,
@@ -561,8 +561,20 @@
       "wins": 1,
       "losses": 5
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.745,
+      "rank": 87,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.638,
+      "rank": 86,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.085,
+      "rank": 54,
+      "rank_scope": "league"
+    }
   }
 }

@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 38,
   "record": {
-    "overall": "7-6",
+    "overall": "9-8",
     "vs_ranked": "7-6",
     "vs_top10": "0-0",
     "vs_top25": "0-3"
@@ -20,11 +20,11 @@
     "si_plus": 113.2,
     "df_plus": 105.4,
     "apr_plus": 94.2,
-    "pin_rate": 0.286,
-    "bonus_rate": 0.714,
-    "majors": 2,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.778,
+    "majors": 3,
     "techs": 1,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 7,
@@ -45,6 +45,66 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35331439132",
+      "opponent_name": "Bently Key",
+      "opponent_team": "Sullivan East High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:52",
+      "event": "Bill Brimer Brawl in the Hall 2026"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35069116132",
+      "opponent_name": "Thomas Harris",
+      "opponent_team": "Marion Senior",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
+      "event": "Bill Brimer Brawl in the Hall 2026"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35529550132",
+      "opponent_name": "Nahzcier Smith",
+      "opponent_team": "Patrick Henry (Roanoke)",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "16-5",
+      "duration": "7:00",
+      "event": "Bill Brimer Brawl in the Hall 2026"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35488287132",
+      "opponent_name": "Houston Davis",
+      "opponent_team": "Dobyns Bennett High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "Bill Brimer Brawl in the Hall 2026"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35212704132",
@@ -256,6 +316,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9
+    "top33_bonus_ev_shrunk": 1.065217391304348
   }
 }

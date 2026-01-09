@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 49,
   "record": {
-    "overall": "10-1",
+    "overall": "12-1",
     "vs_ranked": "7-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 108.6,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.6,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 6
+    "pins": 8
   },
   "opponent_breakdown": {
     "ranked_wins": 7,
@@ -47,6 +47,21 @@
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "35729831132",
+      "opponent_name": "Kevin Rosemond",
+      "opponent_team": "Winton Woods High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:41",
+      "event": "Adam Cox Memorial 2026"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35223083132",
       "opponent_name": "Chase Lopez",
       "opponent_team": "Mercer County",
@@ -58,6 +73,21 @@
       "method": "FALL",
       "score": null,
       "duration": "2:27",
+      "event": "Adam Cox Memorial 2026"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35729833132",
+      "opponent_name": "De`Ondrae Smith",
+      "opponent_team": "Winton Woods High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:44",
       "event": "Adam Cox Memorial 2026"
     },
     {
@@ -214,6 +244,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3333333333333333
+    "top33_bonus_ev_shrunk": 1.375
   }
 }

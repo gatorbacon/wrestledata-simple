@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35496061132",
+  "name": "Aaron Arnold",
+  "team": "Thomas Walker HS",
+  "team_slug": "thomas_walker_hs",
+  "team_rank": null,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 106.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35850449132",
+      "opponent_rank": 114,
+      "opponent_name": "Cameron Berner",
+      "method": "Fall 1:51"
+    },
+    "worst_loss": {
+      "opponent_id": "36019523132",
+      "opponent_rank": 13,
+      "opponent_name": "Hagen Samuel",
+      "method": "Fall 1:57"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "36019523132",
+      "opponent_name": "Hagen Samuel",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 52,
+      "opponent_weight": 190,
+      "opponent_rank": 13,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:57",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35850449132",
+      "opponent_name": "Cameron Berner",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 190,
+      "opponent_rank": 114,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:51",
+      "event": "Bobby Bates Wrestling Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.1785714285714286
+  }
+}

@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 76,
   "record": {
-    "overall": "3-3",
+    "overall": "4-4",
     "vs_ranked": "3-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -20,11 +20,11 @@
     "si_plus": 104.3,
     "df_plus": 113.5,
     "apr_plus": 98.6,
-    "pin_rate": 0.667,
+    "pin_rate": 0.75,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -94,6 +94,36 @@
       "mv_impact": -4.65
     },
     {
+      "date": "2025-12-30",
+      "opponent_id": "35645554132",
+      "opponent_name": "Dalton Lester",
+      "opponent_team": "PikeView",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35013621132",
+      "opponent_name": "Isaac Latham",
+      "opponent_team": "Castlewood",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:10",
+      "event": "Anchor Down Showdown"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35454700132",
       "opponent_name": "Daniel Hughes",
@@ -145,6 +175,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.15
+    "top33_bonus_ev_shrunk": 0.975
   }
 }

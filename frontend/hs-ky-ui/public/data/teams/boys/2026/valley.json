@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.604989Z",
+  "generated_at_utc": "2026-01-08T19:21:14.478512Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -270,10 +270,19 @@
     },
     {
       "weight": 138,
+      "wrestler_id": "35505998132",
+      "name": "Brooklynn Medley",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 138,
       "wrestler_id": "35618870132",
       "name": "Kaiden Willibaum",
       "wins": 3,
-      "losses": 5,
+      "losses": 6,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -343,8 +352,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 70,
+      "losses": 72
     },
     "top33": {
       "wins": 2,
@@ -354,8 +363,20 @@
       "wins": 0,
       "losses": 5
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.643,
+      "rank": 126,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.543,
+      "rank": 127,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.086,
+      "rank": 52,
+      "rank_scope": "league"
+    }
   }
 }

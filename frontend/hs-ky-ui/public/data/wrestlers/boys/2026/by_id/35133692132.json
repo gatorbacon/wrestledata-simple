@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35133692132",
+  "name": "Kellan Green",
+  "team": "Watertown High School",
+  "team_slug": "watertown_high_school",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 111.5,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34988689132",
+      "opponent_rank": 14,
+      "opponent_name": "Braylan Patla",
+      "method": "Fall 5:23"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34988689132",
+      "opponent_name": "Braylan Patla",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 35,
+      "opponent_weight": 132,
+      "opponent_rank": 14,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:23",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35064909132",
+      "opponent_name": "Bruce Anderson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 93,
+      "opponent_weight": 132,
+      "opponent_rank": 21,
+      "weight_class": "132",
+      "result": "W",
+      "method": "SV-1",
+      "score": "9-6",
+      "duration": "8:15",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 1.0,
+    "top33_bonus_ev_shrunk": 1.2416666666666667
+  }
+}

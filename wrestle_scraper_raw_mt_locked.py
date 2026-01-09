@@ -13,6 +13,10 @@ LOCK_DIR.mkdir(parents=True, exist_ok=True)
 LOG_LOCK_DIR = Path("mt/log_locks")
 LOG_LOCK_DIR.mkdir(parents=True, exist_ok=True)
 
+# Tracking file lock directory
+TRACKING_LOCK_DIR = Path("mt/tracking_locks")
+TRACKING_LOCK_DIR.mkdir(parents=True, exist_ok=True)
+
 def acquire_lock(team_id):
     lock_file = LOCK_DIR / f"{team_id}.lock"
     if lock_file.exists():
@@ -56,6 +60,46 @@ def acquire_log_lock(season_year):
 def release_log_lock(season_year):
     """Release the lock for the log file for the given season."""
     lock_file = LOG_LOCK_DIR / f"log_{season_year}.lock"
+    try:
+        lock_file.unlink()
+    except FileNotFoundError:
+        pass
+
+# Tracking file locking mechanism
+def acquire_tracking_lock(season_year, league, state=None, gender=None):
+    """Acquire a lock for the tracking file."""
+    if league == 'hs':
+        if not state or not gender:
+            raise ValueError("state and gender are required for HS tracking lock")
+        lock_file = TRACKING_LOCK_DIR / f"tracking_{season_year}_hs_{state.lower()}_{gender}.lock"
+    else:  # ncaa
+        lock_file = TRACKING_LOCK_DIR / f"tracking_{season_year}_ncaa.lock"
+    
+    max_attempts = 5
+    attempt = 0
+    
+    while attempt < max_attempts:
+        if not lock_file.exists():
+            try:
+                lock_file.write_text(f"locked by {os.getpid()} at {datetime.now().isoformat()}")
+                return True
+            except Exception:
+                time.sleep(0.5)
+        else:
+            time.sleep(0.5)
+        
+        attempt += 1
+    
+    return False
+
+def release_tracking_lock(season_year, league, state=None, gender=None):
+    """Release the lock for the tracking file."""
+    if league == 'hs':
+        if not state or not gender:
+            raise ValueError("state and gender are required for HS tracking lock")
+        lock_file = TRACKING_LOCK_DIR / f"tracking_{season_year}_hs_{state.lower()}_{gender}.lock"
+    else:  # ncaa
+        lock_file = TRACKING_LOCK_DIR / f"tracking_{season_year}_ncaa.lock"
     try:
         lock_file.unlink()
     except FileNotFoundError:
@@ -150,6 +194,203 @@ class WrestlingScraper:
         
         # Load scrape log AFTER league/state/gender are set (needed for log file path)
         self.scrape_log = self._load_scrape_log()
+        
+        # Load wrestler match tracking (for regression detection)
+        self.wrestler_match_tracking = self._load_wrestler_match_tracking()
+
+    def _get_tracking_file_path(self) -> Path:
+        """Get the tracking file path based on league type."""
+        tracking_dir = Path("mt/tracking")
+        tracking_dir.mkdir(parents=True, exist_ok=True)
+        
+        if self.league == 'hs':
+            filename = f"wrestler_match_history_{self.season_year}_hs_{self.state.lower()}_{self.gender}.json"
+        else:  # ncaa
+            filename = f"wrestler_match_history_{self.season_year}_ncaa.json"
+        
+        return tracking_dir / filename
+    
+    def _load_wrestler_match_tracking(self) -> Dict:
+        """Load or create the wrestler match tracking file."""
+        default_tracking = {
+            "season": self.season_year,
+            "league": self.league,
+            "state": self.state,
+            "gender": self.gender,
+            "wrestlers": {}
+        }
+        
+        tracking_file_path = self._get_tracking_file_path()
+        
+        if tracking_file_path.exists():
+            # Try to acquire the tracking lock
+            if acquire_tracking_lock(self.season_year, self.league, self.state, self.gender):
+                try:
+                    with open(tracking_file_path, 'r', encoding='utf-8') as f:
+                        tracking_data = json.load(f)
+                    release_tracking_lock(self.season_year, self.league, self.state, self.gender)
+                    return tracking_data
+                except Exception as e:
+                    print(f"Error loading tracking file: {e}")
+                    release_tracking_lock(self.season_year, self.league, self.state, self.gender)
+                    return default_tracking
+            else:
+                print(f"Warning: Could not acquire tracking lock for reading. Using default tracking.")
+                return default_tracking
+        
+        return default_tracking
+    
+    def _save_wrestler_match_tracking(self):
+        """Save wrestler match tracking file with atomic write and locking."""
+        tracking_file_path = self._get_tracking_file_path()
+        
+        # Try to acquire the tracking lock
+        if acquire_tracking_lock(self.season_year, self.league, self.state, self.gender):
+            try:
+                # First read the current tracking file to merge with
+                current_tracking = {
+                    "season": self.season_year,
+                    "league": self.league,
+                    "state": self.state,
+                    "gender": self.gender,
+                    "wrestlers": {}
+                }
+                
+                if tracking_file_path.exists():
+                    with open(tracking_file_path, 'r', encoding='utf-8') as f:
+                        try:
+                            current_tracking = json.load(f)
+                        except json.JSONDecodeError:
+                            print("Warning: Tracking file exists but is corrupted. Creating new tracking.")
+                            current_tracking = {
+                                "season": self.season_year,
+                                "league": self.league,
+                                "state": self.state,
+                                "gender": self.gender,
+                                "wrestlers": {}
+                            }
+                
+                # Merge wrestler data (our in-memory tracking takes precedence for updated entries)
+                # But preserve entries we haven't seen in this scrape
+                for wrestler_id, entry in self.wrestler_match_tracking.get("wrestlers", {}).items():
+                    current_tracking["wrestlers"][wrestler_id] = entry
+                
+                # Create a temporary file for atomic write
+                temp_file = tempfile.NamedTemporaryFile(delete=False, mode='w', encoding='utf-8', dir=tracking_file_path.parent)
+                
+                # Write the merged tracking to the temporary file
+                json.dump(current_tracking, temp_file, indent=2, ensure_ascii=False)
+                temp_file.flush()
+                temp_file.close()
+                
+                # Atomically replace the tracking file with the temporary file
+                shutil.move(temp_file.name, tracking_file_path)
+                
+                # Update our in-memory tracking with the merged data
+                self.wrestler_match_tracking = current_tracking
+                
+            except Exception as e:
+                print(f"Error saving tracking file: {e}")
+                try:
+                    # Clean up the temporary file if it exists
+                    if 'temp_file' in locals() and os.path.exists(temp_file.name):
+                        os.unlink(temp_file.name)
+                except:
+                    pass
+            finally:
+                release_tracking_lock(self.season_year, self.league, self.state, self.gender)
+        else:
+            print(f"Warning: Could not acquire tracking lock for writing. Tracking update skipped.")
+    
+    def _is_valid_match(self, match: Dict) -> bool:
+        """
+        Determine if a match is valid (should be counted).
+        
+        Excludes:
+        - BYE matches
+        - NoResult matches
+        - Matches with "received a bye" in summary
+        """
+        result = match.get("result", "").strip()
+        summary = match.get("summary", "").strip().lower()
+        
+        # Skip BYE and NoResult
+        if result in ("BYE", "NoResult"):
+            return False
+        
+        # Skip matches with "received a bye" in summary
+        if "received a bye" in summary:
+            return False
+        
+        return True
+    
+    def _validate_wrestler_match_count(self, wrestler_id: str, wrestler_name: str, matches: List[Dict]) -> tuple[str, str]:
+        """
+        Validate wrestler match count against tracking history.
+        
+        Returns:
+            (status, message) tuple where:
+            - status is "OK" if validation passes
+            - status is "REGRESSION_DETECTED" if wrestler previously had matches but now has zero
+            - message contains descriptive text
+        """
+        # Count valid matches
+        valid_matches = [m for m in matches if self._is_valid_match(m)]
+        valid_match_count = len(valid_matches)
+        
+        # Ensure wrestlers dict exists
+        if "wrestlers" not in self.wrestler_match_tracking:
+            self.wrestler_match_tracking["wrestlers"] = {}
+        
+        wrestlers = self.wrestler_match_tracking["wrestlers"]
+        
+        # First time seeing this wrestler
+        if wrestler_id not in wrestlers:
+            if valid_match_count > 0:
+                wrestlers[wrestler_id] = {
+                    "has_ever_had_matches": True,
+                    "first_seen_with_matches": datetime.now().isoformat(),
+                    "last_verified_with_matches": datetime.now().isoformat()
+                }
+            else:
+                wrestlers[wrestler_id] = {
+                    "has_ever_had_matches": False,
+                    "first_seen_zero_matches": datetime.now().isoformat()
+                }
+            return ("OK", f"First time seeing wrestler {wrestler_id} ({wrestler_name})")
+        
+        # Wrestler exists in tracking
+        entry = wrestlers[wrestler_id]
+        
+        # Check for regression: previously had matches, now zero
+        if entry.get("has_ever_had_matches", False) and valid_match_count == 0:
+            last_verified = entry.get("last_verified_with_matches", "unknown")
+            return (
+                "REGRESSION_DETECTED",
+                (
+                    f"REGRESSION DETECTED: Wrestler {wrestler_id} ({wrestler_name}) "
+                    f"previously had matches but now scrapes as zero matches. "
+                    f"Last verified with matches: {last_verified}. "
+                    f"Aborting team scrape to prevent data loss."
+                )
+            )
+        
+        # Update tracking based on current state
+        if valid_match_count > 0:
+            # Wrestler has matches - update timestamp
+            if not entry.get("has_ever_had_matches", False):
+                # Upgrade from zero to non-zero
+                entry["has_ever_had_matches"] = True
+                entry["first_seen_with_matches"] = datetime.now().isoformat()
+            entry["last_verified_with_matches"] = datetime.now().isoformat()
+        else:
+            # Wrestler has zero matches - update timestamp if never had matches
+            if not entry.get("has_ever_had_matches", False):
+                if "last_seen_zero_matches" not in entry:
+                    entry["first_seen_zero_matches"] = datetime.now().isoformat()
+                entry["last_seen_zero_matches"] = datetime.now().isoformat()
+        
+        return ("OK", f"Wrestler {wrestler_id} ({wrestler_name}) validated: {valid_match_count} valid matches")
 
     def _load_name_aliases(self):
         """Load name aliases from mt/name_alias.json."""
@@ -1939,6 +2180,191 @@ class WrestlingScraper:
                     else:
                         print("No match rows found")
                         matches = []
+                        
+                        # If wrestler previously had matches, try re-navigation before declaring regression
+                        wrestler_id = info["id"]
+                        if "wrestlers" in self.wrestler_match_tracking:
+                            wrestler_entry = self.wrestler_match_tracking["wrestlers"].get(wrestler_id)
+                            if wrestler_entry and wrestler_entry.get("has_ever_had_matches", False):
+                                print(f"⚠️ Wrestler {info['name']} previously had matches but now shows zero. Attempting re-navigation retry...")
+                                
+                                renavigation_attempts = 0
+                                renavigation_success = False
+                                max_renavigation_attempts = 3
+                                
+                                while renavigation_attempts < max_renavigation_attempts and not renavigation_success:
+                                    renavigation_attempts += 1
+                                    print(f"\n⏳ Zero-match re-navigation attempt #{renavigation_attempts} for {info['name']}...")
+                                    
+                                    try:
+                                        # Navigate back to team page
+                                        current_url = self.driver.current_url
+                                        parsed_url = urlparse(current_url)
+                                        query_params = parse_qs(parsed_url.query)
+                                        session_id = query_params.get('twSessionId', [''])[0]
+                                        
+                                        if not session_id:
+                                            team_page_url = team_url
+                                        else:
+                                            team_parsed_url = urlparse(team_url)
+                                            team_params = parse_qs(team_parsed_url.query)
+                                            team_id = team_params.get('teamId', [''])[0]
+                                            
+                                            if not team_id:
+                                                team_page_url = team_url
+                                            else:
+                                                team_page_url = f"{BASE_URL}/seasons/TeamSchedule.jsp?twSessionId={session_id}&teamId={team_id}"
+                                        
+                                        print(f"Navigating to team page: {team_page_url}")
+                                        self.driver.get(team_page_url)
+                                        time.sleep(3)
+                                        
+                                        # Click Matches tab
+                                        matches_link = self.wait.until(
+                                            EC.element_to_be_clickable((By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']"))
+                                        )
+                                        matches_link.click()
+                                        time.sleep(3)
+                                        
+                                        # Re-select wrestler
+                                        wrestler_select = self.wait.until(
+                                            EC.presence_of_element_located((By.ID, "wrestler"))
+                                        )
+                                        
+                                        try:
+                                            prev_table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
+                                        except Exception:
+                                            prev_table = None
+                                        
+                                        Select(wrestler_select).select_by_value(info["id"])
+                                        
+                                        try:
+                                            if prev_table is not None:
+                                                self.wait.until(EC.staleness_of(prev_table))
+                                        except Exception:
+                                            pass
+                                        
+                                        # Verify hydration
+                                        status = self._verify_wrestler_table_hydrated(info["id"], timeout_sec=8.0)
+                                        if status == "timeout":
+                                            print("⚠️ Table did not hydrate after re-navigation; will retry")
+                                            continue
+                                        
+                                        # Check for matches
+                                        table = self.wait.until(
+                                            EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid"))
+                                        )
+                                        rows = table.find_elements(By.TAG_NAME, "tr")
+                                        retry_match_rows = [row for row in rows[3:] if row.get_attribute("class") == "dataGridRow"]
+                                        
+                                        print(f"After re-navigation, found {len(retry_match_rows)} match rows")
+                                        
+                                        if len(retry_match_rows) > 0:
+                                            # Found matches! Process them
+                                            print(f"✅ Successfully found matches after re-navigation!")
+                                            match_rows = retry_match_rows
+                                            renavigation_success = True
+                                            matches = []
+                                            
+                                            # Process all match rows
+                                            for i, row in enumerate(match_rows):
+                                                try:
+                                                    cols = row.find_elements(By.TAG_NAME, "td")
+                                                    if len(cols) < 5:
+                                                        continue
+                                                    
+                                                    summary = cols[4].text.strip()
+                                                    
+                                                    if "Double Forfeit" in summary:
+                                                        continue
+                                                    
+                                                    # Extract opponent ID
+                                                    opponent_id = None
+                                                    if "received a bye" in summary:
+                                                        opponent_id = None
+                                                    elif "forfeit" in summary.lower() or "(for.)" in summary.lower() or "(ff)" in summary.lower() or "received a forfeit" in summary.lower():
+                                                        opponent_id = None
+                                                    else:
+                                                        links = cols[4].find_elements(By.TAG_NAME, "a")
+                                                        current_wrestler_id = info["id"]
+                                                        for link in links:
+                                                            href = link.get_attribute("href")
+                                                            if href and "wrestlerId=" in href:
+                                                                extracted_id = self.get_wrestler_id_from_url(href)
+                                                                if extracted_id != current_wrestler_id:
+                                                                    opponent_id = extracted_id
+                                                                    break
+                                                    
+                                                    match_data = {
+                                                        "date": cols[1].text.strip(),
+                                                        "event": cols[2].text.strip(),
+                                                        "weight": cols[3].text.strip(),
+                                                        "summary": summary,
+                                                        "opponent_id": opponent_id
+                                                    }
+                                                    
+                                                    date = match_data["date"]
+                                                    if " - " in date:
+                                                        match_data["date"] = date.split(" - ")[1].strip()
+                                                    
+                                                    matches.append(match_data)
+                                                except Exception as e:
+                                                    print(f"Error processing match row after re-navigation: {e}")
+                                                    continue
+                                            
+                                            # Break out of renavigation loop - we found matches
+                                            break
+                                        else:
+                                            # Still zero matches - check for "no matches" banner
+                                            page_text = self.driver.find_element(By.TAG_NAME, "body").text
+                                            no_matches_message = "There are no matches associated with this wrestler"
+                                            if no_matches_message in page_text and info['name'] in page_text:
+                                                print(f"No matches confirmed after re-navigation attempt #{renavigation_attempts}")
+                                                # Continue to next attempt or will fall through to validation
+                                            else:
+                                                print(f"⚠️ Ambiguous state after re-navigation attempt #{renavigation_attempts}")
+                                    
+                                    except Exception as e:
+                                        print(f"❌ Error during zero-match re-navigation attempt #{renavigation_attempts}: {e}")
+                                
+                                if renavigation_success:
+                                    print(f"✅ Re-navigation successful - found {len(matches)} matches for {info['name']}")
+                    
+                    # VALIDATION: Check for match count regression before adding to team_data
+                    validation_status, validation_message = self._validate_wrestler_match_count(
+                        info["id"],
+                        info["name"],
+                        matches
+                    )
+                    
+                    if validation_status == "REGRESSION_DETECTED":
+                        # REGRESSION DETECTED - abort team scrape
+                        error_msg = validation_message
+                        print(f"\n❌ {error_msg}")
+                        self._log_error("match_regression", error_msg)
+                        
+                        # Save tracking file before aborting
+                        try:
+                            self._save_wrestler_match_tracking()
+                        except Exception as e:
+                            print(f"Warning: Error saving tracking file before abort: {e}")
+                        
+                        # Save log state before aborting
+                        try:
+                            self._save_scrape_log()
+                        except Exception:
+                            pass
+                        
+                        # PAUSE FOR USER INPUT
+                        print("\n" + "="*60)
+                        print("PAUSED: Match regression detected. Press Enter to continue...")
+                        print("="*60)
+                        input()
+                        
+                        return None  # Abort team scrape (no data written)
+                    
+                    # Validation passed - update tracking and continue
+                    # (tracking is updated in _validate_wrestler_match_count)
                     
                     # Add wrestler data to roster
                     wrestler_data = {
@@ -1984,6 +2410,12 @@ class WrestlingScraper:
                         return None
                     continue
 
+            # Save tracking file after successful team scrape
+            try:
+                self._save_wrestler_match_tracking()
+            except Exception as e:
+                print(f"Warning: Error saving tracking file after team scrape: {e}")
+            
             return team_data
 
         except Exception as e:

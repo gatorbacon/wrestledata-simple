@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35049478132",
+  "name": "Carmello Kolb",
+  "team": "Western Reserve Academy",
+  "team_slug": "western_reserve_academy",
+  "team_rank": null,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 108.1,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35271324132",
+      "opponent_rank": 7,
+      "opponent_name": "Connor Warner",
+      "method": "TF 21-5 0:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35640100132",
+      "opponent_name": "Cayden Pauley",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 44,
+      "opponent_weight": 120,
+      "opponent_rank": 154,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:21",
+      "event": "Edgewood Invitational"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35271324132",
+      "opponent_name": "Connor Warner",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 31,
+      "opponent_weight": 120,
+      "opponent_rank": 7,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "0:00",
+      "event": "Edgewood Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 1.5,
+    "top33_bonus_ev_shrunk": 1.3294573643410854
+  }
+}

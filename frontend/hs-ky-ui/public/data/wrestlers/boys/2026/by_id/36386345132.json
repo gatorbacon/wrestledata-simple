@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 127,
   "record": {
-    "overall": "3-1",
+    "overall": "5-7",
     "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,9 +20,9 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 94.5,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
-    "majors": 0,
+    "pin_rate": 0.4,
+    "bonus_rate": 0.6,
+    "majors": 1,
     "techs": 0,
     "pins": 2
   },
@@ -46,6 +46,21 @@
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35523547132",
+      "opponent_name": "Harris Ellis",
+      "opponent_team": "Bath County High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "21-7",
+      "duration": "7:00",
+      "event": "2026 Agie Skeens Memorial Tournament"
+    },
+    {
       "date": "2025-12-30",
       "opponent_id": "35421288132",
       "opponent_name": "Logan Mason",
@@ -58,6 +73,21 @@
       "method": "FALL",
       "score": null,
       "duration": "0:57",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35692889132",
+      "opponent_name": "Chandler Morris",
+      "opponent_team": "Bluefield",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "4:38",
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
@@ -92,6 +122,66 @@
     },
     {
       "date": "2025-12-12",
+      "opponent_id": "35679553132",
+      "opponent_name": "Vincent Gibson",
+      "opponent_team": "Cabell Midland",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "vs. Cabell Midland"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34991977132",
+      "opponent_name": "Justus Fife",
+      "opponent_team": "Cass",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:35",
+      "event": "vs. Cass"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35465434132",
+      "opponent_name": "Victor Zanolini",
+      "opponent_team": "Christopher Columbus H S",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "vs. Christopher Columbus H S"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35372932132",
+      "opponent_name": "Landon Willard",
+      "opponent_team": "Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
+      "event": "vs. Clay"
+    },
+    {
+      "date": "2025-12-12",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
@@ -104,11 +194,41 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Reedsville, WI"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35348804132",
+      "opponent_name": "Kirby Haggard",
+      "opponent_team": "Seymour High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "vs. Seymour High School"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34993254132",
+      "opponent_name": "Brooks McDonald",
+      "opponent_team": "West Forsyth",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
+      "event": "vs. West Forsyth"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4615384615384615
+    "top33_bonus_ev_shrunk": 1.3020833333333333
   }
 }

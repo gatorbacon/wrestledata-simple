@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35351455132",
+  "name": "Aidan Hare",
+  "team": "Father Ryan High School",
+  "team_slug": "father_ryan_high_school",
+  "team_rank": null,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 88.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35031565132",
+      "opponent_rank": 5,
+      "opponent_name": "Jacob Ramsey",
+      "method": "MD 13-1"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35562978132",
+      "opponent_name": "Henry Bueter",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 22,
+      "opponent_weight": 126,
+      "opponent_rank": 36,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Holiday Classic"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35031565132",
+      "opponent_name": "Jacob Ramsey",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 126,
+      "opponent_rank": 5,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MD",
+      "score": "13-1",
+      "duration": "7:00",
+      "event": "vs. Father Ryan High School"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 1.0,
+    "top33_bonus_ev_shrunk": 1.3666666666666667
+  }
+}

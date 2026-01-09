@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 45,
   "record": {
-    "overall": "7-5",
+    "overall": "10-11",
     "vs_ranked": "4-5",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
@@ -20,11 +20,11 @@
     "si_plus": 91.3,
     "df_plus": 94.8,
     "apr_plus": 100.0,
-    "pin_rate": 0.571,
-    "bonus_rate": 0.571,
+    "pin_rate": 0.7,
+    "bonus_rate": 0.7,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 7
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
@@ -45,6 +45,51 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35178450132",
+      "opponent_name": "Vance Batosky",
+      "opponent_team": "Friendship Christian School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:33",
+      "event": "vs. Friendship Christian School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35153588132",
+      "opponent_name": "Fernando Nardone",
+      "opponent_team": "Wilson Central High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "vs. Wilson Central High School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35187244132",
+      "opponent_name": "Nathaniel Thornhill",
+      "opponent_team": "Oakland High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:31",
+      "event": "vs. Oakland High School"
+    },
     {
       "date": "2025-12-27",
       "opponent_id": "35093501132",
@@ -152,6 +197,81 @@
     },
     {
       "date": "2025-12-12",
+      "opponent_id": "35679553132",
+      "opponent_name": "Vincent Gibson",
+      "opponent_team": "Cabell Midland",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:40",
+      "event": "vs. Cabell Midland"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34991977132",
+      "opponent_name": "Justus Fife",
+      "opponent_team": "Cass",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "4:53",
+      "event": "vs. Cass"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35372932132",
+      "opponent_name": "Landon Willard",
+      "opponent_team": "Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "vs. Clay"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35372788132",
+      "opponent_name": "Brennan McCook",
+      "opponent_team": "Pigeon Forge High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:46",
+      "event": "vs. Pigeon Forge High School"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35319702132",
+      "opponent_name": "Adam Perez",
+      "opponent_team": "Pigeon Forge High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "vs. Pigeon Forge High School"
+    },
+    {
+      "date": "2025-12-12",
       "opponent_id": "OUTSTATE_7292aa7df2cf",
       "opponent_name": "Adison Scharenbroch",
       "opponent_team": "Reedsville, WI",
@@ -164,6 +284,21 @@
       "score": "9-3",
       "duration": "7:00",
       "event": "vs. Reedsville, WI"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35478445132",
+      "opponent_name": "Erik Perez",
+      "opponent_team": "St. John Neumann",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "vs. St. John Neumann"
     },
     {
       "date": "2025-12-06",
@@ -229,6 +364,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 0.9841269841269842
+    "top33_bonus_ev_shrunk": 1.1647509578544062
   }
 }

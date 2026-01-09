@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:14.649774Z",
+  "generated_at_utc": "2026-01-08T19:21:13.778034Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -282,7 +282,7 @@
       "wrestler_id": "35488625132",
       "name": "Levi Plummer",
       "wins": 3,
-      "losses": 5,
+      "losses": 6,
       "top25_wins": 0,
       "bonus_rate": 0.333
     },
@@ -336,7 +336,7 @@
       "wrestler_id": "35488272132",
       "name": "Teddy Tapke",
       "wins": 5,
-      "losses": 5,
+      "losses": 6,
       "top25_wins": 0,
       "bonus_rate": 0.4
     },
@@ -344,10 +344,10 @@
       "weight": 175,
       "wrestler_id": "35488755132",
       "name": "Mark Schmitt",
-      "wins": 8,
+      "wins": 9,
       "losses": 1,
       "top25_wins": 0,
-      "bonus_rate": 0.875
+      "bonus_rate": 0.889
     },
     {
       "weight": 190,
@@ -379,8 +379,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 96,
+      "losses": 58
     },
     "top33": {
       "wins": 8,
@@ -390,8 +390,20 @@
       "wins": 1,
       "losses": 12
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.854,
+      "rank": 24,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.719,
+      "rank": 28,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.094,
+      "rank": 45,
+      "rank_scope": "league"
+    }
   }
 }

@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 187,
   "record": {
-    "overall": "0-0",
+    "overall": "1-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -21,9 +21,9 @@
     "df_plus": 102.1,
     "apr_plus": 82.7,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
+    "techs": 1,
     "pins": 0
   },
   "opponent_breakdown": {
@@ -34,10 +34,56 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35112299132",
+      "opponent_name": "Asher Guess",
+      "opponent_team": "Northeast High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "2:20",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35083065132",
+      "opponent_name": "Tristian Collier",
+      "opponent_team": "Green Hill High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35115602132",
+      "opponent_name": "Cameron Culhane",
+      "opponent_team": "Kirkwood High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8571428571428571
+    "top33_bonus_ev_shrunk": 1.0603448275862069
   }
 }

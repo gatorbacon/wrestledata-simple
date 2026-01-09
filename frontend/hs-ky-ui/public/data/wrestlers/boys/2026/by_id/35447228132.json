@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 104,
   "record": {
-    "overall": "4-8",
+    "overall": "5-10",
     "vs_ranked": "3-8",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
@@ -20,10 +20,10 @@
     "si_plus": 91.1,
     "df_plus": 103.3,
     "apr_plus": 93.5,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.4,
+    "bonus_rate": 0.6,
     "majors": 0,
-    "techs": 0,
+    "techs": 1,
     "pins": 2
   },
   "opponent_breakdown": {
@@ -118,6 +118,36 @@
       "method": "FALL",
       "score": null,
       "duration": "1:56",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35692829132",
+      "opponent_name": "Ashton Bilt",
+      "opponent_team": "Bluefield",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "2:24",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35184800132",
+      "opponent_name": "Jacob Fields",
+      "opponent_team": "Grundy",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:17",
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
@@ -224,11 +254,26 @@
       "score": null,
       "duration": "2:53",
       "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35450381132",
+      "opponent_name": "Hunter Massey",
+      "opponent_team": "John I. Burton",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "Anchor Down Showdown"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8571428571428571
+    "top33_bonus_ev_shrunk": 1.0603448275862069
   }
 }

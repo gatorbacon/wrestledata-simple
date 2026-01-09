@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 88,
   "record": {
-    "overall": "9-6",
+    "overall": "10-7",
     "vs_ranked": "6-5",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -20,8 +20,8 @@
     "si_plus": 102.3,
     "df_plus": 103.3,
     "apr_plus": 99.9,
-    "pin_rate": 0.556,
-    "bonus_rate": 0.556,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
     "pins": 5
@@ -151,6 +151,21 @@
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
+      "date": "2025-12-30",
+      "opponent_id": "35255585132",
+      "opponent_name": "Brady Hayes",
+      "opponent_team": "Eastside",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:58",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_name": "Unknown",
@@ -179,6 +194,21 @@
       "score": "3-2",
       "duration": "7:00",
       "event": "vs. Russell County"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "34991692132",
+      "opponent_name": "Jarian Lopez",
+      "opponent_team": "Toombs County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "vs. Toombs County"
     },
     {
       "date": "2025-12-13",
@@ -274,6 +304,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.8333333333333333
+    "top33_bonus_ev_shrunk": 1.4125
   }
 }

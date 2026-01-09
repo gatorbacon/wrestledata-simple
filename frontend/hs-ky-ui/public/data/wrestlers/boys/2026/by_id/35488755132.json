@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 68,
   "record": {
-    "overall": "8-1",
+    "overall": "9-1",
     "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 115.3,
-    "pin_rate": 0.875,
-    "bonus_rate": 0.875,
+    "pin_rate": 0.889,
+    "bonus_rate": 0.889,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -95,6 +95,21 @@
       "opponent_rank": null,
       "weight_class": "175",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "New Richmond JV Invitational"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "37136754132",
+      "opponent_name": "Jackson Foster",
+      "opponent_team": "Milford Sr. High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -179,6 +194,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.09375
+    "top33_bonus_ev_shrunk": 1.3714285714285714
   }
 }

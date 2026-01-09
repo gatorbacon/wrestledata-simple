@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.559996Z",
+  "generated_at_utc": "2026-01-08T19:21:14.443586Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -217,8 +217,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 26,
+      "losses": 22
     },
     "top33": {
       "wins": 0,
@@ -228,8 +228,20 @@
       "wins": 0,
       "losses": 2
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.615,
+      "rank": 132,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.615,
+      "rank": 98,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.0,
+      "rank": 128,
+      "rank_scope": "league"
+    }
   }
 }

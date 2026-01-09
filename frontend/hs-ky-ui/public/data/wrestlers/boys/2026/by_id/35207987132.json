@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 34,
   "record": {
-    "overall": "7-1",
+    "overall": "8-1",
     "vs_ranked": "4-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -20,11 +20,11 @@
     "si_plus": 107.3,
     "df_plus": 110.3,
     "apr_plus": 108.3,
-    "pin_rate": 0.571,
-    "bonus_rate": 0.857,
+    "pin_rate": 0.625,
+    "bonus_rate": 0.875,
     "majors": 0,
     "techs": 2,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
@@ -45,6 +45,21 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35169180132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Kenwood High School"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -169,6 +184,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4615384615384615
+    "top33_bonus_ev_shrunk": 1.3020833333333333
   }
 }

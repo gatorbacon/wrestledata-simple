@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.141666Z",
+  "generated_at_utc": "2026-01-08T19:21:14.139987Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -290,46 +290,46 @@
       "weight": 126,
       "wrestler_id": "35599167132",
       "name": "Nathan Tucker",
-      "wins": 6,
+      "wins": 8,
       "losses": 13,
       "top25_wins": 0,
-      "bonus_rate": 0.5
+      "bonus_rate": 0.625
     },
     {
       "weight": 132,
       "wrestler_id": "35600402132",
       "name": "Brandon Perry",
-      "wins": 5,
-      "losses": 7,
+      "wins": 6,
+      "losses": 9,
       "top25_wins": 0,
-      "bonus_rate": 0.6
+      "bonus_rate": 0.667
     },
     {
       "weight": 138,
       "wrestler_id": "35600420132",
       "name": "Nathan Chadwell",
-      "wins": 6,
+      "wins": 7,
       "losses": 5,
       "top25_wins": 0,
-      "bonus_rate": 0.5
+      "bonus_rate": 0.571
     },
     {
       "weight": 144,
       "wrestler_id": "35599168132",
       "name": "Keegan Perry",
-      "wins": 5,
+      "wins": 6,
       "losses": 9,
       "top25_wins": 0,
-      "bonus_rate": 0.6
+      "bonus_rate": 0.667
     },
     {
       "weight": 150,
       "wrestler_id": "35600436132",
       "name": "Kahner Sexton",
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 0.5
     },
     {
       "weight": 165,
@@ -354,7 +354,7 @@
       "wrestler_id": "35600448132",
       "name": "Jayden Foster",
       "wins": 4,
-      "losses": 7,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -370,8 +370,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 188,
+      "losses": 112
     },
     "top33": {
       "wins": 13,
@@ -381,8 +381,20 @@
       "wins": 0,
       "losses": 16
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.755,
+      "rank": 79,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.633,
+      "rank": 88,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.085,
+      "rank": 53,
+      "rank_scope": "league"
+    }
   }
 }

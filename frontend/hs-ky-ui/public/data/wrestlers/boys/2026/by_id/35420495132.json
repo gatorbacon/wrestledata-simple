@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 53,
   "record": {
-    "overall": "13-5",
+    "overall": "14-6",
     "vs_ranked": "10-5",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
@@ -20,8 +20,8 @@
     "si_plus": 88.0,
     "df_plus": 107.8,
     "apr_plus": 99.5,
-    "pin_rate": 0.385,
-    "bonus_rate": 0.538,
+    "pin_rate": 0.357,
+    "bonus_rate": 0.5,
     "majors": 2,
     "techs": 0,
     "pins": 5
@@ -103,6 +103,21 @@
       "method": "FALL",
       "score": null,
       "duration": "1:37",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35184877132",
+      "opponent_name": "Jacob Smeltzer",
+      "opponent_team": "Grundy",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
@@ -256,6 +271,21 @@
       "event": "Anchor Down Showdown"
     },
     {
+      "date": "2025-12-06",
+      "opponent_id": "35013668132",
+      "opponent_name": "Isaac Cooper",
+      "opponent_team": "Castlewood",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-5",
+      "duration": "7:00",
+      "event": "Anchor Down Showdown"
+    },
+    {
       "date": "2025-11-29",
       "opponent_id": "35599163132",
       "opponent_name": "Lucas Parriman",
@@ -319,6 +349,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3035714285714286
+    "top33_bonus_ev_shrunk": 1.308139534883721
   }
 }

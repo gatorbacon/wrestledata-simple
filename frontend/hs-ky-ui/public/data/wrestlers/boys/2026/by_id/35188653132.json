@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35188653132",
+  "name": "Jaxx Whitlatch",
+  "team": "John S. Battle",
+  "team_slug": "john_s_battle",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 108.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35850457132",
+      "opponent_rank": 127,
+      "opponent_name": "Wyatt Preece",
+      "method": "Fall 0:27"
+    },
+    "worst_loss": {
+      "opponent_id": "35850444132",
+      "opponent_rank": 12,
+      "opponent_name": "Bentley Brown",
+      "method": "TF 16-0 3:05"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35850457132",
+      "opponent_name": "Wyatt Preece",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 126,
+      "opponent_rank": 127,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35850444132",
+      "opponent_name": "Bentley Brown",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 132,
+      "opponent_rank": 12,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "3:05",
+      "event": "Bobby Bates Wrestling Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3020833333333333
+  }
+}

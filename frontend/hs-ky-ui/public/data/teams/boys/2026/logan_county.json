@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.060956Z",
+  "generated_at_utc": "2026-01-08T19:21:14.084136Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -327,7 +327,7 @@
       "wrestler_id": "35192333132",
       "name": "John Brown",
       "wins": 3,
-      "losses": 6,
+      "losses": 7,
       "top25_wins": 0,
       "bonus_rate": 0.333
     },
@@ -363,7 +363,7 @@
       "wrestler_id": "35192416132",
       "name": "Bryan Mooser",
       "wins": 3,
-      "losses": 1,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -372,7 +372,7 @@
       "wrestler_id": "35664326132",
       "name": "Ian Gunn",
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -389,10 +389,10 @@
       "weight": 138,
       "wrestler_id": "35484902132",
       "name": "Keyten Gregory",
-      "wins": 4,
+      "wins": 5,
       "losses": 1,
       "top25_wins": 0,
-      "bonus_rate": 0.25
+      "bonus_rate": 0.4
     },
     {
       "weight": 144,
@@ -408,7 +408,7 @@
       "wrestler_id": "35192507132",
       "name": "Quan Nguyen",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -426,7 +426,7 @@
       "wrestler_id": "35484827132",
       "name": "Hiram Escobedo",
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -462,7 +462,7 @@
       "wrestler_id": "35664198132",
       "name": "Bentley Anderson",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -561,7 +561,7 @@
       "wrestler_id": "35192342132",
       "name": "Hunter Bush",
       "wins": 2,
-      "losses": 4,
+      "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -577,8 +577,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 58,
+      "losses": 48
     },
     "top33": {
       "wins": 0,
@@ -588,8 +588,20 @@
       "wins": 0,
       "losses": 3
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.534,
+      "rank": 139,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.517,
+      "rank": 132,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.017,
+      "rank": 115,
+      "rank_scope": "league"
+    }
   }
 }

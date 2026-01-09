@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35661799132",
+  "name": "Teagan Sims",
+  "team": "Mt. Vernon",
+  "team_slug": "mt_vernon",
+  "team_rank": null,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 114.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34989012132",
+      "opponent_rank": 60,
+      "opponent_name": "Duncan Helm",
+      "method": "Fall 1:10"
+    },
+    "worst_loss": {
+      "opponent_id": "35281678132",
+      "opponent_rank": 189,
+      "opponent_name": "Elliot Houser",
+      "method": "Fall 0:53"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-26",
+      "opponent_id": "35049056132",
+      "opponent_name": "Harrison Davis",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 120,
+      "opponent_rank": 158,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:27",
+      "event": "vs. Mt. Vernon"
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "35281678132",
+      "opponent_name": "Elliot Houser",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 138,
+      "opponent_rank": 189,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "vs. Mt. Vernon"
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "34989012132",
+      "opponent_name": "Duncan Helm",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 47,
+      "opponent_weight": 126,
+      "opponent_rank": 60,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "vs. Mt. Vernon"
+    }
+  ]
+}

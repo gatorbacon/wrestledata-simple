@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35158375132",
+  "name": "Bill Gilmer",
+  "team": "Lebanon",
+  "team_slug": "lebanon",
+  "team_rank": null,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 98.3,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "36061560132",
+      "opponent_rank": 75,
+      "opponent_name": "Gavin McCalvin",
+      "method": "Fall 1:37"
+    },
+    "worst_loss": {
+      "opponent_id": "35850448132",
+      "opponent_rank": 12,
+      "opponent_name": "Zander Nottingham",
+      "method": "Fall 1:33"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35262243132",
+      "opponent_name": "Brilynn Stewart",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 126,
+      "opponent_rank": 165,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "3:36",
+      "event": "Bill Brimer Brawl in the Hall 2026"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "36061560132",
+      "opponent_name": "Gavin McCalvin",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 126,
+      "opponent_rank": 75,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35850448132",
+      "opponent_name": "Zander Nottingham",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 126,
+      "opponent_rank": 12,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:33",
+      "event": "Bobby Bates Wrestling Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.4125
+  }
+}

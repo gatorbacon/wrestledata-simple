@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "34976266132",
+  "name": "Mason Gibbs",
+  "team": "White House Heritage High School",
+  "team_slug": "white_house_heritage_high_school",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "3-0",
+    "vs_top10": "0-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 112.2,
+    "pin_rate": 0.667,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35458879132",
+      "opponent_rank": 22,
+      "opponent_name": "Kaleb Lewellen",
+      "method": "TF 15-0 2:07"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35090023132",
+      "opponent_name": "Seth Frank",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 74,
+      "opponent_weight": 132,
+      "opponent_rank": 87,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34997728132",
+      "opponent_name": "Robbie Hopper",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 79,
+      "opponent_weight": 132,
+      "opponent_rank": 23,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:07",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35458879132",
+      "opponent_name": "Kaleb Lewellen",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 37,
+      "opponent_weight": 132,
+      "opponent_rank": 22,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:07",
+      "event": "5th Annual Cardinal Clash"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 1.75,
+    "top33_bonus_ev_shrunk": 1.3916666666666666
+  }
+}

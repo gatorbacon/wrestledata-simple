@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "34980328132",
+  "name": "Luke Cernoch",
+  "team": "Nashville Christian School",
+  "team_slug": "nashville_christian_school",
+  "team_rank": null,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 101.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35666463132",
+      "opponent_rank": 154,
+      "opponent_name": "Logan Swinford",
+      "method": "Fall 1:28"
+    },
+    "worst_loss": {
+      "opponent_id": "35002892132",
+      "opponent_rank": 19,
+      "opponent_name": "Jayden Perry",
+      "method": "MD 12-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35002892132",
+      "opponent_name": "Jayden Perry",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 138,
+      "opponent_rank": 19,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "vs. Nashville Christian School"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35666463132",
+      "opponent_name": "Logan Swinford",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 132,
+      "opponent_rank": 154,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "vs. Nashville Christian School"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.0603448275862069
+  }
+}

@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 190,
   "record": {
-    "overall": "1-2",
+    "overall": "3-8",
     "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 88.9,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -40,6 +40,51 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35178440132",
+      "opponent_name": "Cayden Fowler",
+      "opponent_team": "Friendship Christian School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "vs. Friendship Christian School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35153367132",
+      "opponent_name": "Mirolim Mirkhaydarov",
+      "opponent_team": "Wilson Central High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:44",
+      "event": "vs. Wilson Central High School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35187164132",
+      "opponent_name": "Dylan Frazier",
+      "opponent_team": "Oakland High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "22-4",
+      "duration": "2:00",
+      "event": "vs. Oakland High School"
+    },
     {
       "date": "2025-12-27",
       "opponent_id": "35599164132",
@@ -72,6 +117,21 @@
     },
     {
       "date": "2025-12-12",
+      "opponent_id": "35319862132",
+      "opponent_name": "JC Roy",
+      "opponent_team": "Pigeon Forge High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:37",
+      "event": "vs. Pigeon Forge High School"
+    },
+    {
+      "date": "2025-12-12",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
@@ -84,11 +144,71 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Reedsville, WI"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "34990968132",
+      "opponent_name": "Rowdy Duck",
+      "opponent_team": "Cass",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "vs. Cass"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35372868132",
+      "opponent_name": "Colton Riddle",
+      "opponent_team": "Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:27",
+      "event": "vs. Clay"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35319786132",
+      "opponent_name": "Ziyobek Hbolumannopov",
+      "opponent_team": "Pigeon Forge High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "SV-1",
+      "score": "16-13",
+      "duration": "8:15",
+      "event": "vs. Pigeon Forge High School"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35478453132",
+      "opponent_name": "Marco Scuderi",
+      "opponent_team": "St. John Neumann",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "vs. St. John Neumann"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
+    "top33_bonus_ev_shrunk": 1.3225806451612903
   }
 }

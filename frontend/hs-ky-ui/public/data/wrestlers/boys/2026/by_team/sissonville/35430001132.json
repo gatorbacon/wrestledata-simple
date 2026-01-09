@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35430001132",
+  "name": "Cartlet Cantley",
+  "team": "Sissonville",
+  "team_slug": "sissonville",
+  "team_rank": null,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 91.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35103664132",
+      "opponent_rank": 108,
+      "opponent_name": "Patrick Oliver",
+      "method": "TF 18-3 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34993522132",
+      "opponent_rank": 25,
+      "opponent_name": "Brayden Tugers",
+      "method": "MD 16-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34993522132",
+      "opponent_name": "Brayden Tugers",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 123,
+      "opponent_weight": 144,
+      "opponent_rank": 25,
+      "weight_class": "150",
+      "result": "L",
+      "method": "MD",
+      "score": "16-6",
+      "duration": "7:00",
+      "event": "Fallen Heroes"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35103664132",
+      "opponent_name": "Patrick Oliver",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 123,
+      "opponent_weight": 150,
+      "opponent_rank": 108,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "0:00",
+      "event": "Fallen Heroes"
+    }
+  ]
+}

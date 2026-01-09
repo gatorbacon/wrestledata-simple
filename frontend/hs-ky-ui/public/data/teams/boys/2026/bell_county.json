@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:14.445532Z",
+  "generated_at_utc": "2026-01-08T19:21:13.629496Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -279,6 +279,15 @@
   "remaining": [
     {
       "weight": 106,
+      "wrestler_id": "35369123132",
+      "name": "Keira Good",
+      "wins": 1,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 106,
       "wrestler_id": "34995996132",
       "name": "Mia Barnett",
       "wins": 0,
@@ -310,6 +319,15 @@
       "name": "Kaylee Lester",
       "wins": 0,
       "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35369136132",
+      "name": "Kaylee Lester",
+      "wins": 0,
+      "losses": 1,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -371,19 +389,19 @@
       "weight": 144,
       "wrestler_id": "35093501132",
       "name": "Zander Lovell",
-      "wins": 2,
-      "losses": 12,
+      "wins": 3,
+      "losses": 13,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 0.333
     },
     {
       "weight": 150,
       "wrestler_id": "34995991132",
       "name": "Gabe Miller",
-      "wins": 8,
+      "wins": 9,
       "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.75
+      "bonus_rate": 0.778
     },
     {
       "weight": 150,
@@ -443,10 +461,10 @@
       "weight": 165,
       "wrestler_id": "34996001132",
       "name": "Kaiden Pulley",
-      "wins": 3,
-      "losses": 3,
+      "wins": 4,
+      "losses": 5,
       "top25_wins": 0,
-      "bonus_rate": 0.333
+      "bonus_rate": 0.5
     },
     {
       "weight": 165,
@@ -480,7 +498,7 @@
       "wrestler_id": "35496336132",
       "name": "Connor Stewart",
       "wins": 1,
-      "losses": 3,
+      "losses": 6,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -498,7 +516,7 @@
       "wrestler_id": "35316438132",
       "name": "Brantley Webb",
       "wins": 6,
-      "losses": 15,
+      "losses": 20,
       "top25_wins": 0,
       "bonus_rate": 0.333
     },
@@ -515,10 +533,10 @@
       "weight": 215,
       "wrestler_id": "34996000132",
       "name": "Jackson Tapp",
-      "wins": 6,
+      "wins": 7,
       "losses": 12,
       "top25_wins": 0,
-      "bonus_rate": 0.667
+      "bonus_rate": 0.714
     },
     {
       "weight": 215,
@@ -551,10 +569,10 @@
       "weight": 285,
       "wrestler_id": "35496123132",
       "name": "Aidan Warren",
-      "wins": 5,
-      "losses": 3,
+      "wins": 7,
+      "losses": 4,
       "top25_wins": 0,
-      "bonus_rate": 0.8
+      "bonus_rate": 0.857
     },
     {
       "weight": 285,
@@ -570,7 +588,7 @@
       "wrestler_id": "35284733132",
       "name": "Jordan Collett",
       "wins": 3,
-      "losses": 2,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -595,8 +613,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 170,
+      "losses": 85
     },
     "top33": {
       "wins": 6,
@@ -606,8 +624,20 @@
       "wins": 0,
       "losses": 8
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.688,
+      "rank": 118,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.653,
+      "rank": 75,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.024,
+      "rank": 112,
+      "rank_scope": "league"
+    }
   }
 }

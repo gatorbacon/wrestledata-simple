@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 189,
   "record": {
-    "overall": "1-0",
+    "overall": "2-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 100.1,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,6 +35,21 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-11-26",
+      "opponent_id": "35661799132",
+      "opponent_name": "Teagan Sims",
+      "opponent_team": "Mt. Vernon",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "vs. Mt. Vernon"
+    },
     {
       "date": "2025-11-26",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -49,11 +64,26 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Greenwood"
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "35119952132",
+      "opponent_name": "Zamarion Gentry",
+      "opponent_team": "Rossview High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-10",
+      "duration": "7:00",
+      "event": "vs. Rossview High School"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8571428571428571
+    "top33_bonus_ev_shrunk": 1.0603448275862069
   }
 }

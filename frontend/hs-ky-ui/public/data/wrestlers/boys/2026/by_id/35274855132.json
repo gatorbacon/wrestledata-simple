@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35274855132",
+  "name": "Jack Rowan",
+  "team": "Hillsboro",
+  "team_slug": "hillsboro",
+  "team_rank": null,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 107.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35337920132",
+      "opponent_rank": 31,
+      "opponent_name": "Michael Fidler",
+      "method": "Fall 1:40"
+    },
+    "worst_loss": {
+      "opponent_id": "35035507132",
+      "opponent_rank": 25,
+      "opponent_name": "Wendel Shackelford",
+      "method": "Fall 4:42"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35337920132",
+      "opponent_name": "Michael Fidler",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 131,
+      "opponent_weight": 157,
+      "opponent_rank": 31,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:40",
+      "event": "Mater Dei Holiday Classic"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35035507132",
+      "opponent_name": "Wendel Shackelford",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 157,
+      "opponent_rank": 25,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:42",
+      "event": "Mater Dei Holiday Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.1690821256038648
+  }
+}

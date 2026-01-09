@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35260628132",
+  "name": "Cooper Maddox",
+  "team": "Harrisburg",
+  "team_slug": "harrisburg",
+  "team_rank": null,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 101.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35490391132",
+      "opponent_rank": 156,
+      "opponent_name": "Cohen Griffin",
+      "method": "Fall 0:42"
+    },
+    "worst_loss": {
+      "opponent_id": "35281681132",
+      "opponent_rank": 45,
+      "opponent_name": "Dylan Crawford",
+      "method": "Fall 1:50"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-17",
+      "opponent_id": "35490391132",
+      "opponent_name": "Cohen Griffin",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 190,
+      "opponent_rank": 156,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:42",
+      "event": "vs. Harrisburg"
+    },
+    {
+      "date": "2025-12-17",
+      "opponent_id": "35281681132",
+      "opponent_name": "Dylan Crawford",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 215,
+      "opponent_rank": 45,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "vs. Harrisburg"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.1785714285714286
+  }
+}

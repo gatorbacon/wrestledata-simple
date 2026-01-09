@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35512741132",
+  "name": "Jace Weaver",
+  "team": "Johnston City",
+  "team_slug": "johnston_city",
+  "team_rank": null,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 95.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35708975132",
+      "opponent_rank": 47,
+      "opponent_name": "Bentley DeSoto",
+      "method": "Dec 13-9"
+    },
+    "worst_loss": {
+      "opponent_id": "35002892132",
+      "opponent_rank": 19,
+      "opponent_name": "Jayden Perry",
+      "method": "Dec 11-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35221150132",
+      "opponent_name": "Aiden Groves",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 62,
+      "opponent_weight": 138,
+      "opponent_rank": 191,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "0:00",
+      "event": "vs. Johnston City"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35002892132",
+      "opponent_name": "Jayden Perry",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 138,
+      "opponent_rank": 19,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-6",
+      "duration": "7:00",
+      "event": "vs. Johnston City"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35708975132",
+      "opponent_name": "Bentley DeSoto",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 132,
+      "opponent_rank": 47,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "13-9",
+      "duration": "7:00",
+      "event": "vs. Johnston City"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 173,
   "record": {
-    "overall": "0-0",
+    "overall": "1-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 97.8,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,10 +34,41 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35124368132",
+      "opponent_name": "Kaiden Case",
+      "opponent_team": "Freeburg",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Freeburg"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35512749132",
+      "opponent_name": "Max Etherton",
+      "opponent_team": "Johnston City",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Johnston City"
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4615384615384615
+    "top33_bonus_ev_shrunk": 1.3020833333333333
   }
 }

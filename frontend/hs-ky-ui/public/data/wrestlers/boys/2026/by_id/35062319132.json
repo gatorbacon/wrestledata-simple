@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35062319132",
+  "name": "Rigdon Meacham",
+  "team": "Marion (H.S.)",
+  "team_slug": "marion_hs",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 105.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35493617132",
+      "opponent_rank": 118,
+      "opponent_name": "William Petersen",
+      "method": "Fall 1:02"
+    },
+    "worst_loss": {
+      "opponent_id": "34989043132",
+      "opponent_rank": 3,
+      "opponent_name": "Josh Waufle",
+      "method": "TF 17-1 4:36"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34989043132",
+      "opponent_name": "Josh Waufle",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 126,
+      "opponent_rank": 3,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "4:36",
+      "event": "vs. Marion (H.S.)"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35493617132",
+      "opponent_name": "William Petersen",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 132,
+      "opponent_rank": 118,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:02",
+      "event": "vs. Marion (H.S.)"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3020833333333333
+  }
+}

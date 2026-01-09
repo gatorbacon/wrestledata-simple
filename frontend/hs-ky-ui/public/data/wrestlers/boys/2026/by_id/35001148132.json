@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 48,
   "record": {
-    "overall": "9-6",
+    "overall": "11-8",
     "vs_ranked": "9-3",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
@@ -20,11 +20,11 @@
     "si_plus": 89.8,
     "df_plus": 104.0,
     "apr_plus": 109.4,
-    "pin_rate": 0.889,
-    "bonus_rate": 0.889,
-    "majors": 0,
+    "pin_rate": 0.818,
+    "bonus_rate": 0.909,
+    "majors": 1,
     "techs": 0,
-    "pins": 8
+    "pins": 9
   },
   "opponent_breakdown": {
     "ranked_wins": 9,
@@ -119,6 +119,66 @@
       "score": "16-3",
       "duration": "7:00",
       "event": "Tates Creek Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34940848132",
+      "opponent_name": "Will Bensinger",
+      "opponent_team": "Pell City",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "Scott Rohrer Tournament pres."
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34939115132",
+      "opponent_name": "Zach Young",
+      "opponent_team": "Hewitt-Trussville",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:39",
+      "event": "Scott Rohrer Tournament pres."
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34940629132",
+      "opponent_name": "Kayson Ragsdale",
+      "opponent_team": "Shades Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "MD",
+      "score": "22-11",
+      "duration": "7:00",
+      "event": "Scott Rohrer Tournament pres."
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34939220132",
+      "opponent_name": "John David Shattuck",
+      "opponent_team": "Grissom Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:38",
+      "event": "Scott Rohrer Tournament pres."
     },
     {
       "date": "2025-12-30",
@@ -274,6 +334,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
+    "top33_bonus_ev_shrunk": 1.3225806451612903
   }
 }

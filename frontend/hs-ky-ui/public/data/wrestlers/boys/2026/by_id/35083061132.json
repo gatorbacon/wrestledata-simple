@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35083061132",
+  "name": "Everett Lawson",
+  "team": "Green Hill High School",
+  "team_slug": "green_hill_high_school",
+  "team_rank": null,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 111.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35364773132",
+      "opponent_rank": 38,
+      "opponent_name": "Carter Lawrence",
+      "method": "Fall 0:54"
+    },
+    "worst_loss": {
+      "opponent_id": "35205294132",
+      "opponent_rank": 26,
+      "opponent_name": "Maddox Tabor",
+      "method": "MD 11-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35205294132",
+      "opponent_name": "Maddox Tabor",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 175,
+      "opponent_rank": 26,
+      "weight_class": "175",
+      "result": "L",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35364773132",
+      "opponent_name": "Carter Lawrence",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 93,
+      "opponent_weight": 175,
+      "opponent_rank": 38,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:54",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3714285714285714
+  }
+}

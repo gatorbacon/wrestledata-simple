@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.429729Z",
+  "generated_at_utc": "2026-01-08T19:21:14.352962Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -353,10 +353,10 @@
       "weight": 126,
       "wrestler_id": "35521760132",
       "name": "Colton Hester",
-      "wins": 4,
-      "losses": 3,
+      "wins": 6,
+      "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.5
+      "bonus_rate": 0.667
     },
     {
       "weight": 126,
@@ -398,10 +398,10 @@
       "weight": 144,
       "wrestler_id": "34993518132",
       "name": "Brayden Willingham",
-      "wins": 11,
-      "losses": 9,
+      "wins": 16,
+      "losses": 12,
       "top25_wins": 2,
-      "bonus_rate": 0.818
+      "bonus_rate": 0.812
     },
     {
       "weight": 144,
@@ -434,10 +434,10 @@
       "weight": 150,
       "wrestler_id": "35103664132",
       "name": "Patrick Oliver",
-      "wins": 1,
-      "losses": 11,
+      "wins": 4,
+      "losses": 16,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.5
     },
     {
       "weight": 150,
@@ -461,8 +461,8 @@
       "weight": 157,
       "wrestler_id": "34993507132",
       "name": "CALEB GAGEL",
-      "wins": 9,
-      "losses": 7,
+      "wins": 12,
+      "losses": 12,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -534,7 +534,7 @@
       "wrestler_id": "35103703132",
       "name": "John Lucas",
       "wins": 2,
-      "losses": 10,
+      "losses": 16,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -568,8 +568,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 118,
+      "losses": 87
     },
     "top33": {
       "wins": 11,
@@ -579,8 +579,20 @@
       "wins": 0,
       "losses": 17
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.864,
+      "rank": 19,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.712,
+      "rank": 31,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.136,
+      "rank": 16,
+      "rank_scope": "league"
+    }
   }
 }

@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "36021565132",
+  "name": "Luke Kelley",
+  "team": "Braxton County Hs",
+  "team_slug": "braxton_county_hs",
+  "team_rank": null,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 110.7,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34993511132",
+      "opponent_rank": 18,
+      "opponent_name": "AJ Falk",
+      "method": "TF 20-3 0:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2026-01-02",
+      "opponent_id": "35017751132",
+      "opponent_name": "Harrison Groves",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 52,
+      "opponent_weight": 138,
+      "opponent_rank": 205,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "vs. Braxton County Hs"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34993511132",
+      "opponent_name": "AJ Falk",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 123,
+      "opponent_weight": 138,
+      "opponent_rank": 18,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "0:00",
+      "event": "Fallen Heroes"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35661914132",
+  "name": "Brycen Riggan",
+  "team": "Mt. Vernon",
+  "team_slug": "mt_vernon",
+  "team_rank": null,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 100.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35122237132",
+      "opponent_rank": 160,
+      "opponent_name": "Michael Spriggs",
+      "method": "Fall 2:20"
+    },
+    "worst_loss": {
+      "opponent_id": "34989007132",
+      "opponent_rank": 22,
+      "opponent_name": "Kaden Coy",
+      "method": "Fall 3:20"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35122237132",
+      "opponent_name": "Michael Spriggs",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 144,
+      "opponent_rank": 160,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:20",
+      "event": "Phil Thrasher Tournament"
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "34989007132",
+      "opponent_name": "Kaden Coy",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 47,
+      "opponent_weight": 150,
+      "opponent_rank": 22,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:20",
+      "event": "vs. Mt. Vernon"
+    }
+  ]
+}

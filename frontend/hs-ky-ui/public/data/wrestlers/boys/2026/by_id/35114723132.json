@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35114723132",
+  "name": "Phoenix Madsen",
+  "team": "Alcoa High School",
+  "team_slug": "alcoa_high_school",
+  "team_rank": null,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 108.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35454704132",
+      "opponent_rank": 29,
+      "opponent_name": "Ely Bonds",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34997621132",
+      "opponent_rank": 83,
+      "opponent_name": "Jaxson Parmon",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-22",
+      "opponent_id": "34997621132",
+      "opponent_name": "Jaxson Parmon",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 41,
+      "opponent_weight": 113,
+      "opponent_rank": 83,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Alcoa High School"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35454690132",
+      "opponent_name": "Rodney Reeves",
+      "opponent_team": "Knox Central",
+      "opponent_team_rank": 95,
+      "opponent_weight": 120,
+      "opponent_rank": 61,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "vs. Alcoa High School"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35454704132",
+      "opponent_name": "Ely Bonds",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 128,
+      "opponent_weight": 120,
+      "opponent_rank": 29,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Alcoa High School"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.385012919896641
+  }
+}

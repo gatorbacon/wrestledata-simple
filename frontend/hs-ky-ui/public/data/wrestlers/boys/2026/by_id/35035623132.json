@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 35,
   "record": {
-    "overall": "5-3",
+    "overall": "6-3",
     "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 112.5,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -45,6 +45,21 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35574937132",
+      "opponent_name": "Jaren Bell",
+      "opponent_team": "Father Ryan High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Father Ryan High School"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35221044132",
@@ -169,6 +184,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6923076923076923
+    "top33_bonus_ev_shrunk": 0.9791666666666666
   }
 }

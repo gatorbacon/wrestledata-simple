@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 72,
   "record": {
-    "overall": "10-6",
+    "overall": "12-7",
     "vs_ranked": "8-6",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -20,11 +20,11 @@
     "si_plus": 100.9,
     "df_plus": 93.7,
     "apr_plus": 101.7,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.583,
+    "bonus_rate": 0.833,
     "majors": 2,
-    "techs": 0,
-    "pins": 6
+    "techs": 1,
+    "pins": 7
   },
   "opponent_breakdown": {
     "ranked_wins": 8,
@@ -103,6 +103,36 @@
       "method": "FALL",
       "score": null,
       "duration": "0:30",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35692829132",
+      "opponent_name": "Ashton Bilt",
+      "opponent_team": "Bluefield",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "37027968132",
+      "opponent_name": "Xavier Eldridge",
+      "opponent_team": "Bluefield",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "4:52",
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
@@ -272,6 +302,21 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35450382132",
+      "opponent_name": "Apollo Partin",
+      "opponent_team": "John I. Burton",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:43",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35433904132",
       "opponent_name": "David Cole",
       "opponent_team": "Southwestern",
@@ -289,6 +334,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8571428571428571
+    "top33_bonus_ev_shrunk": 1.0603448275862069
   }
 }

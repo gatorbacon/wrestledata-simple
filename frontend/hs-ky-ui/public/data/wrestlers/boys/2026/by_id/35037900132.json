@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35037900132",
+  "name": "Andrew Hutcheson",
+  "team": "East Robertson High School",
+  "team_slug": "east_robertson_high_school",
+  "team_rank": null,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 94.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35664198132",
+      "opponent_rank": 203,
+      "opponent_name": "Bentley Anderson",
+      "method": "Fall 3:02"
+    },
+    "worst_loss": {
+      "opponent_id": "34994461132",
+      "opponent_rank": 65,
+      "opponent_name": "Brytan Ashley",
+      "method": "Fall 6:02"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-09",
+      "opponent_id": "35664198132",
+      "opponent_name": "Bentley Anderson",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 100,
+      "opponent_weight": 165,
+      "opponent_rank": 203,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:02",
+      "event": "vs. East Robertson High School"
+    },
+    {
+      "date": "2025-12-02",
+      "opponent_id": "34994461132",
+      "opponent_name": "Brytan Ashley",
+      "opponent_team": "Russellville",
+      "opponent_team_rank": 121,
+      "opponent_weight": 175,
+      "opponent_rank": 65,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:02",
+      "event": "vs. East Robertson High School"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.975
+  }
+}

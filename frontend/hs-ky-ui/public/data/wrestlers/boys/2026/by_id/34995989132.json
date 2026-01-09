@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 52,
   "record": {
-    "overall": "19-11",
+    "overall": "22-12",
     "vs_ranked": "16-11",
     "vs_top10": "0-0",
     "vs_top25": "0-4"
@@ -20,11 +20,11 @@
     "si_plus": 105.8,
     "df_plus": 103.2,
     "apr_plus": 102.2,
-    "pin_rate": 0.789,
-    "bonus_rate": 0.789,
-    "majors": 0,
+    "pin_rate": 0.773,
+    "bonus_rate": 0.818,
+    "majors": 1,
     "techs": 0,
-    "pins": 15
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 16,
@@ -59,6 +59,36 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Claiborne High School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34997166132",
+      "opponent_name": "Tanner Mantooth",
+      "opponent_team": "Cocke Co. High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Cocke Co. High School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35380437132",
+      "opponent_name": "James Treptow",
+      "opponent_team": "Greeneville High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Greeneville High School"
     },
     {
       "date": "2025-12-30",
@@ -242,6 +272,21 @@
     },
     {
       "date": "2025-12-20",
+      "opponent_id": "36257429132",
+      "opponent_name": "Kyree Turvey",
+      "opponent_team": "Jeffersonville",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "MD",
+      "score": "22-12",
+      "duration": "7:00",
+      "event": "vs. Jeffersonville"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "35623015132",
       "opponent_name": "Amani Swetnam",
       "opponent_team": "Atherton",
@@ -422,6 +467,21 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35450388132",
+      "opponent_name": "Chasten Richardson",
+      "opponent_team": "John I. Burton",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:24",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35420690132",
       "opponent_name": "Wyatt Probus",
       "opponent_team": "Whitley County",
@@ -499,6 +559,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.09375
+    "top33_bonus_ev_shrunk": 1.3714285714285714
   }
 }

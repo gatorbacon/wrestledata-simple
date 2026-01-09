@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35140890132",
+  "name": "Nathan Highland",
+  "team": "Spring Hill High School",
+  "team_slug": "spring_hill_high_school",
+  "team_rank": null,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 104.1,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35221009132",
+      "opponent_rank": 52,
+      "opponent_name": "Bradley Asher",
+      "method": "TF 17-0 3:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35773519132",
+      "opponent_rank": 4,
+      "opponent_name": "Zac Scott",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35773519132",
+      "opponent_name": "Zac Scott",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 12,
+      "opponent_weight": 165,
+      "opponent_rank": 4,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "INDIAN CLASSIC"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35049061132",
+      "opponent_name": "Idris Qamar",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 157,
+      "opponent_rank": 70,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:38",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35221009132",
+      "opponent_name": "Bradley Asher",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 62,
+      "opponent_weight": 165,
+      "opponent_rank": 52,
+      "weight_class": "165",
+      "result": "W",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "3:00",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.975
+  }
+}

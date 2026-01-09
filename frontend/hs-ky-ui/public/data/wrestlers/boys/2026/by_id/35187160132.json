@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "35187160132",
+  "name": "Joseph Weese",
+  "team": "Oakland High School",
+  "team_slug": "oakland_high_school",
+  "team_rank": null,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 111.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35884355132",
+      "opponent_rank": 200,
+      "opponent_name": "dillon dugger",
+      "method": "Fall 1:20"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35884355132",
+      "opponent_name": "dillon dugger",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 157,
+      "opponent_rank": 200,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "vs. Oakland High School"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.065217391304348
+  }
+}

@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 120,
   "record": {
-    "overall": "0-1",
+    "overall": "1-2",
     "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 94.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -55,11 +55,41 @@
       "duration": "3:06",
       "event": "vs. Russellville",
       "mv_impact": -8.68
+    },
+    {
+      "date": "2025-12-02",
+      "opponent_id": "35175539132",
+      "opponent_name": "Eaton Morgan",
+      "opponent_team": "Goodpasture Christian School",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Goodpasture Christian School"
+    },
+    {
+      "date": "2025-12-02",
+      "opponent_id": "35044060132",
+      "opponent_name": "Santana Washington",
+      "opponent_team": "East Robertson High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "7:01",
+      "event": "vs. East Robertson High School"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6923076923076923
+    "top33_bonus_ev_shrunk": 0.9791666666666666
   }
 }

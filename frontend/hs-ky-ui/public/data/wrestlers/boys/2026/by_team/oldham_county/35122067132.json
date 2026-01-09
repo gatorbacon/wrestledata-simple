@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 170,
   "record": {
-    "overall": "0-0",
+    "overall": "3-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 114.4,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,5 +34,51 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35722340132",
+      "opponent_name": "Hannah Ratliff",
+      "opponent_team": "Prestonsburg",
+      "opponent_team_rank": 117,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35369136132",
+      "opponent_name": "Kaylee Lester",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:44",
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333419132",
+      "opponent_name": "Vivian Moyer",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 52,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:43",
+      "event": "Girls Hatfield McCoy 32 2025"
+    }
+  ]
 }

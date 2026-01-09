@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 69,
   "record": {
-    "overall": "0-0",
+    "overall": "2-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 116.1,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,5 +34,36 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-02",
+      "opponent_id": "35174918132",
+      "opponent_name": "Kooper Kenerson",
+      "opponent_team": "Goodpasture Christian School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "vs. Goodpasture Christian School"
+    },
+    {
+      "date": "2025-12-02",
+      "opponent_id": "35044194132",
+      "opponent_name": "Deven Allison",
+      "opponent_team": "East Robertson High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:03",
+      "event": "vs. East Robertson High School"
+    }
+  ]
 }

@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.380029Z",
+  "generated_at_utc": "2026-01-08T19:21:14.316967Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -299,10 +299,10 @@
       "weight": 157,
       "wrestler_id": "35908853132",
       "name": "Jack Madden",
-      "wins": 5,
+      "wins": 6,
       "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.8
+      "bonus_rate": 0.833
     },
     {
       "weight": 157,
@@ -370,8 +370,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 33,
+      "losses": 46
     },
     "top33": {
       "wins": 0,
@@ -381,8 +381,20 @@
       "wins": 0,
       "losses": 6
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.879,
+      "rank": 15,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.788,
+      "rank": 12,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.091,
+      "rank": 48,
+      "rank_scope": "league"
+    }
   }
 }

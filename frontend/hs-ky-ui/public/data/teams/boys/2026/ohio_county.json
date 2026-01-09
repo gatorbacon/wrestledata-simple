@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.238171Z",
+  "generated_at_utc": "2026-01-08T19:21:14.206836Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -272,7 +272,7 @@
       "weight": 106,
       "wrestler_id": "34989021132",
       "name": "Case Smith",
-      "wins": 2,
+      "wins": 3,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
@@ -309,7 +309,7 @@
       "wrestler_id": "34989012132",
       "name": "Duncan Helm",
       "wins": 4,
-      "losses": 0,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.75
     },
@@ -390,7 +390,7 @@
       "wrestler_id": "34989022132",
       "name": "Bentley Coy",
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -451,8 +451,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 120,
+      "losses": 63
     },
     "top33": {
       "wins": 17,
@@ -462,8 +462,20 @@
       "wins": 2,
       "losses": 15
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.892,
+      "rank": 13,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.767,
+      "rank": 13,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.083,
+      "rank": 56,
+      "rank_scope": "league"
+    }
   }
 }

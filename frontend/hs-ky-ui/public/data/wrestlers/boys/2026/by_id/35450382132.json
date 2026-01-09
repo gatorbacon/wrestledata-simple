@@ -1,0 +1,114 @@
+{
+  "wrestler_id": "35450382132",
+  "name": "Apollo Partin",
+  "team": "John I. Burton",
+  "team_slug": "john_i_burton",
+  "team_rank": null,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 104.7,
+    "pin_rate": 0.667,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35513063132",
+      "opponent_rank": 72,
+      "opponent_name": "Landyn Huffman",
+      "method": "TF 15-0 1:43"
+    },
+    "worst_loss": {
+      "opponent_id": "34995984132",
+      "opponent_rank": 31,
+      "opponent_name": "Aden England",
+      "method": "Fall 2:19"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35513063132",
+      "opponent_name": "Landyn Huffman",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 55,
+      "opponent_weight": 138,
+      "opponent_rank": 72,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:43",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34995984132",
+      "opponent_name": "Aden England",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 138,
+      "opponent_rank": 31,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:19",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35640192132",
+      "opponent_name": "Cameron Fortune",
+      "opponent_team": "Harlan County",
+      "opponent_team_rank": 85,
+      "opponent_weight": 138,
+      "opponent_rank": 118,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:38",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35600402132",
+      "opponent_name": "Brandon Perry",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 105,
+      "opponent_weight": 132,
+      "opponent_rank": 128,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "Anchor Down Showdown"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.0603448275862069
+  }
+}

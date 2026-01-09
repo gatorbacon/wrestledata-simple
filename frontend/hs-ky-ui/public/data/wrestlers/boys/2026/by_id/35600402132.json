@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 128,
   "record": {
-    "overall": "5-7",
+    "overall": "6-9",
     "vs_ranked": "3-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 92.9,
     "df_plus": 91.4,
     "apr_plus": 98.8,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.6,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -68,6 +68,21 @@
       "opponent_team_rank": 29,
       "opponent_weight": 132,
       "opponent_rank": 31,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Boys Woodford County Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35363101132",
+      "opponent_name": "Honer Marti",
+      "opponent_team": "John Overton High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -196,6 +211,21 @@
       "event": "vs. Paul Laurence Dunbar"
     },
     {
+      "date": "2025-12-22",
+      "opponent_id": "36676024132",
+      "opponent_name": "Demitrius Wells",
+      "opponent_team": "Alcoa High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "vs. Alcoa High School"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35513063132",
       "opponent_name": "Landyn Huffman",
@@ -208,6 +238,21 @@
       "method": "FALL",
       "score": null,
       "duration": "0:27",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35450382132",
+      "opponent_name": "Apollo Partin",
+      "opponent_team": "John I. Burton",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
       "event": "Anchor Down Showdown"
     },
     {
@@ -229,6 +274,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4615384615384615
+    "top33_bonus_ev_shrunk": 1.3020833333333333
   }
 }

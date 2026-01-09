@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "36477146132",
+  "name": "G Farmer",
+  "team": "Gallia Academy High School",
+  "team_slug": "gallia_academy_high_school",
+  "team_rank": null,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 105.2,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "36019453132",
+      "opponent_rank": 183,
+      "opponent_name": "Aiden Friley",
+      "method": "Fall 1:28"
+    },
+    "worst_loss": {
+      "opponent_id": "35017744132",
+      "opponent_rank": 19,
+      "opponent_name": "Nathaniel Williams",
+      "method": "Fall 1:12"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-10",
+      "opponent_id": "36019453132",
+      "opponent_name": "Aiden Friley",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 52,
+      "opponent_weight": 175,
+      "opponent_rank": 183,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "vs. Gallia Academy High School"
+    },
+    {
+      "date": "2025-12-10",
+      "opponent_id": "35017744132",
+      "opponent_name": "Nathaniel Williams",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 52,
+      "opponent_weight": 175,
+      "opponent_rank": 19,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
+      "event": "vs. Gallia Academy High School"
+    }
+  ]
+}

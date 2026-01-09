@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "36230036132",
+  "name": "Rogan Moore",
+  "team": "Tug Valley",
+  "team_slug": "tug_valley",
+  "team_rank": null,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 98.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35909041132",
+      "opponent_rank": 114,
+      "opponent_name": "Waylon Hudson",
+      "method": "Fall 2:18"
+    },
+    "worst_loss": {
+      "opponent_id": "35122073132",
+      "opponent_rank": 17,
+      "opponent_name": "Xander Fontana",
+      "method": "Fall 2:23"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35144516132",
+      "opponent_name": "Liam Ditto",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 120,
+      "opponent_rank": 15,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:39",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35122073132",
+      "opponent_name": "Xander Fontana",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 120,
+      "opponent_rank": 17,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:23",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35909041132",
+      "opponent_name": "Waylon Hudson",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 120,
+      "opponent_weight": 120,
+      "opponent_rank": 114,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:18",
+      "event": "Boys Hatfield McCoy 32 2025"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "34976267132",
+  "name": "Dylan Wright",
+  "team": "White House Heritage High School",
+  "team_slug": "white_house_heritage_high_school",
+  "team_rank": null,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 113.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34993282132",
+      "opponent_rank": 71,
+      "opponent_name": "Parker Lowery",
+      "method": "Fall 1:57"
+    },
+    "worst_loss": {
+      "opponent_id": "35156201132",
+      "opponent_rank": 34,
+      "opponent_name": "James Williams",
+      "method": "MD 15-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34993868132",
+      "opponent_name": "Tristin Davis",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 82,
+      "opponent_weight": 150,
+      "opponent_rank": 173,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:35",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34993282132",
+      "opponent_name": "Parker Lowery",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 68,
+      "opponent_weight": 157,
+      "opponent_rank": 71,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:57",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35156201132",
+      "opponent_name": "James Williams",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 49,
+      "opponent_weight": 157,
+      "opponent_rank": 34,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "15-6",
+      "duration": "7:00",
+      "event": "5th Annual Cardinal Clash"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.065217391304348
+  }
+}

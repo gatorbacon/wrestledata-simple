@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:14.638869Z",
+  "generated_at_utc": "2026-01-08T19:21:13.771032Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -335,10 +335,10 @@
       "weight": 138,
       "wrestler_id": "34997614132",
       "name": "Eli Troglen",
-      "wins": 2,
+      "wins": 4,
       "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.5
+      "bonus_rate": 0.75
     },
     {
       "weight": 138,
@@ -362,10 +362,10 @@
       "weight": 157,
       "wrestler_id": "34997620132",
       "name": "Hunter Pitman",
-      "wins": 6,
-      "losses": 6,
+      "wins": 8,
+      "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.667
+      "bonus_rate": 0.75
     },
     {
       "weight": 157,
@@ -478,8 +478,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 191,
+      "losses": 89
     },
     "top33": {
       "wins": 31,
@@ -489,8 +489,20 @@
       "wins": 1,
       "losses": 13
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.838,
+      "rank": 30,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.571,
+      "rank": 121,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.194,
+      "rank": 4,
+      "rank_scope": "league"
+    }
   }
 }

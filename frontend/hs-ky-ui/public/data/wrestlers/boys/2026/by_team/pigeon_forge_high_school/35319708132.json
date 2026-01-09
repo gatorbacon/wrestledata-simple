@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35319708132",
+  "name": "Jesse Arnold",
+  "team": "Pigeon Forge High School",
+  "team_slug": "pigeon_forge_high_school",
+  "team_rank": null,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 103.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35885327132",
+      "opponent_rank": 64,
+      "opponent_name": "zachart smith",
+      "method": "Fall 1:56"
+    },
+    "worst_loss": {
+      "opponent_id": "34992805132",
+      "opponent_rank": 5,
+      "opponent_name": "Jax Crowe",
+      "method": "Fall 0:30"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34992805132",
+      "opponent_name": "Jax Crowe",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 190,
+      "opponent_rank": 5,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Bill Brimer Brawl in the Hall 2026"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35885327132",
+      "opponent_name": "zachart smith",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 215,
+      "opponent_rank": 64,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "vs. Pigeon Forge High School"
+    }
+  ]
+}

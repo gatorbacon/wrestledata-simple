@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:14.573473Z",
+  "generated_at_utc": "2026-01-08T19:21:13.724276Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -224,6 +224,24 @@
       "bonus_rate": 0.0
     },
     {
+      "weight": 132,
+      "wrestler_id": "35662973132",
+      "name": "Kayleanna Claudio",
+      "wins": 1,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35662979132",
+      "name": "Mariah Travis",
+      "wins": 2,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
       "weight": 215,
       "wrestler_id": "35643249132",
       "name": "Sawyer Lange",
@@ -280,8 +298,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 12,
+      "losses": 30
     },
     "top33": {
       "wins": 0,
@@ -291,8 +309,20 @@
       "wins": 0,
       "losses": 2
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.917,
+      "rank": 7,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.833,
+      "rank": 5,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.0,
+      "rank": 130,
+      "rank_scope": "league"
+    }
   }
 }

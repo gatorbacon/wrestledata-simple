@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 44,
   "record": {
-    "overall": "11-8",
+    "overall": "14-8",
     "vs_ranked": "11-8",
     "vs_top10": "0-1",
     "vs_top25": "0-6"
@@ -20,11 +20,11 @@
     "si_plus": 97.8,
     "df_plus": 99.5,
     "apr_plus": 103.5,
-    "pin_rate": 0.727,
-    "bonus_rate": 0.818,
+    "pin_rate": 0.714,
+    "bonus_rate": 0.786,
     "majors": 0,
     "techs": 1,
-    "pins": 8
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 11,
@@ -175,6 +175,21 @@
     },
     {
       "date": "2025-12-20",
+      "opponent_id": "35278132132",
+      "opponent_name": "Kaidence Hoosier",
+      "opponent_team": "Patrick Henry (Roanoke)",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "35732597132",
       "opponent_name": "Liam May",
       "opponent_team": "Martin County",
@@ -188,6 +203,36 @@
       "duration": "7:00",
       "event": "Bobby Bates Wrestling Classic",
       "mv_impact": -0.67
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35188616132",
+      "opponent_name": "Lucas Cox",
+      "opponent_team": "John S. Battle",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:06",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35268681132",
+      "opponent_name": "Cole Fleenor",
+      "opponent_team": "Central (Wise)",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Bobby Bates Wrestling Classic"
     },
     {
       "date": "2025-12-16",
@@ -353,6 +398,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.6923076923076923
+    "top33_bonus_ev_shrunk": 0.9791666666666666
   }
 }

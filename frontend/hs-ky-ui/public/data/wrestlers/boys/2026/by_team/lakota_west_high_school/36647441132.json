@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "36647441132",
+  "name": "Navraj Atwal",
+  "team": "Lakota West High School",
+  "team_slug": "lakota_west_high_school",
+  "team_rank": null,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 105.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34997723132",
+      "opponent_rank": 90,
+      "opponent_name": "Colton Good",
+      "method": "Fall 3:51"
+    },
+    "worst_loss": {
+      "opponent_id": "34992803132",
+      "opponent_rank": 1,
+      "opponent_name": "Micah Thompson",
+      "method": "TF 15-0 2:49"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34997723132",
+      "opponent_name": "Colton Good",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 79,
+      "opponent_weight": 165,
+      "opponent_rank": 90,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:51",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34992803132",
+      "opponent_name": "Micah Thompson",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 165,
+      "opponent_rank": 1,
+      "weight_class": "165",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:49",
+      "event": "SWOWCA"
+    }
+  ]
+}

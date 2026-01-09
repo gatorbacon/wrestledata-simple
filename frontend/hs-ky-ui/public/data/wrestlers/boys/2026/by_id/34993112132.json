@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "34993112132",
+  "name": "Samson Dobbs",
+  "team": "Toombs County",
+  "team_slug": "toombs_county",
+  "team_rank": null,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 95.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35001144132",
+      "opponent_rank": 7,
+      "opponent_name": "Derrick Johnson",
+      "method": "Dec 15-11"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35001144132",
+      "opponent_name": "Derrick Johnson",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 14,
+      "opponent_weight": 144,
+      "opponent_rank": 7,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "15-11",
+      "duration": "7:00",
+      "event": "vs. Toombs County"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35144512132",
+      "opponent_name": "Joseph Kresel",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 144,
+      "opponent_rank": 17,
+      "weight_class": "144",
+      "result": "W",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. Toombs County"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 0.5,
+    "top33_bonus_ev_shrunk": 1.1580645161290322
+  }
+}

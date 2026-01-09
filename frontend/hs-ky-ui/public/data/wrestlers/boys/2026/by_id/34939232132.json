@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "34939232132",
+  "name": "Luke Covan",
+  "team": "Grissom Hs",
+  "team_slug": "grissom_hs",
+  "team_rank": null,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 111.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35133608132",
+      "opponent_rank": 58,
+      "opponent_name": "Garrison Meacham",
+      "method": "Fall 1:21"
+    },
+    "worst_loss": {
+      "opponent_id": "35002887132",
+      "opponent_rank": 11,
+      "opponent_name": "Eithan Cassell",
+      "method": "Fall 2:55"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35002887132",
+      "opponent_name": "Eithan Cassell",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 144,
+      "opponent_rank": 11,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:55",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35133608132",
+      "opponent_name": "Garrison Meacham",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 91,
+      "opponent_weight": 144,
+      "opponent_rank": 58,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3225806451612903
+  }
+}

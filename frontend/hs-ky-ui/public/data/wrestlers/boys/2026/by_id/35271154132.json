@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35271154132",
+  "name": "Brendan Duncan",
+  "team": "Waterloo (H.S.)",
+  "team_slug": "waterloo_hs",
+  "team_rank": null,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 105.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35493607132",
+      "opponent_rank": 181,
+      "opponent_name": "Noah McDowell",
+      "method": "Fall 1:50"
+    },
+    "worst_loss": {
+      "opponent_id": "34989037132",
+      "opponent_rank": 10,
+      "opponent_name": "Jaylin Bellamy",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35493607132",
+      "opponent_name": "Noah McDowell",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 144,
+      "opponent_rank": 181,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "vs. Waterloo (H.S.)"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34989037132",
+      "opponent_name": "Jaylin Bellamy",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 150,
+      "opponent_rank": 10,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Waterloo (H.S.)"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.7631578947368421
+  }
+}

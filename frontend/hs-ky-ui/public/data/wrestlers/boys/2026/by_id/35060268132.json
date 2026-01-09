@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "35060268132",
+  "name": "Ryan Maddox",
+  "team": "Harrisburg",
+  "team_slug": "harrisburg",
+  "team_rank": null,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 111.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35684113132",
+      "opponent_rank": 163,
+      "opponent_name": "Max Clark",
+      "method": "Fall 0:30"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-17",
+      "opponent_id": "35684113132",
+      "opponent_name": "Max Clark",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 157,
+      "opponent_rank": 163,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "vs. Harrisburg"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.975
+  }
+}

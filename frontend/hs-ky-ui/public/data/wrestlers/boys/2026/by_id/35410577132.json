@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "35410577132",
+  "name": "Will Carter",
+  "team": "Greenbrier High School",
+  "team_slug": "greenbrier_high_school",
+  "team_rank": null,
+  "weight_class": 106,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 123.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35049123132",
+      "opponent_rank": 47,
+      "opponent_name": "Ryan LaMotte",
+      "method": "Fall 0:18"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35049123132",
+      "opponent_name": "Ryan LaMotte",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 106,
+      "opponent_rank": 47,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:18",
+      "event": "Bruise Brothers Brawl"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9924242424242423
+  }
+}

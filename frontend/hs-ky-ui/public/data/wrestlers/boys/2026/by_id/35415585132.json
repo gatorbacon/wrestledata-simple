@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35415585132",
+  "name": "Trey Sparks",
+  "team": "George Wythe (Wytheville)",
+  "team_slug": "george_wythe_wytheville",
+  "team_rank": null,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "2-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 127.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 2,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35732643132",
+      "opponent_rank": 9,
+      "opponent_name": "Easton Slone",
+      "method": "Fall 0:43"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35017742132",
+      "opponent_name": "Branden McGee",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 52,
+      "opponent_weight": 190,
+      "opponent_rank": 10,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:37",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35732643132",
+      "opponent_name": "Easton Slone",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 190,
+      "opponent_rank": 9,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Bobby Bates Wrestling Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.342857142857143
+  }
+}

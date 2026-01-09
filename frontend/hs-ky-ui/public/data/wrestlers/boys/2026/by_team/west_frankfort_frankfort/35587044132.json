@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35587044132",
+  "name": "Jerron Spears",
+  "team": "West Frankfort (Frankfort)",
+  "team_slug": "west_frankfort_frankfort",
+  "team_rank": null,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 87.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35002895132",
+      "opponent_rank": 85,
+      "opponent_name": "Blake Stein",
+      "method": "MD 22-11"
+    },
+    "worst_loss": {
+      "opponent_id": "35737678132",
+      "opponent_rank": 8,
+      "opponent_name": "Jacob Pyles",
+      "method": "Fall 0:42"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35002895132",
+      "opponent_name": "Blake Stein",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 165,
+      "opponent_rank": 85,
+      "weight_class": "175",
+      "result": "W",
+      "method": "MD",
+      "score": "22-11",
+      "duration": "7:00",
+      "event": "vs. West Frankfort (Frankfort)"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35737678132",
+      "opponent_name": "Jacob Pyles",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 190,
+      "opponent_rank": 8,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:42",
+      "event": "vs. West Frankfort (Frankfort)"
+    }
+  ]
+}

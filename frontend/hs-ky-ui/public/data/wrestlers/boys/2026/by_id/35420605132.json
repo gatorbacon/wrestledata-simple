@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 36,
   "record": {
-    "overall": "11-4",
+    "overall": "14-4",
     "vs_ranked": "9-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 123.3,
     "df_plus": 97.3,
     "apr_plus": 106.3,
-    "pin_rate": 0.636,
-    "bonus_rate": 0.727,
+    "pin_rate": 0.571,
+    "bonus_rate": 0.643,
     "majors": 0,
     "techs": 1,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
     "ranked_wins": 9,
@@ -88,6 +88,36 @@
       "method": "TF",
       "score": "19-3",
       "duration": "2:31",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35645526132",
+      "opponent_name": "Brayden Stables",
+      "opponent_team": "PikeView",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35548429132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "13-10",
+      "duration": "7:00",
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
@@ -226,6 +256,21 @@
       "event": "Anchor Down Showdown"
     },
     {
+      "date": "2025-12-06",
+      "opponent_id": "35013622132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "13-9",
+      "duration": "7:00",
+      "event": "Anchor Down Showdown"
+    },
+    {
       "date": "2025-11-29",
       "opponent_id": "34995991132",
       "opponent_name": "Gabe Miller",
@@ -274,6 +319,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9
+    "top33_bonus_ev_shrunk": 1.065217391304348
   }
 }

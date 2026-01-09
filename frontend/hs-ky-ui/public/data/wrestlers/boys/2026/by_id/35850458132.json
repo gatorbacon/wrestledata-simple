@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 50,
   "record": {
-    "overall": "10-6",
+    "overall": "15-9",
     "vs_ranked": "9-6",
     "vs_top10": "0-1",
     "vs_top25": "0-3"
@@ -20,11 +20,11 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 106.2,
-    "pin_rate": 0.9,
-    "bonus_rate": 0.9,
+    "pin_rate": 0.867,
+    "bonus_rate": 0.933,
     "majors": 0,
-    "techs": 0,
-    "pins": 9
+    "techs": 1,
+    "pins": 13
   },
   "opponent_breakdown": {
     "ranked_wins": 9,
@@ -45,6 +45,21 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "36647447132",
+      "opponent_name": "Joseph Limpus",
+      "opponent_team": "Lakota West High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35122065132",
@@ -119,6 +134,111 @@
       "score": null,
       "duration": "5:50",
       "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "36327497132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:17",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35508122132",
+      "opponent_name": "Logan Griffin",
+      "opponent_team": "Holston",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:43",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35268667132",
+      "opponent_name": "Brandon Crutchfield",
+      "opponent_team": "Central (Wise)",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35389925132",
+      "opponent_name": "Javan Duty",
+      "opponent_team": "Ridgeview",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35283987132",
+      "opponent_name": "Christian Schmidt",
+      "opponent_team": "Dobyns Bennett High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:59",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35137436132",
+      "opponent_name": "Ian Bear",
+      "opponent_team": "Rural Retreat",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Bobby Bates Wrestling Classic"
     },
     {
       "date": "2025-12-16",
@@ -289,6 +409,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.09375
+    "top33_bonus_ev_shrunk": 1.3714285714285714
   }
 }

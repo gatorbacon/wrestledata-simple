@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 96,
   "record": {
-    "overall": "1-2",
+    "overall": "2-2",
     "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
@@ -20,8 +20,8 @@
     "si_plus": 101.3,
     "df_plus": 102.1,
     "apr_plus": 99.3,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
     "pins": 1
@@ -92,11 +92,26 @@
       "duration": "0:00",
       "event": "vs. Fort Campbell",
       "mv_impact": -4.76
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35112262132",
+      "opponent_name": "Jadyn Anderson",
+      "opponent_team": "Northwest High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "14-9",
+      "duration": "7:00",
+      "event": "vs. Northwest High School"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8571428571428571
+    "top33_bonus_ev_shrunk": 1.0603448275862069
   }
 }

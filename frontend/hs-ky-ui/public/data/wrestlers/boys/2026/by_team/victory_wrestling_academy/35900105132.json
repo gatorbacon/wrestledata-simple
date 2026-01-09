@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35900105132",
+  "name": "Malachi Schoenecke",
+  "team": "Victory Wrestling Academy",
+  "team_slug": "victory_wrestling_academy",
+  "team_rank": null,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 103.5,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35205293132",
+      "opponent_rank": 62,
+      "opponent_name": "Jaxon Leonard",
+      "method": "TF 20-4 2:45"
+    },
+    "worst_loss": {
+      "opponent_id": "34988676132",
+      "opponent_rank": 20,
+      "opponent_name": "Deacon Harrison",
+      "method": "TF 18-3 5:22"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35283899132",
+      "opponent_name": "Caleb Roth",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 73,
+      "opponent_weight": 150,
+      "opponent_rank": 75,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:41",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35205293132",
+      "opponent_name": "Jaxon Leonard",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 150,
+      "opponent_rank": 62,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "2:45",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34988676132",
+      "opponent_name": "Deacon Harrison",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 35,
+      "opponent_weight": 157,
+      "opponent_rank": 20,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "5:22",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ]
+}

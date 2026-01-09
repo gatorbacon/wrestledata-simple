@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:14.948088Z",
+  "generated_at_utc": "2026-01-08T19:21:14.000159Z",
   "starters": {
     "113": {
       "weight": 113,
@@ -245,10 +245,10 @@
       "weight": 120,
       "wrestler_id": "35137163132",
       "name": "Adam Anderson",
-      "wins": 6,
-      "losses": 8,
+      "wins": 7,
+      "losses": 9,
       "top25_wins": 0,
-      "bonus_rate": 0.833
+      "bonus_rate": 0.857
     },
     {
       "weight": 120,
@@ -264,7 +264,7 @@
       "wrestler_id": "35226529132",
       "name": "Eduardo Duran",
       "wins": 2,
-      "losses": 4,
+      "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -272,10 +272,10 @@
       "weight": 126,
       "wrestler_id": "35133606132",
       "name": "Nicholas Herrera",
-      "wins": 6,
-      "losses": 4,
+      "wins": 10,
+      "losses": 5,
       "top25_wins": 0,
-      "bonus_rate": 0.667
+      "bonus_rate": 0.8
     },
     {
       "weight": 150,
@@ -316,8 +316,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 76,
+      "losses": 63
     },
     "top33": {
       "wins": 0,
@@ -327,8 +327,20 @@
       "wins": 0,
       "losses": 10
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.592,
+      "rank": 134,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.539,
+      "rank": 128,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.039,
+      "rank": 102,
+      "rank_scope": "league"
+    }
   }
 }

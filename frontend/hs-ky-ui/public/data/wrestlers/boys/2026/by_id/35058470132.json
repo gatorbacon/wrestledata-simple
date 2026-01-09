@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35058470132",
+  "name": "Austin Glass",
+  "team": "Volunteer High School",
+  "team_slug": "volunteer_high_school",
+  "team_rank": null,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 110.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35752685132",
+      "opponent_rank": 33,
+      "opponent_name": "Maddox Bryant",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35732592132",
+      "opponent_rank": 16,
+      "opponent_name": "Parker Maynard",
+      "method": "MD 13-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35732592132",
+      "opponent_name": "Parker Maynard",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 157,
+      "opponent_rank": 16,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
+      "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35752685132",
+      "opponent_name": "Maddox Bryant",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 12,
+      "opponent_weight": 157,
+      "opponent_rank": 33,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "INDIAN CLASSIC"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.1690821256038648
+  }
+}

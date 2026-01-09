@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35363094132",
+  "name": "Donte Majors",
+  "team": "John Overton High School",
+  "team_slug": "john_overton_high_school",
+  "team_rank": null,
+  "weight_class": 113,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "3-0",
+    "vs_top10": "0-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 115.7,
+    "pin_rate": 0.667,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35599176132",
+      "opponent_rank": 16,
+      "opponent_name": "Ricky Parriman",
+      "method": "TF 17-2 0:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35599176132",
+      "opponent_name": "Ricky Parriman",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 105,
+      "opponent_weight": 113,
+      "opponent_rank": 16,
+      "weight_class": "113",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "0:00",
+      "event": "Boys Woodford County Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35190747132",
+      "opponent_name": "Kenny Jay",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 123,
+      "opponent_weight": 113,
+      "opponent_rank": 45,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Boys Woodford County Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35205295132",
+      "opponent_name": "Thomas Sang",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 113,
+      "opponent_rank": 20,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:00",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 1.75,
+    "top33_bonus_ev_shrunk": 1.4055555555555554
+  }
+}

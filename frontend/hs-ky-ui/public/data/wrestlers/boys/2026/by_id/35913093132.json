@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 160,
   "record": {
-    "overall": "3-4",
+    "overall": "4-4",
     "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 85.9,
     "df_plus": 75.2,
     "apr_plus": 93.9,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.333,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -121,6 +121,21 @@
       "event": "vs. Knott County Central"
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "35389925132",
+      "opponent_name": "Javan Duty",
+      "opponent_team": "Ridgeview",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Ridgeview"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "34995991132",
       "opponent_name": "Gabe Miller",
@@ -154,6 +169,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.09375
+    "top33_bonus_ev_shrunk": 1.3714285714285714
   }
 }

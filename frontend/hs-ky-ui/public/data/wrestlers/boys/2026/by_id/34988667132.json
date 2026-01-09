@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 139,
   "record": {
-    "overall": "1-8",
+    "overall": "2-14",
     "vs_ranked": "0-8",
     "vs_top10": "0-0",
     "vs_top25": "0-3"
@@ -20,11 +20,11 @@
     "si_plus": 85.9,
     "df_plus": 80.8,
     "apr_plus": 89.9,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -40,6 +40,36 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35004897132",
+      "opponent_name": "Jordyn Smith",
+      "opponent_team": "Robertsdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:58",
+      "event": "2025 Gulf Shores Scuffle"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35017635132",
+      "opponent_name": "Eli Sendelbach",
+      "opponent_team": "Spanish Fort",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "2025 Gulf Shores Scuffle"
+    },
     {
       "date": "2025-12-22",
       "opponent_id": "35566923132",
@@ -174,11 +204,86 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35626288132",
+      "opponent_name": "Ra`Shawn Wynn",
+      "opponent_team": "Stratford High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Frank Alexander Invite"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35410680132",
+      "opponent_name": "Warner Prater",
+      "opponent_team": "Greenbrier High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Frank Alexander Invite"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34980000132",
+      "opponent_name": "Lincoln Ersoy",
+      "opponent_team": "Eagleville High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Frank Alexander Invite"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35410615132",
+      "opponent_name": "Michael Seriana",
+      "opponent_team": "Greenbrier High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Frank Alexander Invite"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35351260132",
+      "opponent_name": "Nico Shelton",
+      "opponent_team": "Stratford High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Frank Alexander Invite"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8571428571428571
+    "top33_bonus_ev_shrunk": 1.0603448275862069
   }
 }

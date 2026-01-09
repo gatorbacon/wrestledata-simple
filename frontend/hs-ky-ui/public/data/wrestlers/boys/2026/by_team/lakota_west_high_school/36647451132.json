@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "36647451132",
+  "name": "Aurelius Vega",
+  "team": "Lakota West High School",
+  "team_slug": "lakota_west_high_school",
+  "team_rank": null,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 108.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35077756132",
+      "opponent_rank": 58,
+      "opponent_name": "Oliver Wells",
+      "method": "Fall 2:57"
+    },
+    "worst_loss": {
+      "opponent_id": "35271153132",
+      "opponent_rank": 39,
+      "opponent_name": "Parker Smith",
+      "method": "Fall 2:24"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35077756132",
+      "opponent_name": "Oliver Wells",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 37,
+      "opponent_weight": 157,
+      "opponent_rank": 58,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:57",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "35640813132",
+      "opponent_name": "Jacob Fryman",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 44,
+      "opponent_weight": 157,
+      "opponent_rank": 157,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:15",
+      "event": "SWOWCA"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "35271153132",
+      "opponent_name": "Parker Smith",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 31,
+      "opponent_weight": 157,
+      "opponent_rank": 39,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:24",
+      "event": "SWOWCA"
+    }
+  ]
+}

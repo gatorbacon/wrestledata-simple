@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35319786132",
+  "name": "Ziyobek Hbolumannopov",
+  "team": "Pigeon Forge High School",
+  "team_slug": "pigeon_forge_high_school",
+  "team_rank": null,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 86.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35886903132",
+      "opponent_rank": 190,
+      "opponent_name": "lucas barnes",
+      "method": "SV-1 16-13"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35886049132",
+      "opponent_name": "brenden little",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 132,
+      "opponent_rank": 60,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:15",
+      "event": "vs. Pigeon Forge High School"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35886903132",
+      "opponent_name": "lucas barnes",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 144,
+      "opponent_rank": 190,
+      "weight_class": "144",
+      "result": "L",
+      "method": "SV-1",
+      "score": "16-13",
+      "duration": "8:15",
+      "event": "vs. Pigeon Forge High School"
+    }
+  ]
+}

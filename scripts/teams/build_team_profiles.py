@@ -759,7 +759,13 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
                 if team_metrics_path and team_metrics_path.exists():
                     team_metrics = load_team_metrics(team_name, team_metrics_path)
                     if team_metrics:
+                        # Extract metrics from nested structure (team_metrics.metrics.*)
+                        metrics_obj = team_metrics.get("metrics", {})
+                        
                         # Extract only the fields needed for team overview
+                        # Get wins/losses from counts object (wins_included/losses_included)
+                        counts = team_metrics.get("counts", {})
+                        
                         team_data["team_metrics"] = {
                             "projected_state_points": team_metrics.get("projected_state_points"),
                             "team_rank": team_metrics.get("team_rank"),
@@ -767,8 +773,8 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
                             "advancement_points": team_metrics.get("advancement_points"),
                             "bonus_points": team_metrics.get("bonus_points"),
                             "overall": {
-                                "wins": team_metrics.get("total_wins"),
-                                "losses": team_metrics.get("total_losses"),
+                                "wins": counts.get("wins_included") or team_metrics.get("total_wins"),
+                                "losses": counts.get("losses_included") or team_metrics.get("total_losses"),
                             },
                             "top33": {
                                 "wins": None,  # Will be computed from starters
@@ -778,9 +784,10 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
                                 "wins": None,  # Will be computed from starters
                                 "losses": None,
                             },
-                            "bonus_rate": team_metrics.get("bonus_rate"),
-                            "pin_rate": team_metrics.get("pin_rate"),
-                            "tech_rate": team_metrics.get("tech_rate"),
+                            # Extract from metrics.metrics.* structure (nested objects with value/rank)
+                            "bonus_rate": metrics_obj.get("bonus_rate"),
+                            "pin_rate": metrics_obj.get("pin_rate"),
+                            "tech_rate": metrics_obj.get("tech_rate"),
                         }
                         
                         # Compute top10/top33 records from starters

@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35078576132",
+  "name": "Nathan Cochran",
+  "team": "West Creek High School",
+  "team_slug": "west_creek_high_school",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 107.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35522408132",
+      "opponent_rank": 142,
+      "opponent_name": "Brayden Swinford",
+      "method": "Fall 2:31"
+    },
+    "worst_loss": {
+      "opponent_id": "35064909132",
+      "opponent_rank": 21,
+      "opponent_name": "Bruce Anderson",
+      "method": "TF 18-3 3:31"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35522408132",
+      "opponent_name": "Brayden Swinford",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 132,
+      "opponent_rank": 142,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:31",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35064909132",
+      "opponent_name": "Bruce Anderson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 93,
+      "opponent_weight": 132,
+      "opponent_rank": 21,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "3:31",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ]
+}

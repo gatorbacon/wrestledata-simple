@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35270677132",
+  "name": "Jaxon Mifflin",
+  "team": "Waterloo (H.S.)",
+  "team_slug": "waterloo_hs",
+  "team_rank": null,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 87.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35493541132",
+      "opponent_rank": 151,
+      "opponent_name": "Blaise Wilson",
+      "method": "TF 15-0 3:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34989047132",
+      "opponent_rank": 186,
+      "opponent_name": "Jordynn Davis",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34989047132",
+      "opponent_name": "Jordynn Davis",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 138,
+      "opponent_rank": 186,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Waterloo (H.S.)"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35493541132",
+      "opponent_name": "Blaise Wilson",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 144,
+      "opponent_rank": 151,
+      "weight_class": "144",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:00",
+      "event": "vs. Waterloo (H.S.)"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3225806451612903
+  }
+}

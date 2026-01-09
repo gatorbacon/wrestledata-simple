@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35586910132",
+  "name": "David Hooper",
+  "team": "West Frankfort (Frankfort)",
+  "team_slug": "west_frankfort_frankfort",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 108.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35002898132",
+      "opponent_rank": 49,
+      "opponent_name": "Ethan Gilmore",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34989042132",
+      "opponent_rank": 2,
+      "opponent_name": "Case Simmons",
+      "method": "TF 15-0 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35002898132",
+      "opponent_name": "Ethan Gilmore",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 126,
+      "opponent_rank": 49,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. West Frankfort (Frankfort)"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34989042132",
+      "opponent_name": "Case Simmons",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 120,
+      "opponent_rank": 2,
+      "weight_class": "126",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "vs. West Frankfort (Frankfort)"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3020833333333333
+  }
+}

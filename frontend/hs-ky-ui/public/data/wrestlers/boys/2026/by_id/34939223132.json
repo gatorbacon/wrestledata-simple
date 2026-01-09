@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "34939223132",
+  "name": "Kael Lancey",
+  "team": "Grissom Hs",
+  "team_slug": "grissom_hs",
+  "team_rank": null,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 103.7,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35001149132",
+      "opponent_rank": 24,
+      "opponent_name": "Jackson Holly",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "35221007132",
+      "opponent_rank": 14,
+      "opponent_name": "Donovan Rogers",
+      "method": "Fall 2:48"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35001149132",
+      "opponent_name": "Jackson Holly",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 14,
+      "opponent_weight": 157,
+      "opponent_rank": 24,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Scott Rohrer Tournament pres."
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35221007132",
+      "opponent_name": "Donovan Rogers",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 62,
+      "opponent_weight": 150,
+      "opponent_rank": 14,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35002886132",
+      "opponent_name": "Luis Nunez",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 150,
+      "opponent_rank": 57,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:24",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.7631578947368421
+  }
+}

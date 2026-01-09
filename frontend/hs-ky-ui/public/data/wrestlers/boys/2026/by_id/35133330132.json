@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35133330132",
+  "name": "Carter Brown",
+  "team": "Lafayette (Wildwood)",
+  "team_slug": "lafayette_wildwood",
+  "team_rank": null,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "2-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 112.7,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 2,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34989030132",
+      "opponent_rank": 1,
+      "opponent_name": "DJ Wilson",
+      "method": "Fall 3:17"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34989044132",
+      "opponent_name": "Rage Henderson",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 215,
+      "opponent_rank": 7,
+      "weight_class": "215",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "4:07",
+      "event": "2025 William `Red` Schmitt Holiday"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34989030132",
+      "opponent_name": "DJ Wilson",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 215,
+      "opponent_rank": 1,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:17",
+      "event": "2025 William `Red` Schmitt Holiday"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 1.75,
+    "top33_bonus_ev_shrunk": 1.1333333333333333
+  }
+}

@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.566613Z",
+  "generated_at_utc": "2026-01-08T19:21:14.449344Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -228,7 +228,7 @@
       "wrestler_id": "35597980132",
       "name": "Eli Bridges",
       "wins": 2,
-      "losses": 6,
+      "losses": 7,
       "top25_wins": 0,
       "bonus_rate": 0.5
     },
@@ -246,7 +246,7 @@
       "wrestler_id": "35597978132",
       "name": "Kaiden Poltorak",
       "wins": 3,
-      "losses": 3,
+      "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 0.667
     },
@@ -289,8 +289,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 42,
+      "losses": 27
     },
     "top33": {
       "wins": 7,
@@ -300,8 +300,20 @@
       "wins": 0,
       "losses": 2
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.69,
+      "rank": 117,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.548,
+      "rank": 126,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.119,
+      "rank": 33,
+      "rank_scope": "league"
+    }
   }
 }

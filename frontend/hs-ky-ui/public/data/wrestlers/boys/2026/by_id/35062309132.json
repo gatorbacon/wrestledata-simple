@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35062309132",
+  "name": "Logan Black",
+  "team": "Marion (H.S.)",
+  "team_slug": "marion_hs",
+  "team_rank": null,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 120.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34989054132",
+      "opponent_rank": 85,
+      "opponent_name": "Lamarrian Bufford",
+      "method": "Fall 2:30"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35281675132",
+      "opponent_name": "Christopher Lucas",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 285,
+      "opponent_rank": 88,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "vs. Marion (H.S.)"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34989054132",
+      "opponent_name": "Lamarrian Bufford",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 285,
+      "opponent_rank": 85,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
+      "event": "vs. Marion (H.S.)"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.375
+  }
+}

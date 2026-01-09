@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35616228132",
+  "name": "Jayden Mitcheff",
+  "team": "Goreville",
+  "team_slug": "goreville",
+  "team_rank": null,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 96.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35684113132",
+      "opponent_rank": 163,
+      "opponent_name": "Max Clark",
+      "method": "Fall 1:21"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-17",
+      "opponent_id": "35684113132",
+      "opponent_name": "Max Clark",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 157,
+      "opponent_rank": 163,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "vs. Goreville"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35221011132",
+      "opponent_name": "Jacob Forsythe",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 62,
+      "opponent_weight": 175,
+      "opponent_rank": 192,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "12-7",
+      "duration": "7:00",
+      "event": "vs. Goreville"
+    }
+  ]
+}

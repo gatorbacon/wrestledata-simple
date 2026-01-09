@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "35478340132",
+  "name": "Jayden ALEMAN",
+  "team": "Christopher Columbus H S",
+  "team_slug": "christopher_columbus_h_s",
+  "team_rank": null,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 123.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35732595132",
+      "opponent_rank": 22,
+      "opponent_name": "James Begley",
+      "method": "Fall 1:11"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35732595132",
+      "opponent_name": "James Begley",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 175,
+      "opponent_rank": 22,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
+      "event": "vs. Christopher Columbus H S"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.4412698412698413
+  }
+}

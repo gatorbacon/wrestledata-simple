@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35586930132",
+  "name": "Hudson Anderton",
+  "team": "West Frankfort (Frankfort)",
+  "team_slug": "west_frankfort_frankfort",
+  "team_rank": null,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 95.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35002891132",
+      "opponent_rank": 43,
+      "opponent_name": "Andy Cintron",
+      "method": "TF 16-0 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34989043132",
+      "opponent_rank": 3,
+      "opponent_name": "Josh Waufle",
+      "method": "MD 18-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35002891132",
+      "opponent_name": "Andy Cintron",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 120,
+      "opponent_rank": 43,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "vs. West Frankfort (Frankfort)"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "34989043132",
+      "opponent_name": "Josh Waufle",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 126,
+      "opponent_rank": 3,
+      "weight_class": "132",
+      "result": "L",
+      "method": "MD",
+      "score": "18-5",
+      "duration": "7:00",
+      "event": "vs. West Frankfort (Frankfort)"
+    }
+  ]
+}

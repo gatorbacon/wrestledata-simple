@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.042830Z",
+  "generated_at_utc": "2026-01-08T19:21:14.068334Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -191,10 +191,10 @@
       "weight": 165,
       "wrestler_id": "35521179132",
       "name": "Alexzander Caudill",
-      "wins": 5,
-      "losses": 5,
+      "wins": 6,
+      "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.8
+      "bonus_rate": 0.833
     }
   ],
   "team_metrics": {
@@ -208,8 +208,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 24,
+      "losses": 22
     },
     "top33": {
       "wins": 0,
@@ -219,8 +219,20 @@
       "wins": 0,
       "losses": 4
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.833,
+      "rank": 36,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.667,
+      "rank": 68,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.083,
+      "rank": 57,
+      "rank_scope": "league"
+    }
   }
 }

@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:14.677716Z",
+  "generated_at_utc": "2026-01-08T19:21:13.798939Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -273,7 +273,7 @@
       "wrestler_id": "35144366132",
       "name": "Matthew Beakes",
       "wins": 1,
-      "losses": 7,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -298,8 +298,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 57,
+      "losses": 53
     },
     "top33": {
       "wins": 8,
@@ -309,8 +309,20 @@
       "wins": 1,
       "losses": 4
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.789,
+      "rank": 60,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.684,
+      "rank": 52,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.07,
+      "rank": 66,
+      "rank_scope": "league"
+    }
   }
 }

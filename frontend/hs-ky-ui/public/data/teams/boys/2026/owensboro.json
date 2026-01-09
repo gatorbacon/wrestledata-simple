@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.261921Z",
+  "generated_at_utc": "2026-01-08T19:21:14.222339Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -291,7 +291,7 @@
       "wrestler_id": "35674145132",
       "name": "Caleb Hayden",
       "wins": 3,
-      "losses": 6,
+      "losses": 7,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -300,7 +300,7 @@
       "wrestler_id": "35674089132",
       "name": "Ajontae Swanagan",
       "wins": 5,
-      "losses": 7,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.8
     },
@@ -381,7 +381,7 @@
       "wrestler_id": "36954054132",
       "name": "Steve Lehman",
       "wins": 1,
-      "losses": 2,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -406,8 +406,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 94,
+      "losses": 62
     },
     "top33": {
       "wins": 4,
@@ -417,8 +417,20 @@
       "wins": 0,
       "losses": 4
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.638,
+      "rank": 127,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.585,
+      "rank": 113,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.032,
+      "rank": 108,
+      "rank_scope": "league"
+    }
   }
 }

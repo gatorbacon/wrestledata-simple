@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 78,
   "record": {
-    "overall": "9-10",
+    "overall": "10-11",
     "vs_ranked": "8-10",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
@@ -20,11 +20,11 @@
     "si_plus": 104.0,
     "df_plus": 89.0,
     "apr_plus": 102.8,
-    "pin_rate": 0.778,
-    "bonus_rate": 0.889,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.9,
     "majors": 0,
     "techs": 1,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
     "ranked_wins": 8,
@@ -91,6 +91,21 @@
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
+      "date": "2025-12-30",
+      "opponent_id": "35786075132",
+      "opponent_name": "Gabe Weiss",
+      "opponent_team": "PikeView",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:16",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
       "date": "2025-12-22",
       "opponent_id": "35600420132",
       "opponent_name": "Nathan Chadwell",
@@ -149,6 +164,21 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Wayne County"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35430956132",
+      "opponent_name": "Tristan Epperson",
+      "opponent_team": "Claiborne High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Claiborne High School"
     },
     {
       "date": "2025-12-18",
@@ -334,6 +364,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
+    "top33_bonus_ev_shrunk": 1.3225806451612903
   }
 }

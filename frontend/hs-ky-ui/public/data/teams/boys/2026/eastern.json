@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:14.733425Z",
+  "generated_at_utc": "2026-01-08T19:21:13.841435Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -263,7 +263,7 @@
       "weight": 144,
       "wrestler_id": "35284469132",
       "name": "Sonia Tarley",
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
       "top25_wins": 0,
       "bonus_rate": 1.0
@@ -273,7 +273,7 @@
       "wrestler_id": "35284451132",
       "name": "Analiah Parga Lujan",
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -309,7 +309,7 @@
       "wrestler_id": "35746100132",
       "name": "Ayden Sorrels",
       "wins": 5,
-      "losses": 8,
+      "losses": 9,
       "top25_wins": 0,
       "bonus_rate": 0.6
     },
@@ -361,8 +361,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 89,
+      "losses": 69
     },
     "top33": {
       "wins": 2,
@@ -372,8 +372,20 @@
       "wins": 0,
       "losses": 9
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.753,
+      "rank": 80,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.596,
+      "rank": 109,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.09,
+      "rank": 49,
+      "rank_scope": "league"
+    }
   }
 }

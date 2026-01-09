@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35119955132",
+  "name": "Evan Rector",
+  "team": "Rossview High School",
+  "team_slug": "rossview_high_school",
+  "team_rank": null,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 112.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35205296132",
+      "opponent_rank": 52,
+      "opponent_name": "John Hightower",
+      "method": "Fall 3:58"
+    },
+    "worst_loss": {
+      "opponent_id": "34989013132",
+      "opponent_rank": 31,
+      "opponent_name": "Isaiah Cook",
+      "method": "Fall 3:23"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-26",
+      "opponent_id": "35205296132",
+      "opponent_name": "John Hightower",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 84,
+      "opponent_weight": 285,
+      "opponent_rank": 52,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:58",
+      "event": "vs. Rossview High School"
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "35281675132",
+      "opponent_name": "Christopher Lucas",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 285,
+      "opponent_rank": 88,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:26",
+      "event": "vs. Rossview High School"
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "34989013132",
+      "opponent_name": "Isaiah Cook",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 47,
+      "opponent_weight": 285,
+      "opponent_rank": 31,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:23",
+      "event": "vs. Rossview High School"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.375
+  }
+}

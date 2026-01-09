@@ -53,6 +53,11 @@
             <div class="nav-item">
               <a href="/dual_predictor.html" class="nav-link">Dual Predictor</a>
             </div>
+
+            <!-- Stat Leaders -->
+            <div class="nav-item">
+              <a href="/leaderboards.html" class="nav-link">Stat Leaders</a>
+            </div>
           </div>
 
           <!-- Search (Center-Right) -->
@@ -139,6 +144,9 @@
 
             <!-- Dual Predictor (Non-expandable link) -->
             <a href="/dual_predictor.html" class="mobile-menu-item">Dual Predictor</a>
+
+            <!-- Stat Leaders (Non-expandable link) -->
+            <a href="/leaderboards.html" class="mobile-menu-item">Stat Leaders</a>
           </nav>
         </div>
       </div>

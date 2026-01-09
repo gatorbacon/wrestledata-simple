@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 196,
   "record": {
-    "overall": "4-10",
+    "overall": "6-15",
     "vs_ranked": "2-9",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
@@ -20,11 +20,11 @@
     "si_plus": 90.3,
     "df_plus": 80.8,
     "apr_plus": 93.7,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -45,6 +45,51 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35178441132",
+      "opponent_name": "William Boykin",
+      "opponent_team": "Friendship Christian School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "vs. Friendship Christian School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35187181132",
+      "opponent_name": "Ja`mycah Williamson",
+      "opponent_team": "Oakland High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:26",
+      "event": "vs. Oakland High School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35153403132",
+      "opponent_name": "Ian Dunn",
+      "opponent_team": "Wilson Central High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "vs. Wilson Central High School"
+    },
     {
       "date": "2025-12-27",
       "opponent_id": "34995971132",
@@ -167,6 +212,51 @@
     },
     {
       "date": "2025-12-12",
+      "opponent_id": "35375736132",
+      "opponent_name": "Brandon Mitchell",
+      "opponent_team": "Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:50",
+      "event": "vs. Clay"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35679596132",
+      "opponent_name": "Chris Sowards",
+      "opponent_team": "Cabell Midland",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "vs. Cabell Midland"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35319919132",
+      "opponent_name": "Meltzer Huarzaya-Vela",
+      "opponent_team": "Pigeon Forge High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "vs. Pigeon Forge High School"
+    },
+    {
+      "date": "2025-12-12",
       "opponent_id": "OUTSTATE_29a2f2257c40",
       "opponent_name": "Mathias Hills",
       "opponent_team": "Reedsville, WI",
@@ -179,6 +269,21 @@
       "score": null,
       "duration": "2:17",
       "event": "vs. Reedsville, WI"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35480026132",
+      "opponent_name": "Reyvis Soto",
+      "opponent_team": "St. John Neumann",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "1:44",
+      "event": "vs. St. John Neumann"
     },
     {
       "date": "2025-12-06",
@@ -259,6 +364,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.09375
+    "top33_bonus_ev_shrunk": 1.3714285714285714
   }
 }

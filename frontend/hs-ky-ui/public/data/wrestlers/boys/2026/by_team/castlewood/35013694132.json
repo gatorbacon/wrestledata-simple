@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35013694132",
+  "name": "Dylan King",
+  "team": "Castlewood",
+  "team_slug": "castlewood",
+  "team_rank": null,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 94.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35316151132",
+      "opponent_rank": 120,
+      "opponent_name": "Briar Baker",
+      "method": "Fall 2:17"
+    },
+    "worst_loss": {
+      "opponent_id": "35734922132",
+      "opponent_rank": 107,
+      "opponent_name": "Isaiah May",
+      "method": "Fall 2:59"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35734922132",
+      "opponent_name": "Isaiah May",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 55,
+      "opponent_weight": 190,
+      "opponent_rank": 107,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:59",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35513310132",
+      "opponent_name": "Brayden Tackett",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 55,
+      "opponent_weight": 190,
+      "opponent_rank": 99,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35316151132",
+      "opponent_name": "Briar Baker",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 190,
+      "opponent_rank": 120,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:17",
+      "event": "Anchor Down Showdown"
+    }
+  ]
+}

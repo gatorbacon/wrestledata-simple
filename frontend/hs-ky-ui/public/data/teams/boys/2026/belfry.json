@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:14.437077Z",
+  "generated_at_utc": "2026-01-08T19:21:13.623014Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -300,7 +300,7 @@
       "wrestler_id": "35513062132",
       "name": "Jayden Tilley",
       "wins": 5,
-      "losses": 7,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.4
     },
@@ -317,7 +317,7 @@
       "weight": 190,
       "wrestler_id": "35513310132",
       "name": "Brayden Tackett",
-      "wins": 1,
+      "wins": 2,
       "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 1.0
@@ -326,10 +326,10 @@
       "weight": 190,
       "wrestler_id": "35734922132",
       "name": "Isaiah May",
-      "wins": 5,
+      "wins": 6,
       "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 0.6
+      "bonus_rate": 0.667
     },
     {
       "weight": 285,
@@ -345,7 +345,7 @@
       "wrestler_id": "35735433132",
       "name": "Jayden Collins",
       "wins": 1,
-      "losses": 6,
+      "losses": 7,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -361,8 +361,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 72,
+      "losses": 62
     },
     "top33": {
       "wins": 6,
@@ -372,8 +372,20 @@
       "wins": 0,
       "losses": 2
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.569,
+      "rank": 137,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.486,
+      "rank": 135,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.014,
+      "rank": 117,
+      "rank_scope": "league"
+    }
   }
 }

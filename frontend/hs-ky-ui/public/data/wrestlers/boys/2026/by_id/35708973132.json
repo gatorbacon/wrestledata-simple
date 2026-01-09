@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 51,
   "record": {
-    "overall": "3-0",
+    "overall": "4-0",
     "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 108.9,
     "df_plus": 98.4,
     "apr_plus": 99.1,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.25,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -71,6 +71,21 @@
       "event": "vs. Johnston City"
     },
     {
+      "date": "2025-12-11",
+      "opponent_id": "35587090132",
+      "opponent_name": "Budda Loucks",
+      "opponent_team": "West Frankfort (Frankfort)",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "vs. West Frankfort (Frankfort)"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "34993295132",
       "opponent_name": "Jackson Mattingly",
@@ -89,6 +104,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 0.9924242424242423
   }
 }

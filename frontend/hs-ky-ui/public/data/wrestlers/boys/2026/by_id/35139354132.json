@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35139354132",
+  "name": "Martin Rezkalla",
+  "team": "Stewarts Creek High School",
+  "team_slug": "stewarts_creek_high_school",
+  "team_rank": null,
+  "weight_class": 106,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 111.2,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35221002132",
+      "opponent_rank": 9,
+      "opponent_name": "Ethan Klidzejs",
+      "method": "MD 16-7"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35221002132",
+      "opponent_name": "Ethan Klidzejs",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 62,
+      "opponent_weight": 106,
+      "opponent_rank": 9,
+      "weight_class": "106",
+      "result": "W",
+      "method": "MD",
+      "score": "16-7",
+      "duration": "7:00",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34988697132",
+      "opponent_name": "Malachi James",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 35,
+      "opponent_weight": 106,
+      "opponent_rank": 19,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:27",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 1.5,
+    "top33_bonus_ev_shrunk": 1.0939393939393938
+  }
+}

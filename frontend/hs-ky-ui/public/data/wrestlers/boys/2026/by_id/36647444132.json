@@ -1,0 +1,109 @@
+{
+  "wrestler_id": "36647444132",
+  "name": "Cole Lewis",
+  "team": "Lakota West High School",
+  "team_slug": "lakota_west_high_school",
+  "team_rank": null,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "4-0",
+    "vs_ranked": "4-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 106.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.75,
+    "majors": 1,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 4,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35081197132",
+      "opponent_rank": 30,
+      "opponent_name": "Trae White",
+      "method": "MD 14-2"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35180959132",
+      "opponent_name": "Preston Evans",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 67,
+      "opponent_weight": 144,
+      "opponent_rank": 141,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35081197132",
+      "opponent_name": "Trae White",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 18,
+      "opponent_weight": 144,
+      "opponent_rank": 30,
+      "weight_class": "144",
+      "result": "W",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35528663132",
+      "opponent_name": "Boone Sawyer",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": 133,
+      "opponent_weight": 144,
+      "opponent_rank": 35,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:30",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "35271246132",
+      "opponent_name": "Mason Smith",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 31,
+      "opponent_weight": 144,
+      "opponent_rank": 57,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "SWOWCA"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 1.0,
+    "top33_bonus_ev_shrunk": 1.2867383512544803
+  }
+}

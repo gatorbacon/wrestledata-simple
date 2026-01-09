@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "36647447132",
+  "name": "Joseph Limpus",
+  "team": "Lakota West High School",
+  "team_slug": "lakota_west_high_school",
+  "team_rank": null,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 100.7,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35081207132",
+      "opponent_rank": 39,
+      "opponent_name": "Mason Nord-Hodges",
+      "method": "Dec 1-0"
+    },
+    "worst_loss": {
+      "opponent_id": "35850458132",
+      "opponent_rank": 50,
+      "opponent_name": "Amos Blankenship",
+      "method": "TF 18-2 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35850458132",
+      "opponent_name": "Amos Blankenship",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 175,
+      "opponent_rank": 50,
+      "weight_class": "175",
+      "result": "L",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35081207132",
+      "opponent_name": "Mason Nord-Hodges",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 18,
+      "opponent_weight": 175,
+      "opponent_rank": 39,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34989009132",
+      "opponent_name": "Asher Mason",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 47,
+      "opponent_weight": 175,
+      "opponent_rank": 74,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "Warhawk Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3714285714285714
+  }
+}

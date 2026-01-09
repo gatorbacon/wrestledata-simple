@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 37,
   "record": {
-    "overall": "13-7",
+    "overall": "14-8",
     "vs_ranked": "4-2",
     "vs_top10": "0-2",
     "vs_top25": "1-2"
@@ -20,11 +20,11 @@
     "si_plus": 92.1,
     "df_plus": 97.9,
     "apr_plus": 111.5,
-    "pin_rate": 0.615,
-    "bonus_rate": 0.692,
+    "pin_rate": 0.643,
+    "bonus_rate": 0.714,
     "majors": 0,
     "techs": 1,
-    "pins": 8
+    "pins": 9
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
@@ -152,6 +152,21 @@
     },
     {
       "date": "2025-12-20",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Jeffersonville Classic"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "OUTSTATE_8d7a6c2d4273",
       "opponent_name": "Carter Mikels",
       "opponent_team": "Jennings County",
@@ -257,6 +272,21 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35854883132",
+      "opponent_name": "Ashton Scott",
+      "opponent_team": "Arch Bishop Moeller High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "TF",
+      "score": "22-2",
+      "duration": "4:27",
+      "event": "2025 Ryle Raider Rumble"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "OUTSTATE_68d60ca15747",
       "opponent_name": "Brayden Richardson",
       "opponent_team": "Lebanon High School",
@@ -349,6 +379,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0
+    "top33_bonus_ev_shrunk": 0.9924242424242423
   }
 }

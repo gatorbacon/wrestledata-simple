@@ -204,13 +204,17 @@ async function loadTeam(teamSlug) {
           wrappedMetrics = teamMetrics;
         } else {
           // Wrap flat structure
+          // Extract wins/losses from overall object (set by build_team_profiles.py)
+          const overallWins = teamMetrics.overall?.wins;
+          const overallLosses = teamMetrics.overall?.losses;
+          
           wrappedMetrics = {
             metrics: teamMetrics,
             counts: {
-              wins_included: teamMetrics.overall?.wins || 0,
-              losses_included: teamMetrics.overall?.losses || 0,
-              win_pct: teamMetrics.overall?.wins && teamMetrics.overall?.losses 
-                ? teamMetrics.overall.wins / (teamMetrics.overall.wins + teamMetrics.overall.losses)
+              wins_included: overallWins !== null && overallWins !== undefined ? overallWins : 0,
+              losses_included: overallLosses !== null && overallLosses !== undefined ? overallLosses : 0,
+              win_pct: (overallWins !== null && overallWins !== undefined && overallLosses !== null && overallLosses !== undefined && (overallWins + overallLosses) > 0)
+                ? overallWins / (overallWins + overallLosses)
                 : null
             }
           };

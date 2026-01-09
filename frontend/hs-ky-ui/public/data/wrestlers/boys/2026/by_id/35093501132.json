@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 147,
   "record": {
-    "overall": "2-12",
+    "overall": "3-13",
     "vs_ranked": "0-12",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 98.7,
     "df_plus": 80.8,
     "apr_plus": 88.9,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -236,6 +236,21 @@
       "event": "vs. Paul Laurence Dunbar"
     },
     {
+      "date": "2025-12-22",
+      "opponent_id": "35430956132",
+      "opponent_name": "Tristan Epperson",
+      "opponent_team": "Claiborne High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Claiborne High School"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35599171132",
       "opponent_name": "Noah Metz",
@@ -249,11 +264,26 @@
       "score": null,
       "duration": "1:00",
       "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35450393132",
+      "opponent_name": "Collen Hutchinson",
+      "opponent_team": "John I. Burton",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:52",
+      "event": "Anchor Down Showdown"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
+    "top33_bonus_ev_shrunk": 1.3225806451612903
   }
 }

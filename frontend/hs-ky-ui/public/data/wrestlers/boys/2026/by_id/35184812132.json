@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35184812132",
+  "name": "Colton Clevinger",
+  "team": "Grundy",
+  "team_slug": "grundy",
+  "team_rank": null,
+  "weight_class": 106,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "3-0",
+    "vs_ranked": "3-0",
+    "vs_top10": "3-0",
+    "vs_top25": "3-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 115.6,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 0,
+    "top10_wins": 3,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35732601132",
+      "opponent_rank": 5,
+      "opponent_name": "Brody Jewell",
+      "method": "Fall 0:51"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35017756132",
+      "opponent_name": "Couper Woods",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 52,
+      "opponent_weight": 106,
+      "opponent_rank": 7,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:26",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35732601132",
+      "opponent_name": "Brody Jewell",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 106,
+      "opponent_rank": 5,
+      "weight_class": "106",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35732601132",
+      "opponent_name": "Brody Jewell",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 106,
+      "opponent_rank": 5,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "Bobby Bates Wrestling Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 3,
+    "top33_bonus_ev_raw": 1.3333333333333333,
+    "top33_bonus_ev_shrunk": 1.0853994490358125
+  }
+}

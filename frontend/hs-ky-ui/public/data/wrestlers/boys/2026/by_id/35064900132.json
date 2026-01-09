@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 39,
   "record": {
-    "overall": "22-8",
+    "overall": "23-9",
     "vs_ranked": "19-8",
     "vs_top10": "0-3",
     "vs_top25": "1-4"
@@ -20,11 +20,11 @@
     "si_plus": 105.8,
     "df_plus": 97.8,
     "apr_plus": 106.1,
-    "pin_rate": 0.636,
-    "bonus_rate": 0.864,
+    "pin_rate": 0.652,
+    "bonus_rate": 0.87,
     "majors": 1,
     "techs": 4,
-    "pins": 14
+    "pins": 15
   },
   "opponent_breakdown": {
     "ranked_wins": 19,
@@ -421,6 +421,36 @@
       "event": "Coyote Classic Wrestling Invitational"
     },
     {
+      "date": "2025-12-06",
+      "opponent_id": "35140897132",
+      "opponent_name": "elving Vera",
+      "opponent_team": "Spring Hill High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "1:43",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35133638132",
+      "opponent_name": "Abraham Tapia",
+      "opponent_team": "Watertown High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:09",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
       "date": "2025-11-29",
       "opponent_id": "35007899132",
       "opponent_name": "Daniel Carpenter",
@@ -499,6 +529,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.4444444444444444
+    "top33_bonus_ev_shrunk": 1.3978494623655913
   }
 }

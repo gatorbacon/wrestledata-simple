@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.023689Z",
+  "generated_at_utc": "2026-01-08T19:21:14.055295Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -417,7 +417,7 @@
       "wrestler_id": "35397146132",
       "name": "Christopher Scarborough",
       "wins": 4,
-      "losses": 4,
+      "losses": 7,
       "top25_wins": 0,
       "bonus_rate": 0.25
     },
@@ -460,8 +460,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 150,
+      "losses": 89
     },
     "top33": {
       "wins": 35,
@@ -471,8 +471,20 @@
       "wins": 0,
       "losses": 27
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.76,
+      "rank": 74,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.593,
+      "rank": 110,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.087,
+      "rank": 50,
+      "rank_scope": "league"
+    }
   }
 }

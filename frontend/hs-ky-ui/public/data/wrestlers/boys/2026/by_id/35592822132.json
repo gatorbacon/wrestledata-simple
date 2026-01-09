@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35592822132",
+  "name": "Cruz Neeley",
+  "team": "Father Ryan High School",
+  "team_slug": "father_ryan_high_school",
+  "team_rank": null,
+  "weight_class": 106,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 110.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35666426132",
+      "opponent_rank": 108,
+      "opponent_name": "Ryder Hopper",
+      "method": "Fall 0:43"
+    },
+    "worst_loss": {
+      "opponent_id": "35031129132",
+      "opponent_rank": 6,
+      "opponent_name": "Jackson Taylor",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35666426132",
+      "opponent_name": "Ryder Hopper",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 76,
+      "opponent_weight": 106,
+      "opponent_rank": 108,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Maher/Garstin Battle for Indy BOYS 2025"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35031129132",
+      "opponent_name": "Jackson Taylor",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 106,
+      "opponent_rank": 6,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Father Ryan High School"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.9924242424242423
+  }
+}

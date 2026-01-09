@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T12:52:15.405899Z",
+  "generated_at_utc": "2026-01-08T19:21:14.335391Z",
   "starters": {
     "113": {
       "weight": 113,
@@ -498,7 +498,7 @@
       "wrestler_id": "35663747132",
       "name": "Jamison Rogers",
       "wins": 3,
-      "losses": 6,
+      "losses": 7,
       "top25_wins": 0,
       "bonus_rate": 1.0
     }
@@ -514,8 +514,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
-      "losses": null
+      "wins": 96,
+      "losses": 37
     },
     "top33": {
       "wins": 17,
@@ -525,8 +525,20 @@
       "wins": 4,
       "losses": 5
     },
-    "bonus_rate": null,
-    "pin_rate": null,
-    "tech_rate": null
+    "bonus_rate": {
+      "value": 0.76,
+      "rank": 75,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.604,
+      "rank": 103,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.125,
+      "rank": 24,
+      "rank_scope": "league"
+    }
   }
 }

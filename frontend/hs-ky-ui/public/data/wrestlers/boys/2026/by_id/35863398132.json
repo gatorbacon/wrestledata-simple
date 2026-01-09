@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35863398132",
+  "name": "Wade Crawford",
+  "team": "Nicholas County",
+  "team_slug": "nicholas_county",
+  "team_rank": null,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.1,
+    "apr_plus": 106.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35103664132",
+      "opponent_rank": 108,
+      "opponent_name": "Patrick Oliver",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "36019587132",
+      "opponent_rank": 33,
+      "opponent_name": "Carter Stewart",
+      "method": "Fall 1:39"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-02",
+      "opponent_id": "36019587132",
+      "opponent_name": "Carter Stewart",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 52,
+      "opponent_weight": 144,
+      "opponent_rank": 33,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:39",
+      "event": "vs. Nicholas County"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35103664132",
+      "opponent_name": "Patrick Oliver",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 123,
+      "opponent_weight": 150,
+      "opponent_rank": 108,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Fallen Heroes"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.3225806451612903
+  }
+}
