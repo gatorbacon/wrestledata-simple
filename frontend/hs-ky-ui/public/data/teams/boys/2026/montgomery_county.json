@@ -14,20 +14,20 @@
     "region": "8"
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818264150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818264150",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.162368Z",
+  "generated_at_utc": "2026-01-15T13:34:37.210852Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35124897132",
       "name": "Preston Jackson",
-      "current_rank": 56,
+      "current_rank": 61,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -38,7 +38,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 6
       }
     },
     "132": {
@@ -46,42 +46,42 @@
       "wrestler_id": "35124883132",
       "name": "Daxton Baker",
       "current_rank": 15,
-      "xtp": 3.56,
+      "xtp": 3.54,
       "xtp_p": 0.7,
       "xtp_a": 1.18,
-      "xtp_b": 1.68,
+      "xtp_b": 1.66,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       },
       "top33_record": {
-        "wins": 2,
-        "losses": 3
+        "wins": 3,
+        "losses": 6
       }
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35124870132",
       "name": "Hunter Oakley",
-      "current_rank": 101,
+      "current_rank": 59,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 5
+        "losses": 6
       }
     },
     "144": {
       "weight": 144,
       "wrestler_id": "35124967132",
       "name": "Gage Williams",
-      "current_rank": 143,
+      "current_rank": 138,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -92,68 +92,50 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
-      }
-    },
-    "150": {
-      "weight": 150,
-      "wrestler_id": "35273350132",
-      "name": "Wilson Patrick",
-      "current_rank": 141,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
+        "losses": 3
       }
     },
     "157": {
       "weight": 157,
       "wrestler_id": "35124935132",
       "name": "Noah Weissbach",
-      "current_rank": 32,
-      "xtp": 1.24,
+      "current_rank": 29,
+      "xtp": 1.18,
       "xtp_p": 0.04,
       "xtp_a": 0.31,
-      "xtp_b": 0.89,
+      "xtp_b": 0.83,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 3
       },
       "top33_record": {
-        "wins": 0,
-        "losses": 2
+        "wins": 1,
+        "losses": 4
       }
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35124878132",
       "name": "Ethan Brandhorst",
-      "current_rank": 39,
+      "current_rank": 44,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       },
       "top33_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 6
       }
     },
-    "215": {
-      "weight": 215,
+    "190": {
+      "weight": 190,
       "wrestler_id": "36745416132",
       "name": "Alex McCoy",
-      "current_rank": 163,
+      "current_rank": 193,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -164,11 +146,21 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       }
     }
   },
-  "remaining": [],
+  "remaining": [
+    {
+      "weight": 144,
+      "wrestler_id": "35273350132",
+      "name": "Wilson Patrick",
+      "wins": 1,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
   "team_metrics": {
     "projected_state_points": null,
     "team_rank": {
@@ -180,29 +172,29 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 28,
-      "losses": 30
+      "wins": 40,
+      "losses": 44
     },
     "top33": {
-      "wins": 2,
-      "losses": 21
+      "wins": 4,
+      "losses": 33
     },
     "top10": {
       "wins": 0,
-      "losses": 8
+      "losses": 14
     },
     "bonus_rate": {
-      "value": 0.964,
-      "rank": 5,
+      "value": 0.875,
+      "rank": 12,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.679,
-      "rank": 58,
+      "value": 0.55,
+      "rank": 124,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.25,
+      "value": 0.3,
       "rank": 2,
       "rank_scope": "league"
     }

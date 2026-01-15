@@ -3,12 +3,12 @@
   "name": "Jonathan Cocchi",
   "team": "Caldwell County",
   "team_slug": "caldwell_county",
-  "team_rank": 62,
+  "team_rank": 66,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 40,
+  "current_rank": 52,
   "record": {
-    "overall": "8-2",
+    "overall": "11-4",
     "vs_ranked": "4-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,13 +17,13 @@
     "pf7": 25.0,
     "pa7": 21.36,
     "pd7": 3.64,
-    "si_plus": 129.4,
-    "df_plus": 77.8,
-    "apr_plus": 105.9,
-    "pin_rate": 0.625,
-    "bonus_rate": 0.75,
-    "majors": 0,
-    "techs": 1,
+    "si_plus": 126.4,
+    "df_plus": 85.2,
+    "apr_plus": 96.5,
+    "pin_rate": 0.455,
+    "bonus_rate": 0.818,
+    "majors": 1,
+    "techs": 3,
     "pins": 5
   },
   "opponent_breakdown": {
@@ -33,13 +33,88 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35013064132",
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "opponent_name": "Blaze Cook",
       "method": "Inj. [time]"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35023979132",
+      "opponent_name": "Ezekiel Wix",
+      "opponent_team": "Hendersonville High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "14-4",
+      "duration": "7:00",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35193016132",
+      "opponent_name": "Gerald Rollins",
+      "opponent_team": "Rockvale High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35027024132",
+      "opponent_name": "Pierson Harmon",
+      "opponent_team": "East Hamilton High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "3:21",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35151866132",
+      "opponent_name": "Caleb Adams",
+      "opponent_team": "Lebanon High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:14",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35119927132",
+      "opponent_name": "Richard Wheeler",
+      "opponent_team": "Rossview High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "2:15",
+      "event": "vs. Rossview High School"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35359559132",
@@ -60,9 +135,9 @@
       "opponent_id": "35226235132",
       "opponent_name": "Nick Livers",
       "opponent_team": "Nelson County",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 24,
       "opponent_weight": 157,
-      "opponent_rank": 87,
+      "opponent_rank": 69,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
@@ -75,9 +150,9 @@
       "opponent_id": "35013064132",
       "opponent_name": "Blaze Cook",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 157,
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "weight_class": "157",
       "result": "W",
       "method": "INJ",
@@ -180,15 +255,41 @@
       "opponent_id": "35489711132",
       "opponent_name": "Ryker Litchfield",
       "opponent_team": "Calloway County",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 33,
       "opponent_weight": 157,
-      "opponent_rank": 142,
+      "opponent_rank": 134,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:35",
       "event": "vs. Calloway County"
+    }
+  ],
+  "career": {
+    "career_id": "career_000370",
+    "canonical_name": "Jonathan Cocchi",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Caldwell County",
+      "record": "11-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Caldwell County",
+      "record": "22-15",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

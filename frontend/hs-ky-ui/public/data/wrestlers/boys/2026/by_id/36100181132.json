@@ -6,45 +6,157 @@
   "team_rank": 9,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 102,
+  "current_rank": 104,
   "record": {
-    "overall": "3-3",
-    "vs_ranked": "3-3",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "5-8",
+    "vs_ranked": "5-8",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 6.33,
-    "pa7": 9.0,
-    "pd7": -2.67,
-    "si_plus": 95.8,
-    "df_plus": 103.3,
-    "apr_plus": 100.2,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
-    "majors": 0,
+    "pf7": 8.4,
+    "pa7": 8.2,
+    "pd7": 0.2,
+    "si_plus": 98.8,
+    "df_plus": 104.4,
+    "apr_plus": 98.2,
+    "pin_rate": 0.6,
+    "bonus_rate": 0.8,
+    "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 3,
+    "ranked_wins": 5,
+    "ranked_losses": 8,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35909543132",
-      "opponent_rank": 97,
+      "opponent_rank": 99,
       "opponent_name": "Matthew Ridings",
       "method": "Dec 13-10"
     },
     "worst_loss": {
-      "opponent_id": "35652514132",
-      "opponent_rank": 101,
-      "opponent_name": "Alex Zeinner",
-      "method": "Fall 4:05"
+      "opponent_id": "35405498132",
+      "opponent_rank": 107,
+      "opponent_name": "Brayden Measel",
+      "method": "Dec 10-9"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35281360132",
+      "opponent_name": "Corey King",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 73,
+      "opponent_weight": 165,
+      "opponent_rank": 123,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:56",
+      "event": "vs. Dixie Heights",
+      "mv_impact": 2.54
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35405498132",
+      "opponent_name": "Brayden Measel",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 165,
+      "opponent_rank": 107,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-9",
+      "duration": "7:00",
+      "event": "vs. Grant County",
+      "mv_impact": -5.3
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35219464132",
+      "opponent_name": "Konscious Johnson",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": 93,
+      "opponent_weight": 165,
+      "opponent_rank": 74,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:54",
+      "event": "vs. Holmes",
+      "mv_impact": -6.85
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35124878132",
+      "opponent_name": "Ethan Brandhorst",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 165,
+      "opponent_rank": 44,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:44",
+      "event": "vs. Montgomery County",
+      "mv_impact": -5.31
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35663418132",
+      "opponent_name": "Noah Crisp",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 14,
+      "opponent_weight": 165,
+      "opponent_rank": 6,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "vs. Ryle",
+      "mv_impact": -2.14
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35405498132",
+      "opponent_name": "Brayden Measel",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 165,
+      "opponent_rank": 107,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MD",
+      "score": "14-4",
+      "duration": "7:00",
+      "event": "vs. Grant County",
+      "mv_impact": 1.7
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34993738132",
+      "opponent_name": "Owen Northcutt",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 165,
+      "opponent_rank": 26,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harrison County",
+      "mv_impact": -3.7
+    },
     {
       "date": "2025-12-26",
       "opponent_id": "34988560132",
@@ -52,14 +164,14 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": 51,
+      "opponent_rank": 48,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -2.34
+      "mv_impact": -2.57
     },
     {
       "date": "2025-12-26",
@@ -68,30 +180,30 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 165,
-      "opponent_rank": 140,
+      "opponent_rank": 137,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:28",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": 2.06
+      "mv_impact": 2.23
     },
     {
       "date": "2025-12-26",
       "opponent_id": "35909543132",
       "opponent_name": "Matthew Ridings",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 165,
-      "opponent_rank": 97,
+      "opponent_rank": 99,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "13-10",
       "duration": "7:00",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": 2.88
+      "mv_impact": 2.54
     },
     {
       "date": "2025-12-12",
@@ -100,14 +212,14 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 165,
-      "opponent_rank": 140,
+      "opponent_rank": 137,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:32",
       "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": 2.06
+      "mv_impact": 2.23
     },
     {
       "date": "2025-12-12",
@@ -116,35 +228,47 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 165,
-      "opponent_rank": 98,
+      "opponent_rank": 100,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
       "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": -5.24
+      "mv_impact": -5.86
     },
     {
       "date": "2025-12-12",
       "opponent_id": "35652514132",
       "opponent_name": "Alex Zeinner",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 165,
-      "opponent_rank": 101,
+      "opponent_rank": 103,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:05",
       "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": -7.79
+      "mv_impact": -8.15
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  "career": {
+    "career_id": "career_004957",
+    "canonical_name": "Brennon Long",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Cooper",
+      "record": "5-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

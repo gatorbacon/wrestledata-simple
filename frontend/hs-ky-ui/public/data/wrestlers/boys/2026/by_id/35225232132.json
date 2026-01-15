@@ -3,43 +3,43 @@
   "name": "Landon Mahan",
   "team": "Scott",
   "team_slug": "scott",
-  "team_rank": 122,
+  "team_rank": 124,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 79,
+  "current_rank": 72,
   "record": {
-    "overall": "3-7",
-    "vs_ranked": "3-7",
+    "overall": "4-7",
+    "vs_ranked": "4-7",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 11.02,
-    "pa7": 5.74,
-    "pd7": 5.27,
-    "si_plus": 103.1,
-    "df_plus": 107.8,
-    "apr_plus": 95.0,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.667,
+    "pf7": 10.17,
+    "pa7": 6.09,
+    "pd7": 4.08,
+    "si_plus": 101.8,
+    "df_plus": 107.5,
+    "apr_plus": 93.9,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35281297132",
-      "opponent_rank": 80,
+      "opponent_rank": 75,
       "opponent_name": "Landen Nicholas",
       "method": "Fall 2:15"
     },
     "worst_loss": {
       "opponent_id": "35045509132",
-      "opponent_rank": 76,
+      "opponent_rank": 71,
       "opponent_name": "Colton Fyffe",
       "method": "Fall 0:30"
     }
@@ -47,19 +47,35 @@
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "35520916132",
+      "opponent_name": "Isaac Mangin",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 215,
+      "opponent_rank": 97,
+      "weight_class": "215",
+      "result": "W",
+      "method": "SV-1",
+      "score": "10-8",
+      "duration": "8:15",
+      "event": "Great Crossing Individual Tournament",
+      "mv_impact": 0.91
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35051535132",
       "opponent_name": "Elijah Huff",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 215,
-      "opponent_rank": 14,
+      "opponent_rank": 12,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:22",
       "event": "Warhawk Classic",
-      "mv_impact": -3.45
+      "mv_impact": -3.36
     },
     {
       "date": "2025-12-27",
@@ -68,14 +84,14 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 215,
-      "opponent_rank": 72,
+      "opponent_rank": 70,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
       "event": "NKAC",
-      "mv_impact": -7.58
+      "mv_impact": -7.38
     },
     {
       "date": "2025-12-27",
@@ -84,46 +100,46 @@
       "opponent_team": "Cooper",
       "opponent_team_rank": 9,
       "opponent_weight": 215,
-      "opponent_rank": 60,
+      "opponent_rank": 62,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:17",
       "event": "NKAC",
-      "mv_impact": -6.12
+      "mv_impact": -6.08
     },
     {
       "date": "2025-12-27",
       "opponent_id": "35281297132",
       "opponent_name": "Landen Nicholas",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 215,
-      "opponent_rank": 80,
+      "opponent_rank": 75,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:15",
       "event": "NKAC",
-      "mv_impact": 4.29
+      "mv_impact": 5.04
     },
     {
       "date": "2025-12-27",
       "opponent_id": "35271741132",
       "opponent_name": "Jaydan Rutherford",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 30,
       "opponent_weight": 215,
-      "opponent_rank": 36,
+      "opponent_rank": 28,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:28",
       "event": "NKAC",
-      "mv_impact": -3.2
+      "mv_impact": -3.46
     },
     {
       "date": "2025-12-26",
@@ -132,83 +148,95 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 215,
-      "opponent_rank": 62,
+      "opponent_rank": 65,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:00",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -5.02
+      "mv_impact": -6.02
     },
     {
       "date": "2025-12-26",
       "opponent_id": "35521187132",
       "opponent_name": "Bennet Bowsher",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 215,
-      "opponent_rank": 124,
+      "opponent_rank": 125,
       "weight_class": "215",
       "result": "W",
       "method": "SV-1",
       "score": "13-10",
       "duration": "8:15",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -0.5
+      "mv_impact": -0.28
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34993728132",
       "opponent_name": "Brock Sexton",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 215,
-      "opponent_rank": 3,
+      "opponent_rank": 1,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:33",
       "event": "Lafayette 5 Star Tournament",
-      "mv_impact": -1.53
+      "mv_impact": -1.34
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35045509132",
       "opponent_name": "Colton Fyffe",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 17,
       "opponent_weight": 215,
-      "opponent_rank": 76,
+      "opponent_rank": 71,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
       "event": "Lafayette 5 Star Tournament",
-      "mv_impact": -6.86
+      "mv_impact": -6.7
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35281180132",
       "opponent_name": "Noah Middleton",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 215,
-      "opponent_rank": 166,
+      "opponent_rank": 164,
       "weight_class": "215",
       "result": "W",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": -0.67
+      "mv_impact": -1.22
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_005666",
+    "canonical_name": "Landon Mahan",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Scott",
+      "record": "4-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

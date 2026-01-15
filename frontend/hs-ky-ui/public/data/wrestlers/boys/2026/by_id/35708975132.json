@@ -3,23 +3,23 @@
   "name": "Bentley DeSoto",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 27,
+  "team_rank": 29,
   "weight_class": 132,
   "year": 2026,
   "current_rank": 47,
   "record": {
     "overall": "14-8",
     "vs_ranked": "4-1",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 25.0,
     "pd7": -25.0,
-    "si_plus": 87.0,
+    "si_plus": 86.9,
     "df_plus": 84.0,
-    "apr_plus": 109.9,
+    "apr_plus": 109.4,
     "pin_rate": 0.786,
     "bonus_rate": 1.0,
     "majors": 1,
@@ -30,16 +30,16 @@
     "ranked_wins": 4,
     "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35133605132",
-      "opponent_rank": 75,
+      "opponent_rank": 72,
       "opponent_name": "Kyrien Cannon",
       "method": "Fall 1:15"
     },
     "worst_loss": {
       "opponent_id": "34993277132",
-      "opponent_rank": 11,
+      "opponent_rank": 10,
       "opponent_name": "Jackson Stoner",
       "method": "TF 15-0 2:07"
     }
@@ -110,7 +110,7 @@
       "opponent_id": "34988693132",
       "opponent_name": "Kian Bradley",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 132,
       "opponent_rank": 79,
       "weight_class": "132",
@@ -118,47 +118,44 @@
       "method": "FALL",
       "score": null,
       "duration": "3:52",
-      "event": "Christian County Invitational",
-      "mv_impact": 5.23
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34993277132",
       "opponent_name": "Jackson Stoner",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 71,
       "opponent_weight": 132,
-      "opponent_rank": 11,
+      "opponent_rank": 10,
       "weight_class": "132",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "2:07",
-      "event": "Christian County Invitational",
-      "mv_impact": -1.52
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35133605132",
       "opponent_name": "Kyrien Cannon",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 132,
-      "opponent_rank": 75,
+      "opponent_rank": 72,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:15",
-      "event": "Christian County Invitational",
-      "mv_impact": 5.77
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-22",
       "opponent_id": "34988693132",
       "opponent_name": "Kian Bradley",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 132,
       "opponent_rank": 79,
       "weight_class": "132",
@@ -166,8 +163,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:01",
-      "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 5.23
+      "event": "Fort Campbell Region 1 JV Regions"
     },
     {
       "date": "2025-12-20",
@@ -201,21 +197,6 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "35434908132",
-      "opponent_name": "Will Bortner",
-      "opponent_team": "Jackson",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "3:15",
-      "event": "Cape Central Tiger Classic"
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "35393702132",
       "opponent_name": "Zach Orange",
       "opponent_team": "Anna (A.-Jonesboro)",
@@ -230,20 +211,34 @@
       "event": "Cape Central Tiger Classic"
     },
     {
+      "date": "2025-12-20",
+      "opponent_id": "35434908132",
+      "opponent_name": "Will Bortner",
+      "opponent_team": "Jackson",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:15",
+      "event": "Cape Central Tiger Classic"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35493617132",
       "opponent_name": "William Petersen",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 132,
-      "opponent_rank": 118,
+      "opponent_rank": 116,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Paducah Tilghman",
-      "mv_impact": 2.23
+      "event": "vs. Paducah Tilghman"
     },
     {
       "date": "2025-12-13",
@@ -381,9 +376,21 @@
       "event": "Blackhorse Invitational"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_005601",
+    "canonical_name": "Bentley DeSoto",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Paducah Tilghman",
+      "record": "14-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

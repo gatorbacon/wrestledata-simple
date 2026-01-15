@@ -6,60 +6,209 @@
   "team_rank": 9,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 118,
+  "current_rank": 128,
   "record": {
-    "overall": "2-8",
-    "vs_ranked": "2-8",
+    "overall": "7-13",
+    "vs_ranked": "3-13",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 0.42,
-    "pa7": 9.7,
-    "pd7": -9.27,
-    "si_plus": 89.1,
-    "df_plus": 101.3,
-    "apr_plus": 96.5,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pf7": 0.62,
+    "pa7": 12.13,
+    "pd7": -11.52,
+    "si_plus": 87.8,
+    "df_plus": 97.4,
+    "apr_plus": 97.9,
+    "pin_rate": 0.714,
+    "bonus_rate": 0.857,
     "majors": 0,
-    "techs": 0,
-    "pins": 2
+    "techs": 1,
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 8,
+    "ranked_wins": 3,
+    "ranked_losses": 13,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35119498132",
-      "opponent_rank": 88,
+      "opponent_rank": 100,
       "opponent_name": "Blake Johnson",
       "method": "Fall 3:23"
     },
     "worst_loss": {
       "opponent_id": "35119498132",
-      "opponent_rank": 88,
+      "opponent_rank": 100,
       "opponent_name": "Blake Johnson",
       "method": "Fall 1:30"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35281292132",
+      "opponent_name": "Henry Morales",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 73,
+      "opponent_weight": 190,
+      "opponent_rank": 33,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:33",
+      "event": "vs. Dixie Heights"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35405500132",
+      "opponent_name": "Gunner Patrick",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 190,
+      "opponent_rank": 47,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:49",
+      "event": "vs. Grant County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Holmes"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36745416132",
+      "opponent_name": "Alex McCoy",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 190,
+      "opponent_rank": 193,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "vs. Montgomery County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35663772132",
+      "opponent_name": "Anthony Kemper",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 14,
+      "opponent_weight": 190,
+      "opponent_rank": 44,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Ryle"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35405500132",
+      "opponent_name": "Gunner Patrick",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 190,
+      "opponent_rank": 47,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Grant County"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35651920132",
+      "opponent_name": "Daniel Switzer",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 190,
+      "opponent_rank": 19,
+      "weight_class": "190",
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "0:00",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "36647459132",
+      "opponent_name": "Rayan Tarhouni",
+      "opponent_team": "Lakota West High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:39",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_51286656cf53",
+      "opponent_name": "James South",
+      "opponent_team": "South Dearborn",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "4:37",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_4b8dd198e13b",
+      "opponent_name": "Lucas Oberting",
+      "opponent_team": "South Dearborn",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:45",
+      "event": "2026 CIWT"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35281292132",
       "opponent_name": "Henry Morales",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 190,
-      "opponent_rank": 36,
+      "opponent_rank": 33,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:38",
-      "event": "2026 CIWT",
-      "mv_impact": -3.33
+      "event": "2026 CIWT"
     },
     {
       "date": "2025-12-26",
@@ -68,37 +217,35 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 190,
-      "opponent_rank": 88,
+      "opponent_rank": 100,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -7.78
+      "event": "Region 5 JV Wrestling Tournament"
     },
     {
       "date": "2025-12-26",
       "opponent_id": "35663849132",
       "opponent_name": "Isaac Ray",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
-      "opponent_weight": 215,
-      "opponent_rank": 37,
+      "opponent_team_rank": 14,
+      "opponent_weight": 190,
+      "opponent_rank": 46,
       "weight_class": "190",
       "result": "L",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -1.42
+      "event": "Region 5 JV Wrestling Tournament"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34988698132",
       "opponent_name": "DeAsian Harris",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 190,
       "opponent_rank": 18,
       "weight_class": "190",
@@ -106,24 +253,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": -3.53
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35225264132",
       "opponent_name": "Kylen Sturgeon",
       "opponent_team": "Scott",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 124,
       "opponent_weight": 190,
-      "opponent_rank": 37,
+      "opponent_rank": 40,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": -4.2
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-12",
@@ -132,14 +277,13 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 190,
-      "opponent_rank": 88,
+      "opponent_rank": 100,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:23",
-      "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": 4.22
+      "event": "2025 JV Ryle Raider Rumble"
     },
     {
       "date": "2025-12-12",
@@ -148,46 +292,43 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 190,
-      "opponent_rank": 122,
+      "opponent_rank": 132,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:31",
-      "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": 2.16
+      "event": "2025 JV Ryle Raider Rumble"
     },
     {
       "date": "2025-12-12",
       "opponent_id": "35663262132",
       "opponent_name": "Dakota Lonkard",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 190,
-      "opponent_rank": 56,
+      "opponent_rank": 45,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:40",
-      "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": -5.84
+      "event": "2025 JV Ryle Raider Rumble"
     },
     {
       "date": "2025-12-12",
       "opponent_id": "35405500132",
       "opponent_name": "Gunner Patrick",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 86,
       "opponent_weight": 190,
-      "opponent_rank": 42,
+      "opponent_rank": 47,
       "weight_class": "190",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "0:00",
-      "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": -4.29
+      "event": "2025 JV Ryle Raider Rumble"
     },
     {
       "date": "2025-11-25",
@@ -196,19 +337,30 @@
       "opponent_team": "Calvary Christian",
       "opponent_team_rank": null,
       "opponent_weight": 175,
-      "opponent_rank": 88,
+      "opponent_rank": 58,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Cooper",
-      "mv_impact": -7.21
+      "event": "vs. Cooper"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_005318",
+    "canonical_name": "Haygen Shinkle",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Cooper",
+      "record": "7-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

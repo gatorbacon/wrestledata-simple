@@ -3,13 +3,13 @@
   "name": "Bryson Adams",
   "team": "Taylor County",
   "team_slug": "taylor_county",
-  "team_rank": 49,
-  "weight_class": 132,
+  "team_rank": 39,
+  "weight_class": 126,
   "year": 2026,
-  "current_rank": 218,
+  "current_rank": 185,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 88.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,16 +28,59 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34997721132",
+      "opponent_rank": 74,
+      "opponent_name": "Dakari McMullen",
+      "method": "Fall 1:02"
+    }
   },
-  "match_list": [],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34997721132",
+      "opponent_name": "Dakari McMullen",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 45,
+      "opponent_weight": 126,
+      "opponent_rank": 74,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:02",
+      "event": "vs. Taylor County",
+      "mv_impact": -7.79
+    }
+  ],
+  "career": {
+    "career_id": "career_002696",
+    "canonical_name": "Bryson Adams",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Taylor County",
+      "record": "0-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "Taylor County",
+      "record": "0-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

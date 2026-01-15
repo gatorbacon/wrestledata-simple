@@ -3,13 +3,13 @@
   "name": "Grayson Stine",
   "team": "Christian Academy-Louisville",
   "team_slug": "christian_academylouisville",
-  "team_rank": 66,
+  "team_rank": 26,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 184,
+  "current_rank": 177,
   "record": {
-    "overall": "2-5",
-    "vs_ranked": "0-5",
+    "overall": "2-8",
+    "vs_ranked": "0-7",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 90.5,
+    "df_plus": 102.0,
+    "apr_plus": 87.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,26 +28,56 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35567794132",
-      "opponent_rank": 87,
-      "opponent_name": "Kaiden Puckett",
-      "method": "Fall 0:00"
+      "opponent_id": "36784561132",
+      "opponent_rank": 176,
+      "opponent_name": "Grayson Smith",
+      "method": "Fall 0:24"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35542525132",
+      "opponent_name": "Evan Roe",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 157,
+      "opponent_rank": 171,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "36784561132",
+      "opponent_name": "Grayson Smith",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 165,
+      "opponent_rank": 176,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:24",
+      "event": "vs. Christian Academy-Louisville"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "34992067132",
       "opponent_name": "Greg Curtsinger",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 165,
-      "opponent_rank": 72,
+      "opponent_rank": 64,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -60,9 +90,9 @@
       "opponent_id": "35007894132",
       "opponent_name": "Javin Ewing",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 165,
-      "opponent_rank": 60,
+      "opponent_rank": 57,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -75,7 +105,7 @@
       "opponent_id": "35049796132",
       "opponent_name": "Thomas Brauer",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 25,
       "opponent_weight": 165,
       "opponent_rank": 12,
       "weight_class": "165",
@@ -107,13 +137,28 @@
       "opponent_team": "Warren Central",
       "opponent_team_rank": 134,
       "opponent_weight": 165,
-      "opponent_rank": 82,
+      "opponent_rank": 85,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:48",
       "event": "vs. Warren Central"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35542528132",
+      "opponent_name": "Omar Prudencio",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 165,
+      "opponent_rank": 163,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Christian Academy-Louisville"
     },
     {
       "date": "2025-12-23",
@@ -135,9 +180,9 @@
       "opponent_id": "35567794132",
       "opponent_name": "Kaiden Puckett",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
+      "opponent_team_rank": null,
       "opponent_weight": 165,
-      "opponent_rank": 87,
+      "opponent_rank": null,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -146,9 +191,21 @@
       "event": "vs. John Hardin"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  "career": {
+    "career_id": "career_005297",
+    "canonical_name": "Grayson Stine",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Christian Academy-Louisville",
+      "record": "2-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

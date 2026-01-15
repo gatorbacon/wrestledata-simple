@@ -8,34 +8,34 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "vs_top25": "2-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 131.3,
+    "df_plus": 102.0,
+    "apr_plus": 127.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35017745132",
-      "opponent_rank": 22,
-      "opponent_name": "Cameron Burnside",
-      "method": "Fall 1:39"
+      "opponent_id": "35752043132",
+      "opponent_rank": 14,
+      "opponent_name": "Dylan Peck",
+      "method": "Fall 0:00"
     },
     "worst_loss": null
   },
@@ -45,20 +45,30 @@
       "opponent_id": "35017745132",
       "opponent_name": "Cameron Burnside",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 215,
-      "opponent_rank": 22,
+      "opponent_rank": 21,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:39",
       "event": "vs. Shady Spring"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35752043132",
+      "opponent_name": "Dylan Peck",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 215,
+      "opponent_rank": 14,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.0925925925925926
-  }
+  ]
 }

@@ -3,43 +3,43 @@
   "name": "Amanuel Ukbay",
   "team": "Southern",
   "team_slug": "southern",
-  "team_rank": 127,
+  "team_rank": 54,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 73,
+  "current_rank": 57,
   "record": {
-    "overall": "3-7",
-    "vs_ranked": "3-7",
-    "vs_top10": "0-3",
-    "vs_top25": "0-4"
+    "overall": "4-9",
+    "vs_ranked": "3-9",
+    "vs_top10": "0-5",
+    "vs_top25": "0-6"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 102.4,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "df_plus": 102.0,
+    "apr_plus": 102.1,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
     "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 7,
+    "ranked_losses": 9,
     "top10_wins": 0,
-    "top10_losses": 3,
+    "top10_losses": 5,
     "win_over_highest_rank": {
       "opponent_id": "35144375132",
-      "opponent_rank": 75,
+      "opponent_rank": 66,
       "opponent_name": "Levi Allen",
       "method": "Fall 1:45"
     },
     "worst_loss": {
       "opponent_id": "35180955132",
-      "opponent_rank": 30,
+      "opponent_rank": 35,
       "opponent_name": "Bryston Caldwell",
       "method": "Fall 0:35"
     }
@@ -47,10 +47,25 @@
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "35205072132",
+      "opponent_name": "Max Baxter",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 22,
+      "opponent_weight": 175,
+      "opponent_rank": 5,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Southern"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35217308132",
       "opponent_name": "Riley Burton",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 190,
       "opponent_rank": 3,
       "weight_class": "190",
@@ -58,47 +73,44 @@
       "method": "FALL",
       "score": null,
       "duration": "3:15",
-      "event": "vs. Southern",
-      "mv_impact": -1.22
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "34989004132",
-      "opponent_name": "Garrison Messer",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
-      "opponent_weight": 190,
-      "opponent_rank": 6,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:23",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": -1.55
+      "event": "vs. Southern"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35180955132",
       "opponent_name": "Bryston Caldwell",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 190,
-      "opponent_rank": 30,
+      "opponent_rank": 35,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": -4.16
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34989004132",
+      "opponent_name": "Garrison Messer",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 190,
+      "opponent_rank": 7,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "5th Annual Cardinal Clash"
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35217308132",
       "opponent_name": "Riley Burton",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 190,
       "opponent_rank": 3,
       "weight_class": "190",
@@ -106,109 +118,153 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Southern",
-      "mv_impact": -1.22
+      "event": "vs. Southern"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35205061132",
+      "opponent_name": "Raiden Rios",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 22,
+      "opponent_weight": 190,
+      "opponent_rank": 20,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35144375132",
       "opponent_name": "Levi Allen",
       "opponent_team": "Desales",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 72,
       "opponent_weight": 190,
-      "opponent_rank": 75,
+      "opponent_rank": 66,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:45",
-      "event": "King of the Bluegrass",
-      "mv_impact": 3.85
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35321119132",
       "opponent_name": "Trent Pierce",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 190,
-      "opponent_rank": 28,
+      "opponent_rank": 32,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:46",
-      "event": "King of the Bluegrass",
-      "mv_impact": -3.88
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35321119132",
       "opponent_name": "Trent Pierce",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 190,
-      "opponent_rank": 28,
+      "opponent_rank": 32,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:40",
-      "event": "vs. Southern",
-      "mv_impact": -3.88
+      "event": "vs. Southern"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35248946132",
       "opponent_name": "Elliot Hood",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 190,
-      "opponent_rank": 138,
+      "opponent_rank": 145,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:40",
-      "event": "vs. Western",
-      "mv_impact": 1.5
+      "event": "vs. Western"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Central"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35248946132",
       "opponent_name": "Elliot Hood",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 190,
-      "opponent_rank": 138,
+      "opponent_rank": 145,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:20",
-      "event": "Screamin` Eagles Classic",
-      "mv_impact": 1.5
+      "event": "Screamin` Eagles Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35051529132",
       "opponent_name": "Braylen Livingston",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 190,
-      "opponent_rank": 17,
+      "opponent_rank": 9,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "Screamin` Eagles Classic",
-      "mv_impact": -2.58
+      "event": "Screamin` Eagles Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_002576",
+    "canonical_name": "Amanuel Ukbay",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Southern",
+      "record": "4-9",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Southern",
+      "record": "4-10",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

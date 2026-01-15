@@ -3,43 +3,78 @@
   "name": "Aiden Zuniga",
   "team": "Taylor County",
   "team_slug": "taylor_county",
-  "team_rank": 49,
+  "team_rank": 39,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 12,
+  "current_rank": 10,
   "record": {
-    "overall": "10-0",
-    "vs_ranked": "8-0",
-    "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "overall": "11-1",
+    "vs_ranked": "9-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
-    "pf7": 15.0,
-    "pa7": 9.5,
-    "pd7": 5.5,
-    "si_plus": 107.0,
-    "df_plus": 104.5,
-    "apr_plus": 110.3,
-    "pin_rate": 0.7,
-    "bonus_rate": 0.7,
+    "pf7": 12.0,
+    "pa7": 8.67,
+    "pd7": 3.33,
+    "si_plus": 103.7,
+    "df_plus": 107.3,
+    "apr_plus": 109.8,
+    "pin_rate": 0.727,
+    "bonus_rate": 0.727,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
-    "ranked_losses": 0,
+    "ranked_wins": 9,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34993516132",
-      "opponent_rank": 19,
+      "opponent_rank": 16,
       "opponent_name": "Juan Ramirez",
       "method": "Dec 22-16"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34994786132",
+      "opponent_rank": 4,
+      "opponent_name": "Riley Sanford",
+      "method": "Dec 7-6"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35034943132",
+      "opponent_name": "Kent Hitchcock",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 45,
+      "opponent_weight": 150,
+      "opponent_rank": 157,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "vs. Taylor County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34994786132",
+      "opponent_name": "Riley Sanford",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 157,
+      "opponent_rank": 4,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-6",
+      "duration": "7:00",
+      "event": "vs. Taylor County"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "34976272132",
@@ -60,9 +95,9 @@
       "opponent_id": "35460279132",
       "opponent_name": "Ethan Pituch",
       "opponent_team": "Rowan County",
-      "opponent_team_rank": 119,
+      "opponent_team_rank": 121,
       "opponent_weight": 144,
-      "opponent_rank": 52,
+      "opponent_rank": 53,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -75,9 +110,9 @@
       "opponent_id": "34997717132",
       "opponent_name": "Joseph Reed",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 150,
-      "opponent_rank": 97,
+      "opponent_rank": 101,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -92,7 +127,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 150,
-      "opponent_rank": 183,
+      "opponent_rank": 187,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -107,7 +142,7 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 150,
-      "opponent_rank": 72,
+      "opponent_rank": 55,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -135,7 +170,7 @@
       "opponent_id": "34993741132",
       "opponent_name": "Bracken King",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 144,
       "opponent_rank": 37,
       "weight_class": "150",
@@ -150,9 +185,9 @@
       "opponent_id": "35179136132",
       "opponent_name": "Ben Peck",
       "opponent_team": "Campbellsville",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 67,
       "opponent_weight": 150,
-      "opponent_rank": 182,
+      "opponent_rank": 186,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -165,9 +200,9 @@
       "opponent_id": "35188416132",
       "opponent_name": "Alex Craven",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 101,
+      "opponent_team_rank": 103,
       "opponent_weight": 150,
-      "opponent_rank": 33,
+      "opponent_rank": 34,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -180,9 +215,9 @@
       "opponent_id": "34993516132",
       "opponent_name": "Juan Ramirez",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 150,
-      "opponent_rank": 19,
+      "opponent_rank": 16,
       "weight_class": "150",
       "result": "W",
       "method": "DEC",
@@ -191,9 +226,39 @@
       "event": "Joe Cochran State Farm HCIWT"
     }
   ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.3666666666666667
-  }
+  "career": {
+    "career_id": "career_002707",
+    "canonical_name": "Aiden Zuniga",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Taylor County",
+      "record": "12-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Taylor County",
+      "record": "19-6",
+      "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 7,
+      "team": "Taylor County",
+      "record": "15-5",
+      "regional_place": 2,
+      "state_place": null
+    }
+  ]
 }

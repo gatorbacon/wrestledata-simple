@@ -3,23 +3,23 @@
   "name": "Bryton Kerns",
   "team": "Meade County",
   "team_slug": "meade_county",
-  "team_rank": 106,
+  "team_rank": 108,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 20,
+  "current_rank": 23,
   "record": {
-    "overall": "6-4",
-    "vs_ranked": "4-2",
+    "overall": "6-5",
+    "vs_ranked": "4-3",
     "vs_top10": "0-2",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 1.0,
-    "pa7": 21.0,
-    "pd7": -20.0,
-    "si_plus": 91.1,
-    "df_plus": 88.3,
-    "apr_plus": 113.3,
+    "pf7": 1.9,
+    "pa7": 18.33,
+    "pd7": -16.43,
+    "si_plus": 91.4,
+    "df_plus": 91.3,
+    "apr_plus": 110.9,
     "pin_rate": 0.833,
     "bonus_rate": 0.833,
     "majors": 0,
@@ -28,20 +28,20 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "34993529132",
-      "opponent_rank": 27,
+      "opponent_rank": 30,
       "opponent_name": "Ryan Lumpkins",
-      "method": "Fall 0:00"
+      "method": "Fall 4:33"
     },
     "worst_loss": {
-      "opponent_id": "35077755132",
-      "opponent_rank": 3,
-      "opponent_name": "Lincoln Maynard",
-      "method": "Fall 0:00"
+      "opponent_id": "34993799132",
+      "opponent_rank": 15,
+      "opponent_name": "Noe Rodriguez",
+      "method": "Dec 9-2"
     }
   },
   "match_list": [
@@ -50,9 +50,9 @@
       "opponent_id": "35180991132",
       "opponent_name": "Presley Thomas",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 106,
-      "opponent_rank": 80,
+      "opponent_rank": 87,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -62,57 +62,72 @@
     },
     {
       "date": "2026-01-03",
+      "opponent_id": "34993799132",
+      "opponent_name": "Noe Rodriguez",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 106,
+      "opponent_rank": 15,
+      "weight_class": "106",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35051538132",
       "opponent_name": "Leland Markwell",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 106,
-      "opponent_rank": 58,
+      "opponent_rank": 63,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:41",
-      "event": "Warhawk Classic"
-    },
-    {
-      "date": "2026-01-03",
-      "opponent_id": "34993529132",
-      "opponent_name": "Ryan Lumpkins",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
-      "opponent_weight": 106,
-      "opponent_rank": 27,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Warhawk Classic"
+      "event": "Great Crossing Individual Tournament"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35077755132",
       "opponent_name": "Lincoln Maynard",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 28,
       "opponent_weight": 106,
       "opponent_rank": 3,
       "weight_class": "106",
       "result": "L",
       "method": "TF",
       "score": "21-1",
-      "duration": "0:00",
-      "event": "Warhawk Classic"
+      "duration": "2:35",
+      "event": "Great Crossing Individual Tournament"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34993529132",
+      "opponent_name": "Ryan Lumpkins",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 125,
+      "opponent_weight": 106,
+      "opponent_rank": 30,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:33",
+      "event": "Great Crossing Individual Tournament"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35046252132",
       "opponent_name": "Elnar Kamalov",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 15,
       "opponent_weight": 106,
-      "opponent_rank": 33,
+      "opponent_rank": 40,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -134,36 +149,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Male"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Western Hills"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35077755132",
-      "opponent_name": "Lincoln Maynard",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
-      "opponent_weight": 106,
-      "opponent_rank": 3,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. North Oldham"
     },
     {
       "date": "2025-12-06",
@@ -194,6 +179,53 @@
       "score": "17-1",
       "duration": "6:00",
       "event": "vs. New Albany"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35077755132",
+      "opponent_name": "Lincoln Maynard",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 28,
+      "opponent_weight": 106,
+      "opponent_rank": 3,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. North Oldham"
+    }
+  ],
+  "career": {
+    "career_id": "career_005541",
+    "canonical_name": "Bryton Kerns",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Meade County",
+      "record": "9-5",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

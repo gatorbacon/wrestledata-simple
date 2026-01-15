@@ -3,56 +3,86 @@
   "name": "Jacayden Morales",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 50,
+  "team_rank": 56,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 101,
+  "current_rank": 99,
   "record": {
-    "overall": "3-4",
-    "vs_ranked": "2-4",
+    "overall": "4-5",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 13.67,
     "pa7": 14.97,
     "pd7": -1.3,
-    "si_plus": 108.8,
-    "df_plus": 92.0,
-    "apr_plus": 90.7,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.667,
+    "si_plus": 109.8,
+    "df_plus": 91.3,
+    "apr_plus": 94.1,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 1,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35674233132",
-      "opponent_rank": 161,
-      "opponent_name": "Juan Hernandez",
-      "method": "TF 18-2 2:51"
+      "opponent_id": "35637972132",
+      "opponent_rank": 46,
+      "opponent_name": "Drake Wright",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35181249132",
-      "opponent_rank": 111,
-      "opponent_name": "Sam Spoonamore",
-      "method": "MD 15-2"
+      "opponent_id": "35638018132",
+      "opponent_rank": 179,
+      "opponent_name": "Colton Norris",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34993876132",
+      "opponent_name": "Ayden Hall",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 132,
+      "opponent_rank": 60,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Green County"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35637972132",
+      "opponent_name": "Drake Wright",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 132,
+      "opponent_rank": 46,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35526307132",
       "opponent_name": "Micah Wininger",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 132,
-      "opponent_rank": 184,
+      "opponent_rank": 171,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -67,7 +97,7 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
       "opponent_weight": 132,
-      "opponent_rank": 28,
+      "opponent_rank": 46,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "35049033132",
       "opponent_name": "Carter Bratcher",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 126,
-      "opponent_rank": 29,
+      "opponent_rank": 25,
       "weight_class": "132",
       "result": "L",
       "method": "TF",
@@ -110,9 +140,9 @@
       "opponent_id": "35674233132",
       "opponent_name": "Juan Hernandez",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 132,
-      "opponent_rank": 161,
+      "opponent_rank": 152,
       "weight_class": "132",
       "result": "W",
       "method": "TF",
@@ -125,7 +155,7 @@
       "opponent_id": "35181249132",
       "opponent_name": "Sam Spoonamore",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 138,
       "opponent_rank": 111,
       "weight_class": "138",
@@ -141,14 +171,31 @@
       "opponent_name": "Colton Norris",
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
-      "opponent_weight": 132,
-      "opponent_rank": 50,
+      "opponent_weight": 126,
+      "opponent_rank": 179,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Russell County"
+    }
+  ],
+  "career": {
+    "career_id": "career_004723",
+    "canonical_name": "Jacayden Morales",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Adair County",
+      "record": "5-5",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

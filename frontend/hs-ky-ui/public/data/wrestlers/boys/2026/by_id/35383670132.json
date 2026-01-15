@@ -3,13 +3,13 @@
   "name": "Daniel Fickas",
   "team": "Owensboro",
   "team_slug": "owensboro",
-  "team_rank": 38,
+  "team_rank": 37,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 47,
+  "current_rank": 57,
   "record": {
-    "overall": "7-2",
-    "vs_ranked": "6-2",
+    "overall": "7-4",
+    "vs_ranked": "6-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 111.6,
+    "df_plus": 102.0,
+    "apr_plus": 109.2,
     "pin_rate": 0.857,
     "bonus_rate": 0.857,
     "majors": 0,
@@ -28,31 +28,61 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 6,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34989073132",
-      "opponent_rank": 49,
+      "opponent_rank": 58,
       "opponent_name": "Caebrion Dorsett",
       "method": "Fall 1:29"
     },
     "worst_loss": {
-      "opponent_id": "35208231132",
-      "opponent_rank": 45,
-      "opponent_name": "Braxton Payne",
+      "opponent_id": "34993303132",
+      "opponent_rank": 151,
+      "opponent_name": "Noah Bonnell",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-08",
+      "opponent_id": "34993303132",
+      "opponent_name": "Noah Bonnell",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 71,
+      "opponent_weight": 138,
+      "opponent_rank": 151,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35049802132",
+      "opponent_name": "Sam Brauer",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 25,
+      "opponent_weight": 144,
+      "opponent_rank": 42,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro Catholic"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35206945132",
       "opponent_name": "Adrian Zinati",
       "opponent_team": "Adair County",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 56,
       "opponent_weight": 138,
-      "opponent_rank": 203,
+      "opponent_rank": 196,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -65,9 +95,9 @@
       "opponent_id": "35180959132",
       "opponent_name": "Preston Evans",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 144,
-      "opponent_rank": 141,
+      "opponent_rank": 135,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "34989073132",
       "opponent_name": "Caebrion Dorsett",
       "opponent_team": "North Hardin",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 51,
       "opponent_weight": 144,
-      "opponent_rank": 49,
+      "opponent_rank": 58,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -110,9 +140,9 @@
       "opponent_id": "35007895132",
       "opponent_name": "Maxwell Calloway",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 144,
-      "opponent_rank": 150,
+      "opponent_rank": 146,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -127,7 +157,7 @@
       "opponent_team": "Trinity (Whitesville)",
       "opponent_team_rank": null,
       "opponent_weight": 144,
-      "opponent_rank": 88,
+      "opponent_rank": 85,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -140,9 +170,9 @@
       "opponent_id": "35007899132",
       "opponent_name": "Daniel Carpenter",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
-      "opponent_weight": 138,
-      "opponent_rank": 183,
+      "opponent_team_rank": 38,
+      "opponent_weight": 132,
+      "opponent_rank": 185,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -153,26 +183,26 @@
     {
       "date": "2025-11-29",
       "opponent_id": "35064900132",
-      "opponent_name": "Evan Wilson",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 144,
-      "opponent_rank": 39,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:14",
-      "event": "vs. Owensboro"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35208231132",
       "opponent_name": "Braxton Payne",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 144,
-      "opponent_rank": 45,
+      "opponent_rank": 39,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -181,9 +211,30 @@
       "event": "vs. Owensboro"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_002019",
+    "canonical_name": "Daniel Fickas",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Owensboro",
+      "record": "7-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Owensboro",
+      "record": "4-10",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

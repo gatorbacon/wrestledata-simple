@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 91.4,
+    "df_plus": 102.0,
+    "apr_plus": 91.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -33,47 +33,42 @@
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34989047132",
-      "opponent_rank": 186,
-      "opponent_name": "Jordynn Davis",
-      "method": "Fall 0:49"
+      "opponent_id": "35281674132",
+      "opponent_rank": 180,
+      "opponent_name": "Zaven Branch",
+      "method": "Fall 0:30"
     }
   },
   "match_list": [
     {
       "date": "2025-12-13",
-      "opponent_id": "34989047132",
-      "opponent_name": "Jordynn Davis",
-      "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 27,
-      "opponent_weight": 138,
-      "opponent_rank": 186,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:49",
-      "event": "vs. Marion (H.S.)"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35281674132",
       "opponent_name": "Zaven Branch",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
-      "opponent_weight": 144,
-      "opponent_rank": 66,
+      "opponent_team_rank": 106,
+      "opponent_weight": 138,
+      "opponent_rank": 180,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
       "event": "vs. Marion (H.S.)"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34989047132",
+      "opponent_name": "Jordynn Davis",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 29,
+      "opponent_weight": 138,
+      "opponent_rank": 179,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "vs. Marion (H.S.)"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  ]
 }

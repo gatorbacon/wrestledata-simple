@@ -14,38 +14,38 @@
     "region": "5"
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818299150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818299150",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.489229Z",
+  "generated_at_utc": "2026-01-15T13:34:37.577294Z",
   "starters": {
     "113": {
       "weight": 113,
       "wrestler_id": "35528546132",
       "name": "Braylon Ryan",
-      "current_rank": 11,
-      "xtp": 6.14,
+      "current_rank": 12,
+      "xtp": 6.19,
       "xtp_p": 1.69,
       "xtp_a": 1.58,
-      "xtp_b": 2.87,
+      "xtp_b": 2.92,
       "top10_record": {
         "wins": 0,
         "losses": 3
       },
       "top33_record": {
         "wins": 5,
-        "losses": 4
+        "losses": 5
       }
     },
-    "132": {
-      "weight": 132,
+    "126": {
+      "weight": 126,
       "wrestler_id": "35528996132",
       "name": "Colin Brock",
-      "current_rank": 126,
+      "current_rank": 180,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -59,11 +59,11 @@
         "losses": 4
       }
     },
-    "138": {
-      "weight": 138,
-      "wrestler_id": "35528825132",
-      "name": "Zane Schwanenberger",
-      "current_rank": 168,
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35528711132",
+      "name": "Levi Tilley",
+      "current_rank": 232,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -74,32 +74,50 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35528619132",
+      "name": "Braydon Donato",
+      "current_rank": 204,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
       }
     },
     "144": {
       "weight": 144,
       "wrestler_id": "35528663132",
       "name": "Boone Sawyer",
-      "current_rank": 35,
-      "xtp": 1.11,
+      "current_rank": 33,
+      "xtp": 0.99,
       "xtp_p": 0.03,
       "xtp_a": 0.3,
-      "xtp_b": 0.78,
+      "xtp_b": 0.66,
       "top10_record": {
         "wins": 0,
         "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 4
       }
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35529017132",
       "name": "Dylan Looney",
-      "current_rank": 118,
+      "current_rank": 119,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -110,29 +128,11 @@
       },
       "top33_record": {
         "wins": 1,
-        "losses": 6
+        "losses": 7
       }
     }
   },
   "remaining": [
-    {
-      "weight": 132,
-      "wrestler_id": "35528619132",
-      "name": "Braydon Donato",
-      "wins": 0,
-      "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    {
-      "weight": 132,
-      "wrestler_id": "35528711132",
-      "name": "Levi Tilley",
-      "wins": 0,
-      "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
     {
       "weight": 138,
       "wrestler_id": "35528780132",
@@ -141,6 +141,15 @@
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35528825132",
+      "name": "Zane Schwanenberger",
+      "wins": 2,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
     }
   ],
   "team_metrics": {
@@ -154,30 +163,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 26,
-      "losses": 38
+      "wins": 29,
+      "losses": 39
     },
     "top33": {
       "wins": 6,
-      "losses": 17
+      "losses": 20
     },
     "top10": {
       "wins": 0,
       "losses": 10
     },
     "bonus_rate": {
-      "value": 0.808,
-      "rank": 45,
+      "value": 0.828,
+      "rank": 32,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.654,
-      "rank": 74,
+      "value": 0.655,
+      "rank": 70,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.115,
-      "rank": 35,
+      "value": 0.138,
+      "rank": 20,
       "rank_scope": "league"
     }
   }

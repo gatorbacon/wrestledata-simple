@@ -3,13 +3,13 @@
   "name": "Anthony Lindquist",
   "team": "Russellville",
   "team_slug": "russellville",
-  "team_rank": 121,
+  "team_rank": 123,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 197,
+  "current_rank": 145,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,24 +20,41 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35007895132",
+      "opponent_rank": 146,
+      "opponent_name": "Maxwell Calloway",
+      "method": "Fall 0:45"
+    },
     "worst_loss": null
   },
-  "match_list": [],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "match_list": [
+    {
+      "date": "2026-01-13",
+      "opponent_id": "35007895132",
+      "opponent_name": "Maxwell Calloway",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 144,
+      "opponent_rank": 146,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "vs. South Warren",
+      "mv_impact": 1.34
+    }
+  ]
 }

@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35141069132",
+  "name": "Ashlyn Garland",
+  "team": "Spring Hill High School Girls",
+  "team_slug": "spring_hill_high_school_girls",
+  "team_rank": null,
+  "weight_class": 185,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 105.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35565922132",
+      "opponent_rank": 21,
+      "opponent_name": "Trinity Lopez",
+      "method": "Fall 1:32"
+    },
+    "worst_loss": {
+      "opponent_id": "35345844132",
+      "opponent_rank": 7,
+      "opponent_name": "Virginia Stewart",
+      "method": "Fall 0:43"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35345844132",
+      "opponent_name": "Virginia Stewart",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 185,
+      "opponent_rank": 7,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Maher/Garstin Battle for Indy GIRLS 2025"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35565922132",
+      "opponent_name": "Trinity Lopez",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 40,
+      "opponent_weight": 185,
+      "opponent_rank": 21,
+      "weight_class": "G 185",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:32",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ]
+}

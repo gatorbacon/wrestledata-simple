@@ -3,51 +3,71 @@
   "name": "Rage Henderson",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 27,
+  "team_rank": 29,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 7,
+  "current_rank": 2,
   "record": {
-    "overall": "19-1",
-    "vs_ranked": "5-0",
-    "vs_top10": "0-0",
-    "vs_top25": "3-0"
+    "overall": "22-2",
+    "vs_ranked": "8-1",
+    "vs_top10": "1-1",
+    "vs_top25": "4-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 115.2,
-    "pin_rate": 0.789,
-    "bonus_rate": 0.842,
+    "pf7": 6.0,
+    "pa7": 12.0,
+    "pd7": -6.0,
+    "si_plus": 101.0,
+    "df_plus": 104.1,
+    "apr_plus": 117.4,
+    "pin_rate": 0.818,
+    "bonus_rate": 0.864,
     "majors": 1,
     "techs": 0,
-    "pins": 15
+    "pins": 18
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 0,
-    "top10_wins": 0,
-    "top10_losses": 0,
+    "ranked_wins": 8,
+    "ranked_losses": 1,
+    "top10_wins": 1,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35051535132",
-      "opponent_rank": 14,
-      "opponent_name": "Elijah Huff",
-      "method": "Fall 0:39"
+      "opponent_id": "34994866132",
+      "opponent_rank": 8,
+      "opponent_name": "steel chandler",
+      "method": "Fall 2:36"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34993728132",
+      "opponent_rank": 1,
+      "opponent_name": "Brock Sexton",
+      "method": "Dec 12-6"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34993728132",
+      "opponent_name": "Brock Sexton",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 215,
+      "opponent_rank": 1,
+      "weight_class": "215",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-6",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35081203132",
       "opponent_name": "Jackson Kincer",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 34,
       "opponent_weight": 215,
-      "opponent_rank": 23,
+      "opponent_rank": 24,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -60,14 +80,44 @@
       "opponent_id": "35051535132",
       "opponent_name": "Elijah Huff",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 215,
-      "opponent_rank": 14,
+      "opponent_rank": 12,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:39",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34994866132",
+      "opponent_name": "steel chandler",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 215,
+      "opponent_rank": 8,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34994787132",
+      "opponent_name": "John Sego",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 215,
+      "opponent_rank": 38,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:21",
       "event": "Warhawk Classic"
     },
     {
@@ -165,9 +215,9 @@
       "opponent_id": "34988691132",
       "opponent_name": "Cayden Hayden",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 215,
-      "opponent_rank": 125,
+      "opponent_rank": 126,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -180,14 +230,29 @@
       "opponent_id": "34993276132",
       "opponent_name": "Kobe Nichols",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 71,
       "opponent_weight": 215,
-      "opponent_rank": 20,
+      "opponent_rank": 17,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:36",
+      "event": "Christian County Invitational"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35281681132",
+      "opponent_name": "Dylan Crawford",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 106,
+      "opponent_weight": 215,
+      "opponent_rank": 47,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:19",
       "event": "Christian County Invitational"
     },
     {
@@ -270,9 +335,9 @@
       "opponent_id": "35281687132",
       "opponent_name": "Joseph Schaefer",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
-      "opponent_weight": 215,
-      "opponent_rank": 142,
+      "opponent_team_rank": 106,
+      "opponent_weight": 190,
+      "opponent_rank": 195,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -339,6 +404,41 @@
       "score": null,
       "duration": "0:47",
       "event": "vs. West Frankfort (Frankfort)"
+    }
+  ],
+  "career": {
+    "career_id": "career_002076",
+    "canonical_name": "Rage Henderson",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Paducah Tilghman",
+      "record": "22-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Paducah Tilghman",
+      "record": "21-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 7,
+      "team": "Paducah Tilghman",
+      "record": "14-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

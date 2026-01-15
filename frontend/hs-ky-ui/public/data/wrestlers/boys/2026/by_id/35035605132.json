@@ -3,12 +3,12 @@
   "name": "Daniel Thompson",
   "team": "Union County",
   "team_slug": "union_county",
-  "team_rank": 2,
+  "team_rank": 3,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 14,
+  "current_rank": 23,
   "record": {
-    "overall": "3-2",
+    "overall": "3-4",
     "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 124.0,
+    "df_plus": 102.0,
+    "apr_plus": 112.0,
     "pin_rate": 0.333,
     "bonus_rate": 0.667,
     "majors": 1,
@@ -40,6 +40,36 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_f52e6879cadc",
+      "opponent_name": "Ben Mitchell",
+      "opponent_team": "Lake Catholic",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35129081132",
+      "opponent_name": "Luca Kang",
+      "opponent_team": "Ravenwood High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Johnny Drennan Memorial"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35284198132",
@@ -116,9 +146,39 @@
       "event": "vs. Evansville Mater Dei"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.806878306878307
-  }
+  "career": {
+    "career_id": "career_002820",
+    "canonical_name": "Daniel Thompson",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Union County",
+      "record": "3-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Union County",
+      "record": "16-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Union County",
+      "record": "4-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

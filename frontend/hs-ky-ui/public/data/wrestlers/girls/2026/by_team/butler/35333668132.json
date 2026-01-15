@@ -3,13 +3,13 @@
   "name": "Rowyn Eskridge",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 30,
-  "weight_class": 120,
+  "team_rank": 17,
+  "weight_class": 126,
   "year": 2026,
-  "current_rank": 28,
+  "current_rank": 20,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "2-1",
+    "overall": "5-1",
+    "vs_ranked": "5-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,49 +17,97 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 104.1,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 109.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 5,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35542621132",
-      "opponent_rank": 29,
+      "opponent_rank": 45,
       "opponent_name": "Isabella Warner",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35434984132",
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "opponent_name": "Annisa Zulkarnaen",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35698111132",
+      "opponent_name": "Neveah Mason-Taylor",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 77,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:51",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 5.45
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333571132",
+      "opponent_name": "Pahola Mexidor Napoles",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 48,
+      "opponent_weight": 126,
+      "opponent_rank": 83,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 6.5
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35774461132",
+      "opponent_name": "Maliyah Caloca",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 36,
+      "opponent_weight": 126,
+      "opponent_rank": 45,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:18",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 6.21
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35542621132",
       "opponent_name": "Isabella Warner",
       "opponent_team": "Central",
-      "opponent_team_rank": 17,
-      "opponent_weight": 120,
-      "opponent_rank": 29,
+      "opponent_team_rank": 18,
+      "opponent_weight": 114,
+      "opponent_rank": 45,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": 6.71
+      "mv_impact": 4.9
     },
     {
       "date": "2025-12-13",
@@ -68,30 +116,30 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -5.08
+      "mv_impact": -5.06
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35385688132",
       "opponent_name": "Journey Holley",
       "opponent_team": "Male",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 45,
       "opponent_weight": 120,
-      "opponent_rank": 52,
+      "opponent_rank": 71,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": 5.74
+      "mv_impact": 6.0
     }
   ]
 }

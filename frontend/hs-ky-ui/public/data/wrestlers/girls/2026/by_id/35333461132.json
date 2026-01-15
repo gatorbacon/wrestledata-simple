@@ -8,7 +8,7 @@
   "year": 2026,
   "current_rank": 27,
   "record": {
-    "overall": "3-7",
+    "overall": "4-7",
     "vs_ranked": "2-6",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
@@ -17,14 +17,14 @@
     "pf7": 7.24,
     "pa7": 25.0,
     "pd7": -17.76,
-    "si_plus": 100.8,
-    "df_plus": 79.4,
-    "apr_plus": 93.7,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "si_plus": 89.1,
+    "df_plus": 72.8,
+    "apr_plus": 93.9,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -39,7 +39,7 @@
     },
     "worst_loss": {
       "opponent_id": "35333590132",
-      "opponent_rank": 38,
+      "opponent_rank": 39,
       "opponent_name": "Jossie Arroyo",
       "method": "Fall 0:00"
     }
@@ -50,7 +50,7 @@
       "opponent_id": "35521545132",
       "opponent_name": "Jaycee Bolen",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 100,
       "opponent_rank": 28,
       "weight_class": "100",
@@ -65,7 +65,7 @@
       "opponent_id": "35382369132",
       "opponent_name": "Bree Kimberlin",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 12,
       "opponent_weight": 100,
       "opponent_rank": 26,
       "weight_class": "100",
@@ -77,10 +77,25 @@
     },
     {
       "date": "2026-01-03",
+      "opponent_id": "35382374132",
+      "opponent_name": "Arya Shemwell",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 12,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:51",
+      "event": "Richey Rumble"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35598128132",
       "opponent_name": "Teresa Helm",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 100,
       "opponent_rank": 15,
       "weight_class": "100",
@@ -112,7 +127,7 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 33,
       "opponent_weight": 107,
-      "opponent_rank": 39,
+      "opponent_rank": 40,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -142,7 +157,7 @@
       "opponent_team": "John Hardin",
       "opponent_team_rank": 3,
       "opponent_weight": 107,
-      "opponent_rank": 38,
+      "opponent_rank": 39,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -155,9 +170,9 @@
       "opponent_id": "35461407132",
       "opponent_name": "Madilyn Cannon",
       "opponent_team": "Logan County",
-      "opponent_team_rank": null,
+      "opponent_team_rank": 43,
       "opponent_weight": 107,
-      "opponent_rank": 30,
+      "opponent_rank": 31,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -172,7 +187,7 @@
       "opponent_team": "Christian County",
       "opponent_team_rank": 34,
       "opponent_weight": 107,
-      "opponent_rank": 37,
+      "opponent_rank": 38,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -185,7 +200,7 @@
       "opponent_id": "35598143132",
       "opponent_name": "Sophie Parrish",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 107,
       "opponent_rank": 7,
       "weight_class": "107",
@@ -199,6 +214,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.5925925925925926
+    "top33_bonus_ev_shrunk": 1.6296296296296295
   }
 }

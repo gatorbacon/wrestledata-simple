@@ -3,13 +3,13 @@
   "name": "Brady Dunphy",
   "team": "North Hardin",
   "team_slug": "north_hardin",
-  "team_rank": 25,
+  "team_rank": 51,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 93,
+  "current_rank": 94,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "1-6",
+    "vs_ranked": "1-5",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 1.5,
     "pa7": 13.0,
     "pd7": -11.5,
-    "si_plus": 88.2,
-    "df_plus": 97.7,
-    "apr_plus": 86.0,
+    "si_plus": 87.4,
+    "df_plus": 97.4,
+    "apr_plus": 85.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,12 +28,12 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35284127132",
-      "opponent_rank": 94,
+      "opponent_rank": 96,
       "opponent_name": "Nathan Perkins",
       "method": "Dec 3-1"
     },
@@ -50,7 +50,7 @@
       "opponent_id": "35523865132",
       "opponent_name": "Cristian Gomez-Peterson",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
       "opponent_rank": 99,
       "weight_class": "165",
@@ -65,9 +65,9 @@
       "opponent_id": "35567794132",
       "opponent_name": "Kaiden Puckett",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
+      "opponent_team_rank": null,
       "opponent_weight": 165,
-      "opponent_rank": 87,
+      "opponent_rank": null,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35281608132",
       "opponent_name": "Gary Domingo",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 165,
-      "opponent_rank": 91,
+      "opponent_rank": 92,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
@@ -95,9 +95,9 @@
       "opponent_id": "35284127132",
       "opponent_name": "Nathan Perkins",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 165,
-      "opponent_rank": 94,
+      "opponent_rank": 96,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
@@ -110,9 +110,9 @@
       "opponent_id": "35524549132",
       "opponent_name": "Joplin Johnson",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 165,
-      "opponent_rank": 92,
+      "opponent_rank": 93,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35077761132",
       "opponent_name": "Rocco Jones",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 28,
       "opponent_weight": 175,
-      "opponent_rank": 92,
+      "opponent_rank": 94,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -166,9 +166,21 @@
       "event": "vs. North Oldham"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  "career": {
+    "career_id": "career_005577",
+    "canonical_name": "Brady Dunphy",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "North Hardin",
+      "record": "2-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

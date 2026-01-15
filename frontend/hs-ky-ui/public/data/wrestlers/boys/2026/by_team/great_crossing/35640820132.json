@@ -3,23 +3,23 @@
   "name": "Ashton Hackney",
   "team": "Great Crossing",
   "team_slug": "great_crossing",
-  "team_rank": 44,
+  "team_rank": 47,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 11,
+  "current_rank": 65,
   "record": {
-    "overall": "7-4",
-    "vs_ranked": "5-0",
+    "overall": "7-5",
+    "vs_ranked": "5-1",
     "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 7.0,
     "pa7": 6.0,
     "pd7": 1.0,
-    "si_plus": 96.8,
-    "df_plus": 107.5,
-    "apr_plus": 112.3,
+    "si_plus": 93.3,
+    "df_plus": 105.9,
+    "apr_plus": 107.9,
     "pin_rate": 0.857,
     "bonus_rate": 0.857,
     "majors": 0,
@@ -28,18 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35081208132",
-      "opponent_rank": 15,
+      "opponent_rank": 39,
       "opponent_name": "Frank Niyonyishu",
       "method": "Dec 7-6"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35284222132",
+      "opponent_rank": 64,
+      "opponent_name": "Tyras Hall",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35284222132",
+      "opponent_name": "Tyras Hall",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 79,
+      "opponent_weight": 190,
+      "opponent_rank": 64,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
     {
       "date": "2025-12-21",
       "opponent_id": "OUTSTATE_18005eea402e",
@@ -91,7 +111,7 @@
       "opponent_name": "Braxton Abner",
       "opponent_team": "Valley View High School",
       "opponent_team_rank": null,
-      "opponent_weight": 190,
+      "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "L",
@@ -135,9 +155,9 @@
       "opponent_id": "35510184132",
       "opponent_name": "Ryan Schwartz",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 175,
-      "opponent_rank": 193,
+      "opponent_rank": 186,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -150,9 +170,9 @@
       "opponent_id": "35081208132",
       "opponent_name": "Frank Niyonyishu",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
-      "opponent_weight": 190,
-      "opponent_rank": 15,
+      "opponent_team_rank": 34,
+      "opponent_weight": 175,
+      "opponent_rank": 39,
       "weight_class": "190",
       "result": "W",
       "method": "DEC",
@@ -165,9 +185,9 @@
       "opponent_id": "35247366132",
       "opponent_name": "Tyler Mellenkamp",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 190,
-      "opponent_rank": 65,
+      "opponent_rank": 90,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -180,9 +200,9 @@
       "opponent_id": "35563004132",
       "opponent_name": "Felix Jozefowicz",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
-      "opponent_weight": 190,
-      "opponent_rank": 87,
+      "opponent_team_rank": 18,
+      "opponent_weight": 175,
+      "opponent_rank": 182,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -197,13 +217,48 @@
       "opponent_team": "Thomas Nelson",
       "opponent_team_rank": null,
       "opponent_weight": 190,
-      "opponent_rank": 66,
+      "opponent_rank": 69,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:33",
       "event": "vs. Thomas Nelson"
+    }
+  ],
+  "career": {
+    "career_id": "career_001042",
+    "canonical_name": "Ashton Hackney",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Great Crossing",
+      "record": "7-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Great Crossing",
+      "record": "9-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Great Crossing",
+      "record": "0-0",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

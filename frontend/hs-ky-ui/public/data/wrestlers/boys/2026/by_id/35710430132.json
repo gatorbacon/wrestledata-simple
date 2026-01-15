@@ -3,23 +3,23 @@
   "name": "Logan bennett",
   "team": "Paintsville",
   "team_slug": "paintsville",
-  "team_rank": 111,
+  "team_rank": 113,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 83,
+  "current_rank": 75,
   "record": {
-    "overall": "6-5",
-    "vs_ranked": "3-5",
+    "overall": "6-7",
+    "vs_ranked": "3-7",
     "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 4.5,
-    "pa7": 12.0,
-    "pd7": -7.5,
-    "si_plus": 92.4,
-    "df_plus": 97.5,
-    "apr_plus": 106.3,
+    "pf7": 7.33,
+    "pa7": 13.67,
+    "pd7": -6.33,
+    "si_plus": 96.2,
+    "df_plus": 95.2,
+    "apr_plus": 104.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,38 +28,67 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 5,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35639986132",
-      "opponent_rank": 44,
+      "opponent_rank": 75,
       "opponent_name": "Dylan Clem",
       "method": "Fall 3:42"
     },
     "worst_loss": {
-      "opponent_id": "35721858132",
-      "opponent_rank": 82,
-      "opponent_name": "Brody Hicks",
-      "method": "Dec 13-6"
+      "opponent_id": "35559687132",
+      "opponent_rank": 74,
+      "opponent_name": "Leo Richardson",
+      "method": "Dec 17-13"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35513059132",
+      "opponent_name": "James E. Jones",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 60,
+      "opponent_weight": 190,
+      "opponent_rank": 11,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35559687132",
+      "opponent_name": "Leo Richardson",
+      "opponent_team": "Knott County Central",
+      "opponent_team_rank": 97,
+      "opponent_weight": 190,
+      "opponent_rank": 74,
+      "weight_class": "190",
+      "result": "L",
+      "method": "DEC",
+      "score": "17-13",
+      "duration": "7:00",
+      "event": "Clipson Jones Classic 2026"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35122064132",
       "opponent_name": "Jack Grimes",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 190,
-      "opponent_rank": 20,
+      "opponent_rank": 25,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:46",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -3.2
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -81,16 +110,15 @@
       "opponent_id": "35013055132",
       "opponent_name": "Kasey Conley",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 190,
-      "opponent_rank": 34,
+      "opponent_rank": 37,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -3.78
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -127,7 +155,7 @@
       "opponent_id": "35017742132",
       "opponent_name": "Branden McGee",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 190,
       "opponent_rank": 10,
       "weight_class": "190",
@@ -135,40 +163,37 @@
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "Bobby Bates Wrestling Classic",
-      "mv_impact": -0.33
+      "event": "Bobby Bates Wrestling Classic"
     },
     {
       "date": "2025-12-16",
       "opponent_id": "35896382132",
       "opponent_name": "Gavin Selby",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 175,
-      "opponent_rank": 128,
+      "opponent_rank": 123,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Paintsville",
-      "mv_impact": 3.08
+      "event": "vs. Paintsville"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35639986132",
       "opponent_name": "Dylan Clem",
       "opponent_team": "Harlan County",
-      "opponent_team_rank": 85,
+      "opponent_team_rank": 90,
       "opponent_weight": 175,
-      "opponent_rank": 44,
+      "opponent_rank": 75,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:42",
-      "event": "Anchor Down Showdown",
-      "mv_impact": 6.69
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
@@ -177,51 +202,78 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 190,
-      "opponent_rank": 84,
+      "opponent_rank": 76,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Anchor Down Showdown",
-      "mv_impact": 4.35
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35013055132",
       "opponent_name": "Kasey Conley",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 190,
-      "opponent_rank": 34,
+      "opponent_rank": 37,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:37",
-      "event": "Anchor Down Showdown",
-      "mv_impact": -3.78
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35721858132",
       "opponent_name": "Brody Hicks",
       "opponent_team": "Prestonsburg",
-      "opponent_team_rank": 117,
+      "opponent_team_rank": 119,
       "opponent_weight": 190,
-      "opponent_rank": 82,
+      "opponent_rank": 73,
       "weight_class": "190",
       "result": "L",
       "method": "DEC",
       "score": "13-6",
       "duration": "7:00",
-      "event": "Anchor Down Showdown",
-      "mv_impact": -4.46
+      "event": "Anchor Down Showdown"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_002089",
+    "canonical_name": "logan Bennett",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Paintsville",
+      "record": "7-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Paintsville",
+      "record": "6-9",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Paintsville",
+      "record": "1-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

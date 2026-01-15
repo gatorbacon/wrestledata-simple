@@ -4,12 +4,12 @@
   "team": "Russell County",
   "team_slug": "russell_county",
   "team_rank": 19,
-  "weight_class": 132,
+  "weight_class": 126,
   "year": 2026,
-  "current_rank": 50,
+  "current_rank": 179,
   "record": {
-    "overall": "3-3",
-    "vs_ranked": "3-3",
+    "overall": "3-7",
+    "vs_ranked": "3-7",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 20.0,
     "pa7": 13.0,
     "pd7": 7.0,
-    "si_plus": 117.2,
-    "df_plus": 97.7,
-    "apr_plus": 102.4,
+    "si_plus": 118.1,
+    "df_plus": 97.4,
+    "apr_plus": 94.9,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -28,102 +28,166 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 3,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35206815132",
-      "opponent_rank": 101,
+      "opponent_rank": 99,
       "opponent_name": "Jacayden Morales",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35637972132",
-      "opponent_rank": 28,
-      "opponent_name": "Drake Wright",
-      "method": "Fall 2:19"
+      "opponent_id": "35206892132",
+      "opponent_rank": 185,
+      "opponent_name": "Andrew Grant",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35206892132",
+      "opponent_name": "Andrew Grant",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 138,
+      "opponent_rank": 185,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County",
+      "mv_impact": -9.52
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35576566132",
+      "opponent_name": "Joel Diaz",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 138,
+      "opponent_rank": 58,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County",
+      "mv_impact": -5.77
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35207004132",
+      "opponent_name": "Brayden Taylor",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 126,
+      "opponent_rank": 138,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:22",
+      "event": "Maroon`s New Year Brawl",
+      "mv_impact": -10.13
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35368108132",
+      "opponent_name": "Gabe Pendery",
+      "opponent_team": "Somerset",
+      "opponent_team_rank": 31,
+      "opponent_weight": 126,
+      "opponent_rank": 28,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "Maroon`s New Year Brawl",
+      "mv_impact": -4.13
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35206819132",
       "opponent_name": "Tripp Stotts",
       "opponent_team": "Adair County",
-      "opponent_team_rank": 50,
-      "opponent_weight": 132,
-      "opponent_rank": 26,
+      "opponent_team_rank": 56,
+      "opponent_weight": 120,
+      "opponent_rank": 51,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Russell County",
-      "mv_impact": -3.82
+      "mv_impact": -5.6
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35397230132",
       "opponent_name": "Billy York",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 132,
-      "opponent_rank": 162,
+      "opponent_rank": 153,
       "weight_class": "132",
       "result": "W",
       "method": "DEC",
       "score": "20-13",
       "duration": "7:00",
       "event": "vs. Russell County",
-      "mv_impact": -0.09
+      "mv_impact": -0.14
     },
     {
       "date": "2025-12-09",
       "opponent_id": "35206815132",
       "opponent_name": "Jacayden Morales",
       "opponent_team": "Adair County",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 56,
       "opponent_weight": 132,
-      "opponent_rank": 101,
+      "opponent_rank": 99,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Russell County",
-      "mv_impact": 3.54
+      "mv_impact": 3.85
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34992058132",
       "opponent_name": "Aiden Behnken",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 132,
-      "opponent_rank": 24,
+      "opponent_rank": 22,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:03",
       "event": "The Beast of the East",
-      "mv_impact": -3.23
+      "mv_impact": -3.47
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35281582132",
       "opponent_name": "Leo Zieverink",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 132,
-      "opponent_rank": 149,
+      "opponent_rank": 142,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:07",
       "event": "The Beast of the East",
-      "mv_impact": 0.97
+      "mv_impact": 1.78
     },
     {
       "date": "2025-12-06",
@@ -132,14 +196,31 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
       "opponent_weight": 132,
-      "opponent_rank": 28,
+      "opponent_rank": 46,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:19",
       "event": "The Beast of the East",
-      "mv_impact": -4.82
+      "mv_impact": -5.14
+    }
+  ],
+  "career": {
+    "career_id": "career_005092",
+    "canonical_name": "Colton Norris",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Russell County",
+      "record": "3-7",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

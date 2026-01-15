@@ -3,10 +3,10 @@
   "name": "Toby Batson",
   "team": "Ohio County",
   "team_slug": "ohio_county",
-  "team_rank": 47,
+  "team_rank": 36,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 130,
+  "current_rank": 136,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 86.8,
+    "df_plus": 102.0,
+    "apr_plus": 86.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35192445132",
-      "opponent_rank": 70,
+      "opponent_rank": 73,
       "opponent_name": "Noel Perez",
       "method": "Fall 0:07"
     }
@@ -45,37 +45,58 @@
       "opponent_id": "35192350132",
       "opponent_name": "Izik Hamann",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
+      "opponent_team_rank": 102,
       "opponent_weight": 120,
-      "opponent_rank": 68,
+      "opponent_rank": 71,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:03",
       "event": "vs. Ohio County",
-      "mv_impact": -6.73
+      "mv_impact": -6.37
     },
     {
       "date": "2025-12-04",
       "opponent_id": "35192445132",
       "opponent_name": "Noel Perez",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
+      "opponent_team_rank": 102,
       "opponent_weight": 120,
-      "opponent_rank": 70,
+      "opponent_rank": 73,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:07",
       "event": "vs. Ohio County",
-      "mv_impact": -7.49
+      "mv_impact": -7.3
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_001955",
+    "canonical_name": "Toby Batson",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Ohio County",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Ohio County",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

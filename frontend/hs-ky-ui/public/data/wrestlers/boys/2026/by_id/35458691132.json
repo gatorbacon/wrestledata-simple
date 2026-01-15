@@ -3,13 +3,13 @@
   "name": "Lane Parrish",
   "team": "Calloway County",
   "team_slug": "calloway_county",
-  "team_rank": 63,
+  "team_rank": 33,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 26,
+  "current_rank": 31,
   "record": {
-    "overall": "6-1",
-    "vs_ranked": "6-1",
+    "overall": "10-1",
+    "vs_ranked": "5-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,150 +17,233 @@
     "pf7": 15.0,
     "pa7": 0.0,
     "pd7": 15.0,
-    "si_plus": 109.3,
-    "df_plus": 115.9,
-    "apr_plus": 108.8,
-    "pin_rate": 0.833,
+    "si_plus": 109.8,
+    "df_plus": 116.4,
+    "apr_plus": 107.4,
+    "pin_rate": 0.7,
     "bonus_rate": 1.0,
-    "majors": 0,
-    "techs": 1,
-    "pins": 5
+    "majors": 1,
+    "techs": 2,
+    "pins": 7
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
+    "ranked_wins": 5,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35233659132",
-      "opponent_rank": 49,
-      "opponent_name": "Colton Hardy",
-      "method": "TF 15-0 0:00"
+      "opponent_id": "35221014132",
+      "opponent_rank": 54,
+      "opponent_name": "Jonas Martin",
+      "method": "Fall 2:29"
     },
     "worst_loss": {
       "opponent_id": "35207985132",
-      "opponent_rank": 12,
+      "opponent_rank": 16,
       "opponent_name": "Brock Crook",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "34990895132",
+      "opponent_name": "Robert A.G Toy",
+      "opponent_team": "Gallatin High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:41",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35362715132",
+      "opponent_name": "Joshua Mainville",
+      "opponent_team": "Coffee Co. Central High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35155335132",
+      "opponent_name": "Deavnte Jones",
+      "opponent_team": "Beech Senior",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35140911132",
+      "opponent_name": "Isaac Gonzalez",
+      "opponent_team": "Spring Hill High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "3:44",
+      "event": "2026 Commando Crush"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35207985132",
       "opponent_name": "Brock Crook",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 190,
-      "opponent_rank": 12,
+      "opponent_rank": 16,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Henderson County",
-      "mv_impact": -1.76
+      "event": "vs. Henderson County"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35133610132",
       "opponent_name": "Connor Harris",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 215,
-      "opponent_rank": 102,
+      "opponent_rank": 106,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Hopkinsville",
-      "mv_impact": 3.42
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2025-12-04",
       "opponent_id": "35221014132",
       "opponent_name": "Jonas Martin",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 190,
-      "opponent_rank": 50,
+      "opponent_rank": 54,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:29",
-      "event": "vs. Calloway County",
-      "mv_impact": 5.39
+      "event": "vs. Calloway County"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35233659132",
       "opponent_name": "Colton Hardy",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 57,
       "opponent_weight": 190,
-      "opponent_rank": 49,
+      "opponent_rank": 92,
       "weight_class": "190",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Calloway County",
-      "mv_impact": 4.11
+      "event": "vs. Calloway County"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35437614132",
       "opponent_name": "nicholas lacosta",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 190,
-      "opponent_rank": 153,
+      "opponent_rank": 159,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Hopkinsville",
-      "mv_impact": 1.37
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35364755132",
       "opponent_name": "Michael Corley",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
+      "opponent_team_rank": null,
       "opponent_weight": 190,
-      "opponent_rank": 173,
+      "opponent_rank": null,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:14",
-      "event": "vs. John Hardin",
-      "mv_impact": 2.94
+      "event": "vs. John Hardin"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35674180132",
       "opponent_name": "Brycen Mattingly",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 175,
-      "opponent_rank": 150,
+      "opponent_rank": 144,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro",
-      "mv_impact": 0.82
+      "event": "vs. Owensboro"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0666666666666667
-  }
+  "career": {
+    "career_id": "career_000391",
+    "canonical_name": "Lane Parrish",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Calloway County",
+      "record": "10-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Calloway County",
+      "record": "19-11",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Calloway County",
+      "record": "7-12",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

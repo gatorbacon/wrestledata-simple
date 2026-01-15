@@ -8,51 +8,126 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "1-2",
+    "overall": "4-4",
+    "vs_ranked": "4-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 98.8,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "df_plus": 102.0,
+    "apr_plus": 100.1,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35909041132",
-      "opponent_rank": 114,
-      "opponent_name": "Waylon Hudson",
-      "method": "Fall 2:18"
+      "opponent_id": "35401423132",
+      "opponent_rank": 58,
+      "opponent_name": "Damien Falter",
+      "method": "Dec 6-0"
     },
     "worst_loss": {
-      "opponent_id": "35122073132",
-      "opponent_rank": 17,
-      "opponent_name": "Xander Fontana",
-      "method": "Fall 2:23"
+      "opponent_id": "35635389132",
+      "opponent_rank": 41,
+      "opponent_name": "Hunter Crabtree",
+      "method": "Fall 3:22"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "37133331132",
+      "opponent_name": "Samual Adkins",
+      "opponent_team": "East Ridge",
+      "opponent_team_rank": 78,
+      "opponent_weight": 120,
+      "opponent_rank": 170,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:18",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35635389132",
+      "opponent_name": "Hunter Crabtree",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 88,
+      "opponent_weight": 120,
+      "opponent_rank": 41,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:22",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35751739132",
+      "opponent_name": "Derrick Jenkins",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 120,
+      "opponent_rank": 135,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:26",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35401423132",
+      "opponent_name": "Damien Falter",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": 101,
+      "opponent_weight": 120,
+      "opponent_rank": 58,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35051530132",
+      "opponent_name": "Brycen Gray",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 120,
+      "opponent_rank": 11,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "Clipson Jones Classic 2026"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35144516132",
       "opponent_name": "Liam Ditto",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 120,
-      "opponent_rank": 15,
+      "opponent_rank": 17,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -65,9 +140,9 @@
       "opponent_id": "35122073132",
       "opponent_name": "Xander Fontana",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 120,
-      "opponent_rank": 17,
+      "opponent_rank": 18,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -80,9 +155,9 @@
       "opponent_id": "35909041132",
       "opponent_name": "Waylon Hudson",
       "opponent_team": "Russell",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 122,
       "opponent_weight": 120,
-      "opponent_rank": 114,
+      "opponent_rank": 117,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -90,10 +165,5 @@
       "duration": "2:18",
       "event": "Boys Hatfield McCoy 32 2025"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  ]
 }

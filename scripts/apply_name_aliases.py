@@ -142,9 +142,9 @@ def process_season(season, league='ncaa', state=None, gender=None):
     
     # Setup directories based on league type
     if league == 'hs':
-        # HS data directories: mt/data/hs_ky_boys/ or mt/data/hs_ky_girls/
-        in_dir = os.path.join("mt", "data", f"hs_{state_upper.lower()}_{gender}")
-        out_dir = os.path.join("mt", "data_alias", f"hs_{state_upper.lower()}_{gender}")
+        # HS data directories: mt/data/hs_ky_boys/{season}/ or mt/data/hs_ky_girls/{season}/
+        in_dir = os.path.join("mt", "data", f"hs_{state_upper.lower()}_{gender}", str(season))
+        out_dir = os.path.join("mt", "data_alias", f"hs_{state_upper.lower()}_{gender}", str(season))
     else:  # ncaa
         # NCAA data directories: mt/data/{season}/ and mt/data_alias/{season}/
         in_dir = os.path.join("mt", "data", season)

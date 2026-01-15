@@ -3,10 +3,10 @@
   "name": "Lane Osborne",
   "team": "Russell",
   "team_slug": "russell",
-  "team_rank": 120,
+  "team_rank": 122,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 86,
+  "current_rank": 72,
   "record": {
     "overall": "5-6",
     "vs_ranked": "4-5",
@@ -17,9 +17,9 @@
     "pf7": 7.99,
     "pa7": 16.56,
     "pd7": -8.57,
-    "si_plus": 98.0,
-    "df_plus": 92.3,
-    "apr_plus": 100.7,
+    "si_plus": 96.8,
+    "df_plus": 93.4,
+    "apr_plus": 101.4,
     "pin_rate": 0.6,
     "bonus_rate": 0.8,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35513057132",
-      "opponent_rank": 88,
+      "opponent_rank": 77,
       "opponent_name": "Wesley Curry",
       "method": "Fall 3:30"
     },
     "worst_loss": {
       "opponent_id": "35724486132",
-      "opponent_rank": 59,
+      "opponent_rank": 50,
       "opponent_name": "Parker Fouch",
       "method": "TF 15-0 3:00"
     }
@@ -47,51 +47,48 @@
   "match_list": [
     {
       "date": "2025-12-30",
+      "opponent_id": "35752784132",
+      "opponent_name": "James Morris",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 144,
+      "opponent_rank": 1,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "4:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "35513057132",
       "opponent_name": "Wesley Curry",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 150,
-      "opponent_rank": 88,
+      "opponent_rank": 77,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:30",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 3.21
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35724486132",
       "opponent_name": "Parker Fouch",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 150,
-      "opponent_rank": 59,
+      "opponent_rank": 50,
       "weight_class": "150",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:00",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -4.6
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "35752784132",
-      "opponent_name": "James Morris",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": 12,
-      "opponent_weight": 150,
-      "opponent_rank": 3,
-      "weight_class": "150",
-      "result": "L",
-      "method": "TF",
-      "score": "20-4",
-      "duration": "4:00",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -0.68
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -128,87 +125,82 @@
       "opponent_id": "35752784132",
       "opponent_name": "James Morris",
       "opponent_team": "Johnson Central",
-      "opponent_team_rank": 12,
-      "opponent_weight": 150,
-      "opponent_rank": 3,
+      "opponent_team_rank": 2,
+      "opponent_weight": 144,
+      "opponent_rank": 1,
       "weight_class": "150",
       "result": "L",
       "method": "TF",
       "score": "20-4",
       "duration": "0:00",
-      "event": "HATFIELD-MCCOY 32",
-      "mv_impact": -0.68
+      "event": "HATFIELD-MCCOY 32"
     },
     {
       "date": "2025-12-16",
       "opponent_id": "35850447132",
       "opponent_name": "Chase Gillum",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 150,
-      "opponent_rank": 5,
+      "opponent_rank": 3,
       "weight_class": "150",
       "result": "L",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "vs. Russell",
-      "mv_impact": 0.04
+      "event": "vs. Russell"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35896307132",
       "opponent_name": "Braxton Duncan",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 157,
-      "opponent_rank": 128,
+      "opponent_rank": 121,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
       "score": "17-1",
       "duration": "5:11",
-      "event": "AWC Invitational",
-      "mv_impact": 1.15
+      "event": "AWC Invitational"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "36004402132",
       "opponent_name": "James McDaniels",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 157,
-      "opponent_rank": 37,
+      "opponent_rank": 33,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "17-11",
       "duration": "7:00",
-      "event": "AWC Invitational",
-      "mv_impact": -1.83
+      "event": "AWC Invitational"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35724490132",
       "opponent_name": "Kasey Clark",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 157,
-      "opponent_rank": 134,
+      "opponent_rank": 127,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:47",
-      "event": "AWC Invitational",
-      "mv_impact": 1.67
+      "event": "AWC Invitational"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35911323132",
       "opponent_name": "Ivan McDaniels",
       "opponent_team": "Russell",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 122,
       "opponent_weight": 157,
       "opponent_rank": 89,
       "weight_class": "157",
@@ -216,13 +208,42 @@
       "method": "FALL",
       "score": null,
       "duration": "0:37",
-      "event": "AWC Invitational",
-      "mv_impact": 4.31
+      "event": "AWC Invitational"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  "career": {
+    "career_id": "career_002301",
+    "canonical_name": "Lane Osborne",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Russell",
+      "record": "5-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Russell",
+      "record": "16-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Russell",
+      "record": "12-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

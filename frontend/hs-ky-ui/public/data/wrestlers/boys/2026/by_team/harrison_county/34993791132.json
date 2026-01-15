@@ -3,13 +3,13 @@
   "name": "Hunter Jones",
   "team": "Harrison County",
   "team_slug": "harrison_county",
-  "team_rank": 4,
+  "team_rank": 5,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 85,
+  "current_rank": 89,
   "record": {
-    "overall": "8-4",
-    "vs_ranked": "8-4",
+    "overall": "10-4",
+    "vs_ranked": "9-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,23 +17,23 @@
     "pf7": 25.0,
     "pa7": 11.35,
     "pd7": 13.65,
-    "si_plus": 118.5,
-    "df_plus": 97.8,
-    "apr_plus": 103.8,
-    "pin_rate": 0.875,
-    "bonus_rate": 1.0,
+    "si_plus": 119.6,
+    "df_plus": 97.6,
+    "apr_plus": 102.6,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.9,
     "majors": 0,
     "techs": 1,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
+    "ranked_wins": 9,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35875829132",
-      "opponent_rank": 84,
+      "opponent_rank": 70,
       "opponent_name": "Huck Williams",
       "method": "Fall 0:00"
     },
@@ -46,59 +46,86 @@
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35405497132",
+      "opponent_name": "Jacob Isaacs",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 157,
+      "opponent_rank": 119,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Cooper"
+    },
+    {
       "date": "2025-12-30",
       "opponent_id": "35281286132",
       "opponent_name": "Jackson Fosset",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 150,
-      "opponent_rank": 48,
+      "opponent_rank": 63,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:13",
-      "event": "Cardinal Invitational",
-      "mv_impact": -7.04
+      "event": "Cardinal Invitational"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35030261132",
       "opponent_name": "Bradlee Mounce",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 150,
-      "opponent_rank": 113,
+      "opponent_rank": 120,
       "weight_class": "150",
       "result": "W",
       "method": "TF",
       "score": "20-2",
       "duration": "1:14",
-      "event": "Cardinal Invitational",
-      "mv_impact": 2.22
+      "event": "Cardinal Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35396384132",
       "opponent_name": "Anyelith Amayo",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 157,
-      "opponent_rank": 140,
+      "opponent_rank": 132,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Region 6 JV Region",
-      "mv_impact": 1.27
+      "event": "Region 6 JV Region"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35433190132",
       "opponent_name": "Faimy Victorin",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 96,
+      "opponent_team_rank": 99,
       "opponent_weight": 157,
       "opponent_rank": 64,
       "weight_class": "157",
@@ -106,40 +133,37 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Region 6 JV Region",
-      "mv_impact": -7.23
+      "event": "Region 6 JV Region"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35433673132",
       "opponent_name": "Amri Masudi",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 96,
+      "opponent_team_rank": 99,
       "opponent_weight": 157,
-      "opponent_rank": 127,
+      "opponent_rank": 120,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Region 6 JV Region",
-      "mv_impact": 1.67
+      "event": "Region 6 JV Region"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35875829132",
       "opponent_name": "Huck Williams",
       "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 112,
+      "opponent_team_rank": 114,
       "opponent_weight": 157,
-      "opponent_rank": 84,
+      "opponent_rank": 70,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Region 6 JV Region",
-      "mv_impact": 4.3
+      "event": "Region 6 JV Region"
     },
     {
       "date": "2025-12-23",
@@ -154,88 +178,108 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Region 6 JV Region",
-      "mv_impact": 3.51
+      "event": "Region 6 JV Region"
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35048599132",
       "opponent_name": "Easton Bowman",
       "opponent_team": "Bourbon County",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 63,
       "opponent_weight": 157,
-      "opponent_rank": 138,
+      "opponent_rank": 131,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Harrison County",
-      "mv_impact": 1.37
+      "event": "vs. Harrison County"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35405353132",
       "opponent_name": "jaxon franks",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 86,
       "opponent_weight": 144,
-      "opponent_rank": 38,
+      "opponent_rank": 47,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -4.68
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35179136132",
       "opponent_name": "Ben Peck",
       "opponent_team": "Campbellsville",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 67,
       "opponent_weight": 150,
-      "opponent_rank": 182,
+      "opponent_rank": 186,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 3.54
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35188416132",
       "opponent_name": "Alex Craven",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 101,
+      "opponent_team_rank": 103,
       "opponent_weight": 150,
-      "opponent_rank": 33,
+      "opponent_rank": 34,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -5.66
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35103664132",
       "opponent_name": "Patrick Oliver",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 150,
-      "opponent_rank": 108,
+      "opponent_rank": 111,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 2.27
+      "event": "Joe Cochran State Farm HCIWT"
+    }
+  ],
+  "career": {
+    "career_id": "career_001124",
+    "canonical_name": "Hunter Jones",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Harrison County",
+      "record": "11-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Harrison County",
+      "record": "9-9",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

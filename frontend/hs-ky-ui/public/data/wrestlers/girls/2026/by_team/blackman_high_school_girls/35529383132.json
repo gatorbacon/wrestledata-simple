@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35529383132",
+  "name": "Kinzley Johnson",
+  "team": "Blackman High School Girls",
+  "team_slug": "blackman_high_school_girls",
+  "team_rank": null,
+  "weight_class": 152,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 110.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35521273132",
+      "opponent_rank": 20,
+      "opponent_name": "Anna Clark",
+      "method": "Fall 1:22"
+    },
+    "worst_loss": {
+      "opponent_id": "35333558132",
+      "opponent_rank": 8,
+      "opponent_name": "Aubrey Haisma",
+      "method": "Fall 5:08"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333558132",
+      "opponent_name": "Aubrey Haisma",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 3,
+      "opponent_weight": 152,
+      "opponent_rank": 8,
+      "weight_class": "152",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:08",
+      "event": "Coyote Classic"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35521273132",
+      "opponent_name": "Anna Clark",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 152,
+      "opponent_rank": 20,
+      "weight_class": "G 152",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "Coyote Classic"
+    }
+  ]
+}

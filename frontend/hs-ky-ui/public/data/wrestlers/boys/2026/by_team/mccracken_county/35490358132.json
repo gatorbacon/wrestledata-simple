@@ -3,23 +3,23 @@
   "name": "Jamason Ford",
   "team": "McCracken County",
   "team_slug": "mccracken_county",
-  "team_rank": 104,
+  "team_rank": 106,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 184,
+  "current_rank": 176,
   "record": {
     "overall": "0-9",
     "vs_ranked": "0-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 92.3,
+    "df_plus": 102.0,
+    "apr_plus": 92.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35049798132",
-      "opponent_rank": 83,
+      "opponent_rank": 86,
       "opponent_name": "Landon Mongold",
       "method": "Fall 1:40"
     }
@@ -42,12 +42,27 @@
   "match_list": [
     {
       "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_669fc4eee8c2",
+      "opponent_name": "Wyatt Hargett",
+      "opponent_team": "Evansville F.j. Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Evansville F.j. Reitz"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35049798132",
       "opponent_name": "Landon Mongold",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 25,
       "opponent_weight": 165,
-      "opponent_rank": 83,
+      "opponent_rank": 86,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -60,9 +75,9 @@
       "opponent_id": "35207986132",
       "opponent_name": "Ethan Peckenpaugh",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 175,
-      "opponent_rank": 33,
+      "opponent_rank": 15,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -87,21 +102,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "OUTSTATE_669fc4eee8c2",
-      "opponent_name": "Wyatt Hargett",
-      "opponent_team": "Evansville F.j. Reitz",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Evansville F.j. Reitz"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "OUTSTATE_48772f51e1e2",
       "opponent_name": "Nehemiah Lindley",
       "opponent_team": "Riverton Parke",
@@ -120,9 +120,9 @@
       "opponent_id": "34989006132",
       "opponent_name": "Hunter Roberts",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 165,
-      "opponent_rank": 19,
+      "opponent_rank": 17,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -135,9 +135,9 @@
       "opponent_id": "35205294132",
       "opponent_name": "Maddox Tabor",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 175,
-      "opponent_rank": 26,
+      "opponent_rank": 27,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -174,6 +174,23 @@
       "score": null,
       "duration": "1:13",
       "event": "vs. Rossview High School"
+    }
+  ],
+  "career": {
+    "career_id": "career_004802",
+    "canonical_name": "Jamason Ford",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "McCracken County",
+      "record": "0-9",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -3,43 +3,78 @@
   "name": "Hunter Horton",
   "team": "Frederick Douglass",
   "team_slug": "frederick_douglass",
-  "team_rank": 80,
+  "team_rank": 85,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 153,
+  "current_rank": 161,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "0-1",
+    "overall": "3-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
-    "pf7": 0.0,
+    "pf7": 3.0,
     "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 94.4,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pd7": 3.0,
+    "si_plus": 89.9,
+    "df_plus": 116.4,
+    "apr_plus": 101.6,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35081203132",
+      "opponent_rank": 24,
+      "opponent_name": "Jackson Kincer",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "34988550132",
-      "opponent_rank": 62,
+      "opponent_rank": 66,
       "opponent_name": "Bronson Keefe",
       "method": "Fall 2:26"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35081203132",
+      "opponent_name": "Jackson Kincer",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 34,
+      "opponent_weight": 215,
+      "opponent_rank": 24,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35360025132",
+      "opponent_name": "Tolley Carter",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": 114,
+      "opponent_weight": 285,
+      "opponent_rank": 210,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
     {
       "date": "2025-12-17",
       "opponent_id": "34988550132",
@@ -47,7 +82,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": 62,
+      "opponent_rank": 66,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -71,9 +106,39 @@
       "event": "vs. Bardstown"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_000984",
+    "canonical_name": "Hunter Horton",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Frederick Douglass",
+      "record": "3-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Frederick Douglass",
+      "record": "9-13",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Frederick Douglass",
+      "record": "5-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,23 +3,23 @@
   "name": "Tonny Bouataveth",
   "team": "Southern",
   "team_slug": "southern",
-  "team_rank": 127,
+  "team_rank": 54,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 140,
+  "current_rank": 133,
   "record": {
-    "overall": "1-6",
-    "vs_ranked": "0-5",
-    "vs_top10": "0-1",
+    "overall": "2-7",
+    "vs_ranked": "1-6",
+    "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 90.8,
+    "pf7": 14.0,
+    "pa7": 10.0,
+    "pd7": 4.0,
+    "si_plus": 108.1,
+    "df_plus": 101.8,
+    "apr_plus": 89.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -27,27 +27,47 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35542544132",
+      "opponent_rank": 139,
+      "opponent_name": "Isabella Warner",
+      "method": "Dec 14-10"
+    },
     "worst_loss": {
-      "opponent_id": "35457988132",
-      "opponent_rank": 111,
-      "opponent_name": "Elom Emge",
-      "method": "Fall 0:00"
+      "opponent_id": "35217375132",
+      "opponent_rank": 130,
+      "opponent_name": "Aramis Cortez Ramos",
+      "method": "Fall 3:47"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35217375132",
+      "opponent_name": "Aramis Cortez Ramos",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 80,
+      "opponent_weight": 120,
+      "opponent_rank": 130,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:47",
+      "event": "2026 Lou City Wrestling"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35090039132",
       "opponent_name": "Aydin Safarov",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
-      "opponent_weight": 120,
-      "opponent_rank": 99,
+      "opponent_team_rank": 80,
+      "opponent_weight": 113,
+      "opponent_rank": 66,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -60,9 +80,9 @@
       "opponent_id": "34994784132",
       "opponent_name": "Lucas Montgomery",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 120,
-      "opponent_rank": 18,
+      "opponent_rank": 22,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -75,9 +95,9 @@
       "opponent_id": "35457988132",
       "opponent_name": "Elom Emge",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 120,
-      "opponent_rank": 111,
+      "opponent_rank": 114,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -102,6 +122,21 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35542544132",
+      "opponent_name": "Isabella Warner",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 120,
+      "opponent_rank": 139,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "14-10",
+      "duration": "7:00",
+      "event": "vs. Southern"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
@@ -120,9 +155,9 @@
       "opponent_id": "34997782132",
       "opponent_name": "Alejandro Velazquez",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 120,
-      "opponent_rank": 105,
+      "opponent_rank": 108,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -135,15 +170,32 @@
       "opponent_id": "35051530132",
       "opponent_name": "Brycen Gray",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 120,
-      "opponent_rank": 9,
+      "opponent_rank": 11,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:31",
       "event": "Screamin` Eagles Classic"
+    }
+  ],
+  "career": {
+    "career_id": "career_005695",
+    "canonical_name": "Tonny Bouataveth",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Southern",
+      "record": "2-7",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

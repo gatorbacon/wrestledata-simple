@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.655081Z",
+  "generated_at_utc": "2026-01-15T13:34:37.769117Z",
   "starters": {
     "114": {
       "weight": 114,
       "wrestler_id": "35333669132",
       "name": "Neticia Hughes",
-      "current_rank": 68,
+      "current_rank": 47,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -38,32 +38,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 1
       }
     },
     "120": {
       "weight": 120,
-      "wrestler_id": "35333668132",
-      "name": "Rowyn Eskridge",
-      "current_rank": 28,
-      "xtp": 2.45,
-      "xtp_p": 0.25,
-      "xtp_a": 0.69,
-      "xtp_b": 1.51,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 1,
-        "losses": 1
-      }
-    },
-    "126": {
-      "weight": 126,
       "wrestler_id": "35333670132",
       "name": "Briella Levy",
-      "current_rank": 55,
+      "current_rank": 54,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -75,59 +57,59 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35333668132",
+      "name": "Rowyn Eskridge",
+      "current_rank": 20,
+      "xtp": 3.58,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 2.15,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
       }
     },
     "145": {
       "weight": 145,
       "wrestler_id": "35333674132",
       "name": "Saniyah Nana",
-      "current_rank": 11,
-      "xtp": 6.15,
-      "xtp_p": 1.69,
-      "xtp_a": 1.58,
-      "xtp_b": 2.88,
+      "current_rank": 14,
+      "xtp": 4.88,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 2.68,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 4
       },
       "top33_record": {
         "wins": 2,
-        "losses": 2
+        "losses": 4
       }
     },
     "165": {
       "weight": 165,
-      "wrestler_id": "35333677132",
-      "name": "Journee White",
-      "current_rank": 82,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      }
-    },
-    "185": {
-      "weight": 185,
       "wrestler_id": "35333672132",
       "name": "Aria McFarland",
-      "current_rank": 8,
-      "xtp": 8.41,
-      "xtp_p": 2.43,
-      "xtp_a": 1.91,
-      "xtp_b": 4.07,
+      "current_rank": 21,
+      "xtp": 3.35,
+      "xtp_p": 0.45,
+      "xtp_a": 0.91,
+      "xtp_b": 1.99,
       "top10_record": {
         "wins": 1,
         "losses": 0
       },
       "top33_record": {
-        "wins": 1,
+        "wins": 3,
         "losses": 0
       }
     }
@@ -146,8 +128,17 @@
       "weight": 145,
       "wrestler_id": "35333676132",
       "name": "Lucy Savon",
-      "wins": 0,
+      "wins": 2,
       "losses": 2,
+      "top25_wins": 1,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35333677132",
+      "name": "Journee White",
+      "wins": 0,
+      "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -163,30 +154,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 8,
-      "losses": 9
+      "wins": 21,
+      "losses": 12
     },
     "top33": {
-      "wins": 4,
-      "losses": 5
+      "wins": 5,
+      "losses": 6
     },
     "top10": {
       "wins": 1,
-      "losses": 2
+      "losses": 4
     },
     "bonus_rate": {
-      "value": 1.0,
-      "rank": 7,
+      "value": 0.905,
+      "rank": 40,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.875,
-      "rank": 31,
+      "value": 0.81,
+      "rank": 56,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 82,
+      "rank": 72,
       "rank_scope": "league"
     }
   }

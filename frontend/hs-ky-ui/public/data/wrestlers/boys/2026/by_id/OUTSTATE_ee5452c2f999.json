@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "3-0",
-    "vs_ranked": "3-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "3-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35281172132",
-      "opponent_rank": 57,
+      "opponent_rank": 24,
       "opponent_name": "Fernando Cruz",
       "method": "Dec 2-0"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34989137132",
+      "opponent_rank": 5,
+      "opponent_name": "Brayden Allender",
+      "method": "Dec 1-0"
+    }
   },
   "match_list": [
     {
@@ -45,9 +50,9 @@
       "opponent_id": "35522750132",
       "opponent_name": "Saivon Johnson",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 215,
-      "opponent_rank": 96,
+      "opponent_rank": 102,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -60,9 +65,9 @@
       "opponent_id": "35103703132",
       "opponent_name": "John Lucas",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 215,
-      "opponent_rank": 144,
+      "opponent_rank": 143,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -75,20 +80,30 @@
       "opponent_id": "35281172132",
       "opponent_name": "Fernando Cruz",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 57,
+      "opponent_rank": 24,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
       "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34989137132",
+      "opponent_name": "Brayden Allender",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 285,
+      "opponent_rank": 5,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Tommy Castle Classic"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  ]
 }

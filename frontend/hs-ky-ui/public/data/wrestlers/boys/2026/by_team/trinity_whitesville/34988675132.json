@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 182,
+  "current_rank": 181,
   "record": {
-    "overall": "0-5",
-    "vs_ranked": "0-5",
+    "overall": "0-8",
+    "vs_ranked": "0-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 84.2,
+    "pf7": 2.94,
+    "pa7": 25.0,
+    "pd7": -22.06,
+    "si_plus": 89.8,
+    "df_plus": 79.9,
+    "apr_plus": 83.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,65 +28,92 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35700434132",
-      "opponent_rank": 181,
-      "opponent_name": "Lucas Shaheen",
-      "method": "Fall 0:37"
+      "opponent_id": "35007897132",
+      "opponent_rank": 180,
+      "opponent_name": "Chuck Martin",
+      "method": "Fall 0:46"
     }
   },
   "match_list": [
     {
-      "date": "2025-12-13",
-      "opponent_id": "35700434132",
-      "opponent_name": "Lucas Shaheen",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 190,
-      "opponent_rank": 181,
+      "date": "2026-01-07",
+      "opponent_id": "35007897132",
+      "opponent_name": "Chuck Martin",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 215,
+      "opponent_rank": 180,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:37",
-      "event": "vs. Trinity (Whitesville)",
-      "mv_impact": -8.59
+      "duration": "0:46",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35194145132",
+      "opponent_name": "PJ Barnabas",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 215,
+      "opponent_rank": 141,
+      "weight_class": "215",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "2:23",
+      "event": "vs. Warren Central"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35232364132",
+      "opponent_name": "Weston Morris",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 215,
+      "opponent_rank": 158,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:31",
+      "event": "vs. Warren Central"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35795035132",
       "opponent_name": "Stryker Davidson",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 46,
       "opponent_weight": 215,
-      "opponent_rank": 47,
+      "opponent_rank": 48,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:21",
-      "event": "vs. Trinity (Whitesville)",
-      "mv_impact": -4.95
+      "event": "vs. Trinity (Whitesville)"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35223008132",
       "opponent_name": "Tristan Robinson",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 215,
-      "opponent_rank": 170,
+      "opponent_rank": 168,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "vs. Trinity (Whitesville)",
-      "mv_impact": -10.32
+      "event": "vs. Trinity (Whitesville)"
     },
     {
       "date": "2025-12-13",
@@ -95,30 +122,69 @@
       "opponent_team": "Western Hills",
       "opponent_team_rank": 137,
       "opponent_weight": 215,
-      "opponent_rank": 63,
+      "opponent_rank": 66,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:14",
-      "event": "vs. Western Hills",
-      "mv_impact": -6.18
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35700434132",
+      "opponent_name": "Lucas Shaheen",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35674164132",
       "opponent_name": "Elijah Clark",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 215,
-      "opponent_rank": 100,
+      "opponent_rank": 105,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:02",
-      "event": "vs. Trinity (Whitesville)",
-      "mv_impact": -8.41
+      "event": "vs. Trinity (Whitesville)"
+    }
+  ],
+  "career": {
+    "career_id": "career_003667",
+    "canonical_name": "Callie Patton",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Trinity (Whitesville)",
+      "record": "0-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 7,
+      "team": "Daviess County",
+      "record": "0-1",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

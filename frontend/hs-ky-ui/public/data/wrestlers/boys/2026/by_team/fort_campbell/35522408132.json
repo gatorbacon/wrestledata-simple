@@ -3,12 +3,12 @@
   "name": "Brayden Swinford",
   "team": "Fort Campbell",
   "team_slug": "fort_campbell",
-  "team_rank": 76,
+  "team_rank": 82,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 142,
+  "current_rank": 135,
   "record": {
-    "overall": "2-3",
+    "overall": "3-3",
     "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,11 +18,11 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 92.2,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
-    "majors": 0,
+    "df_plus": 102.0,
+    "apr_plus": 90.3,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
+    "majors": 1,
     "techs": 0,
     "pins": 1
   },
@@ -34,12 +34,27 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35133606132",
-      "opponent_rank": 91,
+      "opponent_rank": 96,
       "opponent_name": "Nicholas Herrera",
       "method": "Fall 2:27"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35259493132",
+      "opponent_name": "Dylan Aguilar",
+      "opponent_team": "Goodpasture Christian School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "16-3",
+      "duration": "7:00",
+      "event": "vs. Goodpasture Christian School"
+    },
     {
       "date": "2025-12-11",
       "opponent_id": "35223945132",
@@ -90,9 +105,9 @@
       "opponent_id": "35133606132",
       "opponent_name": "Nicholas Herrera",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 126,
-      "opponent_rank": 91,
+      "opponent_rank": 96,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -114,6 +129,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Trigg County"
+    }
+  ],
+  "career": {
+    "career_id": "career_005395",
+    "canonical_name": "Brayden Swinford",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Fort Campbell",
+      "record": "3-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

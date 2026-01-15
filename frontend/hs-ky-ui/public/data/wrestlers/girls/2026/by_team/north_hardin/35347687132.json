@@ -3,23 +3,23 @@
   "name": "Tori Myers",
   "team": "North Hardin",
   "team_slug": "north_hardin",
-  "team_rank": 12,
+  "team_rank": 14,
   "weight_class": 185,
   "year": 2026,
-  "current_rank": 32,
+  "current_rank": 40,
   "record": {
-    "overall": "3-2",
-    "vs_ranked": "3-2",
-    "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "overall": "3-4",
+    "vs_ranked": "3-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 103.6,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 97.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,38 +28,70 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35600350132",
-      "opponent_rank": 43,
+      "opponent_rank": 50,
       "opponent_name": "Zoie Zink",
       "method": "Fall 2:21"
     },
     "worst_loss": {
-      "opponent_id": "35333618132",
-      "opponent_rank": 24,
-      "opponent_name": "Lyric Stanfield",
-      "method": "Fall 5:51"
+      "opponent_id": "35448929132",
+      "opponent_rank": 38,
+      "opponent_name": "Jazmari Hernandez",
+      "method": "Fall 4:14"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333375132",
+      "opponent_name": "Porter Tagarook",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 185,
+      "opponent_rank": 3,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": -3.1
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35448929132",
+      "opponent_name": "Jazmari Hernandez",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 19,
+      "opponent_weight": 185,
+      "opponent_rank": 38,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:14",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": -9.61
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35600350132",
       "opponent_name": "Zoie Zink",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 20,
       "opponent_weight": 185,
-      "opponent_rank": 43,
+      "opponent_rank": 50,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:21",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": 2.66
+      "mv_impact": 2.06
     },
     {
       "date": "2025-12-06",
@@ -68,53 +100,53 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 185,
-      "opponent_rank": 46,
+      "opponent_rank": 52,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:42",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 1.72
+      "mv_impact": 0.64
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35333618132",
       "opponent_name": "Lyric Stanfield",
       "opponent_team": "Taylor County",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 58,
       "opponent_weight": 185,
-      "opponent_rank": 24,
+      "opponent_rank": 25,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:51",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -7.76
+      "mv_impact": -7.24
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35461715132",
       "opponent_name": "Cadence Hon",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 54,
       "opponent_weight": 165,
-      "opponent_rank": 61,
+      "opponent_rank": 63,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:28",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 5.0
+      "mv_impact": 4.8
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35461622132",
       "opponent_name": "Alayna Banks",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 54,
       "opponent_weight": 185,
       "opponent_rank": 15,
       "weight_class": "185",
@@ -123,7 +155,7 @@
       "score": null,
       "duration": "2:16",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -6.76
+      "mv_impact": -6.58
     }
   ]
 }

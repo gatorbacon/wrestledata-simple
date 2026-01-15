@@ -3,56 +3,101 @@
   "name": "Travis Collins",
   "team": "Knott County Central",
   "team_slug": "knott_county_central",
-  "team_rank": 94,
+  "team_rank": 97,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 95,
+  "current_rank": 98,
   "record": {
-    "overall": "2-3",
-    "vs_ranked": "1-3",
+    "overall": "3-5",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 102.5,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "df_plus": 102.0,
+    "apr_plus": 98.9,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35284733132",
-      "opponent_rank": 82,
+      "opponent_rank": 85,
       "opponent_name": "Jordan Collett",
       "method": "Fall 1:36"
     },
     "worst_loss": {
       "opponent_id": "35402555132",
-      "opponent_rank": 94,
+      "opponent_rank": 97,
       "opponent_name": "Jaxon Lowe",
       "method": "Fall 1:59"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35051540132",
+      "opponent_name": "Maclain Wilson",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 285,
+      "opponent_rank": 37,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35560322132",
+      "opponent_name": "Sebastian Popp",
+      "opponent_team": "Knott County Central",
+      "opponent_team_rank": 97,
+      "opponent_weight": 285,
+      "opponent_rank": 128,
+      "weight_class": "285",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "37073320132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:23",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35402555132",
       "opponent_name": "Jaxon Lowe",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 94,
+      "opponent_rank": 97,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -65,9 +110,9 @@
       "opponent_id": "35284733132",
       "opponent_name": "Jordan Collett",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 285,
-      "opponent_rank": 82,
+      "opponent_rank": 85,
       "weight_class": "Hwt",
       "result": "W",
       "method": "FALL",
@@ -80,9 +125,9 @@
       "opponent_id": "35850443132",
       "opponent_name": "Cameron Thompson",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 20,
+      "opponent_rank": 28,
       "weight_class": "Hwt",
       "result": "L",
       "method": "FALL",
@@ -110,9 +155,9 @@
       "opponent_id": "35144515132",
       "opponent_name": "Anthony Merino",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 285,
-      "opponent_rank": 23,
+      "opponent_rank": 32,
       "weight_class": "Hwt",
       "result": "L",
       "method": "FALL",
@@ -121,9 +166,21 @@
       "event": "Boys Hatfield McCoy 32 2025"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_004779",
+    "canonical_name": "Travis Collins",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Knott County Central",
+      "record": "3-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

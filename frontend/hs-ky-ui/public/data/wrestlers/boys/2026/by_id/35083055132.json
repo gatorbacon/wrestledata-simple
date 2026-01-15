@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,22 +18,22 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 121.7,
+    "df_plus": 102.0,
+    "apr_plus": 119.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35205296132",
-      "opponent_rank": 52,
+      "opponent_rank": 57,
       "opponent_name": "John Hightower",
       "method": "Fall 0:43"
     },
@@ -41,13 +41,28 @@
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35002903132",
+      "opponent_name": "Sam Suapilimai",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 82,
+      "opponent_weight": 285,
+      "opponent_rank": 77,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35205296132",
       "opponent_name": "John Hightower",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 285,
-      "opponent_rank": 52,
+      "opponent_rank": 57,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -55,10 +70,5 @@
       "duration": "0:43",
       "event": "Coyote Classic Wrestling Invitational"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  ]
 }

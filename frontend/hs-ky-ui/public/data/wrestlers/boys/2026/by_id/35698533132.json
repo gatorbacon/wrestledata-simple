@@ -3,51 +3,116 @@
   "name": "Mason Clark",
   "team": "Owensboro Catholic",
   "team_slug": "owensboro_catholic",
-  "team_rank": 30,
+  "team_rank": 25,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 125,
+  "current_rank": 91,
   "record": {
-    "overall": "3-5",
-    "vs_ranked": "0-4",
+    "overall": "6-6",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 14.0,
-    "pd7": -14.0,
-    "si_plus": 90.0,
-    "df_plus": 98.5,
-    "apr_plus": 90.0,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.333,
+    "pf7": 5.5,
+    "pa7": 9.0,
+    "pd7": -3.5,
+    "si_plus": 93.3,
+    "df_plus": 100.6,
+    "apr_plus": 95.3,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35383673132",
+      "opponent_rank": 93,
+      "opponent_name": "Ian Latzo",
+      "method": "Dec 11-4"
+    },
     "worst_loss": {
       "opponent_id": "35108872132",
-      "opponent_rank": 55,
+      "opponent_rank": 60,
       "opponent_name": "Jeikol Holleran",
       "method": "Fall 0:48"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-13",
+      "opponent_id": "34988668132",
+      "opponent_name": "Will Kuder",
+      "opponent_team": "Trinity (Whitesville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": 113,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35233684132",
+      "opponent_name": "Jaymin Watson",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": 57,
+      "opponent_weight": 106,
+      "opponent_rank": 146,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro Catholic"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34993295132",
+      "opponent_name": "Jackson Mattingly",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 71,
+      "opponent_weight": 106,
+      "opponent_rank": 57,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro Catholic"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35383673132",
+      "opponent_name": "Ian Latzo",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 37,
+      "opponent_weight": 106,
+      "opponent_rank": 93,
+      "weight_class": "106",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "vs. Owensboro Catholic"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35108872132",
       "opponent_name": "Jeikol Holleran",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 106,
-      "opponent_rank": 55,
+      "opponent_rank": 60,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -60,9 +125,9 @@
       "opponent_id": "35049123132",
       "opponent_name": "Ryan LaMotte",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 106,
-      "opponent_rank": 47,
+      "opponent_rank": 51,
       "weight_class": "106",
       "result": "L",
       "method": "MD",
@@ -90,9 +155,9 @@
       "opponent_id": "35620722132",
       "opponent_name": "Kameron Karbasi",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 106,
-      "opponent_rank": 54,
+      "opponent_rank": 59,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -105,9 +170,9 @@
       "opponent_id": "35208007132",
       "opponent_name": "Kaleb Elder",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 106,
-      "opponent_rank": 49,
+      "opponent_rank": 52,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -161,9 +226,21 @@
       "event": "vs. Riverton Parke"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  "career": {
+    "career_id": "career_004587",
+    "canonical_name": "Mason Clark",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Owensboro Catholic",
+      "record": "8-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

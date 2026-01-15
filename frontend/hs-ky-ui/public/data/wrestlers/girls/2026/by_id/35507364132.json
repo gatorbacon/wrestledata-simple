@@ -6,7 +6,7 @@
   "team_rank": null,
   "weight_class": 145,
   "year": 2026,
-  "current_rank": 60,
+  "current_rank": 56,
   "record": {
     "overall": "2-3",
     "vs_ranked": "1-2",
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 95.4,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 96.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35505998132",
-      "opponent_rank": 48,
+      "opponent_rank": 47,
       "opponent_name": "Brooklynn Medley",
       "method": "Fall 0:21"
     },
     "worst_loss": {
       "opponent_id": "35333381132",
-      "opponent_rank": 18,
+      "opponent_rank": 20,
       "opponent_name": "Kaylee Klee",
       "method": "Fall 2:42"
     }
@@ -47,10 +47,25 @@
   "match_list": [
     {
       "date": "2025-12-13",
+      "opponent_id": "35333381132",
+      "opponent_name": "Kaylee Klee",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 138,
+      "opponent_rank": 20,
+      "weight_class": "138-145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:42",
+      "event": "Girls Boro Brawl"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35562841132",
       "opponent_name": "Ash Patton",
       "opponent_team": "Seneca",
-      "opponent_team_rank": null,
+      "opponent_team_rank": 53,
       "opponent_weight": 138,
       "opponent_rank": 9,
       "weight_class": "138-145",
@@ -67,27 +82,12 @@
       "opponent_team": "Valley",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 48,
+      "opponent_rank": 47,
       "weight_class": "138-145",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:21",
-      "event": "Girls Boro Brawl"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35333381132",
-      "opponent_name": "Kaylee Klee",
-      "opponent_team": "Daviess County",
-      "opponent_team_rank": 2,
-      "opponent_weight": 145,
-      "opponent_rank": 18,
-      "weight_class": "138-145",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:42",
       "event": "Girls Boro Brawl"
     },
     {
@@ -124,6 +124,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1428571428571428
+    "top33_bonus_ev_shrunk": 1.4083333333333334
   }
 }

@@ -3,13 +3,13 @@
   "name": "Camden Graichen",
   "team": "East Jessamine",
   "team_slug": "east_jessamine",
-  "team_rank": 24,
+  "team_rank": 77,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 130,
+  "current_rank": 129,
   "record": {
-    "overall": "3-5",
-    "vs_ranked": "2-5",
+    "overall": "3-8",
+    "vs_ranked": "2-8",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 97.7,
+    "df_plus": 102.0,
+    "apr_plus": 94.2,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -28,31 +28,61 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35033128132",
-      "opponent_rank": 131,
+      "opponent_rank": 130,
       "opponent_name": "Bayron Mejia",
       "method": "Fall 0:15"
     },
     "worst_loss": {
-      "opponent_id": "35001142132",
-      "opponent_rank": 98,
-      "opponent_name": "CJ Hogan",
-      "method": "Fall 1:03"
+      "opponent_id": "35238094132",
+      "opponent_rank": 124,
+      "opponent_name": "John `Grey` Gillispie",
+      "method": "Fall 0:49"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35238094132",
+      "opponent_name": "John `Grey` Gillispie",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": 136,
+      "opponent_weight": 138,
+      "opponent_rank": 124,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35223096132",
+      "opponent_name": "Memphis Adams",
+      "opponent_team": "Hart County",
+      "opponent_team_rank": 91,
+      "opponent_weight": 138,
+      "opponent_rank": 100,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:53",
+      "event": "Bear Down Invitational (Boys)"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35001142132",
       "opponent_name": "CJ Hogan",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 138,
-      "opponent_rank": 98,
+      "opponent_rank": 99,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -67,7 +97,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 138,
-      "opponent_rank": 131,
+      "opponent_rank": 130,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -76,13 +106,28 @@
       "event": "Tates Creek Invitational"
     },
     {
+      "date": "2026-01-03",
+      "opponent_id": "35421050132",
+      "opponent_name": "Brayden Stephens",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 138,
+      "opponent_rank": 33,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:48",
+      "event": "Tates Creek Invitational"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35562998132",
       "opponent_name": "Paul Jones",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 138,
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -95,9 +140,9 @@
       "opponent_id": "35433757132",
       "opponent_name": "Fahad Younus",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 96,
+      "opponent_team_rank": 99,
       "opponent_weight": 138,
-      "opponent_rank": 176,
+      "opponent_rank": 171,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -110,9 +155,9 @@
       "opponent_id": "35325168132",
       "opponent_name": "Braylan Pennington",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 101,
+      "opponent_team_rank": 103,
       "opponent_weight": 138,
-      "opponent_rank": 70,
+      "opponent_rank": 96,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -125,9 +170,9 @@
       "opponent_id": "35180754132",
       "opponent_name": "Nathan Myers",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 132,
-      "opponent_rank": 54,
+      "opponent_rank": 50,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -142,7 +187,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 132,
-      "opponent_rank": 56,
+      "opponent_rank": 52,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -164,6 +209,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Rowan County"
+    }
+  ],
+  "career": {
+    "career_id": "career_005363",
+    "canonical_name": "Camden Graichen",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "East Jessamine",
+      "record": "3-8",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

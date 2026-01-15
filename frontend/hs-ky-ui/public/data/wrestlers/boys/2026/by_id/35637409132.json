@@ -6,53 +6,83 @@
   "team_rank": 19,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 89,
+  "current_rank": 92,
   "record": {
-    "overall": "3-5",
-    "vs_ranked": "1-5",
+    "overall": "5-6",
+    "vs_ranked": "3-6",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 17.0,
-    "pa7": 2.0,
-    "pd7": 15.0,
-    "si_plus": 101.3,
-    "df_plus": 114.7,
-    "apr_plus": 87.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.333,
+    "pf7": 11.5,
+    "pa7": 3.5,
+    "pd7": 8.0,
+    "si_plus": 104.0,
+    "df_plus": 111.3,
+    "apr_plus": 89.9,
+    "pin_rate": 0.2,
+    "bonus_rate": 0.4,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_wins": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35404068132",
-      "opponent_rank": 142,
-      "opponent_name": "Brooklyn Brown",
-      "method": "TF 17-2 0:00"
+      "opponent_id": "35207462132",
+      "opponent_rank": 122,
+      "opponent_name": "Easton McGee",
+      "method": "Fall 4:18"
     },
     "worst_loss": {
-      "opponent_id": "35207000132",
-      "opponent_rank": 88,
-      "opponent_name": "Bryson Kraner",
-      "method": "Fall 0:00"
+      "opponent_id": "35637931132",
+      "opponent_rank": 91,
+      "opponent_name": "Zac Mullins",
+      "method": "Fall 2:07"
     }
   },
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "35206865132",
+      "opponent_name": "Trenton Lay",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 120,
+      "opponent_rank": 154,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "Maroon`s New Year Brawl"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35207462132",
+      "opponent_name": "Easton McGee",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 120,
+      "opponent_rank": 122,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:18",
+      "event": "Maroon`s New Year Brawl"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "34993883132",
       "opponent_name": "Prestyn Walls",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 87,
       "opponent_weight": 120,
-      "opponent_rank": 22,
+      "opponent_rank": 20,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -61,13 +91,28 @@
       "event": "Maroon`s New Year Brawl"
     },
     {
+      "date": "2026-01-03",
+      "opponent_id": "35637931132",
+      "opponent_name": "Zac Mullins",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 120,
+      "opponent_rank": 91,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:07",
+      "event": "Maroon`s New Year Brawl"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35207000132",
       "opponent_name": "Bryson Kraner",
       "opponent_team": "Adair County",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 56,
       "opponent_weight": 120,
-      "opponent_rank": 88,
+      "opponent_rank": 90,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -80,9 +125,9 @@
       "opponent_id": "35144524132",
       "opponent_name": "Hailey Garner",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 120,
-      "opponent_rank": 62,
+      "opponent_rank": 65,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -95,9 +140,9 @@
       "opponent_id": "35404068132",
       "opponent_name": "Brooklyn Brown",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 120,
-      "opponent_rank": 142,
+      "opponent_rank": 147,
       "weight_class": "120",
       "result": "W",
       "method": "TF",
@@ -125,9 +170,9 @@
       "opponent_id": "34995408132",
       "opponent_name": "Preston Grigsby",
       "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 99,
+      "opponent_team_rank": 35,
       "opponent_weight": 120,
-      "opponent_rank": 59,
+      "opponent_rank": 54,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -140,7 +185,7 @@
       "opponent_id": "OUTSTATE_03df3d5dc726",
       "opponent_name": "R-forfeit E-Forfeit",
       "opponent_team": "Butler",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 65,
       "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "120",
@@ -157,7 +202,7 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 120,
-      "opponent_rank": 67,
+      "opponent_rank": 70,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -166,9 +211,21 @@
       "event": "The Beast of the East"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_005638",
+    "canonical_name": "Dylan Withers",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Russell County",
+      "record": "5-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

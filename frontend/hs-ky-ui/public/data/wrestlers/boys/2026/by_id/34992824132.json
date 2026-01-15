@@ -6,38 +6,109 @@
   "team_rank": 1,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 221,
+  "current_rank": 168,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "2-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pf7": 4.0,
+    "pa7": 10.0,
+    "pd7": -6.0,
+    "si_plus": 91.0,
+    "df_plus": 101.2,
+    "apr_plus": 102.3,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35030252132",
+      "opponent_rank": 26,
+      "opponent_name": "Quentin Troxell",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34997616132",
+      "opponent_rank": 53,
+      "opponent_name": "Hagen Anders",
+      "method": "TF 15-0 0:00"
+    }
   },
-  "match_list": [],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35030252132",
+      "opponent_name": "Quentin Troxell",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 120,
+      "opponent_weight": 113,
+      "opponent_rank": 26,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Pulaski County",
+      "mv_impact": 6.88
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34997616132",
+      "opponent_name": "Hagen Anders",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 69,
+      "opponent_weight": 120,
+      "opponent_rank": 53,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "vs. Corbin",
+      "mv_impact": -3.94
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35420479132",
+      "opponent_name": "Gabe Woods",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 126,
+      "opponent_rank": 124,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "vs. Whitley County",
+      "mv_impact": 0.29
+    }
+  ],
+  "career": {
+    "career_id": "career_005239",
+    "canonical_name": "Lyla Smith",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Boyle County",
+      "record": "2-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

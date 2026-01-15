@@ -3,12 +3,12 @@
   "name": "Amiya Hill",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 15,
+  "team_rank": 12,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 59,
+  "current_rank": 68,
   "record": {
-    "overall": "0-1",
+    "overall": "2-3",
     "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,14 +17,14 @@
     "pf7": 13.0,
     "pa7": 21.0,
     "pd7": -8.0,
-    "si_plus": 96.2,
-    "df_plus": 97.3,
-    "apr_plus": 87.2,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 96.3,
+    "df_plus": 98.7,
+    "apr_plus": 86.2,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 0
+    "techs": 1,
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,32 +34,91 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35884736132",
-      "opponent_rank": 44,
+      "opponent_rank": 48,
       "opponent_name": "Zoey Wengard",
       "method": "Fall 1:23"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-02",
+      "opponent_id": "35244972132",
+      "opponent_name": "Madelyn Edler",
+      "opponent_team": "Waterloo (H.S.)",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "Marion Wildcats Girls Invitational"
+    },
+    {
+      "date": "2026-01-02",
+      "opponent_id": "35520844132",
+      "opponent_name": "Roxie Royster",
+      "opponent_team": "Murphysboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Marion Wildcats Girls Invitational"
+    },
+    {
+      "date": "2026-01-02",
+      "opponent_id": "35713704132",
+      "opponent_name": "Kolbie Wortman",
+      "opponent_team": "West Frankfort (Frankfort)",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "0:00",
+      "event": "Marion Wildcats Girls Invitational"
+    },
+    {
       "date": "2025-12-12",
       "opponent_id": "35884736132",
       "opponent_name": "Zoey Wengard",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 132,
-      "opponent_rank": 44,
+      "opponent_rank": 48,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:23",
-      "event": "Sister Slam",
-      "mv_impact": -6.1
+      "event": "Sister Slam"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35430076132",
+      "opponent_name": "Peyton Applehans",
+      "opponent_team": "Carterville",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "Sister Slam"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1923076923076923
+    "top33_bonus_ev_shrunk": 1.7734375
   }
 }

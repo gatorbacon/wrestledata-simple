@@ -3,70 +3,114 @@
   "name": "Wyatt Blackmore",
   "team": "Grant County",
   "team_slug": "grant_county",
-  "team_rank": 81,
+  "team_rank": 86,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 75,
+  "current_rank": 69,
   "record": {
-    "overall": "3-4",
-    "vs_ranked": "3-4",
+    "overall": "5-5",
+    "vs_ranked": "4-5",
     "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 1.0,
     "pa7": 11.0,
     "pd7": -10.0,
-    "si_plus": 84.5,
-    "df_plus": 98.5,
-    "apr_plus": 104.1,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "si_plus": 85.3,
+    "df_plus": 97.6,
+    "apr_plus": 103.9,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 4,
+    "ranked_wins": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35611608132",
-      "opponent_rank": 76,
-      "opponent_name": "Asa Greiwe",
-      "method": "Fall 0:00"
+      "opponent_id": "35215012132",
+      "opponent_rank": 74,
+      "opponent_name": "Zayden Courts",
+      "method": "Fall 1:10"
     },
     "worst_loss": {
-      "opponent_id": "34989026132",
-      "opponent_rank": 71,
-      "opponent_name": "Josh Athey",
+      "opponent_id": "35225590132",
+      "opponent_rank": 67,
+      "opponent_name": "Hank Davis",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35215012132",
+      "opponent_name": "Zayden Courts",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 9,
+      "opponent_weight": 106,
+      "opponent_rank": 74,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "vs. Grant County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Holmes"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35542286132",
+      "opponent_name": "Bryant Brinkman",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 14,
+      "opponent_weight": 113,
+      "opponent_rank": 1,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:36",
+      "event": "vs. Ryle"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35611608132",
       "opponent_name": "Asa Greiwe",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 106,
-      "opponent_rank": 76,
+      "opponent_rank": 82,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 3.36
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35225590132",
       "opponent_name": "Hank Davis",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 85,
       "opponent_weight": 106,
       "opponent_rank": 67,
       "weight_class": "106",
@@ -74,40 +118,37 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -7.02
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35405958132",
       "opponent_name": "Tanner Magee",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 86,
       "opponent_weight": 106,
-      "opponent_rank": 16,
+      "opponent_rank": 18,
       "weight_class": "106",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -1.25
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35359593132",
       "opponent_name": "Susie Beeken",
       "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 112,
+      "opponent_team_rank": 114,
       "opponent_weight": 106,
-      "opponent_rank": 84,
+      "opponent_rank": 92,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 3.23
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-11-29",
@@ -116,51 +157,60 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 106,
-      "opponent_rank": 82,
+      "opponent_rank": 89,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Tommy Castle Classic",
-      "mv_impact": 2.98
+      "event": "Tommy Castle Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34994868132",
       "opponent_name": "oliver westphal",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 106,
-      "opponent_rank": 10,
+      "opponent_rank": 12,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Tommy Castle Classic",
-      "mv_impact": -1.92
+      "event": "Tommy Castle Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34989026132",
       "opponent_name": "Josh Athey",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 106,
-      "opponent_rank": 71,
+      "opponent_rank": 56,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Tommy Castle Classic",
-      "mv_impact": -7.55
+      "event": "Tommy Castle Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  "career": {
+    "career_id": "career_005411",
+    "canonical_name": "Wyatt Blackmore",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Grant County",
+      "record": "5-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,7 +3,7 @@
   "name": "Jayden Pointer",
   "team": "Boone County",
   "team_slug": "boone_county",
-  "team_rank": 7,
+  "team_rank": 6,
   "weight_class": 285,
   "year": 2026,
   "current_rank": 2,
@@ -51,9 +51,39 @@
       "event": "vs. Union County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.25
-  }
+  "career": {
+    "career_id": "career_000207",
+    "canonical_name": "Jayden Pointer",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Boone County",
+      "record": "1-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Boone County",
+      "record": "54-6",
+      "regional_place": 1,
+      "state_place": 5
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Boone County",
+      "record": "31-14",
+      "regional_place": 3,
+      "state_place": null
+    }
+  ]
 }

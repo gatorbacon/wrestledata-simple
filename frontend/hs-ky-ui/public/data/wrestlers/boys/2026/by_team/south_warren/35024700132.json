@@ -3,13 +3,13 @@
   "name": "Ethan Coyt",
   "team": "South Warren",
   "team_slug": "south_warren",
-  "team_rank": 126,
+  "team_rank": 38,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 133,
+  "current_rank": 126,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "0-1",
+    "overall": "2-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,20 +18,25 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 85.6,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "df_plus": 102.0,
+    "apr_plus": 94.8,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34988667132",
+      "opponent_rank": 137,
+      "opponent_name": "John Hamilton",
+      "method": "Fall 3:22"
+    },
     "worst_loss": {
       "opponent_id": "35192416132",
       "opponent_rank": 87,
@@ -40,6 +45,21 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34988667132",
+      "opponent_name": "John Hamilton",
+      "opponent_team": "Trinity (Whitesville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 137,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:22",
+      "event": "vs. Trinity (Whitesville)"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -60,7 +80,7 @@
       "opponent_id": "35192416132",
       "opponent_name": "Bryan Mooser",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
+      "opponent_team_rank": 102,
       "opponent_weight": 138,
       "opponent_rank": 87,
       "weight_class": "132",
@@ -69,6 +89,23 @@
       "score": null,
       "duration": "2:54",
       "event": "vs. South Warren"
+    }
+  ],
+  "career": {
+    "career_id": "career_005687",
+    "canonical_name": "Ethan Coyt",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "South Warren",
+      "record": "3-1",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

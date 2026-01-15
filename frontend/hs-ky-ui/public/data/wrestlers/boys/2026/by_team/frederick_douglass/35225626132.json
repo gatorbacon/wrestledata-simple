@@ -3,37 +3,37 @@
   "name": "Trenton rexroad",
   "team": "Frederick Douglass",
   "team_slug": "frederick_douglass",
-  "team_rank": 80,
+  "team_rank": 85,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 144,
+  "current_rank": 140,
   "record": {
-    "overall": "1-7",
-    "vs_ranked": "1-7",
+    "overall": "2-8",
+    "vs_ranked": "1-8",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 93.8,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "df_plus": 102.0,
+    "apr_plus": 93.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
     "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 7,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35281518132",
-      "opponent_rank": 91,
+      "opponent_rank": 61,
       "opponent_name": "Raphael Vaughn",
       "method": "Fall 0:00"
     },
@@ -46,59 +46,86 @@
   },
   "match_list": [
     {
-      "date": "2025-12-13",
-      "opponent_id": "34997794132",
-      "opponent_name": "Vincent Willis",
-      "opponent_team": "Western",
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35081199132",
+      "opponent_name": "Msabaha Sumaili",
+      "opponent_team": "Henry Clay",
       "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": 26,
+      "opponent_rank": 16,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:34",
-      "event": "King of the Bluegrass",
-      "mv_impact": -3.56
+      "duration": "0:00",
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35321122132",
       "opponent_name": "Liam Sharpe",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
-      "opponent_weight": 165,
-      "opponent_rank": 70,
+      "opponent_team_rank": 111,
+      "opponent_weight": 157,
+      "opponent_rank": 53,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:35",
-      "event": "King of the Bluegrass",
-      "mv_impact": -6.0
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34997794132",
+      "opponent_name": "Vincent Willis",
+      "opponent_team": "Western",
+      "opponent_team_rank": 40,
+      "opponent_weight": 165,
+      "opponent_rank": 28,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-10",
       "opponent_id": "34994792132",
       "opponent_name": "Aiden Trammell",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 165,
-      "opponent_rank": 44,
+      "opponent_rank": 47,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:00",
-      "event": "vs. Spencer County",
-      "mv_impact": -4.68
+      "event": "vs. Spencer County"
     },
     {
       "date": "2025-12-10",
       "opponent_id": "35051560132",
       "opponent_name": "Yordin Flores",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 175,
       "opponent_rank": 115,
       "weight_class": "175",
@@ -106,72 +133,84 @@
       "method": "FALL",
       "score": null,
       "duration": "2:50",
-      "event": "vs. Woodford County",
-      "mv_impact": -8.78
+      "event": "vs. Woodford County"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35359881132",
       "opponent_name": "Matthew Box",
       "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 112,
+      "opponent_team_rank": 114,
       "opponent_weight": 175,
-      "opponent_rank": 54,
+      "opponent_rank": 47,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -6.3
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35368116132",
       "opponent_name": "Austin McHone",
       "opponent_team": "Somerset",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 31,
       "opponent_weight": 175,
-      "opponent_rank": 55,
+      "opponent_rank": 48,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -5.82
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35222658132",
       "opponent_name": "Mijaia Dunn",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 175,
-      "opponent_rank": 24,
+      "opponent_rank": 19,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Mercer County",
-      "mv_impact": -2.96
+      "event": "vs. Mercer County"
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35281518132",
       "opponent_name": "Raphael Vaughn",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 175,
-      "opponent_rank": 91,
+      "opponent_rank": 61,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglass",
-      "mv_impact": 4.54
+      "event": "vs. Frederick Douglass"
+    }
+  ],
+  "career": {
+    "career_id": "career_005407",
+    "canonical_name": "Trenton rexroad",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Frederick Douglass",
+      "record": "2-9",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

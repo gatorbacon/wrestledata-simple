@@ -3,13 +3,13 @@
   "name": "BERKLEY OVERBEY",
   "team": "Madison Central",
   "team_slug": "madison_central",
-  "team_rank": 11,
+  "team_rank": 17,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 54,
+  "current_rank": 55,
   "record": {
-    "overall": "5-0",
-    "vs_ranked": "5-0",
+    "overall": "6-1",
+    "vs_ranked": "5-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,92 +17,123 @@
     "pf7": 9.0,
     "pa7": 6.0,
     "pd7": 3.0,
-    "si_plus": 100.0,
-    "df_plus": 107.5,
-    "apr_plus": 116.1,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "si_plus": 99.8,
+    "df_plus": 107.6,
+    "apr_plus": 113.1,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
     "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35338098132",
-      "opponent_rank": 60,
-      "opponent_name": "Camden Luttrell",
-      "method": "Fall 3:16"
+      "opponent_id": "35746154132",
+      "opponent_rank": 37,
+      "opponent_name": "Isaiah Mitchell",
+      "method": "Fall 4:27"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35081198132",
+      "opponent_rank": 37,
+      "opponent_name": "Elliot Ortinski",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35081198132",
+      "opponent_name": "Elliot Ortinski",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 34,
+      "opponent_weight": 138,
+      "opponent_rank": 37,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Madison Central"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35281342132",
       "opponent_name": "Waylon Webster",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 138,
-      "opponent_rank": 113,
+      "opponent_rank": 114,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:38",
-      "event": "The Beast of the East",
-      "mv_impact": 3.13
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35746154132",
       "opponent_name": "Isaiah Mitchell",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 132,
-      "opponent_rank": 86,
+      "opponent_rank": 37,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:27",
-      "event": "The Beast of the East",
-      "mv_impact": 6.19
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35768114132",
       "opponent_name": "Brennan Laboy",
       "opponent_team": "Fort Knox",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 83,
       "opponent_weight": 138,
-      "opponent_rank": 117,
+      "opponent_rank": 118,
       "weight_class": "138",
       "result": "W",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "The Beast of the East",
-      "mv_impact": 0.0
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35639351132",
       "opponent_name": "Abdi Mohamud",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 138,
-      "opponent_rank": 84,
+      "opponent_rank": 83,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:22",
-      "event": "The Beast of the East",
-      "mv_impact": 5.86
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
@@ -111,19 +142,30 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 138,
-      "opponent_rank": 60,
+      "opponent_rank": 64,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:16",
-      "event": "The Beast of the East",
-      "mv_impact": 6.09
+      "event": "The Beast of the East"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_005517",
+    "canonical_name": "BERKLEY OVERBEY",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Madison Central",
+      "record": "6-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

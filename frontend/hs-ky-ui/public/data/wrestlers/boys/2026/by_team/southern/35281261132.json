@@ -3,23 +3,23 @@
   "name": "Benjamin Holt",
   "team": "Southern",
   "team_slug": "southern",
-  "team_rank": 127,
+  "team_rank": 54,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 94,
+  "current_rank": 92,
   "record": {
     "overall": "3-3",
     "vs_ranked": "2-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 100.8,
+    "df_plus": 102.0,
+    "apr_plus": 101.9,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -33,15 +33,15 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35205983132",
-      "opponent_rank": 140,
+      "opponent_rank": 148,
       "opponent_name": "Aaron Bricarello",
       "method": "Fall 4:18"
     },
     "worst_loss": {
-      "opponent_id": "34995380132",
-      "opponent_rank": 80,
-      "opponent_name": "Levi Howard",
-      "method": "Fall 4:35"
+      "opponent_id": "35001150132",
+      "opponent_rank": 70,
+      "opponent_name": "Giazzi Segarra",
+      "method": "Fall 2:48"
     }
   },
   "match_list": [
@@ -50,9 +50,9 @@
       "opponent_id": "35090033132",
       "opponent_name": "Alan Rivera",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 175,
-      "opponent_rank": 37,
+      "opponent_rank": 36,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35282007132",
       "opponent_name": "Prince Holt",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 144,
-      "opponent_rank": 187,
+      "opponent_rank": 183,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -77,27 +77,12 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35001150132",
-      "opponent_name": "Giazzi Segarra",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
-      "opponent_weight": 150,
-      "opponent_rank": 25,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:48",
-      "event": "The Beast of the East"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "34995380132",
       "opponent_name": "Levi Howard",
       "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 99,
-      "opponent_weight": 150,
-      "opponent_rank": 80,
+      "opponent_team_rank": 35,
+      "opponent_weight": 144,
+      "opponent_rank": 51,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -107,12 +92,27 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35001150132",
+      "opponent_name": "Giazzi Segarra",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 11,
+      "opponent_weight": 150,
+      "opponent_rank": 70,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "The Beast of the East"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35205983132",
       "opponent_name": "Aaron Bricarello",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 150,
-      "opponent_rank": 140,
+      "opponent_rank": 148,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -125,7 +125,7 @@
       "opponent_id": "OUTSTATE_164629d5f467",
       "opponent_name": "forfeit B- Forfeit",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "150",
@@ -134,6 +134,23 @@
       "score": null,
       "duration": "7:00",
       "event": "The Beast of the East"
+    }
+  ],
+  "career": {
+    "career_id": "career_005114",
+    "canonical_name": "Benjamin Holt",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Southern",
+      "record": "3-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

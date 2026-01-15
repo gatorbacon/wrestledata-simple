@@ -6,7 +6,7 @@
   "team_rank": 131,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 72,
+  "current_rank": 75,
   "record": {
     "overall": "1-1",
     "vs_ranked": "1-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 104.3,
+    "df_plus": 102.0,
+    "apr_plus": 103.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35557505132",
-      "opponent_rank": 112,
+      "opponent_rank": 127,
       "opponent_name": "Harlem Hogan",
       "method": "Fall 2:08"
     },
     "worst_loss": {
       "opponent_id": "35458961132",
-      "opponent_rank": 30,
+      "opponent_rank": 36,
       "opponent_name": "Rodrigo Galindo",
       "method": "Fall 1:25"
     }
@@ -50,37 +50,49 @@
       "opponent_id": "35458961132",
       "opponent_name": "Rodrigo Galindo",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 28,
       "opponent_weight": 120,
-      "opponent_rank": 30,
+      "opponent_rank": 36,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:25",
       "event": "King of the Bluegrass",
-      "mv_impact": -5.75
+      "mv_impact": -6.13
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35557505132",
       "opponent_name": "Harlem Hogan",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
-      "opponent_weight": 120,
-      "opponent_rank": 112,
+      "opponent_team_rank": 40,
+      "opponent_weight": 113,
+      "opponent_rank": 127,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:08",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 2.15
+      "mv_impact": 3.05
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_005726",
+    "canonical_name": "Joseph Conely",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Trinity (Louisville)",
+      "record": "1-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

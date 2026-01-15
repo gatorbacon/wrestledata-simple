@@ -3,14 +3,14 @@
   "name": "RENZO WATTS",
   "team": "Madison Central",
   "team_slug": "madison_central",
-  "team_rank": 11,
+  "team_rank": 17,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 80,
+  "current_rank": 83,
   "record": {
     "overall": "3-3",
     "vs_ranked": "1-3",
-    "vs_top10": "0-2",
+    "vs_top10": "0-1",
     "vs_top25": "0-3"
   },
   "metrics": {
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 103.4,
+    "df_plus": 102.0,
+    "apr_plus": 103.9,
     "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -30,16 +30,16 @@
     "ranked_wins": 1,
     "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34989474132",
-      "opponent_rank": 95,
+      "opponent_rank": 99,
       "opponent_name": "Colton Reed",
       "method": "Fall 1:27"
     },
     "worst_loss": {
       "opponent_id": "35488260132",
-      "opponent_rank": 19,
+      "opponent_rank": 23,
       "opponent_name": "Emilio Rodriguez",
       "method": "M. For."
     }
@@ -50,9 +50,9 @@
       "opponent_id": "34989474132",
       "opponent_name": "Colton Reed",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 120,
-      "opponent_rank": 95,
+      "opponent_rank": 99,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35488260132",
       "opponent_name": "Emilio Rodriguez",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 44,
       "opponent_weight": 120,
-      "opponent_rank": 19,
+      "opponent_rank": 23,
       "weight_class": "120",
       "result": "L",
       "method": "MFF",
@@ -80,9 +80,9 @@
       "opponent_id": "35542260132",
       "opponent_name": "Aiden Brinkman",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 120,
-      "opponent_rank": 5,
+      "opponent_rank": 6,
       "weight_class": "120",
       "result": "L",
       "method": "INJ",
@@ -125,9 +125,9 @@
       "opponent_id": "35051530132",
       "opponent_name": "Brycen Gray",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 120,
-      "opponent_rank": 9,
+      "opponent_rank": 11,
       "weight_class": "120",
       "result": "L",
       "method": "MFF",
@@ -136,9 +136,39 @@
       "event": "2025 Ryle Raider Rumble"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_001495",
+    "canonical_name": "RENZO WATTS",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Madison Central",
+      "record": "3-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Madison Central",
+      "record": "18-11",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Madison Central",
+      "record": "1-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

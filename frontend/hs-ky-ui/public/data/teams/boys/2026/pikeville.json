@@ -14,42 +14,42 @@
     "region": "8"
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818305150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818305150",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.270309Z",
+  "generated_at_utc": "2026-01-15T13:34:37.334399Z",
   "starters": {
     "138": {
       "weight": 138,
       "wrestler_id": "36571497132",
       "name": "Jaxon Scott",
-      "current_rank": 29,
-      "xtp": 1.54,
+      "current_rank": 28,
+      "xtp": 1.52,
       "xtp_p": 0.18,
       "xtp_a": 0.49,
-      "xtp_b": 0.87,
+      "xtp_b": 0.85,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
         "wins": 1,
-        "losses": 2
+        "losses": 3
       }
     },
     "144": {
       "weight": 144,
       "wrestler_id": "36571493132",
       "name": "Cooper Scott",
-      "current_rank": 27,
-      "xtp": 1.74,
+      "current_rank": 29,
+      "xtp": 1.76,
       "xtp_p": 0.2,
       "xtp_a": 0.54,
-      "xtp_b": 1.0,
+      "xtp_b": 1.02,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -59,29 +59,11 @@
         "losses": 2
       }
     },
-    "157": {
-      "weight": 157,
-      "wrestler_id": "36571495132",
-      "name": "Gabriel Farthing",
-      "current_rank": 173,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      }
-    },
     "165": {
       "weight": 165,
-      "wrestler_id": "36642496132",
-      "name": "Max Hunt",
-      "current_rank": 165,
+      "wrestler_id": "36571495132",
+      "name": "Gabriel Farthing",
+      "current_rank": 153,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -92,14 +74,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       }
     },
     "175": {
       "weight": 175,
       "wrestler_id": "36571492132",
       "name": "Ethan Richardson",
-      "current_rank": 190,
+      "current_rank": 183,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -117,7 +99,7 @@
       "weight": 215,
       "wrestler_id": "36642780132",
       "name": "Houston Smith",
-      "current_rank": 200,
+      "current_rank": 194,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -135,7 +117,7 @@
       "weight": 285,
       "wrestler_id": "36642409132",
       "name": "Cagan Hurley",
-      "current_rank": 314,
+      "current_rank": 213,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -152,11 +134,11 @@
   },
   "remaining": [
     {
-      "weight": 138,
+      "weight": 144,
       "wrestler_id": "36642989132",
       "name": "Javan Dotson",
       "wins": 0,
-      "losses": 0,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -168,6 +150,15 @@
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "36642496132",
+      "name": "Max Hunt",
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
     }
   ],
   "team_metrics": {
@@ -181,8 +172,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 11,
-      "losses": 11
+      "wins": 16,
+      "losses": 12
     },
     "top33": {
       "wins": 3,
@@ -193,18 +184,18 @@
       "losses": 0
     },
     "bonus_rate": {
-      "value": 0.818,
-      "rank": 41,
+      "value": 0.812,
+      "rank": 44,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.818,
-      "rank": 7,
+      "value": 0.812,
+      "rank": 9,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 138,
+      "rank": 139,
       "rank_scope": "league"
     }
   }

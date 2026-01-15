@@ -3,13 +3,13 @@
   "name": "Shawn Metcalf",
   "team": "Eastern",
   "team_slug": "eastern",
-  "team_rank": 73,
+  "team_rank": 79,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 135,
+  "current_rank": 143,
   "record": {
-    "overall": "1-3",
-    "vs_ranked": "0-3",
+    "overall": "1-6",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 87.8,
+    "df_plus": 102.0,
+    "apr_plus": 89.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,48 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35946253132",
-      "opponent_rank": 93,
+      "opponent_rank": 101,
       "opponent_name": "Christopher Roller",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35668546132",
+      "opponent_name": "Tehran Bahrami",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 106,
+      "opponent_rank": 48,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35565689132",
+      "opponent_name": "Ignatius Wright",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 18,
+      "opponent_weight": 106,
+      "opponent_rank": 35,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "2026 Lou City Wrestling"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -57,12 +87,27 @@
     },
     {
       "date": "2025-12-20",
+      "opponent_id": "35046252132",
+      "opponent_name": "Elnar Kamalov",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": 15,
+      "opponent_weight": 106,
+      "opponent_rank": 40,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Jeffersontown"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "35946253132",
       "opponent_name": "Christopher Roller",
       "opponent_team": "Valley",
       "opponent_team_rank": 132,
       "opponent_weight": 106,
-      "opponent_rank": 93,
+      "opponent_rank": 101,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -75,9 +120,9 @@
       "opponent_id": "35281302132",
       "opponent_name": "Cameron Michel",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 106,
-      "opponent_rank": 40,
+      "opponent_rank": 45,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -92,7 +137,7 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 106,
-      "opponent_rank": 87,
+      "opponent_rank": 95,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -101,9 +146,21 @@
       "event": "The Beast of the East"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  "career": {
+    "career_id": "career_004978",
+    "canonical_name": "Shawn Metcalf",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Eastern",
+      "record": "3-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

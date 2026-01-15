@@ -6,10 +6,10 @@
   "team_rank": 137,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 88,
+  "current_rank": 57,
   "record": {
     "overall": "6-5",
-    "vs_ranked": "4-4",
+    "vs_ranked": "3-4",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
@@ -17,9 +17,9 @@
     "pf7": 12.5,
     "pa7": 6.0,
     "pd7": 6.5,
-    "si_plus": 91.9,
-    "df_plus": 101.5,
-    "apr_plus": 100.4,
+    "si_plus": 91.3,
+    "df_plus": 101.4,
+    "apr_plus": 100.7,
     "pin_rate": 0.667,
     "bonus_rate": 0.833,
     "majors": 0,
@@ -27,19 +27,19 @@
     "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 3,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35576566132",
-      "opponent_rank": 90,
+      "opponent_rank": 58,
       "opponent_name": "Joel Diaz",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35562998132",
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "opponent_name": "Paul Jones",
       "method": "Fall 3:10"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35599164132",
       "opponent_name": "Julius Parriman",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 138,
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "weight_class": "138",
       "result": "L",
       "method": "MD",
@@ -65,9 +65,9 @@
       "opponent_id": "35144519132",
       "opponent_name": "Gabriel Ditto",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 138,
-      "opponent_rank": 28,
+      "opponent_rank": 26,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35562998132",
       "opponent_name": "Paul Jones",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 138,
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -92,27 +92,12 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35064911132",
-      "opponent_name": "Nathaniel Pingle",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 132,
-      "opponent_rank": 100,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:57",
-      "event": "vs. Western Hills"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "34988667132",
       "opponent_name": "John Hamilton",
       "opponent_team": "Trinity (Whitesville)",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 139,
+      "opponent_rank": 137,
       "weight_class": "138",
       "result": "W",
       "method": "TF",
@@ -137,12 +122,27 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35064911132",
+      "opponent_name": "Nathaniel Pingle",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:57",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35223401132",
       "opponent_name": "Elijah Davidson",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 144,
-      "opponent_rank": 169,
+      "opponent_rank": 137,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35519947132",
       "opponent_name": "Nolan Link",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 108,
       "opponent_weight": 138,
-      "opponent_rank": 4,
+      "opponent_rank": 7,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -170,9 +170,9 @@
       "opponent_id": "35576566132",
       "opponent_name": "Joel Diaz",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 87,
       "opponent_weight": 138,
-      "opponent_rank": 90,
+      "opponent_rank": 58,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -211,9 +211,30 @@
       "event": "vs. Jeffersonville"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_004480",
+    "canonical_name": "Finn Aranilla",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Western Hills",
+      "record": "6-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Western Hills",
+      "record": "4-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

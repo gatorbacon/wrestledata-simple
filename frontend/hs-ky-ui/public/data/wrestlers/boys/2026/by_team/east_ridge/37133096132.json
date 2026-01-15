@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "37133096132",
+  "name": "Evan Ratliff",
+  "team": "East Ridge",
+  "team_slug": "east_ridge",
+  "team_rank": 78,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": 140,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 95.2,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35635536132",
+      "opponent_rank": 142,
+      "opponent_name": "Damien Parsons",
+      "method": "Fall 1:10"
+    },
+    "worst_loss": {
+      "opponent_id": "35732595132",
+      "opponent_rank": 25,
+      "opponent_name": "James Begley",
+      "method": "Fall 1:17"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35732595132",
+      "opponent_name": "James Begley",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 175,
+      "opponent_rank": 25,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35635536132",
+      "opponent_name": "Damien Parsons",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 88,
+      "opponent_weight": 175,
+      "opponent_rank": 142,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36230014132",
+      "opponent_name": "Braxton Jones",
+      "opponent_team": "Tug Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:01",
+      "event": "Clipson Jones Classic 2026"
+    }
+  ]
+}

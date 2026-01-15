@@ -3,56 +3,131 @@
   "name": "Connor Warner",
   "team": "Simon Kenton",
   "team_slug": "simon_kenton",
-  "team_rank": 31,
+  "team_rank": 30,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 7,
+  "current_rank": 8,
   "record": {
-    "overall": "14-5",
-    "vs_ranked": "3-1",
-    "vs_top10": "0-1",
-    "vs_top25": "1-1"
+    "overall": "18-6",
+    "vs_ranked": "4-2",
+    "vs_top10": "0-2",
+    "vs_top25": "1-2"
   },
   "metrics": {
-    "pf7": 8.0,
-    "pa7": 10.0,
-    "pd7": -2.0,
-    "si_plus": 92.7,
-    "df_plus": 101.7,
-    "apr_plus": 106.8,
-    "pin_rate": 0.643,
-    "bonus_rate": 0.786,
-    "majors": 1,
-    "techs": 1,
-    "pins": 9
+    "pf7": 4.0,
+    "pa7": 8.0,
+    "pd7": -4.0,
+    "si_plus": 93.6,
+    "df_plus": 104.2,
+    "apr_plus": 107.6,
+    "pin_rate": 0.556,
+    "bonus_rate": 0.833,
+    "majors": 2,
+    "techs": 3,
+    "pins": 10
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 1,
+    "ranked_wins": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "34992812132",
-      "opponent_rank": 21,
+      "opponent_rank": 24,
       "opponent_name": "Jax Reynolds",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35542260132",
-      "opponent_rank": 5,
+      "opponent_rank": 6,
       "opponent_name": "Aiden Brinkman",
       "method": "Dec 10-8"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35156565132",
+      "opponent_name": "Antonio Arreaga",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 120,
+      "opponent_rank": 150,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34988547132",
+      "opponent_name": "Keaton Dicken",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 120,
+      "opponent_rank": 4,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_5c742208f38b",
+      "opponent_name": "Dillon Ditton",
+      "opponent_team": "Oak Hills High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "3:45",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_7e3e84633473",
+      "opponent_name": "Jack Hayden",
+      "opponent_team": "William Mason High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_4426b55d60a0",
+      "opponent_name": "Cain Hopkins",
+      "opponent_team": "South Dearborn",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "4:08",
+      "event": "2026 CIWT"
+    },
+    {
       "date": "2025-12-21",
       "opponent_id": "35542260132",
       "opponent_name": "Aiden Brinkman",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 120,
-      "opponent_rank": 5,
+      "opponent_rank": 6,
       "weight_class": "120",
       "result": "L",
       "method": "DEC",
@@ -277,7 +352,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 106,
-      "opponent_rank": 21,
+      "opponent_rank": 24,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -290,9 +365,9 @@
       "opponent_id": "35672522132",
       "opponent_name": "joel fowler",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 22,
       "opponent_weight": 120,
-      "opponent_rank": 126,
+      "opponent_rank": 129,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -305,9 +380,9 @@
       "opponent_id": "35658408132",
       "opponent_name": "Dominick Wright",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 120,
-      "opponent_rank": 143,
+      "opponent_rank": 148,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -331,9 +406,39 @@
       "event": "vs. North Oldham"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8998015873015873
-  }
+  "career": {
+    "career_id": "career_002447",
+    "canonical_name": "Connor Warner",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Simon Kenton",
+      "record": "20-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Simon Kenton",
+      "record": "34-11",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Simon Kenton",
+      "record": "26-22",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

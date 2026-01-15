@@ -3,13 +3,13 @@
   "name": "Santigo Cano",
   "team": "Russellville",
   "team_slug": "russellville",
-  "team_rank": 121,
+  "team_rank": 123,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 98,
+  "current_rank": 105,
   "record": {
-    "overall": "2-2",
-    "vs_ranked": "1-0",
+    "overall": "2-3",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 102.5,
+    "df_plus": 102.0,
+    "apr_plus": 100.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,33 +28,52 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35192437132",
-      "opponent_rank": 133,
+      "opponent_rank": 141,
       "opponent_name": "Kyle Mooser",
       "method": "Fall 1:46"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35007898132",
+      "opponent_rank": 30,
+      "opponent_name": "Cy Jackson",
+      "method": "Fall 0:21"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-13",
+      "opponent_id": "35007898132",
+      "opponent_name": "Cy Jackson",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 190,
+      "opponent_rank": 30,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:21",
+      "event": "vs. South Warren"
+    },
     {
       "date": "2025-12-09",
       "opponent_id": "35192437132",
       "opponent_name": "Kyle Mooser",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
+      "opponent_team_rank": 102,
       "opponent_weight": 190,
-      "opponent_rank": 133,
+      "opponent_rank": 141,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:46",
-      "event": "vs. Russellville",
-      "mv_impact": 1.45
+      "event": "vs. Russellville"
     },
     {
       "date": "2025-12-09",
@@ -100,6 +119,23 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. East Robertson High School"
+    }
+  ],
+  "career": {
+    "career_id": "career_005654",
+    "canonical_name": "Santigo Cano",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Russellville",
+      "record": "2-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

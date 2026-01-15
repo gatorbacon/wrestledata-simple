@@ -3,56 +3,86 @@
   "name": "Kaiden Dauenbaugh",
   "team": "Simon Kenton",
   "team_slug": "simon_kenton",
-  "team_rank": 31,
+  "team_rank": 30,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 25,
+  "current_rank": 28,
   "record": {
-    "overall": "13-2",
-    "vs_ranked": "9-1",
+    "overall": "15-3",
+    "vs_ranked": "11-2",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 9.95,
-    "pa7": 25.0,
-    "pd7": -15.05,
-    "si_plus": 105.3,
-    "df_plus": 88.4,
-    "apr_plus": 120.4,
-    "pin_rate": 0.846,
-    "bonus_rate": 0.846,
+    "pf7": 5.98,
+    "pa7": 19.5,
+    "pd7": -13.52,
+    "si_plus": 99.0,
+    "df_plus": 90.4,
+    "apr_plus": 118.2,
+    "pin_rate": 0.867,
+    "bonus_rate": 0.867,
     "majors": 0,
     "techs": 0,
-    "pins": 11
+    "pins": 13
   },
   "opponent_breakdown": {
-    "ranked_wins": 9,
-    "ranked_losses": 1,
+    "ranked_wins": 11,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34992813132",
-      "opponent_rank": 35,
+      "opponent_rank": 34,
       "opponent_name": "Uriah Rainey",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35398390132",
-      "opponent_rank": 4,
-      "opponent_name": "Parker Wilkens",
-      "method": "TF 20-5 3:31"
+      "opponent_id": "35271330132",
+      "opponent_rank": 14,
+      "opponent_name": "Cody Blevins",
+      "method": "MD 14-2"
     }
   },
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "34988572132",
+      "opponent_name": "Mason Masteller",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 106,
+      "opponent_rank": 64,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:53",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35215012132",
+      "opponent_name": "Zayden Courts",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 9,
+      "opponent_weight": 106,
+      "opponent_rank": 74,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:50",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35282000132",
       "opponent_name": "Niko Storm",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 106,
-      "opponent_rank": 63,
+      "opponent_rank": 66,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -65,9 +95,9 @@
       "opponent_id": "34997730132",
       "opponent_name": "Samuel Powell",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 106,
-      "opponent_rank": 62,
+      "opponent_rank": 65,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -76,13 +106,28 @@
       "event": "2026 CIWT"
     },
     {
+      "date": "2026-01-03",
+      "opponent_id": "35271330132",
+      "opponent_name": "Cody Blevins",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 30,
+      "opponent_weight": 106,
+      "opponent_rank": 14,
+      "weight_class": "106",
+      "result": "L",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "2026 CIWT"
+    },
+    {
       "date": "2025-12-27",
       "opponent_id": "34989289132",
       "opponent_name": "Braxton Hehn",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 106,
-      "opponent_rank": 39,
+      "opponent_rank": 44,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -97,7 +142,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 106,
-      "opponent_rank": 61,
+      "opponent_rank": 64,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -112,7 +157,7 @@
       "opponent_team": "Cooper",
       "opponent_team_rank": 9,
       "opponent_weight": 106,
-      "opponent_rank": 68,
+      "opponent_rank": 74,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -125,9 +170,9 @@
       "opponent_id": "35282000132",
       "opponent_name": "Niko Storm",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 106,
-      "opponent_rank": 63,
+      "opponent_rank": 66,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -140,7 +185,7 @@
       "opponent_id": "35398390132",
       "opponent_name": "Parker Wilkens",
       "opponent_team": "Highlands",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 4,
       "opponent_weight": 106,
       "opponent_rank": 4,
       "weight_class": "106",
@@ -157,7 +202,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 106,
-      "opponent_rank": 61,
+      "opponent_rank": 64,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -232,7 +277,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 106,
-      "opponent_rank": 35,
+      "opponent_rank": 34,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -245,9 +290,9 @@
       "opponent_id": "35652160132",
       "opponent_name": "Taden Cracraft",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 106,
-      "opponent_rank": 83,
+      "opponent_rank": 70,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -271,9 +316,30 @@
       "event": "vs. North Oldham"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1583333333333334
-  }
+  "career": {
+    "career_id": "career_002442",
+    "canonical_name": "Kaiden Dauenbaugh",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Simon Kenton",
+      "record": "17-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Simon Kenton",
+      "record": "3-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

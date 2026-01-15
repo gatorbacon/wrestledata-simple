@@ -3,10 +3,10 @@
   "name": "Joshua Young",
   "team": "Desales",
   "team_slug": "desales",
-  "team_rank": 69,
+  "team_rank": 72,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 77,
+  "current_rank": 74,
   "record": {
     "overall": "2-1",
     "vs_ranked": "2-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 112.0,
+    "df_plus": 102.0,
+    "apr_plus": 111.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35321133132",
-      "opponent_rank": 115,
+      "opponent_rank": 109,
       "opponent_name": "Austin Young",
       "method": "Fall 0:00"
     },
@@ -50,23 +50,23 @@
       "opponent_id": "35057129132",
       "opponent_name": "Donnie McCubbins",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 64,
       "opponent_weight": 144,
-      "opponent_rank": 135,
+      "opponent_rank": 128,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Desales",
-      "mv_impact": 1.52
+      "mv_impact": 1.94
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35135147132",
       "opponent_name": "Blake Luttrell",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 144,
       "opponent_rank": 5,
       "weight_class": "144",
@@ -75,28 +75,58 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Fairdale",
-      "mv_impact": -1.71
+      "mv_impact": -1.89
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35321133132",
       "opponent_name": "Austin Young",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 144,
-      "opponent_rank": 115,
+      "opponent_rank": 109,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. North Bullitt",
-      "mv_impact": 3.67
+      "mv_impact": 3.86
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_000356",
+    "canonical_name": "Joshua Young",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Desales",
+      "record": "2-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Butler",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 7,
+      "team": "Butler",
+      "record": "13-4",
+      "regional_place": 3,
+      "state_place": null
+    }
+  ]
 }

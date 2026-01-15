@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "36942833132",
+  "name": "Taegan Hackney",
+  "team": "Mingo Central",
+  "team_slug": "mingo_central",
+  "team_rank": null,
+  "weight_class": 215,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 98.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35735433132",
+      "opponent_rank": 198,
+      "opponent_name": "Jayden Collins",
+      "method": "Fall 1:35"
+    },
+    "worst_loss": {
+      "opponent_id": "35051528132",
+      "opponent_rank": 41,
+      "opponent_name": "Brandon Wiley",
+      "method": "Fall 1:58"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35735433132",
+      "opponent_name": "Jayden Collins",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 60,
+      "opponent_weight": 215,
+      "opponent_rank": 198,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35051535132",
+      "opponent_name": "Elijah Huff",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 215,
+      "opponent_rank": 12,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35051528132",
+      "opponent_name": "Brandon Wiley",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 215,
+      "opponent_rank": 41,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:58",
+      "event": "Clipson Jones Classic 2026"
+    }
+  ]
+}

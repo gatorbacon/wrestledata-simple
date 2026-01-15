@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "2-0",
+    "overall": "2-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "1-0"
   },
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34997728132",
-      "opponent_rank": 23,
+      "opponent_rank": 20,
       "opponent_name": "Robbie Hopper",
       "method": "Fall 7:29"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35214945132",
+      "opponent_rank": 27,
+      "opponent_name": "Jack Baron",
+      "method": "Dec 7-5"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35214945132",
+      "opponent_name": "Jack Baron",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 9,
+      "opponent_weight": 132,
+      "opponent_rank": 27,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-5",
+      "duration": "7:00",
+      "event": "2026 CIWT"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35281510132",
       "opponent_name": "Eric Brown",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 132,
-      "opponent_rank": 46,
+      "opponent_rank": 45,
       "weight_class": "132",
       "result": "W",
       "method": "TF",
@@ -60,9 +80,9 @@
       "opponent_id": "34997728132",
       "opponent_name": "Robbie Hopper",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 132,
-      "opponent_rank": 23,
+      "opponent_rank": 20,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",

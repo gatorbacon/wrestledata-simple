@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "4-0",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,41 +24,81 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35281518132",
-      "opponent_rank": 91,
-      "opponent_name": "Raphael Vaughn",
-      "method": "Fall 2:23"
+      "opponent_id": "35214954132",
+      "opponent_rank": 12,
+      "opponent_name": "Corey Freihofer",
+      "method": "Fall 1:13"
     },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "35348468132",
+      "opponent_name": "Conner Rehkamp",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 175,
+      "opponent_rank": 60,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35214954132",
+      "opponent_name": "Corey Freihofer",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 9,
+      "opponent_weight": 175,
+      "opponent_rank": 12,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:13",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35281518132",
       "opponent_name": "Raphael Vaughn",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 175,
-      "opponent_rank": 91,
+      "opponent_rank": 61,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:23",
       "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34995372132",
+      "opponent_name": "Eli Grigsby",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 35,
+      "opponent_weight": 175,
+      "opponent_rank": 62,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
+      "event": "2026 CIWT"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  ]
 }

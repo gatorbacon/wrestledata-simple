@@ -3,12 +3,12 @@
   "name": "Craig Briggs",
   "team": "Covington Catholic",
   "team_slug": "covington_catholic",
-  "team_rank": 16,
+  "team_rank": 44,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 22,
+  "current_rank": 19,
   "record": {
-    "overall": "9-3",
+    "overall": "12-4",
     "vs_ranked": "2-2",
     "vs_top10": "0-1",
     "vs_top25": "1-2"
@@ -17,14 +17,14 @@
     "pf7": 1.0,
     "pa7": 8.5,
     "pd7": -7.5,
-    "si_plus": 89.2,
-    "df_plus": 103.5,
-    "apr_plus": 108.3,
+    "si_plus": 89.1,
+    "df_plus": 105.5,
+    "apr_plus": 111.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 9
+    "pins": 12
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,26 +33,86 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35144511132",
-      "opponent_rank": 23,
+      "opponent_rank": 21,
       "opponent_name": "Domanic Patterson",
       "method": "Fall 1:53"
     },
     "worst_loss": {
       "opponent_id": "34993732132",
-      "opponent_rank": 15,
+      "opponent_rank": 13,
       "opponent_name": "Karsyn Sumpter",
       "method": "MD 10-2"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_a4ecfbd69ec3",
+      "opponent_name": "Rex Koch",
+      "opponent_team": "Madeira High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bob Kearns Invitational"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_a7c5bdaaa99f",
+      "opponent_name": "Sean Tissandier",
+      "opponent_team": "Blanchester High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bob Kearns Invitational"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_62b70cc1ef36",
+      "opponent_name": "Carter Freeman",
+      "opponent_team": "Aiken New Tech High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bob Kearns Invitational"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_f5e08d5b1c34",
+      "opponent_name": "Elijah Peterson",
+      "opponent_team": "Reading Jr./Sr. High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bob Kearns Invitational"
+    },
+    {
       "date": "2025-12-19",
       "opponent_id": "34989317132",
       "opponent_name": "Steven Osterhage",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 165,
-      "opponent_rank": 201,
+      "opponent_rank": 195,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -170,9 +230,9 @@
       "opponent_id": "34993732132",
       "opponent_name": "Karsyn Sumpter",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 165,
-      "opponent_rank": 15,
+      "opponent_rank": 13,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
@@ -200,9 +260,9 @@
       "opponent_id": "35144511132",
       "opponent_name": "Domanic Patterson",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 165,
-      "opponent_rank": 23,
+      "opponent_rank": 21,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -215,7 +275,7 @@
       "opponent_id": "35663418132",
       "opponent_name": "Noah Crisp",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 165,
       "opponent_rank": 6,
       "weight_class": "165",
@@ -226,9 +286,39 @@
       "event": "2025 Ryle Raider Rumble"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.283068783068783
-  }
+  "career": {
+    "career_id": "career_000619",
+    "canonical_name": "Craig Briggs",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Covington Catholic",
+      "record": "12-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Covington Catholic",
+      "record": "9-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Covington Catholic",
+      "record": "40-17",
+      "regional_place": 4,
+      "state_place": null
+    }
+  ]
 }

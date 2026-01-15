@@ -3,13 +3,13 @@
   "name": "Destiny Britt",
   "team": "North Hardin",
   "team_slug": "north_hardin",
-  "team_rank": 12,
-  "weight_class": 126,
+  "team_rank": 14,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 65,
+  "current_rank": 82,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "0-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 91.9,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 89.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,26 +28,58 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35400939132",
-      "opponent_rank": 51,
-      "opponent_name": "Samantha Sanchez",
-      "method": "Fall 2:20"
+      "opponent_id": "35672645132",
+      "opponent_rank": 61,
+      "opponent_name": "Abigail Nolan",
+      "method": "Fall 3:28"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35672645132",
+      "opponent_name": "Abigail Nolan",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 61,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:28",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": -6.9
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36863348132",
+      "opponent_name": "Imelda Gomez",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 11,
+      "opponent_weight": 120,
+      "opponent_rank": 59,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": -6.15
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35400939132",
       "opponent_name": "Samantha Sanchez",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 38,
       "opponent_weight": 126,
-      "opponent_rank": 51,
+      "opponent_rank": 50,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -63,19 +95,19 @@
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 2,
+      "opponent_rank": 1,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:21",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -1.8
+      "mv_impact": -1.84
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3
+    "top33_bonus_ev_shrunk": 1.2916666666666667
   }
 }

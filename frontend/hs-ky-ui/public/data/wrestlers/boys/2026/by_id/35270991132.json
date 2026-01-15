@@ -3,37 +3,37 @@
   "name": "Braydan Blevins",
   "team": "Simon Kenton",
   "team_slug": "simon_kenton",
-  "team_rank": 31,
+  "team_rank": 30,
   "weight_class": 126,
   "year": 2026,
   "current_rank": 2,
   "record": {
-    "overall": "12-4",
-    "vs_ranked": "7-1",
-    "vs_top10": "1-1",
-    "vs_top25": "2-1"
+    "overall": "15-4",
+    "vs_ranked": "8-1",
+    "vs_top10": "2-1",
+    "vs_top25": "3-1"
   },
   "metrics": {
-    "pf7": 18.6,
-    "pa7": 9.55,
-    "pd7": 9.05,
-    "si_plus": 116.2,
-    "df_plus": 103.7,
-    "apr_plus": 105.4,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.917,
-    "majors": 3,
+    "pf7": 15.29,
+    "pa7": 7.97,
+    "pd7": 7.32,
+    "si_plus": 111.5,
+    "df_plus": 105.2,
+    "apr_plus": 105.0,
+    "pin_rate": 0.4,
+    "bonus_rate": 0.933,
+    "majors": 4,
     "techs": 4,
-    "pins": 4
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 8,
     "ranked_losses": 1,
-    "top10_wins": 1,
+    "top10_wins": 2,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34988546132",
-      "opponent_rank": 4,
+      "opponent_rank": 5,
       "opponent_name": "Clayton Badida",
       "method": "MD 16-8"
     },
@@ -41,18 +41,33 @@
       "opponent_id": "34992804132",
       "opponent_rank": 1,
       "opponent_name": "Ethan Masters",
-      "method": "Dec 3-2"
+      "method": "Dec 5-0"
     }
   },
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "34988546132",
+      "opponent_name": "Clayton Badida",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 126,
+      "opponent_rank": 5,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35281285132",
       "opponent_name": "Hunter Francis",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 126,
-      "opponent_rank": 64,
+      "opponent_rank": 46,
       "weight_class": "126",
       "result": "W",
       "method": "TF",
@@ -61,13 +76,58 @@
       "event": "2026 CIWT"
     },
     {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_75d6aecb2339",
+      "opponent_name": "Vindy Waldon",
+      "opponent_team": "William Mason High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_901d32823d0b",
+      "opponent_name": "Blake Sackett",
+      "opponent_team": "Taylor High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35225217132",
+      "opponent_name": "Emmet Nunn",
+      "opponent_team": "Scott",
+      "opponent_team_rank": 124,
+      "opponent_weight": 120,
+      "opponent_rank": 97,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "1:32",
+      "event": "NKAC"
+    },
+    {
       "date": "2025-12-27",
       "opponent_id": "35118528132",
       "opponent_name": "Jayden Bautista Valdez",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 126,
-      "opponent_rank": 113,
+      "opponent_rank": 112,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -82,7 +142,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 126,
-      "opponent_rank": 4,
+      "opponent_rank": 5,
       "weight_class": "126",
       "result": "W",
       "method": "MD",
@@ -95,29 +155,14 @@
       "opponent_id": "35219295132",
       "opponent_name": "Deontae Graves",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 93,
       "opponent_weight": 126,
-      "opponent_rank": 62,
+      "opponent_rank": 45,
       "weight_class": "126",
       "result": "W",
       "method": "TF",
       "score": "18-3",
       "duration": "2:34",
-      "event": "NKAC"
-    },
-    {
-      "date": "2025-12-27",
-      "opponent_id": "35225217132",
-      "opponent_name": "Emmet Nunn",
-      "opponent_team": "Scott",
-      "opponent_team_rank": 122,
-      "opponent_weight": 126,
-      "opponent_rank": 112,
-      "weight_class": "126",
-      "result": "W",
-      "method": "TF",
-      "score": "17-2",
-      "duration": "1:32",
       "event": "NKAC"
     },
     {
@@ -227,12 +272,27 @@
     },
     {
       "date": "2025-11-29",
+      "opponent_id": "34992804132",
+      "opponent_name": "Ethan Masters",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 126,
+      "opponent_rank": 1,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2025-11-29",
       "opponent_id": "35672362132",
       "opponent_name": "jaxon watts",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 22,
       "opponent_weight": 132,
-      "opponent_rank": 155,
+      "opponent_rank": 146,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -245,9 +305,9 @@
       "opponent_id": "35458879132",
       "opponent_name": "Kaleb Lewellen",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 28,
       "opponent_weight": 132,
-      "opponent_rank": 22,
+      "opponent_rank": 19,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -269,26 +329,41 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Harrison County"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "34992804132",
-      "opponent_name": "Ethan Masters",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": 1,
-      "opponent_weight": 126,
-      "opponent_rank": 1,
-      "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "3-2",
-      "duration": "7:00",
-      "event": "vs. Boyle County"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.3174603174603174
-  }
+  "career": {
+    "career_id": "career_002453",
+    "canonical_name": "Braydan Blevins",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Simon Kenton",
+      "record": "16-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Simon Kenton",
+      "record": "50-4",
+      "regional_place": 1,
+      "state_place": 5
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Simon Kenton",
+      "record": "45-6",
+      "regional_place": 2,
+      "state_place": null
+    }
+  ]
 }

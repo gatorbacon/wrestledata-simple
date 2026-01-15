@@ -3,23 +3,23 @@
   "name": "Mason Baldwin",
   "team": "Belfry",
   "team_slug": "belfry",
-  "team_rank": 55,
+  "team_rank": 60,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 115,
+  "current_rank": 118,
   "record": {
     "overall": "1-6",
     "vs_ranked": "1-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 2.16,
     "pa7": 21.25,
     "pd7": -19.09,
-    "si_plus": 86.7,
-    "df_plus": 89.7,
-    "apr_plus": 91.2,
+    "si_plus": 89.2,
+    "df_plus": 89.2,
+    "apr_plus": 92.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35013059132",
-      "opponent_rank": 116,
+      "opponent_rank": 119,
       "opponent_name": "Makenzie Collins",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35909041132",
-      "opponent_rank": 114,
+      "opponent_rank": 117,
       "opponent_name": "Waylon Hudson",
       "method": "TF 17-2 3:50"
     }
@@ -50,96 +50,96 @@
       "opponent_id": "35133611132",
       "opponent_name": "Christon Johnson",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 120,
-      "opponent_rank": 74,
+      "opponent_rank": 77,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Hopkinsville",
-      "mv_impact": -6.54
+      "mv_impact": -5.61
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35144516132",
       "opponent_name": "Liam Ditto",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 120,
-      "opponent_rank": 15,
+      "opponent_rank": 17,
       "weight_class": "120",
       "result": "L",
       "method": "TF",
       "score": "20-5",
       "duration": "0:00",
       "event": "vs. LaRue County",
-      "mv_impact": -3.86
+      "mv_impact": -3.01
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35909041132",
       "opponent_name": "Waylon Hudson",
       "opponent_team": "Russell",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 122,
       "opponent_weight": 120,
-      "opponent_rank": 114,
+      "opponent_rank": 117,
       "weight_class": "120",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "3:50",
       "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -8.37
+      "mv_impact": -8.3
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35144516132",
       "opponent_name": "Liam Ditto",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 120,
-      "opponent_rank": 15,
+      "opponent_rank": 17,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:32",
       "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -4.86
+      "mv_impact": -4.01
     },
     {
       "date": "2025-12-16",
       "opponent_id": "35013059132",
       "opponent_name": "Makenzie Collins",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 120,
-      "opponent_rank": 116,
+      "opponent_rank": 119,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Perry County Central",
-      "mv_impact": 2.23
+      "mv_impact": 2.42
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35030252132",
       "opponent_name": "Quentin Troxell",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 113,
-      "opponent_rank": 30,
+      "opponent_rank": 26,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:33",
       "event": "Anchor Down Showdown",
-      "mv_impact": -4.78
+      "mv_impact": -5.12
     },
     {
       "date": "2025-12-06",
@@ -148,19 +148,31 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 113,
-      "opponent_rank": 29,
+      "opponent_rank": 25,
       "weight_class": "113",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:16",
       "event": "Anchor Down Showdown",
-      "mv_impact": -4.53
+      "mv_impact": -4.24
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_005210",
+    "canonical_name": "Mason Baldwin",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Belfry",
+      "record": "1-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

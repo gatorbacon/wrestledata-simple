@@ -3,23 +3,23 @@
   "name": "Isiah Lopez",
   "team": "Mason County",
   "team_slug": "mason_county",
-  "team_rank": 103,
-  "weight_class": 157,
+  "team_rank": 105,
+  "weight_class": 165,
   "year": 2026,
-  "current_rank": 174,
+  "current_rank": 202,
   "record": {
-    "overall": "0-3",
-    "vs_ranked": "0-3",
+    "overall": "1-8",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.5,
     "pa7": 25.0,
     "pd7": -21.5,
-    "si_plus": 95.8,
-    "df_plus": 72.7,
-    "apr_plus": 90.4,
+    "si_plus": 90.7,
+    "df_plus": 79.9,
+    "apr_plus": 90.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,40 +28,129 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35700064132",
-      "opponent_rank": 106,
-      "opponent_name": "jace hunter",
-      "method": "Fall 2:00"
+      "opponent_id": "35405498132",
+      "opponent_rank": 107,
+      "opponent_name": "Brayden Measel",
+      "method": "Fall 1:54"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35035538132",
+      "opponent_name": "Kenzell Miller-Hatcher",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 165,
+      "opponent_rank": 53,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "vs. Mason County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35205069132",
+      "opponent_name": "Cody Grayson",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 22,
+      "opponent_weight": 165,
+      "opponent_rank": 14,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "vs. Mason County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35405498132",
+      "opponent_name": "Brayden Measel",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 165,
+      "opponent_rank": 107,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:54",
+      "event": "vs. Mason County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "vs. All-Star Team"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_8a4f3b638d46",
+      "opponent_name": "Jacob Ramirez",
+      "opponent_team": "Walnut Hills High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "vs. Walnut Hills High School"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35700064132",
       "opponent_name": "jace hunter",
       "opponent_team": "Paintsville",
-      "opponent_team_rank": 111,
+      "opponent_team_rank": 113,
       "opponent_weight": 157,
-      "opponent_rank": 106,
+      "opponent_rank": 66,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -8.72
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35122082132",
       "opponent_name": "Jordan DaSilva",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 157,
       "opponent_rank": 95,
       "weight_class": "157",
@@ -69,29 +158,39 @@
       "method": "TF",
       "score": "18-2",
       "duration": "4:00",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -6.05
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35640191132",
       "opponent_name": "Clayton Roberts",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 44,
-      "opponent_weight": 132,
-      "opponent_rank": 65,
+      "opponent_team_rank": 47,
+      "opponent_weight": 150,
+      "opponent_rank": 32,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "vs. Mason County",
-      "mv_impact": -6.66
+      "event": "vs. Mason County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  "career": {
+    "career_id": "career_004797",
+    "canonical_name": "Isiah Lopez",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Mason County",
+      "record": "2-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

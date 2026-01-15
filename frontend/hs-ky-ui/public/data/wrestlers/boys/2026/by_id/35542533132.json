@@ -3,10 +3,10 @@
   "name": "Jaiden Wright",
   "team": "Central",
   "team_slug": "central",
-  "team_rank": 65,
+  "team_rank": 68,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 89,
+  "current_rank": 80,
   "record": {
     "overall": "2-0",
     "vs_ranked": "1-0",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 122.5,
+    "df_plus": 102.0,
+    "apr_plus": 122.2,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35012795132",
-      "opponent_rank": 90,
+      "opponent_rank": 84,
       "opponent_name": "Brayden Miller",
       "method": "Fall 0:00"
     },
@@ -45,9 +45,9 @@
       "opponent_id": "35012795132",
       "opponent_name": "Brayden Miller",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 215,
-      "opponent_rank": 90,
+      "opponent_rank": 84,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -71,9 +71,39 @@
       "event": "vs. Pleasure Ridge Park"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_000451",
+    "canonical_name": "Jaiden Wright",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Central",
+      "record": "2-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Central",
+      "record": "2-11",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Central",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -6,20 +6,20 @@
   "team_rank": 129,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 82,
+  "current_rank": 89,
   "record": {
-    "overall": "5-5",
-    "vs_ranked": "2-5",
+    "overall": "5-6",
+    "vs_ranked": "2-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 3.0,
     "pa7": 7.5,
     "pd7": -4.5,
-    "si_plus": 90.3,
-    "df_plus": 101.7,
-    "apr_plus": 91.5,
+    "si_plus": 89.8,
+    "df_plus": 103.7,
+    "apr_plus": 92.0,
     "pin_rate": 0.2,
     "bonus_rate": 0.2,
     "majors": 0,
@@ -28,31 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35180991132",
-      "opponent_rank": 80,
+      "opponent_rank": 87,
       "opponent_name": "Presley Thomas",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35523701132",
-      "opponent_rank": 81,
+      "opponent_rank": 88,
       "opponent_name": "Hudson Ball",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35081204132",
+      "opponent_name": "Brayden Schumann",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 34,
+      "opponent_weight": 113,
+      "opponent_rank": 15,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35599181132",
       "opponent_name": "Alex Upchurch",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 106,
-      "opponent_rank": 12,
+      "opponent_rank": 13,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -67,7 +82,7 @@
       "opponent_team": "West Jessamine",
       "opponent_team_rank": 136,
       "opponent_weight": 106,
-      "opponent_rank": 143,
+      "opponent_rank": 151,
       "weight_class": "106",
       "result": "W",
       "method": "DEC",
@@ -82,7 +97,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 106,
-      "opponent_rank": 77,
+      "opponent_rank": 83,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "35180991132",
       "opponent_name": "Presley Thomas",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 106,
-      "opponent_rank": 80,
+      "opponent_rank": 87,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -140,9 +155,9 @@
       "opponent_id": "35210235132",
       "opponent_name": "Logan Plummer",
       "opponent_team": "East Jessamine",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 77,
       "opponent_weight": 106,
-      "opponent_rank": 18,
+      "opponent_rank": 19,
       "weight_class": "106",
       "result": "L",
       "method": "TF",
@@ -170,9 +185,9 @@
       "opponent_id": "35523701132",
       "opponent_name": "Hudson Ball",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 106,
-      "opponent_rank": 81,
+      "opponent_rank": 88,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -185,9 +200,9 @@
       "opponent_id": "35405440132",
       "opponent_name": "Wyatt Blackmore",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 86,
       "opponent_weight": 106,
-      "opponent_rank": 75,
+      "opponent_rank": 69,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -196,9 +211,21 @@
       "event": "Tommy Castle Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  "career": {
+    "career_id": "career_005118",
+    "canonical_name": "Julian Ramos",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Tates Creek",
+      "record": "8-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

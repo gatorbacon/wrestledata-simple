@@ -3,127 +3,199 @@
   "name": "Elijah Jackson",
   "team": "Bath County",
   "team_slug": "bath_county",
-  "team_rank": 54,
+  "team_rank": 59,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 172,
+  "current_rank": 167,
   "record": {
-    "overall": "0-5",
-    "vs_ranked": "0-5",
+    "overall": "2-7",
+    "vs_ranked": "1-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 87.9,
+    "pf7": 12.0,
+    "pa7": 2.0,
+    "pd7": 10.0,
+    "si_plus": 104.8,
+    "df_plus": 113.5,
+    "apr_plus": 90.1,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "bonus_rate": 0.5,
+    "majors": 1,
     "techs": 0,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "37181924132",
+      "opponent_rank": 187,
+      "opponent_name": "Alex Dubon",
+      "method": "MD 12-2"
+    },
     "worst_loss": {
       "opponent_id": "35599167132",
-      "opponent_rank": 161,
+      "opponent_rank": 131,
       "opponent_name": "Nathan Tucker",
       "method": "Fall 0:50"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35144509132",
+      "opponent_name": "Noah Foley",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 49,
+      "opponent_weight": 132,
+      "opponent_rank": 17,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:43",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_fb61ea127660",
+      "opponent_name": "Caleb Hayden",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 37,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34989075132",
+      "opponent_name": "Johann Springer",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 51,
+      "opponent_weight": 132,
+      "opponent_rank": 25,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "37181924132",
+      "opponent_name": "Alex Dubon",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": 136,
+      "opponent_weight": 126,
+      "opponent_rank": 187,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "Tates Creek Invitational"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35599167132",
       "opponent_name": "Nathan Tucker",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 126,
-      "opponent_rank": 161,
+      "opponent_rank": 131,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "Tates Creek Invitational",
-      "mv_impact": -10.18
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "34999332132",
       "opponent_name": "Zayne Foust",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 46,
       "opponent_weight": 126,
-      "opponent_rank": 69,
+      "opponent_rank": 72,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:21",
-      "event": "Cardinal Invitational",
-      "mv_impact": -7.85
+      "event": "Cardinal Invitational"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "34993749132",
       "opponent_name": "Ford Furnish",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 126,
-      "opponent_rank": 124,
+      "opponent_rank": 80,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:10",
-      "event": "Cardinal Invitational",
-      "mv_impact": -9.65
+      "event": "Cardinal Invitational"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35850444132",
       "opponent_name": "Bentley Brown",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 132,
-      "opponent_rank": 12,
+      "opponent_rank": 11,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:28",
-      "event": "AWC Invitational",
-      "mv_impact": -3.14
+      "event": "AWC Invitational"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35909978132",
       "opponent_name": "Lukas Hamm",
       "opponent_team": "Russell",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 122,
       "opponent_weight": 126,
-      "opponent_rank": 128,
+      "opponent_rank": 123,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:53",
-      "event": "AWC Invitational",
-      "mv_impact": -8.64
+      "event": "AWC Invitational"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_004727",
+    "canonical_name": "Elijah Jackson",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Bath County",
+      "record": "2-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

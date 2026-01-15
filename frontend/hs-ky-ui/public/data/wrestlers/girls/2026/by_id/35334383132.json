@@ -6,9 +6,9 @@
   "team_rank": null,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 7,
+  "current_rank": 8,
   "record": {
-    "overall": "7-1",
+    "overall": "10-4",
     "vs_ranked": "3-0",
     "vs_top10": "1-0",
     "vs_top25": "2-0"
@@ -17,14 +17,14 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 111.3,
-    "pin_rate": 0.857,
-    "bonus_rate": 0.857,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 111.0,
+    "pin_rate": 0.9,
+    "bonus_rate": 0.9,
     "majors": 0,
     "techs": 0,
-    "pins": 6
+    "pins": 9
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,13 +33,73 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35333321132",
-      "opponent_rank": 2,
+      "opponent_rank": 1,
       "opponent_name": "Talynn Clark",
       "method": "Fall 3:24"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34980542132",
+      "opponent_name": "Loyalty Lockett",
+      "opponent_team": "STILLWATER",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "Wonder Women"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35105310132",
+      "opponent_name": "Sophia Iannazzo",
+      "opponent_team": "Lafayette (Wildwood)",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "Wonder Women"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35415318132",
+      "opponent_name": "Paige Tihen",
+      "opponent_team": "Ft. Zumwalt South",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:24",
+      "event": "Wonder Women"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35077048132",
+      "opponent_name": "Brylee James",
+      "opponent_team": "Nixa",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:23",
+      "event": "Wonder Women"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_68de5619c331",
@@ -68,6 +128,36 @@
       "method": "FALL",
       "score": null,
       "duration": "1:49",
+      "event": "The F.I.G.H.T."
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35409130132",
+      "opponent_name": "Grecia Garcia",
+      "opponent_team": "Huntley",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "The F.I.G.H.T."
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35697191132",
+      "opponent_name": "Emma Hodge",
+      "opponent_team": "Fowlerville (Girls)",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
       "event": "The F.I.G.H.T."
     },
     {
@@ -107,7 +197,7 @@
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 2,
+      "opponent_rank": 1,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -120,9 +210,9 @@
       "opponent_id": "35436574132",
       "opponent_name": "Brannan Ransom",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 132,
-      "opponent_rank": 16,
+      "opponent_rank": 19,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -137,7 +227,7 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 42,
+      "opponent_rank": 45,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -164,6 +254,6 @@
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.7666666666666666
+    "top33_bonus_ev_shrunk": 1.5277777777777777
   }
 }

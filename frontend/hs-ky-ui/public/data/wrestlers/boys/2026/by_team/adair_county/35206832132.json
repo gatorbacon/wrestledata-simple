@@ -3,90 +3,175 @@
   "name": "Leo Garsee",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 50,
-  "weight_class": 144,
+  "team_rank": 56,
+  "weight_class": 138,
   "year": 2026,
-  "current_rank": 161,
+  "current_rank": 206,
   "record": {
-    "overall": "0-5",
-    "vs_ranked": "0-5",
+    "overall": "1-9",
+    "vs_ranked": "1-9",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 5.0,
-    "pa7": 21.0,
-    "pd7": -16.0,
-    "si_plus": 93.7,
-    "df_plus": 86.4,
-    "apr_plus": 90.9,
+    "pf7": 15.0,
+    "pa7": 19.0,
+    "pd7": -4.0,
+    "si_plus": 109.8,
+    "df_plus": 88.7,
+    "apr_plus": 89.4,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "bonus_rate": 1.0,
+    "majors": 1,
     "techs": 0,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_wins": 1,
+    "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35638124132",
+      "opponent_rank": 182,
+      "opponent_name": "Sawyer Hargrove",
+      "method": "MD 28-17"
+    },
     "worst_loss": {
-      "opponent_id": "35637993132",
-      "opponent_rank": 140,
-      "opponent_name": "Keegan Roeder",
-      "method": "TF 21-5 0:00"
+      "opponent_id": "35907871132",
+      "opponent_rank": 136,
+      "opponent_name": "Luke Turley",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35383668132",
+      "opponent_name": "Isrell Roberts",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 37,
+      "opponent_weight": 138,
+      "opponent_rank": 24,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -3.28
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35226409132",
+      "opponent_name": "Evan Logsdon",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 138,
+      "opponent_rank": 50,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:52",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -5.35
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35576566132",
+      "opponent_name": "Joel Diaz",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 138,
+      "opponent_rank": 58,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Green County",
+      "mv_impact": -5.77
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35638124132",
+      "opponent_name": "Sawyer Hargrove",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 144,
+      "opponent_rank": 182,
+      "weight_class": "144",
+      "result": "W",
+      "method": "MD",
+      "score": "28-17",
+      "duration": "7:00",
+      "event": "Maroon`s New Year Brawl",
+      "mv_impact": 1.86
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35030263132",
       "opponent_name": "evan Blackburn",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 144,
-      "opponent_rank": 79,
+      "opponent_rank": 76,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:24",
       "event": "Maroon`s New Year Brawl",
-      "mv_impact": -6.64
+      "mv_impact": -6.8
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35476520132",
       "opponent_name": "kaison phillips",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 144,
-      "opponent_rank": 59,
+      "opponent_rank": 61,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
       "event": "Maroon`s New Year Brawl",
-      "mv_impact": -5.28
+      "mv_impact": -5.88
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35907871132",
+      "opponent_name": "Luke Turley",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": 114,
+      "opponent_weight": 144,
+      "opponent_rank": 136,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Maroon`s New Year Brawl",
+      "mv_impact": -9.58
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35030263132",
       "opponent_name": "evan Blackburn",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 144,
-      "opponent_rank": 79,
+      "opponent_rank": 76,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:17",
       "event": "vs. Pulaski County",
-      "mv_impact": -6.64
+      "mv_impact": -6.8
     },
     {
       "date": "2025-12-20",
@@ -95,30 +180,47 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
       "opponent_weight": 144,
-      "opponent_rank": 140,
+      "opponent_rank": 133,
       "weight_class": "144",
       "result": "L",
       "method": "TF",
       "score": "21-5",
       "duration": "0:00",
       "event": "vs. Russell County",
-      "mv_impact": -9.08
+      "mv_impact": -9.01
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35049119132",
       "opponent_name": "Colton Hendrick",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 138,
-      "opponent_rank": 57,
+      "opponent_rank": 62,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
       "event": "vs. Greenwood",
-      "mv_impact": -5.22
+      "mv_impact": -5.23
+    }
+  ],
+  "career": {
+    "career_id": "career_005169",
+    "canonical_name": "Leo Garsee",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Adair County",
+      "record": "1-9",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

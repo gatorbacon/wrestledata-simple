@@ -3,36 +3,124 @@
   "name": "Branson Dailey",
   "team": "Covington Catholic",
   "team_slug": "covington_catholic",
-  "team_rank": 16,
+  "team_rank": 44,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 217,
+  "current_rank": 122,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "2-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 98.3,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35141563132",
+      "opponent_rank": 141,
+      "opponent_name": "Izabella Mansfield",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35652160132",
+      "opponent_rank": 70,
+      "opponent_name": "Taden Cracraft",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35141563132",
+      "opponent_name": "Izabella Mansfield",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": 63,
+      "opponent_weight": 106,
+      "opponent_rank": 141,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Covington Catholic"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Scott"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35398390132",
+      "opponent_name": "Parker Wilkens",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": 4,
+      "opponent_weight": 106,
+      "opponent_rank": 4,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Highlands"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35652160132",
+      "opponent_name": "Taden Cracraft",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 106,
+      "opponent_rank": 70,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harrison County"
+    }
+  ],
+  "career": {
+    "career_id": "career_005323",
+    "canonical_name": "Branson Dailey",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Covington Catholic",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

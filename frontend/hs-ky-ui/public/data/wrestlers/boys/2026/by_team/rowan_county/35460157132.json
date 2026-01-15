@@ -3,13 +3,13 @@
   "name": "Peyton Henderson",
   "team": "Rowan County",
   "team_slug": "rowan_county",
-  "team_rank": 119,
+  "team_rank": 121,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 138,
+  "current_rank": 144,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 99.7,
+    "df_plus": 102.0,
+    "apr_plus": 99.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35281178132",
-      "opponent_rank": 139,
+      "opponent_rank": 146,
       "opponent_name": "Corbyn Price",
       "method": "Fall 2:05"
     },
     "worst_loss": {
       "opponent_id": "35033119132",
-      "opponent_rank": 137,
+      "opponent_rank": 143,
       "opponent_name": "Anish Biswa",
       "method": "Fall 1:16"
     }
@@ -50,16 +50,16 @@
       "opponent_id": "35281178132",
       "opponent_name": "Corbyn Price",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 120,
-      "opponent_rank": 139,
+      "opponent_rank": 146,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:05",
       "event": "Tates Creek Invitational",
-      "mv_impact": 1.8
+      "mv_impact": 1.5
     },
     {
       "date": "2026-01-03",
@@ -68,14 +68,47 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 120,
-      "opponent_rank": 137,
+      "opponent_rank": 143,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:16",
       "event": "Tates Creek Invitational",
-      "mv_impact": -8.47
+      "mv_impact": -8.64
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35420495132",
+      "opponent_name": "Larriuce Felipe",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 120,
+      "opponent_rank": 49,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tates Creek Invitational",
+      "mv_impact": -5.05
+    }
+  ],
+  "career": {
+    "career_id": "career_005085",
+    "canonical_name": "Peyton Henderson",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Rowan County",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -3,10 +3,10 @@
   "name": "Moo Hser",
   "team": "Daviess County",
   "team_slug": "daviess_county",
-  "team_rank": 68,
+  "team_rank": 71,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 54,
+  "current_rank": 56,
   "record": {
     "overall": "1-0",
     "vs_ranked": "1-0",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 117.1,
+    "df_plus": 102.0,
+    "apr_plus": 116.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35138121132",
-      "opponent_rank": 74,
+      "opponent_rank": 72,
       "opponent_name": "Adalyn Perry",
       "method": "Fall 3:10"
     },
@@ -45,21 +45,42 @@
       "opponent_id": "35138121132",
       "opponent_name": "Adalyn Perry",
       "opponent_team": "Bethlehem",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 62,
       "opponent_weight": 113,
-      "opponent_rank": 74,
+      "opponent_rank": 72,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:10",
       "event": "Tommy Castle Classic",
-      "mv_impact": 3.1
+      "mv_impact": 3.14
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3194444444444444
-  }
+  "career": {
+    "career_id": "career_000644",
+    "canonical_name": "Moo Hser",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Daviess County",
+      "record": "1-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "Daviess County",
+      "record": "2-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

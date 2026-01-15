@@ -3,13 +3,13 @@
   "name": "Blatyn Cooper",
   "team": "Marion County",
   "team_slug": "marion_county",
-  "team_rank": 102,
+  "team_rank": 104,
   "weight_class": 144,
   "year": 2026,
   "current_rank": 50,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "2-1",
+    "overall": "3-2",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,65 +17,97 @@
     "pf7": 9.3,
     "pa7": 17.0,
     "pd7": -7.7,
-    "si_plus": 103.0,
-    "df_plus": 95.4,
-    "apr_plus": 104.4,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "si_plus": 103.3,
+    "df_plus": 95.2,
+    "apr_plus": 107.5,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 1,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35040599132",
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "opponent_name": "Antar Sher",
       "method": "Dec 10-9"
     },
     "worst_loss": {
-      "opponent_id": "34997618132",
-      "opponent_rank": 20,
-      "opponent_name": "Titus Greiwe",
-      "method": "TF 23-6 4:53"
+      "opponent_id": "35226198132",
+      "opponent_rank": 43,
+      "opponent_name": "Bryce Alford",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34992068132",
+      "opponent_name": "Kathryn Floyd",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 58,
+      "opponent_weight": 144,
+      "opponent_rank": 70,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "vs. Marion County",
+      "mv_impact": 6.3
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35226198132",
+      "opponent_name": "Bryce Alford",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 144,
+      "opponent_rank": 43,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Nelson County",
+      "mv_impact": -5.67
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "34997618132",
       "opponent_name": "Titus Greiwe",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 144,
-      "opponent_rank": 20,
+      "opponent_rank": 15,
       "weight_class": "144",
       "result": "L",
       "method": "TF",
       "score": "23-6",
       "duration": "4:53",
       "event": "Tates Creek Invitational",
-      "mv_impact": -1.79
+      "mv_impact": -1.26
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35599171132",
       "opponent_name": "Noah Metz",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 144,
-      "opponent_rank": 53,
+      "opponent_rank": 55,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
       "event": "Tates Creek Invitational",
-      "mv_impact": 6.12
+      "mv_impact": 5.8
     },
     {
       "date": "2026-01-03",
@@ -84,19 +116,49 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 144,
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "weight_class": "144",
       "result": "W",
       "method": "DEC",
       "score": "10-9",
       "duration": "7:00",
       "event": "Tates Creek Invitational",
-      "mv_impact": 3.44
+      "mv_impact": 3.09
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_001592",
+    "canonical_name": "Blatyn Cooper",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Marion County",
+      "record": "4-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Marion County",
+      "record": "4-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 11,
+      "team": "Marion County",
+      "record": "0-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

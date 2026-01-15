@@ -3,43 +3,43 @@
   "name": "Areonna Quarles",
   "team": "Trigg County",
   "team_slug": "trigg_county",
-  "team_rank": 16,
+  "team_rank": 15,
   "weight_class": 235,
   "year": 2026,
-  "current_rank": 15,
+  "current_rank": 18,
   "record": {
-    "overall": "2-2",
+    "overall": "3-2",
     "vs_ranked": "2-2",
-    "vs_top10": "0-1",
-    "vs_top25": "2-1"
+    "vs_top10": "0-0",
+    "vs_top25": "2-2"
   },
   "metrics": {
     "pf7": 6.0,
     "pa7": 4.0,
     "pd7": 2.0,
-    "si_plus": 99.3,
-    "df_plus": 107.5,
-    "apr_plus": 94.7,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "si_plus": 99.8,
+    "df_plus": 109.8,
+    "apr_plus": 94.5,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
     "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35598126132",
-      "opponent_rank": 16,
+      "opponent_rank": 19,
       "opponent_name": "Brianna Rice",
       "method": "Fall 1:26"
     },
     "worst_loss": {
       "opponent_id": "35520302132",
-      "opponent_rank": 26,
+      "opponent_rank": 21,
       "opponent_name": "Sevira Taito",
       "method": "Fall 2:37"
     }
@@ -50,16 +50,15 @@
       "opponent_id": "35520302132",
       "opponent_name": "Sevira Taito",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 235,
-      "opponent_rank": 26,
+      "opponent_rank": 21,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:37",
-      "event": "Richey Rumble",
-      "mv_impact": -7.95
+      "event": "Richey Rumble"
     },
     {
       "date": "2025-12-12",
@@ -68,51 +67,63 @@
       "opponent_team": "McCracken County",
       "opponent_team_rank": null,
       "opponent_weight": 235,
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "weight_class": "235",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Sister Slam",
-      "mv_impact": 2.48
+      "event": "Sister Slam"
     },
     {
       "date": "2025-12-12",
       "opponent_id": "35598132132",
       "opponent_name": "Gracee Lingenfelter",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 235,
-      "opponent_rank": 10,
+      "opponent_rank": 11,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "Sister Slam",
-      "mv_impact": -4.17
+      "event": "Sister Slam"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35271845132",
+      "opponent_name": "Payten Roseberry",
+      "opponent_team": "Pinckneyville",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": null,
+      "weight_class": "235",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:13",
+      "event": "Sister Slam"
     },
     {
       "date": "2025-12-12",
       "opponent_id": "35598126132",
       "opponent_name": "Brianna Rice",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 235,
-      "opponent_rank": 16,
+      "opponent_rank": 19,
       "weight_class": "235",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:26",
-      "event": "Sister Slam",
-      "mv_impact": 5.5
+      "event": "Sister Slam"
     }
   ],
   "bonus": {
     "top33_wins": 2,
     "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.6
+    "top33_bonus_ev_shrunk": 1.6417582417582417
   }
 }

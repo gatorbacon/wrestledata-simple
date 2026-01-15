@@ -6,38 +6,81 @@
   "team_rank": 7,
   "weight_class": 145,
   "year": 2026,
-  "current_rank": 65,
+  "current_rank": 58,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pf7": 2.0,
+    "pa7": 4.0,
+    "pd7": -2.0,
+    "si_plus": 100.7,
+    "df_plus": 102.4,
+    "apr_plus": 104.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35369154132",
+      "opponent_rank": 24,
+      "opponent_name": "Grace Helton",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35369127132",
+      "opponent_rank": 19,
+      "opponent_name": "Alexis Howard",
+      "method": "Dec 4-2"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35369127132",
+      "opponent_name": "Alexis Howard",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 138,
+      "opponent_rank": 19,
+      "weight_class": "145",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Whitley County",
+      "mv_impact": -2.14
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35369154132",
+      "opponent_name": "Grace Helton",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 152,
+      "opponent_rank": 24,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Whitley County",
+      "mv_impact": 4.77
+    }
+  ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1428571428571428
+    "top33_bonus_ev_shrunk": 1.4083333333333334
   }
 }

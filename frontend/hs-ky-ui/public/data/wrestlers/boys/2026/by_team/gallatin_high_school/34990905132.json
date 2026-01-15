@@ -4,12 +4,12 @@
   "team": "Gallatin High School",
   "team_slug": "gallatin_high_school",
   "team_rank": null,
-  "weight_class": 138,
+  "weight_class": 132,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "2-0",
+    "overall": "2-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,56 +18,76 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 102.1,
+    "df_plus": 102.0,
+    "apr_plus": 97.4,
     "pin_rate": 0.5,
-    "bonus_rate": 0.5,
-    "majors": 0,
+    "bonus_rate": 1.0,
+    "majors": 1,
     "techs": 0,
     "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35064917132",
-      "opponent_rank": 89,
-      "opponent_name": "Greyson Suttor",
-      "method": "Dec 9-5"
+      "opponent_id": "35221181132",
+      "opponent_rank": 121,
+      "opponent_name": "Bayden Herran",
+      "method": "Fall 0:38"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35221004132",
+      "opponent_rank": 70,
+      "opponent_name": "Elijah Kirby",
+      "method": "TF 18-3 2:47"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35221004132",
+      "opponent_name": "Elijah Kirby",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 66,
+      "opponent_weight": 132,
+      "opponent_rank": 70,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "2:47",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35194137132",
+      "opponent_name": "Adaven Westernbeck",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 132,
+      "opponent_rank": 176,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "13-1",
+      "duration": "7:00",
+      "event": "2026 Commando Crush"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35221181132",
       "opponent_name": "Bayden Herran",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 138,
-      "opponent_rank": 120,
+      "opponent_rank": 121,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:38",
-      "event": "Coyote Classic Wrestling Invitational"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35064917132",
-      "opponent_name": "Greyson Suttor",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 144,
-      "opponent_rank": 89,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-5",
-      "duration": "7:00",
       "event": "Coyote Classic Wrestling Invitational"
     }
   ]

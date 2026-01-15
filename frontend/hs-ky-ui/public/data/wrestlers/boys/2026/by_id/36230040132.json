@@ -8,46 +8,111 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 96.2,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "df_plus": 102.0,
+    "apr_plus": 96.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35703604132",
+      "opponent_rank": 129,
+      "opponent_name": "Chase Newman",
+      "method": "Fall 1:49"
+    },
     "worst_loss": {
-      "opponent_id": "35247367132",
-      "opponent_rank": 31,
-      "opponent_name": "Creston Fuller",
-      "method": "Fall 1:24"
+      "opponent_id": "35521179132",
+      "opponent_rank": 158,
+      "opponent_name": "Alexzander Caudill",
+      "method": "M. For."
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35703590132",
+      "opponent_name": "Max Strong",
+      "opponent_team": "Floyd Central",
+      "opponent_team_rank": 81,
+      "opponent_weight": 165,
+      "opponent_rank": 106,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35703604132",
+      "opponent_name": "Chase Newman",
+      "opponent_team": "Floyd Central",
+      "opponent_team_rank": 81,
+      "opponent_weight": 165,
+      "opponent_rank": 129,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35521179132",
+      "opponent_name": "Alexzander Caudill",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": 101,
+      "opponent_weight": 165,
+      "opponent_rank": 158,
+      "weight_class": "165",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35732596132",
+      "opponent_name": "Cole Jewell",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 165,
+      "opponent_rank": 5,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
+      "event": "Clipson Jones Classic 2026"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35247367132",
       "opponent_name": "Creston Fuller",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 165,
-      "opponent_rank": 31,
+      "opponent_rank": 33,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -55,10 +120,5 @@
       "duration": "1:24",
       "event": "Boys Hatfield McCoy 32 2025"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  ]
 }

@@ -3,13 +3,13 @@
   "name": "Orion Phillips",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 61,
+  "team_rank": 65,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 63,
+  "current_rank": 94,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "2-1",
+    "overall": "2-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 110.6,
+    "df_plus": 102.0,
+    "apr_plus": 103.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,70 +28,112 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35321128132",
-      "opponent_rank": 121,
+      "opponent_rank": 129,
       "opponent_name": "Luca Montefusco",
       "method": "Fall 5:19"
     },
     "worst_loss": {
-      "opponent_id": "35040568132",
-      "opponent_rank": 4,
-      "opponent_name": "Andrew Pomeroy",
-      "method": "Fall 4:29"
+      "opponent_id": "35669887132",
+      "opponent_rank": 42,
+      "opponent_name": "Shane Stikes",
+      "method": "Fall 2:55"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35669887132",
+      "opponent_name": "Shane Stikes",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 150,
+      "opponent_rank": 42,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:55",
+      "event": "2026 Lou City Wrestling",
+      "mv_impact": -5.89
+    },
     {
       "date": "2025-12-04",
       "opponent_id": "35084067132",
       "opponent_name": "Carmello Shirley",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
-      "opponent_weight": 150,
-      "opponent_rank": 122,
+      "opponent_team_rank": 32,
+      "opponent_weight": 144,
+      "opponent_rank": 134,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Butler",
-      "mv_impact": 2.38
+      "mv_impact": 2.23
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35321128132",
       "opponent_name": "Luca Montefusco",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 150,
-      "opponent_rank": 121,
+      "opponent_rank": 129,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:19",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 2.51
+      "mv_impact": 2.61
     },
     {
       "date": "2025-11-25",
       "opponent_id": "35040568132",
       "opponent_name": "Andrew Pomeroy",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
-      "opponent_weight": 150,
-      "opponent_rank": 4,
+      "opponent_team_rank": 50,
+      "opponent_weight": 144,
+      "opponent_rank": 6,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:29",
       "event": "vs. Male",
-      "mv_impact": -1.69
+      "mv_impact": -1.97
+    }
+  ],
+  "career": {
+    "career_id": "career_003726",
+    "canonical_name": "Orion Phillips",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Butler",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Doss",
+      "record": "9-22",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -6,76 +6,156 @@
   "team_rank": 135,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 108,
+  "current_rank": 77,
   "record": {
-    "overall": "6-8",
-    "vs_ranked": "6-8",
+    "overall": "9-10",
+    "vs_ranked": "9-10",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 6.0,
     "pa7": 21.0,
     "pd7": -15.0,
-    "si_plus": 95.1,
-    "df_plus": 85.9,
-    "apr_plus": 102.9,
+    "si_plus": 92.5,
+    "df_plus": 84.5,
+    "apr_plus": 105.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 6
+    "pins": 9
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 8,
+    "ranked_wins": 9,
+    "ranked_losses": 10,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35447758132",
-      "opponent_rank": 97,
-      "opponent_name": "Jeffrey Scott",
-      "method": "Fall 0:31"
+      "opponent_id": "35766995132",
+      "opponent_rank": 83,
+      "opponent_name": "Chance Ellis",
+      "method": "Fall 1:32"
     },
     "worst_loss": {
-      "opponent_id": "34993524132",
-      "opponent_rank": 56,
-      "opponent_name": "Belencio Camarena",
-      "method": "Fall 0:00"
+      "opponent_id": "34997607132",
+      "opponent_rank": 85,
+      "opponent_name": "Jackson Patrick",
+      "method": "Fall 0:35"
     }
   },
   "match_list": [
     {
-      "date": "2026-01-03",
-      "opponent_id": "35325216132",
-      "opponent_name": "Tyson Johnson",
-      "opponent_team": "Madison Southern",
-      "opponent_team_rank": 101,
-      "opponent_weight": 150,
-      "opponent_rank": 145,
+      "date": "2026-01-10",
+      "opponent_id": "35766995132",
+      "opponent_name": "Chance Ellis",
+      "opponent_team": "Bath County",
+      "opponent_team_rank": 59,
+      "opponent_weight": 165,
+      "opponent_rank": 83,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "2:06",
-      "event": "Tates Creek Invitational",
-      "mv_impact": 2.04
+      "duration": "1:32",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 4.2
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34993297132",
+      "opponent_name": "Peyton Payne",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 71,
+      "opponent_weight": 165,
+      "opponent_rank": 186,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 1.37
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35208005132",
+      "opponent_name": "Camryn Ramirez",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 165,
+      "opponent_rank": 20,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -2.92
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35178234132",
+      "opponent_name": "Kailand Adams",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 165,
+      "opponent_rank": 132,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 3.61
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34989056132",
+      "opponent_name": "Joseph Whaley",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 51,
+      "opponent_weight": 165,
+      "opponent_rank": 31,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:02",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -4.19
     },
     {
       "date": "2026-01-03",
       "opponent_id": "34997607132",
       "opponent_name": "Jackson Patrick",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
-      "opponent_weight": 165,
-      "opponent_rank": 49,
+      "opponent_team_rank": 69,
+      "opponent_weight": 157,
+      "opponent_rank": 85,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:35",
       "event": "Tates Creek Invitational",
-      "mv_impact": -5.41
+      "mv_impact": -7.67
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35325216132",
+      "opponent_name": "Tyson Johnson",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": 103,
+      "opponent_weight": 157,
+      "opponent_rank": 140,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:06",
+      "event": "Tates Creek Invitational",
+      "mv_impact": 2.65
     },
     {
       "date": "2026-01-03",
@@ -91,23 +171,23 @@
       "score": null,
       "duration": "1:44",
       "event": "Tates Creek Invitational",
-      "mv_impact": -6.12
+      "mv_impact": -5.45
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35122074132",
       "opponent_name": "Bodie Neie",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 165,
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:28",
       "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -4.65
+      "mv_impact": -4.84
     },
     {
       "date": "2025-12-30",
@@ -123,135 +203,135 @@
       "score": null,
       "duration": "1:39",
       "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -6.12
+      "mv_impact": -5.45
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35205997132",
       "opponent_name": "Evan Baker",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 157,
-      "opponent_rank": 46,
+      "opponent_rank": 50,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. West Carter",
-      "mv_impact": -4.89
+      "mv_impact": -5.57
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35850441132",
       "opponent_name": "Tony Leader",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 165,
-      "opponent_rank": 2,
+      "opponent_rank": 3,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Tournament",
-      "mv_impact": -1.07
+      "mv_impact": -1.43
     },
     {
       "date": "2025-12-13",
       "opponent_id": "36550190132",
       "opponent_name": "Branden Price",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 165,
-      "opponent_rank": 143,
+      "opponent_rank": 139,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:37",
       "event": "Ashland Invitational Tournament",
-      "mv_impact": 1.89
+      "mv_impact": 2.12
     },
     {
       "date": "2025-12-13",
       "opponent_id": "36011930132",
       "opponent_name": "Jiraiya Wears",
       "opponent_team": "Russell",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 122,
       "opponent_weight": 165,
-      "opponent_rank": 181,
+      "opponent_rank": 174,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Tournament",
-      "mv_impact": 0.46
+      "mv_impact": 1.43
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34993524132",
       "opponent_name": "Belencio Camarena",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 165,
-      "opponent_rank": 56,
+      "opponent_rank": 68,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland blazer invitational",
-      "mv_impact": -6.43
+      "mv_impact": -6.29
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35124878132",
       "opponent_name": "Ethan Brandhorst",
       "opponent_team": "Montgomery County",
-      "opponent_team_rank": 108,
+      "opponent_team_rank": 110,
       "opponent_weight": 165,
-      "opponent_rank": 39,
+      "opponent_rank": 44,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "21-6",
       "duration": "0:00",
       "event": "Ashland Invitational Tournament",
-      "mv_impact": -4.2
+      "mv_impact": -4.31
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35518109132",
       "opponent_name": "Levi Gibbons",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 165,
-      "opponent_rank": 115,
+      "opponent_rank": 116,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:47",
       "event": "Anchor Down Showdown",
-      "mv_impact": 3.38
+      "mv_impact": 3.23
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35496336132",
       "opponent_name": "Connor Stewart",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 175,
-      "opponent_rank": 103,
+      "opponent_rank": 105,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:13",
       "event": "Anchor Down Showdown",
-      "mv_impact": 4.59
+      "mv_impact": 3.53
     },
     {
       "date": "2025-12-06",
@@ -260,19 +340,31 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": 135,
       "opponent_weight": 175,
-      "opponent_rank": 97,
+      "opponent_rank": 99,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:31",
       "event": "Anchor Down Showdown",
-      "mv_impact": 4.86
+      "mv_impact": 4.25
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  "career": {
+    "career_id": "career_005145",
+    "canonical_name": "Bentley Stevens",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "West Carter",
+      "record": "9-10",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,13 +3,13 @@
   "name": "Daylon Cox",
   "team": "North Hardin",
   "team_slug": "north_hardin",
-  "team_rank": 25,
+  "team_rank": 51,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 141,
+  "current_rank": 120,
   "record": {
-    "overall": "2-6",
-    "vs_ranked": "1-6",
+    "overall": "3-6",
+    "vs_ranked": "2-6",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
@@ -17,29 +17,29 @@
     "pf7": 0.0,
     "pa7": 8.0,
     "pd7": -8.0,
-    "si_plus": 85.9,
+    "si_plus": 84.9,
     "df_plus": 104.7,
-    "apr_plus": 94.4,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "apr_plus": 96.1,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35698242132",
-      "opponent_rank": 179,
-      "opponent_name": "Mason Cecil",
-      "method": "Fall 1:51"
+      "opponent_id": "35179138132",
+      "opponent_rank": 133,
+      "opponent_name": "Gavin Scott",
+      "method": "Fall 1:55"
     },
     "worst_loss": {
       "opponent_id": "35077763132",
-      "opponent_rank": 84,
+      "opponent_rank": 76,
       "opponent_name": "Ryan Beauchesne",
       "method": "Fall 2:49"
     }
@@ -47,12 +47,27 @@
   "match_list": [
     {
       "date": "2025-12-20",
+      "opponent_id": "35179138132",
+      "opponent_name": "Gavin Scott",
+      "opponent_team": "Campbellsville",
+      "opponent_team_rank": 67,
+      "opponent_weight": 215,
+      "opponent_rank": 133,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:55",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "34997602132",
       "opponent_name": "Seth Jones",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 215,
-      "opponent_rank": 8,
+      "opponent_rank": 7,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "35001152132",
       "opponent_name": "Brandon Krauss",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 215,
-      "opponent_rank": 41,
+      "opponent_rank": 45,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -80,9 +95,9 @@
       "opponent_id": "35045509132",
       "opponent_name": "Colton Fyffe",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 17,
       "opponent_weight": 215,
-      "opponent_rank": 76,
+      "opponent_rank": 71,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35698242132",
       "opponent_name": "Mason Cecil",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 118,
       "opponent_weight": 215,
-      "opponent_rank": 179,
+      "opponent_rank": 177,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -110,9 +125,9 @@
       "opponent_id": "34997715132",
       "opponent_name": "Dominic Padilla",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 215,
-      "opponent_rank": 21,
+      "opponent_rank": 23,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -140,9 +155,9 @@
       "opponent_id": "35077763132",
       "opponent_name": "Ryan Beauchesne",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 28,
       "opponent_weight": 215,
-      "opponent_rank": 84,
+      "opponent_rank": 76,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -155,15 +170,32 @@
       "opponent_id": "35271741132",
       "opponent_name": "Jaydan Rutherford",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 30,
       "opponent_weight": 215,
-      "opponent_rank": 36,
+      "opponent_rank": 28,
       "weight_class": "285",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
       "event": "vs. North Hardin"
+    }
+  ],
+  "career": {
+    "career_id": "career_004890",
+    "canonical_name": "Daylon Cox",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "North Hardin",
+      "record": "3-5",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

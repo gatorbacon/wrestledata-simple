@@ -3,10 +3,10 @@
   "name": "Beckett Stone",
   "team": "Nelson County",
   "team_slug": "nelson_county",
-  "team_rank": 29,
+  "team_rank": 24,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 10,
+  "current_rank": 11,
   "record": {
     "overall": "6-3",
     "vs_ranked": "4-2",
@@ -17,9 +17,9 @@
     "pf7": 25.0,
     "pa7": 5.34,
     "pd7": 19.66,
-    "si_plus": 127.0,
-    "df_plus": 111.3,
-    "apr_plus": 111.6,
+    "si_plus": 129.4,
+    "df_plus": 111.0,
+    "apr_plus": 113.0,
     "pin_rate": 0.667,
     "bonus_rate": 0.833,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35090027132",
-      "opponent_rank": 11,
+      "opponent_rank": 13,
       "opponent_name": "Aydin Kadriov",
       "method": "TF 19-3 3:56"
     },
     "worst_loss": {
       "opponent_id": "34997724132",
-      "opponent_rank": 62,
+      "opponent_rank": 66,
       "opponent_name": "Aidan Durham",
       "method": "Inj. [time]"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "34997724132",
       "opponent_name": "Aidan Durham",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 138,
-      "opponent_rank": 62,
+      "opponent_rank": 66,
       "weight_class": "138",
       "result": "L",
       "method": "INJ",
@@ -65,9 +65,9 @@
       "opponent_id": "34994788132",
       "opponent_name": "Justus Shirley",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 132,
-      "opponent_rank": 153,
+      "opponent_rank": 88,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35746154132",
       "opponent_name": "Isaiah Mitchell",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 132,
-      "opponent_rank": 86,
+      "opponent_rank": 37,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -95,9 +95,9 @@
       "opponent_id": "35090027132",
       "opponent_name": "Aydin Kadriov",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 138,
-      "opponent_rank": 11,
+      "opponent_rank": 13,
       "weight_class": "138",
       "result": "W",
       "method": "TF",
@@ -112,7 +112,7 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 132,
-      "opponent_rank": 185,
+      "opponent_rank": 92,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -170,15 +170,41 @@
       "opponent_id": "35122062132",
       "opponent_name": "Hayden Drexler",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 138,
-      "opponent_rank": 9,
+      "opponent_rank": 10,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Oldham County"
+    }
+  ],
+  "career": {
+    "career_id": "career_001817",
+    "canonical_name": "Beckett Stone",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Nelson County",
+      "record": "6-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Nelson County",
+      "record": "26-22",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

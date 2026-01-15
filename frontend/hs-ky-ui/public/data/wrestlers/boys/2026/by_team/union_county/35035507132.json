@@ -3,12 +3,12 @@
   "name": "Wendel Shackelford",
   "team": "Union County",
   "team_slug": "union_county",
-  "team_rank": 2,
+  "team_rank": 3,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 25,
+  "current_rank": 22,
   "record": {
-    "overall": "8-3",
+    "overall": "9-5",
     "vs_ranked": "4-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,10 +18,10 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 117.5,
-    "pin_rate": 0.875,
-    "bonus_rate": 1.0,
+    "df_plus": 102.0,
+    "apr_plus": 114.1,
+    "pin_rate": 0.778,
+    "bonus_rate": 0.889,
     "majors": 1,
     "techs": 0,
     "pins": 7
@@ -33,13 +33,73 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35337920132",
-      "opponent_rank": 31,
+      "opponent_rank": 27,
       "opponent_name": "Michael Fidler",
       "method": "Fall 0:00"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_bbcf54a4d6a6",
+      "opponent_name": "Sam Mullen",
+      "opponent_team": "Lake Catholic",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34978022132",
+      "opponent_name": "cainan Williams",
+      "opponent_team": "McCallie School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:17",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35109725132",
+      "opponent_name": "William Woody",
+      "opponent_team": "Bartlett",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:47",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35216832132",
+      "opponent_name": "Abraham Nadeau",
+      "opponent_team": "Blackman High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Johnny Drennan Memorial"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35592841132",
@@ -54,21 +114,6 @@
       "score": "11-5",
       "duration": "7:00",
       "event": "Holiday Classic"
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "35274855132",
-      "opponent_name": "Jack Rowan",
-      "opponent_team": "Hillsboro",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:42",
-      "event": "Mater Dei Holiday Classic"
     },
     {
       "date": "2025-12-23",
@@ -90,9 +135,9 @@
       "opponent_id": "35221010132",
       "opponent_name": "Jared Basco",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": 82,
+      "opponent_rank": 83,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -105,9 +150,9 @@
       "opponent_id": "35002902132",
       "opponent_name": "Dylan Murphy",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 157,
-      "opponent_rank": 113,
+      "opponent_rank": 108,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -120,9 +165,9 @@
       "opponent_id": "35678113132",
       "opponent_name": "Brayden Ratliff",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 157,
-      "opponent_rank": 93,
+      "opponent_rank": 38,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -137,7 +182,7 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 157,
-      "opponent_rank": 31,
+      "opponent_rank": 27,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -204,6 +249,32 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Evansville Mater Dei"
+    }
+  ],
+  "career": {
+    "career_id": "career_002811",
+    "canonical_name": "Wendel Shackelford",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Union County",
+      "record": "9-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Union County",
+      "record": "9-5",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

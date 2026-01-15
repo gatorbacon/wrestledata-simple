@@ -10,7 +10,7 @@
   "record": {
     "overall": "1-1",
     "vs_ranked": "1-1",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -30,16 +30,16 @@
     "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35226396132",
-      "opponent_rank": 137,
+      "opponent_rank": 144,
       "opponent_name": "Kayden Brown",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35051529132",
-      "opponent_rank": 17,
+      "opponent_rank": 9,
       "opponent_name": "Braylen Livingston",
       "method": "Fall 2:39"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35226396132",
       "opponent_name": "Kayden Brown",
       "opponent_team": "Nelson County",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 24,
       "opponent_weight": 190,
-      "opponent_rank": 137,
+      "opponent_rank": 144,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35051529132",
       "opponent_name": "Braylen Livingston",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 190,
-      "opponent_rank": 17,
+      "opponent_rank": 9,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -75,10 +75,5 @@
       "duration": "2:39",
       "event": "vs. Charlestown"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  ]
 }

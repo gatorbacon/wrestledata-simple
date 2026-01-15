@@ -3,23 +3,23 @@
   "name": "Owen Heidenreich",
   "team": "Holy Cross (Covington)",
   "team_slug": "holy_cross_covington",
-  "team_rank": 90,
-  "weight_class": 175,
+  "team_rank": 94,
+  "weight_class": 165,
   "year": 2026,
-  "current_rank": 178,
+  "current_rank": 210,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-4",
+    "overall": "0-5",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 94.4,
+    "df_plus": 102.0,
+    "apr_plus": 92.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,34 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35035540132",
-      "opponent_rank": 174,
+      "opponent_rank": 161,
       "opponent_name": "Ricky Purnell",
       "method": "Fall 3:12"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35219540132",
+      "opponent_name": "Donnivan Sheffey",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": 93,
+      "opponent_weight": 165,
+      "opponent_rank": 101,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Holy Cross (Covington)",
+      "mv_impact": -7.75
+    },
     {
       "date": "2025-12-26",
       "opponent_id": "34988582132",
@@ -47,14 +63,30 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 165,
-      "opponent_rank": 98,
+      "opponent_rank": 100,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:48",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -7.24
+      "mv_impact": -7.86
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35035540132",
+      "opponent_name": "Ricky Purnell",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 175,
+      "opponent_rank": 161,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:12",
+      "event": "Bearcat Brawl 2025",
+      "mv_impact": -10.4
     },
     {
       "date": "2025-12-06",
@@ -63,46 +95,47 @@
       "opponent_team": "Calvary Christian",
       "opponent_team_rank": null,
       "opponent_weight": 175,
-      "opponent_rank": 88,
+      "opponent_rank": 58,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:27",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -7.21
+      "mv_impact": -6.55
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35045510132",
       "opponent_name": "Cameron Hunt",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 17,
       "opponent_weight": 175,
-      "opponent_rank": 25,
+      "opponent_rank": 26,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -4.59
-    },
+      "mv_impact": -4.82
+    }
+  ],
+  "career": {
+    "career_id": "career_005457",
+    "canonical_name": "Owen Heidenreich",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
     {
-      "date": "2025-12-06",
-      "opponent_id": "35035540132",
-      "opponent_name": "Ricky Purnell",
-      "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
-      "opponent_weight": 190,
-      "opponent_rank": 174,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:12",
-      "event": "Bearcat Brawl 2025",
-      "mv_impact": -9.07
+      "season": 2026,
+      "grade": 9,
+      "team": "Holy Cross (Covington)",
+      "record": "1-6",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -4,62 +4,121 @@
   "team": "East Carter",
   "team_slug": "east_carter",
   "team_rank": null,
-  "weight_class": 107,
+  "weight_class": 100,
   "year": 2026,
-  "current_rank": 34,
+  "current_rank": 36,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "3-1",
+    "overall": "4-4",
+    "vs_ranked": "4-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 102.4,
+    "pf7": 1.0,
+    "pa7": 11.0,
+    "pd7": -10.0,
+    "si_plus": 81.4,
+    "df_plus": 91.9,
+    "apr_plus": 100.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 1,
+    "ranked_wins": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35897898132",
-      "opponent_rank": 36,
+      "opponent_rank": 37,
       "opponent_name": "Madison Daughtery",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35922395132",
-      "opponent_rank": 33,
+      "opponent_rank": 35,
       "opponent_name": "Tabitha McGuire",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-06",
+      "opponent_id": "35333431132",
+      "opponent_name": "Emma McDavid",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 24,
+      "opponent_weight": 100,
+      "opponent_rank": 14,
+      "weight_class": "100",
+      "result": "L",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "vs. East Carter"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35897898132",
+      "opponent_name": "Madison Daughtery",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 100,
+      "opponent_rank": 37,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. East Carter"
+    },
+    {
       "date": "2025-12-30",
       "opponent_id": "35333603132",
       "opponent_name": "Madison Strunk",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 50,
       "opponent_weight": 107,
-      "opponent_rank": 43,
+      "opponent_rank": 44,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:38",
-      "event": "Girls Hatfield McCoy 32 2025",
-      "mv_impact": 2.21
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35496998132",
+      "opponent_name": "Kylie Sturgill",
+      "opponent_team": "Central (Wise)",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": null,
+      "weight_class": "107",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35122738132",
+      "opponent_name": "Avah Fontana",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": null,
+      "weight_class": "107",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "Girls Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-13",
@@ -68,14 +127,13 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 58,
+      "opponent_rank": 49,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": 0.65
+      "event": "Ashland Invitational Ladies Tournament"
     },
     {
       "date": "2025-12-13",
@@ -84,35 +142,33 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 33,
+      "opponent_rank": 35,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -7.8
+      "event": "Ashland Invitational Ladies Tournament"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35897898132",
       "opponent_name": "Madison Daughtery",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 29,
       "opponent_weight": 100,
-      "opponent_rank": 36,
+      "opponent_rank": 37,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "AWC Invitational",
-      "mv_impact": 3.1
+      "event": "AWC Invitational"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1
+    "top33_bonus_ev_shrunk": 1.6666666666666667
   }
 }

@@ -3,23 +3,23 @@
   "name": "Braydon Springfield",
   "team": "Caldwell County",
   "team_slug": "caldwell_county",
-  "team_rank": 62,
+  "team_rank": 66,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 76,
+  "current_rank": 80,
   "record": {
-    "overall": "5-7",
+    "overall": "5-8",
     "vs_ranked": "3-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 1.0,
     "pa7": 3.0,
     "pd7": -2.0,
-    "si_plus": 87.4,
-    "df_plus": 111.7,
-    "apr_plus": 101.0,
+    "si_plus": 86.5,
+    "df_plus": 112.0,
+    "apr_plus": 99.0,
     "pin_rate": 0.6,
     "bonus_rate": 0.6,
     "majors": 0,
@@ -33,26 +33,41 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35001156132",
-      "opponent_rank": 78,
+      "opponent_rank": 81,
       "opponent_name": "Zakkary Barzee",
       "method": "Fall 2:14"
     },
     "worst_loss": {
-      "opponent_id": "35458690132",
-      "opponent_rank": 101,
-      "opponent_name": "Luis Lira",
-      "method": "Dec 3-1"
+      "opponent_id": "35208003132",
+      "opponent_rank": 79,
+      "opponent_name": "Kayden Lambert",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35115887132",
+      "opponent_name": "Aiden Devlin",
+      "opponent_team": "Rossview High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:30",
+      "event": "vs. Rossview High School"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35325223132",
       "opponent_name": "Ian Tibbs",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 101,
+      "opponent_team_rank": 103,
       "opponent_weight": 285,
-      "opponent_rank": 60,
+      "opponent_rank": 63,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "35001156132",
       "opponent_name": "Zakkary Barzee",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 285,
-      "opponent_rank": 78,
+      "opponent_rank": 81,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -80,9 +95,9 @@
       "opponent_id": "35226463132",
       "opponent_name": "Landen Jakob",
       "opponent_team": "Nelson County",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": 154,
+      "opponent_rank": 162,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -140,9 +155,9 @@
       "opponent_id": "35208003132",
       "opponent_name": "Kayden Lambert",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 285,
-      "opponent_rank": 75,
+      "opponent_rank": 79,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -155,9 +170,9 @@
       "opponent_id": "35002901132",
       "opponent_name": "Jaxson Dernocoeur",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 285,
-      "opponent_rank": 188,
+      "opponent_rank": 195,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -215,15 +230,41 @@
       "opponent_id": "35458690132",
       "opponent_name": "Luis Lira",
       "opponent_team": "Calloway County",
-      "opponent_team_rank": 63,
-      "opponent_weight": 215,
-      "opponent_rank": 101,
+      "opponent_team_rank": 33,
+      "opponent_weight": 285,
+      "opponent_rank": 14,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
       "event": "vs. Calloway County"
+    }
+  ],
+  "career": {
+    "career_id": "career_003966",
+    "canonical_name": "Brayden Springfield",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Caldwell County",
+      "record": "5-9",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Caldwell County",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

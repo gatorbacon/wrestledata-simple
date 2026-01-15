@@ -6,7 +6,7 @@
   "team_rank": 138,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 140,
+  "current_rank": 133,
   "record": {
     "overall": "0-3",
     "vs_ranked": "0-3",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 86.8,
+    "df_plus": 102.0,
+    "apr_plus": 89.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -33,19 +33,35 @@
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "36386345132",
-      "opponent_rank": 127,
-      "opponent_name": "Ayden Warren",
-      "method": "Fall 1:29"
+      "opponent_id": "35513062132",
+      "opponent_rank": 114,
+      "opponent_name": "Jayden Tilley",
+      "method": "Fall 1:17"
     }
   },
   "match_list": [
     {
       "date": "2025-12-30",
+      "opponent_id": "36386345132",
+      "opponent_name": "Ayden Warren",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 126,
+      "opponent_rank": 53,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:29",
+      "event": "Boys Hatfield McCoy 32 2025",
+      "mv_impact": -6.81
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "35513062132",
       "opponent_name": "Jayden Tilley",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 132,
       "opponent_rank": 114,
       "weight_class": "132",
@@ -54,44 +70,40 @@
       "score": null,
       "duration": "1:17",
       "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -9.73
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "36386345132",
-      "opponent_name": "Ayden Warren",
-      "opponent_team": "Martin County",
-      "opponent_team_rank": 6,
-      "opponent_weight": 132,
-      "opponent_rank": 127,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:29",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -9.04
+      "mv_impact": -8.88
     },
     {
       "date": "2025-12-22",
       "opponent_id": "34995982132",
       "opponent_name": "Dalton Jones",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 132,
-      "opponent_rank": 85,
+      "opponent_rank": 83,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bell County",
-      "mv_impact": -7.02
+      "event": "vs. Whitley County",
+      "mv_impact": -6.85
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_004908",
+    "canonical_name": "Conner Crabtree",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Whitley County",
+      "record": "0-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

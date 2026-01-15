@@ -11,15 +11,15 @@
     "overall": "0-1",
     "vs_ranked": "0-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 97.2,
+    "df_plus": 102.0,
+    "apr_plus": 95.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35001147132",
-      "opponent_rank": 27,
+      "opponent_rank": 24,
       "opponent_name": "Apelu Hazelwood",
       "method": "TF 18-1 2:09"
     }
@@ -45,9 +45,9 @@
       "opponent_id": "35001147132",
       "opponent_name": "Apelu Hazelwood",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 190,
-      "opponent_rank": 27,
+      "opponent_rank": 24,
       "weight_class": "190",
       "result": "L",
       "method": "TF",
@@ -55,10 +55,5 @@
       "duration": "2:09",
       "event": "Scott Rohrer Tournament pres."
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  ]
 }

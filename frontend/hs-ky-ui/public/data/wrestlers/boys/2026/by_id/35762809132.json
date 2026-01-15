@@ -3,10 +3,10 @@
   "name": "Keiona Skaggs",
   "team": "East Carter",
   "team_slug": "east_carter",
-  "team_rank": 42,
+  "team_rank": 76,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 119,
+  "current_rank": 120,
   "record": {
     "overall": "4-2",
     "vs_ranked": "2-2",
@@ -17,9 +17,9 @@
     "pf7": 1.0,
     "pa7": 12.0,
     "pd7": -11.0,
-    "si_plus": 86.2,
-    "df_plus": 97.3,
-    "apr_plus": 107.3,
+    "si_plus": 85.3,
+    "df_plus": 97.0,
+    "apr_plus": 107.2,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35752242132",
-      "opponent_rank": 84,
+      "opponent_rank": 82,
       "opponent_name": "gabriel hayes",
       "method": "Fall 3:12"
     },
@@ -80,7 +80,7 @@
       "opponent_id": "35635453132",
       "opponent_name": "Derrick Taylor",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 88,
       "opponent_weight": 138,
       "opponent_rank": 85,
       "weight_class": "138",
@@ -95,7 +95,7 @@
       "opponent_id": "35635453132",
       "opponent_name": "Derrick Taylor",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 88,
       "opponent_weight": 138,
       "opponent_rank": 85,
       "weight_class": "138",
@@ -110,9 +110,9 @@
       "opponent_id": "35752242132",
       "opponent_name": "gabriel hayes",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 132,
-      "opponent_rank": 84,
+      "opponent_rank": 82,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -127,7 +127,7 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": 135,
       "opponent_weight": 132,
-      "opponent_rank": 130,
+      "opponent_rank": 124,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -136,9 +136,30 @@
       "event": "vs. West Carter"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_000770",
+    "canonical_name": "Keiona Skaggs",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "East Carter",
+      "record": "5-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "East Carter",
+      "record": "9-14",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -21,23 +21,41 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.861992Z",
+  "generated_at_utc": "2026-01-15T13:34:37.994601Z",
   "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "36550628132",
+      "name": "Avah Fontana",
+      "current_rank": 68,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
     "132": {
       "weight": 132,
       "wrestler_id": "36550522132",
       "name": "Tatum Millet",
       "current_rank": 1,
-      "xtp": 22.15,
+      "xtp": 21.25,
       "xtp_p": 12.83,
       "xtp_a": 3.73,
-      "xtp_b": 5.59,
+      "xtp_b": 4.69,
       "top10_record": {
         "wins": 1,
         "losses": 0
       },
       "top33_record": {
-        "wins": 4,
+        "wins": 3,
         "losses": 0
       }
     }
@@ -45,12 +63,21 @@
   "remaining": [
     {
       "weight": 107,
-      "wrestler_id": "36550628132",
+      "wrestler_id": "35122738132",
       "name": "Avah Fontana",
-      "wins": 0,
-      "losses": 4,
+      "wins": 2,
+      "losses": 1,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35122067132",
+      "name": "Tatum Millet",
+      "wins": 3,
+      "losses": 0,
+      "top25_wins": 2,
+      "bonus_rate": 1.0
     }
   ],
   "team_metrics": {
@@ -65,29 +92,29 @@
     "bonus_points": null,
     "overall": {
       "wins": 6,
-      "losses": null
+      "losses": 4
     },
     "top33": {
-      "wins": 4,
-      "losses": 0
+      "wins": 3,
+      "losses": 1
     },
     "top10": {
       "wins": 1,
-      "losses": 0
+      "losses": 1
     },
     "bonus_rate": {
       "value": 1.0,
-      "rank": 18,
+      "rank": 16,
       "rank_scope": "league"
     },
     "pin_rate": {
       "value": 0.833,
-      "rank": 44,
+      "rank": 48,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 100,
+      "rank": 99,
       "rank_scope": "league"
     }
   }

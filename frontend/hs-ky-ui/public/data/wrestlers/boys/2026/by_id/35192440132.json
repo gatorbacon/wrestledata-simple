@@ -3,23 +3,23 @@
   "name": "Ben Parsons",
   "team": "Logan County",
   "team_slug": "logan_county",
-  "team_rank": 100,
+  "team_rank": 102,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 165,
+  "current_rank": 163,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "1-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 95.4,
+    "df_plus": 102.0,
+    "apr_plus": 92.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,54 +28,109 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34989013132",
-      "opponent_rank": 31,
-      "opponent_name": "Isaiah Cook",
-      "method": "Fall 1:07"
+      "opponent_id": "35207991132",
+      "opponent_rank": 90,
+      "opponent_name": "Javian Young",
+      "method": "Fall 1:39"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35893545132",
+      "opponent_name": "Jalen Del Valle",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 62,
+      "opponent_weight": 215,
+      "opponent_rank": 44,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35207991132",
+      "opponent_name": "Javian Young",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 215,
+      "opponent_rank": 90,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:39",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_61c002194217",
+      "opponent_name": "Bode Darland",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 35,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35127098132",
       "opponent_name": "Devin Allen",
       "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 75,
       "opponent_weight": 215,
-      "opponent_rank": 2,
+      "opponent_rank": 4,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:45",
-      "event": "vs. Logan County",
-      "mv_impact": -0.9
+      "event": "vs. Logan County"
     },
     {
       "date": "2025-12-04",
       "opponent_id": "34989013132",
       "opponent_name": "Isaiah Cook",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 31,
+      "opponent_rank": 22,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:07",
-      "event": "vs. Ohio County",
-      "mv_impact": -3.12
+      "event": "vs. Ohio County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_005033",
+    "canonical_name": "Ben Parsons",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Logan County",
+      "record": "1-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

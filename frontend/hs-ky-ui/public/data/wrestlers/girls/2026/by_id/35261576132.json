@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35261576132",
+  "name": "Hayes Maggie",
+  "team": "Eastside",
+  "team_slug": "eastside",
+  "team_rank": null,
+  "weight_class": 100,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 107.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35897898132",
+      "opponent_rank": 37,
+      "opponent_name": "Madison Daughtery",
+      "method": "Fall 1:42"
+    },
+    "worst_loss": {
+      "opponent_id": "35333431132",
+      "opponent_rank": 14,
+      "opponent_name": "Emma McDavid",
+      "method": "Fall 2:57"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333431132",
+      "opponent_name": "Emma McDavid",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 24,
+      "opponent_weight": 100,
+      "opponent_rank": 14,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:57",
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35897898132",
+      "opponent_name": "Madison Daughtery",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 100,
+      "opponent_rank": 37,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35897898132",
+      "opponent_name": "Madison Daughtery",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 100,
+      "opponent_rank": 37,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "Bobby Bates Girls Wrestling Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.6666666666666667
+  }
+}

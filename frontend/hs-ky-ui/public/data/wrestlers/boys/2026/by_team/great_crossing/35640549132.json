@@ -3,23 +3,23 @@
   "name": "Miguel Fransisco",
   "team": "Great Crossing",
   "team_slug": "great_crossing",
-  "team_rank": 44,
+  "team_rank": 47,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 20,
+  "current_rank": 19,
   "record": {
     "overall": "8-4",
-    "vs_ranked": "4-1",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
-    "vs_top25": "1-1"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 20.0,
     "pa7": 4.0,
     "pd7": 16.0,
-    "si_plus": 119.9,
-    "df_plus": 111.3,
-    "apr_plus": 111.0,
+    "si_plus": 121.0,
+    "df_plus": 111.6,
+    "apr_plus": 111.1,
     "pin_rate": 0.5,
     "bonus_rate": 0.875,
     "majors": 2,
@@ -28,21 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35271618132",
-      "opponent_rank": 25,
+      "opponent_rank": 24,
       "opponent_name": "Brennen East",
       "method": "TF 20-4 0:00"
     },
-    "worst_loss": {
-      "opponent_id": "35064912132",
-      "opponent_rank": 15,
-      "opponent_name": "Tre Wilson",
-      "method": "Fall 3:13"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -50,9 +45,9 @@
       "opponent_id": "35064912132",
       "opponent_name": "Tre Wilson",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
+      "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 15,
+      "opponent_rank": null,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -92,6 +87,21 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_598c5bcbfe72",
+      "opponent_name": "Jason Young",
+      "opponent_team": "Valley View High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "Edgewood Invitational"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "OUTSTATE_1ed2c8ba8a32",
       "opponent_name": "Christian Robinson",
       "opponent_team": "Carlisle High School",
@@ -103,21 +113,6 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "Edgewood Invitational"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "OUTSTATE_598c5bcbfe72",
-      "opponent_name": "Jason Young",
-      "opponent_team": "Valley View High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "MD",
-      "score": "10-0",
-      "duration": "7:00",
       "event": "Edgewood Invitational"
     },
     {
@@ -155,9 +150,9 @@
       "opponent_id": "35271618132",
       "opponent_name": "Brennen East",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 30,
       "opponent_weight": 132,
-      "opponent_rank": 25,
+      "opponent_rank": 24,
       "weight_class": "126",
       "result": "W",
       "method": "TF",
@@ -170,9 +165,9 @@
       "opponent_id": "34997721132",
       "opponent_name": "Dakari McMullen",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 126,
-      "opponent_rank": 71,
+      "opponent_rank": 74,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -200,9 +195,9 @@
       "opponent_id": "35739653132",
       "opponent_name": "Elijah Toller",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 126,
-      "opponent_rank": 119,
+      "opponent_rank": 118,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -215,15 +210,32 @@
       "opponent_id": "35562978132",
       "opponent_name": "Henry Bueter",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 126,
-      "opponent_rank": 36,
+      "opponent_rank": 35,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:32",
       "event": "vs. St. Xavier"
+    }
+  ],
+  "career": {
+    "career_id": "career_004635",
+    "canonical_name": "Miguel Fransisco",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Great Crossing",
+      "record": "9-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -3,13 +3,13 @@
   "name": "Kathryn Floyd",
   "team": "Bardstown",
   "team_slug": "bardstown",
-  "team_rank": 53,
+  "team_rank": 58,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 72,
+  "current_rank": 70,
   "record": {
-    "overall": "9-1",
-    "vs_ranked": "7-1",
+    "overall": "9-2",
+    "vs_ranked": "7-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 17.0,
     "pa7": 4.93,
     "pd7": 12.07,
-    "si_plus": 112.5,
-    "df_plus": 109.0,
-    "apr_plus": 105.0,
+    "si_plus": 113.1,
+    "df_plus": 109.2,
+    "apr_plus": 104.3,
     "pin_rate": 0.556,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -28,31 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 7,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35074446132",
-      "opponent_rank": 92,
+      "opponent_rank": 88,
       "opponent_name": "Sophia Redd",
       "method": "TF 16-1 3:47"
     },
     "worst_loss": {
-      "opponent_id": "35049802132",
-      "opponent_rank": 56,
-      "opponent_name": "Sam Brauer",
-      "method": "Fall 1:54"
+      "opponent_id": "35037104132",
+      "opponent_rank": 50,
+      "opponent_name": "Blatyn Cooper",
+      "method": "Fall 2:36"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35037104132",
+      "opponent_name": "Blatyn Cooper",
+      "opponent_team": "Marion County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 144,
+      "opponent_rank": 50,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "vs. Marion County"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35049802132",
       "opponent_name": "Sam Brauer",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 25,
       "opponent_weight": 144,
-      "opponent_rank": 56,
+      "opponent_rank": 42,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "35049083132",
       "opponent_name": "Tristan Davis",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 144,
-      "opponent_rank": 96,
+      "opponent_rank": 93,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -80,9 +95,9 @@
       "opponent_id": "35893636132",
       "opponent_name": "Reagan Myers",
       "opponent_team": "Christian Academy-Louisville",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 26,
       "opponent_weight": 144,
-      "opponent_rank": 167,
+      "opponent_rank": 164,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -110,9 +125,9 @@
       "opponent_id": "35007895132",
       "opponent_name": "Maxwell Calloway",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 144,
-      "opponent_rank": 150,
+      "opponent_rank": 146,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "35225595132",
       "opponent_name": "Joseph madison",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 80,
-      "opponent_weight": 157,
-      "opponent_rank": 148,
+      "opponent_team_rank": 85,
+      "opponent_weight": 150,
+      "opponent_rank": 197,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -140,9 +155,9 @@
       "opponent_id": "35228303132",
       "opponent_name": "Lucy Savon",
       "opponent_team": "Butler",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 65,
       "opponent_weight": 144,
-      "opponent_rank": 162,
+      "opponent_rank": 157,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -155,9 +170,9 @@
       "opponent_id": "35074446132",
       "opponent_name": "Sophia Redd",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 144,
-      "opponent_rank": 92,
+      "opponent_rank": 88,
       "weight_class": "144",
       "result": "W",
       "method": "TF",
@@ -170,9 +185,9 @@
       "opponent_id": "35284469132",
       "opponent_name": "Sonia Tarley",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 144,
-      "opponent_rank": 180,
+      "opponent_rank": 176,
       "weight_class": "144",
       "result": "W",
       "method": "DEC",
@@ -196,9 +211,39 @@
       "event": "vs. Hart County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_000121",
+    "canonical_name": "Kathryn Floyd",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Bardstown",
+      "record": "9-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Bardstown",
+      "record": "12-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Bardstown",
+      "record": "7-9",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

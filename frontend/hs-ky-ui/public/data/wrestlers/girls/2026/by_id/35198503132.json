@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "35198503132",
+  "name": "Madison Miarka",
+  "team": "Cleveland High School",
+  "team_slug": "cleveland_high_school",
+  "team_rank": null,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 98.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35333321132",
+      "opponent_rank": 1,
+      "opponent_name": "Talynn Clark",
+      "method": "Fall 0:35"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "35333321132",
+      "opponent_name": "Talynn Clark",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 1,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "Women of Ironman"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.5192307692307692
+  }
+}

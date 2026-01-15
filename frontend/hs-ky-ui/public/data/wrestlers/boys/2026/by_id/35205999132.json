@@ -3,10 +3,10 @@
   "name": "Luaye Amria",
   "team": "Mercer County",
   "team_slug": "mercer_county",
-  "team_rank": 107,
+  "team_rank": 109,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 96,
+  "current_rank": 100,
   "record": {
     "overall": "4-3",
     "vs_ranked": "2-3",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 97.1,
+    "df_plus": 102.0,
+    "apr_plus": 96.9,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -32,16 +32,16 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35672429132",
-      "opponent_rank": 151,
-      "opponent_name": "Wesley Schult",
-      "method": "Fall 1:20"
+      "opponent_id": "35526492132",
+      "opponent_rank": 186,
+      "opponent_name": "Jarren Weatherspoon",
+      "method": "Fall 0:34"
     },
     "worst_loss": {
-      "opponent_id": "34997574132",
-      "opponent_rank": 95,
-      "opponent_name": "Isaiah Cook",
-      "method": "Fall 0:35"
+      "opponent_id": "35040595132",
+      "opponent_rank": 121,
+      "opponent_name": "Landon Newton",
+      "method": "Fall 1:01"
     }
   },
   "match_list": [
@@ -65,9 +65,9 @@
       "opponent_id": "34997574132",
       "opponent_name": "Isaiah Cook",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 46,
       "opponent_weight": 144,
-      "opponent_rank": 95,
+      "opponent_rank": 91,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -82,7 +82,7 @@
       "opponent_team": "Western Hills",
       "opponent_team_rank": 137,
       "opponent_weight": 144,
-      "opponent_rank": 200,
+      "opponent_rank": 186,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "35672429132",
       "opponent_name": "Wesley Schult",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 26,
-      "opponent_weight": 150,
-      "opponent_rank": 151,
+      "opponent_team_rank": 22,
+      "opponent_weight": 144,
+      "opponent_rank": 192,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -122,38 +122,50 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35318029132",
-      "opponent_name": "Kalombo Kabuya",
-      "opponent_team": "Iroquois",
-      "opponent_team_rank": 92,
-      "opponent_weight": 150,
-      "opponent_rank": 95,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "The Beast of the East"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35040595132",
       "opponent_name": "Landon Newton",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
-      "opponent_weight": 150,
-      "opponent_rank": 68,
+      "opponent_team_rank": 50,
+      "opponent_weight": 144,
+      "opponent_rank": 121,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:01",
       "event": "The Beast of the East"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35318029132",
+      "opponent_name": "Kalombo Kabuya",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": 96,
+      "opponent_weight": 150,
+      "opponent_rank": 81,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "The Beast of the East"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  "career": {
+    "career_id": "career_005550",
+    "canonical_name": "Luaye Amria",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Mercer County",
+      "record": "5-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

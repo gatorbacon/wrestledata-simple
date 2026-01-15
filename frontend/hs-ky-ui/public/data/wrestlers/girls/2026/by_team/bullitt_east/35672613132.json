@@ -4,47 +4,127 @@
   "team": "Bullitt East",
   "team_slug": "bullitt_east",
   "team_rank": null,
-  "weight_class": 138,
+  "weight_class": 132,
   "year": 2026,
-  "current_rank": 7,
+  "current_rank": 3,
   "record": {
-    "overall": "4-1",
-    "vs_ranked": "4-1",
-    "vs_top10": "1-1",
-    "vs_top25": "1-1"
+    "overall": "9-1",
+    "vs_ranked": "9-1",
+    "vs_top10": "4-1",
+    "vs_top25": "4-1"
   },
   "metrics": {
-    "pf7": 10.5,
-    "pa7": 11.0,
-    "pd7": -0.5,
-    "si_plus": 105.1,
-    "df_plus": 100.9,
-    "apr_plus": 102.0,
-    "pin_rate": 0.75,
+    "pf7": 12.0,
+    "pa7": 5.0,
+    "pd7": 7.0,
+    "si_plus": 105.9,
+    "df_plus": 111.1,
+    "apr_plus": 104.6,
+    "pin_rate": 0.556,
     "bonus_rate": 1.0,
-    "majors": 1,
+    "majors": 4,
     "techs": 0,
-    "pins": 3
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 9,
     "ranked_losses": 1,
-    "top10_wins": 1,
+    "top10_wins": 4,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35404899132",
-      "opponent_rank": 8,
-      "opponent_name": "Trinity Matthews",
-      "method": "MD 14-6"
+      "opponent_id": "35334947132",
+      "opponent_rank": 3,
+      "opponent_name": "Payton Perry",
+      "method": "MD 17-3"
     },
     "worst_loss": {
       "opponent_id": "35383812132",
-      "opponent_rank": 3,
+      "opponent_rank": 4,
       "opponent_name": "Aaliyah Svec",
       "method": "MD 16-7"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35635583132",
+      "opponent_name": "Ezri Brown",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 61,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": 4.57
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333363132",
+      "opponent_name": "Tahirah Massie",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 37,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": 6.14
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35510582132",
+      "opponent_name": "April Haisma",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 3,
+      "opponent_weight": 132,
+      "opponent_rank": 10,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": 6.47
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35343525132",
+      "opponent_name": "Kailyn Franks",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 4,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": 7.43
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35334947132",
+      "opponent_name": "Payton Perry",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 14,
+      "opponent_weight": 138,
+      "opponent_rank": 3,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "17-3",
+      "duration": "7:00",
+      "event": "Ladies Woodford County Invitational",
+      "mv_impact": 8.19
+    },
     {
       "date": "2025-12-19",
       "opponent_id": "35434953132",
@@ -52,14 +132,14 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 50,
+      "opponent_rank": 49,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:27",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 5.45
+      "mv_impact": 5.79
     },
     {
       "date": "2025-12-19",
@@ -75,7 +155,7 @@
       "score": "14-6",
       "duration": "7:00",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 6.28
+      "mv_impact": 5.98
     },
     {
       "date": "2025-12-19",
@@ -84,14 +164,14 @@
       "opponent_team": "Cooper",
       "opponent_team_rank": 35,
       "opponent_weight": 138,
-      "opponent_rank": 3,
+      "opponent_rank": 4,
       "weight_class": "138",
       "result": "L",
       "method": "MD",
       "score": "16-7",
       "duration": "7:00",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 0.33
+      "mv_impact": 0.13
     },
     {
       "date": "2025-12-13",
@@ -107,23 +187,23 @@
       "score": null,
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic",
-      "mv_impact": 5.93
+      "mv_impact": 6.24
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35333659132",
       "opponent_name": "Navaeh Woods",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 46,
       "opponent_weight": 132,
-      "opponent_rank": 66,
+      "opponent_rank": 38,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:46",
       "event": "The Beast of the East",
-      "mv_impact": 5.41
+      "mv_impact": 6.34
     }
   ]
 }

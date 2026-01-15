@@ -6,53 +6,68 @@
   "team_rank": 131,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 110,
+  "current_rank": 113,
   "record": {
-    "overall": "1-5",
-    "vs_ranked": "1-4",
+    "overall": "3-5",
+    "vs_ranked": "3-4",
     "vs_top10": "0-2",
-    "vs_top25": "0-3"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 23.6,
     "pd7": -23.6,
-    "si_plus": 85.9,
-    "df_plus": 82.8,
-    "apr_plus": 99.5,
+    "si_plus": 84.9,
+    "df_plus": 82.0,
+    "apr_plus": 103.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35281534132",
-      "opponent_rank": 119,
+      "opponent_rank": 127,
       "opponent_name": "Jeff Bamaca Sontay",
       "method": "Fall 0:33"
     },
     "worst_loss": {
-      "opponent_id": "35023923132",
-      "opponent_rank": 30,
-      "opponent_name": "Cameran Constant",
-      "method": "Fall 3:21"
+      "opponent_id": "35001150132",
+      "opponent_rank": 70,
+      "opponent_name": "Giazzi Segarra",
+      "method": "Fall 4:20"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35084067132",
+      "opponent_name": "Carmello Shirley",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 32,
+      "opponent_weight": 144,
+      "opponent_rank": 134,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "2026 Lou City Wrestling"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35212701132",
       "opponent_name": "Jack Ferguson",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 118,
       "opponent_weight": 150,
-      "opponent_rank": 9,
+      "opponent_rank": 7,
       "weight_class": "150",
       "result": "L",
       "method": "TF",
@@ -61,13 +76,28 @@
       "event": "vs. Trinity (Louisville)"
     },
     {
+      "date": "2025-12-30",
+      "opponent_id": "35225595132",
+      "opponent_name": "Joseph madison",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": 85,
+      "opponent_weight": 150,
+      "opponent_rank": 197,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "Boys Woodford County Invitational"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35144074132",
       "opponent_name": "Lucas Oliverio",
       "opponent_team": "Desales",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 72,
       "opponent_weight": 150,
-      "opponent_rank": 8,
+      "opponent_rank": 6,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "35001150132",
       "opponent_name": "Giazzi Segarra",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 150,
-      "opponent_rank": 25,
+      "opponent_rank": 70,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -95,9 +125,9 @@
       "opponent_id": "35281534132",
       "opponent_name": "Jeff Bamaca Sontay",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 150,
-      "opponent_rank": 119,
+      "opponent_rank": 127,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -110,9 +140,9 @@
       "opponent_id": "35023923132",
       "opponent_name": "Cameran Constant",
       "opponent_team": "Fort Knox",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 83,
       "opponent_weight": 150,
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -125,7 +155,7 @@
       "opponent_id": "OUTSTATE_98b3c0a2c1dc",
       "opponent_name": "Luca Montefusco",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "150",
@@ -134,6 +164,23 @@
       "score": null,
       "duration": "7:00",
       "event": "Screamin` Eagles Classic"
+    }
+  ],
+  "career": {
+    "career_id": "career_005728",
+    "canonical_name": "Carter Lockhart",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Trinity (Louisville)",
+      "record": "3-5",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

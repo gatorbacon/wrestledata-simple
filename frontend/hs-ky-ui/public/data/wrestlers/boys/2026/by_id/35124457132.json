@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 107.3,
+    "df_plus": 102.0,
+    "apr_plus": 107.5,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35221003132",
-      "opponent_rank": 32,
+      "opponent_rank": 35,
       "opponent_name": "Trey Herron",
       "method": "Dec 6-2"
     },
@@ -42,38 +42,33 @@
   "match_list": [
     {
       "date": "2025-12-13",
-      "opponent_id": "35666426132",
-      "opponent_name": "Ryder Hopper",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
-      "opponent_weight": 106,
-      "opponent_rank": 108,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Freeburg"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35221003132",
       "opponent_name": "Trey Herron",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 113,
-      "opponent_rank": 32,
+      "opponent_rank": 35,
       "weight_class": "106",
       "result": "W",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
       "event": "vs. Freeburg"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35666426132",
+      "opponent_name": "Ryder Hopper",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 82,
+      "opponent_weight": 106,
+      "opponent_rank": 124,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Freeburg"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  ]
 }

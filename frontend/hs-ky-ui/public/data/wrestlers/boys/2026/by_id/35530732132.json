@@ -3,13 +3,13 @@
   "name": "Damarion Austin",
   "team": "Russellville",
   "team_slug": "russellville",
-  "team_rank": 121,
+  "team_rank": 123,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 196,
+  "current_rank": 190,
   "record": {
-    "overall": "0-5",
-    "vs_ranked": "0-2",
+    "overall": "0-7",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 85.9,
+    "df_plus": 102.0,
+    "apr_plus": 86.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,49 +28,77 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35178234132",
-      "opponent_rank": 59,
-      "opponent_name": "Kailand Adams",
-      "method": "Fall 2:26"
+      "opponent_id": "35007902132",
+      "opponent_rank": 202,
+      "opponent_name": "William Moss",
+      "method": "Fall 0:13"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-13",
+      "opponent_id": "35007902132",
+      "opponent_name": "William Moss",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 175,
+      "opponent_rank": 202,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:13",
+      "event": "vs. South Warren"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35598040132",
+      "opponent_name": "Michael Blevins",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": 130,
+      "opponent_weight": 165,
+      "opponent_rank": 118,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trigg County"
+    },
     {
       "date": "2025-12-19",
       "opponent_id": "35178234132",
       "opponent_name": "Kailand Adams",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
-      "opponent_weight": 175,
-      "opponent_rank": 59,
+      "opponent_team_rank": 102,
+      "opponent_weight": 165,
+      "opponent_rank": 132,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:26",
-      "event": "vs. Russellville",
-      "mv_impact": -6.14
+      "event": "vs. Russellville"
     },
     {
       "date": "2025-12-09",
       "opponent_id": "35178234132",
       "opponent_name": "Kailand Adams",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
-      "opponent_weight": 175,
-      "opponent_rank": 59,
+      "opponent_team_rank": 102,
+      "opponent_weight": 165,
+      "opponent_rank": 132,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:49",
-      "event": "vs. Russellville",
-      "mv_impact": -6.14
+      "event": "vs. Russellville"
     },
     {
       "date": "2025-12-09",
@@ -93,7 +121,7 @@
       "opponent_name": "Landon McConnell",
       "opponent_team": "Goodpasture Christian School",
       "opponent_team_rank": null,
-      "opponent_weight": 165,
+      "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "165",
       "result": "L",
@@ -118,9 +146,21 @@
       "event": "vs. East Robertson High School"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  "career": {
+    "career_id": "career_005096",
+    "canonical_name": "Damarion Austin",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Russellville",
+      "record": "0-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

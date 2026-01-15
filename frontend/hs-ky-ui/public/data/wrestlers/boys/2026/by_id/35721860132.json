@@ -3,79 +3,137 @@
   "name": "Cash Dotson",
   "team": "Prestonsburg",
   "team_slug": "prestonsburg",
-  "team_rank": 117,
+  "team_rank": 119,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 106,
+  "current_rank": 110,
   "record": {
-    "overall": "1-7",
-    "vs_ranked": "1-6",
+    "overall": "2-11",
+    "vs_ranked": "2-8",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 94.7,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pf7": 9.0,
+    "pa7": 6.0,
+    "pd7": 3.0,
+    "si_plus": 96.9,
+    "df_plus": 106.8,
+    "apr_plus": 95.5,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_wins": 2,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35724532132",
-      "opponent_rank": 108,
-      "opponent_name": "Seth Boggs",
-      "method": "Fall 0:25"
+      "opponent_id": "35559687132",
+      "opponent_rank": 74,
+      "opponent_name": "Leo Richardson",
+      "method": "Dec 9-6"
     },
     "worst_loss": {
       "opponent_id": "35640172132",
-      "opponent_rank": 99,
+      "opponent_rank": 104,
       "opponent_name": "Tyler Foster",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35051528132",
+      "opponent_name": "Brandon Wiley",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 215,
+      "opponent_rank": 41,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35051535132",
+      "opponent_name": "Elijah Huff",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 215,
+      "opponent_rank": 12,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34977416132",
+      "opponent_name": "Kaiden Collins",
+      "opponent_team": "Jefferson Co. High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Bill Brimer Brawl in the Hall 2026"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35496869132",
+      "opponent_name": "Gavin Lewis",
+      "opponent_team": "Galax",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Bill Brimer Brawl in the Hall 2026"
+    },
+    {
       "date": "2025-12-30",
       "opponent_id": "35724532132",
       "opponent_name": "Seth Boggs",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 215,
-      "opponent_rank": 108,
+      "opponent_rank": 112,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:25",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 2.98
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35144518132",
       "opponent_name": "Jace Detre",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 215,
-      "opponent_rank": 13,
+      "opponent_rank": 20,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:10",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -3.74
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -97,16 +155,15 @@
       "opponent_id": "34995986132",
       "opponent_name": "Alexander Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 215,
-      "opponent_rank": 26,
+      "opponent_rank": 27,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:24",
-      "event": "Anchor Down Showdown",
-      "mv_impact": -3.27
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
@@ -115,67 +172,99 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 215,
-      "opponent_rank": 65,
+      "opponent_rank": 63,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:21",
-      "event": "Anchor Down Showdown",
-      "mv_impact": -7.3
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35559687132",
+      "opponent_name": "Leo Richardson",
+      "opponent_team": "Knott County Central",
+      "opponent_team_rank": 97,
+      "opponent_weight": 190,
+      "opponent_rank": 74,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "7:00",
+      "event": "Cougar Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35640172132",
       "opponent_name": "Tyler Foster",
       "opponent_team": "Harlan County",
-      "opponent_team_rank": 85,
+      "opponent_team_rank": 90,
       "opponent_weight": 215,
-      "opponent_rank": 99,
+      "opponent_rank": 104,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Cougar Classic",
-      "mv_impact": -8.27
+      "event": "Cougar Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35559540132",
       "opponent_name": "Ethan Collins",
       "opponent_team": "Knott County Central",
-      "opponent_team_rank": 94,
+      "opponent_team_rank": 97,
       "opponent_weight": 215,
-      "opponent_rank": 27,
+      "opponent_rank": 26,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Cougar Classic",
-      "mv_impact": -3.83
+      "event": "Cougar Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35013067132",
       "opponent_name": "Jace Lipfird",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 215,
-      "opponent_rank": 92,
+      "opponent_rank": 89,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:16",
-      "event": "Cougar Classic",
-      "mv_impact": -7.55
+      "event": "Cougar Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_002224",
+    "canonical_name": "Cash Dotson",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Prestonsburg",
+      "record": "2-11",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Prestonsburg",
+      "record": "7-10",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

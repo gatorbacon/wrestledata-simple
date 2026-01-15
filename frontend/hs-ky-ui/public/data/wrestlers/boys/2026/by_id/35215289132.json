@@ -3,10 +3,10 @@
   "name": "Valin Heavrin",
   "team": "Doss",
   "team_slug": "doss",
-  "team_rank": 71,
+  "team_rank": 74,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 120,
+  "current_rank": 118,
   "record": {
     "overall": "3-4",
     "vs_ranked": "2-4",
@@ -18,7 +18,7 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
+    "df_plus": 102.0,
     "apr_plus": 96.3,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35057157132",
-      "opponent_rank": 109,
+      "opponent_rank": 110,
       "opponent_name": "Wyatt Booher",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "34989849132",
-      "opponent_rank": 126,
+      "opponent_rank": 104,
       "opponent_name": "Donte Hayes",
       "method": "Fall 2:55"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35138678132",
       "opponent_name": "Ethan Mullins",
       "opponent_team": "Bethlehem",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 62,
       "opponent_weight": 132,
-      "opponent_rank": 92,
+      "opponent_rank": 93,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35057157132",
       "opponent_name": "Wyatt Booher",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 64,
       "opponent_weight": 138,
-      "opponent_rank": 109,
+      "opponent_rank": 110,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -77,12 +77,27 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35321405132",
+      "opponent_name": "Jackson Gray",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 111,
+      "opponent_weight": 120,
+      "opponent_rank": 175,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. North Bullitt"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35193723132",
       "opponent_name": "Lueke Gage",
       "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 75,
       "opponent_weight": 126,
-      "opponent_rank": 81,
+      "opponent_rank": 87,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "34989849132",
       "opponent_name": "Donte Hayes",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 126,
-      "opponent_rank": 126,
+      "opponent_rank": 104,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -110,30 +125,15 @@
       "opponent_id": "35205065132",
       "opponent_name": "Nick Fultz",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 22,
       "opponent_weight": 132,
-      "opponent_rank": 76,
+      "opponent_rank": 94,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Doss"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35321405132",
-      "opponent_name": "Jackson Gray",
-      "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
-      "opponent_weight": 132,
-      "opponent_rank": 121,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. North Bullitt"
     },
     {
       "date": "2025-12-06",
@@ -151,9 +151,21 @@
       "event": "vs. Valley"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_005355",
+    "canonical_name": "Valin Heavrin",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Doss",
+      "record": "3-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

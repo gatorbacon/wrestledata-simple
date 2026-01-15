@@ -6,87 +6,205 @@
   "team_rank": null,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 171,
+  "current_rank": 83,
   "record": {
-    "overall": "0-3",
-    "vs_ranked": "0-3",
+    "overall": "2-7",
+    "vs_ranked": "1-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
+    "df_plus": 102.0,
     "apr_plus": 90.1,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35023916132",
+      "opponent_rank": 84,
+      "opponent_name": "Christian Young",
+      "method": "Fall 3:44"
+    },
     "worst_loss": {
-      "opponent_id": "35383672132",
-      "opponent_rank": 77,
-      "opponent_name": "Yandel Santamaria Luna",
-      "method": "Fall 0:00"
+      "opponent_id": "35193715132",
+      "opponent_rank": 85,
+      "opponent_name": "Wai Soe",
+      "method": "Fall 0:56"
     }
   },
   "match_list": [
     {
-      "date": "2025-12-22",
-      "opponent_id": "35233685132",
-      "opponent_name": "Conner Mayhugh",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": 51,
+      "date": "2026-01-13",
+      "opponent_id": "35049804132",
+      "opponent_name": "Eric McCarthy",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 25,
       "opponent_weight": 175,
-      "opponent_rank": 75,
+      "opponent_rank": 82,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Whitesville)",
-      "mv_impact": -6.36
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2026-01-13",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bosse"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35194012132",
+      "opponent_name": "Kaleb Lindsey",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 165,
+      "opponent_rank": 56,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "vs. Warren Central"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35193715132",
+      "opponent_name": "Wai Soe",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 165,
+      "opponent_rank": 85,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:56",
+      "event": "vs. Warren Central"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35137018132",
+      "opponent_name": "Blake Donnelly",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 175,
+      "opponent_rank": 54,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:10",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35023916132",
+      "opponent_name": "Christian Young",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 175,
+      "opponent_rank": 84,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:44",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35233685132",
+      "opponent_name": "Conner Mayhugh",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": 57,
+      "opponent_weight": 175,
+      "opponent_rank": 70,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trinity (Whitesville)"
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35207986132",
       "opponent_name": "Ethan Peckenpaugh",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 175,
-      "opponent_rank": 33,
+      "opponent_rank": 15,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Whitesville)",
-      "mv_impact": -2.19
+      "event": "vs. Trinity (Whitesville)"
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35383672132",
       "opponent_name": "Yandel Santamaria Luna",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 175,
-      "opponent_rank": 77,
+      "opponent_rank": 72,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Whitesville)",
-      "mv_impact": -7.4
+      "event": "vs. Trinity (Whitesville)"
+    }
+  ],
+  "career": {
+    "career_id": "career_002789",
+    "canonical_name": "Aiden Midkiff",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Trinity (Whitesville)",
+      "record": "2-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Trinity (Whitesville)",
+      "record": "12-29",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

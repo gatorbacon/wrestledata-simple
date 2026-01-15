@@ -3,48 +3,138 @@
   "name": "Hagen Samuel",
   "team": "Ashland Blazer",
   "team_slug": "ashland_blazer",
-  "team_rank": 52,
+  "team_rank": 41,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 13,
+  "current_rank": 17,
   "record": {
-    "overall": "18-6",
-    "vs_ranked": "12-4",
+    "overall": "22-8",
+    "vs_ranked": "15-6",
     "vs_top10": "0-4",
-    "vs_top25": "1-4"
+    "vs_top25": "1-5"
   },
   "metrics": {
-    "pf7": 10.0,
-    "pa7": 10.27,
-    "pd7": -0.27,
-    "si_plus": 104.3,
-    "df_plus": 100.4,
-    "apr_plus": 109.9,
-    "pin_rate": 0.833,
-    "bonus_rate": 0.944,
+    "pf7": 11.86,
+    "pa7": 10.53,
+    "pd7": 1.33,
+    "si_plus": 106.1,
+    "df_plus": 98.3,
+    "apr_plus": 107.7,
+    "pin_rate": 0.727,
+    "bonus_rate": 0.909,
     "majors": 1,
-    "techs": 1,
-    "pins": 15
+    "techs": 3,
+    "pins": 16
   },
   "opponent_breakdown": {
-    "ranked_wins": 12,
-    "ranked_losses": 4,
+    "ranked_wins": 15,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 4,
     "win_over_highest_rank": {
       "opponent_id": "35513059132",
-      "opponent_rank": 16,
+      "opponent_rank": 11,
       "opponent_name": "James E. Jones",
       "method": "Fall 2:09"
     },
     "worst_loss": {
-      "opponent_id": "35017742132",
-      "opponent_rank": 10,
-      "opponent_name": "Branden McGee",
-      "method": "MD 15-7"
+      "opponent_id": "35017750132",
+      "opponent_rank": 53,
+      "opponent_name": "Jacob Hammonds",
+      "method": "M. For."
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35559687132",
+      "opponent_name": "Leo Richardson",
+      "opponent_team": "Knott County Central",
+      "opponent_team_rank": 97,
+      "opponent_weight": 190,
+      "opponent_rank": 74,
+      "weight_class": "190",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "2:29",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35513059132",
+      "opponent_name": "James E. Jones",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 60,
+      "opponent_weight": 190,
+      "opponent_rank": 11,
+      "weight_class": "190",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "2:17",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35017750132",
+      "opponent_name": "Jacob Hammonds",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 190,
+      "opponent_rank": 53,
+      "weight_class": "190",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. East Carter"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35850449132",
+      "opponent_name": "Cameron Berner",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 190,
+      "opponent_rank": 125,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:32",
+      "event": "vs. Boyd County"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35724710132",
+      "opponent_name": "Jason Wade",
+      "opponent_team": "East Carter",
+      "opponent_team_rank": 76,
+      "opponent_weight": 215,
+      "opponent_rank": 95,
+      "weight_class": "215",
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "0:00",
+      "event": "vs. East Carter"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "36316442132",
@@ -95,55 +185,52 @@
       "opponent_id": "35910079132",
       "opponent_name": "Wyatt Hudson",
       "opponent_team": "Russell",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 122,
       "opponent_weight": 190,
-      "opponent_rank": 81,
+      "opponent_rank": 72,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 4.81
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35513059132",
       "opponent_name": "James E. Jones",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 190,
-      "opponent_rank": 16,
+      "opponent_rank": 11,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:09",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 8.3
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35751941132",
       "opponent_name": "Gabriel Blackburn",
       "opponent_team": "Johnson Central",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 2,
       "opponent_weight": 190,
-      "opponent_rank": 31,
+      "opponent_rank": 36,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:43",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 7.74
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35017742132",
       "opponent_name": "Branden McGee",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 190,
       "opponent_rank": 10,
       "weight_class": "190",
@@ -151,24 +238,22 @@
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 0.67
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35639989132",
       "opponent_name": "Michael Peterson",
       "opponent_team": "Harlan County",
-      "opponent_team_rank": 85,
+      "opponent_team_rank": 90,
       "opponent_weight": 190,
-      "opponent_rank": 160,
+      "opponent_rank": 166,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:55",
-      "event": "Bobby Bates Wrestling Classic",
-      "mv_impact": 2.15
+      "event": "Bobby Bates Wrestling Classic"
     },
     {
       "date": "2025-12-20",
@@ -220,7 +305,7 @@
       "opponent_id": "35017742132",
       "opponent_name": "Branden McGee",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 190,
       "opponent_rank": 10,
       "weight_class": "190",
@@ -228,8 +313,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:10",
-      "event": "Bobby Bates Wrestling Classic",
-      "mv_impact": -2.33
+      "event": "Bobby Bates Wrestling Classic"
     },
     {
       "date": "2025-12-20",
@@ -251,55 +335,52 @@
       "opponent_id": "35896733132",
       "opponent_name": "Payton Pressley",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 190,
-      "opponent_rank": 121,
+      "opponent_rank": 131,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": 2.19
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35850455132",
-      "opponent_name": "Jase Senter-Lowe",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
-      "opponent_weight": 175,
-      "opponent_rank": 198,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:28",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": 0.4
+      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35017750132",
       "opponent_name": "Jacob Hammonds",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 190,
-      "opponent_rank": 47,
+      "opponent_rank": 53,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:48",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": 6.51
+      "event": "Ashland Invitational Tournament"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35850455132",
+      "opponent_name": "Jase Senter-Lowe",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 175,
+      "opponent_rank": 190,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35017742132",
       "opponent_name": "Branden McGee",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 190,
       "opponent_rank": 10,
       "weight_class": "190",
@@ -307,8 +388,7 @@
       "method": "MD",
       "score": "13-3",
       "duration": "7:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": -0.33
+      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-10",
@@ -330,7 +410,7 @@
       "opponent_id": "35017742132",
       "opponent_name": "Branden McGee",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 190,
       "opponent_rank": 10,
       "weight_class": "190",
@@ -338,8 +418,7 @@
       "method": "MD",
       "score": "15-7",
       "duration": "7:00",
-      "event": "Anchor Down Showdown",
-      "mv_impact": -0.33
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
@@ -348,83 +427,90 @@
       "opponent_team": "Southwestern",
       "opponent_team_rank": 128,
       "opponent_weight": 190,
-      "opponent_rank": 109,
+      "opponent_rank": 118,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:04",
-      "event": "Anchor Down Showdown",
-      "mv_impact": 3.53
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35600443132",
       "opponent_name": "Talon West",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 190,
-      "opponent_rank": 108,
+      "opponent_rank": 117,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:42",
-      "event": "Anchor Down Showdown",
-      "mv_impact": 3.21
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35513310132",
       "opponent_name": "Brayden Tackett",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 190,
-      "opponent_rank": 99,
+      "opponent_rank": 106,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:09",
-      "event": "Anchor Down Showdown",
-      "mv_impact": 3.26
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35013055132",
       "opponent_name": "Kasey Conley",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 190,
-      "opponent_rank": 34,
+      "opponent_rank": 37,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:43",
-      "event": "Anchor Down Showdown",
-      "mv_impact": 8.22
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35721858132",
       "opponent_name": "Brody Hicks",
       "opponent_team": "Prestonsburg",
-      "opponent_team_rank": 117,
+      "opponent_team_rank": 119,
       "opponent_weight": 190,
-      "opponent_rank": 82,
+      "opponent_rank": 73,
       "weight_class": "190",
       "result": "W",
       "method": "TF",
       "score": "18-1",
       "duration": "2:17",
-      "event": "Anchor Down Showdown",
-      "mv_impact": 3.54
+      "event": "Anchor Down Showdown"
     }
   ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.4333333333333333
-  }
+  "career": {
+    "career_id": "career_005189",
+    "canonical_name": "Hagen Samuel",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Ashland Blazer",
+      "record": "22-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

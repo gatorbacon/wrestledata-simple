@@ -4,22 +4,22 @@
   "team": "West Jessamine",
   "team_slug": "west_jessamine",
   "team_rank": 136,
-  "weight_class": 132,
+  "weight_class": 126,
   "year": 2026,
-  "current_rank": 264,
+  "current_rank": 187,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "pf7": 2.0,
+    "pa7": 12.0,
+    "pd7": -10.0,
+    "si_plus": 88.2,
+    "df_plus": 98.9,
+    "apr_plus": 89.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -27,17 +27,87 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35238076132",
+      "opponent_rank": 183,
+      "opponent_name": "Ben Metcalf",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "35767056132",
+      "opponent_rank": 167,
+      "opponent_name": "Elijah Jackson",
+      "method": "MD 12-2"
+    }
   },
-  "match_list": [],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35767056132",
+      "opponent_name": "Elijah Jackson",
+      "opponent_team": "Bath County",
+      "opponent_team_rank": 59,
+      "opponent_weight": 126,
+      "opponent_rank": 167,
+      "weight_class": "126",
+      "result": "L",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "Tates Creek Invitational",
+      "mv_impact": -7.62
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35226139132",
+      "opponent_name": "Zachary Beecham",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 126,
+      "opponent_rank": 39,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "Tates Creek Invitational",
+      "mv_impact": -4.64
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35238076132",
+      "opponent_name": "Ben Metcalf",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": 136,
+      "opponent_weight": 126,
+      "opponent_rank": 183,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Tates Creek Invitational"
+    }
+  ],
+  "career": {
+    "career_id": "career_005759",
+    "canonical_name": "Alex Dubon",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "West Jessamine",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,23 +3,23 @@
   "name": "Landon Lopez",
   "team": "McCracken County",
   "team_slug": "mccracken_county",
-  "team_rank": 104,
+  "team_rank": 106,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 89,
+  "current_rank": 92,
   "record": {
     "overall": "6-8",
     "vs_ranked": "3-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 25.0,
     "pa7": 6.67,
     "pd7": 18.33,
-    "si_plus": 125.0,
-    "df_plus": 106.5,
-    "apr_plus": 95.2,
+    "si_plus": 126.4,
+    "df_plus": 106.7,
+    "apr_plus": 95.5,
     "pin_rate": 0.667,
     "bonus_rate": 0.833,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35002903132",
-      "opponent_rank": 73,
+      "opponent_rank": 77,
       "opponent_name": "Sam Suapilimai",
       "method": "Fall 0:40"
     },
     "worst_loss": {
       "opponent_id": "35281675132",
-      "opponent_rank": 88,
+      "opponent_rank": 91,
       "opponent_name": "Christopher Lucas",
       "method": "Fall 1:01"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35002903132",
       "opponent_name": "Sam Suapilimai",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 285,
-      "opponent_rank": 73,
+      "opponent_rank": 77,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35768036132",
       "opponent_name": "Caedyn Word",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 285,
-      "opponent_rank": 87,
+      "opponent_rank": 90,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35281675132",
       "opponent_name": "Christopher Lucas",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 285,
-      "opponent_rank": 88,
+      "opponent_rank": 91,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -95,9 +95,9 @@
       "opponent_id": "35437488132",
       "opponent_name": "michael harper",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 285,
-      "opponent_rank": 149,
+      "opponent_rank": 158,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -170,9 +170,9 @@
       "opponent_id": "35208003132",
       "opponent_name": "Kayden Lambert",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 285,
-      "opponent_rank": 75,
+      "opponent_rank": 79,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -200,9 +200,9 @@
       "opponent_id": "35049067132",
       "opponent_name": "Kaw Reh",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 285,
-      "opponent_rank": 199,
+      "opponent_rank": 206,
       "weight_class": "285",
       "result": "W",
       "method": "TF",
@@ -215,9 +215,9 @@
       "opponent_id": "34989013132",
       "opponent_name": "Isaiah Cook",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": 31,
+      "opponent_rank": 22,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -256,9 +256,30 @@
       "event": "vs. Rossview High School"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_001683",
+    "canonical_name": "Landon Lopez",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "McCracken County",
+      "record": "6-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "McCracken County",
+      "record": "13-15",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

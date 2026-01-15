@@ -3,54 +3,84 @@
   "name": "Robert Alvarado",
   "team": "Oldham County",
   "team_slug": "oldham_county",
-  "team_rank": 110,
+  "team_rank": 112,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 93,
+  "current_rank": 92,
   "record": {
-    "overall": "4-5",
-    "vs_ranked": "3-3",
+    "overall": "5-6",
+    "vs_ranked": "4-4",
     "vs_top10": "0-2",
     "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 3.0,
-    "pa7": 14.5,
-    "pd7": -11.5,
-    "si_plus": 94.8,
-    "df_plus": 94.4,
-    "apr_plus": 103.6,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pf7": 5.01,
+    "pa7": 13.5,
+    "pd7": -8.49,
+    "si_plus": 96.9,
+    "df_plus": 96.3,
+    "apr_plus": 102.8,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
     "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 3,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35447228132",
-      "opponent_rank": 104,
-      "opponent_name": "Gabe Davis",
-      "method": "Fall 1:56"
+      "opponent_id": "35001142132",
+      "opponent_rank": 99,
+      "opponent_name": "CJ Hogan",
+      "method": "Dec 8-6"
     },
     "worst_loss": {
       "opponent_id": "35752417132",
-      "opponent_rank": 23,
+      "opponent_rank": 32,
       "opponent_name": "Landon Howard",
       "method": "MD 12-4"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35001142132",
+      "opponent_name": "CJ Hogan",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 11,
+      "opponent_weight": 138,
+      "opponent_rank": 99,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35051536132",
+      "opponent_name": "Isaac Richards",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 138,
+      "opponent_rank": 16,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "vs. Woodford County"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35181249132",
       "opponent_name": "Sam Spoonamore",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 138,
       "opponent_rank": 111,
       "weight_class": "138",
@@ -65,14 +95,14 @@
       "opponent_id": "35202491132",
       "opponent_name": "Henry Koller",
       "opponent_team": "South Oldham",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 138,
       "opponent_rank": 5,
       "weight_class": "138",
       "result": "L",
       "method": "TF",
       "score": "17-2",
-      "duration": "0:00",
+      "duration": "2:19",
       "event": "Warhawk Classic"
     },
     {
@@ -80,9 +110,9 @@
       "opponent_id": "35752417132",
       "opponent_name": "Landon Howard",
       "opponent_team": "Johnson Central",
-      "opponent_team_rank": 12,
-      "opponent_weight": 138,
-      "opponent_rank": 23,
+      "opponent_team_rank": 2,
+      "opponent_weight": 132,
+      "opponent_rank": 32,
       "weight_class": "138",
       "result": "L",
       "method": "MD",
@@ -95,9 +125,9 @@
       "opponent_id": "35247375132",
       "opponent_name": "Shawn Hardin",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 138,
-      "opponent_rank": 125,
+      "opponent_rank": 126,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -110,9 +140,9 @@
       "opponent_id": "35122062132",
       "opponent_name": "Hayden Drexler",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 138,
-      "opponent_rank": 9,
+      "opponent_rank": 10,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -126,8 +156,8 @@
       "opponent_name": "Gabe Davis",
       "opponent_team": "West Carter",
       "opponent_team_rank": 135,
-      "opponent_weight": 138,
-      "opponent_rank": 104,
+      "opponent_weight": 132,
+      "opponent_rank": 188,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -181,9 +211,21 @@
       "event": "Phil Thrasher Tournament"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_005064",
+    "canonical_name": "Robert Alvarado",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Oldham County",
+      "record": "5-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

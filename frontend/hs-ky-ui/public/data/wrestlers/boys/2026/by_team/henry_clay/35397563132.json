@@ -3,10 +3,10 @@
   "name": "Parker Seastrand",
   "team": "Henry Clay",
   "team_slug": "henry_clay",
-  "team_rank": 18,
+  "team_rank": 34,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 95,
+  "current_rank": 97,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 83.9,
+    "df_plus": 102.0,
+    "apr_plus": 84.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35637316132",
-      "opponent_rank": 76,
+      "opponent_rank": 113,
       "opponent_name": "Mason Hargrove",
       "method": "Fall 0:34"
     }
@@ -42,10 +42,26 @@
   "match_list": [
     {
       "date": "2025-12-06",
+      "opponent_id": "35637316132",
+      "opponent_name": "Mason Hargrove",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 106,
+      "opponent_rank": 113,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "The Beast of the East",
+      "mv_impact": -9.38
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35076691132",
       "opponent_name": "Khareem Washington",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 113,
       "opponent_rank": 67,
       "weight_class": "113",
@@ -54,23 +70,24 @@
       "score": null,
       "duration": "0:00",
       "event": "The Beast of the East",
-      "mv_impact": -8.47
-    },
+      "mv_impact": -8.37
+    }
+  ],
+  "career": {
+    "career_id": "career_005445",
+    "canonical_name": "Parker Seastrand",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
     {
-      "date": "2025-12-06",
-      "opponent_id": "35637316132",
-      "opponent_name": "Mason Hargrove",
-      "opponent_team": "Russell County",
-      "opponent_team_rank": 19,
-      "opponent_weight": 113,
-      "opponent_rank": 76,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:34",
-      "event": "The Beast of the East",
-      "mv_impact": -9.7
+      "season": 2026,
+      "grade": 9,
+      "team": "Henry Clay",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

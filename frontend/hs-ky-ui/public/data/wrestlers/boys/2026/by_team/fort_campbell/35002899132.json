@@ -3,13 +3,13 @@
   "name": "Xavi Nava",
   "team": "Fort Campbell",
   "team_slug": "fort_campbell",
-  "team_rank": 76,
+  "team_rank": 82,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 173,
+  "current_rank": 163,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "0-0",
+    "overall": "2-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,23 +18,58 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 97.8,
+    "df_plus": 102.0,
+    "apr_plus": 100.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35001148132",
+      "opponent_rank": 74,
+      "opponent_name": "Neiko Villegas",
+      "method": "Fall 1:36"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-13",
+      "opponent_id": "35001148132",
+      "opponent_name": "Neiko Villegas",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 11,
+      "opponent_weight": 132,
+      "opponent_rank": 74,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
+      "event": "vs. Fort Campbell"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35174918132",
+      "opponent_name": "Kooper Kenerson",
+      "opponent_team": "Goodpasture Christian School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Goodpasture Christian School"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35124368132",
@@ -64,6 +99,32 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Johnston City"
+    }
+  ],
+  "career": {
+    "career_id": "career_000898",
+    "canonical_name": "Xavi Nava",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Fort Campbell",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Fort Campbell",
+      "record": "12-11",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

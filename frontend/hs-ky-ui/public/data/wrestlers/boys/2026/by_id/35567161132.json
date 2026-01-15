@@ -3,22 +3,22 @@
   "name": "Chase Finley",
   "team": "Apollo",
   "team_slug": "apollo",
-  "team_rank": 51,
+  "team_rank": 57,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 156,
+  "current_rank": 147,
   "record": {
     "overall": "3-7",
-    "vs_ranked": "1-6",
-    "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_ranked": "1-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 25.0,
     "pd7": -25.0,
-    "si_plus": 87.6,
-    "df_plus": 84.5,
+    "si_plus": 87.7,
+    "df_plus": 82.8,
     "apr_plus": 95.1,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35674145132",
-      "opponent_rank": 193,
+      "opponent_rank": 179,
       "opponent_name": "Caleb Hayden",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35207990132",
-      "opponent_rank": 102,
+      "opponent_rank": 100,
       "opponent_name": "Mattix Sohne",
       "method": "Fall 0:00"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35064909132",
       "opponent_name": "Bruce Anderson",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
+      "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 21,
+      "opponent_rank": null,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35207990132",
       "opponent_name": "Mattix Sohne",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 132,
-      "opponent_rank": 102,
+      "opponent_rank": 100,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -95,9 +95,9 @@
       "opponent_id": "35674145132",
       "opponent_name": "Caleb Hayden",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 132,
-      "opponent_rank": 193,
+      "opponent_rank": 179,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -110,7 +110,7 @@
       "opponent_id": "35172417132",
       "opponent_name": "Armani Kidd",
       "opponent_team": "Desales",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 72,
       "opponent_weight": 132,
       "opponent_rank": 78,
       "weight_class": "132",
@@ -125,9 +125,9 @@
       "opponent_id": "35090023132",
       "opponent_name": "Seth Frank",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 132,
-      "opponent_rank": 87,
+      "opponent_rank": 56,
       "weight_class": "132",
       "result": "L",
       "method": "TF",
@@ -140,9 +140,9 @@
       "opponent_id": "34993277132",
       "opponent_name": "Jackson Stoner",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 71,
       "opponent_weight": 132,
-      "opponent_rank": 11,
+      "opponent_rank": 10,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35133605132",
       "opponent_name": "Kyrien Cannon",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 132,
-      "opponent_rank": 75,
+      "opponent_rank": 72,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -196,9 +196,21 @@
       "event": "vs. Tournament Allstars"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_004916",
+    "canonical_name": "Chase Finley",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Apollo",
+      "record": "6-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

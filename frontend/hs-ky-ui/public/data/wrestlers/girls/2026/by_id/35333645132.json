@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 53,
+  "current_rank": 58,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 9.33,
     "pa7": 25.0,
     "pd7": -15.67,
-    "si_plus": 91.6,
-    "df_plus": 92.0,
-    "apr_plus": 96.7,
+    "si_plus": 91.7,
+    "df_plus": 93.2,
+    "apr_plus": 96.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,18 +33,34 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35352432132",
-      "opponent_rank": 70,
+      "opponent_rank": 75,
       "opponent_name": "Dezeray Morris",
       "method": "Fall 1:54"
     },
     "worst_loss": {
-      "opponent_id": "35510579132",
-      "opponent_rank": 38,
-      "opponent_name": "Kenyana Johnson",
-      "method": "TF 23-8 6:00"
+      "opponent_id": "35615707132",
+      "opponent_rank": 85,
+      "opponent_name": "Lorelai Manning",
+      "method": "Fall 0:59"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35615707132",
+      "opponent_name": "Lorelai Manning",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 85,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "NKAC",
+      "mv_impact": -6.08
+    },
     {
       "date": "2025-12-27",
       "opponent_id": "35352432132",
@@ -52,30 +68,14 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 70,
+      "opponent_rank": 75,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:54",
       "event": "NKAC",
-      "mv_impact": 4.44
-    },
-    {
-      "date": "2025-12-27",
-      "opponent_id": "35615707132",
-      "opponent_name": "Lorelai Manning",
-      "opponent_team": "Highlands",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": 22,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:59",
-      "event": "NKAC",
-      "mv_impact": -4.03
+      "mv_impact": 4.55
     },
     {
       "date": "2025-12-27",
@@ -84,19 +84,19 @@
       "opponent_team": "Holmes",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 38,
+      "opponent_rank": 42,
       "weight_class": "132",
       "result": "L",
       "method": "TF",
       "score": "23-8",
       "duration": "6:00",
       "event": "NKAC",
-      "mv_impact": -4.58
+      "mv_impact": -4.48
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1923076923076923
+    "top33_bonus_ev_shrunk": 1.7734375
   }
 }

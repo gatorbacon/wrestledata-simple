@@ -3,41 +3,86 @@
   "name": "Jacob Cecil",
   "team": "Daviess County",
   "team_slug": "daviess_county",
-  "team_rank": 68,
-  "weight_class": 157,
+  "team_rank": 71,
+  "weight_class": 150,
   "year": 2026,
-  "current_rank": 221,
+  "current_rank": 154,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pf7": 1.0,
+    "pa7": 9.0,
+    "pd7": -8.0,
+    "si_plus": 86.5,
+    "df_plus": 103.3,
+    "apr_plus": 98.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35674098132",
+      "opponent_rank": 155,
+      "opponent_name": "Gabe Hillard",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35049795132",
+      "opponent_rank": 93,
+      "opponent_name": "Eli Wilson",
+      "method": "MD 9-1"
+    }
   },
-  "match_list": [],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
+  "match_list": [
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35674098132",
+      "opponent_name": "Gabe Hillard",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 37,
+      "opponent_weight": 150,
+      "opponent_rank": 155,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Daviess County",
+      "mv_impact": 1.42
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35049795132",
+      "opponent_name": "Eli Wilson",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 25,
+      "opponent_weight": 150,
+      "opponent_rank": 93,
+      "weight_class": "150",
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "vs. Daviess County",
+      "mv_impact": -6.66
+    }
+  ],
+  "career": {
+    "career_id": "career_004963",
+    "canonical_name": "Jacob Cecil",
+    "seasons": [
+      2026
+    ]
   }
 }

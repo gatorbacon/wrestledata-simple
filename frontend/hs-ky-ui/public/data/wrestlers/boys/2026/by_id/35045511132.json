@@ -3,10 +3,10 @@
   "name": "Ryan Bell",
   "team": "Madison Central",
   "team_slug": "madison_central",
-  "team_rank": 11,
+  "team_rank": 17,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 95,
+  "current_rank": 97,
   "record": {
     "overall": "2-2",
     "vs_ranked": "2-2",
@@ -17,9 +17,9 @@
     "pf7": 2.8,
     "pa7": 1.4,
     "pd7": 1.4,
-    "si_plus": 90.3,
-    "df_plus": 113.9,
-    "apr_plus": 99.6,
+    "si_plus": 89.5,
+    "df_plus": 114.3,
+    "apr_plus": 100.1,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -32,14 +32,14 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35397883132",
-      "opponent_rank": 143,
-      "opponent_name": "Rex Dixon",
-      "method": "TB-1 4-2"
+      "opponent_id": "35284604132",
+      "opponent_rank": 125,
+      "opponent_name": "Bryce Taylor",
+      "method": "Fall 0:19"
     },
     "worst_loss": {
       "opponent_id": "35920579132",
-      "opponent_rank": 60,
+      "opponent_rank": 63,
       "opponent_name": "Karson Helminick",
       "method": "Fall 3:17"
     }
@@ -47,72 +47,93 @@
   "match_list": [
     {
       "date": "2025-12-06",
-      "opponent_id": "35212702132",
-      "opponent_name": "Xavier Nolan",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 116,
-      "opponent_weight": 165,
-      "opponent_rank": 30,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:38",
-      "event": "The Beast of the East",
-      "mv_impact": -3.37
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35284604132",
       "opponent_name": "Bryce Taylor",
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
-      "opponent_weight": 165,
-      "opponent_rank": 159,
+      "opponent_weight": 157,
+      "opponent_rank": 125,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:19",
       "event": "The Beast of the East",
-      "mv_impact": 0.92
+      "mv_impact": 1.94
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35212702132",
+      "opponent_name": "Xavier Nolan",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": 118,
+      "opponent_weight": 165,
+      "opponent_rank": 32,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:38",
+      "event": "The Beast of the East",
+      "mv_impact": -3.32
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35920579132",
       "opponent_name": "Karson Helminick",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 175,
-      "opponent_rank": 60,
+      "opponent_rank": 63,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:17",
       "event": "The Beast of the East",
-      "mv_impact": -5.99
+      "mv_impact": -7.81
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35397883132",
       "opponent_name": "Rex Dixon",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 34,
       "opponent_weight": 175,
-      "opponent_rank": 143,
+      "opponent_rank": 135,
       "weight_class": "175",
       "result": "W",
       "method": "TB-1",
       "score": "4-2",
       "duration": "10:00",
       "event": "The Beast of the East",
-      "mv_impact": -1.09
+      "mv_impact": -0.77
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_001507",
+    "canonical_name": "Ryan Bell",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Madison Central",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Madison Central",
+      "record": "4-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

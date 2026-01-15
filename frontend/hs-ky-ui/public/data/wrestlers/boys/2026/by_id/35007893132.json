@@ -3,23 +3,23 @@
   "name": "Crew Causey",
   "team": "South Warren",
   "team_slug": "south_warren",
-  "team_rank": 126,
+  "team_rank": 38,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 98,
+  "current_rank": 102,
   "record": {
     "overall": "2-2",
     "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 99.9,
+    "df_plus": 102.0,
+    "apr_plus": 103.7,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,14 +33,14 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35674098132",
-      "opponent_rank": 149,
+      "opponent_rank": 155,
       "opponent_name": "Gabe Hillard",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35021796132",
-      "opponent_rank": 20,
-      "opponent_name": "Logan Hobbs",
+      "opponent_id": "35233668132",
+      "opponent_rank": 41,
+      "opponent_name": "Brayden Mattingly",
       "method": "Fall 0:00"
     }
   },
@@ -50,9 +50,9 @@
       "opponent_id": "35233668132",
       "opponent_name": "Brayden Mattingly",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 51,
-      "opponent_weight": 150,
-      "opponent_rank": 17,
+      "opponent_team_rank": 57,
+      "opponent_weight": 144,
+      "opponent_rank": 41,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35021796132",
       "opponent_name": "Logan Hobbs",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 64,
       "opponent_weight": 150,
-      "opponent_rank": 20,
+      "opponent_rank": 17,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35674098132",
       "opponent_name": "Gabe Hillard",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 150,
-      "opponent_rank": 149,
+      "opponent_rank": 155,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -106,9 +106,21 @@
       "event": "vs. Hopkinsville"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  "career": {
+    "career_id": "career_005691",
+    "canonical_name": "Crew Causey",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "South Warren",
+      "record": "4-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

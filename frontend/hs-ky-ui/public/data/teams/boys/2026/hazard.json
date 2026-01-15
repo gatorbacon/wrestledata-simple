@@ -14,20 +14,20 @@
     "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818322150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818322150",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:13.959523Z",
+  "generated_at_utc": "2026-01-15T13:34:36.990396Z",
   "starters": {
     "138": {
       "weight": 138,
       "wrestler_id": "37260084132",
       "name": "Evan Johnson",
-      "current_rank": 287,
+      "current_rank": 280,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -41,29 +41,29 @@
         "losses": 0
       }
     },
-    "215": {
-      "weight": 215,
+    "190": {
+      "weight": 190,
       "wrestler_id": "36736544132",
       "name": "Davin Nusspickel",
-      "current_rank": 282,
+      "current_rank": 114,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       }
     },
     "285": {
       "weight": 285,
       "wrestler_id": "37259435132",
       "name": "Bradyn Clutts",
-      "current_rank": 321,
+      "current_rank": 320,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -88,5 +88,43 @@
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
-  ]
+  ],
+  "team_metrics": {
+    "projected_state_points": null,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": null,
+      "losses": 2
+    },
+    "top33": {
+      "wins": 0,
+      "losses": 1
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 1
+    },
+    "bonus_rate": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    }
+  }
 }

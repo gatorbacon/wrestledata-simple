@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35002860132",
+  "name": "Canaan Spears",
+  "team": "Union",
+  "team_slug": "union",
+  "team_rank": null,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 106.9,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35336027132",
+      "opponent_rank": 20,
+      "opponent_name": "Taner Woodman",
+      "method": "TF 17-2 1:53"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35336027132",
+      "opponent_name": "Taner Woodman",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 150,
+      "opponent_rank": 20,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "1:53",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35703578132",
+      "opponent_name": "Tyler Hall",
+      "opponent_team": "Floyd Central",
+      "opponent_team_rank": 81,
+      "opponent_weight": 150,
+      "opponent_rank": 76,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "Clipson Jones Classic 2026"
+    }
+  ]
+}

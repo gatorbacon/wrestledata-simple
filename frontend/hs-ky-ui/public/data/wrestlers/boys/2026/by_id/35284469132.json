@@ -3,10 +3,10 @@
   "name": "Sonia Tarley",
   "team": "Eastern",
   "team_slug": "eastern",
-  "team_rank": 73,
+  "team_rank": 79,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 180,
+  "current_rank": 176,
   "record": {
     "overall": "2-1",
     "vs_ranked": "1-1",
@@ -17,9 +17,9 @@
     "pf7": 8.0,
     "pa7": 9.0,
     "pd7": -1.0,
-    "si_plus": 98.4,
+    "si_plus": 98.2,
     "df_plus": 103.3,
-    "apr_plus": 112.0,
+    "apr_plus": 110.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35228288132",
-      "opponent_rank": 141,
+      "opponent_rank": 139,
       "opponent_name": "Saniyah Nana",
       "method": "Fall 1:05"
     },
     "worst_loss": {
       "opponent_id": "34992068132",
-      "opponent_rank": 72,
+      "opponent_rank": 70,
       "opponent_name": "Kathryn Floyd",
       "method": "Dec 9-8"
     }
@@ -50,32 +50,30 @@
       "opponent_id": "35228288132",
       "opponent_name": "Saniyah Nana",
       "opponent_team": "Butler",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 65,
       "opponent_weight": 138,
-      "opponent_rank": 141,
+      "opponent_rank": 139,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:05",
-      "event": "vs. Eastern",
-      "mv_impact": 1.83
+      "event": "vs. Eastern"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34992068132",
       "opponent_name": "Kathryn Floyd",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 144,
-      "opponent_rank": 72,
+      "opponent_rank": 70,
       "weight_class": "144",
       "result": "L",
       "method": "DEC",
       "score": "9-8",
       "duration": "7:00",
-      "event": "The Beast of the East",
-      "mv_impact": -2.2
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
@@ -93,9 +91,30 @@
       "event": "The Beast of the East"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_000815",
+    "canonical_name": "Sonia Tarley",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": null,
+      "team": "Eastern",
+      "record": "2-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Eastern",
+      "record": "4-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

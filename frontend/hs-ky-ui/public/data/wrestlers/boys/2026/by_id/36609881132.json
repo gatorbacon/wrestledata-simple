@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "36609881132",
+  "name": "Jasper Jones",
+  "team": "Wilmington High School",
+  "team_slug": "wilmington_high_school",
+  "team_rank": null,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 107.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35119498132",
+      "opponent_rank": 100,
+      "opponent_name": "Blake Johnson",
+      "method": "Fall 1:30"
+    },
+    "worst_loss": {
+      "opponent_id": "34988567132",
+      "opponent_rank": 93,
+      "opponent_name": "Grandin Blackburn",
+      "method": "Fall 0:44"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34988567132",
+      "opponent_name": "Grandin Blackburn",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 190,
+      "opponent_rank": 93,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:44",
+      "event": "Bellbrook Invite"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35119498132",
+      "opponent_name": "Blake Johnson",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 190,
+      "opponent_rank": 100,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "Bellbrook Invite"
+    }
+  ]
+}

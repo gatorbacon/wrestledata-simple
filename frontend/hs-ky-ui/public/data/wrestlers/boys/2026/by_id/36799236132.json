@@ -3,12 +3,12 @@
   "name": "Jordan York",
   "team": "Hart County",
   "team_slug": "hart_county",
-  "team_rank": 86,
+  "team_rank": 91,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 150,
+  "current_rank": 146,
   "record": {
-    "overall": "0-2",
+    "overall": "0-3",
     "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 82.3,
+    "df_plus": 102.0,
+    "apr_plus": 81.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,48 +34,73 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34997612132",
-      "opponent_rank": 106,
+      "opponent_rank": 107,
       "opponent_name": "Stephen Fairhurst",
       "method": "Fall 1:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_69cd1168c254",
+      "opponent_name": "Ben Metcalf",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": 136,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "34997612132",
       "opponent_name": "Stephen Fairhurst",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 126,
-      "opponent_rank": 106,
+      "opponent_rank": 107,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": -9.07
+      "event": "5th Annual Cardinal Clash"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35281516132",
       "opponent_name": "Muaz Abdullahi",
       "opponent_team": "Southern",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 54,
       "opponent_weight": 126,
-      "opponent_rank": 95,
+      "opponent_rank": 97,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:39",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": -8.63
+      "event": "5th Annual Cardinal Clash"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_005011",
+    "canonical_name": "Jordan York",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Hart County",
+      "record": "0-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

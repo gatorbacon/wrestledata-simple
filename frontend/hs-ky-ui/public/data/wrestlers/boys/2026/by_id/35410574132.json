@@ -8,46 +8,76 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "3-0",
+    "vs_ranked": "3-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 121.7,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "df_plus": 102.0,
+    "apr_plus": 111.5,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35205296132",
-      "opponent_rank": 52,
-      "opponent_name": "John Hightower",
-      "method": "Fall 0:39"
+      "opponent_id": "35458690132",
+      "opponent_rank": 14,
+      "opponent_name": "Luis Lira",
+      "method": "M. For."
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35458690132",
+      "opponent_name": "Luis Lira",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": 33,
+      "opponent_weight": 285,
+      "opponent_rank": 14,
+      "weight_class": "285",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35194109132",
+      "opponent_name": "Steven Bryant",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 285,
+      "opponent_rank": 47,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:44",
+      "event": "2026 Commando Crush"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35205296132",
       "opponent_name": "John Hightower",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 285,
-      "opponent_rank": 52,
+      "opponent_rank": 57,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -55,10 +85,5 @@
       "duration": "0:39",
       "event": "Bruise Brothers Brawl"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  ]
 }

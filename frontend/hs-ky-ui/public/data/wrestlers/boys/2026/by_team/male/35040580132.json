@@ -3,10 +3,10 @@
   "name": "James Gerkins",
   "team": "Male",
   "team_slug": "male",
-  "team_rank": 45,
+  "team_rank": 50,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 42,
+  "current_rank": 46,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -17,9 +17,9 @@
     "pf7": 6.0,
     "pa7": 4.0,
     "pd7": 2.0,
-    "si_plus": 95.3,
-    "df_plus": 110.3,
-    "apr_plus": 91.8,
+    "si_plus": 94.1,
+    "df_plus": 112.3,
+    "apr_plus": 92.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35228539132",
-      "opponent_rank": 58,
+      "opponent_rank": 54,
       "opponent_name": "Kamion Lockridge",
       "method": "Dec 6-4"
     },
     "worst_loss": {
       "opponent_id": "35181630132",
-      "opponent_rank": 34,
+      "opponent_rank": 38,
       "opponent_name": "Jordan Lawless",
       "method": "Fall 2:12"
     }
@@ -50,48 +50,83 @@
       "opponent_id": "34997794132",
       "opponent_name": "Vincent Willis",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 165,
-      "opponent_rank": 26,
+      "opponent_rank": 28,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:22",
       "event": "vs. Western",
-      "mv_impact": -3.56
+      "mv_impact": -3.61
     },
     {
       "date": "2025-11-25",
       "opponent_id": "35228539132",
       "opponent_name": "Kamion Lockridge",
       "opponent_team": "Butler",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 65,
       "opponent_weight": 165,
-      "opponent_rank": 58,
+      "opponent_rank": 54,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
       "event": "vs. Male",
-      "mv_impact": 4.02
+      "mv_impact": 4.16
     },
     {
       "date": "2025-11-25",
       "opponent_id": "35181630132",
       "opponent_name": "Jordan Lawless",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 15,
       "opponent_weight": 165,
-      "opponent_rank": 34,
+      "opponent_rank": 38,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:12",
       "event": "vs. Male",
-      "mv_impact": -4.87
+      "mv_impact": -4.98
+    }
+  ],
+  "career": {
+    "career_id": "career_001561",
+    "canonical_name": "James Gerkins",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Male",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Male",
+      "record": "13-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Male",
+      "record": "4-11",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

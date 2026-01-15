@@ -3,10 +3,10 @@
   "name": "Grayson Wade",
   "team": "Bullitt East",
   "team_slug": "bullitt_east",
-  "team_rank": 26,
+  "team_rank": 22,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 106,
+  "current_rank": 108,
   "record": {
     "overall": "1-1",
     "vs_ranked": "1-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 102.9,
+    "df_plus": 102.0,
+    "apr_plus": 103.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35321127132",
-      "opponent_rank": 116,
+      "opponent_rank": 142,
       "opponent_name": "Aiden Helm",
       "method": "Fall 1:01"
     },
     "worst_loss": {
       "opponent_id": "35271153132",
-      "opponent_rank": 39,
+      "opponent_rank": 35,
       "opponent_name": "Parker Smith",
       "method": "Fall 0:00"
     }
@@ -50,32 +50,58 @@
       "opponent_id": "35321127132",
       "opponent_name": "Aiden Helm",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
-      "opponent_weight": 175,
-      "opponent_rank": 116,
+      "opponent_team_rank": 111,
+      "opponent_weight": 165,
+      "opponent_rank": 142,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:01",
       "event": "vs. North Bullitt",
-      "mv_impact": 4.46
+      "mv_impact": 3.4
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35271153132",
       "opponent_name": "Parker Smith",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 30,
       "opponent_weight": 157,
-      "opponent_rank": 39,
+      "opponent_rank": 35,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Simon Kenton",
-      "mv_impact": -4.85
+      "mv_impact": -4.51
+    }
+  ],
+  "career": {
+    "career_id": "career_000345",
+    "canonical_name": "Grayson Wade",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Bullitt East",
+      "record": "1-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Bullitt East",
+      "record": "5-5",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

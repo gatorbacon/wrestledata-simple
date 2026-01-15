@@ -126,6 +126,34 @@ def load_teams_list(teams_list_path: str) -> List[Dict]:
     return teams
 
 
+def load_boys_inactive_mask(season: int, rankings_dir: Path) -> Set[str]:
+    """
+    Load boys inactive wrestlers mask file.
+    
+    Returns:
+        Set of wrestler IDs to mask (empty set if file doesn't exist or not boys)
+    """
+    mask_file = rankings_dir / "boys_inactive_wrestlers.json"
+    
+    if not mask_file.exists():
+        return set()
+    
+    try:
+        with mask_file.open("r", encoding="utf-8") as f:
+            mask_data = json.load(f)
+        
+        masked_ids = set()
+        for wrestler in mask_data.get("masked_wrestlers", []):
+            wrestler_id = wrestler.get("boys_wrestler_id")
+            if wrestler_id:
+                masked_ids.add(str(wrestler_id))
+        
+        return masked_ids
+    except Exception as e:
+        print(f"Warning: Could not load boys inactive mask: {e}")
+        return set()
+
+
 def load_starter_overrides(overrides_path: Optional[str]) -> Set[str]:
     """Load starter overrides (force_backup_ids)."""
     if not overrides_path or not Path(overrides_path).exists():
@@ -618,13 +646,23 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
     else:
         print("No starter overrides found")
     
-    # Step 3: Load rankings per weight
-    print("\nStep 3: Loading rankings...")
+    # Step 3: Load boys inactive mask (if boys)
+    masked_wrestler_ids = set()
+    if league == 'hs' and gender == 'boys':
+        print("\nStep 3: Loading boys inactive mask...")
+        masked_wrestler_ids = load_boys_inactive_mask(season, rankings_dir)
+        if masked_wrestler_ids:
+            print(f"Loaded mask for {len(masked_wrestler_ids)} inactive wrestlers")
+        else:
+            print("No mask file found (or empty)")
+    
+    # Step 4: Load rankings per weight
+    print("\nStep 4: Loading rankings...")
     rankings_by_weight = load_rankings_by_weight(str(rankings_dir), league=league, gender=gender)
     print(f"Loaded rankings for {len(rankings_by_weight)} weight classes")
     
-    # Step 4: Resolve starters for each team
-    print("\nStep 4: Resolving starters...")
+    # Step 5: Resolve starters for each team
+    print("\nStep 5: Resolving starters...")
     teams_data = []
     
     # Convert weights to strings for consistency
@@ -702,6 +740,14 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
             else:
                 print(f"    Found {len(roster_ids)} wrestlers in roster")
                 
+                # Filter out masked wrestlers (boys only)
+                if masked_wrestler_ids:
+                    original_count = len(roster_ids)
+                    roster_ids = [wid for wid in roster_ids if str(wid) not in masked_wrestler_ids]
+                    filtered_count = original_count - len(roster_ids)
+                    if filtered_count > 0:
+                        print(f"    Filtered out {filtered_count} masked wrestler(s)")
+                
                 # Load all wrestler profiles (needed to extract minimal data)
                 wrestler_profiles = {}
                 profiles_loaded = 0
@@ -725,6 +771,10 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
                 starter_ids_set = set(str(v) for v in starters.values() if v)
                 
                 for weight_str, starter_id in starters.items():
+                    # Skip masked starters (boys only)
+                    if masked_wrestler_ids and starter_id and str(starter_id) in masked_wrestler_ids:
+                        continue
+                    
                     if starter_id and starter_id in wrestler_profiles:
                         profile = wrestler_profiles[starter_id]
                         # Get xTP data for this weight
@@ -742,6 +792,10 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
                 # Build remaining roster with minimal data (non-starters)
                 remaining_minimal = []
                 for wrestler_id, profile in wrestler_profiles.items():
+                    # Skip masked wrestlers (boys only)
+                    if masked_wrestler_ids and str(wrestler_id) in masked_wrestler_ids:
+                        continue
+                    
                     if str(wrestler_id) not in starter_ids_set:
                         remaining_minimal.append(extract_minimal_roster_data(profile))
                 

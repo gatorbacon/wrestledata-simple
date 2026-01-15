@@ -3,48 +3,153 @@
   "name": "Kevin Hernandez Gari",
   "team": "Moore",
   "team_slug": "moore",
-  "team_rank": 46,
+  "team_rank": 27,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 63,
+  "current_rank": 36,
   "record": {
-    "overall": "5-4",
-    "vs_ranked": "1-1",
+    "overall": "11-5",
+    "vs_ranked": "7-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 13.0,
+    "pf7": 15.5,
     "pa7": 2.0,
-    "pd7": 11.0,
-    "si_plus": 107.7,
-    "df_plus": 113.5,
-    "apr_plus": 89.3,
-    "pin_rate": 0.2,
-    "bonus_rate": 0.4,
+    "pd7": 13.5,
+    "si_plus": 110.5,
+    "df_plus": 115.1,
+    "apr_plus": 104.6,
+    "pin_rate": 0.545,
+    "bonus_rate": 0.727,
     "majors": 1,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 7,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34993792132",
-      "opponent_rank": 48,
-      "opponent_name": "Jayden Fulz",
-      "method": "MD 13-2"
+      "opponent_id": "35542526132",
+      "opponent_rank": 38,
+      "opponent_name": "Marion Wardlaw",
+      "method": "TF 18-2 0:00"
     },
     "worst_loss": {
       "opponent_id": "35562978132",
-      "opponent_rank": 36,
+      "opponent_rank": 35,
       "opponent_name": "Henry Bueter",
       "method": "Fall 1:55"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35144080132",
+      "opponent_name": "Colin Yurt",
+      "opponent_team": "Desales",
+      "opponent_team_rank": 72,
+      "opponent_weight": 126,
+      "opponent_rank": 66,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:06",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35090024132",
+      "opponent_name": "Connor Holmes",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 80,
+      "opponent_weight": 126,
+      "opponent_rank": 68,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:43",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35317883132",
+      "opponent_name": "Absire Suleiman",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": 96,
+      "opponent_weight": 126,
+      "opponent_rank": 88,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:06",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35562983132",
+      "opponent_name": "Nathaniel Bueter",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 18,
+      "opponent_weight": 126,
+      "opponent_rank": 23,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35542526132",
+      "opponent_name": "Marion Wardlaw",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 126,
+      "opponent_rank": 38,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "0:00",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35046227132",
+      "opponent_name": "Elijah Blais",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": 15,
+      "opponent_weight": 126,
+      "opponent_rank": 40,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:46",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "37154838132",
+      "opponent_name": "Isaac Bassett",
+      "opponent_team": "Christian Academy-Louisville",
+      "opponent_team_rank": 26,
+      "opponent_weight": 126,
+      "opponent_rank": 175,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:14",
+      "event": "vs. Christian Academy-Louisville"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -65,9 +170,9 @@
       "opponent_id": "34993792132",
       "opponent_name": "Jayden Fulz",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 132,
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "weight_class": "126",
       "result": "W",
       "method": "MD",
@@ -110,9 +215,9 @@
       "opponent_id": "35562978132",
       "opponent_name": "Henry Bueter",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 126,
-      "opponent_rank": 36,
+      "opponent_rank": 35,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -179,6 +284,32 @@
       "score": null,
       "duration": "1:40",
       "event": "vs. Sycamore High School"
+    }
+  ],
+  "career": {
+    "career_id": "career_001781",
+    "canonical_name": "Kevin Hernandez Gari",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Moore",
+      "record": "12-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Moore",
+      "record": "20-10",
+      "regional_place": 4,
+      "state_place": null
     }
   ]
 }

@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 99.6,
+    "df_plus": 102.0,
+    "apr_plus": 100.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,15 +33,15 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35002900132",
-      "opponent_rank": 91,
+      "opponent_rank": 102,
       "opponent_name": "Karson McClellan",
       "method": "Fall 4:30"
     },
     "worst_loss": {
-      "opponent_id": "35563017132",
-      "opponent_rank": 38,
-      "opponent_name": "Douglas Mulhall",
-      "method": "Fall 1:33"
+      "opponent_id": "35035623132",
+      "opponent_rank": 39,
+      "opponent_name": "Wylee Elders",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
@@ -50,9 +50,9 @@
       "opponent_id": "35563017132",
       "opponent_name": "Douglas Mulhall",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 190,
-      "opponent_rank": 38,
+      "opponent_rank": 28,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35002900132",
       "opponent_name": "Karson McClellan",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 190,
-      "opponent_rank": 91,
+      "opponent_rank": 102,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35035623132",
       "opponent_name": "Wylee Elders",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 215,
-      "opponent_rank": 35,
+      "opponent_rank": 39,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -90,10 +90,5 @@
       "duration": "0:00",
       "event": "vs. Father Ryan High School"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  ]
 }

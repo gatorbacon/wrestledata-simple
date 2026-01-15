@@ -21,41 +21,59 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.829025Z",
+  "generated_at_utc": "2026-01-15T13:34:37.958173Z",
   "starters": {
     "107": {
       "weight": 107,
       "wrestler_id": "35465668132",
       "name": "Jillian Conn",
-      "current_rank": 35,
-      "xtp": 0.98,
-      "xtp_p": 0.09,
-      "xtp_a": 0.34,
-      "xtp_b": 0.55,
+      "current_rank": 36,
+      "xtp": 1.22,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.87,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       },
       "top33_record": {
         "wins": 1,
         "losses": 3
       }
     },
-    "120": {
-      "weight": 120,
+    "114": {
+      "weight": 114,
       "wrestler_id": "35465669132",
       "name": "Eelynn Hayden",
-      "current_rank": 4,
-      "xtp": 13.76,
-      "xtp_p": 6.31,
-      "xtp_a": 2.77,
-      "xtp_b": 4.68,
+      "current_rank": 3,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
       "top10_record": {
         "wins": 1,
         "losses": 0
       },
       "top33_record": {
-        "wins": 6,
+        "wins": 7,
+        "losses": 0
+      }
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35465669132",
+      "name": "Eelynn Hayden",
+      "current_rank": 3,
+      "xtp": 15.9,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 4.76,
+      "top10_record": {
+        "wins": 1,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 7,
         "losses": 0
       }
     },
@@ -63,11 +81,11 @@
       "weight": 126,
       "wrestler_id": "35465670132",
       "name": "Hermayoni Gembe",
-      "current_rank": 18,
-      "xtp": 3.65,
-      "xtp_p": 0.41,
-      "xtp_a": 1.02,
-      "xtp_b": 2.22,
+      "current_rank": 16,
+      "xtp": 4.81,
+      "xtp_p": 0.7,
+      "xtp_a": 1.18,
+      "xtp_b": 2.93,
       "top10_record": {
         "wins": 0,
         "losses": 3
@@ -81,14 +99,14 @@
       "weight": 145,
       "wrestler_id": "35465672132",
       "name": "Lillyana Cooper",
-      "current_rank": 50,
+      "current_rank": 48,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
@@ -99,11 +117,11 @@
       "weight": 235,
       "wrestler_id": "35465667132",
       "name": "Lillian Harned",
-      "current_rank": 17,
-      "xtp": 5.72,
-      "xtp_p": 1.16,
-      "xtp_a": 1.37,
-      "xtp_b": 3.19,
+      "current_rank": 20,
+      "xtp": 4.32,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 2.77,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -119,10 +137,10 @@
       "weight": 120,
       "wrestler_id": "35465673132",
       "name": "Emmery Evans",
-      "wins": 4,
-      "losses": 3,
+      "wins": 15,
+      "losses": 6,
       "top25_wins": 1,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.933
     },
     {
       "weight": 120,
@@ -145,30 +163,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 27,
-      "losses": 18
+      "wins": 90,
+      "losses": 35
     },
     "top33": {
-      "wins": 12,
+      "wins": 20,
       "losses": 14
     },
     "top10": {
-      "wins": 1,
-      "losses": 6
+      "wins": 2,
+      "losses": 7
     },
     "bonus_rate": {
-      "value": 0.741,
-      "rank": 91,
+      "value": 0.9,
+      "rank": 43,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.63,
-      "rank": 96,
+      "value": 0.767,
+      "rank": 74,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.037,
-      "rank": 26,
+      "value": 0.067,
+      "rank": 15,
       "rank_scope": "league"
     }
   }

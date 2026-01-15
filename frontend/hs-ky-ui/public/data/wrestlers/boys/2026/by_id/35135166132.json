@@ -3,10 +3,10 @@
   "name": "Coridell Schoen",
   "team": "Fairdale",
   "team_slug": "fairdale",
-  "team_rank": 21,
+  "team_rank": 23,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 157,
+  "current_rank": 159,
   "record": {
     "overall": "1-1",
     "vs_ranked": "1-1",
@@ -17,9 +17,9 @@
     "pf7": 25.0,
     "pa7": 5.28,
     "pd7": 19.72,
-    "si_plus": 113.0,
-    "df_plus": 107.9,
-    "apr_plus": 90.7,
+    "si_plus": 120.5,
+    "df_plus": 107.1,
+    "apr_plus": 91.1,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35049056132",
-      "opponent_rank": 158,
+      "opponent_rank": 160,
       "opponent_name": "Harrison Davis",
       "method": "TF 20-2 2:39"
     },
     "worst_loss": {
       "opponent_id": "35284298132",
-      "opponent_rank": 39,
+      "opponent_rank": 26,
       "opponent_name": "Jack Rawlings",
       "method": "Fall 1:43"
     }
@@ -50,37 +50,58 @@
       "opponent_id": "35284298132",
       "opponent_name": "Jack Rawlings",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 120,
-      "opponent_rank": 39,
+      "opponent_rank": 26,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:43",
       "event": "Fern Creek Gladiator",
-      "mv_impact": -5.17
+      "mv_impact": -4.77
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35049056132",
       "opponent_name": "Harrison Davis",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 120,
-      "opponent_rank": 158,
+      "opponent_rank": 160,
       "weight_class": "120",
       "result": "W",
       "method": "TF",
       "score": "20-2",
       "duration": "2:39",
       "event": "Fern Creek Gladiator",
-      "mv_impact": 1.38
+      "mv_impact": 1.22
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_000824",
+    "canonical_name": "Coridell Schoen",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Fairdale",
+      "record": "1-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Fairdale",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

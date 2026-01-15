@@ -3,13 +3,13 @@
   "name": "Zashawn Matthews",
   "team": "Western",
   "team_slug": "western",
-  "team_rank": 34,
+  "team_rank": 40,
   "weight_class": 144,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -27,25 +27,45 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35206875132",
+      "opponent_rank": 141,
+      "opponent_name": "Tyler Darling",
+      "method": "For."
+    },
     "worst_loss": {
       "opponent_id": "35280922132",
-      "opponent_rank": 54,
+      "opponent_rank": 56,
       "opponent_name": "Sean Moreno",
       "method": "For."
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35206875132",
+      "opponent_name": "Tyler Darling",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 144,
+      "opponent_rank": 141,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35135147132",
       "opponent_name": "Blake Luttrell",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 144,
       "opponent_rank": 5,
       "weight_class": "144",
@@ -60,9 +80,9 @@
       "opponent_id": "35280922132",
       "opponent_name": "Sean Moreno",
       "opponent_team": "Southern",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 54,
       "opponent_weight": 144,
-      "opponent_rank": 54,
+      "opponent_rank": 56,
       "weight_class": "144",
       "result": "L",
       "method": "DEC",
@@ -70,10 +90,5 @@
       "duration": "7:00",
       "event": "King of the Bluegrass"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  ]
 }

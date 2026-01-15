@@ -3,56 +3,131 @@
   "name": "Bowen Furkin",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 50,
+  "team_rank": 56,
   "weight_class": 175,
   "year": 2026,
   "current_rank": 64,
   "record": {
-    "overall": "4-2",
-    "vs_ranked": "3-2",
+    "overall": "8-4",
+    "vs_ranked": "6-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 4.2,
-    "pa7": 1.4,
-    "pd7": 2.8,
-    "si_plus": 92.4,
-    "df_plus": 113.9,
-    "apr_plus": 102.2,
+    "pf7": 4.6,
+    "pa7": 2.2,
+    "pd7": 2.4,
+    "si_plus": 93.6,
+    "df_plus": 113.0,
+    "apr_plus": 103.8,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_wins": 6,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35024618132",
-      "opponent_rank": 145,
-      "opponent_name": "Aiden Forbis",
-      "method": "Fall 0:43"
+      "opponent_id": "35237537132",
+      "opponent_rank": 74,
+      "opponent_name": "CJ Coffey",
+      "method": "Fall 2:08"
     },
     "worst_loss": {
-      "opponent_id": "34988577132",
-      "opponent_rank": 56,
-      "opponent_name": "Payton Thompson",
-      "method": "Fall 0:59"
+      "opponent_id": "35137018132",
+      "opponent_rank": 54,
+      "opponent_name": "Blake Donnelly",
+      "method": "Fall 3:32"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35192492132",
+      "opponent_name": "Eli Poore",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 175,
+      "opponent_rank": 126,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35207986132",
+      "opponent_name": "Ethan Peckenpaugh",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 175,
+      "opponent_rank": 15,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:41",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35237537132",
+      "opponent_name": "CJ Coffey",
+      "opponent_team": "East Jessamine",
+      "opponent_team_rank": 77,
+      "opponent_weight": 175,
+      "opponent_rank": 74,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:08",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35137018132",
+      "opponent_name": "Blake Donnelly",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 175,
+      "opponent_rank": 54,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:32",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35689801132",
+      "opponent_name": "Josh Delvecchio",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 175,
+      "opponent_rank": 156,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "34993884132",
       "opponent_name": "Ryder Sadler",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 87,
       "opponent_weight": 175,
-      "opponent_rank": 42,
+      "opponent_rank": 34,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -61,13 +136,28 @@
       "event": "Maroon`s New Year Brawl"
     },
     {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_28e38d8f214c",
+      "opponent_name": "Josh Delvecchio",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Maroon`s New Year Brawl"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35180871132",
       "opponent_name": "Ismael Rivera-Santos",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 165,
-      "opponent_rank": 154,
+      "opponent_rank": 148,
       "weight_class": "175",
       "result": "W",
       "method": "TB-1",
@@ -95,9 +185,9 @@
       "opponent_id": "35674180132",
       "opponent_name": "Brycen Mattingly",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 175,
-      "opponent_rank": 150,
+      "opponent_rank": 144,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -110,9 +200,9 @@
       "opponent_id": "35024618132",
       "opponent_name": "Aiden Forbis",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 175,
-      "opponent_rank": 145,
+      "opponent_rank": 137,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -127,7 +217,7 @@
       "opponent_team": "Thomas Nelson",
       "opponent_team_rank": null,
       "opponent_weight": 175,
-      "opponent_rank": 56,
+      "opponent_rank": 49,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -136,9 +226,21 @@
       "event": "vs. Thomas Nelson"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_005175",
+    "canonical_name": "Bowen Furkin",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Adair County",
+      "record": "8-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

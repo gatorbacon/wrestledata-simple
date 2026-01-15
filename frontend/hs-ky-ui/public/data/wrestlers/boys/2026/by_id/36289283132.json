@@ -6,34 +6,34 @@
   "team_rank": 135,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 52,
+  "current_rank": 55,
   "record": {
-    "overall": "5-6",
-    "vs_ranked": "5-6",
+    "overall": "7-8",
+    "vs_ranked": "7-8",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 5.75,
-    "pa7": 17.92,
-    "pd7": -12.17,
-    "si_plus": 86.0,
-    "df_plus": 91.2,
-    "apr_plus": 102.1,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "pf7": 7.0,
+    "pa7": 16.33,
+    "pd7": -9.33,
+    "si_plus": 95.8,
+    "df_plus": 92.1,
+    "apr_plus": 99.8,
+    "pin_rate": 0.714,
+    "bonus_rate": 0.714,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 6,
+    "ranked_wins": 7,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35190747132",
-      "opponent_rank": 45,
+      "opponent_rank": 49,
       "opponent_name": "Kenny Jay",
       "method": "Fall 0:00"
     },
@@ -46,27 +46,91 @@
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "34993289132",
+      "opponent_name": "Brandon Adair-Castro",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 71,
+      "opponent_weight": 120,
+      "opponent_rank": 56,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "12-10",
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 2.49
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35457910132",
+      "opponent_name": "Kase Walters",
+      "opponent_team": "Hart County",
+      "opponent_team_rank": 91,
+      "opponent_weight": 120,
+      "opponent_rank": 62,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:25",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 5.56
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35144516132",
+      "opponent_name": "Liam Ditto",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 49,
+      "opponent_weight": 120,
+      "opponent_rank": 17,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -4.01
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34995408132",
+      "opponent_name": "Preston Grigsby",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 35,
+      "opponent_weight": 120,
+      "opponent_rank": 54,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:26",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -6.7
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "34997616132",
       "opponent_name": "Hagen Anders",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 120,
-      "opponent_rank": 55,
+      "opponent_rank": 53,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:00",
       "event": "Tates Creek Invitational",
-      "mv_impact": -5.37
+      "mv_impact": -4.94
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35226240132",
       "opponent_name": "Uriah Lemarr",
       "opponent_team": "Nelson County",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 24,
       "opponent_weight": 120,
       "opponent_rank": 57,
       "weight_class": "120",
@@ -75,14 +139,14 @@
       "score": "11-9",
       "duration": "7:00",
       "event": "Tates Creek Invitational",
-      "mv_impact": -3.95
+      "mv_impact": -3.82
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35401423132",
       "opponent_name": "Damien Falter",
       "opponent_team": "Letcher County Central",
-      "opponent_team_rank": 98,
+      "opponent_team_rank": 101,
       "opponent_weight": 120,
       "opponent_rank": 58,
       "weight_class": "120",
@@ -91,140 +155,152 @@
       "score": null,
       "duration": "3:27",
       "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 4.52
+      "mv_impact": 4.34
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35122073132",
       "opponent_name": "Xander Fontana",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 120,
-      "opponent_rank": 17,
+      "opponent_rank": 18,
       "weight_class": "120",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "4:38",
       "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -2.77
+      "mv_impact": -2.64
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35122089132",
       "opponent_name": "Levi Gibbs",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 120,
-      "opponent_rank": 51,
+      "opponent_rank": 48,
       "weight_class": "120",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "3:20",
       "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -5.42
+      "mv_impact": -5.1
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35223111132",
       "opponent_name": "VanDale Hayes",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 126,
-      "opponent_rank": 159,
+      "opponent_rank": 157,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. West Carter",
-      "mv_impact": 1.11
+      "mv_impact": 1.94
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35754343132",
       "opponent_name": "Bentley Fleming",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 113,
-      "opponent_rank": 41,
+      "opponent_rank": 46,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:22",
       "event": "Ashland blazer invitational",
-      "mv_impact": -4.93
+      "mv_impact": -5.32
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35190747132",
       "opponent_name": "Kenny Jay",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 113,
-      "opponent_rank": 45,
+      "opponent_rank": 49,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland blazer invitational",
-      "mv_impact": 4.51
+      "mv_impact": 4.07
     },
     {
       "date": "2025-12-13",
       "opponent_id": "36019597132",
       "opponent_name": "Shane Steele",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 120,
-      "opponent_rank": 81,
+      "opponent_rank": 84,
       "weight_class": "120",
       "result": "W",
       "method": "DEC",
       "score": "14-13",
       "duration": "7:00",
       "event": "Ashland Invitational Tournament",
-      "mv_impact": 0.63
+      "mv_impact": 0.88
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35897211132",
       "opponent_name": "Mason Wright",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 120,
-      "opponent_rank": 148,
+      "opponent_rank": 151,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Tournament",
-      "mv_impact": 2.2
+      "mv_impact": 1.87
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35635389132",
       "opponent_name": "Hunter Crabtree",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 88,
       "opponent_weight": 120,
-      "opponent_rank": 37,
+      "opponent_rank": 41,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Tournament",
-      "mv_impact": -4.68
+      "mv_impact": -4.63
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_005756",
+    "canonical_name": "Kently Johnston",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "West Carter",
+      "record": "7-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

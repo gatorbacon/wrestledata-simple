@@ -4,12 +4,12 @@
   "team": "Oak Hills High School",
   "team_slug": "oak_hills_high_school",
   "team_rank": null,
-  "weight_class": 175,
+  "weight_class": 165,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "0-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -28,24 +28,39 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35271118132",
-      "opponent_rank": 11,
-      "opponent_name": "Ben Woosley",
-      "method": "Fall 0:00"
+      "opponent_id": "34988568132",
+      "opponent_rank": 42,
+      "opponent_name": "Joesiah Hernandez",
+      "method": "Fall 2:30"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34988568132",
+      "opponent_name": "Joesiah Hernandez",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 165,
+      "opponent_rank": 42,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
+      "event": "2026 CIWT"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35271118132",
       "opponent_name": "Ben Woosley",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 30,
       "opponent_weight": 165,
       "opponent_rank": 11,
       "weight_class": "175",

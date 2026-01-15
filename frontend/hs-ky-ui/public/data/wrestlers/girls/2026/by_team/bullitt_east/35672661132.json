@@ -4,22 +4,22 @@
   "team": "Bullitt East",
   "team_slug": "bullitt_east",
   "team_rank": null,
-  "weight_class": 132,
+  "weight_class": 126,
   "year": 2026,
-  "current_rank": 85,
+  "current_rank": 86,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 87.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,11 +28,49 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35471184132",
+      "opponent_rank": 54,
+      "opponent_name": "Keylin Bergin",
+      "method": "Fall 2:49"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35471184132",
+      "opponent_name": "Keylin Bergin",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 22,
+      "opponent_weight": 126,
+      "opponent_rank": 54,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:49",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": -6.9
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35448714132",
+      "opponent_name": "Brooklynn Robinson",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 19,
+      "opponent_weight": 126,
+      "opponent_rank": 14,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": -4.54
+    }
+  ]
 }

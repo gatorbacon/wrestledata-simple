@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 30,
+  "current_rank": 29,
   "record": {
     "overall": "5-3",
     "vs_ranked": "4-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 4.0,
     "pa7": 7.0,
     "pd7": -3.0,
-    "si_plus": 96.7,
-    "df_plus": 103.5,
-    "apr_plus": 104.3,
+    "si_plus": 97.1,
+    "df_plus": 106.2,
+    "apr_plus": 106.0,
     "pin_rate": 0.8,
     "bonus_rate": 0.8,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35333668132",
-      "opponent_rank": 28,
+      "opponent_rank": 20,
       "opponent_name": "Rowyn Eskridge",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35542621132",
-      "opponent_rank": 29,
+      "opponent_rank": 45,
       "opponent_name": "Isabella Warner",
       "method": "Dec 7-4"
     }
@@ -47,27 +47,12 @@
   "match_list": [
     {
       "date": "2025-12-19",
-      "opponent_id": "35672645132",
-      "opponent_name": "Abigail Nolan",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": 70,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:49",
-      "event": "Ladies 5 Star Classic"
-    },
-    {
-      "date": "2025-12-19",
       "opponent_id": "35542621132",
       "opponent_name": "Isabella Warner",
       "opponent_team": "Central",
-      "opponent_team_rank": 17,
-      "opponent_weight": 120,
-      "opponent_rank": 29,
+      "opponent_team_rank": 18,
+      "opponent_weight": 114,
+      "opponent_rank": 45,
       "weight_class": "120",
       "result": "L",
       "method": "DEC",
@@ -77,12 +62,27 @@
     },
     {
       "date": "2025-12-19",
+      "opponent_id": "35672645132",
+      "opponent_name": "Abigail Nolan",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 61,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:49",
+      "event": "Ladies 5 Star Classic"
+    },
+    {
+      "date": "2025-12-19",
       "opponent_id": "35436580132",
       "opponent_name": "Paisley Hicks",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 120,
-      "opponent_rank": 20,
+      "opponent_rank": 18,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -107,27 +107,12 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35333668132",
-      "opponent_name": "Rowyn Eskridge",
-      "opponent_team": "Butler",
-      "opponent_team_rank": 30,
-      "opponent_weight": 120,
-      "opponent_rank": 28,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Derby City Girls"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35435090132",
       "opponent_name": "Kellie Lopez Cantarero",
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 46,
+      "opponent_rank": 53,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -151,13 +136,28 @@
       "event": "Derby City Girls"
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "35333668132",
+      "opponent_name": "Rowyn Eskridge",
+      "opponent_team": "Butler",
+      "opponent_team_rank": 17,
+      "opponent_weight": 126,
+      "opponent_rank": 20,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Girls"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35333638132",
       "opponent_name": "Payton Campbell",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 27,
       "opponent_weight": 120,
-      "opponent_rank": 45,
+      "opponent_rank": 52,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -167,8 +167,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.6581196581196582
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.564102564102564
   }
 }

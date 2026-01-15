@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 121.8,
+    "df_plus": 102.0,
+    "apr_plus": 107.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35521760132",
-      "opponent_rank": 68,
+      "opponent_rank": 71,
       "opponent_name": "Colton Hester",
       "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35752489132",
+      "opponent_rank": 7,
+      "opponent_name": "Carson Matney",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
     {
@@ -45,15 +50,30 @@
       "opponent_id": "35521760132",
       "opponent_name": "Colton Hester",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 126,
-      "opponent_rank": 68,
+      "opponent_rank": 71,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Fallen Heroes"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35752489132",
+      "opponent_name": "Carson Matney",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 126,
+      "opponent_rank": 7,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
     }
   ]
 }

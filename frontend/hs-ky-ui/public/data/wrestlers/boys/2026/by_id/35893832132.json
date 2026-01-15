@@ -3,51 +3,81 @@
   "name": "Mason Baker",
   "team": "Christian Academy-Louisville",
   "team_slug": "christian_academylouisville",
-  "team_rank": 66,
+  "team_rank": 26,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 33,
+  "current_rank": 12,
   "record": {
-    "overall": "6-0",
-    "vs_ranked": "4-0",
+    "overall": "9-0",
+    "vs_ranked": "7-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 6.67,
     "pa7": 3.0,
     "pd7": 3.67,
-    "si_plus": 96.2,
-    "df_plus": 112.8,
-    "apr_plus": 96.9,
-    "pin_rate": 0.167,
-    "bonus_rate": 0.167,
+    "si_plus": 95.7,
+    "df_plus": 112.7,
+    "apr_plus": 104.2,
+    "pin_rate": 0.444,
+    "bonus_rate": 0.444,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 7,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35194109132",
-      "opponent_rank": 37,
-      "opponent_name": "Steven Bryant",
-      "method": "Dec 2-1"
+      "opponent_id": "35007900132",
+      "opponent_rank": 16,
+      "opponent_name": "Justus Smith",
+      "method": "Dec 14-7"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35668728132",
+      "opponent_name": "Siddiq Stephens",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 285,
+      "opponent_rank": 152,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35104595132",
+      "opponent_name": "Kean Minth",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 285,
+      "opponent_rank": 72,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:09",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35007900132",
       "opponent_name": "Justus Smith",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 285,
-      "opponent_rank": 40,
+      "opponent_rank": 16,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
@@ -75,9 +105,9 @@
       "opponent_id": "35205296132",
       "opponent_name": "John Hightower",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 285,
-      "opponent_rank": 52,
+      "opponent_rank": 57,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
@@ -92,13 +122,28 @@
       "opponent_team": "Warren Central",
       "opponent_team_rank": 134,
       "opponent_weight": 285,
-      "opponent_rank": 37,
+      "opponent_rank": 47,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
       "event": "vs. Warren Central"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35668728132",
+      "opponent_name": "Siddiq Stephens",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 285,
+      "opponent_rank": 152,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Christian Academy-Louisville"
     },
     {
       "date": "2025-12-23",
@@ -120,9 +165,9 @@
       "opponent_id": "35638841132",
       "opponent_name": "Larhyia Thomas",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 215,
-      "opponent_rank": 194,
+      "opponent_rank": 189,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -131,9 +176,21 @@
       "event": "vs. Shawnee"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0809523809523809
-  }
+  "career": {
+    "career_id": "career_004750",
+    "canonical_name": "Mason Baker",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Christian Academy-Louisville",
+      "record": "9-0",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,13 +3,13 @@
   "name": "Login Chavez",
   "team": "Boone County",
   "team_slug": "boone_county",
-  "team_rank": 7,
-  "weight_class": 157,
+  "team_rank": 6,
+  "weight_class": 150,
   "year": 2026,
-  "current_rank": 78,
+  "current_rank": 196,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-0",
+    "overall": "3-4",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,36 +18,116 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 115.9,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "df_plus": 102.0,
+    "apr_plus": 104.1,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35652461132",
-      "opponent_rank": 159,
+      "opponent_rank": 150,
       "opponent_name": "Gage Mountford",
       "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35529017132",
+      "opponent_rank": 119,
+      "opponent_name": "Dylan Looney",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "vs. All-Star Team"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35247365132",
+      "opponent_name": "Bryson Carrington",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": 105,
+      "opponent_weight": 150,
+      "opponent_rank": 44,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "vs. Mason County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_3d56f7a7ca82",
+      "opponent_name": "Josh Reid",
+      "opponent_team": "Walnut Hills High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:20",
+      "event": "vs. Walnut Hills High School"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35529017132",
+      "opponent_name": "Dylan Looney",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": 133,
+      "opponent_weight": 165,
+      "opponent_rank": 119,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Walton-Verona"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Walton-Verona"
+    },
     {
       "date": "2025-12-26",
       "opponent_id": "35652461132",
       "opponent_name": "Gage Mountford",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 157,
-      "opponent_rank": 159,
+      "opponent_rank": 150,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -60,7 +140,7 @@
       "opponent_id": "OUTSTATE_d48fa9633632",
       "opponent_name": "Gage Mountford",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "157",
@@ -69,6 +149,23 @@
       "score": null,
       "duration": "7:00",
       "event": "2025 JV Ryle Raider Rumble"
+    }
+  ],
+  "career": {
+    "career_id": "career_004929",
+    "canonical_name": "Login Chavez",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Boone County",
+      "record": "3-5",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

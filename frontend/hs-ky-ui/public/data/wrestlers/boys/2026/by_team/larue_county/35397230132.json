@@ -3,10 +3,10 @@
   "name": "Billy York",
   "team": "LaRue County",
   "team_slug": "larue_county",
-  "team_rank": 36,
+  "team_rank": 49,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 162,
+  "current_rank": 153,
   "record": {
     "overall": "2-1",
     "vs_ranked": "1-1",
@@ -17,9 +17,9 @@
     "pf7": 13.0,
     "pa7": 20.0,
     "pd7": -7.0,
-    "si_plus": 106.2,
-    "df_plus": 87.8,
-    "apr_plus": 101.9,
+    "si_plus": 106.5,
+    "df_plus": 87.2,
+    "apr_plus": 100.5,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35526307132",
-      "opponent_rank": 184,
+      "opponent_rank": 171,
       "opponent_name": "Micah Wininger",
       "method": "Fall 0:30"
     },
     "worst_loss": {
       "opponent_id": "35638018132",
-      "opponent_rank": 50,
+      "opponent_rank": 179,
       "opponent_name": "Colton Norris",
       "method": "Dec 20-13"
     }
@@ -47,12 +47,27 @@
   "match_list": [
     {
       "date": "2025-12-20",
+      "opponent_id": "35638018132",
+      "opponent_name": "Colton Norris",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 126,
+      "opponent_rank": 179,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "20-13",
+      "duration": "7:00",
+      "event": "vs. Russell County"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "35526307132",
       "opponent_name": "Micah Wininger",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 132,
-      "opponent_rank": 184,
+      "opponent_rank": 171,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -74,21 +89,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Pulaski County"
-    },
+    }
+  ],
+  "career": {
+    "career_id": "career_004883",
+    "canonical_name": "Billy York",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
     {
-      "date": "2025-12-20",
-      "opponent_id": "35638018132",
-      "opponent_name": "Colton Norris",
-      "opponent_team": "Russell County",
-      "opponent_team_rank": 19,
-      "opponent_weight": 132,
-      "opponent_rank": 50,
-      "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "20-13",
-      "duration": "7:00",
-      "event": "vs. Russell County"
+      "season": 2026,
+      "grade": 10,
+      "team": "LaRue County",
+      "record": "2-1",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

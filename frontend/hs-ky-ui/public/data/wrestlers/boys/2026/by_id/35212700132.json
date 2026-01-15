@@ -3,10 +3,10 @@
   "name": "Simon Febles",
   "team": "Pleasure Ridge Park",
   "team_slug": "pleasure_ridge_park",
-  "team_rank": 116,
+  "team_rank": 118,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 160,
+  "current_rank": 157,
   "record": {
     "overall": "3-2",
     "vs_ranked": "2-2",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 104.7,
+    "df_plus": 102.0,
+    "apr_plus": 103.1,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "36087087132",
-      "opponent_rank": 145,
+      "opponent_rank": 143,
       "opponent_name": "Dylon Higginbotham",
       "method": "Fall 2:22"
     },
     "worst_loss": {
       "opponent_id": "36087087132",
-      "opponent_rank": 145,
+      "opponent_rank": 143,
       "opponent_name": "Dylon Higginbotham",
       "method": "Fall 2:14"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "36087087132",
       "opponent_name": "Dylon Higginbotham",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 138,
-      "opponent_rank": 145,
+      "opponent_rank": 143,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35127113132",
       "opponent_name": "Jake Jeziorski",
       "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 75,
       "opponent_weight": 138,
-      "opponent_rank": 71,
+      "opponent_rank": 42,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "36087087132",
       "opponent_name": "Dylon Higginbotham",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 138,
-      "opponent_rank": 145,
+      "opponent_rank": 143,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -97,7 +97,7 @@
       "opponent_team": "Valley",
       "opponent_team_rank": 132,
       "opponent_weight": 138,
-      "opponent_rank": 170,
+      "opponent_rank": 166,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -121,9 +121,30 @@
       "event": "vs. Desales"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_002205",
+    "canonical_name": "Simon Febles",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Pleasure Ridge Park",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Pleasure Ridge Park",
+      "record": "3-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "0-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 93.4,
+    "df_plus": 102.0,
+    "apr_plus": 93.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,13 +28,13 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34993526132",
-      "opponent_rank": 57,
+      "opponent_rank": 56,
       "opponent_name": "Tabin Prine",
       "method": "Dec 4-1"
     }
@@ -45,20 +45,30 @@
       "opponent_id": "34993526132",
       "opponent_name": "Tabin Prine",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 157,
-      "opponent_rank": 57,
+      "opponent_rank": 56,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
       "event": "Fallen Heroes"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35752685132",
+      "opponent_name": "Maddox Bryant",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 150,
+      "opponent_rank": 39,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "FALLEN HEROS"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  ]
 }

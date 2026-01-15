@@ -6,20 +6,20 @@
   "team_rank": 10,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 145,
+  "current_rank": 150,
   "record": {
-    "overall": "0-5",
-    "vs_ranked": "0-4",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "0-9",
+    "vs_ranked": "0-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 12.0,
     "pd7": -12.0,
-    "si_plus": 89.3,
-    "df_plus": 98.5,
-    "apr_plus": 87.4,
+    "si_plus": 88.5,
+    "df_plus": 98.3,
+    "apr_plus": 89.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,81 +28,137 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35663589132",
-      "opponent_rank": 98,
-      "opponent_name": "Clayton Skaggs",
-      "method": "MD 12-0"
+      "opponent_id": "35488266132",
+      "opponent_rank": 181,
+      "opponent_name": "Garrett Fohl",
+      "method": "Fall 1:48"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35271324132",
+      "opponent_name": "Connor Warner",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 30,
+      "opponent_weight": 120,
+      "opponent_rank": 8,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_4426b55d60a0",
+      "opponent_name": "Cain Hopkins",
+      "opponent_team": "South Dearborn",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:56",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_7e3e84633473",
+      "opponent_name": "Jack Hayden",
+      "opponent_team": "William Mason High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_5c742208f38b",
+      "opponent_name": "Dillon Ditton",
+      "opponent_team": "Oak Hills High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "2026 CIWT"
+    },
     {
       "date": "2025-12-26",
       "opponent_id": "35118906132",
       "opponent_name": "Hayden Schweinzger",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 113,
-      "opponent_rank": 78,
+      "opponent_rank": 74,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -9.23
+      "event": "Region 5 JV Wrestling Tournament"
     },
     {
       "date": "2025-12-26",
       "opponent_id": "35488266132",
       "opponent_name": "Garrett Fohl",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
-      "opponent_weight": 120,
-      "opponent_rank": 50,
+      "opponent_team_rank": 44,
+      "opponent_weight": 126,
+      "opponent_rank": 181,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:48",
-      "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -7.23
+      "event": "Region 5 JV Wrestling Tournament"
     },
     {
       "date": "2025-12-12",
       "opponent_id": "35663589132",
       "opponent_name": "Clayton Skaggs",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 126,
-      "opponent_rank": 98,
+      "opponent_rank": 51,
       "weight_class": "126",
       "result": "L",
       "method": "MD",
       "score": "12-0",
       "duration": "7:00",
-      "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": -6.71
+      "event": "2025 JV Ryle Raider Rumble"
     },
     {
       "date": "2025-12-12",
       "opponent_id": "35652444132",
       "opponent_name": "Kaden Thibodeau",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 126,
-      "opponent_rank": 59,
+      "opponent_rank": 81,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:48",
-      "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": -6.24
+      "event": "2025 JV Ryle Raider Rumble"
     },
     {
       "date": "2025-12-10",
@@ -118,6 +174,23 @@
       "score": null,
       "duration": "2:40",
       "event": "vs. Lawrenceburg"
+    }
+  ],
+  "career": {
+    "career_id": "career_005304",
+    "canonical_name": "Antonio Arreaga",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Conner",
+      "record": "0-9",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

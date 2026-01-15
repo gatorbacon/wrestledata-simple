@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35129083132",
+  "name": "JD Longley",
+  "team": "Ravenwood High School",
+  "team_slug": "ravenwood_high_school",
+  "team_rank": null,
+  "weight_class": 144,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "1-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 95.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 1,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34988677132",
+      "opponent_rank": 8,
+      "opponent_name": "Dane Miller",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "35035268132",
+      "opponent_rank": 7,
+      "opponent_name": "Utah Heady",
+      "method": "Dec 2-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34988677132",
+      "opponent_name": "Dane Miller",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 43,
+      "opponent_weight": 144,
+      "opponent_rank": 8,
+      "weight_class": "144",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35035268132",
+      "opponent_name": "Utah Heady",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 144,
+      "opponent_rank": 7,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "Johnny Drennan Memorial"
+    }
+  ]
+}

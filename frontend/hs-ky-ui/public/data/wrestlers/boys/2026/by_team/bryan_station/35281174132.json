@@ -3,13 +3,13 @@
   "name": "Steven Velazquez-Estrada",
   "team": "Bryan Station",
   "team_slug": "bryan_station",
-  "team_rank": 59,
+  "team_rank": 42,
   "weight_class": 157,
   "year": 2026,
   "current_rank": 90,
   "record": {
-    "overall": "3-4",
-    "vs_ranked": "3-3",
+    "overall": "3-5",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 6.5,
     "pa7": 15.5,
     "pd7": -9.0,
-    "si_plus": 97.6,
-    "df_plus": 87.3,
-    "apr_plus": 103.2,
+    "si_plus": 93.7,
+    "df_plus": 92.1,
+    "apr_plus": 99.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,20 +28,20 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35188434132",
-      "opponent_rank": 109,
-      "opponent_name": "Caleb Ronco",
-      "method": "Fall 2:39"
+      "opponent_id": "35390420132",
+      "opponent_rank": 106,
+      "opponent_name": "Ethan Killion",
+      "method": "Fall 0:56"
     },
     "worst_loss": {
-      "opponent_id": "35226235132",
-      "opponent_rank": 87,
-      "opponent_name": "Nick Livers",
-      "method": "Fall 0:53"
+      "opponent_id": "35332922132",
+      "opponent_rank": 102,
+      "opponent_name": "Jacob Sandfoss",
+      "method": "M. For."
     }
   },
   "match_list": [
@@ -50,9 +50,9 @@
       "opponent_id": "35013064132",
       "opponent_name": "Blaze Cook",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 157,
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
@@ -65,9 +65,9 @@
       "opponent_id": "35390420132",
       "opponent_name": "Ethan Killion",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": 111,
+      "opponent_rank": 106,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35188434132",
       "opponent_name": "Caleb Ronco",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 101,
-      "opponent_weight": 165,
-      "opponent_rank": 109,
+      "opponent_team_rank": 103,
+      "opponent_weight": 157,
+      "opponent_rank": 174,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -95,9 +95,9 @@
       "opponent_id": "35226235132",
       "opponent_name": "Nick Livers",
       "opponent_team": "Nelson County",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 24,
       "opponent_weight": 157,
-      "opponent_rank": 87,
+      "opponent_rank": 69,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "34993526132",
       "opponent_name": "Tabin Prine",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 157,
-      "opponent_rank": 57,
+      "opponent_rank": 56,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
@@ -125,7 +125,7 @@
       "opponent_id": "OUTSTATE_8943145f3284",
       "opponent_name": "Jacob Sandfoss",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "157",
@@ -140,15 +140,56 @@
       "opponent_id": "34999267132",
       "opponent_name": "Liam Combs",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": 160,
+      "opponent_rank": 151,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
       "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35332922132",
+      "opponent_name": "Jacob Sandfoss",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 157,
+      "opponent_rank": 102,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Tommy Castle Classic"
+    }
+  ],
+  "career": {
+    "career_id": "career_000303",
+    "canonical_name": "Steven Velazquez-Estrada",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Bryan Station",
+      "record": "3-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Bryan Station",
+      "record": "4-9",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

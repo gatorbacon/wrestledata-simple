@@ -6,7 +6,7 @@
   "team_rank": 136,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 86,
+  "current_rank": 87,
   "record": {
     "overall": "2-4",
     "vs_ranked": "1-3",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 100.9,
+    "df_plus": 102.0,
+    "apr_plus": 102.0,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -39,7 +39,7 @@
     },
     "worst_loss": {
       "opponent_id": "35082281132",
-      "opponent_rank": 142,
+      "opponent_rank": 121,
       "opponent_name": "Deegan Brown",
       "method": "Fall 0:00"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35082281132",
       "opponent_name": "Deegan Brown",
       "opponent_team": "Bethlehem",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 62,
       "opponent_weight": 150,
-      "opponent_rank": 142,
+      "opponent_rank": 121,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "34994786132",
       "opponent_name": "Riley Sanford",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 157,
-      "opponent_rank": 10,
+      "opponent_rank": 4,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -95,7 +95,7 @@
       "opponent_id": "35332922132",
       "opponent_name": "Jacob Sandfoss",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 157,
       "opponent_rank": 102,
       "weight_class": "157",
@@ -110,9 +110,9 @@
       "opponent_id": "34993526132",
       "opponent_name": "Tabin Prine",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 157,
-      "opponent_rank": 57,
+      "opponent_rank": 56,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -136,9 +136,39 @@
       "event": "Tommy Castle Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  "career": {
+    "career_id": "career_002931",
+    "canonical_name": "Dylan Andino-Ramirez",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "West Jessamine",
+      "record": "2-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "West Jessamine",
+      "record": "12-18",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "West Jessamine",
+      "record": "12-14",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

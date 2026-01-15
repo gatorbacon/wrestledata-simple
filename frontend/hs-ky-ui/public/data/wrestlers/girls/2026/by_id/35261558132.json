@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35261558132",
+  "name": "Abigail Ward",
+  "team": "Eastside",
+  "team_slug": "eastside",
+  "team_rank": null,
+  "weight_class": 145,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 120.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35739867132",
+      "opponent_rank": 7,
+      "opponent_name": "Brianna Rosenberg",
+      "method": "Fall 1:37"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35369127132",
+      "opponent_name": "Alexis Howard",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 138,
+      "opponent_rank": 19,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35739867132",
+      "opponent_name": "Brianna Rosenberg",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": 7,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "Girls Hatfield McCoy 32 2025"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.474074074074074
+  }
+}

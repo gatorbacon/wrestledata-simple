@@ -6,9 +6,9 @@
   "team_rank": 131,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 31,
+  "current_rank": 27,
   "record": {
-    "overall": "3-3",
+    "overall": "3-4",
     "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
@@ -17,9 +17,9 @@
     "pf7": 6.0,
     "pa7": 7.0,
     "pd7": -1.0,
-    "si_plus": 100.6,
-    "df_plus": 105.1,
-    "apr_plus": 109.5,
+    "si_plus": 99.6,
+    "df_plus": 108.7,
+    "apr_plus": 109.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,33 +33,47 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34989003132",
-      "opponent_rank": 43,
+      "opponent_rank": 40,
       "opponent_name": "Aydan Farris",
       "method": "Fall 2:26"
     },
     "worst_loss": {
       "opponent_id": "35035507132",
-      "opponent_rank": 25,
+      "opponent_rank": 22,
       "opponent_name": "Wendel Shackelford",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35146881132",
+      "opponent_name": "James Fuller",
+      "opponent_team": "Saint John Paul the Great Catholic High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "2026 East Coast Catholic Classic"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35212709132",
       "opponent_name": "Jace Rudd",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 118,
       "opponent_weight": 157,
-      "opponent_rank": 119,
+      "opponent_rank": 114,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:08",
-      "event": "vs. Trinity (Louisville)",
-      "mv_impact": 2.33
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2025-12-30",
@@ -81,69 +95,86 @@
       "opponent_id": "35623017132",
       "opponent_name": "Wyatt Davis",
       "opponent_team": "Atherton",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 21,
       "opponent_weight": 157,
-      "opponent_rank": 108,
+      "opponent_rank": 62,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:45",
-      "event": "King of the Bluegrass",
-      "mv_impact": 2.86
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34989003132",
       "opponent_name": "Aydan Farris",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 157,
-      "opponent_rank": 43,
+      "opponent_rank": 40,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:26",
-      "event": "King of the Bluegrass",
-      "mv_impact": 6.42
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35249433132",
       "opponent_name": "Darrion Stringer",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 157,
-      "opponent_rank": 21,
+      "opponent_rank": 18,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "King of the Bluegrass",
-      "mv_impact": -0.82
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35035507132",
       "opponent_name": "Wendel Shackelford",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 157,
-      "opponent_rank": 25,
+      "opponent_rank": 22,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Union County",
-      "mv_impact": -3.53
+      "event": "vs. Union County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.5416666666666667
-  }
+  "career": {
+    "career_id": "career_002764",
+    "canonical_name": "Michael Fidler",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Trinity (Louisville)",
+      "record": "3-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Trinity (Louisville)",
+      "record": "8-17",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

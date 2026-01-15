@@ -3,10 +3,10 @@
   "name": "Jaxson Mcfarland",
   "team": "Fern Creek",
   "team_slug": "fern_creek",
-  "team_rank": 74,
+  "team_rank": 80,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 152,
+  "current_rank": 158,
   "record": {
     "overall": "0-3",
     "vs_ranked": "0-3",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 90.0,
+    "df_plus": 102.0,
+    "apr_plus": 91.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35049071132",
-      "opponent_rank": 151,
+      "opponent_rank": 157,
       "opponent_name": "Preston Davis",
       "method": "Fall 0:00"
     }
@@ -45,53 +45,65 @@
       "opponent_id": "35049071132",
       "opponent_name": "Preston Davis",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 190,
-      "opponent_rank": 151,
+      "opponent_rank": 157,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Greenwood",
-      "mv_impact": -9.3
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "34997716132",
-      "opponent_name": "Ezekiel Pearson",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
-      "opponent_weight": 190,
-      "opponent_rank": 119,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:08",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": -9.3
+      "mv_impact": -9.24
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35180955132",
       "opponent_name": "Bryston Caldwell",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 190,
-      "opponent_rank": 30,
+      "opponent_rank": 35,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:16",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -4.16
+      "mv_impact": -4.73
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34997716132",
+      "opponent_name": "Ezekiel Pearson",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 45,
+      "opponent_weight": 190,
+      "opponent_rank": 129,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:08",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -9.5
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_004875",
+    "canonical_name": "Jaxson Mcfarland",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Fern Creek",
+      "record": "0-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

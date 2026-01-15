@@ -3,10 +3,10 @@
   "name": "Garrett Rust",
   "team": "Campbell County",
   "team_slug": "campbell_county",
-  "team_rank": 15,
+  "team_rank": 16,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 37,
+  "current_rank": 31,
   "record": {
     "overall": "2-5",
     "vs_ranked": "2-5",
@@ -17,9 +17,9 @@
     "pf7": 5.5,
     "pa7": 11.5,
     "pd7": -6.0,
-    "si_plus": 92.0,
+    "si_plus": 91.1,
     "df_plus": 98.8,
-    "apr_plus": 95.4,
+    "apr_plus": 95.8,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35663338132",
-      "opponent_rank": 38,
+      "opponent_rank": 34,
       "opponent_name": "Ethan Berhe",
       "method": "Dec 6-5"
     },
     "worst_loss": {
       "opponent_id": "35033123132",
-      "opponent_rank": 102,
+      "opponent_rank": 105,
       "opponent_name": "Camren Walls",
       "method": "Fall 0:00"
     }
@@ -50,64 +50,64 @@
       "opponent_id": "35488119132",
       "opponent_name": "Jake Adams",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 44,
       "opponent_weight": 132,
-      "opponent_rank": 36,
+      "opponent_rank": 30,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:57",
       "event": "NKAC",
-      "mv_impact": -5.39
+      "mv_impact": -5.61
     },
     {
       "date": "2025-12-27",
       "opponent_id": "35271618132",
       "opponent_name": "Brennen East",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 30,
       "opponent_weight": 132,
-      "opponent_rank": 25,
+      "opponent_rank": 24,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:12",
       "event": "NKAC",
-      "mv_impact": -3.85
+      "mv_impact": -3.93
     },
     {
       "date": "2025-12-27",
       "opponent_id": "35663338132",
       "opponent_name": "Ethan Berhe",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 132,
-      "opponent_rank": 38,
+      "opponent_rank": 34,
       "weight_class": "132",
       "result": "W",
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
       "event": "NKAC",
-      "mv_impact": 2.71
+      "mv_impact": 2.37
     },
     {
       "date": "2025-12-27",
       "opponent_id": "35219515132",
       "opponent_name": "Elyja Lackey",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 93,
       "opponent_weight": 132,
-      "opponent_rank": 88,
+      "opponent_rank": 85,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:50",
       "event": "NKAC",
-      "mv_impact": 3.69
+      "mv_impact": 3.59
     },
     {
       "date": "2025-12-27",
@@ -116,21 +116,21 @@
       "opponent_team": "Cooper",
       "opponent_team_rank": 9,
       "opponent_weight": 132,
-      "opponent_rank": 30,
+      "opponent_rank": 27,
       "weight_class": "132",
       "result": "L",
       "method": "MD",
       "score": "18-5",
       "duration": "7:00",
       "event": "NKAC",
-      "mv_impact": -2.92
+      "mv_impact": -3.23
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35202491132",
       "opponent_name": "Henry Koller",
       "opponent_team": "South Oldham",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 138,
       "opponent_rank": 5,
       "weight_class": "138",
@@ -139,7 +139,7 @@
       "score": null,
       "duration": "1:02",
       "event": "Tommy Castle Classic",
-      "mv_impact": -2.6
+      "mv_impact": -2.32
     },
     {
       "date": "2025-11-29",
@@ -148,7 +148,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 138,
-      "opponent_rank": 102,
+      "opponent_rank": 105,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -156,6 +156,41 @@
       "duration": "0:00",
       "event": "Tommy Castle Classic",
       "mv_impact": -8.66
+    }
+  ],
+  "career": {
+    "career_id": "career_000404",
+    "canonical_name": "Garrett Rust",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Campbell County",
+      "record": "2-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Campbell County",
+      "record": "6-10",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 7,
+      "team": "Campbell County",
+      "record": "1-6",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

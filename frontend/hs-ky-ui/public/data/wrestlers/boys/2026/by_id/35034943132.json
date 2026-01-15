@@ -3,51 +3,116 @@
   "name": "Kent Hitchcock",
   "team": "Franklin County",
   "team_slug": "franklin_county",
-  "team_rank": 79,
+  "team_rank": 45,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 152,
+  "current_rank": 157,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "0-4",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "4-5",
+    "vs_ranked": "2-5",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 21.0,
-    "pa7": 25.0,
-    "pd7": -4.0,
-    "si_plus": 118.7,
-    "df_plus": 80.8,
-    "apr_plus": 88.0,
+    "pf7": 21.33,
+    "pa7": 11.48,
+    "pd7": 9.85,
+    "si_plus": 120.3,
+    "df_plus": 99.6,
+    "apr_plus": 87.4,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
-    "techs": 0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 1,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "35520779132",
+      "opponent_rank": 167,
+      "opponent_name": "Ashton Edwards",
+      "method": "MD 18-5"
+    },
     "worst_loss": {
       "opponent_id": "35247373132",
-      "opponent_rank": 79,
+      "opponent_rank": 87,
       "opponent_name": "Robert Roy",
       "method": "TF 29-13 4:20"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35520779132",
+      "opponent_name": "Ashton Edwards",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": 7,
+      "opponent_weight": 144,
+      "opponent_rank": 167,
+      "weight_class": "150",
+      "result": "W",
+      "method": "MD",
+      "score": "18-5",
+      "duration": "7:00",
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35156188132",
+      "opponent_name": "Aiden Zuniga",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 39,
+      "opponent_weight": 150,
+      "opponent_rank": 10,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "vs. Taylor County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "37325669132",
+      "opponent_name": "Jameson Bartram",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": 137,
+      "opponent_weight": 150,
+      "opponent_rank": 194,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "3:09",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Spencer County"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35599171132",
       "opponent_name": "Noah Metz",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 144,
-      "opponent_rank": 53,
+      "opponent_rank": 55,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -60,9 +125,9 @@
       "opponent_id": "35122061132",
       "opponent_name": "Madden Brown",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 150,
-      "opponent_rank": 7,
+      "opponent_rank": 5,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -90,9 +155,9 @@
       "opponent_id": "35640191132",
       "opponent_name": "Clayton Roberts",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 44,
-      "opponent_weight": 132,
-      "opponent_rank": 65,
+      "opponent_team_rank": 47,
+      "opponent_weight": 150,
+      "opponent_rank": 32,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -105,9 +170,9 @@
       "opponent_id": "35247373132",
       "opponent_name": "Robert Roy",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 150,
-      "opponent_rank": 79,
+      "opponent_rank": 87,
       "weight_class": "150",
       "result": "L",
       "method": "TF",
@@ -116,9 +181,21 @@
       "event": "vs. Mason County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  "career": {
+    "career_id": "career_005404",
+    "canonical_name": "Kent Hitchcock",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Franklin County",
+      "record": "4-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

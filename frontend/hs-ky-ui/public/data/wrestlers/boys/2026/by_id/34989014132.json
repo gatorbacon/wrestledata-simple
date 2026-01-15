@@ -3,10 +3,10 @@
   "name": "Emerson Jackson",
   "team": "Ohio County",
   "team_slug": "ohio_county",
-  "team_rank": 47,
+  "team_rank": 36,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 83,
+  "current_rank": 90,
   "record": {
     "overall": "1-0",
     "vs_ranked": "1-0",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 114.4,
+    "df_plus": 102.0,
+    "apr_plus": 114.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35405501132",
-      "opponent_rank": 134,
+      "opponent_rank": 128,
       "opponent_name": "Anthaydee Rey",
       "method": "Fall 0:00"
     },
@@ -45,21 +45,42 @@
       "opponent_id": "35405501132",
       "opponent_name": "Anthaydee Rey",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 86,
       "opponent_weight": 126,
-      "opponent_rank": 134,
+      "opponent_rank": 128,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": 1.78
+      "mv_impact": 2.02
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_001954",
+    "canonical_name": "Emerson Jackson",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Ohio County",
+      "record": "1-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "Ohio County",
+      "record": "1-0",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

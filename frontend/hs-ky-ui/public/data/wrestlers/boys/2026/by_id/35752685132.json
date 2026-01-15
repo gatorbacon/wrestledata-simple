@@ -3,12 +3,12 @@
   "name": "Maddox Bryant",
   "team": "Johnson Central",
   "team_slug": "johnson_central",
-  "team_rank": 12,
-  "weight_class": 157,
+  "team_rank": 2,
+  "weight_class": 150,
   "year": 2026,
-  "current_rank": 33,
+  "current_rank": 39,
   "record": {
-    "overall": "7-4",
+    "overall": "13-6",
     "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -18,13 +18,13 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 113.3,
-    "pin_rate": 0.857,
-    "bonus_rate": 0.857,
-    "majors": 0,
+    "df_plus": 102.0,
+    "apr_plus": 108.8,
+    "pin_rate": 0.769,
+    "bonus_rate": 0.923,
+    "majors": 2,
     "techs": 0,
-    "pins": 6
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35420605132",
-      "opponent_rank": 36,
+      "opponent_rank": 32,
       "opponent_name": "Isac Perez",
       "method": "Fall 4:59"
     },
     "worst_loss": {
       "opponent_id": "35732592132",
-      "opponent_rank": 16,
+      "opponent_rank": 15,
       "opponent_name": "Parker Maynard",
       "method": "Fall 5:35"
     }
@@ -65,9 +65,9 @@
       "opponent_id": "35013064132",
       "opponent_name": "Blaze Cook",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 157,
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -97,7 +97,7 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 157,
-      "opponent_rank": 36,
+      "opponent_rank": 32,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -110,15 +110,135 @@
       "opponent_id": "35732592132",
       "opponent_name": "Parker Maynard",
       "opponent_team": "Martin County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 13,
       "opponent_weight": 157,
-      "opponent_rank": 16,
+      "opponent_rank": 15,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:35",
       "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35751138132",
+      "opponent_name": "Atreyu Copen",
+      "opponent_team": "Ravenswood",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "16-7",
+      "duration": "7:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35573908132",
+      "opponent_name": "Caleb Brewer",
+      "opponent_team": "Riverside Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35430167132",
+      "opponent_name": "Mason Fisher",
+      "opponent_team": "Sissonville",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35625825132",
+      "opponent_name": "Amari Loudermilk",
+      "opponent_team": "Capital",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35914119132",
+      "opponent_name": "Steven Frank",
+      "opponent_team": "Greenbrier East",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "36021556132",
+      "opponent_name": "PAXTON SMITH",
+      "opponent_team": "Braxton County Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35143252132",
+      "opponent_name": "Christian Smith",
+      "opponent_team": "Shady Spring",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "SV-1",
+      "score": "10-8",
+      "duration": "8:15",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "36040479132",
+      "opponent_name": "Dominic Mandaville",
+      "opponent_team": "Greenbrier West Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "FALLEN HEROS"
     },
     {
       "date": "2025-12-13",
@@ -156,7 +276,7 @@
       "opponent_name": "Robert Martin",
       "opponent_team": "Spring Hill High School",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
@@ -211,9 +331,39 @@
       "event": "INDIAN CLASSIC"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.5416666666666667
-  }
+  "career": {
+    "career_id": "career_001354",
+    "canonical_name": "Maddox Bryant",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Johnson Central",
+      "record": "13-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Johnson Central",
+      "record": "12-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Hazard",
+      "record": "16-3",
+      "regional_place": 4,
+      "state_place": null
+    }
+  ]
 }

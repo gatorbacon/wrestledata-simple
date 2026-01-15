@@ -6,10 +6,10 @@
   "team_rank": 19,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 115,
+  "current_rank": 123,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "1-1",
+    "overall": "1-3",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 94.9,
+    "df_plus": 102.0,
+    "apr_plus": 92.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,54 +28,67 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35284451132",
-      "opponent_rank": 144,
+      "opponent_rank": 150,
       "opponent_name": "Analiah Parga Lujan",
       "method": "Fall 0:50"
     },
     "worst_loss": {
       "opponent_id": "35030261132",
-      "opponent_rank": 113,
+      "opponent_rank": 120,
       "opponent_name": "Bradlee Mounce",
       "method": "Fall 0:28"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-08",
+      "opponent_id": "34993868132",
+      "opponent_name": "Tristin Davis",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 150,
+      "opponent_rank": 116,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35030261132",
       "opponent_name": "Bradlee Mounce",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 150,
-      "opponent_rank": 113,
+      "opponent_rank": 120,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:28",
-      "event": "vs. Russell County",
-      "mv_impact": -8.78
+      "event": "vs. Russell County"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35284451132",
       "opponent_name": "Analiah Parga Lujan",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 150,
-      "opponent_rank": 144,
+      "opponent_rank": 150,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "The Beast of the East",
-      "mv_impact": 1.69
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
@@ -93,9 +106,21 @@
       "event": "The Beast of the East"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  "career": {
+    "career_id": "career_005643",
+    "canonical_name": "Khloee Fisher",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Russell County",
+      "record": "1-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

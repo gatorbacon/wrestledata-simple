@@ -3,13 +3,13 @@
   "name": "Gunner Harper",
   "team": "Russellville",
   "team_slug": "russellville",
-  "team_rank": 121,
+  "team_rank": 123,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 130,
+  "current_rank": 51,
   "record": {
-    "overall": "2-7",
-    "vs_ranked": "1-2",
+    "overall": "6-7",
+    "vs_ranked": "4-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,48 +18,107 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 90.8,
-    "pin_rate": 0.5,
-    "bonus_rate": 1.0,
+    "df_plus": 102.0,
+    "apr_plus": 101.8,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 1,
-    "pins": 1
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 4,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35192413132",
-      "opponent_rank": 55,
-      "opponent_name": "Dakota Lee",
-      "method": "Fall 1:59"
+      "opponent_id": "35207989132",
+      "opponent_rank": 52,
+      "opponent_name": "Gage Brown",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "34988691132",
-      "opponent_rank": 125,
+      "opponent_rank": 126,
       "opponent_name": "Cayden Hayden",
       "method": "DQ"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-13",
+      "opponent_id": "35024594132",
+      "opponent_name": "Elijah Brunk",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 215,
+      "opponent_rank": 107,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:13",
+      "event": "vs. South Warren"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Trigg County"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35207989132",
+      "opponent_name": "Gage Brown",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 215,
+      "opponent_rank": 52,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russellville"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35133610132",
+      "opponent_name": "Connor Harris",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 95,
+      "opponent_weight": 215,
+      "opponent_rank": 106,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russellville"
+    },
+    {
       "date": "2025-12-23",
       "opponent_id": "34988691132",
       "opponent_name": "Cayden Hayden",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 215,
-      "opponent_rank": 125,
+      "opponent_rank": 126,
       "weight_class": "215",
       "result": "L",
       "method": "DEC",
       "score": null,
       "duration": "7:00",
-      "event": "Christian County Invitational",
-      "mv_impact": -9.63
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
@@ -81,32 +140,30 @@
       "opponent_id": "35192413132",
       "opponent_name": "Dakota Lee",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
+      "opponent_team_rank": 102,
       "opponent_weight": 215,
-      "opponent_rank": 55,
+      "opponent_rank": 53,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "vs. Russellville",
-      "mv_impact": -7.01
+      "event": "vs. Russellville"
     },
     {
       "date": "2025-12-09",
       "opponent_id": "35192413132",
       "opponent_name": "Dakota Lee",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
+      "opponent_team_rank": 102,
       "opponent_weight": 215,
-      "opponent_rank": 55,
+      "opponent_rank": 53,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:59",
-      "event": "vs. Russellville",
-      "mv_impact": 4.99
+      "event": "vs. Russellville"
     },
     {
       "date": "2025-12-09",
@@ -184,9 +241,30 @@
       "event": "vs. East Robertson High School"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_002319",
+    "canonical_name": "Gunner Harper",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Russellville",
+      "record": "6-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "Russellville",
+      "record": "3-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

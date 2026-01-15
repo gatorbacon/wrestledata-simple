@@ -3,13 +3,13 @@
   "name": "Zachary Ammon",
   "team": "Oldham County",
   "team_slug": "oldham_county",
-  "team_rank": 110,
+  "team_rank": 112,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 54,
+  "current_rank": 50,
   "record": {
-    "overall": "3-4",
-    "vs_ranked": "3-3",
+    "overall": "3-5",
+    "vs_ranked": "3-4",
     "vs_top10": "0-1",
     "vs_top25": "1-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 8.0,
     "pd7": -8.0,
-    "si_plus": 84.0,
-    "df_plus": 101.9,
-    "apr_plus": 106.8,
+    "si_plus": 90.2,
+    "df_plus": 100.5,
+    "apr_plus": 104.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35144516132",
-      "opponent_rank": 15,
+      "opponent_rank": 17,
       "opponent_name": "Liam Ditto",
       "method": "Fall 4:55"
     },
     "worst_loss": {
       "opponent_id": "35420495132",
-      "opponent_rank": 53,
+      "opponent_rank": 49,
       "opponent_name": "Larriuce Felipe",
       "method": "MD 8-0"
     }
@@ -47,17 +47,32 @@
   "match_list": [
     {
       "date": "2026-01-03",
-      "opponent_id": "35202495132",
-      "opponent_name": "Mason Gipson",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": 125,
+      "opponent_id": "34993552132",
+      "opponent_name": "Logan Gevedon",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
       "opponent_weight": 120,
-      "opponent_rank": 4,
+      "opponent_rank": 27,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:28",
+      "duration": "4:45",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35202495132",
+      "opponent_name": "Mason Gipson",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": 127,
+      "opponent_weight": 120,
+      "opponent_rank": 5,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
       "event": "Warhawk Classic"
     },
     {
@@ -65,9 +80,9 @@
       "opponent_id": "35144516132",
       "opponent_name": "Liam Ditto",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 120,
-      "opponent_rank": 15,
+      "opponent_rank": 17,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -80,7 +95,7 @@
       "opponent_id": "35401423132",
       "opponent_name": "Damien Falter",
       "opponent_team": "Letcher County Central",
-      "opponent_team_rank": 98,
+      "opponent_team_rank": 101,
       "opponent_weight": 120,
       "opponent_rank": 58,
       "weight_class": "120",
@@ -95,9 +110,9 @@
       "opponent_id": "35122089132",
       "opponent_name": "Levi Gibbs",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 120,
-      "opponent_rank": 51,
+      "opponent_rank": 48,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -110,9 +125,9 @@
       "opponent_id": "35615678132",
       "opponent_name": "Caiden Hamilton",
       "opponent_team": "Pike County Central",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 52,
       "opponent_weight": 120,
-      "opponent_rank": 163,
+      "opponent_rank": 165,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -127,7 +142,7 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 120,
-      "opponent_rank": 53,
+      "opponent_rank": 49,
       "weight_class": "120",
       "result": "L",
       "method": "MD",
@@ -140,7 +155,7 @@
       "opponent_id": "OUTSTATE_0aea587d3fbd",
       "opponent_name": "Levi Gibbs",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "120",
@@ -151,9 +166,30 @@
       "event": "Boys Hatfield McCoy 32 2025"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.385012919896641
-  }
+  "career": {
+    "career_id": "career_001974",
+    "canonical_name": "Zach Ammon",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Oldham County",
+      "record": "3-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Oldham County",
+      "record": "14-11",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

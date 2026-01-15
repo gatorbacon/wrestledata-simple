@@ -3,13 +3,13 @@
   "name": "Javan Dotson",
   "team": "Pikeville",
   "team_slug": "pikeville",
-  "team_rank": 114,
-  "weight_class": 138,
+  "team_rank": 116,
+  "weight_class": 144,
   "year": 2026,
-  "current_rank": 264,
+  "current_rank": 195,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 89.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,11 +28,49 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35513070132",
+      "opponent_rank": 77,
+      "opponent_name": "Trenton Williamson",
+      "method": "Fall 0:37"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36019587132",
+      "opponent_name": "Carter Stewart",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 144,
+      "opponent_rank": 32,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:46",
+      "event": "Clipson Jones Classic 2026",
+      "mv_impact": -5.17
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35513070132",
+      "opponent_name": "Trenton Williamson",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 60,
+      "opponent_weight": 144,
+      "opponent_rank": 77,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "Clipson Jones Classic 2026",
+      "mv_impact": -6.98
+    }
+  ]
 }

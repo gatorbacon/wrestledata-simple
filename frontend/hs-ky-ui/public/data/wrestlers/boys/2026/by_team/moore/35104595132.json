@@ -3,38 +3,183 @@
   "name": "Kean Minth",
   "team": "Moore",
   "team_slug": "moore",
-  "team_rank": 46,
+  "team_rank": 27,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 152,
+  "current_rank": 72,
   "record": {
-    "overall": "2-3",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "4-10",
+    "vs_ranked": "2-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
+    "pf7": 11.0,
+    "pa7": 10.0,
+    "pd7": 1.0,
+    "si_plus": 104.1,
     "df_plus": 102.1,
-    "apr_plus": 92.6,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "apr_plus": 93.0,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.25,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "34988541132",
+      "opponent_rank": 74,
+      "opponent_name": "Shane Willock",
+      "method": "Dec 11-10"
+    },
+    "worst_loss": {
+      "opponent_id": "36445937132",
+      "opponent_rank": 69,
+      "opponent_name": "Giovany Ramirez",
+      "method": "Fall 2:44"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34988541132",
+      "opponent_name": "Shane Willock",
+      "opponent_team": "Doss",
+      "opponent_team_rank": 74,
+      "opponent_weight": 285,
+      "opponent_rank": 74,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-10",
+      "duration": "7:00",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35618295132",
+      "opponent_name": "Kole Holmes",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 132,
+      "opponent_weight": 285,
+      "opponent_rank": 49,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:48",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36445937132",
+      "opponent_name": "Giovany Ramirez",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 131,
+      "opponent_weight": 285,
+      "opponent_rank": 69,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:44",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35668431132",
+      "opponent_name": "Tahirah Stephens",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 285,
+      "opponent_rank": 211,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35046230132",
+      "opponent_name": "Elijah Burriell",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": 15,
+      "opponent_weight": 285,
+      "opponent_rank": 6,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35893832132",
+      "opponent_name": "Mason Baker",
+      "opponent_team": "Christian Academy-Louisville",
+      "opponent_team_rank": 26,
+      "opponent_weight": 285,
+      "opponent_rank": 12,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:09",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34993735132",
+      "opponent_name": "CJ White",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 285,
+      "opponent_rank": 44,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "36434624132",
+      "opponent_name": "Elias McPike",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 29,
+      "opponent_weight": 285,
+      "opponent_rank": 27,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_bec625d89a2c",
+      "opponent_name": "CJ White",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:57",
+      "event": "Warhawk Classic"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35718967132",
@@ -109,6 +254,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Spencer County"
+    }
+  ],
+  "career": {
+    "career_id": "career_005561",
+    "canonical_name": "Kean Minth",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Moore",
+      "record": "4-10",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

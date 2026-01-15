@@ -3,12 +3,12 @@
   "name": "David Rojas",
   "team": "Ryle",
   "team_slug": "ryle",
-  "team_rank": 13,
+  "team_rank": 14,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 81,
+  "current_rank": 84,
   "record": {
-    "overall": "6-4",
+    "overall": "6-5",
     "vs_ranked": "4-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -17,9 +17,9 @@
     "pf7": 4.0,
     "pa7": 1.0,
     "pd7": 3.0,
-    "si_plus": 92.1,
-    "df_plus": 114.5,
-    "apr_plus": 102.2,
+    "si_plus": 91.5,
+    "df_plus": 114.9,
+    "apr_plus": 102.7,
     "pin_rate": 0.833,
     "bonus_rate": 0.833,
     "majors": 0,
@@ -32,27 +32,42 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35782690132",
-      "opponent_rank": 98,
-      "opponent_name": "Jace Raven",
-      "method": "Dec 4-1"
+      "opponent_id": "35035547132",
+      "opponent_rank": 68,
+      "opponent_name": "Marcus McCormick",
+      "method": "Fall 2:55"
     },
     "worst_loss": {
-      "opponent_id": "34993551132",
-      "opponent_rank": 155,
-      "opponent_name": "Jamison Wester",
-      "method": "Fall 1:06"
+      "opponent_id": "34988550132",
+      "opponent_rank": 66,
+      "opponent_name": "Bronson Keefe",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "37574125132",
+      "opponent_name": "LANDON CASEY",
+      "opponent_team": "Elder",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Elder"
+    },
     {
       "date": "2025-12-26",
       "opponent_id": "35035547132",
       "opponent_name": "Marcus McCormick",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 215,
-      "opponent_rank": 199,
+      "opponent_rank": 68,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -67,7 +82,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": 62,
+      "opponent_rank": 66,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -82,7 +97,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": 168,
+      "opponent_rank": 175,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35782690132",
       "opponent_name": "Jace Raven",
       "opponent_team": "Holy Cross (Covington)",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 94,
       "opponent_weight": 285,
-      "opponent_rank": 98,
+      "opponent_rank": 105,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
@@ -110,9 +125,9 @@
       "opponent_id": "34993551132",
       "opponent_name": "Jamison Wester",
       "opponent_team": "Moore",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 27,
       "opponent_weight": 215,
-      "opponent_rank": 155,
+      "opponent_rank": 32,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "35051541132",
       "opponent_name": "Maxx Escaloni",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 285,
-      "opponent_rank": 15,
+      "opponent_rank": 20,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -140,9 +155,9 @@
       "opponent_id": "35488267132",
       "opponent_name": "Wyatt Merk",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 44,
       "opponent_weight": 285,
-      "opponent_rank": 175,
+      "opponent_rank": 183,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -196,9 +211,30 @@
       "event": "2025 JV Ryle Raider Rumble"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_002363",
+    "canonical_name": "David Rojas",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Ryle",
+      "record": "6-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Ryle",
+      "record": "3-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 145,
   "year": 2026,
-  "current_rank": 50,
+  "current_rank": 48,
   "record": {
-    "overall": "1-4",
+    "overall": "1-7",
     "vs_ranked": "0-3",
-    "vs_top10": "0-2",
+    "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 8.48,
     "pa7": 11.03,
     "pd7": -2.55,
-    "si_plus": 86.7,
-    "df_plus": 104.3,
-    "apr_plus": 89.1,
+    "si_plus": 106.5,
+    "df_plus": 93.9,
+    "apr_plus": 89.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -30,29 +30,74 @@
     "ranked_wins": 0,
     "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35598266132",
-      "opponent_rank": 39,
+      "opponent_rank": 37,
       "opponent_name": "Loralai Stephens",
       "method": "SV-1 13-10"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-02",
+      "opponent_id": "35338140132",
+      "opponent_name": "Kyla Ford",
+      "opponent_team": "Carbondale (H.S.)",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": null,
+      "weight_class": "152",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:59",
+      "event": "Marion Wildcats Girls Invitational"
+    },
+    {
+      "date": "2026-01-02",
+      "opponent_id": "35457913132",
+      "opponent_name": "Macy McCulley",
+      "opponent_team": "Fairfield",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": null,
+      "weight_class": "152",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:20",
+      "event": "Marion Wildcats Girls Invitational"
+    },
+    {
       "date": "2025-12-12",
       "opponent_id": "35598266132",
       "opponent_name": "Loralai Stephens",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 138,
-      "opponent_rank": 39,
+      "opponent_rank": 37,
       "weight_class": "145",
       "result": "L",
       "method": "SV-1",
       "score": "13-10",
       "duration": "8:15",
+      "event": "Sister Slam"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35837464132",
+      "opponent_name": "Marriah Jackson",
+      "opponent_team": "Carbondale (H.S.)",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "145",
+      "result": "L",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "2:23",
       "event": "Sister Slam"
     },
     {
@@ -62,7 +107,7 @@
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 4,
+      "opponent_rank": 5,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
@@ -77,7 +122,7 @@
       "opponent_team": "Greenwood",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 10,
+      "opponent_rank": 11,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
@@ -119,6 +164,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1428571428571428
+    "top33_bonus_ev_shrunk": 1.4083333333333334
   }
 }

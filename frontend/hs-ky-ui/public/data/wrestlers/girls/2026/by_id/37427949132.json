@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "37427949132",
+  "name": "Miley Pennington",
+  "team": "Prestonsburg",
+  "team_slug": "prestonsburg",
+  "team_rank": 21,
+  "weight_class": 100,
+  "year": 2026,
+  "current_rank": 52,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 86.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "35814907132",
+      "opponent_rank": 10,
+      "opponent_name": "Aaliyah Hackney",
+      "method": "Fall 0:24"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35814907132",
+      "opponent_name": "Aaliyah Hackney",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": 10,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:24",
+      "event": "Clipson Jones Classic Ladies 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36316068132",
+      "opponent_name": "Alissa Workman",
+      "opponent_team": "Tug Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
+      "event": "Clipson Jones Classic Ladies 2026"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.6666666666666667
+  }
+}

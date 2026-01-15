@@ -3,12 +3,12 @@
   "name": "Jared Basco",
   "team": "Caldwell County",
   "team_slug": "caldwell_county",
-  "team_rank": 62,
+  "team_rank": 66,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 82,
+  "current_rank": 83,
   "record": {
-    "overall": "5-5",
+    "overall": "6-5",
     "vs_ranked": "3-3",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
@@ -17,14 +17,14 @@
     "pf7": 7.67,
     "pa7": 8.33,
     "pd7": -0.67,
-    "si_plus": 106.6,
-    "df_plus": 104.3,
-    "apr_plus": 99.6,
-    "pin_rate": 0.8,
+    "si_plus": 98.7,
+    "df_plus": 105.9,
+    "apr_plus": 100.1,
+    "pin_rate": 0.833,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,49 +33,62 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35002886132",
-      "opponent_rank": 57,
+      "opponent_rank": 49,
       "opponent_name": "Luis Nunez",
       "method": "TF 16-0 0:00"
     },
     "worst_loss": {
       "opponent_id": "35035532132",
-      "opponent_rank": 68,
+      "opponent_rank": 37,
       "opponent_name": "Elias Blakney",
       "method": "Dec 10-7"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-06",
+      "opponent_id": "35362033132",
+      "opponent_name": "Jacob Sprague",
+      "opponent_team": "Rossview High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:53",
+      "event": "vs. Rossview High School"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35002886132",
       "opponent_name": "Luis Nunez",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 150,
-      "opponent_rank": 57,
+      "opponent_rank": 49,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
       "score": "16-0",
       "duration": "0:00",
-      "event": "vs. Fort Campbell",
-      "mv_impact": 4.25
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35035507132",
       "opponent_name": "Wendel Shackelford",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 157,
-      "opponent_rank": 25,
+      "opponent_rank": 22,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Union County",
-      "mv_impact": -3.53
+      "event": "vs. Union County"
     },
     {
       "date": "2025-12-20",
@@ -84,62 +97,58 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 130,
       "opponent_weight": 157,
-      "opponent_rank": 110,
+      "opponent_rank": 105,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trigg County",
-      "mv_impact": 3.56
+      "event": "vs. Trigg County"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35383674132",
       "opponent_name": "Kameryis Rodriquez Cline",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 157,
-      "opponent_rank": 14,
+      "opponent_rank": 13,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Owensboro",
-      "mv_impact": -1.03
+      "event": "vs. Owensboro"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35035532132",
       "opponent_name": "Elias Blakney",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 157,
-      "opponent_rank": 68,
+      "opponent_rank": 37,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "10-7",
       "duration": "7:00",
-      "event": "vs. Union County",
-      "mv_impact": -3.06
+      "event": "vs. Union County"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35521941132",
       "opponent_name": "Anthony Baggett",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 150,
-      "opponent_rank": 162,
+      "opponent_rank": 169,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fort Campbell",
-      "mv_impact": 2.13
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2025-12-13",
@@ -200,6 +209,32 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Salem"
+    }
+  ],
+  "career": {
+    "career_id": "career_000366",
+    "canonical_name": "Jared Basco",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Caldwell County",
+      "record": "6-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Caldwell County",
+      "record": "3-7",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

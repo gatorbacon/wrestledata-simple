@@ -11,15 +11,15 @@
     "overall": "0-3",
     "vs_ranked": "0-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 92.5,
+    "df_plus": 102.0,
+    "apr_plus": 93.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -33,10 +33,10 @@
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35049033132",
-      "opponent_rank": 29,
-      "opponent_name": "Carter Bratcher",
-      "method": "TF 18-0 2:45"
+      "opponent_id": "34989085132",
+      "opponent_rank": 27,
+      "opponent_name": "Jayson Tejeda",
+      "method": "Fall 1:16"
     }
   },
   "match_list": [
@@ -45,9 +45,9 @@
       "opponent_id": "35049033132",
       "opponent_name": "Carter Bratcher",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 126,
-      "opponent_rank": 29,
+      "opponent_rank": 25,
       "weight_class": "132",
       "result": "L",
       "method": "TF",
@@ -60,9 +60,9 @@
       "opponent_id": "34989085132",
       "opponent_name": "Jayson Tejeda",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 126,
-      "opponent_rank": 28,
+      "opponent_rank": 27,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -75,7 +75,7 @@
       "opponent_id": "35281671132",
       "opponent_name": "Benjamin Kale",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 132,
       "opponent_rank": 16,
       "weight_class": "132",
@@ -85,10 +85,5 @@
       "duration": "1:07",
       "event": "vs. Mt. Vernon"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  ]
 }

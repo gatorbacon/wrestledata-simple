@@ -3,13 +3,13 @@
   "name": "John Leide",
   "team": "St. Xavier",
   "team_slug": "st_xavier",
-  "team_rank": 22,
+  "team_rank": 18,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 144,
+  "current_rank": 137,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "0-1",
+    "overall": "2-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -17,21 +17,26 @@
     "pf7": 0.0,
     "pa7": 16.0,
     "pd7": -16.0,
-    "si_plus": 85.9,
-    "df_plus": 93.4,
-    "apr_plus": 93.2,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 87.1,
+    "df_plus": 98.8,
+    "apr_plus": 103.9,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35669387132",
+      "opponent_rank": 173,
+      "opponent_name": "Kody Kao",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "35688368132",
       "opponent_rank": 3,
@@ -42,11 +47,26 @@
   "match_list": [
     {
       "date": "2025-12-20",
+      "opponent_id": "35669387132",
+      "opponent_name": "Kody Kao",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 120,
+      "opponent_rank": 173,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "35688368132",
       "opponent_name": "Peyton Vowels",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 106,
-      "opponent_weight": 132,
+      "opponent_team_rank": 108,
+      "opponent_weight": 126,
       "opponent_rank": 3,
       "weight_class": "132",
       "result": "L",
@@ -69,6 +89,32 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Doss"
+    }
+  ],
+  "career": {
+    "career_id": "career_002641",
+    "canonical_name": "John Leide",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "St. Xavier",
+      "record": "2-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "St. Xavier",
+      "record": "11-9",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

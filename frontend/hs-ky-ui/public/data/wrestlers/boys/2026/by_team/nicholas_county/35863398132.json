@@ -4,22 +4,22 @@
   "team": "Nicholas County",
   "team_slug": "nicholas_county",
   "team_rank": null,
-  "weight_class": 144,
+  "weight_class": 150,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 106.1,
+    "df_plus": 102.0,
+    "apr_plus": 103.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35103664132",
-      "opponent_rank": 108,
+      "opponent_rank": 111,
       "opponent_name": "Patrick Oliver",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "36019587132",
-      "opponent_rank": 33,
+      "opponent_rank": 32,
       "opponent_name": "Carter Stewart",
       "method": "Fall 1:39"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "36019587132",
       "opponent_name": "Carter Stewart",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 144,
-      "opponent_rank": 33,
+      "opponent_rank": 32,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -65,15 +65,30 @@
       "opponent_id": "35103664132",
       "opponent_name": "Patrick Oliver",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 150,
-      "opponent_rank": 108,
+      "opponent_rank": 111,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Fallen Heroes"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35752784132",
+      "opponent_name": "James Morris",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 144,
+      "opponent_rank": 1,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
     }
   ]
 }

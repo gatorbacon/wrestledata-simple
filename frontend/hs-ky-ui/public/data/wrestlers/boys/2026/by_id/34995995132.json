@@ -3,23 +3,23 @@
   "name": "Christian Byrd",
   "team": "Bell County",
   "team_slug": "bell_county",
-  "team_rank": 56,
+  "team_rank": 61,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 171,
+  "current_rank": 158,
   "record": {
-    "overall": "3-6",
-    "vs_ranked": "1-6",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "3-7",
+    "vs_ranked": "1-7",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 95.5,
+    "pf7": 1.0,
+    "pa7": 18.0,
+    "pd7": -17.0,
+    "si_plus": 88.5,
+    "df_plus": 92.7,
+    "apr_plus": 93.8,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
@@ -28,33 +28,48 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_losses": 7,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35421309132",
-      "opponent_rank": 190,
+      "opponent_rank": 189,
       "opponent_name": "Oliver Spurlock",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35908853132",
-      "opponent_rank": 168,
+      "opponent_rank": 155,
       "opponent_name": "Jack Madden",
       "method": "M. For."
     }
   },
   "match_list": [
     {
-      "date": "2026-01-03",
-      "opponent_id": "35421309132",
-      "opponent_name": "Oliver Spurlock",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": 138,
-      "opponent_weight": 150,
-      "opponent_rank": 190,
+      "date": "2026-01-10",
+      "opponent_id": "35368120132",
+      "opponent_name": "Jared Cornell",
+      "opponent_team": "Somerset",
+      "opponent_team_rank": 31,
+      "opponent_weight": 157,
+      "opponent_rank": 9,
       "weight_class": "157",
-      "result": "W",
+      "result": "L",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "0:00",
+      "event": "vs. Somerset"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35206773132",
+      "opponent_name": "Ethan Howard",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 150,
+      "opponent_rank": 117,
+      "weight_class": "157",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -62,14 +77,14 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "35206773132",
-      "opponent_name": "Ethan Howard",
-      "opponent_team": "Adair County",
-      "opponent_team_rank": 50,
-      "opponent_weight": 157,
-      "opponent_rank": 105,
+      "opponent_id": "35421309132",
+      "opponent_name": "Oliver Spurlock",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 150,
+      "opponent_rank": 189,
       "weight_class": "157",
-      "result": "L",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -80,9 +95,9 @@
       "opponent_id": "35908853132",
       "opponent_name": "Jack Madden",
       "opponent_team": "Russell",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 122,
       "opponent_weight": 157,
-      "opponent_rank": 168,
+      "opponent_rank": 155,
       "weight_class": "157",
       "result": "L",
       "method": "MFF",
@@ -95,7 +110,7 @@
       "opponent_id": "35144525132",
       "opponent_name": "Jayden Rojas",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 157,
       "opponent_rank": 65,
       "weight_class": "157",
@@ -125,9 +140,9 @@
       "opponent_id": "35013061132",
       "opponent_name": "Landon Baker",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
-      "opponent_weight": 144,
-      "opponent_rank": 61,
+      "opponent_team_rank": 115,
+      "opponent_weight": 138,
+      "opponent_rank": 70,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -170,9 +185,9 @@
       "opponent_id": "35599162132",
       "opponent_name": "Nate Stephens",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 165,
-      "opponent_rank": 35,
+      "opponent_rank": 39,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -181,9 +196,30 @@
       "event": "vs. Mccreary Central"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  "career": {
+    "career_id": "career_000162",
+    "canonical_name": "Christian Byrd",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Bell County",
+      "record": "4-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Bell County",
+      "record": "1-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

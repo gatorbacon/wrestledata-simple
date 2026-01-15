@@ -3,13 +3,13 @@
   "name": "Ryan Schaefer",
   "team": "Owensboro",
   "team_slug": "owensboro",
-  "team_rank": 38,
+  "team_rank": 37,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 126,
+  "current_rank": 125,
   "record": {
-    "overall": "4-5",
-    "vs_ranked": "2-4",
+    "overall": "4-7",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 16.0,
     "pa7": 1.0,
     "pd7": 15.0,
-    "si_plus": 110.9,
-    "df_plus": 114.5,
-    "apr_plus": 98.8,
+    "si_plus": 111.5,
+    "df_plus": 114.9,
+    "apr_plus": 96.7,
     "pin_rate": 0.25,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -28,7 +28,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -38,40 +38,55 @@
       "method": "Fall 0:53"
     },
     "worst_loss": {
-      "opponent_id": "35137018132",
-      "opponent_rank": 175,
-      "opponent_name": "Blake Donnelly",
-      "method": "Fall 2:52"
+      "opponent_id": "35049798132",
+      "opponent_rank": 86,
+      "opponent_name": "Landon Mongold",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34993282132",
+      "opponent_name": "Parker Lowery",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 71,
+      "opponent_weight": 157,
+      "opponent_rank": 74,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35049798132",
+      "opponent_name": "Landon Mongold",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 25,
+      "opponent_weight": 165,
+      "opponent_rank": 86,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro Catholic"
+    },
     {
       "date": "2025-12-22",
       "opponent_id": "35233679132",
       "opponent_name": "Craig Bell",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 57,
       "opponent_weight": 165,
-      "opponent_rank": 155,
+      "opponent_rank": 149,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "16-1",
-      "duration": "0:00",
-      "event": "vs. Owensboro"
-    },
-    {
-      "date": "2025-12-22",
-      "opponent_id": "35567794132",
-      "opponent_name": "Kaiden Puckett",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 165,
-      "opponent_rank": 87,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
       "duration": "0:00",
       "event": "vs. Owensboro"
     },
@@ -91,11 +106,26 @@
       "event": "vs. Trinity (Whitesville)"
     },
     {
+      "date": "2025-12-22",
+      "opponent_id": "35567794132",
+      "opponent_name": "Kaiden Puckett",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35523865132",
       "opponent_name": "Cristian Gomez-Peterson",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
       "opponent_rank": 99,
       "weight_class": "165",
@@ -110,9 +140,9 @@
       "opponent_id": "34989056132",
       "opponent_name": "Joseph Whaley",
       "opponent_team": "North Hardin",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 51,
       "opponent_weight": 165,
-      "opponent_rank": 13,
+      "opponent_rank": 31,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -125,9 +155,9 @@
       "opponent_id": "35137018132",
       "opponent_name": "Blake Donnelly",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 175,
-      "opponent_rank": 175,
+      "opponent_rank": 54,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -170,9 +200,9 @@
       "opponent_id": "35207986132",
       "opponent_name": "Ethan Peckenpaugh",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 175,
-      "opponent_rank": 33,
+      "opponent_rank": 15,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -181,9 +211,30 @@
       "event": "vs. Owensboro"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  "career": {
+    "career_id": "career_002026",
+    "canonical_name": "Ryan Schaefer",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Owensboro",
+      "record": "4-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Owensboro",
+      "record": "8-12",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

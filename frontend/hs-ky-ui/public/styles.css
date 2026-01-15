@@ -1661,7 +1661,20 @@ a:hover {
 
 .section {
   margin-top: 0;
-  margin-bottom: 3em;
+  margin-bottom: 0;
+}
+
+/* Add spacing between newspaper-style sections */
+#career-summary-section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#season-stats-section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* MV Context section - keep visible for divider, but content is empty */
@@ -1878,13 +1891,69 @@ a:hover {
   margin-bottom: 0;
 }
 
-/* Section headers - larger, bolder for hierarchy */
+/* Section headers - newspaper style (smaller, editorial) */
 .section h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1em;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  margin-top: 0;
   color: var(--text);
-  }
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.875rem;
+}
+
+/* Newspaper-style section titles */
+.section-title-newspaper {
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: var(--text) !important;
+  margin-bottom: 16px !important;
+  margin-top: 0 !important;
+}
+
+/* Career Summary header - more prominent as historical anchor */
+.section-title-career-summary {
+  font-size: 0.875rem !important;
+  font-weight: 700 !important; /* Heavier than other headers */
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: var(--text-main) !important; /* Darker color */
+  margin-bottom: 8px !important;
+  margin-top: 0 !important;
+}
+
+/* Career Summary header rule - thin line under header */
+.career-header-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0 0 12px 0;
+  height: 0;
+  background: none;
+  opacity: 0.6;
+}
+
+/* Season Stats header - emphasized as current chapter */
+.section-title-season-stats {
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: var(--text) !important;
+  margin-bottom: 4px !important;
+  margin-top: 0 !important;
+}
+
+/* Season Stats subtitle - muted, reinforces importance */
+.season-stats-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-bottom: 12px;
+  font-style: italic;
+}
   
   .summary-cards {
     display: grid;
@@ -1940,10 +2009,51 @@ a:hover {
   .table-wrapper {
   overflow: visible;
   border: 1px solid var(--border);
-  border-radius: var(--r-md);
+  border-radius: 0;
   background: var(--bg);
   /* Flatter tables - less heavy borders */
   box-shadow: none;
+  padding: 0;
+}
+
+/* Career Summary table - ledger style, no card */
+.career-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+  border: none;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.career-summary-table thead th {
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+  border-top: none;
+}
+
+.career-summary-table tbody td {
+  padding: 8px 12px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border-light);
+  border-left: none;
+  border-right: none;
+  font-size: 0.875rem;
+}
+
+.career-summary-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.career-summary-table tbody tr:hover {
+  background: transparent;
 }
 
 /* Ensure no horizontal scrolling on tables */
@@ -2584,6 +2694,48 @@ th.tooltip-trigger .tooltip {
    WRESTLER PROFILE - MATCH HISTORY (Quiet)
    ======================================== */
 
+/* Match History - ONLY boxed section, softened and denser */
+.section--match-history {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light); /* Lighter border for reduced contrast */
+  border-radius: 0;
+  padding: var(--pad-md); /* Reduced from var(--pad-lg) for density */
+  margin-top: 2em;
+  margin-bottom: 2em;
+  box-shadow: none;
+}
+
+.section--match-history h2 {
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 12px !important; /* Reduced spacing */
+  color: var(--text) !important;
+}
+
+/* Match History table - denser rows, consistent header styling */
+#match-table thead th {
+  font-size: 0.75rem; /* Match Career Summary header size */
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 6px 10px; /* Reduced padding for density */
+  border-bottom: 1px solid var(--border-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#match-table tbody td {
+  padding: 5px 10px; /* Reduced from 6px for density */
+  color: var(--text);
+  font-size: 0.875rem;
+}
+
+.section--match-history .table-wrapper {
+  border: none;
+  background: transparent;
+}
+
 #match-table {
   font-size: 0.875rem;
 }
@@ -2607,6 +2759,13 @@ th.tooltip-trigger .tooltip {
 
 #match-table tbody tr:hover {
   background: var(--panel-2);
+}
+
+/* Out-of-state badge: light grey background for "N/A" badge */
+.rank-badge.out-of-state-badge {
+  background: #F5F5F5;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
 }
 
 /* ========================================
@@ -3146,6 +3305,72 @@ th.tooltip-trigger .tooltip {
   height: 1px;
   background: rgba(255,255,255,0.06);
   margin-bottom: 20px;
+}
+
+/* Newspaper-style horizontal rules between sections */
+.section-rule {
+  border: none;
+  border-top: 1px solid var(--border-light);
+  margin: 2em 0;
+  height: 0;
+  background: none;
+  opacity: 0.5;
+}
+
+/* Remove card styling from Career Summary and Season Stats sections */
+#career-summary-section,
+#season-stats-section {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+
+/* Season Stats - newspaper style, no card */
+#season-stats-section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#season-stats-section .quick-stats {
+  margin-top: 12px;
+}
+
+#season-stats-section .quick-stat {
+  font-size: 0.875rem;
+}
+
+#season-stats-section .quick-stat-label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+#season-stats-section .quick-stat-value {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Newspaper-style stat labels and values */
+.stat-label-newspaper {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.stat-value-newspaper {
+  font-weight: 700; /* Increased from 600 to emphasize current season importance */
+  font-size: 1rem; /* Increased from 0.9375rem to make values more prominent */
+  color: var(--text-main); /* Darker for emphasis */
+  font-variant-numeric: tabular-nums;
+}
+
+/* Stats grid for Season Stats */
+.stats-grid-newspaper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 20px;
+  margin-top: 12px;
 }
 
 /* MV Section (no card) */

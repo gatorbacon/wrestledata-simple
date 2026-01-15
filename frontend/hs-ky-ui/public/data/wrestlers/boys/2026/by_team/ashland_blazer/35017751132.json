@@ -3,43 +3,138 @@
   "name": "Harrison Groves",
   "team": "Ashland Blazer",
   "team_slug": "ashland_blazer",
-  "team_rank": 52,
-  "weight_class": 138,
+  "team_rank": 41,
+  "weight_class": 132,
   "year": 2026,
-  "current_rank": 205,
+  "current_rank": 184,
   "record": {
-    "overall": "5-5",
-    "vs_ranked": "0-2",
+    "overall": "8-8",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 1.0,
     "pa7": 16.0,
     "pd7": -15.0,
-    "si_plus": 88.9,
-    "df_plus": 91.3,
-    "apr_plus": 98.1,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "si_plus": 88.1,
+    "df_plus": 90.8,
+    "apr_plus": 100.9,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35401453132",
+      "opponent_rank": 190,
+      "opponent_name": "Brady Baker",
+      "method": "Fall 1:51"
+    },
     "worst_loss": {
-      "opponent_id": "34993518132",
-      "opponent_rank": 41,
-      "opponent_name": "Brayden Willingham",
-      "method": "TF 16-1 0:00"
+      "opponent_id": "35013062132",
+      "opponent_rank": 43,
+      "opponent_name": "Ezekiel Holbrook",
+      "method": "Fall 3:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "37432425132",
+      "opponent_name": "Knox Woodman",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 132,
+      "opponent_rank": 191,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:21",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35401453132",
+      "opponent_name": "Brady Baker",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": 101,
+      "opponent_weight": 132,
+      "opponent_rank": 190,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:51",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35013062132",
+      "opponent_name": "Ezekiel Holbrook",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 115,
+      "opponent_weight": 132,
+      "opponent_rank": 43,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35051531132",
+      "opponent_name": "Bryer Rogers",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 132,
+      "opponent_rank": 40,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:14",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. East Carter"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35850444132",
+      "opponent_name": "Bentley Brown",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 132,
+      "opponent_rank": 11,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "vs. Boyd County"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -162,25 +257,10 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "34993518132",
-      "opponent_name": "Brayden Willingham",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
-      "opponent_weight": 144,
-      "opponent_rank": 41,
-      "weight_class": "144",
-      "result": "L",
-      "method": "TF",
-      "score": "16-1",
-      "duration": "0:00",
-      "event": "Ashland Invitational Tournament"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35850452132",
       "opponent_name": "Jace Bowling",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 144,
       "opponent_rank": 24,
       "weight_class": "144",
@@ -189,6 +269,47 @@
       "score": null,
       "duration": "1:16",
       "event": "Ashland Invitational Tournament"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34993518132",
+      "opponent_name": "Brayden Willingham",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 125,
+      "opponent_weight": 144,
+      "opponent_rank": 36,
+      "weight_class": "144",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "Ashland Invitational Tournament"
+    }
+  ],
+  "career": {
+    "career_id": "career_000060",
+    "canonical_name": "Harrison Groves",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Ashland Blazer",
+      "record": "11-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "Ashland Blazer",
+      "record": "20-13",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

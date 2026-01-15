@@ -3,12 +3,12 @@
   "name": "Aiden Groves",
   "team": "Caldwell County",
   "team_slug": "caldwell_county",
-  "team_rank": 62,
+  "team_rank": 66,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 191,
+  "current_rank": 184,
   "record": {
-    "overall": "1-2",
+    "overall": "1-3",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 84.3,
+    "df_plus": 102.0,
+    "apr_plus": 83.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -35,6 +35,21 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35119952132",
+      "opponent_name": "Zamarion Gentry",
+      "opponent_team": "Rossview High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:19",
+      "event": "vs. Rossview High School"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35124367132",
@@ -79,6 +94,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Goreville"
+    }
+  ],
+  "career": {
+    "career_id": "career_005260",
+    "canonical_name": "Aiden Groves",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Caldwell County",
+      "record": "1-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

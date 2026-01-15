@@ -3,23 +3,23 @@
   "name": "Daniel Martinez",
   "team": "Bryan Station",
   "team_slug": "bryan_station",
-  "team_rank": 59,
+  "team_rank": 42,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 69,
+  "current_rank": 85,
   "record": {
-    "overall": "3-2",
-    "vs_ranked": "3-2",
+    "overall": "3-3",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 9.0,
-    "pa7": 4.0,
-    "pd7": 5.0,
-    "si_plus": 100.0,
-    "df_plus": 110.3,
-    "apr_plus": 91.1,
+    "pf7": 6.0,
+    "pa7": 8.0,
+    "pd7": -2.0,
+    "si_plus": 94.5,
+    "df_plus": 102.5,
+    "apr_plus": 91.3,
     "pin_rate": 0.333,
     "bonus_rate": 0.667,
     "majors": 1,
@@ -28,23 +28,39 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35033121132",
-      "opponent_rank": 80,
+      "opponent_rank": 98,
       "opponent_name": "Mohammad Al-Hassen",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "34993790132",
-      "opponent_rank": 51,
-      "opponent_name": "Keaton Ward",
-      "method": "Fall 0:00"
+      "opponent_id": "35002885132",
+      "opponent_rank": 55,
+      "opponent_name": "Keshawn Dixon",
+      "method": "Fall 1:21"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35281177132",
+      "opponent_name": "Charles Farley",
+      "opponent_team": "Bryan Station",
+      "opponent_team_rank": 42,
+      "opponent_weight": 190,
+      "opponent_rank": 43,
+      "weight_class": "190",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -4.32
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35284386132",
@@ -52,46 +68,46 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 190,
-      "opponent_rank": 140,
+      "opponent_rank": 147,
       "weight_class": "190",
       "result": "W",
       "method": "MD",
       "score": "15-6",
       "duration": "7:00",
       "event": "Boys Woodford County Invitational",
-      "mv_impact": -0.27
+      "mv_impact": -0.43
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35002885132",
       "opponent_name": "Keshawn Dixon",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
-      "opponent_weight": 190,
-      "opponent_rank": 48,
+      "opponent_team_rank": 82,
+      "opponent_weight": 175,
+      "opponent_rank": 55,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:21",
       "event": "Boys Woodford County Invitational",
-      "mv_impact": -5.87
+      "mv_impact": -6.51
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35002900132",
       "opponent_name": "Karson McClellan",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 190,
-      "opponent_rank": 91,
+      "opponent_rank": 102,
       "weight_class": "190",
       "result": "W",
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
       "event": "Boys Woodford County Invitational",
-      "mv_impact": 0.61
+      "mv_impact": 1.3
     },
     {
       "date": "2025-12-23",
@@ -100,21 +116,21 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 190,
-      "opponent_rank": 80,
+      "opponent_rank": 98,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": 4.69
+      "mv_impact": 4.36
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34993790132",
       "opponent_name": "Keaton Ward",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 190,
       "opponent_rank": 51,
       "weight_class": "190",
@@ -123,12 +139,33 @@
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": -6.47
+      "mv_impact": -6.61
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_003534",
+    "canonical_name": "Daniel Martinez",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Bryan Station",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Bryan Station",
+      "record": "5-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,10 +3,10 @@
   "name": "Terrionce Wilson",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 27,
+  "team_rank": 29,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 48,
+  "current_rank": 49,
   "record": {
     "overall": "1-1",
     "vs_ranked": "1-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 101.7,
+    "df_plus": 102.0,
+    "apr_plus": 101.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35221015132",
-      "opponent_rank": 49,
+      "opponent_rank": 50,
       "opponent_name": "Easton Byars",
       "method": "Fall 4:28"
     },
@@ -50,23 +50,23 @@
       "opponent_id": "35221015132",
       "opponent_name": "Easton Byars",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 215,
-      "opponent_rank": 49,
+      "opponent_rank": 50,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:28",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 5.79
+      "mv_impact": 5.32
     },
     {
       "date": "2025-12-22",
       "opponent_id": "35281690132",
       "opponent_name": "Graysen Riley",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 215,
       "opponent_rank": 57,
       "weight_class": "215",
@@ -75,12 +75,33 @@
       "score": null,
       "duration": "1:48",
       "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": -6.24
+      "mv_impact": -6.75
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_003630",
+    "canonical_name": "Terrionce Wilson",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Paducah Tilghman",
+      "record": "1-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Paducah Tilghman",
+      "record": "1-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

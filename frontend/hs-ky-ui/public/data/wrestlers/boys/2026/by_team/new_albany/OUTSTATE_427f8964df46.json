@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,19 +27,39 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35084177132",
+      "opponent_rank": 77,
+      "opponent_name": "Brooks Abbott",
+      "method": "Inj. [time]"
+    },
     "worst_loss": {
       "opponent_id": "34988572132",
-      "opponent_rank": 61,
+      "opponent_rank": 64,
       "opponent_name": "Mason Masteller",
       "method": "Fall 2:00"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35084177132",
+      "opponent_name": "Brooks Abbott",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 32,
+      "opponent_weight": 106,
+      "opponent_rank": 77,
+      "weight_class": "106",
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "2025 New Albany JV Boys Christmas Tour."
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "34988572132",
@@ -47,7 +67,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 106,
-      "opponent_rank": 61,
+      "opponent_rank": 64,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",

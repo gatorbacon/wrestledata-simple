@@ -3,56 +3,71 @@
   "name": "Ethan Curtis",
   "team": "Christian Academy-Louisville",
   "team_slug": "christian_academylouisville",
-  "team_rank": 66,
+  "team_rank": 26,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 75,
+  "current_rank": 77,
   "record": {
-    "overall": "4-2",
-    "vs_ranked": "3-2",
+    "overall": "5-3",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 104.2,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "df_plus": 102.0,
+    "apr_plus": 104.4,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35012796132",
-      "opponent_rank": 112,
+      "opponent_rank": 107,
       "opponent_name": "Devontay Cox",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35049061132",
-      "opponent_rank": 70,
+      "opponent_rank": 72,
       "opponent_name": "Idris Qamar",
       "method": "Fall 2:21"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "34993547132",
+      "opponent_name": "Joseph Habimana",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 157,
+      "opponent_rank": 12,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35007896132",
       "opponent_name": "Brentley Hilton",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 157,
-      "opponent_rank": 69,
+      "opponent_rank": 71,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -80,9 +95,9 @@
       "opponent_id": "35049061132",
       "opponent_name": "Idris Qamar",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 157,
-      "opponent_rank": 70,
+      "opponent_rank": 72,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -92,12 +107,27 @@
     },
     {
       "date": "2025-12-23",
+      "opponent_id": "35668081132",
+      "opponent_name": "Micah Toogood",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 144,
+      "opponent_rank": 163,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
+      "date": "2025-12-23",
       "opponent_id": "35012796132",
       "opponent_name": "Devontay Cox",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 157,
-      "opponent_rank": 112,
+      "opponent_rank": 107,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -108,11 +138,11 @@
     {
       "date": "2025-12-23",
       "opponent_id": "35700482132",
-      "opponent_name": "Braylen Hiner",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 157,
-      "opponent_rank": 121,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -125,15 +155,32 @@
       "opponent_id": "35012796132",
       "opponent_name": "Devontay Cox",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 157,
-      "opponent_rank": 112,
+      "opponent_rank": 107,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Shawnee"
+    }
+  ],
+  "career": {
+    "career_id": "career_004953",
+    "canonical_name": "Ethan Curtis",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Christian Academy-Louisville",
+      "record": "7-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

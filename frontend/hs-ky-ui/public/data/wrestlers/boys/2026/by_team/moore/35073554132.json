@@ -3,13 +3,13 @@
   "name": "Chandon Dudley",
   "team": "Moore",
   "team_slug": "moore",
-  "team_rank": 46,
+  "team_rank": 27,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 81,
+  "current_rank": 91,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "1-1",
+    "overall": "3-2",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,46 +18,56 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 103.5,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "df_plus": 102.0,
+    "apr_plus": 104.6,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 2,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35348090132",
-      "opponent_rank": 112,
+      "opponent_rank": 113,
       "opponent_name": "Cheikh Sow",
       "method": "Fall 0:00"
     },
-    "worst_loss": {
-      "opponent_id": "35364773132",
-      "opponent_rank": 38,
-      "opponent_name": "Carter Lawrence",
-      "method": "Fall 0:19"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
       "date": "2026-01-03",
-      "opponent_id": "35364773132",
-      "opponent_name": "Carter Lawrence",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
+      "opponent_id": "36647447132",
+      "opponent_name": "Joseph Limpus",
+      "opponent_team": "Lakota West High School",
+      "opponent_team_rank": null,
       "opponent_weight": 175,
-      "opponent_rank": 38,
+      "opponent_rank": null,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:19",
+      "duration": "1:05",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35364773132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
       "event": "Warhawk Classic"
     },
     {
@@ -82,13 +92,45 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 175,
-      "opponent_rank": 112,
+      "opponent_rank": 113,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "36089072132",
+      "opponent_name": "Jackson Cotoure",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": 136,
+      "opponent_weight": 175,
+      "opponent_rank": 173,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. West Jessamine"
+    }
+  ],
+  "career": {
+    "career_id": "career_005558",
+    "canonical_name": "Chandon Dudley",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Moore",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

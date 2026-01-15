@@ -3,13 +3,13 @@
   "name": "Jackson Osbourne",
   "team": "Owensboro Catholic",
   "team_slug": "owensboro_catholic",
-  "team_rank": 30,
+  "team_rank": 25,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 199,
+  "current_rank": 191,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "0-0",
+    "overall": "1-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 83.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,13 +28,48 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35674180132",
+      "opponent_rank": 144,
+      "opponent_name": "Brycen Mattingly",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34993298132",
+      "opponent_name": "Chan Aung",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 71,
+      "opponent_weight": 175,
+      "opponent_rank": 90,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro Catholic"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35674180132",
+      "opponent_name": "Brycen Mattingly",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 37,
+      "opponent_weight": 175,
+      "opponent_rank": 144,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro Catholic"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -51,9 +86,21 @@
       "event": "vs. Christian Academy-Louisville"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_005599",
+    "canonical_name": "Jackson Osbourne",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Owensboro Catholic",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

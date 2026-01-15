@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "3-0",
-    "vs_ranked": "3-0",
+    "overall": "4-0",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,36 +18,51 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 118.9,
-    "pin_rate": 1.0,
+    "df_plus": 102.0,
+    "apr_plus": 109.3,
+    "pin_rate": 0.75,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
+    "techs": 1,
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34989012132",
-      "opponent_rank": 60,
-      "opponent_name": "Duncan Helm",
-      "method": "Fall 0:29"
+      "opponent_id": "35221005132",
+      "opponent_rank": 42,
+      "opponent_name": "Haoyang WU",
+      "method": "TF 18-3 4:00"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-06",
+      "opponent_id": "35221005132",
+      "opponent_name": "Haoyang WU",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 66,
+      "opponent_weight": 126,
+      "opponent_rank": 42,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "4:00",
+      "event": "vs. Rossview High School"
+    },
+    {
       "date": "2025-11-26",
       "opponent_id": "35049056132",
       "opponent_name": "Harrison Davis",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 120,
-      "opponent_rank": 158,
+      "opponent_rank": 160,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -57,26 +72,11 @@
     },
     {
       "date": "2025-11-26",
-      "opponent_id": "35493556132",
-      "opponent_name": "Jace Hicks",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
-      "opponent_weight": 126,
-      "opponent_rank": 146,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:41",
-      "event": "vs. Rossview High School"
-    },
-    {
-      "date": "2025-11-26",
       "opponent_id": "34989012132",
       "opponent_name": "Duncan Helm",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
-      "opponent_weight": 126,
+      "opponent_team_rank": 36,
+      "opponent_weight": 120,
       "opponent_rank": 60,
       "weight_class": "126",
       "result": "W",
@@ -84,11 +84,21 @@
       "score": null,
       "duration": "0:29",
       "event": "vs. Rossview High School"
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "35493556132",
+      "opponent_name": "Jace Hicks",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 106,
+      "opponent_weight": 126,
+      "opponent_rank": 142,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
+      "event": "vs. Rossview High School"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  ]
 }

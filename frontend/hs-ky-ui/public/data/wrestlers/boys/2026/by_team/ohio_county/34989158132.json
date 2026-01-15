@@ -3,23 +3,23 @@
   "name": "John Santiago",
   "team": "Ohio County",
   "team_slug": "ohio_county",
-  "team_rank": 47,
+  "team_rank": 36,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 165,
+  "current_rank": 156,
   "record": {
-    "overall": "0-6",
-    "vs_ranked": "0-6",
-    "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "overall": "0-7",
+    "vs_ranked": "0-7",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 90.3,
+    "df_plus": 102.0,
+    "apr_plus": 90.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,24 +28,40 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 6,
+    "ranked_losses": 7,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35493541132",
-      "opponent_rank": 151,
+      "opponent_rank": 147,
       "opponent_name": "Blaise Wilson",
       "method": "Fall 1:14"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-08",
+      "opponent_id": "35049033132",
+      "opponent_name": "Carter Bratcher",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 89,
+      "opponent_weight": 126,
+      "opponent_rank": 25,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:55",
+      "event": "vs. Ohio County",
+      "mv_impact": -4.18
+    },
+    {
       "date": "2025-12-23",
       "opponent_id": "34988693132",
       "opponent_name": "Kian Bradley",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 132,
       "opponent_rank": 79,
       "weight_class": "132",
@@ -54,87 +70,104 @@
       "score": null,
       "duration": "0:22",
       "event": "Christian County Invitational",
-      "mv_impact": -6.77
+      "mv_impact": -6.75
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34993277132",
       "opponent_name": "Jackson Stoner",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 71,
       "opponent_weight": 132,
-      "opponent_rank": 11,
+      "opponent_rank": 10,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:31",
       "event": "Christian County Invitational",
-      "mv_impact": -2.52
+      "mv_impact": -2.67
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35281532132",
       "opponent_name": "Sudeys Hussein",
       "opponent_team": "Southern",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 54,
       "opponent_weight": 126,
-      "opponent_rank": 52,
+      "opponent_rank": 63,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:47",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -6.69
+      "mv_impact": -7.05
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35698215132",
       "opponent_name": "Collin Burk",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 118,
       "opponent_weight": 132,
-      "opponent_rank": 119,
+      "opponent_rank": 117,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:38",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -9.33
+      "mv_impact": -9.4
     },
     {
       "date": "2025-12-04",
       "opponent_id": "35192354132",
       "opponent_name": "Jason Harris",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
+      "opponent_team_rank": 102,
       "opponent_weight": 138,
-      "opponent_rank": 82,
+      "opponent_rank": 79,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:34",
       "event": "vs. Ohio County",
-      "mv_impact": -6.28
+      "mv_impact": -6.08
     },
     {
       "date": "2025-11-26",
       "opponent_id": "35493541132",
       "opponent_name": "Blaise Wilson",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 144,
-      "opponent_rank": 151,
+      "opponent_rank": 147,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
       "event": "vs. Ohio County",
-      "mv_impact": -11.31
+      "mv_impact": -11.2
+    }
+  ],
+  "career": {
+    "career_id": "career_005583",
+    "canonical_name": "John Santiago",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Ohio County",
+      "record": "0-7",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

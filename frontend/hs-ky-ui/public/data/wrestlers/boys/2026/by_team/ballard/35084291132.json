@@ -3,22 +3,22 @@
   "name": "Henry Love",
   "team": "Ballard",
   "team_slug": "ballard",
-  "team_rank": 28,
+  "team_rank": 32,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 166,
+  "current_rank": 157,
   "record": {
-    "overall": "1-6",
+    "overall": "1-8",
     "vs_ranked": "0-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
+    "df_plus": 102.0,
     "apr_plus": 88.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
@@ -34,20 +34,50 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34989849132",
-      "opponent_rank": 126,
+      "opponent_rank": 104,
       "opponent_name": "Donte Hayes",
       "method": "Fall 0:24"
     }
   },
   "match_list": [
     {
+      "date": "2025-12-27",
+      "opponent_id": "37026195132",
+      "opponent_name": "Beckham Coffman",
+      "opponent_team": "Floyd Central",
+      "opponent_team_rank": 81,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "2025 New Albany JV Boys Christmas Tour."
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "OUTSTATE_1e7bc1fb18c2",
+      "opponent_name": "Hudson Harman",
+      "opponent_team": "Columbus North",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "2025 New Albany JV Boys Christmas Tour."
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "34989849132",
       "opponent_name": "Donte Hayes",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 126,
-      "opponent_rank": 126,
+      "opponent_rank": 104,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -60,9 +90,9 @@
       "opponent_id": "35046227132",
       "opponent_name": "Elijah Blais",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 15,
       "opponent_weight": 126,
-      "opponent_rank": 19,
+      "opponent_rank": 40,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -75,7 +105,7 @@
       "opponent_id": "35172417132",
       "opponent_name": "Armani Kidd",
       "opponent_team": "Desales",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 72,
       "opponent_weight": 132,
       "opponent_rank": 78,
       "weight_class": "132",
@@ -90,7 +120,7 @@
       "opponent_id": "35090020132",
       "opponent_name": "Matthew Morgan",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 132,
       "opponent_rank": 66,
       "weight_class": "132",
@@ -105,9 +135,9 @@
       "opponent_id": "35522911132",
       "opponent_name": "Koltyn Eichberger",
       "opponent_team": "Seneca",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 53,
       "opponent_weight": 132,
-      "opponent_rank": 96,
+      "opponent_rank": 97,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -135,15 +165,32 @@
       "opponent_id": "35066867132",
       "opponent_name": "Kaden Warren",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 132,
-      "opponent_rank": 40,
+      "opponent_rank": 39,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Shawnee"
+    }
+  ],
+  "career": {
+    "career_id": "career_005194",
+    "canonical_name": "Henry Love",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Ballard",
+      "record": "1-8",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

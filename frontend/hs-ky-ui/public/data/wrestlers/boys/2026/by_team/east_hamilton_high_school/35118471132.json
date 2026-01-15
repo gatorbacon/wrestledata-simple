@@ -1,0 +1,74 @@
+{
+  "wrestler_id": "35118471132",
+  "name": "Cooper Bird",
+  "team": "East Hamilton High School",
+  "team_slug": "east_hamilton_high_school",
+  "team_rank": null,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 103.9,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35049033132",
+      "opponent_rank": 25,
+      "opponent_name": "Carter Bratcher",
+      "method": "M. For."
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35489176132",
+      "opponent_name": "Tanner Hayes",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": 33,
+      "opponent_weight": 126,
+      "opponent_rank": 156,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:32",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35049033132",
+      "opponent_name": "Carter Bratcher",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 89,
+      "opponent_weight": 126,
+      "opponent_rank": 25,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "2026 Commando Crush"
+    }
+  ]
+}

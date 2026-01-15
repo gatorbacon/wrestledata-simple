@@ -3,63 +3,139 @@
   "name": "Camilla Anaya",
   "team": "Henry Clay",
   "team_slug": "henry_clay",
-  "team_rank": 18,
+  "team_rank": 34,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 120,
+  "current_rank": 135,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "2-3",
+    "vs_ranked": "1-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 83.4,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pf7": 1.58,
+    "pa7": 12.49,
+    "pd7": -10.91,
+    "si_plus": 85.0,
+    "df_plus": 102.4,
+    "apr_plus": 89.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35045567132",
+      "opponent_rank": 168,
+      "opponent_name": "Kayden Bailey",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
-      "opponent_id": "35217315132",
-      "opponent_rank": 72,
-      "opponent_name": "Aaliyah Bronger",
-      "method": "Fall 1:37"
+      "opponent_id": "35040638132",
+      "opponent_rank": 112,
+      "opponent_name": "Logan Niece",
+      "method": "TF 18-2 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35225590132",
+      "opponent_name": "Hank Davis",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": 85,
+      "opponent_weight": 106,
+      "opponent_rank": 67,
+      "weight_class": "106",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "18:03",
+      "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35040638132",
+      "opponent_name": "Logan Niece",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 129,
+      "opponent_weight": 106,
+      "opponent_rank": 112,
+      "weight_class": "106",
+      "result": "L",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35045567132",
+      "opponent_name": "Kayden Bailey",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 17,
+      "opponent_weight": 106,
+      "opponent_rank": 168,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Madison Central"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35217315132",
       "opponent_name": "Aaliyah Bronger",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 106,
-      "opponent_rank": 72,
+      "opponent_rank": 80,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:37",
-      "event": "The Beast of the East",
-      "mv_impact": -8.08
+      "event": "The Beast of the East"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  "career": {
+    "career_id": "career_005444",
+    "canonical_name": "Camilla Anaya",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Henry Clay",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,13 +3,13 @@
   "name": "Case Simmons",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 27,
+  "team_rank": 29,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 2,
+  "current_rank": 3,
   "record": {
-    "overall": "15-1",
-    "vs_ranked": "2-0",
+    "overall": "17-1",
+    "vs_ranked": "4-0",
     "vs_top10": "1-0",
     "vs_top25": "2-0"
   },
@@ -17,23 +17,23 @@
     "pf7": 7.0,
     "pa7": 0.0,
     "pd7": 7.0,
-    "si_plus": 92.4,
-    "df_plus": 118.9,
-    "apr_plus": 108.9,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.8,
+    "si_plus": 97.6,
+    "df_plus": 119.1,
+    "apr_plus": 114.6,
+    "pin_rate": 0.706,
+    "bonus_rate": 0.824,
     "majors": 1,
     "techs": 1,
-    "pins": 10
+    "pins": 12
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35202495132",
-      "opponent_rank": 4,
+      "opponent_rank": 5,
       "opponent_name": "Mason Gipson",
       "method": "Dec 7-0"
     },
@@ -42,12 +42,42 @@
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "35284298132",
+      "opponent_name": "Jack Rawlings",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 79,
+      "opponent_weight": 120,
+      "opponent_rank": 26,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34993552132",
+      "opponent_name": "Logan Gevedon",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 120,
+      "opponent_rank": 27,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35202495132",
       "opponent_name": "Mason Gipson",
       "opponent_team": "South Oldham",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 120,
-      "opponent_rank": 4,
+      "opponent_rank": 5,
       "weight_class": "120",
       "result": "W",
       "method": "DEC",
@@ -60,9 +90,9 @@
       "opponent_id": "34989046132",
       "opponent_name": "Delmartarris Hill",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 29,
       "opponent_weight": 126,
-      "opponent_rank": 16,
+      "opponent_rank": 14,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -279,6 +309,41 @@
       "score": "11-1",
       "duration": "7:00",
       "event": "Blackhorse Invitational"
+    }
+  ],
+  "career": {
+    "career_id": "career_002056",
+    "canonical_name": "Case Simmons",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Paducah Tilghman",
+      "record": "17-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Paducah Tilghman",
+      "record": "40-6",
+      "regional_place": 1,
+      "state_place": 3
+    },
+    {
+      "season": 2024,
+      "grade": 7,
+      "team": "Paducah Tilghman",
+      "record": "24-10",
+      "regional_place": 2,
+      "state_place": null
     }
   ]
 }

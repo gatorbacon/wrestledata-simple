@@ -6,10 +6,10 @@
   "team_rank": 8,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 32,
+  "current_rank": 35,
   "record": {
-    "overall": "7-2",
-    "vs_ranked": "3-2",
+    "overall": "7-4",
+    "vs_ranked": "3-3",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 25.0,
     "pa7": 0.0,
     "pd7": 25.0,
-    "si_plus": 115.5,
-    "df_plus": 119.5,
-    "apr_plus": 99.6,
+    "si_plus": 116.4,
+    "df_plus": 120.8,
+    "apr_plus": 99.3,
     "pin_rate": 0.857,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35461669132",
-      "opponent_rank": 35,
-      "opponent_name": "Sophie Haught",
-      "method": "Fall 0:00"
+      "opponent_id": "35333363132",
+      "opponent_rank": 37,
+      "opponent_name": "Tahirah Massie",
+      "method": "TF 16-0 2:09"
     },
     "worst_loss": {
       "opponent_id": "35510918132",
-      "opponent_rank": 31,
+      "opponent_rank": 34,
       "opponent_name": "Maxine Rhinesmith",
       "method": "Fall 4:46"
     }
@@ -47,27 +47,12 @@
   "match_list": [
     {
       "date": "2026-01-03",
-      "opponent_id": "35510582132",
-      "opponent_name": "April Haisma",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 3,
-      "opponent_weight": 132,
-      "opponent_rank": 9,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:14",
-      "event": "Ladies Warhawk Classic"
-    },
-    {
-      "date": "2026-01-03",
       "opponent_id": "35510918132",
       "opponent_name": "Maxine Rhinesmith",
       "opponent_team": "John Hardin",
       "opponent_team_rank": 3,
       "opponent_weight": 132,
-      "opponent_rank": 31,
+      "opponent_rank": 34,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -77,12 +62,27 @@
     },
     {
       "date": "2026-01-03",
+      "opponent_id": "35510582132",
+      "opponent_name": "April Haisma",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 3,
+      "opponent_weight": 132,
+      "opponent_rank": 10,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:14",
+      "event": "Ladies Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35333363132",
       "opponent_name": "Tahirah Massie",
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 36,
+      "opponent_rank": 37,
       "weight_class": "132",
       "result": "W",
       "method": "TF",
@@ -92,12 +92,27 @@
     },
     {
       "date": "2025-12-29",
+      "opponent_id": "36861794132",
+      "opponent_name": "Elexis Herrington",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": 28,
+      "opponent_weight": 132,
+      "opponent_rank": 27,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ladies Woodford County Invitational"
+    },
+    {
+      "date": "2025-12-29",
       "opponent_id": "35334592132",
       "opponent_name": "Khloe Shanks",
       "opponent_team": "Montgomery County",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 47,
       "opponent_weight": 132,
-      "opponent_rank": 40,
+      "opponent_rank": 44,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -110,15 +125,30 @@
       "opponent_id": "35461669132",
       "opponent_name": "Sophie Haught",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 54,
       "opponent_weight": 132,
-      "opponent_rank": 35,
+      "opponent_rank": 40,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ladies Woodford County Invitational"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35448494132",
+      "opponent_name": "Cami Spencer",
+      "opponent_team": "Richlands",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Fallen Heros"
     },
     {
       "date": "2025-12-20",
@@ -184,6 +214,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.9545454545454546
+    "top33_bonus_ev_shrunk": 1.7734375
   }
 }

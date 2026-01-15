@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "34996425132",
+  "name": "Destiney Robinson",
+  "team": "Riverdale High School",
+  "team_slug": "riverdale_high_school",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 89.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35345899132",
+      "opponent_rank": 31,
+      "opponent_name": "Westinn Overbey",
+      "method": "MD 11-0"
+    },
+    "worst_loss": {
+      "opponent_id": "35345845132",
+      "opponent_rank": 26,
+      "opponent_name": "Aniyaree Wilson",
+      "method": "Fall 3:27"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35345899132",
+      "opponent_name": "Westinn Overbey",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 132,
+      "opponent_rank": 31,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "Rossview Lady Hawks Invitational"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35345845132",
+      "opponent_name": "Aniyaree Wilson",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 132,
+      "opponent_rank": 26,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:27",
+      "event": "Kirkwood Varsity Girls"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 1.0,
+    "top33_bonus_ev_shrunk": 1.6875
+  }
+}

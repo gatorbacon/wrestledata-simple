@@ -3,13 +3,13 @@
   "name": "Sharaf Muadinov",
   "team": "Male",
   "team_slug": "male",
-  "team_rank": 45,
+  "team_rank": 50,
   "weight_class": 144,
   "year": 2026,
   "current_rank": 67,
   "record": {
-    "overall": "4-0",
-    "vs_ranked": "3-0",
+    "overall": "5-0",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,16 +18,16 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 120.8,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "df_plus": 102.0,
+    "apr_plus": 119.3,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -41,11 +41,26 @@
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35160812132",
+      "opponent_name": "Mekhi Moorman",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 32,
+      "opponent_weight": 150,
+      "opponent_rank": 165,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35205074132",
       "opponent_name": "John Jerred Del Carmen",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 22,
       "opponent_weight": 138,
       "opponent_rank": 46,
       "weight_class": "150",
@@ -60,9 +75,9 @@
       "opponent_id": "35217574132",
       "opponent_name": "Gavin Meiller",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 144,
-      "opponent_rank": 106,
+      "opponent_rank": 101,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -75,9 +90,9 @@
       "opponent_id": "35407717132",
       "opponent_name": "Shane Espinoza",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 15,
       "opponent_weight": 144,
-      "opponent_rank": 125,
+      "opponent_rank": 118,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -101,9 +116,39 @@
       "event": "vs. Central"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_001562",
+    "canonical_name": "Sharaf Muadinov",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Male",
+      "record": "5-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Male",
+      "record": "9-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Male",
+      "record": "6-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

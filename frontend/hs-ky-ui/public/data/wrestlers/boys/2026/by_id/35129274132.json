@@ -3,10 +3,10 @@
   "name": "Addison Fletcher",
   "team": "Perry County Central",
   "team_slug": "perry_county_central",
-  "team_rank": 113,
+  "team_rank": 115,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 105,
+  "current_rank": 107,
   "record": {
     "overall": "5-1",
     "vs_ranked": "0-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 95.9,
+    "df_plus": 102.0,
+    "apr_plus": 95.4,
     "pin_rate": 0.2,
     "bonus_rate": 0.2,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35639986132",
-      "opponent_rank": 44,
+      "opponent_rank": 75,
       "opponent_name": "Dylan Clem",
       "method": "Fall 0:00"
     }
@@ -90,9 +90,9 @@
       "opponent_id": "35639986132",
       "opponent_name": "Dylan Clem",
       "opponent_team": "Harlan County",
-      "opponent_team_rank": 85,
+      "opponent_team_rank": 90,
       "opponent_weight": 175,
-      "opponent_rank": 44,
+      "opponent_rank": 75,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -131,9 +131,21 @@
       "event": "vs. Pulaski County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_005073",
+    "canonical_name": "Addison Fletcher",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Perry County Central",
+      "record": "6-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

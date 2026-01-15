@@ -3,23 +3,23 @@
   "name": "Ryan Nickelman",
   "team": "Highlands",
   "team_slug": "highlands",
-  "team_rank": 3,
+  "team_rank": 4,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 96,
+  "current_rank": 100,
   "record": {
-    "overall": "5-3",
-    "vs_ranked": "5-3",
-    "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "overall": "5-6",
+    "vs_ranked": "5-6",
+    "vs_top10": "0-2",
+    "vs_top25": "0-5"
   },
   "metrics": {
-    "pf7": 7.97,
-    "pa7": 13.85,
-    "pd7": -5.88,
-    "si_plus": 94.3,
-    "df_plus": 99.8,
-    "apr_plus": 98.8,
+    "pf7": 5.98,
+    "pa7": 14.23,
+    "pd7": -8.25,
+    "si_plus": 95.8,
+    "df_plus": 97.9,
+    "apr_plus": 97.0,
     "pin_rate": 0.6,
     "bonus_rate": 0.8,
     "majors": 0,
@@ -28,38 +28,86 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
-    "ranked_losses": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "34993533132",
-      "opponent_rank": 48,
-      "opponent_name": "Tucker Parks",
+      "opponent_id": "35635561132",
+      "opponent_rank": 54,
+      "opponent_name": "Max Worthington",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35281279132",
-      "opponent_rank": 70,
+      "opponent_rank": 73,
       "opponent_name": "Gracen Boatman",
       "method": "TF 27-9 5:59"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35488260132",
+      "opponent_name": "Emilio Rodriguez",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 44,
+      "opponent_weight": 120,
+      "opponent_rank": 23,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "0:00",
+      "event": "vs. Highlands",
+      "mv_impact": -2.59
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34993739132",
+      "opponent_name": "Jackson Wells",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 120,
+      "opponent_rank": 1,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Highlands",
+      "mv_impact": -2.22
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35688292132",
+      "opponent_name": "Jett Stull",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 120,
+      "opponent_rank": 12,
+      "weight_class": "120",
+      "result": "L",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "Great Crossing Individual Tournament",
+      "mv_impact": -1.53
+    },
+    {
       "date": "2025-12-27",
       "opponent_id": "35035544132",
       "opponent_name": "Cole Young",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 120,
-      "opponent_rank": 20,
+      "opponent_rank": 24,
       "weight_class": "120",
       "result": "L",
       "method": "SV-1",
       "score": "4-3",
       "duration": "8:15",
       "event": "NKAC",
-      "mv_impact": -2.83
+      "mv_impact": -3.09
     },
     {
       "date": "2025-12-27",
@@ -68,55 +116,55 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 120,
-      "opponent_rank": 3,
+      "opponent_rank": 4,
       "weight_class": "120",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "3:54",
       "event": "NKAC",
-      "mv_impact": -1.43
+      "mv_impact": -1.06
     },
     {
       "date": "2025-12-27",
       "opponent_id": "35281279132",
       "opponent_name": "Gracen Boatman",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 126,
-      "opponent_rank": 70,
+      "opponent_rank": 73,
       "weight_class": "120",
       "result": "L",
       "method": "TF",
       "score": "27-9",
       "duration": "5:59",
       "event": "NKAC",
-      "mv_impact": -6.41
+      "mv_impact": -6.59
     },
     {
       "date": "2025-12-27",
       "opponent_id": "35225209132",
       "opponent_name": "Micheal Berry",
       "opponent_team": "Scott",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 124,
       "opponent_weight": 120,
-      "opponent_rank": 97,
+      "opponent_rank": 101,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:56",
       "event": "NKAC",
-      "mv_impact": 3.0
+      "mv_impact": 2.96
     },
     {
       "date": "2025-12-27",
       "opponent_id": "35783123132",
       "opponent_name": "Preston Detzel",
       "opponent_team": "Holy Cross (Covington)",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 94,
       "opponent_weight": 120,
-      "opponent_rank": 180,
+      "opponent_rank": 166,
       "weight_class": "120",
       "result": "W",
       "method": "MFF",
@@ -129,53 +177,83 @@
       "opponent_id": "35635561132",
       "opponent_name": "Max Worthington",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 88,
       "opponent_weight": 126,
-      "opponent_rank": 57,
+      "opponent_rank": 54,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Highlands",
-      "mv_impact": 6.55
+      "mv_impact": 5.78
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35237536132",
       "opponent_name": "Easton Stewart",
       "opponent_team": "East Jessamine",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 77,
       "opponent_weight": 126,
-      "opponent_rank": 110,
+      "opponent_rank": 78,
       "weight_class": "126",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": 2.2
+      "mv_impact": 3.16
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34993533132",
       "opponent_name": "Tucker Parks",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 126,
-      "opponent_rank": 48,
+      "opponent_rank": 59,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": 6.49
+      "mv_impact": 5.71
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_001223",
+    "canonical_name": "Ryan Nickelman",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Highlands",
+      "record": "5-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Highlands",
+      "record": "14-22",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Highlands",
+      "record": "2-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

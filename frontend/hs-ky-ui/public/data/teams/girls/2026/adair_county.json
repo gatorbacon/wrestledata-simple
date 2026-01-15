@@ -21,20 +21,38 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.601350Z",
+  "generated_at_utc": "2026-01-15T13:34:37.708264Z",
   "starters": {
     "114": {
       "weight": 114,
       "wrestler_id": "35471185132",
       "name": "Charisma Kunkel",
-      "current_rank": 58,
+      "current_rank": 59,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 5
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35471184132",
+      "name": "Keylin Bergin",
+      "current_rank": 54,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
@@ -43,9 +61,9 @@
     },
     "132": {
       "weight": 132,
-      "wrestler_id": "35471184132",
-      "name": "Keylin Bergin",
-      "current_rank": 76,
+      "wrestler_id": "35471179132",
+      "name": "Angela Mejia",
+      "current_rank": 57,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -63,25 +81,25 @@
       "weight": 138,
       "wrestler_id": "35471183132",
       "name": "Mackenzie Curry",
-      "current_rank": 52,
+      "current_rank": 51,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 5
       }
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35472429132",
       "name": "Chluey Acanto",
-      "current_rank": 86,
+      "current_rank": 80,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -99,11 +117,11 @@
       "weight": 185,
       "wrestler_id": "35471177132",
       "name": "Mika Jane Poff",
-      "current_rank": 40,
-      "xtp": 1.37,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 1.02,
+      "current_rank": 49,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -117,7 +135,7 @@
       "weight": 235,
       "wrestler_id": "35471182132",
       "name": "Destiny Snow",
-      "current_rank": 51,
+      "current_rank": 48,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -134,20 +152,11 @@
   },
   "remaining": [
     {
-      "weight": 138,
-      "wrestler_id": "35471179132",
-      "name": "Angela Mejia",
-      "wins": 2,
-      "losses": 4,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    {
       "weight": 185,
       "wrestler_id": "35471178132",
       "name": "Jade Antle",
       "wins": 1,
-      "losses": 4,
+      "losses": 6,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -163,30 +172,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 7,
-      "losses": 13
+      "wins": 12,
+      "losses": 26
     },
     "top33": {
       "wins": 0,
-      "losses": 10
+      "losses": 18
     },
     "top10": {
       "wins": 0,
-      "losses": 4
+      "losses": 8
     },
     "bonus_rate": {
-      "value": 0.571,
+      "value": 0.583,
       "rank": 104,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.571,
+      "value": 0.583,
       "rank": 102,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 76,
+      "rank": 67,
       "rank_scope": "league"
     }
   }

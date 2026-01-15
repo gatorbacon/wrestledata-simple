@@ -3,10 +3,10 @@
   "name": "Aiden Anderson",
   "team": "Great Crossing",
   "team_slug": "great_crossing",
-  "team_rank": 44,
+  "team_rank": 47,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 97,
+  "current_rank": 85,
   "record": {
     "overall": "5-6",
     "vs_ranked": "2-2",
@@ -17,9 +17,9 @@
     "pf7": 6.0,
     "pa7": 10.0,
     "pd7": -4.0,
-    "si_plus": 99.7,
-    "df_plus": 98.7,
-    "apr_plus": 104.8,
+    "si_plus": 99.6,
+    "df_plus": 98.5,
+    "apr_plus": 104.0,
     "pin_rate": 0.6,
     "bonus_rate": 0.6,
     "majors": 0,
@@ -32,14 +32,14 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "36093155132",
-      "opponent_rank": 106,
-      "opponent_name": "J`vion Tennal",
-      "method": "Fall 1:41"
+      "opponent_id": "35563506132",
+      "opponent_rank": 86,
+      "opponent_name": "Luke Glass",
+      "method": "Fall 0:55"
     },
     "worst_loss": {
       "opponent_id": "35081203132",
-      "opponent_rank": 23,
+      "opponent_rank": 24,
       "opponent_name": "Jackson Kincer",
       "method": "Dec 10-6"
     }
@@ -140,9 +140,9 @@
       "opponent_id": "36093155132",
       "opponent_name": "J`vion Tennal",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 190,
-      "opponent_rank": 106,
+      "opponent_rank": 113,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "34997715132",
       "opponent_name": "Dominic Padilla",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 215,
-      "opponent_rank": 21,
+      "opponent_rank": 23,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -170,9 +170,9 @@
       "opponent_id": "35081203132",
       "opponent_name": "Jackson Kincer",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 34,
       "opponent_weight": 215,
-      "opponent_rank": 23,
+      "opponent_rank": 24,
       "weight_class": "215",
       "result": "L",
       "method": "DEC",
@@ -185,9 +185,9 @@
       "opponent_id": "35563506132",
       "opponent_name": "Luke Glass",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 215,
-      "opponent_rank": 110,
+      "opponent_rank": 86,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -211,9 +211,39 @@
       "event": "vs. Thomas Nelson"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_001049",
+    "canonical_name": "Aiden Anderson",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Great Crossing",
+      "record": "5-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Great Crossing",
+      "record": "10-10",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Great Crossing",
+      "record": "0-0",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

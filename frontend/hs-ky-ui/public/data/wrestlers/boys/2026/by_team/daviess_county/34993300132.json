@@ -3,10 +3,10 @@
   "name": "Aie Hong",
   "team": "Daviess County",
   "team_slug": "daviess_county",
-  "team_rank": 68,
+  "team_rank": 71,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 52,
+  "current_rank": 61,
   "record": {
     "overall": "2-0",
     "vs_ranked": "2-0",
@@ -17,9 +17,9 @@
     "pf7": 14.5,
     "pa7": 3.0,
     "pd7": 11.5,
-    "si_plus": 104.7,
-    "df_plus": 108.6,
-    "apr_plus": 88.9,
+    "si_plus": 104.9,
+    "df_plus": 108.8,
+    "apr_plus": 86.2,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35033125132",
-      "opponent_rank": 77,
+      "opponent_rank": 83,
       "opponent_name": "Owen Young",
       "method": "TF 16-1 0:00"
     },
@@ -42,35 +42,52 @@
   "match_list": [
     {
       "date": "2025-11-29",
-      "opponent_id": "34999342132",
-      "opponent_name": "Benjamin Leslie",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 43,
-      "opponent_weight": 113,
-      "opponent_rank": 90,
-      "weight_class": "113",
-      "result": "W",
-      "method": "MD",
-      "score": "13-5",
-      "duration": "7:00",
-      "event": "Tommy Castle Classic",
-      "mv_impact": -0.29
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "35033125132",
       "opponent_name": "Owen Young",
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 106,
-      "opponent_rank": 77,
+      "opponent_rank": 83,
       "weight_class": "113",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": 3.87
+      "mv_impact": 3.15
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34999342132",
+      "opponent_name": "Benjamin Leslie",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 46,
+      "opponent_weight": 113,
+      "opponent_rank": 106,
+      "weight_class": "113",
+      "result": "W",
+      "method": "MD",
+      "score": "13-5",
+      "duration": "7:00",
+      "event": "Tommy Castle Classic",
+      "mv_impact": -0.43
+    }
+  ],
+  "career": {
+    "career_id": "career_004962",
+    "canonical_name": "Aie Hong",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Daviess County",
+      "record": "2-0",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

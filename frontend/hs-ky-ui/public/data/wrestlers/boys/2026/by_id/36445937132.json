@@ -6,81 +6,141 @@
   "team_rank": 131,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 77,
+  "current_rank": 69,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "3-2",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 105.7,
+    "df_plus": 102.0,
+    "apr_plus": 106.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35402555132",
-      "opponent_rank": 94,
-      "opponent_name": "Jaxon Lowe",
-      "method": "Fall 0:32"
+      "opponent_id": "35104595132",
+      "opponent_rank": 72,
+      "opponent_name": "Kean Minth",
+      "method": "Fall 2:44"
     },
     "worst_loss": {
-      "opponent_id": "35049806132",
-      "opponent_rank": 56,
-      "opponent_name": "Tristen French",
-      "method": "Fall 0:00"
+      "opponent_id": "35090028132",
+      "opponent_rank": 42,
+      "opponent_name": "Trenton Woodford",
+      "method": "Fall 0:57"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35284252132",
+      "opponent_name": "Eli Senn",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 79,
+      "opponent_weight": 285,
+      "opponent_rank": 160,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "2026 Lou City Wrestling",
+      "mv_impact": 1.69
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35090028132",
+      "opponent_name": "Trenton Woodford",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 80,
+      "opponent_weight": 285,
+      "opponent_rank": 42,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "2026 Lou City Wrestling",
+      "mv_impact": -4.73
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35104595132",
+      "opponent_name": "Kean Minth",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 285,
+      "opponent_rank": 72,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:44",
+      "event": "2026 Lou City Wrestling",
+      "mv_impact": 3.62
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35402555132",
       "opponent_name": "Jaxon Lowe",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 94,
+      "opponent_rank": 97,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:32",
       "event": "Boys Woodford County Invitational",
-      "mv_impact": 4.78
+      "mv_impact": 4.63
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35049806132",
       "opponent_name": "Tristen French",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 25,
       "opponent_weight": 285,
-      "opponent_rank": 56,
+      "opponent_rank": 23,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Boys Woodford County Invitational",
-      "mv_impact": -5.27
+      "mv_impact": -3.37
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_005129",
+    "canonical_name": "Giovany Ramirez",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Trinity (Louisville)",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

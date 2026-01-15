@@ -3,43 +3,63 @@
   "name": "De Mayiah Stephenson",
   "team": "Seneca",
   "team_slug": "seneca",
-  "team_rank": null,
+  "team_rank": 53,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 72,
+  "current_rank": 14,
   "record": {
-    "overall": "0-3",
-    "vs_ranked": "0-1",
+    "overall": "1-3",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 89.1,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 101.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35385141132",
+      "opponent_rank": 15,
+      "opponent_name": "Gaby Gonzalez",
+      "method": "Fall 3:20"
+    },
     "worst_loss": {
       "opponent_id": "35375761132",
-      "opponent_rank": 25,
+      "opponent_rank": 23,
       "opponent_name": "Cambri Parker",
       "method": "Fall 1:18"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35385141132",
+      "opponent_name": "Gaby Gonzalez",
+      "opponent_team": "Male",
+      "opponent_team_rank": 45,
+      "opponent_weight": 132,
+      "opponent_rank": 15,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:20",
+      "event": "Queen of the City Wrestling"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35375761132",
@@ -47,7 +67,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 25,
+      "opponent_rank": 23,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -87,8 +107,8 @@
     }
   ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1923076923076923
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.9047619047619047
   }
 }

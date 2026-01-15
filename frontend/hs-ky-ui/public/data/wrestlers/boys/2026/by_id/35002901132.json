@@ -3,12 +3,12 @@
   "name": "Jaxson Dernocoeur",
   "team": "Fort Campbell",
   "team_slug": "fort_campbell",
-  "team_rank": 76,
+  "team_rank": 82,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 188,
+  "current_rank": 195,
   "record": {
-    "overall": "0-4",
+    "overall": "0-5",
     "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 86.3,
+    "df_plus": 102.0,
+    "apr_plus": 85.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,12 +34,27 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35510421132",
-      "opponent_rank": 76,
+      "opponent_rank": 80,
       "opponent_name": "Braydon Springfield",
       "method": "Fall 3:35"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35210460132",
+      "opponent_name": "Terry Bowben",
+      "opponent_team": "East Nashville Magnet School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:47",
+      "event": "vs. East Nashville Magnet School"
+    },
     {
       "date": "2025-12-11",
       "opponent_id": "34979739132",
@@ -60,16 +75,15 @@
       "opponent_id": "35510421132",
       "opponent_name": "Braydon Springfield",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 285,
-      "opponent_rank": 76,
+      "opponent_rank": 80,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:35",
-      "event": "Coyote Classic Wrestling Invitational",
-      "mv_impact": -6.59
+      "event": "Coyote Classic Wrestling Invitational"
     },
     {
       "date": "2025-12-06",
@@ -93,19 +107,39 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 130,
       "opponent_weight": 285,
-      "opponent_rank": 74,
+      "opponent_rank": 78,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:56",
-      "event": "vs. Trigg County",
-      "mv_impact": -5.88
+      "event": "vs. Trigg County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_000922",
+    "canonical_name": "Jaxson Dernocoeur",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Fort Campbell",
+      "record": "0-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Fort Campbell",
+      "record": "5-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

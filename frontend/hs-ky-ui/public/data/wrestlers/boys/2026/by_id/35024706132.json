@@ -3,13 +3,13 @@
   "name": "Dillon Bowers",
   "team": "South Warren",
   "team_slug": "south_warren",
-  "team_rank": 126,
+  "team_rank": 38,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 188,
+  "current_rank": 162,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,17 +27,34 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "36503560132",
+      "opponent_rank": 170,
+      "opponent_name": "Trevon Covington",
+      "method": "DQ"
+    },
     "worst_loss": null
   },
-  "match_list": [],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  "match_list": [
+    {
+      "date": "2026-01-13",
+      "opponent_id": "36503560132",
+      "opponent_name": "Trevon Covington",
+      "opponent_team": "Russellville",
+      "opponent_team_rank": 123,
+      "opponent_weight": 157,
+      "opponent_rank": 170,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. South Warren",
+      "mv_impact": 3.17
+    }
+  ]
 }

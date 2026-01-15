@@ -3,159 +3,223 @@
   "name": "Jamison Dunn",
   "team": "Lexington Christian",
   "team_slug": "lexington_christian",
-  "team_rank": 99,
+  "team_rank": 35,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 72,
+  "current_rank": 13,
   "record": {
-    "overall": "6-3",
-    "vs_ranked": "6-3",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "9-4",
+    "vs_ranked": "9-4",
+    "vs_top10": "0-2",
+    "vs_top25": "1-3"
   },
   "metrics": {
-    "pf7": 5.0,
-    "pa7": 6.67,
-    "pd7": -1.67,
-    "si_plus": 93.7,
-    "df_plus": 106.5,
-    "apr_plus": 101.7,
+    "pf7": 6.5,
+    "pa7": 5.25,
+    "pd7": 1.25,
+    "si_plus": 95.7,
+    "df_plus": 108.7,
+    "apr_plus": 103.6,
     "pin_rate": 0.667,
-    "bonus_rate": 0.667,
-    "majors": 0,
+    "bonus_rate": 0.778,
+    "majors": 1,
     "techs": 0,
-    "pins": 4
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 3,
+    "ranked_wins": 9,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35001156132",
-      "opponent_rank": 78,
-      "opponent_name": "Zakkary Barzee",
-      "method": "Dec 9-7"
+      "opponent_id": "35007900132",
+      "opponent_rank": 16,
+      "opponent_name": "Justus Smith",
+      "method": "Fall 1:35"
     },
     "worst_loss": {
       "opponent_id": "35108874132",
-      "opponent_rank": 71,
+      "opponent_rank": 76,
       "opponent_name": "Landon Phelps",
       "method": "Fall 1:15"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35049808132",
+      "opponent_name": "Keegan French",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 25,
+      "opponent_weight": 285,
+      "opponent_rank": 107,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:19",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 3.95
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35007900132",
+      "opponent_name": "Justus Smith",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 285,
+      "opponent_rank": 16,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 9.73
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35205987132",
+      "opponent_name": "Samuel Horn",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 109,
+      "opponent_weight": 285,
+      "opponent_rank": 31,
+      "weight_class": "285",
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 6.86
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35226252132",
+      "opponent_name": "Austin Goodpaster",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 285,
+      "opponent_rank": 9,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:24",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -1.6
+    },
+    {
       "date": "2025-12-23",
       "opponent_id": "35281172132",
       "opponent_name": "Fernando Cruz",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 57,
+      "opponent_rank": 24,
       "weight_class": "285",
       "result": "L",
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
       "event": "Region 6 JV Region",
-      "mv_impact": -3.44
+      "mv_impact": -1.81
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35402555132",
       "opponent_name": "Jaxon Lowe",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 94,
+      "opponent_rank": 97,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": 4.78
+      "mv_impact": 4.63
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35521221132",
       "opponent_name": "Izayah Mason",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 103,
+      "opponent_rank": 111,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": 3.35
+      "mv_impact": 3.02
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35640456132",
       "opponent_name": "Lonnie Braunm",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 47,
       "opponent_weight": 285,
-      "opponent_rank": 108,
+      "opponent_rank": 117,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": 3.09
+      "mv_impact": 2.96
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34993793132",
       "opponent_name": "Logan Combs",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 285,
-      "opponent_rank": 80,
+      "opponent_rank": 83,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
       "event": "Region 6 JV Region",
-      "mv_impact": 2.63
+      "mv_impact": 2.92
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35108874132",
       "opponent_name": "Landon Phelps",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": 71,
+      "opponent_rank": 76,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:15",
       "event": "The Beast of the East",
-      "mv_impact": -7.21
+      "mv_impact": -7.67
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35001156132",
       "opponent_name": "Zakkary Barzee",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 285,
-      "opponent_rank": 78,
+      "opponent_rank": 81,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "9-7",
       "duration": "7:00",
       "event": "The Beast of the East",
-      "mv_impact": 2.22
+      "mv_impact": 1.86
     },
     {
       "date": "2025-12-06",
@@ -171,23 +235,58 @@
       "score": null,
       "duration": "0:39",
       "event": "The Beast of the East",
-      "mv_impact": -2.15
+      "mv_impact": -1.83
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35384046132",
       "opponent_name": "Nolan Glass",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": 147,
+      "opponent_rank": 156,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:26",
       "event": "The Beast of the East",
-      "mv_impact": 1.64
+      "mv_impact": 1.67
+    }
+  ],
+  "career": {
+    "career_id": "career_001490",
+    "canonical_name": "Jamison Dunn",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Lexington Christian",
+      "record": "9-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Lexington Christian",
+      "record": "22-14",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Lexington Christian",
+      "record": "4-5",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

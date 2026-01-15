@@ -3,12 +3,12 @@
   "name": "Liam Reed",
   "team": "Ballard",
   "team_slug": "ballard",
-  "team_rank": 28,
+  "team_rank": 32,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 156,
+  "current_rank": 150,
   "record": {
-    "overall": "0-4",
+    "overall": "0-5",
     "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 86.8,
+    "df_plus": 102.0,
+    "apr_plus": 85.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35144075132",
-      "opponent_rank": 142,
+      "opponent_rank": 138,
       "opponent_name": "Will Yurt",
       "method": "Fall 1:23"
     }
@@ -42,12 +42,27 @@
   "match_list": [
     {
       "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_669fc4eee8c2",
+      "opponent_name": "Wyatt Hargett",
+      "opponent_team": "Evansville F.j. Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "35144075132",
       "opponent_name": "Will Yurt",
       "opponent_team": "Desales",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 72,
       "opponent_weight": 165,
-      "opponent_rank": 142,
+      "opponent_rank": 138,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -75,9 +90,9 @@
       "opponent_id": "35565078132",
       "opponent_name": "Daniel Moore",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 165,
-      "opponent_rank": 130,
+      "opponent_rank": 128,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -90,9 +105,9 @@
       "opponent_id": "35135156132",
       "opponent_name": "zade alshabot",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 165,
-      "opponent_rank": 61,
+      "opponent_rank": 58,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -101,9 +116,21 @@
       "event": "vs. Fairdale"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  "career": {
+    "career_id": "career_004855",
+    "canonical_name": "Liam Reed",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Ballard",
+      "record": "0-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

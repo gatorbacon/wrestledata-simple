@@ -3,23 +3,23 @@
   "name": "Keyten Gregory",
   "team": "Logan County",
   "team_slug": "logan_county",
-  "team_rank": 100,
+  "team_rank": 102,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 83,
+  "current_rank": 80,
   "record": {
     "overall": "5-1",
     "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 108.1,
+    "df_plus": 102.0,
+    "apr_plus": 109.3,
     "pin_rate": 0.4,
     "bonus_rate": 0.4,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35007899132",
-      "opponent_rank": 183,
+      "opponent_rank": 185,
       "opponent_name": "Daniel Carpenter",
       "method": "Fall 1:18"
     },
     "worst_loss": {
       "opponent_id": "34989089132",
-      "opponent_rank": 29,
+      "opponent_rank": 23,
       "opponent_name": "Ayden Fechtner",
       "method": "Fall 0:44"
     }
@@ -65,9 +65,9 @@
       "opponent_id": "35007899132",
       "opponent_name": "Daniel Carpenter",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
-      "opponent_weight": 138,
-      "opponent_rank": 183,
+      "opponent_team_rank": 38,
+      "opponent_weight": 132,
+      "opponent_rank": 185,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "34989089132",
       "opponent_name": "Ayden Fechtner",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 132,
-      "opponent_rank": 29,
+      "opponent_rank": 23,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -136,9 +136,21 @@
       "event": "vs. Greenwood"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_005032",
+    "canonical_name": "Keyten Gregory",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Logan County",
+      "record": "5-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

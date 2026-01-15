@@ -3,13 +3,13 @@
   "name": "David Voelker",
   "team": "North Bullitt",
   "team_slug": "north_bullitt",
-  "team_rank": 109,
+  "team_rank": 111,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 118,
+  "current_rank": 87,
   "record": {
-    "overall": "2-4",
-    "vs_ranked": "2-4",
+    "overall": "4-4",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,129 +17,179 @@
     "pf7": 2.68,
     "pa7": 25.0,
     "pd7": -22.32,
-    "si_plus": 90.1,
-    "df_plus": 80.8,
-    "apr_plus": 95.4,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "si_plus": 89.3,
+    "df_plus": 79.9,
+    "apr_plus": 97.9,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35046254132",
-      "opponent_rank": 146,
-      "opponent_name": "Karamalah Ammar",
-      "method": "Fall 0:20"
+      "opponent_id": "34994787132",
+      "opponent_rank": 38,
+      "opponent_name": "John Sego",
+      "method": "Fall 2:18"
     },
     "worst_loss": {
       "opponent_id": "35563506132",
-      "opponent_rank": 110,
+      "opponent_rank": 86,
       "opponent_name": "Luke Glass",
       "method": "Fall 3:06"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-08",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34994787132",
+      "opponent_name": "John Sego",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 215,
+      "opponent_rank": 38,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:18",
+      "event": "vs. Spencer County"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35135386132",
       "opponent_name": "Chaz Tutt",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 215,
-      "opponent_rank": 74,
+      "opponent_rank": 82,
       "weight_class": "215",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "2:37",
-      "event": "King of the Bluegrass",
-      "mv_impact": -5.62
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35563506132",
       "opponent_name": "Luke Glass",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 215,
-      "opponent_rank": 110,
+      "opponent_rank": 86,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:06",
-      "event": "King of the Bluegrass",
-      "mv_impact": -8.92
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35317881132",
       "opponent_name": "Brent browning",
       "opponent_team": "Iroquois",
-      "opponent_team_rank": 92,
+      "opponent_team_rank": 96,
       "opponent_weight": 190,
-      "opponent_rank": 149,
+      "opponent_rank": 155,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "7:21",
-      "event": "vs. North Bullitt",
-      "mv_impact": 3.03
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35046254132",
       "opponent_name": "Karamalah Ammar",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 15,
       "opponent_weight": 215,
-      "opponent_rank": 146,
+      "opponent_rank": 145,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:20",
-      "event": "vs. North Bullitt",
-      "mv_impact": 1.16
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35051528132",
       "opponent_name": "Brandon Wiley",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 215,
-      "opponent_rank": 40,
+      "opponent_rank": 41,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "Screamin` Eagles Classic",
-      "mv_impact": -4.93
+      "event": "Screamin` Eagles Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35012795132",
       "opponent_name": "Brayden Miller",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 215,
-      "opponent_rank": 90,
+      "opponent_rank": 84,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "Screamin` Eagles Classic",
-      "mv_impact": -7.44
+      "event": "Screamin` Eagles Classic"
+    }
+  ],
+  "career": {
+    "career_id": "career_001879",
+    "canonical_name": "David Voelker",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "North Bullitt",
+      "record": "4-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "North Bullitt",
+      "record": "12-19",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

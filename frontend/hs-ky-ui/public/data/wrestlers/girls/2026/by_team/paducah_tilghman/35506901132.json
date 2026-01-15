@@ -3,12 +3,12 @@
   "name": "Finola Bowden",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 15,
+  "team_rank": 12,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 67,
+  "current_rank": 63,
   "record": {
-    "overall": "0-1",
+    "overall": "1-2",
     "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,14 +17,14 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 92.2,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 97.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -41,11 +41,41 @@
   },
   "match_list": [
     {
+      "date": "2026-01-02",
+      "opponent_id": "35545363132",
+      "opponent_name": "Alice Miller",
+      "opponent_team": "Marion (H.S.)",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:20",
+      "event": "Marion Wildcats Girls Invitational"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35271902132",
+      "opponent_name": "Aryana Speith",
+      "opponent_team": "Pinckneyville",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "Sister Slam"
+    },
+    {
       "date": "2025-12-12",
       "opponent_id": "35666995132",
       "opponent_name": "Tristin Caldwell",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 126,
       "opponent_rank": 32,
       "weight_class": "120",
@@ -53,8 +83,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:38",
-      "event": "Sister Slam",
-      "mv_impact": -5.17
+      "event": "Sister Slam"
     }
   ]
 }

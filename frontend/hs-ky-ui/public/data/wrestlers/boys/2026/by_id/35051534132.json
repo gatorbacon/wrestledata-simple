@@ -3,10 +3,10 @@
   "name": "Ephraim Upton",
   "team": "Woodford County",
   "team_slug": "woodford_county",
-  "team_rank": 40,
+  "team_rank": 55,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 72,
+  "current_rank": 75,
   "record": {
     "overall": "2-1",
     "vs_ranked": "2-1",
@@ -17,9 +17,9 @@
     "pf7": 3.0,
     "pa7": 9.0,
     "pd7": -6.0,
-    "si_plus": 92.5,
-    "df_plus": 108.5,
-    "apr_plus": 110.9,
+    "si_plus": 92.0,
+    "df_plus": 108.7,
+    "apr_plus": 110.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35317883132",
-      "opponent_rank": 73,
+      "opponent_rank": 88,
       "opponent_name": "Absire Suleiman",
       "method": "Fall 1:20"
     },
     "worst_loss": {
       "opponent_id": "35321121132",
-      "opponent_rank": 8,
+      "opponent_rank": 10,
       "opponent_name": "Lane Griffin",
       "method": "Dec 9-3"
     }
@@ -47,56 +47,68 @@
   "match_list": [
     {
       "date": "2025-11-29",
-      "opponent_id": "35317883132",
-      "opponent_name": "Absire Suleiman",
-      "opponent_team": "Iroquois",
-      "opponent_team_rank": 92,
-      "opponent_weight": 126,
-      "opponent_rank": 73,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:20",
-      "event": "Screamin` Eagles Classic",
-      "mv_impact": 4.41
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35321121132",
-      "opponent_name": "Lane Griffin",
-      "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
-      "opponent_weight": 126,
-      "opponent_rank": 8,
-      "weight_class": "126",
-      "result": "L",
-      "method": "DEC",
-      "score": "9-3",
-      "duration": "7:00",
-      "event": "Screamin` Eagles Classic",
-      "mv_impact": 1.34
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "35321405132",
       "opponent_name": "Jackson Gray",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
-      "opponent_weight": 132,
-      "opponent_rank": 121,
+      "opponent_team_rank": 111,
+      "opponent_weight": 120,
+      "opponent_rank": 175,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:00",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 1.68
+      "mv_impact": 3.69
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35317883132",
+      "opponent_name": "Absire Suleiman",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": 96,
+      "opponent_weight": 126,
+      "opponent_rank": 88,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 4.02
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35321121132",
+      "opponent_name": "Lane Griffin",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 111,
+      "opponent_weight": 126,
+      "opponent_rank": 10,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "Screamin` Eagles Classic",
+      "mv_impact": 1.09
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_005781",
+    "canonical_name": "Ephraim Upton",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Woodford County",
+      "record": "3-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

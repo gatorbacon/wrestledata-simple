@@ -1,15 +1,15 @@
 {
   "wrestler_id": "35115890132",
-  "name": "Benjamin Ramas",
+  "name": "Benjamin Ramos",
   "team": "Rossview High School",
   "team_slug": "rossview_high_school",
   "team_rank": null,
-  "weight_class": 126,
+  "weight_class": 120,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 83.6,
+    "df_plus": 102.0,
+    "apr_plus": 84.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -27,27 +27,42 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35493617132",
-      "opponent_rank": 118,
-      "opponent_name": "William Petersen",
-      "method": "Dec 7-4"
+      "opponent_id": "34988694132",
+      "opponent_rank": 79,
+      "opponent_name": "Hunter Jorgenson",
+      "method": "Dec 13-11"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "34988694132",
+      "opponent_name": "Hunter Jorgenson",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 43,
+      "opponent_weight": 120,
+      "opponent_rank": 79,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "13-11",
+      "duration": "7:00",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
       "date": "2025-11-26",
       "opponent_id": "35493617132",
       "opponent_name": "William Petersen",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 132,
-      "opponent_rank": 118,
+      "opponent_rank": 116,
       "weight_class": "126",
       "result": "W",
       "method": "DEC",

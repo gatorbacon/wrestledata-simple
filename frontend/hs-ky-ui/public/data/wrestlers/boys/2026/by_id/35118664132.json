@@ -3,13 +3,13 @@
   "name": "Awab Fadel",
   "team": "Boone County",
   "team_slug": "boone_county",
-  "team_rank": 7,
-  "weight_class": 138,
+  "team_rank": 6,
+  "weight_class": 144,
   "year": 2026,
-  "current_rank": 181,
+  "current_rank": 189,
   "record": {
-    "overall": "1-8",
-    "vs_ranked": "0-6",
+    "overall": "1-13",
+    "vs_ranked": "0-9",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 2.0,
     "pa7": 8.0,
     "pd7": -6.0,
-    "si_plus": 89.0,
+    "si_plus": 88.2,
     "df_plus": 104.7,
-    "apr_plus": 88.1,
+    "apr_plus": 87.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,108 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 6,
+    "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35488625132",
-      "opponent_rank": 124,
-      "opponent_name": "Levi Plummer",
-      "method": "Dec 8-2"
+      "opponent_id": "35528825132",
+      "opponent_rank": 158,
+      "opponent_name": "Zane Schwanenberger",
+      "method": "Fall 4:24"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35247375132",
+      "opponent_name": "Shawn Hardin",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": 105,
+      "opponent_weight": 138,
+      "opponent_rank": 126,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "vs. Mason County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:56",
+      "event": "vs. All-Star Team"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35205066132",
+      "opponent_name": "Jack Harrod",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 22,
+      "opponent_weight": 144,
+      "opponent_rank": 27,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:01",
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_530793e2a8e1",
+      "opponent_name": "Abner Higley",
+      "opponent_team": "Walnut Hills High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:24",
+      "event": "vs. Walnut Hills High School"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35528825132",
+      "opponent_name": "Zane Schwanenberger",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": 133,
+      "opponent_weight": 144,
+      "opponent_rank": 158,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:24",
+      "event": "vs. Walton-Verona"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35488625132",
+      "opponent_name": "Levi Plummer",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 44,
+      "opponent_weight": 132,
+      "opponent_rank": 121,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "2025 JV Ryle Raider Rumble"
+    },
     {
       "date": "2025-12-12",
       "opponent_id": "OUTSTATE_025529ac0094",
@@ -56,28 +146,13 @@
       "event": "2025 JV Ryle Raider Rumble"
     },
     {
-      "date": "2025-12-12",
-      "opponent_id": "35488625132",
-      "opponent_name": "Levi Plummer",
-      "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
-      "opponent_weight": 132,
-      "opponent_rank": 124,
-      "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-2",
-      "duration": "7:00",
-      "event": "2025 JV Ryle Raider Rumble"
-    },
-    {
       "date": "2025-12-06",
       "opponent_id": "35782900132",
       "opponent_name": "Wyatt Owens",
       "opponent_team": "Holy Cross (Covington)",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 94,
       "opponent_weight": 132,
-      "opponent_rank": 98,
+      "opponent_rank": 84,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -92,7 +167,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 132,
-      "opponent_rank": 5,
+      "opponent_rank": 4,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -105,9 +180,9 @@
       "opponent_id": "35045489132",
       "opponent_name": "MATT HARDING",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 17,
       "opponent_weight": 138,
-      "opponent_rank": 44,
+      "opponent_rank": 47,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -135,9 +210,9 @@
       "opponent_id": "35281510132",
       "opponent_name": "Eric Brown",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 132,
-      "opponent_rank": 46,
+      "opponent_rank": 45,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -152,7 +227,7 @@
       "opponent_team": "Cooper",
       "opponent_team_rank": 9,
       "opponent_weight": 132,
-      "opponent_rank": 30,
+      "opponent_rank": 27,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -176,9 +251,21 @@
       "event": "vs. Calvary Christian"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_005224",
+    "canonical_name": "Awab Fadel",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Boone County",
+      "record": "1-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

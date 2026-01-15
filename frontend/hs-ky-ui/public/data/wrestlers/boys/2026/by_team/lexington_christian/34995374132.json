@@ -3,10 +3,10 @@
   "name": "Mac Darland",
   "team": "Lexington Christian",
   "team_slug": "lexington_christian",
-  "team_rank": 99,
+  "team_rank": 35,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 5,
+  "current_rank": 6,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -17,9 +17,9 @@
     "pf7": 1.0,
     "pa7": 9.0,
     "pd7": -8.0,
-    "si_plus": 87.4,
+    "si_plus": 86.5,
     "df_plus": 103.3,
-    "apr_plus": 99.3,
+    "apr_plus": 101.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35281297132",
-      "opponent_rank": 80,
+      "opponent_rank": 75,
       "opponent_name": "Landen Nicholas",
       "method": "Fall 0:57"
     },
     "worst_loss": {
       "opponent_id": "34997715132",
-      "opponent_rank": 21,
+      "opponent_rank": 23,
       "opponent_name": "Dominic Padilla",
       "method": "M. For."
     }
@@ -50,25 +50,25 @@
       "opponent_id": "35281297132",
       "opponent_name": "Landen Nicholas",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 215,
-      "opponent_rank": 80,
+      "opponent_rank": 75,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:57",
       "event": "Cardinal Invitational",
-      "mv_impact": 4.29
+      "mv_impact": 5.04
     },
     {
       "date": "2025-12-30",
       "opponent_id": "34997715132",
       "opponent_name": "Dominic Padilla",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 215,
-      "opponent_rank": 21,
+      "opponent_rank": 23,
       "weight_class": "215",
       "result": "L",
       "method": "MFF",
@@ -81,16 +81,51 @@
       "opponent_id": "35359941132",
       "opponent_name": "Locke Loftus",
       "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 112,
+      "opponent_team_rank": 114,
       "opponent_weight": 215,
-      "opponent_rank": 4,
+      "opponent_rank": 5,
       "weight_class": "215",
       "result": "L",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
       "event": "Cardinal Invitational",
-      "mv_impact": 0.05
+      "mv_impact": 0.07
+    }
+  ],
+  "career": {
+    "career_id": "career_001487",
+    "canonical_name": "Mac Darland",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Lexington Christian",
+      "record": "1-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Lexington Christian",
+      "record": "32-6",
+      "regional_place": 1,
+      "state_place": 6
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Lexington Christian",
+      "record": "18-5",
+      "regional_place": 3,
+      "state_place": 5
     }
   ]
 }

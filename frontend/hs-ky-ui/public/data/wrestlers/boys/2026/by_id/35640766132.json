@@ -3,23 +3,23 @@
   "name": "Deacon Joseph",
   "team": "Great Crossing",
   "team_slug": "great_crossing",
-  "team_rank": 44,
-  "weight_class": 144,
+  "team_rank": 47,
+  "weight_class": 150,
   "year": 2026,
-  "current_rank": 146,
+  "current_rank": 86,
   "record": {
-    "overall": "4-5",
-    "vs_ranked": "3-4",
-    "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "overall": "4-6",
+    "vs_ranked": "3-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 7.0,
-    "pa7": 10.0,
-    "pd7": -3.0,
-    "si_plus": 97.4,
-    "df_plus": 100.6,
-    "apr_plus": 101.0,
+    "pf7": 4.67,
+    "pa7": 11.67,
+    "pd7": -7.0,
+    "si_plus": 94.7,
+    "df_plus": 98.7,
+    "apr_plus": 100.4,
     "pin_rate": 0.5,
     "bonus_rate": 0.75,
     "majors": 1,
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35247373132",
-      "opponent_rank": 79,
+      "opponent_rank": 87,
       "opponent_name": "Robert Roy",
       "method": "Fall 0:37"
     },
     "worst_loss": {
       "opponent_id": "35271246132",
-      "opponent_rank": 57,
+      "opponent_rank": 59,
       "opponent_name": "Mason Smith",
       "method": "TF 16-0 0:00"
     }
@@ -47,12 +47,27 @@
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "35144074132",
+      "opponent_name": "Lucas Oliverio",
+      "opponent_team": "Desales",
+      "opponent_team_rank": 72,
+      "opponent_weight": 150,
+      "opponent_rank": 6,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35202515132",
       "opponent_name": "Maximus Zamora",
       "opponent_team": "South Oldham",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 150,
-      "opponent_rank": 107,
+      "opponent_rank": 110,
       "weight_class": "150",
       "result": "W",
       "method": "MD",
@@ -65,9 +80,9 @@
       "opponent_id": "35077752132",
       "opponent_name": "Ibraheem Kissana",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 28,
       "opponent_weight": 150,
-      "opponent_rank": 109,
+      "opponent_rank": 112,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35271246132",
       "opponent_name": "Mason Smith",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 30,
       "opponent_weight": 144,
-      "opponent_rank": 57,
+      "opponent_rank": 59,
       "weight_class": "144",
       "result": "L",
       "method": "TF",
@@ -110,9 +125,9 @@
       "opponent_id": "34997712132",
       "opponent_name": "Connor Greenwell",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 144,
-      "opponent_rank": 44,
+      "opponent_rank": 49,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "35081197132",
       "opponent_name": "Trae White",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 34,
       "opponent_weight": 144,
-      "opponent_rank": 30,
+      "opponent_rank": 26,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -137,33 +152,33 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35247373132",
-      "opponent_name": "Robert Roy",
-      "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
-      "opponent_weight": 150,
-      "opponent_rank": 79,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:37",
-      "event": "vs. Mason County"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35562997132",
       "opponent_name": "Joseph Jaso",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 144,
-      "opponent_rank": 15,
+      "opponent_rank": 20,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:46",
       "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35247373132",
+      "opponent_name": "Robert Roy",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": 105,
+      "opponent_weight": 150,
+      "opponent_rank": 87,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "vs. Mason County"
     },
     {
       "date": "2025-12-06",
@@ -181,9 +196,30 @@
       "event": "vs. Thomas Nelson"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_001036",
+    "canonical_name": "Deacon Joseph",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Great Crossing",
+      "record": "4-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Great Crossing",
+      "record": "5-18",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

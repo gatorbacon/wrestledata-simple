@@ -3,13 +3,13 @@
   "name": "Alex McCoy",
   "team": "Montgomery County",
   "team_slug": "montgomery_county",
-  "team_rank": 108,
-  "weight_class": 215,
+  "team_rank": 110,
+  "weight_class": 190,
   "year": 2026,
-  "current_rank": 163,
+  "current_rank": 193,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "0-9",
+    "vs_ranked": "0-9",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 91.5,
+    "df_plus": 102.0,
+    "apr_plus": 90.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,38 +28,178 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35051535132",
-      "opponent_rank": 14,
-      "opponent_name": "Elijah Huff",
-      "method": "Fall 0:51"
+      "opponent_id": "36719260132",
+      "opponent_rank": 196,
+      "opponent_name": "Achilles Castillo Calixto",
+      "method": "Fall 1:48"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35215031132",
+      "opponent_name": "Haygen Shinkle",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 9,
+      "opponent_weight": 190,
+      "opponent_rank": 128,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "vs. Montgomery County",
+      "mv_impact": -8.77
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35281292132",
+      "opponent_name": "Henry Morales",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 73,
+      "opponent_weight": 190,
+      "opponent_rank": 33,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "vs. Montgomery County",
+      "mv_impact": -2.87
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35405500132",
+      "opponent_name": "Gunner Patrick",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 190,
+      "opponent_rank": 47,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "vs. Montgomery County",
+      "mv_impact": -5.4
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35663772132",
+      "opponent_name": "Anthony Kemper",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 14,
+      "opponent_weight": 190,
+      "opponent_rank": 44,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "vs. Ryle",
+      "mv_impact": -6.53
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35219508132",
+      "opponent_name": "Robert Kirk",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": 93,
+      "opponent_weight": 215,
+      "opponent_rank": 74,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:25",
+      "event": "vs. Montgomery County",
+      "mv_impact": -6.17
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34992816132",
+      "opponent_name": "George McClure",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 175,
+      "opponent_rank": 37,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Montgomery County",
+      "mv_impact": -6.01
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35206004132",
+      "opponent_name": "Kyler Bryant",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 109,
+      "opponent_weight": 190,
+      "opponent_rank": 34,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Montgomery County",
+      "mv_impact": -5.63
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "36719260132",
+      "opponent_name": "Achilles Castillo Calixto",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": 85,
+      "opponent_weight": 175,
+      "opponent_rank": 196,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:48",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -11.58
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35051535132",
       "opponent_name": "Elijah Huff",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 215,
-      "opponent_rank": 14,
+      "opponent_rank": 12,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:51",
       "event": "Lafayette 5 Star Tournament",
-      "mv_impact": -3.45
+      "mv_impact": -3.36
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_004888",
+    "canonical_name": "Alex McCoy",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Montgomery County",
+      "record": "0-9",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

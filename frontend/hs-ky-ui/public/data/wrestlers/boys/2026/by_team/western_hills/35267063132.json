@@ -6,20 +6,20 @@
   "team_rank": 137,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 124,
+  "current_rank": 117,
   "record": {
-    "overall": "8-0",
-    "vs_ranked": "4-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "8-2",
+    "vs_ranked": "4-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 119.8,
+    "df_plus": 102.0,
+    "apr_plus": 112.9,
     "pin_rate": 0.625,
     "bonus_rate": 0.75,
     "majors": 1,
@@ -28,18 +28,53 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35688340132",
-      "opponent_rank": 29,
+      "opponent_rank": 27,
       "opponent_name": "Caleb Moran",
       "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34997713132",
+      "opponent_rank": 23,
+      "opponent_name": "Grayson Scott",
+      "method": "Fall 1:17"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34997713132",
+      "opponent_name": "Grayson Scott",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 45,
+      "opponent_weight": 157,
+      "opponent_rank": 23,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34994786132",
+      "opponent_name": "Riley Sanford",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 157,
+      "opponent_rank": 4,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "vs. Western Hills"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "OUTSTATE_68a5433a1545",
@@ -60,9 +95,9 @@
       "opponent_id": "34999267132",
       "opponent_name": "Liam Combs",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": 160,
+      "opponent_rank": 151,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -90,9 +125,9 @@
       "opponent_id": "35222775132",
       "opponent_name": "Torian Bess",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 165,
-      "opponent_rank": 59,
+      "opponent_rank": 35,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -105,9 +140,9 @@
       "opponent_id": "34993874132",
       "opponent_name": "Brendan Martin",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 87,
       "opponent_weight": 150,
-      "opponent_rank": 171,
+      "opponent_rank": 179,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -120,9 +155,9 @@
       "opponent_id": "35688340132",
       "opponent_name": "Caleb Moran",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 108,
       "opponent_weight": 165,
-      "opponent_rank": 29,
+      "opponent_rank": 27,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -159,6 +194,41 @@
       "score": "16-8",
       "duration": "7:00",
       "event": "vs. Jeffersonville"
+    }
+  ],
+  "career": {
+    "career_id": "career_002976",
+    "canonical_name": "Andrew Jones",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Western Hills",
+      "record": "8-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Western Hills",
+      "record": "10-14",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Western Hills",
+      "record": "3-7",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

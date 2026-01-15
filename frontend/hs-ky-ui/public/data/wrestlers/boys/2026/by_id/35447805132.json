@@ -6,9 +6,9 @@
   "team_rank": 135,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 130,
+  "current_rank": 124,
   "record": {
-    "overall": "0-11",
+    "overall": "0-12",
     "vs_ranked": "0-10",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,9 +17,9 @@
     "pf7": 2.0,
     "pa7": 17.0,
     "pd7": -15.0,
-    "si_plus": 89.0,
-    "df_plus": 92.0,
-    "apr_plus": 88.4,
+    "si_plus": 88.2,
+    "df_plus": 91.6,
+    "apr_plus": 88.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -33,28 +33,42 @@
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35513068132",
-      "opponent_rank": 160,
-      "opponent_name": "Braxton Jarrell",
-      "method": "Fall 0:55"
+      "opponent_id": "35752654132",
+      "opponent_rank": 132,
+      "opponent_name": "Eli Fitch",
+      "method": "TF 17-2 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_8043c51da2b6",
+      "opponent_name": "Tre Wilson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35138678132",
       "opponent_name": "Ethan Mullins",
       "opponent_team": "Bethlehem",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 62,
       "opponent_weight": 132,
-      "opponent_rank": 92,
+      "opponent_rank": 93,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:16",
-      "event": "Tates Creek Invitational",
-      "mv_impact": -7.0
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2026-01-03",
@@ -63,30 +77,28 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 132,
-      "opponent_rank": 57,
+      "opponent_rank": 53,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:18",
-      "event": "Tates Creek Invitational",
-      "mv_impact": -5.58
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35513068132",
       "opponent_name": "Braxton Jarrell",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 126,
-      "opponent_rank": 160,
+      "opponent_rank": 130,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:55",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -9.69
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -108,87 +120,82 @@
       "opponent_id": "35222796132",
       "opponent_name": "Vance Stokley",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 132,
-      "opponent_rank": 122,
+      "opponent_rank": 119,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. West Carter",
-      "mv_impact": -9.44
+      "event": "vs. West Carter"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35909978132",
       "opponent_name": "Lukas Hamm",
       "opponent_team": "Russell",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 122,
       "opponent_weight": 126,
-      "opponent_rank": 128,
+      "opponent_rank": 123,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": -8.64
+      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35896759132",
       "opponent_name": "Tucker Hammonds",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 132,
-      "opponent_rank": 61,
+      "opponent_rank": 63,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": -6.15
+      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35093538132",
       "opponent_name": "Gabe Sowders",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 138,
-      "opponent_rank": 129,
+      "opponent_rank": 128,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:20",
-      "event": "Anchor Down Showdown",
-      "mv_impact": -9.07
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-01",
       "opponent_id": "35762809132",
       "opponent_name": "Keiona Skaggs",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 138,
-      "opponent_rank": 119,
+      "opponent_rank": 120,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. West Carter",
-      "mv_impact": -8.3
+      "event": "vs. West Carter"
     },
     {
       "date": "2025-12-01",
       "opponent_id": "35635453132",
       "opponent_name": "Derrick Taylor",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 88,
       "opponent_weight": 138,
       "opponent_rank": 85,
       "weight_class": "138",
@@ -196,29 +203,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. West Carter",
-      "mv_impact": -6.1
+      "event": "vs. West Carter"
     },
     {
       "date": "2025-12-01",
       "opponent_id": "35752654132",
       "opponent_name": "Eli Fitch",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 138,
-      "opponent_rank": 134,
+      "opponent_rank": 132,
       "weight_class": "138",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "vs. West Carter",
-      "mv_impact": -9.08
+      "event": "vs. West Carter"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_005757",
+    "canonical_name": "Eli Palmer",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "West Carter",
+      "record": "0-12",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

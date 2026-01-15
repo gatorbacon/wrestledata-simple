@@ -14,20 +14,20 @@
     "region": "8"
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818256150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818256150",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.068334Z",
+  "generated_at_utc": "2026-01-15T13:34:37.106367Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35438467132",
       "name": "Carson Gross",
-      "current_rank": 66,
+      "current_rank": 73,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -52,36 +52,18 @@
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       }
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35458402132",
       "name": "Harrison Caudill",
-      "current_rank": 160,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 1
-      }
-    },
-    "138": {
-      "weight": 138,
-      "wrestler_id": "35401453132",
-      "name": "Brady Baker",
-      "current_rank": 175,
+      "current_rank": 151,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -95,11 +77,11 @@
         "losses": 1
       }
     },
-    "144": {
-      "weight": 144,
+    "150": {
+      "weight": 150,
       "wrestler_id": "35458385132",
       "name": "Andrew Meade",
-      "current_rank": 82,
+      "current_rank": 75,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -110,32 +92,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 4
       }
     },
     "157": {
       "weight": 157,
-      "wrestler_id": "35438163132",
-      "name": "Hunter Kendrick",
-      "current_rank": 229,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      }
-    },
-    "165": {
-      "weight": 165,
       "wrestler_id": "35401491132",
       "name": "Jon Falter",
-      "current_rank": 43,
+      "current_rank": 46,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -149,11 +113,29 @@
         "losses": 3
       }
     },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35521179132",
+      "name": "Alexzander Caudill",
+      "current_rank": 158,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
     "215": {
       "weight": 215,
       "wrestler_id": "35438424132",
       "name": "Thomas Smith",
-      "current_rank": 250,
+      "current_rank": 247,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -171,7 +153,7 @@
       "weight": 285,
       "wrestler_id": "35438329132",
       "name": "Willam Hall",
-      "current_rank": 265,
+      "current_rank": 273,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -188,13 +170,22 @@
   },
   "remaining": [
     {
-      "weight": 165,
-      "wrestler_id": "35521179132",
-      "name": "Alexzander Caudill",
-      "wins": 6,
-      "losses": 6,
+      "weight": 132,
+      "wrestler_id": "35401453132",
+      "name": "Brady Baker",
+      "wins": 0,
+      "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.833
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "35438163132",
+      "name": "Hunter Kendrick",
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   ],
   "team_metrics": {
@@ -208,30 +199,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 24,
-      "losses": 22
+      "wins": 27,
+      "losses": 26
     },
     "top33": {
       "wins": 0,
-      "losses": 11
+      "losses": 14
     },
     "top10": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "bonus_rate": {
-      "value": 0.833,
-      "rank": 36,
+      "value": 0.778,
+      "rank": 64,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.667,
-      "rank": 68,
+      "value": 0.63,
+      "rank": 91,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.083,
-      "rank": 57,
+      "value": 0.074,
+      "rank": 66,
       "rank_scope": "league"
     }
   }

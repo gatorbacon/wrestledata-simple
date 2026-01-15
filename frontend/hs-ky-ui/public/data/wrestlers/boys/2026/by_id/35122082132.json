@@ -3,7 +3,7 @@
   "name": "Jordan DaSilva",
   "team": "Oldham County",
   "team_slug": "oldham_county",
-  "team_rank": 110,
+  "team_rank": 112,
   "weight_class": 157,
   "year": 2026,
   "current_rank": 95,
@@ -17,9 +17,9 @@
     "pf7": 16.5,
     "pa7": 5.25,
     "pd7": 11.25,
-    "si_plus": 107.0,
-    "df_plus": 104.3,
-    "apr_plus": 98.0,
+    "si_plus": 105.7,
+    "df_plus": 105.8,
+    "apr_plus": 97.3,
     "pin_rate": 0.571,
     "bonus_rate": 0.714,
     "majors": 0,
@@ -33,15 +33,15 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35599162132",
-      "opponent_rank": 35,
+      "opponent_rank": 39,
       "opponent_name": "Nate Stephens",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "34988568132",
-      "opponent_rank": 53,
-      "opponent_name": "Joesiah Hernandez",
-      "method": "Fall 4:23"
+      "opponent_id": "35013064132",
+      "opponent_rank": 42,
+      "opponent_name": "Blaze Cook",
+      "method": "Fall 2:37"
     }
   },
   "match_list": [
@@ -50,9 +50,9 @@
       "opponent_id": "35775470132",
       "opponent_name": "Isiah Lopez",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
-      "opponent_weight": 157,
-      "opponent_rank": 174,
+      "opponent_team_rank": 105,
+      "opponent_weight": 165,
+      "opponent_rank": 202,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
@@ -80,9 +80,9 @@
       "opponent_id": "35013064132",
       "opponent_name": "Blaze Cook",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 157,
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -97,7 +97,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 165,
-      "opponent_rank": 53,
+      "opponent_rank": 42,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -140,7 +140,7 @@
       "opponent_id": "34997603132",
       "opponent_name": "Jackson Jones",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 157,
       "opponent_rank": 96,
       "weight_class": "165",
@@ -155,9 +155,9 @@
       "opponent_id": "35599162132",
       "opponent_name": "Nate Stephens",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 165,
-      "opponent_rank": 35,
+      "opponent_rank": 39,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -200,9 +200,9 @@
       "opponent_id": "34989299132",
       "opponent_name": "Maxwell Johnson",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 15,
-      "opponent_weight": 165,
-      "opponent_rank": 146,
+      "opponent_team_rank": 16,
+      "opponent_weight": 175,
+      "opponent_rank": 203,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -211,9 +211,30 @@
       "event": "vs. Oldham County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  "career": {
+    "career_id": "career_001995",
+    "canonical_name": "Jordan DaSilva",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Oldham County",
+      "record": "8-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Oldham County",
+      "record": "6-20",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

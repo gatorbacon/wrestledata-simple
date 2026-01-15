@@ -21,41 +21,23 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.616258Z",
+  "generated_at_utc": "2026-01-15T13:34:37.724557Z",
   "starters": {
     "114": {
       "weight": 114,
-      "wrestler_id": "35333584132",
-      "name": "Mallory Ohlson",
-      "current_rank": 67,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 2
-      }
-    },
-    "120": {
-      "weight": 120,
       "wrestler_id": "35333633132",
       "name": "Juliette Ruiz",
       "current_rank": 1,
-      "xtp": 21.88,
+      "xtp": 22.36,
       "xtp_p": 12.83,
       "xtp_a": 3.73,
-      "xtp_b": 5.32,
+      "xtp_b": 5.8,
       "top10_record": {
         "wins": 6,
         "losses": 0
       },
       "top33_record": {
-        "wins": 9,
+        "wins": 11,
         "losses": 0
       }
     },
@@ -63,7 +45,7 @@
       "weight": 132,
       "wrestler_id": "35333586132",
       "name": "Elliana Mosby",
-      "current_rank": 78,
+      "current_rank": 79,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -81,7 +63,7 @@
       "weight": 165,
       "wrestler_id": "35333585132",
       "name": "Zahriyah Wales",
-      "current_rank": 43,
+      "current_rank": 49,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -99,22 +81,32 @@
       "weight": 185,
       "wrestler_id": "35333583132",
       "name": "Abigail Liberal",
-      "current_rank": 22,
-      "xtp": 3.18,
-      "xtp_p": 0.41,
-      "xtp_a": 0.85,
-      "xtp_b": 1.92,
+      "current_rank": 20,
+      "xtp": 3.69,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 2.26,
       "top10_record": {
         "wins": 0,
         "losses": 3
       },
       "top33_record": {
-        "wins": 2,
-        "losses": 4
+        "wins": 5,
+        "losses": 5
       }
     }
   },
-  "remaining": [],
+  "remaining": [
+    {
+      "weight": 114,
+      "wrestler_id": "35333584132",
+      "name": "Mallory Ohlson",
+      "wins": 3,
+      "losses": 12,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    }
+  ],
   "team_metrics": {
     "projected_state_points": null,
     "team_rank": {
@@ -126,30 +118,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 29,
-      "losses": 28
+      "wins": 34,
+      "losses": 21
     },
     "top33": {
-      "wins": 12,
-      "losses": 11
+      "wins": 17,
+      "losses": 10
     },
     "top10": {
       "wins": 6,
       "losses": 5
     },
     "bonus_rate": {
-      "value": 0.897,
-      "rank": 44,
+      "value": 0.912,
+      "rank": 38,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.759,
-      "rank": 69,
+      "value": 0.706,
+      "rank": 92,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.0,
-      "rank": 54,
+      "value": 0.088,
+      "rank": 11,
       "rank_scope": "league"
     }
   }

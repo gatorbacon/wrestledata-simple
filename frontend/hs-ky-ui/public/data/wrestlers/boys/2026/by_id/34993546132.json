@@ -3,57 +3,152 @@
   "name": "Javen Dover",
   "team": "Moore",
   "team_slug": "moore",
-  "team_rank": 46,
+  "team_rank": 27,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 76,
+  "current_rank": 41,
   "record": {
-    "overall": "4-6",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "9-8",
+    "vs_ranked": "6-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 123.7,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "pf7": 16.0,
+    "pa7": 1.0,
+    "pd7": 15.0,
+    "si_plus": 111.5,
+    "df_plus": 114.9,
+    "apr_plus": 111.2,
+    "pin_rate": 0.778,
+    "bonus_rate": 0.889,
     "majors": 0,
-    "techs": 0,
-    "pins": 3
+    "techs": 1,
+    "pins": 7
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35497194132",
-      "opponent_rank": 133,
-      "opponent_name": "Anthony Hicks",
-      "method": "Fall 0:13"
+      "opponent_id": "35127113132",
+      "opponent_rank": 42,
+      "opponent_name": "Jake Jeziorski",
+      "method": "Fall 0:25"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35090027132",
+      "opponent_rank": 13,
+      "opponent_name": "Aydin Kadriov",
+      "method": "Fall 1:58"
+    }
   },
   "match_list": [
     {
-      "date": "2025-12-20",
-      "opponent_id": "OUTSTATE_9c9fc07127b0",
-      "opponent_name": "KOLTON BOLING",
-      "opponent_team": "Greensburg",
-      "opponent_team_rank": null,
+      "date": "2026-01-10",
+      "opponent_id": "35623018132",
+      "opponent_name": "Yousif Alfaisal",
+      "opponent_team": "Atherton",
+      "opponent_team_rank": 21,
       "opponent_weight": 138,
-      "opponent_rank": null,
+      "opponent_rank": 188,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35127113132",
+      "opponent_name": "Jake Jeziorski",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": 75,
+      "opponent_weight": 138,
+      "opponent_rank": 42,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:25",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35090027132",
+      "opponent_name": "Aydin Kadriov",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 80,
+      "opponent_weight": 138,
+      "opponent_rank": 13,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "11:03",
-      "event": "Jeffersonville Classic"
+      "duration": "1:58",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35040584132",
+      "opponent_name": "Mohammed Almotoware",
+      "opponent_team": "Male",
+      "opponent_team_rank": 50,
+      "opponent_weight": 138,
+      "opponent_rank": 75,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:33",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35562984132",
+      "opponent_name": "Brock Fernandez",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 18,
+      "opponent_weight": 138,
+      "opponent_rank": 9,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:43",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35668565132",
+      "opponent_name": "Ha Ling",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 138,
+      "opponent_rank": 168,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "36881420132",
+      "opponent_name": "Faaris Nguyen",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": 15,
+      "opponent_weight": 138,
+      "opponent_rank": 199,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Moore"
     },
     {
       "date": "2025-12-20",
@@ -72,9 +167,9 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "OUTSTATE_04cb58ac14b6",
-      "opponent_name": "Brandon Ault",
-      "opponent_team": "West Washington",
+      "opponent_id": "OUTSTATE_14b55d8165fd",
+      "opponent_name": "Wyatt Bratton",
+      "opponent_team": "Gibson Southern",
       "opponent_team_rank": null,
       "opponent_weight": 138,
       "opponent_rank": null,
@@ -82,7 +177,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "5:39",
+      "duration": "3:02",
       "event": "Jeffersonville Classic"
     },
     {
@@ -102,9 +197,9 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "OUTSTATE_14b55d8165fd",
-      "opponent_name": "Wyatt Bratton",
-      "opponent_team": "Gibson Southern",
+      "opponent_id": "OUTSTATE_04cb58ac14b6",
+      "opponent_name": "Brandon Ault",
+      "opponent_team": "West Washington",
       "opponent_team_rank": null,
       "opponent_weight": 138,
       "opponent_rank": null,
@@ -112,7 +207,22 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "3:02",
+      "duration": "5:39",
+      "event": "Jeffersonville Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_9c9fc07127b0",
+      "opponent_name": "KOLTON BOLING",
+      "opponent_team": "Greensburg",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "11:03",
       "event": "Jeffersonville Classic"
     },
     {
@@ -120,9 +230,9 @@
       "opponent_id": "35497194132",
       "opponent_name": "Anthony Hicks",
       "opponent_team": "Highlands",
-      "opponent_team_rank": 3,
-      "opponent_weight": 138,
-      "opponent_rank": 133,
+      "opponent_team_rank": 4,
+      "opponent_weight": 132,
+      "opponent_rank": 182,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -191,9 +301,39 @@
       "event": "vs. West Clermont High School"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_001788",
+    "canonical_name": "Javen Dover",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Moore",
+      "record": "10-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Moore",
+      "record": "18-14",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Moore",
+      "record": "25-19",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

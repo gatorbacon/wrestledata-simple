@@ -411,6 +411,10 @@ function renderMatchupTable() {
   console.log(`[Dual Predictor] Roster A weights:`, Object.keys(rosterA.weights));
   console.log(`[Dual Predictor] Roster B weights:`, Object.keys(rosterB.weights));
   
+  // Track assigned wrestlers to prevent duplicates across weights
+  const assignedWrestlersA = new Set();
+  const assignedWrestlersB = new Set();
+  
   weights.forEach((weight, index) => {
     const row = document.createElement('tr');
     row.dataset.weight = weight;
@@ -470,25 +474,30 @@ function renderMatchupTable() {
     tbody.appendChild(row);
     
     // Set default selections with fallback logic
-    // Priority: 1) Starter at current weight, 2) Highest-ranked non-starter from weight below, 3) Forfeit
+    // Priority: 1) Starter at current weight, 2) Highest-ranked non-starter from weight below (not already assigned), 3) Forfeit
+    // DO NOT automatically move wrestlers UP from weight above
     let defaultA = 'FORFEIT';
-    if (starterA) {
+    if (starterA && !assignedWrestlersA.has(starterA.wrestler_id)) {
       defaultA = starterA.wrestler_id;
+      assignedWrestlersA.add(starterA.wrestler_id);
     } else {
-      const nonStarterBelow = getHighestRankedNonStarterFromWeightBelow(rosterA, weight, weights, index);
+      const nonStarterBelow = getHighestRankedNonStarterFromWeightBelow(rosterA, weight, weights, index, assignedWrestlersA);
       if (nonStarterBelow) {
         defaultA = nonStarterBelow.wrestler_id;
+        assignedWrestlersA.add(nonStarterBelow.wrestler_id);
       }
     }
     teamASelect.value = defaultA;
     
     let defaultB = 'FORFEIT';
-    if (starterB) {
+    if (starterB && !assignedWrestlersB.has(starterB.wrestler_id)) {
       defaultB = starterB.wrestler_id;
+      assignedWrestlersB.add(starterB.wrestler_id);
     } else {
-      const nonStarterBelow = getHighestRankedNonStarterFromWeightBelow(rosterB, weight, weights, index);
+      const nonStarterBelow = getHighestRankedNonStarterFromWeightBelow(rosterB, weight, weights, index, assignedWrestlersB);
       if (nonStarterBelow) {
         defaultB = nonStarterBelow.wrestler_id;
+        assignedWrestlersB.add(nonStarterBelow.wrestler_id);
       }
     }
     teamBSelect.value = defaultB;
@@ -556,17 +565,27 @@ function getStarter(wrestlers) {
   return wrestlers.find(w => w.is_highest_ranked) || wrestlers[0];
 }
 
-function getHighestRankedNonStarterFromWeightBelow(roster, weight, allWeights, weightIndex) {
-  // Only look at the weight class directly below (one index higher)
-  if (weightIndex >= allWeights.length - 1) return null;
+function getHighestRankedNonStarterFromWeightBelow(roster, weight, allWeights, weightIndex, assignedWrestlers) {
+  // Only look at the weight class directly BELOW (lower weight number = lower index)
+  // Example: For 113 (index 1), look at 106 (index 0)
+  if (weightIndex <= 0) return null; // Can't go below the lowest weight
   
-  const weightBelow = allWeights[weightIndex + 1];
+  const weightBelow = allWeights[weightIndex - 1]; // Lower index = lower weight number
   const wrestlersBelow = roster.weights[weightBelow] || [];
   
   if (wrestlersBelow.length === 0) return null;
   
-  // Filter out starters (highest-ranked per team)
-  const nonStarters = wrestlersBelow.filter(w => !w.is_highest_ranked);
+  // Filter out:
+  // 1. Starters (highest-ranked per team at that weight - they're already starting there)
+  // 2. Wrestlers already assigned as defaults in previous rows
+  const nonStarters = wrestlersBelow.filter(w => {
+    // Exclude if already assigned
+    if (assignedWrestlers && assignedWrestlers.has(w.wrestler_id)) {
+      return false;
+    }
+    // Exclude starters (they're already starting at that weight below, can't move them up)
+    return !w.is_highest_ranked;
+  });
   
   if (nonStarters.length === 0) return null;
   

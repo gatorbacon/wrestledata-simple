@@ -3,13 +3,13 @@
   "name": "Aldon Hammers",
   "team": "Henderson County",
   "team_slug": "henderson_county",
-  "team_rank": 88,
+  "team_rank": 48,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 115,
+  "current_rank": 114,
   "record": {
-    "overall": "5-7",
-    "vs_ranked": "2-6",
+    "overall": "6-8",
+    "vs_ranked": "3-6",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -17,42 +17,72 @@
     "pf7": 7.5,
     "pa7": 8.5,
     "pd7": -1.0,
-    "si_plus": 97.6,
+    "si_plus": 97.3,
     "df_plus": 104.0,
-    "apr_plus": 92.1,
-    "pin_rate": 0.4,
-    "bonus_rate": 0.6,
+    "apr_plus": 94.5,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.667,
     "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35598047132",
-      "opponent_rank": 100,
+      "opponent_rank": 103,
       "opponent_name": "Jayden Armstrong",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35566923132",
-      "opponent_rank": 103,
+      "opponent_rank": 101,
       "opponent_name": "Iker Moreno",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-06",
+      "opponent_id": "35133611132",
+      "opponent_name": "Christon Johnson",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 95,
+      "opponent_weight": 120,
+      "opponent_rank": 77,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Hopkinsville"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "34996511132",
+      "opponent_name": "Charles Caycee",
+      "opponent_team": "Russellville",
+      "opponent_team_rank": 123,
+      "opponent_weight": 126,
+      "opponent_rank": 136,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russellville"
+    },
+    {
       "date": "2025-12-23",
       "opponent_id": "35002898132",
       "opponent_name": "Ethan Gilmore",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 126,
-      "opponent_rank": 49,
+      "opponent_rank": 61,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -65,9 +95,9 @@
       "opponent_id": "34989085132",
       "opponent_name": "Jayson Tejeda",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 126,
-      "opponent_rank": 28,
+      "opponent_rank": 27,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -95,9 +125,9 @@
       "opponent_id": "35566923132",
       "opponent_name": "Iker Moreno",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 57,
       "opponent_weight": 132,
-      "opponent_rank": 103,
+      "opponent_rank": 101,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -110,9 +140,9 @@
       "opponent_id": "35064911132",
       "opponent_name": "Nathaniel Pingle",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
+      "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 100,
+      "opponent_rank": null,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -140,9 +170,9 @@
       "opponent_id": "35458692132",
       "opponent_name": "Brett Bennett",
       "opponent_team": "Calloway County",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 33,
       "opponent_weight": 126,
-      "opponent_rank": 157,
+      "opponent_rank": 155,
       "weight_class": "126",
       "result": "W",
       "method": "MD",
@@ -170,9 +200,9 @@
       "opponent_id": "35031565132",
       "opponent_name": "Jacob Ramsey",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 126,
-      "opponent_rank": 5,
+      "opponent_rank": 6,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -187,7 +217,7 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 130,
       "opponent_weight": 120,
-      "opponent_rank": 100,
+      "opponent_rank": 103,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -200,9 +230,9 @@
       "opponent_id": "35221005132",
       "opponent_name": "Haoyang WU",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 126,
-      "opponent_rank": 35,
+      "opponent_rank": 42,
       "weight_class": "126",
       "result": "L",
       "method": "MD",
@@ -226,9 +256,21 @@
       "event": "vs. Riverton Parke"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_005016",
+    "canonical_name": "Aldon Hammers",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Henderson County",
+      "record": "8-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

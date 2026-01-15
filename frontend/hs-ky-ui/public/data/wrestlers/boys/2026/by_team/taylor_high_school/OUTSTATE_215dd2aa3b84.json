@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -28,31 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35281510132",
-      "opponent_rank": 46,
+      "opponent_rank": 45,
       "opponent_name": "Eric Brown",
       "method": "Fall 3:57"
     },
     "worst_loss": {
-      "opponent_id": "35281280132",
-      "opponent_rank": 20,
-      "opponent_name": "Ethan Piasecki",
-      "method": "TF 17-1 2:06"
+      "opponent_id": "35214945132",
+      "opponent_rank": 27,
+      "opponent_name": "Jack Baron",
+      "method": "Dec 12-11"
     }
   },
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "35214945132",
+      "opponent_name": "Jack Baron",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 9,
+      "opponent_weight": 132,
+      "opponent_rank": 27,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-11",
+      "duration": "7:00",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35281280132",
       "opponent_name": "Ethan Piasecki",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 132,
-      "opponent_rank": 20,
+      "opponent_rank": 14,
       "weight_class": "132",
       "result": "L",
       "method": "TF",
@@ -65,9 +80,9 @@
       "opponent_id": "35281510132",
       "opponent_name": "Eric Brown",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 132,
-      "opponent_rank": 46,
+      "opponent_rank": 45,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",

@@ -3,12 +3,12 @@
   "name": "Sam Suapilimai",
   "team": "Fort Campbell",
   "team_slug": "fort_campbell",
-  "team_rank": 76,
+  "team_rank": 82,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 73,
+  "current_rank": 77,
   "record": {
-    "overall": "4-5",
+    "overall": "5-7",
     "vs_ranked": "3-2",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
@@ -17,14 +17,14 @@
     "pf7": 12.73,
     "pa7": 10.18,
     "pd7": 2.55,
-    "si_plus": 105.8,
-    "df_plus": 101.6,
-    "apr_plus": 96.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "si_plus": 106.0,
+    "df_plus": 101.5,
+    "apr_plus": 95.8,
+    "pin_rate": 0.6,
+    "bonus_rate": 0.6,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,26 +33,71 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35598043132",
-      "opponent_rank": 74,
+      "opponent_rank": 78,
       "opponent_name": "Thomas Lingenfelter",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35281693132",
-      "opponent_rank": 89,
+      "opponent_rank": 92,
       "opponent_name": "Landon Lopez",
       "method": "Fall 0:40"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35083055132",
+      "opponent_name": "Luka Nash",
+      "opponent_team": "Green Hill High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35109516132",
+      "opponent_name": "John Gardner",
+      "opponent_team": "Arlington High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:32",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35175445132",
+      "opponent_name": "Xavier Martinez",
+      "opponent_team": "Goodpasture Christian School",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "vs. Goodpasture Christian School"
+    },
+    {
       "date": "2025-12-22",
       "opponent_id": "35281693132",
       "opponent_name": "Landon Lopez",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 285,
-      "opponent_rank": 89,
+      "opponent_rank": 92,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -65,9 +110,9 @@
       "opponent_id": "36254704132",
       "opponent_name": "Bryson Brown",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 285,
-      "opponent_rank": 148,
+      "opponent_rank": 157,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -82,7 +127,7 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 130,
       "opponent_weight": 285,
-      "opponent_rank": 74,
+      "opponent_rank": 78,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -95,7 +140,7 @@
       "opponent_id": "35035634132",
       "opponent_name": "Austin Cummings",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 285,
       "opponent_rank": 1,
       "weight_class": "285",
@@ -155,9 +200,9 @@
       "opponent_id": "35437488132",
       "opponent_name": "michael harper",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 285,
-      "opponent_rank": 149,
+      "opponent_rank": 158,
       "weight_class": "285",
       "result": "W",
       "method": "SV-1",
@@ -181,9 +226,21 @@
       "event": "vs. Kenwood High School"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_005400",
+    "canonical_name": "Sam Suapilimai",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Fort Campbell",
+      "record": "5-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 185,
   "year": 2026,
-  "current_rank": 33,
+  "current_rank": 27,
   "record": {
-    "overall": "2-3",
-    "vs_ranked": "2-3",
-    "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "overall": "2-5",
+    "vs_ranked": "2-5",
+    "vs_top10": "0-2",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 100.1,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 98.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,38 +28,54 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35703266132",
-      "opponent_rank": 34,
+      "opponent_rank": 30,
       "opponent_name": "Emma Marcum",
       "method": "Fall 0:34"
     },
     "worst_loss": {
       "opponent_id": "35369133132",
-      "opponent_rank": 25,
+      "opponent_rank": 26,
       "opponent_name": "Britlynn Gilbert",
       "method": "Fall 1:18"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35668841132",
+      "opponent_name": "Kaniece Edwards",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 185,
+      "opponent_rank": 24,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:40",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": -7.07
+    },
+    {
       "date": "2025-12-30",
       "opponent_id": "35333583132",
       "opponent_name": "Abigail Liberal",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 26,
       "opponent_weight": 185,
-      "opponent_rank": 22,
+      "opponent_rank": 20,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:19",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": -7.55
+      "mv_impact": -6.67
     },
     {
       "date": "2025-12-30",
@@ -68,53 +84,69 @@
       "opponent_team": "Green County",
       "opponent_team_rank": null,
       "opponent_weight": 185,
-      "opponent_rank": 34,
+      "opponent_rank": 30,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:34",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": 2.88
+      "mv_impact": 4.2
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35404891132",
+      "opponent_name": "Clarytza Castillejos Santos",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 185,
+      "opponent_rank": 4,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "Fern Creek Gladiator Ladies",
+      "mv_impact": -3.51
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35369133132",
       "opponent_name": "Britlynn Gilbert",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 6,
       "opponent_weight": 185,
-      "opponent_rank": 25,
+      "opponent_rank": 26,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:18",
       "event": "Seneca Girls Invitational",
-      "mv_impact": -7.27
+      "mv_impact": -6.49
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35380229132",
       "opponent_name": "Nyah Helton",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 6,
       "opponent_weight": 185,
-      "opponent_rank": 51,
+      "opponent_rank": 39,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:09",
       "event": "Seneca Girls Invitational",
-      "mv_impact": 2.45
+      "mv_impact": 2.83
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35333649132",
       "opponent_name": "Jaycee Foley",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 46,
       "opponent_weight": 185,
       "opponent_rank": 10,
       "weight_class": "185",
@@ -123,7 +155,7 @@
       "score": null,
       "duration": "1:10",
       "event": "Seneca Girls Invitational",
-      "mv_impact": -4.69
+      "mv_impact": -4.6
     }
   ]
 }

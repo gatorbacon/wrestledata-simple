@@ -3,10 +3,10 @@
   "name": "Dusty Lee Brewer",
   "team": "Bourbon County",
   "team_slug": "bourbon_county",
-  "team_rank": 58,
+  "team_rank": 63,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 101,
+  "current_rank": 109,
   "record": {
     "overall": "1-1",
     "vs_ranked": "1-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 107.3,
+    "df_plus": 102.0,
+    "apr_plus": 107.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35040638132",
-      "opponent_rank": 102,
+      "opponent_rank": 112,
       "opponent_name": "Logan Niece",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35652160132",
-      "opponent_rank": 83,
+      "opponent_rank": 70,
       "opponent_name": "Taden Cracraft",
       "method": "Fall 0:00"
     }
@@ -52,30 +52,56 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 106,
-      "opponent_rank": 102,
+      "opponent_rank": 112,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": 2.4
+      "mv_impact": 2.99
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35652160132",
       "opponent_name": "Taden Cracraft",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 106,
-      "opponent_rank": 83,
+      "opponent_rank": 70,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Harrison County",
-      "mv_impact": -8.22
+      "mv_impact": -7.27
+    }
+  ],
+  "career": {
+    "career_id": "career_000208",
+    "canonical_name": "Dusty Brewer",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Bourbon County",
+      "record": "1-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Bourbon County",
+      "record": "5-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

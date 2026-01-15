@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 123.1,
+    "df_plus": 102.0,
+    "apr_plus": 110.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35049123132",
-      "opponent_rank": 47,
+      "opponent_rank": 51,
       "opponent_name": "Ryan LaMotte",
       "method": "Fall 0:18"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35221002132",
+      "opponent_rank": 11,
+      "opponent_name": "Ethan Klidzejs",
+      "method": "Fall 1:59"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35221002132",
+      "opponent_name": "Ethan Klidzejs",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 66,
+      "opponent_weight": 106,
+      "opponent_rank": 11,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:59",
+      "event": "2026 Commando Crush"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35049123132",
       "opponent_name": "Ryan LaMotte",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 106,
-      "opponent_rank": 47,
+      "opponent_rank": 51,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -55,10 +75,5 @@
       "duration": "0:18",
       "event": "Bruise Brothers Brawl"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  ]
 }

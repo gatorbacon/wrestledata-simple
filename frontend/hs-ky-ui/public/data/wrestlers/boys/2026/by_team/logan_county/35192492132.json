@@ -3,95 +3,154 @@
   "name": "Eli Poore",
   "team": "Logan County",
   "team_slug": "logan_county",
-  "team_rank": 100,
+  "team_rank": 102,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 131,
+  "current_rank": 126,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "1-2",
+    "overall": "2-4",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 3.65,
-    "pa7": 25.0,
-    "pd7": -21.35,
-    "si_plus": 91.6,
-    "df_plus": 80.8,
-    "apr_plus": 99.9,
+    "pf7": 3.33,
+    "pa7": 15.0,
+    "pd7": -11.67,
+    "si_plus": 90.4,
+    "df_plus": 94.5,
+    "apr_plus": 96.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35007897132",
-      "opponent_rank": 183,
+      "opponent_rank": 180,
       "opponent_name": "Chuck Martin",
       "method": "Fall 1:58"
     },
     "worst_loss": {
       "opponent_id": "34989009132",
-      "opponent_rank": 74,
+      "opponent_rank": 77,
       "opponent_name": "Asher Mason",
       "method": "Fall 1:05"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35206765132",
+      "opponent_name": "Bowen Furkin",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 175,
+      "opponent_rank": 64,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35181259132",
+      "opponent_name": "Jomal Harris",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 70,
+      "opponent_weight": 175,
+      "opponent_rank": 71,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "37384438132",
+      "opponent_name": "Rece Sims",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
       "date": "2025-12-19",
       "opponent_id": "34994461132",
       "opponent_name": "Brytan Ashley",
       "opponent_team": "Russellville",
-      "opponent_team_rank": 121,
+      "opponent_team_rank": 123,
       "opponent_weight": 175,
-      "opponent_rank": 65,
+      "opponent_rank": 76,
       "weight_class": "175",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "3:50",
-      "event": "vs. Russellville",
-      "mv_impact": -4.78
+      "event": "vs. Russellville"
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35007897132",
       "opponent_name": "Chuck Martin",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 215,
-      "opponent_rank": 183,
+      "opponent_rank": 180,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:58",
-      "event": "vs. South Warren",
-      "mv_impact": 1.22
+      "event": "vs. South Warren"
     },
     {
       "date": "2025-12-04",
       "opponent_id": "34989009132",
       "opponent_name": "Asher Mason",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 175,
-      "opponent_rank": 74,
+      "opponent_rank": 77,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:05",
-      "event": "vs. Ohio County",
-      "mv_impact": -6.45
+      "event": "vs. Ohio County"
+    }
+  ],
+  "career": {
+    "career_id": "career_004660",
+    "canonical_name": "Eli Poore",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Logan County",
+      "record": "2-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

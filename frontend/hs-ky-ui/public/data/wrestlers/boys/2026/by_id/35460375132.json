@@ -3,14 +3,14 @@
   "name": "Braxton Bradford",
   "team": "Rowan County",
   "team_slug": "rowan_county",
-  "team_rank": 119,
+  "team_rank": 121,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 100,
+  "current_rank": 108,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
-    "vs_top10": "0-1",
+    "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 99.8,
+    "df_plus": 102.0,
+    "apr_plus": 101.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -30,16 +30,16 @@
     "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35040638132",
-      "opponent_rank": 102,
+      "opponent_rank": 112,
       "opponent_name": "Logan Niece",
       "method": "Fall 5:00"
     },
     "worst_loss": {
       "opponent_id": "35033125132",
-      "opponent_rank": 77,
+      "opponent_rank": 83,
       "opponent_name": "Owen Young",
       "method": "Fall 2:15"
     }
@@ -50,16 +50,16 @@
       "opponent_id": "35221002132",
       "opponent_name": "Ethan Klidzejs",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 106,
-      "opponent_rank": 9,
+      "opponent_rank": 11,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:12",
       "event": "Tates Creek Invitational",
-      "mv_impact": -2.53
+      "mv_impact": -2.84
     },
     {
       "date": "2026-01-03",
@@ -68,14 +68,14 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 106,
-      "opponent_rank": 102,
+      "opponent_rank": 112,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:00",
       "event": "Tates Creek Invitational",
-      "mv_impact": 2.4
+      "mv_impact": 2.99
     },
     {
       "date": "2026-01-03",
@@ -84,19 +84,31 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 106,
-      "opponent_rank": 77,
+      "opponent_rank": 83,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:15",
       "event": "Tates Creek Invitational",
-      "mv_impact": -7.13
+      "mv_impact": -7.85
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  "career": {
+    "career_id": "career_005629",
+    "canonical_name": "Braxton Bradford",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Rowan County",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

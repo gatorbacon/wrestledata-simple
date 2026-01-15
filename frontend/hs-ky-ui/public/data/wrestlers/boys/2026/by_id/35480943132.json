@@ -11,15 +11,15 @@
     "overall": "5-1",
     "vs_ranked": "5-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 89.9,
+    "df_plus": 102.0,
+    "apr_plus": 90.2,
     "pin_rate": 0.2,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35383672132",
-      "opponent_rank": 77,
+      "opponent_rank": 72,
       "opponent_name": "Yandel Santamaria Luna",
       "method": "TF 16-0 2:00"
     },
     "worst_loss": {
       "opponent_id": "35208005132",
-      "opponent_rank": 47,
+      "opponent_rank": 20,
       "opponent_name": "Camryn Ramirez",
       "method": "Fall 0:00"
     }
@@ -50,11 +50,26 @@
       "opponent_id": "35002902132",
       "opponent_name": "Dylan Murphy",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 157,
-      "opponent_rank": 113,
+      "opponent_rank": 108,
       "weight_class": "165",
       "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Kenwood High School"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35208005132",
+      "opponent_name": "Camryn Ramirez",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 165,
+      "opponent_rank": 20,
+      "weight_class": "165",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -65,9 +80,9 @@
       "opponent_id": "35684113132",
       "opponent_name": "Max Clark",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
-      "opponent_weight": 157,
-      "opponent_rank": 163,
+      "opponent_team_rank": 106,
+      "opponent_weight": 165,
+      "opponent_rank": 212,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
@@ -77,27 +92,12 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "35208005132",
-      "opponent_name": "Camryn Ramirez",
-      "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
-      "opponent_weight": 165,
-      "opponent_rank": 47,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Kenwood High School"
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "35383672132",
       "opponent_name": "Yandel Santamaria Luna",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 175,
-      "opponent_rank": 77,
+      "opponent_rank": 72,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
@@ -110,9 +110,9 @@
       "opponent_id": "35521775132",
       "opponent_name": "Enrique Messer Cruz",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
-      "opponent_weight": 165,
-      "opponent_rank": 167,
+      "opponent_team_rank": 82,
+      "opponent_weight": 157,
+      "opponent_rank": 172,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
@@ -127,7 +127,7 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 130,
       "opponent_weight": 165,
-      "opponent_rank": 117,
+      "opponent_rank": 118,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
@@ -135,10 +135,5 @@
       "duration": "2:47",
       "event": "vs. Kenwood High School"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  ]
 }

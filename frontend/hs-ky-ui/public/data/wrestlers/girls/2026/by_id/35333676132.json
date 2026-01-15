@@ -3,43 +3,80 @@
   "name": "Lucy Savon",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 30,
+  "team_rank": 17,
   "weight_class": 145,
   "year": 2026,
-  "current_rank": 53,
+  "current_rank": 20,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "2-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 89.7,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 101.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35542619132",
+      "opponent_rank": 22,
+      "opponent_name": "Alyiah Mason",
+      "method": "Fall 0:17"
+    },
     "worst_loss": {
       "opponent_id": "35788826132",
-      "opponent_rank": 60,
+      "opponent_rank": 57,
       "opponent_name": "Madison Price",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35542619132",
+      "opponent_name": "Alyiah Mason",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 145,
+      "opponent_rank": 22,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:17",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 4.83
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35334430132",
+      "opponent_name": "Jacklyn Lancho",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": 45,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:38",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 1.07
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35788826132",
@@ -47,7 +84,7 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 60,
+      "opponent_rank": 57,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
@@ -61,7 +98,7 @@
       "opponent_id": "35333366132",
       "opponent_name": "Kathryn Floyd",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 27,
       "opponent_weight": 145,
       "opponent_rank": 6,
       "weight_class": "145",
@@ -70,12 +107,12 @@
       "score": null,
       "duration": "1:01",
       "event": "beast of the east",
-      "mv_impact": -3.56
+      "mv_impact": -3.43
     }
   ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1428571428571428
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.8617283950617285
   }
 }

@@ -3,14 +3,14 @@
   "name": "Kaylee Mckown",
   "team": "Bardstown",
   "team_slug": "bardstown",
-  "team_rank": 53,
+  "team_rank": 58,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 105,
+  "current_rank": 123,
   "record": {
     "overall": "1-1",
     "vs_ranked": "1-0",
-    "vs_top10": "0-0",
+    "vs_top10": "1-0",
     "vs_top25": "1-0"
   },
   "metrics": {
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 113.0,
+    "df_plus": 102.0,
+    "apr_plus": 112.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -29,11 +29,11 @@
   "opponent_breakdown": {
     "ranked_wins": 1,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35404972132",
-      "opponent_rank": 11,
+      "opponent_rank": 10,
       "opponent_name": "Kadham Alghanemi",
       "method": "Fall 0:13"
     },
@@ -60,16 +60,50 @@
       "opponent_id": "35404972132",
       "opponent_name": "Kadham Alghanemi",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 96,
+      "opponent_team_rank": 99,
       "opponent_weight": 120,
-      "opponent_rank": 11,
+      "opponent_rank": 10,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:13",
-      "event": "The Beast of the East",
-      "mv_impact": 7.9
+      "event": "The Beast of the East"
+    }
+  ],
+  "career": {
+    "career_id": "career_000112",
+    "canonical_name": "Kaylee Mckown",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Bardstown",
+      "record": "1-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Bardstown",
+      "record": "4-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Bardstown",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

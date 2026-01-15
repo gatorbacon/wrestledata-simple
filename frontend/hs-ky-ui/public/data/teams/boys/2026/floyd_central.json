@@ -14,20 +14,20 @@
     "region": "8"
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gylpgyncgm&teamId=818335150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818335150",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:13.861400Z",
+  "generated_at_utc": "2026-01-15T13:34:36.885625Z",
   "starters": {
     "113": {
       "weight": 113,
       "wrestler_id": "35703467132",
       "name": "Kai Munoz",
-      "current_rank": 99,
+      "current_rank": 101,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -45,7 +45,7 @@
       "weight": 120,
       "wrestler_id": "35703522132",
       "name": "Kamron Mitchell",
-      "current_rank": 155,
+      "current_rank": 157,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -61,27 +61,27 @@
     },
     "126": {
       "weight": 126,
-      "wrestler_id": "35703552132",
-      "name": "Jacob Boyd",
-      "current_rank": 117,
+      "wrestler_id": "35703606132",
+      "name": "Jordyn Hall",
+      "current_rank": 134,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       }
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35703569132",
       "name": "Kholeton Elliott",
-      "current_rank": 270,
+      "current_rank": 267,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -99,7 +99,7 @@
       "weight": 144,
       "wrestler_id": "35703583132",
       "name": "Tyler Whitney",
-      "current_rank": 157,
+      "current_rank": 153,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -113,11 +113,11 @@
         "losses": 0
       }
     },
-    "157": {
-      "weight": 157,
+    "150": {
+      "weight": 150,
       "wrestler_id": "35703578132",
       "name": "Tyler Hall",
-      "current_rank": 107,
+      "current_rank": 76,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -135,7 +135,7 @@
       "weight": 165,
       "wrestler_id": "35703590132",
       "name": "Max Strong",
-      "current_rank": 104,
+      "current_rank": 106,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -149,11 +149,29 @@
         "losses": 0
       }
     },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35703595132",
+      "name": "Ashton Maynard",
+      "current_rank": 124,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      }
+    },
     "215": {
       "weight": 215,
       "wrestler_id": "35703613132",
       "name": "Zachary Tackett",
-      "current_rank": 271,
+      "current_rank": 267,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -171,7 +189,7 @@
       "weight": 285,
       "wrestler_id": "35703620132",
       "name": "Levi Howell",
-      "current_rank": 140,
+      "current_rank": 150,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -188,28 +206,28 @@
   },
   "remaining": [
     {
-      "weight": 126,
-      "wrestler_id": "35703606132",
-      "name": "Jordyn Hall",
-      "wins": 0,
-      "losses": 1,
+      "weight": 120,
+      "wrestler_id": "35703552132",
+      "name": "Jacob Boyd",
+      "wins": 3,
+      "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 0.667
     },
     {
-      "weight": 157,
+      "weight": 126,
+      "wrestler_id": "37026195132",
+      "name": "Beckham Coffman",
+      "wins": 1,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 144,
       "wrestler_id": "35703562132",
       "name": "Jesse Boyd",
-      "wins": 2,
-      "losses": 2,
-      "top25_wins": 0,
-      "bonus_rate": 0.5
-    },
-    {
-      "weight": 165,
-      "wrestler_id": "35703595132",
-      "name": "Ashton Maynard",
-      "wins": 2,
+      "wins": 4,
       "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 0.5
@@ -219,7 +237,7 @@
       "wrestler_id": "35703604132",
       "name": "Chase Newman",
       "wins": 3,
-      "losses": 2,
+      "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 0.667
     },
@@ -227,6 +245,15 @@
       "weight": 165,
       "wrestler_id": "37026158132",
       "name": "Oak Thompson",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "37026155132",
+      "name": "Mark Brown",
       "wins": 0,
       "losses": 1,
       "top25_wins": 0,
@@ -253,30 +280,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 10,
-      "losses": 14
+      "wins": 12,
+      "losses": 16
     },
     "top33": {
       "wins": 0,
-      "losses": 2
+      "losses": 3
     },
     "top10": {
       "wins": 0,
       "losses": 1
     },
     "bonus_rate": {
-      "value": 0.6,
-      "rank": 133,
+      "value": 0.667,
+      "rank": 130,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.6,
-      "rank": 106,
+      "value": 0.667,
+      "rank": 63,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 137,
+      "rank": 138,
       "rank_scope": "league"
     }
   }

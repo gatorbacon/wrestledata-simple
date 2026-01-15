@@ -3,23 +3,23 @@
   "name": "Thomas Stills",
   "team": "Meade County",
   "team_slug": "meade_county",
-  "team_rank": 106,
+  "team_rank": 108,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 53,
+  "current_rank": 59,
   "record": {
     "overall": "2-2",
     "vs_ranked": "1-2",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 102.0,
+    "df_plus": 102.0,
+    "apr_plus": 103.0,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -30,18 +30,18 @@
     "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34993870132",
-      "opponent_rank": 65,
+      "opponent_rank": 70,
       "opponent_name": "Carver Berry",
       "method": "Fall 1:36"
     },
     "worst_loss": {
-      "opponent_id": "35007900132",
-      "opponent_rank": 40,
-      "opponent_name": "Justus Smith",
-      "method": "Fall 1:36"
+      "opponent_id": "34989058132",
+      "opponent_rank": 18,
+      "opponent_name": "Kaleb Myers",
+      "method": "Fall 1:15"
     }
   },
   "match_list": [
@@ -50,9 +50,9 @@
       "opponent_id": "34989058132",
       "opponent_name": "Kaleb Myers",
       "opponent_team": "North Hardin",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 51,
       "opponent_weight": 285,
-      "opponent_rank": 10,
+      "opponent_rank": 18,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "34993870132",
       "opponent_name": "Carver Berry",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 87,
       "opponent_weight": 285,
-      "opponent_rank": 65,
+      "opponent_rank": 70,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -95,15 +95,32 @@
       "opponent_id": "35007900132",
       "opponent_name": "Justus Smith",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 285,
-      "opponent_rank": 40,
+      "opponent_rank": 16,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:36",
       "event": "vs. South Warren"
+    }
+  ],
+  "career": {
+    "career_id": "career_005547",
+    "canonical_name": "Thomas Stills",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Meade County",
+      "record": "5-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -3,10 +3,10 @@
   "name": "Jason Maggard",
   "team": "Harlan County",
   "team_slug": "harlan_county",
-  "team_rank": 85,
+  "team_rank": 90,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 26,
+  "current_rank": 24,
   "record": {
     "overall": "3-0",
     "vs_ranked": "3-0",
@@ -17,9 +17,9 @@
     "pf7": 16.5,
     "pa7": 0.5,
     "pd7": 16.0,
-    "si_plus": 111.7,
-    "df_plus": 115.2,
-    "apr_plus": 96.0,
+    "si_plus": 108.7,
+    "df_plus": 114.0,
+    "apr_plus": 95.7,
     "pin_rate": 0.333,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35030252132",
-      "opponent_rank": 30,
+      "opponent_rank": 26,
       "opponent_name": "Quentin Troxell",
       "method": "TF 17-1 0:00"
     },
@@ -45,53 +45,83 @@
       "opponent_id": "35703467132",
       "opponent_name": "Kai Munoz",
       "opponent_team": "Floyd Central",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 81,
       "opponent_weight": 113,
-      "opponent_rank": 99,
+      "opponent_rank": 101,
       "weight_class": "113",
       "result": "W",
       "method": "TF",
       "score": "16-0",
       "duration": "0:00",
       "event": "Cougar Classic",
-      "mv_impact": -0.06
+      "mv_impact": -0.21
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35013065132",
       "opponent_name": "Chris Richie",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 113,
-      "opponent_rank": 38,
+      "opponent_rank": 45,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:54",
       "event": "Cougar Classic",
-      "mv_impact": 5.32
+      "mv_impact": 5.11
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35030252132",
       "opponent_name": "Quentin Troxell",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 113,
-      "opponent_rank": 30,
+      "opponent_rank": 26,
       "weight_class": "113",
       "result": "W",
       "method": "TF",
       "score": "17-1",
       "duration": "0:00",
       "event": "Cougar Classic",
-      "mv_impact": 6.22
+      "mv_impact": 5.88
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 1.5,
-    "top33_bonus_ev_shrunk": 1.5968660968660968
-  }
+  "career": {
+    "career_id": "career_001096",
+    "canonical_name": "Jason Maggard",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Harlan County",
+      "record": "3-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Harlan County",
+      "record": "16-10",
+      "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Harlan County",
+      "record": "13-7",
+      "regional_place": 4,
+      "state_place": null
+    }
+  ]
 }

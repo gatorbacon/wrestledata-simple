@@ -3,13 +3,13 @@
   "name": "Carson Brown",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 50,
+  "team_rank": 56,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 164,
+  "current_rank": 157,
   "record": {
-    "overall": "1-3",
-    "vs_ranked": "0-3",
+    "overall": "1-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 88.9,
+    "df_plus": 102.0,
+    "apr_plus": 90.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,48 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35638360132",
-      "opponent_rank": 135,
+      "opponent_rank": 213,
       "opponent_name": "Gael Stearns",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34993884132",
+      "opponent_name": "Ryder Sadler",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 175,
+      "opponent_rank": 34,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Green County"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35638360132",
+      "opponent_name": "Gael Stearns",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 165,
+      "opponent_rank": 213,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -56,28 +86,13 @@
       "event": "vs. Pulaski County"
     },
     {
-      "date": "2025-12-20",
-      "opponent_id": "35638360132",
-      "opponent_name": "Gael Stearns",
-      "opponent_team": "Russell County",
-      "opponent_team_rank": 19,
-      "opponent_weight": 175,
-      "opponent_rank": 135,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Russell County"
-    },
-    {
       "date": "2025-12-17",
       "opponent_id": "35205294132",
       "opponent_name": "Maddox Tabor",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 175,
-      "opponent_rank": 26,
+      "opponent_rank": 27,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -91,8 +106,8 @@
       "opponent_name": "Josh Delvecchio",
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
-      "opponent_weight": 165,
-      "opponent_rank": 131,
+      "opponent_weight": 175,
+      "opponent_rank": 156,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -101,9 +116,21 @@
       "event": "vs. Russell County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_004607",
+    "canonical_name": "Carson Brown",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Adair County",
+      "record": "1-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

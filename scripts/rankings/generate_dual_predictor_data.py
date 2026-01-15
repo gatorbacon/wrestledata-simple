@@ -17,7 +17,7 @@ Usage:
 import argparse
 import json
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Set
 
 
 def get_weights_for_gender(gender: str) -> List[int]:
@@ -89,11 +89,35 @@ def load_rankings_by_weight(
     return rankings_by_weight
 
 
+def load_boys_inactive_mask(season: int, data_dir: str) -> Set[str]:
+    """Load boys inactive wrestlers mask file."""
+    mask_file = Path(data_dir) / f"hs_ky_boys/{season}/boys_inactive_wrestlers.json"
+    
+    if not mask_file.exists():
+        return set()
+    
+    try:
+        with mask_file.open("r", encoding="utf-8") as f:
+            mask_data = json.load(f)
+        
+        masked_ids = set()
+        for wrestler in mask_data.get("masked_wrestlers", []):
+            wrestler_id = wrestler.get("boys_wrestler_id")
+            if wrestler_id:
+                masked_ids.add(str(wrestler_id))
+        
+        return masked_ids
+    except Exception as e:
+        print(f"Warning: Could not load boys inactive mask: {e}")
+        return set()
+
+
 def load_team_rosters(
     season: int,
     gender: str,
     teams_dir: Path,
-    rankings_by_weight: Dict[int, Dict[str, int]]
+    rankings_by_weight: Dict[int, Dict[str, int]],
+    masked_wrestler_ids: Set[str] = None
 ) -> Dict[str, Dict]:
     """
     Load all team JSON files and build unified roster structure.
@@ -161,6 +185,11 @@ def load_team_rosters(
                     continue
                 
                 wrestler_id = str(starter_data.get("wrestler_id", ""))
+                
+                # Skip masked wrestlers (boys only)
+                if masked_wrestler_ids and wrestler_id in masked_wrestler_ids:
+                    continue
+                
                 name = starter_data.get("name", "Unknown")
                 
                 # Get rank from rankings
@@ -186,6 +215,11 @@ def load_team_rosters(
                 
                 weight_str = str(weight)
                 wrestler_id = str(wrestler_data.get("wrestler_id", ""))
+                
+                # Skip masked wrestlers (boys only)
+                if masked_wrestler_ids and wrestler_id in masked_wrestler_ids:
+                    continue
+                
                 name = wrestler_data.get("name", "Unknown")
                 
                 # Get rank from rankings
@@ -319,12 +353,19 @@ def generate_all_rosters_json(
     """
     print(f"\nGenerating all_rosters.json...")
     
+    # Load boys inactive mask (if boys)
+    masked_wrestler_ids = set()
+    if gender == 'boys':
+        masked_wrestler_ids = load_boys_inactive_mask(season, data_dir)
+        if masked_wrestler_ids:
+            print(f"Loaded mask for {len(masked_wrestler_ids)} inactive boys wrestlers")
+    
     # Load FULL rankings to resolve ranks
     print("Loading FULL rankings from mt/rankings_data...")
     rankings_by_weight = load_rankings_by_weight(season, gender, data_dir)
     
     # Load team rosters
-    all_rosters = load_team_rosters(season, gender, teams_dir, rankings_by_weight)
+    all_rosters = load_team_rosters(season, gender, teams_dir, rankings_by_weight, masked_wrestler_ids)
     
     # Write output
     output_path.parent.mkdir(parents=True, exist_ok=True)

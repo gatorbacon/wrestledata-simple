@@ -3,12 +3,12 @@
   "name": "Gunnar Champion",
   "team": "Calloway County",
   "team_slug": "calloway_county",
-  "team_rank": 63,
+  "team_rank": 33,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 50,
+  "current_rank": 53,
   "record": {
-    "overall": "2-0",
+    "overall": "2-2",
     "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,9 +17,9 @@
     "pf7": 25.0,
     "pa7": 25.0,
     "pd7": 0.0,
-    "si_plus": 122.3,
-    "df_plus": 78.9,
-    "apr_plus": 94.1,
+    "si_plus": 122.8,
+    "df_plus": 77.2,
+    "apr_plus": 91.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,13 +33,43 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34993295132",
-      "opponent_rank": 53,
+      "opponent_rank": 57,
       "opponent_name": "Jackson Mattingly",
       "method": "TF 22-7 1:01"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34990901132",
+      "opponent_name": "Alijah Devon Hardison",
+      "opponent_team": "Gallatin High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35262814132",
+      "opponent_name": "Bentley Jaeckel",
+      "opponent_team": "Station Camp High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "2026 Commando Crush"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -60,15 +90,32 @@
       "opponent_id": "34993295132",
       "opponent_name": "Jackson Mattingly",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 71,
       "opponent_weight": 106,
-      "opponent_rank": 53,
+      "opponent_rank": 57,
       "weight_class": "106",
       "result": "W",
       "method": "TF",
       "score": "22-7",
       "duration": "1:01",
       "event": "2nd Annual Dickie Walls Invitational"
+    }
+  ],
+  "career": {
+    "career_id": "career_005266",
+    "canonical_name": "Gunnar Champion",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Calloway County",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

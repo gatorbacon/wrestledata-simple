@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 96.6,
+    "df_plus": 102.0,
+    "apr_plus": 97.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35271618132",
-      "opponent_rank": 25,
+      "opponent_rank": 24,
       "opponent_name": "Brennen East",
       "method": "Dec 4-1"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34992804132",
+      "opponent_rank": 1,
+      "opponent_name": "Ethan Masters",
+      "method": "Dec 8-5"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34992804132",
+      "opponent_name": "Ethan Masters",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 126,
+      "opponent_rank": 1,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "SWOWCA"
+    },
     {
       "date": "2025-12-21",
       "opponent_id": "35271618132",
       "opponent_name": "Brennen East",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 30,
       "opponent_weight": 132,
-      "opponent_rank": 25,
+      "opponent_rank": 24,
       "weight_class": "126",
       "result": "W",
       "method": "DEC",

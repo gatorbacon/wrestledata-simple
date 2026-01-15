@@ -3,10 +3,10 @@
   "name": "San`Tori Brown",
   "team": "Shawnee",
   "team_slug": "shawnee",
-  "team_rank": 124,
+  "team_rank": 126,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 147,
+  "current_rank": 114,
   "record": {
     "overall": "2-1",
     "vs_ranked": "1-0",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 114.4,
+    "df_plus": 102.0,
+    "apr_plus": 114.1,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35667912132",
-      "opponent_rank": 163,
+      "opponent_rank": 167,
       "opponent_name": "Min Lee",
       "method": "Fall 0:00"
     },
@@ -42,27 +42,12 @@
   "match_list": [
     {
       "date": "2025-12-23",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "DEC",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Iroquois"
-    },
-    {
-      "date": "2025-12-23",
       "opponent_id": "35667912132",
       "opponent_name": "Min Lee",
       "opponent_team": "Central",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 68,
       "opponent_weight": 106,
-      "opponent_rank": 163,
+      "opponent_rank": 167,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -71,11 +56,26 @@
       "event": "vs. Shawnee"
     },
     {
+      "date": "2025-12-23",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "OUTSTATE_4669a9b87418",
       "opponent_name": "Aaliyah Bronger",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "106",
@@ -86,9 +86,21 @@
       "event": "The Beast of the East"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  "career": {
+    "career_id": "career_004831",
+    "canonical_name": "San`Tori Brown",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Shawnee",
+      "record": "3-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

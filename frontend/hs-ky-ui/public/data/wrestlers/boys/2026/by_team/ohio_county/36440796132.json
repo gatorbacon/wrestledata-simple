@@ -3,13 +3,13 @@
   "name": "Trigden Ralph",
   "team": "Ohio County",
   "team_slug": "ohio_county",
-  "team_rank": 47,
+  "team_rank": 36,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 100,
+  "current_rank": 96,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "1-4",
+    "overall": "2-4",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,56 +17,72 @@
     "pf7": 14.79,
     "pa7": 25.0,
     "pd7": -10.21,
-    "si_plus": 108.6,
+    "si_plus": 109.4,
     "df_plus": 79.4,
-    "apr_plus": 93.9,
+    "apr_plus": 96.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35643316132",
-      "opponent_rank": 102,
-      "opponent_name": "Joseph Scott",
-      "method": "Fall 3:38"
+      "opponent_id": "35049083132",
+      "opponent_rank": 93,
+      "opponent_name": "Tristan Davis",
+      "method": "Fall 1:56"
     },
     "worst_loss": {
       "opponent_id": "35082294132",
-      "opponent_rank": 99,
+      "opponent_rank": 95,
       "opponent_name": "David Payne",
       "method": "Fall 2:44"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-08",
+      "opponent_id": "35049083132",
+      "opponent_name": "Tristan Davis",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 89,
+      "opponent_weight": 144,
+      "opponent_rank": 93,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "vs. Ohio County",
+      "mv_impact": 4.25
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35405353132",
       "opponent_name": "jaxon franks",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 86,
       "opponent_weight": 144,
-      "opponent_rank": 38,
+      "opponent_rank": 47,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:35",
       "event": "Warhawk Classic",
-      "mv_impact": -4.68
+      "mv_impact": -4.95
     },
     {
       "date": "2026-01-03",
       "opponent_id": "34993741132",
       "opponent_name": "Bracken King",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 144,
       "opponent_rank": 37,
       "weight_class": "144",
@@ -75,55 +91,72 @@
       "score": "22-5",
       "duration": "2:22",
       "event": "Warhawk Classic",
-      "mv_impact": -3.98
+      "mv_impact": -3.97
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35576566132",
       "opponent_name": "Joel Diaz",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 87,
       "opponent_weight": 138,
-      "opponent_rank": 90,
+      "opponent_rank": 58,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:33",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -6.26
+      "mv_impact": -5.77
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35082294132",
       "opponent_name": "David Payne",
       "opponent_team": "Bethlehem",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 62,
       "opponent_weight": 144,
-      "opponent_rank": 99,
+      "opponent_rank": 95,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:44",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -8.47
+      "mv_impact": -8.27
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35643316132",
       "opponent_name": "Joseph Scott",
       "opponent_team": "Campbellsville",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 67,
       "opponent_weight": 144,
-      "opponent_rank": 102,
+      "opponent_rank": 98,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:38",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": 3.66
+      "mv_impact": 3.77
+    }
+  ],
+  "career": {
+    "career_id": "career_005584",
+    "canonical_name": "Trigden Ralph",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Ohio County",
+      "record": "2-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

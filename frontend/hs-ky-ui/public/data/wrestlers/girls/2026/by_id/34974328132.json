@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "34974328132",
+  "name": "Alexandria Rosales",
+  "team": "Oak Grove High School",
+  "team_slug": "oak_grove_high_school",
+  "team_rank": null,
+  "weight_class": 145,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 105.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35600336132",
+      "opponent_rank": 21,
+      "opponent_name": "kaylee upchurch",
+      "method": "Fall 2:23"
+    },
+    "worst_loss": {
+      "opponent_id": "35333378132",
+      "opponent_rank": 2,
+      "opponent_name": "Chloe Gallahue",
+      "method": "Fall 0:34"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35333378132",
+      "opponent_name": "Chloe Gallahue",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 145,
+      "opponent_rank": 2,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "5th Annual Cardinal Clash Ladies Tourn"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35600336132",
+      "opponent_name": "kaylee upchurch",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 20,
+      "opponent_weight": 145,
+      "opponent_rank": 21,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:23",
+      "event": "5th Annual Cardinal Clash Ladies Tourn"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.474074074074074
+  }
+}

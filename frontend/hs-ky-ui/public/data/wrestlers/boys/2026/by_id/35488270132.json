@@ -3,10 +3,10 @@
   "name": "Aidan Maher",
   "team": "Covington Catholic",
   "team_slug": "covington_catholic",
-  "team_rank": 16,
+  "team_rank": 44,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 6,
+  "current_rank": 49,
   "record": {
     "overall": "3-2",
     "vs_ranked": "2-2",
@@ -17,9 +17,9 @@
     "pf7": 12.5,
     "pa7": 3.44,
     "pd7": 9.06,
-    "si_plus": 117.5,
-    "df_plus": 104.2,
-    "apr_plus": 97.0,
+    "si_plus": 105.1,
+    "df_plus": 110.6,
+    "apr_plus": 98.0,
     "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35281290132",
-      "opponent_rank": 52,
+      "opponent_rank": 55,
       "opponent_name": "Thomas Tilley",
       "method": "TF 16-1 3:43"
     },
     "worst_loss": {
       "opponent_id": "34992807132",
-      "opponent_rank": 5,
+      "opponent_rank": 7,
       "opponent_name": "Judah Carey",
       "method": "M. For."
     }
@@ -52,7 +52,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 157,
-      "opponent_rank": 5,
+      "opponent_rank": 7,
       "weight_class": "157",
       "result": "L",
       "method": "MFF",
@@ -65,9 +65,9 @@
       "opponent_id": "35219309132",
       "opponent_name": "Michael Gross",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 93,
       "opponent_weight": 157,
-      "opponent_rank": 122,
+      "opponent_rank": 115,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35281290132",
       "opponent_name": "Thomas Tilley",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 157,
-      "opponent_rank": 52,
+      "opponent_rank": 55,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
@@ -110,9 +110,9 @@
       "opponent_id": "35045481132",
       "opponent_name": "Emory Dix",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": 4,
+      "opponent_rank": 6,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
@@ -121,9 +121,30 @@
       "event": "Bearcat Brawl 2025"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8739795918367347
-  }
+  "career": {
+    "career_id": "career_000618",
+    "canonical_name": "Aidan Maher",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Covington Catholic",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Covington Catholic",
+      "record": "32-10",
+      "regional_place": 2,
+      "state_place": 8
+    }
+  ]
 }

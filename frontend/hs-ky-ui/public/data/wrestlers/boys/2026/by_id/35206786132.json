@@ -3,13 +3,13 @@
   "name": "Jared Antle",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 50,
+  "team_rank": 56,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 188,
+  "current_rank": 184,
   "record": {
-    "overall": "2-3",
-    "vs_ranked": "1-3",
+    "overall": "2-6",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 92.2,
+    "df_plus": 102.0,
+    "apr_plus": 90.7,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -28,31 +28,76 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35024704132",
-      "opponent_rank": 159,
+      "opponent_rank": 190,
       "opponent_name": "Levi Howell",
       "method": "Fall 4:38"
     },
     "worst_loss": {
-      "opponent_id": "35180959132",
-      "opponent_rank": 141,
-      "opponent_name": "Preston Evans",
-      "method": "Fall 0:48"
+      "opponent_id": "37526501132",
+      "opponent_rank": 168,
+      "opponent_name": "Gavin Owens",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34993867132",
+      "opponent_name": "Jackson Reynolds",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 157,
+      "opponent_rank": 39,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Green County"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "37526501132",
+      "opponent_name": "Gavin Owens",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 157,
+      "opponent_rank": 168,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35638223132",
+      "opponent_name": "Cameron Edison",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 150,
+      "opponent_rank": 118,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "Maroon`s New Year Brawl"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35180959132",
       "opponent_name": "Preston Evans",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 144,
-      "opponent_rank": 141,
+      "opponent_rank": 135,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -80,9 +125,9 @@
       "opponent_id": "35383664132",
       "opponent_name": "Tristan Stapleton",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 150,
-      "opponent_rank": 69,
+      "opponent_rank": 66,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -95,9 +140,9 @@
       "opponent_id": "35024704132",
       "opponent_name": "Levi Howell",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
-      "opponent_weight": 150,
-      "opponent_rank": 159,
+      "opponent_team_rank": 38,
+      "opponent_weight": 144,
+      "opponent_rank": 190,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -112,7 +157,7 @@
       "opponent_team": "Thomas Nelson",
       "opponent_team_rank": null,
       "opponent_weight": 150,
-      "opponent_rank": 43,
+      "opponent_rank": 38,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -121,9 +166,21 @@
       "event": "vs. Thomas Nelson"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_005171",
+    "canonical_name": "Jared Antle",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Adair County",
+      "record": "3-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,79 +3,107 @@
   "name": "Jaxen Skaggs",
   "team": "East Carter",
   "team_slug": "east_carter",
-  "team_rank": 42,
+  "team_rank": 76,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 57,
+  "current_rank": 53,
   "record": {
-    "overall": "3-6",
-    "vs_ranked": "2-6",
+    "overall": "5-6",
+    "vs_ranked": "3-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 97.7,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
-    "majors": 0,
+    "pf7": 10.0,
+    "pa7": 2.0,
+    "pd7": 8.0,
+    "si_plus": 101.5,
+    "df_plus": 113.5,
+    "apr_plus": 97.6,
+    "pin_rate": 0.6,
+    "bonus_rate": 0.8,
+    "majors": 1,
     "techs": 0,
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35896369132",
-      "opponent_rank": 72,
-      "opponent_name": "Gavin Payne",
-      "method": "Fall 0:00"
+      "opponent_id": "35897231132",
+      "opponent_rank": 57,
+      "opponent_name": "Jaxon Allen",
+      "method": "MD 10-2"
     },
     "worst_loss": {
       "opponent_id": "35896629132",
-      "opponent_rank": 102,
+      "opponent_rank": 105,
       "opponent_name": "Kaiden Diaz",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-06",
+      "opponent_id": "35897231132",
+      "opponent_name": "Jaxon Allen",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 113,
+      "opponent_rank": 57,
+      "weight_class": "113",
+      "result": "W",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. East Carter"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Ashland Blazer"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35754343132",
       "opponent_name": "Bentley Fleming",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 113,
-      "opponent_rank": 41,
+      "opponent_rank": 46,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:49",
-      "event": "vs. Lawrence County",
-      "mv_impact": -4.93
+      "event": "vs. Lawrence County"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35247370132",
       "opponent_name": "Evan Martin",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 113,
-      "opponent_rank": 28,
+      "opponent_rank": 11,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:47",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -4.06
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -97,101 +125,116 @@
       "opponent_id": "35144534132",
       "opponent_name": "Jude Fortier",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 113,
-      "opponent_rank": 13,
+      "opponent_rank": 14,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:01",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -4.88
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35013065132",
       "opponent_name": "Chris Richie",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 113,
-      "opponent_rank": 38,
+      "opponent_rank": 45,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -6.68
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-16",
       "opponent_id": "35754343132",
       "opponent_name": "Bentley Fleming",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 113,
-      "opponent_rank": 41,
+      "opponent_rank": 46,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. Lawrence County",
-      "mv_impact": -4.93
+      "event": "vs. Lawrence County"
     },
     {
       "date": "2025-12-16",
       "opponent_id": "35635480132",
       "opponent_name": "Waylon Hall",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
-      "opponent_weight": 106,
-      "opponent_rank": 127,
+      "opponent_team_rank": 88,
+      "opponent_weight": 113,
+      "opponent_rank": 128,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Greenup County",
-      "mv_impact": 1.31
+      "event": "vs. Greenup County"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35896369132",
       "opponent_name": "Gavin Payne",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 113,
-      "opponent_rank": 72,
+      "opponent_rank": 71,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": 2.77
+      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35896629132",
       "opponent_name": "Kaiden Diaz",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 120,
-      "opponent_rank": 102,
+      "opponent_rank": 105,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": -9.73
+      "event": "Ashland Invitational Tournament"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3194444444444444
-  }
+  "career": {
+    "career_id": "career_000767",
+    "canonical_name": "Jaxen Skaggs",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "East Carter",
+      "record": "5-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "East Carter",
+      "record": "7-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

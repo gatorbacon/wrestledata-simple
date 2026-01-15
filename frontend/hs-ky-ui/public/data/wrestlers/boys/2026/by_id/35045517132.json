@@ -3,13 +3,13 @@
   "name": "Carter Taylor",
   "team": "Madison Central",
   "team_slug": "madison_central",
-  "team_rank": 11,
+  "team_rank": 17,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 48,
+  "current_rank": 40,
   "record": {
-    "overall": "6-1",
-    "vs_ranked": "6-1",
+    "overall": "6-2",
+    "vs_ranked": "6-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 14.5,
     "pa7": 15.0,
     "pd7": -0.5,
-    "si_plus": 109.1,
-    "df_plus": 95.3,
-    "apr_plus": 109.2,
+    "si_plus": 108.7,
+    "df_plus": 93.9,
+    "apr_plus": 108.6,
     "pin_rate": 0.833,
     "bonus_rate": 0.833,
     "majors": 0,
@@ -28,70 +28,86 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 6,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35850458132",
-      "opponent_rank": 50,
+      "opponent_rank": 45,
       "opponent_name": "Amos Blankenship",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35222658132",
-      "opponent_rank": 24,
-      "opponent_name": "Mijaia Dunn",
-      "method": "Dec 10-6"
+      "opponent_id": "35081208132",
+      "opponent_rank": 39,
+      "opponent_name": "Frank Niyonyishu",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35081208132",
+      "opponent_name": "Frank Niyonyishu",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 34,
+      "opponent_weight": 175,
+      "opponent_rank": 39,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Madison Central",
+      "mv_impact": -4.11
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35850458132",
       "opponent_name": "Amos Blankenship",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 175,
-      "opponent_rank": 50,
+      "opponent_rank": 45,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Warhawk Classic",
-      "mv_impact": 6.61
+      "mv_impact": 6.68
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35181259132",
       "opponent_name": "Jomal Harris",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 175,
-      "opponent_rank": 87,
+      "opponent_rank": 71,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:52",
       "event": "Warhawk Classic",
-      "mv_impact": 4.92
+      "mv_impact": 4.83
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35405492132",
       "opponent_name": "Thomas Macke",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 86,
       "opponent_weight": 175,
-      "opponent_rank": 89,
+      "opponent_rank": 59,
       "weight_class": "175",
       "result": "W",
       "method": "DEC",
       "score": "23-20",
       "duration": "7:00",
       "event": "Warhawk Classic",
-      "mv_impact": 2.49
+      "mv_impact": 2.56
     },
     {
       "date": "2025-12-06",
@@ -99,22 +115,38 @@
       "opponent_name": "Bryce Taylor",
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
-      "opponent_weight": 165,
-      "opponent_rank": 159,
+      "opponent_weight": 157,
+      "opponent_rank": 125,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:29",
       "event": "The Beast of the East",
-      "mv_impact": 0.92
+      "mv_impact": 1.94
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35638360132",
+      "opponent_name": "Gael Stearns",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 165,
+      "opponent_rank": 213,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:50",
+      "event": "The Beast of the East",
+      "mv_impact": 2.83
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35074425132",
       "opponent_name": "Emmanuel Cortes",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 175,
       "opponent_rank": 205,
       "weight_class": "175",
@@ -123,44 +155,49 @@
       "score": null,
       "duration": "0:27",
       "event": "The Beast of the East",
-      "mv_impact": 0.24
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35638360132",
-      "opponent_name": "Gael Stearns",
-      "opponent_team": "Russell County",
-      "opponent_team_rank": 19,
-      "opponent_weight": 175,
-      "opponent_rank": 135,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:50",
-      "event": "The Beast of the East",
-      "mv_impact": 2.33
+      "mv_impact": 0.21
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35222658132",
       "opponent_name": "Mijaia Dunn",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 175,
-      "opponent_rank": 24,
+      "opponent_rank": 19,
       "weight_class": "175",
       "result": "L",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
       "event": "The Beast of the East",
-      "mv_impact": 0.04
+      "mv_impact": 0.02
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_001515",
+    "canonical_name": "Carter Taylor",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Madison Central",
+      "record": "6-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Madison Central",
+      "record": "0-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

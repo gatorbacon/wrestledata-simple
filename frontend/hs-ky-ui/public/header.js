@@ -367,9 +367,8 @@
         }
         
         const results = fuse.search(query);
-        currentResults = results.slice(0, 10).map(r => r.item);
         
-        if (currentResults.length === 0) {
+        if (results.length === 0) {
           searchDropdown.innerHTML = `
             <div class="search-result-item search-result-empty">No results found</div>
           `;
@@ -378,8 +377,44 @@
           return;
         }
         
-        const wrestlers = currentResults.filter(r => r.type === 'wrestler');
-        const teams = currentResults.filter(r => r.type === 'team');
+        // Group by type, preserving Fuse.js relevance scores
+        const wrestlerResults = results.filter(r => r.item.type === 'wrestler');
+        const teamResults = results.filter(r => r.item.type === 'team');
+        
+        // Sort wrestlers: prioritize exact name matches, then Fuse.js relevance, then rank
+        const queryLower = query.toLowerCase();
+        wrestlerResults.sort((a, b) => {
+          const nameA = (a.item.name || '').toLowerCase();
+          const nameB = (b.item.name || '').toLowerCase();
+          
+          // Primary: Exact name matches (name starts with query or equals query)
+          const exactMatchA = nameA === queryLower || nameA.startsWith(queryLower);
+          const exactMatchB = nameB === queryLower || nameB.startsWith(queryLower);
+          
+          if (exactMatchA && !exactMatchB) return -1; // A is exact match, B is not
+          if (!exactMatchA && exactMatchB) return 1;  // B is exact match, A is not
+          
+          // Secondary: If both or neither are exact matches, use Fuse.js relevance score
+          if (exactMatchA === exactMatchB) {
+            const scoreA = a.score || 1;
+            const scoreB = b.score || 1;
+            if (Math.abs(scoreA - scoreB) > 0.01) {
+              return scoreA - scoreB; // Lower score = better match
+            }
+          }
+          
+          // Tertiary: Rank (only when relevance is similar or both are exact matches)
+          const rankA = a.item.rank !== null && a.item.rank !== undefined ? a.item.rank : 9999;
+          const rankB = b.item.rank !== null && b.item.rank !== undefined ? b.item.rank : 9999;
+          return rankA - rankB;
+        });
+        
+        // Limit to top 10 wrestlers after sorting
+        const topWrestlers = wrestlerResults.slice(0, 10);
+        let currentResults = topWrestlers.map(r => r.item).concat(teamResults.map(r => r.item));
+        
+        const wrestlers = topWrestlers.map(r => r.item);
+        const teams = teamResults.map(r => r.item);
         
         let html = '';
         
@@ -389,9 +424,13 @@
           html += '<div class="search-results">';
           wrestlers.forEach((item) => {
             const globalIdx = currentResults.indexOf(item);
+            // Add female symbol if gender is 'girls'
+            const nameDisplay = item.gender === 'girls' 
+              ? `${escapeHtml(item.name)} <span style="color: #ff69b4;">♀</span>`
+              : escapeHtml(item.name);
             html += `
               <div class="search-result" data-url="${item.url}" data-index="${globalIdx}">
-                <div class="search-name">${escapeHtml(item.name)}</div>
+                <div class="search-name">${nameDisplay}</div>
                 <div class="search-secondary">${escapeHtml(item.secondary)}</div>
               </div>
             `;
@@ -405,9 +444,16 @@
           html += '<div class="search-results">';
           teams.forEach((item) => {
             const globalIdx = currentResults.indexOf(item);
+            // Add gender symbol: blue ♂ for boys, pink ♀ for girls
+            let nameDisplay = escapeHtml(item.name);
+            if (item.gender === 'boys') {
+              nameDisplay += ' <span style="color: #0066cc;">♂</span>';
+            } else if (item.gender === 'girls') {
+              nameDisplay += ' <span style="color: #ff69b4;">♀</span>';
+            }
             html += `
               <div class="search-result" data-url="${item.url}" data-index="${globalIdx}">
-                <div class="search-name">${escapeHtml(item.name)}</div>
+                <div class="search-name">${nameDisplay}</div>
                 <div class="search-secondary">${escapeHtml(item.secondary)}</div>
               </div>
             `;
@@ -536,9 +582,8 @@
       
       // Perform search
       const results = fuse.search(query);
-      currentResults = results.slice(0, 10).map(r => r.item);
       
-      if (currentResults.length === 0) {
+      if (results.length === 0) {
         searchDropdown.innerHTML = `
           <div class="search-result-item search-result-empty">No results found</div>
         `;
@@ -547,9 +592,44 @@
         return;
       }
       
-      // Group by type
-      const wrestlers = currentResults.filter(r => r.type === 'wrestler');
-      const teams = currentResults.filter(r => r.type === 'team');
+      // Group by type, preserving Fuse.js relevance scores
+      const wrestlerResults = results.filter(r => r.item.type === 'wrestler');
+      const teamResults = results.filter(r => r.item.type === 'team');
+      
+      // Sort wrestlers: prioritize exact name matches, then Fuse.js relevance, then rank
+      const queryLower = query.toLowerCase();
+      wrestlerResults.sort((a, b) => {
+        const nameA = (a.item.name || '').toLowerCase();
+        const nameB = (b.item.name || '').toLowerCase();
+        
+        // Primary: Exact name matches (name starts with query or equals query)
+        const exactMatchA = nameA === queryLower || nameA.startsWith(queryLower);
+        const exactMatchB = nameB === queryLower || nameB.startsWith(queryLower);
+        
+        if (exactMatchA && !exactMatchB) return -1; // A is exact match, B is not
+        if (!exactMatchA && exactMatchB) return 1;  // B is exact match, A is not
+        
+        // Secondary: If both or neither are exact matches, use Fuse.js relevance score
+        if (exactMatchA === exactMatchB) {
+          const scoreA = a.score || 1;
+          const scoreB = b.score || 1;
+          if (Math.abs(scoreA - scoreB) > 0.01) {
+            return scoreA - scoreB; // Lower score = better match
+          }
+        }
+        
+        // Tertiary: Rank (only when relevance is similar or both are exact matches)
+        const rankA = a.item.rank !== null && a.item.rank !== undefined ? a.item.rank : 9999;
+        const rankB = b.item.rank !== null && b.item.rank !== undefined ? b.item.rank : 9999;
+        return rankA - rankB;
+      });
+      
+      // Limit to top 10 wrestlers after sorting
+      const topWrestlers = wrestlerResults.slice(0, 10);
+      currentResults = topWrestlers.map(r => r.item).concat(teamResults.map(r => r.item));
+      
+      const wrestlers = topWrestlers.map(r => r.item);
+      const teams = teamResults.map(r => r.item);
       
       let html = '';
       
@@ -559,9 +639,13 @@
         html += '<div class="search-results">';
         wrestlers.forEach((item, idx) => {
           const globalIdx = currentResults.indexOf(item);
+          // Add female symbol if gender is 'girls'
+          const nameDisplay = item.gender === 'girls' 
+            ? `${escapeHtml(item.name)} <span style="color: #ff69b4;">♀</span>`
+            : escapeHtml(item.name);
           html += `
             <div class="search-result" data-url="${item.url}" data-index="${globalIdx}">
-              <div class="search-name">${escapeHtml(item.name)}</div>
+              <div class="search-name">${nameDisplay}</div>
               <div class="search-secondary">${escapeHtml(item.secondary)}</div>
             </div>
           `;
@@ -575,9 +659,16 @@
         html += '<div class="search-results">';
         teams.forEach((item, idx) => {
           const globalIdx = currentResults.indexOf(item);
+          // Add gender symbol: blue ♂ for boys, pink ♀ for girls
+          let nameDisplay = escapeHtml(item.name);
+          if (item.gender === 'boys') {
+            nameDisplay += ' <span style="color: #0066cc;">♂</span>';
+          } else if (item.gender === 'girls') {
+            nameDisplay += ' <span style="color: #ff69b4;">♀</span>';
+          }
           html += `
             <div class="search-result" data-url="${item.url}" data-index="${globalIdx}">
-              <div class="search-name">${escapeHtml(item.name)}</div>
+              <div class="search-name">${nameDisplay}</div>
               <div class="search-secondary">${escapeHtml(item.secondary)}</div>
             </div>
           `;

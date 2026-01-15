@@ -4,12 +4,12 @@
   "team": "Johnston City",
   "team_slug": "johnston_city",
   "team_rank": null,
-  "weight_class": 144,
+  "weight_class": 138,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 93.6,
+    "df_plus": 102.0,
+    "apr_plus": 91.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -27,27 +27,47 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35281674132",
+      "opponent_rank": 180,
+      "opponent_name": "Zaven Branch",
+      "method": "M. For."
+    },
     "worst_loss": {
       "opponent_id": "35221006132",
-      "opponent_rank": 15,
+      "opponent_rank": 17,
       "opponent_name": "Justin Klidzejs",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35281674132",
+      "opponent_name": "Zaven Branch",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 106,
+      "opponent_weight": 138,
+      "opponent_rank": 180,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "64th Annual Murdale Wrestling Tournament"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35221006132",
       "opponent_name": "Justin Klidzejs",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 138,
-      "opponent_rank": 15,
+      "opponent_rank": 17,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -55,10 +75,5 @@
       "duration": "0:00",
       "event": "vs. Johnston City"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  ]
 }

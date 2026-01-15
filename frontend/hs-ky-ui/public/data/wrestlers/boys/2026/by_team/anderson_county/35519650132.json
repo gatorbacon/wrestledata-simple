@@ -3,10 +3,10 @@
   "name": "Jaylen Crutcher",
   "team": "Anderson County",
   "team_slug": "anderson_county",
-  "team_rank": 8,
+  "team_rank": 7,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 41,
+  "current_rank": 47,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -17,8 +17,8 @@
     "pf7": 14.42,
     "pa7": 16.97,
     "pd7": -2.55,
-    "si_plus": 108.4,
-    "df_plus": 92.1,
+    "si_plus": 108.8,
+    "df_plus": 91.6,
     "apr_plus": 97.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35433518132",
-      "opponent_rank": 45,
+      "opponent_rank": 60,
       "opponent_name": "Oliver Yonts",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35123979132",
-      "opponent_rank": 80,
+      "opponent_rank": 78,
       "opponent_name": "Jaxson Wallace",
       "method": "SV-1 20-17"
     }
@@ -50,16 +50,16 @@
       "opponent_id": "35123979132",
       "opponent_name": "Jaxson Wallace",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 144,
-      "opponent_rank": 80,
+      "opponent_rank": 78,
       "weight_class": "150",
       "result": "L",
       "method": "SV-1",
       "score": "20-17",
       "duration": "8:15",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -3.09
+      "mv_impact": -3.57
     },
     {
       "date": "2025-12-06",
@@ -75,23 +75,58 @@
       "score": null,
       "duration": "0:00",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -1.78
+      "mv_impact": -1.66
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35433518132",
       "opponent_name": "Oliver Yonts",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 96,
+      "opponent_team_rank": 99,
       "opponent_weight": 150,
-      "opponent_rank": 45,
+      "opponent_rank": 60,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": 5.57
+      "mv_impact": 5.0
+    }
+  ],
+  "career": {
+    "career_id": "career_000014",
+    "canonical_name": "Jaylen Crutcher",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Anderson County",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Anderson County",
+      "record": "11-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Franklin County",
+      "record": "27-16",
+      "regional_place": 4,
+      "state_place": null
     }
   ]
 }

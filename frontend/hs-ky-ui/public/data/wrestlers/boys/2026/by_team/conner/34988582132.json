@@ -6,9 +6,9 @@
   "team_rank": 10,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 98,
+  "current_rank": 100,
   "record": {
-    "overall": "4-3",
+    "overall": "4-5",
     "vs_ranked": "3-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,9 +17,9 @@
     "pf7": 9.0,
     "pa7": 0.0,
     "pd7": 9.0,
-    "si_plus": 100.0,
-    "df_plus": 115.9,
-    "apr_plus": 97.5,
+    "si_plus": 100.9,
+    "df_plus": 116.7,
+    "apr_plus": 99.4,
     "pin_rate": 0.5,
     "bonus_rate": 0.75,
     "majors": 1,
@@ -33,18 +33,48 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35488272132",
-      "opponent_rank": 100,
+      "opponent_rank": 102,
       "opponent_name": "Teddy Tapke",
       "method": "Fall 0:55"
     },
     "worst_loss": {
       "opponent_id": "35909543132",
-      "opponent_rank": 97,
+      "opponent_rank": 99,
       "opponent_name": "Matthew Ridings",
       "method": "Fall 2:02"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_5fa91d7439d1",
+      "opponent_name": "Preston Fifield",
+      "opponent_team": "Fairborn High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:56",
+      "event": "Bellbrook Invite"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_921e2df64abd",
+      "opponent_name": "Benjamin Tober",
+      "opponent_team": "Fairborn High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-8",
+      "duration": "7:00",
+      "event": "Bellbrook Invite"
+    },
     {
       "date": "2025-12-26",
       "opponent_id": "34988560132",
@@ -52,7 +82,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": 51,
+      "opponent_rank": 48,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -65,9 +95,9 @@
       "opponent_id": "35782789132",
       "opponent_name": "Owen Heidenreich",
       "opponent_team": "Holy Cross (Covington)",
-      "opponent_team_rank": 90,
-      "opponent_weight": 175,
-      "opponent_rank": 178,
+      "opponent_team_rank": 94,
+      "opponent_weight": 165,
+      "opponent_rank": 210,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "35488272132",
       "opponent_name": "Teddy Tapke",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 44,
       "opponent_weight": 165,
-      "opponent_rank": 100,
+      "opponent_rank": 102,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -95,9 +125,9 @@
       "opponent_id": "35909543132",
       "opponent_name": "Matthew Ridings",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 165,
-      "opponent_rank": 97,
+      "opponent_rank": 99,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -110,9 +140,9 @@
       "opponent_id": "35035538132",
       "opponent_name": "Kenzell Miller-Hatcher",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 165,
-      "opponent_rank": 57,
+      "opponent_rank": 53,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -125,7 +155,7 @@
       "opponent_id": "OUTSTATE_532976f777e7",
       "opponent_name": "Keatin Buchanan",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "165",
@@ -142,13 +172,30 @@
       "opponent_team": "Cooper",
       "opponent_team_rank": 9,
       "opponent_weight": 165,
-      "opponent_rank": 102,
+      "opponent_rank": 104,
       "weight_class": "165",
       "result": "W",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
       "event": "2025 JV Ryle Raider Rumble"
+    }
+  ],
+  "career": {
+    "career_id": "career_004955",
+    "canonical_name": "Conner Perkins",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Conner",
+      "record": "4-6",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

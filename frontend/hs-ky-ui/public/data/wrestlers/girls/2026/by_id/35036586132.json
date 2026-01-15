@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "35036586132",
+  "name": "Delilah Queen",
+  "team": "Maryville High School Girls",
+  "team_slug": "maryville_high_school_girls",
+  "team_rank": null,
+  "weight_class": 145,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 98.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35404898132",
+      "opponent_rank": 3,
+      "opponent_name": "Amy Velasco",
+      "method": "MD 15-6"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35404898132",
+      "opponent_name": "Amy Velasco",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": 3,
+      "weight_class": "145",
+      "result": "W",
+      "method": "MD",
+      "score": "15-6",
+      "duration": "7:00",
+      "event": "Fandetti-Richardson Brawl 2026-Girls"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 1.0,
+    "top33_bonus_ev_shrunk": 1.3629629629629632
+  }
+}

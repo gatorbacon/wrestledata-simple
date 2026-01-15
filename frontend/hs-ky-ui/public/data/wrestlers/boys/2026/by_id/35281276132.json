@@ -3,10 +3,10 @@
   "name": "Drew Blackburn",
   "team": "Dixie Heights",
   "team_slug": "dixie_heights",
-  "team_rank": 70,
+  "team_rank": 73,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 49,
+  "current_rank": 59,
   "record": {
     "overall": "7-5",
     "vs_ranked": "5-3",
@@ -17,9 +17,9 @@
     "pf7": 4.24,
     "pa7": 15.47,
     "pd7": -11.23,
-    "si_plus": 83.7,
-    "df_plus": 89.3,
-    "apr_plus": 99.6,
+    "si_plus": 93.0,
+    "df_plus": 94.2,
+    "apr_plus": 98.8,
     "pin_rate": 0.429,
     "bonus_rate": 0.429,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35225528132",
-      "opponent_rank": 28,
+      "opponent_rank": 34,
       "opponent_name": "Joshua Klose",
       "method": "DQ"
     },
     "worst_loss": {
       "opponent_id": "34995408132",
-      "opponent_rank": 59,
+      "opponent_rank": 54,
       "opponent_name": "Preston Grigsby",
       "method": "Fall 1:06"
     }
@@ -52,7 +52,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 120,
-      "opponent_rank": 3,
+      "opponent_rank": 4,
       "weight_class": "120",
       "result": "L",
       "method": "TF",
@@ -65,9 +65,9 @@
       "opponent_id": "34995408132",
       "opponent_name": "Preston Grigsby",
       "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 99,
+      "opponent_team_rank": 35,
       "opponent_weight": 120,
-      "opponent_rank": 59,
+      "opponent_rank": 54,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "35127027132",
       "opponent_name": "Waylon Riggs",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 120,
-      "opponent_rank": 92,
+      "opponent_rank": 95,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -125,9 +125,9 @@
       "opponent_id": "35767085132",
       "opponent_name": "Tyler Monroe",
       "opponent_team": "Bath County",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 59,
       "opponent_weight": 120,
-      "opponent_rank": 159,
+      "opponent_rank": 161,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -140,9 +140,9 @@
       "opponent_id": "34995408132",
       "opponent_name": "Preston Grigsby",
       "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 99,
+      "opponent_team_rank": 35,
       "opponent_weight": 120,
-      "opponent_rank": 59,
+      "opponent_rank": 54,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35488266132",
       "opponent_name": "Garrett Fohl",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
-      "opponent_weight": 120,
-      "opponent_rank": 50,
+      "opponent_team_rank": 44,
+      "opponent_weight": 126,
+      "opponent_rank": 181,
       "weight_class": "120",
       "result": "W",
       "method": "SV-1",
@@ -170,7 +170,7 @@
       "opponent_id": "OUTSTATE_96a83459dfd0",
       "opponent_name": "Suman Allay",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "120",
@@ -185,9 +185,9 @@
       "opponent_id": "35225528132",
       "opponent_name": "Joshua Klose",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 85,
       "opponent_weight": 120,
-      "opponent_rank": 28,
+      "opponent_rank": 34,
       "weight_class": "120",
       "result": "W",
       "method": "DEC",
@@ -200,9 +200,9 @@
       "opponent_id": "35118906132",
       "opponent_name": "Hayden Schweinzger",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 113,
-      "opponent_rank": 78,
+      "opponent_rank": 74,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -226,9 +226,30 @@
       "event": "vs. Cooper"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 1.1627906976744187
-  }
+  "career": {
+    "career_id": "career_000680",
+    "canonical_name": "Drew Blackburn",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Dixie Heights",
+      "record": "8-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Dixie Heights",
+      "record": "7-17",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,10 +3,10 @@
   "name": "Dilynn Smith",
   "team": "Campbellsville",
   "team_slug": "campbellsville",
-  "team_rank": 64,
+  "team_rank": 67,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 169,
+  "current_rank": 176,
   "record": {
     "overall": "0-3",
     "vs_ranked": "0-3",
@@ -18,7 +18,7 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
+    "df_plus": 102.0,
     "apr_plus": 86.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35652052132",
-      "opponent_rank": 136,
+      "opponent_rank": 146,
       "opponent_name": "Levi Muth",
       "method": "Fall 0:00"
     }
@@ -45,53 +45,83 @@
       "opponent_id": "34995977132",
       "opponent_name": "Brayden Pace",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 285,
-      "opponent_rank": 110,
+      "opponent_rank": 119,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "JV Regional 7",
-      "mv_impact": -8.23
+      "mv_impact": -8.29
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35325223132",
       "opponent_name": "Ian Tibbs",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 101,
+      "opponent_team_rank": 103,
       "opponent_weight": 285,
-      "opponent_rank": 60,
+      "opponent_rank": 63,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -5.11
+      "mv_impact": -5.49
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35652052132",
       "opponent_name": "Levi Muth",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 285,
-      "opponent_rank": 136,
+      "opponent_rank": 146,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -9.67
+      "mv_impact": -9.72
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_000434",
+    "canonical_name": "Dilynn Smith",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Campbellsville",
+      "record": "0-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Campbellsville",
+      "record": "0-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Campbellsville",
+      "record": "0-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

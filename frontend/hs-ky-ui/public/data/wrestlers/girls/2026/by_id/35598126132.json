@@ -3,12 +3,12 @@
   "name": "Brianna Rice",
   "team": "Trigg County",
   "team_slug": "trigg_county",
-  "team_rank": 16,
+  "team_rank": 15,
   "weight_class": 235,
   "year": 2026,
-  "current_rank": 16,
+  "current_rank": 19,
   "record": {
-    "overall": "2-4",
+    "overall": "3-4",
     "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "1-3"
@@ -17,14 +17,14 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 102.4,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 102.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35465667132",
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "opponent_name": "Lillian Harned",
       "method": "Fall 0:38"
     },
     "worst_loss": {
       "opponent_id": "35333620132",
-      "opponent_rank": 55,
+      "opponent_rank": 34,
       "opponent_name": "Addysen Dotson",
       "method": "Fall 1:16"
     }
@@ -52,46 +52,58 @@
       "opponent_team": "McCracken County",
       "opponent_team_rank": null,
       "opponent_weight": 235,
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "weight_class": "235",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:38",
-      "event": "Sister Slam",
-      "mv_impact": 5.48
+      "event": "Sister Slam"
     },
     {
       "date": "2025-12-12",
       "opponent_id": "35598131132",
       "opponent_name": "Avagayle Lingenfelter",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 235,
-      "opponent_rank": 12,
+      "opponent_rank": 13,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:06",
-      "event": "Sister Slam",
-      "mv_impact": -4.53
+      "event": "Sister Slam"
     },
     {
       "date": "2025-12-12",
       "opponent_id": "35598127132",
       "opponent_name": "Areonna Quarles",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 235,
-      "opponent_rank": 15,
+      "opponent_rank": 18,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:26",
-      "event": "Sister Slam",
-      "mv_impact": -5.99
+      "event": "Sister Slam"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35713702132",
+      "opponent_name": "Ava Seavers",
+      "opponent_team": "West Frankfort (Frankfort)",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": null,
+      "weight_class": "235",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
+      "event": "Sister Slam"
     },
     {
       "date": "2025-12-06",
@@ -100,30 +112,28 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 235,
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:13",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -3.23
+      "event": "2025 Ohio County Girls` Invitational"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35333620132",
       "opponent_name": "Addysen Dotson",
       "opponent_team": "Taylor County",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 58,
       "opponent_weight": 185,
-      "opponent_rank": 55,
+      "opponent_rank": 34,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:16",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -9.39
+      "event": "2025 Ohio County Girls` Invitational"
     },
     {
       "date": "2025-12-06",
@@ -132,19 +142,18 @@
       "opponent_team": "Union County",
       "opponent_team_rank": null,
       "opponent_weight": 235,
-      "opponent_rank": 52,
+      "opponent_rank": 49,
       "weight_class": "235",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 0.58
+      "event": "2025 Ohio County Girls` Invitational"
     }
   ],
   "bonus": {
     "top33_wins": 1,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.7777777777777777
+    "top33_bonus_ev_shrunk": 1.824175824175824
   }
 }

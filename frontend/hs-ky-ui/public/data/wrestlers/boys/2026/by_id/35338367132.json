@@ -4,22 +4,22 @@
   "team": "Trinity (Louisville)",
   "team_slug": "trinity_louisville",
   "team_rank": 131,
-  "weight_class": 132,
+  "weight_class": 126,
   "year": 2026,
-  "current_rank": 44,
+  "current_rank": 65,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "3-1",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "3-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 12.5,
     "pa7": 5.0,
     "pd7": 7.5,
-    "si_plus": 105.4,
-    "df_plus": 108.9,
-    "apr_plus": 107.4,
+    "si_plus": 105.6,
+    "df_plus": 109.1,
+    "apr_plus": 104.5,
     "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,20 +28,20 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35144080132",
-      "opponent_rank": 63,
+      "opponent_rank": 66,
       "opponent_name": "Colin Yurt",
       "method": "Fall 0:19"
     },
     "worst_loss": {
-      "opponent_id": "35031571132",
-      "opponent_rank": 2,
-      "opponent_name": "Brennen Clifford",
-      "method": "MD 10-0"
+      "opponent_id": "35031565132",
+      "opponent_rank": 6,
+      "opponent_name": "Jacob Ramsey",
+      "method": "Fall 2:32"
     }
   },
   "match_list": [
@@ -50,39 +50,55 @@
       "opponent_id": "35698454132",
       "opponent_name": "Dominik Vittitoe",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 118,
       "opponent_weight": 126,
-      "opponent_rank": 173,
+      "opponent_rank": 168,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
       "event": "vs. Trinity (Louisville)",
-      "mv_impact": 0.54
+      "mv_impact": 2.29
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35031565132",
+      "opponent_name": "Jacob Ramsey",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 126,
+      "opponent_rank": 6,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:32",
+      "event": "Holiday Classic",
+      "mv_impact": -2.95
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35144080132",
       "opponent_name": "Colin Yurt",
       "opponent_team": "Desales",
-      "opponent_team_rank": 69,
-      "opponent_weight": 132,
-      "opponent_rank": 63,
+      "opponent_team_rank": 72,
+      "opponent_weight": 126,
+      "opponent_rank": 66,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:19",
       "event": "King of the Bluegrass",
-      "mv_impact": 5.58
+      "mv_impact": 5.59
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35090020132",
       "opponent_name": "Matthew Morgan",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 132,
       "opponent_rank": 66,
       "weight_class": "132",
@@ -91,14 +107,14 @@
       "score": "15-0",
       "duration": "1:18",
       "event": "King of the Bluegrass",
-      "mv_impact": 3.79
+      "mv_impact": 4.06
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35031571132",
       "opponent_name": "Brennen Clifford",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 132,
       "opponent_rank": 2,
       "weight_class": "132",
@@ -107,12 +123,42 @@
       "score": "10-0",
       "duration": "7:00",
       "event": "vs. Union County",
-      "mv_impact": -0.2
+      "mv_impact": -0.84
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_002748",
+    "canonical_name": "Declan Duncan",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Trinity (Louisville)",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Trinity (Louisville)",
+      "record": "30-16",
+      "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Trinity (Louisville)",
+      "record": "9-22",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

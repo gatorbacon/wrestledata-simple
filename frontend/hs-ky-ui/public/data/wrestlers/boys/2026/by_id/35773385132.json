@@ -3,12 +3,12 @@
   "name": "Hunter Fields",
   "team": "Johnson Central",
   "team_slug": "johnson_central",
-  "team_rank": 12,
+  "team_rank": 2,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 35,
+  "current_rank": 29,
   "record": {
-    "overall": "4-2",
+    "overall": "8-6",
     "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
@@ -17,14 +17,14 @@
     "pf7": 12.0,
     "pa7": 6.5,
     "pd7": 5.5,
-    "si_plus": 102.7,
+    "si_plus": 103.2,
     "df_plus": 105.2,
-    "apr_plus": 102.1,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.75,
+    "apr_plus": 101.8,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.875,
     "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 6
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35247372132",
-      "opponent_rank": 81,
+      "opponent_rank": 61,
       "opponent_name": "Adam Miller",
       "method": "Fall 0:43"
     },
@@ -46,59 +46,71 @@
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35774304132",
+      "opponent_name": "Dallas Owens",
+      "opponent_team": "Spring Mills HS",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "2:55",
+      "event": "Winner`s Choice"
+    },
+    {
       "date": "2025-12-30",
       "opponent_id": "35513068132",
       "opponent_name": "Braxton Jarrell",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 126,
-      "opponent_rank": 160,
+      "opponent_rank": 130,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:22",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 2.31
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35122084132",
       "opponent_name": "Braelyn Jimenez",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 126,
-      "opponent_rank": 87,
+      "opponent_rank": 94,
       "weight_class": "132",
       "result": "W",
       "method": "MD",
       "score": "13-1",
       "duration": "7:00",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 2.28
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35850444132",
       "opponent_name": "Bentley Brown",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 132,
-      "opponent_rank": 12,
+      "opponent_rank": 11,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:41",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -3.14
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35144509132",
       "opponent_name": "Noah Foley",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 132,
       "opponent_rank": 17,
       "weight_class": "132",
@@ -106,24 +118,22 @@
       "method": "DEC",
       "score": "12-11",
       "duration": "7:00",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -1.47
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35247372132",
       "opponent_name": "Adam Miller",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 132,
-      "opponent_rank": 81,
+      "opponent_rank": 61,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:43",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 4.59
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -139,11 +149,137 @@
       "score": "9-4",
       "duration": "7:00",
       "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35575126132",
+      "opponent_name": "Ty Arms",
+      "opponent_team": "Riverside Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "15-10",
+      "duration": "7:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35821803132",
+      "opponent_name": "Heath Matkins",
+      "opponent_team": "Woodrow Wilson",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35810423132",
+      "opponent_name": "Kadyn Allen",
+      "opponent_team": "Independence H.S.",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "36040485132",
+      "opponent_name": "Kameron Parker",
+      "opponent_team": "Greenbrier West Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35865453132",
+      "opponent_name": "Griffin Morriston",
+      "opponent_team": "Nicholas County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "36040484132",
+      "opponent_name": "Jacob Mooney",
+      "opponent_team": "Greenbrier West Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-6",
+      "duration": "7:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35623559132",
+      "opponent_name": "Colton Tolliver",
+      "opponent_team": "Liberty (Raleigh)",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "13-0",
+      "duration": "7:00",
+      "event": "FALLEN HEROS"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_001347",
+    "canonical_name": "Hunter Fields",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Johnson Central",
+      "record": "8-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Johnson Central",
+      "record": "23-17",
+      "regional_place": 3,
+      "state_place": null
+    }
+  ]
 }

@@ -3,143 +3,207 @@
   "name": "Wyatt Davis",
   "team": "Atherton",
   "team_slug": "atherton",
-  "team_rank": 23,
+  "team_rank": 21,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 108,
+  "current_rank": 62,
   "record": {
-    "overall": "1-6",
-    "vs_ranked": "1-6",
+    "overall": "3-8",
+    "vs_ranked": "3-8",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 3.83,
-    "pa7": 13.33,
-    "pd7": -9.5,
-    "si_plus": 96.3,
-    "df_plus": 95.0,
-    "apr_plus": 96.5,
+    "pf7": 4.28,
+    "pa7": 12.62,
+    "pd7": -8.35,
+    "si_plus": 94.9,
+    "df_plus": 100.2,
+    "apr_plus": 99.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_wins": 3,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35144081132",
-      "opponent_rank": 116,
-      "opponent_name": "Gabreil Byrd",
-      "method": "Fall 0:00"
+      "opponent_id": "35084080132",
+      "opponent_rank": 63,
+      "opponent_name": "Yahya Addi",
+      "method": "Fall 4:35"
     },
     "worst_loss": {
-      "opponent_id": "35104950132",
-      "opponent_rank": 76,
-      "opponent_name": "marcus anthony",
-      "method": "Fall 3:28"
+      "opponent_id": "35225681132",
+      "opponent_rank": 61,
+      "opponent_name": "Chris Burns",
+      "method": "Fall 3:16"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35084080132",
+      "opponent_name": "Yahya Addi",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 32,
+      "opponent_weight": 157,
+      "opponent_rank": 63,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:35",
+      "event": "2026 Lou City Wrestling",
+      "mv_impact": 3.96
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35283812132",
+      "opponent_name": "Joseph Schack",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 79,
+      "opponent_weight": 157,
+      "opponent_rank": 51,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TB-1",
+      "score": "15-8",
+      "duration": "10:00",
+      "event": "2026 Lou City Wrestling",
+      "mv_impact": -2.34
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35225656132",
+      "opponent_name": "David reynolds",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": 85,
+      "opponent_weight": 150,
+      "opponent_rank": 183,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:12",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": 0.47
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35225681132",
+      "opponent_name": "Chris Burns",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": 85,
+      "opponent_weight": 157,
+      "opponent_rank": 61,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:16",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -6.94
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "34994786132",
       "opponent_name": "Riley Sanford",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 157,
-      "opponent_rank": 10,
+      "opponent_rank": 4,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "21-4",
       "duration": "3:44",
       "event": "Boys Woodford County Invitational",
-      "mv_impact": -1.09
+      "mv_impact": -1.06
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35104950132",
       "opponent_name": "marcus anthony",
       "opponent_team": "Moore",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 27,
       "opponent_weight": 150,
-      "opponent_rank": 76,
+      "opponent_rank": 52,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:28",
       "event": "vs. Moore",
-      "mv_impact": -7.27
+      "mv_impact": -6.65
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35144081132",
       "opponent_name": "Gabreil Byrd",
       "opponent_team": "Desales",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": 116,
+      "opponent_rank": 111,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Desales",
-      "mv_impact": 2.58
+      "mv_impact": 2.09
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34995974132",
       "opponent_name": "Chase Brock",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 157,
-      "opponent_rank": 49,
+      "opponent_rank": 45,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
       "event": "vs. Bell County",
-      "mv_impact": -1.82
+      "mv_impact": -1.37
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35283812132",
       "opponent_name": "Joseph Schack",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 157,
-      "opponent_rank": 50,
+      "opponent_rank": 51,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "5-0",
       "duration": "0:00",
       "event": "vs. Atherton",
-      "mv_impact": -4.09
+      "mv_impact": -4.34
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35040567132",
       "opponent_name": "Leland Garcia",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 157,
-      "opponent_rank": 23,
+      "opponent_rank": 20,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:44",
       "event": "King of the Bluegrass",
-      "mv_impact": -4.44
+      "mv_impact": -4.25
     },
     {
       "date": "2025-12-13",
@@ -148,19 +212,40 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 157,
-      "opponent_rank": 31,
+      "opponent_rank": 27,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:45",
       "event": "King of the Bluegrass",
-      "mv_impact": -4.28
+      "mv_impact": -4.72
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  "career": {
+    "career_id": "career_000077",
+    "canonical_name": "Wyatt Davis",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Atherton",
+      "record": "3-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Atherton",
+      "record": "4-11",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "team_rank": 136,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 139,
+  "current_rank": 135,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 85.5,
+    "df_plus": 102.0,
+    "apr_plus": 89.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34993749132",
-      "opponent_rank": 124,
+      "opponent_rank": 80,
       "opponent_name": "Ford Furnish",
       "method": "Fall 0:00"
     }
@@ -42,35 +42,52 @@
   "match_list": [
     {
       "date": "2025-12-23",
-      "opponent_id": "34993749132",
-      "opponent_name": "Ford Furnish",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
-      "opponent_weight": 126,
-      "opponent_rank": 124,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Region 6 JV Region",
-      "mv_impact": -9.65
-    },
-    {
-      "date": "2025-12-23",
       "opponent_id": "35048604132",
       "opponent_name": "Ty Blankenship",
       "opponent_team": "Bourbon County",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 63,
       "opponent_weight": 126,
-      "opponent_rank": 43,
+      "opponent_rank": 29,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": -4.34
+      "mv_impact": -3.82
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "34993749132",
+      "opponent_name": "Ford Furnish",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 126,
+      "opponent_rank": 80,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Region 6 JV Region",
+      "mv_impact": -8.58
+    }
+  ],
+  "career": {
+    "career_id": "career_005761",
+    "canonical_name": "Connor Francis",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "West Jessamine",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -3,54 +3,84 @@
   "name": "Emory Dix",
   "team": "Madison Central",
   "team_slug": "madison_central",
-  "team_rank": 11,
+  "team_rank": 17,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 4,
+  "current_rank": 6,
   "record": {
-    "overall": "5-1",
-    "vs_ranked": "4-1",
-    "vs_top10": "1-1",
-    "vs_top25": "1-1"
+    "overall": "8-2",
+    "vs_ranked": "6-2",
+    "vs_top10": "0-2",
+    "vs_top25": "1-2"
   },
   "metrics": {
-    "pf7": 7.59,
-    "pa7": 5.52,
-    "pd7": 2.08,
-    "si_plus": 106.0,
-    "df_plus": 101.1,
-    "apr_plus": 110.3,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
-    "majors": 0,
+    "pf7": 9.55,
+    "pa7": 6.26,
+    "pd7": 3.29,
+    "si_plus": 105.2,
+    "df_plus": 107.8,
+    "apr_plus": 108.1,
+    "pin_rate": 0.625,
+    "bonus_rate": 0.75,
+    "majors": 1,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 1,
-    "top10_wins": 1,
-    "top10_losses": 1,
+    "ranked_wins": 6,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35488270132",
-      "opponent_rank": 6,
-      "opponent_name": "Aidan Maher",
-      "method": "Dec 5-0"
+      "opponent_id": "34993547132",
+      "opponent_rank": 12,
+      "opponent_name": "Joseph Habimana",
+      "method": "MD 11-0"
     },
     "worst_loss": {
-      "opponent_id": "35527112132",
-      "opponent_rank": 3,
-      "opponent_name": "Carson Nance",
-      "method": "SV-1 13-12"
+      "opponent_id": "34994786132",
+      "opponent_rank": 4,
+      "opponent_name": "Riley Sanford",
+      "method": "Dec 14-12"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35081202132",
+      "opponent_name": "Malik Kamara",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 34,
+      "opponent_weight": 157,
+      "opponent_rank": 60,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Madison Central"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35523865132",
       "opponent_name": "Cristian Gomez-Peterson",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
       "opponent_rank": 99,
       "weight_class": "157",
@@ -61,11 +91,41 @@
       "event": "Warhawk Classic"
     },
     {
+      "date": "2026-01-03",
+      "opponent_id": "34993547132",
+      "opponent_name": "Joseph Habimana",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 157,
+      "opponent_rank": 12,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34994786132",
+      "opponent_name": "Riley Sanford",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 157,
+      "opponent_rank": 4,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "14-12",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35527112132",
       "opponent_name": "Carson Nance",
       "opponent_team": "Anderson County",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 7,
       "opponent_weight": 157,
       "opponent_rank": 3,
       "weight_class": "157",
@@ -80,9 +140,9 @@
       "opponent_id": "35488270132",
       "opponent_name": "Aidan Maher",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": 6,
+      "opponent_rank": 49,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
@@ -95,9 +155,9 @@
       "opponent_id": "35281290132",
       "opponent_name": "Thomas Tilley",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 157,
-      "opponent_rank": 52,
+      "opponent_rank": 55,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -110,9 +170,9 @@
       "opponent_id": "35219309132",
       "opponent_name": "Michael Gross",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 93,
       "opponent_weight": 157,
-      "opponent_rank": 122,
+      "opponent_rank": 115,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -136,9 +196,39 @@
       "event": "Bearcat Brawl 2025"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.7768707482993197
-  }
+  "career": {
+    "career_id": "career_001498",
+    "canonical_name": "Emory Dix",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Madison Central",
+      "record": "9-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Madison Central",
+      "record": "25-5",
+      "regional_place": 1,
+      "state_place": 4
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Madison Central",
+      "record": "20-7",
+      "regional_place": 3,
+      "state_place": null
+    }
+  ]
 }

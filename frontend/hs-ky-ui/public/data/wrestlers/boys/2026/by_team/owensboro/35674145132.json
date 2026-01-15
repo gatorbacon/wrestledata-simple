@@ -3,23 +3,23 @@
   "name": "Caleb Hayden",
   "team": "Owensboro",
   "team_slug": "owensboro",
-  "team_rank": 38,
+  "team_rank": 37,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 193,
+  "current_rank": 179,
   "record": {
-    "overall": "3-7",
+    "overall": "3-10",
     "vs_ranked": "0-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 90.0,
+    "pa7": 3.0,
+    "pd7": -3.0,
+    "si_plus": 82.1,
+    "df_plus": 111.3,
+    "apr_plus": 89.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,20 +34,65 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35567161132",
-      "opponent_rank": 156,
+      "opponent_rank": 147,
       "opponent_name": "Chase Finley",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35207990132",
+      "opponent_name": "Mattix Sohne",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 132,
+      "opponent_rank": 100,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_a77bce79e3a5",
+      "opponent_name": "Elijah Jackson",
+      "opponent_team": "Bath County",
+      "opponent_team_rank": 59,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35225877132",
+      "opponent_name": "Abraham Patterson",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 71,
+      "opponent_weight": 132,
+      "opponent_rank": 76,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "vs. Owensboro"
+    },
+    {
       "date": "2025-12-23",
       "opponent_id": "35207990132",
       "opponent_name": "Mattix Sohne",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 132,
-      "opponent_rank": 102,
+      "opponent_rank": 100,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -60,24 +105,9 @@
       "opponent_id": "35567161132",
       "opponent_name": "Chase Finley",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 57,
       "opponent_weight": 132,
-      "opponent_rank": 156,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Owensboro"
-    },
-    {
-      "date": "2025-12-22",
-      "opponent_id": "35064911132",
-      "opponent_name": "Nathaniel Pingle",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 132,
-      "opponent_rank": 100,
+      "opponent_rank": 147,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -101,11 +131,26 @@
       "event": "vs. Trinity (Whitesville)"
     },
     {
+      "date": "2025-12-22",
+      "opponent_id": "35064911132",
+      "opponent_name": "Nathaniel Pingle",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35281688132",
       "opponent_name": "James Walker",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 113,
       "opponent_rank": 65,
       "weight_class": "126",
@@ -120,9 +165,9 @@
       "opponent_id": "35133611132",
       "opponent_name": "Christon Johnson",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 120,
-      "opponent_rank": 74,
+      "opponent_rank": 77,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -147,21 +192,6 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "35064909132",
-      "opponent_name": "Bruce Anderson",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 132,
-      "opponent_rank": 21,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:18",
-      "event": "vs. Owensboro"
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_name": "Unknown",
       "opponent_team": "Unknown",
@@ -177,6 +207,21 @@
     },
     {
       "date": "2025-11-29",
+      "opponent_id": "35064909132",
+      "opponent_name": "Bruce Anderson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2025-11-29",
       "opponent_id": "OUTSTATE_3fba88d6de13",
       "opponent_name": ".j .hardin",
       "opponent_team": "Tournament Allstars",
@@ -189,6 +234,23 @@
       "score": "11-4",
       "duration": "7:00",
       "event": "vs. Tournament Allstars"
+    }
+  ],
+  "career": {
+    "career_id": "career_005066",
+    "canonical_name": "Caleb Hayden",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Owensboro",
+      "record": "4-10",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -3,79 +3,167 @@
   "name": "Tucker Langford",
   "team": "Pulaski County",
   "team_slug": "pulaski_county",
-  "team_rank": 118,
+  "team_rank": 120,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 55,
+  "current_rank": 69,
   "record": {
-    "overall": "7-1",
-    "vs_ranked": "7-1",
-    "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "overall": "9-5",
+    "vs_ranked": "8-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 5.0,
-    "pa7": 16.0,
-    "pd7": -11.0,
-    "si_plus": 93.7,
-    "df_plus": 85.5,
-    "apr_plus": 112.9,
-    "pin_rate": 0.857,
-    "bonus_rate": 0.857,
+    "pf7": 3.75,
+    "pa7": 16.5,
+    "pd7": -12.75,
+    "si_plus": 90.6,
+    "df_plus": 91.2,
+    "apr_plus": 105.7,
+    "pin_rate": 0.778,
+    "bonus_rate": 0.778,
     "majors": 0,
     "techs": 0,
-    "pins": 6
+    "pins": 7
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
-    "ranked_losses": 1,
+    "ranked_wins": 8,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35001150132",
-      "opponent_rank": 25,
+      "opponent_rank": 70,
       "opponent_name": "Giazzi Segarra",
       "method": "Inj. [time]"
     },
     "worst_loss": {
       "opponent_id": "34997607132",
-      "opponent_rank": 49,
+      "opponent_rank": 85,
       "opponent_name": "Jackson Patrick",
       "method": "MD 16-5"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "34992807132",
+      "opponent_name": "Judah Carey",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 157,
+      "opponent_rank": 7,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Pulaski County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34997601132",
+      "opponent_name": "Trent Jenkins",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 69,
+      "opponent_weight": 150,
+      "opponent_rank": 35,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "0:00",
+      "event": "vs. Pulaski County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35188416132",
+      "opponent_name": "Alex Craven",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": 103,
+      "opponent_weight": 150,
+      "opponent_rank": 34,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "18-0",
+      "duration": "0:00",
+      "event": "vs. Pulaski County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35420411132",
+      "opponent_name": "Kevin Brown",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 150,
+      "opponent_rank": 55,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-6",
+      "duration": "7:00",
+      "event": "vs. Whitley County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35884355132",
+      "opponent_name": "dillon dugger",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 157,
+      "opponent_rank": 163,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Knox Central"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35206875132",
       "opponent_name": "Tyler Darling",
       "opponent_team": "Adair County",
-      "opponent_team_rank": 50,
-      "opponent_weight": 150,
-      "opponent_rank": 100,
+      "opponent_team_rank": 56,
+      "opponent_weight": 144,
+      "opponent_rank": 141,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:19",
-      "event": "vs. Pulaski County",
-      "mv_impact": 2.68
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35397100132",
       "opponent_name": "Dustin Hathaway",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 150,
-      "opponent_rank": 128,
+      "opponent_rank": 136,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "vs. Pulaski County",
-      "mv_impact": 2.1
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2025-12-20",
@@ -84,30 +172,28 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
       "opponent_weight": 157,
-      "opponent_rank": 176,
+      "opponent_rank": 161,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. Russell County",
-      "mv_impact": 0.49
+      "event": "vs. Russell County"
     },
     {
       "date": "2025-12-09",
       "opponent_id": "35001150132",
       "opponent_name": "Giazzi Segarra",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 150,
-      "opponent_rank": 25,
+      "opponent_rank": 70,
       "weight_class": "150",
       "result": "W",
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Pulaski County",
-      "mv_impact": 7.29
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2025-12-09",
@@ -116,67 +202,84 @@
       "opponent_team": "WEB DuBois",
       "opponent_team_rank": null,
       "opponent_weight": 150,
-      "opponent_rank": 104,
+      "opponent_rank": 107,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. WEB DuBois",
-      "mv_impact": 3.28
+      "event": "vs. WEB DuBois"
     },
     {
       "date": "2025-12-09",
       "opponent_id": "35271981132",
       "opponent_name": "Carter Jolley",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": 149,
+      "opponent_rank": 141,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pulaski County",
-      "mv_impact": 0.75
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2025-12-02",
       "opponent_id": "35129325132",
       "opponent_name": "Tucker Smallwood",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 144,
-      "opponent_rank": 78,
+      "opponent_rank": 75,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pulaski County",
-      "mv_impact": 4.96
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2025-12-02",
       "opponent_id": "34997607132",
       "opponent_name": "Jackson Patrick",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
-      "opponent_weight": 165,
-      "opponent_rank": 49,
+      "opponent_team_rank": 69,
+      "opponent_weight": 157,
+      "opponent_rank": 85,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "16-5",
       "duration": "7:00",
-      "event": "vs. Pulaski County",
-      "mv_impact": -3.41
+      "event": "vs. Pulaski County"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 0.9005847953216374
-  }
+  "career": {
+    "career_id": "career_002233",
+    "canonical_name": "Tucker Langford",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Pulaski County",
+      "record": "9-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Pulaski County",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

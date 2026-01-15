@@ -6,25 +6,25 @@
   "team_rank": null,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 3,
+  "current_rank": 2,
   "record": {
-    "overall": "15-1",
+    "overall": "18-1",
     "vs_ranked": "15-1",
     "vs_top10": "7-1",
-    "vs_top25": "8-1"
+    "vs_top25": "9-1"
   },
   "metrics": {
     "pf7": 20.0,
     "pa7": 3.72,
     "pd7": 16.28,
-    "si_plus": 116.3,
-    "df_plus": 105.8,
-    "apr_plus": 112.5,
-    "pin_rate": 0.733,
-    "bonus_rate": 0.933,
-    "majors": 0,
+    "si_plus": 115.7,
+    "df_plus": 107.8,
+    "apr_plus": 112.6,
+    "pin_rate": 0.722,
+    "bonus_rate": 0.944,
+    "majors": 1,
     "techs": 3,
-    "pins": 11
+    "pins": 13
   },
   "opponent_breakdown": {
     "ranked_wins": 15,
@@ -33,7 +33,7 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35333405132",
-      "opponent_rank": 5,
+      "opponent_rank": 4,
       "opponent_name": "Bailey Fletcher",
       "method": "Fall 4:36"
     },
@@ -46,52 +46,94 @@
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35011038132",
+      "opponent_name": "Holly Webb",
+      "opponent_team": "Hardin Valley Academy Girls",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "Fandetti-Richardson Brawl 2026-Girls"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35014691132",
+      "opponent_name": "Karina Martinez",
+      "opponent_team": "A.L. Brown High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "Fandetti-Richardson Brawl 2026-Girls"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35160816132",
+      "opponent_name": "Sadie Kellerman",
+      "opponent_team": "Elizabethton High School Girls",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "Fandetti-Richardson Brawl 2026-Girls"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35333635132",
       "opponent_name": "Alyson Chaney",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 39,
       "opponent_weight": 120,
-      "opponent_rank": 26,
+      "opponent_rank": 27,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
-      "event": "Ladies Warhawk Classic",
-      "mv_impact": 6.83
+      "event": "Ladies Warhawk Classic"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35333405132",
       "opponent_name": "Bailey Fletcher",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 39,
       "opponent_weight": 120,
-      "opponent_rank": 5,
+      "opponent_rank": 4,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:29",
-      "event": "Ladies Warhawk Classic",
-      "mv_impact": 9.0
+      "event": "Ladies Warhawk Classic"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35333399132",
       "opponent_name": "Laura Rodriguez Arias",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 120,
-      "opponent_rank": 10,
+      "opponent_rank": 8,
       "weight_class": "120",
       "result": "W",
       "method": "DEC",
       "score": "14-7",
       "duration": "7:00",
-      "event": "Ladies Warhawk Classic",
-      "mv_impact": 4.66
+      "event": "Ladies Warhawk Classic"
     },
     {
       "date": "2026-01-03",
@@ -100,21 +142,35 @@
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 42,
+      "opponent_rank": 24,
       "weight_class": "120",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "2:46",
-      "event": "Ladies Warhawk Classic",
-      "mv_impact": 4.52
+      "event": "Ladies Warhawk Classic"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333633132",
+      "opponent_name": "Juliette Ruiz",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 26,
+      "opponent_weight": 114,
+      "opponent_rank": 1,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:15",
+      "event": "Fern Creek Gladiator Ladies"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35909987132",
       "opponent_name": "Romance Lateef",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 114,
       "opponent_rank": 81,
       "weight_class": "120",
@@ -122,72 +178,52 @@
       "method": "FALL",
       "score": null,
       "duration": "1:44",
-      "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": 3.28
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "35333633132",
-      "opponent_name": "Juliette Ruiz",
-      "opponent_team": "Ballard",
-      "opponent_team_rank": 25,
-      "opponent_weight": 120,
-      "opponent_rank": 1,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:15",
-      "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": -1.88
+      "event": "Fern Creek Gladiator Ladies"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35333399132",
       "opponent_name": "Laura Rodriguez Arias",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 120,
-      "opponent_rank": 10,
+      "opponent_rank": 8,
       "weight_class": "120",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "0:00",
-      "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": 6.66
+      "event": "Fern Creek Gladiator Ladies"
     },
     {
       "date": "2025-12-19",
       "opponent_id": "35333405132",
       "opponent_name": "Bailey Fletcher",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 39,
       "opponent_weight": 120,
-      "opponent_rank": 5,
+      "opponent_rank": 4,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:36",
-      "event": "Ladies 5 Star Classic",
-      "mv_impact": 9.0
+      "event": "Ladies 5 Star Classic"
     },
     {
       "date": "2025-12-19",
       "opponent_id": "35942806132",
       "opponent_name": "Enzlee Foust",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 39,
       "opponent_weight": 126,
-      "opponent_rank": 79,
+      "opponent_rank": 78,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:15",
-      "event": "Ladies 5 Star Classic",
-      "mv_impact": 4.46
+      "event": "Ladies 5 Star Classic"
     },
     {
       "date": "2025-12-19",
@@ -196,46 +232,43 @@
       "opponent_team": "Woodford County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 23,
+      "opponent_rank": 21,
       "weight_class": "126",
       "result": "W",
       "method": "TF",
       "score": "17-1",
       "duration": "1:01",
-      "event": "Ladies 5 Star Classic",
-      "mv_impact": 6.35
+      "event": "Ladies 5 Star Classic"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35542615132",
       "opponent_name": "NaRhiya Davis",
       "opponent_team": "Central",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 18,
       "opponent_weight": 120,
-      "opponent_rank": 62,
+      "opponent_rank": 57,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Derby City Girls",
-      "mv_impact": 5.7
+      "event": "Derby City Girls"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35478715132",
       "opponent_name": "Samira Mbaye-Diallo",
       "opponent_team": "Southern",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 55,
       "opponent_weight": 126,
-      "opponent_rank": 46,
+      "opponent_rank": 39,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Derby City Girls",
-      "mv_impact": 5.64
+      "event": "Derby City Girls"
     },
     {
       "date": "2025-12-13",
@@ -244,14 +277,13 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 6,
+      "opponent_rank": 7,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Derby City Girls",
-      "mv_impact": 9.07
+      "event": "Derby City Girls"
     },
     {
       "date": "2025-12-06",
@@ -260,14 +292,13 @@
       "opponent_team": "Great Crossing",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 7,
+      "opponent_rank": 5,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:43",
-      "event": "Bearcat Brawl (Girls)",
-      "mv_impact": 9.19
+      "event": "Bearcat Brawl (Girls)"
     },
     {
       "date": "2025-12-06",
@@ -276,14 +307,13 @@
       "opponent_team": "Holmes",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 72,
+      "opponent_rank": 71,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:13",
-      "event": "Bearcat Brawl (Girls)",
-      "mv_impact": 4.8
+      "event": "Bearcat Brawl (Girls)"
     },
     {
       "date": "2025-12-06",
@@ -292,19 +322,18 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 9,
+      "opponent_rank": 10,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:10",
-      "event": "Bearcat Brawl (Girls)",
-      "mv_impact": 8.97
+      "event": "Bearcat Brawl (Girls)"
     }
   ],
   "bonus": {
-    "top33_wins": 5,
+    "top33_wins": 6,
     "top33_bonus_ev_raw": 1.5,
-    "top33_bonus_ev_shrunk": 1.5856227106227105
+    "top33_bonus_ev_shrunk": 1.6066790352504638
   }
 }

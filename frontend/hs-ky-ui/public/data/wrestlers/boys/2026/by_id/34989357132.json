@@ -3,10 +3,10 @@
   "name": "Channing Wilhoit",
   "team": "Campbell County",
   "team_slug": "campbell_county",
-  "team_rank": 15,
+  "team_rank": 16,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 126,
+  "current_rank": 135,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 96.5,
+    "df_plus": 102.0,
+    "apr_plus": 97.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34993884132",
-      "opponent_rank": 42,
+      "opponent_rank": 34,
       "opponent_name": "Ryder Sadler",
       "method": "Fall 0:00"
     }
@@ -45,37 +45,58 @@
       "opponent_id": "34993884132",
       "opponent_name": "Ryder Sadler",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 87,
       "opponent_weight": 175,
-      "opponent_rank": 42,
+      "opponent_rank": 34,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Green County",
-      "mv_impact": -4.57
+      "mv_impact": -4.42
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35122065132",
       "opponent_name": "Tyler Hillebrandt",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 175,
-      "opponent_rank": 3,
+      "opponent_rank": 7,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Oldham County",
-      "mv_impact": -1.23
+      "mv_impact": -1.82
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_000415",
+    "canonical_name": "Channing Wilhoit",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Campbell County",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Campbell County",
+      "record": "9-25",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

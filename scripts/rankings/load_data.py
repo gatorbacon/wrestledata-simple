@@ -164,7 +164,7 @@ def load_team_data(season: int, league: str = 'ncaa', state: str = None, gender:
     # Setup directory based on league type
     if league == 'hs':
         state_lower = state.lower() if state else 'ky'
-        data_dir = Path(f"mt/processed_data/hs_{state_lower}_{gender}")
+        data_dir = Path(f"mt/processed_data/hs_{state_lower}_{gender}") / str(season)
     else:  # ncaa
         data_dir = Path(f"mt/processed_data/{season}")
     
@@ -387,10 +387,19 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 # For NCAA: Skip matches with null opponent_id (unchanged behavior)
                 if not opponent_id or opponent_id == 'null' or opponent_id == '':
                     if league == 'hs':
-                        # Create synthetic opponent ID for out-of-state wrestlers
+                        # Create synthetic opponent ID for out-of-state wrestlers or forfeits
+                        # For forfeits, allow "Unknown" as valid opponent_name/team
+                        result = match.get('result', '')
+                        is_forfeit = result and ('For.' in result or 'FF' in result.upper() or 'FORFEIT' in result.upper())
+                        
                         if not opponent_name or not opponent_team:
-                            # Can't create synthetic opponent without name/team
-                            continue
+                            if is_forfeit:
+                                # For forfeits, use "Unknown" as opponent if missing
+                                opponent_name = opponent_name or 'Unknown'
+                                opponent_team = opponent_team or 'Unknown'
+                            else:
+                                # Can't create synthetic opponent without name/team for non-forfeits
+                                continue
                         opponent_id = create_synthetic_opponent_id(opponent_name, opponent_team)
                         
                         # Add synthetic opponent to all_wrestlers if not already present

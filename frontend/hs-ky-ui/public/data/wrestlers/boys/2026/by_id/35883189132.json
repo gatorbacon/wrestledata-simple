@@ -6,45 +6,75 @@
   "team_rank": 20,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 74,
+  "current_rank": 76,
   "record": {
-    "overall": "7-12",
-    "vs_ranked": "3-4",
+    "overall": "8-13",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-3"
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 2.43,
     "pa7": 18.5,
     "pd7": -16.07,
-    "si_plus": 88.9,
-    "df_plus": 90.7,
-    "apr_plus": 96.8,
-    "pin_rate": 0.429,
-    "bonus_rate": 0.429,
+    "si_plus": 89.0,
+    "df_plus": 89.8,
+    "apr_plus": 96.9,
+    "pin_rate": 0.375,
+    "bonus_rate": 0.375,
     "majors": 0,
     "techs": 0,
     "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35611608132",
-      "opponent_rank": 76,
+      "opponent_rank": 82,
       "opponent_name": "Asa Greiwe",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35247370132",
-      "opponent_rank": 28,
-      "opponent_name": "Evan Martin",
-      "method": "Fall 5:33"
+      "opponent_id": "34992812132",
+      "opponent_rank": 24,
+      "opponent_name": "Jax Reynolds",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34992812132",
+      "opponent_name": "Jax Reynolds",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 106,
+      "opponent_rank": 24,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Pulaski County"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -95,9 +125,9 @@
       "opponent_id": "34995980132",
       "opponent_name": "Keira Good",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 106,
-      "opponent_rank": 122,
+      "opponent_rank": 110,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -125,9 +155,9 @@
       "opponent_id": "35611608132",
       "opponent_name": "Asa Greiwe",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 106,
-      "opponent_rank": 76,
+      "opponent_rank": 82,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -140,9 +170,9 @@
       "opponent_id": "35599181132",
       "opponent_name": "Alex Upchurch",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 106,
-      "opponent_rank": 12,
+      "opponent_rank": 13,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -155,9 +185,9 @@
       "opponent_id": "35129322132",
       "opponent_name": "Gabe Banks",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 106,
-      "opponent_rank": 141,
+      "opponent_rank": 149,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -185,9 +215,9 @@
       "opponent_id": "34988697132",
       "opponent_name": "Malachi James",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 106,
-      "opponent_rank": 19,
+      "opponent_rank": 21,
       "weight_class": "106",
       "result": "L",
       "method": "TF",
@@ -200,9 +230,9 @@
       "opponent_id": "35405958132",
       "opponent_name": "Tanner Magee",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 86,
       "opponent_weight": 106,
-      "opponent_rank": 16,
+      "opponent_rank": 18,
       "weight_class": "106",
       "result": "L",
       "method": "MD",
@@ -320,9 +350,9 @@
       "opponent_id": "35247370132",
       "opponent_name": "Evan Martin",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 113,
-      "opponent_rank": 28,
+      "opponent_rank": 11,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -331,9 +361,21 @@
       "event": "vs. Wayne County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  "career": {
+    "career_id": "career_005750",
+    "canonical_name": "kale keeton",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Wayne County",
+      "record": "10-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

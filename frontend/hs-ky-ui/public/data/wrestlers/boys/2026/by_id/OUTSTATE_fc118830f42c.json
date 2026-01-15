@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35488494132",
-      "opponent_rank": 166,
+      "opponent_rank": 173,
       "opponent_name": "Troy Chamblee",
       "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34989136132",
+      "opponent_rank": 10,
+      "opponent_name": "Deacon Heisler",
+      "method": "Fall 1:31"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-19",
+      "opponent_id": "34989136132",
+      "opponent_name": "Deacon Heisler",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 144,
+      "opponent_rank": 10,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:31",
+      "event": "vs. Blanchester High School"
+    },
     {
       "date": "2025-12-19",
       "opponent_id": "35488494132",
       "opponent_name": "Troy Chamblee",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 44,
       "opponent_weight": 150,
-      "opponent_rank": 166,
+      "opponent_rank": 173,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -55,10 +75,5 @@
       "duration": "0:00",
       "event": "vs. Blanchester High School"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  ]
 }

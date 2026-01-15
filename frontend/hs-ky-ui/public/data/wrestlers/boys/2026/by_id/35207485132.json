@@ -3,63 +3,127 @@
   "name": "Seamus Cook",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 50,
+  "team_rank": 56,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 105,
+  "current_rank": 113,
   "record": {
-    "overall": "2-4",
-    "vs_ranked": "2-4",
+    "overall": "3-7",
+    "vs_ranked": "3-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 99.3,
+    "pf7": 2.0,
+    "pa7": 4.0,
+    "pd7": -2.0,
+    "si_plus": 91.4,
+    "df_plus": 108.8,
+    "apr_plus": 95.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_wins": 3,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34995977132",
-      "opponent_rank": 110,
+      "opponent_rank": 119,
       "opponent_name": "Brayden Pace",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35638376132",
-      "opponent_rank": 104,
+      "opponent_rank": 112,
       "opponent_name": "Kamden Garner",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35144515132",
+      "opponent_name": "Anthony Merino",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 49,
+      "opponent_weight": 285,
+      "opponent_rank": 32,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:47",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -4.69
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35049808132",
+      "opponent_name": "Keegan French",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 25,
+      "opponent_weight": 285,
+      "opponent_rank": 107,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -8.05
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34993870132",
+      "opponent_name": "Carver Berry",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 285,
+      "opponent_rank": 70,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Green County",
+      "mv_impact": -4.39
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35689794132",
+      "opponent_name": "James Medina",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 285,
+      "opponent_rank": 202,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County",
+      "mv_impact": 0.4
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "34995977132",
       "opponent_name": "Brayden Pace",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 285,
-      "opponent_rank": 110,
+      "opponent_rank": 119,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "JV Regional 7",
-      "mv_impact": 3.77
+      "mv_impact": 3.71
     },
     {
       "date": "2025-12-20",
@@ -68,83 +132,95 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
       "opponent_weight": 285,
-      "opponent_rank": 104,
+      "opponent_rank": 112,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Russell County",
-      "mv_impact": -7.97
+      "mv_impact": -8.29
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35205296132",
       "opponent_name": "John Hightower",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 285,
-      "opponent_rank": 52,
+      "opponent_rank": 57,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
       "event": "vs. Greenwood",
-      "mv_impact": -6.72
+      "mv_impact": -6.95
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35449569132",
       "opponent_name": "Eduardo Rivera-Santos",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 285,
-      "opponent_rank": 135,
+      "opponent_rank": 145,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:35",
       "event": "vs. Danville",
-      "mv_impact": 2.32
+      "mv_impact": 2.13
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35383671132",
       "opponent_name": "Jeremiah Boehman",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 285,
-      "opponent_rank": 100,
+      "opponent_rank": 108,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
       "event": "vs. Owensboro",
-      "mv_impact": -8.14
+      "mv_impact": -8.69
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35007900132",
       "opponent_name": "Justus Smith",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 285,
-      "opponent_rank": 40,
+      "opponent_rank": 16,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:18",
       "event": "vs. South Warren",
-      "mv_impact": -3.25
+      "mv_impact": -2.27
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_004611",
+    "canonical_name": "Seamus Cook",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Adair County",
+      "record": "3-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,23 +3,23 @@
   "name": "Lucas Simpson",
   "team": "North Oldham",
   "team_slug": "north_oldham",
-  "team_rank": 37,
+  "team_rank": 28,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 69,
+  "current_rank": 60,
   "record": {
-    "overall": "4-6",
-    "vs_ranked": "3-6",
-    "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "overall": "4-7",
+    "vs_ranked": "3-7",
+    "vs_top10": "0-2",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 6.0,
     "pa7": 5.5,
     "pd7": 0.5,
-    "si_plus": 91.5,
-    "df_plus": 107.1,
-    "apr_plus": 95.9,
+    "si_plus": 92.8,
+    "df_plus": 106.8,
+    "apr_plus": 96.8,
     "pin_rate": 0.75,
     "bonus_rate": 0.75,
     "majors": 0,
@@ -28,29 +28,44 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 6,
+    "ranked_losses": 7,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35321122132",
-      "opponent_rank": 70,
+      "opponent_rank": 53,
       "opponent_name": "Liam Sharpe",
       "method": "Fall 3:10"
     },
     "worst_loss": {
       "opponent_id": "35901457132",
-      "opponent_rank": 123,
+      "opponent_rank": 124,
       "opponent_name": "Kaiden Mcwhorter",
       "method": "M. For."
     }
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35135149132",
+      "opponent_name": "joshua Tuttle",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 23,
+      "opponent_weight": 165,
+      "opponent_rank": 8,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "vs. North Oldham"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35135149132",
       "opponent_name": "joshua Tuttle",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 165,
       "opponent_rank": 8,
       "weight_class": "165",
@@ -65,9 +80,9 @@
       "opponent_id": "35433568132",
       "opponent_name": "Collier Quick",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 96,
+      "opponent_team_rank": 99,
       "opponent_weight": 165,
-      "opponent_rank": 71,
+      "opponent_rank": 62,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
@@ -80,14 +95,14 @@
       "opponent_id": "36784561132",
       "opponent_name": "Grayson Smith",
       "opponent_team": "Moore",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 27,
       "opponent_weight": 165,
-      "opponent_rank": 183,
+      "opponent_rank": 176,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "4:23",
+      "duration": "5:31",
       "event": "Warhawk Classic"
     },
     {
@@ -95,9 +110,9 @@
       "opponent_id": "35156192132",
       "opponent_name": "Max Kelsay",
       "opponent_team": "Taylor County",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 39,
       "opponent_weight": 165,
-      "opponent_rank": 45,
+      "opponent_rank": 48,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
@@ -110,9 +125,9 @@
       "opponent_id": "35321122132",
       "opponent_name": "Liam Sharpe",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
-      "opponent_weight": 165,
-      "opponent_rank": 70,
+      "opponent_team_rank": 111,
+      "opponent_weight": 157,
+      "opponent_rank": 53,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -127,7 +142,7 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 165,
-      "opponent_rank": 68,
+      "opponent_rank": 59,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -142,7 +157,7 @@
       "opponent_team": "Valley",
       "opponent_team_rank": 132,
       "opponent_weight": 165,
-      "opponent_rank": 123,
+      "opponent_rank": 124,
       "weight_class": "165",
       "result": "L",
       "method": "MFF",
@@ -155,9 +170,9 @@
       "opponent_id": "35144511132",
       "opponent_name": "Domanic Patterson",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 165,
-      "opponent_rank": 23,
+      "opponent_rank": 21,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -170,9 +185,9 @@
       "opponent_id": "35688340132",
       "opponent_name": "Caleb Moran",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 108,
       "opponent_weight": 165,
-      "opponent_rank": 29,
+      "opponent_rank": 27,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -196,9 +211,30 @@
       "event": "vs. Jeffersonville"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  "career": {
+    "career_id": "career_001938",
+    "canonical_name": "Lucas Simpson",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "North Oldham",
+      "record": "4-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "North Oldham",
+      "record": "2-12",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

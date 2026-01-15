@@ -6,10 +6,10 @@
   "team_rank": null,
   "weight_class": 107,
   "year": 2026,
-  "current_rank": 59,
+  "current_rank": 48,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,29 +17,50 @@
     "pf7": 10.0,
     "pa7": 11.0,
     "pd7": -1.0,
-    "si_plus": 104.9,
-    "df_plus": 97.5,
-    "apr_plus": 83.1,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 105.3,
+    "df_plus": 98.9,
+    "apr_plus": 97.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35668837132",
+      "opponent_rank": 50,
+      "opponent_name": "Min Lee",
+      "method": "Fall 5:53"
+    },
     "worst_loss": {
       "opponent_id": "35424934132",
-      "opponent_rank": 36,
+      "opponent_rank": 37,
       "opponent_name": "Lizeth Hernandez-Ponce",
       "method": "Dec 11-10"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35668837132",
+      "opponent_name": "Min Lee",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 107,
+      "opponent_rank": 50,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:53",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 1.72
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35424934132",
@@ -47,14 +68,14 @@
       "opponent_team": "Greenwood",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 36,
+      "opponent_rank": 37,
       "weight_class": "107",
       "result": "L",
       "method": "DEC",
       "score": "11-10",
       "duration": "7:00",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": -5.69
+      "mv_impact": -5.79
     }
   ]
 }

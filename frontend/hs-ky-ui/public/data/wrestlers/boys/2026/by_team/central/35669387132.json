@@ -3,13 +3,13 @@
   "name": "Kody Kao",
   "team": "Central",
   "team_slug": "central",
-  "team_rank": 65,
-  "weight_class": 132,
+  "team_rank": 68,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 176,
+  "current_rank": 173,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "0-0",
+    "overall": "1-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 85.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,13 +28,48 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35563005132",
+      "opponent_rank": 137,
+      "opponent_name": "John Leide",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35338302132",
+      "opponent_name": "Eli Higdon",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 131,
+      "opponent_weight": 113,
+      "opponent_rank": 68,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:47",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35457988132",
+      "opponent_name": "Elom Emge",
+      "opponent_team": "Male",
+      "opponent_team_rank": 50,
+      "opponent_weight": 120,
+      "opponent_rank": 114,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:46",
+      "event": "2026 Lou City Wrestling"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -49,6 +84,53 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Desales"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35563005132",
+      "opponent_name": "John Leide",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 18,
+      "opponent_weight": 132,
+      "opponent_rank": 137,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2025-12-10",
+      "opponent_id": "35046227132",
+      "opponent_name": "Elijah Blais",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": 15,
+      "opponent_weight": 126,
+      "opponent_rank": 40,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Jeffersontown"
+    }
+  ],
+  "career": {
+    "career_id": "career_005283",
+    "canonical_name": "Kody Kao",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Central",
+      "record": "3-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

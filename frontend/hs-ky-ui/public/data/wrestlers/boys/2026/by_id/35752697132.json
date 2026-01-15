@@ -3,23 +3,23 @@
   "name": "Carson Fraley",
   "team": "Lawrence County",
   "team_slug": "lawrence_county",
-  "team_rank": 97,
+  "team_rank": 100,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 134,
+  "current_rank": 144,
   "record": {
     "overall": "6-5",
     "vs_ranked": "3-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 103.6,
+    "df_plus": 102.0,
+    "apr_plus": 103.5,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35724492132",
-      "opponent_rank": 123,
+      "opponent_rank": 132,
       "opponent_name": "Payton Morgan",
       "method": "Fall 0:58"
     },
     "worst_loss": {
       "opponent_id": "35724492132",
-      "opponent_rank": 123,
+      "opponent_rank": 132,
       "opponent_name": "Payton Morgan",
       "method": "Fall 1:50"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35724492132",
       "opponent_name": "Payton Morgan",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 285,
-      "opponent_rank": 123,
+      "opponent_rank": 132,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35724492132",
       "opponent_name": "Payton Morgan",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 285,
-      "opponent_rank": 123,
+      "opponent_rank": 132,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "35896875132",
       "opponent_name": "Brayden Blanton",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 164,
+      "opponent_rank": 171,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -125,9 +125,9 @@
       "opponent_id": "35850443132",
       "opponent_name": "Cameron Thompson",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 20,
+      "opponent_rank": 28,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -140,9 +140,9 @@
       "opponent_id": "35850442132",
       "opponent_name": "Cayden Thompson",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 27,
+      "opponent_rank": 36,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35732597132",
       "opponent_name": "Liam May",
       "opponent_team": "Martin County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 13,
       "opponent_weight": 215,
-      "opponent_rank": 137,
+      "opponent_rank": 138,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -170,9 +170,9 @@
       "opponent_id": "35850443132",
       "opponent_name": "Cameron Thompson",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 20,
+      "opponent_rank": 28,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -185,9 +185,9 @@
       "opponent_id": "35724492132",
       "opponent_name": "Payton Morgan",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 285,
-      "opponent_rank": 123,
+      "opponent_rank": 132,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -211,9 +211,39 @@
       "event": "vs. Greenup County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_001459",
+    "canonical_name": "Carson Fraley",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Lawrence County",
+      "record": "8-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Lawrence County",
+      "record": "12-11",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Lawrence County",
+      "record": "4-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

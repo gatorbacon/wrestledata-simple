@@ -3,13 +3,13 @@
   "name": "Stryker Davidson",
   "team": "George Rogers Clark",
   "team_slug": "george_rogers_clark",
-  "team_rank": 43,
+  "team_rank": 46,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 47,
+  "current_rank": 48,
   "record": {
     "overall": "4-0",
-    "vs_ranked": "4-0",
+    "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 115.4,
+    "df_plus": 102.0,
+    "apr_plus": 115.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -27,13 +27,13 @@
     "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 3,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35267336132",
-      "opponent_rank": 63,
+      "opponent_rank": 66,
       "opponent_name": "Chase Hamilton",
       "method": "Fall 0:45"
     },
@@ -45,32 +45,30 @@
       "opponent_id": "35700434132",
       "opponent_name": "Lucas Shaheen",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 190,
-      "opponent_rank": 181,
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:42",
-      "event": "vs. John Hardin",
-      "mv_impact": 3.41
+      "event": "vs. John Hardin"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35223008132",
       "opponent_name": "Tristan Robinson",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 215,
-      "opponent_rank": 170,
+      "opponent_rank": 168,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. Mercer County",
-      "mv_impact": 1.68
+      "event": "vs. Mercer County"
     },
     {
       "date": "2025-12-13",
@@ -79,14 +77,13 @@
       "opponent_team": "Trinity (Whitesville)",
       "opponent_team_rank": null,
       "opponent_weight": 215,
-      "opponent_rank": 182,
+      "opponent_rank": 181,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:21",
-      "event": "vs. Trinity (Whitesville)",
-      "mv_impact": 1.12
+      "event": "vs. Trinity (Whitesville)"
     },
     {
       "date": "2025-12-13",
@@ -95,19 +92,30 @@
       "opponent_team": "Western Hills",
       "opponent_team_rank": 137,
       "opponent_weight": 215,
-      "opponent_rank": 63,
+      "opponent_rank": 66,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:45",
-      "event": "vs. Western Hills",
-      "mv_impact": 5.82
+      "event": "vs. Western Hills"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_004634",
+    "canonical_name": "Stryker Davidson",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "George Rogers Clark",
+      "record": "4-0",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

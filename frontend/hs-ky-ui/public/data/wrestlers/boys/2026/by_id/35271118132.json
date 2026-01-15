@@ -3,14 +3,14 @@
   "name": "Ben Woosley",
   "team": "Simon Kenton",
   "team_slug": "simon_kenton",
-  "team_rank": 31,
+  "team_rank": 30,
   "weight_class": 165,
   "year": 2026,
   "current_rank": 11,
   "record": {
-    "overall": "9-4",
-    "vs_ranked": "4-1",
-    "vs_top10": "0-0",
+    "overall": "13-4",
+    "vs_ranked": "6-1",
+    "vs_top10": "0-1",
     "vs_top25": "1-1"
   },
   "metrics": {
@@ -18,28 +18,28 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 113.1,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
-    "majors": 0,
+    "df_plus": 102.0,
+    "apr_plus": 113.5,
+    "pin_rate": 0.846,
+    "bonus_rate": 0.923,
+    "majors": 1,
     "techs": 0,
-    "pins": 9
+    "pins": 11
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 6,
     "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34993730132",
-      "opponent_rank": 13,
+      "opponent_rank": 11,
       "opponent_name": "Dray Roberts",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35205190132",
-      "opponent_rank": 14,
+      "opponent_rank": 10,
       "opponent_name": "Benjamin Cauley",
       "method": "Fall 0:00"
     }
@@ -47,17 +47,77 @@
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "34988568132",
+      "opponent_name": "Joesiah Hernandez",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 165,
+      "opponent_rank": 42,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "34997723132",
       "opponent_name": "Colton Good",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 165,
-      "opponent_rank": 90,
+      "opponent_rank": 91,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:53",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34995373132",
+      "opponent_name": "Nathan Sargent",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 35,
+      "opponent_weight": 165,
+      "opponent_rank": 43,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "36647450132",
+      "opponent_name": "Abel Haile",
+      "opponent_team": "Lakota West High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_02c17b41642f",
+      "opponent_name": "Jackson Runyon",
+      "opponent_team": "Taylor High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
       "event": "2026 CIWT"
     },
     {
@@ -156,7 +216,7 @@
       "opponent_name": "Mamadou Sougoule",
       "opponent_team": "Oak Hills High School",
       "opponent_team_rank": null,
-      "opponent_weight": 175,
+      "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "175",
       "result": "W",
@@ -172,7 +232,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 175,
-      "opponent_rank": 40,
+      "opponent_rank": 37,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -185,9 +245,9 @@
       "opponent_id": "35205190132",
       "opponent_name": "Benjamin Cauley",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 22,
       "opponent_weight": 285,
-      "opponent_rank": 14,
+      "opponent_rank": 10,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -200,9 +260,9 @@
       "opponent_id": "34993730132",
       "opponent_name": "Dray Roberts",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 175,
-      "opponent_rank": 13,
+      "opponent_rank": 11,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -215,9 +275,9 @@
       "opponent_id": "35077761132",
       "opponent_name": "Rocco Jones",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 28,
       "opponent_weight": 175,
-      "opponent_rank": 92,
+      "opponent_rank": 94,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -241,9 +301,39 @@
       "event": "vs. North Hardin"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3809523809523812
-  }
+  "career": {
+    "career_id": "career_002471",
+    "canonical_name": "Benjamin Woosley",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Simon Kenton",
+      "record": "13-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Simon Kenton",
+      "record": "36-10",
+      "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Simon Kenton",
+      "record": "33-14",
+      "regional_place": 2,
+      "state_place": null
+    }
+  ]
 }

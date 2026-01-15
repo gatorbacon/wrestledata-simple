@@ -3,45 +3,45 @@
   "name": "Faimy Victorin",
   "team": "Lafayette",
   "team_slug": "lafayette",
-  "team_rank": 96,
+  "team_rank": 99,
   "weight_class": 157,
   "year": 2026,
   "current_rank": 64,
   "record": {
-    "overall": "7-9",
-    "vs_ranked": "7-9",
+    "overall": "11-9",
+    "vs_ranked": "9-9",
     "vs_top10": "0-3",
-    "vs_top25": "0-4"
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 5.5,
     "pa7": 13.5,
     "pd7": -8.0,
-    "si_plus": 97.1,
-    "df_plus": 91.5,
-    "apr_plus": 106.0,
+    "si_plus": 93.7,
+    "df_plus": 97.5,
+    "apr_plus": 107.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 11
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 9,
     "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35118589132",
-      "opponent_rank": 50,
+      "opponent_rank": 64,
       "opponent_name": "Jaden Brainard",
       "method": "Fall 3:03"
     },
     "worst_loss": {
-      "opponent_id": "35051544132",
-      "opponent_rank": 63,
-      "opponent_name": "Ruddy Pittman",
-      "method": "Fall 0:50"
+      "opponent_id": "34993526132",
+      "opponent_rank": 56,
+      "opponent_name": "Tabin Prine",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
@@ -50,103 +50,157 @@
       "opponent_id": "35051544132",
       "opponent_name": "Ruddy Pittman",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
-      "opponent_weight": 157,
-      "opponent_rank": 63,
+      "opponent_team_rank": 55,
+      "opponent_weight": 165,
+      "opponent_rank": 200,
       "weight_class": "157",
-      "result": "L",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "Warhawk Classic",
-      "mv_impact": -8.29
+      "event": "Warhawk Classic"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "34993526132",
       "opponent_name": "Tabin Prine",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 157,
-      "opponent_rank": 57,
+      "opponent_rank": 56,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Warhawk Classic",
-      "mv_impact": -6.68
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35640359132",
+      "opponent_name": "Jeremy Marks",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 47,
+      "opponent_weight": 165,
+      "opponent_rank": 22,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:46",
+      "event": "Warhawk Classic"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35144081132",
       "opponent_name": "Gabreil Byrd",
       "opponent_team": "Desales",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": 116,
+      "opponent_rank": 111,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:18",
-      "event": "Fern Creek Gladiator",
-      "mv_impact": 2.58
+      "event": "Fern Creek Gladiator"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "34988539132",
       "opponent_name": "Jayden Lopez",
       "opponent_team": "Doss",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 74,
       "opponent_weight": 157,
-      "opponent_rank": 47,
+      "opponent_rank": 54,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:37",
-      "event": "Fern Creek Gladiator",
-      "mv_impact": -6.04
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35135162132",
+      "opponent_name": "Bryson Sweetman",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 23,
+      "opponent_weight": 157,
+      "opponent_rank": 123,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:05",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_50851caaa142",
+      "opponent_name": "Caylen Scott",
+      "opponent_team": "Evansville F.j. Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:52",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:55",
+      "event": "Fern Creek Gladiator"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34993791132",
       "opponent_name": "Hunter Jones",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 150,
-      "opponent_rank": 85,
+      "opponent_rank": 89,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Region 6 JV Region",
-      "mv_impact": 5.47
+      "event": "Region 6 JV Region"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34988676132",
       "opponent_name": "Deacon Harrison",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 157,
-      "opponent_rank": 20,
+      "opponent_rank": 17,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:59",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": -3.09
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35144525132",
       "opponent_name": "Jayden Rojas",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 157,
       "opponent_rank": 65,
       "weight_class": "157",
@@ -154,95 +208,89 @@
       "method": "FALL",
       "score": null,
       "duration": "4:25",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": 5.21
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35124935132",
       "opponent_name": "Noah Weissbach",
       "opponent_team": "Montgomery County",
-      "opponent_team_rank": 108,
+      "opponent_team_rank": 110,
       "opponent_weight": 157,
-      "opponent_rank": 32,
+      "opponent_rank": 29,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": -3.64
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35668081132",
       "opponent_name": "Micah Toogood",
       "opponent_team": "Central",
-      "opponent_team_rank": 65,
-      "opponent_weight": 157,
-      "opponent_rank": 120,
+      "opponent_team_rank": 68,
+      "opponent_weight": 144,
+      "opponent_rank": 163,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Derby City Classic",
-      "mv_impact": 2.2
+      "event": "Derby City Classic"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34994786132",
       "opponent_name": "Riley Sanford",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 157,
-      "opponent_rank": 10,
+      "opponent_rank": 4,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Derby City Classic",
-      "mv_impact": -2.09
+      "event": "Derby City Classic"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35384052132",
       "opponent_name": "Dominic Hall",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 157,
-      "opponent_rank": 123,
+      "opponent_rank": 116,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Derby City Classic",
-      "mv_impact": 2.43
+      "event": "Derby City Classic"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35118589132",
       "opponent_name": "Jaden Brainard",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 150,
-      "opponent_rank": 50,
+      "opponent_rank": 64,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:03",
-      "event": "Bearcat Brawl 2025",
-      "mv_impact": 5.07
+      "event": "Bearcat Brawl 2025"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35527112132",
       "opponent_name": "Carson Nance",
       "opponent_team": "Anderson County",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 7,
       "opponent_weight": 157,
       "opponent_rank": 3,
       "weight_class": "157",
@@ -250,8 +298,7 @@
       "method": "TF",
       "score": "19-4",
       "duration": "0:00",
-      "event": "Bearcat Brawl 2025",
-      "mv_impact": -1.11
+      "event": "Bearcat Brawl 2025"
     },
     {
       "date": "2025-12-06",
@@ -260,14 +307,13 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 157,
-      "opponent_rank": 5,
+      "opponent_rank": 7,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Bearcat Brawl 2025",
-      "mv_impact": -3.17
+      "event": "Bearcat Brawl 2025"
     },
     {
       "date": "2025-12-06",
@@ -276,35 +322,45 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": 133,
       "opponent_weight": 165,
-      "opponent_rank": 118,
+      "opponent_rank": 119,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:33",
-      "event": "Bearcat Brawl 2025",
-      "mv_impact": 3.19
+      "event": "Bearcat Brawl 2025"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35281290132",
       "opponent_name": "Thomas Tilley",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 157,
-      "opponent_rank": 52,
+      "opponent_rank": 55,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "8-7",
       "duration": "7:00",
-      "event": "Bearcat Brawl 2025",
-      "mv_impact": -3.41
+      "event": "Bearcat Brawl 2025"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  "career": {
+    "career_id": "career_005498",
+    "canonical_name": "Faimy Victorin",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Lafayette",
+      "record": "13-10",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

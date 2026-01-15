@@ -6,10 +6,10 @@
   "team_rank": null,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 88,
+  "current_rank": 85,
   "record": {
-    "overall": "8-7",
-    "vs_ranked": "4-3",
+    "overall": "11-9",
+    "vs_ranked": "7-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,33 +18,108 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 102.7,
-    "pin_rate": 0.875,
-    "bonus_rate": 0.875,
+    "df_plus": 102.0,
+    "apr_plus": 102.9,
+    "pin_rate": 0.909,
+    "bonus_rate": 0.909,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 10
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 7,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35674089132",
-      "opponent_rank": 110,
-      "opponent_name": "Ajontae Swanagan",
-      "method": "Fall 0:00"
+      "opponent_id": "35137003132",
+      "opponent_rank": 99,
+      "opponent_name": "Patrick Reckard",
+      "method": "Fall 1:52"
     },
     "worst_loss": {
       "opponent_id": "35208008132",
-      "opponent_rank": 107,
+      "opponent_rank": 84,
       "opponent_name": "Jimmie Ballard",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-13",
+      "opponent_id": "35049802132",
+      "opponent_name": "Sam Brauer",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 25,
+      "opponent_weight": 144,
+      "opponent_rank": 42,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2026-01-13",
+      "opponent_id": "OUTSTATE_7b3b88a7f079",
+      "opponent_name": "Jahir Vega",
+      "opponent_team": "Bosse",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bosse"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35024704132",
+      "opponent_name": "Levi Howell",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 144,
+      "opponent_rank": 190,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35137003132",
+      "opponent_name": "Patrick Reckard",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 150,
+      "opponent_rank": 99,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:52",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35193702132",
+      "opponent_name": "Natalie Tardy",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 150,
+      "opponent_rank": 199,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "vs. Warren Central"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "34933224132",
@@ -92,27 +167,12 @@
     },
     {
       "date": "2025-12-22",
-      "opponent_id": "35208008132",
-      "opponent_name": "Jimmie Ballard",
-      "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
-      "opponent_weight": 138,
-      "opponent_rank": 107,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Trinity (Whitesville)"
-    },
-    {
-      "date": "2025-12-22",
       "opponent_id": "35674089132",
       "opponent_name": "Ajontae Swanagan",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
-      "opponent_weight": 138,
-      "opponent_rank": 110,
+      "opponent_team_rank": 37,
+      "opponent_weight": 132,
+      "opponent_rank": 186,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -125,9 +185,9 @@
       "opponent_id": "35233666132",
       "opponent_name": "Grayson West",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 57,
       "opponent_weight": 144,
-      "opponent_rank": 176,
+      "opponent_rank": 172,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -137,12 +197,12 @@
     },
     {
       "date": "2025-12-22",
-      "opponent_id": "35064900132",
-      "opponent_name": "Evan Wilson",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
+      "opponent_id": "35208008132",
+      "opponent_name": "Jimmie Ballard",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 48,
       "opponent_weight": 144,
-      "opponent_rank": 39,
+      "opponent_rank": 84,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -151,13 +211,28 @@
       "event": "vs. Trinity (Whitesville)"
     },
     {
+      "date": "2025-12-22",
+      "opponent_id": "35064900132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35223401132",
       "opponent_name": "Elijah Davidson",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 144,
-      "opponent_rank": 169,
+      "opponent_rank": 137,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -187,7 +262,7 @@
       "opponent_team": "Western Hills",
       "opponent_team_rank": 137,
       "opponent_weight": 144,
-      "opponent_rank": 200,
+      "opponent_rank": 186,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -200,9 +275,9 @@
       "opponent_id": "35383670132",
       "opponent_name": "Daniel Fickas",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 144,
-      "opponent_rank": 47,
+      "opponent_rank": 57,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -271,9 +346,30 @@
       "event": "Frank Alexander Invite"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_002788",
+    "canonical_name": "Tristan Ward",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Trinity (Whitesville)",
+      "record": "12-9",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Trinity (Whitesville)",
+      "record": "16-21",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

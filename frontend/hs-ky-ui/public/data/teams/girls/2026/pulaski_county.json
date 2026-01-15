@@ -21,13 +21,31 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.891558Z",
+  "generated_at_utc": "2026-01-15T13:34:38.026590Z",
   "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "37806759132",
+      "name": "Zoey Whitt",
+      "current_rank": 70,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
     "120": {
       "weight": 120,
       "wrestler_id": "35434370132",
       "name": "Brooklyn Brown",
-      "current_rank": 55,
+      "current_rank": 69,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -45,7 +63,7 @@
       "weight": 126,
       "wrestler_id": "35434369132",
       "name": "River Richardson",
-      "current_rank": 70,
+      "current_rank": 69,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -63,14 +81,14 @@
       "weight": 145,
       "wrestler_id": "35373619132",
       "name": "Jessalyn Roberts",
-      "current_rank": 36,
-      "xtp": 1.0,
-      "xtp_p": 0.09,
-      "xtp_a": 0.34,
-      "xtp_b": 0.57,
+      "current_rank": 33,
+      "xtp": 1.82,
+      "xtp_p": 0.18,
+      "xtp_a": 0.49,
+      "xtp_b": 1.15,
       "top10_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
@@ -81,11 +99,11 @@
       "weight": 152,
       "wrestler_id": "35373618132",
       "name": "Nevaeh Ruelas",
-      "current_rank": 38,
-      "xtp": 1.24,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.89,
+      "current_rank": 39,
+      "xtp": 1.23,
+      "xtp_p": 0.03,
+      "xtp_a": 0.3,
+      "xtp_b": 0.9,
       "top10_record": {
         "wins": 0,
         "losses": 3
@@ -109,7 +127,7 @@
     "bonus_points": null,
     "overall": {
       "wins": 11,
-      "losses": 25
+      "losses": 26
     },
     "top33": {
       "wins": 0,
@@ -117,21 +135,21 @@
     },
     "top10": {
       "wins": 0,
-      "losses": 8
+      "losses": 5
     },
     "bonus_rate": {
       "value": 0.545,
-      "rank": 105,
+      "rank": 106,
       "rank_scope": "league"
     },
     "pin_rate": {
       "value": 0.545,
-      "rank": 103,
+      "rank": 105,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 64,
+      "rank": 68,
       "rank_scope": "league"
     }
   }

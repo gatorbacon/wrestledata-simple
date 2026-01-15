@@ -3,32 +3,32 @@
   "name": "Meeko Heady",
   "team": "Seneca",
   "team_slug": "seneca",
-  "team_rank": 48,
+  "team_rank": 53,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 100,
+  "current_rank": 108,
   "record": {
-    "overall": "3-3",
-    "vs_ranked": "2-3",
+    "overall": "4-4",
+    "vs_ranked": "3-4",
     "vs_top10": "0-2",
     "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 3.0,
-    "pa7": 18.0,
-    "pd7": -15.0,
-    "si_plus": 90.6,
-    "df_plus": 90.6,
-    "apr_plus": 107.6,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "pf7": 9.16,
+    "pa7": 21.5,
+    "pd7": -12.34,
+    "si_plus": 107.2,
+    "df_plus": 85.4,
+    "apr_plus": 105.4,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
@@ -39,18 +39,48 @@
     },
     "worst_loss": {
       "opponent_id": "35618706132",
-      "opponent_rank": 55,
+      "opponent_rank": 68,
       "opponent_name": "Jamari Green",
       "method": "TF 18-3 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35542529132",
+      "opponent_name": "Jayden Lake",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 190,
+      "opponent_rank": 26,
+      "weight_class": "190",
+      "result": "L",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "2:17",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34989913132",
+      "opponent_name": "Cristhian Castillo",
+      "opponent_team": "Western",
+      "opponent_team_rank": 40,
+      "opponent_weight": 190,
+      "opponent_rank": 119,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:43",
+      "event": "vs. Western"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35217308132",
       "opponent_name": "Riley Burton",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 190,
       "opponent_rank": 3,
       "weight_class": "190",
@@ -65,7 +95,7 @@
       "opponent_id": "35084045132",
       "opponent_name": "Jayden Tidwell",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 32,
       "opponent_weight": 175,
       "opponent_rank": 31,
       "weight_class": "190",
@@ -80,7 +110,7 @@
       "opponent_id": "35217308132",
       "opponent_name": "Riley Burton",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 190,
       "opponent_rank": 3,
       "weight_class": "190",
@@ -95,9 +125,9 @@
       "opponent_id": "35248946132",
       "opponent_name": "Elliot Hood",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 190,
-      "opponent_rank": 138,
+      "opponent_rank": 145,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -112,7 +142,7 @@
       "opponent_team": "Valley",
       "opponent_team_rank": 132,
       "opponent_weight": 190,
-      "opponent_rank": 55,
+      "opponent_rank": 68,
       "weight_class": "190",
       "result": "L",
       "method": "TF",
@@ -136,9 +166,39 @@
       "event": "vs. Central"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_002423",
+    "canonical_name": "Meeko Heady",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Seneca",
+      "record": "5-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Seneca",
+      "record": "8-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Seneca",
+      "record": "8-14",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

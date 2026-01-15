@@ -3,12 +3,12 @@
   "name": "Tanner Hayes",
   "team": "Calloway County",
   "team_slug": "calloway_county",
-  "team_rank": 63,
+  "team_rank": 33,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 158,
+  "current_rank": 156,
   "record": {
-    "overall": "2-3",
+    "overall": "3-5",
     "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -18,13 +18,13 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 86.9,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "df_plus": 102.0,
+    "apr_plus": 88.9,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,12 +34,57 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35674203132",
-      "opponent_rank": 93,
+      "opponent_rank": 172,
       "opponent_name": "Kyler Rush",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35023986132",
+      "opponent_name": "Criss Thompson",
+      "opponent_team": "Hendersonville High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:49",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35109235132",
+      "opponent_name": "Hoyt Rambo",
+      "opponent_team": "White House High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:40",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35118471132",
+      "opponent_name": "Cooper Bird",
+      "opponent_team": "East Hamilton High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:32",
+      "event": "2026 Commando Crush"
+    },
     {
       "date": "2025-12-04",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -57,12 +102,42 @@
     },
     {
       "date": "2025-11-29",
+      "opponent_id": "35674203132",
+      "opponent_name": "Kyler Rush",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 37,
+      "opponent_weight": 120,
+      "opponent_rank": 172,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35233667132",
+      "opponent_name": "Noah Pendley",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": 57,
+      "opponent_weight": 126,
+      "opponent_rank": 18,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Calloway County"
+    },
+    {
+      "date": "2025-11-29",
       "opponent_id": "35133612132",
       "opponent_name": "Braden Brison",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
-      "opponent_weight": 126,
-      "opponent_rank": 89,
+      "opponent_team_rank": 95,
+      "opponent_weight": 132,
+      "opponent_rank": 113,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -84,41 +159,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. John Hardin"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35233667132",
-      "opponent_name": "Noah Pendley",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": 51,
-      "opponent_weight": 126,
-      "opponent_rank": 18,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Apollo"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35674203132",
-      "opponent_name": "Kyler Rush",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
-      "opponent_weight": 126,
-      "opponent_rank": 93,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Owensboro"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_004741",
+    "canonical_name": "Tanner Hayes",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Calloway County",
+      "record": "3-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

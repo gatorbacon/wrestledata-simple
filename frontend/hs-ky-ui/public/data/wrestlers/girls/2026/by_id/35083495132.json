@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35083495132",
+  "name": "Emma Husser",
+  "team": "Clarksville High School",
+  "team_slug": "clarksville_high_school",
+  "team_rank": null,
+  "weight_class": 152,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "2-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 90.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35333558132",
+      "opponent_rank": 8,
+      "opponent_name": "Aubrey Haisma",
+      "method": "Dec 3-0"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35345846132",
+      "opponent_name": "Anna Urbanowski",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 145,
+      "opponent_rank": 24,
+      "weight_class": "152",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:31",
+      "event": "Rossview Lady Hawks Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333558132",
+      "opponent_name": "Aubrey Haisma",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 3,
+      "opponent_weight": 152,
+      "opponent_rank": 8,
+      "weight_class": "152",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "Coyote Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 0.0,
+    "top33_bonus_ev_shrunk": 1.4074074074074074
+  }
+}

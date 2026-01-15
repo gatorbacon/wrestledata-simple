@@ -3,12 +3,12 @@
   "name": "Blaise Wilson",
   "team": "McCracken County",
   "team_slug": "mccracken_county",
-  "team_rank": 104,
+  "team_rank": 106,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 151,
+  "current_rank": 147,
   "record": {
-    "overall": "3-15",
+    "overall": "3-17",
     "vs_ranked": "1-7",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 89.5,
+    "df_plus": 102.0,
+    "apr_plus": 89.4,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
@@ -33,26 +33,56 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34989158132",
-      "opponent_rank": 165,
+      "opponent_rank": 156,
       "opponent_name": "John Santiago",
       "method": "Fall 1:14"
     },
     "worst_loss": {
       "opponent_id": "35674089132",
-      "opponent_rank": 110,
+      "opponent_rank": 186,
       "opponent_name": "Ajontae Swanagan",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35434919132",
+      "opponent_name": "Jayden Eddy",
+      "opponent_team": "Jackson",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:20",
+      "event": "vs. Jackson"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35631225132",
+      "opponent_name": "Max Coerver",
+      "opponent_team": "Windsor (Imperial)",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Windsor (Imperial)"
+    },
+    {
       "date": "2025-12-22",
       "opponent_id": "35002888132",
       "opponent_name": "Robert Warmouth",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 144,
-      "opponent_rank": 76,
+      "opponent_rank": 73,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -65,9 +95,9 @@
       "opponent_id": "35035271132",
       "opponent_name": "Garrison Thomas",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 144,
-      "opponent_rank": 55,
+      "opponent_rank": 40,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "35049802132",
       "opponent_name": "Sam Brauer",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 25,
       "opponent_weight": 144,
-      "opponent_rank": 56,
+      "opponent_rank": 42,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -95,9 +125,9 @@
       "opponent_id": "35674089132",
       "opponent_name": "Ajontae Swanagan",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
-      "opponent_weight": 138,
-      "opponent_rank": 110,
+      "opponent_team_rank": 37,
+      "opponent_weight": 132,
+      "opponent_rank": 186,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -110,7 +140,7 @@
       "opponent_id": "35035530132",
       "opponent_name": "Carter Thomas",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 165,
       "opponent_rank": 10,
       "weight_class": "144",
@@ -200,9 +230,9 @@
       "opponent_id": "34989083132",
       "opponent_name": "David Barabas",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 29,
       "opponent_weight": 150,
-      "opponent_rank": 56,
+      "opponent_rank": 97,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -245,9 +275,9 @@
       "opponent_id": "35208231132",
       "opponent_name": "Braxton Payne",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 144,
-      "opponent_rank": 45,
+      "opponent_rank": 39,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -290,9 +320,9 @@
       "opponent_id": "34989158132",
       "opponent_name": "John Santiago",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 132,
-      "opponent_rank": 165,
+      "opponent_rank": 156,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -316,9 +346,21 @@
       "event": "vs. Mt. Vernon"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_004800",
+    "canonical_name": "Blaise Wilson",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "McCracken County",
+      "record": "4-17",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

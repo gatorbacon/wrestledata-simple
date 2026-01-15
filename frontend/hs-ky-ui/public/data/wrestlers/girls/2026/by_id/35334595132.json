@@ -3,23 +3,23 @@
   "name": "Kadyn Clark",
   "team": "Montgomery County",
   "team_slug": "montgomery_county",
-  "team_rank": 46,
+  "team_rank": 47,
   "weight_class": 138,
   "year": 2026,
   "current_rank": 33,
   "record": {
-    "overall": "4-4",
-    "vs_ranked": "4-4",
-    "vs_top10": "0-2",
-    "vs_top25": "0-4"
+    "overall": "4-5",
+    "vs_ranked": "4-5",
+    "vs_top10": "0-3",
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 101.4,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 100.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,14 +28,14 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 3,
     "win_over_highest_rank": {
-      "opponent_id": "35457081132",
-      "opponent_rank": 43,
-      "opponent_name": "Emily Jones",
-      "method": "Fall 1:11"
+      "opponent_id": "35369130132",
+      "opponent_rank": 36,
+      "opponent_name": "Baylee England",
+      "method": "Fall 1:53"
     },
     "worst_loss": {
       "opponent_id": "35404893132",
@@ -46,20 +46,36 @@
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35333378132",
+      "opponent_name": "Chloe Gallahue",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 145,
+      "opponent_rank": 2,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Montgomery County",
+      "mv_impact": -2.19
+    },
+    {
       "date": "2025-12-19",
       "opponent_id": "35434953132",
       "opponent_name": "Lydia Yared",
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 50,
+      "opponent_rank": 49,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:17",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 5.45
+      "mv_impact": 5.79
     },
     {
       "date": "2025-12-19",
@@ -75,55 +91,39 @@
       "score": null,
       "duration": "2:09",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": -3.75
+      "mv_impact": -4.1
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35333419132",
       "opponent_name": "Vivian Moyer",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 24,
       "opponent_weight": 132,
-      "opponent_rank": 5,
+      "opponent_rank": 6,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:37",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -2.32
+      "mv_impact": -2.77
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35898030132",
       "opponent_name": "Avery Miller",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 29,
       "opponent_weight": 138,
-      "opponent_rank": 46,
+      "opponent_rank": 45,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": 5.23
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35369130132",
-      "opponent_name": "Baylee England",
-      "opponent_team": "Bell County",
-      "opponent_team_rank": 5,
-      "opponent_weight": 132,
-      "opponent_rank": 46,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:53",
-      "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 5.29
+      "mv_impact": 4.44
     },
     {
       "date": "2025-12-06",
@@ -139,7 +139,23 @@
       "score": null,
       "duration": "4:32",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -4.35
+      "mv_impact": -4.47
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35369130132",
+      "opponent_name": "Baylee England",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 138,
+      "opponent_rank": 36,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:53",
+      "event": "2025 Anchor Down Showdown (Ladies)",
+      "mv_impact": 5.86
     },
     {
       "date": "2025-12-06",
@@ -148,14 +164,14 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 7,
       "opponent_weight": 138,
-      "opponent_rank": 43,
+      "opponent_rank": 41,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:11",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 4.42
+      "mv_impact": 4.63
     },
     {
       "date": "2025-12-06",
@@ -164,19 +180,19 @@
       "opponent_team": "Madison Central",
       "opponent_team_rank": 10,
       "opponent_weight": 138,
-      "opponent_rank": 6,
+      "opponent_rank": 7,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:25",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -2.93
+      "mv_impact": -3.0
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.7045454545454546
+    "top33_bonus_ev_shrunk": 1.7222222222222223
   }
 }

@@ -21,24 +21,24 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.794110Z",
+  "generated_at_utc": "2026-01-15T13:34:37.920230Z",
   "starters": {
     "132": {
       "weight": 132,
       "wrestler_id": "35900612132",
       "name": "Austyn Hammons",
-      "current_rank": 54,
+      "current_rank": 59,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 5
       }
     },
     "138": {
@@ -46,31 +46,31 @@
       "wrestler_id": "35900892132",
       "name": "Amber Honeycutt",
       "current_rank": 17,
-      "xtp": 3.8,
+      "xtp": 3.81,
       "xtp_p": 0.41,
       "xtp_a": 1.02,
-      "xtp_b": 2.37,
+      "xtp_b": 2.38,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 2,
-        "losses": 1
+        "losses": 2
       }
     },
     "145": {
       "weight": 145,
-      "wrestler_id": "35900702132",
-      "name": "Kyra Newkirk",
+      "wrestler_id": "35900959132",
+      "name": "Kadence Newkirk",
       "current_rank": 9,
-      "xtp": 6.38,
+      "xtp": 7.0,
       "xtp_p": 2.03,
       "xtp_a": 1.78,
-      "xtp_b": 2.57,
+      "xtp_b": 3.19,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       },
       "top33_record": {
         "wins": 2,
@@ -81,7 +81,7 @@
       "weight": 165,
       "wrestler_id": "35900724132",
       "name": "Miley Brown",
-      "current_rank": 66,
+      "current_rank": 68,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -99,12 +99,12 @@
   "remaining": [
     {
       "weight": 145,
-      "wrestler_id": "35900959132",
-      "name": "Kadence Newkirk",
-      "wins": 5,
+      "wrestler_id": "35900702132",
+      "name": "Kyra Newkirk",
+      "wins": 6,
       "losses": 3,
-      "top25_wins": 2,
-      "bonus_rate": 0.6
+      "top25_wins": 1,
+      "bonus_rate": 0.333
     }
   ],
   "team_metrics": {
@@ -118,30 +118,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 14,
-      "losses": 8
+      "wins": 17,
+      "losses": 10
     },
     "top33": {
       "wins": 4,
-      "losses": 8
+      "losses": 10
     },
     "top10": {
       "wins": 0,
-      "losses": 5
+      "losses": 6
     },
     "bonus_rate": {
-      "value": 0.643,
+      "value": 0.706,
       "rank": 99,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.571,
-      "rank": 101,
+      "value": 0.647,
+      "rank": 99,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.071,
-      "rank": 15,
+      "value": 0.059,
+      "rank": 21,
       "rank_scope": "league"
     }
   }

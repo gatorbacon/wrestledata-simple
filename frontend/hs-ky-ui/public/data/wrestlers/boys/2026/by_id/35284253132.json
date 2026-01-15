@@ -6,25 +6,25 @@
   "team_rank": 131,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 22,
+  "current_rank": 17,
   "record": {
-    "overall": "3-2",
+    "overall": "5-2",
     "vs_ranked": "2-2",
     "vs_top10": "0-2",
-    "vs_top25": "2-2"
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 6.2,
     "pa7": 4.3,
     "pd7": 1.9,
-    "si_plus": 97.1,
-    "df_plus": 111.0,
-    "apr_plus": 103.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
-    "majors": 0,
+    "si_plus": 97.0,
+    "df_plus": 111.5,
+    "apr_plus": 103.5,
+    "pin_rate": 0.6,
+    "bonus_rate": 0.8,
+    "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -32,25 +32,55 @@
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "34989007132",
-      "opponent_rank": 22,
-      "opponent_name": "Kaden Coy",
-      "method": "Dec 9-2"
+      "opponent_id": "35212703132",
+      "opponent_rank": 23,
+      "opponent_name": "Joel Vontae Stanley Jr.",
+      "method": "Fall 3:01"
     },
     "worst_loss": {
       "opponent_id": "35040568132",
-      "opponent_rank": 4,
+      "opponent_rank": 6,
       "opponent_name": "Andrew Pomeroy",
       "method": "Dec 6-4"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35261255132",
+      "opponent_name": "Jared Puleo",
+      "opponent_team": "Don Bosco Prep School",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "2026 East Coast Catholic Classic"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35147472132",
+      "opponent_name": "James Bechtel",
+      "opponent_team": "Saint John Paul the Great Catholic High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "2026 East Coast Catholic Classic"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35212703132",
       "opponent_name": "Joel Vontae Stanley Jr.",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 118,
       "opponent_weight": 144,
       "opponent_rank": 23,
       "weight_class": "144",
@@ -58,8 +88,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:01",
-      "event": "vs. Trinity (Louisville)",
-      "mv_impact": 8.23
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2025-12-30",
@@ -81,39 +110,37 @@
       "opponent_id": "35040568132",
       "opponent_name": "Andrew Pomeroy",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
-      "opponent_weight": 150,
-      "opponent_rank": 4,
+      "opponent_team_rank": 50,
+      "opponent_weight": 144,
+      "opponent_rank": 6,
       "weight_class": "150",
       "result": "L",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "King of the Bluegrass",
-      "mv_impact": 1.31
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34989007132",
       "opponent_name": "Kaden Coy",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 150,
-      "opponent_rank": 22,
+      "opponent_rank": 28,
       "weight_class": "150",
       "result": "W",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "King of the Bluegrass",
-      "mv_impact": 4.77
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35035275132",
       "opponent_name": "Jordyn Raney",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 150,
       "opponent_rank": 1,
       "weight_class": "150",
@@ -121,13 +148,42 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Union County",
-      "mv_impact": -1.31
+      "event": "vs. Union County"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.4188034188034189
-  }
+  "career": {
+    "career_id": "career_002759",
+    "canonical_name": "Hunter Kennedy",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Trinity (Louisville)",
+      "record": "6-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Trinity (Louisville)",
+      "record": "21-17",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Trinity (Louisville)",
+      "record": "7-10",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

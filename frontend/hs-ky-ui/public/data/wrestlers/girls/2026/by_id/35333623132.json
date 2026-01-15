@@ -3,23 +3,23 @@
   "name": "Piper Patterson",
   "team": "Taylor County",
   "team_slug": "taylor_county",
-  "team_rank": 55,
+  "team_rank": 58,
   "weight_class": 114,
   "year": 2026,
-  "current_rank": 52,
+  "current_rank": 54,
   "record": {
-    "overall": "2-8",
-    "vs_ranked": "2-8",
-    "vs_top10": "0-4",
-    "vs_top25": "0-5"
+    "overall": "2-9",
+    "vs_ranked": "2-9",
+    "vs_top10": "0-3",
+    "vs_top25": "0-6"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 96.8,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 96.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 8,
+    "ranked_losses": 9,
     "top10_wins": 0,
-    "top10_losses": 4,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35333582132",
-      "opponent_rank": 48,
+      "opponent_rank": 50,
       "opponent_name": "Rista Rai",
       "method": "Fall 1:26"
     },
     "worst_loss": {
       "opponent_id": "35333579132",
-      "opponent_rank": 48,
+      "opponent_rank": 50,
       "opponent_name": "Nataly Mojica",
       "method": "Fall 3:33"
     }
@@ -47,19 +47,35 @@
   "match_list": [
     {
       "date": "2026-01-03",
-      "opponent_id": "35333389132",
-      "opponent_name": "Ava Castleman",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": 8,
+      "opponent_id": "35641250132",
+      "opponent_name": "Kyleigh Harrison",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 2,
+      "opponent_rank": 15,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ladies Warhawk Classic",
-      "mv_impact": -3.26
+      "mv_impact": -5.08
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333389132",
+      "opponent_name": "Ava Castleman",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 114,
+      "opponent_rank": 4,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": -3.29
     },
     {
       "date": "2025-12-20",
@@ -68,14 +84,14 @@
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 7,
+      "opponent_rank": 6,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:14",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -4.05
+      "mv_impact": -3.99
     },
     {
       "date": "2025-12-20",
@@ -84,46 +100,46 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 53,
+      "opponent_rank": 55,
       "weight_class": "114",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:40",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": 2.7
+      "mv_impact": 2.93
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35333374132",
       "opponent_name": "Hayley Cappelli",
       "opponent_team": "Boyle County",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 16,
       "opponent_weight": 107,
-      "opponent_rank": 9,
+      "opponent_rank": 13,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Taylor County",
-      "mv_impact": -5.18
+      "mv_impact": -5.43
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35333579132",
       "opponent_name": "Nataly Mojica",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 114,
-      "opponent_rank": 48,
+      "opponent_rank": 50,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:33",
       "event": "vs. Taylor County",
-      "mv_impact": -8.93
+      "mv_impact": -9.07
     },
     {
       "date": "2025-12-13",
@@ -139,7 +155,7 @@
       "score": null,
       "duration": "0:34",
       "event": "vs. Woodford County",
-      "mv_impact": -2.51
+      "mv_impact": -2.36
     },
     {
       "date": "2025-12-13",
@@ -148,46 +164,46 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 7,
       "opponent_weight": 114,
-      "opponent_rank": 31,
+      "opponent_rank": 32,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Taylor County",
-      "mv_impact": -6.23
+      "mv_impact": -6.17
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35333582132",
       "opponent_name": "Rista Rai",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 100,
-      "opponent_rank": 48,
+      "opponent_rank": 50,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:26",
       "event": "vs. Taylor County",
-      "mv_impact": 4.02
+      "mv_impact": 0.09
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35337099132",
       "opponent_name": "Brooklynn Sweeney Lynch",
       "opponent_team": "Russellville",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 52,
       "opponent_weight": 114,
-      "opponent_rank": 47,
+      "opponent_rank": 49,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -9.04
+      "mv_impact": -9.32
     },
     {
       "date": "2025-12-06",
@@ -196,19 +212,19 @@
       "opponent_team": "South Warren",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 25,
+      "opponent_rank": 24,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:13",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -5.72
+      "mv_impact": -5.57
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.361111111111111
+    "top33_bonus_ev_shrunk": 1.4074074074074074
   }
 }

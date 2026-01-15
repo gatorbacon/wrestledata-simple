@@ -3,13 +3,13 @@
   "name": "Charles Caycee",
   "team": "Russellville",
   "team_slug": "russellville",
-  "team_rank": 121,
+  "team_rank": 123,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 140,
+  "current_rank": 136,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "2-4",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -18,64 +18,139 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 91.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "df_plus": 102.0,
+    "apr_plus": 94.9,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35024648132",
+      "opponent_rank": 152,
+      "opponent_name": "Sebastian Woosley",
+      "method": "Fall 3:22"
+    },
     "worst_loss": {
-      "opponent_id": "35133606132",
-      "opponent_rank": 91,
-      "opponent_name": "Nicholas Herrera",
-      "method": "Fall 1:30"
+      "opponent_id": "35208147132",
+      "opponent_rank": 114,
+      "opponent_name": "Aldon Hammers",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-13",
+      "opponent_id": "35024648132",
+      "opponent_name": "Sebastian Woosley",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 126,
+      "opponent_rank": 152,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:22",
+      "event": "vs. South Warren"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Trigg County"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35133611132",
+      "opponent_name": "Christon Johnson",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 95,
+      "opponent_weight": 120,
+      "opponent_rank": 77,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russellville"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35208147132",
+      "opponent_name": "Aldon Hammers",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 126,
+      "opponent_rank": 114,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russellville"
+    },
     {
       "date": "2025-12-23",
       "opponent_id": "34988679132",
       "opponent_name": "Nathan Harrison",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 126,
-      "opponent_rank": 25,
+      "opponent_rank": 22,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:13",
-      "event": "Christian County Invitational",
-      "mv_impact": -4.39
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35133606132",
       "opponent_name": "Nicholas Herrera",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 126,
-      "opponent_rank": 91,
+      "opponent_rank": 96,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "Christian County Invitational",
-      "mv_impact": -7.63
+      "event": "Christian County Invitational"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_005651",
+    "canonical_name": "Charles Caycee",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Russellville",
+      "record": "2-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

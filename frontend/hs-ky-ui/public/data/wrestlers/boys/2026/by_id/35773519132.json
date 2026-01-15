@@ -3,12 +3,12 @@
   "name": "Zac Scott",
   "team": "Johnson Central",
   "team_slug": "johnson_central",
-  "team_rank": 12,
-  "weight_class": 165,
+  "team_rank": 2,
+  "weight_class": 157,
   "year": 2026,
-  "current_rank": 4,
+  "current_rank": 5,
   "record": {
-    "overall": "9-2",
+    "overall": "17-2",
     "vs_ranked": "5-1",
     "vs_top10": "0-1",
     "vs_top25": "1-1"
@@ -17,14 +17,14 @@
     "pf7": 4.12,
     "pa7": 3.89,
     "pd7": 0.23,
-    "si_plus": 92.6,
-    "df_plus": 112.2,
-    "apr_plus": 115.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.889,
-    "majors": 0,
+    "si_plus": 92.0,
+    "df_plus": 112.6,
+    "apr_plus": 112.9,
+    "pin_rate": 0.647,
+    "bonus_rate": 0.824,
+    "majors": 1,
     "techs": 2,
-    "pins": 6
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
@@ -33,18 +33,33 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35144511132",
-      "opponent_rank": 23,
+      "opponent_rank": 21,
       "opponent_name": "Domanic Patterson",
       "method": "Fall 2:56"
     },
     "worst_loss": {
       "opponent_id": "35732596132",
-      "opponent_rank": 3,
+      "opponent_rank": 5,
       "opponent_name": "Cole Jewell",
       "method": "SV-1 8-5"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35426639132",
+      "opponent_name": "Kraig Bolte",
+      "opponent_team": "Riverbend",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Winner`s Choice"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35420195132",
@@ -58,88 +73,187 @@
       "method": "FALL",
       "score": null,
       "duration": "0:45",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 5.88
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35247367132",
       "opponent_name": "Creston Fuller",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 165,
-      "opponent_rank": 31,
+      "opponent_rank": 33,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 5.05
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35732596132",
       "opponent_name": "Cole Jewell",
       "opponent_team": "Martin County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 13,
       "opponent_weight": 165,
-      "opponent_rank": 3,
+      "opponent_rank": 5,
       "weight_class": "165",
       "result": "L",
       "method": "SV-1",
       "score": "8-5",
       "duration": "8:15",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 0.41
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35122074132",
       "opponent_name": "Bodie Neie",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 165,
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:20",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 7.35
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35144511132",
       "opponent_name": "Domanic Patterson",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 165,
-      "opponent_rank": 23,
+      "opponent_rank": 21,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:56",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 7.99
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34993524132",
       "opponent_name": "Belencio Camarena",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 165,
-      "opponent_rank": 56,
+      "opponent_rank": 68,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Fallen Heroes",
-      "mv_impact": 5.57
+      "event": "Fallen Heroes"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35656374132",
+      "opponent_name": "Bradlee Sigmon",
+      "opponent_team": "Capital",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35669619132",
+      "opponent_name": "Duncan Bishop",
+      "opponent_team": "George Washington School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35822403132",
+      "opponent_name": "Tamim Barghouthi",
+      "opponent_team": "Woodrow Wilson",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35811045132",
+      "opponent_name": "Jordan Jesse",
+      "opponent_team": "Independence H.S.",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35573727132",
+      "opponent_name": "Chayden Johnson",
+      "opponent_team": "Riverside Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "19-13",
+      "duration": "7:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35914223132",
+      "opponent_name": "Mason Miller",
+      "opponent_team": "Greenbrier East",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "FALLEN HEROS"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35143256132",
+      "opponent_name": "Damien Simmons",
+      "opponent_team": "Shady Spring",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "FALLEN HEROS"
     },
     {
       "date": "2025-12-13",
@@ -217,9 +331,39 @@
       "event": "INDIAN CLASSIC"
     }
   ],
-  "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 1.3333333333333333,
-    "top33_bonus_ev_shrunk": 1.3116883116883118
-  }
+  "career": {
+    "career_id": "career_001350",
+    "canonical_name": "Zac Scott",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Johnson Central",
+      "record": "17-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Johnson Central",
+      "record": "41-4",
+      "regional_place": 1,
+      "state_place": 3
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Johnson Central",
+      "record": "35-5",
+      "regional_place": 1,
+      "state_place": 2
+    }
+  ]
 }

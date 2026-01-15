@@ -3,23 +3,23 @@
   "name": "Ahbrea Hampton",
   "team": "Bell County",
   "team_slug": "bell_county",
-  "team_rank": 5,
+  "team_rank": 6,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 59,
+  "current_rank": 56,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "0-4",
-    "vs_top10": "0-1",
+    "overall": "1-5",
+    "vs_ranked": "0-5",
+    "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 90.1,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 88.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35457081132",
-      "opponent_rank": 43,
-      "opponent_name": "Emily Jones",
-      "method": "Fall 0:00"
+      "opponent_id": "37081911132",
+      "opponent_rank": 82,
+      "opponent_name": "Skylin Watts",
+      "method": "Fall 0:56"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35457081132",
+      "opponent_name": "Emily Jones",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 7,
+      "opponent_weight": 138,
+      "opponent_rank": 41,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Whitley County"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -60,9 +75,9 @@
       "opponent_id": "35333413132",
       "opponent_name": "Brianna Slone",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 50,
       "opponent_weight": 145,
-      "opponent_rank": 8,
+      "opponent_rank": 18,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
@@ -72,10 +87,25 @@
     },
     {
       "date": "2025-12-30",
+      "opponent_id": "37081911132",
+      "opponent_name": "Skylin Watts",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 24,
+      "opponent_weight": 132,
+      "opponent_rank": 82,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:56",
+      "event": "Girls Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "35333466132",
       "opponent_name": "Ryleigh Mahan",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 24,
       "opponent_weight": 138,
       "opponent_rank": 14,
       "weight_class": "138",
@@ -86,28 +116,13 @@
       "event": "Girls Hatfield McCoy 32 2025"
     },
     {
-      "date": "2025-12-30",
-      "opponent_id": "37081911132",
-      "opponent_name": "Skylin Watts",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 23,
-      "opponent_weight": 138,
-      "opponent_rank": 41,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:56",
-      "event": "Girls Hatfield McCoy 32 2025"
-    },
-    {
       "date": "2025-12-22",
       "opponent_id": "35457081132",
       "opponent_name": "Emily Jones",
       "opponent_team": "Whitley County",
       "opponent_team_rank": 7,
       "opponent_weight": 138,
-      "opponent_rank": 43,
+      "opponent_rank": 41,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
@@ -119,6 +134,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 2.0
+    "top33_bonus_ev_shrunk": 1.8452380952380951
   }
 }

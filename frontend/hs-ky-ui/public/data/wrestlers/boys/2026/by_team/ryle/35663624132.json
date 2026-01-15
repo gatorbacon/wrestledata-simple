@@ -3,12 +3,12 @@
   "name": "Kaiden Prince",
   "team": "Ryle",
   "team_slug": "ryle",
-  "team_rank": 13,
+  "team_rank": 14,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 44,
+  "current_rank": 43,
   "record": {
-    "overall": "3-2",
+    "overall": "4-4",
     "vs_ranked": "3-2",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
@@ -17,11 +17,11 @@
     "pf7": 15.0,
     "pa7": 0.5,
     "pd7": 14.5,
-    "si_plus": 104.4,
-    "df_plus": 110.3,
-    "apr_plus": 97.7,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.667,
+    "si_plus": 101.2,
+    "df_plus": 116.7,
+    "apr_plus": 96.9,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
     "pins": 1
@@ -33,18 +33,63 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34988560132",
-      "opponent_rank": 51,
+      "opponent_rank": 48,
       "opponent_name": "Tegh Waraich",
       "method": "Fall 1:01"
     },
     "worst_loss": {
       "opponent_id": "34988548132",
-      "opponent_rank": 15,
+      "opponent_rank": 14,
       "opponent_name": "Nathan Seth",
       "method": "Fall 3:45"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_2949a2c356e9",
+      "opponent_name": "TREY PARTIN",
+      "opponent_team": "Ross High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Valley View"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35718697132",
+      "opponent_name": "HANK SMITH",
+      "opponent_team": "Versailles High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Valley View"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_f80b839d24a2",
+      "opponent_name": "CONALL MILLER",
+      "opponent_team": "Belmont High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Valley View"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "34992807132",
@@ -52,14 +97,13 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 157,
-      "opponent_rank": 5,
+      "opponent_rank": 7,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:47",
-      "event": "2025 Ryle Raider Rumble",
-      "mv_impact": -3.17
+      "event": "2025 Ryle Raider Rumble"
     },
     {
       "date": "2025-12-13",
@@ -68,14 +112,13 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": 15,
+      "opponent_rank": 14,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:45",
-      "event": "2025 Ryle Raider Rumble",
-      "mv_impact": -3.05
+      "event": "2025 Ryle Raider Rumble"
     },
     {
       "date": "2025-12-12",
@@ -84,14 +127,13 @@
       "opponent_team": "Cooper",
       "opponent_team_rank": 9,
       "opponent_weight": 150,
-      "opponent_rank": 180,
+      "opponent_rank": 184,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
       "score": "16-0",
       "duration": "2:04",
-      "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": 1.99
+      "event": "2025 JV Ryle Raider Rumble"
     },
     {
       "date": "2025-12-12",
@@ -100,14 +142,13 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": 51,
+      "opponent_rank": 48,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:01",
-      "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": 6.66
+      "event": "2025 JV Ryle Raider Rumble"
     },
     {
       "date": "2025-12-12",
@@ -116,14 +157,48 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": 133,
       "opponent_weight": 165,
-      "opponent_rank": 118,
+      "opponent_rank": 119,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "2025 JV Ryle Raider Rumble",
-      "mv_impact": 0.19
+      "event": "2025 JV Ryle Raider Rumble"
+    }
+  ],
+  "career": {
+    "career_id": "career_002343",
+    "canonical_name": "Kaiden Prince",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Ryle",
+      "record": "4-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Ryle",
+      "record": "17-11",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Ryle",
+      "record": "2-5",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

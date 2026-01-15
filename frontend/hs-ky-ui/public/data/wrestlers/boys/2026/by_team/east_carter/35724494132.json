@@ -3,56 +3,86 @@
   "name": "Christopher Caudill",
   "team": "East Carter",
   "team_slug": "east_carter",
-  "team_rank": 42,
+  "team_rank": 76,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 36,
+  "current_rank": 40,
   "record": {
-    "overall": "4-2",
-    "vs_ranked": "3-2",
+    "overall": "5-3",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 10.52,
     "pa7": 9.09,
     "pd7": 1.42,
-    "si_plus": 91.1,
-    "df_plus": 104.8,
-    "apr_plus": 97.6,
-    "pin_rate": 0.25,
-    "bonus_rate": 0.25,
+    "si_plus": 102.4,
+    "df_plus": 103.1,
+    "apr_plus": 97.3,
+    "pin_rate": 0.2,
+    "bonus_rate": 0.2,
     "majors": 0,
     "techs": 0,
     "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35635389132",
-      "opponent_rank": 37,
+      "opponent_rank": 41,
       "opponent_name": "Hunter Crabtree",
       "method": "Dec 10-8"
     },
     "worst_loss": {
       "opponent_id": "35635561132",
-      "opponent_rank": 57,
+      "opponent_rank": 54,
       "opponent_name": "Max Worthington",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-06",
+      "opponent_id": "35850448132",
+      "opponent_name": "Zander Nottingham",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 126,
+      "opponent_rank": 13,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. East Carter"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Ashland Blazer"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35754166132",
       "opponent_name": "Jace Fletcher",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 120,
-      "opponent_rank": 104,
+      "opponent_rank": 107,
       "weight_class": "120",
       "result": "W",
       "method": "SV-1",
@@ -65,9 +95,9 @@
       "opponent_id": "35850448132",
       "opponent_name": "Zander Nottingham",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 126,
-      "opponent_rank": 12,
+      "opponent_rank": 13,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "35635561132",
       "opponent_name": "Max Worthington",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 88,
       "opponent_weight": 126,
-      "opponent_rank": 57,
+      "opponent_rank": 54,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -95,9 +125,9 @@
       "opponent_id": "35635389132",
       "opponent_name": "Hunter Crabtree",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 88,
       "opponent_weight": 120,
-      "opponent_rank": 37,
+      "opponent_rank": 41,
       "weight_class": "120",
       "result": "W",
       "method": "DEC",
@@ -110,9 +140,9 @@
       "opponent_id": "35754166132",
       "opponent_name": "Jace Fletcher",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 120,
-      "opponent_rank": 104,
+      "opponent_rank": 107,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -134,6 +164,32 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. West Carter"
+    }
+  ],
+  "career": {
+    "career_id": "career_000768",
+    "canonical_name": "Christopher Caudill",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "East Carter",
+      "record": "6-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "East Carter",
+      "record": "2-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

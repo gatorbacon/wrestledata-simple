@@ -3,111 +3,182 @@
   "name": "Antonio Ramirez",
   "team": "Russellville",
   "team_slug": "russellville",
-  "team_rank": 121,
+  "team_rank": 123,
   "weight_class": 157,
   "year": 2026,
   "current_rank": 103,
   "record": {
-    "overall": "4-6",
-    "vs_ranked": "1-4",
+    "overall": "6-8",
+    "vs_ranked": "2-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 95.7,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "df_plus": 102.0,
+    "apr_plus": 96.4,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35684113132",
-      "opponent_rank": 163,
-      "opponent_name": "Max Clark",
-      "method": "Fall 0:50"
+      "opponent_id": "35598055132",
+      "opponent_rank": 105,
+      "opponent_name": "Brody Fleming",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35177983132",
-      "opponent_rank": 72,
+      "opponent_rank": 176,
       "opponent_name": "Isaiah Daruk",
       "method": "Fall 3:46"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-13",
+      "opponent_id": "35007896132",
+      "opponent_name": "Brentley Hilton",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 157,
+      "opponent_rank": 71,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
+      "event": "vs. South Warren"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35598055132",
+      "opponent_name": "Brody Fleming",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": 130,
+      "opponent_weight": 157,
+      "opponent_rank": 105,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trigg County"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35678113132",
+      "opponent_name": "Brayden Ratliff",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 157,
+      "opponent_rank": 38,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russellville"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Hopkinsville"
+    },
+    {
       "date": "2025-12-23",
       "opponent_id": "35233660132",
       "opponent_name": "Clayton Pendley",
       "opponent_team": "Apollo",
-      "opponent_team_rank": 51,
-      "opponent_weight": 157,
-      "opponent_rank": 54,
+      "opponent_team_rank": 57,
+      "opponent_weight": 150,
+      "opponent_rank": 23,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:16",
-      "event": "Christian County Invitational",
-      "mv_impact": -5.94
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35684113132",
       "opponent_name": "Max Clark",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
-      "opponent_weight": 157,
-      "opponent_rank": 163,
+      "opponent_team_rank": 106,
+      "opponent_weight": 165,
+      "opponent_rank": 212,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "Christian County Invitational",
-      "mv_impact": 0.41
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "34989041132",
       "opponent_name": "Evan Pyles",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 29,
       "opponent_weight": 157,
-      "opponent_rank": 42,
+      "opponent_rank": 36,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:13",
-      "event": "Christian County Invitational",
-      "mv_impact": -5.3
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-19",
       "opponent_id": "35177983132",
       "opponent_name": "Isaiah Daruk",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
-      "opponent_weight": 157,
-      "opponent_rank": 72,
+      "opponent_team_rank": 102,
+      "opponent_weight": 150,
+      "opponent_rank": 176,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:40",
-      "event": "vs. Russellville",
-      "mv_impact": -7.05
+      "event": "vs. Russellville"
+    },
+    {
+      "date": "2025-12-09",
+      "opponent_id": "35177983132",
+      "opponent_name": "Isaiah Daruk",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 150,
+      "opponent_rank": 176,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:46",
+      "event": "vs. Russellville"
     },
     {
       "date": "2025-12-09",
@@ -123,22 +194,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. East Robertson High School"
-    },
-    {
-      "date": "2025-12-09",
-      "opponent_id": "35177983132",
-      "opponent_name": "Isaiah Daruk",
-      "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
-      "opponent_weight": 157,
-      "opponent_rank": 72,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:46",
-      "event": "vs. Russellville",
-      "mv_impact": -7.05
     },
     {
       "date": "2025-12-04",
@@ -199,6 +254,32 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. East Robertson High School"
+    }
+  ],
+  "career": {
+    "career_id": "career_002315",
+    "canonical_name": "Antonio Ramirez",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Russellville",
+      "record": "6-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Russellville",
+      "record": "4-12",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

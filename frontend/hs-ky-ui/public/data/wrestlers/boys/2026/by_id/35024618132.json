@@ -3,13 +3,13 @@
   "name": "Aiden Forbis",
   "team": "South Warren",
   "team_slug": "south_warren",
-  "team_rank": 126,
+  "team_rank": 38,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 145,
+  "current_rank": 137,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "1-4",
+    "overall": "1-5",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 96.1,
+    "df_plus": 102.0,
+    "apr_plus": 94.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,45 +28,61 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35674180132",
-      "opponent_rank": 150,
+      "opponent_rank": 144,
       "opponent_name": "Brycen Mattingly",
       "method": "Fall 2:31"
     },
     "worst_loss": {
       "opponent_id": "35180871132",
-      "opponent_rank": 154,
+      "opponent_rank": 148,
       "opponent_name": "Ismael Rivera-Santos",
       "method": "Fall 0:51"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35193715132",
+      "opponent_name": "Wai Soe",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 165,
+      "opponent_rank": 85,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:44",
+      "event": "vs. Warren Central",
+      "mv_impact": -7.28
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35180871132",
       "opponent_name": "Ismael Rivera-Santos",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 165,
-      "opponent_rank": 154,
+      "opponent_rank": 148,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:51",
       "event": "vs. South Warren",
-      "mv_impact": -9.34
+      "mv_impact": -9.11
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35206765132",
       "opponent_name": "Bowen Furkin",
       "opponent_team": "Adair County",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 56,
       "opponent_weight": 175,
       "opponent_rank": 64,
       "weight_class": "175",
@@ -75,60 +91,72 @@
       "score": null,
       "duration": "0:43",
       "event": "vs. South Warren",
-      "mv_impact": -6.19
+      "mv_impact": -6.54
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35205294132",
       "opponent_name": "Maddox Tabor",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 175,
-      "opponent_rank": 26,
+      "opponent_rank": 27,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:21",
       "event": "vs. South Warren",
-      "mv_impact": -2.81
+      "mv_impact": -3.54
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35674180132",
       "opponent_name": "Brycen Mattingly",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 175,
-      "opponent_rank": 150,
+      "opponent_rank": 144,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:31",
       "event": "vs. South Warren",
-      "mv_impact": 0.82
+      "mv_impact": 1.43
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35520889132",
       "opponent_name": "Hayden Bennett",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 108,
       "opponent_weight": 175,
-      "opponent_rank": 133,
+      "opponent_rank": 128,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:11",
       "event": "vs. Meade County",
-      "mv_impact": -9.88
+      "mv_impact": -9.9
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_005694",
+    "canonical_name": "Aiden Forbis",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "South Warren",
+      "record": "1-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

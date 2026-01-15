@@ -3,13 +3,13 @@
   "name": "Tyler Darling",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 50,
-  "weight_class": 150,
+  "team_rank": 56,
+  "weight_class": 144,
   "year": 2026,
-  "current_rank": 100,
+  "current_rank": 141,
   "record": {
-    "overall": "2-2",
-    "vs_ranked": "2-2",
+    "overall": "3-4",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,80 +18,122 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 105.2,
+    "df_plus": 102.0,
+    "apr_plus": 106.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35093501132",
-      "opponent_rank": 147,
+      "opponent_rank": 142,
       "opponent_name": "Zander Lovell",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35205293132",
-      "opponent_rank": 62,
-      "opponent_name": "Jaxon Leonard",
-      "method": "Fall 0:00"
+      "opponent_id": "35030260132",
+      "opponent_rank": 69,
+      "opponent_name": "Tucker Langford",
+      "method": "Fall 1:19"
     }
   },
   "match_list": [
     {
-      "date": "2026-01-03",
-      "opponent_id": "35093501132",
-      "opponent_name": "Zander Lovell",
-      "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_f2020a5b11e8",
+      "opponent_name": "Zashawn Matthews",
+      "opponent_team": "Western",
+      "opponent_team_rank": 40,
       "opponent_weight": 144,
-      "opponent_rank": 147,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_e98f3ef5013d",
+      "opponent_name": "Alexander Cissell",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 62,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "37526449132",
+      "opponent_name": "Dominick LaFavers",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 144,
+      "opponent_rank": 187,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "JV Regional 7",
-      "mv_impact": 0.89
+      "event": "vs. Russell County"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35093501132",
+      "opponent_name": "Zander Lovell",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 61,
+      "opponent_weight": 144,
+      "opponent_rank": 142,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "JV Regional 7"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35030260132",
       "opponent_name": "Tucker Langford",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 150,
-      "opponent_rank": 55,
+      "opponent_rank": 69,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:19",
-      "event": "vs. Pulaski County",
-      "mv_impact": -5.34
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2025-12-17",
       "opponent_id": "35205293132",
       "opponent_name": "Jaxon Leonard",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 150,
-      "opponent_rank": 62,
+      "opponent_rank": 48,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Greenwood",
-      "mv_impact": -5.81
+      "event": "vs. Greenwood"
     },
     {
       "date": "2025-12-09",
@@ -100,19 +142,30 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
       "opponent_weight": 144,
-      "opponent_rank": 186,
+      "opponent_rank": 182,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Russell County",
-      "mv_impact": 0.83
+      "event": "vs. Russell County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  "career": {
+    "career_id": "career_005172",
+    "canonical_name": "Tyler Darling",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Adair County",
+      "record": "3-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

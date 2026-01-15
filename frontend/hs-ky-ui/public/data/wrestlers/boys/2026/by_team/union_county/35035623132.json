@@ -3,12 +3,12 @@
   "name": "Wylee Elders",
   "team": "Union County",
   "team_slug": "union_county",
-  "team_rank": 2,
+  "team_rank": 3,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 35,
+  "current_rank": 39,
   "record": {
-    "overall": "6-3",
+    "overall": "7-5",
     "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,13 +18,13 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 112.5,
-    "pin_rate": 0.833,
-    "bonus_rate": 0.833,
+    "df_plus": 102.0,
+    "apr_plus": 110.6,
+    "pin_rate": 0.857,
+    "bonus_rate": 0.857,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,18 +33,63 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35521021132",
-      "opponent_rank": 53,
+      "opponent_rank": 54,
       "opponent_name": "Jaeden Carolina",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35284466132",
-      "opponent_rank": 33,
+      "opponent_rank": 37,
       "opponent_name": "Phillip Sullivan",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_e7ec4adad69b",
+      "opponent_name": "Chetan Malkan",
+      "opponent_team": "Waukesha West",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35423211132",
+      "opponent_name": "Caleb Thomas",
+      "opponent_team": "Harpeth High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:29",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35119950132",
+      "opponent_name": "Victor Rivera Aponte",
+      "opponent_team": "Rossview High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "Johnny Drennan Memorial"
+    },
     {
       "date": "2025-12-23",
       "opponent_id": "35574937132",
@@ -65,9 +110,9 @@
       "opponent_id": "35221044132",
       "opponent_name": "Preston Coleman",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 215,
-      "opponent_rank": 133,
+      "opponent_rank": 134,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -80,9 +125,9 @@
       "opponent_id": "35521021132",
       "opponent_name": "Jaeden Carolina",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 215,
-      "opponent_rank": 53,
+      "opponent_rank": 54,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -95,9 +140,9 @@
       "opponent_id": "35207991132",
       "opponent_name": "Javian Young",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 215,
-      "opponent_rank": 91,
+      "opponent_rank": 90,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -112,7 +157,7 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 215,
-      "opponent_rank": 33,
+      "opponent_rank": 37,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -179,6 +224,41 @@
       "score": "18-3",
       "duration": "0:00",
       "event": "vs. Evansville Mater Dei"
+    }
+  ],
+  "career": {
+    "career_id": "career_002826",
+    "canonical_name": "Wylee Elders",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Union County",
+      "record": "7-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Union County",
+      "record": "19-21",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Union County",
+      "record": "5-13",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

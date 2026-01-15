@@ -21,17 +21,17 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-08T19:21:14.868530Z",
+  "generated_at_utc": "2026-01-15T13:34:38.001538Z",
   "starters": {
     "100": {
       "weight": 100,
       "wrestler_id": "35505766132",
       "name": "Dalis Johnston",
       "current_rank": 18,
-      "xtp": 3.54,
+      "xtp": 3.58,
       "xtp_p": 0.46,
       "xtp_a": 1.0,
-      "xtp_b": 2.08,
+      "xtp_b": 2.12,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -45,7 +45,7 @@
       "weight": 107,
       "wrestler_id": "35506430132",
       "name": "Trinity Perry",
-      "current_rank": 42,
+      "current_rank": 43,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -63,7 +63,7 @@
       "weight": 120,
       "wrestler_id": "35506901132",
       "name": "Finola Bowden",
-      "current_rank": 67,
+      "current_rank": 63,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -82,10 +82,10 @@
       "wrestler_id": "35382373132",
       "name": "Celia Veal",
       "current_rank": 41,
-      "xtp": 1.1,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.75,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -99,7 +99,7 @@
       "weight": 132,
       "wrestler_id": "35506461132",
       "name": "Amiya Hill",
-      "current_rank": 59,
+      "current_rank": 68,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -118,13 +118,13 @@
       "wrestler_id": "35382371132",
       "name": "Kayleigh Hall",
       "current_rank": 28,
-      "xtp": 2.06,
+      "xtp": 2.07,
       "xtp_p": 0.22,
       "xtp_a": 0.59,
-      "xtp_b": 1.25,
+      "xtp_b": 1.26,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 1,
@@ -135,11 +135,11 @@
       "weight": 165,
       "wrestler_id": "35506636132",
       "name": "Jemeriah Hopkins",
-      "current_rank": 13,
-      "xtp": 5.58,
-      "xtp_p": 1.16,
-      "xtp_a": 1.37,
-      "xtp_b": 3.05,
+      "current_rank": 12,
+      "xtp": 6.24,
+      "xtp_p": 1.4,
+      "xtp_a": 1.47,
+      "xtp_b": 3.37,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -153,10 +153,19 @@
   "remaining": [
     {
       "weight": 100,
+      "wrestler_id": "35382374132",
+      "name": "Arya Shemwell",
+      "wins": 1,
+      "losses": 4,
+      "top25_wins": 1,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 100,
       "wrestler_id": "35382369132",
       "name": "Bree Kimberlin",
       "wins": 2,
-      "losses": 1,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -165,7 +174,7 @@
       "wrestler_id": "35506683132",
       "name": "Emelia Romang",
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -190,8 +199,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 11,
-      "losses": 6
+      "wins": 33,
+      "losses": 15
     },
     "top33": {
       "wins": 3,
@@ -199,21 +208,21 @@
     },
     "top10": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "bonus_rate": {
-      "value": 0.909,
-      "rank": 39,
+      "value": 0.97,
+      "rank": 24,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.818,
-      "rank": 48,
+      "value": 0.848,
+      "rank": 44,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.0,
-      "rank": 85,
+      "value": 0.091,
+      "rank": 9,
       "rank_scope": "league"
     }
   }

@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 91.4,
+    "df_plus": 102.0,
+    "apr_plus": 92.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35850458132",
-      "opponent_rank": 50,
+      "opponent_rank": 45,
       "opponent_name": "Amos Blankenship",
       "method": "Dec 5-1"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35722142132",
+      "opponent_rank": 18,
+      "opponent_name": "Caden Ratliff",
+      "method": "Fall 1:00"
+    }
   },
   "match_list": [
     {
@@ -45,20 +50,30 @@
       "opponent_id": "35850458132",
       "opponent_name": "Amos Blankenship",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 175,
-      "opponent_rank": 50,
+      "opponent_rank": 45,
       "weight_class": "175",
       "result": "W",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
       "event": "Bobby Bates Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35722142132",
+      "opponent_name": "Caden Ratliff",
+      "opponent_team": "Prestonsburg",
+      "opponent_team_rank": 119,
+      "opponent_weight": 175,
+      "opponent_rank": 18,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Bobby Bates Wrestling Classic"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  ]
 }

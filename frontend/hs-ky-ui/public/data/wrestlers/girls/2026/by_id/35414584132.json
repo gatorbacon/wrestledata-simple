@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35414584132",
+  "name": "Esme Ahn",
+  "team": "Holston",
+  "team_slug": "holston",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 109.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35850788132",
+      "opponent_rank": 12,
+      "opponent_name": "Lexie Dingess",
+      "method": "Fall 2:16"
+    },
+    "worst_loss": {
+      "opponent_id": "35333372132",
+      "opponent_rank": 2,
+      "opponent_name": "Makyla Folwer",
+      "method": "Dec 8-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333372132",
+      "opponent_name": "Makyla Folwer",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 132,
+      "opponent_rank": 2,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Girls Brawl in the Hall 2026"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35850788132",
+      "opponent_name": "Lexie Dingess",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 132,
+      "opponent_rank": 12,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:16",
+      "event": "Bobby Bates Girls Wrestling Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35722340132",
+      "opponent_name": "Hannah Ratliff",
+      "opponent_team": "Prestonsburg",
+      "opponent_team_rank": 21,
+      "opponent_weight": 132,
+      "opponent_rank": 50,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
+      "event": "Bobby Bates Girls Wrestling Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.7986111111111112
+  }
+}

@@ -3,13 +3,13 @@
   "name": "Izabella Mansfield",
   "team": "Bourbon County",
   "team_slug": "bourbon_county",
-  "team_rank": 58,
+  "team_rank": 63,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 132,
+  "current_rank": 141,
   "record": {
-    "overall": "0-3",
-    "vs_ranked": "0-3",
+    "overall": "0-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 4.0,
     "pa7": 19.0,
     "pd7": -15.0,
-    "si_plus": 95.4,
-    "df_plus": 90.9,
-    "apr_plus": 86.2,
+    "si_plus": 95.2,
+    "df_plus": 93.3,
+    "apr_plus": 86.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,42 +28,58 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35526297132",
-      "opponent_rank": 90,
-      "opponent_name": "Luke Ntirampeba",
+      "opponent_id": "35488537132",
+      "opponent_rank": 122,
+      "opponent_name": "Branson Dailey",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35488537132",
+      "opponent_name": "Branson Dailey",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 44,
+      "opponent_weight": 106,
+      "opponent_rank": 122,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Covington Catholic",
+      "mv_impact": -9.81
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35526297132",
       "opponent_name": "Luke Ntirampeba",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 106,
-      "opponent_rank": 90,
+      "opponent_rank": 98,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Bryan Station",
-      "mv_impact": -9.12
+      "mv_impact": -8.97
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35210235132",
       "opponent_name": "Logan Plummer",
       "opponent_team": "East Jessamine",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 77,
       "opponent_weight": 106,
-      "opponent_rank": 18,
+      "opponent_rank": 19,
       "weight_class": "106",
       "result": "L",
       "method": "TF",
@@ -77,16 +93,33 @@
       "opponent_id": "35359593132",
       "opponent_name": "Susie Beeken",
       "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 112,
+      "opponent_team_rank": 114,
       "opponent_weight": 106,
-      "opponent_rank": 84,
+      "opponent_rank": 92,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Paul Laurence Dunbar",
-      "mv_impact": -8.77
+      "mv_impact": -8.67
+    }
+  ],
+  "career": {
+    "career_id": "career_005228",
+    "canonical_name": "Izabella Mansfield",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Bourbon County",
+      "record": "0-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

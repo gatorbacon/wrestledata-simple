@@ -8,23 +8,23 @@
   "year": 2026,
   "current_rank": 11,
   "record": {
-    "overall": "4-2",
+    "overall": "5-4",
     "vs_ranked": "3-2",
     "vs_top10": "0-1",
-    "vs_top25": "2-2"
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 104.2,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 103.7,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35598237132",
-      "opponent_rank": 14,
+      "opponent_rank": 13,
       "opponent_name": "Skyler Novosselov",
       "method": "Fall 0:31"
     },
     "worst_loss": {
       "opponent_id": "35343288132",
-      "opponent_rank": 15,
+      "opponent_rank": 21,
       "opponent_name": "Kaizley Dunn",
       "method": "Fall 1:51"
     }
@@ -67,7 +67,7 @@
       "opponent_team": "Henderson County",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 15,
+      "opponent_rank": 21,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35336135132",
       "opponent_name": "Amani Clark",
       "opponent_team": "North Hardin",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 14,
       "opponent_weight": 165,
-      "opponent_rank": 21,
+      "opponent_rank": 28,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "35598237132",
       "opponent_name": "Skyler Novosselov",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 165,
-      "opponent_rank": 14,
+      "opponent_rank": 13,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -125,20 +125,65 @@
       "opponent_id": "35337107132",
       "opponent_name": "Zaylie Turner",
       "opponent_team": "Russellville",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 52,
       "opponent_weight": 165,
-      "opponent_rank": 29,
+      "opponent_rank": 35,
       "weight_class": "165",
       "result": "W",
       "method": "INJ",
       "score": null,
       "duration": "7:00",
       "event": "2025 Ohio County Girls` Invitational"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35360705132",
+      "opponent_name": "Ireoluwa Awurumate",
+      "opponent_team": "Rossview High School Girls",
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "Kirkwood Varsity Girls"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34996419132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "Kirkwood Varsity Girls"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34974418132",
+      "opponent_name": "Winter Wells",
+      "opponent_team": "Northeast High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:54",
+      "event": "Kirkwood Varsity Girls"
     }
   ],
   "bonus": {
-    "top33_wins": 3,
+    "top33_wins": 2,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.8181818181818181
+    "top33_bonus_ev_shrunk": 1.95
   }
 }

@@ -3,13 +3,13 @@
   "name": "Taven Martin",
   "team": "Bardstown",
   "team_slug": "bardstown",
-  "team_rank": 53,
+  "team_rank": 58,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 73,
+  "current_rank": 72,
   "record": {
-    "overall": "6-5",
-    "vs_ranked": "5-5",
+    "overall": "7-8",
+    "vs_ranked": "5-8",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,64 +18,122 @@
     "pa7": 11.67,
     "pd7": -1.33,
     "si_plus": 102.0,
-    "df_plus": 99.5,
-    "apr_plus": 98.6,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.833,
+    "df_plus": 99.4,
+    "apr_plus": 95.8,
+    "pin_rate": 0.571,
+    "bonus_rate": 0.714,
     "majors": 1,
     "techs": 0,
     "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
-    "ranked_losses": 5,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35639351132",
-      "opponent_rank": 84,
+      "opponent_rank": 83,
       "opponent_name": "Abdi Mohamud",
       "method": "Fall 2:48"
     },
     "worst_loss": {
-      "opponent_id": "34994788132",
-      "opponent_rank": 153,
-      "opponent_name": "Justus Shirley",
-      "method": "Fall 2:35"
+      "opponent_id": "35225666132",
+      "opponent_rank": 113,
+      "opponent_name": "Lincoln Smith",
+      "method": "TF 22-6 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34989027132",
+      "opponent_name": "Mason Taylor",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 138,
+      "opponent_rank": 69,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35138074132",
+      "opponent_name": "Sam Ryan",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 62,
+      "opponent_weight": 138,
+      "opponent_rank": 51,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35226409132",
+      "opponent_name": "Evan Logsdon",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 138,
+      "opponent_rank": 50,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Nelson County"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Marion County"
+    },
     {
       "date": "2025-12-17",
       "opponent_id": "35225666132",
       "opponent_name": "Lincoln Smith",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 85,
       "opponent_weight": 144,
-      "opponent_rank": 120,
+      "opponent_rank": 113,
       "weight_class": "144",
       "result": "L",
       "method": "TF",
       "score": "22-6",
       "duration": "0:00",
-      "event": "vs. Frederick Douglass",
-      "mv_impact": -8.18
+      "event": "vs. Frederick Douglass"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35383952132",
       "opponent_name": "Logan Fick",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 138,
-      "opponent_rank": 182,
+      "opponent_rank": 176,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Derby City Classic",
-      "mv_impact": 0.66
+      "event": "Derby City Classic"
     },
     {
       "date": "2025-12-13",
@@ -97,39 +155,37 @@
       "opponent_id": "35639351132",
       "opponent_name": "Abdi Mohamud",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 138,
-      "opponent_rank": 84,
+      "opponent_rank": 83,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Derby City Classic",
-      "mv_impact": -6.14
+      "event": "Derby City Classic"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35205216132",
       "opponent_name": "Caden Riggs",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 22,
       "opponent_weight": 138,
-      "opponent_rank": 124,
+      "opponent_rank": 125,
       "weight_class": "138",
       "result": "W",
       "method": "MD",
       "score": "16-8",
       "duration": "7:00",
-      "event": "The Beast of the East",
-      "mv_impact": 0.88
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35205988132",
       "opponent_name": "Owen Gravett",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 138,
       "opponent_rank": 67,
       "weight_class": "138",
@@ -137,15 +193,14 @@
       "method": "FALL",
       "score": null,
       "duration": "2:23",
-      "event": "The Beast of the East",
-      "mv_impact": -5.45
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34989065132",
       "opponent_name": "Frankie Springer",
       "opponent_team": "North Hardin",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 51,
       "opponent_weight": 138,
       "opponent_rank": 86,
       "weight_class": "138",
@@ -153,24 +208,22 @@
       "method": "DEC",
       "score": "9-5",
       "duration": "7:00",
-      "event": "The Beast of the East",
-      "mv_impact": 2.22
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35639351132",
       "opponent_name": "Abdi Mohamud",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 138,
-      "opponent_rank": 84,
+      "opponent_rank": 83,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:48",
-      "event": "The Beast of the East",
-      "mv_impact": 5.86
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
@@ -179,46 +232,78 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 138,
-      "opponent_rank": 60,
+      "opponent_rank": 64,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:59",
-      "event": "The Beast of the East",
-      "mv_impact": -5.91
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-02",
       "opponent_id": "34994788132",
       "opponent_name": "Justus Shirley",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 132,
-      "opponent_rank": 153,
+      "opponent_rank": 88,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:35",
-      "event": "vs. Spencer County",
-      "mv_impact": -10.48
+      "event": "vs. Spencer County"
     },
     {
       "date": "2025-12-02",
       "opponent_id": "35223094132",
       "opponent_name": "William Skaggs",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 86,
+      "opponent_team_rank": 91,
       "opponent_weight": 132,
-      "opponent_rank": 110,
+      "opponent_rank": 109,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Hart County",
-      "mv_impact": 2.74
+      "event": "vs. Hart County"
+    }
+  ],
+  "career": {
+    "career_id": "career_000119",
+    "canonical_name": "Taven Martin",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Bardstown",
+      "record": "7-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Bardstown",
+      "record": "20-25",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Bardstown",
+      "record": "7-6",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

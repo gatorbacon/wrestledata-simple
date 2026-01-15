@@ -625,6 +625,29 @@ def fill_svg_template(
         target = tspan if tspan is not None else weight2_el
         target.text = f"{weight2} lbs"
     
+    # Update date elements
+    # Girls template: format mm.dd.yyyy
+    # Boys template: format yyyy.mm.dd
+    if gender == 'girls':
+        date_str = datetime.now().strftime("%m.%d.%Y")
+    elif gender == 'boys':
+        date_str = datetime.now().strftime("%Y.%m.%d")
+    else:
+        date_str = None
+    
+    if date_str:
+        # Find elements with inkscape:label="date1" and inkscape:label="date2"
+        for date_label in ["date1", "date2"]:
+            date_el = root.find(f".//svg:text[@inkscape:label='{date_label}']", namespaces=ns)
+            if date_el is not None:
+                # Try to find tspan within the element using namespace
+                tspan = date_el.find("svg:tspan", ns)
+                if tspan is not None:
+                    tspan.text = date_str
+                else:
+                    # If no tspan, set text directly on the element
+                    date_el.text = date_str
+    
     # Fill data for weight1 (max_rows rows)
     for row in range(1, max_rows + 1):
         if row - 1 < len(wrestlers1):
@@ -690,12 +713,13 @@ def fill_svg_template(
                 if row <= 5:
                     print(f"  DEBUG weight1 row {row}: rank_1_{row} element NOT FOUND in SVG")
             
-            # Update name
+            # Update name (truncate to 20 characters with "...")
             name_el = root.find(f".//svg:text[@inkscape:label='name_1_{row}']", namespaces=ns)
             if name_el is not None:
                 tspan = name_el.find("svg:tspan", ns)
                 target = tspan if tspan is not None else name_el
-                target.text = name
+                truncated_name = truncate_name_for_svg(name, max_length=20)
+                target.text = truncated_name
                 apply_text_color(target, grey_color)
             
             # Update school
@@ -787,12 +811,13 @@ def fill_svg_template(
                 if row <= 5:
                     print(f"  DEBUG weight2 row {row}: rank_2_{row} element NOT FOUND in SVG")
             
-            # Update name
+            # Update name (truncate to 20 characters with "...")
             name_el = root.find(f".//svg:text[@inkscape:label='name_2_{row}']", namespaces=ns)
             if name_el is not None:
                 tspan = name_el.find("svg:tspan", ns)
                 target = tspan if tspan is not None else name_el
-                target.text = name
+                truncated_name = truncate_name_for_svg(name, max_length=20)
+                target.text = truncated_name
                 apply_text_color(target, grey_color)
             
             # Update school
@@ -936,6 +961,69 @@ def truncate_text(text: str, max_length: int) -> str:
     if len(text) > max_length:
         return text[:max_length-1] + '…'
     return text
+
+
+def normalize_name_for_svg(name: str) -> str:
+    """
+    Normalize name for SVG display: title case with proper handling of spaces, hyphens, apostrophes, and parentheses.
+    
+    Examples:
+        "john smith" -> "John Smith"
+        "mary-jane o'brien" -> "Mary-Jane O'Brien"
+        "JEAN-PIERRE" -> "Jean-Pierre"
+        "Masoka (ashley) Kilo" -> "Masoka (Ashley) Kilo"
+        "Hannah liz' Porter" -> "Hannah Liz' Porter"
+    """
+    if not name:
+        return ""
+    
+    result = []
+    i = 0
+    name = name.strip()
+    
+    while i < len(name):
+        char = name[i]
+        
+        # Capitalize after spaces, hyphens, apostrophes, opening parentheses
+        if i == 0 or name[i-1] in " -'(":
+            # Capitalize this character if it's a letter
+            if char.isalpha():
+                result.append(char.upper())
+            else:
+                result.append(char)
+        # After closing parentheses, capitalize if next char is a letter
+        elif name[i-1] == ')' and char.isalpha():
+            result.append(char.upper())
+        # After apostrophes (like in "liz'"), capitalize if next char is a letter
+        elif name[i-1] == "'" and char.isalpha():
+            result.append(char.upper())
+        else:
+            # Lowercase everything else (letters)
+            if char.isalpha():
+                result.append(char.lower())
+            else:
+                result.append(char)
+        
+        i += 1
+    
+    return "".join(result)
+
+
+def truncate_name_for_svg(name: str, max_length: int = 20) -> str:
+    """
+    Normalize and truncate wrestler name for SVG display.
+    First normalizes the name (title case), then truncates to max_length characters with '...' if needed.
+    """
+    if not name:
+        return ""
+    
+    # First normalize the name
+    normalized = normalize_name_for_svg(name)
+    
+    # Then truncate if needed
+    if len(normalized) > max_length:
+        return normalized[:max_length] + "..."
+    return normalized
 
 
 def build_rankings_table_data(

@@ -3,48 +3,63 @@
   "name": "Zander Smith",
   "team": "East Carter",
   "team_slug": "east_carter",
-  "team_rank": 42,
+  "team_rank": 76,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 22,
+  "current_rank": 30,
   "record": {
-    "overall": "6-4",
-    "vs_ranked": "3-4",
+    "overall": "7-4",
+    "vs_ranked": "4-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-4"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 9.0,
     "pa7": 2.0,
     "pd7": 7.0,
-    "si_plus": 100.0,
-    "df_plus": 113.1,
-    "apr_plus": 108.6,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "si_plus": 99.8,
+    "df_plus": 113.5,
+    "apr_plus": 109.3,
+    "pin_rate": 0.714,
+    "bonus_rate": 0.714,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35850442132",
-      "opponent_rank": 27,
+      "opponent_rank": 36,
       "opponent_name": "Cayden Thompson",
       "method": "Dec 9-2"
     },
     "worst_loss": {
       "opponent_id": "35850443132",
-      "opponent_rank": 20,
+      "opponent_rank": 28,
       "opponent_name": "Cameron Thompson",
       "method": "Fall 1:45"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35017750132",
+      "opponent_name": "Jacob Hammonds",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 190,
+      "opponent_rank": 53,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:38",
+      "event": "vs. East Carter"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35911430132",
@@ -65,9 +80,9 @@
       "opponent_id": "35773044132",
       "opponent_name": "Isaac Adkins",
       "opponent_team": "Johnson Central",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 2,
       "opponent_weight": 285,
-      "opponent_rank": 18,
+      "opponent_rank": 26,
       "weight_class": "Hwt",
       "result": "L",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35615677132",
       "opponent_name": "Skiler Ray",
       "opponent_team": "Pike County Central",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 52,
       "opponent_weight": 285,
-      "opponent_rank": 16,
+      "opponent_rank": 21,
       "weight_class": "Hwt",
       "result": "L",
       "method": "FALL",
@@ -110,9 +125,9 @@
       "opponent_id": "35850443132",
       "opponent_name": "Cameron Thompson",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 20,
+      "opponent_rank": 28,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "35850442132",
       "opponent_name": "Cayden Thompson",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 27,
+      "opponent_rank": 36,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
@@ -140,9 +155,9 @@
       "opponent_id": "35732597132",
       "opponent_name": "Liam May",
       "opponent_team": "Martin County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 13,
       "opponent_weight": 215,
-      "opponent_rank": 137,
+      "opponent_rank": 138,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -155,9 +170,9 @@
       "opponent_id": "35850443132",
       "opponent_name": "Cameron Thompson",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 20,
+      "opponent_rank": 28,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -170,9 +185,9 @@
       "opponent_id": "35752483132",
       "opponent_name": "trey mabry",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 285,
-      "opponent_rank": 144,
+      "opponent_rank": 153,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -194,6 +209,32 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Greenup County"
+    }
+  ],
+  "career": {
+    "career_id": "career_000783",
+    "canonical_name": "Zander Smith",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "East Carter",
+      "record": "8-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "East Carter",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

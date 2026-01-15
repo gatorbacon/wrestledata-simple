@@ -3,63 +3,95 @@
   "name": "Kymani Ealom",
   "team": "Central",
   "team_slug": "central",
-  "team_rank": 17,
+  "team_rank": 18,
   "weight_class": 235,
   "year": 2026,
-  "current_rank": 33,
+  "current_rank": 34,
   "record": {
-    "overall": "5-7",
-    "vs_ranked": "5-7",
+    "overall": "6-8",
+    "vs_ranked": "6-8",
     "vs_top10": "0-4",
-    "vs_top25": "0-4"
+    "vs_top25": "1-7"
   },
   "metrics": {
     "pf7": 6.0,
     "pa7": 4.0,
     "pd7": 2.0,
-    "si_plus": 99.3,
-    "df_plus": 107.5,
-    "apr_plus": 97.4,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "si_plus": 99.8,
+    "df_plus": 109.8,
+    "apr_plus": 98.2,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 7,
+    "ranked_wins": 6,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 4,
     "win_over_highest_rank": {
       "opponent_id": "35478658132",
-      "opponent_rank": 28,
+      "opponent_rank": 18,
       "opponent_name": "Selena Avila",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35478658132",
-      "opponent_rank": 28,
-      "opponent_name": "Selena Avila",
-      "method": "Fall 0:00"
+      "opponent_id": "35668839132",
+      "opponent_rank": 38,
+      "opponent_name": "Fatou Gueye",
+      "method": "Fall 2:40"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35668839132",
+      "opponent_name": "Fatou Gueye",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 235,
+      "opponent_rank": 38,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:40",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": -9.51
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35756106132",
+      "opponent_name": "Larhyia Thomas",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": 50,
+      "weight_class": "235",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 0.0
+    },
     {
       "date": "2025-12-29",
       "opponent_id": "35520302132",
       "opponent_name": "Sevira Taito",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 235,
-      "opponent_rank": 26,
+      "opponent_rank": 21,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ladies Woodford County Invitational",
-      "mv_impact": -7.95
+      "mv_impact": -7.29
     },
     {
       "date": "2025-12-29",
@@ -68,30 +100,30 @@
       "opponent_team": "Union County",
       "opponent_team_rank": null,
       "opponent_weight": 235,
-      "opponent_rank": 35,
+      "opponent_rank": 36,
       "weight_class": "235",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:42",
       "event": "Ladies Woodford County Invitational",
-      "mv_impact": 2.2
+      "mv_impact": 1.99
     },
     {
       "date": "2025-12-29",
       "opponent_id": "35478658132",
       "opponent_name": "Selena Avila",
       "opponent_team": "Southern",
-      "opponent_team_rank": 53,
-      "opponent_weight": 235,
-      "opponent_rank": 28,
+      "opponent_team_rank": 55,
+      "opponent_weight": 185,
+      "opponent_rank": 18,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ladies Woodford County Invitational",
-      "mv_impact": -7.38
+      "mv_impact": -5.6
     },
     {
       "date": "2025-12-19",
@@ -107,14 +139,14 @@
       "score": null,
       "duration": "0:24",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": -1.78
+      "mv_impact": -1.83
     },
     {
       "date": "2025-12-19",
       "opponent_id": "35668839132",
       "opponent_name": "Fatou Gueye",
       "opponent_team": "Central",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 18,
       "opponent_weight": 235,
       "opponent_rank": 38,
       "weight_class": "235",
@@ -123,7 +155,7 @@
       "score": null,
       "duration": "0:56",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 2.05
+      "mv_impact": 2.49
     },
     {
       "date": "2025-12-19",
@@ -132,14 +164,14 @@
       "opponent_team": "Henry Clay",
       "opponent_team_rank": 1,
       "opponent_weight": 235,
-      "opponent_rank": 9,
+      "opponent_rank": 10,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:50",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": -5.3
+      "mv_impact": -5.56
     },
     {
       "date": "2025-12-13",
@@ -148,30 +180,30 @@
       "opponent_team": "Henry Clay",
       "opponent_team_rank": 1,
       "opponent_weight": 235,
-      "opponent_rank": 9,
+      "opponent_rank": 10,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -5.3
+      "mv_impact": -5.56
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35478658132",
       "opponent_name": "Selena Avila",
       "opponent_team": "Southern",
-      "opponent_team_rank": 53,
-      "opponent_weight": 235,
-      "opponent_rank": 28,
+      "opponent_team_rank": 55,
+      "opponent_weight": 185,
+      "opponent_rank": 18,
       "weight_class": "235",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": 4.62
+      "mv_impact": 6.4
     },
     {
       "date": "2025-12-13",
@@ -180,30 +212,30 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 235,
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -4.25
+      "mv_impact": -4.34
     },
     {
       "date": "2025-12-05",
       "opponent_id": "35478658132",
       "opponent_name": "Selena Avila",
       "opponent_team": "Southern",
-      "opponent_team_rank": 53,
-      "opponent_weight": 235,
-      "opponent_rank": 28,
+      "opponent_team_rank": 55,
+      "opponent_weight": 185,
+      "opponent_rank": 18,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Queen of the Hive",
-      "mv_impact": -7.38
+      "mv_impact": -5.6
     },
     {
       "date": "2025-12-05",
@@ -212,21 +244,21 @@
       "opponent_team": "Shawnee",
       "opponent_team_rank": null,
       "opponent_weight": 235,
-      "opponent_rank": 53,
+      "opponent_rank": 50,
       "weight_class": "235",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Queen of the Hive",
-      "mv_impact": 0.65
+      "mv_impact": 0.0
     },
     {
       "date": "2025-12-05",
       "opponent_id": "35668839132",
       "opponent_name": "Fatou Gueye",
       "opponent_team": "Central",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 18,
       "opponent_weight": 235,
       "opponent_rank": 38,
       "weight_class": "235",
@@ -235,12 +267,12 @@
       "score": "6-4",
       "duration": "7:00",
       "event": "Queen of the Hive",
-      "mv_impact": -0.95
+      "mv_impact": -0.51
     }
   ],
   "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.8835978835978833
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.625
   }
 }

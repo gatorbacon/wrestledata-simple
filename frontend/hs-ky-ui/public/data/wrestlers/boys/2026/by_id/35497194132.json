@@ -3,23 +3,23 @@
   "name": "Anthony Hicks",
   "team": "Highlands",
   "team_slug": "highlands",
-  "team_rank": 3,
-  "weight_class": 138,
+  "team_rank": 4,
+  "weight_class": 132,
   "year": 2026,
-  "current_rank": 133,
+  "current_rank": 182,
   "record": {
-    "overall": "1-7",
-    "vs_ranked": "1-6",
+    "overall": "1-8",
+    "vs_ranked": "1-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 25.0,
     "pd7": -25.0,
-    "si_plus": 85.9,
-    "df_plus": 80.8,
-    "apr_plus": 88.6,
+    "si_plus": 84.9,
+    "df_plus": 79.9,
+    "apr_plus": 89.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,12 +28,12 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35238076132",
-      "opponent_rank": 116,
+      "opponent_rank": 183,
       "opponent_name": "Ben Metcalf",
       "method": "M. For."
     },
@@ -46,13 +46,28 @@
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "34993792132",
+      "opponent_name": "Jayden Fulz",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 132,
+      "opponent_rank": 42,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Highlands"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "34989089132",
       "opponent_name": "Ayden Fechtner",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 132,
-      "opponent_rank": 29,
+      "opponent_rank": 23,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "35045489132",
       "opponent_name": "MATT HARDING",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 17,
       "opponent_weight": 138,
-      "opponent_rank": 44,
+      "opponent_rank": 47,
       "weight_class": "138",
       "result": "L",
       "method": "TF",
@@ -95,7 +110,7 @@
       "opponent_id": "35635453132",
       "opponent_name": "Derrick Taylor",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 88,
       "opponent_weight": 138,
       "opponent_rank": 85,
       "weight_class": "138",
@@ -110,9 +125,9 @@
       "opponent_id": "34993546132",
       "opponent_name": "Javen Dover",
       "opponent_team": "Moore",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 27,
       "opponent_weight": 138,
-      "opponent_rank": 76,
+      "opponent_rank": 41,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "34989085132",
       "opponent_name": "Jayson Tejeda",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 126,
-      "opponent_rank": 28,
+      "opponent_rank": 27,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -137,38 +152,50 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "35215022132",
-      "opponent_name": "Wayne Illes",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": 9,
-      "opponent_weight": 132,
-      "opponent_rank": 73,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:05",
-      "event": "Tommy Castle Classic"
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "35238076132",
       "opponent_name": "Ben Metcalf",
       "opponent_team": "West Jessamine",
       "opponent_team_rank": 136,
-      "opponent_weight": 132,
-      "opponent_rank": 116,
+      "opponent_weight": 126,
+      "opponent_rank": 183,
       "weight_class": "132",
       "result": "W",
       "method": "MFF",
       "score": null,
       "duration": "7:00",
       "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35215022132",
+      "opponent_name": "Wayne Illes",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 9,
+      "opponent_weight": 132,
+      "opponent_rank": 33,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:05",
+      "event": "Tommy Castle Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_004568",
+    "canonical_name": "Anthony Hicks",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Highlands",
+      "record": "1-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

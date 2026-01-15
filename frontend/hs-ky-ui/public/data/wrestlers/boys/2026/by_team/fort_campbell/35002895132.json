@@ -3,10 +3,10 @@
   "name": "Blake Stein",
   "team": "Fort Campbell",
   "team_slug": "fort_campbell",
-  "team_rank": 76,
+  "team_rank": 82,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 85,
+  "current_rank": 87,
   "record": {
     "overall": "5-4",
     "vs_ranked": "3-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 106.5,
+    "df_plus": 102.0,
+    "apr_plus": 106.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35221008132",
-      "opponent_rank": 84,
+      "opponent_rank": 88,
       "opponent_name": "Westin Carner",
       "method": "Fall 3:58"
     },
@@ -47,42 +47,25 @@
   "match_list": [
     {
       "date": "2025-12-22",
-      "opponent_id": "35684113132",
-      "opponent_name": "Max Clark",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
-      "opponent_weight": 157,
-      "opponent_rank": 163,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:22",
-      "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 0.41
-    },
-    {
-      "date": "2025-12-22",
       "opponent_id": "35221008132",
       "opponent_name": "Westin Carner",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 165,
-      "opponent_rank": 84,
+      "opponent_rank": 88,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:58",
-      "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": 3.85
+      "event": "Fort Campbell Region 1 JV Regions"
     },
     {
       "date": "2025-12-22",
       "opponent_id": "36441385132",
       "opponent_name": "Jacoren Johnson",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 165,
       "opponent_rank": 79,
       "weight_class": "165",
@@ -90,24 +73,37 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "Fort Campbell Region 1 JV Regions",
-      "mv_impact": -6.42
+      "event": "Fort Campbell Region 1 JV Regions"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35684113132",
+      "opponent_name": "Max Clark",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 106,
+      "opponent_weight": 165,
+      "opponent_rank": 212,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "Fort Campbell Region 1 JV Regions"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35385735132",
       "opponent_name": "Gabriel Fraliex",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 190,
-      "opponent_rank": 144,
+      "opponent_rank": 150,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fort Campbell",
-      "mv_impact": 1.47
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2025-12-13",
@@ -183,6 +179,32 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Northwest High School"
+    }
+  ],
+  "career": {
+    "career_id": "career_000904",
+    "canonical_name": "Blake Stein",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Fort Campbell",
+      "record": "5-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Fort Campbell",
+      "record": "9-8",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

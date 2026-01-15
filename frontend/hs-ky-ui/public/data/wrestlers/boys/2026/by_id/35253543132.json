@@ -3,23 +3,23 @@
   "name": "Malachi Bethel",
   "team": "Fern Creek",
   "team_slug": "fern_creek",
-  "team_rank": 74,
+  "team_rank": 80,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 132,
+  "current_rank": 124,
   "record": {
     "overall": "3-6",
     "vs_ranked": "2-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 2.5,
     "pa7": 13.0,
     "pd7": -10.5,
-    "si_plus": 91.9,
-    "df_plus": 93.5,
-    "apr_plus": 99.7,
+    "si_plus": 87.6,
+    "df_plus": 99.9,
+    "apr_plus": 96.1,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35618758132",
-      "opponent_rank": 133,
+      "opponent_rank": 126,
       "opponent_name": "Christian Maldonado",
       "method": "Fall 3:44"
     },
     "worst_loss": {
       "opponent_id": "35135162132",
-      "opponent_rank": 131,
+      "opponent_rank": 123,
       "opponent_name": "Bryson Sweetman",
       "method": "Fall 2:13"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35281006132",
       "opponent_name": "Talik Washington",
       "opponent_team": "Southern",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 54,
       "opponent_weight": 157,
-      "opponent_rank": 27,
+      "opponent_rank": 24,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
@@ -65,9 +65,9 @@
       "opponent_id": "35040567132",
       "opponent_name": "Leland Garcia",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 157,
-      "opponent_rank": 23,
+      "opponent_rank": 20,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
@@ -80,9 +80,9 @@
       "opponent_id": "35135162132",
       "opponent_name": "Bryson Sweetman",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 157,
-      "opponent_rank": 131,
+      "opponent_rank": 123,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -97,7 +97,7 @@
       "opponent_team": "Valley",
       "opponent_team_rank": 132,
       "opponent_weight": 157,
-      "opponent_rank": 133,
+      "opponent_rank": 126,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -125,9 +125,9 @@
       "opponent_id": "35127112132",
       "opponent_name": "Harrison Wilson",
       "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 75,
       "opponent_weight": 165,
-      "opponent_rank": 199,
+      "opponent_rank": 193,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -170,9 +170,9 @@
       "opponent_id": "35049061132",
       "opponent_name": "Idris Qamar",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 157,
-      "opponent_rank": 70,
+      "opponent_rank": 72,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
@@ -181,9 +181,21 @@
       "event": "vs. Greenwood"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  "career": {
+    "career_id": "career_005385",
+    "canonical_name": "Malachi Bethel",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Fern Creek",
+      "record": "3-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

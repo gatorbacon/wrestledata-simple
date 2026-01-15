@@ -3,10 +3,10 @@
   "name": "Aiden Watson",
   "team": "Nelson County",
   "team_slug": "nelson_county",
-  "team_rank": 29,
+  "team_rank": 24,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 156,
+  "current_rank": 149,
   "record": {
     "overall": "0-3",
     "vs_ranked": "0-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 98.2,
+    "df_plus": 102.0,
+    "apr_plus": 98.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35122065132",
-      "opponent_rank": 3,
+      "opponent_rank": 7,
       "opponent_name": "Tyler Hillebrandt",
       "method": "Fall 0:00"
     }
@@ -60,9 +60,9 @@
       "opponent_id": "35122065132",
       "opponent_name": "Tyler Hillebrandt",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 175,
-      "opponent_rank": 3,
+      "opponent_rank": 7,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -86,9 +86,30 @@
       "event": "vs. New Albany"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_003496",
+    "canonical_name": "Aiden Watson",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Nelson County",
+      "record": "0-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Nelson County",
+      "record": "3-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

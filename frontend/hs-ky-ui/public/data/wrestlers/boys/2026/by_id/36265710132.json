@@ -3,43 +3,93 @@
   "name": "Dayton Hurt",
   "team": "Logan County",
   "team_slug": "logan_county",
-  "team_rank": 100,
+  "team_rank": 102,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 163,
+  "current_rank": 100,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "0-1",
+    "overall": "2-3",
+    "vs_ranked": "1-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 96.6,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "df_plus": 102.0,
+    "apr_plus": 99.2,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35383671132",
+      "opponent_rank": 108,
+      "opponent_name": "Jeremiah Boehman",
+      "method": "Fall 2:30"
+    },
     "worst_loss": {
-      "opponent_id": "35007900132",
-      "opponent_rank": 40,
-      "opponent_name": "Justus Smith",
-      "method": "Fall 2:56"
+      "opponent_id": "34997701132",
+      "opponent_rank": 17,
+      "opponent_name": "Marq Sheckles",
+      "method": "Fall 0:56"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34997701132",
+      "opponent_name": "Marq Sheckles",
+      "opponent_team": "Western",
+      "opponent_team_rank": 40,
+      "opponent_weight": 285,
+      "opponent_rank": 17,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:56",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35383671132",
+      "opponent_name": "Jeremiah Boehman",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 37,
+      "opponent_weight": 285,
+      "opponent_rank": 108,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35007900132",
+      "opponent_name": "Justus Smith",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 285,
+      "opponent_rank": 16,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "Bear Down Invitational (Boys)"
+    },
     {
       "date": "2025-12-19",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -60,9 +110,9 @@
       "opponent_id": "35007900132",
       "opponent_name": "Justus Smith",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 285,
-      "opponent_rank": 40,
+      "opponent_rank": 16,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -71,9 +121,21 @@
       "event": "vs. South Warren"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_004719",
+    "canonical_name": "Dayton Hurt",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Logan County",
+      "record": "2-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,10 +3,10 @@
   "name": "Lincoln Smith",
   "team": "Frederick Douglass",
   "team_slug": "frederick_douglass",
-  "team_rank": 80,
+  "team_rank": 85,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 120,
+  "current_rank": 113,
   "record": {
     "overall": "2-4",
     "vs_ranked": "2-4",
@@ -17,9 +17,9 @@
     "pf7": 9.67,
     "pa7": 8.0,
     "pd7": 1.67,
-    "si_plus": 101.0,
+    "si_plus": 100.9,
     "df_plus": 104.7,
-    "apr_plus": 90.3,
+    "apr_plus": 90.4,
     "pin_rate": 0.5,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34992059132",
-      "opponent_rank": 73,
+      "opponent_rank": 72,
       "opponent_name": "Taven Martin",
       "method": "TF 22-6 0:00"
     },
     "worst_loss": {
       "opponent_id": "34988552132",
-      "opponent_rank": 91,
+      "opponent_rank": 87,
       "opponent_name": "Roger Justice",
       "method": "Fall 1:44"
     }
@@ -50,16 +50,16 @@
       "opponent_id": "34992059132",
       "opponent_name": "Taven Martin",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 138,
-      "opponent_rank": 73,
+      "opponent_rank": 72,
       "weight_class": "144",
       "result": "W",
       "method": "TF",
       "score": "22-6",
       "duration": "0:00",
       "event": "vs. Frederick Douglass",
-      "mv_impact": 4.42
+      "mv_impact": 4.15
     },
     {
       "date": "2025-12-17",
@@ -68,83 +68,104 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 144,
-      "opponent_rank": 91,
+      "opponent_rank": 87,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:44",
       "event": "vs. Frederick Douglass",
-      "mv_impact": -7.85
+      "mv_impact": -7.4
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35226198132",
       "opponent_name": "Bryce Alford",
       "opponent_team": "Nelson County",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 24,
       "opponent_weight": 144,
-      "opponent_rank": 40,
+      "opponent_rank": 43,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "King of the Bluegrass",
-      "mv_impact": -5.8
+      "mv_impact": -5.67
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35188433132",
       "opponent_name": "Caleb Bonham",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 101,
+      "opponent_team_rank": 103,
       "opponent_weight": 144,
-      "opponent_rank": 90,
+      "opponent_rank": 86,
       "weight_class": "144",
       "result": "L",
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -4.77
+      "mv_impact": -4.81
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35281281132",
       "opponent_name": "Justin Kidd",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 138,
-      "opponent_rank": 26,
+      "opponent_rank": 35,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Frederick Douglass",
-      "mv_impact": -3.66
+      "mv_impact": -3.45
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35223401132",
       "opponent_name": "Elijah Davidson",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 144,
-      "opponent_rank": 169,
+      "opponent_rank": 137,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Mercer County",
-      "mv_impact": 1.18
+      "mv_impact": 2.05
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_003567",
+    "canonical_name": "Lincoln Smith",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Frederick Douglass",
+      "record": "2-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Frederick Douglass",
+      "record": "6-14",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

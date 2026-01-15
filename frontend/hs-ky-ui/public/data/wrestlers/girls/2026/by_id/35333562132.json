@@ -3,23 +3,23 @@
   "name": "Mollie O`daniel",
   "team": "Bardstown",
   "team_slug": "bardstown",
-  "team_rank": 26,
+  "team_rank": 27,
   "weight_class": 126,
   "year": 2026,
   "current_rank": 56,
   "record": {
-    "overall": "1-9",
-    "vs_ranked": "1-9",
-    "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "overall": "1-12",
+    "vs_ranked": "1-12",
+    "vs_top10": "0-2",
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 3.5,
-    "pa7": 7.5,
-    "pd7": -4.0,
-    "si_plus": 92.4,
-    "df_plus": 92.9,
-    "apr_plus": 85.9,
+    "pf7": 6.42,
+    "pa7": 13.33,
+    "pd7": -6.92,
+    "si_plus": 91.8,
+    "df_plus": 86.0,
+    "apr_plus": 87.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,23 +28,71 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 9,
+    "ranked_losses": 12,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35347233132",
-      "opponent_rank": 66,
+      "opponent_rank": 65,
       "opponent_name": "Makinna Lucia",
       "method": "Dec 7-4"
     },
     "worst_loss": {
-      "opponent_id": "35333670132",
-      "opponent_rank": 55,
-      "opponent_name": "Briella Levy",
-      "method": "Fall 2:30"
+      "opponent_id": "35347233132",
+      "opponent_rank": 65,
+      "opponent_name": "Makinna Lucia",
+      "method": "TF 22-7 4:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35495574132",
+      "opponent_name": "Grace Shoopman",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 56,
+      "opponent_weight": 126,
+      "opponent_rank": 7,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": -3.09
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35347233132",
+      "opponent_name": "Makinna Lucia",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 33,
+      "opponent_weight": 126,
+      "opponent_rank": 65,
+      "weight_class": "126",
+      "result": "L",
+      "method": "TF",
+      "score": "22-7",
+      "duration": "4:00",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": -7.45
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35565883132",
+      "opponent_name": "Trinity Mattingly",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 4,
+      "opponent_weight": 126,
+      "opponent_rank": 13,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "vs. Nelson County",
+      "mv_impact": -4.17
+    },
     {
       "date": "2025-12-29",
       "opponent_id": "35333593132",
@@ -52,14 +100,14 @@
       "opponent_team": "John Hardin",
       "opponent_team_rank": 3,
       "opponent_weight": 126,
-      "opponent_rank": 52,
+      "opponent_rank": 51,
       "weight_class": "126",
       "result": "L",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
       "event": "Lady Cardinal Invitational",
-      "mv_impact": -4.72
+      "mv_impact": -4.83
     },
     {
       "date": "2025-12-29",
@@ -68,46 +116,46 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 33,
       "opponent_weight": 126,
-      "opponent_rank": 66,
+      "opponent_rank": 65,
       "weight_class": "126",
       "result": "W",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
       "event": "Lady Cardinal Invitational",
-      "mv_impact": 0.97
+      "mv_impact": 0.55
     },
     {
       "date": "2025-12-29",
       "opponent_id": "35436570132",
       "opponent_name": "Emma Bailey",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 126,
-      "opponent_rank": 30,
+      "opponent_rank": 31,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:48",
       "event": "Lady Cardinal Invitational",
-      "mv_impact": -4.57
+      "mv_impact": -4.86
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35478715132",
       "opponent_name": "Samira Mbaye-Diallo",
       "opponent_team": "Southern",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 55,
       "opponent_weight": 126,
-      "opponent_rank": 46,
+      "opponent_rank": 39,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -6.36
+      "mv_impact": -6.39
     },
     {
       "date": "2025-12-13",
@@ -116,14 +164,14 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 6,
+      "opponent_rank": 7,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -2.93
+      "mv_impact": -3.58
     },
     {
       "date": "2025-12-06",
@@ -131,38 +179,38 @@
       "opponent_name": "Furaha Keza",
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": 24,
+      "opponent_weight": 126,
+      "opponent_rank": 35,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:28",
       "event": "beast of the east",
-      "mv_impact": -4.71
+      "mv_impact": -5.16
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35333670132",
       "opponent_name": "Briella Levy",
       "opponent_team": "Butler",
-      "opponent_team_rank": 30,
-      "opponent_weight": 126,
-      "opponent_rank": 55,
+      "opponent_team_rank": 17,
+      "opponent_weight": 120,
+      "opponent_rank": 54,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:30",
       "event": "beast of the east",
-      "mv_impact": -6.5
+      "mv_impact": -5.5
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35774461132",
       "opponent_name": "Maliyah Caloca",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 36,
       "opponent_weight": 126,
       "opponent_rank": 45,
       "weight_class": "126",
@@ -171,23 +219,23 @@
       "score": null,
       "duration": "0:27",
       "event": "beast of the east",
-      "mv_impact": -5.4
+      "mv_impact": -5.79
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35333638132",
       "opponent_name": "Payton Campbell",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 27,
       "opponent_weight": 120,
-      "opponent_rank": 45,
+      "opponent_rank": 52,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:03",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": -6.05
+      "mv_impact": -6.42
     },
     {
       "date": "2025-11-29",
@@ -196,19 +244,19 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 33,
       "opponent_weight": 120,
-      "opponent_rank": 36,
+      "opponent_rank": 41,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:41",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": -6.17
+      "mv_impact": -6.03
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3
+    "top33_bonus_ev_shrunk": 1.5192307692307692
   }
 }

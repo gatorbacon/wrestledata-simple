@@ -3,23 +3,23 @@
   "name": "Edwin Neighbert",
   "team": "Anderson County",
   "team_slug": "anderson_county",
-  "team_rank": 8,
+  "team_rank": 7,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 233,
+  "current_rank": 188,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 88.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,11 +28,75 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34994849132",
+      "opponent_rank": 78,
+      "opponent_name": "luke nelson",
+      "method": "Fall 1:38"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34997718132",
+      "opponent_name": "Zion Onejeme",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 45,
+      "opponent_weight": 175,
+      "opponent_rank": 20,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:58",
+      "event": "vs. Franklin County",
+      "mv_impact": -4.18
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34994849132",
+      "opponent_name": "luke nelson",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 190,
+      "opponent_rank": 78,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:38",
+      "event": "vs. Spencer County",
+      "mv_impact": -7.62
+    }
+  ],
+  "career": {
+    "career_id": "career_003041",
+    "canonical_name": "Edwin Neighbert",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Anderson County",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Anderson County",
+      "record": "6-21",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

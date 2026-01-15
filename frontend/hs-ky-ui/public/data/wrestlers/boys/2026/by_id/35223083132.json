@@ -3,10 +3,10 @@
   "name": "Chase Lopez",
   "team": "Mercer County",
   "team_slug": "mercer_county",
-  "team_rank": 107,
+  "team_rank": 109,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 193,
+  "current_rank": 200,
   "record": {
     "overall": "1-2",
     "vs_ranked": "0-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 88.3,
+    "df_plus": 102.0,
+    "apr_plus": 89.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35205987132",
-      "opponent_rank": 49,
+      "opponent_rank": 31,
       "opponent_name": "Samuel Horn",
       "method": "Fall 2:27"
     }
@@ -45,16 +45,15 @@
       "opponent_id": "35205987132",
       "opponent_name": "Samuel Horn",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 285,
-      "opponent_rank": 49,
+      "opponent_rank": 31,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:27",
-      "event": "Adam Cox Memorial 2026",
-      "mv_impact": -4.52
+      "event": "Adam Cox Memorial 2026"
     },
     {
       "date": "2026-01-03",
@@ -87,9 +86,39 @@
       "event": "Adam Cox Memorial 2026"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_000640",
+    "canonical_name": "Chase Lopez",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Mercer County",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Danville",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Danville",
+      "record": "6-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

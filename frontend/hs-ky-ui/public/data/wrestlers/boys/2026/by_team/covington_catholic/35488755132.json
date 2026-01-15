@@ -3,10 +3,10 @@
   "name": "Mark Schmitt",
   "team": "Covington Catholic",
   "team_slug": "covington_catholic",
-  "team_rank": 16,
+  "team_rank": 44,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 68,
+  "current_rank": 81,
   "record": {
     "overall": "9-1",
     "vs_ranked": "3-0",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 115.3,
+    "df_plus": 102.0,
+    "apr_plus": 115.4,
     "pin_rate": 0.889,
     "bonus_rate": 0.889,
     "majors": 0,
@@ -32,10 +32,10 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35215089132",
-      "opponent_rank": 142,
-      "opponent_name": "Shane Yocum",
-      "method": "Fall 3:46"
+      "opponent_id": "35035542132",
+      "opponent_rank": 104,
+      "opponent_name": "Gary D `Trey Watkins III",
+      "method": "Fall 1:45"
     },
     "worst_loss": null
   },
@@ -117,27 +117,12 @@
     },
     {
       "date": "2025-12-26",
-      "opponent_id": "35035542132",
-      "opponent_name": "Gary D `Trey Watkins III",
-      "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
-      "opponent_weight": 175,
-      "opponent_rank": 153,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:45",
-      "event": "Region 5 JV Wrestling Tournament"
-    },
-    {
-      "date": "2025-12-26",
       "opponent_id": "35215089132",
       "opponent_name": "Shane Yocum",
       "opponent_team": "Cooper",
       "opponent_team_rank": 9,
       "opponent_weight": 175,
-      "opponent_rank": 142,
+      "opponent_rank": 134,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -150,14 +135,29 @@
       "opponent_id": "35225304132",
       "opponent_name": "Maddox Krentz",
       "opponent_team": "Scott",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 124,
       "opponent_weight": 175,
-      "opponent_rank": 155,
+      "opponent_rank": 148,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:21",
+      "event": "Region 5 JV Wrestling Tournament"
+    },
+    {
+      "date": "2025-12-26",
+      "opponent_id": "35035542132",
+      "opponent_name": "Gary D `Trey Watkins III",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 190,
+      "opponent_rank": 104,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
       "event": "Region 5 JV Wrestling Tournament"
     },
     {
@@ -189,6 +189,32 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Lakota East High School"
+    }
+  ],
+  "career": {
+    "career_id": "career_000612",
+    "canonical_name": "Mark Schmitt",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Covington Catholic",
+      "record": "9-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Covington Catholic",
+      "record": "7-14",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

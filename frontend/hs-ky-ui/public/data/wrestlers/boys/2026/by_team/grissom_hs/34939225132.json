@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "1-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 104.7,
+    "df_plus": 102.0,
+    "apr_plus": 115.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,21 +28,16 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35221225132",
-      "opponent_rank": 139,
+      "opponent_rank": 132,
       "opponent_name": "Seth Trusty",
       "method": "Fall 2:22"
     },
-    "worst_loss": {
-      "opponent_id": "35364773132",
-      "opponent_rank": 38,
-      "opponent_name": "Carter Lawrence",
-      "method": "Fall 4:03"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -50,29 +45,14 @@
       "opponent_id": "35221225132",
       "opponent_name": "Seth Trusty",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 175,
-      "opponent_rank": 139,
+      "opponent_rank": 132,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:22",
-      "event": "Coyote Classic Wrestling Invitational"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35364773132",
-      "opponent_name": "Carter Lawrence",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 175,
-      "opponent_rank": 38,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:03",
       "event": "Coyote Classic Wrestling Invitational"
     }
   ]

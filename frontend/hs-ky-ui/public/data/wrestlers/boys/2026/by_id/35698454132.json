@@ -3,23 +3,23 @@
   "name": "Dominik Vittitoe",
   "team": "Pleasure Ridge Park",
   "team_slug": "pleasure_ridge_park",
-  "team_rank": 116,
+  "team_rank": 118,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 173,
+  "current_rank": 168,
   "record": {
-    "overall": "4-8",
-    "vs_ranked": "1-8",
-    "vs_top10": "0-0",
+    "overall": "4-9",
+    "vs_ranked": "1-9",
+    "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 2.0,
     "pa7": 17.0,
     "pd7": -15.0,
-    "si_plus": 88.7,
-    "df_plus": 96.2,
-    "apr_plus": 92.6,
+    "si_plus": 93.4,
+    "df_plus": 95.4,
+    "apr_plus": 92.9,
     "pin_rate": 0.25,
     "bonus_rate": 0.25,
     "majors": 0,
@@ -28,31 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 8,
+    "ranked_losses": 9,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35193734132",
-      "opponent_rank": 147,
+      "opponent_rank": 131,
       "opponent_name": "Ryan Nissen",
       "method": "Fall 3:25"
     },
     "worst_loss": {
-      "opponent_id": "35090039132",
-      "opponent_rank": 99,
-      "opponent_name": "Aydin Safarov",
-      "method": "Fall 2:25"
+      "opponent_id": "35618719132",
+      "opponent_rank": 68,
+      "opponent_name": "Jyden Jones",
+      "method": "Fall 0:35"
     }
   },
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "35084053132",
+      "opponent_name": "Malachi Dennison",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 32,
+      "opponent_weight": 126,
+      "opponent_rank": 67,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "vs. Pleasure Ridge Park"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35562978132",
       "opponent_name": "Henry Bueter",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 126,
-      "opponent_rank": 36,
+      "opponent_rank": 35,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -62,27 +77,12 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "35084053132",
-      "opponent_name": "Malachi Dennison",
-      "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
-      "opponent_weight": 126,
-      "opponent_rank": 54,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:45",
-      "event": "vs. Ballard"
-    },
-    {
-      "date": "2026-01-03",
       "opponent_id": "35338367132",
       "opponent_name": "Declan Duncan",
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
-      "opponent_weight": 132,
-      "opponent_rank": 44,
+      "opponent_weight": 126,
+      "opponent_rank": 65,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "35090039132",
       "opponent_name": "Aydin Safarov",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
-      "opponent_weight": 120,
-      "opponent_rank": 99,
+      "opponent_team_rank": 80,
+      "opponent_weight": 113,
+      "opponent_rank": 66,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -121,19 +121,49 @@
       "event": "Fern Creek Gladiator"
     },
     {
+      "date": "2025-12-30",
+      "opponent_id": "35404972132",
+      "opponent_name": "Kadham Alghanemi",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 99,
+      "opponent_weight": 120,
+      "opponent_rank": 10,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:17",
+      "event": "Fern Creek Gladiator"
+    },
+    {
       "date": "2025-12-29",
       "opponent_id": "35193734132",
       "opponent_name": "Ryan Nissen",
       "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 75,
       "opponent_weight": 120,
-      "opponent_rank": 147,
+      "opponent_rank": 131,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:25",
       "event": "vs. Pleasure Ridge Park"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35618719132",
+      "opponent_name": "Jyden Jones",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 132,
+      "opponent_weight": 120,
+      "opponent_rank": 68,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "vs. Valley"
     },
     {
       "date": "2025-12-29",
@@ -151,28 +181,13 @@
       "event": "vs. Eastern"
     },
     {
-      "date": "2025-12-29",
-      "opponent_id": "35618719132",
-      "opponent_name": "Jyden Jones",
-      "opponent_team": "Valley",
-      "opponent_team_rank": 132,
-      "opponent_weight": 126,
-      "opponent_rank": 39,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:35",
-      "event": "vs. Valley"
-    },
-    {
       "date": "2025-12-17",
       "opponent_id": "35046224132",
       "opponent_name": "Aznur Kamalov",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 15,
       "opponent_weight": 120,
-      "opponent_rank": 23,
+      "opponent_rank": 28,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -185,9 +200,9 @@
       "opponent_id": "34995408132",
       "opponent_name": "Preston Grigsby",
       "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 99,
+      "opponent_team_rank": 35,
       "opponent_weight": 120,
-      "opponent_rank": 59,
+      "opponent_rank": 54,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -200,9 +215,9 @@
       "opponent_id": "35122073132",
       "opponent_name": "Xander Fontana",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 120,
-      "opponent_rank": 17,
+      "opponent_rank": 18,
       "weight_class": "120",
       "result": "L",
       "method": "TF",
@@ -226,9 +241,21 @@
       "event": "vs. Eastern"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_005622",
+    "canonical_name": "Dominik Vittitoe",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Pleasure Ridge Park",
+      "record": "6-9",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

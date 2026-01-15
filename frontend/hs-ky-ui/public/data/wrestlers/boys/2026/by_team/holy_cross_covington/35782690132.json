@@ -3,13 +3,13 @@
   "name": "Jace Raven",
   "team": "Holy Cross (Covington)",
   "team_slug": "holy_cross_covington",
-  "team_rank": 90,
+  "team_rank": 94,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 98,
+  "current_rank": 105,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "1-4",
+    "overall": "2-4",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,113 +17,146 @@
     "pf7": 1.33,
     "pa7": 4.67,
     "pd7": -3.33,
-    "si_plus": 88.0,
-    "df_plus": 109.3,
-    "apr_plus": 90.5,
+    "si_plus": 87.1,
+    "df_plus": 109.6,
+    "apr_plus": 94.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35035547132",
-      "opponent_rank": 199,
+      "opponent_rank": 68,
       "opponent_name": "Marcus McCormick",
       "method": "Fall 2:20"
     },
     "worst_loss": {
       "opponent_id": "35118747132",
-      "opponent_rank": 99,
+      "opponent_rank": 106,
       "opponent_name": "Tao Mulvaney",
       "method": "Dec 2-1"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35219260132",
+      "opponent_name": "Mike Baker",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": 93,
+      "opponent_weight": 285,
+      "opponent_rank": 104,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Holy Cross (Covington)",
+      "mv_impact": 3.06
+    },
+    {
       "date": "2025-12-26",
       "opponent_id": "35663429132",
       "opponent_name": "David Rojas",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 285,
-      "opponent_rank": 81,
+      "opponent_rank": 84,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -3.65
+      "mv_impact": -4.02
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35035547132",
       "opponent_name": "Marcus McCormick",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 215,
-      "opponent_rank": 199,
+      "opponent_rank": 68,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:20",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": 2.21
+      "mv_impact": 4.08
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35520358132",
       "opponent_name": "Ezekiel Pacheco",
       "opponent_team": "Anderson County",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 7,
       "opponent_weight": 285,
-      "opponent_rank": 90,
+      "opponent_rank": 93,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -6.95
+      "mv_impact": -7.2
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35118747132",
       "opponent_name": "Tao Mulvaney",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 285,
-      "opponent_rank": 99,
+      "opponent_rank": 106,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -5.85
+      "mv_impact": -5.66
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35219260132",
       "opponent_name": "Mike Baker",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 93,
       "opponent_weight": 285,
-      "opponent_rank": 97,
+      "opponent_rank": 104,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -5.53
+      "mv_impact": -5.94
+    }
+  ],
+  "career": {
+    "career_id": "career_004645",
+    "canonical_name": "Jace Raven",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Holy Cross (Covington)",
+      "record": "2-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

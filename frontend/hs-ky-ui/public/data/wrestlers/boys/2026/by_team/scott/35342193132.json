@@ -3,22 +3,22 @@
   "name": "Gage Fulmer",
   "team": "Scott",
   "team_slug": "scott",
-  "team_rank": 122,
+  "team_rank": 124,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 101,
+  "current_rank": 104,
   "record": {
     "overall": "2-5",
     "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
+    "df_plus": 102.0,
     "apr_plus": 104.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35405496132",
-      "opponent_rank": 154,
+      "opponent_rank": 159,
       "opponent_name": "Kalem Guillon",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "34989007132",
-      "opponent_rank": 22,
+      "opponent_rank": 28,
       "opponent_name": "Kaden Coy",
       "method": "Fall 1:00"
     }
@@ -125,9 +125,9 @@
       "opponent_id": "35405496132",
       "opponent_name": "Kalem Guillon",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 86,
       "opponent_weight": 150,
-      "opponent_rank": 154,
+      "opponent_rank": 159,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -140,15 +140,41 @@
       "opponent_id": "34989007132",
       "opponent_name": "Kaden Coy",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 150,
-      "opponent_rank": 22,
+      "opponent_rank": 28,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:00",
       "event": "Tommy Castle Classic"
+    }
+  ],
+  "career": {
+    "career_id": "career_004358",
+    "canonical_name": "Gaije Fulmer",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Scott",
+      "record": "2-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Scott",
+      "record": "4-8",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

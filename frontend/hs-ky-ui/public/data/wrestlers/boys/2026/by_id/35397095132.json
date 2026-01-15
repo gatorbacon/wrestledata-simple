@@ -3,10 +3,10 @@
   "name": "Blake Foley",
   "team": "LaRue County",
   "team_slug": "larue_county",
-  "team_rank": 36,
+  "team_rank": 49,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 75,
+  "current_rank": 95,
   "record": {
     "overall": "2-0",
     "vs_ranked": "1-0",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 115.4,
+    "df_plus": 102.0,
+    "apr_plus": 116.0,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,13 +33,28 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35637316132",
-      "opponent_rank": 76,
+      "opponent_rank": 113,
       "opponent_name": "Mason Hargrove",
       "method": "Fall 0:00"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35637316132",
+      "opponent_name": "Mason Hargrove",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 106,
+      "opponent_rank": 113,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell County"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -54,26 +69,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Pulaski County"
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35637316132",
-      "opponent_name": "Mason Hargrove",
-      "opponent_team": "Russell County",
-      "opponent_team_rank": 19,
-      "opponent_weight": 113,
-      "opponent_rank": 76,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Russell County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3194444444444444
-  }
+  "career": {
+    "career_id": "career_004570",
+    "canonical_name": "Blake Foley",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "LaRue County",
+      "record": "2-0",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

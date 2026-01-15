@@ -3,10 +3,10 @@
   "name": "Chris Vissiere",
   "team": "LaRue County",
   "team_slug": "larue_county",
-  "team_rank": 36,
+  "team_rank": 49,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 69,
+  "current_rank": 68,
   "record": {
     "overall": "2-1",
     "vs_ranked": "2-1",
@@ -17,9 +17,9 @@
     "pf7": 25.0,
     "pa7": 13.0,
     "pd7": 12.0,
-    "si_plus": 116.7,
-    "df_plus": 96.2,
-    "apr_plus": 96.3,
+    "si_plus": 117.6,
+    "df_plus": 95.9,
+    "apr_plus": 95.3,
     "pin_rate": 0.5,
     "bonus_rate": 1.0,
     "majors": 1,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35030263132",
-      "opponent_rank": 79,
+      "opponent_rank": 76,
       "opponent_name": "evan Blackburn",
       "method": "MD 26-13"
     },
     "worst_loss": {
       "opponent_id": "35703098132",
-      "opponent_rank": 67,
+      "opponent_rank": 59,
       "opponent_name": "Tyler Arnett",
       "method": "Fall 0:30"
     }
@@ -50,32 +50,32 @@
       "opponent_id": "35703098132",
       "opponent_name": "Tyler Arnett",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 132,
-      "opponent_rank": 67,
+      "opponent_rank": 59,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
       "event": "vs. Pulaski County",
-      "mv_impact": -7.05
+      "mv_impact": -5.52
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35030263132",
       "opponent_name": "evan Blackburn",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 144,
-      "opponent_rank": 79,
+      "opponent_rank": 76,
       "weight_class": "144",
       "result": "W",
       "method": "MD",
       "score": "26-13",
       "duration": "7:00",
       "event": "vs. Pulaski County",
-      "mv_impact": 3.36
+      "mv_impact": 3.2
     },
     {
       "date": "2025-12-20",
@@ -84,19 +84,31 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
       "opponent_weight": 144,
-      "opponent_rank": 126,
+      "opponent_rank": 119,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Russell County",
-      "mv_impact": 2.53
+      "mv_impact": 2.79
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_005487",
+    "canonical_name": "Chris Vissiere",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "LaRue County",
+      "record": "2-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

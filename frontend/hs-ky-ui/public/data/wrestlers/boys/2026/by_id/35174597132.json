@@ -4,12 +4,12 @@
   "team": "Goodpasture Christian School",
   "team_slug": "goodpasture_christian_school",
   "team_rank": null,
-  "weight_class": 138,
+  "weight_class": 132,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 111.9,
+    "df_plus": 102.0,
+    "apr_plus": 103.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34996517132",
-      "opponent_rank": 169,
+      "opponent_rank": 160,
       "opponent_name": "Ethan Chapman",
       "method": "Fall 0:55"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35002892132",
+      "opponent_rank": 75,
+      "opponent_name": "Jayden Perry",
+      "method": "Fall 2:48"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35002892132",
+      "opponent_name": "Jayden Perry",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 82,
+      "opponent_weight": 132,
+      "opponent_rank": 75,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "vs. Goodpasture Christian School"
+    },
     {
       "date": "2025-12-02",
       "opponent_id": "34996517132",
       "opponent_name": "Ethan Chapman",
       "opponent_team": "Russellville",
-      "opponent_team_rank": 121,
+      "opponent_team_rank": 123,
       "opponent_weight": 132,
-      "opponent_rank": 169,
+      "opponent_rank": 160,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -55,10 +75,5 @@
       "duration": "0:55",
       "event": "vs. Goodpasture Christian School"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  ]
 }

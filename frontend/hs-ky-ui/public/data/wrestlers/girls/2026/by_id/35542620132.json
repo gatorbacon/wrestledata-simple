@@ -3,41 +3,116 @@
   "name": "Marita Jones",
   "team": "Central",
   "team_slug": "central",
-  "team_rank": 17,
+  "team_rank": 18,
   "weight_class": 185,
   "year": 2026,
-  "current_rank": 71,
+  "current_rank": 31,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "2-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 102.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35385660132",
+      "opponent_rank": 32,
+      "opponent_name": "Nailah Thornton",
+      "method": "Fall 1:49"
+    },
+    "worst_loss": {
+      "opponent_id": "35333583132",
+      "opponent_rank": 20,
+      "opponent_name": "Abigail Liberal",
+      "method": "Fall 3:24"
+    }
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333583132",
+      "opponent_name": "Abigail Liberal",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 26,
+      "opponent_weight": 185,
+      "opponent_rank": 20,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:24",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": -6.67
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35478658132",
+      "opponent_name": "Selena Avila",
+      "opponent_team": "Southern",
+      "opponent_team_rank": 55,
+      "opponent_weight": 185,
+      "opponent_rank": 18,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:39",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": -5.6
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35478714132",
+      "opponent_name": "Lillth Poole",
+      "opponent_team": "Southern",
+      "opponent_team_rank": 55,
+      "opponent_weight": 185,
+      "opponent_rank": 43,
+      "weight_class": "185",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:27",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 1.77
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35385660132",
+      "opponent_name": "Nailah Thornton",
+      "opponent_team": "Male",
+      "opponent_team_rank": 45,
+      "opponent_weight": 185,
+      "opponent_rank": 32,
+      "weight_class": "185",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 4.42
+    }
+  ],
   "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.8
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.8632478632478633
   }
 }

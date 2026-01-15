@@ -3,23 +3,23 @@
   "name": "Maddisyn Miles",
   "team": "Montgomery County",
   "team_slug": "montgomery_county",
-  "team_rank": 46,
+  "team_rank": 47,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 27,
+  "current_rank": 33,
   "record": {
-    "overall": "6-4",
-    "vs_ranked": "6-4",
-    "vs_top10": "0-3",
-    "vs_top25": "2-4"
+    "overall": "6-6",
+    "vs_ranked": "6-6",
+    "vs_top10": "0-4",
+    "vs_top25": "2-6"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 101.3,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 99.5,
     "pin_rate": 0.833,
     "bonus_rate": 0.833,
     "majors": 0,
@@ -28,9 +28,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 6,
-    "ranked_losses": 4,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 3,
+    "top10_losses": 4,
     "win_over_highest_rank": {
       "opponent_id": "35599274132",
       "opponent_rank": 12,
@@ -39,50 +39,82 @@
     },
     "worst_loss": {
       "opponent_id": "35599277132",
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "opponent_name": "Sundae-Grace Spradlin",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35333376132",
+      "opponent_name": "Lyla Porter",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 165,
+      "opponent_rank": 18,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Montgomery County",
+      "mv_impact": -5.42
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35333649132",
+      "opponent_name": "Jaycee Foley",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 46,
+      "opponent_weight": 185,
+      "opponent_rank": 10,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Montgomery County",
+      "mv_impact": -4.6
+    },
+    {
       "date": "2025-12-29",
       "opponent_id": "35668840132",
       "opponent_name": "Alaina May",
       "opponent_team": "Central",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 18,
       "opponent_weight": 165,
-      "opponent_rank": 46,
+      "opponent_rank": 48,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ladies Woodford County Invitational",
-      "mv_impact": 5.16
+      "mv_impact": 5.27
     },
     {
       "date": "2025-12-29",
       "opponent_id": "35599277132",
       "opponent_name": "Sundae-Grace Spradlin",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 20,
       "opponent_weight": 165,
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ladies Woodford County Invitational",
-      "mv_impact": -4.13
+      "mv_impact": -4.49
     },
     {
       "date": "2025-12-29",
       "opponent_id": "35599274132",
       "opponent_name": "Bayleigh Thompson",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 20,
       "opponent_weight": 185,
       "opponent_rank": 12,
       "weight_class": "165",
@@ -97,32 +129,32 @@
       "opponent_id": "35668838132",
       "opponent_name": "Rachel Saint Louis",
       "opponent_team": "Central",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 18,
       "opponent_weight": 165,
-      "opponent_rank": 45,
+      "opponent_rank": 47,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:44",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 5.42
+      "mv_impact": 4.99
     },
     {
       "date": "2025-12-19",
       "opponent_id": "35333569132",
       "opponent_name": "Leyla Cruz Sanchez",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 39,
       "opponent_weight": 165,
-      "opponent_rank": 44,
+      "opponent_rank": 46,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:08",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": 4.91
+      "mv_impact": 4.33
     },
     {
       "date": "2025-12-19",
@@ -138,23 +170,23 @@
       "score": null,
       "duration": "0:28",
       "event": "Ladies 5 Star Classic",
-      "mv_impact": -1.0
+      "mv_impact": -1.29
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35897964132",
       "opponent_name": "Mya Mastin",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 29,
       "opponent_weight": 165,
-      "opponent_rank": 41,
+      "opponent_rank": 44,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": 5.3
+      "mv_impact": 4.98
     },
     {
       "date": "2025-11-29",
@@ -186,7 +218,7 @@
       "score": null,
       "duration": "1:20",
       "event": "Tommy Castle Classic",
-      "mv_impact": 4.99
+      "mv_impact": 5.33
     },
     {
       "date": "2025-11-29",
@@ -202,12 +234,12 @@
       "score": null,
       "duration": "0:50",
       "event": "Tommy Castle Classic",
-      "mv_impact": -1.78
+      "mv_impact": -1.83
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.5925925925925926
+    "top33_bonus_ev_shrunk": 1.75
   }
 }

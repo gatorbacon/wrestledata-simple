@@ -10,7 +10,7 @@
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 98.7,
+    "df_plus": 102.0,
+    "apr_plus": 99.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -30,11 +30,11 @@
     "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34989048132",
-      "opponent_rank": 13,
+      "opponent_rank": 7,
       "opponent_name": "Christian Prietto-Bottoms",
       "method": "Fall 1:45"
     }
@@ -45,9 +45,9 @@
       "opponent_id": "34989048132",
       "opponent_name": "Christian Prietto-Bottoms",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 29,
       "opponent_weight": 106,
-      "opponent_rank": 13,
+      "opponent_rank": 7,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -55,10 +55,5 @@
       "duration": "1:45",
       "event": "Blackhorse Invitational"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3194444444444444
-  }
+  ]
 }

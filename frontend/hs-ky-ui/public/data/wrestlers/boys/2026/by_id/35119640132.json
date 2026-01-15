@@ -6,7 +6,7 @@
   "team_rank": 10,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 168,
+  "current_rank": 175,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -17,9 +17,9 @@
     "pf7": 2.0,
     "pa7": 10.0,
     "pd7": -8.0,
-    "si_plus": 89.0,
-    "df_plus": 101.9,
-    "apr_plus": 84.8,
+    "si_plus": 88.2,
+    "df_plus": 101.8,
+    "apr_plus": 84.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35782708132",
-      "opponent_rank": 133,
+      "opponent_rank": 143,
       "opponent_name": "Ben Chalfin",
       "method": "MD 10-2"
     }
@@ -45,37 +45,58 @@
       "opponent_id": "35663429132",
       "opponent_name": "David Rojas",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 285,
-      "opponent_rank": 81,
+      "opponent_rank": 84,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -6.65
+      "mv_impact": -7.02
     },
     {
       "date": "2025-12-26",
       "opponent_id": "35782708132",
       "opponent_name": "Ben Chalfin",
       "opponent_team": "Holy Cross (Covington)",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 94,
       "opponent_weight": 285,
-      "opponent_rank": 133,
+      "opponent_rank": 143,
       "weight_class": "285",
       "result": "L",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -7.74
+      "mv_impact": -7.83
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_003541",
+    "canonical_name": "Koen Williams",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Conner",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Conner",
+      "record": "0-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

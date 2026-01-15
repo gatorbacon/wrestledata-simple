@@ -3,13 +3,13 @@
   "name": "Wyatt Owens",
   "team": "Holy Cross (Covington)",
   "team_slug": "holy_cross_covington",
-  "team_rank": 90,
+  "team_rank": 94,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 98,
+  "current_rank": 84,
   "record": {
-    "overall": "4-8",
-    "vs_ranked": "4-8",
+    "overall": "5-8",
+    "vs_ranked": "5-8",
     "vs_top10": "0-2",
     "vs_top25": "0-3"
   },
@@ -17,34 +17,66 @@
     "pf7": 11.0,
     "pa7": 8.0,
     "pd7": 3.0,
-    "si_plus": 103.1,
+    "si_plus": 103.2,
     "df_plus": 104.7,
-    "apr_plus": 100.7,
+    "apr_plus": 101.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 5,
     "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35663442132",
-      "opponent_rank": 99,
-      "opponent_name": "Jake Miley",
-      "method": "Fall 1:17"
+      "opponent_id": "35219515132",
+      "opponent_rank": 85,
+      "opponent_name": "Elyja Lackey",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35219551132",
-      "opponent_rank": 156,
+      "opponent_rank": 153,
       "opponent_name": "Xavier Stewart",
       "method": "Fall 2:56"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35219515132",
+      "opponent_name": "Elyja Lackey",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": 93,
+      "opponent_weight": 132,
+      "opponent_rank": 85,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Holy Cross (Covington)",
+      "mv_impact": 3.59
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35528996132",
+      "opponent_name": "Colin Brock",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": 133,
+      "opponent_weight": 126,
+      "opponent_rank": 180,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "NKAC",
+      "mv_impact": 2.59
+    },
     {
       "date": "2025-12-27",
       "opponent_id": "34988588132",
@@ -52,7 +84,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 132,
-      "opponent_rank": 8,
+      "opponent_rank": 6,
       "weight_class": "132",
       "result": "L",
       "method": "MFF",
@@ -67,55 +99,39 @@
       "opponent_team": "Cooper",
       "opponent_team_rank": 9,
       "opponent_weight": 132,
-      "opponent_rank": 30,
+      "opponent_rank": 27,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:36",
       "event": "NKAC",
-      "mv_impact": -4.92
+      "mv_impact": -5.23
     },
     {
       "date": "2025-12-27",
       "opponent_id": "35281280132",
       "opponent_name": "Ethan Piasecki",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 132,
-      "opponent_rank": 20,
+      "opponent_rank": 14,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:44",
       "event": "NKAC",
-      "mv_impact": -2.99
-    },
-    {
-      "date": "2025-12-27",
-      "opponent_id": "35528996132",
-      "opponent_name": "Colin Brock",
-      "opponent_team": "Walton-Verona",
-      "opponent_team_rank": 133,
-      "opponent_weight": 132,
-      "opponent_rank": 126,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:29",
-      "event": "NKAC",
-      "mv_impact": 1.33
+      "mv_impact": -2.75
     },
     {
       "date": "2025-12-27",
       "opponent_id": "35663338132",
       "opponent_name": "Ethan Berhe",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 132,
-      "opponent_rank": 38,
+      "opponent_rank": 34,
       "weight_class": "132",
       "result": "L",
       "method": "MFF",
@@ -128,48 +144,64 @@
       "opponent_id": "35488625132",
       "opponent_name": "Levi Plummer",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 44,
       "opponent_weight": 132,
-      "opponent_rank": 124,
+      "opponent_rank": 121,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:23",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": 2.26
+      "mv_impact": 2.65
     },
     {
       "date": "2025-12-26",
       "opponent_id": "35663485132",
       "opponent_name": "Trent Disselkamp",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 132,
-      "opponent_rank": 74,
+      "opponent_rank": 71,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:08",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -6.04
+      "mv_impact": -6.46
     },
     {
       "date": "2025-12-26",
       "opponent_id": "35663442132",
       "opponent_name": "Jake Miley",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 132,
-      "opponent_rank": 99,
+      "opponent_rank": 98,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:17",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": 3.21
+      "mv_impact": 3.11
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35118664132",
+      "opponent_name": "Awab Fadel",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 144,
+      "opponent_rank": 189,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Bearcat Brawl 2025",
+      "mv_impact": 3.82
     },
     {
       "date": "2025-12-06",
@@ -178,67 +210,63 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 132,
-      "opponent_rank": 5,
+      "opponent_rank": 4,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -2.8
+      "mv_impact": -2.39
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35519992132",
       "opponent_name": "Brice Burford",
       "opponent_team": "Anderson County",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 7,
       "opponent_weight": 138,
-      "opponent_rank": 65,
+      "opponent_rank": 44,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -5.98
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35118664132",
-      "opponent_name": "Awab Fadel",
-      "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
-      "opponent_weight": 138,
-      "opponent_rank": 181,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "Bearcat Brawl 2025",
-      "mv_impact": 0.72
+      "mv_impact": -5.83
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35219551132",
       "opponent_name": "Xavier Stewart",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 93,
       "opponent_weight": 138,
-      "opponent_rank": 156,
+      "opponent_rank": 153,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:56",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -10.28
+      "mv_impact": -9.72
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_004644",
+    "canonical_name": "Wyatt Owens",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Holy Cross (Covington)",
+      "record": "6-9",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

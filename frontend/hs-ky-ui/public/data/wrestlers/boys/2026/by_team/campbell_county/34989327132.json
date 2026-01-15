@@ -3,23 +3,23 @@
   "name": "Jaxan Riley",
   "team": "Campbell County",
   "team_slug": "campbell_county",
-  "team_rank": 15,
+  "team_rank": 16,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 29,
+  "current_rank": 33,
   "record": {
-    "overall": "4-2",
+    "overall": "4-3",
     "vs_ranked": "3-2",
-    "vs_top10": "0-1",
+    "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 4.0,
     "pa7": 9.0,
     "pd7": -5.0,
-    "si_plus": 90.2,
+    "si_plus": 89.5,
     "df_plus": 103.1,
-    "apr_plus": 112.7,
+    "apr_plus": 112.9,
     "pin_rate": 0.75,
     "bonus_rate": 0.75,
     "majors": 0,
@@ -30,16 +30,16 @@
     "ranked_wins": 3,
     "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35481886132",
-      "opponent_rank": 32,
+      "opponent_rank": 39,
       "opponent_name": "Hunter Edlin",
       "method": "Fall 2:50"
     },
     "worst_loss": {
       "opponent_id": "35122096132",
-      "opponent_rank": 22,
+      "opponent_rank": 25,
       "opponent_name": "Chris Ammon",
       "method": "Dec 9-4"
     }
@@ -65,9 +65,9 @@
       "opponent_id": "35122096132",
       "opponent_name": "Chris Ammon",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 106,
-      "opponent_rank": 22,
+      "opponent_rank": 25,
       "weight_class": "106",
       "result": "L",
       "method": "DEC",
@@ -76,13 +76,28 @@
       "event": "vs. Oldham County"
     },
     {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_a19c1c909ddc",
+      "opponent_name": "Dustin Collier",
+      "opponent_team": "Charlestown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "vs. Charlestown"
+    },
+    {
       "date": "2025-11-29",
       "opponent_id": "34994868132",
       "opponent_name": "oliver westphal",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 106,
-      "opponent_rank": 10,
+      "opponent_rank": 12,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "34989026132",
       "opponent_name": "Josh Athey",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 106,
-      "opponent_rank": 71,
+      "opponent_rank": 56,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -110,9 +125,9 @@
       "opponent_id": "35481886132",
       "opponent_name": "Hunter Edlin",
       "opponent_team": "South Oldham",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 106,
-      "opponent_rank": 32,
+      "opponent_rank": 39,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -125,15 +140,32 @@
       "opponent_id": "35180991132",
       "opponent_name": "Presley Thomas",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 106,
-      "opponent_rank": 80,
+      "opponent_rank": 87,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:35",
       "event": "Tommy Castle Classic"
+    }
+  ],
+  "career": {
+    "career_id": "career_004947",
+    "canonical_name": "Jaxan Riley",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Campbell County",
+      "record": "5-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

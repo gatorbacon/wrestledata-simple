@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "36021568132",
+  "name": "Conner Tallamy",
+  "team": "Braxton County Hs",
+  "team_slug": "braxton_county_hs",
+  "team_rank": null,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 115.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35635389132",
+      "opponent_rank": 41,
+      "opponent_name": "Hunter Crabtree",
+      "method": "Fall 0:53"
+    },
+    "worst_loss": {
+      "opponent_id": "35051530132",
+      "opponent_rank": 11,
+      "opponent_name": "Brycen Gray",
+      "method": "Fall 2:47"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35635389132",
+      "opponent_name": "Hunter Crabtree",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 88,
+      "opponent_weight": 120,
+      "opponent_rank": 41,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35401423132",
+      "opponent_name": "Damien Falter",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": 101,
+      "opponent_weight": 120,
+      "opponent_rank": 58,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35051530132",
+      "opponent_name": "Brycen Gray",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 55,
+      "opponent_weight": 120,
+      "opponent_rank": 11,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:47",
+      "event": "Clipson Jones Classic 2026"
+    }
+  ]
+}

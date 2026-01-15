@@ -8,46 +8,81 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "3-0",
-    "vs_ranked": "3-0",
-    "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "overall": "4-1",
+    "vs_ranked": "4-1",
+    "vs_top10": "0-1",
+    "vs_top25": "2-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 125.4,
+    "df_plus": 102.0,
+    "apr_plus": 121.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35513066132",
-      "opponent_rank": 17,
+      "opponent_rank": 18,
       "opponent_name": "Ty Hackney",
       "method": "Fall 0:41"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35732644132",
+      "opponent_rank": 10,
+      "opponent_name": "Brayden Fannin",
+      "method": "Fall 1:50"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35017745132",
+      "opponent_name": "Cameron Burnside",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 215,
+      "opponent_rank": 21,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:47",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35732644132",
+      "opponent_name": "Brayden Fannin",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 215,
+      "opponent_rank": 10,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "Clipson Jones Classic 2026"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35751941132",
       "opponent_name": "Gabriel Blackburn",
       "opponent_team": "Johnson Central",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 2,
       "opponent_weight": 190,
-      "opponent_rank": 31,
+      "opponent_rank": 36,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -60,9 +95,9 @@
       "opponent_id": "35513066132",
       "opponent_name": "Ty Hackney",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 215,
-      "opponent_rank": 17,
+      "opponent_rank": 18,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -77,7 +112,7 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 215,
-      "opponent_rank": 65,
+      "opponent_rank": 63,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -85,10 +120,5 @@
       "duration": "0:40",
       "event": "Anchor Down Showdown"
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.0925925925925926
-  }
+  ]
 }

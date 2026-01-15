@@ -152,6 +152,8 @@ def parse_args():
     parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
     parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
                         help='Gender: boys or girls (required when league=hs)')
+    parser.add_argument('-force', action='store_true',
+                        help='Force complete re-scrape: archive logs and delete all team data files')
     return parser.parse_args()
 
 class WrestlingScraper:
@@ -185,8 +187,8 @@ class WrestlingScraper:
         
         # Create season-specific data directory
         if self.league == 'hs':
-            # HS data goes to subdirectories: mt/data/hs_ky_boys/ or mt/data/hs_ky_girls/
-            self.season_data_dir = DATA_DIR / f"hs_{self.state.lower()}_{self.gender}"
+            # HS data goes to season-specific subdirectories: mt/data/hs_ky_boys/{season}/ or mt/data/hs_ky_girls/{season}/
+            self.season_data_dir = DATA_DIR / f"hs_{self.state.lower()}_{self.gender}" / str(season_year)
         else:  # ncaa
             # NCAA data goes to season-specific directory: mt/data/{season_year}/
             self.season_data_dir = DATA_DIR / str(season_year)
@@ -1311,6 +1313,8 @@ class WrestlingScraper:
 
     def scrape_team(self, team_url: str, team_info: Dict) -> Optional[Dict]:
         """Scrape data for a single team."""
+        # Reset debug flag for each team
+        self._debug_printed = False
         try:
             print(f"\n=== Starting to scrape team: {team_url} ===")
             print(f"Team name from list: {team_info['name']} ({team_info['abbreviation']})")
@@ -1365,8 +1369,55 @@ class WrestlingScraper:
                     cols = row.find_elements(By.TAG_NAME, "td")
                     if len(cols) >= 6:  # Make sure we have enough columns
                         name = cols[1].text.strip()
-                        weight = cols[3].text.strip()
-                        grade = cols[5].text.strip()
+                        mwc = cols[3].text.strip()  # MWC (Minimum Weight Class)
+                        weight_class = cols[5].text.strip() if len(cols) > 5 else ""  # Actual Weight Class
+                        
+                        # Grade column: Based on screenshot column order:
+                        # 0: Icon, 1: Name, 2: Eligible, 3: MWC, 4: MWW, 5: Wt. Class, 6: Gender, 7: Grade, 8: Record
+                        # Grade should be at cols[7] (8th column, 0-indexed)
+                        grade = ""
+                        grade_patterns = ["So.", "Jr.", "Sr.", "Fr.", "7th", "8th", "9th", "10th", "11th", "12th", 
+                                         "Freshman", "Sophomore", "Junior", "Senior"]
+                        
+                        # Try cols[7] first (expected location)
+                        if len(cols) > 7:
+                            potential_grade = cols[7].text.strip()
+                            if any(pattern in potential_grade for pattern in grade_patterns) or \
+                               potential_grade in ["So.", "Jr.", "Sr.", "Fr.", "7th", "8th", "9th", "10th", "11th", "12th"]:
+                                grade = potential_grade
+                            else:
+                                # If cols[7] doesn't match grade pattern, search other columns
+                                for i in range(min(len(cols), 12)):
+                                    if i == 7:  # Skip the one we already checked
+                                        continue
+                                    potential_grade = cols[i].text.strip()
+                                    if any(pattern in potential_grade for pattern in grade_patterns) or \
+                                       potential_grade in ["So.", "Jr.", "Sr.", "Fr.", "7th", "8th", "9th", "10th", "11th", "12th"]:
+                                        grade = potential_grade
+                                        # Debug: Print which column had the grade (only once)
+                                        if name and not hasattr(self, '_debug_printed'):
+                                            print(f"DEBUG: Found grade '{grade}' for {name} in cols[{i}] (not cols[7])")
+                                            print(f"DEBUG: cols[7] was '{cols[7].text.strip()}'")
+                                            self._debug_printed = True
+                                        break
+                                
+                                # If still not found, use cols[7] anyway (might be empty or wrong)
+                                if not grade:
+                                    grade = cols[7].text.strip()
+                                    # Debug output
+                                    if name and not hasattr(self, '_debug_printed'):
+                                        print(f"DEBUG: Using cols[7]='{grade}' for {name} (didn't match grade patterns)")
+                                        print(f"DEBUG: All columns for {name}:")
+                                        for j, col in enumerate(cols[:12]):
+                                            print(f"  cols[{j}]: '{col.text.strip()}'")
+                                        self._debug_printed = True
+                        else:
+                            grade = ""  # Fallback if not enough columns
+                            if name and not hasattr(self, '_debug_printed'):
+                                print(f"DEBUG: Only {len(cols)} columns found for {name}, expected at least 8")
+                                for i, col in enumerate(cols):
+                                    print(f"  cols[{i}]: '{col.text.strip()}'")
+                                self._debug_printed = True
                         
                         # Check eligibility icons in the correct column
                         eligible_cell = cols[2]
@@ -1375,19 +1426,31 @@ class WrestlingScraper:
                         # Check for eligibility status
                         if 'greenIcon' in cell_html:
                             eligible_wrestlers.add(name)
-                            # Store roster info for eligible wrestlers
-                            key = f"{name}_{weight}"
-                            roster_info[key] = grade
-                            print(f"Found eligible entry for: {name} ({weight}) - {grade}")
+                            # Store roster info for eligible wrestlers using ACTUAL weight class (cols[5]), not MWC
+                            # This matches what we use when looking up from the dropdown
+                            # Normalize name and weight class for consistent key matching
+                            normalized_name = name.strip()
+                            normalized_weight_class = weight_class.strip() if weight_class else ""
+                            if normalized_weight_class:  # Only store if we have a weight class
+                                key = f"{normalized_name}_{normalized_weight_class}"
+                                roster_info[key] = grade
+                                print(f"Found eligible entry for: {name} ({normalized_weight_class}) - {grade}")
+                            else:
+                                # Fallback to MWC if weight class not available
+                                normalized_mwc = mwc.strip() if mwc else ""
+                                if normalized_mwc:
+                                    key = f"{normalized_name}_{normalized_mwc}"
+                                    roster_info[key] = grade
+                                    print(f"Found eligible entry for: {name} ({normalized_mwc}) - {grade} [using MWC]")
                         elif 'redIcon' in cell_html and name not in eligible_wrestlers:
                             ineligible_wrestlers.add(name)
                             # Store roster info for override wrestlers (even if ineligible)
-                            if name in override_wrestler_names and weight:  # Only store if weight is not empty
-                                key = f"{name}_{weight}"
+                            if name in override_wrestler_names and weight_class:  # Only store if weight_class is not empty
+                                key = f"{name}_{weight_class}"
                                 roster_info[key] = grade
-                                print(f"Found ineligible entry for override wrestler: {name} ({weight}) - {grade} [storing roster info]")
+                                print(f"Found ineligible entry for override wrestler: {name} ({weight_class}) - {grade} [storing roster info]")
                             else:
-                                print(f"Found ineligible entry for: {name} ({weight}) - {grade}")
+                                print(f"Found ineligible entry for: {name} ({weight_class if weight_class else mwc}) - {grade}")
                 except Exception as e:
                     print(f"Error processing roster row: {e}")
                     continue
@@ -1497,7 +1560,9 @@ class WrestlingScraper:
                     else:
                         # Extract weight class from name (e.g., "125 - Gerald Huff")
                         weight_class, wrestler_name = wrestler_name.split(" -", 1)
+                        weight_class = weight_class.strip()
                         wrestler_name = wrestler_name.strip()
+                        grade = ""  # Initialize grade for regular wrestlers
                     
                     # Skip if wrestler was marked as ineligible (unless overridden)
                     if wrestler_name in ineligible_wrestlers and wrestler_name not in override_lookup:
@@ -1506,8 +1571,23 @@ class WrestlingScraper:
                     
                     # Look up grade from roster info (if not already found)
                     if not grade:
-                        key = f"{wrestler_name}_{weight_class}"
+                        # Normalize name and weight class for consistent key matching
+                        normalized_wrestler_name = wrestler_name.strip()
+                        normalized_weight_class = weight_class.strip() if weight_class else ""
+                        key = f"{normalized_wrestler_name}_{normalized_weight_class}"
                         grade = roster_info.get(key, "")
+                        # Debug: Print lookup attempt for first few failures
+                        if not grade and wrestler_name and not hasattr(self, '_lookup_debug_count'):
+                            self._lookup_debug_count = 0
+                        if not grade and wrestler_name and hasattr(self, '_lookup_debug_count') and self._lookup_debug_count < 3:
+                            print(f"\nDEBUG: Grade lookup failed for {wrestler_name} (weight_class: {normalized_weight_class})")
+                            print(f"DEBUG: Lookup key was: '{key}'")
+                            print(f"DEBUG: Available keys in roster_info (first 10): {list(roster_info.keys())[:10]}")
+                            # Try to find a matching key
+                            matching_keys = [k for k in roster_info.keys() if normalized_wrestler_name in k]
+                            if matching_keys:
+                                print(f"DEBUG: Keys containing '{normalized_wrestler_name}': {matching_keys[:5]}")
+                            self._lookup_debug_count += 1
                     
                     wrestler_info.append({
                         "id": wrestler_id,
@@ -2490,14 +2570,14 @@ class WrestlingScraper:
             max_passes = 10
             for pass_idx in range(1, max_passes + 1):
                 print(f"\n=== Scrape pass {pass_idx}/{max_passes} over team list ===")
-                self._refresh_log_data()
+                self._refresh_teams_scraped()
 
                 any_pending = False
                 any_progress = False
 
                 for team in teams:
                     # Refresh log data before each team to pick up updates
-                    self._refresh_log_data()
+                    self._refresh_teams_scraped()
 
                     # Skip special "Season Team" or already scraped teams
                     if team["name"] == "Season Team":
@@ -2605,9 +2685,119 @@ class WrestlingScraper:
             print(f"Name: {name}")
             print(f"Team: {team}")
 
+def archive_scrape_logs(season: int, league: str, state: str = None, gender: str = None):
+    """Archive scrape log files to a unique timestamped file, then delete originals."""
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    
+    if league == 'hs':
+        # HS logs: mt/logs/hs_ky_<gender>/scrape_log_*.json
+        log_dir = LOGS_DIR / f"hs_{state.lower()}_{gender}"
+        if not log_dir.exists():
+            print(f"  No log directory found: {log_dir}")
+            return
+        
+        # Find all scrape_log files
+        log_files = list(log_dir.glob("scrape_log_*.json"))
+        if not log_files:
+            print(f"  No scrape log files found in {log_dir}")
+            return
+        
+        # Create archive directory
+        archive_dir = log_dir / "archived"
+        archive_dir.mkdir(exist_ok=True, parents=True)
+        
+        # Archive each log file, then delete the original
+        for log_file in log_files:
+            archive_name = f"{log_file.stem}_{timestamp}.json"
+            archive_path = archive_dir / archive_name
+            shutil.copy2(log_file, archive_path)
+            log_file.unlink()  # Delete the original file
+            print(f"  Archived and deleted: {log_file.name} -> {archive_path.name}")
+    else:
+        # NCAA logs: mt/logs/scrape_log_*.json
+        log_files = list(LOGS_DIR.glob(f"scrape_log_{season}.json"))
+        if not log_files:
+            print(f"  No scrape log file found for season {season}")
+            return
+        
+        # Create archive directory
+        archive_dir = LOGS_DIR / "archived"
+        archive_dir.mkdir(exist_ok=True, parents=True)
+        
+        # Archive the log file, then delete the original
+        for log_file in log_files:
+            archive_name = f"{log_file.stem}_{timestamp}.json"
+            archive_path = archive_dir / archive_name
+            shutil.copy2(log_file, archive_path)
+            log_file.unlink()  # Delete the original file
+            print(f"  Archived and deleted: {log_file.name} -> {archive_path.name}")
+
+
+def delete_team_data_files(season: int, league: str, state: str = None, gender: str = None):
+    """Delete all team JSON files from the data directory."""
+    if league == 'hs':
+        # HS data: mt/data/hs_ky_<gender>/<season>/
+        data_dir = DATA_DIR / f"hs_{state.lower()}_{gender}" / str(season)
+    else:
+        # NCAA data: mt/data/<season>/
+        data_dir = DATA_DIR / str(season)
+    
+    if not data_dir.exists():
+        print(f"  No data directory found: {data_dir}")
+        return
+    
+    # Find all JSON files (team files)
+    json_files = list(data_dir.glob("*.json"))
+    if not json_files:
+        print(f"  No team JSON files found in {data_dir}")
+        return
+    
+    # Delete each file
+    deleted_count = 0
+    for json_file in json_files:
+        try:
+            json_file.unlink()
+            deleted_count += 1
+        except Exception as e:
+            print(f"  Error deleting {json_file.name}: {e}")
+    
+    print(f"  Deleted {deleted_count} team JSON file(s) from {data_dir}")
+
+
 if __name__ == "__main__":
     # Parse command line arguments
     args = parse_args()
+    
+    # Handle -force flag
+    if args.force:
+        print("\n" + "="*70)
+        print("⚠️  FORCE RE-SCRAPE MODE")
+        print("="*70)
+        print("\nThis will:")
+        print("  1. Archive all scrape log files")
+        print("  2. Delete ALL team data JSON files")
+        print("  3. Start a complete re-scrape from scratch")
+        print("\n⚠️  WARNING: This action cannot be undone!")
+        print("\n" + "="*70)
+        
+        # Require confirmation
+        confirmation = input("\nType 'y' to confirm you want to proceed: ").strip().lower()
+        if confirmation != 'y':
+            print("\n❌ Force re-scrape cancelled. Exiting.")
+            exit(0)
+        
+        print("\n🔄 Proceeding with force re-scrape...")
+        
+        # Archive scrape logs
+        print("\n1. Archiving scrape logs...")
+        archive_scrape_logs(args.season, args.league, args.state, args.gender)
+        
+        # Delete team data files
+        print("\n2. Deleting team data files...")
+        delete_team_data_files(args.season, args.league, args.state, args.gender)
+        
+        print("\n✅ Force re-scrape preparation complete. Starting scrape...\n")
     
     # Create scraper with specified parameters
     scraper = WrestlingScraper(

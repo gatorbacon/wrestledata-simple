@@ -3,48 +3,78 @@
   "name": "Colton Hardy",
   "team": "Apollo",
   "team_slug": "apollo",
-  "team_rank": 51,
+  "team_rank": 57,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 49,
+  "current_rank": 92,
   "record": {
-    "overall": "5-4",
-    "vs_ranked": "2-4",
+    "overall": "7-5",
+    "vs_ranked": "3-5",
     "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 1.26,
     "pa7": 20.0,
     "pd7": -18.74,
-    "si_plus": 91.1,
-    "df_plus": 83.3,
-    "apr_plus": 101.8,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.6,
+    "si_plus": 90.7,
+    "df_plus": 82.8,
+    "apr_plus": 101.6,
+    "pin_rate": 0.571,
+    "bonus_rate": 0.571,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35007902132",
-      "opponent_rank": 64,
-      "opponent_name": "William Moss",
+      "opponent_id": "35437614132",
+      "opponent_rank": 159,
+      "opponent_name": "nicholas lacosta",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35458691132",
-      "opponent_rank": 26,
+      "opponent_rank": 31,
       "opponent_name": "Lane Parrish",
       "method": "TF 15-0 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-08",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35049799132",
+      "opponent_name": "Eli Wimsatt",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 25,
+      "opponent_weight": 190,
+      "opponent_rank": 197,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro Catholic"
+    },
     {
       "date": "2025-12-22",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -65,9 +95,9 @@
       "opponent_id": "35207985132",
       "opponent_name": "Brock Crook",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 190,
-      "opponent_rank": 12,
+      "opponent_rank": 16,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -80,7 +110,7 @@
       "opponent_id": "35217308132",
       "opponent_name": "Riley Burton",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 190,
       "opponent_rank": 3,
       "weight_class": "190",
@@ -88,6 +118,21 @@
       "method": "TF",
       "score": "17-1",
       "duration": "2:47",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35205061132",
+      "opponent_name": "Raiden Rios",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 22,
+      "opponent_weight": 190,
+      "opponent_rank": 20,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "King of the Bluegrass"
     },
     {
@@ -110,9 +155,9 @@
       "opponent_id": "35437614132",
       "opponent_name": "nicholas lacosta",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 190,
-      "opponent_rank": 153,
+      "opponent_rank": 159,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -125,9 +170,9 @@
       "opponent_id": "35207985132",
       "opponent_name": "Brock Crook",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 190,
-      "opponent_rank": 12,
+      "opponent_rank": 16,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -140,9 +185,9 @@
       "opponent_id": "35458691132",
       "opponent_name": "Lane Parrish",
       "opponent_team": "Calloway County",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 33,
       "opponent_weight": 190,
-      "opponent_rank": 26,
+      "opponent_rank": 31,
       "weight_class": "190",
       "result": "L",
       "method": "TF",
@@ -155,9 +200,9 @@
       "opponent_id": "35007902132",
       "opponent_name": "William Moss",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
-      "opponent_weight": 190,
-      "opponent_rank": 64,
+      "opponent_team_rank": 38,
+      "opponent_weight": 175,
+      "opponent_rank": 202,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -181,9 +226,39 @@
       "event": "vs. Trigg County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_000049",
+    "canonical_name": "Colton Hardy",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Apollo",
+      "record": "9-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Apollo",
+      "record": "7-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Apollo",
+      "record": "7-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

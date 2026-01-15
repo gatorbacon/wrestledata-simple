@@ -3,10 +3,10 @@
   "name": "Giazzi Segarra",
   "team": "Central Hardin",
   "team_slug": "central_hardin",
-  "team_rank": 14,
+  "team_rank": 11,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 25,
+  "current_rank": 70,
   "record": {
     "overall": "6-2",
     "vs_ranked": "6-2",
@@ -17,9 +17,9 @@
     "pf7": 5.0,
     "pa7": 0.5,
     "pd7": 4.5,
-    "si_plus": 89.9,
-    "df_plus": 115.8,
-    "apr_plus": 104.7,
+    "si_plus": 91.5,
+    "df_plus": 114.7,
+    "apr_plus": 106.1,
     "pin_rate": 0.667,
     "bonus_rate": 0.833,
     "majors": 1,
@@ -32,14 +32,14 @@
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "34989064132",
-      "opponent_rank": 35,
-      "opponent_name": "Julian Wilson",
-      "method": "Dec 1-0"
+      "opponent_id": "34995380132",
+      "opponent_rank": 51,
+      "opponent_name": "Levi Howard",
+      "method": "MD 9-1"
     },
     "worst_loss": {
       "opponent_id": "35030260132",
-      "opponent_rank": 55,
+      "opponent_rank": 69,
       "opponent_name": "Tucker Langford",
       "method": "Inj. [time]"
     }
@@ -50,64 +50,96 @@
       "opponent_id": "35030260132",
       "opponent_name": "Tucker Langford",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 150,
-      "opponent_rank": 55,
+      "opponent_rank": 69,
       "weight_class": "150",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "7:00",
       "event": "vs. Pulaski County",
-      "mv_impact": -5.34
+      "mv_impact": -6.39
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35672429132",
       "opponent_name": "Wesley Schult",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 26,
-      "opponent_weight": 150,
-      "opponent_rank": 151,
+      "opponent_team_rank": 22,
+      "opponent_weight": 144,
+      "opponent_rank": 192,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:38",
       "event": "The Beast of the East",
-      "mv_impact": 1.55
+      "mv_impact": 4.2
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34995380132",
+      "opponent_name": "Levi Howard",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 35,
+      "opponent_weight": 144,
+      "opponent_rank": 51,
+      "weight_class": "150",
+      "result": "W",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "The Beast of the East",
+      "mv_impact": 3.97
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34989064132",
+      "opponent_name": "Julian Wilson",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 51,
+      "opponent_weight": 144,
+      "opponent_rank": 54,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "The Beast of the East",
+      "mv_impact": 3.34
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35212701132",
       "opponent_name": "Jack Ferguson",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 118,
       "opponent_weight": 150,
-      "opponent_rank": 9,
+      "opponent_rank": 7,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:46",
       "event": "The Beast of the East",
-      "mv_impact": -2.1
+      "mv_impact": -2.0
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35397578132",
       "opponent_name": "Max Topmiller",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 34,
       "opponent_weight": 150,
-      "opponent_rank": 146,
+      "opponent_rank": 151,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:32",
       "event": "The Beast of the East",
-      "mv_impact": 1.5
+      "mv_impact": 1.9
     },
     {
       "date": "2025-12-06",
@@ -116,62 +148,56 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 150,
-      "opponent_rank": 110,
+      "opponent_rank": 113,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:20",
       "event": "The Beast of the East",
-      "mv_impact": 2.66
+      "mv_impact": 3.44
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35281261132",
       "opponent_name": "Benjamin Holt",
       "opponent_team": "Southern",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 54,
       "opponent_weight": 150,
-      "opponent_rank": 94,
+      "opponent_rank": 92,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:48",
       "event": "The Beast of the East",
-      "mv_impact": 3.21
+      "mv_impact": 3.87
+    }
+  ],
+  "career": {
+    "career_id": "career_000472",
+    "canonical_name": "Giazzi Segarra",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Central Hardin",
+      "record": "6-2",
+      "regional_place": null,
+      "state_place": null
     },
     {
-      "date": "2025-12-06",
-      "opponent_id": "34995380132",
-      "opponent_name": "Levi Howard",
-      "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 99,
-      "opponent_weight": 150,
-      "opponent_rank": 80,
-      "weight_class": "150",
-      "result": "W",
-      "method": "MD",
-      "score": "9-1",
-      "duration": "7:00",
-      "event": "The Beast of the East",
-      "mv_impact": 2.21
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "34989064132",
-      "opponent_name": "Julian Wilson",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": 25,
-      "opponent_weight": 150,
-      "opponent_rank": 35,
-      "weight_class": "150",
-      "result": "W",
-      "method": "DEC",
-      "score": "1-0",
-      "duration": "7:00",
-      "event": "The Beast of the East",
-      "mv_impact": 3.43
+      "season": 2025,
+      "grade": 9,
+      "team": "Central Hardin",
+      "record": "26-18",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

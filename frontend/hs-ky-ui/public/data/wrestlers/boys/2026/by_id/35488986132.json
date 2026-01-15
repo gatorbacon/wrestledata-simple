@@ -3,48 +3,93 @@
   "name": "Emmitt Champion",
   "team": "Calloway County",
   "team_slug": "calloway_county",
-  "team_rank": 63,
+  "team_rank": 33,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 52,
+  "current_rank": 55,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "1-1",
+    "overall": "3-3",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 9.0,
-    "pd7": -9.0,
-    "si_plus": 87.0,
-    "df_plus": 105.2,
-    "apr_plus": 116.6,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pf7": 1.52,
+    "pa7": 17.0,
+    "pd7": -15.48,
+    "si_plus": 90.1,
+    "df_plus": 93.3,
+    "apr_plus": 107.5,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34993295132",
-      "opponent_rank": 53,
+      "opponent_rank": 57,
       "opponent_name": "Jackson Mattingly",
       "method": "Fall 5:42"
     },
     "worst_loss": {
       "opponent_id": "35221003132",
-      "opponent_rank": 32,
+      "opponent_rank": 35,
       "opponent_name": "Trey Herron",
       "method": "MD 9-0"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35221002132",
+      "opponent_name": "Ethan Klidzejs",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 66,
+      "opponent_weight": 106,
+      "opponent_rank": 11,
+      "weight_class": "106",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "2:18",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35263133132",
+      "opponent_name": "Alejandro Espinales",
+      "opponent_team": "Station Camp High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:13",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35109257132",
+      "opponent_name": "Kelby Hallum",
+      "opponent_team": "White House High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "2026 Commando Crush"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -65,9 +110,9 @@
       "opponent_id": "34993295132",
       "opponent_name": "Jackson Mattingly",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 71,
       "opponent_weight": 106,
-      "opponent_rank": 53,
+      "opponent_rank": 57,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -80,9 +125,9 @@
       "opponent_id": "35221003132",
       "opponent_name": "Trey Herron",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 113,
-      "opponent_rank": 32,
+      "opponent_rank": 35,
       "weight_class": "106",
       "result": "L",
       "method": "MD",
@@ -91,9 +136,21 @@
       "event": "vs. Calloway County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  "career": {
+    "career_id": "career_005265",
+    "canonical_name": "Emmitt Champion",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Calloway County",
+      "record": "3-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

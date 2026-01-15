@@ -3,10 +3,10 @@
   "name": "Kendall Bennett",
   "team": "Central Hardin",
   "team_slug": "central_hardin",
-  "team_rank": 14,
+  "team_rank": 11,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 73,
+  "current_rank": 82,
   "record": {
     "overall": "2-3",
     "vs_ranked": "1-2",
@@ -17,9 +17,9 @@
     "pf7": 8.94,
     "pa7": 13.73,
     "pd7": -4.79,
-    "si_plus": 103.5,
-    "df_plus": 105.1,
-    "apr_plus": 94.2,
+    "si_plus": 104.2,
+    "df_plus": 105.5,
+    "apr_plus": 93.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 1,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35192414132",
-      "opponent_rank": 82,
+      "opponent_rank": 188,
       "opponent_name": "Mazime Many",
       "method": "MD 15-3"
     },
     "worst_loss": {
       "opponent_id": "35205293132",
-      "opponent_rank": 62,
+      "opponent_rank": 48,
       "opponent_name": "Jaxon Leonard",
       "method": "TF 17-2 4:52"
     }
@@ -62,12 +62,27 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35192414132",
+      "opponent_name": "Mazime Many",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 144,
+      "opponent_rank": 188,
+      "weight_class": "150",
+      "result": "W",
+      "method": "MD",
+      "score": "15-3",
+      "duration": "7:00",
+      "event": "vs. Logan County"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35205293132",
       "opponent_name": "Jaxon Leonard",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 150,
-      "opponent_rank": 62,
+      "opponent_rank": 48,
       "weight_class": "150",
       "result": "L",
       "method": "TF",
@@ -92,33 +107,35 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35192414132",
-      "opponent_name": "Mazime Many",
-      "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
-      "opponent_weight": 150,
-      "opponent_rank": 82,
-      "weight_class": "150",
-      "result": "W",
-      "method": "MD",
-      "score": "15-3",
-      "duration": "7:00",
-      "event": "vs. Logan County"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35688409132",
       "opponent_name": "Patrick Durbin",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 108,
       "opponent_weight": 150,
-      "opponent_rank": 23,
+      "opponent_rank": 19,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:54",
       "event": "vs. Meade County"
+    }
+  ],
+  "career": {
+    "career_id": "career_004868",
+    "canonical_name": "Kendall Bennett",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Central Hardin",
+      "record": "2-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -3,23 +3,23 @@
   "name": "Levi Gibbs",
   "team": "Oldham County",
   "team_slug": "oldham_county",
-  "team_rank": 110,
+  "team_rank": 112,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 51,
+  "current_rank": 48,
   "record": {
     "overall": "3-2",
     "vs_ranked": "2-2",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 15.89,
     "pa7": 4.67,
     "pd7": 11.23,
-    "si_plus": 105.5,
-    "df_plus": 111.8,
-    "apr_plus": 100.1,
+    "si_plus": 112.9,
+    "df_plus": 111.5,
+    "apr_plus": 100.3,
     "pin_rate": 0.333,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -30,16 +30,16 @@
     "ranked_wins": 2,
     "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "36289283132",
-      "opponent_rank": 52,
-      "opponent_name": "Kently Johnston",
-      "method": "TF 16-0 3:20"
+      "opponent_id": "36939130132",
+      "opponent_rank": 50,
+      "opponent_name": "Zachary Ammon",
+      "method": "Fall 3:08"
     },
     "worst_loss": {
       "opponent_id": "35122073132",
-      "opponent_rank": 17,
+      "opponent_rank": 18,
       "opponent_name": "Xander Fontana",
       "method": "SV-1 11-8"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35732599132",
       "opponent_name": "Blake Lemaster",
       "opponent_team": "Martin County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 13,
       "opponent_weight": 120,
-      "opponent_rank": 14,
+      "opponent_rank": 9,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35122073132",
       "opponent_name": "Xander Fontana",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 120,
-      "opponent_rank": 17,
+      "opponent_rank": 18,
       "weight_class": "120",
       "result": "L",
       "method": "SV-1",
@@ -80,9 +80,9 @@
       "opponent_id": "36939130132",
       "opponent_name": "Zachary Ammon",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 120,
-      "opponent_rank": 54,
+      "opponent_rank": 50,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -97,7 +97,7 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": 135,
       "opponent_weight": 120,
-      "opponent_rank": 52,
+      "opponent_rank": 55,
       "weight_class": "120",
       "result": "W",
       "method": "TF",
@@ -110,7 +110,7 @@
       "opponent_id": "OUTSTATE_bb4a3a5fbae3",
       "opponent_name": "Zachary Ammon",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "120",
@@ -121,9 +121,30 @@
       "event": "Boys Hatfield McCoy 32 2025"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_001976",
+    "canonical_name": "Levi Gibbs",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Oldham County",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "Oldham County",
+      "record": "4-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -3,23 +3,23 @@
   "name": "Issac Poston",
   "team": "Scott",
   "team_slug": "scott",
-  "team_rank": 122,
-  "weight_class": 190,
+  "team_rank": 124,
+  "weight_class": 215,
   "year": 2026,
-  "current_rank": 136,
+  "current_rank": 202,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 89.3,
+    "df_plus": 102.0,
+    "apr_plus": 90.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,66 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35119498132",
-      "opponent_rank": 88,
+      "opponent_rank": 100,
       "opponent_name": "Blake Johnson",
       "method": "Fall 0:28"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35488268132",
+      "opponent_name": "Tyler Heck",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 44,
+      "opponent_weight": 190,
+      "opponent_rank": 56,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Scott",
+      "mv_impact": -5.15
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34993728132",
+      "opponent_name": "Brock Sexton",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 215,
+      "opponent_rank": 1,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Scott",
+      "mv_impact": -1.34
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35219508132",
+      "opponent_name": "Robert Kirk",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": 93,
+      "opponent_weight": 215,
+      "opponent_rank": 74,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Scott",
+      "mv_impact": -6.17
+    },
     {
       "date": "2025-12-26",
       "opponent_id": "35119498132",
@@ -47,14 +95,31 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 190,
-      "opponent_rank": 88,
+      "opponent_rank": 100,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:28",
       "event": "Region 5 JV Wrestling Tournament",
-      "mv_impact": -7.78
+      "mv_impact": -7.39
+    }
+  ],
+  "career": {
+    "career_id": "career_005667",
+    "canonical_name": "Issac Poston",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Scott",
+      "record": "0-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

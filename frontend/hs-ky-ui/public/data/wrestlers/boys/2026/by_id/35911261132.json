@@ -3,10 +3,10 @@
   "name": "Dylan Burton",
   "team": "Russell",
   "team_slug": "russell",
-  "team_rank": 120,
+  "team_rank": 122,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 65,
+  "current_rank": 66,
   "record": {
     "overall": "4-1",
     "vs_ranked": "3-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 114.4,
+    "df_plus": 102.0,
+    "apr_plus": 114.2,
     "pin_rate": 0.75,
     "bonus_rate": 0.75,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35724487132",
-      "opponent_rank": 86,
+      "opponent_rank": 82,
       "opponent_name": "David Wade",
       "method": "Fall 3:07"
     },
     "worst_loss": {
       "opponent_id": "35732622132",
-      "opponent_rank": 22,
+      "opponent_rank": 23,
       "opponent_name": "Noah Bowens",
       "method": "Fall 2:49"
     }
@@ -65,9 +65,9 @@
       "opponent_id": "35732622132",
       "opponent_name": "Noah Bowens",
       "opponent_team": "Martin County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 13,
       "opponent_weight": 138,
-      "opponent_rank": 22,
+      "opponent_rank": 23,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35896705132",
       "opponent_name": "Nathan McConnel",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 144,
-      "opponent_rank": 172,
+      "opponent_rank": 168,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -95,9 +95,9 @@
       "opponent_id": "35724487132",
       "opponent_name": "David Wade",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 144,
-      "opponent_rank": 86,
+      "opponent_rank": 82,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "35751942132",
       "opponent_name": "Logan Dean",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 144,
-      "opponent_rank": 134,
+      "opponent_rank": 127,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -121,9 +121,39 @@
       "event": "AWC Invitational"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_002298",
+    "canonical_name": "Dylan Burton",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Russell",
+      "record": "4-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Russell",
+      "record": "5-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Raceland",
+      "record": "11-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

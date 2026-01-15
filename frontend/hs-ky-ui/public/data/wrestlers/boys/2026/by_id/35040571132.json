@@ -3,23 +3,23 @@
   "name": "Tyson Kinsel",
   "team": "Male",
   "team_slug": "male",
-  "team_rank": 45,
-  "weight_class": 175,
+  "team_rank": 50,
+  "weight_class": 165,
   "year": 2026,
-  "current_rank": 122,
+  "current_rank": 159,
   "record": {
-    "overall": "4-3",
-    "vs_ranked": "2-3",
+    "overall": "4-4",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.0,
     "pa7": 14.0,
     "pd7": -10.0,
-    "si_plus": 96.2,
-    "df_plus": 97.5,
-    "apr_plus": 96.6,
+    "si_plus": 95.8,
+    "df_plus": 97.3,
+    "apr_plus": 96.0,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -28,23 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35144077132",
-      "opponent_rank": 162,
+      "opponent_rank": 154,
       "opponent_name": "Miguel Cummins",
       "method": "Fall 0:46"
     },
     "worst_loss": {
       "opponent_id": "35623185132",
-      "opponent_rank": 118,
+      "opponent_rank": 117,
       "opponent_name": "Hayden Rutledge",
       "method": "Fall 5:43"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35205063132",
+      "opponent_name": "Jacob Tylutke",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 22,
+      "opponent_weight": 165,
+      "opponent_rank": 25,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Male"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -65,9 +80,9 @@
       "opponent_id": "35623185132",
       "opponent_name": "Hayden Rutledge",
       "opponent_team": "Atherton",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 21,
       "opponent_weight": 175,
-      "opponent_rank": 118,
+      "opponent_rank": 117,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -80,9 +95,9 @@
       "opponent_id": "35144077132",
       "opponent_name": "Miguel Cummins",
       "opponent_team": "Desales",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 72,
       "opponent_weight": 175,
-      "opponent_rank": 162,
+      "opponent_rank": 154,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35283923132",
       "opponent_name": "Mustafa Sehen",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 175,
-      "opponent_rank": 67,
+      "opponent_rank": 68,
       "weight_class": "175",
       "result": "L",
       "method": "MD",
@@ -110,9 +125,9 @@
       "opponent_id": "35562301132",
       "opponent_name": "Nikolas Elsey",
       "opponent_team": "Seneca",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 53,
       "opponent_weight": 165,
-      "opponent_rank": 171,
+      "opponent_rank": 164,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "35217816132",
       "opponent_name": "Kaleb Walz",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 165,
-      "opponent_rank": 28,
+      "opponent_rank": 30,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
@@ -151,9 +166,39 @@
       "event": "vs. Jeffersontown"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_001572",
+    "canonical_name": "Tyson Kinsel",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Male",
+      "record": "5-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Male",
+      "record": "5-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Male",
+      "record": "11-17",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": 29,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "3-1",
-    "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "overall": "3-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 1.0,
     "pa7": 4.0,
     "pd7": -3.0,
-    "si_plus": 89.2,
-    "df_plus": 107.5,
-    "apr_plus": 117.0,
+    "si_plus": 87.9,
+    "df_plus": 107.6,
+    "apr_plus": 113.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35090033132",
-      "opponent_rank": 37,
+      "opponent_rank": 36,
       "opponent_name": "Alan Rivera",
       "method": "Fall 5:03"
     },
     "worst_loss": {
       "opponent_id": "35035605132",
-      "opponent_rank": 14,
+      "opponent_rank": 23,
       "opponent_name": "Daniel Thompson",
       "method": "Fall 0:00"
     }
@@ -50,64 +50,115 @@
       "opponent_id": "35212704132",
       "opponent_name": "Raad Albakri",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 118,
       "opponent_weight": 175,
-      "opponent_rank": 93,
+      "opponent_rank": 95,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:58",
       "event": "vs. Trinity (Louisville)",
-      "mv_impact": 5.17
+      "mv_impact": 4.62
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35205072132",
+      "opponent_name": "Max Baxter",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 22,
+      "opponent_weight": 175,
+      "opponent_rank": 5,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "King of the Bluegrass",
+      "mv_impact": -1.76
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35283923132",
       "opponent_name": "Mustafa Sehen",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 175,
-      "opponent_rank": 67,
+      "opponent_rank": 68,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:44",
       "event": "King of the Bluegrass",
-      "mv_impact": 5.52
+      "mv_impact": 4.36
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35090033132",
       "opponent_name": "Alan Rivera",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 175,
-      "opponent_rank": 37,
+      "opponent_rank": 36,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:03",
       "event": "King of the Bluegrass",
-      "mv_impact": 7.17
+      "mv_impact": 6.6
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35035605132",
       "opponent_name": "Daniel Thompson",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 175,
-      "opponent_rank": 14,
+      "opponent_rank": 23,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Union County",
-      "mv_impact": -4.1
+      "mv_impact": -4.98
+    }
+  ],
+  "career": {
+    "career_id": "career_002766",
+    "canonical_name": "Brandon Kenney",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Trinity (Louisville)",
+      "record": "3-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Trinity (Louisville)",
+      "record": "10-20",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Trinity (Louisville)",
+      "record": "0-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -3,13 +3,13 @@
   "name": "Pierce Stotts",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 50,
+  "team_rank": 56,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 108,
+  "current_rank": 109,
   "record": {
-    "overall": "3-2",
-    "vs_ranked": "1-2",
+    "overall": "3-3",
+    "vs_ranked": "1-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 94.0,
+    "df_plus": 102.0,
+    "apr_plus": 94.9,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
@@ -28,23 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35049056132",
-      "opponent_rank": 158,
+      "opponent_rank": 160,
       "opponent_name": "Harrison Davis",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35674203132",
-      "opponent_rank": 93,
+      "opponent_rank": 172,
       "opponent_name": "Kyler Rush",
       "method": "Fall 0:30"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35575962132",
+      "opponent_name": "Isaac Diaz",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 126,
+      "opponent_rank": 82,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Green County"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -65,15 +80,30 @@
       "opponent_id": "35049056132",
       "opponent_name": "Harrison Davis",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 120,
-      "opponent_rank": 158,
+      "opponent_rank": 160,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Greenwood"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35674203132",
+      "opponent_name": "Kyler Rush",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 37,
+      "opponent_weight": 120,
+      "opponent_rank": 172,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "vs. Owensboro"
     },
     {
       "date": "2025-12-13",
@@ -91,34 +121,36 @@
       "event": "vs. Hart County"
     },
     {
-      "date": "2025-12-13",
-      "opponent_id": "35674203132",
-      "opponent_name": "Kyler Rush",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
-      "opponent_weight": 126,
-      "opponent_rank": 93,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:30",
-      "event": "vs. Owensboro"
-    },
-    {
       "date": "2025-12-09",
       "opponent_id": "35637931132",
       "opponent_name": "Zac Mullins",
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
-      "opponent_weight": 126,
-      "opponent_rank": 92,
+      "opponent_weight": 120,
+      "opponent_rank": 91,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Russell County"
+    }
+  ],
+  "career": {
+    "career_id": "career_005165",
+    "canonical_name": "Pierce Stotts",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Adair County",
+      "record": "4-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

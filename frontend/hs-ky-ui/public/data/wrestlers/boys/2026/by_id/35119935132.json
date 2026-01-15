@@ -18,7 +18,7 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
+    "df_plus": 102.0,
     "apr_plus": 124.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
@@ -32,20 +32,35 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35281688132",
-      "opponent_rank": 65,
-      "opponent_name": "James Walker",
-      "method": "Fall 2:26"
+      "opponent_id": "34989026132",
+      "opponent_rank": 56,
+      "opponent_name": "Josh Athey",
+      "method": "Fall 0:41"
     },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2025-11-26",
+      "opponent_id": "34989026132",
+      "opponent_name": "Josh Athey",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 106,
+      "opponent_rank": 56,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "vs. Rossview High School"
+    },
+    {
+      "date": "2025-11-26",
       "opponent_id": "35281688132",
       "opponent_name": "James Walker",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 113,
       "opponent_rank": 65,
       "weight_class": "113",
@@ -54,26 +69,6 @@
       "score": null,
       "duration": "2:26",
       "event": "vs. Rossview High School"
-    },
-    {
-      "date": "2025-11-26",
-      "opponent_id": "34989026132",
-      "opponent_name": "Josh Athey",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
-      "opponent_weight": 106,
-      "opponent_rank": 71,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:41",
-      "event": "vs. Rossview High School"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3194444444444444
-  }
+  ]
 }

@@ -3,10 +3,10 @@
   "name": "Lucian Cruse",
   "team": "Campbellsville",
   "team_slug": "campbellsville",
-  "team_rank": 64,
+  "team_rank": 67,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 106,
+  "current_rank": 118,
   "record": {
     "overall": "2-2",
     "vs_ranked": "1-2",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 94.3,
+    "df_plus": 102.0,
+    "apr_plus": 94.1,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,18 +33,33 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35457800132",
-      "opponent_rank": 146,
+      "opponent_rank": 154,
       "opponent_name": "Aiden Chambers",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35359593132",
-      "opponent_rank": 84,
+      "opponent_rank": 92,
       "opponent_name": "Susie Beeken",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35457800132",
+      "opponent_name": "Aiden Chambers",
+      "opponent_team": "Hart County",
+      "opponent_team_rank": 91,
+      "opponent_weight": 106,
+      "opponent_rank": 154,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Hart County"
+    },
     {
       "date": "2025-12-11",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -61,26 +76,11 @@
       "event": "vs. Green County"
     },
     {
-      "date": "2025-12-11",
-      "opponent_id": "35457800132",
-      "opponent_name": "Aiden Chambers",
-      "opponent_team": "Hart County",
-      "opponent_team_rank": 86,
-      "opponent_weight": 106,
-      "opponent_rank": 146,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Hart County"
-    },
-    {
       "date": "2025-12-06",
       "opponent_id": "35368112132",
       "opponent_name": "Mason Brooks",
       "opponent_team": "Somerset",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 31,
       "opponent_weight": 106,
       "opponent_rank": 2,
       "weight_class": "106",
@@ -95,15 +95,32 @@
       "opponent_id": "35359593132",
       "opponent_name": "Susie Beeken",
       "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 112,
+      "opponent_team_rank": 114,
       "opponent_weight": 106,
-      "opponent_rank": 84,
+      "opponent_rank": 92,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT"
+    }
+  ],
+  "career": {
+    "career_id": "career_005277",
+    "canonical_name": "Lucian Cruse",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Campbellsville",
+      "record": "2-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

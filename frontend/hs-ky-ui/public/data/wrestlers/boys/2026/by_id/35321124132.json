@@ -3,12 +3,12 @@
   "name": "Mattew Middleton",
   "team": "North Bullitt",
   "team_slug": "north_bullitt",
-  "team_rank": 109,
+  "team_rank": 111,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 161,
+  "current_rank": 163,
   "record": {
-    "overall": "1-3",
+    "overall": "2-4",
     "vs_ranked": "1-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,11 +17,11 @@
     "pf7": 10.0,
     "pa7": 12.0,
     "pd7": -2.0,
-    "si_plus": 101.5,
-    "df_plus": 99.1,
-    "apr_plus": 93.9,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "si_plus": 100.6,
+    "df_plus": 96.0,
+    "apr_plus": 95.4,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
     "pins": 1
@@ -33,86 +33,142 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35404505132",
-      "opponent_rank": 139,
+      "opponent_rank": 132,
       "opponent_name": "Gad Iranzi",
       "method": "Fall 1:40"
     },
     "worst_loss": {
       "opponent_id": "35181616132",
-      "opponent_rank": 191,
+      "opponent_rank": 177,
       "opponent_name": "Jordan Taylor",
       "method": "Dec 12-10"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-08",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Spencer County"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35064909132",
+      "opponent_name": "Bruce Anderson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:45",
+      "event": "vs. John Hardin"
+    },
+    {
       "date": "2025-12-03",
       "opponent_id": "35181616132",
       "opponent_name": "Jordan Taylor",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 15,
       "opponent_weight": 132,
-      "opponent_rank": 191,
+      "opponent_rank": 177,
       "weight_class": "126",
       "result": "L",
       "method": "DEC",
       "score": "12-10",
       "duration": "7:00",
-      "event": "vs. North Bullitt",
-      "mv_impact": -4.85
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35404505132",
       "opponent_name": "Gad Iranzi",
       "opponent_team": "Iroquois",
-      "opponent_team_rank": 92,
+      "opponent_team_rank": 96,
       "opponent_weight": 132,
-      "opponent_rank": 139,
+      "opponent_rank": 132,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:40",
-      "event": "vs. North Bullitt",
-      "mv_impact": 1.47
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35066867132",
       "opponent_name": "Kaden Warren",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 132,
-      "opponent_rank": 40,
+      "opponent_rank": 39,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:02",
-      "event": "Screamin` Eagles Classic",
-      "mv_impact": -4.84
+      "event": "Screamin` Eagles Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35281532132",
       "opponent_name": "Sudeys Hussein",
       "opponent_team": "Southern",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 54,
       "opponent_weight": 126,
-      "opponent_rank": 52,
+      "opponent_rank": 63,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "Screamin` Eagles Classic",
-      "mv_impact": -6.69
+      "event": "Screamin` Eagles Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_001857",
+    "canonical_name": "Mattew Middleton",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "North Bullitt",
+      "record": "2-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "North Bullitt",
+      "record": "9-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 7,
+      "team": "North Bullitt",
+      "record": "3-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

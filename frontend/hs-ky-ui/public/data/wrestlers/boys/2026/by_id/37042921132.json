@@ -3,12 +3,12 @@
   "name": "Wyatt Zeman",
   "team": "Ballard",
   "team_slug": "ballard",
-  "team_rank": 28,
-  "weight_class": 285,
+  "team_rank": 32,
+  "weight_class": 215,
   "year": 2026,
-  "current_rank": 317,
+  "current_rank": 197,
   "record": {
-    "overall": "0-0",
+    "overall": "1-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,10 +34,68 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": [],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "match_list": [
+    {
+      "date": "2025-12-27",
+      "opponent_id": "OUTSTATE_ef5043ac1d24",
+      "opponent_name": "Mason Govert",
+      "opponent_team": "Henryville",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:46",
+      "event": "2025 New Albany JV Boys Christmas Tour."
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "OUTSTATE_1b353c68a24c",
+      "opponent_name": "Nate Riker",
+      "opponent_team": "Columbus North",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:11",
+      "event": "2025 New Albany JV Boys Christmas Tour."
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "OUTSTATE_a7b31d4d1065",
+      "opponent_name": "Damian Mallott",
+      "opponent_team": "Columbus North",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "2025 New Albany JV Boys Christmas Tour."
+    }
+  ],
+  "career": {
+    "career_id": "career_004616",
+    "canonical_name": "Wyatt Zeman",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Ballard",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

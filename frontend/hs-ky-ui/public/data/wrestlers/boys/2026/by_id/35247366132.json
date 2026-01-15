@@ -3,23 +3,23 @@
   "name": "Tyler Mellenkamp",
   "team": "Mason County",
   "team_slug": "mason_county",
-  "team_rank": 103,
+  "team_rank": 105,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 65,
+  "current_rank": 90,
   "record": {
     "overall": "4-3",
     "vs_ranked": "2-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 99.0,
+    "df_plus": 102.0,
+    "apr_plus": 99.1,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,15 +33,15 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35510184132",
-      "opponent_rank": 193,
+      "opponent_rank": 186,
       "opponent_name": "Ryan Schwartz",
       "method": "Fall 0:12"
     },
     "worst_loss": {
-      "opponent_id": "35017750132",
-      "opponent_rank": 47,
-      "opponent_name": "Jacob Hammonds",
-      "method": "Fall 2:59"
+      "opponent_id": "35640820132",
+      "opponent_rank": 65,
+      "opponent_name": "Ashton Hackney",
+      "method": "Fall 1:24"
     }
   },
   "match_list": [
@@ -50,9 +50,9 @@
       "opponent_id": "35017750132",
       "opponent_name": "Jacob Hammonds",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 190,
-      "opponent_rank": 47,
+      "opponent_rank": 53,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35513059132",
       "opponent_name": "James E. Jones",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 190,
-      "opponent_rank": 16,
+      "opponent_rank": 11,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -80,7 +80,7 @@
       "opponent_id": "OUTSTATE_3d60a1d1ea0c",
       "opponent_name": "Briar Baker",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 190,
       "opponent_rank": null,
       "weight_class": "190",
@@ -95,9 +95,9 @@
       "opponent_id": "35510184132",
       "opponent_name": "Ryan Schwartz",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 175,
-      "opponent_rank": 193,
+      "opponent_rank": 186,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "35640820132",
       "opponent_name": "Ashton Hackney",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 47,
       "opponent_weight": 190,
-      "opponent_rank": 11,
+      "opponent_rank": 65,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -142,7 +142,7 @@
       "opponent_team": "Wayne County",
       "opponent_team_rank": 20,
       "opponent_weight": 175,
-      "opponent_rank": 196,
+      "opponent_rank": 189,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -151,9 +151,39 @@
       "event": "vs. Wayne County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_001648",
+    "canonical_name": "Tyler Mellenkamp",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Mason County",
+      "record": "4-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Mason County",
+      "record": "20-14",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Mason County",
+      "record": "3-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

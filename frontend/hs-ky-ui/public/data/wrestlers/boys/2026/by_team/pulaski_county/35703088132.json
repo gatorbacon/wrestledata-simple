@@ -3,14 +3,14 @@
   "name": "Jace Arnett",
   "team": "Pulaski County",
   "team_slug": "pulaski_county",
-  "team_rank": 118,
+  "team_rank": 120,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 161,
+  "current_rank": 167,
   "record": {
     "overall": "0-3",
     "vs_ranked": "0-3",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 94.0,
+    "df_plus": 102.0,
+    "apr_plus": 92.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -30,11 +30,11 @@
     "ranked_wins": 0,
     "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35639986132",
-      "opponent_rank": 44,
+      "opponent_rank": 75,
       "opponent_name": "Dylan Clem",
       "method": "Fall 0:00"
     }
@@ -45,48 +45,65 @@
       "opponent_id": "34997606132",
       "opponent_name": "Cyrus Greiwe",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 175,
-      "opponent_rank": 12,
+      "opponent_rank": 10,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Pulaski County",
-      "mv_impact": -2.9
+      "mv_impact": -2.53
     },
     {
       "date": "2025-12-02",
       "opponent_id": "35013055132",
       "opponent_name": "Kasey Conley",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 190,
-      "opponent_rank": 34,
+      "opponent_rank": 37,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:26",
       "event": "vs. Pulaski County",
-      "mv_impact": -3.78
+      "mv_impact": -4.23
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35639986132",
       "opponent_name": "Dylan Clem",
       "opponent_team": "Harlan County",
-      "opponent_team_rank": 85,
+      "opponent_team_rank": 90,
       "opponent_weight": 175,
-      "opponent_rank": 44,
+      "opponent_rank": 75,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Cougar Classic",
-      "mv_impact": -5.31
+      "mv_impact": -6.35
+    }
+  ],
+  "career": {
+    "career_id": "career_005627",
+    "canonical_name": "Jace Arnett",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Pulaski County",
+      "record": "0-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

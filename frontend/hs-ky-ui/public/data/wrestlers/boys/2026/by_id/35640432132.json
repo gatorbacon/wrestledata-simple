@@ -3,23 +3,23 @@
   "name": "Joe Carr",
   "team": "Great Crossing",
   "team_slug": "great_crossing",
-  "team_rank": 44,
+  "team_rank": 47,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 10,
+  "current_rank": 13,
   "record": {
     "overall": "7-6",
-    "vs_ranked": "3-2",
-    "vs_top10": "0-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-0",
     "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 17.28,
     "pa7": 3.0,
     "pd7": 14.28,
-    "si_plus": 106.0,
-    "df_plus": 115.0,
-    "apr_plus": 97.4,
+    "si_plus": 115.7,
+    "df_plus": 114.1,
+    "apr_plus": 98.0,
     "pin_rate": 0.429,
     "bonus_rate": 0.714,
     "majors": 1,
@@ -28,20 +28,20 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35081201132",
-      "opponent_rank": 12,
+      "opponent_rank": 14,
       "opponent_name": "Alexander Johnson",
       "method": "MD 15-6"
     },
     "worst_loss": {
-      "opponent_id": "35778102132",
-      "opponent_rank": 40,
-      "opponent_name": "Gabriel Purtteman",
-      "method": "Fall 1:44"
+      "opponent_id": "35051530132",
+      "opponent_rank": 11,
+      "opponent_name": "Brycen Gray",
+      "method": "Fall 1:46"
     }
   },
   "match_list": [
@@ -50,9 +50,9 @@
       "opponent_id": "35051530132",
       "opponent_name": "Brycen Gray",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 120,
-      "opponent_rank": 9,
+      "opponent_rank": 11,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35778102132",
       "opponent_name": "Gabriel Purtteman",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
+      "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 40,
+      "opponent_rank": null,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -185,9 +185,9 @@
       "opponent_id": "35563002132",
       "opponent_name": "James Diaz",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 113,
-      "opponent_rank": 46,
+      "opponent_rank": 50,
       "weight_class": "120",
       "result": "W",
       "method": "TF",
@@ -200,9 +200,9 @@
       "opponent_id": "34997720132",
       "opponent_name": "Jakobe Reed",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 120,
-      "opponent_rank": 41,
+      "opponent_rank": 42,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -215,9 +215,9 @@
       "opponent_id": "35081201132",
       "opponent_name": "Alexander Johnson",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 34,
       "opponent_weight": 120,
-      "opponent_rank": 12,
+      "opponent_rank": 14,
       "weight_class": "120",
       "result": "W",
       "method": "MD",
@@ -241,9 +241,21 @@
       "event": "vs. Mason County"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.3973486830629689
-  }
+  "career": {
+    "career_id": "career_004997",
+    "canonical_name": "Joe Carr",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Great Crossing",
+      "record": "8-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

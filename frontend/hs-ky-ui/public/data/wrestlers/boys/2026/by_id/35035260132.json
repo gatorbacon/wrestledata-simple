@@ -3,26 +3,26 @@
   "name": "Chris Grissom",
   "team": "Union County",
   "team_slug": "union_county",
-  "team_rank": 2,
+  "team_rank": 3,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 16,
+  "current_rank": 18,
   "record": {
-    "overall": "5-0",
+    "overall": "7-2",
     "vs_ranked": "4-0",
     "vs_top10": "0-0",
-    "vs_top25": "2-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 24.11,
     "pa7": 3.81,
     "pd7": 20.3,
-    "si_plus": 126.6,
-    "df_plus": 112.6,
-    "apr_plus": 114.7,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.8,
-    "majors": 0,
+    "si_plus": 128.1,
+    "df_plus": 113.0,
+    "apr_plus": 110.0,
+    "pin_rate": 0.429,
+    "bonus_rate": 0.714,
+    "majors": 1,
     "techs": 1,
     "pins": 3
   },
@@ -32,22 +32,82 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35002892132",
-      "opponent_rank": 19,
-      "opponent_name": "Jayden Perry",
-      "method": "Fall 0:00"
+      "opponent_id": "34988685132",
+      "opponent_rank": 25,
+      "opponent_name": "Marquis Hart",
+      "method": "TF 19-3 5:31"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "34977539132",
+      "opponent_name": "Declan McGrath",
+      "opponent_team": "Battle Ground Academy",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:56",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35109726132",
+      "opponent_name": "Daniel Bado",
+      "opponent_team": "Bartlett High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "13-1",
+      "duration": "7:00",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35151639132",
+      "opponent_name": "Carson Canon",
+      "opponent_team": "Lebanon High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-5",
+      "duration": "7:00",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35216823132",
+      "opponent_name": "Douglas Barksdale",
+      "opponent_team": "Blackman High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:49",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
       "date": "2025-12-22",
       "opponent_id": "34988685132",
       "opponent_name": "Marquis Hart",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 138,
-      "opponent_rank": 24,
+      "opponent_rank": 25,
       "weight_class": "138",
       "result": "W",
       "method": "TF",
@@ -60,7 +120,7 @@
       "opponent_id": "35049803132",
       "opponent_name": "Simon Thompson",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 25,
       "opponent_weight": 138,
       "opponent_rank": 49,
       "weight_class": "138",
@@ -75,9 +135,9 @@
       "opponent_id": "35002892132",
       "opponent_name": "Jayden Perry",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
-      "opponent_weight": 138,
-      "opponent_rank": 19,
+      "opponent_team_rank": 82,
+      "opponent_weight": 132,
+      "opponent_rank": 75,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -90,9 +150,9 @@
       "opponent_id": "35207990132",
       "opponent_name": "Mattix Sohne",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 132,
-      "opponent_rank": 102,
+      "opponent_rank": 100,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -116,9 +176,30 @@
       "event": "vs. Caldwell County"
     }
   ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 1.75,
-    "top33_bonus_ev_shrunk": 1.1023809523809525
-  }
+  "career": {
+    "career_id": "career_002799",
+    "canonical_name": "Christopher Grissom",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Union County",
+      "record": "7-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Union County",
+      "record": "1-0",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

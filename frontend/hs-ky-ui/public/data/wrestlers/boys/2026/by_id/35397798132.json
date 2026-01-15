@@ -3,10 +3,10 @@
   "name": "Dennis Frimpong",
   "team": "Henry Clay",
   "team_slug": "henry_clay",
-  "team_rank": 18,
+  "team_rank": 34,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 177,
+  "current_rank": 164,
   "record": {
     "overall": "1-10",
     "vs_ranked": "0-10",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 89.1,
+    "df_plus": 102.0,
+    "apr_plus": 88.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35522689132",
-      "opponent_rank": 196,
+      "opponent_rank": 189,
       "opponent_name": "Colsen Fischer",
       "method": "Fall 0:00"
     }
@@ -45,7 +45,7 @@
       "opponent_id": "35640061132",
       "opponent_name": "Blake Murdock",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 47,
       "opponent_weight": 138,
       "opponent_rank": 6,
       "weight_class": "138",
@@ -60,9 +60,9 @@
       "opponent_id": "35522689132",
       "opponent_name": "Colsen Fischer",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 108,
       "opponent_weight": 138,
-      "opponent_rank": 196,
+      "opponent_rank": 189,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -75,7 +75,7 @@
       "opponent_id": "35652144132",
       "opponent_name": "Rylen Marks",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 132,
       "opponent_rank": 115,
       "weight_class": "132",
@@ -105,9 +105,9 @@
       "opponent_id": "34995984132",
       "opponent_name": "Aden England",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 138,
-      "opponent_rank": 31,
+      "opponent_rank": 30,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -122,7 +122,7 @@
       "opponent_team": "West Jessamine",
       "opponent_team_rank": 136,
       "opponent_weight": 138,
-      "opponent_rank": 123,
+      "opponent_rank": 124,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -132,27 +132,12 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35886049132",
-      "opponent_name": "brenden little",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": 20,
-      "opponent_weight": 132,
-      "opponent_rank": 60,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:44",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "34997722132",
       "opponent_name": "Kendrick Brown",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
-      "opponent_weight": 138,
-      "opponent_rank": 64,
+      "opponent_team_rank": 45,
+      "opponent_weight": 132,
+      "opponent_rank": 51,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -162,12 +147,27 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35886049132",
+      "opponent_name": "brenden little",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 132,
+      "opponent_rank": 62,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:44",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35640753132",
       "opponent_name": "Sammy Cain",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 47,
       "opponent_weight": 138,
-      "opponent_rank": 138,
+      "opponent_rank": 136,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -180,7 +180,7 @@
       "opponent_id": "35640061132",
       "opponent_name": "Blake Murdock",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 47,
       "opponent_weight": 138,
       "opponent_rank": 6,
       "weight_class": "138",
@@ -195,9 +195,9 @@
       "opponent_id": "35562984132",
       "opponent_name": "Brock Fernandez",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 138,
-      "opponent_rank": 8,
+      "opponent_rank": 9,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -206,9 +206,21 @@
       "event": "vs. St. Xavier"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_005447",
+    "canonical_name": "Dennis Frimpong",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Henry Clay",
+      "record": "2-10",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

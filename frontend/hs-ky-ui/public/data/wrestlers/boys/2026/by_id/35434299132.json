@@ -6,20 +6,20 @@
   "team_rank": 136,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 143,
+  "current_rank": 151,
   "record": {
-    "overall": "2-6",
-    "vs_ranked": "0-6",
+    "overall": "2-9",
+    "vs_ranked": "0-8",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 1.5,
     "pa7": 12.0,
     "pd7": -10.5,
-    "si_plus": 88.2,
-    "df_plus": 99.1,
-    "apr_plus": 86.0,
+    "si_plus": 87.4,
+    "df_plus": 98.9,
+    "apr_plus": 87.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,48 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 6,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35040638132",
-      "opponent_rank": 102,
+      "opponent_rank": 112,
       "opponent_name": "Logan Niece",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35144517132",
+      "opponent_name": "Jamarion Sanders",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 49,
+      "opponent_weight": 106,
+      "opponent_rank": 9,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:24",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35383673132",
+      "opponent_name": "Ian Latzo",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 37,
+      "opponent_weight": 106,
+      "opponent_rank": 93,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "Bear Down Invitational (Boys)"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35040633132",
@@ -47,7 +77,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 106,
-      "opponent_rank": 82,
+      "opponent_rank": 89,
       "weight_class": "106",
       "result": "L",
       "method": "DEC",
@@ -56,13 +86,28 @@
       "event": "Tates Creek Invitational"
     },
     {
+      "date": "2026-01-03",
+      "opponent_id": "35226329132",
+      "opponent_name": "Madyson Votaw",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "Tates Creek Invitational"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35526297132",
       "opponent_name": "Luke Ntirampeba",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 106,
-      "opponent_rank": 90,
+      "opponent_rank": 98,
       "weight_class": "106",
       "result": "L",
       "method": "TF",
@@ -90,9 +135,9 @@
       "opponent_id": "35180991132",
       "opponent_name": "Presley Thomas",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 106,
-      "opponent_rank": 80,
+      "opponent_rank": 87,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -105,9 +150,9 @@
       "opponent_id": "34994868132",
       "opponent_name": "oliver westphal",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 106,
-      "opponent_rank": 10,
+      "opponent_rank": 12,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -137,7 +182,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 106,
-      "opponent_rank": 102,
+      "opponent_rank": 112,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -150,9 +195,9 @@
       "opponent_id": "35084177132",
       "opponent_name": "Brooks Abbott",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 32,
       "opponent_weight": 106,
-      "opponent_rank": 41,
+      "opponent_rank": 77,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -161,9 +206,21 @@
       "event": "Tommy Castle Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  "career": {
+    "career_id": "career_004845",
+    "canonical_name": "Jayden Trent",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "West Jessamine",
+      "record": "6-9",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

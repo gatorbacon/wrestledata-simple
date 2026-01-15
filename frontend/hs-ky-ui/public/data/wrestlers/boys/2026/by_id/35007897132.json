@@ -3,127 +3,185 @@
   "name": "Chuck Martin",
   "team": "South Warren",
   "team_slug": "south_warren",
-  "team_rank": 126,
+  "team_rank": 38,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 183,
+  "current_rank": 180,
   "record": {
-    "overall": "0-5",
-    "vs_ranked": "0-5",
+    "overall": "1-6",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 87.4,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pf7": 6.0,
+    "pa7": 15.0,
+    "pd7": -9.0,
+    "si_plus": 94.8,
+    "df_plus": 94.5,
+    "apr_plus": 90.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34988675132",
+      "opponent_rank": 181,
+      "opponent_name": "Callie Patton",
+      "method": "Fall 0:46"
+    },
     "worst_loss": {
-      "opponent_id": "35192492132",
-      "opponent_rank": 131,
-      "opponent_name": "Eli Poore",
-      "method": "Fall 1:58"
+      "opponent_id": "35194145132",
+      "opponent_rank": 141,
+      "opponent_name": "PJ Barnabas",
+      "method": "MD 15-6"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34988675132",
+      "opponent_name": "Callie Patton",
+      "opponent_team": "Trinity (Whitesville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": 181,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:46",
+      "event": "vs. Trinity (Whitesville)",
+      "mv_impact": 0.32
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35194145132",
+      "opponent_name": "PJ Barnabas",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 215,
+      "opponent_rank": 141,
+      "weight_class": "215",
+      "result": "L",
+      "method": "MD",
+      "score": "15-6",
+      "duration": "7:00",
+      "event": "vs. Warren Central",
+      "mv_impact": -7.47
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35181301132",
       "opponent_name": "James Smith",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 190,
-      "opponent_rank": 96,
+      "opponent_rank": 71,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:41",
       "event": "vs. South Warren",
-      "mv_impact": -9.16
+      "mv_impact": -8.03
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35207048132",
       "opponent_name": "Alex Pedro",
       "opponent_team": "Adair County",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 56,
       "opponent_weight": 215,
-      "opponent_rank": 86,
+      "opponent_rank": 98,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:52",
       "event": "vs. South Warren",
-      "mv_impact": -6.9
+      "mv_impact": -7.35
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35383665132",
       "opponent_name": "Isaac Mattingly",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 215,
-      "opponent_rank": 104,
+      "opponent_rank": 108,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:41",
       "event": "vs. South Warren",
-      "mv_impact": -8.53
+      "mv_impact": -8.58
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35205294132",
       "opponent_name": "Maddox Tabor",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 175,
-      "opponent_rank": 26,
+      "opponent_rank": 27,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. South Warren",
-      "mv_impact": -2.81
+      "mv_impact": -3.54
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35192492132",
       "opponent_name": "Eli Poore",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
+      "opponent_team_rank": 102,
       "opponent_weight": 175,
-      "opponent_rank": 131,
+      "opponent_rank": 126,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:58",
       "event": "vs. South Warren",
-      "mv_impact": -9.55
+      "mv_impact": -9.22
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_002547",
+    "canonical_name": "Chuck Martin",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "South Warren",
+      "record": "1-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "South Warren",
+      "record": "7-23",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

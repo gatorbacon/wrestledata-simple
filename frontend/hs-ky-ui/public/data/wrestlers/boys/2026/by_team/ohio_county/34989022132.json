@@ -3,10 +3,10 @@
   "name": "Bentley Coy",
   "team": "Ohio County",
   "team_slug": "ohio_county",
-  "team_rank": 47,
+  "team_rank": 36,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 158,
+  "current_rank": 154,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 85.9,
+    "df_plus": 102.0,
+    "apr_plus": 86.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35281674132",
-      "opponent_rank": 66,
+      "opponent_rank": 180,
       "opponent_name": "Zaven Branch",
       "method": "Fall 1:00"
     }
@@ -45,16 +45,15 @@
       "opponent_id": "35281674132",
       "opponent_name": "Zaven Branch",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
-      "opponent_weight": 144,
-      "opponent_rank": 66,
+      "opponent_team_rank": 106,
+      "opponent_weight": 138,
+      "opponent_rank": 180,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Ohio County",
-      "mv_impact": -5.69
+      "event": "vs. Ohio County"
     },
     {
       "date": "2025-11-26",
@@ -70,6 +69,32 @@
       "score": "15-9",
       "duration": "7:00",
       "event": "vs. Mt. Vernon"
+    }
+  ],
+  "career": {
+    "career_id": "career_001952",
+    "canonical_name": "Bentley Coy",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Ohio County",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "Ohio County",
+      "record": "2-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

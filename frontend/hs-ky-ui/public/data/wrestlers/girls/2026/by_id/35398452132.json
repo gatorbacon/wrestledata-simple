@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35398452132",
+  "name": "Lyra Casper",
+  "team": "Anna (A.-Jonesboro)",
+  "team_slug": "anna_ajonesboro",
+  "team_rank": null,
+  "weight_class": 152,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 101.2,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35520899132",
+      "opponent_rank": 43,
+      "opponent_name": "Chloe Sajdl",
+      "method": "Fall 1:24"
+    },
+    "worst_loss": {
+      "opponent_id": "35598151132",
+      "opponent_rank": 12,
+      "opponent_name": "Alani Mayes",
+      "method": "Fall 0:49"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35598151132",
+      "opponent_name": "Alani Mayes",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": 15,
+      "opponent_weight": 145,
+      "opponent_rank": 12,
+      "weight_class": "152",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "Sister Slam"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35520899132",
+      "opponent_name": "Chloe Sajdl",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 152,
+      "opponent_rank": 43,
+      "weight_class": "152",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "Sister Slam"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.5833333333333333
+  }
+}

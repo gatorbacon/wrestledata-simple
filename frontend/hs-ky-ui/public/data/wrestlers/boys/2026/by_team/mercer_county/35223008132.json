@@ -3,71 +3,116 @@
   "name": "Tristan Robinson",
   "team": "Mercer County",
   "team_slug": "mercer_county",
-  "team_rank": 107,
+  "team_rank": 109,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 170,
+  "current_rank": 168,
   "record": {
-    "overall": "2-4",
-    "vs_ranked": "1-4",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "3-7",
+    "vs_ranked": "1-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 91.5,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "df_plus": 102.0,
+    "apr_plus": 89.6,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
     "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34988675132",
-      "opponent_rank": 182,
+      "opponent_rank": 181,
       "opponent_name": "Callie Patton",
       "method": "Fall 1:03"
     },
     "worst_loss": {
-      "opponent_id": "35700434132",
-      "opponent_rank": 181,
-      "opponent_name": "Lucas Shaheen",
-      "method": "Fall 0:00"
+      "opponent_id": "37001825132",
+      "opponent_rank": 155,
+      "opponent_name": "Kyson Harris",
+      "method": "Fall 2:36"
     }
   },
   "match_list": [
     {
-      "date": "2025-12-13",
-      "opponent_id": "35700434132",
-      "opponent_name": "Lucas Shaheen",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
+      "date": "2026-01-10",
+      "opponent_id": "34993276132",
+      "opponent_name": "Kobe Nichols",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 71,
+      "opponent_weight": 215,
+      "opponent_rank": 17,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "37001825132",
+      "opponent_name": "Kyson Harris",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 128,
+      "opponent_weight": 215,
+      "opponent_rank": 155,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34992805132",
+      "opponent_name": "Jax Crowe",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
       "opponent_weight": 190,
-      "opponent_rank": 181,
+      "opponent_rank": 6,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Mercer County"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35795035132",
       "opponent_name": "Stryker Davidson",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 46,
       "opponent_weight": 215,
-      "opponent_rank": 47,
+      "opponent_rank": 48,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -82,7 +127,7 @@
       "opponent_team": "Western Hills",
       "opponent_team_rank": 137,
       "opponent_weight": 215,
-      "opponent_rank": 63,
+      "opponent_rank": 66,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -97,7 +142,7 @@
       "opponent_team": "Trinity (Whitesville)",
       "opponent_team_rank": null,
       "opponent_weight": 215,
-      "opponent_rank": 182,
+      "opponent_rank": 181,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -106,13 +151,28 @@
       "event": "vs. Trinity (Whitesville)"
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "35700434132",
+      "opponent_name": "Lucas Shaheen",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
+    },
+    {
       "date": "2025-12-03",
       "opponent_id": "35281297132",
       "opponent_name": "Landen Nicholas",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 215,
-      "opponent_rank": 80,
+      "opponent_rank": 75,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -134,6 +194,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Frederick Douglass"
+    }
+  ],
+  "career": {
+    "career_id": "career_004708",
+    "canonical_name": "Tristan Robinson",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Mercer County",
+      "record": "3-7",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

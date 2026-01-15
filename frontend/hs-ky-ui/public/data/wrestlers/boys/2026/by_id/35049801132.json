@@ -3,12 +3,12 @@
   "name": "Nolan Clark",
   "team": "Owensboro Catholic",
   "team_slug": "owensboro_catholic",
-  "team_rank": 30,
+  "team_rank": 25,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 58,
+  "current_rank": 82,
   "record": {
-    "overall": "2-2",
+    "overall": "3-2",
     "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,10 +18,10 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 110.4,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "df_plus": 102.0,
+    "apr_plus": 109.5,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
     "pins": 1
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35490391132",
-      "opponent_rank": 156,
+      "opponent_rank": 163,
       "opponent_name": "Cohen Griffin",
       "method": "Fall 1:48"
     },
@@ -41,13 +41,28 @@
   },
   "match_list": [
     {
+      "date": "2026-01-13",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35490391132",
       "opponent_name": "Cohen Griffin",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 190,
-      "opponent_rank": 156,
+      "opponent_rank": 163,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -101,9 +116,30 @@
       "event": "vs. Riverton Parke"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_002048",
+    "canonical_name": "Nolan Clark",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Owensboro Catholic",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "Owensboro Catholic",
+      "record": "4-11",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

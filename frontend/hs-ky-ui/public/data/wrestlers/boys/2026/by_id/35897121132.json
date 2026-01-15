@@ -3,10 +3,10 @@
   "name": "Gage Clay",
   "team": "Boyd County",
   "team_slug": "boyd_county",
-  "team_rank": 5,
+  "team_rank": 8,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 181,
+  "current_rank": 179,
   "record": {
     "overall": "1-6",
     "vs_ranked": "1-3",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 95.2,
+    "df_plus": 102.0,
+    "apr_plus": 94.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35735433132",
-      "opponent_rank": 202,
+      "opponent_rank": 198,
       "opponent_name": "Jayden Collins",
       "method": "Fall 4:00"
     },
     "worst_loss": {
       "opponent_id": "35635546132",
-      "opponent_rank": 117,
+      "opponent_rank": 119,
       "opponent_name": "Jaxon Shackelford",
       "method": "Fall 1:31"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35735433132",
       "opponent_name": "Jayden Collins",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
-      "opponent_weight": 285,
-      "opponent_rank": 202,
+      "opponent_team_rank": 60,
+      "opponent_weight": 215,
+      "opponent_rank": 198,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "34995986132",
       "opponent_name": "Alexander Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 215,
-      "opponent_rank": 26,
+      "opponent_rank": 27,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -80,7 +80,7 @@
       "opponent_id": "35459317132",
       "opponent_name": "Gage Holbrook",
       "opponent_team": "Rowan County",
-      "opponent_team_rank": 119,
+      "opponent_team_rank": 121,
       "opponent_weight": 215,
       "opponent_rank": 58,
       "weight_class": "215",
@@ -140,9 +140,9 @@
       "opponent_id": "35635546132",
       "opponent_name": "Jaxon Shackelford",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 88,
       "opponent_weight": 215,
-      "opponent_rank": 117,
+      "opponent_rank": 119,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -151,9 +151,21 @@
       "event": "AWC Invitational"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_005237",
+    "canonical_name": "Gage Clay",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Boyd County",
+      "record": "1-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

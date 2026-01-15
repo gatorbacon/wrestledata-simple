@@ -3,23 +3,23 @@
   "name": "Delmartarris Hill",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 27,
+  "team_rank": 29,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 16,
+  "current_rank": 14,
   "record": {
     "overall": "12-4",
     "vs_ranked": "4-2",
     "vs_top10": "0-1",
-    "vs_top25": "3-1"
+    "vs_top25": "3-2"
   },
   "metrics": {
     "pf7": 14.08,
     "pa7": 6.21,
     "pd7": 7.88,
-    "si_plus": 106.2,
-    "df_plus": 112.1,
-    "apr_plus": 105.4,
+    "si_plus": 107.8,
+    "df_plus": 112.7,
+    "apr_plus": 105.8,
     "pin_rate": 0.583,
     "bonus_rate": 0.917,
     "majors": 2,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34993280132",
-      "opponent_rank": 17,
+      "opponent_rank": 15,
       "opponent_name": "Jah Patterson",
       "method": "MD 16-7"
     },
     "worst_loss": {
       "opponent_id": "34989089132",
-      "opponent_rank": 29,
+      "opponent_rank": 23,
       "opponent_name": "Ayden Fechtner",
       "method": "Dec 9-4"
     }
@@ -50,32 +50,30 @@
       "opponent_id": "35458879132",
       "opponent_name": "Kaleb Lewellen",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 28,
       "opponent_weight": 132,
-      "opponent_rank": 22,
+      "opponent_rank": 19,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:05",
-      "event": "Warhawk Classic",
-      "mv_impact": 7.39
+      "event": "Warhawk Classic"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "34989089132",
       "opponent_name": "Ayden Fechtner",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 132,
-      "opponent_rank": 29,
+      "opponent_rank": 23,
       "weight_class": "132",
       "result": "L",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "Warhawk Classic",
-      "mv_impact": -1.67
+      "event": "Warhawk Classic"
     },
     {
       "date": "2025-12-30",
@@ -172,48 +170,45 @@
       "opponent_id": "34993280132",
       "opponent_name": "Jah Patterson",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 71,
       "opponent_weight": 126,
-      "opponent_rank": 17,
+      "opponent_rank": 15,
       "weight_class": "126",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "5:21",
-      "event": "Christian County Invitational",
-      "mv_impact": 7.67
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35133606132",
       "opponent_name": "Nicholas Herrera",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 126,
-      "opponent_rank": 91,
+      "opponent_rank": 96,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:03",
-      "event": "Christian County Invitational",
-      "mv_impact": 4.37
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34989042132",
       "opponent_name": "Case Simmons",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 29,
       "opponent_weight": 120,
-      "opponent_rank": 2,
+      "opponent_rank": 3,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:19",
-      "event": "Cape Central Tiger Classic",
-      "mv_impact": -2.63
+      "event": "Cape Central Tiger Classic"
     },
     {
       "date": "2025-12-20",
@@ -280,21 +275,41 @@
       "opponent_id": "34993280132",
       "opponent_name": "Jah Patterson",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 71,
       "opponent_weight": 126,
-      "opponent_rank": 17,
+      "opponent_rank": 15,
       "weight_class": "126",
       "result": "W",
       "method": "MD",
       "score": "16-7",
       "duration": "7:00",
-      "event": "2nd Annual Dickie Walls Invitational",
-      "mv_impact": 6.67
+      "event": "2nd Annual Dickie Walls Invitational"
     }
   ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 1.25,
-    "top33_bonus_ev_shrunk": 1.4916666666666667
-  }
+  "career": {
+    "career_id": "career_002055",
+    "canonical_name": "Delmartarris Hill",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Paducah Tilghman",
+      "record": "13-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Paducah Tilghman",
+      "record": "18-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

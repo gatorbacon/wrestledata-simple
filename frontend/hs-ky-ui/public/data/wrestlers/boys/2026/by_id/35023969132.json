@@ -8,46 +8,61 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 97.3,
+    "df_plus": 102.0,
+    "apr_plus": 95.7,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "bonus_rate": 0.5,
+    "majors": 1,
     "techs": 0,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35002892132",
-      "opponent_rank": 19,
-      "opponent_name": "Jayden Perry",
-      "method": "Dec 6-3"
+      "opponent_id": "35049119132",
+      "opponent_rank": 62,
+      "opponent_name": "Colton Hendrick",
+      "method": "MD 15-5"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35049119132",
+      "opponent_name": "Colton Hendrick",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 89,
+      "opponent_weight": 138,
+      "opponent_rank": 62,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "15-5",
+      "duration": "7:00",
+      "event": "2026 Commando Crush"
+    },
+    {
       "date": "2025-12-27",
       "opponent_id": "35002892132",
       "opponent_name": "Jayden Perry",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
-      "opponent_weight": 138,
-      "opponent_rank": 19,
+      "opponent_team_rank": 82,
+      "opponent_weight": 132,
+      "opponent_rank": 75,
       "weight_class": "138",
       "result": "W",
       "method": "DEC",
@@ -55,10 +70,5 @@
       "duration": "7:00",
       "event": "Maher/Garstin Battle for Indy BOYS 2025"
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 0.9425287356321839
-  }
+  ]
 }

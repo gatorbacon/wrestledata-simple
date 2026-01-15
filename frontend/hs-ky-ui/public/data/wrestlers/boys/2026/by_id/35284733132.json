@@ -3,13 +3,13 @@
   "name": "Jordan Collett",
   "team": "Bell County",
   "team_slug": "bell_county",
-  "team_rank": 56,
+  "team_rank": 61,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 82,
+  "current_rank": 85,
   "record": {
-    "overall": "3-3",
-    "vs_ranked": "3-1",
+    "overall": "4-3",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,33 +18,48 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 99.2,
+    "df_plus": 102.0,
+    "apr_plus": 99.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35903996132",
-      "opponent_rank": 83,
+      "opponent_rank": 86,
       "opponent_name": "Tucker Sharp",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "36792841132",
-      "opponent_rank": 95,
+      "opponent_rank": 98,
       "opponent_name": "Travis Collins",
       "method": "Fall 1:36"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "37175968132",
+      "opponent_name": "Camden Middleton",
+      "opponent_team": "Harlan County",
+      "opponent_team_rank": 90,
+      "opponent_weight": 175,
+      "opponent_rank": 197,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harlan County"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35380438132",
@@ -65,9 +80,9 @@
       "opponent_id": "36792841132",
       "opponent_name": "Travis Collins",
       "opponent_team": "Knott County Central",
-      "opponent_team_rank": 94,
+      "opponent_team_rank": 97,
       "opponent_weight": 285,
-      "opponent_rank": 95,
+      "opponent_rank": 98,
       "weight_class": "Hwt",
       "result": "L",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35903996132",
       "opponent_name": "Tucker Sharp",
       "opponent_team": "Knox Central",
-      "opponent_team_rank": 95,
+      "opponent_team_rank": 98,
       "opponent_weight": 285,
-      "opponent_rank": 83,
+      "opponent_rank": 86,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -110,9 +125,9 @@
       "opponent_id": "35526191132",
       "opponent_name": "Jayden Senecal",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 285,
-      "opponent_rank": 127,
+      "opponent_rank": 135,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "34995977132",
       "opponent_name": "Brayden Pace",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 285,
-      "opponent_rank": 110,
+      "opponent_rank": 119,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -136,9 +151,30 @@
       "event": "Anchor Down Showdown"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_003926",
+    "canonical_name": "Jordan Collett",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Bell County",
+      "record": "3-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 7,
+      "team": "Bell County",
+      "record": "1-0",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

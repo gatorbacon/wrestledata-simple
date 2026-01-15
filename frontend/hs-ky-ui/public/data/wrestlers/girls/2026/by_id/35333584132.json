@@ -3,32 +3,32 @@
   "name": "Mallory Ohlson",
   "team": "Ballard",
   "team_slug": "ballard",
-  "team_rank": 25,
+  "team_rank": 26,
   "weight_class": 114,
   "year": 2026,
-  "current_rank": 67,
+  "current_rank": 71,
   "record": {
-    "overall": "1-10",
-    "vs_ranked": "1-6",
+    "overall": "3-12",
+    "vs_ranked": "3-8",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 2.0,
-    "pa7": 4.0,
-    "pd7": -2.0,
-    "si_plus": 90.5,
-    "df_plus": 107.4,
-    "apr_plus": 89.0,
+    "pf7": 1.0,
+    "pa7": 8.5,
+    "pd7": -7.5,
+    "si_plus": 78.9,
+    "df_plus": 100.5,
+    "apr_plus": 93.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_wins": 3,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -38,13 +38,73 @@
       "method": "Fall 4:36"
     },
     "worst_loss": {
-      "opponent_id": "35756107132",
-      "opponent_rank": 55,
-      "opponent_name": "De`onna Owens",
-      "method": "Fall 2:23"
+      "opponent_id": "35515611132",
+      "opponent_rank": 63,
+      "opponent_name": "Ja`Rhia Weaver",
+      "method": "MD 13-0"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35774464132",
+      "opponent_name": "Leilani Velasquez",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 36,
+      "opponent_weight": 114,
+      "opponent_rank": 87,
+      "weight_class": "114",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:27",
+      "event": "Queen of the City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35409963132",
+      "opponent_name": "Isabella Hammer",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 22,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
+      "event": "Queen of the City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35778293132",
+      "opponent_name": "Anne Iranzi",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 80,
+      "weight_class": "114",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:28",
+      "event": "Queen of the City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35515611132",
+      "opponent_name": "Ja`Rhia Weaver",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 63,
+      "weight_class": "114",
+      "result": "L",
+      "method": "MD",
+      "score": "13-0",
+      "duration": "7:00",
+      "event": "Queen of the City Wrestling"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35778293132",
@@ -82,7 +142,7 @@
       "opponent_team": "Shawnee",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 55,
+      "opponent_rank": 57,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
@@ -157,7 +217,7 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 50,
+      "opponent_rank": 52,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
@@ -171,8 +231,8 @@
       "opponent_name": "Adalyn Perry",
       "opponent_team": "Bethlehem",
       "opponent_team_rank": null,
-      "opponent_weight": 114,
-      "opponent_rank": 13,
+      "opponent_weight": 107,
+      "opponent_rank": 12,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
@@ -187,7 +247,7 @@
       "opponent_team": "Campbell County",
       "opponent_team_rank": 31,
       "opponent_weight": 107,
-      "opponent_rank": 40,
+      "opponent_rank": 41,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
@@ -200,9 +260,9 @@
       "opponent_id": "35448607132",
       "opponent_name": "Faith Martin",
       "opponent_team": "Danville",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 19,
       "opponent_weight": 114,
-      "opponent_rank": 54,
+      "opponent_rank": 56,
       "weight_class": "114",
       "result": "L",
       "method": "DEC",
@@ -214,6 +274,6 @@
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.361111111111111
+    "top33_bonus_ev_shrunk": 1.4074074074074074
   }
 }

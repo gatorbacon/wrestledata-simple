@@ -3,13 +3,13 @@
   "name": "Gavin Noe",
   "team": "Lafayette",
   "team_slug": "lafayette",
-  "team_rank": 96,
+  "team_rank": 99,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 42,
+  "current_rank": 52,
   "record": {
-    "overall": "4-3",
-    "vs_ranked": "4-2",
+    "overall": "5-4",
+    "vs_ranked": "5-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -18,30 +18,30 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 110.4,
+    "df_plus": 102.0,
+    "apr_plus": 107.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 2,
+    "ranked_wins": 5,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35884737132",
-      "opponent_rank": 46,
+      "opponent_rank": 53,
       "opponent_name": "william roberts",
       "method": "Fall 1:35"
     },
     "worst_loss": {
-      "opponent_id": "35850442132",
-      "opponent_rank": 27,
-      "opponent_name": "Cayden Thompson",
-      "method": "Fall 0:00"
+      "opponent_id": "35729024132",
+      "opponent_rank": 55,
+      "opponent_name": "Aiden White",
+      "method": "Fall 1:41"
     }
   },
   "match_list": [
@@ -50,9 +50,9 @@
       "opponent_id": "35850442132",
       "opponent_name": "Cayden Thompson",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 27,
+      "opponent_rank": 36,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -61,13 +61,43 @@
       "event": "Warhawk Classic"
     },
     {
+      "date": "2026-01-03",
+      "opponent_id": "35729024132",
+      "opponent_name": "Aiden White",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 47,
+      "opponent_weight": 285,
+      "opponent_rank": 55,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35521746132",
+      "opponent_name": "James Grubbs",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 285,
+      "opponent_rank": 184,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
+      "event": "Great Crossing Individual Tournament"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35884737132",
       "opponent_name": "william roberts",
       "opponent_team": "Wayne County",
       "opponent_team_rank": 20,
       "opponent_weight": 285,
-      "opponent_rank": 46,
+      "opponent_rank": 53,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "35051541132",
       "opponent_name": "Maxx Escaloni",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 285,
-      "opponent_rank": 15,
+      "opponent_rank": 20,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -95,9 +125,9 @@
       "opponent_id": "35282098132",
       "opponent_name": "Mason Daniels",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 215,
-      "opponent_rank": 188,
+      "opponent_rank": 152,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -110,9 +140,9 @@
       "opponent_id": "35118747132",
       "opponent_name": "Tao Mulvaney",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 285,
-      "opponent_rank": 99,
+      "opponent_rank": 106,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -125,9 +155,9 @@
       "opponent_id": "35219260132",
       "opponent_name": "Mike Baker",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 93,
       "opponent_weight": 285,
-      "opponent_rank": 97,
+      "opponent_rank": 104,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -151,9 +181,21 @@
       "event": "Bearcat Brawl 2025"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_004654",
+    "canonical_name": "Gavin Noe",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Lafayette",
+      "record": "5-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

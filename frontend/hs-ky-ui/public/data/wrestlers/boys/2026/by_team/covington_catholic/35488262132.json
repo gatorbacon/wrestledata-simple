@@ -3,13 +3,13 @@
   "name": "Kingston Dailey",
   "team": "Covington Catholic",
   "team_slug": "covington_catholic",
-  "team_rank": 16,
+  "team_rank": 44,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 103,
+  "current_rank": 111,
   "record": {
-    "overall": "2-4",
-    "vs_ranked": "2-4",
+    "overall": "4-4",
+    "vs_ranked": "4-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,34 +17,66 @@
     "pf7": 1.0,
     "pa7": 12.0,
     "pd7": -11.0,
-    "si_plus": 87.4,
-    "df_plus": 99.1,
-    "apr_plus": 100.4,
+    "si_plus": 86.5,
+    "df_plus": 98.9,
+    "apr_plus": 102.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 4,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35404982132",
-      "opponent_rank": 99,
+      "opponent_rank": 101,
       "opponent_name": "Joseph Collucci",
       "method": "Fall 3:24"
     },
     "worst_loss": {
-      "opponent_id": "35488268132",
-      "opponent_rank": 86,
-      "opponent_name": "Tyler Heck",
-      "method": "Fall 4:46"
+      "opponent_id": "34988567132",
+      "opponent_rank": 93,
+      "opponent_name": "Grandin Blackburn",
+      "method": "Fall 3:43"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35652003132",
+      "opponent_name": "Jordan Hearn",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 215,
+      "opponent_rank": 200,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harrison County",
+      "mv_impact": 0.0
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35398417132",
+      "opponent_name": "Gus Ketterer",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": 4,
+      "opponent_weight": 215,
+      "opponent_rank": 160,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Highlands",
+      "mv_impact": 0.77
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "34988567132",
@@ -52,94 +84,129 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 190,
-      "opponent_rank": 71,
+      "opponent_rank": 93,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:43",
       "event": "2025 Ryle Raider Rumble",
-      "mv_impact": -7.56
+      "mv_impact": -7.28
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35663262132",
       "opponent_name": "Dakota Lonkard",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 14,
       "opponent_weight": 190,
-      "opponent_rank": 56,
+      "opponent_rank": 45,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:37",
       "event": "2025 Ryle Raider Rumble",
-      "mv_impact": -5.84
+      "mv_impact": -5.4
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35520472132",
       "opponent_name": "Wyatt Chilton",
       "opponent_team": "Anderson County",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 7,
       "opponent_weight": 175,
-      "opponent_rank": 202,
+      "opponent_rank": 194,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:34",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": 0.33
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35404982132",
-      "opponent_name": "Joseph Collucci",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": 96,
-      "opponent_weight": 175,
-      "opponent_rank": 99,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:24",
-      "event": "Bearcat Brawl 2025",
-      "mv_impact": 4.1
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35281292132",
-      "opponent_name": "Henry Morales",
-      "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
-      "opponent_weight": 190,
-      "opponent_rank": 36,
-      "weight_class": "190",
-      "result": "L",
-      "method": "MD",
-      "score": "12-1",
-      "duration": "7:00",
-      "event": "Bearcat Brawl 2025",
-      "mv_impact": -1.33
+      "mv_impact": 0.45
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35488268132",
       "opponent_name": "Tyler Heck",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 44,
       "opponent_weight": 190,
-      "opponent_rank": 86,
+      "opponent_rank": 56,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:46",
       "event": "Bearcat Brawl 2025",
-      "mv_impact": -6.56
+      "mv_impact": -5.15
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35404982132",
+      "opponent_name": "Joseph Collucci",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 99,
+      "opponent_weight": 175,
+      "opponent_rank": 101,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:24",
+      "event": "Bearcat Brawl 2025",
+      "mv_impact": 3.5
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35281292132",
+      "opponent_name": "Henry Morales",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 73,
+      "opponent_weight": 190,
+      "opponent_rank": 33,
+      "weight_class": "190",
+      "result": "L",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "Bearcat Brawl 2025",
+      "mv_impact": -0.87
+    }
+  ],
+  "career": {
+    "career_id": "career_000622",
+    "canonical_name": "Kingston Dailey",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Covington Catholic",
+      "record": "4-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Covington Catholic",
+      "record": "21-15",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Covington Catholic",
+      "record": "13-19",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -3,10 +3,10 @@
   "name": "Christian Carmona",
   "team": "Jeffersontown",
   "team_slug": "jeffersontown",
-  "team_rank": 17,
+  "team_rank": 15,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 58,
+  "current_rank": 96,
   "record": {
     "overall": "1-0",
     "vs_ranked": "1-0",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 115.0,
+    "df_plus": 102.0,
+    "apr_plus": 114.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35321130132",
-      "opponent_rank": 178,
+      "opponent_rank": 182,
       "opponent_name": "Damien Mutter",
       "method": "Fall 3:27"
     },
@@ -45,21 +45,33 @@
       "opponent_id": "35321130132",
       "opponent_name": "Damien Mutter",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 150,
-      "opponent_rank": 178,
+      "opponent_rank": 182,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:27",
       "event": "vs. North Bullitt",
-      "mv_impact": 3.89
+      "mv_impact": 1.14
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  "career": {
+    "career_id": "career_005470",
+    "canonical_name": "Christian Carmona",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Jeffersontown",
+      "record": "1-0",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

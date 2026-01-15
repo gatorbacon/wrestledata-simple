@@ -3,23 +3,23 @@
   "name": "Elijah Hare",
   "team": "Christian Academy-Louisville",
   "team_slug": "christian_academylouisville",
-  "team_rank": 66,
+  "team_rank": 26,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 150,
+  "current_rank": 156,
   "record": {
-    "overall": "7-1",
-    "vs_ranked": "4-1",
+    "overall": "7-4",
+    "vs_ranked": "4-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 7.64,
     "pa7": 5.09,
     "pd7": 2.55,
-    "si_plus": 97.8,
-    "df_plus": 108.7,
-    "apr_plus": 103.1,
+    "si_plus": 97.6,
+    "df_plus": 109.0,
+    "apr_plus": 99.3,
     "pin_rate": 0.429,
     "bonus_rate": 0.429,
     "majors": 0,
@@ -28,29 +28,59 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35194145132",
-      "opponent_rank": 140,
-      "opponent_name": "PJ Barnabas",
-      "method": "Fall 1:21"
+      "opponent_id": "35049804132",
+      "opponent_rank": 82,
+      "opponent_name": "Eric McCarthy",
+      "method": "Fall 3:22"
     },
     "worst_loss": {
-      "opponent_id": "35007898132",
-      "opponent_rank": 25,
-      "opponent_name": "Cy Jackson",
-      "method": "Fall 1:01"
+      "opponent_id": "34993555132",
+      "opponent_rank": 60,
+      "opponent_name": "Marcus Mahan",
+      "method": "Fall 0:39"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35542529132",
+      "opponent_name": "Jayden Lake",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 190,
+      "opponent_rank": 26,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34993555132",
+      "opponent_name": "Marcus Mahan",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 190,
+      "opponent_rank": 60,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "vs. Christian Academy-Louisville"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35074425132",
       "opponent_name": "Emmanuel Cortes",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 175,
       "opponent_rank": 205,
       "weight_class": "190",
@@ -65,9 +95,9 @@
       "opponent_id": "35007898132",
       "opponent_name": "Cy Jackson",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 190,
-      "opponent_rank": 25,
+      "opponent_rank": 30,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "35049804132",
       "opponent_name": "Eric McCarthy",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 30,
-      "opponent_weight": 190,
-      "opponent_rank": 175,
+      "opponent_team_rank": 25,
+      "opponent_weight": 175,
+      "opponent_rank": 82,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -95,9 +125,9 @@
       "opponent_id": "35049071132",
       "opponent_name": "Preston Davis",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 190,
-      "opponent_rank": 151,
+      "opponent_rank": 157,
       "weight_class": "190",
       "result": "W",
       "method": "SV-1",
@@ -127,13 +157,28 @@
       "opponent_team": "Warren Central",
       "opponent_team_rank": 134,
       "opponent_weight": 215,
-      "opponent_rank": 140,
+      "opponent_rank": 141,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:21",
       "event": "vs. Warren Central"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35542529132",
+      "opponent_name": "Jayden Lake",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 190,
+      "opponent_rank": 26,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Christian Academy-Louisville"
     },
     {
       "date": "2025-12-23",
@@ -166,9 +211,21 @@
       "event": "vs. Shawnee"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_005298",
+    "canonical_name": "Elijah Hare",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Christian Academy-Louisville",
+      "record": "8-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

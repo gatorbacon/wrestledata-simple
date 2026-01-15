@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 144,
+  "current_rank": 152,
   "record": {
     "overall": "2-7",
     "vs_ranked": "0-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 88.3,
+    "df_plus": 102.0,
+    "apr_plus": 88.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -33,21 +33,36 @@
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35179692132",
-      "opponent_rank": 121,
-      "opponent_name": "William Kuwa",
-      "method": "Fall 2:17"
+      "opponent_id": "35108871132",
+      "opponent_rank": 120,
+      "opponent_name": "Braydon Phelps",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
       "date": "2025-12-20",
+      "opponent_id": "35215386132",
+      "opponent_name": "Jakeson Rosales Padilla",
+      "opponent_team": "Doss",
+      "opponent_team_rank": 74,
+      "opponent_weight": 106,
+      "opponent_rank": 47,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. WEB DuBois"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "35179692132",
       "opponent_name": "William Kuwa",
       "opponent_team": "Moore",
-      "opponent_team_rank": 46,
-      "opponent_weight": 106,
-      "opponent_rank": 121,
+      "opponent_team_rank": 27,
+      "opponent_weight": 113,
+      "opponent_rank": 88,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -56,34 +71,34 @@
       "event": "vs. WEB DuBois"
     },
     {
-      "date": "2025-12-20",
-      "opponent_id": "35215386132",
-      "opponent_name": "Jakeson Rosales Padilla",
-      "opponent_team": "Doss",
-      "opponent_team_rank": 71,
-      "opponent_weight": 106,
-      "opponent_rank": 42,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. WEB DuBois"
-    },
-    {
       "date": "2025-12-13",
       "opponent_id": "35108871132",
       "opponent_name": "Braydon Phelps",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 106,
-      "opponent_rank": 109,
+      "opponent_rank": 120,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Classic"
+    },
+    {
+      "date": "2025-12-09",
+      "opponent_id": "35001158132",
+      "opponent_name": "River Leonard",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 11,
+      "opponent_weight": 106,
+      "opponent_rank": 58,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. WEB DuBois"
     },
     {
       "date": "2025-12-09",
@@ -102,27 +117,12 @@
     },
     {
       "date": "2025-12-09",
-      "opponent_id": "35001158132",
-      "opponent_name": "River Leonard",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
-      "opponent_weight": 106,
-      "opponent_rank": 44,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Central Hardin"
-    },
-    {
-      "date": "2025-12-09",
       "opponent_id": "35030252132",
       "opponent_name": "Quentin Troxell",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 113,
-      "opponent_rank": 30,
+      "opponent_rank": 26,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -135,9 +135,9 @@
       "opponent_id": "35321126132",
       "opponent_name": "Aiden Sotelo",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 113,
-      "opponent_rank": 44,
+      "opponent_rank": 37,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -150,9 +150,9 @@
       "opponent_id": "35012794132",
       "opponent_name": "Chuck Bentancourt",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 106,
-      "opponent_rank": 23,
+      "opponent_rank": 27,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -174,6 +174,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Western"
+    }
+  ],
+  "career": {
+    "career_id": "career_005133",
+    "canonical_name": "Jafar Price",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "WEB DuBois",
+      "record": "2-8",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

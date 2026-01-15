@@ -3,13 +3,13 @@
   "name": "Narhiya Davis",
   "team": "Central",
   "team_slug": "central",
-  "team_rank": 65,
+  "team_rank": 68,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 160,
+  "current_rank": 162,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "1-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 86.5,
+    "df_plus": 102.0,
+    "apr_plus": 88.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,14 +28,14 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35900782132",
-      "opponent_rank": 95,
-      "opponent_name": "Tyjuan Moody",
+      "opponent_id": "35317885132",
+      "opponent_rank": 102,
+      "opponent_name": "Ismail Husseins",
       "method": "Fall 0:00"
     }
   },
@@ -45,16 +45,45 @@
       "opponent_id": "35076694132",
       "opponent_name": "Lynndae Wales",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 120,
-      "opponent_rank": 83,
+      "opponent_rank": 87,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Shawnee",
-      "mv_impact": -6.97
+      "event": "vs. Shawnee"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35317885132",
+      "opponent_name": "Ismail Husseins",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": 96,
+      "opponent_weight": 120,
+      "opponent_rank": 102,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Iroquois"
     },
     {
       "date": "2025-12-20",
@@ -63,14 +92,39 @@
       "opponent_team": "Valley",
       "opponent_team_rank": 132,
       "opponent_weight": 132,
-      "opponent_rank": 95,
+      "opponent_rank": 96,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Valley",
-      "mv_impact": -8.24
+      "event": "vs. Valley"
+    }
+  ],
+  "career": {
+    "career_id": "career_000437",
+    "canonical_name": "NaRhiya Davis",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Central",
+      "record": "2-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Central",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 86.8,
+    "df_plus": 102.0,
+    "apr_plus": 87.1,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35521775132",
-      "opponent_rank": 167,
+      "opponent_rank": 172,
       "opponent_name": "Enrique Messer Cruz",
       "method": "MD 19-11"
     },
     "worst_loss": {
       "opponent_id": "35049061132",
-      "opponent_rank": 70,
+      "opponent_rank": 72,
       "opponent_name": "Idris Qamar",
       "method": "Fall 1:10"
     }
@@ -47,38 +47,33 @@
   "match_list": [
     {
       "date": "2025-12-06",
-      "opponent_id": "35049061132",
-      "opponent_name": "Idris Qamar",
-      "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
-      "opponent_weight": 157,
-      "opponent_rank": 70,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:10",
-      "event": "Coyote Classic Wrestling Invitational"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35521775132",
       "opponent_name": "Enrique Messer Cruz",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
-      "opponent_weight": 165,
-      "opponent_rank": 167,
+      "opponent_team_rank": 82,
+      "opponent_weight": 157,
+      "opponent_rank": 172,
       "weight_class": "165",
       "result": "W",
       "method": "MD",
       "score": "19-11",
       "duration": "7:00",
       "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35049061132",
+      "opponent_name": "Idris Qamar",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 89,
+      "opponent_weight": 157,
+      "opponent_rank": 72,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Coyote Classic Wrestling Invitational"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  ]
 }

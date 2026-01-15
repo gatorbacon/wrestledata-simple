@@ -6,34 +6,34 @@
   "team_rank": null,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 4,
+  "current_rank": 6,
   "record": {
-    "overall": "11-4",
-    "vs_ranked": "11-4",
-    "vs_top10": "1-4",
-    "vs_top25": "3-4"
+    "overall": "17-6",
+    "vs_ranked": "17-6",
+    "vs_top10": "3-6",
+    "vs_top25": "8-6"
   },
   "metrics": {
-    "pf7": 16.0,
-    "pa7": 3.0,
-    "pd7": 13.0,
-    "si_plus": 103.4,
-    "df_plus": 111.5,
-    "apr_plus": 105.9,
-    "pin_rate": 0.818,
+    "pf7": 14.0,
+    "pa7": 2.2,
+    "pd7": 11.8,
+    "si_plus": 112.9,
+    "df_plus": 108.8,
+    "apr_plus": 105.2,
+    "pin_rate": 0.765,
     "bonus_rate": 1.0,
-    "majors": 0,
+    "majors": 2,
     "techs": 2,
-    "pins": 9
+    "pins": 13
   },
   "opponent_breakdown": {
-    "ranked_wins": 11,
-    "ranked_losses": 4,
-    "top10_wins": 1,
-    "top10_losses": 4,
+    "ranked_wins": 17,
+    "ranked_losses": 6,
+    "top10_wins": 3,
+    "top10_losses": 6,
     "win_over_highest_rank": {
       "opponent_id": "35333531132",
-      "opponent_rank": 6,
+      "opponent_rank": 7,
       "opponent_name": "NARAE COMPTON",
       "method": "TF 17-0 3:23"
     },
@@ -46,20 +46,116 @@
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35333674132",
+      "opponent_name": "Saniyah Nana",
+      "opponent_team": "Butler",
+      "opponent_team_rank": 17,
+      "opponent_weight": 145,
+      "opponent_rank": 14,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 3.61
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35562841132",
+      "opponent_name": "Ash Patton",
+      "opponent_team": "Seneca",
+      "opponent_team_rank": 53,
+      "opponent_weight": 138,
+      "opponent_rank": 9,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 7.09
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333394132",
+      "opponent_name": "Amirah Macklin",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 48,
+      "opponent_weight": 138,
+      "opponent_rank": 1,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:08",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": -1.19
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35663925132",
+      "opponent_name": "Preslee Steiber",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 5,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": -3.45
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35333464132",
+      "opponent_name": "Jordyn Crutcher",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 38,
+      "opponent_weight": 138,
+      "opponent_rank": 26,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": 6.3
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35404899132",
+      "opponent_name": "Trinity Matthews",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 8,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ladies Warhawk Classic",
+      "mv_impact": 7.98
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35510940132",
       "opponent_name": "Addison Collins",
       "opponent_team": "John Hardin",
       "opponent_team_rank": 3,
-      "opponent_weight": 138,
-      "opponent_rank": 57,
+      "opponent_weight": 145,
+      "opponent_rank": 59,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:42",
       "event": "Ladies Warhawk Classic",
-      "mv_impact": 4.8
+      "mv_impact": 0.58
     },
     {
       "date": "2026-01-03",
@@ -68,14 +164,14 @@
       "opponent_team": "Madison Central",
       "opponent_team_rank": 10,
       "opponent_weight": 138,
-      "opponent_rank": 6,
+      "opponent_rank": 7,
       "weight_class": "138",
       "result": "W",
       "method": "TF",
       "score": "17-0",
       "duration": "3:23",
       "event": "Ladies Warhawk Classic",
-      "mv_impact": 8.07
+      "mv_impact": 8.0
     },
     {
       "date": "2026-01-03",
@@ -91,7 +187,7 @@
       "score": null,
       "duration": "0:00",
       "event": "Ladies Warhawk Classic",
-      "mv_impact": 5.93
+      "mv_impact": 6.24
     },
     {
       "date": "2025-12-30",
@@ -100,14 +196,14 @@
       "opponent_team": "Valley",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 38,
+      "opponent_rank": 35,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:36",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": 4.37
+      "mv_impact": 4.38
     },
     {
       "date": "2025-12-30",
@@ -123,7 +219,7 @@
       "score": null,
       "duration": "2:22",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": -2.64
+      "mv_impact": -2.91
     },
     {
       "date": "2025-12-30",
@@ -132,14 +228,14 @@
       "opponent_team": "Shawnee",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 59,
+      "opponent_rank": 55,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:00",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": 0.33
+      "mv_impact": 0.72
     },
     {
       "date": "2025-12-30",
@@ -155,7 +251,7 @@
       "score": null,
       "duration": "3:24",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": -3.16
+      "mv_impact": -2.94
     },
     {
       "date": "2025-12-20",
@@ -164,14 +260,14 @@
       "opponent_team": "Valley",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 61,
+      "opponent_rank": 58,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:15",
       "event": "Seneca Girls Invitational",
-      "mv_impact": 4.62
+      "mv_impact": 4.44
     },
     {
       "date": "2025-12-20",
@@ -187,23 +283,23 @@
       "score": null,
       "duration": "1:25",
       "event": "Seneca Girls Invitational",
-      "mv_impact": 4.11
+      "mv_impact": 3.81
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35333674132",
       "opponent_name": "Saniyah Nana",
       "opponent_team": "Butler",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 17,
       "opponent_weight": 145,
-      "opponent_rank": 11,
+      "opponent_rank": 14,
       "weight_class": "145",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": 5.21
+      "mv_impact": 4.61
     },
     {
       "date": "2025-12-13",
@@ -212,14 +308,14 @@
       "opponent_team": "Shawnee",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 59,
+      "opponent_rank": 55,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": 0.33
+      "mv_impact": 0.72
     },
     {
       "date": "2025-12-13",
@@ -228,14 +324,14 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 37,
+      "opponent_rank": 34,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": 2.95
+      "mv_impact": 2.72
     },
     {
       "date": "2025-12-13",
@@ -251,7 +347,7 @@
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -2.64
+      "mv_impact": -2.91
     },
     {
       "date": "2025-12-13",
@@ -260,21 +356,21 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 12,
+      "opponent_rank": 15,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": 6.65
+      "mv_impact": 6.13
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35333366132",
       "opponent_name": "Kathryn Floyd",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 27,
       "opponent_weight": 145,
       "opponent_rank": 6,
       "weight_class": "145",
@@ -283,7 +379,39 @@
       "score": "9-8",
       "duration": "7:00",
       "event": "beast of the east",
-      "mv_impact": -0.56
+      "mv_impact": -0.43
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333674132",
+      "opponent_name": "Saniyah Nana",
+      "opponent_team": "Butler",
+      "opponent_team_rank": 17,
+      "opponent_weight": 145,
+      "opponent_rank": 14,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "The Beast of the East",
+      "mv_impact": 5.61
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35404893132",
+      "opponent_name": "Hermelinda Esteban",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 24,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "The Beast of the East",
+      "mv_impact": 7.9
     }
   ]
 }

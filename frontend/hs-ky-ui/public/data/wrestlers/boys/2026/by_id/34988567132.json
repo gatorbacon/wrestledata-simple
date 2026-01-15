@@ -6,9 +6,9 @@
   "team_rank": 10,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 71,
+  "current_rank": 93,
   "record": {
-    "overall": "6-9",
+    "overall": "8-10",
     "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
@@ -17,14 +17,14 @@
     "pf7": 4.72,
     "pa7": 18.33,
     "pd7": -13.61,
-    "si_plus": 93.3,
-    "df_plus": 90.2,
-    "apr_plus": 104.7,
-    "pin_rate": 0.833,
-    "bonus_rate": 0.833,
+    "si_plus": 90.2,
+    "df_plus": 95.6,
+    "apr_plus": 105.0,
+    "pin_rate": 0.875,
+    "bonus_rate": 0.875,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 7
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,26 +33,71 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35119498132",
-      "opponent_rank": 88,
+      "opponent_rank": 100,
       "opponent_name": "Blake Johnson",
       "method": "Fall 1:10"
     },
     "worst_loss": {
       "opponent_id": "35135148132",
-      "opponent_rank": 52,
+      "opponent_rank": 55,
       "opponent_name": "johnny Tran",
       "method": "TF 17-2 4:26"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_5d9c614c39d0",
+      "opponent_name": "Mac Sullivan",
+      "opponent_team": "Waynesville High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Bellbrook Invite"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36609881132",
+      "opponent_name": "Jasper Jones",
+      "opponent_team": "Wilmington High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:44",
+      "event": "Bellbrook Invite"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_ce6d5738473b",
+      "opponent_name": "C.J. Bryant",
+      "opponent_team": "Middletown High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "Bellbrook Invite"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35135148132",
       "opponent_name": "johnny Tran",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 190,
-      "opponent_rank": 52,
+      "opponent_rank": 55,
       "weight_class": "190",
       "result": "L",
       "method": "TF",
@@ -82,7 +127,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 190,
-      "opponent_rank": 88,
+      "opponent_rank": 100,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -110,9 +155,9 @@
       "opponent_id": "35225529132",
       "opponent_name": "Emmanuel Mpungu",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 85,
       "opponent_weight": 190,
-      "opponent_rank": 35,
+      "opponent_rank": 39,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -125,9 +170,9 @@
       "opponent_id": "35144520132",
       "opponent_name": "Dakota Dye",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 190,
-      "opponent_rank": 132,
+      "opponent_rank": 140,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -140,7 +185,7 @@
       "opponent_id": "35045484132",
       "opponent_name": "AUSTIN HURST",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 17,
       "opponent_weight": 190,
       "opponent_rank": 21,
       "weight_class": "190",
@@ -155,9 +200,9 @@
       "opponent_id": "35488262132",
       "opponent_name": "Kingston Dailey",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 44,
       "opponent_weight": 190,
-      "opponent_rank": 103,
+      "opponent_rank": 111,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -170,7 +215,7 @@
       "opponent_id": "35651920132",
       "opponent_name": "Daniel Switzer",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 190,
       "opponent_rank": 19,
       "weight_class": "190",
@@ -271,9 +316,39 @@
       "event": "vs. Archbishop Alter High School"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1785714285714286
-  }
+  "career": {
+    "career_id": "career_000530",
+    "canonical_name": "Grandin Blackburn",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Conner",
+      "record": "9-10",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Conner",
+      "record": "13-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Ryle",
+      "record": "0-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

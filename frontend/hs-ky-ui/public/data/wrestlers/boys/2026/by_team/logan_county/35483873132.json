@@ -3,43 +3,93 @@
   "name": "Jordan Gainous",
   "team": "Logan County",
   "team_slug": "logan_county",
-  "team_rank": 100,
-  "weight_class": 215,
+  "team_rank": 102,
+  "weight_class": 190,
   "year": 2026,
-  "current_rank": 119,
+  "current_rank": 122,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "1-0",
+    "overall": "3-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 115.6,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "df_plus": 102.0,
+    "apr_plus": 100.4,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34996524132",
-      "opponent_rank": 120,
+      "opponent_rank": 121,
       "opponent_name": "Ryan Green",
       "method": "Fall 3:06"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35207469132",
+      "opponent_rank": 62,
+      "opponent_name": "Ryder Rogers",
+      "method": "Fall 0:59"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35207469132",
+      "opponent_name": "Ryder Rogers",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 190,
+      "opponent_rank": 62,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35001147132",
+      "opponent_name": "Apelu Hazelwood",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 11,
+      "opponent_weight": 190,
+      "opponent_rank": 24,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:55",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34993871132",
+      "opponent_name": "Jacob Hessig",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 190,
+      "opponent_rank": 123,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:06",
+      "event": "Bear Down Invitational (Boys)"
+    },
     {
       "date": "2025-12-19",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -60,15 +110,32 @@
       "opponent_id": "34996524132",
       "opponent_name": "Ryan Green",
       "opponent_team": "Russellville",
-      "opponent_team_rank": 121,
+      "opponent_team_rank": 123,
       "opponent_weight": 215,
-      "opponent_rank": 120,
+      "opponent_rank": 121,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:06",
       "event": "vs. Russellville"
+    }
+  ],
+  "career": {
+    "career_id": "career_004661",
+    "canonical_name": "Jordan Gainous",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Logan County",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

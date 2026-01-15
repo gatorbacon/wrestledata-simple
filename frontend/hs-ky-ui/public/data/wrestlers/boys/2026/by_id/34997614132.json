@@ -3,10 +3,10 @@
   "name": "Eli Troglen",
   "team": "Corbin",
   "team_slug": "corbin",
-  "team_rank": 41,
+  "team_rank": 69,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 108,
+  "current_rank": 109,
   "record": {
     "overall": "4-6",
     "vs_ranked": "1-5",
@@ -17,9 +17,9 @@
     "pf7": 7.0,
     "pa7": 23.0,
     "pd7": -16.0,
-    "si_plus": 99.7,
-    "df_plus": 85.0,
-    "apr_plus": 98.5,
+    "si_plus": 99.6,
+    "df_plus": 84.2,
+    "apr_plus": 98.6,
     "pin_rate": 0.75,
     "bonus_rate": 0.75,
     "majors": 0,
@@ -33,15 +33,15 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35057157132",
-      "opponent_rank": 109,
+      "opponent_rank": 110,
       "opponent_name": "Wyatt Booher",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35420915132",
-      "opponent_rank": 81,
-      "opponent_name": "Blake Smith",
-      "method": "Fall 2:53"
+      "opponent_id": "35223096132",
+      "opponent_rank": 100,
+      "opponent_name": "Memphis Adams",
+      "method": "Fall 2:47"
     }
   },
   "match_list": [
@@ -95,9 +95,9 @@
       "opponent_id": "35223096132",
       "opponent_name": "Memphis Adams",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 86,
+      "opponent_team_rank": 91,
       "opponent_weight": 138,
-      "opponent_rank": 80,
+      "opponent_rank": 100,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -125,9 +125,9 @@
       "opponent_id": "35057157132",
       "opponent_name": "Wyatt Booher",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 64,
       "opponent_weight": 138,
-      "opponent_rank": 109,
+      "opponent_rank": 110,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -142,7 +142,7 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 138,
-      "opponent_rank": 32,
+      "opponent_rank": 33,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35122062132",
       "opponent_name": "Hayden Drexler",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 138,
-      "opponent_rank": 9,
+      "opponent_rank": 10,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -172,7 +172,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 132,
-      "opponent_rank": 56,
+      "opponent_rank": 52,
       "weight_class": "138",
       "result": "L",
       "method": "TF",
@@ -187,7 +187,7 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 138,
-      "opponent_rank": 81,
+      "opponent_rank": 78,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -196,9 +196,39 @@
       "event": "vs. Whitley County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_000577",
+    "canonical_name": "Eli Troglen",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Corbin",
+      "record": "4-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Corbin",
+      "record": "0-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 7,
+      "team": "Corbin",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

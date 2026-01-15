@@ -3,48 +3,93 @@
   "name": "Jacob Durst",
   "team": "Great Crossing",
   "team_slug": "great_crossing",
-  "team_rank": 44,
+  "team_rank": 47,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 81,
+  "current_rank": 77,
   "record": {
-    "overall": "3-7",
-    "vs_ranked": "1-3",
+    "overall": "4-9",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 13.4,
     "pa7": 25.0,
     "pd7": -11.6,
-    "si_plus": 101.2,
-    "df_plus": 80.7,
-    "apr_plus": 101.6,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "si_plus": 110.7,
+    "df_plus": 82.2,
+    "apr_plus": 99.7,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35563010132",
-      "opponent_rank": 109,
-      "opponent_name": "Moksh Patel",
-      "method": "Fall 1:38"
+      "opponent_id": "35208007132",
+      "opponent_rank": 52,
+      "opponent_name": "Kaleb Elder",
+      "method": "Fall 1:49"
     },
     "worst_loss": {
-      "opponent_id": "35247370132",
-      "opponent_rank": 28,
-      "opponent_name": "Evan Martin",
-      "method": "TF 21-6 1:46"
+      "opponent_id": "35180956132",
+      "opponent_rank": 52,
+      "opponent_name": "Maddox Cochran",
+      "method": "Fall 2:35"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35208007132",
+      "opponent_name": "Kaleb Elder",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 106,
+      "opponent_rank": 52,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35180956132",
+      "opponent_name": "Maddox Cochran",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 70,
+      "opponent_weight": 113,
+      "opponent_rank": 52,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:35",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34989023132",
+      "opponent_name": "Kavan Gish",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 113,
+      "opponent_rank": 30,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:16",
+      "event": "Bear Down Invitational (Boys)"
+    },
     {
       "date": "2025-12-21",
       "opponent_id": "OUTSTATE_4ed40d516a06",
@@ -125,9 +170,9 @@
       "opponent_id": "35081204132",
       "opponent_name": "Brayden Schumann",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 34,
       "opponent_weight": 113,
-      "opponent_rank": 14,
+      "opponent_rank": 15,
       "weight_class": "113",
       "result": "L",
       "method": "TF",
@@ -140,9 +185,9 @@
       "opponent_id": "35247370132",
       "opponent_name": "Evan Martin",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 113,
-      "opponent_rank": 28,
+      "opponent_rank": 11,
       "weight_class": "113",
       "result": "L",
       "method": "TF",
@@ -155,9 +200,9 @@
       "opponent_id": "35563010132",
       "opponent_name": "Moksh Patel",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 113,
-      "opponent_rank": 109,
+      "opponent_rank": 114,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
@@ -187,7 +232,7 @@
       "opponent_team": "Wayne County",
       "opponent_team_rank": 20,
       "opponent_weight": 113,
-      "opponent_rank": 15,
+      "opponent_rank": 16,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -196,9 +241,30 @@
       "event": "vs. Wayne County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3194444444444444
-  }
+  "career": {
+    "career_id": "career_001023",
+    "canonical_name": "Jacob Durst",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Great Crossing",
+      "record": "4-9",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Great Crossing",
+      "record": "15-14",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

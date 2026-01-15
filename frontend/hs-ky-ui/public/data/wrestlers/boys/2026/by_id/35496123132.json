@@ -3,23 +3,23 @@
   "name": "Aidan Warren",
   "team": "Bell County",
   "team_slug": "bell_county",
-  "team_rank": 56,
+  "team_rank": 61,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 63,
+  "current_rank": 67,
   "record": {
     "overall": "7-4",
     "vs_ranked": "4-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 105.5,
+    "df_plus": 102.0,
+    "apr_plus": 106.1,
     "pin_rate": 0.857,
     "bonus_rate": 0.857,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35454703132",
-      "opponent_rank": 66,
+      "opponent_rank": 71,
       "opponent_name": "Robert Singhoffer",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "34995975132",
-      "opponent_rank": 58,
+      "opponent_rank": 61,
       "opponent_name": "Johnathan Tapp",
       "method": "Fall 3:23"
     }
@@ -52,7 +52,7 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 285,
-      "opponent_rank": 30,
+      "opponent_rank": 39,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -67,7 +67,7 @@
       "opponent_team": "Southwestern",
       "opponent_team_rank": 128,
       "opponent_weight": 285,
-      "opponent_rank": 66,
+      "opponent_rank": 71,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -95,9 +95,9 @@
       "opponent_id": "35688837132",
       "opponent_name": "Lorenzo McGinty",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 108,
       "opponent_weight": 285,
-      "opponent_rank": 145,
+      "opponent_rank": 154,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "35903996132",
       "opponent_name": "Tucker Sharp",
       "opponent_team": "Knox Central",
-      "opponent_team_rank": 95,
+      "opponent_team_rank": 98,
       "opponent_weight": 285,
-      "opponent_rank": 83,
+      "opponent_rank": 86,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -140,9 +140,9 @@
       "opponent_id": "35281172132",
       "opponent_name": "Fernando Cruz",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": 57,
+      "opponent_rank": 24,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35916786132",
       "opponent_name": "Steven Vipperman",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 285,
-      "opponent_rank": 141,
+      "opponent_rank": 140,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -170,9 +170,9 @@
       "opponent_id": "34995975132",
       "opponent_name": "Johnathan Tapp",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 285,
-      "opponent_rank": 58,
+      "opponent_rank": 61,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -211,9 +211,30 @@
       "event": "Anchor Down Showdown"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_003924",
+    "canonical_name": "Aidan Warren",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Bell County",
+      "record": "7-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Bell County",
+      "record": "4-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

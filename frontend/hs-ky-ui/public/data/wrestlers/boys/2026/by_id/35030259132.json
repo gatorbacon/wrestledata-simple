@@ -3,12 +3,12 @@
   "name": "Tristan Langford",
   "team": "Pulaski County",
   "team_slug": "pulaski_county",
-  "team_rank": 118,
+  "team_rank": 120,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 89,
+  "current_rank": 78,
   "record": {
-    "overall": "4-2",
+    "overall": "5-2",
     "vs_ranked": "4-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,11 +17,11 @@
     "pf7": 7.0,
     "pa7": 12.0,
     "pd7": -5.0,
-    "si_plus": 98.9,
-    "df_plus": 101.5,
-    "apr_plus": 110.5,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "si_plus": 99.6,
+    "df_plus": 101.8,
+    "apr_plus": 111.8,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
     "pins": 4
@@ -33,49 +33,62 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35013066132",
-      "opponent_rank": 90,
+      "opponent_rank": 79,
       "opponent_name": "Liam Couch",
       "method": "Fall 1:30"
     },
     "worst_loss": {
       "opponent_id": "35013064132",
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "opponent_name": "Blaze Cook",
       "method": "Fall 2:46"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Knox Central"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "34993874132",
       "opponent_name": "Brendan Martin",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 87,
       "opponent_weight": 150,
-      "opponent_rank": 171,
+      "opponent_rank": 179,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "Maroon`s New Year Brawl",
-      "mv_impact": 2.97
+      "event": "Maroon`s New Year Brawl"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35445106132",
       "opponent_name": "Gavin Kozak",
       "opponent_team": "Somerset",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 31,
       "opponent_weight": 150,
-      "opponent_rank": 112,
+      "opponent_rank": 119,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:37",
-      "event": "Maroon`s New Year Brawl",
-      "mv_impact": 2.62
+      "event": "Maroon`s New Year Brawl"
     },
     {
       "date": "2026-01-03",
@@ -84,67 +97,84 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
       "opponent_weight": 150,
-      "opponent_rank": 111,
+      "opponent_rank": 118,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "Maroon`s New Year Brawl",
-      "mv_impact": 3.35
+      "event": "Maroon`s New Year Brawl"
     },
     {
       "date": "2025-12-02",
       "opponent_id": "34997601132",
       "opponent_name": "Trent Jenkins",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 150,
-      "opponent_rank": 34,
+      "opponent_rank": 35,
       "weight_class": "150",
       "result": "L",
       "method": "DEC",
       "score": "12-7",
       "duration": "7:00",
-      "event": "vs. Pulaski County",
-      "mv_impact": -2.6
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2025-12-02",
       "opponent_id": "35013064132",
       "opponent_name": "Blaze Cook",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 157,
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:46",
-      "event": "vs. Pulaski County",
-      "mv_impact": -5.02
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35013066132",
       "opponent_name": "Liam Couch",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 150,
-      "opponent_rank": 90,
+      "opponent_rank": 79,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "Cougar Classic",
-      "mv_impact": 3.59
+      "event": "Cougar Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  "career": {
+    "career_id": "career_002236",
+    "canonical_name": "Triston Langford",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Pulaski County",
+      "record": "5-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Pulaski County",
+      "record": "4-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

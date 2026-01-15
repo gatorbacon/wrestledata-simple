@@ -3,37 +3,37 @@
   "name": "Andrew Crace",
   "team": "North Oldham",
   "team_slug": "north_oldham",
-  "team_rank": 37,
+  "team_rank": 28,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 14,
+  "current_rank": 22,
   "record": {
-    "overall": "3-2",
-    "vs_ranked": "3-0",
+    "overall": "4-2",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 121.0,
+    "df_plus": 102.0,
+    "apr_plus": 120.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35081208132",
-      "opponent_rank": 15,
+      "opponent_rank": 39,
       "opponent_name": "Frank Niyonyishu",
       "method": "Fall 3:38"
     },
@@ -41,13 +41,28 @@
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35135148132",
+      "opponent_name": "johnny Tran",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 23,
+      "opponent_weight": 190,
+      "opponent_rank": 55,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:46",
+      "event": "vs. North Oldham"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35135148132",
       "opponent_name": "johnny Tran",
       "opponent_team": "Fairdale",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 190,
-      "opponent_rank": 52,
+      "opponent_rank": 55,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -60,9 +75,9 @@
       "opponent_id": "35081208132",
       "opponent_name": "Frank Niyonyishu",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
-      "opponent_weight": 190,
-      "opponent_rank": 15,
+      "opponent_team_rank": 34,
+      "opponent_weight": 175,
+      "opponent_rank": 39,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -75,9 +90,9 @@
       "opponent_id": "35225264132",
       "opponent_name": "Kylen Sturgeon",
       "opponent_team": "Scott",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 124,
       "opponent_weight": 190,
-      "opponent_rank": 37,
+      "opponent_rank": 40,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -90,7 +105,7 @@
       "opponent_id": "OUTSTATE_c66ea588cf5a",
       "opponent_name": "CARSON HERBST",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 17,
       "opponent_weight": 190,
       "opponent_rank": null,
       "weight_class": "190",
@@ -105,7 +120,7 @@
       "opponent_id": "OUTSTATE_1b2a7d13e43c",
       "opponent_name": "Garrison Messer",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 190,
       "opponent_rank": null,
       "weight_class": "190",
@@ -116,9 +131,39 @@
       "event": "Warhawk Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.3703703703703705
-  }
+  "career": {
+    "career_id": "career_001942",
+    "canonical_name": "Andrew Crace",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "North Oldham",
+      "record": "4-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "North Oldham",
+      "record": "41-18",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "North Oldham",
+      "record": "15-20",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -8,46 +8,61 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 94.5,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "df_plus": 102.0,
+    "apr_plus": 108.9,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34989047132",
-      "opponent_rank": 186,
-      "opponent_name": "Jordynn Davis",
-      "method": "Dec 7-4"
+      "opponent_id": "35035260132",
+      "opponent_rank": 18,
+      "opponent_name": "Chris Grissom",
+      "method": "Fall 2:49"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35035260132",
+      "opponent_name": "Chris Grissom",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 138,
+      "opponent_rank": 18,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:49",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "34989047132",
       "opponent_name": "Jordynn Davis",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 29,
       "opponent_weight": 138,
-      "opponent_rank": 186,
+      "opponent_rank": 179,
       "weight_class": "138",
       "result": "W",
       "method": "DEC",
@@ -55,10 +70,5 @@
       "duration": "7:00",
       "event": "Blackhorse Invitational"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  ]
 }

@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "34987621132",
+  "name": "Callie Harris",
+  "team": "Heritage High School",
+  "team_slug": "heritage_high_school",
+  "team_rank": null,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 95.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35520299132",
+      "opponent_rank": 4,
+      "opponent_name": "Kayla Maslonka",
+      "method": "MD 12-2"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35520299132",
+      "opponent_name": "Kayla Maslonka",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 126,
+      "opponent_rank": 4,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "Rossview Lady Hawks Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 1.0,
+    "top33_bonus_ev_shrunk": 1.4615384615384615
+  }
+}

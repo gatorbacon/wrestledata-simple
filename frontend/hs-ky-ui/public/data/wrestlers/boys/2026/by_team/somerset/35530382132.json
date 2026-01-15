@@ -3,13 +3,13 @@
   "name": "Gabe Dungan",
   "team": "Somerset",
   "team_slug": "somerset",
-  "team_rank": 32,
+  "team_rank": 31,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 145,
+  "current_rank": 141,
   "record": {
-    "overall": "1-7",
-    "vs_ranked": "1-7",
+    "overall": "1-9",
+    "vs_ranked": "1-8",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 25.0,
     "pd7": -25.0,
-    "si_plus": 85.9,
-    "df_plus": 80.8,
-    "apr_plus": 88.5,
+    "si_plus": 84.9,
+    "df_plus": 79.9,
+    "apr_plus": 87.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,7 +28,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 7,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -38,19 +38,49 @@
       "method": "Fall 0:54"
     },
     "worst_loss": {
-      "opponent_id": "34993874132",
-      "opponent_rank": 171,
-      "opponent_name": "Brendan Martin",
-      "method": "Fall 2:19"
+      "opponent_id": "35638360132",
+      "opponent_rank": 213,
+      "opponent_name": "Gael Stearns",
+      "method": "Fall 2:51"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35638360132",
+      "opponent_name": "Gael Stearns",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 19,
+      "opponent_weight": 165,
+      "opponent_rank": 213,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:51",
+      "event": "Maroon`s New Year Brawl"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35410586132",
+      "opponent_name": "Krystian Miguel",
+      "opponent_team": "Greenbrier High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "Maroon`s New Year Brawl"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "34997603132",
       "opponent_name": "Jackson Jones",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 157,
       "opponent_rank": 96,
       "weight_class": "165",
@@ -58,120 +88,129 @@
       "method": "FALL",
       "score": null,
       "duration": "1:51",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": -7.83
+      "event": "5th Annual Cardinal Clash"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34993874132",
       "opponent_name": "Brendan Martin",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 87,
       "opponent_weight": 150,
-      "opponent_rank": 171,
+      "opponent_rank": 179,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:19",
-      "event": "vs. Somerset",
-      "mv_impact": -9.03
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35139495132",
-      "opponent_name": "Owen Brewer",
-      "opponent_team": "Bethlehem",
-      "opponent_team_rank": 57,
-      "opponent_weight": 175,
-      "opponent_rank": 204,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:54",
-      "event": "vs. Somerset",
-      "mv_impact": 0.3
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35441085132",
-      "opponent_name": "Samuelu Hazelwood",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
-      "opponent_weight": 165,
-      "opponent_rank": 5,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:29",
-      "event": "vs. Somerset",
-      "mv_impact": -1.61
+      "event": "vs. Somerset"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35458157132",
       "opponent_name": "Carter Riley",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 86,
-      "opponent_weight": 165,
-      "opponent_rank": 124,
+      "opponent_team_rank": 91,
+      "opponent_weight": 157,
+      "opponent_rank": 113,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "3:15",
-      "event": "vs. Somerset",
-      "mv_impact": -7.94
+      "event": "vs. Somerset"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35192311132",
       "opponent_name": "Jackson Baker",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
-      "opponent_weight": 165,
-      "opponent_rank": 138,
+      "opponent_team_rank": 102,
+      "opponent_weight": 157,
+      "opponent_rank": 173,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:26",
-      "event": "vs. Somerset",
-      "mv_impact": -10.18
+      "event": "vs. Somerset"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35139495132",
+      "opponent_name": "Owen Brewer",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 62,
+      "opponent_weight": 165,
+      "opponent_rank": 204,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:54",
+      "event": "vs. Somerset"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35441085132",
+      "opponent_name": "Samuelu Hazelwood",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 11,
+      "opponent_weight": 165,
+      "opponent_rank": 4,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "vs. Somerset"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35048597132",
       "opponent_name": "Noah Warner",
       "opponent_team": "Bourbon County",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 63,
       "opponent_weight": 165,
-      "opponent_rank": 40,
+      "opponent_rank": 41,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -4.72
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35653131132",
       "opponent_name": "Rylan Bradley",
       "opponent_team": "Somerset",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 31,
       "opponent_weight": 165,
-      "opponent_rank": 112,
+      "opponent_rank": 113,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -7.81
+      "event": "Joe Cochran State Farm HCIWT"
+    }
+  ],
+  "career": {
+    "career_id": "career_005683",
+    "canonical_name": "Gabe Dungan",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Somerset",
+      "record": "1-9",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

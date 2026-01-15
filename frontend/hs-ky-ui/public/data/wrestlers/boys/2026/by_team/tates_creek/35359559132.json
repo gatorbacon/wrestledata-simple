@@ -10,16 +10,16 @@
   "record": {
     "overall": "2-6",
     "vs_ranked": "1-6",
-    "vs_top10": "0-1",
+    "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.0,
     "pa7": 17.0,
     "pd7": -15.0,
-    "si_plus": 93.2,
-    "df_plus": 87.3,
-    "apr_plus": 90.2,
+    "si_plus": 89.7,
+    "df_plus": 94.0,
+    "apr_plus": 90.4,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -30,17 +30,17 @@
     "ranked_wins": 1,
     "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35390420132",
-      "opponent_rank": 111,
+      "opponent_rank": 106,
       "opponent_name": "Ethan Killion",
       "method": "Fall 1:56"
     },
     "worst_loss": {
-      "opponent_id": "35082281132",
-      "opponent_rank": 142,
-      "opponent_name": "Deegan Brown",
+      "opponent_id": "35460240132",
+      "opponent_rank": 126,
+      "opponent_name": "Ewan Pituch",
       "method": "Fall 0:00"
     }
   },
@@ -50,9 +50,9 @@
       "opponent_id": "35221012132",
       "opponent_name": "Jonathan Cocchi",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": 40,
+      "opponent_rank": 52,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35390420132",
       "opponent_name": "Ethan Killion",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": 111,
+      "opponent_rank": 106,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -95,39 +95,9 @@
       "opponent_id": "35082281132",
       "opponent_name": "Deegan Brown",
       "opponent_team": "Bethlehem",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 62,
       "opponent_weight": 150,
-      "opponent_rank": 142,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35460240132",
-      "opponent_name": "Ewan Pituch",
-      "opponent_team": "Rowan County",
-      "opponent_team_rank": 119,
-      "opponent_weight": 150,
-      "opponent_rank": 118,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35180862132",
-      "opponent_name": "Julian Hernandez",
-      "opponent_team": "Danville",
-      "opponent_team_rank": 67,
-      "opponent_weight": 157,
-      "opponent_rank": 94,
+      "opponent_rank": 121,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -140,13 +110,43 @@
       "opponent_id": "35237535132",
       "opponent_name": "Miles Smith",
       "opponent_team": "East Jessamine",
-      "opponent_team_rank": 24,
-      "opponent_weight": 157,
-      "opponent_rank": 8,
+      "opponent_team_rank": 77,
+      "opponent_weight": 150,
+      "opponent_rank": 22,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "17-2",
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35460240132",
+      "opponent_name": "Ewan Pituch",
+      "opponent_team": "Rowan County",
+      "opponent_team_rank": 121,
+      "opponent_weight": 150,
+      "opponent_rank": 126,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35180862132",
+      "opponent_name": "Julian Hernandez",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 70,
+      "opponent_weight": 157,
+      "opponent_rank": 94,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek"
     },
@@ -164,6 +164,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Moore"
+    }
+  ],
+  "career": {
+    "career_id": "career_005713",
+    "canonical_name": "Mmenenwa Mushingelwa",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Tates Creek",
+      "record": "2-6",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

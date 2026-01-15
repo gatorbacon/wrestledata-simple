@@ -3,23 +3,23 @@
   "name": "Kaleb Gwinn",
   "team": "Johnson Central",
   "team_slug": "johnson_central",
-  "team_rank": 12,
+  "team_rank": 2,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 192,
+  "current_rank": 178,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "0-5",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 4.38,
+    "pf7": 2.19,
     "pa7": 25.0,
-    "pd7": -20.62,
-    "si_plus": 92.7,
-    "df_plus": 80.8,
-    "apr_plus": 91.0,
+    "pd7": -22.81,
+    "si_plus": 88.5,
+    "df_plus": 79.9,
+    "apr_plus": 87.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,33 +28,62 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35420581132",
-      "opponent_rank": 57,
-      "opponent_name": "Colton Richardson",
-      "method": "Fall 1:01"
+      "opponent_id": "37432425132",
+      "opponent_rank": 191,
+      "opponent_name": "Knox Woodman",
+      "method": "TF 15-0 3:32"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "37432425132",
+      "opponent_name": "Knox Woodman",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 132,
+      "opponent_rank": 191,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:32",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35513062132",
+      "opponent_name": "Jayden Tilley",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 60,
+      "opponent_weight": 132,
+      "opponent_rank": 114,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "Clipson Jones Classic 2026"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35459310132",
       "opponent_name": "Evan Gregory",
       "opponent_team": "Rowan County",
-      "opponent_team_rank": 119,
+      "opponent_team_rank": 121,
       "opponent_weight": 132,
-      "opponent_rank": 53,
+      "opponent_rank": 49,
       "weight_class": "132",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "1:36",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -4.83
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -63,19 +92,45 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 132,
-      "opponent_rank": 57,
+      "opponent_rank": 53,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:01",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -5.58
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35751543132",
+      "opponent_name": "Lakota Lemaster",
+      "opponent_team": "Ravenswood",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "18-0",
+      "duration": "0:00",
+      "event": "Fallen Heroes"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_005480",
+    "canonical_name": "Kaleb Gwinn",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Johnson Central",
+      "record": "0-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

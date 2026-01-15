@@ -10,7 +10,7 @@
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -30,11 +30,11 @@
     "ranked_wins": 0,
     "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35565689132",
-      "opponent_rank": 30,
+      "opponent_rank": 35,
       "opponent_name": "Ignatius Wright",
       "method": "Dec 6-5"
     }
@@ -45,9 +45,9 @@
       "opponent_id": "35144517132",
       "opponent_name": "Jamarion Sanders",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 106,
-      "opponent_rank": 11,
+      "opponent_rank": 9,
       "weight_class": "106",
       "result": "L",
       "method": "TF",
@@ -60,9 +60,9 @@
       "opponent_id": "35565689132",
       "opponent_name": "Ignatius Wright",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 106,
-      "opponent_rank": 30,
+      "opponent_rank": 35,
       "weight_class": "106",
       "result": "L",
       "method": "DEC",
@@ -70,10 +70,5 @@
       "duration": "7:00",
       "event": "2025 Ryle Raider Rumble"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9924242424242423
-  }
+  ]
 }

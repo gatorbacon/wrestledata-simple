@@ -3,12 +3,12 @@
   "name": "Cagan Hurley",
   "team": "Pikeville",
   "team_slug": "pikeville",
-  "team_rank": 114,
+  "team_rank": 116,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 314,
+  "current_rank": 213,
   "record": {
-    "overall": "0-0",
+    "overall": "0-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 82.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,5 +34,36 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35002862132",
+      "opponent_name": "Kaleb Stacy",
+      "opponent_team": "Union",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:34",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36642569132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:27",
+      "event": "Clipson Jones Classic 2026"
+    }
+  ]
 }

@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "34974656132",
+  "name": "Honesty Benson",
+  "team": "Shelbyville Central High School",
+  "team_slug": "shelbyville_central_high_school",
+  "team_rank": null,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 101.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35424935132",
+      "opponent_rank": 81,
+      "opponent_name": "Michaela Harmon",
+      "method": "Fall 0:30"
+    },
+    "worst_loss": {
+      "opponent_id": "35424932132",
+      "opponent_rank": 11,
+      "opponent_name": "Masoka (Ashley) Kilozo",
+      "method": "Fall 0:38"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35424932132",
+      "opponent_name": "Masoka (Ashley) Kilozo",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 11,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:38",
+      "event": "Red Hawk Rampage 2026 GIRLS"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35424935132",
+      "opponent_name": "Michaela Harmon",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 81,
+      "weight_class": "138-JV",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Rossview Lady Hawks Invitational"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.8452380952380951
+  }
+}

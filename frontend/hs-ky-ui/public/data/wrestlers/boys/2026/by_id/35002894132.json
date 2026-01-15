@@ -3,7 +3,7 @@
   "name": "Jael Obando",
   "team": "Fort Campbell",
   "team_slug": "fort_campbell",
-  "team_rank": 76,
+  "team_rank": 82,
   "weight_class": 157,
   "year": 2026,
   "current_rank": 104,
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 103.6,
+    "df_plus": 102.0,
+    "apr_plus": 106.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35133607132",
-      "opponent_rank": 87,
+      "opponent_rank": 73,
       "opponent_name": "Kannen Deaton",
       "method": "Fall 3:45"
     },
@@ -75,16 +75,15 @@
       "opponent_id": "35133607132",
       "opponent_name": "Kannen Deaton",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 150,
-      "opponent_rank": 87,
+      "opponent_rank": 73,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:45",
-      "event": "vs. Hopkinsville",
-      "mv_impact": 4.23
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2025-12-04",
@@ -93,14 +92,13 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 130,
       "opponent_weight": 157,
-      "opponent_rank": 110,
+      "opponent_rank": 105,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:43",
-      "event": "vs. Trigg County",
-      "mv_impact": 3.56
+      "event": "vs. Trigg County"
     },
     {
       "date": "2025-12-04",
@@ -118,9 +116,39 @@
       "event": "vs. Kenwood High School"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  "career": {
+    "career_id": "career_000911",
+    "canonical_name": "Jael Obando",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Fort Campbell",
+      "record": "2-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Fort Campbell",
+      "record": "11-13",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Fort Campbell",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

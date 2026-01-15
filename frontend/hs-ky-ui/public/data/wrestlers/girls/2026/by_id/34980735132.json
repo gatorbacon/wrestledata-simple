@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "34980735132",
+  "name": "Kylee Tran",
+  "team": "UNION",
+  "team_slug": "union",
+  "team_rank": null,
+  "weight_class": 100,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "1-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 106.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 1,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35352382132",
+      "opponent_rank": 2,
+      "opponent_name": "Emma Moore",
+      "method": "Fall 1:28"
+    },
+    "worst_loss": {
+      "opponent_id": "35333617132",
+      "opponent_rank": 1,
+      "opponent_name": "Naiya Delos Santos",
+      "method": "Dec 4-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "35333617132",
+      "opponent_name": "Naiya Delos Santos",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 58,
+      "opponent_weight": 100,
+      "opponent_rank": 1,
+      "weight_class": "100",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Women of Ironman"
+    },
+    {
+      "date": "2025-12-14",
+      "opponent_id": "35352382132",
+      "opponent_name": "Emma Moore",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": 2,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "Women of Ironman"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.6666666666666667
+  }
+}

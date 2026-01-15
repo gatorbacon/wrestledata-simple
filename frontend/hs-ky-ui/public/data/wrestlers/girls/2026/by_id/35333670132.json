@@ -3,13 +3,13 @@
   "name": "Briella Levy",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 30,
-  "weight_class": 126,
+  "team_rank": 17,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 55,
+  "current_rank": 54,
   "record": {
-    "overall": "1-3",
-    "vs_ranked": "1-3",
+    "overall": "4-3",
+    "vs_ranked": "4-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,49 +17,97 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 94.1,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 99.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 4,
     "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35333562132",
-      "opponent_rank": 56,
-      "opponent_name": "Mollie O`daniel",
-      "method": "Fall 2:30"
+      "opponent_id": "35774460132",
+      "opponent_rank": 55,
+      "opponent_name": "Emma Towles",
+      "method": "Fall 1:37"
     },
     "worst_loss": {
       "opponent_id": "35542615132",
-      "opponent_rank": 62,
+      "opponent_rank": 57,
       "opponent_name": "NaRhiya Davis",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35515405132",
+      "opponent_name": "Ashlynn Brooks",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 81,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:48",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 5.45
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35774460132",
+      "opponent_name": "Emma Towles",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 36,
+      "opponent_weight": 120,
+      "opponent_rank": 55,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 5.91
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35542615132",
+      "opponent_name": "NaRhiya Davis",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 120,
+      "opponent_rank": 57,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 5.96
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35542615132",
       "opponent_name": "NaRhiya Davis",
       "opponent_team": "Central",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 18,
       "opponent_weight": 120,
-      "opponent_rank": 62,
+      "opponent_rank": 57,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -6.3
+      "mv_impact": -6.04
     },
     {
       "date": "2025-12-13",
@@ -68,21 +116,21 @@
       "opponent_team": "Doss",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 47,
+      "opponent_rank": 46,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -6.51
+      "mv_impact": -6.53
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35333562132",
       "opponent_name": "Mollie O`daniel",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 27,
       "opponent_weight": 126,
       "opponent_rank": 56,
       "weight_class": "126",
@@ -91,14 +139,14 @@
       "score": null,
       "duration": "2:30",
       "event": "beast of the east",
-      "mv_impact": 4.37
+      "mv_impact": 4.0
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35774461132",
       "opponent_name": "Maliyah Caloca",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 36,
       "opponent_weight": 126,
       "opponent_rank": 45,
       "weight_class": "126",
@@ -107,12 +155,12 @@
       "score": null,
       "duration": "5:15",
       "event": "The Beast of the East",
-      "mv_impact": -5.4
+      "mv_impact": -5.79
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3
+    "top33_bonus_ev_shrunk": 1.2916666666666667
   }
 }

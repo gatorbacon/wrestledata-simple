@@ -161,6 +161,13 @@ def parse_args() -> argparse.Namespace:
         help="State code (required when league=hs, e.g., 'KY')",
     )
     parser.add_argument(
+        "-gender",
+        type=str,
+        required=True,
+        choices=["boys", "girls", "both"],
+        help="Gender: 'boys', 'girls', or 'both' (required)",
+    )
+    parser.add_argument(
         "-data_dir",
         type=str,
         default=None,
@@ -741,6 +748,170 @@ def load_mv_data(season: int, league: str = 'ncaa', gender: str = None) -> Dict[
         return {}
 
 
+def load_careers_lookup(careers_dir: Path = Path("data/careers")) -> Dict[str, str]:
+    """
+    Load all career files and build a lookup: season_wrestler_id -> career_id.
+    
+    Returns:
+        Dictionary mapping season_wrestler_id -> career_id
+    """
+    lookup = {}
+    if not careers_dir.exists():
+        return lookup
+    
+    for career_file in careers_dir.glob("career_*.json"):
+        try:
+            with career_file.open("r", encoding="utf-8") as f:
+                career_data = json.load(f)
+                career_id = career_data.get("career_id")
+                seasons = career_data.get("seasons", {})
+                
+                if career_id and isinstance(seasons, dict):
+                    for season_wrestler_id in seasons.values():
+                        if season_wrestler_id:
+                            lookup[str(season_wrestler_id)] = career_id
+        except Exception as e:
+            print(f"Warning: Could not load career file {career_file}: {e}")
+    
+    return lookup
+
+
+def load_career(career_id: str, careers_dir: Path = Path("data/careers")) -> Optional[Dict]:
+    """
+    Load a single career JSON file.
+    
+    Returns:
+        Career dictionary or None if not found
+    """
+    career_file = careers_dir / f"{career_id}.json"
+    if not career_file.exists():
+        return None
+    
+    try:
+        with career_file.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Warning: Could not load career {career_id}: {e}")
+        return None
+
+
+def load_season_accomplishments(season: int, gender: str) -> Dict[str, Dict]:
+    """
+    Load season accomplishments for a given season and gender.
+    
+    Returns:
+        Dictionary mapping season_wrestler_id -> wrestler accomplishment data
+    """
+    file_path = Path(f"data/season_accomplishments/{gender}/{season}/season_accomplishments.json")
+    
+    if not file_path.exists():
+        return {}
+    
+    try:
+        with file_path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        
+        lookup = {}
+        for wrestler in data.get("wrestlers", []):
+            season_wrestler_id = wrestler.get("season_wrestler_id")
+            if season_wrestler_id:
+                lookup[str(season_wrestler_id)] = wrestler
+        
+        return lookup
+    except Exception as e:
+        print(f"Warning: Could not load season accomplishments for {season}/{gender}: {e}")
+        return {}
+
+
+def build_season_summary(
+    career: Dict,
+    gender: str
+) -> List[Dict]:
+    """
+    Build season_summary array from career and season accomplishments.
+    
+    Args:
+        career: Career dictionary with seasons mapping
+        gender: Gender ('boys' or 'girls')
+    
+    Returns:
+        List of season summary dictionaries, sorted descending by season
+    """
+    season_summary = []
+    seasons = career.get("seasons", {})
+    
+    if not isinstance(seasons, dict):
+        return season_summary
+    
+    # Get list of seasons and sort descending
+    season_years = []
+    for season_str in seasons.keys():
+        try:
+            season_years.append(int(season_str))
+        except ValueError:
+            continue
+    
+    season_years.sort(reverse=True)
+    
+    # Build summary for each season
+    for season_year in season_years:
+        season_str = str(season_year)
+        season_wrestler_id = seasons.get(season_str)
+        
+        if not season_wrestler_id:
+            continue
+        
+        # Load season accomplishments for this season
+        accomplishments_lookup = load_season_accomplishments(season_year, gender)
+        wrestler_data = accomplishments_lookup.get(str(season_wrestler_id))
+        
+        if not wrestler_data:
+            print(f"Warning: Season accomplishment not found for season_wrestler_id {season_wrestler_id} in season {season_year}")
+            continue
+        
+        # Extract data from accomplishments
+        record_data = wrestler_data.get("record", {})
+        wins = record_data.get("wins", 0)
+        losses = record_data.get("losses", 0)
+        record_str = f"{wins}-{losses}"
+        
+        grade = wrestler_data.get("grade")
+        # Ensure grade is integer or null
+        if grade is not None:
+            try:
+                grade = int(grade)
+            except (ValueError, TypeError):
+                grade = None
+        
+        team = wrestler_data.get("team", "")
+        regional_place = wrestler_data.get("regional_place")
+        state_place = wrestler_data.get("state_place")
+        
+        # Ensure placements are integer or null
+        if regional_place is not None:
+            try:
+                regional_place = int(regional_place)
+            except (ValueError, TypeError):
+                regional_place = None
+        
+        if state_place is not None:
+            try:
+                state_place = int(state_place)
+            except (ValueError, TypeError):
+                state_place = None
+        
+        season_summary.append({
+            "season": season_year,
+            "grade": grade,
+            "team": team,
+            "record": record_str,
+            "regional_place": regional_place,
+            "state_place": state_place,
+        })
+    
+    return season_summary
+
+
 def build_wrestler_profile(
     wrestler_id: str,
     season: int,
@@ -751,6 +922,8 @@ def build_wrestler_profile(
     matches: List[Dict],
     mv_data: Optional[Dict[str, Dict]] = None,
     match_mv_impact_lookup: Optional[Dict] = None,
+    gender: Optional[str] = None,
+    career_lookup: Optional[Dict[str, str]] = None,
 ) -> Dict:
     """Build complete wrestler profile JSON."""
     wrestler_info = all_wrestlers.get(wrestler_id, {})
@@ -856,6 +1029,33 @@ def build_wrestler_profile(
         "match_list": match_list,
     }
     
+    # Add career and season_summary if career lookup is available and gender is provided
+    if career_lookup and gender:
+        career_id = career_lookup.get(wrestler_id)
+        if career_id:
+            career = load_career(career_id)
+            if career:
+                # Build career metadata
+                seasons_dict = career.get("seasons", {})
+                season_years = []
+                for season_str in seasons_dict.keys():
+                    try:
+                        season_years.append(int(season_str))
+                    except ValueError:
+                        continue
+                season_years.sort(reverse=True)  # Descending order
+                
+                profile["career"] = {
+                    "career_id": career_id,
+                    "canonical_name": career.get("canonical_name", ""),
+                    "seasons": season_years,
+                }
+                
+                # Build season_summary
+                season_summary = build_season_summary(career, gender)
+                if season_summary:
+                    profile["season_summary"] = season_summary
+    
     return profile
 
 
@@ -874,13 +1074,17 @@ def main() -> None:
     
     # Determine data and output directories
     if league == "hs":
-        genders = ["boys", "girls"]
+        # Determine which genders to process based on argument
+        if args.gender == "both":
+            genders = ["boys", "girls"]
+        else:
+            genders = [args.gender]
         
         # Determine data directories
         if args.data_dir:
-            base_data_dir = args.data_dir
+            base_data_dir = Path(args.data_dir)
         else:
-            base_data_dir = "mt/rankings_data"
+            base_data_dir = Path("mt/rankings_data")
         
         # Determine output directory
         if args.output_dir:
@@ -888,7 +1092,7 @@ def main() -> None:
         else:
             base_output_dir = Path("frontend/hs-ky-ui/public/data/wrestlers")
         
-        # Process both genders
+        # Process specified gender(s)
         for gender in genders:
             print(f"\n{'=' * 80}")
             print(f"Processing {gender}...")
@@ -939,6 +1143,28 @@ def main() -> None:
                 print("No per-match MV impact data found (run compute_all_mat_values.py first)")
                 match_mv_impact_lookup = {}
             
+            # Load boys inactive mask (if boys) - for filtering indexes only
+            masked_wrestler_ids = set()
+            if gender == 'boys':
+                mask_file = base_data_dir / f"hs_ky_boys/{season}/boys_inactive_wrestlers.json"
+                if mask_file.exists():
+                    try:
+                        with mask_file.open("r", encoding="utf-8") as f:
+                            mask_data = json.load(f)
+                        for wrestler in mask_data.get("masked_wrestlers", []):
+                            wrestler_id = wrestler.get("boys_wrestler_id")
+                            if wrestler_id:
+                                masked_wrestler_ids.add(str(wrestler_id))
+                        if masked_wrestler_ids:
+                            print(f"Loaded mask for {len(masked_wrestler_ids)} inactive boys wrestlers (will exclude from indexes)")
+                    except Exception as e:
+                        print(f"Warning: Could not load boys inactive mask: {e}")
+            
+            # Load career lookup for embedding career data
+            print("\nLoading career lookup...")
+            career_lookup = load_careers_lookup()
+            print(f"Loaded career lookup for {len(career_lookup)} season_wrestler_ids")
+            
             # Create output directories
             season_dir = output_dir / str(season)
             by_id_dir = season_dir / "by_id"
@@ -979,6 +1205,8 @@ def main() -> None:
                     matches,
                     mv_data,
                     match_mv_impact_lookup,
+                    gender=gender,
+                    career_lookup=career_lookup,
                 )
                 
                 # Preserve existing bonus data if it exists
@@ -1005,6 +1233,11 @@ def main() -> None:
                 team_file = team_dir / f"{wrestler_id}.json"
                 with team_file.open("w", encoding="utf-8") as f:
                     json.dump(profile, f, indent=2, ensure_ascii=False)
+                
+                # Skip masked wrestlers from indexes (boys only) - but keep full profiles
+                if masked_wrestler_ids and str(wrestler_id) in masked_wrestler_ids:
+                    processed += 1
+                    continue
                 
                 # Add to indexes
                 index_wrestlers.append({
@@ -1154,6 +1387,8 @@ def main() -> None:
                 matches,
                 mv_data,
                 match_mv_impact_lookup,
+                gender=None,  # NCAA doesn't use gender-based careers
+                career_lookup=None,  # NCAA doesn't use careers
             )
             
             # Preserve existing bonus data if it exists

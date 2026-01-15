@@ -3,10 +3,10 @@
   "name": "Reego Cabrera",
   "team": "Pulaski County",
   "team_slug": "pulaski_county",
-  "team_rank": 118,
+  "team_rank": 120,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 60,
+  "current_rank": 62,
   "record": {
     "overall": "1-1",
     "vs_ranked": "1-1",
@@ -17,9 +17,9 @@
     "pf7": 1.0,
     "pa7": 9.0,
     "pd7": -8.0,
-    "si_plus": 90.1,
-    "df_plus": 110.1,
-    "apr_plus": 111.8,
+    "si_plus": 89.8,
+    "df_plus": 110.7,
+    "apr_plus": 111.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35013061132",
-      "opponent_rank": 61,
+      "opponent_rank": 70,
       "opponent_name": "Landon Baker",
       "method": "Fall 1:21"
     },
     "worst_loss": {
       "opponent_id": "34997618132",
-      "opponent_rank": 20,
+      "opponent_rank": 15,
       "opponent_name": "Titus Greiwe",
       "method": "MD 9-1"
     }
@@ -47,35 +47,61 @@
   "match_list": [
     {
       "date": "2025-11-29",
-      "opponent_id": "34997618132",
-      "opponent_name": "Titus Greiwe",
-      "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
-      "opponent_weight": 144,
-      "opponent_rank": 20,
-      "weight_class": "144",
-      "result": "L",
-      "method": "MD",
-      "score": "9-1",
-      "duration": "7:00",
-      "event": "Cougar Classic",
-      "mv_impact": -0.79
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "35013061132",
       "opponent_name": "Landon Baker",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
-      "opponent_weight": 144,
-      "opponent_rank": 61,
+      "opponent_team_rank": 115,
+      "opponent_weight": 138,
+      "opponent_rank": 70,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:21",
       "event": "Cougar Classic",
-      "mv_impact": 5.92
+      "mv_impact": 6.2
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34997618132",
+      "opponent_name": "Titus Greiwe",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 69,
+      "opponent_weight": 144,
+      "opponent_rank": 15,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Cougar Classic",
+      "mv_impact": -0.26
+    }
+  ],
+  "career": {
+    "career_id": "career_002232",
+    "canonical_name": "Reego Cabrera",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Pulaski County",
+      "record": "1-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Pulaski County",
+      "record": "9-12",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

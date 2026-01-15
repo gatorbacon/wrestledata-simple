@@ -3,13 +3,13 @@
   "name": "Neal Wright",
   "team": "Bullitt Central",
   "team_slug": "bullitt_central",
-  "team_rank": 60,
+  "team_rank": 64,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 10,
+  "current_rank": 11,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "2-0",
+    "overall": "4-0",
+    "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "2-0"
   },
@@ -17,23 +17,23 @@
     "pf7": 12.0,
     "pa7": 1.0,
     "pd7": 11.0,
-    "si_plus": 108.6,
-    "df_plus": 110.3,
-    "apr_plus": 111.9,
+    "si_plus": 109.1,
+    "df_plus": 111.6,
+    "apr_plus": 113.2,
     "pin_rate": 0.5,
-    "bonus_rate": 1.0,
+    "bonus_rate": 0.75,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35280257132",
-      "opponent_rank": 11,
+      "opponent_rank": 19,
       "opponent_name": "Anthony Gabriel",
       "method": "Fall 0:00"
     },
@@ -41,36 +41,99 @@
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "34989974132",
+      "opponent_name": "DonJai Karnickey",
+      "opponent_team": "Western",
+      "opponent_team_rank": 40,
+      "opponent_weight": 215,
+      "opponent_rank": 130,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "vs. Western"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35280257132",
       "opponent_name": "Anthony Gabriel",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 43,
       "opponent_weight": 215,
-      "opponent_rank": 11,
+      "opponent_rank": 19,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Christian County",
-      "mv_impact": 8.65
+      "event": "vs. Christian County"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35144518132",
       "opponent_name": "Jace Detre",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 215,
-      "opponent_rank": 13,
+      "opponent_rank": 20,
       "weight_class": "215",
       "result": "W",
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "vs. LaRue County",
-      "mv_impact": 6.26
+      "event": "vs. LaRue County"
+    }
+  ],
+  "career": {
+    "career_id": "career_000330",
+    "canonical_name": "Neal Wright",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Bullitt Central",
+      "record": "5-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Bullitt Central",
+      "record": "12-6",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Bullitt Central",
+      "record": "31-6",
+      "regional_place": 4,
+      "state_place": null
     }
   ]
 }

@@ -6,20 +6,20 @@
   "team_rank": 10,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 18,
+  "current_rank": 21,
   "record": {
     "overall": "5-4",
     "vs_ranked": "2-2",
-    "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 15.0,
     "pa7": 9.0,
     "pd7": 6.0,
-    "si_plus": 109.3,
+    "si_plus": 109.8,
     "df_plus": 103.3,
-    "apr_plus": 98.8,
+    "apr_plus": 100.0,
     "pin_rate": 0.4,
     "bonus_rate": 0.4,
     "majors": 0,
@@ -30,29 +30,44 @@
     "ranked_wins": 2,
     "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35398401132",
-      "opponent_rank": 31,
+      "opponent_rank": 34,
       "opponent_name": "Remi Rodriguez",
       "method": "Fall 1:14"
     },
     "worst_loss": {
-      "opponent_id": "34993548132",
-      "opponent_rank": 37,
-      "opponent_name": "Trenton Bratcher",
-      "method": "Fall 0:52"
+      "opponent_id": "35528546132",
+      "opponent_rank": 12,
+      "opponent_name": "Braylon Ryan",
+      "method": "Fall 1:12"
     }
   },
   "match_list": [
     {
       "date": "2025-12-13",
+      "opponent_id": "34993548132",
+      "opponent_name": "Trenton Bratcher",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 106,
+      "opponent_rank": 8,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:52",
+      "event": "2025 Ryle Raider Rumble"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35563010132",
       "opponent_name": "Moksh Patel",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 113,
-      "opponent_rank": 109,
+      "opponent_rank": 114,
       "weight_class": "113",
       "result": "W",
       "method": "DEC",
@@ -67,7 +82,7 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": 133,
       "opponent_weight": 113,
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -80,29 +95,14 @@
       "opponent_id": "35398401132",
       "opponent_name": "Remi Rodriguez",
       "opponent_team": "Highlands",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 4,
       "opponent_weight": 113,
-      "opponent_rank": 31,
+      "opponent_rank": 34,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "2025 Ryle Raider Rumble"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "34993548132",
-      "opponent_name": "Trenton Bratcher",
-      "opponent_team": "Moore",
-      "opponent_team_rank": 46,
-      "opponent_weight": 106,
-      "opponent_rank": 37,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:52",
       "event": "2025 Ryle Raider Rumble"
     },
     {
@@ -179,6 +179,23 @@
       "score": null,
       "duration": "1:03",
       "event": "vs. Archbishop Alter High School"
+    }
+  ],
+  "career": {
+    "career_id": "career_004954",
+    "canonical_name": "Mikey Hatfield",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Conner",
+      "record": "6-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

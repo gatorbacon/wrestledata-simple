@@ -3,12 +3,12 @@
   "name": "William Hernandez-Rodriguez",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 61,
+  "team_rank": 65,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 156,
+  "current_rank": 165,
   "record": {
-    "overall": "0-1",
+    "overall": "0-2",
     "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 83.5,
+    "df_plus": 102.0,
+    "apr_plus": 83.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,32 +34,58 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35040585132",
-      "opponent_rank": 128,
+      "opponent_rank": 136,
       "opponent_name": "David Brown",
       "method": "Fall 1:20"
     }
   },
   "match_list": [
     {
+      "date": "2025-11-29",
+      "opponent_id": "OUTSTATE_0df06f15c4a9",
+      "opponent_name": "Landen Cundiff",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 111,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Screamin` Eagles Classic"
+    },
+    {
       "date": "2025-11-25",
       "opponent_id": "35040585132",
       "opponent_name": "David Brown",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": 128,
+      "opponent_rank": 136,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Butler",
-      "mv_impact": -9.52
+      "event": "vs. Male"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_005258",
+    "canonical_name": "William Hernandez-Rodriguez",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Butler",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

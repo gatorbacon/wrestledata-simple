@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35360677132",
+  "name": "Nayelil Longfellow",
+  "team": "Rossview High School Girls",
+  "team_slug": "rossview_high_school_girls",
+  "team_rank": null,
+  "weight_class": 138,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 109.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35345899132",
+      "opponent_rank": 31,
+      "opponent_name": "Westinn Overbey",
+      "method": "Fall 0:33"
+    },
+    "worst_loss": {
+      "opponent_id": "35333321132",
+      "opponent_rank": 1,
+      "opponent_name": "Talynn Clark",
+      "method": "TF 21-4 4:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-26",
+      "opponent_id": "35333321132",
+      "opponent_name": "Talynn Clark",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 1,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "21-4",
+      "duration": "4:00",
+      "event": "vs. Rossview High School Girls"
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "35345899132",
+      "opponent_name": "Westinn Overbey",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 132,
+      "opponent_rank": 31,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "vs. Rossview High School Girls"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.8452380952380951
+  }
+}

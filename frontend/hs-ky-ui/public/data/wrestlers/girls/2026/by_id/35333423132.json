@@ -3,13 +3,13 @@
   "name": "Zoe Helms",
   "team": "Ashland Blazer",
   "team_slug": "ashland_blazer",
-  "team_rank": 23,
+  "team_rank": 24,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 26,
+  "current_rank": 24,
   "record": {
-    "overall": "5-1",
-    "vs_ranked": "5-1",
+    "overall": "8-1",
+    "vs_ranked": "6-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -17,97 +17,138 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 111.4,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 112.0,
+    "pin_rate": 0.875,
+    "bonus_rate": 0.875,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 7
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 6,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35850790132",
-      "opponent_rank": 27,
+      "opponent_rank": 26,
       "opponent_name": "Hailey Diamond",
       "method": "Fall 1:06"
     },
     "worst_loss": {
       "opponent_id": "35333414132",
-      "opponent_rank": 8,
+      "opponent_rank": 6,
       "opponent_name": "Katie Smith",
       "method": "Fall 0:17"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-06",
+      "opponent_id": "OUTSTATE_a309b9ae8d09",
+      "opponent_name": "K Mayenshein",
+      "opponent_team": "Chesapeake High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:52",
+      "event": "vs. Chesapeake High School"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. East Carter"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35897664132",
+      "opponent_name": "Tylynn Gilliam",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 126,
+      "opponent_rank": 87,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "vs. Boyd County"
+    },
+    {
       "date": "2025-12-30",
       "opponent_id": "35635824132",
       "opponent_name": "Violet Brown",
       "opponent_team": "Greenup County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 59,
+      "opponent_rank": 58,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "Girls Hatfield McCoy 32 2025",
-      "mv_impact": 5.08
+      "event": "Girls Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35850790132",
       "opponent_name": "Hailey Diamond",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 29,
       "opponent_weight": 126,
-      "opponent_rank": 27,
+      "opponent_rank": 26,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:20",
-      "event": "Girls Hatfield McCoy 32 2025",
-      "mv_impact": 7.19
+      "event": "Girls Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35333414132",
       "opponent_name": "Katie Smith",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 50,
       "opponent_weight": 126,
-      "opponent_rank": 8,
+      "opponent_rank": 6,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:17",
-      "event": "Girls Hatfield McCoy 32 2025",
-      "mv_impact": -1.49
+      "event": "Girls Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35333434132",
       "opponent_name": "Hayden Meeks",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 24,
       "opponent_weight": 120,
-      "opponent_rank": 77,
+      "opponent_rank": 46,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": 5.22
+      "event": "Ashland Invitational Ladies Tournament"
     },
     {
       "date": "2025-12-13",
@@ -116,35 +157,33 @@
       "opponent_team": "Greenup County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 59,
+      "opponent_rank": 58,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:32",
-      "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": 5.08
+      "event": "Ashland Invitational Ladies Tournament"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35850790132",
       "opponent_name": "Hailey Diamond",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 29,
       "opponent_weight": 126,
-      "opponent_rank": 27,
+      "opponent_rank": 26,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:06",
-      "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": 7.19
+      "event": "Ashland Invitational Ladies Tournament"
     }
   ],
   "bonus": {
     "top33_wins": 2,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.8051282051282052
+    "top33_bonus_ev_shrunk": 1.8
   }
 }

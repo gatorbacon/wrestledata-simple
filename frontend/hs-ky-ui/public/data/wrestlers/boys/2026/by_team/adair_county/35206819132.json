@@ -3,63 +3,152 @@
   "name": "Tripp Stotts",
   "team": "Adair County",
   "team_slug": "adair_county",
-  "team_rank": 50,
-  "weight_class": 132,
+  "team_rank": 56,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 26,
+  "current_rank": 51,
   "record": {
-    "overall": "6-1",
-    "vs_ranked": "6-1",
+    "overall": "9-4",
+    "vs_ranked": "8-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 25.0,
-    "pa7": 12.73,
-    "pd7": 12.27,
-    "si_plus": 125.0,
-    "df_plus": 98.0,
-    "apr_plus": 108.3,
-    "pin_rate": 0.833,
-    "bonus_rate": 1.0,
+    "pf7": 20.5,
+    "pa7": 10.86,
+    "pd7": 9.64,
+    "si_plus": 116.6,
+    "df_plus": 100.8,
+    "apr_plus": 101.7,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.778,
     "majors": 0,
     "techs": 1,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 1,
+    "ranked_wins": 8,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35637972132",
-      "opponent_rank": 28,
+      "opponent_rank": 46,
       "opponent_name": "Drake Wright",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35383668132",
-      "opponent_rank": 21,
-      "opponent_name": "Isrell Roberts",
-      "method": "Fall 1:54"
+      "opponent_id": "35226436132",
+      "opponent_rank": 33,
+      "opponent_name": "Elliot Logsdon",
+      "method": "Fall 1:53"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35144516132",
+      "opponent_name": "Liam Ditto",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 49,
+      "opponent_weight": 120,
+      "opponent_rank": 17,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:58",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35181056132",
+      "opponent_name": "Cruz White",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 70,
+      "opponent_weight": 120,
+      "opponent_rank": 178,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "16-9",
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34995408132",
+      "opponent_name": "Preston Grigsby",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 35,
+      "opponent_weight": 120,
+      "opponent_rank": 54,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:14",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35226436132",
+      "opponent_name": "Elliot Logsdon",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 120,
+      "opponent_rank": 33,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:53",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34993883132",
+      "opponent_name": "Prestyn Walls",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 120,
+      "opponent_rank": 20,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Green County"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Russell County"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35703098132",
       "opponent_name": "Tyler Arnett",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 132,
-      "opponent_rank": 67,
+      "opponent_rank": 59,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:19",
-      "event": "vs. Pulaski County",
-      "mv_impact": 4.95
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2025-12-20",
@@ -67,22 +156,36 @@
       "opponent_name": "Colton Norris",
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
-      "opponent_weight": 132,
-      "opponent_rank": 50,
+      "opponent_weight": 126,
+      "opponent_rank": 179,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Russell County",
-      "mv_impact": 5.99
+      "event": "vs. Russell County"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35383668132",
+      "opponent_name": "Isrell Roberts",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 37,
+      "opponent_weight": 138,
+      "opponent_rank": 24,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:54",
+      "event": "vs. Owensboro"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35523573132",
       "opponent_name": "Tre Miller",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 126,
       "opponent_rank": 116,
       "weight_class": "132",
@@ -90,56 +193,37 @@
       "method": "FALL",
       "score": null,
       "duration": "1:17",
-      "event": "vs. Danville",
-      "mv_impact": 2.32
+      "event": "vs. Danville"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35223094132",
       "opponent_name": "William Skaggs",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 86,
+      "opponent_team_rank": 91,
       "opponent_weight": 132,
-      "opponent_rank": 110,
+      "opponent_rank": 109,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:44",
-      "event": "vs. Hart County",
-      "mv_impact": 2.74
+      "event": "vs. Hart County"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35024627132",
       "opponent_name": "Aziz Ali",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 132,
-      "opponent_rank": 107,
+      "opponent_rank": 106,
       "weight_class": "132",
       "result": "W",
       "method": "TF",
       "score": "20-4",
       "duration": "2:12",
-      "event": "vs. South Warren",
-      "mv_impact": 2.33
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35383668132",
-      "opponent_name": "Isrell Roberts",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
-      "opponent_weight": 138,
-      "opponent_rank": 21,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:54",
-      "event": "vs. Owensboro",
-      "mv_impact": -3.29
+      "event": "vs. South Warren"
     },
     {
       "date": "2025-12-09",
@@ -148,14 +232,30 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": 19,
       "opponent_weight": 132,
-      "opponent_rank": 28,
+      "opponent_rank": 46,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Russell County",
-      "mv_impact": 7.18
+      "event": "vs. Russell County"
+    }
+  ],
+  "career": {
+    "career_id": "career_005166",
+    "canonical_name": "Tripp Stotts",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Adair County",
+      "record": "9-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

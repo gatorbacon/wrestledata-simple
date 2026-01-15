@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "2-1",
+    "overall": "3-1",
+    "vs_ranked": "3-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -24,22 +24,22 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35724710132",
-      "opponent_rank": 73,
+      "opponent_rank": 95,
       "opponent_name": "Jason Wade",
       "method": "Fall 1:21"
     },
     "worst_loss": {
       "opponent_id": "35732644132",
-      "opponent_rank": 9,
+      "opponent_rank": 10,
       "opponent_name": "Brayden Fannin",
       "method": "Fall 1:23"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35897121132",
       "opponent_name": "Gage Clay",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 215,
-      "opponent_rank": 181,
+      "opponent_rank": 179,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35724710132",
       "opponent_name": "Jason Wade",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 215,
-      "opponent_rank": 73,
+      "opponent_rank": 95,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -77,12 +77,27 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35635527132",
+      "opponent_name": "Wade Perkins",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 88,
+      "opponent_weight": 215,
+      "opponent_rank": 103,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:22",
+      "event": "AWC Invitational"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35732644132",
       "opponent_name": "Brayden Fannin",
       "opponent_team": "Martin County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 13,
       "opponent_weight": 215,
-      "opponent_rank": 9,
+      "opponent_rank": 10,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -90,10 +105,5 @@
       "duration": "1:23",
       "event": "AWC Invitational"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  ]
 }

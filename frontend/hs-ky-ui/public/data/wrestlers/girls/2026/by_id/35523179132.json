@@ -1,0 +1,99 @@
+{
+  "wrestler_id": "35523179132",
+  "name": "Addison Arnold",
+  "team": "Marion (H.S.)",
+  "team_slug": "marion_hs",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 100.4,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35520301132",
+      "opponent_rank": 22,
+      "opponent_name": "Hannah `Liz` Porter",
+      "method": "TF 15-0 4:31"
+    },
+    "worst_loss": {
+      "opponent_id": "35343525132",
+      "opponent_rank": 4,
+      "opponent_name": "Kailyn Franks",
+      "method": "Fall 1:44"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35345899132",
+      "opponent_name": "Westinn Overbey",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 132,
+      "opponent_rank": 31,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "Richey Rumble"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35520301132",
+      "opponent_name": "Hannah `Liz` Porter",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 132,
+      "opponent_rank": 22,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "4:31",
+      "event": "Richey Rumble"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35343525132",
+      "opponent_name": "Kailyn Franks",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 4,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:44",
+      "event": "Richey Rumble"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 1.75,
+    "top33_bonus_ev_shrunk": 1.76875
+  }
+}

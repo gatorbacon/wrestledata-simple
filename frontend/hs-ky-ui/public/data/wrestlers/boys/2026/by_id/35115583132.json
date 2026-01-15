@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 117.2,
+    "df_plus": 102.0,
+    "apr_plus": 106.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35002889132",
-      "opponent_rank": 45,
+      "opponent_rank": 56,
       "opponent_name": "Kieran Pauley",
       "method": "Fall 1:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35031565132",
+      "opponent_rank": 6,
+      "opponent_name": "Jacob Ramsey",
+      "method": "Fall 4:23"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35031565132",
+      "opponent_name": "Jacob Ramsey",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 126,
+      "opponent_rank": 6,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:23",
+      "event": "Johnny Drennan Memorial"
+    },
     {
       "date": "2025-12-27",
       "opponent_id": "35002889132",
       "opponent_name": "Kieran Pauley",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 126,
-      "opponent_rank": 45,
+      "opponent_rank": 56,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -55,10 +75,5 @@
       "duration": "1:00",
       "event": "Maher/Garstin Battle for Indy BOYS 2025"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  ]
 }

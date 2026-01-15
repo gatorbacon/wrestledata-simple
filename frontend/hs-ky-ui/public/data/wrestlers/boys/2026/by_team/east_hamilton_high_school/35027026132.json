@@ -1,0 +1,79 @@
+{
+  "wrestler_id": "35027026132",
+  "name": "Diego Contreras",
+  "team": "East Hamilton High School",
+  "team_slug": "east_hamilton_high_school",
+  "team_rank": null,
+  "weight_class": 106,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 108.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35194039132",
+      "opponent_rank": 84,
+      "opponent_name": "Response Shyaka",
+      "method": "Fall 3:03"
+    },
+    "worst_loss": {
+      "opponent_id": "35221002132",
+      "opponent_rank": 11,
+      "opponent_name": "Ethan Klidzejs",
+      "method": "Fall 0:52"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35221002132",
+      "opponent_name": "Ethan Klidzejs",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 66,
+      "opponent_weight": 106,
+      "opponent_rank": 11,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:52",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35194039132",
+      "opponent_name": "Response Shyaka",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 106,
+      "opponent_rank": 84,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:03",
+      "event": "2026 Commando Crush"
+    }
+  ]
+}

@@ -6,55 +6,108 @@
   "team_rank": null,
   "weight_class": 107,
   "year": 2026,
-  "current_rank": 58,
+  "current_rank": 49,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-4",
+    "overall": "1-6",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 87.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 88.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35892824132",
+      "opponent_rank": 60,
+      "opponent_name": "Adia Clark",
+      "method": "Fall 1:00"
+    },
     "worst_loss": {
       "opponent_id": "35739869132",
-      "opponent_rank": 44,
+      "opponent_rank": 45,
       "opponent_name": "Paige Collins",
       "method": "Fall 2:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35333374132",
+      "opponent_name": "Hayley Cappelli",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 107,
+      "opponent_rank": 13,
+      "weight_class": "107",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:25",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": -5.43
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333590132",
+      "opponent_name": "Jossie Arroyo",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 3,
+      "opponent_weight": 107,
+      "opponent_rank": 39,
+      "weight_class": "107",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": -9.06
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35892824132",
+      "opponent_name": "Adia Clark",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": 60,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": 1.33
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35733873132",
       "opponent_name": "Brooklyn Holcomb",
       "opponent_team": "East Carter",
       "opponent_team_rank": null,
-      "opponent_weight": 107,
-      "opponent_rank": 34,
+      "opponent_weight": 100,
+      "opponent_rank": 36,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -8.12
+      "mv_impact": -9.11
     },
     {
       "date": "2025-12-13",
@@ -63,14 +116,14 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 33,
+      "opponent_rank": 35,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -7.8
+      "mv_impact": -7.99
     },
     {
       "date": "2025-12-06",
@@ -79,14 +132,14 @@
       "opponent_team": "Madison Central",
       "opponent_team_rank": 10,
       "opponent_weight": 107,
-      "opponent_rank": 16,
+      "opponent_rank": 24,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -5.55
+      "mv_impact": -6.24
     },
     {
       "date": "2025-12-06",
@@ -95,14 +148,14 @@
       "opponent_team": "Mason County",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 44,
+      "opponent_rank": 45,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
       "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -9.3
+      "mv_impact": -9.19
     }
   ]
 }

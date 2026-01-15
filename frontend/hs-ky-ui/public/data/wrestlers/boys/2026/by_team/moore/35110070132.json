@@ -3,13 +3,13 @@
   "name": "Manuel Nivar",
   "team": "Moore",
   "team_slug": "moore",
-  "team_rank": 46,
+  "team_rank": 27,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 69,
+  "current_rank": 40,
   "record": {
-    "overall": "6-2",
-    "vs_ranked": "4-1",
+    "overall": "7-2",
+    "vs_ranked": "5-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,41 +18,71 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 115.1,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "df_plus": 102.0,
+    "apr_plus": 111.2,
+    "pin_rate": 0.714,
+    "bonus_rate": 0.714,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 5,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35127113132",
-      "opponent_rank": 71,
+      "opponent_rank": 42,
       "opponent_name": "Jake Jeziorski",
       "method": "Fall 3:24"
     },
     "worst_loss": {
       "opponent_id": "35084105132",
-      "opponent_rank": 35,
+      "opponent_rank": 43,
       "opponent_name": "Jakob Reed",
       "method": "Fall 4:56"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35893459132",
+      "opponent_name": "Nicholas Thacker",
+      "opponent_team": "Christian Academy-Louisville",
+      "opponent_team_rank": 26,
+      "opponent_weight": 138,
+      "opponent_rank": 158,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:08",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35084105132",
+      "opponent_name": "Jakob Reed",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 32,
+      "opponent_weight": 138,
+      "opponent_rank": 43,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:56",
+      "event": "Fern Creek Gladiator"
+    },
+    {
       "date": "2025-12-30",
       "opponent_id": "35127113132",
       "opponent_name": "Jake Jeziorski",
       "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 75,
       "opponent_weight": 138,
-      "opponent_rank": 71,
+      "opponent_rank": 42,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -65,9 +95,9 @@
       "opponent_id": "36881420132",
       "opponent_name": "Faaris Nguyen",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 15,
       "opponent_weight": 138,
-      "opponent_rank": 207,
+      "opponent_rank": 199,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -91,28 +121,13 @@
       "event": "Fern Creek Gladiator"
     },
     {
-      "date": "2025-12-30",
-      "opponent_id": "35084105132",
-      "opponent_name": "Jakob Reed",
-      "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
-      "opponent_weight": 138,
-      "opponent_rank": 35,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:56",
-      "event": "Fern Creek Gladiator"
-    },
-    {
       "date": "2025-12-20",
       "opponent_id": "35384107132",
       "opponent_name": "Jett Rudolph",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 144,
-      "opponent_rank": 149,
+      "opponent_rank": 144,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -140,9 +155,9 @@
       "opponent_id": "34994788132",
       "opponent_name": "Justus Shirley",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 132,
-      "opponent_rank": 153,
+      "opponent_rank": 88,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -164,6 +179,23 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. East Jessamine"
+    }
+  ],
+  "career": {
+    "career_id": "career_005555",
+    "canonical_name": "Manuel Nivar",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Moore",
+      "record": "8-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

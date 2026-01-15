@@ -3,23 +3,23 @@
   "name": "Zarrie Matthews",
   "team": "Western",
   "team_slug": "western",
-  "team_rank": 34,
+  "team_rank": 40,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 111,
+  "current_rank": 106,
   "record": {
-    "overall": "6-5",
-    "vs_ranked": "4-5",
+    "overall": "6-7",
+    "vs_ranked": "4-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 7.9,
     "pa7": 13.4,
     "pd7": -5.5,
-    "si_plus": 98.2,
-    "df_plus": 97.1,
-    "apr_plus": 97.7,
+    "si_plus": 98.0,
+    "df_plus": 96.8,
+    "apr_plus": 95.9,
     "pin_rate": 0.5,
     "bonus_rate": 0.667,
     "majors": 1,
@@ -28,31 +28,61 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 5,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35185742132",
-      "opponent_rank": 113,
+      "opponent_rank": 108,
       "opponent_name": "ZaHir Covington",
       "method": "MD 13-3"
     },
     "worst_loss": {
-      "opponent_id": "35156182132",
-      "opponent_rank": 110,
-      "opponent_name": "Brayden Skaggs",
-      "method": "TF 17-2 5:00"
+      "opponent_id": "35562668132",
+      "opponent_rank": 140,
+      "opponent_name": "Kayden Cox",
+      "method": "Fall 3:13"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35021796132",
+      "opponent_name": "Logan Hobbs",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": 64,
+      "opponent_weight": 150,
+      "opponent_rank": 17,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "vs. Western"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35562668132",
+      "opponent_name": "Kayden Cox",
+      "opponent_team": "Seneca",
+      "opponent_team_rank": 53,
+      "opponent_weight": 150,
+      "opponent_rank": 140,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:13",
+      "event": "vs. Western"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35460279132",
       "opponent_name": "Ethan Pituch",
       "opponent_team": "Rowan County",
-      "opponent_team_rank": 119,
+      "opponent_team_rank": 121,
       "opponent_weight": 144,
-      "opponent_rank": 52,
+      "opponent_rank": 53,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -65,9 +95,9 @@
       "opponent_id": "35156182132",
       "opponent_name": "Brayden Skaggs",
       "opponent_team": "Taylor County",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 39,
       "opponent_weight": 144,
-      "opponent_rank": 110,
+      "opponent_rank": 105,
       "weight_class": "144",
       "result": "L",
       "method": "TF",
@@ -95,9 +125,9 @@
       "opponent_id": "35522912132",
       "opponent_name": "Caleb Jackson",
       "opponent_team": "Seneca",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 53,
       "opponent_weight": 144,
-      "opponent_rank": 116,
+      "opponent_rank": 110,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -110,9 +140,9 @@
       "opponent_id": "35280922132",
       "opponent_name": "Sean Moreno",
       "opponent_team": "Southern",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 54,
       "opponent_weight": 144,
-      "opponent_rank": 54,
+      "opponent_rank": 56,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -142,7 +172,7 @@
       "opponent_team": "WEB DuBois",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 91,
+      "opponent_rank": 90,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -155,9 +185,9 @@
       "opponent_id": "35228420132",
       "opponent_name": "James Banks",
       "opponent_team": "Butler",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 65,
       "opponent_weight": 144,
-      "opponent_rank": 133,
+      "opponent_rank": 126,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -170,9 +200,9 @@
       "opponent_id": "35280922132",
       "opponent_name": "Sean Moreno",
       "opponent_team": "Southern",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 54,
       "opponent_weight": 144,
-      "opponent_rank": 54,
+      "opponent_rank": 56,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -185,9 +215,9 @@
       "opponent_id": "35076701132",
       "opponent_name": "Malik Quarles",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 144,
-      "opponent_rank": 129,
+      "opponent_rank": 123,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -202,7 +232,7 @@
       "opponent_team": "WEB DuBois",
       "opponent_team_rank": null,
       "opponent_weight": 144,
-      "opponent_rank": 113,
+      "opponent_rank": 108,
       "weight_class": "144",
       "result": "W",
       "method": "MD",
@@ -211,9 +241,21 @@
       "event": "vs. Western"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_005150",
+    "canonical_name": "Zarrie Matthews",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Western",
+      "record": "7-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

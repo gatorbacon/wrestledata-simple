@@ -3,13 +3,13 @@
   "name": "Carson Hall",
   "team": "Owensboro",
   "team_slug": "owensboro",
-  "team_rank": 38,
+  "team_rank": 37,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 174,
+  "current_rank": 169,
   "record": {
-    "overall": "2-1",
-    "vs_ranked": "0-1",
+    "overall": "2-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 91.0,
+    "df_plus": 102.0,
+    "apr_plus": 93.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35007891132",
-      "opponent_rank": 23,
-      "opponent_name": "Garrett Johnson",
+      "opponent_id": "35049797132",
+      "opponent_rank": 30,
+      "opponent_name": "Logan Mongold",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35049797132",
+      "opponent_name": "Logan Mongold",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 25,
+      "opponent_weight": 126,
+      "opponent_rank": 30,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro Catholic"
+    },
     {
       "date": "2025-12-11",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -60,9 +75,9 @@
       "opponent_id": "35007891132",
       "opponent_name": "Garrett Johnson",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 113,
-      "opponent_rank": 23,
+      "opponent_rank": 20,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -86,9 +101,21 @@
       "event": "vs. Bullitt Central"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_004892",
+    "canonical_name": "Carson Hall",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Owensboro",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

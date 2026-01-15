@@ -3,13 +3,13 @@
   "name": "Erick Martinez",
   "team": "Seneca",
   "team_slug": "seneca",
-  "team_rank": 48,
+  "team_rank": 53,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 114,
+  "current_rank": 115,
   "record": {
-    "overall": "3-4",
-    "vs_ranked": "2-4",
+    "overall": "3-5",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 98.4,
+    "df_plus": 102.0,
+    "apr_plus": 97.4,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -28,31 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35900782132",
-      "opponent_rank": 95,
+      "opponent_rank": 96,
       "opponent_name": "Tyjuan Moody",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35084075132",
-      "opponent_rank": 93,
-      "opponent_name": "Mohammad Addi",
-      "method": "Fall 0:00"
+      "opponent_id": "35090030132",
+      "opponent_rank": 104,
+      "opponent_name": "Justin Torres",
+      "method": "Fall 0:47"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34989885132",
+      "opponent_name": "Ivan Castaneda",
+      "opponent_team": "Western",
+      "opponent_team_rank": 40,
+      "opponent_weight": 138,
+      "opponent_rank": 76,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "vs. Western"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35090030132",
       "opponent_name": "Justin Torres",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 138,
-      "opponent_rank": 58,
+      "opponent_rank": 104,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "35383952132",
       "opponent_name": "Logan Fick",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 138,
-      "opponent_rank": 182,
+      "opponent_rank": 176,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -78,11 +93,11 @@
     {
       "date": "2025-12-06",
       "opponent_id": "35084075132",
-      "opponent_name": "Mohammad Addi",
+      "opponent_name": "Mohamad Addi",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 32,
       "opponent_weight": 132,
-      "opponent_rank": 93,
+      "opponent_rank": 57,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35090027132",
       "opponent_name": "Aydin Kadriov",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 138,
-      "opponent_rank": 11,
+      "opponent_rank": 13,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -110,9 +125,9 @@
       "opponent_id": "34989885132",
       "opponent_name": "Ivan Castaneda",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 138,
-      "opponent_rank": 55,
+      "opponent_rank": 76,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -127,7 +142,7 @@
       "opponent_team": "Valley",
       "opponent_team_rank": 132,
       "opponent_weight": 132,
-      "opponent_rank": 95,
+      "opponent_rank": 96,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -151,9 +166,21 @@
       "event": "vs. Central"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_004599",
+    "canonical_name": "Erick Martinez",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Seneca",
+      "record": "3-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

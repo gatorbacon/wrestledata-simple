@@ -3,12 +3,12 @@
   "name": "Dalis Johnston",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 15,
+  "team_rank": 12,
   "weight_class": 100,
   "year": 2026,
   "current_rank": 18,
   "record": {
-    "overall": "1-0",
+    "overall": "6-0",
     "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,14 +17,14 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 113.5,
-    "pin_rate": 1.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 109.1,
+    "pin_rate": 0.833,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -41,11 +41,71 @@
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35268362132",
+      "opponent_name": "Allah Lopez",
+      "opponent_team": "Mascoutah",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:39",
+      "event": "2026 Murdale Girls Wrestling Tournament"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35262610132",
+      "opponent_name": "Charlee Emmerich",
+      "opponent_team": "Effingham (H.S.)",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "weight_class": "100",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "2:54",
+      "event": "2026 Murdale Girls Wrestling Tournament"
+    },
+    {
+      "date": "2026-01-02",
+      "opponent_id": "35271886132",
+      "opponent_name": "Shaina Pierce",
+      "opponent_team": "Pinckneyville",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:47",
+      "event": "Marion Wildcats Girls Invitational"
+    },
+    {
+      "date": "2026-01-02",
+      "opponent_id": "35262610132",
+      "opponent_name": "Charlee Emmerich",
+      "opponent_team": "Effingham (H.S.)",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:06",
+      "event": "Marion Wildcats Girls Invitational"
+    },
+    {
       "date": "2025-12-12",
       "opponent_id": "35521545132",
       "opponent_name": "Jaycee Bolen",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 100,
       "opponent_rank": 28,
       "weight_class": "100",
@@ -53,8 +113,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "Sister Slam",
-      "mv_impact": 2.38
+      "event": "Sister Slam"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35271886132",
+      "opponent_name": "Shaina Pierce",
+      "opponent_team": "Pinckneyville",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "Sister Slam"
     }
   ]
 }

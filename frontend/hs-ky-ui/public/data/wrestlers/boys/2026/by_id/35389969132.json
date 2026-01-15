@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 90.2,
+    "df_plus": 102.0,
+    "apr_plus": 90.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35560024132",
-      "opponent_rank": 170,
+      "opponent_rank": 200,
       "opponent_name": "Evan Wicker",
       "method": "Fall 0:00"
     }
@@ -45,9 +45,9 @@
       "opponent_id": "34995991132",
       "opponent_name": "Gabe Miller",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 150,
-      "opponent_rank": 157,
+      "opponent_rank": 163,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -60,9 +60,9 @@
       "opponent_id": "35752685132",
       "opponent_name": "Maddox Bryant",
       "opponent_team": "Johnson Central",
-      "opponent_team_rank": 12,
-      "opponent_weight": 157,
-      "opponent_rank": 33,
+      "opponent_team_rank": 2,
+      "opponent_weight": 150,
+      "opponent_rank": 39,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -72,12 +72,27 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35513071132",
+      "opponent_name": "Benjamin Crabtree",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 60,
+      "opponent_weight": 157,
+      "opponent_rank": 135,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Ridgeview"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35013064132",
       "opponent_name": "Blaze Cook",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 157,
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
@@ -87,27 +102,12 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35513071132",
-      "opponent_name": "Benjamin Crabtree",
-      "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
-      "opponent_weight": 165,
-      "opponent_rank": 62,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Ridgeview"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35560024132",
       "opponent_name": "Evan Wicker",
       "opponent_team": "Knott County Central",
-      "opponent_team_rank": 94,
-      "opponent_weight": 165,
-      "opponent_rank": 170,
+      "opponent_team_rank": 97,
+      "opponent_weight": 175,
+      "opponent_rank": 200,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -115,10 +115,5 @@
       "duration": "0:00",
       "event": "vs. Ridgeview"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  ]
 }

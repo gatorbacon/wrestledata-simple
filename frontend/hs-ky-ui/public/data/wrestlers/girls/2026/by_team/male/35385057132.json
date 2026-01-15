@@ -3,13 +3,13 @@
   "name": "Zariah Hampton",
   "team": "Male",
   "team_slug": "male",
-  "team_rank": 44,
+  "team_rank": 45,
   "weight_class": 100,
   "year": 2026,
   "current_rank": 22,
   "record": {
-    "overall": "3-2",
-    "vs_ranked": "3-2",
+    "overall": "5-2",
+    "vs_ranked": "5-2",
     "vs_top10": "0-1",
     "vs_top25": "2-1"
   },
@@ -17,17 +17,17 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 102.5,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 104.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 5,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 1,
@@ -46,11 +46,43 @@
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35334384132",
+      "opponent_name": "Desiree Devore",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": 47,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 2.03
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333582132",
+      "opponent_name": "Rista Rai",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 48,
+      "opponent_weight": 100,
+      "opponent_rank": 50,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 0.09
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35333397132",
       "opponent_name": "Lenda Saleh",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 100,
       "opponent_rank": 24,
       "weight_class": "100",
@@ -59,14 +91,14 @@
       "score": null,
       "duration": "0:40",
       "event": "Jeffersonville Classic",
-      "mv_impact": 3.22
+      "mv_impact": 3.29
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35333587132",
       "opponent_name": "Luz Perez Cruz",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 100,
       "opponent_rank": 33,
       "weight_class": "100",
@@ -75,30 +107,30 @@
       "score": null,
       "duration": "7:00",
       "event": "Jeffersonville Classic",
-      "mv_impact": -9.27
+      "mv_impact": -9.78
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35333368132",
       "opponent_name": "Kaylee Mckown",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 27,
       "opponent_weight": 100,
-      "opponent_rank": 7,
+      "opponent_rank": 4,
       "weight_class": "100",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -4.25
+      "mv_impact": -3.7
     },
     {
       "date": "2025-12-05",
       "opponent_id": "35333587132",
       "opponent_name": "Luz Perez Cruz",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 100,
       "opponent_rank": 33,
       "weight_class": "100",
@@ -107,14 +139,14 @@
       "score": null,
       "duration": "0:00",
       "event": "Queen of the Hive",
-      "mv_impact": 2.73
+      "mv_impact": 2.22
     },
     {
       "date": "2025-12-05",
       "opponent_id": "35333397132",
       "opponent_name": "Lenda Saleh",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 100,
       "opponent_rank": 24,
       "weight_class": "100",
@@ -123,7 +155,7 @@
       "score": null,
       "duration": "0:00",
       "event": "Queen of the Hive",
-      "mv_impact": 3.22
+      "mv_impact": 3.29
     }
   ]
 }

@@ -3,12 +3,12 @@
   "name": "Jayden Raney",
   "team": "Union County",
   "team_slug": "union_county",
-  "team_rank": 2,
+  "team_rank": 3,
   "weight_class": 138,
   "year": 2026,
   "current_rank": 1,
   "record": {
-    "overall": "13-0",
+    "overall": "17-0",
     "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "1-0"
@@ -18,13 +18,13 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 114.3,
-    "pin_rate": 0.615,
-    "bonus_rate": 0.846,
+    "df_plus": 102.0,
+    "apr_plus": 114.2,
+    "pin_rate": 0.647,
+    "bonus_rate": 0.882,
     "majors": 1,
-    "techs": 2,
-    "pins": 8
+    "techs": 3,
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,13 +33,73 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35221007132",
-      "opponent_rank": 14,
+      "opponent_rank": 12,
       "opponent_name": "Donovan Rogers",
       "method": "Fall 0:40"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_e1f98326012a",
+      "opponent_name": "Braeden Lintner",
+      "opponent_team": "New Palestine",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:21",
+      "event": "Holiday Classic"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_010d9c398e91",
+      "opponent_name": "Stephen Goodman",
+      "opponent_team": "New Albany",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:20",
+      "event": "Holiday Classic"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_cfb6e32544fb",
+      "opponent_name": "David Alstadt",
+      "opponent_team": "Evansville Mater Dei",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "21-6",
+      "duration": "3:36",
+      "event": "Holiday Classic"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_7c14c6c9b913",
+      "opponent_name": "Mason Goelz",
+      "opponent_team": "Avon",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:34",
+      "event": "Holiday Classic"
+    },
     {
       "date": "2025-12-23",
       "opponent_id": "35351408132",
@@ -60,9 +120,9 @@
       "opponent_id": "35221007132",
       "opponent_name": "Donovan Rogers",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 150,
-      "opponent_rank": 14,
+      "opponent_rank": 12,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -75,9 +135,9 @@
       "opponent_id": "35002886132",
       "opponent_name": "Luis Nunez",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 150,
-      "opponent_rank": 57,
+      "opponent_rank": 49,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -167,7 +227,7 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 131,
       "opponent_weight": 138,
-      "opponent_rank": 158,
+      "opponent_rank": 155,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -234,6 +294,41 @@
       "score": "14-2",
       "duration": "7:00",
       "event": "vs. Evansville Mater Dei"
+    }
+  ],
+  "career": {
+    "career_id": "career_002806",
+    "canonical_name": "Jayden Raney",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Union County",
+      "record": "17-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Union County",
+      "record": "44-1",
+      "regional_place": 1,
+      "state_place": 1
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Union County",
+      "record": "38-2",
+      "regional_place": 1,
+      "state_place": 1
     }
   ]
 }

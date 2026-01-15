@@ -6,7 +6,7 @@
   "team_rank": 129,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 56,
+  "current_rank": 69,
   "record": {
     "overall": "2-5",
     "vs_ranked": "1-4",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 96.2,
+    "df_plus": 102.0,
+    "apr_plus": 95.7,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34997721132",
-      "opponent_rank": 71,
+      "opponent_rank": 74,
       "opponent_name": "Dakari McMullen",
       "method": "Fall 0:58"
     },
     "worst_loss": {
       "opponent_id": "34997611132",
-      "opponent_rank": 186,
+      "opponent_rank": 172,
       "opponent_name": "Mason Dean",
       "method": "Fall 0:35"
     }
@@ -47,12 +47,27 @@
   "match_list": [
     {
       "date": "2025-12-13",
+      "opponent_id": "35156185132",
+      "opponent_name": "Parker Thompson",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 39,
+      "opponent_weight": 120,
+      "opponent_rank": 52,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Taylor County"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "34997611132",
       "opponent_name": "Mason Dean",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 132,
-      "opponent_rank": 186,
+      "opponent_rank": 172,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "34997721132",
       "opponent_name": "Dakari McMullen",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 126,
-      "opponent_rank": 71,
+      "opponent_rank": 74,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -91,28 +106,13 @@
       "event": "vs. Bullitt Central"
     },
     {
-      "date": "2025-12-13",
-      "opponent_id": "35156185132",
-      "opponent_name": "Parker Thompson",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": 49,
-      "opponent_weight": 126,
-      "opponent_rank": 41,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Taylor County"
-    },
-    {
       "date": "2025-12-10",
       "opponent_id": "35420581132",
       "opponent_name": "Colton Richardson",
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 132,
-      "opponent_rank": 57,
+      "opponent_rank": 53,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -125,9 +125,9 @@
       "opponent_id": "34993533132",
       "opponent_name": "Tucker Parks",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 126,
-      "opponent_rank": 48,
+      "opponent_rank": 59,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -151,9 +151,21 @@
       "event": "Tommy Castle Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_005710",
+    "canonical_name": "Mohammad Saleh",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Tates Creek",
+      "record": "4-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

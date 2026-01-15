@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -18,23 +18,28 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 101.2,
+    "df_plus": 102.0,
+    "apr_plus": 97.5,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
-    "majors": 0,
+    "bonus_rate": 1.0,
+    "majors": 1,
     "techs": 0,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35773385132",
+      "opponent_rank": 29,
+      "opponent_name": "Hunter Fields",
+      "method": "MD 13-0"
+    },
     "worst_loss": {
       "opponent_id": "34993511132",
-      "opponent_rank": 18,
+      "opponent_rank": 21,
       "opponent_name": "AJ Falk",
       "method": "Dec 8-6"
     }
@@ -45,20 +50,30 @@
       "opponent_id": "34993511132",
       "opponent_name": "AJ Falk",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 138,
-      "opponent_rank": 18,
+      "opponent_rank": 21,
       "weight_class": "138",
       "result": "L",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
       "event": "Fallen Heroes"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35773385132",
+      "opponent_name": "Hunter Fields",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 132,
+      "opponent_rank": 29,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "13-0",
+      "duration": "7:00",
+      "event": "FALLEN HEROS"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  ]
 }

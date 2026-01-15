@@ -3,63 +3,122 @@
   "name": "Zashawn Matthews",
   "team": "Western",
   "team_slug": "western",
-  "team_rank": 34,
+  "team_rank": 40,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 87,
+  "current_rank": 83,
   "record": {
-    "overall": "3-2",
-    "vs_ranked": "3-2",
+    "overall": "5-4",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 20.0,
     "pa7": 10.0,
     "pd7": 10.0,
-    "si_plus": 117.2,
-    "df_plus": 101.9,
-    "apr_plus": 101.7,
-    "pin_rate": 0.667,
-    "bonus_rate": 1.0,
+    "si_plus": 118.1,
+    "df_plus": 101.8,
+    "apr_plus": 98.9,
+    "pin_rate": 0.4,
+    "bonus_rate": 0.6,
     "majors": 1,
     "techs": 0,
     "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35217574132",
-      "opponent_rank": 106,
+      "opponent_rank": 101,
       "opponent_name": "Gavin Meiller",
       "method": "Fall 1:04"
     },
     "worst_loss": {
-      "opponent_id": "35420642132",
-      "opponent_rank": 46,
-      "opponent_name": "Channing Carte",
-      "method": "Fall 0:00"
+      "opponent_id": "35084110132",
+      "opponent_rank": 48,
+      "opponent_name": "Jaxon Salgado",
+      "method": "Fall 1:36"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35144512132",
+      "opponent_name": "Joseph Kresel",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 49,
+      "opponent_weight": 144,
+      "opponent_rank": 19,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:15",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35226198132",
+      "opponent_name": "Bryce Alford",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 144,
+      "opponent_rank": 43,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:43",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_ec41a6447feb",
+      "opponent_name": "Tyler Darling",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35064900132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "12-8",
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35321133132",
       "opponent_name": "Austin Young",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 144,
-      "opponent_rank": 115,
+      "opponent_rank": 109,
       "weight_class": "144",
       "result": "W",
       "method": "MD",
       "score": "20-10",
       "duration": "7:00",
-      "event": "King of the Bluegrass",
-      "mv_impact": 1.67
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2025-12-13",
@@ -68,67 +127,84 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 144,
-      "opponent_rank": 46,
+      "opponent_rank": 38,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Whitley County",
-      "mv_impact": -4.95
+      "event": "vs. Whitley County"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35084110132",
       "opponent_name": "Jaxon Salgado",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 32,
       "opponent_weight": 144,
-      "opponent_rank": 43,
+      "opponent_rank": 48,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:36",
-      "event": "vs. Western",
-      "mv_impact": -4.61
+      "event": "vs. Western"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35217574132",
       "opponent_name": "Gavin Meiller",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 144,
-      "opponent_rank": 106,
+      "opponent_rank": 101,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:04",
-      "event": "vs. Western",
-      "mv_impact": 3.64
+      "event": "vs. Western"
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35383675132",
       "opponent_name": "Tyler Beam",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 144,
-      "opponent_rank": 168,
+      "opponent_rank": 165,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:41",
-      "event": "vs. Western",
-      "mv_impact": 0.59
+      "event": "vs. Western"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_003885",
+    "canonical_name": "Zashawn Matthews",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Western",
+      "record": "5-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Western",
+      "record": "16-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

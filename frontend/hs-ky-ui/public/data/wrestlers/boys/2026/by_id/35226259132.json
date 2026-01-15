@@ -3,41 +3,157 @@
   "name": "Landon Wade",
   "team": "Nelson County",
   "team_slug": "nelson_county",
-  "team_rank": 29,
-  "weight_class": 157,
+  "team_rank": 24,
+  "weight_class": 150,
   "year": 2026,
-  "current_rank": 222,
+  "current_rank": 192,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "3-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 93.3,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35037153132",
+      "opponent_rank": 201,
+      "opponent_name": "Pierce Jones",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35640757132",
+      "opponent_rank": 53,
+      "opponent_name": "Trevor Weinberg",
+      "method": "Fall 1:53"
+    }
   },
-  "match_list": [],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.065217391304348
-  }
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35640757132",
+      "opponent_name": "Trevor Weinberg",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 47,
+      "opponent_weight": 150,
+      "opponent_rank": 53,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:53",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35007901132",
+      "opponent_name": "Kenny Smith",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 150,
+      "opponent_rank": 24,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35900105132",
+      "opponent_name": "Malachi Schoenecke",
+      "opponent_team": "Victory Wrestling Academy",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35037153132",
+      "opponent_name": "Pierce Jones",
+      "opponent_team": "Marion County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 150,
+      "opponent_rank": 201,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Nelson County"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bardstown"
+    }
+  ],
+  "career": {
+    "career_id": "career_001831",
+    "canonical_name": "Landan Wade",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Nelson County",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Nelson County",
+      "record": "5-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Nelson County",
+      "record": "8-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

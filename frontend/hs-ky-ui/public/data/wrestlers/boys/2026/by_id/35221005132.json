@@ -3,23 +3,23 @@
   "name": "Haoyang WU",
   "team": "Caldwell County",
   "team_slug": "caldwell_county",
-  "team_rank": 62,
+  "team_rank": 66,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 35,
+  "current_rank": 42,
   "record": {
-    "overall": "8-5",
+    "overall": "8-6",
     "vs_ranked": "6-3",
     "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 18.5,
     "pa7": 5.0,
     "pd7": 13.5,
-    "si_plus": 114.6,
-    "df_plus": 109.3,
-    "apr_plus": 103.2,
+    "si_plus": 115.4,
+    "df_plus": 109.5,
+    "apr_plus": 101.8,
     "pin_rate": 0.625,
     "bonus_rate": 0.875,
     "majors": 1,
@@ -39,20 +39,35 @@
     },
     "worst_loss": {
       "opponent_id": "35226139132",
-      "opponent_rank": 24,
+      "opponent_rank": 39,
       "opponent_name": "Zachary Beecham",
       "method": "Fall 3:13"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-06",
+      "opponent_id": "35119929132",
+      "opponent_name": "Aiden Cano",
+      "opponent_team": "Rossview High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "4:00",
+      "event": "vs. Rossview High School"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35599167132",
       "opponent_name": "Nathan Tucker",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 126,
-      "opponent_rank": 161,
+      "opponent_rank": 131,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "35459302132",
       "opponent_name": "Liam Skinner",
       "opponent_team": "Rowan County",
-      "opponent_team_rank": 119,
+      "opponent_team_rank": 121,
       "opponent_weight": 126,
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -82,7 +97,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 126,
-      "opponent_rank": 179,
+      "opponent_rank": 174,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35226139132",
       "opponent_name": "Zachary Beecham",
       "opponent_team": "Nelson County",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 24,
       "opponent_weight": 126,
-      "opponent_rank": 24,
+      "opponent_rank": 39,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -110,7 +125,7 @@
       "opponent_id": "35002891132",
       "opponent_name": "Andy Cintron",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 120,
       "opponent_rank": 43,
       "weight_class": "126",
@@ -127,7 +142,7 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 130,
       "opponent_weight": 120,
-      "opponent_rank": 100,
+      "opponent_rank": 103,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -140,9 +155,9 @@
       "opponent_id": "35031565132",
       "opponent_name": "Jacob Ramsey",
       "opponent_team": "Union County",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 126,
-      "opponent_rank": 5,
+      "opponent_rank": 6,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -170,9 +185,9 @@
       "opponent_id": "35002889132",
       "opponent_name": "Kieran Pauley",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 82,
       "opponent_weight": 126,
-      "opponent_rank": 45,
+      "opponent_rank": 56,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -230,9 +245,9 @@
       "opponent_id": "35208147132",
       "opponent_name": "Aldon Hammers",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 126,
-      "opponent_rank": 115,
+      "opponent_rank": 114,
       "weight_class": "126",
       "result": "W",
       "method": "MD",
@@ -241,9 +256,39 @@
       "event": "vs. Henderson County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_000364",
+    "canonical_name": "Haoyang WU",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Caldwell County",
+      "record": "8-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Caldwell County",
+      "record": "10-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Caldwell County",
+      "record": "6-11",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

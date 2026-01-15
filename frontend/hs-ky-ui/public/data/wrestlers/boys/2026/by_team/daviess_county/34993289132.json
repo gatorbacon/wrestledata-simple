@@ -3,32 +3,32 @@
   "name": "Brandon Adair-Castro",
   "team": "Daviess County",
   "team_slug": "daviess_county",
-  "team_rank": 68,
+  "team_rank": 71,
   "weight_class": 120,
   "year": 2026,
   "current_rank": 56,
   "record": {
-    "overall": "3-4",
-    "vs_ranked": "3-3",
+    "overall": "6-6",
+    "vs_ranked": "4-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 25.0,
-    "pa7": 0.0,
-    "pd7": 25.0,
-    "si_plus": 113.8,
-    "df_plus": 117.5,
-    "apr_plus": 99.0,
+    "pf7": 17.5,
+    "pa7": 6.0,
+    "pd7": 11.5,
+    "si_plus": 112.1,
+    "df_plus": 105.5,
+    "apr_plus": 101.5,
     "pin_rate": 0.667,
-    "bonus_rate": 1.0,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 1,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 3,
+    "ranked_wins": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -38,60 +38,132 @@
       "method": "TF 17-0 3:47"
     },
     "worst_loss": {
-      "opponent_id": "34997616132",
+      "opponent_id": "36289283132",
       "opponent_rank": 55,
-      "opponent_name": "Hagen Anders",
-      "method": "Fall 1:27"
+      "opponent_name": "Kently Johnston",
+      "method": "Dec 12-10"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-12",
+      "opponent_id": "35194029132",
+      "opponent_name": "Jamile Coleman",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 120,
+      "opponent_rank": 138,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:41",
+      "event": "vs. Warren Central"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34993883132",
+      "opponent_name": "Prestyn Walls",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 87,
+      "opponent_weight": 120,
+      "opponent_rank": 20,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:58",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35778102132",
+      "opponent_name": "Gabriel Purtteman",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:56",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36289283132",
+      "opponent_name": "Kently Johnston",
+      "opponent_team": "West Carter",
+      "opponent_team_rank": 135,
+      "opponent_weight": 120,
+      "opponent_rank": 55,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-10",
+      "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Owensboro"
+    },
     {
       "date": "2025-12-23",
       "opponent_id": "35137163132",
       "opponent_name": "Adam Anderson",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 95,
       "opponent_weight": 120,
-      "opponent_rank": 79,
+      "opponent_rank": 82,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:55",
-      "event": "Christian County Invitational",
-      "mv_impact": 3.88
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35007892132",
       "opponent_name": "Graydon Daniels",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 120,
-      "opponent_rank": 34,
+      "opponent_rank": 21,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "Christian County Invitational",
-      "mv_impact": -3.44
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35674208132",
       "opponent_name": "Brody Holinde",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 120,
-      "opponent_rank": 103,
+      "opponent_rank": 106,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:41",
-      "event": "Christian County Invitational",
-      "mv_impact": 1.88
+      "event": "Christian County Invitational"
     },
     {
       "date": "2025-12-23",
@@ -113,23 +185,22 @@
       "opponent_id": "34997616132",
       "opponent_name": "Hagen Anders",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 120,
-      "opponent_rank": 55,
+      "opponent_rank": 53,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:27",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": -5.37
+      "event": "5th Annual Cardinal Clash"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35226240132",
       "opponent_name": "Uriah Lemarr",
       "opponent_team": "Nelson County",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 24,
       "opponent_weight": 120,
       "opponent_rank": 57,
       "weight_class": "120",
@@ -137,24 +208,39 @@
       "method": "TF",
       "score": "17-0",
       "duration": "3:47",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": 4.05
+      "event": "5th Annual Cardinal Clash"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35599163132",
       "opponent_name": "Lucas Parriman",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 120,
-      "opponent_rank": 35,
+      "opponent_rank": 39,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:49",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": -4.9
+      "event": "5th Annual Cardinal Clash"
+    }
+  ],
+  "career": {
+    "career_id": "career_005336",
+    "canonical_name": "Brandon Adair-Castro",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Daviess County",
+      "record": "7-6",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

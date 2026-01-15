@@ -3,13 +3,13 @@
   "name": "Nicholas Thacker",
   "team": "Christian Academy-Louisville",
   "team_slug": "christian_academylouisville",
-  "team_rank": 66,
+  "team_rank": 26,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 161,
+  "current_rank": 158,
   "record": {
-    "overall": "2-4",
-    "vs_ranked": "1-4",
+    "overall": "4-5",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,41 +18,71 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 95.9,
+    "df_plus": 102.0,
+    "apr_plus": 97.7,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35194137132",
-      "opponent_rank": 190,
-      "opponent_name": "Adaven Westernbeck",
-      "method": "Fall 1:48"
+      "opponent_id": "35668565132",
+      "opponent_rank": 168,
+      "opponent_name": "Ha Ling",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35023913132",
-      "opponent_rank": 121,
+      "opponent_rank": 122,
       "opponent_name": "Emanuel Pamblanco",
       "method": "Fall 2:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35668565132",
+      "opponent_name": "Ha Ling",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 138,
+      "opponent_rank": 168,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35110070132",
+      "opponent_name": "Manuel Nivar",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 138,
+      "opponent_rank": 40,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:08",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35023913132",
       "opponent_name": "Emanuel Pamblanco",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 138,
-      "opponent_rank": 121,
+      "opponent_rank": 122,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -65,7 +95,7 @@
       "opponent_id": "35049803132",
       "opponent_name": "Simon Thompson",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 25,
       "opponent_weight": 138,
       "opponent_rank": 49,
       "weight_class": "138",
@@ -97,7 +127,7 @@
       "opponent_team": "Warren Central",
       "opponent_team_rank": 134,
       "opponent_weight": 132,
-      "opponent_rank": 190,
+      "opponent_rank": 176,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -110,9 +140,9 @@
       "opponent_id": "35639351132",
       "opponent_name": "Abdi Mohamud",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 138,
-      "opponent_rank": 84,
+      "opponent_rank": 83,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -121,13 +151,28 @@
       "event": "vs. Shawnee"
     },
     {
+      "date": "2025-12-23",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Central"
+    },
+    {
       "date": "2025-12-17",
       "opponent_id": "35066867132",
       "opponent_name": "Kaden Warren",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 132,
-      "opponent_rank": 40,
+      "opponent_rank": 39,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -136,9 +181,21 @@
       "event": "vs. Shawnee"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0603448275862069
-  }
+  "career": {
+    "career_id": "career_004622",
+    "canonical_name": "Nicholas Thacker",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Christian Academy-Louisville",
+      "record": "4-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

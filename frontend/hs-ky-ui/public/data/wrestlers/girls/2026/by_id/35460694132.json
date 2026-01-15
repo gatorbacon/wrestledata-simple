@@ -1,0 +1,84 @@
+{
+  "wrestler_id": "35460694132",
+  "name": "Sydney Kirby",
+  "team": "Cheatham Co. Central High School",
+  "team_slug": "cheatham_co_central_high_school",
+  "team_rank": null,
+  "weight_class": 145,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 107.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35520301132",
+      "opponent_rank": 22,
+      "opponent_name": "Hannah `Liz` Porter",
+      "method": "Fall 2:51"
+    },
+    "worst_loss": {
+      "opponent_id": "35424932132",
+      "opponent_rank": 11,
+      "opponent_name": "Masoka (Ashley) Kilozo",
+      "method": "Fall 2:21"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35424932132",
+      "opponent_name": "Masoka (Ashley) Kilozo",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 11,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:21",
+      "event": "Rossview Lady Hawks Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35520301132",
+      "opponent_name": "Hannah `Liz` Porter",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 132,
+      "opponent_rank": 22,
+      "weight_class": "G 145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:51",
+      "event": "Coyote Classic"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.4083333333333334
+  }
+}

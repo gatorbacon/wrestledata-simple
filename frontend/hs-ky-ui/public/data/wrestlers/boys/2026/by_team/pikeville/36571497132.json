@@ -3,95 +3,152 @@
   "name": "Jaxon Scott",
   "team": "Pikeville",
   "team_slug": "pikeville",
-  "team_rank": 114,
+  "team_rank": 116,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 29,
+  "current_rank": 28,
   "record": {
-    "overall": "3-2",
-    "vs_ranked": "2-2",
+    "overall": "5-4",
+    "vs_ranked": "4-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 3.0,
-    "pa7": 9.5,
-    "pd7": -6.5,
-    "si_plus": 92.7,
-    "df_plus": 101.3,
+    "pf7": 2.0,
+    "pa7": 10.33,
+    "pd7": -8.33,
+    "si_plus": 90.6,
+    "df_plus": 99.2,
     "apr_plus": 105.2,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_wins": 4,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35122088132",
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "opponent_name": "Caleb Riordan",
       "method": "Fall 4:20"
     },
     "worst_loss": {
-      "opponent_id": "35144519132",
-      "opponent_rank": 28,
-      "opponent_name": "Gabriel Ditto",
-      "method": "MD 13-2"
+      "opponent_id": "35752417132",
+      "opponent_rank": 32,
+      "opponent_name": "Landon Howard",
+      "method": "Dec 6-4"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35513069132",
+      "opponent_name": "Kane Caudill",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 60,
+      "opponent_weight": 138,
+      "opponent_rank": 203,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:46",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35732622132",
+      "opponent_name": "Noah Bowens",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 138,
+      "opponent_rank": 23,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35129301132",
+      "opponent_name": "Brody Collins",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 115,
+      "opponent_weight": 138,
+      "opponent_rank": 116,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:19",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36021565132",
+      "opponent_name": "Luke Kelley",
+      "opponent_team": "Braxton County Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:44",
+      "event": "Clipson Jones Classic 2026"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35752417132",
       "opponent_name": "Landon Howard",
       "opponent_team": "Johnson Central",
-      "opponent_team_rank": 12,
-      "opponent_weight": 138,
-      "opponent_rank": 23,
+      "opponent_team_rank": 2,
+      "opponent_weight": 132,
+      "opponent_rank": 32,
       "weight_class": "138",
       "result": "L",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -1.41
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35144519132",
       "opponent_name": "Gabriel Ditto",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 138,
-      "opponent_rank": 28,
+      "opponent_rank": 26,
       "weight_class": "138",
       "result": "L",
       "method": "MD",
       "score": "13-2",
       "duration": "7:00",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -2.97
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35122088132",
       "opponent_name": "Caleb Riordan",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 138,
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:20",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 7.15
+      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -115,14 +172,39 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 138,
-      "opponent_rank": 81,
+      "opponent_rank": 78,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:32",
-      "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": 5.95
+      "event": "Boys Hatfield McCoy 32 2025"
+    }
+  ],
+  "career": {
+    "career_id": "career_002172",
+    "canonical_name": "Jaxon Scott",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Pikeville",
+      "record": "5-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "Pikeville",
+      "record": "7-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

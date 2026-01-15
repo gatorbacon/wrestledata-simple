@@ -3,10 +3,10 @@
   "name": "Mason List",
   "team": "Fern Creek",
   "team_slug": "fern_creek",
-  "team_rank": 74,
+  "team_rank": 80,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 93,
+  "current_rank": 89,
   "record": {
     "overall": "2-2",
     "vs_ranked": "2-2",
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 25.0,
     "pd7": -25.0,
-    "si_plus": 87.8,
-    "df_plus": 85.0,
-    "apr_plus": 104.4,
+    "si_plus": 87.9,
+    "df_plus": 85.4,
+    "apr_plus": 104.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35457962132",
-      "opponent_rank": 101,
+      "opponent_rank": 97,
       "opponent_name": "Jaden Atwell",
       "method": "Fall 1:23"
     },
     "worst_loss": {
       "opponent_id": "34997712132",
-      "opponent_rank": 44,
+      "opponent_rank": 49,
       "opponent_name": "Connor Greenwell",
       "method": "TF 17-0 4:05"
     }
@@ -50,69 +50,81 @@
       "opponent_id": "35599164132",
       "opponent_name": "Julius Parriman",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 138,
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:01",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -3.85
+      "mv_impact": -3.88
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35180959132",
       "opponent_name": "Preston Evans",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 144,
-      "opponent_rank": 141,
+      "opponent_rank": 135,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:04",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": 2.33
+      "mv_impact": 2.39
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34997712132",
       "opponent_name": "Connor Greenwell",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 144,
-      "opponent_rank": 44,
+      "opponent_rank": 49,
       "weight_class": "144",
       "result": "L",
       "method": "TF",
       "score": "17-0",
       "duration": "4:05",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": -4.98
+      "mv_impact": -5.08
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35457962132",
       "opponent_name": "Jaden Atwell",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 86,
+      "opponent_team_rank": 91,
       "opponent_weight": 144,
-      "opponent_rank": 101,
+      "opponent_rank": 97,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:23",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": 3.23
+      "mv_impact": 3.46
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_005383",
+    "canonical_name": "Mason List",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Fern Creek",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

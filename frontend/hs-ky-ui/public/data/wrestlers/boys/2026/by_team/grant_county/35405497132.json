@@ -3,13 +3,13 @@
   "name": "Jacob Isaacs",
   "team": "Grant County",
   "team_slug": "grant_county",
-  "team_rank": 81,
+  "team_rank": 86,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 126,
+  "current_rank": 119,
   "record": {
-    "overall": "1-5",
-    "vs_ranked": "1-4",
+    "overall": "1-7",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 11.0,
     "pa7": 4.0,
     "pd7": 7.0,
-    "si_plus": 107.5,
-    "df_plus": 102.1,
-    "apr_plus": 88.4,
+    "si_plus": 103.2,
+    "df_plus": 110.6,
+    "apr_plus": 89.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,23 +28,53 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35652063132",
-      "opponent_rank": 158,
+      "opponent_rank": 149,
       "opponent_name": "Lucas Carr",
       "method": "Dec 11-4"
     },
     "worst_loss": {
-      "opponent_id": "35332922132",
-      "opponent_rank": 102,
-      "opponent_name": "Jacob Sandfoss",
-      "method": "Fall 0:32"
+      "opponent_id": "35216672132",
+      "opponent_rank": 112,
+      "opponent_name": "Liam Surber",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35216672132",
+      "opponent_name": "Liam Surber",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 9,
+      "opponent_weight": 144,
+      "opponent_rank": 112,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Grant County"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34993791132",
+      "opponent_name": "Hunter Jones",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 150,
+      "opponent_rank": 89,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harrison County"
+    },
     {
       "date": "2025-12-12",
       "opponent_id": "OUTSTATE_f653b2613895",
@@ -65,9 +95,9 @@
       "opponent_id": "35225681132",
       "opponent_name": "Chris Burns",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 85,
       "opponent_weight": 157,
-      "opponent_rank": 62,
+      "opponent_rank": 61,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "34993507132",
       "opponent_name": "CALEB GAGEL",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 157,
-      "opponent_rank": 74,
+      "opponent_rank": 76,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -95,9 +125,9 @@
       "opponent_id": "35652063132",
       "opponent_name": "Lucas Carr",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 157,
-      "opponent_rank": 158,
+      "opponent_rank": 149,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
@@ -110,7 +140,7 @@
       "opponent_id": "35332922132",
       "opponent_name": "Jacob Sandfoss",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 157,
       "opponent_rank": 102,
       "weight_class": "157",
@@ -125,15 +155,41 @@
       "opponent_id": "34993507132",
       "opponent_name": "CALEB GAGEL",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 157,
-      "opponent_rank": 74,
+      "opponent_rank": 76,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic"
+    }
+  ],
+  "career": {
+    "career_id": "career_001010",
+    "canonical_name": "Jacob Isaacs",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Grant County",
+      "record": "1-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Grant County",
+      "record": "3-10",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

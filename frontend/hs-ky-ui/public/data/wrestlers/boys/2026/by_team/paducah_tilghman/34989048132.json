@@ -3,39 +3,39 @@
   "name": "Christian Prietto-Bottoms",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 27,
+  "team_rank": 29,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 13,
+  "current_rank": 7,
   "record": {
-    "overall": "18-7",
-    "vs_ranked": "2-1",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "21-7",
+    "vs_ranked": "5-1",
+    "vs_top10": "1-1",
+    "vs_top25": "3-1"
   },
   "metrics": {
-    "pf7": 2.0,
-    "pa7": 4.0,
-    "pd7": -2.0,
-    "si_plus": 92.8,
-    "df_plus": 113.4,
-    "apr_plus": 103.0,
-    "pin_rate": 0.722,
-    "bonus_rate": 0.944,
-    "majors": 4,
-    "techs": 0,
+    "pf7": 12.0,
+    "pa7": 1.0,
+    "pd7": 11.0,
+    "si_plus": 107.6,
+    "df_plus": 116.7,
+    "apr_plus": 101.5,
+    "pin_rate": 0.619,
+    "bonus_rate": 0.952,
+    "majors": 5,
+    "techs": 2,
     "pins": 13
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 5,
     "ranked_losses": 1,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35281688132",
-      "opponent_rank": 65,
-      "opponent_name": "James Walker",
-      "method": "Fall 0:00"
+      "opponent_id": "34993548132",
+      "opponent_rank": 8,
+      "opponent_name": "Trenton Bratcher",
+      "method": "MD 14-0"
     },
     "worst_loss": {
       "opponent_id": "35077755132",
@@ -50,9 +50,9 @@
       "opponent_id": "35523701132",
       "opponent_name": "Hudson Ball",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 106,
-      "opponent_rank": 81,
+      "opponent_rank": 88,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -62,10 +62,40 @@
     },
     {
       "date": "2026-01-03",
+      "opponent_id": "34993799132",
+      "opponent_name": "Noe Rodriguez",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 5,
+      "opponent_weight": 106,
+      "opponent_rank": 15,
+      "weight_class": "106",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34993548132",
+      "opponent_name": "Trenton Bratcher",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 106,
+      "opponent_rank": 8,
+      "weight_class": "106",
+      "result": "W",
+      "method": "MD",
+      "score": "14-0",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35077755132",
       "opponent_name": "Lincoln Maynard",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 28,
       "opponent_weight": 106,
       "opponent_rank": 3,
       "weight_class": "106",
@@ -73,6 +103,21 @@
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34994868132",
+      "opponent_name": "oliver westphal",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 106,
+      "opponent_rank": 12,
+      "weight_class": "106",
+      "result": "W",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "0:00",
       "event": "Warhawk Classic"
     },
     {
@@ -260,7 +305,7 @@
       "opponent_id": "35281688132",
       "opponent_name": "James Walker",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 113,
       "opponent_rank": 65,
       "weight_class": "113",
@@ -302,21 +347,6 @@
     },
     {
       "date": "2025-12-11",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "DEC",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. West Frankfort (Frankfort)"
-    },
-    {
-      "date": "2025-12-11",
       "opponent_id": "35512752132",
       "opponent_name": "Tyler Norris",
       "opponent_team": "Johnston City",
@@ -329,6 +359,21 @@
       "score": null,
       "duration": "1:14",
       "event": "vs. Johnston City"
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. West Frankfort (Frankfort)"
     },
     {
       "date": "2025-12-06",
@@ -419,6 +464,41 @@
       "score": "3-0",
       "duration": "7:00",
       "event": "Blackhorse Invitational"
+    }
+  ],
+  "career": {
+    "career_id": "career_002053",
+    "canonical_name": "Christian Prietto-Bottoms",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Paducah Tilghman",
+      "record": "21-9",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Paducah Tilghman",
+      "record": "26-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Paducah Tilghman",
+      "record": "23-16",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

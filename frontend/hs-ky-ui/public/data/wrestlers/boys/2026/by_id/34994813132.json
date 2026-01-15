@@ -3,10 +3,10 @@
   "name": "sera gutterman",
   "team": "Spencer County",
   "team_slug": "spencer_county",
-  "team_rank": 33,
+  "team_rank": 12,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 105,
+  "current_rank": 106,
   "record": {
     "overall": "3-2",
     "vs_ranked": "1-2",
@@ -18,7 +18,7 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
+    "df_plus": 102.0,
     "apr_plus": 101.4,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35228196132",
-      "opponent_rank": 82,
+      "opponent_rank": 85,
       "opponent_name": "Rowyn Eskridge",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35051533132",
-      "opponent_rank": 37,
+      "opponent_rank": 55,
       "opponent_name": "Eli Watts",
       "method": "Fall 2:09"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35228196132",
       "opponent_name": "Rowyn Eskridge",
       "opponent_team": "Butler",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 65,
       "opponent_weight": 120,
-      "opponent_rank": 82,
+      "opponent_rank": 85,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35051533132",
       "opponent_name": "Eli Watts",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 55,
       "opponent_weight": 126,
-      "opponent_rank": 37,
+      "opponent_rank": 55,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -95,9 +95,9 @@
       "opponent_id": "34992062132",
       "opponent_name": "Braylon Hayes",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 126,
-      "opponent_rank": 30,
+      "opponent_rank": 26,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -121,9 +121,30 @@
       "event": "vs. Hart County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4125
-  }
+  "career": {
+    "career_id": "career_004051",
+    "canonical_name": "Sera Gutterman",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Spencer County",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Eastern",
+      "record": "2-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

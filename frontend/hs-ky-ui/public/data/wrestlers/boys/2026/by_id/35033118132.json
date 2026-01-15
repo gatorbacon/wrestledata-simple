@@ -6,19 +6,19 @@
   "team_rank": 129,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 107,
+  "current_rank": 110,
   "record": {
     "overall": "4-11",
     "vs_ranked": "4-11",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
+    "df_plus": 102.0,
     "apr_plus": 96.2,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
@@ -39,7 +39,7 @@
     },
     "worst_loss": {
       "opponent_id": "35397705132",
-      "opponent_rank": 106,
+      "opponent_rank": 109,
       "opponent_name": "Emmett Combs",
       "method": "Fall 0:00"
     }
@@ -47,11 +47,27 @@
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "34997607132",
+      "opponent_name": "Jackson Patrick",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 69,
+      "opponent_weight": 157,
+      "opponent_rank": 85,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:42",
+      "event": "Tates Creek Invitational",
+      "mv_impact": -7.67
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35139495132",
       "opponent_name": "Owen Brewer",
       "opponent_team": "Bethlehem",
-      "opponent_team_rank": 57,
-      "opponent_weight": 175,
+      "opponent_team_rank": 62,
+      "opponent_weight": 165,
       "opponent_rank": 204,
       "weight_class": "165",
       "result": "W",
@@ -59,103 +75,103 @@
       "score": null,
       "duration": "0:34",
       "event": "Tates Creek Invitational",
-      "mv_impact": 0.3
-    },
-    {
-      "date": "2026-01-03",
-      "opponent_id": "34997607132",
-      "opponent_name": "Jackson Patrick",
-      "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
-      "opponent_weight": 165,
-      "opponent_rank": 49,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:42",
-      "event": "Tates Creek Invitational",
-      "mv_impact": -5.41
+      "mv_impact": 1.17
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35459311132",
       "opponent_name": "Issac Clark",
       "opponent_team": "Rowan County",
-      "opponent_team_rank": 119,
+      "opponent_team_rank": 121,
       "opponent_weight": 165,
-      "opponent_rank": 33,
+      "opponent_rank": 36,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:38",
       "event": "Tates Creek Invitational",
-      "mv_impact": -3.85
+      "mv_impact": -3.93
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35397705132",
       "opponent_name": "Emmett Combs",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": 106,
+      "opponent_rank": 109,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": -8.25
+      "mv_impact": -8.62
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35433568132",
       "opponent_name": "Collier Quick",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 96,
+      "opponent_team_rank": 99,
       "opponent_weight": 165,
-      "opponent_rank": 71,
+      "opponent_rank": 62,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Region 6 JV Region",
-      "mv_impact": -7.03
+      "mv_impact": -7.02
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35021798132",
       "opponent_name": "Ivan Wright",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": 81,
+      "opponent_rank": 82,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek",
-      "mv_impact": -6.9
+      "mv_impact": -7.24
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34997607132",
+      "opponent_name": "Jackson Patrick",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 69,
+      "opponent_weight": 157,
+      "opponent_rank": 85,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "vs. Tates Creek",
+      "mv_impact": -7.67
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34997713132",
       "opponent_name": "Grayson Scott",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 45,
       "opponent_weight": 157,
-      "opponent_rank": 26,
+      "opponent_rank": 23,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:29",
       "event": "vs. Tates Creek",
-      "mv_impact": -3.01
+      "mv_impact": -2.66
     },
     {
       "date": "2025-12-13",
@@ -164,46 +180,30 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 157,
-      "opponent_rank": 85,
+      "opponent_rank": 86,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Whitley County",
-      "mv_impact": -7.3
+      "mv_impact": -7.67
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35156358132",
       "opponent_name": "Braxton Williams",
       "opponent_team": "Taylor County",
-      "opponent_team_rank": 49,
-      "opponent_weight": 157,
-      "opponent_rank": 56,
+      "opponent_team_rank": 39,
+      "opponent_weight": 190,
+      "opponent_rank": 77,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Taylor County",
-      "mv_impact": -6.52
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "34997607132",
-      "opponent_name": "Jackson Patrick",
-      "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
-      "opponent_weight": 165,
-      "opponent_rank": 49,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:22",
-      "event": "vs. Tates Creek",
-      "mv_impact": -5.41
+      "mv_impact": -7.73
     },
     {
       "date": "2025-12-10",
@@ -212,37 +212,37 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 150,
-      "opponent_rank": 190,
+      "opponent_rank": 189,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Whitley County",
-      "mv_impact": 4.1
+      "mv_impact": 0.36
     },
     {
       "date": "2025-12-10",
       "opponent_id": "35188434132",
       "opponent_name": "Caleb Ronco",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 101,
-      "opponent_weight": 165,
-      "opponent_rank": 109,
+      "opponent_team_rank": 103,
+      "opponent_weight": 157,
+      "opponent_rank": 174,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek",
-      "mv_impact": 3.87
+      "mv_impact": 3.47
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35523865132",
       "opponent_name": "Cristian Gomez-Peterson",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
       "opponent_rank": 99,
       "weight_class": "165",
@@ -251,44 +251,74 @@
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": 2.71
+      "mv_impact": 2.18
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34993279132",
       "opponent_name": "Kaden Nichols",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 71,
       "opponent_weight": 165,
-      "opponent_rank": 36,
+      "opponent_rank": 40,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": -3.61
+      "mv_impact": -3.74
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34995373132",
       "opponent_name": "Nathan Sargent",
       "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 99,
+      "opponent_team_rank": 35,
       "opponent_weight": 165,
-      "opponent_rank": 38,
+      "opponent_rank": 43,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": -5.01
+      "mv_impact": -5.32
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.975
-  }
+  "career": {
+    "career_id": "career_002690",
+    "canonical_name": "Wyatt Poynter",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Tates Creek",
+      "record": "4-11",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Tates Creek",
+      "record": "11-13",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Tates Creek",
+      "record": "2-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

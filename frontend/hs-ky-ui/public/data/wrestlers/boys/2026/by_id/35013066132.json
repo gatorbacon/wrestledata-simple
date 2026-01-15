@@ -3,10 +3,10 @@
   "name": "Liam Couch",
   "team": "Perry County Central",
   "team_slug": "perry_county_central",
-  "team_rank": 113,
+  "team_rank": 115,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 90,
+  "current_rank": 79,
   "record": {
     "overall": "2-5",
     "vs_ranked": "2-4",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 93.1,
+    "df_plus": 102.0,
+    "apr_plus": 93.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,15 +33,15 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35658022132",
-      "opponent_rank": 91,
+      "opponent_rank": 80,
       "opponent_name": "Colby Morrison",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35700064132",
-      "opponent_rank": 106,
-      "opponent_name": "jace hunter",
-      "method": "Fall 1:31"
+      "opponent_id": "35030259132",
+      "opponent_rank": 78,
+      "opponent_name": "Tristan Langford",
+      "method": "Fall 1:30"
     }
   },
   "match_list": [
@@ -50,48 +50,45 @@
       "opponent_id": "35658022132",
       "opponent_name": "Colby Morrison",
       "opponent_team": "Pike County Central",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 52,
       "opponent_weight": 150,
-      "opponent_rank": 91,
+      "opponent_rank": 80,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pike County Central",
-      "mv_impact": 3.42
+      "event": "vs. Pike County Central"
     },
     {
       "date": "2025-12-16",
       "opponent_id": "35513057132",
       "opponent_name": "Wesley Curry",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 150,
-      "opponent_rank": 88,
+      "opponent_rank": 77,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Perry County Central",
-      "mv_impact": -8.79
+      "event": "vs. Perry County Central"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35039253132",
       "opponent_name": "Damian Sammons",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 150,
-      "opponent_rank": 81,
+      "opponent_rank": 65,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:18",
-      "event": "Anchor Down Showdown",
-      "mv_impact": -8.06
+      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
@@ -113,53 +110,71 @@
       "opponent_id": "35700064132",
       "opponent_name": "jace hunter",
       "opponent_team": "Paintsville",
-      "opponent_team_rank": 111,
+      "opponent_team_rank": 113,
       "opponent_weight": 157,
-      "opponent_rank": 106,
+      "opponent_rank": 66,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:31",
-      "event": "Cougar Classic",
-      "mv_impact": -8.72
+      "event": "Cougar Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35030265132",
       "opponent_name": "Nevaeh Ruelas",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 150,
-      "opponent_rank": 124,
+      "opponent_rank": 131,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Cougar Classic",
-      "mv_impact": 2.2
+      "event": "Cougar Classic"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35030259132",
       "opponent_name": "Tristan Langford",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 150,
-      "opponent_rank": 89,
+      "opponent_rank": 78,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "Cougar Classic",
-      "mv_impact": -7.33
+      "event": "Cougar Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  "career": {
+    "career_id": "career_002135",
+    "canonical_name": "Liam Couch",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Perry County Central",
+      "record": "2-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Perry County Central",
+      "record": "0-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

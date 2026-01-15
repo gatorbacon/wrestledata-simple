@@ -3,31 +3,31 @@
   "name": "Camryn Coffey",
   "team": "Madison Central",
   "team_slug": "madison_central",
-  "team_rank": 11,
+  "team_rank": 17,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 12,
+  "current_rank": 13,
   "record": {
-    "overall": "9-4",
-    "vs_ranked": "9-3",
+    "overall": "11-4",
+    "vs_ranked": "11-3",
     "vs_top10": "1-1",
     "vs_top25": "7-3"
   },
   "metrics": {
-    "pf7": 3.67,
-    "pa7": 6.33,
-    "pd7": -2.67,
-    "si_plus": 92.2,
-    "df_plus": 109.0,
-    "apr_plus": 112.1,
-    "pin_rate": 0.778,
-    "bonus_rate": 0.778,
+    "pf7": 4.0,
+    "pa7": 4.75,
+    "pd7": -0.75,
+    "si_plus": 92.8,
+    "df_plus": 110.9,
+    "apr_plus": 109.7,
+    "pin_rate": 0.727,
+    "bonus_rate": 0.727,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
-    "ranked_wins": 9,
+    "ranked_wins": 11,
     "ranked_losses": 3,
     "top10_wins": 1,
     "top10_losses": 1,
@@ -39,43 +39,71 @@
     },
     "worst_loss": {
       "opponent_id": "35528546132",
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "opponent_name": "Braylon Ryan",
       "method": "Dec 6-3"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35081204132",
+      "opponent_name": "Brayden Schumann",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 34,
+      "opponent_weight": 113,
+      "opponent_rank": 15,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "vs. Madison Central"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35359598132",
+      "opponent_name": "Cayden Ramirez",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": 114,
+      "opponent_weight": 113,
+      "opponent_rank": 41,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35180956132",
       "opponent_name": "Maddox Cochran",
       "opponent_team": "Danville",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 70,
       "opponent_weight": 113,
-      "opponent_rank": 49,
+      "opponent_rank": 52,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:46",
-      "event": "Warhawk Classic",
-      "mv_impact": 4.62
+      "event": "Warhawk Classic"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35405495132",
       "opponent_name": "Nathan Dillingham",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 86,
       "opponent_weight": 113,
-      "opponent_rank": 22,
+      "opponent_rank": 23,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:02",
-      "event": "Warhawk Classic",
-      "mv_impact": 8.09
+      "event": "Warhawk Classic"
     },
     {
       "date": "2026-01-03",
@@ -84,53 +112,20 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": 133,
       "opponent_weight": 113,
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:44",
-      "event": "Warhawk Classic",
-      "mv_impact": -4.36
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "34988688132",
-      "opponent_name": "Anthony Velasco",
-      "opponent_team": "Christian County",
-      "opponent_team_rank": 35,
-      "opponent_weight": 113,
-      "opponent_rank": 7,
-      "weight_class": "113",
-      "result": "L",
-      "method": "MD",
-      "score": "10-1",
-      "duration": "7:00",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": -0.73
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35405495132",
-      "opponent_name": "Nathan Dillingham",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": 81,
-      "opponent_weight": 113,
-      "opponent_rank": 22,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:02",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": 8.09
+      "event": "Warhawk Classic"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34993799132",
       "opponent_name": "Noe Rodriguez",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 106,
       "opponent_rank": 15,
       "weight_class": "113",
@@ -138,24 +133,52 @@
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": 5.27
+      "event": "Lafayette 5 Star Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34988688132",
+      "opponent_name": "Anthony Velasco",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 43,
+      "opponent_weight": 113,
+      "opponent_rank": 6,
+      "weight_class": "113",
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Lafayette 5 Star Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35405495132",
+      "opponent_name": "Nathan Dillingham",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 113,
+      "opponent_rank": 23,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:02",
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35144534132",
       "opponent_name": "Jude Fortier",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 113,
-      "opponent_rank": 13,
+      "opponent_rank": 14,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:56",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": 7.12
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-20",
@@ -164,30 +187,28 @@
       "opponent_team": "West Jessamine",
       "opponent_team_rank": 136,
       "opponent_weight": 113,
-      "opponent_rank": 19,
+      "opponent_rank": 31,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:52",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": 7.54
+      "event": "Lafayette 5 Star Tournament"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34989332132",
       "opponent_name": "Christian Church",
       "opponent_team": "Campbell County",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 113,
-      "opponent_rank": 42,
+      "opponent_rank": 47,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:06",
-      "event": "2025 Ryle Raider Rumble",
-      "mv_impact": 5.24
+      "event": "2025 Ryle Raider Rumble"
     },
     {
       "date": "2025-12-13",
@@ -196,14 +217,13 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": 133,
       "opponent_weight": 113,
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:59",
-      "event": "2025 Ryle Raider Rumble",
-      "mv_impact": 7.64
+      "event": "2025 Ryle Raider Rumble"
     },
     {
       "date": "2025-12-13",
@@ -242,14 +262,39 @@
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": 133,
       "opponent_weight": 113,
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "weight_class": "113",
       "result": "L",
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "Bearcat Brawl 2025",
-      "mv_impact": -1.36
+      "event": "Bearcat Brawl 2025"
+    }
+  ],
+  "career": {
+    "career_id": "career_001492",
+    "canonical_name": "Camryn Coffey",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Madison Central",
+      "record": "14-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Madison Central",
+      "record": "21-17",
+      "regional_place": 3,
+      "state_place": null
     }
   ]
 }

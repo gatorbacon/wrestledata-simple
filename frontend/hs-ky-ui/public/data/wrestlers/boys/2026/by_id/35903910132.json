@@ -3,13 +3,13 @@
   "name": "Jonathan Gray",
   "team": "Knox Central",
   "team_slug": "knox_central",
-  "team_rank": 95,
+  "team_rank": 98,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 114,
+  "current_rank": 122,
   "record": {
-    "overall": "4-4",
-    "vs_ranked": "2-3",
+    "overall": "4-5",
+    "vs_ranked": "2-4",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 101.6,
+    "df_plus": 102.0,
+    "apr_plus": 100.4,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -28,31 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35013061132",
-      "opponent_rank": 61,
+      "opponent_rank": 70,
       "opponent_name": "Landon Baker",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35030261132",
-      "opponent_rank": 113,
+      "opponent_rank": 120,
       "opponent_name": "Bradlee Mounce",
       "method": "Fall 1:24"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-06",
+      "opponent_id": "35476520132",
+      "opponent_name": "kaison phillips",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 120,
+      "opponent_weight": 144,
+      "opponent_rank": 61,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "vs. Pulaski County"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "34993874132",
       "opponent_name": "Brendan Martin",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 87,
       "opponent_weight": 150,
-      "opponent_rank": 171,
+      "opponent_rank": 179,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "35030261132",
       "opponent_name": "Bradlee Mounce",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 120,
       "opponent_weight": 150,
-      "opponent_rank": 113,
+      "opponent_rank": 120,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -80,9 +95,9 @@
       "opponent_id": "34997600132",
       "opponent_name": "BJ Jackson",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 138,
-      "opponent_rank": 7,
+      "opponent_rank": 8,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35013061132",
       "opponent_name": "Landon Baker",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
-      "opponent_weight": 144,
-      "opponent_rank": 61,
+      "opponent_team_rank": 115,
+      "opponent_weight": 138,
+      "opponent_rank": 70,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -155,9 +170,9 @@
       "opponent_id": "34995976132",
       "opponent_name": "Hunter Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 150,
-      "opponent_rank": 29,
+      "opponent_rank": 27,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -166,9 +181,21 @@
       "event": "vs. Knox Central"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.7631578947368421
-  }
+  "career": {
+    "career_id": "career_004717",
+    "canonical_name": "Jonathan Gray",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Knox Central",
+      "record": "5-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

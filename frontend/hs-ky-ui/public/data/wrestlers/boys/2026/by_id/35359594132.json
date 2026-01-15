@@ -3,54 +3,99 @@
   "name": "Jayden Roberts",
   "team": "Paul Laurence Dunbar",
   "team_slug": "paul_laurence_dunbar",
-  "team_rank": 112,
-  "weight_class": 215,
+  "team_rank": 114,
+  "weight_class": 190,
   "year": 2026,
   "current_rank": 95,
   "record": {
-    "overall": "4-4",
-    "vs_ranked": "4-2",
+    "overall": "5-6",
+    "vs_ranked": "5-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 104.3,
+    "df_plus": 102.0,
+    "apr_plus": 103.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 2,
+    "ranked_wins": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35397742132",
-      "opponent_rank": 115,
-      "opponent_name": "Haris Fazlic",
+      "opponent_id": "35081207132",
+      "opponent_rank": 32,
+      "opponent_name": "Mason Nord-Hodges",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35119533132",
-      "opponent_rank": 72,
+      "opponent_rank": 70,
       "opponent_name": "Landon Wuellner",
       "method": "Fall 0:37"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35225529132",
+      "opponent_name": "Emmanuel Mpungu",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": 85,
+      "opponent_weight": 190,
+      "opponent_rank": 39,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35045484132",
+      "opponent_name": "AUSTIN HURST",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 17,
+      "opponent_weight": 190,
+      "opponent_rank": 21,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35081207132",
+      "opponent_name": "Mason Nord-Hodges",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 34,
+      "opponent_weight": 175,
+      "opponent_rank": 32,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
       "date": "2025-12-22",
       "opponent_id": "34996000132",
       "opponent_name": "Jackson Tapp",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 215,
       "opponent_rank": 131,
       "weight_class": "215",
@@ -82,7 +127,7 @@
       "opponent_team": "Conner",
       "opponent_team_rank": 10,
       "opponent_weight": 215,
-      "opponent_rank": 72,
+      "opponent_rank": 70,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -107,27 +152,12 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35397742132",
-      "opponent_name": "Haris Fazlic",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": 18,
-      "opponent_weight": 190,
-      "opponent_rank": 115,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Paul Laurence Dunbar"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "34995986132",
       "opponent_name": "Alexander Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 215,
-      "opponent_rank": 26,
+      "opponent_rank": 27,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -140,9 +170,9 @@
       "opponent_id": "36097839132",
       "opponent_name": "Tabroyne Bowling",
       "opponent_team": "Bourbon County",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 63,
       "opponent_weight": 215,
-      "opponent_rank": 175,
+      "opponent_rank": 173,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -155,9 +185,24 @@
       "opponent_id": "35427181132",
       "opponent_name": "Ahntonio Rivera",
       "opponent_team": "East Jessamine",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 77,
       "opponent_weight": 215,
-      "opponent_rank": 128,
+      "opponent_rank": 129,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35397742132",
+      "opponent_name": "Haris Fazlic",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 34,
+      "opponent_weight": 190,
+      "opponent_rank": 96,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -166,9 +211,39 @@
       "event": "vs. Paul Laurence Dunbar"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_002122",
+    "canonical_name": "Jayden Roberts",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Paul Laurence Dunbar",
+      "record": "5-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Paul Laurence Dunbar",
+      "record": "19-22",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Paul Laurence Dunbar",
+      "record": "5-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

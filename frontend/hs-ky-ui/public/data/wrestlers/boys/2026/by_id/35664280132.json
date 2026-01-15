@@ -3,10 +3,10 @@
   "name": "Blake Gipson",
   "team": "Logan County",
   "team_slug": "logan_county",
-  "team_rank": 100,
+  "team_rank": 102,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 38,
+  "current_rank": 48,
   "record": {
     "overall": "4-2",
     "vs_ranked": "3-1",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 102.0,
+    "df_plus": 102.0,
+    "apr_plus": 101.7,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
@@ -32,14 +32,14 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35223098132",
-      "opponent_rank": 51,
-      "opponent_name": "Dalyn Wheeler",
-      "method": "Inj. [time]"
+      "opponent_id": "35205296132",
+      "opponent_rank": 57,
+      "opponent_name": "John Hightower",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35436843132",
-      "opponent_rank": 34,
+      "opponent_rank": 43,
       "opponent_name": "Braylen Miller",
       "method": "Fall 2:36"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35223098132",
       "opponent_name": "Dalyn Wheeler",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 86,
+      "opponent_team_rank": 91,
       "opponent_weight": 285,
-      "opponent_rank": 51,
+      "opponent_rank": 58,
       "weight_class": "285",
       "result": "W",
       "method": "INJ",
@@ -80,9 +80,9 @@
       "opponent_id": "35436843132",
       "opponent_name": "Braylen Miller",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 38,
       "opponent_weight": 285,
-      "opponent_rank": 34,
+      "opponent_rank": 43,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "34989020132",
       "opponent_name": "Gabe Burdin",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 175,
-      "opponent_rank": 134,
+      "opponent_rank": 78,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -125,9 +125,9 @@
       "opponent_id": "35205296132",
       "opponent_name": "John Hightower",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 89,
       "opponent_weight": 285,
-      "opponent_rank": 52,
+      "opponent_rank": 57,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -136,9 +136,21 @@
       "event": "vs. Logan County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.375
-  }
+  "career": {
+    "career_id": "career_005515",
+    "canonical_name": "Blake Gipson",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Logan County",
+      "record": "4-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

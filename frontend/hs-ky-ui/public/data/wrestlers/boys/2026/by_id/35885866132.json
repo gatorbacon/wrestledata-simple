@@ -6,53 +6,83 @@
   "team_rank": 20,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 21,
+  "current_rank": 33,
   "record": {
-    "overall": "10-2",
-    "vs_ranked": "3-1",
+    "overall": "11-3",
+    "vs_ranked": "4-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 8.0,
     "pa7": 10.0,
     "pd7": -2.0,
-    "si_plus": 98.4,
-    "df_plus": 101.9,
-    "apr_plus": 107.7,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.6,
+    "si_plus": 99.3,
+    "df_plus": 105.7,
+    "apr_plus": 108.3,
+    "pin_rate": 0.636,
+    "bonus_rate": 0.636,
     "majors": 0,
     "techs": 0,
-    "pins": 6
+    "pins": 7
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 1,
+    "ranked_wins": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35562978132",
-      "opponent_rank": 36,
+      "opponent_rank": 35,
       "opponent_name": "Henry Bueter",
       "method": "Fall 3:16"
     },
     "worst_loss": {
       "opponent_id": "35640100132",
-      "opponent_rank": 154,
+      "opponent_rank": 31,
       "opponent_name": "Cayden Pauley",
       "method": "Dec 10-8"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "34997608132",
+      "opponent_name": "Noah Simpson",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 69,
+      "opponent_weight": 126,
+      "opponent_rank": 11,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:10",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34992833132",
+      "opponent_name": "Bentley Wren",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 285,
+      "opponent_rank": 127,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    },
+    {
       "date": "2025-12-27",
       "opponent_id": "35679488132",
       "opponent_name": "Liam Greene",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 126,
-      "opponent_rank": 79,
+      "opponent_rank": 85,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -170,9 +200,9 @@
       "opponent_id": "35640100132",
       "opponent_name": "Cayden Pauley",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 44,
-      "opponent_weight": 120,
-      "opponent_rank": 154,
+      "opponent_team_rank": 47,
+      "opponent_weight": 126,
+      "opponent_rank": 31,
       "weight_class": "126",
       "result": "L",
       "method": "DEC",
@@ -185,9 +215,9 @@
       "opponent_id": "35739653132",
       "opponent_name": "Elijah Toller",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 105,
       "opponent_weight": 126,
-      "opponent_rank": 119,
+      "opponent_rank": 118,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -200,9 +230,9 @@
       "opponent_id": "35562978132",
       "opponent_name": "Henry Bueter",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 126,
-      "opponent_rank": 36,
+      "opponent_rank": 35,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -226,9 +256,39 @@
       "event": "vs. Henry Clay"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.6041666666666667
-  }
+  "career": {
+    "career_id": "career_002898",
+    "canonical_name": "Bryson Smith",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Wayne County",
+      "record": "13-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Wayne County",
+      "record": "24-13",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Wayne County",
+      "record": "27-19",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

@@ -6,20 +6,20 @@
   "team_rank": null,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 108,
+  "current_rank": 113,
   "record": {
-    "overall": "1-6",
-    "vs_ranked": "0-2",
+    "overall": "2-11",
+    "vs_ranked": "0-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
+    "pf7": 25.0,
+    "pa7": 25.0,
     "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 87.0,
+    "si_plus": 126.4,
+    "df_plus": 79.9,
+    "apr_plus": 86.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,26 +28,116 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34999329132",
-      "opponent_rank": 93,
-      "opponent_name": "Aaron Dickey",
-      "method": "Fall 0:14"
+      "opponent_id": "35024648132",
+      "opponent_rank": 152,
+      "opponent_name": "Sebastian Woosley",
+      "method": "Fall 0:19"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-13",
+      "opponent_id": "35698533132",
+      "opponent_name": "Mason Clark",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 25,
+      "opponent_weight": 106,
+      "opponent_rank": 91,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2026-01-13",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bosse"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35194039132",
+      "opponent_name": "Response Shyaka",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 106,
+      "opponent_rank": 84,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "vs. Warren Central"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35007891132",
+      "opponent_name": "Garrett Johnson",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 113,
+      "opponent_rank": 20,
+      "weight_class": "113",
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "0:56",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35194099132",
+      "opponent_name": "Braxton Maxwell",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 113,
+      "opponent_rank": 86,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "vs. Warren Central"
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35024648132",
+      "opponent_name": "Sebastian Woosley",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 126,
+      "opponent_rank": 152,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:19",
+      "event": "vs. Trinity (Whitesville)"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "34999329132",
       "opponent_name": "Aaron Dickey",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 46,
       "opponent_weight": 113,
-      "opponent_rank": 93,
+      "opponent_rank": 84,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -75,15 +165,30 @@
       "opponent_id": "35383666132",
       "opponent_name": "Adam Quintana Melton",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 113,
-      "opponent_rank": 39,
+      "opponent_rank": 28,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35410625132",
+      "opponent_name": "Matthew Reid",
+      "opponent_team": "Greenbrier High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Frank Alexander Invite"
     },
     {
       "date": "2025-12-06",
@@ -117,21 +222,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35410625132",
-      "opponent_name": "Matthew Reid",
-      "opponent_team": "Greenbrier High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Frank Alexander Invite"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35351303132",
       "opponent_name": "DeShawn Jackson",
       "opponent_team": "Stratford High School",
@@ -144,6 +234,32 @@
       "score": null,
       "duration": "0:00",
       "event": "Frank Alexander Invite"
+    }
+  ],
+  "career": {
+    "career_id": "career_002784",
+    "canonical_name": "Will Kuder",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Trinity (Whitesville)",
+      "record": "4-11",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Trinity (Whitesville)",
+      "record": "14-18",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

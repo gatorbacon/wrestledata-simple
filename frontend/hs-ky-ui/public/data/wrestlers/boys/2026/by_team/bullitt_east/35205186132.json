@@ -3,43 +3,38 @@
   "name": "Conner Zurschmeide",
   "team": "Bullitt East",
   "team_slug": "bullitt_east",
-  "team_rank": 26,
+  "team_rank": 22,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 107,
+  "current_rank": 102,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "0-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 15.0,
+    "pf7": 0.0,
     "pa7": 0.0,
-    "pd7": 15.0,
-    "si_plus": 109.3,
-    "df_plus": 115.9,
-    "apr_plus": 90.6,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 90.5,
     "pin_rate": 0.0,
-    "bonus_rate": 1.0,
+    "bonus_rate": 0.0,
     "majors": 0,
-    "techs": 1,
+    "techs": 0,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_wins": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "35271612132",
-      "opponent_rank": 50,
-      "opponent_name": "Haelan Robles",
-      "method": "TF 15-0 0:00"
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35217574132",
-      "opponent_rank": 106,
+      "opponent_rank": 101,
       "opponent_name": "Gavin Meiller",
       "method": "Fall 3:33"
     }
@@ -50,32 +45,49 @@
       "opponent_id": "35217574132",
       "opponent_name": "Gavin Meiller",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 144,
-      "opponent_rank": 106,
+      "opponent_rank": 101,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:33",
       "event": "vs. Fern Creek",
-      "mv_impact": -8.36
+      "mv_impact": -8.35
     },
     {
-      "date": "2025-11-29",
-      "opponent_id": "35271612132",
-      "opponent_name": "Haelan Robles",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 31,
-      "opponent_weight": 138,
-      "opponent_rank": 50,
+      "date": "2026-01-03",
+      "opponent_id": "35280922132",
+      "opponent_name": "Sean Moreno",
+      "opponent_team": "Southern",
+      "opponent_team_rank": 54,
+      "opponent_weight": 144,
+      "opponent_rank": 56,
       "weight_class": "144",
-      "result": "W",
-      "method": "TF",
-      "score": "15-0",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
       "duration": "0:00",
-      "event": "vs. Simon Kenton",
-      "mv_impact": 6.62
+      "event": "vs. Southern",
+      "mv_impact": -5.45
+    }
+  ],
+  "career": {
+    "career_id": "career_005250",
+    "canonical_name": "Conner Zurschmeide",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Bullitt East",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

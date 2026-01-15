@@ -3,23 +3,23 @@
   "name": "Brady Baker",
   "team": "Letcher County Central",
   "team_slug": "letcher_county_central",
-  "team_rank": 98,
-  "weight_class": 138,
+  "team_rank": 101,
+  "weight_class": 132,
   "year": 2026,
-  "current_rank": 175,
+  "current_rank": 190,
   "record": {
-    "overall": "0-5",
-    "vs_ranked": "0-5",
+    "overall": "0-8",
+    "vs_ranked": "0-8",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 91.3,
+    "pf7": 4.0,
+    "pa7": 17.0,
+    "pd7": -13.0,
+    "si_plus": 91.5,
+    "df_plus": 91.6,
+    "apr_plus": 89.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,33 +28,81 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35129319132",
-      "opponent_rank": 136,
-      "opponent_name": "Rylan Combs",
-      "method": "Fall 0:00"
+      "opponent_id": "37432425132",
+      "opponent_rank": 191,
+      "opponent_name": "Knox Woodman",
+      "method": "Fall 1:44"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "37432425132",
+      "opponent_name": "Knox Woodman",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 132,
+      "opponent_rank": 191,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:44",
+      "event": "Clipson Jones Classic 2026",
+      "mv_impact": -6.64
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35017751132",
+      "opponent_name": "Harrison Groves",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 132,
+      "opponent_rank": 184,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:51",
+      "event": "Clipson Jones Classic 2026",
+      "mv_impact": -7.71
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35513062132",
+      "opponent_name": "Jayden Tilley",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 60,
+      "opponent_weight": 132,
+      "opponent_rank": 114,
+      "weight_class": "132",
+      "result": "L",
+      "method": "MD",
+      "score": "17-4",
+      "duration": "7:00",
+      "event": "Clipson Jones Classic 2026",
+      "mv_impact": -6.88
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35122088132",
       "opponent_name": "Caleb Riordan",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 138,
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:09",
       "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -4.85
+      "mv_impact": -4.5
     },
     {
       "date": "2025-12-30",
@@ -63,62 +111,79 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 138,
-      "opponent_rank": 81,
+      "opponent_rank": 78,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:26",
       "event": "Boys Hatfield McCoy 32 2025",
-      "mv_impact": -6.05
+      "mv_impact": -5.74
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35513063132",
       "opponent_name": "Landyn Huffman",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 138,
-      "opponent_rank": 72,
+      "opponent_rank": 71,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Letcher County Central",
-      "mv_impact": -6.06
+      "mv_impact": -5.87
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35640192132",
       "opponent_name": "Cameron Fortune",
       "opponent_team": "Harlan County",
-      "opponent_team_rank": 85,
+      "opponent_team_rank": 90,
       "opponent_weight": 138,
-      "opponent_rank": 118,
+      "opponent_rank": 119,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Letcher County Central",
-      "mv_impact": -8.64
+      "mv_impact": -8.73
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35129319132",
       "opponent_name": "Rylan Combs",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 115,
       "opponent_weight": 138,
-      "opponent_rank": 136,
+      "opponent_rank": 134,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Perry County Central",
-      "mv_impact": -10.11
+      "mv_impact": -9.48
+    }
+  ],
+  "career": {
+    "career_id": "career_004787",
+    "canonical_name": "Brady Baker",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Letcher County Central",
+      "record": "1-8",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

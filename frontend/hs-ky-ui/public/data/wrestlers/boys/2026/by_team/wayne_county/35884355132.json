@@ -6,20 +6,20 @@
   "team_rank": 20,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 200,
+  "current_rank": 163,
   "record": {
-    "overall": "1-7",
-    "vs_ranked": "0-4",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-12",
+    "vs_ranked": "0-9",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 90.2,
+    "df_plus": 102.0,
+    "apr_plus": 92.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,78 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 9,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 2,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34997605132",
-      "opponent_rank": 84,
-      "opponent_name": "Coleman Ball",
-      "method": "Fall 0:36"
+      "opponent_id": "35325216132",
+      "opponent_rank": 140,
+      "opponent_name": "Tyson Johnson",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34992806132",
+      "opponent_name": "Kaygen Roberts",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 150,
+      "opponent_rank": 2,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35030260132",
+      "opponent_name": "Tucker Langford",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 120,
+      "opponent_weight": 150,
+      "opponent_rank": 69,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34997607132",
+      "opponent_name": "Jackson Patrick",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 69,
+      "opponent_weight": 157,
+      "opponent_rank": 85,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35325216132",
+      "opponent_name": "Tyson Johnson",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": 103,
+      "opponent_weight": 157,
+      "opponent_rank": 140,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35178437132",
@@ -90,9 +150,9 @@
       "opponent_id": "34995989132",
       "opponent_name": "Grayson Malicoat",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 175,
-      "opponent_rank": 52,
+      "opponent_rank": 46,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -105,9 +165,9 @@
       "opponent_id": "34997605132",
       "opponent_name": "Coleman Ball",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 175,
-      "opponent_rank": 84,
+      "opponent_rank": 57,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -120,9 +180,9 @@
       "opponent_id": "35599166132",
       "opponent_name": "Darius Ridner",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 175,
-      "opponent_rank": 53,
+      "opponent_rank": 42,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -147,18 +207,50 @@
     },
     {
       "date": "2025-12-20",
+      "opponent_id": "35205072132",
+      "opponent_name": "Max Baxter",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 22,
+      "opponent_weight": 175,
+      "opponent_rank": 5,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lafayette 5 Star Tournament"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "35238081132",
       "opponent_name": "Cooper Garland",
       "opponent_team": "West Jessamine",
       "opponent_team_rank": 136,
       "opponent_weight": 175,
-      "opponent_rank": 70,
+      "opponent_rank": 85,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:47",
       "event": "Lafayette 5 Star Tournament"
+    }
+  ],
+  "career": {
+    "career_id": "career_005752",
+    "canonical_name": "dillon dugger",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Wayne County",
+      "record": "1-12",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

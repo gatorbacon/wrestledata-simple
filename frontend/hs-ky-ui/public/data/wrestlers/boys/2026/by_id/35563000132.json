@@ -3,13 +3,13 @@
   "name": "Charlie Hummel",
   "team": "St. Xavier",
   "team_slug": "st_xavier",
-  "team_rank": 22,
+  "team_rank": 18,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 25,
+  "current_rank": 34,
   "record": {
-    "overall": "3-0",
-    "vs_ranked": "3-0",
+    "overall": "4-0",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,22 +18,22 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 118.7,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "df_plus": 102.0,
+    "apr_plus": 116.3,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35459045132",
-      "opponent_rank": 26,
+      "opponent_rank": 35,
       "opponent_name": "Castle Whitaker",
       "method": "Fall 0:38"
     },
@@ -42,56 +42,93 @@
   "match_list": [
     {
       "date": "2025-12-20",
+      "opponent_id": "35668728132",
+      "opponent_name": "Siddiq Stephens",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 285,
+      "opponent_rank": 152,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. St. Xavier",
+      "mv_impact": 0.94
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "34988541132",
       "opponent_name": "Shane Willock",
       "opponent_team": "Doss",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 74,
       "opponent_weight": 285,
-      "opponent_rank": 68,
+      "opponent_rank": 74,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": null,
       "duration": "7:00",
       "event": "vs. St. Xavier",
-      "mv_impact": 5.86
+      "mv_impact": 5.51
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35688837132",
       "opponent_name": "Lorenzo McGinty",
       "opponent_team": "Meade County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 108,
       "opponent_weight": 285,
-      "opponent_rank": 145,
+      "opponent_rank": 154,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:07",
       "event": "vs. St. Xavier",
-      "mv_impact": 1.59
+      "mv_impact": 1.72
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35459045132",
       "opponent_name": "Castle Whitaker",
       "opponent_team": "North Oldham",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 28,
       "opponent_weight": 285,
-      "opponent_rank": 26,
+      "opponent_rank": 35,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:38",
       "event": "King of the Bluegrass",
-      "mv_impact": 7.68
+      "mv_impact": 7.32
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.183068783068783
-  }
+  "career": {
+    "career_id": "career_002674",
+    "canonical_name": "Charlie Hummel",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "St. Xavier",
+      "record": "4-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "St. Xavier",
+      "record": "8-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

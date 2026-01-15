@@ -3,10 +3,10 @@
   "name": "Ezekiel Young",
   "team": "Hart County",
   "team_slug": "hart_county",
-  "team_rank": 86,
+  "team_rank": 91,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 85,
+  "current_rank": 96,
   "record": {
     "overall": "3-4",
     "vs_ranked": "1-4",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 94.5,
+    "df_plus": 102.0,
+    "apr_plus": 95.9,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35179135132",
-      "opponent_rank": 134,
+      "opponent_rank": 142,
       "opponent_name": "Ayden Stagner",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "34992061132",
-      "opponent_rank": 156,
+      "opponent_rank": 158,
       "opponent_name": "Trae Williams",
       "method": "Fall 0:00"
     }
@@ -47,12 +47,27 @@
   "match_list": [
     {
       "date": "2025-12-13",
+      "opponent_id": "35192368132",
+      "opponent_name": "Dameon Jones",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 102,
+      "opponent_weight": 106,
+      "opponent_rank": 36,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "vs. Logan County"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35341879132",
       "opponent_name": "Kawan McCrae",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 11,
       "opponent_weight": 113,
-      "opponent_rank": 43,
+      "opponent_rank": 48,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -76,28 +91,13 @@
       "event": "vs. Adair County"
     },
     {
-      "date": "2025-12-13",
-      "opponent_id": "35192368132",
-      "opponent_name": "Dameon Jones",
-      "opponent_team": "Logan County",
-      "opponent_team_rank": 100,
-      "opponent_weight": 113,
-      "opponent_rank": 34,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:03",
-      "event": "vs. Logan County"
-    },
-    {
       "date": "2025-12-11",
       "opponent_id": "35179135132",
       "opponent_name": "Ayden Stagner",
       "opponent_team": "Campbellsville",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 67,
       "opponent_weight": 106,
-      "opponent_rank": 134,
+      "opponent_rank": 142,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
@@ -125,9 +125,9 @@
       "opponent_id": "34992061132",
       "opponent_name": "Trae Williams",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 58,
       "opponent_weight": 120,
-      "opponent_rank": 156,
+      "opponent_rank": 158,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -140,9 +140,9 @@
       "opponent_id": "34994784132",
       "opponent_name": "Lucas Montgomery",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 120,
-      "opponent_rank": 18,
+      "opponent_rank": 22,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -151,9 +151,21 @@
       "event": "vs. Spencer County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3194444444444444
-  }
+  "career": {
+    "career_id": "career_004773",
+    "canonical_name": "Ezekiel Young",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Hart County",
+      "record": "5-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

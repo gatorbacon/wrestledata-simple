@@ -3,23 +3,23 @@
   "name": "Jaylin Bellamy",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 27,
+  "team_rank": 29,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 10,
+  "current_rank": 8,
   "record": {
-    "overall": "23-2",
-    "vs_ranked": "2-1",
-    "vs_top10": "0-1",
-    "vs_top25": "1-1"
+    "overall": "23-3",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 98.8,
+    "df_plus": 102.0,
+    "apr_plus": 98.6,
     "pin_rate": 0.348,
     "bonus_rate": 0.783,
     "majors": 2,
@@ -28,19 +28,19 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "34989007132",
-      "opponent_rank": 22,
+      "opponent_rank": 28,
       "opponent_name": "Kaden Coy",
       "method": "Fall 4:55"
     },
     "worst_loss": {
-      "opponent_id": "35850447132",
-      "opponent_rank": 5,
-      "opponent_name": "Chase Gillum",
+      "opponent_id": "35144074132",
+      "opponent_rank": 6,
+      "opponent_name": "Lucas Oliverio",
       "method": "M. For."
     }
   },
@@ -50,9 +50,24 @@
       "opponent_id": "35850447132",
       "opponent_name": "Chase Gillum",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 150,
-      "opponent_rank": 5,
+      "opponent_rank": 3,
+      "weight_class": "150",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35144074132",
+      "opponent_name": "Lucas Oliverio",
+      "opponent_team": "Desales",
+      "opponent_team_rank": 72,
+      "opponent_weight": 150,
+      "opponent_rank": 6,
       "weight_class": "150",
       "result": "L",
       "method": "MFF",
@@ -65,9 +80,9 @@
       "opponent_id": "34989007132",
       "opponent_name": "Kaden Coy",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 150,
-      "opponent_rank": 22,
+      "opponent_rank": 28,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -275,9 +290,9 @@
       "opponent_id": "35281689132",
       "opponent_name": "Ethan Wilson",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 106,
       "opponent_weight": 157,
-      "opponent_rank": 115,
+      "opponent_rank": 110,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -421,9 +436,39 @@
       "event": "Blackhorse Invitational"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.5185185185185184
-  }
+  "career": {
+    "career_id": "career_002065",
+    "canonical_name": "Jaylin Bellamy",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Paducah Tilghman",
+      "record": "24-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Paducah Tilghman",
+      "record": "32-14",
+      "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Paducah Tilghman",
+      "record": "19-15",
+      "regional_place": 4,
+      "state_place": null
+    }
+  ]
 }

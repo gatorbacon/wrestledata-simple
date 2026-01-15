@@ -239,7 +239,9 @@ function safe(value, formatter) {
   }
   
   function renderWrestlerProfile(data) {
+    console.log("[RENDER] renderWrestlerProfile called");
     const isHS = isHSSite();
+    console.log("[RENDER] isHS =", isHS, "HS_CONFIG =", typeof HS_CONFIG);
     
     document.getElementById("wrestler-name").textContent = safe(data.name);
     
@@ -271,7 +273,16 @@ function safe(value, formatter) {
     }
   
     // Hide advanced analytics sections for HS
+    console.log("[DEBUG] About to check isHS, value:", isHS);
     if (isHS) {
+      console.log("[HS Profile] HS site detected, rendering HS-specific sections");
+      console.log("[HS Profile] Career data check:", {
+        hasCareer: !!data.career,
+        hasSeasonSummary: !!data.season_summary,
+        career: data.career,
+        seasonSummary: data.season_summary
+      });
+      
       // Hide the entire profile summary grid (TPAR, Timeline, Skill Profile)
       const profileGrid = document.querySelector(".profile-summary-grid");
       if (profileGrid) {
@@ -282,7 +293,12 @@ function safe(value, formatter) {
       document.getElementById("skill-section").style.display = "none";
       document.getElementById("mv-context-section").style.display = "none";
       
+      // Render Career Summary for HS (if available)
+      console.log("[HS Profile] Calling renderCareerSummary");
+      renderCareerSummary(data);
+      
       // Render simplified Season Stats for HS
+      console.log("[HS Profile] Calling renderSimplifiedSeasonStats");
       renderSimplifiedSeasonStats(data);
     } else {
     // ========================================
@@ -553,6 +569,17 @@ function safe(value, formatter) {
     // ========================================
     // MATCH HISTORY
     // ========================================
+    // Update Match History title with current year
+    const matchHistorySection = document.querySelector(".section--match-history");
+    if (matchHistorySection) {
+      const matchHistoryHeader = matchHistorySection.querySelector("h2");
+      if (matchHistoryHeader) {
+        const season = data.year || getSeasonFromURL();
+        matchHistoryHeader.textContent = season ? `${season} Match History` : "Match History";
+        matchHistoryHeader.className = "section-title-newspaper";
+      }
+    }
+    
     const seasonMV = isHS ? null : mv.mv_avg;
     renderMatchTable(data.match_list || [], seasonMV, isHS);
   }
@@ -567,6 +594,172 @@ function safe(value, formatter) {
     const total = wins + losses;
     if (total === 0) return null;
     return (wins / total) * 100;
+  }
+
+  // Career Summary for HS (compact table of season history)
+  // Version: 2024-01-XX - Added career summary table
+  function renderCareerSummary(data) {
+    console.log("=== CAREER SUMMARY FUNCTION CALLED ===");
+    console.log("[Career Summary] Function called with data:", data);
+    
+    // Only render if career data exists
+    if (!data.career || !data.season_summary || !Array.isArray(data.season_summary) || data.season_summary.length === 0) {
+      console.log("[Career Summary] Skipping - no career data available", {
+        hasCareer: !!data.career,
+        hasSeasonSummary: !!data.season_summary,
+        seasonSummaryLength: data.season_summary?.length
+      });
+      return;
+    }
+    
+    console.log("[Career Summary] Rendering career summary", data.career, data.season_summary);
+
+    // Create a new section for Career Summary if it doesn't exist
+    let careerSummarySection = document.getElementById("career-summary-section");
+    if (!careerSummarySection) {
+      careerSummarySection = document.createElement("section");
+      careerSummarySection.id = "career-summary-section";
+      careerSummarySection.className = "section";
+      
+      // Insert after header, before any existing sections
+      // Try to insert after the header, before match history or season stats
+      const header = document.querySelector(".header");
+      const matchHistorySection = document.querySelector(".section--match-history");
+      const seasonStatsSection = document.getElementById("season-stats-section");
+      
+      if (header && header.nextSibling) {
+        // Insert right after header
+        header.parentNode.insertBefore(careerSummarySection, header.nextSibling);
+      } else if (seasonStatsSection && seasonStatsSection.parentNode) {
+        // Insert before season stats if it exists
+        seasonStatsSection.parentNode.insertBefore(careerSummarySection, seasonStatsSection);
+      } else if (matchHistorySection && matchHistorySection.parentNode) {
+        // Insert before match history as fallback
+        matchHistorySection.parentNode.insertBefore(careerSummarySection, matchHistorySection);
+      } else {
+        // Final fallback: append to page container
+        const pageContainer = document.querySelector(".page-container");
+        if (pageContainer) {
+          pageContainer.appendChild(careerSummarySection);
+        }
+      }
+      
+      console.log("[Career Summary] Section created and inserted");
+    }
+    
+    careerSummarySection.innerHTML = "";
+    
+    // Section header - newspaper style, more prominent for historical anchor
+    const header = document.createElement("h2");
+    header.className = "section-title-career-summary";
+    header.textContent = "Career Summary";
+    careerSummarySection.appendChild(header);
+    
+    // Thin horizontal rule directly under header (archive anchor)
+    const headerRule = document.createElement("hr");
+    headerRule.className = "career-header-rule";
+    careerSummarySection.appendChild(headerRule);
+    
+    // Create table directly (no wrapper, no card styling)
+    const table = document.createElement("table");
+    table.className = "career-summary-table";
+    table.style.cssText = "width: 100%; font-size: 0.875rem; margin-top: 12px;";
+    
+    // Table header
+    const thead = document.createElement("thead");
+    const headerRow = document.createElement("tr");
+    const headers = ["Season", "Grade", "Team", "Record", "Regional Place", "State Place"];
+    headers.forEach(headerText => {
+      const th = document.createElement("th");
+      th.textContent = headerText;
+      th.style.cssText = "text-align: left; padding: 8px 12px; font-weight: 600; color: var(--muted); border-bottom: 1px solid var(--border);";
+      headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+    
+    // Table body
+    const tbody = document.createElement("tbody");
+    
+    // Sort seasons descending (most recent first) - already sorted in JSON but ensure it
+    const sortedSeasons = [...data.season_summary].sort((a, b) => b.season - a.season);
+    
+    sortedSeasons.forEach(seasonData => {
+      const row = document.createElement("tr");
+      row.style.cssText = "border-bottom: 1px solid var(--border);";
+      
+      // Helper to format cell value (use — for null/undefined)
+      const formatValue = (value) => {
+        if (value === null || value === undefined || value === "") {
+          return "—";
+        }
+        return String(value);
+      };
+      
+      // Season
+      const seasonCell = document.createElement("td");
+      seasonCell.textContent = formatValue(seasonData.season);
+      seasonCell.style.cssText = "padding: 8px 12px; color: var(--text);";
+      row.appendChild(seasonCell);
+      
+      // Grade (convert integer to abbreviation)
+      const gradeCell = document.createElement("td");
+      const formatGrade = (grade) => {
+        if (grade === null || grade === undefined || grade === "") {
+          return "—";
+        }
+        const gradeNum = parseInt(grade, 10);
+        if (isNaN(gradeNum)) {
+          return String(grade); // Return as-is if not a number
+        }
+        switch (gradeNum) {
+          case 12: return "Sr.";
+          case 11: return "Jr.";
+          case 10: return "So.";
+          case 9: return "Fr.";
+          case 8: return "8th";
+          case 7: return "7th";
+          default: return String(grade); // Fallback to original value
+        }
+      };
+      gradeCell.textContent = formatGrade(seasonData.grade);
+      gradeCell.style.cssText = "padding: 8px 12px; color: var(--text);";
+      row.appendChild(gradeCell);
+      
+      // Team
+      const teamCell = document.createElement("td");
+      teamCell.textContent = formatValue(seasonData.team);
+      teamCell.style.cssText = "padding: 8px 12px; color: var(--text);";
+      row.appendChild(teamCell);
+      
+      // Record
+      const recordCell = document.createElement("td");
+      recordCell.textContent = formatValue(seasonData.record);
+      recordCell.style.cssText = "padding: 8px 12px; color: var(--text);";
+      row.appendChild(recordCell);
+      
+      // Regional Place
+      const regionalCell = document.createElement("td");
+      regionalCell.textContent = formatValue(seasonData.regional_place);
+      regionalCell.style.cssText = "padding: 8px 12px; color: var(--text);";
+      row.appendChild(regionalCell);
+      
+      // State Place
+      const stateCell = document.createElement("td");
+      stateCell.textContent = formatValue(seasonData.state_place);
+      stateCell.style.cssText = "padding: 8px 12px; color: var(--text);";
+      row.appendChild(stateCell);
+      
+      tbody.appendChild(row);
+    });
+    
+    table.appendChild(tbody);
+    careerSummarySection.appendChild(table);
+    
+    // Add horizontal rule after Career Summary
+    const hr = document.createElement("hr");
+    hr.className = "section-rule";
+    careerSummarySection.appendChild(hr);
   }
 
   // Simplified Season Stats for HS (standalone section)
@@ -585,19 +778,32 @@ function safe(value, formatter) {
     
     seasonStatsSection.innerHTML = "";
     
-    // Section header
+    // Section header - dynamic year, newspaper style, emphasized as current chapter
     const header = document.createElement("h2");
-    header.textContent = "Season Stats";
+    header.className = "section-title-season-stats";
+    // Get most recent season from career.seasons or fall back to data.year
+    let mostRecentSeason = data.year;
+    if (data.career && Array.isArray(data.career.seasons) && data.career.seasons.length > 0) {
+      // Seasons are already sorted descending in JSON
+      mostRecentSeason = data.career.seasons[0];
+    }
+    header.textContent = mostRecentSeason ? `${mostRecentSeason} Season Stats` : "Season Stats";
     seasonStatsSection.appendChild(header);
     
-    // Divider
-    const divider = document.createElement("div");
-    divider.className = "section-divider";
-    seasonStatsSection.appendChild(divider);
+    // Add muted subtitle to reinforce "current chapter" importance
+    const subtitle = document.createElement("div");
+    subtitle.className = "season-stats-subtitle";
+    subtitle.textContent = "Most recent season";
+    seasonStatsSection.appendChild(subtitle);
     
-    // Stats grid (2 columns) - much denser spacing
+    // Add horizontal rule after Season Stats
+    const hr = document.createElement("hr");
+    hr.className = "section-rule";
+    // Will be appended after stats grid
+    
+    // Stats grid (2 columns) - newspaper style spacing
     const statsGrid = document.createElement("div");
-    statsGrid.style.cssText = "display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 20px; margin-top: 12px;";
+    statsGrid.className = "stats-grid-newspaper";
     
     const record = data.record || {};
     const m = data.metrics || {};
@@ -618,11 +824,11 @@ function safe(value, formatter) {
       statRow.style.cssText = "display: flex; justify-content: space-between; align-items: baseline; padding: 4px 0;";
       
       const labelEl = document.createElement("span");
-      labelEl.style.cssText = "color: var(--muted); font-size: 0.875rem;";
+      labelEl.className = "stat-label-newspaper";
       labelEl.textContent = label;
       
       const valueEl = document.createElement("span");
-      valueEl.style.cssText = "font-weight: 600; font-size: 0.9375rem; color: var(--text);";
+      valueEl.className = "stat-value-newspaper";
       valueEl.textContent = valueStr;
       
       statRow.appendChild(labelEl);
@@ -696,6 +902,9 @@ function safe(value, formatter) {
     statsGrid.appendChild(col1);
     statsGrid.appendChild(col2);
     seasonStatsSection.appendChild(statsGrid);
+    
+    // Append horizontal rule after stats grid
+    seasonStatsSection.appendChild(hr);
   }
   
   function renderSkillMetric(container, label, value, leagueAvg, formatter) {
@@ -1120,13 +1329,23 @@ function safe(value, formatter) {
   }
 
   function createOpponentRankBadge(rank, isOutOfState = false) {
-    if (rank === null || rank === undefined || rank === "") {
+    // For out-of-state wrestlers, always show "N/A" regardless of rank
+    if (isOutOfState) {
       const badge = document.createElement("span");
-      badge.className = "rank-badge unr-badge";
-      badge.textContent = isOutOfState ? "N/A" : "UNR";
+      badge.className = "rank-badge unr-badge out-of-state-badge";
+      badge.textContent = "N/A";
       return badge;
     }
     
+    // For in-state wrestlers without rank, show "UNR"
+    if (rank === null || rank === undefined || rank === "") {
+      const badge = document.createElement("span");
+      badge.className = "rank-badge unr-badge";
+      badge.textContent = "UNR";
+      return badge;
+    }
+    
+    // For in-state wrestlers with rank, show the rank badge
     const badge = document.createElement("span");
     badge.className = "rank-badge";
     
@@ -1264,6 +1483,19 @@ function safe(value, formatter) {
       // Check if this is a forfeit match
       const isForfeit = isForfeitMatch(match);
       
+      // Check if opponent is out-of-state:
+      // 1. ID starts with "OUTSTATE_" (synthetic out-of-state ID), OR
+      // 2. Both opponent_rank and opponent_team_rank are null (out-of-state wrestler with regular ID)
+      const hasOutStatePrefix = match.opponent_id && match.opponent_id.startsWith("OUTSTATE_");
+      const hasNoRankOrTeamRank = (match.opponent_rank === null || match.opponent_rank === undefined) && 
+                                   (match.opponent_team_rank === null || match.opponent_team_rank === undefined);
+      const isOutOfState = hasOutStatePrefix || (hasNoRankOrTeamRank && !isForfeit);
+      
+      // Add class for out-of-state rows (for styling)
+      if (isOutOfState) {
+        tr.classList.add("out-of-state-row");
+      }
+      
       // Determine display values for forfeits
       let displayOpponent, displayOpponentTeam, displayOpponentRank, displayResult, displayMethod, displayMVImpact;
       
@@ -1292,8 +1524,6 @@ function safe(value, formatter) {
       const oppTd = document.createElement("td");
       oppTd.className = "name-cell";
       const gender = getGenderFromURL();
-      // Check if opponent is out-of-state (ID starts with "OUTSTATE_")
-      const isOutOfState = match.opponent_id && match.opponent_id.startsWith("OUTSTATE_");
       // For forfeits and out-of-state opponents, don't create a link
       if (!isForfeit && !isOutOfState && match.opponent_id) {
         const a = document.createElement("a");
@@ -1321,7 +1551,8 @@ function safe(value, formatter) {
       if (oppTeamName && oppTeamName.length > MAX_TEAM_NAME_LENGTH) {
         oppTeamName = oppTeamName.substring(0, MAX_TEAM_NAME_LENGTH) + "...";
       }
-      if (oppTeamName && oppTeamName !== "—" && oppTeamName !== "Forfeit") {
+      // For out-of-state teams, don't create a link (no team profiles for out-of-state schools)
+      if (oppTeamName && oppTeamName !== "—" && oppTeamName !== "Forfeit" && !isOutOfState) {
         const teamSlug = teamNameToSlug(displayOpponentTeam); // Use original name for slug, not truncated
         const teamLink = document.createElement("a");
         teamLink.href = buildPageURL('team.html', gender, { team: teamSlug });

@@ -9,7 +9,7 @@ All aggregation happens at build time - frontend only loads and displays.
 import argparse
 import json
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Set
 from datetime import datetime
 
 
@@ -201,6 +201,29 @@ def build_leaderboard(
     return entries[:limit]
 
 
+def load_boys_inactive_mask(season: int) -> Set[str]:
+    """Load boys inactive wrestlers mask file."""
+    mask_file = Path(f"mt/rankings_data/hs_ky_boys/{season}/boys_inactive_wrestlers.json")
+    
+    if not mask_file.exists():
+        return set()
+    
+    try:
+        with mask_file.open("r", encoding="utf-8") as f:
+            mask_data = json.load(f)
+        
+        masked_ids = set()
+        for wrestler in mask_data.get("masked_wrestlers", []):
+            wrestler_id = wrestler.get("boys_wrestler_id")
+            if wrestler_id:
+                masked_ids.add(str(wrestler_id))
+        
+        return masked_ids
+    except Exception as e:
+        print(f"Warning: Could not load boys inactive mask: {e}")
+        return set()
+
+
 def build_leaderboards_for_gender(
     season: int,
     gender: str,
@@ -212,10 +235,25 @@ def build_leaderboards_for_gender(
     print(f"Building leaderboards for {gender} season {season}")
     print(f"{'=' * 80}")
     
+    # Load boys inactive mask (if boys)
+    masked_wrestler_ids = set()
+    if gender == 'boys':
+        masked_wrestler_ids = load_boys_inactive_mask(season)
+        if masked_wrestler_ids:
+            print(f"Loaded mask for {len(masked_wrestler_ids)} inactive boys wrestlers")
+    
     # Load profiles
     print(f"Loading profiles from: {profiles_dir}")
     profiles = load_wrestler_profiles(profiles_dir)
     print(f"Loaded {len(profiles)} profiles")
+    
+    # Filter out masked wrestlers (boys only)
+    if masked_wrestler_ids:
+        original_count = len(profiles)
+        profiles = [p for p in profiles if str(p.get("wrestler_id", "")) not in masked_wrestler_ids]
+        filtered_count = original_count - len(profiles)
+        if filtered_count > 0:
+            print(f"Filtered out {filtered_count} masked wrestler(s)")
     
     # Filter profiles
     filtered = filter_wrestlers(profiles)

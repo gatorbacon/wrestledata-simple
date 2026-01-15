@@ -6,31 +6,31 @@
   "team_rank": null,
   "weight_class": 114,
   "year": 2026,
-  "current_rank": 23,
+  "current_rank": 22,
   "record": {
-    "overall": "5-3",
-    "vs_ranked": "5-3",
-    "vs_top10": "0-0",
+    "overall": "6-4",
+    "vs_ranked": "6-4",
+    "vs_top10": "0-1",
     "vs_top25": "2-3"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
+    "pf7": 25.0,
+    "pa7": 25.0,
     "pd7": 0.0,
-    "si_plus": 103.2,
-    "df_plus": 100.7,
-    "apr_plus": 105.0,
+    "si_plus": 111.4,
+    "df_plus": 83.5,
+    "apr_plus": 106.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 3,
+    "ranked_wins": 6,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35333396132",
       "opponent_rank": 21,
@@ -39,12 +39,44 @@
     },
     "worst_loss": {
       "opponent_id": "35333694132",
-      "opponent_rank": 22,
+      "opponent_rank": 26,
       "opponent_name": "Trinity Drew",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333584132",
+      "opponent_name": "Mallory Ohlson",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 26,
+      "opponent_weight": 114,
+      "opponent_rank": 71,
+      "weight_class": "114",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 3.46
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333633132",
+      "opponent_name": "Juliette Ruiz",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 26,
+      "opponent_weight": 114,
+      "opponent_rank": 1,
+      "weight_class": "114",
+      "result": "L",
+      "method": "TF",
+      "score": "25-8",
+      "duration": "2:00",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": -0.56
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35347691132",
@@ -52,37 +84,37 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 33,
       "opponent_weight": 114,
-      "opponent_rank": 24,
+      "opponent_rank": 23,
       "weight_class": "114",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:59",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": 5.9
+      "mv_impact": 6.11
     },
     {
       "date": "2025-12-30",
       "opponent_id": "36852839132",
       "opponent_name": "Jaden Faulkner Jackson",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 114,
-      "opponent_rank": 46,
+      "opponent_rank": 48,
       "weight_class": "114",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:12",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": 3.7
+      "mv_impact": 3.18
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35333396132",
       "opponent_name": "Taniah Hixenbaugh",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 114,
       "opponent_rank": 21,
       "weight_class": "114",
@@ -91,7 +123,7 @@
       "score": null,
       "duration": "6:03",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": -5.19
+      "mv_impact": -5.33
     },
     {
       "date": "2025-12-30",
@@ -100,30 +132,30 @@
       "opponent_team": "Great Crossing",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 11,
+      "opponent_rank": 15,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:06",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": -5.12
+      "mv_impact": -5.08
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35333694132",
       "opponent_name": "Trinity Drew",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 46,
       "opponent_weight": 114,
-      "opponent_rank": 22,
+      "opponent_rank": 26,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Mercer County",
-      "mv_impact": -5.49
+      "mv_impact": -5.85
     },
     {
       "date": "2025-12-05",
@@ -132,14 +164,14 @@
       "opponent_team": "Valley",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 57,
+      "opponent_rank": 58,
       "weight_class": "114",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Queen of the Hive",
-      "mv_impact": 2.79
+      "mv_impact": 3.19
     },
     {
       "date": "2025-12-05",
@@ -148,21 +180,21 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 53,
+      "opponent_rank": 55,
       "weight_class": "114",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Queen of the Hive",
-      "mv_impact": 2.7
+      "mv_impact": 2.93
     },
     {
       "date": "2025-12-05",
       "opponent_id": "35333396132",
       "opponent_name": "Taniah Hixenbaugh",
       "opponent_team": "Moore",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 48,
       "opponent_weight": 114,
       "opponent_rank": 21,
       "weight_class": "114",
@@ -171,12 +203,12 @@
       "score": null,
       "duration": "0:00",
       "event": "Queen of the Hive",
-      "mv_impact": 6.81
+      "mv_impact": 6.67
     }
   ],
   "bonus": {
     "top33_wins": 2,
     "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.92
+    "top33_bonus_ev_shrunk": 1.937254901960784
   }
 }

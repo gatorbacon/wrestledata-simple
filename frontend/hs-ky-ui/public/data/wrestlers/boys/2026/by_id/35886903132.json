@@ -6,20 +6,20 @@
   "team_rank": 20,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 190,
+  "current_rank": 196,
   "record": {
-    "overall": "3-8",
-    "vs_ranked": "0-2",
+    "overall": "3-12",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 88.9,
+    "df_plus": 102.0,
+    "apr_plus": 90.6,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
@@ -28,18 +28,78 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34996004132",
-      "opponent_rank": 130,
+      "opponent_rank": 124,
       "opponent_name": "Bryson Barnett",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34992810132",
+      "opponent_name": "Kamarius Ziesmer",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 144,
+      "opponent_rank": 16,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34997618132",
+      "opponent_name": "Titus Greiwe",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 69,
+      "opponent_weight": 144,
+      "opponent_rank": 15,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35188433132",
+      "opponent_name": "Caleb Bonham",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": 103,
+      "opponent_weight": 144,
+      "opponent_rank": 86,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35030263132",
+      "opponent_name": "evan Blackburn",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 120,
+      "opponent_weight": 144,
+      "opponent_rank": 76,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:42",
+      "event": "vs. Wayne County"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35178440132",
@@ -90,9 +150,9 @@
       "opponent_id": "35599164132",
       "opponent_name": "Julius Parriman",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 138,
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -105,9 +165,9 @@
       "opponent_id": "34996004132",
       "opponent_name": "Bryson Barnett",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 144,
-      "opponent_rank": 130,
+      "opponent_rank": 124,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -206,9 +266,21 @@
       "event": "vs. St. John Neumann"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_004906",
+    "canonical_name": "lucas barnes",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Wayne County",
+      "record": "3-12",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

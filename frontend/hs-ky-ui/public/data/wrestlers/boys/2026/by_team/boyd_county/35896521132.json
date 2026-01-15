@@ -3,7 +3,7 @@
   "name": "James Rich",
   "team": "Boyd County",
   "team_slug": "boyd_county",
-  "team_rank": 5,
+  "team_rank": 8,
   "weight_class": 126,
   "year": 2026,
   "current_rank": 100,
@@ -17,9 +17,9 @@
     "pf7": 2.0,
     "pa7": 18.0,
     "pd7": -16.0,
-    "si_plus": 89.0,
-    "df_plus": 90.6,
-    "apr_plus": 97.8,
+    "si_plus": 88.2,
+    "df_plus": 90.1,
+    "apr_plus": 97.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35909041132",
-      "opponent_rank": 114,
+      "opponent_rank": 117,
       "opponent_name": "Waylon Hudson",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "36061560132",
-      "opponent_rank": 75,
+      "opponent_rank": 116,
       "opponent_name": "Gavin McCalvin",
       "method": "Fall 0:00"
     }
@@ -111,7 +111,7 @@
       "opponent_name": "Anthony Green",
       "opponent_team": "John I. Burton",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 126,
       "opponent_rank": null,
       "weight_class": "126",
       "result": "L",
@@ -122,67 +122,80 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35909041132",
-      "opponent_name": "Waylon Hudson",
-      "opponent_team": "Russell",
-      "opponent_team_rank": 120,
-      "opponent_weight": 120,
-      "opponent_rank": 114,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": 2.63
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "36061560132",
       "opponent_name": "Gavin McCalvin",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
-      "opponent_weight": 126,
-      "opponent_rank": 75,
+      "opponent_team_rank": 8,
+      "opponent_weight": 120,
+      "opponent_rank": 116,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": -7.52
+      "event": "Ashland Invitational Tournament"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35909041132",
+      "opponent_name": "Waylon Hudson",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 122,
+      "opponent_weight": 120,
+      "opponent_rank": 117,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34993508132",
       "opponent_name": "Logan Rowe",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 126,
-      "opponent_rank": 34,
+      "opponent_rank": 41,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": -5.13
+      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35753803132",
       "opponent_name": "elijah diamond",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 126,
-      "opponent_rank": 130,
+      "opponent_rank": 125,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": 1.84
+      "event": "Ashland Invitational Tournament"
+    }
+  ],
+  "career": {
+    "career_id": "career_004858",
+    "canonical_name": "James Rich",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Boyd County",
+      "record": "4-5",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

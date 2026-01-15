@@ -3,28 +3,28 @@
   "name": "Grayson Cole",
   "team": "South Warren",
   "team_slug": "south_warren",
-  "team_rank": 126,
+  "team_rank": 38,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 73,
+  "current_rank": 69,
   "record": {
-    "overall": "4-3",
+    "overall": "5-3",
     "vs_ranked": "3-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 15.0,
     "pa7": 14.0,
     "pd7": 1.0,
-    "si_plus": 105.0,
-    "df_plus": 94.6,
-    "apr_plus": 104.4,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "si_plus": 105.1,
+    "df_plus": 92.7,
+    "apr_plus": 105.6,
+    "pin_rate": 0.6,
+    "bonus_rate": 0.6,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -32,27 +32,42 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34989009132",
-      "opponent_rank": 74,
-      "opponent_name": "Asher Mason",
-      "method": "Dec 15-14"
+      "opponent_id": "35383672132",
+      "opponent_rank": 72,
+      "opponent_name": "Yandel Santamaria Luna",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35021795132",
-      "opponent_rank": 61,
+      "opponent_rank": 65,
       "opponent_name": "Deacon Jennejohn",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-07",
+      "opponent_id": "35194058132",
+      "opponent_name": "Jan Puga Rivera",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 190,
+      "opponent_rank": 186,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "vs. Warren Central"
+    },
+    {
       "date": "2025-12-23",
       "opponent_id": "35207986132",
       "opponent_name": "Ethan Peckenpaugh",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 175,
-      "opponent_rank": 33,
+      "opponent_rank": 15,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "34989009132",
       "opponent_name": "Asher Mason",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 175,
-      "opponent_rank": 74,
+      "opponent_rank": 77,
       "weight_class": "175",
       "result": "W",
       "method": "DEC",
@@ -80,9 +95,9 @@
       "opponent_id": "35021795132",
       "opponent_name": "Deacon Jennejohn",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 64,
       "opponent_weight": 175,
-      "opponent_rank": 61,
+      "opponent_rank": 65,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35207986132",
       "opponent_name": "Ethan Peckenpaugh",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 48,
       "opponent_weight": 175,
-      "opponent_rank": 33,
+      "opponent_rank": 15,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -107,27 +122,12 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "35064908132",
-      "opponent_name": "Grayson Knoth",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 175,
-      "opponent_rank": 78,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:51",
-      "event": "vs. South Warren"
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "35383672132",
       "opponent_name": "Yandel Santamaria Luna",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 175,
-      "opponent_rank": 77,
+      "opponent_rank": 72,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -149,11 +149,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Hopkinsville"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35064908132",
+      "opponent_name": "Grayson Knoth",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "vs. John Hardin"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_004835",
+    "canonical_name": "Grayson Cole",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "South Warren",
+      "record": "6-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

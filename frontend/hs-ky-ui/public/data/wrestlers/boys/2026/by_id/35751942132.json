@@ -3,10 +3,10 @@
   "name": "Logan Dean",
   "team": "Lawrence County",
   "team_slug": "lawrence_county",
-  "team_rank": 97,
+  "team_rank": 100,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 134,
+  "current_rank": 127,
   "record": {
     "overall": "3-6",
     "vs_ranked": "2-6",
@@ -17,9 +17,9 @@
     "pf7": 4.0,
     "pa7": 19.0,
     "pd7": -15.0,
-    "si_plus": 94.3,
-    "df_plus": 91.4,
-    "apr_plus": 95.3,
+    "si_plus": 93.9,
+    "df_plus": 90.9,
+    "apr_plus": 94.6,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35754212132",
-      "opponent_rank": 177,
+      "opponent_rank": 173,
       "opponent_name": "aiden Runyon",
       "method": "Fall 4:00"
     },
     "worst_loss": {
       "opponent_id": "35724487132",
-      "opponent_rank": 86,
+      "opponent_rank": 82,
       "opponent_name": "David Wade",
       "method": "Fall 1:57"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "36019587132",
       "opponent_name": "Carter Stewart",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 41,
       "opponent_weight": 144,
-      "opponent_rank": 33,
+      "opponent_rank": 32,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -65,9 +65,9 @@
       "opponent_id": "35724487132",
       "opponent_name": "David Wade",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 144,
-      "opponent_rank": 86,
+      "opponent_rank": 82,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35754212132",
       "opponent_name": "aiden Runyon",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 144,
-      "opponent_rank": 177,
+      "opponent_rank": 173,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -95,9 +95,9 @@
       "opponent_id": "35724487132",
       "opponent_name": "David Wade",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 144,
-      "opponent_rank": 86,
+      "opponent_rank": 82,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -110,9 +110,9 @@
       "opponent_id": "35754212132",
       "opponent_name": "aiden Runyon",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 144,
-      "opponent_rank": 177,
+      "opponent_rank": 173,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -125,9 +125,9 @@
       "opponent_id": "35911261132",
       "opponent_name": "Dylan Burton",
       "opponent_team": "Russell",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 122,
       "opponent_weight": 144,
-      "opponent_rank": 65,
+      "opponent_rank": 66,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -140,9 +140,9 @@
       "opponent_id": "35635496132",
       "opponent_name": "David Craig",
       "opponent_team": "Greenup County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 88,
       "opponent_weight": 138,
-      "opponent_rank": 34,
+      "opponent_rank": 38,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35724487132",
       "opponent_name": "David Wade",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 76,
       "opponent_weight": 144,
-      "opponent_rank": 86,
+      "opponent_rank": 82,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -181,9 +181,39 @@
       "event": "vs. West Carter"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3225806451612903
-  }
+  "career": {
+    "career_id": "career_001443",
+    "canonical_name": "Logan Dean",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Lawrence County",
+      "record": "3-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Lawrence County",
+      "record": "11-16",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 7,
+      "team": "Lawrence County",
+      "record": "5-11",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

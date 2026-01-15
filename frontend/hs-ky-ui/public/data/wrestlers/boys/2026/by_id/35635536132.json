@@ -3,13 +3,13 @@
   "name": "Damien Parsons",
   "team": "Greenup County",
   "team_slug": "greenup_county",
-  "team_rank": 83,
+  "team_rank": 88,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 148,
+  "current_rank": 142,
   "record": {
-    "overall": "1-5",
-    "vs_ranked": "1-5",
+    "overall": "1-11",
+    "vs_ranked": "1-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 92.6,
+    "df_plus": 102.0,
+    "apr_plus": 89.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,38 +28,127 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35753794132",
-      "opponent_rank": 195,
+      "opponent_rank": 189,
       "opponent_name": "Gavin diamond",
       "method": "Fall 1:36"
     },
     "worst_loss": {
-      "opponent_id": "35896382132",
-      "opponent_rank": 128,
-      "opponent_name": "Gavin Selby",
-      "method": "Fall 7:25"
+      "opponent_id": "35868688132",
+      "opponent_rank": 141,
+      "opponent_name": "Jackson King",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
-      "date": "2025-12-13",
-      "opponent_id": "35194012132",
-      "opponent_name": "Caleb Lindsey",
-      "opponent_team": "Warren Central",
-      "opponent_team_rank": 134,
+      "date": "2026-01-10",
+      "opponent_id": "37133096132",
+      "opponent_name": "Evan Ratliff",
+      "opponent_team": "East Ridge",
+      "opponent_team_rank": 78,
       "opponent_weight": 175,
-      "opponent_rank": 80,
+      "opponent_rank": 140,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35431252132",
+      "opponent_name": "Landon Fields",
+      "opponent_team": "Union",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "36233050132",
+      "opponent_name": "Jacob Pruitt",
+      "opponent_team": "Spring Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": -6.85
+      "event": "Les Delong Memorial Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35868688132",
+      "opponent_name": "Jackson King",
+      "opponent_team": "Raceland",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": 141,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Les Delong Memorial Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_895ba5701482",
+      "opponent_name": "Enoch Patterson",
+      "opponent_team": "Symmes Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Les Delong Memorial Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "36233037132",
+      "opponent_name": "Herk Jackson",
+      "opponent_team": "Spring Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Les Delong Memorial Tournament"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35194012132",
+      "opponent_name": "Kaleb Lindsey",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 134,
+      "opponent_weight": 165,
+      "opponent_rank": 56,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-13",
@@ -68,83 +157,99 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": 135,
       "opponent_weight": 175,
-      "opponent_rank": 49,
+      "opponent_rank": 44,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": -5.07
+      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-10",
       "opponent_id": "35219540132",
       "opponent_name": "Donnivan Sheffey",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 93,
       "opponent_weight": 165,
-      "opponent_rank": 99,
+      "opponent_rank": 101,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Holmes",
-      "mv_impact": -7.39
+      "event": "vs. Holmes"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35753794132",
       "opponent_name": "Gavin diamond",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 165,
-      "opponent_rank": 195,
+      "opponent_rank": 189,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:36",
-      "event": "AWC Invitational",
-      "mv_impact": 0.13
+      "event": "AWC Invitational"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35896382132",
       "opponent_name": "Gavin Selby",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 175,
-      "opponent_rank": 128,
+      "opponent_rank": 123,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "7:25",
-      "event": "AWC Invitational",
-      "mv_impact": -8.92
+      "event": "AWC Invitational"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35850458132",
       "opponent_name": "Amos Blankenship",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 175,
-      "opponent_rank": 50,
+      "opponent_rank": 45,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:29",
-      "event": "AWC Invitational",
-      "mv_impact": -5.39
+      "event": "AWC Invitational"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_001085",
+    "canonical_name": "Damien Parsons",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Greenup County",
+      "record": "1-11",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Greenup County",
+      "record": "1-10",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

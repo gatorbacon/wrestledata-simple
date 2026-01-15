@@ -3,54 +3,84 @@
   "name": "Jayden Muratalla",
   "team": "Bourbon County",
   "team_slug": "bourbon_county",
-  "team_rank": 58,
+  "team_rank": 63,
   "weight_class": 113,
   "year": 2026,
-  "current_rank": 73,
+  "current_rank": 39,
   "record": {
-    "overall": "1-3",
-    "vs_ranked": "1-3",
+    "overall": "2-4",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 12.0,
-    "pa7": 6.0,
-    "pd7": 6.0,
-    "si_plus": 99.7,
-    "df_plus": 101.5,
-    "apr_plus": 89.8,
+    "pf7": 9.75,
+    "pa7": 7.75,
+    "pd7": 2.0,
+    "si_plus": 96.3,
+    "df_plus": 100.6,
+    "apr_plus": 91.2,
     "pin_rate": 0.0,
-    "bonus_rate": 1.0,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
     "pins": 0
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35359598132",
-      "opponent_rank": 86,
+      "opponent_rank": 41,
       "opponent_name": "Cayden Ramirez",
       "method": "TF 15-0 0:00"
     },
     "worst_loss": {
       "opponent_id": "34993529132",
-      "opponent_rank": 27,
+      "opponent_rank": 30,
       "opponent_name": "Ryan Lumpkins",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Covington Catholic"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34989062132",
+      "opponent_name": "Kaiden Crittenden",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 51,
+      "opponent_weight": 113,
+      "opponent_rank": 18,
+      "weight_class": "113",
+      "result": "L",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "Boys Woodford County Invitational"
+    },
+    {
       "date": "2025-12-17",
       "opponent_id": "34993799132",
       "opponent_name": "Noe Rodriguez",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 106,
       "opponent_rank": 15,
       "weight_class": "113",
@@ -58,15 +88,14 @@
       "method": "TF",
       "score": "18-3",
       "duration": "0:00",
-      "event": "vs. Harrison County",
-      "mv_impact": -2.73
+      "event": "vs. Harrison County"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34993799132",
       "opponent_name": "Noe Rodriguez",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 106,
       "opponent_rank": 15,
       "weight_class": "113",
@@ -74,45 +103,63 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -3.73
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35359598132",
-      "opponent_name": "Cayden Ramirez",
-      "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 112,
-      "opponent_weight": 113,
-      "opponent_rank": 86,
-      "weight_class": "113",
-      "result": "W",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 0.61
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34993529132",
       "opponent_name": "Ryan Lumpkins",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 106,
-      "opponent_rank": 27,
+      "opponent_rank": 30,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -4.34
+      "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35359598132",
+      "opponent_name": "Cayden Ramirez",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": 114,
+      "opponent_weight": 113,
+      "opponent_rank": 41,
+      "weight_class": "113",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3194444444444444
-  }
+  "career": {
+    "career_id": "career_000209",
+    "canonical_name": "Jayden Muratalla",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Bourbon County",
+      "record": "3-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Bourbon County",
+      "record": "11-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

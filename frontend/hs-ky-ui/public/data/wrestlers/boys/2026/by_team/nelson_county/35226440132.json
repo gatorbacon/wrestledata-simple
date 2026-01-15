@@ -3,23 +3,23 @@
   "name": "Joshua Bowman",
   "team": "Nelson County",
   "team_slug": "nelson_county",
-  "team_rank": 29,
-  "weight_class": 190,
+  "team_rank": 24,
+  "weight_class": 175,
   "year": 2026,
-  "current_rank": 220,
+  "current_rank": 201,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "pa7": 17.0,
+    "pd7": -17.0,
+    "si_plus": 84.9,
+    "df_plus": 91.6,
+    "apr_plus": 87.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,11 +28,50 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35037137132",
+      "opponent_rank": 103,
+      "opponent_name": "Gabrielle Mullins",
+      "method": "TF 17-0 0:00"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35037137132",
+      "opponent_name": "Gabrielle Mullins",
+      "opponent_team": "Marion County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 175,
+      "opponent_rank": 103,
+      "weight_class": "175",
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "0:00",
+      "event": "vs. Nelson County",
+      "mv_impact": -6.71
+    }
+  ],
+  "career": {
+    "career_id": "career_004889",
+    "canonical_name": "Joshua Bowman",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Nelson County",
+      "record": "0-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

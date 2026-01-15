@@ -3,23 +3,23 @@
   "name": "Blaine Kimery",
   "team": "South Oldham",
   "team_slug": "south_oldham",
-  "team_rank": 125,
+  "team_rank": 127,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 4,
+  "current_rank": 3,
   "record": {
     "overall": "17-2",
-    "vs_ranked": "8-1",
+    "vs_ranked": "7-1",
     "vs_top10": "2-1",
     "vs_top25": "5-1"
   },
   "metrics": {
-    "pf7": 13.94,
-    "pa7": 3.19,
-    "pd7": 10.75,
-    "si_plus": 109.9,
-    "df_plus": 113.9,
-    "apr_plus": 96.4,
+    "pf7": 14.65,
+    "pa7": 3.65,
+    "pd7": 11.0,
+    "si_plus": 113.0,
+    "df_plus": 113.5,
+    "apr_plus": 96.9,
     "pin_rate": 0.294,
     "bonus_rate": 0.824,
     "majors": 6,
@@ -27,13 +27,13 @@
     "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
+    "ranked_wins": 7,
     "ranked_losses": 1,
     "top10_wins": 2,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35562980132",
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "opponent_name": "Braden Woolridge",
       "method": "Dec 10-4"
     },
@@ -47,27 +47,12 @@
   "match_list": [
     {
       "date": "2026-01-03",
-      "opponent_id": "35064909132",
-      "opponent_name": "Bruce Anderson",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 132,
-      "opponent_rank": 21,
-      "weight_class": "132",
-      "result": "W",
-      "method": "MD",
-      "score": "9-0",
-      "duration": "7:00",
-      "event": "Warhawk Classic"
-    },
-    {
-      "date": "2026-01-03",
       "opponent_id": "35045488132",
       "opponent_name": "GRAYSON SMITH",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 17,
       "opponent_weight": 132,
-      "opponent_rank": 13,
+      "opponent_rank": 12,
       "weight_class": "132",
       "result": "W",
       "method": "MD",
@@ -80,9 +65,9 @@
       "opponent_id": "34989089132",
       "opponent_name": "Ayden Fechtner",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 132,
-      "opponent_rank": 29,
+      "opponent_rank": 23,
       "weight_class": "132",
       "result": "W",
       "method": "TF",
@@ -95,7 +80,7 @@
       "opponent_id": "35122069132",
       "opponent_name": "Aeson Springer",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 132,
       "opponent_rank": 9,
       "weight_class": "132",
@@ -106,13 +91,28 @@
       "event": "Warhawk Classic"
     },
     {
+      "date": "2026-01-03",
+      "opponent_id": "35064909132",
+      "opponent_name": "Bruce Anderson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35214990132",
       "opponent_name": "Quentin Praleikas",
       "opponent_team": "Cooper",
       "opponent_team_rank": 9,
       "opponent_weight": 126,
-      "opponent_rank": 177,
+      "opponent_rank": 172,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -125,7 +125,7 @@
       "opponent_id": "35520541132",
       "opponent_name": "Corban Nance",
       "opponent_team": "Anderson County",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 7,
       "opponent_weight": 132,
       "opponent_rank": 1,
       "weight_class": "132",
@@ -140,9 +140,9 @@
       "opponent_id": "34993792132",
       "opponent_name": "Jayden Fulz",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 132,
-      "opponent_rank": 48,
+      "opponent_rank": 42,
       "weight_class": "132",
       "result": "W",
       "method": "TF",
@@ -155,9 +155,9 @@
       "opponent_id": "35562980132",
       "opponent_name": "Braden Woolridge",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 132,
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "weight_class": "132",
       "result": "W",
       "method": "DEC",
@@ -275,7 +275,7 @@
       "opponent_id": "35124883132",
       "opponent_name": "Daxton Baker",
       "opponent_team": "Montgomery County",
-      "opponent_team_rank": 108,
+      "opponent_team_rank": 110,
       "opponent_weight": 132,
       "opponent_rank": 15,
       "weight_class": "132",
@@ -331,9 +331,39 @@
       "event": "Tommy Castle Classic"
     }
   ],
-  "bonus": {
-    "top33_wins": 6,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.2571428571428573
-  }
+  "career": {
+    "career_id": "career_002509",
+    "canonical_name": "Blaine Kimery",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "South Oldham",
+      "record": "17-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "South Oldham",
+      "record": "36-14",
+      "regional_place": 4,
+      "state_place": 6
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "South Oldham",
+      "record": "37-8",
+      "regional_place": 1,
+      "state_place": 5
+    }
+  ]
 }

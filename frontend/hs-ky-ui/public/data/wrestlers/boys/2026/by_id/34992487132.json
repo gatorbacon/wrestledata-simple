@@ -10,7 +10,7 @@
   "record": {
     "overall": "1-0",
     "vs_ranked": "1-0",
-    "vs_top10": "0-0",
+    "vs_top10": "1-0",
     "vs_top25": "1-0"
   },
   "metrics": {
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 96.6,
+    "df_plus": 102.0,
+    "apr_plus": 97.9,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -29,11 +29,11 @@
   "opponent_breakdown": {
     "ranked_wins": 1,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35732599132",
-      "opponent_rank": 14,
+      "opponent_rank": 9,
       "opponent_name": "Blake Lemaster",
       "method": "TF 19-3 3:28"
     },
@@ -45,9 +45,9 @@
       "opponent_id": "35732599132",
       "opponent_name": "Blake Lemaster",
       "opponent_team": "Martin County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 13,
       "opponent_weight": 120,
-      "opponent_rank": 14,
+      "opponent_rank": 9,
       "weight_class": "120",
       "result": "W",
       "method": "TF",
@@ -55,10 +55,5 @@
       "duration": "3:28",
       "event": "vs. West Forsyth"
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 1.5,
-    "top33_bonus_ev_shrunk": 1.3294573643410854
-  }
+  ]
 }

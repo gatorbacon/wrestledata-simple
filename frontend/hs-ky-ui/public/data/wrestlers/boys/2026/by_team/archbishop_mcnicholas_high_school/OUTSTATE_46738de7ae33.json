@@ -4,12 +4,12 @@
   "team": "Archbishop McNicholas High School",
   "team_slug": "archbishop_mcnicholas_high_school",
   "team_rank": null,
-  "weight_class": 132,
+  "weight_class": 126,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35219295132",
-      "opponent_rank": 62,
+      "opponent_rank": 45,
       "opponent_name": "Deontae Graves",
       "method": "MD 13-2"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35219295132",
+      "opponent_rank": 45,
+      "opponent_name": "Deontae Graves",
+      "method": "Fall 1:44"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35219295132",
+      "opponent_name": "Deontae Graves",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": 93,
+      "opponent_weight": 126,
+      "opponent_rank": 45,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:44",
+      "event": "Bob Kerns Inv"
+    },
     {
       "date": "2025-12-17",
       "opponent_id": "35219295132",
       "opponent_name": "Deontae Graves",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 89,
+      "opponent_team_rank": 93,
       "opponent_weight": 126,
-      "opponent_rank": 62,
+      "opponent_rank": 45,
       "weight_class": "132",
       "result": "W",
       "method": "MD",

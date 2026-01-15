@@ -665,9 +665,9 @@ def main(season, league='ncaa', state=None, gender=None):
     if league == 'hs':
         # HS data directories
         state_lower = state.lower()  # Normalize to lowercase (e.g., KY -> ky)
-        in_dir = os.path.join("mt", "data_alias", f"hs_{state_lower}_{gender}")
-        out_dir = os.path.join("mt", "processed_data", f"hs_{state_lower}_{gender}")
-        public_out_dir = os.path.join("frontend", "wrestledata-ui", "public", "data", "processed_data", f"hs_{state_lower}_{gender}")
+        in_dir = os.path.join("mt", "data_alias", f"hs_{state_lower}_{gender}", str(season))
+        out_dir = os.path.join("mt", "processed_data", f"hs_{state_lower}_{gender}", str(season))
+        public_out_dir = os.path.join("frontend", "wrestledata-ui", "public", "data", "processed_data", f"hs_{state_lower}_{gender}", str(season))
     else:  # ncaa
         # NCAA data directories (unchanged)
         in_dir = os.path.join("mt", "data_alias", season)

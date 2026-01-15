@@ -10,8 +10,8 @@
   "record": {
     "overall": "3-0",
     "vs_ranked": "3-0",
-    "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "vs_top10": "1-0",
+    "vs_top25": "2-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -29,40 +29,25 @@
   "opponent_breakdown": {
     "ranked_wins": 3,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35544767132",
-      "opponent_rank": 18,
-      "opponent_name": "Mikey Hatfield",
-      "method": "Fall 1:35"
+      "opponent_id": "34993548132",
+      "opponent_rank": 8,
+      "opponent_name": "Trenton Bratcher",
+      "method": "Fall 3:55"
     },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2025-12-06",
-      "opponent_id": "35544767132",
-      "opponent_name": "Mikey Hatfield",
-      "opponent_team": "Conner",
-      "opponent_team_rank": 10,
-      "opponent_weight": 113,
-      "opponent_rank": 18,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:35",
-      "event": "vs. Elder High School"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "34993548132",
       "opponent_name": "Trenton Bratcher",
       "opponent_team": "Moore",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 27,
       "opponent_weight": 106,
-      "opponent_rank": 37,
+      "opponent_rank": 8,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",
@@ -72,12 +57,27 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35544767132",
+      "opponent_name": "Mikey Hatfield",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 113,
+      "opponent_rank": 21,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
+      "event": "vs. Elder High School"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "34993555132",
       "opponent_name": "Marcus Mahan",
       "opponent_team": "Moore",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 27,
       "opponent_weight": 190,
-      "opponent_rank": 95,
+      "opponent_rank": 60,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -85,10 +85,5 @@
       "duration": "0:41",
       "event": "vs. Elder High School"
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.3950617283950617
-  }
+  ]
 }

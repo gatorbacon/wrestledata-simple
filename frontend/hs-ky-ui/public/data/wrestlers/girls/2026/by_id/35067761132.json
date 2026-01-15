@@ -1,0 +1,64 @@
+{
+  "wrestler_id": "35067761132",
+  "name": "Emerson Reeves",
+  "team": "Herculaneum",
+  "team_slug": "herculaneum",
+  "team_rank": null,
+  "weight_class": 107,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.7,
+    "df_plus": 102.8,
+    "apr_plus": 122.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 1,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35333614132",
+      "opponent_rank": 3,
+      "opponent_name": "Rialee Boyd",
+      "method": "Fall 0:59"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333614132",
+      "opponent_name": "Rialee Boyd",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 58,
+      "opponent_weight": 107,
+      "opponent_rank": 3,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "Wonder Women"
+    }
+  ],
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.5555555555555556
+  }
+}

@@ -3,23 +3,23 @@
   "name": "Kenneth Ryan",
   "team": "Meade County",
   "team_slug": "meade_county",
-  "team_rank": 106,
+  "team_rank": 108,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 220,
+  "current_rank": 198,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "pf7": 7.0,
+    "pa7": 18.0,
+    "pd7": -11.0,
+    "si_plus": 95.4,
+    "df_plus": 90.3,
+    "apr_plus": 97.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,11 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35226175132",
+      "opponent_rank": 24,
+      "opponent_name": "Jaxon Cox",
+      "method": "MD 18-7"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35226175132",
+      "opponent_name": "Jaxon Cox",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 165,
+      "opponent_rank": 24,
+      "weight_class": "165",
+      "result": "L",
+      "method": "MD",
+      "score": "18-7",
+      "duration": "7:00",
+      "event": "vs. Meade County",
+      "mv_impact": -0.96
+    }
+  ]
 }

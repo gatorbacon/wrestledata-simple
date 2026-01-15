@@ -3,127 +3,152 @@
   "name": "Elijah Adams",
   "team": "Taylor County",
   "team_slug": "taylor_county",
-  "team_rank": 49,
+  "team_rank": 39,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 33,
+  "current_rank": 36,
   "record": {
-    "overall": "6-4",
-    "vs_ranked": "6-4",
+    "overall": "7-5",
+    "vs_ranked": "7-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 12.77,
-    "pa7": 15.0,
-    "pd7": -2.23,
-    "si_plus": 97.3,
-    "df_plus": 89.7,
-    "apr_plus": 109.2,
-    "pin_rate": 0.833,
+    "pf7": 12.5,
+    "pa7": 5.5,
+    "pd7": 7.0,
+    "si_plus": 98.5,
+    "df_plus": 107.3,
+    "apr_plus": 108.6,
+    "pin_rate": 0.857,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
+    "ranked_wins": 7,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35084105132",
-      "opponent_rank": 35,
-      "opponent_name": "Jakob Reed",
-      "method": "Fall 5:15"
+      "opponent_id": "35040071132",
+      "opponent_rank": 31,
+      "opponent_name": "colin stone",
+      "method": "Fall 4:49"
     },
     "worst_loss": {
-      "opponent_id": "35064900132",
-      "opponent_rank": 39,
-      "opponent_name": "Evan Wilson",
-      "method": "TF 18-3 4:38"
+      "opponent_id": "35421050132",
+      "opponent_rank": 33,
+      "opponent_name": "Brayden Stephens",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34997724132",
+      "opponent_name": "Aidan Durham",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 45,
+      "opponent_weight": 138,
+      "opponent_rank": 66,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:57",
+      "event": "vs. Taylor County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35040071132",
+      "opponent_name": "colin stone",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 138,
+      "opponent_rank": 31,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Taylor County"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35084105132",
       "opponent_name": "Jakob Reed",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 32,
       "opponent_weight": 138,
-      "opponent_rank": 35,
+      "opponent_rank": 43,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:15",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": 7.19
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35064900132",
-      "opponent_name": "Evan Wilson",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 144,
-      "opponent_rank": 39,
-      "weight_class": "138",
-      "result": "L",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "4:38",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": -3.62
+      "event": "5th Annual Cardinal Clash"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35040071132",
       "opponent_name": "colin stone",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 12,
       "opponent_weight": 138,
-      "opponent_rank": 42,
+      "opponent_rank": 31,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:49",
-      "event": "5th Annual Cardinal Clash",
-      "mv_impact": 7.4
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35064900132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "4:38",
+      "event": "5th Annual Cardinal Clash"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34997722132",
       "opponent_name": "Kendrick Brown",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 79,
-      "opponent_weight": 138,
-      "opponent_rank": 64,
+      "opponent_team_rank": 45,
+      "opponent_weight": 132,
+      "opponent_rank": 51,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:52",
-      "event": "vs. Taylor County",
-      "mv_impact": 5.65
+      "event": "vs. Taylor County"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35459310132",
       "opponent_name": "Evan Gregory",
       "opponent_team": "Rowan County",
-      "opponent_team_rank": 119,
+      "opponent_team_rank": 121,
       "opponent_weight": 132,
-      "opponent_rank": 53,
+      "opponent_rank": 49,
       "weight_class": "138",
       "result": "W",
       "method": "TF",
       "score": "21-5",
       "duration": "0:00",
-      "event": "vs. Taylor County",
-      "mv_impact": 5.17
+      "event": "vs. Taylor County"
     },
     {
       "date": "2025-12-13",
@@ -132,14 +157,13 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 129,
       "opponent_weight": 132,
-      "opponent_rank": 56,
+      "opponent_rank": 52,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Taylor County",
-      "mv_impact": 5.53
+      "event": "vs. Taylor County"
     },
     {
       "date": "2025-12-13",
@@ -148,21 +172,20 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 138,
       "opponent_weight": 138,
-      "opponent_rank": 32,
+      "opponent_rank": 33,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Whitley County",
-      "mv_impact": -4.88
+      "event": "vs. Whitley County"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "34997736132",
       "opponent_name": "Gabriel Sleigh",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 138,
       "opponent_rank": 127,
       "weight_class": "138",
@@ -170,40 +193,63 @@
       "method": "FALL",
       "score": null,
       "duration": "1:28",
-      "event": "vs. Western",
-      "mv_impact": 2.36
+      "event": "vs. Western"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35225527132",
       "opponent_name": "Keith Johnson",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 85,
       "opponent_weight": 138,
-      "opponent_rank": 27,
+      "opponent_rank": 19,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -4.34
+      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34993511132",
       "opponent_name": "AJ Falk",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 138,
-      "opponent_rank": 18,
+      "opponent_rank": 21,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -3.62
+      "event": "Joe Cochran State Farm HCIWT"
+    }
+  ],
+  "career": {
+    "career_id": "career_002700",
+    "canonical_name": "Elijah Adams",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Taylor County",
+      "record": "7-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 7,
+      "team": "Taylor County",
+      "record": "13-3",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

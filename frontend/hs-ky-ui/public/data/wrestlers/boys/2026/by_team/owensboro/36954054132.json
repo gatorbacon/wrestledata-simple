@@ -3,23 +3,23 @@
   "name": "Steve Lehman",
   "team": "Owensboro",
   "team_slug": "owensboro",
-  "team_rank": 38,
+  "team_rank": 37,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 153,
+  "current_rank": 154,
   "record": {
-    "overall": "1-3",
-    "vs_ranked": "0-2",
+    "overall": "2-7",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 84.5,
+    "df_plus": 102.0,
+    "apr_plus": 85.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,32 +28,92 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35700434132",
-      "opponent_rank": 181,
-      "opponent_name": "Lucas Shaheen",
+      "opponent_id": "35233661132",
+      "opponent_rank": 153,
+      "opponent_name": "Sean Westerman",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
-      "date": "2025-12-22",
-      "opponent_id": "35700434132",
-      "opponent_name": "Lucas Shaheen",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 93,
-      "opponent_weight": 190,
-      "opponent_rank": 181,
+      "date": "2026-01-10",
+      "opponent_id": "35024594132",
+      "opponent_name": "Elijah Brunk",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 215,
+      "opponent_rank": 107,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:39",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34989974132",
+      "opponent_name": "DonJai Karnickey",
+      "opponent_team": "Western",
+      "opponent_team_rank": 40,
+      "opponent_weight": 215,
+      "opponent_rank": 130,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:42",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "35233661132",
+      "opponent_name": "Sean Westerman",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": 57,
+      "opponent_weight": 215,
+      "opponent_rank": 153,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Owensboro"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34993276132",
+      "opponent_name": "Kobe Nichols",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 71,
+      "opponent_weight": 215,
+      "opponent_rank": 17,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Owensboro Catholic"
     },
     {
       "date": "2025-12-22",
@@ -71,13 +131,28 @@
       "event": "vs. Trinity (Whitesville)"
     },
     {
+      "date": "2025-12-22",
+      "opponent_id": "35700434132",
+      "opponent_name": "Lucas Shaheen",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35221044132",
       "opponent_name": "Preston Coleman",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 66,
       "opponent_weight": 215,
-      "opponent_rank": 133,
+      "opponent_rank": 134,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -99,6 +174,23 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Kenwood High School"
+    }
+  ],
+  "career": {
+    "career_id": "career_005067",
+    "canonical_name": "Steve Lehman",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Owensboro",
+      "record": "2-7",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

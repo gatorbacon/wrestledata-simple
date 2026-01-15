@@ -3,63 +3,137 @@
   "name": "Bryn Ford",
   "team": "Pulaski County",
   "team_slug": "pulaski_county",
-  "team_rank": 118,
+  "team_rank": 120,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 85,
+  "current_rank": 77,
   "record": {
-    "overall": "2-4",
-    "vs_ranked": "2-3",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "5-6",
+    "vs_ranked": "5-5",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 3.59,
     "pa7": 25.0,
     "pd7": -21.41,
-    "si_plus": 91.5,
-    "df_plus": 80.8,
-    "apr_plus": 100.7,
+    "si_plus": 90.8,
+    "df_plus": 79.9,
+    "apr_plus": 103.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_wins": 5,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35207048132",
-      "opponent_rank": 86,
-      "opponent_name": "Alex Pedro",
-      "method": "Fall 1:04"
+      "opponent_id": "34992811132",
+      "opponent_rank": 34,
+      "opponent_name": "Caden Wren",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "34993871132",
-      "opponent_rank": 83,
+      "opponent_rank": 123,
       "opponent_name": "Jacob Hessig",
       "method": "Fall 3:06"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "34992811132",
+      "opponent_name": "Caden Wren",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 157,
+      "opponent_rank": 34,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Pulaski County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34997602132",
+      "opponent_name": "Seth Jones",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 69,
+      "opponent_weight": 215,
+      "opponent_rank": 7,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
+      "event": "vs. Pulaski County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35325321132",
+      "opponent_name": "Kason Rose",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": 103,
+      "opponent_weight": 215,
+      "opponent_rank": 185,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:15",
+      "event": "vs. Pulaski County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35420732132",
+      "opponent_name": "Zach Smith",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 138,
+      "opponent_weight": 215,
+      "opponent_rank": 63,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Whitley County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35885327132",
+      "opponent_name": "zachart smith",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 215,
+      "opponent_rank": 83,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "vs. Wayne County"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "34993871132",
       "opponent_name": "Jacob Hessig",
       "opponent_team": "Green County",
-      "opponent_team_rank": 82,
-      "opponent_weight": 215,
-      "opponent_rank": 83,
+      "opponent_team_rank": 87,
+      "opponent_weight": 190,
+      "opponent_rank": 123,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:06",
-      "event": "Maroon`s New Year Brawl",
-      "mv_impact": -8.0
+      "event": "Maroon`s New Year Brawl"
     },
     {
       "date": "2026-01-03",
@@ -81,69 +155,86 @@
       "opponent_id": "35281297132",
       "opponent_name": "Landen Nicholas",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 73,
       "opponent_weight": 215,
-      "opponent_rank": 80,
+      "opponent_rank": 75,
       "weight_class": "215",
       "result": "L",
       "method": "TF",
       "score": "20-2",
       "duration": "3:54",
-      "event": "Cardinal Invitational",
-      "mv_impact": -6.71
+      "event": "Cardinal Invitational"
     },
     {
       "date": "2025-12-30",
       "opponent_id": "35359941132",
       "opponent_name": "Locke Loftus",
       "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 112,
+      "opponent_team_rank": 114,
       "opponent_weight": 215,
-      "opponent_rank": 4,
+      "opponent_rank": 5,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "Cardinal Invitational",
-      "mv_impact": -1.95
+      "event": "Cardinal Invitational"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35144520132",
       "opponent_name": "Dakota Dye",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 190,
-      "opponent_rank": 132,
+      "opponent_rank": 140,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:56",
-      "event": "vs. Pulaski County",
-      "mv_impact": 1.71
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35207048132",
       "opponent_name": "Alex Pedro",
       "opponent_team": "Adair County",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 56,
       "opponent_weight": 215,
-      "opponent_rank": 86,
+      "opponent_rank": 98,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:04",
-      "event": "vs. Pulaski County",
-      "mv_impact": 5.1
+      "event": "vs. Pulaski County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_004338",
+    "canonical_name": "Bryan Ford",
+    "seasons": [
+      2026,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Pulaski County",
+      "record": "5-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Pulaski County",
+      "record": "3-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

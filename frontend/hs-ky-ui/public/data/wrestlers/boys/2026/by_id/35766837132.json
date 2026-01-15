@@ -3,10 +3,10 @@
   "name": "Branson Bartlett",
   "team": "Bath County",
   "team_slug": "bath_county",
-  "team_rank": 54,
+  "team_rank": 59,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 136,
+  "current_rank": 129,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 96.3,
+    "df_plus": 102.0,
+    "apr_plus": 96.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35540230132",
-      "opponent_rank": 173,
+      "opponent_rank": 167,
       "opponent_name": "Cain Maynard",
       "method": "Fall 0:31"
     },
     "worst_loss": {
       "opponent_id": "35896382132",
-      "opponent_rank": 128,
+      "opponent_rank": 123,
       "opponent_name": "Gavin Selby",
       "method": "Fall 3:50"
     }
@@ -50,53 +50,65 @@
       "opponent_id": "35896382132",
       "opponent_name": "Gavin Selby",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 175,
-      "opponent_rank": 128,
+      "opponent_rank": 123,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:50",
       "event": "AWC Invitational",
-      "mv_impact": -8.92
+      "mv_impact": -8.81
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35540230132",
       "opponent_name": "Cain Maynard",
       "opponent_team": "Lawrence County",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 100,
       "opponent_weight": 175,
-      "opponent_rank": 173,
+      "opponent_rank": 167,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:31",
       "event": "AWC Invitational",
-      "mv_impact": 0.62
+      "mv_impact": 0.75
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35850458132",
       "opponent_name": "Amos Blankenship",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 175,
-      "opponent_rank": 50,
+      "opponent_rank": 45,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:42",
       "event": "AWC Invitational",
-      "mv_impact": -5.39
+      "mv_impact": -5.32
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_005209",
+    "canonical_name": "Branson Bartlett",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Bath County",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

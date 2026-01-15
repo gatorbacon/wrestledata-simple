@@ -3,56 +3,101 @@
   "name": "Rodney Reeves",
   "team": "Knox Central",
   "team_slug": "knox_central",
-  "team_rank": 95,
+  "team_rank": 98,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 61,
+  "current_rank": 64,
   "record": {
-    "overall": "5-2",
-    "vs_ranked": "2-1",
+    "overall": "7-3",
+    "vs_ranked": "4-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 108.1,
-    "pin_rate": 0.4,
-    "bonus_rate": 0.4,
+    "df_plus": 102.0,
+    "apr_plus": 106.4,
+    "pin_rate": 0.571,
+    "bonus_rate": 0.571,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 1,
+    "ranked_wins": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34997621132",
-      "opponent_rank": 83,
+      "opponent_rank": 79,
       "opponent_name": "Jaxson Parmon",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "34995998132",
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "opponent_name": "Jeremiah Goodin",
       "method": "Fall 1:01"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35599176132",
+      "opponent_name": "Ricky Parriman",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 107,
+      "opponent_weight": 113,
+      "opponent_rank": 17,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35658594132",
+      "opponent_name": "Christian Mills",
+      "opponent_team": "Pineville",
+      "opponent_team_rank": 117,
+      "opponent_weight": 120,
+      "opponent_rank": 113,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
+      "event": "vs. Pineville"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35404068132",
+      "opponent_name": "Brooklyn Brown",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 120,
+      "opponent_weight": 120,
+      "opponent_rank": 147,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "vs. Pulaski County"
+    },
+    {
       "date": "2025-12-22",
       "opponent_id": "34997621132",
       "opponent_name": "Jaxson Parmon",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 69,
       "opponent_weight": 113,
-      "opponent_rank": 83,
+      "opponent_rank": 79,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -95,9 +140,9 @@
       "opponent_id": "35658594132",
       "opponent_name": "Christian Mills",
       "opponent_team": "Pineville",
-      "opponent_team_rank": 115,
+      "opponent_team_rank": 117,
       "opponent_weight": 120,
-      "opponent_rank": 110,
+      "opponent_rank": 113,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -125,9 +170,9 @@
       "opponent_id": "34995998132",
       "opponent_name": "Jeremiah Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 61,
       "opponent_weight": 126,
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -151,9 +196,39 @@
       "event": "vs. Whitley County"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  "career": {
+    "career_id": "career_001375",
+    "canonical_name": "Rodney Reeves",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Knox Central",
+      "record": "9-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Knox Central",
+      "record": "15-15",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 8,
+      "team": "Knox Central",
+      "record": "0-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

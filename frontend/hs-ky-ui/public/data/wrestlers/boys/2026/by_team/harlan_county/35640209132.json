@@ -3,13 +3,13 @@
   "name": "Alex Hubbard",
   "team": "Harlan County",
   "team_slug": "harlan_county",
-  "team_rank": 85,
+  "team_rank": 90,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 174,
+  "current_rank": 168,
   "record": {
-    "overall": "1-3",
-    "vs_ranked": "0-3",
+    "overall": "1-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 10.37,
     "pa7": 25.0,
     "pd7": -14.63,
-    "si_plus": 101.8,
-    "df_plus": 79.1,
-    "apr_plus": 91.6,
+    "si_plus": 102.8,
+    "df_plus": 78.9,
+    "apr_plus": 89.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35913093132",
-      "opponent_rank": 160,
+      "opponent_rank": 152,
       "opponent_name": "Berik Queen",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35496336132",
+      "opponent_name": "Connor Stewart",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 61,
+      "opponent_weight": 175,
+      "opponent_rank": 105,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harlan County"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "OUTSTATE_18bdd1256c45",
@@ -60,9 +75,9 @@
       "opponent_id": "35913093132",
       "opponent_name": "Berik Queen",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 60,
       "opponent_weight": 175,
-      "opponent_rank": 160,
+      "opponent_rank": 152,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -75,9 +90,9 @@
       "opponent_id": "35599166132",
       "opponent_name": "Darius Ridner",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 105,
+      "opponent_team_rank": 107,
       "opponent_weight": 175,
-      "opponent_rank": 53,
+      "opponent_rank": 42,
       "weight_class": "175",
       "result": "L",
       "method": "TF",
@@ -92,13 +107,30 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": 135,
       "opponent_weight": 175,
-      "opponent_rank": 49,
+      "opponent_rank": 44,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:36",
       "event": "Anchor Down Showdown"
+    }
+  ],
+  "career": {
+    "career_id": "career_005429",
+    "canonical_name": "Alex Hubbard",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Harlan County",
+      "record": "2-4",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

@@ -3,12 +3,12 @@
   "name": "Jacob Forsythe",
   "team": "Caldwell County",
   "team_slug": "caldwell_county",
-  "team_rank": 62,
+  "team_rank": 66,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 192,
+  "current_rank": 185,
   "record": {
-    "overall": "0-3",
+    "overall": "0-6",
     "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 87.9,
+    "df_plus": 102.0,
+    "apr_plus": 86.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,43 +34,86 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "36129597132",
-      "opponent_rank": 111,
+      "opponent_rank": 112,
       "opponent_name": "Tucker Law",
       "method": "Fall 1:05"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35023981132",
+      "opponent_name": "Joshua Jackson",
+      "opponent_team": "Hendersonville High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35118483132",
+      "opponent_name": "Elijah Semenchuk",
+      "opponent_team": "East Hamilton High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35119931132",
+      "opponent_name": "Cassius Powe",
+      "opponent_team": "Rossview High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "vs. Rossview High School"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "36129597132",
       "opponent_name": "Tucker Law",
       "opponent_team": "East Jessamine",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 77,
       "opponent_weight": 175,
-      "opponent_rank": 111,
+      "opponent_rank": 112,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:05",
-      "event": "Tates Creek Invitational",
-      "mv_impact": -7.6
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35037137132",
       "opponent_name": "Gabrielle Mullins",
       "opponent_team": "Marion County",
-      "opponent_team_rank": 102,
+      "opponent_team_rank": 104,
       "opponent_weight": 175,
-      "opponent_rank": 101,
+      "opponent_rank": 103,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:18",
-      "event": "Tates Creek Invitational",
-      "mv_impact": -7.51
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2025-12-13",
@@ -88,9 +131,30 @@
       "event": "vs. Goreville"
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3714285714285714
-  }
+  "career": {
+    "career_id": "career_000367",
+    "canonical_name": "Jacob Forsythe",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Caldwell County",
+      "record": "0-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Caldwell County",
+      "record": "12-20",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

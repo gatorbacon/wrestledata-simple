@@ -3,13 +3,13 @@
   "name": "Jonathan Pitt",
   "team": "Seneca",
   "team_slug": "seneca",
-  "team_rank": 48,
+  "team_rank": 53,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 178,
+  "current_rank": 176,
   "record": {
-    "overall": "0-5",
-    "vs_ranked": "0-5",
+    "overall": "0-6",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 20.0,
     "pd7": -20.0,
-    "si_plus": 90.6,
+    "si_plus": 91.0,
     "df_plus": 90.8,
-    "apr_plus": 91.7,
+    "apr_plus": 91.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,102 +28,148 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34989974132",
-      "opponent_rank": 129,
-      "opponent_name": "DonJai Karnickey",
-      "method": "Fall 1:36"
+      "opponent_id": "35040585132",
+      "opponent_rank": 136,
+      "opponent_name": "David Brown",
+      "method": "Fall 1:46"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "34989974132",
+      "opponent_name": "DonJai Karnickey",
+      "opponent_team": "Western",
+      "opponent_team_rank": 40,
+      "opponent_weight": 215,
+      "opponent_rank": 130,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "vs. Western",
+      "mv_impact": -9.12
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35090038132",
       "opponent_name": "Shoron Briscoe",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 215,
-      "opponent_rank": 51,
+      "opponent_rank": 31,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:28",
       "event": "vs. Seneca",
-      "mv_impact": -4.84
+      "mv_impact": -4.19
     },
     {
       "date": "2025-12-10",
       "opponent_id": "35040585132",
       "opponent_name": "David Brown",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": 128,
+      "opponent_rank": 136,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:46",
       "event": "vs. Seneca",
-      "mv_impact": -9.52
+      "mv_impact": -9.6
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35084287132",
       "opponent_name": "Scott Jennings",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 32,
       "opponent_weight": 215,
-      "opponent_rank": 29,
+      "opponent_rank": 34,
       "weight_class": "215",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "2:19",
       "event": "vs. Seneca",
-      "mv_impact": -2.75
+      "mv_impact": -3.26
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35090038132",
       "opponent_name": "Shoron Briscoe",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 80,
       "opponent_weight": 215,
-      "opponent_rank": 51,
+      "opponent_rank": 31,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Seneca",
-      "mv_impact": -4.84
+      "mv_impact": -4.19
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34989974132",
       "opponent_name": "DonJai Karnickey",
       "opponent_team": "Western",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 40,
       "opponent_weight": 215,
-      "opponent_rank": 129,
+      "opponent_rank": 130,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:36",
       "event": "vs. Western",
-      "mv_impact": -9.34
+      "mv_impact": -9.12
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_002425",
+    "canonical_name": "Jonathan Pitt",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Seneca",
+      "record": "0-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Seneca",
+      "record": "2-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Seneca",
+      "record": "0-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

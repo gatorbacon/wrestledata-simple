@@ -3,48 +3,108 @@
   "name": "Hayden Meeks",
   "team": "Ashland Blazer",
   "team_slug": "ashland_blazer",
-  "team_rank": 23,
+  "team_rank": 24,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 77,
+  "current_rank": 46,
   "record": {
-    "overall": "1-8",
-    "vs_ranked": "1-8",
-    "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "overall": "3-11",
+    "vs_ranked": "3-10",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 25.0,
-    "pd7": -25.0,
-    "si_plus": 88.0,
-    "df_plus": 69.5,
-    "apr_plus": 91.5,
-    "pin_rate": 1.0,
+    "pf7": 12.5,
+    "pa7": 12.5,
+    "pd7": 0.0,
+    "si_plus": 103.6,
+    "df_plus": 92.7,
+    "apr_plus": 93.1,
+    "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 1
+    "techs": 1,
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 8,
+    "ranked_wins": 3,
+    "ranked_losses": 10,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35495583132",
-      "opponent_rank": 71,
-      "opponent_name": "Savannah Vaughan",
-      "method": "Fall 0:44"
+      "opponent_id": "35617108132",
+      "opponent_rank": 47,
+      "opponent_name": "Makenzie Collins",
+      "method": "TF 15-0 2:19"
     },
     "worst_loss": {
-      "opponent_id": "35643514132",
-      "opponent_rank": 65,
-      "opponent_name": "Rhyalynn Johnson",
-      "method": "Fall 1:14"
+      "opponent_id": "35635824132",
+      "opponent_rank": 58,
+      "opponent_name": "Violet Brown",
+      "method": "Fall 1:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333549132",
+      "opponent_name": "Jacey Lyddane",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 7,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "Clipson Jones Classic Ladies 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35617108132",
+      "opponent_name": "Makenzie Collins",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 50,
+      "opponent_weight": 120,
+      "opponent_rank": 47,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:19",
+      "event": "Clipson Jones Classic Ladies 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35600316132",
+      "opponent_name": "karma taylor",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 20,
+      "opponent_weight": 120,
+      "opponent_rank": 32,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:19",
+      "event": "Clipson Jones Classic Ladies 2026"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35897664132",
+      "opponent_name": "Tylynn Gilliam",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 126,
+      "opponent_rank": 87,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:55",
+      "event": "vs. Boyd County"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35427544132",
@@ -52,14 +112,13 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 7,
       "opponent_weight": 120,
-      "opponent_rank": 54,
+      "opponent_rank": 43,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:18",
-      "event": "Maroon`s New Year Ladies Brawl",
-      "mv_impact": -6.34
+      "event": "Maroon`s New Year Ladies Brawl"
     },
     {
       "date": "2026-01-03",
@@ -68,14 +127,28 @@
       "opponent_team": "Campbellsville",
       "opponent_team_rank": 32,
       "opponent_weight": 120,
-      "opponent_rank": 65,
+      "opponent_rank": 45,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "Maroon`s New Year Ladies Brawl",
-      "mv_impact": -6.5
+      "event": "Maroon`s New Year Ladies Brawl"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35450356132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:25",
+      "event": "Girls Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -84,37 +157,20 @@
       "opponent_team": "Mason County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 58,
+      "opponent_rank": 36,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "Girls Hatfield McCoy 32 2025",
-      "mv_impact": -6.6
+      "event": "Girls Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35850790132",
       "opponent_name": "Hailey Diamond",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 28,
-      "opponent_weight": 126,
-      "opponent_rank": 27,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:30",
-      "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -4.81
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35333423132",
-      "opponent_name": "Zoe Helms",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 29,
       "opponent_weight": 126,
       "opponent_rank": 26,
       "weight_class": "126",
@@ -122,8 +178,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -3.65
+      "event": "Ashland Invitational Ladies Tournament"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35333423132",
+      "opponent_name": "Zoe Helms",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 24,
+      "opponent_weight": 126,
+      "opponent_rank": 24,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Ashland Invitational Ladies Tournament"
     },
     {
       "date": "2025-12-13",
@@ -132,46 +202,43 @@
       "opponent_team": "Greenup County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 59,
+      "opponent_rank": 58,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "Ashland Invitational Ladies Tournament",
-      "mv_impact": -6.92
+      "event": "Ashland Invitational Ladies Tournament"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35600316132",
       "opponent_name": "karma taylor",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 18,
-      "opponent_weight": 126,
-      "opponent_rank": 15,
+      "opponent_team_rank": 20,
+      "opponent_weight": 120,
+      "opponent_rank": 32,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -3.26
+      "event": "2025 Anchor Down Showdown (Ladies)"
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35495583132",
       "opponent_name": "Savannah Vaughan",
       "opponent_team": "Southwestern",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 56,
       "opponent_weight": 126,
-      "opponent_rank": 71,
+      "opponent_rank": 70,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:44",
-      "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": 5.45
+      "event": "2025 Anchor Down Showdown (Ladies)"
     },
     {
       "date": "2025-12-06",
@@ -180,19 +247,18 @@
       "opponent_team": "Mason County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 14,
+      "opponent_rank": 15,
       "weight_class": "126",
       "result": "L",
       "method": "TF",
       "score": "18-0",
       "duration": "2:55",
-      "event": "2025 Anchor Down Showdown (Ladies)",
-      "mv_impact": -2.29
+      "event": "2025 Anchor Down Showdown (Ladies)"
     }
   ],
   "bonus": {
     "top33_wins": 0,
     "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.625
+    "top33_bonus_ev_shrunk": 1.2916666666666667
   }
 }

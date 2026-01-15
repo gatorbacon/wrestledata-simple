@@ -3,56 +3,88 @@
   "name": "Collin Burk",
   "team": "Pleasure Ridge Park",
   "team_slug": "pleasure_ridge_park",
-  "team_rank": 116,
+  "team_rank": 118,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 119,
+  "current_rank": 117,
   "record": {
-    "overall": "2-5",
-    "vs_ranked": "2-5",
+    "overall": "3-7",
+    "vs_ranked": "3-7",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 94.7,
+    "df_plus": 102.0,
+    "apr_plus": 96.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_wins": 3,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35222796132",
-      "opponent_rank": 122,
-      "opponent_name": "Vance Stokley",
-      "method": "Fall 1:47"
+      "opponent_id": "35215157132",
+      "opponent_rank": 101,
+      "opponent_name": "Jackson Campbell",
+      "method": "Fall 1:22"
     },
     "worst_loss": {
       "opponent_id": "35223094132",
-      "opponent_rank": 110,
+      "opponent_rank": 109,
       "opponent_name": "William Skaggs",
       "method": "Fall 2:49"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-10",
+      "opponent_id": "35215157132",
+      "opponent_name": "Jackson Campbell",
+      "opponent_team": "Doss",
+      "opponent_team_rank": 74,
+      "opponent_weight": 126,
+      "opponent_rank": 101,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "2026 Lou City Wrestling",
+      "mv_impact": 2.79
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35746154132",
+      "opponent_name": "Isaiah Mitchell",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 79,
+      "opponent_weight": 132,
+      "opponent_rank": 37,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "2026 Lou City Wrestling",
+      "mv_impact": -4.41
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35223094132",
       "opponent_name": "William Skaggs",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 86,
+      "opponent_team_rank": 91,
       "opponent_weight": 132,
-      "opponent_rank": 110,
+      "opponent_rank": 109,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -63,26 +95,42 @@
     },
     {
       "date": "2025-12-20",
+      "opponent_id": "34989075132",
+      "opponent_name": "Johann Springer",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 51,
+      "opponent_weight": 132,
+      "opponent_rank": 25,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "5th Annual Cardinal Clash",
+      "mv_impact": -5.1
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "34989158132",
       "opponent_name": "John Santiago",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 36,
       "opponent_weight": 132,
-      "opponent_rank": 165,
+      "opponent_rank": 156,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:38",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": 2.1
+      "mv_impact": 1.83
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35023924132",
       "opponent_name": "Jerald Ferrel",
       "opponent_team": "Fort Knox",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 83,
       "opponent_weight": 132,
       "opponent_rank": 77,
       "weight_class": "132",
@@ -91,76 +139,88 @@
       "score": null,
       "duration": "3:00",
       "event": "The Beast of the East",
-      "mv_impact": -6.62
+      "mv_impact": -7.02
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35222796132",
       "opponent_name": "Vance Stokley",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 132,
-      "opponent_rank": 122,
+      "opponent_rank": 119,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:47",
       "event": "The Beast of the East",
-      "mv_impact": 2.56
+      "mv_impact": 2.8
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34989075132",
       "opponent_name": "Johann Springer",
       "opponent_team": "North Hardin",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 51,
       "opponent_weight": 132,
-      "opponent_rank": 27,
+      "opponent_rank": 25,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:33",
       "event": "The Beast of the East",
-      "mv_impact": -4.97
+      "mv_impact": -5.1
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35746154132",
       "opponent_name": "Isaiah Mitchell",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 79,
       "opponent_weight": 132,
-      "opponent_rank": 86,
+      "opponent_rank": 37,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:15",
       "event": "vs. Pleasure Ridge Park",
-      "mv_impact": -5.81
+      "mv_impact": -4.41
     },
     {
       "date": "2025-12-03",
       "opponent_id": "35122062132",
       "opponent_name": "Hayden Drexler",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 138,
-      "opponent_rank": 9,
+      "opponent_rank": 10,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Pleasure Ridge Park",
-      "mv_impact": -2.33
+      "mv_impact": -2.49
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3020833333333333
-  }
+  "career": {
+    "career_id": "career_005623",
+    "canonical_name": "Collin Burk",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Pleasure Ridge Park",
+      "record": "3-7",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

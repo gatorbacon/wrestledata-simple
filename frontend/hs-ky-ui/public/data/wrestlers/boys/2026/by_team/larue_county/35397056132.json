@@ -3,36 +3,144 @@
   "name": "Hunter Caven",
   "team": "LaRue County",
   "team_slug": "larue_county",
-  "team_rank": 36,
-  "weight_class": 120,
+  "team_rank": 49,
+  "weight_class": 126,
   "year": 2026,
-  "current_rank": 185,
+  "current_rank": 83,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "3-2",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pf7": 12.5,
+    "pa7": 15.0,
+    "pd7": -2.5,
+    "si_plus": 105.6,
+    "df_plus": 94.5,
+    "apr_plus": 99.9,
+    "pin_rate": 0.667,
+    "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 0
+    "techs": 1,
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "34989849132",
+      "opponent_rank": 104,
+      "opponent_name": "Donte Hayes",
+      "method": "TF 17-2 2:48"
+    },
+    "worst_loss": {
+      "opponent_id": "35226139132",
+      "opponent_rank": 39,
+      "opponent_name": "Zachary Beecham",
+      "method": "Fall 0:53"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35226139132",
+      "opponent_name": "Zachary Beecham",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 126,
+      "opponent_rank": 39,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -4.64
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35205996132",
+      "opponent_name": "William Lay",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 109,
+      "opponent_weight": 126,
+      "opponent_rank": 150,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:43",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 1.11
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34989849132",
+      "opponent_name": "Donte Hayes",
+      "opponent_team": "Western",
+      "opponent_team_rank": 40,
+      "opponent_weight": 126,
+      "opponent_rank": 104,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "2:48",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 1.98
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35024648132",
+      "opponent_name": "Sebastian Woosley",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 38,
+      "opponent_weight": 126,
+      "opponent_rank": 152,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:37",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": 2.04
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34989085132",
+      "opponent_name": "Jayson Tejeda",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 36,
+      "opponent_weight": 126,
+      "opponent_rank": 27,
+      "weight_class": "126",
+      "result": "L",
+      "method": "TF",
+      "score": "18-0",
+      "duration": "3:42",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -3.63
+    }
+  ],
+  "career": {
+    "career_id": "career_005485",
+    "canonical_name": "Hunter Caven",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "LaRue County",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

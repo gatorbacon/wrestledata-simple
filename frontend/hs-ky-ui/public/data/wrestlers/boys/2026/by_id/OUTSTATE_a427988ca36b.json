@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -21,20 +21,25 @@
     "df_plus": 100.0,
     "apr_plus": 100.0,
     "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
+    "techs": 1,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34989332132",
+      "opponent_rank": 47,
+      "opponent_name": "Christian Church",
+      "method": "TF 17-1 1:45"
+    },
     "worst_loss": {
       "opponent_id": "35035544132",
-      "opponent_rank": 20,
+      "opponent_rank": 24,
       "opponent_name": "Cole Young",
       "method": "MD 15-2"
     }
@@ -45,9 +50,9 @@
       "opponent_id": "35035544132",
       "opponent_name": "Cole Young",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 120,
-      "opponent_rank": 20,
+      "opponent_rank": 24,
       "weight_class": "120",
       "result": "L",
       "method": "MD",
@@ -57,12 +62,27 @@
     },
     {
       "date": "2025-12-19",
+      "opponent_id": "34989332132",
+      "opponent_name": "Christian Church",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 113,
+      "opponent_rank": 47,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "1:45",
+      "event": "vs. Blanchester High School"
+    },
+    {
+      "date": "2025-12-19",
       "opponent_id": "35488260132",
       "opponent_name": "Emilio Rodriguez",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 44,
       "opponent_weight": 120,
-      "opponent_rank": 19,
+      "opponent_rank": 23,
       "weight_class": "120",
       "result": "L",
       "method": "TF",
@@ -70,10 +90,5 @@
       "duration": "0:00",
       "event": "vs. Blanchester High School"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.308139534883721
-  }
+  ]
 }

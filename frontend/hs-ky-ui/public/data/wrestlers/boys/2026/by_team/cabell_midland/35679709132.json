@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 91.0,
+    "df_plus": 102.0,
+    "apr_plus": 89.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,23 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35887032132",
-      "opponent_rank": 194,
+      "opponent_rank": 187,
       "opponent_name": "wyatt connelly",
       "method": "Inj. [time]"
     },
     "worst_loss": {
-      "opponent_id": "35732595132",
-      "opponent_rank": 22,
-      "opponent_name": "James Begley",
-      "method": "Fall 1:06"
+      "opponent_id": "35635512132",
+      "opponent_rank": 121,
+      "opponent_name": "Tristan Parrish",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35635512132",
+      "opponent_name": "Tristan Parrish",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 88,
+      "opponent_weight": 165,
+      "opponent_rank": 121,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Les Delong Memorial Tournament"
+    },
     {
       "date": "2025-12-12",
       "opponent_id": "35887032132",
@@ -52,7 +67,7 @@
       "opponent_team": "Wayne County",
       "opponent_team_rank": 20,
       "opponent_weight": 165,
-      "opponent_rank": 194,
+      "opponent_rank": 187,
       "weight_class": "175",
       "result": "W",
       "method": "INJ",
@@ -65,9 +80,9 @@
       "opponent_id": "35732595132",
       "opponent_name": "James Begley",
       "opponent_team": "Martin County",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 13,
       "opponent_weight": 175,
-      "opponent_rank": 22,
+      "opponent_rank": 25,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",

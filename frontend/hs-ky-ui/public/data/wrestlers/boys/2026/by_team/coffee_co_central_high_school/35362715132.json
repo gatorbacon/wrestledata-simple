@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35362715132",
+  "name": "Joshua Mainville",
+  "team": "Coffee Co. Central High School",
+  "team_slug": "coffee_co_central_high_school",
+  "team_rank": null,
+  "weight_class": 190,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 101.3,
+    "df_plus": 102.0,
+    "apr_plus": 98.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35221014132",
+      "opponent_rank": 54,
+      "opponent_name": "Jonas Martin",
+      "method": "TF 18-2 3:27"
+    },
+    "worst_loss": {
+      "opponent_id": "35458691132",
+      "opponent_rank": 31,
+      "opponent_name": "Lane Parrish",
+      "method": "MD 13-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35221014132",
+      "opponent_name": "Jonas Martin",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 66,
+      "opponent_weight": 190,
+      "opponent_rank": 54,
+      "weight_class": "190",
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "3:27",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35458691132",
+      "opponent_name": "Lane Parrish",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": 33,
+      "opponent_weight": 190,
+      "opponent_rank": 31,
+      "weight_class": "190",
+      "result": "L",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "2026 Commando Crush"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35049071132",
+      "opponent_name": "Preston Davis",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 89,
+      "opponent_weight": 190,
+      "opponent_rank": 157,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:58",
+      "event": "2026 Commando Crush"
+    }
+  ]
+}

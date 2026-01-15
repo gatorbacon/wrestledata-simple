@@ -3,37 +3,37 @@
   "name": "Maddox Reeves",
   "team": "St. Xavier",
   "team_slug": "st_xavier",
-  "team_rank": 22,
+  "team_rank": 18,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 13,
+  "current_rank": 11,
   "record": {
-    "overall": "4-3",
-    "vs_ranked": "3-2",
-    "vs_top10": "0-1",
-    "vs_top25": "1-1"
+    "overall": "6-4",
+    "vs_ranked": "5-3",
+    "vs_top10": "0-2",
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 7.5,
     "pa7": 5.0,
     "pd7": 2.5,
-    "si_plus": 95.2,
-    "df_plus": 107.9,
-    "apr_plus": 106.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.75,
+    "si_plus": 95.1,
+    "df_plus": 108.5,
+    "apr_plus": 108.7,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.833,
     "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 2,
+    "ranked_wins": 5,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35144510132",
-      "opponent_rank": 15,
+      "opponent_rank": 13,
       "opponent_name": "Jaiden Cooper",
       "method": "MD 13-1"
     },
@@ -46,34 +46,79 @@
   },
   "match_list": [
     {
-      "date": "2026-01-03",
-      "opponent_id": "35212701132",
-      "opponent_name": "Jack Ferguson",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 116,
+      "date": "2026-01-10",
+      "opponent_id": "34993550132",
+      "opponent_name": "Santiago Gonzalez",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
       "opponent_weight": 150,
-      "opponent_rank": 9,
-      "weight_class": "150",
+      "opponent_rank": 4,
+      "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "3:36",
-      "event": "vs. St. Xavier"
+      "duration": "2:08",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35160812132",
+      "opponent_name": "Mekhi Moorman",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 32,
+      "opponent_weight": 150,
+      "opponent_rank": 165,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35669887132",
+      "opponent_name": "Shane Stikes",
+      "opponent_team": "Central",
+      "opponent_team_rank": 68,
+      "opponent_weight": 150,
+      "opponent_rank": 42,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:46",
+      "event": "2026 Lou City Wrestling"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35084067132",
       "opponent_name": "Carmello Shirley",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
-      "opponent_weight": 150,
-      "opponent_rank": 122,
+      "opponent_team_rank": 32,
+      "opponent_weight": 144,
+      "opponent_rank": 134,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:15",
-      "event": "vs. Ballard"
+      "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35212701132",
+      "opponent_name": "Jack Ferguson",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": 118,
+      "opponent_weight": 150,
+      "opponent_rank": 7,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:36",
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2026-01-03",
@@ -95,7 +140,7 @@
       "opponent_id": "34993741132",
       "opponent_name": "Bracken King",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 144,
       "opponent_rank": 37,
       "weight_class": "150",
@@ -110,9 +155,9 @@
       "opponent_id": "35118589132",
       "opponent_name": "Jaden Brainard",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 6,
       "opponent_weight": 150,
-      "opponent_rank": 50,
+      "opponent_rank": 64,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -125,9 +170,9 @@
       "opponent_id": "35144510132",
       "opponent_name": "Jaiden Cooper",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 49,
       "opponent_weight": 150,
-      "opponent_rank": 15,
+      "opponent_rank": 13,
       "weight_class": "150",
       "result": "W",
       "method": "MD",
@@ -151,9 +196,39 @@
       "event": "2025 Ryle Raider Rumble"
     }
   ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.4074074074074074
-  }
+  "career": {
+    "career_id": "career_002649",
+    "canonical_name": "Maddox Reeves",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "St. Xavier",
+      "record": "7-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "St. Xavier",
+      "record": "17-12",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "St. Xavier",
+      "record": "15-9",
+      "regional_place": 2,
+      "state_place": null
+    }
+  ]
 }

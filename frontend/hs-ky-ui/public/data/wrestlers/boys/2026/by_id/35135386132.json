@@ -3,13 +3,13 @@
   "name": "Chaz Tutt",
   "team": "Fairdale",
   "team_slug": "fairdale",
-  "team_rank": 21,
+  "team_rank": 23,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 74,
+  "current_rank": 82,
   "record": {
-    "overall": "5-2",
-    "vs_ranked": "5-2",
+    "overall": "5-4",
+    "vs_ranked": "5-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 25.0,
     "pa7": 2.68,
     "pd7": 22.32,
-    "si_plus": 125.0,
-    "df_plus": 112.1,
-    "apr_plus": 102.8,
+    "si_plus": 126.4,
+    "df_plus": 112.5,
+    "apr_plus": 101.1,
     "pin_rate": 0.8,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,38 +28,70 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35635839132",
-      "opponent_rank": 118,
+      "opponent_rank": 87,
       "opponent_name": "David Voelker",
       "method": "TF 16-1 2:37"
     },
     "worst_loss": {
-      "opponent_id": "35084287132",
-      "opponent_rank": 29,
-      "opponent_name": "Scott Jennings",
-      "method": "Fall 0:00"
+      "opponent_id": "37002445132",
+      "opponent_rank": 81,
+      "opponent_name": "Carlin Swigart",
+      "method": "Fall 5:15"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34993551132",
+      "opponent_name": "Jamison Wester",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 27,
+      "opponent_weight": 215,
+      "opponent_rank": 32,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:14",
+      "event": "2026 Lou City Wrestling",
+      "mv_impact": -5.37
+    },
+    {
+      "date": "2026-01-07",
+      "opponent_id": "37002445132",
+      "opponent_name": "Carlin Swigart",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 28,
+      "opponent_weight": 215,
+      "opponent_rank": 81,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:15",
+      "event": "vs. North Oldham",
+      "mv_impact": -7.37
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35122091132",
       "opponent_name": "Adam Behling",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 112,
       "opponent_weight": 215,
-      "opponent_rank": 15,
+      "opponent_rank": 13,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:19",
       "event": "Phil Thrasher Tournament",
-      "mv_impact": -3.63
+      "mv_impact": -3.76
     },
     {
       "date": "2025-12-13",
@@ -68,99 +100,111 @@
       "opponent_team": "Valley",
       "opponent_team_rank": 132,
       "opponent_weight": 215,
-      "opponent_rank": 127,
+      "opponent_rank": 128,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:35",
       "event": "King of the Bluegrass",
-      "mv_impact": 2.5
+      "mv_impact": 2.47
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35635839132",
       "opponent_name": "David Voelker",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 215,
-      "opponent_rank": 118,
+      "opponent_rank": 87,
       "weight_class": "215",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "2:37",
       "event": "King of the Bluegrass",
-      "mv_impact": 1.51
+      "mv_impact": 2.97
     },
     {
       "date": "2025-12-10",
       "opponent_id": "35084287132",
       "opponent_name": "Scott Jennings",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 32,
       "opponent_weight": 215,
-      "opponent_rank": 29,
+      "opponent_rank": 34,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Fairdale",
-      "mv_impact": -3.75
+      "mv_impact": -4.26
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35666096132",
       "opponent_name": "Chris Pottinger",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 64,
       "opponent_weight": 190,
-      "opponent_rank": 179,
+      "opponent_rank": 181,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Fairdale",
-      "mv_impact": 2.96
+      "mv_impact": 2.98
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35144079132",
       "opponent_name": "Dominic Geraghty",
       "opponent_team": "Desales",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 72,
       "opponent_weight": 215,
-      "opponent_rank": 126,
+      "opponent_rank": 127,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Fairdale",
-      "mv_impact": 2.38
+      "mv_impact": 2.17
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35321120132",
       "opponent_name": "Luke Dalton",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 215,
-      "opponent_rank": 135,
+      "opponent_rank": 136,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:18",
       "event": "vs. North Bullitt",
-      "mv_impact": 2.26
+      "mv_impact": 2.11
     }
   ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9791666666666666
-  }
+  "career": {
+    "career_id": "career_005377",
+    "canonical_name": "Chaz Tutt",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Fairdale",
+      "record": "5-4",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

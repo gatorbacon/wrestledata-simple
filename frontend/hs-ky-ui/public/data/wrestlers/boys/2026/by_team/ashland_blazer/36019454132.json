@@ -3,38 +3,153 @@
   "name": "Clarence McDade",
   "team": "Ashland Blazer",
   "team_slug": "ashland_blazer",
-  "team_rank": 52,
-  "weight_class": 157,
+  "team_rank": 41,
+  "weight_class": 150,
   "year": 2026,
-  "current_rank": 179,
+  "current_rank": 74,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "4-4",
+    "vs_ranked": "2-3",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 82.9,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "df_plus": 102.0,
+    "apr_plus": 109.4,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35703578132",
+      "opponent_rank": 76,
+      "opponent_name": "Tyler Hall",
+      "method": "Fall 1:14"
+    },
+    "worst_loss": {
+      "opponent_id": "35724486132",
+      "opponent_rank": 50,
+      "opponent_name": "Parker Fouch",
+      "method": "Fall 1:01"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "36023776132",
+      "opponent_name": "Mason Smarr",
+      "opponent_team": "Braxton County Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35336027132",
+      "opponent_name": "Taner Woodman",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 150,
+      "opponent_rank": 20,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:27",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35450381132",
+      "opponent_name": "Hunter Massey",
+      "opponent_team": "John I. Burton",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35635414132",
+      "opponent_name": "Jaydan Barry",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 88,
+      "opponent_weight": 150,
+      "opponent_rank": 161,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:11",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35703578132",
+      "opponent_name": "Tyler Hall",
+      "opponent_team": "Floyd Central",
+      "opponent_team_rank": 81,
+      "opponent_weight": 150,
+      "opponent_rank": 76,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:14",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35724486132",
+      "opponent_name": "Parker Fouch",
+      "opponent_team": "East Carter",
+      "opponent_team_rank": 76,
+      "opponent_weight": 150,
+      "opponent_rank": 50,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "vs. East Carter"
+    },
+    {
+      "date": "2026-01-06",
+      "opponent_id": "35850447132",
+      "opponent_name": "Chase Gillum",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 150,
+      "opponent_rank": 3,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:43",
+      "event": "vs. Boyd County"
+    },
     {
       "date": "2025-12-10",
       "opponent_id": "36477090132",
@@ -49,6 +164,32 @@
       "score": "16-1",
       "duration": "0:00",
       "event": "vs. Gallia Academy High School"
+    }
+  ],
+  "career": {
+    "career_id": "career_000063",
+    "canonical_name": "Clarence McDade",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Ashland Blazer",
+      "record": "5-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Ashland Blazer",
+      "record": "7-9",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }

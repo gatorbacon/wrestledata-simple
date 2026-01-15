@@ -3,10 +3,10 @@
   "name": "Samuel Sigurbjartsson",
   "team": "Green County",
   "team_slug": "green_county",
-  "team_rank": 82,
+  "team_rank": 87,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 169,
+  "current_rank": 165,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -18,8 +18,8 @@
     "pa7": 0.0,
     "pd7": 0.0,
     "si_plus": 101.3,
-    "df_plus": 102.1,
-    "apr_plus": 88.7,
+    "df_plus": 102.0,
+    "apr_plus": 89.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35179141132",
-      "opponent_rank": 100,
+      "opponent_rank": 103,
       "opponent_name": "Jacob Sandidge",
       "method": "Fall 0:00"
     }
@@ -45,7 +45,23 @@
       "opponent_id": "35179141132",
       "opponent_name": "Jacob Sandidge",
       "opponent_team": "Campbellsville",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 67,
+      "opponent_weight": 138,
+      "opponent_rank": 103,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Green County",
+      "mv_impact": -7.94
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35223096132",
+      "opponent_name": "Memphis Adams",
+      "opponent_team": "Hart County",
+      "opponent_team_rank": 91,
       "opponent_weight": 138,
       "opponent_rank": 100,
       "weight_class": "138",
@@ -53,24 +69,25 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Green County",
-      "mv_impact": -8.07
-    },
-    {
-      "date": "2025-12-11",
-      "opponent_id": "35223096132",
-      "opponent_name": "Memphis Adams",
-      "opponent_team": "Hart County",
-      "opponent_team_rank": 86,
-      "opponent_weight": 138,
-      "opponent_rank": 80,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
       "event": "vs. Hart County",
-      "mv_impact": -6.11
+      "mv_impact": -6.67
+    }
+  ],
+  "career": {
+    "career_id": "career_005415",
+    "canonical_name": "Samuel Sigurbjartsson",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 8,
+      "team": "Green County",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ]
 }
