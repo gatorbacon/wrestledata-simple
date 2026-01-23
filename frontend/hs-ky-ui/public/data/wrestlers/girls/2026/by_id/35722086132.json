@@ -3,7 +3,7 @@
   "name": "Bralyn Maynard",
   "team": "Prestonsburg",
   "team_slug": "prestonsburg",
-  "team_rank": 21,
+  "team_rank": 23,
   "weight_class": 152,
   "year": 2026,
   "current_rank": 1,
@@ -11,15 +11,15 @@
     "overall": "14-0",
     "vs_ranked": "6-0",
     "vs_top10": "2-0",
-    "vs_top25": "4-0"
+    "vs_top25": "3-0"
   },
   "metrics": {
-    "pf7": 17.0,
-    "pa7": 5.8,
-    "pd7": 11.2,
-    "si_plus": 113.5,
-    "df_plus": 107.3,
-    "apr_plus": 110.0,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.786,
     "bonus_rate": 0.857,
     "majors": 0,
@@ -45,9 +45,9 @@
       "opponent_id": "35600336132",
       "opponent_name": "kaylee upchurch",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 20,
-      "opponent_weight": 145,
-      "opponent_rank": 21,
+      "opponent_team_rank": 22,
+      "opponent_weight": 152,
+      "opponent_rank": 27,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
@@ -77,7 +77,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 16,
       "opponent_weight": 152,
-      "opponent_rank": 16,
+      "opponent_rank": 19,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
@@ -95,7 +95,7 @@
       "opponent_rank": null,
       "weight_class": "152",
       "result": "W",
-      "method": "DEC",
+      "method": "FF",
       "score": null,
       "duration": "7:00",
       "event": "Girls Brawl in the Hall 2026"
@@ -122,7 +122,7 @@
       "opponent_team": "Pikeville",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 50,
+      "opponent_rank": 54,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
@@ -250,10 +250,5 @@
       "duration": "2:30",
       "event": "2025 Anchor Down Showdown (Ladies)"
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.7619047619047619
-  }
+  ]
 }

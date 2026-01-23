@@ -6,12 +6,12 @@
   "team_rank": 1,
   "weight_class": 185,
   "year": 2026,
-  "current_rank": 69,
+  "current_rank": 59,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,11 +28,47 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35542620132",
+      "opponent_rank": 25,
+      "opponent_name": "Marita Jones",
+      "method": "Fall 0:29"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35542620132",
+      "opponent_name": "Marita Jones",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 185,
+      "opponent_rank": 25,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "Mestengo Invitational"
+    },
+    {
+      "date": "2026-01-14",
+      "opponent_id": "35404891132",
+      "opponent_name": "Clarytza Castillejos Santos",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 41,
+      "opponent_weight": 185,
+      "opponent_rank": 4,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Lafayette"
+    }
+  ]
 }

@@ -3,23 +3,23 @@
   "name": "Alex Cooper",
   "team": "Marion County",
   "team_slug": "marion_county",
-  "team_rank": 104,
+  "team_rank": 106,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 180,
+  "current_rank": 186,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "0-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.0,
-    "apr_plus": 97.1,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,33 +28,63 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "34992058132",
-      "opponent_rank": 22,
-      "opponent_name": "Aiden Behnken",
-      "method": "Fall 1:19"
+      "opponent_id": "35001142132",
+      "opponent_rank": 99,
+      "opponent_name": "CJ Hogan",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "34994788132",
+      "opponent_name": "Justus Shirley",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 15,
+      "opponent_weight": 132,
+      "opponent_rank": 81,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Spencer County"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35001142132",
+      "opponent_name": "CJ Hogan",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 12,
+      "opponent_weight": 138,
+      "opponent_rank": 99,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Marion County"
+    },
     {
       "date": "2026-01-07",
       "opponent_id": "34992058132",
       "opponent_name": "Aiden Behnken",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 57,
       "opponent_weight": 132,
-      "opponent_rank": 22,
+      "opponent_rank": 29,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:19",
       "event": "vs. Marion County",
-      "mv_impact": -3.47
+      "mv_impact": -3.41
     },
     {
       "date": "2026-01-07",
@@ -63,14 +93,14 @@
       "opponent_team": "Nelson County",
       "opponent_team_rank": 24,
       "opponent_weight": 132,
-      "opponent_rank": 21,
+      "opponent_rank": 28,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Nelson County",
-      "mv_impact": -3.09
+      "mv_impact": -3.06
     }
   ],
   "career": {
@@ -86,7 +116,7 @@
       "season": 2026,
       "grade": 8,
       "team": "Marion County",
-      "record": "0-2",
+      "record": "0-4",
       "regional_place": null,
       "state_place": null
     },

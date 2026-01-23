@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 86.8,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -33,10 +33,10 @@
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35448841132",
-      "opponent_rank": 51,
-      "opponent_name": "Gabriela Valentin",
-      "method": "Fall 1:26"
+      "opponent_id": "35739869132",
+      "opponent_rank": 54,
+      "opponent_name": "Paige Collins",
+      "method": "Fall 1:16"
     }
   },
   "match_list": [
@@ -46,8 +46,8 @@
       "opponent_name": "Paige Collins",
       "opponent_team": "Mason County",
       "opponent_team_rank": null,
-      "opponent_weight": 107,
-      "opponent_rank": 45,
+      "opponent_weight": 100,
+      "opponent_rank": 54,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -75,9 +75,9 @@
       "opponent_id": "35333603132",
       "opponent_name": "Madison Strunk",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 49,
       "opponent_weight": 107,
-      "opponent_rank": 44,
+      "opponent_rank": 47,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -87,38 +87,33 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35599270132",
-      "opponent_name": "Brooklyn Sammons",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 20,
-      "opponent_weight": 107,
-      "opponent_rank": 17,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:37",
-      "event": "2025 Anchor Down Showdown (Ladies)"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35448841132",
       "opponent_name": "Gabriela Valentin",
       "opponent_team": "Danville",
       "opponent_team_rank": 19,
       "opponent_weight": 120,
-      "opponent_rank": 51,
+      "opponent_rank": 50,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:26",
       "event": "2025 Anchor Down Showdown (Ladies)"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35599270132",
+      "opponent_name": "Brooklyn Sammons",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 22,
+      "opponent_weight": 107,
+      "opponent_rank": 18,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "2025 Anchor Down Showdown (Ladies)"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.5
-  }
+  ]
 }

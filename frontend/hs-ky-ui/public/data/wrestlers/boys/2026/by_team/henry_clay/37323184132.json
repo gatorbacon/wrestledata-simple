@@ -3,13 +3,13 @@
   "name": "Emanuel Moscoso Silva",
   "team": "Henry Clay",
   "team_slug": "henry_clay",
-  "team_rank": 34,
-  "weight_class": 132,
+  "team_rank": 33,
+  "weight_class": 126,
   "year": 2026,
-  "current_rank": 257,
+  "current_rank": 192,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,32 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35433350132",
+      "opponent_rank": 159,
+      "opponent_name": "Holden Marshall",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-14",
+      "opponent_id": "35433350132",
+      "opponent_name": "Holden Marshall",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 99,
+      "opponent_weight": 126,
+      "opponent_rank": 159,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Lafayette"
+    }
+  ]
 }

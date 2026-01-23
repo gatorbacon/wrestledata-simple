@@ -3,23 +3,23 @@
   "name": "Alexander Clark",
   "team": "Fort Knox",
   "team_slug": "fort_knox",
-  "team_rank": 83,
+  "team_rank": 81,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 176,
+  "current_rank": 179,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-4",
+    "overall": "1-5",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.0,
-    "apr_plus": 92.9,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,56 +28,84 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35002889132",
-      "opponent_rank": 56,
+      "opponent_rank": 62,
       "opponent_name": "Kieran Pauley",
       "method": "Fall 0:54"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-17",
+      "opponent_id": "35064912132",
+      "opponent_name": "Tre Wilson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 96,
+      "opponent_weight": 126,
+      "opponent_rank": 18,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "OUTSTATE_2e30f8f8a946",
+      "opponent_name": "Unknown",
+      "opponent_team": "Marion County",
+      "opponent_team_rank": 106,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Marion County"
+    },
+    {
       "date": "2026-01-13",
       "opponent_id": "35001146132",
       "opponent_name": "Estevan Delgadillo",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 12,
       "opponent_weight": 126,
-      "opponent_rank": 16,
+      "opponent_rank": 15,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:57",
-      "event": "vs. Fort Knox",
-      "mv_impact": -3.18
+      "event": "vs. Fort Knox"
     },
     {
       "date": "2026-01-13",
       "opponent_id": "35002889132",
       "opponent_name": "Kieran Pauley",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 80,
       "opponent_weight": 126,
-      "opponent_rank": 56,
+      "opponent_rank": 62,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "vs. Fort Knox",
-      "mv_impact": -7.46
+      "event": "vs. Fort Knox"
     },
     {
       "date": "2026-01-10",
       "opponent_id": "34989085132",
       "opponent_name": "Jayson Tejeda",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 50,
       "opponent_weight": 126,
       "opponent_rank": 27,
       "weight_class": "126",
@@ -85,8 +113,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:22",
-      "event": "Bear Down Invitational (Boys)",
-      "mv_impact": -4.63
+      "event": "Bear Down Invitational (Boys)"
     },
     {
       "date": "2026-01-10",
@@ -95,14 +122,13 @@
       "opponent_team": "Nelson County",
       "opponent_team_rank": 24,
       "opponent_weight": 126,
-      "opponent_rank": 39,
+      "opponent_rank": 42,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:34",
-      "event": "Bear Down Invitational (Boys)",
-      "mv_impact": -4.64
+      "event": "Bear Down Invitational (Boys)"
     }
   ],
   "career": {
@@ -118,7 +144,7 @@
       "season": 2026,
       "grade": 9,
       "team": "Fort Knox",
-      "record": "0-4",
+      "record": "1-5",
       "regional_place": null,
       "state_place": null
     },

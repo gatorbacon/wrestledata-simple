@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34988549132",
-      "opponent_rank": 38,
+      "opponent_rank": 41,
       "opponent_name": "Rohaan Waraich",
       "method": "TF 23-7 5:18"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35488163132",
+      "opponent_rank": 3,
+      "opponent_name": "Keegan Bishop",
+      "method": "MD 14-2"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-18",
+      "opponent_id": "35488163132",
+      "opponent_name": "Keegan Bishop",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 43,
+      "opponent_weight": 175,
+      "opponent_rank": 3,
+      "weight_class": "175",
+      "result": "L",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "64th Catholic Invitational Tournament"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "34988549132",
       "opponent_name": "Rohaan Waraich",
       "opponent_team": "Conner",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 11,
       "opponent_weight": 175,
-      "opponent_rank": 38,
+      "opponent_rank": 41,
       "weight_class": "175",
       "result": "W",
       "method": "TF",

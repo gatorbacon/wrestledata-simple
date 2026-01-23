@@ -3,31 +3,31 @@
   "name": "Mason Brooks",
   "team": "Somerset",
   "team_slug": "somerset",
-  "team_rank": 31,
+  "team_rank": 28,
   "weight_class": 106,
   "year": 2026,
   "current_rank": 2,
   "record": {
-    "overall": "7-0",
-    "vs_ranked": "7-0",
+    "overall": "8-0",
+    "vs_ranked": "8-0",
     "vs_top10": "0-0",
     "vs_top25": "4-0"
   },
   "metrics": {
-    "pf7": 4.9,
-    "pa7": 4.2,
-    "pd7": 0.7,
-    "si_plus": 97.9,
-    "df_plus": 114.8,
-    "apr_plus": 119.6,
-    "pin_rate": 0.857,
-    "bonus_rate": 0.857,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.875,
+    "bonus_rate": 0.875,
     "majors": 0,
     "techs": 0,
-    "pins": 6
+    "pins": 7
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 8,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -41,27 +41,42 @@
   },
   "match_list": [
     {
+      "date": "2026-01-13",
+      "opponent_id": "37801853132",
+      "opponent_name": "Zoey Whitt",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 122,
+      "opponent_weight": 106,
+      "opponent_rank": 182,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:08",
+      "event": "vs. Somerset"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35640802132",
       "opponent_name": "Clay Atchison",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 45,
       "opponent_weight": 106,
-      "opponent_rank": 22,
+      "opponent_rank": 21,
       "weight_class": "106",
       "result": "W",
       "method": "TB-1",
       "score": "7-6",
       "duration": "10:00",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": 5.34
+      "mv_impact": 5.36
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35599181132",
       "opponent_name": "Alex Upchurch",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 109,
       "opponent_weight": 106,
       "opponent_rank": 13,
       "weight_class": "106",
@@ -70,30 +85,30 @@
       "score": null,
       "duration": "3:51",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": 9.31
+      "mv_impact": 9.32
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34989026132",
       "opponent_name": "Josh Athey",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 50,
       "opponent_weight": 106,
-      "opponent_rank": 56,
+      "opponent_rank": 50,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:22",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": 5.11
+      "mv_impact": 5.12
     },
     {
       "date": "2025-12-20",
       "opponent_id": "34994868132",
       "opponent_name": "oliver westphal",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 15,
       "opponent_weight": 106,
       "opponent_rank": 12,
       "weight_class": "106",
@@ -102,7 +117,7 @@
       "score": null,
       "duration": "0:58",
       "event": "5th Annual Cardinal Clash",
-      "mv_impact": 9.74
+      "mv_impact": 9.76
     },
     {
       "date": "2025-12-06",
@@ -111,21 +126,21 @@
       "opponent_team": "Campbellsville",
       "opponent_team_rank": 67,
       "opponent_weight": 106,
-      "opponent_rank": 118,
+      "opponent_rank": 128,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 2.28
+      "mv_impact": 2.31
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35405958132",
       "opponent_name": "Tanner Magee",
       "opponent_team": "Grant County",
-      "opponent_team_rank": 86,
+      "opponent_team_rank": 85,
       "opponent_weight": 106,
       "opponent_rank": 18,
       "weight_class": "106",
@@ -134,23 +149,23 @@
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 8.93
+      "mv_impact": 8.95
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35652160132",
       "opponent_name": "Taden Cracraft",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 6,
       "opponent_weight": 106,
-      "opponent_rank": 70,
+      "opponent_rank": 76,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 4.73
+      "mv_impact": 4.75
     }
   ],
   "career": {
@@ -165,7 +180,7 @@
       "season": 2026,
       "grade": 7,
       "team": "Somerset",
-      "record": "8-0",
+      "record": "9-0",
       "regional_place": null,
       "state_place": null
     }

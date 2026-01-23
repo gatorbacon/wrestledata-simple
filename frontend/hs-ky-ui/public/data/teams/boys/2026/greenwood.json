@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:36.962762Z",
+  "generated_at_utc": "2026-01-22T20:06:57.946666Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35049123132",
       "name": "Ryan LaMotte",
-      "current_rank": 51,
+      "current_rank": 60,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -46,24 +46,24 @@
       "wrestler_id": "35205295132",
       "name": "Thomas Sang",
       "current_rank": 19,
-      "xtp": 3.34,
+      "xtp": 3.56,
       "xtp_p": 0.47,
       "xtp_a": 0.96,
-      "xtp_b": 1.91,
+      "xtp_b": 2.13,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
-        "wins": 6,
-        "losses": 0
+        "wins": 7,
+        "losses": 1
       }
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35049056132",
       "name": "Harrison Davis",
-      "current_rank": 160,
+      "current_rank": 71,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -74,25 +74,25 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 5
+        "losses": 6
       }
     },
     "126": {
       "weight": 126,
       "wrestler_id": "35049033132",
       "name": "Carter Bratcher",
-      "current_rank": 25,
-      "xtp": 1.65,
-      "xtp_p": 0.18,
-      "xtp_a": 0.49,
-      "xtp_b": 0.98,
+      "current_rank": 26,
+      "xtp": 2.11,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.17,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
-        "wins": 3,
-        "losses": 2
+        "wins": 2,
+        "losses": 3
       }
     },
     "138": {
@@ -115,27 +115,9 @@
     },
     "144": {
       "weight": 144,
-      "wrestler_id": "35049083132",
-      "name": "Tristan Davis",
-      "current_rank": 93,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 1
-      }
-    },
-    "150": {
-      "weight": 150,
       "wrestler_id": "35205293132",
       "name": "Jaxon Leonard",
-      "current_rank": 48,
+      "current_rank": 56,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -153,7 +135,7 @@
       "weight": 157,
       "wrestler_id": "35049061132",
       "name": "Idris Qamar",
-      "current_rank": 72,
+      "current_rank": 71,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -164,18 +146,18 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       }
     },
     "175": {
       "weight": 175,
       "wrestler_id": "35205294132",
       "name": "Maddox Tabor",
-      "current_rank": 27,
-      "xtp": 2.23,
-      "xtp_p": 0.22,
-      "xtp_a": 0.64,
-      "xtp_b": 1.37,
+      "current_rank": 30,
+      "xtp": 1.85,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 1.11,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -189,7 +171,7 @@
       "weight": 190,
       "wrestler_id": "35006461132",
       "name": "Xavier Holbrook",
-      "current_rank": 101,
+      "current_rank": 68,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -200,14 +182,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 5
+        "losses": 3
       }
     },
     "215": {
       "weight": 215,
       "wrestler_id": "35049077132",
       "name": "Samuel Castelli",
-      "current_rank": 56,
+      "current_rank": 60,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -218,14 +200,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 4
       }
     },
     "285": {
       "weight": 285,
       "wrestler_id": "35205296132",
       "name": "John Hightower",
-      "current_rank": 57,
+      "current_rank": 58,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -236,7 +218,7 @@
       },
       "top33_record": {
         "wins": 1,
-        "losses": 6
+        "losses": 10
       }
     }
   },
@@ -251,20 +233,29 @@
       "bonus_rate": 0.0
     },
     {
+      "weight": 144,
+      "wrestler_id": "35049083132",
+      "name": "Tristan Davis",
+      "wins": 16,
+      "losses": 17,
+      "top25_wins": 0,
+      "bonus_rate": 0.812
+    },
+    {
       "weight": 190,
       "wrestler_id": "35049071132",
       "name": "Preston Davis",
-      "wins": 8,
+      "wins": 9,
       "losses": 16,
       "top25_wins": 0,
-      "bonus_rate": 0.625
+      "bonus_rate": 0.556
     },
     {
-      "weight": 285,
+      "weight": 215,
       "wrestler_id": "35049067132",
       "name": "Kaw Reh",
       "wins": 1,
-      "losses": 10,
+      "losses": 12,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -280,30 +271,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 187,
+      "wins": 205,
       "losses": 133
     },
     "top33": {
       "wins": 10,
-      "losses": 32
+      "losses": 38
     },
     "top10": {
       "wins": 0,
       "losses": 9
     },
     "bonus_rate": {
-      "value": 0.749,
-      "rank": 89,
+      "value": 0.683,
+      "rank": 96,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.567,
-      "rank": 120,
+      "value": 0.517,
+      "rank": 128,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.118,
-      "rank": 32,
+      "value": 0.107,
+      "rank": 33,
       "rank_scope": "league"
     }
   }

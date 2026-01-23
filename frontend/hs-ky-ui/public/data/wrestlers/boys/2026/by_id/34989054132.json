@@ -3,12 +3,12 @@
   "name": "Lamarrian Bufford",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 29,
+  "team_rank": 26,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 88,
+  "current_rank": 77,
   "record": {
-    "overall": "2-1",
+    "overall": "4-1",
     "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,14 +17,14 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.0,
-    "apr_plus": 111.9,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35281675132",
-      "opponent_rank": 91,
+      "opponent_rank": 80,
       "opponent_name": "Christopher Lucas",
       "method": "Fall 0:00"
     },
@@ -42,12 +42,27 @@
   "match_list": [
     {
       "date": "2025-12-13",
+      "opponent_id": "35336969132",
+      "opponent_name": "Connor Daly",
+      "opponent_team": "Carbondale (H.S.)",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Carbondale (H.S.)"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35281675132",
       "opponent_name": "Christopher Lucas",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 108,
       "opponent_weight": 285,
-      "opponent_rank": 91,
+      "opponent_rank": 80,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -84,6 +99,21 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Waterloo (H.S.)"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_a4863ebfa212",
+      "opponent_name": "Landon Gore",
+      "opponent_team": "Floyd Central",
+      "opponent_team_rank": 79,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Floyd Central"
     }
   ],
   "career": {
@@ -98,7 +128,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Paducah Tilghman",
-      "record": "2-1",
+      "record": "4-1",
       "regional_place": null,
       "state_place": null
     }

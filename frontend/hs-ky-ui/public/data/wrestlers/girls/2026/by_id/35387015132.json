@@ -3,37 +3,37 @@
   "name": "Mariah Koch",
   "team": "Campbell County",
   "team_slug": "campbell_county",
-  "team_rank": 31,
+  "team_rank": 17,
   "weight_class": 152,
   "year": 2026,
-  "current_rank": 11,
+  "current_rank": 12,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "3-1",
+    "overall": "4-1",
+    "vs_ranked": "4-1",
     "vs_top10": "0-1",
-    "vs_top25": "2-1"
+    "vs_top25": "3-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 113.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35383872132",
-      "opponent_rank": 12,
+      "opponent_rank": 14,
       "opponent_name": "Jasmin Vieyra",
       "method": "Fall 2:00"
     },
@@ -46,13 +46,28 @@
   },
   "match_list": [
     {
+      "date": "2026-01-17",
+      "opponent_id": "35333559132",
+      "opponent_name": "Kali Alfred",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 3,
+      "opponent_weight": 152,
+      "opponent_rank": 18,
+      "weight_class": "152",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Mestengo Invitational"
+    },
+    {
       "date": "2025-12-27",
       "opponent_id": "35383872132",
       "opponent_name": "Jasmin Vieyra",
       "opponent_team": "Cooper",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 12,
+      "opponent_rank": 14,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
@@ -75,14 +90,14 @@
       "score": null,
       "duration": "1:28",
       "event": "Seneca Girls Invitational",
-      "mv_impact": -1.78
+      "mv_impact": -1.75
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35602803132",
       "opponent_name": "KAYLEE HAYS",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 21,
       "opponent_weight": 165,
       "opponent_rank": 36,
       "weight_class": "165",
@@ -91,28 +106,23 @@
       "score": null,
       "duration": "1:51",
       "event": "Tommy Castle Classic",
-      "mv_impact": 6.75
+      "mv_impact": 6.77
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35436579132",
       "opponent_name": "Kynleigh Ward",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 20,
       "opponent_weight": 165,
-      "opponent_rank": 16,
+      "opponent_rank": 20,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic",
-      "mv_impact": 7.7
+      "mv_impact": 7.73
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.9296296296296296
-  }
+  ]
 }

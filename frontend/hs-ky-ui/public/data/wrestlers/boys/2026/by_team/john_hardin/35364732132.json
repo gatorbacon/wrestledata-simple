@@ -3,12 +3,12 @@
   "name": "Axel Ornelas",
   "team": "John Hardin",
   "team_slug": "john_hardin",
-  "team_rank": null,
+  "team_rank": 96,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": null,
+  "current_rank": 205,
   "record": {
-    "overall": "0-2",
+    "overall": "2-2",
     "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.0,
-    "apr_plus": 88.5,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35222796132",
-      "opponent_rank": 119,
+      "opponent_rank": 129,
       "opponent_name": "Vance Stokley",
       "method": "Fall 0:00"
     }
@@ -42,32 +42,62 @@
   "match_list": [
     {
       "date": "2025-12-13",
-      "opponent_id": "35222796132",
-      "opponent_name": "Vance Stokley",
-      "opponent_team": "Mercer County",
-      "opponent_team_rank": 109,
-      "opponent_weight": 132,
-      "opponent_rank": 119,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
+      "opponent_id": "OUTSTATE_3a96223443a0",
+      "opponent_name": "Unknown",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 44,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. John Hardin"
+      "duration": "7:00",
+      "event": "vs. George Rogers Clark"
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35267075132",
       "opponent_name": "Wesley Wainscott",
       "opponent_team": "Western Hills",
-      "opponent_team_rank": 137,
+      "opponent_team_rank": 139,
       "opponent_weight": 132,
-      "opponent_rank": 55,
+      "opponent_rank": 76,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:41",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_28470c03fea2",
+      "opponent_name": "Unknown",
+      "opponent_team": "Trinity",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35222796132",
+      "opponent_name": "Vance Stokley",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 111,
+      "opponent_weight": 132,
+      "opponent_rank": 129,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "vs. John Hardin"
     }
   ],
@@ -77,5 +107,15 @@
     "seasons": [
       2026
     ]
-  }
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "John Hardin",
+      "record": "2-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ]
 }

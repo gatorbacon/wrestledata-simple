@@ -6,9 +6,9 @@
   "team_rank": 15,
   "weight_class": 235,
   "year": 2026,
-  "current_rank": 11,
+  "current_rank": 12,
   "record": {
-    "overall": "3-0",
+    "overall": "4-0",
     "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "3-0"
@@ -17,11 +17,11 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 117.4,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
     "pins": 3
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35598131132",
-      "opponent_rank": 13,
+      "opponent_rank": 14,
       "opponent_name": "Avagayle Lingenfelter",
       "method": "Fall 1:07"
     },
@@ -41,11 +41,26 @@
   },
   "match_list": [
     {
+      "date": "2026-01-17",
+      "opponent_id": "OUTSTATE_38f95cb97442",
+      "opponent_name": "Unknown",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 34,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "235",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Central Hardin"
+    },
+    {
       "date": "2025-12-12",
       "opponent_id": "35520302132",
       "opponent_name": "Sevira Taito",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 36,
       "opponent_weight": 235,
       "opponent_rank": 21,
       "weight_class": "235",
@@ -63,7 +78,7 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 15,
       "opponent_weight": 235,
-      "opponent_rank": 13,
+      "opponent_rank": 14,
       "weight_class": "235",
       "result": "W",
       "method": "FALL",
@@ -88,10 +103,5 @@
       "event": "Sister Slam",
       "mv_impact": 5.66
     }
-  ],
-  "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.8874458874458873
-  }
+  ]
 }

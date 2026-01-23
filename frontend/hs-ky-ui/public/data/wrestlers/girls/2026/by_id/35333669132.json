@@ -3,23 +3,23 @@
   "name": "Neticia Hughes",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 17,
+  "team_rank": 13,
   "weight_class": 114,
   "year": 2026,
-  "current_rank": 47,
+  "current_rank": 39,
   "record": {
     "overall": "2-4",
     "vs_ranked": "2-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 4.67,
-    "pa7": 10.67,
-    "pd7": -6.0,
-    "si_plus": 82.9,
-    "df_plus": 101.0,
-    "apr_plus": 97.4,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,15 +33,15 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "36852839132",
-      "opponent_rank": 48,
+      "opponent_rank": 41,
       "opponent_name": "Jaden Faulkner Jackson",
-      "method": "Fall 0:35"
+      "method": "Fall 0:55"
     },
     "worst_loss": {
-      "opponent_id": "35542621132",
-      "opponent_rank": 45,
-      "opponent_name": "Isabella Warner",
-      "method": "Dec 8-7"
+      "opponent_id": "35398470132",
+      "opponent_rank": 37,
+      "opponent_name": "Rusi Hamisi",
+      "method": "MD 14-1"
     }
   },
   "match_list": [
@@ -50,14 +50,14 @@
       "opponent_id": "36852839132",
       "opponent_name": "Jaden Faulkner Jackson",
       "opponent_team": "Moore",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 47,
       "opponent_weight": 114,
-      "opponent_rank": 48,
+      "opponent_rank": 41,
       "weight_class": "114",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:35",
+      "duration": "0:55",
       "event": "Queen of the City Wrestling"
     },
     {
@@ -67,7 +67,7 @@
       "opponent_team": "Valley",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 63,
+      "opponent_rank": 58,
       "weight_class": "114",
       "result": "W",
       "method": "FALL",
@@ -82,7 +82,7 @@
       "opponent_team": "Central",
       "opponent_team_rank": 18,
       "opponent_weight": 114,
-      "opponent_rank": 45,
+      "opponent_rank": 36,
       "weight_class": "114",
       "result": "L",
       "method": "DEC",
@@ -100,7 +100,7 @@
       "opponent_rank": null,
       "weight_class": "114",
       "result": "L",
-      "method": "DEC",
+      "method": "FF",
       "score": null,
       "duration": "7:00",
       "event": "The Beast of the East"
@@ -112,7 +112,7 @@
       "opponent_team": "Mercer County",
       "opponent_team_rank": 46,
       "opponent_weight": 114,
-      "opponent_rank": 26,
+      "opponent_rank": 24,
       "weight_class": "114",
       "result": "L",
       "method": "DEC",
@@ -127,7 +127,7 @@
       "opponent_team": "Henry Clay",
       "opponent_team_rank": 1,
       "opponent_weight": 114,
-      "opponent_rank": 39,
+      "opponent_rank": 37,
       "weight_class": "114",
       "result": "L",
       "method": "MD",
@@ -135,10 +135,5 @@
       "duration": "7:00",
       "event": "beast of the east"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4074074074074074
-  }
+  ]
 }

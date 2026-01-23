@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:36.990396Z",
+  "generated_at_utc": "2026-01-22T20:06:57.973297Z",
   "starters": {
-    "138": {
-      "weight": 138,
+    "132": {
+      "weight": 132,
       "wrestler_id": "37260084132",
       "name": "Evan Johnson",
-      "current_rank": 280,
+      "current_rank": 200,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -45,25 +45,25 @@
       "weight": 190,
       "wrestler_id": "36736544132",
       "name": "Davin Nusspickel",
-      "current_rank": 114,
+      "current_rank": 118,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       }
     },
     "285": {
       "weight": 285,
-      "wrestler_id": "37259435132",
-      "name": "Bradyn Clutts",
-      "current_rank": 320,
+      "wrestler_id": "37259696132",
+      "name": "Cole Napier",
+      "current_rank": 97,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -74,15 +74,15 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       }
     }
   },
   "remaining": [
     {
       "weight": 285,
-      "wrestler_id": "37259696132",
-      "name": "Cole Napier",
+      "wrestler_id": "37259435132",
+      "name": "Bradyn Clutts",
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -100,30 +100,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": null,
+      "wins": 3,
       "losses": 2
     },
     "top33": {
       "wins": 0,
-      "losses": 1
+      "losses": 4
     },
     "top10": {
       "wins": 0,
-      "losses": 1
+      "losses": 3
     },
     "bonus_rate": {
-      "value": null,
-      "rank": null,
+      "value": 1.0,
+      "rank": 4,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": null,
-      "rank": null,
+      "value": 1.0,
+      "rank": 3,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": null,
-      "rank": null,
+      "value": 0.0,
+      "rank": 143,
       "rank_scope": "league"
     }
   }

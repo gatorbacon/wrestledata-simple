@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.0,
-    "apr_plus": 100.5,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -27,27 +27,47 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35752417132",
+      "opponent_rank": 43,
+      "opponent_name": "Landon Howard",
+      "method": "Dec 10-6"
+    },
     "worst_loss": {
       "opponent_id": "34993511132",
-      "opponent_rank": 21,
+      "opponent_rank": 19,
       "opponent_name": "AJ Falk",
       "method": "MD 11-1"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-03",
+      "opponent_id": "35752417132",
+      "opponent_name": "Landon Howard",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 1,
+      "opponent_weight": 132,
+      "opponent_rank": 43,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
+      "event": "vs. Richlands"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "34993511132",
       "opponent_name": "AJ Falk",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 138,
-      "opponent_rank": 21,
+      "opponent_rank": 19,
       "weight_class": "138",
       "result": "L",
       "method": "MD",

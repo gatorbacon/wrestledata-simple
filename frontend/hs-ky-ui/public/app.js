@@ -1279,12 +1279,44 @@ function safe(value, formatter) {
   function formatDateMMDDYY(dateStr) {
     if (!dateStr) return "—";
     try {
-      const date = new Date(dateStr);
-      if (isNaN(date.getTime())) return dateStr; // Return original if invalid
-      const month = String(date.getMonth() + 1).padStart(2, "0");
-      const day = String(date.getDate()).padStart(2, "0");
-      const year = String(date.getFullYear()).slice(-2);
-      return `${month}-${day}-${year}`;
+      // Parse date string explicitly as local date to avoid timezone issues
+      // Handle both "YYYY-MM-DD" (ISO) and "MM/DD/YYYY" formats
+      let year, month, day;
+      
+      if (dateStr.includes("-")) {
+        // ISO format: "2025-12-13"
+        const parts = dateStr.split("-");
+        year = parseInt(parts[0], 10);
+        month = parseInt(parts[1], 10);
+        day = parseInt(parts[2], 10);
+      } else if (dateStr.includes("/")) {
+        // Slash format: "12/13/2025" or "12/13/25"
+        const parts = dateStr.split("/");
+        month = parseInt(parts[0], 10);
+        day = parseInt(parts[1], 10);
+        year = parseInt(parts[2], 10);
+        // Handle 2-digit years
+        if (year < 100) {
+          year += 2000;
+        }
+      } else {
+        // Fallback to Date constructor
+        const date = new Date(dateStr);
+        if (isNaN(date.getTime())) return dateStr;
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+      }
+      
+      // Validate parsed values
+      if (isNaN(year) || isNaN(month) || isNaN(day)) {
+        return dateStr;
+      }
+      
+      const monthStr = String(month).padStart(2, "0");
+      const dayStr = String(day).padStart(2, "0");
+      const yearStr = String(year).slice(-2);
+      return `${monthStr}-${dayStr}-${yearStr}`;
     } catch (e) {
       return dateStr;
     }
@@ -1496,24 +1528,16 @@ function safe(value, formatter) {
         tr.classList.add("out-of-state-row");
       }
       
-      // Determine display values for forfeits
+      // Determine display values
       let displayOpponent, displayOpponentTeam, displayOpponentRank, displayResult, displayMethod, displayMVImpact;
       
-      if (isForfeit) {
-        displayOpponent = "Forfeit";
-        displayOpponentTeam = getForfeitOpponentTeam(match.event);
-        displayOpponentRank = null; // Will show "—"
-        displayResult = "W"; // Forfeits are wins
-        displayMethod = "FF";
-        displayMVImpact = null; // No MV impact for forfeits
-      } else {
-        displayOpponent = match.opponent_name;
-        displayOpponentTeam = match.opponent_team;
-        displayOpponentRank = match.opponent_rank;
-        displayResult = match.result;
-        displayMethod = match.method;
-        displayMVImpact = match.mv_impact;
-      }
+      // Use match data directly, but override method to "FF" if it's a forfeit
+      displayOpponent = match.opponent_name || "Unknown";
+      displayOpponentTeam = match.opponent_team || "Unknown";
+      displayOpponentRank = match.opponent_rank;
+      displayResult = match.result; // Preserve W/L from match data
+      displayMethod = isForfeit ? "FF" : match.method; // Override to FF for forfeits
+      displayMVImpact = isForfeit ? null : match.mv_impact; // No MV impact for forfeits
   
       // 1. Date (MM-DD-YY format)
       const dateTd = document.createElement("td");
@@ -1524,8 +1548,9 @@ function safe(value, formatter) {
       const oppTd = document.createElement("td");
       oppTd.className = "name-cell";
       const gender = getGenderFromURL();
-      // For forfeits and out-of-state opponents, don't create a link
-      if (!isForfeit && !isOutOfState && match.opponent_id) {
+      // Create link if opponent_id exists (even for forfeits, if opponent_id is available)
+      // Only skip link for out-of-state opponents without opponent_id
+      if (match.opponent_id && !isOutOfState) {
         const a = document.createElement("a");
         a.href = buildPageURL('wrestler.html', gender, { id: match.opponent_id });
         a.textContent = safe(displayOpponent);
@@ -1580,15 +1605,8 @@ function safe(value, formatter) {
       // 6. Result (combined Result + Method as badge)
       // For forfeits, create a custom badge with "FF" and win styling
       const resultTd = document.createElement("td");
-      if (isForfeit) {
-        const forfeitBadge = document.createElement("span");
-        forfeitBadge.className = "result-badge result-win";
-        forfeitBadge.textContent = "FF";
-        forfeitBadge.setAttribute("title", "Win by Forfeit");
-        resultTd.appendChild(forfeitBadge);
-      } else {
-        resultTd.appendChild(createResultBadge(displayResult, displayMethod));
-      }
+      // Use createResultBadge for all matches (including forfeits) to correctly show W/L
+      resultTd.appendChild(createResultBadge(displayResult, displayMethod));
       tr.appendChild(resultTd);
       
       // 7. MV Impact (right-aligned, tabular, color-coded) - NCAA only

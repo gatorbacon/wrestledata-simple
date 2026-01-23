@@ -3,13 +3,13 @@
   "name": "Julie Phelps",
   "team": "Taylor County",
   "team_slug": "taylor_county",
-  "team_rank": 39,
+  "team_rank": 37,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 217,
+  "current_rank": 59,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,19 +20,40 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35226240132",
+      "opponent_rank": 62,
+      "opponent_name": "Uriah Lemarr",
+      "method": "Fall 0:00"
+    },
     "worst_loss": null
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-14",
+      "opponent_id": "35226240132",
+      "opponent_name": "Uriah Lemarr",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 24,
+      "opponent_weight": 120,
+      "opponent_rank": 62,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Taylor County"
+    }
+  ]
 }

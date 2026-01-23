@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
-    "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 89.4,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35333381132",
-      "opponent_rank": 20,
+      "opponent_rank": 19,
       "opponent_name": "Kaylee Klee",
       "method": "Fall 0:25"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-15",
+      "opponent_id": "35635663132",
+      "opponent_name": "June Napier",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 9,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:46",
+      "event": "vs. White House Heritage High School Girls"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35333381132",
@@ -47,7 +62,7 @@
       "opponent_team": "Daviess County",
       "opponent_team_rank": 2,
       "opponent_weight": 138,
-      "opponent_rank": 20,
+      "opponent_rank": 19,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",

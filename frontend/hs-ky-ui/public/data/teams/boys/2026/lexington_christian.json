@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:37.119156Z",
+  "generated_at_utc": "2026-01-22T20:06:58.099105Z",
   "starters": {
     "120": {
       "weight": 120,
       "wrestler_id": "34995408132",
       "name": "Preston Grigsby",
-      "current_rank": 54,
+      "current_rank": 58,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -41,11 +41,11 @@
         "losses": 2
       }
     },
-    "132": {
-      "weight": 132,
-      "wrestler_id": "34995444132",
-      "name": "Urijah Krail",
-      "current_rank": 91,
+    "126": {
+      "weight": 126,
+      "wrestler_id": "34995466132",
+      "name": "Zac Jenkins",
+      "current_rank": 72,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -56,14 +56,32 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 8
+        "losses": 0
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "34995444132",
+      "name": "Urijah Krail",
+      "current_rank": 102,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 7
       }
     },
     "144": {
       "weight": 144,
       "wrestler_id": "34995380132",
       "name": "Levi Howard",
-      "current_rank": 51,
+      "current_rank": 50,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -73,33 +91,15 @@
         "losses": 2
       },
       "top33_record": {
-        "wins": 0,
-        "losses": 2
-      }
-    },
-    "150": {
-      "weight": 150,
-      "wrestler_id": "34995382132",
-      "name": "Blake kelly",
-      "current_rank": 130,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
+        "wins": 1,
+        "losses": 3
       }
     },
     "157": {
       "weight": 157,
       "wrestler_id": "34995376132",
       "name": "Brandon Shackelton",
-      "current_rank": 236,
+      "current_rank": 240,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -117,25 +117,25 @@
       "weight": 165,
       "wrestler_id": "34995373132",
       "name": "Nathan Sargent",
-      "current_rank": 43,
+      "current_rank": 67,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 5
+        "losses": 4
       }
     },
     "175": {
       "weight": 175,
       "wrestler_id": "34995372132",
       "name": "Eli Grigsby",
-      "current_rank": 62,
+      "current_rank": 76,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -146,14 +146,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 5
+        "losses": 6
       }
     },
     "190": {
       "weight": 190,
       "wrestler_id": "34995381132",
       "name": "Ethan Jett",
-      "current_rank": 260,
+      "current_rank": 264,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -172,10 +172,10 @@
       "wrestler_id": "34995374132",
       "name": "Mac Darland",
       "current_rank": 6,
-      "xtp": 12.05,
+      "xtp": 11.69,
       "xtp_p": 5.13,
       "xtp_a": 2.53,
-      "xtp_b": 4.39,
+      "xtp_b": 4.03,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -189,18 +189,18 @@
       "weight": 285,
       "wrestler_id": "34995377132",
       "name": "Jamison Dunn",
-      "current_rank": 13,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
+      "current_rank": 33,
+      "xtp": 5.08,
+      "xtp_p": 1.16,
+      "xtp_a": 1.37,
+      "xtp_b": 2.55,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 1
       },
       "top33_record": {
         "wins": 2,
-        "losses": 3
+        "losses": 5
       }
     }
   },
@@ -215,11 +215,11 @@
       "bonus_rate": 1.0
     },
     {
-      "weight": 132,
-      "wrestler_id": "34995466132",
-      "name": "Zac Jenkins",
+      "weight": 144,
+      "wrestler_id": "34995382132",
+      "name": "Blake kelly",
       "wins": 0,
-      "losses": 0,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -227,10 +227,10 @@
       "weight": 215,
       "wrestler_id": "34995410132",
       "name": "Bode Darland",
-      "wins": 6,
+      "wins": 10,
       "losses": 2,
-      "top25_wins": 1,
-      "bonus_rate": 0.833
+      "top25_wins": 0,
+      "bonus_rate": 0.9
     }
   ],
   "team_metrics": {
@@ -244,30 +244,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 40,
-      "losses": 49
+      "wins": 45,
+      "losses": 60
     },
     "top33": {
-      "wins": 2,
-      "losses": 27
+      "wins": 4,
+      "losses": 29
     },
     "top10": {
       "wins": 0,
       "losses": 8
     },
     "bonus_rate": {
-      "value": 0.775,
-      "rank": 66,
+      "value": 0.756,
+      "rank": 62,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.725,
-      "rank": 25,
+      "value": 0.689,
+      "rank": 36,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.025,
-      "rank": 114,
+      "value": 0.022,
+      "rank": 121,
       "rank_scope": "league"
     }
   }

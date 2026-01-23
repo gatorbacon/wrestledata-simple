@@ -11,15 +11,15 @@
     "overall": "12-1",
     "vs_ranked": "12-1",
     "vs_top10": "5-1",
-    "vs_top25": "9-1"
+    "vs_top25": "8-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 113.7,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.917,
     "bonus_rate": 0.917,
     "majors": 0,
@@ -59,14 +59,14 @@
       "score": null,
       "duration": "1:19",
       "event": "Lady Bruin Invitational 2026",
-      "mv_impact": -1.47
+      "mv_impact": -1.46
     },
     {
       "date": "2026-01-10",
       "opponent_id": "35333569132",
       "opponent_name": "Leyla Cruz Sanchez",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 37,
       "opponent_weight": 165,
       "opponent_rank": 46,
       "weight_class": "165",
@@ -91,7 +91,7 @@
       "score": null,
       "duration": "3:45",
       "event": "Lady Bruin Invitational 2026",
-      "mv_impact": 9.16
+      "mv_impact": 9.19
     },
     {
       "date": "2026-01-10",
@@ -100,23 +100,23 @@
       "opponent_team": "Meade County",
       "opponent_team_rank": 11,
       "opponent_weight": 165,
-      "opponent_rank": 10,
+      "opponent_rank": 9,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:52",
       "event": "Lady Bruin Invitational 2026",
-      "mv_impact": 8.56
+      "mv_impact": 8.6
     },
     {
       "date": "2026-01-07",
       "opponent_id": "35333561132",
       "opponent_name": "Alondra Cortes",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 29,
       "opponent_weight": 165,
-      "opponent_rank": 59,
+      "opponent_rank": 57,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -130,9 +130,9 @@
       "opponent_id": "35600347132",
       "opponent_name": "Cali Dople",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 22,
       "opponent_weight": 152,
-      "opponent_rank": 28,
+      "opponent_rank": 31,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -155,16 +155,16 @@
       "score": null,
       "duration": "0:00",
       "event": "Ladies Woodford County Invitational",
-      "mv_impact": 8.68
+      "mv_impact": 8.7
     },
     {
       "date": "2025-12-29",
       "opponent_id": "35599274132",
       "opponent_name": "Bayleigh Thompson",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 22,
       "opponent_weight": 185,
-      "opponent_rank": 12,
+      "opponent_rank": 13,
       "weight_class": "165",
       "result": "W",
       "method": "MFF",
@@ -177,7 +177,7 @@
       "opponent_id": "35333583132",
       "opponent_name": "Abigail Liberal",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 28,
       "opponent_weight": 185,
       "opponent_rank": 20,
       "weight_class": "185",
@@ -209,9 +209,9 @@
       "opponent_id": "35333618132",
       "opponent_name": "Lyric Stanfield",
       "opponent_team": "Taylor County",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 57,
       "opponent_weight": 185,
-      "opponent_rank": 25,
+      "opponent_rank": 32,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
@@ -225,7 +225,7 @@
       "opponent_id": "35461622132",
       "opponent_name": "Alayna Banks",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 53,
       "opponent_weight": 185,
       "opponent_rank": 15,
       "weight_class": "185",
@@ -252,10 +252,5 @@
       "event": "2025 Ohio County Girls` Invitational",
       "mv_impact": 8.8
     }
-  ],
-  "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.9480519480519483
-  }
+  ]
 }

@@ -3,48 +3,63 @@
   "name": "Amber Honeycutt",
   "team": "Knox Central",
   "team_slug": "knox_central",
-  "team_rank": 42,
+  "team_rank": 40,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 17,
+  "current_rank": 16,
   "record": {
-    "overall": "7-2",
-    "vs_ranked": "6-2",
+    "overall": "8-3",
+    "vs_ranked": "6-3",
     "vs_top10": "0-1",
-    "vs_top25": "2-2"
+    "vs_top25": "2-3"
   },
   "metrics": {
-    "pf7": 12.67,
-    "pa7": 14.0,
-    "pd7": -1.33,
-    "si_plus": 105.2,
-    "df_plus": 98.3,
-    "apr_plus": 105.3,
-    "pin_rate": 0.714,
-    "bonus_rate": 0.857,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.625,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 1,
     "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 6,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35369127132",
-      "opponent_rank": 19,
+      "opponent_rank": 18,
       "opponent_name": "Alexis Howard",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35599271132",
-      "opponent_rank": 16,
+      "opponent_rank": 15,
       "opponent_name": "Kylan Phillips",
       "method": "Dec 8-6"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-15",
+      "opponent_id": "OUTSTATE_c4763ba75fbf",
+      "opponent_name": "Unknown",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 22,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Mccreary Central"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "36434803132",
@@ -67,7 +82,7 @@
       "opponent_team": "Russell County",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 57,
+      "opponent_rank": 59,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35599271132",
       "opponent_name": "Kylan Phillips",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 22,
       "opponent_weight": 138,
-      "opponent_rank": 16,
+      "opponent_rank": 15,
       "weight_class": "138",
       "result": "L",
       "method": "DEC",
@@ -106,19 +121,19 @@
       "event": "Maroon`s New Year Ladies Brawl"
     },
     {
-      "date": "2025-12-22",
-      "opponent_id": "35639208132",
-      "opponent_name": "Myka Collins",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": 50,
-      "opponent_weight": 132,
-      "opponent_rank": 51,
+      "date": "2026-01-03",
+      "opponent_id": "35599271132",
+      "opponent_name": "Kylan Phillips",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 22,
+      "opponent_weight": 138,
+      "opponent_rank": 15,
       "weight_class": "138",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Perry County Central"
+      "event": "Maroon`s New Year Ladies Brawl"
     },
     {
       "date": "2025-12-22",
@@ -127,7 +142,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 6,
       "opponent_weight": 138,
-      "opponent_rank": 19,
+      "opponent_rank": 18,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -137,15 +152,30 @@
     },
     {
       "date": "2025-12-22",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "35639208132",
+      "opponent_name": "Myka Collins",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 49,
+      "opponent_weight": 138,
+      "opponent_rank": 58,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Perry County Central"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "OUTSTATE_4f9bea7ad3f0",
       "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_team": "Paul Laurence Dunbar",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "138",
       "result": "W",
-      "method": "DEC",
+      "method": "FF",
       "score": null,
       "duration": "7:00",
       "event": "vs. Paul Laurence Dunbar"
@@ -172,7 +202,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 6,
       "opponent_weight": 138,
-      "opponent_rank": 19,
+      "opponent_rank": 18,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -180,10 +210,5 @@
       "duration": "0:00",
       "event": "vs. Knox Central"
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.777777777777778
-  }
+  ]
 }

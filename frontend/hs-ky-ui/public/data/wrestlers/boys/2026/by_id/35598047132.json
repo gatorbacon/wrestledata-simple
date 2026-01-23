@@ -3,23 +3,23 @@
   "name": "Jayden Armstrong",
   "team": "Trigg County",
   "team_slug": "trigg_county",
-  "team_rank": 130,
+  "team_rank": 132,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 103,
+  "current_rank": 101,
   "record": {
-    "overall": "1-5",
-    "vs_ranked": "1-5",
-    "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "overall": "1-6",
+    "vs_ranked": "1-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
-    "pf7": 15.17,
-    "pa7": 25.0,
-    "pd7": -9.83,
-    "si_plus": 107.5,
-    "df_plus": 81.2,
-    "apr_plus": 96.7,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,20 +28,20 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35035653132",
-      "opponent_rank": 109,
+      "opponent_rank": 108,
       "opponent_name": "Tristen Colgate",
       "method": "Fall 0:53"
     },
     "worst_loss": {
-      "opponent_id": "35208147132",
-      "opponent_rank": 114,
-      "opponent_name": "Aldon Hammers",
-      "method": "Fall 0:00"
+      "opponent_id": "35208179132",
+      "opponent_rank": 134,
+      "opponent_name": "Caleb Clary",
+      "method": "TF 18-2 1:02"
     }
   },
   "match_list": [
@@ -50,32 +50,32 @@
       "opponent_id": "35208179132",
       "opponent_name": "Caleb Clary",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 48,
-      "opponent_weight": 120,
-      "opponent_rank": 46,
+      "opponent_team_rank": 46,
+      "opponent_weight": 113,
+      "opponent_rank": 134,
       "weight_class": "120",
       "result": "L",
       "method": "TF",
       "score": "18-2",
       "duration": "1:02",
       "event": "Christian County Invitational",
-      "mv_impact": -4.7
+      "mv_impact": -4.68
     },
     {
       "date": "2025-12-23",
       "opponent_id": "35035653132",
       "opponent_name": "Tristen Colgate",
       "opponent_team": "Russellville",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 125,
       "opponent_weight": 120,
-      "opponent_rank": 109,
+      "opponent_rank": 108,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:53",
       "event": "Christian County Invitational",
-      "mv_impact": 2.43
+      "mv_impact": 2.42
     },
     {
       "date": "2025-12-20",
@@ -84,62 +84,77 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 66,
       "opponent_weight": 126,
-      "opponent_rank": 42,
+      "opponent_rank": 47,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:32",
       "event": "vs. Trigg County",
-      "mv_impact": -6.28
+      "mv_impact": -6.27
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35002898132",
       "opponent_name": "Ethan Gilmore",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 80,
       "opponent_weight": 126,
-      "opponent_rank": 61,
+      "opponent_rank": 65,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Trigg County",
-      "mv_impact": -7.41
+      "mv_impact": -7.4
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35031565132",
+      "opponent_name": "Jacob Ramsey",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 126,
+      "opponent_rank": 7,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union County"
     },
     {
       "date": "2025-12-18",
       "opponent_id": "35208147132",
       "opponent_name": "Aldon Hammers",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 46,
       "opponent_weight": 126,
-      "opponent_rank": 114,
+      "opponent_rank": 66,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Trigg County",
-      "mv_impact": -8.88
+      "mv_impact": -8.84
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34993280132",
       "opponent_name": "Jah Patterson",
       "opponent_team": "Daviess County",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 70,
       "opponent_weight": 126,
-      "opponent_rank": 15,
+      "opponent_rank": 14,
       "weight_class": "126",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "1:15",
       "event": "2nd Annual Dickie Walls Invitational",
-      "mv_impact": -2.09
+      "mv_impact": -2.08
     }
   ],
   "career": {
@@ -154,7 +169,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Trigg County",
-      "record": "1-5",
+      "record": "1-6",
       "regional_place": null,
       "state_place": null
     }

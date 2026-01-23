@@ -3,13 +3,13 @@
   "name": "peyton knotts",
   "team": "Spencer County",
   "team_slug": "spencer_county",
-  "team_rank": 12,
-  "weight_class": 175,
+  "team_rank": 15,
+  "weight_class": 165,
   "year": 2026,
-  "current_rank": 217,
+  "current_rank": 202,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "2-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,19 +20,75 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35073554132",
+      "opponent_rank": 222,
+      "opponent_name": "Chandon Dudley",
+      "method": "Fall 2:37"
+    },
+    "worst_loss": {
+      "opponent_id": "35122074132",
+      "opponent_rank": 31,
+      "opponent_name": "Bodie Neie",
+      "method": "Fall 1:20"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-14",
+      "opponent_id": "35138318132",
+      "opponent_name": "Joseph martin",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 25,
+      "opponent_weight": 165,
+      "opponent_rank": 231,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:18",
+      "event": "vs. Spencer County"
+    },
+    {
+      "date": "2026-01-14",
+      "opponent_id": "35073554132",
+      "opponent_name": "Chandon Dudley",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 25,
+      "opponent_weight": 165,
+      "opponent_rank": 222,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:37",
+      "event": "vs. Spencer County"
+    },
+    {
+      "date": "2026-01-14",
+      "opponent_id": "35122074132",
+      "opponent_name": "Bodie Neie",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 113,
+      "opponent_weight": 165,
+      "opponent_rank": 31,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "vs. Spencer County"
+    }
+  ]
 }

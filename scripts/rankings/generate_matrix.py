@@ -127,8 +127,9 @@ def classify_best_win(matches: List[Dict], winner_id: str) -> str:
         "MD": 4,
         "TB": 5,
         "D": 6,
-        "NC": 7,
-        "O": 8
+        "M": 7,  # Manual override - lowest priority
+        "NC": 8,
+        "O": 9
     }
     
     best_code = "O"
@@ -137,7 +138,13 @@ def classify_best_win(matches: List[Dict], winner_id: str) -> str:
     for m in matches:
         if m.get("winner_id") != winner_id:
             continue
-        code = classify_result_type(m.get("result", ""))
+        
+        # Check if this is a manual match
+        if m.get("is_manual", False) or m.get("result") == "M":
+            code = "M"
+        else:
+            code = classify_result_type(m.get("result", ""))
+        
         rank = rank_order.get(code, rank_order["O"])
         if rank < best_rank:
             best_code = code
@@ -152,7 +159,7 @@ def severity_for_result_code(code: str) -> str:
     
     - strong : Fall / Technical Fall
     - medium : Major Decision
-    - light  : Decision / Other
+    - light  : Decision / Other / Manual (M)
     - co     : Injury (INJ), styled like common opponents
     - nc     : No contest (NC) / Medical Forfeit (MFF), neutral grey for both wrestlers
     """
@@ -164,7 +171,7 @@ def severity_for_result_code(code: str) -> str:
         return "strong"
     if code == "MD":
         return "medium"
-    # Regular decisions and TB tiebreakers share the same light decision shading
+    # Regular decisions, TB tiebreakers, and Manual (M) share the same light decision shading
     return "light"
 
 
@@ -331,6 +338,7 @@ def build_matrix_data(
                 matches = rel.get('matches', [])
                 total_matches = wins_1 + wins_2
                 has_wins_both = wins_1 > 0 and wins_2 > 0
+                is_manual = rel.get('is_manual', False)
                 
                 # Even series where both wrestlers have wins (e.g. 1-1, 2-2):
                 # show neutral split "S" cell in both directions (yellow).
@@ -354,16 +362,18 @@ def build_matrix_data(
                     #   show an "S" in the advantaged direction, with green/red shading based on
                     #   the best win.
                     use_series_S = total_matches >= 3 and has_wins_both and wins_1 != wins_2
+                    is_manual = rel.get('is_manual', False)
                     if w1_id == rel['wrestler1_id']:
                         if wins_1 > wins_2:
                             # w1 has direct advantage
                             code = classify_best_win(matches, w1_id)
                             cell_data['type'] = 'direct_win'
                             cell_data['value'] = 'S' if use_series_S else code
-                            cell_data['tooltip'] = (
-                                f"{w1_info['name']} leads head-to-head over "
-                                f"{w2_info['name']} ({wins_1}-{wins_2})"
-                            )
+                            tooltip_base = f"{w1_info['name']} leads head-to-head over {w2_info['name']} ({wins_1}-{wins_2})"
+                            if is_manual:
+                                cell_data['tooltip'] = f"{tooltip_base} [Manual Override]"
+                            else:
+                                cell_data['tooltip'] = tooltip_base
                             cell_data['severity'] = severity_for_result_code(code)
                             cell_data['matches'] = matches
                             # Recent highlight: direct matches within the last week
@@ -375,10 +385,11 @@ def build_matrix_data(
                             code = classify_best_win(matches, rel['wrestler2_id'])
                             cell_data['type'] = 'direct_loss'
                             cell_data['value'] = 'S' if use_series_S else code
-                            cell_data['tooltip'] = (
-                                f"{w2_info['name']} leads head-to-head over "
-                                f"{w1_info['name']} ({wins_2}-{wins_1})"
-                            )
+                            tooltip_base = f"{w2_info['name']} leads head-to-head over {w1_info['name']} ({wins_2}-{wins_1})"
+                            if is_manual:
+                                cell_data['tooltip'] = f"{tooltip_base} [Manual Override]"
+                            else:
+                                cell_data['tooltip'] = tooltip_base
                             cell_data['severity'] = severity_for_result_code(code)
                             cell_data['matches'] = matches
                             cell_data['recent'] = any(
@@ -391,10 +402,11 @@ def build_matrix_data(
                             code = classify_best_win(matches, w1_id)
                             cell_data['type'] = 'direct_win'
                             cell_data['value'] = 'S' if use_series_S else code
-                            cell_data['tooltip'] = (
-                                f"{w1_info['name']} leads head-to-head over "
-                                f"{w2_info['name']} ({wins_2}-{wins_1})"
-                            )
+                            tooltip_base = f"{w1_info['name']} leads head-to-head over {w2_info['name']} ({wins_2}-{wins_1})"
+                            if is_manual:
+                                cell_data['tooltip'] = f"{tooltip_base} [Manual Override]"
+                            else:
+                                cell_data['tooltip'] = tooltip_base
                             cell_data['severity'] = severity_for_result_code(code)
                             cell_data['matches'] = matches
                             cell_data['recent'] = any(
@@ -405,10 +417,11 @@ def build_matrix_data(
                             code = classify_best_win(matches, rel['wrestler1_id'])
                             cell_data['type'] = 'direct_loss'
                             cell_data['value'] = 'S' if use_series_S else code
-                            cell_data['tooltip'] = (
-                                f"{w2_info['name']} leads head-to-head over "
-                                f"{w1_info['name']} ({wins_1}-{wins_2})"
-                            )
+                            tooltip_base = f"{w2_info['name']} leads head-to-head over {w1_info['name']} ({wins_1}-{wins_2})"
+                            if is_manual:
+                                cell_data['tooltip'] = f"{tooltip_base} [Manual Override]"
+                            else:
+                                cell_data['tooltip'] = tooltip_base
                             cell_data['severity'] = severity_for_result_code(code)
                             cell_data['matches'] = matches
                             cell_data['recent'] = any(

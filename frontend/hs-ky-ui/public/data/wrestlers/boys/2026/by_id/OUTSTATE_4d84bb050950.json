@@ -4,14 +4,14 @@
   "team": "Princeton High School",
   "team_slug": "princeton_high_school",
   "team_rank": null,
-  "weight_class": 138,
+  "weight_class": 132,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35205988132",
-      "opponent_rank": 67,
+      "opponent_rank": 70,
       "opponent_name": "Owen Gravett",
       "method": "Dec 12-7"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35640248132",
+      "opponent_rank": 7,
+      "opponent_name": "Deacon Cano",
+      "method": "Fall 2:43"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35640248132",
+      "opponent_name": "Deacon Cano",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 45,
+      "opponent_weight": 132,
+      "opponent_rank": 7,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:43",
+      "event": "Mason Comet Invite"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35205988132",
       "opponent_name": "Owen Gravett",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 109,
+      "opponent_team_rank": 111,
       "opponent_weight": 138,
-      "opponent_rank": 67,
+      "opponent_rank": 70,
       "weight_class": "138",
       "result": "W",
       "method": "DEC",

@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:38.055615Z",
+  "generated_at_utc": "2026-01-22T20:06:58.989723Z",
   "starters": {
     "107": {
       "weight": 107,
@@ -45,7 +45,7 @@
       "weight": 114,
       "wrestler_id": "35756107132",
       "name": "De`onna Owens",
-      "current_rank": 57,
+      "current_rank": 56,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -63,29 +63,29 @@
       "weight": 120,
       "wrestler_id": "35756104132",
       "name": "Lynndae Wales",
-      "current_rank": 15,
-      "xtp": 4.35,
-      "xtp_p": 0.7,
-      "xtp_a": 1.18,
-      "xtp_b": 2.47,
+      "current_rank": 13,
+      "xtp": 4.97,
+      "xtp_p": 1.16,
+      "xtp_a": 1.37,
+      "xtp_b": 2.44,
       "top10_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 4
       },
       "top33_record": {
-        "wins": 1,
-        "losses": 3
+        "wins": 2,
+        "losses": 4
       }
     },
     "145": {
       "weight": 145,
       "wrestler_id": "35756105132",
       "name": "Dawmeisha Smith",
-      "current_rank": 55,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
+      "current_rank": 35,
+      "xtp": 1.12,
+      "xtp_p": 0.09,
+      "xtp_a": 0.34,
+      "xtp_b": 0.69,
       "top10_record": {
         "wins": 0,
         "losses": 3
@@ -93,28 +93,20 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
-    },
-    "235": {
-      "weight": 235,
-      "wrestler_id": "35756106132",
-      "name": "Larhyia Thomas",
-      "current_rank": 50,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 1
       }
     }
   },
-  "remaining": [],
+  "remaining": [
+    {
+      "weight": 114,
+      "wrestler_id": "35756106132",
+      "name": "Larhyia Thomas",
+      "wins": 0,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
   "team_metrics": {
     "projected_state_points": null,
     "team_rank": {
@@ -126,30 +118,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 7,
-      "losses": 22
+      "wins": 14,
+      "losses": 19
     },
     "top33": {
-      "wins": 1,
+      "wins": 2,
       "losses": 11
     },
     "top10": {
       "wins": 0,
-      "losses": 7
+      "losses": 8
     },
     "bonus_rate": {
-      "value": 1.0,
-      "rank": 3,
+      "value": 0.929,
+      "rank": 29,
       "rank_scope": "league"
     },
     "pin_rate": {
       "value": 0.857,
-      "rank": 36,
+      "rank": 28,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.143,
-      "rank": 4,
+      "value": 0.071,
+      "rank": 15,
       "rank_scope": "league"
     }
   }

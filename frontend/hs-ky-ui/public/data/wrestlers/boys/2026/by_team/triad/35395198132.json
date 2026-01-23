@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35395198132",
+  "name": "Cole Pilliard",
+  "team": "Triad",
+  "team_slug": "triad",
+  "team_rank": null,
+  "weight_class": 132,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35122062132",
+      "opponent_rank": 21,
+      "opponent_name": "Hayden Drexler",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35381407132",
+      "opponent_rank": 50,
+      "opponent_name": "Breylen Clifford",
+      "method": "Fall 0:29"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35207990132",
+      "opponent_name": "Mattix Sohne",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 46,
+      "opponent_weight": 132,
+      "opponent_rank": 109,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "vs. Triad"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35122062132",
+      "opponent_name": "Hayden Drexler",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 113,
+      "opponent_weight": 132,
+      "opponent_rank": 21,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Triad"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35381407132",
+      "opponent_name": "Breylen Clifford",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 132,
+      "opponent_rank": 50,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "vs. Triad"
+    }
+  ]
+}

@@ -185,6 +185,75 @@ def load_team_data(season: int, league: str = 'ncaa', state: str = None, gender:
     return teams
 
 
+def normalize_result_type(result: str) -> str:
+    """
+    Normalize a result string to just the result type for deduplication purposes.
+    
+    Examples:
+    - "Fall 4:45" -> "Fall"
+    - "Fall 0:00" -> "Fall"
+    - "Dec 10-4" -> "Dec"
+    - "MD 14-1" -> "MD"
+    - "TF 15-0 4:02" -> "TF"
+    - "M. For." -> "MFF"
+    - "MFF" -> "MFF"
+    - "For." -> "FF"
+    
+    This allows deduplication to work correctly:
+    - Same match in both team files with minor time/score differences -> deduplicated
+    - Different matches with different result types -> kept separate
+    """
+    if not result:
+        return "UNKNOWN"
+    
+    result_upper = result.upper().strip()
+    
+    # Check for medical forfeit first (before regular forfeit)
+    if "M. FOR" in result_upper or "MFF" in result_upper or "MEDICAL" in result_upper:
+        return "MFF"
+    
+    # Check for injury
+    if "INJ" in result_upper or "INJURY" in result_upper:
+        return "INJ"
+    
+    # Check for default/forfeit
+    if "DEF" in result_upper or "DEFAULT" in result_upper:
+        return "DEF"
+    
+    # Check for tech fall (before fall/pin to avoid misclassification)
+    if "TF" in result_upper or "TECH" in result_upper or "TECHNICAL" in result_upper:
+        return "TF"
+    
+    # Check for fall/pin (but exclude if "TF" appears anywhere)
+    if ("PIN" in result_upper or "FALL" in result_upper) and "TF" not in result_upper:
+        return "Fall"
+    
+    # Check for major decision
+    if "MD" in result_upper or "MAJOR" in result_upper:
+        return "MD"
+    
+    # Check for SV-* or TB-* (sudden victory or tiebreaker)
+    if result_upper.startswith("SV-") or result_upper.startswith("TB-"):
+        return "Dec"  # Treat as decision for deduplication
+    
+    # Check for decision
+    if "DEC" in result_upper or "DECISION" in result_upper:
+        return "Dec"
+    
+    # Check for disqualification
+    if "DQ" in result_upper or "DISQUAL" in result_upper:
+        return "DQ"
+    
+    # Check for forfeit (must check "For." pattern before "FF" to catch "(For.)" format)
+    if "FOR." in result_upper or result_upper.endswith("FOR.") or " FOR " in result_upper:
+        return "FF"
+    if "FF" in result_upper or "FORFEIT" in result_upper:
+        return "FF"
+    
+    # Default: return original (normalized to uppercase, stripped)
+    return result_upper
+
+
 def load_match_overrides(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[Tuple[str, str, str], Dict]:
     """
     Load match overrides for a season.
@@ -394,12 +463,34 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                         
                         if not opponent_name or not opponent_team:
                             if is_forfeit:
-                                # For forfeits, use "Unknown" as opponent if missing
+                                # For forfeits, try to extract opponent team from event field
+                                # Event format is typically "vs. Team Name" or "vs Team Name"
+                                event = match.get('event', '')
+                                if event and (not opponent_team or opponent_team == '' or opponent_team == 'Unknown'):
+                                    # Try to extract team name from event
+                                    # Patterns: "vs. Team Name", "vs Team Name", "vs Team Name (details)"
+                                    event_match = re.search(r'vs\.?\s+([^(]+)', event, re.IGNORECASE)
+                                    if event_match:
+                                        extracted_team = event_match.group(1).strip()
+                                        if extracted_team:
+                                            opponent_team = extracted_team
+                                
+                                # Use "Unknown" as fallback if still missing
                                 opponent_name = opponent_name or 'Unknown'
                                 opponent_team = opponent_team or 'Unknown'
                             else:
                                 # Can't create synthetic opponent without name/team for non-forfeits
                                 continue
+                        elif is_forfeit and (not opponent_team or opponent_team == '' or opponent_team == 'Unknown'):
+                            # Even if opponent_name exists, try to extract team from event for forfeits
+                            # This handles cases where opponent_name is set but opponent_team is Unknown
+                            event = match.get('event', '')
+                            if event:
+                                event_match = re.search(r'vs\.?\s+([^(]+)', event, re.IGNORECASE)
+                                if event_match:
+                                    extracted_team = event_match.group(1).strip()
+                                    if extracted_team:
+                                        opponent_team = extracted_team
                         opponent_id = create_synthetic_opponent_id(opponent_name, opponent_team)
                         
                         # Add synthetic opponent to all_wrestlers if not already present
@@ -510,9 +601,12 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 }
                 
                 # Create unique match key for deduplication
-                # Use (w1, w2, date) as the base key - this identifies the match uniquely
-                # regardless of which team's file it came from or what the original result was
-                match_identity_key = (w1_id_normalized, w2_id_normalized, match_date)
+                # Use (w1, w2, date, normalized_result_type) as the key
+                # This allows multiple matches between same wrestlers on same date with different result types
+                # (e.g., Fall vs M. For.), while still deduplicating the same match appearing in both team files
+                # with minor time/score differences (e.g., "Fall 4:45" vs "Fall 4:54")
+                normalized_result = normalize_result_type(result)
+                match_identity_key = (w1_id_normalized, w2_id_normalized, match_date, normalized_result)
                 
                 # Store match by key to avoid duplicates
                 if match_weight not in weight_classes:
@@ -520,10 +614,10 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 elif 'match_keys' not in weight_classes[match_weight]:
                     weight_classes[match_weight]['match_keys'] = set()
                 
-                # Only add if we haven't seen this match before (by identity, not by result)
+                # Only add if we haven't seen this match before (by identity and normalized result type)
                 # This ensures that if a match appears in both team files, we only add it once
-                # The override is applied before this check, so both instances will have the
-                # same overridden result and will be deduplicated correctly
+                # (even if times/scores differ slightly), while allowing multiple matches with
+                # different result types (e.g., Fall vs M. For.) on the same date
                 if match_identity_key not in weight_classes[match_weight]['match_keys']:
                     weight_classes[match_weight]['matches'].append(match_record)
                     weight_classes[match_weight]['match_keys'].add(match_identity_key)
@@ -1106,7 +1200,9 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
         for match in wc_data['matches']:
             match_wc = match['weight_class']  # The weight class the match was at
             # Create unique key for deduplication across weight classes
-            match_key = (match['wrestler1_id'], match['wrestler2_id'], match['date'], match['winner_id'])
+            # Use normalized result type to allow different result types while deduplicating minor variations
+            normalized_result = normalize_result_type(match.get('result', ''))
+            match_key = (match['wrestler1_id'], match['wrestler2_id'], match['date'], normalized_result)
             
             # Only add if we haven't seen this match before
             if match_key not in all_matches_unique:
@@ -1221,10 +1317,12 @@ def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
     Deduplication key is based on:
       - date
       - unordered pair of wrestler IDs
+      - normalized result type
 
-    Note: We use (date, pair) as the identity key, not including winner_id or result,
-    because the same match (same wrestlers, same date) should only appear once,
-    regardless of which weight class file it's in or what the result was.
+    Note: We use (date, pair, normalized_result_type) as the identity key to allow
+    multiple matches between the same wrestlers on the same date with different result types
+    (e.g., Fall vs M. For.), while still deduplicating the same match appearing in multiple
+    weight classes or with minor time/score variations.
     
     This ensures that if a match appears in multiple weight classes (which shouldn't
     happen but could due to data issues), or if it appears in both team files with
@@ -1244,11 +1342,13 @@ def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
             if not w1 or not w2:
                 continue
             pair = tuple(sorted([w1, w2]))
-            # Use just (date, pair) as the identity key
+            # Use (date, pair, normalized_result_type) as the identity key
             # This matches the identity key used in extract_wrestlers_and_matches
+            normalized_result = normalize_result_type(m.get("result", ""))
             key = (
                 m.get("date"),
                 pair,
+                normalized_result,
             )
             if key in seen:
                 continue

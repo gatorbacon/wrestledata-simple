@@ -6,83 +6,98 @@
   "team_rank": 14,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 28,
+  "current_rank": 29,
   "record": {
-    "overall": "2-4",
-    "vs_ranked": "2-4",
-    "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "overall": "3-4",
+    "vs_ranked": "3-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 14.0,
-    "pa7": 9.0,
-    "pd7": 5.0,
-    "si_plus": 109.7,
-    "df_plus": 103.0,
-    "apr_plus": 93.6,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
     "majors": 0,
-    "techs": 0,
+    "techs": 1,
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35333412132",
-      "opponent_rank": 31,
-      "opponent_name": "Kyleigh Hampton",
-      "method": "Fall 1:45"
+      "opponent_id": "35774462132",
+      "opponent_rank": 32,
+      "opponent_name": "Divine Mujanukaire",
+      "method": "Dec 14-9"
     },
     "worst_loss": {
       "opponent_id": "35674521132",
-      "opponent_rank": 27,
+      "opponent_rank": 28,
       "opponent_name": "Flavia Sales Perez",
       "method": "Fall 3:06"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-17",
+      "opponent_id": "35333585132",
+      "opponent_name": "Zahriyah Wales",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 28,
+      "opponent_weight": 165,
+      "opponent_rank": 47,
+      "weight_class": "165",
+      "result": "W",
+      "method": "TF",
+      "score": "30-14",
+      "duration": "5:59",
+      "event": "Mestengo"
+    },
+    {
       "date": "2026-01-10",
       "opponent_id": "35674521132",
       "opponent_name": "Flavia Sales Perez",
       "opponent_team": "Owensboro",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 48,
       "opponent_weight": 165,
-      "opponent_rank": 27,
+      "opponent_rank": 28,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:06",
       "event": "Lady Bruin Invitational 2026",
-      "mv_impact": -4.99
+      "mv_impact": -4.96
     },
     {
       "date": "2026-01-10",
       "opponent_id": "35333408132",
       "opponent_name": "Makayla Jones",
       "opponent_team": "Western",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 59,
       "opponent_weight": 165,
-      "opponent_rank": 26,
+      "opponent_rank": 27,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:29",
       "event": "Lady Bruin Invitational 2026",
-      "mv_impact": -4.28
+      "mv_impact": -4.25
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35774462132",
       "opponent_name": "Divine Mujanukaire",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 35,
       "opponent_weight": 165,
       "opponent_rank": 32,
       "weight_class": "165",
@@ -91,7 +106,23 @@
       "score": "14-9",
       "duration": "7:00",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": 4.8
+      "mv_impact": 4.82
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333412132",
+      "opponent_name": "Kyleigh Hampton",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 37,
+      "opponent_weight": 152,
+      "opponent_rank": 36,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "2025 Ohio County Girls` Invitational",
+      "mv_impact": 6.59
     },
     {
       "date": "2025-12-06",
@@ -100,14 +131,14 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 165,
-      "opponent_rank": 11,
+      "opponent_rank": 10,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:39",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -3.26
+      "mv_impact": -3.2
     },
     {
       "date": "2025-12-06",
@@ -116,35 +147,14 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 165,
-      "opponent_rank": 24,
+      "opponent_rank": 26,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:25",
       "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -5.41
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35333412132",
-      "opponent_name": "Kyleigh Hampton",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 39,
-      "opponent_weight": 165,
-      "opponent_rank": 31,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:45",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": 6.57
+      "mv_impact": -5.39
     }
-  ],
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.6
-  }
+  ]
 }

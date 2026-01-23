@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:37.802721Z",
+  "generated_at_utc": "2026-01-22T20:06:58.741804Z",
   "starters": {
     "126": {
       "weight": 126,
@@ -46,10 +46,10 @@
       "wrestler_id": "35383812132",
       "name": "Aaliyah Svec",
       "current_rank": 4,
-      "xtp": 14.06,
+      "xtp": 14.0,
       "xtp_p": 6.31,
       "xtp_a": 2.77,
-      "xtp_b": 4.98,
+      "xtp_b": 4.92,
       "top10_record": {
         "wins": 4,
         "losses": 0
@@ -63,47 +63,29 @@
       "weight": 152,
       "wrestler_id": "35383872132",
       "name": "Jasmin Vieyra",
-      "current_rank": 12,
-      "xtp": 6.24,
-      "xtp_p": 1.4,
-      "xtp_a": 1.47,
-      "xtp_b": 3.37,
+      "current_rank": 14,
+      "xtp": 5.31,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 3.11,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 1
       },
       "top33_record": {
         "wins": 3,
-        "losses": 4
-      }
-    },
-    "165": {
-      "weight": 165,
-      "wrestler_id": "35383800132",
-      "name": "Josslyn Heringer",
-      "current_rank": 57,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 2
+        "losses": 5
       }
     },
     "235": {
       "weight": 235,
       "wrestler_id": "35383830132",
       "name": "Fanta Mariko",
-      "current_rank": 4,
-      "xtp": 14.41,
-      "xtp_p": 6.31,
-      "xtp_a": 2.77,
-      "xtp_b": 5.33,
+      "current_rank": 3,
+      "xtp": 16.86,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 5.72,
       "top10_record": {
         "wins": 2,
         "losses": 1
@@ -114,7 +96,17 @@
       }
     }
   },
-  "remaining": [],
+  "remaining": [
+    {
+      "weight": 152,
+      "wrestler_id": "35383800132",
+      "name": "Josslyn Heringer",
+      "wins": 3,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.333
+    }
+  ],
   "team_metrics": {
     "projected_state_points": null,
     "team_rank": {
@@ -126,29 +118,29 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 24,
-      "losses": 13
+      "wins": 26,
+      "losses": 12
     },
     "top33": {
       "wins": 12,
-      "losses": 8
+      "losses": 7
     },
     "top10": {
       "wins": 6,
-      "losses": 3
+      "losses": 2
     },
     "bonus_rate": {
-      "value": 0.833,
-      "rank": 77,
+      "value": 0.885,
+      "rank": 43,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.583,
-      "rank": 103,
+      "value": 0.654,
+      "rank": 89,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.208,
+      "value": 0.192,
       "rank": 2,
       "rank_scope": "league"
     }

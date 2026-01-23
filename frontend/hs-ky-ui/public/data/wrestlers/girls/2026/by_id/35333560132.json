@@ -3,23 +3,23 @@
   "name": "Sophia Redd",
   "team": "Bardstown",
   "team_slug": "bardstown",
-  "team_rank": 27,
+  "team_rank": 29,
   "weight_class": 145,
   "year": 2026,
   "current_rank": 25,
   "record": {
-    "overall": "4-4",
-    "vs_ranked": "4-4",
-    "vs_top10": "0-2",
-    "vs_top25": "0-4"
+    "overall": "4-5",
+    "vs_ranked": "4-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-5"
   },
   "metrics": {
-    "pf7": 1.85,
-    "pa7": 25.0,
-    "pd7": -23.15,
-    "si_plus": 97.5,
-    "df_plus": 72.4,
-    "apr_plus": 102.9,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,9 +28,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35598266132",
       "opponent_rank": 37,
@@ -39,7 +39,7 @@
     },
     "worst_loss": {
       "opponent_id": "35404893132",
-      "opponent_rank": 24,
+      "opponent_rank": 23,
       "opponent_name": "Hermelinda Esteban",
       "method": "Fall 3:00"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35333674132",
       "opponent_name": "Saniyah Nana",
       "opponent_team": "Butler",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 13,
       "opponent_weight": 145,
-      "opponent_rank": 14,
+      "opponent_rank": 15,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
@@ -62,13 +62,28 @@
       "mv_impact": -6.39
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "35333674132",
+      "opponent_name": "Saniyah Nana",
+      "opponent_team": "Butler",
+      "opponent_team_rank": 13,
+      "opponent_weight": 145,
+      "opponent_rank": 15,
+      "weight_class": "145",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Derby City Girls"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35788826132",
       "opponent_name": "Madison Price",
       "opponent_team": "Russell County",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 57,
+      "opponent_rank": 59,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -82,23 +97,23 @@
       "opponent_id": "35404893132",
       "opponent_name": "Hermelinda Esteban",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
+      "opponent_team_rank": 41,
       "opponent_weight": 138,
-      "opponent_rank": 24,
+      "opponent_rank": 23,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:00",
       "event": "beast of the east",
-      "mv_impact": -4.1
+      "mv_impact": -4.0
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35333366132",
       "opponent_name": "Kathryn Floyd",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 29,
       "opponent_weight": 145,
       "opponent_rank": 6,
       "weight_class": "145",
@@ -116,7 +131,7 @@
       "opponent_team": "Henry Clay",
       "opponent_team_rank": 1,
       "opponent_weight": 145,
-      "opponent_rank": 52,
+      "opponent_rank": 53,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -139,16 +154,16 @@
       "score": null,
       "duration": "0:48",
       "event": "RVK Lady Panther Classic",
-      "mv_impact": 5.7
+      "mv_impact": 5.75
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35337121132",
       "opponent_name": "Gwendolyn Darden",
       "opponent_team": "Russellville",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 51,
       "opponent_weight": 145,
-      "opponent_rank": 42,
+      "opponent_rank": 43,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -164,7 +179,7 @@
       "opponent_team": "Henderson County",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 10,
+      "opponent_rank": 11,
       "weight_class": "145",
       "result": "L",
       "method": "FALL",
@@ -173,10 +188,5 @@
       "event": "RVK Lady Panther Classic",
       "mv_impact": -5.12
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.8444444444444446
-  }
+  ]
 }

@@ -6,20 +6,20 @@
   "team_rank": 14,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 82,
+  "current_rank": 83,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-4",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "0-5",
+    "vs_ranked": "0-5",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 89.2,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35672645132",
-      "opponent_rank": 61,
+      "opponent_rank": 54,
       "opponent_name": "Abigail Nolan",
       "method": "Fall 3:28"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35333405132",
+      "opponent_name": "Bailey Fletcher",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 37,
+      "opponent_weight": 120,
+      "opponent_rank": 4,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "Mestengo Invitational"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "35672645132",
@@ -47,7 +62,7 @@
       "opponent_team": "Bullitt East",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 61,
+      "opponent_rank": 54,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -63,7 +78,7 @@
       "opponent_team": "Meade County",
       "opponent_team_rank": 11,
       "opponent_weight": 120,
-      "opponent_rank": 59,
+      "opponent_rank": 46,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -77,9 +92,9 @@
       "opponent_id": "35400939132",
       "opponent_name": "Samantha Sanchez",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 50,
+      "opponent_rank": 52,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -102,12 +117,7 @@
       "score": null,
       "duration": "0:21",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -1.84
+      "mv_impact": -1.86
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2916666666666667
-  }
+  ]
 }

@@ -1,0 +1,94 @@
+{
+  "wrestler_id": "35188617132",
+  "name": "Travis East",
+  "team": "John S. Battle",
+  "team_slug": "john_s_battle",
+  "team_rank": null,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35513071132",
+      "opponent_rank": 138,
+      "opponent_name": "Benjamin Crabtree",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35752685132",
+      "opponent_rank": 52,
+      "opponent_name": "Maddox Bryant",
+      "method": "TF 15-0 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35513071132",
+      "opponent_name": "Benjamin Crabtree",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 59,
+      "opponent_weight": 157,
+      "opponent_rank": 138,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John S. Battle"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35752685132",
+      "opponent_name": "Maddox Bryant",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 1,
+      "opponent_weight": 150,
+      "opponent_rank": 52,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "vs. John S. Battle"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35752685132",
+      "opponent_name": "Maddox Bryant",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 1,
+      "opponent_weight": 150,
+      "opponent_rank": 52,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John S. Battle"
+    }
+  ]
+}

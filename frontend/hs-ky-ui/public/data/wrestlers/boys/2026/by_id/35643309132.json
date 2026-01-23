@@ -6,20 +6,20 @@
   "team_rank": 67,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 111,
+  "current_rank": 121,
   "record": {
-    "overall": "1-5",
-    "vs_ranked": "1-5",
+    "overall": "1-6",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 3.0,
-    "pa7": 19.0,
-    "pd7": -16.0,
-    "si_plus": 92.4,
-    "df_plus": 91.0,
-    "apr_plus": 92.5,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,31 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 5,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35652144132",
-      "opponent_rank": 115,
+      "opponent_rank": 123,
       "opponent_name": "Rylen Marks",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "34996000132",
-      "opponent_rank": 131,
-      "opponent_name": "Jackson Tapp",
-      "method": "Fall 0:00"
+      "opponent_id": "35223111132",
+      "opponent_rank": 163,
+      "opponent_name": "VanDale Hayes",
+      "method": "Dec 18-16"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-20",
+      "opponent_id": "35223111132",
+      "opponent_name": "VanDale Hayes",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 111,
+      "opponent_weight": 126,
+      "opponent_rank": 163,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "18-16",
+      "duration": "7:00",
+      "event": "vs. Mercer County"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "34996000132",
       "opponent_name": "Jackson Tapp",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 60,
       "opponent_weight": 215,
-      "opponent_rank": 131,
+      "opponent_rank": 132,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -66,23 +81,23 @@
       "opponent_id": "35576423132",
       "opponent_name": "Byron Calhoun",
       "opponent_team": "Green County",
-      "opponent_team_rank": 87,
+      "opponent_team_rank": 86,
       "opponent_weight": 132,
-      "opponent_rank": 110,
+      "opponent_rank": 120,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Green County",
-      "mv_impact": -9.21
+      "mv_impact": -9.22
     },
     {
       "date": "2025-12-11",
       "opponent_id": "35223096132",
       "opponent_name": "Memphis Adams",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 90,
       "opponent_weight": 138,
       "opponent_rank": 100,
       "weight_class": "138",
@@ -91,55 +106,55 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Hart County",
-      "mv_impact": -6.67
+      "mv_impact": -6.68
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35652144132",
       "opponent_name": "Rylen Marks",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 6,
       "opponent_weight": 132,
-      "opponent_rank": 115,
+      "opponent_rank": 123,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": 2.82
+      "mv_impact": 2.83
     },
     {
       "date": "2025-12-06",
       "opponent_id": "34993792132",
       "opponent_name": "Jayden Fulz",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 6,
       "opponent_weight": 132,
-      "opponent_rank": 42,
+      "opponent_rank": 53,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -5.58
+      "mv_impact": -5.56
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35103765132",
       "opponent_name": "Alex Gonzalez",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 127,
       "opponent_weight": 132,
-      "opponent_rank": 41,
+      "opponent_rank": 52,
       "weight_class": "132",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -4.38
+      "mv_impact": -4.37
     }
   ],
   "career": {
@@ -154,7 +169,7 @@
       "season": 2026,
       "grade": 9,
       "team": "Campbellsville",
-      "record": "1-5",
+      "record": "1-6",
       "regional_place": null,
       "state_place": null
     }

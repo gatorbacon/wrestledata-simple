@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:36.845026Z",
+  "generated_at_utc": "2026-01-22T20:06:57.829370Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35762683132",
       "name": "Brooklyn Holcomb",
-      "current_rank": 137,
+      "current_rank": 147,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -45,7 +45,7 @@
       "weight": 113,
       "wrestler_id": "35724493132",
       "name": "Jaxen Skaggs",
-      "current_rank": 53,
+      "current_rank": 45,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -61,9 +61,9 @@
     },
     "120": {
       "weight": 120,
-      "wrestler_id": "35724494132",
-      "name": "Christopher Caudill",
-      "current_rank": 40,
+      "wrestler_id": "35762810132",
+      "name": "Alexis Gibson",
+      "current_rank": 184,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -74,32 +74,50 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 0
+      }
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35724494132",
+      "name": "Christopher Caudill",
+      "current_rank": 68,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
       }
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35724634132",
       "name": "William Clark",
-      "current_rank": 169,
+      "current_rank": 177,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       }
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35762809132",
       "name": "Keiona Skaggs",
-      "current_rank": 120,
+      "current_rank": 128,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -115,27 +133,9 @@
     },
     "144": {
       "weight": 144,
-      "wrestler_id": "35724487132",
-      "name": "David Wade",
-      "current_rank": 82,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 6
-      }
-    },
-    "150": {
-      "weight": 150,
       "wrestler_id": "35724486132",
       "name": "Parker Fouch",
-      "current_rank": 50,
+      "current_rank": 25,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -153,7 +153,7 @@
       "weight": 157,
       "wrestler_id": "35724490132",
       "name": "Kasey Clark",
-      "current_rank": 127,
+      "current_rank": 128,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -164,14 +164,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 0
       }
     },
     "175": {
       "weight": 175,
       "wrestler_id": "35724488132",
       "name": "Dylan Burton",
-      "current_rank": 43,
+      "current_rank": 63,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -182,14 +182,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 5
       }
     },
     "215": {
       "weight": 215,
       "wrestler_id": "35724489132",
       "name": "Justin Wireman",
-      "current_rank": 59,
+      "current_rank": 40,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -207,18 +207,18 @@
       "weight": 285,
       "wrestler_id": "35724491132",
       "name": "Zander Smith",
-      "current_rank": 30,
-      "xtp": 2.32,
-      "xtp_p": 0.41,
-      "xtp_a": 0.85,
-      "xtp_b": 1.06,
+      "current_rank": 29,
+      "xtp": 1.27,
+      "xtp_p": 0.15,
+      "xtp_a": 0.44,
+      "xtp_b": 0.68,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
-        "wins": 0,
-        "losses": 4
+        "wins": 2,
+        "losses": 5
       }
     }
   },
@@ -233,13 +233,13 @@
       "bonus_rate": 0.0
     },
     {
-      "weight": 113,
-      "wrestler_id": "35762810132",
-      "name": "Alexis Gibson",
-      "wins": 1,
-      "losses": 2,
+      "weight": 144,
+      "wrestler_id": "35724487132",
+      "name": "David Wade",
+      "wins": 18,
+      "losses": 12,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 0.833
     },
     {
       "weight": 157,
@@ -272,8 +272,8 @@
       "weight": 215,
       "wrestler_id": "35724710132",
       "name": "Jason Wade",
-      "wins": 3,
-      "losses": 6,
+      "wins": 6,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -281,8 +281,8 @@
       "weight": 215,
       "wrestler_id": "35724532132",
       "name": "Seth Boggs",
-      "wins": 4,
-      "losses": 5,
+      "wins": 5,
+      "losses": 10,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -291,7 +291,7 @@
       "wrestler_id": "36715373132",
       "name": "Hunter Smith",
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -299,10 +299,10 @@
       "weight": 285,
       "wrestler_id": "35724492132",
       "name": "Payton Morgan",
-      "wins": 10,
-      "losses": 6,
+      "wins": 14,
+      "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 0.8
+      "bonus_rate": 0.643
     }
   ],
   "team_metrics": {
@@ -316,25 +316,25 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 82,
+      "wins": 84,
       "losses": 58
     },
     "top33": {
-      "wins": 0,
-      "losses": 29
+      "wins": 2,
+      "losses": 26
     },
     "top10": {
       "wins": 0,
-      "losses": 3
+      "losses": 4
     },
     "bonus_rate": {
-      "value": 0.707,
-      "rank": 117,
+      "value": 0.69,
+      "rank": 90,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.659,
-      "rank": 67,
+      "value": 0.643,
+      "rank": 52,
       "rank_scope": "league"
     },
     "tech_rate": {

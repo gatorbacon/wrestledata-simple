@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.0,
-    "apr_plus": 113.1,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35484827132",
-      "opponent_rank": 152,
+      "opponent_rank": 151,
       "opponent_name": "Hiram Escobedo",
       "method": "Fall 1:17"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35007901132",
+      "opponent_rank": 25,
+      "opponent_name": "Kenny Smith",
+      "method": "Fall 0:47"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-15",
+      "opponent_id": "35007901132",
+      "opponent_name": "Kenny Smith",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 53,
+      "opponent_weight": 150,
+      "opponent_rank": 25,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "vs. East Robertson High School"
+    },
     {
       "date": "2025-12-09",
       "opponent_id": "35484827132",
       "opponent_name": "Hiram Escobedo",
       "opponent_team": "Logan County",
-      "opponent_team_rank": 102,
+      "opponent_team_rank": 104,
       "opponent_weight": 150,
-      "opponent_rank": 152,
+      "opponent_rank": 151,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",

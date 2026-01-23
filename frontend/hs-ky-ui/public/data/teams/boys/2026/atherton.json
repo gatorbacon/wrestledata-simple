@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:36.600671Z",
+  "generated_at_utc": "2026-01-22T20:06:57.591300Z",
   "starters": {
     "113": {
       "weight": 113,
       "wrestler_id": "35623136132",
       "name": "Marley Berhow",
-      "current_rank": 87,
+      "current_rank": 64,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -45,7 +45,7 @@
       "weight": 120,
       "wrestler_id": "35623012132",
       "name": "Grace Osantowski",
-      "current_rank": 190,
+      "current_rank": 198,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -63,7 +63,7 @@
       "weight": 126,
       "wrestler_id": "35623065132",
       "name": "Colt Moore",
-      "current_rank": 243,
+      "current_rank": 248,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -81,7 +81,7 @@
       "weight": 138,
       "wrestler_id": "35623018132",
       "name": "Yousif Alfaisal",
-      "current_rank": 188,
+      "current_rank": 77,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -99,25 +99,25 @@
       "weight": 157,
       "wrestler_id": "35623017132",
       "name": "Wyatt Davis",
-      "current_rank": 62,
+      "current_rank": 58,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 8
       }
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35628591132",
       "name": "Sequoia Spencer",
-      "current_rank": 232,
+      "current_rank": 250,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -135,7 +135,7 @@
       "weight": 175,
       "wrestler_id": "35623015132",
       "name": "Amani Swetnam",
-      "current_rank": 41,
+      "current_rank": 43,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -146,14 +146,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 2
       }
     },
     "190": {
       "weight": 190,
-      "wrestler_id": "35623011132",
-      "name": "Maddox Goodman",
-      "current_rank": 247,
+      "wrestler_id": "35623185132",
+      "name": "Hayden Rutledge",
+      "current_rank": 133,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -164,14 +164,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 2
       }
     },
     "215": {
       "weight": 215,
       "wrestler_id": "35623009132",
       "name": "Josh Franklin",
-      "current_rank": 96,
+      "current_rank": 90,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -182,24 +182,24 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 5
       }
     },
     "285": {
       "weight": 285,
       "wrestler_id": "37024868132",
       "name": "Colton Lewis",
-      "current_rank": 8,
+      "current_rank": 6,
       "xtp": 7.38,
       "xtp_p": 2.43,
       "xtp_a": 1.91,
       "xtp_b": 3.04,
       "top10_record": {
-        "wins": 0,
+        "wins": 1,
         "losses": 0
       },
       "top33_record": {
-        "wins": 1,
+        "wins": 4,
         "losses": 0
       }
     }
@@ -209,26 +209,35 @@
       "weight": 113,
       "wrestler_id": "35623196132",
       "name": "Waylon Davis",
-      "wins": 1,
-      "losses": 2,
+      "wins": 3,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.333
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "38084126132",
+      "name": "James DeFazio",
+      "wins": 0,
+      "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
     {
-      "weight": 175,
-      "wrestler_id": "35623185132",
-      "name": "Hayden Rutledge",
-      "wins": 4,
-      "losses": 4,
+      "weight": 190,
+      "wrestler_id": "35623011132",
+      "name": "Maddox Goodman",
+      "wins": 0,
+      "losses": 0,
       "top25_wins": 0,
-      "bonus_rate": 0.75
+      "bonus_rate": 0.0
     },
     {
       "weight": 285,
       "wrestler_id": "35623014132",
       "name": "Oliver Parks",
-      "wins": 6,
-      "losses": 3,
+      "wins": 10,
+      "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 1.0
     }
@@ -244,30 +253,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 21,
-      "losses": 22
+      "wins": 22,
+      "losses": 21
     },
     "top33": {
-      "wins": 1,
-      "losses": 10
+      "wins": 4,
+      "losses": 21
     },
     "top10": {
-      "wins": 0,
-      "losses": 2
+      "wins": 1,
+      "losses": 4
     },
     "bonus_rate": {
-      "value": 0.619,
-      "rank": 134,
+      "value": 0.636,
+      "rank": 121,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.571,
-      "rank": 118,
+      "value": 0.591,
+      "rank": 90,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 135,
+      "rank": 136,
       "rank_scope": "league"
     }
   }

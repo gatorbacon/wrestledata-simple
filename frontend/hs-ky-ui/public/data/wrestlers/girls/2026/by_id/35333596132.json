@@ -14,12 +14,12 @@
     "vs_top25": "0-4"
   },
   "metrics": {
-    "pf7": 3.0,
-    "pa7": 4.0,
-    "pd7": -1.0,
-    "si_plus": 96.1,
-    "df_plus": 109.8,
-    "apr_plus": 94.9,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35448970132",
-      "opponent_rank": 35,
+      "opponent_rank": 36,
       "opponent_name": "Madison Cox",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35448970132",
-      "opponent_rank": 35,
+      "opponent_rank": 36,
       "opponent_name": "Madison Cox",
       "method": "Fall 0:00"
     }
@@ -52,7 +52,7 @@
       "opponent_team": "Danville",
       "opponent_team_rank": 19,
       "opponent_weight": 235,
-      "opponent_rank": 35,
+      "opponent_rank": 36,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
@@ -65,7 +65,7 @@
       "opponent_id": "35404896132",
       "opponent_name": "Elene Niyogoshima",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
+      "opponent_team_rank": 41,
       "opponent_weight": 235,
       "opponent_rank": 2,
       "weight_class": "235",
@@ -80,7 +80,7 @@
       "opponent_id": "35599269132",
       "opponent_name": "Kaylee Parriman",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 22,
       "opponent_weight": 235,
       "opponent_rank": 22,
       "weight_class": "235",
@@ -95,12 +95,12 @@
       "opponent_id": "OUTSTATE_b64bddf0d75b",
       "opponent_name": "Sevira Taito",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 36,
       "opponent_weight": 235,
       "opponent_rank": null,
       "weight_class": "235",
       "result": "L",
-      "method": "DEC",
+      "method": "FF",
       "score": null,
       "duration": "7:00",
       "event": "Ladies Woodford County Invitational"
@@ -112,7 +112,7 @@
       "opponent_team": "Union County",
       "opponent_team_rank": null,
       "opponent_weight": 235,
-      "opponent_rank": 36,
+      "opponent_rank": 37,
       "weight_class": "235",
       "result": "W",
       "method": "FALL",
@@ -142,7 +142,7 @@
       "opponent_team": "Danville",
       "opponent_team_rank": 19,
       "opponent_weight": 235,
-      "opponent_rank": 35,
+      "opponent_rank": 36,
       "weight_class": "235",
       "result": "W",
       "method": "FALL",
@@ -157,7 +157,7 @@
       "opponent_team": "Great Crossing",
       "opponent_team_rank": null,
       "opponent_weight": 235,
-      "opponent_rank": 8,
+      "opponent_rank": 9,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
@@ -165,10 +165,5 @@
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.802197802197802
-  }
+  ]
 }

@@ -3,23 +3,23 @@
   "name": "Osiris Razo",
   "team": "Tates Creek",
   "team_slug": "tates_creek",
-  "team_rank": 57,
+  "team_rank": 56,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 41,
+  "current_rank": 43,
   "record": {
-    "overall": "2-2",
-    "vs_ranked": "2-2",
+    "overall": "2-3",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 6.0,
-    "pa7": 1.0,
-    "pd7": 5.0,
-    "si_plus": 99.8,
-    "df_plus": 113.8,
-    "apr_plus": 86.4,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,31 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35495573132",
-      "opponent_rank": 53,
+      "opponent_rank": 51,
       "opponent_name": "Nathalia Newell",
       "method": "Dec 6-1"
     },
     "worst_loss": {
-      "opponent_id": "35599273132",
-      "opponent_rank": 30,
-      "opponent_name": "Kinley Hurd",
+      "opponent_id": "35333661132",
+      "opponent_rank": 42,
+      "opponent_name": "Abigail Sacre",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-14",
+      "opponent_id": "35333661132",
+      "opponent_name": "Abigail Sacre",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 46,
+      "opponent_weight": 165,
+      "opponent_rank": 42,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35333568132",
       "opponent_name": "Dawnyella Hernandez",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 37,
       "opponent_weight": 165,
-      "opponent_rank": 60,
+      "opponent_rank": 58,
       "weight_class": "165",
       "result": "W",
       "method": "MFF",
@@ -65,16 +80,16 @@
       "opponent_id": "35599273132",
       "opponent_name": "Kinley Hurd",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 22,
       "opponent_weight": 165,
-      "opponent_rank": 30,
+      "opponent_rank": 31,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic",
-      "mv_impact": -4.45
+      "mv_impact": -4.43
     },
     {
       "date": "2025-12-13",
@@ -83,23 +98,23 @@
       "opponent_team": "Scott County",
       "opponent_team_rank": 8,
       "opponent_weight": 165,
-      "opponent_rank": 23,
+      "opponent_rank": 25,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic",
-      "mv_impact": -4.13
+      "mv_impact": -4.1
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35495573132",
       "opponent_name": "Nathalia Newell",
       "opponent_team": "Southwestern",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 55,
       "opponent_weight": 165,
-      "opponent_rank": 53,
+      "opponent_rank": 51,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
@@ -108,10 +123,5 @@
       "event": "Lady Indians Tomahawk Classic",
       "mv_impact": 2.62
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 2.0
-  }
+  ]
 }

@@ -3,48 +3,78 @@
   "name": "Nailah Thornton",
   "team": "Male",
   "team_slug": "male",
-  "team_rank": 45,
+  "team_rank": 44,
   "weight_class": 185,
   "year": 2026,
-  "current_rank": 32,
+  "current_rank": 26,
   "record": {
-    "overall": "4-4",
-    "vs_ranked": "4-4",
-    "vs_top10": "0-0",
-    "vs_top25": "0-3"
+    "overall": "5-5",
+    "vs_ranked": "5-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 96.7,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 4,
+    "ranked_wins": 5,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35478714132",
-      "opponent_rank": 43,
-      "opponent_name": "Lillth Poole",
-      "method": "Fall 0:00"
+      "opponent_id": "35333555132",
+      "opponent_rank": 27,
+      "opponent_name": "Kaylin Alfred",
+      "method": "Fall 4:29"
     },
     "worst_loss": {
       "opponent_id": "35542620132",
-      "opponent_rank": 31,
+      "opponent_rank": 25,
       "opponent_name": "Marita Jones",
       "method": "Fall 1:49"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35333555132",
+      "opponent_name": "Kaylin Alfred",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 3,
+      "opponent_weight": 185,
+      "opponent_rank": 27,
+      "weight_class": "185",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:29",
+      "event": "Mestengo Invitational"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35333477132",
+      "opponent_name": "ERYAH REESE",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 21,
+      "opponent_weight": 185,
+      "opponent_rank": 1,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Mestengo"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "35542620132",
@@ -52,7 +82,7 @@
       "opponent_team": "Central",
       "opponent_team_rank": 18,
       "opponent_weight": 185,
-      "opponent_rank": 31,
+      "opponent_rank": 25,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
@@ -82,9 +112,9 @@
       "opponent_id": "35333639132",
       "opponent_name": "Alayna Hall",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 29,
       "opponent_weight": 185,
-      "opponent_rank": 55,
+      "opponent_rank": 54,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
@@ -114,7 +144,7 @@
       "opponent_id": "35478714132",
       "opponent_name": "Lillth Poole",
       "opponent_team": "Southern",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 54,
       "opponent_weight": 185,
       "opponent_rank": 43,
       "weight_class": "185",
@@ -130,9 +160,9 @@
       "opponent_id": "35640272132",
       "opponent_name": "Aubrey Baggett",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 32,
       "opponent_weight": 165,
-      "opponent_rank": 54,
+      "opponent_rank": 53,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
@@ -148,7 +178,7 @@
       "opponent_team": "Central",
       "opponent_team_rank": 18,
       "opponent_weight": 185,
-      "opponent_rank": 54,
+      "opponent_rank": 53,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
@@ -173,10 +203,5 @@
       "event": "Queen of the Hive",
       "mv_impact": -5.47
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.8461538461538463
-  }
+  ]
 }

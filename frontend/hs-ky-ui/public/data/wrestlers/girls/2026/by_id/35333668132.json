@@ -3,13 +3,13 @@
   "name": "Rowyn Eskridge",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 17,
+  "team_rank": 13,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 20,
+  "current_rank": 22,
   "record": {
-    "overall": "5-1",
-    "vs_ranked": "5-1",
+    "overall": "6-1",
+    "vs_ranked": "6-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,34 +17,49 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 109.4,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
     "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 6,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35542621132",
-      "opponent_rank": 45,
+      "opponent_rank": 36,
       "opponent_name": "Isabella Warner",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35434984132",
-      "opponent_rank": 29,
+      "opponent_rank": 38,
       "opponent_name": "Annisa Zulkarnaen",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333571132",
+      "opponent_name": "Pahola Mexidor Napoles",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 47,
+      "opponent_weight": 126,
+      "opponent_rank": 37,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "Queen of the City Wrestling"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "35698111132",
@@ -63,28 +78,12 @@
     },
     {
       "date": "2026-01-10",
-      "opponent_id": "35333571132",
-      "opponent_name": "Pahola Mexidor Napoles",
-      "opponent_team": "Moore",
-      "opponent_team_rank": 48,
-      "opponent_weight": 126,
-      "opponent_rank": 83,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:24",
-      "event": "Queen of the City Wrestling",
-      "mv_impact": 6.5
-    },
-    {
-      "date": "2026-01-10",
       "opponent_id": "35774461132",
       "opponent_name": "Maliyah Caloca",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 35,
       "opponent_weight": 126,
-      "opponent_rank": 45,
+      "opponent_rank": 47,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -100,7 +99,7 @@
       "opponent_team": "Central",
       "opponent_team_rank": 18,
       "opponent_weight": 114,
-      "opponent_rank": 45,
+      "opponent_rank": 36,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -111,28 +110,43 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35542621132",
+      "opponent_name": "Isabella Warner",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 114,
+      "opponent_rank": 36,
+      "weight_class": "120",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Derby City Girls"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35434984132",
       "opponent_name": "Annisa Zulkarnaen",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
+      "opponent_team_rank": 41,
       "opponent_weight": 120,
-      "opponent_rank": 29,
+      "opponent_rank": 38,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Derby City Girls",
-      "mv_impact": -5.06
+      "mv_impact": -5.05
     },
     {
       "date": "2025-12-13",
       "opponent_id": "35385688132",
       "opponent_name": "Journey Holley",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 44,
       "opponent_weight": 120,
-      "opponent_rank": 71,
+      "opponent_rank": 72,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -141,10 +155,5 @@
       "event": "Derby City Girls",
       "mv_impact": 6.0
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.75
-  }
+  ]
 }

@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": 52,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-4",
-    "vs_top10": "0-3",
-    "vs_top25": "0-4"
+    "overall": "0-5",
+    "vs_ranked": "0-5",
+    "vs_top10": "0-4",
+    "vs_top25": "0-5"
   },
   "metrics": {
-    "pf7": 2.0,
-    "pa7": 9.5,
-    "pd7": -7.5,
-    "si_plus": 96.2,
-    "df_plus": 102.2,
-    "apr_plus": 94.6,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,13 +28,13 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 3,
+    "top10_losses": 4,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35333674132",
-      "opponent_rank": 14,
+      "opponent_rank": 15,
       "opponent_name": "Saniyah Nana",
       "method": "Dec 7-4"
     }
@@ -42,12 +42,27 @@
   "match_list": [
     {
       "date": "2026-01-10",
+      "opponent_id": "35333394132",
+      "opponent_name": "Amirah Macklin",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 47,
+      "opponent_weight": 138,
+      "opponent_rank": 1,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:10",
+      "event": "Queen of the City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
       "opponent_id": "35333674132",
       "opponent_name": "Saniyah Nana",
       "opponent_team": "Butler",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 13,
       "opponent_weight": 145,
-      "opponent_rank": 14,
+      "opponent_rank": 15,
       "weight_class": "120",
       "result": "L",
       "method": "DEC",
@@ -61,7 +76,7 @@
       "opponent_id": "35333394132",
       "opponent_name": "Amirah Macklin",
       "opponent_team": "Moore",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 47,
       "opponent_weight": 138,
       "opponent_rank": 1,
       "weight_class": "138",
@@ -70,7 +85,7 @@
       "score": "12-0",
       "duration": "7:00",
       "event": "Fern Creek Gladiator Ladies",
-      "mv_impact": 0.81
+      "mv_impact": 0.91
     },
     {
       "date": "2025-12-20",
@@ -86,7 +101,7 @@
       "score": null,
       "duration": "1:07",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -1.81
+      "mv_impact": -1.73
     },
     {
       "date": "2025-12-20",
@@ -102,12 +117,7 @@
       "score": null,
       "duration": "2:35",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -3.45
+      "mv_impact": -3.37
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.8452380952380951
-  }
+  ]
 }

@@ -8,23 +8,60 @@ relationships between wrestlers for ranking purposes.
 
 import json
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Set, Tuple, Optional
 from collections import defaultdict
 
 
-def build_direct_relationships(matches: List[Dict], wrestlers: Dict[str, Dict]) -> Dict[Tuple[str, str], Dict]:
+def load_manual_matches(season: int, data_dir: str = "mt/rankings_data",
+                       league: str = 'ncaa', state: str = None, gender: str = None) -> List[Dict]:
+    """
+    Load manual match overrides from JSON file.
+    
+    Manual matches are ranking hints only - they do NOT appear in profiles or historical data.
+    They are automatically ignored if a real TrackWrestling match exists.
+    
+    Returns:
+        List of manual match dictionaries with winner_id, loser_id, optional date/note
+    """
+    if league == 'hs' and state and gender:
+        # HS path format: hs_{state}_{gender}/{season}
+        manual_file = Path(data_dir) / f"hs_{state}_{gender}" / str(season) / "manual_matches.json"
+    else:
+        manual_file = Path(data_dir) / str(season) / "manual_matches.json"
+    
+    if not manual_file.exists():
+        return []
+    
+    try:
+        with manual_file.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+            return data.get("manual_matches", [])
+    except Exception as e:
+        print(f"Warning: Could not load manual matches: {e}")
+        return []
+
+
+def build_direct_relationships(matches: List[Dict], wrestlers: Dict[str, Dict],
+                              season: Optional[int] = None, data_dir: str = "mt/rankings_data",
+                              league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[Tuple[str, str], Dict]:
     """
     Build direct head-to-head relationships from matches.
     
     Args:
         matches: List of match dictionaries
         wrestlers: Dictionary of wrestler_id -> wrestler_info
+        season: Season year (for loading manual matches)
+        data_dir: Data directory (for loading manual matches)
+        league: League type (for loading manual matches)
+        state: State code (for loading manual matches, HS only)
+        gender: Gender (for loading manual matches, HS only)
         
     Returns:
         Dictionary mapping (wrestler1_id, wrestler2_id) -> relationship_info
     """
     relationships = {}
     
+    # First, build relationships from real TrackWrestling matches
     for match in matches:
         w1_id = match['wrestler1_id']
         w2_id = match['wrestler2_id']
@@ -73,6 +110,60 @@ def build_direct_relationships(matches: List[Dict], wrestlers: Dict[str, Dict]) 
             'result': match.get('result', ''),
             'event': match.get('event', '')
         })
+    
+    # Now, integrate manual matches (only if no real match exists)
+    if season is not None:
+        manual_matches = load_manual_matches(season, data_dir, league, state, gender)
+        
+        for manual_match in manual_matches:
+            winner_id = manual_match.get('winner_id')
+            loser_id = manual_match.get('loser_id')
+            
+            if not winner_id or not loser_id:
+                continue
+            
+            # Skip if either wrestler doesn't exist
+            if winner_id not in wrestlers or loser_id not in wrestlers:
+                continue
+            
+            # Create normalized pair key
+            pair_key = tuple(sorted([winner_id, loser_id]))
+            
+            # CRITICAL: Only add manual match if NO real match exists
+            if pair_key in relationships:
+                # Real match exists - ignore manual entry (self-healing)
+                continue
+            
+            # Add manual match as a direct relationship
+            relationships[pair_key] = {
+                'wrestler1_id': pair_key[0],
+                'wrestler2_id': pair_key[1],
+                'direct_wins_1': 0,
+                'direct_losses_1': 0,
+                'direct_wins_2': 0,
+                'direct_losses_2': 0,
+                'matches': [],
+                'is_manual': True  # Flag to indicate this is a manual override
+            }
+            
+            rel = relationships[pair_key]
+            
+            # Determine which wrestler is which in the normalized pair
+            if winner_id == pair_key[0]:
+                rel['direct_wins_1'] = 1
+                rel['direct_losses_2'] = 1
+            else:
+                rel['direct_wins_2'] = 1
+                rel['direct_losses_1'] = 1
+            
+            # Store manual match info (minimal - just enough for display)
+            rel['matches'].append({
+                'date': manual_match.get('date', ''),
+                'winner_id': winner_id,
+                'result': 'M',  # Manual override marker
+                'event': manual_match.get('note', 'Manual override'),
+                'is_manual': True
+            })
     
     return relationships
 
@@ -330,12 +421,19 @@ def build_common_opponent_relationships(
     return common_opp_relationships
 
 
-def build_relationships_for_weight_class(weight_class_data: Dict) -> Dict:
+def build_relationships_for_weight_class(weight_class_data: Dict, season: Optional[int] = None,
+                                        data_dir: str = "mt/rankings_data", league: str = 'ncaa',
+                                        state: str = None, gender: str = None) -> Dict:
     """
     Build all relationships for a single weight class.
     
     Args:
         weight_class_data: Dictionary with 'wrestlers' and 'matches' keys
+        season: Season year (for loading manual matches)
+        data_dir: Data directory (for loading manual matches)
+        league: League type (for loading manual matches)
+        state: State code (for loading manual matches, HS only)
+        gender: Gender (for loading manual matches, HS only)
         
     Returns:
         Dictionary with direct and common opponent relationships
@@ -345,9 +443,13 @@ def build_relationships_for_weight_class(weight_class_data: Dict) -> Dict:
     
     print(f"  Building relationships for {len(wrestlers)} wrestlers, {len(matches)} matches...")
     
-    # Build direct relationships
-    direct_rels = build_direct_relationships(matches, wrestlers)
-    print(f"    Direct relationships: {len(direct_rels)}")
+    # Build direct relationships (includes manual matches if season provided)
+    direct_rels = build_direct_relationships(matches, wrestlers, season, data_dir, league, state, gender)
+    manual_count = sum(1 for rel in direct_rels.values() if rel.get('is_manual', False))
+    if manual_count > 0:
+        print(f"    Direct relationships: {len(direct_rels)} (including {manual_count} manual override(s))")
+    else:
+        print(f"    Direct relationships: {len(direct_rels)}")
     
     # Build common opponent relationships
     common_opp_rels = build_common_opponent_relationships(direct_rels, matches, wrestlers)
@@ -423,7 +525,12 @@ def build_all_relationships(season: int, data_dir: str = "mt/rankings_data", lea
     for weight_class in sorted(data_by_weight.keys()):
         print(f"\nWeight class {weight_class}:")
         relationships_by_weight[weight_class] = build_relationships_for_weight_class(
-            data_by_weight[weight_class]
+            data_by_weight[weight_class],
+            season=season,
+            data_dir=data_dir,
+            league=league,
+            state=state,
+            gender=gender
         )
     
     return relationships_by_weight

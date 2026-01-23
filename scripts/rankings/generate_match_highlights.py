@@ -7,9 +7,10 @@ Generates weekly match highlights (Top Matchups and Upsets) for a given date ran
 This script:
 1. Loads archived rankings snapshots
 2. Collects matches from wrestler profiles within the date range
-3. For each match, determines which ranking snapshot to use (most recent drop before match date)
-4. Classifies matches as Top Matchups (Top 10 vs Top 10) or Upsets (Top 20 loss to lower-ranked/unranked)
-5. Outputs JSON file for frontend consumption
+3. Optionally includes manual matches (if --state is provided for HS mode)
+4. For each match, determines which ranking snapshot to use (most recent drop before match date)
+5. Classifies matches as Top Matchups (Top 10 vs Top 10) or Upsets (Top 20 loss to lower-ranked/unranked)
+6. Outputs JSON file for frontend consumption
 
 Usage:
     python scripts/rankings/generate_match_highlights.py \
@@ -17,15 +18,26 @@ Usage:
         --end-date 2026-01-13 \
         --season 2026 \
         --gender boys \
-        --league hs
+        --league hs \
+        --state KY
 """
 
 import argparse
 import json
+import re
 from collections import defaultdict
 from datetime import datetime, date
+from io import BytesIO
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+# Try to import cairosvg and PIL for SVG to JPG conversion
+try:
+    import cairosvg
+    from PIL import Image
+    CAIROSVG_AVAILABLE = True
+except ImportError:
+    CAIROSVG_AVAILABLE = False
 
 
 def parse_args() -> argparse.Namespace:
@@ -66,10 +78,22 @@ def parse_args() -> argparse.Namespace:
         help="League (currently only 'hs' supported)"
     )
     parser.add_argument(
+        "--state",
+        type=str,
+        default=None,
+        help="State code (e.g., 'KY') - required for loading manual matches in HS mode"
+    )
+    parser.add_argument(
         "--data-dir",
         type=str,
         default="frontend/hs-ky-ui/public/data",
         help="Base directory for data files"
+    )
+    parser.add_argument(
+        "--rankings-data-dir",
+        type=str,
+        default="mt/rankings_data",
+        help="Directory for rankings data (where manual matches are stored)"
     )
     
     return parser.parse_args()
@@ -236,10 +260,46 @@ def load_wrestler_profiles(
     return profiles
 
 
+def load_manual_matches(
+    season: int,
+    rankings_data_dir: str,
+    league: str = 'hs',
+    state: str = None,
+    gender: str = None
+) -> List[Dict]:
+    """
+    Load manual match overrides from JSON file.
+    
+    Manual matches are ranking hints only - they do NOT appear in profiles or historical data.
+    
+    Returns:
+        List of manual match dictionaries with winner_id, loser_id, optional date/note
+    """
+    from pathlib import Path
+    
+    if league == 'hs' and state and gender:
+        # HS path format: hs_{state}_{gender}/{season}
+        manual_file = Path(rankings_data_dir) / f"hs_{state}_{gender}" / str(season) / "manual_matches.json"
+    else:
+        manual_file = Path(rankings_data_dir) / str(season) / "manual_matches.json"
+    
+    if not manual_file.exists():
+        return []
+    
+    try:
+        with manual_file.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+            return data.get("manual_matches", [])
+    except Exception as e:
+        print(f"Warning: Could not load manual matches: {e}")
+        return []
+
+
 def collect_matches_in_range(
     profiles: Dict[str, Dict],
     start_date: date,
-    end_date: date
+    end_date: date,
+    manual_matches: List[Dict] = None
 ) -> List[Dict]:
     """
     Collect all matches from wrestler profiles within the date range.
@@ -318,6 +378,81 @@ def collect_matches_in_range(
                 "score": score,
                 "duration": duration,
             })
+    
+    # Now add manual matches (if provided)
+    if manual_matches:
+        manual_count = 0
+        for manual_match in manual_matches:
+            winner_id = str(manual_match.get('winner_id', ''))
+            loser_id = str(manual_match.get('loser_id', ''))
+            manual_date_str = manual_match.get('date')
+            
+            # Skip if no date (can't filter by date range)
+            if not manual_date_str:
+                continue
+            
+            # Parse and filter by date range
+            # Manual matches might have dates in MM/DD/YYYY format
+            manual_date = None
+            try:
+                # Try YYYY-MM-DD format first
+                manual_date = parse_date(manual_date_str)
+            except ValueError:
+                # Try MM/DD/YYYY format
+                try:
+                    manual_date = datetime.strptime(manual_date_str, "%m/%d/%Y").date()
+                except ValueError:
+                    # Try other common formats
+                    for fmt in ["%m-%d-%Y", "%Y/%m/%d"]:
+                        try:
+                            manual_date = datetime.strptime(manual_date_str, fmt).date()
+                            break
+                        except ValueError:
+                            continue
+            
+            if not manual_date:
+                continue
+            
+            if manual_date < start_date or manual_date > end_date:
+                continue
+            
+            # Normalize date format to YYYY-MM-DD for consistency
+            normalized_date_str = manual_date.strftime("%Y-%m-%d")
+            
+            # Skip if either wrestler not in profiles
+            if winner_id not in profiles or loser_id not in profiles:
+                continue
+            
+            # Check if this match already exists in regular matches (deduplicate)
+            # Use normalized date for deduplication
+            match_key = tuple(sorted([winner_id, loser_id]) + [normalized_date_str])
+            if match_key in seen_match_keys:
+                continue
+            seen_match_keys.add(match_key)
+            
+            # Get wrestler info from profiles
+            winner_profile = profiles[winner_id]
+            loser_profile = profiles[loser_id]
+            
+            matches.append({
+                "date": normalized_date_str,
+                "winner_id": winner_id,
+                "winner_name": winner_profile.get("name", "Unknown"),
+                "winner_team": winner_profile.get("team", "Unknown"),
+                "loser_id": loser_id,
+                "loser_name": loser_profile.get("name", "Unknown"),
+                "loser_team": loser_profile.get("team", "Unknown"),
+                "weight_class": None,  # Manual matches don't have weight class
+                "method": "M",  # Mark as manual
+                "score": None,
+                "duration": None,
+                "is_manual": True,  # Flag to indicate this is a manual match
+                "note": manual_match.get("note")
+            })
+            manual_count += 1
+        
+        if manual_count > 0:
+            print(f"Added {manual_count} manual matches to collection")
     
     print(f"Collected {len(matches)} unique matches in date range")
     return matches
@@ -474,9 +609,27 @@ def main():
         print("Error: No wrestler profiles found.")
         return
     
+    # Load manual matches (if state is provided for HS mode)
+    manual_matches = []
+    if args.league == 'hs' and args.state:
+        print("\nLoading manual matches...")
+        manual_matches = load_manual_matches(
+            args.season,
+            args.rankings_data_dir,
+            args.league,
+            args.state,
+            args.gender
+        )
+        if manual_matches:
+            print(f"Loaded {len(manual_matches)} manual match(es)")
+        else:
+            print("No manual matches found")
+    elif args.league == 'hs' and not args.state:
+        print("\nNote: --state not provided, skipping manual matches (use --state to include them)")
+    
     # Collect matches in date range
     print("\nCollecting matches in date range...")
-    matches = collect_matches_in_range(profiles, start_date, end_date)
+    matches = collect_matches_in_range(profiles, start_date, end_date, manual_matches)
     if not matches:
         print("No matches found in date range.")
         return
@@ -631,6 +784,266 @@ def main():
     print(f"  Top Matchups: {len(top_matchups)}")
     print(f"  Total Upsets: {len(upsets)}")
     print(f"  Top 10 Upsets: {len(top_10_upsets)}")
+    
+    # Generate upsets graphic if we have at least one upset
+    if top_10_upsets:
+        print("\nGenerating upsets graphic...")
+        generate_upsets_graphic(
+            top_10_upsets[:5],  # Top 5 upsets
+            start_date,
+            end_date,
+            args.gender,
+            args.season
+        )
+
+
+def format_date_range(start_date: date, end_date: date) -> str:
+    """Format date range as 'WEEK OF [MONTH] [DAY]-[DAY]'."""
+    month_names = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
+                   "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"]
+    
+    start_month = month_names[start_date.month - 1]
+    start_day = start_date.day
+    
+    # If same month, just show day range
+    if start_date.month == end_date.month:
+        end_day = end_date.day
+        return f"WEEK OF {start_month} {start_day}-{end_day}"
+    else:
+        # Different months - show full dates
+        end_month = month_names[end_date.month - 1]
+        end_day = end_date.day
+        return f"WEEK OF {start_month} {start_day} - {end_month} {end_day}"
+
+
+def format_match_result(method: str) -> str:
+    """Format match method as abbreviation (FALL, DEC, MD, TF, etc.)."""
+    if not method:
+        return ""
+    method_upper = method.upper()
+    # Map common methods
+    method_map = {
+        "FALL": "FALL",
+        "PIN": "FALL",
+        "DEC": "DEC",
+        "DECISION": "DEC",
+        "MD": "MD",
+        "MAJOR": "MD",
+        "TF": "TF",
+        "TECH": "TF",
+        "TECHNICAL": "TF",
+        "MFF": "MFF",
+        "FOR": "FF",
+        "FORFEIT": "FF",
+        "FF": "FF",
+        "INJ": "INJ",
+        "INJURY": "INJ",
+        "DQ": "DQ",
+        "DISQUAL": "DQ"
+    }
+    return method_map.get(method_upper, method_upper[:4])
+
+
+def format_match_details(method: str, score: str, duration: str) -> str:
+    """Format match details (time for pin, score for decision)."""
+    if not method:
+        return ""
+    method_upper = method.upper()
+    
+    if method_upper in ["FALL", "PIN", "TF", "TECH", "TECHNICAL", "INJ", "INJURY"]:
+        # Use duration (time) for falls and tech falls
+        # Special case: if duration is "0:00", it means we don't know the actual time, so omit it
+        if duration and duration.strip() not in ["0:00", "0:0", "00:00"]:
+            return f"({duration})"
+        return ""
+    elif method_upper in ["DEC", "DECISION", "MD", "MAJOR"]:
+        # Use score for decisions
+        if score:
+            return f"({score})"
+        return ""
+    else:
+        # For other types, prefer score, fallback to duration
+        if score:
+            return f"({score})"
+        if duration and duration.strip() not in ["0:00", "0:0", "00:00"]:
+            return f"({duration})"
+        return ""
+
+
+def generate_upsets_graphic(
+    top_5_upsets: List[Dict],
+    start_date: date,
+    end_date: date,
+    gender: str,
+    season: int
+) -> None:
+    """Generate JPG graphic from SVG template for top 5 upsets."""
+    template_path = Path("mt/graphics/templates/TOP-UPSETS-TEMPLATE.svg")
+    output_dir = Path(f"mt/graphics/{season}")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Generate filename based on date range
+    date_str = f"{start_date.strftime('%Y%m%d')}_{end_date.strftime('%Y%m%d')}"
+    output_jpg = output_dir / f"top_upsets_{gender}_{season}_{date_str}.jpg"
+    
+    if not template_path.exists():
+        print(f"Warning: Template not found at {template_path}, skipping graphic generation")
+        return
+    
+    # Read template
+    with open(template_path, 'r', encoding='utf-8') as f:
+        svg_content = f.read()
+    
+    # Replace description (KENTUCKY BOYS WRESTLING or KENTUCKY GIRLS WRESTLING)
+    gender_display = "KENTUCKY BOYS WRESTLING" if gender == "boys" else "KENTUCKY GIRLS WRESTLING"
+    svg_content = re.sub(
+        r'(inkscape:label="description"[^>]*>[\s\S]*?<tspan[^>]*>)[^<]*(</tspan>)',
+        lambda m: m.group(1) + gender_display + m.group(2),
+        svg_content
+    )
+    
+    # Replace daterange (find "WEEK OF" text and replace)
+    date_range_str = format_date_range(start_date, end_date)
+    svg_content = re.sub(
+        r'(<tspan[^>]*>WEEK OF[^<]*</tspan>)',
+        rf'<tspan sodipodi:role="line" id="tspan52" style="stroke-width:0.287863" x="1820.8248" y="288.31433">{date_range_str}</tspan>',
+        svg_content
+    )
+    
+    # Process top 5 upsets
+    for idx, upset in enumerate(top_5_upsets[:5], 1):
+        # Check if this is a manual match and prompt for missing info
+        is_manual = upset.get('is_manual', False)
+        if is_manual:
+            print(f"\n⚠️  Manual match detected in top 5 upsets (#{idx}):")
+            print(f"   {upset.get('winner_name', 'Unknown')} def. {upset.get('loser_name', 'Unknown')}")
+            
+            # Prompt for weight class if missing
+            weight_class = upset.get('weight_class', '')
+            if not weight_class:
+                weight_input = input(f"   Enter weight class (e.g., '185'): ").strip()
+                if weight_input:
+                    weight_class = weight_input
+                    upset['weight_class'] = weight_class
+            
+            # Always prompt for match result and details for manual matches
+            method = upset.get('method', '')
+            score = upset.get('score', '')
+            duration = upset.get('duration', '')
+            
+            # Prompt for match result type
+            method_input = input(f"   Enter match result type (FALL, DEC, MD, TF, etc.): ").strip()
+            if method_input:
+                method = method_input.upper()
+                upset['method'] = method
+                
+                # Prompt for details based on result type
+                if method in ['FALL', 'PIN', 'TF', 'TECH', 'TECHNICAL', 'INJ', 'INJURY']:
+                    detail_input = input(f"   Enter time (e.g., '2:33'): ").strip()
+                    if detail_input:
+                        duration = detail_input
+                        upset['duration'] = duration
+                elif method in ['DEC', 'DECISION', 'MD', 'MAJOR']:
+                    detail_input = input(f"   Enter score (e.g., '17-1'): ").strip()
+                    if detail_input:
+                        score = detail_input
+                        upset['score'] = score
+                else:
+                    # For other result types, ask if they want to add details
+                    detail_input = input(f"   Enter match details (optional, e.g., score or time): ").strip()
+                    if detail_input:
+                        # Try to determine if it's a score or time
+                        if ':' in detail_input:
+                            duration = detail_input
+                            upset['duration'] = duration
+                        else:
+                            score = detail_input
+                            upset['score'] = score
+        
+        # Get weight class (may have been updated above)
+        weight_class = upset.get('weight_class', '')
+        if weight_class:
+            # Replace weight (use lambda to avoid regex group reference issues)
+            pattern = rf'(inkscape:label="weight{idx}"[^>]*>[\s\S]*?<tspan[^>]*>)[^<]*(</tspan>)'
+            svg_content = re.sub(pattern, lambda m: m.group(1) + str(weight_class) + m.group(2), svg_content)
+        
+        # Get winner info
+        winner_rank = upset.get('winner_rank', '')
+        winner_name = upset.get('winner_name', 'Unknown')
+        winner_team = upset.get('winner_team', 'Unknown')
+        
+        # Replace winner (complex nested structure: #X   Name (Team))
+        # Pattern: inkscape:label="winnerX">...<tspan>#X   <tspan>Name</tspan> <tspan>(Team)</tspan></tspan>
+        # We need to replace the rank number, name, and team while preserving structure
+        winner_pattern = rf'(inkscape:label="winner{idx}"[^>]*>[\s\S]*?<tspan[^>]*>)#X\s+<tspan[^>]*>[^<]*</tspan>\s+<tspan[^>]*>\([^)]*\)</tspan>(</tspan>)'
+        # Escape XML special characters in names/teams
+        winner_name_escaped = winner_name.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        winner_team_escaped = winner_team.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        # Use lambda to avoid regex group reference issues
+        winner_replacement_text = f'#{winner_rank}   <tspan style="letter-spacing:0px" id="tspan46">{winner_name_escaped}</tspan> <tspan style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:\'Alegreya Sans\';-inkscape-font-specification:\'Alegreya Sans Medium\';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:\'ss3\';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:-0.195781px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke-width:0.425147;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;filter:url(#filter30);stop-color:#000000;stop-opacity:1" id="tspan68">({winner_team_escaped})</tspan>'
+        svg_content = re.sub(winner_pattern, lambda m: m.group(1) + winner_replacement_text + m.group(2), svg_content)
+        
+        # Get loser info
+        loser_rank = upset.get('loser_rank', '')
+        loser_name = upset.get('loser_name', 'Unknown')
+        loser_team = upset.get('loser_team', 'Unknown')
+        
+        # Replace loser (complex nested structure: def. #Y   Name (Team))
+        # Pattern: inkscape:label="loserX">...<tspan><tspan>def.   </tspan>#Y   <tspan>Name</tspan> <tspan>(Team)</tspan></tspan>
+        # Note: The template has "def.   " (with multiple spaces) before #Y
+        loser_pattern = rf'(inkscape:label="loser{idx}"[^>]*>[\s\S]*?<tspan[^>]*><tspan[^>]*>def\.\s+</tspan>)#Y\s+<tspan[^>]*>[^<]*</tspan>\s+<tspan[^>]*>\([^)]*\)</tspan>(</tspan>)'
+        # Escape XML special characters in names/teams
+        loser_name_escaped = loser_name.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        loser_team_escaped = loser_team.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        # Use lambda to avoid regex group reference issues
+        loser_replacement_text = f'#{loser_rank}   <tspan style="letter-spacing:0px" id="tspan47">{loser_name_escaped}</tspan> <tspan style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:\'Alegreya Sans\';-inkscape-font-specification:\'Alegreya Sans Medium\';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:\'ss3\';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:-0.195781px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke-width:0.425147;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;filter:url(#filter30);stop-color:#000000;stop-opacity:1" id="tspan72">({loser_team_escaped})</tspan>'
+        svg_content = re.sub(loser_pattern, lambda m: m.group(1) + loser_replacement_text + m.group(2), svg_content)
+        
+        # Get match result and details (may have been updated above for manual matches)
+        method = upset.get('method', '')
+        score = upset.get('score', '')
+        duration = upset.get('duration', '')
+        
+        result_type = format_match_result(method)
+        match_details = format_match_details(method, score, duration)
+        
+        # Replace match result (use lambda to avoid regex group reference issues)
+        result_pattern = rf'(inkscape:label="matchresult{idx}"[^>]*>[\s\S]*?<tspan[^>]*>)[^<]*(</tspan>)'
+        svg_content = re.sub(result_pattern, lambda m: m.group(1) + result_type + " " + m.group(2), svg_content)
+        
+        # Replace match details (use lambda to avoid regex group reference issues)
+        details_pattern = rf'(inkscape:label="matchdetails{idx}"[^>]*>[\s\S]*?<tspan[^>]*>)[^<]*(</tspan>)'
+        svg_content = re.sub(details_pattern, lambda m: m.group(1) + match_details + m.group(2), svg_content)
+    
+    # Save temporary SVG
+    temp_svg = output_dir / f"temp_upsets_{gender}_{season}_{date_str}.svg"
+    with open(temp_svg, 'w', encoding='utf-8') as f:
+        f.write(svg_content)
+    
+    # Convert to JPG
+    if CAIROSVG_AVAILABLE:
+        render_svg_to_jpg(temp_svg, output_jpg, width=2000, height=2000)
+        # Clean up temporary SVG
+        temp_svg.unlink()
+    else:
+        print("Warning: cairosvg/PIL not available. SVG saved but JPG conversion skipped.")
+        print(f"  SVG saved to: {temp_svg}")
+        print("  Install with: pip install cairosvg pillow")
+
+
+def render_svg_to_jpg(svg_path: Path, jpg_path: Path, width: int = 2000, height: int = 2000) -> None:
+    """Render SVG to JPG using cairosvg."""
+    if not CAIROSVG_AVAILABLE:
+        return
+    
+    jpg_path.parent.mkdir(parents=True, exist_ok=True)
+    
+    # Render SVG to PNG in memory, then convert to JPG via Pillow
+    png_bytes = cairosvg.svg2png(url=str(svg_path), output_width=width, output_height=height)
+    img = Image.open(BytesIO(png_bytes)).convert("RGB")
+    img.save(jpg_path, format="JPEG", quality=95)
+    
+    print(f"  ✓ Upsets graphic generated: {jpg_path}")
 
 
 if __name__ == "__main__":

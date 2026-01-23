@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:37.607719Z",
+  "generated_at_utc": "2026-01-22T20:06:58.564139Z",
   "starters": {
     "106": {
       "weight": 106,
-      "wrestler_id": "35447832132",
-      "name": "Maylee Whitney",
-      "current_rank": 116,
+      "wrestler_id": "35772088132",
+      "name": "Tabitha McGuire",
+      "current_rank": 125,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -45,7 +45,7 @@
       "weight": 120,
       "wrestler_id": "36289283132",
       "name": "Kently Johnston",
-      "current_rank": 55,
+      "current_rank": 60,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -59,11 +59,11 @@
         "losses": 2
       }
     },
-    "132": {
-      "weight": 132,
+    "126": {
+      "weight": 126,
       "wrestler_id": "35447805132",
       "name": "Eli Palmer",
-      "current_rank": 124,
+      "current_rank": 194,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -75,13 +75,31 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
+      }
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35447228132",
+      "name": "Gabe Davis",
+      "current_rank": 191,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
       }
     },
     "150": {
       "weight": 150,
       "wrestler_id": "35447712132",
       "name": "Jacob Olin",
-      "current_rank": 106,
+      "current_rank": 109,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -92,14 +110,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       }
     },
     "157": {
       "weight": 157,
       "wrestler_id": "35771945132",
       "name": "Kendel Lunsford",
-      "current_rank": 78,
+      "current_rank": 82,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -117,7 +135,7 @@
       "weight": 165,
       "wrestler_id": "35447491132",
       "name": "Bentley Stevens",
-      "current_rank": 77,
+      "current_rank": 70,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -128,14 +146,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 4
       }
     },
     "175": {
       "weight": 175,
       "wrestler_id": "35447539132",
       "name": "peyton walker",
-      "current_rank": 44,
+      "current_rank": 47,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -153,7 +171,7 @@
       "weight": 215,
       "wrestler_id": "37865849132",
       "name": "Conner Jackson",
-      "current_rank": 275,
+      "current_rank": 274,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -171,7 +189,7 @@
       "weight": 285,
       "wrestler_id": "36289625132",
       "name": "Lucas Tackett",
-      "current_rank": 315,
+      "current_rank": 311,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -189,21 +207,12 @@
   "remaining": [
     {
       "weight": 106,
-      "wrestler_id": "35772088132",
-      "name": "Tabitha McGuire",
-      "wins": 3,
-      "losses": 1,
+      "wrestler_id": "35447832132",
+      "name": "Maylee Whitney",
+      "wins": 1,
+      "losses": 4,
       "top25_wins": 0,
-      "bonus_rate": 0.667
-    },
-    {
-      "weight": 132,
-      "wrestler_id": "35447228132",
-      "name": "Gabe Davis",
-      "wins": 5,
-      "losses": 12,
-      "top25_wins": 0,
-      "bonus_rate": 0.6
+      "bonus_rate": 1.0
     },
     {
       "weight": 165,
@@ -218,8 +227,8 @@
       "weight": 175,
       "wrestler_id": "35447758132",
       "name": "Jeffrey Scott",
-      "wins": 4,
-      "losses": 4,
+      "wins": 5,
+      "losses": 6,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -244,30 +253,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 43,
-      "losses": 59
+      "wins": 38,
+      "losses": 47
     },
     "top33": {
       "wins": 0,
-      "losses": 12
+      "losses": 17
     },
     "top10": {
       "wins": 0,
-      "losses": 2
+      "losses": 3
     },
     "bonus_rate": {
-      "value": 0.884,
-      "rank": 9,
+      "value": 0.921,
+      "rank": 5,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.814,
-      "rank": 8,
+      "value": 0.868,
+      "rank": 5,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.07,
-      "rank": 74,
+      "value": 0.053,
+      "rank": 80,
       "rank_scope": "league"
     }
   }

@@ -8,18 +8,18 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 120.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -28,18 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35465670132",
-      "opponent_rank": 16,
+      "opponent_rank": 15,
       "opponent_name": "Hermayoni Gembe",
       "method": "Fall 3:02"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35465669132",
+      "opponent_rank": 3,
+      "opponent_name": "Eelynn Hayden",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-07",
+      "opponent_id": "35465669132",
+      "opponent_name": "Eelynn Hayden",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 3,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Jackson"
+    },
     {
       "date": "2025-12-19",
       "opponent_id": "35465670132",
@@ -47,7 +67,7 @@
       "opponent_team": "McCracken County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 16,
+      "opponent_rank": 15,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -55,10 +75,5 @@
       "duration": "3:02",
       "event": "Cape Central Tiger Classic"
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.5726495726495726
-  }
+  ]
 }

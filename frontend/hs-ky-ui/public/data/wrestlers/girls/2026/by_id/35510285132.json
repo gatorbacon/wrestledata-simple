@@ -6,51 +6,101 @@
   "team_rank": null,
   "weight_class": 100,
   "year": 2026,
-  "current_rank": 44,
+  "current_rank": 43,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "0-2",
+    "overall": "3-3",
+    "vs_ranked": "2-3",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 92.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35334594132",
+      "opponent_rank": 19,
+      "opponent_name": "Kaitlyn Baker",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "35482347132",
-      "opponent_rank": 34,
+      "opponent_rank": 38,
       "opponent_name": "Diana Vawter",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
-      "date": "2025-12-17",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "date": "2026-01-10",
+      "opponent_id": "35739869132",
+      "opponent_name": "Paige Collins",
+      "opponent_team": "Mason County",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 100,
+      "opponent_rank": 54,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "John Straun Nutter Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35334594132",
+      "opponent_name": "Kaitlyn Baker",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 19,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "John Straun Nutter Memorial"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35739866132",
+      "opponent_name": "Haven Marshall",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 14,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "John Straun Nutter Memorial"
+    },
+    {
+      "date": "2025-12-17",
+      "opponent_id": "OUTSTATE_c2d8650d83b2",
+      "opponent_name": "Unknown",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
       "opponent_rank": null,
       "weight_class": "100",
       "result": "W",
-      "method": "DEC",
+      "method": "FF",
       "score": null,
       "duration": "7:00",
       "event": "vs. Cooper"
@@ -77,7 +127,7 @@
       "opponent_team": "Holmes",
       "opponent_team_rank": null,
       "opponent_weight": 100,
-      "opponent_rank": 34,
+      "opponent_rank": 38,
       "weight_class": "100",
       "result": "L",
       "method": "FALL",
@@ -85,10 +135,5 @@
       "duration": "0:00",
       "event": "Tommy Castle Classic"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.6666666666666667
-  }
+  ]
 }

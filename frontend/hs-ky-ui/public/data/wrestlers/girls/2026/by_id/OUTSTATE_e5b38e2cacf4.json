@@ -3,7 +3,7 @@
   "name": "Serenity Cook",
   "team": "Perry County Central",
   "team_slug": "perry_county_central",
-  "team_rank": 50,
+  "team_rank": 49,
   "weight_class": 114,
   "year": 2026,
   "current_rank": null,
@@ -11,7 +11,7 @@
     "overall": "0-2",
     "vs_ranked": "0-2",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35369124132",
-      "opponent_rank": 27,
+      "opponent_rank": 25,
       "opponent_name": "Michala Daniels",
       "method": "For."
     }
@@ -50,7 +50,7 @@
       "opponent_rank": 2,
       "weight_class": "114",
       "result": "L",
-      "method": "DEC",
+      "method": "FF",
       "score": null,
       "duration": "7:00",
       "event": "Clipson Jones Classic Ladies 2026"
@@ -62,18 +62,13 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 6,
       "opponent_weight": 114,
-      "opponent_rank": 27,
+      "opponent_rank": 25,
       "weight_class": "114",
       "result": "L",
-      "method": "DEC",
+      "method": "FF",
       "score": null,
       "duration": "7:00",
       "event": "Girls Hatfield McCoy 32 2025"
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4074074074074074
-  }
+  ]
 }

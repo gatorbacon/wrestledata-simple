@@ -309,6 +309,9 @@ def classify_result_type(result: str) -> str:
         return "DQ"
     if "MFF" in s or "MEDICAL" in s:
         return "MFF"
+    # Check for forfeit - must check "For." pattern before "FF" to catch "(For.)" format
+    if "FOR." in s or s.endswith("FOR.") or " FOR " in s:
+        return "FF"
     if "FF" in s or "FORFEIT" in s:
         return "FF"
     
@@ -579,6 +582,20 @@ def build_match_list(
         opp_rank = rank_by_id.get(opp_id)
         opp_team_rank = team_rank_by_name.get(opp_team)
         
+        # For forfeit matches, if opponent_team is "Unknown", try to extract from event field
+        # This ensures team names are displayed even if they weren't stored correctly in synthetic opponent
+        # Check if this is a forfeit match (check result type early)
+        result_type = classify_result_type(result)
+        if result_type == "FF" and (not opp_team or opp_team == "Unknown"):
+            if event:
+                event_match = re.search(r'vs\.?\s+([^(]+)', event, re.IGNORECASE)
+                if event_match:
+                    extracted_team = event_match.group(1).strip()
+                    if extracted_team:
+                        opp_team = extracted_team
+                        # Update team rank if we found a valid team
+                        opp_team_rank = team_rank_by_name.get(opp_team)
+        
         # Determine result (W/L)
         is_winner = (winner_id == wrestler_id)
         result_code = "W" if is_winner else "L"
@@ -586,8 +603,6 @@ def build_match_list(
         # Extract method and score
         method = "DEC"  # default
         score = None
-        
-        result_type = classify_result_type(result)
         result_upper = result.upper()
         
         if result_type == "F":
@@ -602,6 +617,8 @@ def build_match_list(
             method = "DFLT"
         elif result_type == "MFF":
             method = "MFF"
+        elif result_type == "FF":
+            method = "FF"
         elif result_type == "D":
             # Check for SV-* or TB-* to preserve the prefix for display
             if result_upper.startswith("SV-"):
@@ -1118,9 +1135,9 @@ def main() -> None:
             team_rank_by_name, team_scores = calculate_team_rankings(season, data_dir)
             print(f"Calculated rankings for {len(team_rank_by_name)} teams")
             
-            print("\nCalculating advanced metrics...")
-            metrics_by_id, _ = _compute_plus_metrics_for_all(season, 999, league=league, state=state, gender=gender)  # Use high max_rank to get all
-            print(f"Calculated metrics for {len(metrics_by_id)} wrestlers")
+            # Skip advanced metrics calculation for HS (not used, saves significant time)
+            print("\nSkipping advanced metrics calculation for HS (SI+, DF+, PE+ not used)...")
+            metrics_by_id = {}  # Empty dict - defaults will be used (100.0 for SI+/DF+/PE+, 0.0 for PF7/PA7)
             
             print("\nLoading matches from weight class files...")
             matches_by_wrestler = load_all_matches_from_weight_classes(season, data_dir)

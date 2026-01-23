@@ -21,23 +21,23 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:37.859182Z",
+  "generated_at_utc": "2026-01-22T20:06:58.796821Z",
   "starters": {
     "114": {
       "weight": 114,
       "wrestler_id": "35333406132",
       "name": "Danica Patrick",
       "current_rank": 11,
-      "xtp": 6.56,
+      "xtp": 6.79,
       "xtp_p": 1.69,
       "xtp_a": 1.58,
-      "xtp_b": 3.29,
+      "xtp_b": 3.52,
       "top10_record": {
-        "wins": 3,
+        "wins": 4,
         "losses": 8
       },
       "top33_record": {
-        "wins": 13,
+        "wins": 12,
         "losses": 10
       }
     },
@@ -46,17 +46,17 @@
       "wrestler_id": "35333405132",
       "name": "Bailey Fletcher",
       "current_rank": 4,
-      "xtp": 14.31,
+      "xtp": 14.21,
       "xtp_p": 6.31,
       "xtp_a": 2.77,
-      "xtp_b": 5.23,
+      "xtp_b": 5.13,
       "top10_record": {
         "wins": 6,
-        "losses": 3
+        "losses": 4
       },
       "top33_record": {
-        "wins": 16,
-        "losses": 3
+        "wins": 17,
+        "losses": 4
       }
     },
     "126": {
@@ -81,7 +81,7 @@
       "weight": 132,
       "wrestler_id": "35333570132",
       "name": "Maria Meza Meza",
-      "current_rank": 72,
+      "current_rank": 68,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -92,7 +92,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       }
     },
     "138": {
@@ -106,11 +106,11 @@
       "xtp_b": 1.08,
       "top10_record": {
         "wins": 0,
-        "losses": 5
+        "losses": 6
       },
       "top33_record": {
         "wins": 0,
-        "losses": 11
+        "losses": 13
       }
     },
     "145": {
@@ -118,10 +118,10 @@
       "wrestler_id": "35333567132",
       "name": "Sophia Altehua",
       "current_rank": 28,
-      "xtp": 2.8,
-      "xtp_p": 0.31,
-      "xtp_a": 0.75,
-      "xtp_b": 1.74,
+      "xtp": 2.56,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.62,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -131,22 +131,40 @@
         "losses": 11
       }
     },
-    "165": {
-      "weight": 165,
+    "152": {
+      "weight": 152,
       "wrestler_id": "35333412132",
       "name": "Kyleigh Hampton",
-      "current_rank": 31,
-      "xtp": 2.09,
-      "xtp_p": 0.22,
-      "xtp_a": 0.59,
-      "xtp_b": 1.28,
+      "current_rank": 36,
+      "xtp": 1.98,
+      "xtp_p": 0.11,
+      "xtp_a": 0.51,
+      "xtp_b": 1.36,
       "top10_record": {
         "wins": 0,
         "losses": 2
       },
       "top33_record": {
         "wins": 1,
-        "losses": 8
+        "losses": 10
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35333569132",
+      "name": "Leyla Cruz Sanchez",
+      "current_rank": 46,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 9
       }
     }
   },
@@ -186,15 +204,6 @@
       "losses": 9,
       "top25_wins": 0,
       "bonus_rate": 0.0
-    },
-    {
-      "weight": 165,
-      "wrestler_id": "35333569132",
-      "name": "Leyla Cruz Sanchez",
-      "wins": 3,
-      "losses": 13,
-      "top25_wins": 0,
-      "bonus_rate": 1.0
     }
   ],
   "team_metrics": {
@@ -208,30 +217,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 53,
-      "losses": 64
+      "wins": 63,
+      "losses": 84
     },
     "top33": {
       "wins": 31,
-      "losses": 51
+      "losses": 67
     },
     "top10": {
-      "wins": 9,
-      "losses": 23
+      "wins": 10,
+      "losses": 27
     },
     "bonus_rate": {
-      "value": 0.887,
-      "rank": 48,
+      "value": 0.905,
+      "rank": 39,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.792,
-      "rank": 65,
+      "value": 0.794,
+      "rank": 49,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.094,
-      "rank": 8,
+      "value": 0.111,
+      "rank": 6,
       "rank_scope": "league"
     }
   }

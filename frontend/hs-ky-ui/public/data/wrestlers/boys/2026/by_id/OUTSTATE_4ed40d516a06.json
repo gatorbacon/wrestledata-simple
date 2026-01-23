@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35640279132",
-      "opponent_rank": 77,
+      "opponent_rank": 89,
       "opponent_name": "Jacob Durst",
       "method": "Fall 3:27"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34988569132",
+      "opponent_rank": 8,
+      "opponent_name": "Zaq Abdi",
+      "method": "TF 17-0 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "34988569132",
+      "opponent_name": "Zaq Abdi",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 11,
+      "opponent_weight": 113,
+      "opponent_rank": 8,
+      "weight_class": "113",
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "0:00",
+      "event": "Hammer and Anvil"
+    },
     {
       "date": "2025-12-21",
       "opponent_id": "35640279132",
       "opponent_name": "Jacob Durst",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 45,
       "opponent_weight": 113,
-      "opponent_rank": 77,
+      "opponent_rank": 89,
       "weight_class": "113",
       "result": "W",
       "method": "FALL",

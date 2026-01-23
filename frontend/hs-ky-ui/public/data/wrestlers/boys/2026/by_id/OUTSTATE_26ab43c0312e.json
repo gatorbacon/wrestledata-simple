@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35035507132",
-      "opponent_rank": 22,
+      "opponent_rank": 24,
       "opponent_name": "Wendel Shackelford",
       "method": "Dec 5-1"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35035507132",
+      "opponent_rank": 24,
+      "opponent_name": "Wendel Shackelford",
+      "method": "Dec 6-1"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35035507132",
+      "opponent_name": "Wendel Shackelford",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 157,
+      "opponent_rank": 24,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "Holiday Classic"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35035507132",
       "opponent_name": "Wendel Shackelford",
       "opponent_team": "Union County",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 2,
       "opponent_weight": 157,
-      "opponent_rank": 22,
+      "opponent_rank": 24,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",

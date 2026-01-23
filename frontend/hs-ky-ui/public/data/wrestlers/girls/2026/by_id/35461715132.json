@@ -3,23 +3,23 @@
   "name": "Cadence Hon",
   "team": "Simon Kenton",
   "team_slug": "simon_kenton",
-  "team_rank": 54,
+  "team_rank": 53,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 63,
+  "current_rank": 61,
   "record": {
-    "overall": "0-8",
-    "vs_ranked": "0-8",
+    "overall": "1-10",
+    "vs_ranked": "0-10",
     "vs_top10": "0-3",
-    "vs_top25": "0-7"
+    "vs_top25": "0-8"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 90.5,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,18 +28,63 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 8,
+    "ranked_losses": 10,
     "top10_wins": 0,
     "top10_losses": 3,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35347687132",
-      "opponent_rank": 40,
-      "opponent_name": "Tori Myers",
-      "method": "Fall 1:28"
+      "opponent_id": "35333569132",
+      "opponent_rank": 46,
+      "opponent_name": "Leyla Cruz Sanchez",
+      "method": "Fall 3:45"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35542616132",
+      "opponent_name": "Maliyah Oates",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 165,
+      "opponent_rank": 18,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Mestengo Invitational"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35333569132",
+      "opponent_name": "Leyla Cruz Sanchez",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 37,
+      "opponent_weight": 165,
+      "opponent_rank": 46,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:45",
+      "event": "Mestengo Invitational"
+    },
+    {
+      "date": "2026-01-14",
+      "opponent_id": "OUTSTATE_14714e5ed2cb",
+      "opponent_name": "Unknown",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Walton-Verona"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35524066132",
@@ -47,14 +92,14 @@
       "opponent_team": "Danville",
       "opponent_team_rank": 19,
       "opponent_weight": 165,
-      "opponent_rank": 17,
+      "opponent_rank": 21,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
       "event": "Ladies Warhawk Classic",
-      "mv_impact": -4.21
+      "mv_impact": -4.17
     },
     {
       "date": "2026-01-03",
@@ -70,7 +115,7 @@
       "score": null,
       "duration": "0:00",
       "event": "Ladies Warhawk Classic",
-      "mv_impact": -3.32
+      "mv_impact": -3.3
     },
     {
       "date": "2025-12-29",
@@ -79,30 +124,30 @@
       "opponent_team": "Central",
       "opponent_team_rank": 18,
       "opponent_weight": 165,
-      "opponent_rank": 22,
+      "opponent_rank": 18,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Ladies Woodford County Invitational",
-      "mv_impact": -3.7
+      "mv_impact": -3.67
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35599277132",
       "opponent_name": "Sundae-Grace Spradlin",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 22,
       "opponent_weight": 165,
-      "opponent_rank": 20,
+      "opponent_rank": 24,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:35",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -4.49
+      "mv_impact": -4.47
     },
     {
       "date": "2025-12-20",
@@ -118,16 +163,16 @@
       "score": null,
       "duration": "0:59",
       "event": "5th Annual Cardinal Clash Ladies Tourn",
-      "mv_impact": -3.34
+      "mv_impact": -3.31
     },
     {
       "date": "2025-12-12",
       "opponent_id": "35383830132",
       "opponent_name": "Fanta Mariko",
       "opponent_team": "Cooper",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": null,
       "opponent_weight": 235,
-      "opponent_rank": 4,
+      "opponent_rank": 3,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
@@ -159,7 +204,7 @@
       "opponent_team": "North Hardin",
       "opponent_team_rank": 14,
       "opponent_weight": 185,
-      "opponent_rank": 40,
+      "opponent_rank": 41,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
@@ -168,10 +213,5 @@
       "event": "2025 Ohio County Girls` Invitational",
       "mv_impact": -8.8
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 2.0
-  }
+  ]
 }

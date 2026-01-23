@@ -3,15 +3,15 @@
   "name": "Varric wright",
   "team": "Floyd Central",
   "team_slug": "floyd_central",
-  "team_rank": 81,
+  "team_rank": 79,
   "weight_class": 157,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35281689132",
-      "opponent_rank": 110,
+      "opponent_rank": 67,
       "opponent_name": "Ethan Wilson",
       "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34989037132",
+      "opponent_rank": 7,
+      "opponent_name": "Jaylin Bellamy",
+      "method": "TF 22-5 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34989037132",
+      "opponent_name": "Jaylin Bellamy",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 26,
+      "opponent_weight": 150,
+      "opponent_rank": 7,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "22-5",
+      "duration": "0:00",
+      "event": "vs. Floyd Central"
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35281689132",
       "opponent_name": "Ethan Wilson",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 106,
+      "opponent_team_rank": 108,
       "opponent_weight": 157,
-      "opponent_rank": 110,
+      "opponent_rank": 67,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",

@@ -3,15 +3,15 @@
   "name": "Richard Perez",
   "team": "Bryan Station",
   "team_slug": "bryan_station",
-  "team_rank": 42,
-  "weight_class": 126,
+  "team_rank": 63,
+  "weight_class": 113,
   "year": 2026,
-  "current_rank": 234,
+  "current_rank": 132,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,11 +28,77 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35033125132",
+      "opponent_rank": 69,
+      "opponent_name": "Owen Young",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35033125132",
+      "opponent_name": "Owen Young",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 131,
+      "opponent_weight": 106,
+      "opponent_rank": 69,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34999342132",
+      "opponent_name": "Benjamin Leslie",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 44,
+      "opponent_weight": 113,
+      "opponent_rank": 65,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. George Rogers Clark"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35225533132",
+      "opponent_name": "Asina Gilbert",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": 84,
+      "opponent_weight": 113,
+      "opponent_rank": 53,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Frederick Douglass"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35045479132",
+      "opponent_name": "Camryn Coffey",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 20,
+      "opponent_weight": 113,
+      "opponent_rank": 13,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Madison Central"
+    }
+  ]
 }

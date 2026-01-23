@@ -8,34 +8,34 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "1-2",
-    "vs_top10": "0-2",
-    "vs_top25": "1-2"
+    "overall": "3-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "2-2",
+    "vs_top25": "3-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 96.6,
-    "pin_rate": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 2,
-    "top10_wins": 0,
+    "top10_wins": 2,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35465673132",
-      "opponent_rank": 17,
-      "opponent_name": "Emmery Evans",
-      "method": "MD 21-13"
+      "opponent_id": "35465669132",
+      "opponent_rank": 3,
+      "opponent_name": "Eelynn Hayden",
+      "method": "Fall 4:14"
     },
     "worst_loss": {
       "opponent_id": "35465669132",
@@ -46,13 +46,43 @@
   },
   "match_list": [
     {
+      "date": "2026-01-17",
+      "opponent_id": "35465669132",
+      "opponent_name": "Eelynn Hayden",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 3,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:14",
+      "event": "Steve Johnston Memorial Girls Inv 26"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35564944132",
+      "opponent_name": "sutton fuller",
+      "opponent_team": "Union County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 10,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:03",
+      "event": "Steve Johnston Memorial Girls Inv 26"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35465673132",
       "opponent_name": "Emmery Evans",
       "opponent_team": "McCracken County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "weight_class": "120",
       "result": "W",
       "method": "MD",
@@ -90,10 +120,5 @@
       "duration": "7:00",
       "event": "Marion Wildcats Girls Invitational"
     }
-  ],
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.2592592592592593
-  }
+  ]
 }

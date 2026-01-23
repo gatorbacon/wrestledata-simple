@@ -21,24 +21,24 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:37.991639Z",
+  "generated_at_utc": "2026-01-22T20:06:58.926231Z",
   "starters": {
     "100": {
       "weight": 100,
       "wrestler_id": "35333322132",
       "name": "Lily Autry",
       "current_rank": 6,
-      "xtp": 11.11,
+      "xtp": 11.15,
       "xtp_p": 4.26,
       "xtp_a": 2.33,
-      "xtp_b": 4.52,
+      "xtp_b": 4.56,
       "top10_record": {
-        "wins": 1,
-        "losses": 5
+        "wins": 3,
+        "losses": 7
       },
       "top33_record": {
-        "wins": 9,
-        "losses": 5
+        "wins": 11,
+        "losses": 7
       }
     },
     "114": {
@@ -46,35 +46,35 @@
       "wrestler_id": "35333361132",
       "name": "Belle Hatfield",
       "current_rank": 6,
-      "xtp": 11.06,
+      "xtp": 11.11,
       "xtp_p": 4.26,
       "xtp_a": 2.33,
-      "xtp_b": 4.47,
+      "xtp_b": 4.52,
       "top10_record": {
-        "wins": 4,
-        "losses": 7
+        "wins": 5,
+        "losses": 8
       },
       "top33_record": {
-        "wins": 10,
-        "losses": 8
+        "wins": 12,
+        "losses": 9
       }
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35333323132",
       "name": "Emerson Jackson",
-      "current_rank": 24,
-      "xtp": 2.74,
-      "xtp_p": 0.37,
-      "xtp_a": 0.81,
-      "xtp_b": 1.56,
+      "current_rank": 27,
+      "xtp": 2.4,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.46,
       "top10_record": {
         "wins": 0,
         "losses": 8
       },
       "top33_record": {
         "wins": 4,
-        "losses": 10
+        "losses": 12
       }
     },
     "126": {
@@ -82,16 +82,16 @@
       "wrestler_id": "35333321132",
       "name": "Talynn Clark",
       "current_rank": 1,
-      "xtp": 21.97,
+      "xtp": 22.18,
       "xtp_p": 12.83,
       "xtp_a": 3.73,
-      "xtp_b": 5.41,
+      "xtp_b": 5.62,
       "top10_record": {
         "wins": 7,
         "losses": 2
       },
       "top33_record": {
-        "wins": 12,
+        "wins": 15,
         "losses": 3
       }
     },
@@ -100,17 +100,35 @@
       "wrestler_id": "35333362132",
       "name": "Amelia Marcum",
       "current_rank": 5,
-      "xtp": 11.95,
+      "xtp": 12.21,
       "xtp_p": 5.13,
       "xtp_a": 2.53,
-      "xtp_b": 4.29,
+      "xtp_b": 4.55,
       "top10_record": {
-        "wins": 5,
-        "losses": 4
+        "wins": 7,
+        "losses": 5
       },
       "top33_record": {
-        "wins": 11,
-        "losses": 4
+        "wins": 15,
+        "losses": 5
+      }
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35333363132",
+      "name": "Tahirah Massie",
+      "current_rank": 29,
+      "xtp": 1.92,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 1.18,
+      "top10_record": {
+        "wins": 0,
+        "losses": 7
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 12
       }
     }
   },
@@ -119,19 +137,10 @@
       "weight": 120,
       "wrestler_id": "35333365132",
       "name": "Taylor Evans",
-      "wins": 8,
-      "losses": 7,
+      "wins": 11,
+      "losses": 9,
       "top25_wins": 1,
-      "bonus_rate": 0.5
-    },
-    {
-      "weight": 132,
-      "wrestler_id": "35333363132",
-      "name": "Tahirah Massie",
-      "wins": 13,
-      "losses": 13,
-      "top25_wins": 0,
-      "bonus_rate": 0.538
+      "bonus_rate": 0.455
     }
   ],
   "team_metrics": {
@@ -145,30 +154,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 111,
-      "losses": 37
+      "wins": 151,
+      "losses": 59
     },
     "top33": {
-      "wins": 46,
-      "losses": 30
+      "wins": 60,
+      "losses": 48
     },
     "top10": {
-      "wins": 17,
-      "losses": 26
+      "wins": 22,
+      "losses": 37
     },
     "bonus_rate": {
-      "value": 0.847,
-      "rank": 70,
+      "value": 0.801,
+      "rank": 71,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.811,
-      "rank": 54,
+      "value": 0.768,
+      "rank": 64,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.018,
-      "rank": 41,
+      "value": 0.013,
+      "rank": 47,
       "rank_scope": "league"
     }
   }

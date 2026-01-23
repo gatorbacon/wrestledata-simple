@@ -6,7 +6,7 @@
   "team_rank": null,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 64,
+  "current_rank": 63,
   "record": {
     "overall": "2-2",
     "vs_ranked": "2-2",
@@ -17,9 +17,9 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 103.6,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,7 +33,7 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35495585132",
-      "opponent_rank": 65,
+      "opponent_rank": 64,
       "opponent_name": "Lily Calhoun",
       "method": "Fall 0:24"
     },
@@ -45,22 +45,6 @@
     }
   },
   "match_list": [
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35334942132",
-      "opponent_name": "Kenlei Hatfield",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": 14,
-      "opponent_weight": 126,
-      "opponent_rank": 81,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:28",
-      "event": "Lady Bruin Invitational 2026",
-      "mv_impact": 4.18
-    },
     {
       "date": "2026-01-10",
       "opponent_id": "35343525132",
@@ -75,16 +59,16 @@
       "score": null,
       "duration": "1:23",
       "event": "Lady Bruin Invitational 2026",
-      "mv_impact": -2.57
+      "mv_impact": -2.55
     },
     {
       "date": "2026-01-10",
       "opponent_id": "35495585132",
       "opponent_name": "Lily Calhoun",
       "opponent_team": "Southwestern",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 55,
       "opponent_weight": 132,
-      "opponent_rank": 65,
+      "opponent_rank": 64,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -92,6 +76,22 @@
       "duration": "0:24",
       "event": "Lady Bruin Invitational 2026",
       "mv_impact": 4.44
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35334942132",
+      "opponent_name": "Kenlei Hatfield",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 14,
+      "opponent_weight": 132,
+      "opponent_rank": 79,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:28",
+      "event": "Lady Bruin Invitational 2026",
+      "mv_impact": 4.18
     },
     {
       "date": "2026-01-10",
@@ -109,10 +109,5 @@
       "event": "Lady Bruin Invitational 2026",
       "mv_impact": -6.35
     }
-  ],
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.7734375
-  }
+  ]
 }

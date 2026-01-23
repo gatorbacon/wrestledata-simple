@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:37.954918Z",
+  "generated_at_utc": "2026-01-22T20:06:58.891240Z",
   "starters": {
-    "107": {
-      "weight": 107,
+    "100": {
+      "weight": 100,
       "wrestler_id": "35739869132",
       "name": "Paige Collins",
-      "current_rank": 45,
+      "current_rank": 54,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -41,11 +41,29 @@
         "losses": 3
       }
     },
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35739914132",
+      "name": "Autumn Toller",
+      "current_rank": 65,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      }
+    },
     "114": {
       "weight": 114,
       "wrestler_id": "35739876132",
       "name": "Kyla Overby",
-      "current_rank": 67,
+      "current_rank": 64,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -63,17 +81,17 @@
       "weight": 120,
       "wrestler_id": "35739865132",
       "name": "Jacey Muntz",
-      "current_rank": 36,
-      "xtp": 1.35,
-      "xtp_p": 0.15,
-      "xtp_a": 0.44,
-      "xtp_b": 0.76,
+      "current_rank": 35,
+      "xtp": 1.83,
+      "xtp_p": 0.11,
+      "xtp_a": 0.51,
+      "xtp_b": 1.21,
       "top10_record": {
         "wins": 0,
         "losses": 2
       },
       "top33_record": {
-        "wins": 1,
+        "wins": 2,
         "losses": 4
       }
     },
@@ -81,17 +99,17 @@
       "weight": 126,
       "wrestler_id": "35739866132",
       "name": "Haven Marshall",
-      "current_rank": 15,
-      "xtp": 5.22,
-      "xtp_p": 0.93,
-      "xtp_a": 1.27,
-      "xtp_b": 3.02,
+      "current_rank": 14,
+      "xtp": 5.62,
+      "xtp_p": 1.16,
+      "xtp_a": 1.37,
+      "xtp_b": 3.09,
       "top10_record": {
         "wins": 0,
         "losses": 1
       },
       "top33_record": {
-        "wins": 5,
+        "wins": 7,
         "losses": 3
       }
     },
@@ -99,7 +117,7 @@
       "weight": 138,
       "wrestler_id": "36292374132",
       "name": "Taylon Stewart",
-      "current_rank": 63,
+      "current_rank": 57,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -117,11 +135,11 @@
       "weight": 145,
       "wrestler_id": "35739867132",
       "name": "Brianna Rosenberg",
-      "current_rank": 7,
-      "xtp": 9.87,
+      "current_rank": 8,
+      "xtp": 9.91,
       "xtp_p": 3.31,
       "xtp_a": 2.12,
-      "xtp_b": 4.44,
+      "xtp_b": 4.48,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -136,10 +154,10 @@
       "wrestler_id": "35778037132",
       "name": "Madison Hobbs",
       "current_rank": 23,
-      "xtp": 3.45,
+      "xtp": 3.44,
       "xtp_p": 0.47,
       "xtp_a": 0.96,
-      "xtp_b": 2.02,
+      "xtp_b": 2.01,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -152,11 +170,11 @@
   },
   "remaining": [
     {
-      "weight": 107,
-      "wrestler_id": "35739914132",
-      "name": "Autumn Toller",
+      "weight": 126,
+      "wrestler_id": "35739875132",
+      "name": "Aireal Morton",
       "wins": 0,
-      "losses": 5,
+      "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -164,10 +182,10 @@
       "weight": 126,
       "wrestler_id": "35739916132",
       "name": "Danielle Concepcion",
-      "wins": 2,
+      "wins": 5,
       "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.8
     },
     {
       "weight": 235,
@@ -190,30 +208,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 28,
-      "losses": 25
+      "wins": 34,
+      "losses": 35
     },
     "top33": {
-      "wins": 12,
-      "losses": 19
+      "wins": 15,
+      "losses": 20
     },
     "top10": {
       "wins": 0,
       "losses": 6
     },
     "bonus_rate": {
-      "value": 0.929,
-      "rank": 33,
-      "rank_scope": "league"
-    },
-    "pin_rate": {
-      "value": 0.857,
+      "value": 0.912,
       "rank": 34,
       "rank_scope": "league"
     },
+    "pin_rate": {
+      "value": 0.853,
+      "rank": 32,
+      "rank_scope": "league"
+    },
     "tech_rate": {
-      "value": 0.036,
-      "rank": 30,
+      "value": 0.029,
+      "rank": 36,
       "rank_scope": "league"
     }
   }

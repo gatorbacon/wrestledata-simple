@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35225271132",
-      "opponent_rank": 101,
+      "opponent_rank": 64,
       "opponent_name": "Brayden Ennis",
       "method": "Fall 3:16"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34988551132",
+      "opponent_rank": 4,
+      "opponent_name": "Bryce Sizemore",
+      "method": "Dec 7-4"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "34988551132",
+      "opponent_name": "Bryce Sizemore",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 11,
+      "opponent_weight": 285,
+      "opponent_rank": 4,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "Hammer and Anvil"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35225271132",
       "opponent_name": "Brayden Ennis",
       "opponent_team": "Scott",
-      "opponent_team_rank": 124,
+      "opponent_team_rank": 126,
       "opponent_weight": 285,
-      "opponent_rank": 101,
+      "opponent_rank": 64,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",

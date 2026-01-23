@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:37.078287Z",
+  "generated_at_utc": "2026-01-22T20:06:58.060469Z",
   "starters": {
     "113": {
       "weight": 113,
       "wrestler_id": "35454534132",
       "name": "Dylan Hinkle",
-      "current_rank": 40,
+      "current_rank": 48,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -38,14 +38,14 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 2
       }
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35454690132",
       "name": "Rodney Reeves",
-      "current_rank": 64,
+      "current_rank": 74,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -63,7 +63,7 @@
       "weight": 126,
       "wrestler_id": "35454856132",
       "name": "Dawsyn Taylor",
-      "current_rank": 98,
+      "current_rank": 108,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -81,7 +81,7 @@
       "weight": 132,
       "wrestler_id": "35454409132",
       "name": "Logan Gibson",
-      "current_rank": 155,
+      "current_rank": 167,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -92,25 +92,25 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 3
       }
     },
     "138": {
       "weight": 138,
-      "wrestler_id": "35617984132",
-      "name": "Amber Honeycutt",
-      "current_rank": 201,
+      "wrestler_id": "35903910132",
+      "name": "Jonathan Gray",
+      "current_rank": 66,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 2
       }
     },
     "144": {
@@ -133,31 +133,49 @@
     },
     "150": {
       "weight": 150,
-      "wrestler_id": "35903910132",
-      "name": "Jonathan Gray",
-      "current_rank": 122,
+      "wrestler_id": "35454642132",
+      "name": "Gabriel McVey",
+      "current_rank": 188,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 0
       }
     },
     "157": {
       "weight": 157,
       "wrestler_id": "35496761132",
       "name": "Jonathan Troxell",
-      "current_rank": 28,
-      "xtp": 1.57,
+      "current_rank": 32,
+      "xtp": 1.68,
       "xtp_p": 0.18,
       "xtp_a": 0.49,
-      "xtp_b": 0.9,
+      "xtp_b": 1.01,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35454683132",
+      "name": "Gavin Jordan",
+      "current_rank": 229,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -171,7 +189,7 @@
       "weight": 175,
       "wrestler_id": "35454730132",
       "name": "Baylor Johnston-Jones",
-      "current_rank": 92,
+      "current_rank": 97,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -189,7 +207,7 @@
       "weight": 190,
       "wrestler_id": "35454634132",
       "name": "Colton Jones",
-      "current_rank": 116,
+      "current_rank": 120,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -207,7 +225,7 @@
       "weight": 215,
       "wrestler_id": "35454347132",
       "name": "Nathan Patterson",
-      "current_rank": 251,
+      "current_rank": 252,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -225,7 +243,7 @@
       "weight": 285,
       "wrestler_id": "35903996132",
       "name": "Tucker Sharp",
-      "current_rank": 86,
+      "current_rank": 94,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -236,7 +254,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       }
     }
   },
@@ -270,6 +288,15 @@
     },
     {
       "weight": 138,
+      "wrestler_id": "35617984132",
+      "name": "Amber Honeycutt",
+      "wins": 1,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 138,
       "wrestler_id": "35903671132",
       "name": "Cole Roark",
       "wins": 0,
@@ -287,10 +314,10 @@
       "bonus_rate": 0.0
     },
     {
-      "weight": 150,
-      "wrestler_id": "35454642132",
-      "name": "Gabriel McVey",
-      "wins": 1,
+      "weight": 144,
+      "wrestler_id": "38285079132",
+      "name": "Tristen Price",
+      "wins": 0,
       "losses": 1,
       "top25_wins": 0,
       "bonus_rate": 0.0
@@ -299,15 +326,6 @@
       "weight": 150,
       "wrestler_id": "35454655132",
       "name": "Landen Messer",
-      "wins": 0,
-      "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    {
-      "weight": 157,
-      "wrestler_id": "35454683132",
-      "name": "Gavin Jordan",
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -361,30 +379,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 47,
+      "wins": 50,
       "losses": 34
     },
     "top33": {
       "wins": 0,
-      "losses": 12
+      "losses": 11
     },
     "top10": {
       "wins": 0,
       "losses": 3
     },
     "bonus_rate": {
-      "value": 0.574,
-      "rank": 139,
+      "value": 0.54,
+      "rank": 140,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.511,
-      "rank": 137,
+      "value": 0.48,
+      "rank": 133,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.043,
-      "rank": 97,
+      "value": 0.04,
+      "rank": 98,
       "rank_scope": "league"
     }
   }

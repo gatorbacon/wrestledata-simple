@@ -407,6 +407,119 @@ def get_team_name_by_id(wrestler_id: str, processed_dir: str) -> Optional[str]:
     return None
 
 
+def validate_processed_data_integrity(new_data: Dict, output_path: str, season: str) -> None:
+    """
+    Validate that processed data does not regress compared to existing processed file.
+    
+    This function enforces strict data integrity rules:
+    1. All wrestlers from previous processed file must exist in new data
+    2. Match counts must not decrease for any wrestler
+    
+    Raises:
+        ValueError: If validation fails (with detailed error message)
+    """
+    output_file = Path(output_path)
+    
+    # If no previous file exists, skip validation
+    if not output_file.exists():
+        return
+    
+    # Load previous processed data
+    try:
+        with open(output_file, "r") as f:
+            old_data = json.load(f)
+    except Exception as e:
+        # If we can't read the old file, skip validation (might be corrupted)
+        print(f"⚠️ Warning: Could not read existing processed file for validation: {e}")
+        return
+    
+    team_name = new_data.get("team_name", "Unknown")
+    old_roster = old_data.get("roster", [])
+    new_roster = new_data.get("roster", [])
+    
+    # Build wrestler lookup maps
+    old_wrestlers_by_id: Dict[str, Dict] = {}
+    for wrestler in old_roster:
+        wrestler_id = wrestler.get("season_wrestler_id")
+        if wrestler_id:
+            old_wrestlers_by_id[wrestler_id] = wrestler
+    
+    new_wrestlers_by_id: Dict[str, Dict] = {}
+    for wrestler in new_roster:
+        wrestler_id = wrestler.get("season_wrestler_id")
+        if wrestler_id:
+            new_wrestlers_by_id[wrestler_id] = wrestler
+    
+    # VALIDATION RULE 1: Roster Integrity Check
+    # Every wrestler in old roster must exist in new roster
+    missing_wrestlers = []
+    for wrestler_id, old_wrestler in old_wrestlers_by_id.items():
+        if wrestler_id not in new_wrestlers_by_id:
+            missing_wrestlers.append({
+                "id": wrestler_id,
+                "name": old_wrestler.get("name", "Unknown")
+            })
+    
+    if missing_wrestlers:
+        error_msg = f"\n{'='*80}\n"
+        error_msg += f"❌ DATA INTEGRITY VALIDATION FAILED: ROSTER REGRESSION\n"
+        error_msg += f"{'='*80}\n"
+        error_msg += f"Team: {team_name}\n"
+        error_msg += f"Season: {season}\n"
+        error_msg += f"Output file: {output_path}\n\n"
+        error_msg += f"ERROR: {len(missing_wrestlers)} wrestler(s) from previous processed data are MISSING:\n\n"
+        for missing in missing_wrestlers:
+            error_msg += f"  - {missing['name']} (ID: {missing['id']})\n"
+        error_msg += f"\nThis indicates a partial or failed scrape.\n"
+        error_msg += f"Processing ABORTED to prevent data loss.\n"
+        error_msg += f"{'='*80}\n"
+        print(error_msg)
+        raise ValueError(error_msg)
+    
+    # VALIDATION RULE 2: Match Count Monotonicity Check
+    # Match counts must not decrease for any wrestler
+    match_count_regressions = []
+    for wrestler_id, old_wrestler in old_wrestlers_by_id.items():
+        if wrestler_id not in new_wrestlers_by_id:
+            continue  # Already caught in roster integrity check
+        
+        new_wrestler = new_wrestlers_by_id[wrestler_id]
+        old_match_count = len(old_wrestler.get("matches", []))
+        new_match_count = len(new_wrestler.get("matches", []))
+        
+        # Allow zero matches in both old and new (wrestler may genuinely have no matches)
+        if old_match_count == 0 and new_match_count == 0:
+            continue
+        
+        # Fail if match count decreased
+        if new_match_count < old_match_count:
+            match_count_regressions.append({
+                "id": wrestler_id,
+                "name": old_wrestler.get("name", "Unknown"),
+                "old_count": old_match_count,
+                "new_count": new_match_count
+            })
+    
+    if match_count_regressions:
+        error_msg = f"\n{'='*80}\n"
+        error_msg += f"❌ DATA INTEGRITY VALIDATION FAILED: MATCH COUNT REGRESSION\n"
+        error_msg += f"{'='*80}\n"
+        error_msg += f"Team: {team_name}\n"
+        error_msg += f"Season: {season}\n"
+        error_msg += f"Output file: {output_path}\n\n"
+        error_msg += f"ERROR: {len(match_count_regressions)} wrestler(s) have FEWER matches than before:\n\n"
+        for regression in match_count_regressions:
+            error_msg += f"  - {regression['name']} (ID: {regression['id']})\n"
+            error_msg += f"    Previous: {regression['old_count']} matches\n"
+            error_msg += f"    New:      {regression['new_count']} matches\n"
+            error_msg += f"    Lost:     {regression['old_count'] - regression['new_count']} matches\n\n"
+        error_msg += f"This indicates a partial or failed scrape.\n"
+        error_msg += f"Processing ABORTED to prevent data loss.\n"
+        error_msg += f"{'='*80}\n"
+        print(error_msg)
+        raise ValueError(error_msg)
+
+
 def process_file(input_path, output_path, season, wrestlestat_matches_by_wrestler: Dict[str, List[Tuple[Dict, str]]], existing_match_keys: Set[Tuple[str, str, str, str]], added_wrestlestat_keys: Set[Tuple[str, str, str, str]]):
     """
     Process a team file and merge WrestleStat matches.
@@ -596,8 +709,52 @@ def process_file(input_path, output_path, season, wrestlestat_matches_by_wrestle
     if wrestlestat_duplicates > 0:
         print(f"   🔄 Skipped {wrestlestat_duplicates} WrestleStat duplicates")
 
+    # DATA INTEGRITY VALIDATION: Check for regressions before writing
+    # This prevents silent data loss from partial or failed scrapes
+    keep_new_data = False
+    try:
+        validate_processed_data_integrity(data, output_path, season)
+    except ValueError as e:
+        # Validation failed - prompt user for action
+        print(f"\n⚠️ DATA INTEGRITY VALIDATION FAILED for {file_name}")
+        print(f"   The file was NOT updated to prevent data loss.")
+        print(f"\n   Options:")
+        print(f"   1. Continue processing other files (skip this one)")
+        print(f"   2. Abort processing (fix the issue and re-run)")
+        print(f"   3. Keep new data (overwrite file with new scraped data)")
+        print()
+        
+        while True:
+            try:
+                choice = input("   Choose an option (1=skip, 2=abort, 3=keep new): ").strip()
+                if choice == "1":
+                    print(f"   ✅ Continuing with other files. {file_name} will be skipped.\n")
+                    # Return a special marker: -1 matches indicates validation failure
+                    return -1, scraper_errors, parse_errors, wrestlestat_added, wrestlestat_duplicates
+                elif choice == "2":
+                    print(f"\n   ❌ Processing ABORTED by user.")
+                    print(f"   Please fix the scrape issue for {file_name} and re-run processing.\n")
+                    import sys
+                    sys.exit(1)
+                elif choice == "3":
+                    print(f"   ⚠️  Keeping new data. {file_name} will be overwritten with new scraped data.")
+                    print(f"   This will replace the old file even though it has fewer wrestlers/matches.\n")
+                    # Mark that we're proceeding despite validation failure
+                    keep_new_data = True
+                    break
+                else:
+                    print("   Please enter '1' to skip, '2' to abort, or '3' to keep new data.")
+            except KeyboardInterrupt:
+                print(f"\n\n   ❌ Processing ABORTED by user (Ctrl+C).")
+                import sys
+                sys.exit(1)
+
+    # Write the file (either validation passed, or user chose to keep new data)
     with open(output_path, "w") as f:
         json.dump(data, f, indent=2)
+    
+    if keep_new_data:
+        print(f"   ⚠️  File written despite validation failure (user chose to keep new data).")
         
     # Return error counts and WrestleStat stats for overall summary
     return total_matches, scraper_errors, parse_errors, wrestlestat_added, wrestlestat_duplicates
@@ -682,30 +839,36 @@ def main(season, league='ncaa', state=None, gender=None):
     existing_match_keys = build_existing_match_keys(in_dir, season)
     print(f"Found {len(existing_match_keys)} existing match keys")
 
-    # Step 2: Load WrestleStat matches
-    print("\n========== LOADING WRESTLESTAT DATA ==========")
-    wrestlestat_matches = load_wrestlestat_matches(season, out_dir)
-    print(f"Loaded {len(wrestlestat_matches)} WrestleStat matches")
-    
-    # Organize WrestleStat matches by wrestler ID (for both winner and loser)
-    wrestlestat_matches_by_wrestler: Dict[str, List[Tuple[Dict, str]]] = {}
-    for ws_match, dual_id in wrestlestat_matches:
-        winner_id = ws_match.get("winner_matsavant_id", "")
-        loser_id = ws_match.get("loser_matsavant_id", "")
+    # Step 2: Load WrestleStat matches (NCAA only - skip for HS)
+    if league == 'hs':
+        print("\n========== SKIPPING WRESTLESTAT DATA (HS mode) ==========")
+        wrestlestat_matches = []
+        wrestlestat_matches_by_wrestler: Dict[str, List[Tuple[Dict, str]]] = {}
+        print("WrestleStat is only used for NCAA, skipping for HS")
+    else:
+        print("\n========== LOADING WRESTLESTAT DATA ==========")
+        wrestlestat_matches = load_wrestlestat_matches(season, out_dir)
+        print(f"Loaded {len(wrestlestat_matches)} WrestleStat matches")
         
-        # Add to winner's list
-        if winner_id:
-            if winner_id not in wrestlestat_matches_by_wrestler:
-                wrestlestat_matches_by_wrestler[winner_id] = []
-            wrestlestat_matches_by_wrestler[winner_id].append((ws_match, dual_id))
+        # Organize WrestleStat matches by wrestler ID (for both winner and loser)
+        wrestlestat_matches_by_wrestler: Dict[str, List[Tuple[Dict, str]]] = {}
+        for ws_match, dual_id in wrestlestat_matches:
+            winner_id = ws_match.get("winner_matsavant_id", "")
+            loser_id = ws_match.get("loser_matsavant_id", "")
+            
+            # Add to winner's list
+            if winner_id:
+                if winner_id not in wrestlestat_matches_by_wrestler:
+                    wrestlestat_matches_by_wrestler[winner_id] = []
+                wrestlestat_matches_by_wrestler[winner_id].append((ws_match, dual_id))
+            
+            # Add to loser's list
+            if loser_id:
+                if loser_id not in wrestlestat_matches_by_wrestler:
+                    wrestlestat_matches_by_wrestler[loser_id] = []
+                wrestlestat_matches_by_wrestler[loser_id].append((ws_match, dual_id))
         
-        # Add to loser's list
-        if loser_id:
-            if loser_id not in wrestlestat_matches_by_wrestler:
-                wrestlestat_matches_by_wrestler[loser_id] = []
-            wrestlestat_matches_by_wrestler[loser_id].append((ws_match, dual_id))
-    
-    print(f"WrestleStat matches organized for {len(wrestlestat_matches_by_wrestler)} wrestlers")
+        print(f"WrestleStat matches organized for {len(wrestlestat_matches_by_wrestler)} wrestlers")
 
     total_files = 0
     total_matches = 0
@@ -713,6 +876,8 @@ def main(season, league='ncaa', state=None, gender=None):
     total_parse_errors = 0
     total_wrestlestat_added = 0
     total_wrestlestat_duplicates = 0
+    total_validation_failures = 0
+    validation_failed_files = []
 
     # Set to track WrestleStat matches already added (per wrestler)
     # Format: (date, weight, opponent_id, wrestler_id) - allows same match for winner and loser
@@ -725,24 +890,40 @@ def main(season, league='ncaa', state=None, gender=None):
             input_path = os.path.join(in_dir, filename)
             output_path = os.path.join(out_dir, filename)
             public_output_path = os.path.join(public_out_dir, filename)
-            matches, scraper_errors, parse_errors, ws_added, ws_duplicates = process_file(
-                input_path, output_path, season, wrestlestat_matches_by_wrestler, existing_match_keys, added_wrestlestat_keys
-            )
             
-            # Also copy to public location for frontend access
             try:
-                with open(output_path, "r") as f:
-                    data = json.load(f)
-                with open(public_output_path, "w") as f:
-                    json.dump(data, f, indent=2)
+                matches, scraper_errors, parse_errors, ws_added, ws_duplicates = process_file(
+                    input_path, output_path, season, wrestlestat_matches_by_wrestler, existing_match_keys, added_wrestlestat_keys
+                )
+                
+                # Check if file was skipped due to validation failure (matches will be -1)
+                if matches == -1:
+                    total_validation_failures += 1
+                    validation_failed_files.append(filename)
+                    continue  # Skip copying to public location and don't count matches
+                
+                # Also copy to public location for frontend access (only if file was written)
+                if Path(output_path).exists():
+                    try:
+                        with open(output_path, "r") as f:
+                            data = json.load(f)
+                        with open(public_output_path, "w") as f:
+                            json.dump(data, f, indent=2)
+                    except Exception as e:
+                        print(f"⚠️ Warning: Could not copy to public location {public_output_path}: {e}")
+                
+                total_matches += matches
+                total_scraper_errors += scraper_errors
+                total_parse_errors += parse_errors
+                total_wrestlestat_added += ws_added
+                total_wrestlestat_duplicates += ws_duplicates
             except Exception as e:
-                print(f"⚠️ Warning: Could not copy to public location {public_output_path}: {e}")
-            
-            total_matches += matches
-            total_scraper_errors += scraper_errors
-            total_parse_errors += parse_errors
-            total_wrestlestat_added += ws_added
-            total_wrestlestat_duplicates += ws_duplicates
+                # Catch any unexpected errors during file processing
+                print(f"\n❌ ERROR processing {filename}: {e}")
+                print(f"   Skipping this file and continuing with others...\n")
+                total_validation_failures += 1
+                validation_failed_files.append(filename)
+                continue
     
     # Print overall summary
     print("\n========== SEASON SUMMARY ==========")
@@ -751,14 +932,25 @@ def main(season, league='ncaa', state=None, gender=None):
         print(f"❌ Total SCRAPER_ERRORS: {total_scraper_errors}")
     if total_parse_errors > 0:
         print(f"⚠️ Total PARSE_ERRORS: {total_parse_errors}")
+    if total_validation_failures > 0:
+        print(f"❌ Total VALIDATION FAILURES: {total_validation_failures}")
+        print(f"   Files skipped due to data integrity issues:")
+        for failed_file in validation_failed_files:
+            print(f"     - {failed_file}")
+        print(f"\n   These files were NOT updated to prevent data loss.")
+        print(f"   Please investigate and fix the scrape issues, then re-run processing.")
     
-    print(f"\n========== WRESTLESTAT MERGE SUMMARY ==========")
-    print(f"WrestleStat matches processed: {len(wrestlestat_matches)}")
-    print(f"Duplicates skipped: {total_wrestlestat_duplicates}")
-    print(f"New matches added: {total_wrestlestat_added}")
+    if league != 'hs':
+        print(f"\n========== WRESTLESTAT MERGE SUMMARY ==========")
+        print(f"WrestleStat matches processed: {len(wrestlestat_matches)}")
+        print(f"Duplicates skipped: {total_wrestlestat_duplicates}")
+        print(f"New matches added: {total_wrestlestat_added}")
     
-    if total_scraper_errors == 0 and total_parse_errors == 0:
+    if total_scraper_errors == 0 and total_parse_errors == 0 and total_validation_failures == 0:
         print("✅ No errors found in any files!")
+    elif total_validation_failures > 0:
+        print(f"\n⚠️ Processing completed with {total_validation_failures} validation failure(s).")
+        print(f"   Review the errors above and fix the scrape issues before re-running.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

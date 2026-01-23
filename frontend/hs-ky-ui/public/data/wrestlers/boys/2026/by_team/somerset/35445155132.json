@@ -3,13 +3,13 @@
   "name": "Trevin Durham",
   "team": "Somerset",
   "team_slug": "somerset",
-  "team_rank": 31,
+  "team_rank": 28,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 261,
+  "current_rank": 195,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,32 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35476520132",
+      "opponent_rank": 61,
+      "opponent_name": "kaison phillips",
+      "method": "Fall 1:58"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-13",
+      "opponent_id": "35476520132",
+      "opponent_name": "kaison phillips",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 122,
+      "opponent_weight": 144,
+      "opponent_rank": 61,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:58",
+      "event": "vs. Somerset"
+    }
+  ]
 }

@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "2-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,62 +17,77 @@
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.0,
-    "apr_plus": 91.8,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35223083132",
-      "opponent_rank": 200,
+      "opponent_rank": 39,
       "opponent_name": "Chase Lopez",
       "method": "Dec 7-5"
     },
     "worst_loss": {
       "opponent_id": "35205987132",
-      "opponent_rank": 31,
+      "opponent_rank": 34,
       "opponent_name": "Samuel Horn",
       "method": "Fall 2:44"
     }
   },
   "match_list": [
     {
-      "date": "2026-01-03",
-      "opponent_id": "35205987132",
-      "opponent_name": "Samuel Horn",
-      "opponent_team": "Mercer County",
-      "opponent_team_rank": 109,
-      "opponent_weight": 285,
-      "opponent_rank": 31,
+      "date": "2026-01-17",
+      "opponent_id": "35035547132",
+      "opponent_name": "Marcus McCormick",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 7,
+      "opponent_weight": 215,
+      "opponent_rank": 71,
       "weight_class": "285",
-      "result": "L",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "2:44",
-      "event": "Adam Cox Memorial 2026"
+      "duration": "3:18",
+      "event": "Sycamore Invitational"
     },
     {
       "date": "2026-01-03",
       "opponent_id": "35223083132",
       "opponent_name": "Chase Lopez",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 109,
-      "opponent_weight": 285,
-      "opponent_rank": 200,
+      "opponent_team_rank": 111,
+      "opponent_weight": 215,
+      "opponent_rank": 39,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "7-5",
       "duration": "7:00",
+      "event": "Adam Cox Memorial 2026"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35205987132",
+      "opponent_name": "Samuel Horn",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 111,
+      "opponent_weight": 285,
+      "opponent_rank": 34,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:44",
       "event": "Adam Cox Memorial 2026"
     }
   ]

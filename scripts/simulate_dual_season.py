@@ -6,10 +6,20 @@ Uses the same logic as the dual predictor to determine winners and scores.
 
 import argparse
 import json
+import re
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from collections import defaultdict
 import sys
+from io import BytesIO
+
+# Optional imports for JPG conversion (same as top 40 graphics)
+try:
+    import cairosvg
+    from PIL import Image
+    CAIROSVG_AVAILABLE = True
+except ImportError:
+    CAIROSVG_AVAILABLE = False
 
 # HS weight classes
 HS_WEIGHTS = {
@@ -656,6 +666,88 @@ def main():
                 print(f"  {opponent:<30} {score_for}-{score_against}")
         
         print(f"{'='*80}\n")
+    
+    # Generate top 25 teams graphic
+    generate_top_teams_graphic(sorted_teams, args.season, args.gender)
+
+
+def format_team_name(team_name: str, rank: int) -> str:
+    """Format team name: top 5 in ALL CAPS, rest in Title Case."""
+    if rank <= 5:
+        return team_name.upper()
+    else:
+        # Title case: capitalize first letter of each word
+        return team_name.title()
+
+
+def generate_top_teams_graphic(sorted_teams: List[str], season: int, gender: str):
+    """Generate top 25 teams graphic from SVG template."""
+    template_path = Path("mt/graphics/templates/TOP-dual-teams-template.svg")
+    output_dir = Path(f"mt/graphics/{season}")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_svg = output_dir / f"top_dual_teams_{gender}_{season}.svg"
+    output_jpg = output_dir / f"top_dual_teams_{gender}_{season}.jpg"
+    
+    if not template_path.exists():
+        print(f"Warning: Template not found at {template_path}, skipping graphic generation")
+        return
+    
+    # Read template
+    with open(template_path, 'r', encoding='utf-8') as f:
+        svg_content = f.read()
+    
+    # Get top 25 teams
+    top_25_teams = sorted_teams[:25]
+    
+    # Replace team names in SVG
+    for rank, team_name in enumerate(top_25_teams, 1):
+        formatted_name = format_team_name(team_name, rank)
+        
+        # Find the team element by inkscape:label and replace text content
+        # Pattern matches: inkscape:label="teamX">...<tspan...>OLD_TEXT</tspan>
+        # We need to capture everything up to the tspan content, replace the content, then keep the closing tag
+        pattern = rf'(inkscape:label="team{rank}"[^>]*>[\s\S]*?<tspan[^>]*>)[^<]*(</tspan>)'
+        
+        def replace_team_text(match):
+            return match.group(1) + formatted_name + match.group(2)
+        
+        svg_content = re.sub(pattern, replace_team_text, svg_content)
+    
+    # Write updated SVG
+    with open(output_svg, 'w', encoding='utf-8') as f:
+        f.write(svg_content)
+    
+    print(f"\nGenerated SVG: {output_svg}")
+    
+    # Convert SVG to JPG using the same method as top 40 graphics
+    render_svg_to_jpg(output_svg, output_jpg)
+
+
+def render_svg_to_jpg(svg_path: Path, jpg_path: Path, width: int = 1500, height: int = 1500) -> None:
+    """
+    Render SVG to JPG using cairosvg (same method as top 40 graphics).
+    
+    Args:
+        svg_path: Path to SVG file
+        jpg_path: Path to output JPG file
+        width: Output width in pixels
+        height: Output height in pixels
+    """
+    if not CAIROSVG_AVAILABLE:
+        print("Warning: cairosvg/PIL not available. Skipping JPG generation.")
+        print("  Install with: pip install cairosvg pillow")
+        return
+    
+    jpg_path.parent.mkdir(parents=True, exist_ok=True)
+    
+    # Render SVG to PNG in memory, then convert to JPG via Pillow
+    # This is the exact same method used for top 40 graphics
+    png_bytes = cairosvg.svg2png(url=str(svg_path), output_width=width, output_height=height)
+    img = Image.open(BytesIO(png_bytes)).convert("RGB")
+    img.save(jpg_path, format="JPEG", quality=95)
+    
+    print(f"Generated JPG: {jpg_path}")
+
 
 if __name__ == '__main__':
     main()

@@ -6,10 +6,10 @@
   "team_rank": null,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 63,
+  "current_rank": 57,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,32 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35510579132",
+      "opponent_rank": 34,
+      "opponent_name": "Kenyana Johnson",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-10",
+      "opponent_id": "35510579132",
+      "opponent_name": "Kenyana Johnson",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 34,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mason County"
+    }
+  ]
 }

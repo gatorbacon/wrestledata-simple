@@ -8,30 +8,35 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 103.7,
-    "df_plus": 102.8,
-    "apr_plus": 97.6,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "35666995132",
+      "opponent_rank": 31,
+      "opponent_name": "Tristin Caldwell",
+      "method": "Fall 1:40"
+    },
     "worst_loss": {
       "opponent_id": "35465669132",
       "opponent_rank": 3,
@@ -40,6 +45,36 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35465669132",
+      "opponent_name": "Eelynn Hayden",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 3,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "Steve Johnston Memorial Girls Inv 26"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35666995132",
+      "opponent_name": "Tristin Caldwell",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 36,
+      "opponent_weight": 126,
+      "opponent_rank": 31,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:40",
+      "event": "Steve Johnston Memorial Girls Inv 26"
+    },
     {
       "date": "2026-01-02",
       "opponent_id": "35465669132",

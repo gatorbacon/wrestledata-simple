@@ -3,12 +3,12 @@
   "name": "nathanael wright",
   "team": "Wayne County",
   "team_slug": "wayne_county",
-  "team_rank": 20,
-  "weight_class": 165,
+  "team_rank": 29,
+  "weight_class": 157,
   "year": 2026,
-  "current_rank": 275,
+  "current_rank": 181,
   "record": {
-    "overall": "0-0",
+    "overall": "1-5",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +20,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,5 +34,96 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-19",
+      "opponent_id": "34941266132",
+      "opponent_name": "Sam Reynolds",
+      "opponent_team": "Huntsville",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "vs. Huntsville"
+    },
+    {
+      "date": "2026-01-19",
+      "opponent_id": "35086737132",
+      "opponent_name": "Gabe Jared",
+      "opponent_team": "Upperman High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:49",
+      "event": "vs. Upperman High School"
+    },
+    {
+      "date": "2026-01-19",
+      "opponent_id": "35319617132",
+      "opponent_name": "Isaiah Honeycutt",
+      "opponent_team": "Livingston Academy",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Livingston Academy"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35098125132",
+      "opponent_name": "Luke Brown",
+      "opponent_team": "Farragut High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:14",
+      "event": "vs. Farragut High School"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "34975109132",
+      "opponent_name": "Zach Scoles",
+      "opponent_team": "Grace Christian Academy - Knoxville",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Grace Christian Academy - Knoxville"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35915739132",
+      "opponent_name": "Rodjere Coates",
+      "opponent_team": "Morristown-Hamblen High School West",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "16-13",
+      "duration": "7:00",
+      "event": "vs. Morristown-Hamblen High School West"
+    }
+  ]
 }

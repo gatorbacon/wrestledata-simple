@@ -3,23 +3,23 @@
   "name": "Dominic Brock",
   "team": "Southern",
   "team_slug": "southern",
-  "team_rank": 54,
+  "team_rank": 129,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 73,
+  "current_rank": 60,
   "record": {
-    "overall": "3-0",
-    "vs_ranked": "3-0",
+    "overall": "3-1",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
-    "pf7": 14.0,
-    "pa7": 11.0,
-    "pd7": 3.0,
-    "si_plus": 108.1,
-    "df_plus": 100.3,
-    "apr_plus": 108.3,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
     "majors": 0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34988539132",
-      "opponent_rank": 54,
-      "opponent_name": "Jayden Lopez",
-      "method": "Dec 14-11"
+      "opponent_id": "35542525132",
+      "opponent_rank": 19,
+      "opponent_name": "Evan Roe",
+      "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35321122132",
+      "opponent_rank": 59,
+      "opponent_name": "Liam Sharpe",
+      "method": "Fall 4:31"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35321122132",
+      "opponent_name": "Liam Sharpe",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 49,
+      "opponent_weight": 165,
+      "opponent_rank": 59,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:31",
+      "event": "vs. Southern"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35542525132",
       "opponent_name": "Evan Roe",
       "opponent_team": "Central",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 41,
       "opponent_weight": 157,
-      "opponent_rank": 171,
+      "opponent_rank": 19,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -61,32 +81,32 @@
       "opponent_id": "34988539132",
       "opponent_name": "Jayden Lopez",
       "opponent_team": "Doss",
-      "opponent_team_rank": 74,
-      "opponent_weight": 157,
-      "opponent_rank": 54,
+      "opponent_team_rank": 73,
+      "opponent_weight": 165,
+      "opponent_rank": 65,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "14-11",
       "duration": "7:00",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 2.31
+      "mv_impact": 2.32
     },
     {
       "date": "2025-11-29",
       "opponent_id": "34989964132",
       "opponent_name": "Justin Haskins",
       "opponent_team": "Western",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 38,
       "opponent_weight": 165,
-      "opponent_rank": 143,
+      "opponent_rank": 149,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:02",
       "event": "Screamin` Eagles Classic",
-      "mv_impact": 1.67
+      "mv_impact": 1.65
     }
   ],
   "career": {
@@ -102,7 +122,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Southern",
-      "record": "3-0",
+      "record": "3-1",
       "regional_place": null,
       "state_place": null
     },

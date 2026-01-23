@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "1-0",
-    "vs_top25": "1-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "1-1",
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,24 +28,44 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 1,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34988551132",
       "opponent_rank": 4,
       "opponent_name": "Bryce Sizemore",
       "method": "Fall 3:48"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35035634132",
+      "opponent_rank": 1,
+      "opponent_name": "Austin Cummings",
+      "method": "Dec 1-0"
+    }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35035634132",
+      "opponent_name": "Austin Cummings",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 285,
+      "opponent_rank": 1,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Holiday Classic"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "34988551132",
       "opponent_name": "Bryce Sizemore",
       "opponent_team": "Conner",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 11,
       "opponent_weight": 285,
       "opponent_rank": 4,
       "weight_class": "285",

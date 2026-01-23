@@ -21,20 +21,20 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-15T13:34:37.210852Z",
+  "generated_at_utc": "2026-01-22T20:06:58.184763Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35124897132",
       "name": "Preston Jackson",
-      "current_rank": 61,
+      "current_rank": 72,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
@@ -45,43 +45,25 @@
       "weight": 132,
       "wrestler_id": "35124883132",
       "name": "Daxton Baker",
-      "current_rank": 15,
-      "xtp": 3.54,
+      "current_rank": 16,
+      "xtp": 3.76,
       "xtp_p": 0.7,
       "xtp_a": 1.18,
-      "xtp_b": 1.66,
+      "xtp_b": 1.88,
       "top10_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 4
       },
       "top33_record": {
-        "wins": 3,
-        "losses": 6
-      }
-    },
-    "138": {
-      "weight": 138,
-      "wrestler_id": "35124870132",
-      "name": "Hunter Oakley",
-      "current_rank": 59,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 2
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 6
+        "wins": 2,
+        "losses": 7
       }
     },
     "144": {
       "weight": 144,
       "wrestler_id": "35124967132",
       "name": "Gage Williams",
-      "current_rank": 138,
+      "current_rank": 71,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -99,17 +81,17 @@
       "weight": 157,
       "wrestler_id": "35124935132",
       "name": "Noah Weissbach",
-      "current_rank": 29,
-      "xtp": 1.18,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.83,
+      "current_rank": 33,
+      "xtp": 1.56,
+      "xtp_p": 0.15,
+      "xtp_a": 0.44,
+      "xtp_b": 0.97,
       "top10_record": {
         "wins": 0,
         "losses": 3
       },
       "top33_record": {
-        "wins": 1,
+        "wins": 0,
         "losses": 4
       }
     },
@@ -117,7 +99,7 @@
       "weight": 165,
       "wrestler_id": "35124878132",
       "name": "Ethan Brandhorst",
-      "current_rank": 44,
+      "current_rank": 57,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -135,7 +117,7 @@
       "weight": 190,
       "wrestler_id": "36745416132",
       "name": "Alex McCoy",
-      "current_rank": 193,
+      "current_rank": 191,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -146,17 +128,35 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 3
       }
     }
   },
   "remaining": [
     {
+      "weight": 120,
+      "wrestler_id": "35272546132",
+      "name": "Kaitlyn Baker",
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35124870132",
+      "name": "Hunter Oakley",
+      "wins": 11,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.909
+    },
+    {
       "weight": 144,
       "wrestler_id": "35273350132",
       "name": "Wilson Patrick",
       "wins": 1,
-      "losses": 7,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -172,29 +172,29 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 40,
-      "losses": 44
+      "wins": 52,
+      "losses": 53
     },
     "top33": {
-      "wins": 4,
-      "losses": 33
+      "wins": 2,
+      "losses": 29
     },
     "top10": {
       "wins": 0,
-      "losses": 14
+      "losses": 12
     },
     "bonus_rate": {
-      "value": 0.875,
+      "value": 0.865,
       "rank": 12,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.55,
-      "rank": 124,
+      "value": 0.577,
+      "rank": 104,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.3,
+      "value": 0.269,
       "rank": 2,
       "rank_scope": "league"
     }

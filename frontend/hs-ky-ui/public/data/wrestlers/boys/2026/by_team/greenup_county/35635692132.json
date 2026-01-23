@@ -3,13 +3,13 @@
   "name": "Violet Brown",
   "team": "Greenup County",
   "team_slug": "greenup_county",
-  "team_rank": 88,
-  "weight_class": 126,
+  "team_rank": 87,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 245,
+  "current_rank": 186,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,32 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35754166132",
+      "opponent_rank": 106,
+      "opponent_name": "Jace Fletcher",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-20",
+      "opponent_id": "35754166132",
+      "opponent_name": "Jace Fletcher",
+      "opponent_team": "Lawrence County",
+      "opponent_team_rank": 100,
+      "opponent_weight": 120,
+      "opponent_rank": 106,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Lawrence County"
+    }
+  ]
 }

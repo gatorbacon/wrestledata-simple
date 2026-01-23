@@ -11,20 +11,20 @@
     "overall": "3-0",
     "vs_ranked": "3-0",
     "vs_top10": "0-0",
-    "vs_top25": "2-0"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
     "pa7": 0.0,
     "pd7": 0.0,
-    "si_plus": 101.3,
-    "df_plus": 102.0,
-    "apr_plus": 112.2,
-    "pin_rate": 0.667,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 1,
-    "pins": 2
+    "techs": 0,
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -32,22 +32,37 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35458879132",
-      "opponent_rank": 19,
-      "opponent_name": "Kaleb Lewellen",
-      "method": "TF 15-0 2:07"
+      "opponent_id": "34997728132",
+      "opponent_rank": 27,
+      "opponent_name": "Robbie Hopper",
+      "method": "Fall 4:07"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-15",
+      "opponent_id": "35007899132",
+      "opponent_name": "Daniel Carpenter",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 53,
+      "opponent_weight": 132,
+      "opponent_rank": 126,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:54",
+      "event": "vs. White House Heritage High School"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35090023132",
       "opponent_name": "Seth Frank",
       "opponent_team": "Fern Creek",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 78,
       "opponent_weight": 132,
-      "opponent_rank": 56,
+      "opponent_rank": 71,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -60,29 +75,14 @@
       "opponent_id": "34997728132",
       "opponent_name": "Robbie Hopper",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 83,
       "opponent_weight": 132,
-      "opponent_rank": 20,
+      "opponent_rank": 27,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:07",
-      "event": "5th Annual Cardinal Clash"
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35458879132",
-      "opponent_name": "Kaleb Lewellen",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": 28,
-      "opponent_weight": 132,
-      "opponent_rank": 19,
-      "weight_class": "132",
-      "result": "W",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "2:07",
       "event": "5th Annual Cardinal Clash"
     }
   ]

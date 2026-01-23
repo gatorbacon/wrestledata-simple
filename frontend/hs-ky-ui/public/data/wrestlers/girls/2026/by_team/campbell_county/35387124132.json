@@ -3,39 +3,39 @@
   "name": "McAyla Steffen",
   "team": "Campbell County",
   "team_slug": "campbell_county",
-  "team_rank": 31,
+  "team_rank": 17,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 42,
+  "current_rank": 17,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "4-1",
+    "vs_ranked": "4-1",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "2-1"
   },
   "metrics": {
-    "pf7": 1.0,
-    "pa7": 6.0,
-    "pd7": -5.0,
-    "si_plus": 93.6,
-    "df_plus": 107.0,
-    "apr_plus": 108.1,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 4,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35383800132",
-      "opponent_rank": 57,
-      "opponent_name": "Josslyn Heringer",
-      "method": "Fall 1:39"
+      "opponent_id": "35542616132",
+      "opponent_rank": 18,
+      "opponent_name": "Maliyah Oates",
+      "method": "Fall 1:37"
     },
     "worst_loss": {
       "opponent_id": "35369121132",
@@ -46,13 +46,58 @@
   },
   "match_list": [
     {
+      "date": "2026-01-17",
+      "opponent_id": "35333467132",
+      "opponent_name": "SOPHIE BUTTS",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 21,
+      "opponent_weight": 165,
+      "opponent_rank": 19,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:29",
+      "event": "Mestengo"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35333569132",
+      "opponent_name": "Leyla Cruz Sanchez",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 37,
+      "opponent_weight": 165,
+      "opponent_rank": 46,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:33",
+      "event": "Mestengo Invitational"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35542616132",
+      "opponent_name": "Maliyah Oates",
+      "opponent_team": "Central",
+      "opponent_team_rank": 18,
+      "opponent_weight": 165,
+      "opponent_rank": 18,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "Mestengo Invitational"
+    },
+    {
       "date": "2025-12-27",
       "opponent_id": "35383800132",
       "opponent_name": "Josslyn Heringer",
       "opponent_team": "Cooper",
-      "opponent_team_rank": 35,
-      "opponent_weight": 165,
-      "opponent_rank": 57,
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 42,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -75,7 +120,7 @@
       "score": "6-1",
       "duration": "7:00",
       "event": "Seneca Girls Invitational",
-      "mv_impact": 1.22
+      "mv_impact": 1.25
     }
   ]
 }

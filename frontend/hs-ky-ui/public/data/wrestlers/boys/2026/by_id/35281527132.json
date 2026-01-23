@@ -3,10 +3,10 @@
   "name": "Ryan Willis",
   "team": "Dixie Heights",
   "team_slug": "dixie_heights",
-  "team_rank": 73,
+  "team_rank": 72,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 117,
+  "current_rank": 122,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -14,12 +14,12 @@
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 3.01,
-    "pa7": 25.0,
-    "pd7": -21.99,
-    "si_plus": 89.9,
-    "df_plus": 79.9,
-    "apr_plus": 97.0,
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
@@ -33,13 +33,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35281584132",
-      "opponent_rank": 166,
+      "opponent_rank": 163,
       "opponent_name": "Luke Davis",
       "method": "Fall 1:14"
     },
     "worst_loss": {
       "opponent_id": "35282476132",
-      "opponent_rank": 72,
+      "opponent_rank": 201,
       "opponent_name": "Maxwell Blumberg",
       "method": "TF 19-2 4:39"
     }
@@ -47,28 +47,44 @@
   "match_list": [
     {
       "date": "2025-12-06",
+      "opponent_id": "35282476132",
+      "opponent_name": "Maxwell Blumberg",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 133,
+      "opponent_weight": 138,
+      "opponent_rank": 201,
+      "weight_class": "144",
+      "result": "L",
+      "method": "TF",
+      "score": "19-2",
+      "duration": "4:39",
+      "event": "The Beast of the East",
+      "mv_impact": -6.35
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35001144132",
       "opponent_name": "Derrick Johnson",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 12,
       "opponent_weight": 144,
-      "opponent_rank": 9,
+      "opponent_rank": 7,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:33",
       "event": "The Beast of the East",
-      "mv_impact": -2.23
+      "mv_impact": -2.22
     },
     {
       "date": "2025-12-06",
       "opponent_id": "35281584132",
       "opponent_name": "Luke Davis",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 72,
       "opponent_weight": 144,
-      "opponent_rank": 166,
+      "opponent_rank": 163,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -76,22 +92,6 @@
       "duration": "1:14",
       "event": "The Beast of the East",
       "mv_impact": 2.28
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35282476132",
-      "opponent_name": "Maxwell Blumberg",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": 131,
-      "opponent_weight": 144,
-      "opponent_rank": 72,
-      "weight_class": "144",
-      "result": "L",
-      "method": "TF",
-      "score": "19-2",
-      "duration": "4:39",
-      "event": "The Beast of the East",
-      "mv_impact": -6.39
     }
   ],
   "career": {
