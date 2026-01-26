@@ -5686,3 +5686,175 @@ table a:hover {
   padding: 0.5em;
 }
 
+/* ========================================
+   REDESIGNED HOMEPAGE (2026)
+   Clean, editorial, newspaper-style
+   ======================================== */
+
+/* Masthead */
+.masthead {
+  text-align: center;
+  padding: 3em 2em 1.5em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.masthead-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.masthead-tagline {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0.5em 0 0;
+  font-weight: 400;
+}
+
+.masthead-season {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 1em;
+  padding: 0.25em 0.75em;
+  border: 1px solid var(--border-light);
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* This Week Strip */
+.this-week-strip {
+  text-align: center;
+  padding: 0.75em 1em;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.this-week-label {
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-right: 0.5em;
+}
+
+.this-week-link {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.this-week-link:hover {
+  text-decoration: underline;
+}
+
+.this-week-sep {
+  margin: 0 0.5em;
+  color: var(--text-muted);
+}
+
+/* Gender Sections */
+.gender-section {
+  max-width: 1100px;
+  margin: 3em auto;
+  padding: 0 2em;
+}
+
+.gender-section-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0 0 1.25em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid var(--text-main);
+}
+
+/* Content Cards Grid */
+.gender-section-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+}
+
+@media (max-width: 900px) {
+  .gender-section-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Content Cards */
+.content-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  padding: 1.5em;
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+.content-card:hover {
+  border-color: var(--accent-primary);
+  background: #fafbff;
+}
+
+.content-card--featured {
+  border-width: 2px;
+  border-color: var(--accent-primary);
+}
+
+.content-card--featured .content-card-title {
+  color: var(--accent-primary);
+}
+
+.content-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 0.375em;
+  color: var(--text-main);
+}
+
+.content-card-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .masthead {
+    padding: 2em 1.5em 1em;
+  }
+
+  .masthead-title {
+    font-size: 2rem;
+  }
+
+  .masthead-tagline {
+    font-size: 0.875rem;
+  }
+
+  .this-week-strip {
+    font-size: 0.75rem;
+    padding: 0.5em 1em;
+  }
+
+  .gender-section {
+    margin: 2em auto;
+    padding: 0 1.5em;
+  }
+
+  .gender-section-header {
+    font-size: 1.125rem;
+  }
+
+  .content-card {
+    padding: 1.25em;
+  }
+}
+

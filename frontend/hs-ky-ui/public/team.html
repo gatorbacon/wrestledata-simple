@@ -27,12 +27,7 @@
           <span class="xtp-value" id="xtp-total">—</span>
           <span class="xtp-rank-badge" id="xtp-rank-badge"></span>
         </div>
-        <div class="xtp-headline-label">Projected NCAA Team Points</div>
-        <div class="xtp-headline-breakdown">
-          <span>Placement: <span id="xtp-p">—</span></span>
-          <span>Advancement: <span id="xtp-a">—</span></span>
-          <span>Bonus: <span id="xtp-b">—</span></span>
-        </div>
+        <div class="xtp-headline-label">Projected State Tournament Points</div>
       </div>
       <div class="section-divider"></div>
     </section>
@@ -45,13 +40,14 @@
           <thead>
             <tr>
               <th>Weight</th>
+              <th>Grade</th>
               <th>Wrestler</th>
               <th>Rank</th>
               <th data-tooltip="mv">TPAR</th>
-              <th data-tooltip="xtp">xTP</th>
-              <th data-tooltip="xtp-p">xTP_P</th>
-              <th data-tooltip="xtp-a">xTP_A</th>
-              <th data-tooltip="xtp-b">xTP_B</th>
+              <th data-tooltip="xtp">Projected Pts</th>
+              <th class="text-center">Record</th>
+              <th class="text-center">Top 25 Wins</th>
+              <th class="text-center">Bonus Rate</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -164,6 +160,12 @@
       /* Table header tooltips - entire cell is hoverable */
       #starting-roster-table th[data-tooltip] {
         cursor: help;
+      }
+      
+      /* Center align Record, Top 25 Wins, and Bonus Rate columns */
+      #starting-roster-table th.text-center,
+      #starting-roster-table td.text-center {
+        text-align: center;
       }
       
       /* xTP Headline Section - Primary Metric */
@@ -417,6 +419,7 @@
           <thead>
             <tr>
               <th>Weight</th>
+              <th>Grade</th>
               <th>Wrestler</th>
               <th>Record</th>
               <th>Top 25 Wins</th>

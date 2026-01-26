@@ -11,27 +11,29 @@
   "conference": null,
   "location": {
     "state": "KY",
-    "region": "1"
+    "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818273150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=uvmgssaypj&teamId=1085348143",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.246233Z",
+  "generated_at_utc": "2026-01-26T00:14:10.370150Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35383666132",
       "name": "Adam Quintana Melton",
       "current_rank": 23,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
+      "grade": 10,
+      "xtp": 1.06,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
       "xtp_b": 0.0,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 4
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 6,
         "losses": 9
-      }
+      },
+      "wins": 25,
+      "losses": 9,
+      "top25_wins": 2,
+      "bonus_rate": 0.52
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35674208132",
       "name": "Brody Holinde",
       "current_rank": 105,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -57,35 +65,47 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 10,
+      "losses": 13,
+      "top25_wins": 0,
+      "bonus_rate": 0.3
     },
     "126": {
       "weight": 126,
-      "wrestler_id": "36954101132",
-      "name": "Hensley Hannah",
-      "current_rank": 170,
+      "wrestler_id": "35674133132",
+      "name": "Carson Hall",
+      "current_rank": 173,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
-      }
+        "losses": 1
+      },
+      "wins": 3,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35674089132",
       "name": "Ajontae Swanagan",
       "current_rank": 125,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 9,
+      "losses": 12,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35383668132",
       "name": "Isrell Roberts",
       "current_rank": 73,
-      "xtp": 2.59,
-      "xtp_p": 0.31,
-      "xtp_a": 0.75,
-      "xtp_b": 1.53,
+      "grade": 10,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -111,17 +137,23 @@
       "top33_record": {
         "wins": 3,
         "losses": 6
-      }
+      },
+      "wins": 26,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.731
     },
     "144": {
       "weight": 144,
       "wrestler_id": "35383670132",
       "name": "Daniel Fickas",
       "current_rank": 65,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -129,71 +161,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 7,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.857
     },
     "150": {
       "weight": 150,
-      "wrestler_id": "35383664132",
-      "name": "Tristan Stapleton",
-      "current_rank": 70,
+      "wrestler_id": "35383669132",
+      "name": "Ryan Schaefer",
+      "current_rank": 100,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 1
-      }
-    },
-    "157": {
-      "weight": 157,
-      "wrestler_id": "35383674132",
-      "name": "Kameryis Rodriquez Cline",
-      "current_rank": 14,
-      "xtp": 4.67,
-      "xtp_p": 1.16,
-      "xtp_a": 1.37,
-      "xtp_b": 2.14,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 5,
-        "losses": 0
-      }
-    },
-    "165": {
-      "weight": 165,
-      "wrestler_id": "35674076132",
-      "name": "Justin Woodrome",
-      "current_rank": 143,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 1
-      }
-    },
-    "175": {
-      "weight": 175,
-      "wrestler_id": "35674180132",
-      "name": "Brycen Mattingly",
-      "current_rank": 133,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -201,35 +185,119 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 8,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.375
     },
-    "215": {
-      "weight": 215,
-      "wrestler_id": "35674164132",
-      "name": "Elijah Clark",
-      "current_rank": 99,
+    "157": {
+      "weight": 157,
+      "wrestler_id": "35383674132",
+      "name": "Kameryis Rodriquez Cline",
+      "current_rank": 14,
+      "grade": 11,
+      "xtp": 2.2,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 0.0,
+      "xtp_simple": 2.5,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 5,
+        "losses": 0
+      },
+      "wins": 34,
+      "losses": 0,
+      "top25_wins": 5,
+      "bonus_rate": 0.735
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35383672132",
+      "name": "Yandel Santamaria Luna",
+      "current_rank": 208,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
         "wins": 0,
+        "losses": 1
+      },
+      "wins": 6,
+      "losses": 11,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35674180132",
+      "name": "Brycen Mattingly",
+      "current_rank": 133,
+      "grade": 8,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
         "losses": 0
-      }
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "wins": 8,
+      "losses": 15,
+      "top25_wins": 0,
+      "bonus_rate": 0.375
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "36954054132",
+      "name": "Steve Lehman",
+      "current_rank": 144,
+      "grade": 9,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "wins": 5,
+      "losses": 11,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "285": {
       "weight": 285,
       "wrestler_id": "35383671132",
       "name": "Jeremiah Boehman",
       "current_rank": 110,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -237,7 +305,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 7
-      }
+      },
+      "wins": 11,
+      "losses": 17,
+      "top25_wins": 0,
+      "bonus_rate": 0.545
     }
   },
   "remaining": [
@@ -245,6 +317,7 @@
       "weight": 106,
       "wrestler_id": "35383673132",
       "name": "Ian Latzo",
+      "grade": 8,
       "wins": 12,
       "losses": 11,
       "top25_wins": 0,
@@ -254,6 +327,7 @@
       "weight": 120,
       "wrestler_id": "35674203132",
       "name": "Kyler Rush",
+      "grade": 9,
       "wins": 9,
       "losses": 15,
       "top25_wins": 0,
@@ -263,6 +337,7 @@
       "weight": 120,
       "wrestler_id": "35674071132",
       "name": "Zed Godinez Garcia",
+      "grade": 10,
       "wins": 1,
       "losses": 1,
       "top25_wins": 0,
@@ -270,10 +345,11 @@
     },
     {
       "weight": 126,
-      "wrestler_id": "35674133132",
-      "name": "Carson Hall",
-      "wins": 3,
-      "losses": 3,
+      "wrestler_id": "36954101132",
+      "name": "Hensley Hannah",
+      "grade": 11,
+      "wins": 2,
+      "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -281,6 +357,7 @@
       "weight": 132,
       "wrestler_id": "35674145132",
       "name": "Caleb Hayden",
+      "grade": 9,
       "wins": 4,
       "losses": 10,
       "top25_wins": 0,
@@ -290,6 +367,7 @@
       "weight": 132,
       "wrestler_id": "35674233132",
       "name": "Juan Hernandez",
+      "grade": 10,
       "wins": 2,
       "losses": 3,
       "top25_wins": 0,
@@ -299,6 +377,7 @@
       "weight": 144,
       "wrestler_id": "35674215132",
       "name": "Sceon Johnson",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -308,6 +387,7 @@
       "weight": 150,
       "wrestler_id": "35674098132",
       "name": "Gabe Hillard",
+      "grade": 12,
       "wins": 4,
       "losses": 5,
       "top25_wins": 0,
@@ -315,17 +395,19 @@
     },
     {
       "weight": 150,
-      "wrestler_id": "35383669132",
-      "name": "Ryan Schaefer",
+      "wrestler_id": "35383664132",
+      "name": "Tristan Stapleton",
+      "grade": 11,
       "wins": 8,
-      "losses": 9,
+      "losses": 4,
       "top25_wins": 0,
-      "bonus_rate": 0.375
+      "bonus_rate": 0.5
     },
     {
       "weight": 165,
       "wrestler_id": "38187231132",
       "name": "Adam Garcia",
+      "grade": null,
       "wins": 1,
       "losses": 2,
       "top25_wins": 0,
@@ -333,10 +415,11 @@
     },
     {
       "weight": 165,
-      "wrestler_id": "35383672132",
-      "name": "Yandel Santamaria Luna",
-      "wins": 6,
-      "losses": 11,
+      "wrestler_id": "35674076132",
+      "name": "Justin Woodrome",
+      "grade": 12,
+      "wins": 4,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.5
     },
@@ -344,6 +427,7 @@
       "weight": 215,
       "wrestler_id": "35674222132",
       "name": "Bryan Mata Meza",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -351,8 +435,19 @@
     },
     {
       "weight": 215,
+      "wrestler_id": "35674164132",
+      "name": "Elijah Clark",
+      "grade": 12,
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 215,
       "wrestler_id": "35383665132",
       "name": "Isaac Mattingly",
+      "grade": 11,
       "wins": 2,
       "losses": 3,
       "top25_wins": 0,
@@ -362,17 +457,9 @@
       "weight": 215,
       "wrestler_id": "35674172132",
       "name": "Jameson Gibson",
+      "grade": null,
       "wins": 0,
       "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    {
-      "weight": 215,
-      "wrestler_id": "36954054132",
-      "name": "Steve Lehman",
-      "wins": 5,
-      "losses": 11,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -380,14 +467,16 @@
       "weight": 285,
       "wrestler_id": "35674191132",
       "name": "Nicholas Cottrell",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 3.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 3.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -397,30 +486,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 126,
-      "losses": 75
+      "wins": 152,
+      "losses": 111
     },
     "top33": {
       "wins": 14,
-      "losses": 32
+      "losses": 37
     },
     "top10": {
       "wins": 0,
       "losses": 6
     },
     "bonus_rate": {
-      "value": 0.595,
-      "rank": 134,
+      "value": 0.572,
+      "rank": 136,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.54,
-      "rank": 125,
+      "value": 0.526,
+      "rank": 120,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.04,
-      "rank": 96,
+      "value": 0.033,
+      "rank": 110,
       "rank_scope": "league"
     }
   }

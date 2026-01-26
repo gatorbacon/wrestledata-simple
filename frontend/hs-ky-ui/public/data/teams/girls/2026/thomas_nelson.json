@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:59.020887Z",
+  "generated_at_utc": "2026-01-26T00:14:11.604914Z",
   "starters": {
     "120": {
       "weight": 120,
       "wrestler_id": "36679932132",
       "name": "Kaylee Beavers",
       "current_rank": 86,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "145": {
       "weight": 145,
       "wrestler_id": "36679898132",
       "name": "Madalyn Harbin",
       "current_rank": 67,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -57,7 +65,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   },
   "remaining": [
@@ -65,6 +77,7 @@
       "weight": 120,
       "wrestler_id": "36679860132",
       "name": "McKynna Underwood-Hazel",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -74,14 +87,16 @@
       "weight": 120,
       "wrestler_id": "36679770132",
       "name": "Olivia Lay",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,

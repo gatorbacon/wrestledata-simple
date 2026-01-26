@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Kentucky High School Wrestling Rankings</title>
+  <title>Kentucky Wrestling — Rankings & Dual Predictions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
@@ -13,47 +13,57 @@
   <script src="/header.js"></script>
   
   <div class="page-container">
-    <!-- Hero Section -->
-    <section class="homepage-hero-section">
-      <h1 class="homepage-title">Kentucky High School Wrestling Rankings</h1>
-      <p class="homepage-subtitle">Boys & Girls · Season 2026</p>
-      
-      <div class="homepage-hero-buttons">
-        <a href="#boys-section" class="homepage-hero-button homepage-hero-button--boys">
-          Boys Rankings
-        </a>
-        <a href="#girls-section" class="homepage-hero-button homepage-hero-button--girls">
-          Girls Rankings
-        </a>
-      </div>
-    </section>
+    <!-- Masthead -->
+    <header class="masthead">
+      <h1 class="masthead-title">Kentucky Wrestling</h1>
+      <p class="masthead-tagline">Rankings · Dual Predictions · Data</p>
+      <span class="masthead-season">Season 2026</span>
+    </header>
+
+    <!-- This Week Strip (optional subtle navigation) -->
+    <div class="this-week-strip">
+      <span class="this-week-label">This Week:</span>
+      <a href="/rankings.html?gender=boys" class="this-week-link">Updated Rankings</a>
+      <span class="this-week-sep">·</span>
+      <a href="/dual_predictor.html?gender=boys" class="this-week-link">New Dual Predictions</a>
+      <span class="this-week-sep">·</span>
+      <a href="/leaderboards/xtp/teams.html?gender=boys" class="this-week-link">Team Projections</a>
+    </div>
 
     <!-- Boys Section -->
-    <section id="boys-section" class="homepage-gender-section">
-      <h2 class="homepage-gender-heading">Boys Rankings</h2>
-      <div class="homepage-gender-cards">
-        <a href="/rankings.html?gender=boys" class="homepage-gender-card">
-          <h3 class="homepage-gender-card-title">Individual Rankings</h3>
-          <p class="homepage-gender-card-desc">Traditional weight class rankings</p>
+    <section class="gender-section">
+      <h2 class="gender-section-header">Boys — Season 2026</h2>
+      <div class="gender-section-cards">
+        <a href="/rankings.html?gender=boys" class="content-card">
+          <h3 class="content-card-title">Individual Rankings</h3>
+          <p class="content-card-desc">Traditional weight class rankings</p>
         </a>
-        <a href="/leaderboards/xtp/teams.html?gender=boys" class="homepage-gender-card">
-          <h3 class="homepage-gender-card-title">Team Tournament</h3>
-          <p class="homepage-gender-card-desc">Team scoring projections</p>
+        <a href="/leaderboards/xtp/teams.html?gender=boys" class="content-card">
+          <h3 class="content-card-title">Team Tournament</h3>
+          <p class="content-card-desc">Projected state tournament results</p>
+        </a>
+        <a href="/dual_predictor.html?gender=boys" class="content-card content-card--featured">
+          <h3 class="content-card-title">Dual Predictor</h3>
+          <p class="content-card-desc">Head-to-head team matchup predictions</p>
         </a>
       </div>
     </section>
 
     <!-- Girls Section -->
-    <section id="girls-section" class="homepage-gender-section">
-      <h2 class="homepage-gender-heading">Girls Rankings</h2>
-      <div class="homepage-gender-cards">
-        <a href="/rankings.html?gender=girls" class="homepage-gender-card">
-          <h3 class="homepage-gender-card-title">Individual Rankings</h3>
-          <p class="homepage-gender-card-desc">Traditional weight class rankings</p>
+    <section class="gender-section">
+      <h2 class="gender-section-header">Girls — Season 2026</h2>
+      <div class="gender-section-cards">
+        <a href="/rankings.html?gender=girls" class="content-card">
+          <h3 class="content-card-title">Individual Rankings</h3>
+          <p class="content-card-desc">Traditional weight class rankings</p>
         </a>
-        <a href="/leaderboards/xtp/teams.html?gender=girls" class="homepage-gender-card">
-          <h3 class="homepage-gender-card-title">Team Tournament</h3>
-          <p class="homepage-gender-card-desc">Team scoring projections</p>
+        <a href="/leaderboards/xtp/teams.html?gender=girls" class="content-card">
+          <h3 class="content-card-title">Team Tournament</h3>
+          <p class="content-card-desc">Projected state tournament results</p>
+        </a>
+        <a href="/dual_predictor.html?gender=girls" class="content-card content-card--featured">
+          <h3 class="content-card-title">Dual Predictor</h3>
+          <p class="content-card-desc">Head-to-head team matchup predictions</p>
         </a>
       </div>
     </section>

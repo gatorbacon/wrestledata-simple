@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:59.064392Z",
+  "generated_at_utc": "2026-01-26T00:14:11.660573Z",
   "starters": {
     "100": {
       "weight": 100,
       "wrestler_id": "35333546132",
       "name": "Bijou Brown",
       "current_rank": 9,
-      "xtp": 7.47,
+      "grade": null,
+      "xtp": 3.81,
       "xtp_p": 2.03,
       "xtp_a": 1.78,
-      "xtp_b": 3.66,
+      "xtp_b": 0.0,
+      "xtp_simple": 3.0,
       "top10_record": {
         "wins": 1,
         "losses": 9
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 11,
         "losses": 9
-      }
+      },
+      "wins": 17,
+      "losses": 9,
+      "top25_wins": 8,
+      "bonus_rate": 0.706
     },
     "107": {
       "weight": 107,
       "wrestler_id": "35333548132",
       "name": "Genevieve Cox",
       "current_rank": 6,
-      "xtp": 11.12,
+      "grade": null,
+      "xtp": 6.59,
       "xtp_p": 4.26,
       "xtp_a": 2.33,
-      "xtp_b": 4.53,
+      "xtp_b": 0.0,
+      "xtp_simple": 13.5,
       "top10_record": {
         "wins": 6,
         "losses": 3
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 25,
         "losses": 3
-      }
+      },
+      "wins": 30,
+      "losses": 3,
+      "top25_wins": 24,
+      "bonus_rate": 0.9
     },
     "114": {
       "weight": 114,
       "wrestler_id": "35333544132",
       "name": "AnaLeigh Tierney",
       "current_rank": 2,
-      "xtp": 19.24,
+      "grade": null,
+      "xtp": 13.49,
       "xtp_p": 10.07,
       "xtp_a": 3.42,
-      "xtp_b": 5.75,
+      "xtp_b": 0.0,
+      "xtp_simple": 24.0,
       "top10_record": {
         "wins": 9,
         "losses": 1
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 17,
         "losses": 1
-      }
+      },
+      "wins": 30,
+      "losses": 1,
+      "top25_wins": 14,
+      "bonus_rate": 0.8
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35333549132",
       "name": "Jacey Lyddane",
       "current_rank": 7,
-      "xtp": 9.53,
+      "grade": null,
+      "xtp": 5.43,
       "xtp_p": 3.31,
       "xtp_a": 2.12,
-      "xtp_b": 4.1,
+      "xtp_b": 0.0,
+      "xtp_simple": 10.5,
       "top10_record": {
         "wins": 2,
         "losses": 8
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 16,
         "losses": 8
-      }
+      },
+      "wins": 26,
+      "losses": 9,
+      "top25_wins": 12,
+      "bonus_rate": 0.846
     },
     "126": {
       "weight": 126,
       "wrestler_id": "35333550132",
       "name": "London Mosley",
       "current_rank": 23,
-      "xtp": 2.99,
+      "grade": null,
+      "xtp": 1.18,
       "xtp_p": 0.37,
       "xtp_a": 0.81,
-      "xtp_b": 1.81,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 6
@@ -111,17 +137,23 @@
       "top33_record": {
         "wins": 3,
         "losses": 13
-      }
+      },
+      "wins": 17,
+      "losses": 14,
+      "top25_wins": 1,
+      "bonus_rate": 0.765
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35670762132",
       "name": "Lyla Pitzer",
       "current_rank": 31,
-      "xtp": 1.75,
+      "grade": null,
+      "xtp": 0.59,
       "xtp_p": 0.15,
       "xtp_a": 0.44,
-      "xtp_b": 1.16,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 4
@@ -129,17 +161,23 @@
       "top33_record": {
         "wins": 2,
         "losses": 11
-      }
+      },
+      "wins": 12,
+      "losses": 15,
+      "top25_wins": 0,
+      "bonus_rate": 0.917
     },
     "235": {
       "weight": 235,
       "wrestler_id": "35333551132",
       "name": "Mariya Reed",
       "current_rank": 11,
-      "xtp": 6.74,
+      "grade": null,
+      "xtp": 3.59,
       "xtp_p": 1.9,
       "xtp_a": 1.69,
-      "xtp_b": 3.15,
+      "xtp_b": 0.0,
+      "xtp_simple": 3.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -147,7 +185,11 @@
       "top33_record": {
         "wins": 6,
         "losses": 2
-      }
+      },
+      "wins": 8,
+      "losses": 2,
+      "top25_wins": 3,
+      "bonus_rate": 0.875
     }
   },
   "remaining": [
@@ -155,14 +197,16 @@
       "weight": 100,
       "wrestler_id": "35333545132",
       "name": "Aubrey King",
+      "grade": null,
       "wins": 3,
       "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 54.5,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 54.5,
     "team_rank": {
       "value": null,
       "rank": null,

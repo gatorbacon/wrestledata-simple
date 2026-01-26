@@ -11,27 +11,29 @@
   "conference": null,
   "location": {
     "state": "KY",
-    "region": "8"
+    "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818305150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=uvmgssaypj&teamId=1085380143",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.296735Z",
+  "generated_at_utc": "2026-01-26T00:14:10.434773Z",
   "starters": {
     "138": {
       "weight": 138,
       "wrestler_id": "36571497132",
       "name": "Jaxon Scott",
       "current_rank": 31,
-      "xtp": 1.8,
-      "xtp_p": 0.2,
-      "xtp_a": 0.54,
-      "xtp_b": 1.06,
+      "grade": 8,
+      "xtp": 0.67,
+      "xtp_p": 0.18,
+      "xtp_a": 0.49,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 1,
         "losses": 2
-      }
+      },
+      "wins": 5,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.8
     },
     "144": {
       "weight": 144,
       "wrestler_id": "36571493132",
       "name": "Cooper Scott",
       "current_rank": 29,
-      "xtp": 1.42,
+      "grade": 9,
+      "xtp": 0.59,
       "xtp_p": 0.15,
       "xtp_a": 0.44,
-      "xtp_b": 0.83,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 1,
         "losses": 2
-      }
+      },
+      "wins": 9,
+      "losses": 2,
+      "top25_wins": 1,
+      "bonus_rate": 0.778
     },
     "157": {
       "weight": 157,
       "wrestler_id": "36571495132",
       "name": "Gabriel Farthing",
       "current_rank": 75,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 7,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.857
     },
     "165": {
       "weight": 165,
       "wrestler_id": "36642496132",
       "name": "Max Hunt",
       "current_rank": 166,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
     },
     "175": {
       "weight": 175,
       "wrestler_id": "36571492132",
       "name": "Ethan Richardson",
       "current_rank": 178,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -111,17 +137,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 3,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "215": {
       "weight": 215,
       "wrestler_id": "36642780132",
       "name": "Houston Smith",
       "current_rank": 194,
+      "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -129,17 +161,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 2,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "285": {
       "weight": 285,
       "wrestler_id": "36642409132",
       "name": "Cagan Hurley",
       "current_rank": 209,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -147,7 +185,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   },
   "remaining": [
@@ -155,6 +197,7 @@
       "weight": 144,
       "wrestler_id": "36642989132",
       "name": "Javan Dotson",
+      "grade": null,
       "wins": 1,
       "losses": 4,
       "top25_wins": 0,
@@ -164,14 +207,16 @@
       "weight": 144,
       "wrestler_id": "36642358132",
       "name": "Logan Kingery",
+      "grade": null,
       "wins": 0,
       "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -181,8 +226,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 19,
-      "losses": 19
+      "wins": 28,
+      "losses": 25
     },
     "top33": {
       "wins": 2,
@@ -193,18 +238,18 @@
       "losses": 0
     },
     "bonus_rate": {
-      "value": 0.789,
-      "rank": 45,
+      "value": 0.643,
+      "rank": 110,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.789,
-      "rank": 11,
+      "value": 0.607,
+      "rank": 74,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.0,
-      "rank": 138,
+      "value": 0.036,
+      "rank": 108,
       "rank_scope": "league"
     }
   }

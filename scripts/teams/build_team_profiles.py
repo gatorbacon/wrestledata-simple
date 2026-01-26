@@ -477,7 +477,8 @@ def parse_record(record_str: str) -> Dict[str, int]:
 def extract_minimal_starter_data(
     profile: Dict,
     weight: str,
-    xtp_weight_data: Optional[Dict]
+    xtp_weight_data: Optional[Dict],
+    season: int
 ) -> Dict:
     """
     Extract minimal starter data needed for team page UI.
@@ -486,6 +487,7 @@ def extract_minimal_starter_data(
         profile: Full wrestler profile dict
         weight: Weight class string
         xtp_weight_data: xTP data for this weight (from xtp_teams JSON)
+        season: Season year (e.g., 2026)
     
     Returns:
         Minimal starter data dict
@@ -496,26 +498,53 @@ def extract_minimal_starter_data(
     top10_record = calculate_top_record(match_list, 10)
     top33_record = calculate_top_record(match_list, 33)
     
+    # Parse overall record
+    record_str = profile.get("record", {}).get("overall", "0-0")
+    record = parse_record(record_str)
+    
+    # Precompute top-25 wins
+    top25_wins = count_top25_wins(match_list)
+    
+    # Extract grade from season_summary (for current season)
+    grade = None
+    season_summary = profile.get("season_summary", [])
+    if season_summary:
+        # Find the entry for the current season
+        for entry in season_summary:
+            if entry.get("season") == season:
+                grade = entry.get("grade")
+                break
+        # Fallback: use first entry if current season not found (shouldn't happen normally)
+        if grade is None and season_summary:
+            grade = season_summary[0].get("grade")
+    
     return {
         "weight": int(weight),
         "wrestler_id": profile.get("wrestler_id"),
         "name": profile.get("name"),
         "current_rank": profile.get("current_rank"),
+        "grade": grade,  # Grade for display in table
         "xtp": xtp_weight_data.get("xTP", 0.0) if xtp_weight_data else 0.0,
         "xtp_p": xtp_weight_data.get("xTP_P", 0.0) if xtp_weight_data else 0.0,
         "xtp_a": xtp_weight_data.get("xTP_A", 0.0) if xtp_weight_data else 0.0,
         "xtp_b": xtp_weight_data.get("xTP_B", 0.0) if xtp_weight_data else 0.0,
+        "xtp_simple": xtp_weight_data.get("xTP_simple", 0.0) if xtp_weight_data else 0.0,  # Simplified rank-based scoring
         "top10_record": top10_record,
         "top33_record": top33_record,
+        "wins": record["wins"],
+        "losses": record["losses"],
+        "top25_wins": top25_wins,
+        "bonus_rate": profile.get("metrics", {}).get("bonus_rate"),
     }
 
 
-def extract_minimal_roster_data(profile: Dict) -> Dict:
+def extract_minimal_roster_data(profile: Dict, season: int) -> Dict:
     """
     Extract minimal roster data needed for remaining roster table.
     
     Args:
         profile: Full wrestler profile dict
+        season: Season year (e.g., 2026)
     
     Returns:
         Minimal roster data dict
@@ -527,10 +556,24 @@ def extract_minimal_roster_data(profile: Dict) -> Dict:
     # Precompute top-25 wins
     top25_wins = count_top25_wins(match_list)
     
+    # Extract grade from season_summary (for current season)
+    grade = None
+    season_summary = profile.get("season_summary", [])
+    if season_summary:
+        # Find the entry for the current season
+        for entry in season_summary:
+            if entry.get("season") == season:
+                grade = entry.get("grade")
+                break
+        # Fallback: use first entry if current season not found (shouldn't happen normally)
+        if grade is None and season_summary:
+            grade = season_summary[0].get("grade")
+    
     return {
         "weight": profile.get("weight_class"),
         "wrestler_id": profile.get("wrestler_id"),
         "name": profile.get("name"),
+        "grade": grade,  # Grade for display in table
         "wins": record["wins"],
         "losses": record["losses"],
         "top25_wins": top25_wins,
@@ -783,7 +826,7 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
                             xtp_weight_data = xtp_data["weights"].get(weight_str)
                         
                         starters_minimal[weight_str] = extract_minimal_starter_data(
-                            profile, weight_str, xtp_weight_data
+                            profile, weight_str, xtp_weight_data, season
                         )
                     elif starter_id:
                         # Starter ID exists but profile not found - log warning
@@ -797,7 +840,7 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
                         continue
                     
                     if str(wrestler_id) not in starter_ids_set:
-                        remaining_minimal.append(extract_minimal_roster_data(profile))
+                        remaining_minimal.append(extract_minimal_roster_data(profile, season))
                 
                 # Sort remaining by weight, then by name
                 remaining_minimal.sort(key=lambda p: (
@@ -808,6 +851,10 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
                 # Embed minimal data in team data
                 team_data["starters"] = starters_minimal
                 team_data["remaining"] = remaining_minimal
+                
+                # Compute team_xTP_simple total from starters (sum of all xTP_simple values)
+                team_xTP_simple = sum(s.get("xtp_simple", 0.0) for s in starters_minimal.values())
+                team_data["team_xTP_simple"] = round(team_xTP_simple, 2)
                 
                 # Load and embed team metrics if available
                 if team_metrics_path and team_metrics_path.exists():
@@ -821,7 +868,7 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
                         counts = team_metrics.get("counts", {})
                         
                         team_data["team_metrics"] = {
-                            "projected_state_points": team_metrics.get("projected_state_points"),
+                            "projected_state_points": team_xTP_simple,  # Use xTP_simple as primary score
                             "team_rank": team_metrics.get("team_rank"),
                             "placement_points": team_metrics.get("placement_points"),
                             "advancement_points": team_metrics.get("advancement_points"),

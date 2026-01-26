@@ -11,27 +11,29 @@
   "conference": null,
   "location": {
     "state": "KY",
-    "region": "8"
+    "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818336150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=uvmgssaypj&teamId=1086703143",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.328523Z",
+  "generated_at_utc": "2026-01-26T00:14:10.460152Z",
   "starters": {
     "175": {
       "weight": 175,
       "wrestler_id": "35868688132",
       "name": "Jackson King",
       "current_rank": 75,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 1,
         "losses": 0
-      }
+      },
+      "wins": 3,
+      "losses": 4,
+      "top25_wins": 1,
+      "bonus_rate": 1.0
     },
     "190": {
       "weight": 190,
       "wrestler_id": "35829158132",
       "name": "Harley Brown",
       "current_rank": 38,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -57,7 +65,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 10,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.9
     }
   },
   "remaining": [
@@ -65,14 +77,16 @@
       "weight": 190,
       "wrestler_id": "35868690132",
       "name": "Ethan Rogers",
+      "grade": 8,
       "wins": 1,
       "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 1.0
     }
   ],
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -82,8 +96,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 7,
-      "losses": 4
+      "wins": 13,
+      "losses": 7
     },
     "top33": {
       "wins": 1,
@@ -94,18 +108,18 @@
       "losses": 1
     },
     "bonus_rate": {
-      "value": 1.0,
-      "rank": 3,
+      "value": 0.923,
+      "rank": 4,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 1.0,
-      "rank": 2,
+      "value": 0.846,
+      "rank": 4,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.0,
-      "rank": 142,
+      "value": 0.077,
+      "rank": 60,
       "rank_scope": "league"
     }
   }

@@ -11,27 +11,29 @@
   "conference": null,
   "location": {
     "state": "KY",
-    "region": "7"
+    "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818216150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=uvmgssaypj&teamId=1085293143",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:57.664521Z",
+  "generated_at_utc": "2026-01-26T00:14:09.658946Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "34992808132",
       "name": "Talon Sanderlyn",
       "current_rank": 1,
-      "xtp": 20.75,
+      "grade": 11,
+      "xtp": 16.56,
       "xtp_p": 12.83,
       "xtp_a": 3.73,
-      "xtp_b": 4.19,
+      "xtp_b": 0.0,
+      "xtp_simple": 30.0,
       "top10_record": {
         "wins": 2,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 8,
         "losses": 1
-      }
+      },
+      "wins": 29,
+      "losses": 7,
+      "top25_wins": 7,
+      "bonus_rate": 0.759
     },
     "113": {
       "weight": 113,
       "wrestler_id": "34992818132",
       "name": "Braylon Newell",
       "current_rank": 39,
-      "xtp": 1.31,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.96,
+      "grade": 8,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 4
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 3,
         "losses": 8
-      }
+      },
+      "wins": 17,
+      "losses": 12,
+      "top25_wins": 3,
+      "bonus_rate": 0.412
     },
     "126": {
       "weight": 126,
       "wrestler_id": "34992804132",
       "name": "Ethan Masters",
       "current_rank": 1,
-      "xtp": 20.99,
+      "grade": 12,
+      "xtp": 16.56,
       "xtp_p": 12.83,
       "xtp_a": 3.73,
-      "xtp_b": 4.43,
+      "xtp_b": 0.0,
+      "xtp_simple": 30.0,
       "top10_record": {
         "wins": 3,
         "losses": 1
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 5,
         "losses": 1
-      }
+      },
+      "wins": 31,
+      "losses": 6,
+      "top25_wins": 5,
+      "bonus_rate": 0.613
     },
     "132": {
       "weight": 132,
       "wrestler_id": "34992809132",
       "name": "Cullen White",
       "current_rank": 3,
-      "xtp": 13.14,
-      "xtp_p": 6.31,
-      "xtp_a": 2.77,
-      "xtp_b": 4.06,
+      "grade": 10,
+      "xtp": 11.14,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 0.0,
+      "xtp_simple": 21.0,
       "top10_record": {
         "wins": 2,
         "losses": 3
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 5,
         "losses": 3
-      }
+      },
+      "wins": 33,
+      "losses": 11,
+      "top25_wins": 5,
+      "bonus_rate": 0.909
     },
     "138": {
       "weight": 138,
       "wrestler_id": "34992815132",
       "name": "Bain Kurtz",
       "current_rank": 30,
-      "xtp": 1.91,
-      "xtp_p": 0.22,
-      "xtp_a": 0.59,
-      "xtp_b": 1.1,
+      "grade": 9,
+      "xtp": 0.74,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 3
@@ -111,17 +137,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 4
-      }
+      },
+      "wins": 16,
+      "losses": 12,
+      "top25_wins": 0,
+      "bonus_rate": 0.875
     },
     "144": {
       "weight": 144,
       "wrestler_id": "34992810132",
       "name": "Kamarius Ziesmer",
       "current_rank": 16,
-      "xtp": 2.95,
+      "grade": 9,
+      "xtp": 1.55,
       "xtp_p": 0.47,
       "xtp_a": 1.08,
-      "xtp_b": 1.4,
+      "xtp_b": 0.0,
+      "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -129,17 +161,23 @@
       "top33_record": {
         "wins": 2,
         "losses": 3
-      }
+      },
+      "wins": 20,
+      "losses": 7,
+      "top25_wins": 2,
+      "bonus_rate": 0.85
     },
     "150": {
       "weight": 150,
       "wrestler_id": "34992806132",
       "name": "Kaygen Roberts",
       "current_rank": 2,
-      "xtp": 18.46,
+      "grade": 11,
+      "xtp": 13.49,
       "xtp_p": 10.07,
       "xtp_a": 3.42,
-      "xtp_b": 4.97,
+      "xtp_b": 0.0,
+      "xtp_simple": 24.0,
       "top10_record": {
         "wins": 4,
         "losses": 1
@@ -147,17 +185,23 @@
       "top33_record": {
         "wins": 5,
         "losses": 1
-      }
+      },
+      "wins": 36,
+      "losses": 4,
+      "top25_wins": 5,
+      "bonus_rate": 0.806
     },
     "157": {
       "weight": 157,
       "wrestler_id": "34992807132",
       "name": "Judah Carey",
       "current_rank": 9,
-      "xtp": 8.31,
-      "xtp_p": 3.31,
-      "xtp_a": 2.12,
-      "xtp_b": 2.88,
+      "grade": 12,
+      "xtp": 3.81,
+      "xtp_p": 2.03,
+      "xtp_a": 1.78,
+      "xtp_b": 0.0,
+      "xtp_simple": 3.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -165,17 +209,23 @@
       "top33_record": {
         "wins": 4,
         "losses": 3
-      }
+      },
+      "wins": 26,
+      "losses": 7,
+      "top25_wins": 2,
+      "bonus_rate": 0.769
     },
     "165": {
       "weight": 165,
       "wrestler_id": "34992803132",
       "name": "Micah Thompson",
       "current_rank": 1,
-      "xtp": 22.1,
+      "grade": 12,
+      "xtp": 16.56,
       "xtp_p": 12.83,
       "xtp_a": 3.73,
-      "xtp_b": 5.54,
+      "xtp_b": 0.0,
+      "xtp_simple": 30.0,
       "top10_record": {
         "wins": 4,
         "losses": 0
@@ -183,17 +233,23 @@
       "top33_record": {
         "wins": 8,
         "losses": 0
-      }
+      },
+      "wins": 37,
+      "losses": 2,
+      "top25_wins": 8,
+      "bonus_rate": 0.838
     },
     "175": {
       "weight": 175,
       "wrestler_id": "34992816132",
       "name": "George McClure",
       "current_rank": 37,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -201,17 +257,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 10
-      }
+      },
+      "wins": 9,
+      "losses": 16,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
     },
     "190": {
       "weight": 190,
       "wrestler_id": "34992805132",
       "name": "Jax Crowe",
       "current_rank": 6,
-      "xtp": 9.55,
+      "grade": 12,
+      "xtp": 6.59,
       "xtp_p": 4.26,
       "xtp_a": 2.33,
-      "xtp_b": 2.96,
+      "xtp_b": 0.0,
+      "xtp_simple": 13.5,
       "top10_record": {
         "wins": 1,
         "losses": 0
@@ -219,17 +281,23 @@
       "top33_record": {
         "wins": 2,
         "losses": 0
-      }
+      },
+      "wins": 24,
+      "losses": 7,
+      "top25_wins": 2,
+      "bonus_rate": 0.75
     },
     "215": {
       "weight": 215,
       "wrestler_id": "35022107132",
       "name": "Jacob Mendez",
       "current_rank": 156,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -237,17 +305,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "285": {
       "weight": 285,
       "wrestler_id": "34992833132",
       "name": "Bentley Wren",
       "current_rank": 130,
+      "grade": 7,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -255,7 +329,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 6,
+      "losses": 12,
+      "top25_wins": 0,
+      "bonus_rate": 0.333
     }
   },
   "remaining": [
@@ -263,6 +341,7 @@
       "weight": 106,
       "wrestler_id": "34992812132",
       "name": "Jax Reynolds",
+      "grade": 9,
       "wins": 17,
       "losses": 4,
       "top25_wins": 0,
@@ -272,6 +351,7 @@
       "weight": 106,
       "wrestler_id": "34992835132",
       "name": "Travis Orr",
+      "grade": 7,
       "wins": 3,
       "losses": 2,
       "top25_wins": 0,
@@ -281,6 +361,7 @@
       "weight": 106,
       "wrestler_id": "34992813132",
       "name": "Uriah Rainey",
+      "grade": 9,
       "wins": 16,
       "losses": 7,
       "top25_wins": 0,
@@ -290,6 +371,7 @@
       "weight": 126,
       "wrestler_id": "35262243132",
       "name": "Brilynn Stewart",
+      "grade": 9,
       "wins": 4,
       "losses": 11,
       "top25_wins": 0,
@@ -299,6 +381,7 @@
       "weight": 138,
       "wrestler_id": "34992814132",
       "name": "Paul Parsons",
+      "grade": 9,
       "wins": 6,
       "losses": 9,
       "top25_wins": 0,
@@ -308,6 +391,7 @@
       "weight": 157,
       "wrestler_id": "34992811132",
       "name": "Caden Wren",
+      "grade": 9,
       "wins": 12,
       "losses": 10,
       "top25_wins": 0,
@@ -317,6 +401,7 @@
       "weight": 165,
       "wrestler_id": "35022117132",
       "name": "Bentlee Truscott",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -326,6 +411,7 @@
       "weight": 165,
       "wrestler_id": "34992836132",
       "name": "Lincoln Burger",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -335,6 +421,7 @@
       "weight": 190,
       "wrestler_id": "35142050132",
       "name": "Bowen Bragg",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -344,6 +431,7 @@
       "weight": 190,
       "wrestler_id": "35143223132",
       "name": "Landon Turner",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -353,14 +441,16 @@
       "weight": 285,
       "wrestler_id": "34992832132",
       "name": "Gus Singleton",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 154.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 154.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -370,8 +460,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 257,
-      "losses": 92
+      "wins": 286,
+      "losses": 105
     },
     "top33": {
       "wins": 42,
@@ -382,18 +472,18 @@
       "losses": 19
     },
     "bonus_rate": {
-      "value": 0.767,
-      "rank": 57,
+      "value": 0.755,
+      "rank": 52,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.58,
-      "rank": 99,
+      "value": 0.566,
+      "rank": 100,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.14,
-      "rank": 17,
+      "value": 0.143,
+      "rank": 15,
       "rank_scope": "league"
     }
   }

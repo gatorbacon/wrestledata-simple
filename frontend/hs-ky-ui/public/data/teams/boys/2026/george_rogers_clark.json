@@ -11,27 +11,29 @@
   "conference": null,
   "location": {
     "state": "KY",
-    "region": "6"
+    "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818325150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=uvmgssaypj&teamId=1085400143",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:57.913320Z",
+  "generated_at_utc": "2026-01-26T00:14:09.971288Z",
   "starters": {
     "113": {
       "weight": 113,
       "wrestler_id": "34999342132",
       "name": "Benjamin Leslie",
       "current_rank": 65,
+      "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 8,
+      "losses": 10,
+      "top25_wins": 0,
+      "bonus_rate": 0.375
     },
     "120": {
       "weight": 120,
       "wrestler_id": "34997571132",
       "name": "Gavin Clem",
       "current_rank": 31,
-      "xtp": 1.1,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.75,
+      "grade": 9,
+      "xtp": 0.43,
+      "xtp_p": 0.09,
+      "xtp_a": 0.34,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 2,
         "losses": 5
-      }
+      },
+      "wins": 14,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.857
     },
     "126": {
       "weight": 126,
       "wrestler_id": "34999332132",
       "name": "Zayne Foust",
       "current_rank": 52,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 6
-      }
+      },
+      "wins": 12,
+      "losses": 12,
+      "top25_wins": 0,
+      "bonus_rate": 0.833
     },
     "138": {
       "weight": 138,
       "wrestler_id": "34999328132",
       "name": "Kegan Ryan",
       "current_rank": 151,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 2,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "144": {
       "weight": 144,
       "wrestler_id": "34997574132",
       "name": "Isaiah Cook",
       "current_rank": 78,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -111,53 +137,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
-    },
-    "150": {
-      "weight": 150,
-      "wrestler_id": "34999269132",
-      "name": "Jayden Simpson",
-      "current_rank": 176,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
       },
-      "top33_record": {
-        "wins": 0,
-        "losses": 1
-      }
-    },
-    "157": {
-      "weight": 157,
-      "wrestler_id": "34999267132",
-      "name": "Liam Combs",
-      "current_rank": 156,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      }
+      "wins": 9,
+      "losses": 10,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
     },
     "165": {
       "weight": 165,
       "wrestler_id": "34997567132",
       "name": "Brock Heidle",
       "current_rank": 24,
-      "xtp": 2.12,
-      "xtp_p": 0.31,
-      "xtp_a": 0.75,
-      "xtp_b": 1.06,
+      "grade": 12,
+      "xtp": 0.94,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -165,17 +161,23 @@
       "top33_record": {
         "wins": 2,
         "losses": 7
-      }
+      },
+      "wins": 21,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.952
     },
     "175": {
       "weight": 175,
       "wrestler_id": "34997573132",
       "name": "Sam Allen",
       "current_rank": 123,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -183,17 +185,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 4
-      }
+      },
+      "wins": 5,
+      "losses": 15,
+      "top25_wins": 0,
+      "bonus_rate": 0.4
     },
     "215": {
       "weight": 215,
-      "wrestler_id": "35795035132",
-      "name": "Stryker Davidson",
-      "current_rank": 52,
+      "wrestler_id": "34999266132",
+      "name": "Kolten Day",
+      "current_rank": 212,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -201,7 +209,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   },
   "remaining": [
@@ -209,6 +221,7 @@
       "weight": 113,
       "wrestler_id": "34999329132",
       "name": "Aaron Dickey",
+      "grade": 9,
       "wins": 5,
       "losses": 6,
       "top25_wins": 0,
@@ -218,23 +231,46 @@
       "weight": 144,
       "wrestler_id": "34999265132",
       "name": "Trenton Gray",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
     {
-      "weight": 215,
-      "wrestler_id": "34999266132",
-      "name": "Kolten Day",
-      "wins": 0,
-      "losses": 0,
+      "weight": 150,
+      "wrestler_id": "34999269132",
+      "name": "Jayden Simpson",
+      "grade": 11,
+      "wins": 1,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "34999267132",
+      "name": "Liam Combs",
+      "grade": 11,
+      "wins": 2,
+      "losses": 6,
       "top25_wins": 0,
       "bonus_rate": 0.0
+    },
+    {
+      "weight": 215,
+      "wrestler_id": "35795035132",
+      "name": "Stryker Davidson",
+      "grade": 12,
+      "wins": 4,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     }
   ],
+  "team_xTP_simple": 0.5,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 0.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -244,30 +280,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 59,
-      "losses": 59
+      "wins": 71,
+      "losses": 68
     },
     "top33": {
       "wins": 4,
-      "losses": 29
+      "losses": 28
     },
     "top10": {
       "wins": 0,
       "losses": 5
     },
     "bonus_rate": {
-      "value": 0.78,
-      "rank": 47,
+      "value": 0.746,
+      "rank": 58,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.729,
-      "rank": 16,
+      "value": 0.704,
+      "rank": 18,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.051,
-      "rank": 81,
+      "value": 0.042,
+      "rank": 99,
       "rank_scope": "league"
     }
   }

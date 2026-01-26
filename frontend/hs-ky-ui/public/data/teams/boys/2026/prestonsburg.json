@@ -11,27 +11,29 @@
   "conference": null,
   "location": {
     "state": "KY",
-    "region": "8"
+    "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818280150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=uvmgssaypj&teamId=1085355143",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.315629Z",
+  "generated_at_utc": "2026-01-26T00:14:10.452603Z",
   "starters": {
     "165": {
       "weight": 165,
       "wrestler_id": "35721995132",
       "name": "Kameron Akers",
       "current_rank": 74,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 12,
+      "losses": 10,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "175": {
       "weight": 175,
       "wrestler_id": "35722142132",
       "name": "Caden Ratliff",
       "current_rank": 19,
-      "xtp": 3.69,
-      "xtp_p": 0.46,
-      "xtp_a": 1.0,
-      "xtp_b": 2.23,
+      "grade": 11,
+      "xtp": 1.43,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 2,
         "losses": 4
-      }
+      },
+      "wins": 12,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "190": {
       "weight": 190,
       "wrestler_id": "35721858132",
       "name": "Brody Hicks",
       "current_rank": 74,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 15,
+      "losses": 10,
+      "top25_wins": 0,
+      "bonus_rate": 0.733
     },
     "215": {
       "weight": 215,
       "wrestler_id": "35721860132",
       "name": "Cash Dotson",
       "current_rank": 105,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 4
-      }
+      },
+      "wins": 2,
+      "losses": 11,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
     },
     "285": {
       "weight": 285,
       "wrestler_id": "35837877132",
       "name": "Karston Johnson",
       "current_rank": 304,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -111,7 +137,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   },
   "remaining": [
@@ -119,6 +149,7 @@
       "weight": 126,
       "wrestler_id": "35723495132",
       "name": "Layla Lawrence",
+      "grade": null,
       "wins": 0,
       "losses": 1,
       "top25_wins": 0,
@@ -128,6 +159,7 @@
       "weight": 132,
       "wrestler_id": "35722340132",
       "name": "Hannah Ratliff",
+      "grade": null,
       "wins": 0,
       "losses": 1,
       "top25_wins": 0,
@@ -137,6 +169,7 @@
       "weight": 165,
       "wrestler_id": "35723492132",
       "name": "Bralyn Maynard",
+      "grade": null,
       "wins": 1,
       "losses": 0,
       "top25_wins": 0,
@@ -146,6 +179,7 @@
       "weight": 165,
       "wrestler_id": "35723511132",
       "name": "Caroline Sturgill",
+      "grade": null,
       "wins": 0,
       "losses": 2,
       "top25_wins": 0,
@@ -155,6 +189,7 @@
       "weight": 215,
       "wrestler_id": "36227338132",
       "name": "Baron Craft",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -164,14 +199,16 @@
       "weight": 215,
       "wrestler_id": "35721891132",
       "name": "Noah Price",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 0.5,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 0.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -182,7 +219,7 @@
     "bonus_points": null,
     "overall": {
       "wins": 41,
-      "losses": 37
+      "losses": 38
     },
     "top33": {
       "wins": 2,
@@ -194,17 +231,17 @@
     },
     "bonus_rate": {
       "value": 0.878,
-      "rank": 10,
+      "rank": 9,
       "rank_scope": "league"
     },
     "pin_rate": {
       "value": 0.829,
-      "rank": 7,
+      "rank": 5,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.024,
-      "rank": 119,
+      "rank": 123,
       "rank_scope": "league"
     }
   }

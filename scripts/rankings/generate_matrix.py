@@ -311,9 +311,31 @@ def build_matrix_data(
         else:
             winfo["is_starter"] = False
     
+    # Mark wrestlers as inactive if 30+ days since last match (but not 0-0)
+    # last_match_date is calculated in load_data.py across ALL weight classes
+    today = datetime.today().date()
+    
+    for wid, winfo in wrestler_list:
+        wins = winfo.get("wins", 0) or 0
+        losses = winfo.get("losses", 0) or 0
+        has_no_matches = (wins == 0 and losses == 0)
+        
+        # Get last_match_date from wrestler info (calculated in load_data.py across all weight classes)
+        last_match_date_str = winfo.get('last_match_date')
+        if not has_no_matches and last_match_date_str:
+            try:
+                # Parse ISO format date (YYYY-MM-DD)
+                last_match_date = datetime.fromisoformat(last_match_date_str).date()
+                days_since_last_match = (today - last_match_date).days
+                winfo["is_inactive"] = days_since_last_match >= 30
+            except (ValueError, TypeError):
+                # If date parsing fails, default to not inactive
+                winfo["is_inactive"] = False
+        else:
+            winfo["is_inactive"] = False
+    
     # Build matrix
     matrix = {}
-    today = datetime.today().date()
     
     for i, (w1_id, w1_info) in enumerate(wrestler_list):
         for j, (w2_id, w2_info) in enumerate(wrestler_list):
@@ -807,6 +829,12 @@ def generate_html_matrix(
             padding: 2px 4px;
             border-radius: 3px;
         }}
+        /* Wrestlers who haven't wrestled in 30+ days (inactive) */
+        .inactive-row .wrestler-name {{
+            background-color: #ffb366;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }}
         /* Wrestlers ranked outside their hard_min/hard_max range */
         .rank-out-of-band-row .wrestler-name {{
             background-color: #ffcccc;
@@ -967,6 +995,9 @@ def generate_html_matrix(
             row_classes.append("unranked-row")
         if has_no_matches:
             row_classes.append("no-matches-row")
+        # Inactive highlighting (30+ days) - only if not already 0-0 (blue takes priority)
+        elif wrestler.get('is_inactive', False):
+            row_classes.append("inactive-row")
         if is_out_of_band:
             row_classes.append("rank-out-of-band-row")
         if not wrestler.get('is_starter', True):
@@ -993,7 +1024,8 @@ def generate_html_matrix(
                                     <span class="rank-arrow" onclick="moveUp(this)" title="Move up">↑</span>
                                     <span class="rank-arrow" onclick="moveDown(this)" title="Move down">↓</span>
                                 </div>"""
-        if has_no_matches:
+        is_inactive = wrestler.get('is_inactive', False)
+        if has_no_matches or is_inactive:
             html_content += f"""
                                 <div class="rank-setter">
                                     <input type="number" min="1" max="{total_wrestlers}" class="rank-set-input" value="{total_wrestlers}" />

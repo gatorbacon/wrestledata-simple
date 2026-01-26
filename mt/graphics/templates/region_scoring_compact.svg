@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#ffffff"/>
+  
+  <!-- Header Container: 90px tall, starts at y=24 -->
+  <g id="header">
+    <text x="540" y="66" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#000000" text-anchor="middle">KENTUCKY STATE WRESTLING — REGION SCORING</text>
+    <text x="540" y="88" font-family="Arial, sans-serif" font-size="22" fill="#666666" text-anchor="middle">Top 3 Teams by Region | Boys State Tournament</text>
+    <text x="540" y="108" font-family="Arial, sans-serif" font-size="16" fill="#999999" text-anchor="middle">Regions ranked by total points</text>
+  </g>
+  
+  <!-- Regions start at y=114 (24 + 90) -->
+  <g id="regions">
+    <!-- Regions will be populated dynamically -->
+  </g>
+</svg>

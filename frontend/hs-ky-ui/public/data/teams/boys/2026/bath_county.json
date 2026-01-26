@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:57.616545Z",
+  "generated_at_utc": "2026-01-26T00:14:10.775917Z",
   "starters": {
     "113": {
       "weight": 113,
       "wrestler_id": "37045410132",
       "name": "Tyson Powell",
       "current_rank": 138,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35767085132",
       "name": "Tyler Monroe",
       "current_rank": 168,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "126": {
       "weight": 126,
       "wrestler_id": "35767056132",
       "name": "Elijah Jackson",
       "current_rank": 172,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 3,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35766995132",
       "name": "Chance Ellis",
       "current_rank": 84,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 5,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "175": {
       "weight": 175,
       "wrestler_id": "35766837132",
       "name": "Branson Bartlett",
       "current_rank": 130,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -111,17 +137,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "285": {
       "weight": 285,
       "wrestler_id": "38154863132",
       "name": "Owen Ferrell",
       "current_rank": 324,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -129,7 +161,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   },
   "remaining": [
@@ -137,14 +173,16 @@
       "weight": 126,
       "wrestler_id": "37045377132",
       "name": "Ondray Johnson",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -154,8 +192,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 7,
-      "losses": 16
+      "wins": 9,
+      "losses": 17
     },
     "top33": {
       "wins": 0,
@@ -166,18 +204,18 @@
       "losses": 1
     },
     "bonus_rate": {
-      "value": 0.857,
-      "rank": 17,
+      "value": 0.889,
+      "rank": 6,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.571,
-      "rank": 107,
+      "value": 0.667,
+      "rank": 34,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 140,
+      "rank": 142,
       "rank_scope": "league"
     }
   }

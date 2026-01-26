@@ -11,27 +11,29 @@
   "conference": null,
   "location": {
     "state": "KY",
-    "region": "7"
+    "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818327150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=uvmgssaypj&teamId=1085402143",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:57.953227Z",
+  "generated_at_utc": "2026-01-26T00:14:10.017390Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35640343132",
       "name": "Kristina Boggs",
       "current_rank": 170,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,35 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
-    },
-    "113": {
-      "weight": 113,
-      "wrestler_id": "35639988132",
-      "name": "Jason Maggard",
-      "current_rank": 27,
-      "xtp": 2.66,
-      "xtp_p": 0.31,
-      "xtp_a": 0.75,
-      "xtp_b": 1.6,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
       },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      }
+      "wins": 4,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "126": {
       "weight": 126,
       "wrestler_id": "35640358132",
       "name": "Faith Saylor",
       "current_rank": 168,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -75,17 +65,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 1,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35640192132",
       "name": "Cameron Fortune",
       "current_rank": 126,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -93,17 +89,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 8,
+      "losses": 12,
+      "top25_wins": 0,
+      "bonus_rate": 0.75
     },
     "144": {
       "weight": 144,
       "wrestler_id": "35640092132",
       "name": "Connor Crider",
       "current_rank": 160,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -111,17 +113,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "150": {
       "weight": 150,
       "wrestler_id": "37175988132",
       "name": "Jamie Delph",
       "current_rank": 177,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -129,17 +137,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 0,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35639987132",
       "name": "Josh Stewart",
       "current_rank": 72,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -147,17 +161,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 4,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "175": {
       "weight": 175,
       "wrestler_id": "35639986132",
       "name": "Dylan Clem",
       "current_rank": 84,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -165,17 +185,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 11,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.818
     },
     "190": {
       "weight": 190,
       "wrestler_id": "35639989132",
       "name": "Michael Peterson",
       "current_rank": 167,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -183,17 +209,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 0,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "215": {
       "weight": 215,
       "wrestler_id": "35639990132",
       "name": "Blake Short",
       "current_rank": 67,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -201,17 +233,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 11,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.727
     },
     "285": {
       "weight": 285,
       "wrestler_id": "35640109132",
       "name": "Izak Powers",
       "current_rank": 171,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -219,14 +257,29 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 2,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
     }
   },
   "remaining": [
     {
+      "weight": 113,
+      "wrestler_id": "35639988132",
+      "name": "Jason Maggard",
+      "grade": 12,
+      "wins": 3,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
       "weight": 175,
       "wrestler_id": "35640209132",
       "name": "Alex Hubbard",
+      "grade": 7,
       "wins": 2,
       "losses": 5,
       "top25_wins": 0,
@@ -236,6 +289,7 @@
       "weight": 175,
       "wrestler_id": "37175968132",
       "name": "Camden Middleton",
+      "grade": 10,
       "wins": 0,
       "losses": 2,
       "top25_wins": 0,
@@ -245,6 +299,7 @@
       "weight": 215,
       "wrestler_id": "35640247132",
       "name": "Bo Eldridge",
+      "grade": 11,
       "wins": 12,
       "losses": 6,
       "top25_wins": 0,
@@ -254,14 +309,16 @@
       "weight": 215,
       "wrestler_id": "35640172132",
       "name": "Tyler Foster",
+      "grade": 9,
       "wins": 6,
       "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.833
     }
   ],
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -271,8 +328,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 38,
-      "losses": 49
+      "wins": 41,
+      "losses": 52
     },
     "top33": {
       "wins": 0,
@@ -283,18 +340,18 @@
       "losses": 1
     },
     "bonus_rate": {
-      "value": 0.684,
-      "rank": 95,
+      "value": 0.683,
+      "rank": 87,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.579,
-      "rank": 102,
+      "value": 0.61,
+      "rank": 71,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.105,
-      "rank": 36,
+      "value": 0.049,
+      "rank": 91,
       "rank_scope": "league"
     }
   }

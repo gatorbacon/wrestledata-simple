@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.709685Z",
+  "generated_at_utc": "2026-01-26T00:14:11.194845Z",
   "starters": {
     "100": {
       "weight": 100,
       "wrestler_id": "35672624132",
       "name": "Savannah Martin",
       "current_rank": 10,
-      "xtp": 7.29,
+      "grade": null,
+      "xtp": 3.59,
       "xtp_p": 1.9,
       "xtp_a": 1.69,
-      "xtp_b": 3.7,
+      "xtp_b": 0.0,
+      "xtp_simple": 3.0,
       "top10_record": {
         "wins": 1,
         "losses": 4
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 2,
         "losses": 4
-      }
+      },
+      "wins": 5,
+      "losses": 4,
+      "top25_wins": 2,
+      "bonus_rate": 0.8
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35672645132",
       "name": "Abigail Nolan",
       "current_rank": 54,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 2,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "126": {
       "weight": 126,
       "wrestler_id": "35672635132",
       "name": "Kaylee Sullivan",
       "current_rank": 41,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 4
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 1,
         "losses": 9
-      }
+      },
+      "wins": 6,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35672613132",
       "name": "Emily Schroader",
       "current_rank": 3,
-      "xtp": 15.24,
+      "grade": null,
+      "xtp": 11.14,
       "xtp_p": 8.02,
       "xtp_a": 3.12,
-      "xtp_b": 4.1,
+      "xtp_b": 0.0,
+      "xtp_simple": 21.0,
       "top10_record": {
         "wins": 4,
         "losses": 1
@@ -93,7 +113,11 @@
       "top33_record": {
         "wins": 7,
         "losses": 1
-      }
+      },
+      "wins": 10,
+      "losses": 1,
+      "top25_wins": 5,
+      "bonus_rate": 0.9
     }
   },
   "remaining": [
@@ -101,14 +125,16 @@
       "weight": 126,
       "wrestler_id": "35672661132",
       "name": "Embree Root",
+      "grade": null,
       "wins": 0,
       "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 24.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 24.0,
     "team_rank": {
       "value": null,
       "rank": null,

@@ -133,6 +133,7 @@ def aggregate_team_xtp(season: int, data_dir: str, weights: List[int], league: s
                     "team_xTP_P": 0.0,
                     "team_xTP_B": 0.0,
                     "team_xTP": 0.0,
+                    "team_xTP_simple": 0.0,  # New simplified scoring total
                     "weights": {}
                 }
             
@@ -141,6 +142,7 @@ def aggregate_team_xtp(season: int, data_dir: str, weights: List[int], league: s
             teams[team]["team_xTP_P"] += entry.get("xTP_P", 0.0)
             teams[team]["team_xTP_B"] += entry.get("xTP_B", 0.0)
             teams[team]["team_xTP"] += entry.get("xTP", 0.0)
+            teams[team]["team_xTP_simple"] += entry.get("xTP_simple", 0.0)  # Sum xTP_simple
             
             # Store per-weight breakdown
             teams[team]["weights"][str(weight)] = {
@@ -151,6 +153,7 @@ def aggregate_team_xtp(season: int, data_dir: str, weights: List[int], league: s
                 "xTP_P": entry.get("xTP_P", 0.0),
                 "xTP_B": entry.get("xTP_B", 0.0),
                 "xTP": entry.get("xTP", 0.0),
+                "xTP_simple": entry.get("xTP_simple", 0.0),  # Per-weight xTP_simple
                 # Include placement probabilities if available
                 "aa_prob": entry.get("aa_prob", None),
                 "champ_prob": entry.get("champ_prob", None),
@@ -242,7 +245,7 @@ def print_team_leaderboard(teams: Dict[str, Dict], limit: Optional[int] = None) 
         teams: Dict mapping team name to team data
         limit: Optional limit on number of entries to print
     """
-    # Convert to sorted list
+    # Convert to sorted list (by detailed xTP)
     teams_list = list(teams.values())
     teams_list.sort(key=lambda t: (-t["team_xTP"], -t["team_xTP_P"], -t["team_xTP_A"], t["team"]))
     
@@ -256,6 +259,13 @@ def print_team_leaderboard(teams: Dict[str, Dict], limit: Optional[int] = None) 
     # Calculate column widths
     max_team_len = max(len(team.get("team", "")) for team in teams_list)
     team_width = max(20, min(max_team_len + 2, 30))
+    
+    # ================================================================================
+    # TABLE 1: Detailed xTP (Placement + Advancement + Bonus)
+    # ================================================================================
+    print("=" * 80)
+    print("DETAILED xTP LEADERBOARD (Placement + Advancement + Bonus)")
+    print("=" * 80)
     
     # Print header
     header = (
@@ -292,6 +302,45 @@ def print_team_leaderboard(teams: Dict[str, Dict], limit: Optional[int] = None) 
         print(row)
     
     print(f"\nTotal teams: {len(teams_list)}")
+    
+    # ================================================================================
+    # TABLE 2: Simplified xTP_simple (Rank-based scoring)
+    # ================================================================================
+    print("\n" + "=" * 80)
+    print("SIMPLIFIED xTP_simple LEADERBOARD (Rank-based scoring)")
+    print("=" * 80)
+    print("Note: Projected points are based on statewide rank.")
+    print()
+    
+    # Sort by xTP_simple for the simplified table
+    teams_list_simple = sorted(teams_list, key=lambda t: (-t.get("team_xTP_simple", 0.0), t["team"]))
+    
+    # Print header
+    header_simple = (
+        f"{'Rank':<6} "
+        f"{'Team':<{team_width}} "
+        f"{'team_xTP_simple':<15}"
+    )
+    print(header_simple)
+    print("-" * len(header_simple))
+    
+    # Print entries
+    for rank, team in enumerate(teams_list_simple, 1):
+        team_name = team.get("team", "Unknown")
+        xTP_simple = team.get("team_xTP_simple", 0.0)
+        
+        # Truncate team name if too long
+        if len(team_name) > team_width - 2:
+            team_name = team_name[:team_width - 5] + "..."
+        
+        row = (
+            f"{rank:<6} "
+            f"{team_name:<{team_width}} "
+            f"{xTP_simple:>14.2f}"
+        )
+        print(row)
+    
+    print(f"\nTotal teams: {len(teams_list_simple)}")
 
 
 def main():

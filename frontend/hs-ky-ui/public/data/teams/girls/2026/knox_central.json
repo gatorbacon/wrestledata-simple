@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.856584Z",
+  "generated_at_utc": "2026-01-26T00:14:11.388431Z",
   "starters": {
     "132": {
       "weight": 132,
       "wrestler_id": "35900612132",
       "name": "Austyn Hammons",
       "current_rank": 62,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 5
-      }
+      },
+      "wins": 5,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.6
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35900892132",
       "name": "Amber Honeycutt",
       "current_rank": 16,
-      "xtp": 4.31,
+      "grade": null,
+      "xtp": 1.55,
       "xtp_p": 0.47,
       "xtp_a": 1.08,
-      "xtp_b": 2.76,
+      "xtp_b": 0.0,
+      "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 2,
         "losses": 3
-      }
+      },
+      "wins": 8,
+      "losses": 3,
+      "top25_wins": 2,
+      "bonus_rate": 0.75
     },
     "145": {
       "weight": 145,
       "wrestler_id": "35900959132",
       "name": "Kadence Newkirk",
       "current_rank": 10,
-      "xtp": 7.0,
+      "grade": null,
+      "xtp": 3.81,
       "xtp_p": 2.03,
       "xtp_a": 1.78,
-      "xtp_b": 3.19,
+      "xtp_b": 0.0,
+      "xtp_simple": 3.0,
       "top10_record": {
         "wins": 0,
         "losses": 3
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 4,
         "losses": 3
-      }
+      },
+      "wins": 8,
+      "losses": 3,
+      "top25_wins": 2,
+      "bonus_rate": 0.5
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35900724132",
       "name": "Miley Brown",
       "current_rank": 91,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -93,7 +113,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   },
   "remaining": [
@@ -101,14 +125,16 @@
       "weight": 145,
       "wrestler_id": "35900702132",
       "name": "Kyra Newkirk",
+      "grade": null,
       "wins": 8,
       "losses": 3,
       "top25_wins": 3,
       "bonus_rate": 0.5
     }
   ],
+  "team_xTP_simple": 5.5,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 5.5,
     "team_rank": {
       "value": null,
       "rank": null,

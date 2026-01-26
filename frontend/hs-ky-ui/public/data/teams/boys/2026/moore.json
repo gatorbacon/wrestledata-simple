@@ -11,27 +11,29 @@
   "conference": null,
   "location": {
     "state": "KY",
-    "region": "4"
+    "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818265150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=uvmgssaypj&teamId=1085340143",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.190875Z",
+  "generated_at_utc": "2026-01-26T00:14:10.284047Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "34993548132",
       "name": "Trenton Bratcher",
       "current_rank": 8,
-      "xtp": 7.43,
+      "grade": 10,
+      "xtp": 4.34,
       "xtp_p": 2.43,
       "xtp_a": 1.91,
-      "xtp_b": 3.09,
+      "xtp_b": 0.0,
+      "xtp_simple": 8.5,
       "top10_record": {
         "wins": 1,
         "losses": 5
@@ -39,35 +41,47 @@
       "top33_record": {
         "wins": 5,
         "losses": 5
-      }
+      },
+      "wins": 29,
+      "losses": 11,
+      "top25_wins": 2,
+      "bonus_rate": 0.793
     },
     "113": {
       "weight": 113,
-      "wrestler_id": "36863558132",
-      "name": "Chris Ferrer",
-      "current_rank": 72,
+      "wrestler_id": "35118884132",
+      "name": "Kaden Beamus",
+      "current_rank": 168,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
-      }
+        "losses": 0
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "120": {
       "weight": 120,
       "wrestler_id": "34993552132",
       "name": "Logan Gevedon",
       "current_rank": 30,
-      "xtp": 1.51,
-      "xtp_p": 0.2,
-      "xtp_a": 0.54,
-      "xtp_b": 0.77,
+      "grade": 11,
+      "xtp": 0.62,
+      "xtp_p": 0.11,
+      "xtp_a": 0.51,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 2,
         "losses": 9
-      }
+      },
+      "wins": 20,
+      "losses": 16,
+      "top25_wins": 1,
+      "bonus_rate": 0.8
     },
     "126": {
       "weight": 126,
       "wrestler_id": "34993554132",
       "name": "Kevin Hernandez Gari",
       "current_rank": 40,
-      "xtp": 1.08,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.73,
+      "grade": 10,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 4
-      }
+      },
+      "wins": 15,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.733
     },
     "132": {
       "weight": 132,
       "wrestler_id": "34993557132",
       "name": "Joshua Slebo",
       "current_rank": 24,
-      "xtp": 1.02,
-      "xtp_p": 0.03,
-      "xtp_a": 0.3,
-      "xtp_b": 0.69,
+      "grade": 10,
+      "xtp": 1.18,
+      "xtp_p": 0.37,
+      "xtp_a": 0.81,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -111,17 +137,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 8,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.625
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35110070132",
       "name": "Manuel Nivar",
       "current_rank": 44,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -129,17 +161,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 8,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.625
     },
     "144": {
       "weight": 144,
       "wrestler_id": "34993545132",
       "name": "Kalob Wise",
       "current_rank": 5,
-      "xtp": 12.55,
-      "xtp_p": 6.31,
-      "xtp_a": 2.77,
-      "xtp_b": 3.47,
+      "grade": 11,
+      "xtp": 7.66,
+      "xtp_p": 5.13,
+      "xtp_a": 2.53,
+      "xtp_b": 0.0,
+      "xtp_simple": 15.0,
       "top10_record": {
         "wins": 2,
         "losses": 1
@@ -147,17 +185,23 @@
       "top33_record": {
         "wins": 5,
         "losses": 1
-      }
+      },
+      "wins": 26,
+      "losses": 4,
+      "top25_wins": 5,
+      "bonus_rate": 0.731
     },
     "150": {
       "weight": 150,
       "wrestler_id": "34993550132",
       "name": "Santiago Gonzalez",
       "current_rank": 4,
-      "xtp": 13.54,
+      "grade": 10,
+      "xtp": 9.08,
       "xtp_p": 6.31,
       "xtp_a": 2.77,
-      "xtp_b": 4.46,
+      "xtp_b": 0.0,
+      "xtp_simple": 19.0,
       "top10_record": {
         "wins": 4,
         "losses": 3
@@ -165,17 +209,23 @@
       "top33_record": {
         "wins": 10,
         "losses": 3
-      }
+      },
+      "wins": 28,
+      "losses": 4,
+      "top25_wins": 8,
+      "bonus_rate": 0.929
     },
     "157": {
       "weight": 157,
       "wrestler_id": "34993547132",
       "name": "Joseph Habimana",
       "current_rank": 12,
-      "xtp": 5.13,
+      "grade": 11,
+      "xtp": 2.87,
       "xtp_p": 1.4,
       "xtp_a": 1.47,
-      "xtp_b": 2.26,
+      "xtp_b": 0.0,
+      "xtp_simple": 3.0,
       "top10_record": {
         "wins": 2,
         "losses": 6
@@ -183,17 +233,23 @@
       "top33_record": {
         "wins": 9,
         "losses": 6
-      }
+      },
+      "wins": 29,
+      "losses": 10,
+      "top25_wins": 6,
+      "bonus_rate": 0.586
     },
     "165": {
       "weight": 165,
       "wrestler_id": "36784561132",
       "name": "Grayson Smith",
       "current_rank": 183,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -201,35 +257,47 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 4,
+      "losses": 13,
+      "top25_wins": 0,
+      "bonus_rate": 0.25
     },
     "175": {
       "weight": 175,
-      "wrestler_id": "35094089132",
-      "name": "Dixan Martinez",
-      "current_rank": 103,
+      "wrestler_id": "35073240132",
+      "name": "Christian Del Toro Avila",
+      "current_rank": 109,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
-      }
+        "losses": 1
+      },
+      "wins": 3,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.333
     },
     "190": {
       "weight": 190,
       "wrestler_id": "34993555132",
       "name": "Marcus Mahan",
       "current_rank": 63,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 4
@@ -237,17 +305,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 8
-      }
+      },
+      "wins": 9,
+      "losses": 19,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
     },
     "215": {
       "weight": 215,
       "wrestler_id": "34993551132",
       "name": "Jamison Wester",
       "current_rank": 31,
-      "xtp": 1.16,
-      "xtp_p": 0.15,
-      "xtp_a": 0.44,
-      "xtp_b": 0.57,
+      "grade": 11,
+      "xtp": 0.67,
+      "xtp_p": 0.18,
+      "xtp_a": 0.49,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -255,17 +329,23 @@
       "top33_record": {
         "wins": 1,
         "losses": 6
-      }
+      },
+      "wins": 19,
+      "losses": 14,
+      "top25_wins": 0,
+      "bonus_rate": 0.737
     },
     "285": {
       "weight": 285,
       "wrestler_id": "35104595132",
       "name": "Kean Minth",
       "current_rank": 72,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -273,7 +353,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 4
-      }
+      },
+      "wins": 6,
+      "losses": 14,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
     }
   },
   "remaining": [
@@ -281,6 +365,7 @@
       "weight": 106,
       "wrestler_id": "34993565132",
       "name": "Lenda Saleh",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -290,6 +375,7 @@
       "weight": 106,
       "wrestler_id": "35179692132",
       "name": "William Kuwa",
+      "grade": 10,
       "wins": 6,
       "losses": 19,
       "top25_wins": 0,
@@ -297,10 +383,11 @@
     },
     {
       "weight": 113,
-      "wrestler_id": "35118884132",
-      "name": "Kaden Beamus",
-      "wins": 0,
-      "losses": 0,
+      "wrestler_id": "36863558132",
+      "name": "Chris Ferrer",
+      "grade": 10,
+      "wins": 3,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -308,6 +395,7 @@
       "weight": 120,
       "wrestler_id": "35104914132",
       "name": "Cayden Almodovar",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -317,6 +405,7 @@
       "weight": 120,
       "wrestler_id": "35179700132",
       "name": "Roderick rivera",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -326,6 +415,7 @@
       "weight": 126,
       "wrestler_id": "35073324132",
       "name": "Carlos Lopez Ortiz",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -335,6 +425,7 @@
       "weight": 126,
       "wrestler_id": "34993556132",
       "name": "Joseph Muhinda",
+      "grade": 10,
       "wins": 13,
       "losses": 5,
       "top25_wins": 1,
@@ -344,6 +435,7 @@
       "weight": 132,
       "wrestler_id": "34993569132",
       "name": "Kris Gevedon",
+      "grade": 10,
       "wins": 1,
       "losses": 3,
       "top25_wins": 0,
@@ -353,6 +445,7 @@
       "weight": 132,
       "wrestler_id": "34993558132",
       "name": "Manuel Moore Alonzo",
+      "grade": 10,
       "wins": 7,
       "losses": 18,
       "top25_wins": 0,
@@ -362,6 +455,7 @@
       "weight": 132,
       "wrestler_id": "35939849132",
       "name": "Tyson English",
+      "grade": 10,
       "wins": 6,
       "losses": 6,
       "top25_wins": 0,
@@ -371,6 +465,7 @@
       "weight": 138,
       "wrestler_id": "35073457132",
       "name": "Daylin McDade",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -380,6 +475,7 @@
       "weight": 138,
       "wrestler_id": "34993546132",
       "name": "Javen Dover",
+      "grade": 12,
       "wins": 11,
       "losses": 11,
       "top25_wins": 0,
@@ -389,6 +485,7 @@
       "weight": 144,
       "wrestler_id": "35073280132",
       "name": "Joshua Hatfield",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -398,6 +495,7 @@
       "weight": 144,
       "wrestler_id": "35073272132",
       "name": "Marco Abella Acosta",
+      "grade": 9,
       "wins": 2,
       "losses": 8,
       "top25_wins": 0,
@@ -407,6 +505,7 @@
       "weight": 144,
       "wrestler_id": "35081794132",
       "name": "Mohammed Mohammed",
+      "grade": 10,
       "wins": 4,
       "losses": 2,
       "top25_wins": 0,
@@ -416,6 +515,7 @@
       "weight": 150,
       "wrestler_id": "34993553132",
       "name": "Adrian Pitvoric",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -425,6 +525,7 @@
       "weight": 150,
       "wrestler_id": "35073603132",
       "name": "Jorelson Beaubrun",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -434,6 +535,7 @@
       "weight": 150,
       "wrestler_id": "35104950132",
       "name": "marcus anthony",
+      "grade": 9,
       "wins": 11,
       "losses": 8,
       "top25_wins": 0,
@@ -443,6 +545,7 @@
       "weight": 157,
       "wrestler_id": "36442900132",
       "name": "Luke Gravel",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -452,6 +555,7 @@
       "weight": 157,
       "wrestler_id": "35138065132",
       "name": "Maddox Knuckles",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -461,6 +565,7 @@
       "weight": 165,
       "wrestler_id": "35073554132",
       "name": "Chandon Dudley",
+      "grade": 9,
       "wins": 3,
       "losses": 4,
       "top25_wins": 0,
@@ -470,6 +575,7 @@
       "weight": 165,
       "wrestler_id": "35138318132",
       "name": "Joseph martin",
+      "grade": null,
       "wins": 0,
       "losses": 2,
       "top25_wins": 0,
@@ -477,17 +583,19 @@
     },
     {
       "weight": 175,
-      "wrestler_id": "35073240132",
-      "name": "Christian Del Toro Avila",
-      "wins": 3,
-      "losses": 2,
+      "wrestler_id": "35094089132",
+      "name": "Dixan Martinez",
+      "grade": 10,
+      "wins": 2,
+      "losses": 3,
       "top25_wins": 0,
-      "bonus_rate": 0.333
+      "bonus_rate": 0.5
     },
     {
       "weight": 175,
       "wrestler_id": "35939793132",
       "name": "Treson English",
+      "grade": 10,
       "wins": 5,
       "losses": 8,
       "top25_wins": 0,
@@ -497,6 +605,7 @@
       "weight": 190,
       "wrestler_id": "35073338132",
       "name": "Nicholas Ishage",
+      "grade": 10,
       "wins": 5,
       "losses": 5,
       "top25_wins": 0,
@@ -506,6 +615,7 @@
       "weight": 190,
       "wrestler_id": "34995416132",
       "name": "Zachary Embry",
+      "grade": 9,
       "wins": 3,
       "losses": 6,
       "top25_wins": 0,
@@ -515,6 +625,7 @@
       "weight": 215,
       "wrestler_id": "35081782132",
       "name": "Adrian Martinez",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -524,6 +635,7 @@
       "weight": 215,
       "wrestler_id": "35138442132",
       "name": "David Bustillo",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -533,6 +645,7 @@
       "weight": 215,
       "wrestler_id": "35073353132",
       "name": "Ethan Johnson",
+      "grade": 9,
       "wins": 0,
       "losses": 1,
       "top25_wins": 0,
@@ -542,6 +655,7 @@
       "weight": 215,
       "wrestler_id": "34993597132",
       "name": "Nathan Burnes",
+      "grade": 9,
       "wins": 2,
       "losses": 14,
       "top25_wins": 0,
@@ -551,6 +665,7 @@
       "weight": 285,
       "wrestler_id": "35138532132",
       "name": "Gabriel Salas",
+      "grade": 10,
       "wins": 3,
       "losses": 5,
       "top25_wins": 0,
@@ -560,6 +675,7 @@
       "weight": 285,
       "wrestler_id": "35073509132",
       "name": "Karam Saleh",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -569,6 +685,7 @@
       "weight": 285,
       "wrestler_id": "35073378132",
       "name": "Maddox Victor",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -578,14 +695,16 @@
       "weight": 285,
       "wrestler_id": "35179638132",
       "name": "Philippe Louidergens Liberal",
+      "grade": null,
       "wins": 0,
       "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 46.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 46.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -595,8 +714,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 173,
-      "losses": 101
+      "wins": 204,
+      "losses": 121
     },
     "top33": {
       "wins": 32,
@@ -607,18 +726,18 @@
       "losses": 27
     },
     "bonus_rate": {
-      "value": 0.682,
-      "rank": 97,
+      "value": 0.721,
+      "rank": 69,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.526,
-      "rank": 126,
+      "value": 0.534,
+      "rank": 118,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.104,
-      "rank": 37,
+      "value": 0.127,
+      "rank": 19,
       "rank_scope": "league"
     }
   }

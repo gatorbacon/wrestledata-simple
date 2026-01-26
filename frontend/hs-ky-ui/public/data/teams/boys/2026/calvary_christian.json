@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:57.712122Z",
+  "generated_at_utc": "2026-01-26T00:14:10.782500Z",
   "starters": {
     "175": {
       "weight": 175,
       "wrestler_id": "35212846132",
       "name": "Preston Ross",
       "current_rank": 70,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -39,12 +41,17 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 8,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     }
   },
   "remaining": [],
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -72,12 +79,12 @@
     },
     "pin_rate": {
       "value": 0.75,
-      "rank": 14,
+      "rank": 12,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.125,
-      "rank": 22,
+      "rank": 21,
       "rank_scope": "league"
     }
   }

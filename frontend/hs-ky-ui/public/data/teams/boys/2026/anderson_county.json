@@ -11,27 +11,29 @@
   "conference": null,
   "location": {
     "state": "KY",
-    "region": "4"
+    "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818208150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=uvmgssaypj&teamId=1085285143",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:57.568782Z",
+  "generated_at_utc": "2026-01-26T00:14:09.533692Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "37425785132",
       "name": "Rayden Steele",
       "current_rank": 154,
+      "grade": 7,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "113": {
       "weight": 113,
       "wrestler_id": "37161637132",
       "name": "AnnaLee McKewen",
       "current_rank": 125,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "120": {
       "weight": 120,
       "wrestler_id": "37425957132",
       "name": "Rowan Cummins",
       "current_rank": 179,
+      "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35520541132",
       "name": "Corban Nance",
       "current_rank": 1,
-      "xtp": 20.79,
+      "grade": 12,
+      "xtp": 16.56,
       "xtp_p": 12.83,
       "xtp_a": 3.73,
-      "xtp_b": 4.23,
+      "xtp_b": 0.0,
+      "xtp_simple": 30.0,
       "top10_record": {
         "wins": 2,
         "losses": 0
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 7,
         "losses": 0
-      }
+      },
+      "wins": 18,
+      "losses": 0,
+      "top25_wins": 7,
+      "bonus_rate": 0.944
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35519992132",
       "name": "Brice Burford",
       "current_rank": 47,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -111,17 +137,23 @@
       "top33_record": {
         "wins": 1,
         "losses": 6
-      }
+      },
+      "wins": 8,
+      "losses": 9,
+      "top25_wins": 1,
+      "bonus_rate": 0.875
     },
     "144": {
       "weight": 144,
       "wrestler_id": "35520779132",
       "name": "Ashton Edwards",
       "current_rank": 164,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -129,17 +161,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 3,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
     },
     "150": {
       "weight": 150,
       "wrestler_id": "35519650132",
       "name": "Jaylen Crutcher",
       "current_rank": 47,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -147,17 +185,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "157": {
       "weight": 157,
       "wrestler_id": "35527112132",
       "name": "Carson Nance",
       "current_rank": 3,
-      "xtp": 13.73,
+      "grade": 10,
+      "xtp": 11.14,
       "xtp_p": 8.02,
       "xtp_a": 3.12,
-      "xtp_b": 2.59,
+      "xtp_b": 0.0,
+      "xtp_simple": 21.0,
       "top10_record": {
         "wins": 6,
         "losses": 0
@@ -165,17 +209,23 @@
       "top33_record": {
         "wins": 8,
         "losses": 0
-      }
+      },
+      "wins": 18,
+      "losses": 2,
+      "top25_wins": 8,
+      "bonus_rate": 0.667
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35527478132",
       "name": "Ahlijah Bolling",
       "current_rank": 168,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -183,17 +233,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 0,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "175": {
       "weight": 175,
       "wrestler_id": "35519852132",
       "name": "Braxton Mackey",
       "current_rank": 8,
-      "xtp": 7.35,
-      "xtp_p": 2.03,
-      "xtp_a": 1.78,
-      "xtp_b": 3.54,
+      "grade": 12,
+      "xtp": 4.34,
+      "xtp_p": 2.43,
+      "xtp_a": 1.91,
+      "xtp_b": 0.0,
+      "xtp_simple": 8.5,
       "top10_record": {
         "wins": 1,
         "losses": 3
@@ -201,17 +257,23 @@
       "top33_record": {
         "wins": 5,
         "losses": 5
-      }
+      },
+      "wins": 12,
+      "losses": 6,
+      "top25_wins": 5,
+      "bonus_rate": 1.0
     },
     "190": {
       "weight": 190,
       "wrestler_id": "35520143132",
       "name": "Edwin Neighbert",
       "current_rank": 187,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -219,17 +281,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "215": {
       "weight": 215,
       "wrestler_id": "35634658132",
       "name": "Eli McCann",
       "current_rank": 123,
+      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -237,17 +305,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 4
-      }
+      },
+      "wins": 2,
+      "losses": 12,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
     },
     "285": {
       "weight": 285,
       "wrestler_id": "35520358132",
       "name": "Ezekiel Pacheco",
       "current_rank": 63,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -255,7 +329,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 4
-      }
+      },
+      "wins": 7,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.857
     }
   },
   "remaining": [
@@ -263,6 +341,7 @@
       "weight": 175,
       "wrestler_id": "35520472132",
       "name": "Wyatt Chilton",
+      "grade": 12,
       "wins": 1,
       "losses": 9,
       "top25_wins": 0,
@@ -272,6 +351,7 @@
       "weight": 190,
       "wrestler_id": "35520696132",
       "name": "Ethan Hawkins",
+      "grade": null,
       "wins": 1,
       "losses": 0,
       "top25_wins": 0,
@@ -281,14 +361,16 @@
       "weight": 215,
       "wrestler_id": "36015944132",
       "name": "Weston Stovall",
+      "grade": 9,
       "wins": 0,
       "losses": 1,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 59.5,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 59.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -298,8 +380,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 65,
-      "losses": 58
+      "wins": 71,
+      "losses": 63
     },
     "top33": {
       "wins": 21,
@@ -310,18 +392,18 @@
       "losses": 8
     },
     "bonus_rate": {
-      "value": 0.846,
-      "rank": 23,
+      "value": 0.845,
+      "rank": 20,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.646,
-      "rank": 50,
+      "value": 0.662,
+      "rank": 40,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.092,
-      "rank": 50,
+      "value": 0.085,
+      "rank": 52,
       "rank_scope": "league"
     }
   }

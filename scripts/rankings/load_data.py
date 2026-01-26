@@ -1175,6 +1175,20 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
         assigned_weight = normalize_weight_class(assigned_weight, league, state, gender) or assigned_weight
 
         wrestler_weight_class[wrestler_id] = assigned_weight
+        
+        # Calculate last match date across ALL weight classes for inactive detection
+        # This is stored in wrestler_info so it's available in relationships and matrix
+        most_recent_match_date_str = get_most_recent_match_date(matches)
+        if most_recent_match_date_str:
+            # Parse MM/DD/YYYY string to date object
+            try:
+                most_recent_date = datetime.strptime(most_recent_match_date_str, "%m/%d/%Y").date()
+                # Store as ISO format string (YYYY-MM-DD) for consistency
+                wrestler_info['last_match_date'] = most_recent_date.isoformat()
+            except (ValueError, TypeError):
+                wrestler_info['last_match_date'] = None
+        else:
+            wrestler_info['last_match_date'] = None
     
     # Save weight confirmations (HS only)
     if league == 'hs':

@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.137626Z",
+  "generated_at_utc": "2026-01-26T00:14:10.907937Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35037159132",
       "name": "Ryker Cooper",
       "current_rank": 198,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35037156132",
       "name": "Alex Cooper",
       "current_rank": 186,
+      "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 0,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "144": {
       "weight": 144,
       "wrestler_id": "35037104132",
       "name": "Blatyn Cooper",
       "current_rank": 49,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 2
-      }
+      },
+      "wins": 4,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
     },
     "150": {
       "weight": 150,
       "wrestler_id": "35037153132",
       "name": "Pierce Jones",
       "current_rank": 206,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "175": {
       "weight": 175,
       "wrestler_id": "35037137132",
       "name": "Gabrielle Mullins",
       "current_rank": 56,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -111,17 +137,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 6,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "190": {
       "weight": 190,
       "wrestler_id": "35037146132",
       "name": "John Bickett",
       "current_rank": 221,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -129,17 +161,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "285": {
       "weight": 285,
       "wrestler_id": "35781841132",
       "name": "Wyatt Wiser",
       "current_rank": 208,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -147,7 +185,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 1,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   },
   "remaining": [
@@ -155,14 +197,16 @@
       "weight": 150,
       "wrestler_id": "35037162132",
       "name": "Mely Serano",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -172,8 +216,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 8,
-      "losses": 9
+      "wins": 11,
+      "losses": 13
     },
     "top33": {
       "wins": 0,
@@ -184,18 +228,18 @@
       "losses": 1
     },
     "bonus_rate": {
-      "value": 0.75,
-      "rank": 66,
+      "value": 0.727,
+      "rank": 68,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.625,
-      "rank": 64,
+      "value": 0.636,
+      "rank": 57,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.125,
-      "rank": 21,
+      "value": 0.091,
+      "rank": 47,
       "rank_scope": "league"
     }
   }

@@ -100,17 +100,25 @@ async function loadTeam(teamSlug) {
               // Add precomputed records for calculateTopRecord compatibility
               match_list: [], // Empty - records are precomputed
               record: {
-                overall: `${starterData.top33_record?.wins || 0}-${starterData.top33_record?.losses || 0}`,
+                overall: `${starterData.wins || 0}-${starterData.losses || 0}`,
               },
               // Add top10/top33 records as metadata
               _top10_record: starterData.top10_record,
               _top33_record: starterData.top33_record,
+              // Add precomputed top25_wins and bonus_rate
+              _top25_wins: starterData.top25_wins,
+              metrics: {
+                bonus_rate: starterData.bonus_rate,
+              },
+              // Add grade for display
+              grade: starterData.grade,
               // Add embedded xTP data for renderStartersTable
               _xtp_data: {
                 xTP: starterData.xtp,
                 xTP_P: starterData.xtp_p,
                 xTP_A: starterData.xtp_a,
                 xTP_B: starterData.xtp_b,
+                xTP_simple: starterData.xtp_simple,  // Simplified rank-based scoring
                 rank: starterData.current_rank,
               },
             }
@@ -125,6 +133,7 @@ async function loadTeam(teamSlug) {
           wrestler_id: rosterData.wrestler_id,
           name: rosterData.name,
           weight_class: rosterData.weight,
+          grade: rosterData.grade,  // Add grade for display
           record: {
             overall: `${rosterData.wins}-${rosterData.losses}`,
           },
@@ -307,10 +316,14 @@ function formatTopRecord(record) {
 }
 
 function computeTeamRankFromData(teamName, teamsData) {
-  // Sort teams: xTP desc, xTP_P desc, team name asc (same as leaderboard)
+  // Sort teams: xTP_simple desc (primary), then xTP desc, team name asc (same as leaderboard)
   const sorted = [...teamsData].sort((a, b) => {
+    // Primary sort: xTP_simple (simplified rank-based scoring)
+    const aSimple = a.team_xTP_simple || 0;
+    const bSimple = b.team_xTP_simple || 0;
+    if (bSimple !== aSimple) return bSimple - aSimple;
+    // Fallback: xTP (detailed model)
     if (b.team_xTP !== a.team_xTP) return b.team_xTP - a.team_xTP;
-    if (b.team_xTP_P !== a.team_xTP_P) return b.team_xTP_P - a.team_xTP_P;
     return a.team.localeCompare(b.team);
   });
   
@@ -595,10 +608,10 @@ async function renderXTPHeadline(xtpData, teamName, xtpRank = null) {
       disclaimerEl = document.createElement("div");
       disclaimerEl.id = "xtp-disclaimer";
       disclaimerEl.style.cssText = "font-size: 0.75rem; color: var(--muted); margin-top: 8px; font-style: italic;";
-      disclaimerEl.textContent = "Projected points based on estimated state tournament advancement.";
-      const breakdownEl = document.querySelector(".xtp-headline-breakdown");
-      if (breakdownEl) {
-        breakdownEl.parentNode.insertBefore(disclaimerEl, breakdownEl.nextSibling);
+      disclaimerEl.textContent = "Projected points are based on statewide rank.";
+      const labelEl = document.querySelector(".xtp-headline-label");
+      if (labelEl) {
+        labelEl.parentNode.insertBefore(disclaimerEl, labelEl.nextSibling);
       }
     }
   } else {
@@ -609,9 +622,12 @@ async function renderXTPHeadline(xtpData, teamName, xtpRank = null) {
     }
   }
   
-  // Large xTP value
-  const total = safe(xtpData.team_xTP, v => v.toFixed(1));
-  const sign = xtpData.team_xTP >= 0 ? "+" : "";
+  // Large xTP value - use xTP_simple as primary, fall back to xTP
+  const primaryScore = xtpData.team_xTP_simple !== null && xtpData.team_xTP_simple !== undefined 
+    ? xtpData.team_xTP_simple 
+    : xtpData.team_xTP;
+  const total = safe(primaryScore, v => v.toFixed(1));
+  const sign = primaryScore >= 0 ? "+" : "";
   document.getElementById("xtp-total").textContent = `${sign}${total}`;
   
   // Rank badge (use provided rank or compute from leaderboard)
@@ -629,10 +645,6 @@ async function renderXTPHeadline(xtpData, teamName, xtpRank = null) {
     }
   }
   
-  // Breakdown text
-  document.getElementById("xtp-p").textContent = safe(xtpData.team_xTP_P, v => v.toFixed(1));
-  document.getElementById("xtp-a").textContent = safe(xtpData.team_xTP_A, v => v.toFixed(1));
-  document.getElementById("xtp-b").textContent = safe(xtpData.team_xTP_B, v => v.toFixed(1));
 }
 
 function resolveSeason() {
@@ -699,13 +711,65 @@ function renderStartersTable(starters, xtpData) {
   console.log(`[HS Team] Rendering ${starters.length} starters`);
   starters.sort((a, b) => a.weight - b.weight);
 
-  // Calculate max xTP for bar scaling (from this team's starters)
+  // Helper function to parse wins/losses from record
+  const parseRecord = (profile) => {
+    const overall = profile?.record?.overall;
+    if (overall && typeof overall === "string") {
+      const parts = overall.split("-");
+      if (parts.length === 2) {
+        return {
+          wins: parseInt(parts[0], 10) || 0,
+          losses: parseInt(parts[1], 10) || 0
+        };
+      }
+    }
+    // Fallback: count from match_list
+    let wins = 0;
+    let losses = 0;
+    const matchList = profile?.match_list;
+    if (matchList && Array.isArray(matchList)) {
+      matchList.forEach(match => {
+        const result = match.result || "";
+        const isWin = result.includes("WIN") || result.includes("W");
+        if (isWin) wins++;
+        else if (result && !result.includes("MFF")) losses++;
+      });
+    }
+    return { wins, losses };
+  };
+
+  // Helper function to count Top 25 wins
+  const countTop25Wins = (profile) => {
+    // Check if using precomputed value from team profile
+    if (profile._top25_wins !== undefined && profile._top25_wins !== null) {
+      return profile._top25_wins;
+    }
+    
+    // Fallback: Calculate from match_list (legacy behavior)
+    const matchList = profile?.match_list || [];
+    let top25Wins = 0;
+    matchList.forEach(match => {
+      const opponentRank = match.opponent_rank;
+      const result = match.result || "";
+      const isWin = result.includes("WIN") || result.includes("W");
+      if (isWin && opponentRank !== null && opponentRank !== undefined && opponentRank <= 25) {
+        top25Wins++;
+      }
+    });
+    return top25Wins;
+  };
+
+  // Calculate max xTP_simple for bar scaling (from this team's starters)
   let maxXTP = 0;
   starters.forEach(({ weight }) => {
     const weightStr = String(weight);
     const weightData = xtpData?.weights?.[weightStr];
-    if (weightData && weightData.xTP !== null && weightData.xTP !== undefined) {
-      if (weightData.xTP > maxXTP) maxXTP = weightData.xTP;
+    // Use xTP_simple as primary, fall back to xTP
+    const score = weightData?.xTP_simple !== null && weightData?.xTP_simple !== undefined 
+      ? weightData.xTP_simple 
+      : weightData?.xTP;
+    if (score !== null && score !== undefined && score > maxXTP) {
+      maxXTP = score;
     }
   });
 
@@ -720,6 +784,16 @@ function renderStartersTable(starters, xtpData) {
     const weightTd = document.createElement("td");
     weightTd.textContent = weight;
     row.appendChild(weightTd);
+
+    // Grade
+    const gradeTd = document.createElement("td");
+    const grade = profile?.grade;
+    if (grade !== null && grade !== undefined) {
+      gradeTd.textContent = grade;
+    } else {
+      gradeTd.textContent = "—";
+    }
+    row.appendChild(gradeTd);
 
     // Wrestler name (clickable) - always show if profile exists
     const wrestlerTd = document.createElement("td");
@@ -781,14 +855,19 @@ function renderStartersTable(starters, xtpData) {
       row.appendChild(mvTd);
     }
 
-    // xTP (total) - primary metric with bar (show "0" if no qualifier)
+    // xTP_simple (primary) - simplified rank-based scoring with bar (show "0" if no qualifier)
     const xtpTd = document.createElement("td");
     xtpTd.className = "num metric-primary expanded-xtp-cell";
     xtpTd.style.cssText = "padding: 6px 12px;";
 
-    if (weightData && weightData.xTP !== null && weightData.xTP !== undefined && weightData.xTP > 0) {
-      // Scale bars relative to max xTP in THIS team's starters
-      xtpTd.appendChild(createMetricBar(weightData.xTP, maxXTP || 100.0));
+    // Use xTP_simple as primary, fall back to xTP
+    const weightScore = weightData?.xTP_simple !== null && weightData?.xTP_simple !== undefined 
+      ? weightData.xTP_simple 
+      : weightData?.xTP;
+
+    if (weightScore !== null && weightScore !== undefined && weightScore > 0) {
+      // Scale bars relative to max xTP_simple in THIS team's starters
+      xtpTd.appendChild(createMetricBar(weightScore, maxXTP || 100.0));
     } else {
       // No qualifier - show "0" with same layout
       const zeroWrapper = document.createElement("div");
@@ -803,35 +882,30 @@ function renderStartersTable(starters, xtpData) {
     }
     row.appendChild(xtpTd);
 
-    // xTP_P - subcomponent (show "-" if no qualifier)
-    const xtpPTd = document.createElement("td");
-    xtpPTd.className = "num metric-sub expanded-component-col xtp-sub";
-    if (weightData && weightData.xTP_P !== null && weightData.xTP_P !== undefined) {
-      xtpPTd.textContent = weightData.xTP_P.toFixed(1);
+    // Record: Format as "W–L"
+    const record = parseRecord(profile);
+    const recordTd = document.createElement("td");
+    recordTd.className = "text-center";
+    recordTd.textContent = `${record.wins}–${record.losses}`;
+    row.appendChild(recordTd);
+    
+    // Top 25 Wins
+    const top25Td = document.createElement("td");
+    top25Td.className = "num text-center";
+    const top25Wins = countTop25Wins(profile);
+    top25Td.textContent = top25Wins > 0 ? String(top25Wins) : "—";
+    row.appendChild(top25Td);
+    
+    // Bonus Rate: Display as percentage (e.g., 75.0%)
+    const bonusTd = document.createElement("td");
+    bonusTd.className = "num text-center";
+    const bonusRate = profile?.metrics?.bonus_rate;
+    if (bonusRate !== null && bonusRate !== undefined) {
+      bonusTd.textContent = percent(bonusRate);
     } else {
-      xtpPTd.textContent = "—";
+      bonusTd.textContent = "—";
     }
-    row.appendChild(xtpPTd);
-
-    // xTP_A - subcomponent (show "-" if no qualifier)
-    const xtpATd = document.createElement("td");
-    xtpATd.className = "num metric-sub expanded-component-col xtp-sub";
-    if (weightData && weightData.xTP_A !== null && weightData.xTP_A !== undefined) {
-      xtpATd.textContent = weightData.xTP_A.toFixed(1);
-    } else {
-      xtpATd.textContent = "—";
-    }
-    row.appendChild(xtpATd);
-
-    // xTP_B - subcomponent (show "-" if no qualifier)
-    const xtpBTd = document.createElement("td");
-    xtpBTd.className = "num metric-sub expanded-component-col xtp-sub";
-    if (weightData && weightData.xTP_B !== null && weightData.xTP_B !== undefined) {
-      xtpBTd.textContent = weightData.xTP_B.toFixed(1);
-    } else {
-      xtpBTd.textContent = "—";
-    }
-    row.appendChild(xtpBTd);
+    row.appendChild(bonusTd);
 
     tbody.appendChild(row);
   });
@@ -849,7 +923,7 @@ function renderRemainingRosterTable(remaining) {
   if (!remaining || remaining.length === 0) {
     const row = document.createElement("tr");
     const cell = document.createElement("td");
-    cell.colSpan = 5;
+    cell.colSpan = 6;
     cell.textContent = "No remaining roster";
     cell.style.textAlign = "center";
     cell.style.padding = "2em";
@@ -965,6 +1039,16 @@ function renderRemainingRosterTable(remaining) {
     const weightTd = document.createElement("td");
     weightTd.textContent = weight || "—";
     tr.appendChild(weightTd);
+
+    // Grade
+    const gradeTd = document.createElement("td");
+    const grade = profile?.grade;
+    if (grade !== null && grade !== undefined) {
+      gradeTd.textContent = grade;
+    } else {
+      gradeTd.textContent = "—";
+    }
+    tr.appendChild(gradeTd);
 
     // Wrestler name (linked)
     const nameTd = document.createElement("td");

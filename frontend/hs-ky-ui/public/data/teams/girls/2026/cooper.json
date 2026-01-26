@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.741804Z",
+  "generated_at_utc": "2026-01-26T00:14:11.240366Z",
   "starters": {
     "126": {
       "weight": 126,
       "wrestler_id": "35383763132",
       "name": "Ayden Wilson",
       "current_rank": 67,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 0,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35383812132",
       "name": "Aaliyah Svec",
       "current_rank": 4,
-      "xtp": 14.0,
+      "grade": null,
+      "xtp": 9.08,
       "xtp_p": 6.31,
       "xtp_a": 2.77,
-      "xtp_b": 4.92,
+      "xtp_b": 0.0,
+      "xtp_simple": 19.0,
       "top10_record": {
         "wins": 4,
         "losses": 0
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 6,
         "losses": 0
-      }
+      },
+      "wins": 10,
+      "losses": 0,
+      "top25_wins": 5,
+      "bonus_rate": 1.0
     },
     "152": {
       "weight": 152,
       "wrestler_id": "35383872132",
       "name": "Jasmin Vieyra",
       "current_rank": 14,
-      "xtp": 5.31,
+      "grade": null,
+      "xtp": 2.2,
       "xtp_p": 0.93,
       "xtp_a": 1.27,
-      "xtp_b": 3.11,
+      "xtp_b": 0.0,
+      "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 3,
         "losses": 5
-      }
+      },
+      "wins": 9,
+      "losses": 6,
+      "top25_wins": 1,
+      "bonus_rate": 0.889
     },
     "235": {
       "weight": 235,
       "wrestler_id": "35383830132",
       "name": "Fanta Mariko",
       "current_rank": 3,
-      "xtp": 16.86,
+      "grade": null,
+      "xtp": 11.14,
       "xtp_p": 8.02,
       "xtp_a": 3.12,
-      "xtp_b": 5.72,
+      "xtp_b": 0.0,
+      "xtp_simple": 21.0,
       "top10_record": {
         "wins": 2,
         "losses": 1
@@ -93,7 +113,11 @@
       "top33_record": {
         "wins": 3,
         "losses": 1
-      }
+      },
+      "wins": 7,
+      "losses": 2,
+      "top25_wins": 3,
+      "bonus_rate": 0.714
     }
   },
   "remaining": [
@@ -101,14 +125,16 @@
       "weight": 152,
       "wrestler_id": "35383800132",
       "name": "Josslyn Heringer",
+      "grade": null,
       "wins": 3,
       "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.333
     }
   ],
+  "team_xTP_simple": 42.5,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 42.5,
     "team_rank": {
       "value": null,
       "rank": null,

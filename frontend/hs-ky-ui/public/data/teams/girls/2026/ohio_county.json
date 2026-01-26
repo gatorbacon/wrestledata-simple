@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.926231Z",
+  "generated_at_utc": "2026-01-26T00:14:11.486992Z",
   "starters": {
     "100": {
       "weight": 100,
       "wrestler_id": "35333322132",
       "name": "Lily Autry",
       "current_rank": 6,
-      "xtp": 11.15,
+      "grade": null,
+      "xtp": 6.59,
       "xtp_p": 4.26,
       "xtp_a": 2.33,
-      "xtp_b": 4.56,
+      "xtp_b": 0.0,
+      "xtp_simple": 13.5,
       "top10_record": {
         "wins": 3,
         "losses": 7
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 11,
         "losses": 7
-      }
+      },
+      "wins": 27,
+      "losses": 8,
+      "top25_wins": 8,
+      "bonus_rate": 0.741
     },
     "114": {
       "weight": 114,
       "wrestler_id": "35333361132",
       "name": "Belle Hatfield",
       "current_rank": 6,
-      "xtp": 11.11,
+      "grade": null,
+      "xtp": 6.59,
       "xtp_p": 4.26,
       "xtp_a": 2.33,
-      "xtp_b": 4.52,
+      "xtp_b": 0.0,
+      "xtp_simple": 13.5,
       "top10_record": {
         "wins": 5,
         "losses": 8
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 12,
         "losses": 9
-      }
+      },
+      "wins": 23,
+      "losses": 9,
+      "top25_wins": 11,
+      "bonus_rate": 0.826
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35333323132",
       "name": "Emerson Jackson",
       "current_rank": 27,
-      "xtp": 2.4,
+      "grade": null,
+      "xtp": 0.94,
       "xtp_p": 0.25,
       "xtp_a": 0.69,
-      "xtp_b": 1.46,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 8
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 4,
         "losses": 12
-      }
+      },
+      "wins": 25,
+      "losses": 15,
+      "top25_wins": 2,
+      "bonus_rate": 0.8
     },
     "126": {
       "weight": 126,
       "wrestler_id": "35333321132",
       "name": "Talynn Clark",
       "current_rank": 1,
-      "xtp": 22.18,
+      "grade": null,
+      "xtp": 16.56,
       "xtp_p": 12.83,
       "xtp_a": 3.73,
-      "xtp_b": 5.62,
+      "xtp_b": 0.0,
+      "xtp_simple": 30.0,
       "top10_record": {
         "wins": 7,
         "losses": 2
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 15,
         "losses": 3
-      }
+      },
+      "wins": 34,
+      "losses": 5,
+      "top25_wins": 10,
+      "bonus_rate": 0.912
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35333362132",
       "name": "Amelia Marcum",
       "current_rank": 5,
-      "xtp": 12.21,
+      "grade": null,
+      "xtp": 7.66,
       "xtp_p": 5.13,
       "xtp_a": 2.53,
-      "xtp_b": 4.55,
+      "xtp_b": 0.0,
+      "xtp_simple": 15.0,
       "top10_record": {
         "wins": 7,
         "losses": 5
@@ -111,17 +137,23 @@
       "top33_record": {
         "wins": 15,
         "losses": 5
-      }
+      },
+      "wins": 27,
+      "losses": 6,
+      "top25_wins": 11,
+      "bonus_rate": 0.852
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35333363132",
       "name": "Tahirah Massie",
       "current_rank": 29,
-      "xtp": 1.92,
+      "grade": null,
+      "xtp": 0.74,
       "xtp_p": 0.2,
       "xtp_a": 0.54,
-      "xtp_b": 1.18,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 7
@@ -129,7 +161,11 @@
       "top33_record": {
         "wins": 3,
         "losses": 12
-      }
+      },
+      "wins": 15,
+      "losses": 16,
+      "top25_wins": 0,
+      "bonus_rate": 0.533
     }
   },
   "remaining": [
@@ -137,14 +173,16 @@
       "weight": 120,
       "wrestler_id": "35333365132",
       "name": "Taylor Evans",
+      "grade": null,
       "wins": 11,
       "losses": 9,
       "top25_wins": 1,
       "bonus_rate": 0.455
     }
   ],
+  "team_xTP_simple": 72.5,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 72.5,
     "team_rank": {
       "value": null,
       "rank": null,

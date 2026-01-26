@@ -11,27 +11,29 @@
   "conference": null,
   "location": {
     "state": "KY",
-    "region": "8"
+    "region": null
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=rfilwbatvq&teamId=818264150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=uvmgssaypj&teamId=1085339143",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.184763Z",
+  "generated_at_utc": "2026-01-26T00:14:10.276596Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35124897132",
       "name": "Preston Jackson",
       "current_rank": 72,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 6
-      }
+      },
+      "wins": 12,
+      "losses": 10,
+      "top25_wins": 0,
+      "bonus_rate": 0.75
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35124883132",
       "name": "Daxton Baker",
       "current_rank": 16,
-      "xtp": 3.76,
-      "xtp_p": 0.7,
-      "xtp_a": 1.18,
-      "xtp_b": 1.88,
+      "grade": 12,
+      "xtp": 1.55,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 0.0,
+      "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
         "losses": 4
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 2,
         "losses": 7
-      }
+      },
+      "wins": 14,
+      "losses": 9,
+      "top25_wins": 1,
+      "bonus_rate": 0.929
     },
     "144": {
       "weight": 144,
       "wrestler_id": "35124967132",
       "name": "Gage Williams",
       "current_rank": 71,
+      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 1,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "157": {
       "weight": 157,
       "wrestler_id": "35124935132",
       "name": "Noah Weissbach",
       "current_rank": 33,
-      "xtp": 1.56,
-      "xtp_p": 0.15,
-      "xtp_a": 0.44,
-      "xtp_b": 0.97,
+      "grade": 11,
+      "xtp": 0.35,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 3
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 4
-      }
+      },
+      "wins": 12,
+      "losses": 5,
+      "top25_wins": 0,
+      "bonus_rate": 0.833
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35124878132",
       "name": "Ethan Brandhorst",
       "current_rank": 57,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 3
@@ -111,17 +137,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 6
-      }
+      },
+      "wins": 10,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "190": {
       "weight": 190,
       "wrestler_id": "36745416132",
       "name": "Alex McCoy",
       "current_rank": 191,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -129,7 +161,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 0,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   },
   "remaining": [
@@ -137,6 +173,7 @@
       "weight": 120,
       "wrestler_id": "35272546132",
       "name": "Kaitlyn Baker",
+      "grade": null,
       "wins": 0,
       "losses": 1,
       "top25_wins": 0,
@@ -146,6 +183,7 @@
       "weight": 132,
       "wrestler_id": "35124870132",
       "name": "Hunter Oakley",
+      "grade": 10,
       "wins": 11,
       "losses": 8,
       "top25_wins": 0,
@@ -155,14 +193,16 @@
       "weight": 144,
       "wrestler_id": "35273350132",
       "name": "Wilson Patrick",
+      "grade": 9,
       "wins": 1,
       "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 2.5,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 2.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -172,8 +212,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 52,
-      "losses": 53
+      "wins": 49,
+      "losses": 50
     },
     "top33": {
       "wins": 2,
@@ -184,17 +224,17 @@
       "losses": 12
     },
     "bonus_rate": {
-      "value": 0.865,
-      "rank": 12,
+      "value": 0.878,
+      "rank": 8,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.577,
-      "rank": 104,
+      "value": 0.633,
+      "rank": 59,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.269,
+      "value": 0.224,
       "rank": 2,
       "rank_scope": "league"
     }

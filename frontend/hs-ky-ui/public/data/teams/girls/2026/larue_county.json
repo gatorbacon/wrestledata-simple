@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.862807Z",
+  "generated_at_utc": "2026-01-26T00:14:11.398286Z",
   "starters": {
     "120": {
       "weight": 120,
       "wrestler_id": "36398066132",
       "name": "Hailey Garner",
       "current_rank": 22,
-      "xtp": 3.19,
+      "grade": null,
+      "xtp": 1.26,
       "xtp_p": 0.41,
       "xtp_a": 0.85,
-      "xtp_b": 1.93,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 3,
         "losses": 1
-      }
+      },
+      "wins": 5,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.8
     },
     "165": {
       "weight": 165,
       "wrestler_id": "36398065132",
       "name": "Abby Lucas",
       "current_rank": 5,
-      "xtp": 12.73,
+      "grade": null,
+      "xtp": 7.66,
       "xtp_p": 5.13,
       "xtp_a": 2.53,
-      "xtp_b": 5.07,
+      "xtp_b": 0.0,
+      "xtp_simple": 15.0,
       "top10_record": {
         "wins": 1,
         "losses": 1
@@ -57,12 +65,17 @@
       "top33_record": {
         "wins": 3,
         "losses": 2
-      }
+      },
+      "wins": 5,
+      "losses": 2,
+      "top25_wins": 2,
+      "bonus_rate": 0.8
     }
   },
   "remaining": [],
+  "team_xTP_simple": 15.5,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 15.5,
     "team_rank": {
       "value": null,
       "rank": null,

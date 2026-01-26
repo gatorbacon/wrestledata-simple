@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.712420Z",
+  "generated_at_utc": "2026-01-26T00:14:11.198272Z",
   "starters": {
     "114": {
       "weight": 114,
       "wrestler_id": "35333669132",
       "name": "Neticia Hughes",
       "current_rank": 39,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 2,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35333670132",
       "name": "Briella Levy",
       "current_rank": 43,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 1
-      }
+      },
+      "wins": 4,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "126": {
       "weight": 126,
       "wrestler_id": "35333668132",
       "name": "Rowyn Eskridge",
       "current_rank": 22,
-      "xtp": 3.17,
+      "grade": null,
+      "xtp": 1.26,
       "xtp_p": 0.41,
       "xtp_a": 0.85,
-      "xtp_b": 1.91,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 6,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.833
     },
     "145": {
       "weight": 145,
       "wrestler_id": "35333674132",
       "name": "Saniyah Nana",
       "current_rank": 15,
-      "xtp": 4.63,
+      "grade": null,
+      "xtp": 2.2,
       "xtp_p": 0.93,
       "xtp_a": 1.27,
-      "xtp_b": 2.43,
+      "xtp_b": 0.0,
+      "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
         "losses": 4
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 4,
         "losses": 4
-      }
+      },
+      "wins": 5,
+      "losses": 4,
+      "top25_wins": 3,
+      "bonus_rate": 0.6
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35333672132",
       "name": "Aria McFarland",
       "current_rank": 16,
-      "xtp": 4.74,
+      "grade": null,
+      "xtp": 1.88,
       "xtp_p": 0.7,
       "xtp_a": 1.18,
-      "xtp_b": 2.86,
+      "xtp_b": 0.0,
+      "xtp_simple": 2.5,
       "top10_record": {
         "wins": 1,
         "losses": 0
@@ -111,7 +137,11 @@
       "top33_record": {
         "wins": 3,
         "losses": 0
-      }
+      },
+      "wins": 6,
+      "losses": 0,
+      "top25_wins": 2,
+      "bonus_rate": 0.833
     }
   },
   "remaining": [
@@ -119,6 +149,7 @@
       "weight": 126,
       "wrestler_id": "35333675132",
       "name": "Micaela Owens",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
@@ -128,6 +159,7 @@
       "weight": 145,
       "wrestler_id": "35333676132",
       "name": "Lucy Savon",
+      "grade": null,
       "wins": 2,
       "losses": 2,
       "top25_wins": 1,
@@ -137,14 +169,16 @@
       "weight": 165,
       "wrestler_id": "35333677132",
       "name": "Journee White",
+      "grade": null,
       "wins": 0,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
+  "team_xTP_simple": 5.5,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 5.5,
     "team_rank": {
       "value": null,
       "rank": null,

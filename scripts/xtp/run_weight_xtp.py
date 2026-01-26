@@ -24,6 +24,67 @@ from xtp.engine.engine import BracketEngine
 from xtp.engine.bracket_schema import get_all_slots
 
 
+# xTP_simple scoring table (KHSAA-style, rank-based)
+# "Projected points are based on statewide rank."
+XTP_SIMPLE_POINTS = {
+    1: 30.0,
+    2: 24.0,
+    3: 21.0,
+    4: 19.0,
+    5: 15.0,
+    6: 13.5,
+    7: 10.5,
+    8: 8.5,
+    9: 3.0,
+    10: 3.0,
+    11: 3.0,
+    12: 3.0,
+    13: 2.5,
+    14: 2.5,
+    15: 2.5,
+    16: 2.5,
+    17: 0.5,
+    18: 0.5,
+    19: 0.5,
+    20: 0.5,
+    21: 0.5,
+    22: 0.5,
+    23: 0.5,
+    24: 0.5,
+}
+
+
+def get_xtp_simple(rank: int) -> float:
+    """
+    Get xTP_simple points for a given starter rank.
+    
+    Uses KHSAA-style simplified scoring:
+    - Rank 1: 30.0
+    - Rank 2: 24.0
+    - Rank 3: 21.0
+    - Rank 4: 19.0
+    - Rank 5: 15.0
+    - Rank 6: 13.5
+    - Rank 7: 10.5
+    - Rank 8: 8.5
+    - Ranks 9-12: 3.0
+    - Ranks 13-16: 2.5
+    - Ranks 17-24: 0.5
+    - Ranks 25+ or unranked: 0.0
+    
+    Args:
+        rank: Starter-only statewide rank (1-based)
+    
+    Returns:
+        xTP_simple points
+    """
+    if rank is None or rank < 1:
+        return 0.0
+    if rank > 24:
+        return 0.0
+    return XTP_SIMPLE_POINTS.get(rank, 0.0)
+
+
 def load_rankings(season: int, weight: int, rankings_dir: str, league: str = 'ncaa') -> List[Dict]:
     """
     Load starter-only rankings for a weight class.
@@ -321,6 +382,10 @@ def compute_xtp_for_weight(
         champ_prob = round(comps.get("champion_probability", 0.0), 3)
         final_prob = round(comps.get("finalist_probability", 0.0), 3)
         
+        # Calculate xTP_simple based on starter rank
+        rank = data["rank"]
+        xTP_simple = get_xtp_simple(rank)
+        
         results.append({
             "wrestler_id": wrestler_id,
             "name": data["name"],
@@ -333,6 +398,7 @@ def compute_xtp_for_weight(
             "xTP_P": xTP_P,
             "xTP_B": xTP_B,
             "xTP": xTP,
+            "xTP_simple": xTP_simple,  # New simplified rank-based scoring
             "aa_prob": aa_prob,
             "champ_prob": champ_prob,
             "final_prob": final_prob,

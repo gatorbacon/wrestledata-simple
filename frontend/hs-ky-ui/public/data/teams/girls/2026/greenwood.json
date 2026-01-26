@@ -21,17 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-22T20:06:58.811122Z",
+  "generated_at_utc": "2026-01-26T00:14:11.327969Z",
   "starters": {
     "107": {
       "weight": 107,
       "wrestler_id": "35424934132",
       "name": "Lizeth Hernandez-Ponce",
       "current_rank": 38,
-      "xtp": 1.15,
+      "grade": null,
+      "xtp": 0.33,
       "xtp_p": 0.03,
       "xtp_a": 0.3,
-      "xtp_b": 0.82,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -39,17 +41,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 5
-      }
+      },
+      "wins": 6,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35424937132",
       "name": "Mary Varupa",
       "current_rank": 97,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -57,17 +65,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35424936132",
       "name": "Niang Nuam",
       "current_rank": 58,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 3
@@ -75,17 +89,23 @@
       "top33_record": {
         "wins": 0,
         "losses": 3
-      }
+      },
+      "wins": 4,
+      "losses": 16,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35424932132",
       "name": "Masoka (Ashley) Kilozo",
       "current_rank": 10,
-      "xtp": 7.19,
+      "grade": null,
+      "xtp": 3.59,
       "xtp_p": 1.9,
       "xtp_a": 1.69,
-      "xtp_b": 3.6,
+      "xtp_b": 0.0,
+      "xtp_simple": 3.0,
       "top10_record": {
         "wins": 1,
         "losses": 6
@@ -93,17 +113,23 @@
       "top33_record": {
         "wins": 4,
         "losses": 6
-      }
+      },
+      "wins": 23,
+      "losses": 13,
+      "top25_wins": 4,
+      "bonus_rate": 0.783
     },
     "152": {
       "weight": 152,
       "wrestler_id": "35424969132",
       "name": "Scarlet Stiltner",
       "current_rank": 61,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
       "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -111,7 +137,11 @@
       "top33_record": {
         "wins": 0,
         "losses": 0
-      }
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   },
   "remaining": [
@@ -119,6 +149,7 @@
       "weight": 132,
       "wrestler_id": "35424935132",
       "name": "Michaela Harmon",
+      "grade": null,
       "wins": 2,
       "losses": 11,
       "top25_wins": 0,
@@ -128,14 +159,16 @@
       "weight": 138,
       "wrestler_id": "35424933132",
       "name": "Cing Kiim",
+      "grade": null,
       "wins": 13,
       "losses": 13,
       "top25_wins": 0,
       "bonus_rate": 0.615
     }
   ],
+  "team_xTP_simple": 3.0,
   "team_metrics": {
-    "projected_state_points": null,
+    "projected_state_points": 3.0,
     "team_rank": {
       "value": null,
       "rank": null,
