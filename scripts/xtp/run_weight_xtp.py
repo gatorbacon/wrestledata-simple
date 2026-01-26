@@ -24,9 +24,11 @@ from xtp.engine.engine import BracketEngine
 from xtp.engine.bracket_schema import get_all_slots
 
 
-# xTP_simple scoring table (KHSAA-style, rank-based)
+# xTP_simple scoring tables (KHSAA-style, rank-based)
 # "Projected points are based on statewide rank."
-XTP_SIMPLE_POINTS = {
+
+# BOYS xTP_simple (32-man bracket)
+XTP_SIMPLE_POINTS_BOYS = {
     1: 30.0,
     2: 24.0,
     3: 21.0,
@@ -53,36 +55,58 @@ XTP_SIMPLE_POINTS = {
     24: 0.5,
 }
 
+# GIRLS xTP_simple (16-man bracket)
+XTP_SIMPLE_POINTS_GIRLS = {
+    1: 28.0,
+    2: 24.0,
+    3: 20.0,
+    4: 17.0,
+    5: 14.0,
+    6: 11.0,
+    7: 9.0,
+    8: 7.0,
+    9: 2.0,
+    10: 2.0,
+    11: 2.0,
+    12: 2.0,
+    13: 0.5,
+    14: 0.5,
+    15: 0.5,
+    16: 0.5,
+}
 
-def get_xtp_simple(rank: int) -> float:
+
+def get_xtp_simple(rank: int, gender: str = None) -> float:
     """
     Get xTP_simple points for a given starter rank.
     
-    Uses KHSAA-style simplified scoring:
-    - Rank 1: 30.0
-    - Rank 2: 24.0
-    - Rank 3: 21.0
-    - Rank 4: 19.0
-    - Rank 5: 15.0
-    - Rank 6: 13.5
-    - Rank 7: 10.5
-    - Rank 8: 8.5
-    - Ranks 9-12: 3.0
-    - Ranks 13-16: 2.5
-    - Ranks 17-24: 0.5
-    - Ranks 25+ or unranked: 0.0
+    Uses gender-specific scoring tables:
+    - Boys (32-man bracket): Rank 1 = 30.0, Rank 2 = 24.0, etc.
+    - Girls (16-man bracket): Rank 1 = 28.0, Rank 2 = 24.0, etc.
     
     Args:
         rank: Starter-only statewide rank (1-based)
+        gender: Gender ('boys' or 'girls'). If None, defaults to boys table.
     
     Returns:
         xTP_simple points
     """
     if rank is None or rank < 1:
         return 0.0
-    if rank > 24:
+    
+    # Select scoring table based on gender
+    if gender == 'girls':
+        points_table = XTP_SIMPLE_POINTS_GIRLS
+        max_rank = 16
+    else:
+        # Default to boys table (also used for NCAA/unspecified)
+        points_table = XTP_SIMPLE_POINTS_BOYS
+        max_rank = 24
+    
+    if rank > max_rank:
         return 0.0
-    return XTP_SIMPLE_POINTS.get(rank, 0.0)
+    
+    return points_table.get(rank, 0.0)
 
 
 def load_rankings(season: int, weight: int, rankings_dir: str, league: str = 'ncaa') -> List[Dict]:
@@ -252,7 +276,8 @@ def compute_xtp_for_weight(
     weight: int,
     rankings_dir: str,
     wrestlers_dir: str,
-    league: str = 'ncaa'
+    league: str = 'ncaa',
+    gender: str = None
 ) -> List[Dict]:
     """
     Compute xTP for all wrestlers at a weight class.
@@ -382,9 +407,9 @@ def compute_xtp_for_weight(
         champ_prob = round(comps.get("champion_probability", 0.0), 3)
         final_prob = round(comps.get("finalist_probability", 0.0), 3)
         
-        # Calculate xTP_simple based on starter rank
+        # Calculate xTP_simple based on starter rank and gender
         rank = data["rank"]
-        xTP_simple = get_xtp_simple(rank)
+        xTP_simple = get_xtp_simple(rank, gender=gender)
         
         results.append({
             "wrestler_id": wrestler_id,
@@ -623,6 +648,8 @@ def main():
     )
     parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
                         help='League type: ncaa (default) or hs')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
     
     args = parser.parse_args()
     
@@ -637,7 +664,8 @@ def main():
             args.weight,
             args.rankings_dir,
             args.wrestlers_dir,
-            league=args.league
+            league=args.league,
+            gender=args.gender
         )
         
         if not results:

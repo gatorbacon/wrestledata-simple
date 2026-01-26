@@ -87,6 +87,10 @@ def rebuild_weight_xtp(season: int, weight: int, rankings_dir: str, wrestlers_di
         "-league", league
     ]
     
+    # Add gender parameter for HS
+    if league == 'hs' and gender:
+        cmd.extend(["-gender", gender])
+    
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, check=True)
         return True

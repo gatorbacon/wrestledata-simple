@@ -14,9 +14,11 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 
-# xTP_simple scoring table (KHSAA-style, simplified rank-based)
+# xTP_simple scoring tables (KHSAA-style, simplified rank-based)
 # "Projected points are based on statewide rank."
-XTP_SIMPLE_POINTS = {
+
+# BOYS xTP_simple (32-man bracket)
+XTP_SIMPLE_POINTS_BOYS = {
     1: 30.0,
     2: 24.0,
     3: 21.0,
@@ -43,36 +45,58 @@ XTP_SIMPLE_POINTS = {
     24: 0.5,
 }
 
+# GIRLS xTP_simple (16-man bracket)
+XTP_SIMPLE_POINTS_GIRLS = {
+    1: 28.0,
+    2: 24.0,
+    3: 20.0,
+    4: 17.0,
+    5: 14.0,
+    6: 11.0,
+    7: 9.0,
+    8: 7.0,
+    9: 2.0,
+    10: 2.0,
+    11: 2.0,
+    12: 2.0,
+    13: 0.5,
+    14: 0.5,
+    15: 0.5,
+    16: 0.5,
+}
 
-def get_xtp_simple(rank: int) -> float:
+
+def get_xtp_simple(rank: int, gender: str = None) -> float:
     """
     Get xTP_simple points for a given starter rank.
     
-    Uses KHSAA-style simplified scoring:
-    - Rank 1: 30.0
-    - Rank 2: 24.0
-    - Rank 3: 21.0
-    - Rank 4: 19.0
-    - Rank 5: 15.0
-    - Rank 6: 13.5
-    - Rank 7: 10.5
-    - Rank 8: 8.5
-    - Ranks 9-12: 3.0
-    - Ranks 13-16: 2.5
-    - Ranks 17-24: 0.5
-    - Ranks 25+ or unranked: 0.0
+    Uses gender-specific scoring tables:
+    - Boys (32-man bracket): Rank 1 = 30.0, Rank 2 = 24.0, etc.
+    - Girls (16-man bracket): Rank 1 = 28.0, Rank 2 = 24.0, etc.
     
     Args:
         rank: Starter-only statewide rank (1-based)
+        gender: Gender ('boys' or 'girls'). If None, defaults to boys table.
     
     Returns:
         xTP_simple points
     """
     if rank is None or rank < 1:
         return 0.0
-    if rank > 24:
+    
+    # Select scoring table based on gender
+    if gender == 'girls':
+        points_table = XTP_SIMPLE_POINTS_GIRLS
+        max_rank = 16
+    else:
+        # Default to boys table
+        points_table = XTP_SIMPLE_POINTS_BOYS
+        max_rank = 24
+    
+    if rank > max_rank:
         return 0.0
-    return XTP_SIMPLE_POINTS.get(rank, 0.0)
+    
+    return points_table.get(rank, 0.0)
 
 
 def load_team_region_mapping(gender: str) -> Dict[str, str]:
@@ -250,7 +274,7 @@ def calculate_team_scores(
             for team, entry in team_best.items():
                 rank = entry.get('rank')
                 if rank is not None:
-                    points = get_xtp_simple(rank)
+                    points = get_xtp_simple(rank, gender=gender)
                     team_points[team] += points
         else:
             # Use starter-only rankings (preferred)
@@ -265,7 +289,7 @@ def calculate_team_scores(
                 rank = entry.get('rank')  # This is the re-ranked starter-only rank
                 
                 if team and rank is not None:
-                    points = get_xtp_simple(rank)
+                    points = get_xtp_simple(rank, gender=gender)
                     team_points[team] += points
     
     # Sort by points descending
