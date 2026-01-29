@@ -243,6 +243,7 @@ async function loadRankingsData() {
           name: w.name || 'Unknown',
           team: w.team || '',
           rank: w.rank || null,
+          hybrid_rank: w.hybrid_rank !== undefined ? w.hybrid_rank : null,
           is_highest_ranked: w.is_highest_ranked !== false
         }));
       }
@@ -293,11 +294,14 @@ async function loadTeamRosters() {
           const weight = parseInt(weightStr);
           if (isNaN(weight)) continue;
           
-          // Ensure wrestlers have all required fields
+          // Ensure wrestlers have all required fields, including hybrid_rank, is_active, and record
           teamRosters[teamName].weights[weight] = wrestlers.map(w => ({
             wrestler_id: String(w.wrestler_id || ''),
             name: w.name || 'Unknown',
             rank: w.rank !== undefined ? w.rank : null,
+            hybrid_rank: w.hybrid_rank !== undefined ? w.hybrid_rank : null,
+            is_active: w.is_active !== undefined ? w.is_active : null,
+            record: w.record !== undefined ? w.record : null,
             is_highest_ranked: w.is_starter === true || w.is_highest_ranked === true
           }));
         }
@@ -540,7 +544,7 @@ function getWrestlersForWeight(roster, weight, allWeights, weightIndex) {
     });
   }
   
-  // Sort by rank (best first), with current weight wrestlers first
+  // Sort by hybrid_rank (or rank as fallback), with current weight wrestlers first
   wrestlers.sort((a, b) => {
     // Current weight wrestlers come first
     const aIsCurrent = !a.sourceWeight || a.sourceWeight === weight;
@@ -548,11 +552,13 @@ function getWrestlersForWeight(roster, weight, allWeights, weightIndex) {
     if (aIsCurrent && !bIsCurrent) return -1;
     if (!aIsCurrent && bIsCurrent) return 1;
     
-    // Then sort by rank
-    if (a.rank === null && b.rank === null) return 0;
-    if (a.rank === null) return 1;
-    if (b.rank === null) return -1;
-    return a.rank - b.rank;
+    // Then sort by hybrid_rank (or rank as fallback) - check for null/undefined
+    const rankA = (a.hybrid_rank !== undefined && a.hybrid_rank !== null) ? a.hybrid_rank : a.rank;
+    const rankB = (b.hybrid_rank !== undefined && b.hybrid_rank !== null) ? b.hybrid_rank : b.rank;
+    if (rankA === null && rankB === null) return 0;
+    if (rankA === null) return 1;
+    if (rankB === null) return -1;
+    return rankA - rankB;
   });
   
   return wrestlers;
@@ -561,8 +567,29 @@ function getWrestlersForWeight(roster, weight, allWeights, weightIndex) {
 function getStarter(wrestlers) {
   if (!wrestlers || wrestlers.length === 0) return null;
   
-  // Find highest-ranked wrestler (lowest rank number)
-  return wrestlers.find(w => w.is_highest_ranked) || wrestlers[0];
+  // Filter out inactive and 0-0 wrestlers (only if explicitly marked)
+  const available = wrestlers.filter(w => {
+    // Only filter if is_active is explicitly false
+    if (w.is_active === false) return false;
+    // Only filter if record is explicitly '0-0' (not undefined/null)
+    if (w.record === '0-0') return false;
+    // Include all others (including those without is_active/record fields)
+    return true;
+  });
+  
+  if (available.length === 0) return null;
+  
+  // Find highest-ranked wrestler using hybrid_rank (or rank as fallback)
+  const sorted = available.sort((a, b) => {
+    const rankA = a.hybrid_rank !== undefined ? a.hybrid_rank : a.rank;
+    const rankB = b.hybrid_rank !== undefined ? b.hybrid_rank : b.rank;
+    if (rankA === null && rankB === null) return 0;
+    if (rankA === null) return 1;
+    if (rankB === null) return -1;
+    return rankA - rankB;
+  });
+  
+  return sorted[0];
 }
 
 function getHighestRankedNonStarterFromWeightBelow(roster, weight, allWeights, weightIndex, assignedWrestlers) {
@@ -578,23 +605,32 @@ function getHighestRankedNonStarterFromWeightBelow(roster, weight, allWeights, w
   // Filter out:
   // 1. Starters (highest-ranked per team at that weight - they're already starting there)
   // 2. Wrestlers already assigned as defaults in previous rows
+  // 3. Inactive wrestlers (only if explicitly false)
+  // 4. 0-0 records (only if explicitly '0-0')
   const nonStarters = wrestlersBelow.filter(w => {
     // Exclude if already assigned
     if (assignedWrestlers && assignedWrestlers.has(w.wrestler_id)) {
       return false;
     }
     // Exclude starters (they're already starting at that weight below, can't move them up)
-    return !w.is_highest_ranked;
+    if (w.is_highest_ranked) return false;
+    // Exclude inactive (only if explicitly false)
+    if (w.is_active === false) return false;
+    // Exclude 0-0 records (only if explicitly '0-0', not undefined)
+    if (w.record === '0-0') return false;
+    return true;
   });
   
   if (nonStarters.length === 0) return null;
   
-  // Find highest-ranked non-starter (lowest rank number)
+  // Find highest-ranked non-starter using hybrid_rank (or rank as fallback)
   const sorted = nonStarters.sort((a, b) => {
-    if (a.rank === null && b.rank === null) return 0;
-    if (a.rank === null) return 1;
-    if (b.rank === null) return -1;
-    return a.rank - b.rank;
+    const rankA = a.hybrid_rank !== undefined ? a.hybrid_rank : a.rank;
+    const rankB = b.hybrid_rank !== undefined ? b.hybrid_rank : b.rank;
+    if (rankA === null && rankB === null) return 0;
+    if (rankA === null) return 1;
+    if (rankB === null) return -1;
+    return rankA - rankB;
   });
   
   // Mark with sourceWeight so display shows correctly
@@ -622,11 +658,29 @@ function createWrestlerSelect(weight, wrestlers, team, onChange) {
     currentWeightWrestlers.forEach(wrestler => {
       const option = document.createElement('option');
       option.value = wrestler.wrestler_id;
-      // At normal weight: just show rank
-      const rankText = wrestler.rank ? `#${wrestler.rank}` : 'Unranked';
-      option.textContent = `${wrestler.name} (${rankText})`;
-      option.dataset.rank = wrestler.rank || '';
+      
+      // Check if inactive or 0-0 (only if explicitly marked)
+      const isActive = wrestler.is_active !== false; // undefined/null = active
+      const record = wrestler.record;
+      const isZeroRecord = record === '0-0'; // Only true if explicitly '0-0', not undefined
+      const isUnavailable = wrestler.is_active === false || isZeroRecord;
+      
+      // Use hybrid_rank (or rank as fallback) - check for null/undefined
+      const rank = (wrestler.hybrid_rank !== undefined && wrestler.hybrid_rank !== null) ? wrestler.hybrid_rank : wrestler.rank;
+      const rankText = rank ? `#${rank}` : 'Unranked';
+      
+      // Add asterisk and grey out if unavailable
+      let nameText = wrestler.name;
+      if (isUnavailable) {
+        nameText += ' *';
+        option.style.color = '#999';
+        option.style.fontStyle = 'italic';
+      }
+      
+      option.textContent = `${nameText} (${rankText})`;
+      option.dataset.rank = rank || '';
       option.dataset.actualWeight = weight; // Store actual weight for this matchup
+      option.dataset.unavailable = isUnavailable ? 'true' : 'false';
       select.appendChild(option);
     });
   }
@@ -658,11 +712,29 @@ function createWrestlerSelect(weight, wrestlers, team, onChange) {
       byWeight[wWeight].forEach(wrestler => {
         const option = document.createElement('option');
         option.value = wrestler.wrestler_id;
-        // At different weight: show rank @ actual weight
-        const rankText = wrestler.rank ? `#${wrestler.rank} @ ${wWeight}` : `Unranked @ ${wWeight}`;
-        option.textContent = `${wrestler.name} (${rankText})`;
-        option.dataset.rank = wrestler.rank || '';
+        
+        // Check if inactive or 0-0 (only if explicitly marked)
+        const isActive = wrestler.is_active !== false; // undefined/null = active
+        const record = wrestler.record;
+        const isZeroRecord = record === '0-0'; // Only true if explicitly '0-0', not undefined
+        const isUnavailable = wrestler.is_active === false || isZeroRecord;
+        
+        // Use hybrid_rank (or rank as fallback) - check for null/undefined
+        const rank = (wrestler.hybrid_rank !== undefined && wrestler.hybrid_rank !== null) ? wrestler.hybrid_rank : wrestler.rank;
+        const rankText = rank ? `#${rank} @ ${wWeight}` : `Unranked @ ${wWeight}`;
+        
+        // Add asterisk and grey out if unavailable
+        let nameText = wrestler.name;
+        if (isUnavailable) {
+          nameText += ' *';
+          option.style.color = '#999';
+          option.style.fontStyle = 'italic';
+        }
+        
+        option.textContent = `${nameText} (${rankText})`;
+        option.dataset.rank = rank || '';
         option.dataset.actualWeight = wWeight; // Store actual weight class
+        option.dataset.unavailable = isUnavailable ? 'true' : 'false';
         select.appendChild(option);
       });
     });
@@ -889,9 +961,11 @@ function updateMatchupRow(row, weight, wrestlerId, team) {
   const wrestlerAInfo = getWrestlerInfo(effectiveAId, selectA, weight);
   const wrestlerBInfo = getWrestlerInfo(effectiveBId, selectB, weight);
   
-  // Adjust ranks based on weight class differences
-  const adjustedRankA = adjustRankForWeightClass(wrestlerAInfo.rank, wrestlerAInfo.actualWeight, weight);
-  const adjustedRankB = adjustRankForWeightClass(wrestlerBInfo.rank, wrestlerBInfo.actualWeight, weight);
+  // Use hybrid_rank (or rank as fallback) and adjust ranks based on weight class differences - check for null/undefined
+  const rankA = (wrestlerAInfo.hybrid_rank !== undefined && wrestlerAInfo.hybrid_rank !== null) ? wrestlerAInfo.hybrid_rank : wrestlerAInfo.rank;
+  const rankB = (wrestlerBInfo.hybrid_rank !== undefined && wrestlerBInfo.hybrid_rank !== null) ? wrestlerBInfo.hybrid_rank : wrestlerBInfo.rank;
+  const adjustedRankA = adjustRankForWeightClass(rankA, wrestlerAInfo.actualWeight, weight);
+  const adjustedRankB = adjustRankForWeightClass(rankB, wrestlerBInfo.actualWeight, weight);
   
   let winner = null;
   let points = 3; // Default to regular decision
@@ -963,15 +1037,16 @@ function updateMatchupRow(row, weight, wrestlerId, team) {
 function getWrestlerInfo(wrestlerId, selectElement, matchupWeight) {
   // Handle FORFEIT or empty/null cases
   if (!wrestlerId || wrestlerId === 'FORFEIT') {
-    return { rank: null, actualWeight: matchupWeight };
+    return { rank: null, hybrid_rank: null, actualWeight: matchupWeight };
   }
   
   const roster = selectElement.dataset.team === 'A' ? teamRosters[teamA] : teamRosters[teamB];
-  if (!roster) return { rank: null, actualWeight: matchupWeight };
+  if (!roster) return { rank: null, hybrid_rank: null, actualWeight: matchupWeight };
   
   // Find wrestler in roster to get their actual weight class
   let actualWeight = matchupWeight;
   let rank = null;
+  let hybrid_rank = null;
   
   // Check all weight classes
   for (const [w, wrestlers] of Object.entries(roster.weights)) {
@@ -979,27 +1054,29 @@ function getWrestlerInfo(wrestlerId, selectElement, matchupWeight) {
     if (wrestler) {
       actualWeight = parseInt(w);
       rank = wrestler.rank;
+      hybrid_rank = wrestler.hybrid_rank;
       break;
     }
   }
   
   // If not found in roster, try rankings
-  if (rank === null) {
+  if (rank === null && hybrid_rank === null) {
     for (const [w, rankings] of Object.entries(rankingsByWeight)) {
       const ranked = rankings.find(wr => wr.wrestler_id === wrestlerId);
       if (ranked) {
         actualWeight = parseInt(w);
         rank = ranked.rank;
+        hybrid_rank = ranked.hybrid_rank;
         break;
       }
     }
   }
   
-  return { rank, actualWeight };
+  return { rank, hybrid_rank, actualWeight };
 }
 
 function adjustRankForWeightClass(rank, actualWeight, matchupWeight) {
-  if (rank === null) return null;
+  if (rank === null || rank === undefined) return null;
   
   const actualWeightNum = parseInt(actualWeight);
   const matchupWeightNum = parseInt(matchupWeight);
@@ -1084,8 +1161,11 @@ function updateScores() {
         const wrestlerAInfo = getWrestlerInfo(effectiveAId, selectA, weight);
         const wrestlerBInfo = getWrestlerInfo(effectiveBId, selectB, weight);
         
-        const adjustedRankA = adjustRankForWeightClass(wrestlerAInfo.rank, wrestlerAInfo.actualWeight, weight);
-        const adjustedRankB = adjustRankForWeightClass(wrestlerBInfo.rank, wrestlerBInfo.actualWeight, weight);
+        // Use hybrid_rank (or rank as fallback) - check for null/undefined
+        const rankA = (wrestlerAInfo.hybrid_rank !== undefined && wrestlerAInfo.hybrid_rank !== null) ? wrestlerAInfo.hybrid_rank : wrestlerAInfo.rank;
+        const rankB = (wrestlerBInfo.hybrid_rank !== undefined && wrestlerBInfo.hybrid_rank !== null) ? wrestlerBInfo.hybrid_rank : wrestlerBInfo.rank;
+        const adjustedRankA = adjustRankForWeightClass(rankA, wrestlerAInfo.actualWeight, weight);
+        const adjustedRankB = adjustRankForWeightClass(rankB, wrestlerBInfo.actualWeight, weight);
         
         let winner = null;
         let points = 3;

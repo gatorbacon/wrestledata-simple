@@ -846,29 +846,29 @@ def main(season, league='ncaa', state=None, gender=None):
         wrestlestat_matches_by_wrestler: Dict[str, List[Tuple[Dict, str]]] = {}
         print("WrestleStat is only used for NCAA, skipping for HS")
     else:
-        print("\n========== LOADING WRESTLESTAT DATA ==========")
-        wrestlestat_matches = load_wrestlestat_matches(season, out_dir)
-        print(f"Loaded {len(wrestlestat_matches)} WrestleStat matches")
+    print("\n========== LOADING WRESTLESTAT DATA ==========")
+    wrestlestat_matches = load_wrestlestat_matches(season, out_dir)
+    print(f"Loaded {len(wrestlestat_matches)} WrestleStat matches")
+    
+    # Organize WrestleStat matches by wrestler ID (for both winner and loser)
+    wrestlestat_matches_by_wrestler: Dict[str, List[Tuple[Dict, str]]] = {}
+    for ws_match, dual_id in wrestlestat_matches:
+        winner_id = ws_match.get("winner_matsavant_id", "")
+        loser_id = ws_match.get("loser_matsavant_id", "")
         
-        # Organize WrestleStat matches by wrestler ID (for both winner and loser)
-        wrestlestat_matches_by_wrestler: Dict[str, List[Tuple[Dict, str]]] = {}
-        for ws_match, dual_id in wrestlestat_matches:
-            winner_id = ws_match.get("winner_matsavant_id", "")
-            loser_id = ws_match.get("loser_matsavant_id", "")
-            
-            # Add to winner's list
-            if winner_id:
-                if winner_id not in wrestlestat_matches_by_wrestler:
-                    wrestlestat_matches_by_wrestler[winner_id] = []
-                wrestlestat_matches_by_wrestler[winner_id].append((ws_match, dual_id))
-            
-            # Add to loser's list
-            if loser_id:
-                if loser_id not in wrestlestat_matches_by_wrestler:
-                    wrestlestat_matches_by_wrestler[loser_id] = []
-                wrestlestat_matches_by_wrestler[loser_id].append((ws_match, dual_id))
+        # Add to winner's list
+        if winner_id:
+            if winner_id not in wrestlestat_matches_by_wrestler:
+                wrestlestat_matches_by_wrestler[winner_id] = []
+            wrestlestat_matches_by_wrestler[winner_id].append((ws_match, dual_id))
         
-        print(f"WrestleStat matches organized for {len(wrestlestat_matches_by_wrestler)} wrestlers")
+        # Add to loser's list
+        if loser_id:
+            if loser_id not in wrestlestat_matches_by_wrestler:
+                wrestlestat_matches_by_wrestler[loser_id] = []
+            wrestlestat_matches_by_wrestler[loser_id].append((ws_match, dual_id))
+    
+    print(f"WrestleStat matches organized for {len(wrestlestat_matches_by_wrestler)} wrestlers")
 
     total_files = 0
     total_matches = 0
@@ -892,10 +892,10 @@ def main(season, league='ncaa', state=None, gender=None):
             public_output_path = os.path.join(public_out_dir, filename)
             
             try:
-                matches, scraper_errors, parse_errors, ws_added, ws_duplicates = process_file(
-                    input_path, output_path, season, wrestlestat_matches_by_wrestler, existing_match_keys, added_wrestlestat_keys
-                )
-                
+            matches, scraper_errors, parse_errors, ws_added, ws_duplicates = process_file(
+                input_path, output_path, season, wrestlestat_matches_by_wrestler, existing_match_keys, added_wrestlestat_keys
+            )
+            
                 # Check if file was skipped due to validation failure (matches will be -1)
                 if matches == -1:
                     total_validation_failures += 1
@@ -904,19 +904,19 @@ def main(season, league='ncaa', state=None, gender=None):
                 
                 # Also copy to public location for frontend access (only if file was written)
                 if Path(output_path).exists():
-                    try:
-                        with open(output_path, "r") as f:
-                            data = json.load(f)
-                        with open(public_output_path, "w") as f:
-                            json.dump(data, f, indent=2)
-                    except Exception as e:
-                        print(f"⚠️ Warning: Could not copy to public location {public_output_path}: {e}")
-                
-                total_matches += matches
-                total_scraper_errors += scraper_errors
-                total_parse_errors += parse_errors
-                total_wrestlestat_added += ws_added
-                total_wrestlestat_duplicates += ws_duplicates
+            try:
+                with open(output_path, "r") as f:
+                    data = json.load(f)
+                with open(public_output_path, "w") as f:
+                    json.dump(data, f, indent=2)
+            except Exception as e:
+                print(f"⚠️ Warning: Could not copy to public location {public_output_path}: {e}")
+            
+            total_matches += matches
+            total_scraper_errors += scraper_errors
+            total_parse_errors += parse_errors
+            total_wrestlestat_added += ws_added
+            total_wrestlestat_duplicates += ws_duplicates
             except Exception as e:
                 # Catch any unexpected errors during file processing
                 print(f"\n❌ ERROR processing {filename}: {e}")
@@ -941,10 +941,10 @@ def main(season, league='ncaa', state=None, gender=None):
         print(f"   Please investigate and fix the scrape issues, then re-run processing.")
     
     if league != 'hs':
-        print(f"\n========== WRESTLESTAT MERGE SUMMARY ==========")
-        print(f"WrestleStat matches processed: {len(wrestlestat_matches)}")
-        print(f"Duplicates skipped: {total_wrestlestat_duplicates}")
-        print(f"New matches added: {total_wrestlestat_added}")
+    print(f"\n========== WRESTLESTAT MERGE SUMMARY ==========")
+    print(f"WrestleStat matches processed: {len(wrestlestat_matches)}")
+    print(f"Duplicates skipped: {total_wrestlestat_duplicates}")
+    print(f"New matches added: {total_wrestlestat_added}")
     
     if total_scraper_errors == 0 and total_parse_errors == 0 and total_validation_failures == 0:
         print("✅ No errors found in any files!")

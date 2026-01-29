@@ -163,7 +163,7 @@ def build_direct_relationships(matches: List[Dict], wrestlers: Dict[str, Dict],
                 'result': 'M',  # Manual override marker
                 'event': manual_match.get('note', 'Manual override'),
                 'is_manual': True
-            })
+        })
     
     return relationships
 
@@ -449,7 +449,7 @@ def build_relationships_for_weight_class(weight_class_data: Dict, season: Option
     if manual_count > 0:
         print(f"    Direct relationships: {len(direct_rels)} (including {manual_count} manual override(s))")
     else:
-        print(f"    Direct relationships: {len(direct_rels)}")
+    print(f"    Direct relationships: {len(direct_rels)}")
     
     # Build common opponent relationships
     common_opp_rels = build_common_opponent_relationships(direct_rels, matches, wrestlers)

@@ -649,6 +649,32 @@ function safe(value, formatter) {
     
     careerSummarySection.innerHTML = "";
     
+    // Render Career Record if available
+    if (data.career_record) {
+      const careerRecordDiv = document.createElement("div");
+      careerRecordDiv.className = "career-record";
+      careerRecordDiv.style.cssText = "margin-bottom: 24px;";
+      
+      const label = document.createElement("div");
+      label.className = "career-record-label";
+      label.textContent = "Career Record";
+      label.style.cssText = "font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;";
+      careerRecordDiv.appendChild(label);
+      
+      const value = document.createElement("div");
+      value.className = "career-record-value";
+      const wins = data.career_record.wins || 0;
+      const losses = data.career_record.losses || 0;
+      const winPct = data.career_record.win_pct || 0;
+      // Format win percentage: 0.885 -> .885 (remove leading zero)
+      const winPctFormatted = winPct.toFixed(3).replace(/^0\./, '.');
+      value.innerHTML = `<strong>${wins}–${losses}</strong> <span style="color: var(--muted);">(${winPctFormatted})</span>`;
+      value.style.cssText = "font-size: 1.125rem; line-height: 1.5;";
+      careerRecordDiv.appendChild(value);
+      
+      careerSummarySection.appendChild(careerRecordDiv);
+    }
+    
     // Section header - newspaper style, more prominent for historical anchor
     const header = document.createElement("h2");
     header.className = "section-title-career-summary";

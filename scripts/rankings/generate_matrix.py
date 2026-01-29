@@ -143,7 +143,7 @@ def classify_best_win(matches: List[Dict], winner_id: str) -> str:
         if m.get("is_manual", False) or m.get("result") == "M":
             code = "M"
         else:
-            code = classify_result_type(m.get("result", ""))
+        code = classify_result_type(m.get("result", ""))
         
         rank = rank_order.get(code, rank_order["O"])
         if rank < best_rank:

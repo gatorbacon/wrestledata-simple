@@ -23,7 +23,26 @@ async function loadLeaderboardData(gender) {
       throw new Error(`Failed to load leaderboard data: ${response.status}`);
     }
     const data = await response.json();
-    leaderboardData[gender] = data;
+    
+    // Also load career_wins from separate file if it exists
+    if (data.career_wins && data.career_wins.length > 0) {
+      // Already included in leaderboards.json
+      leaderboardData[gender] = data;
+    } else {
+      // Try loading from separate file
+      try {
+        const careerWinsUrl = `/data/leaderboards/${gender}/${season}/career_wins.json`;
+        const careerWinsResponse = await fetch(careerWinsUrl);
+        if (careerWinsResponse.ok) {
+          const careerWinsData = await careerWinsResponse.json();
+          data.career_wins = careerWinsData;
+        }
+      } catch (e) {
+        console.warn('Could not load career_wins.json:', e);
+      }
+      leaderboardData[gender] = data;
+    }
+    
     console.log(`Loaded leaderboard data for ${gender}:`, data);
     return data;
   } catch (error) {
@@ -43,22 +62,17 @@ function renderLeaderboard() {
     return;
   }
 
+  // Update table headers based on stat type (must be done before checking entries)
+  updateTableHeaders();
+  
   const entries = data[currentStat] || [];
   const tbody = document.getElementById('leaderboard-tbody');
   
+  const colCount = currentStat === 'career_wins' ? 5 : 6;
   if (entries.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="6" style="text-align: center; padding: 2em; color: var(--text-secondary);">No data available</td></tr>';
+    tbody.innerHTML = `<tr><td colspan="${colCount}" style="text-align: center; padding: 2em; color: var(--text-secondary);">No data available</td></tr>`;
     return;
   }
-
-  // Update stat header
-  const statHeader = document.getElementById('stat-header');
-  const statLabels = {
-    wins: 'Wins',
-    pins: 'Pins',
-    techs: 'Techs'
-  };
-  statHeader.textContent = statLabels[currentStat] || 'Stat';
 
   // Clear table
   tbody.innerHTML = '';
@@ -87,27 +101,93 @@ function renderLeaderboard() {
     teamTd.textContent = entry.team || '—';
     tr.appendChild(teamTd);
 
-    // Rank (wrestler rank)
-    const wrestlerRankTd = document.createElement('td');
-    wrestlerRankTd.textContent = entry.rank === 999 ? '—' : entry.rank;
-    wrestlerRankTd.style.textAlign = 'center';
-    tr.appendChild(wrestlerRankTd);
+    if (currentStat === 'career_wins') {
+      // Career Wins: Career Record, Winning %
+      // Career Record
+      const recordTd = document.createElement('td');
+      recordTd.textContent = entry.career_record || '—';
+      recordTd.style.textAlign = 'center';
+      tr.appendChild(recordTd);
 
-    // W-L Record
-    const recordTd = document.createElement('td');
-    recordTd.textContent = `${entry.wins}–${entry.losses}`;
-    recordTd.style.textAlign = 'center';
-    tr.appendChild(recordTd);
+      // Winning Percentage
+      const winPctTd = document.createElement('td');
+      if (entry.win_pct !== null && entry.win_pct !== undefined) {
+        const winPctFormatted = entry.win_pct.toFixed(3).replace(/^0\./, '.');
+        winPctTd.textContent = winPctFormatted;
+      } else {
+        winPctTd.textContent = '—';
+      }
+      winPctTd.style.textAlign = 'center';
+      winPctTd.style.fontWeight = '600';
+      tr.appendChild(winPctTd);
+    } else {
+      // Regular stats: Rank, W-L, Stat
+      // Rank (wrestler rank)
+      const wrestlerRankTd = document.createElement('td');
+      wrestlerRankTd.textContent = entry.rank === 999 ? '—' : entry.rank;
+      wrestlerRankTd.style.textAlign = 'center';
+      tr.appendChild(wrestlerRankTd);
 
-    // Stat column (Wins/Pins/Techs)
-    const statTd = document.createElement('td');
-    statTd.textContent = entry[currentStat] || 0;
-    statTd.style.textAlign = 'center';
-    statTd.style.fontWeight = '600';
-    tr.appendChild(statTd);
+      // W-L Record
+      const recordTd = document.createElement('td');
+      recordTd.textContent = `${entry.wins}–${entry.losses}`;
+      recordTd.style.textAlign = 'center';
+      tr.appendChild(recordTd);
+
+      // Stat column (Wins/Pins/Techs)
+      const statTd = document.createElement('td');
+      statTd.textContent = entry[currentStat] || 0;
+      statTd.style.textAlign = 'center';
+      statTd.style.fontWeight = '600';
+      tr.appendChild(statTd);
+    }
 
     tbody.appendChild(tr);
   });
+}
+
+/**
+ * Update table headers based on current stat type
+ */
+function updateTableHeaders() {
+  const thead = document.querySelector('#leaderboard-table thead tr');
+  if (!thead) return;
+  
+  if (currentStat === 'career_wins') {
+    // Career Wins headers: #, Name, Team, Career Record, Winning %
+    const headers = ['#', 'Name', 'Team', 'Career Record', 'Winning %'];
+    thead.innerHTML = '';
+    headers.forEach((headerText, index) => {
+      const th = document.createElement('th');
+      th.textContent = headerText;
+      if (index === headers.length - 1) {
+        th.id = 'stat-header';
+      }
+      thead.appendChild(th);
+    });
+  } else {
+    // Regular stats headers: #, Name, Team, Rank, W–L, Stat
+    const headers = ['#', 'Name', 'Team', 'Rank', 'W–L', 'Wins'];
+    thead.innerHTML = '';
+    headers.forEach((headerText, index) => {
+      const th = document.createElement('th');
+      th.textContent = headerText;
+      if (index === headers.length - 1) {
+        th.id = 'stat-header';
+      }
+      thead.appendChild(th);
+    });
+    // Update stat header text
+    const statHeader = document.getElementById('stat-header');
+    const statLabels = {
+      wins: 'Wins',
+      pins: 'Pins',
+      techs: 'Techs'
+    };
+    if (statHeader) {
+      statHeader.textContent = statLabels[currentStat] || 'Stat';
+    }
+  }
 }
 
 /**

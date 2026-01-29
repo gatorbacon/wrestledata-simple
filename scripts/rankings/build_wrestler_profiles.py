@@ -840,6 +840,54 @@ def load_season_accomplishments(season: int, gender: str) -> Dict[str, Dict]:
         return {}
 
 
+def calculate_career_record(season_summary: List[Dict]) -> Optional[Dict]:
+    """
+    Calculate career totals (wins, losses, win percentage) from season summary.
+    
+    Args:
+        season_summary: List of season summary dictionaries with 'record' field (e.g., "37-2")
+    
+    Returns:
+        Dictionary with wins, losses, and win_pct, or None if no valid records found
+    """
+    total_wins = 0
+    total_losses = 0
+    
+    for season_data in season_summary:
+        record_str = season_data.get("record", "")
+        if not record_str:
+            continue
+        
+        # Parse record string (e.g., "37-2" or "58-8")
+        try:
+            parts = record_str.split("-")
+            if len(parts) == 2:
+                wins = int(parts[0].strip())
+                losses = int(parts[1].strip())
+                total_wins += wins
+                total_losses += losses
+        except (ValueError, IndexError):
+            # Skip invalid record formats
+            continue
+    
+    # Only return if we have at least one match
+    if total_wins == 0 and total_losses == 0:
+        return None
+    
+    # Calculate win percentage
+    total_matches = total_wins + total_losses
+    if total_matches > 0:
+        win_pct = round(total_wins / total_matches, 3)
+    else:
+        win_pct = 0.0
+    
+    return {
+        "wins": total_wins,
+        "losses": total_losses,
+        "win_pct": win_pct
+    }
+
+
 def build_season_summary(
     career: Dict,
     gender: str
@@ -1072,6 +1120,11 @@ def build_wrestler_profile(
                 season_summary = build_season_summary(career, gender)
                 if season_summary:
                     profile["season_summary"] = season_summary
+                    
+                    # Calculate career record totals
+                    career_record = calculate_career_record(season_summary)
+                    if career_record:
+                        profile["career_record"] = career_record
     
     return profile
 

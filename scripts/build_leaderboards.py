@@ -116,6 +116,61 @@ def filter_wrestlers(profiles: List[Dict]) -> List[Dict]:
     return filtered
 
 
+def build_career_wins_leaderboard(
+    profiles: List[Dict],
+    limit: Optional[int] = None
+) -> List[Dict]:
+    """
+    Build a leaderboard for career wins.
+    
+    Only includes wrestlers with career_record data.
+    Sorted by career wins (descending), then win percentage (descending), then name (ascending).
+    """
+    entries = []
+    
+    for profile in profiles:
+        career_record = profile.get("career_record")
+        if not career_record:
+            continue  # Skip wrestlers without career data
+        
+        career_wins = career_record.get("wins", 0)
+        career_losses = career_record.get("losses", 0)
+        win_pct = career_record.get("win_pct", 0.0)
+        
+        # Skip if no career wins
+        if career_wins == 0:
+            continue
+        
+        wrestler_id = profile.get("wrestler_id", "")
+        name = profile.get("name", "")
+        team = profile.get("team", "")
+        
+        entry = {
+            "wrestler_id": wrestler_id,
+            "name": name,
+            "team": team,
+            "career_wins": career_wins,
+            "career_losses": career_losses,
+            "career_record": f"{career_wins}-{career_losses}",
+            "win_pct": win_pct,
+        }
+        
+        entries.append(entry)
+    
+    # Sort entries: career wins (descending), win percentage (descending), name (ascending)
+    entries.sort(key=lambda x: (
+        -x["career_wins"],  # Career wins descending
+        -x["win_pct"],  # Win percentage descending
+        x["name"].lower()  # Name ascending
+    ))
+    
+    # Limit if specified
+    if limit:
+        return entries[:limit]
+    
+    return entries
+
+
 def build_leaderboard(
     profiles: List[Dict],
     stat_type: str,  # "wins", "pins", or "techs"
@@ -263,11 +318,13 @@ def build_leaderboards_for_gender(
     wins_leaderboard = build_leaderboard(filtered, "wins", limit=40)
     pins_leaderboard = build_leaderboard(filtered, "pins", limit=40)
     techs_leaderboard = build_leaderboard(filtered, "techs", limit=40)
+    career_wins_leaderboard = build_career_wins_leaderboard(filtered, limit=None)
     
     print(f"Generated leaderboards:")
     print(f"  Wins: {len(wins_leaderboard)} entries")
     print(f"  Pins: {len(pins_leaderboard)} entries")
     print(f"  Techs: {len(techs_leaderboard)} entries")
+    print(f"  Career Wins: {len(career_wins_leaderboard)} entries")
     
     # Build output JSON
     output_data = {
@@ -277,6 +334,7 @@ def build_leaderboards_for_gender(
         "wins": wins_leaderboard,
         "pins": pins_leaderboard,
         "techs": techs_leaderboard,
+        "career_wins": career_wins_leaderboard,
     }
     
     # Write output file
@@ -287,6 +345,13 @@ def build_leaderboards_for_gender(
         json.dump(output_data, f, indent=2, ensure_ascii=False)
     
     print(f"✓ Saved leaderboards to: {output_file}")
+    
+    # Also write career_wins as a separate file for easy loading
+    career_wins_file = output_dir / "career_wins.json"
+    with open(career_wins_file, 'w', encoding='utf-8') as f:
+        json.dump(career_wins_leaderboard, f, indent=2, ensure_ascii=False)
+    
+    print(f"✓ Saved career wins leaderboard to: {career_wins_file}")
 
 
 def main() -> None:

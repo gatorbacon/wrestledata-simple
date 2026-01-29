@@ -31,6 +31,9 @@
                 <a href="/leaderboards/xtp/teams.html?gender=boys" class="dropdown-item">
                   <span class="dropdown-item-label">Team Tournament</span>
                 </a>
+                <a href="/leaderboards/dual_rankings.html?gender=boys" class="dropdown-item">
+                  <span class="dropdown-item-label">Team Duals</span>
+                </a>
               </div>
             </div>
 
@@ -45,6 +48,9 @@
                 </a>
                 <a href="/leaderboards/xtp/teams.html?gender=girls" class="dropdown-item">
                   <span class="dropdown-item-label">Team Tournament</span>
+                </a>
+                <a href="/leaderboards/dual_rankings.html?gender=girls" class="dropdown-item">
+                  <span class="dropdown-item-label">Team Duals</span>
                 </a>
               </div>
             </div>
@@ -127,6 +133,7 @@
               <div class="mobile-menu-section-content" data-content="boys">
                 <a href="/rankings.html?gender=boys" class="mobile-menu-item mobile-menu-item--child">Individual Rankings</a>
                 <a href="/leaderboards/xtp/teams.html?gender=boys" class="mobile-menu-item mobile-menu-item--child">Team Tournament</a>
+                <a href="/leaderboards/dual_rankings.html?gender=boys" class="mobile-menu-item mobile-menu-item--child">Team Duals</a>
               </div>
             </div>
 
@@ -139,6 +146,7 @@
               <div class="mobile-menu-section-content" data-content="girls">
                 <a href="/rankings.html?gender=girls" class="mobile-menu-item mobile-menu-item--child">Individual Rankings</a>
                 <a href="/leaderboards/xtp/teams.html?gender=girls" class="mobile-menu-item mobile-menu-item--child">Team Tournament</a>
+                <a href="/leaderboards/dual_rankings.html?gender=girls" class="mobile-menu-item mobile-menu-item--child">Team Duals</a>
               </div>
             </div>
 
