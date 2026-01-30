@@ -167,6 +167,32 @@ function formatPublishedDate(publishedAt) {
 }
 
 // ========================================
+// Format Date from ID (YYYY-MM-DD format)
+// ========================================
+function formatDateFromId(dateId) {
+  if (!dateId) return "";
+  
+  try {
+    // Parse YYYY-MM-DD format directly as local date to avoid timezone issues
+    const parts = dateId.split('-');
+    if (parts.length === 3) {
+      const year = parseInt(parts[0], 10);
+      const month = parseInt(parts[1], 10) - 1; // JS months are 0-indexed
+      const day = parseInt(parts[2], 10);
+      const date = new Date(year, month, day);
+      return date.toLocaleDateString('en-US', { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+      });
+    }
+    return dateId;
+  } catch (e) {
+    return dateId;
+  }
+}
+
+// ========================================
 // Load Archive Index
 // ========================================
 async function loadArchiveIndex(gender, season) {
@@ -311,7 +337,8 @@ function renderDropSelector(drops, currentDrop, gender, season, weight) {
   drops.forEach(drop => {
     const option = document.createElement('option');
     option.value = drop.id;
-    option.textContent = formatPublishedDate(drop.published_at);
+    // Use id field for display to avoid timezone conversion issues
+    option.textContent = formatDateFromId(drop.id);
     if (drop.id === currentDrop) {
       option.selected = true;
     }
@@ -321,10 +348,43 @@ function renderDropSelector(drops, currentDrop, gender, season, weight) {
   // Handle change
   select.addEventListener('change', (e) => {
     const newDrop = e.target.value;
+    // Update PDF link for new drop before navigation
+    renderPdfDownloadLink(gender, season, newDrop);
     const url = new URL(window.location);
     url.searchParams.set('drop', newDrop);
     window.location.href = url.toString();
   });
+}
+
+// ========================================
+// Render PDF Download Link
+// ========================================
+function renderPdfDownloadLink(gender, season, dropId) {
+  const container = document.getElementById('pdf-download-container');
+  const link = document.getElementById('pdf-download-link');
+  
+  if (!container || !link) return;
+  
+  // Construct PDF path
+  const pdfPath = `/data/rankings/${gender}/${season}/${dropId}/rankings.pdf`;
+  
+  // Check if PDF exists by trying to fetch it
+  fetch(pdfPath, { method: 'HEAD' })
+    .then(response => {
+      if (response.ok) {
+        // PDF exists - show download link
+        link.href = pdfPath;
+        link.download = `rankings_${gender}_${season}_${dropId}.pdf`;
+        container.style.display = 'block';
+      } else {
+        // PDF doesn't exist - hide container
+        container.style.display = 'none';
+      }
+    })
+    .catch(() => {
+      // Error fetching - assume PDF doesn't exist
+      container.style.display = 'none';
+    });
 }
 
 // ========================================
@@ -632,7 +692,8 @@ async function initRankings() {
   // Update season info with published date
   const seasonEl = document.getElementById("season-info");
   if (seasonEl && meta) {
-    const publishedDate = formatPublishedDate(meta.published_at);
+    // Use dropId for display to avoid timezone conversion issues
+    const publishedDate = formatDateFromId(dropId);
     seasonEl.textContent = `Published ${publishedDate}`;
   } else {
     seasonEl.textContent = `Season ${season}`;
@@ -640,6 +701,9 @@ async function initRankings() {
   
   // Render drop selector
   renderDropSelector(index.drops, dropId, gender, season, weight);
+  
+  // Check for PDF and render download link
+  renderPdfDownloadLink(gender, season, dropId);
   
   // Update active tab
   updateActiveTab(gender, weight);

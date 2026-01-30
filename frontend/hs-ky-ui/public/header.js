@@ -64,6 +64,11 @@
             <div class="nav-item">
               <a href="/leaderboards.html" class="nav-link">Stat Leaders</a>
             </div>
+
+            <!-- About -->
+            <div class="nav-item">
+              <a href="/about.html" class="nav-link">About</a>
+            </div>
           </div>
 
           <!-- Search (Center-Right) -->
@@ -155,6 +160,9 @@
 
             <!-- Stat Leaders (Non-expandable link) -->
             <a href="/leaderboards.html" class="mobile-menu-item">Stat Leaders</a>
+
+            <!-- About (Non-expandable link) -->
+            <a href="/about.html" class="mobile-menu-item">About</a>
           </nav>
         </div>
       </div>

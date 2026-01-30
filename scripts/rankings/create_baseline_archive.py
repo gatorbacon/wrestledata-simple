@@ -592,16 +592,17 @@ def create_baseline_archive(
         json.dump(meta, f, indent=2)
     print(f"✓ Created meta.json")
     
-    # Create notes/ subdirectory with empty markdown files for each weight
+    # Create notes/ subdirectory with blank markdown files for each weight
+    # Files are created blank by default and only shown if they have content
     notes_dir = archive_dir / "notes"
     notes_dir.mkdir(exist_ok=True)
     
     for weight in weights:
         notes_file = notes_dir / f"{weight}.md"
         if not notes_file.exists():
-            notes_content = f"# {weight} lbs\n\n<!-- Add editorial notes here -->\n"
+            # Create blank file - will only be displayed if user adds content
             with notes_file.open("w", encoding="utf-8") as f:
-                f.write(notes_content)
+                f.write("")
     
     print(f"✓ Created notes/ subdirectory")
     

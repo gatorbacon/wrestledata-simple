@@ -869,6 +869,67 @@ def render_svg_to_jpg(svg_path: Path, jpg_path: Path, width: int = 1500, height:
     print(f"  ✓ JPG generated: {jpg_path}")
 
 
+def combine_jpgs_to_pdf(jpg_files: List[Path], pdf_path: Path) -> None:
+    """
+    Combine multiple JPG files into a single PDF.
+    
+    Args:
+        jpg_files: List of JPG file paths (sorted in desired order)
+        pdf_path: Path to output PDF file
+    """
+    if not REPORTLAB_AVAILABLE:
+        raise ImportError("reportlab is required for PDF combination")
+    
+    if not jpg_files:
+        print("Warning: No JPG files to combine into PDF")
+        return
+    
+    pdf_path.parent.mkdir(parents=True, exist_ok=True)
+    
+    # Create PDF document
+    from reportlab.lib.pagesizes import letter
+    from reportlab.platypus import Image as RLImage
+    
+    doc = SimpleDocTemplate(str(pdf_path), pagesize=letter)
+    story = []
+    
+    # Add each JPG as a page
+    for jpg_file in sorted(jpg_files):
+        if not jpg_file.exists():
+            print(f"Warning: JPG file not found: {jpg_file}")
+            continue
+        
+        try:
+            # Open image to get dimensions
+            img = Image.open(jpg_file)
+            img_width, img_height = img.size
+            
+            # Calculate scaling to fit letter size (8.5 x 11 inches)
+            # Leave small margins
+            page_width = letter[0] - 40  # 20px margin on each side
+            page_height = letter[1] - 40  # 20px margin on top/bottom
+            
+            # Calculate scale to fit while maintaining aspect ratio
+            scale_w = page_width / img_width
+            scale_h = page_height / img_height
+            scale = min(scale_w, scale_h)
+            
+            # Create ReportLab Image
+            rl_img = RLImage(str(jpg_file), width=img_width * scale, height=img_height * scale)
+            story.append(rl_img)
+            if jpg_file != sorted(jpg_files)[-1]:  # Don't add page break after last image
+                story.append(PageBreak())
+        except Exception as e:
+            print(f"Warning: Could not add {jpg_file} to PDF: {e}")
+            continue
+    
+    if story:
+        doc.build(story)
+        print(f"✓ PDF generated: {pdf_path} ({len([f for f in jpg_files if f.exists()])} pages)")
+    else:
+        print("Warning: No images were added to PDF")
+
+
 def get_weight_class_data(
     weight_class: str,
     season: int,
@@ -1095,6 +1156,235 @@ def build_team_report_table_data(
     return table_data
 
 
+def load_previous_team_rankings(
+    archive_base: Path,
+    gender: str,
+    season: int,
+    ranking_type: str,
+    previous_drop_id: str
+) -> Dict[str, int]:
+    """
+    Load previous drop's team rankings and return mapping of team_name -> previous_rank.
+    
+    Args:
+        archive_base: Base directory for archive structure
+        gender: 'boys' or 'girls'
+        season: Season year
+        ranking_type: 'tournament' or 'dual'
+        previous_drop_id: Previous drop identifier
+    
+    Returns:
+        Dictionary mapping team_name -> previous_rank (or empty dict if not found)
+    """
+    previous_file = archive_base / gender / str(season) / "team" / ranking_type / "drops" / f"{previous_drop_id}.json"
+    
+    if not previous_file.exists():
+        return {}
+    
+    try:
+        with previous_file.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        
+        previous_rankings = {}
+        for team in data.get("rankings", []):
+            team_name = team.get("team")
+            rank = team.get("rank")
+            if team_name and rank:
+                previous_rankings[team_name] = rank
+        
+        return previous_rankings
+    except Exception as e:
+        print(f"Warning: Could not load previous team rankings for {ranking_type}: {e}")
+        return {}
+
+
+def generate_team_tournament_rankings(
+    season: int,
+    gender: str,
+    drop_id: str,
+    archive_base: Path,
+    previous_drop_id: Optional[str] = None
+) -> None:
+    """
+    Generate team tournament rankings archive from xTP data.
+    
+    Args:
+        season: Season year
+        gender: 'boys' or 'girls'
+        drop_id: Drop identifier
+        archive_base: Base directory for archive structure
+        previous_drop_id: Optional previous drop ID for delta calculation
+    """
+    # Load team xTP data
+    xtp_path = Path(f"frontend/hs-ky-ui/public/data/xtp/{gender}/{season}/xtp_teams_{season}.json")
+    
+    if not xtp_path.exists():
+        print(f"Warning: Team xTP file not found: {xtp_path}")
+        print("  Skipping team tournament rankings archive")
+        return
+    
+    with xtp_path.open("r", encoding="utf-8") as f:
+        xtp_data = json.load(f)
+    
+    teams_list = xtp_data.get("teams", [])
+    if not teams_list:
+        print(f"Warning: No teams found in xTP data")
+        return
+    
+    # Sort by team_xTP_simple (descending)
+    teams_list.sort(key=lambda t: -t.get("team_xTP_simple", 0.0))
+    
+    # Load previous rankings for delta calculation
+    previous_rankings = {}
+    if previous_drop_id:
+        previous_rankings = load_previous_team_rankings(
+            archive_base, gender, season, "tournament", previous_drop_id
+        )
+    
+    # Build rankings with deltas
+    rankings = []
+    for rank, team in enumerate(teams_list, start=1):
+        team_name = team.get("team", "")
+        points = team.get("team_xTP_simple", 0.0)
+        
+        # Calculate delta
+        prev_rank = previous_rankings.get(team_name)
+        if prev_rank is not None:
+            delta = prev_rank - rank  # Positive = moved up, Negative = moved down
+        else:
+            prev_rank = None
+            delta = None
+        
+        rankings.append({
+            "rank": rank,
+            "team": team_name,
+            "points": points,
+            "prev_rank": prev_rank,
+            "delta": delta
+        })
+    
+    # Create output structure
+    output_data = {
+        "season": season,
+        "gender": gender,
+        "ranking_type": "team_tournament",
+        "drop_id": drop_id,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "rankings": rankings
+    }
+    
+    # Write to archive
+    archive_dir = archive_base / gender / str(season) / "team" / "tournament" / "drops"
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    
+    drop_file = archive_dir / f"{drop_id}.json"
+    with drop_file.open("w", encoding="utf-8") as f:
+        json.dump(output_data, f, indent=2, ensure_ascii=False)
+    
+    # Update latest.json
+    latest_file = archive_base / gender / str(season) / "team" / "tournament" / "latest.json"
+    with latest_file.open("w", encoding="utf-8") as f:
+        json.dump(output_data, f, indent=2, ensure_ascii=False)
+    
+    print(f"✓ Team Tournament Rankings: {len(rankings)} teams archived")
+
+
+def generate_dual_rankings(
+    season: int,
+    gender: str,
+    drop_id: str,
+    archive_base: Path,
+    previous_drop_id: Optional[str] = None
+) -> None:
+    """
+    Generate dual rankings archive from dual_standings.json.
+    
+    Args:
+        season: Season year
+        gender: 'boys' or 'girls'
+        drop_id: Drop identifier
+        archive_base: Base directory for archive structure
+        previous_drop_id: Optional previous drop ID for delta calculation
+    """
+    # Load dual standings data
+    dual_path = Path(f"frontend/hs-ky-ui/public/data/dual_standings/{gender}/{season}/dual_standings.json")
+    
+    if not dual_path.exists():
+        print(f"Warning: Dual standings file not found: {dual_path}")
+        print("  Skipping dual rankings archive")
+        return
+    
+    with dual_path.open("r", encoding="utf-8") as f:
+        standings = json.load(f)
+    
+    if not standings:
+        print(f"Warning: No dual standings found")
+        return
+    
+    # Load previous rankings for delta calculation
+    previous_rankings = {}
+    if previous_drop_id:
+        previous_rankings = load_previous_team_rankings(
+            archive_base, gender, season, "dual", previous_drop_id
+        )
+    
+    # Build rankings with deltas
+    rankings = []
+    for entry in standings:
+        rank = entry.get("rank")
+        team_name = entry.get("team", "")
+        wins = entry.get("wins", 0)
+        losses = entry.get("losses", 0)
+        ties = entry.get("ties", 0)
+        point_diff = entry.get("point_diff", 0)
+        win_pct = entry.get("win_pct", 0.0)
+        
+        # Calculate delta
+        prev_rank = previous_rankings.get(team_name)
+        if prev_rank is not None:
+            delta = prev_rank - rank  # Positive = moved up, Negative = moved down
+        else:
+            prev_rank = None
+            delta = None
+        
+        rankings.append({
+            "rank": rank,
+            "team": team_name,
+            "wins": wins,
+            "losses": losses,
+            "ties": ties,
+            "point_diff": point_diff,
+            "win_pct": win_pct,
+            "prev_rank": prev_rank,
+            "delta": delta
+        })
+    
+    # Create output structure
+    output_data = {
+        "season": season,
+        "gender": gender,
+        "ranking_type": "dual",
+        "drop_id": drop_id,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "rankings": rankings
+    }
+    
+    # Write to archive
+    archive_dir = archive_base / gender / str(season) / "team" / "dual" / "drops"
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    
+    drop_file = archive_dir / f"{drop_id}.json"
+    with drop_file.open("w", encoding="utf-8") as f:
+        json.dump(output_data, f, indent=2, ensure_ascii=False)
+    
+    # Update latest.json
+    latest_file = archive_base / gender / str(season) / "team" / "dual" / "latest.json"
+    with latest_file.open("w", encoding="utf-8") as f:
+        json.dump(output_data, f, indent=2, ensure_ascii=False)
+    
+    print(f"✓ Dual Rankings: {len(rankings)} teams archived")
+
+
 def create_baseline_archive(
     season: int,
     gender: str,
@@ -1266,16 +1556,17 @@ def create_baseline_archive(
         json.dump(meta, f, indent=2)
     print(f"✓ Created meta.json")
     
-    # Create notes/ subdirectory with empty markdown files for each weight
+    # Create notes/ subdirectory with blank markdown files for each weight
+    # Files are created blank by default and only shown if they have content
     notes_dir = archive_dir / "notes"
     notes_dir.mkdir(exist_ok=True)
     
     for weight in weights:
         notes_file = notes_dir / f"{weight}.md"
         if not notes_file.exists():
-            notes_content = f"# {weight} lbs\n\n<!-- Add editorial notes here -->\n"
+            # Create blank file - will only be displayed if user adds content
             with notes_file.open("w", encoding="utf-8") as f:
-                f.write(notes_content)
+                f.write("")
     
     print(f"✓ Created notes/ subdirectory")
     
@@ -1834,6 +2125,7 @@ def main():
     # Determine previous drop for movement calculation
     # Load previous rankings even if not creating archive (for JPG movement indicators)
     previous_rankings_map = {}
+    previous_drop_id = None
     archive_base = Path(args.archive_base)
     index_dir = archive_base / args.gender / str(args.season)
     index_file = index_dir / "index.json"
@@ -1879,12 +2171,38 @@ def main():
         print(f"Creating archive for {args.gender} {args.season}...")
         print(f"{'='*60}")
         archive_base = Path(args.archive_base)
+        
+        # Create individual rankings archive
         create_baseline_archive(
             season=args.season,
             gender=args.gender,
             drop_id=args.drop_id,
             archive_base=archive_base,
             force=args.force
+        )
+        
+        # Generate team tournament rankings archive
+        print(f"\n{'='*60}")
+        print(f"Creating Team Tournament Rankings archive...")
+        print(f"{'='*60}")
+        generate_team_tournament_rankings(
+            season=args.season,
+            gender=args.gender,
+            drop_id=args.drop_id,
+            archive_base=archive_base,
+            previous_drop_id=previous_drop_id
+        )
+        
+        # Generate dual rankings archive
+        print(f"\n{'='*60}")
+        print(f"Creating Dual Rankings archive...")
+        print(f"{'='*60}")
+        generate_dual_rankings(
+            season=args.season,
+            gender=args.gender,
+            drop_id=args.drop_id,
+            archive_base=archive_base,
+            previous_drop_id=previous_drop_id
         )
     
     # Load weight class data (shared for PDF and JPG)
@@ -1958,6 +2276,7 @@ def main():
             )
     
     # Generate JPG if requested
+    jpg_files_generated = []
     if args.jpg:
         if not CAIROSVG_AVAILABLE:
             print(f"\n{'='*60}")
@@ -1977,6 +2296,40 @@ def main():
                 region_mapping=region_mapping,
                 output_dir=output_dir
             )
+            
+            # Collect generated JPG files for PDF combination
+            if args.gender == 'boys':
+                weight_classes = [str(w) for w in KY_HS_BOYS_WEIGHTS]
+            else:
+                weight_classes = [str(w) for w in KY_HS_GIRLS_WEIGHTS]
+            
+            date_str = datetime.now().strftime("%Y%m%d")
+            for i in range(0, len(weight_classes), 2):
+                weight1 = weight_classes[i]
+                if i + 1 < len(weight_classes):
+                    weight2 = weight_classes[i + 1]
+                    jpg_filename = f"hs_top40_{args.gender}_{date_str}_{weight1}_{weight2}.jpg"
+                    jpg_path = output_dir / jpg_filename
+                    if jpg_path.exists():
+                        jpg_files_generated.append(jpg_path)
+            
+            # Combine JPGs into PDF if drop_id is provided
+            if args.drop_id and jpg_files_generated:
+                print(f"\n{'='*60}")
+                print(f"Combining JPGs into PDF...")
+                print(f"{'='*60}")
+                
+                # Save PDF to frontend-accessible location
+                pdf_dir = Path(args.archive_base) / args.gender / str(args.season) / args.drop_id
+                pdf_dir.mkdir(parents=True, exist_ok=True)
+                pdf_path = pdf_dir / "rankings.pdf"
+                
+                try:
+                    combine_jpgs_to_pdf(jpg_files_generated, pdf_path)
+                except Exception as e:
+                    print(f"Warning: Could not create PDF: {e}")
+                    import traceback
+                    traceback.print_exc()
     
     print(f"\n{'='*60}")
     print("✓ Rankings release generation complete!")

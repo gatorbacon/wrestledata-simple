@@ -5441,6 +5441,63 @@ td .metric-bar {
   padding: var(--pad-lg);
 }
 
+/* ========================================
+   LONG-FORM CONTENT PAGES
+   ======================================== */
+
+.longform-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.longform-page > p {
+  line-height: 1.65;
+  margin-bottom: 1.5em;
+  color: var(--text-main);
+}
+
+.longform-page > p:first-of-type {
+  font-size: 1.1em;
+  color: var(--text-secondary);
+  margin-bottom: 2em;
+}
+
+.longform-page > p:nth-of-type(2) {
+  font-size: 1.1em;
+  color: var(--text-secondary);
+  margin-bottom: 3em;
+}
+
+.longform-page h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+  line-height: 1.3;
+}
+
+.longform-page h2:first-of-type {
+  margin-top: 0;
+}
+
+.longform-page ul {
+  line-height: 1.8;
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+  color: var(--text-main);
+}
+
+.longform-page li {
+  margin-bottom: 0.75em;
+}
+
+.longform-page li strong {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
 .xtp-value {
   color: var(--accent-primary);
 }

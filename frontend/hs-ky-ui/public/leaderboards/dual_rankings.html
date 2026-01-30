@@ -17,6 +17,12 @@
     <header class="header">
       <h1>Dual Rankings</h1>
       <div class="header-subline" id="season-info">Season 2026</div>
+      <!-- Drop selector (hidden if only one drop) -->
+      <div id="drop-selector-container" style="display: none; margin-top: 0.5em;">
+        <label for="drop-selector" style="margin-right: 0.5em; color: var(--text-secondary);">Rankings Drop:</label>
+        <select id="drop-selector" style="padding: 0.25em 0.5em; border: 1px solid var(--border-light); border-radius: 4px; background: var(--bg-card); color: var(--text-main);">
+        </select>
+      </div>
     </header>
 
     <section class="section">
@@ -43,6 +49,7 @@
   </div>
 
   <script src="/leaderboards/dual_rankings.js"></script>
+  <script src="/footer.js"></script>
 </body>
 </html>
 
