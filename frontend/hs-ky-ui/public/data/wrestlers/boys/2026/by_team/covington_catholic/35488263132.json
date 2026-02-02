@@ -3,15 +3,15 @@
   "name": "Landon Windeler",
   "team": "Covington Catholic",
   "team_slug": "covington_catholic",
-  "team_rank": 42,
+  "team_rank": 41,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 42,
+  "current_rank": 31,
   "record": {
-    "overall": "20-7",
-    "vs_ranked": "6-4",
-    "vs_top10": "1-4",
-    "vs_top25": "1-4"
+    "overall": "24-9",
+    "vs_ranked": "8-6",
+    "vs_top10": "2-6",
+    "vs_top25": "2-6"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,17 +20,17 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.45,
-    "bonus_rate": 0.7,
+    "pin_rate": 0.458,
+    "bonus_rate": 0.667,
     "majors": 1,
     "techs": 4,
-    "pins": 9
+    "pins": 11
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 4,
-    "top10_wins": 1,
-    "top10_losses": 4,
+    "ranked_wins": 8,
+    "ranked_losses": 6,
+    "top10_wins": 2,
+    "top10_losses": 6,
     "win_over_highest_rank": {
       "opponent_id": "35562980132",
       "opponent_rank": 6,
@@ -45,6 +45,21 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-29",
+      "opponent_id": "35214945132",
+      "opponent_name": "Jack Baron",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 8,
+      "opponent_weight": 138,
+      "opponent_rank": 35,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:55",
+      "event": "vs. Covington Catholic"
+    },
     {
       "date": "2026-01-18",
       "opponent_id": "OUTSTATE_879809e2a28b",
@@ -140,7 +155,7 @@
       "opponent_id": "OUTSTATE_d268fa179a02",
       "opponent_name": "Unknown",
       "opponent_team": "Scott",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 125,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "138",
@@ -317,6 +332,21 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35562980132",
+      "opponent_name": "Braden Woolridge",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 18,
+      "opponent_weight": 132,
+      "opponent_rank": 6,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "15-9",
+      "duration": "7:00",
+      "event": "2025 Ryle Raider Rumble"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "OUTSTATE_7a0d770f3d33",
       "opponent_name": "Cooper Renner",
       "opponent_team": "West Clermont High School",
@@ -361,19 +391,19 @@
       "event": "2025 Ryle Raider Rumble"
     },
     {
-      "date": "2025-12-13",
-      "opponent_id": "35562980132",
-      "opponent_name": "Braden Woolridge",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": 19,
+      "date": "2025-12-06",
+      "opponent_id": "34992809132",
+      "opponent_name": "Cullen White",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
       "opponent_weight": 132,
-      "opponent_rank": 6,
+      "opponent_rank": 3,
       "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "15-9",
-      "duration": "7:00",
-      "event": "2025 Ryle Raider Rumble"
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bearcat Brawl 2025"
     },
     {
       "date": "2025-12-06",
@@ -407,25 +437,10 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "34992809132",
-      "opponent_name": "Cullen White",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": 3,
-      "opponent_weight": 132,
-      "opponent_rank": 3,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Bearcat Brawl 2025"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35045489132",
       "opponent_name": "MATT HARDING",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 22,
       "opponent_weight": 138,
       "opponent_rank": 83,
       "weight_class": "138",
@@ -466,7 +481,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Covington Catholic",
-      "record": "20-7",
+      "record": "21-7",
       "regional_place": null,
       "state_place": null
     },
@@ -496,8 +511,8 @@
     }
   ],
   "career_record": {
-    "wins": 99,
+    "wins": 100,
     "losses": 59,
-    "win_pct": 0.627
+    "win_pct": 0.629
   }
 }

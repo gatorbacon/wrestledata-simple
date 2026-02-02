@@ -4,12 +4,12 @@
   "team": "Mason County",
   "team_slug": "mason_county",
   "team_rank": 106,
-  "weight_class": 113,
+  "weight_class": 106,
   "year": 2026,
-  "current_rank": 97,
+  "current_rank": 106,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "0-2",
+    "overall": "2-4",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,21 +20,26 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35911675132",
+      "opponent_rank": 129,
+      "opponent_name": "Uriah Rowsey",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "35724493132",
-      "opponent_rank": 43,
+      "opponent_rank": 47,
       "opponent_name": "Jaxen Skaggs",
       "method": "Fall 0:00"
     }
@@ -42,12 +47,27 @@
   "match_list": [
     {
       "date": "2026-01-03",
+      "opponent_id": "35911675132",
+      "opponent_name": "Uriah Rowsey",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 122,
+      "opponent_weight": 106,
+      "opponent_rank": 129,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35724493132",
       "opponent_name": "Jaxen Skaggs",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 42,
       "opponent_weight": 113,
-      "opponent_rank": 43,
+      "opponent_rank": 47,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -62,7 +82,7 @@
       "opponent_team": "Lawrence County",
       "opponent_team_rank": 99,
       "opponent_weight": 113,
-      "opponent_rank": 39,
+      "opponent_rank": 43,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
@@ -98,14 +118,14 @@
       "season": 2026,
       "grade": 8,
       "team": "Mason County",
-      "record": "1-2",
+      "record": "2-2",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 1,
+    "wins": 2,
     "losses": 2,
-    "win_pct": 0.333
+    "win_pct": 0.5
   }
 }

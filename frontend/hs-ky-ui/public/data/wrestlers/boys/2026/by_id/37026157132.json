@@ -4,14 +4,14 @@
   "team": "Floyd Central",
   "team_slug": "floyd_central",
   "team_rank": 78,
-  "weight_class": 190,
+  "weight_class": 138,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "5-2",
+    "vs_ranked": "5-2",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,26 +20,46 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
-    "top10_wins": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 2,
+    "top10_wins": 1,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35562984132",
+      "opponent_rank": 8,
+      "opponent_name": "Brock Fernandez",
+      "method": "Fall 0:28"
+    },
     "worst_loss": {
       "opponent_id": "35188467132",
-      "opponent_rank": 236,
+      "opponent_rank": 232,
       "opponent_name": "Jose Rodriguez",
       "method": "Dec 10-6"
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35562984132",
+      "opponent_name": "Brock Fernandez",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 18,
+      "opponent_weight": 138,
+      "opponent_rank": 8,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:28",
+      "event": "Mater Dei Holiday Classic"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35188467132",
@@ -47,13 +67,43 @@
       "opponent_team": "Madison Southern",
       "opponent_team_rank": 104,
       "opponent_weight": 190,
-      "opponent_rank": 236,
+      "opponent_rank": 232,
       "weight_class": "190",
       "result": "L",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
       "event": "Lafayette 5 Star Tournament"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35493617132",
+      "opponent_name": "William Petersen",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 107,
+      "opponent_weight": 132,
+      "opponent_rank": 241,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Floyd Central"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35708975132",
+      "opponent_name": "Bentley DeSoto",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 132,
+      "opponent_rank": 65,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Floyd Central"
     }
   ]
 }

@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": 12,
   "record": {
-    "overall": "4-0",
-    "vs_ranked": "3-0",
-    "vs_top10": "0-0",
-    "vs_top25": "3-0"
+    "overall": "4-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-1",
+    "vs_top25": "3-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,18 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35598131132",
-      "opponent_rank": 14,
+      "opponent_rank": 13,
       "opponent_name": "Avagayle Lingenfelter",
       "method": "Fall 1:07"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35346108132",
+      "opponent_rank": 4,
+      "opponent_name": "Damari Harris",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35346108132",
+      "opponent_name": "Damari Harris",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 235,
+      "opponent_rank": 4,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trigg County"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "OUTSTATE_38f95cb97442",
@@ -78,7 +98,7 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 15,
       "opponent_weight": 235,
-      "opponent_rank": 14,
+      "opponent_rank": 13,
       "weight_class": "235",
       "result": "W",
       "method": "FALL",

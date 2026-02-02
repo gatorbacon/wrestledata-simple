@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": 131,
   "record": {
-    "overall": "4-7",
-    "vs_ranked": "1-7",
-    "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "overall": "6-11",
+    "vs_ranked": "2-11",
+    "vs_top10": "0-2",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,31 +20,46 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.25,
-    "bonus_rate": 0.25,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 7,
+    "ranked_wins": 2,
+    "ranked_losses": 11,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35421309132",
-      "opponent_rank": 146,
+      "opponent_rank": 141,
       "opponent_name": "Oliver Spurlock",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35908853132",
-      "opponent_rank": 110,
-      "opponent_name": "Jack Madden",
-      "method": "M. For."
+      "opponent_id": "35206773132",
+      "opponent_rank": 95,
+      "opponent_name": "Ethan Howard",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-22",
+      "opponent_id": "35430994132",
+      "opponent_name": "Truett Mabe",
+      "opponent_team": "Claiborne High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Claiborne High School"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "35368120132",
@@ -52,7 +67,7 @@
       "opponent_team": "Somerset",
       "opponent_team_rank": 28,
       "opponent_weight": 157,
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
@@ -67,7 +82,7 @@
       "opponent_team": "Adair County",
       "opponent_team_rank": 53,
       "opponent_weight": 150,
-      "opponent_rank": 97,
+      "opponent_rank": 95,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -82,7 +97,7 @@
       "opponent_team": "Whitley County",
       "opponent_team_rank": 140,
       "opponent_weight": 150,
-      "opponent_rank": 146,
+      "opponent_rank": 141,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35908853132",
       "opponent_name": "Jack Madden",
       "opponent_team": "Russell",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 122,
       "opponent_weight": 157,
-      "opponent_rank": 110,
+      "opponent_rank": 59,
       "weight_class": "157",
       "result": "L",
       "method": "MFF",
@@ -112,7 +127,7 @@
       "opponent_team": "LaRue County",
       "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": 57,
+      "opponent_rank": 56,
       "weight_class": "157",
       "result": "L",
       "method": "MFF",
@@ -140,9 +155,9 @@
       "opponent_id": "35013061132",
       "opponent_name": "Landon Baker",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 115,
       "opponent_weight": 138,
-      "opponent_rank": 66,
+      "opponent_rank": 68,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -202,7 +217,7 @@
       "opponent_team": "Mccreary Central",
       "opponent_team_rank": 108,
       "opponent_weight": 165,
-      "opponent_rank": 37,
+      "opponent_rank": 38,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -224,7 +239,7 @@
       "season": 2026,
       "grade": 9,
       "team": "Bell County",
-      "record": "4-7",
+      "record": "5-7",
       "regional_place": null,
       "state_place": null
     },
@@ -238,8 +253,8 @@
     }
   ],
   "career_record": {
-    "wins": 5,
+    "wins": 6,
     "losses": 14,
-    "win_pct": 0.263
+    "win_pct": 0.3
   }
 }

@@ -3,12 +3,12 @@
   "name": "Brice Fernandez",
   "team": "St. Xavier",
   "team_slug": "st_xavier",
-  "team_rank": 19,
+  "team_rank": 18,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 86,
+  "current_rank": 289,
   "record": {
-    "overall": "1-0",
+    "overall": "1-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -37,6 +37,21 @@
   "match_list": [
     {
       "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_bdb2ff893e7f",
+      "opponent_name": "Asher Ratliff",
+      "opponent_team": "Columbus North",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "Mater Dei Holiday Classic"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "35351400132",
       "opponent_name": "Nicholas Oberlander",
       "opponent_team": "Father Ryan High School",
@@ -48,7 +63,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:08",
-      "event": "Holiday Classic"
+      "event": "Mater Dei Holiday Classic"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35351400132",
+      "opponent_name": "Nicholas Oberlander",
+      "opponent_team": "Father Ryan High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "Mater Dei Holiday Classic"
     }
   ],
   "career": {
@@ -65,7 +95,7 @@
       "season": 2026,
       "grade": 11,
       "team": "St. Xavier",
-      "record": "1-0",
+      "record": "1-2",
       "regional_place": null,
       "state_place": null
     },
@@ -88,7 +118,7 @@
   ],
   "career_record": {
     "wins": 25,
-    "losses": 23,
-    "win_pct": 0.521
+    "losses": 25,
+    "win_pct": 0.5
   }
 }

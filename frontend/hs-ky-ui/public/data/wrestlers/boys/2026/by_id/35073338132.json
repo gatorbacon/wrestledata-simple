@@ -3,13 +3,13 @@
   "name": "Nicholas Ishage",
   "team": "Moore",
   "team_slug": "moore",
-  "team_rank": 27,
+  "team_rank": 26,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 171,
+  "current_rank": 168,
   "record": {
-    "overall": "5-5",
-    "vs_ranked": "2-4",
+    "overall": "7-10",
+    "vs_ranked": "4-9",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,31 +20,46 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.4,
-    "bonus_rate": 0.4,
+    "pin_rate": 0.571,
+    "bonus_rate": 0.571,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_wins": 4,
+    "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35046254132",
-      "opponent_rank": 119,
+      "opponent_rank": 120,
       "opponent_name": "Karamalah Ammar",
       "method": "Fall 4:49"
     },
     "worst_loss": {
       "opponent_id": "35348013132",
-      "opponent_rank": 235,
+      "opponent_rank": 236,
       "opponent_name": "Jonathan Campos",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-21",
+      "opponent_id": "35635839132",
+      "opponent_name": "David Voelker",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 48,
+      "opponent_weight": 215,
+      "opponent_rank": 82,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:15",
+      "event": "vs. North Bullitt"
+    },
     {
       "date": "2026-01-14",
       "opponent_id": "35122064132",
@@ -52,7 +67,7 @@
       "opponent_team": "Oldham County",
       "opponent_team_rank": 112,
       "opponent_weight": 190,
-      "opponent_rank": 26,
+      "opponent_rank": 27,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -65,7 +80,7 @@
       "opponent_id": "OUTSTATE_86b971b502a2",
       "opponent_name": "Unknown",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 21,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "190",
@@ -80,9 +95,9 @@
       "opponent_id": "35127102132",
       "opponent_name": "Broderick McBarnette",
       "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 25,
       "opponent_weight": 285,
-      "opponent_rank": 42,
+      "opponent_rank": 40,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -97,7 +112,7 @@
       "opponent_team": "Eastern",
       "opponent_team_rank": 76,
       "opponent_weight": 285,
-      "opponent_rank": 134,
+      "opponent_rank": 131,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "35046254132",
       "opponent_name": "Karamalah Ammar",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 20,
       "opponent_weight": 215,
-      "opponent_rank": 119,
+      "opponent_rank": 120,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -172,7 +187,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 131,
       "opponent_weight": 215,
-      "opponent_rank": 235,
+      "opponent_rank": 236,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -187,7 +202,7 @@
       "opponent_team": "West Jessamine",
       "opponent_team_rank": 138,
       "opponent_weight": 215,
-      "opponent_rank": 50,
+      "opponent_rank": 51,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -208,14 +223,14 @@
       "season": 2026,
       "grade": 10,
       "team": "Moore",
-      "record": "5-5",
+      "record": "5-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 5,
-    "losses": 5,
-    "win_pct": 0.5
+    "losses": 6,
+    "win_pct": 0.455
   }
 }

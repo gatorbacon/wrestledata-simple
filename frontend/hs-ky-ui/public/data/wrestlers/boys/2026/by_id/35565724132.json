@@ -3,15 +3,15 @@
   "name": "Grant Coons",
   "team": "St. Xavier",
   "team_slug": "st_xavier",
-  "team_rank": 19,
+  "team_rank": 18,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 47,
+  "current_rank": 48,
   "record": {
-    "overall": "9-7",
-    "vs_ranked": "6-5",
+    "overall": "12-14",
+    "vs_ranked": "8-9",
     "vs_top10": "0-2",
-    "vs_top25": "1-4"
+    "vs_top25": "1-6"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,15 +20,15 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.556,
-    "bonus_rate": 0.667,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 1,
-    "pins": 5
+    "pins": 8
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 5,
+    "ranked_wins": 8,
+    "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
@@ -39,7 +39,7 @@
     },
     "worst_loss": {
       "opponent_id": "34988532132",
-      "opponent_rank": 57,
+      "opponent_rank": 62,
       "opponent_name": "Keviaun Craighead",
       "method": "MD 20-10"
     }
@@ -52,7 +52,7 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": 98,
       "opponent_weight": 157,
-      "opponent_rank": 55,
+      "opponent_rank": 54,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -95,7 +95,7 @@
       "opponent_id": "35562987132",
       "opponent_name": "Jake Holtgrave",
       "opponent_team": "St. Xavier",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 18,
       "opponent_weight": 157,
       "opponent_rank": 10,
       "weight_class": "157",
@@ -112,7 +112,7 @@
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 133,
       "opponent_weight": 157,
-      "opponent_rank": 108,
+      "opponent_rank": 111,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -166,13 +166,43 @@
       "event": "Zaxby`s Pioneer Invitational"
     },
     {
+      "date": "2025-12-30",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "Mater Dei Holiday Classic"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35337920132",
+      "opponent_name": "Michael Fidler",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 133,
+      "opponent_weight": 157,
+      "opponent_rank": 34,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "14-1",
+      "duration": "7:00",
+      "event": "Mater Dei Holiday Classic"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "34988532132",
       "opponent_name": "Keviaun Craighead",
       "opponent_team": "Doss",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 73,
       "opponent_weight": 138,
-      "opponent_rank": 57,
+      "opponent_rank": 62,
       "weight_class": "150",
       "result": "L",
       "method": "MD",
@@ -187,7 +217,7 @@
       "opponent_team": "Meade County",
       "opponent_team_rank": 109,
       "opponent_weight": 144,
-      "opponent_rank": 19,
+      "opponent_rank": 22,
       "weight_class": "150",
       "result": "L",
       "method": "MD",
@@ -202,7 +232,7 @@
       "opponent_team": "Central",
       "opponent_team_rank": 40,
       "opponent_weight": 150,
-      "opponent_rank": 44,
+      "opponent_rank": 46,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -217,7 +247,7 @@
       "opponent_team": "Shawnee",
       "opponent_team_rank": 128,
       "opponent_weight": 150,
-      "opponent_rank": 133,
+      "opponent_rank": 130,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -247,7 +277,7 @@
       "opponent_team": "Eastern",
       "opponent_team_rank": 76,
       "opponent_weight": 150,
-      "opponent_rank": 23,
+      "opponent_rank": 22,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -262,7 +292,7 @@
       "opponent_team": "Valley",
       "opponent_team_rank": 134,
       "opponent_weight": 157,
-      "opponent_rank": 109,
+      "opponent_rank": 112,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
@@ -299,7 +329,7 @@
       "season": 2026,
       "grade": 11,
       "team": "St. Xavier",
-      "record": "9-7",
+      "record": "9-9",
       "regional_place": null,
       "state_place": null
     },
@@ -314,7 +344,7 @@
   ],
   "career_record": {
     "wins": 10,
-    "losses": 12,
-    "win_pct": 0.455
+    "losses": 14,
+    "win_pct": 0.417
   }
 }

@@ -3,13 +3,13 @@
   "name": "Courtney Johnson",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 24,
+  "team_rank": 27,
   "weight_class": 120,
   "year": 2026,
   "current_rank": 49,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-0",
+    "overall": "2-2",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,16 +24,16 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34988694132",
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "opponent_name": "Hunter Jorgenson",
       "method": "Fall 4:24"
     },
@@ -42,12 +42,27 @@
   "match_list": [
     {
       "date": "2026-01-17",
+      "opponent_id": "35489176132",
+      "opponent_name": "Tanner Hayes",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": 31,
+      "opponent_weight": 120,
+      "opponent_rank": 144,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
+      "event": "Steve Johnston Memorial Invitational"
+    },
+    {
+      "date": "2026-01-17",
       "opponent_id": "34988694132",
       "opponent_name": "Hunter Jorgenson",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 67,
       "opponent_weight": 120,
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -68,6 +83,21 @@
       "method": "MD",
       "score": "12-4",
       "duration": "7:00",
+      "event": "Steve Johnston Memorial Invitational"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "OUTSTATE_e46deb07cf66",
+      "opponent_name": "Kasyn Ingle",
+      "opponent_team": "Tell City",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "2:00",
       "event": "Steve Johnston Memorial Invitational"
     }
   ]

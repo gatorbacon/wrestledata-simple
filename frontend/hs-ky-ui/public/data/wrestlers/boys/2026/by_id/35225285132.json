@@ -3,13 +3,13 @@
   "name": "Ricky Chen",
   "team": "Scott",
   "team_slug": "scott",
-  "team_rank": 126,
+  "team_rank": 125,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 106,
+  "current_rank": 110,
   "record": {
-    "overall": "2-3",
-    "vs_ranked": "2-3",
+    "overall": "3-8",
+    "vs_ranked": "3-8",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,31 +20,76 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
+    "pin_rate": 0.333,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 1,
+    "techs": 2,
     "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 3,
+    "ranked_wins": 3,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34993749132",
-      "opponent_rank": 81,
+      "opponent_rank": 87,
       "opponent_name": "Ford Furnish",
       "method": "TF 15-0 0:00"
     },
     "worst_loss": {
       "opponent_id": "34995379132",
-      "opponent_rank": 242,
+      "opponent_rank": 239,
       "opponent_name": "Levi Hollen",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-29",
+      "opponent_id": "35215022132",
+      "opponent_name": "Wayne Illes",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 8,
+      "opponent_weight": 132,
+      "opponent_rank": 31,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "1:23",
+      "event": "vs. Scott"
+    },
+    {
+      "date": "2026-01-21",
+      "opponent_id": "35118664132",
+      "opponent_name": "Awab Fadel",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 60,
+      "opponent_weight": 138,
+      "opponent_rank": 177,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "17-3",
+      "duration": "7:00",
+      "event": "vs. Scott"
+    },
+    {
+      "date": "2026-01-21",
+      "opponent_id": "35219503132",
+      "opponent_name": "Riley Jones",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": 91,
+      "opponent_weight": 132,
+      "opponent_rank": 102,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Scott"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "34993749132",
@@ -52,7 +97,7 @@
       "opponent_team": "Harrison County",
       "opponent_team_rank": 6,
       "opponent_weight": 126,
-      "opponent_rank": 81,
+      "opponent_rank": 87,
       "weight_class": "126",
       "result": "W",
       "method": "TF",
@@ -68,7 +113,7 @@
       "opponent_team": "Holmes",
       "opponent_team_rank": 91,
       "opponent_weight": 132,
-      "opponent_rank": 93,
+      "opponent_rank": 95,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -76,38 +121,6 @@
       "duration": "0:00",
       "event": "vs. Scott",
       "mv_impact": -8.41
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35523573132",
-      "opponent_name": "Tre Miller",
-      "opponent_team": "Danville",
-      "opponent_team_rank": 68,
-      "opponent_weight": 126,
-      "opponent_rank": 109,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:53",
-      "event": "Tommy Castle Classic",
-      "mv_impact": 1.97
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "34995379132",
-      "opponent_name": "Levi Hollen",
-      "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 102,
-      "opponent_weight": 132,
-      "opponent_rank": 242,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Tommy Castle Classic",
-      "mv_impact": -8.78
     },
     {
       "date": "2025-11-29",
@@ -124,6 +137,38 @@
       "duration": "0:31",
       "event": "Tommy Castle Classic",
       "mv_impact": -9.31
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35523573132",
+      "opponent_name": "Tre Miller",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 69,
+      "opponent_weight": 132,
+      "opponent_rank": 141,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:53",
+      "event": "Tommy Castle Classic",
+      "mv_impact": 1.97
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34995379132",
+      "opponent_name": "Levi Hollen",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 102,
+      "opponent_weight": 132,
+      "opponent_rank": 239,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tommy Castle Classic",
+      "mv_impact": -8.78
     }
   ],
   "career": {
@@ -138,14 +183,14 @@
       "season": 2026,
       "grade": 9,
       "team": "Scott",
-      "record": "2-3",
+      "record": "2-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 2,
-    "losses": 3,
-    "win_pct": 0.4
+    "losses": 6,
+    "win_pct": 0.25
   }
 }

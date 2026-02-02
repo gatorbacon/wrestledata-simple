@@ -4,12 +4,12 @@
   "team": "Harlan County",
   "team_slug": "harlan_county",
   "team_rank": 88,
-  "weight_class": 175,
+  "weight_class": 285,
   "year": 2026,
-  "current_rank": 150,
+  "current_rank": 190,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "0-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,18 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35284733132",
-      "opponent_rank": 83,
+      "opponent_rank": 81,
       "opponent_name": "Jordan Collett",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-22",
+      "opponent_id": "34995975132",
+      "opponent_name": "Johnathan Tapp",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 58,
+      "opponent_weight": 285,
+      "opponent_rank": 57,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harlan County"
+    },
     {
       "date": "2026-01-07",
       "opponent_id": "35284733132",
@@ -47,7 +62,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": 83,
+      "opponent_rank": 81,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -63,7 +78,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": 56,
+      "opponent_rank": 57,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -85,14 +100,14 @@
       "season": 2026,
       "grade": 10,
       "team": "Harlan County",
-      "record": "0-2",
+      "record": "0-3",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 0,
-    "losses": 2,
+    "losses": 3,
     "win_pct": 0.0
   }
 }

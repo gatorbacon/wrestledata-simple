@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "2-0",
+    "overall": "3-1",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,20 +24,25 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35724487132",
-      "opponent_rank": 89,
+      "opponent_rank": 91,
       "opponent_name": "David Wade",
       "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35908853132",
+      "opponent_rank": 59,
+      "opponent_name": "Jack Madden",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
     {
@@ -45,9 +50,9 @@
       "opponent_id": "35724487132",
       "opponent_name": "David Wade",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 42,
       "opponent_weight": 144,
-      "opponent_rank": 89,
+      "opponent_rank": 91,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -60,11 +65,26 @@
       "opponent_id": "35724490132",
       "opponent_name": "Kasey Clark",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 42,
       "opponent_weight": 157,
-      "opponent_rank": 111,
+      "opponent_rank": 113,
       "weight_class": "157",
       "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Les Delong Memorial Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35908853132",
+      "opponent_name": "Jack Madden",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 122,
+      "opponent_weight": 157,
+      "opponent_rank": 59,
+      "weight_class": "157",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",

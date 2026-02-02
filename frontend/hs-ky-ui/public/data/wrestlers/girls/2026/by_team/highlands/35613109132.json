@@ -6,12 +6,12 @@
   "team_rank": null,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 53,
+  "current_rank": 54,
   "record": {
-    "overall": "1-5",
-    "vs_ranked": "1-3",
+    "overall": "2-8",
+    "vs_ranked": "2-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,27 +24,42 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35563228132",
-      "opponent_rank": 64,
-      "opponent_name": "Wynter Workman",
+      "opponent_id": "35461805132",
+      "opponent_rank": 15,
+      "opponent_name": "Adalyn Babb",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "36863348132",
-      "opponent_rank": 46,
+      "opponent_rank": 47,
       "opponent_name": "Imelda Gomez",
       "method": "Fall 2:21"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-22",
+      "opponent_id": "35352384132",
+      "opponent_name": "Emily Stephenson",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 33,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Walton-Verona"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "OUTSTATE_f1874f9feb7f",
@@ -91,13 +106,28 @@
       "event": "vs. Walton-Verona"
     },
     {
+      "date": "2026-01-14",
+      "opponent_id": "35461805132",
+      "opponent_name": "Adalyn Babb",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 14,
+      "opponent_weight": 120,
+      "opponent_rank": 15,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Simon Kenton"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "36863348132",
       "opponent_name": "Imelda Gomez",
       "opponent_team": "Meade County",
       "opponent_team_rank": 11,
       "opponent_weight": 120,
-      "opponent_rank": 46,
+      "opponent_rank": 47,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -113,7 +143,7 @@
       "opponent_team": "Meade County",
       "opponent_team_rank": 11,
       "opponent_weight": 120,
-      "opponent_rank": 64,
+      "opponent_rank": 66,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",

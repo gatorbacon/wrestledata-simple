@@ -6,10 +6,10 @@
   "team_rank": 66,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 251,
+  "current_rank": 256,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35575542132",
-      "opponent_rank": 273,
+      "opponent_rank": 277,
       "opponent_name": "Samuel Sigurbjartsson",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35223094132",
-      "opponent_rank": 110,
+      "opponent_rank": 114,
       "opponent_name": "William Skaggs",
       "method": "TF 16-1 0:00"
     }
@@ -47,28 +47,12 @@
   "match_list": [
     {
       "date": "2025-12-11",
-      "opponent_id": "35575542132",
-      "opponent_name": "Samuel Sigurbjartsson",
-      "opponent_team": "Green County",
-      "opponent_team_rank": 85,
-      "opponent_weight": 138,
-      "opponent_rank": 273,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Green County",
-      "mv_impact": 2.16
-    },
-    {
-      "date": "2025-12-11",
       "opponent_id": "35223094132",
       "opponent_name": "William Skaggs",
       "opponent_team": "Hart County",
       "opponent_team_rank": 89,
       "opponent_weight": 132,
-      "opponent_rank": 110,
+      "opponent_rank": 114,
       "weight_class": "132",
       "result": "L",
       "method": "TF",
@@ -76,6 +60,22 @@
       "duration": "0:00",
       "event": "vs. Hart County",
       "mv_impact": -8.27
+    },
+    {
+      "date": "2025-12-11",
+      "opponent_id": "35575542132",
+      "opponent_name": "Samuel Sigurbjartsson",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 85,
+      "opponent_weight": 138,
+      "opponent_rank": 277,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Green County",
+      "mv_impact": 2.16
     }
   ],
   "career": {

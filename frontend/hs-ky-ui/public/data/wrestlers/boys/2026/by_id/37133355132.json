@@ -6,12 +6,12 @@
   "team_rank": 75,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 161,
+  "current_rank": 164,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "0-0",
+    "overall": "2-5",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,19 +28,84 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35093538132",
+      "opponent_rank": 121,
+      "opponent_name": "Gabe Sowders",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-23",
+      "opponent_id": "34997608132",
+      "opponent_name": "Noah Simpson",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 68,
+      "opponent_weight": 126,
+      "opponent_rank": 11,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:18",
+      "event": "vs. East Ridge"
+    },
+    {
+      "date": "2026-01-23",
+      "opponent_id": "35093538132",
+      "opponent_name": "Gabe Sowders",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 58,
+      "opponent_weight": 138,
+      "opponent_rank": 121,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. East Ridge"
+    },
+    {
+      "date": "2026-01-23",
+      "opponent_id": "34995982132",
+      "opponent_name": "Dalton Jones",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 58,
+      "opponent_weight": 132,
+      "opponent_rank": 93,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. East Ridge"
+    },
+    {
+      "date": "2026-01-23",
+      "opponent_id": "OUTSTATE_021f644ea71a",
+      "opponent_name": "Unknown",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 115,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Perry County Central"
+    },
     {
       "date": "2026-01-20",
       "opponent_id": "OUTSTATE_021f644ea71a",
       "opponent_name": "Unknown",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 115,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "132",

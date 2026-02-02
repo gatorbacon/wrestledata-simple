@@ -3,13 +3,13 @@
   "name": "Zachary Embry",
   "team": "Moore",
   "team_slug": "moore",
-  "team_rank": 27,
+  "team_rank": 26,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 124,
+  "current_rank": 122,
   "record": {
-    "overall": "3-6",
-    "vs_ranked": "1-6",
+    "overall": "3-8",
+    "vs_ranked": "1-8",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -28,23 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 6,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35040561132",
-      "opponent_rank": 246,
+      "opponent_rank": 242,
       "opponent_name": "Abdullah Mandou",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "34994849132",
-      "opponent_rank": 152,
+      "opponent_rank": 148,
       "opponent_name": "luke nelson",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-21",
+      "opponent_id": "35321119132",
+      "opponent_name": "Trent Pierce",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 48,
+      "opponent_weight": 190,
+      "opponent_rank": 38,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:52",
+      "event": "vs. North Bullitt"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35284222132",
@@ -52,7 +67,7 @@
       "opponent_team": "Eastern",
       "opponent_team_rank": 76,
       "opponent_weight": 190,
-      "opponent_rank": 64,
+      "opponent_rank": 62,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -67,7 +82,7 @@
       "opponent_team": "Green County",
       "opponent_team_rank": 85,
       "opponent_weight": 190,
-      "opponent_rank": 120,
+      "opponent_rank": 118,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -82,7 +97,7 @@
       "opponent_team": "Fern Creek",
       "opponent_team_rank": 77,
       "opponent_weight": 190,
-      "opponent_rank": 3,
+      "opponent_rank": 4,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -95,9 +110,9 @@
       "opponent_id": "35623185132",
       "opponent_name": "Hayden Rutledge",
       "opponent_team": "Atherton",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 15,
       "opponent_weight": 190,
-      "opponent_rank": 123,
+      "opponent_rank": 121,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -112,7 +127,7 @@
       "opponent_team": "Male",
       "opponent_team_rank": 47,
       "opponent_weight": 190,
-      "opponent_rank": 108,
+      "opponent_rank": 106,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -137,33 +152,33 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35040561132",
-      "opponent_name": "Abdullah Mandou",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": 131,
-      "opponent_weight": 190,
-      "opponent_rank": 246,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "34994849132",
       "opponent_name": "luke nelson",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 21,
       "opponent_weight": 175,
-      "opponent_rank": 152,
+      "opponent_rank": 148,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Spencer County"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35040561132",
+      "opponent_name": "Abdullah Mandou",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 131,
+      "opponent_weight": 190,
+      "opponent_rank": 242,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2025-12-06",
@@ -193,14 +208,14 @@
       "season": 2026,
       "grade": 9,
       "team": "Moore",
-      "record": "3-6",
+      "record": "3-7",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 3,
-    "losses": 6,
-    "win_pct": 0.333
+    "losses": 7,
+    "win_pct": 0.3
   }
 }

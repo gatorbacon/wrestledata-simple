@@ -6,12 +6,12 @@
   "team_rank": null,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 68,
+  "current_rank": 70,
   "record": {
-    "overall": "0-7",
-    "vs_ranked": "0-7",
-    "vs_top10": "0-4",
-    "vs_top25": "0-4"
+    "overall": "0-9",
+    "vs_ranked": "0-9",
+    "vs_top10": "0-5",
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,13 +28,13 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 7,
+    "ranked_losses": 9,
     "top10_wins": 0,
-    "top10_losses": 4,
+    "top10_losses": 5,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35510419132",
-      "opponent_rank": 63,
+      "opponent_rank": 65,
       "opponent_name": "Payton Strange",
       "method": "Fall 3:41"
     }
@@ -94,13 +94,29 @@
       "opponent_team": "Holmes",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 63,
+      "opponent_rank": 65,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:41",
       "event": "Bearcat Brawl (Girls)"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333371132",
+      "opponent_name": "Aubrey White",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 126,
+      "opponent_rank": 3,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bearcat Brawl (Girls)",
+      "mv_impact": -2.02
     },
     {
       "date": "2025-12-06",
@@ -125,7 +141,7 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": 41,
       "opponent_weight": 120,
-      "opponent_rank": 56,
+      "opponent_rank": 58,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -133,22 +149,6 @@
       "duration": "2:00",
       "event": "Bearcat Brawl (Girls)",
       "mv_impact": -5.99
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35333371132",
-      "opponent_name": "Aubrey White",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": 16,
-      "opponent_weight": 126,
-      "opponent_rank": 3,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Bearcat Brawl (Girls)",
-      "mv_impact": -2.02
     }
   ]
 }

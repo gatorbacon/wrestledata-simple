@@ -3,15 +3,15 @@
   "name": "Tiara Alo",
   "team": "Simon Kenton",
   "team_slug": "simon_kenton",
-  "team_rank": 53,
+  "team_rank": 14,
   "weight_class": 235,
   "year": 2026,
   "current_rank": 30,
   "record": {
-    "overall": "2-3",
-    "vs_ranked": "1-2",
-    "vs_top10": "0-2",
-    "vs_top25": "0-2"
+    "overall": "3-4",
+    "vs_ranked": "1-3",
+    "vs_top10": "0-3",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,17 +20,17 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
     "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35448970132",
       "opponent_rank": 36,
@@ -39,12 +39,27 @@
     },
     "worst_loss": {
       "opponent_id": "35511208132",
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "opponent_name": "Khloe Alfred",
       "method": "M. For."
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-22",
+      "opponent_id": "OUTSTATE_14714e5ed2cb",
+      "opponent_name": "Unknown",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "235",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Walton-Verona"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35333375132",
@@ -52,7 +67,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 16,
       "opponent_weight": 185,
-      "opponent_rank": 3,
+      "opponent_rank": 2,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
@@ -65,7 +80,7 @@
       "opponent_id": "35448970132",
       "opponent_name": "Madison Cox",
       "opponent_team": "Danville",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 20,
       "opponent_weight": 235,
       "opponent_rank": 36,
       "weight_class": "235",
@@ -82,7 +97,7 @@
       "opponent_team": "John Hardin",
       "opponent_team_rank": 3,
       "opponent_weight": 235,
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "weight_class": "235",
       "result": "L",
       "method": "MFF",

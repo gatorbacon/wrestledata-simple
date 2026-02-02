@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "2-0",
-    "vs_top10": "2-0",
-    "vs_top25": "2-0"
+    "overall": "3-0",
+    "vs_ranked": "3-0",
+    "vs_top10": "3-0",
+    "vs_top25": "3-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,32 +20,47 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
+    "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 0,
-    "top10_wins": 2,
+    "top10_wins": 3,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34989044132",
+      "opponent_id": "34989030132",
       "opponent_rank": 2,
-      "opponent_name": "Rage Henderson",
-      "method": "TF 15-0 4:07"
+      "opponent_name": "DJ Wilson",
+      "method": "Fall 3:17"
     },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2025-12-30",
+      "opponent_id": "34989030132",
+      "opponent_name": "DJ Wilson",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 190,
+      "opponent_rank": 2,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:17",
+      "event": "2025 William `Red` Schmitt Holiday"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "34989044132",
       "opponent_name": "Rage Henderson",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 27,
       "opponent_weight": 215,
       "opponent_rank": 2,
       "weight_class": "215",
@@ -53,21 +68,6 @@
       "method": "TF",
       "score": "15-0",
       "duration": "4:07",
-      "event": "2025 William `Red` Schmitt Holiday"
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "34989030132",
-      "opponent_name": "DJ Wilson",
-      "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 24,
-      "opponent_weight": 215,
-      "opponent_rank": 3,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:17",
       "event": "2025 William `Red` Schmitt Holiday"
     }
   ]

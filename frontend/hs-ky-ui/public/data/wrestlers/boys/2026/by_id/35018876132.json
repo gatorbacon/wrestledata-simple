@@ -4,12 +4,12 @@
   "team": "Ashland Blazer",
   "team_slug": "ashland_blazer",
   "team_rank": 39,
-  "weight_class": 126,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 177,
+  "current_rank": 148,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,32 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "36061560132",
+      "opponent_rank": 104,
+      "opponent_name": "Gavin McCalvin",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-22",
+      "opponent_id": "36061560132",
+      "opponent_name": "Gavin McCalvin",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 11,
+      "opponent_weight": 120,
+      "opponent_rank": 104,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Boyd County"
+    }
+  ]
 }

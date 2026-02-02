@@ -6,12 +6,12 @@
   "team_rank": 48,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 94,
+  "current_rank": 101,
   "record": {
-    "overall": "8-4",
-    "vs_ranked": "3-4",
+    "overall": "11-9",
+    "vs_ranked": "5-9",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,31 +20,61 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.375,
-    "bonus_rate": 0.375,
+    "pin_rate": 0.455,
+    "bonus_rate": 0.455,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
-    "ranked_losses": 4,
+    "ranked_wins": 5,
+    "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35281516132",
-      "opponent_rank": 97,
+      "opponent_rank": 104,
       "opponent_name": "Muaz Abdullahi",
       "method": "Fall 3:38"
     },
     "worst_loss": {
-      "opponent_id": "35181616132",
-      "opponent_rank": 69,
-      "opponent_name": "Jordan Taylor",
-      "method": "Dec 12-10"
+      "opponent_id": "35281532132",
+      "opponent_rank": 71,
+      "opponent_name": "Sudeys Hussein",
+      "method": "Fall 0:58"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-21",
+      "opponent_id": "34993557132",
+      "opponent_name": "Joshua Slebo",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 26,
+      "opponent_weight": 132,
+      "opponent_rank": 24,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
+      "event": "vs. North Bullitt"
+    },
+    {
+      "date": "2026-01-21",
+      "opponent_id": "OUTSTATE_2de2c0fc3759",
+      "opponent_name": "Unknown",
+      "opponent_team": "Southern",
+      "opponent_team_rank": 129,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Southern"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "OUTSTATE_d66852a1f1e5",
@@ -67,7 +97,7 @@
       "opponent_team": "Southern",
       "opponent_team_rank": 129,
       "opponent_weight": 126,
-      "opponent_rank": 97,
+      "opponent_rank": 104,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -95,7 +125,7 @@
       "opponent_id": "OUTSTATE_d597001ea858",
       "opponent_name": "Unknown",
       "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 25,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "132",
@@ -140,7 +170,7 @@
       "opponent_id": "OUTSTATE_86b971b502a2",
       "opponent_name": "Unknown",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 21,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "126",
@@ -157,7 +187,7 @@
       "opponent_team": "John Hardin",
       "opponent_team_rank": 95,
       "opponent_weight": 132,
-      "opponent_rank": 22,
+      "opponent_rank": 20,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -170,9 +200,9 @@
       "opponent_id": "35181616132",
       "opponent_name": "Jordan Taylor",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 20,
       "opponent_weight": 132,
-      "opponent_rank": 69,
+      "opponent_rank": 62,
       "weight_class": "126",
       "result": "L",
       "method": "DEC",
@@ -187,7 +217,7 @@
       "opponent_team": "Iroquois",
       "opponent_team_rank": 94,
       "opponent_weight": 132,
-      "opponent_rank": 249,
+      "opponent_rank": 246,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -202,7 +232,7 @@
       "opponent_team": "Shawnee",
       "opponent_team_rank": 128,
       "opponent_weight": 132,
-      "opponent_rank": 48,
+      "opponent_rank": 45,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -217,7 +247,7 @@
       "opponent_team": "Southern",
       "opponent_team_rank": 129,
       "opponent_weight": 126,
-      "opponent_rank": 67,
+      "opponent_rank": 71,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -240,7 +270,7 @@
       "season": 2026,
       "grade": 9,
       "team": "North Bullitt",
-      "record": "9-4",
+      "record": "10-5",
       "regional_place": null,
       "state_place": null
     },
@@ -262,8 +292,8 @@
     }
   ],
   "career_record": {
-    "wins": 21,
-    "losses": 15,
-    "win_pct": 0.583
+    "wins": 22,
+    "losses": 16,
+    "win_pct": 0.579
   }
 }

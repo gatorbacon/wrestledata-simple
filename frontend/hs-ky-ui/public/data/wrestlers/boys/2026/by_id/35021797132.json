@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": 47,
   "record": {
-    "overall": "4-4",
-    "vs_ranked": "2-4",
+    "overall": "8-4",
+    "vs_ranked": "5-4",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -20,31 +20,61 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.625,
+    "bonus_rate": 0.625,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 5,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34988694132",
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "opponent_name": "Hunter Jorgenson",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35778102132",
-      "opponent_rank": 46,
+      "opponent_rank": 40,
       "opponent_name": "Gabriel Purtteman",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-21",
+      "opponent_id": "35180956132",
+      "opponent_name": "Maddox Cochran",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 69,
+      "opponent_weight": 113,
+      "opponent_rank": 64,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:42",
+      "event": "vs. Danville"
+    },
+    {
+      "date": "2026-01-21",
+      "opponent_id": "OUTSTATE_a2fc6114ae97",
+      "opponent_name": "Unknown",
+      "opponent_team": "Western",
+      "opponent_team_rank": 38,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Western"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "35778102132",
@@ -52,7 +82,7 @@
       "opponent_team": "John Hardin",
       "opponent_team_rank": 95,
       "opponent_weight": 120,
-      "opponent_rank": 46,
+      "opponent_rank": 40,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -65,9 +95,9 @@
       "opponent_id": "34994784132",
       "opponent_name": "Lucas Montgomery",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 21,
       "opponent_weight": 120,
-      "opponent_rank": 22,
+      "opponent_rank": 16,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -80,7 +110,7 @@
       "opponent_id": "OUTSTATE_ab3b37a09a95",
       "opponent_name": "Unknown",
       "opponent_team": "Desales",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 71,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "120",
@@ -96,8 +126,8 @@
       "opponent_name": "Chris Hinojoza Villasenor",
       "opponent_team": "Western",
       "opponent_team_rank": 38,
-      "opponent_weight": 120,
-      "opponent_rank": 97,
+      "opponent_weight": 113,
+      "opponent_rank": 75,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -110,9 +140,9 @@
       "opponent_id": "34988694132",
       "opponent_name": "Hunter Jorgenson",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 67,
       "opponent_weight": 120,
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -127,7 +157,7 @@
       "opponent_team": "Hopkinsville",
       "opponent_team_rank": 93,
       "opponent_weight": 120,
-      "opponent_rank": 44,
+      "opponent_rank": 37,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -142,7 +172,7 @@
       "opponent_team": "LaRue County",
       "opponent_team_rank": 46,
       "opponent_weight": 120,
-      "opponent_rank": 15,
+      "opponent_rank": 13,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -179,7 +209,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Bullitt Central",
-      "record": "4-4",
+      "record": "6-4",
       "regional_place": null,
       "state_place": null
     },
@@ -193,8 +223,8 @@
     }
   ],
   "career_record": {
-    "wins": 26,
+    "wins": 28,
     "losses": 15,
-    "win_pct": 0.634
+    "win_pct": 0.651
   }
 }

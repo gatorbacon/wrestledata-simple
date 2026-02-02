@@ -4,14 +4,14 @@
   "team": "Carterville",
   "team_slug": "carterville",
   "team_rank": null,
-  "weight_class": 185,
+  "weight_class": 235,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-3",
-    "vs_ranked": "1-3",
-    "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "overall": "2-7",
+    "vs_ranked": "2-7",
+    "vs_top10": "0-3",
+    "vs_top25": "0-6"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,27 +24,42 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_wins": 2,
+    "ranked_losses": 7,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35346306132",
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "opponent_name": "Davine Oliver",
       "method": "Fall 2:00"
     },
     "worst_loss": {
-      "opponent_id": "35520302132",
-      "opponent_rank": 21,
-      "opponent_name": "Sevira Taito",
-      "method": "Fall 0:20"
+      "opponent_id": "35565465132",
+      "opponent_rank": 37,
+      "opponent_name": "kenli lamb",
+      "method": "Fall 2:46"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35333667132",
+      "opponent_name": "Mariya Meh",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 2,
+      "opponent_weight": 235,
+      "opponent_rank": 8,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "Steve Johnston Memorial Girls Inv 26"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "35520302132",
@@ -58,6 +73,21 @@
       "method": "FALL",
       "score": null,
       "duration": "0:20",
+      "event": "Steve Johnston Memorial Girls Inv 26"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35565465132",
+      "opponent_name": "kenli lamb",
+      "opponent_team": "Union County",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": 37,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:46",
       "event": "Steve Johnston Memorial Girls Inv 26"
     },
     {
@@ -82,7 +112,7 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 185,
-      "opponent_rank": 51,
+      "opponent_rank": 52,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
@@ -97,7 +127,7 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 15,
       "opponent_weight": 185,
-      "opponent_rank": 16,
+      "opponent_rank": 15,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",

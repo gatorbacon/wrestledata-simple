@@ -6,12 +6,12 @@
   "team_rank": 28,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 104,
+  "current_rank": 105,
   "record": {
-    "overall": "8-6",
-    "vs_ranked": "4-6",
-    "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "overall": "13-11",
+    "vs_ranked": "8-11",
+    "vs_top10": "0-2",
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,26 +20,26 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.375,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.462,
+    "bonus_rate": 0.615,
     "majors": 0,
-    "techs": 1,
-    "pins": 3
+    "techs": 2,
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 6,
+    "ranked_wins": 8,
+    "ranked_losses": 11,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35920579132",
-      "opponent_rank": 83,
+      "opponent_rank": 85,
       "opponent_name": "Karson Helminick",
       "method": "TF 17-2 5:34"
     },
     "worst_loss": {
       "opponent_id": "35359881132",
-      "opponent_rank": 49,
+      "opponent_rank": 48,
       "opponent_name": "Matthew Box",
       "method": "MD 9-0"
     }
@@ -50,7 +50,7 @@
       "opponent_id": "OUTSTATE_3884a8e8baf5",
       "opponent_name": "Unknown",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 121,
+      "opponent_team_rank": 120,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "165",
@@ -61,13 +61,28 @@
       "event": "vs. Pulaski County"
     },
     {
+      "date": "2026-01-13",
+      "opponent_id": "35454924132",
+      "opponent_name": "Trenton O`Connor",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 130,
+      "opponent_weight": 175,
+      "opponent_rank": 121,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "vs. Southwestern"
+    },
+    {
       "date": "2026-01-10",
       "opponent_id": "34995974132",
       "opponent_name": "Chase Brock",
       "opponent_team": "Bell County",
       "opponent_team_rank": 58,
       "opponent_weight": 157,
-      "opponent_rank": 44,
+      "opponent_rank": 45,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -82,7 +97,7 @@
       "opponent_team": "Green County",
       "opponent_team_rank": 85,
       "opponent_weight": 175,
-      "opponent_rank": 32,
+      "opponent_rank": 36,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "35920579132",
       "opponent_name": "Karson Helminick",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 13,
       "opponent_weight": 175,
-      "opponent_rank": 83,
+      "opponent_rank": 85,
       "weight_class": "175",
       "result": "W",
       "method": "TF",
@@ -157,7 +172,7 @@
       "opponent_team": "Logan County",
       "opponent_team_rank": 103,
       "opponent_weight": 165,
-      "opponent_rank": 106,
+      "opponent_rank": 107,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -202,7 +217,7 @@
       "opponent_team": "Bourbon County",
       "opponent_team_rank": 61,
       "opponent_weight": 175,
-      "opponent_rank": 109,
+      "opponent_rank": 113,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -215,7 +230,7 @@
       "opponent_id": "34997606132",
       "opponent_name": "Cyrus Greiwe",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 68,
       "opponent_weight": 175,
       "opponent_rank": 9,
       "weight_class": "175",
@@ -232,7 +247,7 @@
       "opponent_team": "Frederick Douglass",
       "opponent_team_rank": 83,
       "opponent_weight": 165,
-      "opponent_rank": 121,
+      "opponent_rank": 123,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -245,9 +260,9 @@
       "opponent_id": "35359881132",
       "opponent_name": "Matthew Box",
       "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 115,
+      "opponent_team_rank": 114,
       "opponent_weight": 175,
-      "opponent_rank": 49,
+      "opponent_rank": 48,
       "weight_class": "175",
       "result": "L",
       "method": "MD",
@@ -269,7 +284,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Somerset",
-      "record": "8-7",
+      "record": "9-7",
       "regional_place": null,
       "state_place": null
     },
@@ -283,8 +298,8 @@
     }
   ],
   "career_record": {
-    "wins": 10,
+    "wins": 11,
     "losses": 15,
-    "win_pct": 0.4
+    "win_pct": 0.423
   }
 }

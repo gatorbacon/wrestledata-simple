@@ -6,10 +6,10 @@
   "team_rank": 88,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 138,
+  "current_rank": 134,
   "record": {
-    "overall": "0-5",
-    "vs_ranked": "0-5",
+    "overall": "0-9",
+    "vs_ranked": "0-9",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,18 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34993874132",
-      "opponent_rank": 160,
+      "opponent_rank": 164,
       "opponent_name": "Brendan Martin",
       "method": "Dec 19-12"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-22",
+      "opponent_id": "34995974132",
+      "opponent_name": "Chase Brock",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 58,
+      "opponent_weight": 157,
+      "opponent_rank": 45,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harlan County"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "34995976132",
@@ -47,7 +62,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 58,
       "opponent_weight": 150,
-      "opponent_rank": 30,
+      "opponent_rank": 31,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -63,7 +78,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 58,
       "opponent_weight": 150,
-      "opponent_rank": 130,
+      "opponent_rank": 127,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -79,7 +94,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 58,
       "opponent_weight": 138,
-      "opponent_rank": 32,
+      "opponent_rank": 40,
       "weight_class": "144",
       "result": "L",
       "method": "MD",
@@ -95,7 +110,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 58,
       "opponent_weight": 150,
-      "opponent_rank": 30,
+      "opponent_rank": 31,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -111,7 +126,7 @@
       "opponent_team": "Green County",
       "opponent_team_rank": 85,
       "opponent_weight": 144,
-      "opponent_rank": 160,
+      "opponent_rank": 164,
       "weight_class": "150",
       "result": "L",
       "method": "DEC",
@@ -133,14 +148,14 @@
       "season": 2026,
       "grade": 10,
       "team": "Harlan County",
-      "record": "0-5",
+      "record": "0-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 0,
-    "losses": 5,
+    "losses": 6,
     "win_pct": 0.0
   }
 }

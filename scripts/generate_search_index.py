@@ -19,20 +19,32 @@ def slug_to_name(slug):
     return slug.replace('_', ' ').title()
 
 
-def generate_search_tokens(name, team=None, weight=None, team_slug=None):
-    """Generate search tokens from name, team, weight, and common abbreviations."""
+def generate_search_tokens(name, team=None, weight=None, team_slug=None, for_wrestler=False):
+    """Generate search tokens from name, team, weight, and common abbreviations.
+    
+    Args:
+        name: Name to tokenize
+        team: Team name (only included if for_wrestler=False)
+        weight: Weight class (only included if for_wrestler=False)
+        team_slug: Team slug for abbreviations (only included if for_wrestler=False)
+        for_wrestler: If True, only include name tokens (no team/weight)
+    """
     tokens = set()
     
     # Add name tokens (lowercase, split on spaces)
     name_lower = name.lower()
     tokens.update(name_lower.split())
     
-    # Add team tokens
+    # For wrestlers, ONLY include name tokens (no team/weight)
+    if for_wrestler:
+        return sorted(list(tokens))
+    
+    # For teams, include team tokens
     if team:
         team_lower = team.lower()
         tokens.update(team_lower.split())
     
-    # Add weight class
+    # Add weight class (for teams only, not used in search but kept for compatibility)
     if weight:
         tokens.add(str(weight))
     
@@ -128,7 +140,7 @@ def load_gender_data(script_dir, gender, season):
             weight = wrestler.get('weight_class')
             rank = wrestler.get('current_rank')  # May be None if unranked
             
-            # Generate secondary text
+            # Generate secondary text (for display only, not search)
             secondary_parts = []
             if team:
                 secondary_parts.append(team)
@@ -136,8 +148,13 @@ def load_gender_data(script_dir, gender, season):
                 secondary_parts.append(str(weight))
             secondary = " · ".join(secondary_parts) if secondary_parts else ""
             
-            # Generate search tokens
-            search_tokens = generate_search_tokens(name, team, weight, team_slug)
+            # Parse first and last name for equal-weight searching
+            name_parts = name.split()
+            first_name = name_parts[0] if name_parts else ""
+            last_name = " ".join(name_parts[1:]) if len(name_parts) > 1 else ""
+            
+            # Generate search tokens (ONLY name, no team/weight)
+            search_tokens = generate_search_tokens(name, for_wrestler=True)
             
             # Build URL with gender
             url = wrestler_id_to_url(wrestler_id, gender)
@@ -145,6 +162,8 @@ def load_gender_data(script_dir, gender, season):
             search_items.append({
                 "type": "wrestler",
                 "name": name,
+                "first_name": first_name,
+                "last_name": last_name,
                 "secondary": secondary,
                 "url": url,
                 "searchTokens": search_tokens,
@@ -262,7 +281,7 @@ def main():
             if not wrestler_id:
                 continue
             
-            # Generate secondary text
+            # Generate secondary text (for display only, not search)
             secondary_parts = []
             if team:
                 secondary_parts.append(team)
@@ -270,12 +289,19 @@ def main():
                 secondary_parts.append(str(weight))
             secondary = " · ".join(secondary_parts) if secondary_parts else ""
             
-            # Generate search tokens
-            search_tokens = generate_search_tokens(name, team, weight, team_slug)
+            # Parse first and last name for equal-weight searching
+            name_parts = name.split()
+            first_name = name_parts[0] if name_parts else ""
+            last_name = " ".join(name_parts[1:]) if len(name_parts) > 1 else ""
+            
+            # Generate search tokens (ONLY name, no team/weight)
+            search_tokens = generate_search_tokens(name, for_wrestler=True)
             
             search_index.append({
                 "type": "wrestler",
                 "name": name,
+                "first_name": first_name,
+                "last_name": last_name,
                 "secondary": secondary,
                 "url": wrestler_id_to_url(wrestler_id),
                 "searchTokens": search_tokens

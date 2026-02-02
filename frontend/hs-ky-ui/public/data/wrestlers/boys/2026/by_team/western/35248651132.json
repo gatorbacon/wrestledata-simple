@@ -4,12 +4,12 @@
   "team": "Western",
   "team_slug": "western",
   "team_rank": 38,
-  "weight_class": 132,
+  "weight_class": 138,
   "year": 2026,
-  "current_rank": 250,
+  "current_rank": 149,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "0-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,26 +28,56 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35522911132",
-      "opponent_rank": 98,
-      "opponent_name": "Koltyn Eichberger",
-      "method": "Fall 0:24"
+      "opponent_id": "35057122132",
+      "opponent_rank": 154,
+      "opponent_name": "Hunter Waddle",
+      "method": "Fall 1:17"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-21",
+      "opponent_id": "35057122132",
+      "opponent_name": "Hunter Waddle",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": 63,
+      "opponent_weight": 138,
+      "opponent_rank": 154,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "vs. Western"
+    },
+    {
+      "date": "2026-01-21",
+      "opponent_id": "35181249132",
+      "opponent_name": "Sam Spoonamore",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 69,
+      "opponent_weight": 138,
+      "opponent_rank": 103,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "vs. Western"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35522911132",
       "opponent_name": "Koltyn Eichberger",
       "opponent_team": "Seneca",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 127,
       "opponent_weight": 132,
-      "opponent_rank": 98,
+      "opponent_rank": 101,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -69,14 +99,14 @@
       "season": 2026,
       "grade": 10,
       "team": "Western",
-      "record": "0-1",
+      "record": "0-3",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 0,
-    "losses": 1,
+    "losses": 3,
     "win_pct": 0.0
   }
 }

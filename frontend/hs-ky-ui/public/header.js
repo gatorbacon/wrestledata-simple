@@ -574,16 +574,35 @@
       return;
     }
     
-    // Initialize Fuse.js
-    const fuse = new Fuse(window.SEARCH_INDEX, {
-      keys: [
-        { name: 'name', weight: 0.6 },
-        { name: 'searchTokens', weight: 0.4 }
-      ],
-      threshold: 0.4,
-      ignoreLocation: true,
-      minMatchCharLength: 2
-    });
+    // Initialize Fuse.js with separate configurations for wrestlers and teams
+    // Wrestlers: search only name fields (first_name, last_name, name)
+    // Teams: search name and searchTokens
+    const wrestlerFuse = new Fuse(
+      window.SEARCH_INDEX.filter(item => item.type === 'wrestler'),
+      {
+        keys: [
+          { name: 'name', weight: 0.4 },
+          { name: 'first_name', weight: 0.3 },
+          { name: 'last_name', weight: 0.3 }
+        ],
+        threshold: 0.15, // Stricter threshold for better relevance (0.15 = 85% match required)
+        ignoreLocation: true,
+        minMatchCharLength: 2
+      }
+    );
+    
+    const teamFuse = new Fuse(
+      window.SEARCH_INDEX.filter(item => item.type === 'team'),
+      {
+        keys: [
+          { name: 'name', weight: 0.6 },
+          { name: 'searchTokens', weight: 0.4 }
+        ],
+        threshold: 0.4,
+        ignoreLocation: true,
+        minMatchCharLength: 2
+      }
+    );
     
     let activeIndex = -1;
     let currentResults = [];
@@ -596,10 +615,11 @@
         return;
       }
       
-      // Perform search
-      const results = fuse.search(query);
+      // Perform separate searches for wrestlers and teams
+      const wrestlerResults = wrestlerFuse.search(query);
+      const teamResults = teamFuse.search(query);
       
-      if (results.length === 0) {
+      if (wrestlerResults.length === 0 && teamResults.length === 0) {
         searchDropdown.innerHTML = `
           <div class="search-result-item search-result-empty">No results found</div>
         `;
@@ -608,24 +628,31 @@
         return;
       }
       
-      // Group by type, preserving Fuse.js relevance scores
-      const wrestlerResults = results.filter(r => r.item.type === 'wrestler');
-      const teamResults = results.filter(r => r.item.type === 'team');
-      
-      // Sort wrestlers: prioritize exact name matches, then Fuse.js relevance, then rank
-      const queryLower = query.toLowerCase();
+      // Sort wrestlers: prioritize match quality (exact/prefix > fuzzy), then rank
+      const queryLower = query.toLowerCase().trim();
       wrestlerResults.sort((a, b) => {
         const nameA = (a.item.name || '').toLowerCase();
         const nameB = (b.item.name || '').toLowerCase();
+        const firstA = (a.item.first_name || '').toLowerCase();
+        const firstB = (b.item.first_name || '').toLowerCase();
+        const lastA = (a.item.last_name || '').toLowerCase();
+        const lastB = (b.item.last_name || '').toLowerCase();
         
-        // Primary: Exact name matches (name starts with query or equals query)
-        const exactMatchA = nameA === queryLower || nameA.startsWith(queryLower);
-        const exactMatchB = nameB === queryLower || nameB.startsWith(queryLower);
+        // Primary: Match quality (exact/prefix matches rank higher than fuzzy)
+        // Check if query matches name exactly, starts with name, or matches first/last name
+        const exactMatchA = nameA === queryLower || 
+                          nameA.startsWith(queryLower) ||
+                          firstA.startsWith(queryLower) ||
+                          lastA.startsWith(queryLower);
+        const exactMatchB = nameB === queryLower || 
+                          nameB.startsWith(queryLower) ||
+                          firstB.startsWith(queryLower) ||
+                          lastB.startsWith(queryLower);
         
-        if (exactMatchA && !exactMatchB) return -1; // A is exact match, B is not
-        if (!exactMatchA && exactMatchB) return 1;  // B is exact match, A is not
+        if (exactMatchA && !exactMatchB) return -1; // A is exact/prefix match, B is fuzzy
+        if (!exactMatchA && exactMatchB) return 1;  // B is exact/prefix match, A is fuzzy
         
-        // Secondary: If both or neither are exact matches, use Fuse.js relevance score
+        // Secondary: If both or neither are exact/prefix matches, use Fuse.js relevance score
         if (exactMatchA === exactMatchB) {
           const scoreA = a.score || 1;
           const scoreB = b.score || 1;
@@ -634,7 +661,7 @@
           }
         }
         
-        // Tertiary: Rank (only when relevance is similar or both are exact matches)
+        // Tertiary: Rank (unranked wrestlers go last)
         const rankA = a.item.rank !== null && a.item.rank !== undefined ? a.item.rank : 9999;
         const rankB = b.item.rank !== null && b.item.rank !== undefined ? b.item.rank : 9999;
         return rankA - rankB;

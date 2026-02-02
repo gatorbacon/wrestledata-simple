@@ -3,15 +3,15 @@
   "name": "Wyatt Merk",
   "team": "Covington Catholic",
   "team_slug": "covington_catholic",
-  "team_rank": 42,
-  "weight_class": 285,
+  "team_rank": 41,
+  "weight_class": 215,
   "year": 2026,
-  "current_rank": 315,
+  "current_rank": 151,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "0-2",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "3-11",
+    "vs_ranked": "0-9",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,22 +24,112 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 2,
+    "ranked_losses": 9,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 2,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35663429132",
-      "opponent_rank": 84,
-      "opponent_name": "David Rojas",
-      "method": "Fall 3:29"
+      "opponent_id": "37041405132",
+      "opponent_rank": 148,
+      "opponent_name": "Russell Ali",
+      "method": "Dec 7-5"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-29",
+      "opponent_id": "35214900132",
+      "opponent_name": "Christian Brown",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 8,
+      "opponent_weight": 285,
+      "opponent_rank": 2,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:13",
+      "event": "vs. Covington Catholic"
+    },
+    {
+      "date": "2026-01-24",
+      "opponent_id": "OUTSTATE_3112a65dc35f",
+      "opponent_name": "Jacob Williams",
+      "opponent_team": "Lakota East High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ross JV Invitational"
+    },
+    {
+      "date": "2026-01-24",
+      "opponent_id": "OUTSTATE_adbd4998283e",
+      "opponent_name": "Ayden Manase",
+      "opponent_team": "Walnut Hills High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Ross JV Invitational"
+    },
+    {
+      "date": "2026-01-24",
+      "opponent_id": "OUTSTATE_c1f34c51adff",
+      "opponent_name": "Kayden Clardy-Brown",
+      "opponent_team": "Sycamore High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ross JV Invitational"
+    },
+    {
+      "date": "2026-01-22",
+      "opponent_id": "35405493132",
+      "opponent_name": "Nathaniel Brown",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 84,
+      "opponent_weight": 285,
+      "opponent_rank": 91,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "vs. Grant County"
+    },
+    {
+      "date": "2026-01-22",
+      "opponent_id": "37041405132",
+      "opponent_name": "Russell Ali",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": 4,
+      "opponent_weight": 285,
+      "opponent_rank": 148,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-5",
+      "duration": "7:00",
+      "event": "vs. Highlands"
+    },
     {
       "date": "2025-12-12",
       "opponent_id": "35035547132",
@@ -47,7 +137,7 @@
       "opponent_team": "Boone County",
       "opponent_team_rank": 60,
       "opponent_weight": 215,
-      "opponent_rank": 66,
+      "opponent_rank": 65,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -62,7 +152,7 @@
       "opponent_team": "Ryle",
       "opponent_team_rank": 5,
       "opponent_weight": 285,
-      "opponent_rank": 84,
+      "opponent_rank": 82,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -100,7 +190,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Covington Catholic",
-      "record": "1-2",
+      "record": "2-7",
       "regional_place": null,
       "state_place": null
     },
@@ -122,8 +212,8 @@
     }
   ],
   "career_record": {
-    "wins": 4,
-    "losses": 22,
-    "win_pct": 0.154
+    "wins": 5,
+    "losses": 27,
+    "win_pct": 0.156
   }
 }

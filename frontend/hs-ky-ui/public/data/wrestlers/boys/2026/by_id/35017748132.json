@@ -6,12 +6,12 @@
   "team_rank": 39,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 18,
+  "current_rank": 21,
   "record": {
-    "overall": "4-0",
-    "vs_ranked": "2-0",
+    "overall": "6-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,26 +20,76 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35051541132",
-      "opponent_rank": 19,
+      "opponent_rank": 22,
       "opponent_name": "Maxx Escaloni",
       "method": "Fall 2:31"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35850443132",
+      "opponent_rank": 20,
+      "opponent_name": "Cameron Thompson",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-22",
+      "opponent_id": "35911430132",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Russell"
+    },
+    {
+      "date": "2026-01-22",
+      "opponent_id": "35850443132",
+      "opponent_name": "Cameron Thompson",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 11,
+      "opponent_weight": 285,
+      "opponent_rank": 20,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Boyd County"
+    },
+    {
+      "date": "2026-01-22",
+      "opponent_id": "OUTSTATE_57e518e4ee5a",
+      "opponent_name": "Unknown",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 86,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Greenup County"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "35787742132",
@@ -62,7 +112,7 @@
       "opponent_team": "Belfry",
       "opponent_team_rank": 57,
       "opponent_weight": 285,
-      "opponent_rank": 121,
+      "opponent_rank": 118,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -77,7 +127,7 @@
       "opponent_team": "Woodford County",
       "opponent_team_rank": 52,
       "opponent_weight": 285,
-      "opponent_rank": 19,
+      "opponent_rank": 22,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -115,7 +165,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Ashland Blazer",
-      "record": "4-0",
+      "record": "6-1",
       "regional_place": null,
       "state_place": null
     },
@@ -137,8 +187,8 @@
     }
   ],
   "career_record": {
-    "wins": 69,
-    "losses": 26,
-    "win_pct": 0.726
+    "wins": 71,
+    "losses": 27,
+    "win_pct": 0.724
   }
 }

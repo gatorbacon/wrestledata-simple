@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": 43,
   "record": {
-    "overall": "5-5",
-    "vs_ranked": "1-3",
+    "overall": "6-6",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,20 +20,20 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.2,
-    "bonus_rate": 0.2,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35660153132",
-      "opponent_rank": 33,
+      "opponent_rank": 36,
       "opponent_name": "Chloe Whitehead",
       "method": "Fall 0:00"
     },
@@ -95,7 +95,7 @@
       "opponent_id": "OUTSTATE_021f644ea71a",
       "opponent_name": "Unknown",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 50,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "235",
@@ -137,10 +137,25 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35457269132",
+      "opponent_name": "Makenna Sulfridge",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 7,
+      "opponent_weight": 185,
+      "opponent_rank": 11,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "2025 Anchor Down Showdown (Ladies)"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35333541132",
       "opponent_name": "Serenity Allen",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 22,
       "opponent_weight": 235,
       "opponent_rank": 26,
       "weight_class": "235",
@@ -151,26 +166,26 @@
       "event": "2025 Anchor Down Showdown (Ladies)"
     },
     {
-      "date": "2025-12-06",
-      "opponent_id": "35457269132",
-      "opponent_name": "Makenna Sulfridge",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": 7,
+      "date": "2025-11-29",
+      "opponent_id": "35660153132",
+      "opponent_name": "Chloe Whitehead",
+      "opponent_team": "Pineville",
+      "opponent_team_rank": null,
       "opponent_weight": 185,
-      "opponent_rank": 12,
+      "opponent_rank": 36,
       "weight_class": "235",
-      "result": "L",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:45",
-      "event": "2025 Anchor Down Showdown (Ladies)"
+      "duration": "0:00",
+      "event": "vs. Pineville"
     },
     {
       "date": "2025-11-29",
       "opponent_id": "35599269132",
       "opponent_name": "Kaylee Parriman",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 46,
       "opponent_weight": 235,
       "opponent_rank": 22,
       "weight_class": "235",
@@ -179,21 +194,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35660153132",
-      "opponent_name": "Chloe Whitehead",
-      "opponent_team": "Pineville",
-      "opponent_team_rank": null,
-      "opponent_weight": 185,
-      "opponent_rank": 33,
-      "weight_class": "235",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Pineville"
     }
   ]
 }

@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": 14,
   "record": {
-    "overall": "20-10",
-    "vs_ranked": "13-9",
-    "vs_top10": "2-6",
-    "vs_top25": "4-9"
+    "overall": "27-10",
+    "vs_ranked": "20-9",
+    "vs_top10": "4-6",
+    "vs_top25": "8-9"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,16 +20,16 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.7,
-    "bonus_rate": 0.75,
+    "pin_rate": 0.778,
+    "bonus_rate": 0.815,
     "majors": 0,
     "techs": 1,
-    "pins": 14
+    "pins": 21
   },
   "opponent_breakdown": {
-    "ranked_wins": 13,
+    "ranked_wins": 20,
     "ranked_losses": 9,
-    "top10_wins": 2,
+    "top10_wins": 4,
     "top10_losses": 6,
     "win_over_highest_rank": {
       "opponent_id": "35333369132",
@@ -45,6 +45,21 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35333574132",
+      "opponent_name": "Bertina Karnwea",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 48,
+      "opponent_weight": 107,
+      "opponent_rank": 10,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:27",
+      "event": "Mestengo Invitational"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "35333548132",
@@ -76,6 +91,21 @@
       "event": "Mestengo Invitational"
     },
     {
+      "date": "2026-01-17",
+      "opponent_id": "35774463132",
+      "opponent_name": "Aaliyah Bronger",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 35,
+      "opponent_weight": 107,
+      "opponent_rank": 15,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Mestengo Invitational"
+    },
+    {
       "date": "2026-01-10",
       "opponent_id": "36532312132",
       "opponent_name": "Adalyn Perry",
@@ -97,7 +127,7 @@
       "opponent_team": "Fort Knox",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 66,
+      "opponent_rank": 65,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -127,7 +157,7 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 36,
+      "opponent_rank": 35,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -155,7 +185,7 @@
       "opponent_id": "OUTSTATE_17200c877caa",
       "opponent_name": "Unknown",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 47,
       "opponent_weight": 107,
       "opponent_rank": null,
       "weight_class": "107",
@@ -262,7 +292,7 @@
       "opponent_team": "Campbellsville",
       "opponent_team_rank": 33,
       "opponent_weight": 107,
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -302,36 +332,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35333574132",
-      "opponent_name": "Bertina Karnwea",
-      "opponent_team": "Moore",
-      "opponent_team_rank": 47,
-      "opponent_weight": 107,
-      "opponent_rank": 10,
-      "weight_class": "107",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:52",
-      "event": "vs. Moore"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "OUTSTATE_fa7f930d70be",
-      "opponent_name": "Unknown",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "107",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Franklin County"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35456263132",
       "opponent_name": "Aubree Birchfield",
       "opponent_team": "Whitley County",
@@ -361,19 +361,34 @@
       "event": "vs. Taylor County"
     },
     {
-      "date": "2025-12-06",
-      "opponent_id": "35333683132",
-      "opponent_name": "Camila Ramirez",
-      "opponent_team": "Boone County",
-      "opponent_team_rank": null,
+      "date": "2025-12-13",
+      "opponent_id": "35333574132",
+      "opponent_name": "Bertina Karnwea",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 48,
       "opponent_weight": 107,
-      "opponent_rank": 54,
+      "opponent_rank": 10,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:27",
-      "event": "Bearcat Brawl (Girls)"
+      "duration": "0:52",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_fa7f930d70be",
+      "opponent_name": "Unknown",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Franklin County"
     },
     {
       "date": "2025-12-06",
@@ -388,6 +403,21 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Bearcat Brawl (Girls)"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333683132",
+      "opponent_name": "Camila Ramirez",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": 54,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
       "event": "Bearcat Brawl (Girls)"
     },
     {
@@ -437,10 +467,40 @@
     },
     {
       "date": "2025-11-29",
+      "opponent_id": "35334935132",
+      "opponent_name": "Aubree Allison",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 13,
+      "opponent_weight": 114,
+      "opponent_rank": 24,
+      "weight_class": "114",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. North Hardin"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35333465132",
+      "opponent_name": "Kendall Mcclain",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 52,
+      "weight_class": "114",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2025-11-29",
       "opponent_id": "35461604132",
       "opponent_name": "McKenzie Ratliff",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 14,
       "opponent_weight": 107,
       "opponent_rank": 22,
       "weight_class": "107",
@@ -464,36 +524,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bullitt East"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35334935132",
-      "opponent_name": "Aubree Allison",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": 14,
-      "opponent_weight": 114,
-      "opponent_rank": 23,
-      "weight_class": "114",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. North Hardin"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35333465132",
-      "opponent_name": "Kendall Mcclain",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 114,
-      "opponent_rank": 52,
-      "weight_class": "114",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Franklin County"
     }
   ]
 }

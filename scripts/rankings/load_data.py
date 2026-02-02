@@ -1246,7 +1246,10 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 # Include match if at least one wrestler is assigned to this weight class
                 if w1_id in wrestler_ids_in_wc or w2_id in wrestler_ids_in_wc:
                     # Create a unique match ID to avoid duplicates
-                    match_id = f"{w1_id}_{w2_id}_{match.get('date', '')}_{match.get('result', '')}"
+                    # Use normalized IDs (min/max) to match the format used when storing matches
+                    w1_norm = min(w1_id, w2_id)
+                    w2_norm = max(w1_id, w2_id)
+                    match_id = f"{w1_norm}_{w2_norm}_{match.get('date', '')}_{match.get('result', '')}"
                     
                     if match_id not in seen_match_ids:
                         filtered_weight_classes[assigned_wc]['matches'].append(match)
@@ -1326,7 +1329,11 @@ def load_season_data(season: int, league: str = 'ncaa', state: str = None, gende
 
 def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
     """
-    Remove duplicate matches that appear in multiple weight classes.
+    Remove duplicate matches WITHIN each weight class, but allow the same match
+    to appear in multiple weight classes if it involves wrestlers from different classes.
+
+    This is important for common opponent analysis - we need cross-weight-class matches
+    to appear in all relevant weight classes.
 
     Deduplication key is based on:
       - date
@@ -1335,20 +1342,16 @@ def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
 
     Note: We use (date, pair, normalized_result_type) as the identity key to allow
     multiple matches between the same wrestlers on the same date with different result types
-    (e.g., Fall vs M. For.), while still deduplicating the same match appearing in multiple
-    weight classes or with minor time/score variations.
-    
-    This ensures that if a match appears in multiple weight classes (which shouldn't
-    happen but could due to data issues), or if it appears in both team files with
-    different original results that get unified by an override, we only keep one copy.
+    (e.g., Fall vs M. For.), while still deduplicating the same match appearing multiple
+    times within the SAME weight class (e.g., from both team files with minor variations).
 
-    This keeps the first occurrence encountered and drops later duplicates,
-    so downstream tools that scan all weight_class_*.json files don't
-    double-count the same bout.
+    IMPORTANT: We do NOT deduplicate across weight classes - the same match can and should
+    appear in multiple weight classes if it involves wrestlers from different classes.
+    This allows common opponent relationships to work across weight classes.
     """
-    seen = set()
     for wc, wc_data in data.items():
         matches = wc_data.get("matches", [])
+        seen = set()  # Track seen matches WITHIN this weight class only
         new_matches = []
         for m in matches:
             w1 = m.get("wrestler1_id")
@@ -1365,7 +1368,7 @@ def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
                 normalized_result,
             )
             if key in seen:
-                continue
+                continue  # Skip duplicate within this weight class
             seen.add(key)
             new_matches.append(m)
         wc_data["matches"] = new_matches

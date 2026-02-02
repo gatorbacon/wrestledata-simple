@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-3",
-    "vs_ranked": "0-3",
+    "overall": "0-5",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -28,18 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35420915132",
-      "opponent_rank": 131,
-      "opponent_name": "Blake Smith",
-      "method": "Fall 3:24"
+      "opponent_id": "35513069132",
+      "opponent_rank": 163,
+      "opponent_name": "Kane Caudill",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35513069132",
+      "opponent_name": "Kane Caudill",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 57,
+      "opponent_weight": 138,
+      "opponent_rank": 163,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Eastside"
+    },
     {
       "date": "2026-01-03",
       "opponent_id": "35732622132",
@@ -47,28 +62,13 @@
       "opponent_team": "Martin County",
       "opponent_team_rank": 17,
       "opponent_weight": 138,
-      "opponent_rank": 24,
+      "opponent_rank": 23,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:37",
       "event": "2026 Agie Skeens Memorial Tournament"
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "35850446132",
-      "opponent_name": "Kaiden Nottingham",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": 8,
-      "opponent_weight": 138,
-      "opponent_rank": 12,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:36",
-      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -83,6 +83,21 @@
       "method": "FALL",
       "score": null,
       "duration": "3:24",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35850446132",
+      "opponent_name": "Kaiden Nottingham",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 11,
+      "opponent_weight": 138,
+      "opponent_rank": 12,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
       "event": "Boys Hatfield McCoy 32 2025"
     }
   ]

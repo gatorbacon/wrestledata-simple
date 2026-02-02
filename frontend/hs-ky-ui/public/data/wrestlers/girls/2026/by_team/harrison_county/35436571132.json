@@ -3,15 +3,15 @@
   "name": "loralei Nelson",
   "team": "Harrison County",
   "team_slug": "harrison_county",
-  "team_rank": 20,
+  "team_rank": 21,
   "weight_class": 100,
   "year": 2026,
   "current_rank": 22,
   "record": {
-    "overall": "6-7",
-    "vs_ranked": "5-7",
-    "vs_top10": "1-7",
-    "vs_top25": "1-7"
+    "overall": "11-7",
+    "vs_ranked": "10-7",
+    "vs_top10": "3-7",
+    "vs_top25": "3-7"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,16 +20,16 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.667,
+    "pin_rate": 0.636,
+    "bonus_rate": 0.727,
     "majors": 0,
     "techs": 1,
-    "pins": 3
+    "pins": 7
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 10,
     "ranked_losses": 7,
-    "top10_wins": 1,
+    "top10_wins": 3,
     "top10_losses": 7,
     "win_over_highest_rank": {
       "opponent_id": "35333368132",
@@ -47,17 +47,47 @@
   "match_list": [
     {
       "date": "2026-01-17",
-      "opponent_id": "35333546132",
-      "opponent_name": "Bijou Brown",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 100,
-      "opponent_rank": 9,
-      "weight_class": "100",
-      "result": "L",
+      "opponent_id": "35333584132",
+      "opponent_name": "Mallory Ohlson",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 28,
+      "opponent_weight": 114,
+      "opponent_rank": 63,
+      "weight_class": "114",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "2:44",
+      "duration": "0:29",
+      "event": "Mestengo"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35333369132",
+      "opponent_name": "Teagan Hundley",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 100,
+      "opponent_rank": 7,
+      "weight_class": "100",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Mestengo Invitational"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35672624132",
+      "opponent_name": "Savannah Martin",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": 10,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "Mestengo Invitational"
     },
     {
@@ -77,33 +107,48 @@
     },
     {
       "date": "2026-01-17",
+      "opponent_id": "35333546132",
+      "opponent_name": "Bijou Brown",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": 9,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Mestengo Invitational"
+    },
+    {
+      "date": "2026-01-17",
       "opponent_id": "35333539132",
       "opponent_name": "Brielle Richardson",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 22,
       "opponent_weight": 100,
       "opponent_rank": 5,
       "weight_class": "100",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "2:34",
-      "event": "Mestengo"
+      "duration": "0:00",
+      "event": "Mestengo Invitational"
     },
     {
       "date": "2026-01-17",
-      "opponent_id": "35333584132",
-      "opponent_name": "Mallory Ohlson",
-      "opponent_team": "Ballard",
-      "opponent_team_rank": 28,
-      "opponent_weight": 114,
-      "opponent_rank": 62,
-      "weight_class": "114",
+      "opponent_id": "35461584132",
+      "opponent_name": "Jena Robinson",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 14,
+      "opponent_weight": 100,
+      "opponent_rank": 46,
+      "weight_class": "100",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:29",
-      "event": "Mestengo"
+      "duration": "0:00",
+      "event": "Mestengo Invitational"
     },
     {
       "date": "2025-12-29",
@@ -200,7 +245,7 @@
       "opponent_id": "35333539132",
       "opponent_name": "Brielle Richardson",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 22,
       "opponent_weight": 100,
       "opponent_rank": 5,
       "weight_class": "100",
@@ -209,6 +254,21 @@
       "score": null,
       "duration": "0:36",
       "event": "Ladies 5 Star"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35333590132",
+      "opponent_name": "Jossie Arroyo",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 3,
+      "opponent_weight": 107,
+      "opponent_rank": 41,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2025-12-13",
@@ -224,21 +284,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. South Warren"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35333590132",
-      "opponent_name": "Jossie Arroyo",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 3,
-      "opponent_weight": 107,
-      "opponent_rank": 40,
-      "weight_class": "107",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. John Hardin"
     }
   ]
 }

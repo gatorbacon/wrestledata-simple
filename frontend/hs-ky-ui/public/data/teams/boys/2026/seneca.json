@@ -14,20 +14,44 @@
     "region": "4"
   },
   "urls": {
-    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=lzbwncqrdj&teamId=818284150",
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=ykupnwsnbj&teamId=818284150",
     "school": null
   },
   "derived_from": {
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-01-26T01:03:20.162758Z",
+  "generated_at_utc": "2026-02-02T01:27:36.241740Z",
   "starters": {
     "120": {
       "weight": 120,
       "wrestler_id": "35522910132",
       "name": "Daveon Colbert",
-      "current_rank": 76,
+      "current_rank": 75,
+      "grade": 10,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "wins": 9,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35562423132",
+      "name": "Joshua Avila",
+      "current_rank": 108,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -43,39 +67,15 @@
         "losses": 0
       },
       "wins": 6,
-      "losses": 2,
+      "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 1.0
-    },
-    "126": {
-      "weight": 126,
-      "wrestler_id": "35562423132",
-      "name": "Joshua Avila",
-      "current_rank": 111,
-      "grade": 10,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "wins": 4,
-      "losses": 6,
-      "top25_wins": 0,
-      "bonus_rate": 0.75
+      "bonus_rate": 0.833
     },
     "132": {
       "weight": 132,
       "wrestler_id": "35522911132",
       "name": "Koltyn Eichberger",
-      "current_rank": 106,
+      "current_rank": 101,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -90,16 +90,16 @@
         "wins": 0,
         "losses": 0
       },
-      "wins": 5,
+      "wins": 6,
       "losses": 3,
       "top25_wins": 0,
-      "bonus_rate": 0.6
+      "bonus_rate": 0.667
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35562521132",
       "name": "Erick Martinez",
-      "current_rank": 122,
+      "current_rank": 109,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -114,16 +114,16 @@
         "wins": 0,
         "losses": 1
       },
-      "wins": 6,
-      "losses": 7,
+      "wins": 7,
+      "losses": 9,
       "top25_wins": 0,
-      "bonus_rate": 0.833
+      "bonus_rate": 0.857
     },
     "144": {
       "weight": 144,
       "wrestler_id": "35522912132",
       "name": "Caleb Jackson",
-      "current_rank": 113,
+      "current_rank": 104,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -138,16 +138,16 @@
         "wins": 0,
         "losses": 0
       },
-      "wins": 6,
-      "losses": 6,
+      "wins": 7,
+      "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.667
+      "bonus_rate": 0.714
     },
     "150": {
       "weight": 150,
       "wrestler_id": "35562668132",
       "name": "Kayden Cox",
-      "current_rank": 41,
+      "current_rank": 42,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -162,32 +162,32 @@
         "wins": 0,
         "losses": 2
       },
-      "wins": 2,
-      "losses": 5,
+      "wins": 3,
+      "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.5
+      "bonus_rate": 0.667
     },
     "157": {
       "weight": 157,
       "wrestler_id": "35522906132",
       "name": "Treyvon Truss",
-      "current_rank": 20,
+      "current_rank": 31,
       "grade": 11,
-      "xtp": 1.36,
-      "xtp_p": 0.45,
-      "xtp_a": 0.91,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.5,
+      "xtp": 1.06,
+      "xtp_p": 0.09,
+      "xtp_a": 0.34,
+      "xtp_b": 0.63,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
         "wins": 1,
-        "losses": 3
+        "losses": 4
       },
-      "wins": 8,
-      "losses": 3,
+      "wins": 10,
+      "losses": 4,
       "top25_wins": 1,
       "bonus_rate": 1.0
     },
@@ -195,7 +195,7 @@
       "weight": 165,
       "wrestler_id": "35562301132",
       "name": "Nikolas Elsey",
-      "current_rank": 170,
+      "current_rank": 139,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -211,7 +211,7 @@
         "losses": 1
       },
       "wins": 1,
-      "losses": 5,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -219,7 +219,7 @@
       "weight": 175,
       "wrestler_id": "35522909132",
       "name": "Region Gurung",
-      "current_rank": 122,
+      "current_rank": 115,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -235,7 +235,7 @@
         "losses": 0
       },
       "wins": 4,
-      "losses": 6,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.75
     },
@@ -243,7 +243,7 @@
       "weight": 190,
       "wrestler_id": "35522904132",
       "name": "Meeko Heady",
-      "current_rank": 90,
+      "current_rank": 42,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -258,16 +258,16 @@
         "wins": 1,
         "losses": 4
       },
-      "wins": 8,
+      "wins": 11,
       "losses": 5,
       "top25_wins": 1,
-      "bonus_rate": 0.875
+      "bonus_rate": 0.818
     },
     "215": {
       "weight": 215,
       "wrestler_id": "35522908132",
       "name": "Jonathan Pitt",
-      "current_rank": 176,
+      "current_rank": 136,
       "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -280,10 +280,10 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 4
       },
       "wins": 0,
-      "losses": 8,
+      "losses": 10,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -295,7 +295,7 @@
       "name": "Omar Lopez",
       "grade": 9,
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -335,7 +335,7 @@
       "name": "Joseph Nix",
       "grade": 10,
       "wins": 0,
-      "losses": 1,
+      "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -345,7 +345,7 @@
       "name": "Gabe Gray",
       "grade": 10,
       "wins": 0,
-      "losses": 2,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -375,14 +375,14 @@
       "name": "McAlvin Liberal",
       "grade": 12,
       "wins": 1,
-      "losses": 5,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 0.5,
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": 0.5,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -397,7 +397,7 @@
     },
     "top33": {
       "wins": 2,
-      "losses": 14
+      "losses": 16
     },
     "top10": {
       "wins": 0,

@@ -163,7 +163,7 @@ def build_direct_relationships(matches: List[Dict], wrestlers: Dict[str, Dict],
                 'result': 'M',  # Manual override marker
                 'event': manual_match.get('note', 'Manual override'),
                 'is_manual': True
-        })
+            })
     
     return relationships
 
@@ -171,7 +171,8 @@ def build_direct_relationships(matches: List[Dict], wrestlers: Dict[str, Dict],
 def build_common_opponent_relationships(
     direct_relationships: Dict[Tuple[str, str], Dict],
     matches: List[Dict],
-    wrestlers: Dict[str, Dict]
+    wrestlers: Dict[str, Dict],
+    all_wrestlers: Optional[Dict[str, Dict]] = None
 ) -> Dict[Tuple[str, str], Dict]:
     """
     Build common opponent relationships.
@@ -181,7 +182,9 @@ def build_common_opponent_relationships(
     Args:
         direct_relationships: Direct head-to-head relationships
         matches: List of all matches
-        wrestlers: Dictionary of wrestler_id -> wrestler_info
+        wrestlers: Dictionary of wrestler_id -> wrestler_info (for this weight class)
+        all_wrestlers: Optional dictionary of all wrestlers across all weight classes
+                      (for looking up opponent names from other weight classes)
         
     Returns:
         Dictionary mapping (wrestler1_id, wrestler2_id) -> common_opponent_info
@@ -199,8 +202,15 @@ def build_common_opponent_relationships(
         w2_id = match['wrestler2_id']
         winner_id = match['winner_id']
         
-        # Skip if either wrestler doesn't exist
-        if w1_id not in wrestlers or w2_id not in wrestlers:
+        # Skip matches with invalid opponent IDs (-1 is a placeholder for missing data)
+        # We can't build reliable relationships when we can't identify one of the wrestlers
+        if (str(w1_id) == '-1' or str(w2_id) == '-1' or 
+            w1_id == -1 or w2_id == -1):
+            continue
+        
+        # Require at least one wrestler to be in this weight class (for ranking purposes)
+        # This allows cross-weight-class matches to be included for common opponent analysis
+        if w1_id not in wrestlers and w2_id not in wrestlers:
             continue
         
         # Skip "no contest" and injury/medical forfeit matches for CO logic
@@ -279,6 +289,9 @@ def build_common_opponent_relationships(
             co_details_2 = []  # Details for w2's wins (opponent, match info)
             
             for opp_id in common_opponents:
+                # Skip invalid opponent IDs (-1 is a placeholder for missing data)
+                if str(opp_id) == '-1' or opp_id == -1:
+                    continue
                 # How did w1 do against this opponent?
                 w1_opp_pair = tuple(sorted([w1_id, opp_id]))
                 if w1_opp_pair in match_results:
@@ -330,7 +343,8 @@ def build_common_opponent_relationships(
                     co_losses_2 += 1
                     
                     # Store details: get match info for both wrestlers vs opponent
-                    opp_name = wrestlers.get(opp_id, {}).get('name', f'ID:{opp_id}')
+                    # Try to get opponent name from weight class wrestlers, then global lookup, then fallback
+                    opp_name = wrestlers.get(opp_id, {}).get('name') or (all_wrestlers.get(opp_id, {}).get('name') if all_wrestlers else None) or f'ID:{opp_id}'
                     w1_match_details = match_details.get(w1_opp_pair, [])
                     w2_match_details = match_details.get(w2_opp_pair, [])
                     
@@ -364,7 +378,8 @@ def build_common_opponent_relationships(
                     co_wins_2 += 1
                     
                     # Store details: get match info for both wrestlers vs opponent
-                    opp_name = wrestlers.get(opp_id, {}).get('name', f'ID:{opp_id}')
+                    # Try to get opponent name from weight class wrestlers, then global lookup, then fallback
+                    opp_name = wrestlers.get(opp_id, {}).get('name') or (all_wrestlers.get(opp_id, {}).get('name') if all_wrestlers else None) or f'ID:{opp_id}'
                     w1_match_details = match_details.get(w1_opp_pair, [])
                     w2_match_details = match_details.get(w2_opp_pair, [])
                     
@@ -423,7 +438,8 @@ def build_common_opponent_relationships(
 
 def build_relationships_for_weight_class(weight_class_data: Dict, season: Optional[int] = None,
                                         data_dir: str = "mt/rankings_data", league: str = 'ncaa',
-                                        state: str = None, gender: str = None) -> Dict:
+                                        state: str = None, gender: str = None,
+                                        all_wrestlers: Optional[Dict[str, Dict]] = None) -> Dict:
     """
     Build all relationships for a single weight class.
     
@@ -434,6 +450,8 @@ def build_relationships_for_weight_class(weight_class_data: Dict, season: Option
         league: League type (for loading manual matches)
         state: State code (for loading manual matches, HS only)
         gender: Gender (for loading manual matches, HS only)
+        all_wrestlers: Optional dictionary of all wrestlers across all weight classes
+                      (for common opponent name lookups)
         
     Returns:
         Dictionary with direct and common opponent relationships
@@ -449,10 +467,10 @@ def build_relationships_for_weight_class(weight_class_data: Dict, season: Option
     if manual_count > 0:
         print(f"    Direct relationships: {len(direct_rels)} (including {manual_count} manual override(s))")
     else:
-    print(f"    Direct relationships: {len(direct_rels)}")
+        print(f"    Direct relationships: {len(direct_rels)}")
     
     # Build common opponent relationships
-    common_opp_rels = build_common_opponent_relationships(direct_rels, matches, wrestlers)
+    common_opp_rels = build_common_opponent_relationships(direct_rels, matches, wrestlers, all_wrestlers=all_wrestlers)
     print(f"    Common opponent relationships: {len(common_opp_rels)}")
     
     return {
@@ -519,6 +537,14 @@ def build_all_relationships(season: int, data_dir: str = "mt/rankings_data", lea
     if not data_by_weight:
         raise ValueError(f"No data found for season {season} ({league_label})")
     
+    # Build global wrestler lookup from all weight classes for cross-weight-class common opponent name lookups
+    all_wrestlers_global = {}
+    for weight_class, weight_data in data_by_weight.items():
+        for wrestler_id, wrestler_info in weight_data.get('wrestlers', {}).items():
+            # Only add if not already present (first weight class wins)
+            if wrestler_id not in all_wrestlers_global:
+                all_wrestlers_global[wrestler_id] = wrestler_info
+    
     # Build relationships for each weight class
     relationships_by_weight = {}
     
@@ -530,7 +556,8 @@ def build_all_relationships(season: int, data_dir: str = "mt/rankings_data", lea
             data_dir=data_dir,
             league=league,
             state=state,
-            gender=gender
+            gender=gender,
+            all_wrestlers=all_wrestlers_global
         )
     
     return relationships_by_weight

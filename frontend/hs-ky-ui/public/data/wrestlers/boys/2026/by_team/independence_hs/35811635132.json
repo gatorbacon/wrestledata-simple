@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35521760132",
-      "opponent_rank": 74,
+      "opponent_rank": 78,
       "opponent_name": "Colton Hester",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35752489132",
-      "opponent_rank": 8,
+      "opponent_rank": 7,
       "opponent_name": "Carson Matney",
       "method": "Fall 0:00"
     }
@@ -47,33 +47,33 @@
   "match_list": [
     {
       "date": "2025-12-20",
-      "opponent_id": "35521760132",
-      "opponent_name": "Colton Hester",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": 127,
-      "opponent_weight": 126,
-      "opponent_rank": 74,
+      "opponent_id": "35752489132",
+      "opponent_name": "Carson Matney",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 120,
+      "opponent_rank": 7,
       "weight_class": "126",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Fallen Heroes"
     },
     {
-      "date": "2025-12-19",
-      "opponent_id": "35752489132",
-      "opponent_name": "Carson Matney",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": 1,
-      "opponent_weight": 120,
-      "opponent_rank": 8,
+      "date": "2025-12-20",
+      "opponent_id": "35521760132",
+      "opponent_name": "Colton Hester",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 126,
+      "opponent_weight": 126,
+      "opponent_rank": 78,
       "weight_class": "126",
-      "result": "L",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "FALLEN HEROS"
+      "event": "Fallen Heroes"
     }
   ]
 }

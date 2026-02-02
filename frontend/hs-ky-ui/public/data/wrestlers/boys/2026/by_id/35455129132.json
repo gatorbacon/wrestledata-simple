@@ -6,10 +6,10 @@
   "team_rank": 130,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 201,
+  "current_rank": 250,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,32 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35883189132",
+      "opponent_rank": 85,
+      "opponent_name": "kale keeton",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35883189132",
+      "opponent_name": "kale keeton",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 106,
+      "opponent_rank": 85,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    }
+  ]
 }

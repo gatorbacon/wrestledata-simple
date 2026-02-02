@@ -6,12 +6,12 @@
   "team_rank": 29,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 81,
+  "current_rank": 85,
   "record": {
-    "overall": "12-14",
-    "vs_ranked": "3-5",
+    "overall": "14-16",
+    "vs_ranked": "5-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-4"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,28 +20,28 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.333,
+    "pin_rate": 0.429,
+    "bonus_rate": 0.429,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 5,
     "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35611608132",
-      "opponent_rank": 86,
+      "opponent_rank": 91,
       "opponent_name": "Asa Greiwe",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "34992812132",
-      "opponent_rank": 27,
-      "opponent_name": "Jax Reynolds",
-      "method": "Fall 0:00"
+      "opponent_id": "35420709132",
+      "opponent_rank": 49,
+      "opponent_name": "Xzander Holt",
+      "method": "MD 14-5"
     }
   },
   "match_list": [
@@ -95,7 +95,7 @@
       "opponent_id": "34992812132",
       "opponent_name": "Jax Reynolds",
       "opponent_team": "Boyle County",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 1,
       "opponent_weight": 106,
       "opponent_rank": 27,
       "weight_class": "106",
@@ -107,10 +107,25 @@
     },
     {
       "date": "2026-01-10",
+      "opponent_id": "35420709132",
+      "opponent_name": "Xzander Holt",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 140,
+      "opponent_weight": 106,
+      "opponent_rank": 49,
+      "weight_class": "106",
+      "result": "L",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "vs. Whitley County"
+    },
+    {
+      "date": "2026-01-10",
       "opponent_id": "OUTSTATE_3884a8e8baf5",
       "opponent_name": "Unknown",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 121,
+      "opponent_team_rank": 120,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "106",
@@ -140,7 +155,7 @@
       "opponent_id": "OUTSTATE_da57d6ecb7ed",
       "opponent_name": "Unknown",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 68,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "106",
@@ -196,19 +211,79 @@
       "event": "vs. Wilson Central High School"
     },
     {
+      "date": "2026-01-03",
+      "opponent_id": "35131831132",
+      "opponent_name": "Hayden Tompkins",
+      "opponent_team": "Watertown High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Watertown High School"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35348669132",
+      "opponent_name": "Germain Velasquez",
+      "opponent_team": "Seymour High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Seymour High School"
+    },
+    {
       "date": "2025-12-27",
       "opponent_id": "34995980132",
       "opponent_name": "Keira Good",
       "opponent_team": "Bell County",
       "opponent_team_rank": 58,
       "opponent_weight": 106,
-      "opponent_rank": 112,
+      "opponent_rank": 120,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Wayne County"
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35455129132",
+      "opponent_name": "Heavenleigh Bonds",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 130,
+      "opponent_weight": 106,
+      "opponent_rank": 250,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35658472132",
+      "opponent_name": "Ben Lingar",
+      "opponent_team": "Pineville",
+      "opponent_team_rank": 117,
+      "opponent_weight": 106,
+      "opponent_rank": 154,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Pineville"
     },
     {
       "date": "2025-12-27",
@@ -230,9 +305,9 @@
       "opponent_id": "35611608132",
       "opponent_name": "Asa Greiwe",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 68,
       "opponent_weight": 106,
-      "opponent_rank": 86,
+      "opponent_rank": 91,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -260,9 +335,9 @@
       "opponent_id": "35129322132",
       "opponent_name": "Gabe Banks",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 115,
       "opponent_weight": 106,
-      "opponent_rank": 244,
+      "opponent_rank": 242,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -290,9 +365,9 @@
       "opponent_id": "34988697132",
       "opponent_name": "Malachi James",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 67,
       "opponent_weight": 106,
-      "opponent_rank": 20,
+      "opponent_rank": 19,
       "weight_class": "106",
       "result": "L",
       "method": "TF",
@@ -307,7 +382,7 @@
       "opponent_team": "Grant County",
       "opponent_team_rank": 84,
       "opponent_weight": 106,
-      "opponent_rank": 18,
+      "opponent_rank": 17,
       "weight_class": "106",
       "result": "L",
       "method": "MD",
@@ -419,21 +494,6 @@
       "score": "17-1",
       "duration": "1:19",
       "event": "vs. St. John Neumann"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35247370132",
-      "opponent_name": "Evan Martin",
-      "opponent_team": "Mason County",
-      "opponent_team_rank": 106,
-      "opponent_weight": 113,
-      "opponent_rank": 11,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:33",
-      "event": "vs. Wayne County"
     }
   ],
   "career": {
@@ -448,14 +508,14 @@
       "season": 2026,
       "grade": 7,
       "team": "Wayne County",
-      "record": "12-14",
+      "record": "14-16",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 12,
-    "losses": 14,
-    "win_pct": 0.462
+    "wins": 14,
+    "losses": 16,
+    "win_pct": 0.467
   }
 }

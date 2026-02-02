@@ -888,14 +888,14 @@ function renderStartersTable(starters, xtpData) {
     recordTd.className = "text-center";
     recordTd.textContent = `${record.wins}–${record.losses}`;
     row.appendChild(recordTd);
-    
+
     // Top 25 Wins
     const top25Td = document.createElement("td");
     top25Td.className = "num text-center";
     const top25Wins = countTop25Wins(profile);
     top25Td.textContent = top25Wins > 0 ? String(top25Wins) : "—";
     row.appendChild(top25Td);
-    
+
     // Bonus Rate: Display as percentage (e.g., 75.0%)
     const bonusTd = document.createElement("td");
     bonusTd.className = "num text-center";

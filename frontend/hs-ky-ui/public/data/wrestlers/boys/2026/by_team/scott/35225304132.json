@@ -3,13 +3,13 @@
   "name": "Maddox Krentz",
   "team": "Scott",
   "team_slug": "scott",
-  "team_rank": 126,
+  "team_rank": 125,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 126,
+  "current_rank": 99,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,27 +27,47 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35035542132",
+      "opponent_rank": 101,
+      "opponent_name": "Gary D `Trey Watkins III",
+      "method": "Dec 11-6"
+    },
     "worst_loss": {
       "opponent_id": "35488755132",
-      "opponent_rank": 96,
+      "opponent_rank": 98,
       "opponent_name": "Mark Schmitt",
       "method": "Fall 4:21"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-21",
+      "opponent_id": "35035542132",
+      "opponent_name": "Gary D `Trey Watkins III",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 60,
+      "opponent_weight": 175,
+      "opponent_rank": 101,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-6",
+      "duration": "7:00",
+      "event": "vs. Scott"
+    },
+    {
       "date": "2025-12-26",
       "opponent_id": "35488755132",
       "opponent_name": "Mark Schmitt",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 41,
       "opponent_weight": 175,
-      "opponent_rank": 96,
+      "opponent_rank": 98,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -69,14 +89,14 @@
       "season": 2026,
       "grade": 9,
       "team": "Scott",
-      "record": "0-1",
+      "record": "1-1",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
-    "win_pct": 0.0
+    "win_pct": 0.5
   }
 }

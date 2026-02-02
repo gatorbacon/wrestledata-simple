@@ -3,13 +3,13 @@
   "name": "Brantley Johnston",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 24,
-  "weight_class": 144,
+  "team_rank": 27,
+  "weight_class": 138,
   "year": 2026,
-  "current_rank": 229,
+  "current_rank": 150,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,47 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35597978132",
+      "opponent_rank": 101,
+      "opponent_name": "Kaiden Poltorak",
+      "method": "Fall 3:59"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "OUTSTATE_69449c2d5c73",
+      "opponent_name": "Silas Knapp",
+      "opponent_team": "Tell City",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "Steve Johnston Memorial Invitational"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35597978132",
+      "opponent_name": "Kaiden Poltorak",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": 132,
+      "opponent_weight": 138,
+      "opponent_rank": 101,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:59",
+      "event": "Steve Johnston Memorial Invitational"
+    }
+  ]
 }

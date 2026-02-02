@@ -143,7 +143,7 @@ def classify_best_win(matches: List[Dict], winner_id: str) -> str:
         if m.get("is_manual", False) or m.get("result") == "M":
             code = "M"
         else:
-        code = classify_result_type(m.get("result", ""))
+            code = classify_result_type(m.get("result", ""))
         
         rank = rank_order.get(code, rank_order["O"])
         if rank < best_rank:
@@ -829,15 +829,15 @@ def generate_html_matrix(
             padding: 2px 4px;
             border-radius: 3px;
         }}
-        /* Wrestlers who haven't wrestled in 30+ days (inactive) */
-        .inactive-row .wrestler-name {{
-            background-color: #ffb366;
-            padding: 2px 4px;
-            border-radius: 3px;
-        }}
         /* Wrestlers ranked outside their hard_min/hard_max range */
         .rank-out-of-band-row .wrestler-name {{
             background-color: #ffcccc;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }}
+        /* Wrestlers who haven't wrestled in 30+ days (inactive) - takes priority over rank-out-of-band */
+        .inactive-row .wrestler-name {{
+            background-color: #ffb366;
             padding: 2px 4px;
             border-radius: 3px;
         }}
