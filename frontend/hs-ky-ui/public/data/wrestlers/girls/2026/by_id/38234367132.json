@@ -3,13 +3,13 @@
   "name": "Desiray Fletcher",
   "team": "Martin County",
   "team_slug": "martin_county",
-  "team_rank": 45,
-  "weight_class": 107,
+  "team_rank": 46,
+  "weight_class": 100,
   "year": 2026,
-  "current_rank": 79,
+  "current_rank": 56,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,32 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35333392132",
+      "opponent_rank": 44,
+      "opponent_name": "Clara Griffin",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35333392132",
+      "opponent_name": "Clara Griffin",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 100,
+      "opponent_rank": 44,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lady Cardinal Showcase"
+    }
+  ]
 }

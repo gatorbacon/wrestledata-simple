@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -27,11 +27,16 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35017750132",
+      "opponent_rank": 65,
+      "opponent_name": "Jacob Hammonds",
+      "method": "Dec 8-2"
+    },
     "worst_loss": {
       "opponent_id": "35751941132",
       "opponent_rank": 35,
@@ -40,6 +45,36 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-31",
+      "opponent_id": "36019523132",
+      "opponent_name": "Hagen Samuel",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 40,
+      "opponent_weight": 190,
+      "opponent_rank": 24,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:44",
+      "event": "WSAZ Invitational"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35017750132",
+      "opponent_name": "Jacob Hammonds",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 40,
+      "opponent_weight": 190,
+      "opponent_rank": 65,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "WSAZ Invitational"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35751941132",

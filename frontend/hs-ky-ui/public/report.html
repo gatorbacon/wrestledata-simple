@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Report a Match or Ranking Question</title>
+  <title>Contact KentuckyMat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
@@ -13,7 +13,7 @@
   <script src="/header.js"></script>
   <div class="page-container">
     <header class="header">
-      <h1>Report a Match or Ranking Question</h1>
+      <h1>Contact KentuckyMat</h1>
     </header>
 
     <section class="section">
@@ -25,11 +25,11 @@
       </div>
 
       <p id="form-intro" style="margin-bottom: 2em; color: var(--text-secondary); line-height: 1.6;">
-        If a match result is missing from TrackWrestling, or if you have a question about a ranking, you can submit it here. Rankings are based only on recorded match data.
+        Use this form to report a missing match, ask about a ranking, or get in touch.
+        Rankings are based on recorded match data from TrackWrestling.
       </p>
 
       <form
-        id="report-form" 
         id="report-form"
         name="report-match-or-ranking" 
         method="POST" 
@@ -47,7 +47,7 @@
         <!-- Required Fields -->
         <div style="margin-bottom: 1.5em;">
           <label for="name" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
-            Your Name <span style="color: var(--text-secondary);">(required)</span>
+            Your Name (required)
           </label>
           <input 
             type="text" 
@@ -59,34 +59,54 @@
         </div>
 
         <div style="margin-bottom: 1.5em;">
+          <label for="reason" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
+            Reason for Contact (required)
+          </label>
+          <select 
+            id="reason" 
+            name="reason" 
+            required 
+            style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
+          >
+            <option value="">— Select —</option>
+            <option value="Missing match result">Missing match result</option>
+            <option value="Ranking clarification">Ranking clarification</option>
+            <option value="Data correction">Data correction</option>
+            <option value="General question">General question</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 1.5em;">
           <label for="wrestler-names" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
-            Wrestler Name(s) <span style="color: var(--text-secondary);">(required)</span>
+            Wrestler Name(s) (if applicable)
           </label>
           <input 
             type="text" 
             id="wrestler-names" 
             name="wrestler-names" 
-            required 
-            placeholder="e.g., John Smith or John Smith vs Jane Doe"
+            placeholder="e.g. John Smith or John Smith vs Jane Doe"
             style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
           />
         </div>
 
         <div style="margin-bottom: 1.5em;">
           <label for="schools" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
-            School(s) <span style="color: var(--text-secondary);">(required)</span>
+            School(s) (if applicable)
           </label>
           <input 
             type="text" 
             id="schools" 
             name="schools" 
-            required 
-            placeholder="Enter the school of the wrestler in question"
+            placeholder="e.g. Ballard, Union County"
             style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
           />
         </div>
 
-        <!-- Optional Fields -->
+        <!-- Match Details (only if reporting a match) -->
+        <p style="margin: 1.5em 0 0.75em; font-size: 0.9375rem; font-weight: 600; color: var(--text-secondary);">
+          Match Details (only if reporting a match)
+        </p>
         <div style="margin-bottom: 1.5em;">
           <label for="match-date" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
             Match Date <span style="color: var(--text-secondary); font-weight: normal;">(optional)</span>
@@ -127,26 +147,26 @@
 
         <div style="margin-bottom: 1.5em;">
           <label for="message" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
-            Message / Explanation <span style="color: var(--text-secondary); font-weight: normal;">(optional)</span>
+            Message / Explanation (optional)
           </label>
           <textarea 
             id="message" 
             name="message" 
             rows="5" 
-            placeholder="Provide any additional details about the missing match or ranking question..."
+            placeholder="Provide any additional details or context..."
             style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main); font-family: inherit; resize: vertical;"
           ></textarea>
         </div>
 
         <div style="margin-bottom: 1.5em;">
           <label for="email" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
-            Your Email <span style="color: var(--text-secondary); font-weight: normal;">(optional, for follow-up)</span>
+            Your Email (optional, for follow-up)
           </label>
           <input 
             type="email" 
             id="email" 
             name="email" 
-            placeholder="your.email@example.com"
+            placeholder="you@email.com"
             style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
           />
         </div>

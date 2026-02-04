@@ -6,12 +6,12 @@
   "team_rank": 11,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 132,
+  "current_rank": 133,
   "record": {
-    "overall": "3-5",
-    "vs_ranked": "2-5",
-    "vs_top10": "0-2",
-    "vs_top25": "0-2"
+    "overall": "3-7",
+    "vs_ranked": "2-6",
+    "vs_top10": "0-3",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,31 +28,61 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "36019453132",
-      "opponent_rank": 151,
+      "opponent_rank": 150,
       "opponent_name": "Aiden Friley",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35910810132",
-      "opponent_rank": 153,
+      "opponent_rank": 152,
       "opponent_name": "Gavin Skaggs",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-01-23",
+      "opponent_id": "35752327132",
+      "opponent_name": "Dalton Matney",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 165,
+      "opponent_rank": 3,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Johnson Central"
+    },
+    {
+      "date": "2026-01-23",
+      "opponent_id": "35431319132",
+      "opponent_name": "Deegan Tavernier",
+      "opponent_team": "Union",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union"
+    },
+    {
       "date": "2026-01-22",
       "opponent_id": "36019453132",
       "opponent_name": "Aiden Friley",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 40,
       "opponent_weight": 165,
-      "opponent_rank": 151,
+      "opponent_rank": 150,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -67,7 +97,7 @@
       "opponent_team": "Russell",
       "opponent_team_rank": 122,
       "opponent_weight": 165,
-      "opponent_rank": 153,
+      "opponent_rank": 152,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -113,7 +143,7 @@
       "opponent_team": "Floyd Central",
       "opponent_team_rank": 78,
       "opponent_weight": 165,
-      "opponent_rank": 117,
+      "opponent_rank": 118,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -145,7 +175,7 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": 137,
       "opponent_weight": 165,
-      "opponent_rank": 68,
+      "opponent_rank": 70,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -161,7 +191,7 @@
       "opponent_team": "Russell",
       "opponent_team_rank": 122,
       "opponent_weight": 165,
-      "opponent_rank": 291,
+      "opponent_rank": 286,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -183,14 +213,14 @@
       "season": 2026,
       "grade": 9,
       "team": "Boyd County",
-      "record": "3-5",
+      "record": "3-7",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 3,
-    "losses": 5,
-    "win_pct": 0.375
+    "losses": 7,
+    "win_pct": 0.3
   }
 }

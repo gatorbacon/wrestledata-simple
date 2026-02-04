@@ -21,18 +21,18 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-02T01:27:36.230803Z",
+  "generated_at_utc": "2026-02-04T01:42:20.352585Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "34993529132",
       "name": "Ryan Lumpkins",
-      "current_rank": 31,
+      "current_rank": 30,
       "grade": 8,
-      "xtp": 1.4,
+      "xtp": 1.39,
       "xtp_p": 0.18,
       "xtp_a": 0.49,
-      "xtp_b": 0.73,
+      "xtp_b": 0.72,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -51,7 +51,7 @@
       "weight": 120,
       "wrestler_id": "34993520132",
       "name": "Jacob Abadi",
-      "current_rank": 43,
+      "current_rank": 40,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -64,12 +64,12 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 7
+        "losses": 6
       },
-      "wins": 11,
+      "wins": 12,
       "losses": 16,
       "top25_wins": 0,
-      "bonus_rate": 0.818
+      "bonus_rate": 0.75
     },
     "126": {
       "weight": 126,
@@ -125,78 +125,30 @@
       "name": "AJ Falk",
       "current_rank": 16,
       "grade": 11,
-      "xtp": 3.84,
+      "xtp": 3.39,
       "xtp_p": 0.7,
       "xtp_a": 1.18,
-      "xtp_b": 1.96,
+      "xtp_b": 1.51,
       "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
         "losses": 3
       },
       "top33_record": {
-        "wins": 5,
+        "wins": 6,
         "losses": 6
       },
-      "wins": 30,
+      "wins": 32,
       "losses": 9,
-      "top25_wins": 2,
-      "bonus_rate": 0.833
+      "top25_wins": 3,
+      "bonus_rate": 0.781
     },
     "144": {
       "weight": 144,
       "wrestler_id": "34993522132",
       "name": "Brayden Tugers",
-      "current_rank": 28,
+      "current_rank": 35,
       "grade": 11,
-      "xtp": 1.25,
-      "xtp_p": 0.18,
-      "xtp_a": 0.49,
-      "xtp_b": 0.58,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 2
-      },
-      "top33_record": {
-        "wins": 2,
-        "losses": 5
-      },
-      "wins": 33,
-      "losses": 18,
-      "top25_wins": 1,
-      "bonus_rate": 0.848
-    },
-    "150": {
-      "weight": 150,
-      "wrestler_id": "34993516132",
-      "name": "Juan Ramirez",
-      "current_rank": 14,
-      "grade": 12,
-      "xtp": 5.17,
-      "xtp_p": 0.93,
-      "xtp_a": 1.27,
-      "xtp_b": 2.97,
-      "xtp_simple": 2.5,
-      "top10_record": {
-        "wins": 0,
-        "losses": 2
-      },
-      "top33_record": {
-        "wins": 5,
-        "losses": 4
-      },
-      "wins": 27,
-      "losses": 6,
-      "top25_wins": 4,
-      "bonus_rate": 0.926
-    },
-    "157": {
-      "weight": 157,
-      "wrestler_id": "34993526132",
-      "name": "Tabin Prine",
-      "current_rank": 51,
-      "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -204,22 +156,70 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 5
+      },
+      "wins": 34,
+      "losses": 18,
+      "top25_wins": 1,
+      "bonus_rate": 0.824
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "34993516132",
+      "name": "Juan Ramirez",
+      "current_rank": 14,
+      "grade": 12,
+      "xtp": 5.13,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 2.93,
+      "xtp_simple": 2.5,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 6,
+        "losses": 4
+      },
+      "wins": 29,
+      "losses": 6,
+      "top25_wins": 4,
+      "bonus_rate": 0.931
+    },
+    "157": {
+      "weight": 157,
+      "wrestler_id": "34993507132",
+      "name": "CALEB GAGEL",
+      "current_rank": 50,
+      "grade": 12,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 6
+        "losses": 4
       },
-      "wins": 15,
-      "losses": 15,
+      "wins": 17,
+      "losses": 14,
       "top25_wins": 0,
-      "bonus_rate": 0.667
+      "bonus_rate": 0.941
     },
     "165": {
       "weight": 165,
       "wrestler_id": "34993524132",
       "name": "Belencio Camarena",
-      "current_rank": 66,
+      "current_rank": 69,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -235,7 +235,7 @@
         "losses": 5
       },
       "wins": 21,
-      "losses": 16,
+      "losses": 17,
       "top25_wins": 0,
       "bonus_rate": 0.81
     },
@@ -243,7 +243,7 @@
       "weight": 190,
       "wrestler_id": "35190746132",
       "name": "Isaac Johnson",
-      "current_rank": 192,
+      "current_rank": 191,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -267,7 +267,7 @@
       "weight": 215,
       "wrestler_id": "34993532132",
       "name": "Timothy Combs",
-      "current_rank": 43,
+      "current_rank": 42,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -282,10 +282,10 @@
         "wins": 0,
         "losses": 1
       },
-      "wins": 3,
+      "wins": 4,
       "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.75
     },
     "285": {
       "weight": 285,
@@ -306,10 +306,10 @@
         "wins": 0,
         "losses": 5
       },
-      "wins": 6,
+      "wins": 8,
       "losses": 10,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.875
     }
   },
   "remaining": [
@@ -348,20 +348,20 @@
       "wrestler_id": "35521760132",
       "name": "Colton Hester",
       "grade": 9,
-      "wins": 12,
+      "wins": 13,
       "losses": 12,
       "top25_wins": 0,
-      "bonus_rate": 0.75
+      "bonus_rate": 0.692
     },
     {
       "weight": 126,
       "wrestler_id": "34993508132",
       "name": "Logan Rowe",
       "grade": 12,
-      "wins": 17,
+      "wins": 19,
       "losses": 10,
       "top25_wins": 0,
-      "bonus_rate": 0.882
+      "bonus_rate": 0.895
     },
     {
       "weight": 138,
@@ -415,16 +415,6 @@
     },
     {
       "weight": 157,
-      "wrestler_id": "34993507132",
-      "name": "CALEB GAGEL",
-      "grade": 12,
-      "wins": 16,
-      "losses": 13,
-      "top25_wins": 0,
-      "bonus_rate": 1.0
-    },
-    {
-      "weight": 157,
       "wrestler_id": "35190745132",
       "name": "Mayson Colyer",
       "grade": null,
@@ -432,6 +422,16 @@
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
+    },
+    {
+      "weight": 157,
+      "wrestler_id": "34993526132",
+      "name": "Tabin Prine",
+      "grade": 10,
+      "wins": 16,
+      "losses": 15,
+      "top25_wins": 0,
+      "bonus_rate": 0.625
     },
     {
       "weight": 190,
@@ -496,30 +496,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 160,
-      "losses": 104
+      "wins": 185,
+      "losses": 120
     },
     "top33": {
-      "wins": 12,
-      "losses": 51
+      "wins": 13,
+      "losses": 48
     },
     "top10": {
       "wins": 0,
-      "losses": 17
+      "losses": 15
     },
     "bonus_rate": {
-      "value": 0.856,
-      "rank": 16,
+      "value": 0.703,
+      "rank": 12,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.7,
-      "rank": 20,
+      "value": 0.568,
+      "rank": 21,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.119,
-      "rank": 23,
+      "value": 0.097,
+      "rank": 21,
       "rank_scope": "league"
     }
   }

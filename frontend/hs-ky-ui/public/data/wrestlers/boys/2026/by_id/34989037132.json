@@ -6,12 +6,12 @@
   "team_rank": 27,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 7,
+  "current_rank": 16,
   "record": {
-    "overall": "72-9",
-    "vs_ranked": "8-4",
-    "vs_top10": "0-4",
-    "vs_top25": "4-4"
+    "overall": "40-5",
+    "vs_ranked": "4-2",
+    "vs_top10": "0-2",
+    "vs_top25": "2-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,17 +20,17 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.361,
-    "bonus_rate": 0.778,
-    "majors": 6,
-    "techs": 24,
-    "pins": 26
+    "pin_rate": 0.4,
+    "bonus_rate": 0.775,
+    "majors": 3,
+    "techs": 12,
+    "pins": 16
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
-    "ranked_losses": 4,
+    "ranked_wins": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 4,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "34989007132",
       "opponent_rank": 25,
@@ -46,13 +46,88 @@
   },
   "match_list": [
     {
+      "date": "2026-01-31",
+      "opponent_id": "35383014132",
+      "opponent_name": "ISAAC ROEWE",
+      "opponent_team": "Lindbergh",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:24",
+      "event": "Kyle Thrasher Tournament 2026"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35333153132",
+      "opponent_name": "Tommy Wolfgeher",
+      "opponent_team": "Park Hill South",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:58",
+      "event": "Kyle Thrasher Tournament 2026"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35415135132",
+      "opponent_name": "Colin Weiss",
+      "opponent_team": "Ft. Zumwalt South",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "Kyle Thrasher Tournament 2026"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35090717132",
+      "opponent_name": "Miller Sipes",
+      "opponent_team": "Staley",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "21-12",
+      "duration": "7:00",
+      "event": "Kyle Thrasher Tournament 2026"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35450870132",
+      "opponent_name": "Austin Stevick",
+      "opponent_team": "St. Michael the Archangel",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:54",
+      "event": "Kyle Thrasher Tournament 2026"
+    },
+    {
       "date": "2026-01-17",
       "opponent_id": "34988682132",
       "opponent_name": "CJ Thacker",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 42,
       "opponent_weight": 150,
-      "opponent_rank": 158,
+      "opponent_rank": 151,
       "weight_class": "150",
       "result": "W",
       "method": "TF",
@@ -65,7 +140,7 @@
       "opponent_id": "34989007132",
       "opponent_name": "Kaden Coy",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 51,
       "opponent_weight": 150,
       "opponent_rank": 25,
       "weight_class": "150",
@@ -230,7 +305,7 @@
       "opponent_id": "34989007132",
       "opponent_name": "Kaden Coy",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 51,
       "opponent_weight": 150,
       "opponent_rank": 25,
       "weight_class": "150",
@@ -676,7 +751,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Paducah Tilghman",
-      "record": "36-3",
+      "record": "40-5",
       "regional_place": null,
       "state_place": null
     },
@@ -706,8 +781,8 @@
     }
   ],
   "career_record": {
-    "wins": 89,
-    "losses": 37,
-    "win_pct": 0.706
+    "wins": 93,
+    "losses": 39,
+    "win_pct": 0.705
   }
 }

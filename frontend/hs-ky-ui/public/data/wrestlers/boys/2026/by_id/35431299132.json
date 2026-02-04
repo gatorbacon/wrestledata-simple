@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -20,18 +20,23 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "36061560132",
+      "opponent_rank": 109,
+      "opponent_name": "Gavin McCalvin",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "35752489132",
       "opponent_rank": 7,
@@ -40,6 +45,21 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-23",
+      "opponent_id": "36061560132",
+      "opponent_name": "Gavin McCalvin",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 11,
+      "opponent_weight": 120,
+      "opponent_rank": 109,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "35752489132",

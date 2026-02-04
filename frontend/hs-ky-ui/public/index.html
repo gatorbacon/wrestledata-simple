@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Kentucky Wrestling — Rankings & Dual Predictions</title>
+  <title>KentuckyMat — Kentucky high school wrestling rankings & data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
@@ -12,63 +12,41 @@
 
 <body>
   <script src="/header.js"></script>
-  
-  <div class="page-container">
-    <!-- Masthead -->
-    <header class="masthead">
-      <h1 class="masthead-title">Kentucky Wrestling</h1>
-      <p class="masthead-tagline">Rankings · Dual Predictions · Data</p>
-      <span class="masthead-season">Season 2026</span>
+
+  <div class="page-container homepage">
+    <!-- 1. Header / Hero -->
+    <header class="home-hero">
+      <h1 class="home-hero-title">KentuckyMat</h1>
+      <p class="home-hero-subtitle">Kentucky high school wrestling rankings & data</p>
     </header>
 
-    <!-- This Week Strip (optional subtle navigation) -->
-    <div class="this-week-strip">
-      <span class="this-week-label">This Week:</span>
-      <a href="/rankings.html?gender=boys" class="this-week-link">Updated Rankings</a>
-      <span class="this-week-sep">·</span>
-      <a href="/dual_predictor.html?gender=boys" class="this-week-link">New Dual Predictions</a>
-      <span class="this-week-sep">·</span>
-      <a href="/leaderboards/xtp/teams.html?gender=boys" class="this-week-link">Team Projections</a>
-      </div>
+    <!-- 2. Primary CTA -->
+    <section class="home-primary-cta">
+      <a href="/rankings.html?gender=boys" class="home-btn home-btn-primary">Boys Rankings</a>
+      <a href="/rankings.html?gender=girls" class="home-btn home-btn-primary">Girls Rankings</a>
+    </section>
 
-    <!-- Boys Section -->
-    <section class="gender-section">
-      <h2 class="gender-section-header">Boys — Season 2026</h2>
-      <div class="gender-section-cards">
-        <a href="/rankings.html?gender=boys" class="content-card">
-          <h3 class="content-card-title">Individual Rankings</h3>
-          <p class="content-card-desc">Traditional weight class rankings</p>
-        </a>
-        <a href="/leaderboards/xtp/teams.html?gender=boys" class="content-card">
-          <h3 class="content-card-title">Team Tournament</h3>
-          <p class="content-card-desc">Projected state tournament results</p>
-        </a>
-        <a href="/leaderboards/dual_rankings.html?gender=boys" class="content-card">
-          <h3 class="content-card-title">Dual Team Rankings</h3>
-          <p class="content-card-desc">Theoretical dual meet standings</p>
-        </a>
+    <!-- 3. Secondary Rankings -->
+    <section class="home-secondary">
+      <h2 class="home-section-title">Secondary Rankings</h2>
+      <div class="home-secondary-links">
+        <a href="/leaderboards/xtp/teams.html?gender=boys">Boys Team Tournament Rankings</a>
+        <a href="/leaderboards/dual_rankings.html?gender=boys">Boys Dual Team Rankings</a>
+        <a href="/leaderboards/xtp/teams.html?gender=girls">Girls Team Tournament Rankings</a>
+        <a href="/leaderboards/dual_rankings.html?gender=girls">Girls Dual Team Rankings</a>
       </div>
     </section>
 
-    <!-- Girls Section -->
-    <section class="gender-section">
-      <h2 class="gender-section-header">Girls — Season 2026</h2>
-      <div class="gender-section-cards">
-        <a href="/rankings.html?gender=girls" class="content-card">
-          <h3 class="content-card-title">Individual Rankings</h3>
-          <p class="content-card-desc">Traditional weight class rankings</p>
-        </a>
-        <a href="/leaderboards/xtp/teams.html?gender=girls" class="content-card">
-          <h3 class="content-card-title">Team Tournament</h3>
-          <p class="content-card-desc">Projected state tournament results</p>
-        </a>
-        <a href="/leaderboards/dual_rankings.html?gender=girls" class="content-card">
-          <h3 class="content-card-title">Dual Team Rankings</h3>
-          <p class="content-card-desc">Theoretical dual meet standings</p>
-        </a>
+    <!-- 4. Explore More -->
+    <section class="home-explore">
+      <h2 class="home-section-title">Explore More</h2>
+      <div class="home-explore-links">
+        <a href="/leaderboards.html">Stat Leaders</a>
+        <a href="/dual_predictor.html">Dual Predictor</a>
       </div>
     </section>
   </div>
+
   <script src="/footer.js"></script>
 </body>
 </html>

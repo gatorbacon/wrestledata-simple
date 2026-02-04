@@ -4,14 +4,14 @@
   "team": "Caldwell County",
   "team_slug": "caldwell_county",
   "team_rank": 9,
-  "weight_class": 132,
+  "weight_class": 126,
   "year": 2026,
-  "current_rank": 86,
+  "current_rank": 24,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "4-0",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,19 +20,85 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.75,
+    "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 0
+    "techs": 1,
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35635763132",
+      "opponent_rank": 25,
+      "opponent_name": "Laney Lancette",
+      "method": "Fall 2:20"
+    },
     "worst_loss": null
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35563153132",
+      "opponent_name": "Brooklyn Barrett",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 126,
+      "opponent_rank": 68,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "4:00",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35424936132",
+      "opponent_name": "Niang Nuam",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 67,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:27",
+      "event": "vs. Greenwood"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35635763132",
+      "opponent_name": "Laney Lancette",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 25,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:20",
+      "event": "vs. South Warren"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35635838132",
+      "opponent_name": "Isabelle Johnson",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 59,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:24",
+      "event": "vs. South Warren"
+    }
+  ]
 }

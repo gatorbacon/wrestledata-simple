@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-02T01:27:35.449919Z",
+  "generated_at_utc": "2026-02-04T01:42:19.800646Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -29,17 +29,17 @@
       "name": "Logan Plummer",
       "current_rank": 18,
       "grade": 12,
-      "xtp": 3.13,
+      "xtp": 2.97,
       "xtp_p": 0.46,
       "xtp_a": 1.0,
-      "xtp_b": 1.67,
+      "xtp_b": 1.51,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 1
       },
       "top33_record": {
-        "wins": 2,
+        "wins": 3,
         "losses": 4
       },
       "wins": 16,
@@ -88,7 +88,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 6
+        "losses": 4
       },
       "wins": 12,
       "losses": 17,
@@ -121,9 +121,33 @@
     },
     "138": {
       "weight": 138,
+      "wrestler_id": "35237548132",
+      "name": "Maddie Massengill",
+      "current_rank": 123,
+      "grade": 10,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "wins": 3,
+      "losses": 16,
+      "top25_wins": 0,
+      "bonus_rate": 0.333
+    },
+    "144": {
+      "weight": 144,
       "wrestler_id": "36088051132",
       "name": "Camden Graichen",
-      "current_rank": 123,
+      "current_rank": 255,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -138,21 +162,21 @@
         "wins": 0,
         "losses": 0
       },
-      "wins": 5,
-      "losses": 16,
+      "wins": 6,
+      "losses": 18,
       "top25_wins": 0,
-      "bonus_rate": 0.8
+      "bonus_rate": 0.833
     },
     "150": {
       "weight": 150,
       "wrestler_id": "35237535132",
       "name": "Miles Smith",
-      "current_rank": 17,
+      "current_rank": 18,
       "grade": 12,
-      "xtp": 3.68,
-      "xtp_p": 0.41,
-      "xtp_a": 1.02,
-      "xtp_b": 2.25,
+      "xtp": 3.6,
+      "xtp_p": 0.46,
+      "xtp_a": 1.0,
+      "xtp_b": 2.14,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 2,
@@ -171,7 +195,7 @@
       "weight": 165,
       "wrestler_id": "36087958132",
       "name": "James Carter",
-      "current_rank": 191,
+      "current_rank": 188,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -219,7 +243,7 @@
       "weight": 190,
       "wrestler_id": "35427238132",
       "name": "Conner Johnson",
-      "current_rank": 210,
+      "current_rank": 209,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -243,7 +267,7 @@
       "weight": 215,
       "wrestler_id": "35427181132",
       "name": "Ahntonio Rivera",
-      "current_rank": 255,
+      "current_rank": 250,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -267,7 +291,7 @@
       "weight": 285,
       "wrestler_id": "35427014132",
       "name": "Sebastian Hesselbach",
-      "current_rank": 215,
+      "current_rank": 213,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -289,16 +313,6 @@
     }
   },
   "remaining": [
-    {
-      "weight": 138,
-      "wrestler_id": "35237548132",
-      "name": "Maddie Massengill",
-      "grade": 10,
-      "wins": 3,
-      "losses": 16,
-      "top25_wins": 0,
-      "bonus_rate": 0.333
-    },
     {
       "weight": 150,
       "wrestler_id": "35723448132",
@@ -342,30 +356,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 77,
-      "losses": 45
+      "wins": 93,
+      "losses": 60
     },
     "top33": {
-      "wins": 10,
+      "wins": 11,
       "losses": 16
     },
     "top10": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "bonus_rate": {
-      "value": 0.714,
-      "rank": 76,
+      "value": 0.591,
+      "rank": 64,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.519,
-      "rank": 123,
+      "value": 0.43,
+      "rank": 113,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.182,
-      "rank": 6,
+      "value": 0.151,
+      "rank": 5,
       "rank_scope": "league"
     }
   }

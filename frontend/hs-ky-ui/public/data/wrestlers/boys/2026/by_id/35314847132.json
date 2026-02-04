@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,18 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34989034132",
-      "opponent_rank": 276,
+      "opponent_rank": 274,
       "opponent_name": "Aiden Hilton",
       "method": "Fall 2:30"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "36434624132",
+      "opponent_rank": 31,
+      "opponent_name": "Elias McPike",
+      "method": "Fall 1:44"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-31",
+      "opponent_id": "36434624132",
+      "opponent_name": "Elias McPike",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 285,
+      "opponent_rank": 31,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:44",
+      "event": "Kyle Thrasher Tournament 2026"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "34989034132",
@@ -47,7 +67,7 @@
       "opponent_team": "Paducah Tilghman",
       "opponent_team_rank": 27,
       "opponent_weight": 285,
-      "opponent_rank": 276,
+      "opponent_rank": 274,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",

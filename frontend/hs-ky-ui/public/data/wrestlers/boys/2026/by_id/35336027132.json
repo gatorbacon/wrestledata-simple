@@ -3,15 +3,15 @@
   "name": "Taner Woodman",
   "team": "Ashland Blazer",
   "team_slug": "ashland_blazer",
-  "team_rank": 39,
+  "team_rank": 40,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 18,
+  "current_rank": 16,
   "record": {
-    "overall": "24-8",
-    "vs_ranked": "7-5",
+    "overall": "26-9",
+    "vs_ranked": "7-4",
     "vs_top10": "0-2",
-    "vs_top25": "0-5"
+    "vs_top25": "1-4"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,22 +20,22 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
-    "bonus_rate": 0.833,
+    "pin_rate": 0.808,
+    "bonus_rate": 0.808,
     "majors": 0,
     "techs": 0,
-    "pins": 20
+    "pins": 21
   },
   "opponent_breakdown": {
     "ranked_wins": 7,
-    "ranked_losses": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "34995976132",
-      "opponent_rank": 31,
-      "opponent_name": "Hunter Goodin",
-      "method": "Fall 1:25"
+      "opponent_id": "35519922132",
+      "opponent_rank": 22,
+      "opponent_name": "Payton Conner",
+      "method": "Dec 5-1"
     },
     "worst_loss": {
       "opponent_id": "35732594132",
@@ -45,6 +45,81 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35945542132",
+      "opponent_name": "Ethan Morrison",
+      "opponent_team": "Williamstown",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:58",
+      "event": "WSAZ Invitational"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35514998132",
+      "opponent_name": "Jason Walker",
+      "opponent_team": "University",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "MD",
+      "score": "16-3",
+      "duration": "7:00",
+      "event": "WSAZ Invitational"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35175093132",
+      "opponent_name": "Kellen Hartman",
+      "opponent_team": "Hurricane Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:48",
+      "event": "WSAZ Invitational"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35519922132",
+      "opponent_name": "Payton Conner",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 109,
+      "opponent_weight": 150,
+      "opponent_rank": 22,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "WSAZ Invitational"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35679402132",
+      "opponent_name": "Braydan Leffingwell",
+      "opponent_team": "Cabell Midland",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "WSAZ Invitational"
+    },
     {
       "date": "2026-01-22",
       "opponent_id": "36011895132",
@@ -82,7 +157,7 @@
       "opponent_team": "Greenup County",
       "opponent_team_rank": 86,
       "opponent_weight": 150,
-      "opponent_rank": 126,
+      "opponent_rank": 128,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -97,7 +172,7 @@
       "opponent_team": "Letcher County Central",
       "opponent_team_rank": 100,
       "opponent_weight": 144,
-      "opponent_rank": 74,
+      "opponent_rank": 78,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -110,9 +185,9 @@
       "opponent_id": "36019454132",
       "opponent_name": "Clarence McDade",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 40,
       "opponent_weight": 150,
-      "opponent_rank": 57,
+      "opponent_rank": 59,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -152,21 +227,6 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:53",
-      "event": "vs. Shady Spring"
-    },
-    {
-      "date": "2026-01-03",
       "opponent_id": "OUTSTATE_e36826816b96",
       "opponent_name": "Unknown",
       "opponent_team": "Shady Spring",
@@ -178,6 +238,21 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
+      "event": "vs. Shady Spring"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:53",
       "event": "vs. Shady Spring"
     },
     {
@@ -392,6 +467,21 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35103664132",
+      "opponent_name": "Patrick Oliver",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 126,
+      "opponent_weight": 150,
+      "opponent_rank": 90,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Ashland Invitational Tournament"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35850447132",
       "opponent_name": "Chase Gillum",
       "opponent_team": "Boyd County",
@@ -403,21 +493,6 @@
       "method": "MD",
       "score": "18-6",
       "duration": "7:00",
-      "event": "Ashland Invitational Tournament"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35103664132",
-      "opponent_name": "Patrick Oliver",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": 126,
-      "opponent_weight": 150,
-      "opponent_rank": 88,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:30",
       "event": "Ashland Invitational Tournament"
     },
     {
@@ -485,7 +560,7 @@
       "opponent_id": "34995976132",
       "opponent_name": "Hunter Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 59,
       "opponent_weight": 150,
       "opponent_rank": 31,
       "weight_class": "150",
@@ -509,7 +584,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Ashland Blazer",
-      "record": "23-7",
+      "record": "26-9",
       "regional_place": null,
       "state_place": null
     },
@@ -523,8 +598,8 @@
     }
   ],
   "career_record": {
-    "wins": 68,
-    "losses": 16,
-    "win_pct": 0.81
+    "wins": 71,
+    "losses": 18,
+    "win_pct": 0.798
   }
 }

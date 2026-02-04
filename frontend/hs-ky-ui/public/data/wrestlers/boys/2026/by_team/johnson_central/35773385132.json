@@ -6,12 +6,12 @@
   "team_rank": 2,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 30,
+  "current_rank": 10,
   "record": {
-    "overall": "28-19",
-    "vs_ranked": "4-4",
-    "vs_top10": "0-2",
-    "vs_top25": "0-4"
+    "overall": "19-10",
+    "vs_ranked": "4-2",
+    "vs_top10": "0-1",
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,22 +20,22 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.679,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.611,
+    "bonus_rate": 0.667,
     "majors": 1,
     "techs": 0,
-    "pins": 19
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35247372132",
-      "opponent_rank": 30,
-      "opponent_name": "Adam Miller",
-      "method": "Fall 0:43"
+      "opponent_id": "35850448132",
+      "opponent_rank": 13,
+      "opponent_name": "Zander Nottingham",
+      "method": "Dec 19-14"
     },
     "worst_loss": {
       "opponent_id": "35144509132",
@@ -46,19 +46,19 @@
   },
   "match_list": [
     {
-      "date": "2026-01-17",
-      "opponent_id": "OUTSTATE_5f12fe12414a",
-      "opponent_name": "Unknown",
-      "opponent_team": "Union",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
+      "date": "2026-01-23",
+      "opponent_id": "35850448132",
+      "opponent_name": "Zander Nottingham",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 11,
+      "opponent_weight": 126,
+      "opponent_rank": 13,
       "weight_class": "126",
       "result": "W",
-      "method": "FF",
-      "score": null,
+      "method": "DEC",
+      "score": "19-14",
       "duration": "7:00",
-      "event": "vs. Union"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2026-01-17",
@@ -74,6 +74,21 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. John S. Battle"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "OUTSTATE_5f12fe12414a",
+      "opponent_name": "Unknown",
+      "opponent_team": "Union",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Union"
     },
     {
       "date": "2026-01-17",
@@ -260,9 +275,9 @@
       "opponent_id": "35513068132",
       "opponent_name": "Braxton Jarrell",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 58,
       "opponent_weight": 126,
-      "opponent_rank": 122,
+      "opponent_rank": 124,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -290,7 +305,7 @@
       "opponent_id": "35144509132",
       "opponent_name": "Noah Foley",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 48,
       "opponent_weight": 132,
       "opponent_rank": 21,
       "weight_class": "132",
@@ -337,7 +352,7 @@
       "opponent_team": "Oldham County",
       "opponent_team_rank": 112,
       "opponent_weight": 126,
-      "opponent_rank": 102,
+      "opponent_rank": 103,
       "weight_class": "132",
       "result": "W",
       "method": "MD",
@@ -464,7 +479,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Johnson Central",
-      "record": "18-10",
+      "record": "19-10",
       "regional_place": null,
       "state_place": null
     },
@@ -478,8 +493,8 @@
     }
   ],
   "career_record": {
-    "wins": 41,
+    "wins": 42,
     "losses": 27,
-    "win_pct": 0.603
+    "win_pct": 0.609
   }
 }

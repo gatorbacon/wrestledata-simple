@@ -21,25 +21,25 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-02T01:27:35.678268Z",
+  "generated_at_utc": "2026-02-04T01:42:19.963106Z",
   "starters": {
     "126": {
       "weight": 126,
       "wrestler_id": "35219295132",
       "name": "Deontae Graves",
-      "current_rank": 44,
+      "current_rank": 28,
       "grade": 11,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
+      "xtp": 1.85,
+      "xtp_p": 0.22,
+      "xtp_a": 0.59,
+      "xtp_b": 1.04,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
       },
       "top33_record": {
-        "wins": 1,
+        "wins": 2,
         "losses": 2
       },
       "wins": 36,
@@ -49,33 +49,9 @@
     },
     "132": {
       "weight": 132,
-      "wrestler_id": "35219515132",
-      "name": "Elyja Lackey",
-      "current_rank": 95,
-      "grade": 11,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 3
-      },
-      "wins": 14,
-      "losses": 15,
-      "top25_wins": 0,
-      "bonus_rate": 0.714
-    },
-    "138": {
-      "weight": 138,
       "wrestler_id": "35219551132",
       "name": "Xavier Stewart",
-      "current_rank": 77,
+      "current_rank": 62,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -84,22 +60,22 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 5
+        "losses": 8
       },
-      "wins": 20,
-      "losses": 15,
+      "wins": 24,
+      "losses": 26,
       "top25_wins": 0,
-      "bonus_rate": 0.3
+      "bonus_rate": 0.333
     },
     "157": {
       "weight": 157,
       "wrestler_id": "35219309132",
       "name": "Michael Gross",
-      "current_rank": 104,
+      "current_rank": 246,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -123,7 +99,7 @@
       "weight": 165,
       "wrestler_id": "35219540132",
       "name": "Donnivan Sheffey",
-      "current_rank": 96,
+      "current_rank": 98,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -132,16 +108,16 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 6
       },
-      "wins": 15,
-      "losses": 14,
+      "wins": 17,
+      "losses": 17,
       "top25_wins": 0,
-      "bonus_rate": 0.733
+      "bonus_rate": 0.647
     },
     "175": {
       "weight": 175,
@@ -160,7 +136,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 5
       },
       "wins": 25,
       "losses": 23,
@@ -171,7 +147,7 @@
       "weight": 190,
       "wrestler_id": "35219618132",
       "name": "Jayden Johnson",
-      "current_rank": 199,
+      "current_rank": 198,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -195,7 +171,7 @@
       "weight": 215,
       "wrestler_id": "35219508132",
       "name": "Robert Kirk",
-      "current_rank": 76,
+      "current_rank": 78,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -211,7 +187,7 @@
         "losses": 2
       },
       "wins": 16,
-      "losses": 6,
+      "losses": 7,
       "top25_wins": 0,
       "bonus_rate": 0.75
     },
@@ -228,19 +204,39 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 4
       },
-      "wins": 14,
-      "losses": 16,
+      "wins": 16,
+      "losses": 20,
       "top25_wins": 0,
-      "bonus_rate": 0.286
+      "bonus_rate": 0.25
     }
   },
   "remaining": [
+    {
+      "weight": 126,
+      "wrestler_id": "35219503132",
+      "name": "Riley Jones",
+      "grade": 9,
+      "wins": 15,
+      "losses": 25,
+      "top25_wins": 0,
+      "bonus_rate": 0.467
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35219515132",
+      "name": "Elyja Lackey",
+      "grade": 11,
+      "wins": 15,
+      "losses": 15,
+      "top25_wins": 0,
+      "bonus_rate": 0.733
+    },
     {
       "weight": 132,
       "wrestler_id": "35219913132",
@@ -250,16 +246,6 @@
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
-    },
-    {
-      "weight": 132,
-      "wrestler_id": "35219503132",
-      "name": "Riley Jones",
-      "grade": 9,
-      "wins": 11,
-      "losses": 14,
-      "top25_wins": 0,
-      "bonus_rate": 0.455
     },
     {
       "weight": 175,
@@ -284,30 +270,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 92,
-      "losses": 66
+      "wins": 142,
+      "losses": 99
     },
     "top33": {
-      "wins": 1,
-      "losses": 22
+      "wins": 2,
+      "losses": 28
     },
     "top10": {
       "wins": 0,
-      "losses": 12
+      "losses": 14
     },
     "bonus_rate": {
-      "value": 0.609,
-      "rank": 123,
+      "value": 0.444,
+      "rank": 136,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.554,
-      "rank": 108,
+      "value": 0.38,
+      "rank": 135,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.054,
-      "rank": 83,
+      "value": 0.063,
+      "rank": 59,
       "rank_scope": "league"
     }
   }

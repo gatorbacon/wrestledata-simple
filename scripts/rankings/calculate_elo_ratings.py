@@ -412,7 +412,10 @@ def load_matrix_ranks(season: int, state: str = 'ky', gender: str = 'boys') -> D
         return {}
     
     wrestler_to_rank = {}
-    weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+    if gender == 'boys':
+        weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+    else:
+        weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
     
     for weight in weights:
         rankings_file = data_dir / f"rankings_{weight}.json"
@@ -451,7 +454,10 @@ def load_matrix_ranks_by_weight(season: int, state: str = 'ky', gender: str = 'b
         return {}
     
     ranks_by_weight = {}
-    weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+    if gender == 'boys':
+        weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+    else:
+        weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
     
     for weight in weights:
         rankings_file = data_dir / f"rankings_{weight}.json"
@@ -491,7 +497,10 @@ def calculate_hybrid_ranks_by_weight(
     """
     tier_a_cutoff = 60 if gender == 'boys' else 36
     hybrid_ranks_by_weight = {}
-    weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+    if gender == 'boys':
+        weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+    else:
+        weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
     
     for weight in weights:
         weight_ranks = ranks_by_weight.get(weight, {})

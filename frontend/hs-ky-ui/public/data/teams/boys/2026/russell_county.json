@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-02T01:27:36.186289Z",
+  "generated_at_utc": "2026-02-04T01:42:20.320321Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35637316132",
       "name": "Mason Hargrove",
-      "current_rank": 122,
+      "current_rank": 121,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -51,7 +51,7 @@
       "weight": 120,
       "wrestler_id": "35637931132",
       "name": "Zac Mullins",
-      "current_rank": 84,
+      "current_rank": 85,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -75,7 +75,7 @@
       "weight": 126,
       "wrestler_id": "35638018132",
       "name": "Colton Norris",
-      "current_rank": 151,
+      "current_rank": 150,
       "grade": 7,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -99,7 +99,7 @@
       "weight": 132,
       "wrestler_id": "35637972132",
       "name": "Drake Wright",
-      "current_rank": 64,
+      "current_rank": 65,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -121,10 +121,10 @@
     },
     "144": {
       "weight": 144,
-      "wrestler_id": "35638124132",
-      "name": "Sawyer Hargrove",
-      "current_rank": 142,
-      "grade": 9,
+      "wrestler_id": "37526449132",
+      "name": "Dominick LaFavers",
+      "current_rank": 141,
+      "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -138,16 +138,16 @@
         "wins": 0,
         "losses": 0
       },
-      "wins": 2,
-      "losses": 8,
+      "wins": 1,
+      "losses": 1,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.0
     },
     "150": {
       "weight": 150,
       "wrestler_id": "35638223132",
       "name": "Cameron Edison",
-      "current_rank": 97,
+      "current_rank": 100,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -171,7 +171,7 @@
       "weight": 157,
       "wrestler_id": "37526501132",
       "name": "Gavin Owens",
-      "current_rank": 137,
+      "current_rank": 135,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -195,7 +195,7 @@
       "weight": 165,
       "wrestler_id": "35638360132",
       "name": "Gael Stearns",
-      "current_rank": 115,
+      "current_rank": 116,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -241,10 +241,10 @@
     },
     "285": {
       "weight": 285,
-      "wrestler_id": "35638399132",
-      "name": "Gunner Godbey",
-      "current_rank": 144,
-      "grade": 10,
+      "wrestler_id": "35689794132",
+      "name": "James Medina",
+      "current_rank": 143,
+      "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -258,8 +258,8 @@
         "wins": 0,
         "losses": 0
       },
-      "wins": 1,
-      "losses": 8,
+      "wins": 0,
+      "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -307,16 +307,6 @@
     },
     {
       "weight": 144,
-      "wrestler_id": "37526449132",
-      "name": "Dominick LaFavers",
-      "grade": 8,
-      "wins": 1,
-      "losses": 1,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    {
-      "weight": 144,
       "wrestler_id": "35637993132",
       "name": "Keegan Roeder",
       "grade": 10,
@@ -332,6 +322,16 @@
       "grade": 11,
       "wins": 1,
       "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35638124132",
+      "name": "Sawyer Hargrove",
+      "grade": 9,
+      "wins": 2,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -367,11 +367,11 @@
     },
     {
       "weight": 285,
-      "wrestler_id": "35689794132",
-      "name": "James Medina",
-      "grade": 8,
-      "wins": 0,
-      "losses": 5,
+      "wrestler_id": "35638399132",
+      "name": "Gunner Godbey",
+      "grade": 10,
+      "wins": 1,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -408,8 +408,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 38,
-      "losses": 56
+      "wins": 53,
+      "losses": 81
     },
     "top33": {
       "wins": 0,
@@ -420,18 +420,18 @@
       "losses": 1
     },
     "bonus_rate": {
-      "value": 0.763,
-      "rank": 50,
+      "value": 0.547,
+      "rank": 84,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.737,
-      "rank": 14,
+      "value": 0.528,
+      "rank": 43,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.026,
-      "rank": 121,
+      "value": 0.019,
+      "rank": 124,
       "rank_scope": "league"
     }
   }

@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "3-0",
-    "vs_ranked": "3-0",
-    "vs_top10": "0-0",
-    "vs_top25": "2-0"
+    "overall": "3-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "1-1",
+    "vs_top25": "2-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 0,
-    "top10_wins": 0,
-    "top10_losses": 0,
+    "ranked_losses": 1,
+    "top10_wins": 1,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35506636132",
-      "opponent_rank": 12,
+      "opponent_rank": 10,
       "opponent_name": "Jemeriah Hopkins",
       "method": "Fall 0:28"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35506636132",
+      "opponent_rank": 10,
+      "opponent_name": "Jemeriah Hopkins",
+      "method": "Fall 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-01-15",
+      "opponent_id": "35506636132",
+      "opponent_name": "Jemeriah Hopkins",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 11,
+      "opponent_weight": 165,
+      "opponent_rank": 10,
+      "weight_class": "152",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Murphysboro"
+    },
     {
       "date": "2025-12-12",
       "opponent_id": "35666902132",
       "opponent_name": "Saireigne Dela Pena",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 37,
       "opponent_weight": 165,
-      "opponent_rank": 49,
+      "opponent_rank": 47,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -60,9 +80,9 @@
       "opponent_id": "35506636132",
       "opponent_name": "Jemeriah Hopkins",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 11,
       "opponent_weight": 165,
-      "opponent_rank": 12,
+      "opponent_rank": 10,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -75,7 +95,7 @@
       "opponent_id": "35598237132",
       "opponent_name": "Skyler Novosselov",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 165,
       "opponent_rank": 13,
       "weight_class": "165",

@@ -161,8 +161,8 @@ function renderDropSelector(drops, currentDrop, gender, season) {
 function formatDelta(delta) {
   if (delta === null || delta === undefined) return null;
   if (delta === 0) return "—";
-  if (delta > 0) return `▲ +${delta}`;
-  return `▼ ${delta}`;
+  if (delta > 0) return `▲${delta}`;
+  return `▼${Math.abs(delta)}`;
 }
 
 async function loadStandings() {
@@ -268,13 +268,13 @@ function renderStandings() {
     // Add delta indicator if available
     if (entry.delta !== null && entry.delta !== undefined) {
       const deltaSpan = document.createElement("span");
-      deltaSpan.style.cssText = "font-size: 0.75rem; color: var(--muted);";
+      deltaSpan.style.cssText = "font-size: 0.85em; font-weight: 600;";
       const deltaText = formatDelta(entry.delta);
       if (deltaText && deltaText !== "—") {
         if (entry.delta > 0) {
-          deltaSpan.style.color = "var(--success)";
+          deltaSpan.style.color = "#22c55e";
         } else if (entry.delta < 0) {
-          deltaSpan.style.color = "var(--error)";
+          deltaSpan.style.color = "#ef4444";
         }
         deltaSpan.textContent = deltaText;
         rankTd.appendChild(deltaSpan);
@@ -287,11 +287,12 @@ function renderStandings() {
     }
     tr.appendChild(rankTd);
     
-    // Team (with link)
+    // Team (with link) — archive JSON has "team" but may not have "team_slug"; derive slug if missing
     const teamTd = document.createElement("td");
     teamTd.className = "name";
     const teamLink = document.createElement("a");
-    teamLink.href = `/team.html?team=${entry.team_slug}`;
+    const teamSlug = entry.team_slug || teamNameToSlug(entry.team);
+    teamLink.href = `/team.html?team=${teamSlug}`;
     teamLink.textContent = entry.team;
     teamTd.appendChild(teamLink);
     tr.appendChild(teamTd);

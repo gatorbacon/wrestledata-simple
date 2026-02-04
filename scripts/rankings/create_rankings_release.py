@@ -1255,13 +1255,17 @@ def generate_team_tournament_rankings(
             prev_rank = None
             delta = None
         
-        rankings.append({
+        entry = {
             "rank": rank,
             "team": team_name,
             "points": points,
             "prev_rank": prev_rank,
             "delta": delta
-        })
+        }
+        # Include per-weight wrestler breakdown for expandable rows on Team Tournament Rankings page
+        if team.get("weights"):
+            entry["weights"] = team.get("weights")
+        rankings.append(entry)
     
     # Create output structure
     output_data = {
@@ -1609,7 +1613,8 @@ def generate_svg_graphics(
     gender: str,
     all_weight_data: Dict[str, Tuple[List[Dict], Dict[str, str], Dict[str, str]]],
     region_mapping: Dict[str, str],
-    output_dir: Path
+    output_dir: Path,
+    release_date_yyyymmdd: Optional[str] = None
 ) -> None:
     """
     Generate SVG/JPG graphics from template for all weight classes.
@@ -1621,7 +1626,7 @@ def generate_svg_graphics(
         all_weight_data: Dictionary mapping weight_class -> (wrestlers, region_places, team_best_wrestler)
         region_mapping: Dictionary mapping team_name -> region number
         output_dir: Output directory for JPG files
-        previous_rankings_map: Optional dictionary mapping weight -> (wrestler_id -> previous_rank)
+        release_date_yyyymmdd: Optional date for JPG filename (YYYYMMDD). If None, uses today.
     """
     # Select template based on gender
     if gender == 'boys':
@@ -1646,8 +1651,8 @@ def generate_svg_graphics(
     else:
         weight_classes = [str(w) for w in KY_HS_GIRLS_WEIGHTS]
     
-    # Generate date string for filename
-    date_str = datetime.now().strftime("%Y%m%d")
+    # Generate date string for filename (use release_date when provided, e.g. from drop_id)
+    date_str = release_date_yyyymmdd if release_date_yyyymmdd else datetime.now().strftime("%Y%m%d")
     
     # Process weight classes in pairs
     for i in range(0, len(weight_classes), 2):
@@ -2289,12 +2294,18 @@ def main():
             output_dir = Path(f"mt/graphics/{args.season}")
             output_dir.mkdir(parents=True, exist_ok=True)
             
+            # Use drop_id for JPG filename date when provided (e.g. 2026-02-03 -> 20260203)
+            release_date_yyyymmdd = None
+            if args.drop_id and re.match(r"^\d{4}-\d{2}-\d{2}$", args.drop_id):
+                release_date_yyyymmdd = args.drop_id.replace("-", "")
+            
             generate_svg_graphics(
                 season=args.season,
                 gender=args.gender,
                 all_weight_data=all_weight_data,
                 region_mapping=region_mapping,
-                output_dir=output_dir
+                output_dir=output_dir,
+                release_date_yyyymmdd=release_date_yyyymmdd
             )
             
             # Collect generated JPG files for PDF combination
@@ -2303,7 +2314,7 @@ def main():
             else:
                 weight_classes = [str(w) for w in KY_HS_GIRLS_WEIGHTS]
             
-            date_str = datetime.now().strftime("%Y%m%d")
+            date_str = release_date_yyyymmdd or datetime.now().strftime("%Y%m%d")
             for i in range(0, len(weight_classes), 2):
                 weight1 = weight_classes[i]
                 if i + 1 < len(weight_classes):

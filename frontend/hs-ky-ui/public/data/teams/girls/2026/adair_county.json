@@ -21,13 +21,37 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-02T01:27:36.670796Z",
+  "generated_at_utc": "2026-02-04T01:42:20.698453Z",
   "starters": {
     "114": {
       "weight": 114,
       "wrestler_id": "35471185132",
       "name": "Charisma Kunkel",
-      "current_rank": 64,
+      "current_rank": 38,
+      "grade": null,
+      "xtp": 1.12,
+      "xtp_p": 0.03,
+      "xtp_a": 0.3,
+      "xtp_b": 0.79,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "wins": 7,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.714
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35471184132",
+      "name": "Keylin Bergin",
+      "current_rank": 60,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -42,32 +66,8 @@
         "wins": 0,
         "losses": 4
       },
-      "wins": 8,
-      "losses": 6,
-      "top25_wins": 0,
-      "bonus_rate": 0.75
-    },
-    "126": {
-      "weight": 126,
-      "wrestler_id": "35471184132",
-      "name": "Keylin Bergin",
-      "current_rank": 54,
-      "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 3
-      },
       "wins": 4,
-      "losses": 12,
+      "losses": 11,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -75,7 +75,7 @@
       "weight": 132,
       "wrestler_id": "35471179132",
       "name": "Angela Mejia",
-      "current_rank": 47,
+      "current_rank": 51,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -90,7 +90,7 @@
         "wins": 0,
         "losses": 4
       },
-      "wins": 2,
+      "wins": 3,
       "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
@@ -99,7 +99,7 @@
       "weight": 138,
       "wrestler_id": "35471183132",
       "name": "Mackenzie Curry",
-      "current_rank": 48,
+      "current_rank": 45,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -123,7 +123,7 @@
       "weight": 165,
       "wrestler_id": "35472429132",
       "name": "Chluey Acanto",
-      "current_rank": 78,
+      "current_rank": 72,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -171,7 +171,7 @@
       "weight": 235,
       "wrestler_id": "35471182132",
       "name": "Destiny Snow",
-      "current_rank": 47,
+      "current_rank": 71,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -216,30 +216,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 12,
-      "losses": 26
+      "wins": 16,
+      "losses": 34
     },
     "top33": {
       "wins": 0,
-      "losses": 18
+      "losses": 19
     },
     "top10": {
       "wins": 0,
       "losses": 9
     },
     "bonus_rate": {
-      "value": 0.583,
-      "rank": 100,
+      "value": 0.438,
+      "rank": 102,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.583,
-      "rank": 96,
+      "value": 0.438,
+      "rank": 101,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 71,
+      "rank": 73,
       "rank_scope": "league"
     }
   }

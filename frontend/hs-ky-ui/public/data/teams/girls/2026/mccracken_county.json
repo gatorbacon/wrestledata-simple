@@ -21,18 +21,18 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-02T01:27:36.988793Z",
+  "generated_at_utc": "2026-02-04T01:42:20.940637Z",
   "starters": {
     "107": {
       "weight": 107,
       "wrestler_id": "35465668132",
       "name": "Jillian Conn",
-      "current_rank": 36,
+      "current_rank": 33,
       "grade": null,
-      "xtp": 1.23,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.88,
+      "xtp": 1.73,
+      "xtp_p": 0.15,
+      "xtp_a": 0.44,
+      "xtp_b": 1.14,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -47,16 +47,40 @@
       "top25_wins": 0,
       "bonus_rate": 0.931
     },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35465673132",
+      "name": "Emmery Evans",
+      "current_rank": 14,
+      "grade": null,
+      "xtp": 5.29,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 3.09,
+      "xtp_simple": 0.5,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 4
+      },
+      "wins": 35,
+      "losses": 15,
+      "top25_wins": 2,
+      "bonus_rate": 0.943
+    },
     "120": {
       "weight": 120,
       "wrestler_id": "35465669132",
       "name": "Eelynn Hayden",
       "current_rank": 3,
       "grade": null,
-      "xtp": 15.72,
+      "xtp": 15.91,
       "xtp_p": 8.02,
       "xtp_a": 3.12,
-      "xtp_b": 4.58,
+      "xtp_b": 4.77,
       "xtp_simple": 20.0,
       "top10_record": {
         "wins": 2,
@@ -66,10 +90,10 @@
         "wins": 7,
         "losses": 0
       },
-      "wins": 40,
+      "wins": 43,
       "losses": 3,
-      "top25_wins": 5,
-      "bonus_rate": 0.875
+      "top25_wins": 6,
+      "bonus_rate": 0.884
     },
     "126": {
       "weight": 126,
@@ -87,11 +111,11 @@
         "losses": 2
       },
       "top33_record": {
-        "wins": 2,
+        "wins": 3,
         "losses": 5
       },
       "wins": 25,
-      "losses": 24,
+      "losses": 22,
       "top25_wins": 2,
       "bonus_rate": 0.88
     },
@@ -99,7 +123,7 @@
       "weight": 145,
       "wrestler_id": "35465672132",
       "name": "Lillyana Cooper",
-      "current_rank": 51,
+      "current_rank": 50,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -123,38 +147,28 @@
       "weight": 235,
       "wrestler_id": "35465667132",
       "name": "Lillian Harned",
-      "current_rank": 20,
+      "current_rank": 21,
       "grade": null,
-      "xtp": 4.31,
-      "xtp_p": 0.47,
-      "xtp_a": 1.08,
-      "xtp_b": 2.76,
-      "xtp_simple": 0.5,
+      "xtp": 3.86,
+      "xtp_p": 0.41,
+      "xtp_a": 1.02,
+      "xtp_b": 2.43,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 3
       },
       "top33_record": {
         "wins": 2,
-        "losses": 5
+        "losses": 7
       },
       "wins": 12,
-      "losses": 8,
+      "losses": 10,
       "top25_wins": 2,
       "bonus_rate": 0.833
     }
   },
   "remaining": [
-    {
-      "weight": 120,
-      "wrestler_id": "35465673132",
-      "name": "Emmery Evans",
-      "grade": null,
-      "wins": 19,
-      "losses": 6,
-      "top25_wins": 1,
-      "bonus_rate": 0.947
-    },
     {
       "weight": 120,
       "wrestler_id": "35465671132",
@@ -178,29 +192,29 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 83,
-      "losses": 40
+      "wins": 110,
+      "losses": 59
     },
     "top33": {
-      "wins": 11,
-      "losses": 16
+      "wins": 16,
+      "losses": 22
     },
     "top10": {
       "wins": 2,
-      "losses": 7
+      "losses": 11
     },
     "bonus_rate": {
-      "value": 0.855,
-      "rank": 55,
+      "value": 0.691,
+      "rank": 31,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.747,
-      "rank": 69,
+      "value": 0.609,
+      "rank": 46,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.072,
+      "value": 0.055,
       "rank": 13,
       "rank_scope": "league"
     }

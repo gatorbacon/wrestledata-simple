@@ -4,14 +4,14 @@
   "team": "Murphysboro",
   "team_slug": "murphysboro",
   "team_rank": null,
-  "weight_class": 138,
+  "weight_class": 132,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "5-0",
-    "vs_ranked": "5-0",
+    "overall": "4-0",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
-    "vs_top25": "3-0"
+    "vs_top25": "2-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,34 +20,49 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.6,
+    "pin_rate": 0.75,
     "bonus_rate": 1.0,
-    "majors": 2,
+    "majors": 1,
     "techs": 0,
     "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35520301132",
+      "opponent_id": "35521626132",
       "opponent_rank": 23,
-      "opponent_name": "Hannah `Liz` Porter",
-      "method": "MD 8-0"
+      "opponent_name": "Starlet Hurst",
+      "method": "Fall 3:09"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-15",
+      "opponent_id": "35506461132",
+      "opponent_name": "Amiya Hill",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 11,
+      "opponent_weight": 132,
+      "opponent_rank": 65,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Murphysboro"
+    },
+    {
       "date": "2026-01-02",
       "opponent_id": "35506461132",
       "opponent_name": "Amiya Hill",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 11,
       "opponent_weight": 132,
-      "opponent_rank": 64,
+      "opponent_rank": 65,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -57,32 +72,32 @@
     },
     {
       "date": "2025-12-12",
-      "opponent_id": "35520301132",
-      "opponent_name": "Hannah `Liz` Porter",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 36,
-      "opponent_weight": 132,
-      "opponent_rank": 23,
-      "weight_class": "138",
-      "result": "W",
-      "method": "MD",
-      "score": "8-0",
-      "duration": "7:00",
-      "event": "Sister Slam"
-    },
-    {
-      "date": "2025-12-12",
       "opponent_id": "35521626132",
       "opponent_name": "Starlet Hurst",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 37,
       "opponent_weight": 138,
-      "opponent_rank": 25,
+      "opponent_rank": 23,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:09",
+      "event": "Sister Slam"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35520301132",
+      "opponent_name": "Hannah `Liz` Porter",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 132,
+      "opponent_rank": 25,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
       "event": "Sister Slam"
     }
   ]

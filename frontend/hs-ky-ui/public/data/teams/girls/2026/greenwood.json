@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-02T01:27:36.875666Z",
+  "generated_at_utc": "2026-02-04T01:42:20.854304Z",
   "starters": {
     "107": {
       "weight": 107,
@@ -29,10 +29,10 @@
       "name": "Lizeth Hernandez-Ponce",
       "current_rank": 37,
       "grade": null,
-      "xtp": 1.2,
+      "xtp": 1.18,
       "xtp_p": 0.03,
       "xtp_a": 0.3,
-      "xtp_b": 0.87,
+      "xtp_b": 0.85,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -40,7 +40,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 5
+        "losses": 4
       },
       "wins": 7,
       "losses": 13,
@@ -51,7 +51,7 @@
       "weight": 120,
       "wrestler_id": "35424937132",
       "name": "Mary Varupa",
-      "current_rank": 98,
+      "current_rank": 88,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -71,11 +71,11 @@
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
-    "132": {
-      "weight": 132,
+    "126": {
+      "weight": 126,
       "wrestler_id": "35424936132",
       "name": "Niang Nuam",
-      "current_rank": 56,
+      "current_rank": 67,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -88,42 +88,90 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 7
       },
-      "wins": 5,
-      "losses": 24,
+      "wins": 8,
+      "losses": 29,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.875
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35424935132",
+      "name": "Michaela Harmon",
+      "current_rank": 77,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "wins": 2,
+      "losses": 15,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35424932132",
       "name": "Masoka (Ashley) Kilozo",
-      "current_rank": 10,
+      "current_rank": 9,
       "grade": null,
-      "xtp": 7.23,
-      "xtp_p": 1.9,
-      "xtp_a": 1.69,
-      "xtp_b": 3.64,
+      "xtp": 7.58,
+      "xtp_p": 2.03,
+      "xtp_a": 1.78,
+      "xtp_b": 3.77,
       "xtp_simple": 2.0,
       "top10_record": {
-        "wins": 1,
+        "wins": 2,
         "losses": 6
       },
       "top33_record": {
-        "wins": 9,
+        "wins": 11,
         "losses": 6
       },
-      "wins": 29,
+      "wins": 33,
       "losses": 21,
-      "top25_wins": 4,
-      "bonus_rate": 0.793
+      "top25_wins": 5,
+      "bonus_rate": 0.818
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35424933132",
+      "name": "Cing Kiim",
+      "current_rank": 29,
+      "grade": null,
+      "xtp": 2.85,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
+      "xtp_b": 1.79,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 6
+      },
+      "wins": 22,
+      "losses": 23,
+      "top25_wins": 2,
+      "bonus_rate": 0.727
     },
     "152": {
       "weight": 152,
       "wrestler_id": "35424969132",
       "name": "Scarlet Stiltner",
-      "current_rank": 62,
+      "current_rank": 66,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -144,28 +192,7 @@
       "bonus_rate": 0.0
     }
   },
-  "remaining": [
-    {
-      "weight": 132,
-      "wrestler_id": "35424935132",
-      "name": "Michaela Harmon",
-      "grade": null,
-      "wins": 2,
-      "losses": 14,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    {
-      "weight": 138,
-      "wrestler_id": "35424933132",
-      "name": "Cing Kiim",
-      "grade": null,
-      "wins": 19,
-      "losses": 19,
-      "top25_wins": 1,
-      "bonus_rate": 0.737
-    }
-  ],
+  "remaining": [],
   "team_xTP_simple": 2.0,
   "team_metrics": {
     "projected_state_points": 2.0,
@@ -178,25 +205,25 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 33,
-      "losses": 38
+      "wins": 41,
+      "losses": 58
     },
     "top33": {
-      "wins": 9,
-      "losses": 15
+      "wins": 15,
+      "losses": 25
     },
     "top10": {
-      "wins": 1,
-      "losses": 9
+      "wins": 2,
+      "losses": 10
     },
     "bonus_rate": {
-      "value": 0.667,
-      "rank": 92,
+      "value": 0.561,
+      "rank": 81,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.667,
-      "rank": 88,
+      "value": 0.561,
+      "rank": 66,
       "rank_scope": "league"
     },
     "tech_rate": {

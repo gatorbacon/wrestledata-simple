@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-4",
+    "overall": "0-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -28,39 +28,24 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35267063132",
-      "opponent_rank": 106,
-      "opponent_name": "Andrew Jones",
-      "method": "MD 16-8"
+      "opponent_id": "35077759132",
+      "opponent_rank": 57,
+      "opponent_name": "Lucas Simpson",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
       "date": "2025-12-06",
-      "opponent_id": "35267063132",
-      "opponent_name": "Andrew Jones",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": 139,
-      "opponent_weight": 157,
-      "opponent_rank": 106,
-      "weight_class": "165",
-      "result": "L",
-      "method": "MD",
-      "score": "16-8",
-      "duration": "7:00",
-      "event": "vs. Jeffersonville"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35144511132",
       "opponent_name": "Domanic Patterson",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 48,
       "opponent_weight": 165,
       "opponent_rank": 21,
       "weight_class": "165",
@@ -77,12 +62,27 @@
       "opponent_team": "North Oldham",
       "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": 54,
+      "opponent_rank": 57,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "vs. Jeffersonville"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35267063132",
+      "opponent_name": "Andrew Jones",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": 139,
+      "opponent_weight": 165,
+      "opponent_rank": 31,
+      "weight_class": "165",
+      "result": "L",
+      "method": "MD",
+      "score": "16-8",
+      "duration": "7:00",
       "event": "vs. Jeffersonville"
     }
   ]

@@ -3,15 +3,15 @@
   "name": "Carson Clark",
   "team": "Cooper",
   "team_slug": "cooper",
-  "team_rank": 8,
+  "team_rank": 7,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 63,
+  "current_rank": 31,
   "record": {
-    "overall": "18-8",
-    "vs_ranked": "11-6",
-    "vs_top10": "0-4",
-    "vs_top25": "0-4"
+    "overall": "12-5",
+    "vs_ranked": "7-4",
+    "vs_top10": "0-2",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,22 +20,22 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "pin_rate": 0.727,
+    "bonus_rate": 0.727,
     "majors": 0,
     "techs": 0,
-    "pins": 12
+    "pins": 8
   },
   "opponent_breakdown": {
-    "ranked_wins": 11,
-    "ranked_losses": 6,
+    "ranked_wins": 7,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 4,
+    "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35325223132",
-      "opponent_rank": 53,
-      "opponent_name": "Ian Tibbs",
-      "method": "Dec 10-4"
+      "opponent_id": "34997715132",
+      "opponent_rank": 33,
+      "opponent_name": "Dominic Padilla",
+      "method": "Fall 1:05"
     },
     "worst_loss": {
       "opponent_id": "34993735132",
@@ -46,13 +46,43 @@
   },
   "match_list": [
     {
+      "date": "2026-01-31",
+      "opponent_id": "35271741132",
+      "opponent_name": "Jaydan Rutherford",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 16,
+      "opponent_weight": 215,
+      "opponent_rank": 27,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "34997715132",
+      "opponent_name": "Dominic Padilla",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 82,
+      "opponent_weight": 215,
+      "opponent_rank": 33,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
+      "event": "vs. Franklin County"
+    },
+    {
       "date": "2026-01-29",
       "opponent_id": "35488262132",
       "opponent_name": "Kingston Dailey",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 190,
-      "opponent_rank": 105,
+      "opponent_rank": 107,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -67,7 +97,7 @@
       "opponent_team": "Scott",
       "opponent_team_rank": 125,
       "opponent_weight": 215,
-      "opponent_rank": 160,
+      "opponent_rank": 157,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -80,7 +110,7 @@
       "opponent_id": "34988551132",
       "opponent_name": "Bryce Sizemore",
       "opponent_team": "Conner",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 10,
       "opponent_weight": 285,
       "opponent_rank": 3,
       "weight_class": "285",
@@ -271,7 +301,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Cooper",
-      "record": "11-4",
+      "record": "12-5",
       "regional_place": null,
       "state_place": null
     },
@@ -301,8 +331,8 @@
     }
   ],
   "career_record": {
-    "wins": 31,
-    "losses": 24,
-    "win_pct": 0.564
+    "wins": 32,
+    "losses": 25,
+    "win_pct": 0.561
   }
 }

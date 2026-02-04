@@ -34,16 +34,19 @@ def load_team_tournament_data(gender: str, season: int) -> List[Dict]:
     # Sort by team_xTP_simple (descending)
     teams_list.sort(key=lambda t: -t.get("team_xTP_simple", 0.0))
     
-    # Convert to archive format
+    # Convert to archive format (include weights for expandable rows on Team Tournament Rankings page)
     rankings = []
     for rank, team in enumerate(teams_list, start=1):
-        rankings.append({
+        entry = {
             "rank": rank,
             "team": team.get("team", ""),
             "points": team.get("team_xTP_simple", 0.0),
             "prev_rank": None,
             "delta": None
-        })
+        }
+        if team.get("weights"):
+            entry["weights"] = team.get("weights")
+        rankings.append(entry)
     
     return rankings
 

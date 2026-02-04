@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": 23,
   "record": {
-    "overall": "28-14",
-    "vs_ranked": "8-8",
-    "vs_top10": "0-0",
-    "vs_top25": "0-4"
+    "overall": "20-10",
+    "vs_ranked": "9-7",
+    "vs_top10": "0-1",
+    "vs_top25": "0-5"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,22 +20,22 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.607,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.7,
+    "bonus_rate": 0.8,
     "majors": 1,
-    "techs": 2,
-    "pins": 17
+    "techs": 1,
+    "pins": 14
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
-    "ranked_losses": 8,
+    "ranked_wins": 9,
+    "ranked_losses": 7,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35752417132",
-      "opponent_rank": 34,
-      "opponent_name": "Landon Howard",
-      "method": "Dec 5-3"
+      "opponent_id": "35271748132",
+      "opponent_rank": 27,
+      "opponent_name": "Jordan Rutherford",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35850452132",
@@ -45,6 +45,51 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-31",
+      "opponent_id": "34988588132",
+      "opponent_name": "Cordion Abernathy",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 10,
+      "opponent_weight": 132,
+      "opponent_rank": 4,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:53",
+      "event": "vs. Martin County"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "34997724132",
+      "opponent_name": "Aidan Durham",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 82,
+      "opponent_weight": 138,
+      "opponent_rank": 60,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:40",
+      "event": "vs. Martin County"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35271748132",
+      "opponent_name": "Jordan Rutherford",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 16,
+      "opponent_weight": 138,
+      "opponent_rank": 27,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Simon Kenton"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "35205066132",
@@ -82,7 +127,7 @@
       "opponent_team": "Greenup County",
       "opponent_team_rank": 86,
       "opponent_weight": 138,
-      "opponent_rank": 56,
+      "opponent_rank": 29,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -95,7 +140,7 @@
       "opponent_id": "35051536132",
       "opponent_name": "Isaac Richards",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 53,
       "opponent_weight": 138,
       "opponent_rank": 13,
       "weight_class": "138",
@@ -127,7 +172,7 @@
       "opponent_team": "Pikeville",
       "opponent_team_rank": 116,
       "opponent_weight": 138,
-      "opponent_rank": 37,
+      "opponent_rank": 41,
       "weight_class": "138",
       "result": "W",
       "method": "MD",
@@ -200,9 +245,9 @@
       "opponent_id": "35144519132",
       "opponent_name": "Gabriel Ditto",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 48,
       "opponent_weight": 138,
-      "opponent_rank": 36,
+      "opponent_rank": 39,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -217,7 +262,7 @@
       "opponent_team": "Oldham County",
       "opponent_team_rank": 112,
       "opponent_weight": 138,
-      "opponent_rank": 38,
+      "opponent_rank": 42,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -442,7 +487,7 @@
       "opponent_team": "Russell",
       "opponent_team_rank": 122,
       "opponent_weight": 138,
-      "opponent_rank": 81,
+      "opponent_rank": 80,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -463,14 +508,14 @@
       "season": 2026,
       "grade": 9,
       "team": "Martin County",
-      "record": "18-9",
+      "record": "20-10",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 18,
-    "losses": 9,
+    "wins": 20,
+    "losses": 10,
     "win_pct": 0.667
   }
 }

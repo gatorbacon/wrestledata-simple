@@ -5915,3 +5915,125 @@ table a:hover {
   }
 }
 
+/* ========================================
+   HOMEPAGE (index.html) — rankings-first, minimal
+   ======================================== */
+
+.homepage.page-container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2em var(--pad-lg) 4em;
+}
+
+/* 1. Hero */
+.home-hero {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+.home-hero-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 0.35em;
+  letter-spacing: -0.02em;
+}
+.home-hero-subtitle {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* 2. Primary CTA — most prominent */
+.home-primary-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-bottom: 2.5em;
+}
+.home-btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  box-sizing: border-box;
+}
+.home-btn-primary {
+  min-width: 180px;
+  padding: 1rem 1.75rem;
+  font-size: 1.125rem;
+  color: #fff;
+  background: var(--accent-primary);
+  border-radius: 0;
+}
+.home-btn-primary:hover {
+  background: #1a43b8;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 3. Secondary Rankings — smaller, grouped */
+.home-secondary {
+  margin-bottom: 2em;
+}
+.home-section-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.75em;
+}
+.home-secondary-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 1.5em;
+}
+.home-secondary-links a {
+  font-size: 0.9375rem;
+  color: var(--link);
+}
+.home-secondary-links a:hover {
+  text-decoration: underline;
+}
+
+/* 4. Explore More */
+.home-explore {
+  margin-bottom: 2em;
+}
+.home-explore-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 1.5em;
+}
+.home-explore-links a {
+  font-size: 0.9375rem;
+  color: var(--link);
+}
+.home-explore-links a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile: stack primary buttons, no horizontal scroll */
+@media (max-width: 480px) {
+  .homepage.page-container {
+    padding: 1.5em 1em 3em;
+  }
+  .home-hero-title {
+    font-size: 1.875rem;
+  }
+  .home-primary-cta {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 2em;
+  }
+  .home-btn-primary {
+    min-width: 0;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+

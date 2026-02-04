@@ -196,8 +196,8 @@ function renderDropSelector(drops, currentDrop, gender, season) {
 function formatDelta(delta) {
   if (delta === null || delta === undefined) return null;
   if (delta === 0) return "—";
-  if (delta > 0) return `▲ +${delta}`;
-  return `▼ ${delta}`;
+  if (delta > 0) return `▲${delta}`;
+  return `▼${Math.abs(delta)}`;
 }
 
 async function loadLeaderboard() {
@@ -324,13 +324,13 @@ function renderLeaderboard() {
     // Add delta indicator if available
     if (team.delta !== null && team.delta !== undefined) {
       const deltaSpan = document.createElement("span");
-      deltaSpan.style.cssText = "font-size: 0.75rem; color: var(--muted);";
+      deltaSpan.style.cssText = "font-size: 0.85em; font-weight: 600;";
       const deltaText = formatDelta(team.delta);
       if (deltaText && deltaText !== "—") {
         if (team.delta > 0) {
-          deltaSpan.style.color = "var(--success)";
+          deltaSpan.style.color = "#22c55e";
         } else if (team.delta < 0) {
-          deltaSpan.style.color = "var(--error)";
+          deltaSpan.style.color = "#ef4444";
         }
         deltaSpan.textContent = deltaText;
         rankTd.appendChild(deltaSpan);

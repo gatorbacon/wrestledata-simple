@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-02T01:27:35.390163Z",
+  "generated_at_utc": "2026-02-04T01:42:19.760342Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "34993295132",
       "name": "Jackson Mattingly",
-      "current_rank": 60,
+      "current_rank": 58,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -51,7 +51,7 @@
       "weight": 113,
       "wrestler_id": "34993300132",
       "name": "Aie Hong",
-      "current_rank": 61,
+      "current_rank": 63,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -99,16 +99,16 @@
       "weight": 126,
       "wrestler_id": "34993280132",
       "name": "Jah Patterson",
-      "current_rank": 14,
+      "current_rank": 15,
       "grade": 10,
-      "xtp": 4.53,
-      "xtp_p": 1.16,
-      "xtp_a": 1.37,
-      "xtp_b": 2.0,
+      "xtp": 3.98,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 1.78,
       "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 1
       },
       "top33_record": {
         "wins": 5,
@@ -135,7 +135,7 @@
         "losses": 1
       },
       "top33_record": {
-        "wins": 5,
+        "wins": 4,
         "losses": 1
       },
       "wins": 21,
@@ -147,7 +147,7 @@
       "weight": 138,
       "wrestler_id": "34993303132",
       "name": "Noah Bonnell",
-      "current_rank": 100,
+      "current_rank": 99,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -167,11 +167,35 @@
       "top25_wins": 0,
       "bonus_rate": 0.818
     },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "34993278132",
+      "name": "Joshua Rudkosky",
+      "current_rank": 47,
+      "grade": 11,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 1,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      },
+      "wins": 12,
+      "losses": 4,
+      "top25_wins": 1,
+      "bonus_rate": 0.667
+    },
     "150": {
       "weight": 150,
       "wrestler_id": "35225806132",
       "name": "Jacob Cecil",
-      "current_rank": 119,
+      "current_rank": 122,
       "grade": 7,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -208,7 +232,7 @@
       },
       "top33_record": {
         "wins": 1,
-        "losses": 3
+        "losses": 4
       },
       "wins": 15,
       "losses": 14,
@@ -217,9 +241,9 @@
     },
     "165": {
       "weight": 165,
-      "wrestler_id": "34993298132",
-      "name": "Chan Aung",
-      "current_rank": 131,
+      "wrestler_id": "34993279132",
+      "name": "Kaden Nichols",
+      "current_rank": 43,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -234,10 +258,10 @@
         "wins": 0,
         "losses": 1
       },
-      "wins": 11,
-      "losses": 13,
+      "wins": 12,
+      "losses": 1,
       "top25_wins": 0,
-      "bonus_rate": 0.909
+      "bonus_rate": 1.0
     },
     "175": {
       "weight": 175,
@@ -267,19 +291,19 @@
       "weight": 215,
       "wrestler_id": "34993276132",
       "name": "Kobe Nichols",
-      "current_rank": 16,
+      "current_rank": 15,
       "grade": 11,
-      "xtp": 4.09,
+      "xtp": 3.85,
       "xtp_p": 0.7,
       "xtp_a": 1.18,
-      "xtp_b": 2.21,
+      "xtp_b": 1.97,
       "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
         "losses": 3
       },
       "top33_record": {
-        "wins": 2,
+        "wins": 4,
         "losses": 4
       },
       "wins": 18,
@@ -291,7 +315,7 @@
       "weight": 285,
       "wrestler_id": "35225866132",
       "name": "Titan Holloway",
-      "current_rank": 149,
+      "current_rank": 146,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -394,16 +418,6 @@
       "bonus_rate": 1.0
     },
     {
-      "weight": 144,
-      "wrestler_id": "34993278132",
-      "name": "Joshua Rudkosky",
-      "grade": 11,
-      "wins": 12,
-      "losses": 4,
-      "top25_wins": 1,
-      "bonus_rate": 0.667
-    },
-    {
       "weight": 150,
       "wrestler_id": "34993284132",
       "name": "Langston Tincher",
@@ -425,13 +439,13 @@
     },
     {
       "weight": 165,
-      "wrestler_id": "34993279132",
-      "name": "Kaden Nichols",
+      "wrestler_id": "34993298132",
+      "name": "Chan Aung",
       "grade": 11,
       "wins": 12,
-      "losses": 1,
+      "losses": 13,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.917
     },
     {
       "weight": 165,
@@ -476,30 +490,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 100,
-      "losses": 62
+      "wins": 124,
+      "losses": 73
     },
     "top33": {
-      "wins": 13,
-      "losses": 23
+      "wins": 15,
+      "losses": 26
     },
     "top10": {
-      "wins": 0,
-      "losses": 8
+      "wins": 1,
+      "losses": 7
     },
     "bonus_rate": {
-      "value": 0.84,
+      "value": 0.677,
       "rank": 21,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.57,
-      "rank": 94,
+      "value": 0.46,
+      "rank": 92,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.19,
-      "rank": 3,
+      "value": 0.153,
+      "rank": 4,
       "rank_scope": "league"
     }
   }

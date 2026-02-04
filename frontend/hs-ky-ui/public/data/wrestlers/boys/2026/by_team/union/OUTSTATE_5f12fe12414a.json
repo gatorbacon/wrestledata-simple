@@ -4,14 +4,14 @@
   "team": "Union",
   "team_slug": "union",
   "team_rank": null,
-  "weight_class": 113,
+  "weight_class": 132,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-3",
-    "vs_ranked": "0-3",
-    "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-2",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,18 +28,48 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 2,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35773385132",
-      "opponent_rank": 30,
-      "opponent_name": "Hunter Fields",
+      "opponent_id": "35850446132",
+      "opponent_rank": 12,
+      "opponent_name": "Kaiden Nottingham",
       "method": "For."
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-23",
+      "opponent_id": "35850446132",
+      "opponent_name": "Kaiden Nottingham",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 11,
+      "opponent_weight": 138,
+      "opponent_rank": 12,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Union"
+    },
+    {
+      "date": "2026-01-23",
+      "opponent_id": "35850444132",
+      "opponent_name": "Bentley Brown",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 11,
+      "opponent_weight": 132,
+      "opponent_rank": 10,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Union"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "35751400132",
@@ -62,7 +92,7 @@
       "opponent_team": "Johnson Central",
       "opponent_team_rank": 2,
       "opponent_weight": 126,
-      "opponent_rank": 30,
+      "opponent_rank": 10,
       "weight_class": "126",
       "result": "L",
       "method": "FF",

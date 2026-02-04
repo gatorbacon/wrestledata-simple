@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-02T01:27:36.052955Z",
+  "generated_at_utc": "2026-02-04T01:42:20.219403Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35698533132",
       "name": "Mason Clark",
-      "current_rank": 99,
+      "current_rank": 97,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -51,12 +51,12 @@
       "weight": 126,
       "wrestler_id": "35049797132",
       "name": "Logan Mongold",
-      "current_rank": 33,
+      "current_rank": 35,
       "grade": 9,
-      "xtp": 1.2,
-      "xtp_p": 0.09,
-      "xtp_a": 0.34,
-      "xtp_b": 0.77,
+      "xtp": 0.93,
+      "xtp_p": 0.03,
+      "xtp_a": 0.3,
+      "xtp_b": 0.6,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -64,7 +64,7 @@
       },
       "top33_record": {
         "wins": 1,
-        "losses": 7
+        "losses": 6
       },
       "wins": 33,
       "losses": 17,
@@ -75,19 +75,19 @@
       "weight": 138,
       "wrestler_id": "35049803132",
       "name": "Simon Thompson",
-      "current_rank": 27,
+      "current_rank": 36,
       "grade": 11,
-      "xtp": 1.84,
-      "xtp_p": 0.22,
-      "xtp_a": 0.64,
-      "xtp_b": 0.98,
+      "xtp": 1.04,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.69,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
-        "wins": 2,
+        "wins": 1,
         "losses": 3
       },
       "wins": 32,
@@ -99,7 +99,7 @@
       "weight": 144,
       "wrestler_id": "35049802132",
       "name": "Sam Brauer",
-      "current_rank": 57,
+      "current_rank": 59,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -112,18 +112,18 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 3
       },
-      "wins": 31,
+      "wins": 30,
       "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.871
+      "bonus_rate": 0.867
     },
     "150": {
       "weight": 150,
       "wrestler_id": "35049795132",
       "name": "Eli Wilson",
-      "current_rank": 78,
+      "current_rank": 80,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -147,19 +147,19 @@
       "weight": 157,
       "wrestler_id": "35049796132",
       "name": "Thomas Brauer",
-      "current_rank": 17,
+      "current_rank": 16,
       "grade": 8,
-      "xtp": 2.99,
-      "xtp_p": 0.41,
-      "xtp_a": 1.02,
-      "xtp_b": 1.56,
-      "xtp_simple": 0.5,
+      "xtp": 3.64,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 2.09,
+      "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
-        "wins": 2,
+        "wins": 1,
         "losses": 0
       },
       "wins": 34,
@@ -171,7 +171,7 @@
       "weight": 165,
       "wrestler_id": "35049804132",
       "name": "Eric McCarthy",
-      "current_rank": 78,
+      "current_rank": 80,
       "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -184,7 +184,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 1
       },
       "wins": 15,
       "losses": 10,
@@ -219,7 +219,7 @@
       "weight": 190,
       "wrestler_id": "35049801132",
       "name": "Nolan Clark",
-      "current_rank": 98,
+      "current_rank": 100,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -245,10 +245,10 @@
       "name": "Tristen French",
       "current_rank": 26,
       "grade": 12,
-      "xtp": 1.86,
+      "xtp": 1.88,
       "xtp_p": 0.25,
       "xtp_a": 0.69,
-      "xtp_b": 0.92,
+      "xtp_b": 0.94,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -336,9 +336,9 @@
       "bonus_rate": 1.0
     }
   ],
-  "team_xTP_simple": 1.0,
+  "team_xTP_simple": 3.0,
   "team_metrics": {
-    "projected_state_points": 1.0,
+    "projected_state_points": 3.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -348,30 +348,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 149,
-      "losses": 61
+      "wins": 190,
+      "losses": 73
     },
     "top33": {
-      "wins": 6,
-      "losses": 22
+      "wins": 4,
+      "losses": 21
     },
     "top10": {
       "wins": 0,
       "losses": 2
     },
     "bonus_rate": {
-      "value": 0.651,
-      "rank": 103,
+      "value": 0.511,
+      "rank": 112,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.564,
-      "rank": 103,
+      "value": 0.442,
+      "rank": 104,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.054,
-      "rank": 82,
+      "value": 0.042,
+      "rank": 87,
       "rank_scope": "league"
     }
   }

@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "weight": 144,
-  "generated_at": "2026-02-02T01:27:57.411481+00:00Z",
+  "generated_at": "2026-02-04T01:42:45.896832+00:00Z",
   "source": "rankings_starters_144.json",
   "wrestlers": [
     {
@@ -26,12 +26,12 @@
       "team": "Johnson Central",
       "team_short": "JOCE",
       "record": {
-        "wins": 53,
+        "wins": 54,
         "losses": 6,
-        "pct": 0.8983050847457628
+        "pct": 0.9
       },
-      "record_str": "53-6 (90%)",
-      "bonus_pct": 0.774,
+      "record_str": "54-6 (90%)",
+      "bonus_pct": 0.778,
       "mv": null
     },
     {
@@ -51,6 +51,21 @@
     },
     {
       "rank": 4,
+      "wrestler_id": "35001144132",
+      "name": "Derrick Johnson",
+      "team": "Central Hardin",
+      "team_short": "CEHA",
+      "record": {
+        "wins": 41,
+        "losses": 3,
+        "pct": 0.9318181818181818
+      },
+      "record_str": "41-3 (93%)",
+      "bonus_pct": 0.878,
+      "mv": null
+    },
+    {
+      "rank": 5,
       "wrestler_id": "34993729132",
       "name": "Austin Brinegar",
       "team": "Harrison County",
@@ -65,7 +80,7 @@
       "mv": null
     },
     {
-      "rank": 5,
+      "rank": 6,
       "wrestler_id": "34993545132",
       "name": "Kalob Wise",
       "team": "Moore",
@@ -80,7 +95,7 @@
       "mv": null
     },
     {
-      "rank": 6,
+      "rank": 7,
       "wrestler_id": "35135147132",
       "name": "Blake Luttrell",
       "team": "Fairdale",
@@ -92,21 +107,6 @@
       },
       "record_str": "21-1 (95%)",
       "bonus_pct": 0.905,
-      "mv": null
-    },
-    {
-      "rank": 7,
-      "wrestler_id": "35001144132",
-      "name": "Derrick Johnson",
-      "team": "Central Hardin",
-      "team_short": "CEHA",
-      "record": {
-        "wins": 41,
-        "losses": 3,
-        "pct": 0.9318181818181818
-      },
-      "record_str": "41-3 (93%)",
-      "bonus_pct": 0.878,
       "mv": null
     },
     {
@@ -236,12 +236,12 @@
       "team": "Paducah Tilghman",
       "team_short": "PDTI",
       "record": {
-        "wins": 72,
-        "losses": 9,
-        "pct": 0.8888888888888888
+        "wins": 76,
+        "losses": 10,
+        "pct": 0.8837209302325582
       },
-      "record_str": "72-9 (89%)",
-      "bonus_pct": 0.778,
+      "record_str": "76-10 (88%)",
+      "bonus_pct": 0.776,
       "mv": null
     },
     {
@@ -261,21 +261,36 @@
     },
     {
       "rank": 18,
+      "wrestler_id": "35202489132",
+      "name": "Colton Motta",
+      "team": "South Oldham",
+      "team_short": "SOLD",
+      "record": {
+        "wins": 26,
+        "losses": 10,
+        "pct": 0.7222222222222222
+      },
+      "record_str": "26-10 (72%)",
+      "bonus_pct": 0.885,
+      "mv": null
+    },
+    {
+      "rank": 19,
       "wrestler_id": "34988587132",
       "name": "Luke Peace",
       "team": "Conner",
       "team_short": "CONN",
       "record": {
-        "wins": 41,
-        "losses": 9,
-        "pct": 0.82
+        "wins": 46,
+        "losses": 10,
+        "pct": 0.8214285714285714
       },
-      "record_str": "41-9 (82%)",
-      "bonus_pct": 0.878,
+      "record_str": "46-10 (82%)",
+      "bonus_pct": 0.848,
       "mv": null
     },
     {
-      "rank": 19,
+      "rank": 20,
       "wrestler_id": "34992810132",
       "name": "Kamarius Ziesmer",
       "team": "Boyle County",
@@ -287,21 +302,6 @@
       },
       "record_str": "27-8 (77%)",
       "bonus_pct": 0.889,
-      "mv": null
-    },
-    {
-      "rank": 20,
-      "wrestler_id": "35202489132",
-      "name": "Colton Motta",
-      "team": "South Oldham",
-      "team_short": "SOLD",
-      "record": {
-        "wins": 18,
-        "losses": 10,
-        "pct": 0.6428571428571429
-      },
-      "record_str": "18-10 (64%)",
-      "bonus_pct": 0.944,
       "mv": null
     },
     {
@@ -341,12 +341,12 @@
       "team": "Martin County",
       "team_short": "MART",
       "record": {
-        "wins": 34,
-        "losses": 11,
-        "pct": 0.7555555555555555
+        "wins": 35,
+        "losses": 12,
+        "pct": 0.7446808510638298
       },
-      "record_str": "34-11 (76%)",
-      "bonus_pct": 0.735,
+      "record_str": "35-12 (74%)",
+      "bonus_pct": 0.743,
       "mv": null
     },
     {
@@ -387,10 +387,10 @@
       "team_short": "BOYD",
       "record": {
         "wins": 36,
-        "losses": 9,
-        "pct": 0.8
+        "losses": 11,
+        "pct": 0.7659574468085106
       },
-      "record_str": "36-9 (80%)",
+      "record_str": "36-11 (77%)",
       "bonus_pct": 0.833,
       "mv": null
     },
@@ -401,31 +401,16 @@
       "team": "East Carter",
       "team_short": "ECAR",
       "record": {
-        "wins": 49,
+        "wins": 50,
         "losses": 11,
-        "pct": 0.8166666666666667
+        "pct": 0.819672131147541
       },
-      "record_str": "49-11 (82%)",
-      "bonus_pct": 0.878,
+      "record_str": "50-11 (82%)",
+      "bonus_pct": 0.88,
       "mv": null
     },
     {
       "rank": 28,
-      "wrestler_id": "34993522132",
-      "name": "Brayden Tugers",
-      "team": "Scott County",
-      "team_short": "SCCO",
-      "record": {
-        "wins": 33,
-        "losses": 18,
-        "pct": 0.6470588235294118
-      },
-      "record_str": "33-18 (65%)",
-      "bonus_pct": 0.848,
-      "mv": null
-    },
-    {
-      "rank": 29,
       "wrestler_id": "35081197132",
       "name": "Trae White",
       "team": "Henry Clay",
@@ -440,7 +425,7 @@
       "mv": null
     },
     {
-      "rank": 30,
+      "rank": 29,
       "wrestler_id": "36571493132",
       "name": "Cooper Scott",
       "team": "Pikeville",
@@ -455,7 +440,7 @@
       "mv": null
     },
     {
-      "rank": 31,
+      "rank": 30,
       "wrestler_id": "35122072132",
       "name": "Jaxon Clary",
       "team": "Oldham County",
@@ -470,7 +455,7 @@
       "mv": null
     },
     {
-      "rank": 32,
+      "rank": 31,
       "wrestler_id": "35528663132",
       "name": "Boone Sawyer",
       "team": "Walton-Verona",
@@ -485,22 +470,7 @@
       "mv": null
     },
     {
-      "rank": 33,
-      "wrestler_id": "34997712132",
-      "name": "Connor Greenwell",
-      "team": "Franklin County",
-      "team_short": "FRCO",
-      "record": {
-        "wins": 26,
-        "losses": 15,
-        "pct": 0.6341463414634146
-      },
-      "record_str": "26-15 (63%)",
-      "bonus_pct": 0.808,
-      "mv": null
-    },
-    {
-      "rank": 34,
+      "rank": 32,
       "wrestler_id": "35420642132",
       "name": "Channing Carte",
       "team": "Whitley County",
@@ -515,33 +485,63 @@
       "mv": null
     },
     {
-      "rank": 35,
-      "wrestler_id": "35405353132",
-      "name": "jaxon franks",
-      "team": "Grant County",
-      "team_short": "GRAN",
+      "rank": 33,
+      "wrestler_id": "35233668132",
+      "name": "Brayden Mattingly",
+      "team": "Apollo",
+      "team_short": "APOL",
       "record": {
-        "wins": 24,
-        "losses": 13,
-        "pct": 0.6486486486486487
+        "wins": 25,
+        "losses": 6,
+        "pct": 0.8064516129032258
       },
-      "record_str": "24-13 (65%)",
-      "bonus_pct": 0.958,
+      "record_str": "25-6 (81%)",
+      "bonus_pct": 0.68,
+      "mv": null
+    },
+    {
+      "rank": 34,
+      "wrestler_id": "35618246132",
+      "name": "Justyce Gullion",
+      "team": "Valley",
+      "team_short": "VALL",
+      "record": {
+        "wins": 15,
+        "losses": 26,
+        "pct": 0.36585365853658536
+      },
+      "record_str": "15-26 (37%)",
+      "bonus_pct": 0.467,
+      "mv": null
+    },
+    {
+      "rank": 35,
+      "wrestler_id": "34993522132",
+      "name": "Brayden Tugers",
+      "team": "Scott County",
+      "team_short": "SCCO",
+      "record": {
+        "wins": 34,
+        "losses": 18,
+        "pct": 0.6538461538461539
+      },
+      "record_str": "34-18 (65%)",
+      "bonus_pct": 0.824,
       "mv": null
     },
     {
       "rank": 36,
-      "wrestler_id": "34994785132",
-      "name": "Timothy Montgomery",
-      "team": "Spencer County",
-      "team_short": "SPCO",
+      "wrestler_id": "35283899132",
+      "name": "Caleb Roth",
+      "team": "Eastern",
+      "team_short": "EAST",
       "record": {
-        "wins": 32,
-        "losses": 17,
-        "pct": 0.6530612244897959
+        "wins": 25,
+        "losses": 32,
+        "pct": 0.43859649122807015
       },
-      "record_str": "32-17 (65%)",
-      "bonus_pct": 0.938,
+      "record_str": "25-32 (44%)",
+      "bonus_pct": 0.6,
       "mv": null
     },
     {
@@ -561,6 +561,81 @@
     },
     {
       "rank": 38,
+      "wrestler_id": "34995380132",
+      "name": "Levi Howard",
+      "team": "Lexington Christian",
+      "team_short": "LCA",
+      "record": {
+        "wins": 19,
+        "losses": 15,
+        "pct": 0.5588235294117647
+      },
+      "record_str": "19-15 (56%)",
+      "bonus_pct": 0.789,
+      "mv": null
+    },
+    {
+      "rank": 39,
+      "wrestler_id": "34997712132",
+      "name": "Connor Greenwell",
+      "team": "Franklin County",
+      "team_short": "FRCO",
+      "record": {
+        "wins": 29,
+        "losses": 19,
+        "pct": 0.6041666666666666
+      },
+      "record_str": "29-19 (60%)",
+      "bonus_pct": 0.793,
+      "mv": null
+    },
+    {
+      "rank": 40,
+      "wrestler_id": "35405353132",
+      "name": "jaxon franks",
+      "team": "Grant County",
+      "team_short": "GRAN",
+      "record": {
+        "wins": 26,
+        "losses": 13,
+        "pct": 0.6666666666666666
+      },
+      "record_str": "26-13 (67%)",
+      "bonus_pct": 0.962,
+      "mv": null
+    },
+    {
+      "rank": 41,
+      "wrestler_id": "34994785132",
+      "name": "Timothy Montgomery",
+      "team": "Spencer County",
+      "team_short": "SPCO",
+      "record": {
+        "wins": 32,
+        "losses": 17,
+        "pct": 0.6530612244897959
+      },
+      "record_str": "32-17 (65%)",
+      "bonus_pct": 0.938,
+      "mv": null
+    },
+    {
+      "rank": 42,
+      "wrestler_id": "34993278132",
+      "name": "Joshua Rudkosky",
+      "team": "Daviess County",
+      "team_short": "DAVC",
+      "record": {
+        "wins": 12,
+        "losses": 4,
+        "pct": 0.75
+      },
+      "record_str": "12-4 (75%)",
+      "bonus_pct": 0.667,
+      "mv": null
+    },
+    {
+      "rank": 43,
       "wrestler_id": "35077765132",
       "name": "Caleb Cox",
       "team": "North Oldham",
@@ -575,7 +650,7 @@
       "mv": null
     },
     {
-      "rank": 39,
+      "rank": 44,
       "wrestler_id": "35208231132",
       "name": "Braxton Payne",
       "team": "Henderson County",
@@ -590,52 +665,22 @@
       "mv": null
     },
     {
-      "rank": 40,
-      "wrestler_id": "35618246132",
-      "name": "Justyce Gullion",
-      "team": "Valley",
-      "team_short": "VALL",
+      "rank": 45,
+      "wrestler_id": "35084110132",
+      "name": "Jaxon Salgado",
+      "team": "Ballard",
+      "team_short": "BALL",
       "record": {
-        "wins": 15,
-        "losses": 26,
-        "pct": 0.36585365853658536
+        "wins": 11,
+        "losses": 7,
+        "pct": 0.6111111111111112
       },
-      "record_str": "15-26 (37%)",
-      "bonus_pct": 0.467,
+      "record_str": "11-7 (61%)",
+      "bonus_pct": 0.909,
       "mv": null
     },
     {
-      "rank": 41,
-      "wrestler_id": "35233668132",
-      "name": "Brayden Mattingly",
-      "team": "Apollo",
-      "team_short": "APOL",
-      "record": {
-        "wins": 25,
-        "losses": 6,
-        "pct": 0.8064516129032258
-      },
-      "record_str": "25-6 (81%)",
-      "bonus_pct": 0.68,
-      "mv": null
-    },
-    {
-      "rank": 42,
-      "wrestler_id": "35283899132",
-      "name": "Caleb Roth",
-      "team": "Eastern",
-      "team_short": "EAST",
-      "record": {
-        "wins": 25,
-        "losses": 32,
-        "pct": 0.43859649122807015
-      },
-      "record_str": "25-32 (44%)",
-      "bonus_pct": 0.6,
-      "mv": null
-    },
-    {
-      "rank": 43,
+      "rank": 46,
       "wrestler_id": "35037104132",
       "name": "Blatyn Cooper",
       "team": "Marion County",
@@ -650,22 +695,7 @@
       "mv": null
     },
     {
-      "rank": 44,
-      "wrestler_id": "34995380132",
-      "name": "Levi Howard",
-      "team": "Lexington Christian",
-      "team_short": "LCA",
-      "record": {
-        "wins": 17,
-        "losses": 15,
-        "pct": 0.53125
-      },
-      "record_str": "17-15 (53%)",
-      "bonus_pct": 0.882,
-      "mv": null
-    },
-    {
-      "rank": 45,
+      "rank": 47,
       "wrestler_id": "35040599132",
       "name": "Antar Sher",
       "team": "Tates Creek",
@@ -680,7 +710,7 @@
       "mv": null
     },
     {
-      "rank": 46,
+      "rank": 48,
       "wrestler_id": "35460279132",
       "name": "Ethan Pituch",
       "team": "Rowan County",
@@ -695,7 +725,7 @@
       "mv": null
     },
     {
-      "rank": 47,
+      "rank": 49,
       "wrestler_id": "34989064132",
       "name": "Julian Wilson",
       "team": "North Hardin",
@@ -710,7 +740,7 @@
       "mv": null
     },
     {
-      "rank": 48,
+      "rank": 50,
       "wrestler_id": "35599171132",
       "name": "Noah Metz",
       "team": "Mccreary Central",
@@ -725,7 +755,7 @@
       "mv": null
     },
     {
-      "rank": 49,
+      "rank": 51,
       "wrestler_id": "35280922132",
       "name": "Sean Moreno",
       "team": "Southern",
@@ -740,7 +770,7 @@
       "mv": null
     },
     {
-      "rank": 50,
+      "rank": 52,
       "wrestler_id": "35205293132",
       "name": "Jaxon Leonard",
       "team": "Greenwood",
@@ -755,337 +785,22 @@
       "mv": null
     },
     {
-      "rank": 51,
+      "rank": 53,
       "wrestler_id": "35049802132",
       "name": "Sam Brauer",
       "team": "Owensboro Catholic",
       "team_short": "OWCA",
       "record": {
-        "wins": 31,
+        "wins": 30,
         "losses": 8,
-        "pct": 0.7948717948717948
+        "pct": 0.7894736842105263
       },
-      "record_str": "31-8 (79%)",
-      "bonus_pct": 0.871,
-      "mv": null
-    },
-    {
-      "rank": 52,
-      "wrestler_id": "35133608132",
-      "name": "Garrison Meacham",
-      "team": "Hopkinsville",
-      "team_short": "HOP",
-      "record": {
-        "wins": 22,
-        "losses": 14,
-        "pct": 0.6111111111111112
-      },
-      "record_str": "22-14 (61%)",
-      "bonus_pct": 0.727,
-      "mv": null
-    },
-    {
-      "rank": 53,
-      "wrestler_id": "34989025132",
-      "name": "Layton Morehead",
-      "team": "Ohio County",
-      "team_short": "OHIO",
-      "record": {
-        "wins": 7,
-        "losses": 6,
-        "pct": 0.5384615384615384
-      },
-      "record_str": "7-6 (54%)",
-      "bonus_pct": 1.0,
+      "record_str": "30-8 (79%)",
+      "bonus_pct": 0.867,
       "mv": null
     },
     {
       "rank": 54,
-      "wrestler_id": "35271246132",
-      "name": "Mason Smith",
-      "team": "Simon Kenton",
-      "team_short": "SK",
-      "record": {
-        "wins": 13,
-        "losses": 25,
-        "pct": 0.34210526315789475
-      },
-      "record_str": "13-25 (34%)",
-      "bonus_pct": 0.462,
-      "mv": null
-    },
-    {
-      "rank": 55,
-      "wrestler_id": "35192414132",
-      "name": "Mazime Many",
-      "team": "Logan County",
-      "team_short": "LOGA",
-      "record": {
-        "wins": 17,
-        "losses": 10,
-        "pct": 0.6296296296296297
-      },
-      "record_str": "17-10 (63%)",
-      "bonus_pct": 0.471,
-      "mv": null
-    },
-    {
-      "rank": 56,
-      "wrestler_id": "36019587132",
-      "name": "Carter Stewart",
-      "team": "Ashland Blazer",
-      "team_short": "ABLZ",
-      "record": {
-        "wins": 21,
-        "losses": 13,
-        "pct": 0.6176470588235294
-      },
-      "record_str": "21-13 (62%)",
-      "bonus_pct": 0.857,
-      "mv": null
-    },
-    {
-      "rank": 57,
-      "wrestler_id": "34997642132",
-      "name": "Zashawn Matthews",
-      "team": "Western",
-      "team_short": "WEST",
-      "record": {
-        "wins": 9,
-        "losses": 4,
-        "pct": 0.6923076923076923
-      },
-      "record_str": "9-4 (69%)",
-      "bonus_pct": 0.556,
-      "mv": null
-    },
-    {
-      "rank": 58,
-      "wrestler_id": "35476520132",
-      "name": "kaison phillips",
-      "team": "Pulaski County",
-      "team_short": "PULA",
-      "record": {
-        "wins": 16,
-        "losses": 5,
-        "pct": 0.7619047619047619
-      },
-      "record_str": "16-5 (76%)",
-      "bonus_pct": 0.938,
-      "mv": null
-    },
-    {
-      "rank": 59,
-      "wrestler_id": "35663192132",
-      "name": "Carter Casson",
-      "team": "Ryle",
-      "team_short": "RYLE",
-      "record": {
-        "wins": 9,
-        "losses": 11,
-        "pct": 0.45
-      },
-      "record_str": "9-11 (45%)",
-      "bonus_pct": 0.778,
-      "mv": null
-    },
-    {
-      "rank": 60,
-      "wrestler_id": "35383670132",
-      "name": "Daniel Fickas",
-      "team": "Owensboro",
-      "team_short": "OWEN",
-      "record": {
-        "wins": 9,
-        "losses": 6,
-        "pct": 0.6
-      },
-      "record_str": "9-6 (60%)",
-      "bonus_pct": 0.889,
-      "mv": null
-    },
-    {
-      "rank": 61,
-      "wrestler_id": "34996004132",
-      "name": "Bryson Barnett",
-      "team": "Bell County",
-      "team_short": "BELL",
-      "record": {
-        "wins": 31,
-        "losses": 22,
-        "pct": 0.5849056603773585
-      },
-      "record_str": "31-22 (58%)",
-      "bonus_pct": 0.29,
-      "mv": null
-    },
-    {
-      "rank": 62,
-      "wrestler_id": "35129325132",
-      "name": "Tucker Smallwood",
-      "team": "Perry County Central",
-      "team_short": "PECC",
-      "record": {
-        "wins": 23,
-        "losses": 21,
-        "pct": 0.5227272727272727
-      },
-      "record_str": "23-21 (52%)",
-      "bonus_pct": 0.826,
-      "mv": null
-    },
-    {
-      "rank": 63,
-      "wrestler_id": "35458385132",
-      "name": "Andrew Meade",
-      "team": "Letcher County Central",
-      "team_short": "LETC",
-      "record": {
-        "wins": 11,
-        "losses": 9,
-        "pct": 0.55
-      },
-      "record_str": "11-9 (55%)",
-      "bonus_pct": 0.727,
-      "mv": null
-    },
-    {
-      "rank": 64,
-      "wrestler_id": "35513070132",
-      "name": "Trenton Williamson",
-      "team": "Belfry",
-      "team_short": "BELF",
-      "record": {
-        "wins": 16,
-        "losses": 14,
-        "pct": 0.5333333333333333
-      },
-      "record_str": "16-14 (53%)",
-      "bonus_pct": 0.75,
-      "mv": null
-    },
-    {
-      "rank": 65,
-      "wrestler_id": "35124967132",
-      "name": "Gage Williams",
-      "team": "Montgomery County",
-      "team_short": "MONT",
-      "record": {
-        "wins": 1,
-        "losses": 11,
-        "pct": 0.08333333333333333
-      },
-      "record_str": "1-11 (8%)",
-      "bonus_pct": 1.0,
-      "mv": null
-    },
-    {
-      "rank": 66,
-      "wrestler_id": "35138265132",
-      "name": "Alexander Cissell",
-      "team": "Bethlehem",
-      "team_short": "BETH",
-      "record": {
-        "wins": 6,
-        "losses": 14,
-        "pct": 0.3
-      },
-      "record_str": "6-14 (30%)",
-      "bonus_pct": 0.667,
-      "mv": null
-    },
-    {
-      "rank": 67,
-      "wrestler_id": "34992068132",
-      "name": "Kathryn Floyd",
-      "team": "Bardstown",
-      "team_short": "BARD",
-      "record": {
-        "wins": 14,
-        "losses": 3,
-        "pct": 0.8235294117647058
-      },
-      "record_str": "14-3 (82%)",
-      "bonus_pct": 0.643,
-      "mv": null
-    },
-    {
-      "rank": 68,
-      "wrestler_id": "34997574132",
-      "name": "Isaiah Cook",
-      "team": "George Rogers Clark",
-      "team_short": "GRC",
-      "record": {
-        "wins": 11,
-        "losses": 13,
-        "pct": 0.4583333333333333
-      },
-      "record_str": "11-13 (46%)",
-      "bonus_pct": 0.727,
-      "mv": null
-    },
-    {
-      "rank": 69,
-      "wrestler_id": "35156182132",
-      "name": "Brayden Skaggs",
-      "team": "Taylor County",
-      "team_short": "TAYL",
-      "record": {
-        "wins": 5,
-        "losses": 9,
-        "pct": 0.35714285714285715
-      },
-      "record_str": "5-9 (36%)",
-      "bonus_pct": 1.0,
-      "mv": null
-    },
-    {
-      "rank": 70,
-      "wrestler_id": "35123979132",
-      "name": "Jaxson Wallace",
-      "team": "Boone County",
-      "team_short": "BOCO",
-      "record": {
-        "wins": 15,
-        "losses": 10,
-        "pct": 0.6
-      },
-      "record_str": "15-10 (60%)",
-      "bonus_pct": 0.6,
-      "mv": null
-    },
-    {
-      "rank": 71,
-      "wrestler_id": "35188433132",
-      "name": "Caleb Bonham",
-      "team": "Madison Southern",
-      "team_short": "MADS",
-      "record": {
-        "wins": 10,
-        "losses": 8,
-        "pct": 0.5555555555555556
-      },
-      "record_str": "10-8 (56%)",
-      "bonus_pct": 0.6,
-      "mv": null
-    },
-    {
-      "rank": 72,
-      "wrestler_id": "35090025132",
-      "name": "Kamal Kotolov",
-      "team": "Fern Creek",
-      "team_short": "FERN",
-      "record": {
-        "wins": 10,
-        "losses": 19,
-        "pct": 0.3448275862068966
-      },
-      "record_str": "10-19 (34%)",
-      "bonus_pct": 0.8,
-      "mv": null
-    },
-    {
-      "rank": 73,
       "wrestler_id": "35407700132",
       "name": "Adrian Eatmon",
       "team": "Jeffersontown",
@@ -1100,22 +815,322 @@
       "mv": null
     },
     {
-      "rank": 74,
-      "wrestler_id": "35205186132",
-      "name": "Conner Zurschmeide",
-      "team": "Bullitt East",
-      "team_short": "BULL",
+      "rank": 55,
+      "wrestler_id": "35090025132",
+      "name": "Kamal Kotolov",
+      "team": "Fern Creek",
+      "team_short": "FERN",
       "record": {
-        "wins": 0,
-        "losses": 2,
-        "pct": 0.0
+        "wins": 10,
+        "losses": 19,
+        "pct": 0.3448275862068966
       },
-      "record_str": "0-2 (0%)",
-      "bonus_pct": 0.0,
+      "record_str": "10-19 (34%)",
+      "bonus_pct": 0.8,
+      "mv": null
+    },
+    {
+      "rank": 56,
+      "wrestler_id": "35133608132",
+      "name": "Garrison Meacham",
+      "team": "Hopkinsville",
+      "team_short": "HOP",
+      "record": {
+        "wins": 22,
+        "losses": 14,
+        "pct": 0.6111111111111112
+      },
+      "record_str": "22-14 (61%)",
+      "bonus_pct": 0.727,
+      "mv": null
+    },
+    {
+      "rank": 57,
+      "wrestler_id": "34989025132",
+      "name": "Layton Morehead",
+      "team": "Ohio County",
+      "team_short": "OHIO",
+      "record": {
+        "wins": 7,
+        "losses": 6,
+        "pct": 0.5384615384615384
+      },
+      "record_str": "7-6 (54%)",
+      "bonus_pct": 1.0,
+      "mv": null
+    },
+    {
+      "rank": 58,
+      "wrestler_id": "35271246132",
+      "name": "Mason Smith",
+      "team": "Simon Kenton",
+      "team_short": "SK",
+      "record": {
+        "wins": 13,
+        "losses": 25,
+        "pct": 0.34210526315789475
+      },
+      "record_str": "13-25 (34%)",
+      "bonus_pct": 0.462,
+      "mv": null
+    },
+    {
+      "rank": 59,
+      "wrestler_id": "35192414132",
+      "name": "Mazime Many",
+      "team": "Logan County",
+      "team_short": "LOGA",
+      "record": {
+        "wins": 17,
+        "losses": 12,
+        "pct": 0.5862068965517241
+      },
+      "record_str": "17-12 (59%)",
+      "bonus_pct": 0.471,
+      "mv": null
+    },
+    {
+      "rank": 60,
+      "wrestler_id": "36019587132",
+      "name": "Carter Stewart",
+      "team": "Ashland Blazer",
+      "team_short": "ABLZ",
+      "record": {
+        "wins": 21,
+        "losses": 13,
+        "pct": 0.6176470588235294
+      },
+      "record_str": "21-13 (62%)",
+      "bonus_pct": 0.857,
+      "mv": null
+    },
+    {
+      "rank": 61,
+      "wrestler_id": "34997642132",
+      "name": "Zashawn Matthews",
+      "team": "Western",
+      "team_short": "WEST",
+      "record": {
+        "wins": 9,
+        "losses": 4,
+        "pct": 0.6923076923076923
+      },
+      "record_str": "9-4 (69%)",
+      "bonus_pct": 0.556,
+      "mv": null
+    },
+    {
+      "rank": 62,
+      "wrestler_id": "35476520132",
+      "name": "kaison phillips",
+      "team": "Pulaski County",
+      "team_short": "PULA",
+      "record": {
+        "wins": 16,
+        "losses": 5,
+        "pct": 0.7619047619047619
+      },
+      "record_str": "16-5 (76%)",
+      "bonus_pct": 0.938,
+      "mv": null
+    },
+    {
+      "rank": 63,
+      "wrestler_id": "35663192132",
+      "name": "Carter Casson",
+      "team": "Ryle",
+      "team_short": "RYLE",
+      "record": {
+        "wins": 9,
+        "losses": 11,
+        "pct": 0.45
+      },
+      "record_str": "9-11 (45%)",
+      "bonus_pct": 0.778,
+      "mv": null
+    },
+    {
+      "rank": 64,
+      "wrestler_id": "35383670132",
+      "name": "Daniel Fickas",
+      "team": "Owensboro",
+      "team_short": "OWEN",
+      "record": {
+        "wins": 9,
+        "losses": 6,
+        "pct": 0.6
+      },
+      "record_str": "9-6 (60%)",
+      "bonus_pct": 0.889,
+      "mv": null
+    },
+    {
+      "rank": 65,
+      "wrestler_id": "34996004132",
+      "name": "Bryson Barnett",
+      "team": "Bell County",
+      "team_short": "BELL",
+      "record": {
+        "wins": 31,
+        "losses": 22,
+        "pct": 0.5849056603773585
+      },
+      "record_str": "31-22 (58%)",
+      "bonus_pct": 0.29,
+      "mv": null
+    },
+    {
+      "rank": 66,
+      "wrestler_id": "35129325132",
+      "name": "Tucker Smallwood",
+      "team": "Perry County Central",
+      "team_short": "PECC",
+      "record": {
+        "wins": 23,
+        "losses": 21,
+        "pct": 0.5227272727272727
+      },
+      "record_str": "23-21 (52%)",
+      "bonus_pct": 0.826,
+      "mv": null
+    },
+    {
+      "rank": 67,
+      "wrestler_id": "35458385132",
+      "name": "Andrew Meade",
+      "team": "Letcher County Central",
+      "team_short": "LETC",
+      "record": {
+        "wins": 11,
+        "losses": 9,
+        "pct": 0.55
+      },
+      "record_str": "11-9 (55%)",
+      "bonus_pct": 0.727,
+      "mv": null
+    },
+    {
+      "rank": 68,
+      "wrestler_id": "35513070132",
+      "name": "Trenton Williamson",
+      "team": "Belfry",
+      "team_short": "BELF",
+      "record": {
+        "wins": 16,
+        "losses": 14,
+        "pct": 0.5333333333333333
+      },
+      "record_str": "16-14 (53%)",
+      "bonus_pct": 0.75,
+      "mv": null
+    },
+    {
+      "rank": 69,
+      "wrestler_id": "35124967132",
+      "name": "Gage Williams",
+      "team": "Montgomery County",
+      "team_short": "MONT",
+      "record": {
+        "wins": 1,
+        "losses": 11,
+        "pct": 0.08333333333333333
+      },
+      "record_str": "1-11 (8%)",
+      "bonus_pct": 1.0,
+      "mv": null
+    },
+    {
+      "rank": 70,
+      "wrestler_id": "35138265132",
+      "name": "Alexander Cissell",
+      "team": "Bethlehem",
+      "team_short": "BETH",
+      "record": {
+        "wins": 6,
+        "losses": 14,
+        "pct": 0.3
+      },
+      "record_str": "6-14 (30%)",
+      "bonus_pct": 0.667,
+      "mv": null
+    },
+    {
+      "rank": 71,
+      "wrestler_id": "34992068132",
+      "name": "Kathryn Floyd",
+      "team": "Bardstown",
+      "team_short": "BARD",
+      "record": {
+        "wins": 14,
+        "losses": 3,
+        "pct": 0.8235294117647058
+      },
+      "record_str": "14-3 (82%)",
+      "bonus_pct": 0.643,
+      "mv": null
+    },
+    {
+      "rank": 72,
+      "wrestler_id": "34997574132",
+      "name": "Isaiah Cook",
+      "team": "George Rogers Clark",
+      "team_short": "GRC",
+      "record": {
+        "wins": 11,
+        "losses": 13,
+        "pct": 0.4583333333333333
+      },
+      "record_str": "11-13 (46%)",
+      "bonus_pct": 0.727,
+      "mv": null
+    },
+    {
+      "rank": 73,
+      "wrestler_id": "35156182132",
+      "name": "Brayden Skaggs",
+      "team": "Taylor County",
+      "team_short": "TAYL",
+      "record": {
+        "wins": 5,
+        "losses": 9,
+        "pct": 0.35714285714285715
+      },
+      "record_str": "5-9 (36%)",
+      "bonus_pct": 1.0,
+      "mv": null
+    },
+    {
+      "rank": 74,
+      "wrestler_id": "35123979132",
+      "name": "Jaxson Wallace",
+      "team": "Boone County",
+      "team_short": "BOCO",
+      "record": {
+        "wins": 16,
+        "losses": 10,
+        "pct": 0.6153846153846154
+      },
+      "record_str": "16-10 (62%)",
+      "bonus_pct": 0.625,
       "mv": null
     },
     {
       "rank": 75,
+      "wrestler_id": "35188433132",
+      "name": "Caleb Bonham",
+      "team": "Madison Southern",
+      "team_short": "MADS",
+      "record": {
+        "wins": 10,
+        "losses": 8,
+        "pct": 0.5555555555555556
+      },
+      "record_str": "10-8 (56%)",
+      "bonus_pct": 0.6,
+      "mv": null
+    },
+    {
+      "rank": 76,
       "wrestler_id": "35497256132",
       "name": "Braxton Hamm",
       "team": "Highlands",
@@ -1130,7 +1145,7 @@
       "mv": null
     },
     {
-      "rank": 76,
+      "rank": 77,
       "wrestler_id": "34988663132",
       "name": "Tristan Ward",
       "team": "Trinity (Whitesville)",
@@ -1145,7 +1160,7 @@
       "mv": null
     },
     {
-      "rank": 77,
+      "rank": 78,
       "wrestler_id": "35321133132",
       "name": "Austin Young",
       "team": "North Bullitt",
@@ -1160,7 +1175,7 @@
       "mv": null
     },
     {
-      "rank": 78,
+      "rank": 79,
       "wrestler_id": "35522912132",
       "name": "Caleb Jackson",
       "team": "Seneca",
@@ -1175,7 +1190,7 @@
       "mv": null
     },
     {
-      "rank": 79,
+      "rank": 80,
       "wrestler_id": "35640191132",
       "name": "Clayton Roberts",
       "team": "Great Crossing",
@@ -1187,21 +1202,6 @@
       },
       "record_str": "7-10 (41%)",
       "bonus_pct": 1.0,
-      "mv": null
-    },
-    {
-      "rank": 80,
-      "wrestler_id": "35216672132",
-      "name": "Liam Surber",
-      "team": "Cooper",
-      "team_short": "COOP",
-      "record": {
-        "wins": 18,
-        "losses": 17,
-        "pct": 0.5142857142857142
-      },
-      "record_str": "18-17 (51%)",
-      "bonus_pct": 0.611,
       "mv": null
     },
     {
@@ -1266,21 +1266,6 @@
     },
     {
       "rank": 85,
-      "wrestler_id": "35084067132",
-      "name": "Carmello Shirley",
-      "team": "Ballard",
-      "team_short": "BALL",
-      "record": {
-        "wins": 11,
-        "losses": 29,
-        "pct": 0.275
-      },
-      "record_str": "11-29 (28%)",
-      "bonus_pct": 0.545,
-      "mv": null
-    },
-    {
-      "rank": 86,
       "wrestler_id": "35180959132",
       "name": "Preston Evans",
       "team": "Danville",
@@ -1295,7 +1280,7 @@
       "mv": null
     },
     {
-      "rank": 87,
+      "rank": 86,
       "wrestler_id": "35907871132",
       "name": "Luke Turley",
       "team": "Paul Laurence Dunbar",
@@ -1310,7 +1295,7 @@
       "mv": null
     },
     {
-      "rank": 88,
+      "rank": 87,
       "wrestler_id": "35206875132",
       "name": "Tyler Darling",
       "team": "Adair County",
@@ -1325,7 +1310,7 @@
       "mv": null
     },
     {
-      "rank": 89,
+      "rank": 88,
       "wrestler_id": "34994466132",
       "name": "Anthony Lindquist",
       "team": "Russellville",
@@ -1337,6 +1322,21 @@
       },
       "record_str": "2-5 (29%)",
       "bonus_pct": 0.5,
+      "mv": null
+    },
+    {
+      "rank": 89,
+      "wrestler_id": "35635380132",
+      "name": "Trenton Francis",
+      "team": "Greenup County",
+      "team_short": "GRUP",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "pct": 0.5714285714285714
+      },
+      "record_str": "4-3 (57%)",
+      "bonus_pct": 0.25,
       "mv": null
     },
     {
@@ -1362,10 +1362,10 @@
       "team_short": "SWAR",
       "record": {
         "wins": 5,
-        "losses": 23,
-        "pct": 0.17857142857142858
+        "losses": 22,
+        "pct": 0.18518518518518517
       },
-      "record_str": "5-23 (18%)",
+      "record_str": "5-22 (19%)",
       "bonus_pct": 0.6,
       "mv": null
     },
@@ -1416,6 +1416,21 @@
     },
     {
       "rank": 95,
+      "wrestler_id": "35910673132",
+      "name": "Maddyx Patrick",
+      "team": "Russell",
+      "team_short": "RUSS",
+      "record": {
+        "wins": 17,
+        "losses": 15,
+        "pct": 0.53125
+      },
+      "record_str": "17-15 (53%)",
+      "bonus_pct": 0.706,
+      "mv": null
+    },
+    {
+      "rank": 96,
       "wrestler_id": "35833308132",
       "name": "William Hardin",
       "team": "Mason County",
@@ -1427,21 +1442,6 @@
       },
       "record_str": "2-8 (20%)",
       "bonus_pct": 0.5,
-      "mv": null
-    },
-    {
-      "rank": 96,
-      "wrestler_id": "35910673132",
-      "name": "Maddyx Patrick",
-      "team": "Russell",
-      "team_short": "RUSS",
-      "record": {
-        "wins": 16,
-        "losses": 15,
-        "pct": 0.5161290322580645
-      },
-      "record_str": "16-15 (52%)",
-      "bonus_pct": 0.688,
       "mv": null
     },
     {
@@ -1476,21 +1476,6 @@
     },
     {
       "rank": 99,
-      "wrestler_id": "35281584132",
-      "name": "Luke Davis",
-      "team": "Dixie Heights",
-      "team_short": "DIXI",
-      "record": {
-        "wins": 0,
-        "losses": 7,
-        "pct": 0.0
-      },
-      "record_str": "0-7 (0%)",
-      "bonus_pct": 0.0,
-      "mv": null
-    },
-    {
-      "rank": 100,
       "wrestler_id": "35520779132",
       "name": "Ashton Edwards",
       "team": "Anderson County",
@@ -1505,22 +1490,7 @@
       "mv": null
     },
     {
-      "rank": 101,
-      "wrestler_id": "35754212132",
-      "name": "aiden Runyon",
-      "team": "Lawrence County",
-      "team_short": "LACO",
-      "record": {
-        "wins": 1,
-        "losses": 15,
-        "pct": 0.0625
-      },
-      "record_str": "1-15 (6%)",
-      "bonus_pct": 0.0,
-      "mv": null
-    },
-    {
-      "rank": 102,
+      "rank": 100,
       "wrestler_id": "36434072132",
       "name": "Emma Cupp",
       "team": "Pineville",
@@ -1535,67 +1505,37 @@
       "mv": null
     },
     {
-      "rank": 103,
-      "wrestler_id": "35696067132",
-      "name": "ethan brown",
+      "rank": 101,
+      "wrestler_id": "35526492132",
+      "name": "Jarren Weatherspoon",
       "team": "Western Hills",
       "team_short": "WHIL",
       "record": {
-        "wins": 4,
-        "losses": 12,
-        "pct": 0.25
+        "wins": 6,
+        "losses": 16,
+        "pct": 0.2727272727272727
       },
-      "record_str": "4-12 (25%)",
+      "record_str": "6-16 (27%)",
       "bonus_pct": 0.0,
       "mv": null
     },
     {
-      "rank": 104,
-      "wrestler_id": "35638124132",
-      "name": "Sawyer Hargrove",
+      "rank": 102,
+      "wrestler_id": "37526449132",
+      "name": "Dominick LaFavers",
       "team": "Russell County",
       "team_short": "RUCO",
       "record": {
-        "wins": 2,
-        "losses": 8,
-        "pct": 0.2
+        "wins": 1,
+        "losses": 1,
+        "pct": 0.5
       },
-      "record_str": "2-8 (20%)",
-      "bonus_pct": 1.0,
-      "mv": null
-    },
-    {
-      "rank": 105,
-      "wrestler_id": "36934168132",
-      "name": "Rylin Murphy",
-      "team": "Frankfort",
-      "team_short": "FRAN",
-      "record": {
-        "wins": 0,
-        "losses": 2,
-        "pct": 0.0
-      },
-      "record_str": "0-2 (0%)",
+      "record_str": "1-1 (50%)",
       "bonus_pct": 0.0,
       "mv": null
     },
     {
-      "rank": 106,
-      "wrestler_id": "35635380132",
-      "name": "Trenton Francis",
-      "team": "Greenup County",
-      "team_short": "GRUP",
-      "record": {
-        "wins": 4,
-        "losses": 3,
-        "pct": 0.5714285714285714
-      },
-      "record_str": "4-3 (57%)",
-      "bonus_pct": 0.25,
-      "mv": null
-    },
-    {
-      "rank": 107,
+      "rank": 103,
       "wrestler_id": "34993874132",
       "name": "Brendan Martin",
       "team": "Green County",
@@ -1610,7 +1550,7 @@
       "mv": null
     },
     {
-      "rank": 108,
+      "rank": 104,
       "wrestler_id": "35445155132",
       "name": "Trevin Durham",
       "team": "Somerset",
@@ -1625,7 +1565,7 @@
       "mv": null
     },
     {
-      "rank": 109,
+      "rank": 105,
       "wrestler_id": "37181931132",
       "name": "Braxton McCullar",
       "team": "West Jessamine",
@@ -1640,7 +1580,7 @@
       "mv": null
     },
     {
-      "rank": 110,
+      "rank": 106,
       "wrestler_id": "35886903132",
       "name": "lucas barnes",
       "team": "Wayne County",
@@ -1655,22 +1595,7 @@
       "mv": null
     },
     {
-      "rank": 111,
-      "wrestler_id": "34993293132",
-      "name": "Kaylee Klee",
-      "team": "Daviess County",
-      "team_short": "DAVC",
-      "record": {
-        "wins": 0,
-        "losses": 0,
-        "pct": 0.0
-      },
-      "record_str": "0-0 (—)",
-      "bonus_pct": 0.0,
-      "mv": null
-    },
-    {
-      "rank": 112,
+      "rank": 107,
       "wrestler_id": "35141577132",
       "name": "Ashton Collett",
       "team": "Bourbon County",
@@ -1685,7 +1610,7 @@
       "mv": null
     },
     {
-      "rank": 113,
+      "rank": 108,
       "wrestler_id": "35144082132",
       "name": "Ryder Wall",
       "team": "Desales",
@@ -1700,7 +1625,7 @@
       "mv": null
     },
     {
-      "rank": 114,
+      "rank": 109,
       "wrestler_id": "35193710132",
       "name": "Sofia Fomell De Amas",
       "team": "Dupont Manual",
@@ -1715,7 +1640,22 @@
       "mv": null
     },
     {
-      "rank": 115,
+      "rank": 110,
+      "wrestler_id": "35205068132",
+      "name": "Devin Sims",
+      "team": "Bullitt East",
+      "team_short": "BULL",
+      "record": {
+        "wins": 0,
+        "losses": 0,
+        "pct": 0.0
+      },
+      "record_str": "0-0 (—)",
+      "bonus_pct": 0.0,
+      "mv": null
+    },
+    {
+      "rank": 111,
       "wrestler_id": "35215294132",
       "name": "Lazaro Hernandez Padron",
       "team": "Doss",
@@ -1730,7 +1670,7 @@
       "mv": null
     },
     {
-      "rank": 116,
+      "rank": 112,
       "wrestler_id": "35222499132",
       "name": "Malachi Kord",
       "team": "Mercer County",
@@ -1745,7 +1685,7 @@
       "mv": null
     },
     {
-      "rank": 117,
+      "rank": 113,
       "wrestler_id": "35225601132",
       "name": "Jayanha Huffman",
       "team": "Frederick Douglass",
@@ -1760,7 +1700,7 @@
       "mv": null
     },
     {
-      "rank": 118,
+      "rank": 114,
       "wrestler_id": "35228457132",
       "name": "Camden Dobson",
       "team": "Butler",
@@ -1775,7 +1715,22 @@
       "mv": null
     },
     {
-      "rank": 119,
+      "rank": 115,
+      "wrestler_id": "35281283132",
+      "name": "Mario Chapeta",
+      "team": "Dixie Heights",
+      "team_short": "DIXI",
+      "record": {
+        "wins": 0,
+        "losses": 0,
+        "pct": 0.0
+      },
+      "record_str": "0-0 (—)",
+      "bonus_pct": 0.0,
+      "mv": null
+    },
+    {
+      "rank": 116,
       "wrestler_id": "35342146132",
       "name": "Jordan Cooper",
       "team": "Scott",
@@ -1790,7 +1745,7 @@
       "mv": null
     },
     {
-      "rank": 120,
+      "rank": 117,
       "wrestler_id": "35455378132",
       "name": "Jersey Davis",
       "team": "Southwestern",
@@ -1805,7 +1760,7 @@
       "mv": null
     },
     {
-      "rank": 121,
+      "rank": 118,
       "wrestler_id": "35700433132",
       "name": "mason helmandollar",
       "team": "Paintsville",
@@ -1820,7 +1775,7 @@
       "mv": null
     },
     {
-      "rank": 122,
+      "rank": 119,
       "wrestler_id": "36679119132",
       "name": "Madalyn Harbin",
       "team": "Thomas Nelson",
@@ -1835,7 +1790,7 @@
       "mv": null
     },
     {
-      "rank": 123,
+      "rank": 120,
       "wrestler_id": "35643316132",
       "name": "Joseph Scott",
       "team": "Campbellsville",
@@ -1850,7 +1805,7 @@
       "mv": null
     },
     {
-      "rank": 124,
+      "rank": 121,
       "wrestler_id": "35457962132",
       "name": "Jaden Atwell",
       "team": "Hart County",
@@ -1865,7 +1820,7 @@
       "mv": null
     },
     {
-      "rank": 125,
+      "rank": 122,
       "wrestler_id": "35185742132",
       "name": "ZaHir Covington",
       "team": "WEB DuBois",
@@ -1880,7 +1835,22 @@
       "mv": null
     },
     {
-      "rank": 126,
+      "rank": 123,
+      "wrestler_id": "35751942132",
+      "name": "Logan Dean",
+      "team": "Lawrence County",
+      "team_short": "LACO",
+      "record": {
+        "wins": 3,
+        "losses": 10,
+        "pct": 0.23076923076923078
+      },
+      "record_str": "3-10 (23%)",
+      "bonus_pct": 0.667,
+      "mv": null
+    },
+    {
+      "rank": 124,
       "wrestler_id": "35640092132",
       "name": "Connor Crider",
       "team": "Harlan County",
@@ -1891,6 +1861,36 @@
         "pct": 0.0
       },
       "record_str": "0-3 (0%)",
+      "bonus_pct": 0.0,
+      "mv": null
+    },
+    {
+      "rank": 125,
+      "wrestler_id": "36088051132",
+      "name": "Camden Graichen",
+      "team": "East Jessamine",
+      "team_short": "EJ",
+      "record": {
+        "wins": 6,
+        "losses": 18,
+        "pct": 0.25
+      },
+      "record_str": "6-18 (25%)",
+      "bonus_pct": 0.833,
+      "mv": null
+    },
+    {
+      "rank": 126,
+      "wrestler_id": "36934168132",
+      "name": "Rylin Murphy",
+      "team": "Frankfort",
+      "team_short": "FRAN",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "pct": 0.0
+      },
+      "record_str": "0-2 (0%)",
       "bonus_pct": 0.0,
       "mv": null
     }

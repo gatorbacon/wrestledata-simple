@@ -245,29 +245,49 @@ def load_all_wrestler_info(season: int, data_dir: str) -> Dict[str, Dict]:
     return wrestlers
 
 
+def _match_identity_key(match: Dict) -> Optional[Tuple]:
+    """Return a hashable key for deduplicating the same match across weight class files."""
+    w1_id = match.get("wrestler1_id")
+    w2_id = match.get("wrestler2_id")
+    if not w1_id or not w2_id:
+        return None
+    date = match.get("date", "")
+    result = (match.get("result") or "").strip()
+    return (date, tuple(sorted([str(w1_id), str(w2_id)])), result)
+
+
 def load_all_matches_from_weight_classes(
     season: int, data_dir: str
 ) -> Dict[str, List[Dict]]:
-    """Load all matches from weight class files, organized by wrestler_id."""
+    """Load all matches from weight class files, organized by wrestler_id.
+    Deduplicates by match identity so the same bout is not counted twice
+    when it appears in multiple weight class files."""
     data_path = Path(data_dir) / str(season)
     matches_by_wrestler = defaultdict(list)
-    
+    seen_by_wrestler = defaultdict(set)  # wrestler_id -> set of match_identity_key
+
     for wc_file in sorted(data_path.glob("weight_class_*.json")):
         try:
             with wc_file.open("r", encoding="utf-8") as f:
                 wc_data = json.load(f)
         except Exception:
             continue
-        
+
         for match in wc_data.get("matches", []):
             w1_id = match.get("wrestler1_id")
             w2_id = match.get("wrestler2_id")
-            
+            key = _match_identity_key(match)
+            if key is None:
+                continue
+
             if w1_id:
-                matches_by_wrestler[w1_id].append(match)
-            if w2_id:
-                matches_by_wrestler[w2_id].append(match)
-    
+                if key not in seen_by_wrestler[w1_id]:
+                    seen_by_wrestler[w1_id].add(key)
+                    matches_by_wrestler[w1_id].append(match)
+            if w2_id and w2_id != w1_id:
+                if key not in seen_by_wrestler[w2_id]:
+                    seen_by_wrestler[w2_id].add(key)
+                    matches_by_wrestler[w2_id].append(match)
     return dict(matches_by_wrestler)
 
 
@@ -1125,7 +1145,15 @@ def build_wrestler_profile(
                     career_record = calculate_career_record(season_summary)
                     if career_record:
                         profile["career_record"] = career_record
-    
+
+                    # Use season accomplishments record for current season so it matches
+                    # Career Summary and is consistent everywhere (Season Stats, leaderboards).
+                    for entry in season_summary:
+                        if entry.get("season") == season:
+                            acc_record = entry.get("record", "").strip()
+                            if acc_record:
+                                profile["record"]["overall"] = acc_record
+                            break
     return profile
 
 

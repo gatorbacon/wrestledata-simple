@@ -3,13 +3,13 @@
   "name": "Miley Pennington",
   "team": "Prestonsburg",
   "team_slug": "prestonsburg",
-  "team_rank": 23,
+  "team_rank": 24,
   "weight_class": 100,
   "year": 2026,
-  "current_rank": 53,
+  "current_rank": 55,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-1",
+    "overall": "0-3",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -28,18 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35814907132",
-      "opponent_rank": 11,
-      "opponent_name": "Aaliyah Hackney",
-      "method": "Fall 0:24"
+      "opponent_id": "35333392132",
+      "opponent_rank": 44,
+      "opponent_name": "Clara Griffin",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35333392132",
+      "opponent_name": "Clara Griffin",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 100,
+      "opponent_rank": 44,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lady Cardinal Showcase"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "35814907132",
@@ -47,7 +62,7 @@
       "opponent_team": "Belfry",
       "opponent_team_rank": null,
       "opponent_weight": 100,
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "weight_class": "100",
       "result": "L",
       "method": "FALL",
