@@ -12,6 +12,11 @@ This script generates:
 IMPORTANT: This script uses starter-only rankings (rankings_starters_*.json)
 for determining opponent ranks. Run build_starter_rankings.py first.
 
+Pipeline order (for hybrid current_rank on wrestler + team pages):
+  calculate_elo_ratings.py → build_wrestler_profiles.py → build_team_profiles.py
+Then optionally: create_rankings_release.py --archive, build_team_metrics.py,
+generate_search_index.py, build_leaderboards.py.
+
 Usage:
     python scripts/rankings/build_starter_rankings.py -season 2026
     python scripts/rankings/build_wrestler_profiles.py -season 2026
@@ -88,6 +93,32 @@ def _load_full_rank_map(season: int, data_dir: str = "mt/rankings_data", league:
                 rank_by_id[wid] = rk
     
     return rank_by_id
+
+
+def _load_hybrid_rank_map(season: int, gender: str, data_dir: str = "mt/elo_ratings") -> Dict[str, int]:
+    """
+    Load hybrid ranks from ELO output (wrestler_id -> best hybrid rank).
+    Used for current_rank on wrestler/team profiles so we display hybrid everywhere.
+    Returns empty dict if file missing (fallback to matrix rank).
+    """
+    path = Path(data_dir) / gender / str(season) / "elo_ratings.json"
+    if not path.exists():
+        return {}
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return {}
+    out: Dict[str, int] = {}
+    for entry in data:
+        wid = entry.get("wrestler_id")
+        hr = entry.get("hybrid_rank")
+        if wid is not None and hr is not None:
+            try:
+                out[str(wid)] = int(hr)
+            except (TypeError, ValueError):
+                continue
+    return out
 
 
 def _load_starter_rank_map(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', gender: str = None) -> Dict[str, int]:
@@ -1009,6 +1040,7 @@ def build_wrestler_profile(
     match_mv_impact_lookup: Optional[Dict] = None,
     gender: Optional[str] = None,
     career_lookup: Optional[Dict[str, str]] = None,
+    hybrid_rank_by_id: Optional[Dict[str, int]] = None,
 ) -> Dict:
     """Build complete wrestler profile JSON."""
     wrestler_info = all_wrestlers.get(wrestler_id, {})
@@ -1019,7 +1051,11 @@ def build_wrestler_profile(
     
     team_slug = team_name_to_slug(team)
     team_rank = team_rank_by_name.get(team)
-    current_rank = rank_by_id.get(wrestler_id)
+    # Use hybrid rank for display when available (HS); otherwise matrix rank
+    if hybrid_rank_by_id:
+        current_rank = hybrid_rank_by_id.get(wrestler_id) or rank_by_id.get(wrestler_id)
+    else:
+        current_rank = rank_by_id.get(wrestler_id)
     
     # Get advanced metrics
     metrics_data = metrics_by_id.get(wrestler_id, {})
@@ -1212,6 +1248,13 @@ def main() -> None:
             rank_by_id = _load_full_rank_map(season, base_data_dir, league=league, gender=gender)
             print(f"Loaded full rankings for {len(rank_by_id)} wrestlers")
             
+            print("\nLoading hybrid ranks (for current_rank display)...")
+            hybrid_rank_by_id = _load_hybrid_rank_map(season, gender)
+            if hybrid_rank_by_id:
+                print(f"Loaded hybrid ranks for {len(hybrid_rank_by_id)} wrestlers")
+            else:
+                print("No hybrid ranks (elo_ratings.json missing); using matrix rank for current_rank")
+            
             print("\nCalculating team rankings...")
             team_rank_by_name, team_scores = calculate_team_rankings(season, data_dir)
             print(f"Calculated rankings for {len(team_rank_by_name)} teams")
@@ -1305,6 +1348,7 @@ def main() -> None:
                     match_mv_impact_lookup,
                     gender=gender,
                     career_lookup=career_lookup,
+                    hybrid_rank_by_id=hybrid_rank_by_id,
                 )
                 
                 # Preserve existing bonus data if it exists

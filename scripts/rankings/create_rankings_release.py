@@ -85,6 +85,30 @@ def load_rankings(rankings_path: Path) -> Dict:
         return json.load(f)
 
 
+def load_elo_by_id(season: int, gender: str) -> Dict[str, Dict]:
+    """
+    Load ELO ratings for hybrid_rank_by_weight lookup.
+    Returns Dict[wrestler_id -> { "hybrid_rank_by_weight": { "126": 11, ... } }].
+    """
+    path = Path(f"mt/elo_ratings/{gender}/{season}/elo_ratings.json")
+    if not path.exists():
+        return {}
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return {}
+    out: Dict[str, Dict] = {}
+    for entry in data:
+        wid = entry.get("wrestler_id")
+        if wid is None:
+            continue
+        hrw = entry.get("hybrid_rank_by_weight")
+        if isinstance(hrw, dict):
+            out[str(wid)] = {"hybrid_rank_by_weight": hrw}
+    return out
+
+
 def load_team_region_mapping(gender: str) -> Dict[str, str]:
     """
     Load team to region mapping from teams.json file.
@@ -431,25 +455,14 @@ def enrich_rankings_with_region_data(
         # Load wrestler profile for record and bonus_pct
         profile = load_wrestler_profile(wid, season, gender)
         
-        # Extract record from profile (preferred) or ranking entry
+        # Use record only from wrestler profile (deduplicated, correct). Do NOT fall back to
+        # the ranking entry's record — that can come from matrix/ELO and may count matches twice.
         record_data = None
         record_str = None
-        
         if profile and "record" in profile:
             record_overall = profile["record"].get("overall")
             if record_overall:
                 record_data = parse_record(record_overall)
-                if record_data:
-                    record_str = format_record_str(
-                        record_data["wins"],
-                        record_data["losses"]
-                    )
-        
-        # Fallback to ranking entry record
-        if not record_data:
-            ranking_record = entry.get("record")
-            if ranking_record:
-                record_data = parse_record(str(ranking_record))
                 if record_data:
                     record_str = format_record_str(
                         record_data["wins"],
@@ -1436,6 +1449,13 @@ def create_baseline_archive(
     else:
         print("No placement notes found (this is okay)")
     
+    # Load ELO data for hybrid_rank per weight (for rankings page display)
+    elo_by_id = load_elo_by_id(season, gender)
+    if elo_by_id:
+        print(f"Loaded ELO data for {len(elo_by_id)} wrestlers (hybrid_rank in archive)")
+    else:
+        print("No ELO data (hybrid_rank will fall back to matrix rank in archive)")
+    
     # Determine if this is a baseline drop and find previous drop
     index_dir = archive_base / gender / str(season)
     index_file = index_dir / "index.json"
@@ -1511,6 +1531,13 @@ def create_baseline_archive(
                 rankings, region_mapping, gender, season, top_n, placement_notes,
                 previous_rankings if previous_rankings else None
             )
+            
+            # Add hybrid_rank per wrestler (for rankings page; falls back to matrix rank)
+            for w in enriched_rankings:
+                wid = w.get("wrestler_id")
+                hrw = elo_by_id.get(str(wid), {}).get("hybrid_rank_by_weight", {}) if elo_by_id else {}
+                val = hrw.get(str(weight))
+                w["hybrid_rank"] = int(val) if val is not None and isinstance(val, (int, float)) else w.get("rank")
             
             # Create output structure
             output_data = {

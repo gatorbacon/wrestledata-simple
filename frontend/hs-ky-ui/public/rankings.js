@@ -477,7 +477,7 @@ function renderRankings(data, gender, weight, isBaseline, season) {
     rankTd.style.width = "3em";
     rankTd.style.paddingRight = "0.25em";
     rankTd.style.textAlign = "center";
-    rankTd.textContent = safe(wrestler.rank);
+    rankTd.textContent = safe(wrestler.hybrid_rank ?? wrestler.rank);
     tr.appendChild(rankTd);
     
     // Movement indicator column (separate column for alignment)

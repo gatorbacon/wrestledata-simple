@@ -36,6 +36,7 @@
         method="POST"
         style="max-width: 600px;"
       >
+        <input type="hidden" name="_next" id="formspree-next" value="" />
 
         <!-- Required Fields -->
         <div style="margin-bottom: 1.5em;">
@@ -177,57 +178,22 @@
   </div>
   <script src="/footer.js"></script>
   <script>
+    // Redirect back to this page with ?success=true after Formspree submission
     (function() {
-      var form = document.getElementById('report-form');
-      var successDiv = document.getElementById('form-success');
-      var introP = document.getElementById('form-intro');
-      var formspreeEndpoint = 'https://formspree.io/f/xzdappzg';
-
-      if (window.location.search.includes('success=true')) {
-        if (successDiv && introP && form) {
-          successDiv.style.display = 'block';
-          introP.style.display = 'none';
-          form.style.display = 'none';
-        }
-        return;
-      }
-
-      if (form) {
-        form.addEventListener('submit', function(e) {
-          e.preventDefault();
-          var btn = form.querySelector('button[type="submit"]');
-          var originalText = btn ? btn.textContent : '';
-          if (btn) {
-            btn.disabled = true;
-            btn.textContent = 'Sending...';
-          }
-          var formData = new FormData(form);
-          fetch(formspreeEndpoint, {
-            method: 'POST',
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-          })
-            .then(function(r) {
-              if (r.ok) {
-                if (successDiv && introP) {
-                  successDiv.style.display = 'block';
-                  introP.style.display = 'none';
-                  form.style.display = 'none';
-                }
-              } else {
-                throw new Error('Formspree error');
-              }
-            })
-            .catch(function() {
-              if (btn) {
-                btn.disabled = false;
-                btn.textContent = originalText;
-              }
-              alert('Something went wrong sending your message. Please try again or email us directly.');
-            });
-        });
-      }
+      var next = document.getElementById('formspree-next');
+      if (next) next.value = window.location.origin + '/report.html?success=true';
     })();
+    // Show in-page thank you when redirected with ?success=true
+    if (window.location.search.includes('success=true')) {
+      const successDiv = document.getElementById('form-success');
+      const introP = document.getElementById('form-intro');
+      const form = document.getElementById('report-form');
+      if (successDiv && introP && form) {
+        successDiv.style.display = 'block';
+        introP.style.display = 'none';
+        form.style.display = 'none';
+      }
+    }
   </script>
 </body>
 </html>
