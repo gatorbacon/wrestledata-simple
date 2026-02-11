@@ -582,6 +582,24 @@ function safe(value, formatter) {
     
     const seasonMV = isHS ? null : mv.mv_avg;
     renderMatchTable(data.match_list || [], seasonMV, isHS);
+
+    // Match Data Notice (system notice below matches): last update date + instructional copy
+    const noteEl = document.getElementById("match-data-note");
+    if (noteEl) {
+      const rawDate = data.profile_generated_at;
+      if (rawDate) {
+        const dateObj = new Date(rawDate + "T12:00:00");
+        const formattedDate = dateObj.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+        noteEl.innerHTML = [
+          '<p class="system-notice__title">Match Data Notice</p>',
+          '<p class="system-notice__line1"><strong>Last data update:</strong> ' + formattedDate + '</p>',
+          '<p class="system-notice__line2">If a match is missing here, it means it had not been entered into TrackWrestling by the coach as of that date. Before contacting KentuckyMat about a missing match, please confirm with the coach that the result has been entered.</p>'
+        ].join("");
+        noteEl.style.display = "block";
+      } else {
+        noteEl.style.display = "none";
+      }
+    }
   }
   
   // Helper function to calculate winning percentage from record string

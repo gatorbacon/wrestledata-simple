@@ -64,11 +64,29 @@ function renderLeaderboard() {
 
   // Update table headers based on stat type (must be done before checking entries)
   updateTableHeaders();
-  
+
+  // Career Wins only: show/hide note and legend; set note year from data
+  const noteEl = document.getElementById('career-wins-note');
+  const legendEl = document.getElementById('career-wins-legend');
+  if (noteEl && legendEl) {
+    if (currentStat === 'career_wins') {
+      const year = data.career_earliest_season;
+      noteEl.textContent = year != null
+        ? `Note: Career records include match data starting with the ${year} season.`
+        : '';
+      noteEl.style.display = noteEl.textContent ? 'block' : 'none';
+      legendEl.textContent = 'Graduation year colors indicate class • Outlined pills indicate graduated wrestlers';
+      legendEl.style.display = 'block';
+    } else {
+      noteEl.style.display = 'none';
+      legendEl.style.display = 'none';
+    }
+  }
+
   const entries = data[currentStat] || [];
   const tbody = document.getElementById('leaderboard-tbody');
   
-  const colCount = currentStat === 'career_wins' ? 5 : 6;
+  const colCount = currentStat === 'career_wins' ? 6 : 6;
   if (entries.length === 0) {
     tbody.innerHTML = `<tr><td colspan="${colCount}" style="text-align: center; padding: 2em; color: var(--text-secondary);">No data available</td></tr>`;
     return;
@@ -87,13 +105,20 @@ function renderLeaderboard() {
     rankTd.style.fontWeight = '600';
     tr.appendChild(rankTd);
 
-    // Name (linked to wrestler profile)
+    // Name (linked to wrestler profile only when profile exists; Career Wins inactive = no link)
     const nameTd = document.createElement('td');
     nameTd.className = 'name';
-    const nameLink = document.createElement('a');
-    nameLink.href = buildPageURL('wrestler.html', currentGender, { id: entry.wrestler_id });
-    nameLink.textContent = entry.name;
-    nameTd.appendChild(nameLink);
+    const seasonYear = parseInt(getSeasonFromURL(), 10) || 2026;
+    const gradYear = entry.graduation_year != null ? parseInt(entry.graduation_year, 10) : null;
+    const isActive = currentStat !== 'career_wins' || gradYear == null || gradYear >= seasonYear;
+    if (isActive) {
+      const nameLink = document.createElement('a');
+      nameLink.href = buildPageURL('wrestler.html', currentGender, { id: entry.wrestler_id });
+      nameLink.textContent = entry.name;
+      nameTd.appendChild(nameLink);
+    } else {
+      nameTd.textContent = entry.name;
+    }
     tr.appendChild(nameTd);
 
     // Team
@@ -120,6 +145,21 @@ function renderLeaderboard() {
       winPctTd.style.textAlign = 'center';
       winPctTd.style.fontWeight = '600';
       tr.appendChild(winPctTd);
+
+      // Graduation year pill (active = filled by class; inactive = outlined)
+      const gradTd = document.createElement('td');
+      gradTd.style.textAlign = 'center';
+      const seasonYear = parseInt(getSeasonFromURL(), 10) || 2026;
+      const gradYear = entry.graduation_year != null ? parseInt(entry.graduation_year, 10) : null;
+      if (gradYear == null) {
+        gradTd.textContent = '—';
+      } else {
+        const span = document.createElement('span');
+        span.className = getGraduationPillClass(gradYear, seasonYear);
+        span.textContent = String(gradYear);
+        gradTd.appendChild(span);
+      }
+      tr.appendChild(gradTd);
     } else {
       // Regular stats: Rank, W-L, Stat
       // Rank (wrestler rank)
@@ -147,6 +187,21 @@ function renderLeaderboard() {
 }
 
 /**
+ * Graduation pill CSS class: active = filled by class (senior/junior/soph/freshman), inactive = outlined
+ * currentSeasonYear = e.g. 2026; graduation_year from entry
+ */
+function getGraduationPillClass(graduationYear, currentSeasonYear) {
+  const base = 'graduation-pill';
+  if (graduationYear < currentSeasonYear) {
+    return base + ' graduation-pill--outlined';
+  }
+  if (graduationYear === currentSeasonYear) return base + ' graduation-pill--senior';
+  if (graduationYear === currentSeasonYear + 1) return base + ' graduation-pill--junior';
+  if (graduationYear === currentSeasonYear + 2) return base + ' graduation-pill--sophomore';
+  return base + ' graduation-pill--freshman';
+}
+
+/**
  * Update table headers based on current stat type
  */
 function updateTableHeaders() {
@@ -154,8 +209,8 @@ function updateTableHeaders() {
   if (!thead) return;
   
   if (currentStat === 'career_wins') {
-    // Career Wins headers: #, Name, Team, Career Record, Winning %
-    const headers = ['#', 'Name', 'Team', 'Career Record', 'Winning %'];
+    // Career Wins headers: #, Name, Team, Career Record, Winning %, Graduation
+    const headers = ['#', 'Name', 'Team', 'Career Record', 'Winning %', 'Graduation'];
     thead.innerHTML = '';
     headers.forEach((headerText, index) => {
       const th = document.createElement('th');

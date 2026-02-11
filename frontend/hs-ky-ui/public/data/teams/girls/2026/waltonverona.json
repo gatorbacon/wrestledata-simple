@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-05T14:06:52.351306Z",
+  "generated_at_utc": "2026-02-11T19:52:16.214661Z",
   "starters": {
     "107": {
       "weight": 107,
@@ -29,77 +29,29 @@
       "name": "Emma Moore",
       "current_rank": 2,
       "grade": null,
-      "xtp": 18.44,
+      "xtp": 18.48,
       "xtp_p": 10.07,
       "xtp_a": 3.42,
-      "xtp_b": 4.95,
+      "xtp_b": 4.99,
       "xtp_simple": 24.0,
       "top10_record": {
-        "wins": 5,
+        "wins": 6,
         "losses": 1
       },
       "top33_record": {
-        "wins": 13,
+        "wins": 14,
         "losses": 1
       },
-      "wins": 32,
+      "wins": 37,
       "losses": 5,
-      "top25_wins": 11,
-      "bonus_rate": 0.75
+      "top25_wins": 13,
+      "bonus_rate": 0.829
     },
     "114": {
       "weight": 114,
       "wrestler_id": "35352384132",
       "name": "Emily Stephenson",
-      "current_rank": 34,
-      "grade": null,
-      "xtp": 1.13,
-      "xtp_p": 0.09,
-      "xtp_a": 0.34,
-      "xtp_b": 0.7,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 5
-      },
-      "top33_record": {
-        "wins": 1,
-        "losses": 7
-      },
-      "wins": 16,
-      "losses": 9,
-      "top25_wins": 1,
-      "bonus_rate": 0.938
-    },
-    "120": {
-      "weight": 120,
-      "wrestler_id": "35352426132",
-      "name": "Abrielle Hooten",
-      "current_rank": 24,
-      "grade": null,
-      "xtp": 2.39,
-      "xtp_p": 0.37,
-      "xtp_a": 0.81,
-      "xtp_b": 1.21,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 3
-      },
-      "top33_record": {
-        "wins": 1,
-        "losses": 7
-      },
-      "wins": 11,
-      "losses": 13,
-      "top25_wins": 0,
-      "bonus_rate": 0.545
-    },
-    "126": {
-      "weight": 126,
-      "wrestler_id": "35352432132",
-      "name": "Dezeray Morris",
-      "current_rank": 66,
+      "current_rank": 38,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -108,51 +60,27 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 2
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 6
-      },
-      "wins": 4,
-      "losses": 14,
-      "top25_wins": 0,
-      "bonus_rate": 1.0
-    },
-    "132": {
-      "weight": 132,
-      "wrestler_id": "35352429132",
-      "name": "Natalia Lucas",
-      "current_rank": 36,
-      "grade": null,
-      "xtp": 1.32,
-      "xtp_p": 0.03,
-      "xtp_a": 0.3,
-      "xtp_b": 0.99,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 3
+        "losses": 7
       },
       "top33_record": {
         "wins": 1,
-        "losses": 6
+        "losses": 9
       },
-      "wins": 11,
-      "losses": 11,
-      "top25_wins": 0,
-      "bonus_rate": 0.818
+      "wins": 16,
+      "losses": 13,
+      "top25_wins": 1,
+      "bonus_rate": 1.0
     },
-    "145": {
-      "weight": 145,
-      "wrestler_id": "35352420132",
-      "name": "Jaelynn Holcomb",
-      "current_rank": 34,
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35352426132",
+      "name": "Abrielle Hooten",
+      "current_rank": 21,
       "grade": null,
-      "xtp": 1.22,
-      "xtp_p": 0.18,
-      "xtp_a": 0.49,
-      "xtp_b": 0.55,
+      "xtp": 2.85,
+      "xtp_p": 0.41,
+      "xtp_a": 0.85,
+      "xtp_b": 1.59,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -160,29 +88,101 @@
       },
       "top33_record": {
         "wins": 1,
-        "losses": 9
+        "losses": 10
+      },
+      "wins": 14,
+      "losses": 18,
+      "top25_wins": 1,
+      "bonus_rate": 0.75
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35352392132",
+      "name": "Chloe Schwanenberger",
+      "current_rank": 14,
+      "grade": null,
+      "xtp": 5.11,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 2.91,
+      "xtp_simple": 0.5,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      },
+      "wins": 6,
+      "losses": 4,
+      "top25_wins": 1,
+      "bonus_rate": 0.667
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35352429132",
+      "name": "Natalia Lucas",
+      "current_rank": 32,
+      "grade": null,
+      "xtp": 1.42,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 1.07,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 8
       },
       "wins": 11,
-      "losses": 10,
+      "losses": 11,
       "top25_wins": 0,
-      "bonus_rate": 0.909
+      "bonus_rate": 1.0
+    },
+    "145": {
+      "weight": 145,
+      "wrestler_id": "35352420132",
+      "name": "Jaelynn Holcomb",
+      "current_rank": 33,
+      "grade": null,
+      "xtp": 1.66,
+      "xtp_p": 0.15,
+      "xtp_a": 0.44,
+      "xtp_b": 1.07,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 7
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 11
+      },
+      "wins": 11,
+      "losses": 14,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     }
   },
   "remaining": [
     {
       "weight": 126,
-      "wrestler_id": "35352392132",
-      "name": "Chloe Schwanenberger",
+      "wrestler_id": "35352432132",
+      "name": "Dezeray Morris",
       "grade": null,
-      "wins": 2,
-      "losses": 1,
-      "top25_wins": 1,
+      "wins": 4,
+      "losses": 14,
+      "top25_wins": 0,
       "bonus_rate": 1.0
     }
   ],
-  "team_xTP_simple": 24.0,
+  "team_xTP_simple": 24.5,
   "team_metrics": {
-    "projected_state_points": 24.0,
+    "projected_state_points": 24.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -192,30 +192,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 125,
-      "losses": 98
+      "wins": 95,
+      "losses": 65
     },
     "top33": {
-      "wins": 17,
-      "losses": 36
+      "wins": 18,
+      "losses": 41
     },
     "top10": {
-      "wins": 5,
-      "losses": 19
+      "wins": 6,
+      "losses": 23
     },
     "bonus_rate": {
-      "value": 0.544,
-      "rank": 90,
+      "value": 0.874,
+      "rank": 96,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.528,
-      "rank": 79,
+      "value": 0.828,
+      "rank": 77,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.016,
-      "rank": 44,
+      "value": 0.034,
+      "rank": 39,
       "rank_scope": "league"
     }
   }

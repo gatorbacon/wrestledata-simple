@@ -304,6 +304,7 @@ def load_wrestler_metrics(profile: Dict) -> Optional[Dict]:
     bonus_wins = 0
     pin_wins = 0
     tech_wins = 0
+    forfeit_wins = 0
     
     if match_list:
         for match in match_list:
@@ -324,17 +325,19 @@ def load_wrestler_metrics(profile: Dict) -> Optional[Dict]:
                         top33_wins += 1
             
             if is_win:
-                # Check for bonus wins
-                # User specified: "MD", "TF", "FALL" are the bonus methods
                 method_upper = method.upper() if method else ""
-                if method_upper == "MD":
-                    bonus_wins += 1
-                elif method_upper == "TF":
-                    bonus_wins += 1
-                    tech_wins += 1
-                elif method_upper in ["FALL", "PIN"]:  # PIN is alias for FALL in data
-                    bonus_wins += 1
-                    pin_wins += 1
+                if method_upper == "FF":
+                    forfeit_wins += 1
+                else:
+                    # Check for bonus wins (MD, TF, FALL) - forfeits exclude from bonus
+                    if method_upper == "MD":
+                        bonus_wins += 1
+                    elif method_upper == "TF":
+                        bonus_wins += 1
+                        tech_wins += 1
+                    elif method_upper in ["FALL", "PIN"]:  # PIN is alias for FALL in data
+                        bonus_wins += 1
+                        pin_wins += 1
     
     return {
         "match_count": match_count,
@@ -351,6 +354,7 @@ def load_wrestler_metrics(profile: Dict) -> Optional[Dict]:
         "bonus_wins": bonus_wins,
         "pin_wins": pin_wins,
         "tech_wins": tech_wins,
+        "forfeit_wins": forfeit_wins,
     }
 
 
@@ -389,14 +393,16 @@ def compute_team_metrics(
     df_plus = sum(w["df_plus"] * w["match_count"] for w in wrestler_metrics) / total_matches
     apr_plus = sum(w["apr_plus"] * w["match_count"] for w in wrestler_metrics) / total_matches
     
-    # Rates (wins denominator)
+    # Rates: exclude forfeit wins from denominator (can't earn bonus in a forfeit)
     total_bonus_wins = sum(w["bonus_wins"] for w in wrestler_metrics)
     total_pin_wins = sum(w["pin_wins"] for w in wrestler_metrics)
     total_tech_wins = sum(w["tech_wins"] for w in wrestler_metrics)
+    total_forfeit_wins = sum(w.get("forfeit_wins", 0) for w in wrestler_metrics)
+    wins_for_bonus = max(0, total_wins - total_forfeit_wins)
     
-    bonus_rate = (total_bonus_wins / total_wins) if total_wins > 0 else None
-    pin_rate = (total_pin_wins / total_wins) if total_wins > 0 else None
-    tech_rate = (total_tech_wins / total_wins) if total_wins > 0 else None
+    bonus_rate = (total_bonus_wins / wins_for_bonus) if wins_for_bonus > 0 else None
+    pin_rate = (total_pin_wins / wins_for_bonus) if wins_for_bonus > 0 else None
+    tech_rate = (total_tech_wins / wins_for_bonus) if wins_for_bonus > 0 else None
     
     # Top win percentages
     total_top10_wins = sum(w["top10_wins"] for w in wrestler_metrics)

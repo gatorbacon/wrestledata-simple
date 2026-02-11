@@ -3,15 +3,15 @@
   "name": "Saniyah Nana",
   "team": "Butler",
   "team_slug": "butler",
-  "team_rank": 18,
-  "weight_class": 145,
+  "team_rank": 19,
+  "weight_class": 138,
   "year": 2026,
-  "current_rank": 17,
+  "current_rank": 37,
   "record": {
-    "overall": "5-4",
-    "vs_ranked": "5-4",
+    "overall": "6-5",
+    "vs_ranked": "6-5",
     "vs_top10": "0-4",
-    "vs_top25": "1-4"
+    "vs_top25": "2-5"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,28 +20,28 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.4,
-    "bonus_rate": 0.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.667,
     "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 4,
+    "ranked_wins": 6,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 4,
     "win_over_highest_rank": {
-      "opponent_id": "35542619132",
-      "opponent_rank": 24,
-      "opponent_name": "Alyiah Mason",
-      "method": "Fall 0:00"
+      "opponent_id": "35899794132",
+      "opponent_rank": 20,
+      "opponent_name": "Ka`Leah Stringer",
+      "method": "Dec 7-4"
     },
     "worst_loss": {
-      "opponent_id": "35333690132",
-      "opponent_rank": 6,
-      "opponent_name": "Sonia Tarley",
-      "method": "MD 12-0"
+      "opponent_id": "35435001132",
+      "opponent_rank": 19,
+      "opponent_name": "Amina Masudi",
+      "method": "Fall 0:41"
     }
   },
   "match_list": [
@@ -68,8 +68,8 @@
       "opponent_team": "Pleasure Ridge Park",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 46,
-      "weight_class": "120",
+      "opponent_rank": 20,
+      "weight_class": "138",
       "result": "W",
       "method": "DEC",
       "score": "7-4",
@@ -79,28 +79,12 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35333690132",
-      "opponent_name": "Sonia Tarley",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": 6,
-      "weight_class": "145",
-      "result": "L",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "0:00",
-      "event": "Derby City Girls",
-      "mv_impact": -1.99
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35333560132",
       "opponent_name": "Sophia Redd",
       "opponent_team": "Bardstown",
       "opponent_team_rank": 30,
       "opponent_weight": 145,
-      "opponent_rank": 27,
+      "opponent_rank": 31,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -116,7 +100,7 @@
       "opponent_team": "Bardstown",
       "opponent_team_rank": 30,
       "opponent_weight": 145,
-      "opponent_rank": 27,
+      "opponent_rank": 31,
       "weight_class": "145",
       "result": "W",
       "method": "MFF",
@@ -145,9 +129,9 @@
       "opponent_id": "35542619132",
       "opponent_name": "Alyiah Mason",
       "opponent_team": "Central",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 20,
       "opponent_weight": 145,
-      "opponent_rank": 24,
+      "opponent_rank": 25,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -157,13 +141,29 @@
       "mv_impact": 4.83
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "35333690132",
+      "opponent_name": "Sonia Tarley",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 6,
+      "weight_class": "145",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Derby City Girls",
+      "mv_impact": -1.99
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35333659132",
       "opponent_name": "Navaeh Woods",
       "opponent_team": "Mercer County",
       "opponent_team_rank": 47,
       "opponent_weight": 132,
-      "opponent_rank": 33,
+      "opponent_rank": 31,
       "weight_class": "138",
       "result": "W",
       "method": "MD",
@@ -171,6 +171,36 @@
       "duration": "7:00",
       "event": "The Beast of the East",
       "mv_impact": 4.29
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35435001132",
+      "opponent_name": "Amina Masudi",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 41,
+      "opponent_weight": 152,
+      "opponent_rank": 19,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "The Beast of the East"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35434953132",
+      "opponent_name": "Lydia Yared",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 41,
+      "opponent_weight": 138,
+      "opponent_rank": 67,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:28",
+      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
@@ -188,5 +218,6 @@
       "event": "The Beast of the East",
       "mv_impact": -2.99
     }
-  ]
+  ],
+  "profile_generated_at": "2026-02-11"
 }

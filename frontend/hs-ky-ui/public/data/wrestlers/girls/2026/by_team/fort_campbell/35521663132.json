@@ -3,10 +3,10 @@
   "name": "Braylee Drake",
   "team": "Fort Campbell",
   "team_slug": "fort_campbell",
-  "team_rank": 37,
+  "team_rank": 36,
   "weight_class": 107,
   "year": 2026,
-  "current_rank": 54,
+  "current_rank": 55,
   "record": {
     "overall": "7-16",
     "vs_ranked": "0-5",
@@ -20,8 +20,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.286,
-    "bonus_rate": 0.286,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
     "pins": 2
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35345995132",
-      "opponent_rank": 40,
+      "opponent_rank": 47,
       "opponent_name": "Kimberly Shrewsbury",
       "method": "Fall 0:56"
     }
@@ -120,9 +120,9 @@
       "opponent_id": "35666437132",
       "opponent_name": "Zoey Morrison",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 36,
       "opponent_weight": 114,
-      "opponent_rank": 36,
+      "opponent_rank": 38,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
@@ -297,12 +297,27 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35520300132",
+      "opponent_name": "Zemirah Witt",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 36,
+      "opponent_weight": 107,
+      "opponent_rank": 37,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:09",
+      "event": "Overton Bobcat Brawl"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35520298132",
       "opponent_name": "Delaney Perry",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 36,
       "opponent_weight": 114,
-      "opponent_rank": 19,
+      "opponent_rank": 22,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
@@ -327,27 +342,12 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35520300132",
-      "opponent_name": "Zemirah Witt",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 37,
-      "opponent_weight": 114,
-      "opponent_rank": 35,
-      "weight_class": "114",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:09",
-      "event": "Overton Bobcat Brawl"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35666437132",
       "opponent_name": "Zoey Morrison",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 36,
       "opponent_weight": 114,
-      "opponent_rank": 36,
+      "opponent_rank": 38,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
@@ -362,7 +362,7 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 114,
-      "opponent_rank": 40,
+      "opponent_rank": 47,
       "weight_class": "114",
       "result": "L",
       "method": "FALL",
@@ -385,5 +385,6 @@
       "duration": "3:19",
       "event": "Sister Slam"
     }
-  ]
+  ],
+  "profile_generated_at": "2026-02-11"
 }

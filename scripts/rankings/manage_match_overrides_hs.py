@@ -18,14 +18,24 @@ File format (mt/rankings_data/hs_{state}_{gender}/{season}/match_overrides.json)
       "event": "Dual Meet",
       "note": "Override: original result was incorrect"
     },
+    {
+      "wrestler1_id": "111",
+      "wrestler2_id": "222",
+      "date": "12/01/2025",
+      "remove": true,
+      "result": "Fall 0:00",
+      "note": "Exhibition only - same pair has Varsity match with different result"
+    },
     ...
   ]
 }
 
 The override system works by:
 1. Matching overrides to actual matches using (wrestler1_id, wrestler2_id, date)
-2. Replacing the winner_id and result fields when matches are loaded
-3. Applied before deduplication, so the override takes precedence
+2. Edit overrides: replacing the winner_id and result fields when matches are loaded
+3. Removal overrides ("remove": true): match is dropped from weight_class data so it
+   does not appear in the matrix or on wrestler profiles
+4. Applied after deduplication when load_data.py writes weight_class_*.json
 
 Usage:
   python scripts/rankings/manage_match_overrides_hs.py -season 2026 -state KY -gender boys
@@ -254,6 +264,55 @@ def add_override(
     print(f"Added override: {w1_norm} vs {w2_norm} on {date}")
 
 
+def add_removal_override(
+    season: int,
+    state: str,
+    gender: str,
+    w1_id: str,
+    w2_id: str,
+    date: str,
+    result: Optional[str] = None,
+    note: Optional[str] = None,
+    data_dir: str = "mt/rankings_data"
+) -> None:
+    """Add a match removal override. The match will be dropped from weight_class data (matrix and profiles).
+    If result is provided, only the match with that exact result is removed (e.g. 'Fall 0:00' for Exhibition
+    when the Varsity match has 'Fall 0:35'). Use when same two wrestlers have two matches on the same day."""
+    data = load_overrides(season, state, gender, data_dir)
+    overrides = data.setdefault("overrides", [])
+
+    w1_norm, w2_norm = normalize_wrestler_ids(w1_id, w2_id)
+
+    removal = {
+        "wrestler1_id": w1_norm,
+        "wrestler2_id": w2_norm,
+        "date": date,
+        "remove": True,
+    }
+    if result is not None and str(result).strip():
+        removal["result"] = str(result).strip()
+    if note:
+        removal["note"] = note
+
+    for existing in overrides:
+        if (existing.get("wrestler1_id") == w1_norm and
+            existing.get("wrestler2_id") == w2_norm and
+            existing.get("date") == date and
+            existing.get("remove")):
+            print(f"A removal override already exists for this match. Updating...")
+            existing.clear()
+            existing.update(removal)
+            save_overrides(season, state, gender, data, data_dir)
+            return
+
+    overrides.append(removal)
+    save_overrides(season, state, gender, data, data_dir)
+    if removal.get("result"):
+        print(f"Added removal override: {w1_norm} vs {w2_norm} on {date} (result='{removal['result']}')")
+    else:
+        print(f"Added removal override: {w1_norm} vs {w2_norm} on {date}")
+
+
 def list_overrides(season: int, state: str, gender: str, data_dir: str = "mt/rankings_data") -> None:
     """List all match overrides for a season."""
     data = load_overrides(season, state, gender, data_dir)
@@ -278,20 +337,29 @@ def list_overrides(season: int, state: str, gender: str, data_dir: str = "mt/ran
         w1_id = ov.get("wrestler1_id", "?")
         w2_id = ov.get("wrestler2_id", "?")
         date = ov.get("date", "?")
-        winner_id = ov.get("winner_id", "?")
-        result = ov.get("result", "?")
-        weight = ov.get("weight_class", "?")
+        is_removal = ov.get("remove", False)
         note = ov.get("note", "")
-        
+
         w1_name = get_wrestler_name(w1_id) if w1_id != "?" else "?"
         w2_name = get_wrestler_name(w2_id) if w2_id != "?" else "?"
-        winner_name = get_wrestler_name(winner_id) if winner_id != "?" else "?"
-        
+
         print(f"{idx}. {w1_name}")
         print(f"   vs {w2_name}")
-        print(f"   Date: {date}, Weight: {weight}")
-        print(f"   Winner: {winner_name} ({winner_id})")
-        print(f"   Result: {result}")
+        print(f"   Date: {date}")
+        if is_removal:
+            result_filter = ov.get("result")
+            if result_filter:
+                print(f"   [REMOVAL] Only match with result '{result_filter}' excluded from matrix and profiles")
+            else:
+                print(f"   [REMOVAL] Match(es) will be excluded from matrix and profiles")
+        else:
+            winner_id = ov.get("winner_id", "?")
+            result = ov.get("result", "?")
+            weight = ov.get("weight_class", "?")
+            winner_name = get_wrestler_name(winner_id) if winner_id != "?" else "?"
+            print(f"   Weight: {weight}")
+            print(f"   Winner: {winner_name} ({winner_id})")
+            print(f"   Result: {result}")
         if note:
             print(f"   Note: {note}")
         print()
@@ -399,6 +467,54 @@ def interactive_add_override(season: int, state: str, gender: str, data_dir: str
     )
 
 
+def interactive_add_removal_override(season: int, state: str, gender: str, data_dir: str = "mt/rankings_data") -> None:
+    """Interactively add a match removal override (match will be excluded from matrix and profiles)."""
+    print("\nAdd Match Removal")
+    print("-" * 40)
+    print("The match will be removed from weight_class data and will not appear in the matrix or on wrestler profiles.")
+    print("Re-run load_data.py and then build_wrestler_profiles / matrix to apply.\n")
+
+    wrestlers = load_all_wrestlers(season, state, gender, data_dir)
+
+    if not wrestlers:
+        print("Warning: No wrestler data found. Enter IDs manually.")
+        w1_id = input("Wrestler 1 ID: ").strip()
+        w2_id = input("Wrestler 2 ID: ").strip()
+    else:
+        w1_id = select_wrestler_interactive(wrestlers, "Search for Wrestler 1")
+        if not w1_id:
+            print("Cancelled.")
+            return
+        w2_id = select_wrestler_interactive(wrestlers, "Search for Wrestler 2")
+        if not w2_id:
+            print("Cancelled.")
+            return
+
+    date = input("Match date (MM/DD/YYYY): ").strip()
+    if not date:
+        print("Cancelled.")
+        return
+
+    matches = find_matching_matches(w1_id, w2_id, date, season, state, gender, data_dir)
+    result_filter = None
+    if matches:
+        print(f"\nFound {len(matches)} matching match(es) on this date:")
+        for idx, m in enumerate(matches, start=1):
+            print(f"  {idx}. Weight: {m.get('weight_class', '?')}, Result: {m.get('result', '?')}")
+        if len(matches) > 1:
+            print("\nTo remove only ONE of these (e.g. the Exhibition with 'Fall 0:00'), enter that exact result.")
+            print("To remove ALL matches on this date between these two, press Enter.")
+        result_filter = input("Result to remove (exact, e.g. 'Fall 0:00'), or Enter for all: ").strip() or None
+    else:
+        print("\nNo matching matches found in weight_class data.")
+        print("You can still add the removal; it will take effect if the match appears after the next load_data run.")
+
+    note = input("Note (optional, e.g. 'Falsely reported as exhibition'): ").strip() or None
+
+    add_removal_override(season, state, gender, w1_id, w2_id, date, result=result_filter, note=note, data_dir=data_dir)
+    print("Done. Re-run load_data.py -save (and then matrix / build_wrestler_profiles) to apply.")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Manage match result overrides for High School ranking calculations"
@@ -456,9 +572,10 @@ def main() -> None:
     while True:
         print(f"\nMatch Override Manager - Season {args.season} ({args.state} HS {args.gender.capitalize()})")
         print("1. List overrides")
-        print("2. Add override")
-        print("3. Remove override")
-        print("4. Quit")
+        print("2. Add override (change result/winner)")
+        print("3. Add match removal (exclude from matrix and profiles)")
+        print("4. Remove override")
+        print("5. Quit")
         
         choice = input("\nChoice: ").strip()
         
@@ -467,11 +584,13 @@ def main() -> None:
         elif choice == "2":
             interactive_add_override(args.season, args.state, args.gender, args.data_dir)
         elif choice == "3":
+            interactive_add_removal_override(args.season, args.state, args.gender, args.data_dir)
+        elif choice == "4":
             list_overrides(args.season, args.state, args.gender, args.data_dir)
             idx_str = input("\nEnter index to remove (or 'q' to cancel): ").strip()
             if idx_str.lower() != 'q' and idx_str.isdigit():
                 remove_override(args.season, args.state, args.gender, int(idx_str), args.data_dir)
-        elif choice == "4" or choice.lower() == "q":
+        elif choice == "5" or choice.lower() == "q":
             break
         else:
             print("Invalid choice.")

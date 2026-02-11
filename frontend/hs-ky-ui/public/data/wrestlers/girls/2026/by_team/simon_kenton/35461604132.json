@@ -6,12 +6,12 @@
   "team_rank": 15,
   "weight_class": 107,
   "year": 2026,
-  "current_rank": 22,
+  "current_rank": 24,
   "record": {
-    "overall": "2-11",
+    "overall": "4-12",
     "vs_ranked": "2-11",
     "vs_top10": "0-6",
-    "vs_top25": "1-11"
+    "vs_top25": "0-11"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,7 +24,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,18 +33,63 @@
     "top10_losses": 6,
     "win_over_highest_rank": {
       "opponent_id": "35333537132",
-      "opponent_rank": 24,
+      "opponent_rank": 26,
       "opponent_name": "Esther Wernersbach",
       "method": "Fall 0:24"
     },
     "worst_loss": {
       "opponent_id": "35600313132",
-      "opponent_rank": 21,
+      "opponent_rank": 22,
       "opponent_name": "mazy coffey",
       "method": "Fall 1:45"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35084064132",
+      "opponent_name": "Mallory Ohlson",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 29,
+      "opponent_weight": 107,
+      "opponent_rank": null,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "OUTSTATE_fca4601d62e5",
+      "opponent_name": "Briena Brown",
+      "opponent_team": "North College Hill High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": null,
+      "weight_class": "107",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "North College Hill Invite"
+    },
+    {
+      "date": "2026-01-22",
+      "opponent_id": "OUTSTATE_a0f5c7c07aa7",
+      "opponent_name": "Unknown",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Highlands"
+    },
     {
       "date": "2026-01-22",
       "opponent_id": "35352382132",
@@ -67,7 +112,7 @@
       "opponent_team": "Woodford County",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -143,9 +188,9 @@
       "opponent_id": "35333537132",
       "opponent_name": "Esther Wernersbach",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 23,
       "opponent_weight": 107,
-      "opponent_rank": 24,
+      "opponent_rank": 26,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -175,9 +220,9 @@
       "opponent_id": "35600313132",
       "opponent_name": "mazy coffey",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 46,
       "opponent_weight": 107,
-      "opponent_rank": 21,
+      "opponent_rank": 22,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -250,5 +295,6 @@
       "event": "vs. Simon Kenton",
       "mv_impact": -5.43
     }
-  ]
+  ],
+  "profile_generated_at": "2026-02-11"
 }

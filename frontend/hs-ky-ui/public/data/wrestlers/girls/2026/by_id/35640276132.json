@@ -3,13 +3,13 @@
   "name": "Adrianna Merritt",
   "team": "Bryan Station",
   "team_slug": "bryan_station",
-  "team_rank": 33,
+  "team_rank": 18,
   "weight_class": 114,
   "year": 2026,
-  "current_rank": 104,
+  "current_rank": 81,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,11 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "36251053132",
+      "opponent_rank": 33,
+      "opponent_name": "London Brown",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": []
+  "match_list": [
+    {
+      "date": "2026-01-14",
+      "opponent_id": "36251053132",
+      "opponent_name": "London Brown",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 33,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bryan Station"
+    }
+  ],
+  "profile_generated_at": "2026-02-11"
 }

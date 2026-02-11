@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": 1,
   "record": {
-    "overall": "15-0",
-    "vs_ranked": "7-0",
+    "overall": "16-0",
+    "vs_ranked": "8-0",
     "vs_top10": "2-0",
-    "vs_top25": "3-0"
+    "vs_top25": "4-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,14 +20,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.867,
+    "pin_rate": 0.867,
+    "bonus_rate": 0.933,
     "majors": 0,
     "techs": 1,
-    "pins": 12
+    "pins": 13
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 8,
     "ranked_losses": 0,
     "top10_wins": 2,
     "top10_losses": 0,
@@ -42,12 +42,27 @@
   "match_list": [
     {
       "date": "2026-01-31",
+      "opponent_id": "35641220132",
+      "opponent_name": "Kristina Schmucker",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 17,
+      "weight_class": "152",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:04",
+      "event": "Lady Cardinal Showcase"
+    },
+    {
+      "date": "2026-01-31",
       "opponent_id": "35333387132",
       "opponent_name": "Stella Price",
       "opponent_team": "Scott County",
       "opponent_team_rank": 12,
       "opponent_weight": 152,
-      "opponent_rank": 38,
+      "opponent_rank": 37,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
@@ -60,7 +75,7 @@
       "opponent_id": "35600336132",
       "opponent_name": "kaylee upchurch",
       "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 46,
       "opponent_weight": 152,
       "opponent_rank": 28,
       "weight_class": "152",
@@ -137,7 +152,7 @@
       "opponent_team": "Pikeville",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 58,
+      "opponent_rank": 49,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
@@ -240,9 +255,9 @@
       "opponent_id": "35448929132",
       "opponent_name": "Jazmari Hernandez",
       "opponent_team": "Danville",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 21,
       "opponent_weight": 185,
-      "opponent_rank": 39,
+      "opponent_rank": 38,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
@@ -265,5 +280,6 @@
       "duration": "1:46",
       "event": "2025 Anchor Down Showdown (Ladies)"
     }
-  ]
+  ],
+  "profile_generated_at": "2026-02-11"
 }

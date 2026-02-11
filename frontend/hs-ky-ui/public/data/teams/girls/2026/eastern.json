@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-05T14:06:52.070830Z",
+  "generated_at_utc": "2026-02-11T19:52:15.913398Z",
   "starters": {
     "138": {
       "weight": 138,
@@ -29,29 +29,29 @@
       "name": "Sonia Tarley",
       "current_rank": 6,
       "grade": null,
-      "xtp": 10.54,
+      "xtp": 10.66,
       "xtp_p": 4.26,
       "xtp_a": 2.33,
-      "xtp_b": 3.95,
+      "xtp_b": 4.07,
       "xtp_simple": 11.0,
       "top10_record": {
-        "wins": 6,
+        "wins": 5,
         "losses": 9
       },
       "top33_record": {
-        "wins": 17,
+        "wins": 15,
         "losses": 9
       },
-      "wins": 20,
+      "wins": 21,
       "losses": 9,
-      "top25_wins": 11,
-      "bonus_rate": 0.95
+      "top25_wins": 10,
+      "bonus_rate": 0.952
     },
     "152": {
       "weight": 152,
       "wrestler_id": "35333687132",
       "name": "Analiah Parga Lujan",
-      "current_rank": 44,
+      "current_rank": 45,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -64,10 +64,10 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 8
+        "losses": 9
       },
       "wins": 4,
-      "losses": 10,
+      "losses": 11,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -77,10 +77,10 @@
       "name": "Kaidence Payne",
       "current_rank": 41,
       "grade": null,
-      "xtp": 1.26,
+      "xtp": 1.28,
       "xtp_p": 0.03,
       "xtp_a": 0.3,
-      "xtp_b": 0.93,
+      "xtp_b": 0.95,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -93,10 +93,31 @@
       "wins": 3,
       "losses": 4,
       "top25_wins": 0,
-      "bonus_rate": 0.667
+      "bonus_rate": 1.0
     }
   },
-  "remaining": [],
+  "remaining": [
+    {
+      "weight": 138,
+      "wrestler_id": "35284469132",
+      "name": "Sonia Tarley",
+      "grade": null,
+      "wins": 1,
+      "losses": 1,
+      "top25_wins": 1,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 152,
+      "wrestler_id": "35284451132",
+      "name": "Analiah Parga Lujan",
+      "grade": null,
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
   "team_xTP_simple": 11.0,
   "team_metrics": {
     "projected_state_points": 11.0,
@@ -109,30 +130,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 42,
-      "losses": 31
+      "wins": 28,
+      "losses": 24
     },
     "top33": {
-      "wins": 17,
-      "losses": 20
+      "wins": 15,
+      "losses": 21
     },
     "top10": {
-      "wins": 6,
+      "wins": 5,
       "losses": 9
     },
     "bonus_rate": {
-      "value": 0.595,
-      "rank": 69,
+      "value": 0.963,
+      "rank": 43,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.5,
-      "rank": 89,
+      "value": 0.815,
+      "rank": 84,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.048,
-      "rank": 15,
+      "value": 0.074,
+      "rank": 17,
       "rank_scope": "league"
     }
   }

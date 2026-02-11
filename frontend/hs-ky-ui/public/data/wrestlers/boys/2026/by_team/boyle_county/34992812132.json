@@ -9,7 +9,7 @@
   "current_rank": 27,
   "record": {
     "overall": "17-5",
-    "vs_ranked": "8-3",
+    "vs_ranked": "8-5",
     "vs_top10": "0-1",
     "vs_top25": "0-3"
   },
@@ -28,7 +28,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 8,
-    "ranked_losses": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -38,13 +38,43 @@
       "method": "Dec 11-5"
     },
     "worst_loss": {
-      "opponent_id": "35271324132",
-      "opponent_rank": 22,
-      "opponent_name": "Connor Warner",
-      "method": "Fall 0:00"
+      "opponent_id": "34989050132",
+      "opponent_rank": 48,
+      "opponent_name": "Christopher Moore",
+      "method": "Dec 11-7"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34989050132",
+      "opponent_name": "Christopher Moore",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 120,
+      "opponent_rank": 48,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-7",
+      "duration": "7:00",
+      "event": "vs. Paducah Tilghman"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35135152132",
+      "opponent_name": "Dillon Lewis",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 19,
+      "opponent_weight": 120,
+      "opponent_rank": 27,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-9",
+      "duration": "7:00",
+      "event": "vs. Fairdale"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "OUTSTATE_bc696b57e773",
@@ -80,7 +110,7 @@
       "opponent_id": "OUTSTATE_745eb7f50e77",
       "opponent_name": "Unknown",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 105,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "113",
@@ -95,7 +125,7 @@
       "opponent_id": "OUTSTATE_17200c877caa",
       "opponent_name": "Unknown",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 111,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "113",
@@ -245,7 +275,7 @@
       "opponent_id": "35359892132",
       "opponent_name": "London Brown",
       "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 114,
+      "opponent_team_rank": 115,
       "opponent_weight": 113,
       "opponent_rank": 168,
       "weight_class": "113",
@@ -260,7 +290,7 @@
       "opponent_id": "34993529132",
       "opponent_name": "Ryan Lumpkins",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 127,
       "opponent_weight": 106,
       "opponent_rank": 30,
       "weight_class": "113",
@@ -322,7 +352,7 @@
       "opponent_team": "Simon Kenton",
       "opponent_team_rank": 16,
       "opponent_weight": 132,
-      "opponent_rank": 22,
+      "opponent_rank": 21,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -400,5 +430,6 @@
     "wins": 27,
     "losses": 17,
     "win_pct": 0.614
-  }
+  },
+  "profile_generated_at": "2026-02-10"
 }

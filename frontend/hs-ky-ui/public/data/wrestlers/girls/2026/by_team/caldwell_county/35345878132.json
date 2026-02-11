@@ -11,7 +11,7 @@
     "overall": "11-9",
     "vs_ranked": "3-4",
     "vs_top10": "0-3",
-    "vs_top25": "1-4"
+    "vs_top25": "1-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,8 +20,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.364,
-    "bonus_rate": 0.364,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 4
@@ -33,13 +33,13 @@
     "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35461604132",
-      "opponent_rank": 22,
+      "opponent_rank": 24,
       "opponent_name": "McKenzie Ratliff",
       "method": "Fall 2:48"
     },
     "worst_loss": {
       "opponent_id": "35635701132",
-      "opponent_rank": 24,
+      "opponent_rank": 27,
       "opponent_name": "LaNeyah Crowder",
       "method": "Fall 5:36"
     }
@@ -52,7 +52,7 @@
       "opponent_team": "Meade County",
       "opponent_team_rank": 13,
       "opponent_weight": 107,
-      "opponent_rank": 67,
+      "opponent_rank": 70,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -97,7 +97,7 @@
       "opponent_team": "South Warren",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 24,
+      "opponent_rank": 27,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35333462132",
       "opponent_name": "Kaylin Collins",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 107,
-      "opponent_rank": 42,
+      "opponent_rank": 45,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -187,7 +187,7 @@
       "opponent_team": "Simon Kenton",
       "opponent_team_rank": 15,
       "opponent_weight": 107,
-      "opponent_rank": 22,
+      "opponent_rank": 24,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -345,5 +345,6 @@
       "duration": "7:00",
       "event": "vs. McCracken County"
     }
-  ]
+  ],
+  "profile_generated_at": "2026-02-11"
 }

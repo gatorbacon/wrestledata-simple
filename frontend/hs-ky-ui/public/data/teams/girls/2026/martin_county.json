@@ -21,18 +21,18 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-05T14:06:52.192051Z",
+  "generated_at_utc": "2026-02-11T19:52:16.041766Z",
   "starters": {
     "100": {
       "weight": 100,
       "wrestler_id": "38234126132",
       "name": "Kenleigh Estep",
-      "current_rank": 39,
+      "current_rank": 35,
       "grade": null,
-      "xtp": 1.09,
-      "xtp_p": 0.03,
-      "xtp_a": 0.3,
-      "xtp_b": 0.76,
+      "xtp": 1.12,
+      "xtp_p": 0.09,
+      "xtp_a": 0.34,
+      "xtp_b": 0.69,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -42,7 +42,7 @@
         "wins": 0,
         "losses": 0
       },
-      "wins": 1,
+      "wins": 3,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 1.0
@@ -51,7 +51,7 @@
       "weight": 107,
       "wrestler_id": "38234422132",
       "name": "Harleigh Maynard",
-      "current_rank": 63,
+      "current_rank": 40,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -66,16 +66,16 @@
         "wins": 0,
         "losses": 2
       },
-      "wins": 0,
+      "wins": 1,
       "losses": 2,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 1.0
     },
     "120": {
       "weight": 120,
       "wrestler_id": "36849563132",
       "name": "Haileigh Smith",
-      "current_rank": 62,
+      "current_rank": 65,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -88,10 +88,10 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 3
       },
       "wins": 1,
-      "losses": 2,
+      "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -99,7 +99,7 @@
       "weight": 126,
       "wrestler_id": "38234434132",
       "name": "Kennedy Maynard",
-      "current_rank": 39,
+      "current_rank": 41,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -108,14 +108,14 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
-      "wins": 1,
-      "losses": 0,
+      "wins": 2,
+      "losses": 1,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -123,7 +123,7 @@
       "weight": 165,
       "wrestler_id": "38234436132",
       "name": "Brianna Muncy",
-      "current_rank": 60,
+      "current_rank": 45,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -136,10 +136,34 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
+      },
+      "wins": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "38968533132",
+      "name": "Mary Howard",
+      "current_rank": 76,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
       },
       "wins": 0,
-      "losses": 1,
+      "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
@@ -151,7 +175,17 @@
       "name": "Desiray Fletcher",
       "grade": null,
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "38234432132",
+      "name": "Bradlyne Stafford",
+      "grade": null,
+      "wins": 1,
+      "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -159,16 +193,6 @@
       "weight": 120,
       "wrestler_id": "38234426132",
       "name": "Kyley Messer",
-      "grade": null,
-      "wins": 0,
-      "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    {
-      "weight": 126,
-      "wrestler_id": "38234432132",
-      "name": "Bradlyne Stafford",
       "grade": null,
       "wins": 0,
       "losses": 0,
@@ -188,30 +212,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 3,
-      "losses": 6
+      "wins": 8,
+      "losses": 9
     },
     "top33": {
       "wins": 0,
-      "losses": 5
+      "losses": 8
     },
     "top10": {
       "wins": 0,
-      "losses": 2
+      "losses": 3
     },
     "bonus_rate": {
       "value": 1.0,
-      "rank": 2,
+      "rank": 17,
       "rank_scope": "league"
     },
     "pin_rate": {
       "value": 1.0,
-      "rank": 2,
+      "rank": 11,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 104,
+      "rank": 96,
       "rank_scope": "league"
     }
   }

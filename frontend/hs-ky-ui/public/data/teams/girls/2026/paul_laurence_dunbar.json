@@ -21,19 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-05T14:06:52.246568Z",
+  "generated_at_utc": "2026-02-11T19:52:16.098740Z",
   "starters": {
     "100": {
       "weight": 100,
       "wrestler_id": "36251080132",
       "name": "Susie Beeken",
-      "current_rank": 14,
+      "current_rank": 21,
       "grade": null,
-      "xtp": 5.16,
-      "xtp_p": 0.93,
-      "xtp_a": 1.27,
-      "xtp_b": 2.96,
-      "xtp_simple": 0.5,
+      "xtp": 3.46,
+      "xtp_p": 0.45,
+      "xtp_a": 0.91,
+      "xtp_b": 2.1,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -44,14 +44,14 @@
       },
       "wins": 7,
       "losses": 5,
-      "top25_wins": 1,
-      "bonus_rate": 0.714
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "107": {
       "weight": 107,
       "wrestler_id": "36251055132",
       "name": "Reagan Wimsatt",
-      "current_rank": 70,
+      "current_rank": 73,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -75,31 +75,55 @@
       "weight": 114,
       "wrestler_id": "36251053132",
       "name": "London Brown",
-      "current_rank": 29,
+      "current_rank": 33,
       "grade": null,
-      "xtp": 1.77,
-      "xtp_p": 0.18,
-      "xtp_a": 0.49,
-      "xtp_b": 1.1,
+      "xtp": 1.37,
+      "xtp_p": 0.09,
+      "xtp_a": 0.34,
+      "xtp_b": 0.94,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
       },
       "top33_record": {
-        "wins": 2,
-        "losses": 5
+        "wins": 0,
+        "losses": 6
       },
-      "wins": 7,
+      "wins": 8,
       "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.714
+      "bonus_rate": 1.0
     },
     "120": {
       "weight": 120,
       "wrestler_id": "36251056132",
       "name": "Amaris Solly",
-      "current_rank": 96,
+      "current_rank": 45,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "wins": 1,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "38867220132",
+      "name": "Syaliea Sabbagh",
+      "current_rank": 106,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -123,7 +147,7 @@
       "weight": 132,
       "wrestler_id": "36251054132",
       "name": "Jozaphine Holliday",
-      "current_rank": 78,
+      "current_rank": 68,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -138,16 +162,16 @@
         "wins": 0,
         "losses": 5
       },
-      "wins": 0,
+      "wins": 1,
       "losses": 11,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   },
   "remaining": [],
-  "team_xTP_simple": 0.5,
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": 0.5,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -157,30 +181,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 16,
-      "losses": 33
+      "wins": 17,
+      "losses": 24
     },
     "top33": {
-      "wins": 3,
-      "losses": 14
+      "wins": 1,
+      "losses": 15
     },
     "top10": {
       "wins": 0,
       "losses": 4
     },
     "bonus_rate": {
-      "value": 0.625,
-      "rank": 60,
+      "value": 1.0,
+      "rank": 5,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.5,
-      "rank": 90,
+      "value": 0.75,
+      "rank": 101,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.0,
-      "rank": 76,
+      "value": 0.083,
+      "rank": 15,
       "rank_scope": "league"
     }
   }

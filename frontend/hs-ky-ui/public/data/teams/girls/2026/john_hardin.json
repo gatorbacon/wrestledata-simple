@@ -21,18 +21,18 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-05T14:06:52.149860Z",
+  "generated_at_utc": "2026-02-11T19:52:15.997184Z",
   "starters": {
     "100": {
       "weight": 100,
       "wrestler_id": "35333557132",
       "name": "Harper Swanson",
-      "current_rank": 29,
+      "current_rank": 31,
       "grade": null,
-      "xtp": 1.79,
-      "xtp_p": 0.2,
-      "xtp_a": 0.54,
-      "xtp_b": 1.05,
+      "xtp": 1.69,
+      "xtp_p": 0.18,
+      "xtp_a": 0.49,
+      "xtp_b": 1.02,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -40,18 +40,18 @@
       },
       "top33_record": {
         "wins": 1,
-        "losses": 11
+        "losses": 14
       },
-      "wins": 15,
-      "losses": 14,
+      "wins": 16,
+      "losses": 18,
       "top25_wins": 1,
-      "bonus_rate": 0.333
+      "bonus_rate": 0.556
     },
     "107": {
       "weight": 107,
       "wrestler_id": "35333590132",
       "name": "Jossie Arroyo",
-      "current_rank": 39,
+      "current_rank": 42,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -60,7 +60,7 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 2
       },
       "top33_record": {
         "wins": 1,
@@ -69,13 +69,37 @@
       "wins": 15,
       "losses": 12,
       "top25_wins": 0,
-      "bonus_rate": 0.267
+      "bonus_rate": 1.0
+    },
+    "114": {
+      "weight": 114,
+      "wrestler_id": "35510416132",
+      "name": "Cassidy Huey",
+      "current_rank": 30,
+      "grade": null,
+      "xtp": 1.74,
+      "xtp_p": 0.18,
+      "xtp_a": 0.49,
+      "xtp_b": 1.07,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 10
+      },
+      "wins": 16,
+      "losses": 15,
+      "top25_wins": 0,
+      "bonus_rate": 0.909
     },
     "120": {
       "weight": 120,
-      "wrestler_id": "35510416132",
-      "name": "Cassidy Huey",
-      "current_rank": 55,
+      "wrestler_id": "35510398132",
+      "name": "Ellie Suttor",
+      "current_rank": 84,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -84,64 +108,64 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 0
       },
       "top33_record": {
-        "wins": 1,
-        "losses": 9
+        "wins": 0,
+        "losses": 1
       },
-      "wins": 11,
-      "losses": 14,
+      "wins": 0,
+      "losses": 2,
       "top25_wins": 0,
-      "bonus_rate": 0.727
+      "bonus_rate": 0.0
     },
     "126": {
       "weight": 126,
-      "wrestler_id": "35510918132",
-      "name": "Maxine Rhinesmith",
-      "current_rank": 36,
-      "grade": null,
-      "xtp": 1.2,
-      "xtp_p": 0.03,
-      "xtp_a": 0.3,
-      "xtp_b": 0.87,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 6
-      },
-      "top33_record": {
-        "wins": 2,
-        "losses": 9
-      },
-      "wins": 20,
-      "losses": 13,
-      "top25_wins": 0,
-      "bonus_rate": 0.85
-    },
-    "132": {
-      "weight": 132,
       "wrestler_id": "35510582132",
       "name": "April Haisma",
-      "current_rank": 11,
+      "current_rank": 9,
       "grade": null,
-      "xtp": 6.71,
-      "xtp_p": 1.69,
-      "xtp_a": 1.58,
-      "xtp_b": 3.44,
+      "xtp": 7.45,
+      "xtp_p": 2.03,
+      "xtp_a": 1.78,
+      "xtp_b": 3.64,
       "xtp_simple": 2.0,
       "top10_record": {
         "wins": 0,
-        "losses": 7
-      },
-      "top33_record": {
-        "wins": 15,
         "losses": 8
       },
-      "wins": 29,
-      "losses": 11,
-      "top25_wins": 7,
-      "bonus_rate": 0.862
+      "top33_record": {
+        "wins": 16,
+        "losses": 9
+      },
+      "wins": 32,
+      "losses": 12,
+      "top25_wins": 11,
+      "bonus_rate": 0.966
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35510918132",
+      "name": "Maxine Rhinesmith",
+      "current_rank": 27,
+      "grade": null,
+      "xtp": 2.64,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.7,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 8
+      },
+      "top33_record": {
+        "wins": 2,
+        "losses": 11
+      },
+      "wins": 23,
+      "losses": 15,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "138": {
       "weight": 138,
@@ -149,10 +173,10 @@
       "name": "Alexandra Rhinesmith",
       "current_rank": 2,
       "grade": null,
-      "xtp": 19.29,
+      "xtp": 19.3,
       "xtp_p": 10.07,
       "xtp_a": 3.42,
-      "xtp_b": 5.8,
+      "xtp_b": 5.81,
       "xtp_simple": 24.0,
       "top10_record": {
         "wins": 9,
@@ -162,34 +186,34 @@
         "wins": 17,
         "losses": 2
       },
-      "wins": 31,
+      "wins": 36,
       "losses": 4,
       "top25_wins": 14,
-      "bonus_rate": 0.839
+      "bonus_rate": 1.0
     },
     "145": {
       "weight": 145,
       "wrestler_id": "35511119132",
       "name": "Kamila Castaneraayala",
-      "current_rank": 14,
+      "current_rank": 17,
       "grade": null,
-      "xtp": 5.15,
-      "xtp_p": 1.4,
-      "xtp_a": 1.47,
-      "xtp_b": 2.28,
-      "xtp_simple": 2.0,
+      "xtp": 3.93,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 2.38,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 7
       },
       "top33_record": {
-        "wins": 8,
-        "losses": 11
+        "wins": 10,
+        "losses": 12
       },
-      "wins": 22,
-      "losses": 11,
+      "wins": 26,
+      "losses": 12,
       "top25_wins": 5,
-      "bonus_rate": 0.773
+      "bonus_rate": 0.913
     },
     "152": {
       "weight": 152,
@@ -197,23 +221,23 @@
       "name": "Aubrey Haisma",
       "current_rank": 8,
       "grade": null,
-      "xtp": 8.27,
+      "xtp": 8.25,
       "xtp_p": 2.43,
       "xtp_a": 1.91,
-      "xtp_b": 3.93,
+      "xtp_b": 3.91,
       "xtp_simple": 7.0,
       "top10_record": {
-        "wins": 2,
+        "wins": 3,
         "losses": 5
       },
       "top33_record": {
         "wins": 8,
-        "losses": 6
+        "losses": 7
       },
-      "wins": 20,
-      "losses": 7,
-      "top25_wins": 6,
-      "bonus_rate": 0.65
+      "wins": 21,
+      "losses": 8,
+      "top25_wins": 7,
+      "bonus_rate": 0.933
     },
     "165": {
       "weight": 165,
@@ -221,23 +245,23 @@
       "name": "Kaulana kuiee",
       "current_rank": 3,
       "grade": null,
-      "xtp": 16.98,
+      "xtp": 16.99,
       "xtp_p": 8.02,
       "xtp_a": 3.12,
-      "xtp_b": 5.84,
+      "xtp_b": 5.85,
       "xtp_simple": 20.0,
       "top10_record": {
-        "wins": 1,
+        "wins": 2,
         "losses": 4
       },
       "top33_record": {
-        "wins": 15,
+        "wins": 18,
         "losses": 4
       },
-      "wins": 38,
+      "wins": 43,
       "losses": 6,
-      "top25_wins": 14,
-      "bonus_rate": 0.737
+      "top25_wins": 17,
+      "bonus_rate": 0.971
     },
     "185": {
       "weight": 185,
@@ -245,23 +269,23 @@
       "name": "Michelle Osoro",
       "current_rank": 9,
       "grade": null,
-      "xtp": 6.33,
+      "xtp": 6.39,
       "xtp_p": 2.03,
       "xtp_a": 1.78,
-      "xtp_b": 2.52,
+      "xtp_b": 2.58,
       "xtp_simple": 2.0,
       "top10_record": {
         "wins": 0,
         "losses": 4
       },
       "top33_record": {
-        "wins": 3,
-        "losses": 4
+        "wins": 4,
+        "losses": 5
       },
       "wins": 10,
       "losses": 5,
-      "top25_wins": 1,
-      "bonus_rate": 0.5
+      "top25_wins": 2,
+      "bonus_rate": 0.625
     },
     "235": {
       "weight": 235,
@@ -269,36 +293,26 @@
       "name": "Khloe Alfred",
       "current_rank": 5,
       "grade": null,
-      "xtp": 12.65,
+      "xtp": 12.66,
       "xtp_p": 5.13,
       "xtp_a": 2.53,
-      "xtp_b": 4.99,
+      "xtp_b": 5.0,
       "xtp_simple": 14.0,
       "top10_record": {
         "wins": 4,
         "losses": 6
       },
       "top33_record": {
-        "wins": 15,
+        "wins": 14,
         "losses": 7
       },
-      "wins": 30,
+      "wins": 34,
       "losses": 9,
-      "top25_wins": 9,
-      "bonus_rate": 0.633
+      "top25_wins": 10,
+      "bonus_rate": 0.957
     }
   },
   "remaining": [
-    {
-      "weight": 120,
-      "wrestler_id": "35510398132",
-      "name": "Ellie Suttor",
-      "grade": null,
-      "wins": 0,
-      "losses": 2,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
     {
       "weight": 126,
       "wrestler_id": "35333591132",
@@ -314,10 +328,10 @@
       "wrestler_id": "35333593132",
       "name": "Lilith Trupp",
       "grade": null,
-      "wins": 8,
+      "wins": 9,
       "losses": 10,
       "top25_wins": 0,
-      "bonus_rate": 0.625
+      "bonus_rate": 1.0
     },
     {
       "weight": 132,
@@ -374,10 +388,10 @@
       "wrestler_id": "35333559132",
       "name": "Kali Alfred",
       "grade": null,
-      "wins": 12,
-      "losses": 10,
+      "wins": 13,
+      "losses": 12,
       "top25_wins": 5,
-      "bonus_rate": 0.75
+      "bonus_rate": 1.0
     },
     {
       "weight": 152,
@@ -404,15 +418,15 @@
       "wrestler_id": "35333555132",
       "name": "Kaylin Alfred",
       "grade": null,
-      "wins": 15,
-      "losses": 14,
+      "wins": 16,
+      "losses": 18,
       "top25_wins": 0,
-      "bonus_rate": 0.533
+      "bonus_rate": 1.0
     }
   ],
-  "team_xTP_simple": 71.0,
+  "team_xTP_simple": 69.5,
   "team_metrics": {
-    "projected_state_points": 71.0,
+    "projected_state_points": 69.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -422,30 +436,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 294,
-      "losses": 138
+      "wins": 272,
+      "losses": 118
     },
     "top33": {
-      "wins": 86,
-      "losses": 80
+      "wins": 93,
+      "losses": 91
     },
     "top10": {
-      "wins": 16,
-      "losses": 56
+      "wins": 18,
+      "losses": 57
     },
     "bonus_rate": {
-      "value": 0.568,
-      "rank": 80,
+      "value": 0.931,
+      "rank": 66,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.548,
-      "rank": 73,
+      "value": 0.902,
+      "rank": 46,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.014,
-      "rank": 45,
+      "value": 0.02,
+      "rank": 51,
       "rank_scope": "league"
     }
   }

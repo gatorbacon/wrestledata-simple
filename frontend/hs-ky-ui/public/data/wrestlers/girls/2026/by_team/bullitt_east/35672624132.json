@@ -6,12 +6,12 @@
   "team_rank": null,
   "weight_class": 100,
   "year": 2026,
-  "current_rank": 11,
+  "current_rank": 13,
   "record": {
-    "overall": "6-5",
-    "vs_ranked": "5-5",
-    "vs_top10": "1-5",
-    "vs_top25": "2-5"
+    "overall": "7-5",
+    "vs_ranked": "6-5",
+    "vs_top10": "1-4",
+    "vs_top25": "3-5"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,17 +20,17 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
-    "bonus_rate": 0.833,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 6,
     "ranked_losses": 5,
     "top10_wins": 1,
-    "top10_losses": 5,
+    "top10_losses": 4,
     "win_over_highest_rank": {
       "opponent_id": "35333368132",
       "opponent_rank": 4,
@@ -39,7 +39,7 @@
     },
     "worst_loss": {
       "opponent_id": "35436571132",
-      "opponent_rank": 10,
+      "opponent_rank": 15,
       "opponent_name": "loralei Nelson",
       "method": "Fall 0:00"
     }
@@ -65,9 +65,9 @@
       "opponent_id": "35436571132",
       "opponent_name": "loralei Nelson",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 22,
       "opponent_weight": 100,
-      "opponent_rank": 10,
+      "opponent_rank": 15,
       "weight_class": "100",
       "result": "L",
       "method": "FALL",
@@ -80,9 +80,9 @@
       "opponent_id": "35435106132",
       "opponent_name": "Katelyn Adams",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 41,
       "opponent_weight": 100,
-      "opponent_rank": 26,
+      "opponent_rank": 14,
       "weight_class": "100",
       "result": "W",
       "method": "FALL",
@@ -112,7 +112,7 @@
       "opponent_team": "Southwestern",
       "opponent_team_rank": 55,
       "opponent_weight": 100,
-      "opponent_rank": 35,
+      "opponent_rank": 39,
       "weight_class": "100",
       "result": "W",
       "method": "FALL",
@@ -127,7 +127,7 @@
       "opponent_team": "Great Crossing",
       "opponent_team_rank": null,
       "opponent_weight": 100,
-      "opponent_rank": 43,
+      "opponent_rank": 46,
       "weight_class": "100",
       "result": "W",
       "method": "FALL",
@@ -157,7 +157,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 6,
       "opponent_weight": 100,
-      "opponent_rank": 22,
+      "opponent_rank": 27,
       "weight_class": "100",
       "result": "W",
       "method": "FALL",
@@ -170,7 +170,7 @@
       "opponent_id": "35333539132",
       "opponent_name": "Brielle Richardson",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 23,
       "opponent_weight": 100,
       "opponent_rank": 5,
       "weight_class": "100",
@@ -196,6 +196,21 @@
       "event": "beast of the east"
     },
     {
+      "date": "2025-12-06",
+      "opponent_id": "35435106132",
+      "opponent_name": "Katelyn Adams",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 41,
+      "opponent_weight": 100,
+      "opponent_rank": 14,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:34",
+      "event": "The Beast of the East"
+    },
+    {
       "date": "2025-11-29",
       "opponent_id": "OUTSTATE_2f528488265f",
       "opponent_name": "Unknown",
@@ -210,5 +225,6 @@
       "duration": "7:00",
       "event": "vs. Boyle County"
     }
-  ]
+  ],
+  "profile_generated_at": "2026-02-11"
 }

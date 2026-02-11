@@ -9,9 +9,9 @@
   "current_rank": 20,
   "record": {
     "overall": "20-7",
-    "vs_ranked": "15-3",
+    "vs_ranked": "16-4",
     "vs_top10": "0-2",
-    "vs_top25": "2-3"
+    "vs_top25": "3-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,37 +20,67 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.85,
+    "pin_rate": 0.762,
+    "bonus_rate": 0.857,
     "majors": 0,
     "techs": 2,
-    "pins": 15
+    "pins": 16
   },
   "opponent_breakdown": {
-    "ranked_wins": 15,
-    "ranked_losses": 3,
+    "ranked_wins": 16,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35144512132",
-      "opponent_rank": 21,
-      "opponent_name": "Joseph Kresel",
-      "method": "TF 19-3 3:00"
+      "opponent_id": "34993726132",
+      "opponent_rank": 20,
+      "opponent_name": "Branson Fain",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "34997618132",
-      "opponent_rank": 17,
-      "opponent_name": "Titus Greiwe",
-      "method": "Fall 1:10"
+      "opponent_id": "34989041132",
+      "opponent_rank": 38,
+      "opponent_name": "Evan Pyles",
+      "method": "TF 18-0 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34993726132",
+      "opponent_name": "Branson Fain",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 150,
+      "opponent_rank": 20,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34989041132",
+      "opponent_name": "Evan Pyles",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 157,
+      "opponent_rank": 38,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "18-0",
+      "duration": "0:00",
+      "event": "vs. Paducah Tilghman"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "OUTSTATE_745eb7f50e77",
       "opponent_name": "Unknown",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 105,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "144",
@@ -65,7 +95,7 @@
       "opponent_id": "35030263132",
       "opponent_name": "evan Blackburn",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 121,
       "opponent_weight": 144,
       "opponent_rank": 77,
       "weight_class": "144",
@@ -95,7 +125,7 @@
       "opponent_id": "34997618132",
       "opponent_name": "Titus Greiwe",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 69,
       "opponent_weight": 144,
       "opponent_rank": 17,
       "weight_class": "144",
@@ -125,7 +155,7 @@
       "opponent_id": "35223401132",
       "opponent_name": "Elijah Davidson",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 111,
       "opponent_weight": 138,
       "opponent_rank": 104,
       "weight_class": "144",
@@ -140,7 +170,7 @@
       "opponent_id": "35124967132",
       "opponent_name": "Gage Williams",
       "opponent_team": "Montgomery County",
-      "opponent_team_rank": 111,
+      "opponent_team_rank": 112,
       "opponent_weight": 144,
       "opponent_rank": 81,
       "weight_class": "144",
@@ -305,7 +335,7 @@
       "opponent_id": "35144512132",
       "opponent_name": "Joseph Kresel",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 47,
       "opponent_weight": 144,
       "opponent_rank": 21,
       "weight_class": "144",
@@ -350,7 +380,7 @@
       "opponent_id": "35123979132",
       "opponent_name": "Jaxson Wallace",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 62,
       "opponent_weight": 144,
       "opponent_rank": 94,
       "weight_class": "150",
@@ -380,7 +410,7 @@
       "opponent_id": "35281286132",
       "opponent_name": "Jackson Fosset",
       "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 73,
       "opponent_weight": 150,
       "opponent_rank": 64,
       "weight_class": "150",
@@ -395,7 +425,7 @@
       "opponent_id": "35433518132",
       "opponent_name": "Oliver Yonts",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 98,
+      "opponent_team_rank": 99,
       "opponent_weight": 150,
       "opponent_rank": 211,
       "weight_class": "150",
@@ -490,5 +520,11 @@
     "wins": 52,
     "losses": 25,
     "win_pct": 0.675
+  },
+  "profile_generated_at": "2026-02-10",
+  "bonus": {
+    "top33_wins": 2,
+    "top33_bonus_ev_raw": 0.75,
+    "top33_bonus_ev_shrunk": 0.9233333333333332
   }
 }

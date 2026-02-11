@@ -9,9 +9,9 @@
   "current_rank": 8,
   "record": {
     "overall": "13-1",
-    "vs_ranked": "12-1",
-    "vs_top10": "1-1",
-    "vs_top25": "4-1"
+    "vs_ranked": "12-2",
+    "vs_top10": "1-2",
+    "vs_top25": "4-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,9 +28,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 12,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 1,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35732596132",
       "opponent_rank": 9,
@@ -45,6 +45,21 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34992803132",
+      "opponent_name": "Micah Thompson",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 165,
+      "opponent_rank": 1,
+      "weight_class": "165",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "vs. Fairdale"
+    },
     {
       "date": "2026-01-21",
       "opponent_id": "35565173132",
@@ -170,7 +185,7 @@
       "opponent_id": "35084252132",
       "opponent_name": "Andrew Barger",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 56,
       "opponent_weight": 165,
       "opponent_rank": 128,
       "weight_class": "165",
@@ -186,7 +201,7 @@
       "opponent_id": "35542534132",
       "opponent_name": "Destin Basemore",
       "opponent_team": "Central",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 40,
       "opponent_weight": 165,
       "opponent_rank": 34,
       "weight_class": "165",
@@ -218,7 +233,7 @@
       "opponent_id": "34997567132",
       "opponent_name": "Brock Heidle",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 44,
       "opponent_weight": 165,
       "opponent_rank": 24,
       "weight_class": "165",
@@ -234,7 +249,7 @@
       "opponent_id": "34989006132",
       "opponent_name": "Hunter Roberts",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 50,
       "opponent_weight": 165,
       "opponent_rank": 18,
       "weight_class": "165",
@@ -301,5 +316,6 @@
     "wins": 43,
     "losses": 18,
     "win_pct": 0.705
-  }
+  },
+  "profile_generated_at": "2026-02-10"
 }

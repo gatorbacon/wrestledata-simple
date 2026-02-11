@@ -27,6 +27,7 @@ import json
 import re
 import shutil
 from collections import defaultdict
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
 
@@ -414,6 +415,7 @@ def calculate_records(
 ) -> Dict[str, any]:
     """Calculate win/loss records (overall, vs_ranked, vs_top10, vs_top25)."""
     wins = 0
+    forfeit_wins = 0
     losses = 0
     ranked_wins = 0
     ranked_losses = 0
@@ -446,6 +448,8 @@ def calculate_records(
         
         if is_winner:
             wins += 1
+            if classify_result_type(result) == "FF":
+                forfeit_wins += 1
             opp_rank = rank_by_id.get(opp_id)
             if opp_rank:
                 ranked_wins += 1
@@ -469,6 +473,7 @@ def calculate_records(
         "vs_top10": f"{top10_wins}-{top10_losses}",
         "vs_top25": f"{top25_wins}-{top25_losses}",
         "wins": wins,
+        "forfeit_wins": forfeit_wins,
         "losses": losses,
         "ranked_wins": ranked_wins,
         "ranked_losses": ranked_losses,
@@ -1077,9 +1082,12 @@ def build_wrestler_profile(
     
     # Calculate rates
     wins = records["wins"]
+    forfeit_wins = records.get("forfeit_wins", 0)
     bonus_wins = majors + techs + pins
-    bonus_rate = (bonus_wins / wins) if wins > 0 else 0.0
-    pin_rate = (pins / wins) if wins > 0 else 0.0
+    # Bonus/pin rate: exclude forfeit wins from denominator (you can't earn bonus in a forfeit)
+    wins_actual = max(0, wins - forfeit_wins)
+    bonus_rate = (bonus_wins / wins_actual) if wins_actual > 0 else 0.0
+    pin_rate = (pins / wins_actual) if wins_actual > 0 else 0.0
     
     # Find best win and worst loss
     best_win, worst_loss = find_best_win_and_worst_loss(
@@ -1364,6 +1372,9 @@ def main() -> None:
                         # If we can't read existing file, continue without preserving bonus
                         pass
                 
+                # Timestamp when this profile was generated (for "last updated" note on profile page)
+                profile["profile_generated_at"] = datetime.now().strftime("%Y-%m-%d")
+                
                 # Write to by_id
                 with output_file.open("w", encoding="utf-8") as f:
                     json.dump(profile, f, indent=2, ensure_ascii=False)
@@ -1545,6 +1556,8 @@ def main() -> None:
                 except Exception:
                     # If we can't read existing file, continue without preserving bonus
                     pass
+            
+            profile["profile_generated_at"] = datetime.now().strftime("%Y-%m-%d")
             
             # Write to by_id
             with output_file.open("w", encoding="utf-8") as f:

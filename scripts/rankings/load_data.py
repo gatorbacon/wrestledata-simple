@@ -288,6 +288,83 @@ def load_match_overrides(season: int, data_dir: str = "mt/rankings_data", league
     return override_map
 
 
+def load_match_removal_specs(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> List[Dict]:
+    """
+    Load match removal specs from match_overrides.json (entries with "remove": true).
+    Returns list of dicts with w1_norm, w2_norm, date, and optional "result".
+    When "result" is present, only the match with that exact result is removed (disambiguates
+    same-day same-opponent pairs, e.g. Varsity vs Exhibition).
+    """
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "match_overrides.json"
+    else:
+        overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
+    specs = []
+    if not overrides_path.exists():
+        return specs
+    try:
+        with overrides_path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        for ov in data.get("overrides", []):
+            if not ov.get("remove"):
+                continue
+            w1 = ov.get("wrestler1_id")
+            w2 = ov.get("wrestler2_id")
+            date = ov.get("date")
+            if w1 and w2 and date:
+                w1_norm, w2_norm = tuple(sorted([w1, w2]))
+                spec = {"w1_norm": w1_norm, "w2_norm": w2_norm, "date": date}
+                if ov.get("result") is not None and str(ov.get("result", "")).strip():
+                    spec["result"] = str(ov["result"]).strip()
+                specs.append(spec)
+    except Exception as e:
+        print(f"Warning: Could not load match removals: {e}")
+    return specs
+
+
+def apply_match_removals(data: Dict[str, Dict], removal_specs: List[Dict]) -> None:
+    """
+    Remove matches from data that match any removal spec.
+    Each spec is (w1_norm, w2_norm, date) with optional "result". When result is present,
+    only the match with that exact result is removed (so you can remove one of two
+    same-day same-opponent matches, e.g. the Exhibition with "Fall 0:00").
+    """
+    if not removal_specs:
+        return
+    removed_count = 0
+    for wc, wc_data in data.items():
+        matches = wc_data.get("matches", [])
+        new_matches = []
+        for match in matches:
+            w1 = match.get("wrestler1_id")
+            w2 = match.get("wrestler2_id")
+            date = match.get("date")
+            if not w1 or not w2 or not date:
+                new_matches.append(match)
+                continue
+            w1_norm, w2_norm = tuple(sorted([w1, w2]))
+            match_result = (match.get("result") or "").strip()
+            removed = False
+            for spec in removal_specs:
+                if w1_norm != spec["w1_norm"] or w2_norm != spec["w2_norm"] or date != spec["date"]:
+                    continue
+                if "result" in spec:
+                    if match_result == spec["result"]:
+                        removed_count += 1
+                        removed = True
+                    break
+                else:
+                    removed_count += 1
+                    removed = True
+                    break
+            if not removed:
+                new_matches.append(match)
+        wc_data["matches"] = new_matches
+    if removed_count > 0:
+        print(f"Removed {removed_count} match(es) via match removal overrides")
+
+
 def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> None:
     """
     Apply match overrides to deduplicated match data.
@@ -327,6 +404,9 @@ def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "m
             override = match_overrides.get(override_key)
             
             if override:
+                # Skip applying result/winner for removal overrides (they are dropped in apply_match_removals)
+                if override.get("remove"):
+                    continue
                 # Apply override: replace winner_id and result
                 match["winner_id"] = override.get("winner_id", match.get("winner_id"))
                 match["result"] = override.get("result", match.get("result"))
@@ -1401,7 +1481,10 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
     # Apply match overrides AFTER deduplication
     # This ensures overrides are applied to the final deduplicated matches
     apply_match_overrides(data, season, output_dir, league=league, state=state, gender=gender)
-    
+    # Remove matches that have a removal override (so they disappear from matrix and profiles)
+    removal_specs = load_match_removal_specs(season, output_dir, league=league, state=state, gender=gender)
+    apply_match_removals(data, removal_specs)
+
     # Save summary file
     summary = {
         'season': season,

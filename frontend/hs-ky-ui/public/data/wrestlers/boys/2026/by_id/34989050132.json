@@ -9,7 +9,7 @@
   "current_rank": 48,
   "record": {
     "overall": "9-17",
-    "vs_ranked": "2-4",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -20,22 +20,22 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
     "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34988694132",
-      "opponent_rank": 52,
-      "opponent_name": "Hunter Jorgenson",
-      "method": "Fall 0:43"
+      "opponent_id": "34992812132",
+      "opponent_rank": 27,
+      "opponent_name": "Jax Reynolds",
+      "method": "Dec 11-7"
     },
     "worst_loss": {
       "opponent_id": "35281677132",
@@ -45,6 +45,21 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34992812132",
+      "opponent_name": "Jax Reynolds",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 106,
+      "opponent_rank": 27,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-7",
+      "duration": "7:00",
+      "event": "vs. Paducah Tilghman"
+    },
     {
       "date": "2025-12-30",
       "opponent_id": "35486804132",
@@ -155,7 +170,7 @@
       "opponent_id": "35002891132",
       "opponent_name": "Andy Cintron",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 80,
       "opponent_weight": 113,
       "opponent_rank": 22,
       "weight_class": "120",
@@ -170,7 +185,7 @@
       "opponent_id": "34988694132",
       "opponent_name": "Hunter Jorgenson",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 41,
       "opponent_weight": 120,
       "opponent_rank": 52,
       "weight_class": "120",
@@ -185,7 +200,7 @@
       "opponent_id": "35281677132",
       "opponent_name": "Taylor Stroud",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 108,
       "opponent_weight": 120,
       "opponent_rank": 39,
       "weight_class": "120",
@@ -215,7 +230,7 @@
       "opponent_id": "35281677132",
       "opponent_name": "Taylor Stroud",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 108,
       "opponent_weight": 120,
       "opponent_rank": 39,
       "weight_class": "120",
@@ -305,7 +320,7 @@
       "opponent_id": "35281677132",
       "opponent_name": "Taylor Stroud",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 108,
       "opponent_weight": 120,
       "opponent_rank": 39,
       "weight_class": "120",
@@ -451,5 +466,11 @@
     "wins": 9,
     "losses": 20,
     "win_pct": 0.31
+  },
+  "profile_generated_at": "2026-02-10",
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 1.2688679245283019
   }
 }

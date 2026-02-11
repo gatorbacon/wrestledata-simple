@@ -9,9 +9,9 @@
   "current_rank": 27,
   "record": {
     "overall": "11-4",
-    "vs_ranked": "4-2",
-    "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_ranked": "4-3",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,9 +28,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35598041132",
       "opponent_rank": 29,
@@ -46,11 +46,26 @@
   },
   "match_list": [
     {
+      "date": "2026-02-07",
+      "opponent_id": "34992807132",
+      "opponent_name": "Judah Carey",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 157,
+      "opponent_rank": 6,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "19-2",
+      "duration": "0:00",
+      "event": "vs. Paducah Tilghman"
+    },
+    {
       "date": "2026-01-17",
       "opponent_id": "34988682132",
       "opponent_name": "CJ Thacker",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 41,
       "opponent_weight": 150,
       "opponent_rank": 151,
       "weight_class": "150",
@@ -65,7 +80,7 @@
       "opponent_id": "34989007132",
       "opponent_name": "Kaden Coy",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 50,
       "opponent_weight": 150,
       "opponent_rank": 25,
       "weight_class": "150",
@@ -80,7 +95,7 @@
       "opponent_id": "35598041132",
       "opponent_name": "Zyereon Mayes",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 132,
+      "opponent_team_rank": 133,
       "opponent_weight": 150,
       "opponent_rank": 29,
       "weight_class": "150",
@@ -110,7 +125,7 @@
       "opponent_id": "35103664132",
       "opponent_name": "Patrick Oliver",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 127,
       "opponent_weight": 150,
       "opponent_rank": 90,
       "weight_class": "150",
@@ -140,7 +155,7 @@
       "opponent_id": "35493541132",
       "opponent_name": "Blaise Wilson",
       "opponent_team": "McCracken County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 108,
       "opponent_weight": 144,
       "opponent_rank": 126,
       "weight_class": "150",
@@ -200,7 +215,7 @@
       "opponent_id": "37026154132",
       "opponent_name": "Hunter Banet",
       "opponent_team": "Floyd Central",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 79,
       "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "150",
@@ -277,5 +292,11 @@
     "wins": 11,
     "losses": 4,
     "win_pct": 0.733
+  },
+  "profile_generated_at": "2026-02-10",
+  "bonus": {
+    "top33_wins": 1,
+    "top33_bonus_ev_raw": 2.0,
+    "top33_bonus_ev_shrunk": 1.5661375661375663
   }
 }

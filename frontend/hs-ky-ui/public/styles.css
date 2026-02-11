@@ -2736,6 +2736,31 @@ th.tooltip-trigger .tooltip {
   background: transparent;
 }
 
+/* System notice: match data / last-update (below match table, above footer) */
+.system-notice {
+  margin-top: 24px;
+  padding: 14px 16px;
+  background-color: #f8f9fb;
+  border-left: 4px solid #4a6fa5;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+}
+.system-notice strong {
+  font-weight: 600;
+}
+.system-notice__title {
+  margin: 0 0 0.5em 0;
+  font-weight: 600;
+  font-size: 1em;
+}
+.system-notice__line1 {
+  margin: 0 0 0.5em 0;
+}
+.system-notice__line2 {
+  margin: 0;
+}
+
 #match-table {
   font-size: 0.875rem;
 }
@@ -5009,15 +5034,31 @@ td {
   border-top: 1px solid var(--border);
 }
 
+.site-footer {
+  margin-top: 24px;
+  padding-top: 2em;
+  border-top: 1px solid var(--border-light);
+  text-align: center;
+}
 .footer-content {
   max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1em;
 }
-
 .footer-text {
   font-size: 0.875rem;
   color: var(--muted);
   line-height: 1.6;
   margin: 0.5em 0;
+}
+.footer-report-link--muted {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--link, var(--text-secondary));
+  text-decoration: none;
+}
+.footer-report-link--muted:hover {
+  text-decoration: underline;
 }
 
 .footer-text-muted {
@@ -5569,6 +5610,56 @@ table a:hover {
   font-weight: 600;
 }
 
+/* Career Wins: data coverage note and legend (above table) */
+.career-wins-note {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+.career-wins-legend {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+/* Career Wins: graduation year pills (Graduation column only) */
+.graduation-pill {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+/* Inactive / graduated: outlined only, de-emphasized */
+.graduation-pill--outlined {
+  background: transparent;
+  border: 1px solid #C9CCD3;
+  color: #555555;
+}
+/* Seniors: charcoal, highest priority; slightly taller for subtle emphasis */
+.graduation-pill--senior {
+  background: #2B2F36;
+  color: #FFFFFF;
+  border: 1px solid #2B2F36;
+  padding: 0.25em 0.65em;
+}
+/* Juniors: rich forest green */
+.graduation-pill--junior {
+  background: #2F7D4C;
+  color: #FFFFFF;
+  border: 1px solid #2F7D4C;
+}
+/* Sophomores: amber/gold */
+.graduation-pill--sophomore {
+  background: #C58A1A;
+  color: #FFFFFF;
+  border: 1px solid #C58A1A;
+}
+/* Freshmen: muted purple */
+.graduation-pill--freshman {
+  background: #6B5CA5;
+  color: #FFFFFF;
+  border: 1px solid #6B5CA5;
+}
+
 /* Team Autocomplete */
 .team-autocomplete-input {
   width: 100%;
@@ -5930,6 +6021,13 @@ table a:hover {
   text-align: center;
   margin-bottom: 2.5em;
 }
+.home-hero-logo {
+  display: block;
+  margin: 0 auto 0.35em;
+  width: 100%;
+  max-width: 380px; /* Match width of 2 buttons (180+180+gap) */
+  height: auto;
+}
 .home-hero-title {
   font-size: 2.25rem;
   font-weight: 700;
@@ -5966,11 +6064,11 @@ table a:hover {
   padding: 1rem 1.75rem;
   font-size: 1.125rem;
   color: #fff;
-  background: var(--accent-primary);
+  background: #041d41; /* Match logo color */
   border-radius: 0;
 }
 .home-btn-primary:hover {
-  background: #1a43b8;
+  background: #052a5c;
   text-decoration: none;
   color: #fff;
 }
@@ -6022,8 +6120,10 @@ table a:hover {
   .homepage.page-container {
     padding: 1.5em 1em 3em;
   }
-  .home-hero-title {
-    font-size: 1.875rem;
+  .home-hero-logo {
+    max-width: none;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
   }
   .home-primary-cta {
     flex-direction: column;

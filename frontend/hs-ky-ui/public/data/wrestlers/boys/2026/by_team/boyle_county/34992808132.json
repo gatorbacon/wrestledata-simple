@@ -9,9 +9,9 @@
   "current_rank": 1,
   "record": {
     "overall": "29-7",
-    "vs_ranked": "12-1",
-    "vs_top10": "2-0",
-    "vs_top25": "7-1"
+    "vs_ranked": "15-1",
+    "vs_top10": "3-0",
+    "vs_top25": "9-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,16 +20,16 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.448,
-    "bonus_rate": 0.759,
+    "pin_rate": 0.469,
+    "bonus_rate": 0.781,
     "majors": 4,
-    "techs": 5,
-    "pins": 13
+    "techs": 6,
+    "pins": 15
   },
   "opponent_breakdown": {
-    "ranked_wins": 12,
+    "ranked_wins": 15,
     "ranked_losses": 1,
-    "top10_wins": 2,
+    "top10_wins": 3,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35077755132",
@@ -45,6 +45,51 @@
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34989048132",
+      "opponent_name": "Christian Prietto-Bottoms",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 106,
+      "opponent_rank": 7,
+      "weight_class": "106",
+      "result": "W",
+      "method": "TF",
+      "score": "22-6",
+      "duration": "0:00",
+      "event": "vs. Paducah Tilghman"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35135153132",
+      "opponent_name": "Makarios Green",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 19,
+      "opponent_weight": 106,
+      "opponent_rank": 41,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Fairdale"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34993799132",
+      "opponent_name": "Noe Rodriguez",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 106,
+      "opponent_rank": 16,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harrison County"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "OUTSTATE_22d3aa8dbaf9",
@@ -110,7 +155,7 @@
       "opponent_id": "OUTSTATE_745eb7f50e77",
       "opponent_name": "Unknown",
       "opponent_team": "Madison Southern",
-      "opponent_team_rank": 104,
+      "opponent_team_rank": 105,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "106",
@@ -125,7 +170,7 @@
       "opponent_id": "OUTSTATE_3884a8e8baf5",
       "opponent_name": "Unknown",
       "opponent_team": "Pulaski County",
-      "opponent_team_rank": 120,
+      "opponent_team_rank": 121,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "106",
@@ -170,7 +215,7 @@
       "opponent_id": "34997621132",
       "opponent_name": "Jaxson Parmon",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 69,
       "opponent_weight": 113,
       "opponent_rank": 53,
       "weight_class": "113",
@@ -185,7 +230,7 @@
       "opponent_id": "35330462132",
       "opponent_name": "William Patton",
       "opponent_team": "Mercer County",
-      "opponent_team_rank": 110,
+      "opponent_team_rank": 111,
       "opponent_weight": 106,
       "opponent_rank": 117,
       "weight_class": "106",
@@ -200,7 +245,7 @@
       "opponent_id": "35124897132",
       "opponent_name": "Preston Jackson",
       "opponent_team": "Montgomery County",
-      "opponent_team_rank": 111,
+      "opponent_team_rank": 112,
       "opponent_weight": 106,
       "opponent_rank": 71,
       "weight_class": "106",
@@ -500,7 +545,7 @@
       "opponent_id": "35528546132",
       "opponent_name": "Braylon Ryan",
       "opponent_team": "Walton-Verona",
-      "opponent_team_rank": 135,
+      "opponent_team_rank": 136,
       "opponent_weight": 113,
       "opponent_rank": 13,
       "weight_class": "113",
@@ -634,5 +679,6 @@
     "wins": 116,
     "losses": 34,
     "win_pct": 0.773
-  }
+  },
+  "profile_generated_at": "2026-02-10"
 }

@@ -11,7 +11,7 @@
     "overall": "4-2",
     "vs_ranked": "3-2",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,8 +20,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
     "pins": 2
@@ -39,7 +39,7 @@
     },
     "worst_loss": {
       "opponent_id": "35387007132",
-      "opponent_rank": 46,
+      "opponent_rank": 15,
       "opponent_name": "Olivia Thornton",
       "method": "Fall 0:00"
     }
@@ -59,21 +59,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. East Jessamine"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35387007132",
-      "opponent_name": "Olivia Thornton",
-      "opponent_team": "Campbell County",
-      "opponent_team_rank": 10,
-      "opponent_weight": 107,
-      "opponent_rank": 46,
-      "weight_class": "114",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Tommy Castle Classic"
     },
     {
       "date": "2025-11-29",
@@ -97,7 +82,7 @@
       "opponent_team": "Holmes",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 53,
+      "opponent_rank": 57,
       "weight_class": "114",
       "result": "W",
       "method": "FALL",
@@ -122,12 +107,27 @@
     },
     {
       "date": "2025-11-29",
+      "opponent_id": "35387007132",
+      "opponent_name": "Olivia Thornton",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": 10,
+      "opponent_weight": 114,
+      "opponent_rank": 15,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
       "opponent_id": "35333655132",
       "opponent_name": "Yuli Aguilar Domingo",
       "opponent_team": "Holmes",
       "opponent_team_rank": null,
       "opponent_weight": 114,
-      "opponent_rank": 56,
+      "opponent_rank": 59,
       "weight_class": "114",
       "result": "W",
       "method": "FALL",
@@ -135,5 +135,6 @@
       "duration": "0:00",
       "event": "Tommy Castle Classic"
     }
-  ]
+  ],
+  "profile_generated_at": "2026-02-11"
 }

@@ -8,10 +8,10 @@
   // Create footer HTML structure
   function createFooterHTML() {
     return `
-      <footer class="site-footer" style="margin-top: 3em; padding-top: 2em; border-top: 1px solid var(--border-light); text-align: center;">
-        <div class="footer-content" style="max-width: 800px; margin: 0 auto; padding: 0 1em;">
-          <p class="footer-text" style="font-size: 0.9375rem; color: var(--text); margin: 0;">
-            <a href="/report.html" class="footer-report-link" style="color: var(--accent-primary, #2563eb); font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor;">Contact Us / Ask about a ranking</a>
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p class="footer-text">
+            <a href="/report.html" class="footer-report-link footer-report-link--muted">Contact Us</a>
           </p>
         </div>
       </footer>

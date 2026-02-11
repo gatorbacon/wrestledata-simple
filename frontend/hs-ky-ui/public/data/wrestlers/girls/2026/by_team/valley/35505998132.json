@@ -6,12 +6,12 @@
   "team_rank": null,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 44,
+  "current_rank": 51,
   "record": {
-    "overall": "1-6",
-    "vs_ranked": "1-4",
-    "vs_top10": "0-2",
-    "vs_top25": "0-3"
+    "overall": "1-7",
+    "vs_ranked": "1-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,23 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35369130132",
-      "opponent_rank": 30,
+      "opponent_rank": 34,
       "opponent_name": "Baylee England",
       "method": "M. For."
     },
     "worst_loss": {
       "opponent_id": "35507364132",
-      "opponent_rank": 68,
+      "opponent_rank": 71,
       "opponent_name": "Mely Serrano",
       "method": "Fall 0:21"
     }
   },
   "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35899794132",
+      "opponent_name": "Ka`Leah Stringer",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 20,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Queen of the City Wrestling"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35369130132",
@@ -52,7 +67,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 6,
       "opponent_weight": 138,
-      "opponent_rank": 30,
+      "opponent_rank": 34,
       "weight_class": "138",
       "result": "W",
       "method": "MFF",
@@ -67,7 +82,7 @@
       "opponent_team": "Bell County",
       "opponent_team_rank": 6,
       "opponent_weight": 145,
-      "opponent_rank": 10,
+      "opponent_rank": 11,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -97,7 +112,7 @@
       "opponent_team": "Marion County",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 68,
+      "opponent_rank": 71,
       "weight_class": "138-145",
       "result": "L",
       "method": "FALL",
@@ -150,5 +165,6 @@
       "duration": "0:44",
       "event": "Girls Boro Brawl"
     }
-  ]
+  ],
+  "profile_generated_at": "2026-02-11"
 }

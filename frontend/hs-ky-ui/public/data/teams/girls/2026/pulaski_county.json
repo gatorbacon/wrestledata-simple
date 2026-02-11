@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-05T14:06:52.267396Z",
+  "generated_at_utc": "2026-02-11T19:52:16.121318Z",
   "starters": {
     "107": {
       "weight": 107,
-      "wrestler_id": "37806759132",
-      "name": "Zoey Whitt",
-      "current_rank": 61,
+      "wrestler_id": "38984346132",
+      "name": "Kelsey Crabtree",
+      "current_rank": 38,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -40,10 +40,10 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       },
-      "wins": 0,
-      "losses": 1,
+      "wins": 1,
+      "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -51,7 +51,7 @@
       "weight": 120,
       "wrestler_id": "35434370132",
       "name": "Brooklyn Brown",
-      "current_rank": 77,
+      "current_rank": 76,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -63,11 +63,11 @@
         "losses": 0
       },
       "top33_record": {
-        "wins": 0,
+        "wins": 1,
         "losses": 1
       },
       "wins": 2,
-      "losses": 7,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -75,7 +75,7 @@
       "weight": 126,
       "wrestler_id": "35434369132",
       "name": "River Richardson",
-      "current_rank": 74,
+      "current_rank": 82,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -114,16 +114,16 @@
         "wins": 0,
         "losses": 9
       },
-      "wins": 5,
+      "wins": 6,
       "losses": 11,
       "top25_wins": 0,
-      "bonus_rate": 0.8
+      "bonus_rate": 1.0
     },
     "152": {
       "weight": 152,
       "wrestler_id": "35373618132",
       "name": "Nevaeh Ruelas",
-      "current_rank": 50,
+      "current_rank": 48,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -132,19 +132,30 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 5
       },
       "top33_record": {
         "wins": 0,
-        "losses": 9
+        "losses": 10
       },
       "wins": 4,
-      "losses": 10,
+      "losses": 11,
       "top25_wins": 0,
-      "bonus_rate": 0.5
+      "bonus_rate": 1.0
     }
   },
-  "remaining": [],
+  "remaining": [
+    {
+      "weight": 107,
+      "wrestler_id": "37806759132",
+      "name": "Zoey Whitt",
+      "grade": null,
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
   "team_xTP_simple": 0.0,
   "team_metrics": {
     "projected_state_points": 0.0,
@@ -158,29 +169,29 @@
     "bonus_points": null,
     "overall": {
       "wins": 13,
-      "losses": 38
+      "losses": 31
     },
     "top33": {
-      "wins": 0,
+      "wins": 1,
       "losses": 21
     },
     "top10": {
       "wins": 0,
-      "losses": 6
+      "losses": 7
     },
     "bonus_rate": {
-      "value": 0.462,
-      "rank": 102,
+      "value": 0.857,
+      "rank": 100,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.462,
-      "rank": 97,
+      "value": 0.857,
+      "rank": 66,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 73,
+      "rank": 76,
       "rank_scope": "league"
     }
   }

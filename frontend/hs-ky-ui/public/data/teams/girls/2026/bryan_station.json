@@ -21,18 +21,18 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-05T14:06:52.002236Z",
+  "generated_at_utc": "2026-02-11T19:52:15.841319Z",
   "starters": {
     "114": {
       "weight": 114,
       "wrestler_id": "35640271132",
       "name": "Mlasi Tambwe",
-      "current_rank": 15,
+      "current_rank": 17,
       "grade": null,
-      "xtp": 4.87,
-      "xtp_p": 0.7,
-      "xtp_a": 1.18,
-      "xtp_b": 2.99,
+      "xtp": 4.37,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 2.82,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -51,7 +51,7 @@
       "weight": 120,
       "wrestler_id": "35640274132",
       "name": "Alexia Garcia",
-      "current_rank": 85,
+      "current_rank": 87,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -67,7 +67,7 @@
         "losses": 4
       },
       "wins": 0,
-      "losses": 4,
+      "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -75,19 +75,19 @@
       "weight": 138,
       "wrestler_id": "35687783132",
       "name": "Jada Frazier",
-      "current_rank": 27,
+      "current_rank": 29,
       "grade": null,
-      "xtp": 1.89,
-      "xtp_p": 0.2,
-      "xtp_a": 0.54,
-      "xtp_b": 1.15,
+      "xtp": 1.72,
+      "xtp_p": 0.15,
+      "xtp_a": 0.44,
+      "xtp_b": 1.13,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
-        "wins": 1,
+        "wins": 2,
         "losses": 0
       },
       "wins": 2,
@@ -95,16 +95,16 @@
       "top25_wins": 1,
       "bonus_rate": 1.0
     },
-    "152": {
-      "weight": 152,
+    "145": {
+      "weight": 145,
       "wrestler_id": "35640268132",
       "name": "Anyelith Amayo",
-      "current_rank": 30,
+      "current_rank": 37,
       "grade": null,
-      "xtp": 1.65,
-      "xtp_p": 0.18,
-      "xtp_a": 0.49,
-      "xtp_b": 0.98,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -112,10 +112,10 @@
       },
       "top33_record": {
         "wins": 2,
-        "losses": 2
+        "losses": 4
       },
       "wins": 6,
-      "losses": 4,
+      "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 0.833
     },
@@ -123,49 +123,25 @@
       "weight": 165,
       "wrestler_id": "35640275132",
       "name": "Bre`Aijah Harris",
-      "current_rank": 40,
+      "current_rank": 23,
       "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
+      "xtp": 2.88,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
+      "xtp_b": 1.82,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
-        "wins": 0,
+        "wins": 1,
         "losses": 2
       },
-      "wins": 2,
+      "wins": 4,
       "losses": 3,
-      "top25_wins": 0,
+      "top25_wins": 1,
       "bonus_rate": 1.0
-    },
-    "185": {
-      "weight": 185,
-      "wrestler_id": "37674545132",
-      "name": "Eva Marri Stephens",
-      "current_rank": 73,
-      "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "wins": 0,
-      "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
     }
   },
   "remaining": [
@@ -175,7 +151,7 @@
       "name": "Adrianna Merritt",
       "grade": null,
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -225,9 +201,19 @@
       "name": "Aubrey Baggett",
       "grade": null,
       "wins": 2,
-      "losses": 4,
+      "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 1.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "37674545132",
+      "name": "Eva Marri Stephens",
+      "grade": null,
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     }
   ],
   "team_xTP_simple": 0.5,
@@ -242,25 +228,25 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 19,
-      "losses": 21
+      "wins": 16,
+      "losses": 18
     },
     "top33": {
-      "wins": 4,
-      "losses": 13
+      "wins": 6,
+      "losses": 15
     },
     "top10": {
       "wins": 0,
       "losses": 3
     },
     "bonus_rate": {
-      "value": 0.632,
-      "rank": 55,
+      "value": 0.875,
+      "rank": 94,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.632,
-      "rank": 38,
+      "value": 0.875,
+      "rank": 59,
       "rank_scope": "league"
     },
     "tech_rate": {

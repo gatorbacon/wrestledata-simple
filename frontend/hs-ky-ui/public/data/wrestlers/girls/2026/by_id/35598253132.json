@@ -6,12 +6,12 @@
   "team_rank": 16,
   "weight_class": 185,
   "year": 2026,
-  "current_rank": 15,
+  "current_rank": 21,
   "record": {
-    "overall": "7-7",
-    "vs_ranked": "4-6",
+    "overall": "7-9",
+    "vs_ranked": "4-8",
     "vs_top10": "0-3",
-    "vs_top25": "2-5"
+    "vs_top25": "0-7"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,18 +28,18 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 6,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35565922132",
-      "opponent_rank": 24,
+      "opponent_rank": 26,
       "opponent_name": "Trinity Lopez",
       "method": "Fall 2:26"
     },
     "worst_loss": {
       "opponent_id": "35345846132",
-      "opponent_rank": 44,
+      "opponent_rank": 42,
       "opponent_name": "Anna Urbanowski",
       "method": "Fall 0:00"
     }
@@ -52,13 +52,43 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 9,
       "opponent_weight": 152,
-      "opponent_rank": 44,
+      "opponent_rank": 42,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Trigg County"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35640593132",
+      "opponent_name": "Kira Caldwell",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 185,
+      "opponent_rank": 18,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:50",
+      "event": "Richey Rumble"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35640593132",
+      "opponent_name": "Kira Caldwell",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 185,
+      "opponent_rank": 18,
+      "weight_class": "185",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Richey Rumble"
     },
     {
       "date": "2026-01-03",
@@ -80,9 +110,9 @@
       "opponent_id": "35565922132",
       "opponent_name": "Trinity Lopez",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 38,
       "opponent_weight": 185,
-      "opponent_rank": 24,
+      "opponent_rank": 26,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
@@ -167,6 +197,21 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35333618132",
+      "opponent_name": "Lyric Stanfield",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 57,
+      "opponent_weight": 165,
+      "opponent_rank": 32,
+      "weight_class": "185",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:25",
+      "event": "2025 Ohio County Girls` Invitational"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35345844132",
       "opponent_name": "Virginia Stewart",
       "opponent_team": "Caldwell County",
@@ -187,27 +232,12 @@
       "opponent_team": "North Hardin",
       "opponent_team_rank": 14,
       "opponent_weight": 185,
-      "opponent_rank": 31,
+      "opponent_rank": 33,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:47",
-      "event": "2025 Ohio County Girls` Invitational"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35333618132",
-      "opponent_name": "Lyric Stanfield",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": 57,
-      "opponent_weight": 185,
-      "opponent_rank": 35,
-      "weight_class": "185",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:25",
       "event": "2025 Ohio County Girls` Invitational"
     },
     {
@@ -230,9 +260,9 @@
       "opponent_id": "35565922132",
       "opponent_name": "Trinity Lopez",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 38,
       "opponent_weight": 185,
-      "opponent_rank": 24,
+      "opponent_rank": 26,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
@@ -255,5 +285,6 @@
       "duration": "3:25",
       "event": "RVK Lady Panther Classic"
     }
-  ]
+  ],
+  "profile_generated_at": "2026-02-11"
 }

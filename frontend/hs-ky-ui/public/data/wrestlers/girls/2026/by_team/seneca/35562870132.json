@@ -6,12 +6,12 @@
   "team_rank": 53,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 18,
+  "current_rank": 58,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "1-2",
+    "overall": "4-7",
+    "vs_ranked": "4-5",
     "vs_top10": "0-0",
-    "vs_top25": "1-1"
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,35 +24,95 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_wins": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35385141132",
-      "opponent_rank": 19,
+      "opponent_rank": 20,
       "opponent_name": "Gaby Gonzalez",
       "method": "Fall 3:20"
     },
     "worst_loss": {
-      "opponent_id": "35375761132",
-      "opponent_rank": 47,
-      "opponent_name": "Cambri Parker",
-      "method": "Fall 1:18"
+      "opponent_id": "35334948132",
+      "opponent_rank": 52,
+      "opponent_name": "Naomi Nails",
+      "method": "Fall 1:28"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35567250132",
+      "opponent_name": "Juliette Aguero",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 38,
+      "opponent_weight": 132,
+      "opponent_rank": 58,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:14",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35334944132",
+      "opponent_name": "Claire Skeeters",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 14,
+      "opponent_weight": 132,
+      "opponent_rank": 17,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35334948132",
+      "opponent_name": "Naomi Nails",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 14,
+      "opponent_weight": 132,
+      "opponent_rank": 52,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35400939132",
+      "opponent_name": "Samantha Sanchez",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 45,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-8",
+      "duration": "7:00",
+      "event": "Mestengo Invitational"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "35385141132",
       "opponent_name": "Gaby Gonzalez",
       "opponent_team": "Male",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 44,
       "opponent_weight": 132,
-      "opponent_rank": 19,
+      "opponent_rank": 20,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -67,7 +127,7 @@
       "opponent_team": "Moore",
       "opponent_team_rank": 48,
       "opponent_weight": 132,
-      "opponent_rank": 17,
+      "opponent_rank": 19,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -76,18 +136,48 @@
       "event": "Queen of the City Wrestling"
     },
     {
+      "date": "2026-01-07",
+      "opponent_id": "35333681132",
+      "opponent_name": "Desirae Carpenter",
+      "opponent_team": "Western",
+      "opponent_team_rank": 59,
+      "opponent_weight": 126,
+      "opponent_rank": 63,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "vs. Seneca"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35375761132",
       "opponent_name": "Cambri Parker",
       "opponent_team": "Conner",
       "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": 47,
+      "opponent_weight": 132,
+      "opponent_rank": 34,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:18",
+      "event": "Seneca Girls Invitational"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "36285547132",
+      "opponent_name": "Raylee Hux",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 138,
+      "opponent_rank": 54,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:21",
       "event": "Seneca Girls Invitational"
     },
     {
@@ -120,5 +210,6 @@
       "duration": "1:43",
       "event": "Girls Boro Brawl"
     }
-  ]
+  ],
+  "profile_generated_at": "2026-02-11"
 }

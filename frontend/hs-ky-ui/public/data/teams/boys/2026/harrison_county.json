@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-05T14:06:50.964230Z",
+  "generated_at_utc": "2026-02-11T19:52:14.959213Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -36,11 +36,11 @@
       "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 5
       },
       "top33_record": {
         "wins": 7,
-        "losses": 7
+        "losses": 8
       },
       "wins": 17,
       "losses": 9,
@@ -99,7 +99,7 @@
       "weight": 132,
       "wrestler_id": "34993792132",
       "name": "Jayden Fulz",
-      "current_rank": 51,
+      "current_rank": 50,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -108,7 +108,7 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "top33_record": {
         "wins": 2,
@@ -141,7 +141,7 @@
       "wins": 26,
       "losses": 2,
       "top25_wins": 11,
-      "bonus_rate": 0.808
+      "bonus_rate": 0.815
     },
     "144": {
       "weight": 144,
@@ -159,13 +159,13 @@
         "losses": 2
       },
       "top33_record": {
-        "wins": 9,
+        "wins": 10,
         "losses": 4
       },
       "wins": 26,
       "losses": 4,
-      "top25_wins": 8,
-      "bonus_rate": 0.731
+      "top25_wins": 9,
+      "bonus_rate": 0.741
     },
     "150": {
       "weight": 150,
@@ -184,7 +184,7 @@
       },
       "top33_record": {
         "wins": 4,
-        "losses": 5
+        "losses": 6
       },
       "wins": 14,
       "losses": 7,
@@ -197,23 +197,23 @@
       "name": "George Dennis",
       "current_rank": 2,
       "grade": 12,
-      "xtp": 17.36,
+      "xtp": 17.58,
       "xtp_p": 10.07,
       "xtp_a": 3.42,
-      "xtp_b": 3.87,
+      "xtp_b": 4.09,
       "xtp_simple": 24.0,
       "top10_record": {
-        "wins": 2,
+        "wins": 3,
         "losses": 2
       },
       "top33_record": {
-        "wins": 6,
+        "wins": 7,
         "losses": 2
       },
       "wins": 22,
       "losses": 2,
-      "top25_wins": 5,
-      "bonus_rate": 0.739
+      "top25_wins": 6,
+      "bonus_rate": 0.75
     },
     "165": {
       "weight": 165,
@@ -228,11 +228,11 @@
       "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
-        "losses": 5
+        "losses": 6
       },
       "top33_record": {
         "wins": 9,
-        "losses": 8
+        "losses": 9
       },
       "wins": 25,
       "losses": 8,
@@ -252,11 +252,11 @@
       "xtp_simple": 3.0,
       "top10_record": {
         "wins": 0,
-        "losses": 10
+        "losses": 11
       },
       "top33_record": {
         "wins": 4,
-        "losses": 10
+        "losses": 11
       },
       "wins": 17,
       "losses": 13,
@@ -276,11 +276,11 @@
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 3
       },
       "top33_record": {
         "wins": 5,
-        "losses": 2
+        "losses": 3
       },
       "wins": 19,
       "losses": 4,
@@ -315,7 +315,7 @@
       "weight": 285,
       "wrestler_id": "34993735132",
       "name": "CJ White",
-      "current_rank": 43,
+      "current_rank": 42,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -333,7 +333,7 @@
       "wins": 17,
       "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.765
+      "bonus_rate": 0.778
     }
   },
   "remaining": [
@@ -398,16 +398,6 @@
       "bonus_rate": 0.0
     },
     {
-      "weight": 126,
-      "wrestler_id": "37674292132",
-      "name": "Thomas Evans",
-      "grade": null,
-      "wins": 0,
-      "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    {
       "weight": 132,
       "wrestler_id": "35652144132",
       "name": "Rylen Marks",
@@ -416,6 +406,16 @@
       "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.25
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "37674292132",
+      "name": "Thomas Evans",
+      "grade": null,
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     {
       "weight": 138,
@@ -650,29 +650,29 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 279,
-      "losses": 111
+      "wins": 234,
+      "losses": 84
     },
     "top33": {
-      "wins": 76,
-      "losses": 55
+      "wins": 78,
+      "losses": 60
     },
     "top10": {
-      "wins": 14,
-      "losses": 30
+      "wins": 15,
+      "losses": 35
     },
     "bonus_rate": {
-      "value": 0.638,
-      "rank": 34,
+      "value": 0.91,
+      "rank": 60,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.462,
-      "rank": 84,
+      "value": 0.665,
+      "rank": 122,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.125,
+      "value": 0.175,
       "rank": 11,
       "rank_scope": "league"
     }

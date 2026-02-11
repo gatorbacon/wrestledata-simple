@@ -21,31 +21,31 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-05T14:06:52.007932Z",
+  "generated_at_utc": "2026-02-11T19:52:15.847264Z",
   "starters": {
     "100": {
       "weight": 100,
       "wrestler_id": "35672624132",
       "name": "Savannah Martin",
-      "current_rank": 11,
+      "current_rank": 13,
       "grade": null,
-      "xtp": 6.67,
-      "xtp_p": 1.69,
-      "xtp_a": 1.58,
-      "xtp_b": 3.4,
-      "xtp_simple": 2.0,
+      "xtp": 5.72,
+      "xtp_p": 1.16,
+      "xtp_a": 1.37,
+      "xtp_b": 3.19,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 1,
-        "losses": 5
+        "losses": 4
       },
       "top33_record": {
-        "wins": 3,
+        "wins": 4,
         "losses": 5
       },
-      "wins": 6,
+      "wins": 7,
       "losses": 5,
-      "top25_wins": 2,
-      "bonus_rate": 0.833
+      "top25_wins": 3,
+      "bonus_rate": 1.0
     },
     "120": {
       "weight": 120,
@@ -67,7 +67,7 @@
         "losses": 3
       },
       "wins": 4,
-      "losses": 9,
+      "losses": 10,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -75,19 +75,19 @@
       "weight": 126,
       "wrestler_id": "35672635132",
       "name": "Kaylee Sullivan",
-      "current_rank": 34,
+      "current_rank": 46,
       "grade": null,
-      "xtp": 1.24,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.89,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 4
       },
       "top33_record": {
-        "wins": 1,
+        "wins": 2,
         "losses": 9
       },
       "wins": 6,
@@ -101,23 +101,23 @@
       "name": "Emily Schroader",
       "current_rank": 3,
       "grade": null,
-      "xtp": 15.41,
+      "xtp": 16.12,
       "xtp_p": 8.02,
       "xtp_a": 3.12,
-      "xtp_b": 4.27,
+      "xtp_b": 4.98,
       "xtp_simple": 20.0,
       "top10_record": {
-        "wins": 4,
+        "wins": 5,
         "losses": 1
       },
       "top33_record": {
-        "wins": 9,
+        "wins": 11,
         "losses": 1
       },
-      "wins": 11,
+      "wins": 14,
       "losses": 1,
-      "top25_wins": 7,
-      "bonus_rate": 0.909
+      "top25_wins": 9,
+      "bonus_rate": 0.929
     }
   },
   "remaining": [
@@ -132,9 +132,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 22.0,
+  "team_xTP_simple": 20.5,
   "team_metrics": {
-    "projected_state_points": 22.0,
+    "projected_state_points": 20.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -144,30 +144,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 36,
-      "losses": 30
+      "wins": 31,
+      "losses": 25
     },
     "top33": {
-      "wins": 13,
+      "wins": 17,
       "losses": 18
     },
     "top10": {
-      "wins": 5,
-      "losses": 11
+      "wins": 6,
+      "losses": 10
     },
     "bonus_rate": {
-      "value": 0.694,
-      "rank": 31,
+      "value": 0.967,
+      "rank": 38,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.528,
-      "rank": 80,
+      "value": 0.733,
+      "rank": 104,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.028,
-      "rank": 30,
+      "value": 0.067,
+      "rank": 21,
       "rank_scope": "league"
     }
   }

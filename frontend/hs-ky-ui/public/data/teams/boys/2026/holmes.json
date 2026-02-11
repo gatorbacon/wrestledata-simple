@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-05T14:06:51.018636Z",
+  "generated_at_utc": "2026-02-11T19:52:15.003552Z",
   "starters": {
     "126": {
       "weight": 126,
@@ -49,10 +49,10 @@
     },
     "132": {
       "weight": 132,
-      "wrestler_id": "35219551132",
-      "name": "Xavier Stewart",
-      "current_rank": 96,
-      "grade": 9,
+      "wrestler_id": "35219515132",
+      "name": "Elyja Lackey",
+      "current_rank": 130,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -60,16 +60,16 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 8
+        "losses": 2
       },
-      "wins": 18,
-      "losses": 13,
+      "wins": 8,
+      "losses": 11,
       "top25_wins": 0,
-      "bonus_rate": 0.278
+      "bonus_rate": 0.75
     },
     "157": {
       "weight": 157,
@@ -195,7 +195,7 @@
       "weight": 285,
       "wrestler_id": "35219260132",
       "name": "Mike Baker",
-      "current_rank": 164,
+      "current_rank": 163,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -229,16 +229,6 @@
     },
     {
       "weight": 132,
-      "wrestler_id": "35219515132",
-      "name": "Elyja Lackey",
-      "grade": 11,
-      "wins": 8,
-      "losses": 11,
-      "top25_wins": 0,
-      "bonus_rate": 0.75
-    },
-    {
-      "weight": 132,
       "wrestler_id": "35219913132",
       "name": "KenYanna Johnson",
       "grade": null,
@@ -246,6 +236,16 @@
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35219551132",
+      "name": "Xavier Stewart",
+      "grade": 9,
+      "wins": 18,
+      "losses": 13,
+      "top25_wins": 0,
+      "bonus_rate": 0.278
     },
     {
       "weight": 175,
@@ -270,30 +270,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 136,
-      "losses": 103
+      "wins": 96,
+      "losses": 66
     },
     "top33": {
       "wins": 2,
-      "losses": 28
+      "losses": 22
     },
     "top10": {
       "wins": 0,
-      "losses": 14
+      "losses": 13
     },
     "bonus_rate": {
-      "value": 0.426,
-      "rank": 138,
+      "value": 0.908,
+      "rank": 63,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.375,
-      "rank": 136,
+      "value": 0.769,
+      "rank": 68,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.051,
-      "rank": 74,
+      "value": 0.138,
+      "rank": 25,
       "rank_scope": "league"
     }
   }
