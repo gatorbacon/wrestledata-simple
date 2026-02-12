@@ -3,15 +3,15 @@
   "name": "Payton Pressley",
   "team": "Boyd County",
   "team_slug": "boyd_county",
-  "team_rank": 11,
+  "team_rank": 13,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 175,
+  "current_rank": 182,
   "record": {
     "overall": "1-7",
     "vs_ranked": "1-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-3"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35850455132",
-      "opponent_rank": 271,
+      "opponent_rank": 160,
       "opponent_name": "Jase Senter-Lowe",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35868690132",
-      "opponent_rank": 126,
+      "opponent_rank": 124,
       "opponent_name": "Ethan Rogers",
       "method": "Fall 0:21"
     }
@@ -47,44 +47,12 @@
   "match_list": [
     {
       "date": "2025-12-13",
-      "opponent_id": "35850455132",
-      "opponent_name": "Jase Senter-Lowe",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": 11,
-      "opponent_weight": 175,
-      "opponent_rank": 271,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": 0.52
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "36019523132",
-      "opponent_name": "Hagen Samuel",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 39,
-      "opponent_weight": 190,
-      "opponent_rank": 24,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:20",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": -3.16
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35017750132",
       "opponent_name": "Jacob Hammonds",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 39,
-      "opponent_weight": 190,
-      "opponent_rank": 65,
+      "opponent_team_rank": 41,
+      "opponent_weight": 175,
+      "opponent_rank": 73,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -95,12 +63,28 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35850455132",
+      "opponent_name": "Jase Senter-Lowe",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 175,
+      "opponent_rank": 160,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland Invitational Tournament",
+      "mv_impact": 0.52
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35017742132",
       "opponent_name": "Branden McGee",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 41,
       "opponent_weight": 190,
-      "opponent_rank": 16,
+      "opponent_rank": 20,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -110,13 +94,29 @@
       "mv_impact": -2.99
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "36019523132",
+      "opponent_name": "Hagen Samuel",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 41,
+      "opponent_weight": 190,
+      "opponent_rank": 29,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "Ashland Invitational Tournament",
+      "mv_impact": -3.16
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35751934132",
       "opponent_name": "remi marcum",
       "opponent_team": "Lawrence County",
       "opponent_team_rank": 100,
       "opponent_weight": 175,
-      "opponent_rank": 78,
+      "opponent_rank": 80,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -132,7 +132,7 @@
       "opponent_team": "Raceland",
       "opponent_team_rank": null,
       "opponent_weight": 190,
-      "opponent_rank": 39,
+      "opponent_rank": 41,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -148,7 +148,7 @@
       "opponent_team": "Martin County",
       "opponent_team_rank": 17,
       "opponent_weight": 190,
-      "opponent_rank": 23,
+      "opponent_rank": 16,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -164,7 +164,7 @@
       "opponent_team": "Raceland",
       "opponent_team_rank": null,
       "opponent_weight": 190,
-      "opponent_rank": 126,
+      "opponent_rank": 124,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -196,10 +196,5 @@
     "losses": 7,
     "win_pct": 0.125
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9492753623188406
-  }
+  "profile_generated_at": "2026-02-12"
 }

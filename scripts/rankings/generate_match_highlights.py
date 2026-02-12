@@ -885,6 +885,7 @@ def generate_upsets_graphic(
     # Generate filename based on date range
     date_str = f"{start_date.strftime('%Y%m%d')}_{end_date.strftime('%Y%m%d')}"
     output_jpg = output_dir / f"top_upsets_{gender}_{season}_{date_str}.jpg"
+    output_svg = output_dir / f"top_upsets_{gender}_{season}_{date_str}.svg"
     
     if not template_path.exists():
         print(f"Warning: Template not found at {template_path}, skipping graphic generation")
@@ -1015,19 +1016,16 @@ def generate_upsets_graphic(
         details_pattern = rf'(inkscape:label="matchdetails{idx}"[^>]*>[\s\S]*?<tspan[^>]*>)[^<]*(</tspan>)'
         svg_content = re.sub(details_pattern, lambda m: m.group(1) + match_details + m.group(2), svg_content)
     
-    # Save temporary SVG
-    temp_svg = output_dir / f"temp_upsets_{gender}_{season}_{date_str}.svg"
-    with open(temp_svg, 'w', encoding='utf-8') as f:
+    # Save modified SVG to output directory
+    with open(output_svg, 'w', encoding='utf-8') as f:
         f.write(svg_content)
+    print(f"  ✓ Upsets graphic SVG saved: {output_svg}")
     
     # Convert to JPG
     if CAIROSVG_AVAILABLE:
-        render_svg_to_jpg(temp_svg, output_jpg, width=2000, height=2000)
-        # Clean up temporary SVG
-        temp_svg.unlink()
+        render_svg_to_jpg(output_svg, output_jpg, width=2000, height=2000)
     else:
-        print("Warning: cairosvg/PIL not available. SVG saved but JPG conversion skipped.")
-        print(f"  SVG saved to: {temp_svg}")
+        print("Warning: cairosvg/PIL not available. JPG conversion skipped.")
         print("  Install with: pip install cairosvg pillow")
 
 

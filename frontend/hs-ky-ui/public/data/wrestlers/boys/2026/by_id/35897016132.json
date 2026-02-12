@@ -3,13 +3,13 @@
   "name": "Cole Hill",
   "team": "Boyd County",
   "team_slug": "boyd_county",
-  "team_rank": 11,
+  "team_rank": 13,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 170,
+  "current_rank": 184,
   "record": {
-    "overall": "0-6",
-    "vs_ranked": "0-4",
+    "overall": "0-7",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,18 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35753803132",
-      "opponent_rank": 123,
-      "opponent_name": "elijah diamond",
-      "method": "Fall 1:32"
+      "opponent_id": "36443295132",
+      "opponent_rank": 152,
+      "opponent_name": "Kaleb Gwinn",
+      "method": "Fall 1:05"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-08",
+      "opponent_id": "36443295132",
+      "opponent_name": "Kaleb Gwinn",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 132,
+      "opponent_rank": 152,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
+      "event": "region 8 JV Region Tournament"
+    },
     {
       "date": "2025-12-20",
       "opponent_id": "35137430132",
@@ -75,9 +90,9 @@
       "opponent_id": "35017749132",
       "opponent_name": "Kieran Burnside",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 41,
       "opponent_weight": 132,
-      "opponent_rank": 80,
+      "opponent_rank": 65,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -107,7 +122,7 @@
       "opponent_team": "Lawrence County",
       "opponent_team_rank": 100,
       "opponent_weight": 126,
-      "opponent_rank": 123,
+      "opponent_rank": 127,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -143,20 +158,15 @@
       "season": 2026,
       "grade": 9,
       "team": "Boyd County",
-      "record": "0-6",
+      "record": "0-7",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 0,
-    "losses": 6,
+    "losses": 7,
     "win_pct": 0.0
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1084905660377358
-  }
+  "profile_generated_at": "2026-02-12"
 }

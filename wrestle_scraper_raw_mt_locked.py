@@ -9,6 +9,11 @@ import shutil
 LOCK_DIR = Path("mt/locks")
 LOCK_DIR.mkdir(parents=True, exist_ok=True)
 
+# Teams/seasons that skip weight-class validation in the wrestler dropdown.
+# Dropdown entries without " - " (e.g. "Jayden Pointer" vs "120 - Cole Young") are
+# normally skipped; for these (team, season) pairs we accept them and try roster lookup.
+SKIP_WEIGHT_VALIDATION_TEAMS = {("Boone County", "2026")}
+
 # Log file lock directory
 LOG_LOCK_DIR = Path("mt/log_locks")
 LOG_LOCK_DIR.mkdir(parents=True, exist_ok=True)
@@ -1543,8 +1548,24 @@ class WrestlingScraper:
                     has_weight_class = " - " in wrestler_name
                     
                     if not has_weight_class:
-                        # No weight class prefix - check if this is an override wrestler
-                        if wrestler_name in override_lookup:
+                        # No weight class prefix - check skip config, override, or skip
+                        skip_validation = (team_info.get("name", ""), season_str) in SKIP_WEIGHT_VALIDATION_TEAMS
+                        if skip_validation:
+                            # Team/season in config: accept wrestler and try roster lookup for weight/grade
+                            weight_class = ""
+                            grade = ""
+                            normalized_name = wrestler_name.strip()
+                            matching_keys = [k for k in roster_info.keys() if k.startswith(normalized_name + "_")]
+                            if len(matching_keys) == 1:
+                                key = matching_keys[0]
+                                weight_class = key[len(normalized_name) + 1:].strip()
+                                grade = roster_info.get(key, "")
+                            elif matching_keys:
+                                key = matching_keys[0]
+                                weight_class = key[len(normalized_name) + 1:].strip()
+                                grade = roster_info.get(key, "")
+                            print(f"✓ Accepting wrestler without weight prefix (team in skip config): {wrestler_name}" + (f" ({weight_class})" if weight_class else ""))
+                        elif wrestler_name in override_lookup:
                             # This is an override wrestler - get weight class from override file
                             override_info = override_lookup[wrestler_name]
                             weight_class = override_info.get("weight_class", "")

@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-11T19:52:14.829810Z",
+  "generated_at_utc": "2026-02-12T18:44:00.180032Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "37133412132",
       "name": "Gavin Ratliff",
-      "current_rank": 78,
+      "current_rank": 71,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -42,17 +42,41 @@
         "wins": 0,
         "losses": 1
       },
-      "wins": 4,
-      "losses": 3,
+      "wins": 5,
+      "losses": 4,
       "top25_wins": 0,
-      "bonus_rate": 0.75
+      "bonus_rate": 1.0
     },
     "113": {
       "weight": 113,
       "wrestler_id": "37133309132",
       "name": "Greason Gooslin",
-      "current_rank": 123,
+      "current_rank": 130,
       "grade": 9,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "wins": 4,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "37133331132",
+      "name": "Samual Adkins",
+      "current_rank": 167,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -69,37 +93,13 @@
       "wins": 2,
       "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.5
-    },
-    "120": {
-      "weight": 120,
-      "wrestler_id": "37133331132",
-      "name": "Samual Adkins",
-      "current_rank": 135,
-      "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "wins": 2,
-      "losses": 3,
-      "top25_wins": 0,
       "bonus_rate": 0.0
     },
     "132": {
       "weight": 132,
       "wrestler_id": "37133355132",
       "name": "Bailey Poore",
-      "current_rank": 132,
+      "current_rank": 136,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -114,16 +114,16 @@
         "wins": 0,
         "losses": 1
       },
-      "wins": 2,
-      "losses": 3,
+      "wins": 4,
+      "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 1.0
     },
     "157": {
       "weight": 157,
       "wrestler_id": "37133357132",
       "name": "Dawson Poore",
-      "current_rank": 148,
+      "current_rank": 130,
       "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -138,64 +138,16 @@
         "wins": 0,
         "losses": 0
       },
-      "wins": 1,
-      "losses": 7,
+      "wins": 6,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
     "165": {
       "weight": 165,
-      "wrestler_id": "37133366132",
-      "name": "Andrew Sparkman",
-      "current_rank": 214,
-      "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "wins": 0,
-      "losses": 2,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    "175": {
-      "weight": 175,
-      "wrestler_id": "37133096132",
-      "name": "Evan Ratliff",
-      "current_rank": 97,
-      "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 2
-      },
-      "wins": 4,
-      "losses": 4,
-      "top25_wins": 0,
-      "bonus_rate": 0.5
-    },
-    "190": {
-      "weight": 190,
-      "wrestler_id": "37133335132",
-      "name": "Mason Hamilton",
-      "current_rank": 165,
+      "wrestler_id": "37133122132",
+      "name": "Connor Grizzle",
+      "current_rank": 180,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -213,6 +165,54 @@
       "wins": 1,
       "losses": 6,
       "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "37133096132",
+      "name": "Evan Ratliff",
+      "current_rank": 103,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "wins": 6,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "37133335132",
+      "name": "Mason Hamilton",
+      "current_rank": 187,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "wins": 1,
+      "losses": 10,
+      "top25_wins": 0,
       "bonus_rate": 1.0
     }
   },
@@ -222,7 +222,7 @@
       "wrestler_id": "37133225132",
       "name": "Blaze Adkins",
       "grade": 9,
-      "wins": 0,
+      "wins": 1,
       "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.0
@@ -232,8 +232,8 @@
       "wrestler_id": "37133337132",
       "name": "Jackson Justice",
       "grade": null,
-      "wins": 2,
-      "losses": 4,
+      "wins": 3,
+      "losses": 6,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -248,12 +248,22 @@
       "bonus_rate": 0.0
     },
     {
-      "weight": 165,
-      "wrestler_id": "37133122132",
-      "name": "Connor Grizzle",
+      "weight": 157,
+      "wrestler_id": "39012393132",
+      "name": "Talon Jordan",
       "grade": null,
-      "wins": 1,
+      "wins": 0,
       "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 175,
+      "wrestler_id": "37133366132",
+      "name": "Andrew Sparkman",
+      "grade": null,
+      "wins": 0,
+      "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -280,30 +290,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 16,
-      "losses": 34
+      "wins": 22,
+      "losses": 52
     },
     "top33": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "top10": {
       "wins": 0,
       "losses": 1
     },
     "bonus_rate": {
-      "value": 1.0,
-      "rank": 7,
+      "value": 1.636,
+      "rank": 6,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.875,
-      "rank": 19,
+      "value": 1.545,
+      "rank": 4,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.125,
-      "rank": 32,
+      "value": 0.091,
+      "rank": 91,
       "rank_scope": "league"
     }
   }

@@ -3,13 +3,13 @@
   "name": "Gavin Jordan",
   "team": "Knox Central",
   "team_slug": "knox_central",
-  "team_rank": 98,
+  "team_rank": 97,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 95,
+  "current_rank": 67,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "0-0",
+    "overall": "3-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,27 +20,47 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35521179132",
+      "opponent_rank": 138,
+      "opponent_name": "Alexzander Caudill",
+      "method": "Fall 0:00"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2026-01-20",
+      "opponent_id": "37133122132",
+      "opponent_name": "Connor Grizzle",
+      "opponent_team": "East Ridge",
+      "opponent_team_rank": 75,
+      "opponent_weight": 165,
+      "opponent_rank": 175,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Knox Central"
+    },
+    {
+      "date": "2026-01-20",
       "opponent_id": "OUTSTATE_021f644ea71a",
       "opponent_name": "Unknown",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 115,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "165",
@@ -49,7 +69,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Perry County Central"
+    },
+    {
+      "date": "2026-01-20",
+      "opponent_id": "35521179132",
+      "opponent_name": "Alexzander Caudill",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": 101,
+      "opponent_weight": 165,
+      "opponent_rank": 138,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Letcher County Central"
     }
   ],
-  "profile_generated_at": "2026-02-10"
+  "profile_generated_at": "2026-02-12"
 }

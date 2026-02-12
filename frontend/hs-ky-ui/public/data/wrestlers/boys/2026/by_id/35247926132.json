@@ -3,12 +3,12 @@
   "name": "Sunai Barney",
   "team": "Western",
   "team_slug": "western",
-  "team_rank": 30,
+  "team_rank": 31,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 75,
+  "current_rank": 79,
   "record": {
-    "overall": "2-1",
+    "overall": "3-3",
     "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -24,7 +24,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35281615132",
-      "opponent_rank": 259,
+      "opponent_rank": 260,
       "opponent_name": "Lillth Poole",
       "method": "Fall 1:41"
     },
@@ -41,13 +41,58 @@
   },
   "match_list": [
     {
+      "date": "2026-02-07",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:08",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "OUTSTATE_82a0dba17532",
+      "opponent_name": "Aaliyah Henderson",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 33,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
       "date": "2025-11-29",
       "opponent_id": "35228217132",
       "opponent_name": "Aria McFarland",
       "opponent_team": "Butler",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 67,
       "opponent_weight": 175,
-      "opponent_rank": 265,
+      "opponent_rank": 270,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -60,9 +105,9 @@
       "opponent_id": "35281615132",
       "opponent_name": "Lillth Poole",
       "opponent_team": "Southern",
-      "opponent_team_rank": 130,
+      "opponent_team_rank": 129,
       "opponent_weight": 215,
-      "opponent_rank": 259,
+      "opponent_rank": 260,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -98,20 +143,15 @@
       "season": 2026,
       "grade": 10,
       "team": "Western",
-      "record": "2-1",
+      "record": "3-3",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 2,
-    "losses": 1,
-    "win_pct": 0.667
+    "wins": 3,
+    "losses": 3,
+    "win_pct": 0.5
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0496124031007752
-  }
+  "profile_generated_at": "2026-02-12"
 }

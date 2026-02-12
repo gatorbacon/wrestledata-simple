@@ -4,12 +4,12 @@
   "team": "St. Xavier",
   "team_slug": "st_xavier",
   "team_rank": 18,
-  "weight_class": 132,
+  "weight_class": 126,
   "year": 2026,
-  "current_rank": 251,
+  "current_rank": 79,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "3-1",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,25 +20,91 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35698215132",
+      "opponent_rank": 95,
+      "opponent_name": "Collin Burk",
+      "method": "Fall 1:47"
+    },
+    "worst_loss": {
+      "opponent_id": "35144080132",
+      "opponent_rank": 82,
+      "opponent_name": "Colin Yurt",
+      "method": "Fall 1:49"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1084905660377358
-  }
+  "match_list": [
+    {
+      "date": "2026-02-05",
+      "opponent_id": "35144080132",
+      "opponent_name": "Colin Yurt",
+      "opponent_team": "Desales",
+      "opponent_team_rank": 72,
+      "opponent_weight": 126,
+      "opponent_rank": 82,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "JV Region 3 - 2026"
+    },
+    {
+      "date": "2026-02-05",
+      "opponent_id": "35193723132",
+      "opponent_name": "Lueke Gage",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": 24,
+      "opponent_weight": 126,
+      "opponent_rank": 97,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "JV Region 3 - 2026"
+    },
+    {
+      "date": "2026-02-05",
+      "opponent_id": "35135243132",
+      "opponent_name": "Osniel Leon",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 25,
+      "opponent_weight": 126,
+      "opponent_rank": 157,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "JV Region 3 - 2026"
+    },
+    {
+      "date": "2026-02-05",
+      "opponent_id": "35698215132",
+      "opponent_name": "Collin Burk",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": 118,
+      "opponent_weight": 126,
+      "opponent_rank": 95,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:47",
+      "event": "JV Region 3 - 2026"
+    }
+  ],
+  "profile_generated_at": "2026-02-12"
 }

@@ -3,15 +3,15 @@
   "name": "Yordin Flores",
   "team": "Woodford County",
   "team_slug": "woodford_county",
-  "team_rank": 53,
+  "team_rank": 55,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 109,
+  "current_rank": 111,
   "record": {
     "overall": "4-5",
     "vs_ranked": "3-4",
     "vs_top10": "0-1",
-    "vs_top25": "0-4"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -33,15 +33,15 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35565173132",
-      "opponent_rank": 119,
+      "opponent_rank": 63,
       "opponent_name": "Dominic Morin",
       "method": "Dec 6-4"
     },
     "worst_loss": {
-      "opponent_id": "34993877132",
-      "opponent_rank": 25,
-      "opponent_name": "Bryce Brockman",
-      "method": "Fall 2:20"
+      "opponent_id": "35226175132",
+      "opponent_rank": 27,
+      "opponent_name": "Jaxon Cox",
+      "method": "Fall 3:25"
     }
   },
   "match_list": [
@@ -52,7 +52,7 @@
       "opponent_team": "St. Xavier",
       "opponent_team_rank": 18,
       "opponent_weight": 165,
-      "opponent_rank": 119,
+      "opponent_rank": 63,
       "weight_class": "175",
       "result": "W",
       "method": "DEC",
@@ -65,7 +65,7 @@
       "opponent_id": "35519852132",
       "opponent_name": "Braxton Mackey",
       "opponent_team": "Anderson County",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 11,
       "opponent_weight": 175,
       "opponent_rank": 8,
       "weight_class": "175",
@@ -80,9 +80,9 @@
       "opponent_id": "35144531132",
       "opponent_name": "Lucas Durham",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 98,
       "opponent_weight": 175,
-      "opponent_rank": 15,
+      "opponent_rank": 14,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -95,7 +95,7 @@
       "opponent_id": "35225626132",
       "opponent_name": "Trenton rexroad",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 82,
       "opponent_weight": 165,
       "opponent_rank": 124,
       "weight_class": "175",
@@ -110,9 +110,9 @@
       "opponent_id": "34994849132",
       "opponent_name": "luke nelson",
       "opponent_team": "Spencer County",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 29,
       "opponent_weight": 175,
-      "opponent_rank": 148,
+      "opponent_rank": 150,
       "weight_class": "175",
       "result": "W",
       "method": "DEC",
@@ -122,32 +122,32 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "34993877132",
-      "opponent_name": "Bryce Brockman",
-      "opponent_team": "Green County",
-      "opponent_team_rank": 86,
-      "opponent_weight": 165,
-      "opponent_rank": 25,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:20",
-      "event": "vs. Woodford County"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35226175132",
       "opponent_name": "Jaxon Cox",
       "opponent_team": "Nelson County",
-      "opponent_team_rank": 23,
-      "opponent_weight": 165,
-      "opponent_rank": 22,
+      "opponent_team_rank": 14,
+      "opponent_weight": 157,
+      "opponent_rank": 27,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:25",
+      "event": "vs. Woodford County"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34993877132",
+      "opponent_name": "Bryce Brockman",
+      "opponent_team": "Green County",
+      "opponent_team_rank": 85,
+      "opponent_weight": 165,
+      "opponent_rank": 26,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:20",
       "event": "vs. Woodford County"
     },
     {
@@ -212,10 +212,5 @@
     "losses": 20,
     "win_pct": 0.333
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4921875
-  }
+  "profile_generated_at": "2026-02-12"
 }

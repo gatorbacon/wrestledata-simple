@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-11T19:52:14.930246Z",
+  "generated_at_utc": "2026-02-12T18:44:00.307844Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "36210376132",
       "name": "Jaiven Hunley",
-      "current_rank": 71,
+      "current_rank": 76,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -43,9 +43,9 @@
         "losses": 3
       },
       "wins": 10,
-      "losses": 5,
+      "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.333
+      "bonus_rate": 1.0
     },
     "113": {
       "weight": 113,
@@ -69,134 +69,38 @@
       "wins": 2,
       "losses": 3,
       "top25_wins": 0,
-      "bonus_rate": 0.5
+      "bonus_rate": 1.0
     },
     "120": {
       "weight": 120,
       "wrestler_id": "34993883132",
       "name": "Prestyn Walls",
-      "current_rank": 19,
+      "current_rank": 18,
       "grade": 10,
-      "xtp": 3.1,
-      "xtp_p": 0.47,
-      "xtp_a": 0.96,
-      "xtp_b": 1.67,
+      "xtp": 3.07,
+      "xtp_p": 0.46,
+      "xtp_a": 1.0,
+      "xtp_b": 1.61,
       "xtp_simple": 0.5,
-      "top10_record": {
-        "wins": 0,
-        "losses": 3
-      },
-      "top33_record": {
-        "wins": 6,
-        "losses": 10
-      },
-      "wins": 29,
-      "losses": 10,
-      "top25_wins": 1,
-      "bonus_rate": 0.679
-    },
-    "126": {
-      "weight": 126,
-      "wrestler_id": "35575962132",
-      "name": "Isaac Diaz",
-      "current_rank": 96,
-      "grade": 8,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 4
-      },
-      "wins": 14,
-      "losses": 13,
-      "top25_wins": 0,
-      "bonus_rate": 0.571
-    },
-    "132": {
-      "weight": 132,
-      "wrestler_id": "34993876132",
-      "name": "Ayden Hall",
-      "current_rank": 59,
-      "grade": 11,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 1,
-        "losses": 3
-      },
-      "wins": 5,
-      "losses": 3,
-      "top25_wins": 1,
-      "bonus_rate": 0.8
-    },
-    "138": {
-      "weight": 138,
-      "wrestler_id": "35576566132",
-      "name": "Joel Diaz",
-      "current_rank": 56,
-      "grade": 12,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
       },
       "top33_record": {
-        "wins": 0,
-        "losses": 4
+        "wins": 7,
+        "losses": 12
       },
-      "wins": 23,
-      "losses": 18,
-      "top25_wins": 0,
-      "bonus_rate": 0.826
+      "wins": 33,
+      "losses": 12,
+      "top25_wins": 4,
+      "bonus_rate": 0.84
     },
-    "144": {
-      "weight": 144,
-      "wrestler_id": "34993874132",
-      "name": "Brendan Martin",
-      "current_rank": 177,
-      "grade": 10,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 6
-      },
-      "wins": 8,
-      "losses": 22,
-      "top25_wins": 0,
-      "bonus_rate": 0.25
-    },
-    "150": {
-      "weight": 150,
-      "wrestler_id": "34993868132",
-      "name": "Tristin Davis",
-      "current_rank": 138,
-      "grade": 12,
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35575962132",
+      "name": "Isaac Diaz",
+      "current_rank": 87,
+      "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -210,16 +114,112 @@
         "wins": 0,
         "losses": 1
       },
-      "wins": 7,
-      "losses": 12,
+      "wins": 15,
+      "losses": 13,
       "top25_wins": 0,
-      "bonus_rate": 0.714
+      "bonus_rate": 1.0
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "34993876132",
+      "name": "Ayden Hall",
+      "current_rank": 23,
+      "grade": 11,
+      "xtp": 2.1,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
+      "xtp_b": 1.04,
+      "xtp_simple": 0.5,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 5
+      },
+      "wins": 10,
+      "losses": 6,
+      "top25_wins": 2,
+      "bonus_rate": 0.8
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35576566132",
+      "name": "Joel Diaz",
+      "current_rank": 33,
+      "grade": 12,
+      "xtp": 1.86,
+      "xtp_p": 0.11,
+      "xtp_a": 0.51,
+      "xtp_b": 1.24,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 10
+      },
+      "wins": 27,
+      "losses": 21,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "34993874132",
+      "name": "Brendan Martin",
+      "current_rank": 185,
+      "grade": 10,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 5
+      },
+      "wins": 8,
+      "losses": 25,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "34993878132",
+      "name": "Sean Fleming",
+      "current_rank": 213,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "157": {
       "weight": 157,
       "wrestler_id": "34993867132",
       "name": "Jackson Reynolds",
-      "current_rank": 41,
+      "current_rank": 49,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -232,36 +232,36 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 3
       },
-      "wins": 19,
-      "losses": 7,
+      "wins": 20,
+      "losses": 9,
       "top25_wins": 0,
-      "bonus_rate": 0.842
+      "bonus_rate": 1.0
     },
     "165": {
       "weight": 165,
       "wrestler_id": "34993877132",
       "name": "Bryce Brockman",
-      "current_rank": 25,
+      "current_rank": 26,
       "grade": 9,
-      "xtp": 1.96,
+      "xtp": 1.83,
       "xtp_p": 0.22,
-      "xtp_a": 0.64,
-      "xtp_b": 1.1,
+      "xtp_a": 0.59,
+      "xtp_b": 1.02,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
       },
       "top33_record": {
-        "wins": 1,
-        "losses": 7
+        "wins": 2,
+        "losses": 9
       },
-      "wins": 23,
-      "losses": 9,
+      "wins": 27,
+      "losses": 11,
       "top25_wins": 1,
-      "bonus_rate": 0.727
+      "bonus_rate": 0.905
     },
     "175": {
       "weight": 175,
@@ -276,22 +276,22 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 7
+        "losses": 10
       },
-      "wins": 24,
-      "losses": 9,
+      "wins": 27,
+      "losses": 12,
       "top25_wins": 0,
-      "bonus_rate": 0.75
+      "bonus_rate": 0.952
     },
     "190": {
       "weight": 190,
       "wrestler_id": "34993871132",
       "name": "Jacob Hessig",
-      "current_rank": 164,
+      "current_rank": 185,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -307,15 +307,39 @@
         "losses": 5
       },
       "wins": 14,
-      "losses": 22,
+      "losses": 25,
       "top25_wins": 0,
-      "bonus_rate": 0.538
+      "bonus_rate": 0.875
     },
     "215": {
       "weight": 215,
+      "wrestler_id": "35575895132",
+      "name": "Andrew Fields",
+      "current_rank": 121,
+      "grade": 8,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "wins": 3,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    "285": {
+      "weight": 285,
       "wrestler_id": "34993870132",
       "name": "Carver Berry",
-      "current_rank": 112,
+      "current_rank": 147,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -324,16 +348,16 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 7
+        "losses": 8
       },
       "wins": 15,
-      "losses": 21,
+      "losses": 24,
       "top25_wins": 0,
-      "bonus_rate": 0.533
+      "bonus_rate": 0.667
     }
   },
   "remaining": [
@@ -368,21 +392,21 @@
       "bonus_rate": 0.0
     },
     {
+      "weight": 144,
+      "wrestler_id": "34993868132",
+      "name": "Tristin Davis",
+      "grade": 12,
+      "wins": 8,
+      "losses": 14,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
       "weight": 150,
       "wrestler_id": "35575597132",
       "name": "Grayson Shaw",
       "grade": 8,
       "wins": 2,
-      "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    {
-      "weight": 150,
-      "wrestler_id": "34993878132",
-      "name": "Sean Fleming",
-      "grade": null,
-      "wins": 0,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
@@ -408,14 +432,14 @@
       "bonus_rate": 0.0
     },
     {
-      "weight": 215,
-      "wrestler_id": "35575895132",
-      "name": "Andrew Fields",
-      "grade": 8,
-      "wins": 3,
-      "losses": 2,
+      "weight": 190,
+      "wrestler_id": "35703266132",
+      "name": "Emma Marcum",
+      "grade": null,
+      "wins": 1,
+      "losses": 0,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 1.0
     },
     {
       "weight": 215,
@@ -438,9 +462,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 0.5,
+  "team_xTP_simple": 1.0,
   "team_metrics": {
-    "projected_state_points": 0.5,
+    "projected_state_points": 1.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -450,29 +474,29 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 193,
-      "losses": 154
+      "wins": 189,
+      "losses": 144
     },
     "top33": {
-      "wins": 8,
-      "losses": 63
+      "wins": 12,
+      "losses": 73
     },
     "top10": {
       "wins": 0,
-      "losses": 13
+      "losses": 16
     },
     "bonus_rate": {
-      "value": 0.887,
-      "rank": 79,
+      "value": 1.007,
+      "rank": 85,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.845,
-      "rank": 30,
+      "value": 0.941,
+      "rank": 58,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.014,
+      "value": 0.015,
       "rank": 130,
       "rank_scope": "league"
     }

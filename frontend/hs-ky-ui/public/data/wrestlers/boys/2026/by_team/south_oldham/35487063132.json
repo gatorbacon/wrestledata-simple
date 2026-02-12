@@ -3,13 +3,13 @@
   "name": "Bella Kimery",
   "team": "South Oldham",
   "team_slug": "south_oldham",
-  "team_rank": 8,
+  "team_rank": 7,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 230,
+  "current_rank": 182,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-2",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,12 +28,48 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35122738132",
+      "opponent_rank": 154,
+      "opponent_name": "Avah Fontana",
+      "method": "Fall 1:47"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-10"
+  "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35122738132",
+      "opponent_name": "Avah Fontana",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 106,
+      "opponent_rank": 154,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:47",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35040593132",
+      "opponent_name": "Zariah Hampton",
+      "opponent_team": "Male",
+      "opponent_team_rank": 50,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "Mustang Classic"
+    }
+  ],
+  "profile_generated_at": "2026-02-12"
 }

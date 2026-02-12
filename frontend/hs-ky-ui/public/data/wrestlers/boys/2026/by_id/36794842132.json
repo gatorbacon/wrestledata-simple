@@ -3,13 +3,13 @@
   "name": "Eva Stephens",
   "team": "Bryan Station",
   "team_slug": "bryan_station",
-  "team_rank": 64,
+  "team_rank": 42,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 266,
+  "current_rank": 207,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,17 +28,48 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35397883132",
+      "opponent_rank": 250,
+      "opponent_name": "Rex Dixon",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4921875
-  }
+  "match_list": [
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35639577132",
+      "opponent_name": "J.D. Greenlee",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": 65,
+      "opponent_weight": 175,
+      "opponent_rank": 117,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Region 6 JV Region"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35397883132",
+      "opponent_name": "Rex Dixon",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 49,
+      "opponent_weight": 175,
+      "opponent_rank": 250,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Region 6 JV Region"
+    }
+  ],
+  "profile_generated_at": "2026-02-12"
 }

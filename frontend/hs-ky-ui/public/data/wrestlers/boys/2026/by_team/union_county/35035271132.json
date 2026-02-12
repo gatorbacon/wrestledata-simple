@@ -6,11 +6,11 @@
   "team_rank": 3,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 45,
+  "current_rank": 41,
   "record": {
-    "overall": "8-0",
-    "vs_ranked": "4-0",
-    "vs_top10": "0-0",
+    "overall": "9-0",
+    "vs_ranked": "5-0",
+    "vs_top10": "1-0",
     "vs_top25": "2-0"
   },
   "metrics": {
@@ -20,26 +20,41 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.25,
-    "bonus_rate": 0.625,
+    "pin_rate": 0.429,
+    "bonus_rate": 0.857,
     "majors": 1,
     "techs": 2,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 5,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35221006132",
-      "opponent_rank": 14,
-      "opponent_name": "Justin Klidzejs",
-      "method": "Dec 12-6"
+      "opponent_id": "34992815132",
+      "opponent_rank": 10,
+      "opponent_name": "Bain Kurtz",
+      "method": "TF 18-1 4:00"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35513070132",
+      "opponent_name": "Trenton Williamson",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": 61,
+      "opponent_weight": 144,
+      "opponent_rank": 73,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "vs. Union County"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "34992815132",
@@ -47,7 +62,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 138,
-      "opponent_rank": 24,
+      "opponent_rank": 10,
       "weight_class": "144",
       "result": "W",
       "method": "TF",
@@ -60,7 +75,7 @@
       "opponent_id": "OUTSTATE_ff7db33ebb7d",
       "opponent_name": "Unknown",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 35,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "144",
@@ -107,7 +122,7 @@
       "opponent_team": "McCracken County",
       "opponent_team_rank": 108,
       "opponent_weight": 144,
-      "opponent_rank": 126,
+      "opponent_rank": 124,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -120,9 +135,9 @@
       "opponent_id": "35049802132",
       "opponent_name": "Sam Brauer",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 53,
       "opponent_weight": 144,
-      "opponent_rank": 59,
+      "opponent_rank": 58,
       "weight_class": "144",
       "result": "W",
       "method": "MD",
@@ -135,9 +150,9 @@
       "opponent_id": "35221006132",
       "opponent_name": "Justin Klidzejs",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 43,
       "opponent_weight": 138,
-      "opponent_rank": 14,
+      "opponent_rank": 18,
       "weight_class": "144",
       "result": "W",
       "method": "DEC",
@@ -150,7 +165,7 @@
       "opponent_id": "OUTSTATE_ff7db33ebb7d",
       "opponent_name": "Unknown",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 35,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "144",
@@ -174,7 +189,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Union County",
-      "record": "8-0",
+      "record": "9-0",
       "regional_place": null,
       "state_place": null
     },
@@ -188,9 +203,9 @@
     }
   ],
   "career_record": {
-    "wins": 16,
+    "wins": 17,
     "losses": 6,
-    "win_pct": 0.727
+    "win_pct": 0.739
   },
-  "profile_generated_at": "2026-02-10"
+  "profile_generated_at": "2026-02-12"
 }

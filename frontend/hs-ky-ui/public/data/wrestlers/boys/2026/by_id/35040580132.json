@@ -3,7 +3,7 @@
   "name": "James Gerkins",
   "team": "Male",
   "team_slug": "male",
-  "team_rank": 48,
+  "team_rank": 50,
   "weight_class": 165,
   "year": 2026,
   "current_rank": 53,
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35228539132",
-      "opponent_rank": 54,
+      "opponent_rank": 56,
       "opponent_name": "Kamion Lockridge",
       "method": "Dec 6-4"
     },
     "worst_loss": {
       "opponent_id": "35181630132",
-      "opponent_rank": 125,
+      "opponent_rank": 52,
       "opponent_name": "Jordan Lawless",
       "method": "Fall 2:12"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "34997794132",
       "opponent_name": "Vincent Willis",
       "opponent_team": "Western",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 31,
       "opponent_weight": 165,
-      "opponent_rank": 52,
+      "opponent_rank": 51,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -63,28 +63,12 @@
     },
     {
       "date": "2025-11-25",
-      "opponent_id": "35181630132",
-      "opponent_name": "Jordan Lawless",
-      "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 20,
-      "opponent_weight": 157,
-      "opponent_rank": 125,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:12",
-      "event": "vs. Male",
-      "mv_impact": -4.98
-    },
-    {
-      "date": "2025-11-25",
       "opponent_id": "35228539132",
       "opponent_name": "Kamion Lockridge",
       "opponent_team": "Butler",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 67,
       "opponent_weight": 165,
-      "opponent_rank": 54,
+      "opponent_rank": 56,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
@@ -92,6 +76,22 @@
       "duration": "7:00",
       "event": "vs. Male",
       "mv_impact": 4.16
+    },
+    {
+      "date": "2025-11-25",
+      "opponent_id": "35181630132",
+      "opponent_name": "Jordan Lawless",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": 21,
+      "opponent_weight": 165,
+      "opponent_rank": 52,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:12",
+      "event": "vs. Male",
+      "mv_impact": -4.98
     }
   ],
   "career": {
@@ -134,10 +134,5 @@
     "losses": 18,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1636363636363636
-  }
+  "profile_generated_at": "2026-02-12"
 }

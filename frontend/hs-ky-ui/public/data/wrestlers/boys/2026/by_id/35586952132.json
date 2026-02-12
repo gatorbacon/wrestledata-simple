@@ -10,7 +10,7 @@
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -30,11 +30,11 @@
     "ranked_wins": 0,
     "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35002892132",
-      "opponent_rank": 12,
+      "opponent_rank": 10,
       "opponent_name": "Jayden Perry",
       "method": "TF 19-2 0:00"
     }
@@ -45,9 +45,9 @@
       "opponent_id": "35002892132",
       "opponent_name": "Jayden Perry",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 79,
       "opponent_weight": 132,
-      "opponent_rank": 12,
+      "opponent_rank": 10,
       "weight_class": "138",
       "result": "L",
       "method": "TF",
@@ -56,10 +56,5 @@
       "event": "vs. West Frankfort (Frankfort)"
     }
   ],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1990740740740742
-  }
+  "profile_generated_at": "2026-02-12"
 }

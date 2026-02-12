@@ -3,15 +3,15 @@
   "name": "Carson Hall",
   "team": "Owensboro",
   "team_slug": "owensboro",
-  "team_rank": 35,
-  "weight_class": 126,
+  "team_rank": 27,
+  "weight_class": 132,
   "year": 2026,
-  "current_rank": 117,
+  "current_rank": 172,
   "record": {
-    "overall": "3-3",
-    "vs_ranked": "0-3",
+    "overall": "3-6",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,24 +28,69 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35688423132",
-      "opponent_rank": 40,
-      "opponent_name": "Isaih Rodriguez",
-      "method": "Fall 0:40"
+      "opponent_id": "35007899132",
+      "opponent_rank": 119,
+      "opponent_name": "Daniel Carpenter",
+      "method": "TF 25-7 0:43"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35192376132",
+      "opponent_name": "Maddox Kellett",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 132,
+      "opponent_rank": 95,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35007899132",
+      "opponent_name": "Daniel Carpenter",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 39,
+      "opponent_weight": 132,
+      "opponent_rank": 119,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "25-7",
+      "duration": "0:43",
+      "event": "vs. South Warren"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35267075132",
+      "opponent_name": "Wesley Wainscott",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": 139,
+      "opponent_weight": 132,
+      "opponent_rank": 77,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:28",
+      "event": "vs. Western Hills"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "OUTSTATE_b33c2e25670f",
       "opponent_name": "Unknown",
       "opponent_team": "Warren Central",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 136,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "126",
@@ -62,7 +107,7 @@
       "opponent_team": "Meade County",
       "opponent_team_rank": 110,
       "opponent_weight": 132,
-      "opponent_rank": 40,
+      "opponent_rank": 42,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -75,9 +120,9 @@
       "opponent_id": "35049797132",
       "opponent_name": "Logan Mongold",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 53,
       "opponent_weight": 126,
-      "opponent_rank": 35,
+      "opponent_rank": 43,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -105,9 +150,9 @@
       "opponent_id": "35007891132",
       "opponent_name": "Garrett Johnson",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 39,
       "opponent_weight": 113,
-      "opponent_rank": 25,
+      "opponent_rank": 27,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -120,7 +165,7 @@
       "opponent_id": "OUTSTATE_5855457a7894",
       "opponent_name": "Unknown",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 66,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "126",
@@ -143,20 +188,15 @@
       "season": 2026,
       "grade": 9,
       "team": "Owensboro",
-      "record": "3-3",
+      "record": "3-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 3,
-    "losses": 3,
-    "win_pct": 0.5
+    "losses": 6,
+    "win_pct": 0.333
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.936046511627907
-  }
+  "profile_generated_at": "2026-02-12"
 }

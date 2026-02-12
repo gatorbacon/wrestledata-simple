@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "1-0",
-    "vs_top25": "1-0"
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "2-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -23,17 +23,17 @@
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 1,
+    "techs": 2,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
-    "top10_wins": 1,
+    "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35773385132",
-      "opponent_rank": 10,
+      "opponent_rank": 11,
       "opponent_name": "Hunter Fields",
       "method": "TF 16-1 2:55"
     },
@@ -47,19 +47,29 @@
       "opponent_team": "Johnson Central",
       "opponent_team_rank": 2,
       "opponent_weight": 126,
-      "opponent_rank": 10,
+      "opponent_rank": 11,
       "weight_class": "132",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "2:55",
       "event": "Winner`s Choice"
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "35773385132",
+      "opponent_name": "Hunter Fields",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 126,
+      "opponent_rank": 11,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "WINNER`S CHOICE"
     }
   ],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1084905660377358
-  }
+  "profile_generated_at": "2026-02-12"
 }

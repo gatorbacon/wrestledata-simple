@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,20 +20,20 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35488263132",
-      "opponent_rank": 26,
+      "opponent_rank": 28,
       "opponent_name": "Landon Windeler",
       "method": "Dec 18-11"
     },
@@ -41,13 +41,28 @@
   },
   "match_list": [
     {
+      "date": "2026-01-17",
+      "opponent_id": "35214960132",
+      "opponent_name": "Kai Herr",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 5,
+      "opponent_weight": 138,
+      "opponent_rank": 84,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:44",
+      "event": "Sycamore Invitational"
+    },
+    {
       "date": "2025-12-19",
       "opponent_id": "35488263132",
       "opponent_name": "Landon Windeler",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 45,
       "opponent_weight": 138,
-      "opponent_rank": 26,
+      "opponent_rank": 28,
       "weight_class": "138",
       "result": "W",
       "method": "DEC",
@@ -56,10 +71,5 @@
       "event": "vs. Madeira High School"
     }
   ],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 1.065843621399177
-  }
+  "profile_generated_at": "2026-02-12"
 }

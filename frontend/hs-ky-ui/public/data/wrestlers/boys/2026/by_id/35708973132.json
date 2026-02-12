@@ -3,12 +3,12 @@
   "name": "Jake Davis",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 27,
+  "team_rank": 28,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 53,
+  "current_rank": 55,
   "record": {
-    "overall": "13-3",
+    "overall": "15-3",
     "vs_ranked": "2-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -20,8 +20,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.333,
+    "pin_rate": 0.571,
+    "bonus_rate": 0.571,
     "majors": 0,
     "techs": 0,
     "pins": 4
@@ -39,12 +39,42 @@
     },
     "worst_loss": {
       "opponent_id": "34989026132",
-      "opponent_rank": 44,
+      "opponent_rank": 46,
       "opponent_name": "Josh Athey",
       "method": "Fall 4:23"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "OUTSTATE_da57d6ecb7ed",
+      "opponent_name": "Unknown",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 69,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Corbin"
+    },
+    {
+      "date": "2026-02-05",
+      "opponent_id": "OUTSTATE_62deab39bd02",
+      "opponent_name": "Unknown",
+      "opponent_team": "Sikeston",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Sikeston"
+    },
     {
       "date": "2026-01-23",
       "opponent_id": "35245891132",
@@ -80,9 +110,9 @@
       "opponent_id": "34988697132",
       "opponent_name": "Malachi James",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 33,
       "opponent_weight": 106,
-      "opponent_rank": 19,
+      "opponent_rank": 17,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -110,9 +140,9 @@
       "opponent_id": "34989026132",
       "opponent_name": "Josh Athey",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 52,
       "opponent_weight": 106,
-      "opponent_rank": 44,
+      "opponent_rank": 46,
       "weight_class": "106",
       "result": "L",
       "method": "FALL",
@@ -283,20 +313,15 @@
       "season": 2026,
       "grade": 9,
       "team": "Paducah Tilghman",
-      "record": "13-3",
+      "record": "15-3",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 13,
+    "wins": 15,
     "losses": 3,
-    "win_pct": 0.812
+    "win_pct": 0.833
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.993421052631579
-  }
+  "profile_generated_at": "2026-02-12"
 }

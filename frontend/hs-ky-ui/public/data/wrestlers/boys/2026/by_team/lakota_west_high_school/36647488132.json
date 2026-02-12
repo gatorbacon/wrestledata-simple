@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "2-0",
+    "overall": "3-0",
+    "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,30 +24,45 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35364719132",
-      "opponent_rank": 109,
-      "opponent_name": "Eli Barno",
-      "method": "Fall 1:20"
+      "opponent_id": "35215012132",
+      "opponent_rank": 83,
+      "opponent_name": "Zayden Courts",
+      "method": "Fall 0:56"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-01-17",
+      "opponent_id": "35215012132",
+      "opponent_name": "Zayden Courts",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 5,
+      "opponent_weight": 106,
+      "opponent_rank": 83,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:56",
+      "event": "Sycamore Invitational"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "35364719132",
       "opponent_name": "Eli Barno",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 96,
+      "opponent_team_rank": 95,
       "opponent_weight": 106,
-      "opponent_rank": 109,
+      "opponent_rank": 110,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -60,9 +75,9 @@
       "opponent_id": "35208882132",
       "opponent_name": "Micah Vittitow",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 55,
       "opponent_weight": 106,
-      "opponent_rank": 250,
+      "opponent_rank": 254,
       "weight_class": "106",
       "result": "W",
       "method": "FALL",
@@ -71,5 +86,5 @@
       "event": "Warhawk Classic"
     }
   ],
-  "profile_generated_at": "2026-02-10"
+  "profile_generated_at": "2026-02-12"
 }

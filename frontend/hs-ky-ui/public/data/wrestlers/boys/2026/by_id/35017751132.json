@@ -3,15 +3,15 @@
   "name": "Harrison Groves",
   "team": "Ashland Blazer",
   "team_slug": "ashland_blazer",
-  "team_rank": 39,
+  "team_rank": 41,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 98,
+  "current_rank": 101,
   "record": {
-    "overall": "11-8",
-    "vs_ranked": "2-5",
-    "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "overall": "12-9",
+    "vs_ranked": "3-6",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,39 +20,69 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 8
+    "pins": 9
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 5,
+    "ranked_wins": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "37432425132",
-      "opponent_rank": 136,
-      "opponent_name": "Knox Woodman",
-      "method": "Fall 3:21"
+      "opponent_id": "35273350132",
+      "opponent_rank": 142,
+      "opponent_name": "Wilson Patrick",
+      "method": "Fall 1:30"
     },
     "worst_loss": {
-      "opponent_id": "35013062132",
-      "opponent_rank": 51,
-      "opponent_name": "Ezekiel Holbrook",
-      "method": "Fall 3:00"
+      "opponent_id": "35247375132",
+      "opponent_rank": 116,
+      "opponent_name": "Shawn Hardin",
+      "method": "Fall 3:53"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35247375132",
+      "opponent_name": "Shawn Hardin",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": 107,
+      "opponent_weight": 138,
+      "opponent_rank": 116,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:53",
+      "event": "Mason County Round Robin"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35273350132",
+      "opponent_name": "Wilson Patrick",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": 112,
+      "opponent_weight": 144,
+      "opponent_rank": 142,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "Mason County Round Robin"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "37432425132",
       "opponent_name": "Knox Woodman",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 39,
-      "opponent_weight": 132,
-      "opponent_rank": 136,
+      "opponent_team_rank": 41,
+      "opponent_weight": 126,
+      "opponent_rank": 155,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -67,7 +97,7 @@
       "opponent_team": "Letcher County Central",
       "opponent_team_rank": 101,
       "opponent_weight": 132,
-      "opponent_rank": 154,
+      "opponent_rank": 172,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "35013062132",
       "opponent_name": "Ezekiel Holbrook",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 116,
+      "opponent_team_rank": 115,
       "opponent_weight": 132,
-      "opponent_rank": 51,
+      "opponent_rank": 59,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -95,9 +125,9 @@
       "opponent_id": "35051531132",
       "opponent_name": "Bryer Rogers",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 55,
       "opponent_weight": 132,
-      "opponent_rank": 45,
+      "opponent_rank": 47,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -110,7 +140,7 @@
       "opponent_id": "OUTSTATE_472d8610052b",
       "opponent_name": "Unknown",
       "opponent_team": "East Carter",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 46,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "132",
@@ -125,9 +155,9 @@
       "opponent_id": "35850444132",
       "opponent_name": "Bentley Brown",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 13,
       "opponent_weight": 132,
-      "opponent_rank": 10,
+      "opponent_rank": 12,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -147,7 +177,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "1:45",
+      "duration": "1:28",
       "event": "vs. Boyd County"
     },
     {
@@ -290,9 +320,9 @@
       "opponent_id": "35850452132",
       "opponent_name": "Jace Bowling",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 13,
       "opponent_weight": 144,
-      "opponent_rank": 26,
+      "opponent_rank": 25,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -305,7 +335,7 @@
       "opponent_id": "34993518132",
       "opponent_name": "Brayden Willingham",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 126,
       "opponent_weight": 144,
       "opponent_rank": 44,
       "weight_class": "144",
@@ -329,7 +359,7 @@
       "season": 2026,
       "grade": 8,
       "team": "Ashland Blazer",
-      "record": "11-8",
+      "record": "12-9",
       "regional_place": null,
       "state_place": null
     },
@@ -343,14 +373,9 @@
     }
   ],
   "career_record": {
-    "wins": 31,
-    "losses": 21,
-    "win_pct": 0.596
+    "wins": 32,
+    "losses": 22,
+    "win_pct": 0.593
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1084905660377358
-  }
+  "profile_generated_at": "2026-02-12"
 }

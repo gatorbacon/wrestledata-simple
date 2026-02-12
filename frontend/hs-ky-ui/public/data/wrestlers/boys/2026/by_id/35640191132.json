@@ -3,13 +3,13 @@
   "name": "Clayton Roberts",
   "team": "Great Crossing",
   "team_slug": "great_crossing",
-  "team_rank": 45,
+  "team_rank": 48,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 90,
+  "current_rank": 86,
   "record": {
-    "overall": "4-6",
-    "vs_ranked": "4-2",
+    "overall": "5-7",
+    "vs_ranked": "5-3",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -20,31 +20,61 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
     "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
-    "ranked_losses": 2,
+    "ranked_wins": 5,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34988576132",
-      "opponent_rank": 45,
-      "opponent_name": "Justin Covington",
-      "method": "Fall 2:57"
+      "opponent_id": "35077765132",
+      "opponent_rank": 47,
+      "opponent_name": "Caleb Cox",
+      "method": "M. For."
     },
     "worst_loss": {
-      "opponent_id": "35081198132",
-      "opponent_rank": 20,
-      "opponent_name": "Elliot Ortinski",
-      "method": "TF 17-0 2:28"
+      "opponent_id": "35405353132",
+      "opponent_rank": 43,
+      "opponent_name": "jaxon franks",
+      "method": "Dec 12-7"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35405353132",
+      "opponent_name": "jaxon franks",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 84,
+      "opponent_weight": 144,
+      "opponent_rank": 43,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-7",
+      "duration": "7:00",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35077765132",
+      "opponent_name": "Caleb Cox",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 37,
+      "opponent_weight": 144,
+      "opponent_rank": 47,
+      "weight_class": "144",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Mustang Classic"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "OUTSTATE_8f12be527f97",
@@ -80,9 +110,9 @@
       "opponent_id": "35064900132",
       "opponent_name": "Evan Wilson",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 96,
+      "opponent_team_rank": 95,
       "opponent_weight": 138,
-      "opponent_rank": 18,
+      "opponent_rank": 16,
       "weight_class": "144",
       "result": "L",
       "method": "MD",
@@ -125,7 +155,7 @@
       "opponent_id": "35081198132",
       "opponent_name": "Elliot Ortinski",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 49,
       "opponent_weight": 138,
       "opponent_rank": 20,
       "weight_class": "150",
@@ -140,9 +170,9 @@
       "opponent_id": "35034943132",
       "opponent_name": "Kent Hitchcock",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 83,
+      "opponent_team_rank": 47,
       "opponent_weight": 150,
-      "opponent_rank": 126,
+      "opponent_rank": 128,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -156,8 +186,8 @@
       "opponent_name": "Isiah Lopez",
       "opponent_team": "Mason County",
       "opponent_team_rank": 107,
-      "opponent_weight": 165,
-      "opponent_rank": 163,
+      "opponent_weight": 150,
+      "opponent_rank": 156,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -172,7 +202,7 @@
       "opponent_team": "St. Xavier",
       "opponent_team_rank": 18,
       "opponent_weight": 144,
-      "opponent_rank": 237,
+      "opponent_rank": 243,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -187,7 +217,7 @@
       "opponent_team": "Thomas Nelson",
       "opponent_team_rank": null,
       "opponent_weight": 150,
-      "opponent_rank": 45,
+      "opponent_rank": 55,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -210,7 +240,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Great Crossing",
-      "record": "4-6",
+      "record": "5-7",
       "regional_place": null,
       "state_place": null
     },
@@ -232,14 +262,9 @@
     }
   ],
   "career_record": {
-    "wins": 30,
-    "losses": 20,
-    "win_pct": 0.6
+    "wins": 31,
+    "losses": 21,
+    "win_pct": 0.596
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9285714285714286
-  }
+  "profile_generated_at": "2026-02-12"
 }

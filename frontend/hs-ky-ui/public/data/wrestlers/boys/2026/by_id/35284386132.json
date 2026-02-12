@@ -3,15 +3,15 @@
   "name": "Ben Casi",
   "team": "Trinity (Louisville)",
   "team_slug": "trinity_louisville",
-  "team_rank": 134,
+  "team_rank": 133,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 162,
+  "current_rank": 156,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "1-4",
+    "overall": "3-6",
+    "vs_ranked": "2-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,27 +24,57 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 4,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "36439629132",
-      "opponent_rank": 158,
+      "opponent_rank": 167,
       "opponent_name": "Elijah Clark",
       "method": "Fall 3:01"
     },
     "worst_loss": {
-      "opponent_id": "35623185132",
-      "opponent_rank": 123,
-      "opponent_name": "Hayden Rutledge",
-      "method": "Fall 0:40"
+      "opponent_id": "35542533132",
+      "opponent_rank": 172,
+      "opponent_name": "Jaiden Wright",
+      "method": "Dec 3-1"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-05",
+      "opponent_id": "35542533132",
+      "opponent_name": "Jaiden Wright",
+      "opponent_team": "Central",
+      "opponent_team_rank": 44,
+      "opponent_weight": 190,
+      "opponent_rank": 172,
+      "weight_class": "190",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "JV Region 3 - 2026"
+    },
+    {
+      "date": "2026-02-05",
+      "opponent_id": "35127101132",
+      "opponent_name": "Caleb Johnson",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": 24,
+      "opponent_weight": 190,
+      "opponent_rank": 94,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:16",
+      "event": "JV Region 3 - 2026"
+    },
     {
       "date": "2026-01-14",
       "opponent_id": "36439629132",
@@ -52,7 +82,7 @@
       "opponent_team": "St. Xavier",
       "opponent_team_rank": 18,
       "opponent_weight": 175,
-      "opponent_rank": 158,
+      "opponent_rank": 167,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -65,9 +95,9 @@
       "opponent_id": "35623185132",
       "opponent_name": "Hayden Rutledge",
       "opponent_team": "Atherton",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 12,
       "opponent_weight": 190,
-      "opponent_rank": 123,
+      "opponent_rank": 121,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -80,9 +110,9 @@
       "opponent_id": "35402611132",
       "opponent_name": "Daniel Martinez",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 42,
       "opponent_weight": 190,
-      "opponent_rank": 80,
+      "opponent_rank": 82,
       "weight_class": "190",
       "result": "L",
       "method": "MD",
@@ -96,9 +126,9 @@
       "opponent_id": "35081207132",
       "opponent_name": "Mason Nord-Hodges",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 49,
       "opponent_weight": 175,
-      "opponent_rank": 61,
+      "opponent_rank": 62,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -112,9 +142,9 @@
       "opponent_id": "35001147132",
       "opponent_name": "Apelu Hazelwood",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 16,
       "opponent_weight": 190,
-      "opponent_rank": 26,
+      "opponent_rank": 18,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -122,6 +152,36 @@
       "duration": "0:32",
       "event": "The Beast of the East",
       "mv_impact": -3.74
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35698376132",
+      "opponent_name": "Ali Lin",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": 118,
+      "opponent_weight": 190,
+      "opponent_rank": 262,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:32",
+      "event": "The Beast of the East"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_16acc8419c9d",
+      "opponent_name": "Camden Chee",
+      "opponent_team": "Male",
+      "opponent_team_rank": 50,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "The Beast of the East"
     }
   ],
   "career": {
@@ -136,20 +196,15 @@
       "season": 2026,
       "grade": 9,
       "team": "Trinity (Louisville)",
-      "record": "1-4",
+      "record": "3-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 1,
-    "losses": 4,
-    "win_pct": 0.2
+    "wins": 3,
+    "losses": 6,
+    "win_pct": 0.333
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9492753623188406
-  }
+  "profile_generated_at": "2026-02-12"
 }

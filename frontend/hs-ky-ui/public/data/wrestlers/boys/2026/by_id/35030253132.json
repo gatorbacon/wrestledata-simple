@@ -3,10 +3,10 @@
   "name": "Reego Cabrera",
   "team": "Pulaski County",
   "team_slug": "pulaski_county",
-  "team_rank": 121,
+  "team_rank": 120,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 83,
+  "current_rank": 81,
   "record": {
     "overall": "1-0",
     "vs_ranked": "1-1",
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35013061132",
-      "opponent_rank": 68,
+      "opponent_rank": 67,
       "opponent_name": "Landon Baker",
       "method": "Fall 1:21"
     },
     "worst_loss": {
       "opponent_id": "34997618132",
-      "opponent_rank": 17,
+      "opponent_rank": 14,
       "opponent_name": "Titus Greiwe",
       "method": "MD 9-1"
     }
@@ -47,28 +47,12 @@
   "match_list": [
     {
       "date": "2025-11-29",
-      "opponent_id": "35013061132",
-      "opponent_name": "Landon Baker",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": 116,
-      "opponent_weight": 138,
-      "opponent_rank": 68,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:21",
-      "event": "Cougar Classic",
-      "mv_impact": 6.23
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "34997618132",
       "opponent_name": "Titus Greiwe",
       "opponent_team": "Corbin",
       "opponent_team_rank": 69,
       "opponent_weight": 144,
-      "opponent_rank": 17,
+      "opponent_rank": 14,
       "weight_class": "144",
       "result": "L",
       "method": "MD",
@@ -76,6 +60,22 @@
       "duration": "7:00",
       "event": "Cougar Classic",
       "mv_impact": -0.22
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35013061132",
+      "opponent_name": "Landon Baker",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 115,
+      "opponent_weight": 144,
+      "opponent_rank": 67,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Cougar Classic",
+      "mv_impact": 6.23
     }
   ],
   "career": {
@@ -109,10 +109,5 @@
     "losses": 12,
     "win_pct": 0.455
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9285714285714286
-  }
+  "profile_generated_at": "2026-02-12"
 }

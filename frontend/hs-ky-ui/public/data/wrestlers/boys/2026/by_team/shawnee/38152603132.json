@@ -3,15 +3,15 @@
   "name": "Hasssn Yasin",
   "team": "Shawnee",
   "team_slug": "shawnee",
-  "team_rank": 129,
-  "weight_class": 138,
+  "team_rank": 128,
+  "weight_class": 132,
   "year": 2026,
-  "current_rank": 294,
+  "current_rank": 217,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,12 +28,78 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35135168132",
+      "opponent_rank": 163,
+      "opponent_name": "Hayden Whitley",
+      "method": "Dec 12-9"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-10"
+  "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35724634132",
+      "opponent_name": "William Clark",
+      "opponent_team": "East Carter",
+      "opponent_team_rank": 46,
+      "opponent_weight": 132,
+      "opponent_rank": 142,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Shawnee"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35002887132",
+      "opponent_name": "Eithan Cassell",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 79,
+      "opponent_weight": 138,
+      "opponent_rank": 9,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "19-2",
+      "duration": "0:00",
+      "event": "vs. Shawnee"
+    },
+    {
+      "date": "2026-02-05",
+      "opponent_id": "35205216132",
+      "opponent_name": "Caden Riggs",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 15,
+      "opponent_weight": 132,
+      "opponent_rank": 153,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:48",
+      "event": "JV Region 3 - 2026"
+    },
+    {
+      "date": "2026-02-05",
+      "opponent_id": "35135168132",
+      "opponent_name": "Hayden Whitley",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 25,
+      "opponent_weight": 132,
+      "opponent_rank": 163,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-9",
+      "duration": "7:00",
+      "event": "JV Region 3 - 2026"
+    }
+  ],
+  "profile_generated_at": "2026-02-12"
 }

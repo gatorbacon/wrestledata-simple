@@ -3,13 +3,13 @@
   "name": "Carter DeRay",
   "team": "LaRue County",
   "team_slug": "larue_county",
-  "team_rank": 47,
-  "weight_class": 190,
+  "team_rank": 98,
+  "weight_class": 175,
   "year": 2026,
-  "current_rank": 249,
+  "current_rank": 127,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,25 +20,61 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35074425132",
+      "opponent_rank": 172,
+      "opponent_name": "Emmanuel Cortes",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35206885132",
+      "opponent_rank": 137,
+      "opponent_name": "Carson Brown",
+      "method": "Dec 10-6"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9492753623188406
-  }
+  "match_list": [
+    {
+      "date": "2026-02-03",
+      "opponent_id": "35206885132",
+      "opponent_name": "Carson Brown",
+      "opponent_team": "Adair County",
+      "opponent_team_rank": 56,
+      "opponent_weight": 175,
+      "opponent_rank": 137,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
+      "event": "vs. LaRue County"
+    },
+    {
+      "date": "2026-02-03",
+      "opponent_id": "35074425132",
+      "opponent_name": "Emmanuel Cortes",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 59,
+      "opponent_weight": 175,
+      "opponent_rank": 172,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. LaRue County"
+    }
+  ],
+  "profile_generated_at": "2026-02-12"
 }

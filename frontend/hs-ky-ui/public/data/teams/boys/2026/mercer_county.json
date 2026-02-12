@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-11T19:52:15.200573Z",
+  "generated_at_utc": "2026-02-12T18:44:00.657206Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35330462132",
       "name": "William Patton",
-      "current_rank": 170,
+      "current_rank": 176,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -75,7 +75,7 @@
       "weight": 120,
       "wrestler_id": "35222973132",
       "name": "Cameron Lane",
-      "current_rank": 219,
+      "current_rank": 224,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -99,7 +99,7 @@
       "weight": 126,
       "wrestler_id": "35205996132",
       "name": "William Lay",
-      "current_rank": 149,
+      "current_rank": 155,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -112,7 +112,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 3
       },
       "wins": 1,
       "losses": 5,
@@ -123,7 +123,7 @@
       "weight": 132,
       "wrestler_id": "35222796132",
       "name": "Vance Stokley",
-      "current_rank": 165,
+      "current_rank": 168,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -141,13 +141,13 @@
       "wins": 7,
       "losses": 13,
       "top25_wins": 0,
-      "bonus_rate": 0.833
+      "bonus_rate": 1.0
     },
     "138": {
       "weight": 138,
       "wrestler_id": "35205988132",
       "name": "Owen Gravett",
-      "current_rank": 99,
+      "current_rank": 108,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -156,16 +156,16 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
         "losses": 2
       },
       "wins": 10,
-      "losses": 8,
+      "losses": 9,
       "top25_wins": 0,
-      "bonus_rate": 0.8
+      "bonus_rate": 1.0
     },
     "144": {
       "weight": 144,
@@ -195,7 +195,7 @@
       "weight": 150,
       "wrestler_id": "35222817132",
       "name": "Tyson Edmiston",
-      "current_rank": 137,
+      "current_rank": 150,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -211,7 +211,7 @@
         "losses": 0
       },
       "wins": 1,
-      "losses": 2,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -219,32 +219,8 @@
       "weight": 157,
       "wrestler_id": "35205997132",
       "name": "Evan Baker",
-      "current_rank": 46,
+      "current_rank": 48,
       "grade": 9,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 5
-      },
-      "wins": 20,
-      "losses": 7,
-      "top25_wins": 0,
-      "bonus_rate": 0.8
-    },
-    "165": {
-      "weight": 165,
-      "wrestler_id": "35222775132",
-      "name": "Torian Bess",
-      "current_rank": 37,
-      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -258,10 +234,34 @@
         "wins": 0,
         "losses": 6
       },
+      "wins": 21,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "165": {
+      "weight": 165,
+      "wrestler_id": "35222775132",
+      "name": "Torian Bess",
+      "current_rank": 39,
+      "grade": 12,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      },
       "wins": 24,
       "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 0.826
+      "bonus_rate": 0.95
     },
     "175": {
       "weight": 175,
@@ -269,29 +269,29 @@
       "name": "Mijaia Dunn",
       "current_rank": 24,
       "grade": 11,
-      "xtp": 2.38,
+      "xtp": 1.89,
       "xtp_p": 0.25,
       "xtp_a": 0.69,
-      "xtp_b": 1.44,
+      "xtp_b": 0.95,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 0,
         "losses": 2
       },
-      "wins": 21,
-      "losses": 5,
+      "top33_record": {
+        "wins": 1,
+        "losses": 3
+      },
+      "wins": 25,
+      "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.619
+      "bonus_rate": 0.727
     },
     "190": {
       "weight": 190,
       "wrestler_id": "35206004132",
       "name": "Kyler Bryant",
-      "current_rank": 55,
+      "current_rank": 57,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -304,60 +304,60 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 5
       },
       "wins": 15,
-      "losses": 11,
+      "losses": 12,
       "top25_wins": 0,
-      "bonus_rate": 0.533
+      "bonus_rate": 0.8
     },
     "215": {
       "weight": 215,
       "wrestler_id": "35223083132",
       "name": "Chase Lopez",
-      "current_rank": 35,
+      "current_rank": 7,
       "grade": 10,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
+      "xtp": 7.93,
+      "xtp_p": 3.31,
+      "xtp_a": 2.12,
+      "xtp_b": 2.5,
+      "xtp_simple": 10.5,
       "top10_record": {
-        "wins": 0,
-        "losses": 0
+        "wins": 1,
+        "losses": 1
       },
       "top33_record": {
-        "wins": 0,
+        "wins": 2,
         "losses": 2
       },
-      "wins": 5,
-      "losses": 3,
-      "top25_wins": 0,
-      "bonus_rate": 0.4
+      "wins": 6,
+      "losses": 4,
+      "top25_wins": 1,
+      "bonus_rate": 0.333
     },
     "285": {
       "weight": 285,
       "wrestler_id": "35205987132",
       "name": "Samuel Horn",
-      "current_rank": 29,
+      "current_rank": 30,
       "grade": 12,
-      "xtp": 1.49,
-      "xtp_p": 0.2,
-      "xtp_a": 0.54,
-      "xtp_b": 0.75,
+      "xtp": 1.44,
+      "xtp_p": 0.18,
+      "xtp_a": 0.49,
+      "xtp_b": 0.77,
       "xtp_simple": 0.0,
       "top10_record": {
-        "wins": 0,
-        "losses": 0
+        "wins": 1,
+        "losses": 1
       },
       "top33_record": {
-        "wins": 2,
-        "losses": 3
+        "wins": 3,
+        "losses": 4
       },
       "wins": 24,
-      "losses": 4,
-      "top25_wins": 0,
-      "bonus_rate": 0.625
+      "losses": 6,
+      "top25_wins": 2,
+      "bonus_rate": 0.882
     }
   },
   "remaining": [
@@ -437,9 +437,9 @@
       "name": "Elijah Davidson",
       "grade": 10,
       "wins": 8,
-      "losses": 12,
+      "losses": 14,
       "top25_wins": 0,
-      "bonus_rate": 0.125
+      "bonus_rate": 0.333
     },
     {
       "weight": 138,
@@ -457,7 +457,7 @@
       "name": "Aaron Bricarello",
       "grade": 10,
       "wins": 3,
-      "losses": 8,
+      "losses": 10,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -469,7 +469,7 @@
       "wins": 5,
       "losses": 3,
       "top25_wins": 0,
-      "bonus_rate": 0.4
+      "bonus_rate": 1.0
     },
     {
       "weight": 150,
@@ -569,7 +569,7 @@
       "wins": 3,
       "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 0.333
+      "bonus_rate": 1.0
     },
     {
       "weight": 285,
@@ -592,9 +592,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 0.5,
+  "team_xTP_simple": 11.0,
   "team_metrics": {
-    "projected_state_points": 0.5,
+    "projected_state_points": 11.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -605,29 +605,29 @@
     "bonus_points": null,
     "overall": {
       "wins": 132,
-      "losses": 85
+      "losses": 86
     },
     "top33": {
-      "wins": 2,
-      "losses": 30
+      "wins": 6,
+      "losses": 33
     },
     "top10": {
-      "wins": 0,
-      "losses": 5
+      "wins": 2,
+      "losses": 10
     },
     "bonus_rate": {
-      "value": 0.86,
-      "rank": 104,
+      "value": 0.897,
+      "rank": 126,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.794,
-      "rank": 54,
+      "value": 0.822,
+      "rank": 99,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.056,
-      "rank": 97,
+      "rank": 110,
       "rank_scope": "league"
     }
   }

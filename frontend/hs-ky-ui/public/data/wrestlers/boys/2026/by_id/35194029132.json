@@ -3,12 +3,12 @@
   "name": "Jamile Coleman",
   "team": "Warren Central",
   "team_slug": "warren_central",
-  "team_rank": 52,
+  "team_rank": 136,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 156,
+  "current_rank": 150,
   "record": {
-    "overall": "3-7",
+    "overall": "4-7",
     "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
@@ -20,8 +20,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 2
@@ -33,18 +33,33 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35488976132",
-      "opponent_rank": 100,
+      "opponent_rank": 72,
       "opponent_name": "Nolan Beste",
       "method": "Fall 1:21"
     },
     "worst_loss": {
       "opponent_id": "35137163132",
-      "opponent_rank": 89,
+      "opponent_rank": 104,
       "opponent_name": "Adam Anderson",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "OUTSTATE_06988205b75c",
+      "opponent_name": "Unknown",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Logan County"
+    },
     {
       "date": "2026-01-12",
       "opponent_id": "34993289132",
@@ -52,7 +67,7 @@
       "opponent_team": "Daviess County",
       "opponent_team_rank": 71,
       "opponent_weight": 120,
-      "opponent_rank": 60,
+      "opponent_rank": 61,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "35488976132",
       "opponent_name": "Nolan Beste",
       "opponent_team": "Calloway County",
-      "opponent_team_rank": 31,
-      "opponent_weight": 113,
-      "opponent_rank": 100,
+      "opponent_team_rank": 32,
+      "opponent_weight": 120,
+      "opponent_rank": 72,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -125,7 +140,7 @@
       "opponent_id": "35007892132",
       "opponent_name": "Graydon Daniels",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 39,
       "opponent_weight": 120,
       "opponent_rank": 20,
       "weight_class": "120",
@@ -140,9 +155,9 @@
       "opponent_id": "35024648132",
       "opponent_name": "Sebastian Woosley",
       "opponent_team": "South Warren",
-      "opponent_team_rank": 37,
-      "opponent_weight": 120,
-      "opponent_rank": 68,
+      "opponent_team_rank": 39,
+      "opponent_weight": 126,
+      "opponent_rank": 99,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -170,9 +185,9 @@
       "opponent_id": "35208179132",
       "opponent_name": "Caleb Clary",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 35,
       "opponent_weight": 113,
-      "opponent_rank": 40,
+      "opponent_rank": 48,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -185,9 +200,9 @@
       "opponent_id": "35137163132",
       "opponent_name": "Adam Anderson",
       "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 94,
-      "opponent_weight": 120,
-      "opponent_rank": 89,
+      "opponent_team_rank": 93,
+      "opponent_weight": 113,
+      "opponent_rank": 104,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -208,20 +223,15 @@
       "season": 2026,
       "grade": 10,
       "team": "Warren Central",
-      "record": "3-7",
+      "record": "4-7",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 3,
+    "wins": 4,
     "losses": 7,
-    "win_pct": 0.3
+    "win_pct": 0.364
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2688679245283019
-  }
+  "profile_generated_at": "2026-02-12"
 }

@@ -6,12 +6,12 @@
   "team_rank": 2,
   "weight_class": 157,
   "year": 2026,
-  "current_rank": 180,
+  "current_rank": 139,
   "record": {
-    "overall": "0-5",
-    "vs_ranked": "0-3",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-6",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,34 +20,69 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35897153132",
+      "opponent_rank": 148,
+      "opponent_name": "Ayden Moore",
+      "method": "Fall 0:24"
+    },
     "worst_loss": {
-      "opponent_id": "35700064132",
-      "opponent_rank": 61,
-      "opponent_name": "jace hunter",
-      "method": "Fall 0:50"
+      "opponent_id": "34993526132",
+      "opponent_rank": 102,
+      "opponent_name": "Tabin Prine",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-08",
+      "opponent_id": "35897153132",
+      "opponent_name": "Ayden Moore",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 150,
+      "opponent_rank": 148,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:24",
+      "event": "region 8 JV Region Tournament"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34993731132",
+      "opponent_name": "George Dennis",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 4,
+      "opponent_weight": 157,
+      "opponent_rank": 3,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Johnson Central"
+    },
     {
       "date": "2026-01-10",
       "opponent_id": "35700064132",
       "opponent_name": "jace hunter",
       "opponent_team": "Paintsville",
-      "opponent_team_rank": 114,
+      "opponent_team_rank": 113,
       "opponent_weight": 157,
-      "opponent_rank": 61,
+      "opponent_rank": 63,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -75,9 +110,9 @@
       "opponent_id": "34995974132",
       "opponent_name": "Chase Brock",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": 44,
+      "opponent_rank": 57,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -105,9 +140,9 @@
       "opponent_id": "34993526132",
       "opponent_name": "Tabin Prine",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 127,
-      "opponent_weight": 157,
-      "opponent_rank": 51,
+      "opponent_team_rank": 126,
+      "opponent_weight": 175,
+      "opponent_rank": 102,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -128,20 +163,15 @@
       "season": 2026,
       "grade": 9,
       "team": "Johnson Central",
-      "record": "0-5",
+      "record": "1-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 0,
-    "losses": 5,
-    "win_pct": 0.0
+    "wins": 1,
+    "losses": 6,
+    "win_pct": 0.143
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0142857142857142
-  }
+  "profile_generated_at": "2026-02-12"
 }

@@ -4,13 +4,13 @@
   "team": "St. Xavier High School",
   "team_slug": "st_xavier_high_school",
   "team_rank": null,
-  "weight_class": 157,
+  "weight_class": 150,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
     "vs_top25": "1-0"
   },
   "metrics": {
@@ -20,20 +20,20 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
+    "pin_rate": 0.5,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34988548132",
-      "opponent_rank": 11,
+      "opponent_rank": 6,
       "opponent_name": "Nathan Seth",
       "method": "TF 16-1 3:46"
     },
@@ -41,13 +41,28 @@
   },
   "match_list": [
     {
+      "date": "2026-02-04",
+      "opponent_id": "35663525132",
+      "opponent_name": "Wyatt Crisp",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 10,
+      "opponent_weight": 150,
+      "opponent_rank": 33,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. St. Xavier High School"
+    },
+    {
       "date": "2026-01-07",
       "opponent_id": "34988548132",
       "opponent_name": "Nathan Seth",
       "opponent_team": "Conner",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 34,
       "opponent_weight": 150,
-      "opponent_rank": 11,
+      "opponent_rank": 6,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
@@ -56,10 +71,5 @@
       "event": "vs. St. Xavier High School"
     }
   ],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0142857142857142
-  }
+  "profile_generated_at": "2026-02-12"
 }

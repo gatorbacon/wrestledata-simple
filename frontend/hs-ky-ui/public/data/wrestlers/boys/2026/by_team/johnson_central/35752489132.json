@@ -6,12 +6,12 @@
   "team_rank": 2,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 7,
+  "current_rank": 6,
   "record": {
-    "overall": "30-4",
-    "vs_ranked": "5-0",
-    "vs_top10": "0-0",
-    "vs_top25": "2-0"
+    "overall": "36-7",
+    "vs_ranked": "6-1",
+    "vs_top10": "0-1",
+    "vs_top25": "2-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,32 +20,67 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.852,
-    "bonus_rate": 0.926,
+    "pin_rate": 0.871,
+    "bonus_rate": 0.968,
     "majors": 2,
-    "techs": 0,
-    "pins": 23
+    "techs": 1,
+    "pins": 27
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
-      "opponent_id": "35459302132",
-      "opponent_rank": 17,
-      "opponent_name": "Liam Skinner",
-      "method": "Fall 1:52"
+      "opponent_id": "35122063132",
+      "opponent_rank": 18,
+      "opponent_name": "Nolan Favorite",
+      "method": "Fall 1:13"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34993739132",
+      "opponent_rank": 1,
+      "opponent_name": "Jackson Wells",
+      "method": "TF 17-2 0:00"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34993739132",
+      "opponent_name": "Jackson Wells",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 4,
+      "opponent_weight": 120,
+      "opponent_rank": 1,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "0:00",
+      "event": "vs. Johnson Central"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34993552132",
+      "opponent_name": "Logan Gevedon",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 36,
+      "opponent_weight": 120,
+      "opponent_rank": 42,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "vs. Moore"
+    },
     {
       "date": "2026-01-23",
       "opponent_id": "36061560132",
       "opponent_name": "Gavin McCalvin",
       "opponent_team": "Boyd County",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 13,
       "opponent_weight": 120,
       "opponent_rank": 109,
       "weight_class": "120",
@@ -131,6 +166,81 @@
       "event": "vs. Virginia H.S."
     },
     {
+      "date": "2026-01-09",
+      "opponent_id": "35415249132",
+      "opponent_name": "Nick Glaspell",
+      "opponent_team": "Bridgeport Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "WINNER`S CHOICE"
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "35737156132",
+      "opponent_name": "Maxx Taylor",
+      "opponent_team": "Wheeling Park Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-7",
+      "duration": "7:00",
+      "event": "WINNER`S CHOICE"
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "35684595132",
+      "opponent_name": "Haydyn Spitznogle",
+      "opponent_team": "East Fairmont Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "0:00",
+      "event": "WINNER`S CHOICE"
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "35822184132",
+      "opponent_name": "Brenton Seabolt",
+      "opponent_team": "Woodrow Wilson",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "WINNER`S CHOICE"
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "35573948132",
+      "opponent_name": "Emory Lanham",
+      "opponent_team": "Riverside Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "0:00",
+      "event": "WINNER`S CHOICE"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "36419020132",
       "opponent_name": "Elijah Cooper",
@@ -189,6 +299,21 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Oak Hill"
+    },
+    {
+      "date": "2026-01-02",
+      "opponent_id": "35022259132",
+      "opponent_name": "Devin Blankenship",
+      "opponent_team": "Richlands",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:48",
+      "event": "vs. Richlands"
     },
     {
       "date": "2026-01-02",
@@ -257,7 +382,7 @@
       "opponent_team": "Mason County",
       "opponent_team_rank": 107,
       "opponent_weight": 126,
-      "opponent_rank": 55,
+      "opponent_rank": 68,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -270,9 +395,9 @@
       "opponent_id": "35909978132",
       "opponent_name": "Lukas Hamm",
       "opponent_team": "Russell",
-      "opponent_team_rank": 123,
+      "opponent_team_rank": 122,
       "opponent_weight": 126,
-      "opponent_rank": 121,
+      "opponent_rank": 124,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -285,9 +410,9 @@
       "opponent_id": "35459302132",
       "opponent_name": "Liam Skinner",
       "opponent_team": "Rowan County",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 121,
       "opponent_weight": 126,
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -300,7 +425,7 @@
       "opponent_id": "35122063132",
       "opponent_name": "Nolan Favorite",
       "opponent_team": "Oldham County",
-      "opponent_team_rank": 113,
+      "opponent_team_rank": 9,
       "opponent_weight": 126,
       "opponent_rank": 18,
       "weight_class": "126",
@@ -520,7 +645,7 @@
       "season": 2026,
       "grade": 9,
       "team": "Johnson Central",
-      "record": "30-4",
+      "record": "36-7",
       "regional_place": null,
       "state_place": null
     },
@@ -542,9 +667,9 @@
     }
   ],
   "career_record": {
-    "wins": 78,
-    "losses": 21,
-    "win_pct": 0.788
+    "wins": 84,
+    "losses": 24,
+    "win_pct": 0.778
   },
-  "profile_generated_at": "2026-02-10"
+  "profile_generated_at": "2026-02-12"
 }

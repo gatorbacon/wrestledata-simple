@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-2",
-    "vs_ranked": "1-2",
+    "overall": "2-2",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
     "vs_top25": "1-2"
   },
@@ -24,22 +24,22 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35017748132",
-      "opponent_rank": 20,
+      "opponent_rank": 19,
       "opponent_name": "Wyatt Riley",
       "method": "Fall 0:39"
     },
     "worst_loss": {
       "opponent_id": "35773044132",
-      "opponent_rank": 18,
+      "opponent_rank": 17,
       "opponent_name": "Isaac Adkins",
       "method": "Fall 0:00"
     }
@@ -50,14 +50,29 @@
       "opponent_id": "35017748132",
       "opponent_name": "Wyatt Riley",
       "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 41,
       "opponent_weight": 285,
-      "opponent_rank": 20,
+      "opponent_rank": 19,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:39",
+      "event": "WSAZ Invitational"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35688837132",
+      "opponent_name": "Lorenzo McGinty",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 285,
+      "opponent_rank": 77,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:11",
       "event": "WSAZ Invitational"
     },
     {
@@ -67,7 +82,7 @@
       "opponent_team": "Johnson Central",
       "opponent_team_rank": 2,
       "opponent_weight": 285,
-      "opponent_rank": 18,
+      "opponent_rank": 17,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -82,7 +97,7 @@
       "opponent_team": "Johnson Central",
       "opponent_team_rank": 2,
       "opponent_weight": 285,
-      "opponent_rank": 17,
+      "opponent_rank": 16,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -91,10 +106,5 @@
       "event": "Fallen Heroes"
     }
   ],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.4399277326106594
-  }
+  "profile_generated_at": "2026-02-12"
 }

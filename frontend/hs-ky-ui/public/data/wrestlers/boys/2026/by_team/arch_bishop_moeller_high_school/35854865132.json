@@ -11,7 +11,7 @@
     "overall": "3-2",
     "vs_ranked": "3-2",
     "vs_top10": "0-2",
-    "vs_top25": "2-2"
+    "vs_top25": "3-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -33,13 +33,13 @@
     "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35144509132",
-      "opponent_rank": 20,
+      "opponent_rank": 21,
       "opponent_name": "Noah Foley",
       "method": "TF 15-0 2:55"
     },
     "worst_loss": {
       "opponent_id": "35640248132",
-      "opponent_rank": 7,
+      "opponent_rank": 8,
       "opponent_name": "Deacon Cano",
       "method": "Dec 7-2"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35640248132",
       "opponent_name": "Deacon Cano",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 48,
       "opponent_weight": 132,
-      "opponent_rank": 7,
+      "opponent_rank": 8,
       "weight_class": "132",
       "result": "L",
       "method": "DEC",
@@ -62,12 +62,27 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35663338132",
+      "opponent_name": "Ethan Berhe",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 10,
+      "opponent_weight": 126,
+      "opponent_rank": 24,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:07",
+      "event": "2025 Ryle Raider Rumble"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35562983132",
       "opponent_name": "Nathaniel Bueter",
       "opponent_team": "St. Xavier",
       "opponent_team_rank": 18,
       "opponent_weight": 126,
-      "opponent_rank": 22,
+      "opponent_rank": 23,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -80,7 +95,7 @@
       "opponent_id": "35520541132",
       "opponent_name": "Corban Nance",
       "opponent_team": "Anderson County",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 11,
       "opponent_weight": 132,
       "opponent_rank": 1,
       "weight_class": "132",
@@ -95,31 +110,16 @@
       "opponent_id": "35144509132",
       "opponent_name": "Noah Foley",
       "opponent_team": "LaRue County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 98,
       "opponent_weight": 132,
-      "opponent_rank": 20,
+      "opponent_rank": 21,
       "weight_class": "132",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "2:55",
       "event": "2025 Ryle Raider Rumble"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35663338132",
-      "opponent_name": "Ethan Berhe",
-      "opponent_team": "Ryle",
-      "opponent_team_rank": 5,
-      "opponent_weight": 132,
-      "opponent_rank": 38,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:07",
-      "event": "2025 Ryle Raider Rumble"
     }
   ],
-  "profile_generated_at": "2026-02-10"
+  "profile_generated_at": "2026-02-12"
 }

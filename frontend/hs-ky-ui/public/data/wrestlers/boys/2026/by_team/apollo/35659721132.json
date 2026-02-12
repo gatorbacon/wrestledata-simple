@@ -3,13 +3,13 @@
   "name": "Sabirah Ngurinziza",
   "team": "Apollo",
   "team_slug": "apollo",
-  "team_rank": 55,
+  "team_rank": 57,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 227,
+  "current_rank": 111,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-1",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,20 +20,61 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "35397898132",
+      "opponent_rank": 118,
+      "opponent_name": "Camilla Anaya",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35217315132",
+      "opponent_rank": 62,
+      "opponent_name": "Aaliyah Bronger",
+      "method": "Fall 1:44"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-10"
+  "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35217315132",
+      "opponent_name": "Aaliyah Bronger",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 77,
+      "opponent_weight": 106,
+      "opponent_rank": 62,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:44",
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35397898132",
+      "opponent_name": "Camilla Anaya",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 49,
+      "opponent_weight": 106,
+      "opponent_rank": 118,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Henry Clay"
+    }
+  ],
+  "profile_generated_at": "2026-02-12"
 }

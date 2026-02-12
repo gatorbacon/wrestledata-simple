@@ -3,10 +3,10 @@
   "name": "Jayson Henderson",
   "team": "Boone County",
   "team_slug": "boone_county",
-  "team_rank": 62,
+  "team_rank": 64,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 57,
+  "current_rank": 118,
   "record": {
     "overall": "6-9",
     "vs_ranked": "5-5",
@@ -20,8 +20,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
     "pins": 4
@@ -32,34 +32,19 @@
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "35144528132",
-      "opponent_rank": 51,
-      "opponent_name": "Jimmie Lee Wood IV",
-      "method": "Fall 4:16"
+      "opponent_id": "35663589132",
+      "opponent_rank": 66,
+      "opponent_name": "Clayton Skaggs",
+      "method": "Dec 11-9"
     },
     "worst_loss": {
-      "opponent_id": "35215022132",
-      "opponent_rank": 30,
-      "opponent_name": "Wayne Illes",
-      "method": "Fall 0:00"
+      "opponent_id": "35404970132",
+      "opponent_rank": 32,
+      "opponent_name": "Axel Camacho",
+      "method": "Fall 1:04"
     }
   },
   "match_list": [
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35144528132",
-      "opponent_name": "Jimmie Lee Wood IV",
-      "opponent_team": "LaRue County",
-      "opponent_team_rank": 47,
-      "opponent_weight": 120,
-      "opponent_rank": 51,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:16",
-      "event": "2025 Ryle Raider Rumble"
-    },
     {
       "date": "2025-12-13",
       "opponent_id": "35045478132",
@@ -73,6 +58,21 @@
       "method": "FALL",
       "score": null,
       "duration": "1:56",
+      "event": "2025 Ryle Raider Rumble"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35144528132",
+      "opponent_name": "Jimmie Lee Wood IV",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 98,
+      "opponent_weight": 126,
+      "opponent_rank": 73,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:16",
       "event": "2025 Ryle Raider Rumble"
     },
     {
@@ -95,9 +95,9 @@
       "opponent_id": "35663442132",
       "opponent_name": "Jake Miley",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 10,
       "opponent_weight": 132,
-      "opponent_rank": 266,
+      "opponent_rank": 268,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -125,9 +125,9 @@
       "opponent_id": "35663305132",
       "opponent_name": "Suman Allay",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 10,
       "opponent_weight": 126,
-      "opponent_rank": 259,
+      "opponent_rank": 256,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -140,9 +140,9 @@
       "opponent_id": "35663589132",
       "opponent_name": "Clayton Skaggs",
       "opponent_team": "Ryle",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 10,
       "opponent_weight": 126,
-      "opponent_rank": 59,
+      "opponent_rank": 66,
       "weight_class": "126",
       "result": "W",
       "method": "DEC",
@@ -164,6 +164,21 @@
       "score": "8-7",
       "duration": "7:00",
       "event": "2025 JV Ryle Raider Rumble"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35488266132",
+      "opponent_name": "Garrett Fohl",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 45,
+      "opponent_weight": 113,
+      "opponent_rank": 89,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:50",
+      "event": "Bearcat Brawl 2025"
     },
     {
       "date": "2025-12-06",
@@ -202,27 +217,12 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": 99,
       "opponent_weight": 126,
-      "opponent_rank": 26,
+      "opponent_rank": 32,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:04",
-      "event": "Bearcat Brawl 2025"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35488266132",
-      "opponent_name": "Garrett Fohl",
-      "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 42,
-      "opponent_weight": 126,
-      "opponent_rank": 152,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:50",
       "event": "Bearcat Brawl 2025"
     },
     {
@@ -232,7 +232,7 @@
       "opponent_team": "Dixie Heights",
       "opponent_team_rank": 73,
       "opponent_weight": 132,
-      "opponent_rank": 14,
+      "opponent_rank": 16,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -245,9 +245,9 @@
       "opponent_id": "35215022132",
       "opponent_name": "Wayne Illes",
       "opponent_team": "Cooper",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 5,
       "opponent_weight": 132,
-      "opponent_rank": 30,
+      "opponent_rank": 32,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -302,10 +302,5 @@
     "losses": 16,
     "win_pct": 0.407
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.936046511627907
-  }
+  "profile_generated_at": "2026-02-12"
 }

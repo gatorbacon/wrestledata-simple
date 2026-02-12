@@ -3,13 +3,13 @@
   "name": "Sebastian Vernard",
   "team": "Iroquois",
   "team_slug": "iroquois",
-  "team_rank": 95,
+  "team_rank": 94,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 267,
+  "current_rank": 195,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,17 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35459045132",
+      "opponent_rank": 33,
+      "opponent_name": "Castle Whitaker",
+      "method": "Fall 1:46"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3699186991869918
-  }
+  "match_list": [
+    {
+      "date": "2026-01-21",
+      "opponent_id": "35459045132",
+      "opponent_name": "Castle Whitaker",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 37,
+      "opponent_weight": 285,
+      "opponent_rank": 33,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:46",
+      "event": "vs. North Oldham"
+    }
+  ],
+  "profile_generated_at": "2026-02-12"
 }

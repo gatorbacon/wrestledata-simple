@@ -3,13 +3,13 @@
   "name": "Makayla Jones",
   "team": "Western",
   "team_slug": "western",
-  "team_rank": 30,
-  "weight_class": 157,
+  "team_rank": 31,
+  "weight_class": 165,
   "year": 2026,
-  "current_rank": 192,
+  "current_rank": 83,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "4-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,25 +20,86 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35562249132",
+      "opponent_rank": 167,
+      "opponent_name": "Yasmine Legendre",
+      "method": "M. For."
+    },
     "worst_loss": null
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0142857142857142
-  }
+  "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35084131132",
+      "opponent_name": "Zahriyah Wales",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 58,
+      "opponent_weight": 165,
+      "opponent_rank": 168,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:26",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35562249132",
+      "opponent_name": "Yasmine Legendre",
+      "opponent_team": "Seneca",
+      "opponent_team_rank": 127,
+      "opponent_weight": 165,
+      "opponent_rank": 167,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35524066132",
+      "opponent_name": "Aubre`Onna Griffin",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 70,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "MUSTANG CLASSIC"
+    }
+  ],
+  "profile_generated_at": "2026-02-12"
 }

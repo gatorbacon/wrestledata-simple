@@ -10,7 +10,7 @@
   "record": {
     "overall": "4-2",
     "vs_ranked": "4-2",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -30,10 +30,10 @@
     "ranked_wins": 4,
     "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35133607132",
-      "opponent_rank": 60,
+      "opponent_rank": 66,
       "opponent_name": "Kannen Deaton",
       "method": "TF 19-3 6:00"
     },
@@ -50,9 +50,9 @@
       "opponent_id": "34989037132",
       "opponent_name": "Jaylin Bellamy",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 28,
       "opponent_weight": 144,
-      "opponent_rank": 16,
+      "opponent_rank": 2,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -65,7 +65,7 @@
       "opponent_id": "34989083132",
       "opponent_name": "David Barabas",
       "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 28,
       "opponent_weight": 150,
       "opponent_rank": 27,
       "weight_class": "150",
@@ -80,9 +80,9 @@
       "opponent_id": "35064898132",
       "opponent_name": "David Boedeker",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 96,
+      "opponent_team_rank": 95,
       "opponent_weight": 157,
-      "opponent_rank": 243,
+      "opponent_rank": 245,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -92,27 +92,12 @@
     },
     {
       "date": "2025-12-04",
-      "opponent_id": "35133607132",
-      "opponent_name": "Kannen Deaton",
-      "opponent_team": "Hopkinsville",
-      "opponent_team_rank": 94,
-      "opponent_weight": 150,
-      "opponent_rank": 60,
-      "weight_class": "157",
-      "result": "W",
-      "method": "TF",
-      "score": "19-3",
-      "duration": "6:00",
-      "event": "vs. Kenwood High School"
-    },
-    {
-      "date": "2025-12-04",
       "opponent_id": "35002894132",
       "opponent_name": "Jael Obando",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 79,
       "opponent_weight": 157,
-      "opponent_rank": 225,
+      "opponent_rank": 227,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -122,12 +107,27 @@
     },
     {
       "date": "2025-12-04",
+      "opponent_id": "35133607132",
+      "opponent_name": "Kannen Deaton",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 93,
+      "opponent_weight": 157,
+      "opponent_rank": 66,
+      "weight_class": "157",
+      "result": "W",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "6:00",
+      "event": "vs. Kenwood High School"
+    },
+    {
+      "date": "2025-12-04",
       "opponent_id": "35598055132",
       "opponent_name": "Brody Fleming",
       "opponent_team": "Trigg County",
-      "opponent_team_rank": 133,
+      "opponent_team_rank": 132,
       "opponent_weight": 157,
-      "opponent_rank": 95,
+      "opponent_rank": 97,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -136,5 +136,5 @@
       "event": "vs. Kenwood High School"
     }
   ],
-  "profile_generated_at": "2026-02-10"
+  "profile_generated_at": "2026-02-12"
 }

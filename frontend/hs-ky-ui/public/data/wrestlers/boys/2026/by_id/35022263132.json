@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,20 +28,20 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35103703132",
-      "opponent_rank": 113,
+      "opponent_rank": 116,
       "opponent_name": "John Lucas",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35752043132",
-      "opponent_rank": 13,
+      "opponent_rank": 20,
       "opponent_name": "Dylan Peck",
-      "method": "Fall 0:00"
+      "method": "Fall 1:22"
     }
   },
   "match_list": [
@@ -52,7 +52,7 @@
       "opponent_team": "Johnson Central",
       "opponent_team_rank": 2,
       "opponent_weight": 215,
-      "opponent_rank": 13,
+      "opponent_rank": 20,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -61,13 +61,28 @@
       "event": "vs. Richlands"
     },
     {
+      "date": "2026-01-02",
+      "opponent_id": "35752043132",
+      "opponent_name": "Dylan Peck",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 215,
+      "opponent_rank": 20,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "vs. Richlands"
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35103703132",
       "opponent_name": "John Lucas",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 127,
+      "opponent_team_rank": 126,
       "opponent_weight": 215,
-      "opponent_rank": 113,
+      "opponent_rank": 116,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -76,10 +91,5 @@
       "event": "Fallen Heroes"
     }
   ],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.0496124031007752
-  }
+  "profile_generated_at": "2026-02-12"
 }

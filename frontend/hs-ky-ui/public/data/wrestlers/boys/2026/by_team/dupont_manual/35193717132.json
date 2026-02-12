@@ -3,10 +3,10 @@
   "name": "Owen Higginbotham",
   "team": "Dupont Manual",
   "team_slug": "dupont_manual",
-  "team_rank": 25,
+  "team_rank": 24,
   "weight_class": 150,
   "year": 2026,
-  "current_rank": 99,
+  "current_rank": 102,
   "record": {
     "overall": "1-1",
     "vs_ranked": "1-1",
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34988543132",
-      "opponent_rank": 243,
+      "opponent_rank": 161,
       "opponent_name": "Ryan Fernandez",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35205074132",
-      "opponent_rank": 35,
+      "opponent_rank": 38,
       "opponent_name": "John Jerred Del Carmen",
       "method": "Fall 0:00"
     }
@@ -47,28 +47,12 @@
   "match_list": [
     {
       "date": "2025-12-06",
-      "opponent_id": "35205074132",
-      "opponent_name": "John Jerred Del Carmen",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": 14,
-      "opponent_weight": 138,
-      "opponent_rank": 35,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Dupont Manual",
-      "mv_impact": -4.86
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "34988543132",
       "opponent_name": "Ryan Fernandez",
       "opponent_team": "Doss",
       "opponent_team_rank": 74,
-      "opponent_weight": 144,
-      "opponent_rank": 243,
+      "opponent_weight": 132,
+      "opponent_rank": 161,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -76,6 +60,22 @@
       "duration": "0:00",
       "event": "vs. Dupont Manual",
       "mv_impact": 2.74
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35205074132",
+      "opponent_name": "John Jerred Del Carmen",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 15,
+      "opponent_weight": 138,
+      "opponent_rank": 38,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Dupont Manual",
+      "mv_impact": -4.86
     }
   ],
   "career": {
@@ -100,5 +100,5 @@
     "losses": 1,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-02-10"
+  "profile_generated_at": "2026-02-12"
 }

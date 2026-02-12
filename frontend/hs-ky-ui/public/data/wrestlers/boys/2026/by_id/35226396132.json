@@ -3,15 +3,15 @@
   "name": "Kayden Brown",
   "team": "Nelson County",
   "team_slug": "nelson_county",
-  "team_rank": 23,
+  "team_rank": 14,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 173,
+  "current_rank": 181,
   "record": {
     "overall": "1-7",
     "vs_ranked": "0-6",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -34,7 +34,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35483873132",
-      "opponent_rank": 92,
+      "opponent_rank": 93,
       "opponent_name": "Jordan Gainous",
       "method": "Fall 2:59"
     }
@@ -45,9 +45,9 @@
       "opponent_id": "35006461132",
       "opponent_name": "Xavier Holbrook",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 87,
       "opponent_weight": 190,
-      "opponent_rank": 68,
+      "opponent_rank": 71,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -62,7 +62,7 @@
       "opponent_team": "Logan County",
       "opponent_team_rank": 104,
       "opponent_weight": 190,
-      "opponent_rank": 92,
+      "opponent_rank": 93,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -75,7 +75,7 @@
       "opponent_id": "35002885132",
       "opponent_name": "Keshawn Dixon",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 79,
       "opponent_weight": 175,
       "opponent_rank": 29,
       "weight_class": "190",
@@ -92,7 +92,7 @@
       "opponent_team": "Corbin",
       "opponent_team_rank": 69,
       "opponent_weight": 190,
-      "opponent_rank": 44,
+      "opponent_rank": 45,
       "weight_class": "190",
       "result": "L",
       "method": "TF",
@@ -117,10 +117,25 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35122064132",
+      "opponent_name": "Jack Grimes",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 175,
+      "opponent_rank": 15,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35051529132",
       "opponent_name": "Braylen Livingston",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 55,
       "opponent_weight": 190,
       "opponent_rank": 10,
       "weight_class": "190",
@@ -144,21 +159,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Charlestown"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35122064132",
-      "opponent_name": "Jack Grimes",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": 113,
-      "opponent_weight": 190,
-      "opponent_rank": 27,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Oldham County"
     }
   ],
   "career": {
@@ -183,10 +183,5 @@
     "losses": 7,
     "win_pct": 0.125
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9492753623188406
-  }
+  "profile_generated_at": "2026-02-12"
 }

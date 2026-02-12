@@ -3,13 +3,13 @@
   "name": "Jenna Riggs",
   "team": "Spencer County",
   "team_slug": "spencer_county",
-  "team_rank": 21,
+  "team_rank": 29,
   "weight_class": 144,
   "year": 2026,
-  "current_rank": 87,
+  "current_rank": 91,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "1-1",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,29 +28,44 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35228288132",
-      "opponent_rank": 261,
+      "opponent_rank": 262,
       "opponent_name": "Saniyah Nana",
       "method": "Dec 7-4"
     },
     "worst_loss": {
-      "opponent_id": "35223096132",
-      "opponent_rank": 91,
-      "opponent_name": "Memphis Adams",
-      "method": "Fall 1:00"
+      "opponent_id": "35284469132",
+      "opponent_rank": 151,
+      "opponent_name": "Sonia Tarley",
+      "method": "Fall 3:28"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35284469132",
+      "opponent_name": "Sonia Tarley",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 76,
+      "opponent_weight": 138,
+      "opponent_rank": 151,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:28",
+      "event": "MUSTANG CLASSIC"
+    },
     {
       "date": "2026-01-08",
       "opponent_id": "OUTSTATE_580221d42b88",
       "opponent_name": "Unknown",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 51,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "138",
@@ -65,9 +80,9 @@
       "opponent_id": "35228288132",
       "opponent_name": "Saniyah Nana",
       "opponent_team": "Butler",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 67,
       "opponent_weight": 138,
-      "opponent_rank": 261,
+      "opponent_rank": 262,
       "weight_class": "144",
       "result": "W",
       "method": "DEC",
@@ -80,9 +95,9 @@
       "opponent_id": "35223096132",
       "opponent_name": "Memphis Adams",
       "opponent_team": "Hart County",
-      "opponent_team_rank": 90,
+      "opponent_team_rank": 89,
       "opponent_weight": 138,
-      "opponent_rank": 91,
+      "opponent_rank": 95,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -131,10 +146,5 @@
     "losses": 14,
     "win_pct": 0.222
   },
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9285714285714286
-  }
+  "profile_generated_at": "2026-02-12"
 }

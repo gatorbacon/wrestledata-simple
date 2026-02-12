@@ -3,13 +3,13 @@
   "name": "Jaxon Long",
   "team": "Paul Laurence Dunbar",
   "team_slug": "paul_laurence_dunbar",
-  "team_rank": 115,
-  "weight_class": 138,
+  "team_rank": 114,
+  "weight_class": 132,
   "year": 2026,
-  "current_rank": 74,
+  "current_rank": 104,
   "record": {
-    "overall": "4-0",
-    "vs_ranked": "0-0",
+    "overall": "4-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,19 +28,54 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35033124132",
+      "opponent_rank": 97,
+      "opponent_name": "Grahame Herald",
+      "method": "Dec 9-5"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35023924132",
+      "opponent_name": "Jerald Ferrel",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": 80,
+      "opponent_weight": 132,
+      "opponent_rank": 89,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35033124132",
+      "opponent_name": "Grahame Herald",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 131,
+      "opponent_weight": 132,
+      "opponent_rank": 97,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-5",
+      "duration": "7:00",
+      "event": "Jessamine County Clash"
+    },
     {
       "date": "2026-01-22",
       "opponent_id": "OUTSTATE_2c903e25261d",
       "opponent_name": "Unknown",
       "opponent_team": "Bourbon County",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 65,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "138",
@@ -55,7 +90,7 @@
       "opponent_id": "OUTSTATE_3e7053701b0d",
       "opponent_name": "Unknown",
       "opponent_team": "Bryan Station",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 42,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "138",
@@ -70,7 +105,7 @@
       "opponent_id": "OUTSTATE_40238e8e82a0",
       "opponent_name": "Unknown",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 84,
+      "opponent_team_rank": 82,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "138",
@@ -85,7 +120,7 @@
       "opponent_id": "OUTSTATE_efc7437b8406",
       "opponent_name": "Unknown",
       "opponent_team": "Southwestern",
-      "opponent_team_rank": 131,
+      "opponent_team_rank": 130,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "144",
@@ -110,7 +145,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Paul Laurence Dunbar",
-      "record": "4-0",
+      "record": "4-2",
       "regional_place": null,
       "state_place": null
     },
@@ -133,8 +168,8 @@
   ],
   "career_record": {
     "wins": 26,
-    "losses": 28,
-    "win_pct": 0.481
+    "losses": 30,
+    "win_pct": 0.464
   },
-  "profile_generated_at": "2026-02-10"
+  "profile_generated_at": "2026-02-12"
 }

@@ -3,13 +3,13 @@
   "name": "McKenzie Webb",
   "team": "Bell County",
   "team_slug": "bell_county",
-  "team_rank": 60,
+  "team_rank": 62,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 285,
+  "current_rank": 217,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,12 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "37133357132",
+      "opponent_rank": 144,
+      "opponent_name": "Dawson Poore",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-10"
+  "match_list": [
+    {
+      "date": "2026-01-23",
+      "opponent_id": "37133357132",
+      "opponent_name": "Dawson Poore",
+      "opponent_team": "East Ridge",
+      "opponent_team_rank": 75,
+      "opponent_weight": 157,
+      "opponent_rank": 144,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bell County"
+    }
+  ],
+  "profile_generated_at": "2026-02-12"
 }

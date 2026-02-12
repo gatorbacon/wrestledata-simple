@@ -3,15 +3,15 @@
   "name": "Noah Vergara",
   "team": "North Bullitt",
   "team_slug": "north_bullitt",
-  "team_rank": 49,
+  "team_rank": 51,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 136,
+  "current_rank": 130,
   "record": {
     "overall": "3-4",
     "vs_ranked": "1-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,8 +20,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.333,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 1
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35076692132",
-      "opponent_rank": 146,
+      "opponent_rank": 120,
       "opponent_name": "Miguel Torres",
       "method": "Fall 3:04"
     },
     "worst_loss": {
       "opponent_id": "35318011132",
-      "opponent_rank": 117,
+      "opponent_rank": 112,
       "opponent_name": "Seán Poynter",
       "method": "Fall 5:06"
     }
@@ -50,7 +50,7 @@
       "opponent_id": "OUTSTATE_5855457a7894",
       "opponent_name": "Unknown",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 66,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "120",
@@ -65,7 +65,7 @@
       "opponent_id": "OUTSTATE_9f37d8e07b50",
       "opponent_name": "Unknown",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 15,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "120",
@@ -80,9 +80,9 @@
       "opponent_id": "35318011132",
       "opponent_name": "Seán Poynter",
       "opponent_team": "Iroquois",
-      "opponent_team_rank": 95,
+      "opponent_team_rank": 94,
       "opponent_weight": 113,
-      "opponent_rank": 117,
+      "opponent_rank": 112,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -95,9 +95,9 @@
       "opponent_id": "35046224132",
       "opponent_name": "Aznur Kamalov",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 21,
       "opponent_weight": 120,
-      "opponent_rank": 26,
+      "opponent_rank": 25,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -107,12 +107,27 @@
     },
     {
       "date": "2025-11-29",
+      "opponent_id": "35076692132",
+      "opponent_name": "Miguel Torres",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 128,
+      "opponent_weight": 113,
+      "opponent_rank": 120,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:04",
+      "event": "Screamin` Eagles Classic"
+    },
+    {
+      "date": "2025-11-29",
       "opponent_id": "35076691132",
       "opponent_name": "Khareem Washington",
       "opponent_team": "Shawnee",
-      "opponent_team_rank": 129,
+      "opponent_team_rank": 128,
       "opponent_weight": 113,
-      "opponent_rank": 81,
+      "opponent_rank": 86,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -125,29 +140,14 @@
       "opponent_id": "35046224132",
       "opponent_name": "Aznur Kamalov",
       "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 21,
       "opponent_weight": 120,
-      "opponent_rank": 26,
+      "opponent_rank": 25,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:46",
-      "event": "Screamin` Eagles Classic"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35076692132",
-      "opponent_name": "Miguel Torres",
-      "opponent_team": "Shawnee",
-      "opponent_team_rank": 129,
-      "opponent_weight": 126,
-      "opponent_rank": 146,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:04",
       "event": "Screamin` Eagles Classic"
     }
   ],
@@ -173,5 +173,5 @@
     "losses": 4,
     "win_pct": 0.429
   },
-  "profile_generated_at": "2026-02-10"
+  "profile_generated_at": "2026-02-12"
 }

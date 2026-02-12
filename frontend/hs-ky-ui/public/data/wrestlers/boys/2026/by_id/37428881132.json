@@ -4,12 +4,12 @@
   "team": "Lexington Catholic",
   "team_slug": "lexington_catholic",
   "team_rank": 102,
-  "weight_class": 165,
+  "weight_class": 157,
   "year": 2026,
-  "current_rank": 218,
+  "current_rank": 188,
   "record": {
-    "overall": "0-1",
-    "vs_ranked": "0-1",
+    "overall": "0-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,26 +28,56 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35212704132",
-      "opponent_rank": 65,
-      "opponent_name": "Raad Albakri",
+      "opponent_id": "35202516132",
+      "opponent_rank": 147,
+      "opponent_name": "Logan Brown",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-02-07",
+      "opponent_id": "35225557132",
+      "opponent_name": "Kaleb Kavanough",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": 82,
+      "opponent_weight": 157,
+      "opponent_rank": 140,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35202516132",
+      "opponent_name": "Logan Brown",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": 7,
+      "opponent_weight": 157,
+      "opponent_rank": 147,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
       "date": "2026-01-17",
       "opponent_id": "35212704132",
       "opponent_name": "Raad Albakri",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 119,
+      "opponent_team_rank": 118,
       "opponent_weight": 165,
-      "opponent_rank": 65,
+      "opponent_rank": 68,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -56,10 +86,5 @@
       "event": "Bear Brawl"
     }
   ],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1636363636363636
-  }
+  "profile_generated_at": "2026-02-12"
 }

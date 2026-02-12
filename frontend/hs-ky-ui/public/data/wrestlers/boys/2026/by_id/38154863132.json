@@ -3,15 +3,15 @@
   "name": "Owen Ferrell",
   "team": "Bath County",
   "team_slug": "bath_county",
-  "team_rank": 58,
+  "team_rank": 60,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 323,
+  "current_rank": 202,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-2",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,17 +28,48 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35568118132",
+      "opponent_rank": 105,
+      "opponent_name": "Prajwol Bhetwal",
+      "method": "Fall 3:00"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3699186991869918
-  }
+  "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35568118132",
+      "opponent_name": "Prajwol Bhetwal",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 58,
+      "opponent_weight": 285,
+      "opponent_rank": 105,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34995377132",
+      "opponent_name": "Jamison Dunn",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 103,
+      "opponent_weight": 285,
+      "opponent_rank": 25,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
+      "event": "Mustang Classic"
+    }
+  ],
+  "profile_generated_at": "2026-02-12"
 }

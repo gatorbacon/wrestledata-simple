@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "4-0",
-    "vs_ranked": "4-0",
+    "overall": "4-1",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35205293132",
-      "opponent_rank": 58,
-      "opponent_name": "Jaxon Leonard",
-      "method": "Fall 0:00"
+      "opponent_id": "35104950132",
+      "opponent_rank": 44,
+      "opponent_name": "marcus anthony",
+      "method": "Fall 3:54"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35212701132",
+      "opponent_rank": 23,
+      "opponent_name": "Jack Ferguson",
+      "method": "MD 13-4"
+    }
   },
   "match_list": [
     {
@@ -45,9 +50,9 @@
       "opponent_id": "35104950132",
       "opponent_name": "marcus anthony",
       "opponent_team": "Moore",
-      "opponent_team_rank": 26,
-      "opponent_weight": 157,
-      "opponent_rank": 60,
+      "opponent_team_rank": 36,
+      "opponent_weight": 150,
+      "opponent_rank": 44,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -56,13 +61,28 @@
       "event": "Fern Creek Gladiator"
     },
     {
+      "date": "2025-12-30",
+      "opponent_id": "35212701132",
+      "opponent_name": "Jack Ferguson",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": 118,
+      "opponent_weight": 150,
+      "opponent_rank": 23,
+      "weight_class": "150",
+      "result": "L",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
+      "event": "Fern Creek Gladiator"
+    },
+    {
       "date": "2025-12-29",
       "opponent_id": "35205293132",
       "opponent_name": "Jaxon Leonard",
       "opponent_team": "Greenwood",
-      "opponent_team_rank": 88,
+      "opponent_team_rank": 87,
       "opponent_weight": 144,
-      "opponent_rank": 58,
+      "opponent_rank": 60,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -77,7 +97,7 @@
       "opponent_team": "McCracken County",
       "opponent_team_rank": 108,
       "opponent_weight": 144,
-      "opponent_rank": 252,
+      "opponent_rank": 256,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -90,9 +110,9 @@
       "opponent_id": "35049795132",
       "opponent_name": "Eli Wilson",
       "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 53,
       "opponent_weight": 150,
-      "opponent_rank": 80,
+      "opponent_rank": 87,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -101,10 +121,5 @@
       "event": "vs. Evansville F.j. Reitz"
     }
   ],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9886363636363636
-  }
+  "profile_generated_at": "2026-02-12"
 }

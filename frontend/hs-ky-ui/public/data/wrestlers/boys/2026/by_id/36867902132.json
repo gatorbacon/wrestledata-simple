@@ -6,10 +6,10 @@
   "team_rank": 70,
   "weight_class": 285,
   "year": 2026,
-  "current_rank": 121,
+  "current_rank": 133,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "0-1",
+    "overall": "3-3",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,24 +28,84 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35768091132",
-      "opponent_rank": 76,
-      "opponent_name": "Sanjay Douglas",
-      "method": "Fall 0:00"
+      "opponent_id": "34993513132",
+      "opponent_rank": 85,
+      "opponent_name": "Zac Miracle",
+      "method": "Fall 0:29"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35281289132",
+      "opponent_name": "Jack Fredstrom",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 73,
+      "opponent_weight": 285,
+      "opponent_rank": 54,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:21",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34993513132",
+      "opponent_name": "Zac Miracle",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 126,
+      "opponent_weight": 285,
+      "opponent_rank": 85,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2026-02-05",
+      "opponent_id": "OUTSTATE_931f1ed55205",
+      "opponent_name": "Unknown",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": 138,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. West Jessamine"
+    },
+    {
+      "date": "2026-02-04",
+      "opponent_id": "OUTSTATE_fa707c1de75c",
+      "opponent_name": "Unknown",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 59,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bardstown"
+    },
     {
       "date": "2026-01-21",
       "opponent_id": "OUTSTATE_5855457a7894",
       "opponent_name": "Unknown",
       "opponent_team": "Bullitt Central",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 66,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "285",
@@ -60,7 +120,7 @@
       "opponent_id": "35768091132",
       "opponent_name": "Sanjay Douglas",
       "opponent_team": "Fort Knox",
-      "opponent_team_rank": 81,
+      "opponent_team_rank": 80,
       "opponent_weight": 285,
       "opponent_rank": 76,
       "weight_class": "285",
@@ -71,10 +131,5 @@
       "event": "vs. Fort Knox"
     }
   ],
-  "profile_generated_at": "2026-02-10",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3699186991869918
-  }
+  "profile_generated_at": "2026-02-12"
 }

@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-11T19:52:15.284147Z",
+  "generated_at_utc": "2026-02-12T18:44:00.860399Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35698533132",
       "name": "Mason Clark",
-      "current_rank": 109,
+      "current_rank": 120,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -40,67 +40,19 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       },
       "wins": 13,
-      "losses": 10,
+      "losses": 11,
       "top25_wins": 0,
-      "bonus_rate": 0.308
+      "bonus_rate": 0.667
     },
     "126": {
       "weight": 126,
       "wrestler_id": "35049797132",
       "name": "Logan Mongold",
-      "current_rank": 35,
+      "current_rank": 43,
       "grade": 9,
-      "xtp": 0.93,
-      "xtp_p": 0.03,
-      "xtp_a": 0.3,
-      "xtp_b": 0.6,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 1,
-        "losses": 6
-      },
-      "wins": 22,
-      "losses": 12,
-      "top25_wins": 0,
-      "bonus_rate": 0.773
-    },
-    "138": {
-      "weight": 138,
-      "wrestler_id": "35049803132",
-      "name": "Simon Thompson",
-      "current_rank": 36,
-      "grade": 11,
-      "xtp": 1.04,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.69,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 1,
-        "losses": 3
-      },
-      "wins": 28,
-      "losses": 7,
-      "top25_wins": 0,
-      "bonus_rate": 0.714
-    },
-    "144": {
-      "weight": 144,
-      "wrestler_id": "35049802132",
-      "name": "Sam Brauer",
-      "current_rank": 59,
-      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -112,19 +64,43 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 4
       },
-      "wins": 27,
-      "losses": 8,
+      "wins": 28,
+      "losses": 13,
       "top25_wins": 0,
-      "bonus_rate": 0.846
+      "bonus_rate": 0.885
     },
-    "150": {
-      "weight": 150,
-      "wrestler_id": "35049795132",
-      "name": "Eli Wilson",
-      "current_rank": 76,
-      "grade": 8,
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35049803132",
+      "name": "Simon Thompson",
+      "current_rank": 41,
+      "grade": 11,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 4
+      },
+      "wins": 35,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.96
+    },
+    "144": {
+      "weight": 144,
+      "wrestler_id": "35049802132",
+      "name": "Sam Brauer",
+      "current_rank": 58,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -138,22 +114,46 @@
         "wins": 0,
         "losses": 4
       },
-      "wins": 14,
+      "wins": 33,
       "losses": 9,
       "top25_wins": 0,
-      "bonus_rate": 0.357
+      "bonus_rate": 0.963
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35049795132",
+      "name": "Eli Wilson",
+      "current_rank": 81,
+      "grade": 8,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "wins": 15,
+      "losses": 10,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     "157": {
       "weight": 157,
       "wrestler_id": "35049796132",
       "name": "Thomas Brauer",
-      "current_rank": 16,
+      "current_rank": 18,
       "grade": 8,
-      "xtp": 3.64,
-      "xtp_p": 0.47,
-      "xtp_a": 1.08,
-      "xtp_b": 2.09,
-      "xtp_simple": 2.5,
+      "xtp": 2.91,
+      "xtp_p": 0.46,
+      "xtp_a": 1.0,
+      "xtp_b": 1.45,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -162,16 +162,16 @@
         "wins": 1,
         "losses": 0
       },
-      "wins": 20,
+      "wins": 21,
       "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.9
+      "top25_wins": 1,
+      "bonus_rate": 1.0
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35049804132",
       "name": "Eric McCarthy",
-      "current_rank": 100,
+      "current_rank": 127,
       "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -184,18 +184,18 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       },
-      "wins": 11,
-      "losses": 7,
+      "wins": 13,
+      "losses": 11,
       "top25_wins": 0,
-      "bonus_rate": 0.364
+      "bonus_rate": 0.8
     },
     "175": {
       "weight": 175,
       "wrestler_id": "35698529132",
       "name": "Jackson Osbourne",
-      "current_rank": 138,
+      "current_rank": 147,
       "grade": 7,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -219,8 +219,56 @@
       "weight": 190,
       "wrestler_id": "35049801132",
       "name": "Nolan Clark",
-      "current_rank": 91,
+      "current_rank": 93,
       "grade": 8,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "wins": 3,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35049806132",
+      "name": "Tristen French",
+      "current_rank": 62,
+      "grade": 12,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 4
+      },
+      "wins": 13,
+      "losses": 5,
+      "top25_wins": 1,
+      "bonus_rate": 0.8
+    },
+    "285": {
+      "weight": 285,
+      "wrestler_id": "35049808132",
+      "name": "Keegan French",
+      "current_rank": 83,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -232,36 +280,12 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 2
       },
-      "wins": 3,
-      "losses": 3,
+      "wins": 10,
+      "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.333
-    },
-    "285": {
-      "weight": 285,
-      "wrestler_id": "35049806132",
-      "name": "Tristen French",
-      "current_rank": 25,
-      "grade": 12,
-      "xtp": 2.04,
-      "xtp_p": 0.31,
-      "xtp_a": 0.75,
-      "xtp_b": 0.98,
-      "xtp_simple": 0.5,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 1,
-        "losses": 3
-      },
-      "wins": 11,
-      "losses": 3,
-      "top25_wins": 0,
-      "bonus_rate": 0.545
+      "bonus_rate": 1.0
     }
   },
   "remaining": [
@@ -270,10 +294,10 @@
       "wrestler_id": "35049814132",
       "name": "Felipe Guadarrama",
       "grade": 12,
-      "wins": 5,
+      "wins": 6,
       "losses": 6,
       "top25_wins": 0,
-      "bonus_rate": 0.4
+      "bonus_rate": 0.667
     },
     {
       "weight": 138,
@@ -290,10 +314,10 @@
       "wrestler_id": "35049798132",
       "name": "Landon Mongold",
       "grade": 9,
-      "wins": 14,
-      "losses": 14,
+      "wins": 16,
+      "losses": 19,
       "top25_wins": 0,
-      "bonus_rate": 0.538
+      "bonus_rate": 1.0
     },
     {
       "weight": 190,
@@ -301,7 +325,7 @@
       "name": "Eli Wimsatt",
       "grade": 9,
       "wins": 2,
-      "losses": 3,
+      "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -317,28 +341,18 @@
     },
     {
       "weight": 285,
-      "wrestler_id": "35049808132",
-      "name": "Keegan French",
-      "grade": 11,
-      "wins": 5,
-      "losses": 6,
-      "top25_wins": 0,
-      "bonus_rate": 0.6
-    },
-    {
-      "weight": 285,
       "wrestler_id": "37559013132",
       "name": "Tucker Guinn",
       "grade": 10,
-      "wins": 1,
+      "wins": 2,
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 1.0
     }
   ],
-  "team_xTP_simple": 3.0,
+  "team_xTP_simple": 0.5,
   "team_metrics": {
-    "projected_state_points": 3.0,
+    "projected_state_points": 0.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -348,30 +362,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 150,
-      "losses": 61
+      "wins": 155,
+      "losses": 67
     },
     "top33": {
-      "wins": 4,
-      "losses": 21
+      "wins": 3,
+      "losses": 23
     },
     "top10": {
       "wins": 0,
-      "losses": 2
+      "losses": 4
     },
     "bonus_rate": {
-      "value": 0.898,
-      "rank": 72,
+      "value": 1.188,
+      "rank": 36,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.778,
-      "rank": 63,
+      "value": 1.04,
+      "rank": 37,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.074,
-      "rank": 78,
+      "value": 0.099,
+      "rank": 82,
       "rank_scope": "league"
     }
   }
