@@ -761,7 +761,7 @@ function renderMatrix(matrixData, gender, weight) {
   wrestlers.forEach((rowWrestler, rowIndex) => {
     // Row header
     const rowHeader = document.createElement("div");
-    rowHeader.className = "matrix-row-header";
+    rowHeader.className = "matrix-row-header" + (rowWrestler.is_injured_reserve ? " ir" : "");
     rowHeader.setAttribute("data-wrestler-id", rowWrestler.id);
     rowHeader.setAttribute("data-row-index", rowIndex);
     rowHeader.setAttribute("data-row", rowIndex.toString());

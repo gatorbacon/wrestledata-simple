@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "weight": 235,
-  "generated_at": "2026-01-04T15:05:33.153228+00:00",
+  "generated_at": "2026-02-14T23:00:56.495709+00:00",
   "source": "rankings_235.json",
   "wrestlers": [
     {
@@ -13,14 +13,19 @@
       "region_place": "1",
       "is_highest_ranked": true,
       "record": {
-        "wins": 13,
+        "wins": 22,
         "losses": 0,
         "pct": 100.0
       },
-      "record_str": "13-0 (100%)",
-      "bonus_pct": 0.923,
+      "record_str": "22-0 (100%)",
+      "bonus_pct": 1.0,
       "is_starter": true,
-      "placement_note": "4"
+      "grade": "Sr.",
+      "placement_note": "4",
+      "previous_rank": 1,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 1
     },
     {
       "rank": 2,
@@ -31,35 +36,22 @@
       "region_place": "2",
       "is_highest_ranked": true,
       "record": {
-        "wins": 9,
-        "losses": 1,
-        "pct": 90.0
+        "wins": 19,
+        "losses": 4,
+        "pct": 82.6086956521739
       },
-      "record_str": "9-1 (90%)",
-      "bonus_pct": 0.778,
+      "record_str": "19-4 (83%)",
+      "bonus_pct": 0.882,
       "is_starter": true,
-      "placement_note": "2"
+      "grade": "Sr.",
+      "placement_note": "2",
+      "previous_rank": 2,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 2
     },
     {
       "rank": 3,
-      "wrestler_id": "35333375132",
-      "name": "Porter Tagarook",
-      "team": "Boyle County",
-      "region": "4",
-      "region_place": "1",
-      "is_highest_ranked": true,
-      "record": {
-        "wins": 3,
-        "losses": 0,
-        "pct": 100.0
-      },
-      "record_str": "3-0 (100%)",
-      "bonus_pct": 1.0,
-      "is_starter": true,
-      "placement_note": "5"
-    },
-    {
-      "rank": 4,
       "wrestler_id": "35383830132",
       "name": "Fanta Mariko",
       "team": "Cooper",
@@ -67,34 +59,89 @@
       "region_place": "3",
       "is_highest_ranked": true,
       "record": {
-        "wins": 6,
-        "losses": 1,
-        "pct": 85.71428571428571
+        "wins": 7,
+        "losses": 2,
+        "pct": 77.77777777777779
       },
-      "record_str": "6-1 (86%)",
-      "bonus_pct": 0.667,
-      "is_starter": true
+      "record_str": "7-2 (78%)",
+      "bonus_pct": 0.833,
+      "is_starter": true,
+      "grade": "Fr.",
+      "previous_rank": 3,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 3
+    },
+    {
+      "rank": 4,
+      "wrestler_id": "35346108132",
+      "name": "Damari Harris",
+      "team": "Caldwell County",
+      "region": "1",
+      "region_place": "1",
+      "is_highest_ranked": true,
+      "record": {
+        "wins": 23,
+        "losses": 2,
+        "pct": 92.0
+      },
+      "record_str": "23-2 (92%)",
+      "bonus_pct": 1.0,
+      "is_starter": true,
+      "grade": "7th",
+      "previous_rank": 4,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 4
     },
     {
       "rank": 5,
-      "wrestler_id": "35641262132",
-      "name": "Mackenzie McGeorge",
-      "team": "Great Crossing",
-      "region": "3",
-      "region_place": "4",
+      "wrestler_id": "35511208132",
+      "name": "Khloe Alfred",
+      "team": "John Hardin",
+      "region": "1",
+      "region_place": "2",
       "is_highest_ranked": true,
       "record": {
-        "wins": 8,
-        "losses": 4,
-        "pct": 66.66666666666666
+        "wins": 34,
+        "losses": 9,
+        "pct": 79.06976744186046
       },
-      "record_str": "8-4 (67%)",
-      "bonus_pct": 1.0,
+      "record_str": "34-9 (79%)",
+      "bonus_pct": 0.957,
       "is_starter": true,
-      "placement_note": "6"
+      "grade": "Fr.",
+      "placement_note": "BR",
+      "previous_rank": 5,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 5
     },
     {
       "rank": 6,
+      "wrestler_id": "35343291132",
+      "name": "Evelyn Estes",
+      "team": "Henderson County",
+      "region": "1",
+      "region_place": "3",
+      "is_highest_ranked": true,
+      "record": {
+        "wins": 10,
+        "losses": 2,
+        "pct": 83.33333333333334
+      },
+      "record_str": "10-2 (83%)",
+      "bonus_pct": 1.0,
+      "is_starter": true,
+      "grade": "So.",
+      "placement_note": "6",
+      "previous_rank": 6,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 6
+    },
+    {
+      "rank": 7,
       "wrestler_id": "35404900132",
       "name": "Camila Velasco",
       "team": "Lafayette",
@@ -102,173 +149,89 @@
       "region_place": "N/A",
       "is_highest_ranked": false,
       "record": {
-        "wins": 3,
+        "wins": 4,
         "losses": 3,
-        "pct": 50.0
+        "pct": 57.14285714285714
       },
-      "record_str": "3-3 (50%)",
+      "record_str": "4-3 (57%)",
       "bonus_pct": 1.0,
       "is_starter": false,
-      "placement_note": "7"
-    },
-    {
-      "rank": 7,
-      "wrestler_id": "35511208132",
-      "name": "Khloe Alfred",
-      "team": "John Hardin",
-      "region": "1",
-      "region_place": "1",
-      "is_highest_ranked": true,
-      "record": {
-        "wins": 14,
-        "losses": 4,
-        "pct": 77.77777777777779
-      },
-      "record_str": "14-4 (78%)",
-      "bonus_pct": 0.786,
-      "is_starter": true,
-      "placement_note": "BR"
+      "grade": "Sr.",
+      "placement_note": "7",
+      "previous_rank": 7,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 7
     },
     {
       "rank": 8,
-      "wrestler_id": "35398469132",
-      "name": "Alexandra Cortez",
-      "team": "Henry Clay",
-      "region": "3",
-      "region_place": "N/A",
-      "is_highest_ranked": true,
-      "record": {
-        "wins": 3,
-        "losses": 3,
-        "pct": 50.0
-      },
-      "record_str": "3-3 (50%)",
-      "bonus_pct": 1.0,
-      "is_starter": true,
-      "placement_note": "BR"
-    },
-    {
-      "rank": 9,
-      "wrestler_id": "35598132132",
-      "name": "Gracee Lingenfelter",
-      "team": "Trigg County",
-      "region": "1",
-      "region_place": "2",
-      "is_highest_ranked": true,
-      "record": {
-        "wins": 3,
-        "losses": 0,
-        "pct": 100.0
-      },
-      "record_str": "3-0 (100%)",
-      "bonus_pct": 1.0,
-      "is_starter": true
-    },
-    {
-      "rank": 10,
-      "wrestler_id": "35346108132",
-      "name": "Damari Harris",
-      "team": "Caldwell County",
-      "region": "1",
-      "region_place": "3",
-      "is_highest_ranked": true,
-      "record": {
-        "wins": 9,
-        "losses": 0,
-        "pct": 100.0
-      },
-      "record_str": "9-0 (100%)",
-      "bonus_pct": 0.778,
-      "is_starter": true
-    },
-    {
-      "rank": 11,
-      "wrestler_id": "35598131132",
-      "name": "Avagayle Lingenfelter",
-      "team": "Trigg County",
-      "region": "1",
-      "region_place": "N/A",
-      "is_highest_ranked": false,
-      "record": {
-        "wins": 8,
-        "losses": 2,
-        "pct": 80.0
-      },
-      "record_str": "8-2 (80%)",
-      "bonus_pct": 1.0,
-      "is_starter": false
-    },
-    {
-      "rank": 12,
-      "wrestler_id": "35598127132",
-      "name": "Areonna Quarles",
-      "team": "Trigg County",
-      "region": "1",
-      "region_place": "N/A",
-      "is_highest_ranked": false,
-      "record": {
-        "wins": 2,
-        "losses": 1,
-        "pct": 66.66666666666666
-      },
-      "record_str": "2-1 (67%)",
-      "bonus_pct": 0.5,
-      "is_starter": false
-    },
-    {
-      "rank": 13,
-      "wrestler_id": "35333620132",
-      "name": "Addysen Dotson",
-      "team": "Taylor County",
-      "region": "4",
-      "region_place": "2",
-      "is_highest_ranked": true,
-      "record": {
-        "wins": 6,
-        "losses": 2,
-        "pct": 75.0
-      },
-      "record_str": "6-2 (75%)",
-      "bonus_pct": 0.833,
-      "is_starter": true,
-      "placement_note": "Q"
-    },
-    {
-      "rank": 14,
-      "wrestler_id": "35598126132",
-      "name": "Brianna Rice",
-      "team": "Trigg County",
-      "region": "1",
-      "region_place": "N/A",
-      "is_highest_ranked": false,
-      "record": {
-        "wins": 2,
-        "losses": 4,
-        "pct": 33.33333333333333
-      },
-      "record_str": "2-4 (33%)",
-      "bonus_pct": 1.0,
-      "is_starter": false
-    },
-    {
-      "rank": 15,
-      "wrestler_id": "35465667132",
-      "name": "Lillian Harned",
-      "team": "McCracken County",
+      "wrestler_id": "35333667132",
+      "name": "Mariya Meh",
+      "team": "Daviess County",
       "region": "1",
       "region_place": "4",
       "is_highest_ranked": true,
       "record": {
-        "wins": 2,
-        "losses": 4,
-        "pct": 33.33333333333333
+        "wins": 10,
+        "losses": 3,
+        "pct": 76.92307692307693
       },
-      "record_str": "2-4 (33%)",
-      "bonus_pct": 0.5,
-      "is_starter": true
+      "record_str": "10-3 (77%)",
+      "bonus_pct": 1.0,
+      "is_starter": true,
+      "grade": "So.",
+      "previous_rank": 8,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 8
     },
     {
-      "rank": 16,
+      "rank": 9,
+      "wrestler_id": "35641262132",
+      "name": "Mackenzie McGeorge",
+      "team": "Great Crossing",
+      "region": "3",
+      "region_place": "4",
+      "is_highest_ranked": true,
+      "record": {
+        "wins": 20,
+        "losses": 8,
+        "pct": 71.42857142857143
+      },
+      "record_str": "20-8 (71%)",
+      "bonus_pct": 1.0,
+      "is_starter": true,
+      "grade": "Sr.",
+      "placement_note": "6",
+      "previous_rank": 9,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 9
+    },
+    {
+      "rank": 10,
+      "wrestler_id": "35767202132",
+      "name": "Evalee Brewer",
+      "team": "Bath County",
+      "region": "4",
+      "region_place": "1",
+      "is_highest_ranked": true,
+      "record": {
+        "wins": 9,
+        "losses": 6,
+        "pct": 60.0
+      },
+      "record_str": "9-6 (60%)",
+      "bonus_pct": 0.875,
+      "is_starter": true,
+      "grade": "Fr.",
+      "previous_rank": 10,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 10
+    },
+    {
+      "rank": 11,
       "wrestler_id": "35333551132",
       "name": "Mariya Reed",
       "team": "Woodford County",
@@ -276,88 +239,69 @@
       "region_place": "1",
       "is_highest_ranked": true,
       "record": {
-        "wins": 3,
-        "losses": 0,
-        "pct": 100.0
-      },
-      "record_str": "3-0 (100%)",
-      "bonus_pct": 0.667,
-      "is_starter": true
-    },
-    {
-      "rank": 17,
-      "wrestler_id": "35767202132",
-      "name": "Evalee Brewer",
-      "team": "Bath County",
-      "region": "4",
-      "region_place": "3",
-      "is_highest_ranked": true,
-      "record": {
-        "wins": 2,
-        "losses": 1,
-        "pct": 66.66666666666666
-      },
-      "record_str": "2-1 (67%)",
-      "bonus_pct": 0.5,
-      "is_starter": true
-    },
-    {
-      "rank": 18,
-      "wrestler_id": "35333415132",
-      "name": "Naveah McIntosh",
-      "team": "Perry County Central",
-      "region": "4",
-      "region_place": "4",
-      "is_highest_ranked": true,
-      "record": {
-        "wins": 13,
+        "wins": 11,
         "losses": 2,
-        "pct": 86.66666666666667
+        "pct": 84.61538461538461
       },
-      "record_str": "13-2 (87%)",
-      "bonus_pct": 0.615,
-      "is_starter": true
+      "record_str": "11-2 (85%)",
+      "bonus_pct": 0.818,
+      "is_starter": true,
+      "grade": "Jr.",
+      "previous_rank": 11,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 11
     },
     {
-      "rank": 19,
-      "wrestler_id": "35599269132",
-      "name": "Kaylee Parriman",
-      "team": "Mccreary Central",
-      "region": "4",
-      "region_place": "N/A",
-      "is_highest_ranked": true,
-      "record": {
-        "wins": 13,
-        "losses": 6,
-        "pct": 68.42105263157895
-      },
-      "record_str": "13-6 (68%)",
-      "bonus_pct": 0.846,
-      "is_starter": true
-    },
-    {
-      "rank": 20,
-      "wrestler_id": "35334950132",
-      "name": "D`Ava Adams",
-      "team": "North Hardin",
+      "rank": 12,
+      "wrestler_id": "35598132132",
+      "name": "Gracee Lingenfelter",
+      "team": "Trigg County",
       "region": "1",
       "region_place": "N/A",
       "is_highest_ranked": true,
       "record": {
         "wins": 5,
-        "losses": 5,
-        "pct": 50.0
+        "losses": 1,
+        "pct": 83.33333333333334
       },
-      "record_str": "5-5 (50%)",
-      "bonus_pct": 0.8,
-      "is_starter": true
+      "record_str": "5-1 (83%)",
+      "bonus_pct": 1.0,
+      "is_starter": true,
+      "grade": "8th",
+      "previous_rank": 12,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 12
     },
     {
-      "rank": 21,
-      "wrestler_id": "35520302132",
-      "name": "Sevira Taito",
-      "team": "Fort Campbell",
+      "rank": 13,
+      "wrestler_id": "35598131132",
+      "name": "Avagayle Lingenfelter",
+      "team": "Trigg County",
       "region": "1",
+      "region_place": "N/A",
+      "is_highest_ranked": false,
+      "record": {
+        "wins": 12,
+        "losses": 3,
+        "pct": 80.0
+      },
+      "record_str": "12-3 (80%)",
+      "bonus_pct": 1.0,
+      "is_starter": false,
+      "grade": "Fr.",
+      "previous_rank": 13,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 13
+    },
+    {
+      "rank": 14,
+      "wrestler_id": "35398469132",
+      "name": "Alexandra Cortez",
+      "team": "Henry Clay",
+      "region": "3",
       "region_place": "N/A",
       "is_highest_ranked": true,
       "record": {
@@ -366,28 +310,128 @@
         "pct": 38.46153846153847
       },
       "record_str": "5-8 (38%)",
-      "bonus_pct": 0.8,
-      "is_starter": true
+      "bonus_pct": 0.6,
+      "is_starter": true,
+      "grade": "Jr.",
+      "placement_note": "BR",
+      "previous_rank": 14,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 14
     },
     {
-      "rank": 22,
-      "wrestler_id": "35333680132",
-      "name": "Sunai Barney",
-      "team": "Western",
-      "region": "2",
+      "rank": 15,
+      "wrestler_id": "35850787132",
+      "name": "Destiny Walters",
+      "team": "Boyd County",
+      "region": "4",
       "region_place": "2",
       "is_highest_ranked": true,
       "record": {
-        "wins": 1,
-        "losses": 3,
-        "pct": 25.0
+        "wins": 15,
+        "losses": 0,
+        "pct": 100.0
       },
-      "record_str": "1-3 (25%)",
+      "record_str": "15-0 (100%)",
       "bonus_pct": 1.0,
-      "is_starter": true
+      "is_starter": true,
+      "grade": "Jr.",
+      "placement_note": "Q",
+      "previous_rank": 15,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 15
     },
     {
-      "rank": 23,
+      "rank": 16,
+      "wrestler_id": "35598127132",
+      "name": "Areonna Quarles",
+      "team": "Trigg County",
+      "region": "1",
+      "region_place": "N/A",
+      "is_highest_ranked": false,
+      "record": {
+        "wins": 4,
+        "losses": 2,
+        "pct": 66.66666666666666
+      },
+      "record_str": "4-2 (67%)",
+      "bonus_pct": 0.667,
+      "is_starter": false,
+      "grade": "So.",
+      "previous_rank": 16,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 16
+    },
+    {
+      "rank": 17,
+      "wrestler_id": "35333415132",
+      "name": "Naveah McIntosh",
+      "team": "Perry County Central",
+      "region": "4",
+      "region_place": "3",
+      "is_highest_ranked": true,
+      "record": {
+        "wins": 22,
+        "losses": 3,
+        "pct": 88.0
+      },
+      "record_str": "22-3 (88%)",
+      "bonus_pct": 1.0,
+      "is_starter": true,
+      "grade": "So.",
+      "previous_rank": 17,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 17
+    },
+    {
+      "rank": 18,
+      "wrestler_id": "35599269132",
+      "name": "Kaylee Parriman",
+      "team": "Mccreary Central",
+      "region": "4",
+      "region_place": "4",
+      "is_highest_ranked": true,
+      "record": {
+        "wins": 26,
+        "losses": 10,
+        "pct": 72.22222222222221
+      },
+      "record_str": "26-10 (72%)",
+      "bonus_pct": 0.913,
+      "is_starter": true,
+      "grade": "So.",
+      "previous_rank": 18,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 18
+    },
+    {
+      "rank": 19,
+      "wrestler_id": "35778037132",
+      "name": "Madison Hobbs",
+      "team": "Mason County",
+      "region": "4",
+      "region_place": "N/A",
+      "is_highest_ranked": true,
+      "record": {
+        "wins": 5,
+        "losses": 4,
+        "pct": 55.55555555555556
+      },
+      "record_str": "5-4 (56%)",
+      "bonus_pct": 0.8,
+      "is_starter": true,
+      "grade": "Fr.",
+      "previous_rank": 19,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 19
+    },
+    {
+      "rank": 20,
       "wrestler_id": "35369129132",
       "name": "Shirley Lewis",
       "team": "Bell County",
@@ -395,30 +439,106 @@
       "region_place": "N/A",
       "is_highest_ranked": true,
       "record": {
-        "wins": 11,
-        "losses": 4,
-        "pct": 73.33333333333333
+        "wins": 21,
+        "losses": 9,
+        "pct": 70.0
       },
-      "record_str": "11-4 (73%)",
-      "bonus_pct": 0.545,
-      "is_starter": true
+      "record_str": "21-9 (70%)",
+      "bonus_pct": 0.818,
+      "is_starter": true,
+      "grade": "So.",
+      "previous_rank": 20,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 20
     },
     {
-      "rank": 24,
+      "rank": 21,
       "wrestler_id": "35739868132",
       "name": "Autumn Jackson",
       "team": "Mason County",
       "region": "4",
       "region_place": "N/A",
+      "is_highest_ranked": false,
+      "record": {
+        "wins": 7,
+        "losses": 5,
+        "pct": 58.333333333333336
+      },
+      "record_str": "7-5 (58%)",
+      "bonus_pct": 1.0,
+      "is_starter": false,
+      "grade": "So.",
+      "previous_rank": 21,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 21
+    },
+    {
+      "rank": 22,
+      "wrestler_id": "35333541132",
+      "name": "Serenity Allen",
+      "team": "Madison Central",
+      "region": "4",
+      "region_place": "N/A",
       "is_highest_ranked": true,
       "record": {
-        "wins": 3,
-        "losses": 2,
-        "pct": 60.0
+        "wins": 4,
+        "losses": 7,
+        "pct": 36.36363636363637
       },
-      "record_str": "3-2 (60%)",
+      "record_str": "4-7 (36%)",
       "bonus_pct": 1.0,
-      "is_starter": true
+      "is_starter": true,
+      "grade": "Jr.",
+      "previous_rank": 22,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 22
+    },
+    {
+      "rank": 23,
+      "wrestler_id": "35334950132",
+      "name": "D`Ava Adams",
+      "team": "North Hardin",
+      "region": "1",
+      "region_place": "N/A",
+      "is_highest_ranked": true,
+      "record": {
+        "wins": 16,
+        "losses": 12,
+        "pct": 57.14285714285714
+      },
+      "record_str": "16-12 (57%)",
+      "bonus_pct": 1.0,
+      "is_starter": true,
+      "grade": "7th",
+      "previous_rank": 23,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 23
+    },
+    {
+      "rank": 24,
+      "wrestler_id": "35333424132",
+      "name": "Amoni Hutchinson",
+      "team": "Ashland Blazer",
+      "region": "4",
+      "region_place": "N/A",
+      "is_highest_ranked": true,
+      "record": {
+        "wins": 5,
+        "losses": 8,
+        "pct": 38.46153846153847
+      },
+      "record_str": "5-8 (38%)",
+      "bonus_pct": 1.0,
+      "is_starter": true,
+      "grade": "8th",
+      "previous_rank": 24,
+      "movement": 0,
+      "is_new": false,
+      "hybrid_rank": 24
     }
   ]
 }

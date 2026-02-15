@@ -446,7 +446,7 @@ function renderRankings(data, gender, weight, isBaseline, season) {
     const tbody = document.querySelector("#rankings-table tbody");
     tbody.innerHTML = `
       <tr>
-        <td colspan="6" style="text-align: center; padding: 2em; color: var(--muted);">
+        <td colspan="8" style="text-align: center; padding: 2em; color: var(--muted);">
           HS data not found for ${gender} ${weight} lbs.<br>
           <small style="color: var(--muted-2);">Check console for fetch details.</small>
         </td>
@@ -564,6 +564,12 @@ function renderRankings(data, gender, weight, isBaseline, season) {
       teamTd.textContent = "—";
     }
     tr.appendChild(teamTd);
+    
+    // Grade (Sr., Jr., So., Fr., 8th, 7th) - narrow column between Team and Region
+    const gradeTd = document.createElement("td");
+    gradeTd.className = "grade-col";
+    gradeTd.textContent = wrestler.grade || "—";
+    tr.appendChild(gradeTd);
     
     // Region (format: "7 (1)" or "7 (-)" or "-")
     const regionTd = document.createElement("td");

@@ -500,26 +500,39 @@ def classify_matches(
         
         rank_map, weight_map = rankings_cache[drop_id]
         
-        # Look up ranks from full rankings (everyone should be ranked if they're KY wrestlers)
-        winner_rank = rank_map.get(match["winner_id"])
-        loser_rank = rank_map.get(match["loser_id"])
-        
-        # Exclude matches where either wrestler is not found in rankings (out-of-state wrestler)
-        # If either wrestler is not in rankings, they're out-of-state and we can't evaluate the match
-        if winner_rank is None or loser_rank is None:
+        # Skip out-of-state wrestlers (we don't have their home-state rank)
+        winner_id = match.get("winner_id", "") or ""
+        loser_id = match.get("loser_id", "") or ""
+        if str(winner_id).startswith("OUTSTATE_") or str(loser_id).startswith("OUTSTATE_"):
             continue
         
+        # Look up ranks (top 40 per weight for boys, top 24 for girls in snapshot)
+        winner_rank_raw = rank_map.get(winner_id)
+        loser_rank_raw = rank_map.get(loser_id)
+        
+        # Must have loser in rankings to evaluate upset (loser must be Top 10)
+        if loser_rank_raw is None:
+            continue
+        
+        # Unranked default: KY wrestlers outside top 40/24 (boys=41, girls=25)
+        # Out-of-state already skipped above; only KY wrestlers reach here
+        unranked_default = 41 if gender == "boys" else 25
+        winner_rank_calc = winner_rank_raw if winner_rank_raw is not None else unranked_default
+        loser_rank_calc = loser_rank_raw
+        winner_rank_display = "UNR" if winner_rank_raw is None else winner_rank_calc
+        loser_rank_display = loser_rank_calc
+        
         # Get ranking weights (weight class at which each wrestler is ranked)
-        winner_rank_weight = weight_map.get(match["winner_id"])
-        loser_rank_weight = weight_map.get(match["loser_id"])
+        winner_rank_weight = weight_map.get(winner_id)
+        loser_rank_weight = weight_map.get(loser_id)
         bout_weight = match.get("weight_class")
         
-        # Top Matchup: Both ranked Top 10
-        if winner_rank <= 10 and loser_rank <= 10:
+        # Top Matchup: Both ranked Top 10 (both must be in rankings)
+        if winner_rank_raw is not None and winner_rank_raw <= 10 and loser_rank_calc <= 10:
             match_entry = {
                 **match,
-                "winner_rank": winner_rank,
-                "loser_rank": loser_rank,
+                "winner_rank": winner_rank_calc,
+                "loser_rank": loser_rank_calc,
                 "winner_rank_weight": winner_rank_weight,
                 "loser_rank_weight": loser_rank_weight,
                 "ranking_basis_date": drop_id
@@ -527,12 +540,12 @@ def classify_matches(
             top_matchups.append(match_entry)
             # Note: Don't continue here - match can also be an upset
         
-        # Upset: Loser ranked Top 10, winner ranked worse than loser
+        # Upset: Loser ranked Top 10, winner ranked worse than loser (or unranked)
         # Weight class differences are ignored - rank comparison is global
-        if loser_rank <= 10 and winner_rank > loser_rank:
-            # Calculate upset scores
-            prestige_score = (11 - loser_rank) * 10
-            differential_score = (winner_rank - loser_rank) * 2
+        if loser_rank_calc <= 10 and winner_rank_calc > loser_rank_calc:
+            # Calculate upset scores (use calc values: unranked winner = 41/25)
+            prestige_score = (11 - loser_rank_calc) * 10
+            differential_score = (winner_rank_calc - loser_rank_calc) * 2
             upset_score = prestige_score + differential_score
             
             # Determine result_type and score_or_time
@@ -553,8 +566,8 @@ def classify_matches(
             match_entry = {
                 **match,
                 "match_date": match.get("date", ""),
-                "winner_rank": winner_rank,
-                "loser_rank": loser_rank,
+                "winner_rank": winner_rank_display,
+                "loser_rank": loser_rank_display,
                 "winner_rank_weight": winner_rank_weight,
                 "loser_rank_weight": loser_rank_weight,
                 "ranking_basis_date": drop_id,

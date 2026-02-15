@@ -130,6 +130,74 @@ def load_wrestler_profile(wrestler_id: str, season: int, gender: str) -> Optiona
         return None
 
 
+def format_grade_display(grade) -> str:
+    """
+    Format grade for display: Sr., Jr., So., Fr., 8th, 7th.
+    """
+    if grade is None:
+        return ""
+    if isinstance(grade, str):
+        return grade.strip() if grade.strip() else ""
+    if isinstance(grade, int):
+        mapping = {7: "7th", 8: "8th", 9: "Fr.", 10: "So.", 11: "Jr.", 12: "Sr."}
+        return mapping.get(grade, "")
+    return ""
+
+
+def load_grade_lookup(season: int, gender: str) -> Dict[str, str]:
+    """
+    Load grade lookup from team profiles (starters + remaining), with fallback to
+    weight_class JSON files in mt/rankings_data (which have grade for girls when
+    team profiles do not).
+    """
+    grade_lookup: Dict[str, str] = {}
+    
+    # Primary: team profiles (works for boys; girls often have grade: null)
+    teams_dir = Path(f"frontend/hs-ky-ui/public/data/teams/{gender}") / str(season)
+    if teams_dir.exists():
+        for team_file in teams_dir.glob("*.json"):
+            try:
+                with team_file.open("r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for slot in data.get("starters", {}).values():
+                    wid = slot.get("wrestler_id")
+                    grade = slot.get("grade")
+                    if wid:
+                        disp = format_grade_display(grade)
+                        if disp and wid not in grade_lookup:
+                            grade_lookup[wid] = disp
+                for entry in data.get("remaining", []):
+                    wid = entry.get("wrestler_id")
+                    grade = entry.get("grade")
+                    if wid:
+                        disp = format_grade_display(grade)
+                        if disp and wid not in grade_lookup:
+                            grade_lookup[wid] = disp
+            except Exception:
+                continue
+    
+    # Fallback: weight_class files in mt/rankings_data (has grade for girls)
+    wc_dir = Path(f"mt/rankings_data/hs_ky_{gender}") / str(season)
+    if wc_dir.exists():
+        for wc_file in wc_dir.glob("weight_class_*.json"):
+            try:
+                with wc_file.open("r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for wid, wdata in data.get("wrestlers", {}).items():
+                    if wid and wid not in grade_lookup:
+                        grade = wdata.get("grade")
+                        if grade and isinstance(grade, str) and grade.strip():
+                            grade_lookup[wid] = grade.strip()
+                        else:
+                            disp = format_grade_display(grade)
+                            if disp:
+                                grade_lookup[wid] = disp
+            except Exception:
+                continue
+    
+    return grade_lookup
+
+
 def load_placement_notes(season: int, gender: str) -> Dict[str, str]:
     """
     Load placement notes and return wrestler_id -> note mapping.
@@ -276,7 +344,8 @@ def enrich_rankings_with_region_data(
     season: int,
     top_n: int,
     placement_notes: Optional[Dict[str, str]] = None,
-    previous_rankings: Optional[Dict[str, int]] = None
+    previous_rankings: Optional[Dict[str, int]] = None,
+    grade_lookup: Optional[Dict[str, str]] = None
 ) -> Tuple[List[Dict], Dict[str, str], Dict[str, str]]:
     """
     Enrich rankings with region data, region places, and is_highest_ranked flags.
@@ -387,6 +456,9 @@ def enrich_rankings_with_region_data(
         if "is_starter" in entry:
             enriched_entry["is_starter"] = entry["is_starter"]
         
+        # Add grade (Sr., Jr., So., Fr., 8th, 7th)
+        enriched_entry["grade"] = (grade_lookup or {}).get(wid, "") or ""
+        
         # Add placement note if available
         if placement_notes:
             placement_note = placement_notes.get(wid)
@@ -468,6 +540,9 @@ def create_baseline_archive(
     else:
         print("No placement notes found (this is okay)")
     
+    # Load grade lookup from team profiles
+    grade_lookup = load_grade_lookup(season, gender)
+    
     # Determine if this is a baseline drop and find previous drop
     index_dir = archive_base / gender / str(season)
     index_file = index_dir / "index.json"
@@ -541,7 +616,8 @@ def create_baseline_archive(
             # Enrich with region data (and movement if previous rankings available)
             enriched_rankings, region_places, team_best_wrestler = enrich_rankings_with_region_data(
                 rankings, region_mapping, gender, season, top_n, placement_notes,
-                previous_rankings if previous_rankings else None
+                previous_rankings if previous_rankings else None,
+                grade_lookup=grade_lookup
             )
             
             # Create output structure

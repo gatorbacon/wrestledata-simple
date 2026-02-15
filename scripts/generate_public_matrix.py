@@ -444,10 +444,21 @@ def generate_public_matrix(
     # Load data
     relationships_data = load_relationships(season, weight, relationships_dir, league=league, state=state, gender=gender)
     rankings_data = load_rankings(season, weight, rankings_dir, starters_only, league=league, state=state, gender=gender)
+
+    # Resolve injured reserve (IR) status for HS
+    ir_active_ids = set()
+    if league == 'hs' and gender:
+        from rankings.ir_utils import resolve_active_ir
+        wrestlers_by_id = relationships_data.get('wrestlers', {})
+        ir_active_ids = resolve_active_ir(season, gender, wrestlers_by_id)
     
     # Build wrestler list (ordered by rank)
     # If starters_only, exclude all non-starters
     wrestler_list = build_wrestler_list(rankings_data, relationships_data, starters_only)
+
+    # Add injured reserve flag for HS
+    for w in wrestler_list:
+        w['is_injured_reserve'] = w['id'] in ir_active_ids
     
     # Build matrix
     matrix = build_matrix(relationships_data, wrestler_list)

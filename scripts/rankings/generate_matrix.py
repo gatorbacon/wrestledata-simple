@@ -11,7 +11,7 @@ import re
 import shutil
 from datetime import datetime, date, timedelta
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Set
 
 
 def abbreviate_name(full_name: str) -> str:
@@ -216,7 +216,8 @@ def format_result_for_tooltip(result: str) -> str:
 def build_matrix_data(
     relationships_data: Dict, 
     placement_notes: Optional[Dict[str, str]] = None,
-    cutoff_date: Optional[date] = None
+    cutoff_date: Optional[date] = None,
+    ir_active_ids: Optional[Set[str]] = None,
 ) -> Dict:
     """
     Build matrix data structure from relationships.
@@ -333,6 +334,11 @@ def build_matrix_data(
                 winfo["is_inactive"] = False
         else:
             winfo["is_inactive"] = False
+
+    # Mark wrestlers on injured reserve (IR) - dark red highlight
+    ir_ids = ir_active_ids or set()
+    for wid, winfo in wrestler_list:
+        winfo["is_injured_reserve"] = str(wid) in ir_ids
     
     # Build matrix
     matrix = {}
@@ -841,6 +847,13 @@ def generate_html_matrix(
             padding: 2px 4px;
             border-radius: 3px;
         }}
+        /* Injured reserve (IR) - dark red until they wrestle again */
+        .ir-row .wrestler-name {{
+            background-color: #8B0000;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }}
         /* Non-starters: clearly muted compared to starters */
         .non-starter-row .wrestler-name {{
             color: #888888;
@@ -998,6 +1011,8 @@ def generate_html_matrix(
         # Inactive highlighting (30+ days) - only if not already 0-0 (blue takes priority)
         elif wrestler.get('is_inactive', False):
             row_classes.append("inactive-row")
+        if wrestler.get('is_injured_reserve', False):
+            row_classes.append("ir-row")
         if is_out_of_band:
             row_classes.append("rank-out-of-band-row")
         if not wrestler.get('is_starter', True):
@@ -1821,9 +1836,23 @@ def generate_matrix_for_weight_class(
                                 print(f"Warning: Failed to parse published_at '{published_at_str}': {e}")
             except Exception as e:
                 print(f"Warning: Failed to load archive index: {e}")
+
+    # Resolve injured reserve (IR) status - active until wrestler has match after IR date
+    ir_active_ids = set()
+    if league == 'hs' and gender:
+        from ir_utils import resolve_active_ir
+        wrestlers_by_id = relationships_data.get('wrestlers', {})
+        ir_active_ids = resolve_active_ir(season, gender, wrestlers_by_id)
+        if ir_active_ids:
+            print(f"IR active for this weight: {len(ir_active_ids)} wrestler(s)")
     
     # Build matrix data
-    matrix_data = build_matrix_data(relationships_data, placement_notes=placement_notes_map, cutoff_date=cutoff_date)
+    matrix_data = build_matrix_data(
+        relationships_data,
+        placement_notes=placement_notes_map,
+        cutoff_date=cutoff_date,
+        ir_active_ids=ir_active_ids,
+    )
     
     # Generate HTML, passing starter overrides and ranking bands so the JS "Save Rankings"
     # button can honor them when computing is_starter flags.

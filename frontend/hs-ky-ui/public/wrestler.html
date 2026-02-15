@@ -5,6 +5,11 @@
   <title>Wrestler Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css" />
+  <!-- Google AdSense -->
+  <script async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-REPLACE_WITH_YOUR_ID"
+      crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
   <script src="/js/analytics.js"></script>
@@ -83,6 +88,19 @@
         </div>
       </div>
     </section>
+
+    <!-- Ad placement: after Season Stats (inserted by JS), before Match History -->
+    <div class="ad-container" id="wrestler-ad-container">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-REPLACE_WITH_YOUR_ID"
+           data-ad-slot="REPLACE_WITH_AD_SLOT"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 
     <!-- MATCH HISTORY -->
     <section class="section section--match-history">

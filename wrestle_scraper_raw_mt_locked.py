@@ -789,6 +789,50 @@ class WrestlingScraper:
             print("You can install it using: brew install --cask google-chrome")
             raise
 
+    def navigate_to_events_classic(self) -> bool:
+        """Navigate to Events Classic (tournament/events list) via Browse menu.
+        Use this to get a session ID that has access to TournamentHub.
+        Returns True on success, False on failure.
+        """
+        try:
+            print("Navigating to homepage...")
+            self.driver.get(BASE_URL)
+            time.sleep(3)
+            print(f"Current URL: {self.driver.current_url}")
+            print(f"Page title: {self.driver.title}")
+
+            self._dismiss_cookie_modal_if_present(timeout=7.0)
+
+            print("Attempting to click Browse...")
+            browse_btn = self.wait.until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, "nav.main-menu li a[href*='subMenu-browse']"))
+            )
+            browse_btn.click()
+            self._random_delay()
+            time.sleep(2)
+
+            print("Clicking Events Classic...")
+            self._dismiss_cookie_modal_if_present(timeout=3.0)
+            events_btn = self.wait.until(
+                EC.element_to_be_clickable((By.LINK_TEXT, "EVENTS CLASSIC"))
+            )
+            events_btn.click()
+            self._random_delay()
+            time.sleep(3)
+
+            print("Events Classic page loaded successfully")
+            return True
+
+        except Exception as e:
+            error_msg = f"Error navigating to Events Classic: {e}"
+            print(f"Navigation error: {error_msg}")
+            try:
+                if self.driver:
+                    print(f"Current URL when error occurred: {self.driver.current_url}")
+            except Exception:
+                pass
+            return False
+
     def get_season_text(self):
         """Convert season year to possible season text formats."""
         start_year = self.season_year - 1

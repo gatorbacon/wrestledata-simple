@@ -815,9 +815,13 @@ function safe(value, formatter) {
       seasonStatsSection.id = "season-stats-section";
       seasonStatsSection.className = "section";
       
-      // Insert after header, before match history
+      // Insert after xtp/mv-context, before ad container (ad is between Season Stats and Match History)
+      const adContainer = document.getElementById("wrestler-ad-container");
       const matchHistorySection = document.querySelector(".section--match-history");
-      matchHistorySection.parentNode.insertBefore(seasonStatsSection, matchHistorySection);
+      const insertBefore = adContainer || matchHistorySection;
+      if (insertBefore && insertBefore.parentNode) {
+        insertBefore.parentNode.insertBefore(seasonStatsSection, insertBefore);
+      }
     }
     
     seasonStatsSection.innerHTML = "";

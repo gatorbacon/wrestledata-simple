@@ -92,7 +92,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Links */
+/* ========================================
+   Ad Container (AdSense)
+   ======================================== */
+.ad-container {
+  margin: 24px auto;
+  padding: 8px 0;
+  text-align: center;
+  max-width: 100%;
+  /* No min-height: container collapses when no ad loads (pre-verification).
+     After ads are live, you can add min-height: 120px to reduce layout shift. */
+}
+
+.ad-container ins {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .ad-container {
+    margin: 32px auto;
+  }
+}
+
+/* ========================================
+   Links
+   ======================================== */
 /* Tooltips explain. Links navigate. Nothing should look interactive unless it actually is. */
 a {
   color: var(--link);
@@ -1169,6 +1193,21 @@ a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* Injured reserve (IR) - dark red until wrestler returns */
+.matrix-row-header.ir {
+  background: #8B0000;
+}
+.matrix-row-header.ir .name,
+.matrix-row-header.ir .rank {
+  color: white;
+}
+.matrix-row-header.ir:hover {
+  background: #a00;
+}
+.matrix-row-header.ir .name::before {
+  color: white;
 }
 
 /* Mobile: Show abbreviated name (first initial + last name) */
@@ -2277,6 +2316,15 @@ tbody tr:last-child td {
 
 #rankings-table td.name a {
   font-weight: normal;
+}
+
+/* Grade column - narrow, between Team and Region */
+#rankings-table th.grade-col,
+#rankings-table td.grade-col {
+  width: 3.5em;
+  min-width: 3.5em;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /* Primary metric columns (xTP, MV) */
