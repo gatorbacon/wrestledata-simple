@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.925702Z",
+  "generated_at_utc": "2026-02-18T22:09:30.101480Z",
   "starters": {
     "138": {
       "weight": 138,
@@ -71,8 +71,8 @@
       "top25_wins": 1,
       "bonus_rate": 0.867
     },
-    "157": {
-      "weight": 157,
+    "165": {
+      "weight": 165,
       "wrestler_id": "36571495132",
       "name": "Gabriel Farthing",
       "current_rank": 54,
@@ -94,30 +94,6 @@
       "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 1.0
-    },
-    "165": {
-      "weight": 165,
-      "wrestler_id": "36642496132",
-      "name": "Max Hunt",
-      "current_rank": 95,
-      "grade": 10,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "wins": 2,
-      "losses": 2,
-      "top25_wins": 0,
-      "bonus_rate": 0.5
     },
     "175": {
       "weight": 175,
@@ -222,6 +198,16 @@
       "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "36642496132",
+      "name": "Max Hunt",
+      "grade": 10,
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
     }
   ],
   "team_xTP_simple": 0.0,
@@ -236,7 +222,7 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 29,
+      "wins": 45,
       "losses": 25
     },
     "top33": {
@@ -248,18 +234,18 @@
       "losses": 0
     },
     "bonus_rate": {
-      "value": 1.722,
-      "rank": 4,
+      "value": 0.882,
+      "rank": 86,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 1.389,
-      "rank": 9,
+      "value": 0.706,
+      "rank": 102,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.278,
-      "rank": 3,
+      "value": 0.147,
+      "rank": 21,
       "rank_scope": "league"
     }
   }

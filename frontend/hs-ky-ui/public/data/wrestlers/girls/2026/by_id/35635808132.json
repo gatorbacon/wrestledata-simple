@@ -4,14 +4,14 @@
   "team": "Greenup County",
   "team_slug": "greenup_county",
   "team_rank": null,
-  "weight_class": 126,
+  "weight_class": 132,
   "year": 2026,
-  "current_rank": 93,
+  "current_rank": 74,
   "record": {
-    "overall": "0-4",
-    "vs_ranked": "0-4",
-    "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "overall": "0-6",
+    "vs_ranked": "0-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,56 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "37325574132",
-      "opponent_rank": 72,
+      "opponent_rank": 68,
       "opponent_name": "Karissa Mesalam",
       "method": "Fall 2:11"
     }
   },
   "match_list": [
     {
+      "date": "2026-02-14",
+      "opponent_id": "35333419132",
+      "opponent_name": "Vivian Moyer",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 27,
+      "opponent_weight": 132,
+      "opponent_rank": 10,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:38",
+      "event": "KHSAA Girls Region 4"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35427604132",
+      "opponent_name": "Ariel Dietlin",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 132,
+      "opponent_rank": 46,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "KHSAA Girls Region 4"
+    },
+    {
       "date": "2026-01-22",
       "opponent_id": "35850788132",
       "opponent_name": "Lexie Dingess",
       "opponent_team": "Boyd County",
       "opponent_team_rank": 32,
-      "opponent_weight": 132,
-      "opponent_rank": 14,
+      "opponent_weight": 138,
+      "opponent_rank": 13,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -62,7 +92,7 @@
       "opponent_team": "Greenup County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 71,
+      "opponent_rank": 67,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -78,7 +108,7 @@
       "opponent_team": "Mccreary Central",
       "opponent_team_rank": 46,
       "opponent_weight": 126,
-      "opponent_rank": 72,
+      "opponent_rank": 68,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -94,7 +124,7 @@
       "opponent_team": "Mason County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 18,
+      "opponent_rank": 17,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -104,10 +134,5 @@
       "mv_impact": -3.47
     }
   ],
-  "profile_generated_at": "2026-02-11",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.5402298850574712
-  }
+  "profile_generated_at": "2026-02-18"
 }

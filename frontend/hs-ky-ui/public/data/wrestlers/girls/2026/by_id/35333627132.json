@@ -3,14 +3,14 @@
   "name": "Sophia Wise",
   "team": "Taylor County",
   "team_slug": "taylor_county",
-  "team_rank": 57,
+  "team_rank": 58,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 78,
+  "current_rank": 72,
   "record": {
-    "overall": "1-11",
-    "vs_ranked": "0-11",
-    "vs_top10": "0-3",
+    "overall": "2-13",
+    "vs_ranked": "1-13",
+    "vs_top10": "0-4",
     "vs_top25": "0-6"
   },
   "metrics": {
@@ -20,26 +20,76 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 11,
+    "ranked_wins": 1,
+    "ranked_losses": 13,
     "top10_wins": 0,
-    "top10_losses": 3,
-    "win_over_highest_rank": null,
+    "top10_losses": 4,
+    "win_over_highest_rank": {
+      "opponent_id": "35495585132",
+      "opponent_rank": 75,
+      "opponent_name": "Lily Calhoun",
+      "method": "Fall 1:54"
+    },
     "worst_loss": {
       "opponent_id": "35577137132",
-      "opponent_rank": 77,
+      "opponent_rank": 73,
       "opponent_name": "Jaidyn Darnell",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35850790132",
+      "opponent_name": "Hailey Diamond",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 32,
+      "opponent_weight": 126,
+      "opponent_rank": 31,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:43",
+      "event": "KHSAA Girls Region 4"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35333414132",
+      "opponent_name": "Katie Smith",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 50,
+      "opponent_weight": 126,
+      "opponent_rank": 6,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:50",
+      "event": "KHSAA Girls Region 4"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35495585132",
+      "opponent_name": "Lily Calhoun",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 56,
+      "opponent_weight": 126,
+      "opponent_rank": 75,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:54",
+      "event": "KHSAA Girls Region 4"
+    },
     {
       "date": "2026-02-07",
       "opponent_id": "35333550132",
@@ -60,7 +110,7 @@
       "opponent_id": "35427458132",
       "opponent_name": "Adalee Gilreath",
       "opponent_team": "Whitley County",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 12,
       "opponent_weight": 126,
       "opponent_rank": 58,
       "weight_class": "126",
@@ -77,7 +127,7 @@
       "opponent_team": "Madison Central",
       "opponent_team_rank": 23,
       "opponent_weight": 126,
-      "opponent_rank": 30,
+      "opponent_rank": 27,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -92,7 +142,7 @@
       "opponent_team": "Green County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 77,
+      "opponent_rank": 73,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -150,9 +200,9 @@
       "opponent_id": "35333398132",
       "opponent_name": "Danielle Hernandez",
       "opponent_team": "Moore",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 49,
       "opponent_weight": 132,
-      "opponent_rank": 24,
+      "opponent_rank": 28,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -195,9 +245,9 @@
       "opponent_id": "35333570132",
       "opponent_name": "Maria Meza Meza",
       "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 38,
       "opponent_weight": 132,
-      "opponent_rank": 68,
+      "opponent_rank": 71,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -221,10 +271,5 @@
       "event": "2025 Ohio County Girls` Invitational"
     }
   ],
-  "profile_generated_at": "2026-02-11",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.5402298850574712
-  }
+  "profile_generated_at": "2026-02-18"
 }

@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.942745Z",
+  "generated_at_utc": "2026-02-18T22:09:30.118646Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -53,10 +53,10 @@
       "name": "Trevor Wilson",
       "current_rank": 32,
       "grade": 10,
-      "xtp": 1.02,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.67,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -173,11 +173,11 @@
       "name": "Jack Ferguson",
       "current_rank": 23,
       "grade": 12,
-      "xtp": 2.62,
-      "xtp_p": 0.31,
-      "xtp_a": 0.75,
-      "xtp_b": 1.56,
-      "xtp_simple": 0.5,
+      "xtp": 2.1,
+      "xtp_p": 0.22,
+      "xtp_a": 0.64,
+      "xtp_b": 1.24,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 1,
         "losses": 4
@@ -430,9 +430,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 1.0,
+  "team_xTP_simple": 0.5,
   "team_metrics": {
-    "projected_state_points": 1.0,
+    "projected_state_points": 0.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -442,8 +442,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 112,
-      "losses": 73
+      "wins": 155,
+      "losses": 118
     },
     "top33": {
       "wins": 9,
@@ -454,18 +454,18 @@
       "losses": 14
     },
     "bonus_rate": {
-      "value": 1.359,
-      "rank": 19,
+      "value": 0.876,
+      "rank": 91,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 1.179,
-      "rank": 19,
+      "value": 0.76,
+      "rank": 77,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.115,
-      "rank": 65,
+      "value": 0.074,
+      "rank": 86,
       "rank_scope": "league"
     }
   }

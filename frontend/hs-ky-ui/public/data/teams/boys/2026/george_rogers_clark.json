@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.280594Z",
+  "generated_at_utc": "2026-02-18T22:09:29.473021Z",
   "starters": {
     "113": {
       "weight": 113,
@@ -53,11 +53,11 @@
       "name": "Gavin Clem",
       "current_rank": 26,
       "grade": 9,
-      "xtp": 1.68,
-      "xtp_p": 0.22,
-      "xtp_a": 0.59,
-      "xtp_b": 0.87,
-      "xtp_simple": 0.0,
+      "xtp": 1.96,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.02,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -173,10 +173,10 @@
       "name": "Brock Heidle",
       "current_rank": 36,
       "grade": 12,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
+      "xtp": 1.12,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.77,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -282,9 +282,9 @@
       "bonus_rate": 1.0
     }
   ],
-  "team_xTP_simple": 0.0,
+  "team_xTP_simple": 0.5,
   "team_metrics": {
-    "projected_state_points": 0.0,
+    "projected_state_points": 0.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -294,8 +294,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 76,
-      "losses": 72
+      "wins": 93,
+      "losses": 89
     },
     "top33": {
       "wins": 4,
@@ -306,18 +306,18 @@
       "losses": 8
     },
     "bonus_rate": {
-      "value": 1.121,
-      "rank": 49,
+      "value": 0.867,
+      "rank": 101,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 1.052,
-      "rank": 34,
+      "value": 0.813,
+      "rank": 45,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.052,
-      "rank": 114,
+      "value": 0.04,
+      "rank": 120,
       "rank_scope": "league"
     }
   }

@@ -21,32 +21,8 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.917405Z",
+  "generated_at_utc": "2026-02-18T22:09:30.093497Z",
   "starters": {
-    "120": {
-      "weight": 120,
-      "wrestler_id": "35615678132",
-      "name": "Caiden Hamilton",
-      "current_rank": 198,
-      "grade": 9,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "wins": 0,
-      "losses": 7,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
     "126": {
       "weight": 126,
       "wrestler_id": "35893769132",
@@ -197,10 +173,10 @@
       "name": "Skiler Ray",
       "current_rank": 22,
       "grade": 11,
-      "xtp": 3.02,
+      "xtp": 2.85,
       "xtp_p": 0.45,
       "xtp_a": 0.91,
-      "xtp_b": 1.66,
+      "xtp_b": 1.49,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -217,6 +193,16 @@
     }
   },
   "remaining": [
+    {
+      "weight": 120,
+      "wrestler_id": "35615678132",
+      "name": "Caiden Hamilton",
+      "grade": 9,
+      "wins": 0,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
     {
       "weight": 175,
       "wrestler_id": "35615773132",
@@ -240,8 +226,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 21,
-      "losses": 48
+      "wins": 23,
+      "losses": 45
     },
     "top33": {
       "wins": 2,
@@ -252,18 +238,18 @@
       "losses": 0
     },
     "bonus_rate": {
-      "value": 1.059,
-      "rank": 70,
+      "value": 0.947,
+      "rank": 29,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 1.059,
-      "rank": 31,
+      "value": 0.947,
+      "rank": 7,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 137,
+      "rank": 136,
       "rank_scope": "league"
     }
   }

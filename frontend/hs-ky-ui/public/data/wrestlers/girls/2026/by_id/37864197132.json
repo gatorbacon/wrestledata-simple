@@ -3,12 +3,12 @@
   "name": "Amia Lane",
   "team": "Southern",
   "team_slug": "southern",
-  "team_rank": 54,
-  "weight_class": 126,
+  "team_rank": 55,
+  "weight_class": 120,
   "year": 2026,
-  "current_rank": 97,
+  "current_rank": 80,
   "record": {
-    "overall": "0-0",
+    "overall": "0-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -34,11 +34,22 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-11",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.5402298850574712
-  }
+  "match_list": [
+    {
+      "date": "2026-02-14",
+      "opponent_id": "OUTSTATE_dd9e219be020",
+      "opponent_name": "NaRhiya Davis",
+      "opponent_team": "Central",
+      "opponent_team_rank": 20,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "KHSAA Girls Region 2"
+    }
+  ],
+  "profile_generated_at": "2026-02-18"
 }

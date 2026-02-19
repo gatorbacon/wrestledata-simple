@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:01.323581Z",
+  "generated_at_utc": "2026-02-18T22:09:30.543676Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -53,11 +53,11 @@
       "name": "Zachary Fields",
       "current_rank": 25,
       "grade": 9,
-      "xtp": 2.19,
-      "xtp_p": 0.22,
-      "xtp_a": 0.64,
-      "xtp_b": 1.33,
-      "xtp_simple": 0.0,
+      "xtp": 6.14,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 2.87,
+      "xtp_simple": 3.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -197,10 +197,10 @@
       "name": "Andrew Jones",
       "current_rank": 36,
       "grade": 11,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
+      "xtp": 1.03,
+      "xtp_p": 0.03,
+      "xtp_a": 0.3,
+      "xtp_b": 0.7,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -265,10 +265,10 @@
     },
     "285": {
       "weight": 285,
-      "wrestler_id": "35525718132",
-      "name": "Dai-Leon Brooks",
-      "current_rank": 48,
-      "grade": 10,
+      "wrestler_id": "36371158132",
+      "name": "Brendan Dobbs",
+      "current_rank": 81,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -276,14 +276,14 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 3
       },
-      "wins": 8,
-      "losses": 3,
+      "wins": 7,
+      "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 1.0
     }
@@ -370,19 +370,19 @@
       "bonus_rate": 0.0
     },
     {
-      "weight": 215,
-      "wrestler_id": "36371158132",
-      "name": "Brendan Dobbs",
-      "grade": 11,
-      "wins": 7,
-      "losses": 4,
+      "weight": 285,
+      "wrestler_id": "35525718132",
+      "name": "Dai-Leon Brooks",
+      "grade": 10,
+      "wins": 8,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 1.0
     }
   ],
-  "team_xTP_simple": 0.0,
+  "team_xTP_simple": 3.0,
   "team_metrics": {
-    "projected_state_points": 0.0,
+    "projected_state_points": 3.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -392,30 +392,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 82,
-      "losses": 69
+      "wins": 117,
+      "losses": 84
     },
     "top33": {
       "wins": 7,
-      "losses": 33
+      "losses": 35
     },
     "top10": {
       "wins": 0,
-      "losses": 12
+      "losses": 11
     },
     "bonus_rate": {
-      "value": 1.723,
-      "rank": 3,
+      "value": 0.976,
+      "rank": 12,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 1.638,
-      "rank": 3,
+      "value": 0.916,
+      "rank": 11,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.064,
-      "rank": 105,
+      "value": 0.036,
+      "rank": 122,
       "rank_scope": "league"
     }
   }

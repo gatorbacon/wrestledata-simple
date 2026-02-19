@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:01.538747Z",
+  "generated_at_utc": "2026-02-18T22:09:30.745399Z",
   "starters": {
     "107": {
       "weight": 107,
       "wrestler_id": "35333611132",
       "name": "Izabella Mansfield",
-      "current_rank": 67,
+      "current_rank": 68,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -36,14 +36,14 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "wins": 0,
-      "losses": 1,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -51,55 +51,31 @@
       "weight": 132,
       "wrestler_id": "36861794132",
       "name": "Elexis Herrington",
-      "current_rank": 39,
+      "current_rank": 26,
       "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
+      "xtp": 2.46,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.52,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
       },
       "top33_record": {
-        "wins": 1,
-        "losses": 0
+        "wins": 2,
+        "losses": 2
       },
-      "wins": 1,
-      "losses": 0,
+      "wins": 4,
+      "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 1.0
-    },
-    "138": {
-      "weight": 138,
-      "wrestler_id": "35333543132",
-      "name": "Mia Young",
-      "current_rank": 56,
-      "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "wins": 0,
-      "losses": 1,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
     },
     "145": {
       "weight": 145,
       "wrestler_id": "35333542132",
       "name": "Tayla Tobin",
-      "current_rank": 67,
+      "current_rank": 71,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -123,7 +99,7 @@
       "weight": 165,
       "wrestler_id": "35333612132",
       "name": "Addrianna Buck",
-      "current_rank": 65,
+      "current_rank": 64,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -132,14 +108,14 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 2
       },
       "wins": 0,
-      "losses": 2,
+      "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -147,7 +123,7 @@
       "weight": 185,
       "wrestler_id": "36862104132",
       "name": "Gabriela Rojas",
-      "current_rank": 70,
+      "current_rank": 39,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -156,19 +132,29 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 2
       },
-      "wins": 0,
-      "losses": 0,
+      "wins": 2,
+      "losses": 2,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 1.0
     }
   },
   "remaining": [
+    {
+      "weight": 145,
+      "wrestler_id": "35333543132",
+      "name": "Mia Young",
+      "grade": null,
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
     {
       "weight": 185,
       "wrestler_id": "35333613132",
@@ -192,30 +178,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 1,
-      "losses": 4
+      "wins": 6,
+      "losses": 11
     },
     "top33": {
-      "wins": 1,
-      "losses": 2
+      "wins": 2,
+      "losses": 8
     },
     "top10": {
       "wins": 0,
-      "losses": 0
+      "losses": 4
     },
     "bonus_rate": {
       "value": 1.0,
-      "rank": 25,
+      "rank": 15,
       "rank_scope": "league"
     },
     "pin_rate": {
       "value": 1.0,
-      "rank": 18,
+      "rank": 10,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 108,
+      "rank": 102,
       "rank_scope": "league"
     }
   }

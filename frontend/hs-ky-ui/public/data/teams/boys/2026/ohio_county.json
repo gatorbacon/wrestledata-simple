@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.821667Z",
+  "generated_at_utc": "2026-02-18T22:09:29.976250Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -77,10 +77,10 @@
       "name": "Jayson Tejeda",
       "current_rank": 36,
       "grade": 10,
-      "xtp": 1.0,
-      "xtp_p": 0.03,
-      "xtp_a": 0.3,
-      "xtp_b": 0.67,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -101,10 +101,10 @@
       "name": "Ayden Fechtner",
       "current_rank": 34,
       "grade": 10,
-      "xtp": 0.87,
-      "xtp_p": 0.03,
-      "xtp_a": 0.3,
-      "xtp_b": 0.54,
+      "xtp": 0.91,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.56,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -145,10 +145,10 @@
     },
     "144": {
       "weight": 144,
-      "wrestler_id": "36440796132",
-      "name": "Trigden Ralph",
-      "current_rank": 59,
-      "grade": 9,
+      "wrestler_id": "34989198132",
+      "name": "Braylon Baggarly",
+      "current_rank": 77,
+      "grade": 7,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -156,14 +156,14 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
         "losses": 1
       },
       "wins": 7,
-      "losses": 7,
+      "losses": 6,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -173,10 +173,10 @@
       "name": "Kaden Coy",
       "current_rank": 25,
       "grade": 10,
-      "xtp": 2.03,
-      "xtp_p": 0.22,
-      "xtp_a": 0.64,
-      "xtp_b": 1.17,
+      "xtp": 1.77,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 1.03,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -221,10 +221,10 @@
       "name": "Hunter Roberts",
       "current_rank": 20,
       "grade": 12,
-      "xtp": 2.86,
-      "xtp_p": 0.45,
-      "xtp_a": 0.91,
-      "xtp_b": 1.5,
+      "xtp": 3.02,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 1.59,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -439,16 +439,6 @@
     },
     {
       "weight": 144,
-      "wrestler_id": "34989198132",
-      "name": "Braylon Baggarly",
-      "grade": 7,
-      "wins": 7,
-      "losses": 6,
-      "top25_wins": 0,
-      "bonus_rate": 1.0
-    },
-    {
-      "weight": 144,
       "wrestler_id": "35041719132",
       "name": "Liam Waters",
       "grade": null,
@@ -456,6 +446,16 @@
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "36440796132",
+      "name": "Trigden Ralph",
+      "grade": 9,
+      "wins": 7,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
     },
     {
       "weight": 150,
@@ -520,8 +520,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 204,
-      "losses": 122
+      "wins": 232,
+      "losses": 137
     },
     "top33": {
       "wins": 30,
@@ -529,21 +529,21 @@
     },
     "top10": {
       "wins": 4,
-      "losses": 19
+      "losses": 20
     },
     "bonus_rate": {
-      "value": 1.058,
-      "rank": 71,
+      "value": 0.926,
+      "rank": 45,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.9,
-      "rank": 71,
+      "value": 0.788,
+      "rank": 55,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.095,
-      "rank": 83,
+      "value": 0.083,
+      "rank": 77,
       "rank_scope": "league"
     }
   }

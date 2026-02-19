@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.266641Z",
+  "generated_at_utc": "2026-02-18T22:09:29.456795Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -73,6 +73,30 @@
     },
     "120": {
       "weight": 120,
+      "wrestler_id": "35225535132",
+      "name": "Asmin Saidi",
+      "current_rank": 64,
+      "grade": 11,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "wins": 10,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "126": {
+      "weight": 126,
       "wrestler_id": "35225528132",
       "name": "Joshua Klose",
       "current_rank": 34,
@@ -95,41 +119,17 @@
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
-    "126": {
-      "weight": 126,
-      "wrestler_id": "35440243132",
-      "name": "Aachal Kandel",
-      "current_rank": 123,
-      "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "wins": 1,
-      "losses": 3,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
     "132": {
       "weight": 132,
       "wrestler_id": "35225527132",
       "name": "Keith Johnson",
       "current_rank": 18,
       "grade": 12,
-      "xtp": 2.95,
-      "xtp_p": 0.46,
-      "xtp_a": 1.0,
-      "xtp_b": 1.49,
-      "xtp_simple": 0.5,
+      "xtp": 1.51,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 0.77,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 4
@@ -193,6 +193,30 @@
     },
     "157": {
       "weight": 157,
+      "wrestler_id": "35225557132",
+      "name": "Kaleb Kavanough",
+      "current_rank": 68,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "wins": 5,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.75
+    },
+    "165": {
+      "weight": 165,
       "wrestler_id": "35225681132",
       "name": "Chris Burns",
       "current_rank": 51,
@@ -212,30 +236,6 @@
       },
       "wins": 13,
       "losses": 13,
-      "top25_wins": 0,
-      "bonus_rate": 1.0
-    },
-    "165": {
-      "weight": 165,
-      "wrestler_id": "35225626132",
-      "name": "Trenton rexroad",
-      "current_rank": 192,
-      "grade": 9,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 2
-      },
-      "wins": 6,
-      "losses": 16,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -338,22 +338,22 @@
   },
   "remaining": [
     {
-      "weight": 120,
-      "wrestler_id": "35225535132",
-      "name": "Asmin Saidi",
-      "grade": 11,
-      "wins": 10,
-      "losses": 4,
-      "top25_wins": 0,
-      "bonus_rate": 1.0
-    },
-    {
       "weight": 126,
       "wrestler_id": "35443958132",
       "name": "Aachal Kandal",
       "grade": null,
       "wins": 1,
       "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 126,
+      "wrestler_id": "35440243132",
+      "name": "Aachal Kandel",
+      "grade": null,
+      "wins": 1,
+      "losses": 3,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -368,22 +368,22 @@
       "bonus_rate": 0.0
     },
     {
-      "weight": 157,
-      "wrestler_id": "35225557132",
-      "name": "Kaleb Kavanough",
-      "grade": null,
-      "wins": 5,
-      "losses": 3,
-      "top25_wins": 0,
-      "bonus_rate": 0.75
-    },
-    {
       "weight": 165,
       "wrestler_id": "35225656132",
       "name": "David reynolds",
       "grade": 8,
       "wins": 3,
       "losses": 14,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 165,
+      "wrestler_id": "35225626132",
+      "name": "Trenton rexroad",
+      "grade": 9,
+      "wins": 6,
+      "losses": 16,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -398,9 +398,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 0.5,
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": 0.5,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -410,30 +410,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 98,
-      "losses": 106
+      "wins": 147,
+      "losses": 123
     },
     "top33": {
       "wins": 7,
-      "losses": 50
+      "losses": 48
     },
     "top10": {
       "wins": 0,
       "losses": 16
     },
     "bonus_rate": {
-      "value": 1.469,
-      "rank": 11,
+      "value": 0.913,
+      "rank": 60,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 1.156,
-      "rank": 21,
+      "value": 0.739,
+      "rank": 87,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.234,
-      "rank": 11,
+      "value": 0.13,
+      "rank": 27,
       "rank_scope": "league"
     }
   }

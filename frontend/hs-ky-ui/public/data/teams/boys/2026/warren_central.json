@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:01.264048Z",
+  "generated_at_utc": "2026-02-18T22:09:30.480806Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -169,30 +169,6 @@
     },
     "165": {
       "weight": 165,
-      "wrestler_id": "36356638132",
-      "name": "Dominique Sanchez-Ladore",
-      "current_rank": 216,
-      "grade": 12,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "wins": 0,
-      "losses": 1,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    "175": {
-      "weight": 175,
       "wrestler_id": "35194012132",
       "name": "Kaleb Lindsey",
       "current_rank": 41,
@@ -269,11 +245,11 @@
       "name": "Steven Bryant",
       "current_rank": 26,
       "grade": 12,
-      "xtp": 2.1,
-      "xtp_p": 0.25,
-      "xtp_a": 0.69,
-      "xtp_b": 1.16,
-      "xtp_simple": 0.5,
+      "xtp": 1.7,
+      "xtp_p": 0.22,
+      "xtp_a": 0.64,
+      "xtp_b": 0.84,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -300,6 +276,16 @@
       "bonus_rate": 0.0
     },
     {
+      "weight": 165,
+      "wrestler_id": "36356638132",
+      "name": "Dominique Sanchez-Ladore",
+      "grade": 12,
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
       "weight": 215,
       "wrestler_id": "35232364132",
       "name": "Weston Morris",
@@ -320,9 +306,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 0.5,
+  "team_xTP_simple": 0.0,
   "team_metrics": {
-    "projected_state_points": 0.5,
+    "projected_state_points": 0.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -332,30 +318,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 79,
-      "losses": 94
+      "wins": 101,
+      "losses": 101
     },
     "top33": {
       "wins": 0,
-      "losses": 27
+      "losses": 26
     },
     "top10": {
       "wins": 0,
       "losses": 2
     },
     "bonus_rate": {
-      "value": 1.432,
-      "rank": 14,
+      "value": 0.955,
+      "rank": 26,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 1.25,
-      "rank": 14,
+      "value": 0.833,
+      "rank": 37,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.091,
-      "rank": 89,
+      "value": 0.061,
+      "rank": 98,
       "rank_scope": "league"
     }
   }

@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:01.934864Z",
+  "generated_at_utc": "2026-02-18T22:09:31.033131Z",
   "starters": {
     "100": {
       "weight": 100,
       "wrestler_id": "37427949132",
       "name": "Miley Pennington",
-      "current_rank": 46,
+      "current_rank": 45,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -36,7 +36,7 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
@@ -51,7 +51,7 @@
       "weight": 126,
       "wrestler_id": "35722149132",
       "name": "Layla Lawrence",
-      "current_rank": 99,
+      "current_rank": 92,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -75,7 +75,7 @@
       "weight": 132,
       "wrestler_id": "35722340132",
       "name": "Hannah Ratliff",
-      "current_rank": 53,
+      "current_rank": 57,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -91,7 +91,7 @@
         "losses": 2
       },
       "wins": 5,
-      "losses": 7,
+      "losses": 9,
       "top25_wins": 0,
       "bonus_rate": 0.8
     },
@@ -101,61 +101,74 @@
       "name": "Bralyn Maynard",
       "current_rank": 1,
       "grade": null,
-      "xtp": 22.37,
+      "xtp": 22.74,
       "xtp_p": 12.83,
       "xtp_a": 3.73,
-      "xtp_b": 5.81,
+      "xtp_b": 6.18,
       "xtp_simple": 28.0,
       "top10_record": {
-        "wins": 2,
+        "wins": 4,
         "losses": 0
       },
       "top33_record": {
-        "wins": 5,
+        "wins": 8,
         "losses": 0
       },
-      "wins": 16,
+      "wins": 19,
       "losses": 0,
-      "top25_wins": 4,
-      "bonus_rate": 0.933
+      "top25_wins": 7,
+      "bonus_rate": 0.944
     },
     "165": {
       "weight": 165,
       "wrestler_id": "37338346132",
       "name": "Zoe Lay",
-      "current_rank": 24,
+      "current_rank": 23,
       "grade": null,
-      "xtp": 2.64,
-      "xtp_p": 0.25,
-      "xtp_a": 0.69,
-      "xtp_b": 1.7,
+      "xtp": 2.82,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
+      "xtp_b": 1.76,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "top33_record": {
-        "wins": 2,
-        "losses": 3
+        "wins": 3,
+        "losses": 6
       },
-      "wins": 4,
-      "losses": 3,
-      "top25_wins": 1,
+      "wins": 6,
+      "losses": 6,
+      "top25_wins": 2,
       "bonus_rate": 1.0
-    }
-  },
-  "remaining": [
-    {
-      "weight": 165,
+    },
+    "185": {
+      "weight": 185,
       "wrestler_id": "35722333132",
       "name": "Caroline Sturgill",
+      "current_rank": 52,
       "grade": null,
-      "wins": 1,
-      "losses": 6,
+      "xtp": 1.25,
+      "xtp_p": 0.03,
+      "xtp_a": 0.3,
+      "xtp_b": 0.92,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      },
+      "wins": 2,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 1.0
     }
-  ],
+  },
+  "remaining": [],
   "team_xTP_simple": 28.0,
   "team_metrics": {
     "projected_state_points": 28.0,
@@ -168,30 +181,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 26,
-      "losses": 14
+      "wins": 33,
+      "losses": 27
     },
     "top33": {
-      "wins": 7,
-      "losses": 6
+      "wins": 11,
+      "losses": 15
     },
     "top10": {
-      "wins": 2,
-      "losses": 1
+      "wins": 4,
+      "losses": 3
     },
     "bonus_rate": {
-      "value": 0.92,
-      "rank": 75,
+      "value": 0.938,
+      "rank": 53,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.88,
-      "rank": 54,
+      "value": 0.906,
+      "rank": 37,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.04,
-      "rank": 33,
+      "value": 0.031,
+      "rank": 46,
       "rank_scope": "league"
     }
   }

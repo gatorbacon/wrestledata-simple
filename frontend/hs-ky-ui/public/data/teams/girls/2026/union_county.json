@@ -21,109 +21,37 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:02.035135Z",
+  "generated_at_utc": "2026-02-18T22:09:31.113801Z",
   "starters": {
     "114": {
       "weight": 114,
       "wrestler_id": "35564873132",
       "name": "Tanya Bacon",
-      "current_rank": 5,
+      "current_rank": 3,
       "grade": null,
-      "xtp": 12.65,
-      "xtp_p": 5.13,
-      "xtp_a": 2.53,
-      "xtp_b": 4.99,
-      "xtp_simple": 14.0,
+      "xtp": 16.57,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 5.43,
+      "xtp_simple": 20.0,
       "top10_record": {
-        "wins": 6,
-        "losses": 1
+        "wins": 5,
+        "losses": 2
       },
       "top33_record": {
-        "wins": 9,
-        "losses": 1
+        "wins": 11,
+        "losses": 2
       },
-      "wins": 25,
-      "losses": 2,
-      "top25_wins": 9,
-      "bonus_rate": 1.0
+      "wins": 28,
+      "losses": 3,
+      "top25_wins": 10,
+      "bonus_rate": 0.957
     },
     "120": {
       "weight": 120,
-      "wrestler_id": "35564944132",
-      "name": "sutton fuller",
-      "current_rank": 16,
-      "grade": null,
-      "xtp": 4.33,
-      "xtp_p": 0.47,
-      "xtp_a": 1.08,
-      "xtp_b": 2.78,
-      "xtp_simple": 0.5,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 2,
-        "losses": 0
-      },
-      "wins": 3,
-      "losses": 3,
-      "top25_wins": 1,
-      "bonus_rate": 1.0
-    },
-    "126": {
-      "weight": 126,
-      "wrestler_id": "35565001132",
-      "name": "brailey jackson",
-      "current_rank": 2,
-      "grade": null,
-      "xtp": 18.81,
-      "xtp_p": 10.07,
-      "xtp_a": 3.42,
-      "xtp_b": 5.32,
-      "xtp_simple": 24.0,
-      "top10_record": {
-        "wins": 6,
-        "losses": 2
-      },
-      "top33_record": {
-        "wins": 15,
-        "losses": 2
-      },
-      "wins": 23,
-      "losses": 2,
-      "top25_wins": 12,
-      "bonus_rate": 0.955
-    },
-    "132": {
-      "weight": 132,
       "wrestler_id": "35565757132",
       "name": "bailey buchanan",
-      "current_rank": 30,
-      "grade": null,
-      "xtp": 2.07,
-      "xtp_p": 0.2,
-      "xtp_a": 0.54,
-      "xtp_b": 1.33,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 3
-      },
-      "top33_record": {
-        "wins": 2,
-        "losses": 4
-      },
-      "wins": 7,
-      "losses": 10,
-      "top25_wins": 2,
-      "bonus_rate": 1.0
-    },
-    "138": {
-      "weight": 138,
-      "wrestler_id": "35566119132",
-      "name": "tailor waddell",
-      "current_rank": 53,
+      "current_rank": 54,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -135,11 +63,83 @@
         "losses": 3
       },
       "top33_record": {
+        "wins": 2,
+        "losses": 5
+      },
+      "wins": 8,
+      "losses": 12,
+      "top25_wins": 2,
+      "bonus_rate": 1.0
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35565001132",
+      "name": "brailey jackson",
+      "current_rank": 2,
+      "grade": null,
+      "xtp": 18.69,
+      "xtp_p": 10.07,
+      "xtp_a": 3.42,
+      "xtp_b": 5.2,
+      "xtp_simple": 24.0,
+      "top10_record": {
+        "wins": 5,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 16,
+        "losses": 3
+      },
+      "wins": 26,
+      "losses": 3,
+      "top25_wins": 15,
+      "bonus_rate": 0.96
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35564944132",
+      "name": "sutton fuller",
+      "current_rank": 18,
+      "grade": null,
+      "xtp": 3.49,
+      "xtp_p": 0.41,
+      "xtp_a": 1.02,
+      "xtp_b": 2.06,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 1,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 4,
+        "losses": 2
+      },
+      "wins": 5,
+      "losses": 5,
+      "top25_wins": 4,
+      "bonus_rate": 0.8
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35566119132",
+      "name": "tailor waddell",
+      "current_rank": 51,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
         "wins": 0,
-        "losses": 7
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 9
       },
       "wins": 2,
-      "losses": 13,
+      "losses": 15,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -147,71 +147,71 @@
       "weight": 145,
       "wrestler_id": "35566195132",
       "name": "emma cheatham",
-      "current_rank": 7,
+      "current_rank": 8,
       "grade": null,
-      "xtp": 9.83,
-      "xtp_p": 3.31,
-      "xtp_a": 2.12,
-      "xtp_b": 4.4,
-      "xtp_simple": 9.0,
+      "xtp": 8.37,
+      "xtp_p": 2.43,
+      "xtp_a": 1.91,
+      "xtp_b": 4.03,
+      "xtp_simple": 7.0,
       "top10_record": {
-        "wins": 0,
+        "wins": 2,
         "losses": 2
       },
       "top33_record": {
-        "wins": 5,
-        "losses": 3
+        "wins": 9,
+        "losses": 4
       },
-      "wins": 18,
-      "losses": 5,
-      "top25_wins": 4,
+      "wins": 22,
+      "losses": 6,
+      "top25_wins": 6,
       "bonus_rate": 1.0
     },
     "152": {
       "weight": 152,
       "wrestler_id": "35565964132",
       "name": "jacelyn smith",
-      "current_rank": 9,
+      "current_rank": 7,
       "grade": null,
-      "xtp": 7.43,
-      "xtp_p": 2.03,
-      "xtp_a": 1.78,
-      "xtp_b": 3.62,
-      "xtp_simple": 2.0,
+      "xtp": 10.0,
+      "xtp_p": 3.31,
+      "xtp_a": 2.12,
+      "xtp_b": 4.57,
+      "xtp_simple": 9.0,
       "top10_record": {
         "wins": 2,
         "losses": 1
       },
       "top33_record": {
         "wins": 9,
-        "losses": 2
+        "losses": 4
       },
-      "wins": 19,
-      "losses": 4,
-      "top25_wins": 8,
+      "wins": 21,
+      "losses": 6,
+      "top25_wins": 7,
       "bonus_rate": 1.0
     },
     "185": {
       "weight": 185,
       "wrestler_id": "35566044132",
       "name": "audrey wilson",
-      "current_rank": 8,
+      "current_rank": 22,
       "grade": null,
-      "xtp": 8.48,
-      "xtp_p": 2.43,
-      "xtp_a": 1.91,
-      "xtp_b": 4.14,
-      "xtp_simple": 7.0,
+      "xtp": 3.43,
+      "xtp_p": 0.45,
+      "xtp_a": 0.91,
+      "xtp_b": 2.07,
+      "xtp_simple": 0.0,
       "top10_record": {
-        "wins": 1,
+        "wins": 0,
         "losses": 3
       },
       "top33_record": {
         "wins": 1,
-        "losses": 3
+        "losses": 5
       },
       "wins": 5,
-      "losses": 8,
+      "losses": 10,
       "top25_wins": 1,
       "bonus_rate": 1.0
     },
@@ -219,20 +219,20 @@
       "weight": 235,
       "wrestler_id": "35565465132",
       "name": "kenli lamb",
-      "current_rank": 44,
+      "current_rank": 43,
       "grade": null,
-      "xtp": 1.31,
+      "xtp": 1.32,
       "xtp_p": 0.04,
       "xtp_a": 0.31,
-      "xtp_b": 0.96,
+      "xtp_b": 0.97,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 4
       },
       "top33_record": {
         "wins": 0,
-        "losses": 8
+        "losses": 9
       },
       "wins": 7,
       "losses": 14,
@@ -257,14 +257,14 @@
       "name": "maci rorer",
       "grade": null,
       "wins": 0,
-      "losses": 6,
+      "losses": 8,
       "top25_wins": 0,
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 56.5,
+  "team_xTP_simple": 60.0,
   "team_metrics": {
-    "projected_state_points": 56.5,
+    "projected_state_points": 60.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -274,30 +274,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 109,
-      "losses": 61
+      "wins": 124,
+      "losses": 74
     },
     "top33": {
-      "wins": 43,
-      "losses": 30
+      "wins": 52,
+      "losses": 43
     },
     "top10": {
       "wins": 15,
-      "losses": 18
+      "losses": 24
     },
     "bonus_rate": {
-      "value": 0.989,
-      "rank": 30,
+      "value": 0.971,
+      "rank": 28,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.944,
-      "rank": 31,
+      "value": 0.923,
+      "rank": 30,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.034,
-      "rank": 38,
+      "value": 0.029,
+      "rank": 49,
       "rank_scope": "league"
     }
   }

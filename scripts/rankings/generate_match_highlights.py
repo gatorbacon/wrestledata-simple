@@ -99,6 +99,30 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def load_team_abbreviations(gender: str) -> Dict[str, str]:
+    """Load team name -> abbreviation from data/team_lists/hs_ky_{gender}/teams.json."""
+    teams_path = Path("data/team_lists") / f"hs_ky_{gender}" / "teams.json"
+    if not teams_path.exists():
+        return {}
+    try:
+        with teams_path.open("r", encoding="utf-8") as f:
+            teams = json.load(f)
+        return {t.get("name", "").strip(): t.get("abbreviation", "").strip() for t in teams if t.get("name") and t.get("abbreviation")}
+    except Exception as e:
+        print(f"Warning: Could not load team abbreviations: {e}")
+        return {}
+
+
+def shorten_name(name: str, max_len: int = 20) -> str:
+    """If name longer than max_len chars, use first initial + last name."""
+    if not name or len(name) <= max_len:
+        return name
+    parts = name.strip().split()
+    if len(parts) >= 2:
+        return f"{parts[0][0]}. {parts[-1]}"
+    return name[:max_len]
+
+
 def parse_date(date_str: str) -> date:
     """Parse date string in YYYY-MM-DD format."""
     try:
@@ -606,6 +630,9 @@ def main():
     print(f"Season: {args.season}, Gender: {args.gender}")
     print("=" * 60)
     
+    # Load team abbreviations
+    team_abbrev = load_team_abbreviations(args.gender)
+
     # Load drops index
     print("\nLoading drops index...")
     drops = load_drops_index(data_dir, args.gender, args.season)
@@ -713,9 +740,13 @@ def main():
             
             result_display = " | ".join(result_parts) if result_parts else ""
             
+            w_name = shorten_name(match['winner_name'])
+            w_team = team_abbrev.get(match['winner_team'], match['winner_team'])
+            l_name = shorten_name(match['loser_name'])
+            l_team = team_abbrev.get(match['loser_team'], match['loser_team'])
             print(f"\n{match['date']}{weight_display} | Ranking Basis: {match['ranking_basis_date']}")
-            print(f"  #{match['winner_rank']} {match['winner_name']} ({match['winner_team']}){winner_weight_note}")
-            print(f"    def. #{match['loser_rank']} {match['loser_name']} ({match['loser_team']}){loser_weight_note}")
+            print(f"  #{match['winner_rank']} {w_name} ({w_team}){winner_weight_note}")
+            print(f"    def. #{match['loser_rank']} {l_name} ({l_team}){loser_weight_note}")
             if result_display:
                 print(f"    Result: {result_display}")
     else:
@@ -761,9 +792,13 @@ def main():
             
             result_display = " | ".join(result_parts) if result_parts else ""
             
+            w_name = shorten_name(match['winner_name'])
+            w_team = team_abbrev.get(match['winner_team'], match['winner_team'])
+            l_name = shorten_name(match['loser_name'])
+            l_team = team_abbrev.get(match['loser_team'], match['loser_team'])
             print(f"\n{match['date']}{weight_display} | Ranking Basis: {match['ranking_basis_date']}")
-            print(f"  #{match['winner_rank']} {match['winner_name']} ({match['winner_team']}){winner_weight_note}")
-            print(f"    def. #{match['loser_rank']} {match['loser_name']} ({match['loser_team']}){loser_weight_note}")
+            print(f"  #{match['winner_rank']} {w_name} ({w_team}){winner_weight_note}")
+            print(f"    def. #{match['loser_rank']} {l_name} ({l_team}){loser_weight_note}")
             if result_display:
                 print(f"    Result: {result_display}")
             print(f"    Upset Score: {match['upset_score']} (Prestige: {match['prestige_score']}, Differential: {match['differential_score']})")
@@ -806,7 +841,8 @@ def main():
             start_date,
             end_date,
             args.gender,
-            args.season
+            args.season,
+            team_abbrev
         )
 
 
@@ -888,9 +924,12 @@ def generate_upsets_graphic(
     start_date: date,
     end_date: date,
     gender: str,
-    season: int
+    season: int,
+    team_abbrev: Dict[str, str] = None
 ) -> None:
     """Generate JPG graphic from SVG template for top 5 upsets."""
+    if team_abbrev is None:
+        team_abbrev = {}
     template_path = Path("mt/graphics/templates/TOP-UPSETS-TEMPLATE.svg")
     output_dir = Path(f"mt/graphics/{season}")
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -981,10 +1020,10 @@ def generate_upsets_graphic(
             pattern = rf'(inkscape:label="weight{idx}"[^>]*>[\s\S]*?<tspan[^>]*>)[^<]*(</tspan>)'
             svg_content = re.sub(pattern, lambda m: m.group(1) + str(weight_class) + m.group(2), svg_content)
         
-        # Get winner info
+        # Get winner info (shorten name if > 20 chars, use team abbreviation)
         winner_rank = upset.get('winner_rank', '')
-        winner_name = upset.get('winner_name', 'Unknown')
-        winner_team = upset.get('winner_team', 'Unknown')
+        winner_name = shorten_name(upset.get('winner_name', 'Unknown'))
+        winner_team = team_abbrev.get(upset.get('winner_team', 'Unknown'), upset.get('winner_team', 'Unknown'))
         
         # Replace winner (complex nested structure: #X   Name (Team))
         # Pattern: inkscape:label="winnerX">...<tspan>#X   <tspan>Name</tspan> <tspan>(Team)</tspan></tspan>
@@ -997,10 +1036,10 @@ def generate_upsets_graphic(
         winner_replacement_text = f'#{winner_rank}   <tspan style="letter-spacing:0px" id="tspan46">{winner_name_escaped}</tspan> <tspan style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:\'Alegreya Sans\';-inkscape-font-specification:\'Alegreya Sans Medium\';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:\'ss3\';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:-0.195781px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke-width:0.425147;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;filter:url(#filter30);stop-color:#000000;stop-opacity:1" id="tspan68">({winner_team_escaped})</tspan>'
         svg_content = re.sub(winner_pattern, lambda m: m.group(1) + winner_replacement_text + m.group(2), svg_content)
         
-        # Get loser info
+        # Get loser info (shorten name if > 20 chars, use team abbreviation)
         loser_rank = upset.get('loser_rank', '')
-        loser_name = upset.get('loser_name', 'Unknown')
-        loser_team = upset.get('loser_team', 'Unknown')
+        loser_name = shorten_name(upset.get('loser_name', 'Unknown'))
+        loser_team = team_abbrev.get(upset.get('loser_team', 'Unknown'), upset.get('loser_team', 'Unknown'))
         
         # Replace loser (complex nested structure: def. #Y   Name (Team))
         # Pattern: inkscape:label="loserX">...<tspan><tspan>def.   </tspan>#Y   <tspan>Name</tspan> <tspan>(Team)</tspan></tspan>

@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:43:59.972094Z",
+  "generated_at_utc": "2026-02-18T22:09:29.138730Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -77,11 +77,11 @@
       "name": "Elijah Kirby",
       "current_rank": 34,
       "grade": 12,
-      "xtp": 1.02,
-      "xtp_p": 0.09,
-      "xtp_a": 0.34,
-      "xtp_b": 0.59,
-      "xtp_simple": 0.0,
+      "xtp": 2.5,
+      "xtp_p": 0.31,
+      "xtp_a": 0.75,
+      "xtp_b": 1.44,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -197,10 +197,10 @@
       "name": "Bradley Asher",
       "current_rank": 17,
       "grade": 9,
-      "xtp": 3.36,
+      "xtp": 3.24,
       "xtp_p": 0.41,
       "xtp_a": 1.02,
-      "xtp_b": 1.93,
+      "xtp_b": 1.81,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -269,10 +269,10 @@
       "name": "Dawson Harris",
       "current_rank": 14,
       "grade": 10,
-      "xtp": 4.84,
-      "xtp_p": 0.93,
-      "xtp_a": 1.27,
-      "xtp_b": 2.64,
+      "xtp": 4.94,
+      "xtp_p": 1.16,
+      "xtp_a": 1.37,
+      "xtp_b": 2.41,
       "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
@@ -454,9 +454,9 @@
       "bonus_rate": 1.0
     }
   ],
-  "team_xTP_simple": 7.0,
+  "team_xTP_simple": 7.5,
   "team_metrics": {
-    "projected_state_points": 7.0,
+    "projected_state_points": 7.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -466,8 +466,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 207,
-      "losses": 75
+      "wins": 228,
+      "losses": 89
     },
     "top33": {
       "wins": 16,
@@ -478,18 +478,18 @@
       "losses": 16
     },
     "bonus_rate": {
-      "value": 1.018,
-      "rank": 81,
+      "value": 0.904,
+      "rank": 67,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.789,
-      "rank": 107,
+      "value": 0.701,
+      "rank": 105,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.145,
-      "rank": 41,
+      "value": 0.128,
+      "rank": 28,
       "rank_scope": "league"
     }
   }

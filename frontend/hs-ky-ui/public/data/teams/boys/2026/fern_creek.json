@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.209705Z",
+  "generated_at_utc": "2026-02-18T22:09:29.387755Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -121,10 +121,10 @@
     },
     "132": {
       "weight": 132,
-      "wrestler_id": "35090023132",
-      "name": "Seth Frank",
-      "current_rank": 55,
-      "grade": 11,
+      "wrestler_id": "35090020132",
+      "name": "Matthew Morgan",
+      "current_rank": 116,
+      "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -132,16 +132,16 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       },
       "top33_record": {
         "wins": 0,
         "losses": 2
       },
-      "wins": 11,
-      "losses": 9,
+      "wins": 7,
+      "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.875
+      "bonus_rate": 1.0
     },
     "138": {
       "weight": 138,
@@ -221,11 +221,11 @@
       "name": "Shakir Beridze",
       "current_rank": 25,
       "grade": 11,
-      "xtp": 1.62,
-      "xtp_p": 0.22,
-      "xtp_a": 0.64,
-      "xtp_b": 0.76,
-      "xtp_simple": 0.0,
+      "xtp": 2.57,
+      "xtp_p": 0.37,
+      "xtp_a": 0.81,
+      "xtp_b": 1.39,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -245,10 +245,10 @@
       "name": "Kaleb Walz",
       "current_rank": 32,
       "grade": 11,
-      "xtp": 1.03,
-      "xtp_p": 0.09,
-      "xtp_a": 0.34,
-      "xtp_b": 0.6,
+      "xtp": 1.32,
+      "xtp_p": 0.18,
+      "xtp_a": 0.49,
+      "xtp_b": 0.65,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -413,13 +413,13 @@
     },
     {
       "weight": 132,
-      "wrestler_id": "35090020132",
-      "name": "Matthew Morgan",
-      "grade": 12,
-      "wins": 7,
-      "losses": 8,
+      "wrestler_id": "35090023132",
+      "name": "Seth Frank",
+      "grade": 11,
+      "wins": 11,
+      "losses": 9,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.875
     },
     {
       "weight": 138,
@@ -642,9 +642,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 21.5,
+  "team_xTP_simple": 22.0,
   "team_metrics": {
-    "projected_state_points": 21.5,
+    "projected_state_points": 22.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -654,8 +654,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 214,
-      "losses": 134
+      "wins": 227,
+      "losses": 149
     },
     "top33": {
       "wins": 27,
@@ -663,21 +663,21 @@
     },
     "top10": {
       "wins": 8,
-      "losses": 22
+      "losses": 21
     },
     "bonus_rate": {
-      "value": 0.882,
-      "rank": 130,
+      "value": 0.81,
+      "rank": 133,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.717,
-      "rank": 129,
+      "value": 0.675,
+      "rank": 117,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.08,
-      "rank": 96,
+      "value": 0.06,
+      "rank": 99,
       "rank_scope": "league"
     }
   }

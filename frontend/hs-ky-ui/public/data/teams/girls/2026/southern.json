@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:01.996414Z",
+  "generated_at_utc": "2026-02-18T22:09:31.082909Z",
   "starters": {
-    "126": {
-      "weight": 126,
-      "wrestler_id": "35478715132",
-      "name": "Samira Mbaye-Diallo",
-      "current_rank": 66,
+    "120": {
+      "weight": 120,
+      "wrestler_id": "37864197132",
+      "name": "Amia Lane",
+      "current_rank": 80,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -36,7 +36,31 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "wins": 0,
+      "losses": 1,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35478715132",
+      "name": "Samira Mbaye-Diallo",
+      "current_rank": 64,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 4
       },
       "top33_record": {
         "wins": 0,
@@ -51,7 +75,7 @@
       "weight": 132,
       "wrestler_id": "35478910132",
       "name": "Angel Queral",
-      "current_rank": 40,
+      "current_rank": 39,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -75,7 +99,7 @@
       "weight": 165,
       "wrestler_id": "36231874132",
       "name": "Esther Gadi",
-      "current_rank": 70,
+      "current_rank": 68,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -91,7 +115,7 @@
         "losses": 1
       },
       "wins": 0,
-      "losses": 4,
+      "losses": 6,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -99,38 +123,28 @@
       "weight": 185,
       "wrestler_id": "35478658132",
       "name": "Selena Avila",
-      "current_rank": 16,
+      "current_rank": 11,
       "grade": null,
-      "xtp": 4.11,
-      "xtp_p": 0.47,
-      "xtp_a": 1.08,
-      "xtp_b": 2.56,
-      "xtp_simple": 0.5,
+      "xtp": 6.72,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 3.45,
+      "xtp_simple": 2.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
       },
       "top33_record": {
-        "wins": 4,
-        "losses": 4
+        "wins": 8,
+        "losses": 6
       },
-      "wins": 8,
-      "losses": 5,
-      "top25_wins": 3,
+      "wins": 11,
+      "losses": 6,
+      "top25_wins": 4,
       "bonus_rate": 1.0
     }
   },
   "remaining": [
-    {
-      "weight": 126,
-      "wrestler_id": "37864197132",
-      "name": "Amia Lane",
-      "grade": null,
-      "wins": 0,
-      "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
     {
       "weight": 185,
       "wrestler_id": "35478714132",
@@ -142,9 +156,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 0.5,
+  "team_xTP_simple": 2.0,
   "team_metrics": {
-    "projected_state_points": 0.5,
+    "projected_state_points": 2.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -154,30 +168,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 12,
-      "losses": 17
+      "wins": 15,
+      "losses": 21
     },
     "top33": {
-      "wins": 4,
-      "losses": 11
+      "wins": 8,
+      "losses": 13
     },
     "top10": {
       "wins": 0,
-      "losses": 3
+      "losses": 5
     },
     "bonus_rate": {
       "value": 1.0,
-      "rank": 10,
+      "rank": 8,
       "rank_scope": "league"
     },
     "pin_rate": {
       "value": 1.0,
-      "rank": 4,
+      "rank": 3,
       "rank_scope": "league"
     },
     "tech_rate": {
       "value": 0.0,
-      "rank": 83,
+      "rank": 88,
       "rank_scope": "league"
     }
   }

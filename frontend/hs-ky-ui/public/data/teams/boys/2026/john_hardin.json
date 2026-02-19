@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.450112Z",
+  "generated_at_utc": "2026-02-18T22:09:29.660144Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -77,10 +77,10 @@
       "name": "Tre Wilson",
       "current_rank": 21,
       "grade": 11,
-      "xtp": 3.14,
+      "xtp": 3.01,
       "xtp_p": 0.47,
       "xtp_a": 0.96,
-      "xtp_b": 1.71,
+      "xtp_b": 1.58,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -101,10 +101,10 @@
       "name": "Bruce Anderson",
       "current_rank": 20,
       "grade": 9,
-      "xtp": 2.8,
-      "xtp_p": 0.45,
-      "xtp_a": 0.91,
-      "xtp_b": 1.44,
+      "xtp": 2.74,
+      "xtp_p": 0.47,
+      "xtp_a": 0.96,
+      "xtp_b": 1.31,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -217,10 +217,10 @@
     },
     "175": {
       "weight": 175,
-      "wrestler_id": "35064901132",
-      "name": "Charles Tucker",
-      "current_rank": 85,
-      "grade": null,
+      "wrestler_id": "35064908132",
+      "name": "Grayson Knoth",
+      "current_rank": 135,
+      "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -234,10 +234,10 @@
         "wins": 0,
         "losses": 1
       },
-      "wins": 5,
+      "wins": 2,
       "losses": 3,
       "top25_wins": 0,
-      "bonus_rate": 0.667
+      "bonus_rate": 1.0
     },
     "190": {
       "weight": 190,
@@ -427,6 +427,16 @@
     },
     {
       "weight": 175,
+      "wrestler_id": "35064901132",
+      "name": "Charles Tucker",
+      "grade": null,
+      "wins": 5,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.667
+    },
+    {
+      "weight": 175,
       "wrestler_id": "35064906132",
       "name": "Emari Simon",
       "grade": null,
@@ -434,16 +444,6 @@
       "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 0.0
-    },
-    {
-      "weight": 175,
-      "wrestler_id": "35064908132",
-      "name": "Grayson Knoth",
-      "grade": 8,
-      "wins": 2,
-      "losses": 3,
-      "top25_wins": 0,
-      "bonus_rate": 1.0
     },
     {
       "weight": 175,
@@ -508,7 +508,7 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 189,
+      "wins": 197,
       "losses": 126
     },
     "top33": {
@@ -520,18 +520,18 @@
       "losses": 10
     },
     "bonus_rate": {
-      "value": 1.025,
-      "rank": 79,
+      "value": 0.946,
+      "rank": 30,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.86,
-      "rank": 82,
+      "value": 0.792,
+      "rank": 53,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.091,
-      "rank": 87,
+      "value": 0.085,
+      "rank": 71,
       "rank_scope": "league"
     }
   }

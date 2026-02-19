@@ -6,12 +6,12 @@
   "team_rank": null,
   "weight_class": 235,
   "year": 2026,
-  "current_rank": 37,
+  "current_rank": 42,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "0-1",
+    "overall": "3-5",
+    "vs_ranked": "0-5",
     "vs_top10": "0-1",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,26 +28,86 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "35346108132",
-      "opponent_rank": 4,
-      "opponent_name": "Damari Harris",
-      "method": "Fall 1:25"
+      "opponent_id": "35333573132",
+      "opponent_rank": 41,
+      "opponent_name": "Brianna Ordonez",
+      "method": "Fall 2:45"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35333573132",
+      "opponent_name": "Brianna Ordonez",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 49,
+      "opponent_weight": 235,
+      "opponent_rank": 41,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "KHSAA Girls Region 2"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35778180132",
+      "opponent_name": "Katelynn Constance",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": 35,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "KHSAA Girls Region 2"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35333407132",
+      "opponent_name": "Sandra Francis",
+      "opponent_team": "Western",
+      "opponent_team_rank": 59,
+      "opponent_weight": 235,
+      "opponent_rank": 22,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:13",
+      "event": "KHSAA Girls Region 2"
+    },
+    {
+      "date": "2026-02-12",
+      "opponent_id": "35668839132",
+      "opponent_name": "Fatou Gueye",
+      "opponent_team": "Central",
+      "opponent_team_rank": 20,
+      "opponent_weight": 235,
+      "opponent_rank": 39,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:32",
+      "event": "vs. Valley"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "35346108132",
       "opponent_name": "Damari Harris",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 33,
       "opponent_weight": 235,
-      "opponent_rank": 4,
+      "opponent_rank": 9,
       "weight_class": "235",
       "result": "L",
       "method": "FALL",
@@ -101,5 +161,5 @@
       "event": "vs. Hopkinsville"
     }
   ],
-  "profile_generated_at": "2026-02-11"
+  "profile_generated_at": "2026-02-18"
 }

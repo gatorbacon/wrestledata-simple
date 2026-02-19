@@ -6,12 +6,12 @@
   "team_rank": 18,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 29,
+  "current_rank": 24,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "2-0",
-    "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "overall": "4-4",
+    "vs_ranked": "4-3",
+    "vs_top10": "0-2",
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,30 +24,125 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35436570132",
-      "opponent_rank": 12,
+      "opponent_rank": 11,
       "opponent_name": "Emma Bailey",
       "method": "Fall 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35352429132",
+      "opponent_rank": 29,
+      "opponent_name": "Natalia Lucas",
+      "method": "Fall 1:54"
+    }
   },
   "match_list": [
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35436569132",
+      "opponent_name": "Alianna Charles",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 21,
+      "opponent_weight": 138,
+      "opponent_rank": 32,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "KHSAA Girls Region 3"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35333678132",
+      "opponent_name": "Maddie Massengill",
+      "opponent_team": "East Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 27,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
+      "event": "KHSAA Girls Region 3"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35383812132",
+      "opponent_name": "Aaliyah Svec",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 1,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:29",
+      "event": "KHSAA Girls Region 3"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35352429132",
+      "opponent_name": "Natalia Lucas",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 29,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:54",
+      "event": "KHSAA Girls Region 3"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "OUTSTATE_8ed1778c6441",
+      "opponent_name": "Maddie Massengill",
+      "opponent_team": "East Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "KHSAA Girls Region 3"
+    },
+    {
+      "date": "2026-02-12",
+      "opponent_id": "35404899132",
+      "opponent_name": "Trinity Matthews",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 41,
+      "opponent_weight": 138,
+      "opponent_rank": 8,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lexington City Tournament (Women)"
+    },
     {
       "date": "2025-11-29",
       "opponent_id": "35436570132",
       "opponent_name": "Emma Bailey",
       "opponent_team": "Harrison County",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 21,
       "opponent_weight": 126,
-      "opponent_rank": 12,
+      "opponent_rank": 11,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -63,7 +158,7 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 30,
+      "opponent_rank": 26,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -73,10 +168,5 @@
       "mv_impact": 5.54
     }
   ],
-  "profile_generated_at": "2026-02-11",
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.9365079365079367
-  }
+  "profile_generated_at": "2026-02-18"
 }

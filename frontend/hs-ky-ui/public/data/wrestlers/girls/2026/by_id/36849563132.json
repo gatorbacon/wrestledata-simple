@@ -4,12 +4,12 @@
   "team": "Martin County",
   "team_slug": "martin_county",
   "team_rank": 45,
-  "weight_class": 120,
+  "weight_class": 114,
   "year": 2026,
-  "current_rank": 65,
+  "current_rank": 66,
   "record": {
-    "overall": "1-4",
-    "vs_ranked": "1-3",
+    "overall": "2-6",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,27 +24,72 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 3,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35333599132",
-      "opponent_rank": 76,
+      "opponent_rank": 77,
       "opponent_name": "Jayla Purcell",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "35850790132",
-      "opponent_rank": 32,
-      "opponent_name": "Hailey Diamond",
-      "method": "Fall 1:26"
+      "opponent_id": "35333390132",
+      "opponent_rank": 50,
+      "opponent_name": "Jennifer Vargus",
+      "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35333418132",
+      "opponent_name": "Chyanne Maggard",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 27,
+      "opponent_weight": 114,
+      "opponent_rank": 20,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:27",
+      "event": "KHSAA Girls Region 4"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35643505132",
+      "opponent_name": "Ava Hunter",
+      "opponent_team": "Campbellsville",
+      "opponent_team_rank": 19,
+      "opponent_weight": 114,
+      "opponent_rank": 32,
+      "weight_class": "114",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:21",
+      "event": "KHSAA Girls Region 4"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "37806759132",
+      "opponent_name": "Zoey Whitt",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": null,
+      "opponent_weight": 114,
+      "opponent_rank": 103,
+      "weight_class": "114",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:40",
+      "event": "KHSAA Girls Region 4"
+    },
     {
       "date": "2026-02-05",
       "opponent_id": "35850790132",
@@ -52,7 +97,7 @@
       "opponent_team": "Boyd County",
       "opponent_team_rank": 32,
       "opponent_weight": 126,
-      "opponent_rank": 32,
+      "opponent_rank": 31,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -65,9 +110,9 @@
       "opponent_id": "35333390132",
       "opponent_name": "Jennifer Vargus",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 12,
-      "opponent_weight": 120,
-      "opponent_rank": 22,
+      "opponent_team_rank": 10,
+      "opponent_weight": 126,
+      "opponent_rank": 50,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -80,9 +125,9 @@
       "opponent_id": "35333599132",
       "opponent_name": "Jayla Purcell",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 10,
       "opponent_weight": 120,
-      "opponent_rank": 76,
+      "opponent_rank": 77,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -97,7 +142,7 @@
       "opponent_team": "Boyd County",
       "opponent_team_rank": 32,
       "opponent_weight": 126,
-      "opponent_rank": 32,
+      "opponent_rank": 31,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -122,10 +167,5 @@
       "event": "Bobby Bates Girls Wrestling Classic"
     }
   ],
-  "profile_generated_at": "2026-02-11",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.15625
-  }
+  "profile_generated_at": "2026-02-18"
 }

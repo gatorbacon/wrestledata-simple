@@ -6,12 +6,12 @@
   "team_rank": null,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 69,
+  "current_rank": 66,
   "record": {
-    "overall": "4-9",
-    "vs_ranked": "1-8",
+    "overall": "4-11",
+    "vs_ranked": "1-10",
     "vs_top10": "0-1",
-    "vs_top25": "0-5"
+    "vs_top25": "0-7"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,31 +28,61 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 8,
+    "ranked_losses": 10,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35337105132",
-      "opponent_rank": 50,
+      "opponent_rank": 54,
       "opponent_name": "Faith Pearson",
       "method": "UTB 4-4"
     },
     "worst_loss": {
-      "opponent_id": "35333616132",
-      "opponent_rank": 43,
-      "opponent_name": "Zeliah Cooper",
-      "method": "Fall 0:26"
+      "opponent_id": "35333390132",
+      "opponent_rank": 50,
+      "opponent_name": "Jennifer Vargus",
+      "method": "Fall 1:18"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35436570132",
+      "opponent_name": "Emma Bailey",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 21,
+      "opponent_weight": 126,
+      "opponent_rank": 11,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:55",
+      "event": "KHSAA Girls Region 3"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35333390132",
+      "opponent_name": "Jennifer Vargus",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 10,
+      "opponent_weight": 126,
+      "opponent_rank": 50,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
+      "event": "KHSAA Girls Region 3"
+    },
     {
       "date": "2026-02-07",
       "opponent_id": "35640614132",
       "opponent_name": "Rhyn Trahan",
       "opponent_team": "Christian County",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 4,
       "opponent_weight": 126,
-      "opponent_rank": 37,
+      "opponent_rank": 36,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -66,8 +96,8 @@
       "opponent_name": "Chloe Schwanenberger",
       "opponent_team": "Walton-Verona",
       "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": 14,
+      "opponent_weight": 132,
+      "opponent_rank": 19,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -125,7 +155,7 @@
       "opponent_id": "35461783132",
       "opponent_name": "Braelyn Babb",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 54,
       "opponent_weight": 126,
       "opponent_rank": 21,
       "weight_class": "126",
@@ -187,7 +217,7 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 11,
+      "opponent_rank": 8,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -200,9 +230,9 @@
       "opponent_id": "35333616132",
       "opponent_name": "Zeliah Cooper",
       "opponent_team": "Taylor County",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 58,
       "opponent_weight": 120,
-      "opponent_rank": 43,
+      "opponent_rank": 19,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -217,7 +247,7 @@
       "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 10,
+      "opponent_rank": 11,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -232,7 +262,7 @@
       "opponent_team": "Russellville",
       "opponent_team_rank": 52,
       "opponent_weight": 126,
-      "opponent_rank": 50,
+      "opponent_rank": 54,
       "weight_class": "126",
       "result": "W",
       "method": "DEC",
@@ -241,10 +271,5 @@
       "event": "2025 Ohio County Girls` Invitational"
     }
   ],
-  "profile_generated_at": "2026-02-11",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.5402298850574712
-  }
+  "profile_generated_at": "2026-02-18"
 }

@@ -6,12 +6,12 @@
   "team_rank": 1,
   "weight_class": 185,
   "year": 2026,
-  "current_rank": 59,
+  "current_rank": 53,
   "record": {
-    "overall": "0-3",
-    "vs_ranked": "0-3",
-    "vs_top10": "0-1",
-    "vs_top25": "0-3"
+    "overall": "1-6",
+    "vs_ranked": "1-6",
+    "vs_top10": "0-3",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 0.0,
@@ -27,33 +27,83 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 3,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "top10_losses": 3,
+    "win_over_highest_rank": {
+      "opponent_id": "35407428132",
+      "opponent_rank": 48,
+      "opponent_name": "Zoey Eide",
+      "method": "Dec 12-8"
+    },
     "worst_loss": {
-      "opponent_id": "35542620132",
-      "opponent_rank": 24,
-      "opponent_name": "Marita Jones",
-      "method": "Fall 0:29"
+      "opponent_id": "35333665132",
+      "opponent_rank": 46,
+      "opponent_name": "Alma Heba",
+      "method": "Dec 7-3"
     }
   },
   "match_list": [
     {
-      "date": "2026-01-17",
-      "opponent_id": "35461622132",
-      "opponent_name": "Alayna Banks",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 15,
-      "opponent_weight": 165,
-      "opponent_rank": 16,
+      "date": "2026-02-14",
+      "opponent_id": "35407428132",
+      "opponent_name": "Zoey Eide",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 48,
+      "weight_class": "185",
+      "result": "W",
+      "method": "DEC",
+      "score": "12-8",
+      "duration": "7:00",
+      "event": "KHSAA Girls Region 3"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35333665132",
+      "opponent_name": "Alma Heba",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": null,
+      "opponent_weight": 185,
+      "opponent_rank": 46,
+      "weight_class": "185",
+      "result": "L",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "KHSAA Girls Region 3"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35404891132",
+      "opponent_name": "Clarytza Castillejos Santos",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 41,
+      "opponent_weight": 185,
+      "opponent_rank": 7,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Mestengo Invitational"
+      "duration": "0:33",
+      "event": "KHSAA Girls Region 3"
+    },
+    {
+      "date": "2026-02-12",
+      "opponent_id": "35333665132",
+      "opponent_name": "Alma Heba",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": null,
+      "opponent_weight": 185,
+      "opponent_rank": 46,
+      "weight_class": "185",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Lexington City Tournament (Women)"
     },
     {
       "date": "2026-01-17",
@@ -62,12 +112,27 @@
       "opponent_team": "Central",
       "opponent_team_rank": 20,
       "opponent_weight": 185,
-      "opponent_rank": 24,
+      "opponent_rank": 20,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:29",
+      "event": "Mestengo Invitational"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35461622132",
+      "opponent_name": "Alayna Banks",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 54,
+      "opponent_weight": 185,
+      "opponent_rank": 6,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "Mestengo Invitational"
     },
     {
@@ -77,7 +142,7 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": 41,
       "opponent_weight": 185,
-      "opponent_rank": 4,
+      "opponent_rank": 7,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
@@ -86,10 +151,5 @@
       "event": "vs. Lafayette"
     }
   ],
-  "profile_generated_at": "2026-02-11",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.6956521739130435
-  }
+  "profile_generated_at": "2026-02-18"
 }

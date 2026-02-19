@@ -6,12 +6,12 @@
   "team_rank": null,
   "weight_class": 100,
   "year": 2026,
-  "current_rank": 34,
+  "current_rank": 36,
   "record": {
-    "overall": "6-5",
-    "vs_ranked": "6-2",
+    "overall": "6-7",
+    "vs_ranked": "6-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,23 +28,53 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 6,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35897898132",
-      "opponent_rank": 44,
+      "opponent_rank": 45,
       "opponent_name": "Madison Daughtery",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35922395132",
-      "opponent_rank": 36,
+      "opponent_rank": 41,
       "opponent_name": "Tabitha McGuire",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35333431132",
+      "opponent_name": "Emma McDavid",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 27,
+      "opponent_weight": 100,
+      "opponent_rank": 22,
+      "weight_class": "100",
+      "result": "L",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "KHSAA Girls Region 4"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35369132132",
+      "opponent_name": "Novalee Goins",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 100,
+      "opponent_rank": 29,
+      "weight_class": "100",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-7",
+      "duration": "7:00",
+      "event": "KHSAA Girls Region 4"
+    },
     {
       "date": "2026-01-06",
       "opponent_id": "35333431132",
@@ -52,7 +82,7 @@
       "opponent_team": "Ashland Blazer",
       "opponent_team_rank": 27,
       "opponent_weight": 100,
-      "opponent_rank": 20,
+      "opponent_rank": 22,
       "weight_class": "100",
       "result": "L",
       "method": "MD",
@@ -67,7 +97,7 @@
       "opponent_team": "Boyd County",
       "opponent_team_rank": 32,
       "opponent_weight": 100,
-      "opponent_rank": 44,
+      "opponent_rank": 45,
       "weight_class": "100",
       "result": "W",
       "method": "FALL",
@@ -97,7 +127,7 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 50,
       "opponent_weight": 107,
-      "opponent_rank": 49,
+      "opponent_rank": 48,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -142,7 +172,7 @@
       "opponent_team": "Perry County Central",
       "opponent_team_rank": 50,
       "opponent_weight": 107,
-      "opponent_rank": 49,
+      "opponent_rank": 48,
       "weight_class": "107",
       "result": "W",
       "method": "MFF",
@@ -157,7 +187,7 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 52,
+      "opponent_rank": 51,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -172,7 +202,7 @@
       "opponent_team": "West Carter",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 36,
+      "opponent_rank": 41,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -187,7 +217,7 @@
       "opponent_team": "Boyd County",
       "opponent_team_rank": 32,
       "opponent_weight": 100,
-      "opponent_rank": 44,
+      "opponent_rank": 45,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -202,7 +232,7 @@
       "opponent_team": "Boyd County",
       "opponent_team_rank": 32,
       "opponent_weight": 100,
-      "opponent_rank": 52,
+      "opponent_rank": 53,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -211,5 +241,5 @@
       "event": "AWC Invitational"
     }
   ],
-  "profile_generated_at": "2026-02-11"
+  "profile_generated_at": "2026-02-18"
 }

@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:01.277189Z",
+  "generated_at_utc": "2026-02-18T22:09:30.494723Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -53,10 +53,10 @@
       "name": "wyatt smith",
       "current_rank": 19,
       "grade": 10,
-      "xtp": 3.64,
-      "xtp_p": 0.47,
-      "xtp_a": 0.96,
-      "xtp_b": 2.21,
+      "xtp": 3.78,
+      "xtp_p": 0.41,
+      "xtp_a": 1.02,
+      "xtp_b": 2.35,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -77,10 +77,10 @@
       "name": "chase quetone",
       "current_rank": 13,
       "grade": 10,
-      "xtp": 4.93,
-      "xtp_p": 1.16,
-      "xtp_a": 1.37,
-      "xtp_b": 2.4,
+      "xtp": 4.47,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 2.27,
       "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
@@ -101,11 +101,11 @@
       "name": "Bryson smith",
       "current_rank": 45,
       "grade": 11,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
+      "xtp": 2.23,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 1.29,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 0
@@ -121,30 +121,6 @@
     },
     "132": {
       "weight": 132,
-      "wrestler_id": "35885907132",
-      "name": "gabriel denney",
-      "current_rank": 109,
-      "grade": 12,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 2
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 6
-      },
-      "wins": 20,
-      "losses": 21,
-      "top25_wins": 0,
-      "bonus_rate": 0.929
-    },
-    "138": {
-      "weight": 138,
       "wrestler_id": "35886049132",
       "name": "brenden little",
       "current_rank": 58,
@@ -245,10 +221,10 @@
       "name": "ian tucker",
       "current_rank": 11,
       "grade": 11,
-      "xtp": 6.42,
+      "xtp": 6.45,
       "xtp_p": 1.69,
       "xtp_a": 1.58,
-      "xtp_b": 3.15,
+      "xtp_b": 3.18,
       "xtp_simple": 3.0,
       "top10_record": {
         "wins": 0,
@@ -382,6 +358,16 @@
       "bonus_rate": 0.0
     },
     {
+      "weight": 132,
+      "wrestler_id": "35885907132",
+      "name": "gabriel denney",
+      "grade": 12,
+      "wins": 20,
+      "losses": 21,
+      "top25_wins": 0,
+      "bonus_rate": 0.929
+    },
+    {
       "weight": 144,
       "wrestler_id": "35886620132",
       "name": "monica botzoc",
@@ -432,9 +418,9 @@
       "bonus_rate": 1.0
     }
   ],
-  "team_xTP_simple": 9.0,
+  "team_xTP_simple": 9.5,
   "team_metrics": {
-    "projected_state_points": 9.0,
+    "projected_state_points": 9.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -444,30 +430,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 270,
-      "losses": 158
+      "wins": 266,
+      "losses": 147
     },
     "top33": {
       "wins": 21,
-      "losses": 49
+      "losses": 43
     },
     "top10": {
       "wins": 3,
-      "losses": 20
+      "losses": 18
     },
     "bonus_rate": {
-      "value": 0.995,
-      "rank": 93,
+      "value": 0.916,
+      "rank": 54,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.926,
-      "rank": 64,
+      "value": 0.847,
+      "rank": 27,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.043,
-      "rank": 121,
+      "value": 0.042,
+      "rank": 117,
       "rank_scope": "league"
     }
   }

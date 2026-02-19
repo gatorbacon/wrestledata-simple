@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.698927Z",
+  "generated_at_utc": "2026-02-18T22:09:29.896872Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -97,27 +97,27 @@
     },
     "126": {
       "weight": 126,
-      "wrestler_id": "34993554132",
-      "name": "Kevin Hernandez Gari",
-      "current_rank": 27,
+      "wrestler_id": "34993556132",
+      "name": "Joseph Muhinda",
+      "current_rank": 44,
       "grade": 10,
-      "xtp": 2.24,
-      "xtp_p": 0.25,
-      "xtp_a": 0.69,
-      "xtp_b": 1.3,
-      "xtp_simple": 0.5,
+      "xtp": 1.83,
+      "xtp_p": 0.22,
+      "xtp_a": 0.59,
+      "xtp_b": 1.02,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "top33_record": {
-        "wins": 2,
-        "losses": 7
+        "wins": 1,
+        "losses": 5
       },
-      "wins": 19,
-      "losses": 10,
+      "wins": 15,
+      "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.909
     },
     "132": {
       "weight": 132,
@@ -125,10 +125,10 @@
       "name": "Tyson English",
       "current_rank": 14,
       "grade": 10,
-      "xtp": 4.55,
+      "xtp": 4.35,
       "xtp_p": 0.93,
       "xtp_a": 1.27,
-      "xtp_b": 2.35,
+      "xtp_b": 2.15,
       "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
@@ -197,10 +197,10 @@
       "name": "Santiago Gonzalez",
       "current_rank": 3,
       "grade": 10,
-      "xtp": 15.38,
+      "xtp": 15.31,
       "xtp_p": 8.02,
       "xtp_a": 3.12,
-      "xtp_b": 4.24,
+      "xtp_b": 4.17,
       "xtp_simple": 21.0,
       "top10_record": {
         "wins": 5,
@@ -221,10 +221,10 @@
       "name": "Joseph Habimana",
       "current_rank": 14,
       "grade": 11,
-      "xtp": 4.33,
+      "xtp": 4.38,
       "xtp_p": 0.93,
       "xtp_a": 1.27,
-      "xtp_b": 2.13,
+      "xtp_b": 2.18,
       "xtp_simple": 2.5,
       "top10_record": {
         "wins": 1,
@@ -423,13 +423,13 @@
     },
     {
       "weight": 126,
-      "wrestler_id": "34993556132",
-      "name": "Joseph Muhinda",
+      "wrestler_id": "34993554132",
+      "name": "Kevin Hernandez Gari",
       "grade": 10,
-      "wins": 15,
-      "losses": 7,
+      "wins": 19,
+      "losses": 10,
       "top25_wins": 0,
-      "bonus_rate": 0.909
+      "bonus_rate": 1.0
     },
     {
       "weight": 132,
@@ -702,9 +702,9 @@
       "bonus_rate": 1.0
     }
   ],
-  "team_xTP_simple": 40.0,
+  "team_xTP_simple": 39.5,
   "team_metrics": {
-    "projected_state_points": 40.0,
+    "projected_state_points": 39.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -714,30 +714,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 206,
-      "losses": 133
+      "wins": 229,
+      "losses": 155
     },
     "top33": {
-      "wins": 40,
-      "losses": 76
+      "wins": 39,
+      "losses": 74
     },
     "top10": {
       "wins": 9,
-      "losses": 35
+      "losses": 36
     },
     "bonus_rate": {
-      "value": 1.017,
-      "rank": 82,
+      "value": 0.872,
+      "rank": 94,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.75,
-      "rank": 120,
+      "value": 0.636,
+      "rank": 131,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.18,
-      "rank": 23,
+      "value": 0.154,
+      "rank": 17,
       "rank_scope": "league"
     }
   }

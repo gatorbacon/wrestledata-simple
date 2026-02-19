@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.496547Z",
+  "generated_at_utc": "2026-02-18T22:09:29.705970Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -77,10 +77,10 @@
       "name": "Kadham Alghanemi",
       "current_rank": 10,
       "grade": 12,
-      "xtp": 6.12,
+      "xtp": 6.1,
       "xtp_p": 1.9,
       "xtp_a": 1.69,
-      "xtp_b": 2.53,
+      "xtp_b": 2.51,
       "xtp_simple": 3.0,
       "top10_record": {
         "wins": 0,
@@ -101,10 +101,10 @@
       "name": "Axel Camacho",
       "current_rank": 32,
       "grade": 12,
-      "xtp": 1.42,
-      "xtp_p": 0.15,
-      "xtp_a": 0.44,
-      "xtp_b": 0.83,
+      "xtp": 1.01,
+      "xtp_p": 0.09,
+      "xtp_a": 0.34,
+      "xtp_b": 0.58,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -125,10 +125,10 @@
       "name": "Sergio Vasquez Gomez",
       "current_rank": 25,
       "grade": 12,
-      "xtp": 1.7,
+      "xtp": 1.69,
       "xtp_p": 0.22,
       "xtp_a": 0.64,
-      "xtp_b": 0.84,
+      "xtp_b": 0.83,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -145,10 +145,10 @@
     },
     "138": {
       "weight": 138,
-      "wrestler_id": "35404981132",
-      "name": "Gunnar Wickstrom",
-      "current_rank": 193,
-      "grade": 9,
+      "wrestler_id": "35433721132",
+      "name": "Alex Justice",
+      "current_rank": 191,
+      "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -156,14 +156,14 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 0
       },
       "top33_record": {
         "wins": 0,
-        "losses": 5
+        "losses": 1
       },
-      "wins": 2,
-      "losses": 13,
+      "wins": 1,
+      "losses": 5,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -355,16 +355,6 @@
     },
     {
       "weight": 138,
-      "wrestler_id": "35433721132",
-      "name": "Alex Justice",
-      "grade": 8,
-      "wins": 1,
-      "losses": 5,
-      "top25_wins": 0,
-      "bonus_rate": 1.0
-    },
-    {
-      "weight": 138,
       "wrestler_id": "35433713132",
       "name": "Austin Ramsey",
       "grade": null,
@@ -390,6 +380,16 @@
       "grade": 8,
       "wins": 1,
       "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 138,
+      "wrestler_id": "35404981132",
+      "name": "Gunnar Wickstrom",
+      "grade": 9,
+      "wins": 2,
+      "losses": 13,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -476,30 +476,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 100,
-      "losses": 99
+      "wins": 101,
+      "losses": 93
     },
     "top33": {
       "wins": 17,
-      "losses": 42
+      "losses": 38
     },
     "top10": {
       "wins": 2,
-      "losses": 17
+      "losses": 15
     },
     "bonus_rate": {
-      "value": 0.859,
-      "rank": 135,
+      "value": 0.84,
+      "rank": 121,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.657,
-      "rank": 137,
+      "value": 0.65,
+      "rank": 127,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.152,
-      "rank": 32,
+      "value": 0.14,
+      "rank": 22,
       "rank_scope": "league"
     }
   }

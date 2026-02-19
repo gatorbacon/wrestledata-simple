@@ -121161,7 +121161,7 @@ window.SEARCH_INDEX = [
       "emma",
       "mcdavid"
     ],
-    "rank": 20,
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -121175,7 +121175,7 @@ window.SEARCH_INDEX = [
       "kaylee",
       "mckown"
     ],
-    "rank": 4,
+    "rank": 5,
     "gender": "girls"
   },
   {
@@ -121194,20 +121194,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Aaliyah Hackney",
-    "first_name": "Aaliyah",
-    "last_name": "Hackney",
-    "secondary": "Belfry · 100",
-    "url": "/wrestler.html?id=35814907132&gender=girls",
-    "searchTokens": [
-      "aaliyah",
-      "hackney"
-    ],
-    "rank": 16,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Mia Barnett",
     "first_name": "Mia",
     "last_name": "Barnett",
@@ -121217,7 +121203,7 @@ window.SEARCH_INDEX = [
       "barnett",
       "mia"
     ],
-    "rank": 38,
+    "rank": 37,
     "gender": "girls"
   },
   {
@@ -121231,7 +121217,7 @@ window.SEARCH_INDEX = [
       "goins",
       "novalee"
     ],
-    "rank": 27,
+    "rank": 29,
     "gender": "girls"
   },
   {
@@ -121245,7 +121231,7 @@ window.SEARCH_INDEX = [
       "daughtery",
       "madison"
     ],
-    "rank": 50,
+    "rank": 51,
     "gender": "girls"
   },
   {
@@ -121259,7 +121245,7 @@ window.SEARCH_INDEX = [
       "aaliyah",
       "stephen"
     ],
-    "rank": 45,
+    "rank": 43,
     "gender": "girls"
   },
   {
@@ -121287,7 +121273,7 @@ window.SEARCH_INDEX = [
       "hundley",
       "teagan"
     ],
-    "rank": 7,
+    "rank": 8,
     "gender": "girls"
   },
   {
@@ -121301,7 +121287,7 @@ window.SEARCH_INDEX = [
       "martin",
       "savannah"
     ],
-    "rank": 13,
+    "rank": 14,
     "gender": "girls"
   },
   {
@@ -121329,7 +121315,7 @@ window.SEARCH_INDEX = [
       "kraft",
       "samantha"
     ],
-    "rank": 53,
+    "rank": 52,
     "gender": "girls"
   },
   {
@@ -121344,7 +121330,7 @@ window.SEARCH_INDEX = [
       "bardales",
       "lopez"
     ],
-    "rank": 44,
+    "rank": 40,
     "gender": "girls"
   },
   {
@@ -121358,7 +121344,7 @@ window.SEARCH_INDEX = [
       "hogan",
       "mackenna"
     ],
-    "rank": 32,
+    "rank": 34,
     "gender": "girls"
   },
   {
@@ -121386,7 +121372,7 @@ window.SEARCH_INDEX = [
       "brooklyn",
       "holcomb"
     ],
-    "rank": 34,
+    "rank": 36,
     "gender": "girls"
   },
   {
@@ -121400,7 +121386,7 @@ window.SEARCH_INDEX = [
       "bolen",
       "jaycee"
     ],
-    "rank": 48,
+    "rank": 46,
     "gender": "girls"
   },
   {
@@ -121414,7 +121400,7 @@ window.SEARCH_INDEX = [
       "cassell",
       "grace"
     ],
-    "rank": 39,
+    "rank": 38,
     "gender": "girls"
   },
   {
@@ -121428,7 +121414,7 @@ window.SEARCH_INDEX = [
       "emily",
       "herrera"
     ],
-    "rank": 30,
+    "rank": 31,
     "gender": "girls"
   },
   {
@@ -121442,7 +121428,7 @@ window.SEARCH_INDEX = [
       "butler",
       "olivia"
     ],
-    "rank": 33,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -121470,7 +121456,7 @@ window.SEARCH_INDEX = [
       "loralei",
       "nelson"
     ],
-    "rank": 15,
+    "rank": 16,
     "gender": "girls"
   },
   {
@@ -121484,7 +121470,7 @@ window.SEARCH_INDEX = [
       "galilea",
       "guivas"
     ],
-    "rank": 42,
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -121526,7 +121512,7 @@ window.SEARCH_INDEX = [
       "booth",
       "riley"
     ],
-    "rank": 28,
+    "rank": 20,
     "gender": "girls"
   },
   {
@@ -121540,7 +121526,7 @@ window.SEARCH_INDEX = [
       "gary",
       "harmony"
     ],
-    "rank": 43,
+    "rank": 39,
     "gender": "girls"
   },
   {
@@ -121554,7 +121540,7 @@ window.SEARCH_INDEX = [
       "diana",
       "vawter"
     ],
-    "rank": 47,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -121582,7 +121568,7 @@ window.SEARCH_INDEX = [
       "harper",
       "swanson"
     ],
-    "rank": 31,
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -121596,7 +121582,7 @@ window.SEARCH_INDEX = [
       "adams",
       "katelyn"
     ],
-    "rank": 14,
+    "rank": 15,
     "gender": "girls"
   },
   {
@@ -121610,7 +121596,7 @@ window.SEARCH_INDEX = [
       "escobedo",
       "genesis"
     ],
-    "rank": 23,
+    "rank": 25,
     "gender": "girls"
   },
   {
@@ -121624,7 +121610,7 @@ window.SEARCH_INDEX = [
       "brielle",
       "richardson"
     ],
-    "rank": 5,
+    "rank": 6,
     "gender": "girls"
   },
   {
@@ -121652,7 +121638,7 @@ window.SEARCH_INDEX = [
       "hampton",
       "zariah"
     ],
-    "rank": 12,
+    "rank": 13,
     "gender": "girls"
   },
   {
@@ -121666,7 +121652,7 @@ window.SEARCH_INDEX = [
       "estep",
       "kenleigh"
     ],
-    "rank": 35,
+    "rank": 3,
     "gender": "girls"
   },
   {
@@ -121694,7 +121680,7 @@ window.SEARCH_INDEX = [
       "collins",
       "paige"
     ],
-    "rank": 51,
+    "rank": 50,
     "gender": "girls"
   },
   {
@@ -121722,7 +121708,7 @@ window.SEARCH_INDEX = [
       "keyonna",
       "mitchell"
     ],
-    "rank": 10,
+    "rank": 12,
     "gender": "girls"
   },
   {
@@ -121736,7 +121722,7 @@ window.SEARCH_INDEX = [
       "canada",
       "sierra"
     ],
-    "rank": 37,
+    "rank": 32,
     "gender": "girls"
   },
   {
@@ -121751,7 +121737,7 @@ window.SEARCH_INDEX = [
       "luz",
       "perez"
     ],
-    "rank": 36,
+    "rank": 47,
     "gender": "girls"
   },
   {
@@ -121765,7 +121751,7 @@ window.SEARCH_INDEX = [
       "lenda",
       "saleh"
     ],
-    "rank": 29,
+    "rank": 30,
     "gender": "girls"
   },
   {
@@ -121793,7 +121779,7 @@ window.SEARCH_INDEX = [
       "madyson",
       "votaw"
     ],
-    "rank": 3,
+    "rank": 4,
     "gender": "girls"
   },
   {
@@ -121835,7 +121821,7 @@ window.SEARCH_INDEX = [
       "partee",
       "tamara"
     ],
-    "rank": 8,
+    "rank": 9,
     "gender": "girls"
   },
   {
@@ -121849,7 +121835,21 @@ window.SEARCH_INDEX = [
       "autry",
       "lily"
     ],
-    "rank": 6,
+    "rank": 7,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Avah Fontana",
+    "first_name": "Avah",
+    "last_name": "Fontana",
+    "secondary": "Oldham County · 100",
+    "url": "/wrestler.html?id=36550628132&gender=girls",
+    "searchTokens": [
+      "avah",
+      "fontana"
+    ],
+    "rank": 48,
     "gender": "girls"
   },
   {
@@ -121863,7 +121863,7 @@ window.SEARCH_INDEX = [
       "dalis",
       "johnston"
     ],
-    "rank": 25,
+    "rank": 27,
     "gender": "girls"
   },
   {
@@ -121877,7 +121877,7 @@ window.SEARCH_INDEX = [
       "bree",
       "kimberlin"
     ],
-    "rank": 26,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -121905,7 +121905,7 @@ window.SEARCH_INDEX = [
       "beeken",
       "susie"
     ],
-    "rank": 21,
+    "rank": 23,
     "gender": "girls"
   },
   {
@@ -121947,7 +121947,7 @@ window.SEARCH_INDEX = [
       "miley",
       "pennington"
     ],
-    "rank": 46,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -121961,7 +121961,7 @@ window.SEARCH_INDEX = [
       "clara",
       "griffin"
     ],
-    "rank": 40,
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -121975,7 +121975,7 @@ window.SEARCH_INDEX = [
       "jena",
       "robinson"
     ],
-    "rank": 52,
+    "rank": 53,
     "gender": "girls"
   },
   {
@@ -122017,7 +122017,7 @@ window.SEARCH_INDEX = [
       "cristina",
       "miralda"
     ],
-    "rank": 19,
+    "rank": 21,
     "gender": "girls"
   },
   {
@@ -122031,7 +122031,7 @@ window.SEARCH_INDEX = [
       "miralda",
       "sofia"
     ],
-    "rank": 22,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -122074,7 +122074,7 @@ window.SEARCH_INDEX = [
       "helm",
       "teresa"
     ],
-    "rank": 24,
+    "rank": 26,
     "gender": "girls"
   },
   {
@@ -122131,7 +122131,7 @@ window.SEARCH_INDEX = [
       "bijou",
       "brown"
     ],
-    "rank": 9,
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -122311,6 +122311,21 @@ window.SEARCH_INDEX = [
     "url": "/wrestler.html?id=OUTSTATE_17200c877caa&gender=girls",
     "searchTokens": [
       "unknown"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Luz Perez Cruz",
+    "first_name": "Luz",
+    "last_name": "Perez Cruz",
+    "secondary": "Moore · 100",
+    "url": "/wrestler.html?id=OUTSTATE_d388d4f42a6e&gender=girls",
+    "searchTokens": [
+      "cruz",
+      "luz",
+      "perez"
     ],
     "rank": null,
     "gender": "girls"
@@ -122736,6 +122751,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Susie Beeken",
+    "first_name": "Susie",
+    "last_name": "Beeken",
+    "secondary": "Paul Laurence Dunbar · 100",
+    "url": "/wrestler.html?id=OUTSTATE_41639b51c737&gender=girls",
+    "searchTokens": [
+      "beeken",
+      "susie"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "elissa salcedo",
     "first_name": "elissa",
     "last_name": "salcedo",
@@ -122833,6 +122862,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Savannah Martin",
+    "first_name": "Savannah",
+    "last_name": "Martin",
+    "secondary": "Bullitt East · 100",
+    "url": "/wrestler.html?id=OUTSTATE_65d47b2aa0b3&gender=girls",
+    "searchTokens": [
+      "martin",
+      "savannah"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "P Hoehn",
     "first_name": "P",
     "last_name": "Hoehn",
@@ -122883,6 +122926,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "allah",
       "lopez"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Diana Vawter",
+    "first_name": "Diana",
+    "last_name": "Vawter",
+    "secondary": "Holmes · 100",
+    "url": "/wrestler.html?id=OUTSTATE_bf5d8c3c4db3&gender=girls",
+    "searchTokens": [
+      "diana",
+      "vawter"
     ],
     "rank": null,
     "gender": "girls"
@@ -123178,7 +123235,21 @@ window.SEARCH_INDEX = [
       "mallory",
       "ohlson"
     ],
-    "rank": 63,
+    "rank": 34,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Aaliyah Hackney",
+    "first_name": "Aaliyah",
+    "last_name": "Hackney",
+    "secondary": "Belfry · 107",
+    "url": "/wrestler.html?id=35814907132&gender=girls",
+    "searchTokens": [
+      "aaliyah",
+      "hackney"
+    ],
+    "rank": 38,
     "gender": "girls"
   },
   {
@@ -123192,7 +123263,7 @@ window.SEARCH_INDEX = [
       "good",
       "keira"
     ],
-    "rank": 28,
+    "rank": 30,
     "gender": "girls"
   },
   {
@@ -123220,7 +123291,7 @@ window.SEARCH_INDEX = [
       "adalyn",
       "perry"
     ],
-    "rank": 13,
+    "rank": 14,
     "gender": "girls"
   },
   {
@@ -123234,7 +123305,7 @@ window.SEARCH_INDEX = [
       "camila",
       "ramirez"
     ],
-    "rank": 52,
+    "rank": 54,
     "gender": "girls"
   },
   {
@@ -123248,7 +123319,7 @@ window.SEARCH_INDEX = [
       "izabella",
       "mansfield"
     ],
-    "rank": 67,
+    "rank": 68,
     "gender": "girls"
   },
   {
@@ -123262,7 +123333,7 @@ window.SEARCH_INDEX = [
       "cappelli",
       "hayley"
     ],
-    "rank": 14,
+    "rank": 17,
     "gender": "girls"
   },
   {
@@ -123276,7 +123347,7 @@ window.SEARCH_INDEX = [
       "adia",
       "clark"
     ],
-    "rank": 62,
+    "rank": 65,
     "gender": "girls"
   },
   {
@@ -123290,7 +123361,7 @@ window.SEARCH_INDEX = [
       "chimela",
       "lipson"
     ],
-    "rank": 17,
+    "rank": 25,
     "gender": "girls"
   },
   {
@@ -123318,7 +123389,7 @@ window.SEARCH_INDEX = [
       "hunter",
       "onyx"
     ],
-    "rank": 21,
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -123346,7 +123417,7 @@ window.SEARCH_INDEX = [
       "lee",
       "min"
     ],
-    "rank": 65,
+    "rank": 66,
     "gender": "girls"
   },
   {
@@ -123360,7 +123431,7 @@ window.SEARCH_INDEX = [
       "alojado",
       "hera"
     ],
-    "rank": 11,
+    "rank": 9,
     "gender": "girls"
   },
   {
@@ -123374,7 +123445,7 @@ window.SEARCH_INDEX = [
       "collins",
       "kaylin"
     ],
-    "rank": 64,
+    "rank": 61,
     "gender": "girls"
   },
   {
@@ -123388,7 +123459,7 @@ window.SEARCH_INDEX = [
       "allen",
       "denaejahi"
     ],
-    "rank": 43,
+    "rank": 47,
     "gender": "girls"
   },
   {
@@ -123402,7 +123473,7 @@ window.SEARCH_INDEX = [
       "hser",
       "moo"
     ],
-    "rank": 34,
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -123416,7 +123487,7 @@ window.SEARCH_INDEX = [
       "desiree",
       "devore"
     ],
-    "rank": 19,
+    "rank": 20,
     "gender": "girls"
   },
   {
@@ -123430,7 +123501,7 @@ window.SEARCH_INDEX = [
       "payton",
       "pomeroy"
     ],
-    "rank": 1,
+    "rank": 37,
     "gender": "girls"
   },
   {
@@ -123444,7 +123515,7 @@ window.SEARCH_INDEX = [
       "aaliyah",
       "bronger"
     ],
-    "rank": 15,
+    "rank": 18,
     "gender": "girls"
   },
   {
@@ -123458,7 +123529,7 @@ window.SEARCH_INDEX = [
       "carolina",
       "mya"
     ],
-    "rank": 47,
+    "rank": 49,
     "gender": "girls"
   },
   {
@@ -123472,7 +123543,7 @@ window.SEARCH_INDEX = [
       "witt",
       "zemirah"
     ],
-    "rank": 41,
+    "rank": 16,
     "gender": "girls"
   },
   {
@@ -123486,7 +123557,7 @@ window.SEARCH_INDEX = [
       "braylee",
       "drake"
     ],
-    "rank": 55,
+    "rank": 56,
     "gender": "girls"
   },
   {
@@ -123500,7 +123571,7 @@ window.SEARCH_INDEX = [
       "avant",
       "renee"
     ],
-    "rank": 68,
+    "rank": 67,
     "gender": "girls"
   },
   {
@@ -123528,7 +123599,7 @@ window.SEARCH_INDEX = [
       "hernandez-ponce",
       "lizeth"
     ],
-    "rank": 48,
+    "rank": 36,
     "gender": "girls"
   },
   {
@@ -123556,7 +123627,7 @@ window.SEARCH_INDEX = [
       "hicks",
       "paisley"
     ],
-    "rank": 23,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -123570,7 +123641,7 @@ window.SEARCH_INDEX = [
       "macayla",
       "pike"
     ],
-    "rank": 16,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -123612,7 +123683,7 @@ window.SEARCH_INDEX = [
       "anaya",
       "camilla"
     ],
-    "rank": 58,
+    "rank": 63,
     "gender": "girls"
   },
   {
@@ -123626,7 +123697,7 @@ window.SEARCH_INDEX = [
       "neriah",
       "trice"
     ],
-    "rank": 53,
+    "rank": 57,
     "gender": "girls"
   },
   {
@@ -123641,7 +123712,7 @@ window.SEARCH_INDEX = [
       "ruano",
       "salazar"
     ],
-    "rank": 56,
+    "rank": 64,
     "gender": "girls"
   },
   {
@@ -123655,7 +123726,7 @@ window.SEARCH_INDEX = [
       "arroyo",
       "jossie"
     ],
-    "rank": 42,
+    "rank": 46,
     "gender": "girls"
   },
   {
@@ -123669,7 +123740,7 @@ window.SEARCH_INDEX = [
       "mackenzie",
       "medley"
     ],
-    "rank": 8,
+    "rank": 6,
     "gender": "girls"
   },
   {
@@ -123683,7 +123754,7 @@ window.SEARCH_INDEX = [
       "armstrong",
       "breiah"
     ],
-    "rank": 57,
+    "rank": 58,
     "gender": "girls"
   },
   {
@@ -123697,7 +123768,7 @@ window.SEARCH_INDEX = [
       "cannon",
       "madilyn"
     ],
-    "rank": 31,
+    "rank": 32,
     "gender": "girls"
   },
   {
@@ -123711,7 +123782,7 @@ window.SEARCH_INDEX = [
       "esther",
       "wernersbach"
     ],
-    "rank": 26,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -123739,7 +123810,7 @@ window.SEARCH_INDEX = [
       "harleigh",
       "maynard"
     ],
-    "rank": 40,
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -123767,7 +123838,7 @@ window.SEARCH_INDEX = [
       "conn",
       "jillian"
     ],
-    "rank": 33,
+    "rank": 12,
     "gender": "girls"
   },
   {
@@ -123781,7 +123852,7 @@ window.SEARCH_INDEX = [
       "coffey",
       "mazy"
     ],
-    "rank": 22,
+    "rank": 23,
     "gender": "girls"
   },
   {
@@ -123795,7 +123866,7 @@ window.SEARCH_INDEX = [
       "brooklyn",
       "sammons"
     ],
-    "rank": 18,
+    "rank": 15,
     "gender": "girls"
   },
   {
@@ -123809,7 +123880,7 @@ window.SEARCH_INDEX = [
       "caylee",
       "mitchell"
     ],
-    "rank": 49,
+    "rank": 52,
     "gender": "girls"
   },
   {
@@ -123823,7 +123894,7 @@ window.SEARCH_INDEX = [
       "bertina",
       "karnwea"
     ],
-    "rank": 10,
+    "rank": 8,
     "gender": "girls"
   },
   {
@@ -123851,7 +123922,7 @@ window.SEARCH_INDEX = [
       "antonella",
       "choi"
     ],
-    "rank": 25,
+    "rank": 27,
     "gender": "girls"
   },
   {
@@ -123893,7 +123964,7 @@ window.SEARCH_INDEX = [
       "green",
       "mia"
     ],
-    "rank": 4,
+    "rank": 3,
     "gender": "girls"
   },
   {
@@ -123907,21 +123978,7 @@ window.SEARCH_INDEX = [
       "iris",
       "wells"
     ],
-    "rank": 12,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Avah Fontana",
-    "first_name": "Avah",
-    "last_name": "Fontana",
-    "secondary": "Oldham County · 107",
-    "url": "/wrestler.html?id=36550628132&gender=girls",
-    "searchTokens": [
-      "avah",
-      "fontana"
-    ],
-    "rank": 54,
+    "rank": 11,
     "gender": "girls"
   },
   {
@@ -123935,7 +123992,7 @@ window.SEARCH_INDEX = [
       "perry",
       "trinity"
     ],
-    "rank": 32,
+    "rank": 13,
     "gender": "girls"
   },
   {
@@ -123963,7 +124020,7 @@ window.SEARCH_INDEX = [
       "madison",
       "strunk"
     ],
-    "rank": 39,
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -123977,21 +124034,7 @@ window.SEARCH_INDEX = [
       "crabtree",
       "kelsey"
     ],
-    "rank": 38,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Zoey Whitt",
-    "first_name": "Zoey",
-    "last_name": "Whitt",
-    "secondary": "Pulaski County · 107",
-    "url": "/wrestler.html?id=37806759132&gender=girls",
-    "searchTokens": [
-      "whitt",
-      "zoey"
-    ],
-    "rank": 66,
+    "rank": 40,
     "gender": "girls"
   },
   {
@@ -124005,7 +124048,7 @@ window.SEARCH_INDEX = [
       "burden",
       "chloey"
     ],
-    "rank": 35,
+    "rank": 50,
     "gender": "girls"
   },
   {
@@ -124019,7 +124062,7 @@ window.SEARCH_INDEX = [
       "brinkman",
       "peyton"
     ],
-    "rank": 3,
+    "rank": 2,
     "gender": "girls"
   },
   {
@@ -124033,7 +124076,7 @@ window.SEARCH_INDEX = [
       "clark",
       "macie"
     ],
-    "rank": 44,
+    "rank": 43,
     "gender": "girls"
   },
   {
@@ -124047,7 +124090,7 @@ window.SEARCH_INDEX = [
       "macey",
       "wasson"
     ],
-    "rank": 45,
+    "rank": 41,
     "gender": "girls"
   },
   {
@@ -124075,7 +124118,7 @@ window.SEARCH_INDEX = [
       "oliver",
       "samantha"
     ],
-    "rank": 9,
+    "rank": 7,
     "gender": "girls"
   },
   {
@@ -124089,7 +124132,7 @@ window.SEARCH_INDEX = [
       "cruthcher",
       "nevah"
     ],
-    "rank": 30,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -124103,7 +124146,7 @@ window.SEARCH_INDEX = [
       "brown",
       "san`tori"
     ],
-    "rank": 50,
+    "rank": 51,
     "gender": "girls"
   },
   {
@@ -124117,7 +124160,21 @@ window.SEARCH_INDEX = [
       "mckenzie",
       "ratliff"
     ],
-    "rank": 24,
+    "rank": 26,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Adalyn Babb",
+    "first_name": "Adalyn",
+    "last_name": "Babb",
+    "secondary": "Simon Kenton · 107",
+    "url": "/wrestler.html?id=35461805132&gender=girls",
+    "searchTokens": [
+      "adalyn",
+      "babb"
+    ],
+    "rank": 55,
     "gender": "girls"
   },
   {
@@ -124131,7 +124188,7 @@ window.SEARCH_INDEX = [
       "nadine",
       "riggins"
     ],
-    "rank": 61,
+    "rank": 62,
     "gender": "girls"
   },
   {
@@ -124145,7 +124202,7 @@ window.SEARCH_INDEX = [
       "davis",
       "madison"
     ],
-    "rank": 29,
+    "rank": 31,
     "gender": "girls"
   },
   {
@@ -124159,7 +124216,7 @@ window.SEARCH_INDEX = [
       "sharp",
       "symphony"
     ],
-    "rank": 20,
+    "rank": 21,
     "gender": "girls"
   },
   {
@@ -124173,7 +124230,7 @@ window.SEARCH_INDEX = [
       "hannah",
       "matias"
     ],
-    "rank": 60,
+    "rank": 59,
     "gender": "girls"
   },
   {
@@ -124187,7 +124244,7 @@ window.SEARCH_INDEX = [
       "boyd",
       "rialee"
     ],
-    "rank": 6,
+    "rank": 5,
     "gender": "girls"
   },
   {
@@ -124201,7 +124258,7 @@ window.SEARCH_INDEX = [
       "parrish",
       "sophie"
     ],
-    "rank": 7,
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -124215,7 +124272,7 @@ window.SEARCH_INDEX = [
       "mitchell",
       "natalie"
     ],
-    "rank": 46,
+    "rank": 48,
     "gender": "girls"
   },
   {
@@ -124229,7 +124286,7 @@ window.SEARCH_INDEX = [
       "moore",
       "nayvia"
     ],
-    "rank": 27,
+    "rank": 29,
     "gender": "girls"
   },
   {
@@ -124243,7 +124300,7 @@ window.SEARCH_INDEX = [
       "emma",
       "moore"
     ],
-    "rank": 2,
+    "rank": 1,
     "gender": "girls"
   },
   {
@@ -124257,7 +124314,7 @@ window.SEARCH_INDEX = [
       "mcguire",
       "tabitha"
     ],
-    "rank": 36,
+    "rank": 39,
     "gender": "girls"
   },
   {
@@ -124271,7 +124328,7 @@ window.SEARCH_INDEX = [
       "maylee",
       "whitney"
     ],
-    "rank": 59,
+    "rank": 60,
     "gender": "girls"
   },
   {
@@ -124299,7 +124356,7 @@ window.SEARCH_INDEX = [
       "bunch",
       "kaylee"
     ],
-    "rank": 51,
+    "rank": 53,
     "gender": "girls"
   },
   {
@@ -124313,7 +124370,7 @@ window.SEARCH_INDEX = [
       "aubree",
       "birchfield"
     ],
-    "rank": 37,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -124327,7 +124384,7 @@ window.SEARCH_INDEX = [
       "cox",
       "genevieve"
     ],
-    "rank": 5,
+    "rank": 4,
     "gender": "girls"
   },
   {
@@ -125838,7 +125895,7 @@ window.SEARCH_INDEX = [
       "charisma",
       "kunkel"
     ],
-    "rank": 35,
+    "rank": 34,
     "gender": "girls"
   },
   {
@@ -125853,7 +125910,7 @@ window.SEARCH_INDEX = [
       "lee",
       "mcewen"
     ],
-    "rank": 19,
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -125867,7 +125924,21 @@ window.SEARCH_INDEX = [
       "embry",
       "layla"
     ],
-    "rank": 52,
+    "rank": 54,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Chyanne Maggard",
+    "first_name": "Chyanne",
+    "last_name": "Maggard",
+    "secondary": "Ashland Blazer · 114",
+    "url": "/wrestler.html?id=35333418132&gender=girls",
+    "searchTokens": [
+      "chyanne",
+      "maggard"
+    ],
+    "rank": 20,
     "gender": "girls"
   },
   {
@@ -125881,7 +125952,7 @@ window.SEARCH_INDEX = [
       "selena",
       "white"
     ],
-    "rank": 62,
+    "rank": 56,
     "gender": "girls"
   },
   {
@@ -125895,7 +125966,7 @@ window.SEARCH_INDEX = [
       "gray",
       "osantowski"
     ],
-    "rank": 95,
+    "rank": 92,
     "gender": "girls"
   },
   {
@@ -125923,7 +125994,7 @@ window.SEARCH_INDEX = [
       "ashlynn",
       "cadwell"
     ],
-    "rank": 45,
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -125937,7 +126008,7 @@ window.SEARCH_INDEX = [
       "haylee",
       "jones"
     ],
-    "rank": 57,
+    "rank": 51,
     "gender": "girls"
   },
   {
@@ -125951,7 +126022,7 @@ window.SEARCH_INDEX = [
       "geers",
       "kallee"
     ],
-    "rank": 100,
+    "rank": 97,
     "gender": "girls"
   },
   {
@@ -125965,7 +126036,7 @@ window.SEARCH_INDEX = [
       "adrianna",
       "merritt"
     ],
-    "rank": 81,
+    "rank": 79,
     "gender": "girls"
   },
   {
@@ -125979,7 +126050,7 @@ window.SEARCH_INDEX = [
       "mikeyla",
       "slone"
     ],
-    "rank": 97,
+    "rank": 94,
     "gender": "girls"
   },
   {
@@ -125993,7 +126064,7 @@ window.SEARCH_INDEX = [
       "mlasi",
       "tambwe"
     ],
-    "rank": 17,
+    "rank": 16,
     "gender": "girls"
   },
   {
@@ -126007,7 +126078,7 @@ window.SEARCH_INDEX = [
       "caldwell",
       "shayla"
     ],
-    "rank": 85,
+    "rank": 83,
     "gender": "girls"
   },
   {
@@ -126021,7 +126092,7 @@ window.SEARCH_INDEX = [
       "jeffrey",
       "rylee"
     ],
-    "rank": 79,
+    "rank": 78,
     "gender": "girls"
   },
   {
@@ -126035,7 +126106,7 @@ window.SEARCH_INDEX = [
       "hughes",
       "neticia"
     ],
-    "rank": 55,
+    "rank": 43,
     "gender": "girls"
   },
   {
@@ -126049,7 +126120,7 @@ window.SEARCH_INDEX = [
       "kimberly",
       "shrewsbury"
     ],
-    "rank": 59,
+    "rank": 60,
     "gender": "girls"
   },
   {
@@ -126064,20 +126135,6 @@ window.SEARCH_INDEX = [
       "leah"
     ],
     "rank": 7,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Olivia Thornton",
-    "first_name": "Olivia",
-    "last_name": "Thornton",
-    "secondary": "Campbell County · 114",
-    "url": "/wrestler.html?id=35387007132&gender=girls",
-    "searchTokens": [
-      "olivia",
-      "thornton"
-    ],
-    "rank": 15,
     "gender": "girls"
   },
   {
@@ -126105,7 +126162,7 @@ window.SEARCH_INDEX = [
       "jalayna",
       "richardson"
     ],
-    "rank": 88,
+    "rank": 86,
     "gender": "girls"
   },
   {
@@ -126134,7 +126191,7 @@ window.SEARCH_INDEX = [
       "jennifer",
       "lopez"
     ],
-    "rank": 25,
+    "rank": 26,
     "gender": "girls"
   },
   {
@@ -126148,7 +126205,7 @@ window.SEARCH_INDEX = [
       "hayleigh",
       "wilson"
     ],
-    "rank": 99,
+    "rank": 96,
     "gender": "girls"
   },
   {
@@ -126162,7 +126219,7 @@ window.SEARCH_INDEX = [
       "avalos",
       "serenity"
     ],
-    "rank": 20,
+    "rank": 23,
     "gender": "girls"
   },
   {
@@ -126176,7 +126233,7 @@ window.SEARCH_INDEX = [
       "faith",
       "martin"
     ],
-    "rank": 63,
+    "rank": 57,
     "gender": "girls"
   },
   {
@@ -126190,7 +126247,7 @@ window.SEARCH_INDEX = [
       "hayse",
       "kensley"
     ],
-    "rank": 44,
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -126204,7 +126261,7 @@ window.SEARCH_INDEX = [
       "olivia",
       "thluai"
     ],
-    "rank": 51,
+    "rank": 53,
     "gender": "girls"
   },
   {
@@ -126218,7 +126275,7 @@ window.SEARCH_INDEX = [
       "pomya",
       "sarah"
     ],
-    "rank": 106,
+    "rank": 103,
     "gender": "girls"
   },
   {
@@ -126232,7 +126289,7 @@ window.SEARCH_INDEX = [
       "hammer",
       "isabella"
     ],
-    "rank": 24,
+    "rank": 18,
     "gender": "girls"
   },
   {
@@ -126246,7 +126303,7 @@ window.SEARCH_INDEX = [
       "leilani",
       "velasquez"
     ],
-    "rank": 84,
+    "rank": 82,
     "gender": "girls"
   },
   {
@@ -126260,7 +126317,7 @@ window.SEARCH_INDEX = [
       "branham",
       "kaydence"
     ],
-    "rank": 101,
+    "rank": 98,
     "gender": "girls"
   },
   {
@@ -126274,7 +126331,7 @@ window.SEARCH_INDEX = [
       "jacobee",
       "neilko"
     ],
-    "rank": 67,
+    "rank": 63,
     "gender": "girls"
   },
   {
@@ -126288,7 +126345,7 @@ window.SEARCH_INDEX = [
       "delaney",
       "perry"
     ],
-    "rank": 22,
+    "rank": 25,
     "gender": "girls"
   },
   {
@@ -126302,7 +126359,7 @@ window.SEARCH_INDEX = [
       "morrison",
       "zoey"
     ],
-    "rank": 39,
+    "rank": 38,
     "gender": "girls"
   },
   {
@@ -126316,7 +126373,7 @@ window.SEARCH_INDEX = [
       "alexa",
       "ybarra"
     ],
-    "rank": 70,
+    "rank": 61,
     "gender": "girls"
   },
   {
@@ -126330,7 +126387,7 @@ window.SEARCH_INDEX = [
       "kendall",
       "mcclain"
     ],
-    "rank": 53,
+    "rank": 49,
     "gender": "girls"
   },
   {
@@ -126344,7 +126401,7 @@ window.SEARCH_INDEX = [
       "asina",
       "gilbert"
     ],
-    "rank": 11,
+    "rank": 9,
     "gender": "girls"
   },
   {
@@ -126358,7 +126415,7 @@ window.SEARCH_INDEX = [
       "danica",
       "patrick"
     ],
-    "rank": 12,
+    "rank": 11,
     "gender": "girls"
   },
   {
@@ -126372,7 +126429,7 @@ window.SEARCH_INDEX = [
       "paityn",
       "richardson"
     ],
-    "rank": 56,
+    "rank": 50,
     "gender": "girls"
   },
   {
@@ -126400,7 +126457,7 @@ window.SEARCH_INDEX = [
       "paiton",
       "simpson"
     ],
-    "rank": 98,
+    "rank": 95,
     "gender": "girls"
   },
   {
@@ -126414,7 +126471,7 @@ window.SEARCH_INDEX = [
       "martin",
       "payton"
     ],
-    "rank": 80,
+    "rank": 77,
     "gender": "girls"
   },
   {
@@ -126428,7 +126485,7 @@ window.SEARCH_INDEX = [
       "moore",
       "sophia"
     ],
-    "rank": 105,
+    "rank": 102,
     "gender": "girls"
   },
   {
@@ -126442,7 +126499,7 @@ window.SEARCH_INDEX = [
       "lily",
       "nelson"
     ],
-    "rank": 9,
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -126470,7 +126527,7 @@ window.SEARCH_INDEX = [
       "kaylee",
       "wilson"
     ],
-    "rank": 76,
+    "rank": 72,
     "gender": "girls"
   },
   {
@@ -126498,7 +126555,7 @@ window.SEARCH_INDEX = [
       "gallagher",
       "margaret"
     ],
-    "rank": 34,
+    "rank": 31,
     "gender": "girls"
   },
   {
@@ -126513,7 +126570,21 @@ window.SEARCH_INDEX = [
       "domingo",
       "yuli"
     ],
-    "rank": 54,
+    "rank": 48,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Payton Strange",
+    "first_name": "Payton",
+    "last_name": "Strange",
+    "secondary": "Holmes · 114",
+    "url": "/wrestler.html?id=35510419132&gender=girls",
+    "searchTokens": [
+      "payton",
+      "strange"
+    ],
+    "rank": 75,
     "gender": "girls"
   },
   {
@@ -126527,7 +126598,7 @@ window.SEARCH_INDEX = [
       "isabell",
       "walker"
     ],
-    "rank": 21,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -126541,21 +126612,7 @@ window.SEARCH_INDEX = [
       "vaquiz",
       "vilma"
     ],
-    "rank": 83,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Cassidy Huey",
-    "first_name": "Cassidy",
-    "last_name": "Huey",
-    "secondary": "John Hardin · 114",
-    "url": "/wrestler.html?id=35510416132&gender=girls",
-    "searchTokens": [
-      "cassidy",
-      "huey"
-    ],
-    "rank": 30,
+    "rank": 81,
     "gender": "girls"
   },
   {
@@ -126569,7 +126626,7 @@ window.SEARCH_INDEX = [
       "karezo",
       "noel"
     ],
-    "rank": 104,
+    "rank": 101,
     "gender": "girls"
   },
   {
@@ -126583,7 +126640,7 @@ window.SEARCH_INDEX = [
       "athena",
       "saturday"
     ],
-    "rank": 26,
+    "rank": 27,
     "gender": "girls"
   },
   {
@@ -126597,7 +126654,21 @@ window.SEARCH_INDEX = [
       "sydney",
       "witzel"
     ],
-    "rank": 102,
+    "rank": 99,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Haileigh Smith",
+    "first_name": "Haileigh",
+    "last_name": "Smith",
+    "secondary": "Martin County · 114",
+    "url": "/wrestler.html?id=36849563132&gender=girls",
+    "searchTokens": [
+      "haileigh",
+      "smith"
+    ],
+    "rank": 66,
     "gender": "girls"
   },
   {
@@ -126611,7 +126682,7 @@ window.SEARCH_INDEX = [
       "kyla",
       "overby"
     ],
-    "rank": 60,
+    "rank": 68,
     "gender": "girls"
   },
   {
@@ -126625,7 +126696,7 @@ window.SEARCH_INDEX = [
       "emmery",
       "evans"
     ],
-    "rank": 16,
+    "rank": 14,
     "gender": "girls"
   },
   {
@@ -126639,7 +126710,7 @@ window.SEARCH_INDEX = [
       "coffey",
       "madison"
     ],
-    "rank": 47,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -126653,7 +126724,7 @@ window.SEARCH_INDEX = [
       "keyonna",
       "perry"
     ],
-    "rank": 18,
+    "rank": 17,
     "gender": "girls"
   },
   {
@@ -126667,7 +126738,7 @@ window.SEARCH_INDEX = [
       "fuqua",
       "summer"
     ],
-    "rank": 77,
+    "rank": 73,
     "gender": "girls"
   },
   {
@@ -126681,7 +126752,7 @@ window.SEARCH_INDEX = [
       "workman",
       "wynter"
     ],
-    "rank": 75,
+    "rank": 70,
     "gender": "girls"
   },
   {
@@ -126695,7 +126766,7 @@ window.SEARCH_INDEX = [
       "drew",
       "trinity"
     ],
-    "rank": 29,
+    "rank": 30,
     "gender": "girls"
   },
   {
@@ -126709,7 +126780,7 @@ window.SEARCH_INDEX = [
       "broce",
       "isabella"
     ],
-    "rank": 90,
+    "rank": 88,
     "gender": "girls"
   },
   {
@@ -126723,7 +126794,7 @@ window.SEARCH_INDEX = [
       "kenzie",
       "lee"
     ],
-    "rank": 14,
+    "rank": 15,
     "gender": "girls"
   },
   {
@@ -126738,7 +126809,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "jaden"
     ],
-    "rank": 74,
+    "rank": 69,
     "gender": "girls"
   },
   {
@@ -126752,7 +126823,7 @@ window.SEARCH_INDEX = [
       "hixenbaugh",
       "taniah"
     ],
-    "rank": 23,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -126766,21 +126837,7 @@ window.SEARCH_INDEX = [
       "mojica",
       "nataly"
     ],
-    "rank": 50,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Romance Lateef",
-    "first_name": "Romance",
-    "last_name": "Lateef",
-    "secondary": "Moore · 114",
-    "url": "/wrestler.html?id=35909987132&gender=girls",
-    "searchTokens": [
-      "lateef",
-      "romance"
-    ],
-    "rank": 48,
+    "rank": 47,
     "gender": "girls"
   },
   {
@@ -126794,7 +126851,7 @@ window.SEARCH_INDEX = [
       "allison",
       "aubree"
     ],
-    "rank": 28,
+    "rank": 29,
     "gender": "girls"
   },
   {
@@ -126808,7 +126865,7 @@ window.SEARCH_INDEX = [
       "cairistine",
       "graves"
     ],
-    "rank": 78,
+    "rank": 76,
     "gender": "girls"
   },
   {
@@ -126822,7 +126879,7 @@ window.SEARCH_INDEX = [
       "carissa",
       "ross"
     ],
-    "rank": 3,
+    "rank": 4,
     "gender": "girls"
   },
   {
@@ -126850,7 +126907,7 @@ window.SEARCH_INDEX = [
       "brown",
       "london"
     ],
-    "rank": 33,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -126864,7 +126921,7 @@ window.SEARCH_INDEX = [
       "cook",
       "serenity"
     ],
-    "rank": 64,
+    "rank": 59,
     "gender": "girls"
   },
   {
@@ -126878,21 +126935,21 @@ window.SEARCH_INDEX = [
       "addyson",
       "parkey"
     ],
-    "rank": 58,
+    "rank": 52,
     "gender": "girls"
   },
   {
     "type": "wrestler",
-    "name": "Anne Iranzi",
-    "first_name": "Anne",
-    "last_name": "Iranzi",
-    "secondary": "Pleasure Ridge Park · 114",
-    "url": "/wrestler.html?id=35778293132&gender=girls",
+    "name": "Zoey Whitt",
+    "first_name": "Zoey",
+    "last_name": "Whitt",
+    "secondary": "Pulaski County · 114",
+    "url": "/wrestler.html?id=37806759132&gender=girls",
     "searchTokens": [
-      "anne",
-      "iranzi"
+      "whitt",
+      "zoey"
     ],
-    "rank": 92,
+    "rank": 84,
     "gender": "girls"
   },
   {
@@ -126906,7 +126963,7 @@ window.SEARCH_INDEX = [
       "eryn",
       "mccrary"
     ],
-    "rank": 86,
+    "rank": 71,
     "gender": "girls"
   },
   {
@@ -126920,7 +126977,7 @@ window.SEARCH_INDEX = [
       "francisco",
       "juana"
     ],
-    "rank": 82,
+    "rank": 80,
     "gender": "girls"
   },
   {
@@ -126934,7 +126991,7 @@ window.SEARCH_INDEX = [
       "emani",
       "pickett"
     ],
-    "rank": 61,
+    "rank": 55,
     "gender": "girls"
   },
   {
@@ -126949,7 +127006,7 @@ window.SEARCH_INDEX = [
       "lynch",
       "sweeney"
     ],
-    "rank": 71,
+    "rank": 64,
     "gender": "girls"
   },
   {
@@ -126963,7 +127020,7 @@ window.SEARCH_INDEX = [
       "anderson",
       "peggy"
     ],
-    "rank": 91,
+    "rank": 89,
     "gender": "girls"
   },
   {
@@ -126977,7 +127034,7 @@ window.SEARCH_INDEX = [
       "ava",
       "castleman"
     ],
-    "rank": 4,
+    "rank": 5,
     "gender": "girls"
   },
   {
@@ -126991,7 +127048,7 @@ window.SEARCH_INDEX = [
       "de`onna",
       "owens"
     ],
-    "rank": 40,
+    "rank": 39,
     "gender": "girls"
   },
   {
@@ -127005,7 +127062,7 @@ window.SEARCH_INDEX = [
       "larhyia",
       "thomas"
     ],
-    "rank": 93,
+    "rank": 90,
     "gender": "girls"
   },
   {
@@ -127019,21 +127076,7 @@ window.SEARCH_INDEX = [
       "laughlin",
       "riece"
     ],
-    "rank": 10,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Adalyn Babb",
-    "first_name": "Adalyn",
-    "last_name": "Babb",
-    "secondary": "Simon Kenton · 114",
-    "url": "/wrestler.html?id=35461805132&gender=girls",
-    "searchTokens": [
-      "adalyn",
-      "babb"
-    ],
-    "rank": 72,
+    "rank": 12,
     "gender": "girls"
   },
   {
@@ -127047,7 +127090,7 @@ window.SEARCH_INDEX = [
       "crowder",
       "laneyah"
     ],
-    "rank": 27,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -127061,7 +127104,7 @@ window.SEARCH_INDEX = [
       "emma",
       "trinh"
     ],
-    "rank": 87,
+    "rank": 85,
     "gender": "girls"
   },
   {
@@ -127075,7 +127118,7 @@ window.SEARCH_INDEX = [
       "goodlett",
       "lacy"
     ],
-    "rank": 66,
+    "rank": 62,
     "gender": "girls"
   },
   {
@@ -127089,7 +127132,7 @@ window.SEARCH_INDEX = [
       "hadley",
       "haggard"
     ],
-    "rank": 103,
+    "rank": 100,
     "gender": "girls"
   },
   {
@@ -127103,7 +127146,7 @@ window.SEARCH_INDEX = [
       "madelyn",
       "spraggins"
     ],
-    "rank": 73,
+    "rank": 58,
     "gender": "girls"
   },
   {
@@ -127131,7 +127174,7 @@ window.SEARCH_INDEX = [
       "patterson",
       "piper"
     ],
-    "rank": 68,
+    "rank": 65,
     "gender": "girls"
   },
   {
@@ -127145,7 +127188,7 @@ window.SEARCH_INDEX = [
       "bressi",
       "tilyn"
     ],
-    "rank": 96,
+    "rank": 93,
     "gender": "girls"
   },
   {
@@ -127159,7 +127202,7 @@ window.SEARCH_INDEX = [
       "amayia",
       "canela"
     ],
-    "rank": 69,
+    "rank": 67,
     "gender": "girls"
   },
   {
@@ -127173,7 +127216,7 @@ window.SEARCH_INDEX = [
       "cordell",
       "hailey"
     ],
-    "rank": 94,
+    "rank": 91,
     "gender": "girls"
   },
   {
@@ -127187,7 +127230,7 @@ window.SEARCH_INDEX = [
       "cross",
       "mckenzie"
     ],
-    "rank": 42,
+    "rank": 40,
     "gender": "girls"
   },
   {
@@ -127201,21 +127244,7 @@ window.SEARCH_INDEX = [
       "bacon",
       "tanya"
     ],
-    "rank": 5,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Ja`Rhia Weaver",
-    "first_name": "Ja`Rhia",
-    "last_name": "Weaver",
-    "secondary": "Valley · 114",
-    "url": "/wrestler.html?id=35515611132&gender=girls",
-    "searchTokens": [
-      "ja`rhia",
-      "weaver"
-    ],
-    "rank": 43,
+    "rank": 3,
     "gender": "girls"
   },
   {
@@ -127229,7 +127258,7 @@ window.SEARCH_INDEX = [
       "lilly",
       "torrance"
     ],
-    "rank": 89,
+    "rank": 87,
     "gender": "girls"
   },
   {
@@ -127243,7 +127272,7 @@ window.SEARCH_INDEX = [
       "charlotte",
       "uwamahoro"
     ],
-    "rank": 65,
+    "rank": 74,
     "gender": "girls"
   },
   {
@@ -127257,21 +127286,7 @@ window.SEARCH_INDEX = [
       "emily",
       "stephenson"
     ],
-    "rank": 38,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Ashlen Douglas",
-    "first_name": "Ashlen",
-    "last_name": "Douglas",
-    "secondary": "Whitley County · 114",
-    "url": "/wrestler.html?id=35427617132&gender=girls",
-    "searchTokens": [
-      "ashlen",
-      "douglas"
-    ],
-    "rank": 46,
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -127285,7 +127300,7 @@ window.SEARCH_INDEX = [
       "deina",
       "nelson"
     ],
-    "rank": 49,
+    "rank": 46,
     "gender": "girls"
   },
   {
@@ -127299,7 +127314,7 @@ window.SEARCH_INDEX = [
       "lexi",
       "susor"
     ],
-    "rank": 31,
+    "rank": 21,
     "gender": "girls"
   },
   {
@@ -128337,6 +128352,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Charlotte Uwamahoro",
+    "first_name": "Charlotte",
+    "last_name": "Uwamahoro",
+    "secondary": "Valley · 114",
+    "url": "/wrestler.html?id=OUTSTATE_2260d1b8a2a2&gender=girls",
+    "searchTokens": [
+      "charlotte",
+      "uwamahoro"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Kella Holsey",
     "first_name": "Kella",
     "last_name": "Holsey",
@@ -128463,6 +128492,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "De`onna Owens",
+    "first_name": "De`onna",
+    "last_name": "Owens",
+    "secondary": "Shawnee · 114",
+    "url": "/wrestler.html?id=OUTSTATE_3237159a072f&gender=girls",
+    "searchTokens": [
+      "de`onna",
+      "owens"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Adalyn Perry",
     "first_name": "Adalyn",
     "last_name": "Perry",
@@ -128486,21 +128529,7 @@ window.SEARCH_INDEX = [
       "simon",
       "winified"
     ],
-    "rank": 46,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Chyanne Maggard",
-    "first_name": "Chyanne",
-    "last_name": "Maggard",
-    "secondary": "Ashland Blazer · 120",
-    "url": "/wrestler.html?id=35333418132&gender=girls",
-    "searchTokens": [
-      "chyanne",
-      "maggard"
-    ],
-    "rank": 30,
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -128514,7 +128543,7 @@ window.SEARCH_INDEX = [
       "hayden",
       "meeks"
     ],
-    "rank": 69,
+    "rank": 68,
     "gender": "girls"
   },
   {
@@ -128528,7 +128557,7 @@ window.SEARCH_INDEX = [
       "campbell",
       "payton"
     ],
-    "rank": 55,
+    "rank": 57,
     "gender": "girls"
   },
   {
@@ -128556,7 +128585,7 @@ window.SEARCH_INDEX = [
       "annalee",
       "good"
     ],
-    "rank": 82,
+    "rank": 84,
     "gender": "girls"
   },
   {
@@ -128570,7 +128599,7 @@ window.SEARCH_INDEX = [
       "gilliam",
       "tylynn"
     ],
-    "rank": 78,
+    "rank": 79,
     "gender": "girls"
   },
   {
@@ -128598,7 +128627,7 @@ window.SEARCH_INDEX = [
       "brooklyn",
       "cash"
     ],
-    "rank": 33,
+    "rank": 47,
     "gender": "girls"
   },
   {
@@ -128612,7 +128641,7 @@ window.SEARCH_INDEX = [
       "alexia",
       "garcia"
     ],
-    "rank": 87,
+    "rank": 89,
     "gender": "girls"
   },
   {
@@ -128626,7 +128655,7 @@ window.SEARCH_INDEX = [
       "amelia",
       "stepetak"
     ],
-    "rank": 80,
+    "rank": 82,
     "gender": "girls"
   },
   {
@@ -128654,7 +128683,7 @@ window.SEARCH_INDEX = [
       "abigail",
       "nolan"
     ],
-    "rank": 75,
+    "rank": 76,
     "gender": "girls"
   },
   {
@@ -128668,7 +128697,7 @@ window.SEARCH_INDEX = [
       "briella",
       "levy"
     ],
-    "rank": 50,
+    "rank": 16,
     "gender": "girls"
   },
   {
@@ -128687,6 +128716,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Olivia Thornton",
+    "first_name": "Olivia",
+    "last_name": "Thornton",
+    "secondary": "Campbell County · 120",
+    "url": "/wrestler.html?id=35387007132&gender=girls",
+    "searchTokens": [
+      "olivia",
+      "thornton"
+    ],
+    "rank": 20,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Rhyalynn Johnson",
     "first_name": "Rhyalynn",
     "last_name": "Johnson",
@@ -128696,7 +128739,7 @@ window.SEARCH_INDEX = [
       "johnson",
       "rhyalynn"
     ],
-    "rank": 53,
+    "rank": 64,
     "gender": "girls"
   },
   {
@@ -128711,7 +128754,7 @@ window.SEARCH_INDEX = [
       "niyoyakunze",
       "shera"
     ],
-    "rank": 94,
+    "rank": 97,
     "gender": "girls"
   },
   {
@@ -128725,7 +128768,7 @@ window.SEARCH_INDEX = [
       "davis",
       "narhiya"
     ],
-    "rank": 35,
+    "rank": 17,
     "gender": "girls"
   },
   {
@@ -128739,7 +128782,7 @@ window.SEARCH_INDEX = [
       "holwager",
       "madeline"
     ],
-    "rank": 27,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -128753,7 +128796,7 @@ window.SEARCH_INDEX = [
       "kyleis",
       "mcrae"
     ],
-    "rank": 51,
+    "rank": 49,
     "gender": "girls"
   },
   {
@@ -128767,7 +128810,7 @@ window.SEARCH_INDEX = [
       "razan",
       "salhi"
     ],
-    "rank": 81,
+    "rank": 83,
     "gender": "girls"
   },
   {
@@ -128795,7 +128838,7 @@ window.SEARCH_INDEX = [
       "delacruz",
       "kamila"
     ],
-    "rank": 72,
+    "rank": 74,
     "gender": "girls"
   },
   {
@@ -128809,7 +128852,7 @@ window.SEARCH_INDEX = [
       "domingo",
       "rosemery"
     ],
-    "rank": 77,
+    "rank": 78,
     "gender": "girls"
   },
   {
@@ -128823,7 +128866,7 @@ window.SEARCH_INDEX = [
       "elle",
       "reynolds"
     ],
-    "rank": 89,
+    "rank": 91,
     "gender": "girls"
   },
   {
@@ -128837,7 +128880,7 @@ window.SEARCH_INDEX = [
       "alexis",
       "gibson"
     ],
-    "rank": 29,
+    "rank": 32,
     "gender": "girls"
   },
   {
@@ -128851,21 +128894,7 @@ window.SEARCH_INDEX = [
       "emma",
       "towles"
     ],
-    "rank": 74,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Tristin Caldwell",
-    "first_name": "Tristin",
-    "last_name": "Caldwell",
-    "secondary": "Fort Campbell · 120",
-    "url": "/wrestler.html?id=35666995132&gender=girls",
-    "searchTokens": [
-      "caldwell",
-      "tristin"
-    ],
-    "rank": 26,
+    "rank": 75,
     "gender": "girls"
   },
   {
@@ -128879,7 +128908,7 @@ window.SEARCH_INDEX = [
       "samantha",
       "sanchez"
     ],
-    "rank": 61,
+    "rank": 60,
     "gender": "girls"
   },
   {
@@ -128921,7 +128950,7 @@ window.SEARCH_INDEX = [
       "rodriguez",
       "susi"
     ],
-    "rank": 86,
+    "rank": 88,
     "gender": "girls"
   },
   {
@@ -128935,7 +128964,7 @@ window.SEARCH_INDEX = [
       "alyson",
       "chaney"
     ],
-    "rank": 28,
+    "rank": 31,
     "gender": "girls"
   },
   {
@@ -128949,7 +128978,21 @@ window.SEARCH_INDEX = [
       "dannie",
       "fryman"
     ],
-    "rank": 88,
+    "rank": 90,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Aubrey Ferguson",
+    "first_name": "Aubrey",
+    "last_name": "Ferguson",
+    "secondary": "Green County · 120",
+    "url": "/wrestler.html?id=35468198132&gender=girls",
+    "searchTokens": [
+      "aubrey",
+      "ferguson"
+    ],
+    "rank": 71,
     "gender": "girls"
   },
   {
@@ -128963,7 +129006,7 @@ window.SEARCH_INDEX = [
       "abbie",
       "howard"
     ],
-    "rank": 31,
+    "rank": 34,
     "gender": "girls"
   },
   {
@@ -128977,21 +129020,7 @@ window.SEARCH_INDEX = [
       "mary",
       "varupa"
     ],
-    "rank": 95,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Alianna Charles",
-    "first_name": "Alianna",
-    "last_name": "Charles",
-    "secondary": "Harrison County · 120",
-    "url": "/wrestler.html?id=35436569132&gender=girls",
-    "searchTokens": [
-      "alianna",
-      "charles"
-    ],
-    "rank": 67,
+    "rank": 98,
     "gender": "girls"
   },
   {
@@ -129005,7 +129034,7 @@ window.SEARCH_INDEX = [
       "brooklin",
       "clark"
     ],
-    "rank": 19,
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -129019,7 +129048,7 @@ window.SEARCH_INDEX = [
       "aleigha",
       "newby"
     ],
-    "rank": 99,
+    "rank": 102,
     "gender": "girls"
   },
   {
@@ -129033,7 +129062,7 @@ window.SEARCH_INDEX = [
       "laya",
       "wilson"
     ],
-    "rank": 20,
+    "rank": 26,
     "gender": "girls"
   },
   {
@@ -129047,7 +129076,7 @@ window.SEARCH_INDEX = [
       "jade",
       "robertson"
     ],
-    "rank": 25,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -129060,20 +129089,6 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "battle",
       "lauren"
-    ],
-    "rank": 68,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Payton Strange",
-    "first_name": "Payton",
-    "last_name": "Strange",
-    "secondary": "Holmes · 120",
-    "url": "/wrestler.html?id=35510419132&gender=girls",
-    "searchTokens": [
-      "payton",
-      "strange"
     ],
     "rank": 70,
     "gender": "girls"
@@ -129089,7 +129104,7 @@ window.SEARCH_INDEX = [
       "hill",
       "jonnierra"
     ],
-    "rank": 60,
+    "rank": 66,
     "gender": "girls"
   },
   {
@@ -129108,6 +129123,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Cassidy Huey",
+    "first_name": "Cassidy",
+    "last_name": "Huey",
+    "secondary": "John Hardin · 120",
+    "url": "/wrestler.html?id=35510416132&gender=girls",
+    "searchTokens": [
+      "cassidy",
+      "huey"
+    ],
+    "rank": 46,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Ellie Suttor",
     "first_name": "Ellie",
     "last_name": "Suttor",
@@ -129117,7 +129146,7 @@ window.SEARCH_INDEX = [
       "ellie",
       "suttor"
     ],
-    "rank": 84,
+    "rank": 86,
     "gender": "girls"
   },
   {
@@ -129131,7 +129160,7 @@ window.SEARCH_INDEX = [
       "garner",
       "hailey"
     ],
-    "rank": 17,
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -129145,7 +129174,7 @@ window.SEARCH_INDEX = [
       "chance",
       "cyazazo"
     ],
-    "rank": 96,
+    "rank": 99,
     "gender": "girls"
   },
   {
@@ -129188,7 +129217,7 @@ window.SEARCH_INDEX = [
       "jemael",
       "yowa"
     ],
-    "rank": 56,
+    "rank": 58,
     "gender": "girls"
   },
   {
@@ -129202,7 +129231,7 @@ window.SEARCH_INDEX = [
       "annisa",
       "zulkarnaen"
     ],
-    "rank": 36,
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -129216,7 +129245,7 @@ window.SEARCH_INDEX = [
       "jenna",
       "schultz"
     ],
-    "rank": 24,
+    "rank": 25,
     "gender": "girls"
   },
   {
@@ -129235,20 +129264,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Haileigh Smith",
-    "first_name": "Haileigh",
-    "last_name": "Smith",
-    "secondary": "Martin County · 120",
-    "url": "/wrestler.html?id=36849563132&gender=girls",
-    "searchTokens": [
-      "haileigh",
-      "smith"
-    ],
-    "rank": 65,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Kyley Messer",
     "first_name": "Kyley",
     "last_name": "Messer",
@@ -129258,7 +129273,7 @@ window.SEARCH_INDEX = [
       "kyley",
       "messer"
     ],
-    "rank": 98,
+    "rank": 101,
     "gender": "girls"
   },
   {
@@ -129272,7 +129287,7 @@ window.SEARCH_INDEX = [
       "bradlyne",
       "stafford"
     ],
-    "rank": 44,
+    "rank": 55,
     "gender": "girls"
   },
   {
@@ -129286,7 +129301,7 @@ window.SEARCH_INDEX = [
       "jacey",
       "muntz"
     ],
-    "rank": 32,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -129300,7 +129315,7 @@ window.SEARCH_INDEX = [
       "conn",
       "jordyn"
     ],
-    "rank": 49,
+    "rank": 48,
     "gender": "girls"
   },
   {
@@ -129342,7 +129357,7 @@ window.SEARCH_INDEX = [
       "gomez",
       "imelda"
     ],
-    "rank": 34,
+    "rank": 62,
     "gender": "girls"
   },
   {
@@ -129356,22 +129371,35 @@ window.SEARCH_INDEX = [
       "baker",
       "kaitlyn"
     ],
-    "rank": 18,
+    "rank": 30,
     "gender": "girls"
   },
   {
     "type": "wrestler",
-    "name": "Laura Rodriguez Arias",
-    "first_name": "Laura",
-    "last_name": "Rodriguez Arias",
+    "name": "Romance Lateef",
+    "first_name": "Romance",
+    "last_name": "Lateef",
     "secondary": "Moore · 120",
-    "url": "/wrestler.html?id=35333399132&gender=girls",
+    "url": "/wrestler.html?id=35909987132&gender=girls",
     "searchTokens": [
-      "arias",
-      "laura",
-      "rodriguez"
+      "lateef",
+      "romance"
     ],
-    "rank": 11,
+    "rank": 27,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Trinity Mattingly",
+    "first_name": "Trinity",
+    "last_name": "Mattingly",
+    "secondary": "Nelson County · 120",
+    "url": "/wrestler.html?id=35565883132&gender=girls",
+    "searchTokens": [
+      "mattingly",
+      "trinity"
+    ],
+    "rank": 29,
     "gender": "girls"
   },
   {
@@ -129385,7 +129413,7 @@ window.SEARCH_INDEX = [
       "baum",
       "caitlin"
     ],
-    "rank": 62,
+    "rank": 61,
     "gender": "girls"
   },
   {
@@ -129399,7 +129427,7 @@ window.SEARCH_INDEX = [
       "hawkins",
       "kyla"
     ],
-    "rank": 66,
+    "rank": 67,
     "gender": "girls"
   },
   {
@@ -129413,7 +129441,7 @@ window.SEARCH_INDEX = [
       "patterson",
       "tatyanna"
     ],
-    "rank": 54,
+    "rank": 56,
     "gender": "girls"
   },
   {
@@ -129427,7 +129455,7 @@ window.SEARCH_INDEX = [
       "britt",
       "destiny"
     ],
-    "rank": 90,
+    "rank": 93,
     "gender": "girls"
   },
   {
@@ -129441,7 +129469,7 @@ window.SEARCH_INDEX = [
       "daniela",
       "davila"
     ],
-    "rank": 64,
+    "rank": 65,
     "gender": "girls"
   },
   {
@@ -129455,7 +129483,7 @@ window.SEARCH_INDEX = [
       "britain",
       "howard"
     ],
-    "rank": 79,
+    "rank": 81,
     "gender": "girls"
   },
   {
@@ -129469,7 +129497,7 @@ window.SEARCH_INDEX = [
       "evans",
       "taylor"
     ],
-    "rank": 42,
+    "rank": 36,
     "gender": "girls"
   },
   {
@@ -129483,7 +129511,7 @@ window.SEARCH_INDEX = [
       "emerson",
       "jackson"
     ],
-    "rank": 10,
+    "rank": 11,
     "gender": "girls"
   },
   {
@@ -129497,7 +129525,7 @@ window.SEARCH_INDEX = [
       "bowden",
       "finola"
     ],
-    "rank": 57,
+    "rank": 69,
     "gender": "girls"
   },
   {
@@ -129511,7 +129539,7 @@ window.SEARCH_INDEX = [
       "amaris",
       "solly"
     ],
-    "rank": 45,
+    "rank": 43,
     "gender": "girls"
   },
   {
@@ -129525,7 +129553,7 @@ window.SEARCH_INDEX = [
       "collins",
       "makenzie"
     ],
-    "rank": 47,
+    "rank": 50,
     "gender": "girls"
   },
   {
@@ -129539,7 +129567,7 @@ window.SEARCH_INDEX = [
       "blackburn",
       "kadience"
     ],
-    "rank": 41,
+    "rank": 40,
     "gender": "girls"
   },
   {
@@ -129553,7 +129581,21 @@ window.SEARCH_INDEX = [
       "cupp",
       "natalee"
     ],
-    "rank": 58,
+    "rank": 53,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Anne Iranzi",
+    "first_name": "Anne",
+    "last_name": "Iranzi",
+    "secondary": "Pleasure Ridge Park · 120",
+    "url": "/wrestler.html?id=35778293132&gender=girls",
+    "searchTokens": [
+      "anne",
+      "iranzi"
+    ],
+    "rank": 92,
     "gender": "girls"
   },
   {
@@ -129567,7 +129609,7 @@ window.SEARCH_INDEX = [
       "brooklyn",
       "brown"
     ],
-    "rank": 76,
+    "rank": 77,
     "gender": "girls"
   },
   {
@@ -129600,20 +129642,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jennifer Vargus",
-    "first_name": "Jennifer",
-    "last_name": "Vargus",
-    "secondary": "Scott County · 120",
-    "url": "/wrestler.html?id=35333390132&gender=girls",
-    "searchTokens": [
-      "jennifer",
-      "vargus"
-    ],
-    "rank": 22,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Jayla Purcell",
     "first_name": "Jayla",
     "last_name": "Purcell",
@@ -129623,7 +129651,7 @@ window.SEARCH_INDEX = [
       "jayla",
       "purcell"
     ],
-    "rank": 71,
+    "rank": 72,
     "gender": "girls"
   },
   {
@@ -129637,7 +129665,7 @@ window.SEARCH_INDEX = [
       "lynndae",
       "wales"
     ],
-    "rank": 15,
+    "rank": 18,
     "gender": "girls"
   },
   {
@@ -129651,7 +129679,7 @@ window.SEARCH_INDEX = [
       "araujo",
       "yeimily"
     ],
-    "rank": 43,
+    "rank": 41,
     "gender": "girls"
   },
   {
@@ -129670,6 +129698,34 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Amia Lane",
+    "first_name": "Amia",
+    "last_name": "Lane",
+    "secondary": "Southern · 120",
+    "url": "/wrestler.html?id=37864197132&gender=girls",
+    "searchTokens": [
+      "amia",
+      "lane"
+    ],
+    "rank": 80,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Grace Shoopman",
+    "first_name": "Grace",
+    "last_name": "Shoopman",
+    "secondary": "Southwestern · 120",
+    "url": "/wrestler.html?id=35495574132&gender=girls",
+    "searchTokens": [
+      "grace",
+      "shoopman"
+    ],
+    "rank": 21,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Grace Davis",
     "first_name": "Grace",
     "last_name": "Davis",
@@ -129679,7 +129735,7 @@ window.SEARCH_INDEX = [
       "davis",
       "grace"
     ],
-    "rank": 85,
+    "rank": 87,
     "gender": "girls"
   },
   {
@@ -129693,7 +129749,7 @@ window.SEARCH_INDEX = [
       "julie",
       "phelps"
     ],
-    "rank": 97,
+    "rank": 100,
     "gender": "girls"
   },
   {
@@ -129707,7 +129763,7 @@ window.SEARCH_INDEX = [
       "cooper",
       "zeliah"
     ],
-    "rank": 39,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -129721,7 +129777,7 @@ window.SEARCH_INDEX = [
       "lay",
       "olivia"
     ],
-    "rank": 93,
+    "rank": 96,
     "gender": "girls"
   },
   {
@@ -129735,7 +129791,7 @@ window.SEARCH_INDEX = [
       "mckynna",
       "underwood-hazel"
     ],
-    "rank": 92,
+    "rank": 95,
     "gender": "girls"
   },
   {
@@ -129749,21 +129805,21 @@ window.SEARCH_INDEX = [
       "beavers",
       "kaylee"
     ],
-    "rank": 83,
+    "rank": 85,
     "gender": "girls"
   },
   {
     "type": "wrestler",
-    "name": "sutton fuller",
-    "first_name": "sutton",
-    "last_name": "fuller",
+    "name": "bailey buchanan",
+    "first_name": "bailey",
+    "last_name": "buchanan",
     "secondary": "Union County · 120",
-    "url": "/wrestler.html?id=35564944132&gender=girls",
+    "url": "/wrestler.html?id=35565757132&gender=girls",
     "searchTokens": [
-      "fuller",
-      "sutton"
+      "bailey",
+      "buchanan"
     ],
-    "rank": 16,
+    "rank": 54,
     "gender": "girls"
   },
   {
@@ -129782,6 +129838,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Ja`Rhia Weaver",
+    "first_name": "Ja`Rhia",
+    "last_name": "Weaver",
+    "secondary": "Valley · 120",
+    "url": "/wrestler.html?id=35515611132&gender=girls",
+    "searchTokens": [
+      "ja`rhia",
+      "weaver"
+    ],
+    "rank": 51,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Abrielle Hooten",
     "first_name": "Abrielle",
     "last_name": "Hooten",
@@ -129791,7 +129861,7 @@ window.SEARCH_INDEX = [
       "abrielle",
       "hooten"
     ],
-    "rank": 21,
+    "rank": 15,
     "gender": "girls"
   },
   {
@@ -129805,7 +129875,7 @@ window.SEARCH_INDEX = [
       "isha",
       "osman"
     ],
-    "rank": 48,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -129819,7 +129889,21 @@ window.SEARCH_INDEX = [
       "faith",
       "williams"
     ],
-    "rank": 91,
+    "rank": 94,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Ashlen Douglas",
+    "first_name": "Ashlen",
+    "last_name": "Douglas",
+    "secondary": "Whitley County · 120",
+    "url": "/wrestler.html?id=35427617132&gender=girls",
+    "searchTokens": [
+      "ashlen",
+      "douglas"
+    ],
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -129833,7 +129917,7 @@ window.SEARCH_INDEX = [
       "baylee",
       "simpson"
     ],
-    "rank": 40,
+    "rank": 39,
     "gender": "girls"
   },
   {
@@ -130119,6 +130203,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Lynndae Wales",
+    "first_name": "Lynndae",
+    "last_name": "Wales",
+    "secondary": "Shawnee · 120",
+    "url": "/wrestler.html?id=35076694132&gender=girls",
+    "searchTokens": [
+      "lynndae",
+      "wales"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Unknown",
     "first_name": "Unknown",
     "last_name": "",
@@ -130154,6 +130252,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "alice",
       "miller"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Amia Lane",
+    "first_name": "Amia",
+    "last_name": "Lane",
+    "secondary": "Southern · 120",
+    "url": "/wrestler.html?id=OUTSTATE_8d12bb11158d&gender=girls",
+    "searchTokens": [
+      "amia",
+      "lane"
     ],
     "rank": null,
     "gender": "girls"
@@ -130222,20 +130334,6 @@ window.SEARCH_INDEX = [
     "url": "/wrestler.html?id=OUTSTATE_fa707c1de75c&gender=girls",
     "searchTokens": [
       "unknown"
-    ],
-    "rank": null,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Lynndae Wales",
-    "first_name": "Lynndae",
-    "last_name": "Wales",
-    "secondary": "Shawnee · 120",
-    "url": "/wrestler.html?id=35076694132&gender=girls",
-    "searchTokens": [
-      "lynndae",
-      "wales"
     ],
     "rank": null,
     "gender": "girls"
@@ -130897,6 +130995,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Lynndae Wales",
+    "first_name": "Lynndae",
+    "last_name": "Wales",
+    "secondary": "Shawnee · 120",
+    "url": "/wrestler.html?id=OUTSTATE_d216ed62d838&gender=girls",
+    "searchTokens": [
+      "lynndae",
+      "wales"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Brooklin Clark",
     "first_name": "Brooklin",
     "last_name": "Clark",
@@ -131121,6 +131233,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Romance Lateef",
+    "first_name": "Romance",
+    "last_name": "Lateef",
+    "secondary": "Moore · 120",
+    "url": "/wrestler.html?id=OUTSTATE_d5ff1f8d9252&gender=girls",
+    "searchTokens": [
+      "lateef",
+      "romance"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Madeline Holwager",
     "first_name": "Madeline",
     "last_name": "Holwager",
@@ -131143,6 +131269,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "cassie",
       "manning"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "NaRhiya Davis",
+    "first_name": "NaRhiya",
+    "last_name": "Davis",
+    "secondary": "Central · 120",
+    "url": "/wrestler.html?id=OUTSTATE_dd9e219be020&gender=girls",
+    "searchTokens": [
+      "davis",
+      "narhiya"
     ],
     "rank": null,
     "gender": "girls"
@@ -131187,7 +131327,7 @@ window.SEARCH_INDEX = [
       "bergin",
       "keylin"
     ],
-    "rank": 58,
+    "rank": 55,
     "gender": "girls"
   },
   {
@@ -131201,7 +131341,7 @@ window.SEARCH_INDEX = [
       "krystal",
       "sosh"
     ],
-    "rank": 57,
+    "rank": 59,
     "gender": "girls"
   },
   {
@@ -131215,7 +131355,7 @@ window.SEARCH_INDEX = [
       "skylin",
       "watts"
     ],
-    "rank": 31,
+    "rank": 30,
     "gender": "girls"
   },
   {
@@ -131229,7 +131369,7 @@ window.SEARCH_INDEX = [
       "helms",
       "zoe"
     ],
-    "rank": 28,
+    "rank": 25,
     "gender": "girls"
   },
   {
@@ -131243,7 +131383,7 @@ window.SEARCH_INDEX = [
       "mollie",
       "o`daniel"
     ],
-    "rank": 81,
+    "rank": 77,
     "gender": "girls"
   },
   {
@@ -131257,7 +131397,7 @@ window.SEARCH_INDEX = [
       "good",
       "sophia"
     ],
-    "rank": 107,
+    "rank": 99,
     "gender": "girls"
   },
   {
@@ -131271,7 +131411,7 @@ window.SEARCH_INDEX = [
       "kennedy",
       "slusher"
     ],
-    "rank": 25,
+    "rank": 23,
     "gender": "girls"
   },
   {
@@ -131299,7 +131439,7 @@ window.SEARCH_INDEX = [
       "diamond",
       "hailey"
     ],
-    "rank": 32,
+    "rank": 31,
     "gender": "girls"
   },
   {
@@ -131318,20 +131458,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Sarayna Lopez",
-    "first_name": "Sarayna",
-    "last_name": "Lopez",
-    "secondary": "Boyle County · 126",
-    "url": "/wrestler.html?id=35333440132&gender=girls",
-    "searchTokens": [
-      "lopez",
-      "sarayna"
-    ],
-    "rank": 15,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Embree Root",
     "first_name": "Embree",
     "last_name": "Root",
@@ -131341,7 +131467,7 @@ window.SEARCH_INDEX = [
       "embree",
       "root"
     ],
-    "rank": 92,
+    "rank": 89,
     "gender": "girls"
   },
   {
@@ -131355,7 +131481,7 @@ window.SEARCH_INDEX = [
       "kaylee",
       "sullivan"
     ],
-    "rank": 46,
+    "rank": 48,
     "gender": "girls"
   },
   {
@@ -131383,7 +131509,7 @@ window.SEARCH_INDEX = [
       "micaela",
       "owens"
     ],
-    "rank": 102,
+    "rank": 95,
     "gender": "girls"
   },
   {
@@ -131397,7 +131523,7 @@ window.SEARCH_INDEX = [
       "emilee",
       "klidzejs"
     ],
-    "rank": 27,
+    "rank": 15,
     "gender": "girls"
   },
   {
@@ -131411,7 +131537,7 @@ window.SEARCH_INDEX = [
       "overbey",
       "westinn"
     ],
-    "rank": 34,
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -131425,7 +131551,7 @@ window.SEARCH_INDEX = [
       "ellis",
       "isabelle"
     ],
-    "rank": 100,
+    "rank": 93,
     "gender": "girls"
   },
   {
@@ -131439,7 +131565,7 @@ window.SEARCH_INDEX = [
       "lucia",
       "makinna"
     ],
-    "rank": 80,
+    "rank": 76,
     "gender": "girls"
   },
   {
@@ -131453,7 +131579,7 @@ window.SEARCH_INDEX = [
       "hailey",
       "nall"
     ],
-    "rank": 70,
+    "rank": 65,
     "gender": "girls"
   },
   {
@@ -131467,7 +131593,7 @@ window.SEARCH_INDEX = [
       "burlison",
       "scarlett"
     ],
-    "rank": 33,
+    "rank": 32,
     "gender": "girls"
   },
   {
@@ -131481,7 +131607,7 @@ window.SEARCH_INDEX = [
       "rhyn",
       "trahan"
     ],
-    "rank": 44,
+    "rank": 36,
     "gender": "girls"
   },
   {
@@ -131495,7 +131621,7 @@ window.SEARCH_INDEX = [
       "ayden",
       "wilson"
     ],
-    "rank": 91,
+    "rank": 86,
     "gender": "girls"
   },
   {
@@ -131509,7 +131635,7 @@ window.SEARCH_INDEX = [
       "avah",
       "hammons"
     ],
-    "rank": 10,
+    "rank": 9,
     "gender": "girls"
   },
   {
@@ -131523,7 +131649,7 @@ window.SEARCH_INDEX = [
       "brooklynn",
       "robinson"
     ],
-    "rank": 17,
+    "rank": 16,
     "gender": "girls"
   },
   {
@@ -131537,7 +131663,7 @@ window.SEARCH_INDEX = [
       "clayton",
       "coryell"
     ],
-    "rank": 56,
+    "rank": 50,
     "gender": "girls"
   },
   {
@@ -131551,7 +131677,7 @@ window.SEARCH_INDEX = [
       "caloca",
       "maliyah"
     ],
-    "rank": 42,
+    "rank": 41,
     "gender": "girls"
   },
   {
@@ -131565,36 +131691,21 @@ window.SEARCH_INDEX = [
       "hall",
       "kaitlyn"
     ],
-    "rank": 98,
+    "rank": 91,
     "gender": "girls"
   },
   {
     "type": "wrestler",
-    "name": "Kayla Maslonka",
-    "first_name": "Kayla",
-    "last_name": "Maslonka",
+    "name": "Tristin Caldwell",
+    "first_name": "Tristin",
+    "last_name": "Caldwell",
     "secondary": "Fort Campbell · 126",
-    "url": "/wrestler.html?id=35520299132&gender=girls",
+    "url": "/wrestler.html?id=35666995132&gender=girls",
     "searchTokens": [
-      "kayla",
-      "maslonka"
+      "caldwell",
+      "tristin"
     ],
-    "rank": 4,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Hannah `Liz` Porter",
-    "first_name": "Hannah",
-    "last_name": "`Liz` Porter",
-    "secondary": "Fort Campbell · 126",
-    "url": "/wrestler.html?id=35520301132&gender=girls",
-    "searchTokens": [
-      "`liz`",
-      "hannah",
-      "porter"
-    ],
-    "rank": 23,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -131608,7 +131719,7 @@ window.SEARCH_INDEX = [
       "ciara",
       "ybarra"
     ],
-    "rank": 20,
+    "rank": 13,
     "gender": "girls"
   },
   {
@@ -131622,7 +131733,7 @@ window.SEARCH_INDEX = [
       "aachal",
       "kandal"
     ],
-    "rank": 69,
+    "rank": 66,
     "gender": "girls"
   },
   {
@@ -131636,7 +131747,7 @@ window.SEARCH_INDEX = [
       "enzlee",
       "foust"
     ],
-    "rank": 77,
+    "rank": 70,
     "gender": "girls"
   },
   {
@@ -131650,7 +131761,7 @@ window.SEARCH_INDEX = [
       "carter",
       "naomi"
     ],
-    "rank": 49,
+    "rank": 60,
     "gender": "girls"
   },
   {
@@ -131664,7 +131775,7 @@ window.SEARCH_INDEX = [
       "anthaydee",
       "rey"
     ],
-    "rank": 87,
+    "rank": 84,
     "gender": "girls"
   },
   {
@@ -131678,21 +131789,7 @@ window.SEARCH_INDEX = [
       "parker",
       "sadie"
     ],
-    "rank": 5,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Aubrey Ferguson",
-    "first_name": "Aubrey",
-    "last_name": "Ferguson",
-    "secondary": "Green County · 126",
-    "url": "/wrestler.html?id=35468198132&gender=girls",
-    "searchTokens": [
-      "aubrey",
-      "ferguson"
-    ],
-    "rank": 64,
+    "rank": 4,
     "gender": "girls"
   },
   {
@@ -131706,7 +131803,7 @@ window.SEARCH_INDEX = [
       "darnell",
       "jaidyn"
     ],
-    "rank": 74,
+    "rank": 71,
     "gender": "girls"
   },
   {
@@ -131720,21 +131817,7 @@ window.SEARCH_INDEX = [
       "brown",
       "violet"
     ],
-    "rank": 54,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Mattie Westfall",
-    "first_name": "Mattie",
-    "last_name": "Westfall",
-    "secondary": "Greenup County · 126",
-    "url": "/wrestler.html?id=35635808132&gender=girls",
-    "searchTokens": [
-      "mattie",
-      "westfall"
-    ],
-    "rank": 93,
+    "rank": 58,
     "gender": "girls"
   },
   {
@@ -131748,7 +131831,7 @@ window.SEARCH_INDEX = [
       "niang",
       "nuam"
     ],
-    "rank": 73,
+    "rank": 69,
     "gender": "girls"
   },
   {
@@ -131762,7 +131845,7 @@ window.SEARCH_INDEX = [
       "faith",
       "saylor"
     ],
-    "rank": 83,
+    "rank": 79,
     "gender": "girls"
   },
   {
@@ -131776,7 +131859,7 @@ window.SEARCH_INDEX = [
       "aguilar",
       "olivia"
     ],
-    "rank": 50,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -131790,7 +131873,7 @@ window.SEARCH_INDEX = [
       "bailey",
       "emma"
     ],
-    "rank": 12,
+    "rank": 11,
     "gender": "girls"
   },
   {
@@ -131804,7 +131887,7 @@ window.SEARCH_INDEX = [
       "ferris",
       "torres"
     ],
-    "rank": 89,
+    "rank": 85,
     "gender": "girls"
   },
   {
@@ -131818,7 +131901,7 @@ window.SEARCH_INDEX = [
       "rivera",
       "serenity"
     ],
-    "rank": 8,
+    "rank": 14,
     "gender": "girls"
   },
   {
@@ -131832,7 +131915,7 @@ window.SEARCH_INDEX = [
       "alli",
       "meyers"
     ],
-    "rank": 96,
+    "rank": 90,
     "gender": "girls"
   },
   {
@@ -131846,7 +131929,7 @@ window.SEARCH_INDEX = [
       "alexa",
       "embry"
     ],
-    "rank": 103,
+    "rank": 96,
     "gender": "girls"
   },
   {
@@ -131865,20 +131948,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Serenity Decker",
-    "first_name": "Serenity",
-    "last_name": "Decker",
-    "secondary": "Holmes · 126",
-    "url": "/wrestler.html?id=35510395132&gender=girls",
-    "searchTokens": [
-      "decker",
-      "serenity"
-    ],
-    "rank": 94,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Emma DeArmond",
     "first_name": "Emma",
     "last_name": "DeArmond",
@@ -131888,7 +131957,7 @@ window.SEARCH_INDEX = [
       "dearmond",
       "emma"
     ],
-    "rank": 36,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -131903,7 +131972,7 @@ window.SEARCH_INDEX = [
       "shelton",
       "vincent"
     ],
-    "rank": 85,
+    "rank": 81,
     "gender": "girls"
   },
   {
@@ -131917,7 +131986,7 @@ window.SEARCH_INDEX = [
       "jasmine",
       "taylor"
     ],
-    "rank": 90,
+    "rank": 67,
     "gender": "girls"
   },
   {
@@ -131931,7 +132000,7 @@ window.SEARCH_INDEX = [
       "ailla",
       "hinton"
     ],
-    "rank": 104,
+    "rank": 97,
     "gender": "girls"
   },
   {
@@ -131945,7 +132014,7 @@ window.SEARCH_INDEX = [
       "april",
       "haisma"
     ],
-    "rank": 9,
+    "rank": 7,
     "gender": "girls"
   },
   {
@@ -131959,7 +132028,7 @@ window.SEARCH_INDEX = [
       "lilith",
       "trupp"
     ],
-    "rank": 52,
+    "rank": 46,
     "gender": "girls"
   },
   {
@@ -131973,7 +132042,7 @@ window.SEARCH_INDEX = [
       "furaha",
       "keza"
     ],
-    "rank": 13,
+    "rank": 12,
     "gender": "girls"
   },
   {
@@ -132001,7 +132070,7 @@ window.SEARCH_INDEX = [
       "hankins",
       "layla"
     ],
-    "rank": 62,
+    "rank": 56,
     "gender": "girls"
   },
   {
@@ -132015,7 +132084,7 @@ window.SEARCH_INDEX = [
       "greer",
       "makenzie"
     ],
-    "rank": 30,
+    "rank": 27,
     "gender": "girls"
   },
   {
@@ -132029,7 +132098,7 @@ window.SEARCH_INDEX = [
       "ella",
       "presnell"
     ],
-    "rank": 51,
+    "rank": 29,
     "gender": "girls"
   },
   {
@@ -132043,7 +132112,7 @@ window.SEARCH_INDEX = [
       "kennedy",
       "maynard"
     ],
-    "rank": 41,
+    "rank": 5,
     "gender": "girls"
   },
   {
@@ -132057,7 +132126,7 @@ window.SEARCH_INDEX = [
       "heaven",
       "marshall"
     ],
-    "rank": 18,
+    "rank": 17,
     "gender": "girls"
   },
   {
@@ -132071,7 +132140,7 @@ window.SEARCH_INDEX = [
       "aireal",
       "morton"
     ],
-    "rank": 84,
+    "rank": 80,
     "gender": "girls"
   },
   {
@@ -132085,7 +132154,7 @@ window.SEARCH_INDEX = [
       "concepcion",
       "danielle"
     ],
-    "rank": 48,
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -132099,7 +132168,7 @@ window.SEARCH_INDEX = [
       "gembe",
       "hermayoni"
     ],
-    "rank": 19,
+    "rank": 20,
     "gender": "girls"
   },
   {
@@ -132113,7 +132182,7 @@ window.SEARCH_INDEX = [
       "chinas-rodriguez",
       "daveallen"
     ],
-    "rank": 45,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -132127,7 +132196,7 @@ window.SEARCH_INDEX = [
       "karma",
       "taylor"
     ],
-    "rank": 24,
+    "rank": 18,
     "gender": "girls"
   },
   {
@@ -132141,7 +132210,7 @@ window.SEARCH_INDEX = [
       "karissa",
       "mesalam"
     ],
-    "rank": 55,
+    "rank": 49,
     "gender": "girls"
   },
   {
@@ -132155,7 +132224,22 @@ window.SEARCH_INDEX = [
       "barrett",
       "brooklyn"
     ],
-    "rank": 76,
+    "rank": 73,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Laura Rodriguez Arias",
+    "first_name": "Laura",
+    "last_name": "Rodriguez Arias",
+    "secondary": "Moore · 126",
+    "url": "/wrestler.html?id=35333399132&gender=girls",
+    "searchTokens": [
+      "arias",
+      "laura",
+      "rodriguez"
+    ],
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -132169,7 +132253,7 @@ window.SEARCH_INDEX = [
       "raelynn",
       "watkins"
     ],
-    "rank": 105,
+    "rank": 98,
     "gender": "girls"
   },
   {
@@ -132189,20 +132273,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Trinity Mattingly",
-    "first_name": "Trinity",
-    "last_name": "Mattingly",
-    "secondary": "Nelson County · 126",
-    "url": "/wrestler.html?id=35565883132&gender=girls",
-    "searchTokens": [
-      "mattingly",
-      "trinity"
-    ],
-    "rank": 16,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Ava Grady",
     "first_name": "Ava",
     "last_name": "Grady",
@@ -132212,7 +132282,7 @@ window.SEARCH_INDEX = [
       "ava",
       "grady"
     ],
-    "rank": 71,
+    "rank": 68,
     "gender": "girls"
   },
   {
@@ -132226,7 +132296,7 @@ window.SEARCH_INDEX = [
       "natilee",
       "smithson"
     ],
-    "rank": 61,
+    "rank": 62,
     "gender": "girls"
   },
   {
@@ -132240,7 +132310,7 @@ window.SEARCH_INDEX = [
       "brooklyn",
       "willis"
     ],
-    "rank": 101,
+    "rank": 94,
     "gender": "girls"
   },
   {
@@ -132268,7 +132338,7 @@ window.SEARCH_INDEX = [
       "celia",
       "veal"
     ],
-    "rank": 35,
+    "rank": 34,
     "gender": "girls"
   },
   {
@@ -132282,7 +132352,7 @@ window.SEARCH_INDEX = [
       "sabbagh",
       "syaliea"
     ],
-    "rank": 106,
+    "rank": 83,
     "gender": "girls"
   },
   {
@@ -132324,7 +132394,7 @@ window.SEARCH_INDEX = [
       "mason-taylor",
       "neveah"
     ],
-    "rank": 67,
+    "rank": 51,
     "gender": "girls"
   },
   {
@@ -132338,7 +132408,7 @@ window.SEARCH_INDEX = [
       "gracelynn",
       "honshell"
     ],
-    "rank": 88,
+    "rank": 87,
     "gender": "girls"
   },
   {
@@ -132352,7 +132422,7 @@ window.SEARCH_INDEX = [
       "lawrence",
       "layla"
     ],
-    "rank": 99,
+    "rank": 92,
     "gender": "girls"
   },
   {
@@ -132366,7 +132436,7 @@ window.SEARCH_INDEX = [
       "richardson",
       "river"
     ],
-    "rank": 82,
+    "rank": 78,
     "gender": "girls"
   },
   {
@@ -132380,7 +132450,7 @@ window.SEARCH_INDEX = [
       "faith",
       "pearson"
     ],
-    "rank": 65,
+    "rank": 63,
     "gender": "girls"
   },
   {
@@ -132394,7 +132464,21 @@ window.SEARCH_INDEX = [
       "christine",
       "taylor"
     ],
-    "rank": 26,
+    "rank": 24,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Jennifer Vargus",
+    "first_name": "Jennifer",
+    "last_name": "Vargus",
+    "secondary": "Scott County · 126",
+    "url": "/wrestler.html?id=35333390132&gender=girls",
+    "searchTokens": [
+      "jennifer",
+      "vargus"
+    ],
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -132422,7 +132506,7 @@ window.SEARCH_INDEX = [
       "isabelle",
       "johnson"
     ],
-    "rank": 59,
+    "rank": 53,
     "gender": "girls"
   },
   {
@@ -132436,21 +132520,7 @@ window.SEARCH_INDEX = [
       "lancette",
       "laney"
     ],
-    "rank": 29,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Amia Lane",
-    "first_name": "Amia",
-    "last_name": "Lane",
-    "secondary": "Southern · 126",
-    "url": "/wrestler.html?id=37864197132&gender=girls",
-    "searchTokens": [
-      "amia",
-      "lane"
-    ],
-    "rank": 97,
+    "rank": 26,
     "gender": "girls"
   },
   {
@@ -132464,21 +132534,7 @@ window.SEARCH_INDEX = [
       "mbaye-diallo",
       "samira"
     ],
-    "rank": 66,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Grace Shoopman",
-    "first_name": "Grace",
-    "last_name": "Shoopman",
-    "secondary": "Southwestern · 126",
-    "url": "/wrestler.html?id=35495574132&gender=girls",
-    "searchTokens": [
-      "grace",
-      "shoopman"
-    ],
-    "rank": 7,
+    "rank": 64,
     "gender": "girls"
   },
   {
@@ -132492,7 +132548,7 @@ window.SEARCH_INDEX = [
       "calhoun",
       "lily"
     ],
-    "rank": 75,
+    "rank": 74,
     "gender": "girls"
   },
   {
@@ -132506,7 +132562,7 @@ window.SEARCH_INDEX = [
       "savannah",
       "vaughan"
     ],
-    "rank": 86,
+    "rank": 82,
     "gender": "girls"
   },
   {
@@ -132520,7 +132576,7 @@ window.SEARCH_INDEX = [
       "gutterman",
       "sera"
     ],
-    "rank": 11,
+    "rank": 8,
     "gender": "girls"
   },
   {
@@ -132534,7 +132590,7 @@ window.SEARCH_INDEX = [
       "sophia",
       "wise"
     ],
-    "rank": 78,
+    "rank": 72,
     "gender": "girls"
   },
   {
@@ -132562,21 +132618,7 @@ window.SEARCH_INDEX = [
       "ashlynn",
       "brooks"
     ],
-    "rank": 95,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Chloe Schwanenberger",
-    "first_name": "Chloe",
-    "last_name": "Schwanenberger",
-    "secondary": "Walton-Verona · 126",
-    "url": "/wrestler.html?id=35352392132&gender=girls",
-    "searchTokens": [
-      "chloe",
-      "schwanenberger"
-    ],
-    "rank": 14,
+    "rank": 88,
     "gender": "girls"
   },
   {
@@ -132590,21 +132632,7 @@ window.SEARCH_INDEX = [
       "dezeray",
       "morris"
     ],
-    "rank": 72,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Desirae Carpenter",
-    "first_name": "Desirae",
-    "last_name": "Carpenter",
-    "secondary": "Western · 126",
-    "url": "/wrestler.html?id=35333681132&gender=girls",
-    "searchTokens": [
-      "carpenter",
-      "desirae"
-    ],
-    "rank": 68,
+    "rank": 61,
     "gender": "girls"
   },
   {
@@ -132618,7 +132646,7 @@ window.SEARCH_INDEX = [
       "adalee",
       "gilreath"
     ],
-    "rank": 53,
+    "rank": 52,
     "gender": "girls"
   },
   {
@@ -132632,7 +132660,7 @@ window.SEARCH_INDEX = [
       "harley",
       "lawson"
     ],
-    "rank": 79,
+    "rank": 75,
     "gender": "girls"
   },
   {
@@ -132646,7 +132674,7 @@ window.SEARCH_INDEX = [
       "chloe",
       "mansberry"
     ],
-    "rank": 60,
+    "rank": 54,
     "gender": "girls"
   },
   {
@@ -132660,7 +132688,7 @@ window.SEARCH_INDEX = [
       "morgan",
       "phillips"
     ],
-    "rank": 63,
+    "rank": 57,
     "gender": "girls"
   },
   {
@@ -132995,6 +133023,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "layla",
       "tackett"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Icla Ramadan",
+    "first_name": "Icla",
+    "last_name": "Ramadan",
+    "secondary": "Shawnee · 126",
+    "url": "/wrestler.html?id=38688207132&gender=girls",
+    "searchTokens": [
+      "icla",
+      "ramadan"
     ],
     "rank": null,
     "gender": "girls"
@@ -134078,6 +134120,34 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Emily Stephenson",
+    "first_name": "Emily",
+    "last_name": "Stephenson",
+    "secondary": "Walton-Verona · 126",
+    "url": "/wrestler.html?id=OUTSTATE_e32c88b93ce2&gender=girls",
+    "searchTokens": [
+      "emily",
+      "stephenson"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Rhyn Trahan",
+    "first_name": "Rhyn",
+    "last_name": "Trahan",
+    "secondary": "Christian County · 126",
+    "url": "/wrestler.html?id=OUTSTATE_3240135bfac5&gender=girls",
+    "searchTokens": [
+      "rhyn",
+      "trahan"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Presley Buckley",
     "first_name": "Presley",
     "last_name": "Buckley",
@@ -134128,34 +134198,6 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "jenna",
       "panossian"
-    ],
-    "rank": null,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Emily Stephenson",
-    "first_name": "Emily",
-    "last_name": "Stephenson",
-    "secondary": "Walton-Verona · 126",
-    "url": "/wrestler.html?id=OUTSTATE_e32c88b93ce2&gender=girls",
-    "searchTokens": [
-      "emily",
-      "stephenson"
-    ],
-    "rank": null,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Rhyn Trahan",
-    "first_name": "Rhyn",
-    "last_name": "Trahan",
-    "secondary": "Christian County · 126",
-    "url": "/wrestler.html?id=OUTSTATE_3240135bfac5&gender=girls",
-    "searchTokens": [
-      "rhyn",
-      "trahan"
     ],
     "rank": null,
     "gender": "girls"
@@ -134338,7 +134380,7 @@ window.SEARCH_INDEX = [
       "gelarden",
       "lanah"
     ],
-    "rank": 52,
+    "rank": 51,
     "gender": "girls"
   },
   {
@@ -134352,7 +134394,7 @@ window.SEARCH_INDEX = [
       "miranda",
       "rios"
     ],
-    "rank": 57,
+    "rank": 59,
     "gender": "girls"
   },
   {
@@ -134366,7 +134408,7 @@ window.SEARCH_INDEX = [
       "eliennis",
       "lopez"
     ],
-    "rank": 45,
+    "rank": 47,
     "gender": "girls"
   },
   {
@@ -134380,7 +134422,7 @@ window.SEARCH_INDEX = [
       "moyer",
       "vivian"
     ],
-    "rank": 9,
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -134394,7 +134436,7 @@ window.SEARCH_INDEX = [
       "marcum",
       "tenley"
     ],
-    "rank": 22,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -134408,7 +134450,7 @@ window.SEARCH_INDEX = [
       "kaylee",
       "lester"
     ],
-    "rank": 11,
+    "rank": 12,
     "gender": "girls"
   },
   {
@@ -134436,7 +134478,7 @@ window.SEARCH_INDEX = [
       "makayla",
       "swartz"
     ],
-    "rank": 73,
+    "rank": 77,
     "gender": "girls"
   },
   {
@@ -134450,21 +134492,7 @@ window.SEARCH_INDEX = [
       "elexis",
       "herrington"
     ],
-    "rank": 39,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Lexie Dingess",
-    "first_name": "Lexie",
-    "last_name": "Dingess",
-    "secondary": "Boyd County · 132",
-    "url": "/wrestler.html?id=35850788132&gender=girls",
-    "searchTokens": [
-      "dingess",
-      "lexie"
-    ],
-    "rank": 14,
+    "rank": 26,
     "gender": "girls"
   },
   {
@@ -134506,7 +134534,7 @@ window.SEARCH_INDEX = [
       "aniyaree",
       "wilson"
     ],
-    "rank": 25,
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -134520,7 +134548,7 @@ window.SEARCH_INDEX = [
       "claudio",
       "kayleanna"
     ],
-    "rank": 38,
+    "rank": 37,
     "gender": "girls"
   },
   {
@@ -134534,7 +134562,7 @@ window.SEARCH_INDEX = [
       "gurung",
       "puja"
     ],
-    "rank": 47,
+    "rank": 64,
     "gender": "girls"
   },
   {
@@ -134562,7 +134590,7 @@ window.SEARCH_INDEX = [
       "cambri",
       "parker"
     ],
-    "rank": 34,
+    "rank": 36,
     "gender": "girls"
   },
   {
@@ -134576,7 +134604,7 @@ window.SEARCH_INDEX = [
       "raelee",
       "trudelle"
     ],
-    "rank": 72,
+    "rank": 76,
     "gender": "girls"
   },
   {
@@ -134590,7 +134618,21 @@ window.SEARCH_INDEX = [
       "ava",
       "leary"
     ],
-    "rank": 12,
+    "rank": 13,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Kayla Maslonka",
+    "first_name": "Kayla",
+    "last_name": "Maslonka",
+    "secondary": "Fort Campbell · 132",
+    "url": "/wrestler.html?id=35520299132&gender=girls",
+    "searchTokens": [
+      "kayla",
+      "maslonka"
+    ],
+    "rank": 7,
     "gender": "girls"
   },
   {
@@ -134604,7 +134646,7 @@ window.SEARCH_INDEX = [
       "crutcher",
       "jordyn"
     ],
-    "rank": 13,
+    "rank": 14,
     "gender": "girls"
   },
   {
@@ -134618,7 +134660,7 @@ window.SEARCH_INDEX = [
       "maria",
       "meza"
     ],
-    "rank": 61,
+    "rank": 63,
     "gender": "girls"
   },
   {
@@ -134632,7 +134674,21 @@ window.SEARCH_INDEX = [
       "diaz",
       "lizeth"
     ],
-    "rank": 26,
+    "rank": 25,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Mattie Westfall",
+    "first_name": "Mattie",
+    "last_name": "Westfall",
+    "secondary": "Greenup County · 132",
+    "url": "/wrestler.html?id=35635808132&gender=girls",
+    "searchTokens": [
+      "mattie",
+      "westfall"
+    ],
+    "rank": 74,
     "gender": "girls"
   },
   {
@@ -134646,7 +134702,7 @@ window.SEARCH_INDEX = [
       "kendra",
       "longstreth"
     ],
-    "rank": 75,
+    "rank": 79,
     "gender": "girls"
   },
   {
@@ -134660,7 +134716,7 @@ window.SEARCH_INDEX = [
       "baldridge",
       "bonnie"
     ],
-    "rank": 71,
+    "rank": 75,
     "gender": "girls"
   },
   {
@@ -134674,7 +134730,7 @@ window.SEARCH_INDEX = [
       "harmon",
       "michaela"
     ],
-    "rank": 69,
+    "rank": 71,
     "gender": "girls"
   },
   {
@@ -134730,7 +134786,7 @@ window.SEARCH_INDEX = [
       "taylor",
       "teigan"
     ],
-    "rank": 48,
+    "rank": 49,
     "gender": "girls"
   },
   {
@@ -134744,7 +134800,21 @@ window.SEARCH_INDEX = [
       "lorelai",
       "manning"
     ],
-    "rank": 18,
+    "rank": 31,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Serenity Decker",
+    "first_name": "Serenity",
+    "last_name": "Decker",
+    "secondary": "Holmes · 132",
+    "url": "/wrestler.html?id=35510395132&gender=girls",
+    "searchTokens": [
+      "decker",
+      "serenity"
+    ],
+    "rank": 65,
     "gender": "girls"
   },
   {
@@ -134758,7 +134828,7 @@ window.SEARCH_INDEX = [
       "aguero",
       "juliette"
     ],
-    "rank": 60,
+    "rank": 61,
     "gender": "girls"
   },
   {
@@ -134772,7 +134842,7 @@ window.SEARCH_INDEX = [
       "geniya",
       "white"
     ],
-    "rank": 21,
+    "rank": 40,
     "gender": "girls"
   },
   {
@@ -134786,7 +134856,7 @@ window.SEARCH_INDEX = [
       "maxine",
       "rhinesmith"
     ],
-    "rank": 27,
+    "rank": 17,
     "gender": "girls"
   },
   {
@@ -134800,7 +134870,7 @@ window.SEARCH_INDEX = [
       "mcmurray",
       "vidia"
     ],
-    "rank": 74,
+    "rank": 78,
     "gender": "girls"
   },
   {
@@ -134828,7 +134898,7 @@ window.SEARCH_INDEX = [
       "austyn",
       "hammons"
     ],
-    "rank": 41,
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -134842,7 +134912,7 @@ window.SEARCH_INDEX = [
       "addison",
       "reed"
     ],
-    "rank": 10,
+    "rank": 11,
     "gender": "girls"
   },
   {
@@ -134884,7 +134954,7 @@ window.SEARCH_INDEX = [
       "adeline",
       "schmucker"
     ],
-    "rank": 51,
+    "rank": 53,
     "gender": "girls"
   },
   {
@@ -134912,7 +134982,7 @@ window.SEARCH_INDEX = [
       "gaby",
       "gonzalez"
     ],
-    "rank": 20,
+    "rank": 60,
     "gender": "girls"
   },
   {
@@ -134926,7 +134996,7 @@ window.SEARCH_INDEX = [
       "chloe",
       "lindsey"
     ],
-    "rank": 37,
+    "rank": 43,
     "gender": "girls"
   },
   {
@@ -134940,7 +135010,7 @@ window.SEARCH_INDEX = [
       "aleyah",
       "sexton"
     ],
-    "rank": 36,
+    "rank": 48,
     "gender": "girls"
   },
   {
@@ -134954,7 +135024,7 @@ window.SEARCH_INDEX = [
       "evelyn",
       "rugama"
     ],
-    "rank": 35,
+    "rank": 38,
     "gender": "girls"
   },
   {
@@ -134968,7 +135038,7 @@ window.SEARCH_INDEX = [
       "navaeh",
       "woods"
     ],
-    "rank": 31,
+    "rank": 30,
     "gender": "girls"
   },
   {
@@ -134982,7 +135052,7 @@ window.SEARCH_INDEX = [
       "khloe",
       "shanks"
     ],
-    "rank": 63,
+    "rank": 66,
     "gender": "girls"
   },
   {
@@ -134996,7 +135066,7 @@ window.SEARCH_INDEX = [
       "danielle",
       "hernandez"
     ],
-    "rank": 24,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -135012,7 +135082,7 @@ window.SEARCH_INDEX = [
       "kingdom-allah",
       "knowledge"
     ],
-    "rank": 19,
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -135026,7 +135096,7 @@ window.SEARCH_INDEX = [
       "hatfield",
       "kenlei"
     ],
-    "rank": 67,
+    "rank": 69,
     "gender": "girls"
   },
   {
@@ -135054,7 +135124,7 @@ window.SEARCH_INDEX = [
       "claire",
       "skeeters"
     ],
-    "rank": 17,
+    "rank": 20,
     "gender": "girls"
   },
   {
@@ -135096,7 +135166,7 @@ window.SEARCH_INDEX = [
       "amiya",
       "hill"
     ],
-    "rank": 59,
+    "rank": 58,
     "gender": "girls"
   },
   {
@@ -135110,7 +135180,7 @@ window.SEARCH_INDEX = [
       "holliday",
       "jozaphine"
     ],
-    "rank": 68,
+    "rank": 70,
     "gender": "girls"
   },
   {
@@ -135124,7 +135194,7 @@ window.SEARCH_INDEX = [
       "isabell",
       "martinez"
     ],
-    "rank": 42,
+    "rank": 41,
     "gender": "girls"
   },
   {
@@ -135138,7 +135208,7 @@ window.SEARCH_INDEX = [
       "monica",
       "whitehead"
     ],
-    "rank": 8,
+    "rank": 9,
     "gender": "girls"
   },
   {
@@ -135152,7 +135222,7 @@ window.SEARCH_INDEX = [
       "hannah",
       "ratliff"
     ],
-    "rank": 53,
+    "rank": 57,
     "gender": "girls"
   },
   {
@@ -135166,7 +135236,7 @@ window.SEARCH_INDEX = [
       "allen",
       "candan"
     ],
-    "rank": 28,
+    "rank": 27,
     "gender": "girls"
   },
   {
@@ -135181,7 +135251,7 @@ window.SEARCH_INDEX = [
       "mayiah",
       "stephenson"
     ],
-    "rank": 58,
+    "rank": 55,
     "gender": "girls"
   },
   {
@@ -135195,7 +135265,7 @@ window.SEARCH_INDEX = [
       "ariel",
       "weatherholt"
     ],
-    "rank": 70,
+    "rank": 73,
     "gender": "girls"
   },
   {
@@ -135209,7 +135279,7 @@ window.SEARCH_INDEX = [
       "haught",
       "sophie"
     ],
-    "rank": 33,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -135223,7 +135293,7 @@ window.SEARCH_INDEX = [
       "brown",
       "ezri"
     ],
-    "rank": 64,
+    "rank": 68,
     "gender": "girls"
   },
   {
@@ -135237,7 +135307,7 @@ window.SEARCH_INDEX = [
       "angel",
       "queral"
     ],
-    "rank": 40,
+    "rank": 39,
     "gender": "girls"
   },
   {
@@ -135251,7 +135321,7 @@ window.SEARCH_INDEX = [
       "allie",
       "singhoffer"
     ],
-    "rank": 49,
+    "rank": 21,
     "gender": "girls"
   },
   {
@@ -135265,7 +135335,7 @@ window.SEARCH_INDEX = [
       "doolin",
       "laney"
     ],
-    "rank": 7,
+    "rank": 8,
     "gender": "girls"
   },
   {
@@ -135279,7 +135349,7 @@ window.SEARCH_INDEX = [
       "mykenna",
       "pace"
     ],
-    "rank": 66,
+    "rank": 72,
     "gender": "girls"
   },
   {
@@ -135294,21 +135364,35 @@ window.SEARCH_INDEX = [
       "hallie",
       "ray"
     ],
-    "rank": 65,
+    "rank": 67,
     "gender": "girls"
   },
   {
     "type": "wrestler",
-    "name": "bailey buchanan",
-    "first_name": "bailey",
-    "last_name": "buchanan",
+    "name": "sutton fuller",
+    "first_name": "sutton",
+    "last_name": "fuller",
     "secondary": "Union County · 132",
-    "url": "/wrestler.html?id=35565757132&gender=girls",
+    "url": "/wrestler.html?id=35564944132&gender=girls",
     "searchTokens": [
-      "bailey",
-      "buchanan"
+      "fuller",
+      "sutton"
     ],
-    "rank": 30,
+    "rank": 18,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Zoey Jeffries",
+    "first_name": "Zoey",
+    "last_name": "Jeffries",
+    "secondary": "Valley · 132",
+    "url": "/wrestler.html?id=36783354132&gender=girls",
+    "searchTokens": [
+      "jeffries",
+      "zoey"
+    ],
+    "rank": 52,
     "gender": "girls"
   },
   {
@@ -135327,16 +135411,30 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Zoey Jeffries",
-    "first_name": "Zoey",
-    "last_name": "Jeffries",
-    "secondary": "Valley · 132",
-    "url": "/wrestler.html?id=36783354132&gender=girls",
+    "name": "Chloe Schwanenberger",
+    "first_name": "Chloe",
+    "last_name": "Schwanenberger",
+    "secondary": "Walton-Verona · 132",
+    "url": "/wrestler.html?id=35352392132&gender=girls",
     "searchTokens": [
-      "jeffries",
-      "zoey"
+      "chloe",
+      "schwanenberger"
     ],
-    "rank": 55,
+    "rank": 19,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Desirae Carpenter",
+    "first_name": "Desirae",
+    "last_name": "Carpenter",
+    "secondary": "Western · 132",
+    "url": "/wrestler.html?id=35333681132&gender=girls",
+    "searchTokens": [
+      "carpenter",
+      "desirae"
+    ],
+    "rank": 34,
     "gender": "girls"
   },
   {
@@ -135350,7 +135448,7 @@ window.SEARCH_INDEX = [
       "ariel",
       "dietlin"
     ],
-    "rank": 43,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -135544,6 +135642,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "breonna",
       "welcome"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Jozaphine Holliday",
+    "first_name": "Jozaphine",
+    "last_name": "Holliday",
+    "secondary": "Paul Laurence Dunbar · 132",
+    "url": "/wrestler.html?id=OUTSTATE_0b8b2aca3186&gender=girls",
+    "searchTokens": [
+      "holliday",
+      "jozaphine"
     ],
     "rank": null,
     "gender": "girls"
@@ -136671,6 +136783,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Sierra Milburn",
+    "first_name": "Sierra",
+    "last_name": "Milburn",
+    "secondary": "Boone County · 132",
+    "url": "/wrestler.html?id=OUTSTATE_d4e19d3fb31c&gender=girls",
+    "searchTokens": [
+      "milburn",
+      "sierra"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Isabella Rainbolt",
     "first_name": "Isabella",
     "last_name": "Rainbolt",
@@ -136960,7 +137086,7 @@ window.SEARCH_INDEX = [
       "curry",
       "mackenzie"
     ],
-    "rank": 59,
+    "rank": 56,
     "gender": "girls"
   },
   {
@@ -136974,7 +137100,7 @@ window.SEARCH_INDEX = [
       "mahan",
       "ryleigh"
     ],
-    "rank": 13,
+    "rank": 11,
     "gender": "girls"
   },
   {
@@ -136988,7 +137114,7 @@ window.SEARCH_INDEX = [
       "elliana",
       "mosby"
     ],
-    "rank": 23,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -137002,7 +137128,7 @@ window.SEARCH_INDEX = [
       "jacee",
       "norman"
     ],
-    "rank": 19,
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -137016,7 +137142,7 @@ window.SEARCH_INDEX = [
       "baylee",
       "england"
     ],
-    "rank": 34,
+    "rank": 36,
     "gender": "girls"
   },
   {
@@ -137044,21 +137170,21 @@ window.SEARCH_INDEX = [
       "ahbrea",
       "hampton"
     ],
-    "rank": 49,
+    "rank": 46,
     "gender": "girls"
   },
   {
     "type": "wrestler",
-    "name": "Mia Young",
-    "first_name": "Mia",
-    "last_name": "Young",
-    "secondary": "Bourbon County · 138",
-    "url": "/wrestler.html?id=35333543132&gender=girls",
+    "name": "Lexie Dingess",
+    "first_name": "Lexie",
+    "last_name": "Dingess",
+    "secondary": "Boyd County · 138",
+    "url": "/wrestler.html?id=35850788132&gender=girls",
     "searchTokens": [
-      "mia",
-      "young"
+      "dingess",
+      "lexie"
     ],
-    "rank": 56,
+    "rank": 13,
     "gender": "girls"
   },
   {
@@ -137072,7 +137198,21 @@ window.SEARCH_INDEX = [
       "avery",
       "miller"
     ],
-    "rank": 50,
+    "rank": 48,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Sarayna Lopez",
+    "first_name": "Sarayna",
+    "last_name": "Lopez",
+    "secondary": "Boyle County · 138",
+    "url": "/wrestler.html?id=35333440132&gender=girls",
+    "searchTokens": [
+      "lopez",
+      "sarayna"
+    ],
+    "rank": 31,
     "gender": "girls"
   },
   {
@@ -137086,7 +137226,7 @@ window.SEARCH_INDEX = [
       "daugherty",
       "janyah"
     ],
-    "rank": 63,
+    "rank": 60,
     "gender": "girls"
   },
   {
@@ -137100,35 +137240,7 @@ window.SEARCH_INDEX = [
       "frazier",
       "jada"
     ],
-    "rank": 29,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Saniyah Nana",
-    "first_name": "Saniyah",
-    "last_name": "Nana",
-    "secondary": "Butler · 138",
-    "url": "/wrestler.html?id=35333674132&gender=girls",
-    "searchTokens": [
-      "nana",
-      "saniyah"
-    ],
-    "rank": 37,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Keirli Herran",
-    "first_name": "Keirli",
-    "last_name": "Herran",
-    "secondary": "Caldwell County · 138",
-    "url": "/wrestler.html?id=35345849132&gender=girls",
-    "searchTokens": [
-      "herran",
-      "keirli"
-    ],
-    "rank": 11,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -137142,7 +137254,7 @@ window.SEARCH_INDEX = [
       "mcnary",
       "toby"
     ],
-    "rank": 64,
+    "rank": 61,
     "gender": "girls"
   },
   {
@@ -137156,7 +137268,7 @@ window.SEARCH_INDEX = [
       "breyona",
       "smith"
     ],
-    "rank": 66,
+    "rank": 63,
     "gender": "girls"
   },
   {
@@ -137170,7 +137282,7 @@ window.SEARCH_INDEX = [
       "abigail",
       "patterson"
     ],
-    "rank": 44,
+    "rank": 43,
     "gender": "girls"
   },
   {
@@ -137189,34 +137301,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kaylee Klee",
-    "first_name": "Kaylee",
-    "last_name": "Klee",
-    "secondary": "Daviess County · 138",
-    "url": "/wrestler.html?id=35333381132&gender=girls",
-    "searchTokens": [
-      "kaylee",
-      "klee"
-    ],
-    "rank": 18,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Keiona Skaggs",
-    "first_name": "Keiona",
-    "last_name": "Skaggs",
-    "secondary": "East Carter · 138",
-    "url": "/wrestler.html?id=35733855132&gender=girls",
-    "searchTokens": [
-      "keiona",
-      "skaggs"
-    ],
-    "rank": 21,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Maddie Massengill",
     "first_name": "Maddie",
     "last_name": "Massengill",
@@ -137226,7 +137310,7 @@ window.SEARCH_INDEX = [
       "maddie",
       "massengill"
     ],
-    "rank": 36,
+    "rank": 27,
     "gender": "girls"
   },
   {
@@ -137245,20 +137329,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Zoey Wengard",
-    "first_name": "Zoey",
-    "last_name": "Wengard",
-    "secondary": "Fort Campbell · 138",
-    "url": "/wrestler.html?id=35884736132&gender=girls",
-    "searchTokens": [
-      "wengard",
-      "zoey"
-    ],
-    "rank": 35,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Starlet Hurst",
     "first_name": "Starlet",
     "last_name": "Hurst",
@@ -137268,7 +137338,22 @@ window.SEARCH_INDEX = [
       "hurst",
       "starlet"
     ],
-    "rank": 25,
+    "rank": 34,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Hannah `Liz` Porter",
+    "first_name": "Hannah",
+    "last_name": "`Liz` Porter",
+    "secondary": "Fort Campbell · 138",
+    "url": "/wrestler.html?id=35520301132&gender=girls",
+    "searchTokens": [
+      "`liz`",
+      "hannah",
+      "porter"
+    ],
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -137282,7 +137367,7 @@ window.SEARCH_INDEX = [
       "buckley",
       "laila"
     ],
-    "rank": 38,
+    "rank": 37,
     "gender": "girls"
   },
   {
@@ -137296,7 +137381,7 @@ window.SEARCH_INDEX = [
       "ava",
       "castro"
     ],
-    "rank": 26,
+    "rank": 30,
     "gender": "girls"
   },
   {
@@ -137310,7 +137395,7 @@ window.SEARCH_INDEX = [
       "jolee",
       "kayse"
     ],
-    "rank": 47,
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -137330,6 +137415,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Alianna Charles",
+    "first_name": "Alianna",
+    "last_name": "Charles",
+    "secondary": "Harrison County · 138",
+    "url": "/wrestler.html?id=35436569132&gender=girls",
+    "searchTokens": [
+      "alianna",
+      "charles"
+    ],
+    "rank": 32,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Lola Morales",
     "first_name": "Lola",
     "last_name": "Morales",
@@ -137339,7 +137438,7 @@ window.SEARCH_INDEX = [
       "lola",
       "morales"
     ],
-    "rank": 65,
+    "rank": 62,
     "gender": "girls"
   },
   {
@@ -137353,7 +137452,7 @@ window.SEARCH_INDEX = [
       "makayla",
       "nelson"
     ],
-    "rank": 69,
+    "rank": 66,
     "gender": "girls"
   },
   {
@@ -137368,7 +137467,7 @@ window.SEARCH_INDEX = [
       "marie",
       "sumpter"
     ],
-    "rank": 45,
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -137396,7 +137495,7 @@ window.SEARCH_INDEX = [
       "hensley",
       "johannah"
     ],
-    "rank": 58,
+    "rank": 55,
     "gender": "girls"
   },
   {
@@ -137410,7 +137509,7 @@ window.SEARCH_INDEX = [
       "harmony",
       "walker"
     ],
-    "rank": 68,
+    "rank": 65,
     "gender": "girls"
   },
   {
@@ -137480,7 +137579,7 @@ window.SEARCH_INDEX = [
       "lydia",
       "yared"
     ],
-    "rank": 60,
+    "rank": 57,
     "gender": "girls"
   },
   {
@@ -137494,7 +137593,7 @@ window.SEARCH_INDEX = [
       "karsen",
       "vaughan"
     ],
-    "rank": 41,
+    "rank": 38,
     "gender": "girls"
   },
   {
@@ -137508,7 +137607,7 @@ window.SEARCH_INDEX = [
       "holmes",
       "madison"
     ],
-    "rank": 55,
+    "rank": 53,
     "gender": "girls"
   },
   {
@@ -137522,7 +137621,7 @@ window.SEARCH_INDEX = [
       "stewart",
       "taylon"
     ],
-    "rank": 57,
+    "rank": 54,
     "gender": "girls"
   },
   {
@@ -137550,7 +137649,7 @@ window.SEARCH_INDEX = [
       "hux",
       "raylee"
     ],
-    "rank": 48,
+    "rank": 47,
     "gender": "girls"
   },
   {
@@ -137564,7 +137663,7 @@ window.SEARCH_INDEX = [
       "clark",
       "kadyn"
     ],
-    "rank": 27,
+    "rank": 23,
     "gender": "girls"
   },
   {
@@ -137592,7 +137691,7 @@ window.SEARCH_INDEX = [
       "celia",
       "sweatt"
     ],
-    "rank": 28,
+    "rank": 25,
     "gender": "girls"
   },
   {
@@ -137606,7 +137705,7 @@ window.SEARCH_INDEX = [
       "alvey-pabon",
       "natalia"
     ],
-    "rank": 67,
+    "rank": 64,
     "gender": "girls"
   },
   {
@@ -137634,21 +137733,7 @@ window.SEARCH_INDEX = [
       "massie",
       "tahirah"
     ],
-    "rank": 24,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Kayleigh Hall",
-    "first_name": "Kayleigh",
-    "last_name": "Hall",
-    "secondary": "Paducah Tilghman · 138",
-    "url": "/wrestler.html?id=35382371132&gender=girls",
-    "searchTokens": [
-      "hall",
-      "kayleigh"
-    ],
-    "rank": 22,
+    "rank": 20,
     "gender": "girls"
   },
   {
@@ -137662,7 +137747,7 @@ window.SEARCH_INDEX = [
       "cupp",
       "emma"
     ],
-    "rank": 61,
+    "rank": 58,
     "gender": "girls"
   },
   {
@@ -137676,7 +137761,7 @@ window.SEARCH_INDEX = [
       "ka`leah",
       "stringer"
     ],
-    "rank": 20,
+    "rank": 18,
     "gender": "girls"
   },
   {
@@ -137690,7 +137775,7 @@ window.SEARCH_INDEX = [
       "madison",
       "price"
     ],
-    "rank": 43,
+    "rank": 21,
     "gender": "girls"
   },
   {
@@ -137718,7 +137803,7 @@ window.SEARCH_INDEX = [
       "coon",
       "sydney"
     ],
-    "rank": 31,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -137732,7 +137817,7 @@ window.SEARCH_INDEX = [
       "cassidy",
       "swanner"
     ],
-    "rank": 33,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -137760,7 +137845,7 @@ window.SEARCH_INDEX = [
       "jordan",
       "ottesen-price"
     ],
-    "rank": 54,
+    "rank": 52,
     "gender": "girls"
   },
   {
@@ -137788,7 +137873,7 @@ window.SEARCH_INDEX = [
       "butt",
       "reagan"
     ],
-    "rank": 62,
+    "rank": 59,
     "gender": "girls"
   },
   {
@@ -137816,7 +137901,7 @@ window.SEARCH_INDEX = [
       "jenna",
       "riggs"
     ],
-    "rank": 30,
+    "rank": 26,
     "gender": "girls"
   },
   {
@@ -137844,7 +137929,7 @@ window.SEARCH_INDEX = [
       "maci",
       "wise"
     ],
-    "rank": 52,
+    "rank": 50,
     "gender": "girls"
   },
   {
@@ -137858,7 +137943,7 @@ window.SEARCH_INDEX = [
       "loralai",
       "stephens"
     ],
-    "rank": 42,
+    "rank": 41,
     "gender": "girls"
   },
   {
@@ -137872,7 +137957,7 @@ window.SEARCH_INDEX = [
       "tailor",
       "waddell"
     ],
-    "rank": 53,
+    "rank": 51,
     "gender": "girls"
   },
   {
@@ -137886,7 +137971,7 @@ window.SEARCH_INDEX = [
       "brooklynn",
       "medley"
     ],
-    "rank": 51,
+    "rank": 49,
     "gender": "girls"
   },
   {
@@ -137900,7 +137985,7 @@ window.SEARCH_INDEX = [
       "lucas",
       "natalia"
     ],
-    "rank": 32,
+    "rank": 29,
     "gender": "girls"
   },
   {
@@ -137914,7 +137999,7 @@ window.SEARCH_INDEX = [
       "emily",
       "jones"
     ],
-    "rank": 46,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -137927,6 +138012,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "sonia",
       "tarley"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Kristiana Padilla",
+    "first_name": "Kristiana",
+    "last_name": "Padilla",
+    "secondary": "Valley · 138",
+    "url": "/wrestler.html?id=OUTSTATE_ec3c3f91aa53&gender=girls",
+    "searchTokens": [
+      "kristiana",
+      "padilla"
     ],
     "rank": null,
     "gender": "girls"
@@ -138038,6 +138137,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "rowan",
       "wilson"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Maddie Massengill",
+    "first_name": "Maddie",
+    "last_name": "Massengill",
+    "secondary": "East Jessamine · 138",
+    "url": "/wrestler.html?id=OUTSTATE_8ed1778c6441&gender=girls",
+    "searchTokens": [
+      "maddie",
+      "massengill"
     ],
     "rank": null,
     "gender": "girls"
@@ -138248,6 +138361,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "jacee",
       "mardirosian"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Jada Frazier",
+    "first_name": "Jada",
+    "last_name": "Frazier",
+    "secondary": "Bryan Station · 138",
+    "url": "/wrestler.html?id=OUTSTATE_c7e749242f9d&gender=girls",
+    "searchTokens": [
+      "frazier",
+      "jada"
     ],
     "rank": null,
     "gender": "girls"
@@ -138646,20 +138773,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Tarajee Diaz",
-    "first_name": "Tarajee",
-    "last_name": "Diaz",
-    "secondary": "Jeffersonville · 138",
-    "url": "/wrestler.html?id=OUTSTATE_385e951ff6ed&gender=girls",
-    "searchTokens": [
-      "diaz",
-      "tarajee"
-    ],
-    "rank": null,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Amanda Baltazar Felipe",
     "first_name": "Amanda",
     "last_name": "Baltazar Felipe",
@@ -138669,6 +138782,20 @@ window.SEARCH_INDEX = [
       "amanda",
       "baltazar",
       "felipe"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Tarajee Diaz",
+    "first_name": "Tarajee",
+    "last_name": "Diaz",
+    "secondary": "Jeffersonville · 138",
+    "url": "/wrestler.html?id=OUTSTATE_385e951ff6ed&gender=girls",
+    "searchTokens": [
+      "diaz",
+      "tarajee"
     ],
     "rank": null,
     "gender": "girls"
@@ -138857,6 +138984,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Elliana Mosby",
+    "first_name": "Elliana",
+    "last_name": "Mosby",
+    "secondary": "Ballard · 138",
+    "url": "/wrestler.html?id=OUTSTATE_f5f73ba47097&gender=girls",
+    "searchTokens": [
+      "elliana",
+      "mosby"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Isabel Dellecave",
     "first_name": "Isabel",
     "last_name": "Dellecave",
@@ -138894,7 +139035,7 @@ window.SEARCH_INDEX = [
       "hadleigh",
       "johnson"
     ],
-    "rank": 34,
+    "rank": 27,
     "gender": "girls"
   },
   {
@@ -138908,7 +139049,7 @@ window.SEARCH_INDEX = [
       "bailey",
       "stephens"
     ],
-    "rank": 27,
+    "rank": 31,
     "gender": "girls"
   },
   {
@@ -138922,7 +139063,7 @@ window.SEARCH_INDEX = [
       "leeah",
       "yates"
     ],
-    "rank": 66,
+    "rank": 70,
     "gender": "girls"
   },
   {
@@ -138936,7 +139077,7 @@ window.SEARCH_INDEX = [
       "redd",
       "sophia"
     ],
-    "rank": 31,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -138950,7 +139091,7 @@ window.SEARCH_INDEX = [
       "floyd",
       "kathryn"
     ],
-    "rank": 6,
+    "rank": 7,
     "gender": "girls"
   },
   {
@@ -138964,7 +139105,7 @@ window.SEARCH_INDEX = [
       "alexis",
       "howard"
     ],
-    "rank": 11,
+    "rank": 13,
     "gender": "girls"
   },
   {
@@ -138978,7 +139119,7 @@ window.SEARCH_INDEX = [
       "green",
       "madelyn"
     ],
-    "rank": 26,
+    "rank": 30,
     "gender": "girls"
   },
   {
@@ -138992,7 +139133,7 @@ window.SEARCH_INDEX = [
       "grace",
       "helton"
     ],
-    "rank": 23,
+    "rank": 14,
     "gender": "girls"
   },
   {
@@ -139006,7 +139147,21 @@ window.SEARCH_INDEX = [
       "tayla",
       "tobin"
     ],
-    "rank": 67,
+    "rank": 71,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Mia Young",
+    "first_name": "Mia",
+    "last_name": "Young",
+    "secondary": "Bourbon County · 145",
+    "url": "/wrestler.html?id=35333543132&gender=girls",
+    "searchTokens": [
+      "mia",
+      "young"
+    ],
+    "rank": 66,
     "gender": "girls"
   },
   {
@@ -139020,7 +139175,7 @@ window.SEARCH_INDEX = [
       "emily",
       "price"
     ],
-    "rank": 56,
+    "rank": 60,
     "gender": "girls"
   },
   {
@@ -139048,21 +139203,7 @@ window.SEARCH_INDEX = [
       "phoebe",
       "smith"
     ],
-    "rank": 65,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Anyelith Amayo",
-    "first_name": "Anyelith",
-    "last_name": "Amayo",
-    "secondary": "Bryan Station · 145",
-    "url": "/wrestler.html?id=35640268132&gender=girls",
-    "searchTokens": [
-      "amayo",
-      "anyelith"
-    ],
-    "rank": 37,
+    "rank": 69,
     "gender": "girls"
   },
   {
@@ -139076,7 +139217,35 @@ window.SEARCH_INDEX = [
       "lucy",
       "savon"
     ],
-    "rank": 24,
+    "rank": 42,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Saniyah Nana",
+    "first_name": "Saniyah",
+    "last_name": "Nana",
+    "secondary": "Butler · 145",
+    "url": "/wrestler.html?id=35333674132&gender=girls",
+    "searchTokens": [
+      "nana",
+      "saniyah"
+    ],
+    "rank": 16,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Keirli Herran",
+    "first_name": "Keirli",
+    "last_name": "Herran",
+    "secondary": "Caldwell County · 145",
+    "url": "/wrestler.html?id=35345849132&gender=girls",
+    "searchTokens": [
+      "herran",
+      "keirli"
+    ],
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -139090,7 +139259,7 @@ window.SEARCH_INDEX = [
       "kilgore",
       "sophia"
     ],
-    "rank": 61,
+    "rank": 65,
     "gender": "girls"
   },
   {
@@ -139104,7 +139273,7 @@ window.SEARCH_INDEX = [
       "koch",
       "mariah"
     ],
-    "rank": 16,
+    "rank": 26,
     "gender": "girls"
   },
   {
@@ -139118,7 +139287,7 @@ window.SEARCH_INDEX = [
       "alyiah",
       "mason"
     ],
-    "rank": 25,
+    "rank": 17,
     "gender": "girls"
   },
   {
@@ -139132,7 +139301,7 @@ window.SEARCH_INDEX = [
       "kadience",
       "peters"
     ],
-    "rank": 44,
+    "rank": 49,
     "gender": "girls"
   },
   {
@@ -139146,7 +139315,7 @@ window.SEARCH_INDEX = [
       "allison",
       "neeley"
     ],
-    "rank": 21,
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -139160,7 +139329,21 @@ window.SEARCH_INDEX = [
       "paisley",
       "thomas"
     ],
-    "rank": 45,
+    "rank": 46,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Kaylee Klee",
+    "first_name": "Kaylee",
+    "last_name": "Klee",
+    "secondary": "Daviess County · 145",
+    "url": "/wrestler.html?id=35333381132&gender=girls",
+    "searchTokens": [
+      "kaylee",
+      "klee"
+    ],
+    "rank": 9,
     "gender": "girls"
   },
   {
@@ -139174,7 +139357,21 @@ window.SEARCH_INDEX = [
       "lyllian",
       "sandefur"
     ],
-    "rank": 32,
+    "rank": 36,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Keiona Skaggs",
+    "first_name": "Keiona",
+    "last_name": "Skaggs",
+    "secondary": "East Carter · 145",
+    "url": "/wrestler.html?id=35733855132&gender=girls",
+    "searchTokens": [
+      "keiona",
+      "skaggs"
+    ],
+    "rank": 11,
     "gender": "girls"
   },
   {
@@ -139188,7 +139385,21 @@ window.SEARCH_INDEX = [
       "jacklyn",
       "lancho"
     ],
-    "rank": 54,
+    "rank": 58,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Zoey Wengard",
+    "first_name": "Zoey",
+    "last_name": "Wengard",
+    "secondary": "Fort Campbell · 145",
+    "url": "/wrestler.html?id=35884736132&gender=girls",
+    "searchTokens": [
+      "wengard",
+      "zoey"
+    ],
+    "rank": 40,
     "gender": "girls"
   },
   {
@@ -139202,7 +139413,7 @@ window.SEARCH_INDEX = [
       "avaley",
       "moore"
     ],
-    "rank": 41,
+    "rank": 43,
     "gender": "girls"
   },
   {
@@ -139216,7 +139427,7 @@ window.SEARCH_INDEX = [
       "finn",
       "makayla"
     ],
-    "rank": 63,
+    "rank": 68,
     "gender": "girls"
   },
   {
@@ -139230,7 +139441,7 @@ window.SEARCH_INDEX = [
       "chloe",
       "sajdl"
     ],
-    "rank": 52,
+    "rank": 55,
     "gender": "girls"
   },
   {
@@ -139244,7 +139455,7 @@ window.SEARCH_INDEX = [
       "madison",
       "yates"
     ],
-    "rank": 60,
+    "rank": 64,
     "gender": "girls"
   },
   {
@@ -139258,7 +139469,7 @@ window.SEARCH_INDEX = [
       "huffman",
       "jayanha"
     ],
-    "rank": 68,
+    "rank": 72,
     "gender": "girls"
   },
   {
@@ -139272,7 +139483,7 @@ window.SEARCH_INDEX = [
       "altehua",
       "sophia"
     ],
-    "rank": 55,
+    "rank": 57,
     "gender": "girls"
   },
   {
@@ -139286,7 +139497,7 @@ window.SEARCH_INDEX = [
       "nayeli",
       "solis"
     ],
-    "rank": 5,
+    "rank": 6,
     "gender": "girls"
   },
   {
@@ -139300,7 +139511,21 @@ window.SEARCH_INDEX = [
       "akela",
       "davis"
     ],
-    "rank": 69,
+    "rank": 73,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Kylee Hargan",
+    "first_name": "Kylee",
+    "last_name": "Hargan",
+    "secondary": "Green County · 145",
+    "url": "/wrestler.html?id=35577012132&gender=girls",
+    "searchTokens": [
+      "hargan",
+      "kylee"
+    ],
+    "rank": 18,
     "gender": "girls"
   },
   {
@@ -139314,7 +139539,7 @@ window.SEARCH_INDEX = [
       "cing",
       "kiim"
     ],
-    "rank": 29,
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -139333,21 +139558,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Mary Jane Rogers",
-    "first_name": "Mary",
-    "last_name": "Jane Rogers",
-    "secondary": "Harrison County · 145",
-    "url": "/wrestler.html?id=35436582132&gender=girls",
-    "searchTokens": [
-      "jane",
-      "mary",
-      "rogers"
-    ],
-    "rank": 36,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Charleigh Olmsted",
     "first_name": "Charleigh",
     "last_name": "Olmsted",
@@ -139357,7 +139567,7 @@ window.SEARCH_INDEX = [
       "charleigh",
       "olmsted"
     ],
-    "rank": 14,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -139371,7 +139581,7 @@ window.SEARCH_INDEX = [
       "briana",
       "torres"
     ],
-    "rank": 64,
+    "rank": 59,
     "gender": "girls"
   },
   {
@@ -139385,7 +139595,7 @@ window.SEARCH_INDEX = [
       "abigail",
       "edmondson"
     ],
-    "rank": 35,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -139399,7 +139609,7 @@ window.SEARCH_INDEX = [
       "addison",
       "collins"
     ],
-    "rank": 51,
+    "rank": 53,
     "gender": "girls"
   },
   {
@@ -139413,7 +139623,7 @@ window.SEARCH_INDEX = [
       "castaneraayala",
       "kamila"
     ],
-    "rank": 17,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -139427,7 +139637,7 @@ window.SEARCH_INDEX = [
       "jalieya",
       "shelby"
     ],
-    "rank": 70,
+    "rank": 74,
     "gender": "girls"
   },
   {
@@ -139441,21 +139651,7 @@ window.SEARCH_INDEX = [
       "kyra",
       "newkirk"
     ],
-    "rank": 10,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Kadence Newkirk",
-    "first_name": "Kadence",
-    "last_name": "Newkirk",
-    "secondary": "Knox Central · 145",
-    "url": "/wrestler.html?id=35900959132&gender=girls",
-    "searchTokens": [
-      "kadence",
-      "newkirk"
-    ],
-    "rank": 8,
+    "rank": 12,
     "gender": "girls"
   },
   {
@@ -139483,7 +139679,7 @@ window.SEARCH_INDEX = [
       "jaycie",
       "preski"
     ],
-    "rank": 48,
+    "rank": 52,
     "gender": "girls"
   },
   {
@@ -139497,7 +139693,7 @@ window.SEARCH_INDEX = [
       "grace",
       "hopkins"
     ],
-    "rank": 57,
+    "rank": 62,
     "gender": "girls"
   },
   {
@@ -139511,7 +139707,7 @@ window.SEARCH_INDEX = [
       "mely",
       "serrano"
     ],
-    "rank": 40,
+    "rank": 41,
     "gender": "girls"
   },
   {
@@ -139525,7 +139721,7 @@ window.SEARCH_INDEX = [
       "brianna",
       "rosenberg"
     ],
-    "rank": 9,
+    "rank": 38,
     "gender": "girls"
   },
   {
@@ -139539,7 +139735,7 @@ window.SEARCH_INDEX = [
       "cooper",
       "lillyana"
     ],
-    "rank": 46,
+    "rank": 50,
     "gender": "girls"
   },
   {
@@ -139553,7 +139749,7 @@ window.SEARCH_INDEX = [
       "duncan",
       "natalie"
     ],
-    "rank": 19,
+    "rank": 15,
     "gender": "girls"
   },
   {
@@ -139567,7 +139763,7 @@ window.SEARCH_INDEX = [
       "savannah",
       "wolfe"
     ],
-    "rank": 30,
+    "rank": 34,
     "gender": "girls"
   },
   {
@@ -139581,7 +139777,7 @@ window.SEARCH_INDEX = [
       "karmen",
       "mojica"
     ],
-    "rank": 47,
+    "rank": 48,
     "gender": "girls"
   },
   {
@@ -139595,7 +139791,7 @@ window.SEARCH_INDEX = [
       "allison",
       "jones"
     ],
-    "rank": 18,
+    "rank": 29,
     "gender": "girls"
   },
   {
@@ -139609,7 +139805,21 @@ window.SEARCH_INDEX = [
       "baldwin",
       "leilani"
     ],
-    "rank": 50,
+    "rank": 56,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Kayleigh Hall",
+    "first_name": "Kayleigh",
+    "last_name": "Hall",
+    "secondary": "Paducah Tilghman · 145",
+    "url": "/wrestler.html?id=35382371132&gender=girls",
+    "searchTokens": [
+      "hall",
+      "kayleigh"
+    ],
+    "rank": 37,
     "gender": "girls"
   },
   {
@@ -139623,7 +139833,7 @@ window.SEARCH_INDEX = [
       "brianna",
       "slone"
     ],
-    "rank": 20,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -139637,7 +139847,7 @@ window.SEARCH_INDEX = [
       "jessalyn",
       "roberts"
     ],
-    "rank": 43,
+    "rank": 47,
     "gender": "girls"
   },
   {
@@ -139651,7 +139861,7 @@ window.SEARCH_INDEX = [
       "fisher",
       "khloee"
     ],
-    "rank": 39,
+    "rank": 32,
     "gender": "girls"
   },
   {
@@ -139665,7 +139875,7 @@ window.SEARCH_INDEX = [
       "buster",
       "emily"
     ],
-    "rank": 49,
+    "rank": 51,
     "gender": "girls"
   },
   {
@@ -139679,7 +139889,7 @@ window.SEARCH_INDEX = [
       "darden",
       "gwendolyn"
     ],
-    "rank": 42,
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -139693,7 +139903,7 @@ window.SEARCH_INDEX = [
       "portman",
       "sophie"
     ],
-    "rank": 13,
+    "rank": 23,
     "gender": "girls"
   },
   {
@@ -139707,7 +139917,7 @@ window.SEARCH_INDEX = [
       "dawmeisha",
       "smith"
     ],
-    "rank": 12,
+    "rank": 21,
     "gender": "girls"
   },
   {
@@ -139721,7 +139931,7 @@ window.SEARCH_INDEX = [
       "justice",
       "ottesen-price"
     ],
-    "rank": 59,
+    "rank": 63,
     "gender": "girls"
   },
   {
@@ -139735,7 +139945,7 @@ window.SEARCH_INDEX = [
       "jessie",
       "sarinana"
     ],
-    "rank": 38,
+    "rank": 39,
     "gender": "girls"
   },
   {
@@ -139749,7 +139959,7 @@ window.SEARCH_INDEX = [
       "davis",
       "jersey"
     ],
-    "rank": 53,
+    "rank": 54,
     "gender": "girls"
   },
   {
@@ -139763,7 +139973,7 @@ window.SEARCH_INDEX = [
       "esmeralda",
       "morales"
     ],
-    "rank": 62,
+    "rank": 67,
     "gender": "girls"
   },
   {
@@ -139777,7 +139987,7 @@ window.SEARCH_INDEX = [
       "cooper",
       "nastaja"
     ],
-    "rank": 4,
+    "rank": 5,
     "gender": "girls"
   },
   {
@@ -139791,7 +140001,7 @@ window.SEARCH_INDEX = [
       "harbin",
       "madalyn"
     ],
-    "rank": 71,
+    "rank": 75,
     "gender": "girls"
   },
   {
@@ -139805,7 +140015,7 @@ window.SEARCH_INDEX = [
       "alani",
       "mayes"
     ],
-    "rank": 15,
+    "rank": 25,
     "gender": "girls"
   },
   {
@@ -139819,7 +140029,7 @@ window.SEARCH_INDEX = [
       "cheatham",
       "emma"
     ],
-    "rank": 7,
+    "rank": 8,
     "gender": "girls"
   },
   {
@@ -139833,7 +140043,7 @@ window.SEARCH_INDEX = [
       "kristiana",
       "padilla"
     ],
-    "rank": 58,
+    "rank": 61,
     "gender": "girls"
   },
   {
@@ -139847,35 +140057,21 @@ window.SEARCH_INDEX = [
       "jayla",
       "young"
     ],
-    "rank": 28,
+    "rank": 20,
     "gender": "girls"
   },
   {
     "type": "wrestler",
-    "name": "Jaelynn Holcomb",
-    "first_name": "Jaelynn",
-    "last_name": "Holcomb",
-    "secondary": "Walton-Verona · 145",
-    "url": "/wrestler.html?id=35352420132&gender=girls",
-    "searchTokens": [
-      "holcomb",
-      "jaelynn"
-    ],
-    "rank": 33,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Sarah Mosley",
-    "first_name": "Sarah",
-    "last_name": "Mosley",
+    "name": "Olivia Fuson",
+    "first_name": "Olivia",
+    "last_name": "Fuson",
     "secondary": "Whitley County · 145",
-    "url": "/wrestler.html?id=35457322132&gender=girls",
+    "url": "/wrestler.html?id=35457315132&gender=girls",
     "searchTokens": [
-      "mosley",
-      "sarah"
+      "fuson",
+      "olivia"
     ],
-    "rank": 22,
+    "rank": 4,
     "gender": "girls"
   },
   {
@@ -141219,7 +141415,7 @@ window.SEARCH_INDEX = [
       "suraya",
       "turner"
     ],
-    "rank": 47,
+    "rank": 48,
     "gender": "girls"
   },
   {
@@ -141233,7 +141429,7 @@ window.SEARCH_INDEX = [
       "avah",
       "mauk"
     ],
-    "rank": 34,
+    "rank": 26,
     "gender": "girls"
   },
   {
@@ -141247,7 +141443,7 @@ window.SEARCH_INDEX = [
       "amina",
       "neal"
     ],
-    "rank": 6,
+    "rank": 37,
     "gender": "girls"
   },
   {
@@ -141261,7 +141457,7 @@ window.SEARCH_INDEX = [
       "alyssa",
       "goodin"
     ],
-    "rank": 11,
+    "rank": 8,
     "gender": "girls"
   },
   {
@@ -141275,7 +141471,7 @@ window.SEARCH_INDEX = [
       "kathryn",
       "mcdaniels"
     ],
-    "rank": 35,
+    "rank": 27,
     "gender": "girls"
   },
   {
@@ -141289,7 +141485,7 @@ window.SEARCH_INDEX = [
       "maylee",
       "roberts"
     ],
-    "rank": 56,
+    "rank": 58,
     "gender": "girls"
   },
   {
@@ -141303,7 +141499,21 @@ window.SEARCH_INDEX = [
       "burger",
       "kennedi"
     ],
-    "rank": 23,
+    "rank": 20,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Anyelith Amayo",
+    "first_name": "Anyelith",
+    "last_name": "Amayo",
+    "secondary": "Bryan Station · 152",
+    "url": "/wrestler.html?id=35640268132&gender=girls",
+    "searchTokens": [
+      "amayo",
+      "anyelith"
+    ],
+    "rank": 41,
     "gender": "girls"
   },
   {
@@ -141317,7 +141527,7 @@ window.SEARCH_INDEX = [
       "oliver",
       "serenity"
     ],
-    "rank": 42,
+    "rank": 43,
     "gender": "girls"
   },
   {
@@ -141331,7 +141541,7 @@ window.SEARCH_INDEX = [
       "anna",
       "urbanowski"
     ],
-    "rank": 40,
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -141345,7 +141555,7 @@ window.SEARCH_INDEX = [
       "parker",
       "werrmann"
     ],
-    "rank": 60,
+    "rank": 63,
     "gender": "girls"
   },
   {
@@ -141359,7 +141569,7 @@ window.SEARCH_INDEX = [
       "lorborson",
       "miley"
     ],
-    "rank": 61,
+    "rank": 64,
     "gender": "girls"
   },
   {
@@ -141373,7 +141583,7 @@ window.SEARCH_INDEX = [
       "abdirshid",
       "riyan"
     ],
-    "rank": 58,
+    "rank": 60,
     "gender": "girls"
   },
   {
@@ -141387,7 +141597,7 @@ window.SEARCH_INDEX = [
       "alaina",
       "may"
     ],
-    "rank": 44,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -141401,7 +141611,21 @@ window.SEARCH_INDEX = [
       "aracely",
       "carbajal"
     ],
-    "rank": 20,
+    "rank": 13,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Saoirse Brandenberg",
+    "first_name": "Saoirse",
+    "last_name": "Brandenberg",
+    "secondary": "Christian County · 152",
+    "url": "/wrestler.html?id=35640493132&gender=girls",
+    "searchTokens": [
+      "brandenberg",
+      "saoirse"
+    ],
+    "rank": 59,
     "gender": "girls"
   },
   {
@@ -141415,7 +141639,7 @@ window.SEARCH_INDEX = [
       "jasmin",
       "vieyra"
     ],
-    "rank": 14,
+    "rank": 15,
     "gender": "girls"
   },
   {
@@ -141429,7 +141653,7 @@ window.SEARCH_INDEX = [
       "heringer",
       "josslyn"
     ],
-    "rank": 52,
+    "rank": 54,
     "gender": "girls"
   },
   {
@@ -141443,7 +141667,7 @@ window.SEARCH_INDEX = [
       "chelsea",
       "pelayo"
     ],
-    "rank": 10,
+    "rank": 9,
     "gender": "girls"
   },
   {
@@ -141457,7 +141681,7 @@ window.SEARCH_INDEX = [
       "acharya",
       "sujana"
     ],
-    "rank": 46,
+    "rank": 47,
     "gender": "girls"
   },
   {
@@ -141472,7 +141696,7 @@ window.SEARCH_INDEX = [
       "lujan",
       "parga"
     ],
-    "rank": 45,
+    "rank": 52,
     "gender": "girls"
   },
   {
@@ -141486,7 +141710,7 @@ window.SEARCH_INDEX = [
       "anna",
       "clark"
     ],
-    "rank": 25,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -141500,7 +141724,7 @@ window.SEARCH_INDEX = [
       "cathlynn",
       "smith"
     ],
-    "rank": 5,
+    "rank": 4,
     "gender": "girls"
   },
   {
@@ -141514,7 +141738,7 @@ window.SEARCH_INDEX = [
       "hampton",
       "kyleigh"
     ],
-    "rank": 43,
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -141528,7 +141752,7 @@ window.SEARCH_INDEX = [
       "eide",
       "zoey"
     ],
-    "rank": 50,
+    "rank": 53,
     "gender": "girls"
   },
   {
@@ -141542,21 +141766,7 @@ window.SEARCH_INDEX = [
       "kristina",
       "schmucker"
     ],
-    "rank": 17,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Kylee Hargan",
-    "first_name": "Kylee",
-    "last_name": "Hargan",
-    "secondary": "Green County · 152",
-    "url": "/wrestler.html?id=35577012132&gender=girls",
-    "searchTokens": [
-      "hargan",
-      "kylee"
-    ],
-    "rank": 24,
+    "rank": 12,
     "gender": "girls"
   },
   {
@@ -141570,7 +141780,7 @@ window.SEARCH_INDEX = [
       "brockman",
       "scout"
     ],
-    "rank": 4,
+    "rank": 3,
     "gender": "girls"
   },
   {
@@ -141584,7 +141794,7 @@ window.SEARCH_INDEX = [
       "scarlet",
       "stiltner"
     ],
-    "rank": 63,
+    "rank": 66,
     "gender": "girls"
   },
   {
@@ -141598,7 +141808,22 @@ window.SEARCH_INDEX = [
       "addison",
       "puckett"
     ],
-    "rank": 62,
+    "rank": 65,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Mary Jane Rogers",
+    "first_name": "Mary",
+    "last_name": "Jane Rogers",
+    "secondary": "Harrison County · 152",
+    "url": "/wrestler.html?id=35436582132&gender=girls",
+    "searchTokens": [
+      "jane",
+      "mary",
+      "rogers"
+    ],
+    "rank": 46,
     "gender": "girls"
   },
   {
@@ -141612,7 +141837,7 @@ window.SEARCH_INDEX = [
       "clark",
       "lillianne"
     ],
-    "rank": 33,
+    "rank": 31,
     "gender": "girls"
   },
   {
@@ -141626,7 +141851,7 @@ window.SEARCH_INDEX = [
       "dunn",
       "kaizley"
     ],
-    "rank": 27,
+    "rank": 32,
     "gender": "girls"
   },
   {
@@ -141654,7 +141879,7 @@ window.SEARCH_INDEX = [
       "ali",
       "asha"
     ],
-    "rank": 57,
+    "rank": 61,
     "gender": "girls"
   },
   {
@@ -141668,7 +141893,7 @@ window.SEARCH_INDEX = [
       "aubrey",
       "haisma"
     ],
-    "rank": 8,
+    "rank": 6,
     "gender": "girls"
   },
   {
@@ -141682,7 +141907,7 @@ window.SEARCH_INDEX = [
       "brooks",
       "kayden"
     ],
-    "rank": 32,
+    "rank": 30,
     "gender": "girls"
   },
   {
@@ -141696,7 +141921,7 @@ window.SEARCH_INDEX = [
       "alfred",
       "kali"
     ],
-    "rank": 22,
+    "rank": 18,
     "gender": "girls"
   },
   {
@@ -141710,7 +141935,7 @@ window.SEARCH_INDEX = [
       "amina",
       "masudi"
     ],
-    "rank": 19,
+    "rank": 16,
     "gender": "girls"
   },
   {
@@ -141724,7 +141949,7 @@ window.SEARCH_INDEX = [
       "eliada",
       "parfaite"
     ],
-    "rank": 15,
+    "rank": 38,
     "gender": "girls"
   },
   {
@@ -141738,7 +141963,7 @@ window.SEARCH_INDEX = [
       "fox",
       "katie"
     ],
-    "rank": 26,
+    "rank": 21,
     "gender": "girls"
   },
   {
@@ -141752,7 +141977,7 @@ window.SEARCH_INDEX = [
       "bivianna",
       "rebolledo"
     ],
-    "rank": 53,
+    "rank": 55,
     "gender": "girls"
   },
   {
@@ -141766,7 +141991,7 @@ window.SEARCH_INDEX = [
       "madyson",
       "simms"
     ],
-    "rank": 29,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -141780,7 +142005,7 @@ window.SEARCH_INDEX = [
       "adams",
       "layla"
     ],
-    "rank": 59,
+    "rank": 62,
     "gender": "girls"
   },
   {
@@ -141794,7 +142019,7 @@ window.SEARCH_INDEX = [
       "aniya",
       "bryant"
     ],
-    "rank": 16,
+    "rank": 11,
     "gender": "girls"
   },
   {
@@ -141808,7 +142033,7 @@ window.SEARCH_INDEX = [
       "caidence",
       "munger"
     ],
-    "rank": 41,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -141822,7 +142047,7 @@ window.SEARCH_INDEX = [
       "corder",
       "trinity"
     ],
-    "rank": 39,
+    "rank": 40,
     "gender": "girls"
   },
   {
@@ -141836,7 +142061,7 @@ window.SEARCH_INDEX = [
       "kaylee",
       "upchurch"
     ],
-    "rank": 28,
+    "rank": 23,
     "gender": "girls"
   },
   {
@@ -141850,7 +142075,7 @@ window.SEARCH_INDEX = [
       "cali",
       "dople"
     ],
-    "rank": 30,
+    "rank": 25,
     "gender": "girls"
   },
   {
@@ -141864,21 +142089,7 @@ window.SEARCH_INDEX = [
       "branham",
       "grace"
     ],
-    "rank": 18,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Maddisyn Miles",
-    "first_name": "Maddisyn",
-    "last_name": "Miles",
-    "secondary": "Montgomery County · 152",
-    "url": "/wrestler.html?id=35334593132&gender=girls",
-    "searchTokens": [
-      "maddisyn",
-      "miles"
-    ],
-    "rank": 13,
+    "rank": 29,
     "gender": "girls"
   },
   {
@@ -141892,7 +142103,7 @@ window.SEARCH_INDEX = [
       "allie",
       "childers"
     ],
-    "rank": 67,
+    "rank": 70,
     "gender": "girls"
   },
   {
@@ -141907,7 +142118,7 @@ window.SEARCH_INDEX = [
       "la",
       "rosa"
     ],
-    "rank": 21,
+    "rank": 17,
     "gender": "girls"
   },
   {
@@ -141922,7 +142133,7 @@ window.SEARCH_INDEX = [
       "macias",
       "marzo"
     ],
-    "rank": 65,
+    "rank": 68,
     "gender": "girls"
   },
   {
@@ -141936,7 +142147,7 @@ window.SEARCH_INDEX = [
       "dahlyla",
       "leslie"
     ],
-    "rank": 54,
+    "rank": 56,
     "gender": "girls"
   },
   {
@@ -141950,7 +142161,7 @@ window.SEARCH_INDEX = [
       "grant",
       "karma"
     ],
-    "rank": 36,
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -141992,7 +142203,7 @@ window.SEARCH_INDEX = [
       "nevaeh",
       "ruelas"
     ],
-    "rank": 48,
+    "rank": 49,
     "gender": "girls"
   },
   {
@@ -142006,7 +142217,7 @@ window.SEARCH_INDEX = [
       "osborne",
       "ryleigh"
     ],
-    "rank": 31,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -142020,7 +142231,7 @@ window.SEARCH_INDEX = [
       "price",
       "stella"
     ],
-    "rank": 37,
+    "rank": 34,
     "gender": "girls"
   },
   {
@@ -142034,7 +142245,7 @@ window.SEARCH_INDEX = [
       "banks",
       "devon"
     ],
-    "rank": 12,
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -142048,7 +142259,7 @@ window.SEARCH_INDEX = [
       "hall",
       "natyli"
     ],
-    "rank": 7,
+    "rank": 5,
     "gender": "girls"
   },
   {
@@ -142062,7 +142273,7 @@ window.SEARCH_INDEX = [
       "bitangacha",
       "merciana"
     ],
-    "rank": 55,
+    "rank": 57,
     "gender": "girls"
   },
   {
@@ -142076,7 +142287,7 @@ window.SEARCH_INDEX = [
       "emorie",
       "lajudice"
     ],
-    "rank": 64,
+    "rank": 67,
     "gender": "girls"
   },
   {
@@ -142090,7 +142301,7 @@ window.SEARCH_INDEX = [
       "jala",
       "roberts"
     ],
-    "rank": 49,
+    "rank": 50,
     "gender": "girls"
   },
   {
@@ -142104,7 +142315,7 @@ window.SEARCH_INDEX = [
       "aniah",
       "wharton"
     ],
-    "rank": 38,
+    "rank": 36,
     "gender": "girls"
   },
   {
@@ -142118,7 +142329,7 @@ window.SEARCH_INDEX = [
       "jacelyn",
       "smith"
     ],
-    "rank": 9,
+    "rank": 7,
     "gender": "girls"
   },
   {
@@ -142132,21 +142343,49 @@ window.SEARCH_INDEX = [
       "brown",
       "isabella"
     ],
-    "rank": 66,
+    "rank": 69,
     "gender": "girls"
   },
   {
     "type": "wrestler",
-    "name": "Olivia Fuson",
-    "first_name": "Olivia",
-    "last_name": "Fuson",
-    "secondary": "Whitley County · 152",
-    "url": "/wrestler.html?id=35457315132&gender=girls",
+    "name": "Jaelynn Holcomb",
+    "first_name": "Jaelynn",
+    "last_name": "Holcomb",
+    "secondary": "Walton-Verona · 152",
+    "url": "/wrestler.html?id=35352420132&gender=girls",
     "searchTokens": [
-      "fuson",
-      "olivia"
+      "holcomb",
+      "jaelynn"
     ],
-    "rank": 3,
+    "rank": 14,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Natalie Tardy",
+    "first_name": "Natalie",
+    "last_name": "Tardy",
+    "secondary": "Warren Central · 152",
+    "url": "/wrestler.html?id=35333642132&gender=girls",
+    "searchTokens": [
+      "natalie",
+      "tardy"
+    ],
+    "rank": 39,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Sarah Mosley",
+    "first_name": "Sarah",
+    "last_name": "Mosley",
+    "secondary": "Whitley County · 152",
+    "url": "/wrestler.html?id=35457322132&gender=girls",
+    "searchTokens": [
+      "mosley",
+      "sarah"
+    ],
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -142640,6 +142879,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Asha Ali",
+    "first_name": "Asha",
+    "last_name": "Ali",
+    "secondary": "Iroquois · 152",
+    "url": "/wrestler.html?id=OUTSTATE_26ab47aec090&gender=girls",
+    "searchTokens": [
+      "ali",
+      "asha"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Lyra Casper",
     "first_name": "Lyra",
     "last_name": "Casper",
@@ -143089,6 +143342,34 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Cathlynn Smith",
+    "first_name": "Cathlynn",
+    "last_name": "Smith",
+    "secondary": "Franklin County · 152",
+    "url": "/wrestler.html?id=OUTSTATE_a6ac7b8b0865&gender=girls",
+    "searchTokens": [
+      "cathlynn",
+      "smith"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Sujana Acharya",
+    "first_name": "Sujana",
+    "last_name": "Acharya",
+    "secondary": "Dupont Manual · 152",
+    "url": "/wrestler.html?id=OUTSTATE_a2d5ceb1cd43&gender=girls",
+    "searchTokens": [
+      "acharya",
+      "sujana"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Kate Vasquez",
     "first_name": "Kate",
     "last_name": "Vasquez",
@@ -143421,7 +143702,7 @@ window.SEARCH_INDEX = [
       "acanto",
       "chluey"
     ],
-    "rank": 75,
+    "rank": 73,
     "gender": "girls"
   },
   {
@@ -143435,7 +143716,7 @@ window.SEARCH_INDEX = [
       "ni",
       "sung"
     ],
-    "rank": 42,
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -143449,7 +143730,7 @@ window.SEARCH_INDEX = [
       "kira",
       "robinson"
     ],
-    "rank": 81,
+    "rank": 79,
     "gender": "girls"
   },
   {
@@ -143463,7 +143744,7 @@ window.SEARCH_INDEX = [
       "finn",
       "seidt"
     ],
-    "rank": 73,
+    "rank": 71,
     "gender": "girls"
   },
   {
@@ -143477,7 +143758,7 @@ window.SEARCH_INDEX = [
       "wales",
       "zahriyah"
     ],
-    "rank": 55,
+    "rank": 54,
     "gender": "girls"
   },
   {
@@ -143491,7 +143772,7 @@ window.SEARCH_INDEX = [
       "alondra",
       "cortes"
     ],
-    "rank": 68,
+    "rank": 66,
     "gender": "girls"
   },
   {
@@ -143505,7 +143786,7 @@ window.SEARCH_INDEX = [
       "mckenzie",
       "webb"
     ],
-    "rank": 6,
+    "rank": 8,
     "gender": "girls"
   },
   {
@@ -143519,7 +143800,7 @@ window.SEARCH_INDEX = [
       "addrianna",
       "buck"
     ],
-    "rank": 65,
+    "rank": 64,
     "gender": "girls"
   },
   {
@@ -143533,7 +143814,7 @@ window.SEARCH_INDEX = [
       "mastin",
       "mya"
     ],
-    "rank": 35,
+    "rank": 36,
     "gender": "girls"
   },
   {
@@ -143547,7 +143828,7 @@ window.SEARCH_INDEX = [
       "lyla",
       "porter"
     ],
-    "rank": 22,
+    "rank": 20,
     "gender": "girls"
   },
   {
@@ -143561,7 +143842,7 @@ window.SEARCH_INDEX = [
       "bre`aijah",
       "harris"
     ],
-    "rank": 23,
+    "rank": 21,
     "gender": "girls"
   },
   {
@@ -143575,7 +143856,7 @@ window.SEARCH_INDEX = [
       "aubrey",
       "baggett"
     ],
-    "rank": 49,
+    "rank": 60,
     "gender": "girls"
   },
   {
@@ -143590,7 +143871,7 @@ window.SEARCH_INDEX = [
       "marri",
       "stephens"
     ],
-    "rank": 63,
+    "rank": 65,
     "gender": "girls"
   },
   {
@@ -143604,7 +143885,7 @@ window.SEARCH_INDEX = [
       "journee",
       "white"
     ],
-    "rank": 78,
+    "rank": 76,
     "gender": "girls"
   },
   {
@@ -143618,7 +143899,7 @@ window.SEARCH_INDEX = [
       "aria",
       "mcfarland"
     ],
-    "rank": 17,
+    "rank": 16,
     "gender": "girls"
   },
   {
@@ -143632,7 +143913,7 @@ window.SEARCH_INDEX = [
       "hailey",
       "scott"
     ],
-    "rank": 12,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -143660,7 +143941,7 @@ window.SEARCH_INDEX = [
       "ember",
       "gulley"
     ],
-    "rank": 76,
+    "rank": 74,
     "gender": "girls"
   },
   {
@@ -143674,7 +143955,7 @@ window.SEARCH_INDEX = [
       "mcayla",
       "steffen"
     ],
-    "rank": 9,
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -143688,7 +143969,7 @@ window.SEARCH_INDEX = [
       "aliana",
       "bridgewater"
     ],
-    "rank": 64,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -143702,7 +143983,7 @@ window.SEARCH_INDEX = [
       "carchio",
       "mataya"
     ],
-    "rank": 86,
+    "rank": 84,
     "gender": "girls"
   },
   {
@@ -143731,7 +144012,7 @@ window.SEARCH_INDEX = [
       "rachel",
       "saint"
     ],
-    "rank": 58,
+    "rank": 57,
     "gender": "girls"
   },
   {
@@ -143745,7 +144026,7 @@ window.SEARCH_INDEX = [
       "maliyah",
       "oates"
     ],
-    "rank": 18,
+    "rank": 17,
     "gender": "girls"
   },
   {
@@ -143759,21 +144040,7 @@ window.SEARCH_INDEX = [
       "jayha",
       "morris"
     ],
-    "rank": 53,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Saoirse Brandenberg",
-    "first_name": "Saoirse",
-    "last_name": "Brandenberg",
-    "secondary": "Christian County · 165",
-    "url": "/wrestler.html?id=35640493132&gender=girls",
-    "searchTokens": [
-      "brandenberg",
-      "saoirse"
-    ],
-    "rank": 67,
+    "rank": 56,
     "gender": "girls"
   },
   {
@@ -143787,7 +144054,7 @@ window.SEARCH_INDEX = [
       "avah",
       "miller"
     ],
-    "rank": 8,
+    "rank": 4,
     "gender": "girls"
   },
   {
@@ -143801,7 +144068,7 @@ window.SEARCH_INDEX = [
       "aubre`onna",
       "griffin"
     ],
-    "rank": 20,
+    "rank": 34,
     "gender": "girls"
   },
   {
@@ -143829,7 +144096,7 @@ window.SEARCH_INDEX = [
       "divine",
       "mujanukaire"
     ],
-    "rank": 34,
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -143843,7 +144110,7 @@ window.SEARCH_INDEX = [
       "barbee",
       "saleigh"
     ],
-    "rank": 59,
+    "rank": 58,
     "gender": "girls"
   },
   {
@@ -143857,7 +144124,7 @@ window.SEARCH_INDEX = [
       "johnson",
       "saydee"
     ],
-    "rank": 39,
+    "rank": 38,
     "gender": "girls"
   },
   {
@@ -143886,7 +144153,7 @@ window.SEARCH_INDEX = [
       "anela",
       "shea-suanez"
     ],
-    "rank": 36,
+    "rank": 41,
     "gender": "girls"
   },
   {
@@ -143901,7 +144168,7 @@ window.SEARCH_INDEX = [
       "leyla",
       "sanchez"
     ],
-    "rank": 61,
+    "rank": 62,
     "gender": "girls"
   },
   {
@@ -143915,7 +144182,7 @@ window.SEARCH_INDEX = [
       "dawnyella",
       "hernandez"
     ],
-    "rank": 69,
+    "rank": 67,
     "gender": "girls"
   },
   {
@@ -143929,7 +144196,7 @@ window.SEARCH_INDEX = [
       "kynleigh",
       "ward"
     ],
-    "rank": 21,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -143957,7 +144224,7 @@ window.SEARCH_INDEX = [
       "quarles",
       "shamya"
     ],
-    "rank": 60,
+    "rank": 61,
     "gender": "girls"
   },
   {
@@ -143971,7 +144238,7 @@ window.SEARCH_INDEX = [
       "daisy",
       "sanchez"
     ],
-    "rank": 87,
+    "rank": 85,
     "gender": "girls"
   },
   {
@@ -143999,7 +144266,21 @@ window.SEARCH_INDEX = [
       "brown",
       "miley"
     ],
-    "rank": 88,
+    "rank": 86,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Kadence Newkirk",
+    "first_name": "Kadence",
+    "last_name": "Newkirk",
+    "secondary": "Knox Central · 165",
+    "url": "/wrestler.html?id=35900959132&gender=girls",
+    "searchTokens": [
+      "kadence",
+      "newkirk"
+    ],
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -144013,7 +144294,7 @@ window.SEARCH_INDEX = [
       "abby",
       "lucas"
     ],
-    "rank": 5,
+    "rank": 7,
     "gender": "girls"
   },
   {
@@ -144041,7 +144322,7 @@ window.SEARCH_INDEX = [
       "allison",
       "turner"
     ],
-    "rank": 47,
+    "rank": 49,
     "gender": "girls"
   },
   {
@@ -144055,7 +144336,7 @@ window.SEARCH_INDEX = [
       "coursey",
       "ivy"
     ],
-    "rank": 44,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -144069,7 +144350,7 @@ window.SEARCH_INDEX = [
       "hays",
       "kaylee"
     ],
-    "rank": 40,
+    "rank": 39,
     "gender": "girls"
   },
   {
@@ -144083,7 +144364,7 @@ window.SEARCH_INDEX = [
       "jakayla",
       "reed"
     ],
-    "rank": 82,
+    "rank": 80,
     "gender": "girls"
   },
   {
@@ -144097,7 +144378,7 @@ window.SEARCH_INDEX = [
       "adrianna",
       "crutcher"
     ],
-    "rank": 83,
+    "rank": 81,
     "gender": "girls"
   },
   {
@@ -144111,7 +144392,7 @@ window.SEARCH_INDEX = [
       "butts",
       "sophie"
     ],
-    "rank": 19,
+    "rank": 18,
     "gender": "girls"
   },
   {
@@ -144125,7 +144406,7 @@ window.SEARCH_INDEX = [
       "crystal",
       "meave"
     ],
-    "rank": 72,
+    "rank": 70,
     "gender": "girls"
   },
   {
@@ -144139,7 +144420,7 @@ window.SEARCH_INDEX = [
       "knox",
       "lyric"
     ],
-    "rank": 54,
+    "rank": 53,
     "gender": "girls"
   },
   {
@@ -144153,7 +144434,7 @@ window.SEARCH_INDEX = [
       "brianna",
       "muncy"
     ],
-    "rank": 45,
+    "rank": 47,
     "gender": "girls"
   },
   {
@@ -144181,7 +144462,7 @@ window.SEARCH_INDEX = [
       "brianna",
       "maynard"
     ],
-    "rank": 71,
+    "rank": 69,
     "gender": "girls"
   },
   {
@@ -144209,7 +144490,7 @@ window.SEARCH_INDEX = [
       "brianna",
       "dickens"
     ],
-    "rank": 85,
+    "rank": 83,
     "gender": "girls"
   },
   {
@@ -144223,7 +144504,7 @@ window.SEARCH_INDEX = [
       "cannon",
       "madison"
     ],
-    "rank": 14,
+    "rank": 13,
     "gender": "girls"
   },
   {
@@ -144237,7 +144518,7 @@ window.SEARCH_INDEX = [
       "carrier",
       "mackenzie"
     ],
-    "rank": 77,
+    "rank": 75,
     "gender": "girls"
   },
   {
@@ -144251,7 +144532,21 @@ window.SEARCH_INDEX = [
       "abigail",
       "sacre"
     ],
-    "rank": 41,
+    "rank": 43,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Maddisyn Miles",
+    "first_name": "Maddisyn",
+    "last_name": "Miles",
+    "secondary": "Montgomery County · 165",
+    "url": "/wrestler.html?id=35334593132&gender=girls",
+    "searchTokens": [
+      "maddisyn",
+      "miles"
+    ],
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -144265,7 +144560,7 @@ window.SEARCH_INDEX = [
       "calzadilla",
       "carolina"
     ],
-    "rank": 80,
+    "rank": 78,
     "gender": "girls"
   },
   {
@@ -144279,7 +144574,7 @@ window.SEARCH_INDEX = [
       "aaralynn",
       "boblitt"
     ],
-    "rank": 4,
+    "rank": 6,
     "gender": "girls"
   },
   {
@@ -144307,7 +144602,7 @@ window.SEARCH_INDEX = [
       "french",
       "savannah"
     ],
-    "rank": 15,
+    "rank": 14,
     "gender": "girls"
   },
   {
@@ -144322,7 +144617,7 @@ window.SEARCH_INDEX = [
       "perez",
       "sales"
     ],
-    "rank": 28,
+    "rank": 15,
     "gender": "girls"
   },
   {
@@ -144336,7 +144631,7 @@ window.SEARCH_INDEX = [
       "hopkins",
       "jemeriah"
     ],
-    "rank": 10,
+    "rank": 5,
     "gender": "girls"
   },
   {
@@ -144350,7 +144645,7 @@ window.SEARCH_INDEX = [
       "marks",
       "tariah"
     ],
-    "rank": 74,
+    "rank": 72,
     "gender": "girls"
   },
   {
@@ -144378,21 +144673,7 @@ window.SEARCH_INDEX = [
       "lay",
       "zoe"
     ],
-    "rank": 24,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Caroline Sturgill",
-    "first_name": "Caroline",
-    "last_name": "Sturgill",
-    "secondary": "Prestonsburg · 165",
-    "url": "/wrestler.html?id=35722333132&gender=girls",
-    "searchTokens": [
-      "caroline",
-      "sturgill"
-    ],
-    "rank": 57,
+    "rank": 23,
     "gender": "girls"
   },
   {
@@ -144406,7 +144687,7 @@ window.SEARCH_INDEX = [
       "hudson",
       "kenlee"
     ],
-    "rank": 89,
+    "rank": 87,
     "gender": "girls"
   },
   {
@@ -144462,7 +144743,7 @@ window.SEARCH_INDEX = [
       "legendre",
       "yasmine"
     ],
-    "rank": 66,
+    "rank": 59,
     "gender": "girls"
   },
   {
@@ -144476,21 +144757,7 @@ window.SEARCH_INDEX = [
       "cadence",
       "hon"
     ],
-    "rank": 62,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Alayna Banks",
-    "first_name": "Alayna",
-    "last_name": "Banks",
-    "secondary": "Simon Kenton · 165",
-    "url": "/wrestler.html?id=35461622132&gender=girls",
-    "searchTokens": [
-      "alayna",
-      "banks"
-    ],
-    "rank": 16,
+    "rank": 63,
     "gender": "girls"
   },
   {
@@ -144504,7 +144771,7 @@ window.SEARCH_INDEX = [
       "esther",
       "gadi"
     ],
-    "rank": 70,
+    "rank": 68,
     "gender": "girls"
   },
   {
@@ -144518,7 +144785,7 @@ window.SEARCH_INDEX = [
       "addisyn",
       "hall"
     ],
-    "rank": 38,
+    "rank": 40,
     "gender": "girls"
   },
   {
@@ -144546,7 +144813,7 @@ window.SEARCH_INDEX = [
       "osiris",
       "razo"
     ],
-    "rank": 43,
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -144560,7 +144827,7 @@ window.SEARCH_INDEX = [
       "dye",
       "karma"
     ],
-    "rank": 79,
+    "rank": 77,
     "gender": "girls"
   },
   {
@@ -144574,7 +144841,7 @@ window.SEARCH_INDEX = [
       "kennah",
       "white"
     ],
-    "rank": 84,
+    "rank": 82,
     "gender": "girls"
   },
   {
@@ -144602,21 +144869,7 @@ window.SEARCH_INDEX = [
       "novosselov",
       "skyler"
     ],
-    "rank": 13,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Natalie Tardy",
-    "first_name": "Natalie",
-    "last_name": "Tardy",
-    "secondary": "Warren Central · 165",
-    "url": "/wrestler.html?id=35333642132&gender=girls",
-    "searchTokens": [
-      "natalie",
-      "tardy"
-    ],
-    "rank": 33,
+    "rank": 12,
     "gender": "girls"
   },
   {
@@ -144644,7 +144897,7 @@ window.SEARCH_INDEX = [
       "hopkins",
       "trinity"
     ],
-    "rank": 7,
+    "rank": 9,
     "gender": "girls"
   },
   {
@@ -144658,7 +144911,7 @@ window.SEARCH_INDEX = [
       "jaycee",
       "smith"
     ],
-    "rank": 56,
+    "rank": 55,
     "gender": "girls"
   },
   {
@@ -145207,6 +145460,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Esther Gadi",
+    "first_name": "Esther",
+    "last_name": "Gadi",
+    "secondary": "Southern · 165",
+    "url": "/wrestler.html?id=OUTSTATE_417193e0e32e&gender=girls",
+    "searchTokens": [
+      "esther",
+      "gadi"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Everleigh Orendoff",
     "first_name": "Everleigh",
     "last_name": "Orendoff",
@@ -145612,6 +145879,34 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Divine Mujanukaire",
+    "first_name": "Divine",
+    "last_name": "Mujanukaire",
+    "secondary": "Fern Creek · 165",
+    "url": "/wrestler.html?id=OUTSTATE_d94c6fd03ca2&gender=girls",
+    "searchTokens": [
+      "divine",
+      "mujanukaire"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Yasmine Legendre",
+    "first_name": "Yasmine",
+    "last_name": "Legendre",
+    "secondary": "Seneca · 165",
+    "url": "/wrestler.html?id=OUTSTATE_83d9c4b2f210&gender=girls",
+    "searchTokens": [
+      "legendre",
+      "yasmine"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Emalyn Raber",
     "first_name": "Emalyn",
     "last_name": "Raber",
@@ -145663,7 +145958,7 @@ window.SEARCH_INDEX = [
       "antle",
       "jade"
     ],
-    "rank": 52,
+    "rank": 56,
     "gender": "girls"
   },
   {
@@ -145678,7 +145973,21 @@ window.SEARCH_INDEX = [
       "mika",
       "poff"
     ],
-    "rank": 38,
+    "rank": 40,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Amoni Hutchinson",
+    "first_name": "Amoni",
+    "last_name": "Hutchinson",
+    "secondary": "Ashland Blazer · 185",
+    "url": "/wrestler.html?id=35333424132&gender=girls",
+    "searchTokens": [
+      "amoni",
+      "hutchinson"
+    ],
+    "rank": 12,
     "gender": "girls"
   },
   {
@@ -145692,7 +146001,7 @@ window.SEARCH_INDEX = [
       "lopez",
       "nevaeh"
     ],
-    "rank": 62,
+    "rank": 65,
     "gender": "girls"
   },
   {
@@ -145706,7 +146015,7 @@ window.SEARCH_INDEX = [
       "abigail",
       "liberal"
     ],
-    "rank": 20,
+    "rank": 17,
     "gender": "girls"
   },
   {
@@ -145720,7 +146029,7 @@ window.SEARCH_INDEX = [
       "alayna",
       "hall"
     ],
-    "rank": 60,
+    "rank": 63,
     "gender": "girls"
   },
   {
@@ -145734,7 +146043,7 @@ window.SEARCH_INDEX = [
       "britlynn",
       "gilbert"
     ],
-    "rank": 29,
+    "rank": 25,
     "gender": "girls"
   },
   {
@@ -145748,7 +146057,7 @@ window.SEARCH_INDEX = [
       "helton",
       "nyah"
     ],
-    "rank": 45,
+    "rank": 47,
     "gender": "girls"
   },
   {
@@ -145762,7 +146071,7 @@ window.SEARCH_INDEX = [
       "inman",
       "jozelyn"
     ],
-    "rank": 14,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -145776,7 +146085,7 @@ window.SEARCH_INDEX = [
       "gabriela",
       "rojas"
     ],
-    "rank": 70,
+    "rank": 39,
     "gender": "girls"
   },
   {
@@ -145790,7 +146099,7 @@ window.SEARCH_INDEX = [
       "faith",
       "sapp"
     ],
-    "rank": 58,
+    "rank": 62,
     "gender": "girls"
   },
   {
@@ -145804,7 +146113,7 @@ window.SEARCH_INDEX = [
       "bussey",
       "nyomy"
     ],
-    "rank": 39,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -145832,7 +146141,7 @@ window.SEARCH_INDEX = [
       "stewart",
       "virginia"
     ],
-    "rank": 7,
+    "rank": 5,
     "gender": "girls"
   },
   {
@@ -145846,7 +146155,7 @@ window.SEARCH_INDEX = [
       "davine",
       "oliver"
     ],
-    "rank": 48,
+    "rank": 51,
     "gender": "girls"
   },
   {
@@ -145860,7 +146169,7 @@ window.SEARCH_INDEX = [
       "mariah",
       "travis"
     ],
-    "rank": 34,
+    "rank": 29,
     "gender": "girls"
   },
   {
@@ -145874,7 +146183,7 @@ window.SEARCH_INDEX = [
       "jacyla",
       "stafford"
     ],
-    "rank": 53,
+    "rank": 58,
     "gender": "girls"
   },
   {
@@ -145888,7 +146197,7 @@ window.SEARCH_INDEX = [
       "jones",
       "marita"
     ],
-    "rank": 24,
+    "rank": 20,
     "gender": "girls"
   },
   {
@@ -145902,7 +146211,7 @@ window.SEARCH_INDEX = [
       "edwards",
       "kaniece"
     ],
-    "rank": 23,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -145916,7 +146225,7 @@ window.SEARCH_INDEX = [
       "payten",
       "peters"
     ],
-    "rank": 65,
+    "rank": 68,
     "gender": "girls"
   },
   {
@@ -145930,7 +146239,7 @@ window.SEARCH_INDEX = [
       "caldwell",
       "kira"
     ],
-    "rank": 18,
+    "rank": 16,
     "gender": "girls"
   },
   {
@@ -145944,7 +146253,7 @@ window.SEARCH_INDEX = [
       "hernandez",
       "jazmari"
     ],
-    "rank": 49,
+    "rank": 36,
     "gender": "girls"
   },
   {
@@ -145958,7 +146267,7 @@ window.SEARCH_INDEX = [
       "courtney",
       "somerville"
     ],
-    "rank": 64,
+    "rank": 67,
     "gender": "girls"
   },
   {
@@ -145972,7 +146281,7 @@ window.SEARCH_INDEX = [
       "addison",
       "rowland"
     ],
-    "rank": 19,
+    "rank": 32,
     "gender": "girls"
   },
   {
@@ -145987,7 +146296,7 @@ window.SEARCH_INDEX = [
       "corey",
       "dalmida"
     ],
-    "rank": 25,
+    "rank": 15,
     "gender": "girls"
   },
   {
@@ -146001,7 +146310,7 @@ window.SEARCH_INDEX = [
       "sharrock",
       "symphanie"
     ],
-    "rank": 54,
+    "rank": 57,
     "gender": "girls"
   },
   {
@@ -146015,7 +146324,7 @@ window.SEARCH_INDEX = [
       "alma",
       "heba"
     ],
-    "rank": 43,
+    "rank": 45,
     "gender": "girls"
   },
   {
@@ -146029,7 +146338,7 @@ window.SEARCH_INDEX = [
       "moorman",
       "taylor"
     ],
-    "rank": 66,
+    "rank": 69,
     "gender": "girls"
   },
   {
@@ -146043,7 +146352,7 @@ window.SEARCH_INDEX = [
       "kyleigh",
       "larrick"
     ],
-    "rank": 44,
+    "rank": 46,
     "gender": "girls"
   },
   {
@@ -146057,7 +146366,7 @@ window.SEARCH_INDEX = [
       "emma",
       "marcum"
     ],
-    "rank": 35,
+    "rank": 34,
     "gender": "girls"
   },
   {
@@ -146085,7 +146394,7 @@ window.SEARCH_INDEX = [
       "addilyn",
       "leslie"
     ],
-    "rank": 6,
+    "rank": 8,
     "gender": "girls"
   },
   {
@@ -146099,7 +146408,7 @@ window.SEARCH_INDEX = [
       "jhoana",
       "pulquero"
     ],
-    "rank": 59,
+    "rank": 53,
     "gender": "girls"
   },
   {
@@ -146113,7 +146422,7 @@ window.SEARCH_INDEX = [
       "kiana",
       "morris"
     ],
-    "rank": 15,
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -146127,7 +146436,7 @@ window.SEARCH_INDEX = [
       "skylar",
       "vernon"
     ],
-    "rank": 68,
+    "rank": 71,
     "gender": "girls"
   },
   {
@@ -146141,7 +146450,7 @@ window.SEARCH_INDEX = [
       "lopez",
       "trinity"
     ],
-    "rank": 26,
+    "rank": 21,
     "gender": "girls"
   },
   {
@@ -146169,7 +146478,7 @@ window.SEARCH_INDEX = [
       "abby",
       "powers"
     ],
-    "rank": 51,
+    "rank": 55,
     "gender": "girls"
   },
   {
@@ -146183,7 +146492,7 @@ window.SEARCH_INDEX = [
       "michelle",
       "osoro"
     ],
-    "rank": 9,
+    "rank": 23,
     "gender": "girls"
   },
   {
@@ -146198,7 +146507,7 @@ window.SEARCH_INDEX = [
       "clarytza",
       "santos"
     ],
-    "rank": 4,
+    "rank": 7,
     "gender": "girls"
   },
   {
@@ -146212,7 +146521,7 @@ window.SEARCH_INDEX = [
       "alfred",
       "heather"
     ],
-    "rank": 42,
+    "rank": 49,
     "gender": "girls"
   },
   {
@@ -146240,7 +146549,7 @@ window.SEARCH_INDEX = [
       "emma",
       "mitchell"
     ],
-    "rank": 67,
+    "rank": 70,
     "gender": "girls"
   },
   {
@@ -146268,7 +146577,7 @@ window.SEARCH_INDEX = [
       "baillie",
       "garland"
     ],
-    "rank": 50,
+    "rank": 54,
     "gender": "girls"
   },
   {
@@ -146282,7 +146591,7 @@ window.SEARCH_INDEX = [
       "bayleigh",
       "thompson"
     ],
-    "rank": 12,
+    "rank": 13,
     "gender": "girls"
   },
   {
@@ -146296,7 +146605,7 @@ window.SEARCH_INDEX = [
       "zink",
       "zoie"
     ],
-    "rank": 41,
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -146310,7 +146619,7 @@ window.SEARCH_INDEX = [
       "foley",
       "jaycee"
     ],
-    "rank": 10,
+    "rank": 9,
     "gender": "girls"
   },
   {
@@ -146324,7 +146633,7 @@ window.SEARCH_INDEX = [
       "alice",
       "diane"
     ],
-    "rank": 32,
+    "rank": 31,
     "gender": "girls"
   },
   {
@@ -146338,21 +146647,7 @@ window.SEARCH_INDEX = [
       "jayla",
       "jones"
     ],
-    "rank": 61,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
-    "name": "Brianna Ordonez",
-    "first_name": "Brianna",
-    "last_name": "Ordonez",
-    "secondary": "Moore · 185",
-    "url": "/wrestler.html?id=35333573132&gender=girls",
-    "searchTokens": [
-      "brianna",
-      "ordonez"
-    ],
-    "rank": 31,
+    "rank": 64,
     "gender": "girls"
   },
   {
@@ -146380,7 +146675,7 @@ window.SEARCH_INDEX = [
       "myers",
       "tori"
     ],
-    "rank": 40,
+    "rank": 41,
     "gender": "girls"
   },
   {
@@ -146394,7 +146689,7 @@ window.SEARCH_INDEX = [
       "young",
       "zeanna"
     ],
-    "rank": 17,
+    "rank": 14,
     "gender": "girls"
   },
   {
@@ -146408,7 +146703,7 @@ window.SEARCH_INDEX = [
       "pendergrass",
       "raelynn"
     ],
-    "rank": 55,
+    "rank": 59,
     "gender": "girls"
   },
   {
@@ -146422,7 +146717,7 @@ window.SEARCH_INDEX = [
       "graycen",
       "roberts"
     ],
-    "rank": 13,
+    "rank": 37,
     "gender": "girls"
   },
   {
@@ -146436,7 +146731,7 @@ window.SEARCH_INDEX = [
       "kells",
       "kinslee"
     ],
-    "rank": 57,
+    "rank": 61,
     "gender": "girls"
   },
   {
@@ -146450,7 +146745,7 @@ window.SEARCH_INDEX = [
       "jade",
       "mills"
     ],
-    "rank": 46,
+    "rank": 48,
     "gender": "girls"
   },
   {
@@ -146464,7 +146759,7 @@ window.SEARCH_INDEX = [
       "chloe",
       "whitehead"
     ],
-    "rank": 36,
+    "rank": 43,
     "gender": "girls"
   },
   {
@@ -146478,7 +146773,21 @@ window.SEARCH_INDEX = [
       "cheko",
       "mwamini"
     ],
-    "rank": 69,
+    "rank": 72,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Caroline Sturgill",
+    "first_name": "Caroline",
+    "last_name": "Sturgill",
+    "secondary": "Prestonsburg · 185",
+    "url": "/wrestler.html?id=35722333132&gender=girls",
+    "searchTokens": [
+      "caroline",
+      "sturgill"
+    ],
+    "rank": 52,
     "gender": "girls"
   },
   {
@@ -146492,7 +146801,21 @@ window.SEARCH_INDEX = [
       "aylin",
       "lopez"
     ],
-    "rank": 63,
+    "rank": 66,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Alayna Banks",
+    "first_name": "Alayna",
+    "last_name": "Banks",
+    "secondary": "Simon Kenton · 185",
+    "url": "/wrestler.html?id=35461622132&gender=girls",
+    "searchTokens": [
+      "alayna",
+      "banks"
+    ],
+    "rank": 6,
     "gender": "girls"
   },
   {
@@ -146506,7 +146829,7 @@ window.SEARCH_INDEX = [
       "destiny",
       "tapp"
     ],
-    "rank": 37,
+    "rank": 38,
     "gender": "girls"
   },
   {
@@ -146520,7 +146843,7 @@ window.SEARCH_INDEX = [
       "lillth",
       "poole"
     ],
-    "rank": 47,
+    "rank": 50,
     "gender": "girls"
   },
   {
@@ -146534,7 +146857,7 @@ window.SEARCH_INDEX = [
       "avila",
       "selena"
     ],
-    "rank": 16,
+    "rank": 11,
     "gender": "girls"
   },
   {
@@ -146548,7 +146871,7 @@ window.SEARCH_INDEX = [
       "addysen",
       "dotson"
     ],
-    "rank": 22,
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -146562,7 +146885,7 @@ window.SEARCH_INDEX = [
       "hedricks",
       "makenna"
     ],
-    "rank": 5,
+    "rank": 4,
     "gender": "girls"
   },
   {
@@ -146576,7 +146899,7 @@ window.SEARCH_INDEX = [
       "bryonah",
       "mayes"
     ],
-    "rank": 21,
+    "rank": 18,
     "gender": "girls"
   },
   {
@@ -146590,7 +146913,7 @@ window.SEARCH_INDEX = [
       "audrey",
       "wilson"
     ],
-    "rank": 8,
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -146604,7 +146927,7 @@ window.SEARCH_INDEX = [
       "amya",
       "hudson"
     ],
-    "rank": 30,
+    "rank": 26,
     "gender": "girls"
   },
   {
@@ -146618,7 +146941,7 @@ window.SEARCH_INDEX = [
       "makenna",
       "sulfridge"
     ],
-    "rank": 11,
+    "rank": 30,
     "gender": "girls"
   },
   {
@@ -146632,7 +146955,7 @@ window.SEARCH_INDEX = [
       "huddleston",
       "nellie"
     ],
-    "rank": 56,
+    "rank": 60,
     "gender": "girls"
   },
   {
@@ -147562,20 +147885,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Amoni Hutchinson",
-    "first_name": "Amoni",
-    "last_name": "Hutchinson",
-    "secondary": "Ashland Blazer · 235",
-    "url": "/wrestler.html?id=35333424132&gender=girls",
-    "searchTokens": [
-      "amoni",
-      "hutchinson"
-    ],
-    "rank": 24,
-    "gender": "girls"
-  },
-  {
-    "type": "wrestler",
     "name": "Jayden Blatz",
     "first_name": "Jayden",
     "last_name": "Blatz",
@@ -147683,7 +147992,7 @@ window.SEARCH_INDEX = [
       "brewer",
       "evalee"
     ],
-    "rank": 10,
+    "rank": 11,
     "gender": "girls"
   },
   {
@@ -147697,7 +148006,7 @@ window.SEARCH_INDEX = [
       "hopkins",
       "kaylee"
     ],
-    "rank": 40,
+    "rank": 38,
     "gender": "girls"
   },
   {
@@ -147711,7 +148020,7 @@ window.SEARCH_INDEX = [
       "lewis",
       "shirley"
     ],
-    "rank": 20,
+    "rank": 19,
     "gender": "girls"
   },
   {
@@ -147725,7 +148034,7 @@ window.SEARCH_INDEX = [
       "destiny",
       "walters"
     ],
-    "rank": 15,
+    "rank": 4,
     "gender": "girls"
   },
   {
@@ -147739,7 +148048,7 @@ window.SEARCH_INDEX = [
       "damari",
       "harris"
     ],
-    "rank": 4,
+    "rank": 9,
     "gender": "girls"
   },
   {
@@ -147781,7 +148090,7 @@ window.SEARCH_INDEX = [
       "ealom",
       "kymani"
     ],
-    "rank": 34,
+    "rank": 33,
     "gender": "girls"
   },
   {
@@ -147795,7 +148104,7 @@ window.SEARCH_INDEX = [
       "fatou",
       "gueye"
     ],
-    "rank": 42,
+    "rank": 41,
     "gender": "girls"
   },
   {
@@ -147823,7 +148132,7 @@ window.SEARCH_INDEX = [
       "aaliyah",
       "henderson"
     ],
-    "rank": 35,
+    "rank": 34,
     "gender": "girls"
   },
   {
@@ -147879,7 +148188,7 @@ window.SEARCH_INDEX = [
       "mariya",
       "meh"
     ],
-    "rank": 8,
+    "rank": 7,
     "gender": "girls"
   },
   {
@@ -147922,7 +148231,7 @@ window.SEARCH_INDEX = [
       "kaidence",
       "payne"
     ],
-    "rank": 41,
+    "rank": 39,
     "gender": "girls"
   },
   {
@@ -147936,7 +148245,7 @@ window.SEARCH_INDEX = [
       "sevira",
       "taito"
     ],
-    "rank": 31,
+    "rank": 29,
     "gender": "girls"
   },
   {
@@ -147950,7 +148259,7 @@ window.SEARCH_INDEX = [
       "mackenzie",
       "mcgeorge"
     ],
-    "rank": 9,
+    "rank": 8,
     "gender": "girls"
   },
   {
@@ -148076,7 +148385,7 @@ window.SEARCH_INDEX = [
       "alexandra",
       "cortez"
     ],
-    "rank": 14,
+    "rank": 15,
     "gender": "girls"
   },
   {
@@ -148104,7 +148413,7 @@ window.SEARCH_INDEX = [
       "a`niyah",
       "groves"
     ],
-    "rank": 29,
+    "rank": 26,
     "gender": "girls"
   },
   {
@@ -148146,7 +148455,7 @@ window.SEARCH_INDEX = [
       "camila",
       "velasco"
     ],
-    "rank": 7,
+    "rank": 10,
     "gender": "girls"
   },
   {
@@ -148160,7 +148469,7 @@ window.SEARCH_INDEX = [
       "curry-martin",
       "raelyn"
     ],
-    "rank": 39,
+    "rank": 40,
     "gender": "girls"
   },
   {
@@ -148174,7 +148483,7 @@ window.SEARCH_INDEX = [
       "allen",
       "serenity"
     ],
-    "rank": 22,
+    "rank": 28,
     "gender": "girls"
   },
   {
@@ -148202,7 +148511,7 @@ window.SEARCH_INDEX = [
       "hobbs",
       "madison"
     ],
-    "rank": 19,
+    "rank": 18,
     "gender": "girls"
   },
   {
@@ -148216,7 +148525,7 @@ window.SEARCH_INDEX = [
       "autumn",
       "jackson"
     ],
-    "rank": 21,
+    "rank": 20,
     "gender": "girls"
   },
   {
@@ -148230,7 +148539,7 @@ window.SEARCH_INDEX = [
       "harned",
       "lillian"
     ],
-    "rank": 30,
+    "rank": 27,
     "gender": "girls"
   },
   {
@@ -148244,7 +148553,7 @@ window.SEARCH_INDEX = [
       "kaylee",
       "parriman"
     ],
-    "rank": 18,
+    "rank": 17,
     "gender": "girls"
   },
   {
@@ -148258,7 +148567,7 @@ window.SEARCH_INDEX = [
       "detray",
       "zoie"
     ],
-    "rank": 33,
+    "rank": 32,
     "gender": "girls"
   },
   {
@@ -148273,6 +148582,20 @@ window.SEARCH_INDEX = [
       "hailey"
     ],
     "rank": 62,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Brianna Ordonez",
+    "first_name": "Brianna",
+    "last_name": "Ordonez",
+    "secondary": "Moore · 235",
+    "url": "/wrestler.html?id=35333573132&gender=girls",
+    "searchTokens": [
+      "brianna",
+      "ordonez"
+    ],
+    "rank": 44,
     "gender": "girls"
   },
   {
@@ -148300,7 +148623,7 @@ window.SEARCH_INDEX = [
       "adams",
       "d`ava"
     ],
-    "rank": 23,
+    "rank": 21,
     "gender": "girls"
   },
   {
@@ -148314,7 +148637,7 @@ window.SEARCH_INDEX = [
       "mcintosh",
       "naveah"
     ],
-    "rank": 17,
+    "rank": 16,
     "gender": "girls"
   },
   {
@@ -148328,7 +148651,7 @@ window.SEARCH_INDEX = [
       "kells",
       "savannah"
     ],
-    "rank": 43,
+    "rank": 36,
     "gender": "girls"
   },
   {
@@ -148342,7 +148665,7 @@ window.SEARCH_INDEX = [
       "constance",
       "katelynn"
     ],
-    "rank": 36,
+    "rank": 35,
     "gender": "girls"
   },
   {
@@ -148398,7 +148721,7 @@ window.SEARCH_INDEX = [
       "jayleigh",
       "overbay"
     ],
-    "rank": 32,
+    "rank": 31,
     "gender": "girls"
   },
   {
@@ -148412,7 +148735,7 @@ window.SEARCH_INDEX = [
       "alo",
       "tiara"
     ],
-    "rank": 27,
+    "rank": 24,
     "gender": "girls"
   },
   {
@@ -148440,7 +148763,7 @@ window.SEARCH_INDEX = [
       "avagayle",
       "lingenfelter"
     ],
-    "rank": 13,
+    "rank": 14,
     "gender": "girls"
   },
   {
@@ -148454,7 +148777,7 @@ window.SEARCH_INDEX = [
       "gracee",
       "lingenfelter"
     ],
-    "rank": 12,
+    "rank": 13,
     "gender": "girls"
   },
   {
@@ -148468,7 +148791,7 @@ window.SEARCH_INDEX = [
       "areonna",
       "quarles"
     ],
-    "rank": 16,
+    "rank": 30,
     "gender": "girls"
   },
   {
@@ -148482,7 +148805,7 @@ window.SEARCH_INDEX = [
       "brianna",
       "rice"
     ],
-    "rank": 28,
+    "rank": 25,
     "gender": "girls"
   },
   {
@@ -148496,7 +148819,7 @@ window.SEARCH_INDEX = [
       "callie",
       "patton"
     ],
-    "rank": 38,
+    "rank": 37,
     "gender": "girls"
   },
   {
@@ -148510,7 +148833,7 @@ window.SEARCH_INDEX = [
       "kenli",
       "lamb"
     ],
-    "rank": 44,
+    "rank": 43,
     "gender": "girls"
   },
   {
@@ -148538,7 +148861,7 @@ window.SEARCH_INDEX = [
       "jaliyah",
       "jones"
     ],
-    "rank": 37,
+    "rank": 42,
     "gender": "girls"
   },
   {
@@ -148552,7 +148875,7 @@ window.SEARCH_INDEX = [
       "barney",
       "sunai"
     ],
-    "rank": 26,
+    "rank": 23,
     "gender": "girls"
   },
   {
@@ -148580,7 +148903,7 @@ window.SEARCH_INDEX = [
       "francis",
       "sandra"
     ],
-    "rank": 25,
+    "rank": 22,
     "gender": "girls"
   },
   {
@@ -148608,7 +148931,7 @@ window.SEARCH_INDEX = [
       "mariya",
       "reed"
     ],
-    "rank": 11,
+    "rank": 12,
     "gender": "girls"
   },
   {
@@ -149327,6 +149650,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Lily Madden",
+    "first_name": "Lily",
+    "last_name": "Madden",
+    "secondary": "Russell · 235",
+    "url": "/wrestler.html?id=OUTSTATE_45c10603af38&gender=girls",
+    "searchTokens": [
+      "lily",
+      "madden"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
     "name": "Mya Brown",
     "first_name": "Mya",
     "last_name": "Brown",
@@ -149433,6 +149770,34 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "francis",
       "sandra"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Madison Hobbs",
+    "first_name": "Madison",
+    "last_name": "Hobbs",
+    "secondary": "Mason County · 235",
+    "url": "/wrestler.html?id=OUTSTATE_bdc3a1011c42&gender=girls",
+    "searchTokens": [
+      "hobbs",
+      "madison"
+    ],
+    "rank": null,
+    "gender": "girls"
+  },
+  {
+    "type": "wrestler",
+    "name": "Raelyn Curry-Martin",
+    "first_name": "Raelyn",
+    "last_name": "Curry-Martin",
+    "secondary": "Madison Central · 235",
+    "url": "/wrestler.html?id=OUTSTATE_35f68d5f8da1&gender=girls",
+    "searchTokens": [
+      "curry-martin",
+      "raelyn"
     ],
     "rank": null,
     "gender": "girls"

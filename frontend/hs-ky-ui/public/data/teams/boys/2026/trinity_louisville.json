@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:01.207273Z",
+  "generated_at_utc": "2026-02-18T22:09:30.420778Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -73,10 +73,10 @@
     },
     "120": {
       "weight": 120,
-      "wrestler_id": "36284917132",
-      "name": "Holland Pike",
-      "current_rank": 155,
-      "grade": 9,
+      "wrestler_id": "35284553132",
+      "name": "Jaxon McDonald",
+      "current_rank": 218,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -84,16 +84,16 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       },
       "top33_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 0
       },
-      "wins": 2,
-      "losses": 7,
+      "wins": 0,
+      "losses": 0,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.0
     },
     "126": {
       "weight": 126,
@@ -221,10 +221,10 @@
       "name": "Michael Fidler",
       "current_rank": 37,
       "grade": 10,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
+      "xtp": 0.88,
+      "xtp_p": 0.03,
+      "xtp_a": 0.3,
+      "xtp_b": 0.55,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -269,11 +269,11 @@
       "name": "Michael Diffey",
       "current_rank": 16,
       "grade": 11,
-      "xtp": 4.11,
-      "xtp_p": 0.47,
-      "xtp_a": 1.08,
-      "xtp_b": 2.56,
-      "xtp_simple": 2.5,
+      "xtp": 3.4,
+      "xtp_p": 0.41,
+      "xtp_a": 1.02,
+      "xtp_b": 1.97,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -317,10 +317,10 @@
       "name": "Phillip Sullivan",
       "current_rank": 15,
       "grade": 10,
-      "xtp": 4.15,
-      "xtp_p": 0.7,
-      "xtp_a": 1.18,
-      "xtp_b": 2.27,
+      "xtp": 4.26,
+      "xtp_p": 0.93,
+      "xtp_a": 1.27,
+      "xtp_b": 2.06,
       "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
@@ -383,13 +383,13 @@
     },
     {
       "weight": 120,
-      "wrestler_id": "35284553132",
-      "name": "Jaxon McDonald",
-      "grade": null,
-      "wins": 0,
-      "losses": 0,
+      "wrestler_id": "36284917132",
+      "name": "Holland Pike",
+      "grade": 9,
+      "wins": 2,
+      "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 1.0
     },
     {
       "weight": 120,
@@ -572,9 +572,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 5.5,
+  "team_xTP_simple": 3.5,
   "team_metrics": {
-    "projected_state_points": 5.5,
+    "projected_state_points": 3.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -584,30 +584,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 53,
-      "losses": 48
+      "wins": 76,
+      "losses": 62
     },
     "top33": {
       "wins": 12,
-      "losses": 31
+      "losses": 27
     },
     "top10": {
       "wins": 1,
-      "losses": 9
+      "losses": 8
     },
     "bonus_rate": {
-      "value": 1.438,
-      "rank": 13,
+      "value": 0.944,
+      "rank": 33,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 1.312,
-      "rank": 11,
+      "value": 0.859,
+      "rank": 21,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.042,
-      "rank": 122,
+      "value": 0.028,
+      "rank": 125,
       "rank_scope": "league"
     }
   }

@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:01.563837Z",
+  "generated_at_utc": "2026-02-18T22:09:30.764120Z",
   "starters": {
     "114": {
       "weight": 114,
       "wrestler_id": "35333669132",
       "name": "Neticia Hughes",
-      "current_rank": 55,
+      "current_rank": 43,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -36,39 +36,39 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 4
       },
-      "wins": 2,
-      "losses": 4,
+      "wins": 5,
+      "losses": 7,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.8
     },
     "120": {
       "weight": 120,
       "wrestler_id": "35333670132",
       "name": "Briella Levy",
-      "current_rank": 50,
+      "current_rank": 16,
       "grade": null,
-      "xtp": 0.99,
-      "xtp_p": 0.03,
-      "xtp_a": 0.3,
-      "xtp_b": 0.66,
-      "xtp_simple": 0.0,
+      "xtp": 4.02,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 2.47,
+      "xtp_simple": 0.5,
       "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
         "wins": 0,
         "losses": 2
       },
-      "wins": 4,
-      "losses": 5,
-      "top25_wins": 0,
+      "top33_record": {
+        "wins": 3,
+        "losses": 4
+      },
+      "wins": 6,
+      "losses": 6,
+      "top25_wins": 2,
       "bonus_rate": 1.0
     },
     "126": {
@@ -84,88 +84,64 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
-      "wins": 8,
-      "losses": 1,
+      "wins": 10,
+      "losses": 3,
       "top25_wins": 0,
-      "bonus_rate": 0.875
+      "bonus_rate": 0.9
     },
-    "138": {
-      "weight": 138,
+    "145": {
+      "weight": 145,
       "wrestler_id": "35333674132",
       "name": "Saniyah Nana",
-      "current_rank": 37,
+      "current_rank": 16,
       "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
+      "xtp": 4.65,
+      "xtp_p": 0.7,
+      "xtp_a": 1.18,
+      "xtp_b": 2.77,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
         "losses": 4
       },
       "top33_record": {
-        "wins": 5,
-        "losses": 5
+        "wins": 4,
+        "losses": 6
       },
-      "wins": 6,
-      "losses": 5,
-      "top25_wins": 2,
-      "bonus_rate": 0.667
-    },
-    "145": {
-      "weight": 145,
-      "wrestler_id": "35333676132",
-      "name": "Lucy Savon",
-      "current_rank": 24,
-      "grade": null,
-      "xtp": 3.04,
-      "xtp_p": 0.37,
-      "xtp_a": 0.81,
-      "xtp_b": 1.86,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 1,
-        "losses": 1
-      },
-      "wins": 2,
-      "losses": 2,
-      "top25_wins": 1,
-      "bonus_rate": 1.0
+      "wins": 8,
+      "losses": 6,
+      "top25_wins": 3,
+      "bonus_rate": 0.75
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35333672132",
       "name": "Aria McFarland",
-      "current_rank": 17,
+      "current_rank": 16,
       "grade": null,
-      "xtp": 3.98,
-      "xtp_p": 0.41,
-      "xtp_a": 1.02,
-      "xtp_b": 2.55,
-      "xtp_simple": 0.0,
+      "xtp": 4.26,
+      "xtp_p": 0.47,
+      "xtp_a": 1.08,
+      "xtp_b": 2.71,
+      "xtp_simple": 0.5,
       "top10_record": {
         "wins": 1,
         "losses": 0
       },
       "top33_record": {
-        "wins": 3,
+        "wins": 5,
         "losses": 0
       },
-      "wins": 6,
+      "wins": 9,
       "losses": 0,
       "top25_wins": 3,
-      "bonus_rate": 0.833
+      "bonus_rate": 0.889
     }
   },
   "remaining": [
@@ -180,6 +156,16 @@
       "bonus_rate": 0.0
     },
     {
+      "weight": 145,
+      "wrestler_id": "35333676132",
+      "name": "Lucy Savon",
+      "grade": null,
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 1,
+      "bonus_rate": 1.0
+    },
+    {
       "weight": 165,
       "wrestler_id": "35333677132",
       "name": "Journee White",
@@ -190,9 +176,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 0.0,
+  "team_xTP_simple": 1.5,
   "team_metrics": {
-    "projected_state_points": 0.0,
+    "projected_state_points": 1.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -202,30 +188,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 28,
-      "losses": 17
+      "wins": 38,
+      "losses": 22
     },
     "top33": {
-      "wins": 9,
-      "losses": 9
+      "wins": 12,
+      "losses": 15
     },
     "top10": {
       "wins": 1,
-      "losses": 5
+      "losses": 8
     },
     "bonus_rate": {
-      "value": 0.857,
-      "rank": 99,
+      "value": 0.868,
+      "rank": 96,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.786,
-      "rank": 95,
+      "value": 0.789,
+      "rank": 93,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.0,
-      "rank": 75,
+      "value": 0.026,
+      "rank": 51,
       "rank_scope": "league"
     }
   }

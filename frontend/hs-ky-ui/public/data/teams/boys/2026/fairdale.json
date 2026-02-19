@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.197706Z",
+  "generated_at_utc": "2026-02-18T22:09:29.374689Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -53,10 +53,10 @@
       "name": "Makai Green",
       "current_rank": 23,
       "grade": 11,
-      "xtp": 2.77,
-      "xtp_p": 0.31,
-      "xtp_a": 0.75,
-      "xtp_b": 1.71,
+      "xtp": 3.32,
+      "xtp_p": 0.45,
+      "xtp_a": 0.91,
+      "xtp_b": 1.96,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -77,10 +77,10 @@
       "name": "Dillon Lewis",
       "current_rank": 27,
       "grade": 11,
-      "xtp": 1.63,
-      "xtp_p": 0.2,
-      "xtp_a": 0.54,
-      "xtp_b": 0.89,
+      "xtp": 1.62,
+      "xtp_p": 0.11,
+      "xtp_a": 0.51,
+      "xtp_b": 1.0,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -101,11 +101,11 @@
       "name": "Dakota Devore",
       "current_rank": 26,
       "grade": 11,
-      "xtp": 2.59,
-      "xtp_p": 0.31,
-      "xtp_a": 0.75,
-      "xtp_b": 1.53,
-      "xtp_simple": 0.5,
+      "xtp": 1.77,
+      "xtp_p": 0.2,
+      "xtp_a": 0.54,
+      "xtp_b": 1.03,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
@@ -125,10 +125,10 @@
       "name": "mohamed Talasow",
       "current_rank": 6,
       "grade": 11,
-      "xtp": 10.15,
+      "xtp": 10.1,
       "xtp_p": 4.26,
       "xtp_a": 2.33,
-      "xtp_b": 3.56,
+      "xtp_b": 3.51,
       "xtp_simple": 13.5,
       "top10_record": {
         "wins": 2,
@@ -197,10 +197,10 @@
       "name": "Bryce Hartel",
       "current_rank": 18,
       "grade": 9,
-      "xtp": 3.19,
-      "xtp_p": 0.46,
-      "xtp_a": 1.0,
-      "xtp_b": 1.73,
+      "xtp": 2.83,
+      "xtp_p": 0.45,
+      "xtp_a": 0.91,
+      "xtp_b": 1.47,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -245,10 +245,10 @@
       "name": "joshua Tuttle",
       "current_rank": 9,
       "grade": 10,
-      "xtp": 6.53,
+      "xtp": 6.55,
       "xtp_p": 2.03,
       "xtp_a": 1.78,
-      "xtp_b": 2.72,
+      "xtp_b": 2.74,
       "xtp_simple": 3.0,
       "top10_record": {
         "wins": 1,
@@ -269,10 +269,10 @@
       "name": "Yousif Al Shuweily",
       "current_rank": 11,
       "grade": 11,
-      "xtp": 6.21,
+      "xtp": 6.38,
       "xtp_p": 1.69,
       "xtp_a": 1.58,
-      "xtp_b": 2.94,
+      "xtp_b": 3.11,
       "xtp_simple": 3.0,
       "top10_record": {
         "wins": 0,
@@ -289,10 +289,10 @@
     },
     "190": {
       "weight": 190,
-      "wrestler_id": "35135148132",
-      "name": "johnny Tran",
-      "current_rank": 58,
-      "grade": 12,
+      "wrestler_id": "35135169132",
+      "name": "Juanfry Baez",
+      "current_rank": 59,
+      "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -300,16 +300,16 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 0
       },
       "top33_record": {
-        "wins": 1,
-        "losses": 10
+        "wins": 0,
+        "losses": 0
       },
-      "wins": 11,
-      "losses": 15,
+      "wins": 3,
+      "losses": 1,
       "top25_wins": 0,
-      "bonus_rate": 0.8
+      "bonus_rate": 0.667
     },
     "215": {
       "weight": 215,
@@ -513,13 +513,13 @@
     },
     {
       "weight": 190,
-      "wrestler_id": "35135169132",
-      "name": "Juanfry Baez",
-      "grade": null,
-      "wins": 3,
-      "losses": 1,
+      "wrestler_id": "35135148132",
+      "name": "johnny Tran",
+      "grade": 12,
+      "wins": 11,
+      "losses": 15,
       "top25_wins": 0,
-      "bonus_rate": 0.667
+      "bonus_rate": 0.8
     },
     {
       "weight": 190,
@@ -562,9 +562,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 32.5,
+  "team_xTP_simple": 32.0,
   "team_metrics": {
-    "projected_state_points": 32.5,
+    "projected_state_points": 32.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -574,30 +574,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 179,
-      "losses": 81
+      "wins": 202,
+      "losses": 92
     },
     "top33": {
-      "wins": 38,
-      "losses": 86
+      "wins": 37,
+      "losses": 76
     },
     "top10": {
       "wins": 4,
-      "losses": 44
+      "losses": 41
     },
     "bonus_rate": {
-      "value": 1.104,
-      "rank": 54,
+      "value": 0.93,
+      "rank": 43,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.92,
-      "rank": 67,
+      "value": 0.786,
+      "rank": 57,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.117,
-      "rank": 63,
+      "value": 0.096,
+      "rank": 62,
       "rank_scope": "league"
     }
   }

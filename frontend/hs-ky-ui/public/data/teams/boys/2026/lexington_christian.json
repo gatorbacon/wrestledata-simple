@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:44:00.540945Z",
+  "generated_at_utc": "2026-02-18T22:09:29.754022Z",
   "starters": {
     "113": {
       "weight": 113,
@@ -143,30 +143,6 @@
       "top25_wins": 0,
       "bonus_rate": 0.812
     },
-    "157": {
-      "weight": 157,
-      "wrestler_id": "34995376132",
-      "name": "Brandon Shackelton",
-      "current_rank": 183,
-      "grade": 9,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "wins": 0,
-      "losses": 2,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
     "165": {
       "weight": 165,
       "wrestler_id": "34995373132",
@@ -215,40 +191,16 @@
       "top25_wins": 0,
       "bonus_rate": 0.5
     },
-    "190": {
-      "weight": 190,
-      "wrestler_id": "34995381132",
-      "name": "Ethan Jett",
-      "current_rank": 266,
-      "grade": null,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "wins": 0,
-      "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
     "215": {
       "weight": 215,
       "wrestler_id": "34995410132",
       "name": "Bode Darland",
       "current_rank": 6,
       "grade": 10,
-      "xtp": 10.05,
+      "xtp": 10.62,
       "xtp_p": 4.26,
       "xtp_a": 2.33,
-      "xtp_b": 3.46,
+      "xtp_b": 4.03,
       "xtp_simple": 13.5,
       "top10_record": {
         "wins": 1,
@@ -269,10 +221,10 @@
       "name": "Jamison Dunn",
       "current_rank": 25,
       "grade": 11,
-      "xtp": 2.13,
-      "xtp_p": 0.31,
-      "xtp_a": 0.75,
-      "xtp_b": 1.07,
+      "xtp": 1.83,
+      "xtp_p": 0.25,
+      "xtp_a": 0.69,
+      "xtp_b": 0.89,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -300,6 +252,26 @@
       "bonus_rate": 1.0
     },
     {
+      "weight": 157,
+      "wrestler_id": "34995376132",
+      "name": "Brandon Shackelton",
+      "grade": 9,
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 190,
+      "wrestler_id": "34995381132",
+      "name": "Ethan Jett",
+      "grade": null,
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
       "weight": 215,
       "wrestler_id": "34995374132",
       "name": "Mac Darland",
@@ -322,8 +294,8 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 72,
-      "losses": 84
+      "wins": 87,
+      "losses": 96
     },
     "top33": {
       "wins": 6,
@@ -334,18 +306,18 @@
       "losses": 9
     },
     "bonus_rate": {
-      "value": 0.953,
-      "rank": 110,
+      "value": 0.772,
+      "rank": 140,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.891,
-      "rank": 74,
+      "value": 0.722,
+      "rank": 95,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.016,
-      "rank": 129,
+      "value": 0.013,
+      "rank": 130,
       "rank_scope": "league"
     }
   }

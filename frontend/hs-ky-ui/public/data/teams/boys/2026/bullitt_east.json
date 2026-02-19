@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-12T18:43:59.951554Z",
+  "generated_at_utc": "2026-02-18T22:09:29.118028Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -145,9 +145,9 @@
     },
     "144": {
       "weight": 144,
-      "wrestler_id": "35205186132",
-      "name": "Conner Zurschmeide",
-      "current_rank": 201,
+      "wrestler_id": "35205074132",
+      "name": "John Jerred Del Carmen",
+      "current_rank": 38,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -156,16 +156,16 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 9
       },
-      "wins": 0,
-      "losses": 4,
+      "wins": 16,
+      "losses": 14,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 0.929
     },
     "150": {
       "weight": 150,
@@ -173,10 +173,10 @@
       "name": "Brayden Norrick",
       "current_rank": 19,
       "grade": 12,
-      "xtp": 2.94,
-      "xtp_p": 0.47,
-      "xtp_a": 0.96,
-      "xtp_b": 1.51,
+      "xtp": 2.61,
+      "xtp_p": 0.41,
+      "xtp_a": 0.85,
+      "xtp_b": 1.35,
       "xtp_simple": 0.5,
       "top10_record": {
         "wins": 0,
@@ -197,11 +197,11 @@
       "name": "Cody Grayson",
       "current_rank": 18,
       "grade": 10,
-      "xtp": 3.3,
-      "xtp_p": 0.46,
-      "xtp_a": 1.0,
-      "xtp_b": 1.84,
-      "xtp_simple": 0.5,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 1
@@ -221,10 +221,10 @@
       "name": "Max Baxter",
       "current_rank": 5,
       "grade": 9,
-      "xtp": 12.22,
+      "xtp": 12.27,
       "xtp_p": 5.13,
       "xtp_a": 2.53,
-      "xtp_b": 4.56,
+      "xtp_b": 4.61,
       "xtp_simple": 15.0,
       "top10_record": {
         "wins": 8,
@@ -293,10 +293,10 @@
       "name": "Benjamin Cauley",
       "current_rank": 6,
       "grade": 12,
-      "xtp": 10.43,
+      "xtp": 9.69,
       "xtp_p": 4.26,
       "xtp_a": 2.33,
-      "xtp_b": 3.84,
+      "xtp_b": 3.1,
       "xtp_simple": 13.5,
       "top10_record": {
         "wins": 2,
@@ -385,21 +385,21 @@
     },
     {
       "weight": 138,
-      "wrestler_id": "35205074132",
-      "name": "John Jerred Del Carmen",
-      "grade": 9,
-      "wins": 16,
-      "losses": 14,
-      "top25_wins": 0,
-      "bonus_rate": 0.929
-    },
-    {
-      "weight": 138,
       "wrestler_id": "35672810132",
       "name": "riley mcdonough",
       "grade": null,
       "wins": 0,
       "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 144,
+      "wrestler_id": "35205186132",
+      "name": "Conner Zurschmeide",
+      "grade": 9,
+      "wins": 0,
+      "losses": 4,
       "top25_wins": 0,
       "bonus_rate": 0.0
     },
@@ -514,9 +514,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 30.5,
+  "team_xTP_simple": 30.0,
   "team_metrics": {
-    "projected_state_points": 30.5,
+    "projected_state_points": 30.0,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -526,30 +526,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 192,
-      "losses": 70
+      "wins": 221,
+      "losses": 92
     },
     "top33": {
       "wins": 40,
-      "losses": 57
+      "losses": 66
     },
     "top10": {
       "wins": 10,
-      "losses": 25
+      "losses": 27
     },
     "bonus_rate": {
-      "value": 0.959,
-      "rank": 109,
+      "value": 0.893,
+      "rank": 75,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.775,
-      "rank": 112,
+      "value": 0.73,
+      "rank": 91,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.118,
-      "rank": 62,
+      "value": 0.102,
+      "rank": 53,
       "rank_scope": "league"
     }
   }
