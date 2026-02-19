@@ -6,10 +6,10 @@
   "team_rank": 3,
   "weight_class": 175,
   "year": 2026,
-  "current_rank": 35,
+  "current_rank": 97,
   "record": {
-    "overall": "4-5",
-    "vs_ranked": "3-1",
+    "overall": "4-6",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -28,23 +28,38 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34992816132",
-      "opponent_rank": 55,
+      "opponent_rank": 67,
       "opponent_name": "George McClure",
       "method": "Fall 2:41"
     },
     "worst_loss": {
-      "opponent_id": "35207986132",
-      "opponent_rank": 12,
-      "opponent_name": "Ethan Peckenpaugh",
-      "method": "Fall 0:00"
+      "opponent_id": "35017750132",
+      "opponent_rank": 44,
+      "opponent_name": "Jacob Hammonds",
+      "method": "Fall 1:33"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35017750132",
+      "opponent_name": "Jacob Hammonds",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 39,
+      "opponent_weight": 175,
+      "opponent_rank": 44,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:33",
+      "event": "2026 Kentucky JV State Tournament"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "34992816132",
@@ -52,7 +67,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 175,
-      "opponent_rank": 55,
+      "opponent_rank": 67,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -125,9 +140,9 @@
       "opponent_id": "35221008132",
       "opponent_name": "Westin Carner",
       "opponent_team": "Caldwell County",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 41,
       "opponent_weight": 165,
-      "opponent_rank": 88,
+      "opponent_rank": 90,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -140,7 +155,7 @@
       "opponent_id": "35520804132",
       "opponent_name": "Isaiah Messer Cruz",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 77,
       "opponent_weight": 165,
       "opponent_rank": 70,
       "weight_class": "175",
@@ -155,9 +170,9 @@
       "opponent_id": "35207986132",
       "opponent_name": "Ethan Peckenpaugh",
       "opponent_team": "Henderson County",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 34,
       "opponent_weight": 175,
-      "opponent_rank": 12,
+      "opponent_rank": 11,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
@@ -196,7 +211,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Union County",
-      "record": "4-5",
+      "record": "4-6",
       "regional_place": null,
       "state_place": null
     },
@@ -227,13 +242,8 @@
   ],
   "career_record": {
     "wins": 16,
-    "losses": 18,
-    "win_pct": 0.471
+    "losses": 19,
+    "win_pct": 0.457
   },
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4609375
-  }
+  "profile_generated_at": "2026-02-19"
 }

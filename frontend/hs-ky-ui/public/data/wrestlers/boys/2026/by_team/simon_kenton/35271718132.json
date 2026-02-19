@@ -6,9 +6,9 @@
   "team_rank": 19,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 129,
+  "current_rank": 139,
   "record": {
-    "overall": "4-6",
+    "overall": "6-12",
     "vs_ranked": "1-5",
     "vs_top10": "0-2",
     "vs_top25": "0-3"
@@ -24,7 +24,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,18 +33,93 @@
     "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35652499132",
-      "opponent_rank": 255,
+      "opponent_rank": 259,
       "opponent_name": "William Kimberlin",
       "method": "Fall 1:12"
     },
     "worst_loss": {
       "opponent_id": "35663468132",
-      "opponent_rank": 242,
+      "opponent_rank": 247,
       "opponent_name": "Leonard Cammacho",
       "method": "Fall 2:15"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-14",
+      "opponent_id": "OUTSTATE_02ecd0af22f4",
+      "opponent_name": "James Smith",
+      "opponent_team": "Greeneview High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Dixie Invitational"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "36423465132",
+      "opponent_name": "Gram Dritz",
+      "opponent_team": "Thomas Worthington High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Dixie Invitational"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "OUTSTATE_b437e80a0359",
+      "opponent_name": "Remmy Longellow",
+      "opponent_team": "National Trail High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "0:00",
+      "event": "Dixie Invitational"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "OUTSTATE_75e54dab1663",
+      "opponent_name": "Chance Rhodes",
+      "opponent_team": "Brookville High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Dixie Invitational"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "OUTSTATE_2992caab6634",
+      "opponent_name": "Unknown",
+      "opponent_team": "Bethel Local Schools",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bethel Local Schools"
+    },
     {
       "date": "2026-02-07",
       "opponent_id": "OUTSTATE_5887447b5644",
@@ -61,11 +136,56 @@
       "event": "vs. Little Miami High School"
     },
     {
+      "date": "2026-02-07",
+      "opponent_id": "OUTSTATE_28076603756b",
+      "opponent_name": "Jerome Davis",
+      "opponent_team": "Loveland High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Loveland High School"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "OUTSTATE_f1860900519c",
+      "opponent_name": "Mackson Calvin",
+      "opponent_team": "Lakota East High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Lakota East High School"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "OUTSTATE_4965f23aae73",
+      "opponent_name": "Ezra Skinner",
+      "opponent_team": "Sheridan High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Sheridan High School"
+    },
+    {
       "date": "2026-02-04",
       "opponent_id": "35488260132",
       "opponent_name": "Emilio Rodriguez",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 43,
       "opponent_weight": 120,
       "opponent_rank": 12,
       "weight_class": "120",
@@ -110,7 +230,7 @@
       "opponent_id": "OUTSTATE_37179eaadbce",
       "opponent_name": "Unknown",
       "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 103,
+      "opponent_team_rank": 101,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "120",
@@ -125,7 +245,7 @@
       "opponent_id": "OUTSTATE_fa7f930d70be",
       "opponent_name": "Unknown",
       "opponent_team": "Franklin County",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 46,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "120",
@@ -155,9 +275,9 @@
       "opponent_id": "34988586132",
       "opponent_name": "Logan Greenway",
       "opponent_team": "Conner",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 33,
       "opponent_weight": 126,
-      "opponent_rank": 62,
+      "opponent_rank": 63,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -173,7 +293,7 @@
       "opponent_team": "Ryle",
       "opponent_team_rank": 10,
       "opponent_weight": 126,
-      "opponent_rank": 255,
+      "opponent_rank": 259,
       "weight_class": "126",
       "result": "W",
       "method": "FALL",
@@ -189,7 +309,7 @@
       "opponent_team": "Ryle",
       "opponent_team_rank": 10,
       "opponent_weight": 132,
-      "opponent_rank": 242,
+      "opponent_rank": 247,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -211,15 +331,15 @@
       "season": 2026,
       "grade": 9,
       "team": "Simon Kenton",
-      "record": "4-6",
+      "record": "6-12",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 4,
-    "losses": 6,
-    "win_pct": 0.4
+    "wins": 6,
+    "losses": 12,
+    "win_pct": 0.333
   },
-  "profile_generated_at": "2026-02-12"
+  "profile_generated_at": "2026-02-19"
 }

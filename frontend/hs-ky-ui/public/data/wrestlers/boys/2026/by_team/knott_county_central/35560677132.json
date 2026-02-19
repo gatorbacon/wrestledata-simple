@@ -3,13 +3,13 @@
   "name": "Isreal Bentley",
   "team": "Knott County Central",
   "team_slug": "knott_county_central",
-  "team_rank": 96,
+  "team_rank": 94,
   "weight_class": 132,
   "year": 2026,
-  "current_rank": 250,
+  "current_rank": 206,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,12 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "37133355132",
+      "opponent_rank": 184,
+      "opponent_name": "Bailey Poore",
+      "method": "Fall 0:00"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-12"
+  "match_list": [
+    {
+      "date": "2026-02-13",
+      "opponent_id": "37133355132",
+      "opponent_name": "Bailey Poore",
+      "opponent_team": "East Ridge",
+      "opponent_team_rank": 74,
+      "opponent_weight": 132,
+      "opponent_rank": 184,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Knott County Central"
+    }
+  ],
+  "profile_generated_at": "2026-02-19"
 }

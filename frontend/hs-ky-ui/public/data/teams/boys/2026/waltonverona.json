@@ -21,19 +21,19 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-18T22:09:30.472740Z",
+  "generated_at_utc": "2026-02-19T18:58:42.218327Z",
   "starters": {
     "113": {
       "weight": 113,
       "wrestler_id": "35528546132",
       "name": "Braylon Ryan",
-      "current_rank": 11,
+      "current_rank": 13,
       "grade": 8,
-      "xtp": 5.48,
-      "xtp_p": 1.4,
-      "xtp_a": 1.47,
-      "xtp_b": 2.61,
-      "xtp_simple": 3.0,
+      "xtp": 4.72,
+      "xtp_p": 1.16,
+      "xtp_a": 1.37,
+      "xtp_b": 2.19,
+      "xtp_simple": 2.5,
       "top10_record": {
         "wins": 0,
         "losses": 4
@@ -51,7 +51,7 @@
       "weight": 126,
       "wrestler_id": "35528996132",
       "name": "Colin Brock",
-      "current_rank": 172,
+      "current_rank": 181,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -75,7 +75,7 @@
       "weight": 132,
       "wrestler_id": "35528711132",
       "name": "Levi Tilley",
-      "current_rank": 248,
+      "current_rank": 253,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -99,7 +99,7 @@
       "weight": 138,
       "wrestler_id": "35528619132",
       "name": "Braydon Donato",
-      "current_rank": 124,
+      "current_rank": 123,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -125,10 +125,10 @@
       "name": "Boone Sawyer",
       "current_rank": 27,
       "grade": 10,
-      "xtp": 1.47,
+      "xtp": 1.56,
       "xtp_p": 0.2,
       "xtp_a": 0.54,
-      "xtp_b": 0.73,
+      "xtp_b": 0.82,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -138,16 +138,40 @@
         "wins": 0,
         "losses": 5
       },
-      "wins": 20,
+      "wins": 21,
       "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.765
+      "bonus_rate": 0.778
+    },
+    "150": {
+      "weight": 150,
+      "wrestler_id": "35528825132",
+      "name": "Zane Schwanenberger",
+      "current_rank": 156,
+      "grade": 7,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "wins": 5,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
     },
     "165": {
       "weight": 165,
       "wrestler_id": "35529017132",
       "name": "Dylan Looney",
-      "current_rank": 138,
+      "current_rank": 139,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -160,7 +184,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 9
+        "losses": 8
       },
       "wins": 16,
       "losses": 20,
@@ -198,21 +222,11 @@
       "losses": 0,
       "top25_wins": 0,
       "bonus_rate": 0.0
-    },
-    {
-      "weight": 144,
-      "wrestler_id": "35528825132",
-      "name": "Zane Schwanenberger",
-      "grade": 7,
-      "wins": 5,
-      "losses": 7,
-      "top25_wins": 0,
-      "bonus_rate": 0.5
     }
   ],
-  "team_xTP_simple": 3.0,
+  "team_xTP_simple": 2.5,
   "team_metrics": {
-    "projected_state_points": 3.0,
+    "projected_state_points": 2.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -222,30 +236,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 63,
-      "losses": 54
+      "wins": 69,
+      "losses": 62
     },
     "top33": {
       "wins": 5,
-      "losses": 23
+      "losses": 25
     },
     "top10": {
       "wins": 0,
       "losses": 11
     },
     "bonus_rate": {
-      "value": 0.75,
+      "value": 0.746,
       "rank": 143,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.518,
+      "value": 0.508,
       "rank": 144,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.179,
-      "rank": 11,
+      "value": 0.169,
+      "rank": 13,
       "rank_scope": "league"
     }
   }

@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,22 +24,37 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35850458132",
-      "opponent_rank": 42,
-      "opponent_name": "Amos Blankenship",
+      "opponent_id": "35640091132",
+      "opponent_rank": 14,
+      "opponent_name": "Cameron Green",
       "method": "Fall 0:00"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-02-10",
+      "opponent_id": "35640091132",
+      "opponent_name": "Cameron Green",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 47,
+      "opponent_weight": 175,
+      "opponent_rank": 14,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Cabell Midland"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "35850458132",
@@ -47,7 +62,7 @@
       "opponent_team": "Boyd County",
       "opponent_team_rank": 13,
       "opponent_weight": 175,
-      "opponent_rank": 42,
+      "opponent_rank": 40,
       "weight_class": "175",
       "result": "W",
       "method": "FALL",
@@ -56,10 +71,5 @@
       "event": "vs. Cabell Midland"
     }
   ],
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.4609375
-  }
+  "profile_generated_at": "2026-02-19"
 }

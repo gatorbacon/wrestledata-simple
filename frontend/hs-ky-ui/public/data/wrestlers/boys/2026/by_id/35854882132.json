@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "2-0",
-    "vs_ranked": "2-0",
+    "overall": "3-0",
+    "vs_ranked": "3-0",
     "vs_top10": "2-0",
     "vs_top25": "2-0"
   },
@@ -21,13 +21,13 @@
     "df_plus": 100.0,
     "apr_plus": 100.0,
     "pin_rate": 0.0,
-    "bonus_rate": 0.5,
+    "bonus_rate": 0.667,
     "majors": 0,
-    "techs": 1,
+    "techs": 2,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 0,
     "top10_wins": 2,
     "top10_losses": 0,
@@ -40,6 +40,21 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-02-13",
+      "opponent_id": "34988553132",
+      "opponent_name": "Aiden Masteller",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 33,
+      "opponent_weight": 138,
+      "opponent_rank": 59,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "2:36",
+      "event": "vs. Arch Bishop Moeller High School"
+    },
     {
       "date": "2025-12-21",
       "opponent_id": "35663672132",
@@ -60,7 +75,7 @@
       "opponent_id": "35640061132",
       "opponent_name": "Blake Murdock",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 47,
       "opponent_weight": 138,
       "opponent_rank": 5,
       "weight_class": "138",
@@ -71,10 +86,5 @@
       "event": "SWOWCA"
     }
   ],
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 1.5,
-    "top33_bonus_ev_shrunk": 1.293103448275862
-  }
+  "profile_generated_at": "2026-02-19"
 }

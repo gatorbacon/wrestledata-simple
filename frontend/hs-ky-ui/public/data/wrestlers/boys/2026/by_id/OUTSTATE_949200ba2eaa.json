@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "1-0"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,31 +28,46 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35663338132",
-      "opponent_rank": 24,
+      "opponent_rank": 27,
       "opponent_name": "Ethan Berhe",
       "method": "Fall 0:00"
     },
     "worst_loss": {
-      "opponent_id": "34992058132",
-      "opponent_rank": 30,
-      "opponent_name": "Aiden Behnken",
-      "method": "Fall 0:44"
+      "opponent_id": "35398418132",
+      "opponent_rank": 44,
+      "opponent_name": "Calvin Votel",
+      "method": "Fall 3:50"
     }
   },
   "match_list": [
     {
       "date": "2025-12-20",
+      "opponent_id": "35398418132",
+      "opponent_name": "Calvin Votel",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": 6,
+      "opponent_weight": 126,
+      "opponent_rank": 44,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:50",
+      "event": "Phil Thrasher Tournament"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "34992058132",
       "opponent_name": "Aiden Behnken",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 132,
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -67,7 +82,7 @@
       "opponent_team": "Ryle",
       "opponent_team_rank": 10,
       "opponent_weight": 126,
-      "opponent_rank": 24,
+      "opponent_rank": 27,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -76,10 +91,5 @@
       "event": "vs. Corydon Central"
     }
   ],
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1176470588235294
-  }
+  "profile_generated_at": "2026-02-19"
 }

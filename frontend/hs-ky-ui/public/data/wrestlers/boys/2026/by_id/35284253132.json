@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": 20,
   "record": {
-    "overall": "9-3",
-    "vs_ranked": "3-3",
-    "vs_top10": "0-2",
-    "vs_top25": "3-3"
+    "overall": "10-4",
+    "vs_ranked": "3-4",
+    "vs_top10": "0-3",
+    "vs_top25": "2-4"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,9 +28,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35562997132",
       "opponent_rank": 23,
@@ -39,12 +39,27 @@
     },
     "worst_loss": {
       "opponent_id": "35040568132",
-      "opponent_rank": 12,
+      "opponent_rank": 13,
       "opponent_name": "Andrew Pomeroy",
       "method": "Dec 6-4"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35045492132",
+      "opponent_name": "GAVYN KINLEY",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 22,
+      "opponent_weight": 150,
+      "opponent_rank": 7,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trinity (Louisville)"
+    },
     {
       "date": "2026-02-07",
       "opponent_id": "35122061132",
@@ -65,7 +80,7 @@
       "opponent_id": "OUTSTATE_60d9f28b334a",
       "opponent_name": "Unknown",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 48,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "150",
@@ -125,7 +140,7 @@
       "opponent_id": "35212703132",
       "opponent_name": "Joel Vontae Stanley Jr.",
       "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 118,
+      "opponent_team_rank": 117,
       "opponent_weight": 144,
       "opponent_rank": 24,
       "weight_class": "144",
@@ -140,7 +155,7 @@
       "opponent_id": "OUTSTATE_1151505a60f6",
       "opponent_name": "Unknown",
       "opponent_team": "Ballard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 56,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "144",
@@ -149,6 +164,21 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Ballard"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_a3e8999d5d7a",
+      "opponent_name": "Unknown",
+      "opponent_team": "Atherton",
+      "opponent_team_rank": 14,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Atherton"
     },
     {
       "date": "2025-12-30",
@@ -170,9 +200,9 @@
       "opponent_id": "35040568132",
       "opponent_name": "Andrew Pomeroy",
       "opponent_team": "Male",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 49,
       "opponent_weight": 144,
-      "opponent_rank": 12,
+      "opponent_rank": 13,
       "weight_class": "150",
       "result": "L",
       "method": "DEC",
@@ -185,9 +215,9 @@
       "opponent_id": "34989007132",
       "opponent_name": "Kaden Coy",
       "opponent_team": "Ohio County",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 50,
       "opponent_weight": 150,
-      "opponent_rank": 25,
+      "opponent_rank": 27,
       "weight_class": "150",
       "result": "W",
       "method": "DEC",
@@ -225,7 +255,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Trinity (Louisville)",
-      "record": "9-3",
+      "record": "10-4",
       "regional_place": null,
       "state_place": null
     },
@@ -247,14 +277,9 @@
     }
   ],
   "career_record": {
-    "wins": 37,
-    "losses": 30,
-    "win_pct": 0.552
+    "wins": 38,
+    "losses": 31,
+    "win_pct": 0.551
   },
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 1.0,
-    "top33_bonus_ev_shrunk": 1.0666666666666669
-  }
+  "profile_generated_at": "2026-02-19"
 }

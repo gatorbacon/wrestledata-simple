@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "3-0",
+    "vs_ranked": "3-0",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -23,43 +23,68 @@
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 1,
+    "techs": 3,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "34988553132",
-      "opponent_rank": 63,
-      "opponent_name": "Aiden Masteller",
-      "method": "TF 17-2 0:00"
+      "opponent_id": "35640061132",
+      "opponent_rank": 5,
+      "opponent_name": "Blake Murdock",
+      "method": "TF 19-2 0:00"
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-02-07",
+      "opponent_id": "35214960132",
+      "opponent_name": "Kai Herr",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 5,
+      "opponent_weight": 138,
+      "opponent_rank": 79,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "20-2",
+      "duration": "1:37",
+      "event": "vs. Wilmington High School"
+    },
+    {
       "date": "2026-01-10",
       "opponent_id": "34988553132",
       "opponent_name": "Aiden Masteller",
       "opponent_team": "Conner",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 33,
       "opponent_weight": 138,
-      "opponent_rank": 63,
+      "opponent_rank": 59,
       "weight_class": "138",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
       "event": "Bellbrook Invite"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35640061132",
+      "opponent_name": "Blake Murdock",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 47,
+      "opponent_weight": 138,
+      "opponent_rank": 5,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "19-2",
+      "duration": "0:00",
+      "event": "GMVWA Invitational"
     }
   ],
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2672413793103448
-  }
+  "profile_generated_at": "2026-02-19"
 }

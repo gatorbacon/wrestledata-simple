@@ -8,8 +8,8 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "1-0"
   },
@@ -24,16 +24,16 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34992810132",
-      "opponent_rank": 17,
+      "opponent_rank": 16,
       "opponent_name": "Kamarius Ziesmer",
       "method": "Fall 0:00"
     },
@@ -47,7 +47,22 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 144,
-      "opponent_rank": 17,
+      "opponent_rank": 16,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "GMVWA Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35640766132",
+      "opponent_name": "Deacon Joseph",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 47,
+      "opponent_weight": 150,
+      "opponent_rank": 80,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
@@ -56,10 +71,5 @@
       "event": "GMVWA Invitational"
     }
   ],
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.0518518518518518
-  }
+  "profile_generated_at": "2026-02-19"
 }

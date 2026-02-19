@@ -3,7 +3,7 @@
   "name": "Sammy Cain",
   "team": "Great Crossing",
   "team_slug": "great_crossing",
-  "team_rank": 48,
+  "team_rank": 47,
   "weight_class": 138,
   "year": 2026,
   "current_rank": 188,
@@ -11,7 +11,7 @@
     "overall": "1-8",
     "vs_ranked": "1-8",
     "vs_top10": "0-2",
-    "vs_top25": "0-3"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -65,7 +65,7 @@
       "opponent_id": "35156196132",
       "opponent_name": "Elijah Adams",
       "opponent_team": "Taylor County",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 38,
       "opponent_weight": 138,
       "opponent_rank": 31,
       "weight_class": "138",
@@ -80,9 +80,9 @@
       "opponent_id": "35225527132",
       "opponent_name": "Keith Johnson",
       "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": 82,
+      "opponent_team_rank": 80,
       "opponent_weight": 132,
-      "opponent_rank": 18,
+      "opponent_rank": 27,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -96,9 +96,9 @@
       "opponent_id": "35321129132",
       "opponent_name": "Jared Pierce",
       "opponent_team": "North Bullitt",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 111,
       "opponent_weight": 138,
-      "opponent_rank": 77,
+      "opponent_rank": 72,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -112,7 +112,7 @@
       "opponent_id": "35397798132",
       "opponent_name": "Dennis Frimpong",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 48,
       "opponent_weight": 132,
       "opponent_rank": 139,
       "weight_class": "138",
@@ -125,12 +125,28 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35886049132",
+      "opponent_name": "brenden little",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 30,
+      "opponent_weight": 132,
+      "opponent_rank": 100,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "14-0",
+      "duration": "7:00",
+      "event": "vs. Wayne County",
+      "mv_impact": -4.33
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35247375132",
       "opponent_name": "Shawn Hardin",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 105,
       "opponent_weight": 138,
-      "opponent_rank": 116,
+      "opponent_rank": 112,
       "weight_class": "138",
       "result": "L",
       "method": "TF",
@@ -170,22 +186,6 @@
       "duration": "0:32",
       "event": "vs. Thomas Nelson",
       "mv_impact": -6.55
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35886049132",
-      "opponent_name": "brenden little",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": 30,
-      "opponent_weight": 138,
-      "opponent_rank": 58,
-      "weight_class": "138",
-      "result": "L",
-      "method": "MD",
-      "score": "14-0",
-      "duration": "7:00",
-      "event": "vs. Wayne County",
-      "mv_impact": -4.33
     }
   ],
   "career": {
@@ -210,10 +210,5 @@
     "losses": 8,
     "win_pct": 0.111
   },
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2672413793103448
-  }
+  "profile_generated_at": "2026-02-19"
 }

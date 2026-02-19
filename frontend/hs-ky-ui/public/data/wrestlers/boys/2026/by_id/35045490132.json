@@ -6,12 +6,12 @@
   "team_rank": 22,
   "weight_class": 120,
   "year": 2026,
-  "current_rank": 102,
+  "current_rank": 13,
   "record": {
-    "overall": "3-4",
-    "vs_ranked": "1-4",
+    "overall": "7-4",
+    "vs_ranked": "3-4",
     "vs_top10": "0-2",
-    "vs_top25": "0-4"
+    "vs_top25": "1-4"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,22 +20,22 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
+    "pin_rate": 0.8,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 3,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "34989474132",
-      "opponent_rank": 128,
-      "opponent_name": "Colton Reed",
-      "method": "Fall 1:27"
+      "opponent_id": "35884162132",
+      "opponent_rank": 15,
+      "opponent_name": "chase quetone",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35488260132",
@@ -46,11 +46,71 @@
   },
   "match_list": [
     {
+      "date": "2026-02-12",
+      "opponent_id": "35884162132",
+      "opponent_name": "chase quetone",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 30,
+      "opponent_weight": 120,
+      "opponent_rank": 15,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2026-02-12",
+      "opponent_id": "OUTSTATE_da57d6ecb7ed",
+      "opponent_name": "Unknown",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 68,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Corbin"
+    },
+    {
+      "date": "2026-02-12",
+      "opponent_id": "OUTSTATE_b8d1490a1654",
+      "opponent_name": "Unknown",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": 139,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35284129132",
+      "opponent_name": "Kingston Smith",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 133,
+      "opponent_weight": 113,
+      "opponent_rank": 79,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trinity (Louisville)"
+    },
+    {
       "date": "2026-02-07",
       "opponent_id": "34988547132",
       "opponent_name": "Keaton Dicken",
       "opponent_team": "Conner",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 33,
       "opponent_weight": 120,
       "opponent_rank": 7,
       "weight_class": "120",
@@ -67,7 +127,7 @@
       "opponent_team": "Campbell County",
       "opponent_team_rank": 8,
       "opponent_weight": 113,
-      "opponent_rank": 128,
+      "opponent_rank": 126,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
@@ -80,7 +140,7 @@
       "opponent_id": "35488260132",
       "opponent_name": "Emilio Rodriguez",
       "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 43,
       "opponent_weight": 120,
       "opponent_rank": 12,
       "weight_class": "120",
@@ -140,7 +200,7 @@
       "opponent_id": "35051530132",
       "opponent_name": "Brycen Gray",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 53,
       "opponent_weight": 120,
       "opponent_rank": 11,
       "weight_class": "120",
@@ -165,7 +225,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Madison Central",
-      "record": "3-4",
+      "record": "7-4",
       "regional_place": null,
       "state_place": null
     },
@@ -187,14 +247,9 @@
     }
   ],
   "career_record": {
-    "wins": 22,
+    "wins": 26,
     "losses": 16,
-    "win_pct": 0.579
+    "win_pct": 0.619
   },
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.3104591836734694
-  }
+  "profile_generated_at": "2026-02-19"
 }

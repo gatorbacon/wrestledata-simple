@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34995986132",
-      "opponent_rank": 29,
+      "opponent_rank": 28,
       "opponent_name": "Alexander Goodin",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "34995976132",
-      "opponent_rank": 29,
+      "opponent_rank": 31,
       "opponent_name": "Hunter Goodin",
       "method": "Fall 0:00"
     }
@@ -50,9 +50,9 @@
       "opponent_id": "35283899132",
       "opponent_name": "Caleb Roth",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 75,
       "opponent_weight": 144,
-      "opponent_rank": 35,
+      "opponent_rank": 34,
       "weight_class": "150",
       "result": "W",
       "method": "TF",
@@ -65,11 +65,26 @@
       "opponent_id": "34995976132",
       "opponent_name": "Hunter Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 60,
       "opponent_weight": 150,
-      "opponent_rank": 29,
+      "opponent_rank": 31,
       "weight_class": "150",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Jeffersonville"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35284252132",
+      "opponent_name": "Eli Senn",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 75,
+      "opponent_weight": 285,
+      "opponent_rank": 126,
+      "weight_class": "285",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -80,9 +95,9 @@
       "opponent_id": "34995986132",
       "opponent_name": "Alexander Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 60,
       "opponent_weight": 215,
-      "opponent_rank": 29,
+      "opponent_rank": 28,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -95,25 +110,10 @@
       "opponent_id": "35746100132",
       "opponent_name": "Ayden Sorrels",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 75,
       "opponent_weight": 215,
-      "opponent_rank": 254,
+      "opponent_rank": 256,
       "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Jeffersonville"
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35284252132",
-      "opponent_name": "Eli Senn",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": 76,
-      "opponent_weight": 285,
-      "opponent_rank": 124,
-      "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -121,10 +121,5 @@
       "event": "vs. Jeffersonville"
     }
   ],
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2019230769230769
-  }
+  "profile_generated_at": "2026-02-19"
 }

@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35640813132",
-      "opponent_rank": 236,
+      "opponent_rank": 225,
       "opponent_name": "Jacob Fryman",
       "method": "TF 21-5 0:00"
     },
     "worst_loss": {
       "opponent_id": "35271153132",
-      "opponent_rank": 19,
+      "opponent_rank": 22,
       "opponent_name": "Parker Smith",
       "method": "TF 18-1 0:00"
     }
@@ -47,39 +47,34 @@
   "match_list": [
     {
       "date": "2025-12-13",
-      "opponent_id": "35640813132",
-      "opponent_name": "Jacob Fryman",
-      "opponent_team": "Great Crossing",
-      "opponent_team_rank": 48,
-      "opponent_weight": 157,
-      "opponent_rank": 236,
-      "weight_class": "157",
-      "result": "W",
-      "method": "TF",
-      "score": "21-5",
-      "duration": "0:00",
-      "event": "Edgewood Invitational"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35271153132",
       "opponent_name": "Parker Smith",
       "opponent_team": "Simon Kenton",
       "opponent_team_rank": 19,
-      "opponent_weight": 157,
-      "opponent_rank": 19,
+      "opponent_weight": 150,
+      "opponent_rank": 22,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "0:00",
       "event": "Edgewood Invitational"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35640813132",
+      "opponent_name": "Jacob Fryman",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 47,
+      "opponent_weight": 157,
+      "opponent_rank": 225,
+      "weight_class": "157",
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "0:00",
+      "event": "Edgewood Invitational"
     }
   ],
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9642857142857143
-  }
+  "profile_generated_at": "2026-02-19"
 }

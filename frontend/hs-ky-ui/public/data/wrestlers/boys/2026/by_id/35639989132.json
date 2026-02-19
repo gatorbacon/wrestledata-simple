@@ -3,13 +3,13 @@
   "name": "Michael Peterson",
   "team": "Harlan County",
   "team_slug": "harlan_county",
-  "team_rank": 88,
+  "team_rank": 86,
   "weight_class": 190,
   "year": 2026,
-  "current_rank": 212,
+  "current_rank": 164,
   "record": {
-    "overall": "0-6",
-    "vs_ranked": "0-5",
+    "overall": "2-6",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,18 +20,23 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 0,
-    "pins": 0
+    "techs": 1,
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35454634132",
+      "opponent_rank": 112,
+      "opponent_name": "Colton Jones",
+      "method": "Fall 0:00"
+    },
     "worst_loss": {
       "opponent_id": "35420763132",
       "opponent_rank": 76,
@@ -45,9 +50,9 @@
       "opponent_id": "34995989132",
       "opponent_name": "Grayson Malicoat",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 60,
       "opponent_weight": 175,
-      "opponent_rank": 43,
+      "opponent_rank": 41,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -57,29 +62,43 @@
       "mv_impact": -5.11
     },
     {
-      "date": "2025-12-20",
-      "opponent_id": "36019523132",
-      "opponent_name": "Hagen Samuel",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": 41,
+      "date": "2026-01-03",
+      "opponent_id": "35434035132",
+      "opponent_name": "Levi Jones",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 130,
       "opponent_weight": 190,
-      "opponent_rank": 29,
+      "opponent_rank": 116,
       "weight_class": "190",
-      "result": "L",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "Maroon`s New Year Brawl"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35454634132",
+      "opponent_name": "Colton Jones",
+      "opponent_team": "Knox Central",
+      "opponent_team_rank": 95,
+      "opponent_weight": 190,
+      "opponent_rank": 112,
+      "weight_class": "190",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "2:55",
-      "event": "Bobby Bates Wrestling Classic",
-      "mv_impact": -3.16
+      "duration": "0:00",
+      "event": "Maroon`s New Year Brawl"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35721858132",
       "opponent_name": "Brody Hicks",
       "opponent_team": "Prestonsburg",
-      "opponent_team_rank": 119,
-      "opponent_weight": 190,
-      "opponent_rank": 74,
+      "opponent_team_rank": 118,
+      "opponent_weight": 175,
+      "opponent_rank": 75,
       "weight_class": "190",
       "result": "L",
       "method": "FALL",
@@ -87,6 +106,22 @@
       "duration": "1:58",
       "event": "Bobby Bates Wrestling Classic",
       "mv_impact": -6.14
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "36019523132",
+      "opponent_name": "Hagen Samuel",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": 39,
+      "opponent_weight": 190,
+      "opponent_rank": 28,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:55",
+      "event": "Bobby Bates Wrestling Classic",
+      "mv_impact": -3.16
     },
     {
       "date": "2025-12-06",
@@ -109,7 +144,7 @@
       "opponent_id": "35013055132",
       "opponent_name": "Kasey Conley",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 115,
+      "opponent_team_rank": 114,
       "opponent_weight": 190,
       "opponent_rank": 40,
       "weight_class": "190",
@@ -136,7 +171,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Harlan County",
-      "record": "0-6",
+      "record": "2-6",
       "regional_place": null,
       "state_place": null
     },
@@ -166,14 +201,9 @@
     }
   ],
   "career_record": {
-    "wins": 10,
+    "wins": 12,
     "losses": 35,
-    "win_pct": 0.222
+    "win_pct": 0.255
   },
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8875968992248061
-  }
+  "profile_generated_at": "2026-02-19"
 }

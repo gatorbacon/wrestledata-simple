@@ -3,15 +3,15 @@
   "name": "DJ Wilson",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 28,
+  "team_rank": 27,
   "weight_class": 190,
   "year": 2026,
   "current_rank": 2,
   "record": {
-    "overall": "25-7",
-    "vs_ranked": "6-1",
+    "overall": "27-8",
+    "vs_ranked": "8-2",
     "vs_top10": "1-1",
-    "vs_top25": "2-1"
+    "vs_top25": "3-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,15 +20,15 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.636,
-    "bonus_rate": 0.955,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.958,
     "majors": 4,
     "techs": 3,
-    "pins": 14
+    "pins": 16
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 1,
+    "ranked_wins": 8,
+    "ranked_losses": 2,
     "top10_wins": 1,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -38,10 +38,10 @@
       "method": "MD 12-0"
     },
     "worst_loss": {
-      "opponent_id": "34993728132",
-      "opponent_rank": 1,
-      "opponent_name": "Brock Sexton",
-      "method": "Dec 7-5"
+      "opponent_id": "35751941132",
+      "opponent_rank": 38,
+      "opponent_name": "Gabriel Blackburn",
+      "method": "Inj. [time]"
     }
   },
   "match_list": [
@@ -52,7 +52,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 1,
       "opponent_weight": 175,
-      "opponent_rank": 55,
+      "opponent_rank": 67,
       "weight_class": "190",
       "result": "W",
       "method": "FALL",
@@ -65,7 +65,7 @@
       "opponent_id": "35611425132",
       "opponent_name": "Bryton Tye",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 68,
       "opponent_weight": 190,
       "opponent_rank": 45,
       "weight_class": "190",
@@ -73,6 +73,21 @@
       "method": "FALL",
       "score": null,
       "duration": "0:57",
+      "event": "vs. Paducah Tilghman"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35751941132",
+      "opponent_name": "Gabriel Blackburn",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 190,
+      "opponent_rank": 38,
+      "weight_class": "190",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
       "event": "vs. Paducah Tilghman"
     },
     {
@@ -170,9 +185,9 @@
       "opponent_id": "35458688132",
       "opponent_name": "Joshua Frost",
       "opponent_team": "Calloway County",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 42,
       "opponent_weight": 215,
-      "opponent_rank": 16,
+      "opponent_rank": 14,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -185,9 +200,9 @@
       "opponent_id": "35521021132",
       "opponent_name": "Jaeden Carolina",
       "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 77,
       "opponent_weight": 215,
-      "opponent_rank": 53,
+      "opponent_rank": 52,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -227,6 +242,21 @@
     },
     {
       "date": "2026-01-03",
+      "opponent_id": "35640054132",
+      "opponent_name": "Aiden Anderson",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 47,
+      "opponent_weight": 215,
+      "opponent_rank": 41,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "34993728132",
       "opponent_name": "Brock Sexton",
       "opponent_team": "Harrison County",
@@ -242,12 +272,27 @@
     },
     {
       "date": "2026-01-03",
+      "opponent_id": "35122078132",
+      "opponent_name": "Wilbert Rios-Lara",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 215,
+      "opponent_rank": 20,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35051535132",
       "opponent_name": "Elijah Huff",
       "opponent_team": "Woodford County",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 53,
       "opponent_weight": 215,
-      "opponent_rank": 27,
+      "opponent_rank": 26,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -513,7 +558,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Paducah Tilghman",
-      "record": "25-7",
+      "record": "27-8",
       "regional_place": null,
       "state_place": null
     },
@@ -559,9 +604,9 @@
     }
   ],
   "career_record": {
-    "wins": 175,
-    "losses": 53,
-    "win_pct": 0.768
+    "wins": 177,
+    "losses": 54,
+    "win_pct": 0.766
   },
-  "profile_generated_at": "2026-02-12"
+  "profile_generated_at": "2026-02-19"
 }

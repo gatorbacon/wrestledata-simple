@@ -3,15 +3,15 @@
   "name": "Ethan O`Malley",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 28,
+  "team_rank": 27,
   "weight_class": 165,
   "year": 2026,
-  "current_rank": 12,
+  "current_rank": 13,
   "record": {
-    "overall": "24-8",
-    "vs_ranked": "2-2",
-    "vs_top10": "0-2",
-    "vs_top25": "1-2"
+    "overall": "24-9",
+    "vs_ranked": "2-3",
+    "vs_top10": "0-3",
+    "vs_top25": "1-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,9 +28,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35081199132",
       "opponent_rank": 19,
@@ -65,14 +65,29 @@
       "opponent_id": "34997603132",
       "opponent_name": "Jackson Jones",
       "opponent_team": "Corbin",
-      "opponent_team_rank": 69,
-      "opponent_weight": 157,
-      "opponent_rank": 76,
+      "opponent_team_rank": 68,
+      "opponent_weight": 165,
+      "opponent_rank": 107,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:24",
+      "event": "vs. Paducah Tilghman"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35752327132",
+      "opponent_name": "Dalton Matney",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 165,
+      "opponent_rank": 4,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
       "event": "vs. Paducah Tilghman"
     },
     {
@@ -320,7 +335,7 @@
       "opponent_id": "35081199132",
       "opponent_name": "Msabaha Sumaili",
       "opponent_team": "Henry Clay",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 48,
       "opponent_weight": 165,
       "opponent_rank": 19,
       "weight_class": "165",
@@ -556,7 +571,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Paducah Tilghman",
-      "record": "24-8",
+      "record": "24-9",
       "regional_place": null,
       "state_place": null
     },
@@ -587,13 +602,8 @@
   ],
   "career_record": {
     "wins": 80,
-    "losses": 34,
-    "win_pct": 0.702
+    "losses": 35,
+    "win_pct": 0.696
   },
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.6342592592592593
-  }
+  "profile_generated_at": "2026-02-19"
 }

@@ -3,10 +3,10 @@
   "name": "Devan Cooper",
   "team": "Lafayette",
   "team_slug": "lafayette",
-  "team_rank": 99,
+  "team_rank": 97,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 216,
+  "current_rank": 213,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -42,10 +42,26 @@
   "match_list": [
     {
       "date": "2025-12-06",
+      "opponent_id": "35205988132",
+      "opponent_name": "Owen Gravett",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 109,
+      "opponent_weight": 132,
+      "opponent_rank": 75,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "The Beast of the East",
+      "mv_impact": -6.0
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35768114132",
       "opponent_name": "Brennan Laboy",
       "opponent_team": "Fort Knox",
-      "opponent_team_rank": 80,
+      "opponent_team_rank": 78,
       "opponent_weight": 138,
       "opponent_rank": 259,
       "weight_class": "138",
@@ -55,22 +71,6 @@
       "duration": "1:56",
       "event": "The Beast of the East",
       "mv_impact": -8.62
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35205988132",
-      "opponent_name": "Owen Gravett",
-      "opponent_team": "Mercer County",
-      "opponent_team_rank": 111,
-      "opponent_weight": 138,
-      "opponent_rank": 79,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:00",
-      "event": "The Beast of the East",
-      "mv_impact": -6.0
     }
   ],
   "career": {
@@ -95,10 +95,5 @@
     "losses": 2,
     "win_pct": 0.0
   },
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2672413793103448
-  }
+  "profile_generated_at": "2026-02-19"
 }

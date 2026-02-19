@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,16 +28,21 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34988572132",
       "opponent_rank": 37,
       "opponent_name": "Mason Masteller",
       "method": "Fall 1:24"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35398390132",
+      "opponent_rank": 4,
+      "opponent_name": "Parker Wilkens",
+      "method": "TF 19-3 1:47"
+    }
   },
   "match_list": [
     {
@@ -45,7 +50,7 @@
       "opponent_id": "34988572132",
       "opponent_name": "Mason Masteller",
       "opponent_team": "Conner",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 33,
       "opponent_weight": 106,
       "opponent_rank": 37,
       "weight_class": "106",
@@ -54,7 +59,22 @@
       "score": null,
       "duration": "1:24",
       "event": "vs. Elder High School"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35398390132",
+      "opponent_name": "Parker Wilkens",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": 6,
+      "opponent_weight": 106,
+      "opponent_rank": 4,
+      "weight_class": "106",
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "1:47",
+      "event": "vs. Elder High School"
     }
   ],
-  "profile_generated_at": "2026-02-12"
+  "profile_generated_at": "2026-02-19"
 }

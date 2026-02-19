@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -23,23 +23,38 @@
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 1,
+    "techs": 2,
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35896629132",
-      "opponent_rank": 97,
-      "opponent_name": "Kaiden Diaz",
-      "method": "TF 19-3 0:00"
+      "opponent_id": "35640432132",
+      "opponent_rank": 14,
+      "opponent_name": "Joe Carr",
+      "method": "TF 16-1 0:00"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2026-02-10",
+      "opponent_id": "35640432132",
+      "opponent_name": "Joe Carr",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 47,
+      "opponent_weight": 120,
+      "opponent_rank": 14,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "vs. Cabell Midland"
+    },
     {
       "date": "2026-01-17",
       "opponent_id": "35896629132",
@@ -56,5 +71,5 @@
       "event": "vs. Cabell Midland"
     }
   ],
-  "profile_generated_at": "2026-02-12"
+  "profile_generated_at": "2026-02-19"
 }

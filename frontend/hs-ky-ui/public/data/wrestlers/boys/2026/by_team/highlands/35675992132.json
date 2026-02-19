@@ -6,10 +6,10 @@
   "team_rank": 6,
   "weight_class": 106,
   "year": 2026,
-  "current_rank": 84,
+  "current_rank": 112,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-3",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -23,12 +23,12 @@
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
-    "techs": 1,
+    "techs": 2,
     "pins": 0
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -37,7 +37,12 @@
       "opponent_name": "Jeikol Holleran",
       "method": "TF 19-3 3:20"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35135153132",
+      "opponent_rank": 42,
+      "opponent_name": "Makarios Green",
+      "method": "Dec 13-7"
+    }
   },
   "match_list": [
     {
@@ -45,7 +50,7 @@
       "opponent_id": "35108872132",
       "opponent_name": "Jeikol Holleran",
       "opponent_team": "Bardstown",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 106,
       "opponent_rank": 72,
       "weight_class": "106",
@@ -55,6 +60,66 @@
       "duration": "3:20",
       "event": "Phil Thrasher Tournament",
       "mv_impact": 3.65
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35135153132",
+      "opponent_name": "Makarios Green",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 25,
+      "opponent_weight": 106,
+      "opponent_rank": 42,
+      "weight_class": "106",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-7",
+      "duration": "7:00",
+      "event": "Phil Thrasher Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_427f8964df46",
+      "opponent_name": "Nate Reas",
+      "opponent_team": "New Albany",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "3:33",
+      "event": "Phil Thrasher Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_d5db6d399cc2",
+      "opponent_name": "Mason Harmon",
+      "opponent_team": "New Albany",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "Phil Thrasher Tournament"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_0aeaa25fe2bd",
+      "opponent_name": "Jackson Foster",
+      "opponent_team": "Elder High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:44",
+      "event": "vs. Elder High School"
     }
   ],
   "career": {
@@ -69,15 +134,15 @@
       "season": 2026,
       "grade": 8,
       "team": "Highlands",
-      "record": "1-0",
+      "record": "2-3",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 1,
-    "losses": 0,
-    "win_pct": 1.0
+    "wins": 2,
+    "losses": 3,
+    "win_pct": 0.4
   },
-  "profile_generated_at": "2026-02-12"
+  "profile_generated_at": "2026-02-19"
 }

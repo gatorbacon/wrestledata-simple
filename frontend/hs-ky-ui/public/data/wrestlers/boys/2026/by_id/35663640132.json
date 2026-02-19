@@ -6,10 +6,10 @@
   "team_rank": 10,
   "weight_class": 138,
   "year": 2026,
-  "current_rank": 23,
+  "current_rank": 21,
   "record": {
-    "overall": "4-1",
-    "vs_ranked": "3-1",
+    "overall": "5-1",
+    "vs_ranked": "4-1",
     "vs_top10": "0-1",
     "vs_top25": "1-1"
   },
@@ -24,16 +24,16 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "35122068132",
-      "opponent_rank": 25,
+      "opponent_rank": 24,
       "opponent_name": "Paxton Slayton",
       "method": "Fall 1:26"
     },
@@ -46,13 +46,28 @@
   },
   "match_list": [
     {
+      "date": "2026-02-11",
+      "opponent_id": "35488263132",
+      "opponent_name": "Landon Windeler",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 43,
+      "opponent_weight": 138,
+      "opponent_rank": 27,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Ryle"
+    },
+    {
       "date": "2026-02-07",
       "opponent_id": "35001142132",
       "opponent_name": "CJ Hogan",
       "opponent_team": "Central Hardin",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 138,
-      "opponent_rank": 94,
+      "opponent_rank": 89,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -67,7 +82,7 @@
       "opponent_team": "Oldham County",
       "opponent_team_rank": 9,
       "opponent_weight": 138,
-      "opponent_rank": 25,
+      "opponent_rank": 24,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -121,10 +136,5 @@
       "event": "vs. St. Xavier High School"
     }
   ],
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.4814814814814816
-  }
+  "profile_generated_at": "2026-02-19"
 }

@@ -3,13 +3,13 @@
   "name": "Neveah Mason-Taylor",
   "team": "Pleasure Ridge Park",
   "team_slug": "pleasure_ridge_park",
-  "team_rank": 118,
+  "team_rank": 117,
   "weight_class": 126,
   "year": 2026,
-  "current_rank": 256,
+  "current_rank": 187,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "0-1",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,12 +28,33 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "35084053132",
+      "opponent_rank": 106,
+      "opponent_name": "Malachi Dennison",
+      "method": "Fall 2:38"
+    }
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-12"
+  "match_list": [
+    {
+      "date": "2026-02-10",
+      "opponent_id": "35084053132",
+      "opponent_name": "Malachi Dennison",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 56,
+      "opponent_weight": 126,
+      "opponent_rank": 106,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:38",
+      "event": "vs. Pleasure Ridge Park"
+    }
+  ],
+  "profile_generated_at": "2026-02-19"
 }

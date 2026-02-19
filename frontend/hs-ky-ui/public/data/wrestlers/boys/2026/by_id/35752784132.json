@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": 3,
   "record": {
-    "overall": "39-4",
-    "vs_ranked": "8-0",
-    "vs_top10": "2-0",
-    "vs_top25": "3-0"
+    "overall": "39-5",
+    "vs_ranked": "7-1",
+    "vs_top10": "2-1",
+    "vs_top25": "3-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,24 +20,29 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.528,
-    "bonus_rate": 0.861,
+    "pin_rate": 0.543,
+    "bonus_rate": 0.857,
     "majors": 4,
-    "techs": 8,
+    "techs": 7,
     "pins": 19
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
-    "ranked_losses": 0,
+    "ranked_wins": 7,
+    "ranked_losses": 1,
     "top10_wins": 2,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "34993729132",
       "opponent_rank": 5,
       "opponent_name": "Austin Brinegar",
       "method": "TF 19-3 0:00"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "34989037132",
+      "opponent_rank": 2,
+      "opponent_name": "Jaylin Bellamy",
+      "method": "TF 21-5 5:28"
+    }
   },
   "match_list": [
     {
@@ -60,7 +65,7 @@
       "opponent_id": "34993545132",
       "opponent_name": "Kalob Wise",
       "opponent_team": "Moore",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 35,
       "opponent_weight": 144,
       "opponent_rank": 7,
       "weight_class": "144",
@@ -69,6 +74,21 @@
       "score": null,
       "duration": "4:55",
       "event": "vs. Moore"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34989037132",
+      "opponent_name": "Jaylin Bellamy",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 27,
+      "opponent_weight": 144,
+      "opponent_rank": 2,
+      "weight_class": "144",
+      "result": "L",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "5:28",
+      "event": "vs. Paducah Tilghman"
     },
     {
       "date": "2026-01-23",
@@ -405,9 +425,9 @@
       "opponent_id": "34995976132",
       "opponent_name": "Hunter Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 60,
       "opponent_weight": 150,
-      "opponent_rank": 29,
+      "opponent_rank": 31,
       "weight_class": "150",
       "result": "W",
       "method": "TF",
@@ -420,9 +440,9 @@
       "opponent_id": "35247365132",
       "opponent_name": "Bryson Carrington",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 105,
       "opponent_weight": 150,
-      "opponent_rank": 56,
+      "opponent_rank": 45,
       "weight_class": "150",
       "result": "W",
       "method": "TF",
@@ -435,9 +455,9 @@
       "opponent_id": "36011895132",
       "opponent_name": "Lane Osborne",
       "opponent_team": "Russell",
-      "opponent_team_rank": 122,
+      "opponent_team_rank": 121,
       "opponent_weight": 150,
-      "opponent_rank": 40,
+      "opponent_rank": 39,
       "weight_class": "150",
       "result": "W",
       "method": "TF",
@@ -461,28 +481,28 @@
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
-      "date": "2025-12-29",
-      "opponent_id": "35247365132",
-      "opponent_name": "Bryson Carrington",
-      "opponent_team": "Mason County",
-      "opponent_team_rank": 107,
+      "date": "2025-12-20",
+      "opponent_id": "35022264132",
+      "opponent_name": "Lelin Dye",
+      "opponent_team": "Richlands",
+      "opponent_team_rank": null,
       "opponent_weight": 150,
-      "opponent_rank": 56,
+      "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "0:00",
-      "event": "HATFIELD-MCCOY 32"
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "Fallen Heroes"
     },
     {
       "date": "2025-12-20",
       "opponent_id": "35103664132",
       "opponent_name": "Patrick Oliver",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 125,
       "opponent_weight": 150,
-      "opponent_rank": 97,
+      "opponent_rank": 102,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
@@ -548,21 +568,6 @@
       "method": "TF",
       "score": "21-5",
       "duration": "0:00",
-      "event": "Fallen Heroes"
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35022264132",
-      "opponent_name": "Lelin Dye",
-      "opponent_team": "Richlands",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:57",
       "event": "Fallen Heroes"
     },
     {
@@ -703,7 +708,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Johnson Central",
-      "record": "39-4",
+      "record": "39-5",
       "regional_place": null,
       "state_place": null
     },
@@ -750,13 +755,8 @@
   ],
   "career_record": {
     "wins": 232,
-    "losses": 33,
-    "win_pct": 0.875
+    "losses": 34,
+    "win_pct": 0.872
   },
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 3,
-    "top33_bonus_ev_raw": 1.5,
-    "top33_bonus_ev_shrunk": 1.2261363636363638
-  }
+  "profile_generated_at": "2026-02-19"
 }

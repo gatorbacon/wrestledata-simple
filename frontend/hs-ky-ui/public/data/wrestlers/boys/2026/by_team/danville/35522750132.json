@@ -3,10 +3,10 @@
   "name": "Saivon Johnson",
   "team": "Danville",
   "team_slug": "danville",
-  "team_rank": 70,
+  "team_rank": 69,
   "weight_class": 215,
   "year": 2026,
-  "current_rank": 106,
+  "current_rank": 111,
   "record": {
     "overall": "4-4",
     "vs_ranked": "3-3",
@@ -33,13 +33,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35427181132",
-      "opponent_rank": 118,
+      "opponent_rank": 120,
       "opponent_name": "Ahntonio Rivera",
       "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35348013132",
-      "opponent_rank": 239,
+      "opponent_rank": 242,
       "opponent_name": "Jonathan Campos",
       "method": "Fall 0:00"
     }
@@ -47,12 +47,27 @@
   "match_list": [
     {
       "date": "2025-12-06",
+      "opponent_id": "35434373132",
+      "opponent_name": "Lance Ludrick",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": 138,
+      "opponent_weight": 285,
+      "opponent_rank": 291,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. West Jessamine"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35427181132",
       "opponent_name": "Ahntonio Rivera",
       "opponent_team": "East Jessamine",
       "opponent_team_rank": 20,
       "opponent_weight": 215,
-      "opponent_rank": 118,
+      "opponent_rank": 120,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
@@ -65,9 +80,9 @@
       "opponent_id": "35459317132",
       "opponent_name": "Gage Holbrook",
       "opponent_team": "Rowan County",
-      "opponent_team_rank": 121,
+      "opponent_team_rank": 120,
       "opponent_weight": 215,
-      "opponent_rank": 66,
+      "opponent_rank": 72,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
@@ -82,28 +97,13 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 131,
       "opponent_weight": 215,
-      "opponent_rank": 239,
+      "opponent_rank": 242,
       "weight_class": "215",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35434373132",
-      "opponent_name": "Lance Ludrick",
-      "opponent_team": "West Jessamine",
-      "opponent_team_rank": 138,
-      "opponent_weight": 285,
-      "opponent_rank": 290,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. West Jessamine"
     },
     {
       "date": "2025-11-29",
@@ -142,7 +142,7 @@
       "opponent_team": "East Jessamine",
       "opponent_team_rank": 20,
       "opponent_weight": 285,
-      "opponent_rank": 301,
+      "opponent_rank": 302,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
@@ -155,9 +155,9 @@
       "opponent_id": "35225271132",
       "opponent_name": "Brayden Ennis",
       "opponent_team": "Scott",
-      "opponent_team_rank": 125,
+      "opponent_team_rank": 124,
       "opponent_weight": 285,
-      "opponent_rank": 53,
+      "opponent_rank": 54,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
@@ -188,5 +188,5 @@
     "losses": 4,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-02-12"
+  "profile_generated_at": "2026-02-19"
 }

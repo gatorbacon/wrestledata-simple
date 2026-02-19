@@ -4,12 +4,12 @@
   "team": "Whitley County",
   "team_slug": "whitley_county",
   "team_rank": 140,
-  "weight_class": 150,
+  "weight_class": 157,
   "year": 2026,
-  "current_rank": 172,
+  "current_rank": 159,
   "record": {
-    "overall": "1-5",
-    "vs_ranked": "0-4",
+    "overall": "1-7",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -28,26 +28,56 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 4,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "34995991132",
-      "opponent_rank": 131,
+      "opponent_rank": 133,
       "opponent_name": "Gabe Miller",
       "method": "Fall 0:00"
     }
   },
   "match_list": [
     {
+      "date": "2026-02-14",
+      "opponent_id": "35084080132",
+      "opponent_name": "Yahya Addi",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 56,
+      "opponent_weight": 157,
+      "opponent_rank": 49,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "2026 Kentucky JV State Tournament"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35909543132",
+      "opponent_name": "Matthew Ridings",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 10,
+      "opponent_weight": 157,
+      "opponent_rank": 73,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
+      "event": "2026 Kentucky JV State Tournament"
+    },
+    {
       "date": "2026-01-03",
       "opponent_id": "34995995132",
       "opponent_name": "Christian Byrd",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": 128,
+      "opponent_rank": 124,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -60,9 +90,9 @@
       "opponent_id": "34995976132",
       "opponent_name": "Hunter Goodin",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 60,
       "opponent_weight": 150,
-      "opponent_rank": 29,
+      "opponent_rank": 31,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -90,9 +120,9 @@
       "opponent_id": "34995991132",
       "opponent_name": "Gabe Miller",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 60,
       "opponent_weight": 150,
-      "opponent_rank": 131,
+      "opponent_rank": 133,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -107,7 +137,7 @@
       "opponent_team": "Tates Creek",
       "opponent_team_rank": 131,
       "opponent_weight": 165,
-      "opponent_rank": 107,
+      "opponent_rank": 109,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -120,7 +150,7 @@
       "opponent_id": "OUTSTATE_0eea10e36b14",
       "opponent_name": "Unknown",
       "opponent_team": "Knox Central",
-      "opponent_team_rank": 97,
+      "opponent_team_rank": 95,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "165",
@@ -143,20 +173,15 @@
       "season": 2026,
       "grade": 10,
       "team": "Whitley County",
-      "record": "1-5",
+      "record": "1-7",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 1,
-    "losses": 5,
-    "win_pct": 0.167
+    "losses": 7,
+    "win_pct": 0.125
   },
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.2019230769230769
-  }
+  "profile_generated_at": "2026-02-19"
 }

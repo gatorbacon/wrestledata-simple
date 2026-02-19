@@ -4,12 +4,12 @@
   "team": "Walton-Verona",
   "team_slug": "waltonverona",
   "team_rank": 135,
-  "weight_class": 144,
+  "weight_class": 150,
   "year": 2026,
-  "current_rank": 141,
+  "current_rank": 156,
   "record": {
-    "overall": "5-7",
-    "vs_ranked": "2-4",
+    "overall": "5-8",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
     "vs_top25": "0-3"
   },
@@ -28,7 +28,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -38,21 +38,36 @@
       "method": "Fall 4:24"
     },
     "worst_loss": {
-      "opponent_id": "35219551132",
-      "opponent_rank": 44,
-      "opponent_name": "Xavier Stewart",
-      "method": "Fall 1:32"
+      "opponent_id": "35640766132",
+      "opponent_rank": 80,
+      "opponent_name": "Deacon Joseph",
+      "method": "Dec 10-3"
     }
   },
   "match_list": [
     {
       "date": "2026-02-07",
+      "opponent_id": "35640766132",
+      "opponent_name": "Deacon Joseph",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 47,
+      "opponent_weight": 150,
+      "opponent_rank": 80,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2026-02-07",
       "opponent_id": "34993516132",
       "opponent_name": "Juan Ramirez",
       "opponent_team": "Scott County",
-      "opponent_team_rank": 126,
+      "opponent_team_rank": 125,
       "opponent_weight": 150,
-      "opponent_rank": 16,
+      "opponent_rank": 13,
       "weight_class": "150",
       "result": "L",
       "method": "FALL",
@@ -80,7 +95,7 @@
       "opponent_id": "OUTSTATE_ab3b37a09a95",
       "opponent_name": "Unknown",
       "opponent_team": "Desales",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 71,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "150",
@@ -95,7 +110,7 @@
       "opponent_id": "OUTSTATE_0e10b1d4d3cb",
       "opponent_name": "Unknown",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 89,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "150",
@@ -110,7 +125,7 @@
       "opponent_id": "35118664132",
       "opponent_name": "Awab Fadel",
       "opponent_team": "Boone County",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 62,
       "opponent_weight": 132,
       "opponent_rank": 104,
       "weight_class": "144",
@@ -125,9 +140,9 @@
       "opponent_id": "35205066132",
       "opponent_name": "Jack Harrod",
       "opponent_team": "Bullitt East",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 16,
       "opponent_weight": 138,
-      "opponent_rank": 21,
+      "opponent_rank": 20,
       "weight_class": "144",
       "result": "L",
       "method": "FALL",
@@ -140,7 +155,7 @@
       "opponent_id": "35833308132",
       "opponent_name": "William Hardin",
       "opponent_team": "Mason County",
-      "opponent_team_rank": 107,
+      "opponent_team_rank": 105,
       "opponent_weight": 144,
       "opponent_rank": 130,
       "weight_class": "144",
@@ -149,21 +164,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Walton-Verona"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "-1",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:07",
-      "event": "vs. All-Star Team"
     },
     {
       "date": "2026-01-10",
@@ -181,13 +181,28 @@
       "event": "vs. Walnut Hills High School"
     },
     {
+      "date": "2026-01-10",
+      "opponent_id": "-1",
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:07",
+      "event": "vs. All-Star Team"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35219551132",
       "opponent_name": "Xavier Stewart",
       "opponent_team": "Holmes",
-      "opponent_team_rank": 91,
+      "opponent_team_rank": 89,
       "opponent_weight": 132,
-      "opponent_rank": 44,
+      "opponent_rank": 38,
       "weight_class": "138",
       "result": "L",
       "method": "FALL",
@@ -200,7 +215,7 @@
       "opponent_id": "35404971132",
       "opponent_name": "Sergio Vasquez Gomez",
       "opponent_team": "Lafayette",
-      "opponent_team_rank": 99,
+      "opponent_team_rank": 97,
       "opponent_weight": 132,
       "opponent_rank": 25,
       "weight_class": "138",
@@ -223,15 +238,15 @@
       "season": 2026,
       "grade": 7,
       "team": "Walton-Verona",
-      "record": "5-7",
+      "record": "5-8",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 5,
-    "losses": 7,
-    "win_pct": 0.417
+    "losses": 8,
+    "win_pct": 0.385
   },
-  "profile_generated_at": "2026-02-12"
+  "profile_generated_at": "2026-02-19"
 }

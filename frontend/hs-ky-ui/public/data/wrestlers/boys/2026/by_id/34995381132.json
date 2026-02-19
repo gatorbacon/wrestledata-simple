@@ -3,13 +3,13 @@
   "name": "Ethan Jett",
   "team": "Lexington Christian",
   "team_slug": "lexington_christian",
-  "team_rank": 103,
-  "weight_class": 190,
+  "team_rank": 101,
+  "weight_class": 215,
   "year": 2026,
-  "current_rank": 266,
+  "current_rank": 68,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "3-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,25 +20,71 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "34992064132",
+      "opponent_rank": 147,
+      "opponent_name": "Bradley Lucas",
+      "method": "Fall 0:00"
+    },
     "worst_loss": null
   },
-  "match_list": [],
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.8875968992248061
-  }
+  "match_list": [
+    {
+      "date": "2026-02-12",
+      "opponent_id": "34992064132",
+      "opponent_name": "Bradley Lucas",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 57,
+      "opponent_weight": 215,
+      "opponent_rank": 147,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Lexington Christian"
+    },
+    {
+      "date": "2026-02-12",
+      "opponent_id": "OUTSTATE_d11d1b4317fe",
+      "opponent_name": "Unknown",
+      "opponent_team": "Thomas Nelson",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Thomas Nelson"
+    },
+    {
+      "date": "2026-02-12",
+      "opponent_id": "OUTSTATE_f168e9c3cbeb",
+      "opponent_name": "Unknown",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": 78,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Fort Knox"
+    }
+  ],
+  "profile_generated_at": "2026-02-19"
 }

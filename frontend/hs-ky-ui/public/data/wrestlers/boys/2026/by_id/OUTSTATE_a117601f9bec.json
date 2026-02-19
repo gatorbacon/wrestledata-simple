@@ -4,12 +4,12 @@
   "team": "Kings High School",
   "team_slug": "kings_high_school",
   "team_rank": null,
-  "weight_class": 126,
+  "weight_class": 138,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-2",
-    "vs_ranked": "0-2",
+    "overall": "1-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-2",
     "vs_top25": "0-2"
   },
@@ -27,11 +27,16 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 2,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "35333038132",
+      "opponent_rank": 181,
+      "opponent_name": "Barry Wyatt",
+      "method": "Dec 9-5"
+    },
     "worst_loss": {
       "opponent_id": "35640248132",
       "opponent_rank": 8,
@@ -56,11 +61,26 @@
       "event": "Fairfield Invitational"
     },
     {
+      "date": "2026-01-10",
+      "opponent_id": "35333038132",
+      "opponent_name": "Barry Wyatt",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 138,
+      "opponent_rank": 181,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-5",
+      "duration": "7:00",
+      "event": "Fairfield Invitational"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35640248132",
       "opponent_name": "Deacon Cano",
       "opponent_team": "Great Crossing",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 47,
       "opponent_weight": 132,
       "opponent_rank": 8,
       "weight_class": "132",
@@ -71,10 +91,5 @@
       "event": "Edgewood Invitational"
     }
   ],
-  "profile_generated_at": "2026-02-12",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.1590909090909092
-  }
+  "profile_generated_at": "2026-02-19"
 }
