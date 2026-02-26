@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-19T18:58:41.642921Z",
+  "generated_at_utc": "2026-02-25T13:58:50.332508Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35438467132",
       "name": "Carson Gross",
-      "current_rank": 70,
+      "current_rank": 67,
       "grade": 7,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -51,7 +51,7 @@
       "weight": 120,
       "wrestler_id": "35401423132",
       "name": "Damien Falter",
-      "current_rank": 100,
+      "current_rank": 126,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -67,15 +67,39 @@
         "losses": 1
       },
       "wins": 7,
-      "losses": 9,
+      "losses": 11,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
     "132": {
       "weight": 132,
+      "wrestler_id": "35458402132",
+      "name": "Harrison Caudill",
+      "current_rank": 211,
+      "grade": 10,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    "138": {
+      "weight": 138,
       "wrestler_id": "35401453132",
       "name": "Brady Baker",
-      "current_rank": 190,
+      "current_rank": 189,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -90,16 +114,16 @@
         "wins": 0,
         "losses": 0
       },
-      "wins": 1,
-      "losses": 8,
+      "wins": 3,
+      "losses": 10,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 1.0
     },
-    "144": {
-      "weight": 144,
+    "150": {
+      "weight": 150,
       "wrestler_id": "35458385132",
       "name": "Andrew Meade",
-      "current_rank": 71,
+      "current_rank": 70,
       "grade": 12,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -108,22 +132,46 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 2
       },
-      "wins": 9,
-      "losses": 6,
+      "wins": 10,
+      "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.75
+      "bonus_rate": 0.778
     },
     "157": {
       "weight": 157,
+      "wrestler_id": "35438163132",
+      "name": "Hunter Kendrick",
+      "current_rank": 219,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    "165": {
+      "weight": 165,
       "wrestler_id": "35401491132",
       "name": "Jon Falter",
-      "current_rank": 64,
+      "current_rank": 58,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -138,40 +186,16 @@
         "wins": 0,
         "losses": 4
       },
-      "wins": 17,
-      "losses": 9,
+      "wins": 20,
+      "losses": 11,
       "top25_wins": 0,
-      "bonus_rate": 0.824
-    },
-    "165": {
-      "weight": 165,
-      "wrestler_id": "35521179132",
-      "name": "Alexzander Caudill",
-      "current_rank": 112,
-      "grade": 12,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 2
-      },
-      "wins": 10,
-      "losses": 10,
-      "top25_wins": 0,
-      "bonus_rate": 0.875
+      "bonus_rate": 0.842
     },
     "215": {
       "weight": 215,
       "wrestler_id": "35438424132",
       "name": "Thomas Smith",
-      "current_rank": 254,
+      "current_rank": 259,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -195,7 +219,7 @@
       "weight": 285,
       "wrestler_id": "35438329132",
       "name": "Willam Hall",
-      "current_rank": 271,
+      "current_rank": 274,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -218,24 +242,14 @@
   },
   "remaining": [
     {
-      "weight": 132,
-      "wrestler_id": "35458402132",
-      "name": "Harrison Caudill",
-      "grade": 10,
-      "wins": 0,
-      "losses": 3,
+      "weight": 165,
+      "wrestler_id": "35521179132",
+      "name": "Alexzander Caudill",
+      "grade": 12,
+      "wins": 10,
+      "losses": 10,
       "top25_wins": 0,
-      "bonus_rate": 0.0
-    },
-    {
-      "weight": 157,
-      "wrestler_id": "35438163132",
-      "name": "Hunter Kendrick",
-      "grade": null,
-      "wins": 0,
-      "losses": 0,
-      "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 0.875
     }
   ],
   "team_xTP_simple": 0.0,
@@ -250,30 +264,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 50,
-      "losses": 45
+      "wins": 46,
+      "losses": 46
     },
     "top33": {
       "wins": 0,
-      "losses": 12
+      "losses": 10
     },
     "top10": {
       "wins": 0,
-      "losses": 6
+      "losses": 5
     },
     "bonus_rate": {
-      "value": 0.818,
-      "rank": 130,
+      "value": 0.85,
+      "rank": 119,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.727,
-      "rank": 93,
+      "value": 0.675,
+      "rank": 114,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.045,
-      "rank": 116,
+      "value": 0.1,
+      "rank": 60,
       "rank_scope": "league"
     }
   }

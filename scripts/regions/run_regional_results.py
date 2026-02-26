@@ -361,8 +361,9 @@ def _parse_wrestler_and_team(s: str) -> Optional[Tuple[str, str]]:
     """
     Parse "Name (Team) RECORD" or "Name (Nickname) Last (Team) RECORD" - extract name and team.
     Uses last parenthetical before record (handles names like "Corey (Onna) Dalmida (Fort Campbell) 8-4").
+    Handles team names with nested parens like "Trinity (Louisville)".
     """
-    m = re.match(r"^(.*)\s+\(([^)]+)\)\s+\d+-\d+", s.strip())
+    m = re.match(r"^(.*)\s+\(([^)]*(?:\([^)]*\)[^)]*)*)\)\s+\d+-\d+", s.strip())
     if not m:
         return None
     return m.group(1).strip(), m.group(2).strip()
@@ -411,11 +412,12 @@ def parse_results_file(path: Path) -> Tuple[Dict[int, Tuple[str, str, str, str]]
 
         if line.startswith(first_place_prefix) and current_weight is not None:
             rest = line[len(first_place_prefix) :].strip()
-            if " won by " in rest and " over " in rest:
-                winner_part, _, loser_part = rest.partition(" won by ")
-                _, _, loser_part = loser_part.partition(" over ")
+            if " over " in rest:
+                winner_part, _, loser_part = rest.partition(" over ")
+                # Strip " won by X" or " won in X" from winner (handles "won in sudden victory - 1", etc.)
+                winner_part = re.sub(r"\s+won\s+(?:by|in)\s+.*$", "", winner_part.strip())
                 winner = _parse_wrestler_and_team(winner_part)
-                loser = _parse_wrestler_and_team(loser_part)
+                loser = _parse_wrestler_and_team(loser_part.strip())
                 if winner and loser:
                     per_weight[current_weight] = (
                         winner[0],
@@ -548,7 +550,8 @@ def export_region_results_graphics(
     for i in range(1, 4):
         if i <= len(top_3_teams):
             team_name, score = top_3_teams[i - 1]
-            _set_label_text(root, ns, f"team{i}-name", team_name)
+            display_name = team_name.replace(" High School", "").replace("High School ", "").strip() if "High School" in team_name else team_name
+            _set_label_text(root, ns, f"team{i}-name", display_name)
             _set_label_text(root, ns, f"team{i}-score", f"{score:.1f} pts")
         else:
             _set_label_text(root, ns, f"team{i}-name", "")

@@ -675,6 +675,8 @@ def build_match_list(
             method = "MFF"
         elif result_type == "FF":
             method = "FF"
+        elif result_type == "DQ":
+            method = "DQ"
         elif result_type == "D":
             # Check for SV-* or TB-* to preserve the prefix for display
             if result_upper.startswith("SV-"):

@@ -4,14 +4,14 @@
   "team": "Ridgeview",
   "team_slug": "ridgeview",
   "team_rank": null,
-  "weight_class": 165,
+  "weight_class": 157,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-6",
-    "vs_ranked": "0-6",
+    "overall": "0-7",
+    "vs_ranked": "0-7",
     "vs_top10": "0-1",
-    "vs_top25": "0-2"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,13 +28,13 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 6,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35560024132",
-      "opponent_rank": 154,
+      "opponent_rank": 158,
       "opponent_name": "Evan Wicker",
       "method": "Fall 0:00"
     }
@@ -47,7 +47,7 @@
       "opponent_team": "Johnson Central",
       "opponent_team_rank": 2,
       "opponent_weight": 165,
-      "opponent_rank": 4,
+      "opponent_rank": 3,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -60,7 +60,7 @@
       "opponent_id": "34995991132",
       "opponent_name": "Gabe Miller",
       "opponent_team": "Bell County",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 57,
       "opponent_weight": 150,
       "opponent_rank": 133,
       "weight_class": "157",
@@ -77,7 +77,7 @@
       "opponent_team": "Johnson Central",
       "opponent_team_rank": 2,
       "opponent_weight": 150,
-      "opponent_rank": 17,
+      "opponent_rank": 22,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
@@ -86,13 +86,43 @@
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
+      "date": "2025-12-29",
+      "opponent_id": "35752685132",
+      "opponent_name": "Maddox Bryant",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 150,
+      "opponent_rank": 22,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "HATFIELD-MCCOY 32"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35513071132",
       "opponent_name": "Benjamin Crabtree",
       "opponent_team": "Belfry",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 56,
       "opponent_weight": 150,
-      "opponent_rank": 61,
+      "opponent_rank": 62,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Ridgeview"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35560024132",
+      "opponent_name": "Evan Wicker",
+      "opponent_team": "Knott County Central",
+      "opponent_team_rank": 96,
+      "opponent_weight": 175,
+      "opponent_rank": 158,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -105,31 +135,16 @@
       "opponent_id": "35013064132",
       "opponent_name": "Blaze Cook",
       "opponent_team": "Perry County Central",
-      "opponent_team_rank": 114,
+      "opponent_team_rank": 115,
       "opponent_weight": 157,
-      "opponent_rank": 44,
+      "opponent_rank": 42,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "20-2",
       "duration": "0:00",
       "event": "vs. Ridgeview"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35560024132",
-      "opponent_name": "Evan Wicker",
-      "opponent_team": "Knott County Central",
-      "opponent_team_rank": 94,
-      "opponent_weight": 175,
-      "opponent_rank": 154,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Ridgeview"
     }
   ],
-  "profile_generated_at": "2026-02-19"
+  "profile_generated_at": "2026-02-25"
 }

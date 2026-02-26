@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "weight": 126,
-  "generated_at": "2026-02-19T18:56:25.072678+00:00",
+  "generated_at": "2026-02-25T01:19:18.188130+00:00",
   "wrestlers": [
     {
       "id": "35333321132",
@@ -148,17 +148,17 @@
       "is_injured_reserve": false
     },
     {
-      "id": "35666995132",
-      "name": "Tristin Caldwell",
-      "team": "Fort Campbell",
+      "id": "35465670132",
+      "name": "Hermayoni Gembe",
+      "team": "McCracken County",
       "rank": 19,
       "starter": true,
       "is_injured_reserve": false
     },
     {
-      "id": "35465670132",
-      "name": "Hermayoni Gembe",
-      "team": "McCracken County",
+      "id": "35666995132",
+      "name": "Tristin Caldwell",
+      "team": "Fort Campbell",
       "rank": 20,
       "starter": true,
       "is_injured_reserve": false
@@ -1660,6 +1660,14 @@
       "is_injured_reserve": false
     },
     {
+      "id": "OUTSTATE_3b9151ea3973",
+      "name": "Unknown",
+      "team": "Central",
+      "rank": null,
+      "starter": false,
+      "is_injured_reserve": false
+    },
+    {
       "id": "OUTSTATE_08299a5ff440",
       "name": "Unknown",
       "team": "Northwest High School Girls",
@@ -1904,12 +1912,6 @@
         "results": [],
         "co_result": "win"
       },
-      "35666995132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
       "35465670132": {
         "type": "FALL",
         "display": "F",
@@ -1921,6 +1923,12 @@
             "score": null
           }
         ]
+      },
+      "35666995132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
       },
       "35461783132": {
         "type": "COMMON_OPPONENT",
@@ -2632,24 +2640,24 @@
         "results": [],
         "co_result": "win"
       },
-      "35666995132": {
-        "type": "FALL",
-        "display": "F",
-        "results": [
-          {
-            "date": "2026-02-14",
-            "winner_id": "35565001132",
-            "method": "F",
-            "score": null
-          }
-        ]
-      },
       "35465670132": {
         "type": "FALL",
         "display": "F",
         "results": [
           {
             "date": "2026-01-03",
+            "winner_id": "35565001132",
+            "method": "F",
+            "score": null
+          }
+        ]
+      },
+      "35666995132": {
+        "type": "FALL",
+        "display": "F",
+        "results": [
+          {
+            "date": "2026-02-14",
             "winner_id": "35565001132",
             "method": "F",
             "score": null
@@ -5312,12 +5320,6 @@
           }
         ]
       },
-      "35666995132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
       "35465670132": {
         "type": "FALL",
         "display": "F",
@@ -5329,6 +5331,12 @@
             "score": null
           }
         ]
+      },
+      "35666995132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
       },
       "35333550132": {
         "type": "COMMON_OPPONENT",
@@ -7759,6 +7767,12 @@
         "co_result": "win"
       },
       "OUTSTATE_5855457a7894": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "OUTSTATE_3b9151ea3973": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
@@ -10231,212 +10245,6 @@
         "co_result": "win"
       }
     },
-    "35666995132": {
-      "35333321132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "loss"
-      },
-      "35565001132": {
-        "type": "FALL",
-        "display": "F",
-        "results": [
-          {
-            "date": "2026-02-14",
-            "winner_id": "35565001132",
-            "method": "F",
-            "score": null
-          }
-        ]
-      },
-      "35333414132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "loss"
-      },
-      "35510582132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "loss"
-      },
-      "35465670132": {
-        "type": "SPLIT",
-        "display": "S",
-        "results": [
-          {
-            "date": "2026-01-03",
-            "winner_id": "35465670132",
-            "method": "F",
-            "score": null
-          },
-          {
-            "date": "2026-02-14",
-            "winner_id": "35666995132",
-            "method": "F",
-            "score": null
-          }
-        ]
-      },
-      "35333550132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "tie"
-      },
-      "35369126132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
-      "35635763132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "tie"
-      },
-      "35382373132": {
-        "type": "FALL",
-        "display": "F",
-        "results": [
-          {
-            "date": "2026-01-03",
-            "winner_id": "35666995132",
-            "method": "F",
-            "score": null
-          }
-        ]
-      },
-      "35567185132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
-      "35640614132": {
-        "type": "SPLIT",
-        "display": "S",
-        "results": [
-          {
-            "date": "2026-01-03",
-            "winner_id": "35666995132",
-            "method": "F",
-            "score": null
-          },
-          {
-            "date": "2026-02-14",
-            "winner_id": "35640614132",
-            "method": "F",
-            "score": null
-          }
-        ]
-      },
-      "35345253132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
-      "35640550132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
-      "35152762132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
-      "OUTSTATE_346fc607e40b": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "loss"
-      },
-      "35146945132": {
-        "type": "FALL",
-        "display": "F",
-        "results": [
-          {
-            "date": "2026-01-19",
-            "winner_id": "35666995132",
-            "method": "F",
-            "score": null
-          }
-        ]
-      },
-      "35347492132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
-      "35457105132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
-      "OUTSTATE_0d7d3cb04d3f": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "loss"
-      },
-      "35523177132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "loss"
-      },
-      "35460639132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
-      "35347233132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
-      "OUTSTATE_4c7d568141fe": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "loss"
-      },
-      "35111838132": {
-        "type": "FALL",
-        "display": "F",
-        "results": [
-          {
-            "date": "2026-01-08",
-            "winner_id": "35111838132",
-            "method": "F",
-            "score": null
-          }
-        ]
-      },
-      "OUTSTATE_08299a5ff440": {
-        "type": "DECISION",
-        "display": "D",
-        "results": [
-          {
-            "date": "2026-01-19",
-            "winner_id": "35666995132",
-            "method": "D",
-            "score": null
-          }
-        ]
-      }
-    },
     "35465670132": {
       "35333321132": {
         "type": "FALL",
@@ -10830,6 +10638,212 @@
             "date": "2026-01-10",
             "winner_id": "35207622132",
             "method": "F",
+            "score": null
+          }
+        ]
+      }
+    },
+    "35666995132": {
+      "35333321132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "35565001132": {
+        "type": "FALL",
+        "display": "F",
+        "results": [
+          {
+            "date": "2026-02-14",
+            "winner_id": "35565001132",
+            "method": "F",
+            "score": null
+          }
+        ]
+      },
+      "35333414132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "35510582132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "35465670132": {
+        "type": "SPLIT",
+        "display": "S",
+        "results": [
+          {
+            "date": "2026-01-03",
+            "winner_id": "35465670132",
+            "method": "F",
+            "score": null
+          },
+          {
+            "date": "2026-02-14",
+            "winner_id": "35666995132",
+            "method": "F",
+            "score": null
+          }
+        ]
+      },
+      "35333550132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "tie"
+      },
+      "35369126132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "35635763132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "tie"
+      },
+      "35382373132": {
+        "type": "FALL",
+        "display": "F",
+        "results": [
+          {
+            "date": "2026-01-03",
+            "winner_id": "35666995132",
+            "method": "F",
+            "score": null
+          }
+        ]
+      },
+      "35567185132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "35640614132": {
+        "type": "SPLIT",
+        "display": "S",
+        "results": [
+          {
+            "date": "2026-01-03",
+            "winner_id": "35666995132",
+            "method": "F",
+            "score": null
+          },
+          {
+            "date": "2026-02-14",
+            "winner_id": "35640614132",
+            "method": "F",
+            "score": null
+          }
+        ]
+      },
+      "35345253132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "35640550132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "35152762132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "OUTSTATE_346fc607e40b": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "35146945132": {
+        "type": "FALL",
+        "display": "F",
+        "results": [
+          {
+            "date": "2026-01-19",
+            "winner_id": "35666995132",
+            "method": "F",
+            "score": null
+          }
+        ]
+      },
+      "35347492132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "35457105132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "OUTSTATE_0d7d3cb04d3f": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "35523177132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "35460639132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "35347233132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "OUTSTATE_4c7d568141fe": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "35111838132": {
+        "type": "FALL",
+        "display": "F",
+        "results": [
+          {
+            "date": "2026-01-08",
+            "winner_id": "35111838132",
+            "method": "F",
+            "score": null
+          }
+        ]
+      },
+      "OUTSTATE_08299a5ff440": {
+        "type": "DECISION",
+        "display": "D",
+        "results": [
+          {
+            "date": "2026-01-19",
+            "winner_id": "35666995132",
+            "method": "D",
             "score": null
           }
         ]
@@ -11348,12 +11362,6 @@
         "results": [],
         "co_result": "tie"
       },
-      "35666995132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "tie"
-      },
       "35465670132": {
         "type": "FALL",
         "display": "F",
@@ -11365,6 +11373,12 @@
             "score": null
           }
         ]
+      },
+      "35666995132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "tie"
       },
       "35461783132": {
         "type": "DECISION",
@@ -11968,13 +11982,13 @@
           }
         ]
       },
-      "35666995132": {
+      "35465670132": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
         "co_result": "loss"
       },
-      "35465670132": {
+      "35666995132": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
@@ -13928,6 +13942,12 @@
         "results": [],
         "co_result": "loss"
       },
+      "35465670132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
       "35666995132": {
         "type": "FALL",
         "display": "F",
@@ -13939,12 +13959,6 @@
             "score": null
           }
         ]
-      },
-      "35465670132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "loss"
       },
       "35567185132": {
         "type": "DECISION",
@@ -14158,13 +14172,13 @@
         "results": [],
         "co_result": "loss"
       },
-      "35666995132": {
+      "35465670132": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
         "co_result": "loss"
       },
-      "35465670132": {
+      "35666995132": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
@@ -14502,6 +14516,18 @@
           }
         ]
       },
+      "35465670132": {
+        "type": "FALL",
+        "display": "F",
+        "results": [
+          {
+            "date": "2025-11-29",
+            "winner_id": "35465670132",
+            "method": "F",
+            "score": null
+          }
+        ]
+      },
       "35666995132": {
         "type": "SPLIT",
         "display": "S",
@@ -14515,18 +14541,6 @@
           {
             "date": "2026-02-14",
             "winner_id": "35640614132",
-            "method": "F",
-            "score": null
-          }
-        ]
-      },
-      "35465670132": {
-        "type": "FALL",
-        "display": "F",
-        "results": [
-          {
-            "date": "2025-11-29",
-            "winner_id": "35465670132",
             "method": "F",
             "score": null
           }
@@ -17074,13 +17088,13 @@
         "results": [],
         "co_result": "loss"
       },
-      "35666995132": {
+      "35465670132": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
         "co_result": "loss"
       },
-      "35465670132": {
+      "35666995132": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
@@ -17623,6 +17637,12 @@
         "display": "CO",
         "results": [],
         "co_result": "loss"
+      },
+      "OUTSTATE_3b9151ea3973": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
       }
     },
     "35333652132": {
@@ -17775,6 +17795,18 @@
         "display": "CO",
         "results": [],
         "co_result": "loss"
+      },
+      "OUTSTATE_3b9151ea3973": {
+        "type": "DECISION",
+        "display": "D",
+        "results": [
+          {
+            "date": "2026-02-12",
+            "winner_id": "35333652132",
+            "method": "D",
+            "score": null
+          }
+        ]
       },
       "OUTSTATE_4d2b17f7ea65": {
         "type": "FALL",
@@ -25289,13 +25321,13 @@
         "results": [],
         "co_result": "loss"
       },
-      "35666995132": {
+      "35465670132": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
         "co_result": "loss"
       },
-      "35465670132": {
+      "35666995132": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
@@ -26375,12 +26407,6 @@
           }
         ]
       },
-      "35666995132": {
-        "type": "COMMON_OPPONENT",
-        "display": "CO",
-        "results": [],
-        "co_result": "win"
-      },
       "35465670132": {
         "type": "FALL",
         "display": "F",
@@ -26392,6 +26418,12 @@
             "score": null
           }
         ]
+      },
+      "35666995132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
       },
       "35333550132": {
         "type": "COMMON_OPPONENT",
@@ -26872,6 +26904,12 @@
         "display": "CO",
         "results": [],
         "co_result": "win"
+      },
+      "OUTSTATE_3b9151ea3973": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
       }
     },
     "35111574132": {
@@ -27251,13 +27289,13 @@
         "results": [],
         "co_result": "loss"
       },
-      "35666995132": {
+      "35465670132": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
         "co_result": "loss"
       },
-      "35465670132": {
+      "35666995132": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
@@ -30850,6 +30888,50 @@
         "co_result": "loss"
       }
     },
+    "OUTSTATE_3b9151ea3973": {
+      "35404902132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "35478715132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "35333652132": {
+        "type": "DECISION",
+        "display": "D",
+        "results": [
+          {
+            "date": "2026-02-12",
+            "winner_id": "35333652132",
+            "method": "D",
+            "score": null
+          }
+        ]
+      },
+      "OUTSTATE_63f7de596142": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "OUTSTATE_4d2b17f7ea65": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      },
+      "OUTSTATE_cc180ba0cfde": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "loss"
+      }
+    },
     "OUTSTATE_08299a5ff440": {
       "35565001132": {
         "type": "COMMON_OPPONENT",
@@ -30994,6 +31076,12 @@
         "co_result": "win"
       },
       "35347233132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "OUTSTATE_3b9151ea3973": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],
@@ -31220,6 +31308,12 @@
         "co_result": "win"
       },
       "35347233132": {
+        "type": "COMMON_OPPONENT",
+        "display": "CO",
+        "results": [],
+        "co_result": "win"
+      },
+      "OUTSTATE_3b9151ea3973": {
         "type": "COMMON_OPPONENT",
         "display": "CO",
         "results": [],

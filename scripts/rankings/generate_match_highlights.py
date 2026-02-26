@@ -353,6 +353,12 @@ def collect_matches_in_range(
             if match_date < start_date or match_date > end_date:
                 continue
             
+            # Skip MFF (medical forfeit) and DQ (disqualification) results
+            method_raw = (match.get("method", "") or "").upper()
+            if ("MFF" in method_raw or "MEDICAL" in method_raw or "M. FOR" in method_raw
+                    or "DQ" in method_raw or "DISQUAL" in method_raw):
+                continue
+            
             result = match.get("result", "")
             opponent_id = match.get("opponent_id")
             opponent_name = match.get("opponent_name", "Unknown")

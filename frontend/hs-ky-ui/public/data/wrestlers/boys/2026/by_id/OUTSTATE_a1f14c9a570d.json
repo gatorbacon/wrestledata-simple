@@ -3,13 +3,13 @@
   "name": "Mason Nord-Hodges",
   "team": "Henry Clay",
   "team_slug": "henry_clay",
-  "team_rank": 48,
+  "team_rank": 42,
   "weight_class": 190,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
-    "vs_ranked": "1-0",
+    "overall": "2-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,27 +27,42 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35283923132",
-      "opponent_rank": 93,
-      "opponent_name": "Mustafa Sehen",
+      "opponent_id": "35007898132",
+      "opponent_rank": 39,
+      "opponent_name": "Cy Jackson",
       "method": "For."
     },
     "worst_loss": null
   },
   "match_list": [
     {
+      "date": "2026-02-14",
+      "opponent_id": "35007898132",
+      "opponent_name": "Cy Jackson",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 128,
+      "opponent_weight": 190,
+      "opponent_rank": 39,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "2026 Kentucky JV State Tournament"
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35283923132",
       "opponent_name": "Mustafa Sehen",
       "opponent_team": "Eastern",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 76,
       "opponent_weight": 175,
-      "opponent_rank": 93,
+      "opponent_rank": 97,
       "weight_class": "190",
       "result": "W",
       "method": "FF",
@@ -56,5 +71,5 @@
       "event": "The Beast of the East"
     }
   ],
-  "profile_generated_at": "2026-02-19"
+  "profile_generated_at": "2026-02-25"
 }

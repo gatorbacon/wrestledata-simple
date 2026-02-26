@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "season": 2026,
-  "generated_at_utc": "2026-02-19T18:56:18.663152Z",
+  "generated_at_utc": "2026-02-25T01:19:13.479592Z",
   "breaking_changes": [
     "Removed teams[].roster and teams[].highlights; use mt/teams/<team_id>.json for team identity and starters."
   ],
@@ -310,8 +310,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.0,
-          "rank": 68,
+          "value": 0.062,
+          "rank": 63,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -544,8 +544,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.48,
-          "rank": 8,
+          "value": 0.458,
+          "rank": 9,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -623,7 +623,7 @@
         },
         "top10_win_pct": {
           "value": 0.143,
-          "rank": 46,
+          "rank": 47,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -779,7 +779,7 @@
         },
         "top10_win_pct": {
           "value": 0.148,
-          "rank": 41,
+          "rank": 42,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1090,8 +1090,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.05,
-          "rank": 65,
+          "value": 0.048,
+          "rank": 66,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1168,8 +1168,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.447,
-          "rank": 9,
+          "value": 0.455,
+          "rank": 10,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1325,7 +1325,7 @@
         },
         "top10_win_pct": {
           "value": 0.1,
-          "rank": 57,
+          "rank": 58,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1403,7 +1403,7 @@
         },
         "top10_win_pct": {
           "value": 0.35,
-          "rank": 18,
+          "rank": 19,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1481,7 +1481,7 @@
         },
         "top10_win_pct": {
           "value": 0.111,
-          "rank": 52,
+          "rank": 53,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1559,7 +1559,7 @@
         },
         "top10_win_pct": {
           "value": 0.133,
-          "rank": 47,
+          "rank": 48,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1637,7 +1637,7 @@
         },
         "top10_win_pct": {
           "value": 0.143,
-          "rank": 44,
+          "rank": 45,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1763,17 +1763,17 @@
       "metrics": {
         "avg_pf7": {
           "value": 0.0,
-          "rank": 26,
+          "rank": 25,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 0.0,
-          "rank": 26,
+          "rank": 25,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 0.0,
-          "rank": 26,
+          "rank": 25,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -1793,7 +1793,7 @@
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 66,
+          "rank": 67,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -1805,25 +1805,25 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 100.0,
-          "rank": 26,
+          "rank": 25,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 100.0,
-          "rank": 26,
+          "rank": 25,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.0,
-          "rank": 26,
+          "rank": 25,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 191,
-        "wins_included": 93,
+        "matches_included": 199,
+        "wins_included": 101,
         "losses_included": 98,
-        "win_pct": 0.487,
+        "win_pct": 0.508,
         "wrestlers_included": 9,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -1949,7 +1949,7 @@
         },
         "top10_win_pct": {
           "value": 0.1,
-          "rank": 55,
+          "rank": 56,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -2261,7 +2261,7 @@
         },
         "top10_win_pct": {
           "value": 0.088,
-          "rank": 59,
+          "rank": 60,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -2338,8 +2338,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.5,
-          "rank": 6,
+          "value": 0.471,
+          "rank": 8,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -2465,37 +2465,37 @@
       "metrics": {
         "avg_pf7": {
           "value": 0.0,
-          "rank": 105,
+          "rank": 103,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 0.0,
-          "rank": 105,
+          "rank": 103,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 0.0,
-          "rank": 105,
+          "rank": 103,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 1.0,
-          "rank": 17,
+          "rank": 16,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 1.0,
-          "rank": 12,
+          "rank": 11,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.0,
-          "rank": 105,
+          "rank": 103,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 106,
+          "rank": 104,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -2507,25 +2507,25 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 100.0,
-          "rank": 105,
+          "rank": 103,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 100.0,
-          "rank": 105,
+          "rank": 103,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.0,
-          "rank": 105,
+          "rank": 103,
           "rank_scope": "league"
         }
       },
       "counts": {
-        "matches_included": 16,
-        "wins_included": 5,
+        "matches_included": 17,
+        "wins_included": 6,
         "losses_included": 11,
-        "win_pct": 0.312,
+        "win_pct": 0.353,
         "wrestlers_included": 1,
         "starters_mode": "ranking_files_with_overrides"
       }
@@ -3041,7 +3041,7 @@
         },
         "top10_win_pct": {
           "value": 0.073,
-          "rank": 61,
+          "rank": 62,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -3197,7 +3197,7 @@
         },
         "top10_win_pct": {
           "value": 0.105,
-          "rank": 53,
+          "rank": 54,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -3352,7 +3352,7 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.304,
+          "value": 0.311,
           "rank": 23,
           "rank_scope": "league"
         },
@@ -3586,8 +3586,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.208,
-          "rank": 33,
+          "value": 0.217,
+          "rank": 31,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -3743,7 +3743,7 @@
         },
         "top10_win_pct": {
           "value": 0.125,
-          "rank": 49,
+          "rank": 50,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -3898,8 +3898,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.346,
-          "rank": 19,
+          "value": 0.354,
+          "rank": 17,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -3977,7 +3977,7 @@
         },
         "top10_win_pct": {
           "value": 0.16,
-          "rank": 40,
+          "rank": 41,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4055,7 +4055,7 @@
         },
         "top10_win_pct": {
           "value": 0.13,
-          "rank": 48,
+          "rank": 49,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4211,7 +4211,7 @@
         },
         "top10_win_pct": {
           "value": 0.059,
-          "rank": 64,
+          "rank": 65,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4289,7 +4289,7 @@
         },
         "top10_win_pct": {
           "value": 0.12,
-          "rank": 50,
+          "rank": 51,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4522,8 +4522,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.278,
-          "rank": 24,
+          "value": 0.273,
+          "rank": 25,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4600,8 +4600,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.071,
-          "rank": 62,
+          "value": 0.2,
+          "rank": 34,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4757,7 +4757,7 @@
         },
         "top10_win_pct": {
           "value": 0.143,
-          "rank": 45,
+          "rank": 46,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4835,7 +4835,7 @@
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 67,
+          "rank": 68,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4912,8 +4912,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.32,
-          "rank": 22,
+          "value": 0.338,
+          "rank": 20,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -4961,17 +4961,17 @@
       "metrics": {
         "avg_pf7": {
           "value": 0.0,
-          "rank": 103,
+          "rank": 104,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 0.0,
-          "rank": 103,
+          "rank": 104,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 0.0,
-          "rank": 103,
+          "rank": 104,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -4986,12 +4986,12 @@
         },
         "tech_rate": {
           "value": 0.0,
-          "rank": 103,
+          "rank": 104,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 104,
+          "rank": 105,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -5003,17 +5003,17 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 100.0,
-          "rank": 103,
+          "rank": 104,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 100.0,
-          "rank": 103,
+          "rank": 104,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.0,
-          "rank": 103,
+          "rank": 104,
           "rank_scope": "league"
         }
       },
@@ -5225,7 +5225,7 @@
         },
         "top10_win_pct": {
           "value": 0.333,
-          "rank": 20,
+          "rank": 21,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -5381,7 +5381,7 @@
         },
         "top10_win_pct": {
           "value": 0.174,
-          "rank": 39,
+          "rank": 40,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -5458,8 +5458,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.197,
-          "rank": 36,
+          "value": 0.188,
+          "rank": 37,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -5537,7 +5537,7 @@
         },
         "top10_win_pct": {
           "value": 0.059,
-          "rank": 63,
+          "rank": 64,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -5615,7 +5615,7 @@
         },
         "top10_win_pct": {
           "value": 0.143,
-          "rank": 43,
+          "rank": 44,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -5771,7 +5771,7 @@
         },
         "top10_win_pct": {
           "value": 0.191,
-          "rank": 37,
+          "rank": 36,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -6083,7 +6083,7 @@
         },
         "top10_win_pct": {
           "value": 0.1,
-          "rank": 58,
+          "rank": 59,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -6395,7 +6395,7 @@
         },
         "top10_win_pct": {
           "value": 0.2,
-          "rank": 34,
+          "rank": 33,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -6550,8 +6550,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.25,
-          "rank": 27,
+          "value": 0.174,
+          "rank": 39,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -6599,37 +6599,37 @@
       "metrics": {
         "avg_pf7": {
           "value": 0.0,
-          "rank": 104,
+          "rank": 105,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 0.0,
-          "rank": 104,
+          "rank": 105,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 0.0,
-          "rank": 104,
+          "rank": 105,
           "rank_scope": "league"
         },
         "bonus_rate": {
           "value": 1.0,
-          "rank": 16,
+          "rank": 17,
           "rank_scope": "league"
         },
         "pin_rate": {
           "value": 1.0,
-          "rank": 11,
+          "rank": 12,
           "rank_scope": "league"
         },
         "tech_rate": {
           "value": 0.0,
-          "rank": 104,
+          "rank": 105,
           "rank_scope": "league"
         },
         "top10_win_pct": {
           "value": 0.0,
-          "rank": 105,
+          "rank": 106,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -6641,17 +6641,17 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 100.0,
-          "rank": 104,
+          "rank": 105,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 100.0,
-          "rank": 104,
+          "rank": 105,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.0,
-          "rank": 104,
+          "rank": 105,
           "rank_scope": "league"
         }
       },
@@ -7253,7 +7253,7 @@
         },
         "top10_win_pct": {
           "value": 0.351,
-          "rank": 17,
+          "rank": 18,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -7409,7 +7409,7 @@
         },
         "top10_win_pct": {
           "value": 0.145,
-          "rank": 42,
+          "rank": 43,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -7486,8 +7486,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.4,
-          "rank": 10,
+          "value": 0.5,
+          "rank": 6,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -7643,7 +7643,7 @@
         },
         "top10_win_pct": {
           "value": 0.081,
-          "rank": 60,
+          "rank": 61,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -7799,7 +7799,7 @@
         },
         "top10_win_pct": {
           "value": 0.111,
-          "rank": 51,
+          "rank": 52,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -7954,8 +7954,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.216,
-          "rank": 31,
+          "value": 0.275,
+          "rank": 24,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -8033,7 +8033,7 @@
         },
         "top10_win_pct": {
           "value": 0.103,
-          "rank": 54,
+          "rank": 55,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -8188,8 +8188,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.323,
-          "rank": 21,
+          "value": 0.311,
+          "rank": 22,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -8471,17 +8471,17 @@
       "metrics": {
         "avg_pf7": {
           "value": 0.0,
-          "rank": 25,
+          "rank": 26,
           "rank_scope": "league"
         },
         "avg_pa7": {
           "value": 0.0,
-          "rank": 25,
+          "rank": 26,
           "rank_scope": "league"
         },
         "avg_pd7": {
           "value": 0.0,
-          "rank": 25,
+          "rank": 26,
           "rank_scope": "league"
         },
         "bonus_rate": {
@@ -8513,17 +8513,17 @@
       "advanced_metrics": {
         "si_plus": {
           "value": 100.0,
-          "rank": 25,
+          "rank": 26,
           "rank_scope": "league"
         },
         "df_plus": {
           "value": 100.0,
-          "rank": 25,
+          "rank": 26,
           "rank_scope": "league"
         },
         "apr_plus": {
           "value": 100.0,
-          "rank": 25,
+          "rank": 26,
           "rank_scope": "league"
         }
       },
@@ -8657,7 +8657,7 @@
         },
         "top10_win_pct": {
           "value": 0.25,
-          "rank": 28,
+          "rank": 27,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -8891,7 +8891,7 @@
         },
         "top10_win_pct": {
           "value": 0.1,
-          "rank": 56,
+          "rank": 57,
           "rank_scope": "league"
         },
         "top33_win_pct": {
@@ -8968,8 +8968,8 @@
           "rank_scope": "league"
         },
         "top10_win_pct": {
-          "value": 0.277,
-          "rank": 25,
+          "value": 0.245,
+          "rank": 28,
           "rank_scope": "league"
         },
         "top33_win_pct": {

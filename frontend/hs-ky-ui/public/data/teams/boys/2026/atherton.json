@@ -21,38 +21,14 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-19T18:58:41.021568Z",
+  "generated_at_utc": "2026-02-25T13:58:49.724910Z",
   "starters": {
     "113": {
       "weight": 113,
       "wrestler_id": "35623136132",
       "name": "Marley Berhow",
-      "current_rank": 88,
+      "current_rank": 86,
       "grade": 11,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 0
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 4
-      },
-      "wins": 11,
-      "losses": 9,
-      "top25_wins": 0,
-      "bonus_rate": 0.75
-    },
-    "120": {
-      "weight": 120,
-      "wrestler_id": "35623196132",
-      "name": "Waylon Davis",
-      "current_rank": 136,
-      "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -64,18 +40,42 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 5
       },
-      "wins": 6,
-      "losses": 10,
+      "wins": 13,
+      "losses": 12,
       "top25_wins": 0,
-      "bonus_rate": 0.5
+      "bonus_rate": 0.8
+    },
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35623012132",
+      "name": "Grace Osantowski",
+      "current_rank": 205,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
     },
     "126": {
       "weight": 126,
       "wrestler_id": "35623065132",
       "name": "Colt Moore",
-      "current_rank": 252,
+      "current_rank": 249,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -99,7 +99,7 @@
       "weight": 138,
       "wrestler_id": "35623018132",
       "name": "Yousif Alfaisal",
-      "current_rank": 58,
+      "current_rank": 125,
       "grade": 10,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -115,7 +115,7 @@
         "losses": 2
       },
       "wins": 7,
-      "losses": 7,
+      "losses": 9,
       "top25_wins": 0,
       "bonus_rate": 0.833
     },
@@ -123,8 +123,32 @@
       "weight": 165,
       "wrestler_id": "35623017132",
       "name": "Wyatt Davis",
-      "current_rank": 47,
+      "current_rank": 49,
       "grade": 10,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 9
+      },
+      "wins": 14,
+      "losses": 17,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "175": {
+      "weight": 175,
+      "wrestler_id": "35623015132",
+      "name": "Amani Swetnam",
+      "current_rank": 37,
+      "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
       "xtp_a": 0.0,
@@ -135,24 +159,48 @@
         "losses": 2
       },
       "top33_record": {
-        "wins": 1,
-        "losses": 11
+        "wins": 0,
+        "losses": 6
       },
-      "wins": 11,
-      "losses": 14,
-      "top25_wins": 1,
+      "wins": 15,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.5
+    },
+    "190": {
+      "weight": 190,
+      "wrestler_id": "35623185132",
+      "name": "Hayden Rutledge",
+      "current_rank": 146,
+      "grade": 11,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "wins": 9,
+      "losses": 13,
+      "top25_wins": 0,
       "bonus_rate": 1.0
     },
-    "175": {
-      "weight": 175,
-      "wrestler_id": "35623015132",
-      "name": "Amani Swetnam",
-      "current_rank": 32,
+    "215": {
+      "weight": 215,
+      "wrestler_id": "35623009132",
+      "name": "Josh Franklin",
+      "current_rank": 99,
       "grade": 11,
-      "xtp": 1.13,
-      "xtp_p": 0.04,
-      "xtp_a": 0.31,
-      "xtp_b": 0.78,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -162,58 +210,10 @@
         "wins": 0,
         "losses": 5
       },
-      "wins": 14,
-      "losses": 6,
+      "wins": 18,
+      "losses": 15,
       "top25_wins": 0,
-      "bonus_rate": 0.538
-    },
-    "190": {
-      "weight": 190,
-      "wrestler_id": "35623185132",
-      "name": "Hayden Rutledge",
-      "current_rank": 123,
-      "grade": 11,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 2
-      },
-      "wins": 9,
-      "losses": 11,
-      "top25_wins": 0,
-      "bonus_rate": 1.0
-    },
-    "215": {
-      "weight": 215,
-      "wrestler_id": "35623009132",
-      "name": "Josh Franklin",
-      "current_rank": 97,
-      "grade": 11,
-      "xtp": 0.0,
-      "xtp_p": 0.0,
-      "xtp_a": 0.0,
-      "xtp_b": 0.0,
-      "xtp_simple": 0.0,
-      "top10_record": {
-        "wins": 0,
-        "losses": 1
-      },
-      "top33_record": {
-        "wins": 0,
-        "losses": 6
-      },
-      "wins": 17,
-      "losses": 13,
-      "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.933
     },
     "285": {
       "weight": 285,
@@ -221,20 +221,20 @@
       "name": "Colton Lewis",
       "current_rank": 5,
       "grade": 12,
-      "xtp": 12.22,
+      "xtp": 12.29,
       "xtp_p": 5.13,
       "xtp_a": 2.53,
-      "xtp_b": 4.56,
+      "xtp_b": 4.63,
       "xtp_simple": 15.0,
       "top10_record": {
         "wins": 3,
         "losses": 0
       },
       "top33_record": {
-        "wins": 6,
+        "wins": 7,
         "losses": 0
       },
-      "wins": 18,
+      "wins": 21,
       "losses": 0,
       "top25_wins": 5,
       "bonus_rate": 1.0
@@ -242,14 +242,14 @@
   },
   "remaining": [
     {
-      "weight": 120,
-      "wrestler_id": "35623012132",
-      "name": "Grace Osantowski",
-      "grade": null,
-      "wins": 0,
-      "losses": 0,
+      "weight": 113,
+      "wrestler_id": "35623196132",
+      "name": "Waylon Davis",
+      "grade": 9,
+      "wins": 6,
+      "losses": 14,
       "top25_wins": 0,
-      "bonus_rate": 0.0
+      "bonus_rate": 0.5
     },
     {
       "weight": 165,
@@ -286,8 +286,8 @@
       "wrestler_id": "35623014132",
       "name": "Oliver Parks",
       "grade": 10,
-      "wins": 14,
-      "losses": 4,
+      "wins": 17,
+      "losses": 7,
       "top25_wins": 0,
       "bonus_rate": 1.0
     }
@@ -304,30 +304,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 93,
-      "losses": 70
+      "wins": 97,
+      "losses": 74
     },
     "top33": {
       "wins": 7,
-      "losses": 34
+      "losses": 30
     },
     "top10": {
       "wins": 3,
-      "losses": 7
+      "losses": 10
     },
     "bonus_rate": {
-      "value": 0.872,
-      "rank": 96,
+      "value": 0.881,
+      "rank": 85,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.756,
-      "rank": 78,
+      "value": 0.774,
+      "rank": 58,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.064,
-      "rank": 96,
+      "value": 0.06,
+      "rank": 98,
       "rank_scope": "league"
     }
   }

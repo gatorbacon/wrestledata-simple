@@ -21,13 +21,13 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-19T18:58:41.043597Z",
+  "generated_at_utc": "2026-02-25T13:58:49.745621Z",
   "starters": {
     "106": {
       "weight": 106,
       "wrestler_id": "35108872132",
       "name": "Jeikol Holleran",
-      "current_rank": 83,
+      "current_rank": 90,
       "grade": 7,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -42,16 +42,16 @@
         "wins": 0,
         "losses": 6
       },
-      "wins": 22,
-      "losses": 20,
+      "wins": 23,
+      "losses": 22,
       "top25_wins": 0,
-      "bonus_rate": 0.938
+      "bonus_rate": 0.941
     },
     "113": {
       "weight": 113,
       "wrestler_id": "35066005132",
       "name": "Braxton Miller",
-      "current_rank": 44,
+      "current_rank": 47,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -64,10 +64,10 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 11
+        "losses": 14
       },
-      "wins": 27,
-      "losses": 17,
+      "wins": 29,
+      "losses": 19,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -75,7 +75,7 @@
       "weight": 120,
       "wrestler_id": "35127027132",
       "name": "Waylon Riggs",
-      "current_rank": 124,
+      "current_rank": 121,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -99,7 +99,7 @@
       "weight": 126,
       "wrestler_id": "34992062132",
       "name": "Braylon Hayes",
-      "current_rank": 43,
+      "current_rank": 42,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -112,7 +112,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 3
+        "losses": 4
       },
       "wins": 32,
       "losses": 8,
@@ -125,29 +125,29 @@
       "name": "Aiden Behnken",
       "current_rank": 29,
       "grade": 10,
-      "xtp": 1.31,
+      "xtp": 1.42,
       "xtp_p": 0.15,
       "xtp_a": 0.44,
-      "xtp_b": 0.72,
+      "xtp_b": 0.83,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
         "losses": 2
       },
       "top33_record": {
-        "wins": 2,
-        "losses": 11
+        "wins": 6,
+        "losses": 12
       },
-      "wins": 40,
-      "losses": 14,
+      "wins": 44,
+      "losses": 15,
       "top25_wins": 2,
-      "bonus_rate": 0.968
+      "bonus_rate": 0.971
     },
     "138": {
       "weight": 138,
       "wrestler_id": "34992060132",
       "name": "Devon Hill",
-      "current_rank": 130,
+      "current_rank": 128,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -171,7 +171,7 @@
       "weight": 144,
       "wrestler_id": "34992068132",
       "name": "Kathryn Floyd",
-      "current_rank": 68,
+      "current_rank": 65,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -195,7 +195,7 @@
       "weight": 157,
       "wrestler_id": "35074477132",
       "name": "Alondra Cortes",
-      "current_rank": 75,
+      "current_rank": 73,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -219,7 +219,7 @@
       "weight": 165,
       "wrestler_id": "34992067132",
       "name": "Greg Curtsinger",
-      "current_rank": 68,
+      "current_rank": 67,
       "grade": 11,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -228,16 +228,16 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "top33_record": {
         "wins": 0,
-        "losses": 8
+        "losses": 10
       },
-      "wins": 31,
-      "losses": 19,
+      "wins": 33,
+      "losses": 21,
       "top25_wins": 0,
-      "bonus_rate": 0.957
+      "bonus_rate": 0.96
     },
     "175": {
       "weight": 175,
@@ -291,7 +291,7 @@
       "weight": 285,
       "wrestler_id": "35150891132",
       "name": "Jaylen Baker",
-      "current_rank": 239,
+      "current_rank": 242,
       "grade": null,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -334,16 +334,6 @@
       "bonus_rate": 1.0
     },
     {
-      "weight": 113,
-      "wrestler_id": "34992061132",
-      "name": "Trae Williams",
-      "grade": 9,
-      "wins": 22,
-      "losses": 16,
-      "top25_wins": 0,
-      "bonus_rate": 0.917
-    },
-    {
       "weight": 120,
       "wrestler_id": "35180462132",
       "name": "Payton Campbell",
@@ -352,6 +342,16 @@
       "losses": 2,
       "top25_wins": 0,
       "bonus_rate": 1.0
+    },
+    {
+      "weight": 120,
+      "wrestler_id": "34992061132",
+      "name": "Trae Williams",
+      "grade": 9,
+      "wins": 22,
+      "losses": 18,
+      "top25_wins": 0,
+      "bonus_rate": 0.917
     },
     {
       "weight": 126,
@@ -388,10 +388,10 @@
       "wrestler_id": "34992059132",
       "name": "Taven Martin",
       "grade": 11,
-      "wins": 14,
-      "losses": 18,
+      "wins": 15,
+      "losses": 20,
       "top25_wins": 0,
-      "bonus_rate": 0.889
+      "bonus_rate": 0.9
     },
     {
       "weight": 144,
@@ -429,7 +429,7 @@
       "name": "Emmanuel Cortes",
       "grade": 9,
       "wins": 7,
-      "losses": 34,
+      "losses": 36,
       "top25_wins": 0,
       "bonus_rate": 1.0
     },
@@ -456,30 +456,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 199,
-      "losses": 111
+      "wins": 208,
+      "losses": 118
     },
     "top33": {
-      "wins": 2,
-      "losses": 44
+      "wins": 6,
+      "losses": 51
     },
     "top10": {
       "wins": 0,
-      "losses": 9
+      "losses": 10
     },
     "bonus_rate": {
-      "value": 0.97,
-      "rank": 13,
+      "value": 0.965,
+      "rank": 17,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.858,
-      "rank": 23,
+      "value": 0.853,
+      "rank": 25,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.09,
-      "rank": 68,
+      "value": 0.091,
+      "rank": 76,
       "rank_scope": "league"
     }
   }
