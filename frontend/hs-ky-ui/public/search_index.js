@@ -55,7 +55,7 @@ window.SEARCH_INDEX = [
       "couper",
       "woods"
     ],
-    "rank": 26,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -111,7 +111,7 @@ window.SEARCH_INDEX = [
       "kaylee",
       "mckown"
     ],
-    "rank": 83,
+    "rank": 82,
     "gender": "boys"
   },
   {
@@ -252,7 +252,7 @@ window.SEARCH_INDEX = [
       "price",
       "xavior"
     ],
-    "rank": 81,
+    "rank": 80,
     "gender": "boys"
   },
   {
@@ -280,7 +280,7 @@ window.SEARCH_INDEX = [
       "rainey",
       "uriah"
     ],
-    "rank": 38,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -294,7 +294,7 @@ window.SEARCH_INDEX = [
       "jax",
       "reynolds"
     ],
-    "rank": 25,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -308,7 +308,7 @@ window.SEARCH_INDEX = [
       "sanderlyn",
       "talon"
     ],
-    "rank": 1,
+    "rank": 3,
     "gender": "boys"
   },
   {
@@ -336,7 +336,7 @@ window.SEARCH_INDEX = [
       "burnett",
       "denis"
     ],
-    "rank": 56,
+    "rank": 57,
     "gender": "boys"
   },
   {
@@ -397,6 +397,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Trey Herron",
+    "first_name": "Trey",
+    "last_name": "Herron",
+    "secondary": "Caldwell County · 106",
+    "url": "/wrestler.html?id=35221003132&gender=boys",
+    "searchTokens": [
+      "herron",
+      "trey"
+    ],
+    "rank": 41,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
     "name": "Emmitt Champion",
     "first_name": "Emmitt",
     "last_name": "Champion",
@@ -406,7 +420,7 @@ window.SEARCH_INDEX = [
       "champion",
       "emmitt"
     ],
-    "rank": 52,
+    "rank": 53,
     "gender": "boys"
   },
   {
@@ -420,7 +434,7 @@ window.SEARCH_INDEX = [
       "jaxan",
       "riley"
     ],
-    "rank": 37,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -434,7 +448,7 @@ window.SEARCH_INDEX = [
       "brody",
       "schroers"
     ],
-    "rank": 128,
+    "rank": 127,
     "gender": "boys"
   },
   {
@@ -532,7 +546,7 @@ window.SEARCH_INDEX = [
       "bahrami",
       "tehran"
     ],
-    "rank": 72,
+    "rank": 58,
     "gender": "boys"
   },
   {
@@ -560,7 +574,7 @@ window.SEARCH_INDEX = [
       "leonard",
       "river"
     ],
-    "rank": 40,
+    "rank": 45,
     "gender": "boys"
   },
   {
@@ -588,7 +602,7 @@ window.SEARCH_INDEX = [
       "ben",
       "bentzel"
     ],
-    "rank": 49,
+    "rank": 52,
     "gender": "boys"
   },
   {
@@ -616,7 +630,7 @@ window.SEARCH_INDEX = [
       "mason",
       "surber"
     ],
-    "rank": 129,
+    "rank": 128,
     "gender": "boys"
   },
   {
@@ -700,7 +714,7 @@ window.SEARCH_INDEX = [
       "presley",
       "thomas"
     ],
-    "rank": 131,
+    "rank": 130,
     "gender": "boys"
   },
   {
@@ -728,7 +742,7 @@ window.SEARCH_INDEX = [
       "hayse",
       "tristan"
     ],
-    "rank": 130,
+    "rank": 129,
     "gender": "boys"
   },
   {
@@ -742,7 +756,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "mattingly"
     ],
-    "rank": 57,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -770,7 +784,7 @@ window.SEARCH_INDEX = [
       "derek",
       "tran"
     ],
-    "rank": 13,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -784,7 +798,7 @@ window.SEARCH_INDEX = [
       "lee",
       "rogde"
     ],
-    "rank": 79,
+    "rank": 78,
     "gender": "boys"
   },
   {
@@ -798,7 +812,7 @@ window.SEARCH_INDEX = [
       "sam",
       "stauffer"
     ],
-    "rank": 124,
+    "rank": 123,
     "gender": "boys"
   },
   {
@@ -812,7 +826,7 @@ window.SEARCH_INDEX = [
       "niko",
       "storm"
     ],
-    "rank": 39,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -826,7 +840,7 @@ window.SEARCH_INDEX = [
       "cameron",
       "michel"
     ],
-    "rank": 59,
+    "rank": 67,
     "gender": "boys"
   },
   {
@@ -939,7 +953,7 @@ window.SEARCH_INDEX = [
       "green",
       "makarios"
     ],
-    "rank": 44,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -953,7 +967,7 @@ window.SEARCH_INDEX = [
       "aaliyah",
       "bronger"
     ],
-    "rank": 60,
+    "rank": 85,
     "gender": "boys"
   },
   {
@@ -1023,7 +1037,7 @@ window.SEARCH_INDEX = [
       "bell",
       "cooper"
     ],
-    "rank": 48,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -1037,7 +1051,7 @@ window.SEARCH_INDEX = [
       "davis",
       "hank"
     ],
-    "rank": 46,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -1051,7 +1065,7 @@ window.SEARCH_INDEX = [
       "blackmore",
       "wyatt"
     ],
-    "rank": 55,
+    "rank": 56,
     "gender": "boys"
   },
   {
@@ -1093,7 +1107,7 @@ window.SEARCH_INDEX = [
       "atchison",
       "clay"
     ],
-    "rank": 24,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -1107,7 +1121,7 @@ window.SEARCH_INDEX = [
       "hunley",
       "jaiven"
     ],
-    "rank": 78,
+    "rank": 76,
     "gender": "boys"
   },
   {
@@ -1121,7 +1135,7 @@ window.SEARCH_INDEX = [
       "lamotte",
       "ryan"
     ],
-    "rank": 54,
+    "rank": 55,
     "gender": "boys"
   },
   {
@@ -1205,7 +1219,7 @@ window.SEARCH_INDEX = [
       "asher",
       "daily"
     ],
-    "rank": 22,
+    "rank": 25,
     "gender": "boys"
   },
   {
@@ -1219,7 +1233,7 @@ window.SEARCH_INDEX = [
       "elder",
       "kaleb"
     ],
-    "rank": 58,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -1261,7 +1275,7 @@ window.SEARCH_INDEX = [
       "booth",
       "riley"
     ],
-    "rank": 255,
+    "rank": 242,
     "gender": "boys"
   },
   {
@@ -1289,7 +1303,7 @@ window.SEARCH_INDEX = [
       "parker",
       "wilkens"
     ],
-    "rank": 10,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -1331,7 +1345,7 @@ window.SEARCH_INDEX = [
       "elnar",
       "kamalov"
     ],
-    "rank": 42,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -1373,7 +1387,7 @@ window.SEARCH_INDEX = [
       "heath",
       "may"
     ],
-    "rank": 71,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -1416,7 +1430,7 @@ window.SEARCH_INDEX = [
       "carson",
       "gross"
     ],
-    "rank": 67,
+    "rank": 68,
     "gender": "boys"
   },
   {
@@ -1458,7 +1472,7 @@ window.SEARCH_INDEX = [
       "dameon",
       "jones"
     ],
-    "rank": 21,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -1500,7 +1514,7 @@ window.SEARCH_INDEX = [
       "jason",
       "la"
     ],
-    "rank": 125,
+    "rank": 124,
     "gender": "boys"
   },
   {
@@ -1514,7 +1528,7 @@ window.SEARCH_INDEX = [
       "mattingly",
       "mikah"
     ],
-    "rank": 29,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -1556,7 +1570,7 @@ window.SEARCH_INDEX = [
       "brody",
       "jewell"
     ],
-    "rank": 7,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -1570,7 +1584,7 @@ window.SEARCH_INDEX = [
       "delong",
       "luke"
     ],
-    "rank": 123,
+    "rank": 122,
     "gender": "boys"
   },
   {
@@ -1598,7 +1612,7 @@ window.SEARCH_INDEX = [
       "anderson",
       "hunter"
     ],
-    "rank": 85,
+    "rank": 84,
     "gender": "boys"
   },
   {
@@ -1640,7 +1654,7 @@ window.SEARCH_INDEX = [
       "alex",
       "upchurch"
     ],
-    "rank": 23,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -1654,7 +1668,7 @@ window.SEARCH_INDEX = [
       "gilreath",
       "max"
     ],
-    "rank": 28,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -1668,7 +1682,7 @@ window.SEARCH_INDEX = [
       "crifaci",
       "lucas"
     ],
-    "rank": 74,
+    "rank": 72,
     "gender": "boys"
   },
   {
@@ -1682,7 +1696,7 @@ window.SEARCH_INDEX = [
       "bryton",
       "kerns"
     ],
-    "rank": 41,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -1696,7 +1710,7 @@ window.SEARCH_INDEX = [
       "bloyd",
       "wyatt"
     ],
-    "rank": 247,
+    "rank": 250,
     "gender": "boys"
   },
   {
@@ -1710,7 +1724,7 @@ window.SEARCH_INDEX = [
       "booth",
       "levi"
     ],
-    "rank": 244,
+    "rank": 253,
     "gender": "boys"
   },
   {
@@ -1724,7 +1738,7 @@ window.SEARCH_INDEX = [
       "mankin",
       "peyton"
     ],
-    "rank": 245,
+    "rank": 252,
     "gender": "boys"
   },
   {
@@ -1752,7 +1766,7 @@ window.SEARCH_INDEX = [
       "micah",
       "ransdell"
     ],
-    "rank": 246,
+    "rank": 251,
     "gender": "boys"
   },
   {
@@ -1766,7 +1780,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "preston"
     ],
-    "rank": 68,
+    "rank": 77,
     "gender": "boys"
   },
   {
@@ -1780,7 +1794,7 @@ window.SEARCH_INDEX = [
       "bratcher",
       "trenton"
     ],
-    "rank": 12,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -1822,7 +1836,7 @@ window.SEARCH_INDEX = [
       "daniel",
       "stark"
     ],
-    "rank": 6,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -1836,7 +1850,7 @@ window.SEARCH_INDEX = [
       "landon",
       "vidt"
     ],
-    "rank": 36,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -1906,7 +1920,7 @@ window.SEARCH_INDEX = [
       "lincoln",
       "maynard"
     ],
-    "rank": 3,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -1934,7 +1948,7 @@ window.SEARCH_INDEX = [
       "athey",
       "josh"
     ],
-    "rank": 47,
+    "rank": 51,
     "gender": "boys"
   },
   {
@@ -1976,7 +1990,7 @@ window.SEARCH_INDEX = [
       "ammon",
       "chris"
     ],
-    "rank": 27,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -1990,7 +2004,7 @@ window.SEARCH_INDEX = [
       "boa",
       "ephraim"
     ],
-    "rank": 251,
+    "rank": 246,
     "gender": "boys"
   },
   {
@@ -2032,7 +2046,7 @@ window.SEARCH_INDEX = [
       "clayton",
       "olson"
     ],
-    "rank": 249,
+    "rank": 248,
     "gender": "boys"
   },
   {
@@ -2046,7 +2060,7 @@ window.SEARCH_INDEX = [
       "jace",
       "rynes"
     ],
-    "rank": 250,
+    "rank": 247,
     "gender": "boys"
   },
   {
@@ -2060,7 +2074,7 @@ window.SEARCH_INDEX = [
       "abram",
       "springer"
     ],
-    "rank": 126,
+    "rank": 125,
     "gender": "boys"
   },
   {
@@ -2074,7 +2088,7 @@ window.SEARCH_INDEX = [
       "edgar",
       "jackson"
     ],
-    "rank": 50,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -2145,7 +2159,7 @@ window.SEARCH_INDEX = [
       "davis",
       "jake"
     ],
-    "rank": 53,
+    "rank": 54,
     "gender": "boys"
   },
   {
@@ -2159,7 +2173,7 @@ window.SEARCH_INDEX = [
       "christian",
       "prietto-bottoms"
     ],
-    "rank": 11,
+    "rank": 6,
     "gender": "boys"
   },
   {
@@ -2187,7 +2201,7 @@ window.SEARCH_INDEX = [
       "beeken",
       "susie"
     ],
-    "rank": 82,
+    "rank": 81,
     "gender": "boys"
   },
   {
@@ -2215,7 +2229,7 @@ window.SEARCH_INDEX = [
       "kyler",
       "miller"
     ],
-    "rank": 73,
+    "rank": 71,
     "gender": "boys"
   },
   {
@@ -2243,7 +2257,7 @@ window.SEARCH_INDEX = [
       "camron",
       "lawson"
     ],
-    "rank": 84,
+    "rank": 83,
     "gender": "boys"
   },
   {
@@ -2369,7 +2383,7 @@ window.SEARCH_INDEX = [
       "bradford",
       "braxton"
     ],
-    "rank": 122,
+    "rank": 133,
     "gender": "boys"
   },
   {
@@ -2383,7 +2397,7 @@ window.SEARCH_INDEX = [
       "rowsey",
       "uriah"
     ],
-    "rank": 132,
+    "rank": 131,
     "gender": "boys"
   },
   {
@@ -2481,7 +2495,7 @@ window.SEARCH_INDEX = [
       "bisotti",
       "harrison"
     ],
-    "rank": 252,
+    "rank": 245,
     "gender": "boys"
   },
   {
@@ -2509,7 +2523,7 @@ window.SEARCH_INDEX = [
       "lumpkins",
       "ryan"
     ],
-    "rank": 31,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -2523,7 +2537,7 @@ window.SEARCH_INDEX = [
       "bentancourt",
       "chuck"
     ],
-    "rank": 32,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -2551,7 +2565,7 @@ window.SEARCH_INDEX = [
       "blevins",
       "cody"
     ],
-    "rank": 8,
+    "rank": 2,
     "gender": "boys"
   },
   {
@@ -2565,7 +2579,7 @@ window.SEARCH_INDEX = [
       "brooks",
       "mason"
     ],
-    "rank": 2,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -2593,7 +2607,7 @@ window.SEARCH_INDEX = [
       "edlin",
       "hunter"
     ],
-    "rank": 45,
+    "rank": 49,
     "gender": "boys"
   },
   {
@@ -2636,7 +2650,7 @@ window.SEARCH_INDEX = [
       "akaidian",
       "lawler"
     ],
-    "rank": 75,
+    "rank": 73,
     "gender": "boys"
   },
   {
@@ -2664,7 +2678,7 @@ window.SEARCH_INDEX = [
       "sharp",
       "symphony"
     ],
-    "rank": 80,
+    "rank": 79,
     "gender": "boys"
   },
   {
@@ -2678,7 +2692,7 @@ window.SEARCH_INDEX = [
       "ignatius",
       "wright"
     ],
-    "rank": 30,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -2706,7 +2720,7 @@ window.SEARCH_INDEX = [
       "julian",
       "ramos"
     ],
-    "rank": 127,
+    "rank": 126,
     "gender": "boys"
   },
   {
@@ -2804,7 +2818,7 @@ window.SEARCH_INDEX = [
       "brady",
       "elder"
     ],
-    "rank": 76,
+    "rank": 74,
     "gender": "boys"
   },
   {
@@ -2818,7 +2832,7 @@ window.SEARCH_INDEX = [
       "gray",
       "noah"
     ],
-    "rank": 133,
+    "rank": 132,
     "gender": "boys"
   },
   {
@@ -2860,7 +2874,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "taylor"
     ],
-    "rank": 4,
+    "rank": 1,
     "gender": "boys"
   },
   {
@@ -2902,7 +2916,7 @@ window.SEARCH_INDEX = [
       "response",
       "shyaka"
     ],
-    "rank": 77,
+    "rank": 75,
     "gender": "boys"
   },
   {
@@ -3028,7 +3042,7 @@ window.SEARCH_INDEX = [
       "holt",
       "xzander"
     ],
-    "rank": 51,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -3056,7 +3070,7 @@ window.SEARCH_INDEX = [
       "leland",
       "markwell"
     ],
-    "rank": 43,
+    "rank": 48,
     "gender": "boys"
   },
   {
@@ -3776,6 +3790,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "alex",
       "krauss"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Mason Brooks",
+    "first_name": "Mason",
+    "last_name": "Brooks",
+    "secondary": "Somerset · 106",
+    "url": "/wrestler.html?id=OUTSTATE_2b92a07db67d&gender=boys",
+    "searchTokens": [
+      "brooks",
+      "mason"
     ],
     "rank": null,
     "gender": "boys"
@@ -5834,20 +5862,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Lucas Doggett",
-    "first_name": "Lucas",
-    "last_name": "Doggett",
-    "secondary": "Tecumseh High School · 106",
-    "url": "/wrestler.html?id=OUTSTATE_6e75622366ec&gender=boys",
-    "searchTokens": [
-      "doggett",
-      "lucas"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "William Mason Heidler",
     "first_name": "William",
     "last_name": "Mason Heidler",
@@ -5857,6 +5871,20 @@ window.SEARCH_INDEX = [
       "heidler",
       "mason",
       "william"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Lucas Doggett",
+    "first_name": "Lucas",
+    "last_name": "Doggett",
+    "secondary": "Tecumseh High School · 106",
+    "url": "/wrestler.html?id=OUTSTATE_6e75622366ec&gender=boys",
+    "searchTokens": [
+      "doggett",
+      "lucas"
     ],
     "rank": null,
     "gender": "boys"
@@ -6628,6 +6656,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Talon Sanderlyn",
+    "first_name": "Talon",
+    "last_name": "Sanderlyn",
+    "secondary": "Boyle County · 106",
+    "url": "/wrestler.html?id=OUTSTATE_cd454d53cd56&gender=boys",
+    "searchTokens": [
+      "sanderlyn",
+      "talon"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
     "name": "Zariah Hampton",
     "first_name": "Zariah",
     "last_name": "Hampton",
@@ -7012,7 +7054,7 @@ window.SEARCH_INDEX = [
       "kevin",
       "lopez"
     ],
-    "rank": 6,
+    "rank": 2,
     "gender": "boys"
   },
   {
@@ -7054,7 +7096,7 @@ window.SEARCH_INDEX = [
       "juliette",
       "ruiz"
     ],
-    "rank": 56,
+    "rank": 57,
     "gender": "boys"
   },
   {
@@ -7068,7 +7110,7 @@ window.SEARCH_INDEX = [
       "braxton",
       "miller"
     ],
-    "rank": 47,
+    "rank": 48,
     "gender": "boys"
   },
   {
@@ -7110,7 +7152,7 @@ window.SEARCH_INDEX = [
       "brantley",
       "scott"
     ],
-    "rank": 58,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -7264,7 +7306,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "martin"
     ],
-    "rank": 35,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -7279,20 +7321,6 @@ window.SEARCH_INDEX = [
       "neticia"
     ],
     "rank": 147,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
-    "name": "Trey Herron",
-    "first_name": "Trey",
-    "last_name": "Herron",
-    "secondary": "Caldwell County · 113",
-    "url": "/wrestler.html?id=35221003132&gender=boys",
-    "searchTokens": [
-      "herron",
-      "trey"
-    ],
-    "rank": 38,
     "gender": "boys"
   },
   {
@@ -7334,7 +7362,7 @@ window.SEARCH_INDEX = [
       "christian",
       "church"
     ],
-    "rank": 48,
+    "rank": 49,
     "gender": "boys"
   },
   {
@@ -7348,7 +7376,7 @@ window.SEARCH_INDEX = [
       "colton",
       "reed"
     ],
-    "rank": 101,
+    "rank": 35,
     "gender": "boys"
   },
   {
@@ -7362,7 +7390,7 @@ window.SEARCH_INDEX = [
       "simpson",
       "troy"
     ],
-    "rank": 103,
+    "rank": 102,
     "gender": "boys"
   },
   {
@@ -7376,7 +7404,7 @@ window.SEARCH_INDEX = [
       "babacar",
       "thioye"
     ],
-    "rank": 102,
+    "rank": 101,
     "gender": "boys"
   },
   {
@@ -7418,7 +7446,7 @@ window.SEARCH_INDEX = [
       "anthony",
       "velasco"
     ],
-    "rank": 10,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -7432,7 +7460,7 @@ window.SEARCH_INDEX = [
       "hatfield",
       "mikey"
     ],
-    "rank": 50,
+    "rank": 51,
     "gender": "boys"
   },
   {
@@ -7446,7 +7474,7 @@ window.SEARCH_INDEX = [
       "abdi",
       "zaq"
     ],
-    "rank": 8,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -7502,7 +7530,7 @@ window.SEARCH_INDEX = [
       "cochran",
       "maddox"
     ],
-    "rank": 41,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -7586,7 +7614,7 @@ window.SEARCH_INDEX = [
       "jaxen",
       "skaggs"
     ],
-    "rank": 59,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -7614,7 +7642,7 @@ window.SEARCH_INDEX = [
       "green",
       "makai"
     ],
-    "rank": 20,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -7726,7 +7754,7 @@ window.SEARCH_INDEX = [
       "andy",
       "cintron"
     ],
-    "rank": 24,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -7740,7 +7768,7 @@ window.SEARCH_INDEX = [
       "alexa",
       "ybarra"
     ],
-    "rank": 106,
+    "rank": 105,
     "gender": "boys"
   },
   {
@@ -7754,7 +7782,7 @@ window.SEARCH_INDEX = [
       "powell",
       "samuel"
     ],
-    "rank": 36,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -7838,7 +7866,7 @@ window.SEARCH_INDEX = [
       "max",
       "murdock"
     ],
-    "rank": 46,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -7894,7 +7922,7 @@ window.SEARCH_INDEX = [
       "sang",
       "thomas"
     ],
-    "rank": 14,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -7908,7 +7936,7 @@ window.SEARCH_INDEX = [
       "jason",
       "maggard"
     ],
-    "rank": 37,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -7936,7 +7964,7 @@ window.SEARCH_INDEX = [
       "ezekiel",
       "young"
     ],
-    "rank": 105,
+    "rank": 104,
     "gender": "boys"
   },
   {
@@ -7978,7 +8006,7 @@ window.SEARCH_INDEX = [
       "remi",
       "rodriguez"
     ],
-    "rank": 51,
+    "rank": 52,
     "gender": "boys"
   },
   {
@@ -7992,7 +8020,7 @@ window.SEARCH_INDEX = [
       "alexander",
       "smith"
     ],
-    "rank": 53,
+    "rank": 54,
     "gender": "boys"
   },
   {
@@ -8020,7 +8048,7 @@ window.SEARCH_INDEX = [
       "ayden",
       "brison"
     ],
-    "rank": 23,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -8076,7 +8104,7 @@ window.SEARCH_INDEX = [
       "ahmed",
       "alobaidi"
     ],
-    "rank": 29,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -8104,7 +8132,7 @@ window.SEARCH_INDEX = [
       "christian",
       "piedad"
     ],
-    "rank": 94,
+    "rank": 93,
     "gender": "boys"
   },
   {
@@ -8118,7 +8146,7 @@ window.SEARCH_INDEX = [
       "clouse",
       "noah"
     ],
-    "rank": 16,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -8146,7 +8174,7 @@ window.SEARCH_INDEX = [
       "fortier",
       "jude"
     ],
-    "rank": 22,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -8202,7 +8230,7 @@ window.SEARCH_INDEX = [
       "bentley",
       "fleming"
     ],
-    "rank": 54,
+    "rank": 55,
     "gender": "boys"
   },
   {
@@ -8216,7 +8244,7 @@ window.SEARCH_INDEX = [
       "grigsby",
       "preston"
     ],
-    "rank": 49,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -8230,7 +8258,7 @@ window.SEARCH_INDEX = [
       "hamann",
       "izik"
     ],
-    "rank": 26,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -8258,7 +8286,7 @@ window.SEARCH_INDEX = [
       "camryn",
       "coffey"
     ],
-    "rank": 18,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -8356,7 +8384,7 @@ window.SEARCH_INDEX = [
       "evan",
       "martin"
     ],
-    "rank": 9,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -8384,7 +8412,7 @@ window.SEARCH_INDEX = [
       "parriman",
       "ricky"
     ],
-    "rank": 17,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -8468,7 +8496,7 @@ window.SEARCH_INDEX = [
       "ayden",
       "votaw"
     ],
-    "rank": 5,
+    "rank": 6,
     "gender": "boys"
   },
   {
@@ -8482,7 +8510,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "sotelo"
     ],
-    "rank": 40,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -8496,7 +8524,7 @@ window.SEARCH_INDEX = [
       "crittenden",
       "kaiden"
     ],
-    "rank": 21,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -8524,7 +8552,7 @@ window.SEARCH_INDEX = [
       "gish",
       "kavan"
     ],
-    "rank": 28,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -8538,7 +8566,7 @@ window.SEARCH_INDEX = [
       "lukas",
       "shuck"
     ],
-    "rank": 7,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -8552,7 +8580,7 @@ window.SEARCH_INDEX = [
       "jake",
       "pulliam"
     ],
-    "rank": 15,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -8608,7 +8636,7 @@ window.SEARCH_INDEX = [
       "chris",
       "richie"
     ],
-    "rank": 44,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -8650,7 +8678,7 @@ window.SEARCH_INDEX = [
       "quentin",
       "troxell"
     ],
-    "rank": 43,
+    "rank": 45,
     "gender": "boys"
   },
   {
@@ -8720,7 +8748,7 @@ window.SEARCH_INDEX = [
       "brinkman",
       "bryant"
     ],
-    "rank": 1,
+    "rank": 5,
     "gender": "boys"
   },
   {
@@ -8762,7 +8790,7 @@ window.SEARCH_INDEX = [
       "jay",
       "kenny"
     ],
-    "rank": 60,
+    "rank": 106,
     "gender": "boys"
   },
   {
@@ -8804,7 +8832,7 @@ window.SEARCH_INDEX = [
       "dauenbaugh",
       "kaiden"
     ],
-    "rank": 27,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -8832,7 +8860,7 @@ window.SEARCH_INDEX = [
       "cameron",
       "underwood"
     ],
-    "rank": 4,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -8846,7 +8874,7 @@ window.SEARCH_INDEX = [
       "barnes",
       "makay"
     ],
-    "rank": 45,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -8916,7 +8944,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "maier"
     ],
-    "rank": 52,
+    "rank": 53,
     "gender": "boys"
   },
   {
@@ -8944,7 +8972,7 @@ window.SEARCH_INDEX = [
       "diaz",
       "james"
     ],
-    "rank": 93,
+    "rank": 94,
     "gender": "boys"
   },
   {
@@ -8972,7 +9000,7 @@ window.SEARCH_INDEX = [
       "al-thini",
       "albaraa"
     ],
-    "rank": 42,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -9042,7 +9070,7 @@ window.SEARCH_INDEX = [
       "fowler",
       "peyton"
     ],
-    "rank": 2,
+    "rank": 1,
     "gender": "boys"
   },
   {
@@ -9056,7 +9084,7 @@ window.SEARCH_INDEX = [
       "braylon",
       "ryan"
     ],
-    "rank": 13,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -9084,7 +9112,7 @@ window.SEARCH_INDEX = [
       "smith",
       "wyatt"
     ],
-    "rank": 12,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -9126,7 +9154,7 @@ window.SEARCH_INDEX = [
       "fields",
       "zachary"
     ],
-    "rank": 11,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -9140,7 +9168,7 @@ window.SEARCH_INDEX = [
       "davis",
       "grant"
     ],
-    "rank": 55,
+    "rank": 56,
     "gender": "boys"
   },
   {
@@ -9154,7 +9182,7 @@ window.SEARCH_INDEX = [
       "dotson",
       "nicolas"
     ],
-    "rank": 39,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -12834,7 +12862,7 @@ window.SEARCH_INDEX = [
       "lay",
       "trenton"
     ],
-    "rank": 120,
+    "rank": 122,
     "gender": "boys"
   },
   {
@@ -12862,7 +12890,7 @@ window.SEARCH_INDEX = [
       "pierce",
       "stotts"
     ],
-    "rank": 85,
+    "rank": 86,
     "gender": "boys"
   },
   {
@@ -12876,7 +12904,7 @@ window.SEARCH_INDEX = [
       "bryson",
       "kraner"
     ],
-    "rank": 118,
+    "rank": 120,
     "gender": "boys"
   },
   {
@@ -12890,7 +12918,7 @@ window.SEARCH_INDEX = [
       "angela",
       "mejia"
     ],
-    "rank": 80,
+    "rank": 81,
     "gender": "boys"
   },
   {
@@ -12918,7 +12946,7 @@ window.SEARCH_INDEX = [
       "howard",
       "jaxton"
     ],
-    "rank": 9,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -12960,7 +12988,7 @@ window.SEARCH_INDEX = [
       "shane",
       "steele"
     ],
-    "rank": 112,
+    "rank": 114,
     "gender": "boys"
   },
   {
@@ -12988,7 +13016,7 @@ window.SEARCH_INDEX = [
       "elder",
       "lucas"
     ],
-    "rank": 157,
+    "rank": 158,
     "gender": "boys"
   },
   {
@@ -13002,7 +13030,7 @@ window.SEARCH_INDEX = [
       "riggs",
       "waylon"
     ],
-    "rank": 121,
+    "rank": 123,
     "gender": "boys"
   },
   {
@@ -13030,7 +13058,7 @@ window.SEARCH_INDEX = [
       "campbell",
       "payton"
     ],
-    "rank": 116,
+    "rank": 118,
     "gender": "boys"
   },
   {
@@ -13086,7 +13114,7 @@ window.SEARCH_INDEX = [
       "cole",
       "young"
     ],
-    "rank": 27,
+    "rank": 25,
     "gender": "boys"
   },
   {
@@ -13100,7 +13128,7 @@ window.SEARCH_INDEX = [
       "chris",
       "muratalla"
     ],
-    "rank": 53,
+    "rank": 52,
     "gender": "boys"
   },
   {
@@ -13128,7 +13156,7 @@ window.SEARCH_INDEX = [
       "diaz",
       "kaiden"
     ],
-    "rank": 93,
+    "rank": 101,
     "gender": "boys"
   },
   {
@@ -13156,7 +13184,7 @@ window.SEARCH_INDEX = [
       "gavin",
       "mccalvin"
     ],
-    "rank": 84,
+    "rank": 85,
     "gender": "boys"
   },
   {
@@ -13170,7 +13198,7 @@ window.SEARCH_INDEX = [
       "samuel",
       "scott"
     ],
-    "rank": 158,
+    "rank": 157,
     "gender": "boys"
   },
   {
@@ -13212,7 +13240,7 @@ window.SEARCH_INDEX = [
       "braylon",
       "newell"
     ],
-    "rank": 20,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -13254,7 +13282,7 @@ window.SEARCH_INDEX = [
       "fitterer",
       "jacob"
     ],
-    "rank": 49,
+    "rank": 55,
     "gender": "boys"
   },
   {
@@ -13296,7 +13324,7 @@ window.SEARCH_INDEX = [
       "briella",
       "levy"
     ],
-    "rank": 88,
+    "rank": 89,
     "gender": "boys"
   },
   {
@@ -13324,7 +13352,7 @@ window.SEARCH_INDEX = [
       "hayes",
       "tanner"
     ],
-    "rank": 117,
+    "rank": 119,
     "gender": "boys"
   },
   {
@@ -13338,7 +13366,7 @@ window.SEARCH_INDEX = [
       "ranshaw",
       "russell"
     ],
-    "rank": 102,
+    "rank": 103,
     "gender": "boys"
   },
   {
@@ -13352,7 +13380,7 @@ window.SEARCH_INDEX = [
       "kao",
       "kody"
     ],
-    "rank": 175,
+    "rank": 176,
     "gender": "boys"
   },
   {
@@ -13380,7 +13408,7 @@ window.SEARCH_INDEX = [
       "davis",
       "narhiya"
     ],
-    "rank": 128,
+    "rank": 113,
     "gender": "boys"
   },
   {
@@ -13394,7 +13422,7 @@ window.SEARCH_INDEX = [
       "chase",
       "mort"
     ],
-    "rank": 17,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -13408,7 +13436,7 @@ window.SEARCH_INDEX = [
       "matthew",
       "ruiz"
     ],
-    "rank": 176,
+    "rank": 175,
     "gender": "boys"
   },
   {
@@ -13422,7 +13450,7 @@ window.SEARCH_INDEX = [
       "hunter",
       "jorgenson"
     ],
-    "rank": 125,
+    "rank": 58,
     "gender": "boys"
   },
   {
@@ -13450,7 +13478,7 @@ window.SEARCH_INDEX = [
       "dicken",
       "keaton"
     ],
-    "rank": 7,
+    "rank": 6,
     "gender": "boys"
   },
   {
@@ -13464,7 +13492,7 @@ window.SEARCH_INDEX = [
       "bowling",
       "keegan"
     ],
-    "rank": 110,
+    "rank": 111,
     "gender": "boys"
   },
   {
@@ -13478,7 +13506,7 @@ window.SEARCH_INDEX = [
       "anders",
       "hagen"
     ],
-    "rank": 37,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -13506,7 +13534,7 @@ window.SEARCH_INDEX = [
       "emilio",
       "rodriguez"
     ],
-    "rank": 13,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -13548,7 +13576,7 @@ window.SEARCH_INDEX = [
       "adair-castro",
       "brandon"
     ],
-    "rank": 119,
+    "rank": 121,
     "gender": "boys"
   },
   {
@@ -13618,7 +13646,7 @@ window.SEARCH_INDEX = [
       "boatman",
       "gracen"
     ],
-    "rank": 26,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -13646,7 +13674,7 @@ window.SEARCH_INDEX = [
       "hall",
       "rameil"
     ],
-    "rank": 101,
+    "rank": 102,
     "gender": "boys"
   },
   {
@@ -13674,7 +13702,7 @@ window.SEARCH_INDEX = [
       "alexis",
       "gibson"
     ],
-    "rank": 143,
+    "rank": 142,
     "gender": "boys"
   },
   {
@@ -13702,7 +13730,7 @@ window.SEARCH_INDEX = [
       "jack",
       "rawlings"
     ],
-    "rank": 42,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -13716,7 +13744,7 @@ window.SEARCH_INDEX = [
       "dillon",
       "lewis"
     ],
-    "rank": 31,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -13730,7 +13758,7 @@ window.SEARCH_INDEX = [
       "coridell",
       "schoen"
     ],
-    "rank": 60,
+    "rank": 57,
     "gender": "boys"
   },
   {
@@ -13815,7 +13843,7 @@ window.SEARCH_INDEX = [
       "contreras",
       "decimus"
     ],
-    "rank": 79,
+    "rank": 80,
     "gender": "boys"
   },
   {
@@ -13829,7 +13857,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "gilmore"
     ],
-    "rank": 34,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -13843,7 +13871,7 @@ window.SEARCH_INDEX = [
       "jakobe",
       "reed"
     ],
-    "rank": 55,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -13871,7 +13899,7 @@ window.SEARCH_INDEX = [
       "clem",
       "gavin"
     ],
-    "rank": 24,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -13899,7 +13927,7 @@ window.SEARCH_INDEX = [
       "carr",
       "joe"
     ],
-    "rank": 15,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -13955,7 +13983,7 @@ window.SEARCH_INDEX = [
       "crabtree",
       "hunter"
     ],
-    "rank": 56,
+    "rank": 53,
     "gender": "boys"
   },
   {
@@ -14039,7 +14067,7 @@ window.SEARCH_INDEX = [
       "kase",
       "walters"
     ],
-    "rank": 92,
+    "rank": 93,
     "gender": "boys"
   },
   {
@@ -14053,7 +14081,7 @@ window.SEARCH_INDEX = [
       "caleb",
       "clary"
     ],
-    "rank": 52,
+    "rank": 51,
     "gender": "boys"
   },
   {
@@ -14067,7 +14095,7 @@ window.SEARCH_INDEX = [
       "kashaun",
       "taylor"
     ],
-    "rank": 59,
+    "rank": 54,
     "gender": "boys"
   },
   {
@@ -14095,7 +14123,7 @@ window.SEARCH_INDEX = [
       "alexander",
       "johnson"
     ],
-    "rank": 25,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -14109,7 +14137,7 @@ window.SEARCH_INDEX = [
       "nickelman",
       "ryan"
     ],
-    "rank": 30,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -14151,7 +14179,7 @@ window.SEARCH_INDEX = [
       "christon",
       "johnson"
     ],
-    "rank": 38,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -14165,7 +14193,7 @@ window.SEARCH_INDEX = [
       "duran",
       "eduardo"
     ],
-    "rank": 114,
+    "rank": 116,
     "gender": "boys"
   },
   {
@@ -14193,7 +14221,7 @@ window.SEARCH_INDEX = [
       "husseins",
       "ismail"
     ],
-    "rank": 40,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -14207,7 +14235,7 @@ window.SEARCH_INDEX = [
       "aznur",
       "kamalov"
     ],
-    "rank": 29,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -14277,7 +14305,7 @@ window.SEARCH_INDEX = [
       "carson",
       "matney"
     ],
-    "rank": 6,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -14305,7 +14333,7 @@ window.SEARCH_INDEX = [
       "ditto",
       "liam"
     ],
-    "rank": 18,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -14347,7 +14375,7 @@ window.SEARCH_INDEX = [
       "alghanemi",
       "kadham"
     ],
-    "rank": 12,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -14361,7 +14389,7 @@ window.SEARCH_INDEX = [
       "fletcher",
       "jace"
     ],
-    "rank": 108,
+    "rank": 109,
     "gender": "boys"
   },
   {
@@ -14375,7 +14403,7 @@ window.SEARCH_INDEX = [
       "damien",
       "falter"
     ],
-    "rank": 126,
+    "rank": 127,
     "gender": "boys"
   },
   {
@@ -14389,7 +14417,7 @@ window.SEARCH_INDEX = [
       "noel",
       "perez"
     ],
-    "rank": 90,
+    "rank": 91,
     "gender": "boys"
   },
   {
@@ -14403,7 +14431,7 @@ window.SEARCH_INDEX = [
       "blount",
       "eric"
     ],
-    "rank": 87,
+    "rank": 88,
     "gender": "boys"
   },
   {
@@ -14417,7 +14445,7 @@ window.SEARCH_INDEX = [
       "renzo",
       "watts"
     ],
-    "rank": 14,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -14431,7 +14459,7 @@ window.SEARCH_INDEX = [
       "elom",
       "emge"
     ],
-    "rank": 172,
+    "rank": 173,
     "gender": "boys"
   },
   {
@@ -14459,7 +14487,7 @@ window.SEARCH_INDEX = [
       "stroud",
       "taylor"
     ],
-    "rank": 39,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -14473,7 +14501,7 @@ window.SEARCH_INDEX = [
       "greene",
       "liam"
     ],
-    "rank": 82,
+    "rank": 83,
     "gender": "boys"
   },
   {
@@ -14487,7 +14515,7 @@ window.SEARCH_INDEX = [
       "lucas",
       "parriman"
     ],
-    "rank": 35,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -14501,7 +14529,7 @@ window.SEARCH_INDEX = [
       "jett",
       "stull"
     ],
-    "rank": 23,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -14515,7 +14543,7 @@ window.SEARCH_INDEX = [
       "ashton",
       "rosell"
     ],
-    "rank": 115,
+    "rank": 117,
     "gender": "boys"
   },
   {
@@ -14585,7 +14613,7 @@ window.SEARCH_INDEX = [
       "lemarr",
       "uriah"
     ],
-    "rank": 83,
+    "rank": 84,
     "gender": "boys"
   },
   {
@@ -14599,7 +14627,7 @@ window.SEARCH_INDEX = [
       "elliot",
       "logsdon"
     ],
-    "rank": 32,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -14627,7 +14655,7 @@ window.SEARCH_INDEX = [
       "noah",
       "vergara"
     ],
-    "rank": 127,
+    "rank": 128,
     "gender": "boys"
   },
   {
@@ -14641,7 +14669,7 @@ window.SEARCH_INDEX = [
       "gray",
       "jackson"
     ],
-    "rank": 142,
+    "rank": 143,
     "gender": "boys"
   },
   {
@@ -14655,7 +14683,7 @@ window.SEARCH_INDEX = [
       "persinger",
       "tristan"
     ],
-    "rank": 107,
+    "rank": 108,
     "gender": "boys"
   },
   {
@@ -14739,7 +14767,7 @@ window.SEARCH_INDEX = [
       "ammon",
       "zachary"
     ],
-    "rank": 51,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -14753,7 +14781,7 @@ window.SEARCH_INDEX = [
       "favorite",
       "nolan"
     ],
-    "rank": 11,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -14767,7 +14795,7 @@ window.SEARCH_INDEX = [
       "gibbs",
       "levi"
     ],
-    "rank": 50,
+    "rank": 49,
     "gender": "boys"
   },
   {
@@ -14796,7 +14824,7 @@ window.SEARCH_INDEX = [
       "godinez",
       "zed"
     ],
-    "rank": 106,
+    "rank": 107,
     "gender": "boys"
   },
   {
@@ -14838,7 +14866,7 @@ window.SEARCH_INDEX = [
       "courtney",
       "johnson"
     ],
-    "rank": 57,
+    "rank": 56,
     "gender": "boys"
   },
   {
@@ -14894,7 +14922,7 @@ window.SEARCH_INDEX = [
       "sabbagh",
       "syaliea"
     ],
-    "rank": 123,
+    "rank": 125,
     "gender": "boys"
   },
   {
@@ -14964,7 +14992,7 @@ window.SEARCH_INDEX = [
       "trevor",
       "wilson"
     ],
-    "rank": 41,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -14992,7 +15020,7 @@ window.SEARCH_INDEX = [
       "henderson",
       "peyton"
     ],
-    "rank": 111,
+    "rank": 112,
     "gender": "boys"
   },
   {
@@ -15006,7 +15034,7 @@ window.SEARCH_INDEX = [
       "brody",
       "hignite"
     ],
-    "rank": 124,
+    "rank": 126,
     "gender": "boys"
   },
   {
@@ -15020,7 +15048,7 @@ window.SEARCH_INDEX = [
       "hudson",
       "waylon"
     ],
-    "rank": 173,
+    "rank": 172,
     "gender": "boys"
   },
   {
@@ -15090,7 +15118,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "brinkman"
     ],
-    "rank": 3,
+    "rank": 2,
     "gender": "boys"
   },
   {
@@ -15104,7 +15132,7 @@ window.SEARCH_INDEX = [
       "emmet",
       "nunn"
     ],
-    "rank": 113,
+    "rank": 115,
     "gender": "boys"
   },
   {
@@ -15132,7 +15160,7 @@ window.SEARCH_INDEX = [
       "abadi",
       "jacob"
     ],
-    "rank": 54,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -15174,7 +15202,7 @@ window.SEARCH_INDEX = [
       "de`onna",
       "owens"
     ],
-    "rank": 103,
+    "rank": 104,
     "gender": "boys"
   },
   {
@@ -15314,7 +15342,7 @@ window.SEARCH_INDEX = [
       "daniels",
       "graydon"
     ],
-    "rank": 22,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -15342,7 +15370,7 @@ window.SEARCH_INDEX = [
       "abdullahi",
       "muaz"
     ],
-    "rank": 122,
+    "rank": 124,
     "gender": "boys"
   },
   {
@@ -15384,7 +15412,7 @@ window.SEARCH_INDEX = [
       "bonds",
       "ely"
     ],
-    "rank": 33,
+    "rank": 34,
     "gender": "boys"
   },
   {
@@ -15398,7 +15426,7 @@ window.SEARCH_INDEX = [
       "madelyn",
       "spraggins"
     ],
-    "rank": 91,
+    "rank": 92,
     "gender": "boys"
   },
   {
@@ -15412,7 +15440,7 @@ window.SEARCH_INDEX = [
       "lucas",
       "montgomery"
     ],
-    "rank": 28,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -15440,7 +15468,7 @@ window.SEARCH_INDEX = [
       "schwoeppe",
       "zachary"
     ],
-    "rank": 47,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -15566,7 +15594,7 @@ window.SEARCH_INDEX = [
       "conely",
       "joseph"
     ],
-    "rank": 105,
+    "rank": 106,
     "gender": "boys"
   },
   {
@@ -15580,7 +15608,7 @@ window.SEARCH_INDEX = [
       "hamilton",
       "owen"
     ],
-    "rank": 104,
+    "rank": 105,
     "gender": "boys"
   },
   {
@@ -15608,7 +15636,7 @@ window.SEARCH_INDEX = [
       "jaxson",
       "mayberry"
     ],
-    "rank": 2,
+    "rank": 3,
     "gender": "boys"
   },
   {
@@ -15636,7 +15664,7 @@ window.SEARCH_INDEX = [
       "jones",
       "jyden"
     ],
-    "rank": 46,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -15678,7 +15706,7 @@ window.SEARCH_INDEX = [
       "chase",
       "quetone"
     ],
-    "rank": 16,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -15749,7 +15777,7 @@ window.SEARCH_INDEX = [
       "hinojoza",
       "villasenor"
     ],
-    "rank": 81,
+    "rank": 82,
     "gender": "boys"
   },
   {
@@ -15777,7 +15805,7 @@ window.SEARCH_INDEX = [
       "isha",
       "osman"
     ],
-    "rank": 86,
+    "rank": 87,
     "gender": "boys"
   },
   {
@@ -15791,7 +15819,7 @@ window.SEARCH_INDEX = [
       "felipe",
       "larriuce"
     ],
-    "rank": 36,
+    "rank": 35,
     "gender": "boys"
   },
   {
@@ -15805,7 +15833,7 @@ window.SEARCH_INDEX = [
       "bargo",
       "douglas"
     ],
-    "rank": 109,
+    "rank": 110,
     "gender": "boys"
   },
   {
@@ -15819,7 +15847,7 @@ window.SEARCH_INDEX = [
       "brycen",
       "gray"
     ],
-    "rank": 10,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -20070,7 +20098,7 @@ window.SEARCH_INDEX = [
       "stotts",
       "tripp"
     ],
-    "rank": 48,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -20084,7 +20112,7 @@ window.SEARCH_INDEX = [
       "noah",
       "pendley"
     ],
-    "rank": 35,
+    "rank": 34,
     "gender": "boys"
   },
   {
@@ -20098,7 +20126,7 @@ window.SEARCH_INDEX = [
       "juarez",
       "luis"
     ],
-    "rank": 100,
+    "rank": 58,
     "gender": "boys"
   },
   {
@@ -20210,7 +20238,7 @@ window.SEARCH_INDEX = [
       "braylon",
       "hayes"
     ],
-    "rank": 42,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -20294,7 +20322,7 @@ window.SEARCH_INDEX = [
       "goodin",
       "jeremiah"
     ],
-    "rank": 49,
+    "rank": 48,
     "gender": "boys"
   },
   {
@@ -20393,7 +20421,7 @@ window.SEARCH_INDEX = [
       "nottingham",
       "zander"
     ],
-    "rank": 16,
+    "rank": 35,
     "gender": "boys"
   },
   {
@@ -20421,7 +20449,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "masters"
     ],
-    "rank": 3,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -20505,7 +20533,7 @@ window.SEARCH_INDEX = [
       "haoyang",
       "wu"
     ],
-    "rank": 58,
+    "rank": 55,
     "gender": "boys"
   },
   {
@@ -20519,7 +20547,7 @@ window.SEARCH_INDEX = [
       "elijah",
       "kirby"
     ],
-    "rank": 13,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -20603,7 +20631,7 @@ window.SEARCH_INDEX = [
       "delgadillo",
       "estevan"
     ],
-    "rank": 19,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -20701,7 +20729,7 @@ window.SEARCH_INDEX = [
       "badida",
       "clayton"
     ],
-    "rank": 5,
+    "rank": 1,
     "gender": "boys"
   },
   {
@@ -20729,7 +20757,7 @@ window.SEARCH_INDEX = [
       "henley",
       "kasen"
     ],
-    "rank": 78,
+    "rank": 77,
     "gender": "boys"
   },
   {
@@ -20813,7 +20841,7 @@ window.SEARCH_INDEX = [
       "noah",
       "simpson"
     ],
-    "rank": 9,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -20855,7 +20883,7 @@ window.SEARCH_INDEX = [
       "jah",
       "patterson"
     ],
-    "rank": 18,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -20968,7 +20996,7 @@ window.SEARCH_INDEX = [
       "gage",
       "lueke"
     ],
-    "rank": 91,
+    "rank": 90,
     "gender": "boys"
   },
   {
@@ -21038,7 +21066,7 @@ window.SEARCH_INDEX = [
       "dakota",
       "devore"
     ],
-    "rank": 33,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -21094,7 +21122,7 @@ window.SEARCH_INDEX = [
       "connor",
       "holmes"
     ],
-    "rank": 75,
+    "rank": 82,
     "gender": "boys"
   },
   {
@@ -21136,7 +21164,7 @@ window.SEARCH_INDEX = [
       "kieran",
       "pauley"
     ],
-    "rank": 60,
+    "rank": 57,
     "gender": "boys"
   },
   {
@@ -21178,7 +21206,7 @@ window.SEARCH_INDEX = [
       "joshua",
       "klose"
     ],
-    "rank": 98,
+    "rank": 99,
     "gender": "boys"
   },
   {
@@ -21206,7 +21234,7 @@ window.SEARCH_INDEX = [
       "foust",
       "zayne"
     ],
-    "rank": 57,
+    "rank": 98,
     "gender": "boys"
   },
   {
@@ -21220,7 +21248,7 @@ window.SEARCH_INDEX = [
       "fransisco",
       "miguel"
     ],
-    "rank": 12,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -21234,7 +21262,7 @@ window.SEARCH_INDEX = [
       "diaz",
       "isaac"
     ],
-    "rank": 90,
+    "rank": 91,
     "gender": "boys"
   },
   {
@@ -21248,7 +21276,7 @@ window.SEARCH_INDEX = [
       "max",
       "worthington"
     ],
-    "rank": 54,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -21290,7 +21318,7 @@ window.SEARCH_INDEX = [
       "evans",
       "thomas"
     ],
-    "rank": 56,
+    "rank": 53,
     "gender": "boys"
   },
   {
@@ -21374,7 +21402,7 @@ window.SEARCH_INDEX = [
       "justin",
       "munoz"
     ],
-    "rank": 24,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -21403,7 +21431,7 @@ window.SEARCH_INDEX = [
       "calvin",
       "votel"
     ],
-    "rank": 44,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -21417,7 +21445,7 @@ window.SEARCH_INDEX = [
       "deontae",
       "graves"
     ],
-    "rank": 20,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -21515,7 +21543,7 @@ window.SEARCH_INDEX = [
       "tre",
       "wilson"
     ],
-    "rank": 22,
+    "rank": 19,
     "gender": "boys"
   },
   {
@@ -21543,7 +21571,7 @@ window.SEARCH_INDEX = [
       "fields",
       "hunter"
     ],
-    "rank": 32,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -21585,7 +21613,7 @@ window.SEARCH_INDEX = [
       "dawsyn",
       "taylor"
     ],
-    "rank": 77,
+    "rank": 76,
     "gender": "boys"
   },
   {
@@ -21629,7 +21657,7 @@ window.SEARCH_INDEX = [
       "lee",
       "wood"
     ],
-    "rank": 79,
+    "rank": 78,
     "gender": "boys"
   },
   {
@@ -21741,7 +21769,7 @@ window.SEARCH_INDEX = [
       "clevenger",
       "keenan"
     ],
-    "rank": 15,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -21881,7 +21909,7 @@ window.SEARCH_INDEX = [
       "chase",
       "messer"
     ],
-    "rank": 31,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -21895,7 +21923,7 @@ window.SEARCH_INDEX = [
       "ayden",
       "warren"
     ],
-    "rank": 53,
+    "rank": 54,
     "gender": "boys"
   },
   {
@@ -21965,7 +21993,7 @@ window.SEARCH_INDEX = [
       "nathan",
       "tucker"
     ],
-    "rank": 59,
+    "rank": 56,
     "gender": "boys"
   },
   {
@@ -21979,7 +22007,7 @@ window.SEARCH_INDEX = [
       "holden",
       "lucas"
     ],
-    "rank": 82,
+    "rank": 81,
     "gender": "boys"
   },
   {
@@ -21993,7 +22021,7 @@ window.SEARCH_INDEX = [
       "peyton",
       "vowels"
     ],
-    "rank": 1,
+    "rank": 2,
     "gender": "boys"
   },
   {
@@ -22065,7 +22093,7 @@ window.SEARCH_INDEX = [
       "hernandez",
       "kevin"
     ],
-    "rank": 34,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -22079,7 +22107,7 @@ window.SEARCH_INDEX = [
       "joseph",
       "muhinda"
     ],
-    "rank": 28,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -22107,7 +22135,7 @@ window.SEARCH_INDEX = [
       "mattew",
       "middleton"
     ],
-    "rank": 99,
+    "rank": 100,
     "gender": "boys"
   },
   {
@@ -22121,7 +22149,7 @@ window.SEARCH_INDEX = [
       "griffin",
       "lane"
     ],
-    "rank": 11,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -22219,7 +22247,7 @@ window.SEARCH_INDEX = [
       "braelyn",
       "jimenez"
     ],
-    "rank": 43,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -22233,7 +22261,7 @@ window.SEARCH_INDEX = [
       "aeson",
       "springer"
     ],
-    "rank": 10,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -22247,7 +22275,7 @@ window.SEARCH_INDEX = [
       "hannah",
       "hensley"
     ],
-    "rank": 81,
+    "rank": 80,
     "gender": "boys"
   },
   {
@@ -22275,7 +22303,7 @@ window.SEARCH_INDEX = [
       "logan",
       "mongold"
     ],
-    "rank": 46,
+    "rank": 49,
     "gender": "boys"
   },
   {
@@ -22289,7 +22317,7 @@ window.SEARCH_INDEX = [
       "delmartarris",
       "hill"
     ],
-    "rank": 17,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -22303,7 +22331,7 @@ window.SEARCH_INDEX = [
       "josh",
       "waufle"
     ],
-    "rank": 2,
+    "rank": 5,
     "gender": "boys"
   },
   {
@@ -22317,7 +22345,7 @@ window.SEARCH_INDEX = [
       "drake",
       "wimsatt"
     ],
-    "rank": 8,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -22429,7 +22457,7 @@ window.SEARCH_INDEX = [
       "liam",
       "skinner"
     ],
-    "rank": 21,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -22653,7 +22681,7 @@ window.SEARCH_INDEX = [
       "blevins",
       "braydan"
     ],
-    "rank": 4,
+    "rank": 3,
     "gender": "boys"
   },
   {
@@ -22695,7 +22723,7 @@ window.SEARCH_INDEX = [
       "gabe",
       "pendery"
     ],
-    "rank": 41,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -22835,7 +22863,7 @@ window.SEARCH_INDEX = [
       "bueter",
       "henry"
     ],
-    "rank": 29,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -22877,7 +22905,7 @@ window.SEARCH_INDEX = [
       "john",
       "leide"
     ],
-    "rank": 30,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -23031,7 +23059,7 @@ window.SEARCH_INDEX = [
       "jacob",
       "ramsey"
     ],
-    "rank": 7,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -23101,7 +23129,7 @@ window.SEARCH_INDEX = [
       "kayden",
       "rowe"
     ],
-    "rank": 47,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -23115,7 +23143,7 @@ window.SEARCH_INDEX = [
       "bryson",
       "smith"
     ],
-    "rank": 14,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -23157,7 +23185,7 @@ window.SEARCH_INDEX = [
       "fogg",
       "quinnson"
     ],
-    "rank": 55,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -23311,7 +23339,7 @@ window.SEARCH_INDEX = [
       "eli",
       "watts"
     ],
-    "rank": 76,
+    "rank": 75,
     "gender": "boys"
   },
   {
@@ -28304,7 +28332,7 @@ window.SEARCH_INDEX = [
       "corban",
       "nance"
     ],
-    "rank": 1,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -28374,7 +28402,7 @@ window.SEARCH_INDEX = [
       "carver",
       "jaiden"
     ],
-    "rank": 32,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -28388,7 +28416,7 @@ window.SEARCH_INDEX = [
       "burnside",
       "kieran"
     ],
-    "rank": 96,
+    "rank": 97,
     "gender": "boys"
   },
   {
@@ -28416,7 +28444,7 @@ window.SEARCH_INDEX = [
       "groves",
       "harrison"
     ],
-    "rank": 99,
+    "rank": 100,
     "gender": "boys"
   },
   {
@@ -28430,7 +28458,7 @@ window.SEARCH_INDEX = [
       "addi",
       "mohamad"
     ],
-    "rank": 41,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -28444,7 +28472,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "behnken"
     ],
-    "rank": 29,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -28458,7 +28486,7 @@ window.SEARCH_INDEX = [
       "caudill",
       "kane"
     ],
-    "rank": 55,
+    "rank": 56,
     "gender": "boys"
   },
   {
@@ -28486,7 +28514,7 @@ window.SEARCH_INDEX = [
       "dalton",
       "jones"
     ],
-    "rank": 70,
+    "rank": 69,
     "gender": "boys"
   },
   {
@@ -28500,7 +28528,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "mullins"
     ],
-    "rank": 58,
+    "rank": 51,
     "gender": "boys"
   },
   {
@@ -28514,7 +28542,7 @@ window.SEARCH_INDEX = [
       "ryan",
       "sam"
     ],
-    "rank": 30,
+    "rank": 34,
     "gender": "boys"
   },
   {
@@ -28556,7 +28584,7 @@ window.SEARCH_INDEX = [
       "bentley",
       "brown"
     ],
-    "rank": 12,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -28570,7 +28598,7 @@ window.SEARCH_INDEX = [
       "hammonds",
       "tucker"
     ],
-    "rank": 66,
+    "rank": 65,
     "gender": "boys"
   },
   {
@@ -28598,7 +28626,7 @@ window.SEARCH_INDEX = [
       "cullen",
       "white"
     ],
-    "rank": 3,
+    "rank": 5,
     "gender": "boys"
   },
   {
@@ -28710,7 +28738,7 @@ window.SEARCH_INDEX = [
       "garrett",
       "rust"
     ],
-    "rank": 38,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -28808,7 +28836,7 @@ window.SEARCH_INDEX = [
       "braylan",
       "patla"
     ],
-    "rank": 15,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -28850,7 +28878,7 @@ window.SEARCH_INDEX = [
       "abernathy",
       "cordion"
     ],
-    "rank": 4,
+    "rank": 3,
     "gender": "boys"
   },
   {
@@ -28864,7 +28892,7 @@ window.SEARCH_INDEX = [
       "illes",
       "wayne"
     ],
-    "rank": 26,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -28892,7 +28920,7 @@ window.SEARCH_INDEX = [
       "adams",
       "jake"
     ],
-    "rank": 31,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -28948,7 +28976,7 @@ window.SEARCH_INDEX = [
       "myers",
       "nathan"
     ],
-    "rank": 68,
+    "rank": 67,
     "gender": "boys"
   },
   {
@@ -28962,7 +28990,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "stoner"
     ],
-    "rank": 8,
+    "rank": 2,
     "gender": "boys"
   },
   {
@@ -29004,7 +29032,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "piasecki"
     ],
-    "rank": 14,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -29159,7 +29187,7 @@ window.SEARCH_INDEX = [
       "buice",
       "na`ryan"
     ],
-    "rank": 117,
+    "rank": 118,
     "gender": "boys"
   },
   {
@@ -29215,7 +29243,7 @@ window.SEARCH_INDEX = [
       "isaiah",
       "mitchell"
     ],
-    "rank": 39,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -29272,7 +29300,7 @@ window.SEARCH_INDEX = [
       "mohamed",
       "talasow"
     ],
-    "rank": 5,
+    "rank": 6,
     "gender": "boys"
   },
   {
@@ -29300,7 +29328,7 @@ window.SEARCH_INDEX = [
       "frank",
       "seth"
     ],
-    "rank": 60,
+    "rank": 55,
     "gender": "boys"
   },
   {
@@ -29314,7 +29342,7 @@ window.SEARCH_INDEX = [
       "matthew",
       "morgan"
     ],
-    "rank": 46,
+    "rank": 48,
     "gender": "boys"
   },
   {
@@ -29328,7 +29356,7 @@ window.SEARCH_INDEX = [
       "everett",
       "jubal"
     ],
-    "rank": 102,
+    "rank": 104,
     "gender": "boys"
   },
   {
@@ -29342,7 +29370,7 @@ window.SEARCH_INDEX = [
       "jayden",
       "perry"
     ],
-    "rank": 10,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -29412,7 +29440,7 @@ window.SEARCH_INDEX = [
       "hopper",
       "robbie"
     ],
-    "rank": 25,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -29440,7 +29468,7 @@ window.SEARCH_INDEX = [
       "johnson",
       "keith"
     ],
-    "rank": 24,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -29468,7 +29496,7 @@ window.SEARCH_INDEX = [
       "cano",
       "deacon"
     ],
-    "rank": 7,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -29482,7 +29510,7 @@ window.SEARCH_INDEX = [
       "jones",
       "kellon"
     ],
-    "rank": 45,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -29496,7 +29524,7 @@ window.SEARCH_INDEX = [
       "ayden",
       "hall"
     ],
-    "rank": 20,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -29524,7 +29552,7 @@ window.SEARCH_INDEX = [
       "liam",
       "thomas"
     ],
-    "rank": 94,
+    "rank": 95,
     "gender": "boys"
   },
   {
@@ -29552,7 +29580,7 @@ window.SEARCH_INDEX = [
       "fulz",
       "jayden"
     ],
-    "rank": 75,
+    "rank": 70,
     "gender": "boys"
   },
   {
@@ -29608,7 +29636,7 @@ window.SEARCH_INDEX = [
       "corpe",
       "lane"
     ],
-    "rank": 61,
+    "rank": 62,
     "gender": "boys"
   },
   {
@@ -29622,7 +29650,7 @@ window.SEARCH_INDEX = [
       "mattix",
       "sohne"
     ],
-    "rank": 95,
+    "rank": 96,
     "gender": "boys"
   },
   {
@@ -29706,7 +29734,7 @@ window.SEARCH_INDEX = [
       "stewart",
       "xavier"
     ],
-    "rank": 35,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -29734,7 +29762,7 @@ window.SEARCH_INDEX = [
       "owens",
       "wyatt"
     ],
-    "rank": 104,
+    "rank": 53,
     "gender": "boys"
   },
   {
@@ -29748,7 +29776,7 @@ window.SEARCH_INDEX = [
       "cannon",
       "kyrien"
     ],
-    "rank": 67,
+    "rank": 66,
     "gender": "boys"
   },
   {
@@ -29762,7 +29790,7 @@ window.SEARCH_INDEX = [
       "herrera",
       "nicholas"
     ],
-    "rank": 48,
+    "rank": 52,
     "gender": "boys"
   },
   {
@@ -29776,7 +29804,7 @@ window.SEARCH_INDEX = [
       "genius",
       "white"
     ],
-    "rank": 97,
+    "rank": 98,
     "gender": "boys"
   },
   {
@@ -29804,7 +29832,7 @@ window.SEARCH_INDEX = [
       "jordan",
       "taylor"
     ],
-    "rank": 51,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -29860,7 +29888,7 @@ window.SEARCH_INDEX = [
       "howard",
       "landon"
     ],
-    "rank": 47,
+    "rank": 25,
     "gender": "boys"
   },
   {
@@ -29959,7 +29987,7 @@ window.SEARCH_INDEX = [
       "sergio",
       "vasquez"
     ],
-    "rank": 22,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -30099,7 +30127,7 @@ window.SEARCH_INDEX = [
       "grayson",
       "smith"
     ],
-    "rank": 11,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -30127,7 +30155,7 @@ window.SEARCH_INDEX = [
       "braden",
       "llaghno"
     ],
-    "rank": 42,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -30155,7 +30183,7 @@ window.SEARCH_INDEX = [
       "adam",
       "miller"
     ],
-    "rank": 56,
+    "rank": 57,
     "gender": "boys"
   },
   {
@@ -30183,7 +30211,7 @@ window.SEARCH_INDEX = [
       "king",
       "maddox"
     ],
-    "rank": 103,
+    "rank": 102,
     "gender": "boys"
   },
   {
@@ -30211,7 +30239,7 @@ window.SEARCH_INDEX = [
       "isaih",
       "rodriguez"
     ],
-    "rank": 34,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -30281,7 +30309,7 @@ window.SEARCH_INDEX = [
       "baker",
       "daxton"
     ],
-    "rank": 16,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -30296,7 +30324,7 @@ window.SEARCH_INDEX = [
       "manuel",
       "moore"
     ],
-    "rank": 36,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -30310,7 +30338,7 @@ window.SEARCH_INDEX = [
       "joshua",
       "slebo"
     ],
-    "rank": 37,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -30324,7 +30352,7 @@ window.SEARCH_INDEX = [
       "english",
       "tyson"
     ],
-    "rank": 13,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -30366,7 +30394,7 @@ window.SEARCH_INDEX = [
       "johann",
       "springer"
     ],
-    "rank": 59,
+    "rank": 54,
     "gender": "boys"
   },
   {
@@ -30380,7 +30408,7 @@ window.SEARCH_INDEX = [
       "kaleb",
       "lewallen"
     ],
-    "rank": 53,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -30394,7 +30422,7 @@ window.SEARCH_INDEX = [
       "ayden",
       "fechtner"
     ],
-    "rank": 28,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -30422,7 +30450,7 @@ window.SEARCH_INDEX = [
       "millet",
       "tatum"
     ],
-    "rank": 71,
+    "rank": 72,
     "gender": "boys"
   },
   {
@@ -30436,7 +30464,7 @@ window.SEARCH_INDEX = [
       "drexler",
       "hayden"
     ],
-    "rank": 23,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -30520,7 +30548,7 @@ window.SEARCH_INDEX = [
       "bentley",
       "desoto"
     ],
-    "rank": 69,
+    "rank": 68,
     "gender": "boys"
   },
   {
@@ -30534,7 +30562,7 @@ window.SEARCH_INDEX = [
       "davis",
       "jordynn"
     ],
-    "rank": 9,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -30548,7 +30576,7 @@ window.SEARCH_INDEX = [
       "jaxon",
       "long"
     ],
-    "rank": 100,
+    "rank": 101,
     "gender": "boys"
   },
   {
@@ -30562,7 +30590,7 @@ window.SEARCH_INDEX = [
       "ezekiel",
       "holbrook"
     ],
-    "rank": 57,
+    "rank": 58,
     "gender": "boys"
   },
   {
@@ -30618,7 +30646,7 @@ window.SEARCH_INDEX = [
       "elijah",
       "mcdermott"
     ],
-    "rank": 54,
+    "rank": 61,
     "gender": "boys"
   },
   {
@@ -30730,7 +30758,7 @@ window.SEARCH_INDEX = [
       "evan",
       "gregory"
     ],
-    "rank": 74,
+    "rank": 75,
     "gender": "boys"
   },
   {
@@ -30814,7 +30842,7 @@ window.SEARCH_INDEX = [
       "disselkamp",
       "trent"
     ],
-    "rank": 72,
+    "rank": 73,
     "gender": "boys"
   },
   {
@@ -30870,7 +30898,7 @@ window.SEARCH_INDEX = [
       "logan",
       "rowe"
     ],
-    "rank": 65,
+    "rank": 71,
     "gender": "boys"
   },
   {
@@ -30884,7 +30912,7 @@ window.SEARCH_INDEX = [
       "alex",
       "gonzalez"
     ],
-    "rank": 50,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -30912,7 +30940,7 @@ window.SEARCH_INDEX = [
       "eichberger",
       "koltyn"
     ],
-    "rank": 118,
+    "rank": 117,
     "gender": "boys"
   },
   {
@@ -30926,7 +30954,7 @@ window.SEARCH_INDEX = [
       "kaden",
       "warren"
     ],
-    "rank": 43,
+    "rank": 45,
     "gender": "boys"
   },
   {
@@ -30954,7 +30982,7 @@ window.SEARCH_INDEX = [
       "connor",
       "warner"
     ],
-    "rank": 21,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -30968,7 +30996,7 @@ window.SEARCH_INDEX = [
       "brennen",
       "east"
     ],
-    "rank": 62,
+    "rank": 35,
     "gender": "boys"
   },
   {
@@ -30982,7 +31010,7 @@ window.SEARCH_INDEX = [
       "hayden",
       "vaught"
     ],
-    "rank": 101,
+    "rank": 103,
     "gender": "boys"
   },
   {
@@ -31066,7 +31094,7 @@ window.SEARCH_INDEX = [
       "hussein",
       "salman"
     ],
-    "rank": 52,
+    "rank": 94,
     "gender": "boys"
   },
   {
@@ -31150,7 +31178,7 @@ window.SEARCH_INDEX = [
       "braden",
       "woolridge"
     ],
-    "rank": 6,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -31206,7 +31234,7 @@ window.SEARCH_INDEX = [
       "campbell",
       "eli"
     ],
-    "rank": 27,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -31248,7 +31276,7 @@ window.SEARCH_INDEX = [
       "declan",
       "duncan"
     ],
-    "rank": 40,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -31276,7 +31304,7 @@ window.SEARCH_INDEX = [
       "brennen",
       "clifford"
     ],
-    "rank": 2,
+    "rank": 1,
     "gender": "boys"
   },
   {
@@ -31304,7 +31332,7 @@ window.SEARCH_INDEX = [
       "elam",
       "makaedin"
     ],
-    "rank": 98,
+    "rank": 99,
     "gender": "boys"
   },
   {
@@ -31374,7 +31402,7 @@ window.SEARCH_INDEX = [
       "brenden",
       "little"
     ],
-    "rank": 73,
+    "rank": 74,
     "gender": "boys"
   },
   {
@@ -31556,7 +31584,7 @@ window.SEARCH_INDEX = [
       "bryer",
       "rogers"
     ],
-    "rank": 44,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -33128,20 +33156,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jaden Kinnaird",
-    "first_name": "Jaden",
-    "last_name": "Kinnaird",
-    "secondary": "Centerville High School · 132",
-    "url": "/wrestler.html?id=OUTSTATE_6ab707f72949&gender=boys",
-    "searchTokens": [
-      "jaden",
-      "kinnaird"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Aiden Daniel",
     "first_name": "Aiden",
     "last_name": "Daniel",
@@ -33150,6 +33164,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "aiden",
       "daniel"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Jaden Kinnaird",
+    "first_name": "Jaden",
+    "last_name": "Kinnaird",
+    "secondary": "Centerville High School · 132",
+    "url": "/wrestler.html?id=OUTSTATE_6ab707f72949&gender=boys",
+    "searchTokens": [
+      "jaden",
+      "kinnaird"
     ],
     "rank": null,
     "gender": "boys"
@@ -35212,20 +35240,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kaden Holtzapple",
-    "first_name": "Kaden",
-    "last_name": "Holtzapple",
-    "secondary": "Tippecanoe High School · 132",
-    "url": "/wrestler.html?id=OUTSTATE_cf0aeed0903a&gender=boys",
-    "searchTokens": [
-      "holtzapple",
-      "kaden"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Jonathan Miller",
     "first_name": "Jonathan",
     "last_name": "Miller",
@@ -35234,6 +35248,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "jonathan",
       "miller"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Kaden Holtzapple",
+    "first_name": "Kaden",
+    "last_name": "Holtzapple",
+    "secondary": "Tippecanoe High School · 132",
+    "url": "/wrestler.html?id=OUTSTATE_cf0aeed0903a&gender=boys",
+    "searchTokens": [
+      "holtzapple",
+      "kaden"
     ],
     "rank": null,
     "gender": "boys"
@@ -36744,7 +36772,7 @@ window.SEARCH_INDEX = [
       "garsee",
       "leo"
     ],
-    "rank": 197,
+    "rank": 196,
     "gender": "boys"
   },
   {
@@ -36758,7 +36786,7 @@ window.SEARCH_INDEX = [
       "andrew",
       "grant"
     ],
-    "rank": 122,
+    "rank": 121,
     "gender": "boys"
   },
   {
@@ -36772,7 +36800,7 @@ window.SEARCH_INDEX = [
       "benjamin",
       "shillings"
     ],
-    "rank": 254,
+    "rank": 253,
     "gender": "boys"
   },
   {
@@ -36786,7 +36814,7 @@ window.SEARCH_INDEX = [
       "adrian",
       "zinati"
     ],
-    "rank": 194,
+    "rank": 193,
     "gender": "boys"
   },
   {
@@ -36814,7 +36842,7 @@ window.SEARCH_INDEX = [
       "iker",
       "moreno"
     ],
-    "rank": 164,
+    "rank": 163,
     "gender": "boys"
   },
   {
@@ -36828,7 +36856,7 @@ window.SEARCH_INDEX = [
       "alfaisal",
       "yousif"
     ],
-    "rank": 125,
+    "rank": 124,
     "gender": "boys"
   },
   {
@@ -36842,7 +36870,7 @@ window.SEARCH_INDEX = [
       "jakob",
       "reed"
     ],
-    "rank": 73,
+    "rank": 74,
     "gender": "boys"
   },
   {
@@ -36856,7 +36884,7 @@ window.SEARCH_INDEX = [
       "erick",
       "garcia"
     ],
-    "rank": 244,
+    "rank": 243,
     "gender": "boys"
   },
   {
@@ -36870,7 +36898,7 @@ window.SEARCH_INDEX = [
       "alexander",
       "valldejuli"
     ],
-    "rank": 75,
+    "rank": 76,
     "gender": "boys"
   },
   {
@@ -36884,7 +36912,7 @@ window.SEARCH_INDEX = [
       "eric",
       "fields"
     ],
-    "rank": 243,
+    "rank": 242,
     "gender": "boys"
   },
   {
@@ -36898,7 +36926,7 @@ window.SEARCH_INDEX = [
       "jacob",
       "jones"
     ],
-    "rank": 247,
+    "rank": 246,
     "gender": "boys"
   },
   {
@@ -36912,7 +36940,7 @@ window.SEARCH_INDEX = [
       "martin",
       "taven"
     ],
-    "rank": 174,
+    "rank": 173,
     "gender": "boys"
   },
   {
@@ -36940,7 +36968,7 @@ window.SEARCH_INDEX = [
       "devon",
       "hill"
     ],
-    "rank": 128,
+    "rank": 127,
     "gender": "boys"
   },
   {
@@ -36954,7 +36982,7 @@ window.SEARCH_INDEX = [
       "huffman",
       "landyn"
     ],
-    "rank": 45,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -36968,7 +36996,7 @@ window.SEARCH_INDEX = [
       "jacee",
       "norman"
     ],
-    "rank": 152,
+    "rank": 151,
     "gender": "boys"
   },
   {
@@ -36996,7 +37024,7 @@ window.SEARCH_INDEX = [
       "aden",
       "england"
     ],
-    "rank": 60,
+    "rank": 67,
     "gender": "boys"
   },
   {
@@ -37010,7 +37038,7 @@ window.SEARCH_INDEX = [
       "fetters",
       "hannah"
     ],
-    "rank": 76,
+    "rank": 77,
     "gender": "boys"
   },
   {
@@ -37080,7 +37108,7 @@ window.SEARCH_INDEX = [
       "frazier",
       "levi"
     ],
-    "rank": 275,
+    "rank": 274,
     "gender": "boys"
   },
   {
@@ -37094,7 +37122,7 @@ window.SEARCH_INDEX = [
       "logan",
       "true"
     ],
-    "rank": 211,
+    "rank": 210,
     "gender": "boys"
   },
   {
@@ -37108,7 +37136,7 @@ window.SEARCH_INDEX = [
       "mia",
       "young"
     ],
-    "rank": 212,
+    "rank": 211,
     "gender": "boys"
   },
   {
@@ -37122,7 +37150,7 @@ window.SEARCH_INDEX = [
       "kaiden",
       "nottingham"
     ],
-    "rank": 15,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -37136,7 +37164,7 @@ window.SEARCH_INDEX = [
       "bain",
       "kurtz"
     ],
-    "rank": 12,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -37150,7 +37178,7 @@ window.SEARCH_INDEX = [
       "parsons",
       "paul"
     ],
-    "rank": 138,
+    "rank": 137,
     "gender": "boys"
   },
   {
@@ -37164,7 +37192,7 @@ window.SEARCH_INDEX = [
       "booher",
       "wyatt"
     ],
-    "rank": 163,
+    "rank": 162,
     "gender": "boys"
   },
   {
@@ -37178,7 +37206,7 @@ window.SEARCH_INDEX = [
       "hunter",
       "waddle"
     ],
-    "rank": 118,
+    "rank": 117,
     "gender": "boys"
   },
   {
@@ -37192,7 +37220,7 @@ window.SEARCH_INDEX = [
       "carrasquillo",
       "daniel"
     ],
-    "rank": 281,
+    "rank": 280,
     "gender": "boys"
   },
   {
@@ -37206,7 +37234,7 @@ window.SEARCH_INDEX = [
       "harrod",
       "jack"
     ],
-    "rank": 21,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -37220,7 +37248,7 @@ window.SEARCH_INDEX = [
       "mcdonough",
       "riley"
     ],
-    "rank": 280,
+    "rank": 279,
     "gender": "boys"
   },
   {
@@ -37234,7 +37262,7 @@ window.SEARCH_INDEX = [
       "banks",
       "james"
     ],
-    "rank": 192,
+    "rank": 191,
     "gender": "boys"
   },
   {
@@ -37248,7 +37276,7 @@ window.SEARCH_INDEX = [
       "nana",
       "saniyah"
     ],
-    "rank": 171,
+    "rank": 170,
     "gender": "boys"
   },
   {
@@ -37262,7 +37290,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "groves"
     ],
-    "rank": 144,
+    "rank": 143,
     "gender": "boys"
   },
   {
@@ -37276,7 +37304,7 @@ window.SEARCH_INDEX = [
       "justin",
       "klidzejs"
     ],
-    "rank": 13,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -37290,7 +37318,7 @@ window.SEARCH_INDEX = [
       "britt",
       "dylan"
     ],
-    "rank": 286,
+    "rank": 285,
     "gender": "boys"
   },
   {
@@ -37304,7 +37332,7 @@ window.SEARCH_INDEX = [
       "brett",
       "dunn"
     ],
-    "rank": 284,
+    "rank": 283,
     "gender": "boys"
   },
   {
@@ -37318,7 +37346,7 @@ window.SEARCH_INDEX = [
       "kunkel",
       "xander"
     ],
-    "rank": 226,
+    "rank": 225,
     "gender": "boys"
   },
   {
@@ -37346,7 +37374,7 @@ window.SEARCH_INDEX = [
       "jacob",
       "sandidge"
     ],
-    "rank": 120,
+    "rank": 119,
     "gender": "boys"
   },
   {
@@ -37360,7 +37388,7 @@ window.SEARCH_INDEX = [
       "mcnary",
       "toby"
     ],
-    "rank": 88,
+    "rank": 295,
     "gender": "boys"
   },
   {
@@ -37374,7 +37402,7 @@ window.SEARCH_INDEX = [
       "ha",
       "ling"
     ],
-    "rank": 187,
+    "rank": 175,
     "gender": "boys"
   },
   {
@@ -37388,7 +37416,7 @@ window.SEARCH_INDEX = [
       "micah",
       "toogood"
     ],
-    "rank": 193,
+    "rank": 192,
     "gender": "boys"
   },
   {
@@ -37402,7 +37430,7 @@ window.SEARCH_INDEX = [
       "chang",
       "jayden"
     ],
-    "rank": 142,
+    "rank": 141,
     "gender": "boys"
   },
   {
@@ -37416,7 +37444,7 @@ window.SEARCH_INDEX = [
       "cj",
       "hogan"
     ],
-    "rank": 117,
+    "rank": 116,
     "gender": "boys"
   },
   {
@@ -37430,7 +37458,7 @@ window.SEARCH_INDEX = [
       "nicholas",
       "thacker"
     ],
-    "rank": 141,
+    "rank": 140,
     "gender": "boys"
   },
   {
@@ -37444,7 +37472,7 @@ window.SEARCH_INDEX = [
       "lucas",
       "pulley"
     ],
-    "rank": 227,
+    "rank": 226,
     "gender": "boys"
   },
   {
@@ -37458,7 +37486,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "waldrop"
     ],
-    "rank": 231,
+    "rank": 230,
     "gender": "boys"
   },
   {
@@ -37472,7 +37500,7 @@ window.SEARCH_INDEX = [
       "atwell",
       "markee"
     ],
-    "rank": 129,
+    "rank": 128,
     "gender": "boys"
   },
   {
@@ -37486,7 +37514,7 @@ window.SEARCH_INDEX = [
       "hart",
       "marquis"
     ],
-    "rank": 65,
+    "rank": 64,
     "gender": "boys"
   },
   {
@@ -37500,7 +37528,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "masteller"
     ],
-    "rank": 116,
+    "rank": 115,
     "gender": "boys"
   },
   {
@@ -37514,7 +37542,7 @@ window.SEARCH_INDEX = [
       "bergelt",
       "ryan"
     ],
-    "rank": 113,
+    "rank": 112,
     "gender": "boys"
   },
   {
@@ -37542,7 +37570,7 @@ window.SEARCH_INDEX = [
       "herr",
       "kai"
     ],
-    "rank": 132,
+    "rank": 131,
     "gender": "boys"
   },
   {
@@ -37556,7 +37584,7 @@ window.SEARCH_INDEX = [
       "roark",
       "waylon"
     ],
-    "rank": 234,
+    "rank": 233,
     "gender": "boys"
   },
   {
@@ -37570,7 +37598,7 @@ window.SEARCH_INDEX = [
       "sutton",
       "william"
     ],
-    "rank": 148,
+    "rank": 147,
     "gender": "boys"
   },
   {
@@ -37584,7 +37612,7 @@ window.SEARCH_INDEX = [
       "eli",
       "troglen"
     ],
-    "rank": 151,
+    "rank": 150,
     "gender": "boys"
   },
   {
@@ -37598,7 +37626,7 @@ window.SEARCH_INDEX = [
       "bj",
       "jackson"
     ],
-    "rank": 8,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -37612,7 +37640,7 @@ window.SEARCH_INDEX = [
       "landon",
       "windeler"
     ],
-    "rank": 26,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -37626,7 +37654,7 @@ window.SEARCH_INDEX = [
       "sam",
       "spoonamore"
     ],
-    "rank": 109,
+    "rank": 108,
     "gender": "boys"
   },
   {
@@ -37640,7 +37668,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "ranburger"
     ],
-    "rank": 31,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -37654,7 +37682,7 @@ window.SEARCH_INDEX = [
       "bonnell",
       "noah"
     ],
-    "rank": 85,
+    "rank": 86,
     "gender": "boys"
   },
   {
@@ -37668,7 +37696,7 @@ window.SEARCH_INDEX = [
       "dowell",
       "peyton"
     ],
-    "rank": 246,
+    "rank": 245,
     "gender": "boys"
   },
   {
@@ -37682,7 +37710,7 @@ window.SEARCH_INDEX = [
       "justin",
       "kidd"
     ],
-    "rank": 11,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -37696,7 +37724,7 @@ window.SEARCH_INDEX = [
       "waylon",
       "webster"
     ],
-    "rank": 173,
+    "rank": 172,
     "gender": "boys"
   },
   {
@@ -37724,7 +37752,7 @@ window.SEARCH_INDEX = [
       "gupta",
       "yuvraj"
     ],
-    "rank": 105,
+    "rank": 104,
     "gender": "boys"
   },
   {
@@ -37738,7 +37766,7 @@ window.SEARCH_INDEX = [
       "jake",
       "jeziorski"
     ],
-    "rank": 84,
+    "rank": 85,
     "gender": "boys"
   },
   {
@@ -37752,7 +37780,7 @@ window.SEARCH_INDEX = [
       "keiona",
       "skaggs"
     ],
-    "rank": 139,
+    "rank": 138,
     "gender": "boys"
   },
   {
@@ -37766,7 +37794,7 @@ window.SEARCH_INDEX = [
       "camden",
       "graichen"
     ],
-    "rank": 188,
+    "rank": 187,
     "gender": "boys"
   },
   {
@@ -37780,7 +37808,7 @@ window.SEARCH_INDEX = [
       "maddie",
       "massengill"
     ],
-    "rank": 196,
+    "rank": 195,
     "gender": "boys"
   },
   {
@@ -37794,7 +37822,7 @@ window.SEARCH_INDEX = [
       "dylon",
       "higginbotham"
     ],
-    "rank": 162,
+    "rank": 161,
     "gender": "boys"
   },
   {
@@ -37822,7 +37850,7 @@ window.SEARCH_INDEX = [
       "barley",
       "colton"
     ],
-    "rank": 230,
+    "rank": 229,
     "gender": "boys"
   },
   {
@@ -37850,7 +37878,7 @@ window.SEARCH_INDEX = [
       "juan",
       "perez"
     ],
-    "rank": 221,
+    "rank": 220,
     "gender": "boys"
   },
   {
@@ -37864,7 +37892,7 @@ window.SEARCH_INDEX = [
       "daylon",
       "sexton"
     ],
-    "rank": 14,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -37878,7 +37906,7 @@ window.SEARCH_INDEX = [
       "bronson",
       "hartel"
     ],
-    "rank": 33,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -37892,7 +37920,7 @@ window.SEARCH_INDEX = [
       "justin",
       "torres"
     ],
-    "rank": 156,
+    "rank": 155,
     "gender": "boys"
   },
   {
@@ -37906,7 +37934,7 @@ window.SEARCH_INDEX = [
       "aydin",
       "kadriov"
     ],
-    "rank": 17,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -37920,7 +37948,7 @@ window.SEARCH_INDEX = [
       "elliott",
       "kholeton"
     ],
-    "rank": 279,
+    "rank": 278,
     "gender": "boys"
   },
   {
@@ -37948,7 +37976,7 @@ window.SEARCH_INDEX = [
       "eli",
       "phillip"
     ],
-    "rank": 235,
+    "rank": 234,
     "gender": "boys"
   },
   {
@@ -37962,7 +37990,7 @@ window.SEARCH_INDEX = [
       "cassell",
       "eithan"
     ],
-    "rank": 10,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -37990,7 +38018,7 @@ window.SEARCH_INDEX = [
       "brennan",
       "laboy"
     ],
-    "rank": 126,
+    "rank": 125,
     "gender": "boys"
   },
   {
@@ -38018,7 +38046,7 @@ window.SEARCH_INDEX = [
       "cole",
       "mcwilliams"
     ],
-    "rank": 250,
+    "rank": 249,
     "gender": "boys"
   },
   {
@@ -38032,7 +38060,7 @@ window.SEARCH_INDEX = [
       "joseph",
       "reed"
     ],
-    "rank": 140,
+    "rank": 139,
     "gender": "boys"
   },
   {
@@ -38060,7 +38088,7 @@ window.SEARCH_INDEX = [
       "jacob",
       "labrada"
     ],
-    "rank": 263,
+    "rank": 262,
     "gender": "boys"
   },
   {
@@ -38088,7 +38116,7 @@ window.SEARCH_INDEX = [
       "cayden",
       "pauley"
     ],
-    "rank": 68,
+    "rank": 69,
     "gender": "boys"
   },
   {
@@ -38102,7 +38130,7 @@ window.SEARCH_INDEX = [
       "cain",
       "sammy"
     ],
-    "rank": 190,
+    "rank": 189,
     "gender": "boys"
   },
   {
@@ -38130,7 +38158,7 @@ window.SEARCH_INDEX = [
       "samuel",
       "sigurbjartsson"
     ],
-    "rank": 216,
+    "rank": 215,
     "gender": "boys"
   },
   {
@@ -38144,7 +38172,7 @@ window.SEARCH_INDEX = [
       "diaz",
       "joel"
     ],
-    "rank": 51,
+    "rank": 52,
     "gender": "boys"
   },
   {
@@ -38158,7 +38186,7 @@ window.SEARCH_INDEX = [
       "craig",
       "david"
     ],
-    "rank": 43,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -38172,7 +38200,7 @@ window.SEARCH_INDEX = [
       "derrick",
       "taylor"
     ],
-    "rank": 81,
+    "rank": 82,
     "gender": "boys"
   },
   {
@@ -38186,7 +38214,7 @@ window.SEARCH_INDEX = [
       "colton",
       "hendrick"
     ],
-    "rank": 29,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -38214,7 +38242,7 @@ window.SEARCH_INDEX = [
       "fuller",
       "jackson"
     ],
-    "rank": 282,
+    "rank": 281,
     "gender": "boys"
   },
   {
@@ -38228,7 +38256,7 @@ window.SEARCH_INDEX = [
       "morgan",
       "ryan"
     ],
-    "rank": 161,
+    "rank": 160,
     "gender": "boys"
   },
   {
@@ -38256,7 +38284,7 @@ window.SEARCH_INDEX = [
       "adams",
       "memphis"
     ],
-    "rank": 72,
+    "rank": 73,
     "gender": "boys"
   },
   {
@@ -38270,7 +38298,7 @@ window.SEARCH_INDEX = [
       "dylan",
       "gentry"
     ],
-    "rank": 150,
+    "rank": 149,
     "gender": "boys"
   },
   {
@@ -38284,7 +38312,7 @@ window.SEARCH_INDEX = [
       "elliot",
       "ortinski"
     ],
-    "rank": 19,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -38312,7 +38340,7 @@ window.SEARCH_INDEX = [
       "andrew",
       "kraft"
     ],
-    "rank": 36,
+    "rank": 34,
     "gender": "boys"
   },
   {
@@ -38326,7 +38354,7 @@ window.SEARCH_INDEX = [
       "harmony",
       "walker"
     ],
-    "rank": 208,
+    "rank": 207,
     "gender": "boys"
   },
   {
@@ -38340,7 +38368,7 @@ window.SEARCH_INDEX = [
       "faaris",
       "nguyen"
     ],
-    "rank": 136,
+    "rank": 133,
     "gender": "boys"
   },
   {
@@ -38354,7 +38382,7 @@ window.SEARCH_INDEX = [
       "evan",
       "wilson"
     ],
-    "rank": 18,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -38368,7 +38396,7 @@ window.SEARCH_INDEX = [
       "quinzell",
       "valentin"
     ],
-    "rank": 295,
+    "rank": 294,
     "gender": "boys"
   },
   {
@@ -38382,7 +38410,7 @@ window.SEARCH_INDEX = [
       "addi",
       "collins"
     ],
-    "rank": 294,
+    "rank": 293,
     "gender": "boys"
   },
   {
@@ -38396,7 +38424,7 @@ window.SEARCH_INDEX = [
       "carson",
       "fannin"
     ],
-    "rank": 278,
+    "rank": 277,
     "gender": "boys"
   },
   {
@@ -38410,7 +38438,7 @@ window.SEARCH_INDEX = [
       "ryan",
       "smith"
     ],
-    "rank": 1,
+    "rank": 2,
     "gender": "boys"
   },
   {
@@ -38424,7 +38452,7 @@ window.SEARCH_INDEX = [
       "cole",
       "roark"
     ],
-    "rank": 277,
+    "rank": 276,
     "gender": "boys"
   },
   {
@@ -38438,7 +38466,7 @@ window.SEARCH_INDEX = [
       "gabriel",
       "jackson"
     ],
-    "rank": 266,
+    "rank": 265,
     "gender": "boys"
   },
   {
@@ -38452,7 +38480,7 @@ window.SEARCH_INDEX = [
       "amber",
       "honeycutt"
     ],
-    "rank": 87,
+    "rank": 88,
     "gender": "boys"
   },
   {
@@ -38480,7 +38508,7 @@ window.SEARCH_INDEX = [
       "cooper",
       "devan"
     ],
-    "rank": 217,
+    "rank": 216,
     "gender": "boys"
   },
   {
@@ -38494,7 +38522,7 @@ window.SEARCH_INDEX = [
       "austin",
       "ramsey"
     ],
-    "rank": 265,
+    "rank": 264,
     "gender": "boys"
   },
   {
@@ -38508,7 +38536,7 @@ window.SEARCH_INDEX = [
       "alex",
       "justice"
     ],
-    "rank": 198,
+    "rank": 197,
     "gender": "boys"
   },
   {
@@ -38522,7 +38550,7 @@ window.SEARCH_INDEX = [
       "gunnar",
       "wickstrom"
     ],
-    "rank": 199,
+    "rank": 198,
     "gender": "boys"
   },
   {
@@ -38536,7 +38564,7 @@ window.SEARCH_INDEX = [
       "fahad",
       "younus"
     ],
-    "rank": 175,
+    "rank": 174,
     "gender": "boys"
   },
   {
@@ -38550,7 +38578,7 @@ window.SEARCH_INDEX = [
       "eli",
       "fitch"
     ],
-    "rank": 159,
+    "rank": 158,
     "gender": "boys"
   },
   {
@@ -38564,7 +38592,7 @@ window.SEARCH_INDEX = [
       "baker",
       "brady"
     ],
-    "rank": 189,
+    "rank": 188,
     "gender": "boys"
   },
   {
@@ -38578,7 +38606,7 @@ window.SEARCH_INDEX = [
       "blake",
       "kelly"
     ],
-    "rank": 168,
+    "rank": 167,
     "gender": "boys"
   },
   {
@@ -38592,7 +38620,7 @@ window.SEARCH_INDEX = [
       "nicholas",
       "perz"
     ],
-    "rank": 39,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -38620,7 +38648,7 @@ window.SEARCH_INDEX = [
       "harris",
       "jason"
     ],
-    "rank": 83,
+    "rank": 84,
     "gender": "boys"
   },
   {
@@ -38634,7 +38662,7 @@ window.SEARCH_INDEX = [
       "gunn",
       "ian"
     ],
-    "rank": 215,
+    "rank": 214,
     "gender": "boys"
   },
   {
@@ -38648,7 +38676,7 @@ window.SEARCH_INDEX = [
       "ace",
       "miller"
     ],
-    "rank": 154,
+    "rank": 153,
     "gender": "boys"
   },
   {
@@ -38662,7 +38690,7 @@ window.SEARCH_INDEX = [
       "cummings",
       "zach"
     ],
-    "rank": 237,
+    "rank": 236,
     "gender": "boys"
   },
   {
@@ -38676,7 +38704,7 @@ window.SEARCH_INDEX = [
       "harding",
       "matt"
     ],
-    "rank": 77,
+    "rank": 78,
     "gender": "boys"
   },
   {
@@ -38690,7 +38718,7 @@ window.SEARCH_INDEX = [
       "berkley",
       "overberg"
     ],
-    "rank": 64,
+    "rank": 65,
     "gender": "boys"
   },
   {
@@ -38704,7 +38732,7 @@ window.SEARCH_INDEX = [
       "eason",
       "mavrick"
     ],
-    "rank": 291,
+    "rank": 290,
     "gender": "boys"
   },
   {
@@ -38718,7 +38746,7 @@ window.SEARCH_INDEX = [
       "jayden",
       "williams"
     ],
-    "rank": 251,
+    "rank": 250,
     "gender": "boys"
   },
   {
@@ -38732,7 +38760,7 @@ window.SEARCH_INDEX = [
       "braylan",
       "pennington"
     ],
-    "rank": 145,
+    "rank": 144,
     "gender": "boys"
   },
   {
@@ -38746,7 +38774,7 @@ window.SEARCH_INDEX = [
       "blake",
       "wilson"
     ],
-    "rank": 114,
+    "rank": 113,
     "gender": "boys"
   },
   {
@@ -38760,7 +38788,7 @@ window.SEARCH_INDEX = [
       "almotoware",
       "mohammed"
     ],
-    "rank": 127,
+    "rank": 126,
     "gender": "boys"
   },
   {
@@ -38774,7 +38802,7 @@ window.SEARCH_INDEX = [
       "beam",
       "tyler"
     ],
-    "rank": 191,
+    "rank": 190,
     "gender": "boys"
   },
   {
@@ -38788,7 +38816,7 @@ window.SEARCH_INDEX = [
       "bowens",
       "noah"
     ],
-    "rank": 22,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -38802,7 +38830,7 @@ window.SEARCH_INDEX = [
       "hardin",
       "shawn"
     ],
-    "rank": 157,
+    "rank": 156,
     "gender": "boys"
   },
   {
@@ -38816,7 +38844,7 @@ window.SEARCH_INDEX = [
       "elliot",
       "houser"
     ],
-    "rank": 146,
+    "rank": 145,
     "gender": "boys"
   },
   {
@@ -38830,7 +38858,7 @@ window.SEARCH_INDEX = [
       "benjamin",
       "kale"
     ],
-    "rank": 30,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -38844,7 +38872,7 @@ window.SEARCH_INDEX = [
       "kingsley",
       "ryan"
     ],
-    "rank": 123,
+    "rank": 122,
     "gender": "boys"
   },
   {
@@ -38858,7 +38886,7 @@ window.SEARCH_INDEX = [
       "kylin",
       "mitman"
     ],
-    "rank": 110,
+    "rank": 109,
     "gender": "boys"
   },
   {
@@ -38872,7 +38900,7 @@ window.SEARCH_INDEX = [
       "craeton",
       "sandoval"
     ],
-    "rank": 287,
+    "rank": 286,
     "gender": "boys"
   },
   {
@@ -38886,7 +38914,7 @@ window.SEARCH_INDEX = [
       "malik",
       "williams"
     ],
-    "rank": 290,
+    "rank": 289,
     "gender": "boys"
   },
   {
@@ -38900,7 +38928,7 @@ window.SEARCH_INDEX = [
       "branch",
       "zaven"
     ],
-    "rank": 149,
+    "rank": 148,
     "gender": "boys"
   },
   {
@@ -38928,7 +38956,7 @@ window.SEARCH_INDEX = [
       "julius",
       "parriman"
     ],
-    "rank": 46,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -38942,7 +38970,7 @@ window.SEARCH_INDEX = [
       "link",
       "nolan"
     ],
-    "rank": 7,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -38956,7 +38984,7 @@ window.SEARCH_INDEX = [
       "lubeck",
       "tristan"
     ],
-    "rank": 253,
+    "rank": 252,
     "gender": "boys"
   },
   {
@@ -38984,7 +39012,7 @@ window.SEARCH_INDEX = [
       "daylin",
       "mcdade"
     ],
-    "rank": 240,
+    "rank": 239,
     "gender": "boys"
   },
   {
@@ -38998,7 +39026,7 @@ window.SEARCH_INDEX = [
       "dover",
       "javen"
     ],
-    "rank": 79,
+    "rank": 80,
     "gender": "boys"
   },
   {
@@ -39012,7 +39040,7 @@ window.SEARCH_INDEX = [
       "manuel",
       "nivar"
     ],
-    "rank": 69,
+    "rank": 70,
     "gender": "boys"
   },
   {
@@ -39040,7 +39068,7 @@ window.SEARCH_INDEX = [
       "bennet",
       "jason"
     ],
-    "rank": 228,
+    "rank": 227,
     "gender": "boys"
   },
   {
@@ -39054,7 +39082,7 @@ window.SEARCH_INDEX = [
       "beckett",
       "stone"
     ],
-    "rank": 23,
+    "rank": 25,
     "gender": "boys"
   },
   {
@@ -39068,7 +39096,7 @@ window.SEARCH_INDEX = [
       "crume",
       "jaxson"
     ],
-    "rank": 283,
+    "rank": 282,
     "gender": "boys"
   },
   {
@@ -39096,7 +39124,7 @@ window.SEARCH_INDEX = [
       "celia",
       "sweatt"
     ],
-    "rank": 70,
+    "rank": 71,
     "gender": "boys"
   },
   {
@@ -39110,7 +39138,7 @@ window.SEARCH_INDEX = [
       "kayden",
       "young"
     ],
-    "rank": 260,
+    "rank": 259,
     "gender": "boys"
   },
   {
@@ -39138,7 +39166,7 @@ window.SEARCH_INDEX = [
       "gardner",
       "logan"
     ],
-    "rank": 78,
+    "rank": 79,
     "gender": "boys"
   },
   {
@@ -39152,7 +39180,7 @@ window.SEARCH_INDEX = [
       "jace",
       "main"
     ],
-    "rank": 218,
+    "rank": 217,
     "gender": "boys"
   },
   {
@@ -39166,7 +39194,7 @@ window.SEARCH_INDEX = [
       "anthony",
       "weaver"
     ],
-    "rank": 115,
+    "rank": 114,
     "gender": "boys"
   },
   {
@@ -39180,7 +39208,7 @@ window.SEARCH_INDEX = [
       "alfred",
       "reano"
     ],
-    "rank": 204,
+    "rank": 203,
     "gender": "boys"
   },
   {
@@ -39194,7 +39222,7 @@ window.SEARCH_INDEX = [
       "cooke",
       "isaiah"
     ],
-    "rank": 289,
+    "rank": 288,
     "gender": "boys"
   },
   {
@@ -39208,7 +39236,7 @@ window.SEARCH_INDEX = [
       "scarberry",
       "wyatt"
     ],
-    "rank": 288,
+    "rank": 287,
     "gender": "boys"
   },
   {
@@ -39222,7 +39250,7 @@ window.SEARCH_INDEX = [
       "brody",
       "culver"
     ],
-    "rank": 34,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -39236,7 +39264,7 @@ window.SEARCH_INDEX = [
       "aran",
       "shojaei"
     ],
-    "rank": 133,
+    "rank": 132,
     "gender": "boys"
   },
   {
@@ -39250,7 +39278,7 @@ window.SEARCH_INDEX = [
       "jace",
       "mason"
     ],
-    "rank": 214,
+    "rank": 213,
     "gender": "boys"
   },
   {
@@ -39264,7 +39292,7 @@ window.SEARCH_INDEX = [
       "bentley",
       "coy"
     ],
-    "rank": 119,
+    "rank": 118,
     "gender": "boys"
   },
   {
@@ -39292,7 +39320,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "jimenez"
     ],
-    "rank": 245,
+    "rank": 244,
     "gender": "boys"
   },
   {
@@ -39334,7 +39362,7 @@ window.SEARCH_INDEX = [
       "paxton",
       "slayton"
     ],
-    "rank": 40,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -39348,7 +39376,7 @@ window.SEARCH_INDEX = [
       "isrell",
       "roberts"
     ],
-    "rank": 37,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -39376,7 +39404,7 @@ window.SEARCH_INDEX = [
       "clatterbuck",
       "tyler"
     ],
-    "rank": 213,
+    "rank": 212,
     "gender": "boys"
   },
   {
@@ -39390,7 +39418,7 @@ window.SEARCH_INDEX = [
       "jayven",
       "williams"
     ],
-    "rank": 272,
+    "rank": 271,
     "gender": "boys"
   },
   {
@@ -39404,7 +39432,7 @@ window.SEARCH_INDEX = [
       "brantley",
       "johnston"
     ],
-    "rank": 223,
+    "rank": 222,
     "gender": "boys"
   },
   {
@@ -39418,7 +39446,7 @@ window.SEARCH_INDEX = [
       "elijah",
       "kindle"
     ],
-    "rank": 147,
+    "rank": 146,
     "gender": "boys"
   },
   {
@@ -39432,7 +39460,7 @@ window.SEARCH_INDEX = [
       "collins",
       "myka"
     ],
-    "rank": 86,
+    "rank": 87,
     "gender": "boys"
   },
   {
@@ -39446,7 +39474,7 @@ window.SEARCH_INDEX = [
       "combs",
       "rylan"
     ],
-    "rank": 165,
+    "rank": 164,
     "gender": "boys"
   },
   {
@@ -39460,7 +39488,7 @@ window.SEARCH_INDEX = [
       "baker",
       "landon"
     ],
-    "rank": 47,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -39488,7 +39516,7 @@ window.SEARCH_INDEX = [
       "brody",
       "collins"
     ],
-    "rank": 121,
+    "rank": 120,
     "gender": "boys"
   },
   {
@@ -39530,7 +39558,7 @@ window.SEARCH_INDEX = [
       "cupp",
       "emma"
     ],
-    "rank": 112,
+    "rank": 111,
     "gender": "boys"
   },
   {
@@ -39544,7 +39572,7 @@ window.SEARCH_INDEX = [
       "jonathan",
       "slone"
     ],
-    "rank": 158,
+    "rank": 157,
     "gender": "boys"
   },
   {
@@ -39558,7 +39586,7 @@ window.SEARCH_INDEX = [
       "hunter",
       "tolliver"
     ],
-    "rank": 195,
+    "rank": 194,
     "gender": "boys"
   },
   {
@@ -39572,7 +39600,7 @@ window.SEARCH_INDEX = [
       "chadwell",
       "logan"
     ],
-    "rank": 274,
+    "rank": 273,
     "gender": "boys"
   },
   {
@@ -39614,7 +39642,7 @@ window.SEARCH_INDEX = [
       "baker",
       "hezekiah"
     ],
-    "rank": 219,
+    "rank": 218,
     "gender": "boys"
   },
   {
@@ -39628,7 +39656,7 @@ window.SEARCH_INDEX = [
       "conner",
       "debord"
     ],
-    "rank": 67,
+    "rank": 68,
     "gender": "boys"
   },
   {
@@ -39642,7 +39670,7 @@ window.SEARCH_INDEX = [
       "graham",
       "hamilton"
     ],
-    "rank": 201,
+    "rank": 200,
     "gender": "boys"
   },
   {
@@ -39656,7 +39684,7 @@ window.SEARCH_INDEX = [
       "robert",
       "suarez"
     ],
-    "rank": 225,
+    "rank": 224,
     "gender": "boys"
   },
   {
@@ -39670,7 +39698,7 @@ window.SEARCH_INDEX = [
       "burton",
       "dylan"
     ],
-    "rank": 44,
+    "rank": 45,
     "gender": "boys"
   },
   {
@@ -39684,7 +39712,7 @@ window.SEARCH_INDEX = [
       "clay",
       "tyler"
     ],
-    "rank": 229,
+    "rank": 228,
     "gender": "boys"
   },
   {
@@ -39698,7 +39726,7 @@ window.SEARCH_INDEX = [
       "james",
       "mccrary"
     ],
-    "rank": 106,
+    "rank": 105,
     "gender": "boys"
   },
   {
@@ -39712,7 +39740,7 @@ window.SEARCH_INDEX = [
       "madison",
       "price"
     ],
-    "rank": 167,
+    "rank": 166,
     "gender": "boys"
   },
   {
@@ -39726,7 +39754,7 @@ window.SEARCH_INDEX = [
       "bennett",
       "marcus"
     ],
-    "rank": 224,
+    "rank": 223,
     "gender": "boys"
   },
   {
@@ -39740,7 +39768,7 @@ window.SEARCH_INDEX = [
       "killian",
       "riegler"
     ],
-    "rank": 103,
+    "rank": 102,
     "gender": "boys"
   },
   {
@@ -39768,7 +39796,7 @@ window.SEARCH_INDEX = [
       "cornwell",
       "luke"
     ],
-    "rank": 2,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -39782,7 +39810,7 @@ window.SEARCH_INDEX = [
       "collins",
       "westley"
     ],
-    "rank": 222,
+    "rank": 221,
     "gender": "boys"
   },
   {
@@ -39796,7 +39824,7 @@ window.SEARCH_INDEX = [
       "bradley",
       "hacker"
     ],
-    "rank": 41,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -39810,7 +39838,7 @@ window.SEARCH_INDEX = [
       "baysinger",
       "judah"
     ],
-    "rank": 108,
+    "rank": 107,
     "gender": "boys"
   },
   {
@@ -39824,7 +39852,7 @@ window.SEARCH_INDEX = [
       "aj",
       "falk"
     ],
-    "rank": 24,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -39838,7 +39866,7 @@ window.SEARCH_INDEX = [
       "erick",
       "martinez"
     ],
-    "rank": 166,
+    "rank": 165,
     "gender": "boys"
   },
   {
@@ -39866,7 +39894,7 @@ window.SEARCH_INDEX = [
       "haelan",
       "robles"
     ],
-    "rank": 25,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -39880,7 +39908,7 @@ window.SEARCH_INDEX = [
       "jordan",
       "rutherford"
     ],
-    "rank": 28,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -39908,7 +39936,7 @@ window.SEARCH_INDEX = [
       "knight",
       "tatum"
     ],
-    "rank": 207,
+    "rank": 206,
     "gender": "boys"
   },
   {
@@ -39922,7 +39950,7 @@ window.SEARCH_INDEX = [
       "emanuel",
       "pamblanco"
     ],
-    "rank": 131,
+    "rank": 130,
     "gender": "boys"
   },
   {
@@ -39936,7 +39964,7 @@ window.SEARCH_INDEX = [
       "maxwell",
       "smith"
     ],
-    "rank": 210,
+    "rank": 209,
     "gender": "boys"
   },
   {
@@ -39950,7 +39978,7 @@ window.SEARCH_INDEX = [
       "jakira",
       "sanchez"
     ],
-    "rank": 209,
+    "rank": 208,
     "gender": "boys"
   },
   {
@@ -39979,7 +40007,7 @@ window.SEARCH_INDEX = [
       "lopez",
       "meza"
     ],
-    "rank": 130,
+    "rank": 129,
     "gender": "boys"
   },
   {
@@ -39993,7 +40021,7 @@ window.SEARCH_INDEX = [
       "cole",
       "david"
     ],
-    "rank": 71,
+    "rank": 72,
     "gender": "boys"
   },
   {
@@ -40021,7 +40049,7 @@ window.SEARCH_INDEX = [
       "brock",
       "fernandez"
     ],
-    "rank": 9,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -40035,7 +40063,7 @@ window.SEARCH_INDEX = [
       "caleb",
       "quirino"
     ],
-    "rank": 16,
+    "rank": 19,
     "gender": "boys"
   },
   {
@@ -40063,7 +40091,7 @@ window.SEARCH_INDEX = [
       "camren",
       "walls"
     ],
-    "rank": 170,
+    "rank": 169,
     "gender": "boys"
   },
   {
@@ -40077,7 +40105,7 @@ window.SEARCH_INDEX = [
       "aidan",
       "pozo-santillanes"
     ],
-    "rank": 264,
+    "rank": 263,
     "gender": "boys"
   },
   {
@@ -40091,7 +40119,7 @@ window.SEARCH_INDEX = [
       "damole",
       "ramadhani"
     ],
-    "rank": 261,
+    "rank": 260,
     "gender": "boys"
   },
   {
@@ -40105,7 +40133,7 @@ window.SEARCH_INDEX = [
       "bayron",
       "mejia"
     ],
-    "rank": 172,
+    "rank": 171,
     "gender": "boys"
   },
   {
@@ -40119,7 +40147,7 @@ window.SEARCH_INDEX = [
       "adams",
       "elijah"
     ],
-    "rank": 38,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -40133,7 +40161,7 @@ window.SEARCH_INDEX = [
       "aydin",
       "marshall"
     ],
-    "rank": 74,
+    "rank": 75,
     "gender": "boys"
   },
   {
@@ -40147,7 +40175,7 @@ window.SEARCH_INDEX = [
       "kaiden",
       "poltorak"
     ],
-    "rank": 104,
+    "rank": 103,
     "gender": "boys"
   },
   {
@@ -40161,7 +40189,7 @@ window.SEARCH_INDEX = [
       "gage",
       "luttrell"
     ],
-    "rank": 273,
+    "rank": 272,
     "gender": "boys"
   },
   {
@@ -40175,7 +40203,7 @@ window.SEARCH_INDEX = [
       "dillon",
       "skyles"
     ],
-    "rank": 52,
+    "rank": 51,
     "gender": "boys"
   },
   {
@@ -40189,7 +40217,7 @@ window.SEARCH_INDEX = [
       "camden",
       "luttrell"
     ],
-    "rank": 111,
+    "rank": 110,
     "gender": "boys"
   },
   {
@@ -40203,7 +40231,7 @@ window.SEARCH_INDEX = [
       "blumberg",
       "maxwell"
     ],
-    "rank": 169,
+    "rank": 168,
     "gender": "boys"
   },
   {
@@ -40217,7 +40245,7 @@ window.SEARCH_INDEX = [
       "hamilton",
       "john"
     ],
-    "rank": 200,
+    "rank": 199,
     "gender": "boys"
   },
   {
@@ -40231,7 +40259,7 @@ window.SEARCH_INDEX = [
       "dodrill",
       "luke"
     ],
-    "rank": 270,
+    "rank": 269,
     "gender": "boys"
   },
   {
@@ -40245,7 +40273,7 @@ window.SEARCH_INDEX = [
       "bacon",
       "major"
     ],
-    "rank": 107,
+    "rank": 106,
     "gender": "boys"
   },
   {
@@ -40259,7 +40287,7 @@ window.SEARCH_INDEX = [
       "chris",
       "grissom"
     ],
-    "rank": 27,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -40273,7 +40301,7 @@ window.SEARCH_INDEX = [
       "heady",
       "utah"
     ],
-    "rank": 4,
+    "rank": 1,
     "gender": "boys"
   },
   {
@@ -40329,7 +40357,7 @@ window.SEARCH_INDEX = [
       "lacy",
       "zachary"
     ],
-    "rank": 137,
+    "rank": 136,
     "gender": "boys"
   },
   {
@@ -40343,7 +40371,7 @@ window.SEARCH_INDEX = [
       "braydon",
       "donato"
     ],
-    "rank": 124,
+    "rank": 123,
     "gender": "boys"
   },
   {
@@ -40357,7 +40385,7 @@ window.SEARCH_INDEX = [
       "krebs",
       "mason"
     ],
-    "rank": 285,
+    "rank": 284,
     "gender": "boys"
   },
   {
@@ -40371,7 +40399,7 @@ window.SEARCH_INDEX = [
       "denney",
       "gabriel"
     ],
-    "rank": 102,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -40386,7 +40414,7 @@ window.SEARCH_INDEX = [
       "gillispie",
       "john"
     ],
-    "rank": 160,
+    "rank": 159,
     "gender": "boys"
   },
   {
@@ -40414,7 +40442,7 @@ window.SEARCH_INDEX = [
       "castaneda",
       "ivan"
     ],
-    "rank": 155,
+    "rank": 154,
     "gender": "boys"
   },
   {
@@ -40442,7 +40470,7 @@ window.SEARCH_INDEX = [
       "aranilla",
       "finn"
     ],
-    "rank": 153,
+    "rank": 152,
     "gender": "boys"
   },
   {
@@ -40456,7 +40484,7 @@ window.SEARCH_INDEX = [
       "blake",
       "smith"
     ],
-    "rank": 82,
+    "rank": 83,
     "gender": "boys"
   },
   {
@@ -40470,7 +40498,7 @@ window.SEARCH_INDEX = [
       "brayden",
       "stephens"
     ],
-    "rank": 80,
+    "rank": 81,
     "gender": "boys"
   },
   {
@@ -40484,7 +40512,7 @@ window.SEARCH_INDEX = [
       "isaac",
       "richards"
     ],
-    "rank": 20,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -43359,20 +43387,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kadyn Allen",
-    "first_name": "Kadyn",
-    "last_name": "Allen",
-    "secondary": "Independence H.S. · 138",
-    "url": "/wrestler.html?id=35810423132&gender=boys",
-    "searchTokens": [
-      "allen",
-      "kadyn"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Kameron Parker",
     "first_name": "Kameron",
     "last_name": "Parker",
@@ -43381,6 +43395,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "kameron",
       "parker"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Kadyn Allen",
+    "first_name": "Kadyn",
+    "last_name": "Allen",
+    "secondary": "Independence H.S. · 138",
+    "url": "/wrestler.html?id=35810423132&gender=boys",
+    "searchTokens": [
+      "allen",
+      "kadyn"
     ],
     "rank": null,
     "gender": "boys"
@@ -45664,7 +45692,7 @@ window.SEARCH_INDEX = [
       "brayden",
       "mattingly"
     ],
-    "rank": 30,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -45762,7 +45790,7 @@ window.SEARCH_INDEX = [
       "floyd",
       "kathryn"
     ],
-    "rank": 65,
+    "rank": 66,
     "gender": "boys"
   },
   {
@@ -45790,7 +45818,7 @@ window.SEARCH_INDEX = [
       "trenton",
       "williamson"
     ],
-    "rank": 70,
+    "rank": 76,
     "gender": "boys"
   },
   {
@@ -45902,7 +45930,7 @@ window.SEARCH_INDEX = [
       "bowling",
       "jace"
     ],
-    "rank": 22,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -45930,7 +45958,7 @@ window.SEARCH_INDEX = [
       "kamarius",
       "ziesmer"
     ],
-    "rank": 16,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -45974,7 +46002,7 @@ window.SEARCH_INDEX = [
       "jerred",
       "john"
     ],
-    "rank": 76,
+    "rank": 75,
     "gender": "boys"
   },
   {
@@ -46072,7 +46100,7 @@ window.SEARCH_INDEX = [
       "deacon",
       "heisler"
     ],
-    "rank": 9,
+    "rank": 6,
     "gender": "boys"
   },
   {
@@ -46114,7 +46142,7 @@ window.SEARCH_INDEX = [
       "derrick",
       "johnson"
     ],
-    "rank": 12,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -46156,7 +46184,7 @@ window.SEARCH_INDEX = [
       "dane",
       "miller"
     ],
-    "rank": 6,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -46240,7 +46268,7 @@ window.SEARCH_INDEX = [
       "luke",
       "peace"
     ],
-    "rank": 15,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -46254,7 +46282,7 @@ window.SEARCH_INDEX = [
       "greiwe",
       "titus"
     ],
-    "rank": 10,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -46324,7 +46352,7 @@ window.SEARCH_INDEX = [
       "abraham",
       "patterson"
     ],
-    "rank": 74,
+    "rank": 73,
     "gender": "boys"
   },
   {
@@ -46338,7 +46366,7 @@ window.SEARCH_INDEX = [
       "joshua",
       "rudkosky"
     ],
-    "rank": 33,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -46366,7 +46394,7 @@ window.SEARCH_INDEX = [
       "joshua",
       "young"
     ],
-    "rank": 71,
+    "rank": 70,
     "gender": "boys"
   },
   {
@@ -46524,7 +46552,7 @@ window.SEARCH_INDEX = [
       "fouch",
       "parker"
     ],
-    "rank": 26,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -46538,7 +46566,7 @@ window.SEARCH_INDEX = [
       "caleb",
       "roth"
     ],
-    "rank": 39,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -46552,7 +46580,7 @@ window.SEARCH_INDEX = [
       "blake",
       "luttrell"
     ],
-    "rank": 8,
+    "rank": 5,
     "gender": "boys"
   },
   {
@@ -46692,7 +46720,7 @@ window.SEARCH_INDEX = [
       "aliven",
       "anderson"
     ],
-    "rank": 97,
+    "rank": 96,
     "gender": "boys"
   },
   {
@@ -46874,7 +46902,7 @@ window.SEARCH_INDEX = [
       "austin",
       "brinegar"
     ],
-    "rank": 5,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -46888,7 +46916,7 @@ window.SEARCH_INDEX = [
       "howard",
       "nathan"
     ],
-    "rank": 132,
+    "rank": 131,
     "gender": "boys"
   },
   {
@@ -46972,7 +47000,7 @@ window.SEARCH_INDEX = [
       "braxton",
       "payne"
     ],
-    "rank": 31,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -46986,7 +47014,7 @@ window.SEARCH_INDEX = [
       "trae",
       "white"
     ],
-    "rank": 27,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -47028,7 +47056,7 @@ window.SEARCH_INDEX = [
       "garrison",
       "meacham"
     ],
-    "rank": 64,
+    "rank": 65,
     "gender": "boys"
   },
   {
@@ -47280,7 +47308,7 @@ window.SEARCH_INDEX = [
       "nguyen",
       "quan"
     ],
-    "rank": 131,
+    "rank": 132,
     "gender": "boys"
   },
   {
@@ -47322,7 +47350,7 @@ window.SEARCH_INDEX = [
       "chance",
       "mills"
     ],
-    "rank": 11,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -47336,7 +47364,7 @@ window.SEARCH_INDEX = [
       "bonham",
       "caleb"
     ],
-    "rank": 63,
+    "rank": 64,
     "gender": "boys"
   },
   {
@@ -47364,7 +47392,7 @@ window.SEARCH_INDEX = [
       "andrew",
       "pomeroy"
     ],
-    "rank": 13,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -47448,7 +47476,7 @@ window.SEARCH_INDEX = [
       "amos",
       "gunner"
     ],
-    "rank": 72,
+    "rank": 71,
     "gender": "boys"
   },
   {
@@ -47462,7 +47490,7 @@ window.SEARCH_INDEX = [
       "durbin",
       "patrick"
     ],
-    "rank": 24,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -47575,7 +47603,7 @@ window.SEARCH_INDEX = [
       "kalob",
       "wise"
     ],
-    "rank": 7,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -47602,7 +47630,7 @@ window.SEARCH_INDEX = [
       "alford",
       "bryce"
     ],
-    "rank": 38,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -47630,7 +47658,7 @@ window.SEARCH_INDEX = [
       "austin",
       "young"
     ],
-    "rank": 66,
+    "rank": 67,
     "gender": "boys"
   },
   {
@@ -47742,7 +47770,7 @@ window.SEARCH_INDEX = [
       "baggarly",
       "braylon"
     ],
-    "rank": 73,
+    "rank": 72,
     "gender": "boys"
   },
   {
@@ -47784,7 +47812,7 @@ window.SEARCH_INDEX = [
       "clary",
       "jaxon"
     ],
-    "rank": 28,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -47896,7 +47924,7 @@ window.SEARCH_INDEX = [
       "smallwood",
       "tucker"
     ],
-    "rank": 67,
+    "rank": 63,
     "gender": "boys"
   },
   {
@@ -47924,7 +47952,7 @@ window.SEARCH_INDEX = [
       "cooper",
       "scott"
     ],
-    "rank": 23,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -47982,7 +48010,7 @@ window.SEARCH_INDEX = [
       "stanley",
       "vontae"
     ],
-    "rank": 20,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -48150,7 +48178,7 @@ window.SEARCH_INDEX = [
       "irwin",
       "jagger"
     ],
-    "rank": 21,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -48276,7 +48304,7 @@ window.SEARCH_INDEX = [
       "luis",
       "tirado"
     ],
-    "rank": 75,
+    "rank": 74,
     "gender": "boys"
   },
   {
@@ -48360,7 +48388,7 @@ window.SEARCH_INDEX = [
       "colton",
       "motta"
     ],
-    "rank": 14,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -48570,7 +48598,7 @@ window.SEARCH_INDEX = [
       "adams",
       "cooper"
     ],
-    "rank": 17,
+    "rank": 25,
     "gender": "boys"
   },
   {
@@ -48626,7 +48654,7 @@ window.SEARCH_INDEX = [
       "garrison",
       "thomas"
     ],
-    "rank": 32,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -48668,7 +48696,7 @@ window.SEARCH_INDEX = [
       "boone",
       "sawyer"
     ],
-    "rank": 25,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -48752,7 +48780,7 @@ window.SEARCH_INDEX = [
       "matthews",
       "zarrie"
     ],
-    "rank": 96,
+    "rank": 97,
     "gender": "boys"
   },
   {
@@ -48794,7 +48822,7 @@ window.SEARCH_INDEX = [
       "carte",
       "channing"
     ],
-    "rank": 29,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -48822,7 +48850,7 @@ window.SEARCH_INDEX = [
       "brown",
       "jacob"
     ],
-    "rank": 4,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -52003,6 +52031,20 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Kalob Wise",
+    "first_name": "Kalob",
+    "last_name": "Wise",
+    "secondary": "Moore · 144",
+    "url": "/wrestler.html?id=OUTSTATE_b86d8ea2a405&gender=boys",
+    "searchTokens": [
+      "kalob",
+      "wise"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
     "name": "Ethan Clark",
     "first_name": "Ethan",
     "last_name": "Clark",
@@ -52572,6 +52614,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "jon",
       "perez"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Levi Howard",
+    "first_name": "Levi",
+    "last_name": "Howard",
+    "secondary": "Lexington Christian · 144",
+    "url": "/wrestler.html?id=OUTSTATE_b02357b15f90&gender=boys",
+    "searchTokens": [
+      "howard",
+      "levi"
     ],
     "rank": null,
     "gender": "boys"
@@ -54071,7 +54127,7 @@ window.SEARCH_INDEX = [
       "crutcher",
       "jaylen"
     ],
-    "rank": 108,
+    "rank": 109,
     "gender": "boys"
   },
   {
@@ -54099,7 +54155,7 @@ window.SEARCH_INDEX = [
       "clayton",
       "pendley"
     ],
-    "rank": 27,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -54113,7 +54169,7 @@ window.SEARCH_INDEX = [
       "clarence",
       "mcdade"
     ],
-    "rank": 87,
+    "rank": 86,
     "gender": "boys"
   },
   {
@@ -54127,7 +54183,7 @@ window.SEARCH_INDEX = [
       "taner",
       "woodman"
     ],
-    "rank": 11,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -54141,7 +54197,7 @@ window.SEARCH_INDEX = [
       "damian",
       "sammons"
     ],
-    "rank": 106,
+    "rank": 107,
     "gender": "boys"
   },
   {
@@ -54169,7 +54225,7 @@ window.SEARCH_INDEX = [
       "mekhi",
       "moorman"
     ],
-    "rank": 149,
+    "rank": 148,
     "gender": "boys"
   },
   {
@@ -54183,7 +54239,7 @@ window.SEARCH_INDEX = [
       "benjamin",
       "crabtree"
     ],
-    "rank": 116,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -54197,7 +54253,7 @@ window.SEARCH_INDEX = [
       "goodin",
       "hunter"
     ],
-    "rank": 39,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -54267,7 +54323,7 @@ window.SEARCH_INDEX = [
       "george",
       "mintch"
     ],
-    "rank": 49,
+    "rank": 55,
     "gender": "boys"
   },
   {
@@ -54337,7 +54393,7 @@ window.SEARCH_INDEX = [
       "chase",
       "gillum"
     ],
-    "rank": 2,
+    "rank": 3,
     "gender": "boys"
   },
   {
@@ -54351,7 +54407,7 @@ window.SEARCH_INDEX = [
       "carey",
       "judah"
     ],
-    "rank": 7,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -54379,7 +54435,7 @@ window.SEARCH_INDEX = [
       "joshua",
       "sandifer"
     ],
-    "rank": 153,
+    "rank": 154,
     "gender": "boys"
   },
   {
@@ -54408,7 +54464,7 @@ window.SEARCH_INDEX = [
       "hobbs",
       "logan"
     ],
-    "rank": 36,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -54436,7 +54492,7 @@ window.SEARCH_INDEX = [
       "orion",
       "phillips"
     ],
-    "rank": 79,
+    "rank": 78,
     "gender": "boys"
   },
   {
@@ -54450,7 +54506,7 @@ window.SEARCH_INDEX = [
       "colton",
       "kilgore"
     ],
-    "rank": 64,
+    "rank": 65,
     "gender": "boys"
   },
   {
@@ -54464,7 +54520,7 @@ window.SEARCH_INDEX = [
       "donovan",
       "rogers"
     ],
-    "rank": 19,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -54520,7 +54576,7 @@ window.SEARCH_INDEX = [
       "evan",
       "roe"
     ],
-    "rank": 45,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -54534,7 +54590,7 @@ window.SEARCH_INDEX = [
       "giazzi",
       "segarra"
     ],
-    "rank": 62,
+    "rank": 63,
     "gender": "boys"
   },
   {
@@ -54548,7 +54604,7 @@ window.SEARCH_INDEX = [
       "peyton",
       "weaver"
     ],
-    "rank": 30,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -54562,7 +54618,7 @@ window.SEARCH_INDEX = [
       "bennett",
       "kendall"
     ],
-    "rank": 96,
+    "rank": 97,
     "gender": "boys"
   },
   {
@@ -54576,7 +54632,7 @@ window.SEARCH_INDEX = [
       "gimmel",
       "william"
     ],
-    "rank": 145,
+    "rank": 144,
     "gender": "boys"
   },
   {
@@ -54604,7 +54660,7 @@ window.SEARCH_INDEX = [
       "noah",
       "pulsinelli"
     ],
-    "rank": 86,
+    "rank": 85,
     "gender": "boys"
   },
   {
@@ -54618,7 +54674,7 @@ window.SEARCH_INDEX = [
       "jalen",
       "sowerby"
     ],
-    "rank": 113,
+    "rank": 114,
     "gender": "boys"
   },
   {
@@ -54646,7 +54702,7 @@ window.SEARCH_INDEX = [
       "cj",
       "thacker"
     ],
-    "rank": 141,
+    "rank": 140,
     "gender": "boys"
   },
   {
@@ -54660,7 +54716,7 @@ window.SEARCH_INDEX = [
       "tegh",
       "waraich"
     ],
-    "rank": 58,
+    "rank": 61,
     "gender": "boys"
   },
   {
@@ -54674,7 +54730,7 @@ window.SEARCH_INDEX = [
       "nathan",
       "seth"
     ],
-    "rank": 5,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -54688,7 +54744,7 @@ window.SEARCH_INDEX = [
       "liam",
       "surber"
     ],
-    "rank": 144,
+    "rank": 143,
     "gender": "boys"
   },
   {
@@ -54702,7 +54758,7 @@ window.SEARCH_INDEX = [
       "jenkins",
       "trent"
     ],
-    "rank": 40,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -54758,7 +54814,7 @@ window.SEARCH_INDEX = [
       "nick",
       "thomas"
     ],
-    "rank": 109,
+    "rank": 110,
     "gender": "boys"
   },
   {
@@ -54800,7 +54856,7 @@ window.SEARCH_INDEX = [
       "hernandez",
       "julian"
     ],
-    "rank": 50,
+    "rank": 48,
     "gender": "boys"
   },
   {
@@ -54814,7 +54870,7 @@ window.SEARCH_INDEX = [
       "cecil",
       "jacob"
     ],
-    "rank": 100,
+    "rank": 102,
     "gender": "boys"
   },
   {
@@ -54828,7 +54884,7 @@ window.SEARCH_INDEX = [
       "langston",
       "tincher"
     ],
-    "rank": 98,
+    "rank": 99,
     "gender": "boys"
   },
   {
@@ -54842,7 +54898,7 @@ window.SEARCH_INDEX = [
       "lucas",
       "oliverio"
     ],
-    "rank": 13,
+    "rank": 6,
     "gender": "boys"
   },
   {
@@ -54871,7 +54927,7 @@ window.SEARCH_INDEX = [
       "fosset",
       "jackson"
     ],
-    "rank": 142,
+    "rank": 141,
     "gender": "boys"
   },
   {
@@ -54913,7 +54969,7 @@ window.SEARCH_INDEX = [
       "david",
       "wade"
     ],
-    "rank": 77,
+    "rank": 51,
     "gender": "boys"
   },
   {
@@ -54941,7 +54997,7 @@ window.SEARCH_INDEX = [
       "miles",
       "smith"
     ],
-    "rank": 8,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -55082,7 +55138,7 @@ window.SEARCH_INDEX = [
       "ellis",
       "robbie"
     ],
-    "rank": 46,
+    "rank": 45,
     "gender": "boys"
   },
   {
@@ -55124,7 +55180,7 @@ window.SEARCH_INDEX = [
       "luis",
       "nunez"
     ],
-    "rank": 103,
+    "rank": 101,
     "gender": "boys"
   },
   {
@@ -55180,7 +55236,7 @@ window.SEARCH_INDEX = [
       "hitchcock",
       "kent"
     ],
-    "rank": 138,
+    "rank": 137,
     "gender": "boys"
   },
   {
@@ -55194,7 +55250,7 @@ window.SEARCH_INDEX = [
       "elijah",
       "tabor"
     ],
-    "rank": 43,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -55264,7 +55320,7 @@ window.SEARCH_INDEX = [
       "deacon",
       "joseph"
     ],
-    "rank": 136,
+    "rank": 146,
     "gender": "boys"
   },
   {
@@ -55334,7 +55390,7 @@ window.SEARCH_INDEX = [
       "gage",
       "lemarque"
     ],
-    "rank": 101,
+    "rank": 103,
     "gender": "boys"
   },
   {
@@ -55348,7 +55404,7 @@ window.SEARCH_INDEX = [
       "jaxon",
       "leonard"
     ],
-    "rank": 66,
+    "rank": 67,
     "gender": "boys"
   },
   {
@@ -55390,7 +55446,7 @@ window.SEARCH_INDEX = [
       "hunter",
       "jones"
     ],
-    "rank": 65,
+    "rank": 66,
     "gender": "boys"
   },
   {
@@ -55446,7 +55502,7 @@ window.SEARCH_INDEX = [
       "jaimerion",
       "young"
     ],
-    "rank": 10,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -55474,7 +55530,7 @@ window.SEARCH_INDEX = [
       "manning-lewis",
       "mekhi"
     ],
-    "rank": 146,
+    "rank": 145,
     "gender": "boys"
   },
   {
@@ -55502,7 +55558,7 @@ window.SEARCH_INDEX = [
       "carmona",
       "christian"
     ],
-    "rank": 154,
+    "rank": 153,
     "gender": "boys"
   },
   {
@@ -55572,7 +55628,7 @@ window.SEARCH_INDEX = [
       "bryant",
       "maddox"
     ],
-    "rank": 22,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -55628,7 +55684,7 @@ window.SEARCH_INDEX = [
       "quesenberry",
       "zachary"
     ],
-    "rank": 63,
+    "rank": 64,
     "gender": "boys"
   },
   {
@@ -55684,7 +55740,7 @@ window.SEARCH_INDEX = [
       "cooper",
       "jaiden"
     ],
-    "rank": 18,
+    "rank": 19,
     "gender": "boys"
   },
   {
@@ -55796,7 +55852,7 @@ window.SEARCH_INDEX = [
       "daruk",
       "isaiah"
     ],
-    "rank": 80,
+    "rank": 79,
     "gender": "boys"
   },
   {
@@ -55810,7 +55866,7 @@ window.SEARCH_INDEX = [
       "escobedo",
       "hiram"
     ],
-    "rank": 111,
+    "rank": 112,
     "gender": "boys"
   },
   {
@@ -55824,7 +55880,7 @@ window.SEARCH_INDEX = [
       "gavyn",
       "kinley"
     ],
-    "rank": 6,
+    "rank": 5,
     "gender": "boys"
   },
   {
@@ -55838,7 +55894,7 @@ window.SEARCH_INDEX = [
       "alex",
       "craven"
     ],
-    "rank": 38,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -55852,7 +55908,7 @@ window.SEARCH_INDEX = [
       "muadinov",
       "sharaf"
     ],
-    "rank": 55,
+    "rank": 58,
     "gender": "boys"
   },
   {
@@ -55880,7 +55936,7 @@ window.SEARCH_INDEX = [
       "landon",
       "newton"
     ],
-    "rank": 84,
+    "rank": 83,
     "gender": "boys"
   },
   {
@@ -55922,7 +55978,7 @@ window.SEARCH_INDEX = [
       "begley",
       "jeremy"
     ],
-    "rank": 15,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -55936,7 +55992,7 @@ window.SEARCH_INDEX = [
       "fuggett",
       "haskell"
     ],
-    "rank": 104,
+    "rank": 105,
     "gender": "boys"
   },
   {
@@ -55950,7 +56006,7 @@ window.SEARCH_INDEX = [
       "robert",
       "roy"
     ],
-    "rank": 107,
+    "rank": 108,
     "gender": "boys"
   },
   {
@@ -55992,7 +56048,7 @@ window.SEARCH_INDEX = [
       "bryson",
       "carrington"
     ],
-    "rank": 48,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -56006,7 +56062,7 @@ window.SEARCH_INDEX = [
       "carrington",
       "taten"
     ],
-    "rank": 60,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -56020,7 +56076,7 @@ window.SEARCH_INDEX = [
       "kahner",
       "sexton"
     ],
-    "rank": 67,
+    "rank": 56,
     "gender": "boys"
   },
   {
@@ -56034,7 +56090,7 @@ window.SEARCH_INDEX = [
       "kramer",
       "nathan"
     ],
-    "rank": 42,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -56048,7 +56104,7 @@ window.SEARCH_INDEX = [
       "conner",
       "payton"
     ],
-    "rank": 12,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -56062,7 +56118,7 @@ window.SEARCH_INDEX = [
       "bartley",
       "waylon"
     ],
-    "rank": 61,
+    "rank": 62,
     "gender": "boys"
   },
   {
@@ -56076,7 +56132,7 @@ window.SEARCH_INDEX = [
       "amria",
       "luaye"
     ],
-    "rank": 105,
+    "rank": 106,
     "gender": "boys"
   },
   {
@@ -56118,7 +56174,7 @@ window.SEARCH_INDEX = [
       "noah",
       "weissbach"
     ],
-    "rank": 52,
+    "rank": 49,
     "gender": "boys"
   },
   {
@@ -56160,7 +56216,7 @@ window.SEARCH_INDEX = [
       "gonzalez",
       "santiago"
     ],
-    "rank": 3,
+    "rank": 2,
     "gender": "boys"
   },
   {
@@ -56174,7 +56230,7 @@ window.SEARCH_INDEX = [
       "bailey",
       "jayvon"
     ],
-    "rank": 114,
+    "rank": 115,
     "gender": "boys"
   },
   {
@@ -56244,7 +56300,7 @@ window.SEARCH_INDEX = [
       "hammons",
       "hunter"
     ],
-    "rank": 57,
+    "rank": 96,
     "gender": "boys"
   },
   {
@@ -56272,7 +56328,7 @@ window.SEARCH_INDEX = [
       "cisco",
       "torres"
     ],
-    "rank": 47,
+    "rank": 52,
     "gender": "boys"
   },
   {
@@ -56286,7 +56342,7 @@ window.SEARCH_INDEX = [
       "kaiden",
       "lawrence"
     ],
-    "rank": 99,
+    "rank": 100,
     "gender": "boys"
   },
   {
@@ -56328,7 +56384,7 @@ window.SEARCH_INDEX = [
       "layton",
       "morehead"
     ],
-    "rank": 51,
+    "rank": 89,
     "gender": "boys"
   },
   {
@@ -56356,7 +56412,7 @@ window.SEARCH_INDEX = [
       "brown",
       "madden"
     ],
-    "rank": 4,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -56370,7 +56426,7 @@ window.SEARCH_INDEX = [
       "collet",
       "john"
     ],
-    "rank": 81,
+    "rank": 80,
     "gender": "boys"
   },
   {
@@ -56384,7 +56440,7 @@ window.SEARCH_INDEX = [
       "max",
       "o`brien"
     ],
-    "rank": 97,
+    "rank": 98,
     "gender": "boys"
   },
   {
@@ -56412,7 +56468,7 @@ window.SEARCH_INDEX = [
       "gabe",
       "hillard"
     ],
-    "rank": 137,
+    "rank": 136,
     "gender": "boys"
   },
   {
@@ -56426,7 +56482,7 @@ window.SEARCH_INDEX = [
       "ryan",
       "schaefer"
     ],
-    "rank": 112,
+    "rank": 113,
     "gender": "boys"
   },
   {
@@ -56538,7 +56594,7 @@ window.SEARCH_INDEX = [
       "fugate",
       "zane"
     ],
-    "rank": 102,
+    "rank": 104,
     "gender": "boys"
   },
   {
@@ -56552,7 +56608,7 @@ window.SEARCH_INDEX = [
       "couch",
       "liam"
     ],
-    "rank": 140,
+    "rank": 139,
     "gender": "boys"
   },
   {
@@ -56566,7 +56622,7 @@ window.SEARCH_INDEX = [
       "judson",
       "miller"
     ],
-    "rank": 115,
+    "rank": 116,
     "gender": "boys"
   },
   {
@@ -56594,7 +56650,7 @@ window.SEARCH_INDEX = [
       "baker",
       "braxton"
     ],
-    "rank": 85,
+    "rank": 84,
     "gender": "boys"
   },
   {
@@ -56650,7 +56706,7 @@ window.SEARCH_INDEX = [
       "langford",
       "tristan"
     ],
-    "rank": 82,
+    "rank": 81,
     "gender": "boys"
   },
   {
@@ -56664,7 +56720,7 @@ window.SEARCH_INDEX = [
       "langford",
       "tucker"
     ],
-    "rank": 59,
+    "rank": 82,
     "gender": "boys"
   },
   {
@@ -56706,7 +56762,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "pituch"
     ],
-    "rank": 53,
+    "rank": 54,
     "gender": "boys"
   },
   {
@@ -56720,7 +56776,7 @@ window.SEARCH_INDEX = [
       "lane",
       "osborne"
     ],
-    "rank": 44,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -56734,7 +56790,7 @@ window.SEARCH_INDEX = [
       "cameron",
       "edison"
     ],
-    "rank": 110,
+    "rank": 111,
     "gender": "boys"
   },
   {
@@ -56776,7 +56832,7 @@ window.SEARCH_INDEX = [
       "crisp",
       "wyatt"
     ],
-    "rank": 37,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -56790,7 +56846,7 @@ window.SEARCH_INDEX = [
       "kaiden",
       "prince"
     ],
-    "rank": 56,
+    "rank": 53,
     "gender": "boys"
   },
   {
@@ -56804,7 +56860,7 @@ window.SEARCH_INDEX = [
       "brandon",
       "roberts"
     ],
-    "rank": 89,
+    "rank": 88,
     "gender": "boys"
   },
   {
@@ -56860,7 +56916,7 @@ window.SEARCH_INDEX = [
       "juan",
       "ramirez"
     ],
-    "rank": 21,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -56902,7 +56958,7 @@ window.SEARCH_INDEX = [
       "cox",
       "kayden"
     ],
-    "rank": 148,
+    "rank": 149,
     "gender": "boys"
   },
   {
@@ -56930,7 +56986,7 @@ window.SEARCH_INDEX = [
       "parker",
       "smith"
     ],
-    "rank": 26,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -56972,7 +57028,7 @@ window.SEARCH_INDEX = [
       "kenny",
       "smith"
     ],
-    "rank": 32,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -57000,7 +57056,7 @@ window.SEARCH_INDEX = [
       "patrick",
       "reckard"
     ],
-    "rank": 139,
+    "rank": 138,
     "gender": "boys"
   },
   {
@@ -57014,7 +57070,7 @@ window.SEARCH_INDEX = [
       "gibson",
       "tyler"
     ],
-    "rank": 34,
+    "rank": 35,
     "gender": "boys"
   },
   {
@@ -57042,7 +57098,7 @@ window.SEARCH_INDEX = [
       "coons",
       "grant"
     ],
-    "rank": 31,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -57084,7 +57140,7 @@ window.SEARCH_INDEX = [
       "charasika",
       "zaid"
     ],
-    "rank": 41,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -57126,7 +57182,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "zuniga"
     ],
-    "rank": 9,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -57140,7 +57196,7 @@ window.SEARCH_INDEX = [
       "covington",
       "justin"
     ],
-    "rank": 78,
+    "rank": 77,
     "gender": "boys"
   },
   {
@@ -57154,7 +57210,7 @@ window.SEARCH_INDEX = [
       "mayes",
       "zyereon"
     ],
-    "rank": 33,
+    "rank": 34,
     "gender": "boys"
   },
   {
@@ -57168,7 +57224,7 @@ window.SEARCH_INDEX = [
       "hunter",
       "kennedy"
     ],
-    "rank": 16,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -57196,7 +57252,7 @@ window.SEARCH_INDEX = [
       "samuel",
       "winders"
     ],
-    "rank": 83,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -57308,7 +57364,7 @@ window.SEARCH_INDEX = [
       "matthews",
       "zashawn"
     ],
-    "rank": 35,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -57350,7 +57406,7 @@ window.SEARCH_INDEX = [
       "brown",
       "kevin"
     ],
-    "rank": 54,
+    "rank": 57,
     "gender": "boys"
   },
   {
@@ -57364,7 +57420,7 @@ window.SEARCH_INDEX = [
       "askins",
       "trent"
     ],
-    "rank": 143,
+    "rank": 142,
     "gender": "boys"
   },
   {
@@ -61745,20 +61801,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Kaleb Ice",
-    "first_name": "Kaleb",
-    "last_name": "Ice",
-    "secondary": "Bridgeport Hs · 150",
-    "url": "/wrestler.html?id=35415444132&gender=boys",
-    "searchTokens": [
-      "ice",
-      "kaleb"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "James Boggess",
     "first_name": "James",
     "last_name": "Boggess",
@@ -61767,6 +61809,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "boggess",
       "james"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Kaleb Ice",
+    "first_name": "Kaleb",
+    "last_name": "Ice",
+    "secondary": "Bridgeport Hs · 150",
+    "url": "/wrestler.html?id=35415444132&gender=boys",
+    "searchTokens": [
+      "ice",
+      "kaleb"
     ],
     "rank": null,
     "gender": "boys"
@@ -62426,7 +62482,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "howard"
     ],
-    "rank": 74,
+    "rank": 76,
     "gender": "boys"
   },
   {
@@ -62440,7 +62496,7 @@ window.SEARCH_INDEX = [
       "carson",
       "nance"
     ],
-    "rank": 4,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -62454,7 +62510,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "grafton"
     ],
-    "rank": 69,
+    "rank": 71,
     "gender": "boys"
   },
   {
@@ -62482,7 +62538,7 @@ window.SEARCH_INDEX = [
       "isaac",
       "skaggs"
     ],
-    "rank": 90,
+    "rank": 91,
     "gender": "boys"
   },
   {
@@ -62496,7 +62552,7 @@ window.SEARCH_INDEX = [
       "carson",
       "gillum"
     ],
-    "rank": 62,
+    "rank": 34,
     "gender": "boys"
   },
   {
@@ -62510,7 +62566,7 @@ window.SEARCH_INDEX = [
       "addi",
       "yahya"
     ],
-    "rank": 53,
+    "rank": 57,
     "gender": "boys"
   },
   {
@@ -62524,7 +62580,7 @@ window.SEARCH_INDEX = [
       "alondra",
       "cortes"
     ],
-    "rank": 73,
+    "rank": 75,
     "gender": "boys"
   },
   {
@@ -62552,7 +62608,7 @@ window.SEARCH_INDEX = [
       "baldwin",
       "jaxson"
     ],
-    "rank": 68,
+    "rank": 70,
     "gender": "boys"
   },
   {
@@ -62566,7 +62622,7 @@ window.SEARCH_INDEX = [
       "brock",
       "chase"
     ],
-    "rank": 60,
+    "rank": 61,
     "gender": "boys"
   },
   {
@@ -62692,7 +62748,7 @@ window.SEARCH_INDEX = [
       "james",
       "mcdaniels"
     ],
-    "rank": 36,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -62720,7 +62776,7 @@ window.SEARCH_INDEX = [
       "kaygen",
       "roberts"
     ],
-    "rank": 1,
+    "rank": 2,
     "gender": "boys"
   },
   {
@@ -62748,7 +62804,7 @@ window.SEARCH_INDEX = [
       "steven",
       "velazquez-estrada"
     ],
-    "rank": 49,
+    "rank": 52,
     "gender": "boys"
   },
   {
@@ -62818,7 +62874,7 @@ window.SEARCH_INDEX = [
       "cocchi",
       "jonathan"
     ],
-    "rank": 41,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -62860,7 +62916,7 @@ window.SEARCH_INDEX = [
       "basco",
       "jared"
     ],
-    "rank": 79,
+    "rank": 81,
     "gender": "boys"
   },
   {
@@ -62930,7 +62986,7 @@ window.SEARCH_INDEX = [
       "shane",
       "stikes"
     ],
-    "rank": 43,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -62944,7 +63000,7 @@ window.SEARCH_INDEX = [
       "omar",
       "prudencio"
     ],
-    "rank": 92,
+    "rank": 93,
     "gender": "boys"
   },
   {
@@ -62986,7 +63042,7 @@ window.SEARCH_INDEX = [
       "holly",
       "jackson"
     ],
-    "rank": 21,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -63028,7 +63084,7 @@ window.SEARCH_INDEX = [
       "deacon",
       "harrison"
     ],
-    "rank": 12,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -63042,7 +63098,7 @@ window.SEARCH_INDEX = [
       "aydon",
       "sawyer"
     ],
-    "rank": 44,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -63070,7 +63126,7 @@ window.SEARCH_INDEX = [
       "ayden",
       "wilson"
     ],
-    "rank": 70,
+    "rank": 72,
     "gender": "boys"
   },
   {
@@ -63112,7 +63168,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "patrick"
     ],
-    "rank": 89,
+    "rank": 90,
     "gender": "boys"
   },
   {
@@ -63126,7 +63182,7 @@ window.SEARCH_INDEX = [
       "hunter",
       "pitman"
     ],
-    "rank": 72,
+    "rank": 74,
     "gender": "boys"
   },
   {
@@ -63140,7 +63196,7 @@ window.SEARCH_INDEX = [
       "aidan",
       "maher"
     ],
-    "rank": 83,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -63182,7 +63238,7 @@ window.SEARCH_INDEX = [
       "pierce",
       "sorley"
     ],
-    "rank": 85,
+    "rank": 87,
     "gender": "boys"
   },
   {
@@ -63252,7 +63308,7 @@ window.SEARCH_INDEX = [
       "thomas",
       "tilley"
     ],
-    "rank": 39,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -63294,7 +63350,7 @@ window.SEARCH_INDEX = [
       "anthony",
       "wilson"
     ],
-    "rank": 82,
+    "rank": 85,
     "gender": "boys"
   },
   {
@@ -63322,7 +63378,7 @@ window.SEARCH_INDEX = [
       "huffstickler",
       "jakob"
     ],
-    "rank": 91,
+    "rank": 92,
     "gender": "boys"
   },
   {
@@ -63406,7 +63462,7 @@ window.SEARCH_INDEX = [
       "joseph",
       "schack"
     ],
-    "rank": 46,
+    "rank": 49,
     "gender": "boys"
   },
   {
@@ -63420,7 +63476,7 @@ window.SEARCH_INDEX = [
       "alshabot",
       "zade"
     ],
-    "rank": 78,
+    "rank": 80,
     "gender": "boys"
   },
   {
@@ -63462,7 +63518,7 @@ window.SEARCH_INDEX = [
       "jorge",
       "ramos"
     ],
-    "rank": 88,
+    "rank": 56,
     "gender": "boys"
   },
   {
@@ -63476,7 +63532,7 @@ window.SEARCH_INDEX = [
       "beridze",
       "shakir"
     ],
-    "rank": 22,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -63504,7 +63560,7 @@ window.SEARCH_INDEX = [
       "jael",
       "obando"
     ],
-    "rank": 87,
+    "rank": 89,
     "gender": "boys"
   },
   {
@@ -63617,7 +63673,7 @@ window.SEARCH_INDEX = [
       "brock",
       "heidle"
     ],
-    "rank": 30,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -63729,7 +63785,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "reynolds"
     ],
-    "rank": 50,
+    "rank": 53,
     "gender": "boys"
   },
   {
@@ -63757,7 +63813,7 @@ window.SEARCH_INDEX = [
       "cooper",
       "jobe"
     ],
-    "rank": 84,
+    "rank": 86,
     "gender": "boys"
   },
   {
@@ -63799,7 +63855,7 @@ window.SEARCH_INDEX = [
       "dennis",
       "george"
     ],
-    "rank": 3,
+    "rank": 1,
     "gender": "boys"
   },
   {
@@ -63855,7 +63911,7 @@ window.SEARCH_INDEX = [
       "brayden",
       "ratliff"
     ],
-    "rank": 38,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -63869,7 +63925,7 @@ window.SEARCH_INDEX = [
       "kamara",
       "malik"
     ],
-    "rank": 29,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -63883,7 +63939,7 @@ window.SEARCH_INDEX = [
       "colt",
       "klinksiek"
     ],
-    "rank": 67,
+    "rank": 68,
     "gender": "boys"
   },
   {
@@ -63897,7 +63953,7 @@ window.SEARCH_INDEX = [
       "kayson",
       "white"
     ],
-    "rank": 2,
+    "rank": 3,
     "gender": "boys"
   },
   {
@@ -63925,7 +63981,7 @@ window.SEARCH_INDEX = [
       "deaton",
       "kannen"
     ],
-    "rank": 80,
+    "rank": 82,
     "gender": "boys"
   },
   {
@@ -63953,7 +64009,7 @@ window.SEARCH_INDEX = [
       "andrew",
       "cundiff"
     ],
-    "rank": 15,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -64023,7 +64079,7 @@ window.SEARCH_INDEX = [
       "scott",
       "zac"
     ],
-    "rank": 7,
+    "rank": 5,
     "gender": "boys"
   },
   {
@@ -64065,7 +64121,7 @@ window.SEARCH_INDEX = [
       "jonathan",
       "troxell"
     ],
-    "rank": 59,
+    "rank": 63,
     "gender": "boys"
   },
   {
@@ -64079,7 +64135,7 @@ window.SEARCH_INDEX = [
       "jayden",
       "rojas"
     ],
-    "rank": 56,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -64107,7 +64163,7 @@ window.SEARCH_INDEX = [
       "faimy",
       "victorin"
     ],
-    "rank": 52,
+    "rank": 55,
     "gender": "boys"
   },
   {
@@ -64191,7 +64247,7 @@ window.SEARCH_INDEX = [
       "fields",
       "jerry"
     ],
-    "rank": 71,
+    "rank": 73,
     "gender": "boys"
   },
   {
@@ -64219,7 +64275,7 @@ window.SEARCH_INDEX = [
       "dix",
       "emory"
     ],
-    "rank": 9,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -64261,7 +64317,7 @@ window.SEARCH_INDEX = [
       "garcia",
       "leland"
     ],
-    "rank": 16,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -64275,7 +64331,7 @@ window.SEARCH_INDEX = [
       "caellum",
       "kinsel"
     ],
-    "rank": 57,
+    "rank": 83,
     "gender": "boys"
   },
   {
@@ -64331,7 +64387,7 @@ window.SEARCH_INDEX = [
       "noel",
       "rylan"
     ],
-    "rank": 65,
+    "rank": 66,
     "gender": "boys"
   },
   {
@@ -64373,7 +64429,7 @@ window.SEARCH_INDEX = [
       "bryson",
       "williams"
     ],
-    "rank": 93,
+    "rank": 45,
     "gender": "boys"
   },
   {
@@ -64387,7 +64443,7 @@ window.SEARCH_INDEX = [
       "nate",
       "stephens"
     ],
-    "rank": 48,
+    "rank": 51,
     "gender": "boys"
   },
   {
@@ -64401,7 +64457,7 @@ window.SEARCH_INDEX = [
       "crouch",
       "jakari"
     ],
-    "rank": 86,
+    "rank": 88,
     "gender": "boys"
   },
   {
@@ -64415,7 +64471,7 @@ window.SEARCH_INDEX = [
       "dylan",
       "hobbs"
     ],
-    "rank": 34,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -64429,7 +64485,7 @@ window.SEARCH_INDEX = [
       "baker",
       "evan"
     ],
-    "rank": 55,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -64499,7 +64555,7 @@ window.SEARCH_INDEX = [
       "habimana",
       "joseph"
     ],
-    "rank": 13,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -64513,7 +64569,7 @@ window.SEARCH_INDEX = [
       "cox",
       "jaxon"
     ],
-    "rank": 23,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -64541,7 +64597,7 @@ window.SEARCH_INDEX = [
       "maykel",
       "vazquez"
     ],
-    "rank": 24,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -64555,7 +64611,7 @@ window.SEARCH_INDEX = [
       "joseph",
       "whaley"
     ],
-    "rank": 20,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -64597,7 +64653,7 @@ window.SEARCH_INDEX = [
       "jake",
       "lutgen"
     ],
-    "rank": 14,
+    "rank": 19,
     "gender": "boys"
   },
   {
@@ -64611,7 +64667,7 @@ window.SEARCH_INDEX = [
       "aydan",
       "farris"
     ],
-    "rank": 37,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -64653,7 +64709,7 @@ window.SEARCH_INDEX = [
       "dasilva",
       "jordan"
     ],
-    "rank": 47,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -64668,7 +64724,7 @@ window.SEARCH_INDEX = [
       "kameryis",
       "rodriquez"
     ],
-    "rank": 19,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -64696,7 +64752,7 @@ window.SEARCH_INDEX = [
       "barabas",
       "david"
     ],
-    "rank": 40,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -64724,7 +64780,7 @@ window.SEARCH_INDEX = [
       "hunter",
       "jace"
     ],
-    "rank": 61,
+    "rank": 62,
     "gender": "boys"
   },
   {
@@ -64738,7 +64794,7 @@ window.SEARCH_INDEX = [
       "hyden",
       "salde"
     ],
-    "rank": 76,
+    "rank": 78,
     "gender": "boys"
   },
   {
@@ -64780,7 +64836,7 @@ window.SEARCH_INDEX = [
       "blaze",
       "cook"
     ],
-    "rank": 42,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -64893,7 +64949,7 @@ window.SEARCH_INDEX = [
       "jack",
       "madden"
     ],
-    "rank": 63,
+    "rank": 65,
     "gender": "boys"
   },
   {
@@ -64907,7 +64963,7 @@ window.SEARCH_INDEX = [
       "ivan",
       "mcdaniels"
     ],
-    "rank": 75,
+    "rank": 77,
     "gender": "boys"
   },
   {
@@ -65005,7 +65061,7 @@ window.SEARCH_INDEX = [
       "matthew",
       "ridings"
     ],
-    "rank": 66,
+    "rank": 67,
     "gender": "boys"
   },
   {
@@ -65019,7 +65075,7 @@ window.SEARCH_INDEX = [
       "callen",
       "schmidt"
     ],
-    "rank": 5,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -65061,7 +65117,7 @@ window.SEARCH_INDEX = [
       "treyvon",
       "truss"
     ],
-    "rank": 32,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -65117,7 +65173,7 @@ window.SEARCH_INDEX = [
       "liam",
       "wood"
     ],
-    "rank": 45,
+    "rank": 48,
     "gender": "boys"
   },
   {
@@ -65159,7 +65215,7 @@ window.SEARCH_INDEX = [
       "brentley",
       "hilton"
     ],
-    "rank": 58,
+    "rank": 69,
     "gender": "boys"
   },
   {
@@ -65229,7 +65285,7 @@ window.SEARCH_INDEX = [
       "riley",
       "sanford"
     ],
-    "rank": 8,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -65243,7 +65299,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "trammell"
     ],
-    "rank": 51,
+    "rank": 54,
     "gender": "boys"
   },
   {
@@ -65271,7 +65327,7 @@ window.SEARCH_INDEX = [
       "edmondson",
       "mikelyn"
     ],
-    "rank": 54,
+    "rank": 58,
     "gender": "boys"
   },
   {
@@ -65355,7 +65411,7 @@ window.SEARCH_INDEX = [
       "james",
       "williams"
     ],
-    "rank": 28,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -65397,7 +65453,7 @@ window.SEARCH_INDEX = [
       "fidler",
       "michael"
     ],
-    "rank": 35,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -65425,7 +65481,7 @@ window.SEARCH_INDEX = [
       "blakney",
       "elias"
     ],
-    "rank": 33,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -65439,7 +65495,7 @@ window.SEARCH_INDEX = [
       "shackelford",
       "wendel"
     ],
-    "rank": 18,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -65495,7 +65551,7 @@ window.SEARCH_INDEX = [
       "kendel",
       "lunsford"
     ],
-    "rank": 77,
+    "rank": 79,
     "gender": "boys"
   },
   {
@@ -65523,7 +65579,7 @@ window.SEARCH_INDEX = [
       "darrion",
       "stringer"
     ],
-    "rank": 17,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -65565,7 +65621,7 @@ window.SEARCH_INDEX = [
       "isac",
       "perez"
     ],
-    "rank": 31,
+    "rank": 35,
     "gender": "boys"
   },
   {
@@ -69015,20 +69071,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Andrew Lehaceanu",
-    "first_name": "Andrew",
-    "last_name": "Lehaceanu",
-    "secondary": "Henryville · 157",
-    "url": "/wrestler.html?id=OUTSTATE_9a8944d046b1&gender=boys",
-    "searchTokens": [
-      "andrew",
-      "lehaceanu"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Charles White",
     "first_name": "Charles",
     "last_name": "White",
@@ -69043,14 +69085,28 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jared Riviera",
-    "first_name": "Jared",
-    "last_name": "Riviera",
-    "secondary": "Washington (Washington Court House) · 157",
-    "url": "/wrestler.html?id=OUTSTATE_007ceafdbc86&gender=boys",
+    "name": "Andrew Lehaceanu",
+    "first_name": "Andrew",
+    "last_name": "Lehaceanu",
+    "secondary": "Henryville · 157",
+    "url": "/wrestler.html?id=OUTSTATE_9a8944d046b1&gender=boys",
     "searchTokens": [
-      "jared",
-      "riviera"
+      "andrew",
+      "lehaceanu"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Cole Adams",
+    "first_name": "Cole",
+    "last_name": "Adams",
+    "secondary": "Kenton Ridge Middle/High School · 157",
+    "url": "/wrestler.html?id=OUTSTATE_d35c9e2db427&gender=boys",
+    "searchTokens": [
+      "adams",
+      "cole"
     ],
     "rank": null,
     "gender": "boys"
@@ -69071,14 +69127,14 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Cole Adams",
-    "first_name": "Cole",
-    "last_name": "Adams",
-    "secondary": "Kenton Ridge Middle/High School · 157",
-    "url": "/wrestler.html?id=OUTSTATE_d35c9e2db427&gender=boys",
+    "name": "Jared Riviera",
+    "first_name": "Jared",
+    "last_name": "Riviera",
+    "secondary": "Washington (Washington Court House) · 157",
+    "url": "/wrestler.html?id=OUTSTATE_007ceafdbc86&gender=boys",
     "searchTokens": [
-      "adams",
-      "cole"
+      "jared",
+      "riviera"
     ],
     "rank": null,
     "gender": "boys"
@@ -70438,7 +70494,7 @@ window.SEARCH_INDEX = [
       "adams",
       "bryson"
     ],
-    "rank": 73,
+    "rank": 72,
     "gender": "boys"
   },
   {
@@ -70452,7 +70508,7 @@ window.SEARCH_INDEX = [
       "bowen",
       "furkin"
     ],
-    "rank": 80,
+    "rank": 79,
     "gender": "boys"
   },
   {
@@ -70494,7 +70550,7 @@ window.SEARCH_INDEX = [
       "conner",
       "crowe"
     ],
-    "rank": 82,
+    "rank": 81,
     "gender": "boys"
   },
   {
@@ -70522,7 +70578,7 @@ window.SEARCH_INDEX = [
       "conner",
       "mayhugh"
     ],
-    "rank": 29,
+    "rank": 34,
     "gender": "boys"
   },
   {
@@ -70550,7 +70606,7 @@ window.SEARCH_INDEX = [
       "davis",
       "wyatt"
     ],
-    "rank": 49,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -70606,7 +70662,7 @@ window.SEARCH_INDEX = [
       "jayden",
       "tidwell"
     ],
-    "rank": 48,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -70690,7 +70746,7 @@ window.SEARCH_INDEX = [
       "nathan",
       "ramsey"
     ],
-    "rank": 59,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -70760,7 +70816,7 @@ window.SEARCH_INDEX = [
       "kenzell",
       "miller-hatcher"
     ],
-    "rank": 47,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -70774,7 +70830,7 @@ window.SEARCH_INDEX = [
       "noah",
       "warner"
     ],
-    "rank": 42,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -70788,7 +70844,7 @@ window.SEARCH_INDEX = [
       "leader",
       "tony"
     ],
-    "rank": 4,
+    "rank": 3,
     "gender": "boys"
   },
   {
@@ -70942,7 +70998,7 @@ window.SEARCH_INDEX = [
       "jacob",
       "tylutke"
     ],
-    "rank": 28,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -71026,7 +71082,7 @@ window.SEARCH_INDEX = [
       "dunn",
       "wyatt"
     ],
-    "rank": 32,
+    "rank": 35,
     "gender": "boys"
   },
   {
@@ -71054,7 +71110,7 @@ window.SEARCH_INDEX = [
       "basemore",
       "destin"
     ],
-    "rank": 31,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -71082,7 +71138,7 @@ window.SEARCH_INDEX = [
       "hazelwood",
       "samuelu"
     ],
-    "rank": 5,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -71152,7 +71208,7 @@ window.SEARCH_INDEX = [
       "jacoren",
       "johnson"
     ],
-    "rank": 84,
+    "rank": 83,
     "gender": "boys"
   },
   {
@@ -71180,7 +71236,7 @@ window.SEARCH_INDEX = [
       "caleb",
       "hall"
     ],
-    "rank": 83,
+    "rank": 82,
     "gender": "boys"
   },
   {
@@ -71194,7 +71250,7 @@ window.SEARCH_INDEX = [
       "hernandez",
       "joesiah"
     ],
-    "rank": 18,
+    "rank": 19,
     "gender": "boys"
   },
   {
@@ -71306,7 +71362,7 @@ window.SEARCH_INDEX = [
       "briggs",
       "craig"
     ],
-    "rank": 22,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -71362,7 +71418,7 @@ window.SEARCH_INDEX = [
       "kaden",
       "nichols"
     ],
-    "rank": 27,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -71376,7 +71432,7 @@ window.SEARCH_INDEX = [
       "peyton",
       "sandefur"
     ],
-    "rank": 87,
+    "rank": 86,
     "gender": "boys"
   },
   {
@@ -71572,7 +71628,7 @@ window.SEARCH_INDEX = [
       "joshua",
       "tuttle"
     ],
-    "rank": 10,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -71586,7 +71642,7 @@ window.SEARCH_INDEX = [
       "bryson",
       "sweetman"
     ],
-    "rank": 39,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -71628,7 +71684,7 @@ window.SEARCH_INDEX = [
       "divine",
       "mujanukaire"
     ],
-    "rank": 78,
+    "rank": 77,
     "gender": "boys"
   },
   {
@@ -71642,7 +71698,7 @@ window.SEARCH_INDEX = [
       "kaleb",
       "walz"
     ],
-    "rank": 30,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -71684,7 +71740,7 @@ window.SEARCH_INDEX = [
       "blake",
       "stein"
     ],
-    "rank": 72,
+    "rank": 75,
     "gender": "boys"
   },
   {
@@ -71699,7 +71755,7 @@ window.SEARCH_INDEX = [
       "isaiah",
       "messer"
     ],
-    "rank": 89,
+    "rank": 88,
     "gender": "boys"
   },
   {
@@ -71727,7 +71783,7 @@ window.SEARCH_INDEX = [
       "grayson",
       "scott"
     ],
-    "rank": 33,
+    "rank": 25,
     "gender": "boys"
   },
   {
@@ -71769,7 +71825,7 @@ window.SEARCH_INDEX = [
       "burns",
       "chris"
     ],
-    "rank": 40,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -71825,7 +71881,7 @@ window.SEARCH_INDEX = [
       "jeremy",
       "marks"
     ],
-    "rank": 16,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -71853,7 +71909,7 @@ window.SEARCH_INDEX = [
       "brockman",
       "bryce"
     ],
-    "rank": 26,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -71867,7 +71923,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "baker"
     ],
-    "rank": 74,
+    "rank": 73,
     "gender": "boys"
   },
   {
@@ -71895,7 +71951,7 @@ window.SEARCH_INDEX = [
       "josh",
       "stewart"
     ],
-    "rank": 77,
+    "rank": 58,
     "gender": "boys"
   },
   {
@@ -71909,7 +71965,7 @@ window.SEARCH_INDEX = [
       "northcutt",
       "owen"
     ],
-    "rank": 41,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -71937,7 +71993,7 @@ window.SEARCH_INDEX = [
       "karsyn",
       "sumpter"
     ],
-    "rank": 15,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -71951,7 +72007,7 @@ window.SEARCH_INDEX = [
       "camryn",
       "ramirez"
     ],
-    "rank": 14,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -71979,7 +72035,7 @@ window.SEARCH_INDEX = [
       "msabaha",
       "sumaili"
     ],
-    "rank": 17,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -72105,7 +72161,7 @@ window.SEARCH_INDEX = [
       "jordan",
       "lawless"
     ],
-    "rank": 50,
+    "rank": 49,
     "gender": "boys"
   },
   {
@@ -72147,7 +72203,7 @@ window.SEARCH_INDEX = [
       "jakobi",
       "linton"
     ],
-    "rank": 75,
+    "rank": 74,
     "gender": "boys"
   },
   {
@@ -72231,7 +72287,7 @@ window.SEARCH_INDEX = [
       "dalton",
       "matney"
     ],
-    "rank": 3,
+    "rank": 2,
     "gender": "boys"
   },
   {
@@ -72245,7 +72301,7 @@ window.SEARCH_INDEX = [
       "gavin",
       "jordan"
     ],
-    "rank": 24,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -72259,7 +72315,7 @@ window.SEARCH_INDEX = [
       "domanic",
       "patterson"
     ],
-    "rank": 25,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -72372,7 +72428,7 @@ window.SEARCH_INDEX = [
       "falter",
       "jon"
     ],
-    "rank": 58,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -72470,7 +72526,7 @@ window.SEARCH_INDEX = [
       "chris",
       "hollingsworth"
     ],
-    "rank": 19,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -72582,7 +72638,7 @@ window.SEARCH_INDEX = [
       "huber",
       "kason"
     ],
-    "rank": 86,
+    "rank": 85,
     "gender": "boys"
   },
   {
@@ -72596,7 +72652,7 @@ window.SEARCH_INDEX = [
       "joey",
       "paeltz"
     ],
-    "rank": 85,
+    "rank": 84,
     "gender": "boys"
   },
   {
@@ -72610,7 +72666,7 @@ window.SEARCH_INDEX = [
       "creston",
       "fuller"
     ],
-    "rank": 37,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -72736,7 +72792,7 @@ window.SEARCH_INDEX = [
       "bess",
       "torian"
     ],
-    "rank": 35,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -72764,7 +72820,7 @@ window.SEARCH_INDEX = [
       "brandhorst",
       "ethan"
     ],
-    "rank": 36,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -72778,7 +72834,7 @@ window.SEARCH_INDEX = [
       "anthony",
       "marcus"
     ],
-    "rank": 60,
+    "rank": 92,
     "gender": "boys"
   },
   {
@@ -72946,7 +73002,7 @@ window.SEARCH_INDEX = [
       "jaxson",
       "simpson"
     ],
-    "rank": 79,
+    "rank": 78,
     "gender": "boys"
   },
   {
@@ -72974,7 +73030,7 @@ window.SEARCH_INDEX = [
       "hunter",
       "roberts"
     ],
-    "rank": 21,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -72988,7 +73044,7 @@ window.SEARCH_INDEX = [
       "bodie",
       "neie"
     ],
-    "rank": 38,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -73087,7 +73143,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "o`malley"
     ],
-    "rank": 12,
+    "rank": 5,
     "gender": "boys"
   },
   {
@@ -73129,7 +73185,7 @@ window.SEARCH_INDEX = [
       "hunt",
       "max"
     ],
-    "rank": 92,
+    "rank": 91,
     "gender": "boys"
   },
   {
@@ -73143,7 +73199,7 @@ window.SEARCH_INDEX = [
       "albakri",
       "raad"
     ],
-    "rank": 81,
+    "rank": 80,
     "gender": "boys"
   },
   {
@@ -73311,7 +73367,7 @@ window.SEARCH_INDEX = [
       "crisp",
       "noah"
     ],
-    "rank": 8,
+    "rank": 6,
     "gender": "boys"
   },
   {
@@ -73395,7 +73451,7 @@ window.SEARCH_INDEX = [
       "ben",
       "woosley"
     ],
-    "rank": 6,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -73409,7 +73465,7 @@ window.SEARCH_INDEX = [
       "cornell",
       "jared"
     ],
-    "rank": 7,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -73423,7 +73479,7 @@ window.SEARCH_INDEX = [
       "bradley",
       "rylan"
     ],
-    "rank": 91,
+    "rank": 90,
     "gender": "boys"
   },
   {
@@ -73451,7 +73507,7 @@ window.SEARCH_INDEX = [
       "becker",
       "gavin"
     ],
-    "rank": 2,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -73703,7 +73759,7 @@ window.SEARCH_INDEX = [
       "andrew",
       "clayton"
     ],
-    "rank": 20,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -73759,7 +73815,7 @@ window.SEARCH_INDEX = [
       "luke",
       "murphy"
     ],
-    "rank": 90,
+    "rank": 89,
     "gender": "boys"
   },
   {
@@ -73773,7 +73829,7 @@ window.SEARCH_INDEX = [
       "carter",
       "thomas"
     ],
-    "rank": 13,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -73787,7 +73843,7 @@ window.SEARCH_INDEX = [
       "conner",
       "morgan"
     ],
-    "rank": 88,
+    "rank": 87,
     "gender": "boys"
   },
   {
@@ -73871,7 +73927,7 @@ window.SEARCH_INDEX = [
       "ian",
       "tucker"
     ],
-    "rank": 9,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -73941,7 +73997,7 @@ window.SEARCH_INDEX = [
       "vincent",
       "willis"
     ],
-    "rank": 46,
+    "rank": 48,
     "gender": "boys"
   },
   {
@@ -73969,7 +74025,7 @@ window.SEARCH_INDEX = [
       "andrew",
       "jones"
     ],
-    "rank": 34,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -79100,20 +79156,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Ronan Phillips",
-    "first_name": "Ronan",
-    "last_name": "Phillips",
-    "secondary": "Thomas Worthington High School · 165",
-    "url": "/wrestler.html?id=36423460132&gender=boys",
-    "searchTokens": [
-      "phillips",
-      "ronan"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Nicholas Klein",
     "first_name": "Nicholas",
     "last_name": "Klein",
@@ -79122,6 +79164,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "klein",
       "nicholas"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Ronan Phillips",
+    "first_name": "Ronan",
+    "last_name": "Phillips",
+    "secondary": "Thomas Worthington High School · 165",
+    "url": "/wrestler.html?id=36423460132&gender=boys",
+    "searchTokens": [
+      "phillips",
+      "ronan"
     ],
     "rank": null,
     "gender": "boys"
@@ -79614,7 +79670,7 @@ window.SEARCH_INDEX = [
       "brown",
       "carson"
     ],
-    "rank": 102,
+    "rank": 101,
     "gender": "boys"
   },
   {
@@ -79642,7 +79698,7 @@ window.SEARCH_INDEX = [
       "braxton",
       "mackey"
     ],
-    "rank": 12,
+    "rank": 19,
     "gender": "boys"
   },
   {
@@ -79656,7 +79712,7 @@ window.SEARCH_INDEX = [
       "faulls",
       "micah"
     ],
-    "rank": 96,
+    "rank": 95,
     "gender": "boys"
   },
   {
@@ -79740,7 +79796,7 @@ window.SEARCH_INDEX = [
       "nathaniel",
       "williams"
     ],
-    "rank": 22,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -79754,7 +79810,7 @@ window.SEARCH_INDEX = [
       "amani",
       "swetnam"
     ],
-    "rank": 37,
+    "rank": 34,
     "gender": "boys"
   },
   {
@@ -79768,7 +79824,7 @@ window.SEARCH_INDEX = [
       "david",
       "espin"
     ],
-    "rank": 120,
+    "rank": 119,
     "gender": "boys"
   },
   {
@@ -79782,7 +79838,7 @@ window.SEARCH_INDEX = [
       "camron",
       "huguley"
     ],
-    "rank": 133,
+    "rank": 132,
     "gender": "boys"
   },
   {
@@ -79810,7 +79866,7 @@ window.SEARCH_INDEX = [
       "alayna",
       "hall"
     ],
-    "rank": 68,
+    "rank": 69,
     "gender": "boys"
   },
   {
@@ -79824,7 +79880,7 @@ window.SEARCH_INDEX = [
       "bartlett",
       "branson"
     ],
-    "rank": 132,
+    "rank": 131,
     "gender": "boys"
   },
   {
@@ -79838,7 +79894,7 @@ window.SEARCH_INDEX = [
       "berik",
       "queen"
     ],
-    "rank": 127,
+    "rank": 126,
     "gender": "boys"
   },
   {
@@ -79852,7 +79908,7 @@ window.SEARCH_INDEX = [
       "curry",
       "wesley"
     ],
-    "rank": 105,
+    "rank": 104,
     "gender": "boys"
   },
   {
@@ -79880,7 +79936,7 @@ window.SEARCH_INDEX = [
       "grayson",
       "malicoat"
     ],
-    "rank": 43,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -79894,7 +79950,7 @@ window.SEARCH_INDEX = [
       "josh",
       "prater"
     ],
-    "rank": 94,
+    "rank": 93,
     "gender": "boys"
   },
   {
@@ -79967,7 +80023,7 @@ window.SEARCH_INDEX = [
       "gavin",
       "selby"
     ],
-    "rank": 119,
+    "rank": 118,
     "gender": "boys"
   },
   {
@@ -79995,7 +80051,7 @@ window.SEARCH_INDEX = [
       "amos",
       "blankenship"
     ],
-    "rank": 41,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -80009,7 +80065,7 @@ window.SEARCH_INDEX = [
       "caden",
       "wren"
     ],
-    "rank": 42,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -80079,7 +80135,7 @@ window.SEARCH_INDEX = [
       "deacon",
       "jennejohn"
     ],
-    "rank": 52,
+    "rank": 54,
     "gender": "boys"
   },
   {
@@ -80121,7 +80177,7 @@ window.SEARCH_INDEX = [
       "baxter",
       "max"
     ],
-    "rank": 5,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -80135,7 +80191,7 @@ window.SEARCH_INDEX = [
       "blone",
       "kevin"
     ],
-    "rank": 93,
+    "rank": 92,
     "gender": "boys"
   },
   {
@@ -80177,7 +80233,7 @@ window.SEARCH_INDEX = [
       "seth",
       "trusty"
     ],
-    "rank": 131,
+    "rank": 130,
     "gender": "boys"
   },
   {
@@ -80261,7 +80317,7 @@ window.SEARCH_INDEX = [
       "christopher",
       "smith"
     ],
-    "rank": 92,
+    "rank": 91,
     "gender": "boys"
   },
   {
@@ -80275,7 +80331,7 @@ window.SEARCH_INDEX = [
       "eaves",
       "jaedon"
     ],
-    "rank": 118,
+    "rank": 117,
     "gender": "boys"
   },
   {
@@ -80289,7 +80345,7 @@ window.SEARCH_INDEX = [
       "elijah",
       "mccormick"
     ],
-    "rank": 11,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -80373,7 +80429,7 @@ window.SEARCH_INDEX = [
       "brodie",
       "smith"
     ],
-    "rank": 59,
+    "rank": 138,
     "gender": "boys"
   },
   {
@@ -80387,7 +80443,7 @@ window.SEARCH_INDEX = [
       "conner",
       "rehkamp"
     ],
-    "rank": 116,
+    "rank": 115,
     "gender": "boys"
   },
   {
@@ -80401,7 +80457,7 @@ window.SEARCH_INDEX = [
       "rohaan",
       "waraich"
     ],
-    "rank": 28,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -80429,7 +80485,7 @@ window.SEARCH_INDEX = [
       "corey",
       "freihofer"
     ],
-    "rank": 17,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -80443,7 +80499,7 @@ window.SEARCH_INDEX = [
       "ball",
       "coleman"
     ],
-    "rank": 70,
+    "rank": 71,
     "gender": "boys"
   },
   {
@@ -80471,7 +80527,7 @@ window.SEARCH_INDEX = [
       "cyrus",
       "greiwe"
     ],
-    "rank": 8,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -80527,7 +80583,7 @@ window.SEARCH_INDEX = [
       "bishop",
       "keegan"
     ],
-    "rank": 3,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -80555,7 +80611,7 @@ window.SEARCH_INDEX = [
       "harris",
       "jomal"
     ],
-    "rank": 130,
+    "rank": 129,
     "gender": "boys"
   },
   {
@@ -80639,7 +80695,7 @@ window.SEARCH_INDEX = [
       "minnick",
       "rhett"
     ],
-    "rank": 109,
+    "rank": 108,
     "gender": "boys"
   },
   {
@@ -80669,7 +80725,7 @@ window.SEARCH_INDEX = [
       "mendez",
       "romero"
     ],
-    "rank": 112,
+    "rank": 111,
     "gender": "boys"
   },
   {
@@ -80697,7 +80753,7 @@ window.SEARCH_INDEX = [
       "dawson",
       "schroering"
     ],
-    "rank": 9,
+    "rank": 6,
     "gender": "boys"
   },
   {
@@ -80711,7 +80767,7 @@ window.SEARCH_INDEX = [
       "burton",
       "dylan"
     ],
-    "rank": 50,
+    "rank": 52,
     "gender": "boys"
   },
   {
@@ -80753,7 +80809,7 @@ window.SEARCH_INDEX = [
       "law",
       "tucker"
     ],
-    "rank": 90,
+    "rank": 89,
     "gender": "boys"
   },
   {
@@ -80795,7 +80851,7 @@ window.SEARCH_INDEX = [
       "evan",
       "ratliff"
     ],
-    "rank": 103,
+    "rank": 102,
     "gender": "boys"
   },
   {
@@ -80809,7 +80865,7 @@ window.SEARCH_INDEX = [
       "mustafa",
       "sehen"
     ],
-    "rank": 98,
+    "rank": 97,
     "gender": "boys"
   },
   {
@@ -80854,7 +80910,7 @@ window.SEARCH_INDEX = [
       "shuweily",
       "yousif"
     ],
-    "rank": 10,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -80868,7 +80924,7 @@ window.SEARCH_INDEX = [
       "alan",
       "rivera"
     ],
-    "rank": 20,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -80882,7 +80938,7 @@ window.SEARCH_INDEX = [
       "ashton",
       "maynard"
     ],
-    "rank": 135,
+    "rank": 134,
     "gender": "boys"
   },
   {
@@ -80896,7 +80952,7 @@ window.SEARCH_INDEX = [
       "dixon",
       "keshawn"
     ],
-    "rank": 33,
+    "rank": 51,
     "gender": "boys"
   },
   {
@@ -80910,7 +80966,7 @@ window.SEARCH_INDEX = [
       "onejeme",
       "zion"
     ],
-    "rank": 29,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -80995,7 +81051,7 @@ window.SEARCH_INDEX = [
       "macke",
       "thomas"
     ],
-    "rank": 136,
+    "rank": 135,
     "gender": "boys"
   },
   {
@@ -81009,7 +81065,7 @@ window.SEARCH_INDEX = [
       "cameron",
       "green"
     ],
-    "rank": 18,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -81023,7 +81079,7 @@ window.SEARCH_INDEX = [
       "ryder",
       "sadler"
     ],
-    "rank": 36,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -81051,7 +81107,7 @@ window.SEARCH_INDEX = [
       "gunner",
       "salsbury"
     ],
-    "rank": 137,
+    "rank": 136,
     "gender": "boys"
   },
   {
@@ -81065,7 +81121,7 @@ window.SEARCH_INDEX = [
       "maddox",
       "tabor"
     ],
-    "rank": 19,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -81093,7 +81149,7 @@ window.SEARCH_INDEX = [
       "clem",
       "dylan"
     ],
-    "rank": 86,
+    "rank": 85,
     "gender": "boys"
   },
   {
@@ -81107,7 +81163,7 @@ window.SEARCH_INDEX = [
       "dray",
       "roberts"
     ],
-    "rank": 16,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -81149,7 +81205,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "peckenpaugh"
     ],
-    "rank": 13,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -81163,7 +81219,7 @@ window.SEARCH_INDEX = [
       "dixon",
       "rex"
     ],
-    "rank": 115,
+    "rank": 114,
     "gender": "boys"
   },
   {
@@ -81177,7 +81233,7 @@ window.SEARCH_INDEX = [
       "frank",
       "niyonyishu"
     ],
-    "rank": 14,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -81219,7 +81275,7 @@ window.SEARCH_INDEX = [
       "coleman",
       "strange"
     ],
-    "rank": 32,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -81289,7 +81345,7 @@ window.SEARCH_INDEX = [
       "ali",
       "arslanov"
     ],
-    "rank": 55,
+    "rank": 57,
     "gender": "boys"
   },
   {
@@ -81317,7 +81373,7 @@ window.SEARCH_INDEX = [
       "emari",
       "simon"
     ],
-    "rank": 121,
+    "rank": 120,
     "gender": "boys"
   },
   {
@@ -81345,7 +81401,7 @@ window.SEARCH_INDEX = [
       "grayson",
       "knoth"
     ],
-    "rank": 46,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -81359,7 +81415,7 @@ window.SEARCH_INDEX = [
       "charles",
       "tucker"
     ],
-    "rank": 97,
+    "rank": 96,
     "gender": "boys"
   },
   {
@@ -81387,7 +81443,7 @@ window.SEARCH_INDEX = [
       "howard",
       "kingston"
     ],
-    "rank": 87,
+    "rank": 86,
     "gender": "boys"
   },
   {
@@ -81429,7 +81485,7 @@ window.SEARCH_INDEX = [
       "baylor",
       "johnston-jones"
     ],
-    "rank": 65,
+    "rank": 66,
     "gender": "boys"
   },
   {
@@ -81443,7 +81499,7 @@ window.SEARCH_INDEX = [
       "durham",
       "lucas"
     ],
-    "rank": 21,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -81471,7 +81527,7 @@ window.SEARCH_INDEX = [
       "carter",
       "deray"
     ],
-    "rank": 126,
+    "rank": 125,
     "gender": "boys"
   },
   {
@@ -81527,7 +81583,7 @@ window.SEARCH_INDEX = [
       "colton",
       "meade"
     ],
-    "rank": 88,
+    "rank": 87,
     "gender": "boys"
   },
   {
@@ -81555,7 +81611,7 @@ window.SEARCH_INDEX = [
       "marcum",
       "remi"
     ],
-    "rank": 91,
+    "rank": 90,
     "gender": "boys"
   },
   {
@@ -81639,7 +81695,7 @@ window.SEARCH_INDEX = [
       "bell",
       "ryan"
     ],
-    "rank": 101,
+    "rank": 100,
     "gender": "boys"
   },
   {
@@ -81681,7 +81737,7 @@ window.SEARCH_INDEX = [
       "carter",
       "taylor"
     ],
-    "rank": 38,
+    "rank": 35,
     "gender": "boys"
   },
   {
@@ -81695,7 +81751,7 @@ window.SEARCH_INDEX = [
       "cameron",
       "hunt"
     ],
-    "rank": 23,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -81723,7 +81779,7 @@ window.SEARCH_INDEX = [
       "bailey",
       "konner"
     ],
-    "rank": 108,
+    "rank": 107,
     "gender": "boys"
   },
   {
@@ -81751,7 +81807,7 @@ window.SEARCH_INDEX = [
       "cunningham",
       "jimmie"
     ],
-    "rank": 113,
+    "rank": 112,
     "gender": "boys"
   },
   {
@@ -81765,7 +81821,7 @@ window.SEARCH_INDEX = [
       "madden",
       "thornton"
     ],
-    "rank": 71,
+    "rank": 72,
     "gender": "boys"
   },
   {
@@ -81779,7 +81835,7 @@ window.SEARCH_INDEX = [
       "gabrielle",
       "mullins"
     ],
-    "rank": 44,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -81793,7 +81849,7 @@ window.SEARCH_INDEX = [
       "begley",
       "james"
     ],
-    "rank": 27,
+    "rank": 25,
     "gender": "boys"
   },
   {
@@ -81807,7 +81863,7 @@ window.SEARCH_INDEX = [
       "carrington",
       "gage"
     ],
-    "rank": 124,
+    "rank": 123,
     "gender": "boys"
   },
   {
@@ -81863,7 +81919,7 @@ window.SEARCH_INDEX = [
       "darius",
       "ridner"
     ],
-    "rank": 30,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -81877,7 +81933,7 @@ window.SEARCH_INDEX = [
       "mattingly",
       "paul"
     ],
-    "rank": 129,
+    "rank": 128,
     "gender": "boys"
   },
   {
@@ -81891,7 +81947,7 @@ window.SEARCH_INDEX = [
       "braylen",
       "pruitt"
     ],
-    "rank": 35,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -81905,7 +81961,7 @@ window.SEARCH_INDEX = [
       "dunn",
       "mijaia"
     ],
-    "rank": 15,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -81921,7 +81977,7 @@ window.SEARCH_INDEX = [
       "del",
       "toro"
     ],
-    "rank": 106,
+    "rank": 105,
     "gender": "boys"
   },
   {
@@ -81949,7 +82005,7 @@ window.SEARCH_INDEX = [
       "dixan",
       "martinez"
     ],
-    "rank": 128,
+    "rank": 127,
     "gender": "boys"
   },
   {
@@ -81963,7 +82019,7 @@ window.SEARCH_INDEX = [
       "lawson",
       "xavier"
     ],
-    "rank": 58,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -81977,7 +82033,7 @@ window.SEARCH_INDEX = [
       "bowman",
       "joshua"
     ],
-    "rank": 100,
+    "rank": 99,
     "gender": "boys"
   },
   {
@@ -82005,7 +82061,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "helm"
     ],
-    "rank": 123,
+    "rank": 122,
     "gender": "boys"
   },
   {
@@ -82019,7 +82075,7 @@ window.SEARCH_INDEX = [
       "felix",
       "sam"
     ],
-    "rank": 48,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -82061,7 +82117,7 @@ window.SEARCH_INDEX = [
       "beecher",
       "gavin"
     ],
-    "rank": 117,
+    "rank": 116,
     "gender": "boys"
   },
   {
@@ -82075,7 +82131,7 @@ window.SEARCH_INDEX = [
       "barile",
       "trey"
     ],
-    "rank": 72,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -82187,7 +82243,7 @@ window.SEARCH_INDEX = [
       "hillebrandt",
       "tyler"
     ],
-    "rank": 7,
+    "rank": 5,
     "gender": "boys"
   },
   {
@@ -82201,7 +82257,7 @@ window.SEARCH_INDEX = [
       "bretley",
       "koetter"
     ],
-    "rank": 89,
+    "rank": 88,
     "gender": "boys"
   },
   {
@@ -82271,7 +82327,7 @@ window.SEARCH_INDEX = [
       "bennett",
       "logan"
     ],
-    "rank": 95,
+    "rank": 94,
     "gender": "boys"
   },
   {
@@ -82285,7 +82341,7 @@ window.SEARCH_INDEX = [
       "box",
       "matthew"
     ],
-    "rank": 47,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -82299,7 +82355,7 @@ window.SEARCH_INDEX = [
       "addison",
       "fletcher"
     ],
-    "rank": 64,
+    "rank": 65,
     "gender": "boys"
   },
   {
@@ -82355,7 +82411,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "richardson"
     ],
-    "rank": 134,
+    "rank": 133,
     "gender": "boys"
   },
   {
@@ -82383,7 +82439,7 @@ window.SEARCH_INDEX = [
       "gaige",
       "love"
     ],
-    "rank": 110,
+    "rank": 109,
     "gender": "boys"
   },
   {
@@ -82397,7 +82453,7 @@ window.SEARCH_INDEX = [
       "brody",
       "hicks"
     ],
-    "rank": 66,
+    "rank": 67,
     "gender": "boys"
   },
   {
@@ -82411,7 +82467,7 @@ window.SEARCH_INDEX = [
       "caden",
       "ratliff"
     ],
-    "rank": 24,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -82439,7 +82495,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "king"
     ],
-    "rank": 84,
+    "rank": 83,
     "gender": "boys"
   },
   {
@@ -82537,7 +82593,7 @@ window.SEARCH_INDEX = [
       "ashley",
       "brytan"
     ],
-    "rank": 60,
+    "rank": 64,
     "gender": "boys"
   },
   {
@@ -82565,7 +82621,7 @@ window.SEARCH_INDEX = [
       "keigan",
       "reisenbeck"
     ],
-    "rank": 4,
+    "rank": 3,
     "gender": "boys"
   },
   {
@@ -82579,7 +82635,7 @@ window.SEARCH_INDEX = [
       "krentz",
       "maddox"
     ],
-    "rank": 111,
+    "rank": 110,
     "gender": "boys"
   },
   {
@@ -82593,7 +82649,7 @@ window.SEARCH_INDEX = [
       "peyton",
       "zinser"
     ],
-    "rank": 6,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -82607,7 +82663,7 @@ window.SEARCH_INDEX = [
       "prine",
       "tabin"
     ],
-    "rank": 99,
+    "rank": 98,
     "gender": "boys"
   },
   {
@@ -82649,7 +82705,7 @@ window.SEARCH_INDEX = [
       "austin",
       "mchone"
     ],
-    "rank": 56,
+    "rank": 58,
     "gender": "boys"
   },
   {
@@ -82677,7 +82733,7 @@ window.SEARCH_INDEX = [
       "cole",
       "grayson"
     ],
-    "rank": 34,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -82691,7 +82747,7 @@ window.SEARCH_INDEX = [
       "moss",
       "william"
     ],
-    "rank": 67,
+    "rank": 68,
     "gender": "boys"
   },
   {
@@ -82747,7 +82803,7 @@ window.SEARCH_INDEX = [
       "kiser",
       "luke"
     ],
-    "rank": 138,
+    "rank": 137,
     "gender": "boys"
   },
   {
@@ -82775,7 +82831,7 @@ window.SEARCH_INDEX = [
       "felix",
       "jozefowicz"
     ],
-    "rank": 122,
+    "rank": 121,
     "gender": "boys"
   },
   {
@@ -82789,7 +82845,7 @@ window.SEARCH_INDEX = [
       "etherton",
       "jayden"
     ],
-    "rank": 53,
+    "rank": 55,
     "gender": "boys"
   },
   {
@@ -82831,7 +82887,7 @@ window.SEARCH_INDEX = [
       "payton",
       "thompson"
     ],
-    "rank": 57,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -82901,7 +82957,7 @@ window.SEARCH_INDEX = [
       "diffey",
       "michael"
     ],
-    "rank": 31,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -82915,7 +82971,7 @@ window.SEARCH_INDEX = [
       "maximo",
       "urias"
     ],
-    "rank": 125,
+    "rank": 124,
     "gender": "boys"
   },
   {
@@ -82957,7 +83013,7 @@ window.SEARCH_INDEX = [
       "daniel",
       "thompson"
     ],
-    "rank": 25,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -82985,7 +83041,7 @@ window.SEARCH_INDEX = [
       "case",
       "septer"
     ],
-    "rank": 104,
+    "rank": 103,
     "gender": "boys"
   },
   {
@@ -83013,7 +83069,7 @@ window.SEARCH_INDEX = [
       "jordan",
       "keith"
     ],
-    "rank": 39,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -83070,7 +83126,7 @@ window.SEARCH_INDEX = [
       "jeffrey",
       "scott"
     ],
-    "rank": 107,
+    "rank": 106,
     "gender": "boys"
   },
   {
@@ -83084,7 +83140,7 @@ window.SEARCH_INDEX = [
       "peyton",
       "walker"
     ],
-    "rank": 40,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -83112,7 +83168,7 @@ window.SEARCH_INDEX = [
       "cooper",
       "garland"
     ],
-    "rank": 83,
+    "rank": 48,
     "gender": "boys"
   },
   {
@@ -83140,7 +83196,7 @@ window.SEARCH_INDEX = [
       "ali",
       "hussein"
     ],
-    "rank": 51,
+    "rank": 53,
     "gender": "boys"
   },
   {
@@ -83154,7 +83210,7 @@ window.SEARCH_INDEX = [
       "castillo",
       "cristhian"
     ],
-    "rank": 85,
+    "rank": 84,
     "gender": "boys"
   },
   {
@@ -83182,7 +83238,7 @@ window.SEARCH_INDEX = [
       "hammond",
       "maddox"
     ],
-    "rank": 54,
+    "rank": 56,
     "gender": "boys"
   },
   {
@@ -83224,7 +83280,7 @@ window.SEARCH_INDEX = [
       "brown",
       "issac"
     ],
-    "rank": 69,
+    "rank": 70,
     "gender": "boys"
   },
   {
@@ -83238,7 +83294,7 @@ window.SEARCH_INDEX = [
       "probus",
       "wyatt"
     ],
-    "rank": 26,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -83252,7 +83308,7 @@ window.SEARCH_INDEX = [
       "flores",
       "yordin"
     ],
-    "rank": 114,
+    "rank": 113,
     "gender": "boys"
   },
   {
@@ -83592,20 +83648,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Dylan Paxton",
-    "first_name": "Dylan",
-    "last_name": "Paxton",
-    "secondary": "Winfield · 175",
-    "url": "/wrestler.html?id=35517704132&gender=boys",
-    "searchTokens": [
-      "dylan",
-      "paxton"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Maximus Fortier",
     "first_name": "Maximus",
     "last_name": "Fortier",
@@ -83614,6 +83656,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "fortier",
       "maximus"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Dylan Paxton",
+    "first_name": "Dylan",
+    "last_name": "Paxton",
+    "secondary": "Winfield · 175",
+    "url": "/wrestler.html?id=35517704132&gender=boys",
+    "searchTokens": [
+      "dylan",
+      "paxton"
     ],
     "rank": null,
     "gender": "boys"
@@ -87982,7 +88038,7 @@ window.SEARCH_INDEX = [
       "rogers",
       "ryder"
     ],
-    "rank": 65,
+    "rank": 66,
     "gender": "boys"
   },
   {
@@ -88066,7 +88122,7 @@ window.SEARCH_INDEX = [
       "colton",
       "hardy"
     ],
-    "rank": 25,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -88080,7 +88136,7 @@ window.SEARCH_INDEX = [
       "branden",
       "mcgee"
     ],
-    "rank": 16,
+    "rank": 19,
     "gender": "boys"
   },
   {
@@ -88094,7 +88150,7 @@ window.SEARCH_INDEX = [
       "hagen",
       "samuel"
     ],
-    "rank": 29,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -88136,7 +88192,7 @@ window.SEARCH_INDEX = [
       "hayden",
       "rutledge"
     ],
-    "rank": 146,
+    "rank": 147,
     "gender": "boys"
   },
   {
@@ -88164,7 +88220,7 @@ window.SEARCH_INDEX = [
       "jennings",
       "scott"
     ],
-    "rank": 32,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -88179,7 +88235,7 @@ window.SEARCH_INDEX = [
       "james",
       "jones"
     ],
-    "rank": 17,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -88207,7 +88263,7 @@ window.SEARCH_INDEX = [
       "baker",
       "briar"
     ],
-    "rank": 143,
+    "rank": 144,
     "gender": "boys"
   },
   {
@@ -88291,7 +88347,7 @@ window.SEARCH_INDEX = [
       "gabriela",
       "rojas"
     ],
-    "rank": 104,
+    "rank": 103,
     "gender": "boys"
   },
   {
@@ -88347,7 +88403,7 @@ window.SEARCH_INDEX = [
       "george",
       "mcclure"
     ],
-    "rank": 58,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -88375,7 +88431,7 @@ window.SEARCH_INDEX = [
       "charles",
       "farley"
     ],
-    "rank": 44,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -88417,7 +88473,7 @@ window.SEARCH_INDEX = [
       "alger",
       "brayden"
     ],
-    "rank": 96,
+    "rank": 95,
     "gender": "boys"
   },
   {
@@ -88445,7 +88501,7 @@ window.SEARCH_INDEX = [
       "chris",
       "pottinger"
     ],
-    "rank": 183,
+    "rank": 182,
     "gender": "boys"
   },
   {
@@ -88487,7 +88543,7 @@ window.SEARCH_INDEX = [
       "raiden",
       "rios"
     ],
-    "rank": 13,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -88529,7 +88585,7 @@ window.SEARCH_INDEX = [
       "jonas",
       "martin"
     ],
-    "rank": 57,
+    "rank": 56,
     "gender": "boys"
   },
   {
@@ -88543,7 +88599,7 @@ window.SEARCH_INDEX = [
       "lane",
       "parrish"
     ],
-    "rank": 28,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -88585,7 +88641,7 @@ window.SEARCH_INDEX = [
       "tristan",
       "willams"
     ],
-    "rank": 56,
+    "rank": 58,
     "gender": "boys"
   },
   {
@@ -88613,7 +88669,7 @@ window.SEARCH_INDEX = [
       "jayden",
       "lake"
     ],
-    "rank": 38,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -88627,7 +88683,7 @@ window.SEARCH_INDEX = [
       "jaiden",
       "wright"
     ],
-    "rank": 142,
+    "rank": 143,
     "gender": "boys"
   },
   {
@@ -88641,7 +88697,7 @@ window.SEARCH_INDEX = [
       "apelu",
       "hazelwood"
     ],
-    "rank": 12,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -88711,7 +88767,7 @@ window.SEARCH_INDEX = [
       "deasian",
       "harris"
     ],
-    "rank": 18,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -88725,7 +88781,7 @@ window.SEARCH_INDEX = [
       "blackburn",
       "grandin"
     ],
-    "rank": 47,
+    "rank": 48,
     "gender": "boys"
   },
   {
@@ -88739,7 +88795,7 @@ window.SEARCH_INDEX = [
       "blake",
       "johnson"
     ],
-    "rank": 48,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -88767,7 +88823,7 @@ window.SEARCH_INDEX = [
       "bell",
       "jake"
     ],
-    "rank": 95,
+    "rank": 94,
     "gender": "boys"
   },
   {
@@ -88837,7 +88893,7 @@ window.SEARCH_INDEX = [
       "bryton",
       "tye"
     ],
-    "rank": 22,
+    "rank": 25,
     "gender": "boys"
   },
   {
@@ -88851,7 +88907,7 @@ window.SEARCH_INDEX = [
       "antonio",
       "rodriguez"
     ],
-    "rank": 30,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -88879,7 +88935,7 @@ window.SEARCH_INDEX = [
       "bryston",
       "caldwell"
     ],
-    "rank": 60,
+    "rank": 68,
     "gender": "boys"
   },
   {
@@ -88935,7 +88991,7 @@ window.SEARCH_INDEX = [
       "henry",
       "morales"
     ],
-    "rank": 31,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -88991,7 +89047,7 @@ window.SEARCH_INDEX = [
       "caleb",
       "johnson"
     ],
-    "rank": 67,
+    "rank": 65,
     "gender": "boys"
   },
   {
@@ -89159,7 +89215,7 @@ window.SEARCH_INDEX = [
       "crawford",
       "tristian"
     ],
-    "rank": 147,
+    "rank": 141,
     "gender": "boys"
   },
   {
@@ -89173,7 +89229,7 @@ window.SEARCH_INDEX = [
       "karson",
       "mcclellan"
     ],
-    "rank": 89,
+    "rank": 87,
     "gender": "boys"
   },
   {
@@ -89272,7 +89328,7 @@ window.SEARCH_INDEX = [
       "emmanuel",
       "mpungu"
     ],
-    "rank": 42,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -89286,7 +89342,7 @@ window.SEARCH_INDEX = [
       "gunner",
       "patrick"
     ],
-    "rank": 53,
+    "rank": 54,
     "gender": "boys"
   },
   {
@@ -89300,7 +89356,7 @@ window.SEARCH_INDEX = [
       "ashton",
       "hackney"
     ],
-    "rank": 51,
+    "rank": 52,
     "gender": "boys"
   },
   {
@@ -89356,7 +89412,7 @@ window.SEARCH_INDEX = [
       "holbrook",
       "xavier"
     ],
-    "rank": 66,
+    "rank": 64,
     "gender": "boys"
   },
   {
@@ -89398,7 +89454,7 @@ window.SEARCH_INDEX = [
       "daniel",
       "switzer"
     ],
-    "rank": 10,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -89412,7 +89468,7 @@ window.SEARCH_INDEX = [
       "keaton",
       "ward"
     ],
-    "rank": 94,
+    "rank": 93,
     "gender": "boys"
   },
   {
@@ -89482,7 +89538,7 @@ window.SEARCH_INDEX = [
       "brock",
       "crook"
     ],
-    "rank": 24,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -89524,7 +89580,7 @@ window.SEARCH_INDEX = [
       "turner",
       "xander"
     ],
-    "rank": 46,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -89650,7 +89706,7 @@ window.SEARCH_INDEX = [
       "blackburn",
       "gabriel"
     ],
-    "rank": 15,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -89832,7 +89888,7 @@ window.SEARCH_INDEX = [
       "carson",
       "herbst"
     ],
-    "rank": 3,
+    "rank": 2,
     "gender": "boys"
   },
   {
@@ -89902,7 +89958,7 @@ window.SEARCH_INDEX = [
       "austin",
       "newton"
     ],
-    "rank": 88,
+    "rank": 89,
     "gender": "boys"
   },
   {
@@ -89944,7 +90000,7 @@ window.SEARCH_INDEX = [
       "easton",
       "slone"
     ],
-    "rank": 14,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -89986,7 +90042,7 @@ window.SEARCH_INDEX = [
       "harris",
       "isaiah"
     ],
-    "rank": 27,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -90000,7 +90056,7 @@ window.SEARCH_INDEX = [
       "joseph",
       "schaefer"
     ],
-    "rank": 182,
+    "rank": 183,
     "gender": "boys"
   },
   {
@@ -90084,7 +90140,7 @@ window.SEARCH_INDEX = [
       "bryant",
       "kyler"
     ],
-    "rank": 59,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -90196,7 +90252,7 @@ window.SEARCH_INDEX = [
       "coy",
       "lucas"
     ],
-    "rank": 68,
+    "rank": 67,
     "gender": "boys"
   },
   {
@@ -90210,7 +90266,7 @@ window.SEARCH_INDEX = [
       "aaron",
       "thompson"
     ],
-    "rank": 23,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -90224,7 +90280,7 @@ window.SEARCH_INDEX = [
       "pierce",
       "trent"
     ],
-    "rank": 21,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -90252,7 +90308,7 @@ window.SEARCH_INDEX = [
       "brydie",
       "jathan"
     ],
-    "rank": 26,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -90322,7 +90378,7 @@ window.SEARCH_INDEX = [
       "noah",
       "robertson"
     ],
-    "rank": 11,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -90350,7 +90406,7 @@ window.SEARCH_INDEX = [
       "eli",
       "wimsatt"
     ],
-    "rank": 144,
+    "rank": 145,
     "gender": "boys"
   },
   {
@@ -90364,7 +90420,7 @@ window.SEARCH_INDEX = [
       "jacob",
       "pyles"
     ],
-    "rank": 9,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -90378,7 +90434,7 @@ window.SEARCH_INDEX = [
       "henderson",
       "titan"
     ],
-    "rank": 43,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -90392,7 +90448,7 @@ window.SEARCH_INDEX = [
       "dj",
       "wilson"
     ],
-    "rank": 2,
+    "rank": 3,
     "gender": "boys"
   },
   {
@@ -90462,7 +90518,7 @@ window.SEARCH_INDEX = [
       "conley",
       "kasey"
     ],
-    "rank": 40,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -90602,7 +90658,7 @@ window.SEARCH_INDEX = [
       "brown",
       "harley"
     ],
-    "rank": 41,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -90686,7 +90742,7 @@ window.SEARCH_INDEX = [
       "isaac",
       "ray"
     ],
-    "rank": 45,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -90714,7 +90770,7 @@ window.SEARCH_INDEX = [
       "kylen",
       "sturgeon"
     ],
-    "rank": 33,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -90728,7 +90784,7 @@ window.SEARCH_INDEX = [
       "camarena",
       "gustavo"
     ],
-    "rank": 64,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -90770,7 +90826,7 @@ window.SEARCH_INDEX = [
       "heady",
       "meeko"
     ],
-    "rank": 54,
+    "rank": 55,
     "gender": "boys"
   },
   {
@@ -90826,7 +90882,7 @@ window.SEARCH_INDEX = [
       "austyn",
       "lawless"
     ],
-    "rank": 55,
+    "rank": 57,
     "gender": "boys"
   },
   {
@@ -90896,7 +90952,7 @@ window.SEARCH_INDEX = [
       "cy",
       "jackson"
     ],
-    "rank": 39,
+    "rank": 45,
     "gender": "boys"
   },
   {
@@ -90966,7 +91022,7 @@ window.SEARCH_INDEX = [
       "john",
       "sego"
     ],
-    "rank": 52,
+    "rank": 53,
     "gender": "boys"
   },
   {
@@ -91008,7 +91064,7 @@ window.SEARCH_INDEX = [
       "douglas",
       "mulhall"
     ],
-    "rank": 19,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -91022,7 +91078,7 @@ window.SEARCH_INDEX = [
       "al-hassen",
       "mohammad"
     ],
-    "rank": 141,
+    "rank": 142,
     "gender": "boys"
   },
   {
@@ -91106,7 +91162,7 @@ window.SEARCH_INDEX = [
       "ben",
       "casi"
     ],
-    "rank": 145,
+    "rank": 146,
     "gender": "boys"
   },
   {
@@ -91120,7 +91176,7 @@ window.SEARCH_INDEX = [
       "nick",
       "wulkopf"
     ],
-    "rank": 20,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -91134,7 +91190,7 @@ window.SEARCH_INDEX = [
       "greenwell",
       "noah"
     ],
-    "rank": 93,
+    "rank": 96,
     "gender": "boys"
   },
   {
@@ -91176,7 +91232,7 @@ window.SEARCH_INDEX = [
       "green",
       "jamari"
     ],
-    "rank": 50,
+    "rank": 51,
     "gender": "boys"
   },
   {
@@ -91233,7 +91289,7 @@ window.SEARCH_INDEX = [
       "puga",
       "rivera"
     ],
-    "rank": 87,
+    "rank": 88,
     "gender": "boys"
   },
   {
@@ -91275,7 +91331,7 @@ window.SEARCH_INDEX = [
       "alex",
       "bautista"
     ],
-    "rank": 103,
+    "rank": 104,
     "gender": "boys"
   },
   {
@@ -91373,7 +91429,7 @@ window.SEARCH_INDEX = [
       "braylen",
       "livingston"
     ],
-    "rank": 8,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -94474,20 +94530,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Dominic White",
-    "first_name": "Dominic",
-    "last_name": "White",
-    "secondary": "Brooke Co · 190",
-    "url": "/wrestler.html?id=35529331132&gender=boys",
-    "searchTokens": [
-      "dominic",
-      "white"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Davon Pruitt",
     "first_name": "Davon",
     "last_name": "Pruitt",
@@ -94496,6 +94538,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "davon",
       "pruitt"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Dominic White",
+    "first_name": "Dominic",
+    "last_name": "White",
+    "secondary": "Brooke Co · 190",
+    "url": "/wrestler.html?id=35529331132&gender=boys",
+    "searchTokens": [
+      "dominic",
+      "white"
     ],
     "rank": null,
     "gender": "boys"
@@ -96552,7 +96608,7 @@ window.SEARCH_INDEX = [
       "burnside",
       "cameron"
     ],
-    "rank": 30,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -96608,7 +96664,7 @@ window.SEARCH_INDEX = [
       "wyatt",
       "zeman"
     ],
-    "rank": 76,
+    "rank": 75,
     "gender": "boys"
   },
   {
@@ -96636,7 +96692,7 @@ window.SEARCH_INDEX = [
       "hackney",
       "ty"
     ],
-    "rank": 39,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -96650,7 +96706,7 @@ window.SEARCH_INDEX = [
       "alexander",
       "goodin"
     ],
-    "rank": 36,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -96805,7 +96861,7 @@ window.SEARCH_INDEX = [
       "james",
       "stamper"
     ],
-    "rank": 46,
+    "rank": 35,
     "gender": "boys"
   },
   {
@@ -96819,7 +96875,7 @@ window.SEARCH_INDEX = [
       "cayden",
       "thompson"
     ],
-    "rank": 16,
+    "rank": 19,
     "gender": "boys"
   },
   {
@@ -96833,7 +96889,7 @@ window.SEARCH_INDEX = [
       "crowe",
       "jax"
     ],
-    "rank": 3,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -96931,7 +96987,7 @@ window.SEARCH_INDEX = [
       "neal",
       "wright"
     ],
-    "rank": 9,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -97071,7 +97127,7 @@ window.SEARCH_INDEX = [
       "frost",
       "joshua"
     ],
-    "rank": 18,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -97225,7 +97281,7 @@ window.SEARCH_INDEX = [
       "elliott",
       "tucker"
     ],
-    "rank": 70,
+    "rank": 69,
     "gender": "boys"
   },
   {
@@ -97239,7 +97295,7 @@ window.SEARCH_INDEX = [
       "landon",
       "wuellner"
     ],
-    "rank": 41,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -97281,7 +97337,7 @@ window.SEARCH_INDEX = [
       "carson",
       "clark"
     ],
-    "rank": 43,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -97323,7 +97379,7 @@ window.SEARCH_INDEX = [
       "jones",
       "seth"
     ],
-    "rank": 8,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -97337,7 +97393,7 @@ window.SEARCH_INDEX = [
       "heck",
       "tyler"
     ],
-    "rank": 42,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -97505,7 +97561,7 @@ window.SEARCH_INDEX = [
       "allen",
       "devin"
     ],
-    "rank": 4,
+    "rank": 3,
     "gender": "boys"
   },
   {
@@ -97576,7 +97632,7 @@ window.SEARCH_INDEX = [
       "justin",
       "wireman"
     ],
-    "rank": 37,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -97646,7 +97702,7 @@ window.SEARCH_INDEX = [
       "kaidence",
       "payne"
     ],
-    "rank": 68,
+    "rank": 67,
     "gender": "boys"
   },
   {
@@ -97717,7 +97773,7 @@ window.SEARCH_INDEX = [
       "briscoe",
       "shoron"
     ],
-    "rank": 38,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -97787,7 +97843,7 @@ window.SEARCH_INDEX = [
       "carolina",
       "jaeden"
     ],
-    "rank": 65,
+    "rank": 76,
     "gender": "boys"
   },
   {
@@ -97899,7 +97955,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "anderson"
     ],
-    "rank": 50,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -98011,7 +98067,7 @@ window.SEARCH_INDEX = [
       "bo",
       "eldridge"
     ],
-    "rank": 72,
+    "rank": 71,
     "gender": "boys"
   },
   {
@@ -98123,7 +98179,7 @@ window.SEARCH_INDEX = [
       "javian",
       "young"
     ],
-    "rank": 69,
+    "rank": 68,
     "gender": "boys"
   },
   {
@@ -98137,7 +98193,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "kincer"
     ],
-    "rank": 21,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -98165,7 +98221,7 @@ window.SEARCH_INDEX = [
       "kirk",
       "robert"
     ],
-    "rank": 45,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -98235,7 +98291,7 @@ window.SEARCH_INDEX = [
       "dylan",
       "peck"
     ],
-    "rank": 23,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -98249,7 +98305,7 @@ window.SEARCH_INDEX = [
       "collins",
       "ethan"
     ],
-    "rank": 31,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -98361,7 +98417,7 @@ window.SEARCH_INDEX = [
       "ethan",
       "jett"
     ],
-    "rank": 67,
+    "rank": 66,
     "gender": "boys"
   },
   {
@@ -98375,7 +98431,7 @@ window.SEARCH_INDEX = [
       "bode",
       "darland"
     ],
-    "rank": 12,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -98403,7 +98459,7 @@ window.SEARCH_INDEX = [
       "blake",
       "gipson"
     ],
-    "rank": 66,
+    "rank": 65,
     "gender": "boys"
   },
   {
@@ -98459,7 +98515,7 @@ window.SEARCH_INDEX = [
       "austin",
       "hurst"
     ],
-    "rank": 32,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -98473,7 +98529,7 @@ window.SEARCH_INDEX = [
       "colton",
       "fyffe"
     ],
-    "rank": 71,
+    "rank": 70,
     "gender": "boys"
   },
   {
@@ -98529,7 +98585,7 @@ window.SEARCH_INDEX = [
       "galvin",
       "stephens"
     ],
-    "rank": 15,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -98557,7 +98613,7 @@ window.SEARCH_INDEX = [
       "brayden",
       "fannin"
     ],
-    "rank": 10,
+    "rank": 7,
     "gender": "boys"
   },
   {
@@ -98599,7 +98655,7 @@ window.SEARCH_INDEX = [
       "hutchinson",
       "jacob"
     ],
-    "rank": 141,
+    "rank": 140,
     "gender": "boys"
   },
   {
@@ -98697,7 +98753,7 @@ window.SEARCH_INDEX = [
       "chase",
       "lopez"
     ],
-    "rank": 34,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -98795,7 +98851,7 @@ window.SEARCH_INDEX = [
       "jamison",
       "wester"
     ],
-    "rank": 40,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -98809,7 +98865,7 @@ window.SEARCH_INDEX = [
       "dominic",
       "ramirez"
     ],
-    "rank": 14,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -98865,7 +98921,7 @@ window.SEARCH_INDEX = [
       "campbell",
       "cohen"
     ],
-    "rank": 19,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -98907,7 +98963,7 @@ window.SEARCH_INDEX = [
       "andrew",
       "crace"
     ],
-    "rank": 24,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -98949,7 +99005,7 @@ window.SEARCH_INDEX = [
       "adam",
       "behling"
     ],
-    "rank": 22,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -99146,7 +99202,7 @@ window.SEARCH_INDEX = [
       "locke",
       "loftus"
     ],
-    "rank": 7,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -99244,7 +99300,7 @@ window.SEARCH_INDEX = [
       "gage",
       "holbrook"
     ],
-    "rank": 73,
+    "rank": 72,
     "gender": "boys"
   },
   {
@@ -99300,7 +99356,7 @@ window.SEARCH_INDEX = [
       "gunner",
       "harper"
     ],
-    "rank": 74,
+    "rank": 73,
     "gender": "boys"
   },
   {
@@ -99314,7 +99370,7 @@ window.SEARCH_INDEX = [
       "dakota",
       "lonkard"
     ],
-    "rank": 44,
+    "rank": 45,
     "gender": "boys"
   },
   {
@@ -99440,7 +99496,7 @@ window.SEARCH_INDEX = [
       "combs",
       "timothy"
     ],
-    "rank": 33,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -99524,7 +99580,7 @@ window.SEARCH_INDEX = [
       "jaydan",
       "rutherford"
     ],
-    "rank": 11,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -99650,7 +99706,7 @@ window.SEARCH_INDEX = [
       "chandler",
       "steel"
     ],
-    "rank": 13,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -99762,7 +99818,7 @@ window.SEARCH_INDEX = [
       "brandon",
       "carey"
     ],
-    "rank": 140,
+    "rank": 141,
     "gender": "boys"
   },
   {
@@ -99846,7 +99902,7 @@ window.SEARCH_INDEX = [
       "phillip",
       "sullivan"
     ],
-    "rank": 17,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -99986,7 +100042,7 @@ window.SEARCH_INDEX = [
       "jacob",
       "simpson"
     ],
-    "rank": 75,
+    "rank": 74,
     "gender": "boys"
   },
   {
@@ -100126,7 +100182,7 @@ window.SEARCH_INDEX = [
       "elijah",
       "huff"
     ],
-    "rank": 35,
+    "rank": 34,
     "gender": "boys"
   },
   {
@@ -101841,20 +101897,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jordan Rogers",
-    "first_name": "Jordan",
-    "last_name": "Rogers",
-    "secondary": "New Richmond High School · 215",
-    "url": "/wrestler.html?id=OUTSTATE_ea418c8610f8&gender=boys",
-    "searchTokens": [
-      "jordan",
-      "rogers"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Hayden Walker",
     "first_name": "Hayden",
     "last_name": "Walker",
@@ -101863,6 +101905,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "hayden",
       "walker"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Jordan Rogers",
+    "first_name": "Jordan",
+    "last_name": "Rogers",
+    "secondary": "New Richmond High School · 215",
+    "url": "/wrestler.html?id=OUTSTATE_ea418c8610f8&gender=boys",
+    "searchTokens": [
+      "jordan",
+      "rogers"
     ],
     "rank": null,
     "gender": "boys"
@@ -103607,20 +103663,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Caden Newlin",
-    "first_name": "Caden",
-    "last_name": "Newlin",
-    "secondary": "Gibson Southern · 215",
-    "url": "/wrestler.html?id=OUTSTATE_84e3731b6c52&gender=boys",
-    "searchTokens": [
-      "caden",
-      "newlin"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Isaac Worley",
     "first_name": "Isaac",
     "last_name": "Worley",
@@ -103635,14 +103677,28 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Aiden McDaniel",
-    "first_name": "Aiden",
-    "last_name": "McDaniel",
-    "secondary": "RIVER VALLEY (Bidwell) · 215",
-    "url": "/wrestler.html?id=OUTSTATE_11542539feda&gender=boys",
+    "name": "Caden Newlin",
+    "first_name": "Caden",
+    "last_name": "Newlin",
+    "secondary": "Gibson Southern · 215",
+    "url": "/wrestler.html?id=OUTSTATE_84e3731b6c52&gender=boys",
     "searchTokens": [
-      "aiden",
-      "mcdaniel"
+      "caden",
+      "newlin"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Cody Gunn",
+    "first_name": "Cody",
+    "last_name": "Gunn",
+    "secondary": "Waynesville High School · 215",
+    "url": "/wrestler.html?id=OUTSTATE_6ecf1284719d&gender=boys",
+    "searchTokens": [
+      "cody",
+      "gunn"
     ],
     "rank": null,
     "gender": "boys"
@@ -103663,14 +103719,14 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Cody Gunn",
-    "first_name": "Cody",
-    "last_name": "Gunn",
-    "secondary": "Waynesville High School · 215",
-    "url": "/wrestler.html?id=OUTSTATE_6ecf1284719d&gender=boys",
+    "name": "Aiden McDaniel",
+    "first_name": "Aiden",
+    "last_name": "McDaniel",
+    "secondary": "RIVER VALLEY (Bidwell) · 215",
+    "url": "/wrestler.html?id=OUTSTATE_11542539feda&gender=boys",
     "searchTokens": [
-      "cody",
-      "gunn"
+      "aiden",
+      "mcdaniel"
     ],
     "rank": null,
     "gender": "boys"
@@ -104798,20 +104854,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jonas Raber",
-    "first_name": "Jonas",
-    "last_name": "Raber",
-    "secondary": "Troy High School · 215",
-    "url": "/wrestler.html?id=OUTSTATE_3f0d8a868276&gender=boys",
-    "searchTokens": [
-      "jonas",
-      "raber"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Gavin Brown",
     "first_name": "Gavin",
     "last_name": "Brown",
@@ -104820,6 +104862,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "brown",
       "gavin"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Jonas Raber",
+    "first_name": "Jonas",
+    "last_name": "Raber",
+    "secondary": "Troy High School · 215",
+    "url": "/wrestler.html?id=OUTSTATE_3f0d8a868276&gender=boys",
+    "searchTokens": [
+      "jonas",
+      "raber"
     ],
     "rank": null,
     "gender": "boys"
@@ -105158,7 +105214,7 @@ window.SEARCH_INDEX = [
       "ezekiel",
       "pacheco"
     ],
-    "rank": 52,
+    "rank": 56,
     "gender": "boys"
   },
   {
@@ -105172,7 +105228,7 @@ window.SEARCH_INDEX = [
       "anthony",
       "hester"
     ],
-    "rank": 42,
+    "rank": 45,
     "gender": "boys"
   },
   {
@@ -105200,7 +105256,7 @@ window.SEARCH_INDEX = [
       "riley",
       "wyatt"
     ],
-    "rank": 12,
+    "rank": 13,
     "gender": "boys"
   },
   {
@@ -105214,7 +105270,7 @@ window.SEARCH_INDEX = [
       "colton",
       "lewis"
     ],
-    "rank": 5,
+    "rank": 1,
     "gender": "boys"
   },
   {
@@ -105228,7 +105284,7 @@ window.SEARCH_INDEX = [
       "oliver",
       "parks"
     ],
-    "rank": 56,
+    "rank": 60,
     "gender": "boys"
   },
   {
@@ -105242,7 +105298,7 @@ window.SEARCH_INDEX = [
       "elder",
       "jakob"
     ],
-    "rank": 63,
+    "rank": 35,
     "gender": "boys"
   },
   {
@@ -105284,7 +105340,7 @@ window.SEARCH_INDEX = [
       "jackson",
       "oliver"
     ],
-    "rank": 98,
+    "rank": 95,
     "gender": "boys"
   },
   {
@@ -105382,7 +105438,7 @@ window.SEARCH_INDEX = [
       "steven",
       "vipperman"
     ],
-    "rank": 78,
+    "rank": 74,
     "gender": "boys"
   },
   {
@@ -105396,7 +105452,7 @@ window.SEARCH_INDEX = [
       "collett",
       "jordan"
     ],
-    "rank": 95,
+    "rank": 92,
     "gender": "boys"
   },
   {
@@ -105424,7 +105480,7 @@ window.SEARCH_INDEX = [
       "aidan",
       "warren"
     ],
-    "rank": 81,
+    "rank": 78,
     "gender": "boys"
   },
   {
@@ -105466,7 +105522,7 @@ window.SEARCH_INDEX = [
       "jayden",
       "pointer"
     ],
-    "rank": 101,
+    "rank": 98,
     "gender": "boys"
   },
   {
@@ -105508,7 +105564,7 @@ window.SEARCH_INDEX = [
       "coleman",
       "lucas"
     ],
-    "rank": 55,
+    "rank": 59,
     "gender": "boys"
   },
   {
@@ -105550,7 +105606,7 @@ window.SEARCH_INDEX = [
       "cameron",
       "thompson"
     ],
-    "rank": 14,
+    "rank": 19,
     "gender": "boys"
   },
   {
@@ -105606,7 +105662,7 @@ window.SEARCH_INDEX = [
       "cruz",
       "fernando"
     ],
-    "rank": 23,
+    "rank": 24,
     "gender": "boys"
   },
   {
@@ -105690,7 +105746,7 @@ window.SEARCH_INDEX = [
       "benjamin",
       "cauley"
     ],
-    "rank": 6,
+    "rank": 17,
     "gender": "boys"
   },
   {
@@ -105816,7 +105872,7 @@ window.SEARCH_INDEX = [
       "brown",
       "bryson"
     ],
-    "rank": 173,
+    "rank": 174,
     "gender": "boys"
   },
   {
@@ -105830,7 +105886,7 @@ window.SEARCH_INDEX = [
       "carter",
       "dalton"
     ],
-    "rank": 91,
+    "rank": 88,
     "gender": "boys"
   },
   {
@@ -105844,7 +105900,7 @@ window.SEARCH_INDEX = [
       "braydon",
       "springfield"
     ],
-    "rank": 127,
+    "rank": 128,
     "gender": "boys"
   },
   {
@@ -105900,7 +105956,7 @@ window.SEARCH_INDEX = [
       "lira",
       "luis"
     ],
-    "rank": 38,
+    "rank": 40,
     "gender": "boys"
   },
   {
@@ -105914,7 +105970,7 @@ window.SEARCH_INDEX = [
       "justin",
       "reynolds"
     ],
-    "rank": 88,
+    "rank": 85,
     "gender": "boys"
   },
   {
@@ -106068,7 +106124,7 @@ window.SEARCH_INDEX = [
       "barzee",
       "zakkary"
     ],
-    "rank": 111,
+    "rank": 110,
     "gender": "boys"
   },
   {
@@ -106082,7 +106138,7 @@ window.SEARCH_INDEX = [
       "baker",
       "mason"
     ],
-    "rank": 36,
+    "rank": 39,
     "gender": "boys"
   },
   {
@@ -106096,7 +106152,7 @@ window.SEARCH_INDEX = [
       "crenshaw",
       "treshawn"
     ],
-    "rank": 17,
+    "rank": 20,
     "gender": "boys"
   },
   {
@@ -106124,7 +106180,7 @@ window.SEARCH_INDEX = [
       "bronson",
       "keefe"
     ],
-    "rank": 57,
+    "rank": 73,
     "gender": "boys"
   },
   {
@@ -106138,7 +106194,7 @@ window.SEARCH_INDEX = [
       "bryce",
       "sizemore"
     ],
-    "rank": 19,
+    "rank": 21,
     "gender": "boys"
   },
   {
@@ -106180,7 +106236,7 @@ window.SEARCH_INDEX = [
       "noah",
       "scott"
     ],
-    "rank": 96,
+    "rank": 93,
     "gender": "boys"
   },
   {
@@ -106194,7 +106250,7 @@ window.SEARCH_INDEX = [
       "goins",
       "joshua"
     ],
-    "rank": 32,
+    "rank": 8,
     "gender": "boys"
   },
   {
@@ -106222,7 +106278,7 @@ window.SEARCH_INDEX = [
       "jones",
       "landon"
     ],
-    "rank": 84,
+    "rank": 81,
     "gender": "boys"
   },
   {
@@ -106236,7 +106292,7 @@ window.SEARCH_INDEX = [
       "brown",
       "dylan"
     ],
-    "rank": 54,
+    "rank": 58,
     "gender": "boys"
   },
   {
@@ -106362,7 +106418,7 @@ window.SEARCH_INDEX = [
       "fredstrom",
       "jack"
     ],
-    "rank": 59,
+    "rank": 103,
     "gender": "boys"
   },
   {
@@ -106390,7 +106446,7 @@ window.SEARCH_INDEX = [
       "shane",
       "willock"
     ],
-    "rank": 72,
+    "rank": 68,
     "gender": "boys"
   },
   {
@@ -106418,7 +106474,7 @@ window.SEARCH_INDEX = [
       "galloway",
       "william"
     ],
-    "rank": 10,
+    "rank": 16,
     "gender": "boys"
   },
   {
@@ -106432,7 +106488,7 @@ window.SEARCH_INDEX = [
       "broderick",
       "mcbarnette"
     ],
-    "rank": 37,
+    "rank": 41,
     "gender": "boys"
   },
   {
@@ -106446,7 +106502,7 @@ window.SEARCH_INDEX = [
       "morgan",
       "payton"
     ],
-    "rank": 71,
+    "rank": 67,
     "gender": "boys"
   },
   {
@@ -106460,7 +106516,7 @@ window.SEARCH_INDEX = [
       "smith",
       "zander"
     ],
-    "rank": 22,
+    "rank": 25,
     "gender": "boys"
   },
   {
@@ -106615,7 +106671,7 @@ window.SEARCH_INDEX = [
       "nathan",
       "tally"
     ],
-    "rank": 100,
+    "rank": 97,
     "gender": "boys"
   },
   {
@@ -106629,7 +106685,7 @@ window.SEARCH_INDEX = [
       "trenton",
       "woodford"
     ],
-    "rank": 35,
+    "rank": 38,
     "gender": "boys"
   },
   {
@@ -106699,7 +106755,7 @@ window.SEARCH_INDEX = [
       "douglas",
       "sanjay"
     ],
-    "rank": 67,
+    "rank": 63,
     "gender": "boys"
   },
   {
@@ -106727,7 +106783,7 @@ window.SEARCH_INDEX = [
       "edington",
       "zander"
     ],
-    "rank": 33,
+    "rank": 36,
     "gender": "boys"
   },
   {
@@ -106741,7 +106797,7 @@ window.SEARCH_INDEX = [
       "horton",
       "hunter"
     ],
-    "rank": 99,
+    "rank": 96,
     "gender": "boys"
   },
   {
@@ -106797,7 +106853,7 @@ window.SEARCH_INDEX = [
       "braunm",
       "michael"
     ],
-    "rank": 24,
+    "rank": 26,
     "gender": "boys"
   },
   {
@@ -106811,7 +106867,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "white"
     ],
-    "rank": 51,
+    "rank": 54,
     "gender": "boys"
   },
   {
@@ -106825,7 +106881,7 @@ window.SEARCH_INDEX = [
       "berry",
       "carver"
     ],
-    "rank": 128,
+    "rank": 127,
     "gender": "boys"
   },
   {
@@ -106867,7 +106923,7 @@ window.SEARCH_INDEX = [
       "carter",
       "timberlake"
     ],
-    "rank": 102,
+    "rank": 99,
     "gender": "boys"
   },
   {
@@ -106923,7 +106979,7 @@ window.SEARCH_INDEX = [
       "combs",
       "landon"
     ],
-    "rank": 110,
+    "rank": 109,
     "gender": "boys"
   },
   {
@@ -106937,7 +106993,7 @@ window.SEARCH_INDEX = [
       "combs",
       "logan"
     ],
-    "rank": 53,
+    "rank": 57,
     "gender": "boys"
   },
   {
@@ -106993,7 +107049,7 @@ window.SEARCH_INDEX = [
       "cj",
       "white"
     ],
-    "rank": 21,
+    "rank": 23,
     "gender": "boys"
   },
   {
@@ -107035,7 +107091,7 @@ window.SEARCH_INDEX = [
       "dalyn",
       "wheeler"
     ],
-    "rank": 73,
+    "rank": 69,
     "gender": "boys"
   },
   {
@@ -107063,7 +107119,7 @@ window.SEARCH_INDEX = [
       "cole",
       "napier"
     ],
-    "rank": 75,
+    "rank": 71,
     "gender": "boys"
   },
   {
@@ -107091,7 +107147,7 @@ window.SEARCH_INDEX = [
       "alexander",
       "hill"
     ],
-    "rank": 85,
+    "rank": 82,
     "gender": "boys"
   },
   {
@@ -107119,7 +107175,7 @@ window.SEARCH_INDEX = [
       "kayden",
       "lambert"
     ],
-    "rank": 77,
+    "rank": 79,
     "gender": "boys"
   },
   {
@@ -107287,7 +107343,7 @@ window.SEARCH_INDEX = [
       "burriell",
       "elijah"
     ],
-    "rank": 9,
+    "rank": 15,
     "gender": "boys"
   },
   {
@@ -107329,7 +107385,7 @@ window.SEARCH_INDEX = [
       "adkins",
       "isaac"
     ],
-    "rank": 13,
+    "rank": 14,
     "gender": "boys"
   },
   {
@@ -107357,7 +107413,7 @@ window.SEARCH_INDEX = [
       "andrew",
       "ferguson"
     ],
-    "rank": 11,
+    "rank": 12,
     "gender": "boys"
   },
   {
@@ -107413,7 +107469,7 @@ window.SEARCH_INDEX = [
       "ezekiel",
       "hurley"
     ],
-    "rank": 94,
+    "rank": 91,
     "gender": "boys"
   },
   {
@@ -107483,7 +107539,7 @@ window.SEARCH_INDEX = [
       "anthony",
       "merino"
     ],
-    "rank": 29,
+    "rank": 32,
     "gender": "boys"
   },
   {
@@ -107511,7 +107567,7 @@ window.SEARCH_INDEX = [
       "gavin",
       "noe"
     ],
-    "rank": 44,
+    "rank": 47,
     "gender": "boys"
   },
   {
@@ -107609,7 +107665,7 @@ window.SEARCH_INDEX = [
       "dunn",
       "jamison"
     ],
-    "rank": 25,
+    "rank": 28,
     "gender": "boys"
   },
   {
@@ -107623,7 +107679,7 @@ window.SEARCH_INDEX = [
       "dayton",
       "hurt"
     ],
-    "rank": 109,
+    "rank": 108,
     "gender": "boys"
   },
   {
@@ -107679,7 +107735,7 @@ window.SEARCH_INDEX = [
       "atherton",
       "jonathan"
     ],
-    "rank": 97,
+    "rank": 94,
     "gender": "boys"
   },
   {
@@ -107707,7 +107763,7 @@ window.SEARCH_INDEX = [
       "ian",
       "tibbs"
     ],
-    "rank": 41,
+    "rank": 44,
     "gender": "boys"
   },
   {
@@ -107763,7 +107819,7 @@ window.SEARCH_INDEX = [
       "glass",
       "nolan"
     ],
-    "rank": 171,
+    "rank": 172,
     "gender": "boys"
   },
   {
@@ -107875,7 +107931,7 @@ window.SEARCH_INDEX = [
       "brandon",
       "wells"
     ],
-    "rank": 43,
+    "rank": 46,
     "gender": "boys"
   },
   {
@@ -107931,7 +107987,7 @@ window.SEARCH_INDEX = [
       "foster",
       "jayden"
     ],
-    "rank": 172,
+    "rank": 173,
     "gender": "boys"
   },
   {
@@ -107945,7 +108001,7 @@ window.SEARCH_INDEX = [
       "kidd",
       "rylan"
     ],
-    "rank": 175,
+    "rank": 171,
     "gender": "boys"
   },
   {
@@ -107959,7 +108015,7 @@ window.SEARCH_INDEX = [
       "lorenzo",
       "mcginty"
     ],
-    "rank": 47,
+    "rank": 50,
     "gender": "boys"
   },
   {
@@ -107987,7 +108043,7 @@ window.SEARCH_INDEX = [
       "horn",
       "samuel"
     ],
-    "rank": 28,
+    "rank": 31,
     "gender": "boys"
   },
   {
@@ -108058,7 +108114,7 @@ window.SEARCH_INDEX = [
       "gabriel",
       "salas"
     ],
-    "rank": 174,
+    "rank": 175,
     "gender": "boys"
   },
   {
@@ -108114,7 +108170,7 @@ window.SEARCH_INDEX = [
       "austin",
       "goodpaster"
     ],
-    "rank": 4,
+    "rank": 9,
     "gender": "boys"
   },
   {
@@ -108156,7 +108212,7 @@ window.SEARCH_INDEX = [
       "david",
       "voelker"
     ],
-    "rank": 87,
+    "rank": 84,
     "gender": "boys"
   },
   {
@@ -108198,7 +108254,7 @@ window.SEARCH_INDEX = [
       "christian",
       "dominguez"
     ],
-    "rank": 93,
+    "rank": 90,
     "gender": "boys"
   },
   {
@@ -108212,7 +108268,7 @@ window.SEARCH_INDEX = [
       "kaleb",
       "myers"
     ],
-    "rank": 31,
+    "rank": 34,
     "gender": "boys"
   },
   {
@@ -108240,7 +108296,7 @@ window.SEARCH_INDEX = [
       "castle",
       "whitaker"
     ],
-    "rank": 46,
+    "rank": 49,
     "gender": "boys"
   },
   {
@@ -108268,7 +108324,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "bullock"
     ],
-    "rank": 60,
+    "rank": 111,
     "gender": "boys"
   },
   {
@@ -108282,7 +108338,7 @@ window.SEARCH_INDEX = [
       "cook",
       "isaiah"
     ],
-    "rank": 62,
+    "rank": 37,
     "gender": "boys"
   },
   {
@@ -108310,7 +108366,7 @@ window.SEARCH_INDEX = [
       "liam",
       "riordan"
     ],
-    "rank": 30,
+    "rank": 33,
     "gender": "boys"
   },
   {
@@ -108366,7 +108422,7 @@ window.SEARCH_INDEX = [
       "french",
       "keegan"
     ],
-    "rank": 86,
+    "rank": 83,
     "gender": "boys"
   },
   {
@@ -108380,7 +108436,7 @@ window.SEARCH_INDEX = [
       "french",
       "tristen"
     ],
-    "rank": 40,
+    "rank": 43,
     "gender": "boys"
   },
   {
@@ -108394,7 +108450,7 @@ window.SEARCH_INDEX = [
       "guinn",
       "tucker"
     ],
-    "rank": 80,
+    "rank": 76,
     "gender": "boys"
   },
   {
@@ -108408,7 +108464,7 @@ window.SEARCH_INDEX = [
       "bufford",
       "lamarrian"
     ],
-    "rank": 74,
+    "rank": 70,
     "gender": "boys"
   },
   {
@@ -108422,7 +108478,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "hilton"
     ],
-    "rank": 106,
+    "rank": 105,
     "gender": "boys"
   },
   {
@@ -108450,7 +108506,7 @@ window.SEARCH_INDEX = [
       "elias",
       "mcpike"
     ],
-    "rank": 18,
+    "rank": 5,
     "gender": "boys"
   },
   {
@@ -108464,7 +108520,7 @@ window.SEARCH_INDEX = [
       "carter",
       "lauffer"
     ],
-    "rank": 65,
+    "rank": 62,
     "gender": "boys"
   },
   {
@@ -108506,7 +108562,7 @@ window.SEARCH_INDEX = [
       "mcintosh",
       "naveah"
     ],
-    "rank": 68,
+    "rank": 64,
     "gender": "boys"
   },
   {
@@ -108520,7 +108576,7 @@ window.SEARCH_INDEX = [
       "ray",
       "skiler"
     ],
-    "rank": 20,
+    "rank": 22,
     "gender": "boys"
   },
   {
@@ -108548,7 +108604,7 @@ window.SEARCH_INDEX = [
       "noah",
       "price"
     ],
-    "rank": 103,
+    "rank": 100,
     "gender": "boys"
   },
   {
@@ -108576,7 +108632,7 @@ window.SEARCH_INDEX = [
       "bryant",
       "tre`mon"
     ],
-    "rank": 79,
+    "rank": 75,
     "gender": "boys"
   },
   {
@@ -108604,7 +108660,7 @@ window.SEARCH_INDEX = [
       "guffey",
       "logan"
     ],
-    "rank": 107,
+    "rank": 106,
     "gender": "boys"
   },
   {
@@ -108632,7 +108688,7 @@ window.SEARCH_INDEX = [
       "aiden",
       "stringer"
     ],
-    "rank": 70,
+    "rank": 66,
     "gender": "boys"
   },
   {
@@ -108688,7 +108744,7 @@ window.SEARCH_INDEX = [
       "beck",
       "reese"
     ],
-    "rank": 64,
+    "rank": 27,
     "gender": "boys"
   },
   {
@@ -108772,7 +108828,7 @@ window.SEARCH_INDEX = [
       "brayden",
       "ennis"
     ],
-    "rank": 58,
+    "rank": 104,
     "gender": "boys"
   },
   {
@@ -108884,7 +108940,7 @@ window.SEARCH_INDEX = [
       "braylen",
       "miller"
     ],
-    "rank": 76,
+    "rank": 72,
     "gender": "boys"
   },
   {
@@ -108898,7 +108954,7 @@ window.SEARCH_INDEX = [
       "justus",
       "smith"
     ],
-    "rank": 39,
+    "rank": 42,
     "gender": "boys"
   },
   {
@@ -108942,7 +108998,7 @@ window.SEARCH_INDEX = [
       "carter",
       "vance"
     ],
-    "rank": 83,
+    "rank": 80,
     "gender": "boys"
   },
   {
@@ -108956,7 +109012,7 @@ window.SEARCH_INDEX = [
       "robert",
       "singhoffer"
     ],
-    "rank": 82,
+    "rank": 77,
     "gender": "boys"
   },
   {
@@ -108998,7 +109054,7 @@ window.SEARCH_INDEX = [
       "charlie",
       "hummel"
     ],
-    "rank": 8,
+    "rank": 11,
     "gender": "boys"
   },
   {
@@ -109012,7 +109068,7 @@ window.SEARCH_INDEX = [
       "charlie",
       "johnson"
     ],
-    "rank": 50,
+    "rank": 53,
     "gender": "boys"
   },
   {
@@ -109054,7 +109110,7 @@ window.SEARCH_INDEX = [
       "lingenfelter",
       "thomas"
     ],
-    "rank": 92,
+    "rank": 89,
     "gender": "boys"
   },
   {
@@ -109125,7 +109181,7 @@ window.SEARCH_INDEX = [
       "giovany",
       "ramirez"
     ],
-    "rank": 69,
+    "rank": 65,
     "gender": "boys"
   },
   {
@@ -109139,7 +109195,7 @@ window.SEARCH_INDEX = [
       "austin",
       "cummings"
     ],
-    "rank": 1,
+    "rank": 10,
     "gender": "boys"
   },
   {
@@ -109167,7 +109223,7 @@ window.SEARCH_INDEX = [
       "caedyn",
       "word"
     ],
-    "rank": 49,
+    "rank": 52,
     "gender": "boys"
   },
   {
@@ -109195,7 +109251,7 @@ window.SEARCH_INDEX = [
       "holmes",
       "kole"
     ],
-    "rank": 48,
+    "rank": 51,
     "gender": "boys"
   },
   {
@@ -109223,7 +109279,7 @@ window.SEARCH_INDEX = [
       "bryant",
       "steven"
     ],
-    "rank": 26,
+    "rank": 29,
     "gender": "boys"
   },
   {
@@ -109251,7 +109307,7 @@ window.SEARCH_INDEX = [
       "gallagher",
       "jaxon"
     ],
-    "rank": 108,
+    "rank": 107,
     "gender": "boys"
   },
   {
@@ -109265,7 +109321,7 @@ window.SEARCH_INDEX = [
       "roberts",
       "william"
     ],
-    "rank": 45,
+    "rank": 48,
     "gender": "boys"
   },
   {
@@ -109279,7 +109335,7 @@ window.SEARCH_INDEX = [
       "evan",
       "smith"
     ],
-    "rank": 90,
+    "rank": 87,
     "gender": "boys"
   },
   {
@@ -109307,7 +109363,7 @@ window.SEARCH_INDEX = [
       "lance",
       "ludrick"
     ],
-    "rank": 104,
+    "rank": 101,
     "gender": "boys"
   },
   {
@@ -109391,7 +109447,7 @@ window.SEARCH_INDEX = [
       "marq",
       "sheckles"
     ],
-    "rank": 15,
+    "rank": 18,
     "gender": "boys"
   },
   {
@@ -109405,7 +109461,7 @@ window.SEARCH_INDEX = [
       "brendan",
       "dobbs"
     ],
-    "rank": 105,
+    "rank": 102,
     "gender": "boys"
   },
   {
@@ -109419,7 +109475,7 @@ window.SEARCH_INDEX = [
       "brooks",
       "dai-leon"
     ],
-    "rank": 66,
+    "rank": 55,
     "gender": "boys"
   },
   {
@@ -109461,7 +109517,7 @@ window.SEARCH_INDEX = [
       "bryant",
       "landon"
     ],
-    "rank": 34,
+    "rank": 6,
     "gender": "boys"
   },
   {
@@ -109475,7 +109531,7 @@ window.SEARCH_INDEX = [
       "escaloni",
       "maxx"
     ],
-    "rank": 16,
+    "rank": 4,
     "gender": "boys"
   },
   {
@@ -109503,7 +109559,7 @@ window.SEARCH_INDEX = [
       "maclain",
       "wilson"
     ],
-    "rank": 27,
+    "rank": 30,
     "gender": "boys"
   },
   {
@@ -110605,6 +110661,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "bayless",
       "brayden"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Ian Tibbs",
+    "first_name": "Ian",
+    "last_name": "Tibbs",
+    "secondary": "Madison Southern · 285",
+    "url": "/wrestler.html?id=OUTSTATE_6974042490dc&gender=boys",
+    "searchTokens": [
+      "ian",
+      "tibbs"
     ],
     "rank": null,
     "gender": "boys"
@@ -111869,20 +111939,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jeremiah King",
-    "first_name": "Jeremiah",
-    "last_name": "King",
-    "secondary": "West Ridge High School · 285",
-    "url": "/wrestler.html?id=35321699132&gender=boys",
-    "searchTokens": [
-      "jeremiah",
-      "king"
-    ],
-    "rank": null,
-    "gender": "boys"
-  },
-  {
-    "type": "wrestler",
     "name": "Anthony Galbreth",
     "first_name": "Anthony",
     "last_name": "Galbreth",
@@ -111891,6 +111947,20 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "anthony",
       "galbreth"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Jeremiah King",
+    "first_name": "Jeremiah",
+    "last_name": "King",
+    "secondary": "West Ridge High School · 285",
+    "url": "/wrestler.html?id=35321699132&gender=boys",
+    "searchTokens": [
+      "jeremiah",
+      "king"
     ],
     "rank": null,
     "gender": "boys"
@@ -112227,6 +112297,34 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "keynan",
       "wilson"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Brayden Allender",
+    "first_name": "Brayden",
+    "last_name": "Allender",
+    "secondary": "Campbell County · 285",
+    "url": "/wrestler.html?id=OUTSTATE_edb833260264&gender=boys",
+    "searchTokens": [
+      "allender",
+      "brayden"
+    ],
+    "rank": null,
+    "gender": "boys"
+  },
+  {
+    "type": "wrestler",
+    "name": "Marq Sheckles",
+    "first_name": "Marq",
+    "last_name": "Sheckles",
+    "secondary": "Western · 285",
+    "url": "/wrestler.html?id=OUTSTATE_d3420ab3ee10&gender=boys",
+    "searchTokens": [
+      "marq",
+      "sheckles"
     ],
     "rank": null,
     "gender": "boys"

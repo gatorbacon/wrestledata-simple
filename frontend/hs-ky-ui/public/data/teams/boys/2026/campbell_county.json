@@ -21,7 +21,7 @@
     "rankings_dir": "mt/rankings_data/hs_ky_boys/2026",
     "starter_overrides_file": "mt/rankings_data/hs_ky_boys/2026/starter_overrides.json"
   },
-  "generated_at_utc": "2026-02-25T13:58:49.876153Z",
+  "generated_at_utc": "2026-03-04T23:14:53.877019Z",
   "starters": {
     "106": {
       "weight": 106,
@@ -29,10 +29,10 @@
       "name": "Braxton Hehn",
       "current_rank": 33,
       "grade": 8,
-      "xtp": 0.94,
-      "xtp_p": 0.09,
-      "xtp_a": 0.34,
-      "xtp_b": 0.51,
+      "xtp": 1.62,
+      "xtp_p": 0.11,
+      "xtp_a": 0.51,
+      "xtp_b": 1.0,
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
@@ -49,9 +49,9 @@
     },
     "113": {
       "weight": 113,
-      "wrestler_id": "34989332132",
-      "name": "Christian Church",
-      "current_rank": 48,
+      "wrestler_id": "34989474132",
+      "name": "Colton Reed",
+      "current_rank": 35,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -60,22 +60,22 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 3
       },
       "top33_record": {
         "wins": 0,
-        "losses": 4
+        "losses": 10
       },
-      "wins": 9,
-      "losses": 8,
+      "wins": 6,
+      "losses": 11,
       "top25_wins": 0,
-      "bonus_rate": 1.0
+      "bonus_rate": 0.2
     },
     "120": {
       "weight": 120,
       "wrestler_id": "34989319132",
       "name": "Russell Ranshaw",
-      "current_rank": 102,
+      "current_rank": 103,
       "grade": 8,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -123,7 +123,7 @@
       "weight": 132,
       "wrestler_id": "34989330132",
       "name": "Garrett Rust",
-      "current_rank": 38,
+      "current_rank": 42,
       "grade": 9,
       "xtp": 0.0,
       "xtp_p": 0.0,
@@ -136,7 +136,7 @@
       },
       "top33_record": {
         "wins": 1,
-        "losses": 5
+        "losses": 3
       },
       "wins": 2,
       "losses": 9,
@@ -160,7 +160,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 0
       },
       "wins": 4,
       "losses": 2,
@@ -171,25 +171,25 @@
       "weight": 144,
       "wrestler_id": "34989136132",
       "name": "Deacon Heisler",
-      "current_rank": 9,
+      "current_rank": 6,
       "grade": 12,
-      "xtp": 5.83,
-      "xtp_p": 2.03,
-      "xtp_a": 1.78,
-      "xtp_b": 2.02,
-      "xtp_simple": 3.0,
+      "xtp": 9.03,
+      "xtp_p": 4.26,
+      "xtp_a": 2.33,
+      "xtp_b": 2.44,
+      "xtp_simple": 13.5,
       "top10_record": {
-        "wins": 0,
-        "losses": 1
+        "wins": 2,
+        "losses": 3
       },
       "top33_record": {
-        "wins": 7,
-        "losses": 2
+        "wins": 9,
+        "losses": 4
       },
-      "wins": 31,
-      "losses": 3,
+      "wins": 34,
+      "losses": 5,
       "top25_wins": 7,
-      "bonus_rate": 0.9
+      "bonus_rate": 0.879
     },
     "150": {
       "weight": 150,
@@ -228,7 +228,7 @@
       "xtp_simple": 0.0,
       "top10_record": {
         "wins": 0,
-        "losses": 2
+        "losses": 1
       },
       "top33_record": {
         "wins": 0,
@@ -304,7 +304,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 1
+        "losses": 2
       },
       "wins": 5,
       "losses": 9,
@@ -328,7 +328,7 @@
       },
       "top33_record": {
         "wins": 0,
-        "losses": 0
+        "losses": 1
       },
       "wins": 2,
       "losses": 2,
@@ -341,23 +341,23 @@
       "name": "Brayden Allender",
       "current_rank": 3,
       "grade": 12,
-      "xtp": 14.9,
+      "xtp": 14.2,
       "xtp_p": 8.02,
       "xtp_a": 3.12,
-      "xtp_b": 3.76,
+      "xtp_b": 3.06,
       "xtp_simple": 21.0,
       "top10_record": {
-        "wins": 1,
-        "losses": 2
-      },
-      "top33_record": {
-        "wins": 4,
+        "wins": 5,
         "losses": 3
       },
-      "wins": 27,
-      "losses": 4,
-      "top25_wins": 3,
-      "bonus_rate": 0.783
+      "top33_record": {
+        "wins": 7,
+        "losses": 4
+      },
+      "wins": 31,
+      "losses": 5,
+      "top25_wins": 6,
+      "bonus_rate": 0.731
     }
   },
   "remaining": [
@@ -383,13 +383,13 @@
     },
     {
       "weight": 113,
-      "wrestler_id": "34989474132",
-      "name": "Colton Reed",
+      "wrestler_id": "34989332132",
+      "name": "Christian Church",
       "grade": 9,
-      "wins": 5,
-      "losses": 9,
+      "wins": 9,
+      "losses": 8,
       "top25_wins": 0,
-      "bonus_rate": 0.25
+      "bonus_rate": 1.0
     },
     {
       "weight": 113,
@@ -462,9 +462,9 @@
       "bonus_rate": 0.0
     }
   ],
-  "team_xTP_simple": 24.0,
+  "team_xTP_simple": 34.5,
   "team_metrics": {
-    "projected_state_points": 24.0,
+    "projected_state_points": 34.5,
     "team_rank": {
       "value": null,
       "rank": null,
@@ -474,30 +474,30 @@
     "advancement_points": null,
     "bonus_points": null,
     "overall": {
-      "wins": 111,
-      "losses": 115
+      "wins": 107,
+      "losses": 116
     },
     "top33": {
-      "wins": 12,
-      "losses": 46
+      "wins": 17,
+      "losses": 54
     },
     "top10": {
-      "wins": 1,
-      "losses": 16
+      "wins": 7,
+      "losses": 21
     },
     "bonus_rate": {
-      "value": 0.857,
-      "rank": 109,
+      "value": 0.874,
+      "rank": 114,
       "rank_scope": "league"
     },
     "pin_rate": {
-      "value": 0.725,
+      "value": 0.736,
       "rank": 85,
       "rank_scope": "league"
     },
     "tech_rate": {
-      "value": 0.033,
-      "rank": 127,
+      "value": 0.046,
+      "rank": 121,
       "rank_scope": "league"
     }
   }
