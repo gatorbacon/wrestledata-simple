@@ -41,7 +41,7 @@ def start_monitor():
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     year = int(os.environ.get("TOURNAMENT_YEAR", 2026))
-    module.run_live(year=year, interval_seconds=120, once=False, skip_scrape=False, push=False)
+    module.run_live(year=year, interval_seconds=120, once=False, skip_scrape=False)
 
 
 if __name__ == "__main__":
