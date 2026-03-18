@@ -293,7 +293,9 @@ let refreshTimer = null;
 let countdownTimer = null;
 let selectedYear = YEARS[0];
 
-const LIVE_DATA_URL = 'https://wrestledata-simple-production.up.railway.app/live_data.json';
+const LIVE_DATA_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? 'live_data.json'
+  : 'https://wrestledata-simple-production.up.railway.app/live_data.json';
 
 function dataUrlForYear(year) {
   return year === LIVE_YEAR ? LIVE_DATA_URL : `data/${year}/simulation_replay.json`;
