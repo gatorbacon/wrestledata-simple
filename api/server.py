@@ -35,9 +35,13 @@ def health():
 
 
 def start_monitor():
-    from scripts.ncaa.live_monitor import run_live
+    import importlib.util
+    monitor_path = PROJECT_ROOT / "scripts" / "ncaa" / "live_monitor.py"
+    spec = importlib.util.spec_from_file_location("live_monitor", monitor_path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
     year = int(os.environ.get("TOURNAMENT_YEAR", 2026))
-    run_live(year=year, interval_seconds=120, once=False, skip_scrape=False, push=False)
+    module.run_live(year=year, interval_seconds=120, once=False, skip_scrape=False, push=False)
 
 
 if __name__ == "__main__":
