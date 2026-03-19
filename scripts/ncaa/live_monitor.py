@@ -266,7 +266,16 @@ def run_live(
 
     # State tracking
     known_matches: list = []
+    # Restore moments from disk if live_data.json already exists (survives restarts)
     moments: list = []
+    if LIVE_DATA_PATH.exists():
+        try:
+            existing = json.loads(LIVE_DATA_PATH.read_text())
+            moments = existing.get("moments", [])
+            if moments:
+                print(f"Restored {len(moments)} moments from existing live_data.json")
+        except Exception:
+            pass
     match_counter = 0
     prev_totals = {t: round(v, 2) for t, v in pre_tourney_teams.items()}
     prev_ranking = [t for t, _ in sorted(pre_tourney_teams.items(), key=lambda x: -x[1])]
