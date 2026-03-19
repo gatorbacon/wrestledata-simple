@@ -651,7 +651,7 @@ class NCAATournamentEngine:
             "year": 2026,
             "last_updated": datetime.now().isoformat(timespec="seconds"),
             "matches_completed": matches_completed,
-            "matches_total": 330,
+            "matches_total": 640,
             "current_projection": {t: round(v, 2) for t, v in team_totals.items()},
             "wrestlers": wrestlers_out,
         }
