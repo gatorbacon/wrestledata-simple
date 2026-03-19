@@ -223,9 +223,10 @@ def build_live_data(
     pre_tourney_teams: dict,
     history: list,
     moments: list = None,
+    pre_projections: dict = None,
 ) -> dict:
     """Build live_data.json content."""
-    snap = engine.get_snapshot()
+    snap = engine.get_snapshot(pre_projections=pre_projections)
     snap["pre_tourney_predictions"] = {t: round(v, 2) for t, v in pre_tourney_teams.items()}
     snap["history"] = history
     snap["moments"] = moments or []
@@ -258,6 +259,7 @@ def run_live(
     print("Computing pre-tournament projections...")
     pre_engine = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, [])
     pre_tourney_teams = pre_engine.get_team_totals()
+    pre_projections = pre_engine.get_projections()  # per-wrestler baseline for delta tracking
 
     top10 = sorted(pre_tourney_teams.items(), key=lambda x: -x[1])[:10]
     print("Pre-tournament top 10:")
@@ -289,7 +291,7 @@ def run_live(
 
     # Initial snapshot (pre-tourney, no results)
     engine = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, [])
-    snap = build_live_data(engine, pre_tourney_teams, history, moments)
+    snap = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections)
     LIVE_DATA_PATH.write_text(json.dumps(snap, indent=2))
     print(f"\nInitial live_data.json written.")
 
@@ -391,7 +393,7 @@ def run_live(
                     "match_n": match_counter,
                     "projections": {t: round(v, 2) for t, v in team_totals.items()},
                 })
-                live_data = build_live_data(engine, pre_tourney_teams, history, moments)
+                live_data = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections)
                 LIVE_DATA_PATH.write_text(json.dumps(live_data, indent=2))
 
             # 6. Console summary

@@ -604,7 +604,7 @@ class NCAATournamentEngine:
         eng.run()
         return eng
 
-    def get_snapshot(self) -> dict:
+    def get_snapshot(self, pre_projections: dict = None) -> dict:
         """Return a serializable snapshot for live_data.json."""
         projections = self.get_projections()
         team_totals = self.get_team_totals(projections)
@@ -631,12 +631,14 @@ class NCAATournamentEngine:
                 aa_prob = aa_probs.get(weight, {}).get(seed_str, 0.0)
                 alive = seed_str not in _get_eliminated(engine)
 
+                initial = (pre_projections or {}).get(weight, {}).get(seed_str, projected)
                 wrestlers_out[str(weight)][seed_str] = {
                     "name": info.get("name", f"Seed {seed_int}"),
                     "team": info.get("team", "Unknown"),
                     "actual": round(actual, 2),
                     "projected_remaining": round(projected - actual, 2),
                     "projected_total": round(projected, 2),
+                    "initial_projected": round(initial, 2),
                     "aa_prob": round(aa_prob, 4),
                     "alive": alive,
                 }
