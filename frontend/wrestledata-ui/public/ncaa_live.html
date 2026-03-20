@@ -673,14 +673,14 @@ function renderTeams(data, preTourneyTeams) {
 
   const teams = Object.values(teamMap).sort((a, b) => b.projected - a.projected);
   let html = '';
-  for (const team of teams) {
+  teams.forEach((team, teamIdx) => {
     const td = fmtDelta(team.projected - (preTourneyTeams[team.team] || 0));
     const sortedWrestlers = team.wrestlers.slice().sort((a, b) => a.weight - b.weight);
-    const rowsHtml = sortedWrestlers.map((r, i) => wrestlerRowHtml(r, `${r.weight} lbs`, i + 1)).join('');
+    const rowsHtml = sortedWrestlers.map(r => wrestlerRowHtml(r, `${r.weight} lbs`)).join('');
     html += `
       <div class="weight-group">
         <div class="weight-toggle" onclick="toggleWeight(this)">
-          <span style="font-weight:700">${esc(team.team)}</span>
+          <span><span style="color:var(--muted);font-size:12px;margin-right:8px">${teamIdx + 1}.</span><span style="font-weight:700">${esc(team.team)}</span></span>
           <span style="display:flex;align-items:center;gap:16px;font-size:13px">
             <span class="${td.cls}">Δ ${td.text}</span>
             <span>Proj <strong>${team.projected.toFixed(1)}</strong></span>
@@ -690,7 +690,7 @@ function renderTeams(data, preTourneyTeams) {
         </div>
         <div class="weight-body">${wrestlerTableHtml(rowsHtml)}</div>
       </div>`;
-  }
+  });
   section.innerHTML = html;
 }
 
