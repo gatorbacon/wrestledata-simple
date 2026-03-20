@@ -266,31 +266,43 @@ def run_live(
     for i, (team, pts) in enumerate(top10, 1):
         print(f"  {i:2d}. {team:30s} {pts:.2f}")
 
-    # State tracking
-    known_matches: list = []
-    # Restore moments from disk if live_data.json already exists (survives restarts)
+    # State tracking — restore from disk so restarts don't lose history or moments
     moments: list = []
+    history: list = []
     if LIVE_DATA_PATH.exists():
         try:
             existing = json.loads(LIVE_DATA_PATH.read_text())
             moments = existing.get("moments", [])
-            if moments:
-                print(f"Restored {len(moments)} moments from existing live_data.json")
+            history = existing.get("history", [])
+            print(f"Restored {len(moments)} moments, {len(history)} history entries from existing live_data.json")
         except Exception:
             pass
-    match_counter = 0
-    prev_totals = {t: round(v, 2) for t, v in pre_tourney_teams.items()}
-    prev_ranking = [t for t, _ in sorted(pre_tourney_teams.items(), key=lambda x: -x[1])]
 
-    # Pre-tourney baseline is always the first history entry
-    history: list = [{
-        "round": "pre",
-        "match_n": 0,
-        "projections": {t: round(v, 2) for t, v in pre_tourney_teams.items()},
-    }]
+    # Ensure history always has the pre-tourney baseline as its first entry
+    if not history:
+        history = [{
+            "round": "pre",
+            "match_n": 0,
+            "projections": {t: round(v, 2) for t, v in pre_tourney_teams.items()},
+        }]
 
-    # Initial snapshot (pre-tourney, no results)
-    engine = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, [])
+    # Pre-populate known_matches from disk so the first cycle doesn't replay
+    # all existing results as "new" (which would add duplicate history entries)
+    known_matches: list = load_matches(year)
+    match_counter = len(known_matches)
+    if known_matches:
+        print(f"Pre-loaded {len(known_matches)} matches from disk")
+
+    # Compute correct baseline for moment detection
+    if known_matches:
+        bootstrap_engine = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, known_matches)
+        prev_totals = {t: round(v, 2) for t, v in bootstrap_engine.get_team_totals().items()}
+    else:
+        prev_totals = {t: round(v, 2) for t, v in pre_tourney_teams.items()}
+    prev_ranking = [t for t, _ in sorted(prev_totals.items(), key=lambda x: -x[1])]
+
+    # Initial snapshot (reflects current match state + restored history)
+    engine = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, known_matches)
     snap = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections)
     LIVE_DATA_PATH.write_text(json.dumps(snap, indent=2))
     print(f"\nInitial live_data.json written.")
