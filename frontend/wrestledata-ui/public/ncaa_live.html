@@ -289,11 +289,16 @@
     </div>
 
     <!-- Team and Weight-class detail sections -->
-    <h3 class="section-label">By Team</h3>
-    <div class="weights-section" id="teams-section"></div>
-
-    <h3 class="section-label">By Weight</h3>
-    <div class="weights-section" id="weights-section"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start">
+      <div>
+        <h3 class="section-label">By Team</h3>
+        <div class="weights-section" id="teams-section"></div>
+      </div>
+      <div>
+        <h3 class="section-label">By Weight</h3>
+        <div class="weights-section" id="weights-section"></div>
+      </div>
+    </div>
   </div>
 </main>
 
@@ -580,7 +585,7 @@ function renderChart(data, teamRanks) {
   Plotly.react('chart-div', traces, layout, {responsive: true, displayModeBar: false});
 }
 
-function wrestlerRowHtml(r, secondaryLine) {
+function wrestlerRowHtml(r, secondaryLine, rowNum) {
   const seedCls = r.seed <= 3 ? `seed-${r.seed}` : '';
   const aaPct = Math.round((r.aa_prob || 0) * 100);
   const barWidth = Math.min(60, aaPct * 0.6);
@@ -596,8 +601,8 @@ function wrestlerRowHtml(r, secondaryLine) {
   return `
     <tr class="${rowCls}">
       <td>
-        <span class="seed-badge ${seedCls}">${r.seed}</span><strong>${esc(r.name)}</strong>
-        <br><span style="font-size:11px;color:var(--muted);padding-left:30px">${esc(secondaryLine)}</span>
+        ${rowNum != null ? `<span style="color:var(--muted);font-size:11px;margin-right:6px">${rowNum}.</span>` : ''}<span class="seed-badge ${seedCls}">${r.seed}</span><strong>${esc(r.name)}</strong>
+        <br><span style="font-size:11px;color:var(--muted);padding-left:${rowNum != null ? 36 : 30}px">${esc(secondaryLine)}</span>
       </td>
       <td class="r">${deltaHtml}</td>
       <td class="r"><strong>${r.projected_total.toFixed(1)}</strong></td>
@@ -670,13 +675,12 @@ function renderTeams(data, preTourneyTeams) {
   let html = '';
   for (const team of teams) {
     const td = fmtDelta(team.projected - (preTourneyTeams[team.team] || 0));
-    const teamColor = teamColorMap[team.team] || '#5c6bc0';
     const sortedWrestlers = team.wrestlers.slice().sort((a, b) => a.weight - b.weight);
-    const rowsHtml = sortedWrestlers.map(r => wrestlerRowHtml(r, `${r.weight} lbs`)).join('');
+    const rowsHtml = sortedWrestlers.map((r, i) => wrestlerRowHtml(r, `${r.weight} lbs`, i + 1)).join('');
     html += `
       <div class="weight-group">
         <div class="weight-toggle" onclick="toggleWeight(this)">
-          <span style="color:${teamColor};font-weight:700">${esc(team.team)}</span>
+          <span style="font-weight:700">${esc(team.team)}</span>
           <span style="display:flex;align-items:center;gap:16px;font-size:13px">
             <span class="${td.cls}">Δ ${td.text}</span>
             <span>Proj <strong>${team.projected.toFixed(1)}</strong></span>
