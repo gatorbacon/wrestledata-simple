@@ -179,6 +179,15 @@
     margin-left: 6px;
   }
 
+  .section-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 20px 0 8px;
+    font-weight: 600;
+  }
+
   .loading {
     text-align: center;
     padding: 60px;
@@ -279,7 +288,11 @@
       </div>
     </div>
 
-    <!-- Weight-class detail sections -->
+    <!-- Team and Weight-class detail sections -->
+    <h3 class="section-label">By Team</h3>
+    <div class="weights-section" id="teams-section"></div>
+
+    <h3 class="section-label">By Weight</h3>
     <div class="weights-section" id="weights-section"></div>
   </div>
 </main>
@@ -369,6 +382,7 @@ function renderAll(data) {
   renderChart(data, teamRanks);
   renderMoments(data);
   renderMovers(data);
+  renderTeams(data, data.pre_tourney_predictions || {});
   renderWeights(data, teamRanks);
 }
 
@@ -566,67 +580,113 @@ function renderChart(data, teamRanks) {
   Plotly.react('chart-div', traces, layout, {responsive: true, displayModeBar: false});
 }
 
+function wrestlerRowHtml(r, secondaryLine) {
+  const seedCls = r.seed <= 3 ? `seed-${r.seed}` : '';
+  const aaPct = Math.round((r.aa_prob || 0) * 100);
+  const barWidth = Math.min(60, aaPct * 0.6);
+  const rowCls = r.alive ? '' : 'eliminated';
+  let deltaHtml;
+  if (r.initial_projected == null) {
+    deltaHtml = '<span class="delta-neu">—</span>';
+  } else {
+    const delta = r.projected_total - r.initial_projected;
+    const d = fmtDelta(delta);
+    deltaHtml = `<span class="${d.cls}">${d.text}</span>`;
+  }
+  return `
+    <tr class="${rowCls}">
+      <td>
+        <span class="seed-badge ${seedCls}">${r.seed}</span><strong>${esc(r.name)}</strong>
+        <br><span style="font-size:11px;color:var(--muted);padding-left:30px">${esc(secondaryLine)}</span>
+      </td>
+      <td class="r">${deltaHtml}</td>
+      <td class="r"><strong>${r.projected_total.toFixed(1)}</strong></td>
+      <td class="r" style="opacity:0.6">${r.actual.toFixed(1)}</td>
+      <td class="r">${aaPct}%<span class="aa-bar" style="width:${barWidth}px"></span></td>
+    </tr>`;
+}
+
+function wrestlerTableHtml(rowsHtml) {
+  return `<table class="wrestler-table">
+    <thead><tr>
+      <th>Wrestler</th>
+      <th class="r">Δ</th>
+      <th class="r">Proj</th>
+      <th class="r">Actual</th>
+      <th class="r">P(AA)</th>
+    </tr></thead>
+    <tbody>${rowsHtml}</tbody>
+  </table>`;
+}
+
 function renderWeights(data, teamRanks) {
   const section = document.getElementById('weights-section');
   const wrestlers = data.wrestlers || {};
-  const teamColorMap = {};
-  teamRanks.slice(0, 10).forEach((r, i) => {
-    teamColorMap[r.team] = TEAM_COLORS[i % TEAM_COLORS.length];
-  });
 
   let html = '';
   for (const wt of WEIGHTS) {
     const wtData = wrestlers[String(wt)];
     if (!wtData) continue;
-
     const rows = Object.entries(wtData)
       .map(([seed, info]) => ({seed: parseInt(seed), ...info}))
       .sort((a, b) => a.seed - b.seed);
-
-    let rowsHtml = '';
-    rows.forEach(r => {
-      const seedCls = r.seed <= 3 ? `seed-${r.seed}` : '';
-      const aaPct = Math.round((r.aa_prob || 0) * 100);
-      const barWidth = Math.min(60, aaPct * 0.6);
-      const rowCls = r.alive ? '' : 'eliminated';
-      const teamColor = teamColorMap[r.team] || '#5c6bc0';
-
-      rowsHtml += `
-        <tr class="${rowCls}">
-          <td><span class="seed-badge ${seedCls}">${r.seed}</span></td>
-          <td>${esc(r.name)}</td>
-          <td style="color:${teamColor}">${esc(r.team)}</td>
-          <td class="r">${r.actual.toFixed(1)}</td>
-          <td class="r">${r.projected_total.toFixed(1)}</td>
-          <td class="r">
-            ${aaPct}%
-            <span class="aa-bar" style="width:${barWidth}px"></span>
-          </td>
-        </tr>`;
-    });
-
+    const rowsHtml = rows.map(r => wrestlerRowHtml(r, r.team)).join('');
     html += `
       <div class="weight-group">
         <div class="weight-toggle" onclick="toggleWeight(this)">
           <span>${wt} lbs</span>
           <span class="arrow">▶</span>
         </div>
-        <div class="weight-body">
-          <table class="wrestler-table">
-            <thead>
-              <tr>
-                <th>Seed</th><th>Name</th><th>Team</th>
-                <th class="r">Actual</th>
-                <th class="r">Projected</th>
-                <th class="r">P(AA)</th>
-              </tr>
-            </thead>
-            <tbody>${rowsHtml}</tbody>
-          </table>
-        </div>
+        <div class="weight-body">${wrestlerTableHtml(rowsHtml)}</div>
       </div>`;
   }
+  section.innerHTML = html;
+}
 
+function renderTeams(data, preTourneyTeams) {
+  const section = document.getElementById('teams-section');
+  const wrestlers = data.wrestlers || {};
+  const proj = data.current_projection || {};
+
+  const teamColorMap = {};
+  Object.entries(proj).sort((a, b) => b[1] - a[1]).slice(0, 10).forEach(([team], i) => {
+    teamColorMap[team] = TEAM_COLORS[i % TEAM_COLORS.length];
+  });
+
+  const teamMap = {};
+  for (const wt of WEIGHTS) {
+    const wtData = wrestlers[String(wt)];
+    if (!wtData) continue;
+    for (const [seed, info] of Object.entries(wtData)) {
+      const w = {weight: wt, seed: parseInt(seed), ...info};
+      if (!teamMap[w.team]) teamMap[w.team] = {team: w.team, projected: 0, actual: 0, wrestlers: []};
+      teamMap[w.team].projected += w.projected_total || 0;
+      teamMap[w.team].actual += w.actual || 0;
+      teamMap[w.team].wrestlers.push(w);
+    }
+  }
+
+  const teams = Object.values(teamMap).sort((a, b) => b.projected - a.projected);
+  let html = '';
+  for (const team of teams) {
+    const td = fmtDelta(team.projected - (preTourneyTeams[team.team] || 0));
+    const teamColor = teamColorMap[team.team] || '#5c6bc0';
+    const sortedWrestlers = team.wrestlers.slice().sort((a, b) => a.weight - b.weight);
+    const rowsHtml = sortedWrestlers.map(r => wrestlerRowHtml(r, `${r.weight} lbs`)).join('');
+    html += `
+      <div class="weight-group">
+        <div class="weight-toggle" onclick="toggleWeight(this)">
+          <span style="color:${teamColor};font-weight:700">${esc(team.team)}</span>
+          <span style="display:flex;align-items:center;gap:16px;font-size:13px">
+            <span class="${td.cls}">Δ ${td.text}</span>
+            <span>Proj <strong>${team.projected.toFixed(1)}</strong></span>
+            <span style="color:var(--muted)">(actual: ${team.actual.toFixed(1)})</span>
+            <span class="arrow">▶</span>
+          </span>
+        </div>
+        <div class="weight-body">${wrestlerTableHtml(rowsHtml)}</div>
+      </div>`;
+  }
   section.innerHTML = html;
 }
 
