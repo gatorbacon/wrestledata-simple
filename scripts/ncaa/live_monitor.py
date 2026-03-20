@@ -218,6 +218,44 @@ def apply_matches_to_engine(engine: NCAATournamentEngine, matches: list) -> int:
     return applied
 
 
+def reconstruct_history(matches, pre_tourney_teams, seed_model, seeds_by_weight):
+    """Rebuild per-session projection snapshots from a complete match list.
+
+    Called after a fresh start (ephemeral filesystem restart) once all current
+    matches have been scraped, so the chart has all historical round data points.
+    """
+    history = [{
+        "round": "pre",
+        "match_n": 0,
+        "projections": {t: round(v, 2) for t, v in pre_tourney_teams.items()},
+    }]
+    if not matches:
+        return history
+
+    # Group matches by session label
+    session_groups = {}
+    for m in matches:
+        session = ROUND_TO_SESSION.get(m.get("round", ""), m.get("round", "Live"))
+        session_groups.setdefault(session, []).append(m)
+
+    # Replay sessions in order, snapshotting after each one
+    cumulative = []
+    for label, _ in SESSIONS:
+        if label not in session_groups:
+            continue
+        cumulative.extend(session_groups[label])
+        eng = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, cumulative)
+        totals = eng.get_team_totals()
+        history.append({
+            "round": label,
+            "match_n": len(cumulative),
+            "projections": {t: round(v, 2) for t, v in totals.items()},
+        })
+
+    print(f"  Reconstructed {len(history)} history entries from {len(matches)} matches")
+    return history
+
+
 def build_live_data(
     engine: NCAATournamentEngine,
     pre_tourney_teams: dict,
@@ -287,11 +325,16 @@ def run_live(
         }]
 
     # Pre-populate known_matches from disk so the first cycle doesn't replay
-    # all existing results as "new" (which would add duplicate history entries)
+    # all existing results as "new" (which would add duplicate history entries).
+    # On Railway (ephemeral filesystem), this will be empty after a restart —
+    # is_fresh_start tracks that so we can reconstruct history after first scrape.
     known_matches: list = load_matches(year)
+    is_fresh_start = len(known_matches) == 0
     match_counter = len(known_matches)
     if known_matches:
         print(f"Pre-loaded {len(known_matches)} matches from disk")
+    else:
+        print("No existing matches on disk — will reconstruct history after first scrape")
 
     # Compute correct baseline for moment detection
     if known_matches:
@@ -392,19 +435,27 @@ def run_live(
             engine = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, known_matches)
             team_totals = engine.get_team_totals()
 
-            # 5. Append history and write live_data.json only when new results arrived
+            # 5. Update history and write live_data.json only when new results arrived
             if new_results:
-                round_order_map = {r: i for i, r in enumerate(ROUND_ORDER)}
-                latest_round = max(
-                    (m.get("round", "") for m in known_matches),
-                    key=lambda r: round_order_map.get(r, -1),
-                    default="",
-                )
-                history.append({
-                    "round": ROUND_TO_SESSION.get(latest_round, latest_round or "Live"),
-                    "match_n": match_counter,
-                    "projections": {t: round(v, 2) for t, v in team_totals.items()},
-                })
+                if is_fresh_start:
+                    # Ephemeral restart: rebuild full round-by-round history from
+                    # all current matches so the chart doesn't lose earlier rounds
+                    history = reconstruct_history(
+                        known_matches, pre_tourney_teams, seed_model, seeds_by_weight
+                    )
+                    is_fresh_start = False
+                else:
+                    round_order_map = {r: i for i, r in enumerate(ROUND_ORDER)}
+                    latest_round = max(
+                        (m.get("round", "") for m in known_matches),
+                        key=lambda r: round_order_map.get(r, -1),
+                        default="",
+                    )
+                    history.append({
+                        "round": ROUND_TO_SESSION.get(latest_round, latest_round or "Live"),
+                        "match_n": match_counter,
+                        "projections": {t: round(v, 2) for t, v in team_totals.items()},
+                    })
                 live_data = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections)
                 LIVE_DATA_PATH.write_text(json.dumps(live_data, indent=2))
 
