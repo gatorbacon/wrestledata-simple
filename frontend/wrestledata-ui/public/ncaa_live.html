@@ -545,19 +545,35 @@ function renderChart(data, teamRanks) {
 
   const traces = top10teams.map((team, i) => {
     const x = [], y = [], cd = [];
+    let prevProj = null;
     history.forEach(h => {
       if (!h.projections || h.projections[team] == null) return;
       const mn = h.match_n;
       const proj = h.projections[team];
-      const label = mn === 0 ? 'Pre-tournament projection'
-        : (h.match ? matchLabel(h.match) : sortedMatches[mn - 1] ? matchLabel(sortedMatches[mn - 1]) : 'Match #' + mn);
-      x.push(mn); y.push(proj); cd.push([label, proj]);
+
+      if (prevProj === null) {
+        // Always plot the pre-tourney baseline
+        x.push(mn); y.push(proj);
+        cd.push(['Pre-tournament projection', proj, '']);
+        prevProj = proj;
+        return;
+      }
+
+      const delta = proj - prevProj;
+      prevProj = proj;
+      if (Math.abs(delta) < 0.05) return; // skip zero-change points
+
+      const label = h.match ? matchLabel(h.match)
+        : (sortedMatches[mn - 1] ? matchLabel(sortedMatches[mn - 1]) : 'Match #' + mn);
+      const deltaStr = (delta > 0 ? '+' : '') + delta.toFixed(1);
+      x.push(mn); y.push(proj);
+      cd.push([label, proj, deltaStr]);
     });
     return {
       x, y, name: team, mode: 'lines',
       line: {color: TEAM_COLORS[i % TEAM_COLORS.length], width: 2, shape: 'hv'},
       customdata: cd, showlegend: false,
-      hovertemplate: '<b>%{fullData.name}</b><br>%{customdata[0]}<br>%{customdata[1]:.1f}<extra></extra>',
+      hovertemplate: '<b>%{fullData.name}</b><br>%{customdata[0]}<br>Proj: %{customdata[1]:.1f}  %{customdata[2]}<extra></extra>',
     };
   });
 
