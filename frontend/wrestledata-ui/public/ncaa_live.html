@@ -500,86 +500,129 @@ function renderTeamTable(teamRanks, preTourney, data) {
   });
 }
 
-const ROUND_LABELS = {
-  'pre': 'Pre',
-  'R32': 'R32', 'Consi 1': 'Consi 1',
-  'R16': 'R16', 'Consi 2': 'Consi 2', 'Consi 3': 'Consi 3',
-  'QF': 'QF', 'Consi 4': 'Consi 4', 'Consi QF': 'Consi QF',
-  'SF': 'SF', 'Consi SF': 'Consi SF',
-  'Finals': 'Finals', 'Medals': 'Medals',
-};
-
-// Fixed x-axis: always show all rounds regardless of how many have completed
-const ROUND_SEQUENCE = [
-  'pre', 'R32', 'Consi 1', 'R16', 'Consi 2', 'Consi 3',
-  'QF', 'Consi 4', 'Consi QF', 'SF', 'Consi SF', 'Medals', 'Finals',
-];
-const ROUND_INDEX = Object.fromEntries(ROUND_SEQUENCE.map((r, i) => [r, i]));
-
 function renderChart(data, teamRanks) {
   const history = data.history || [];
+  const sortedMatches = data.sorted_matches || [];
   const top10teams = teamRanks.slice(0, 10).map(r => r.team);
 
-  // Fixed x-axis — always show all rounds
-  const tickVals = ROUND_SEQUENCE.map((_, i) => i);
-  const tickText = ROUND_SEQUENCE.map(r => ROUND_LABELS[r] || r);
+  // Derive session boundaries from history
+  const sessionStarts = {};
+  history.forEach(h => { if (!sessionStarts[h.round]) sessionStarts[h.round] = h.match_n; });
+  const lastCompleted = history.reduce((mx, h) => Math.max(mx, h.match_n), 0);
 
-  // Keep only the last entry per round → one dot per round, clean diagonal lines
-  const dedupedHistory = Object.values(
-    history.reduce((acc, h) => { acc[h.round] = h; return acc; }, {})
-  ).sort((a, b) => (ROUND_INDEX[a.round] ?? 99) - (ROUND_INDEX[b.round] ?? 99));
-  const singlePoint = dedupedHistory.length < 2;
+  const s2 = sessionStarts['R16'] || lastCompleted;
+  const s3 = sessionStarts['QF']  || lastCompleted;
+  const s4 = sessionStarts['SF']  || lastCompleted;
+  const s5 = lastCompleted + 1;
+  const s6 = s5 + 40;
+  const s7 = s6 + 10;
+  const maxMatch = s7 + 5;
+
+  const sessions = [
+    {name: 'R32 + Consi 1',     start: 0,   end: s2-1, completed: true},
+    {name: 'R16 + Consi 2',     start: s2,  end: s3-1, completed: true},
+    {name: 'QF + Consi 3/4',    start: s3,  end: s4-1, completed: true},
+    {name: 'SF + Consi QF',     start: s4,  end: s5-1, completed: true},
+    {name: 'Consi SF + Medals', start: s5,  end: s6-1, completed: false},
+    {name: 'Finals',             start: s6,  end: s7,   completed: false},
+  ];
+
+  function matchLabel(m) {
+    if (!m) return '';
+    const score = m.score || '';
+    const method = score ? m.result_type + ' ' + score : m.result_type;
+    return m.winner_name + ' def. ' + m.loser_name + ' (' + method + ') \u2014 ' + m.weight + 'lb';
+  }
 
   const traces = top10teams.map((team, i) => {
-    const xs = [], ys = [], customdata = [];
-    dedupedHistory.forEach(h => {
-      const xIdx = ROUND_INDEX[h.round];
-      if (xIdx == null) return;  // skip any unrecognized round
-      const v = h.projections ? h.projections[team] : null;
-      if (v != null) {
-        xs.push(xIdx);
-        ys.push(v);
-        customdata.push(ROUND_LABELS[h.round] || h.round);
-      }
+    const x = [], y = [], cd = [];
+    history.forEach(h => {
+      if (!h.projections || h.projections[team] == null) return;
+      const mn = h.match_n;
+      const proj = h.projections[team];
+      const label = mn === 0 ? 'Pre-tournament projection'
+        : (sortedMatches[mn - 1] ? matchLabel(sortedMatches[mn - 1]) : 'Match #' + mn);
+      x.push(mn); y.push(proj); cd.push([label, proj]);
     });
     return {
-      x: xs, y: ys,
-      customdata,
-      type: 'scatter',
-      mode: singlePoint ? 'markers' : 'lines+markers',
-      name: team,
-      line: {color: TEAM_COLORS[i % TEAM_COLORS.length], width: 2.5},
-      marker: {size: singlePoint ? 10 : 6},
-      hovertemplate: '<b>%{fullData.name}</b><br>%{customdata}<br>Proj: %{y:.1f}<extra></extra>',
+      x, y, name: team, mode: 'lines',
+      line: {color: TEAM_COLORS[i % TEAM_COLORS.length], width: 2, shape: 'hv'},
+      customdata: cd, showlegend: false,
+      hovertemplate: '<b>%{fullData.name}</b><br>%{customdata[0]}<br>%{customdata[1]:.1f}<extra></extra>',
     };
+  });
+
+  // De-collide team name labels at right edge
+  const lastProj = {};
+  top10teams.forEach(team => {
+    const entries = history.filter(h => h.projections && h.projections[team] != null);
+    if (entries.length) lastProj[team] = entries[entries.length - 1].projections[team];
+  });
+  const allVals = history.flatMap(h => Object.values(h.projections || {}));
+  const yRange = Math.max(...allVals) - Math.min(...allVals);
+  const minSpacing = yRange * (11 / 370);
+
+  const labels = top10teams
+    .map((team, i) => ({team, y: lastProj[team] || 0, color: TEAM_COLORS[i]}))
+    .sort((a, b) => b.y - a.y);
+  for (let i = 1; i < labels.length; i++) {
+    if (labels[i - 1].y - labels[i].y < minSpacing)
+      labels[i].y = labels[i - 1].y - minSpacing;
+  }
+  const labelAnnotations = labels.map(lbl => ({
+    xref: 'x', yref: 'y',
+    x: lastCompleted + 2, y: lbl.y,
+    text: lbl.team, showarrow: false,
+    font: {size: 10, color: lbl.color},
+    xanchor: 'left', yanchor: 'middle',
+  }));
+
+  // Session boundary shapes + labels
+  const shapes = [], annotations = [...labelAnnotations];
+  const minWide = maxMatch * 0.12;
+  sessions.forEach((s, i) => {
+    const width = Math.min(s.end, maxMatch) - s.start;
+    const labelColor = s.completed ? '#7b7f9e' : '#3d4160';
+    shapes.push({
+      type: 'rect', xref: 'x', yref: 'paper',
+      x0: s.start, x1: s.end, y0: 0, y1: 1,
+      fillcolor: i % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'rgba(0,0,0,0)',
+      line: {width: 0},
+    });
+    if (i > 0) shapes.push({
+      type: 'line', xref: 'x', yref: 'paper',
+      x0: s.start, x1: s.start, y0: 0, y1: 1,
+      line: {color: 'rgba(255,255,255,0.15)', width: 1, dash: 'dot'},
+    });
+    if (width >= minWide) {
+      annotations.push({
+        xref: 'x', yref: 'paper',
+        x: (s.start + Math.min(s.end, maxMatch)) / 2, y: 1.02,
+        text: s.name, showarrow: false,
+        font: {size: 10, color: labelColor},
+        xanchor: 'center', yanchor: 'bottom',
+      });
+    } else {
+      annotations.push({
+        xref: 'x', yref: 'paper',
+        x: s.start + 1, y: 1.0,
+        text: s.name + (s.completed ? '' : ' <i>(upcoming)</i>'),
+        showarrow: false,
+        font: {size: 9, color: labelColor},
+        xanchor: 'left', yanchor: 'bottom', textangle: -40,
+      });
+    }
   });
 
   const layout = {
     paper_bgcolor: 'rgba(0,0,0,0)',
     plot_bgcolor: 'rgba(0,0,0,0)',
     font: {color: '#7b7f9e', size: 11},
-    xaxis: {
-      tickvals: tickVals,
-      ticktext: tickText,
-      tickangle: -35,
-      gridcolor: '#2d3147',
-      color: '#7b7f9e',
-      tickfont: {size: 10},
-      range: [-0.5, ROUND_SEQUENCE.length - 0.5],
-    },
-    yaxis: {
-      title: 'Projected Team Score',
-      gridcolor: '#2d3147',
-      color: '#7b7f9e',
-    },
-    legend: {
-      orientation: 'v',
-      bgcolor: 'rgba(0,0,0,0)',
-      font: {size: 10},
-      x: 1.02, y: 1,
-    },
-    margin: {l: 50, r: 140, t: 10, b: 60},
-    hovermode: 'x unified',
+    xaxis: {range: [0, maxMatch], gridcolor: '#2d3147', color: '#7b7f9e', showticklabels: false},
+    yaxis: {gridcolor: '#2d3147', color: '#7b7f9e'},
+    margin: {l: 50, r: 110, t: 30, b: 20},
+    hovermode: 'closest',
+    shapes, annotations,
   };
 
   Plotly.react('chart-div', traces, layout, {responsive: true, displayModeBar: false});

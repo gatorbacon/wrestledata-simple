@@ -219,10 +219,10 @@ def apply_matches_to_engine(engine: NCAATournamentEngine, matches: list) -> int:
 
 
 def reconstruct_history(matches, pre_tourney_teams, seed_model, seeds_by_weight):
-    """Rebuild per-session projection snapshots from a complete match list.
+    """Rebuild per-match projection snapshots from a complete match list.
 
     Called after a fresh start (ephemeral filesystem restart) once all current
-    matches have been scraped, so the chart has all historical round data points.
+    matches have been scraped, so the chart has full per-match granularity.
     """
     history = [{
         "round": "pre",
@@ -232,23 +232,21 @@ def reconstruct_history(matches, pre_tourney_teams, seed_model, seeds_by_weight)
     if not matches:
         return history
 
-    # Group matches by session label
-    session_groups = {}
-    for m in matches:
-        session = ROUND_TO_SESSION.get(m.get("round", ""), m.get("round", "Live"))
-        session_groups.setdefault(session, []).append(m)
+    # Sort matches by round order then weight (same order replay_matches uses)
+    round_rank = {r: i for i, r in enumerate(ROUND_ORDER)}
+    sorted_matches = sorted(
+        matches,
+        key=lambda m: (round_rank.get(m.get("round", ""), 99), m.get("weight", 0))
+    )
 
-    # Replay sessions in order, snapshotting after each one
-    cumulative = []
-    for label, _ in SESSIONS:
-        if label not in session_groups:
-            continue
-        cumulative.extend(session_groups[label])
-        eng = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, cumulative)
+    # Replay one match at a time, snapshotting after each
+    for i, match in enumerate(sorted_matches):
+        eng = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, sorted_matches[:i+1])
         totals = eng.get_team_totals()
+        session = ROUND_TO_SESSION.get(match.get("round", ""), match.get("round", "Live"))
         history.append({
-            "round": label,
-            "match_n": len(cumulative),
+            "round": session,
+            "match_n": i + 1,
             "projections": {t: round(v, 2) for t, v in totals.items()},
         })
 
@@ -262,12 +260,15 @@ def build_live_data(
     history: list,
     moments: list = None,
     pre_projections: dict = None,
+    sorted_matches: list = None,
 ) -> dict:
     """Build live_data.json content."""
     snap = engine.get_snapshot(pre_projections=pre_projections)
     snap["pre_tourney_predictions"] = {t: round(v, 2) for t, v in pre_tourney_teams.items()}
     snap["history"] = history
     snap["moments"] = moments or []
+    if sorted_matches is not None:
+        snap["sorted_matches"] = sorted_matches
     return snap
 
 
@@ -346,7 +347,9 @@ def run_live(
 
     # Initial snapshot (reflects current match state + restored history)
     engine = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, known_matches)
-    snap = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections)
+    round_rank_map = {r: i for i, r in enumerate(ROUND_ORDER)}
+    initial_sorted = sorted(known_matches, key=lambda m: (round_rank_map.get(m.get("round", ""), 99), m.get("weight", 0)))
+    snap = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections, sorted_matches=initial_sorted)
     LIVE_DATA_PATH.write_text(json.dumps(snap, indent=2))
     print(f"\nInitial live_data.json written.")
 
@@ -456,7 +459,8 @@ def run_live(
                         "match_n": match_counter,
                         "projections": {t: round(v, 2) for t, v in team_totals.items()},
                     })
-                live_data = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections)
+                cur_sorted = sorted(known_matches, key=lambda m: (round_rank_map.get(m.get("round", ""), 99), m.get("weight", 0)))
+                live_data = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections, sorted_matches=cur_sorted)
                 LIVE_DATA_PATH.write_text(json.dumps(live_data, indent=2))
 
             # 6. Console summary
