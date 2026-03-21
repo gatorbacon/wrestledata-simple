@@ -714,11 +714,17 @@ def _get_score_ranges(outer: "NCAATournamentEngine") -> dict:
     team_min: dict = {}
     team_max: dict = {}
 
+    # Pre-compute full projections (xTP) — for eliminated wrestlers this equals
+    # their final locked score including placement award points, which are not
+    # captured in actual_points (advancement + bonus only).
+    all_projections = outer.get_projections()
+
     for weight, engine in outer.engines.items():
         if not engine._points_computed:
             continue
         eliminated = _get_eliminated(engine)
         weight_info = outer.seeds_by_weight.get(weight, {})
+        weight_proj = all_projections.get(weight, {})
 
         for seed_int in range(1, 34):
             seed_str = str(seed_int)
@@ -729,8 +735,10 @@ def _get_score_ranges(outer: "NCAATournamentEngine") -> dict:
             actual = outer.actual_points[weight].get(seed_str, 0.0)
 
             if seed_str in eliminated:
-                team_min[team] = team_min.get(team, 0.0) + actual
-                team_max[team] = team_max.get(team, 0.0) + actual
+                # Use full xTP which includes placement points already awarded
+                full_score = weight_proj.get(seed_str, actual)
+                team_min[team] = team_min.get(team, 0.0) + full_score
+                team_max[team] = team_max.get(team, 0.0) + full_score
                 continue
 
             # Find wrestler's next unresolved slot
@@ -747,8 +755,12 @@ def _get_score_ranges(outer: "NCAATournamentEngine") -> dict:
                     break
 
             if next_slot_id is None:
-                team_min[team] = team_min.get(team, 0.0) + actual
-                team_max[team] = team_max.get(team, 0.0) + actual
+                # Can't resolve next slot (e.g. medal-round match inputs not yet
+                # propagated). Fall back to xTP which correctly accounts for
+                # remaining placement points via the projection engine.
+                full_score = weight_proj.get(seed_str, actual)
+                team_min[team] = team_min.get(team, 0.0) + full_score
+                team_max[team] = team_max.get(team, 0.0) + full_score
                 continue
 
             w_max = max_from(engine.slots, next_slot_id)
