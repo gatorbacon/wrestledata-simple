@@ -261,6 +261,18 @@ def reconstruct_history(matches, pre_tourney_teams, seed_model, seeds_by_weight)
     return history
 
 
+def load_team_penalties(year: int) -> dict:
+    """Load manual team point penalties (e.g. unsportsmanlike conduct deductions)."""
+    path = PROJECT_ROOT / "data" / str(year) / "ncaa-tourney" / "team_penalties.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text())
+    except Exception as e:
+        print(f"WARNING: could not load team_penalties.json: {e}", file=sys.stderr)
+        return {}
+
+
 def build_live_data(
     engine: NCAATournamentEngine,
     pre_tourney_teams: dict,
@@ -268,10 +280,20 @@ def build_live_data(
     moments: list = None,
     pre_projections: dict = None,
     sorted_matches: list = None,
+    year: int = 2026,
 ) -> dict:
     """Build live_data.json content."""
     snap = engine.get_snapshot(pre_projections=pre_projections)
     snap["pre_tourney_predictions"] = {t: round(v, 2) for t, v in pre_tourney_teams.items()}
+
+    # Apply manual team point penalties (unsportsmanlike conduct etc.)
+    penalties = load_team_penalties(year)
+    if penalties:
+        for team, adj in penalties.items():
+            if team in snap.get("current_projection", {}):
+                snap["current_projection"][team] = round(snap["current_projection"][team] + adj, 2)
+        snap["team_penalties"] = penalties
+
     snap["history"] = history
     snap["moments"] = moments or []
     if sorted_matches is not None:
@@ -356,7 +378,7 @@ def run_live(
     engine = NCAATournamentEngine.from_matches(seed_model, seeds_by_weight, known_matches)
     round_rank_map = {r: i for i, r in enumerate(ROUND_ORDER)}
     initial_sorted = sorted(known_matches, key=lambda m: (round_rank_map.get(m.get("round", ""), 99), m.get("weight", 0)))
-    snap = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections, sorted_matches=initial_sorted)
+    snap = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections, sorted_matches=initial_sorted, year=year)
     LIVE_DATA_PATH.write_text(json.dumps(snap, indent=2))
     print(f"\nInitial live_data.json written.")
 
@@ -471,7 +493,7 @@ def run_live(
                     )
                     is_fresh_start = False
                 cur_sorted = sorted(known_matches, key=lambda m: (round_rank_map.get(m.get("round", ""), 99), m.get("weight", 0)))
-                live_data = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections, sorted_matches=cur_sorted)
+                live_data = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections, sorted_matches=cur_sorted, year=year)
                 LIVE_DATA_PATH.write_text(json.dumps(live_data, indent=2))
 
             # 6. Console summary
