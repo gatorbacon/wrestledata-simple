@@ -550,7 +550,7 @@ function renderChart(data, teamRanks) {
       const mn = h.match_n;
       const proj = h.projections[team];
       const label = mn === 0 ? 'Pre-tournament projection'
-        : (sortedMatches[mn - 1] ? matchLabel(sortedMatches[mn - 1]) : 'Match #' + mn);
+        : (h.match ? matchLabel(h.match) : sortedMatches[mn - 1] ? matchLabel(sortedMatches[mn - 1]) : 'Match #' + mn);
       x.push(mn); y.push(proj); cd.push([label, proj]);
     });
     return {

@@ -247,6 +247,13 @@ def reconstruct_history(matches, pre_tourney_teams, seed_model, seeds_by_weight)
         history.append({
             "round": session,
             "match_n": i + 1,
+            "match": {
+                "weight": match.get("weight"),
+                "winner_name": match.get("winner_name"),
+                "loser_name": match.get("loser_name"),
+                "result_type": match.get("result_type"),
+                "score": match.get("score"),
+            },
             "projections": {t: round(v, 2) for t, v in totals.items()},
         })
 
@@ -428,6 +435,22 @@ def run_live(
                     prev_ranking = curr_ranking
                     prev_totals = {t: round(v, 2) for t, v in curr_totals.items()}
 
+                    # Add one history entry per match with embedded match data so
+                    # the chart hover always shows the correct match regardless of
+                    # arrival order (e.g. a Medal-round forfeit arriving during C_SF)
+                    history.append({
+                        "round": session_label,
+                        "match_n": match_counter,
+                        "match": {
+                            "weight": m.get("weight"),
+                            "winner_name": m.get("winner_name"),
+                            "loser_name": m.get("loser_name"),
+                            "result_type": m.get("result_type"),
+                            "score": m.get("score"),
+                        },
+                        "projections": {t: round(v, 2) for t, v in curr_totals.items()},
+                    })
+
                 # Sync known_matches to full new_matches list (catches any we missed)
                 known_matches = new_matches
                 print(f"  Applied {n_applied} results ({match_counter} total)")
@@ -447,18 +470,6 @@ def run_live(
                         known_matches, pre_tourney_teams, seed_model, seeds_by_weight
                     )
                     is_fresh_start = False
-                else:
-                    round_order_map = {r: i for i, r in enumerate(ROUND_ORDER)}
-                    latest_round = max(
-                        (m.get("round", "") for m in known_matches),
-                        key=lambda r: round_order_map.get(r, -1),
-                        default="",
-                    )
-                    history.append({
-                        "round": ROUND_TO_SESSION.get(latest_round, latest_round or "Live"),
-                        "match_n": match_counter,
-                        "projections": {t: round(v, 2) for t, v in team_totals.items()},
-                    })
                 cur_sorted = sorted(known_matches, key=lambda m: (round_rank_map.get(m.get("round", ""), 99), m.get("weight", 0)))
                 live_data = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections, sorted_matches=cur_sorted)
                 LIVE_DATA_PATH.write_text(json.dumps(live_data, indent=2))
