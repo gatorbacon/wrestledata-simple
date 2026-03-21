@@ -86,28 +86,29 @@
   /* Leaderboard table */
   .leaderboard { width: 100%; border-collapse: collapse; }
   .leaderboard th {
-    padding: 10px 14px;
+    padding: 6px 8px;
     text-align: left;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.06em;
     color: var(--muted);
     border-bottom: 1px solid var(--border);
   }
   .leaderboard th.r { text-align: right; }
   .leaderboard td {
-    padding: 10px 14px;
+    padding: 7px 8px;
     border-bottom: 1px solid rgba(45,49,71,0.5);
     font-variant-numeric: tabular-nums;
+    font-size: 13px;
   }
   .leaderboard td.r { text-align: right; }
   .leaderboard tr:last-child td { border-bottom: none; }
   .leaderboard tr:hover td { background: rgba(92,107,192,0.05); }
 
-  .rank { font-weight: 700; color: var(--muted); width: 32px; }
+  .rank { font-weight: 600; color: var(--muted); width: 28px; }
   .team-name { font-weight: 600; }
-  .proj { font-weight: 700; font-size: 15px; }
+  .proj { font-weight: 700; font-size: 14px; }
   .delta-pos { color: var(--green); font-weight: 600; }
   .delta-neg { color: var(--red); font-weight: 600; }
   .delta-neu { color: var(--muted); }
@@ -248,7 +249,8 @@
               <th>Rank</th>
               <th>Team</th>
               <th class="r">Projected</th>
-              <th class="r">Pre-Tourney</th>
+              <th class="r">Score Range</th>
+              <th class="r">Place</th>
               <th class="r">Δ</th>
               <th class="r">Active</th>
             </tr>
@@ -483,17 +485,24 @@ function fmtDelta(delta) {
 
 function renderTeamTable(teamRanks, preTourney, data) {
   const tbody = document.getElementById('team-tbody');
+  const ranges = data.score_ranges || {};
   tbody.innerHTML = '';
   teamRanks.slice(0, 10).forEach((row, i) => {
     const delta = row.pts - (row.pre || 0);
     const d = fmtDelta(delta);
+    const r = ranges[row.team] || {};
+    const hasRange = r.min_score != null;
+    function ord(n) { const s=['th','st','nd','rd'],v=n%100; return n+(s[(v-20)%10]||s[v]||s[0]); }
+    const placeStr = hasRange ? (r.best_place===r.worst_place ? ord(r.best_place) : ord(r.best_place)+'–'+ord(r.worst_place)) : '';
+    const scoreStr = hasRange ? r.min_score.toFixed(1)+' – '+r.max_score.toFixed(1) : '—';
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td class="rank">${i+1}</td>
       <td class="team-name">${esc(row.team)}</td>
       <td class="r proj">${row.pts.toFixed(1)}</td>
-      <td class="r">${row.pre.toFixed(1)}</td>
-      <td class="r"><span class="${d.cls}">${d.text}</span></td>
+      <td class="r" style="font-size:12px;color:var(--muted)">${scoreStr}</td>
+      <td class="r" style="font-size:11px;color:var(--muted)">${placeStr || '—'}</td>
+      <td class="r"><span class="${d.cls}" style="font-size:12px">${d.text}</span></td>
       <td class="r wrestlers-left">${row.active}</td>
     `;
     tbody.appendChild(tr);

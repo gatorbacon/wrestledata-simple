@@ -649,6 +649,13 @@ class NCAATournamentEngine:
             for e in self.engines.values()
         )
 
+        try:
+            score_ranges = _get_score_ranges(self)
+        except Exception as e:
+            import sys as _sys
+            print(f"WARNING: score_ranges computation failed: {e}", file=_sys.stderr)
+            score_ranges = {}
+
         return {
             "year": 2026,
             "last_updated": datetime.now().isoformat(timespec="seconds"),
@@ -656,7 +663,113 @@ class NCAATournamentEngine:
             "matches_total": 640,
             "current_projection": {t: round(v, 2) for t, v in team_totals.items()},
             "wrestlers": wrestlers_out,
+            "score_ranges": score_ranges,
         }
+
+
+def _get_score_ranges(outer: "NCAATournamentEngine") -> dict:
+    """
+    Compute min/max possible total score per team and resulting place range.
+      min = every alive wrestler loses their very next match (worst case, 0 bonus)
+      max = every alive wrestler wins all remaining matches with pin bonus (best case)
+    Returns {team: {min_score, max_score, best_place, worst_place}}.
+    """
+    PLACE_PTS = {1: 16.0, 2: 12.0, 3: 10.0, 4: 9.0, 5: 7.0, 6: 6.0, 7: 4.0, 8: 3.0}
+    MAX_BONUS = 2.0
+
+    def max_from(slots, slot_id, depth=0):
+        if depth > 20 or not slot_id:
+            return 0.0
+        if slot_id.startswith("PLACE_"):
+            try:
+                return PLACE_PTS.get(int(slot_id.split("_")[1]), 0.0)
+            except Exception:
+                return 0.0
+        slot = slots.get(slot_id)
+        if not slot:
+            return 0.0
+        adv = advancement_points_for_slot(slot)
+        return adv + MAX_BONUS + max_from(slots, slot.winner_to, depth + 1)
+
+    def min_from_loss(slots, slot_id, depth=0):
+        """Points wrestler gets if they lose at slot_id, then lose everything after."""
+        if depth > 20 or not slot_id:
+            return 0.0
+        if slot_id.startswith("PLACE_"):
+            try:
+                return PLACE_PTS.get(int(slot_id.split("_")[1]), 0.0)
+            except Exception:
+                return 0.0
+        slot = slots.get(slot_id)
+        if not slot or not slot.loser_to:
+            return 0.0
+        dest = slot.loser_to
+        if dest.startswith("PLACE_"):
+            try:
+                return PLACE_PTS.get(int(dest.split("_")[1]), 0.0)
+            except Exception:
+                return 0.0
+        return min_from_loss(slots, dest, depth + 1)
+
+    team_min: dict = {}
+    team_max: dict = {}
+
+    for weight, engine in outer.engines.items():
+        if not engine._points_computed:
+            continue
+        eliminated = _get_eliminated(engine)
+        weight_info = outer.seeds_by_weight.get(weight, {})
+
+        for seed_int in range(1, 34):
+            seed_str = str(seed_int)
+            info = weight_info.get(seed_int, {})
+            team = info.get("team")
+            if not team:
+                continue
+            actual = outer.actual_points[weight].get(seed_str, 0.0)
+
+            if seed_str in eliminated:
+                team_min[team] = team_min.get(team, 0.0) + actual
+                team_max[team] = team_max.get(team, 0.0) + actual
+                continue
+
+            # Find wrestler's next unresolved slot
+            next_slot_id = None
+            for slot_id, slot in engine.slots.items():
+                if slot_id in engine.deterministic_slots or slot_id.startswith("PLACE_"):
+                    continue
+                try:
+                    inputs = engine.get_slot_inputs(slot_id)
+                except Exception:
+                    continue
+                if seed_str in inputs:
+                    next_slot_id = slot_id
+                    break
+
+            if next_slot_id is None:
+                team_min[team] = team_min.get(team, 0.0) + actual
+                team_max[team] = team_max.get(team, 0.0) + actual
+                continue
+
+            w_max = max_from(engine.slots, next_slot_id)
+            w_min = min_from_loss(engine.slots, next_slot_id)
+            team_min[team] = team_min.get(team, 0.0) + actual + w_min
+            team_max[team] = team_max.get(team, 0.0) + actual + w_max
+
+    all_teams = list(set(list(team_min.keys()) + list(team_max.keys())))
+    result = {}
+    for team in all_teams:
+        my_min = round(team_min.get(team, 0.0), 1)
+        my_max = round(team_max.get(team, 0.0), 1)
+        best_place = 1 + sum(1 for t in all_teams if t != team and team_min.get(t, 0.0) > my_max)
+        worst_place = 1 + sum(1 for t in all_teams if t != team and team_max.get(t, 0.0) > my_min)
+        result[team] = {
+            "min_score": my_min,
+            "max_score": my_max,
+            "best_place": best_place,
+            "worst_place": worst_place,
+        }
+    return result
 
 
 def _get_eliminated(engine: NCAASeedBracketEngine) -> set:
