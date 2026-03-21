@@ -292,6 +292,10 @@ def build_live_data(
         for team, adj in penalties.items():
             if team in snap.get("current_projection", {}):
                 snap["current_projection"][team] = round(snap["current_projection"][team] + adj, 2)
+            if team in snap.get("score_ranges", {}):
+                r = snap["score_ranges"][team]
+                r["min_score"] = round(r["min_score"] + adj, 2)
+                r["max_score"] = round(r["max_score"] + adj, 2)
         snap["team_penalties"] = penalties
 
     snap["history"] = history
