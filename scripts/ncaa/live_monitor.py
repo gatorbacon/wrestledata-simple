@@ -383,7 +383,7 @@ def run_live(
     round_rank_map = {r: i for i, r in enumerate(ROUND_ORDER)}
     initial_sorted = sorted(known_matches, key=lambda m: (round_rank_map.get(m.get("round", ""), 99), m.get("weight", 0)))
     snap = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections, sorted_matches=initial_sorted, year=year)
-    LIVE_DATA_PATH.write_text(json.dumps(snap, indent=2))
+    LIVE_DATA_PATH.write_text(json.dumps(snap))
     print(f"\nInitial live_data.json written.")
 
     cycle = 0
@@ -498,7 +498,7 @@ def run_live(
                     is_fresh_start = False
                 cur_sorted = sorted(known_matches, key=lambda m: (round_rank_map.get(m.get("round", ""), 99), m.get("weight", 0)))
                 live_data = build_live_data(engine, pre_tourney_teams, history, moments, pre_projections=pre_projections, sorted_matches=cur_sorted, year=year)
-                LIVE_DATA_PATH.write_text(json.dumps(live_data, indent=2))
+                LIVE_DATA_PATH.write_text(json.dumps(live_data))
 
             # 6. Console summary
             top10_current = sorted(team_totals.items(), key=lambda x: -x[1])[:10]
