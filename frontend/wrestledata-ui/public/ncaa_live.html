@@ -372,12 +372,17 @@ let refreshTimer = null;
 let countdownTimer = null;
 let selectedYear = YEARS[0];
 
-const LIVE_DATA_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:'
-  ? 'live_data.json'
+// When opened as file:// the HTML is 3 dirs deep (frontend/wrestledata-ui/public/)
+// so data files at the repo root need a ../../../ prefix.
+const IS_FILE_PROTO = window.location.protocol === 'file:';
+const FILE_ROOT = IS_FILE_PROTO ? '../../../' : '';
+
+const LIVE_DATA_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || IS_FILE_PROTO
+  ? FILE_ROOT + 'live_data.json'
   : 'https://wrestledata-simple-production.up.railway.app/live_data.json';
 
 function dataUrlForYear(year) {
-  return year === LIVE_YEAR ? LIVE_DATA_URL : `data/${year}/simulation_replay.json`;
+  return year === LIVE_YEAR ? LIVE_DATA_URL : `${FILE_ROOT}data/${year}/simulation_replay.json`;
 }
 
 function initYearSelect() {
