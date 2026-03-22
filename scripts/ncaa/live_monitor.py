@@ -266,6 +266,53 @@ def reconstruct_history(matches, pre_tourney_teams, seed_model, seeds_by_weight,
     return history
 
 
+def scrape_and_update_penalties(year: int, current_penalties: dict, moments: list, curr_ranking: list) -> dict:
+    """
+    Scrape TrackWrestling for USC penalties, update team_penalties.json if
+    anything changed, and emit a Big Moment for any top-10 team newly penalized.
+    Returns the updated penalties dict.
+    """
+    try:
+        from scripts.scraping.scrape_team_penalties import scrape_penalties
+        scraped = scrape_penalties(year)
+    except Exception as e:
+        print(f"  [penalties] Scrape failed: {e}", file=sys.stderr)
+        return current_penalties
+
+    if scraped == current_penalties:
+        print("  [penalties] No change")
+        return current_penalties
+
+    # Detect new or changed penalties
+    top10 = set(curr_ranking[:10])
+    for team, adj in scraped.items():
+        prev = current_penalties.get(team, 0.0)
+        if adj != prev:
+            delta = adj - prev
+            print(f"  [penalties] NEW penalty: {team} {delta:+.1f} (total: {adj:+.1f})")
+            if team in top10:
+                moments.append({
+                    "type": "penalty",
+                    "match_n": 0,
+                    "round_label": "USC Penalty",
+                    "tag": "USC",
+                    "team": team,
+                    "delta": round(delta, 1),
+                    "total": round(adj, 1),
+                    "impacts": {team: round(delta, 1)},
+                    "winner_seed": None, "winner_name": "", "winner_team": team,
+                    "loser_seed": None, "loser_name": "", "loser_team": "",
+                    "result_type": "USC", "weight": None,
+                })
+
+    # Write updated penalties to disk
+    path = PROJECT_ROOT / "data" / str(year) / "ncaa-tourney" / "team_penalties.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(scraped, indent=2))
+    print(f"  [penalties] Updated team_penalties.json: {scraped}")
+    return scraped
+
+
 def load_team_penalties(year: int) -> dict:
     """Load manual team point penalties (e.g. unsportsmanlike conduct deductions)."""
     path = PROJECT_ROOT / "data" / str(year) / "ncaa-tourney" / "team_penalties.json"
@@ -407,6 +454,9 @@ def run_live(
     LIVE_DATA_PATH.write_text(json.dumps(snap))
     print(f"\nInitial live_data.json written.")
 
+    PENALTY_SCRAPE_INTERVAL = 3600  # seconds between penalty scrapes
+    last_penalty_scrape = 0.0  # force scrape on first cycle
+
     cycle = 0
     try:
         while True:
@@ -419,6 +469,14 @@ def run_live(
                 ok = scrape_and_parse(year)
                 if not ok:
                     print("  Scrape failed, using cached data")
+
+                # Hourly: scrape TW for USC penalties and auto-update team_penalties.json
+                now_ts = time.time()
+                if now_ts - last_penalty_scrape >= PENALTY_SCRAPE_INTERVAL:
+                    print("  Checking TW for USC penalties...")
+                    curr_ranking = [t for t, _ in sorted(prev_totals.items(), key=lambda x: -x[1])]
+                    penalties = scrape_and_update_penalties(year, penalties, moments, curr_ranking)
+                    last_penalty_scrape = now_ts
 
             # 2. Load current match state
             new_matches = load_matches(year)

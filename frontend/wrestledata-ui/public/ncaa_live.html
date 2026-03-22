@@ -212,6 +212,7 @@
   .tag-both   { background:rgba(156,39,176,.18); color:#ce93d8; border:1px solid rgba(156,39,176,.3); }
   .tag-none   { background:var(--border); color:var(--muted); }
   .tag-lb     { background:rgba(92,107,192,.25); color:#7986cb; border:1px solid rgba(92,107,192,.4); }
+  .tag-usc    { background:rgba(244,67,54,.18);  color:#ef5350; border:1px solid rgba(244,67,54,.3); }
   .moment-body { flex:1; min-width:0; }
   .moment-meta  { font-size:11px; color:var(--muted); margin-bottom:3px; }
   .moment-match { font-weight:600; font-size:13px; margin-bottom:4px; }
@@ -327,7 +328,7 @@ let refreshTimer = null;
 let countdownTimer = null;
 let selectedYear = YEARS[0];
 
-const LIVE_DATA_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+const LIVE_DATA_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:'
   ? 'live_data.json'
   : 'https://wrestledata-simple-production.up.railway.app/live_data.json';
 
@@ -406,6 +407,15 @@ function renderMoments(data) {
 
   const display = moments.slice().reverse().slice(0, 50);
   document.getElementById('moments-feed').innerHTML = display.map(m => {
+    if (m.type === 'penalty') {
+      return `<div class="moment-card">
+        <div class="moment-tag tag-usc">USC</div>
+        <div class="moment-body">
+          <div class="moment-meta">Unsportsmanlike Conduct Penalty</div>
+          <div class="moment-match"><b>${esc(m.team)}</b> — <span class="imp-neg">${m.delta.toFixed(1)} pts</span> (total penalty: ${m.total.toFixed(1)})</div>
+        </div>
+      </div>`;
+    }
     if (m.type === 'leaderboard') {
       const changesHtml = (m.changes || [])
         .map(c => `<div class="lb-change">${esc(c)}</div>`)
