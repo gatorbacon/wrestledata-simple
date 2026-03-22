@@ -41,8 +41,8 @@ def advancement_points_for_slot(slot: Slot) -> float:
         # Final doesn't give advancement points (only placement)
         return 0.0
     elif slot.bracket == "consol":
-        # Consolation bracket - any win gives 0.5
-        if slot.round in ["PIG", "R1", "R2", "R3", "R4", "QF", "SF", "PLACE"]:
+        # Consolation bracket - any win gives 0.5, except placement matches (no advancement pts)
+        if slot.round in ["PIG", "R1", "R2", "R3", "R4", "QF", "SF"]:
             return 0.5
         return 0.0
     

@@ -24,6 +24,33 @@ from xtp.engine.scoring import advancement_points_for_slot, placement_points
 
 WEIGHTS = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
 
+# Minimum placement points locked in for a wrestler whose next match is in these slots.
+# Based on bracket structure: e.g. if you're in Consi QF you're guaranteed at worst 8th place.
+_LOCKED_PLACEMENT_BY_SLOT = {
+    "C_F_0":    12.0,  # Championship Final → guaranteed 2nd (12 pts)
+    "CONS_3RD":  9.0,  # 3rd/4th place match → guaranteed 4th (9 pts)
+    "CONS_5TH":  6.0,  # 5th/6th place match → guaranteed 6th (6 pts)
+    "CONS_7TH":  3.0,  # 7th/8th place match → guaranteed 8th (3 pts)
+}
+_LOCKED_PLACEMENT_BY_PREFIX = [
+    ("C_SF_",    6.0),  # Champ SF → guaranteed 6th (6 pts)
+    ("CONS_SF_", 6.0),  # Consi SF → guaranteed 6th (6 pts)
+    ("CONS_QF_", 3.0),  # Consi QF → guaranteed 8th (3 pts)
+]
+
+
+def _locked_placement_pts(slot_id: Optional[str]) -> float:
+    """Return placement points already locked in for a wrestler about to wrestle slot_id."""
+    if not slot_id:
+        return 0.0
+    pts = _LOCKED_PLACEMENT_BY_SLOT.get(slot_id)
+    if pts is not None:
+        return pts
+    for prefix, p in _LOCKED_PLACEMENT_BY_PREFIX:
+        if slot_id.startswith(prefix):
+            return p
+    return 0.0
+
 
 # ---------------------------------------------------------------------------
 # Seed-aware BracketEngine subclass
@@ -622,6 +649,7 @@ class NCAATournamentEngine:
                 xtp_components = {}  # partial data — skip xtp_components for this weight
 
             wrestlers_out[str(weight)] = {}
+            eliminated = _get_eliminated(engine)
             for seed_int in range(1, 34):
                 seed_str = str(seed_int)
                 info = weight_info.get(seed_int, {})
@@ -629,14 +657,38 @@ class NCAATournamentEngine:
                 actual = self.actual_points[weight].get(seed_str, 0.0)
                 projected = projections.get(weight, {}).get(seed_str, 0.0)
                 aa_prob = aa_probs.get(weight, {}).get(seed_str, 0.0)
-                alive = seed_str not in _get_eliminated(engine)
+                alive = seed_str not in eliminated
+
+                # Compute "actual locked" — points that cannot decrease:
+                # - Eliminated: projected_total IS their final locked score
+                # - Placed 1st-8th (alive=True, no next slot): actual + exact placement pts
+                # - Still competing: actual + minimum guaranteed placement for next round
+                if not alive:
+                    actual_locked = projected
+                else:
+                    # Find next unresolved slot for this wrestler
+                    next_slot_id = None
+                    for slot_id in engine.slots:
+                        if slot_id in engine.deterministic_slots or slot_id.startswith("PLACE_"):
+                            continue
+                        dists = engine.slot_input_dists.get(slot_id, {})
+                        if seed_str in dists.get("A", {}) or seed_str in dists.get("B", {}):
+                            next_slot_id = slot_id
+                            break
+                    if next_slot_id is None:
+                        # Tournament over; wrestler landed in a PLACE_ terminal (top 8).
+                        # Add their exact placement points to locked actual.
+                        place = next((p for p, sid in engine.placements.items() if sid == seed_str), None)
+                        actual_locked = actual + (placement_points(place) if place else 0.0)
+                    else:
+                        actual_locked = actual + _locked_placement_pts(next_slot_id)
 
                 initial = (pre_projections or {}).get(weight, {}).get(seed_str, projected)
                 wrestlers_out[str(weight)][seed_str] = {
                     "name": info.get("name", f"Seed {seed_int}"),
                     "team": info.get("team", "Unknown"),
-                    "actual": round(actual, 2),
-                    "projected_remaining": round(projected - actual, 2),
+                    "actual": round(actual_locked, 2),
+                    "projected_remaining": round(max(0.0, projected - actual_locked), 2),
                     "projected_total": round(projected, 2),
                     "initial_projected": round(initial, 2),
                     "aa_prob": round(aa_prob, 4),
