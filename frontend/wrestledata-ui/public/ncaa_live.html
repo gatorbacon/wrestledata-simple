@@ -861,12 +861,20 @@ function renderMovers(data) {
 function renderLazarus(data) {
   const matches = data.sorted_matches || [];
 
-  // Round labels for consolation and medal rounds
+  // Round labels and advancement ranks for consolation rounds.
+  // Rank = how far they survived (higher = further). Used for sort order.
   const ROUND_LABEL = {
     'C_PIG': 'Consi 1', 'C_R1': 'Consi 1',
     'C_R2': 'Consi 2', 'C_R3': 'Consi 3', 'C_R4': 'Consi 4',
     'C_QF': 'Consi QF', 'C_SF': 'Consi SF',
-    '3rd': '3rd match', '5th': '5th match', '7th': '7th match',
+    '3rd': '3rd match',
+  };
+  // How many consolation wins before being eliminated (used to sort last survivors first)
+  const ROUND_RANK = {
+    'C_PIG': 0, 'C_R1': 0,
+    'C_R2': 1, 'C_R3': 2, 'C_R4': 3,
+    'C_QF': 4, 'C_SF': 5,
+    '3rd': 6,  // made it to the 3rd place match but lost
   };
 
   // Find all R1 losers (R32 + PIG)
@@ -900,14 +908,13 @@ function renderLazarus(data) {
     placementMap.set(`${m.loser_name}|${m.weight}`, places[1]);
   }
 
-  // Track first consolation loss for each R1 loser (any match after their R1 loss)
-  // This is when they were eliminated from Lazarus contention.
-  const elimRoundMap = new Map(); // "name|weight" → round label of first consolation loss
+  // Track first consolation loss for each R1 loser — the moment they're eliminated from Lazarus.
+  const elimRoundRawMap = new Map(); // "name|weight" → raw round string
   for (const m of matches) {
-    if (m.round === 'R32' || m.round === 'PIG') continue; // skip the R1 loss itself
+    if (m.round === 'R32' || m.round === 'PIG') continue;
     const key = `${m.loser_name}|${m.weight}`;
-    if (r1LossMap.has(key) && !elimRoundMap.has(key)) {
-      elimRoundMap.set(key, ROUND_LABEL[m.round] || m.round);
+    if (r1LossMap.has(key) && !elimRoundRawMap.has(key)) {
+      elimRoundRawMap.set(key, m.round);
     }
   }
 
@@ -915,12 +922,16 @@ function renderLazarus(data) {
   const candidates = [];
   for (const [key, info] of r1LossMap.entries()) {
     const placement = placementMap.get(key) ?? null;
-    const elimRound = elimRoundMap.get(key) ?? null;
-    // Alive = hasn't lost in consolation and hasn't finished (no placement)
-    const alive = !elimRound && !placement;
-    candidates.push({...info, placement, elimRound, alive});
+    const elimRoundRaw = elimRoundRawMap.get(key) ?? null;
+    const elimRound = elimRoundRaw ? (ROUND_LABEL[elimRoundRaw] || elimRoundRaw) : null;
+    const alive = !elimRoundRaw && !placement;
+    const advRank = placement === 3 ? 99          // winner
+      : alive                       ? 98          // still alive
+      : (ROUND_RANK[elimRoundRaw] ?? -1);         // how far they survived
+    candidates.push({...info, placement, elimRound, alive, advRank});
   }
-  candidates.sort((a, b) => a.seed - b.seed || a.weight - b.weight);
+  // Sort: furthest survivors first; within same rank, best seed (lowest #) first
+  candidates.sort((a, b) => b.advRank - a.advRank || a.seed - b.seed || a.weight - b.weight);
 
   // Lazarus winner: highest-seeded R1 loser who finished exactly 3rd. No fallback.
   const winner = candidates.find(c => c.placement === 3) ?? null;
@@ -943,20 +954,14 @@ function renderLazarus(data) {
     document.getElementById('lazarus-winner-label').textContent = 'No winner this year';
   }
 
-  // Order: winner first, then alive (by seed), then eliminated (by seed)
   const isWinner = c => winner && c.name === winner.name && c.weight === winner.weight;
-  const ordered = [
-    ...candidates.filter(c => isWinner(c)),
-    ...candidates.filter(c => !isWinner(c) && c.alive),
-    ...candidates.filter(c => !isWinner(c) && !c.alive),
-  ];
 
   function placeStr(p) {
     if (!p) return '';
     return p + ({1:'st',2:'nd',3:'rd'}[p] || 'th');
   }
 
-  document.getElementById('lazarus-grid').innerHTML = ordered.map(c => {
+  document.getElementById('lazarus-grid').innerHTML = candidates.map(c => {
     const isW = isWinner(c);
     const cardCls = isW ? 'winner' : c.alive ? 'alive' : 'out';
 
