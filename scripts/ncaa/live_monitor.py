@@ -218,16 +218,19 @@ def apply_matches_to_engine(engine: NCAATournamentEngine, matches: list) -> int:
     return applied
 
 
-def reconstruct_history(matches, pre_tourney_teams, seed_model, seeds_by_weight):
+def reconstruct_history(matches, pre_tourney_teams, seed_model, seeds_by_weight, penalties=None):
     """Rebuild per-match projection snapshots from a complete match list.
 
     Called after a fresh start (ephemeral filesystem restart) once all current
     matches have been scraped, so the chart has full per-match granularity.
     """
+    penalties = penalties or {}
     history = [{
         "round": "pre",
         "match_n": 0,
-        "projections": {t: round(v, 2) for t, v in pre_tourney_teams.items()},
+        "projections": apply_penalties_to_projections(
+            {t: round(v, 2) for t, v in pre_tourney_teams.items()}, penalties
+        ),
     }]
     if not matches:
         return history
@@ -254,7 +257,9 @@ def reconstruct_history(matches, pre_tourney_teams, seed_model, seeds_by_weight)
                 "result_type": match.get("result_type"),
                 "score": match.get("score"),
             },
-            "projections": {t: round(v, 2) for t, v in totals.items()},
+            "projections": apply_penalties_to_projections(
+                {t: round(v, 2) for t, v in totals.items()}, penalties
+            ),
         })
 
     print(f"  Reconstructed {len(history)} history entries from {len(matches)} matches")
@@ -271,6 +276,17 @@ def load_team_penalties(year: int) -> dict:
     except Exception as e:
         print(f"WARNING: could not load team_penalties.json: {e}", file=sys.stderr)
         return {}
+
+
+def apply_penalties_to_projections(projections: dict, penalties: dict) -> dict:
+    """Return a copy of projections with team penalties applied."""
+    if not penalties:
+        return projections
+    result = dict(projections)
+    for team, adj in penalties.items():
+        if team in result:
+            result[team] = round(result[team] + adj, 2)
+    return result
 
 
 def build_live_data(
@@ -350,12 +366,17 @@ def run_live(
         except Exception:
             pass
 
+    # Load penalties once — used for history and reconstruct_history
+    penalties = load_team_penalties(year)
+
     # Ensure history always has the pre-tourney baseline as its first entry
     if not history:
         history = [{
             "round": "pre",
             "match_n": 0,
-            "projections": {t: round(v, 2) for t, v in pre_tourney_teams.items()},
+            "projections": apply_penalties_to_projections(
+                {t: round(v, 2) for t, v in pre_tourney_teams.items()}, penalties
+            ),
         }]
 
     # Pre-populate known_matches from disk so the first cycle doesn't replay
@@ -474,7 +495,9 @@ def run_live(
                             "result_type": m.get("result_type"),
                             "score": m.get("score"),
                         },
-                        "projections": {t: round(v, 2) for t, v in curr_totals.items()},
+                        "projections": apply_penalties_to_projections(
+                            {t: round(v, 2) for t, v in curr_totals.items()}, penalties
+                        ),
                     })
 
                 # Sync known_matches to full new_matches list (catches any we missed)
@@ -493,7 +516,7 @@ def run_live(
                     # Ephemeral restart: rebuild full round-by-round history from
                     # all current matches so the chart doesn't lose earlier rounds
                     history = reconstruct_history(
-                        known_matches, pre_tourney_teams, seed_model, seeds_by_weight
+                        known_matches, pre_tourney_teams, seed_model, seeds_by_weight, penalties
                     )
                     is_fresh_start = False
                 cur_sorted = sorted(known_matches, key=lambda m: (round_rank_map.get(m.get("round", ""), 99), m.get("weight", 0)))
