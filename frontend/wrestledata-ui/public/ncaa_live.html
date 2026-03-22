@@ -372,17 +372,19 @@ let refreshTimer = null;
 let countdownTimer = null;
 let selectedYear = YEARS[0];
 
-// When opened as file:// the HTML is 3 dirs deep (frontend/wrestledata-ui/public/)
-// so data files at the repo root need a ../../../ prefix.
-const IS_FILE_PROTO = window.location.protocol === 'file:';
-const FILE_ROOT = IS_FILE_PROTO ? '../../../' : '';
+// HTML lives at frontend/wrestledata-ui/public/ — 3 dirs deep from repo root.
+// Data files (live_data.json, data/{year}/...) are at the repo root.
+// Both file:// and local http server need ../../../ to reach them.
+const IS_LOCAL = window.location.protocol === 'file:' ||
+  window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const LOCAL_ROOT = IS_LOCAL ? '../../../' : '';
 
-const LIVE_DATA_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || IS_FILE_PROTO
-  ? FILE_ROOT + 'live_data.json'
+const LIVE_DATA_URL = IS_LOCAL
+  ? LOCAL_ROOT + 'live_data.json'
   : 'https://wrestledata-simple-production.up.railway.app/live_data.json';
 
 function dataUrlForYear(year) {
-  return year === LIVE_YEAR ? LIVE_DATA_URL : `${FILE_ROOT}data/${year}/simulation_replay.json`;
+  return year === LIVE_YEAR ? LIVE_DATA_URL : `${LOCAL_ROOT}data/${year}/simulation_replay.json`;
 }
 
 function initYearSelect() {
