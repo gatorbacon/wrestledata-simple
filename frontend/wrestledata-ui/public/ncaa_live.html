@@ -221,6 +221,40 @@
   .imp-neg { color:var(--red);   font-weight:600; }
   .moment-changes { display:flex; flex-direction:column; gap:3px; }
   .lb-change { font-size:13px; font-weight:600; }
+
+  /* Lazarus Award */
+  .lazarus-section { margin-top: 24px; }
+  .lazarus-desc { font-size:12px; color:var(--muted); padding: 10px 18px; border-bottom: 1px solid var(--border); }
+  .lazarus-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; padding: 12px 16px; }
+  .lazarus-card {
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .lazarus-card.winner  { border-color: #ffd54f; background: rgba(255,213,79,.07); }
+  .lazarus-card.alive   { border-color: var(--green); background: rgba(76,175,80,.07); }
+  .lazarus-card.out     { opacity: 0.45; }
+  .lazarus-seed { font-size: 18px; font-weight: 800; width: 32px; text-align: center; flex-shrink: 0; }
+  .lazarus-card.winner  .lazarus-seed { color: #ffd54f; }
+  .lazarus-card.alive   .lazarus-seed { color: var(--green); }
+  .lazarus-info { flex: 1; min-width: 0; }
+  .lazarus-name { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .lazarus-sub  { font-size: 11px; color: var(--muted); }
+  .lazarus-badge {
+    flex-shrink: 0;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 3px 7px;
+  }
+  .badge-winner  { background: rgba(255,213,79,.2); color: #ffd54f; }
+  .badge-alive   { background: rgba(76,175,80,.2);  color: var(--green); }
+  .badge-place   { background: rgba(92,107,192,.2); color: #7986cb; }
+  .badge-out     { background: rgba(123,127,158,.15); color: var(--muted); }
 </style>
 </head>
 <body>
@@ -301,6 +335,16 @@
         <h3 class="section-label">By Weight</h3>
         <div class="weights-section" id="weights-section"></div>
       </div>
+    </div>
+
+    <!-- Lazarus Award -->
+    <div class="lazarus-section card" id="lazarus-card">
+      <div class="card-header">
+        Lazarus Award
+        <span id="lazarus-winner-label" style="color:var(--muted);font-weight:400;font-size:11px;margin-left:8px"></span>
+      </div>
+      <div class="lazarus-desc" id="lazarus-desc"></div>
+      <div class="lazarus-grid" id="lazarus-grid"></div>
     </div>
   </div>
 </main>
@@ -392,6 +436,7 @@ function renderAll(data) {
   renderMovers(data);
   renderTeams(data, data.pre_tourney_predictions || {});
   renderWeights(data, teamRanks);
+  renderLazarus(data);
 }
 
 function renderMoments(data) {
@@ -801,6 +846,132 @@ function renderMovers(data) {
   const noData = '<div style="color:var(--muted);font-size:12px;padding:4px 0">No data yet.</div>';
   document.getElementById('gainers-list').innerHTML = gainers.length ? gainers.map(rowHtml).join('') : noData;
   document.getElementById('losers-list').innerHTML  = losers.length  ? losers.map(rowHtml).join('')  : noData;
+}
+
+// ============================================================
+// Lazarus Award
+// ============================================================
+function renderLazarus(data) {
+  const matches = data.sorted_matches || [];
+  const wrestlers = data.wrestlers || {};
+
+  // Find all R1 losers (R32 + PIG)
+  const r1LossMap = new Map(); // "name|weight" → {seed, name, team, weight, lostTo}
+  for (const m of matches) {
+    if (m.round === 'R32' || m.round === 'PIG') {
+      const key = `${m.loser_name}|${m.weight}`;
+      r1LossMap.set(key, {
+        seed: m.loser_seed,
+        name: m.loser_name,
+        team: m.loser_team,
+        weight: m.weight,
+        lostTo: `#${m.winner_seed} ${m.winner_name}`,
+      });
+    }
+  }
+
+  if (!r1LossMap.size) {
+    document.getElementById('lazarus-card').style.display = 'none';
+    return;
+  }
+  document.getElementById('lazarus-card').style.display = '';
+
+  // Compute placement from medal-round matches
+  const placementMap = new Map(); // "name|weight" → place number
+  const PLACE_ROUNDS = {Final: [1, 2], '3rd': [3, 4], '5th': [5, 6], '7th': [7, 8]};
+  for (const m of matches) {
+    const places = PLACE_ROUNDS[m.round];
+    if (!places) continue;
+    placementMap.set(`${m.winner_name}|${m.weight}`, places[0]);
+    placementMap.set(`${m.loser_name}|${m.weight}`, places[1]);
+  }
+
+  // Map wrestler entry by name|weight for alive status
+  const wrestlerAlive = new Map();
+  for (const [wt, wtData] of Object.entries(wrestlers)) {
+    for (const w of Object.values(wtData)) {
+      if (w.name) wrestlerAlive.set(`${w.name}|${wt}`, w.alive);
+    }
+  }
+
+  // Build candidate list
+  const candidates = [];
+  for (const [key, info] of r1LossMap.entries()) {
+    const placement = placementMap.get(key) ?? null;
+    const alive = wrestlerAlive.get(key) ?? false;
+    candidates.push({...info, placement, alive});
+  }
+  // Sort: best seed first, then by weight
+  candidates.sort((a, b) => a.seed - b.seed || a.weight - b.weight);
+
+  // Determine award winner
+  // Primary: highest-seeded (lowest seed #) R1 loser who finished 3rd
+  const thirds = candidates.filter(c => c.placement === 3);
+  let winner = thirds.length ? thirds[0] : null;
+  // Fallback: highest-seeded R1 loser who earned All-American (top 8)
+  const fallbackWinner = !winner
+    ? candidates.filter(c => c.placement !== null && c.placement <= 8)[0] ?? null
+    : null;
+  const effectiveWinner = winner || fallbackWinner;
+
+  // Build description
+  const isLive = selectedYear === LIVE_YEAR;
+  const aliveCount = candidates.filter(c => c.alive).length;
+  let desc = 'Given to the highest-seeded wrestler who loses in the first round (R32/PIG) and comes back to finish 3rd place.';
+  if (isLive && aliveCount > 0) {
+    desc += ` ${aliveCount} candidate${aliveCount !== 1 ? 's' : ''} still alive.`;
+  }
+  document.getElementById('lazarus-desc').textContent = desc;
+
+  // Winner label in header
+  if (effectiveWinner) {
+    const isFallback = !winner;
+    const label = isFallback
+      ? `Fallback winner — #${effectiveWinner.seed} ${effectiveWinner.name} (placed ${effectiveWinner.placement})`
+      : `Winner — #${effectiveWinner.seed} ${effectiveWinner.name} · ${effectiveWinner.weight} lbs`;
+    document.getElementById('lazarus-winner-label').textContent = label;
+  } else if (isLive) {
+    document.getElementById('lazarus-winner-label').textContent = 'No winner yet';
+  } else {
+    document.getElementById('lazarus-winner-label').textContent = 'No qualifier this year';
+  }
+
+  // Render cards — winner first, then alive sorted by seed, then eliminated
+  const isWinnerKey = c => effectiveWinner && c.name === effectiveWinner.name && c.weight === effectiveWinner.weight;
+  const ordered = [
+    ...candidates.filter(c => isWinnerKey(c)),
+    ...candidates.filter(c => !isWinnerKey(c) && c.alive),
+    ...candidates.filter(c => !isWinnerKey(c) && !c.alive),
+  ];
+
+  function placeStr(p) {
+    if (!p) return '';
+    const suf = {1:'st',2:'nd',3:'rd'}[p] || 'th';
+    return `${p}${suf}`;
+  }
+
+  document.getElementById('lazarus-grid').innerHTML = ordered.map(c => {
+    const isW = isWinnerKey(c);
+    const cardCls = isW ? 'winner' : c.alive ? 'alive' : 'out';
+    let badgeCls, badgeText;
+    if (isW) {
+      badgeCls = 'badge-winner'; badgeText = winner ? '🏆 3rd place' : `🏆 ${placeStr(c.placement)}`;
+    } else if (c.alive) {
+      badgeCls = 'badge-alive'; badgeText = 'Still alive';
+    } else if (c.placement) {
+      badgeCls = 'badge-place'; badgeText = placeStr(c.placement);
+    } else {
+      badgeCls = 'badge-out'; badgeText = 'Eliminated';
+    }
+    return `<div class="lazarus-card ${cardCls}">
+      <div class="lazarus-seed">${c.seed}</div>
+      <div class="lazarus-info">
+        <div class="lazarus-name">${esc(c.name)}</div>
+        <div class="lazarus-sub">${esc(c.team)} · ${c.weight} lbs · Lost to ${esc(c.lostTo)}</div>
+      </div>
+      <div class="lazarus-badge ${badgeCls}">${badgeText}</div>
+    </div>`;
+  }).join('');
 }
 
 // ============================================================
