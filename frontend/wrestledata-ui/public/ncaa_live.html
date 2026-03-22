@@ -860,7 +860,14 @@ function renderMovers(data) {
 // ============================================================
 function renderLazarus(data) {
   const matches = data.sorted_matches || [];
-  const wrestlers = data.wrestlers || {};
+
+  // Round labels for consolation and medal rounds
+  const ROUND_LABEL = {
+    'C_PIG': 'Consi 1', 'C_R1': 'Consi 1',
+    'C_R2': 'Consi 2', 'C_R3': 'Consi 3', 'C_R4': 'Consi 4',
+    'C_QF': 'Consi QF', 'C_SF': 'Consi SF',
+    '3rd': '3rd match', '5th': '5th match', '7th': '7th match',
+  };
 
   // Find all R1 losers (R32 + PIG)
   const r1LossMap = new Map(); // "name|weight" → {seed, name, team, weight, lostTo}
@@ -883,7 +890,7 @@ function renderLazarus(data) {
   }
   document.getElementById('lazarus-card').style.display = '';
 
-  // Compute placement from medal-round matches
+  // Compute placement from medal-round results
   const placementMap = new Map(); // "name|weight" → place number
   const PLACE_ROUNDS = {Final: [1, 2], '3rd': [3, 4], '5th': [5, 6], '7th': [7, 8]};
   for (const m of matches) {
@@ -893,90 +900,88 @@ function renderLazarus(data) {
     placementMap.set(`${m.loser_name}|${m.weight}`, places[1]);
   }
 
-  // Map wrestler entry by name|weight for alive status
-  const wrestlerAlive = new Map();
-  for (const [wt, wtData] of Object.entries(wrestlers)) {
-    for (const w of Object.values(wtData)) {
-      if (w.name) wrestlerAlive.set(`${w.name}|${wt}`, w.alive);
+  // Track first consolation loss for each R1 loser (any match after their R1 loss)
+  // This is when they were eliminated from Lazarus contention.
+  const elimRoundMap = new Map(); // "name|weight" → round label of first consolation loss
+  for (const m of matches) {
+    if (m.round === 'R32' || m.round === 'PIG') continue; // skip the R1 loss itself
+    const key = `${m.loser_name}|${m.weight}`;
+    if (r1LossMap.has(key) && !elimRoundMap.has(key)) {
+      elimRoundMap.set(key, ROUND_LABEL[m.round] || m.round);
     }
   }
 
-  // Build candidate list
+  // Build candidate list — "alive" means not yet lost any consolation match AND no placement yet
   const candidates = [];
   for (const [key, info] of r1LossMap.entries()) {
     const placement = placementMap.get(key) ?? null;
-    const alive = wrestlerAlive.get(key) ?? false;
-    candidates.push({...info, placement, alive});
+    const elimRound = elimRoundMap.get(key) ?? null;
+    // Alive = hasn't lost in consolation and hasn't finished (no placement)
+    const alive = !elimRound && !placement;
+    candidates.push({...info, placement, elimRound, alive});
   }
-  // Sort: best seed first, then by weight
   candidates.sort((a, b) => a.seed - b.seed || a.weight - b.weight);
 
-  // Determine award winner
-  // Primary: highest-seeded (lowest seed #) R1 loser who finished 3rd
-  const thirds = candidates.filter(c => c.placement === 3);
-  let winner = thirds.length ? thirds[0] : null;
-  // Fallback: highest-seeded R1 loser who earned All-American (top 8)
-  const fallbackWinner = !winner
-    ? candidates.filter(c => c.placement !== null && c.placement <= 8)[0] ?? null
-    : null;
-  const effectiveWinner = winner || fallbackWinner;
+  // Lazarus winner: highest-seeded R1 loser who finished exactly 3rd. No fallback.
+  const winner = candidates.find(c => c.placement === 3) ?? null;
 
-  // Build description
-  const isLive = selectedYear === LIVE_YEAR;
+  // Header description
   const aliveCount = candidates.filter(c => c.alive).length;
-  let desc = 'Given to the highest-seeded wrestler who loses in the first round (R32/PIG) and comes back to finish 3rd place.';
-  if (isLive && aliveCount > 0) {
+  let desc = 'Given to the highest-seeded wrestler who loses in the first round (R32/PIG) and comes back to finish 3rd place. No consolation prize — 3rd or nothing.';
+  if (aliveCount > 0) {
     desc += ` ${aliveCount} candidate${aliveCount !== 1 ? 's' : ''} still alive.`;
   }
   document.getElementById('lazarus-desc').textContent = desc;
 
-  // Winner label in header
-  if (effectiveWinner) {
-    const isFallback = !winner;
-    const label = isFallback
-      ? `Fallback winner — #${effectiveWinner.seed} ${effectiveWinner.name} (placed ${effectiveWinner.placement})`
-      : `Winner — #${effectiveWinner.seed} ${effectiveWinner.name} · ${effectiveWinner.weight} lbs`;
-    document.getElementById('lazarus-winner-label').textContent = label;
-  } else if (isLive) {
+  // Header winner label
+  if (winner) {
+    document.getElementById('lazarus-winner-label').textContent =
+      `Winner — #${winner.seed} ${winner.name} · ${winner.weight} lbs`;
+  } else if (aliveCount > 0) {
     document.getElementById('lazarus-winner-label').textContent = 'No winner yet';
   } else {
-    document.getElementById('lazarus-winner-label').textContent = 'No qualifier this year';
+    document.getElementById('lazarus-winner-label').textContent = 'No winner this year';
   }
 
-  // Render cards — winner first, then alive sorted by seed, then eliminated
-  const isWinnerKey = c => effectiveWinner && c.name === effectiveWinner.name && c.weight === effectiveWinner.weight;
+  // Order: winner first, then alive (by seed), then eliminated (by seed)
+  const isWinner = c => winner && c.name === winner.name && c.weight === winner.weight;
   const ordered = [
-    ...candidates.filter(c => isWinnerKey(c)),
-    ...candidates.filter(c => !isWinnerKey(c) && c.alive),
-    ...candidates.filter(c => !isWinnerKey(c) && !c.alive),
+    ...candidates.filter(c => isWinner(c)),
+    ...candidates.filter(c => !isWinner(c) && c.alive),
+    ...candidates.filter(c => !isWinner(c) && !c.alive),
   ];
 
   function placeStr(p) {
     if (!p) return '';
-    const suf = {1:'st',2:'nd',3:'rd'}[p] || 'th';
-    return `${p}${suf}`;
+    return p + ({1:'st',2:'nd',3:'rd'}[p] || 'th');
   }
 
   document.getElementById('lazarus-grid').innerHTML = ordered.map(c => {
-    const isW = isWinnerKey(c);
+    const isW = isWinner(c);
     const cardCls = isW ? 'winner' : c.alive ? 'alive' : 'out';
-    let badgeCls, badgeText;
+
+    let badges = '';
     if (isW) {
-      badgeCls = 'badge-winner'; badgeText = winner ? '🏆 3rd place' : `🏆 ${placeStr(c.placement)}`;
+      badges = `<div class="lazarus-badge badge-winner">🏆 3rd place</div>`;
     } else if (c.alive) {
-      badgeCls = 'badge-alive'; badgeText = 'Still alive';
-    } else if (c.placement) {
-      badgeCls = 'badge-place'; badgeText = placeStr(c.placement);
+      badges = `<div class="lazarus-badge badge-alive">Still alive</div>`;
     } else {
-      badgeCls = 'badge-out'; badgeText = 'Eliminated';
+      // Always show elimination round
+      const elimLabel = c.elimRound || 'Eliminated';
+      badges = `<div class="lazarus-badge badge-out">Elim. ${esc(elimLabel)}</div>`;
+      // If they placed, also show the placement
+      if (c.placement && c.placement !== 3) {
+        badges += ` <div class="lazarus-badge badge-place">${placeStr(c.placement)}</div>`;
+      }
     }
+
     return `<div class="lazarus-card ${cardCls}">
       <div class="lazarus-seed">${c.seed}</div>
       <div class="lazarus-info">
         <div class="lazarus-name">${esc(c.name)}</div>
         <div class="lazarus-sub">${esc(c.team)} · ${c.weight} lbs · Lost to ${esc(c.lostTo)}</div>
       </div>
-      <div class="lazarus-badge ${badgeCls}">${badgeText}</div>
+      <div style="display:flex;gap:4px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end">${badges}</div>
     </div>`;
   }).join('');
 }
