@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCAA D1 Wrestling — Team Leaderboard</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+.top-nav {
+  background: #1a1a2e;
+  padding: 0 32px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  height: 48px;
+}
+.nav-link {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 5px;
+  transition: background 0.15s;
+}
+.nav-link:hover { background: rgba(255,255,255,0.1); color: #fff; }
+.nav-link.active { background: rgba(255,255,255,0.15); color: #fff; }
+.nav-dropdown { position: relative; display: flex; align-items: center; }
+.nav-dropdown-trigger { cursor: default; user-select: none; }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1a1a2e;
+  border-top: 2px solid rgba(255,255,255,0.12);
+  min-width: 210px;
+  z-index: 200;
+  border-radius: 0 0 7px 7px;
+  padding: 4px 0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+.nav-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-item {
+  display: block;
+  padding: 9px 18px;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.dropdown-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
+.dropdown-item.active { color: #fff; background: rgba(255,255,255,0.13); }
+.page-body { padding: 32px 24px; }
+.report-header { text-align: center; margin-bottom: 40px; }
+.report-header h1 {
+  font-size: 2rem; font-weight: 700; color: #1a1a2e; letter-spacing: -0.5px;
+}
+.report-header p { color: #666; margin-top: 6px; font-size: 0.95rem; }
+.section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section h2 {
+  font-size: 1.35rem; font-weight: 600; color: #1a1a2e;
+  margin-bottom: 6px; border-bottom: 2px solid #e8ecf0; padding-bottom: 10px;
+}
+.section .subtitle { color: #666; font-size: 0.9rem; margin-bottom: 20px; }
+.two-col {
+  display: grid; grid-template-columns: 1fr 2fr; gap: 28px; align-items: start;
+}
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.data-table thead th {
+  background: #1a1a2e; color: #fff; padding: 9px 14px;
+  text-align: left; font-weight: 500; letter-spacing: 0.3px;
+}
+.data-table tbody tr:nth-child(even) { background: #f7f9fb; }
+.data-table tbody tr:hover { background: #eef2f7; }
+.data-table tbody td { padding: 7px 14px; border-bottom: 1px solid #ebebeb; }
+.chart-container { width: 100%; }
+</style>
+</head>
+<body>
+<nav class="top-nav">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="ncaa_live.html" class="nav-link">Live Tracker</a>
+  <div class="nav-dropdown">
+    <span class="nav-link nav-dropdown-trigger active">Reports &#9662;</span>
+    <div class="dropdown-menu">
+<a href="ncaa_report.html" class="dropdown-item">Seed Analysis</a>
+<a href="ncaa_scoring_trends.html" class="dropdown-item">Scoring Trends</a>
+<a href="ncaa_team_leaderboard.html" class="dropdown-item active">Team Leaderboard</a>
+<a href="ncaa_team_report.html" class="dropdown-item">Team Analysis</a>
+<a href="ncaa_conf_leaderboard.html" class="dropdown-item">Conference Leaderboard</a>
+<a href="ncaa_conf_analysis.html" class="dropdown-item">Conference Analysis</a>
+    </div>
+  </div>
+</nav>
+<div class="page-body">
+
+
+<style>
+.controls-bar {
+  display: flex; align-items: center; gap: 20px; margin-bottom: 24px; flex-wrap: wrap;
+}
+.controls-bar label { font-weight: 600; color: #1a1a2e; font-size: 1rem; }
+.controls-bar input[type=number] {
+  width: 80px; padding: 7px 10px; border-radius: 6px;
+  border: 1px solid #ccd0d8; font-size: 0.95rem; text-align: center;
+}
+.controls-bar input[type=number]:focus { outline: 2px solid #1f77b4; }
+#team-count { font-size: 0.9rem; color: #888; font-style: italic; }
+</style>
+
+<div class="report-header">
+  <h1>Team Leaderboard</h1>
+  <p>All-time team performance vs. the overall average placement for each seed (2013–2026).</p>
+</div>
+
+<div class="section">
+  <div class="controls-bar">
+    <label for="min-n">Minimum wrestlers:</label>
+    <input type="number" id="min-n" value="10" min="1" max="999">
+    <span id="team-count"></span>
+  </div>
+
+  <p class="subtitle" style="margin-bottom:20px">
+    <span style="color:#27ae60;font-weight:600">Green</span> = outperformed the field for their seeds &nbsp;·&nbsp;
+    <span style="color:#f0a500;font-weight:600">Amber</span> = underperformed &nbsp;·&nbsp;
+    Δ = how many placement spots better (+) or worse (−) than the field average at each seed
+  </p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start">
+    <div id="leaderboard-chart"></div>
+    <div id="pct-chart"></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2 style="margin-bottom:8px">Performance Matrix</h2>
+  <p class="subtitle" style="margin-bottom:16px">
+    Both metrics on one chart. Bubble size = number of wrestlers (n).
+    Color indicates quadrant:
+    <span style="color:#27ae60;font-weight:600">green</span> = consistently overperform,
+    <span style="color:#e74c3c;font-weight:600">red</span> = consistently underperform,
+    <span style="color:#f0a500;font-weight:600">amber</span> = beat avg often but slight negative delta,
+    <span style="color:#3498db;font-weight:600">blue</span> = positive avg delta but inconsistent.
+  </p>
+  <div id="quadrant-chart"></div>
+</div>
+
+<div class="section">
+  <h2 style="margin-bottom:14px">Full Rankings Table</h2>
+  <p class="subtitle" style="margin-bottom:14px">Sorted by Avg Δ (best first). n shown in team name.</p>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Team</th>
+        <th>Avg Δ vs. Field</th>
+        <th>% Beat Average</th>
+      </tr>
+    </thead>
+    <tbody id="leaderboard-table-body"></tbody>
+  </table>
+</div>
+
+
+<script>
+const ALL_TEAM_SUMMARIES = [{"team": "Stanford", "n": 56, "avg_delta": -2.383, "pct_better": 64.3}, {"team": "Boise State", "n": 7, "avg_delta": -2.068, "pct_better": 71.4}, {"team": "Nebraska", "n": 92, "avg_delta": -2.059, "pct_better": 68.5}, {"team": "Indiana", "n": 38, "avg_delta": -1.637, "pct_better": 55.3}, {"team": "Minnesota", "n": 97, "avg_delta": -1.593, "pct_better": 67.0}, {"team": "Ohio State", "n": 102, "avg_delta": -1.589, "pct_better": 68.6}, {"team": "Michigan", "n": 83, "avg_delta": -1.505, "pct_better": 66.3}, {"team": "Northwestern", "n": 53, "avg_delta": -1.391, "pct_better": 56.6}, {"team": "Penn State", "n": 112, "avg_delta": -1.316, "pct_better": 82.1}, {"team": "Oklahoma State", "n": 113, "avg_delta": -1.205, "pct_better": 73.5}, {"team": "Iowa", "n": 111, "avg_delta": -1.058, "pct_better": 66.7}, {"team": "Cornell", "n": 76, "avg_delta": -0.979, "pct_better": 64.5}, {"team": "Little Rock", "n": 15, "avg_delta": -0.904, "pct_better": 53.3}, {"team": "Wyoming", "n": 51, "avg_delta": -0.733, "pct_better": 56.9}, {"team": "Purdue", "n": 50, "avg_delta": -0.636, "pct_better": 56.0}, {"team": "California Baptist", "n": 3, "avg_delta": -0.521, "pct_better": 33.3}, {"team": "The Citadel", "n": 13, "avg_delta": -0.393, "pct_better": 53.8}, {"team": "Northern Iowa", "n": 72, "avg_delta": -0.379, "pct_better": 59.7}, {"team": "Pittsburgh", "n": 59, "avg_delta": -0.375, "pct_better": 54.2}, {"team": "Rider", "n": 38, "avg_delta": -0.275, "pct_better": 44.7}, {"team": "Virginia Tech", "n": 98, "avg_delta": -0.243, "pct_better": 59.2}, {"team": "Duke", "n": 17, "avg_delta": -0.229, "pct_better": 58.8}, {"team": "Illinois", "n": 61, "avg_delta": -0.218, "pct_better": 60.7}, {"team": "South Dakota State", "n": 51, "avg_delta": -0.154, "pct_better": 52.9}, {"team": "Rutgers", "n": 64, "avg_delta": -0.147, "pct_better": 53.1}, {"team": "West Virginia", "n": 39, "avg_delta": -0.117, "pct_better": 38.5}, {"team": "Arizona State", "n": 59, "avg_delta": -0.098, "pct_better": 55.9}, {"team": "North Carolina", "n": 59, "avg_delta": -0.031, "pct_better": 52.5}, {"team": "Missouri", "n": 95, "avg_delta": -0.03, "pct_better": 50.5}, {"team": "Maryland", "n": 33, "avg_delta": 0.049, "pct_better": 48.5}, {"team": "LIU", "n": 1, "avg_delta": 0.079, "pct_better": 0.0}, {"team": "George Mason", "n": 15, "avg_delta": 0.088, "pct_better": 53.3}, {"team": "Penn", "n": 49, "avg_delta": 0.092, "pct_better": 44.9}, {"team": "Wisconsin", "n": 63, "avg_delta": 0.19, "pct_better": 52.4}, {"team": "Lock Haven", "n": 33, "avg_delta": 0.198, "pct_better": 45.5}, {"team": "CSU Bakersfield", "n": 14, "avg_delta": 0.25, "pct_better": 42.9}, {"team": "Iowa State", "n": 74, "avg_delta": 0.266, "pct_better": 59.5}, {"team": "Brown", "n": 11, "avg_delta": 0.286, "pct_better": 36.4}, {"team": "Fresno State", "n": 7, "avg_delta": 0.317, "pct_better": 42.9}, {"team": "Oregon State", "n": 61, "avg_delta": 0.363, "pct_better": 52.5}, {"team": "Princeton", "n": 35, "avg_delta": 0.386, "pct_better": 42.9}, {"team": "North Dakota State", "n": 41, "avg_delta": 0.387, "pct_better": 48.8}, {"team": "Oklahoma", "n": 63, "avg_delta": 0.392, "pct_better": 42.9}, {"team": "Lehigh", "n": 77, "avg_delta": 0.442, "pct_better": 45.5}, {"team": "Columbia", "n": 30, "avg_delta": 0.509, "pct_better": 33.3}, {"team": "Old Dominion", "n": 15, "avg_delta": 0.53, "pct_better": 46.7}, {"team": "Edinboro", "n": 33, "avg_delta": 0.54, "pct_better": 51.5}, {"team": "Utah Valley", "n": 26, "avg_delta": 0.56, "pct_better": 38.5}, {"team": "Hofstra", "n": 18, "avg_delta": 0.601, "pct_better": 38.9}, {"team": "Northern Illinois", "n": 20, "avg_delta": 0.68, "pct_better": 50.0}, {"team": "SIU Edwardsville", "n": 11, "avg_delta": 0.877, "pct_better": 63.6}, {"team": "Virginia", "n": 54, "avg_delta": 0.906, "pct_better": 44.4}, {"team": "Air Force", "n": 19, "avg_delta": 0.935, "pct_better": 52.6}, {"team": "Clarion", "n": 11, "avg_delta": 0.939, "pct_better": 27.3}, {"team": "NC State", "n": 82, "avg_delta": 0.95, "pct_better": 51.2}, {"team": "Franklin & Marshall", "n": 8, "avg_delta": 1.107, "pct_better": 25.0}, {"team": "American", "n": 19, "avg_delta": 1.185, "pct_better": 31.6}, {"team": "Morgan State", "n": 2, "avg_delta": 1.21, "pct_better": 0.0}, {"team": "Kent State", "n": 20, "avg_delta": 1.217, "pct_better": 35.0}, {"team": "Navy", "n": 42, "avg_delta": 1.23, "pct_better": 40.5}, {"team": "Cal Poly", "n": 26, "avg_delta": 1.412, "pct_better": 38.5}, {"team": "Buffalo", "n": 16, "avg_delta": 1.441, "pct_better": 37.5}, {"team": "Army", "n": 40, "avg_delta": 1.531, "pct_better": 40.0}, {"team": "Central Michigan", "n": 45, "avg_delta": 1.655, "pct_better": 42.2}, {"team": "Binghamton", "n": 28, "avg_delta": 1.699, "pct_better": 28.6}, {"team": "Campbell", "n": 34, "avg_delta": 1.742, "pct_better": 38.2}, {"team": "Boston U.", "n": 1, "avg_delta": 1.804, "pct_better": 0.0}, {"team": "Bucknell", "n": 31, "avg_delta": 2.056, "pct_better": 45.2}, {"team": "Gardner-Webb", "n": 11, "avg_delta": 2.176, "pct_better": 27.3}, {"team": "Harvard", "n": 14, "avg_delta": 2.182, "pct_better": 35.7}, {"team": "Michigan State", "n": 35, "avg_delta": 2.259, "pct_better": 31.4}, {"team": "Northern Colorado", "n": 21, "avg_delta": 2.446, "pct_better": 23.8}, {"team": "Drexel", "n": 26, "avg_delta": 2.489, "pct_better": 23.1}, {"team": "Appalachian State", "n": 38, "avg_delta": 3.506, "pct_better": 31.6}, {"team": "Chattanooga", "n": 31, "avg_delta": 3.571, "pct_better": 25.8}, {"team": "Ohio", "n": 31, "avg_delta": 3.619, "pct_better": 32.3}, {"team": "Cleveland State", "n": 10, "avg_delta": 3.674, "pct_better": 10.0}, {"team": "Bloomsburg", "n": 9, "avg_delta": 3.919, "pct_better": 0.0}, {"team": "Bellarmine", "n": 4, "avg_delta": 4.269, "pct_better": 0.0}, {"team": "VMI", "n": 3, "avg_delta": 4.983, "pct_better": 0.0}, {"team": "Sacred Heart", "n": 2, "avg_delta": 5.057, "pct_better": 0.0}, {"team": "Davidson", "n": 1, "avg_delta": 5.929, "pct_better": 0.0}];
+
+// Returns a clipped axis range based on the 2nd-98th percentile of values,
+// so a single extreme outlier doesn't compress the whole chart.
+// Returns an object with range and clipped fields.
+function deltaAxisRange(arr) {
+  if (arr.length < 4) {
+    const lo = Math.min(...arr), hi = Math.max(...arr);
+    const pad = Math.max(0.3, (hi - lo) * 0.1);
+    return { range: [lo - pad, hi + pad], clipped: false };
+  }
+  const s = [...arr].sort((a, b) => a - b);
+  const n = s.length;
+  const lo = s[Math.max(0, Math.round(n * 0.02))];
+  const hi = s[Math.min(n - 1, Math.round(n * 0.98))];
+  const span = Math.max(hi - lo, 0.5);
+  const range = [lo - span * 0.10, hi + span * 0.10];
+  const clipped = arr.some(v => v < range[0] || v > range[1]);
+  return { range: range, clipped: clipped };
+}
+
+function renderLeaderboard() {
+  const minN = parseInt(document.getElementById("min-n").value) || 1;
+  const filtered = ALL_TEAM_SUMMARIES.filter(t => t.n >= minN);
+  // Already sorted best→worst by avg_delta; reverse for horizontal bar (Plotly draws bottom→top)
+  const rev = [...filtered].reverse();
+
+  // Labels: "Team Name (n)" — shared by both charts so they align
+  const labels      = rev.map(t => t.team + "  (" + t.n + ")");
+  const deltas      = rev.map(t => -t.avg_delta);   // invert: positive = outperformed
+  const deltaColors = rev.map(t => t.avg_delta <= 0 ? "#27ae60" : "#f0a500");
+  const deltaTexts  = rev.map(t => (-t.avg_delta >= 0 ? "+" : "") + (-t.avg_delta).toFixed(2));
+
+  const pcts      = rev.map(t => t.pct_better);
+  const pctColors = rev.map(t => t.pct_better >= 50 ? "#27ae60" : "#f0a500");
+  const pctTexts  = rev.map(t => t.pct_better.toFixed(1) + "%");
+
+  const chartHeight = Math.max(420, filtered.length * 26 + 120);
+  const sharedLayout = {
+    height: chartHeight,
+    margin: { l: 10, r: 90, t: 44, b: 50 },
+    yaxis: { automargin: true, tickfont: { size: 11 } },
+    plot_bgcolor: "#fafafa",
+    paper_bgcolor: "#ffffff",
+    hovermode: "closest",
+  };
+
+  // --- Avg Delta chart ---
+  const axisInfo = deltaAxisRange(deltas);
+  const deltaTitle = "Avg Performance vs. Field  (positive = outperformed)"
+    + (axisInfo.clipped ? "  <i style='font-size:12px;color:#999'>· outlier(s) clipped — see hover for full value</i>" : "");
+  Plotly.react("leaderboard-chart", [{
+    type: "bar",
+    orientation: "h",
+    x: deltas,
+    y: labels,
+    marker: { color: deltaColors },
+    text: deltaTexts,
+    textposition: "inside",
+    insidetextanchor: "middle",
+    textfont: { color: "#fff", size: 11 },
+    cliponaxis: true,
+    hovertemplate: "<b>%{y}</b><br>Avg Δ: %{x:+.2f}<extra></extra>",
+  }], {
+    ...sharedLayout,
+    title: { text: deltaTitle, font: { size: 15 } },
+    xaxis: {
+      title: "Avg Δ vs. Field  (positive = outperformed)",
+      range: axisInfo.range,
+      zeroline: true, zerolinecolor: "#888", zerolinewidth: 1.5,
+      gridcolor: "#ebebeb",
+    },
+    shapes: [{ type:"line", x0:0, x1:0, y0:-0.5, y1:filtered.length-0.5,
+                line:{ color:"#555", width:1, dash:"dot" } }],
+  });
+
+  // --- % Beat Average chart ---
+  Plotly.react("pct-chart", [{
+    type: "bar",
+    orientation: "h",
+    x: pcts,
+    y: labels,
+    marker: { color: pctColors },
+    text: pctTexts,
+    textposition: "inside",
+    insidetextanchor: "middle",
+    textfont: { color: "#fff", size: 11 },
+    hovertemplate: "<b>%{y}</b><br>Beat avg: %{x:.1f}%<extra></extra>",
+  }], {
+    ...sharedLayout,
+    title: { text: "% of Appearances Beating Seed Average", font: { size: 15 } },
+    xaxis: {
+      title: "% Beat Average",
+      range: [0, 100],
+      gridcolor: "#ebebeb",
+    },
+    shapes: [{ type:"line", x0:50, x1:50, y0:-0.5, y1:filtered.length-0.5,
+                line:{ color:"#888", width:1.5, dash:"dash" } }],
+  });
+
+  // --- Quadrant chart ---
+  const qX=[], qY=[], qColors=[], qSizes=[], qText=[], qLabels=[];
+  filtered.forEach(t => {
+    const inv = -t.avg_delta;
+    const inQ1 = inv >= 0 && t.pct_better >= 50;  // top-right: elite
+    const inQ2 = inv <  0 && t.pct_better >= 50;  // top-left:  often beats but thin margin
+    const inQ3 = inv >= 0 && t.pct_better <  50;  // bottom-right: big wins, inconsistent
+    const inQ4 = inv <  0 && t.pct_better <  50;  // bottom-left: consistently poor
+    const color = inQ1 ? "#27ae60" : inQ4 ? "#e74c3c" : inQ2 ? "#f0a500" : "#3498db";
+    qX.push(parseFloat(inv.toFixed(3)));
+    qY.push(t.pct_better);
+    qColors.push(color);
+    qSizes.push(10 + Math.sqrt(t.n) * 2.2);
+    qLabels.push(t.team);
+    qText.push(t.team + "<br>Avg Δ: " + (inv >= 0 ? "+" : "") + inv.toFixed(2)
+               + "<br>% Beat: " + t.pct_better.toFixed(1) + "%"
+               + "<br>n = " + t.n);
+  });
+
+  const qMidX = (Math.min(...qX) + Math.max(...qX)) / 2;
+  Plotly.react("quadrant-chart", [{
+    type: "scatter",
+    mode: "markers+text",
+    x: qX,
+    y: qY,
+    marker: { color: qColors, size: qSizes, opacity: 0.85,
+               line: { color: "#fff", width: 1 } },
+    text: qLabels,
+    textposition: "top center",
+    textfont: { size: 9, color: "#444" },
+    hovertext: qText,
+    hoverinfo: "text",
+    customdata: qLabels,
+  }], {
+    height: 540,
+    margin: { l: 60, r: 30, t: 60, b: 60 },
+    title: { text: "Performance Matrix — Avg Δ vs. % Beat Average", font: { size: 16 } },
+    xaxis: {
+      title: "Avg Δ vs. Field  (positive = outperformed)",
+      zeroline: true, zerolinecolor: "#888", zerolinewidth: 1.5,
+      gridcolor: "#ebebeb",
+    },
+    yaxis: {
+      title: "% Beat Average",
+      range: [0, 100],
+      gridcolor: "#ebebeb",
+    },
+    plot_bgcolor: "#fafafa",
+    paper_bgcolor: "#ffffff",
+    hovermode: "closest",
+    shapes: [
+      // zero vertical line
+      { type:"line", x0:0, x1:0, y0:0, y1:100,
+         line:{ color:"#aaa", width:1, dash:"dot" } },
+      // 50% horizontal line
+      { type:"line", x0:Math.min(...qX)-0.5, x1:Math.max(...qX)+0.5, y0:50, y1:50,
+         line:{ color:"#aaa", width:1, dash:"dot" } },
+    ],
+    annotations: [
+      { x: Math.max(...qX)*0.85, y: 94, text: "Consistent Overperformers",
+         showarrow: false, font: { size: 10, color: "#27ae60" }, xref:"x", yref:"y" },
+      { x: Math.min(...qX)*0.85, y: 94, text: "Often Beats, Thin Margin",
+         showarrow: false, font: { size: 10, color: "#f0a500" }, xref:"x", yref:"y" },
+      { x: Math.max(...qX)*0.85, y:  6, text: "Big Wins, Inconsistent",
+         showarrow: false, font: { size: 10, color: "#3498db" }, xref:"x", yref:"y" },
+      { x: Math.min(...qX)*0.85, y:  6, text: "Consistent Underperformers",
+         showarrow: false, font: { size: 10, color: "#e74c3c" }, xref:"x", yref:"y" },
+    ],
+  });
+
+  // --- Table ---
+  let rows = "";
+  filtered.forEach((t, i) => {
+    const inv   = -t.avg_delta;
+    const sign  = inv >= 0 ? "+" : "";
+    const dColor = inv >= 0 ? "#27ae60" : "#c0392b";
+    const pColor = t.pct_better >= 50 ? "#27ae60" : "#c0392b";
+    rows += `<tr>
+      <td>${i + 1}</td>
+      <td>${t.team} <span style="color:#999;font-size:0.82em">(n=${t.n})</span></td>
+      <td style="color:${dColor};font-weight:600">${sign}${inv.toFixed(2)}</td>
+      <td style="color:${pColor};font-weight:600">${t.pct_better.toFixed(1)}%</td>
+    </tr>`;
+  });
+  document.getElementById("leaderboard-table-body").innerHTML =
+    rows || '<tr><td colspan="4" style="text-align:center;color:#aaa;padding:20px">No teams meet minimum</td></tr>';
+
+  document.getElementById("team-count").textContent =
+    filtered.length + " team" + (filtered.length !== 1 ? "s" : "");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("min-n").addEventListener("input", renderLeaderboard);
+  renderLeaderboard();
+});
+</script>
+
+
+</div>
+</body>
+</html>

@@ -20,13 +20,14 @@ import plotly.io as pio
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 COMBINED_DIR = DATA_DIR / "ncaa-tourney-parsed"
-DEFAULT_OUT             = PROJECT_ROOT / "ncaa_report.html"
-DEFAULT_TEAM_OUT        = PROJECT_ROOT / "ncaa_team_report.html"
-DEFAULT_LEADERBOARD_OUT = PROJECT_ROOT / "ncaa_team_leaderboard.html"
-DEFAULT_CONF_LB_OUT     = PROJECT_ROOT / "ncaa_conf_leaderboard.html"
-DEFAULT_CONF_OUT        = PROJECT_ROOT / "ncaa_conf_analysis.html"
-DEFAULT_BRACKET_OUT     = PROJECT_ROOT / "ncaa_bracket_odds.html"
-DEFAULT_SCORING_OUT     = PROJECT_ROOT / "ncaa_scoring_trends.html"
+WEB_ROOT = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public"
+DEFAULT_OUT             = WEB_ROOT / "ncaa_report.html"
+DEFAULT_TEAM_OUT        = WEB_ROOT / "ncaa_team_report.html"
+DEFAULT_LEADERBOARD_OUT = WEB_ROOT / "ncaa_team_leaderboard.html"
+DEFAULT_CONF_LB_OUT     = WEB_ROOT / "ncaa_conf_leaderboard.html"
+DEFAULT_CONF_OUT        = WEB_ROOT / "ncaa_conf_analysis.html"
+DEFAULT_BRACKET_OUT     = WEB_ROOT / "ncaa_bracket_odds.html"
+DEFAULT_SCORING_OUT     = WEB_ROOT / "ncaa_scoring_trends.html"
 
 # ---------------------------------------------------------------------------
 # Team name normalization
