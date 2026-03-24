@@ -26,6 +26,7 @@ DEFAULT_LEADERBOARD_OUT = PROJECT_ROOT / "ncaa_team_leaderboard.html"
 DEFAULT_CONF_LB_OUT     = PROJECT_ROOT / "ncaa_conf_leaderboard.html"
 DEFAULT_CONF_OUT        = PROJECT_ROOT / "ncaa_conf_analysis.html"
 DEFAULT_BRACKET_OUT     = PROJECT_ROOT / "ncaa_bracket_odds.html"
+DEFAULT_SCORING_OUT     = PROJECT_ROOT / "ncaa_scoring_trends.html"
 
 # ---------------------------------------------------------------------------
 # Team name normalization
@@ -305,7 +306,7 @@ def section_seed_vs_placement(wrestlers: list[dict]) -> tuple[str, str]:
     ))
 
     fig.update_layout(
-        title=dict(text="Average Final Placement by Seed (2013–2024)", font=dict(size=18)),
+        title=dict(text="Average Final Placement by Seed (2013–2026)", font=dict(size=18)),
         xaxis=dict(title="Seed", tickmode="linear", tick0=1, dtick=2, range=[0, 34]),
         yaxis=dict(title="Placement", autorange="reversed", range=[34, 0]),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
@@ -327,21 +328,35 @@ def section_seed_vs_placement(wrestlers: list[dict]) -> tuple[str, str]:
 
 PLOTLYJS_CDN = '<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>'
 
-NAV_LINKS = {
-    "ncaa_report.html":            "Overall Report",
-    "ncaa_team_report.html":       "Team Analysis",
+REPORT_LINKS = {
+    "ncaa_report.html":            "Seed Analysis",
+    "ncaa_scoring_trends.html":    "Scoring Trends",
     "ncaa_team_leaderboard.html":  "Team Leaderboard",
-    "ncaa_conf_analysis.html":     "Conference Analysis",
+    "ncaa_team_report.html":       "Team Analysis",
     "ncaa_conf_leaderboard.html":  "Conference Leaderboard",
-    "ncaa_bracket_odds.html":      "Bracket Odds",
+    "ncaa_conf_analysis.html":     "Conference Analysis",
 }
 
 def nav_bar(active_file: str) -> str:
+    home_cls  = "nav-link active" if active_file == "index.html"      else "nav-link"
+    live_cls  = "nav-link active" if active_file == "ncaa_live.html"   else "nav-link"
+    in_report = active_file in REPORT_LINKS
+    rep_cls   = "nav-link nav-dropdown-trigger active" if in_report else "nav-link nav-dropdown-trigger"
+
     items = ""
-    for fname, label in NAV_LINKS.items():
-        cls = "nav-link active" if fname == active_file else "nav-link"
+    for fname, label in REPORT_LINKS.items():
+        cls = "dropdown-item active" if fname == active_file else "dropdown-item"
         items += f'<a href="{fname}" class="{cls}">{label}</a>\n'
-    return f'<nav class="top-nav">{items}</nav>'
+
+    return f"""<nav class="top-nav">
+  <a href="index.html" class="{home_cls}">Home</a>
+  <a href="ncaa_live.html" class="{live_cls}">Live Tracker</a>
+  <div class="nav-dropdown">
+    <span class="{rep_cls}">Reports &#9662;</span>
+    <div class="dropdown-menu">
+{items}    </div>
+  </div>
+</nav>"""
 
 
 BASE_CSS = """
@@ -370,6 +385,33 @@ body {
 }
 .nav-link:hover { background: rgba(255,255,255,0.1); color: #fff; }
 .nav-link.active { background: rgba(255,255,255,0.15); color: #fff; }
+.nav-dropdown { position: relative; display: flex; align-items: center; }
+.nav-dropdown-trigger { cursor: default; user-select: none; }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1a1a2e;
+  border-top: 2px solid rgba(255,255,255,0.12);
+  min-width: 210px;
+  z-index: 200;
+  border-radius: 0 0 7px 7px;
+  padding: 4px 0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+.nav-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-item {
+  display: block;
+  padding: 9px 18px;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.dropdown-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
+.dropdown-item.active { color: #fff; background: rgba(255,255,255,0.13); }
 .page-body { padding: 32px 24px; }
 .report-header { text-align: center; margin-bottom: 40px; }
 .report-header h1 {
@@ -498,7 +540,7 @@ def section_seed_vs_points(wrestlers: list[dict]) -> tuple[str, str]:
     ))
 
     fig.update_layout(
-        title=dict(text="Average Team Points Scored by Seed (2013–2025)", font=dict(size=18)),
+        title=dict(text="Average Team Points Scored by Seed (2013–2026)", font=dict(size=18)),
         xaxis=dict(title="Seed", tickmode="linear", tick0=1, dtick=2, range=[0, 34]),
         yaxis=dict(title="Team Points"),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
@@ -521,15 +563,15 @@ def section_seed_vs_points(wrestlers: list[dict]) -> tuple[str, str]:
 def build_report(wrestlers, matches) -> str:
     table_html,  chart_div  = section_seed_vs_placement(wrestlers)
     pts_table,   pts_chart  = section_seed_vs_points(wrestlers)
+    bracket_html, bracket_js = _bracket_odds_content(wrestlers)
 
     years = sorted(set(w["year"] for w in wrestlers))
     year_range = f"{min(years)}–{max(years)} (excl. 2020)"
-    n_matches  = len(matches)
     n_records  = len(wrestlers)
 
     body = f"""
 <div class="report-header">
-  <h1>NCAA Division I Wrestling — Analytical Report</h1>
+  <h1>Seed Analysis</h1>
   <p>{year_range} &nbsp;·&nbsp; {n_records:,} wrestler-seasons (merit-based seeds only: top 12 in 2013, top 16 in 2014–2018, all 33 from 2019)</p>
 </div>
 
@@ -559,8 +601,11 @@ def build_report(wrestlers, matches) -> str:
     <div class="chart-container">{pts_chart}</div>
   </div>
 </div>
+
+{bracket_html}
+{bracket_js}
 """
-    return html_shell("NCAA D1 Wrestling — Analytical Report", "ncaa_report.html", body)
+    return html_shell("NCAA D1 Wrestling — Seed Analysis", "ncaa_report.html", body)
 
 
 # ---------------------------------------------------------------------------
@@ -1144,7 +1189,7 @@ document.addEventListener("DOMContentLoaded", () => {{
 {leaderboard_css}
 <div class="report-header">
   <h1>Team Leaderboard</h1>
-  <p>All-time team performance vs. the overall average placement for each seed (2013–2024).</p>
+  <p>All-time team performance vs. the overall average placement for each seed (2013–2026).</p>
 </div>
 
 <div class="section">
@@ -1639,7 +1684,7 @@ document.addEventListener("DOMContentLoaded",()=>{{
 {lb_css}
 <div class="report-header">
   <h1>Conference Leaderboard</h1>
-  <p>All-time conference performance vs. the overall average placement for each seed (2013–2025).</p>
+  <p>All-time conference performance vs. the overall average placement for each seed (2013–2026).</p>
 </div>
 
 <div class="section">
@@ -1683,11 +1728,11 @@ document.addEventListener("DOMContentLoaded",()=>{{
 
 
 # ---------------------------------------------------------------------------
-# Bracket Odds Page
+# Bracket Odds content (used by Seed Analysis page)
 # ---------------------------------------------------------------------------
 
-def build_bracket_odds_page(wrestlers: list[dict]) -> str:
-    """Show each seed's probability of reaching each championship bracket round."""
+def _bracket_odds_content(wrestlers: list[dict]) -> tuple[str, str]:
+    """Return (html_sections, js_block) for the bracket odds charts."""
 
     # PIG excluded: seeds 32-33 threshold offsets account for it internally
     ROUNDS = ["R16", "QF", "SF", "Final", "Champ"]
@@ -1727,6 +1772,19 @@ def build_bracket_odds_page(wrestlers: list[dict]) -> str:
     text_vals: list[list] = []
     custom_vals: list[list] = []  # [[num, denom], ...]
 
+    def wrestlers_who_reached(seed: int, wrestlers_list: list[dict], rnd: str) -> list[str]:
+        """Return 'Name (Team, Year)' strings for wrestlers who reached this round."""
+        if seed >= 32:
+            thresholds = {"R16": 2, "QF": 3, "SF": 4, "Final": 5}
+        else:
+            thresholds = {"R16": 1, "QF": 2, "SF": 3, "Final": 4}
+        if rnd == "Champ":
+            matched = [w for w in wrestlers_list if w.get("placement") == 1]
+        else:
+            t = thresholds[rnd]
+            matched = [w for w in wrestlers_list if w.get("champ_wins", 0) >= t]
+        return [f"{w.get('name', '?')} ({w.get('team', '?')}, {w.get('year', '?')})" for w in matched]
+
     for s in range(1, 34):
         z_row, t_row, c_row = [], [], []
         for rnd in ROUNDS:
@@ -1734,16 +1792,20 @@ def build_bracket_odds_page(wrestlers: list[dict]) -> str:
             if denom == 0:
                 z_row.append(None)
                 t_row.append("—")
-                c_row.append([None, None])
+                c_row.append([None, None, ""])
             elif num == 0:
                 z_row.append(SENTINEL)
                 t_row.append("0%")
-                c_row.append([0, denom])
+                c_row.append([0, denom, ""])
             else:
                 pct_val = round(num / denom * 100, 1)
                 z_row.append(pct_val)
                 t_row.append(f"{pct_val:.0f}%")
-                c_row.append([num, denom])
+                if num <= 5:
+                    names = wrestlers_who_reached(s, by_seed[s], rnd)
+                    c_row.append([num, denom, "<br>" + "<br>".join(names)])
+                else:
+                    c_row.append([num, denom, ""])
         z_vals.append(z_row)
         text_vals.append(t_row)
         custom_vals.append(c_row)
@@ -1818,7 +1880,7 @@ const hmTrace = {{
     ticktext: ["0%", "25%", "50%", "75%", "100%"],
     len: 0.6
   }},
-  hovertemplate: "%{{y}}<br>%{{x}}: %{{customdata[0]}}/%{{customdata[1]}}<extra></extra>"
+  hovertemplate: "%{{y}}<br>%{{x}}: %{{customdata[0]}}/%{{customdata[1]}}%{{customdata[2]}}<extra></extra>"
 }};
 
 Plotly.newPlot("heatmap-chart", [hmTrace], {{
@@ -1874,10 +1936,10 @@ Plotly.newPlot("curve-chart", traces, {{
 </script>
 """
 
-    body = f"""
+    html_sections = """
 <div class="section">
   <h2 style="margin-bottom:6px">Bracket Odds by Seed</h2>
-  <p style="color:#555;font-size:14px;margin-bottom:18px">
+  <p class="subtitle">
     Percentage of wrestlers at each seed who reached each championship bracket round.
     Only merit-based seeds included: top 12 in 2013, top 16 in 2014–2018, all 33 from 2019.
     Gray cells = zero occurrences. Hover for exact ratio.
@@ -1885,19 +1947,472 @@ Plotly.newPlot("curve-chart", traces, {{
   <div id="heatmap-chart" style="width:100%;height:880px"></div>
 </div>
 
-<div class="section" style="margin-top:24px">
+<div class="section">
   <h2 style="margin-bottom:6px">Bracket Survival Curves</h2>
-  <p style="color:#555;font-size:14px;margin-bottom:18px">
+  <p class="subtitle">
     Each line shows one seed's survival rate through the championship bracket.
     Color gradient: <span style="color:#27ae60;font-weight:600">green = seed 1</span>
     → <span style="color:#c83232;font-weight:600">red = seed 33</span>.
   </p>
   <div id="curve-chart" style="width:100%;height:520px"></div>
 </div>
-
-{js}
 """
-    return html_shell("NCAA D1 Wrestling — Bracket Odds", "ncaa_bracket_odds.html", body)
+    return html_sections, js
+
+
+# ---------------------------------------------------------------------------
+# Scoring Trends page
+# ---------------------------------------------------------------------------
+
+def build_scoring_trends_page() -> str:
+    """Team scoring concentration and competitive breadth analysis across all available years."""
+    from collections import defaultdict
+
+    # Load ALL wrestlers (no seed filter) for accurate team point totals
+    wrestlers_all = json.loads((COMBINED_DIR / "all_wrestlers.json").read_text())
+    matches_all   = json.loads((COMBINED_DIR / "all_matches.json").read_text())
+    for w in wrestlers_all:
+        w["team"] = normalize_team(w["team"])
+
+    # Build per-year, per-team aggregates in one pass
+    year_team_pts:      dict[int, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    year_team_wrestlers: dict[int, dict[str, list]]  = defaultdict(lambda: defaultdict(list))
+    for w in wrestlers_all:
+        yr, team = w["year"], w["team"]
+        year_team_pts[yr][team]       += float(w.get("total_points", 0))
+        year_team_wrestlers[yr][team].append(w)
+
+    years = sorted(year_team_pts.keys())
+
+    # -----------------------------------------------------------------------
+    # Section A data: rank-position series + Gini + top-5 share
+    # -----------------------------------------------------------------------
+    rank_positions = [1, 3, 5, 10, 20, 33]
+    rank_series: dict[int, list] = {r: [] for r in rank_positions}
+    gini_series:       list[float] = []
+    top5_share_series: list[float] = []
+
+    for year in years:
+        pts_desc = sorted(year_team_pts[year].values(), reverse=True)
+        total = sum(pts_desc)
+        n = len(pts_desc)
+
+        for r in rank_positions:
+            rank_series[r].append(pts_desc[r - 1] if n >= r else None)
+
+        pts_asc = sorted(pts_desc)
+        numerator = sum((2 * (i + 1) - n - 1) * x for i, x in enumerate(pts_asc))
+        gini_series.append(numerator / (n * total) if total > 0 else 0)
+        top5_share_series.append(sum(pts_desc[:5]) / total * 100 if total > 0 else 0)
+
+    # -----------------------------------------------------------------------
+    # Section B data: scoring-bucket counts + All-Americans + 0-scorers
+    # -----------------------------------------------------------------------
+    bucket_zero:    list[int] = []
+    bucket_1_9:     list[int] = []
+    bucket_10_24:   list[int] = []
+    bucket_25_49:   list[int] = []
+    bucket_50plus:  list[int] = []
+    teams_with_aa:  list[int] = []
+    teams_zero_pts: list[int] = []
+    teams_no_aa:    list[int] = []
+
+    for year in years:
+        b = [0] * 5
+        aa_count = 0
+        zero_count = 0
+        for team, wrestlers in year_team_wrestlers[year].items():
+            pts = year_team_pts[year][team]
+            has_aa = any(w.get("placement", 99) <= 8 for w in wrestlers)
+            if pts == 0:     b[0] += 1; zero_count += 1
+            elif pts < 10:   b[1] += 1
+            elif pts < 25:   b[2] += 1
+            elif pts < 50:   b[3] += 1
+            else:            b[4] += 1
+            if has_aa:
+                aa_count += 1
+        bucket_zero.append(b[0])
+        bucket_1_9.append(b[1])
+        bucket_10_24.append(b[2])
+        bucket_25_49.append(b[3])
+        bucket_50plus.append(b[4])
+        n_teams = len(year_team_wrestlers[year])
+        teams_with_aa.append(aa_count)
+        teams_zero_pts.append(zero_count)
+        teams_no_aa.append(n_teams - aa_count)
+
+    # -----------------------------------------------------------------------
+    # Chart 1: Points by rank position over time
+    # -----------------------------------------------------------------------
+    rank_colors = ["#1f77b4", "#2ca02c", "#ff7f0e", "#d62728", "#9467bd", "#8c564b"]
+    fig1 = go.Figure()
+    for i, r in enumerate(rank_positions):
+        fig1.add_trace(go.Scatter(
+            x=years, y=rank_series[r],
+            mode="lines+markers",
+            name=f"Rank #{r}",
+            line=dict(color=rank_colors[i], width=2.5 if r <= 5 else 1.5),
+            marker=dict(size=7),
+            hovertemplate=f"Rank #{r}<br>%{{x}}: %{{y:.1f}} pts<extra></extra>",
+            connectgaps=False,
+        ))
+    fig1.update_layout(
+        title=dict(text="Team Points by Rank Position Over Time", font=dict(size=18)),
+        xaxis=dict(title="Year", tickmode="linear", dtick=1),
+        yaxis=dict(title="Team Points"),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        height=460, hovermode="x unified",
+    )
+    fig1.update_xaxes(showgrid=True, gridcolor="#ebebeb")
+    fig1.update_yaxes(showgrid=True, gridcolor="#ebebeb")
+    chart1_div = pio.to_html(fig1, full_html=False, include_plotlyjs=False)
+
+    # -----------------------------------------------------------------------
+    # Chart 2: Gini + top-5 share
+    # -----------------------------------------------------------------------
+    fig2 = go.Figure()
+    fig2.add_trace(go.Bar(
+        x=years, y=top5_share_series,
+        name="Top-5 Share of Points (%)",
+        marker_color="rgba(31,119,180,0.35)",
+        hovertemplate="%{x}: Top-5 share = %{y:.1f}%<extra></extra>",
+        yaxis="y2",
+    ))
+    fig2.add_trace(go.Scatter(
+        x=years, y=gini_series,
+        mode="lines+markers",
+        name="Gini Coefficient",
+        line=dict(color="#d62728", width=2.5),
+        marker=dict(size=8),
+        hovertemplate="%{x}: Gini = %{y:.3f}<extra></extra>",
+    ))
+    fig2.update_layout(
+        title=dict(text="Scoring Concentration Over Time", font=dict(size=18)),
+        xaxis=dict(title="Year", tickmode="linear", dtick=1),
+        yaxis=dict(title="Gini Coefficient", side="left", range=[0, 0.75],
+                   showgrid=True, gridcolor="#ebebeb"),
+        yaxis2=dict(title="Top-5 Share (%)", side="right", overlaying="y",
+                    range=[0, 75], showgrid=False),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        height=400, hovermode="x", barmode="overlay",
+    )
+    chart2_div = pio.to_html(fig2, full_html=False, include_plotlyjs=False)
+
+    # -----------------------------------------------------------------------
+    # Chart 3: Scoring bucket distribution (stacked bar, bottom-end health)
+    # -----------------------------------------------------------------------
+    fig5 = go.Figure()
+    bucket_defs = [
+        (bucket_50plus, "50+ pts",   "rgba(39,174,96,0.85)"),
+        (bucket_25_49,  "25–49 pts", "rgba(52,152,219,0.8)"),
+        (bucket_10_24,  "10–24 pts", "rgba(241,196,15,0.8)"),
+        (bucket_1_9,    "1–9 pts",   "rgba(230,126,34,0.75)"),
+        (bucket_zero,   "0 pts",     "rgba(192,57,43,0.7)"),
+    ]
+    for data, label, color in bucket_defs:
+        fig5.add_trace(go.Bar(
+            x=years, y=data,
+            name=label,
+            marker_color=color,
+            hovertemplate=f"{label}<br>%{{x}}: %{{y}} teams<extra></extra>",
+        ))
+    fig5.update_layout(
+        title=dict(text="Teams by Scoring Bucket — Is the Bottom Hollowing Out?", font=dict(size=18)),
+        xaxis=dict(title="Year", tickmode="linear", dtick=1),
+        yaxis=dict(title="# Teams", showgrid=True, gridcolor="#ebebeb"),
+        barmode="stack",
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        height=420, hovermode="x",
+    )
+    chart3_div = pio.to_html(fig5, full_html=False, include_plotlyjs=False)
+
+    # -----------------------------------------------------------------------
+    # Chart 4: Teams with All-Americans vs teams scoring zero
+    # -----------------------------------------------------------------------
+    fig6 = go.Figure()
+    fig6.add_trace(go.Scatter(
+        x=years, y=teams_with_aa,
+        mode="lines+markers", name="Teams with ≥1 All-American",
+        line=dict(color="#27ae60", width=2.5),
+        marker=dict(size=8),
+        hovertemplate="%{x}: %{y} teams with AA<extra></extra>",
+    ))
+    fig6.add_trace(go.Scatter(
+        x=years, y=teams_no_aa,
+        mode="lines+markers", name="Teams without an All-American",
+        line=dict(color="#f0a500", width=2.5),
+        marker=dict(size=8),
+        hovertemplate="%{x}: %{y} teams without AA<extra></extra>",
+    ))
+    fig6.add_trace(go.Scatter(
+        x=years, y=teams_zero_pts,
+        mode="lines+markers", name="Teams scoring 0 points",
+        line=dict(color="#c0392b", width=2.5),
+        marker=dict(size=8),
+        hovertemplate="%{x}: %{y} teams with 0 pts<extra></extra>",
+    ))
+    fig6.update_layout(
+        title=dict(text="Competitive Breadth: All-Americans vs. Scoreless Teams", font=dict(size=18)),
+        xaxis=dict(title="Year", tickmode="linear", dtick=1),
+        yaxis=dict(title="# Teams", showgrid=True, gridcolor="#ebebeb"),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        height=380, hovermode="x unified",
+    )
+    fig6.update_xaxes(showgrid=True, gridcolor="#ebebeb")
+    chart4_div = pio.to_html(fig6, full_html=False, include_plotlyjs=False)
+
+    # -----------------------------------------------------------------------
+    # Chart 5: Finals match scoring (combined points per match)
+    # -----------------------------------------------------------------------
+    def parse_combined_score(score: str) -> float | None:
+        """Return winner+loser points for W-L scores; None for falls/times."""
+        try:
+            parts = score.split("-")
+            if len(parts) == 2:
+                return float(parts[0]) + float(parts[1])
+        except (ValueError, AttributeError):
+            pass
+        return None
+
+    finals_matches = [m for m in matches_all if m["round"] == "Final"]
+
+    # Per year: list of (weight, combined_pts_or_None, result_type, score, winner, loser)
+    finals_by_year: dict[int, list] = defaultdict(list)
+    for m in finals_matches:
+        combined = parse_combined_score(m.get("score", ""))
+        finals_by_year[m["year"]].append({
+            "weight":   m["weight"],
+            "pts":      combined,
+            "result":   m["result_type"],
+            "score":    m.get("score", ""),
+            "winner":   m["winner_name"],
+            "loser":    m["loser_name"],
+        })
+
+    # Scatter x/y and mean/median series
+    sc_x, sc_y, sc_text, sc_color = [], [], [], []
+    mean_x, mean_y   = [], []
+    median_x, median_y = [], []
+    fall_x, fall_y, fall_text = [], [], []
+
+    OT_TYPES = {"SV-1", "SV-2", "TB-1", "TB-2", "TB-3"}
+    DOT_COLORS = {
+        "Dec":  "#1f77b4",
+        "MD":   "#2ca02c",
+        "TF":   "#9467bd",
+        "Fall": "#c0392b",
+    }
+
+    import statistics as _stats
+    import random as _random
+    _random.seed(42)
+
+    for year in years:
+        bouts = finals_by_year.get(year, [])
+        scoreable = [b for b in bouts if b["pts"] is not None]
+        falls     = [b for b in bouts if b["result"] == "Fall"]
+        ot_bouts  = [b for b in bouts if b["result"] in OT_TYPES]
+
+        for b in bouts:
+            if b["pts"] is not None:
+                ot_label = " (OT)" if b["result"] in OT_TYPES else ""
+                sc_x.append(year + _random.uniform(-0.25, 0.25))
+                sc_y.append(b["pts"])
+                sc_text.append(
+                    f"{b['weight']} lbs — {b['winner']} def. {b['loser']}<br>"
+                    f"{b['result']}{ot_label}: {b['score']}"
+                )
+                base = b["result"] if b["result"] not in OT_TYPES else "Dec"
+                sc_color.append(DOT_COLORS.get(base, "#888888"))
+            else:
+                fall_x.append(year)
+                fall_y.append(-1)   # plotted on secondary axis / annotation band
+                fall_text.append(
+                    f"{b['weight']} lbs — {b['winner']} def. {b['loser']}<br>"
+                    f"Fall {b['score']}"
+                )
+
+        pts_list = [b["pts"] for b in scoreable]
+        if pts_list:
+            mean_x.append(year)
+            mean_y.append(_stats.mean(pts_list))
+            median_x.append(year)
+            median_y.append(_stats.median(pts_list))
+
+    fig5 = go.Figure()
+
+    # Individual finals scores
+    fig5.add_trace(go.Scatter(
+        x=sc_x, y=sc_y,
+        mode="markers",
+        name="Finals match",
+        marker=dict(color=sc_color, size=10, opacity=0.75,
+                    line=dict(color="#fff", width=1)),
+        text=sc_text,
+        hoverinfo="text",
+    ))
+
+    # Mean line
+    fig5.add_trace(go.Scatter(
+        x=mean_x, y=mean_y,
+        mode="lines+markers",
+        name="Mean",
+        line=dict(color="#1a1a2e", width=2.5),
+        marker=dict(size=7),
+        hovertemplate="%{x} mean: %{y:.1f} pts<extra></extra>",
+    ))
+
+    # Median line
+    fig5.add_trace(go.Scatter(
+        x=median_x, y=median_y,
+        mode="lines+markers",
+        name="Median",
+        line=dict(color="#e67e22", width=2.5, dash="dash"),
+        marker=dict(size=7),
+        hovertemplate="%{x} median: %{y:.1f} pts<extra></extra>",
+    ))
+
+    # Falls — shown as markers at y=0 with a note
+    if fall_x:
+        fig5.add_trace(go.Scatter(
+            x=fall_x, y=[0] * len(fall_x),
+            mode="markers",
+            name="Fall (no score)",
+            marker=dict(color="#c0392b", size=12, symbol="x",
+                        line=dict(color="#c0392b", width=2)),
+            text=fall_text,
+            hoverinfo="text",
+        ))
+
+    fig5.update_layout(
+        title=dict(text="NCAA Finals: Combined Points Scored Per Match", font=dict(size=18)),
+        xaxis=dict(title="Year", tickmode="linear", dtick=1),
+        yaxis=dict(
+            title="Combined Points (winner + loser)",
+            showgrid=True, gridcolor="#ebebeb",
+            rangemode="tozero",
+        ),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        height=480, hovermode="closest",
+        annotations=[dict(
+            x=0.01, y=0.02, xref="paper", yref="paper",
+            text="× = Fall (score N/A)",
+            showarrow=False, font=dict(size=11, color="#c0392b"),
+        )],
+    )
+    fig5.update_xaxes(showgrid=True, gridcolor="#ebebeb")
+    chart5_div = pio.to_html(fig5, full_html=False, include_plotlyjs=False)
+
+    # -----------------------------------------------------------------------
+    # Summary table
+    # -----------------------------------------------------------------------
+    rows = ""
+    for i, year in enumerate(years):
+        pts_dict = year_team_pts[year]
+        top_team = max(pts_dict, key=lambda t: pts_dict[t])
+        top_pts  = pts_dict[top_team]
+        r5  = f"{rank_series[5][i]:.1f}"  if rank_series[5][i]  is not None else "—"
+        r10 = f"{rank_series[10][i]:.1f}" if rank_series[10][i] is not None else "—"
+        rows += (
+            f"<tr>"
+            f"<td>{year}</td>"
+            f"<td>{top_team} ({top_pts:.1f})</td>"
+            f"<td>{r5}</td><td>{r10}</td>"
+            f"<td>{top5_share_series[i]:.1f}%</td>"
+            f"<td>{gini_series[i]:.3f}</td>"
+            f"<td>{teams_with_aa[i]}</td>"
+            f"<td>{teams_zero_pts[i]}</td>"
+            f"</tr>\n"
+        )
+
+    table_html = f"""
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Year</th><th>#1 Team (pts)</th><th>#5 pts</th><th>#10 pts</th>
+      <th>Top-5 Share</th><th>Gini</th><th>Teams w/ AA</th><th>Teams 0 pts</th>
+    </tr>
+  </thead>
+  <tbody>
+{rows}  </tbody>
+</table>
+"""
+
+    body = f"""
+<div class="report-header">
+  <h1>Team Scoring Concentration &amp; Competitive Breadth</h1>
+  <p>Is scoring becoming more top-heavy, and is the bottom of the field hollowing out? (2013–2026, excl. 2020)</p>
+</div>
+
+<div class="section">
+  <h2>Is the Bottom Hollowing Out?</h2>
+  <p class="subtitle">
+    If talent were being systematically drained from smaller programs, we'd expect a growing pile
+    of zero-scorers and a shrinking bottom tier over time. The distribution of teams across scoring
+    buckets has remained broadly stable across the full 13-year window.
+  </p>
+  <div class="chart-container">{chart3_div}</div>
+</div>
+
+<div class="section">
+  <h2>Competitive Breadth: All-Americans vs. Scoreless Teams</h2>
+  <p class="subtitle">
+    The number of programs producing at least one All-American (top-8 finisher) has held steady
+    at 29–38 per year with no downward trend. Teams scoring zero points fluctuate 3–8 per year,
+    also without a trend. The breadth of competitive programs has not meaningfully shrunk.
+  </p>
+  <div class="chart-container">{chart4_div}</div>
+</div>
+
+<div class="section">
+  <h2>Overall Concentration Metrics</h2>
+  <p class="subtitle">
+    <strong>Gini coefficient</strong> (red line): 0 = perfectly equal, higher = more concentrated.
+    <strong>Top-5 share</strong> (bars): % of all points scored by the top 5 teams.
+    Neither metric shows a sustained upward trend — 2025 had the <em>lowest</em> Gini on record;
+    2026 spiked but follows no clear trajectory.
+  </p>
+  <div class="chart-container">{chart2_div}</div>
+</div>
+
+<div class="section">
+  <h2>Points by Rank Position</h2>
+  <p class="subtitle">
+    Each line tracks the team at that rank position's score each year. The #1 team (Penn State
+    in most years) has genuinely grown more dominant. The middle and bottom of the pack
+    are essentially flat.
+  </p>
+  <div class="chart-container">{chart1_div}</div>
+</div>
+
+<div class="section">
+  <h2>NCAA Finals: Combined Points Scored Per Match</h2>
+  <p class="subtitle">
+    Each dot is one of the 10 weight-class finals. Combined score = winner's points + loser's points.
+    Color: <span style="color:#1f77b4;font-weight:600">blue = Decision</span>,
+    <span style="color:#2ca02c;font-weight:600">green = Major Decision</span>,
+    <span style="color:#9467bd;font-weight:600">purple = Tech Fall</span>,
+    <span style="color:#c0392b;font-weight:600">red × = Fall</span> (no combined score available).
+    Hover any dot for match details.
+  </p>
+  <div class="chart-container">{chart5_div}</div>
+</div>
+
+<div class="section">
+  <h2>Year-by-Year Summary</h2>
+  <p class="subtitle">
+    Team points = advancement (1/win) + bonus (MD +1, TF +1.5, Fall/FF +2) + placement points (top 8).
+    All wrestlers included regardless of seed status.
+  </p>
+  {table_html}
+</div>
+"""
+    return html_shell("NCAA D1 Wrestling — Scoring Trends", "ncaa_scoring_trends.html", body)
 
 
 # ---------------------------------------------------------------------------
@@ -1933,10 +2448,10 @@ def main():
     DEFAULT_CONF_LB_OUT.write_text(conf_lb_html, encoding="utf-8")
     print(f"  → {DEFAULT_CONF_LB_OUT}")
 
-    print("Building bracket odds page...")
-    bracket_html = build_bracket_odds_page(wrestlers)
-    DEFAULT_BRACKET_OUT.write_text(bracket_html, encoding="utf-8")
-    print(f"  → {DEFAULT_BRACKET_OUT}")
+    print("Building scoring trends page...")
+    scoring_html = build_scoring_trends_page()
+    DEFAULT_SCORING_OUT.write_text(scoring_html, encoding="utf-8")
+    print(f"  → {DEFAULT_SCORING_OUT}")
 
 
 if __name__ == "__main__":

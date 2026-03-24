@@ -1,13 +1,6 @@
 [build]
   publish = "."
 
-# Temporary tournament redirect: / → /ncaa_live.html
-[[redirects]]
-  from = "/"
-  to = "/ncaa_live.html"
-  status = 302
-  force = true
-
 # Cache historical replay data for 1 hour (never changes)
 [[headers]]
   for = "/data/*"
