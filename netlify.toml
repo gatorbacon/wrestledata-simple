@@ -1,9 +1,7 @@
 [build]
-  base    = "frontend/hs-ky-ui"
-  command = "npm run build"
-  publish = "frontend/hs-ky-ui/dist"
+  publish = "frontend/hs-ky-ui/public"
 
-# SPA routing — send all paths to index.html for React Router
+# SPA routing — send all paths to index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
