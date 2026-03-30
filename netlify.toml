@@ -1,8 +1,0 @@
-[build]
-  publish = "frontend/hs-ky-ui/public"
-
-# SPA routing — send all paths to index.html
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
