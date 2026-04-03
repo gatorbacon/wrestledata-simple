@@ -49,7 +49,8 @@ def load_rankings(season: int, weight: int, data_dir: str) -> Tuple[Dict[str, in
     rankings_path = Path(data_dir) / str(season) / f"rankings_{weight}.json"
     
     if not rankings_path.exists():
-        raise FileNotFoundError(f"Rankings file not found: {rankings_path}")
+        print(f"  ⚠ No rankings file found for {weight} lbs — treating all opponents as unranked")
+        return {}, set()
     
     with rankings_path.open("r", encoding="utf-8") as f:
         data = json.load(f)

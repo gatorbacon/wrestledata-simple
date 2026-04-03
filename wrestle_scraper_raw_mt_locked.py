@@ -840,6 +840,11 @@ class WrestlingScraper:
         
         if self.league == 'hs':
             if self.gender == 'boys':
+                # 2013 and 2014 seasons used "High School" without gender suffix
+                if self.season_year in (2013, 2014):
+                    return [
+                        f"{start_year}-{short_end} High School",
+                    ]
                 return [
                     f"{start_year}-{short_end} High School Boys",
                     f"{start_year}-{short_end} HS Boys"
@@ -1003,7 +1008,7 @@ class WrestlingScraper:
                     try:
                         # Look for next page arrow
                         print(f"Looking for next page arrow (currently on page {page_num})...")
-                        time.sleep(1)  # Wait for page to stabilize
+                        time.sleep(0.3)  # Wait for page to stabilize
                         
                         next_arrows = self.driver.find_elements(By.CSS_SELECTOR, "i.icon-arrow_r.dgNext")
                         print(f"Found {len(next_arrows)} next arrows")
@@ -1020,7 +1025,7 @@ class WrestlingScraper:
                         page_num += 1
                         print(f"Clicking next page (page {page_num})...")
                         next_arrow.click()
-                        time.sleep(2)  # Wait for page to load
+                        time.sleep(0.8)  # Wait for page to load
                         
                         # Wait for page grid to update
                         try:
@@ -1053,7 +1058,11 @@ class WrestlingScraper:
                 raise Exception(f"Could not find season {self.season_year} (tried {season_options})")
 
             print(f"Found season link: {season_link.text}")
-            season_link.click()
+            try:
+                season_link.click()
+            except Exception:
+                print("Regular click intercepted (likely ad overlay), trying JavaScript click...")
+                self.driver.execute_script("arguments[0].click();", season_link)
             self._random_delay()
 
             # Handle the governing body selection popup
@@ -1549,10 +1558,10 @@ class WrestlingScraper:
             # Now get the matches information
             print("\nGetting matches information...")
             matches_link = self.wait.until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']"))
+                EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='WrestlerMatches.jsp']"))
             )
             print("Found Matches link, clicking...")
-            matches_link.click()
+            self.driver.execute_script("arguments[0].click();", matches_link)
             print("Clicked Matches link")
             time.sleep(2)  # Wait for page update
 
@@ -1790,11 +1799,11 @@ class WrestlingScraper:
                                     try:
                                         # Click the Matches tab again to reload WrestlerMatches.jsp
                                         matches_link = self.wait.until(
-                                            EC.element_to_be_clickable(
-                                                (By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']")
+                                            EC.presence_of_element_located(
+                                                (By.CSS_SELECTOR, "a[href*='WrestlerMatches.jsp']")
                                             )
                                         )
-                                        matches_link.click()
+                                        self.driver.execute_script("arguments[0].click();", matches_link)
                                         print("Clicked Matches tab to reset matches page.")
                                     except Exception as e:
                                         print(f"Error while clicking Matches tab to reset page: {e}")
@@ -2079,9 +2088,9 @@ class WrestlingScraper:
                                                         # Click on the Matches tab
                                                         print("Clicking on Matches tab...")
                                                         matches_link = self.wait.until(
-                                                            EC.element_to_be_clickable((By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']"))
+                                                            EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='WrestlerMatches.jsp']"))
                                                         )
-                                                        matches_link.click()
+                                                        self.driver.execute_script("arguments[0].click();", matches_link)
                                                         time.sleep(3)  # Wait for matches page to load
                                                     
                                                         # Find the wrestler dropdown
@@ -2381,11 +2390,11 @@ class WrestlingScraper:
                                         
                                             # Click Matches tab
                                             matches_link = self.wait.until(
-                                                EC.element_to_be_clickable((By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']"))
+                                                EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='WrestlerMatches.jsp']"))
                                             )
-                                            matches_link.click()
+                                            self.driver.execute_script("arguments[0].click();", matches_link)
                                             time.sleep(3)
-                                        
+
                                             # Re-select wrestler
                                             wrestler_select = self.wait.until(
                                                 EC.presence_of_element_located((By.ID, "wrestler"))
@@ -2633,11 +2642,11 @@ class WrestlingScraper:
                                     
                                     # Click Matches tab
                                     matches_link = self.wait.until(
-                                        EC.element_to_be_clickable((By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']"))
+                                        EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='WrestlerMatches.jsp']"))
                                     )
-                                    matches_link.click()
+                                    self.driver.execute_script("arguments[0].click();", matches_link)
                                     time.sleep(3)
-                                    
+
                                     print(f"✅ Re-navigation successful, retrying wrestler {info['name']}...")
                                     # Continue the while loop to retry processing this wrestler
                                     continue
@@ -2676,6 +2685,7 @@ class WrestlingScraper:
         except Exception as e:
             error_msg = f"Error scraping team {team_url}: {e}"
             self._log_error("team_scraping", error_msg)
+            print(f"\n❌ Team scraping error: {e}")
             return None
         finally:
             # Switch back to default content

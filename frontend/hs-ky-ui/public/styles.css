@@ -5668,6 +5668,15 @@ table a:hover {
   color: var(--text-muted);
 }
 
+/* Career Wins: state placement medals (inline after name) */
+.state-medals {
+  margin-left: 0.35em;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 /* Career Wins: graduation year pills (Graduation column only) */
 .graduation-pill {
   display: inline-block;

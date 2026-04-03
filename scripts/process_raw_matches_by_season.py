@@ -109,19 +109,75 @@ def process_match(summary, wrestler_name, team_name=None, season=None):
             if variant != wrestler_name:
                 matching_alias = variant
             break
-    
+
+    # Case-insensitive fallback: find the correctly-cased version in the summary
+    if not name_found:
+        summary_lower = summary.lower()
+        for variant in current_variants:
+            if variant.lower() in summary_lower:
+                # Find the actual cased version from the summary
+                idx = summary_lower.index(variant.lower())
+                cased_variant = summary[idx:idx + len(variant)]
+                if cased_variant != variant and team_name and season:
+                    print(f"✅ Auto-alias (case): '{cased_variant}' → '{wrestler_name}'")
+                    update_alias_file(wrestler_name, cased_variant, team_name, season)
+                    matching_alias = cased_variant
+                name_found = True
+                break
+
     if not name_found:
         error_msg = f"❌ SCRAPER_ERROR: '{wrestler_name}' not found in match summary: '{summary}'"
         print(error_msg)
-        
+
         # If team_name and season are provided, offer to update alias
         if team_name and season:
-            add_alias = input("Would you like to add an alias for this wrestler? (y/n): ").strip().lower()
-            if add_alias == 'y' or add_alias == 'yes':
-                variant_name = input(f"Enter the variant name for '{wrestler_name}' in this match summary: ").strip()
-                if variant_name:
-                    update_alias_file(wrestler_name, variant_name, team_name, season)
-        
+            # Try to detect the team member's name from the summary automatically
+            suggested_alias = None
+            if " over " in summary:
+                try:
+                    before, after = summary.split(" over ", 1)
+                    after_clean, _ = strip_result(after)
+                    loser_name_parsed, loser_team_parsed = parse_name_team(after_clean)
+                    winner_raw, winner_team_parsed = parse_name_team(before)
+                    winner_name_parsed = clean_winner_name(winner_raw)
+                    if winner_team_parsed == team_name and winner_name_parsed != wrestler_name:
+                        suggested_alias = winner_name_parsed
+                    elif loser_team_parsed == team_name and loser_name_parsed != wrestler_name:
+                        suggested_alias = loser_name_parsed
+                except Exception:
+                    pass
+            elif " vs. " in summary:
+                try:
+                    before, after = summary.split(" vs. ", 1)
+                    after_clean, _ = strip_result(after)
+                    name_b, team_b = parse_name_team(after_clean)
+                    raw_a, _ = strip_result(before)
+                    name_a, team_a = parse_name_team(raw_a)
+                    name_a = clean_winner_name(name_a)
+                    if team_a == team_name and name_a != wrestler_name:
+                        suggested_alias = name_a
+                    elif team_b == team_name and name_b != wrestler_name:
+                        suggested_alias = name_b
+                except Exception:
+                    pass
+
+            if suggested_alias:
+                add_suggested = input(f"Would you like to add '{suggested_alias}' as an alias for '{wrestler_name}'? (y/n): ").strip().lower()
+                if add_suggested in ('y', 'yes'):
+                    update_alias_file(wrestler_name, suggested_alias, team_name, season)
+                else:
+                    add_alias = input("Would you like to add a different alias for this wrestler? (y/n): ").strip().lower()
+                    if add_alias in ('y', 'yes'):
+                        variant_name = input(f"Enter the variant name for '{wrestler_name}' in this match summary: ").strip()
+                        if variant_name:
+                            update_alias_file(wrestler_name, variant_name, team_name, season)
+            else:
+                add_alias = input("Would you like to add an alias for this wrestler? (y/n): ").strip().lower()
+                if add_alias in ('y', 'yes'):
+                    variant_name = input(f"Enter the variant name for '{wrestler_name}' in this match summary: ").strip()
+                    if variant_name:
+                        update_alias_file(wrestler_name, variant_name, team_name, season)
+
         return {"result": "SCRAPER_ERROR"}
     
     # If match passed using an alias, print message

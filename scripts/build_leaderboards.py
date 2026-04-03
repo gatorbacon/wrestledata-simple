@@ -285,6 +285,10 @@ def build_all_time_career_wins_leaderboard(
         latest_season = max(season_years) if season_years else None
         wrestler_id = str(seasons_dict.get(str(latest_season), "")) if latest_season else ""
         graduation_year = graduation_year_from_season_summary(season_summary)
+        state_medals = sorted(
+            s["state_place"] for s in season_summary
+            if s.get("state_place") in (1, 2, 3)
+        )
         entry = {
             "wrestler_id": wrestler_id,
             "name": name,
@@ -296,6 +300,8 @@ def build_all_time_career_wins_leaderboard(
         }
         if graduation_year is not None:
             entry["graduation_year"] = graduation_year
+        if state_medals:
+            entry["state_medals"] = state_medals
         entries.append(entry)
     entries.sort(key=lambda e: (-e["career_wins"], -e["win_pct"], (e.get("name") or "").lower()))
     if limit is not None:

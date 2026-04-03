@@ -149,6 +149,11 @@ class WrestlingScraper:
         
         if self.league == 'hs':
             if self.gender == 'boys':
+                # 2013 and 2014 seasons used "High School" without gender suffix
+                if self.season_year in (2013, 2014):
+                    return [
+                        f"{start_year}-{short_end} High School",
+                    ]
                 return [
                     f"{start_year}-{short_end} High School Boys",
                     f"{start_year}-{short_end} HS Boys"

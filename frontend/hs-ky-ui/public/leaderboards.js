@@ -119,6 +119,13 @@ function renderLeaderboard() {
     } else {
       nameTd.textContent = entry.name;
     }
+    if (currentStat === 'career_wins' && entry.state_medals && entry.state_medals.length > 0) {
+      const medalMap = { 1: '🥇', 2: '🥈', 3: '🥉' };
+      const medalSpan = document.createElement('span');
+      medalSpan.className = 'state-medals';
+      medalSpan.textContent = entry.state_medals.map(p => medalMap[p] || '').join('');
+      nameTd.appendChild(medalSpan);
+    }
     tr.appendChild(nameTd);
 
     // Team

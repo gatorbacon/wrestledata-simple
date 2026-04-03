@@ -73,15 +73,20 @@ def merge_careers(
         raise ValueError(f"Career {merge_career_id} not found")
     
     # Check for conflicting seasons
-    keep_seasons = set(keep_career.get('seasons', {}).keys())
-    merge_seasons = set(merge_career.get('seasons', {}).keys())
-    conflicting_seasons = keep_seasons & merge_seasons
-    
-    if conflicting_seasons:
+    keep_seasons_dict = keep_career.get('seasons', {})
+    merge_seasons_dict = merge_career.get('seasons', {})
+    overlapping_seasons = set(keep_seasons_dict.keys()) & set(merge_seasons_dict.keys())
+
+    truly_conflicting = {
+        s for s in overlapping_seasons
+        if keep_seasons_dict[s] != merge_seasons_dict[s]
+    }
+
+    if truly_conflicting:
         raise ValueError(
-            f"Cannot merge: Both careers have seasons {conflicting_seasons}. "
-            f"Keep career has: {keep_career.get('seasons', {})}, "
-            f"Merge career has: {merge_career.get('seasons', {})}"
+            f"Cannot merge: Both careers have seasons {truly_conflicting} with different wrestler IDs. "
+            f"Keep career has: {keep_seasons_dict}, "
+            f"Merge career has: {merge_seasons_dict}"
         )
     
     # Merge seasons
@@ -176,13 +181,17 @@ def main():
     print(f"  Seasons: {list(merge_career.get('seasons', {}).keys())}")
     
     # Check for conflicts
-    keep_seasons = set(keep_career.get('seasons', {}).keys())
-    merge_seasons = set(merge_career.get('seasons', {}).keys())
-    conflicting = keep_seasons & merge_seasons
-    
-    if conflicting:
-        print(f"\n❌ Error: Cannot merge - both careers have seasons: {conflicting}")
+    keep_seasons_dict = keep_career.get('seasons', {})
+    merge_seasons_dict = merge_career.get('seasons', {})
+    overlapping = set(keep_seasons_dict.keys()) & set(merge_seasons_dict.keys())
+    truly_conflicting = {s for s in overlapping if keep_seasons_dict[s] != merge_seasons_dict[s]}
+
+    if truly_conflicting:
+        print(f"\n❌ Error: Cannot merge - both careers have seasons {truly_conflicting} with different wrestler IDs")
         return 1
+
+    if overlapping:
+        print(f"\n⚠️  Note: Both careers share seasons {overlapping} with identical wrestler IDs — duplicates will be deduplicated.")
     
     # Determine final name
     if args.name:
@@ -194,7 +203,7 @@ def main():
     
     print(f"\nMerged result:")
     print(f"  Name: {final_name}")
-    print(f"  Seasons: {sorted(list(keep_seasons | merge_seasons))}")
+    print(f"  Seasons: {sorted(list(set(keep_seasons_dict.keys()) | set(merge_seasons_dict.keys())))}")
     
     if args.dry_run:
         print("\n🔍 DRY RUN - No changes made")

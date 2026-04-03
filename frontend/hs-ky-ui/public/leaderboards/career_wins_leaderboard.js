@@ -93,13 +93,20 @@ function renderLeaderboard(data) {
     rankTd.appendChild(createRankBadge(rank));
     tr.appendChild(rankTd);
     
-    // Name with link
+    // Name with link + state medal emoji
     const nameTd = document.createElement("td");
     nameTd.className = "name";
     const a = document.createElement("a");
     a.href = `/wrestler.html?id=${entry.wrestler_id}`;
     a.textContent = entry.name;
     nameTd.appendChild(a);
+    if (entry.state_medals && entry.state_medals.length > 0) {
+      const medalMap = { 1: "🥇", 2: "🥈", 3: "🥉" };
+      const medalSpan = document.createElement("span");
+      medalSpan.className = "state-medals";
+      medalSpan.textContent = entry.state_medals.map(p => medalMap[p] || "").join("");
+      nameTd.appendChild(medalSpan);
+    }
     tr.appendChild(nameTd);
     
     // Team with link

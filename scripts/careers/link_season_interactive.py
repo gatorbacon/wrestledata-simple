@@ -63,6 +63,49 @@ def apply_name_alias(name: str, aliases: Dict[str, str]) -> str:
     return aliases.get(name_norm, name_norm)
 
 
+def maybe_add_career_name_alias(wrestler_name: str, canonical_name: str) -> None:
+    """
+    If wrestler_name differs from canonical_name, add wrestler_name as a variant
+    in mt/name_alias.json so future seasons can auto-match on either spelling.
+    """
+    if not wrestler_name or not canonical_name:
+        return
+    name_norm = normalize_name(wrestler_name)
+    canonical_norm = normalize_name(canonical_name)
+    if name_norm == canonical_norm:
+        return
+
+    alias_file = Path("mt/name_alias.json")
+    if alias_file.exists():
+        with alias_file.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+    else:
+        data = {"aliases": []}
+
+    aliases = data.setdefault("aliases", [])
+
+    # Find existing entry for this canonical name and add variant if missing
+    for entry in aliases:
+        if normalize_name(entry.get("canonical_name", "")) == canonical_norm:
+            existing_variants = [normalize_name(v) for v in entry.get("name_variants", [])]
+            if name_norm not in existing_variants:
+                entry.setdefault("name_variants", []).append(wrestler_name)
+                with alias_file.open("w", encoding="utf-8") as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
+                print(f"  📝 Added name alias: '{wrestler_name}' → '{canonical_name}'")
+            return
+
+    # No existing entry for this canonical — create one
+    aliases.append({
+        "canonical_name": canonical_name,
+        "name_variants": [wrestler_name],
+        "notes": "Auto-added from career link",
+    })
+    with alias_file.open("w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"  📝 Added name alias: '{wrestler_name}' → '{canonical_name}'")
+
+
 def names_match_with_synonyms(name1: str, name2: str, synonyms: Dict[str, List[str]]) -> bool:
     """Check if two names match, considering synonyms."""
     norm1 = normalize_name(name1)
@@ -313,12 +356,14 @@ def get_career_seasons(career: Dict) -> Set[int]:
     return set()
 
 
-def get_most_recent_season_in_career(career: Dict) -> Optional[int]:
-    """Get the most recent season in a career."""
+def get_most_recent_season_in_career(career: Dict, new_season: Optional[int] = None) -> Optional[int]:
+    """Get the season in a career nearest to new_season (or most recent if not provided)."""
     career_seasons = get_career_seasons(career)
-    if career_seasons:
-        return max(career_seasons)
-    return None
+    if not career_seasons:
+        return None
+    if new_season is not None:
+        return min(career_seasons, key=lambda s: abs(s - new_season))
+    return max(career_seasons)
 
 
 def get_career_teams(career: Dict, season_accomplishments: Dict[int, List[Dict]]) -> Set[str]:
@@ -485,12 +530,12 @@ def find_candidate_careers_optimized(
             if min_season > new_season + 3 or max_season < new_season - 3:
                 continue
         
-        # Find the most recent season in the career
-        most_recent_season = get_most_recent_season_in_career(career)
+        # Find the nearest season in the career to new_season
+        most_recent_season = get_most_recent_season_in_career(career, new_season)
         if not most_recent_season:
             continue
-        
-        # Get wrestler data from the most recent season
+
+        # Get wrestler data from the nearest season
         seasons = career.get('seasons', {})
         wrestler_existing_id = seasons.get(str(most_recent_season))
         wrestler_existing = None
@@ -801,8 +846,8 @@ def review_category(
             rejected.append(link)
             continue
         
-        # Find the most recent season in the career
-        most_recent_season = get_most_recent_season_in_career(career)
+        # Find the nearest season in the career to new_season
+        most_recent_season = get_most_recent_season_in_career(career, new_season)
         wrestler_existing = None
         if most_recent_season:
             wrestler_existing_id = career.get('seasons', {}).get(str(most_recent_season))
@@ -907,8 +952,8 @@ def review_category(
                 if not last_name_match and not last_name_fuzzy:
                     continue
                 
-                # Get most recent season wrestler data
-                other_most_recent_season = get_most_recent_season_in_career(other_career)
+                # Get nearest season wrestler data
+                other_most_recent_season = get_most_recent_season_in_career(other_career, new_season)
                 other_wrestler_existing = None
                 if other_most_recent_season:
                     other_wrestler_existing_id = other_career.get('seasons', {}).get(str(other_most_recent_season))
@@ -1047,6 +1092,10 @@ def review_category(
                                 alt_career_data['seasons'] = alt_seasons
                                 with open(alt_career_file, 'w', encoding='utf-8') as f:
                                     json.dump(alt_career_data, f, indent=2, ensure_ascii=False)
+                                maybe_add_career_name_alias(
+                                    wrestler_data.get('name', ''),
+                                    alt_career_data.get('canonical_name', ''),
+                                )
                                 print(f"✅ Linked to {selected_match['career_name']} and applied")
                         else:
                             print("✅ Linked to alternative career (already linked)")
@@ -1128,6 +1177,10 @@ def review_category(
                                 career_file = Path("data/careers") / f"{career_id}.json"
                                 with open(career_file, 'w', encoding='utf-8') as f:
                                     json.dump(career, f, indent=2, ensure_ascii=False)
+                                maybe_add_career_name_alias(
+                                    wrestler_data.get('name', '') if wrestler_data else '',
+                                    career.get('canonical_name', ''),
+                                )
                 print(f"✅ Approved and applied all {len(remaining)} remaining links")
                 break
             elif response_lower in ['a', 'approve']:
@@ -1146,6 +1199,10 @@ def review_category(
                             career_file = Path("data/careers") / f"{career_id}.json"
                             with open(career_file, 'w', encoding='utf-8') as f:
                                 json.dump(career, f, indent=2, ensure_ascii=False)
+                            maybe_add_career_name_alias(
+                                wrestler_data.get('name', '') if wrestler_data else '',
+                                career.get('canonical_name', ''),
+                            )
                             print("✅ Approved and applied")
                         else:
                             print("✅ Approved (already linked)")
@@ -1221,11 +1278,14 @@ def apply_links(links: List[Dict], category_name: str, careers: Dict[str, Dict])
             
             seasons[str(new_season)] = wrestler_new_id
             career['seasons'] = seasons
-            
+
             career_file = Path("data/careers") / f"{career_id}.json"
             with open(career_file, 'w', encoding='utf-8') as f:
                 json.dump(career, f, indent=2, ensure_ascii=False)
-            
+            maybe_add_career_name_alias(
+                wrestler_data.get('name', '') if wrestler_data else '',
+                career.get('canonical_name', ''),
+            )
             links_applied += 1
     
     print(f"✅ Applied {links_applied} links")
@@ -1414,7 +1474,7 @@ def run_linking_analysis(
         # Try Rule A
         auto_linked = False
         for career_id, career, score, reasons in candidates:
-            most_recent_season = get_most_recent_season_in_career(career)
+            most_recent_season = get_most_recent_season_in_career(career, new_season)
             if not most_recent_season:
                 continue
             
@@ -1445,7 +1505,7 @@ def run_linking_analysis(
         
         # Try Rule B
         for career_id, career, score, reasons in candidates:
-            most_recent_season = get_most_recent_season_in_career(career)
+            most_recent_season = get_most_recent_season_in_career(career, new_season)
             if not most_recent_season:
                 continue
             
