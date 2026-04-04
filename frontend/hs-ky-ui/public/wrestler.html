@@ -134,14 +134,20 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const params = new URLSearchParams(window.location.search);
+      const careerId = params.get("career_id");
       const wrestlerId = params.get("id");
-    
-      if (!wrestlerId) {
-        document.getElementById("wrestler-name").textContent = "No wrestler selected";
-        document.getElementById("wrestler-meta").textContent = "Use ?id=<wrestler_id>&gender=<boys|girls>";
+
+      if (careerId) {
+        loadCareerProfile(careerId);
         return;
       }
-    
+
+      if (!wrestlerId) {
+        document.getElementById("wrestler-name").textContent = "No wrestler selected";
+        document.getElementById("wrestler-meta").textContent = "Use ?id=<wrestler_id>&gender=<boys|girls> or ?career_id=<career_id>&gender=<boys|girls>";
+        return;
+      }
+
       loadWrestlerProfile(wrestlerId);
     });
     </script>

@@ -1,0 +1,95 @@
+{
+  "wrestler_id": "29680365132",
+  "name": "Blake Gioimo",
+  "team": "Iowa State",
+  "team_slug": "iowa_state",
+  "team_rank": 17,
+  "weight_class": 133,
+  "year": 2025,
+  "current_rank": 132,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.89,
+    "pa7": 10.58,
+    "pd7": -5.69,
+    "si_plus": 98.0,
+    "df_plus": 108.6,
+    "apr_plus": 94.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "29678757132",
+      "opponent_rank": 54,
+      "opponent_name": "JJ McComas",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29673854132",
+      "opponent_rank": 33,
+      "opponent_name": "Omar Ayoub",
+      "method": "TF 17-1 5:26"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-01-19",
+      "opponent_id": "29678757132",
+      "opponent_name": "JJ McComas",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 133,
+      "opponent_rank": 54,
+      "weight_class": "133",
+      "result": "W",
+      "method": "SV-1",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Cyclone Open"
+    },
+    {
+      "date": "2025-01-19",
+      "opponent_id": "29687380132",
+      "opponent_name": "Carter Schmidt",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 30,
+      "opponent_weight": 133,
+      "opponent_rank": 152,
+      "weight_class": "133",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-9",
+      "duration": "7:00",
+      "event": "Cyclone Open"
+    },
+    {
+      "date": "2025-01-19",
+      "opponent_id": "29673854132",
+      "opponent_name": "Omar Ayoub",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 11,
+      "opponent_weight": 133,
+      "opponent_rank": 33,
+      "weight_class": "133",
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "5:26",
+      "event": "Cyclone Open"
+    }
+  ],
+  "profile_generated_at": "2026-04-03"
+}

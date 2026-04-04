@@ -113,7 +113,17 @@ function renderLeaderboard() {
     const isActive = currentStat !== 'career_wins' || gradYear == null || gradYear >= seasonYear;
     if (isActive) {
       const nameLink = document.createElement('a');
-      nameLink.href = buildPageURL('wrestler.html', currentGender, { id: entry.wrestler_id });
+      if (currentStat === 'career_wins' && entry.career_id) {
+        nameLink.href = buildPageURL('wrestler.html', currentGender, { career_id: entry.career_id });
+      } else {
+        nameLink.href = buildPageURL('wrestler.html', currentGender, { id: entry.wrestler_id });
+      }
+      nameLink.textContent = entry.name;
+      nameTd.appendChild(nameLink);
+    } else if (currentStat === 'career_wins' && entry.career_id) {
+      // Graduated wrestler — still link to career profile
+      const nameLink = document.createElement('a');
+      nameLink.href = buildPageURL('wrestler.html', currentGender, { career_id: entry.career_id });
       nameLink.textContent = entry.name;
       nameTd.appendChild(nameLink);
     } else {

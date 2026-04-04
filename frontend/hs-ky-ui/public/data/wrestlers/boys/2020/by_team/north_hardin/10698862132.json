@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "31-9",
+    "overall": "33-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -277,6 +277,21 @@
     },
     {
       "date": "2020-01-11",
+      "opponent_id": "10622216132",
+      "opponent_name": "Kaiji Fujii",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "vs. North Hardin"
+    },
+    {
+      "date": "2020-01-11",
       "opponent_id": "10679183132",
       "opponent_name": "Devin Armstead",
       "opponent_team": "Oldham County",
@@ -334,21 +349,6 @@
       "score": null,
       "duration": "1:32",
       "event": "vs. South Oldham"
-    },
-    {
-      "date": "2020-01-11",
-      "opponent_id": "10622216132",
-      "opponent_name": "Kaiji Fujii",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "MD",
-      "score": "12-4",
-      "duration": "7:00",
-      "event": "vs. Central Hardin"
     },
     {
       "date": "2020-01-04",
@@ -636,5 +636,54 @@
       "event": "vs. North Hardin"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_006108",
+    "canonical_name": "Braedon Herron",
+    "seasons": [
+      2023,
+      2021,
+      2020,
+      2019
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2023,
+      "grade": 12,
+      "team": "North Hardin",
+      "record": "66-0",
+      "regional_place": 1,
+      "state_place": 1
+    },
+    {
+      "season": 2021,
+      "grade": 10,
+      "team": "North Hardin",
+      "record": "33-4",
+      "regional_place": 1,
+      "state_place": 3
+    },
+    {
+      "season": 2020,
+      "grade": 9,
+      "team": "North Hardin",
+      "record": "33-9",
+      "regional_place": 1,
+      "state_place": 4
+    },
+    {
+      "season": 2019,
+      "grade": 8,
+      "team": "North Hardin",
+      "record": "26-9",
+      "regional_place": 4,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 158,
+    "losses": 22,
+    "win_pct": 0.878
+  },
+  "profile_generated_at": "2026-04-04"
 }

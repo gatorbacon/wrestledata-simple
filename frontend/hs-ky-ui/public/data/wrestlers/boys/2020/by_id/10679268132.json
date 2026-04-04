@@ -183,7 +183,7 @@
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2020-01-11",
@@ -247,6 +247,21 @@
     },
     {
       "date": "2019-12-28",
+      "opponent_id": "10622209132",
+      "opponent_name": "Mason Polston",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:03",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2019-12-28",
       "opponent_id": "10901080132",
       "opponent_name": "Trevor Vilums",
       "opponent_team": "Male",
@@ -274,21 +289,6 @@
       "score": "16-0",
       "duration": "0:00",
       "event": "vs. Oldham County"
-    },
-    {
-      "date": "2019-12-28",
-      "opponent_id": "10622209132",
-      "opponent_name": "Mason Polston",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:03",
-      "event": "vs. Central Hardin"
     },
     {
       "date": "2019-12-27",
@@ -428,8 +428,8 @@
     {
       "date": "2019-12-14",
       "opponent_id": "10815546132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "John Doe",
+      "opponent_team": "Greenfield-Central",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -517,6 +517,21 @@
     },
     {
       "date": "2019-12-07",
+      "opponent_id": "10559284132",
+      "opponent_name": "David Gerkin",
+      "opponent_team": "Apollo High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2019-12-07",
       "opponent_id": "10559047132",
       "opponent_name": "Jabin Hite",
       "opponent_team": "LaRue County",
@@ -546,21 +561,6 @@
       "event": "vs. Oldham County"
     },
     {
-      "date": "2019-12-07",
-      "opponent_id": "10559284132",
-      "opponent_name": "David Gerkin",
-      "opponent_team": "Apollo High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "9-2",
-      "duration": "7:00",
-      "event": "vs. Apollo High School"
-    },
-    {
       "date": "2019-11-26",
       "opponent_id": "OUTSTATE_95953cdc0db6",
       "opponent_name": "Connor Nilson",
@@ -576,5 +576,54 @@
       "event": "vs. Fern Creek"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_009631",
+    "canonical_name": "Nick Favorite",
+    "seasons": [
+      2020,
+      2019,
+      2018,
+      2017
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2020,
+      "grade": 12,
+      "team": "Oldham County",
+      "record": "11-25",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2019,
+      "grade": 11,
+      "team": "Oldham County",
+      "record": "9-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2018,
+      "grade": 10,
+      "team": "Oldham County",
+      "record": "11-12",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2017,
+      "grade": 9,
+      "team": "Oldham County",
+      "record": "7-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 38,
+    "losses": 49,
+    "win_pct": 0.437
+  },
+  "profile_generated_at": "2026-04-04"
 }

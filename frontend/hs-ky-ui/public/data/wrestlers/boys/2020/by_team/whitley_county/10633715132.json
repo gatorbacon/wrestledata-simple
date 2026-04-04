@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "25-7",
+    "overall": "26-7",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -67,6 +67,21 @@
     },
     {
       "date": "2020-02-08",
+      "opponent_id": "10672997132",
+      "opponent_name": "Caden McWilliams",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "KHSAA Region 7"
+    },
+    {
+      "date": "2020-02-08",
       "opponent_id": "10806213132",
       "opponent_name": "Hunter Kellenbarger",
       "opponent_team": "Lafayette",
@@ -90,21 +105,6 @@
       "opponent_rank": null,
       "weight_class": "175",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "KHSAA Region 7"
-    },
-    {
-      "date": "2020-02-08",
-      "opponent_id": "10672997132",
-      "opponent_name": "Caden McWilliams",
-      "opponent_team": "Danville",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -158,8 +158,8 @@
     {
       "date": "2020-01-25",
       "opponent_id": "10666684132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Tim Allen",
+      "opponent_team": "Perry County Central",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -516,5 +516,63 @@
       "event": "vs. John Hardin"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_010017",
+    "canonical_name": "Steven Watson",
+    "seasons": [
+      2020,
+      2019,
+      2018,
+      2017,
+      2016
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2020,
+      "grade": 11,
+      "team": "Whitley County",
+      "record": "26-7",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2019,
+      "grade": 10,
+      "team": "Whitley County",
+      "record": "15-13",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2018,
+      "grade": 9,
+      "team": "Whitley County",
+      "record": "26-16",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2017,
+      "grade": 8,
+      "team": "Whitley County",
+      "record": "19-13",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2016,
+      "grade": 7,
+      "team": "Whitley County",
+      "record": "1-0",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 87,
+    "losses": 49,
+    "win_pct": 0.64
+  },
+  "profile_generated_at": "2026-04-04"
 }

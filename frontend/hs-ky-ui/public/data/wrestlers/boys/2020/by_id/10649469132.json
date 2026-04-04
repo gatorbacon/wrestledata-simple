@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "16-16",
+    "overall": "17-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -68,8 +68,8 @@
     {
       "date": "2020-01-25",
       "opponent_id": "10812491132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "jamon gibson",
+      "opponent_team": "Jeffersonville",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -292,6 +292,21 @@
     },
     {
       "date": "2020-01-04",
+      "opponent_id": "10550940132",
+      "opponent_name": "Trinity Gotlier",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "7:00",
+      "event": "Anderson County Bearcat Invitational"
+    },
+    {
+      "date": "2020-01-04",
       "opponent_id": "10712112132",
       "opponent_name": "Triston Brooks",
       "opponent_team": "Woodford County",
@@ -303,21 +318,6 @@
       "method": "FALL",
       "score": null,
       "duration": "2:58",
-      "event": "Anderson County Bearcat Invitational"
-    },
-    {
-      "date": "2020-01-04",
-      "opponent_id": "10550940132",
-      "opponent_name": "Trinity Gotlier",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-6",
-      "duration": "7:00",
       "event": "Anderson County Bearcat Invitational"
     },
     {
@@ -516,5 +516,36 @@
       "event": "vs. Owensboro"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_010344",
+    "canonical_name": "KADEN MCCONNAUGHHAY",
+    "seasons": [
+      2020,
+      2018
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2020,
+      "grade": 11,
+      "team": "Scott County",
+      "record": "17-16",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2018,
+      "grade": 9,
+      "team": "Scott County",
+      "record": "5-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 22,
+    "losses": 21,
+    "win_pct": 0.512
+  },
+  "profile_generated_at": "2026-04-04"
 }

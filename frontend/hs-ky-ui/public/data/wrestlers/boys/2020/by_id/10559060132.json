@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "23-11",
+    "overall": "22-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -35,6 +35,21 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2020-02-08",
+      "opponent_id": "11365485132",
+      "opponent_name": "Christopher Palmer",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "KHSAA Region 2"
+    },
     {
       "date": "2020-02-08",
       "opponent_id": "10622196132",
@@ -70,21 +85,6 @@
       "opponent_id": "10881580132",
       "opponent_name": "Joseph Evans",
       "opponent_team": "Fort Knox",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "KHSAA Region 2"
-    },
-    {
-      "date": "2020-02-08",
-      "opponent_id": "11365485132",
-      "opponent_name": "Christopher Palmer",
-      "opponent_team": "Owensboro",
       "opponent_team_rank": null,
       "opponent_weight": 144,
       "opponent_rank": null,
@@ -546,5 +546,63 @@
       "event": "vs. journeyman"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_006484",
+    "canonical_name": "Matthew Ball",
+    "seasons": [
+      2023,
+      2022,
+      2021,
+      2020,
+      2019
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2023,
+      "grade": 12,
+      "team": "LaRue County",
+      "record": "30-14",
+      "regional_place": 1,
+      "state_place": 8
+    },
+    {
+      "season": 2022,
+      "grade": 11,
+      "team": "LaRue County",
+      "record": "40-13",
+      "regional_place": 1,
+      "state_place": 6
+    },
+    {
+      "season": 2021,
+      "grade": 10,
+      "team": "LaRue County",
+      "record": "13-8",
+      "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2020,
+      "grade": 9,
+      "team": "LaRue County",
+      "record": "22-11",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2019,
+      "grade": 8,
+      "team": "La Rue County",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 105,
+    "losses": 48,
+    "win_pct": 0.686
+  },
+  "profile_generated_at": "2026-04-04"
 }

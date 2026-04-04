@@ -25,14 +25,8 @@ function formatDecimal(v, decimals = 2) {
 
 function formatWithRank(value, rank, formatter = null) {
   if (value === null || value === undefined || isNaN(value)) return "—";
-  let valStr;
-  if (formatter) {
-    valStr = formatter(value);
-  } else {
-    valStr = typeof value === "number" ? Number(value).toFixed(1) : String(value);
-  }
-  if (rank === null || rank === undefined) return valStr;
-  return `${valStr} (#${rank})`;
+  if (formatter) return formatter(value);
+  return typeof value === "number" ? Number(value).toFixed(1) : String(value);
 }
 
 // Note: hs_config.js must be loaded before this file
@@ -248,8 +242,7 @@ function formatWLRecord(wins, losses, winPct) {
   if (wins === null || wins === undefined || losses === null || losses === undefined) {
     return "—";
   }
-  const pct = winPct !== null && winPct !== undefined ? (winPct * 100).toFixed(1) : "0.0";
-  return `${wins}–${losses} (${pct}%)`;
+  return `${wins}–${losses}`;
 }
 
 function calculateTopRecord(starters, maxRank) {
@@ -307,12 +300,8 @@ function formatTopRecord(record) {
   const { wins, losses } = record;
   const total = wins + losses;
   
-  if (total === 0) {
-    return "0–0 (—)";
-  }
-  
-  const winPct = ((wins / total) * 100).toFixed(1);
-  return `${wins}–${losses} (${winPct}%)`;
+  if (total === 0) return "0–0";
+  return `${wins}–${losses}`;
 }
 
 function computeTeamRankFromData(teamName, teamsData) {

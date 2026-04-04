@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "32-2",
+    "overall": "18-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -78,6 +78,21 @@
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
+      "event": "KHSAA State Championships"
+    },
+    {
+      "date": "2020-02-15",
+      "opponent_id": "10787677132",
+      "opponent_name": "George Ferree",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "KHSAA State Championships"
     },
     {
@@ -257,6 +272,21 @@
       "result": "W",
       "method": "FF",
       "score": null,
+      "duration": "7:00",
+      "event": "Louisville City Championship"
+    },
+    {
+      "date": "2020-01-11",
+      "opponent_id": "10787677132",
+      "opponent_name": "George Ferree",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
       "duration": "7:00",
       "event": "Louisville City Championship"
     },
@@ -546,5 +576,45 @@
       "event": "vs. Western"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_009558",
+    "canonical_name": "July Soe",
+    "seasons": [
+      2020,
+      2019,
+      2018
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2020,
+      "grade": 12,
+      "team": "Iroquois",
+      "record": "18-1",
+      "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2019,
+      "grade": 11,
+      "team": "Iroquois",
+      "record": "22-4",
+      "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2018,
+      "grade": 10,
+      "team": "Iroquois",
+      "record": "20-3",
+      "regional_place": 3,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 60,
+    "losses": 8,
+    "win_pct": 0.882
+  },
+  "profile_generated_at": "2026-04-04"
 }

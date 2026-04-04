@@ -318,7 +318,7 @@
       "method": "MD",
       "score": "17-6",
       "duration": "7:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2020-01-11",
@@ -382,6 +382,21 @@
     },
     {
       "date": "2019-12-28",
+      "opponent_id": "10622202132",
+      "opponent_name": "Kyler Lee",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:50",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2019-12-28",
       "opponent_id": "10711635132",
       "opponent_name": "Virgil Garcia",
       "opponent_team": "Male",
@@ -409,21 +424,6 @@
       "score": "13-6",
       "duration": "7:00",
       "event": "vs. Oldham County"
-    },
-    {
-      "date": "2019-12-28",
-      "opponent_id": "10622202132",
-      "opponent_name": "Kyler Lee",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:50",
-      "event": "vs. Central Hardin"
     },
     {
       "date": "2019-12-28",
@@ -518,8 +518,8 @@
     {
       "date": "2019-12-14",
       "opponent_id": "-1",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Mariah Gardner",
+      "opponent_team": "Bullitt East",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -548,8 +548,8 @@
     {
       "date": "2019-12-14",
       "opponent_id": "10815546132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "John Doe",
+      "opponent_team": "Greenfield-Central",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -588,7 +588,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2019-12-07",
@@ -666,5 +666,36 @@
       "event": "vs. Oldham County"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_009407",
+    "canonical_name": "Devin Armstead",
+    "seasons": [
+      2020,
+      2019
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2020,
+      "grade": 10,
+      "team": "Oldham County",
+      "record": "28-14",
+      "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2019,
+      "grade": 9,
+      "team": "Oldham County",
+      "record": "42-7",
+      "regional_place": 1,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 70,
+    "losses": 21,
+    "win_pct": 0.769
+  },
+  "profile_generated_at": "2026-04-04"
 }

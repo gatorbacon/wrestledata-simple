@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "31-12",
+    "overall": "32-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -262,6 +262,21 @@
     },
     {
       "date": "2020-01-11",
+      "opponent_id": "10622216132",
+      "opponent_name": "Kaiji Fujii",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "MD",
+      "score": "19-9",
+      "duration": "7:00",
+      "event": "vs. Woodford County"
+    },
+    {
+      "date": "2020-01-11",
       "opponent_id": "10679183132",
       "opponent_name": "Devin Armstead",
       "opponent_team": "Oldham County",
@@ -289,21 +304,6 @@
       "score": null,
       "duration": "5:29",
       "event": "vs. Woodford County"
-    },
-    {
-      "date": "2020-01-11",
-      "opponent_id": "10622216132",
-      "opponent_name": "Kaiji Fujii",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "MD",
-      "score": "19-9",
-      "duration": "7:00",
-      "event": "vs. Central Hardin"
     },
     {
       "date": "2020-01-11",
@@ -603,7 +603,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2019-11-23",
@@ -681,5 +681,45 @@
       "event": "vs. Knox Central High School"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_009843",
+    "canonical_name": "Johnathan Pittman",
+    "seasons": [
+      2020,
+      2019,
+      2017
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2020,
+      "grade": 11,
+      "team": "Woodford County",
+      "record": "32-11",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2019,
+      "grade": 10,
+      "team": "Woodford County",
+      "record": "12-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2017,
+      "grade": 8,
+      "team": "Woodford County",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 44,
+    "losses": 20,
+    "win_pct": 0.688
+  },
+  "profile_generated_at": "2026-04-04"
 }

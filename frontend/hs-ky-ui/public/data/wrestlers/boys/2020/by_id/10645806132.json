@@ -202,6 +202,21 @@
     },
     {
       "date": "2020-01-11",
+      "opponent_id": "10622208132",
+      "opponent_name": "Dakota Jarvis",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. South Oldham"
+    },
+    {
+      "date": "2020-01-11",
       "opponent_id": "11053323132",
       "opponent_name": "Isaiah Edwards",
       "opponent_team": "North Hardin",
@@ -244,21 +259,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Anderson County"
-    },
-    {
-      "date": "2020-01-11",
-      "opponent_id": "10622208132",
-      "opponent_name": "Dakota Jarvis",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Central Hardin"
     },
     {
       "date": "2020-01-04",
@@ -428,8 +428,8 @@
     {
       "date": "2019-12-27",
       "opponent_id": "11079131132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Alex Cooper",
+      "opponent_team": "Evansville F.J. Reitz",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -533,8 +533,8 @@
     {
       "date": "2019-12-14",
       "opponent_id": "10633581132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Tristan McKenzie",
+      "opponent_team": "ARCHBISHOP MOELLER",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -621,5 +621,54 @@
       "event": "vs. South Oldham"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_009417",
+    "canonical_name": "Walker McCubbin",
+    "seasons": [
+      2020,
+      2019,
+      2018,
+      2017
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2020,
+      "grade": 12,
+      "team": "South Oldham",
+      "record": "34-5",
+      "regional_place": 2,
+      "state_place": 7
+    },
+    {
+      "season": 2019,
+      "grade": 11,
+      "team": "South Oldham",
+      "record": "19-15",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2018,
+      "grade": 10,
+      "team": "South Oldham",
+      "record": "18-15",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2017,
+      "grade": 9,
+      "team": "South Oldham",
+      "record": "32-22",
+      "regional_place": 4,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 103,
+    "losses": 57,
+    "win_pct": 0.644
+  },
+  "profile_generated_at": "2026-04-04"
 }

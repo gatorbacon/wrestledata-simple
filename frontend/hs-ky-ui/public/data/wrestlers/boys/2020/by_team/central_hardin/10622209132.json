@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "32-9",
+    "overall": "31-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -202,21 +202,6 @@
     },
     {
       "date": "2020-01-11",
-      "opponent_id": "10698870132",
-      "opponent_name": "Ryan Portwood",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:23",
-      "event": "vs. Central Hardin"
-    },
-    {
-      "date": "2020-01-11",
       "opponent_id": "10679268132",
       "opponent_name": "Nick Favorite",
       "opponent_team": "Oldham County",
@@ -228,7 +213,22 @@
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2020-01-11",
+      "opponent_id": "10698870132",
+      "opponent_name": "Ryan Portwood",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:23",
+      "event": "vs. North Hardin"
     },
     {
       "date": "2020-01-11",
@@ -243,7 +243,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. South Oldham"
     },
     {
       "date": "2020-01-11",
@@ -378,7 +378,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:03",
-      "event": "vs. Central Hardin"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2019-12-27",
@@ -651,5 +651,54 @@
       "event": "vs. Lafayette"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_007731",
+    "canonical_name": "Mason Polston",
+    "seasons": [
+      2022,
+      2021,
+      2020,
+      2019
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2022,
+      "grade": 12,
+      "team": "Central Hardin",
+      "record": "27-4",
+      "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2021,
+      "grade": 11,
+      "team": "Central Hardin",
+      "record": "8-8",
+      "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2020,
+      "grade": 10,
+      "team": "Central Hardin",
+      "record": "31-9",
+      "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2019,
+      "grade": 9,
+      "team": "Central Hardin",
+      "record": "31-10",
+      "regional_place": 2,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 97,
+    "losses": 31,
+    "win_pct": 0.758
+  },
+  "profile_generated_at": "2026-04-04"
 }

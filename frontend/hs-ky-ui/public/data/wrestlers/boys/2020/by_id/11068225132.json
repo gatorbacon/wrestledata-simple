@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "49-11",
+    "overall": "50-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -97,6 +97,21 @@
     },
     {
       "date": "2020-02-15",
+      "opponent_id": "10679559132",
+      "opponent_name": "Blake Young",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "KHSAA State Championships"
+    },
+    {
+      "date": "2020-02-15",
       "opponent_id": "10568938132",
       "opponent_name": "Darius Moore",
       "opponent_team": "Union County",
@@ -138,21 +153,6 @@
       "method": "FALL",
       "score": null,
       "duration": "2:30",
-      "event": "KHSAA State Championships"
-    },
-    {
-      "date": "2020-02-15",
-      "opponent_id": "10679559132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "DEC",
-      "score": "4-2",
-      "duration": "7:00",
       "event": "KHSAA State Championships"
     },
     {
@@ -877,6 +877,21 @@
     },
     {
       "date": "2019-12-07",
+      "opponent_id": "10679289132",
+      "opponent_name": "Blake Fox",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:05",
+      "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2019-12-07",
       "opponent_id": "10778948132",
       "opponent_name": "Tony Lagalbo",
       "opponent_team": "John Hardin",
@@ -907,21 +922,6 @@
     },
     {
       "date": "2019-12-07",
-      "opponent_id": "10679289132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:05",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2019-12-07",
       "opponent_id": "OUTSTATE_c187bf3da90b",
       "opponent_name": "Unknown",
       "opponent_team": "North Oldham",
@@ -936,5 +936,54 @@
       "event": "vs. North Oldham"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_008915",
+    "canonical_name": "Dakota Brooksbank",
+    "seasons": [
+      2021,
+      2020,
+      2019,
+      2018
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2021,
+      "grade": 12,
+      "team": "Simon Kenton",
+      "record": "26-4",
+      "regional_place": 1,
+      "state_place": 1
+    },
+    {
+      "season": 2020,
+      "grade": 11,
+      "team": "Simon Kenton",
+      "record": "50-11",
+      "regional_place": 3,
+      "state_place": 6
+    },
+    {
+      "season": 2019,
+      "grade": 10,
+      "team": "Simon Kenton",
+      "record": "37-24",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2018,
+      "grade": 9,
+      "team": "Simon Kenton",
+      "record": "2-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 115,
+    "losses": 45,
+    "win_pct": 0.719
+  },
+  "profile_generated_at": "2026-04-04"
 }

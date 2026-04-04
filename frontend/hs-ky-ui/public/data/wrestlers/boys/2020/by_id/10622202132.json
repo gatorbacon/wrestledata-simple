@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "34-12",
+    "overall": "33-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -158,10 +158,10 @@
     {
       "date": "2020-01-25",
       "opponent_id": "10679289132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Blake Fox",
+      "opponent_team": "Oldham County",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 190,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "W",
@@ -263,10 +263,10 @@
     {
       "date": "2020-01-11",
       "opponent_id": "10679289132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Blake Fox",
+      "opponent_team": "Oldham County",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 190,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "L",
@@ -363,15 +363,15 @@
       "method": "FALL",
       "score": null,
       "duration": "3:50",
-      "event": "vs. Central Hardin"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2019-12-28",
       "opponent_id": "10679289132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Blake Fox",
+      "opponent_team": "Oldham County",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 190,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "L",
@@ -726,5 +726,54 @@
       "event": "vs. Lafayette"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_009469",
+    "canonical_name": "Kyler Lee",
+    "seasons": [
+      2020,
+      2019,
+      2018,
+      2017
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2020,
+      "grade": 12,
+      "team": "Central Hardin",
+      "record": "33-12",
+      "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2019,
+      "grade": 11,
+      "team": "Central Hardin",
+      "record": "28-19",
+      "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2018,
+      "grade": 10,
+      "team": "Central Hardin",
+      "record": "21-13",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2017,
+      "grade": 9,
+      "team": "Central Hardin",
+      "record": "10-19",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 92,
+    "losses": 63,
+    "win_pct": 0.594
+  },
+  "profile_generated_at": "2026-04-04"
 }

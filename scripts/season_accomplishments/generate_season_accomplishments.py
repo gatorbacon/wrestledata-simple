@@ -17,6 +17,43 @@ from typing import Dict, List, Optional, Set
 from collections import defaultdict
 from datetime import datetime
 
+# Team name aliases: any variant in the list maps to the canonical (first) form.
+_TEAM_ALIASES: list[tuple[str, ...]] = [
+    ("Walton-Verona", "Walton Verona"),
+    ("LaRue County", "Larue County", "La Rue County"),
+]
+
+def _normalize_team(name: str) -> str:
+    """Return a canonical team name so hyphenated/spaced variants match."""
+    name_lower = name.strip().lower()
+    for group in _TEAM_ALIASES:
+        if name_lower in {v.lower() for v in group}:
+            return group[0].lower()
+    return name_lower
+
+
+# Persistent cache for manual wrestler matches so we never ask the same question twice.
+# Keyed by "name_lower|team_lower|weight" → wrestler_id (or "SKIP").
+# Stored separately per season+gender so IDs don't bleed across years.
+def _match_cache_path(gender: str, season: int) -> Path:
+    return Path(f"data/season_accomplishments/{gender}/{season}/match_cache.json")
+
+def _load_match_cache(gender: str, season: int) -> dict:
+    p = _match_cache_path(gender, season)
+    if p.exists():
+        with open(p, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+def _save_match_cache(cache: dict, gender: str, season: int) -> None:
+    p = _match_cache_path(gender, season)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with open(p, "w", encoding="utf-8") as f:
+        json.dump(cache, f, indent=2, ensure_ascii=False)
+
+def _cache_key(name: str, team: str, weight: str) -> str:
+    return f"{name.lower().strip()}|{_normalize_team(team)}|{weight}"
+
 
 def parse_grade(grade_str: Optional[str]) -> Optional[int]:
     """
@@ -426,32 +463,32 @@ def find_wrestler_by_name_team(
     """
     # Normalize names and teams for comparison
     name_lower = name.lower().strip()
-    team_lower = team.lower().strip()
+    team_lower = _normalize_team(team)
     weight_int = int(weight) if weight.isdigit() else None
-    
+
     # Try exact match first
     for wrestler in wrestlers:
         wrestler_name = wrestler.get('name', '').lower().strip()
-        wrestler_team = wrestler.get('team', '').lower().strip()
+        wrestler_team = _normalize_team(wrestler.get('team', ''))
         wrestler_weight = wrestler.get('final_weight')
-        
-        if (wrestler_name == name_lower and 
+
+        if (wrestler_name == name_lower and
             wrestler_team == team_lower and
             wrestler_weight == weight_int):
             return wrestler.get('season_wrestler_id')
-    
+
     # Try fuzzy match (name and team, weight optional)
     candidates = []
     for wrestler in wrestlers:
         wrestler_name = wrestler.get('name', '').lower().strip()
-        wrestler_team = wrestler.get('team', '').lower().strip()
+        wrestler_team = _normalize_team(wrestler.get('team', ''))
         wrestler_weight = wrestler.get('final_weight')
-        
+
         # Check team match (must be good)
-        team_match = (team_lower == wrestler_team or 
-                     team_lower in wrestler_team or 
+        team_match = (team_lower == wrestler_team or
+                     team_lower in wrestler_team or
                      wrestler_team in team_lower)
-        
+
         if not team_match:
             continue
         
@@ -484,7 +521,7 @@ def find_wrestler_by_name_team(
         if best['weight_match'] and best['name_similarity'] >= 0.8:
             return best['wrestler_id']
         # Or if exact team match and very high name similarity
-        elif team_lower == best['team'].lower() and best['name_similarity'] >= 0.9:
+        elif team_lower == _normalize_team(best['team']) and best['name_similarity'] >= 0.9:
             return best['wrestler_id']
     
     return None
@@ -495,7 +532,10 @@ def interactive_match_wrestler(
     placement_team: str,
     placement_weight: str,
     placement_place: int,
-    wrestlers: List[Dict]
+    wrestlers: List[Dict],
+    match_cache: Optional[Dict] = None,
+    gender: str = "",
+    season: int = 0,
 ) -> Optional[str]:
     """
     Interactively match a placement file wrestler to a season wrestler.
@@ -510,6 +550,11 @@ def interactive_match_wrestler(
     Returns:
         Wrestler ID if matched, None if skipped
     """
+    # Check cache before prompting
+    key = _cache_key(placement_name, placement_team, placement_weight)
+    if match_cache is not None and key in match_cache:
+        return match_cache[key]
+
     print(f"\n{'='*80}")
     print(f"⚠️  UNMATCHED WRESTLER FROM PLACEMENT FILE")
     print(f"{'='*80}")
@@ -524,22 +569,24 @@ def interactive_match_wrestler(
     weight_int = int(placement_weight) if placement_weight.isdigit() else None
     
     candidates = []
+    team_lower_norm = _normalize_team(team_lower)
+
     for wrestler in wrestlers:
         wrestler_name = wrestler.get('name', '').lower().strip()
-        wrestler_team = wrestler.get('team', '').lower().strip()
+        wrestler_team = _normalize_team(wrestler.get('team', ''))
         wrestler_weight = wrestler.get('final_weight')
-        
+
         # Score candidates
         name_score = 0
         if name_lower == wrestler_name:
             name_score = 100
         elif name_lower in wrestler_name or wrestler_name in name_lower:
             name_score = 50
-        
+
         team_score = 0
-        if team_lower == wrestler_team:
+        if team_lower_norm == wrestler_team:
             team_score = 100
-        elif team_lower in wrestler_team or wrestler_team in team_lower:
+        elif team_lower_norm in wrestler_team or wrestler_team in team_lower_norm:
             team_score = 50
         
         weight_score = 100 if wrestler_weight == weight_int else 0
@@ -565,25 +612,53 @@ def interactive_match_wrestler(
         
         while True:
             try:
-                choice = input(f"\nSelect wrestler number (1-{min(len(candidates), 10)}), or 's' to skip, or 'm' to enter ID manually: ").strip().lower()
-                
-                if choice == 's':
+                choice = input(f"\nSelect wrestler number (1-{min(len(candidates), 10)}), or 's' to skip, or '/' to search by name: ").strip()
+                choice_lower = choice.lower()
+
+                if choice_lower == 's':
                     print("  Skipped.")
                     return None
-                elif choice == 'm':
-                    manual_id = input("  Enter wrestler ID manually: ").strip()
-                    # Verify ID exists
-                    if any(w.get('season_wrestler_id') == manual_id for w in wrestlers):
-                        print(f"  Matched to ID: {manual_id}")
-                        return manual_id
-                    else:
-                        print("  Invalid ID. Try again.")
+                elif choice.startswith('/'):
+                    query = choice[1:].strip()
+                    if not query:
+                        query = input("  Search for: ").strip()
+                    if not query:
+                        print("  No query entered. Try again.")
                         continue
+                    hits = [w for w in wrestlers if query.lower() in w.get('name', '').lower()]
+                    if not hits:
+                        print(f"  No wrestlers found matching '{query}'.")
+                        continue
+                    print(f"\n  Search results for '{query}':")
+                    for i, w in enumerate(hits[:20], 1):
+                        wt = w.get('final_weight') or w.get('weight_class') or '?'
+                        print(f"  {i:2d}. {w.get('name',''):<30} {w.get('team',''):<30} Weight: {wt}")
+                    sub = input(f"  Select number (1-{min(len(hits), 20)}), or Enter to cancel: ").strip()
+                    if not sub:
+                        continue
+                    try:
+                        sub_idx = int(sub)
+                        if 1 <= sub_idx <= min(len(hits), 20):
+                            selected = hits[sub_idx - 1]
+                            wid = selected.get('season_wrestler_id')
+                            print(f"  Matched: {selected['name']} ({selected.get('team','')})")
+                            if match_cache is not None:
+                                match_cache[key] = wid
+                                _save_match_cache(match_cache, gender, season)
+                            return wid
+                        else:
+                            print("  Invalid number. Try again.")
+                    except ValueError:
+                        print("  Invalid input. Try again.")
+                    continue
                 else:
                     idx = int(choice)
                     if 1 <= idx <= min(len(candidates), 10):
                         selected = candidates[idx - 1]
                         print(f"  Matched: {selected['name']} ({selected['team']})")
+                        if match_cache is not None:
+                            match_cache[key] = selected['wrestler_id']
+                            _save_match_cache(match_cache, gender, season)
                         return selected['wrestler_id']
                     else:
                         print("  Invalid number. Try again.")
@@ -593,23 +668,42 @@ def interactive_match_wrestler(
                 continue
     else:
         print("\nNo similar wrestlers found.")
-        manual_id = input("Enter wrestler ID manually (or press Enter to skip): ").strip()
-        if manual_id:
-            # Verify ID exists
-            if any(w.get('season_wrestler_id') == manual_id for w in wrestlers):
-                print(f"  Matched to ID: {manual_id}")
-                return manual_id
-            else:
-                print("  Invalid ID. Skipping.")
+        while True:
+            query = input("Search by name (or press Enter to skip): ").strip()
+            if not query:
+                print("  Skipped.")
                 return None
-        else:
-            print("  Skipped.")
-            return None
+            hits = [w for w in wrestlers if query.lower() in w.get('name', '').lower()]
+            if not hits:
+                print(f"  No wrestlers found matching '{query}'. Try again.")
+                continue
+            print(f"\n  Search results for '{query}':")
+            for i, w in enumerate(hits[:20], 1):
+                wt = w.get('final_weight') or w.get('weight_class') or '?'
+                print(f"  {i:2d}. {w.get('name',''):<30} {w.get('team',''):<30} Weight: {wt}")
+            sub = input(f"  Select number (1-{min(len(hits), 20)}), or Enter to search again: ").strip()
+            if not sub:
+                continue
+            try:
+                sub_idx = int(sub)
+                if 1 <= sub_idx <= min(len(hits), 20):
+                    selected = hits[sub_idx - 1]
+                    wid = selected.get('season_wrestler_id')
+                    print(f"  Matched: {selected['name']} ({selected.get('team','')})")
+                    if match_cache is not None:
+                        match_cache[key] = wid
+                        _save_match_cache(match_cache, gender, season)
+                    return wid
+                else:
+                    print("  Invalid number. Try again.")
+            except ValueError:
+                print("  Invalid input. Try again.")
 
 
 def apply_state_placements_from_file(
     accomplishments: Dict,
-    placement_file_path: Path
+    placement_file_path: Path,
+    match_cache: Optional[Dict] = None,
 ) -> Dict[str, int]:
     """
     Apply state tournament placements from placement file.
@@ -685,9 +779,12 @@ def apply_state_placements_from_file(
                     placement_team,
                     placement_weight,
                     placement_place,
-                    wrestlers
+                    wrestlers,
+                    match_cache=match_cache,
+                    gender=accomplishments.get('gender', ''),
+                    season=accomplishments.get('season', 0),
                 )
-                
+
                 if wrestler_id and wrestler_id in wrestlers_by_id:
                     wrestler = wrestlers_by_id[wrestler_id]
                     wrestler['state_place'] = placement_place
@@ -695,7 +792,7 @@ def apply_state_placements_from_file(
                     wrestler['state_qualifier'] = True
                     stats['matched'] += 1
                     stats['updated'] += 1
-    
+
     # Summary
     print(f"\n{'='*80}")
     print("STATE PLACEMENT IMPORT SUMMARY")
@@ -707,6 +804,102 @@ def apply_state_placements_from_file(
     if stats['unmatched'] > 0:
         print(f"\n⚠️  Warning: {stats['unmatched']} placements could not be matched.")
     
+    return stats
+
+
+def apply_regional_placements_from_files(
+    accomplishments: Dict,
+    season: int,
+    gender: str,
+    state: str = 'ky',
+    match_cache: Optional[Dict] = None,
+) -> Dict[str, int]:
+    """
+    Apply regional tournament placements from the scraped region files.
+
+    Reads data/hs_{state}_{gender}/{season}/regional_placements/region_{N}.txt
+    for N in 1..8 and sets regional_place (and regional_region) on each matched
+    wrestler. Uses the same parse_placement_file / interactive_match_wrestler
+    logic as the state placement importer.
+    """
+    base_dir = Path(f"data/hs_{state}_{gender}/{season}/regional_placements")
+    if not base_dir.exists():
+        print(f"\n⚠️  No regional placements directory: {base_dir}")
+        return {'matched': 0, 'unmatched': 0, 'updated': 0}
+
+    wrestlers = accomplishments.get('wrestlers', [])
+    wrestlers_by_id = {w.get('season_wrestler_id'): w for w in wrestlers}
+
+    stats = {'matched': 0, 'unmatched': 0, 'updated': 0}
+
+    for region in range(1, 9):
+        region_file = base_dir / f"region_{region}.txt"
+        if not region_file.exists():
+            print(f"  [SKIP] Region {region}: file not found")
+            continue
+
+        placements_by_weight = parse_placement_file(region_file)
+        if not placements_by_weight:
+            print(f"  [SKIP] Region {region}: no placements parsed")
+            continue
+
+        region_matched = 0
+        region_unmatched = 0
+
+        for weight, placements in placements_by_weight.items():
+            for placement in placements:
+                # Only care about top 4 (1st/2nd from 1st Place Match,
+                # 3rd/4th from 3rd Place Match)
+                if placement['place'] > 4:
+                    continue
+
+                p_name = placement['name']
+                p_team = placement['team']
+                p_weight = placement['weight']
+                p_place = placement['place']
+
+                wrestler_id = find_wrestler_by_name_team(
+                    p_name, p_team, p_weight, wrestlers, wrestlers_by_id
+                )
+
+                if wrestler_id and wrestler_id in wrestlers_by_id:
+                    w = wrestlers_by_id[wrestler_id]
+                    # File-based data is authoritative; overwrite match-derived value
+                    w['regional_place'] = p_place
+                    w['regional_region'] = region
+                    w['regional_qualifier'] = True
+                    region_matched += 1
+                    stats['matched'] += 1
+                    stats['updated'] += 1
+                else:
+                    region_unmatched += 1
+                    stats['unmatched'] += 1
+                    wrestler_id = interactive_match_wrestler(
+                        p_name, p_team, p_weight, p_place, wrestlers,
+                        match_cache=match_cache,
+                        gender=gender,
+                        season=season,
+                    )
+                    if wrestler_id and wrestler_id in wrestlers_by_id:
+                        w = wrestlers_by_id[wrestler_id]
+                        w['regional_place'] = p_place
+                        w['regional_region'] = region
+                        w['regional_qualifier'] = True
+                        region_matched += 1
+                        stats['matched'] += 1
+                        stats['updated'] += 1
+
+        print(f"  Region {region}: {region_matched} matched, {region_unmatched} unmatched")
+
+    print(f"\n{'='*80}")
+    print("REGIONAL PLACEMENT IMPORT SUMMARY")
+    print(f"{'='*80}")
+    print(f"  Matched: {stats['matched']}")
+    print(f"  Unmatched: {stats['unmatched']}")
+    print(f"  Updated: {stats['updated']}")
+    if stats['unmatched'] > 0:
+        print(f"\n⚠️  {stats['unmatched']} regional placements could not be matched.")
+
     return stats
 
 
@@ -849,6 +1042,7 @@ def process_season(season: int, gender: str, state: str = 'ky') -> Dict:
                 'record': record,
                 'regional_qualifier': postseason['regional_qualifier'],
                 'regional_place': postseason['regional_place'],
+                'regional_region': None,
                 'state_qualifier': postseason['state_qualifier'],
                 'state_place': postseason['state_place'],
                 'state_champion': postseason['state_champion'],
@@ -865,16 +1059,22 @@ def process_season(season: int, gender: str, state: str = 'ky') -> Dict:
         'wrestlers': list(wrestlers_by_id.values())
     }
     
+    # Load persistent match cache (shared across state + regional matching this run)
+    match_cache = _load_match_cache(gender, season)
+
     # Apply state placements from placement file
     state_lower = state.lower()
     placement_file_path = Path(f"data/hs_{state_lower}_{gender}/{season}/placement.txt")
-    # Also check for .md extension if .txt doesn't exist
     if not placement_file_path.exists():
         placement_file_path = Path(f"data/hs_{state_lower}_{gender}/{season}/placement.md")
-    
-    # Apply state placements from file (this will update state_place and state_champion)
-    apply_state_placements_from_file(accomplishments, placement_file_path)
-    
+    apply_state_placements_from_file(accomplishments, placement_file_path, match_cache=match_cache)
+
+    # Apply regional placements from scraped region files
+    print(f"\nLoading regional placements from: data/hs_{state_lower}_{gender}/{season}/regional_placements/")
+    apply_regional_placements_from_files(
+        accomplishments, season, gender, state=state_lower, match_cache=match_cache
+    )
+
     return accomplishments
 
 

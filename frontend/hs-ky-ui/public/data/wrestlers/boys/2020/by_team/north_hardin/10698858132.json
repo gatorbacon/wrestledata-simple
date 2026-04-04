@@ -468,7 +468,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:31",
-      "event": "vs. Central Hardin"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2020-01-04",
@@ -682,6 +682,21 @@
     },
     {
       "date": "2019-12-07",
+      "opponent_id": "10559284132",
+      "opponent_name": "David Gerkin",
+      "opponent_team": "Apollo High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. North Hardin"
+    },
+    {
+      "date": "2019-12-07",
       "opponent_id": "10901138132",
       "opponent_name": "Madison Johns",
       "opponent_team": "Male",
@@ -724,21 +739,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Evansville North"
-    },
-    {
-      "date": "2019-12-07",
-      "opponent_id": "10559284132",
-      "opponent_name": "David Gerkin",
-      "opponent_team": "Apollo High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Apollo High School"
     },
     {
       "date": "2019-12-07",
@@ -831,5 +831,63 @@
       "event": "vs. Western Hills"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_008702",
+    "canonical_name": "Devon Herron",
+    "seasons": [
+      2022,
+      2021,
+      2020,
+      2019,
+      2018
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2022,
+      "grade": 12,
+      "team": "North Hardin",
+      "record": "52-1",
+      "regional_place": 1,
+      "state_place": 2
+    },
+    {
+      "season": 2021,
+      "grade": 11,
+      "team": "North Hardin",
+      "record": "27-0",
+      "regional_place": 1,
+      "state_place": 1
+    },
+    {
+      "season": 2020,
+      "grade": 10,
+      "team": "North Hardin",
+      "record": "52-1",
+      "regional_place": 1,
+      "state_place": 1
+    },
+    {
+      "season": 2019,
+      "grade": 9,
+      "team": "North Hardin",
+      "record": "39-6",
+      "regional_place": 2,
+      "state_place": 7
+    },
+    {
+      "season": 2018,
+      "grade": 8,
+      "team": "North Hardin",
+      "record": "9-3",
+      "regional_place": 1,
+      "state_place": 8
+    }
+  ],
+  "career_record": {
+    "wins": 179,
+    "losses": 11,
+    "win_pct": 0.942
+  },
+  "profile_generated_at": "2026-04-04"
 }

@@ -6194,3 +6194,118 @@ table a:hover {
   }
 }
 
+
+/* ============================================
+   Career Profile — Multi-Season Sections
+   ============================================ */
+
+.section--career-season {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 0;
+  padding: var(--pad-md);
+  margin-top: 1.25em;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+
+.career-season-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+  user-select: none;
+}
+
+.career-season-toggle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  width: 14px;
+  flex-shrink: 0;
+}
+
+.career-season-title {
+  color: var(--text);
+}
+
+.career-season-header a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.career-season-header a:hover {
+  text-decoration: underline;
+}
+
+.career-season-matches {
+  margin-top: 12px;
+}
+
+.career-match-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.career-match-table thead th {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.career-match-table tbody td {
+  padding: 5px 10px;
+  color: var(--text);
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--border-subtle, rgba(255,255,255,0.04));
+}
+
+/* ── Season Tabs (unified career/season profile) ─────────────────────────── */
+.season-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 0 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.season-tab {
+  background: none;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-secondary, var(--muted));
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.season-tab:hover {
+  background: var(--surface-hover, rgba(255,255,255,0.06));
+  color: var(--text);
+}
+
+.season-tab.active {
+  background: var(--accent, #4db6ac);
+  border-color: var(--accent, #4db6ac);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Highlight active row in career summary table */
+.career-summary-table tbody tr.active-season-row {
+  background: var(--surface-hover, rgba(255,255,255,0.04));
+}
+
+.career-summary-table tbody tr.active-season-row td {
+  color: var(--text);
+  font-weight: 500;
+}

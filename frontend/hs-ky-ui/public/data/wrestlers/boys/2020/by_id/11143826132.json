@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "5-20",
+    "overall": "5-21",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -112,6 +112,21 @@
     },
     {
       "date": "2019-12-27",
+      "opponent_id": "11365485132",
+      "opponent_name": "Christopher Palmer",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2019-12-27",
       "opponent_id": "10679262132",
       "opponent_name": "Carson Deckard",
       "opponent_team": "Oldham County",
@@ -124,21 +139,6 @@
       "score": "28-13",
       "duration": "0:00",
       "event": "vs. Oldham County"
-    },
-    {
-      "date": "2019-12-27",
-      "opponent_id": "11365485132",
-      "opponent_name": "Christopher Palmer",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Owensboro"
     },
     {
       "date": "2019-12-27",
@@ -353,8 +353,8 @@
     {
       "date": "2019-12-05",
       "opponent_id": "-1",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Mariah Gardner",
+      "opponent_team": "Bullitt East",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -411,5 +411,45 @@
       "event": "vs. Trigg County"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_006264",
+    "canonical_name": "Jonah Hinton",
+    "seasons": [
+      2023,
+      2021,
+      2020
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2023,
+      "grade": 12,
+      "team": "Apollo High School",
+      "record": "4-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2021,
+      "grade": 10,
+      "team": "Apollo High School",
+      "record": "4-10",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2020,
+      "grade": 9,
+      "team": "Apollo High School",
+      "record": "5-21",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 13,
+    "losses": 37,
+    "win_pct": 0.26
+  },
+  "profile_generated_at": "2026-04-04"
 }

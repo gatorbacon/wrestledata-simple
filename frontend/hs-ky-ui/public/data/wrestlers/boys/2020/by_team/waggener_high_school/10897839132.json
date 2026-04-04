@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "6-9",
+    "overall": "6-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -67,6 +67,21 @@
     },
     {
       "date": "2020-01-25",
+      "opponent_id": "11365485132",
+      "opponent_name": "Christopher Palmer",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:20",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2020-01-25",
       "opponent_id": "10553109132",
       "opponent_name": "Stephen Everly",
       "opponent_team": "Ohio County",
@@ -78,21 +93,6 @@
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "Capital City Classic"
-    },
-    {
-      "date": "2020-01-25",
-      "opponent_id": "11365485132",
-      "opponent_name": "Christopher Palmer",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:20",
       "event": "Capital City Classic"
     },
     {
@@ -261,5 +261,45 @@
       "event": "vs. Waggener High School"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_007964",
+    "canonical_name": "Keivontez Bell",
+    "seasons": [
+      2022,
+      2021,
+      2020
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2022,
+      "grade": 12,
+      "team": "Waggener High School",
+      "record": "7-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2021,
+      "grade": 11,
+      "team": "Waggener High School",
+      "record": "7-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2020,
+      "grade": 10,
+      "team": "Waggener High School",
+      "record": "6-8",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 20,
+    "losses": 16,
+    "win_pct": 0.556
+  },
+  "profile_generated_at": "2026-04-04"
 }

@@ -98,10 +98,10 @@
     {
       "date": "2020-02-08",
       "opponent_id": "10679559132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Blake Young",
+      "opponent_team": "Oldham County",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 215,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
@@ -258,7 +258,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:13",
-      "event": "vs. North Hardin"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2020-01-11",
@@ -293,17 +293,17 @@
     {
       "date": "2020-01-11",
       "opponent_id": "10679559132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Blake Young",
+      "opponent_team": "Oldham County",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 215,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2020-01-11",
@@ -518,8 +518,8 @@
     {
       "date": "2019-12-14",
       "opponent_id": "10812548132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "jordan hernandez",
+      "opponent_team": "Jeffersonville",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -593,8 +593,8 @@
     {
       "date": "2019-11-23",
       "opponent_id": "10666684132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Tim Allen",
+      "opponent_team": "Perry County Central",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -666,5 +666,36 @@
       "event": "vs. Woodford County"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_008959",
+    "canonical_name": "Tony Orneals",
+    "seasons": [
+      2021,
+      2020
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2021,
+      "grade": 12,
+      "team": "Woodford County",
+      "record": "27-5",
+      "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2020,
+      "grade": 11,
+      "team": "Woodford County",
+      "record": "38-4",
+      "regional_place": 1,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 65,
+    "losses": 9,
+    "win_pct": 0.878
+  },
+  "profile_generated_at": "2026-04-04"
 }

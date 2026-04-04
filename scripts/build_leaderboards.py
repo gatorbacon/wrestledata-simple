@@ -291,6 +291,7 @@ def build_all_time_career_wins_leaderboard(
         )
         entry = {
             "wrestler_id": wrestler_id,
+            "career_id": career_id,
             "name": name,
             "team": team,
             "career_wins": career_wins,

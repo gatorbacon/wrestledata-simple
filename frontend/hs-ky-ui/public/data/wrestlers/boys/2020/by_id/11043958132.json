@@ -8,7 +8,7 @@
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "9-29",
+    "overall": "11-31",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -338,8 +338,8 @@
     {
       "date": "2019-12-30",
       "opponent_id": "-1",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Mariah Gardner",
+      "opponent_team": "Bullitt East",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -442,6 +442,21 @@
     },
     {
       "date": "2019-12-07",
+      "opponent_id": "10679183132",
+      "opponent_name": "Devin Armstead",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2019-12-07",
       "opponent_id": "10698870132",
       "opponent_name": "Ryan Portwood",
       "opponent_team": "North Hardin",
@@ -499,21 +514,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. John Hardin"
-    },
-    {
-      "date": "2019-12-07",
-      "opponent_id": "10679183132",
-      "opponent_name": "Devin Armstead",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Apollo High School"
     },
     {
       "date": "2019-12-05",
@@ -606,5 +606,36 @@
       "event": "vs. Trigg County"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_009136",
+    "canonical_name": "Araceli Pascual",
+    "seasons": [
+      2021,
+      2020
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2021,
+      "grade": 11,
+      "team": "Apollo High School",
+      "record": "1-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2020,
+      "grade": 10,
+      "team": "Apollo High School",
+      "record": "11-31",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 12,
+    "losses": 35,
+    "win_pct": 0.255
+  },
+  "profile_generated_at": "2026-04-04"
 }

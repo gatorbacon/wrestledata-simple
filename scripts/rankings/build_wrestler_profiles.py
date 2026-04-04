@@ -58,10 +58,11 @@ def _load_full_rank_map(season: int, data_dir: str = "mt/rankings_data", league:
         rankings_dir = Path(data_dir) / str(season)
     
     if not rankings_dir.exists():
-        raise FileNotFoundError(f"Rankings directory not found: {rankings_dir}")
-    
+        print(f"  ⚠ No rankings directory for {season} — opponent ranks will be omitted")
+        return {}
+
     rank_by_id: Dict[str, int] = {}
-    
+
     # Load from FULL rankings files (rankings_*.json, not rankings_starters_*.json)
     full_rankings_files = [p for p in sorted(rankings_dir.glob("rankings_*.json")) 
                           if "starters" not in p.name and "archive" not in str(p)]
@@ -140,10 +141,11 @@ def _load_starter_rank_map(season: int, data_dir: str = "mt/rankings_data", leag
         rankings_dir = Path("frontend/wrestledata-ui/public/data/rankings") / str(season)
     
     if not rankings_dir.exists():
-        raise FileNotFoundError(f"Rankings directory not found: {rankings_dir}")
-    
+        print(f"  ⚠ No starter rankings directory for {season} — opponent ranks will be omitted")
+        return {}
+
     rank_by_id: Dict[str, int] = {}
-    
+
     # Load from starter-only rankings files
     for p in sorted(rankings_dir.glob("rankings_starters_*.json")):
         try:
@@ -244,6 +246,47 @@ def calculate_team_rankings(
         team_rank_by_name[team_name] = rank
     
     return team_rank_by_name, team_scores
+
+
+def load_supplemental_opponent_info(season: int, gender: str) -> Dict[str, Dict]:
+    """Build a name/team lookup for opponents not found in the weight class wrestlers dicts.
+
+    Reads mt/processed_data/hs_ky_{gender}/{season}/*.json (roster format with
+    winner_name/loser_name/winner_team/loser_team per match) and maps
+    opponent_id → {name, team} so out-of-state wrestlers who appear in matches
+    but not in all_wrestlers can still be resolved.
+    """
+    processed_dir = Path(f"mt/processed_data/hs_ky_{gender}/{season}")
+    if not processed_dir.exists():
+        return {}
+
+    lookup: Dict[str, Dict] = {}
+    for team_file in processed_dir.glob("*.json"):
+        try:
+            with team_file.open(encoding="utf-8") as f:
+                team_data = json.load(f)
+        except Exception:
+            continue
+
+        for wrestler in team_data.get("roster", []):
+            ky_wrestler_name = wrestler.get("name", "")
+            for match in wrestler.get("matches", []):
+                opp_id = match.get("opponent_id")
+                if not opp_id or opp_id in lookup:
+                    continue
+                winner_name = match.get("winner_name", "")
+                loser_name = match.get("loser_name", "")
+                winner_team = match.get("winner_team", "")
+                loser_team = match.get("loser_team", "")
+                if winner_name == ky_wrestler_name:
+                    # KY wrestler won → opponent is loser
+                    if loser_name and loser_name.upper() != "UNKNOWN":
+                        lookup[opp_id] = {"name": loser_name, "team": loser_team or "Unknown"}
+                elif loser_name == ky_wrestler_name:
+                    # KY wrestler lost → opponent is winner
+                    if winner_name and winner_name.upper() != "UNKNOWN":
+                        lookup[opp_id] = {"name": winner_name, "team": winner_team or "Unknown"}
+    return lookup
 
 
 def load_all_wrestler_info(season: int, data_dir: str) -> Dict[str, Dict]:
@@ -598,6 +641,7 @@ def build_match_list(
     all_wrestlers: Dict[str, Dict],
     team_rank_by_name: Dict[str, int],
     match_mv_impact_lookup: Optional[Dict] = None,
+    supplemental_opponent_info: Optional[Dict] = None,
 ) -> List[Dict]:
     """Build formatted match list for JSON output."""
     match_list = []
@@ -632,6 +676,8 @@ def build_match_list(
         seen_match_keys.add(match_key)
         
         opp_info = all_wrestlers.get(opp_id, {})
+        if not opp_info and supplemental_opponent_info:
+            opp_info = supplemental_opponent_info.get(opp_id, {})
         opp_name = opp_info.get("name", "Unknown")
         opp_team = opp_info.get("team", "Unknown")
         opp_weight = opp_info.get("weight_class", None)
@@ -1048,6 +1094,7 @@ def build_wrestler_profile(
     gender: Optional[str] = None,
     career_lookup: Optional[Dict[str, str]] = None,
     hybrid_rank_by_id: Optional[Dict[str, int]] = None,
+    supplemental_opponent_info: Optional[Dict] = None,
 ) -> Dict:
     """Build complete wrestler profile JSON."""
     wrestler_info = all_wrestlers.get(wrestler_id, {})
@@ -1098,7 +1145,8 @@ def build_wrestler_profile(
     
     # Build match list
     match_list = build_match_list(
-        matches, wrestler_id, rank_by_id, all_wrestlers, team_rank_by_name, match_mv_impact_lookup
+        matches, wrestler_id, rank_by_id, all_wrestlers, team_rank_by_name, match_mv_impact_lookup,
+        supplemental_opponent_info=supplemental_opponent_info,
     )
     
     # Get Mat Value data if available
@@ -1315,7 +1363,12 @@ def main() -> None:
             print("\nLoading career lookup...")
             career_lookup = load_careers_lookup()
             print(f"Loaded career lookup for {len(career_lookup)} season_wrestler_ids")
-            
+
+            # Load supplemental opponent info (names/teams for out-of-state opponents)
+            print("\nLoading supplemental opponent info from processed data...")
+            supplemental_opponent_info = load_supplemental_opponent_info(season, gender)
+            print(f"Loaded supplemental info for {len(supplemental_opponent_info)} opponent IDs")
+
             # Create output directories
             season_dir = output_dir / str(season)
             by_id_dir = season_dir / "by_id"
@@ -1359,6 +1412,7 @@ def main() -> None:
                     gender=gender,
                     career_lookup=career_lookup,
                     hybrid_rank_by_id=hybrid_rank_by_id,
+                    supplemental_opponent_info=supplemental_opponent_info,
                 )
                 
                 # Preserve existing bonus data if it exists

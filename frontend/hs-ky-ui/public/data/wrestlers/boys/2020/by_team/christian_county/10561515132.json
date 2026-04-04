@@ -263,10 +263,10 @@
     {
       "date": "2020-01-25",
       "opponent_id": "10679289132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Blake Fox",
+      "opponent_team": "Oldham County",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 190,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "W",
@@ -323,10 +323,10 @@
     {
       "date": "2020-01-18",
       "opponent_id": "10679289132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Blake Fox",
+      "opponent_team": "Oldham County",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 190,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "W",
@@ -443,8 +443,8 @@
     {
       "date": "2020-01-04",
       "opponent_id": "10814680132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Jaylan Hughes",
+      "opponent_team": "Blackman",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -741,5 +741,54 @@
       "event": "King of the Bluegrass"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_007735",
+    "canonical_name": "Anthony (A.J.) Harvey",
+    "seasons": [
+      2022,
+      2021,
+      2020,
+      2019
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2022,
+      "grade": 12,
+      "team": "Christian County",
+      "record": "33-2",
+      "regional_place": 1,
+      "state_place": 1
+    },
+    {
+      "season": 2021,
+      "grade": 11,
+      "team": "Christian County",
+      "record": "20-11",
+      "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2020,
+      "grade": 10,
+      "team": "Christian County",
+      "record": "34-13",
+      "regional_place": 3,
+      "state_place": 6
+    },
+    {
+      "season": 2019,
+      "grade": 9,
+      "team": "Christian County",
+      "record": "18-9",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 105,
+    "losses": 35,
+    "win_pct": 0.75
+  },
+  "profile_generated_at": "2026-04-04"
 }

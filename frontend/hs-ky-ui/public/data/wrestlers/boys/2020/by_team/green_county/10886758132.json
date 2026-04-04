@@ -292,6 +292,21 @@
     },
     {
       "date": "2019-12-27",
+      "opponent_id": "11365485132",
+      "opponent_name": "Christopher Palmer",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2019-12-27",
       "opponent_id": "10901063132",
       "opponent_name": "Elijah Phan",
       "opponent_team": "Male",
@@ -319,21 +334,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. LaRue County"
-    },
-    {
-      "date": "2019-12-27",
-      "opponent_id": "11365485132",
-      "opponent_name": "Christopher Palmer",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Owensboro"
     },
     {
       "date": "2019-12-27",
@@ -411,5 +411,45 @@
       "event": "vs. Meade County"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_008062",
+    "canonical_name": "Devin Day",
+    "seasons": [
+      2022,
+      2021,
+      2020
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2022,
+      "grade": 10,
+      "team": "Green County",
+      "record": "10-14",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2021,
+      "grade": 9,
+      "team": "Green County",
+      "record": "6-13",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2020,
+      "grade": 8,
+      "team": "Green County",
+      "record": "4-21",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 20,
+    "losses": 48,
+    "win_pct": 0.294
+  },
+  "profile_generated_at": "2026-04-04"
 }

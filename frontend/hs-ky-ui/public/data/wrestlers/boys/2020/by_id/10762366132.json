@@ -4,7 +4,7 @@
   "team": "Great Crossing High School",
   "team_slug": "great_crossing_high_school",
   "team_rank": null,
-  "weight_class": 157,
+  "weight_class": 144,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -217,21 +217,6 @@
     },
     {
       "date": "2020-01-08",
-      "opponent_id": "10679262132",
-      "opponent_name": "Carson Deckard",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:39",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2020-01-08",
       "opponent_id": "10553657132",
       "opponent_name": "Jayce Crowe",
       "opponent_team": "Boyle County",
@@ -244,6 +229,21 @@
       "score": null,
       "duration": "0:41",
       "event": "vs. Great Crossing High School"
+    },
+    {
+      "date": "2020-01-08",
+      "opponent_id": "10679262132",
+      "opponent_name": "Carson Deckard",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "vs. Oldham County"
     },
     {
       "date": "2020-01-04",
@@ -308,8 +308,8 @@
     {
       "date": "2020-01-04",
       "opponent_id": "11020486132",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Jalen Stanford",
+      "opponent_team": "NORTH COLLEGE HILL",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -367,21 +367,6 @@
     },
     {
       "date": "2019-12-14",
-      "opponent_id": "11120296132",
-      "opponent_name": "Jacob McCormick",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:38",
-      "event": "vs. Montgomery County"
-    },
-    {
-      "date": "2019-12-14",
       "opponent_id": "10629345132",
       "opponent_name": "Jeremiah Johns",
       "opponent_team": "Tates Creek",
@@ -394,6 +379,21 @@
       "score": null,
       "duration": "1:43",
       "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2019-12-14",
+      "opponent_id": "11120296132",
+      "opponent_name": "Jacob McCormick",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:38",
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2019-12-14",
@@ -471,5 +471,54 @@
       "event": "vs. West Carter High School"
     }
   ],
-  "profile_generated_at": "2026-03-31"
+  "career": {
+    "career_id": "career_005988",
+    "canonical_name": "Logan Meyer",
+    "seasons": [
+      2023,
+      2022,
+      2021,
+      2020
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2023,
+      "grade": 12,
+      "team": "Great Crossing High School",
+      "record": "25-16",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2022,
+      "grade": 11,
+      "team": "Great Crossing High School",
+      "record": "22-17",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2021,
+      "grade": 10,
+      "team": "Great Crossing High School",
+      "record": "10-19",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2020,
+      "grade": 9,
+      "team": "Great Crossing High School",
+      "record": "11-18",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 68,
+    "losses": 70,
+    "win_pct": 0.493
+  },
+  "profile_generated_at": "2026-04-04"
 }
