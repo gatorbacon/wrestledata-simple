@@ -107,17 +107,19 @@ def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set) -> 
         # Pull season accomplishment placements from season_summary if available
         regional_place = None
         state_place = None
+        grade = None
         season_summary = profile.get("season_summary") or []
         for summary_entry in season_summary:
             if summary_entry.get("season") == season:
                 regional_place = summary_entry.get("regional_place")
                 state_place = summary_entry.get("state_place")
+                grade = summary_entry.get("grade")
                 break
 
         season_entry = {
             "season": season,
             "wrestler_id": wrestler_id,
-            "grade": profile.get("grade"),
+            "grade": grade,
             "team": profile.get("team_name") or profile.get("team"),
             "weight_class": profile.get("weight_class"),
             "record": record_str,

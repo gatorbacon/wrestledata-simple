@@ -548,6 +548,8 @@ async function renderTeamPage(team, metrics, starters, remaining, xtpData, xtpRa
     
     // Render Team Profile metrics in original location
     renderTeamProfileMetrics(metrics, starters, isHS);
+    const tmSection = document.getElementById("team-profile-metrics-section");
+    if (tmSection) tmSection.style.display = "block";
   }
   
   // Always show starting roster section (even without xTP data)

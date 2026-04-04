@@ -652,6 +652,8 @@ function safe(value, formatter) {
     // ========================================
       // MV SECTION (DataGolf-style, no card) - NCAA only
     // ========================================
+    const summaryGridEl = document.querySelector(".profile-summary-grid");
+    if (summaryGridEl) summaryGridEl.style.display = "";
     const mv = (data.metrics || {}).mat_value || {};
     const weightClass = data.weight_class;
     const mvSection = document.getElementById("mv-section");

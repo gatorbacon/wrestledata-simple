@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="/search_index.js"></script>
   <script src="/hs_config.js"></script>
   <script src="/js/analytics.js"></script>
 </head>
@@ -34,7 +33,7 @@
     </section>
 
     <!-- 3) STARTING ROSTER TABLE (CORE CONTENT) -->
-    <section id="starting-roster-section" class="section">
+    <section id="starting-roster-section" class="section" style="display:none;">
       <h2>Starting Roster</h2>
       <div class="table-wrapper">
         <table id="starting-roster-table">
@@ -330,7 +329,7 @@
     </style>
 
     <!-- 4) TEAM PROFILE METRICS (SUPPORTING) -->
-    <section id="team-profile-metrics-section" class="section">
+    <section id="team-profile-metrics-section" class="section" style="display:none;">
       <h3 class="metrics-section-title">Team Profile</h3>
       <div class="metrics-grid metrics-grid--three-columns">
         <!-- COLUMN 1 — PERFORMANCE (Scoring) -->
@@ -384,7 +383,7 @@
     </section>
 
     <!-- 5) ADVANCED METRICS (SUPPORTING) -->
-    <section id="advanced-metrics-section" class="section">
+    <section id="advanced-metrics-section" class="section" style="display:none;">
       <h3 class="metrics-section-title">Advanced Metrics</h3>
       <div class="metrics-grid--three-columns">
         <!-- COLUMN 1 — SI+ -->
