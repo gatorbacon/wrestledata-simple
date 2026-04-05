@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>College Recruiting — Kentucky Mat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <script src="/js/analytics.js"></script>
+  <style>
+    /* Class tabs */
+    .class-tabs {
+      display: flex;
+      gap: 0.5em;
+      margin-bottom: 1.5em;
+      border-bottom: 2px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .class-tab {
+      padding: 0.5em 1.25em;
+      border: none;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: -2px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .class-tab:hover {
+      color: var(--text);
+    }
+
+    .class-tab.active {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Medal image sizing */
+    .grade-col img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Column widths */
+    #recruiting-table th:nth-child(2),
+    #recruiting-table td:nth-child(2) { width: 160px; max-width: 160px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    #recruiting-table th:nth-child(3),
+    #recruiting-table td:nth-child(3) { width: 52px; text-align: center; }
+
+    #recruiting-table th:nth-child(4),
+    #recruiting-table td:nth-child(4) { width: 48px; text-align: center; }
+
+    /* Committed / Uncommitted */
+    .committed-college {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .uncommitted {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* Show more button */
+    #show-more-btn {
+      display: block;
+      margin: 1.5em auto 0;
+      padding: 0.6em 2em;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    #show-more-btn:hover {
+      border-color: var(--text);
+      color: var(--text);
+    }
+
+    /* Muted row # */
+    td.row-num {
+      color: var(--muted);
+      font-size: 0.8rem;
+      width: 28px;
+      text-align: right;
+      padding-right: 8px;
+    }
+
+    /* Grade columns: narrow, centered */
+    th.grade-col,
+    td.grade-col {
+      width: 36px;
+      text-align: center;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    /* Equal breathing room on outer edges of the medal group (Fr=col6, Sr=col9) */
+    #recruiting-table th:nth-child(6),
+    #recruiting-table td:nth-child(6) {
+      padding-left: 24px;
+    }
+
+    #recruiting-table th:nth-child(9),
+    #recruiting-table td:nth-child(9) {
+      padding-right: 24px;
+    }
+
+    /* Points column */
+    th.pts-col,
+    td.pts-col {
+      width: 52px;
+      text-align: right;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    td.pts-col.has-pts {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* Rank column */
+    th.rank-col,
+    td.rank-col {
+      width: 52px;
+      text-align: right;
+    }
+
+    /* Summary line */
+    .class-summary {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>College Recruiting</h1>
+      <div class="header-subline" id="recruiting-subline">Kentucky Wrestling · Class Profiles &amp; Commitments</div>
+      <div class="section-divider"></div>
+    </header>
+
+    <section class="section">
+      <!-- Class tabs -->
+      <div class="class-tabs" id="class-tabs">
+        <button class="class-tab active" data-class="2026">Class of 2026</button>
+        <button class="class-tab" data-class="2027">Class of 2027</button>
+        <button class="class-tab" data-class="2028">Class of 2028</button>
+        <button class="class-tab" data-class="2029">Class of 2029</button>
+      </div>
+
+      <div class="class-summary" id="class-summary"></div>
+
+      <div class="table-wrapper">
+        <table id="recruiting-table">
+          <thead>
+            <tr>
+              <th class="row-num" style="text-align:right;">#</th>
+              <th>Name</th>
+              <th>Weight</th>
+              <th class="rank-col">Rank</th>
+              <th>School</th>
+              <th class="grade-col">Fr</th>
+              <th class="grade-col">So</th>
+              <th class="grade-col">Jr</th>
+              <th class="grade-col">Sr</th>
+              <th>Committed To</th>
+            </tr>
+          </thead>
+          <tbody id="recruiting-tbody"></tbody>
+        </table>
+      </div>
+
+      <button id="show-more-btn" style="display:none;">Show more</button>
+    </section>
+  </div>
+
+<script src="/tooltips.js"></script>
+  <script src="/recruiting.js"></script>
+  <script src="/footer.js"></script>
+</body>
+</html>

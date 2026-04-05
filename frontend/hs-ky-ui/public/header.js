@@ -65,6 +65,21 @@
               <a href="/leaderboards.html" class="nav-link">Stat Leaders</a>
             </div>
 
+            <!-- Recruiting Dropdown -->
+            <div class="nav-item nav-item--dropdown" id="nav-recruiting">
+              <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
+                Recruiting <span class="dropdown-arrow">▾</span>
+              </button>
+              <div class="dropdown-menu" id="recruiting-menu">
+                <a href="/recruiting.html?gender=boys" class="dropdown-item">
+                  <span class="dropdown-item-label">Boys Recruiting</span>
+                </a>
+                <a href="/recruiting.html?gender=girls" class="dropdown-item">
+                  <span class="dropdown-item-label">Girls Recruiting</span>
+                </a>
+              </div>
+            </div>
+
             <!-- About -->
             <div class="nav-item">
               <a href="/about.html" class="nav-link">About</a>
