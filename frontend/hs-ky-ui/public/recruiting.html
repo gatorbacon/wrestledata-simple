@@ -47,6 +47,77 @@
       margin: 0 auto;
     }
 
+    /* Desktop/mobile visibility — toggled by JS in recruiting.js */
+    .recruiting-mobile { display: none; }
+    .recruiting-desktop { display: block; }
+
+    /* Mobile cards */
+    .recruit-card {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      background: var(--panel);
+    }
+
+    .recruit-card-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .recruit-card-name {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .recruit-card-num {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-right: 8px;
+    }
+
+    .recruit-card-rank {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .recruit-card-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .recruit-card-medals {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .recruit-card-medals-label {
+      font-size: 0.7rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      width: 20px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+
+    .recruit-card-commit {
+      font-size: 0.85rem;
+      padding-top: 6px;
+      border-top: 1px solid var(--border);
+    }
+
+    .recruit-card-commit-label {
+      color: var(--muted);
+      font-size: 0.75rem;
+      margin-right: 4px;
+    }
+
     /* Column widths */
     #recruiting-table th:nth-child(2),
     #recruiting-table td:nth-child(2) { width: 160px; max-width: 160px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -166,7 +237,8 @@
 
       <div class="class-summary" id="class-summary"></div>
 
-      <div class="table-wrapper">
+      <!-- Desktop table -->
+      <div class="table-wrapper recruiting-desktop">
         <table id="recruiting-table">
           <thead>
             <tr>
@@ -185,6 +257,9 @@
           <tbody id="recruiting-tbody"></tbody>
         </table>
       </div>
+
+      <!-- Mobile cards -->
+      <div class="recruiting-cards recruiting-mobile" id="recruiting-cards"></div>
 
       <button id="show-more-btn" style="display:none;">Show more</button>
     </section>

@@ -19,10 +19,18 @@
 
   // ---- Init ----
 
+  function applyLayout() {
+    const mobile = window.innerWidth <= 680;
+    document.querySelectorAll('.recruiting-desktop').forEach(el => el.style.display = mobile ? 'none' : '');
+    document.querySelectorAll('.recruiting-mobile').forEach(el => el.style.display = mobile ? 'block' : 'none');
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     const label = GENDER === 'girls' ? 'Girls' : 'Boys';
     const subline = document.getElementById('recruiting-subline');
     if (subline) subline.textContent = `Kentucky ${label} Wrestling · Class Profiles & Commitments`;
+    applyLayout();
+    window.addEventListener('resize', applyLayout);
     setupTabs();
     loadData();
   });
@@ -74,6 +82,16 @@
       tbody.appendChild(tr);
     });
 
+    // Mobile cards
+    const cardsEl = document.getElementById('recruiting-cards');
+    cardsEl.innerHTML = '';
+    visible.forEach((entry, i) => {
+      const card = document.createElement('div');
+      card.className = 'recruit-card';
+      card.innerHTML = buildCard(entry, i + 1);
+      cardsEl.appendChild(card);
+    });
+
     // Summary line
     const placers = allEntries.filter(e => e.total_points > 0).length;
     const committed = allEntries.filter(e => e.committed_to).length;
@@ -115,6 +133,42 @@
       <td><a href="${teamHref}">${escapeHtml(entry.team || '—')}</a></td>
       ${gradesCells}
       <td>${commitCell}</td>
+    `;
+  }
+
+  function buildCard(entry, num) {
+    const nameHref = `/wrestler.html?career_id=${encodeURIComponent(entry.career_id)}&gender=boys`;
+    const teamHref = `/team.html?team=${encodeURIComponent(entry.team_slug)}&gender=boys`;
+    const rankStr = entry.rank ? `#${entry.rank}` : '—';
+
+    const medalRow = GRADE_LABELS.map(label => {
+      const place = entry.placements ? entry.placements[label] : null;
+      return `<span style="display:flex;flex-direction:column;align-items:center;gap:2px;">
+        <span style="font-size:0.62rem;color:var(--muted);line-height:1;">${label}</span>
+        ${formatPlace(place)}
+      </span>`;
+    }).join('');
+
+    const commitStr = entry.committed_to
+      ? `<span class="committed-college">${escapeHtml(entry.committed_to)}</span>`
+      : `<span class="uncommitted">Uncommitted</span>`;
+
+    return `
+      <div class="recruit-card-top">
+        <div>
+          <span class="recruit-card-num">${num}</span>
+          <a href="${nameHref}" class="recruit-card-name">${escapeHtml(entry.name)}</a>
+        </div>
+        <span class="recruit-card-rank">${rankStr}</span>
+      </div>
+      <div class="recruit-card-meta">
+        <a href="${teamHref}" style="color:var(--accent)">${escapeHtml(entry.team || '—')}</a>
+        &nbsp;·&nbsp;${entry.weight || '—'} lbs
+      </div>
+      <div class="recruit-card-medals">${medalRow}</div>
+      <div class="recruit-card-commit">
+        <span class="recruit-card-commit-label">College:</span>${commitStr}
+      </div>
     `;
   }
 

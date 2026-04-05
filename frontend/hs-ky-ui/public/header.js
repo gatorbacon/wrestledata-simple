@@ -176,6 +176,18 @@
             <!-- Stat Leaders (Non-expandable link) -->
             <a href="/leaderboards.html" class="mobile-menu-item">Stat Leaders</a>
 
+            <!-- Recruiting Section (Expandable) -->
+            <div class="mobile-menu-section">
+              <button class="mobile-menu-section-header" aria-expanded="false" data-section="recruiting">
+                <span>Recruiting</span>
+                <span class="mobile-menu-chevron">▸</span>
+              </button>
+              <div class="mobile-menu-section-content" data-content="recruiting">
+                <a href="/recruiting.html?gender=boys" class="mobile-menu-item mobile-menu-item--child">Boys Recruiting</a>
+                <a href="/recruiting.html?gender=girls" class="mobile-menu-item mobile-menu-item--child">Girls Recruiting</a>
+              </div>
+            </div>
+
             <!-- About (Non-expandable link) -->
             <a href="/about.html" class="mobile-menu-item">About</a>
           </nav>
