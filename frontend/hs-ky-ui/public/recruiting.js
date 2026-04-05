@@ -23,12 +23,25 @@
     const mobile = window.innerWidth <= 680;
     document.querySelectorAll('.recruiting-desktop').forEach(el => el.style.display = mobile ? 'none' : '');
     document.querySelectorAll('.recruiting-mobile').forEach(el => el.style.display = mobile ? 'block' : 'none');
+
+    // Tab labels: short year on mobile, full "Class of YYYY" on desktop
+    document.querySelectorAll('.tab-label-full').forEach(el => el.style.display = mobile ? 'none' : 'inline');
+    document.querySelectorAll('.tab-label-short').forEach(el => el.style.display = mobile ? 'inline' : 'none');
+
+    // "Class of:" prefix label only on mobile
+    const prefix = document.querySelector('.class-tabs-prefix');
+    if (prefix) prefix.style.display = mobile ? 'inline' : 'none';
+
+    // Summary line: hide on mobile
+    const summary = document.getElementById('class-summary');
+    if (summary) summary.style.display = mobile ? 'none' : '';
+
+    // Tabs: no wrapping on mobile
+    const tabs = document.getElementById('class-tabs');
+    if (tabs) tabs.style.flexWrap = mobile ? 'nowrap' : 'wrap';
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    const label = GENDER === 'girls' ? 'Girls' : 'Boys';
-    const subline = document.getElementById('recruiting-subline');
-    if (subline) subline.textContent = `Kentucky ${label} Wrestling · Class Profiles & Commitments`;
     applyLayout();
     window.addEventListener('resize', applyLayout);
     setupTabs();
@@ -141,12 +154,12 @@
     const teamHref = `/team.html?team=${encodeURIComponent(entry.team_slug)}&gender=boys`;
     const rankStr = entry.rank ? `#${entry.rank}` : '—';
 
-    const medalRow = GRADE_LABELS.map(label => {
+    const medalCells = GRADE_LABELS.map(label => {
       const place = entry.placements ? entry.placements[label] : null;
-      return `<span style="display:flex;flex-direction:column;align-items:center;gap:2px;">
-        <span style="font-size:0.62rem;color:var(--muted);line-height:1;">${label}</span>
+      return `<div class="recruit-card-medal-cell">
+        <span class="recruit-card-medal-label">${label}</span>
         ${formatPlace(place)}
-      </span>`;
+      </div>`;
     }).join('');
 
     const commitStr = entry.committed_to
@@ -154,21 +167,21 @@
       : `<span class="uncommitted">Uncommitted</span>`;
 
     return `
-      <div class="recruit-card-top">
-        <div>
+      <div class="recruit-card-left">
+        <div class="recruit-card-top">
           <span class="recruit-card-num">${num}</span>
           <a href="${nameHref}" class="recruit-card-name">${escapeHtml(entry.name)}</a>
+          <span class="recruit-card-rank">${rankStr}</span>
         </div>
-        <span class="recruit-card-rank">${rankStr}</span>
+        <div class="recruit-card-meta">
+          <a href="${teamHref}" style="color:var(--accent)">${escapeHtml(entry.team || '—')}</a>
+          &nbsp;·&nbsp;${entry.weight || '—'} lbs
+        </div>
+        <div class="recruit-card-commit">
+          <span class="recruit-card-commit-label">College:</span>${commitStr}
+        </div>
       </div>
-      <div class="recruit-card-meta">
-        <a href="${teamHref}" style="color:var(--accent)">${escapeHtml(entry.team || '—')}</a>
-        &nbsp;·&nbsp;${entry.weight || '—'} lbs
-      </div>
-      <div class="recruit-card-medals">${medalRow}</div>
-      <div class="recruit-card-commit">
-        <span class="recruit-card-commit-label">College:</span>${commitStr}
-      </div>
+      <div class="recruit-card-medals">${medalCells}</div>
     `;
   }
 

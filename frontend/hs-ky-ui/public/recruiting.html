@@ -10,13 +10,32 @@
   <script src="/js/analytics.js"></script>
   <style>
     /* Class tabs */
+    .class-tabs-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.75em;
+      margin-bottom: 1.5em;
+    }
+
+    .class-tabs-prefix {
+      display: none; /* hidden on desktop — tabs already say "Class of YYYY" */
+      font-size: 0.8rem;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
     .class-tabs {
       display: flex;
       gap: 0.5em;
-      margin-bottom: 1.5em;
       border-bottom: 2px solid var(--border);
       flex-wrap: wrap;
+      flex: 1;
     }
+
+    /* Desktop: show full label, hide short */
+    .tab-label-short { display: none; }
+    .tab-label-full  { display: inline; }
 
     .class-tab {
       padding: 0.5em 1.25em;
@@ -29,6 +48,13 @@
       font-weight: 500;
       margin-bottom: -2px;
       transition: color 0.15s, border-color 0.15s;
+    }
+
+    @media (max-width: 680px) {
+      .class-tab {
+        padding: 0.45em 0.65em;
+        font-size: 0.82rem;
+      }
     }
 
     .class-tab:hover {
@@ -55,67 +81,84 @@
     .recruit-card {
       border: 1px solid var(--border);
       border-radius: 6px;
-      padding: 12px 14px;
-      margin-bottom: 8px;
-      background: var(--panel);
+      padding: 10px 12px;
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .recruit-card-left {
+      flex: 1;
+      min-width: 0;
     }
 
     .recruit-card-top {
       display: flex;
       align-items: baseline;
-      justify-content: space-between;
-      margin-bottom: 4px;
-    }
-
-    .recruit-card-name {
-      font-size: 1rem;
-      font-weight: 600;
+      gap: 6px;
+      margin-bottom: 2px;
     }
 
     .recruit-card-num {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       color: var(--muted);
-      margin-right: 8px;
-    }
-
-    .recruit-card-rank {
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    .recruit-card-meta {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-
-    .recruit-card-medals {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin-bottom: 8px;
-    }
-
-    .recruit-card-medals-label {
-      font-size: 0.7rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      width: 20px;
-      text-align: right;
       flex-shrink: 0;
     }
 
+    .recruit-card-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .recruit-card-rank {
+      font-size: 0.75rem;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .recruit-card-meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
     .recruit-card-commit {
-      font-size: 0.85rem;
-      padding-top: 6px;
-      border-top: 1px solid var(--border);
+      font-size: 0.78rem;
     }
 
     .recruit-card-commit-label {
       color: var(--muted);
-      font-size: 0.75rem;
-      margin-right: 4px;
+      margin-right: 3px;
+    }
+
+    /* Medal row on right: 1×4 */
+    .recruit-card-medals {
+      display: grid;
+      grid-template-columns: repeat(4, 28px);
+      gap: 4px;
+      flex-shrink: 0;
+      align-self: center;
+    }
+
+    .recruit-card-medal-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1px;
+    }
+
+    .recruit-card-medal-label {
+      font-size: 0.58rem;
+      color: var(--muted);
+      line-height: 1;
+      text-transform: uppercase;
     }
 
     /* Column widths */
@@ -222,17 +265,31 @@
   <div class="page-container">
     <header class="header">
       <h1>College Recruiting</h1>
-      <div class="header-subline" id="recruiting-subline">Kentucky Wrestling · Class Profiles &amp; Commitments</div>
-      <div class="section-divider"></div>
+      <div class="header-subline" id="recruiting-subline">Class Profiles &amp; Commitments</div>
     </header>
 
     <section class="section">
-      <!-- Class tabs -->
-      <div class="class-tabs" id="class-tabs">
-        <button class="class-tab active" data-class="2026">Class of 2026</button>
-        <button class="class-tab" data-class="2027">Class of 2027</button>
-        <button class="class-tab" data-class="2028">Class of 2028</button>
-        <button class="class-tab" data-class="2029">Class of 2029</button>
+      <!-- Class tabs — desktop shows full label, mobile shows year only -->
+      <div class="class-tabs-wrapper">
+        <span class="class-tabs-prefix">Class of:</span>
+        <div class="class-tabs" id="class-tabs">
+          <button class="class-tab active" data-class="2026">
+            <span class="tab-label-full">Class of 2026</span>
+            <span class="tab-label-short">2026</span>
+          </button>
+          <button class="class-tab" data-class="2027">
+            <span class="tab-label-full">Class of 2027</span>
+            <span class="tab-label-short">2027</span>
+          </button>
+          <button class="class-tab" data-class="2028">
+            <span class="tab-label-full">Class of 2028</span>
+            <span class="tab-label-short">2028</span>
+          </button>
+          <button class="class-tab" data-class="2029">
+            <span class="tab-label-full">Class of 2029</span>
+            <span class="tab-label-short">2029</span>
+          </button>
+        </div>
       </div>
 
       <div class="class-summary" id="class-summary"></div>
