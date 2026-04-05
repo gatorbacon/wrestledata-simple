@@ -105,13 +105,47 @@ def load_hs_search_items(script_dir, gender, season):
     ky_team_slugs = load_ky_team_slugs(script_dir, gender, season)
     print(f"  Found {len(ky_team_slugs)} KY team profiles")
 
-    # --- Build wrestler entries from career profiles ---
-    if not careers_dir.exists():
-        print(f"  Warning: No career profiles found at {careers_dir}")
-        return search_items
+    # --- Build wrestler entries from career profiles (or index fallback) ---
+    career_files = sorted(careers_dir.glob("career_*.json")) if careers_dir.exists() else []
 
-    career_files = sorted(careers_dir.glob("career_*.json"))
-    print(f"  Processing {len(career_files)} career profiles...")
+    if not career_files:
+        print(f"  No career profiles found — falling back to {season} index")
+        if wrestlers_index_path.exists():
+            with open(wrestlers_index_path, 'r', encoding='utf-8') as f:
+                wrestlers_index = json.load(f)
+            for w in wrestlers_index:
+                wid = str(w.get('wrestler_id', ''))
+                name = w.get('name', '')
+                if not wid or not name:
+                    continue
+                team = w.get('team', '')
+                weight = w.get('weight_class')
+                rank = w.get('current_rank')
+                secondary_parts = []
+                if team:
+                    secondary_parts.append(team)
+                if weight:
+                    secondary_parts.append(str(weight))
+                name_parts = name.split()
+                search_items.append({
+                    "type": "wrestler",
+                    "name": name,
+                    "first_name": name_parts[0] if name_parts else '',
+                    "last_name": ' '.join(name_parts[1:]) if len(name_parts) > 1 else '',
+                    "secondary": " · ".join(secondary_parts),
+                    "url": wrestler_id_to_url(wid, gender),
+                    "searchTokens": generate_search_tokens(name, for_wrestler=True),
+                    "rank": rank,
+                    "gender": gender,
+                    "priority": 0 if rank else 1,
+                    "sort_key": rank if rank else 0,
+                })
+            search_items.sort(key=lambda e: (e['priority'], e['sort_key']))
+            for item in search_items:
+                item.pop('sort_key', None)
+            print(f"  Wrestlers: {len(search_items)} from index")
+    else:
+        print(f"  Processing {len(career_files)} career profiles...")
 
     for cf in career_files:
         try:
@@ -193,16 +227,14 @@ def load_hs_search_items(script_dir, gender, season):
             "sort_key": sort_key,
         })
 
-    # Sort: ranked active first (by rank asc), then unranked active, then historical (by career wins desc)
-    search_items.sort(key=lambda e: (e['priority'], e['sort_key']))
-
-    # Remove sort_key from final output
-    for item in search_items:
-        del item['sort_key']
-
-    active_count = sum(1 for e in search_items if e['priority'] <= 1)
-    historical_count = sum(1 for e in search_items if e['priority'] == 2)
-    print(f"  Wrestlers: {active_count} active ({season}), {historical_count} historical")
+    if career_files:
+        # Sort: ranked active first (by rank asc), then unranked active, then historical (by career wins desc)
+        search_items.sort(key=lambda e: (e['priority'], e['sort_key']))
+        for item in search_items:
+            del item['sort_key']
+        active_count = sum(1 for e in search_items if e['priority'] <= 1)
+        historical_count = sum(1 for e in search_items if e['priority'] == 2)
+        print(f"  Wrestlers: {active_count} active ({season}), {historical_count} historical")
 
     # --- Build team entries (KY only) ---
     teams_index_path = script_dir / f"frontend/hs-ky-ui/public/data/wrestlers/{gender}/{season}/index_teams.json"
