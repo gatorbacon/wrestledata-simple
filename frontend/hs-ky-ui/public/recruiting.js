@@ -122,8 +122,8 @@
   }
 
   function buildRow(entry, num) {
-    const nameHref = `/wrestler.html?career_id=${encodeURIComponent(entry.career_id)}&gender=boys`;
-    const teamHref = `/team.html?team=${encodeURIComponent(entry.team_slug)}&gender=boys`;
+    const nameHref = `/wrestler.html?career_id=${encodeURIComponent(entry.career_id)}&gender=${GENDER}`;
+    const teamHref = `/team.html?team=${encodeURIComponent(entry.team_slug)}&gender=${GENDER}`;
 
     const rankCell = entry.rank
       ? `#${entry.rank}`
@@ -150,8 +150,8 @@
   }
 
   function buildCard(entry, num) {
-    const nameHref = `/wrestler.html?career_id=${encodeURIComponent(entry.career_id)}&gender=boys`;
-    const teamHref = `/team.html?team=${encodeURIComponent(entry.team_slug)}&gender=boys`;
+    const nameHref = `/wrestler.html?career_id=${encodeURIComponent(entry.career_id)}&gender=${GENDER}`;
+    const teamHref = `/team.html?team=${encodeURIComponent(entry.team_slug)}&gender=${GENDER}`;
     const rankStr = entry.rank ? `#${entry.rank}` : '—';
 
     const medalCells = GRADE_LABELS.map(label => {
