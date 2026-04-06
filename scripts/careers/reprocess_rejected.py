@@ -15,6 +15,8 @@ from typing import Dict, List, Set
 import sys
 import importlib.util
 
+_CAREERS_DIR = None  # overridden in main() based on --gender
+
 
 def load_rejected_links(rejected_file: Path) -> List[Dict]:
     """Load rejected links from review."""
@@ -64,7 +66,7 @@ def reprocess_rejected_wrestlers(
     
     # Load data
     print("\nLoading data...")
-    careers = link_module.load_careers(Path("data/careers"))
+    careers = link_module.load_careers(_CAREERS_DIR)
     season_accomplishments = {
         2024: link_module.load_season_accomplishments(2024, gender),
         2025: link_module.load_season_accomplishments(2025, gender)
@@ -260,7 +262,10 @@ def main():
     )
     
     args = parser.parse_args()
-    
+
+    global _CAREERS_DIR
+    _CAREERS_DIR = Path("data/careers") if args.gender == "boys" else Path("data/careers/girls")
+
     rejected_file = Path(args.rejected_file)
     if not rejected_file.exists():
         # Try in default location

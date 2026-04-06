@@ -1093,6 +1093,7 @@ def build_wrestler_profile(
     match_mv_impact_lookup: Optional[Dict] = None,
     gender: Optional[str] = None,
     career_lookup: Optional[Dict[str, str]] = None,
+    careers_dir: Optional[Path] = None,
     hybrid_rank_by_id: Optional[Dict[str, int]] = None,
     supplemental_opponent_info: Optional[Dict] = None,
 ) -> Dict:
@@ -1212,7 +1213,7 @@ def build_wrestler_profile(
     if career_lookup and gender:
         career_id = career_lookup.get(wrestler_id)
         if career_id:
-            career = load_career(career_id)
+            career = load_career(career_id, careers_dir or Path("data/careers"))
             if career:
                 # Build career metadata
                 seasons_dict = career.get("seasons", {})
@@ -1361,7 +1362,8 @@ def main() -> None:
             
             # Load career lookup for embedding career data
             print("\nLoading career lookup...")
-            career_lookup = load_careers_lookup()
+            careers_dir = Path("data/careers") if gender == "boys" else Path("data/careers/girls")
+            career_lookup = load_careers_lookup(careers_dir)
             print(f"Loaded career lookup for {len(career_lookup)} season_wrestler_ids")
 
             # Load supplemental opponent info (names/teams for out-of-state opponents)
@@ -1411,6 +1413,7 @@ def main() -> None:
                     match_mv_impact_lookup,
                     gender=gender,
                     career_lookup=career_lookup,
+                    careers_dir=careers_dir,
                     hybrid_rank_by_id=hybrid_rank_by_id,
                     supplemental_opponent_info=supplemental_opponent_info,
                 )

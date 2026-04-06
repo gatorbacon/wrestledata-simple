@@ -11,6 +11,8 @@ import argparse
 from pathlib import Path
 from typing import Dict, List, Optional
 
+_CAREERS_DIR = None  # overridden in main() based on --gender
+
 
 def load_season_accomplishments(season: int, gender: str) -> Dict[str, Dict]:
     """Load season accomplishments and create lookup by season_wrestler_id."""
@@ -34,7 +36,7 @@ def load_season_accomplishments(season: int, gender: str) -> Dict[str, Dict]:
 
 def load_career(career_id: str) -> Optional[Dict]:
     """Load a single career file."""
-    career_file = Path("data/careers") / f"{career_id}.json"
+    career_file = _CAREERS_DIR / f"{career_id}.json"
     if not career_file.exists():
         return None
     
@@ -343,7 +345,7 @@ def apply_approved_links(approved_file: Path):
         link_module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(link_module)
         
-        careers = link_module.load_careers(Path("data/careers"))
+        careers = link_module.load_careers(_CAREERS_DIR)
         applied = link_module.apply_links_phase(links_to_apply, careers, "Approved Links")
         
         print(f"\n✅ Applied {applied} links")
@@ -387,7 +389,10 @@ def main():
     )
     
     args = parser.parse_args()
-    
+
+    global _CAREERS_DIR
+    _CAREERS_DIR = Path("data/careers") if args.gender == "boys" else Path("data/careers/girls")
+
     phase_file = Path(args.phase_file)
     if not phase_file.exists():
         # Try in default location

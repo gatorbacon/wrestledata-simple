@@ -11,7 +11,7 @@
     "overall": "6-3",
     "vs_ranked": "6-1",
     "vs_top10": "1-1",
-    "vs_top25": "3-1"
+    "vs_top25": "4-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -39,7 +39,7 @@
     },
     "worst_loss": {
       "opponent_id": "35613108132",
-      "opponent_rank": 2,
+      "opponent_rank": 1,
       "opponent_name": "Emma Hood",
       "method": "Fall 2:47"
     }
@@ -52,7 +52,7 @@
       "opponent_team": "Great Crossing",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 12,
+      "opponent_rank": 14,
       "weight_class": "152",
       "result": "W",
       "method": "DEC",
@@ -65,7 +65,7 @@
       "opponent_id": "35333558132",
       "opponent_name": "Aubrey Haisma",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 5,
       "opponent_weight": 152,
       "opponent_rank": 6,
       "weight_class": "152",
@@ -82,7 +82,7 @@
       "opponent_team": "Highlands",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 2,
+      "opponent_rank": 1,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
@@ -97,7 +97,7 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": 41,
       "opponent_weight": 152,
-      "opponent_rank": 70,
+      "opponent_rank": 20,
       "weight_class": "152",
       "result": "W",
       "method": "DEC",
@@ -140,9 +140,9 @@
       "opponent_id": "35542619132",
       "opponent_name": "Alyiah Mason",
       "opponent_team": "Central",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 14,
       "opponent_weight": 145,
-      "opponent_rank": 17,
+      "opponent_rank": 20,
       "weight_class": "145",
       "result": "W",
       "method": "DEC",
@@ -157,7 +157,7 @@
       "opponent_team": "Moore",
       "opponent_team_rank": 49,
       "opponent_weight": 145,
-      "opponent_rank": 44,
+      "opponent_rank": 46,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -172,7 +172,7 @@
       "opponent_team": "Valley",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 59,
+      "opponent_rank": 61,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -181,10 +181,36 @@
       "event": "Queen of the Hive"
     }
   ],
-  "profile_generated_at": "2026-02-23",
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 0.0,
-    "top33_bonus_ev_shrunk": 1.2309909909909909
-  }
+  "career": {
+    "career_id": "career_000030",
+    "canonical_name": "Amina Neal",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Atherton",
+      "record": "6-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "Eastern",
+      "record": "4-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 10,
+    "losses": 9,
+    "win_pct": 0.526
+  },
+  "profile_generated_at": "2026-04-05"
 }

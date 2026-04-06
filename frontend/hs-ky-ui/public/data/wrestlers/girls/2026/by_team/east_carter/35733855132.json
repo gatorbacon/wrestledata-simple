@@ -10,7 +10,7 @@
   "record": {
     "overall": "11-5",
     "vs_ranked": "9-5",
-    "vs_top10": "0-1",
+    "vs_top10": "0-3",
     "vs_top25": "2-5"
   },
   "metrics": {
@@ -30,16 +30,16 @@
     "ranked_wins": 9,
     "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35900702132",
-      "opponent_rank": 13,
+      "opponent_rank": 16,
       "opponent_name": "Kyra Newkirk",
       "method": "TF 18-1 4:00"
     },
     "worst_loss": {
       "opponent_id": "35676779132",
-      "opponent_rank": 22,
+      "opponent_rank": 21,
       "opponent_name": "Jacee Norman",
       "method": "MD 19-8"
     }
@@ -52,7 +52,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 17,
       "opponent_weight": 145,
-      "opponent_rank": 2,
+      "opponent_rank": 3,
       "weight_class": "145",
       "result": "L",
       "method": "TF",
@@ -67,7 +67,7 @@
       "opponent_team": "Corbin",
       "opponent_team_rank": null,
       "opponent_weight": 145,
-      "opponent_rank": 11,
+      "opponent_rank": 13,
       "weight_class": "145",
       "result": "L",
       "method": "MD",
@@ -82,7 +82,7 @@
       "opponent_team": "Southwestern",
       "opponent_team_rank": 56,
       "opponent_weight": 145,
-      "opponent_rank": 51,
+      "opponent_rank": 53,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -95,9 +95,9 @@
       "opponent_id": "35900702132",
       "opponent_name": "Kyra Newkirk",
       "opponent_team": "Knox Central",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 21,
       "opponent_weight": 145,
-      "opponent_rank": 13,
+      "opponent_rank": 16,
       "weight_class": "145",
       "result": "W",
       "method": "TF",
@@ -110,9 +110,9 @@
       "opponent_id": "35900702132",
       "opponent_name": "Kyra Newkirk",
       "opponent_team": "Knox Central",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 21,
       "opponent_weight": 145,
-      "opponent_rank": 13,
+      "opponent_rank": 16,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -127,7 +127,7 @@
       "opponent_team": "Ashland Blazer",
       "opponent_team_rank": 27,
       "opponent_weight": 138,
-      "opponent_rank": 11,
+      "opponent_rank": 7,
       "weight_class": "138",
       "result": "L",
       "method": "DEC",
@@ -172,7 +172,7 @@
       "opponent_team": "Ashland Blazer",
       "opponent_team_rank": 27,
       "opponent_weight": 126,
-      "opponent_rank": 30,
+      "opponent_rank": 29,
       "weight_class": "138",
       "result": "W",
       "method": "FALL",
@@ -187,7 +187,7 @@
       "opponent_team": "Ashland Blazer",
       "opponent_team_rank": 27,
       "opponent_weight": 138,
-      "opponent_rank": 11,
+      "opponent_rank": 7,
       "weight_class": "138",
       "result": "L",
       "method": "MD",
@@ -202,7 +202,7 @@
       "opponent_team": "Belfry",
       "opponent_team_rank": null,
       "opponent_weight": 138,
-      "opponent_rank": 22,
+      "opponent_rank": 21,
       "weight_class": "138",
       "result": "L",
       "method": "MD",
@@ -232,7 +232,7 @@
       "opponent_team": "Ashland Blazer",
       "opponent_team_rank": 27,
       "opponent_weight": 145,
-      "opponent_rank": 31,
+      "opponent_rank": 33,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -247,7 +247,7 @@
       "opponent_team": "Boyd County",
       "opponent_team_rank": 32,
       "opponent_weight": 145,
-      "opponent_rank": 56,
+      "opponent_rank": 58,
       "weight_class": "145",
       "result": "W",
       "method": "FALL",
@@ -262,7 +262,7 @@
       "opponent_team": "Boyd County",
       "opponent_team_rank": 32,
       "opponent_weight": 145,
-      "opponent_rank": 56,
+      "opponent_rank": 58,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
@@ -277,7 +277,7 @@
       "opponent_team": "Boyd County",
       "opponent_team_rank": 32,
       "opponent_weight": 152,
-      "opponent_rank": 27,
+      "opponent_rank": 29,
       "weight_class": "152",
       "result": "W",
       "method": "FALL",
@@ -286,5 +286,36 @@
       "event": "AWC Invitational"
     }
   ],
-  "profile_generated_at": "2026-02-23"
+  "career": {
+    "career_id": "career_000226",
+    "canonical_name": "Keiona Skaggs",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "East Carter",
+      "record": "11-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "East Carter",
+      "record": "12-2",
+      "regional_place": 1,
+      "state_place": 7
+    }
+  ],
+  "career_record": {
+    "wins": 23,
+    "losses": 7,
+    "win_pct": 0.767
+  },
+  "profile_generated_at": "2026-04-05"
 }

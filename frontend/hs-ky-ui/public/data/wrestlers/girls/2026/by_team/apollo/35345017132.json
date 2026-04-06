@@ -10,7 +10,7 @@
   "record": {
     "overall": "1-7",
     "vs_ranked": "0-7",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-4"
   },
   "metrics": {
@@ -30,11 +30,11 @@
     "ranked_wins": 0,
     "ranked_losses": 7,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35343288132",
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "opponent_name": "Kaizley Dunn",
       "method": "Fall 0:00"
     }
@@ -47,7 +47,7 @@
       "opponent_team": "Fort Campbell",
       "opponent_team_rank": 37,
       "opponent_weight": 152,
-      "opponent_rank": 19,
+      "opponent_rank": 11,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
@@ -62,7 +62,7 @@
       "opponent_team": "Henderson County",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
@@ -77,7 +77,7 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 33,
       "opponent_weight": 145,
-      "opponent_rank": 22,
+      "opponent_rank": 8,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
@@ -107,7 +107,7 @@
       "opponent_team": "Henderson County",
       "opponent_team_rank": null,
       "opponent_weight": 152,
-      "opponent_rank": 32,
+      "opponent_rank": 34,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
@@ -122,7 +122,7 @@
       "opponent_team": "Central Hardin",
       "opponent_team_rank": 34,
       "opponent_weight": 152,
-      "opponent_rank": 13,
+      "opponent_rank": 15,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
@@ -137,7 +137,7 @@
       "opponent_team": "Logan County",
       "opponent_team_rank": 42,
       "opponent_weight": 152,
-      "opponent_rank": 21,
+      "opponent_rank": 22,
       "weight_class": "152",
       "result": "L",
       "method": "FALL",
@@ -161,5 +161,45 @@
       "event": "Henderson County Lady Colonel Wrestling Invitational"
     }
   ],
-  "profile_generated_at": "2026-02-23"
+  "career": {
+    "career_id": "career_000017",
+    "canonical_name": "Suraya Turner",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Apollo",
+      "record": "1-7",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Apollo",
+      "record": "11-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Apollo",
+      "record": "3-3",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 15,
+    "losses": 18,
+    "win_pct": 0.455
+  },
+  "profile_generated_at": "2026-04-05"
 }

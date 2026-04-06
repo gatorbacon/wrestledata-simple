@@ -19,6 +19,8 @@ from typing import Dict, List, Optional, Set, Tuple
 from collections import defaultdict
 from difflib import SequenceMatcher
 
+_CAREERS_DIR = None  # overridden in main() based on --gender
+
 
 def normalize_name(name: str) -> str:
     """
@@ -727,9 +729,12 @@ def link_season_to_careers(
     print(f"Gender: {gender}")
     print(f"{'='*60}\n")
     
+    global _CAREERS_DIR
+    _CAREERS_DIR = Path("data/careers") if gender == "boys" else Path("data/careers/girls")
+
     # Load data
     print("Loading data...")
-    careers_dir = Path("data/careers")
+    careers_dir = _CAREERS_DIR
     careers = load_careers(careers_dir)
     print(f"Loaded {len(careers)} careers")
     
@@ -996,7 +1001,7 @@ def apply_links_phase(
             career['seasons'] = seasons
             
             # Save career file
-            career_file = Path("data/careers") / f"{career_id}.json"
+            career_file = _CAREERS_DIR / f"{career_id}.json"
             with open(career_file, 'w', encoding='utf-8') as f:
                 json.dump(career, f, indent=2, ensure_ascii=False)
             
@@ -1019,7 +1024,7 @@ def create_careers_phase(
     careers_created = 0
     
     # Find max career ID to generate new ones
-    careers_dir = Path("data/careers")
+    careers_dir = _CAREERS_DIR
     max_career_num = 0
     for career_file in careers_dir.glob("career_*.json"):
         career_id = career_file.stem
@@ -1053,7 +1058,7 @@ def create_careers_phase(
         }
         
         # Save career file
-        career_file = Path("data/careers") / f"{career_id}.json"
+        career_file = _CAREERS_DIR / f"{career_id}.json"
         with open(career_file, 'w', encoding='utf-8') as f:
             json.dump(career, f, indent=2, ensure_ascii=False)
         
@@ -1433,7 +1438,7 @@ def main():
             print("   These are the highest confidence matches.")
             response = input("   Apply Phase 1? (yes/no): ").strip().lower()
             if response == 'yes':
-                careers = load_careers(Path("data/careers"))
+                careers = load_careers(_CAREERS_DIR)
                 applied = apply_links_phase(rule_a_links, careers, "Phase 1 (Rule A)")
                 total_applied += applied
                 print(f"   ✅ Applied {applied} links")
@@ -1446,7 +1451,7 @@ def main():
             print("   Exact name + exact team (grade unreliable).")
             response = input("   Apply Phase 2? (yes/no): ").strip().lower()
             if response == 'yes':
-                careers = load_careers(Path("data/careers"))
+                careers = load_careers(_CAREERS_DIR)
                 applied = apply_links_phase(rule_b_links, careers, "Phase 2 (Rule B)")
                 total_applied += applied
                 print(f"   ✅ Applied {applied} links")
@@ -1459,7 +1464,7 @@ def main():
             print("   High confidence score matches.")
             response = input("   Apply Phase 3? (yes/no): ").strip().lower()
             if response == 'yes':
-                careers = load_careers(Path("data/careers"))
+                careers = load_careers(_CAREERS_DIR)
                 applied = apply_links_phase(confidence_links, careers, "Phase 3 (High Confidence)")
                 total_applied += applied
                 print(f"   ✅ Applied {applied} links")
@@ -1473,7 +1478,7 @@ def main():
             print("   They will be automatically created as new careers.")
             response = input("   Create these careers? (yes/no): ").strip().lower()
             if response == 'yes':
-                careers = load_careers(Path("data/careers"))
+                careers = load_careers(_CAREERS_DIR)
                 created = create_careers_phase(grade_12_auto, careers, args.anchor_season)
                 total_applied += created
                 print(f"   ✅ Created {created} new careers")
@@ -1488,7 +1493,7 @@ def main():
             print(f"   {log_dir / f'{args.season}_phase5_new_careers.json'}")
             response = input("   Create new careers? (yes/no): ").strip().lower()
             if response == 'yes':
-                careers = load_careers(Path("data/careers"))
+                careers = load_careers(_CAREERS_DIR)
                 created = create_careers_phase(other_new_careers, careers, args.anchor_season)
                 total_applied += created
                 print(f"   ✅ Created {created} new careers")
@@ -1499,7 +1504,7 @@ def main():
         
     elif not args.dry_run:
         # Non-interactive: apply based on phase flag
-        careers = load_careers(Path("data/careers"))
+        careers = load_careers(_CAREERS_DIR)
         total_applied = 0
         
         if args.phase in ['1', 'all']:

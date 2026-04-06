@@ -2,22 +2,20 @@
 """
 Build recruiting.json for the College Recruiting page.
 
-Reads boys career profiles, groups active wrestlers into graduating classes
+Reads career profiles, groups active wrestlers into graduating classes
 (2026-2029), computes state placement points, and merges commitment data.
 
 Usage:
-    python scripts/recruiting/build_recruiting_data.py
+    python scripts/recruiting/build_recruiting_data.py --gender boys
+    python scripts/recruiting/build_recruiting_data.py --gender girls
 """
 
+import argparse
 import json
 from datetime import date
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent.parent
-CAREERS_DIR = REPO_ROOT / "frontend/hs-ky-ui/public/data/careers/boys"
-WRESTLERS_INDEX = REPO_ROOT / "frontend/hs-ky-ui/public/data/wrestlers/boys/2026/index_wrestlers.json"
-COMMITMENTS_FILE = REPO_ROOT / "data/recruiting/boys/commitments.json"
-OUTPUT_FILE = REPO_ROOT / "frontend/hs-ky-ui/public/data/recruiting/boys/recruiting.json"
 
 CURRENT_SEASON = 2026
 GRAD_CLASSES = [2026, 2027, 2028, 2029]
@@ -25,6 +23,12 @@ MAX_PER_CLASS = 100
 
 PLACEMENT_POINTS = {1: 20, 2: 16, 3: 12, 4: 10, 5: 8, 6: 6, 7: 4, 8: 3}
 GRADE_LABELS = ["Fr", "So", "Jr", "Sr"]
+
+# Set by main() based on --gender
+CAREERS_DIR: Path = None
+WRESTLERS_INDEX: Path = None
+COMMITMENTS_FILE: Path = None
+OUTPUT_FILE: Path = None
 
 
 def grade_to_season(grad_class: int, grade_label: str) -> int:
@@ -55,7 +59,19 @@ def load_commitments() -> dict:
 
 
 def main():
-    print("Building recruiting data...")
+    global CAREERS_DIR, WRESTLERS_INDEX, COMMITMENTS_FILE, OUTPUT_FILE
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--gender", required=True, choices=["boys", "girls"])
+    args = parser.parse_args()
+    gender = args.gender
+
+    CAREERS_DIR = REPO_ROOT / f"frontend/hs-ky-ui/public/data/careers/{gender}"
+    WRESTLERS_INDEX = REPO_ROOT / f"frontend/hs-ky-ui/public/data/wrestlers/{gender}/2026/index_wrestlers.json"
+    COMMITMENTS_FILE = REPO_ROOT / f"data/recruiting/{gender}/commitments.json"
+    OUTPUT_FILE = REPO_ROOT / f"frontend/hs-ky-ui/public/data/recruiting/{gender}/recruiting.json"
+
+    print(f"Building recruiting data ({gender})...")
 
     commitments = load_commitments()
     rank_by_wrestler_id = load_rank_map()

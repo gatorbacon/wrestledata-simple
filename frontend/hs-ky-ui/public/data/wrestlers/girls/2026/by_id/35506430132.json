@@ -3,15 +3,15 @@
   "name": "Trinity Perry",
   "team": "Paducah Tilghman",
   "team_slug": "paducah_tilghman",
-  "team_rank": 5,
+  "team_rank": 7,
   "weight_class": 107,
   "year": 2026,
   "current_rank": 13,
   "record": {
-    "overall": "6-4",
+    "overall": "6-5",
     "vs_ranked": "3-3",
-    "vs_top10": "0-2",
-    "vs_top25": "2-3"
+    "vs_top10": "0-0",
+    "vs_top25": "1-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -30,16 +30,16 @@
     "ranked_wins": 3,
     "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "36532312132",
-      "opponent_rank": 14,
+      "opponent_rank": 15,
       "opponent_name": "Adalyn Perry",
       "method": "Fall 3:55"
     },
     "worst_loss": {
       "opponent_id": "35520300132",
-      "opponent_rank": 16,
+      "opponent_rank": 19,
       "opponent_name": "Zemirah Witt",
       "method": "Fall 4:00"
     }
@@ -52,7 +52,7 @@
       "opponent_team": "Bethlehem",
       "opponent_team_rank": null,
       "opponent_weight": 107,
-      "opponent_rank": 14,
+      "opponent_rank": 15,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -67,7 +67,7 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 33,
       "opponent_weight": 107,
-      "opponent_rank": 25,
+      "opponent_rank": 26,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -82,7 +82,7 @@
       "opponent_team": "Christian County",
       "opponent_team_rank": 4,
       "opponent_weight": 107,
-      "opponent_rank": 42,
+      "opponent_rank": 43,
       "weight_class": "107",
       "result": "W",
       "method": "FALL",
@@ -97,7 +97,7 @@
       "opponent_team": "Fort Campbell",
       "opponent_team_rank": 37,
       "opponent_weight": 107,
-      "opponent_rank": 16,
+      "opponent_rank": 19,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -112,7 +112,7 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 11,
       "opponent_weight": 107,
-      "opponent_rank": 10,
+      "opponent_rank": 13,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -157,7 +157,7 @@
       "opponent_team": "Trigg County",
       "opponent_team_rank": 11,
       "opponent_weight": 107,
-      "opponent_rank": 10,
+      "opponent_rank": 13,
       "weight_class": "107",
       "result": "L",
       "method": "FALL",
@@ -196,10 +196,27 @@
       "event": "Sister Slam"
     }
   ],
-  "profile_generated_at": "2026-02-23",
-  "bonus": {
-    "top33_wins": 2,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.7857954545454546
-  }
+  "career": {
+    "career_id": "career_000607",
+    "canonical_name": "Trinity Perry",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Paducah Tilghman",
+      "record": "6-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 6,
+    "losses": 5,
+    "win_pct": 0.545
+  },
+  "profile_generated_at": "2026-04-05"
 }

@@ -3,7 +3,7 @@
   "name": "Britain Howard",
   "team": "North Hardin",
   "team_slug": "north_hardin",
-  "team_rank": 15,
+  "team_rank": 16,
   "weight_class": 120,
   "year": 2026,
   "current_rank": 81,
@@ -47,7 +47,7 @@
       "opponent_team": "Moore",
       "opponent_team_rank": 49,
       "opponent_weight": 126,
-      "opponent_rank": 10,
+      "opponent_rank": 7,
       "weight_class": "120",
       "result": "L",
       "method": "FALL",
@@ -71,10 +71,45 @@
       "event": "Mestengo Invitational"
     }
   ],
-  "profile_generated_at": "2026-02-23",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 0.9615384615384616
-  }
+  "career": {
+    "career_id": "career_000577",
+    "canonical_name": "Britain Howard",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "North Hardin",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "North Hardin",
+      "record": "15-15",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "North Hardin",
+      "record": "4-14",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 19,
+    "losses": 31,
+    "win_pct": 0.38
+  },
+  "profile_generated_at": "2026-04-05"
 }

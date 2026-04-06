@@ -148,8 +148,8 @@ def create_careers(season: int, gender: str, anchor_season: int = 2025) -> int:
     wrestlers = accomplishments.get('wrestlers', [])
     print(f"Found {len(wrestlers)} wrestlers")
     
-    # Setup output directory (flat structure: data/careers/)
-    output_dir = Path("data/careers")
+    # Setup output directory
+    output_dir = Path("data/careers") if gender == "boys" else Path("data/careers/girls")
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # Check for existing careers and build lookup
@@ -284,7 +284,7 @@ def main():
         
         if careers_created > 0:
             print(f"\n✅ Successfully created {careers_created} careers")
-            print(f"   Output directory: data/careers/")
+            print(f"   Output directory: {Path('data/careers') if args.gender == 'boys' else Path('data/careers/girls')}")
         else:
             print("\n⚠️  No new careers created (all already exist)")
         

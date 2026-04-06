@@ -50,7 +50,7 @@ from bs4 import BeautifulSoup
 
 BASE_URL = "https://www.trackwrestling.com"
 SEASONS = list(range(2013, 2027))  # 2013-2026 inclusive
-REGIONS = list(range(1, 9))        # 1-8
+REGIONS = list(range(1, 9))        # 1-8 (boys); overridden to 1-4 for girls
 
 # Output directories
 DATA_BASE = Path("data/hs_ky_boys")
@@ -68,6 +68,9 @@ REGION_SEARCH_TERMS = {
     7: "KHSAA Region 7",
     8: "KHSAA Region 8",
 }
+
+# Gender — overridden in main() via --gender arg
+GENDER = "boys"
 
 # KHSAA boys weight classes (varies slightly by era, use superset)
 KY_WEIGHT_CLASSES_BY_ERA = {
@@ -796,8 +799,13 @@ def find_tournament_ids_for_region(
             if f"region {region}" not in name_lower:
                 continue
 
-        # Must be boys or unspecified (not girls)
-        if "girl" in name_lower or "female" in name_lower:
+        # Filter by gender
+        has_girls = "girl" in name_lower or "female" in name_lower
+        if GENDER == "girls" and not has_girls:
+            # Skip boys-only results when searching for girls
+            if "boy" in name_lower or "male" in name_lower:
+                continue
+        elif GENDER == "boys" and has_girls:
             continue
 
         season = infer_season_from_tournament(r)
@@ -869,8 +877,10 @@ def scrape_region_season(
 
 def main():
     parser = argparse.ArgumentParser(description="Scrape KHSAA regional placement results")
-    parser.add_argument("--region", type=int, choices=REGIONS,
-                        help="Single region to scrape (default: all 1-8)")
+    parser.add_argument("--gender", choices=["boys", "girls"], default="boys",
+                        help="boys (8 regions, data/hs_ky_boys) or girls (4 regions, data/hs_ky_girls)")
+    parser.add_argument("--region", type=int,
+                        help="Single region to scrape (default: all regions for gender)")
     parser.add_argument("--season", type=int, choices=SEASONS,
                         help="Single season to scrape (default: all 2013-2026)")
     parser.add_argument("--discover-only", action="store_true",
@@ -880,6 +890,15 @@ def main():
     parser.add_argument("--debug", action="store_true",
                         help="Save raw HTML to data/_debug/khsaa_regionals/")
     args = parser.parse_args()
+
+    # Override module-level constants based on gender
+    global DATA_BASE, REGIONS, REGION_SEARCH_TERMS, TOURNAMENT_ID_CACHE, GENDER
+    if args.gender == "girls":
+        GENDER = "girls"
+        DATA_BASE = Path("data/hs_ky_girls")
+        REGIONS = list(range(1, 5))
+        REGION_SEARCH_TERMS = {i: f"KHSAA Girls Region {i}" for i in range(1, 5)}
+        TOURNAMENT_ID_CACHE = Path("data/_debug/khsaa_girls_regional_tournament_ids.json")
 
     regions = [args.region] if args.region else REGIONS
     seasons = [args.season] if args.season else SEASONS

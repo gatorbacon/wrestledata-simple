@@ -20,7 +20,7 @@ import re
 from pathlib import Path
 
 
-CAREERS_DIR = Path("data/careers")
+CAREERS_DIR = Path("data/careers")  # may be overridden in main() for girls
 WRESTLERS_BASE = Path("frontend/hs-ky-ui/public/data/wrestlers")
 OUTPUT_BASE = Path("frontend/hs-ky-ui/public/data/careers")
 TEAMS_BASE = Path("frontend/hs-ky-ui/public/data/teams")
@@ -150,6 +150,9 @@ def main():
     args = parser.parse_args()
 
     gender = args.gender
+    global CAREERS_DIR
+    CAREERS_DIR = Path("data/careers") if gender == "boys" else Path("data/careers/girls")
+
     out_dir = OUTPUT_BASE / gender
     out_dir.mkdir(parents=True, exist_ok=True)
 

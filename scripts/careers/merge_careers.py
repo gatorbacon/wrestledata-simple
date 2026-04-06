@@ -15,6 +15,8 @@ import argparse
 from pathlib import Path
 from typing import Dict, Optional
 
+_CAREERS_DIR = None  # overridden in main() based on --gender
+
 
 def normalize_name(name: str) -> str:
     """Normalize a wrestler's name for matching."""
@@ -28,7 +30,7 @@ def normalize_name(name: str) -> str:
 
 def load_career(career_id: str) -> Optional[Dict]:
     """Load a career file."""
-    career_file = Path("data/careers") / f"{career_id}.json"
+    career_file = _CAREERS_DIR / f"{career_id}.json"
     if not career_file.exists():
         return None
     with open(career_file, 'r', encoding='utf-8') as f:
@@ -40,7 +42,7 @@ def save_career(career: Dict) -> None:
     career_id = career.get('career_id')
     if not career_id:
         raise ValueError("Career missing career_id")
-    career_file = Path("data/careers") / f"{career_id}.json"
+    career_file = _CAREERS_DIR / f"{career_id}.json"
     with open(career_file, 'w', encoding='utf-8') as f:
         json.dump(career, f, indent=2, ensure_ascii=False)
 
@@ -149,8 +151,18 @@ def main():
         action='store_true',
         help='Show what would be done without making changes'
     )
-    
+    parser.add_argument(
+        '--gender',
+        type=str,
+        default='boys',
+        choices=['boys', 'girls'],
+        help='Gender (boys or girls, default: boys)'
+    )
+
     args = parser.parse_args()
+
+    global _CAREERS_DIR
+    _CAREERS_DIR = Path("data/careers") if args.gender == "boys" else Path("data/careers/girls")
     
     # Normalize career IDs
     keep_id = args.keep if args.keep.startswith('career_') else f"career_{args.keep.zfill(6)}"
@@ -224,7 +236,7 @@ def main():
         print(f"\n✅ Updated {keep_id}")
         
         # Delete merge career
-        merge_file = Path("data/careers") / f"{merge_id}.json"
+        merge_file = _CAREERS_DIR / f"{merge_id}.json"
         merge_file.unlink()
         print(f"✅ Deleted {merge_id}")
         

@@ -8,10 +8,10 @@
   "year": 2026,
   "current_rank": 19,
   "record": {
-    "overall": "8-5",
-    "vs_ranked": "6-3",
-    "vs_top10": "0-2",
-    "vs_top25": "0-3"
+    "overall": "6-6",
+    "vs_ranked": "6-5",
+    "vs_top10": "0-4",
+    "vs_top25": "1-5"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,23 +28,53 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 6,
-    "ranked_losses": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 4,
     "win_over_highest_rank": {
       "opponent_id": "36861794132",
-      "opponent_rank": 26,
+      "opponent_rank": 23,
       "opponent_name": "Elexis Herrington",
       "method": "Dec 2-1"
     },
     "worst_loss": {
       "opponent_id": "35404906132",
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "opponent_name": "Addison Reed",
       "method": "Dec 7-1"
     }
   },
   "match_list": [
+    {
+      "date": "2026-02-28",
+      "opponent_id": "35333401132",
+      "opponent_name": "Laney Doolin",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 6,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:40",
+      "event": "KHSAA Girls State Championship"
+    },
+    {
+      "date": "2026-02-28",
+      "opponent_id": "35564944132",
+      "opponent_name": "sutton fuller",
+      "opponent_team": "Union County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": 8,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "KHSAA Girls State Championship"
+    },
     {
       "date": "2026-02-14",
       "opponent_id": "36861794132",
@@ -52,7 +82,7 @@
       "opponent_team": "Bourbon County",
       "opponent_team_rank": 31,
       "opponent_weight": 132,
-      "opponent_rank": 26,
+      "opponent_rank": 23,
       "weight_class": "132",
       "result": "W",
       "method": "DEC",
@@ -82,7 +112,7 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": 41,
       "opponent_weight": 132,
-      "opponent_rank": 11,
+      "opponent_rank": 12,
       "weight_class": "132",
       "result": "L",
       "method": "DEC",
@@ -97,7 +127,7 @@
       "opponent_team": "Christian County",
       "opponent_team_rank": 4,
       "opponent_weight": 126,
-      "opponent_rank": 36,
+      "opponent_rank": 35,
       "weight_class": "126",
       "result": "W",
       "method": "DEC",
@@ -127,7 +157,7 @@
       "opponent_team": "Spencer County",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": 8,
+      "opponent_rank": 3,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -168,8 +198,8 @@
     {
       "date": "2026-02-07",
       "opponent_id": "-1",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Olivia Thluai",
+      "opponent_team": "Dixie Heights",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -183,8 +213,8 @@
     {
       "date": "2026-02-07",
       "opponent_id": "-1",
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Olivia Thluai",
+      "opponent_team": "Dixie Heights",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -202,7 +232,7 @@
       "opponent_team": "Lafayette",
       "opponent_team_rank": 41,
       "opponent_weight": 120,
-      "opponent_rank": 1,
+      "opponent_rank": 2,
       "weight_class": "126",
       "result": "L",
       "method": "FALL",
@@ -244,5 +274,36 @@
       "mv_impact": 4.8
     }
   ],
-  "profile_generated_at": "2026-02-23"
+  "career": {
+    "career_id": "career_000812",
+    "canonical_name": "Chloe Schwanenberger",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Walton-Verona",
+      "record": "6-6",
+      "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Walton-Verona",
+      "record": "20-9",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 26,
+    "losses": 15,
+    "win_pct": 0.634
+  },
+  "profile_generated_at": "2026-04-05"
 }

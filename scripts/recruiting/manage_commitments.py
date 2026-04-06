@@ -6,17 +6,20 @@ Interactively search for a wrestler by name, then add, update, or remove
 their college commitment.
 
 Usage:
-    python scripts/recruiting/manage_commitments.py
+    python scripts/recruiting/manage_commitments.py --gender boys
+    python scripts/recruiting/manage_commitments.py --gender girls
 """
 
+import argparse
 import json
 import re
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent.parent
-CAREERS_DIR = REPO_ROOT / "frontend/hs-ky-ui/public/data/careers/boys"
-COMMITMENTS_FILE = REPO_ROOT / "data/recruiting/boys/commitments.json"
-COLLEGES_FILE = REPO_ROOT / "data/recruiting/boys/colleges.json"
+
+CAREERS_DIR: Path = None
+COMMITMENTS_FILE: Path = None
+COLLEGES_FILE: Path = None
 
 CURRENT_SEASON = 2026
 
@@ -86,7 +89,17 @@ def pick_from_list(items: list, label_fn) -> int | None:
 
 
 def main():
-    print("=== Kentucky Mat — Commitment Manager ===\n")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--gender", required=True, choices=["boys", "girls"])
+    args = parser.parse_args()
+    gender = args.gender
+
+    global CAREERS_DIR, COMMITMENTS_FILE, COLLEGES_FILE
+    CAREERS_DIR = REPO_ROOT / f"frontend/hs-ky-ui/public/data/careers/{gender}"
+    COMMITMENTS_FILE = REPO_ROOT / f"data/recruiting/{gender}/commitments.json"
+    COLLEGES_FILE = REPO_ROOT / f"data/recruiting/{gender}/colleges.json"
+
+    print(f"=== Kentucky Mat — Commitment Manager ({gender}) ===\n")
 
     commitments = load_json(COMMITMENTS_FILE, {})
     colleges = load_json(COLLEGES_FILE, [])

@@ -8,9 +8,9 @@
   "year": 2026,
   "current_rank": 73,
   "record": {
-    "overall": "0-5",
+    "overall": "0-4",
     "vs_ranked": "0-5",
-    "vs_top10": "0-1",
+    "vs_top10": "0-2",
     "vs_top25": "0-2"
   },
   "metrics": {
@@ -30,7 +30,7 @@
     "ranked_wins": 0,
     "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "35567250132",
@@ -62,7 +62,7 @@
       "opponent_team": "Union County",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": 18,
+      "opponent_rank": 8,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -75,9 +75,9 @@
       "opponent_id": "35333531132",
       "opponent_name": "NARAE COMPTON",
       "opponent_team": "Madison Central",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 22,
       "opponent_weight": 132,
-      "opponent_rank": 7,
+      "opponent_rank": 4,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -116,10 +116,45 @@
       "event": "vs. Seneca"
     }
   ],
-  "profile_generated_at": "2026-02-23",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.6176470588235294
-  }
+  "career": {
+    "career_id": "career_000690",
+    "canonical_name": "Ariel Weatherholt",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Seneca",
+      "record": "0-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 10,
+      "team": "Seneca",
+      "record": "4-6",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Seneca",
+      "record": "4-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 8,
+    "losses": 16,
+    "win_pct": 0.333
+  },
+  "profile_generated_at": "2026-04-05"
 }

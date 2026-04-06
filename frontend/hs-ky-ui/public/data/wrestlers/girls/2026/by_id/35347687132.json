@@ -3,7 +3,7 @@
   "name": "Tori Myers",
   "team": "North Hardin",
   "team_slug": "north_hardin",
-  "team_rank": 15,
+  "team_rank": 16,
   "weight_class": 185,
   "year": 2026,
   "current_rank": 41,
@@ -33,13 +33,13 @@
     "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35600350132",
-      "opponent_rank": 50,
+      "opponent_rank": 45,
       "opponent_name": "Zoie Zink",
       "method": "Fall 2:21"
     },
     "worst_loss": {
       "opponent_id": "35448929132",
-      "opponent_rank": 36,
+      "opponent_rank": 38,
       "opponent_name": "Jazmari Hernandez",
       "method": "Fall 4:14"
     }
@@ -52,7 +52,7 @@
       "opponent_team": "Boyle County",
       "opponent_team_rank": 17,
       "opponent_weight": 185,
-      "opponent_rank": 2,
+      "opponent_rank": 4,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
@@ -68,7 +68,7 @@
       "opponent_team": "Danville",
       "opponent_team_rank": 35,
       "opponent_weight": 185,
-      "opponent_rank": 36,
+      "opponent_rank": 38,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
@@ -84,7 +84,7 @@
       "opponent_team": "Mccreary Central",
       "opponent_team_rank": 46,
       "opponent_weight": 185,
-      "opponent_rank": 50,
+      "opponent_rank": 45,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
@@ -132,7 +132,7 @@
       "opponent_team": "Caldwell County",
       "opponent_team_rank": 33,
       "opponent_weight": 185,
-      "opponent_rank": 53,
+      "opponent_rank": 55,
       "weight_class": "185",
       "result": "W",
       "method": "FALL",
@@ -148,7 +148,7 @@
       "opponent_team": "Simon Kenton",
       "opponent_team_rank": 54,
       "opponent_weight": 185,
-      "opponent_rank": 6,
+      "opponent_rank": 8,
       "weight_class": "185",
       "result": "L",
       "method": "FALL",
@@ -158,10 +158,36 @@
       "mv_impact": -6.58
     }
   ],
-  "profile_generated_at": "2026-02-23",
-  "bonus": {
-    "top33_wins": 0,
-    "top33_bonus_ev_raw": null,
-    "top33_bonus_ev_shrunk": 1.625
-  }
+  "career": {
+    "career_id": "career_000586",
+    "canonical_name": "Tori Myers",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "North Hardin",
+      "record": "3-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 8,
+      "team": "North Hardin",
+      "record": "1-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 4,
+    "losses": 17,
+    "win_pct": 0.19
+  },
+  "profile_generated_at": "2026-04-05"
 }

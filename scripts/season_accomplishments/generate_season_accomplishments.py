@@ -1164,14 +1164,16 @@ def main():
     print(f"  3rd Place: {regional_placements[3]}")
     print(f"  4th Place: {regional_placements[4]}")
     print(f"  Total Placers: {sum(regional_placements.values())}")
-    print(f"  Expected: {8} regions × 14 weight classes × 4 placers = {8 * 14 * 4}")
-    
+    n_regions = 4 if args.gender == 'girls' else 8
+    n_weights = 12 if args.gender == 'girls' else 14
+    print(f"  Expected: {n_regions} regions × {n_weights} weight classes × 4 placers = {n_regions * n_weights * 4}")
+
     # State placements (top 8)
     state_placements = {}
     for place in [1, 2, 3, 4, 5, 6, 7, 8]:
         count = sum(1 for w in accomplishments['wrestlers'] if w.get('state_place') == place)
         state_placements[place] = count
-    
+
     print("\nState Tournament Placements:")
     print(f"  1st Place: {state_placements[1]}")
     print(f"  2nd Place: {state_placements[2]}")
@@ -1182,10 +1184,10 @@ def main():
     print(f"  7th Place: {state_placements[7]}")
     print(f"  8th Place: {state_placements[8]}")
     print(f"  Total Placers: {sum(state_placements.values())}")
-    print(f"  Expected: 14 weight classes × 8 placers = {14 * 8}")
-    
+    print(f"  Expected: {n_weights} weight classes × 8 placers = {n_weights * 8}")
+
     state_champions = sum(1 for w in accomplishments['wrestlers'] if w.get('state_champion'))
-    print(f"\nState Champions: {state_champions} (Expected: 14)")
+    print(f"\nState Champions: {state_champions} (Expected: {n_weights})")
     
     return 0
 

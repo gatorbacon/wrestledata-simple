@@ -18,6 +18,8 @@ import sys
 import importlib.util
 import re
 
+_CAREERS_DIR = None  # overridden in main() based on --gender
+
 
 def normalize_name(name: str) -> str:
     """Normalize a wrestler's name for matching."""
@@ -340,7 +342,7 @@ def load_careers(careers_dir: Path) -> Dict[str, Dict]:
 
 def load_career(career_id: str) -> Optional[Dict]:
     """Load a single career file."""
-    career_file = Path("data/careers") / f"{career_id}.json"
+    career_file = _CAREERS_DIR / f"{career_id}.json"
     if not career_file.exists():
         return None
     
@@ -698,7 +700,7 @@ def get_all_linked_wrestler_ids(season: int = None) -> Set[str]:
         season: Optional season to filter by (if None, returns all linked wrestler IDs from all seasons)
     """
     linked = set()
-    careers_dir = Path("data/careers")
+    careers_dir = _CAREERS_DIR
     
     for career_file in careers_dir.glob("career_*.json"):
         try:
@@ -868,7 +870,7 @@ def review_category(
             first_name_new = name_parts_new[0] if len(name_parts_new) > 1 else ''
             
             # Find all careers with matching last name (including the proposed one)
-            careers_dir = Path("data/careers")
+            careers_dir = _CAREERS_DIR
             matching_careers = []
             proposed_career_id = link.get('career_id')
             
@@ -1083,7 +1085,7 @@ def review_category(
                         # Auto-apply immediately
                         wrestler_new_id = wrestler_data.get('season_wrestler_id')
                         if wrestler_new_id and not check_if_already_linked(wrestler_new_id, alt_career_id, new_season):
-                            alt_career_file = Path("data/careers") / f"{alt_career_id}.json"
+                            alt_career_file = _CAREERS_DIR / f"{alt_career_id}.json"
                             with open(alt_career_file, 'r') as f:
                                 alt_career_data = json.load(f)
                             alt_seasons = alt_career_data.get('seasons', {})
@@ -1174,7 +1176,7 @@ def review_category(
                             if str(new_season) not in seasons:
                                 seasons[str(new_season)] = wrestler_new_id
                                 career['seasons'] = seasons
-                                career_file = Path("data/careers") / f"{career_id}.json"
+                                career_file = _CAREERS_DIR / f"{career_id}.json"
                                 with open(career_file, 'w', encoding='utf-8') as f:
                                     json.dump(career, f, indent=2, ensure_ascii=False)
                                 maybe_add_career_name_alias(
@@ -1196,7 +1198,7 @@ def review_category(
                         if str(new_season) not in seasons:
                             seasons[str(new_season)] = wrestler_new_id
                             career['seasons'] = seasons
-                            career_file = Path("data/careers") / f"{career_id}.json"
+                            career_file = _CAREERS_DIR / f"{career_id}.json"
                             with open(career_file, 'w', encoding='utf-8') as f:
                                 json.dump(career, f, indent=2, ensure_ascii=False)
                             maybe_add_career_name_alias(
@@ -1279,7 +1281,7 @@ def apply_links(links: List[Dict], category_name: str, careers: Dict[str, Dict])
             seasons[str(new_season)] = wrestler_new_id
             career['seasons'] = seasons
 
-            career_file = Path("data/careers") / f"{career_id}.json"
+            career_file = _CAREERS_DIR / f"{career_id}.json"
             with open(career_file, 'w', encoding='utf-8') as f:
                 json.dump(career, f, indent=2, ensure_ascii=False)
             maybe_add_career_name_alias(
@@ -1308,7 +1310,7 @@ def create_single_career(wrestler: Dict, anchor_season: int, season: int, career
     wrestler_id = wrestler.get('season_wrestler_id')
     name = wrestler.get('name', '')
     
-    careers_dir = Path("data/careers")
+    careers_dir = _CAREERS_DIR
     
     # Find max career ID
     max_career_num = 0
@@ -1366,7 +1368,7 @@ def create_new_careers(new_careers: List[Dict], anchor_season: int, careers: Dic
         return 0
     
     # Find max career ID
-    careers_dir = Path("data/careers")
+    careers_dir = _CAREERS_DIR
     max_career_num = 0
     for career_file in careers_dir.glob("career_*.json"):
         career_id = career_file.stem
@@ -1397,7 +1399,7 @@ def create_new_careers(new_careers: List[Dict], anchor_season: int, careers: Dic
             'notes': None
         }
         
-        career_file = Path("data/careers") / f"{career_id}.json"
+        career_file = _CAREERS_DIR / f"{career_id}.json"
         with open(career_file, 'w', encoding='utf-8') as f:
             json.dump(career, f, indent=2, ensure_ascii=False)
         
@@ -1668,13 +1670,16 @@ def main():
     )
     
     args = parser.parse_args()
-    
+
+    global _CAREERS_DIR
+    _CAREERS_DIR = Path("data/careers") if args.gender == "boys" else Path("data/careers/girls")
+
     log_dir = Path("data/career_linking_logs")
     log_dir.mkdir(parents=True, exist_ok=True)
-    
+
     # Load data
     print("\nLoading data...")
-    careers_dir = Path("data/careers")
+    careers_dir = _CAREERS_DIR
     careers = load_careers(careers_dir)
     print(f"Loaded {len(careers)} careers")
     
@@ -1936,7 +1941,7 @@ def main():
                             print(f"  ✅ Created {new_career_id} for {wrestler_2024.get('name')}")
                     print(f"\n✅ Created all {len(remaining)} Grade 12 careers")
                     # Reload careers to include newly created ones
-                    careers = load_careers(Path("data/careers"))
+                    careers = load_careers(_CAREERS_DIR)
                 elif response == 'r' or response == 'review':
                     # Review individually (similar to Category 5 but simpler)
                     approved_new = []
@@ -1965,7 +1970,7 @@ def main():
                             break
                     # Reload careers to include newly created ones
                     if approved_new:
-                        careers = load_careers(Path("data/careers"))
+                        careers = load_careers(_CAREERS_DIR)
                 else:
                     print("⏭️  Skipped")
             else:
@@ -1991,7 +1996,7 @@ def main():
                 spec.loader.exec_module(link_module)
                 
                 # Build lookups for finding alternatives
-                careers = link_module.load_careers(Path("data/careers"))
+                careers = link_module.load_careers(_CAREERS_DIR)
                 name_to_careers = {}
                 for career_id, career in careers.items():
                     name_norm = career.get('name_norm', '')
@@ -2194,7 +2199,7 @@ def main():
                                         print(f"  ✅ Created {new_career_id} for {remaining_wrestler.get('name')}")
                             print(f"\n✅ Created all {len(remaining)} remaining new careers")
                             # Reload careers to include newly created ones
-                            careers = load_careers(Path("data/careers"))
+                            careers = load_careers(_CAREERS_DIR)
                             break
                         elif response_lower == 'n' or response_lower == 'new career':
                             # Create career immediately
@@ -2277,7 +2282,7 @@ def main():
                                         print(f"  ✅ Created {new_career_id} for {remaining_wrestler.get('name')}")
                             print(f"\n✅ Created all {len(remaining)} remaining new careers")
                             # Reload careers to include newly created ones
-                            careers = load_careers(Path("data/careers"))
+                            careers = load_careers(_CAREERS_DIR)
                             break
                         elif response.isdigit():
                             alt_idx = int(response) - 1
@@ -2294,7 +2299,7 @@ def main():
                                 })
                                 # Auto-apply immediately
                                 if not check_if_already_linked(wrestler_id, alt_career_id):
-                                    alt_career_file = Path("data/careers") / f"{alt_career_id}.json"
+                                    alt_career_file = _CAREERS_DIR / f"{alt_career_id}.json"
                                     with open(alt_career_file, 'r') as f:
                                         alt_career_data = json.load(f)
                                     alt_seasons = alt_career_data.get('seasons', {})

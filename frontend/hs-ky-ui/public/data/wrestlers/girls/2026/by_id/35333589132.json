@@ -3,7 +3,7 @@
   "name": "Khloe Yasin",
   "team": "John Hardin",
   "team_slug": "john_hardin",
-  "team_rank": 3,
+  "team_rank": 5,
   "weight_class": 132,
   "year": 2026,
   "current_rank": 50,
@@ -33,7 +33,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35510918132",
-      "opponent_rank": 17,
+      "opponent_rank": 19,
       "opponent_name": "Maxine Rhinesmith",
       "method": "Fall 0:39"
     },
@@ -52,7 +52,7 @@
       "opponent_team": "Union County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
-      "opponent_rank": 39,
+      "opponent_rank": 40,
       "weight_class": "132",
       "result": "L",
       "method": "FALL",
@@ -66,9 +66,9 @@
       "opponent_id": "35510918132",
       "opponent_name": "Maxine Rhinesmith",
       "opponent_team": "John Hardin",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 5,
       "opponent_weight": 132,
-      "opponent_rank": 17,
+      "opponent_rank": 19,
       "weight_class": "132",
       "result": "W",
       "method": "FALL",
@@ -94,10 +94,27 @@
       "mv_impact": -5.14
     }
   ],
-  "profile_generated_at": "2026-02-23",
-  "bonus": {
-    "top33_wins": 1,
-    "top33_bonus_ev_raw": 2.0,
-    "top33_bonus_ev_shrunk": 1.6601307189542485
-  }
+  "career": {
+    "career_id": "career_000399",
+    "canonical_name": "Khloe Yasin",
+    "seasons": [
+      2026
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "John Hardin",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 1,
+    "losses": 2,
+    "win_pct": 0.333
+  },
+  "profile_generated_at": "2026-04-05"
 }

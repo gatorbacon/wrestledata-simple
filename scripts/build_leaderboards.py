@@ -595,9 +595,10 @@ def main() -> None:
         
         # Careers dir for all-time career wins (relative to repo root)
         repo_root = Path(__file__).resolve().parent.parent
-        careers_dir = repo_root / "data" / "careers"
-        
+
         for gender in genders:
+            gender_careers_dir = repo_root / "data" / "careers" / gender
+            careers_dir = gender_careers_dir if gender_careers_dir.exists() else repo_root / "data" / "careers"
             # Input: wrestler profiles
             profiles_dir = Path(f"frontend/hs-ky-ui/public/data/wrestlers/{gender}/{season}/by_id")
             
