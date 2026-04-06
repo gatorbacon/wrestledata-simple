@@ -12,6 +12,8 @@
         <div class="footer-content">
           <p class="footer-text">
             <a href="/report.html" class="footer-report-link footer-report-link--muted">Contact Us</a>
+            &nbsp;·&nbsp;
+            <a href="/privacy.html" class="footer-report-link footer-report-link--muted">Privacy Policy</a>
           </p>
         </div>
       </footer>
