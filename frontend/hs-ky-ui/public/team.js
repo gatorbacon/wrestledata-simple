@@ -514,6 +514,10 @@ async function renderTeamPage(team, metrics, starters, remaining, xtpData, xtpRa
   const teamName = team.team_name || team.name;
   const gender = getGenderFromURL();
   document.getElementById("team-name").textContent = teamName;
+  const _teamSeason = getSeasonFromURL();
+  const _teamGenderLabel = gender === "girls" ? "Kentucky Girls High School" : "Kentucky High School";
+  document.title = `${teamName} Wrestling ${_teamSeason} | ${_teamGenderLabel} | KentuckyMat`;
+  setMetaDescription(`${teamName} ${_teamSeason} Kentucky high school wrestling. Full roster, rankings, match results, and team stats on KentuckyMat.`);
   document.getElementById("team-meta").textContent =
     `${team.conference} · ${team.division} · Season ${getSeasonFromURL()}`;
 

@@ -258,6 +258,19 @@ function safe(value, formatter) {
 
     // === Header ===
     document.getElementById("wrestler-name").textContent = data.canonical_name || "—";
+    const _titleTeam = (mostRecent && mostRecent.team) ? mostRecent.team : null;
+    const _titleGenderLabel = gender === "girls" ? "Kentucky Girls High School Wrestling" : "Kentucky High School Wrestling";
+    document.title = _titleTeam
+      ? `${data.canonical_name} | ${_titleGenderLabel} | ${_titleTeam} | KentuckyMat`
+      : `${data.canonical_name} | ${_titleGenderLabel} | KentuckyMat`;
+    const _cr = data.career_record || {};
+    const _crWins = _cr.wins ?? 0;
+    const _crLosses = _cr.losses ?? 0;
+    const _crPct = _cr.win_pct != null ? `(${_cr.win_pct.toFixed(3)})` : "";
+    const _crRecord = `${_crWins}-${_crLosses} ${_crPct}`.trim();
+    const _metaTeamPart = _titleTeam ? `, ${_titleTeam}` : "";
+    const _metaGenderPart = gender === "girls" ? "Kentucky girls high school wrestling" : "Kentucky high school wrestling";
+    setMetaDescription(`${data.canonical_name} career record ${_crRecord}, ${_metaGenderPart}${_metaTeamPart}. Full match history, stats, and season breakdowns on KentuckyMat.`);
 
     const taglineEl = document.getElementById("wrestler-tagline");
     taglineEl.innerHTML = "";
@@ -592,7 +605,16 @@ function safe(value, formatter) {
     console.log("[RENDER] isHS =", isHS, "HS_CONFIG =", typeof HS_CONFIG);
     
     document.getElementById("wrestler-name").textContent = safe(data.name);
-    
+    const _wsGender = getGenderFromURL();
+    const _wsGenderLabel = _wsGender === "girls" ? "Kentucky Girls High School Wrestling" : "Kentucky High School Wrestling";
+    const _wsTeam = safe(data.team);
+    document.title = _wsTeam
+      ? `${safe(data.name)} | ${_wsGenderLabel} | ${_wsTeam} | KentuckyMat`
+      : `${safe(data.name)} | ${_wsGenderLabel} | KentuckyMat`;
+    const _wsMetaGender = _wsGender === "girls" ? "Kentucky girls high school wrestling" : "Kentucky high school wrestling";
+    const _wsTeamPart = _wsTeam ? `, ${_wsTeam}` : "";
+    setMetaDescription(`${safe(data.name)}, ${_wsMetaGender}${_wsTeamPart}. Full match history, stats, and season breakdowns on KentuckyMat.`);
+
     // Wrestler tagline with rank badge
     const taglineEl = document.getElementById("wrestler-tagline");
     taglineEl.innerHTML = "";

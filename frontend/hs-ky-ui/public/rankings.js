@@ -670,6 +670,9 @@ async function initRankings() {
   const dropIdParam = getQueryParam('drop');
   
   console.log(`[HS Rankings] Initializing: gender=${gender}, season=${season}, weight=${weight}, drop=${dropIdParam || 'latest'}`);
+  const _rankGenderLabel = gender === "girls" ? "Kentucky Girls" : "Kentucky Boys";
+  document.title = `${season} ${_rankGenderLabel} High School Wrestling Rankings | KentuckyMat`;
+  setMetaDescription(`${season} ${_rankGenderLabel} high school wrestling rankings by weight class. Updated weekly with full stats, records, and match data on KentuckyMat.`);
   
   // Load archive index to determine which drop to use
   const index = await loadArchiveIndex(gender, season);
