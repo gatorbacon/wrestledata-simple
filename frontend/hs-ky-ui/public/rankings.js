@@ -591,6 +591,10 @@ function renderRankings(data, gender, weight, isBaseline, season) {
     // W–L Record
     const recordTd = document.createElement("td");
     recordTd.textContent = formatWinLoss(wrestler.record);
+    // Short form for mobile two-line layout (no win%)
+    if (wrestler.record && wrestler.record.wins != null) {
+      recordTd.dataset.wlShort = `${wrestler.record.wins}–${wrestler.record.losses}`;
+    }
     tr.appendChild(recordTd);
     
     // Bonus %
@@ -672,6 +676,7 @@ async function initRankings() {
   console.log(`[HS Rankings] Initializing: gender=${gender}, season=${season}, weight=${weight}, drop=${dropIdParam || 'latest'}`);
   const _rankGenderLabel = gender === "girls" ? "Kentucky Girls" : "Kentucky Boys";
   document.title = `${season} ${_rankGenderLabel} High School Wrestling Rankings | KentuckyMat`;
+  sendPageView();
   setMetaDescription(`${season} ${_rankGenderLabel} high school wrestling rankings by weight class. Updated weekly with full stats, records, and match data on KentuckyMat.`);
   
   // Load archive index to determine which drop to use

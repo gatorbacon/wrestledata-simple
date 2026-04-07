@@ -17,39 +17,54 @@
   <script src="/header.js"></script>
 
   <div class="page-container homepage">
-    <!-- 1. Header / Hero -->
+
+    <!-- Hero -->
     <header class="home-hero">
       <img src="/logo2-transparent.png" alt="KentuckyMat" class="home-hero-logo" />
       <p class="home-hero-subtitle">Kentucky high school wrestling rankings & data</p>
     </header>
 
-    <!-- 2. Primary CTA -->
-    <section class="home-primary-cta">
-      <a href="/rankings.html?gender=boys" class="home-btn home-btn-primary">Boys Rankings</a>
-      <a href="/rankings.html?gender=girls" class="home-btn home-btn-primary">Girls Rankings</a>
+    <!-- Tier 1: Individual Rankings -->
+    <section class="home-section">
+      <div class="home-rankings-row">
+        <a href="/rankings.html?gender=boys" class="home-rank-btn home-rank-btn--boys">Boys Rankings</a>
+        <a href="/rankings.html?gender=girls" class="home-rank-btn home-rank-btn--girls">Girls Rankings</a>
+      </div>
     </section>
 
-    <!-- 3. Secondary Rankings -->
-    <section class="home-secondary">
+    <!-- Tier 2: Team Rankings -->
+    <section class="home-section">
       <h2 class="home-section-title">Team Rankings</h2>
-      <div class="home-secondary-links">
-        <a href="/leaderboards/xtp/teams.html?gender=boys">Boys Team Tournament Rankings</a>
-        <a href="/leaderboards/dual_rankings.html?gender=boys">Boys Dual Team Rankings</a>
-        <a href="/leaderboards/xtp/teams.html?gender=girls">Girls Team Tournament Rankings</a>
-        <a href="/leaderboards/dual_rankings.html?gender=girls">Girls Dual Team Rankings</a>
+      <div class="home-team-cards">
+        <a href="/leaderboards/xtp/teams.html?gender=boys" class="home-team-card home-team-card--boys">Boys Tournament Rankings</a>
+        <a href="/leaderboards/dual_rankings.html?gender=boys" class="home-team-card home-team-card--boys">Boys Dual Rankings</a>
+        <a href="/leaderboards/xtp/teams.html?gender=girls" class="home-team-card home-team-card--girls">Girls Tournament Rankings</a>
+        <a href="/leaderboards/dual_rankings.html?gender=girls" class="home-team-card home-team-card--girls">Girls Dual Rankings</a>
       </div>
     </section>
 
-    <!-- 4. Explore More -->
-    <section class="home-explore">
-      <h2 class="home-section-title">Explore More</h2>
-      <div class="home-explore-links">
-        <a href="/leaderboards.html">Stat Leaders</a>
-        <a href="/dual_predictor.html">Dual Predictor</a>
-        <a href="/recruiting.html?gender=boys">Boys Recruiting</a>
-        <a href="/recruiting.html?gender=girls">Girls Recruiting</a>
+    <!-- Tier 3: Recruiting + Stat Leaders -->
+    <section class="home-section home-features">
+
+      <div class="home-feature-panel">
+        <h2 class="home-section-title">College Recruiting</h2>
+        <a href="/recruiting.html?gender=boys" class="home-feature-link home-feature-link--boys">Boys Recruiting</a>
+        <a href="/recruiting.html?gender=girls" class="home-feature-link home-feature-link--girls">Girls Recruiting</a>
       </div>
+
+      <div class="home-feature-panel">
+        <h2 class="home-section-title">Stat Leaders</h2>
+        <a href="/leaderboards.html?gender=boys" class="home-feature-link home-feature-link--boys">Boys Stat Leaders</a>
+        <a href="/leaderboards.html?gender=girls" class="home-feature-link home-feature-link--girls">Girls Stat Leaders</a>
+      </div>
+
     </section>
+
+    <!-- Tier 4: Specialty -->
+    <section class="home-specialty">
+      <a href="/dual_predictor.html" class="home-specialty-link">Dual Predictor</a>
+    </section>
+
   </div>
 
   <script src="/footer.js"></script>

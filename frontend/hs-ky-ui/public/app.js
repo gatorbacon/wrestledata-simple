@@ -263,6 +263,7 @@ function safe(value, formatter) {
     document.title = _titleTeam
       ? `${data.canonical_name} | ${_titleGenderLabel} | ${_titleTeam} | KentuckyMat`
       : `${data.canonical_name} | ${_titleGenderLabel} | KentuckyMat`;
+    sendPageView();
     const _cr = data.career_record || {};
     const _crWins = _cr.wins ?? 0;
     const _crLosses = _cr.losses ?? 0;
@@ -611,6 +612,7 @@ function safe(value, formatter) {
     document.title = _wsTeam
       ? `${safe(data.name)} | ${_wsGenderLabel} | ${_wsTeam} | KentuckyMat`
       : `${safe(data.name)} | ${_wsGenderLabel} | KentuckyMat`;
+    sendPageView();
     const _wsMetaGender = _wsGender === "girls" ? "Kentucky girls high school wrestling" : "Kentucky high school wrestling";
     const _wsTeamPart = _wsTeam ? `, ${_wsTeam}` : "";
     setMetaDescription(`${safe(data.name)}, ${_wsMetaGender}${_wsTeamPart}. Full match history, stats, and season breakdowns on KentuckyMat.`);

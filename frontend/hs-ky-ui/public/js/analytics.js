@@ -14,7 +14,8 @@
   // Configure GA4
   gtag('js', new Date());
   gtag('config', 'G-LF2J4B0JKW', {
-    anonymize_ip: true
+    anonymize_ip: true,
+    send_page_view: false
   });
 })();
 

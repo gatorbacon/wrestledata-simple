@@ -325,6 +325,7 @@ async function init() {
   const season = getSeasonFromURL();
   document.getElementById('season-info').textContent = `Season ${season}`;
   document.title = `Kentucky High School Wrestling Stat Leaders ${season} | KentuckyMat`;
+  sendPageView();
   setMetaDescription(`Kentucky high school wrestling stat leaders for ${season}. Top wrestlers by wins, pins, tech falls, and career wins on KentuckyMat.`);
 
   // Setup UI controls

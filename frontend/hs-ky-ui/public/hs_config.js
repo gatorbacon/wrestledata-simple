@@ -130,6 +130,15 @@ function buildPageURL(page, gender, additionalParams = {}) {
   return `${page}?${params.toString()}`;
 }
 
+function sendPageView() {
+  if (typeof gtag === 'function') {
+    gtag('event', 'page_view', {
+      page_title: document.title,
+      page_location: window.location.href,
+    });
+  }
+}
+
 function setMetaDescription(content) {
   let tag = document.querySelector('meta[name="description"]');
   if (!tag) {
@@ -138,5 +147,17 @@ function setMetaDescription(content) {
     document.head.appendChild(tag);
   }
   tag.setAttribute('content', content);
+}
+
+// Static pages don't set dynamic titles — fire pageview for them on load
+// Dynamic pages (wrestler, team, rankings, leaderboards) call sendPageView() themselves after setting title
+const _dynamicPages = ['wrestler.html', 'team.html', 'rankings.html', 'leaderboards.html', 'recruiting.html'];
+const _isStaticPage = !_dynamicPages.some(p => window.location.pathname.includes(p));
+if (_isStaticPage) {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', sendPageView);
+  } else {
+    sendPageView();
+  }
 }
 

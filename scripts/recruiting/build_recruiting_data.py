@@ -24,6 +24,9 @@ MAX_PER_CLASS = 100
 PLACEMENT_POINTS = {1: 20, 2: 16, 3: 12, 4: 10, 5: 8, 6: 6, 7: 4, 8: 3}
 GRADE_LABELS = ["Fr", "So", "Jr", "Sr"]
 
+# Recency multipliers: senior-year results count more, freshman results less
+GRADE_WEIGHTS = {"Fr": 0.75, "So": 0.90, "Jr": 1.10, "Sr": 1.75}
+
 # Set by main() based on --gender
 CAREERS_DIR: Path = None
 WRESTLERS_INDEX: Path = None
@@ -120,7 +123,7 @@ def build(gender: str):
             place = entry.get("state_place") if entry else None
             placements[label] = place
             if place and place in PLACEMENT_POINTS:
-                total_points += PLACEMENT_POINTS[place]
+                total_points += PLACEMENT_POINTS[place] * GRADE_WEIGHTS[label]
 
         # Build team_slug from team name
         team_slug = team.lower().strip().replace(" ", "_").replace("-", "_")
@@ -162,29 +165,24 @@ def build(gender: str):
 
         entries.sort(key=sort_key)
 
-        # Post-sort: for adjacent same-weight wrestlers, give priority to the one
-        # with a better most-recent-year state placement (bubble-sort one pass).
+        # Post-sort: within 3 spots, if two wrestlers share a weight class and
+        # the lower-ranked one placed better at states this year, swap them.
+        # Uses only the current-season (Sr) placement so injuries/absences don't
+        # cause undeserved jumps from prior-year results.
+        SWAP_WINDOW = 3
         changed = True
         while changed:
             changed = False
-            for i in range(len(entries) - 1):
-                a, b = entries[i], entries[i + 1]
-                if a.get("weight") != b.get("weight"):
-                    continue
-                # Find most recent placement for each
-                def most_recent_place(e):
-                    for label in reversed(GRADE_LABELS):
-                        p = (e.get("placements") or {}).get(label)
-                        if p is not None:
-                            return p
-                    return None
-                pa = most_recent_place(a)
-                pb = most_recent_place(b)
-                if pa is None and pb is None:
-                    continue
-                if pb is not None and (pa is None or pb < pa):
-                    entries[i], entries[i + 1] = entries[i + 1], entries[i]
-                    changed = True
+            for i in range(len(entries)):
+                for j in range(i + 1, min(i + SWAP_WINDOW + 1, len(entries))):
+                    a, b = entries[i], entries[j]
+                    if a.get("weight") != b.get("weight"):
+                        continue
+                    sa = (a.get("placements") or {}).get("Sr") or 999
+                    sb = (b.get("placements") or {}).get("Sr") or 999
+                    if sb < sa:
+                        entries[i], entries[j] = entries[j], entries[i]
+                        changed = True
 
         top = entries[:MAX_PER_CLASS]
         # Append any committed wrestlers beyond the top 100 that aren't already included

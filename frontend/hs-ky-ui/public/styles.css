@@ -6067,121 +6067,164 @@ table a:hover {
    HOMEPAGE (index.html) — rankings-first, minimal
    ======================================== */
 
+/* ============================================
+   HOMEPAGE
+   ============================================ */
+
+/* Gender color tokens */
+:root {
+  --boys-color:  #1a2f5e;
+  --boys-tint:   #eef1f8;
+  --boys-border: #c0cbe8;
+  --girls-color:  #be185d;
+  --girls-tint:   #fdf2f8;
+  --girls-border: #fbcfe8;
+}
+
 .homepage.page-container {
-  max-width: 640px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 2em var(--pad-lg) 4em;
 }
 
-/* 1. Hero */
+/* Hero */
 .home-hero {
   text-align: center;
   margin-bottom: 2.5em;
 }
 .home-hero-logo {
   display: block;
-  margin: 0 auto 0.35em;
+  margin: 0 auto 0.5em;
   width: 100%;
-  max-width: 380px; /* Match width of 2 buttons (180+180+gap) */
+  max-width: 360px;
   height: auto;
-}
-.home-hero-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin: 0 0 0.35em;
-  letter-spacing: -0.02em;
 }
 .home-hero-subtitle {
   font-size: 0.9375rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   margin: 0;
 }
 
-/* 2. Primary CTA — most prominent */
-.home-primary-cta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
-  margin-bottom: 2.5em;
-}
-.home-btn {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 600;
-  border: none;
-  box-sizing: border-box;
-}
-.home-btn-primary {
-  min-width: 180px;
-  padding: 1rem 1.75rem;
-  font-size: 1.125rem;
-  color: #fff;
-  background: #041d41; /* Match logo color */
-  border-radius: 0;
-}
-.home-btn-primary:hover {
-  background: #052a5c;
-  text-decoration: none;
-  color: #fff;
-}
-
-/* 3. Secondary Rankings — smaller, grouped */
-.home-secondary {
+/* Section spacing */
+.home-section {
   margin-bottom: 2em;
 }
 .home-section-title {
-  font-size: 0.8125rem;
-  font-weight: 600;
-  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.07em;
   margin: 0 0 0.75em;
 }
-.home-secondary-links {
+
+/* ---- Tier 1: Rankings buttons ---- */
+.home-rankings-row {
   display: flex;
+  gap: 1em;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 0.5em 1.5em;
 }
-.home-secondary-links a {
-  font-size: 0.9375rem;
-  color: var(--link);
+.home-rank-btn {
+  flex: 1 1 200px;
+  max-width: 280px;
+  display: block;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: filter 0.15s;
 }
-.home-secondary-links a:hover {
+.home-rank-btn:hover { filter: brightness(1.1); color: #fff; text-decoration: none; }
+.home-rank-btn--boys  { background: var(--boys-color); }
+.home-rank-btn--girls { background: var(--girls-color); }
+
+/* ---- Tier 2: Team ranking cards ---- */
+.home-team-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6em;
+}
+.home-team-card {
+  display: block;
+  padding: 0.65em 0.75em;
+  border-radius: 3px;
+  border: 1px solid;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: filter 0.15s;
+  line-height: 1.3;
+}
+.home-team-card:hover { filter: brightness(0.95); text-decoration: none; }
+.home-team-card--boys  { background: var(--boys-tint);  border-color: var(--boys-border);  color: var(--boys-color); }
+.home-team-card--girls { background: var(--girls-tint); border-color: var(--girls-border); color: var(--girls-color); }
+
+/* ---- Tier 3: Recruiting + Stat Leaders ---- */
+.home-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.home-feature-panel {
+  padding: 1.1em 1.25em 1.25em;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.home-feature-link {
+  display: block;
+  padding: 0.5em 0.75em;
+  border-radius: 3px;
+  border: 1px solid;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: filter 0.15s;
+}
+.home-feature-link:hover { filter: brightness(0.95); text-decoration: none; }
+.home-feature-link--boys  { background: var(--boys-tint);  border-color: var(--boys-border);  color: var(--boys-color); }
+.home-feature-link--girls { background: var(--girls-tint); border-color: var(--girls-border); color: var(--girls-color); }
+
+/* ---- Tier 4: Specialty ---- */
+.home-specialty {
+  text-align: center;
+  padding-top: 0.5em;
+}
+.home-specialty-link {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+.home-specialty-link:hover {
+  color: var(--text-main);
   text-decoration: underline;
 }
 
-/* 4. Explore More */
-.home-explore {
-  margin-bottom: 2em;
-}
-.home-explore-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em 1.5em;
-}
-.home-explore-links a {
-  font-size: 0.9375rem;
-  color: var(--link);
-}
-.home-explore-links a:hover {
-  text-decoration: underline;
-}
-
-/* Mobile: stack primary buttons, no horizontal scroll */
-@media (max-width: 480px) {
+/* Mobile */
+@media (max-width: 600px) {
   .homepage.page-container {
     padding: 1.5em 1em 3em;
   }
-  .home-hero-logo {
-    max-width: none;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+  .home-rank-btn {
+    max-width: 100%;
   }
+  .home-team-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .home-features {
+    grid-template-columns: 1fr;
+  }
+
+  /* legacy selectors kept to avoid breaking anything below */
   .home-primary-cta {
     flex-direction: column;
     align-items: stretch;
@@ -6309,3 +6352,116 @@ table a:hover {
   color: var(--text);
   font-weight: 500;
 }
+
+/* =====================================================
+   RANKINGS TABLE — MOBILE COMPACT SINGLE-LINE
+   Matches the PDF layout: rank · movement · name · team · region
+   To revert: comment out this entire block (to END MOBILE COMPACT)
+   ===================================================== */
+@media (max-width: 768px) {
+  .table-wrapper:has(#rankings-table) {
+    overflow-x: visible;
+  }
+
+  #rankings-table {
+    table-layout: fixed;
+    width: 100%;
+    font-size: 0.75em;
+  }
+
+  /* Hide grade, W-L, bonus% — not needed on mobile */
+  #rankings-table th:nth-child(5),
+  #rankings-table td:nth-child(5),
+  #rankings-table th:nth-child(7),
+  #rankings-table td:nth-child(7),
+  #rankings-table th:nth-child(8),
+  #rankings-table td:nth-child(8) {
+    display: none !important;
+  }
+
+  /* All fixed columns use px to avoid em=0 collapse issues */
+  #rankings-table th:nth-child(1),
+  #rankings-table td:nth-child(1) { /* rank — 22px */
+    width: 22px;
+    min-width: 22px;
+    text-align: right;
+    padding-right: 2px;
+  }
+
+  #rankings-table th:nth-child(2),
+  #rankings-table td:nth-child(2) { /* movement — 34px, fits ▲19 */
+    width: 34px;
+    min-width: 34px;
+    padding: 0 2px;
+    overflow: hidden;
+  }
+
+  #rankings-table th:nth-child(3),
+  #rankings-table td:nth-child(3) { /* name — fixed ~120px (~20 chars) */
+    width: 120px;
+    min-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 4px;
+  }
+
+  #rankings-table th:nth-child(4),
+  #rankings-table td:nth-child(4) { /* team — takes remaining space */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 4px;
+  }
+
+  #rankings-table th:nth-child(6),
+  #rankings-table td:nth-child(6) { /* region — 44px */
+    width: 44px;
+    min-width: 44px;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  /* "Region" → "Reg" in header (use px width so it doesn't collapse) */
+  #rankings-table th:nth-child(6) {
+    overflow: hidden;
+    text-overflow: clip;
+  }
+
+  /* "#" rank header via content swap — width already set in px above */
+  #rankings-table th:nth-child(1) {
+    overflow: hidden;
+  }
+
+  /* Tighter row padding on mobile */
+  #rankings-table th,
+  #rankings-table td {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  /* Title: smaller, single line */
+  #rankings-title {
+    font-size: 1.3rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Hide "Published <date>" on mobile */
+  #season-info {
+    display: none !important;
+  }
+
+  /* PDF download button — add color */
+  #pdf-download-link {
+    background: var(--accent-primary) !important;
+    color: #fff !important;
+    border-color: var(--accent-primary) !important;
+    font-weight: 600;
+  }
+  #pdf-download-link span {
+    color: #fff !important;
+  }
+}
+/* END MOBILE COMPACT */
