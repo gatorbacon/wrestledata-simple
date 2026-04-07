@@ -83,17 +83,30 @@
 
   function renderTable() {
     const allEntries = (recruitingData.classes[currentClass] || []);
-    const visible = showAll ? allEntries.slice(0, MAX_SHOW) : allEntries.slice(0, DEFAULT_SHOW);
-    const remaining = allEntries.length - visible.length;
+    const ranked = allEntries.slice(0, MAX_SHOW);
+    const bonusCommitted = allEntries.slice(MAX_SHOW); // committed-only entries appended by build script
+    const visible = showAll ? ranked : ranked.slice(0, DEFAULT_SHOW);
+    const remaining = ranked.length - visible.length;
 
     const tbody = document.getElementById('recruiting-tbody');
     tbody.innerHTML = '';
 
     visible.forEach((entry, i) => {
       const tr = document.createElement('tr');
+      if (entry.committed_to) tr.style.backgroundColor = '#f0fdf4';
       tr.innerHTML = buildRow(entry, i + 1);
       tbody.appendChild(tr);
     });
+
+    // Bonus committed (beyond top 100) — only shown when expanded, no rank number
+    if (showAll) {
+      bonusCommitted.forEach(entry => {
+        const tr = document.createElement('tr');
+        tr.style.backgroundColor = '#f0fdf4';
+        tr.innerHTML = buildRow(entry, null);
+        tbody.appendChild(tr);
+      });
+    }
 
     // Mobile cards
     const cardsEl = document.getElementById('recruiting-cards');
@@ -101,9 +114,20 @@
     visible.forEach((entry, i) => {
       const card = document.createElement('div');
       card.className = 'recruit-card';
+      if (entry.committed_to) card.style.backgroundColor = '#f0fdf4';
       card.innerHTML = buildCard(entry, i + 1);
       cardsEl.appendChild(card);
     });
+
+    if (showAll) {
+      bonusCommitted.forEach(entry => {
+        const card = document.createElement('div');
+        card.className = 'recruit-card';
+        card.style.backgroundColor = '#f0fdf4';
+        card.innerHTML = buildCard(entry, null);
+        cardsEl.appendChild(card);
+      });
+    }
 
     // Summary line
     const placers = allEntries.filter(e => e.total_points > 0).length;
@@ -135,11 +159,11 @@
     }).join('');
 
     const commitCell = entry.committed_to
-      ? `<span class="committed-college">${escapeHtml(entry.committed_to)}</span>`
+      ? `<span class="committed-college" style="color:#166534;font-weight:500;">${escapeHtml(entry.committed_to)}</span>`
       : `<span class="uncommitted">Uncommitted</span>`;
 
     return `
-      <td class="row-num">${num}</td>
+      <td class="row-num">${num !== null ? num : ''}</td>
       <td><a href="${nameHref}">${escapeHtml(entry.name)}</a></td>
       <td>${entry.weight || '—'}</td>
       <td class="rank-col">${rankCell}</td>
@@ -163,13 +187,13 @@
     }).join('');
 
     const commitStr = entry.committed_to
-      ? `<span class="committed-college">${escapeHtml(entry.committed_to)}</span>`
+      ? `<span class="committed-college" style="color:#166534;font-weight:500;">${escapeHtml(entry.committed_to)}</span>`
       : `<span class="uncommitted">Uncommitted</span>`;
 
     return `
       <div class="recruit-card-left">
         <div class="recruit-card-top">
-          <span class="recruit-card-num">${num}</span>
+          <span class="recruit-card-num">${num !== null ? num : ''}</span>
           <a href="${nameHref}" class="recruit-card-name">${escapeHtml(entry.name)}</a>
           <span class="recruit-card-rank">${rankStr}</span>
         </div>

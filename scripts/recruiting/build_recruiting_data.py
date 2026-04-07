@@ -58,13 +58,8 @@ def load_commitments() -> dict:
         return json.load(f)
 
 
-def main():
+def build(gender: str):
     global CAREERS_DIR, WRESTLERS_INDEX, COMMITMENTS_FILE, OUTPUT_FILE
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--gender", required=True, choices=["boys", "girls"])
-    args = parser.parse_args()
-    gender = args.gender
 
     CAREERS_DIR = REPO_ROOT / f"frontend/hs-ky-ui/public/data/careers/{gender}"
     WRESTLERS_INDEX = REPO_ROOT / f"frontend/hs-ky-ui/public/data/wrestlers/{gender}/2026/index_wrestlers.json"
@@ -191,10 +186,14 @@ def main():
                     entries[i], entries[i + 1] = entries[i + 1], entries[i]
                     changed = True
 
-        output_classes[str(gc)] = entries[:MAX_PER_CLASS]
+        top = entries[:MAX_PER_CLASS]
+        # Append any committed wrestlers beyond the top 100 that aren't already included
+        top_ids = {e["career_id"] for e in top}
+        bonus = [e for e in entries[MAX_PER_CLASS:] if e["committed_to"] and e["career_id"] not in top_ids]
+        output_classes[str(gc)] = top + bonus
 
         placers = sum(1 for e in entries if e["total_points"] > 0)
-        print(f"  Class of {gc}: {len(entries)} total, {placers} with state pts → trimmed to {len(output_classes[str(gc)])}")
+        print(f"  Class of {gc}: {len(entries)} total, {placers} with state pts → top {len(top)} + {len(bonus)} bonus committed")
 
     output = {
         "generated_at": date.today().isoformat(),
@@ -208,6 +207,21 @@ def main():
 
     total = sum(len(v) for v in output_classes.values())
     print(f"\nDone. {total} wrestlers written to {OUTPUT_FILE}")
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--gender", choices=["boys", "girls"])
+    parser.add_argument("--rebuild", action="store_true", help="Rebuild recruiting JSON without editing commitments")
+    args = parser.parse_args()
+
+    if args.rebuild:
+        for gender in (["boys", "girls"] if not args.gender else [args.gender]):
+            build(gender)
+    elif args.gender:
+        build(args.gender)
+    else:
+        parser.error("--gender is required unless using --rebuild")
 
 
 if __name__ == "__main__":

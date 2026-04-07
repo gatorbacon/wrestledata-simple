@@ -13,7 +13,11 @@ Usage:
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+from scripts.recruiting.build_recruiting_data import build as build_recruiting
 
 REPO_ROOT = Path(__file__).parent.parent.parent
 
@@ -180,17 +184,19 @@ def main():
 
             commitments[career_id] = college
             save_json(COMMITMENTS_FILE, commitments)
-            print(f"  ✓ {wrestler['name']} → {college}\n")
+            print(f"  ✓ {wrestler['name']} → {college}")
+            build_recruiting(gender)
 
         elif action == "2" and current:
             del commitments[career_id]
             save_json(COMMITMENTS_FILE, commitments)
-            print(f"  ✓ Removed commitment for {wrestler['name']}\n")
+            print(f"  ✓ Removed commitment for {wrestler['name']}")
+            build_recruiting(gender)
 
         else:
             print("  Cancelled.\n")
 
-    print("\nRemember to re-run build_recruiting_data.py to update the website.")
+    print("\nDone.")
 
 
 if __name__ == "__main__":
