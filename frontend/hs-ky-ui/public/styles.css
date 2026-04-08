@@ -6239,6 +6239,155 @@ table a:hover {
 
 
 /* ============================================
+   Leaderboards — Mobile Cards
+   ============================================ */
+
+.leaderboard-mobile { display: none; }
+.leaderboard-desktop { display: block; }
+
+@media (max-width: 600px) {
+  .leaderboard-mobile { display: block; }
+  .leaderboard-desktop { display: none; }
+
+  /* Shrink page title on mobile */
+  .page-container > .header h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Hide graduation legend — pill colors are self-evident in card context */
+  #career-wins-legend {
+    display: none !important;
+  }
+
+  /* Inline pill in meta line: match surrounding text size, minimal padding */
+  .lb-card-meta .graduation-pill {
+    font-size: inherit;
+    font-weight: 600;
+    padding: 0.05em 0.35em;
+    border-radius: 4px;
+    vertical-align: baseline;
+  }
+  .lb-card-meta .graduation-pill--senior {
+    padding: 0.05em 0.35em;
+  }
+}
+
+.lb-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border-light);
+  border-radius: 5px;
+  padding: 9px 12px;
+  margin-bottom: 6px;
+}
+
+.lb-card-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.lb-card-top {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 2px;
+}
+
+.lb-card-num {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  min-width: 16px;
+  text-align: right;
+}
+
+.lb-card-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.lb-card-name:hover { text-decoration: underline; }
+
+.lb-card-meta {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lb-card-stat {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  flex-shrink: 0;
+  text-align: right;
+  min-width: 36px;
+}
+
+.lb-card-stat-sub {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-align: right;
+  margin-top: 1px;
+}
+
+/* ============================================
+   Career Profile — Header Rank Pill
+   ============================================ */
+
+.career-header-rank-pill {
+  display: inline-block;
+  background: var(--boys-color, #1a2f5e);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.2em 0.65em;
+  border-radius: 6px;
+  letter-spacing: 0.01em;
+  vertical-align: middle;
+}
+
+/* ============================================
+   Career Profile — Opponent Rank Pills
+   ============================================ */
+
+.opp-rank-th,
+.opp-rank-td {
+  text-align: center;
+  white-space: nowrap;
+  width: 60px;
+}
+
+.opp-rank-pill {
+  display: inline-block;
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.opp-rank-gold   { background: #c9a227; color: #fff; }
+.opp-rank-silver { background: #8c9198; color: #fff; }
+.opp-rank-bronze { background: #a0522d; color: #fff; }
+.opp-rank-top10  { background: #0e7a6e; color: #fff; }
+.opp-rank-other  { background: var(--bg-alt, #f0f0f0); color: var(--text-secondary); }
+
+.opp-rank-na {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+/* ============================================
    Career Profile — Multi-Season Sections
    ============================================ */
 
@@ -6310,6 +6459,53 @@ table a:hover {
 }
 
 /* ── Season Tabs (unified career/season profile) ─────────────────────────── */
+.season-tabs--mobile { display: none; }
+
+@media (max-width: 600px) {
+  .season-tabs--desktop { display: none !important; }
+  .season-tabs--mobile  {
+    display: flex !important;
+    flex-wrap: nowrap;
+    gap: 4px;
+    margin: 6px 0 6px;
+    padding-bottom: 0;
+    border-bottom: none;
+    overflow-x: auto;
+  }
+  .season-tabs--mobile .season-tab {
+    font-size: 0.72rem;
+    padding: 3px 7px;
+    flex-shrink: 0;
+  }
+
+  /* Condense season stats section */
+  .section-title-season-stats {
+    margin-top: 14px !important;
+    font-size: 0.9rem;
+  }
+  #season-panel hr.section-rule {
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+  .stats-grid-newspaper {
+    margin-top: 6px;
+  }
+
+  /* Condense match history section */
+  #season-panel .section-header {
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+  #season-panel .section-header h2 {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  #season-panel .section-header + hr.section-rule {
+    margin-top: 4px;
+    margin-bottom: 2px;
+  }
+}
+
 .season-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -6341,6 +6537,187 @@ table a:hover {
   border-color: var(--accent, #4db6ac);
   color: #fff;
   font-weight: 600;
+}
+
+/* ── Career Summary — Mobile Cards ──────────────────────────────────────── */
+.career-summary-mobile { display: none; }
+.career-summary-desktop { display: table; }
+
+@media (max-width: 600px) {
+  .career-summary-desktop { display: none; }
+  .career-summary-mobile  { display: block; }
+}
+
+.career-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--border-light);
+  padding: 9px 4px;
+  cursor: pointer;
+}
+
+.career-summary-card.active {
+  background: var(--surface-hover, rgba(0,0,0,0.03));
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* Left: season label + team */
+.career-summary-card-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.career-summary-card-season {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 2px;
+}
+
+.career-summary-card-team {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--accent-primary, #4db6ac);
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Right: labeled cells row */
+.career-summary-card-right {
+  display: flex;
+  gap: 14px;
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+
+.career-summary-place-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.career-summary-place-label {
+  font-size: 0.58rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+}
+
+.career-summary-card-record {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 22px; /* align baseline with medal images */
+}
+
+.career-summary-place-dash {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 22px;
+}
+
+/* ── Career Match Table — Mobile Card Layout ─────────────────────────────── */
+.match-cards-mobile { display: none; }
+.match-table-desktop { display: block; }
+
+@media (max-width: 600px) {
+  .match-table-desktop { display: none; }
+  .match-cards-mobile  { display: block; }
+
+  /* Rank pill in header — slightly smaller on mobile but still prominent */
+  .career-header-rank-pill {
+    font-size: 0.85rem;
+    padding: 0.18em 0.55em;
+  }
+}
+
+/* Match cards */
+.match-card {
+  border-bottom: 1px solid var(--border-light);
+  padding: 7px 2px;
+}
+
+.match-card-line1 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.match-card-name {
+  flex: 1;
+  font-size: 0.875rem;
+  font-weight: 600;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-main);
+}
+
+.match-card-name a {
+  color: var(--accent-primary, #4db6ac);
+  text-decoration: none;
+}
+
+.match-card-name a:hover { text-decoration: underline; }
+
+.match-card-result {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  width: 108px;        /* badge ~52px + score ~46px + gap — fixed so columns align */
+  justify-content: flex-end;
+}
+
+.match-card-score {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-main);
+  white-space: nowrap;
+  width: 42px;
+  text-align: right;
+}
+
+.match-card-line2 {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+.match-card-line2-left {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.match-card-date {
+  flex-shrink: 0;
+  width: 108px;
+  text-align: right;
+  color: var(--text-secondary);
+}
+
+.match-card-team-link {
+  color: var(--accent-primary, #4db6ac);
+  text-decoration: none;
+}
+
+.match-card-team-link:hover { text-decoration: underline; }
+
+.match-card-meta {
+  color: var(--text-secondary);
 }
 
 /* Highlight active row in career summary table */

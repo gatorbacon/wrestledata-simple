@@ -277,6 +277,13 @@ function safe(value, formatter) {
     taglineEl.innerHTML = "";
     if (mostRecent && mostRecent.weight_class) {
       taglineEl.textContent = `${mostRecent.weight_class} lbs`;
+      if (mostRecent.current_rank != null) {
+        const rankPill = document.createElement("span");
+        rankPill.className = "career-header-rank-pill";
+        rankPill.textContent = `#${mostRecent.current_rank}`;
+        taglineEl.appendChild(document.createTextNode("\u00a0\u00a0"));
+        taglineEl.appendChild(rankPill);
+      }
     }
 
     const metaEl = document.getElementById("wrestler-meta");
@@ -338,26 +345,34 @@ function safe(value, formatter) {
       section.appendChild(summaryHr);
 
       const table = document.createElement("table");
-      table.className = "career-summary-table";
+      table.className = "career-summary-table career-summary-desktop";
       table.style.cssText = "width:100%;font-size:0.875rem;margin-top:12px;margin-bottom:32px;";
       const thead = document.createElement("thead");
       thead.innerHTML = "<tr><th>Season</th><th>Grade</th><th>Team</th><th>Record</th><th>Regional Place</th><th>State Place</th></tr>";
       table.appendChild(thead);
       const tbody = document.createElement("tbody");
 
+      // Mobile cards list (parallel to table)
+      const summaryCards = document.createElement("div");
+      summaryCards.className = "career-summary-cards career-summary-mobile";
+      summaryCards.style.cssText = "margin-top:12px;margin-bottom:28px;";
+
       seasons.forEach((s, idx) => {
+        const gradeStr = _gradeLabel(s.grade);
+        const regStr = s.regional_place != null ? ordinal(s.regional_place) : "—";
+        const stateStr = s.state_place != null ? ordinal(s.state_place) : "—";
+
+        // Desktop table row
         const tr = document.createElement("tr");
         tr.style.cursor = "pointer";
         if (idx === 0) tr.classList.add("active-season-row");
-
-        const gradeStr = _gradeLabel(s.grade);
         const cells = [
           { text: String(s.season) },
           { text: gradeStr },
           { text: s.team || "—", isTeam: true, team: s.team },
           { text: s.record || "—" },
-          { text: s.regional_place != null ? ordinal(s.regional_place) : "—" },
-          { text: s.state_place != null ? ordinal(s.state_place) : "—" },
+          { text: regStr },
+          { text: stateStr },
         ];
         cells.forEach(cell => {
           const td = document.createElement("td");
@@ -372,19 +387,89 @@ function safe(value, formatter) {
           }
           tr.appendChild(td);
         });
-
         tr.addEventListener("click", () => activateSeason(idx));
         tbody.appendChild(tr);
+
+        // Mobile card: [left: season+team] [right: Record | Reg | State cells]
+        const card = document.createElement("div");
+        card.className = "career-summary-card" + (idx === 0 ? " active" : "");
+        card.style.cursor = "pointer";
+
+        // Left: season/grade + team
+        const cardLeft = document.createElement("div");
+        cardLeft.className = "career-summary-card-left";
+
+        const seasonGrade = document.createElement("div");
+        seasonGrade.className = "career-summary-card-season";
+        seasonGrade.textContent = `${s.season} · ${gradeStr}`;
+        cardLeft.appendChild(seasonGrade);
+
+        if (s.team) {
+          const teamA = document.createElement("a");
+          teamA.href = buildPageURL("team.html", gender, { team: teamNameToSlug(s.team) });
+          teamA.textContent = s.team;
+          teamA.className = "career-summary-card-team";
+          teamA.onclick = e => e.stopPropagation();
+          cardLeft.appendChild(teamA);
+        }
+        card.appendChild(cardLeft);
+
+        // Right: labeled cells — Record | Reg | State
+        const cardRight = document.createElement("div");
+        cardRight.className = "career-summary-card-right";
+
+        const mkLabeledCell = (label, content) => {
+          const cell = document.createElement("div");
+          cell.className = "career-summary-place-cell";
+          const lbl = document.createElement("span");
+          lbl.className = "career-summary-place-label";
+          lbl.textContent = label;
+          cell.appendChild(lbl);
+          cell.appendChild(content);
+          return cell;
+        };
+
+        const mkMedalOrDash = (place) => {
+          if (place != null && place >= 1 && place <= 8) {
+            const img = document.createElement("img");
+            img.src = `/img/medals/${place}.png`;
+            img.width = 22; img.height = 22;
+            img.alt = ordinal(place);
+            img.style.display = "block";
+            return img;
+          }
+          const dash = document.createElement("span");
+          dash.className = "career-summary-place-dash";
+          dash.textContent = place != null ? ordinal(place) : "—";
+          return dash;
+        };
+
+        // Record cell
+        const recVal = document.createElement("span");
+        recVal.className = "career-summary-card-record";
+        recVal.textContent = s.record || "—";
+        cardRight.appendChild(mkLabeledCell("Record", recVal));
+
+        cardRight.appendChild(mkLabeledCell("Reg", mkMedalOrDash(s.regional_place)));
+        cardRight.appendChild(mkLabeledCell("State", mkMedalOrDash(s.state_place)));
+        card.appendChild(cardRight);
+
+        card.addEventListener("click", () => {
+          summaryCards.querySelectorAll(".career-summary-card").forEach((c, i) => c.classList.toggle("active", i === idx));
+          activateSeason(idx);
+        });
+        summaryCards.appendChild(card);
       });
 
       table.appendChild(tbody);
       section.appendChild(table);
+      section.appendChild(summaryCards);
     }
 
-    // Season tabs
+    // Season tabs — desktop only (mobile tabs are injected inside the panel)
     if (seasons.length > 0) {
       const tabsDiv = document.createElement("div");
-      tabsDiv.className = "season-tabs";
+      tabsDiv.className = "season-tabs season-tabs--desktop";
       tabsDiv.id = "season-tabs";
       seasons.forEach((s, idx) => {
         const btn = document.createElement("button");
@@ -451,6 +536,20 @@ function safe(value, formatter) {
       statsTitle.style.marginTop = "24px";
       container.appendChild(statsTitle);
 
+      // Mobile season tabs (injected below title, hidden on desktop)
+      if (seasons.length > 0) {
+        const mobileTabs = document.createElement("div");
+        mobileTabs.className = "season-tabs season-tabs--mobile";
+        seasons.forEach((s, i) => {
+          const btn = document.createElement("button");
+          btn.className = "season-tab" + (i === seasons.indexOf(seasonData) ? " active" : "");
+          btn.textContent = s.season;
+          btn.addEventListener("click", () => activateSeason(i));
+          mobileTabs.appendChild(btn);
+        });
+        container.appendChild(mobileTabs);
+      }
+
       const statsHr = document.createElement("hr");
       statsHr.className = "section-rule";
       container.appendChild(statsHr);
@@ -472,6 +571,7 @@ function safe(value, formatter) {
       const col2 = document.createElement("div"); col2.style.cssText = "display:flex;flex-direction:column;gap:0;";
 
       const addRow = (col, label, value) => { const r = mkRow(label, value); if (r) col.appendChild(r); };
+      addRow(col1, "Season Rank", seasonData.current_rank != null ? `#${seasonData.current_rank}` : null);
       addRow(col1, "Record", total > 0 ? `${wins}–${losses}` : null);
       addRow(col1, "vs Top 25", vsTop25W + vsTop25L > 0 ? `${vsTop25W}-${vsTop25L}` : null);
       addRow(col1, "vs Top 10", vsTop10W + vsTop10L > 0 ? `${vsTop10W}-${vsTop10L}` : null);
@@ -512,12 +612,13 @@ function safe(value, formatter) {
       }
 
       const tableWrap = document.createElement("div");
-      tableWrap.className = "table-wrapper";
+      tableWrap.className = "table-wrapper match-table-desktop";
       const table = document.createElement("table");
       table.className = "career-match-table";
+      const hasRankCol = seasonData.season >= 2026;
       table.innerHTML = `<thead><tr>
-        <th>Date</th><th>Opponent</th><th>Weight</th>
-        <th>Opponent Team</th><th>Result</th><th>Score</th>
+        <th>Date</th><th>Opponent</th>${hasRankCol ? '<th class="opp-rank-th">Rank</th>' : ''}<th class="career-col-wt" style="text-align:right">Wt</th>
+        <th>Opponent Team</th><th>Result</th><th style="text-align:right">Score</th>
       </tr></thead>`;
       const tbody = document.createElement("tbody");
 
@@ -541,22 +642,49 @@ function safe(value, formatter) {
         }
         tr.appendChild(oppTd);
 
+        if (hasRankCol) {
+          const rankTd = document.createElement("td");
+          rankTd.className = "opp-rank-td";
+          if (!match.opponent_ky) {
+            const na = document.createElement("span");
+            na.className = "opp-rank-na";
+            na.textContent = "N/A";
+            rankTd.appendChild(na);
+          } else if (match.opponent_rank == null) {
+            rankTd.textContent = "—";
+          } else {
+            const pill = document.createElement("span");
+            pill.className = "opp-rank-pill";
+            const r = match.opponent_rank;
+            if (r === 1) pill.classList.add("opp-rank-gold");
+            else if (r === 2) pill.classList.add("opp-rank-silver");
+            else if (r === 3) pill.classList.add("opp-rank-bronze");
+            else if (r <= 10) pill.classList.add("opp-rank-top10");
+            else pill.classList.add("opp-rank-other");
+            pill.textContent = `#${r}`;
+            rankTd.appendChild(pill);
+          }
+          tr.appendChild(rankTd);
+        }
+
         const weightTd = document.createElement("td");
-        weightTd.className = "metric-secondary num";
+        weightTd.className = "metric-secondary num career-col-wt";
         weightTd.textContent = match.weight_class || "—";
         tr.appendChild(weightTd);
 
         const oppTeamTd = document.createElement("td");
         oppTeamTd.className = "metric-secondary";
         const oppTeam = match.opponent_team || "";
+        const truncTeam = t => t.length > 30 ? t.substring(0, 30) + "…" : t;
         if (oppTeam && match.opponent_ky) {
           const tl = document.createElement("a");
           tl.href = buildPageURL("team.html", gender, { team: teamNameToSlug(oppTeam) });
-          tl.textContent = oppTeam.length > 25 ? oppTeam.substring(0, 25) + "…" : oppTeam;
-          if (oppTeam.length > 25) tl.title = oppTeam;
+          tl.textContent = truncTeam(oppTeam);
+          if (oppTeam.length > 30) tl.title = oppTeam;
           oppTeamTd.appendChild(tl);
         } else {
-          oppTeamTd.textContent = oppTeam || "—";
+          oppTeamTd.textContent = oppTeam ? truncTeam(oppTeam) : "—";
+          if (oppTeam.length > 30) oppTeamTd.title = oppTeam;
         }
         tr.appendChild(oppTeamTd);
 
@@ -575,6 +703,98 @@ function safe(value, formatter) {
       table.appendChild(tbody);
       tableWrap.appendChild(table);
       container.appendChild(tableWrap);
+
+      // ── Mobile card list (2-line per match) ──────────────────────────────
+      const mobileCards = document.createElement("div");
+      mobileCards.className = "match-cards-mobile";
+
+      matches.forEach(match => {
+        const isForfeit = isForfeitMatch(match);
+        const oppTeam = match.opponent_team || "";
+        const truncTeam = t => t.length > 22 ? t.substring(0, 22) + "…" : t;
+
+        const card = document.createElement("div");
+        card.className = "match-card";
+
+        // Line 1: Name · rank pill · result badge + score
+        const line1 = document.createElement("div");
+        line1.className = "match-card-line1";
+
+        const nameSpan = document.createElement("span");
+        nameSpan.className = "match-card-name";
+        if (match.opponent_ky && match.opponent_id) {
+          const a = document.createElement("a");
+          a.href = buildPageURL("wrestler.html", gender, { id: match.opponent_id, season: match.season });
+          a.textContent = safe(match.opponent_name || "Unknown");
+          nameSpan.appendChild(a);
+        } else {
+          nameSpan.textContent = safe(match.opponent_name || "Unknown");
+        }
+        line1.appendChild(nameSpan);
+
+        if (hasRankCol && match.opponent_ky && match.opponent_rank != null) {
+          const pill = document.createElement("span");
+          pill.className = "opp-rank-pill";
+          const r = match.opponent_rank;
+          if (r === 1) pill.classList.add("opp-rank-gold");
+          else if (r === 2) pill.classList.add("opp-rank-silver");
+          else if (r === 3) pill.classList.add("opp-rank-bronze");
+          else if (r <= 10) pill.classList.add("opp-rank-top10");
+          else pill.classList.add("opp-rank-other");
+          pill.textContent = `#${r}`;
+          line1.appendChild(pill);
+        }
+
+        const resultWrap = document.createElement("span");
+        resultWrap.className = "match-card-result";
+        resultWrap.appendChild(createResultBadge(match.result, isForfeit ? "FF" : match.method));
+        const scoreSpan = document.createElement("span");
+        scoreSpan.className = "match-card-score";
+        scoreSpan.textContent = match.score || "—";
+        resultWrap.appendChild(scoreSpan);
+        line1.appendChild(resultWrap);
+        card.appendChild(line1);
+
+        // Line 2: [Team · weight] [date right-aligned under result]
+        const line2 = document.createElement("div");
+        line2.className = "match-card-line2";
+
+        const line2Left = document.createElement("span");
+        line2Left.className = "match-card-line2-left";
+
+        if (oppTeam && match.opponent_ky) {
+          const tl = document.createElement("a");
+          tl.href = buildPageURL("team.html", gender, { team: teamNameToSlug(oppTeam) });
+          tl.textContent = truncTeam(oppTeam);
+          tl.className = "match-card-team-link";
+          line2Left.appendChild(tl);
+        } else if (oppTeam) {
+          const ts = document.createElement("span");
+          ts.textContent = truncTeam(oppTeam);
+          line2Left.appendChild(ts);
+        }
+
+        if (match.weight_class) {
+          const wt = document.createElement("span");
+          wt.className = "match-card-meta";
+          wt.textContent = (oppTeam ? " · " : "") + match.weight_class;
+          line2Left.appendChild(wt);
+        }
+
+        line2.appendChild(line2Left);
+
+        if (match.date) {
+          const dateSpan = document.createElement("span");
+          dateSpan.className = "match-card-date";
+          dateSpan.textContent = formatDateMMDDYY(match.date);
+          line2.appendChild(dateSpan);
+        }
+
+        card.appendChild(line2);
+        mobileCards.appendChild(card);
+      });
+
+      container.appendChild(mobileCards);
     }
   }
 

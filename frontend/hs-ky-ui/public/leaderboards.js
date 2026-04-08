@@ -201,6 +201,8 @@ function renderLeaderboard() {
 
     tbody.appendChild(tr);
   });
+
+  renderLeaderboardCards();
 }
 
 /**
@@ -216,6 +218,108 @@ function getGraduationPillClass(graduationYear, currentSeasonYear) {
   if (graduationYear === currentSeasonYear + 1) return base + ' graduation-pill--junior';
   if (graduationYear === currentSeasonYear + 2) return base + ' graduation-pill--sophomore';
   return base + ' graduation-pill--freshman';
+}
+
+/**
+ * Render mobile card layout for the leaderboard
+ */
+function renderLeaderboardCards() {
+  const container = document.getElementById('leaderboard-cards');
+  if (!container) return;
+
+  const data = leaderboardData[currentGender];
+  if (!data) { container.innerHTML = ''; return; }
+
+  const entries = data[currentStat] || [];
+  const seasonYear = parseInt(getSeasonFromURL(), 10) || 2026;
+  container.innerHTML = '';
+
+  entries.forEach((entry, index) => {
+    const card = document.createElement('div');
+    card.className = 'lb-card';
+
+    // Left side
+    const left = document.createElement('div');
+    left.className = 'lb-card-left';
+
+    // Top row: number + name
+    const top = document.createElement('div');
+    top.className = 'lb-card-top';
+
+    const num = document.createElement('span');
+    num.className = 'lb-card-num';
+    num.textContent = index + 1;
+    top.appendChild(num);
+
+    const nameEl = document.createElement('a');
+    nameEl.className = 'lb-card-name';
+    if (currentStat === 'career_wins' && entry.career_id) {
+      nameEl.href = buildPageURL('wrestler.html', currentGender, { career_id: entry.career_id });
+    } else if (entry.wrestler_id) {
+      nameEl.href = buildPageURL('wrestler.html', currentGender, { id: entry.wrestler_id });
+    } else {
+      nameEl.removeAttribute('href');
+      nameEl.style.cursor = 'default';
+    }
+    nameEl.textContent = entry.name;
+
+    // State medals for career wins
+    if (currentStat === 'career_wins' && entry.state_medals && entry.state_medals.length > 0) {
+      const medalMap = { 1: '🥇', 2: '🥈', 3: '🥉' };
+      const medalSpan = document.createElement('span');
+      medalSpan.className = 'state-medals';
+      medalSpan.textContent = ' ' + entry.state_medals.map(p => medalMap[p] || '').join('');
+      nameEl.appendChild(medalSpan);
+    }
+    top.appendChild(nameEl);
+    left.appendChild(top);
+
+    // Bottom row: meta info
+    const meta = document.createElement('div');
+    meta.className = 'lb-card-meta';
+    if (currentStat === 'career_wins') {
+      const pct = entry.win_pct != null ? `(${(entry.win_pct * 100).toFixed(1)}%)` : '';
+      const parts = [entry.team, [entry.career_record, pct].filter(Boolean).join(' ')].filter(Boolean);
+      meta.textContent = parts.join(' · ');
+      if (entry.graduation_year != null) {
+        const gradYear = parseInt(entry.graduation_year, 10);
+        const sep = document.createTextNode(' · ');
+        meta.appendChild(sep);
+        const pill = document.createElement('span');
+        pill.className = getGraduationPillClass(gradYear, seasonYear);
+        pill.textContent = String(gradYear);
+        meta.appendChild(pill);
+      }
+    } else {
+      const rankStr = entry.rank && entry.rank !== 999 ? `#${entry.rank}` : '';
+      const wl = `${entry.wins}–${entry.losses}`;
+      meta.textContent = [entry.team, rankStr, wl].filter(Boolean).join(' · ');
+    }
+    left.appendChild(meta);
+    card.appendChild(left);
+
+    // Right side: stat value
+    const statDiv = document.createElement('div');
+    statDiv.className = 'lb-card-stat';
+
+    if (currentStat === 'career_wins') {
+      statDiv.textContent = entry.career_wins || 0;
+      const sub = document.createElement('span');
+      sub.className = 'lb-card-stat-sub';
+      sub.textContent = 'career W';
+      statDiv.appendChild(sub);
+    } else {
+      const statLabels = { wins: 'wins', pins: 'pins', techs: 'TFs' };
+      statDiv.textContent = entry[currentStat] || 0;
+      const sub = document.createElement('span');
+      sub.className = 'lb-card-stat-sub';
+      sub.textContent = statLabels[currentStat] || '';
+      statDiv.appendChild(sub);
+    }
+
+    card.appendChild(statDiv);
+    container.appendChild(card);
+  });
 }
 
 /**

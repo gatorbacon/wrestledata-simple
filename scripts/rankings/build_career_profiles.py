@@ -116,6 +116,8 @@ def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set) -> 
                 grade = summary_entry.get("grade")
                 break
 
+        current_rank = profile.get("current_rank")  # present in 2026+; None for older seasons
+
         season_entry = {
             "season": season,
             "wrestler_id": wrestler_id,
@@ -125,6 +127,7 @@ def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set) -> 
             "record": record_str,
             "regional_place": regional_place,
             "state_place": state_place,
+            "current_rank": current_rank,
             "matches": matches,
         }
         season_profiles.append(season_entry)
