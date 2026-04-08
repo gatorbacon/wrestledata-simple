@@ -5,8 +5,9 @@ Build leaderboard JSON files for HS KY wrestling.
 Generates pre-aggregated leaderboards (Wins, Pins, Techs) from wrestler profiles.
 Career Wins can be built from:
   - Current-season profiles only (default): only wrestlers in the selected season's roster.
-  - All-time from careers (--all-time-career-wins): every wrestler with a career file,
-    including those who graduated before the selected season.
+  - All-time from careers (--all-time-career-wins): reads from pre-built frontend career
+    profile JSONs (frontend/hs-ky-ui/public/data/careers/{gender}/), which already have
+    career records calculated with any overrides applied. Run build_career_profiles.py first.
 """
 
 import argparse
@@ -14,9 +15,6 @@ import json
 from pathlib import Path
 from typing import Dict, List, Optional, Set
 from datetime import datetime
-
-# Repo root for data paths (data/careers, data/season_accomplishments)
-_REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 def parse_args() -> argparse.Namespace:
@@ -159,136 +157,57 @@ def graduation_year_from_profile(profile: Dict) -> Optional[int]:
     return graduation_year_from_season_summary(summary)
 
 
-def _load_season_accomplishments(
-    season: int, gender: str, data_root: Path, _cache: Optional[Dict[tuple, Dict[str, Dict]]] = None
-) -> Dict[str, Dict]:
-    """Load season accomplishments for a season/gender. Returns wrestler_id -> accomplishment dict. Cached by (season, gender)."""
-    cache = _cache if _cache is not None else {}
-    key = (season, gender)
-    if key not in cache:
-        path = data_root / "data" / "season_accomplishments" / gender / str(season) / "season_accomplishments.json"
-        if not path.exists():
-            cache[key] = {}
-        else:
-            try:
-                with path.open("r", encoding="utf-8") as f:
-                    data = json.load(f)
-                cache[key] = {str(w.get("season_wrestler_id")): w for w in data.get("wrestlers", []) if w.get("season_wrestler_id")}
-            except Exception:
-                cache[key] = {}
-    return cache[key]
-
-
-def _build_season_summary_from_career(
-    career: Dict, gender: str, data_root: Path, acc_cache: Optional[Dict[tuple, Dict[str, Dict]]] = None
-) -> List[Dict]:
-    """Build season_summary list from career dict (same logic as build_wrestler_profiles). Sorted descending by season."""
-    seasons_dict = career.get("seasons") or {}
-    if not isinstance(seasons_dict, dict):
-        return []
-    season_years = []
-    for s in seasons_dict:
-        try:
-            season_years.append(int(s))
-        except (TypeError, ValueError):
-            continue
-    season_years.sort(reverse=True)
-    summary = []
-    for season_year in season_years:
-        sid = seasons_dict.get(str(season_year))
-        if not sid:
-            continue
-        acc = _load_season_accomplishments(season_year, gender, data_root, acc_cache).get(str(sid))
-        if not acc:
-            continue
-        rec = acc.get("record") or {}
-        wins = rec.get("wins", 0)
-        losses = rec.get("losses", 0)
-        record_str = f"{wins}-{losses}"
-        grade = acc.get("grade")
-        if grade is not None:
-            try:
-                grade = int(grade)
-            except (TypeError, ValueError):
-                grade = None
-        summary.append({
-            "season": season_year,
-            "grade": grade,
-            "team": acc.get("team") or "",
-            "record": record_str,
-            "regional_place": acc.get("regional_place"),
-            "state_place": acc.get("state_place"),
-        })
-    return summary
-
-
-def _calculate_career_record_from_summary(season_summary: List[Dict]) -> Optional[Dict]:
-    """Sum wins/losses from season_summary record strings. Returns dict with wins, losses, win_pct."""
-    total_wins = 0
-    total_losses = 0
-    for entry in season_summary:
-        rec = (entry.get("record") or "").strip()
-        if not rec or "-" not in rec:
-            continue
-        parts = rec.split("-", 1)
-        try:
-            total_wins += int(parts[0].strip())
-            total_losses += int(parts[1].strip())
-        except (ValueError, IndexError):
-            continue
-    if total_wins == 0 and total_losses == 0:
-        return None
-    total = total_wins + total_losses
-    win_pct = round(total_wins / total, 3) if total else 0.0
-    return {"wins": total_wins, "losses": total_losses, "win_pct": win_pct}
-
-
 def build_all_time_career_wins_leaderboard(
     gender: str,
-    careers_dir: Path,
-    data_root: Path,
+    career_profiles_dir: Path,
     limit: Optional[int] = None,
 ) -> List[Dict]:
     """
-    Build career wins leaderboard from all career files (includes graduates).
-    Uses data/careers and data/season_accomplishments; same formula as profile-based
-    career record and graduation year.
+    Build career wins leaderboard from pre-built frontend career profile JSONs.
+
+    Reads frontend/hs-ky-ui/public/data/careers/{gender}/ — these already have
+    career_record calculated with any overrides applied by build_career_profiles.py.
+    Includes all wrestlers with career files (active and graduated).
     """
-    acc_cache: Dict[tuple, Dict[str, Dict]] = {}
+    if not career_profiles_dir.exists():
+        print(f"  Warning: career profiles dir not found: {career_profiles_dir}")
+        return []
+
     entries = []
-    for career_file in sorted(careers_dir.glob("career_*.json")):
+    for career_file in sorted(career_profiles_dir.glob("career_*.json")):
         try:
             with career_file.open("r", encoding="utf-8") as f:
-                career_data = json.load(f)
+                career = json.load(f)
         except Exception:
             continue
-        career_id = career_data.get("career_id")
+
+        career_id = career.get("career_id")
         if not career_id:
             continue
-        name = career_data.get("canonical_name") or "Unknown"
-        seasons_dict = career_data.get("seasons") or {}
-        if not isinstance(seasons_dict, dict):
-            continue
-        season_summary = _build_season_summary_from_career(career_data, gender, data_root, acc_cache)
-        if not season_summary:
-            continue
-        career_record = _calculate_career_record_from_summary(season_summary)
-        if not career_record:
-            continue
+
+        career_record = career.get("career_record") or {}
         career_wins = career_record.get("wins", 0)
         if career_wins == 0:
             continue
+
         career_losses = career_record.get("losses", 0)
         win_pct = career_record.get("win_pct", 0.0)
-        team = (season_summary[0].get("team") or "").strip() or "—"
-        season_years = [int(s) for s in seasons_dict if str(s).isdigit()]
-        latest_season = max(season_years) if season_years else None
-        wrestler_id = str(seasons_dict.get(str(latest_season), "")) if latest_season else ""
-        graduation_year = graduation_year_from_season_summary(season_summary)
+        name = career.get("canonical_name") or "Unknown"
+
+        seasons = career.get("seasons") or []
+        if not seasons:
+            continue
+
+        most_recent = seasons[0]  # sorted newest first by build_career_profiles.py
+        team = (most_recent.get("team") or "").strip() or "—"
+        wrestler_id = most_recent.get("wrestler_id") or ""
+
+        graduation_year = graduation_year_from_season_summary(seasons)
         state_medals = sorted(
-            s["state_place"] for s in season_summary
+            s["state_place"] for s in seasons
             if s.get("state_place") in (1, 2, 3)
         )
+
         entry = {
             "wrestler_id": wrestler_id,
             "career_id": career_id,
@@ -304,6 +223,7 @@ def build_all_time_career_wins_leaderboard(
         if state_medals:
             entry["state_medals"] = state_medals
         entries.append(entry)
+
     entries.sort(key=lambda e: (-e["career_wins"], -e["win_pct"], (e.get("name") or "").lower()))
     if limit is not None:
         entries = entries[:limit]
@@ -495,7 +415,7 @@ def build_leaderboards_for_gender(
     profiles_dir: Path,
     output_dir: Path,
     use_all_time_career_wins: bool = False,
-    careers_dir: Optional[Path] = None,
+    career_profiles_dir: Optional[Path] = None,
 ) -> None:
     """Build leaderboard JSON files for a single gender."""
     print(f"\n{'=' * 80}")
@@ -530,10 +450,10 @@ def build_leaderboards_for_gender(
     wins_leaderboard = build_leaderboard(filtered, "wins", limit=40)
     pins_leaderboard = build_leaderboard(filtered, "pins", limit=40)
     techs_leaderboard = build_leaderboard(filtered, "techs", limit=40)
-    if use_all_time_career_wins and careers_dir and careers_dir.exists():
-        print(f"Building all-time career wins from careers: {careers_dir}")
+    if use_all_time_career_wins and career_profiles_dir:
+        print(f"Building all-time career wins from career profiles: {career_profiles_dir}")
         career_wins_leaderboard = build_all_time_career_wins_leaderboard(
-            gender, careers_dir, _REPO_ROOT, limit=None
+            gender, career_profiles_dir, limit=None
         )
         print(f"  All-time career wins: {len(career_wins_leaderboard)} entries")
     else:
@@ -546,7 +466,7 @@ def build_leaderboards_for_gender(
     print(f"  Career Wins: {len(career_wins_leaderboard)} entries")
     
     # Earliest season with career data (from mt/data/hs_ky_boys) for frontend note
-    career_earliest = get_career_earliest_season(_REPO_ROOT)
+    career_earliest = get_career_earliest_season(Path(__file__).resolve().parent.parent)
 
     # Build output JSON
     output_data = {
@@ -597,21 +517,17 @@ def main() -> None:
         repo_root = Path(__file__).resolve().parent.parent
 
         for gender in genders:
-            gender_careers_dir = repo_root / "data" / "careers" / gender
-            careers_dir = gender_careers_dir if gender_careers_dir.exists() else repo_root / "data" / "careers"
-            # Input: wrestler profiles
             profiles_dir = Path(f"frontend/hs-ky-ui/public/data/wrestlers/{gender}/{season}/by_id")
-            
-            # Output: leaderboard JSON
             output_dir = Path(f"frontend/hs-ky-ui/public/data/leaderboards/{gender}/{season}")
-            
+            career_profiles_dir = repo_root / "frontend/hs-ky-ui/public/data/careers" / gender
+
             build_leaderboards_for_gender(
                 season,
                 gender,
                 profiles_dir,
                 output_dir,
                 use_all_time_career_wins=args.all_time_career_wins,
-                careers_dir=careers_dir,
+                career_profiles_dir=career_profiles_dir,
             )
     else:
         raise ValueError(f"Only 'hs' league is supported. Got: {league}")

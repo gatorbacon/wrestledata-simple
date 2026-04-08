@@ -252,8 +252,8 @@ Run from repo root with `.venv/bin/python`. Both genders run for most steps.
 python3 scripts/season_accomplishments/generate_season_accomplishments.py --season 2026 --gender boys
 python3 scripts/season_accomplishments/generate_season_accomplishments.py --season 2026 --gender girls
 
-# Step 7: Leaderboards
-.venv/bin/python scripts/build_leaderboards.py -season 2026 --all-time-career-wins
+# Step 7: Leaderboards (wins/pins/techs only — career wins built in step 9.2)
+.venv/bin/python scripts/build_leaderboards.py -season 2026
 
 # Step 8: Official rankings drop (update date each week)
 .venv/bin/python scripts/rankings/create_rankings_release.py -season 2026 -gender boys -drop-id 2026-mm-dd --archive --pdf --jpg
@@ -267,10 +267,13 @@ python scripts/rankings/open_notes_in_macdown.py -gender girls -season 2026 -dro
 .venv/bin/python scripts/rankings/build_career_profiles.py --gender boys
 .venv/bin/python scripts/rankings/build_career_profiles.py --gender girls
 
-# Step 9.2: Sitemap
+# Step 9.2: Leaderboards with career wins (reads career profiles built in 9.1)
+.venv/bin/python scripts/build_leaderboards.py -season 2026 --all-time-career-wins
+
+# Step 9.3: Sitemap
 python scripts/generate_sitemap.py
 
-# Step 9.3: Recruiting data
+# Step 9.4: Recruiting data
 python scripts/recruiting/build_recruiting_data.py --gender boys
 python scripts/recruiting/build_recruiting_data.py --gender girls
 ```

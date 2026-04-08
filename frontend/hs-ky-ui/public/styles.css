@@ -2061,30 +2061,30 @@ a:hover {
   border-collapse: collapse;
   background: transparent;
   border: none;
-  margin-top: 16px;
+  margin-top: 8px;
   margin-bottom: 0;
 }
 
 .career-summary-table thead th {
   background: transparent;
   color: var(--text-muted);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 8px 12px;
+  padding: 4px 10px;
   text-align: left;
   border-bottom: 1px solid var(--border-light);
   border-top: none;
 }
 
 .career-summary-table tbody td {
-  padding: 8px 12px;
+  padding: 5px 10px;
   color: var(--text);
   border-bottom: 1px solid var(--border-light);
   border-left: none;
   border-right: none;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 .career-summary-table tbody tr:last-child td {
@@ -3432,10 +3432,11 @@ th.tooltip-trigger .tooltip {
 }
 
 .stat-value-newspaper {
-  font-weight: 700; /* Increased from 600 to emphasize current season importance */
-  font-size: 1rem; /* Increased from 0.9375rem to make values more prominent */
-  color: var(--text-main); /* Darker for emphasis */
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--text-main);
   font-variant-numeric: tabular-nums;
+  text-align: right;
 }
 
 /* Stats grid for Season Stats */
@@ -6341,6 +6342,53 @@ table a:hover {
 }
 
 /* ============================================
+   Career Profile — Header (2-line compact)
+   ============================================ */
+
+/* Tagline: rank pill + weight · team on one flex line */
+#wrestler-tagline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 0;
+}
+
+.career-header-info {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.career-header-info a {
+  color: var(--accent-primary, #4db6ac);
+  text-decoration: none;
+}
+
+.career-header-info a:hover { text-decoration: underline; }
+
+/* 3-column stats grid on desktop */
+@media (min-width: 601px) {
+  .stats-grid-newspaper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+}
+
+/* Column padding and vertical separators */
+.stats-col {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.stats-col:first-child {
+  padding-left: 0;
+}
+
+.stats-col--sep {
+  border-right: 1px solid var(--border-light);
+}
+
+/* ============================================
    Career Profile — Header Rank Pill
    ============================================ */
 
@@ -6459,17 +6507,23 @@ table a:hover {
 }
 
 /* ── Season Tabs (unified career/season profile) ─────────────────────────── */
-.season-tabs--mobile { display: none; }
+/* Above-title tabs: always hidden — tabs live below the title now */
+.season-tabs--desktop { display: none !important; }
+
+/* Below-title tabs: show on all screen sizes */
+.season-tabs--mobile {
+  display: flex !important;   /* !important beats .season-tabs { display:flex } source-order */
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 6px 0 4px;
+  padding-bottom: 0;
+  border-bottom: none;        /* hr.section-rule below provides the divider */
+}
 
 @media (max-width: 600px) {
-  .season-tabs--desktop { display: none !important; }
-  .season-tabs--mobile  {
-    display: flex !important;
+  .season-tabs--mobile {
     flex-wrap: nowrap;
     gap: 4px;
-    margin: 6px 0 6px;
-    padding-bottom: 0;
-    border-bottom: none;
     overflow-x: auto;
   }
   .season-tabs--mobile .season-tab {
@@ -6499,6 +6553,25 @@ table a:hover {
   #season-panel .section-header h2 {
     font-size: 0.9rem;
     margin: 0;
+  }
+  #season-panel .section-header + hr.section-rule {
+    margin-top: 4px;
+    margin-bottom: 2px;
+  }
+}
+
+/* Desktop: condense the stats section too */
+@media (min-width: 601px) {
+  .section-title-season-stats {
+    margin-top: 14px !important;
+  }
+  #season-panel hr.section-rule {
+    margin-top: 6px;
+    margin-bottom: 4px;
+  }
+  #season-panel .section-header {
+    margin-top: 8px;
+    margin-bottom: 0;
   }
   #season-panel .section-header + hr.section-rule {
     margin-top: 4px;

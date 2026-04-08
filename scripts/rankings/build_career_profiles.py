@@ -24,6 +24,7 @@ CAREERS_DIR = Path("data/careers")  # may be overridden in main() for girls
 WRESTLERS_BASE = Path("frontend/hs-ky-ui/public/data/wrestlers")
 OUTPUT_BASE = Path("frontend/hs-ky-ui/public/data/careers")
 TEAMS_BASE = Path("frontend/hs-ky-ui/public/data/teams")
+OVERRIDES_DIR = Path("data/career_record_overrides")
 
 
 def slugify(name: str) -> str:
@@ -56,7 +57,7 @@ def load_wrestler_profile(gender: str, season: int, wrestler_id: str):
         return json.load(f)
 
 
-def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set) -> dict:
+def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set, overrides: dict) -> dict:
     career_id = career_data["career_id"]
     canonical_name = career_data.get("canonical_name", "")
     seasons_map = career_data.get("seasons", {})  # {season_str: wrestler_id}
@@ -64,6 +65,21 @@ def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set) -> 
     season_profiles = []
     total_wins = 0
     total_losses = 0
+
+    override = overrides.get(career_id)
+    through_season = override.get("through_season") if override else None
+
+    # If final override (career over): we still build season_profiles for match history,
+    # but we'll replace the totals at the end. No need to accumulate W-L from seasons.
+    # If through_season override: use override as baseline, only accumulate seasons after it.
+    if override and through_season is None:
+        # Final override — totals come entirely from override; still build match history
+        total_wins = override["wins"]
+        total_losses = override["losses"]
+    elif override and through_season is not None:
+        # Baseline override — start from override values, add seasons after through_season
+        total_wins = override["wins"]
+        total_losses = override["losses"]
 
     # Process seasons newest → oldest
     for season_str in sorted(seasons_map.keys(), reverse=True):
@@ -90,8 +106,15 @@ def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set) -> 
             except (ValueError, IndexError):
                 pass
 
-        total_wins += wins
-        total_losses += losses
+        # Accumulate W-L only for seasons not covered by the override
+        if override is None:
+            total_wins += wins
+            total_losses += losses
+        elif through_season is not None and season > through_season:
+            # Active wrestler override: add seasons after the override cutoff
+            total_wins += wins
+            total_losses += losses
+        # else: final override or season <= through_season — don't accumulate
 
         # Add season field and opponent_ky flag to each match
         matches = profile.get("match_list") or profile.get("matches", [])
@@ -162,6 +185,14 @@ def main():
     ky_team_slugs = load_ky_team_slugs(gender)
     print(f"Loaded {len(ky_team_slugs)} KY team slugs")
 
+    overrides_path = OVERRIDES_DIR / f"{gender}.json"
+    if overrides_path.exists():
+        with overrides_path.open(encoding="utf-8") as f:
+            overrides = json.load(f)
+        print(f"Loaded {len(overrides)} career record override(s)")
+    else:
+        overrides = {}
+
     career_files = load_career_files()
     print(f"Found {len(career_files)} career files")
 
@@ -178,7 +209,7 @@ def main():
             continue
 
         career_id = career_data["career_id"]
-        profile = build_career_profile(career_data, gender, ky_team_slugs)
+        profile = build_career_profile(career_data, gender, ky_team_slugs, overrides)
 
         if not profile["seasons"]:
             skipped += 1
@@ -187,6 +218,13 @@ def main():
         out_path = out_dir / f"{career_id}.json"
         with out_path.open("w", encoding="utf-8") as f:
             json.dump(profile, f, indent=2, ensure_ascii=False)
+
+        if career_id in overrides:
+            ov = overrides[career_id]
+            through = ov.get("through_season")
+            tag = f"through {through}" if through else "FINAL"
+            cr = profile["career_record"]
+            print(f"  ✓ Override applied: {career_id} ({profile['canonical_name']}) — {cr['wins']}-{cr['losses']} [{tag}]")
 
         built += 1
 

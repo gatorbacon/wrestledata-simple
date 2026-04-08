@@ -275,25 +275,32 @@ function safe(value, formatter) {
 
     const taglineEl = document.getElementById("wrestler-tagline");
     taglineEl.innerHTML = "";
-    if (mostRecent && mostRecent.weight_class) {
-      taglineEl.textContent = `${mostRecent.weight_class} lbs`;
+    if (mostRecent) {
+      // Rank pill — most important secondary info, visually dominant
       if (mostRecent.current_rank != null) {
         const rankPill = document.createElement("span");
         rankPill.className = "career-header-rank-pill";
         rankPill.textContent = `#${mostRecent.current_rank}`;
-        taglineEl.appendChild(document.createTextNode("\u00a0\u00a0"));
         taglineEl.appendChild(rankPill);
+        taglineEl.appendChild(document.createTextNode(" "));
       }
+      // Weight · Team on same line, muted
+      const infoSpan = document.createElement("span");
+      infoSpan.className = "career-header-info";
+      if (mostRecent.weight_class) infoSpan.appendChild(document.createTextNode(`${mostRecent.weight_class} lbs`));
+      if (mostRecent.team) {
+        if (mostRecent.weight_class) infoSpan.appendChild(document.createTextNode(" · "));
+        const teamLink = document.createElement("a");
+        teamLink.href = buildPageURL("team.html", gender, { team: teamNameToSlug(mostRecent.team) });
+        teamLink.textContent = mostRecent.team;
+        infoSpan.appendChild(teamLink);
+      }
+      taglineEl.appendChild(infoSpan);
     }
 
+    // Team is now in tagline — clear meta to avoid a third line
     const metaEl = document.getElementById("wrestler-meta");
     metaEl.innerHTML = "";
-    if (mostRecent && mostRecent.team) {
-      const teamLink = document.createElement("a");
-      teamLink.href = buildPageURL("team.html", gender, { team: teamNameToSlug(mostRecent.team) });
-      teamLink.textContent = mostRecent.team;
-      metaEl.appendChild(teamLink);
-    }
 
     // === Hide NCAA/unused sections ===
     ["mv-section", "match-impact-section", "skill-section", "mv-context-section", "xtp-section"].forEach(id => {
@@ -320,7 +327,7 @@ function safe(value, formatter) {
     const cr = data.career_record || {};
     if (cr.wins != null) {
       const recordBlock = document.createElement("div");
-      recordBlock.style.cssText = "margin-bottom: 24px;";
+      recordBlock.style.cssText = "margin-bottom: 12px;";
       const lbl = document.createElement("div");
       lbl.style.cssText = "font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;";
       lbl.textContent = "Career Record";
@@ -346,7 +353,7 @@ function safe(value, formatter) {
 
       const table = document.createElement("table");
       table.className = "career-summary-table career-summary-desktop";
-      table.style.cssText = "width:100%;font-size:0.875rem;margin-top:12px;margin-bottom:32px;";
+      table.style.cssText = "width:100%;font-size:0.875rem;margin-top:8px;margin-bottom:16px;";
       const thead = document.createElement("thead");
       thead.innerHTML = "<tr><th>Season</th><th>Grade</th><th>Team</th><th>Record</th><th>Regional Place</th><th>State Place</th></tr>";
       table.appendChild(thead);
@@ -560,34 +567,40 @@ function safe(value, formatter) {
       const mkRow = (label, value) => {
         if (value === null || value === undefined) return null;
         const row = document.createElement("div");
-        row.style.cssText = "display:flex;justify-content:space-between;align-items:baseline;padding:4px 0;";
+        row.style.cssText = "display:grid;grid-template-columns:1fr auto;align-items:baseline;padding:2px 0;gap:4px;";
         const lbl = document.createElement("span"); lbl.className = "stat-label-newspaper"; lbl.textContent = label;
         const val = document.createElement("span"); val.className = "stat-value-newspaper"; val.textContent = value;
         row.appendChild(lbl); row.appendChild(val);
         return row;
       };
 
-      const col1 = document.createElement("div"); col1.style.cssText = "display:flex;flex-direction:column;gap:0;";
-      const col2 = document.createElement("div"); col2.style.cssText = "display:flex;flex-direction:column;gap:0;";
+      const colStyle = "display:flex;flex-direction:column;gap:0;";
+      const col1 = document.createElement("div"); col1.style.cssText = colStyle; col1.className = "stats-col stats-col--sep";
+      const col2 = document.createElement("div"); col2.style.cssText = colStyle; col2.className = "stats-col stats-col--sep";
+      const col3 = document.createElement("div"); col3.style.cssText = colStyle; col3.className = "stats-col";
 
       const addRow = (col, label, value) => { const r = mkRow(label, value); if (r) col.appendChild(r); };
+      // Col 1: core performance
       addRow(col1, "Season Rank", seasonData.current_rank != null ? `#${seasonData.current_rank}` : null);
       addRow(col1, "Record", total > 0 ? `${wins}–${losses}` : null);
-      addRow(col1, "vs Top 25", vsTop25W + vsTop25L > 0 ? `${vsTop25W}-${vsTop25L}` : null);
-      addRow(col1, "vs Top 10", vsTop10W + vsTop10L > 0 ? `${vsTop10W}-${vsTop10L}` : null);
       addRow(col1, "Win %", total > 0 ? (wins / total * 100).toFixed(1) + "%" : null);
+      // Col 2: opponent quality
+      addRow(col2, "vs Top 25", vsTop25W + vsTop25L > 0 ? `${vsTop25W}-${vsTop25L}` : null);
+      addRow(col2, "vs Top 10", vsTop10W + vsTop10L > 0 ? `${vsTop10W}-${vsTop10L}` : null);
       addRow(col2, "Bonus Rate", winsActual > 0 ? (bonuses / winsActual * 100).toFixed(1) + "%" : null);
-      addRow(col2, "Falls", falls > 0 ? String(falls) : null);
-      addRow(col2, "Tech Falls", techs > 0 ? String(techs) : null);
-      addRow(col2, "Pin Rate", falls > 0 && winsActual > 0 ? (falls / winsActual * 100).toFixed(1) + "%" : null);
+      // Col 3: bonus breakdown
+      addRow(col3, "Falls", falls > 0 ? String(falls) : null);
+      addRow(col3, "Tech Falls", techs > 0 ? String(techs) : null);
+      addRow(col3, "Pin Rate", falls > 0 && winsActual > 0 ? (falls / winsActual * 100).toFixed(1) + "%" : null);
 
       statsGrid.appendChild(col1);
       statsGrid.appendChild(col2);
+      statsGrid.appendChild(col3);
       container.appendChild(statsGrid);
 
       const statsEndHr = document.createElement("hr");
       statsEndHr.className = "section-rule";
-      statsEndHr.style.marginTop = "16px";
+      statsEndHr.style.marginTop = "8px";
       container.appendChild(statsEndHr);
 
       // Match history header
