@@ -149,6 +149,16 @@ function setMetaDescription(content) {
   tag.setAttribute('content', content);
 }
 
+function setCanonicalURL(url) {
+  let tag = document.querySelector('link[rel="canonical"]');
+  if (!tag) {
+    tag = document.createElement('link');
+    tag.setAttribute('rel', 'canonical');
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute('href', url);
+}
+
 // Static pages don't set dynamic titles — fire pageview for them on load
 // Dynamic pages (wrestler, team, rankings, leaderboards) call sendPageView() themselves after setting title
 const _dynamicPages = ['wrestler.html', 'team.html', 'rankings.html', 'leaderboards.html', 'recruiting.html'];

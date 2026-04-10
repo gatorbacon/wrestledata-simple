@@ -272,6 +272,7 @@ function safe(value, formatter) {
     const _metaTeamPart = _titleTeam ? `, ${_titleTeam}` : "";
     const _metaGenderPart = gender === "girls" ? "Kentucky girls high school wrestling" : "Kentucky high school wrestling";
     setMetaDescription(`${data.canonical_name} career record ${_crRecord}, ${_metaGenderPart}${_metaTeamPart}. Full match history, stats, and season breakdowns on KentuckyMat.`);
+    setCanonicalURL(window.location.href);
 
     const taglineEl = document.getElementById("wrestler-tagline");
     taglineEl.innerHTML = "";
@@ -849,6 +850,7 @@ function safe(value, formatter) {
     const _wsMetaGender = _wsGender === "girls" ? "Kentucky girls high school wrestling" : "Kentucky high school wrestling";
     const _wsTeamPart = _wsTeam ? `, ${_wsTeam}` : "";
     setMetaDescription(`${safe(data.name)}, ${_wsMetaGender}${_wsTeamPart}. Full match history, stats, and season breakdowns on KentuckyMat.`);
+    setCanonicalURL(window.location.href);
 
     // Wrestler tagline with rank badge
     const taglineEl = document.getElementById("wrestler-tagline");
