@@ -57,6 +57,26 @@ def load_wrestler_profile(gender: str, season: int, wrestler_id: str):
         return json.load(f)
 
 
+_accomplishments_cache: dict = {}
+
+def load_season_accomplishment(gender: str, season: int, wrestler_id: str) -> dict | None:
+    """Load a single wrestler's accomplishment entry from season_accomplishments.json."""
+    key = (gender, season)
+    if key not in _accomplishments_cache:
+        path = Path("data/season_accomplishments") / gender / str(season) / "season_accomplishments.json"
+        if path.exists():
+            with path.open(encoding="utf-8") as f:
+                data = json.load(f)
+            _accomplishments_cache[key] = {
+                str(w["season_wrestler_id"]): w
+                for w in data.get("wrestlers", [])
+                if w.get("season_wrestler_id")
+            }
+        else:
+            _accomplishments_cache[key] = {}
+    return _accomplishments_cache[key].get(str(wrestler_id))
+
+
 def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set, overrides: dict) -> dict:
     career_id = career_data["career_id"]
     canonical_name = career_data.get("canonical_name", "")
@@ -127,7 +147,9 @@ def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set, ove
                 opp_team = m.get("opponent_team", "")
                 m["opponent_ky"] = bool(opp_team and slugify(opp_team) in ky_team_slugs)
 
-        # Pull season accomplishment placements from season_summary if available
+        # Pull season accomplishment placements from season_summary if available,
+        # falling back to data/season_accomplishments/ directly when season_summary
+        # is empty (e.g. wrestler was linked to this career after profiles were built).
         regional_place = None
         state_place = None
         grade = None
@@ -138,6 +160,15 @@ def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set, ove
                 state_place = summary_entry.get("state_place")
                 grade = summary_entry.get("grade")
                 break
+
+        if grade is None:
+            acc = load_season_accomplishment(gender, season, wrestler_id)
+            if acc:
+                grade = acc.get("grade")
+                if regional_place is None:
+                    regional_place = acc.get("regional_place")
+                if state_place is None:
+                    state_place = acc.get("state_place")
 
         current_rank = profile.get("current_rank")  # present in 2026+; None for older seasons
 
@@ -180,6 +211,9 @@ def main():
     CAREERS_DIR = Path("data/careers") if gender == "boys" else Path("data/careers/girls")
 
     out_dir = OUTPUT_BASE / gender
+    if out_dir.exists():
+        removed = sum(1 for f in out_dir.glob("career_*.json") if f.unlink() is None)
+        print(f"Purged {removed} existing career profile(s) from {out_dir}")
     out_dir.mkdir(parents=True, exist_ok=True)
 
     ky_team_slugs = load_ky_team_slugs(gender)

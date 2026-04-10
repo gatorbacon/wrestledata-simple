@@ -2842,6 +2842,21 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Jagger Irvin",
+    "first_name": "Jagger",
+    "last_name": "Irvin",
+    "secondary": "Ryle · 144",
+    "url": "/wrestler.html?career_id=career_002344&gender=boys",
+    "searchTokens": [
+      "irvin",
+      "jagger"
+    ],
+    "rank": 14,
+    "gender": "boys",
+    "priority": 0
+  },
+  {
+    "type": "wrestler",
     "name": "Carter Thomas",
     "first_name": "Carter",
     "last_name": "Thomas",
@@ -39842,6 +39857,21 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Branson Smith",
+    "first_name": "Branson",
+    "last_name": "Smith",
+    "secondary": "Martin County High School · 218-27",
+    "url": "/wrestler.html?career_id=career_007861&gender=boys",
+    "searchTokens": [
+      "branson",
+      "smith"
+    ],
+    "rank": null,
+    "gender": "boys",
+    "priority": 2
+  },
+  {
+    "type": "wrestler",
     "name": "Colin Tucker",
     "first_name": "Colin",
     "last_name": "Tucker",
@@ -40255,21 +40285,6 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "rider",
       "trumble"
-    ],
-    "rank": null,
-    "gender": "boys",
-    "priority": 2
-  },
-  {
-    "type": "wrestler",
-    "name": "Branson Smith",
-    "first_name": "Branson",
-    "last_name": "Smith",
-    "secondary": "Martin County High School · 188-27",
-    "url": "/wrestler.html?career_id=career_007861&gender=boys",
-    "searchTokens": [
-      "branson",
-      "smith"
     ],
     "rank": null,
     "gender": "boys",
@@ -51200,6 +51215,22 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
+    "name": "Oscar (J.T.) Adams",
+    "first_name": "Oscar",
+    "last_name": "(J.T.) Adams",
+    "secondary": "Paducah Tilghman · 86-22",
+    "url": "/wrestler.html?career_id=career_006133&gender=boys",
+    "searchTokens": [
+      "(j.t.)",
+      "adams",
+      "oscar"
+    ],
+    "rank": null,
+    "gender": "boys",
+    "priority": 2
+  },
+  {
+    "type": "wrestler",
     "name": "Blake Hurley",
     "first_name": "Blake",
     "last_name": "Hurley",
@@ -59260,21 +59291,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Gavin Ricketts",
-    "first_name": "Gavin",
-    "last_name": "Ricketts",
-    "secondary": "Union County · 61-13",
-    "url": "/wrestler.html?career_id=career_006224&gender=boys",
-    "searchTokens": [
-      "gavin",
-      "ricketts"
-    ],
-    "rank": null,
-    "gender": "boys",
-    "priority": 2
-  },
-  {
-    "type": "wrestler",
     "name": "Ethan Wheeler",
     "first_name": "Ethan",
     "last_name": "Wheeler",
@@ -62855,22 +62871,6 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "pledger",
       "zachary"
-    ],
-    "rank": null,
-    "gender": "boys",
-    "priority": 2
-  },
-  {
-    "type": "wrestler",
-    "name": "Oscar (J.T.) Adams",
-    "first_name": "Oscar",
-    "last_name": "(J.T.) Adams",
-    "secondary": "Christian County · 54-18",
-    "url": "/wrestler.html?career_id=career_009301&gender=boys",
-    "searchTokens": [
-      "(j.t.)",
-      "adams",
-      "oscar"
     ],
     "rank": null,
     "gender": "boys",
@@ -71752,21 +71752,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jagger Irvin",
-    "first_name": "Jagger",
-    "last_name": "Irvin",
-    "secondary": "Ryle · 40-24",
-    "url": "/wrestler.html?career_id=career_002344&gender=boys",
-    "searchTokens": [
-      "irvin",
-      "jagger"
-    ],
-    "rank": null,
-    "gender": "boys",
-    "priority": 2
-  },
-  {
-    "type": "wrestler",
     "name": "Seth Dossa",
     "first_name": "Seth",
     "last_name": "Dossa",
@@ -76720,21 +76705,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Jagger Irwin",
-    "first_name": "Jagger",
-    "last_name": "Irwin",
-    "secondary": "Ryle · 35-19",
-    "url": "/wrestler.html?career_id=career_004351&gender=boys",
-    "searchTokens": [
-      "irwin",
-      "jagger"
-    ],
-    "rank": null,
-    "gender": "boys",
-    "priority": 2
-  },
-  {
-    "type": "wrestler",
     "name": "Cody Mershon",
     "first_name": "Cody",
     "last_name": "Mershon",
@@ -79688,21 +79658,6 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "jasitin",
       "kubwimana"
-    ],
-    "rank": null,
-    "gender": "boys",
-    "priority": 2
-  },
-  {
-    "type": "wrestler",
-    "name": "Oscar(JT) Adams",
-    "first_name": "Oscar(JT)",
-    "last_name": "Adams",
-    "secondary": "Paducah Tilghman · 32-4",
-    "url": "/wrestler.html?career_id=career_006133&gender=boys",
-    "searchTokens": [
-      "adams",
-      "oscar(jt)"
     ],
     "rank": null,
     "gender": "boys",
@@ -83380,21 +83335,6 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "justin",
       "kubwimanan"
-    ],
-    "rank": null,
-    "gender": "boys",
-    "priority": 2
-  },
-  {
-    "type": "wrestler",
-    "name": "Gavin Rickets",
-    "first_name": "Gavin",
-    "last_name": "Rickets",
-    "secondary": "Union County · 29-14",
-    "url": "/wrestler.html?career_id=career_010405&gender=boys",
-    "searchTokens": [
-      "gavin",
-      "rickets"
     ],
     "rank": null,
     "gender": "boys",
@@ -258933,22 +258873,6 @@ window.SEARCH_INDEX = [
     "searchTokens": [
       "moore",
       "sophia"
-    ],
-    "rank": null,
-    "gender": "girls",
-    "priority": 2
-  },
-  {
-    "type": "wrestler",
-    "name": "Camila Velasco Pillacios",
-    "first_name": "Camila",
-    "last_name": "Velasco Pillacios",
-    "secondary": "Lafayette · 25-10",
-    "url": "/wrestler.html?career_id=career_001078&gender=girls",
-    "searchTokens": [
-      "camila",
-      "pillacios",
-      "velasco"
     ],
     "rank": null,
     "gender": "girls",
