@@ -37,7 +37,7 @@ def health():
 def start_monitor():
     from scripts.ncaa.live_monitor import run_live
     year = int(os.environ.get("TOURNAMENT_YEAR", 2026))
-    run_live(year=year, interval_seconds=120, once=False, skip_scrape=False, push=False)
+    run_live(year=year, interval_seconds=120, once=False, skip_scrape=False)
 
 
 if __name__ == "__main__":
